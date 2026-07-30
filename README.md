@@ -240,6 +240,8 @@ All locale URLs use **path-based** format: `afarer.com/fr/products`, `afarer.com
 
 ---
 
+See `TECH.md §3` for full Worker implementation details (wrangler config, 3 MB constraint, endpoints).
+
 ## 4. Workers
 
 ### 4.1 contact-worker (afarer-contact)
@@ -349,34 +351,18 @@ Two layers of locale detection:
 | `npm run check` | Astro check + eslint + prettier + i18n |
 
 ### 6.2 Build Process
+
+See `TECH.md §2` for the full step-by-step pipeline. In brief:
+
 ```
- 1. scripts/geo-build.mjs → Build GEO content & llms.txt (22 langs)
- 2. scripts/generate-data-json.mjs → Generate data JSON
- 3. scripts/generate-geo-files.ts → Generate entity.json + auto-build llms-full.txt
-    (tsx)                                (idempotent: 52 products × 22 languages + 1,034 pages)
- 4. scripts/_gen-uiall.cjs → Generate UI components
- 5. scripts/_gen-pages.cjs → Generate page content TS modules from YAML
- 6. scripts/gen-icon-svgs.cjs → Generate icon SVGs
-  7. astro build → Static site to dist/ (7,564 pages)
- 8. scripts/clean-public-assets.mjs → Clean temp assets
- 9. (optional) scripts/fast-upload-r2.mjs → Upload to R2 (assets + data)
+GEO build → Data JSON → GEO files → UI all → Pages → Icons → astro build → Clean → (R2 upload)
 ```
+
+All 7,564 pages are pre-rendered as static HTML to `dist/`.
 
 ### 6.3 CI/CD (GitHub Actions)
-**Trigger:** Push to `main`
 
-```
-checkout → npm install
- → geo-build → generate-data-json → generate-geo-files (tsx)
- → gen-uiall → gen-pages → gen-icon-svgs
- → astro build
- → clean → R2 upload
- → Ensure Pages project → Pages deploy
- → Deploy 5 Workers: contact → seo → ai → admin → automation
- → Purge CDN cache
-```
-
-**Required Secrets:** `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_ZONE_ID`
+See `TECH.md §2.2` for the full CI/CD pipeline. Trigger: push to `main`. Required secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_ZONE_ID`.
 
 ### 6.4 R2 Asset Upload
 
@@ -440,24 +426,6 @@ afarer-data/
 
 ---
 
-### 7.4 GEO v5 AI Semantic Engine
-The GEO v5 pipeline runs during every build to assess content health:
-
-```
-  nodes.js (26 ontology nodes)
-     ↓
-  semanticEngine.ts → analyzeAll(nodes) → per-node scoring
-     ↓
-  scoring.ts → scoreAllNodes() → A/B/C grade + systemHealth()
-     ↓
-  gapDetector.ts → detectContentGaps() → gapsBySeverity()
-     ↓
-  topicCluster.ts → clusterTopics() → topic groupings
-```
-
-- **Output:** Console report during build (System Health, Grade Distribution, Content Gaps, Topic Clusters)
-- **Used for:** Automated quality monitoring; high-severity gaps trigger build warnings
-
 ---
 
 ## 8. Multi-language Content Pipeline
@@ -508,7 +476,7 @@ Keystatic CMS provides a form-based navigation editor at `/keystatic/navigation`
 
 ---
 
-## 11. Contact Form
+## 10. Contact Form
 
 | Feature | Status |
 |---------|--------|
@@ -516,15 +484,15 @@ Keystatic CMS provides a form-based navigation editor at `/keystatic/navigation`
 | Email | Resend API (to `info@afarer.com`, from `web@mail.afarer.com`) |
 | Fields | firstName, lastName, email, message, companyName, address, tel, subject, country, zip |
 | Validation | Required fields, email regex, spam keyword filter |
-| Captcha | ❌Not implemented |
-| Encryption | ❌Not implemented |
-| Rate limit | ❌Not implemented |
-| Honeypot | ❌Not implemented |
-| Submission storage | ❌Not implemented |
+| Captcha | ✓ HMAC-signed math cookie |
+| Encryption | ✓ AES-256-GCM on submission data |
+| Rate limit | ✓ 5/hr per IP (in-memory sliding window) |
+| Honeypot | ✓ Hidden `email_confirm` field |
+| Submission storage | ✓ Encrypted to GitHub via PAT |
 
 ---
 
-## 12. Admin Panel (Keystatic)
+## 11. Admin Panel (Keystatic)
 
 Keystatic CMS pages (`/keystatic/*`, `/login`) are static Astro pages that post to the admin-worker API for all GitHub file operations.
 
@@ -532,107 +500,36 @@ Keystatic CMS pages (`/keystatic/*`, `/login`) are static Astro pages that post 
 - Username + password via admin-worker (JWT + HMAC cookie)
 - GitHub PAT for file operations
 
-### 12.1 Multi-Language Content Editing (22 Languages)
+### Multi-Language Content Editing (22 Languages)
 
-All admin content pages support per-locale editing for 22 languages via `?locale=` query parameter (site content pages) or an in-form language selector (product pages).
-
-**Locale-Aware Admin Pages** (20 site content + 3 collection pairs):
-
-| Page | YAML Source | Locale Pattern |
-|------|-------------|----------------|
-| about, branding, categories, content-v2, evidence, hero-images, learning-center, proof-points, research, seo, tech-cards, testimonials, top-guides, trust-badges, trust-bar, use-cases, faqs, product-visuals, contact-form-text, countries | `src/data/site/{name}.{locale}.yaml` | `siteFileForLocale()` |
-| case-use/[slug], posts/[slug], technology/[slug] | `src/data/case-use/{slug}.{locale}.md` etc. | `contentFileForLocale()` |
-
-**Per-Locale Pattern (site content pages):**
-```astro
-import { ADMIN_LOCALES, ADMIN_LOCALE_CODES, siteFileForLocale } from '~/lib/i18n-admin';
-const locale = (Astro.url.searchParams.get('locale') || 'en').toLowerCase();
-const isDefault = locale === 'en';
-const file = siteFileForLocale('src/data/site/about.yaml', locale);
-// Load with English fallback: draft → published → English
-// Form: <form data-locale={locale}>
-// Switcher: <select id="locale-select"> maps ADMIN_LOCALE_CODES
-```
-
-**Per-Locale Pattern (collection entries):**
-Same pattern, but uses `contentFileForLocale()` for per-record locale file paths (e.g. `foo.md` → `foo.zh.md`).
-
-**Helpers** (`src/lib/i18n-admin.ts`):
-| Function | Purpose | Example |
-|----------|---------|---------|
-| `siteFileForLocale(basePath, locale)` | `about.yaml` → `about.zh.yaml` | Site-wide content |
-| `pageFileForLocale(slug, file, locale)` | `privacy.yaml` → `zh/privacy.yaml` | Static pages |
-| `contentFileForLocale(basePath, locale)` | `foo.md` → `foo.zh.md` | Collection entries |
+All admin content pages support per-locale editing for 22 languages. Site content pages use `?locale=` query parameter; product pages use an in-form language selector.
 
 **Locale fallback chain** (admin read):
-1. `{file}` on draft branch
-2. `{file}` on main branch
-3. English `{basePath}` on main branch (if non-English locale file missing)
+1. `{file}` on draft branch → 2. `{file}` on main branch → 3. English `{basePath}`
 
-### 12.2 Product Translation Editor (22 Languages)
+**Product translation fallback chain** (build time):
+1. Per-product YAML (`src/data/product-texts/{locale}/{id}.yaml`)
+2. TS module (`product-texts.ts`, 4096 lines)
+3. English defaults from `products.ts`
 
-Product translations use an in-form language selector (dropdown in `ProductForm.astro`).
+See `TECH.md §5` for the full admin translation pipeline details.
 
-**Data Fallback Chain** (at build time):
-1. Per-product YAML file at `src/data/product-texts/{locale}/{product.id}.yaml`
-2. TS module `product-texts.ts` (bulk translations, 4096 lines)
-3. English defaults from `products.ts` (ProductRecord)
+### Public Site Locale-Aware Content Loading
 
-**Components:**
-
-| Component | Role |
-|-----------|------|
-| `ProductForm.astro` | Form with 22-language dropdown, show/hide translatable sections |
-| `FormDataLoader.astro` | Generic GitHub file loader —reads MDX frontmatter or YAML |
-| `admin-worker/index.ts` | `/api/admin/read|update` —handles `format=frontmatter` and `format=yaml` |
-
-**Save Flow:**
-- **English**: `collectFrontmatter(data)` → `"---\n...\n---"` + body → POST `/api/admin/update`
-- **Translations**: `collectTranslatable(data)` → YAML fields → POST with `format: 'yaml'` → Worker `yaml.dump()` → `b64encode()` → GitHub PUT
-
-**Key Mappings:**
-| YAML Key | Form Input | Reason |
-|----------|-----------|--------|
-| `name` | `title` (via `data-fm-path="name"`) | ProductRecord uses `name`, MDX uses `title` |
-| `desc` | `description` (via `data-fm-path="desc"`) | ProductRecord uses `desc`, MDX uses `description` |
-
-**Encoding**: `b64encode()` (TextEncoder) handles UTF-8 multi-byte (Chinese, French accents, etc.).
-
-### 12.3 Public Site Locale-Aware Content Loading
-
-Site-level YAML data (origin/philosophy/design, hero labels, categories, etc.) is loaded via `pageContentData` from the build-generated JSON, enabling per-locale content with English fallback:
+Site-level YAML content is loaded via build-generated JSON with English fallback:
 
 ```astro
 import { pageContentData } from '~/i18n/generated/data';
 const aboutData = pageContentData[`${lang}/site-about`] || pageContentData['en/site-about'] || {};
 ```
 
-The build script (`generate-data-json.mjs`) includes all `src/data/site/*.yaml` files in `page-content.json` under `{lang}/site-{name}` keys. Non-English locales fall back to English when locale-specific YAML files don't exist.
-
 ---
 
-## 13. Data Flow
+## 12. Data Flow
 
-```
-src/data/products.ts → SSOT (52 products)
+Product data flows from `src/data/products.ts` (52 products SSOT) → page templates → JSON-LD → static HTML. Page content flows from `src/data/pages/*.yaml` (55+ pages × 22 languages) → build-generated TS modules → widget-rendered HTML.
 
-src/data/pages/*.yaml → Page content SSOT (55+ pages × 22 languages)
-   │
-   ├── YAML-driven page templates (brand, certifications, partners, solutions, etc.)
-   ├── JSON-LD structured data (Organization, Service, Article, Product, Dataset, etc.)
-   ├── Navigation menus (header + footer, locale-aware)
-   ├── llms-full.txt (auto-generated page summaries)
-   └── Search index
-       │
-       ├── Product detail pages (SSG, 22 languages)
-       ├── Product catalog (SSG with filters)
-       ├── AI recommendation engine (via ai-worker)
-       ├── JSON-LD structured data
-       ├── llms-full.txt (auto-generated, 52 products × 22 langs)
-       ├── llms.txt (auto-generated, 22 langs)
-       ├── /llms/products/{slug} markdown
-       └── R2 data bucket (search index, SEO rules)
-```
+AI-facing data (llms.txt, llms-full.txt, search index, GEO content) is auto-generated during build and uploaded to R2 for Worker runtime access.
 
 ### R2 Buckets
 | Bucket | Binding | Purpose |
@@ -644,62 +541,7 @@ Worker data is loaded at runtime from `DATA_BUCKET` —no JSON is bundled into W
 
 ---
 
-## 14. Worker Configuration
-
-### contact-worker (`workers/contact-worker/wrangler.toml`)
-```toml
-name = "afarer-contact"
-main = "index.ts"
-routes = [{ pattern = "afarer.com/api/contact*", zone_name = "afarer.com" }]
-```
-
-### seo-worker (`workers/seo-worker/wrangler.toml`)
-```toml
-name = "afarer-seo"
-main = "src/index.ts"
-routes = [
-  "afarer.com/api/search",
-  "afarer.com/api/geo-score",
-  "afarer.com/api/page-inspect",
-  "afarer.com/api/seo/*",
-]
-[[r2_buckets]] binding = "DATA_BUCKET" bucket_name = "afarer-data"
-```
-
-### ai-worker (`workers/ai-worker/wrangler.toml`)
-```toml
-name = "afarer-ai"
-main = "index.ts"
-routes = [
-  "afarer.com/api/chat*", "afarer.com/api/ask*",
-  "afarer.com/api/search*", "afarer.com/api/embed*",
-  "afarer.com/api/ai/*"
-]
-[ai] binding = "AI"
-[[vectorize]] binding = "VECTORIZE" index_name = "ai-index"
-[[r2_buckets]] binding = "DATA_BUCKET" bucket_name = "afarer-data"
-```
-
-### admin-worker (`workers/admin-worker/wrangler.toml`)
-```toml
-name = "afarer-admin"
-main = "index.ts"
-routes = ["afarer.com/api/admin/*", "afarer.com/api/auth/*"]
-[vars] ADMIN_USERNAME = "admin" GITHUB_OWNER = "afarer" GITHUB_REPO = "web"
-```
-
-### automation-worker (`workers/automation-worker/wrangler.toml`)
-```toml
-name = "afarer-automation"
-main = "src/index.ts"
-routes = ["afarer.com/api/automation/*"]
-[triggers] crons = ["0 2 * * *"]
-[[r2_buckets]] binding = "DATA_BUCKET" bucket_name = "afarer-data"
-```
-
----
-
-## 15. Performance Notes
+## 13. Performance Notes
 
 - **Pure static deployment:** All 7,564 content pages are pre-rendered HTML, served directly from Cloudflare Pages edge cache
 - **Zero cold start for static routes:** No SSR Worker —every page is served as static HTML
