@@ -1,58 +1,101 @@
 hero:
   tagline: Om os
   title: Om afarer
-  subtitle: 'Produktion af gummibåde, SUP og vandsportsudstyr siden 2012. CE og ISO certificeret.'
+  subtitle: Produktion af gummibåde, SUP og vandsportsudstyr siden 2012. CE og ISO certificeret.
   cta: Læs vores historie
   image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
   imageAlt: afarer fabrik
 stats:
-  - value: '2012'
+  - value: "2012"
     label: Grundlagt
-  - value: '12.000'
+  - value: "12.000"
     label: m² produktionsareal
-  - value: '50+'
+  - value: 50+
     label: Eksportlande
-  - value: 'ISO 9001'
+  - value: ISO 9001
     label: Certificering
-brand:
-  tagline: Vores brand
-  title: Mere end en producent
-  body: |
-    afarer er mere end bare en fabrik —vi er partnere for brands, operatører og professionelle, der kræver det bedste inden for vandsportsudstyr.
-story:
-  tagline: Vores historie
-  title: Fra beskeden begyndelse til global rækkevidde
-  milestones:
-    - year: '2012'
-      title: Grundlæggelse
-      description: afarer blev grundlagt i Qingdao med en vision om at producere højkvalitets gummiprodukter til vandsport.
-      image: https://assets.afarer.com/images/afarer/factory/afarer-factory-exterior.webp
-    - year: '2015'
-      title: Udvidelse
-      description: Vi udvidede vores faciliteter til 12.000 m² og tilføjede avancerede produktionslinjer.
-      image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
-    - year: '2018'
-      title: Certificering
-      description: Vi opnåede ISO 9001 certificering og CE-mærkning for alle produktlinjer.
-      image: https://assets.afarer.com/images/afarer/factory/afarer-pvc-material-testing.webp
-    - year: '2024'
-      title: Innovationscenter
-      description: Vi etablerede et dedikeret forsknings- og udviklingscenter med avancerede testfaciliteter.
-      image: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp
+features3_what_we_build:
+  title: What we build
+  subtitle: "We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company."
+  columns: 3
+  isBeforeContent: true
+  items:
+    - title: SUP boards
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+      icon: tabler:ship
+    - title: Inflatable SUPs
+      description: PVC inflatable SUP boards from 9 ft to 12 ft. Light, tough and easy to stow.
+      icon: tabler:speedboat
+    - title: Premium SUP packages
+      description: Compact, high-spec SUPs custom-built to match your brand or fleet requirements.
+      icon: tabler:crown
+features3_more:
+  columns: 3
+  isAfterContent: true
+  items:
+    - title: Accessories
+      description: Paddles, pumps, covers, dry-bags and electronics. All matched to our boards.
+      icon: tabler:package
+    - title: Refit & repair
+      description: In-house board repair, pad replacement and accessory upgrades.
+      icon: tabler:tool
+    - title: Custom builds
+      description: Project-by-project design for commercial, scientific and military customers.
+      icon: tabler:hammer
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-2.webp
+    alt: Boat design and engineering discussion
+steps2_values:
+  title: Our values
+  subtitle: Three principles that have shaped every product since day one.
+  items:
+    - title: Build like it carries your family
+      description: Every hull, weld and fastener is treated as if our own families will use it.
+      icon: tabler:heart
+    - title: Engineer before we sell
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+      icon: tabler:settings
+    - title: Support that outlasts the warranty
+      description: Twenty-year-old hulls still call us for spare parts, and we still pick up.
+      icon: tabler:headset
+steps2_milestones:
+  title: Milestones
+  subtitle: A short version of the afarer story.
+  isReversed: true
+  items:
+    - title: Founded in a coastal workshop
+      description: Started by two naval architects with a CNC mill and a stubborn idea.
+      icon: tabler:building-factory
+    - title: First 1,000 hulls delivered
+      description: Reached in our seventh year, mostly through word of mouth and repeat customers.
+      icon: tabler:circle-check
+    - title: International export programme
+      description: Now shipping to 40+ countries with localised support partners on five continents.
+      icon: tabler:world
+features2_locations:
+  title: Our locations
+  tagline: Find us
+  columns: 3
+  items:
+    - title: Headquarters & workshop
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+    - title: EU service centre
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+    - title: APAC partner network
+      description: Authorised service partners in Australia, Japan, Singapore and Hong Kong.
 brand_hub_tagline: Brand
 brand_hub_title: Explore Our Brand
 brand_hub_subtitle: Dive deeper into our marine engineering expertise, global presence, and the principles that drive us.
-
 brand_hub_cards:
   - title: Marine Expertise
-    desc: 'Decades of material science, precision manufacturing, and real-world testing — from PVC/Hypalon fabrication to deep-V hull design and drop-stitch technology.'
+    desc: Decades of material science, precision manufacturing, and real-world testing — from PVC/Hypalon fabrication to deep-V hull design and drop-stitch technology.
     link: /brand-marine-expertise
-    link_label: 'Learn more →'
+    link_label: Learn more →
   - title: Global Presence
-    desc: 'Shipping to 50+ countries from our Qingdao facility with authorized service partners across Europe, Asia-Pacific, and the Americas.'
+    desc: Shipping to 50+ countries from our Qingdao facility with authorized service partners across Europe, Asia-Pacific, and the Americas.
     link: /brand-global-presence
-    link_label: 'Learn more →'
+    link_label: Learn more →
   - title: Why afarer
-    desc: 'Vertical integration, dual certification (ISO 9001 + BSCI), CE compliance, and low MOQs — built for brands, distributors, and government agencies.'
+    desc: Vertical integration, dual certification (ISO 9001 + BSCI), CE compliance, and low MOQs — built for brands, distributors, and government agencies.
     link: /brand-why-afarer
-    link_label: 'Learn more →'
+    link_label: Learn more →

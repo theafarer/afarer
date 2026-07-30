@@ -1,80 +1,97 @@
 meta:
-  title: 'SUP Retail Partner Program | {SITE}'
-  description: 'Become an Afarer retail partner. Full product line, professional marketing materials, dropshipping options, and competitive margins for SUP retailers.'
-
+  title: SUP Retail Partner Program | {SITE}
+  description: Become an Afarer retail partner. Full product line, professional marketing materials, dropshipping options, and competitive margins for SUP retailers.
 hero:
   tagline: Retail Partners
-  title: 'Become An Afarer<br />Retail Partner'
-  subtitle: 'Sell the fastest-growing SUP brand in your market. Full product line, professional marketing materials, dropshipping options, and margins that make sense.'
+  title: Become An Afarer<br />Retail Partner
+  subtitle: Sell the fastest-growing SUP brand in your market. Full product line, professional marketing materials, dropshipping options, and margins that make sense.
   image:
     src: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp
     alt: Afarer SUP boards displayed in a retail store
-
+margin_section:
+  title: Retail Margins & MOQ
+  subtitle: Wholesale pricing tiers designed for retail profitability.
+  items:
+    - tier: Basic Partner
+      discount: 20%
+      moq: 500 units/yr
+      margin_note: ~$150–250 profit per board
+      features:
+        - Access to full product line
+        - Marketing materials package
+        - Email support
+        - Product catalog access
+    - tier: Premium Partner
+      discount: 30%
+      moq: 2,000+ units/yr
+      margin_note: ~$250–400 profit per board
+      features:
+        - Dedicated account manager
+        - Exclusive territory protection
+        - Custom marketing support
+        - First access to new products
+        - Staff training sessions
+    - tier: Flagship Partner
+      discount: 35%+
+      moq: 5,000+ units/yr
+      margin_note: ~$350–500+ profit per board
+      features:
+        - Co-branded marketing campaigns
+        - In-store display support
+        - On-site staff training
+        - Joint social media promotions
+        - Priority production allocation
 product_line:
   title: Complete Product Line
-  subtitle: 'A SUP board for every customer who walks through your door.'
+  subtitle: A SUP board for every customer who walks through your door.
   items:
     - name: All-Round Series
-      description: 'Best seller — fits 80% of customers'
+      description: Best seller — fits 80% of customers
     - name: Touring Series
-      description: 'Performance paddlers — higher margin'
+      description: Performance paddlers — higher margin
     - name: Yoga Series
-      description: 'Niche market — premium pricing'
+      description: Niche market — premium pricing
     - name: Kids Series
-      description: 'Family customers — repeat buyer'
+      description: Family customers — repeat buyer
     - name: Racing Series
-      description: 'Enthusiast market — brand halo'
+      description: Enthusiast market — brand halo
     - name: Accessories
-      description: 'High margin add-ons (paddles, vests, pumps, bags)'
-
+      description: High margin add-ons (paddles, vests, pumps, bags)
+catalog:
+  title: Retail Partner Resources
+  subtitle: Download our comprehensive retail partner kit.
+  items:
+    - name: 2026 Product Catalog
+      desc: Full lineup with specs, pricing, and ordering information
+      icon: tabler:file-text
+      link: /resources/download-catalog
+    - name: Retail Partner Guide
+      desc: Margin calculator, merchandising tips, and best practices
+      icon: tabler:book
+      link: /resources/download-catalog
+    - name: Marketing Asset Pack
+      desc: Hi-res product photos, lifestyle images, and POS materials
+      icon: tabler:photo
+      link: /media
 support:
   title: Retail Partner Support
-  subtitle: 'Everything you need to sell confidently.'
+  subtitle: Everything you need to sell confidently.
   items:
-    - 'High-res product images (professional photography)'
-    - 'Lifestyle photos for social media, website, and catalog'
-    - 'Marketing materials — posters, shelf talkers, banners'
-    - 'Product training videos for staff education'
-    - 'Social media content pack (weekly posts)'
-    - 'SEO-optimized product descriptions'
-    - 'Dropshipping option available — no inventory risk'
-    - 'Net 30 payment terms'
-
-tiers:
-  title: Partner Tiers
-  subtitle: 'Choose the partnership level that fits your business.'
-  items:
-    - name: Basic Partner
-      discount: '20% wholesale'
-      requirements: '500 units/yr'
-      benefits:
-        - 'Access to marketing materials'
-        - 'Email support'
-        - 'Product catalog access'
-    - name: Premium Partner
-      discount: '30% wholesale'
-      requirements: '2,000+ units/yr'
-      benefits:
-        - 'Dedicated account manager'
-        - 'Exclusive territory protection'
-        - 'Custom marketing support'
-        - 'First access to new products'
-    - name: Flagship Partner
-      discount: '35%+ wholesale'
-      requirements: '5,000+ units/yr'
-      benefits:
-        - 'Co-branded marketing campaigns'
-        - 'In-store display support'
-        - 'On-site staff training'
-        - 'Joint social media promotions'
-
+    - High-res product images (professional photography)
+    - Lifestyle photos for social media, website, and catalog
+    - Marketing materials — posters, shelf talkers, banners
+    - Product training videos for staff education
+    - Social media content pack (weekly posts)
+    - SEO-optimized product descriptions
+    - Dropshipping option available — no inventory risk
+    - Net 30 payment terms
 cta:
-  title: 'Ready to become a partner?'
-  subtitle: 'Apply for partnership or download our retail catalog.'
+  title: Ready to become a partner?
+  subtitle: Apply for partnership or download our retail catalog.
   actions:
-    - text: 'Apply for Partnership'
-      href: '/contact?partner=retail'
-      variant: 'primary'
-    - text: 'Download Retail Catalog'
-      href: '/resources/download-catalog'
-      variant: 'secondary'
+    - text: Apply for Partnership
+      href: /contact?partner=retail
+      variant: primary
+    - text: Download Retail Catalog
+      href: /resources/download-catalog
+      variant: secondary

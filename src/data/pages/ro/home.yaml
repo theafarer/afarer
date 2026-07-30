@@ -1,159 +1,121 @@
-﻿hero:
-  tagline: ''
-  title: |
-    Fabrică de bărci gonflabile —<br class="hidden sm:inline" />
-    Producător <span class="text-accent dark:text-white">OEM/ODM</span>
+hero:
+  tagline: 'Premium Inflatable SUP Manufacturer & OEM Partner'
+  title: 'Premium Inflatable SUP Manufacturer<br />&amp; OEM Partner'
   subtitle: |
-    <span class="hidden sm:inline"><span class="font-semibold">afarer</span> este un producător OEM/ODM cu sediul în China de bărci gonflabile, plăci SUP, caiacuri, SUP-uri și echipamente de siguranță maritimă certificate CE.</span>
-    <span class="block mb-1 sm:hidden font-bold text-blue-600">afarer: fabrică de încredere din 2012.</span>
-    Deservim clienți B2B din peste 50 de țări cu soluții de angro, etichetă privată, design personalizat și lanț de aprovizionare complet.
+    Designing and manufacturing inflatable paddle boards for global brands,<br />
+    resorts, paddle clubs and water adventure businesses.<br />
+    OEM/ODM partner with 12,000m² facility and CE-certified production.
+  taglineSection: 'Commercial-grade inflatable SUP solutions for resorts, clubs, retailers, and water brands.'
   actions:
     - variant: primary
-      text: Explorează produsele
-      href: /products
-      icon: tabler:shopping-bag
-    - text: Află mai mult
-      href: '#features'
+      text: Request OEM Quote
+      href: /oem-odm-manufacturer
+      icon: tabler:package
+    - text: Download Catalog
+      href: /resources/download-catalog
+      icon: tabler:file-text
+    - text: Explore SUP Solutions
+      href: /solutions
+      icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
-    alt: afarer hero image
-hero_carousel:
-  autoplay_interval: 5000
-  slides:
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/tech-meeting-small.webp
-        alt: Fabrica și facilitățile afarer
-      tagline: Bun venit
-      title: |
-        Proiectat pentru apă. <br />
-        Construit pentru <span class="text-sky-300">viața la bord</span>.
-      subtitle: Bărci gonflabile premium, SUP-uri și produse tehnice pentru profesioniști maritimi și entuziaști.
-      actions:
-        - text: Explorează produsele
-          href: /products
-          variant: primary
-        - text: Solicită ofertă
-          href: /contact
-          variant: secondary
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
-        alt: Barcă afarer pe apă
-      tagline: Meșteșug
-      title: |
-        Carene care țin mai mult decât garanția. <br />
-        Service care ține mai mult decât carena.
-      subtitle: Materiale maritime. Sudură din aluminiu. Bărci vechi de 20 de ani încă mai sună pentru piese.
-      actions:
-        - text: Povestea noastră
-          href: /about
-          variant: primary
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/afarer-hero-design-concept.webp
-        alt: Barcă gonflabilă afarer pe apă
-      tagline: Suport
-      title: |
-        Construit înainte de vânzare. <br />
-        Susținut mult timp după.
-      subtitle: Parteneri de service autorizați în peste 40 de țări. Carene vechi de 20 de ani încă mai sună pentru piese —și noi încă răspundem la telefon.
-      actions:
-        - text: Contactați-ne
-          href: /contact
-          variant: primary
-        - text: Contactați-ne
-          href: /contact
-          variant: secondary
-features:
-  id: features
-  tagline: De ce afarer
-  title: Ce primești cu afarer
-  subtitle: Zeci de ani de experiență în inginerie maritimă, distilată într-o linie de produs concentrată. Construită robust, testată pe mare, susținută pe viață.
-  columns: 2
+    alt: afarer inflatable SUP boards at a tropical resort waterfront —commercial fleet for water businesses
+
+who_we_serve:
+  tagline: Who We Serve
+  title: Complete SUP Solutions for Every Water Business
+  subtitle: Purpose-built equipment, manufacturing, and business support for four key markets.
   items:
-    - title: Materiale maritime
-      description: PVC greu, Hypalon și carene din aluminiu alese pentru rezistență la UV, abraziune și apă sărată.
+    - title: Paddle Clubs
+      keywords: SUP club equipment, paddle school equipment, rental fleet
+      description: Durable SUP fleets, club pricing, and replacement parts programs for paddle clubs and schools.
+      icon: tabler:users
+      cta: Explore Paddle Club Solutions
+      link: /solutions/paddle-clubs
+    - title: Resorts & Hotels
+      keywords: resort water activities, hotel beach equipment, guest experience
+      description: Complete SUP fleet programs with custom branding, staff training, and ROI-optimized packages.
+      icon: tabler:building
+      cta: Create Your Resort Water Experience
+      link: /solutions/resorts-hotels
+    - title: Retail Partners
+      keywords: SUP wholesale, outdoor retailers, sporting goods stores
+      description: Full product line, marketing materials, dropshipping options, and competitive wholesale margins.
+      icon: tabler:shopping-cart
+      cta: Become A Retail Partner
+      link: /solutions/retail-partners
+    - title: New SUP Brands
+      keywords: private label SUP, custom SUP brand, OEM paddle boards
+      description: End-to-end OEM/ODM manufacturing — design, prototyping, mass production, and global logistics.
+      icon: tabler:package
+      cta: Build Your SUP Brand
+      link: /oem-odm-manufacturer
+
+proof_points:
+  title: Trusted by Water Businesses Worldwide
+  subtitle: Decades of marine engineering experience powering profitable SUP programs.
+  items:
+    - metric: '10+'
+      label: Years Experience
+      detail: Since 2012
+    - metric: '50+'
+      label: Countries Served
+      detail: Global distribution network
+    - metric: '15,000+'
+      label: Units Produced Annually
+      detail: CE-certified production capacity
+    - metric: 100%
+      label: CE Certified
+      detail: ISO 9001, BSCI, REACH compliant
+
+business_solutions:
+  tagline: How We Help
+  title: Your Partner From Concept To Revenue
+  subtitle: Four core capabilities that help water businesses launch, operate, and grow.
+  items:
+    - title: Professional Equipment
+      description: Commercial-grade SUP boards engineered for daily rental use, 500+ cycles with minimal maintenance.
       icon: tabler:shield-check
-    - title: Calitate gata de producție
-      description: Fiecare carenă este testată la presiune, fiecare sudură este inspectată. Trimitem doar ceea ce am pune noi înșine pe apă.
-      icon: tabler:certificate
-    - title: Design modular
-      description: Personalizează configurația furtunurilor, poziția consolei, capacitatea combustibilului și accesoriile pentru misiunea ta.
-      icon: tabler:layout-grid
-    - title: Specificații oneste
-      description: Valori reale de sarcină, dimensiuni reale, greutate reală. Niciodată exagerări de marketing.
-      icon: tabler:ruler-measure
-    - title: Livrare rapidă și piese de schimb
-      description: Modelele comune se expediază în câteva zile. Piese de schimb originale și consumabile în stoc tot anul.
-      icon: tabler:truck-delivery
-    - title: Suport pe viață
-      description: Linie directă cu echipa noastră de ingineri pentru întrebări tehnice, reparații și consultanță pentru modernizări.
-      icon: tabler:lifebuoy
-featured_products:
-  id: featured
-  title: Produse recomandate
-  subtitle: Selectate din catalogul nostru actual —cele mai populare modele din acest sezon.
-  linkText: Vezi toate produsele
-  linkUrl: /products
-content_workshop:
-  isReversed: true
-  tagline: În atelier
-  title: De la schița carenei până la livrare, fiecare pas rămâne intern
-  content: |
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Calitate pe care o poți vedea, simți și măsura</h3>
-  items:
-    - title: Proiectat de arhitecți navali
-      description: Liniile carenei sunt desenate intern și iterate prin analiză CFD înainte ca primul prototip să ajungă pe apă.
-    - title: Sudat și asamblat în propria noastră facilitate
-      description: Sudarea furtunurilor, montarea consolei și echiparea au loc sub același acoperiș, astfel încât controlăm calitatea la fiecare pas.
-    - title: Testat pe mare înainte de expediere
-      description: Fiecare model efectuează un test maritim de mai multe ore, acoperind planare, viraje, viteză maximă și gestionarea sarcinii.
-  image:
-    src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
-    alt: Atelierul de producție afarer
-steps:
-  title: De la specificație la lansare în cinci pași
-  items:
-    - title: 'Pasul 1: <span class="font-medium">Configurează</span>'
-      description: Alege un model, selectează opțiunile, solicită o ofertă online sau telefonic. Echipa noastră răspunde într-o zi lucrătoare.
-      icon: tabler:list-numbers
-    - title: 'Pasul 2: <span class="font-medium">Confirmă</span>'
-      description: Confirmăm specificațiile, termenul de livrare și costul total în scris. Fără surprize, fără taxe ascunse.
-      icon: tabler:checks
-    - title: 'Pasul 3: <span class="font-medium">Construiește</span>'
-      description: Producția începe în atelierul nostru. Trimitem fotografii cu progresul la reperele importante.
-      icon: tabler:tool
-    - title: 'Pasul 4: <span class="font-medium">Livrare</span>'
-      description: Leagăn, ambalat în folie contractilă și expediat pe mare sau pe aer. Actele vamale sunt gestionate de la început până la sfârșit.
-      icon: tabler:truck-loading
-    - title: 'Pasul 5: <span class="font-medium">Suport</span>'
-      description: Doi ani de garanție a carenei plus suport tehnic pe viață. Piesele de schimb se expediază în 48 de ore.
+    - title: OEM Manufacturing
+      description: End-to-end private label production from design and prototyping to mass production and global delivery.
+      icon: tabler:package
+    - title: Business Support
+      description: Staff training, marketing materials, replacement parts programs, and dedicated account management.
       icon: tabler:headset
-blog_latest:
-  title: Din jurnal
-  information: |
-    Articole, note tehnice și studii de caz de la echipa de ingineri.
-    Postări noi sunt adăugate când un proiect este expediat, un standard este actualizat sau cineva are o poveste care merită spusă.
-faqs:
-  title: Întrebări frecvente
-  subtitle: Întrebări comune despre bărcile gonflabile afarer, garanții, transport și parteneriate OEM/ODM. Dacă nu găsești răspunsul aici, contactează-ne.
-  columns: 2
-  items:
-    - title: Unde este depozitul afarer în SUA și cât durează livrarea?
-      description: 'Depozitul nostru din SUA este în Montclair, CA. Coasta de Vest: 2-3 zile. Centrul SUA: 3-4 zile. Coasta de Est: 4-5 zile. Expedierea internațională este de asemenea disponibilă.'
+    - title: Global Logistics
+      description: FOB Qingdao, CIF major ports, door-to-door delivery to 50+ countries with customs support.
       icon: tabler:truck-delivery
-    - title: Care este politica de garanție afarer pentru bărcile gonflabile?
-      description: Bărcile gonflabile afarer beneficiază de 5 ani de garanție limitată pentru integritatea furtunurilor, cusături, carenă din fibră de sticlă și valve. Accesoriile instalate din fabrică beneficiază de 1 an garanție.
-      icon: tabler:shield-check
-    - title: Bărcile afarer includ acte de înmatriculare?
-      description: Da, fiecare barcă gonflabilă afarer include documentele necesare pentru înmatriculare. Aprobat de US Coast Guard pentru producție.
-      icon: tabler:file-text
+
+oem_section:
+  tagline: Launch Your Brand
+  title: From Idea To Market In 16 Weeks
+  subtitle: Your complete SUP brand launch partner — design, prototype, manufacture, and ship.
+  steps:
+    - number: '01'
+      title: Idea & Brief
+      desc: Share your vision, target market, and specifications.
+    - number: '02'
+      title: Design & Engineering
+      desc: 3D modeling, material selection, and custom graphic design.
+    - number: '03'
+      title: Prototype & Validate
+      desc: Sample production with CE certification and quality testing.
+    - number: '04'
+      title: Mass Production
+      desc: Full-scale manufacturing with inline QC and factory audit support.
+    - number: '05'
+      title: Global Delivery
+      desc: FOB Qingdao logistics, CIF major ports, door-to-door.
+  cta: Start Your Brand Journey
+  cta_link: /oem-odm-manufacturer
+
 cta:
-  title: |
-    Pregătit să începi <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">proiectul tău OEM/ODM</span>?
-  subtitle: Spune-ne cerințele tale și îți vom oferi o ofertă personalizată, detalii MOQ și termen de livrare într-o zi lucrătoare.
+  title: Ready to build your water adventure business?
+  subtitle: Whether you are launching a club, outfitting a resort, or building a brand — we are here to help.
   actions:
     - variant: primary
-      text: Solicită ofertă
+      text: Start Your Project
       href: /contact
-      icon: tabler:message-circle
-    - text: Vizitează fabrica noastră
-      href: /factory
+      icon: tabler:send
+    - text: Download OEM Guide
+      href: /resources/download-catalog

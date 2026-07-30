@@ -1,5 +1,5 @@
-﻿hero:
-  tagline: ''
+hero:
+  tagline: ""
   title: |
     Ontworpen voor het water. <br class="hidden sm:inline" />
     Gebouwd voor het <span class="text-accent dark:text-white">leven aan boord</span>.
@@ -13,177 +13,94 @@
       href: /products
       icon: tabler:shopping-bag
     - text: Meer informatie
-      href: '#features'
+      href: "#features"
   image:
     src: ~/assets/images/hero-image.webp
     alt: afarer omslag
-
-stats:
-  - value: '2012'
-    label: Opgericht
-  - value: 12,000 m²
-    label: Faciliteit
-  - value: '50+'
-    label: Bediende landen
-  - value: ISO 9001
-    label: ISO-gecertificeerd
-  - value: '200+'
-    label: Producten
-  - value: '95%'
-    label: Exportratio
-  - value: '25+'
-    label: R&D-ingenieurs
-  - value: 2 Jaar
-    label: Garantie
-
-hero_carousel:
-  autoplay_interval: 5000
-  slides:
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/tech-meeting-small.webp
-        alt: afarer werkplaats aan zee
-      tagline: Welkom
-      title: |
-        Ontworpen voor het water. <br />
-        Gebouwd voor het <span class="text-sky-300">leven aan boord</span>.
-      subtitle: Hoogwaardige opblaasbare boten, SUP's en technische producten voor maritieme professionals en enthousiastelingen.
-      actions:
-        - text: Bekijk producten
-          href: /products
-          variant: primary
-        - text: Vraag een prijsopgave
-          href: /contact
-          variant: secondary
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
-        alt: Botenbouw op maat
-      tagline: Vakmanschap
-      title: |
-        Rompen die langer meegaan dan de garantie. <br />
-        Service die langer meegaat dan de romp.
-      subtitle: Maritieme materialen. Aluminium lassen. Twintig jaar oude boten bellen ons nog steeds voor onderdelen.
-      actions:
-        - text: Ons verhaal
-          href: /about
-          variant: primary
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/afarer-hero-design-concept.webp
-        alt: Opblaasbare boot op het water
-      tagline: Ondersteuning
-      title: |
-        Ontworpen vóór de verkoop. <br />
-        Ondersteund lang erna.
-      subtitle: Geautoriseerde servicepartners in 40+ landen. Twintig jaar oude rompen bellen nog —en we nemen nog steeds op.
-      actions:
-        - text: Neem contact op
-          href: /contact
-          variant: primary
-        - text: Bekijk prijzen
-          href: /pricing
-          variant: secondary
-
-features:
-  id: features
-  tagline: Waarom afarer
-  title: Wat je krijgt met afarer
-  subtitle: Decennia aan scheepsbouwerervaring samengevat in één gefocuste productlijn. Solide constructie, getest op zee, levenslange ondersteuning.
-  columns: 2
+who_we_serve:
+  tagline: Who We Serve
+  title: Complete SUP Solutions for Every Water Business
+  subtitle: Purpose-built equipment, manufacturing, and business support for four key markets.
   items:
-    - title: Maritieme materialen
-      description: Hoogwaardig PVC, Hypalon en aluminium rompen geselecteerd op UV-bestendigheid, slijtvastheid en bestendigheid tegen zout water.
+    - title: Paddle Clubs
+      keywords: SUP club equipment, paddle school equipment, rental fleet
+      description: Durable SUP fleets, club pricing, and replacement parts programs for paddle clubs and schools.
+      icon: tabler:users
+      cta: Explore Paddle Club Solutions
+      link: /solutions/paddle-clubs
+    - title: Resorts & Hotels
+      keywords: resort water activities, hotel beach equipment, guest experience
+      description: Complete SUP fleet programs with custom branding, staff training, and ROI-optimized packages.
+      icon: tabler:building
+      cta: Create Your Resort Water Experience
+      link: /solutions/resorts-hotels
+    - title: Retail Partners
+      keywords: SUP wholesale, outdoor retailers, sporting goods stores
+      description: Full product line, marketing materials, dropshipping options, and competitive wholesale margins.
+      icon: tabler:shopping-cart
+      cta: Become A Retail Partner
+      link: /solutions/retail-partners
+    - title: New SUP Brands
+      keywords: private label SUP, custom SUP brand, OEM paddle boards
+      description: End-to-end OEM/ODM manufacturing — design, prototyping, mass production, and global logistics.
+      icon: tabler:package
+      cta: Build Your SUP Brand
+      link: /oem-odm-manufacturer
+proof_points:
+  title: Trusted by Water Businesses Worldwide
+  subtitle: Decades of marine engineering experience powering profitable SUP programs.
+  items:
+    - metric: 10+
+      label: Years Experience
+      detail: Since 2012
+    - metric: 50+
+      label: Countries Served
+      detail: Global distribution network
+    - metric: 15,000+
+      label: Units Produced Annually
+      detail: CE-certified production capacity
+    - metric: 100%
+      label: CE Certified
+      detail: ISO 9001, BSCI, REACH compliant
+business_solutions:
+  tagline: How We Help
+  title: Your Partner From Concept To Revenue
+  subtitle: Four core capabilities that help water businesses launch, operate, and grow.
+  items:
+    - title: Professional Equipment
+      description: Commercial-grade SUP boards engineered for daily rental use, 500+ cycles with minimal maintenance.
       icon: tabler:shield-check
-    - title: Productiekwaliteit
-      description: Elke romp ondergaat een druktest, elke las wordt geïnspecteerd. We verzenden alleen wat we zelf te water zouden laten.
-      icon: tabler:certificate
-    - title: Modulair ontwerp
-      description: Pas de indeling van compartimenten, consolepositie, brandstofcapaciteit en accessoires aan naar jouw behoeften.
-      icon: tabler:layout-grid
-    - title: Eerlijke specificaties
-      description: Echte belading, echte afmetingen, echt gewicht. Geen marketingoverdrijving. Nooit.
-      icon: tabler:ruler-measure
-    - title: Snelle levering en onderdelen
-      description: Standaardmodellen worden binnen dagen verzonden. Originele onderdelen en verbruiksartikelen het hele jaar op voorraad.
-      icon: tabler:truck-delivery
-    - title: Levenslange ondersteuning
-      description: Directe lijn met ons ontwerpteam voor technisch advies, reparaties en upgrades.
-      icon: tabler:lifebuoy
-
-featured_products:
-  id: featured
-  title: Aanbevolen producten
-  subtitle: Geselecteerd uit onze huidige catalogus —de populairste modellen van dit seizoen.
-  linkText: Bekijk alle producten
-  linkUrl: /products
-
-content_workshop:
-  isReversed: true
-  tagline: In de werkplaats
-  title: Van rompontwerp tot levering —elke stap in eigen beheer
-  content: |
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Kwaliteit die je ziet, voelt en kunt meten</h3>
-  items:
-    - title: Ontworpen door scheepsbouwkundigen
-      description: Romplijnen worden intern getekend en geïtereerd via CFD-analyse vóór het eerste prototype.
-    - title: Gelast en gemonteerd in eigen fabriek
-      description: Lassen van luchtkamers, montage van console en beslag gebeurt onder één dak.
-    - title: Proefvaarten vóór verzending
-      description: Elk model ondergaat een meerurige proefvaart ter controle van planeren, bochten, topsnelheid en gedrag onder belasting.
-  image:
-    src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
-    alt: Werkplaats
-
-steps:
-  title: Van specificatie tot tewaterlating in vijf stappen
-  items:
-    - title: 'Stap 1: <span class="font-medium">Configuratie</span>'
-      description: Kies een model, specificeer opties en vraag online of telefonisch een offerte aan. Het team reageert binnen één werkdag.
-      icon: tabler:list-numbers
-    - title: 'Stap 2: <span class="font-medium">Bevestiging</span>'
-      description: We bevestigen de specificatie, leverdatum en totale kosten schriftelijk. Geen verrassingen, geen verborgen kosten.
-      icon: tabler:checks
-    - title: 'Stap 3: <span class="font-medium">Productie</span>'
-      description: De productie start in onze werkplaats. We sturen voortgangsfoto's bij belangrijke mijlpalen.
-      icon: tabler:tool
-    - title: 'Stap 4: <span class="font-medium">Levering</span>'
-      description: Verpakt op een rek, krimpfolie en verzonden per zee- of luchtvracht. Douaneafhandeling volledig inbegrepen.
-      icon: tabler:truck-loading
-    - title: 'Stap 5: <span class="font-medium">Ondersteuning</span>'
-      description: Twee jaar garantie op de romp plus levenslange technische ondersteuning. Onderdelen worden binnen 48 uur verzonden.
+    - title: OEM Manufacturing
+      description: End-to-end private label production from design and prototyping to mass production and global delivery.
+      icon: tabler:package
+    - title: Business Support
+      description: Staff training, marketing materials, replacement parts programs, and dedicated account management.
       icon: tabler:headset
-  image:
-    src: https://assets.afarer.com/images/afarer/hero/production-dept.webp
-    alt: Productieproces
-
-blog_latest:
-  title: Van de blog
-  information: |
-    Artikelen, technische notities en casestudies van het ontwerpteam.
-    Nieuwe berichten verschijnen wanneer een project wordt opgeleverd, een norm wordt bijgewerkt of iemand een verhaal heeft dat het vertellen waard is.
-
-faqs:
-  title: Veelgestelde vragen
-  subtitle: De vragen die we het vaakst horen. Staat de jouwe er niet bij? Stuur ons een bericht —we antwoorden snel.
-  columns: 2
-  items:
-    - title: Welk model kiezen
-      description: Afhankelijk van bemanningsgrootte, vaargebied en prioriteiten —snelheid, laadvermogen of brandstofefficiëntie. Stuur een korte beschrijving en we raden 2-3 geschikte modellen aan.
-      icon: tabler:anchor
-    - title: Leveren jullie internationaal?
-      description: Ja —we leveren aan 40+ landen. Zeevracht is het voordeligst voor complete boten; luchtvracht is beschikbaar voor spoedbestellingen.
-      icon: tabler:ship
-    - title: Wat voor garantie geven jullie?
-      description: Twee jaar op de romp, een jaar op accessoires, levenslang op onze lassen. Garantieregistratie wordt bij elke levering meegeleverd.
-      icon: tabler:shield
-    - title: Kan een bestaand model worden aangepast?
-      description: Bijna altijd. Consolepositie, compartimentkleur, zitindeling, elektronica en motor kunnen worden aangepast. Speciale rompen worden individueel beoordeeld.
-      icon: tabler:palette
-    - title: Bieden jullie training en certificering?
-      description: Voor commerciële operators kunnen we training op het water bij onze faciliteit regelen. Individuele klanten krijgen gratis instructie bij afname.
-      icon: tabler:school
-    - title: Hoe krijg ik reserveonderdelen?
-      description: Bestel via de contactpagina of bel de onderdelenservice. Standaard artikelen (kleppen, vesten, pompen, reparatiesets) worden binnen 48 uur wereldwijd verzonden.
-      icon: tabler:settings
-
+    - title: Global Logistics
+      description: FOB Qingdao, CIF major ports, door-to-door delivery to 50+ countries with customs support.
+      icon: tabler:truck-delivery
+oem_section:
+  tagline: Launch Your Brand
+  title: From Idea To Market In 16 Weeks
+  subtitle: Your complete SUP brand launch partner — design, prototype, manufacture, and ship.
+  steps:
+    - number: "01"
+      title: Idea & Brief
+      desc: Share your vision, target market, and specifications.
+    - number: "02"
+      title: Design & Engineering
+      desc: 3D modeling, material selection, and custom graphic design.
+    - number: "03"
+      title: Prototype & Validate
+      desc: Sample production with CE certification and quality testing.
+    - number: "04"
+      title: Mass Production
+      desc: Full-scale manufacturing with inline QC and factory audit support.
+    - number: "05"
+      title: Global Delivery
+      desc: FOB Qingdao logistics, CIF major ports, door-to-door.
+  cta: Start Your Brand Journey
+  cta_link: /oem-odm-manufacturer
 cta:
   title: |
     Klaar om je volgende <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">boot te configureren</span>?

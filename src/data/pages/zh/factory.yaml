@@ -14,6 +14,42 @@ stats:
     label: 年產量
   - value: null
     label: 質量認證
+intelligence_tagline: 工廠智慧
+intelligence_title: 探索我們的製造能力
+intelligence_cards:
+  - title: 生產能力
+    icon: C
+    icon_bg: 藍色
+    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
+    metrics:
+      - label: 最小起訂量
+        value: "SUP: 5-10 / SUP: 2-5"
+      - label: 交期
+        value: 30-45 days
+    link: /factory/capacity
+    link_label: 查看全部產能詳情 →
+  - title: 質量實驗室與檢測
+    icon: Q
+    icon_bg: 綠色
+    desc: 獨立 QC 實驗室，含 4 個檢測階段：原材料檢驗（拉伸、撕裂、UV）、48 小時 1.25 倍額定壓力保壓、接縫剝離測試及每艘船的負載/平衡驗證。
+    metrics:
+      - label: 實驗室設備
+        value: 拉伸測試儀、溫控箱、洩漏檢測槽
+      - label: 標準
+        value: ISO 9001、CE、AS 1799
+    link: /factory/quality-lab
+    link_label: 實驗室程序與設備 →
+  - title: OEM/ODM 能力
+    icon: O
+    icon_bg: 紫色
+    desc: 端到端 OEM/ODM 服務：定製模具設計、自有品牌包裝、定製管顏色、甲板圖形（數字印刷和絲網印刷）、Hypalon 升級選項及一件代發物流。
+    metrics:
+      - label: 認證
+        value: ISO 9001、BSCI、CE、REACH
+      - label: 運輸
+        value: FOB、CIF、DDP，覆蓋 50+ 個國家
+    link: /factory/oem-capability
+    link_label: 查看全部 OEM 服務 →
 workshops_section:
   tagline: 車間
   title: 製造車間
@@ -59,13 +95,13 @@ qc_section:
   title: 測試與質量保證流程
   subtitle: 每艘船在發貨前都經過強制測試。質量實驗室獨立於生產運營並直接向管理層報告。
   steps:
-    - step: '1'
+    - step: "1"
       title: 原材料檢驗
       desc: PVC、Hypalon和滴塑面料在進入生產前經過拉伸測試、撕裂傳播和抗紫外線驗證。
-    - step: '2'
+    - step: "2"
       title: 48小時氣密性測試
       desc: 每個管室充氣至額定壓力的125%並保持48小時。壓力下降超過5%將自動觸發拒收和接縫重新檢查。
-    - step: '3'
+    - step: "3"
       title: 負載與平衡測試
       desc: 成品船加載至最大額定容量並測試穩定性、幹舷和操控性。
 oem_section:
@@ -95,44 +131,124 @@ faq_section:
     - q: 你們能按FOB青島或CIF運送到我們的港口嗎？
       a: 是的。我們按FOB青島、CIF全球主要港口和DDP為合格合作伙伴發貨。我們的物流團隊管理集裝箱預訂、出口文件和清關。我們發貨到全球50多個國家。
 b2b_moq: 標準MOQ：每型號5–10艘（SUP/皮艇/滴塑）。SUP MOQ：2-5艘。歡迎新合作伙伴的試訂單。
+production_flow:
+  tagline: Production Flow
+  title: From Material to Finished Boat
+  subtitle: Every boat passes through 6 production stages with QC checkpoints at every step. No shortcuts, no skipped inspections.
+  stages:
+    - stage: "01"
+      title: Material Receiving & Incoming QC
+      description: All incoming materials are logged by batch/lot number in our ERP system. PVC fabric rolls, drop-stitch cores, valves, adhesives, and hardware are quarantined until QC sign-off.
+      qc_check: Tensile strength (ASTM D751), tear resistance (ISO 4674), thickness gauge, adhesive viscosity, visual defect scan
+      qc_threshold: 100% of batches tested. Reject if tensile < 90% of spec, tear < spec min, or any visual defect
+      responsibility: Incoming QC team (3 inspectors)
+    - stage: "02"
+      title: CNC Cutting & Material Prep
+      description: Computer-optimized nesting lays out panels on PVC stock to minimize waste. Automatic CNC cutting machines maintain 0.1 mm positional accuracy.
+      qc_check: Dimensional check against CAD DXF files, edge quality inspection, panel count verification
+      qc_threshold: Every 20th panel measured. Tolerance ±0.5 mm. Reject batch if >2% out of tolerance
+      responsibility: Cutting workshop lead
+    - stage: "03"
+      title: Welding & Drop-Stitch Bonding
+      description: Drop-stitch cores are bonded to outer PVC laminates using heat lamination. Tube chambers are RF-welded or hot-air welded. Rail bands are triple-layer fusion bonded.
+      qc_check: Peel test every 50 units (ASTM D751), weld width measurement, hot-air temperature log review, visual seam inspection under backlight
+      qc_threshold: Peel strength min 8 N/cm. Weld width tolerance ±1 mm. Any visible channeling = reject
+      responsibility: Welding QC (2 inspectors per shift)
+    - stage: "04"
+      title: Assembly & Rigging
+      description: "Boats move to final assembly where all components are mated: hull + tubes, valves installed, D-rings, handles, fin boxes, and carry bag fitting. Each unit follows a 100-point assembly checklist."
+      qc_check: 100-point checklist sign-off per unit, valve function test (10 open/close cycles), hardware torque verification, visual inspection
+      qc_threshold: "Zero-defect policy on safety-critical items (valves, D-rings, handles). Minor cosmetic: AQL 2.5 (ISO 2859)"
+      responsibility: Assembly team lead + line QC
+    - stage: "05"
+      title: Pressure Testing & Quality Hold
+      description: Every chamber is inflated to 1.25× rated pressure (typically 20—5 PSI) and held for 24—8 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.
+      qc_check: 24h pressure hold log, sensor calibration verified daily, temperature-compensated pressure reading, seam re-test after repair
+      qc_threshold: Max 5% pressure drop over 24h at stable temp. Any chamber exceeding this = 100% re-test of entire production batch
+      responsibility: Quality lab (independent of production, reports to management)
+    - stage: "06"
+      title: Final Inspection & Packing
+      description: Final visual and functional inspection. Surface defects, color consistency, label/BIN verification, packaging integrity, and accessory completeness. Units are vacuum-packed, boxed, and palletized for container loading.
+      qc_check: Full visual inspection, accessory checklist per SKU, packaging drop test (1 m, random sample), label/bar code scan verification
+      qc_threshold: AQL 2.5 for major defects, AQL 4.0 for minor. Zero tolerance on safety defects. 100% of units visually inspected
+      responsibility: Final QC team (4 inspectors) + Packing team lead
+workforce:
+  tagline: Our People
+  title: Workforce & Expertise
+  engineers: 25+
+  engineers_detail: Engineers across R&D, mold design, materials lab, and production engineering. Average 7+ years in inflatable manufacturing.
+  shift_pattern: 2 shifts/day (07:00—5:30, 15:30—0:00). Optional night shift for urgent orders.
+  training: Monthly QC training, quarterly safety drills, annual skills assessment. New hires complete 40-hour induction before working on production line.
+  departments:
+    - name: R&D & Engineering
+      count: 25+
+      role: Product design, mold engineering, materials lab
+    - name: Cutting & Material Prep
+      count: 15
+      role: CNC cutting, panel preparation, material handling
+    - name: Welding & Lamination
+      count: 40
+      role: RF welding, hot-air welding, drop-stitch bonding
+    - name: SUP Core Bonding
+      count: 30
+      role: Drop-stitch lamination, heat bonding, rail band fusion
+    - name: Assembly & Rigging
+      count: 35
+      role: Final assembly, hardware installation, systems check
+    - name: Quality Control
+      count: 12
+      role: Incoming QC, in-process QC, final inspection, lab testing
+    - name: Logistics & Packing
+      count: 20
+      role: Packaging, container loading, export documentation
+    - name: Management & Admin
+      count: 15
+      role: Sales, procurement, HR, finance, compliance
+material_traceability:
+  tagline: Traceability
+  title: Material Tracking & Batch Control
+  description: Every batch of raw material is assigned a unique lot number in our ERP system. From arrival through production to the finished product, each boat's bill of materials links back to the original supplier batch. This enables full upstream traceability for any quality or compliance inquiry.
+  system: Custom ERP (Qingdao Vatrad Group internal system) + physical batch tags on each work order
+  coverage: 100% of production materials —PVC, Hypalon, drop-stitch fabric, adhesives, valves, hardware, packaging
+  records_retained: 10 years (per CE 2013/53/EU requirement)
+  suppliers:
+    - material: Marine-grade PVC
+      source: Chinese and Korean suppliers
+      certified: ISO 9001, REACH, RoHS
+    - material: Hypalon (CSM)
+      source: Japanese supplier
+      certified: ISO 9001, REACH
+    - material: Drop-stitch fabric
+      source: In-house weaving + external partner
+      certified: Internal QC + supplier ISO 9001
+    - material: Valves & Hardware
+      source: Chinese OEM suppliers
+      certified: ISO 9001, material certs per batch
+qc_dashboard:
+  tagline: QC by the Numbers
+  title: Quality Control Metrics
+  subtitle: Real pass/fail data from our production line. Our quality lab operates independently from production and reports directly to management.
+  stats:
+    - value: 100%
+      label: Units pressure-tested
+      detail: Every boat, every chamber, every batch
+    - value: <5%
+      label: Max allowable pressure drop
+      detail: Over 24h at 1.25× rated pressure
+    - value: AQL 2.5
+      label: Major defect threshold
+      detail: Per ISO 2859 sampling standard
+    - value: 24—8h
+      label: Pressure hold duration
+      detail: Depending on product category
+    - value: 1.25×
+      label: Test pressure vs rated
+      detail: Safety margin on every chamber
+    - value: 0%
+      label: Tolerance on safety defects
+      detail: Valves, D-rings, seams, buoyancy
 process_cta:
   title: 查看我們的製造流程
   desc: 跟隨一艘船經歷生產的每個階段——從原材料到海上就緒的成品。
   label: 查看生產流程 →
   link: /factory/process
-intelligence_tagline: 工廠智慧
-intelligence_title: 探索我們的製造能力
-intelligence_cards:
-  - title: 生產能力
-    icon: C
-    icon_bg: 藍色
-    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
-    metrics:
-      - label: 最小起訂量
-        value: 'SUP: 5-10 / SUP: 2-5'
-      - label: 交期
-        value: 30-45 days
-    link: /factory/capacity
-    link_label: 查看全部產能詳情 →
-  - title: 質量實驗室與檢測
-    icon: Q
-    icon_bg: 綠色
-    desc: 獨立 QC 實驗室，含 4 個檢測階段：原材料檢驗（拉伸、撕裂、UV）、48 小時 1.25 倍額定壓力保壓、接縫剝離測試及每艘船的負載/平衡驗證。
-    metrics:
-      - label: 實驗室設備
-        value: 拉伸測試儀、溫控箱、洩漏檢測槽
-      - label: 標準
-        value: ISO 9001、CE、AS 1799
-    link: /factory/quality-lab
-    link_label: 實驗室程序與設備 →
-  - title: OEM/ODM 能力
-    icon: O
-    icon_bg: 紫色
-    desc: 端到端 OEM/ODM 服務：定製模具設計、自有品牌包裝、定製管顏色、甲板圖形（數字印刷和絲網印刷）、Hypalon 升級選項及一件代發物流。
-    metrics:
-      - label: 認證
-        value: ISO 9001、BSCI、CE、REACH
-      - label: 運輸
-        value: FOB、CIF、DDP，覆蓋 50+ 個國家
-    link: /factory/oem-capability
-    link_label: 查看全部 OEM 服務 →

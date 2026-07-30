@@ -1,58 +1,51 @@
-﻿hero_text:
-  tagline: Resources
-  title: 'İndirme Merkezi ve Satın Alma Kılavuzları'
-  subtitle: 'Bilgili satın alma kararları vermenize yardımcı olacak ürün kataloglarına, OEM kılavuzlarına, alıcı kontrol listelerine ve teknik belgelere erişin.'
-features3_downloads:
-  tagline: Downloads
-  title: 'Ürün Belgeleri<br />& Alıcı Kaynakları'
-  isBeforeContent: false
-  columns: 2
-  items:
-    - title: '2026 Marine Product Catalog'
-      description: 'SUP tekneleri, şişme botlar, SUP tahtaları, kanolar ve aksesuarları içeren eksiksiz ürün yelpazesi. Özellikler, yapılandırmalar ve seçenekler. PDF formatı.'
-      icon: tabler:file-text
-    - title: 'OEM Manufacturing Guide'
-      description: 'OEM/ODM ortaklıkları hakkında bilmeniz gereken her şey: sürece genel bakış, minimum sipariş miktarları, özelleştirme seçenekleri, kalite kontrol ve nakliye.'
-      icon: tabler:building-factory
-    - title: 'SUP Boat Buyer Guide'
-      description: 'Doğru SUP nasıl seçilir: gövde malzemeleri, boru malzemeleri, motor seçimi, boyut hususları ve farklı uygulamalar için konfigürasyon seçenekleri.'
-      icon: tabler:file-description
-    - title: 'SUP Supplier Checklist'
-      description: 'Bir SUP panosu üreticisini seçerken dikkate alınması gereken önemli noktalar: kalite göstergeleri, sertifika gereklilikleri, MOQ hususları ve fabrika denetiminde nelere dikkat edilmesi gerektiği.'
-      icon: tabler:clipboard-check
-    - title: 'Inflatable Boat Material Guide'
-      description: 'PVC ve Hypalon: farklı denizcilik uygulamaları için dayanıklılık, UV direnci, kullanım ömrü, onarım seçenekleri ve maliyet hususlarının karşılaştırılması.'
-      icon: tabler:files
-    - title: 'Custom Manufacturing Brief Template'
-      description: 'Ürün özeti şablonumuzu indirin. Gereksinimlerinizi doldurun ve aynı hafta içinde fiyat teklifi ve fizibilite değerlendirmesi için bize gönderin.'
-      icon: tabler:template
-faqs:
-  title: 'Sıkça Sorulan Sorular'
-  subtitle: 'Ürünlerimiz, üretim sürecimiz ve ortaklık modelimiz hakkında sık sorulan sorular.'
-  columns: 2
-  items:
-    - title: What is the minimum order quantity?
-      description: 'MOQ ürün kategorisine göre değişir. SUP tekneleri genellikle model başına 10 üniteden başlar. 50 üniteden oluşan SUP panoları. Ürüne özel MOQ bilgileri için satış ekibimizle iletişime geçin.'
-      icon: tabler:help-circle
-    - title: Can I get samples before placing an order?
-      description: 'Evet. afarer, seri üretim öncesi değerlendirme için numune üretimi sağlar. Numune maliyetleri pazarlığa tabidir ve genellikle ilk üretim siparişine yansıtılır.'
-      icon: tabler:package
-    - title: What payment terms are available?
-      description: "Standart koşullar siparişte %30 depozito, sevkiyattan önce %70'dir. Nitelikli müşteriler için LC koşulları mevcuttur. Düzenlemeleri görüşmek üzere finans ekibimizle iletişime geçin."
-      icon: tabler:currency-dollar
-    - title: How long does production take?
-      description: 'Tipik teslimat süreleri: SUP tekneleri 30-45 gün, SUP boardları 20-30 gün, şişme botlar 25-35 gün. Özel geliştirme, prototip oluşturma için 15-30 gün ekler.'
-      icon: tabler:calendar-clock
-    - title: What certifications do your products carry?
-      description: 'AB pazarları için CE sertifikası, ABD Sahil Güvenlik onaylı üretim, ISO kalite sistemi, BSCI uyumluluğu ve REACH malzeme uyumluluğu.'
-      icon: tabler:certificate
-    - title: Do you offer custom packaging and branding?
-      description: 'Evet. Logonuz, renkleriniz ve marka kimliğiniz ile özel ambalajlar sağlıyoruz. Özel paketleme için MOQ ürün kategorisine bağlıdır.'
-      icon: tabler:color-swatch
+meta:
+  title: B2B Resources & Downloads | {SITE}
+  description: Download OEM manufacturing guides, product catalogs, quality reports, and ROI calculators for inflatable SUP businesses.
+hero:
+  tagline: Resource Center
+  title: Tools & Resources<br />For SUP Business Partners
+  subtitle: Download OEM guides, product catalogs, quality reports, and use our ROI calculator to plan your SUP fleet investment.
+resources:
+  - title: 2026 OEM/ODM Product Catalog
+    description: Complete product lineup with specifications, pricing tiers, MOQ, and customization options for B2B partners.
+    icon: tabler:file-text
+    type: catalog
+    link: /media
+    cta: Download Catalog
+  - title: Private Label SUP Brand Guide
+    description: Step-by-step guide to launching your own SUP brand — from market research and design to production and global delivery.
+    icon: tabler:book
+    type: guide
+    link: /news/private-label-sup-oem-guide
+    cta: Read Guide
+  - title: SUP Fleet ROI Calculator
+    description: Estimate your resort or club SUP fleet investment, projected revenue, and payback period with our interactive calculator.
+    icon: tabler:calculator
+    type: tool
+    link: "#roi-calculator"
+    cta: Calculate ROI
+  - title: Quality & Certification Report
+    description: CE certification documents, ISO 9001 quality management, UV aging test results, and pressure hold test data.
+    icon: tabler:certificate
+    type: report
+    link: /evidence
+    cta: View Reports
+  - title: Factory Capability Brochure
+    description: Virtual tour of our 12,000 m² manufacturing facility with production line details and quality control processes.
+    icon: tabler:building-factory
+    type: brochure
+    link: /factory
+    cta: Tour Factory
+  - title: Resort Fleet Revenue Guide
+    description: Commercial SUP fleet ROI analysis with pricing models, utilization rates, and real case study results from 5-star resorts.
+    icon: tabler:chart-bar
+    type: guide
+    link: /news/commercial-sup-fleet-roi-resorts
+    cta: Read Guide
 cta:
-  title: 'Doğru kaynağı bulma konusunda yardıma mı ihtiyacınız var?'
-  subtitle: 'Ürün seçimi, OEM ortaklıkları veya teknik özellikler konusunda kişiselleştirilmiş rehberlik için ekibimizle iletişime geçin.'
+  title: Doğru kaynağı bulma konusunda yardıma mı ihtiyacınız var?
+  subtitle: Ürün seçimi, OEM ortaklıkları veya teknik özellikler konusunda kişiselleştirilmiş rehberlik için ekibimizle iletişime geçin.
   actions:
     - variant: primary
-      text: 'Ekibimizle iletişime geçin'
+      text: Ekibimizle iletişime geçin
       href: /contact

@@ -1,168 +1,121 @@
-﻿hero:
-  tagline: ''
-  title: |
-    Továrna na nafukovací čluny —<br class="hidden sm:inline" />
-    OEM/ODM <span class="text-accent dark:text-white">výrobce</span>
+hero:
+  tagline: 'Premium Inflatable SUP Manufacturer & OEM Partner'
+  title: 'Premium Inflatable SUP Manufacturer<br />&amp; OEM Partner'
   subtitle: |
-    <span class="hidden sm:inline"><span class="font-semibold">afarer</span> je OEM/ODM výrobce CE certifikovaných nafukovacích člunů, SUP prken, kajaků, SUP člunů a námořního bezpečnostního vybavení se sídlem v Číně.</span>
-    <span class="block mb-1 sm:hidden font-bold text-blue-600">afarer: spolehlivá továrna od roku 2012.</span>
-    Sloužíme B2B klientům v 50+ zemích s velkoobchodem, privátní značkou, vlastním designem a komplexními řešeními dodavatelského řetězce.
+    Designing and manufacturing inflatable paddle boards for global brands,<br />
+    resorts, paddle clubs and water adventure businesses.<br />
+    OEM/ODM partner with 12,000m² facility and CE-certified production.
+  taglineSection: 'Commercial-grade inflatable SUP solutions for resorts, clubs, retailers, and water brands.'
   actions:
     - variant: primary
-      text: Procházet produkty
-      href: /products
-      icon: tabler:shopping-bag
-    - text: Zjistit více
-      href: '#features'
+      text: Request OEM Quote
+      href: /oem-odm-manufacturer
+      icon: tabler:package
+    - text: Download Catalog
+      href: /resources/download-catalog
+      icon: tabler:file-text
+    - text: Explore SUP Solutions
+      href: /solutions
+      icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
-    alt: Obrázek afarer
-hero_carousel:
-  autoplay_interval: 5000
-  slides:
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/tech-meeting-small.webp
-        alt: Přehled továrny a zařízení afarer
-      tagline: Vítejte
-      title: |
-        Navrženo pro vodu. <br />
-        Postaveno pro <span class="text-sky-300">život na palubě</span>.
-      subtitle: Prémiové nafukovací čluny, SUP čluny a technické produkty pro námořní profesionály a nadšence.
-      actions:
-        - text: Procházet produkty
-          href: /products
-          variant: primary
-        - text: Poptat nabídku
-          href: /contact
-          variant: secondary
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
-        alt: Člun afarer na vodě
-      tagline: Řemeslné zpracování
-      title: |
-        Trupy, které přežijí záruku. <br />
-        Servis, který přežije trup.
-      subtitle: Námořní materiály. Hliníkové svařování. Dvacet let staré čluny nám stále volají pro díly.
-      actions:
-        - text: Náš příběh
-          href: /about
-          variant: primary
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/afarer-hero-design-concept.webp
-        alt: Nafukovací člun afarer na vodě
-      tagline: Podpora
-      title: |
-        Navrženo před prodejem. <br />
-        Podporováno dlouho poté.
-      subtitle: Autorizovaní servisní partneři ve 40+ zemích. Dvacet let staré trupy nám stále volají pro díly —a stále bereme telefony.
-      actions:
-        - text: Kontaktujte nás
-          href: /contact
-          variant: primary
-        - text: Kontaktujte nás
-          href: /contact
-          variant: secondary
-features:
-  id: features
-  tagline: Proč afarer
-  title: Co získáte s afarerem
-  subtitle: Desetiletí zkušeností s námořním inženýrstvím, destilované do zaměřené produktové řady. Postaveno na tvrdo, testováno na moři, podporováno po celý život.
-  columns: 2
+    alt: afarer inflatable SUP boards at a tropical resort waterfront —commercial fleet for water businesses
+
+who_we_serve:
+  tagline: Who We Serve
+  title: Complete SUP Solutions for Every Water Business
+  subtitle: Purpose-built equipment, manufacturing, and business support for four key markets.
   items:
-    - title: Námořní materiály
-      description: Těžké PVC, Hypalon a hliníkové trupy vybrané pro odolnost proti UV, oděru a slané vodě.
-      icon: tabler:shield-check
-    - title: Kvalita připravená k výrobě
-      description: Každý trup je tlakově testován, každý svar zkontrolován. Posíláme jen to, co bychom sami dali na vodu.
-      icon: tabler:certificate
-    - title: Modulární design
-      description: Přizpůsobte uspořádání hadic, pozici konzoly, kapacitu paliva a příslušenství podle vaší mise.
-      icon: tabler:layout-grid
-    - title: Upřímné specifikace
-      description: Skutečné hodnocení zátěže, skutečné rozměry, skutečná hmotnost. Nikdy žádné marketingové nafukování.
-      icon: tabler:ruler-measure
-    - title: Rychlé dodání a náhradní díly
-      description: Běžné modely odesílány ve dnech. Originální náhradní díly a spotřební materiál skladem po celý rok.
-      icon: tabler:truck-delivery
-    - title: Doživotní podpora
-      description: Přímá linka na náš inženýrský tým pro technické dotazy, opravy a poradenství při úpravách.
-      icon: tabler:lifebuoy
-featured_products:
-  id: featured
-  title: Doporučené produkty
-  subtitle: Ručně vybrané z našeho aktuálního katalogu —nejoblíbenější modely této sezóny.
-  linkText: Zobrazit všechny produkty
-  linkUrl: /products
-content_workshop:
-  isReversed: true
-  tagline: Uvnitř dílny
-  title: Od výkresu trupu k dodání, každý krok zůstává v režii
-  content: |
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Kvalitu, kterou vidíte, cítíte a měříte</h3>
-  items:
-    - title: Navrženo námořními architekty
-      description: Linie trupu jsou kresleny interně a iterovány pomocí CFD analýzy před prvním prototypem.
-    - title: Svařeno a smontováno v našem vlastním zařízení
-      description: Svařování hadic, montáž konzol a vybavení probíhá pod jednou střechou, takže kontrolujeme kvalitu v každém kroku.
-    - title: Testováno na moři před odesláním
-      description: Každý model absolvuje několikahodinovou námořní zkoušku zahrnující klouzání, otáčení, maximální rychlost a manipulaci se zátěží.
-  image:
-    src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
-    alt: Výrobní dílna afarer
-steps:
-  title: Od specifikace k vodě v pěti krocích
-  items:
-    - title: 'Krok 1: <span class="font-medium">Nakonfigurujte</span>'
-      description: Vyberte model, zvolte možnosti, poptejte nabídku online nebo telefonicky. Náš tým odpoví do jednoho pracovního dne.
-      icon: tabler:list-numbers
-    - title: 'Krok 2: <span class="font-medium">Potvrďte</span>'
-      description: Potvrdíme specifikace, dodací lhůtu a celkové náklady písemně. Žádná překvapení, žádné skryté poplatky.
-      icon: tabler:checks
-    - title: 'Krok 3: <span class="font-medium">Postavte</span>'
-      description: Výroba začíná v naší dílně. Posíláme fotografie průběhu v klíčových fázích.
-      icon: tabler:tool
-    - title: 'Krok 4: <span class="font-medium">Dodání</span>'
-      description: Zabaleno, smrštěno a odesláno po moři nebo letecky. Celní doklady vyřízeny od začátku do konce.
-      icon: tabler:truck-loading
-    - title: 'Krok 5: <span class="font-medium">Podpora</span>'
-      description: Dvouletá záruka na trup plus doživotní technická podpora. Náhradní díly odeslány do 48 hodin.
-      icon: tabler:headset
-blog_latest:
-  title: Z deníku
-  information: |
-    Články, technické poznámky a případové studie od inženýrského týmu.
-    Nové příspěvky přidáváme vždy, když je projekt odeslán, norma aktualizována nebo někdo má příběh, který stojí za vyprávění.
-faqs:
-  title: Často kladené otázky
-  subtitle: Běžné dotazy o nafukovacích člunech afarer, zárukách, dopravě a OEM/ODM partnerstvích. Pokud váš dotaz není uveden, napište nám.
-  columns: 2
-  items:
-    - title: Kde se nachází sklad afarer v USA a jak dlouho trvá dodání?
-      description: 'Náš sklad v USA se nachází v Montclair, CA. Západní pobřeží: 2— dny. Střed USA: 3— dny. Východní pobřeží: 4— dny. Je také k dispozici mezinárodní doprava —kontaktujte nás pro individuální nabídku.'
-      icon: tabler:truck-delivery
-    - title: Jaká je záruční politika afarer pro nafukovací čluny?
-      description: 'Nafukovací námořní produkty afarer jsou kryty 5letou omezenou zárukou na integritu tkaniny hadic, těsnost švů, konstrukci sklolaminátového trupu a ventily. Továrně instalované příslušenství je kryto 1 rok. Komerční použití: 1letá omezená záruka. Úplné podmínky jsou k dispozici na naší stránce záruky.'
-      icon: tabler:shield-check
-    - title: Obsahují čluny afarer registrační dokumenty?
-      description: Ano, každý nafukovací člun afarer obsahuje potřebné dokumenty pro registraci. Osvědčení o původu od výrobce naleznete na zadní straně uživatelské příručky a kopii ke stažení je k dispozici na vyžádání. Schváleno pobřežní stráží USA pro výrobu.
-      icon: tabler:file-text
-    - title: Jsou čluny afarer schváleny pobřežní stráží USA?
-      description: 'Ano, nafukovací čluny afarer jsou schváleny pobřežní stráží Spojených států (USCG) pro výrobu. Naše továrna má také CE certifikaci pro přístup na trh EU a  certifikaci.'
-      icon: tabler:flag
-    - title: Co dělat, když balení produktu dorazí poškozené?
-      description: Pokud balení produktu afarer dorazí poškozené, odmítněte dodání a nechte balík vrátit odesílateli. Kontaktujte náš podpůrný tým a my vám neprodleně zašleme náhradu.
+    - title: Paddle Clubs
+      keywords: SUP club equipment, paddle school equipment, rental fleet
+      description: Durable SUP fleets, club pricing, and replacement parts programs for paddle clubs and schools.
+      icon: tabler:users
+      cta: Explore Paddle Club Solutions
+      link: /solutions/paddle-clubs
+    - title: Resorts & Hotels
+      keywords: resort water activities, hotel beach equipment, guest experience
+      description: Complete SUP fleet programs with custom branding, staff training, and ROI-optimized packages.
+      icon: tabler:building
+      cta: Create Your Resort Water Experience
+      link: /solutions/resorts-hotels
+    - title: Retail Partners
+      keywords: SUP wholesale, outdoor retailers, sporting goods stores
+      description: Full product line, marketing materials, dropshipping options, and competitive wholesale margins.
+      icon: tabler:shopping-cart
+      cta: Become A Retail Partner
+      link: /solutions/retail-partners
+    - title: New SUP Brands
+      keywords: private label SUP, custom SUP brand, OEM paddle boards
+      description: End-to-end OEM/ODM manufacturing — design, prototyping, mass production, and global logistics.
       icon: tabler:package
-    - title: Co dělat, když produkt nedorazí do odhadovaného data dodání?
-      description: Dodací lhůty poskytnuté společností afarer jsou odhady a nelze je zaručit. Po odeslání je převzetí balíku odpovědností zákazníka. Pokud je balík ponechán na určeném místě doručení, vlastnictví přechází při doručení.
-      icon: tabler:calendar-clock
+      cta: Build Your SUP Brand
+      link: /oem-odm-manufacturer
+
+proof_points:
+  title: Trusted by Water Businesses Worldwide
+  subtitle: Decades of marine engineering experience powering profitable SUP programs.
+  items:
+    - metric: '10+'
+      label: Years Experience
+      detail: Since 2012
+    - metric: '50+'
+      label: Countries Served
+      detail: Global distribution network
+    - metric: '15,000+'
+      label: Units Produced Annually
+      detail: CE-certified production capacity
+    - metric: 100%
+      label: CE Certified
+      detail: ISO 9001, BSCI, REACH compliant
+
+business_solutions:
+  tagline: How We Help
+  title: Your Partner From Concept To Revenue
+  subtitle: Four core capabilities that help water businesses launch, operate, and grow.
+  items:
+    - title: Professional Equipment
+      description: Commercial-grade SUP boards engineered for daily rental use, 500+ cycles with minimal maintenance.
+      icon: tabler:shield-check
+    - title: OEM Manufacturing
+      description: End-to-end private label production from design and prototyping to mass production and global delivery.
+      icon: tabler:package
+    - title: Business Support
+      description: Staff training, marketing materials, replacement parts programs, and dedicated account management.
+      icon: tabler:headset
+    - title: Global Logistics
+      description: FOB Qingdao, CIF major ports, door-to-door delivery to 50+ countries with customs support.
+      icon: tabler:truck-delivery
+
+oem_section:
+  tagline: Launch Your Brand
+  title: From Idea To Market In 16 Weeks
+  subtitle: Your complete SUP brand launch partner — design, prototype, manufacture, and ship.
+  steps:
+    - number: '01'
+      title: Idea & Brief
+      desc: Share your vision, target market, and specifications.
+    - number: '02'
+      title: Design & Engineering
+      desc: 3D modeling, material selection, and custom graphic design.
+    - number: '03'
+      title: Prototype & Validate
+      desc: Sample production with CE certification and quality testing.
+    - number: '04'
+      title: Mass Production
+      desc: Full-scale manufacturing with inline QC and factory audit support.
+    - number: '05'
+      title: Global Delivery
+      desc: FOB Qingdao logistics, CIF major ports, door-to-door.
+  cta: Start Your Brand Journey
+  cta_link: /oem-odm-manufacturer
+
 cta:
-  title: |
-    Jste připraveni zahájit svůj <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">OEM/ODM projekt</span>?
-  subtitle: Sdělte nám své požadavky a my poskytneme individuální nabídku, podrobnosti o MOQ a dodací lhůtě do jednoho pracovního dne.
+  title: Ready to build your water adventure business?
+  subtitle: Whether you are launching a club, outfitting a resort, or building a brand — we are here to help.
   actions:
     - variant: primary
-      text: Poptat nabídku
+      text: Start Your Project
       href: /contact
-      icon: tabler:message-circle
-    - text: Navštivte naši továrnu
-      href: /factory
+      icon: tabler:send
+    - text: Download OEM Guide
+      href: /resources/download-catalog

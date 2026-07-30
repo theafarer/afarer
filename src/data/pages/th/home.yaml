@@ -1,159 +1,121 @@
-﻿hero:
-  tagline: ''
-  title: |
-    โรงงานเรือเป่าลม — <br class="hidden sm:inline" />
-    ผู้ผลิต <span class="text-accent dark:text-white">OEM/ODM</span>
+hero:
+  tagline: 'Premium Inflatable SUP Manufacturer & OEM Partner'
+  title: 'Premium Inflatable SUP Manufacturer<br />&amp; OEM Partner'
   subtitle: |
-    <span class="hidden sm:inline"><span class="font-semibold">afarer</span> เป็นผู้ผลิต OEM/ODM ในจีนของเรือเป่าลม บอร์ด SUP เรือคายัค SUP และอุปกรณ์ความปลอดภัยทางทะเลที่ได้รับการรับรอง CE</span>
-    <span class="block mb-1 sm:hidden font-bold text-blue-600">afarer: โรงงานที่เชื่อถือได้ตั้งแต่ 2012</span>
-    เราให้บริการลูกค้า B2B ในกว่า 50 ประเทศด้วยโซลูชันขายส่ง แบรนด์ส่วนตัว ออกแบบพิเศษ และห่วงโซ่อุปทานครบวงจร
+    Designing and manufacturing inflatable paddle boards for global brands,<br />
+    resorts, paddle clubs and water adventure businesses.<br />
+    OEM/ODM partner with 12,000m² facility and CE-certified production.
+  taglineSection: 'Commercial-grade inflatable SUP solutions for resorts, clubs, retailers, and water brands.'
   actions:
     - variant: primary
-      text: สำรวจสินค้า
-      href: /products
-      icon: tabler:shopping-bag
-    - text: เรียนรู้เพิ่มเติม
-      href: '#features'
+      text: Request OEM Quote
+      href: /oem-odm-manufacturer
+      icon: tabler:package
+    - text: Download Catalog
+      href: /resources/download-catalog
+      icon: tabler:file-text
+    - text: Explore SUP Solutions
+      href: /solutions
+      icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
-    alt: afarer hero image
-hero_carousel:
-  autoplay_interval: 5000
-  slides:
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/tech-meeting-small.webp
-        alt: โรงงานและสิ่งอำนวยความสะดวก afarer
-      tagline: ยินดีต้อนรับ
-      title: |
-        ออกแบบมาเพื่อน้ำ <br />
-        สร้างมาเพื่อ <span class="text-sky-300">ชีวิตบนเรือ</span>
-      subtitle: เรือเป่าลมระดับพรีเมียม SUP และผลิตภัณฑ์เทคนิคสำหรับมืออาชีพทางทะเลและผู้ที่ชื่นชอบ
-      actions:
-        - text: สำรวจสินค้า
-          href: /products
-          variant: primary
-        - text: ขอใบเสนอราคา
-          href: /contact
-          variant: secondary
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
-        alt: เรือ afarer บนน้ำ
-      tagline: ฝีมือ
-      title: |
-        ตัวเรือที่อยู่ทนกว่าการรับประกัน <br />
-        บริการที่อยู่นานกว่าตัวเรือ
-      subtitle: วัสดุทางทะเล การเชื่อมอลูมิเนียม เรืออายุ 20 ปียังโทรหาอะไหล่
-      actions:
-        - text: เรื่องราวของเรา
-          href: /about
-          variant: primary
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/afarer-hero-design-concept.webp
-        alt: เรือเป่าลม afarer บนน้ำ
-      tagline: สนับสนุน
-      title: |
-        สร้างก่อนขาย <br />
-        สนับสนุนนานหลังจากนั้น
-      subtitle: พันธมิตรบริการที่ได้รับอนุญาตในกว่า 40 ประเทศ ตัวเรืออายุ 20 ปียังโทรหาอะไหล่ — และเรายังรับโทรศัพท์
-      actions:
-        - text: ติดต่อเรา
-          href: /contact
-          variant: primary
-        - text: ติดต่อเรา
-          href: /contact
-          variant: secondary
-features:
-  id: features
-  tagline: ทำไม afarer
-  title: สิ่งที่คุณได้รับกับ afarer
-  subtitle: ประสบการณ์วิศวกรรมทางทะเลหลายทศวรรษ กลั่นกรองเป็นสายผลิตภัณฑ์ที่เน้นความสำคัญ สร้างอย่างแข็งแกร่ง ทดสอบในทะเล สนับสนุนตลอดชีพ
-  columns: 2
+    alt: afarer inflatable SUP boards at a tropical resort waterfront —commercial fleet for water businesses
+
+who_we_serve:
+  tagline: Who We Serve
+  title: Complete SUP Solutions for Every Water Business
+  subtitle: Purpose-built equipment, manufacturing, and business support for four key markets.
   items:
-    - title: วัสดุทางทะเล
-      description: PVC หนัก Hypalon และตัวเรืออะลูมิเนียมที่เลือกเพื่อความทนทานต่อรังสี UV การเสียดสี และน้ำเค็ม
+    - title: Paddle Clubs
+      keywords: SUP club equipment, paddle school equipment, rental fleet
+      description: Durable SUP fleets, club pricing, and replacement parts programs for paddle clubs and schools.
+      icon: tabler:users
+      cta: Explore Paddle Club Solutions
+      link: /solutions/paddle-clubs
+    - title: Resorts & Hotels
+      keywords: resort water activities, hotel beach equipment, guest experience
+      description: Complete SUP fleet programs with custom branding, staff training, and ROI-optimized packages.
+      icon: tabler:building
+      cta: Create Your Resort Water Experience
+      link: /solutions/resorts-hotels
+    - title: Retail Partners
+      keywords: SUP wholesale, outdoor retailers, sporting goods stores
+      description: Full product line, marketing materials, dropshipping options, and competitive wholesale margins.
+      icon: tabler:shopping-cart
+      cta: Become A Retail Partner
+      link: /solutions/retail-partners
+    - title: New SUP Brands
+      keywords: private label SUP, custom SUP brand, OEM paddle boards
+      description: End-to-end OEM/ODM manufacturing — design, prototyping, mass production, and global logistics.
+      icon: tabler:package
+      cta: Build Your SUP Brand
+      link: /oem-odm-manufacturer
+
+proof_points:
+  title: Trusted by Water Businesses Worldwide
+  subtitle: Decades of marine engineering experience powering profitable SUP programs.
+  items:
+    - metric: '10+'
+      label: Years Experience
+      detail: Since 2012
+    - metric: '50+'
+      label: Countries Served
+      detail: Global distribution network
+    - metric: '15,000+'
+      label: Units Produced Annually
+      detail: CE-certified production capacity
+    - metric: 100%
+      label: CE Certified
+      detail: ISO 9001, BSCI, REACH compliant
+
+business_solutions:
+  tagline: How We Help
+  title: Your Partner From Concept To Revenue
+  subtitle: Four core capabilities that help water businesses launch, operate, and grow.
+  items:
+    - title: Professional Equipment
+      description: Commercial-grade SUP boards engineered for daily rental use, 500+ cycles with minimal maintenance.
       icon: tabler:shield-check
-    - title: คุณภาพพร้อมผลิต
-      description: ตัวเรือทุกลำผ่านการทดสอบแรงดัน รอยเชื่อมทุกจุดผ่านการตรวจสอบ เราส่งเฉพาะสิ่งที่เราจะนำลงน้ำด้วยตัวเอง
-      icon: tabler:certificate
-    - title: การออกแบบโมดูลาร์
-      description: ปรับแต่งผังท่อ ตำแหน่งคอนโซล ความจุเชื้อเพลิง และอุปกรณ์เสริมตามภารกิจของคุณ
-      icon: tabler:layout-grid
-    - title: ข้อมูลจำเพาะที่จริงใจ
-      description: ค่าการรับน้ำหนักจริง ขนาดจริง น้ำหนักจริง ไม่เคยพูดเกินจริงทางการตลาด
-      icon: tabler:ruler-measure
-    - title: จัดส่งรวดเร็วและอะไหล่
-      description: รุ่นทั่วไปจัดส่งภายในไม่กี่วัน อะไหล่แท้และวัสดุสิ้นเปลืองในสต็อกตลอดทั้งปี
-      icon: tabler:truck-delivery
-    - title: สนับสนุนตลอดชีพ
-      description: สายตรงถึงทีมวิศวกรของเราสำหรับคำถามทางเทคนิค การซ่อมแซม และคำแนะนำในการปรับปรุง
-      icon: tabler:lifebuoy
-featured_products:
-  id: featured
-  title: สินค้าแนะนำ
-  subtitle: คัดสรรจากแคตตาล็อกปัจจุบันของเรา — รุ่นยอดนิยมประจำฤดูกาลนี้
-  linkText: ดูสินค้าทั้งหมด
-  linkUrl: /products
-content_workshop:
-  isReversed: true
-  tagline: ในโรงงาน
-  title: ตั้งแต่แบบตัวเรือจนถึงการจัดส่ง ทุกขั้นตอนยังคงอยู่ภายใน
-  content: |
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">คุณภาพที่คุณเห็น รู้สึก และวัดได้</h3>
-  items:
-    - title: ออกแบบโดยสถาปนิกต่อเรือ
-      description: เส้นตัวเรือถูกวาดภายในและปรับปรุงผ่านการวิเคราะห์ CFD ก่อนที่ต้นแบบแรกจะลงน้ำ
-    - title: เชื่อมและประกอบในโรงงานของเราเอง
-      description: การเชื่อมท่อ การติดตั้งคอนโซล และการตกแต่งเกิดขึ้นภายใต้หลังคาเดียวกัน เราจึงควบคุมคุณภาพในทุกขั้นตอน
-    - title: ทดสอบในทะเลก่อนส่ง
-      description: ทุกรุ่นผ่านการทดสอบทางทะเลหลายชั่วโมง ครอบคลุมการไถล การเลี้ยว ความเร็วสูงสุด และการจัดการน้ำหนัก
-  image:
-    src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
-    alt: โรงงานผลิต afarer
-steps:
-  title: จากข้อมูลจำเพาะถึงการลงน้ำในห้าขั้นตอน
-  items:
-    - title: 'ขั้นตอนที่ 1: <span class="font-medium">กำหนดค่า</span>'
-      description: เลือกรุ่น เลือกตัวเลือก ขอใบเสนอราคาออนไลน์หรือทางโทรศัพท์ ทีมงานของเราตอบกลับภายในหนึ่งวันทำการ
-      icon: tabler:list-numbers
-    - title: 'ขั้นตอนที่ 2: <span class="font-medium">ยืนยัน</span>'
-      description: เรายืนยันข้อมูลจำเพาะ ระยะเวลาจัดส่ง และต้นทุนรวมเป็นลายลักษณ์อักษร ไม่มีเซอร์ไพรส์ ไม่มีค่าธรรมเนียมซ่อนเร้น
-      icon: tabler:checks
-    - title: 'ขั้นตอนที่ 3: <span class="font-medium">สร้าง</span>'
-      description: การผลิตเริ่มในโรงงานของเรา เราส่งรูปถ่ายความคืบหน้าในเหตุการณ์สำคัญ
-      icon: tabler:tool
-    - title: 'ขั้นตอนที่ 4: <span class="font-medium">จัดส่ง</span>'
-      description: วางในเปล ห่อด้วยฟิล์มหด และส่งทางเรือหรือทางอากาศ เอกสารศุลกากรดำเนินการตั้งแต่ต้นจนจบ
-      icon: tabler:truck-loading
-    - title: 'ขั้นตอนที่ 5: <span class="font-medium">สนับสนุน</span>'
-      description: รับประกันตัวเรือสองปีบวกสนับสนุนทางเทคนิคตลอดชีพ อะไหล่จัดส่งภายใน 48 ชั่วโมง
+    - title: OEM Manufacturing
+      description: End-to-end private label production from design and prototyping to mass production and global delivery.
+      icon: tabler:package
+    - title: Business Support
+      description: Staff training, marketing materials, replacement parts programs, and dedicated account management.
       icon: tabler:headset
-blog_latest:
-  title: จากบล็อก
-  information: |
-    บทความ บันทึกทางเทคนิค และกรณีศึกษาจากทีมวิศวกร
-    โพสต์ใหม่จะถูกเพิ่มเมื่อโครงการถูกส่ง มาตรฐานได้รับการอัปเดต หรือมีใครมีเรื่องราวที่ควรค่าแก่การบอกเล่า
-faqs:
-  title: คำถามที่พบบ่อย
-  subtitle: คำถามทั่วไปเกี่ยวกับเรือเป่าลม afarer การรับประกัน การจัดส่ง และพันธมิตร OEM/ODM ถ้าไม่พบคำตอบที่นี่ ติดต่อเรา
-  columns: 2
-  items:
-    - title: คลังสินค้า afarer ในสหรัฐฯ อยู่ที่ไหน และใช้เวลาจัดส่งนานเท่าใด?
-      description: 'คลังสินค้าสหรัฐฯ ของเราอยู่ใน Montclair, CA ฝั่งตะวันตก: 2-3 วัน กลางสหรัฐฯ: 3-4 วัน ฝั่งตะวันออก: 4-5 วัน สามารถจัดส่งระหว่างประเทศได้'
+    - title: Global Logistics
+      description: FOB Qingdao, CIF major ports, door-to-door delivery to 50+ countries with customs support.
       icon: tabler:truck-delivery
-    - title: นโยบายการรับประกันของ afarer สำหรับเรือเป่าลมคืออะไร?
-      description: เรือเป่าลม afarer รับประกันแบบจำกัด 5 ปีสำหรับความสมบูรณ์ของท่อ ตะเข็บ ตัวเรือไฟเบอร์กลาส และวาล์ว อุปกรณ์เสริมที่ติดตั้งจากโรงงานรับประกัน 1 ปี
-      icon: tabler:shield-check
-    - title: เรือ afarer รวมเอกสารจดทะเบียนหรือไม่?
-      description: ใช่ เรือเป่าลม afarer ทุกลำรวมเอกสารที่จำเป็นสำหรับการจดทะเบียน ได้รับการอนุมัติจากหน่วยยามฝั่งสหรัฐฯ สำหรับการผลิต
-      icon: tabler:file-text
+
+oem_section:
+  tagline: Launch Your Brand
+  title: From Idea To Market In 16 Weeks
+  subtitle: Your complete SUP brand launch partner — design, prototype, manufacture, and ship.
+  steps:
+    - number: '01'
+      title: Idea & Brief
+      desc: Share your vision, target market, and specifications.
+    - number: '02'
+      title: Design & Engineering
+      desc: 3D modeling, material selection, and custom graphic design.
+    - number: '03'
+      title: Prototype & Validate
+      desc: Sample production with CE certification and quality testing.
+    - number: '04'
+      title: Mass Production
+      desc: Full-scale manufacturing with inline QC and factory audit support.
+    - number: '05'
+      title: Global Delivery
+      desc: FOB Qingdao logistics, CIF major ports, door-to-door.
+  cta: Start Your Brand Journey
+  cta_link: /oem-odm-manufacturer
+
 cta:
-  title: |
-    พร้อมเริ่ม <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">โครงการ OEM/ODM ของคุณ</span>?
-  subtitle: บอกความต้องการของคุณ แล้วเราจะให้ข้อเสนอที่ปรับแต่ง รายละเอียด MOQ และระยะเวลาจัดส่งภายในหนึ่งวันทำการ
+  title: Ready to build your water adventure business?
+  subtitle: Whether you are launching a club, outfitting a resort, or building a brand — we are here to help.
   actions:
     - variant: primary
-      text: ขอใบเสนอราคา
+      text: Start Your Project
       href: /contact
-      icon: tabler:message-circle
-    - text: เยี่ยมชมโรงงานของเรา
-      href: /factory
+      icon: tabler:send
+    - text: Download OEM Guide
+      href: /resources/download-catalog

@@ -72,40 +72,61 @@ steps2_manufacturing:
     - title: 最終檢驗
       description: 每件產品在批准發貨前都經過外觀、硬件和包裝檢查。批次樣品送到實驗室進行破壞性測試。
       icon: tabler:clipboard-check
-faqs_rib:
-  title: RIB船常見問題
-  subtitle: 關於我們硬殼充氣艇的常見問題。
-  columns: 2
+factory_audit:
+  title: Factory Audit & Social Compliance
+  subtitle: Our 12,000 m² Qingdao facility is open to third-party audits. We maintain BSCI social compliance certification and welcome customer inspections.
+  stats:
+    - value: 12,000 m²
+      label: Production Facility
+    - value: 200+
+      label: Skilled Workers
+    - value: 15,000+
+      label: Annual Unit Capacity
+    - value: BSCI
+      label: Social Compliance
+  highlights:
+    - title: BSCI Certified
+      desc: amfori BSCI social compliance certification — ethical labour, safe conditions, environmental responsibility.
+      link: /certifications
+    - title: Open for Inspection
+      desc: We welcome customer factory audits. Schedule a visit or virtual tour of our Qingdao production lines.
+      link: /factory
+    - title: Full Traceability
+      desc: Every production batch is documented and traceable — from raw material lot numbers to final QC sign-off.
+    - title: ISO 9001:2015
+      desc: Quality management system certified by SGS. Our processes meet international manufacturing standards.
+      link: /certifications
+warranty_section:
+  title: Warranty & After-Sales Support
+  subtitle: We stand behind every product with clear warranty terms, fast claims processing, and genuine replacement parts.
   items:
-    - title: afarer提供哪些尺寸的RIB船？
-      description: 我們提供35款RIB型號，從2.5米到7.6米，涵蓋緊湊型接駁艇到重型商業和巡邏艇。每款型號都有多種配置選項。
-    - title: RIB和傳統充氣船有什麼區別？
-      description: SUP（硬殼充氣艇）將實心玻璃鋼或鋁製深V船體與充氣Hypalon或PVC管相結合。這提供了硬船的穩定性和負載能力以及充氣船的減震和浮力。
-    - title: 哪些發動機與afarer RIB兼容？
-      description: 我們的RIB支持3 HP到250 HP的舷外發動機，具體取決於型號。每個產品頁面都列出了最大額定功率。建議諮詢經銷商以獲得最佳匹配。
-    - title: afarer RIB是否經過CE認證？
-      description: 是的。所有休閒RIB型號均根據適用的歐洲休閒船艇標準獲得CE認證。商業和巡邏型號滿足額外的穩定性和負載要求。
-    - title: RIB船的保修是什麼？
-      description: 所有afarer RIB均附帶標準的一年製造缺陷保修，涵蓋船體分層、管縫失效、閥門缺陷和硬件問題。
-    - title: afarer RIB有多少個氣室？
-      description: 我們的RIB根據型號長度配備3到7個獨立氣室。這種多氣室設計確保即使一個隔間受損，船仍能漂浮。
-faqs_inflatable:
-  title: 充氣船常見問題
-  subtitle: 關於我們充氣小艇、皮艇和船的常見問題。
-  columns: 2
+    - title: 2-Year Product Warranty
+      desc: All afarer products carry a 2-year warranty against manufacturing defects — seam failure, valve defects, and material delamination under normal use.
+    - title: Lifetime Parts Support
+      desc: Genuine replacement parts — valves, repair kits, fins, D-rings — available for all models. We maintain moulds and tooling for a minimum of 5 years after production end.
+    - title: 48-Hour Claim Response
+      desc: Warranty claims acknowledged within 48 hours. Replacement boards shipped within 10 business days for approved claims.
+    - title: Global Repair Network
+      desc: Authorised repair centres in 15+ countries. Field repair kits available for remote operations. DIY repair guides for minor damage.
+    - title: OEM Customer Support
+      desc: Dedicated account managers for B2B partners. Quarterly business reviews, inventory planning, and co-branded marketing support.
+    - title: Certification Package
+      desc: Full compliance documentation provided with every shipment — CE Declaration, test reports, material safety data sheets.
+      link: /contact
+trust_resources:
+  title: Trust Resources
+  subtitle: Download our certification portfolio, QC reports, and compliance documentation.
   items:
-    - title: afarer充氣船使用什麼材料？
-      description: 根據型號，我們使用軍用級PVC（1100旦尼爾）和優質Hypalon/CSM橡膠。兩種材料都經過抗紫外線穩定處理、耐磨，並符合歐盟REACH和RoHS法規。
-    - title: 充氣船能用多久？
-      description: 妥善保養下，優質PVC充氣船可使用7-10年，而Hypalon型號可使用15-20年。定期清潔、防曬和正確存放可顯著延長使用壽命。
-    - title: 充氣船需要什麼維護？
-      description: 基本維護包括每次使用後用淡水沖洗（尤其在鹹水中）、存放前乾燥、每年檢查閥門密封圈以及塗抹防曬劑。不用時避免長時間暴曬。
-    - title: 充氣船可以在鹹水中使用嗎？
-      description: 可以。所有afarer充氣船都設計用於淡水和鹹水。建議在鹹水使用後用淡水沖洗並徹底乾燥，以防止配件腐蝕和織物鹽結晶。
-    - title: 如何存放充氣船？
-      description: 存放前放氣、清潔並完全乾燥。鬆散捲起（避免緊折），存放在遠離直射陽光的陰涼乾燥處，不要放在混凝土地板上以防止吸溼。
-    - title: afarer充氣船的承重能力是多少？
-      description: 承重範圍從最小型號的290公斤到大型商業船的2000公斤以上。每個產品頁面都列出了具體型號的最大負載等級。
+    - title: Certification Portfolio
+      desc: CE, ISO 9001, BSCI, REACH, RoHS, AS 1799 certificates in one package.
+    - title: QC Testing Standards Report
+      desc: 24-hour pressure hold tests, UV aging per ISO, tensile strength validation — complete methodology.
+    - title: Factory Profile & Audit Report
+      desc: 12,000 m² facility overview with production line photos and third-party audit summary.
+    - title: Warranty Policy Document
+      desc: Full warranty terms, claims process, and replacement parts pricing.
+  cta_text: Request Trust Resources
+  cta_link: /contact
 faqs_sup:
   title: SUP板常見問題
   subtitle: 關於我們站立式槳板的常見問題。
@@ -123,6 +144,23 @@ faqs_sup:
       description: 所有afarer SUP板均附帶一年製造缺陷保修，包括正常使用下的接縫失效、閥門缺陷和材料分層。
     - title: SUP板充氣需要多長時間？
       description: 使用附帶手泵，完全充氣到15 PSI約需8-12分鐘。如需更快充氣，我們推薦使用afarer 12V電動泵，可在4分鐘內完成充氣。
+faqs_materials:
+  title: SUP Material & Care FAQs
+  subtitle: Common questions about our inflatable SUP materials, care, and storage.
+  columns: 2
+  items:
+    - title: What materials are used in afarer inflatable SUPs?
+      description: We use military-grade PVC (1100 denier) with UV-stabilized, abrasion-resistant construction, compliant with EU REACH and RoHS regulations.
+    - title: How long do inflatable SUPs last?
+      description: With proper care, a quality PVC inflatable SUP lasts 5—0 years. Regular cleaning, UV protection, and proper storage significantly extend service life.
+    - title: What maintenance is required for an inflatable SUP?
+      description: Basic maintenance includes rinsing with fresh water after each use (especially in saltwater), drying before storage, checking valve seals annually, and avoiding prolonged sun exposure when not in use.
+    - title: Can inflatable SUPs be used in saltwater?
+      description: Yes. All afarer inflatable SUPs are designed for both freshwater and saltwater use. We recommend rinsing with fresh water and drying thoroughly after saltwater exposure.
+    - title: How do I store an inflatable SUP?
+      description: Deflate, clean, and dry the board completely before storage. Roll loosely (avoid tight folds), store in a cool dry place away from direct sunlight, and keep off concrete floors to prevent moisture wicking.
+    - title: What is the weight capacity of afarer inflatable SUPs?
+      description: Weight capacities range from 100 kg for our smallest models to over 200 kg for larger boards. Each product page lists the maximum load rating for your specific model.
 cta:
   title: 想親自查看認證嗎？
   subtitle: 索取我們的認證組合、工廠審核報告或材料合規文件。無需NDA。

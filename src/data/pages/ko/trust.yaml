@@ -1,142 +1,172 @@
-﻿hero:
-  tagline: '중요한 기준에 따라 제작되었습니다'
-  title: 'afarer를 신뢰하세요'
+hero:
+  tagline: 중요한 기준에 따라 제작되었습니다
+  title: afarer를 신뢰하세요
   subtitle: |
     우리가 만드는 모든 제품은 CE 인증을 받았습니다 —안전, 내구성 및<br />
     성능 테스트를 거쳤습니다. 타협 없습니다. 예외 없습니다.
-  taglineSection: '인증. 테스트. 입증.'
-  image: 'https://assets.afarer.com/images/afarer/hero/tech-meeting-small.webp'
-  imageAlt: '품질 테스트를 받고 있는 afarer 제품'
-
+  taglineSection: 인증. 테스트. 입증.
+  image: https://assets.afarer.com/images/afarer/hero/tech-meeting-small.webp
+  imageAlt: 품질 테스트를 받고 있는 afarer 제품
 stats:
-  title: '숫자로 보는 afarer'
+  title: 숫자로 보는 afarer
   stats:
-    - title: 'CE 인증'
-      description: '모든 레크리에이션 제품이 EU 안전 기준 충족'
-    - title: 'ISO 9001'
-      description: '2012년부터의 품질 관리 시스템'
-    - title: 'BSCI 및 REACH'
-      description: '윤리적 제조 및 재료 규정 준수'
-    - title: '2년 보증'
-      description: '모든 afarer 제품 —질문 없음'
-
+    - title: CE 인증
+      description: 모든 레크리에이션 제품이 EU 안전 기준 충족
+    - title: ISO 9001
+      description: 2012년부터의 품질 관리 시스템
+    - title: BSCI 및 REACH
+      description: 윤리적 제조 및 재료 규정 준수
+    - title: 2년 보증
+      description: 모든 afarer 제품 —질문 없음
 features3_certifications:
-  title: '인증 및 규정 준수'
-  subtitle: '모든 제품은 독립적으로 테스트되고 국제 표준에 따라 인증되었습니다.'
+  title: 인증 및 규정 준수
+  subtitle: 모든 제품은 독립적으로 테스트되고 국제 표준에 따라 인증되었습니다.
   columns: 3
   isBeforeContent: true
   items:
-    - title: 'CE 인증'
-      description: '모든 afarer SUP, 카약, 딩기 및 RIB는 유럽 CE 안전 기준을 충족합니다. 각 제품은 출하 전 압력, 부력 및 부하 테스트를 거칩니다.'
-      icon: 'tabler:certificate'
-    - title: 'ISO 9001'
-      description: '칭다오의 12,000m² 시설은  품질 관리 시스템으로 운영됩니다. 모든 생산 배치는 추적 가능하고 문서화되며 검사됩니다.'
-      icon: 'tabler:clipboard-check'
-    - title: 'BSCI 사회적 규정 준수'
-      description: 'BSCI 인증을 받아 윤리적 노동 관행과 안전한 작업 조건을 보장합니다.'
-      icon: 'tabler:users'
-    - title: 'REACH 및 RoHS'
-      description: '모든 재료 —PVC, Hypalon, EVA 폼, 접착제 —EU REACH 및 RoHS 규정을 준수합니다.'
-      icon: 'tabler:flask'
-    - title: '재료 테스트 연구소'
-      description: '자체 재료 연구소에서 생산 전 인장 강도, UV 저항성, 솔기 무결성을 테스트합니다.'
-      icon: 'tabler:microscope'
-    - title: '2년 보증'
-      description: '모든 afarer 제품에는 제조 결함에 대한 2년 보증이 제공됩니다.'
-      icon: 'tabler:shield-check'
-
+    - title: CE 인증
+      description: 모든 afarer SUP, 카약, 딩기 및 RIB는 유럽 CE 안전 기준을 충족합니다. 각 제품은 출하 전 압력, 부력 및 부하 테스트를 거칩니다.
+      icon: tabler:certificate
+    - title: ISO 9001
+      description: 칭다오의 12,000m² 시설은  품질 관리 시스템으로 운영됩니다. 모든 생산 배치는 추적 가능하고 문서화되며 검사됩니다.
+      icon: tabler:clipboard-check
+    - title: BSCI 사회적 규정 준수
+      description: BSCI 인증을 받아 윤리적 노동 관행과 안전한 작업 조건을 보장합니다.
+      icon: tabler:users
+    - title: REACH 및 RoHS
+      description: 모든 재료 —PVC, Hypalon, EVA 폼, 접착제 —EU REACH 및 RoHS 규정을 준수합니다.
+      icon: tabler:flask
+    - title: 재료 테스트 연구소
+      description: 자체 재료 연구소에서 생산 전 인장 강도, UV 저항성, 솔기 무결성을 테스트합니다.
+      icon: tabler:microscope
+    - title: 2년 보증
+      description: 모든 afarer 제품에는 제조 결함에 대한 2년 보증이 제공됩니다.
+      icon: tabler:shield-check
 testimonials:
-  tagline: '고객 신뢰'
-  title: '고객의 말'
-  subtitle: '처음 패들러부터 전문 함대 운영자까지 —그들이 afarer를 신뢰하는 이유를 확인하세요.'
+  tagline: 고객 신뢰
+  title: 고객의 말
+  subtitle: 처음 패들러부터 전문 함대 운영자까지 —그들이 afarer를 신뢰하는 이유를 확인하세요.
   items:
-    - content: '전체 렌탈 함대에 afarer RIB를 장착했습니다. 두 시즌 동안 제로 고장. CE 인증으로 보험 승인이 원활했습니다.'
-      name: 'Marco V.'
-      title: '관광 운영자, 크로아티아'
-    - content: '첫 구매자로서 품질이 걱정되었습니다. 그들이 공유한 ISO 문서와 테스트 보고서가 완전한 신뢰를 주었습니다.'
-      name: 'James T.'
-      title: 'SUP Explorer 11 소유자, 캐나다'
-    - content: '해안 순찰 장비를 위해 afarer와 협력합니다. 그들의 QC 프로세스는 모든 배치에서 일관됩니다.'
-      name: 'Andres 중령'
-      title: '해군 조달, 필리핀'
-
+    - content: 전체 렌탈 함대에 afarer RIB를 장착했습니다. 두 시즌 동안 제로 고장. CE 인증으로 보험 승인이 원활했습니다.
+      name: Marco V.
+      title: 관광 운영자, 크로아티아
+    - content: 첫 구매자로서 품질이 걱정되었습니다. 그들이 공유한 ISO 문서와 테스트 보고서가 완전한 신뢰를 주었습니다.
+      name: James T.
+      title: SUP Explorer 11 소유자, 캐나다
+    - content: 해안 순찰 장비를 위해 afarer와 협력합니다. 그들의 QC 프로세스는 모든 배치에서 일관됩니다.
+      name: Andres 중령
+      title: 해군 조달, 필리핀
 steps2_manufacturing:
-  title: '품질 보증 방법'
-  subtitle: '원자재 검사부터 최종 압력 테스트까지 —모든 제품은 엄격한 품질 체인을 거칩니다.'
+  title: 품질 보증 방법
+  subtitle: 원자재 검사부터 최종 압력 테스트까지 —모든 제품은 엄격한 품질 체인을 거칩니다.
   items:
-    - title: '원자재 검사'
-      description: '모든 PVC 패브릭 롤은 생산 투입 전 두께, 인장 강도 및 UV 저항성을 테스트합니다.'
-      icon: 'tabler:search'
-    - title: '공정 중 QC'
-      description: '용접 솔기, 밸브 설치 및 챔버 본딩이 조립 중 각 스테이션에서 검사됩니다.'
-      icon: 'tabler:eye'
-    - title: '압력 테스트'
-      description: '모든 팽창식 제품은 정격 PSI의 1.5배로 팽창되어 24시간 동안 유지됩니다.'
-      icon: 'tabler:wind'
-    - title: '최종 검사'
-      description: '각 제품은 출하 승인 전 마감, 하드웨어 및 포장을 검사합니다.'
-      icon: 'tabler:clipboard-check'
-
-faqs_rib:
-  title: 'SUP 보트 FAQ'
-  subtitle: '경질 선체 팽창식 보트에 대한 일반적인 질문.'
-  columns: 2
+    - title: 원자재 검사
+      description: 모든 PVC 패브릭 롤은 생산 투입 전 두께, 인장 강도 및 UV 저항성을 테스트합니다.
+      icon: tabler:search
+    - title: 공정 중 QC
+      description: 용접 솔기, 밸브 설치 및 챔버 본딩이 조립 중 각 스테이션에서 검사됩니다.
+      icon: tabler:eye
+    - title: 압력 테스트
+      description: 모든 팽창식 제품은 정격 PSI의 1.5배로 팽창되어 24시간 동안 유지됩니다.
+      icon: tabler:wind
+    - title: 최종 검사
+      description: 각 제품은 출하 승인 전 마감, 하드웨어 및 포장을 검사합니다.
+      icon: tabler:clipboard-check
+factory_audit:
+  title: Factory Audit & Social Compliance
+  subtitle: Our 12,000 m² Qingdao facility is open to third-party audits. We maintain BSCI social compliance certification and welcome customer inspections.
+  stats:
+    - value: 12,000 m²
+      label: Production Facility
+    - value: 200+
+      label: Skilled Workers
+    - value: 15,000+
+      label: Annual Unit Capacity
+    - value: BSCI
+      label: Social Compliance
+  highlights:
+    - title: BSCI Certified
+      desc: amfori BSCI social compliance certification — ethical labour, safe conditions, environmental responsibility.
+      link: /certifications
+    - title: Open for Inspection
+      desc: We welcome customer factory audits. Schedule a visit or virtual tour of our Qingdao production lines.
+      link: /factory
+    - title: Full Traceability
+      desc: Every production batch is documented and traceable — from raw material lot numbers to final QC sign-off.
+    - title: ISO 9001:2015
+      desc: Quality management system certified by SGS. Our processes meet international manufacturing standards.
+      link: /certifications
+warranty_section:
+  title: Warranty & After-Sales Support
+  subtitle: We stand behind every product with clear warranty terms, fast claims processing, and genuine replacement parts.
   items:
-    - title: 'afarer는 어떤 크기의 SUP 보트를 제공합니까?'
-      description: '2.5m에서 7.6m까지 35개의 SUP 모델을 제공합니다.'
-    - title: 'RIB와 전통적인 팽창식 보트의 차이점은 무엇입니까?'
-      description: 'RIB는 단단한 유리 섬유 또는 알루미늄 선체와 팽창식 Hypalon 또는 PVC 튜브를 결합합니다.'
-    - title: '어떤 엔진이 afarer RIB와 호환됩니까?'
-      description: '모델에 따라 3 HP에서 250 HP까지의 선외 엔진을 지원합니다.'
-    - title: 'afarer RIB는 CE 인증을 받았습니까?'
-      description: '예. 모든 레크리에이션 SUP 모델은 CE 인증을 받았습니다.'
-    - title: 'SUP 보트의 보증은 무엇입니까?'
-      description: '모든 afarer RIB에는 제조 결함에 대한 표준 1년 보증이 제공됩니다.'
-    - title: 'afarer RIB에는 몇 개의 에어 챔버가 있습니까?'
-      description: '모델 길이에 따라 3~7개의 독립적인 에어 챔버가 있습니다.'
-
-faqs_inflatable:
-  title: '팽창식 보트 FAQ'
-  subtitle: '팽창식 딩기, 카약 및 보트에 대한 일반적인 질문.'
-  columns: 2
+    - title: 2-Year Product Warranty
+      desc: All afarer products carry a 2-year warranty against manufacturing defects — seam failure, valve defects, and material delamination under normal use.
+    - title: Lifetime Parts Support
+      desc: Genuine replacement parts — valves, repair kits, fins, D-rings — available for all models. We maintain moulds and tooling for a minimum of 5 years after production end.
+    - title: 48-Hour Claim Response
+      desc: Warranty claims acknowledged within 48 hours. Replacement boards shipped within 10 business days for approved claims.
+    - title: Global Repair Network
+      desc: Authorised repair centres in 15+ countries. Field repair kits available for remote operations. DIY repair guides for minor damage.
+    - title: OEM Customer Support
+      desc: Dedicated account managers for B2B partners. Quarterly business reviews, inventory planning, and co-branded marketing support.
+    - title: Certification Package
+      desc: Full compliance documentation provided with every shipment — CE Declaration, test reports, material safety data sheets.
+      link: /contact
+trust_resources:
+  title: Trust Resources
+  subtitle: Download our certification portfolio, QC reports, and compliance documentation.
   items:
-    - title: 'afarer 팽창식 보트에는 어떤 재료가 사용됩니까?'
-      description: '군용 등급 PVC(1100 데니어) 및 프리미엄 Hypalon/CSM 고무를 사용합니다.'
-    - title: '팽창식 보트는 얼마나 오래 사용할 수 있습니까?'
-      description: '적절한 관리 시 PVC 보트는 7-10년, Hypalon 모델은 15-20년 지속됩니다.'
-    - title: '팽창식 보트에 필요한 유지보수는 무엇입니까?'
-      description: '사용 후 담수 세척, 보관 전 건조, 밸브 씰 연간 점검.'
-    - title: '팽창식 보트를 바닷물에서 사용할 수 있습니까?'
-      description: '예. 모든 afarer 팽창식 보트는 담수 및 해수 모두에서 사용하도록 설계되었습니다.'
-    - title: '팽창식 보트를 어떻게 보관합니까?'
-      description: '완전히 건조시킨 후 느슨하게 말아 직사광선을 피해 서늘하고 건조한 곳에 보관하세요.'
-    - title: 'afarer 팽창식 보트의 중량 용량은 얼마입니까?'
-      description: '가장 작은 모델의 290kg에서 대형 상업용 선박의 2000kg 이상까지 다양합니다.'
-
+    - title: Certification Portfolio
+      desc: CE, ISO 9001, BSCI, REACH, RoHS, AS 1799 certificates in one package.
+    - title: QC Testing Standards Report
+      desc: 24-hour pressure hold tests, UV aging per ISO, tensile strength validation — complete methodology.
+    - title: Factory Profile & Audit Report
+      desc: 12,000 m² facility overview with production line photos and third-party audit summary.
+    - title: Warranty Policy Document
+      desc: Full warranty terms, claims process, and replacement parts pricing.
+  cta_text: Request Trust Resources
+  cta_link: /contact
 faqs_sup:
-  title: 'SUP 보드 FAQ'
-  subtitle: '스탠드업 패들 보드에 대한 일반적인 질문.'
+  title: SUP 보드 FAQ
+  subtitle: 스탠드업 패들 보드에 대한 일반적인 질문.
   columns: 2
   items:
-    - title: '어떤 SUP 보드 크기를 사용할 수 있습니까?'
-      description: '9ft에서 12ft까지의 SUP 보드를 제공합니다.'
-    - title: '드롭 스티치 구조란 무엇입니까?'
-      description: '수천 개의 폴리에스터 실이 보드의 상층과 하층을 연결하여 높은 공기압을 유지합니다.'
-    - title: 'SUP 보드의 중량 제한은 얼마입니까?'
-      description: '모델과 부피에 따라 최대 150kg까지 지원합니다.'
-    - title: '완전한 SUP 패키지를 제공합니까?'
-      description: '예. 모든 SUP 보드에는 3피스 알루미늄 패들, 고압 핸드 펌프 등이 포함된 완전한 패키지가 제공됩니다.'
-    - title: 'SUP 보드의 보증은 무엇입니까?'
-      description: '모든 afarer SUP 보드에는 제조 결함에 대한 1년 보증이 제공됩니다.'
-    - title: 'SUP 보드를 팽창하는 데 얼마나 걸립니까?'
-      description: '포함된 핸드 펌프를 사용하면 15 PSI까지 완전 팽창에 약 8-12분이 소요됩니다.'
-
+    - title: 어떤 SUP 보드 크기를 사용할 수 있습니까?
+      description: 9ft에서 12ft까지의 SUP 보드를 제공합니다.
+    - title: 드롭 스티치 구조란 무엇입니까?
+      description: 수천 개의 폴리에스터 실이 보드의 상층과 하층을 연결하여 높은 공기압을 유지합니다.
+    - title: SUP 보드의 중량 제한은 얼마입니까?
+      description: 모델과 부피에 따라 최대 150kg까지 지원합니다.
+    - title: 완전한 SUP 패키지를 제공합니까?
+      description: 예. 모든 SUP 보드에는 3피스 알루미늄 패들, 고압 핸드 펌프 등이 포함된 완전한 패키지가 제공됩니다.
+    - title: SUP 보드의 보증은 무엇입니까?
+      description: 모든 afarer SUP 보드에는 제조 결함에 대한 1년 보증이 제공됩니다.
+    - title: SUP 보드를 팽창하는 데 얼마나 걸립니까?
+      description: 포함된 핸드 펌프를 사용하면 15 PSI까지 완전 팽창에 약 8-12분이 소요됩니다.
+faqs_materials:
+  title: SUP Material & Care FAQs
+  subtitle: Common questions about our inflatable SUP materials, care, and storage.
+  columns: 2
+  items:
+    - title: What materials are used in afarer inflatable SUPs?
+      description: We use military-grade PVC (1100 denier) with UV-stabilized, abrasion-resistant construction, compliant with EU REACH and RoHS regulations.
+    - title: How long do inflatable SUPs last?
+      description: With proper care, a quality PVC inflatable SUP lasts 5—0 years. Regular cleaning, UV protection, and proper storage significantly extend service life.
+    - title: What maintenance is required for an inflatable SUP?
+      description: Basic maintenance includes rinsing with fresh water after each use (especially in saltwater), drying before storage, checking valve seals annually, and avoiding prolonged sun exposure when not in use.
+    - title: Can inflatable SUPs be used in saltwater?
+      description: Yes. All afarer inflatable SUPs are designed for both freshwater and saltwater use. We recommend rinsing with fresh water and drying thoroughly after saltwater exposure.
+    - title: How do I store an inflatable SUP?
+      description: Deflate, clean, and dry the board completely before storage. Roll loosely (avoid tight folds), store in a cool dry place away from direct sunlight, and keep off concrete floors to prevent moisture wicking.
+    - title: What is the weight capacity of afarer inflatable SUPs?
+      description: Weight capacities range from 100 kg for our smallest models to over 200 kg for larger boards. Each product page lists the maximum load rating for your specific model.
 cta:
-  title: '직접 인증을 확인하고 싶으십니까?'
-  subtitle: '인증 포트폴리오, 공장 감사 보고서 또는 재료 규정 준수 문서를 요청하세요.'
+  title: 직접 인증을 확인하고 싶으십니까?
+  subtitle: 인증 포트폴리오, 공장 감사 보고서 또는 재료 규정 준수 문서를 요청하세요.
   actions:
     - variant: primary
-      text: '인증 문서 요청'
-      href: '/contact'
-    - text: '공장 페이지 방문'
-      href: '/factory'
+      text: 인증 문서 요청
+      href: /contact
+    - text: 공장 페이지 방문
+      href: /factory

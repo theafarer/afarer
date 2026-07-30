@@ -1,13 +1,32 @@
 hero:
   tagline: Brand
-  title: Brandul afarer
-  subtitle: Calitate, inovație și fiabilitate —asta este afarer.
-story:
-  tagline: Povestea noastră
-  title: Construind încredere din 2012
-  body: |
-    afarer a fost fondată cu o viziune clară —să producă bărci gonflabile premium și echipamente sportive acvatice care rezistă în condiții reale. În peste un deceniu, am crescut de la un mic atelier la un producător recunoscut global.
-mission:
-  tagline: Misiune
-  title: Misiunea noastră
-  body: Să livrăm produse sportive acvatice de înaltă calitate, inovatoare și accesibile ca preț, care fac activitățile pe apă accesibile tuturor.
+  title: '{BRAND}'
+  subtitle: Ocean Performance for Every Surfer
+  cta: Explore Gear →
+  cta_link: /products
+  secondary_cta: Learn Surfing
+  secondary_cta_link: /guides
+
+position:
+  tagline: Position
+  subtitle: Ocean Performance for Every Surfer
+
+products_section:
+  tagline: Products
+  cta: All Products →
+  cta_link: /products
+
+global_section:
+  tagline: Global
+  title: Available in {count} Regions
+
+social_section:
+  tagline: Social
+  title: What surfers are reading
+  read_guide: Read guide →
+
+cta_section:
+  title: Start your ocean journey
+  subtitle: Every product CE certified. Backed by warranty. Designed for real surf.
+  cta_suffix: '→'
+  secondary_cta: About {BRAND}

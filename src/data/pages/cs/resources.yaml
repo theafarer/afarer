@@ -1,58 +1,52 @@
-﻿hero_text:
-  tagline: Resources
-  title: 'Centrum stažení a průvodce pro kupující'
-  subtitle: 'Získejte přístup k produktovým katalogům, OEM příručkám, kontrolním seznamům kupujícího a technické dokumentaci, které vám pomohou činit informovaná rozhodnutí o nákupu.'
-features3_downloads:
-  tagline: Downloads
-  title: 'Produktová dokumentace<br />a zdroje pro kupujícího'
-  isBeforeContent: false
-  columns: 2
-  items:
-    - title: '2026 Marine Product Catalog'
-      description: 'Kompletní řada produktů včetně SUP člunů, nafukovacích člunů, SUP prken, kajaků a příslušenství. Specifikace, konfigurace a možnosti. Formát PDF.'
-      icon: tabler:file-text
-    - title: 'OEM Manufacturing Guide'
-      description: 'Vše, co potřebujete vědět o OEM/ODM partnerství: přehled procesu, minimální množství objednávky, možnosti přizpůsobení, kontrola kvality a doprava.'
-      icon: tabler:building-factory
-    - title: 'SUP Boat Buyer Guide'
-      description: 'Jak vybrat správný SUP: materiály trupu, materiály trubek, výběr motoru, aspekty velikosti a možnosti konfigurace pro různé aplikace.'
-      icon: tabler:file-description
-    - title: 'SUP Supplier Checklist'
-      description: 'Klíčové úvahy při výběru výrobce SUP prken: ukazatele kvality, požadavky na certifikaci, úvahy o MOQ a na co se zaměřit při auditu továrny.'
-      icon: tabler:clipboard-check
-    - title: 'Inflatable Boat Material Guide'
-      description: 'PVC vs Hypalon: srovnání odolnosti, UV odolnosti, životnosti, možností opravy a nákladů pro různé námořní aplikace.'
-      icon: tabler:files
-    - title: 'Custom Manufacturing Brief Template'
-      description: 'Stáhněte si naši šablonu produktového briefu. Vyplňte své požadavky a pošlete nám ji pro získání cenové nabídky a posouzení proveditelnosti v témže týdnu.'
-      icon: tabler:template
-faqs:
-  title: Frequently Asked Questions
-  subtitle: 'Časté otázky o našich produktech, výrobním procesu a partnerském modelu.'
-  columns: 2
-  items:
-    - title: What is the minimum order quantity?
-      description: 'MOQ se liší podle kategorie produktu. SUP čluny obvykle začínají od 10 kusů na model. SUP prkna od 50 kusů. Kontaktujte náš prodejní tým pro informace o MOQ specifické pro produkt.'
-      icon: tabler:help-circle
-    - title: Can I get samples before placing an order?
-      description: 'Ano. afarer zajišťuje výrobu vzorků pro vyhodnocení před sériovou výrobou. Náklady na vzorky jsou dohodnutelné a často se započítávají do první výrobní objednávky.'
-      icon: tabler:package
-    - title: What payment terms are available?
-      description: 'Standardní podmínky: 30% záloha při objednávce, 70% před odesláním. Podmínky LC jsou k dispozici pro kvalifikované zákazníky. Kontaktujte náš finanční tým pro projednání podmínek.'
-      icon: tabler:currency-dollar
-    - title: How long does production take?
-      description: 'Typické dodací lhůty: SUP čluny 30-45 dní, SUP prkna 20-30 dní, nafukovací čluny 25-35 dní. Vlastní vývoj přidává 15-30 dní na prototypování.'
-      icon: tabler:calendar-clock
-    - title: What certifications do your products carry?
-      description: 'Certifikace CE pro trhy EU, výroba schválená americkou pobřežní stráží, systém kvality ISO, soulad s BSCI a REACH.'
-      icon: tabler:certificate
-    - title: Do you offer custom packaging and branding?
-      description: 'Ano. Poskytujeme vlastní balení s vaším logem, barvami a identitou značky. MOQ pro vlastní balení závisí na kategorii produktu.'
-      icon: tabler:color-swatch
+meta:
+  title: 'B2B Resources & Downloads | {SITE}'
+  description: 'Download OEM manufacturing guides, product catalogs, quality reports, and ROI calculators for inflatable SUP businesses.'
+
+hero:
+  tagline: Resource Center
+  title: 'Tools & Resources<br />For SUP Business Partners'
+  subtitle: 'Download OEM guides, product catalogs, quality reports, and use our ROI calculator to plan your SUP fleet investment.'
+
+resources:
+  - title: '2026 OEM/ODM Product Catalog'
+    description: 'Complete product lineup with specifications, pricing tiers, MOQ, and customization options for B2B partners.'
+    icon: 'tabler:file-text'
+    type: 'catalog'
+    link: '/media'
+    cta: 'Download Catalog'
+  - title: 'Private Label SUP Brand Guide'
+    description: 'Step-by-step guide to launching your own SUP brand — from market research and design to production and global delivery.'
+    icon: 'tabler:book'
+    type: 'guide'
+    link: '/news/private-label-sup-oem-guide'
+    cta: 'Read Guide'
+  - title: 'SUP Fleet ROI Calculator'
+    description: 'Estimate your resort or club SUP fleet investment, projected revenue, and payback period with our interactive calculator.'
+    icon: 'tabler:calculator'
+    type: 'tool'
+    link: '#roi-calculator'
+    cta: 'Calculate ROI'
+  - title: 'Quality & Certification Report'
+    description: 'CE certification documents, ISO 9001 quality management, UV aging test results, and pressure hold test data.'
+    icon: 'tabler:certificate'
+    type: 'report'
+    link: '/evidence'
+    cta: 'View Reports'
+  - title: 'Factory Capability Brochure'
+    description: 'Virtual tour of our 12,000 m² manufacturing facility with production line details and quality control processes.'
+    icon: 'tabler:building-factory'
+    type: 'brochure'
+    link: '/factory'
+    cta: 'Tour Factory'
+  - title: 'Resort Fleet Revenue Guide'
+    description: 'Commercial SUP fleet ROI analysis with pricing models, utilization rates, and real case study results from 5-star resorts.'
+    icon: 'tabler:chart-bar'
+    type: 'guide'
+    link: '/news/commercial-sup-fleet-roi-resorts'
+    cta: 'Read Guide'
+
 cta:
-  title: 'Potřebujete pomoc s nalezením správného zdroje?'
-  subtitle: 'Kontaktujte náš tým pro osobní poradenství ohledně výběru produktu, OEM partnerství nebo technických specifikací.'
-  actions:
-    - variant: primary
-      text: Contact our team
-      href: /contact
+  title: 'Need Custom Support?'
+  subtitle: 'Contact our B2B team for personalized guidance on your project.'
+  button: 'Contact Sales Team'
+  link: '/contact?source=resources'

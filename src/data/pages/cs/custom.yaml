@@ -1,49 +1,80 @@
 hero:
-  tagline: Vlastní řešení
-  title: Laboratoř přizpůsobení
-  subtitle: Navrhněte si vlastní prkno. Vaše značka, vaše barvy, vaše funkce.
-  image: https://assets.afarer.com/images/afarer/hero/afarer-hero-design-concept.webp
-  imageAlt: Vlastní návrh afarer
+  tagline: afarer Custom Lab
+  title: Design Your Own<br />SUP Board
+  subtitle: OEM, ODM, private label, and custom branding services for businesses worldwide. From a single prototype to full production runs.
+  cta: Start your project
+  footer_link: /contact
 
-steps:
-  - title: Koncept
-    description: Sdílejte svou vizi a požadavky s naším týmem.
-    icon: tabler:bulb
-  - title: Návrh
-    description: Naši inženýři vytvoří technické výkresy a 3D modely.
-    icon: tabler:file-text
-  - title: Prototyp
-    description: Vytvoříme a otestujeme prototyp pro ověření.
-    icon: tabler:tool
-  - title: Výroba
-    description: Po schválení spustíme sériovou výrobu.
-    icon: tabler:building-factory
-  - title: Dodání
-    description: Kvalitně zabaleno a odesláno k vám.
-    icon: tabler:truck-delivery
+steps_section:
+  tagline: How it works
+  title: From concept to production
+  subtitle: Four steps from your idea to a finished, sea-ready product.
+  steps:
+    - num: '01'
+      title: Choose Your Board
+      desc: Select from our core SUP models —all-around, touring, yoga, sport, or kids. Pick size, material, and colour.
+    - num: '02'
+      title: Upload Your Design
+      desc: Send us your logo, artwork, or brand guidelines. Our design team prepares a digital proof.
+    - num: '03'
+      title: AI Mockup Review
+      desc: View a photorealistic AI-generated mockup of your custom board before production begins.
+    - num: '04'
+      title: Production & Delivery
+      desc: Once approved, your order enters our  production line. Lead times from 30 days.
 
-capabilities:
-  - icon: tabler:palette
-    title: Vlastní barvy
-    description: Vyberte si z široké škály barev a povrchových úprav.
-  - icon: tabler:typography
-    title: Potisk loga
-    description: Digitální tisk nebo sítotisk pro vaše logo a grafiku.
-  - icon: tabler:package
-    title: Vlastní balení
-    description: Maloobchodní a velkoobchodní balení s vaší značkou.
-  - icon: tabler:settings
-    title: Úpravy designu
-    description: Upravte rozměry, tvary a funkce podle svých potřeb.
+services_section:
+  tagline: Services
+  title: Manufacturing services for global brands
+  subtitle: Flexible engagement models —from contract manufacturing to full-service brand building.
+  items:
+    - title: OEM Manufacturing
+      desc: We produce your designs to spec —your IP, your drawings, your quality standards. Full NDA protection.
+      icon: ⚙️
+    - title: ODM Solutions
+      desc: Choose from 50+ proven platforms and customise size, colour, graphics, and packaging.
+      icon: '🎨'
+    - title: Private Label
+      desc: Your brand on our products —logo, packaging, hang tags, manuals. Retail-ready out of the box.
+      icon: '🎨'
+    - title: Custom Branding
+      desc: Deck pad printing, hull graphics, tube decals, and custom labels —full brand integration.
+      icon: ⚙️
 
-services:
-  - title: OEM výroba
-    description: Vyrábíme podle vašich specifikací s vaší značkou.
-  - title: ODM výroba
-    description: Navrhujeme a vyrábíme nové produkty podle vašich potřeb.
-  - title: Návrh s vlastní značkou
-    description: Kompletní branding od loga po balení.
-  - title: Vývoj prototypů
-    description: Rychlé prototypování a testování nových návrhů.
-  - title: Kontrola kvality
-    description: Přísné testování všech vlastních produktů před odesláním.
+capabilities_section:
+  tagline: Capabilities
+  title: Production & customisation capabilities
+  subtitle: Everything you need to know before placing your order.
+  capabilities:
+    - label: Order volume
+      value: MOQ 5—0 units (SUP)
+    - label: Lead time
+      value: 30—5 days standard; 15—0 days for prototypes
+    - label: Customisation
+      value: Size, shape, colour, graphics, packaging, hardware
+    - label: Materials
+      value: PVC, Hypalon, drop-stitch, fiberglass, aluminium
+    - label: Printing
+      value: Digital (CMYK), screen printing, heat transfer, sublimation
+    - label: Certification
+      value: CE, UKCA, FCC (support for global compliance)
+
+why_section:
+  tagline: Why afarer
+  title: One factory. One standard. Zero compromises.
+  points:
+    - text: 12,000 sqm integrated manufacturing facility
+      highlight: 12,000 sqm
+    - text: 200+ skilled workers and engineers
+      highlight: 200+
+    - text: 15,000+ boats produced annually
+      highlight: 15,000+
+    - text: certified quality management
+      highlight:
+    - text: CE certified products for EU market
+      highlight: CE
+  cta: View factory details
+  cta_link: /factory
+  contact:
+    title: Ready to discuss your project?
+    desc: Our team responds within 24 hours with a preliminary quote.

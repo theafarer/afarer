@@ -1,142 +1,172 @@
-﻿hero:
-  tagline: 'Byggt enligt standarder som betyder något'
-  title: 'Lita på afarer'
+hero:
+  tagline: Byggt enligt standarder som betyder något
+  title: Lita på afarer
   subtitle: |
     Varje produkt vi bygger är CE-certifierad —testad för säkerhet,<br />
     hållbarhet och prestanda. Inga genvägar. Inga undantag.
-  taglineSection: 'Certifierad. Testad. Bevisad.'
-  image: 'https://assets.afarer.com/images/afarer/hero/tech-meeting-small.webp'
-  imageAlt: 'afarer-produkt genomgår kvalitetstestning'
-
+  taglineSection: Certifierad. Testad. Bevisad.
+  image: https://assets.afarer.com/images/afarer/hero/tech-meeting-small.webp
+  imageAlt: afarer-produkt genomgår kvalitetstestning
 stats:
-  title: 'afarer i siffror'
+  title: afarer i siffror
   stats:
-    - title: 'CE-certifierad'
-      description: 'Alla rekreationsprodukter uppfyller EU:s säkerhetsstandarder'
-    - title: 'ISO 9001'
-      description: 'Kvalitetsledningssystem sedan 2012'
-    - title: 'BSCI och REACH'
-      description: 'Etisk tillverkning och materialefterlevnad'
-    - title: '2 års garanti'
-      description: 'På varje afarer-produkt —utan frågor'
-
+    - title: CE-certifierad
+      description: Alla rekreationsprodukter uppfyller EU:s säkerhetsstandarder
+    - title: ISO 9001
+      description: Kvalitetsledningssystem sedan 2012
+    - title: BSCI och REACH
+      description: Etisk tillverkning och materialefterlevnad
+    - title: 2 års garanti
+      description: På varje afarer-produkt —utan frågor
 features3_certifications:
-  title: 'Certifieringar och efterlevnad'
-  subtitle: 'Varje produkt är oberoende testad och certifierad enligt internationella standarder.'
+  title: Certifieringar och efterlevnad
+  subtitle: Varje produkt är oberoende testad och certifierad enligt internationella standarder.
   columns: 3
   isBeforeContent: true
   items:
-    - title: 'CE-certifiering'
-      description: 'Alla afarer SUP, kajaker, jollar och SUP uppfyller den europeiska CE-säkerhetsstandarden för rekreationsfarkoster. Varje produkt genomgår tryck-, flyt- och lasttestning innan den lämnar fabriken.'
-      icon: 'tabler:certificate'
-    - title: 'ISO 9001'
-      description: 'Vår 12.000 m² Qingdao-anläggning arbetar under ett  kvalitetsledningssystem. Varje produktionsbatch är spårbar, dokumenterad och inspekterad.'
-      icon: 'tabler:clipboard-check'
-    - title: 'BSCI social efterlevnad'
-      description: 'Vi är BSCI-certifierade, vilket säkerställer etiska arbetsmetoder, säkra arbetsförhållanden och miljöansvar i hela vår leveranskedja.'
-      icon: 'tabler:users'
-    - title: 'REACH och RoHS'
-      description: 'Alla material —PVC, Hypalon, EVA-skum, lim —uppfyller EU:s REACH- och RoHS-föreskrifter. Inga begränsade ämnen, inga kompromisser.'
-      icon: 'tabler:flask'
-    - title: 'Materialtestningslaboratorium'
-      description: 'Internt materiallaboratorium testar dragstyrka, UV-beständighet, sömintegritet och nötning för varje tygbatch före produktion.'
-      icon: 'tabler:microscope'
-    - title: '2 års garanti'
-      description: 'Varje afarer-produkt levereras med två års garanti mot tillverkningsfel. Vi står för det vi bygger.'
-      icon: 'tabler:shield-check'
-
+    - title: CE-certifiering
+      description: Alla afarer SUP, kajaker, jollar och SUP uppfyller den europeiska CE-säkerhetsstandarden för rekreationsfarkoster. Varje produkt genomgår tryck-, flyt- och lasttestning innan den lämnar fabriken.
+      icon: tabler:certificate
+    - title: ISO 9001
+      description: Vår 12.000 m² Qingdao-anläggning arbetar under ett  kvalitetsledningssystem. Varje produktionsbatch är spårbar, dokumenterad och inspekterad.
+      icon: tabler:clipboard-check
+    - title: BSCI social efterlevnad
+      description: Vi är BSCI-certifierade, vilket säkerställer etiska arbetsmetoder, säkra arbetsförhållanden och miljöansvar i hela vår leveranskedja.
+      icon: tabler:users
+    - title: REACH och RoHS
+      description: Alla material —PVC, Hypalon, EVA-skum, lim —uppfyller EU:s REACH- och RoHS-föreskrifter. Inga begränsade ämnen, inga kompromisser.
+      icon: tabler:flask
+    - title: Materialtestningslaboratorium
+      description: Internt materiallaboratorium testar dragstyrka, UV-beständighet, sömintegritet och nötning för varje tygbatch före produktion.
+      icon: tabler:microscope
+    - title: 2 års garanti
+      description: Varje afarer-produkt levereras med två års garanti mot tillverkningsfel. Vi står för det vi bygger.
+      icon: tabler:shield-check
 testimonials:
-  tagline: 'Kundförtroende'
-  title: 'Vad våra kunder säger'
-  subtitle: 'Från förstagångspaddlare till professionella flottoperatörer —se varför de litar på afarer.'
+  tagline: Kundförtroende
+  title: Vad våra kunder säger
+  subtitle: Från förstagångspaddlare till professionella flottoperatörer —se varför de litar på afarer.
   items:
-    - content: 'Vi utrustade hela vår uthyrningsflotta med afarer SUP. Två säsonger in, noll fel. CE-certifieringen gjorde försäkringsgodkännande sömlöst.'
-      name: 'Marco V.'
-      title: 'Turarrangör, Kroatien'
-    - content: 'Som förstagångsköpare var jag nervös för kvaliteten. ISO-dokumentationen och testrapporterna de delade gav mig fullt förtroende.'
-      name: 'James T.'
-      title: 'SUP Explorer 11-ägare, Kanada'
-    - content: 'Vi samarbetar med afarer för våra kustpatruljenheter. Deras QC-process är konsekvent över varje batch —den pålitligheten betyder något i uppdragskritiska operationer.'
-      name: 'Lt. Cmdr. Andres'
-      title: 'Marinupphandling, Filippinerna'
-
+    - content: Vi utrustade hela vår uthyrningsflotta med afarer SUP. Två säsonger in, noll fel. CE-certifieringen gjorde försäkringsgodkännande sömlöst.
+      name: Marco V.
+      title: Turarrangör, Kroatien
+    - content: Som förstagångsköpare var jag nervös för kvaliteten. ISO-dokumentationen och testrapporterna de delade gav mig fullt förtroende.
+      name: James T.
+      title: SUP Explorer 11-ägare, Kanada
+    - content: Vi samarbetar med afarer för våra kustpatruljenheter. Deras QC-process är konsekvent över varje batch —den pålitligheten betyder något i uppdragskritiska operationer.
+      name: Lt. Cmdr. Andres
+      title: Marinupphandling, Filippinerna
 steps2_manufacturing:
-  title: 'Hur vi säkerställer kvalitet'
-  subtitle: 'Från råvaruinspektion till slutlig trycktestning —varje produkt genomgår en rigorös kvalitetskedja.'
+  title: Hur vi säkerställer kvalitet
+  subtitle: Från råvaruinspektion till slutlig trycktestning —varje produkt genomgår en rigorös kvalitetskedja.
   items:
-    - title: 'Råvaruinspektion'
-      description: 'Varje rulle PVC-tyg testas för tjocklek, dragstyrka och UV-beständighet innan den går in i produktion.'
-      icon: 'tabler:search'
-    - title: 'Pågående QC'
-      description: 'Svetsfogar, ventilinstallationer och kammaranslutningar inspekteras vid varje station under montering.'
-      icon: 'tabler:eye'
-    - title: 'Trycktestning'
-      description: 'Varje uppblåsbar produkt pumpas upp till 1,5x nominellt PSI och hålls i 24 timmar för att verifiera luftretention och sömintegritet.'
-      icon: 'tabler:wind'
-    - title: 'Slutinspektion'
-      description: 'Varje enhet inspekteras för finish, hårdvara och förpackning innan den godkänns för leverans. Batchprover går till vårt laboratorium för destruktiv testning.'
-      icon: 'tabler:clipboard-check'
-
-faqs_rib:
-  title: 'SUP-båtar FAQ'
-  subtitle: 'Vanliga frågor om våra uppblåsbara båtar med stelt skrov.'
-  columns: 2
+    - title: Råvaruinspektion
+      description: Varje rulle PVC-tyg testas för tjocklek, dragstyrka och UV-beständighet innan den går in i produktion.
+      icon: tabler:search
+    - title: Pågående QC
+      description: Svetsfogar, ventilinstallationer och kammaranslutningar inspekteras vid varje station under montering.
+      icon: tabler:eye
+    - title: Trycktestning
+      description: Varje uppblåsbar produkt pumpas upp till 1,5x nominellt PSI och hålls i 24 timmar för att verifiera luftretention och sömintegritet.
+      icon: tabler:wind
+    - title: Slutinspektion
+      description: Varje enhet inspekteras för finish, hårdvara och förpackning innan den godkänns för leverans. Batchprover går till vårt laboratorium för destruktiv testning.
+      icon: tabler:clipboard-check
+factory_audit:
+  title: Factory Audit & Social Compliance
+  subtitle: Our 12,000 m² Qingdao facility is open to third-party audits. We maintain BSCI social compliance certification and welcome customer inspections.
+  stats:
+    - value: 12,000 m²
+      label: Production Facility
+    - value: 200+
+      label: Skilled Workers
+    - value: 15,000+
+      label: Annual Unit Capacity
+    - value: BSCI
+      label: Social Compliance
+  highlights:
+    - title: BSCI Certified
+      desc: amfori BSCI social compliance certification — ethical labour, safe conditions, environmental responsibility.
+      link: /certifications
+    - title: Open for Inspection
+      desc: We welcome customer factory audits. Schedule a visit or virtual tour of our Qingdao production lines.
+      link: /factory
+    - title: Full Traceability
+      desc: Every production batch is documented and traceable — from raw material lot numbers to final QC sign-off.
+    - title: ISO 9001:2015
+      desc: Quality management system certified by SGS. Our processes meet international manufacturing standards.
+      link: /certifications
+warranty_section:
+  title: Warranty & After-Sales Support
+  subtitle: We stand behind every product with clear warranty terms, fast claims processing, and genuine replacement parts.
   items:
-    - title: 'Vilka storlekar på SUP-båtar erbjuder afarer?'
-      description: 'Vi erbjuder 35 SUP-modeller från 2,5 m till 7,6 m, allt från kompakta tendrar till tunga kommersiella och patrullfarkoster. Varje modell finns med flera konfigurationsalternativ.'
-    - title: 'Vad är skillnaden mellan en SUP och en traditionell uppblåsbar båt?'
-      description: 'En SUP (uppblåsbar båt med stelt skrov) kombinerar ett fast glasfiber- eller aluminiumskrov i djup V-form med uppblåsbara Hypalon- eller PVC-slangar. Detta ger dig stabiliteten och lastkapaciteten från en hård båt med stötdämpningen och flytförmågan från en uppblåsbar.'
-    - title: 'Vilka motorer är kompatibla med afarer SUP?'
-      description: 'Våra SUP stödjer utombordsmotorer från 3 HK till 250 HK beroende på modell. Varje produktsida listar maximal motoreffekt. Vi rekommenderar att rådgöra med din återförsäljare för idealisk matchning.'
-    - title: 'Är afarer SUP CE-certifierade?'
-      description: 'Ja. Alla rekreationsmodeller är CE-certifierade enligt tillämpliga europeiska standarder för rekreationsfarkoster. Kommersiella och patrullmodeller uppfyller ytterligare stabilitets- och lastkrav.'
-    - title: 'Vad är garantin på SUP-båtar?'
-      description: 'Alla afarer SUP levereras med standard ett års garanti mot tillverkningsfel, som täcker skrovdelaminering, slangssömsfel, ventilfel och maskinvaruproblem.'
-    - title: 'Hur många luftkammare har afarer SUP?'
-      description: 'Våra SUP har 3 till 7 oberoende luftkammare beroende på modellens längd. Denna flerkammardesign säkerställer att båten förblir flytande även om en avdelning komprometteras.'
-
-faqs_inflatable:
-  title: 'Uppblåsbara båtar FAQ'
-  subtitle: 'Vanliga frågor om våra uppblåsbara jollar, kajaker och båtar.'
-  columns: 2
+    - title: 2-Year Product Warranty
+      desc: All afarer products carry a 2-year warranty against manufacturing defects — seam failure, valve defects, and material delamination under normal use.
+    - title: Lifetime Parts Support
+      desc: Genuine replacement parts — valves, repair kits, fins, D-rings — available for all models. We maintain moulds and tooling for a minimum of 5 years after production end.
+    - title: 48-Hour Claim Response
+      desc: Warranty claims acknowledged within 48 hours. Replacement boards shipped within 10 business days for approved claims.
+    - title: Global Repair Network
+      desc: Authorised repair centres in 15+ countries. Field repair kits available for remote operations. DIY repair guides for minor damage.
+    - title: OEM Customer Support
+      desc: Dedicated account managers for B2B partners. Quarterly business reviews, inventory planning, and co-branded marketing support.
+    - title: Certification Package
+      desc: Full compliance documentation provided with every shipment — CE Declaration, test reports, material safety data sheets.
+      link: /contact
+trust_resources:
+  title: Trust Resources
+  subtitle: Download our certification portfolio, QC reports, and compliance documentation.
   items:
-    - title: 'Vilka material används i afarer uppblåsbara båtar?'
-      description: 'Vi använder militär-grade PVC (1100 denier) och premium Hypalon/CSM-gummi, beroende på modell. Båda materialen är UV-stabiliserade, nötningsbeständiga och uppfyller EU:s REACH- och RoHS-föreskrifter.'
-    - title: 'Hur länge håller uppblåsbara båtar?'
-      description: 'Med rätt skötsel håller en kvalitets-PVC uppblåsbar båt 7–10 år, medan Hypalon-modeller kan hålla 15–20 år. Regelbunden rengöring, UV-skydd och korrekt förvaring förlänger livslängden avsevärt.'
-    - title: 'Vilket underhåll krävs för en uppblåsbar båt?'
-      description: 'Grundläggande underhåll inkluderar sköljning med sötvatten efter varje användning (särskilt i saltvatten), torkning före förvaring, årlig kontroll av ventiltätningar och applicering av UV-skydd på slangar. Undvik långvarig solexponering när den inte används.'
-    - title: 'Kan uppblåsbara båtar användas i saltvatten?'
-      description: 'Ja. Alla afarer uppblåsbara båtar är designade för både söt- och saltvattenanvändning. Vi rekommenderar sköljning med sötvatten och grundlig torkning efter saltvattenexponering för att förhindra korrosion av beslag och saltkristallisation i tyget.'
-    - title: 'Hur förvarar jag en uppblåsbar båt?'
-      description: 'Töm luften, rengör och torka båten helt före förvaring. Rulla löst (undvik skarva veck), förvara på en sval, torr plats borta från direkt solljus och håll borta från betonggolv för att förhindra fuktuppsugning.'
-    - title: 'Vad är viktkapaciteten för afarer uppblåsbara båtar?'
-      description: 'Viktkapaciteter sträcker sig från 290 kg för våra minsta modeller till över 2000 kg för större kommersiella farkoster. Varje produktsida listar maxlasten för din specifika modell.'
-
+    - title: Certification Portfolio
+      desc: CE, ISO 9001, BSCI, REACH, RoHS, AS 1799 certificates in one package.
+    - title: QC Testing Standards Report
+      desc: 24-hour pressure hold tests, UV aging per ISO, tensile strength validation — complete methodology.
+    - title: Factory Profile & Audit Report
+      desc: 12,000 m² facility overview with production line photos and third-party audit summary.
+    - title: Warranty Policy Document
+      desc: Full warranty terms, claims process, and replacement parts pricing.
+  cta_text: Request Trust Resources
+  cta_link: /contact
 faqs_sup:
-  title: 'SUP-brädor FAQ'
-  subtitle: 'Vanliga frågor om våra paddleboard.'
+  title: SUP-brädor FAQ
+  subtitle: Vanliga frågor om våra paddleboard.
   columns: 2
   items:
-    - title: 'Vilka SUP-brädstorlekar finns tillgängliga?'
-      description: 'Vi erbjuder SUP-brädor från 9 ft till 12 ft, inklusive all-round, touring, yoga och specialdesigner. Våra bästsäljande modeller inkluderar Tropical Breeze (10 ft) och Ocean Voyager (11 ft).'
-    - title: 'Vad är drop-stitch-konstruktion?'
-      description: 'Drop-stitch-konstruktion använder tusentals polyestertrådar som ansluter brädets topp- och bottenlager, vilket gör att det kan hålla högt lufttryck (15–20 PSI) och uppnå en styv, stabil plattform. Detta är industristandarden för premium uppblåsbara SUP.'
-    - title: 'Vad är viktgränsen för SUP-brädor?'
-      description: 'Våra SUP-brädor stödjer upp till 150 kg beroende på modell och volym. Leviathan Wake är vår modell med högst kapacitet, designad för större användare och yogabruk.'
-    - title: 'Erbjuder du kompletta SUP-paket?'
-      description: 'Ja. Varje SUP-bräde levereras med ett komplett paket inklusive 3-delad aluminiumpaddel, högtrycks handpump, spiralkoppel, reseryggsäck och reparationssats. Vissa modeller inkluderar även ett avtagbart fen-set.'
-    - title: 'Vad är garantin på SUP-brädor?'
-      description: 'Alla afarer SUP-brädor har ett års garanti mot tillverkningsfel, inklusive sömfel, ventilfel och materialdelaminering under normal användning.'
-    - title: 'Hur lång tid tar det att pumpa upp ett SUP-bräde?'
-      description: 'Med den medföljande handpumpen tar full uppumpning till 15 PSI cirka 8–12 minuter. För snabbare uppumpning rekommenderar vi vår afarer 12V elektriska pump, som pumpar upp ett bräde på under 4 minuter.'
-
+    - title: Vilka SUP-brädstorlekar finns tillgängliga?
+      description: Vi erbjuder SUP-brädor från 9 ft till 12 ft, inklusive all-round, touring, yoga och specialdesigner. Våra bästsäljande modeller inkluderar Tropical Breeze (10 ft) och Ocean Voyager (11 ft).
+    - title: Vad är drop-stitch-konstruktion?
+      description: Drop-stitch-konstruktion använder tusentals polyestertrådar som ansluter brädets topp- och bottenlager, vilket gör att det kan hålla högt lufttryck (15–20 PSI) och uppnå en styv, stabil plattform. Detta är industristandarden för premium uppblåsbara SUP.
+    - title: Vad är viktgränsen för SUP-brädor?
+      description: Våra SUP-brädor stödjer upp till 150 kg beroende på modell och volym. Leviathan Wake är vår modell med högst kapacitet, designad för större användare och yogabruk.
+    - title: Erbjuder du kompletta SUP-paket?
+      description: Ja. Varje SUP-bräde levereras med ett komplett paket inklusive 3-delad aluminiumpaddel, högtrycks handpump, spiralkoppel, reseryggsäck och reparationssats. Vissa modeller inkluderar även ett avtagbart fen-set.
+    - title: Vad är garantin på SUP-brädor?
+      description: Alla afarer SUP-brädor har ett års garanti mot tillverkningsfel, inklusive sömfel, ventilfel och materialdelaminering under normal användning.
+    - title: Hur lång tid tar det att pumpa upp ett SUP-bräde?
+      description: Med den medföljande handpumpen tar full uppumpning till 15 PSI cirka 8–12 minuter. För snabbare uppumpning rekommenderar vi vår afarer 12V elektriska pump, som pumpar upp ett bräde på under 4 minuter.
+faqs_materials:
+  title: SUP Material & Care FAQs
+  subtitle: Common questions about our inflatable SUP materials, care, and storage.
+  columns: 2
+  items:
+    - title: What materials are used in afarer inflatable SUPs?
+      description: We use military-grade PVC (1100 denier) with UV-stabilized, abrasion-resistant construction, compliant with EU REACH and RoHS regulations.
+    - title: How long do inflatable SUPs last?
+      description: With proper care, a quality PVC inflatable SUP lasts 5—0 years. Regular cleaning, UV protection, and proper storage significantly extend service life.
+    - title: What maintenance is required for an inflatable SUP?
+      description: Basic maintenance includes rinsing with fresh water after each use (especially in saltwater), drying before storage, checking valve seals annually, and avoiding prolonged sun exposure when not in use.
+    - title: Can inflatable SUPs be used in saltwater?
+      description: Yes. All afarer inflatable SUPs are designed for both freshwater and saltwater use. We recommend rinsing with fresh water and drying thoroughly after saltwater exposure.
+    - title: How do I store an inflatable SUP?
+      description: Deflate, clean, and dry the board completely before storage. Roll loosely (avoid tight folds), store in a cool dry place away from direct sunlight, and keep off concrete floors to prevent moisture wicking.
+    - title: What is the weight capacity of afarer inflatable SUPs?
+      description: Weight capacities range from 100 kg for our smallest models to over 200 kg for larger boards. Each product page lists the maximum load rating for your specific model.
 cta:
-  title: 'Vill du se certifieringarna själv?'
-  subtitle: 'Begär vår certifieringsportfölj, fabriksrevisionsrapporter eller materialefterlevnadsdokumentation. Ingen NDA krävs.'
+  title: Vill du se certifieringarna själv?
+  subtitle: Begär vår certifieringsportfölj, fabriksrevisionsrapporter eller materialefterlevnadsdokumentation. Ingen NDA krävs.
   actions:
     - variant: primary
-      text: 'Begär certifieringsdokument'
-      href: '/contact'
-    - text: 'Besök vår fabrikssida'
-      href: '/factory'
+      text: Begär certifieringsdokument
+      href: /contact
+    - text: Besök vår fabrikssida
+      href: /factory

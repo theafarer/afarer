@@ -1,8 +1,7 @@
-﻿hero:
+hero:
   tagline: afarer 鞎勳勾雿半
   title: 頃欖姷 靹柬劙
   subtitle: SUP 旮办磮攵€韯?瓿犼笁 甑“ 旮办垹旯岇 氇摖 鞀ろ偓 霠堧波鞚?鞙勴暅 臧€鞚措摐鞕€ 韸滍啝毽柤
-
 categories:
   - level: 齑堦笁
     color: from-green-500 to-emerald-600
@@ -62,9 +61,105 @@ categories:
       - title: 氚鸽笇 鞙犾氤挫垬
         desc: 氚鸽笇 鞙犿槙 鞁濍硠 (Halkey-Roberts, Boston, Leafield), 鞚措歆?鞝滉卑, 瓿犾灔雮?鞀ろ厹 甑愳泊.
         slug: valve-maintenance
-
+knowledge_center_tagline: Knowledge Center
+knowledge_center_title: Marine Equipment & Industry Guides
+knowledge_center_subtitle: Expert knowledge and buying guides for marine professionals, fleet operators, and water sports enthusiasts.
+knowledge_sections:
+  - title: SUP Board Knowledge
+    tagline: Stand-Up Paddleboard Guides
+    desc: Everything about SUP boards —board design, materials, size selection, maintenance, and buying advice for recreational and commercial use.
+    guides:
+      - title: How to Choose the Right SUP Board
+        desc: Complete guide to selecting a SUP —size, volume, material, shape, and intended use.
+        href: /learn/sup
+      - title: Inflatable vs Hard SUP
+        desc: Inflatable SUP vs hard epoxy board —portability, durability, performance, and value compared.
+        href: /compare/inflatable-vs-hardboard
+      - title: All-Around vs Touring vs Yoga SUP
+        desc: Different SUP board types —construction standards, shapes, sizes, and recommended uses.
+        href: /learn/sup
+      - title: Drop-Stitch vs Traditional Construction
+        desc: Compare drop-stitch and traditional construction for SUP boards across weight, cost, durability, and rigidity.
+        href: /learn/drop-stitch-core
+  - title: Inflatable SUP Guide
+    tagline: Inflatable SUP Knowledge
+    desc: Comprehensive guides on inflatable SUPs —PVC materials, drop-stitch construction, safety standards, and maintenance best practices.
+    guides:
+      - title: PVC Material Guide
+        desc: Definitive guide to PVC materials used in inflatable SUP board construction.
+        href: /learn/materials
+      - title: How Inflatable SUPs Are Made
+        desc: Manufacturing process —material cutting, drop-stitch core bonding, seam construction, pressure testing, and quality control.
+        href: /learn/inflatable-technology
+      - title: SUP Safety Guide
+        desc: Safety standards, load capacity, proper inflation, pre-departure checks, and emergency procedures.
+        href: /learn/water-safety
+      - title: SUP Maintenance
+        desc: Cleaning, storage, UV protection, and repair of inflatable SUP boards.
+        href: /inflatable-sup-maintenance
+  - title: SUP Board Knowledge
+    tagline: SUP Board Hub
+    desc: Technical guides covering SUP board types, materials, construction methods, maintenance, and safety.
+    guides:
+      - title: SUP Board Types
+        desc: All-around, touring, yoga, sport, and kids SUPs —learn the differences and choose the right one.
+        href: /learn/sup
+      - title: Drop-Stitch Technology
+        desc: How thousands of internal threads create rigid, high-pressure inflatable structures.
+        href: /learn/drop-stitch-core
+      - title: Materials Reference
+        desc: PVC denier ratings, fabric weights, UV resistance, and marine-grade materials explained.
+        href: /learn/materials
+      - title: SUP Buying Guide
+        desc: Compare different SUP board types for different use cases and skill levels.
+        href: /learn/sup
+  - title: SUP Knowledge
+    tagline: Stand-Up Paddleboard Guides
+    desc: Everything about SUP boards —inflatable vs rigid, board dimensions, material technology, and expert advice for all skill levels.
+    guides:
+      - title: Inflatable vs Hard SUP
+        desc: Compare iSUPs and hard epoxy boards across portability, durability, performance, and value.
+        href: /learn/sup
+      - title: SUP Board Dimensions Guide
+        desc: How length, width, and thickness affect stability, speed, and maneuverability.
+        href: /learn/sup
+      - title: SUP Maintenance & Care
+        desc: Cleaning, storage, UV protection, and repair tips for inflatable SUP boards.
+        href: /inflatable-sup-maintenance
+      - title: Choosing Your First SUP
+        desc: Beginner's guide to selecting the right stand-up paddleboard for your weight, skill level, and intended use.
+        href: /learn/sup
+  - title: Rental Operations Guide
+    tagline: Fleet Management for Rental Businesses
+    desc: Guides on building and managing SUP rental fleets for beach kiosks, water sports centers, and hospitality properties.
+    guides:
+      - title: Building Your Rental Fleet
+        desc: How to choose the right SUP boards for your rental operation —durability, sizing, and ROI considerations.
+        href: /solutions/rental-operators
+      - title: Fleet Maintenance Guide
+        desc: Essential maintenance practices to maximize board lifespan and minimize downtime for rental fleets.
+        href: /solutions/rental-operators
+  - title: Resort & Hospitality Guide
+    tagline: Water Activities for Hospitality
+    desc: Guides on launching and managing SUP programs for resorts, hotels, and waterfront destinations.
+    guides:
+      - title: Starting a Resort SUP Program
+        desc: Factors to consider when launching guest SUP activities —fleet sizing, staffing, and revenue modeling.
+        href: /solutions/resorts-hotels
+      - title: SUP vs Other Water Activities
+        desc: Compare SUP programs with other water sports for guest experience and operational efficiency.
+        href: /learn/sup
+  - title: Retail & Distribution Guide
+    tagline: SUP Business Partnerships
+    desc: Guides on becoming a SUP retail partner or distributor —inventory planning, market positioning, and growth strategies.
+    guides:
+      - title: Becoming a SUP Retailer
+        desc: How to choose product lines, manage inventory, and market SUP boards in your retail store.
+        href: /solutions/retail-partners
+      - title: SUP for Commercial Operations
+        desc: Why inflatable SUPs are a versatile product for commercial fleets, rental businesses, and professional operators.
+        href: /use-cases/search-and-rescue
 read_guide: 臧€鞚措摐 鞚疥赴 鈫?
-
 cta:
   title: 鞏措敂靹滊秬韯?鞁滌瀾頃挫暭 頃犾 氇ゴ鞁滊倶鞖?
   desc: 鞀ろ偓 韽夑皜 韤挫毳?韱淀暣 霠堧波鞐?毵炿姅 臧€鞚措摐鞕€ 鞛ル箘毳?彀眷晞氤挫劯鞖?

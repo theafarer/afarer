@@ -1,57 +1,50 @@
-﻿hero_text:
-  tagline: Resources
-  title: 'Centrum pobierania i przewodniki kupującego'
-  subtitle: 'Uzyskaj dostęp do katalogów produktów, przewodników OEM, list kontrolnych kupującego i dokumentacji technicznej, aby podejmować świadome decyzje zakupowe.'
-features3_downloads:
-  tagline: Downloads
-  title: 'Dokumentacja produktowa<br />i zasoby dla kupującego'
-  isBeforeContent: false
-  columns: 2
-  items:
-    - title: '2026 Marine Product Catalog'
-      description: 'Pełna gama produktów obejmująca łodzie SUP, łodzie nadmuchiwane, deski SUP, kajaki i akcesoria. Specyfikacje, konfiguracje i opcje. Format PDF.'
-      icon: tabler:file-text
-    - title: 'OEM Manufacturing Guide'
-      description: 'Wszystko, co musisz wiedzieć o partnerstwach OEM/ODM: przegląd procesu, minimalne ilości zamówienia, opcje dostosowania, kontrola jakości i wysyłka.'
-      icon: tabler:building-factory
-    - title: 'SUP Boat Buyer Guide'
-      description: 'Jak wybrać odpowiedni SUP: materiały kadłuba, materiały rur, wybór silnika, kwestie rozmiaru i opcje konfiguracji dla różnych zastosowań.'
-      icon: tabler:file-description
-    - title: 'SUP Supplier Checklist'
-      description: 'Kluczowe kwestie przy wyborze producenta desek SUP: wskaźniki jakości, wymagania certyfikacyjne, kwestie MOQ i na co zwrócić uwagę podczas audytu fabryki.'
-      icon: tabler:clipboard-check
-    - title: 'Inflatable Boat Material Guide'
-      description: 'PVC vs Hypalon: porównanie trwałości, odporności na UV, żywotności, opcji naprawy i kosztów dla różnych zastosowań morskich.'
-      icon: tabler:files
-    - title: 'Custom Manufacturing Brief Template'
-      description: 'Pobierz nasz szablon briefu produktowego. Wypełnij swoje wymagania i odeślij go do nas, aby otrzymać wycenę i ocenę wykonalności w tym samym tygodniu.'
-      icon: tabler:template
-faqs:
-  title: Frequently Asked Questions
-  subtitle: 'Częste pytania dotyczące naszych produktów, procesu produkcyjnego i modelu partnerskiego.'
-  columns: 2
-  items:
-    - title: What is the minimum order quantity?
-      description: 'MOQ różni się w zależności od kategorii produktu. Łodzie SUP zazwyczaj zaczynają się od 10 sztuk na model. Deski SUP od 50 sztuk. Skontaktuj się z naszym zespołem sprzedaży, aby uzyskać informacje o MOQ dla konkretnego produktu.'
-      icon: tabler:help-circle
-    - title: Can I get samples before placing an order?
-      description: 'Tak. afarer zapewnia produkcję próbek do oceny przed produkcją masową. Koszty próbek są negocjowalne i często zaliczane na poczet pierwszego zamówienia produkcyjnego.'
-      icon: tabler:package
-    - title: What payment terms are available?
-      description: 'Standardowe warunki: 30% zaliczki przy zamówieniu, 70% przed wysyłką. Warunki LC dostępne dla kwalifikujących się klientów. Skontaktuj się z naszym zespołem finansowym, aby omówić ustalenia.'
-      icon: tabler:currency-dollar
-    - title: How long does production take?
-      description: 'Typowe czasy realizacji: łodzie SUP 30-45 dni, deski SUP 20-30 dni, łodzie nadmuchiwane 25-35 dni. Rozwój niestandardowy dodaje 15-30 dni na prototypowanie.'
-      icon: tabler:calendar-clock
-    - title: What certifications do your products carry?
-      description: 'Certyfikacja CE dla rynków UE, produkcja zatwierdzona przez US Coast Guard, system jakości ISO, zgodność z BSCI i REACH.'
-      icon: tabler:certificate
-    - title: Do you offer custom packaging and branding?
-      description: 'Tak. Zapewniamy niestandardowe opakowania z Twoim logo, kolorami i tożsamością marki. MOQ dla niestandardowych opakowań zależy od kategorii produktu.'
-      icon: tabler:color-swatch
+meta:
+  title: B2B Resources & Downloads | {SITE}
+  description: Download OEM manufacturing guides, product catalogs, quality reports, and ROI calculators for inflatable SUP businesses.
+hero:
+  tagline: Resource Center
+  title: Tools & Resources<br />For SUP Business Partners
+  subtitle: Download OEM guides, product catalogs, quality reports, and use our ROI calculator to plan your SUP fleet investment.
+resources:
+  - title: 2026 OEM/ODM Product Catalog
+    description: Complete product lineup with specifications, pricing tiers, MOQ, and customization options for B2B partners.
+    icon: tabler:file-text
+    type: catalog
+    link: /media
+    cta: Download Catalog
+  - title: Private Label SUP Brand Guide
+    description: Step-by-step guide to launching your own SUP brand — from market research and design to production and global delivery.
+    icon: tabler:book
+    type: guide
+    link: /news/private-label-sup-oem-guide
+    cta: Read Guide
+  - title: SUP Fleet ROI Calculator
+    description: Estimate your resort or club SUP fleet investment, projected revenue, and payback period with our interactive calculator.
+    icon: tabler:calculator
+    type: tool
+    link: "#roi-calculator"
+    cta: Calculate ROI
+  - title: Quality & Certification Report
+    description: CE certification documents, ISO 9001 quality management, UV aging test results, and pressure hold test data.
+    icon: tabler:certificate
+    type: report
+    link: /evidence
+    cta: View Reports
+  - title: Factory Capability Brochure
+    description: Virtual tour of our 12,000 m² manufacturing facility with production line details and quality control processes.
+    icon: tabler:building-factory
+    type: brochure
+    link: /factory
+    cta: Tour Factory
+  - title: Resort Fleet Revenue Guide
+    description: Commercial SUP fleet ROI analysis with pricing models, utilization rates, and real case study results from 5-star resorts.
+    icon: tabler:chart-bar
+    type: guide
+    link: /news/commercial-sup-fleet-roi-resorts
+    cta: Read Guide
 cta:
-  title: 'Potrzebujesz pomocy w znalezieniu odpowiedniego zasobu?'
-  subtitle: 'Skontaktuj się z naszym zespołem, aby uzyskać spersonalizowane wskazówki dotyczące wyboru produktu, partnerstw OEM lub specyfikacji technicznych.'
+  title: Potrzebujesz pomocy w znalezieniu odpowiedniego zasobu?
+  subtitle: Skontaktuj się z naszym zespołem, aby uzyskać spersonalizowane wskazówki dotyczące wyboru produktu, partnerstw OEM lub specyfikacji technicznych.
   actions:
     - variant: primary
       text: Contact our team

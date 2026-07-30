@@ -1,10 +1,6 @@
-﻿hero:
-  tagline: ติดต่อ
-  title: ติดต่อ afarer
-  subtitle: เราอยู่ที่นี่เพื่อช่วยคุณ ติดต่อเราเกี่ยวกับคำถามสินค้า พันธมิตร OEM/ODM หรือเรื่องอื่น ๆ
-  image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
-  imageAlt: ติดต่อ afarer
-
+hero_text:
+  tagline: Contact
+  title: GET IN TOUCH
 contact_form:
   id: form
   title: ส่งข้อความถึงเรา
@@ -13,9 +9,9 @@ contact_form:
   submit_button: ส่งคำถาม → ขอใบเสนอราคา
   success_message: ขอบคุณ! ข้อความของคุณถึงกล่องจดหมายของเราแล้ว เราจะตอบกลับภายในหนึ่งวันทำการ
   error_message: เกิดข้อผิดพลาดในการส่งข้อความของคุณ กรุณาลองอีกครั้งหรือส่งอีเมลถึงเราโดยตรง
-  default_country_code: '+1'
+  default_country_code: "+1"
   captcha:
-    label: 'ป้องกันสแปม: กรุณาแก้ปัญหาต่อไปนี้'
+    label: "ป้องกันสแปม: กรุณาแก้ปัญหาต่อไปนี้"
   fields:
     - name: firstName
       label: ชื่อ
@@ -51,22 +47,22 @@ contact_form:
       row: 6
       type: select
       options:
-        - value: 'ฝ่ายบริการลูกค้า'
+        - value: ฝ่ายบริการลูกค้า
           label: เลือกปริมาณโดยประมาณ...
         - value: sample
           label: เฉพาะตัวอย่าง / ต้นแบบ
-        - value: '5-10'
+        - value: 5-10
           label: 50–100 หน่วย (MOQ มาตรฐาน)
-        - value: '100-500'
+        - value: 100-500
           label: 100–500 หน่วย
-        - value: '500-plus'
+        - value: 500-plus
           label: 500+ หน่วย (ราคาตามปริมาณ)
     - name: customization
       label: ต้องการปรับแต่งหรือไม่?
       row: 7
       type: select
       options:
-        - value: 'ฝ่ายสนับสนุนทางเทคนิค'
+        - value: ฝ่ายสนับสนุนทางเทคนิค
           label: เลือกประเภทการปรับแต่ง...
         - value: none
           label: สินค้ามาตรฐาน (ไม่ปรับแต่ง)
@@ -81,7 +77,7 @@ contact_form:
       row: 8
       type: select
       options:
-        - value: 'ฝ่ายขาย'
+        - value: ฝ่ายขาย
           label: เลือกหมวดหมู่สินค้า...
         - value: all
           label: สินค้าทั้งหมด / แคตตาล็อกทั้งหมด

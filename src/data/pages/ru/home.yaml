@@ -1,5 +1,5 @@
-﻿hero:
-  tagline: ''
+hero:
+  tagline: ""
   title: |
     Завод надувных плавсредств —<br class="hidden sm:inline" />
     OEM/ODM <span class="text-accent dark:text-white">Производитель</span>
@@ -13,159 +13,94 @@
       href: /products
       icon: tabler:shopping-bag
     - text: Подробнее
-      href: '#features'
+      href: "#features"
   image:
     src: ~/assets/images/hero-image.webp
     alt: afarer герой
-
-hero_carousel:
-  autoplay_interval: 5000
-  slides:
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/tech-meeting-small.webp
-        alt: Обзор фабрики и территории afarer
-      tagline: Добро пожаловать
-      title: |
-        Спроектировано для воды. <br />
-        Создано для <span class="text-sky-300">жизни на борту</span>.
-      subtitle: Премиальные надувные лодки, SUP и инженерные изделия для морских профессионалов и любителей.
-      actions:
-        - text: Товары
-          href: /products
-          variant: primary
-        - text: Получить цену
-          href: /contact
-          variant: secondary
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
-        alt: Лодка afarer на воде
-      tagline: Мастерство
-      title: |
-        Корпуса, которые переживают гарантию. <br />
-        Сервис, который переживает корпус.
-      subtitle: Морские материалы. Алюминиевая сварка. Двадцатилетние лодки всё ещё заказывают у нас запчасти.
-      actions:
-        - text: Наша история
-          href: /about
-          variant: primary
-    - image:
-        src: https://assets.afarer.com/images/afarer/hero/afarer-hero-design-concept.webp
-        alt: Надувная лодка afarer на воде
-      tagline: Поддержка
-      title: |
-        Спроектировано до продажи. <br />
-        Поддерживается долго после.
-      subtitle: Авторизованные сервисные партнёры в 40+ странах. Двадцатилетние корпуса всё ещё звонят нам —и мы всё ещё отвечаем.
-      actions:
-        - text: Связаться с нами
-          href: /contact
-          variant: primary
-        - text: Цены
-          href: /pricing
-          variant: secondary
-
-features:
-  id: features
-  tagline: Почему afarer
-  title: Что вы получаете с afarer
-  subtitle: Десятилетия морского инженерного опыта, воплощённые в сфокусированной линейке продукции. Прочная конструкция, испытана в море, поддерживается всю жизнь.
-  columns: 2
+who_we_serve:
+  tagline: Who We Serve
+  title: Complete SUP Solutions for Every Water Business
+  subtitle: Purpose-built equipment, manufacturing, and business support for four key markets.
   items:
-    - title: Морские материалы
-      description: Прочный ПВХ, Hypalon и алюминиевые корпуса, устойчивые к УФ-излучению, истиранию и солёной воде.
-      icon: tabler:shield-check
-    - title: Качество готовое к производству
-      description: Каждый корпус проходит проверку давлением, каждый сварной шов inspected. Мы отгружаем только то, что сами спустили бы на воду.
-      icon: tabler:certificate
-    - title: Модульная конструкция
-      description: Настройте расположение баллонов, консоли, объём топлива и аксессуары под свою задачу.
-      icon: tabler:layout-grid
-    - title: Честные характеристики
-      description: Реальные грузоподъёмность, размеры и вес. Никаких маркетинговых преувеличений.
-      icon: tabler:ruler-measure
-    - title: Быстрая доставка и запчасти
-      description: Популярные модели отгружаются за дни. Оригинальные запчасти и расходники в наличии круглый год.
-      icon: tabler:truck-delivery
-    - title: Пожизненная поддержка
-      description: Прямая линия с нашей инженерной командой для технических вопросов, ремонта и модернизации.
-      icon: tabler:lifebuoy
-
-featured_products:
-  id: featured
-  title: Рекомендуемые товары
-  subtitle: Выбраны из нашего текущего каталога —самые популярные модели в этом сезоне.
-  linkText: Все товары
-  linkUrl: /products
-
-content_workshop:
-  isReversed: true
-  tagline: Внутри производства
-  title: От чертежа корпуса до отгрузки —каждый этап остаётся на предприятии
-  content: |
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Качество, которое можно увидеть, потрогать и измерить</h3>
-  items:
-    - title: Разработано корабельными инженерами
-      description: Обводы корпуса создаются внутри компании и проходят CFD-анализ ещё до постройки первого прототипа.
-    - title: Сварено и собрано на собственном заводе
-      description: Сварка баллонов, оснащение консоли и такелаж выполняются под одной крышей —мы контролируем качество на каждом этапе.
-    - title: Испытано в море перед отгрузкой
-      description: 'Каждая модель проходит многочасовые ходовые испытания: глиссирование, повороты, максимальная скорость и работа с нагрузкой.'
-  image:
-    src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
-    alt: Производственный цех afarer
-
-steps:
-  title: От спецификации до спуска на воду за пять шагов
-  items:
-    - title: 'Шаг 1: <span class="font-medium">Конфигурация</span>'
-      description: Выберите модель, опции и запросите цену онлайн или по телефону. Наша команда отвечает в течение одного рабочего дня.
-      icon: tabler:list-numbers
-    - title: 'Шаг 2: <span class="font-medium">Подтверждение</span>'
-      description: Мы письменно подтверждаем спецификацию, сроки и полную стоимость. Никаких сюрпризов и скрытых платежей.
-      icon: tabler:checks
-    - title: 'Шаг 3: <span class="font-medium">Производство</span>'
-      description: Производство начинается в нашем цеху. Мы отправляем фото прогресса на ключевых этапах.
-      icon: tabler:tool
-    - title: 'Шаг 4: <span class="font-medium">Доставка</span>'
-      description: Укладка в ложемент, термоусадочная упаковка и отправка морем или авиацией. Таможенное оформление под ключ.
-      icon: tabler:truck-loading
-    - title: 'Шаг 5: <span class="font-medium">Поддержка</span>'
-      description: Двухлетняя гарантия на корпус и пожизненная техническая поддержка. Запчасти отправляются в течение 48 часов.
-      icon: tabler:headset
-  image:
-    src: https://assets.afarer.com/images/afarer/hero/production-dept.webp
-    alt: Производственный процесс afarer
-
-blog_latest:
-  title: Из журнала
-  information: |
-    Статьи, технические заметки и практические примеры от инженерной команды.
-    Новые записи добавляются каждый раз, когда отгружается проект, обновляется стандарт или у кого-то есть история, которой стоит поделиться.
-
-faqs:
-  title: Часто задаваемые вопросы
-  subtitle: Распространённые вопросы о надувных лодках afarer, гарантиях, доставке и партнёрстве OEM/ODM. Если вашего вопроса нет —напишите нам.
-  columns: 2
-  items:
-    - title: Где находится склад afarer в США и сколько времени занимает доставка?
-      description: 'Наш склад в США расположен в Монтклэре, Калифорния. Западное побережье: 2— дня. Центральные штаты: 3— дня. Восточное побережье: 4— дней. Также доступна международная доставка —свяжитесь с нами для индивидуального расчёта.'
-      icon: tabler:truck-delivery
-    - title: Какая гарантийная политика afarer на надувные лодки?
-      description: 'Надувные морские изделия afarer покрываются 5-летней ограниченной гарантией на целостность ткани баллонов, герметичность швов, корпус из стеклопластика и клапаны надува. Заводские аксессуары —1 год. Коммерческое использование: 1 год ограниченной гарантии. Полные условия доступны на нашей странице гарантии.'
-      icon: tabler:shield-check
-    - title: Входят ли в комплект лодок afarer регистрационные документы?
-      description: Да, каждая надувная лодка afarer сопровождается необходимыми документами для регистрации. Сертификат происхождения от производителя находится на последней странице руководства пользователя; копию можно скачать по запросу. Одобрено Береговой охраной США для производства.
-      icon: tabler:file-text
-    - title: Одобрены ли лодки afarer Береговой охраной США?
-      description: 'Да, надувные лодки afarer одобрены Береговой охраной США (USCG) для производства. Наша фабрика также имеет сертификацию CE для доступа на рынок ЕС и .'
-      icon: tabler:flag
-    - title: Что делать, если упаковка товара прибыла повреждённой?
-      description: Если упаковка вашего изделия afarer прибыла повреждённой, пожалуйста, откажитесь от получения и верните посылку отправителю. Свяжитесь с нашей службой поддержки, и мы оперативно отправим вам замену.
+    - title: Paddle Clubs
+      keywords: SUP club equipment, paddle school equipment, rental fleet
+      description: Durable SUP fleets, club pricing, and replacement parts programs for paddle clubs and schools.
+      icon: tabler:users
+      cta: Explore Paddle Club Solutions
+      link: /solutions/paddle-clubs
+    - title: Resorts & Hotels
+      keywords: resort water activities, hotel beach equipment, guest experience
+      description: Complete SUP fleet programs with custom branding, staff training, and ROI-optimized packages.
+      icon: tabler:building
+      cta: Create Your Resort Water Experience
+      link: /solutions/resorts-hotels
+    - title: Retail Partners
+      keywords: SUP wholesale, outdoor retailers, sporting goods stores
+      description: Full product line, marketing materials, dropshipping options, and competitive wholesale margins.
+      icon: tabler:shopping-cart
+      cta: Become A Retail Partner
+      link: /solutions/retail-partners
+    - title: New SUP Brands
+      keywords: private label SUP, custom SUP brand, OEM paddle boards
+      description: End-to-end OEM/ODM manufacturing — design, prototyping, mass production, and global logistics.
       icon: tabler:package
-    - title: Что делать, если товар не прибыл в расчётный срок доставки?
-      description: Сроки доставки, указанные afarer, являются оценочными и не гарантируются. После отправки получение посылки является обязанностью клиента. Если посылка оставлена по указанному адресу доставки, право собственности переходит в момент доставки.
-      icon: tabler:calendar-clock
-
+      cta: Build Your SUP Brand
+      link: /oem-odm-manufacturer
+proof_points:
+  title: Trusted by Water Businesses Worldwide
+  subtitle: Decades of marine engineering experience powering profitable SUP programs.
+  items:
+    - metric: 10+
+      label: Years Experience
+      detail: Since 2012
+    - metric: 50+
+      label: Countries Served
+      detail: Global distribution network
+    - metric: 15,000+
+      label: Units Produced Annually
+      detail: CE-certified production capacity
+    - metric: 100%
+      label: CE Certified
+      detail: ISO 9001, BSCI, REACH compliant
+business_solutions:
+  tagline: How We Help
+  title: Your Partner From Concept To Revenue
+  subtitle: Four core capabilities that help water businesses launch, operate, and grow.
+  items:
+    - title: Professional Equipment
+      description: Commercial-grade SUP boards engineered for daily rental use, 500+ cycles with minimal maintenance.
+      icon: tabler:shield-check
+    - title: OEM Manufacturing
+      description: End-to-end private label production from design and prototyping to mass production and global delivery.
+      icon: tabler:package
+    - title: Business Support
+      description: Staff training, marketing materials, replacement parts programs, and dedicated account management.
+      icon: tabler:headset
+    - title: Global Logistics
+      description: FOB Qingdao, CIF major ports, door-to-door delivery to 50+ countries with customs support.
+      icon: tabler:truck-delivery
+oem_section:
+  tagline: Launch Your Brand
+  title: From Idea To Market In 16 Weeks
+  subtitle: Your complete SUP brand launch partner — design, prototype, manufacture, and ship.
+  steps:
+    - number: "01"
+      title: Idea & Brief
+      desc: Share your vision, target market, and specifications.
+    - number: "02"
+      title: Design & Engineering
+      desc: 3D modeling, material selection, and custom graphic design.
+    - number: "03"
+      title: Prototype & Validate
+      desc: Sample production with CE certification and quality testing.
+    - number: "04"
+      title: Mass Production
+      desc: Full-scale manufacturing with inline QC and factory audit support.
+    - number: "05"
+      title: Global Delivery
+      desc: FOB Qingdao logistics, CIF major ports, door-to-door.
+  cta: Start Your Brand Journey
+  cta_link: /oem-odm-manufacturer
 cta:
   title: |
     Готовы начать <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">OEM/ODM проект</span>?

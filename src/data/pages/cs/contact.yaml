@@ -1,10 +1,6 @@
-﻿hero:
-  tagline: Kontakt
-  title: Kontaktujte afarer
-  subtitle: Jsme tu, abychom vám pomohli. Kontaktujte nás ohledně dotazů na produkty, OEM/ODM partnerství nebo jakékoli jiné otázky.
-  image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
-  imageAlt: Kontakt afarer
-
+hero_text:
+  tagline: Contact
+  title: GET IN TOUCH
 contact_form:
   id: form
   title: Pošlete nám zprávu
@@ -13,9 +9,9 @@ contact_form:
   submit_button: Odeslat poptávku →Získat nabídku
   success_message: Děkujeme! Vaše zpráva dorazila do naší schránky. Odpovíme do jednoho pracovního dne.
   error_message: Při odesílání zprávy došlo k chybě. Zkuste to znovu nebo nám napište přímo e-mail.
-  default_country_code: '+1'
+  default_country_code: "+1"
   captcha:
-    label: 'Ochrana proti spamu: vyřešte následující'
+    label: "Ochrana proti spamu: vyřešte následující"
   fields:
     - name: firstName
       label: Jméno
@@ -51,22 +47,22 @@ contact_form:
       row: 6
       type: select
       options:
-        - value: 'Zákaznický servis'
+        - value: Zákaznický servis
           label: Vyberte odhadovaný objem...
         - value: sample
           label: Pouze vzorky / prototypy
-        - value: '5-10'
+        - value: 5-10
           label: 50—00 jednotek (standardní MOQ)
-        - value: '100-500'
+        - value: 100-500
           label: 100—00 jednotek
-        - value: '500-plus'
+        - value: 500-plus
           label: 500+ jednotek (množstevní ceny)
     - name: customization
       label: Potřebujete úpravy?
       row: 7
       type: select
       options:
-        - value: 'Technická podpora'
+        - value: Technická podpora
           label: Vyberte typ úprav...
         - value: none
           label: Standardní produkt (bez úprav)
@@ -81,7 +77,7 @@ contact_form:
       row: 8
       type: select
       options:
-        - value: 'Prodej'
+        - value: Prodej
           label: Vyberte kategorii produktu...
         - value: all
           label: Všechny produkty / celý katalog

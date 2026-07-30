@@ -1,54 +1,47 @@
-hero_text:
-  tagline: 資源中心
-  title: 下載中心和買家指南
-  subtitle: 訪問產品目錄、OEM 指南、買家清單和技術文檔，幫助您做出明智的採購決策。
-features3_downloads:
-  tagline: 下載中心
-  title: 產品文檔<br />與買家資源
-  isBeforeContent: false
-  columns: 2
-  items:
-    - title: 2026 年船用產品目錄
-      description: 完整產品系列包括 SUP 艇、充氣艇、SUP 板、皮划艇及配件。包含規格、配置和選裝件。PDF 格式。
-      icon: tabler:file-text
-    - title: OEM 製造指南
-      description: 關於 OEM/ODM 合作的一切須知：流程概覽、最小起訂量、定製選項、質量控制及運輸。
-      icon: tabler:building-factory
-    - title: SUP 艇購買指南
-      description: 如何選擇合適的 SUP：船體材料、管材、發動機選擇、尺寸考量及不同應用的配置選項。
-      icon: tabler:file-description
-    - title: SUP 供應商檢查清單
-      description: 選擇 SUP 板製造商時的關鍵考量：質量指標、認證要求、MOQ 考量以及工廠審核要點。
-      icon: tabler:clipboard-check
-    - title: 充氣艇材料指南
-      description: PVC 與 Hypalon 對比：耐久性、抗紫外線性能、使用壽命、維修選項及不同海事應用的成本考量。
-      icon: tabler:files
-    - title: 定製製造簡報模板
-      description: 下載我們的產品簡報模板。填寫您的需求並返回給我們，可在同周內獲得報價和可行性評估。
-      icon: tabler:template
-faqs:
-  title: 常見問題
-  subtitle: 關於我們的產品、製造流程和合作模式的常見問題。
-  columns: 2
-  items:
-    - title: 最小起訂量是多少？
-      description: MOQ 因產品類別而異。SUP 艇通常每型號 10 艘起訂。SUP 板 50 塊起訂。請聯繫我們的銷售團隊瞭解具體產品的 MOQ 信息。
-      icon: tabler:help-circle
-    - title: 下單前可以拿樣品嗎？
-      description: 可以。afarer 在大貨生產前提供樣品製作供評估。樣品費用可協商，通常可抵扣首批大貨訂單。
-      icon: tabler:package
-    - title: 有哪些付款方式？
-      description: 標準條款為下單時支付 30% 定金，發貨前支付 70%。符合資質的客戶可申請 LC 信用證。請聯繫我們的財務團隊商討具體安排。
-      icon: tabler:currency-dollar
-    - title: 生產週期需要多長時間？
-      description: 典型交期：SUP 艇 30-45 天，SUP 板 20-30 天，充氣艇 25-35 天。定製開發需額外 15-30 天用於打樣。
-      icon: tabler:calendar-clock
-    - title: 你們的產品擁有哪些認證？
-      description: CE 認證（歐盟市場）、美國海岸警衛隊批准製造、ISO 質量體系、BSCI 合規及 REACH 材料合規。
-      icon: tabler:certificate
-    - title: 你們提供定製包裝和品牌服務嗎？
-      description: 是的。我們提供帶您標誌、顏色和品牌標識的定製包裝。定製包裝的 MOQ 取決於產品類別。
-      icon: tabler:color-swatch
+meta:
+  title: B2B Resources & Downloads | {SITE}
+  description: Download OEM manufacturing guides, product catalogs, quality reports, and ROI calculators for inflatable SUP businesses.
+hero:
+  tagline: Resource Center
+  title: Tools & Resources<br />For SUP Business Partners
+  subtitle: Download OEM guides, product catalogs, quality reports, and use our ROI calculator to plan your SUP fleet investment.
+resources:
+  - title: 2026 OEM/ODM Product Catalog
+    description: Complete product lineup with specifications, pricing tiers, MOQ, and customization options for B2B partners.
+    icon: tabler:file-text
+    type: catalog
+    link: /media
+    cta: Download Catalog
+  - title: Private Label SUP Brand Guide
+    description: Step-by-step guide to launching your own SUP brand — from market research and design to production and global delivery.
+    icon: tabler:book
+    type: guide
+    link: /news/private-label-sup-oem-guide
+    cta: Read Guide
+  - title: SUP Fleet ROI Calculator
+    description: Estimate your resort or club SUP fleet investment, projected revenue, and payback period with our interactive calculator.
+    icon: tabler:calculator
+    type: tool
+    link: "#roi-calculator"
+    cta: Calculate ROI
+  - title: Quality & Certification Report
+    description: CE certification documents, ISO 9001 quality management, UV aging test results, and pressure hold test data.
+    icon: tabler:certificate
+    type: report
+    link: /evidence
+    cta: View Reports
+  - title: Factory Capability Brochure
+    description: Virtual tour of our 12,000 m² manufacturing facility with production line details and quality control processes.
+    icon: tabler:building-factory
+    type: brochure
+    link: /factory
+    cta: Tour Factory
+  - title: Resort Fleet Revenue Guide
+    description: Commercial SUP fleet ROI analysis with pricing models, utilization rates, and real case study results from 5-star resorts.
+    icon: tabler:chart-bar
+    type: guide
+    link: /news/commercial-sup-fleet-roi-resorts
+    cta: Read Guide
 cta:
   title: 需要幫助找到合適的資源嗎？
   subtitle: 聯繫我們的團隊，獲取關於產品選擇、OEM 合作或技術規格的個性化指導。

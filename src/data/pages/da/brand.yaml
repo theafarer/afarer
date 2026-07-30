@@ -1,13 +1,32 @@
 hero:
   tagline: Brand
-  title: afarer brandet
-  subtitle: Kvalitet, innovation og pålidelighed —det er afarer.
-story:
-  tagline: Vores historie
-  title: Opbygning af tillid siden 2012
-  body: |
-    afarer blev grundlagt med en klar vision —at producere premium gummibåde og vandsportsudstyr, der holder til virkelige forhold. På over et årti er vi vokset fra et lille værksted til en globalt anerkendt producent.
-mission:
-  tagline: Mission
-  title: Vores mission
-  body: At levere højkvalitets, innovative og prismæssigt overkommelige vandsportsprodukter, der gør vandaktiviteter tilgængelige for alle.
+  title: '{BRAND}'
+  subtitle: Ocean Performance for Every Surfer
+  cta: Explore Gear →
+  cta_link: /products
+  secondary_cta: Learn Surfing
+  secondary_cta_link: /guides
+
+position:
+  tagline: Position
+  subtitle: Ocean Performance for Every Surfer
+
+products_section:
+  tagline: Products
+  cta: All Products →
+  cta_link: /products
+
+global_section:
+  tagline: Global
+  title: Available in {count} Regions
+
+social_section:
+  tagline: Social
+  title: What surfers are reading
+  read_guide: Read guide →
+
+cta_section:
+  title: Start your ocean journey
+  subtitle: Every product CE certified. Backed by warranty. Designed for real surf.
+  cta_suffix: '→'
+  secondary_cta: About {BRAND}

@@ -1,12 +1,10 @@
-﻿hero:
+hero:
   tagline: Фабрика
   title: Фабрика и производство
   subtitle: 12 000 м2 интегрированного производства —от сырья до готовой лодки
-
 intro:
   - Как фабричный бренд **Qingdao Vatrad Group Co., Ltd.**, afarer контролирует каждый этап производства —от поступления сырья до финальной проверки готовой лодки. Наше производственное помещение в зоне экономического развития Циндао занимает 12 000 квадратных метров и включает специализированные цеха для раскроя ПВХ, термосварки труб, производства стеклопластиковых SUP-корпусов, цифровой печати SUP, финальной сборки и контроля качества.
   - Объединяя дизайн, инженерию, прототипирование, производство и тестирование под одной крышей, мы устраняем неэффективность контрактного производства и сохраняем прямой контроль над качеством сборки, выбором материалов и сроками поставки. Каждая лодка, покидающая наш цех, построена нашими людьми, на нашем оборудовании, по нашим стандартам.
-
 stats:
   - value: 12 000 м2
     label: Производственная площадь
@@ -14,9 +12,44 @@ stats:
     label: Квалифицированных рабочих
   - value: 15 000+
     label: Лодок производится ежегодно
-  - value:
+  - value: null
     label: Сертифицировано по качеству
-
+intelligence_tagline: Factory Intelligence
+intelligence_title: Explore Our Manufacturing Capabilities
+intelligence_cards:
+  - title: Production Capacity
+    icon: C
+    icon_bg: blue
+    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
+    metrics:
+      - label: MOQ
+        value: "SUP: 5-10 / SUP: 2-5"
+      - label: Lead Time
+        value: 30-45 days
+    link: /factory/capacity
+    link_label: Full capacity details →
+  - title: Quality Lab & Testing
+    icon: Q
+    icon_bg: green
+    desc: "Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat."
+    metrics:
+      - label: Lab Equipment
+        value: Tensile tester, temp chamber, leak tank
+      - label: Standards
+        value: ISO 9001, CE, AS 1799
+    link: /factory/quality-lab
+    link_label: Lab procedures & equipment →
+  - title: OEM/ODM Capability
+    icon: O
+    icon_bg: purple
+    desc: "End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics."
+    metrics:
+      - label: Certifications
+        value: ISO 9001, BSCI, CE, REACH
+      - label: Shipping
+        value: FOB, CIF, DDP to 50+ countries
+    link: /factory/oem-capability
+    link_label: Full OEM services →
 workshops_section:
   tagline: Цеха
   title: Производственные цеха
@@ -39,7 +72,6 @@ workshops_section:
     - title: Контроль качества и инспекция
       description: Каждая готовая лодка проходит обязательное тестирование удержания воздуха, верификацию швов и полную проверку систем перед отправкой. Лаборатория качества работает независимо от производства.
       image: https://assets.afarer.com/images/afarer/factory/afarer-pressure-testing.webp
-
 equipment_section:
   tagline: Оборудование
   title: Ключевое производственное оборудование
@@ -58,22 +90,20 @@ equipment_section:
       spec: Полноцветная графика для SUP
     - name: Шелкографическая машина
       spec: Многоцветная печать логотипов
-
 qc_section:
   tagline: Контроль качества
   title: Процесс тестирования и обеспечения качества
   subtitle: Каждая лодка проходит обязательное тестирование перед отправкой. Лаборатория качества независима от производства и подчиняется руководству.
   steps:
-    - step: '1'
+    - step: "1"
       title: Инспекция сырья
       desc: ПВХ, Hypalon и drop-stitch ткани проходят тестирование на растяжение (), распространение разрыва и УФ-стойкость перед поступлением в производство.
-    - step: '2'
+    - step: "2"
       title: 48-часовой тест удержания воздуха
       desc: Каждая камера надувается до 125% номинального давления и выдерживается 48 часов. Падение давления ниже 5% вызывает автоматическое отклонение.
-    - step: '3'
+    - step: "3"
       title: Тестирование нагрузки и баланса
       desc: Готовые лодки загружаются до максимальной грузоподъемности и тестируются на устойчивость, надводный борт и управляемость.
-
 oem_section:
   tagline: OEM проекты
   title: Кейсы партнерства брендов и OEM
@@ -88,7 +118,6 @@ oem_section:
     - challenge: Австралийский дистрибьютор требовал CE-сертифицированную линейку SUP с индивидуальными цветами труб и опцией Hypalon.
       solution: Произвели предсерийные образцы, закупили CSM Hypalon у японского поставщика, организовали тестирование AS 1799.
       result: 3-модельная линейка SUP запущена в Австралии и Новой Зеландии.
-
 faq_section:
   tagline: FAQ
   title: Часто задаваемые вопросы B2B и OEM
@@ -101,48 +130,125 @@ faq_section:
       a: Стандартный срок 30—5 дней с подтверждения заказа. Разработка формы добавляет 15—0 дней. Доступно ускоренное производство.
     - q: Можете ли вы отгрузить FOB Циндао или CIF в наш порт?
       a: Да. Мы отгружаем FOB Циндао, CIF в крупные мировые порты и DDP для квалифицированных партнеров. Мы отгружаем в 50+ стран.
-
-b2b_moq: 'Стандартный MOQ: 5—0 единиц на модель (SUP/байдарка/drop-stitch). SUP MOQ: 2— единиц. Пробные заказы приветствуются.'
-
+b2b_moq: "Стандартный MOQ: 5—0 единиц на модель (SUP/байдарка/drop-stitch). SUP MOQ: 2— единиц. Пробные заказы приветствуются."
+production_flow:
+  tagline: Production Flow
+  title: From Material to Finished Boat
+  subtitle: Every boat passes through 6 production stages with QC checkpoints at every step. No shortcuts, no skipped inspections.
+  stages:
+    - stage: "01"
+      title: Material Receiving & Incoming QC
+      description: All incoming materials are logged by batch/lot number in our ERP system. PVC fabric rolls, drop-stitch cores, valves, adhesives, and hardware are quarantined until QC sign-off.
+      qc_check: Tensile strength (ASTM D751), tear resistance (ISO 4674), thickness gauge, adhesive viscosity, visual defect scan
+      qc_threshold: 100% of batches tested. Reject if tensile < 90% of spec, tear < spec min, or any visual defect
+      responsibility: Incoming QC team (3 inspectors)
+    - stage: "02"
+      title: CNC Cutting & Material Prep
+      description: Computer-optimized nesting lays out panels on PVC stock to minimize waste. Automatic CNC cutting machines maintain 0.1 mm positional accuracy.
+      qc_check: Dimensional check against CAD DXF files, edge quality inspection, panel count verification
+      qc_threshold: Every 20th panel measured. Tolerance ±0.5 mm. Reject batch if >2% out of tolerance
+      responsibility: Cutting workshop lead
+    - stage: "03"
+      title: Welding & Drop-Stitch Bonding
+      description: Drop-stitch cores are bonded to outer PVC laminates using heat lamination. Tube chambers are RF-welded or hot-air welded. Rail bands are triple-layer fusion bonded.
+      qc_check: Peel test every 50 units (ASTM D751), weld width measurement, hot-air temperature log review, visual seam inspection under backlight
+      qc_threshold: Peel strength min 8 N/cm. Weld width tolerance ±1 mm. Any visible channeling = reject
+      responsibility: Welding QC (2 inspectors per shift)
+    - stage: "04"
+      title: Assembly & Rigging
+      description: "Boats move to final assembly where all components are mated: hull + tubes, valves installed, D-rings, handles, fin boxes, and carry bag fitting. Each unit follows a 100-point assembly checklist."
+      qc_check: 100-point checklist sign-off per unit, valve function test (10 open/close cycles), hardware torque verification, visual inspection
+      qc_threshold: "Zero-defect policy on safety-critical items (valves, D-rings, handles). Minor cosmetic: AQL 2.5 (ISO 2859)"
+      responsibility: Assembly team lead + line QC
+    - stage: "05"
+      title: Pressure Testing & Quality Hold
+      description: Every chamber is inflated to 1.25× rated pressure (typically 20—5 PSI) and held for 24—8 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.
+      qc_check: 24h pressure hold log, sensor calibration verified daily, temperature-compensated pressure reading, seam re-test after repair
+      qc_threshold: Max 5% pressure drop over 24h at stable temp. Any chamber exceeding this = 100% re-test of entire production batch
+      responsibility: Quality lab (independent of production, reports to management)
+    - stage: "06"
+      title: Final Inspection & Packing
+      description: Final visual and functional inspection. Surface defects, color consistency, label/BIN verification, packaging integrity, and accessory completeness. Units are vacuum-packed, boxed, and palletized for container loading.
+      qc_check: Full visual inspection, accessory checklist per SKU, packaging drop test (1 m, random sample), label/bar code scan verification
+      qc_threshold: AQL 2.5 for major defects, AQL 4.0 for minor. Zero tolerance on safety defects. 100% of units visually inspected
+      responsibility: Final QC team (4 inspectors) + Packing team lead
+workforce:
+  tagline: Our People
+  title: Workforce & Expertise
+  engineers: 25+
+  engineers_detail: Engineers across R&D, mold design, materials lab, and production engineering. Average 7+ years in inflatable manufacturing.
+  shift_pattern: 2 shifts/day (07:00—5:30, 15:30—0:00). Optional night shift for urgent orders.
+  training: Monthly QC training, quarterly safety drills, annual skills assessment. New hires complete 40-hour induction before working on production line.
+  departments:
+    - name: R&D & Engineering
+      count: 25+
+      role: Product design, mold engineering, materials lab
+    - name: Cutting & Material Prep
+      count: 15
+      role: CNC cutting, panel preparation, material handling
+    - name: Welding & Lamination
+      count: 40
+      role: RF welding, hot-air welding, drop-stitch bonding
+    - name: SUP Core Bonding
+      count: 30
+      role: Drop-stitch lamination, heat bonding, rail band fusion
+    - name: Assembly & Rigging
+      count: 35
+      role: Final assembly, hardware installation, systems check
+    - name: Quality Control
+      count: 12
+      role: Incoming QC, in-process QC, final inspection, lab testing
+    - name: Logistics & Packing
+      count: 20
+      role: Packaging, container loading, export documentation
+    - name: Management & Admin
+      count: 15
+      role: Sales, procurement, HR, finance, compliance
+material_traceability:
+  tagline: Traceability
+  title: Material Tracking & Batch Control
+  description: Every batch of raw material is assigned a unique lot number in our ERP system. From arrival through production to the finished product, each boat's bill of materials links back to the original supplier batch. This enables full upstream traceability for any quality or compliance inquiry.
+  system: Custom ERP (Qingdao Vatrad Group internal system) + physical batch tags on each work order
+  coverage: 100% of production materials —PVC, Hypalon, drop-stitch fabric, adhesives, valves, hardware, packaging
+  records_retained: 10 years (per CE 2013/53/EU requirement)
+  suppliers:
+    - material: Marine-grade PVC
+      source: Chinese and Korean suppliers
+      certified: ISO 9001, REACH, RoHS
+    - material: Hypalon (CSM)
+      source: Japanese supplier
+      certified: ISO 9001, REACH
+    - material: Drop-stitch fabric
+      source: In-house weaving + external partner
+      certified: Internal QC + supplier ISO 9001
+    - material: Valves & Hardware
+      source: Chinese OEM suppliers
+      certified: ISO 9001, material certs per batch
+qc_dashboard:
+  tagline: QC by the Numbers
+  title: Quality Control Metrics
+  subtitle: Real pass/fail data from our production line. Our quality lab operates independently from production and reports directly to management.
+  stats:
+    - value: 100%
+      label: Units pressure-tested
+      detail: Every boat, every chamber, every batch
+    - value: <5%
+      label: Max allowable pressure drop
+      detail: Over 24h at 1.25× rated pressure
+    - value: AQL 2.5
+      label: Major defect threshold
+      detail: Per ISO 2859 sampling standard
+    - value: 24—8h
+      label: Pressure hold duration
+      detail: Depending on product category
+    - value: 1.25×
+      label: Test pressure vs rated
+      detail: Safety margin on every chamber
+    - value: 0%
+      label: Tolerance on safety defects
+      detail: Valves, D-rings, seams, buoyancy
 process_cta:
   title: Посмотреть наш производственный процесс
   desc: Проследите путь лодки через все этапы производства —от сырья до готового судна.
   label: Смотреть процесс производства →
   link: /factory/process
-intelligence_tagline: Factory Intelligence
-intelligence_title: Explore Our Manufacturing Capabilities
-
-intelligence_cards:
-  - title: Production Capacity
-    icon: C
-    icon_bg: blue
-    desc: '12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.'
-    metrics:
-      - label: MOQ
-        value: 'SUP: 5-10 / SUP: 2-5'
-      - label: Lead Time
-        value: '30-45 days'
-    link: /factory/capacity
-    link_label: 'Full capacity details →'
-  - title: Quality Lab & Testing
-    icon: Q
-    icon_bg: green
-    desc: 'Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat.'
-    metrics:
-      - label: Lab Equipment
-        value: 'Tensile tester, temp chamber, leak tank'
-      - label: Standards
-        value: 'ISO 9001, CE, AS 1799'
-    link: /factory/quality-lab
-    link_label: 'Lab procedures & equipment →'
-  - title: OEM/ODM Capability
-    icon: O
-    icon_bg: purple
-    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
-    metrics:
-      - label: Certifications
-        value: 'ISO 9001, BSCI, CE, REACH'
-      - label: Shipping
-        value: 'FOB, CIF, DDP to 50+ countries'
-    link: /factory/oem-capability
-    link_label: 'Full OEM services →'

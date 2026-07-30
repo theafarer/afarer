@@ -1,57 +1,50 @@
-﻿hero_text:
-  tagline: Resources
-  title: 'Download-Center & Käuferleitfäden'
-  subtitle: 'Zugriff auf Produktkataloge, OEM-Leitfaden, Käuferchecklisten und technische Dokumentation'
-features3_downloads:
-  tagline: Downloads
-  title: 'Produktdokumentation<br />& Käuferressourcen'
-  isBeforeContent: false
-  columns: 2
-  items:
-    - title: '2026 Marine Product Catalog'
-      description: 'Komplettes Sortiment: RIBs, Schlauchboote, SUP-Bretter, Kajaks und Zubehör. PDF-Format.'
-      icon: tabler:file-text
-    - title: 'OEM-Fertigungsleitfaden'
-      description: 'Alles über OEM/ODM-Partnerschaften: Prozess, Mindestbestellmengen, Anpassungen, Qualität, Versand.'
-      icon: tabler:building-factory
-    - title: 'SUP-Käuferleitfaden'
-      description: 'So wählen Sie das richtige SUP: Materialien, Motor, Größe und Konfiguration.'
-      icon: tabler:file-description
-    - title: 'SUP-Lieferanten-Checkliste'
-      description: 'Wichtige Überlegungen bei der SUP-Herstellerwahl: Qualität, Zertifizierungen, MOQ, Werkaudit.'
-      icon: tabler:clipboard-check
-    - title: 'Materialleitfaden für Schlauchboote'
-      description: 'PVC vs. Hypalon: Haltbarkeit, UV-Beständigkeit, Lebensdauer, Reparatur, Kosten.'
-      icon: tabler:files
-    - title: 'Vorlage für kundenspezifische Fertigungsanforderungen'
-      description: 'Produktbriefvorlage herunterladen, ausfüllen und an uns senden für Angebot und Machbarkeitsprüfung.'
-      icon: tabler:template
-faqs:
-  title: Frequently Asked Questions
-  subtitle: 'Häufige Fragen zu Produkten, Fertigung und Partnerschaft.'
-  columns: 2
-  items:
-    - title: What is the minimum order quantity?
-      description: 'Die MOQ variiert je nach Kategorie. RIBs ab 10, SUP-Bretter ab 50 Einheiten.'
-      icon: tabler:help-circle
-    - title: Can I get samples before placing an order?
-      description: 'Ja, afarer bietet Musterproduktion an. Kosten verhandelbar, oft anrechenbar.'
-      icon: tabler:package
-    - title: What payment terms are available?
-      description: '30% Anzahlung, 70% vor Versand. LC für qualifizierte Kunden.'
-      icon: tabler:currency-dollar
-    - title: How long does production take?
-      description: 'Typische Lieferzeiten: SUP 30-45, SUP 20-30, Schlauchboote 25-35 Tage. Prototyping zusätzlich 15-30 Tage.'
-      icon: tabler:calendar-clock
-    - title: What certifications do your products carry?
-      description: 'CE, USCG, ISO, BSCI, REACH.'
-      icon: tabler:certificate
-    - title: Do you offer custom packaging and branding?
-      description: 'Ja. Individuelle Verpackung mit Logo, Farben und Markenidentität.'
-      icon: tabler:color-swatch
+meta:
+  title: B2B Resources & Downloads | {SITE}
+  description: Download OEM manufacturing guides, product catalogs, quality reports, and ROI calculators for inflatable SUP businesses.
+hero:
+  tagline: Resource Center
+  title: Tools & Resources<br />For SUP Business Partners
+  subtitle: Download OEM guides, product catalogs, quality reports, and use our ROI calculator to plan your SUP fleet investment.
+resources:
+  - title: 2026 OEM/ODM Product Catalog
+    description: Complete product lineup with specifications, pricing tiers, MOQ, and customization options for B2B partners.
+    icon: tabler:file-text
+    type: catalog
+    link: /media
+    cta: Download Catalog
+  - title: Private Label SUP Brand Guide
+    description: Step-by-step guide to launching your own SUP brand — from market research and design to production and global delivery.
+    icon: tabler:book
+    type: guide
+    link: /news/private-label-sup-oem-guide
+    cta: Read Guide
+  - title: SUP Fleet ROI Calculator
+    description: Estimate your resort or club SUP fleet investment, projected revenue, and payback period with our interactive calculator.
+    icon: tabler:calculator
+    type: tool
+    link: "#roi-calculator"
+    cta: Calculate ROI
+  - title: Quality & Certification Report
+    description: CE certification documents, ISO 9001 quality management, UV aging test results, and pressure hold test data.
+    icon: tabler:certificate
+    type: report
+    link: /evidence
+    cta: View Reports
+  - title: Factory Capability Brochure
+    description: Virtual tour of our 12,000 m² manufacturing facility with production line details and quality control processes.
+    icon: tabler:building-factory
+    type: brochure
+    link: /factory
+    cta: Tour Factory
+  - title: Resort Fleet Revenue Guide
+    description: Commercial SUP fleet ROI analysis with pricing models, utilization rates, and real case study results from 5-star resorts.
+    icon: tabler:chart-bar
+    type: guide
+    link: /news/commercial-sup-fleet-roi-resorts
+    cta: Read Guide
 cta:
-  title: 'Hilfe bei der Ressourcensuche?'
-  subtitle: 'Kontaktieren Sie uns für Beratung zu Produkten, OEM-Partnerschaften oder technischen Spezifikationen.'
+  title: Hilfe bei der Ressourcensuche?
+  subtitle: Kontaktieren Sie uns für Beratung zu Produkten, OEM-Partnerschaften oder technischen Spezifikationen.
   actions:
     - variant: primary
       text: Contact our team

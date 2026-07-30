@@ -1,57 +1,50 @@
-﻿hero_text:
-  tagline: Resources
-  title: 'Download Center & Buyer Guides'
-  subtitle: 'Access product catalogs, OEM guides, buyer checklists, and technical documentation to help you make informed procurement decisions.'
-features3_downloads:
-  tagline: Downloads
-  title: 'Product Documentation<br />& Buyer Resources'
-  isBeforeContent: false
-  columns: 2
-  items:
-    - title: '2026 Marine Product Catalog'
-      description: 'Complete product range including SUP boats, inflatable boats, SUP boards, SUPs, and accessories. Specifications, configurations, and options. PDF format.'
-      icon: tabler:file-text
-    - title: 'OEM Manufacturing Guide'
-      description: 'Everything you need to know about OEM/ODM partnerships: process overview, minimum order quantities, customization options, quality control, and shipping.'
-      icon: tabler:building-factory
-    - title: 'SUP Boat Buyer Guide'
-      description: 'How to choose the right SUP: hull materials, tube materials, engine selection, size considerations, and configuration options for different applications.'
-      icon: tabler:file-description
-    - title: 'SUP Supplier Checklist'
-      description: 'Key considerations when selecting a SUP board manufacturer: quality indicators, certification requirements, MOQ considerations, and what to look for in a factory audit.'
-      icon: tabler:clipboard-check
-    - title: 'Inflatable Boat Material Guide'
-      description: 'PVC vs Hypalon: comparison of durability, UV resistance, lifespan, repair options, and cost considerations for different marine applications.'
-      icon: tabler:files
-    - title: 'Custom Manufacturing Brief Template'
-      description: 'Download our product brief template. Fill in your requirements and return it to us for a same-week quotation and feasibility assessment.'
-      icon: tabler:template
-faqs:
-  title: Frequently Asked Questions
-  subtitle: 'Common questions about our products, manufacturing process, and partnership model.'
-  columns: 2
-  items:
-    - title: What is the minimum order quantity?
-      description: 'MOQ varies by product category. SUP boats typically start from 10 units per model. SUP boards from 50 units. Contact our sales team for product-specific MOQ information.'
-      icon: tabler:help-circle
-    - title: Can I get samples before placing an order?
-      description: 'Yes. afarer provides sample production for evaluation before mass production. Sample costs are negotiable and often credited toward the first production order.'
-      icon: tabler:package
-    - title: What payment terms are available?
-      description: 'Standard terms are 30% deposit with order, 70% before shipment. LC terms available for qualifying customers. Contact our finance team to discuss arrangements.'
-      icon: tabler:currency-dollar
-    - title: How long does production take?
-      description: 'Typical lead times: SUP boats 30-45 days, SUP boards 20-30 days, inflatable boats 25-35 days. Custom development adds 15-30 days for prototyping.'
-      icon: tabler:calendar-clock
-    - title: What certifications do your products carry?
-      description: 'CE certification for EU markets, US Coast Guard approved manufacturing, ISO quality system, BSCI compliance, and REACH material compliance.'
-      icon: tabler:certificate
-    - title: Do you offer custom packaging and branding?
-      description: 'Yes. We provide custom packaging with your logo, colors, and brand identity. MOQ for custom packaging depends on the product category.'
-      icon: tabler:color-swatch
+meta:
+  title: B2B Resources & Downloads | {SITE}
+  description: Download OEM manufacturing guides, product catalogs, quality reports, and ROI calculators for inflatable SUP businesses.
+hero:
+  tagline: Resource Center
+  title: Tools & Resources<br />For SUP Business Partners
+  subtitle: Download OEM guides, product catalogs, quality reports, and use our ROI calculator to plan your SUP fleet investment.
+resources:
+  - title: 2026 OEM/ODM Product Catalog
+    description: Complete product lineup with specifications, pricing tiers, MOQ, and customization options for B2B partners.
+    icon: tabler:file-text
+    type: catalog
+    link: /media
+    cta: Download Catalog
+  - title: Private Label SUP Brand Guide
+    description: Step-by-step guide to launching your own SUP brand — from market research and design to production and global delivery.
+    icon: tabler:book
+    type: guide
+    link: /news/private-label-sup-oem-guide
+    cta: Read Guide
+  - title: SUP Fleet ROI Calculator
+    description: Estimate your resort or club SUP fleet investment, projected revenue, and payback period with our interactive calculator.
+    icon: tabler:calculator
+    type: tool
+    link: "#roi-calculator"
+    cta: Calculate ROI
+  - title: Quality & Certification Report
+    description: CE certification documents, ISO 9001 quality management, UV aging test results, and pressure hold test data.
+    icon: tabler:certificate
+    type: report
+    link: /evidence
+    cta: View Reports
+  - title: Factory Capability Brochure
+    description: Virtual tour of our 12,000 m² manufacturing facility with production line details and quality control processes.
+    icon: tabler:building-factory
+    type: brochure
+    link: /factory
+    cta: Tour Factory
+  - title: Resort Fleet Revenue Guide
+    description: Commercial SUP fleet ROI analysis with pricing models, utilization rates, and real case study results from 5-star resorts.
+    icon: tabler:chart-bar
+    type: guide
+    link: /news/commercial-sup-fleet-roi-resorts
+    cta: Read Guide
 cta:
-  title: 'Need help finding the right resource?'
-  subtitle: 'Contact our team for personalized guidance on product selection, OEM partnerships, or technical specifications.'
+  title: Need help finding the right resource?
+  subtitle: Contact our team for personalized guidance on product selection, OEM partnerships, or technical specifications.
   actions:
     - variant: primary
       text: Contact our team

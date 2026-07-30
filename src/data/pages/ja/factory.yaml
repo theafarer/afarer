@@ -1,12 +1,10 @@
-﻿hero:
+hero:
   tagline: 工場
   title: 工場と製造
   subtitle: 12,000m2の統合製造 — 原材料から完成ボートまで
-
 intro:
-  - '**青島ヴァトラッドグループ有限公司** のファクトリーブランドとして、アクアフェアラーは生産のすべての段階を管理しています — 原材料のPVCやグラスファイバー材料の到着から、完成ボートの最終出荷前検査まで。青島経済開発区にある当社の製造施設は12,000平方メートルに及び、PVC切断、チューブ熱シール、グラスファイバーRIBハル生産、SUPデジタル印刷、最終組立、品質テスト専用のワークショップを備えています。'
+  - "**青島ヴァトラッドグループ有限公司** のファクトリーブランドとして、アクアフェアラーは生産のすべての段階を管理しています — 原材料のPVCやグラスファイバー材料の到着から、完成ボートの最終出荷前検査まで。青島経済開発区にある当社の製造施設は12,000平方メートルに及び、PVC切断、チューブ熱シール、グラスファイバーRIBハル生産、SUPデジタル印刷、最終組立、品質テスト専用のワークショップを備えています。"
   - 設計、エンジニアリング、プロトタイピング、製造、テストを1つの屋根の下に統合することで、契約製造の非効率性を排除し、製造品質、材料選択、納期スケジュールを直接管理しています。当社のワークショップを出るすべてのボートは、当社の人員によって、当社の設備で、当社の基準に従って製造されています。
-
 stats:
   - value: 12,000 m2
     label: 製造フロア
@@ -14,9 +12,44 @@ stats:
     label: 熟練作業員
   - value: 15,000+
     label: 年間生産ボート数
-  - value:
+  - value: null
     label: 品質認証
-
+intelligence_tagline: Factory Intelligence
+intelligence_title: Explore Our Manufacturing Capabilities
+intelligence_cards:
+  - title: Production Capacity
+    icon: C
+    icon_bg: blue
+    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
+    metrics:
+      - label: MOQ
+        value: "SUP: 5-10 / SUP: 2-5"
+      - label: Lead Time
+        value: 30-45 days
+    link: /factory/capacity
+    link_label: Full capacity details →
+  - title: Quality Lab & Testing
+    icon: Q
+    icon_bg: green
+    desc: "Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat."
+    metrics:
+      - label: Lab Equipment
+        value: Tensile tester, temp chamber, leak tank
+      - label: Standards
+        value: ISO 9001, CE, AS 1799
+    link: /factory/quality-lab
+    link_label: Lab procedures & equipment →
+  - title: OEM/ODM Capability
+    icon: O
+    icon_bg: purple
+    desc: "End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics."
+    metrics:
+      - label: Certifications
+        value: ISO 9001, BSCI, CE, REACH
+      - label: Shipping
+        value: FOB, CIF, DDP to 50+ countries
+    link: /factory/oem-capability
+    link_label: Full OEM services →
 workshops_section:
   tagline: ワークショップ
   title: 製造ワークショップ
@@ -39,7 +72,6 @@ workshops_section:
     - title: 品質テスト＆検査
       description: 完成したすべてのボートは、出荷前に必須の空気保持テスト、シーム剥離検証、全システムチェックを受けます。当社の品質ラボは生産から独立して運営され、管理部門に直接報告します。
       image: https://assets.afarer.com/images/afarer/factory/afarer-pressure-testing.webp
-
 equipment_section:
   tagline: 設備
   title: 主要製造設備
@@ -58,22 +90,20 @@ equipment_section:
       spec: フルカラーSUPデッキグラフィック
     - name: スクリーン印刷機
       spec: マルチカラーロゴ印刷
-
 qc_section:
   tagline: 品質管理
   title: テスト＆品質保証プロセス
   subtitle: すべてのボートは出荷前に必須テストを受けます。当社の品質ラボは生産から独立して運営され、管理部門に直接報告します。
   steps:
-    - step: '1'
+    - step: "1"
       title: 原材料検査
       desc: PVC、ハイパロン、ドロップステッチファブリックは、バッチが生産に入る前に引張テスト、ティア伝播、耐UV性検証を受けます。
-    - step: '2'
+    - step: "2"
       title: 48時間空気保持テスト
       desc: すべてのチューブチャンバーは定格圧力の125%に膨らませ、48時間保持されます。5%未満の圧力低下は自動拒否とシーム再検査をトリガーします。
-    - step: '3'
+    - step: "3"
       title: 負荷＆バランステスト
       desc: 完成したボートは最大定格容量まで積載され、安定性、乾舷、ハンドリングについてテストされます。各船舶は最終検査前に水上テストされます。
-
 oem_section:
   tagline: OEMプロジェクト
   title: ブランド＆OEMパートナーシップケーススタディ
@@ -88,7 +118,6 @@ oem_section:
     - challenge: オーストラリアのディストリビューターは、カスタムチューブカラー、ハイパロンアップグレードオプション、オーストラリア規格AS 1799への準拠を備えたCE認証RIBレンジを必要としていました。
       solution: 4つのチューブカラーバリエーションで試作品を生産、日本のサプライヤーからCSMハイパロンを調達、第三者AS 1799コンプライアンステストを調整。
       result: 3モデルのRIBレンジが豪州/ニュージーランド市場で発売。続いて12隻のパトロールRIBの政府入札に勝利。
-
 faq_section:
   tagline: FAQ
   title: B2B＆OEMよくある質問
@@ -101,48 +130,125 @@ faq_section:
       a: 標準リードタイムは、確認済みPOおよびデポジットから30〜45日です。カスタム金型開発には工具製作に15〜20日が追加されます。緊急注文および夏前の繁忙期（1月〜3月）の季節的なラッシュには迅速生産を提供しています。
     - q: FOB青島またはCIFで出荷できますか？
       a: はい。FOB青島、主要グローバル港へのCIF、および資格のあるパートナー向けDDPで出荷しています。当社の物流チームがコンテナ予約、輸出書類、通関手続きを管理します。EU、米国、豪州、アジア市場の50ヶ国以上に出荷しています。
-
-b2b_moq: '標準MOQ：モデルあたり5–10ユニット（SUP/カヤック/ドロップステッチ）。SUP MOQ：2–5ユニット。新しいパートナーシップ向けのトライアルオーダーを歓迎します。'
-
+b2b_moq: 標準MOQ：モデルあたり5–10ユニット（SUP/カヤック/ドロップステッチ）。SUP MOQ：2–5ユニット。新しいパートナーシップ向けのトライアルオーダーを歓迎します。
+production_flow:
+  tagline: Production Flow
+  title: From Material to Finished Boat
+  subtitle: Every boat passes through 6 production stages with QC checkpoints at every step. No shortcuts, no skipped inspections.
+  stages:
+    - stage: "01"
+      title: Material Receiving & Incoming QC
+      description: All incoming materials are logged by batch/lot number in our ERP system. PVC fabric rolls, drop-stitch cores, valves, adhesives, and hardware are quarantined until QC sign-off.
+      qc_check: Tensile strength (ASTM D751), tear resistance (ISO 4674), thickness gauge, adhesive viscosity, visual defect scan
+      qc_threshold: 100% of batches tested. Reject if tensile < 90% of spec, tear < spec min, or any visual defect
+      responsibility: Incoming QC team (3 inspectors)
+    - stage: "02"
+      title: CNC Cutting & Material Prep
+      description: Computer-optimized nesting lays out panels on PVC stock to minimize waste. Automatic CNC cutting machines maintain 0.1 mm positional accuracy.
+      qc_check: Dimensional check against CAD DXF files, edge quality inspection, panel count verification
+      qc_threshold: Every 20th panel measured. Tolerance ±0.5 mm. Reject batch if >2% out of tolerance
+      responsibility: Cutting workshop lead
+    - stage: "03"
+      title: Welding & Drop-Stitch Bonding
+      description: Drop-stitch cores are bonded to outer PVC laminates using heat lamination. Tube chambers are RF-welded or hot-air welded. Rail bands are triple-layer fusion bonded.
+      qc_check: Peel test every 50 units (ASTM D751), weld width measurement, hot-air temperature log review, visual seam inspection under backlight
+      qc_threshold: Peel strength min 8 N/cm. Weld width tolerance ±1 mm. Any visible channeling = reject
+      responsibility: Welding QC (2 inspectors per shift)
+    - stage: "04"
+      title: Assembly & Rigging
+      description: "Boats move to final assembly where all components are mated: hull + tubes, valves installed, D-rings, handles, fin boxes, and carry bag fitting. Each unit follows a 100-point assembly checklist."
+      qc_check: 100-point checklist sign-off per unit, valve function test (10 open/close cycles), hardware torque verification, visual inspection
+      qc_threshold: "Zero-defect policy on safety-critical items (valves, D-rings, handles). Minor cosmetic: AQL 2.5 (ISO 2859)"
+      responsibility: Assembly team lead + line QC
+    - stage: "05"
+      title: Pressure Testing & Quality Hold
+      description: Every chamber is inflated to 1.25× rated pressure (typically 20—5 PSI) and held for 24—8 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.
+      qc_check: 24h pressure hold log, sensor calibration verified daily, temperature-compensated pressure reading, seam re-test after repair
+      qc_threshold: Max 5% pressure drop over 24h at stable temp. Any chamber exceeding this = 100% re-test of entire production batch
+      responsibility: Quality lab (independent of production, reports to management)
+    - stage: "06"
+      title: Final Inspection & Packing
+      description: Final visual and functional inspection. Surface defects, color consistency, label/BIN verification, packaging integrity, and accessory completeness. Units are vacuum-packed, boxed, and palletized for container loading.
+      qc_check: Full visual inspection, accessory checklist per SKU, packaging drop test (1 m, random sample), label/bar code scan verification
+      qc_threshold: AQL 2.5 for major defects, AQL 4.0 for minor. Zero tolerance on safety defects. 100% of units visually inspected
+      responsibility: Final QC team (4 inspectors) + Packing team lead
+workforce:
+  tagline: Our People
+  title: Workforce & Expertise
+  engineers: 25+
+  engineers_detail: Engineers across R&D, mold design, materials lab, and production engineering. Average 7+ years in inflatable manufacturing.
+  shift_pattern: 2 shifts/day (07:00—5:30, 15:30—0:00). Optional night shift for urgent orders.
+  training: Monthly QC training, quarterly safety drills, annual skills assessment. New hires complete 40-hour induction before working on production line.
+  departments:
+    - name: R&D & Engineering
+      count: 25+
+      role: Product design, mold engineering, materials lab
+    - name: Cutting & Material Prep
+      count: 15
+      role: CNC cutting, panel preparation, material handling
+    - name: Welding & Lamination
+      count: 40
+      role: RF welding, hot-air welding, drop-stitch bonding
+    - name: SUP Core Bonding
+      count: 30
+      role: Drop-stitch lamination, heat bonding, rail band fusion
+    - name: Assembly & Rigging
+      count: 35
+      role: Final assembly, hardware installation, systems check
+    - name: Quality Control
+      count: 12
+      role: Incoming QC, in-process QC, final inspection, lab testing
+    - name: Logistics & Packing
+      count: 20
+      role: Packaging, container loading, export documentation
+    - name: Management & Admin
+      count: 15
+      role: Sales, procurement, HR, finance, compliance
+material_traceability:
+  tagline: Traceability
+  title: Material Tracking & Batch Control
+  description: Every batch of raw material is assigned a unique lot number in our ERP system. From arrival through production to the finished product, each boat's bill of materials links back to the original supplier batch. This enables full upstream traceability for any quality or compliance inquiry.
+  system: Custom ERP (Qingdao Vatrad Group internal system) + physical batch tags on each work order
+  coverage: 100% of production materials —PVC, Hypalon, drop-stitch fabric, adhesives, valves, hardware, packaging
+  records_retained: 10 years (per CE 2013/53/EU requirement)
+  suppliers:
+    - material: Marine-grade PVC
+      source: Chinese and Korean suppliers
+      certified: ISO 9001, REACH, RoHS
+    - material: Hypalon (CSM)
+      source: Japanese supplier
+      certified: ISO 9001, REACH
+    - material: Drop-stitch fabric
+      source: In-house weaving + external partner
+      certified: Internal QC + supplier ISO 9001
+    - material: Valves & Hardware
+      source: Chinese OEM suppliers
+      certified: ISO 9001, material certs per batch
+qc_dashboard:
+  tagline: QC by the Numbers
+  title: Quality Control Metrics
+  subtitle: Real pass/fail data from our production line. Our quality lab operates independently from production and reports directly to management.
+  stats:
+    - value: 100%
+      label: Units pressure-tested
+      detail: Every boat, every chamber, every batch
+    - value: <5%
+      label: Max allowable pressure drop
+      detail: Over 24h at 1.25× rated pressure
+    - value: AQL 2.5
+      label: Major defect threshold
+      detail: Per ISO 2859 sampling standard
+    - value: 24—8h
+      label: Pressure hold duration
+      detail: Depending on product category
+    - value: 1.25×
+      label: Test pressure vs rated
+      detail: Safety margin on every chamber
+    - value: 0%
+      label: Tolerance on safety defects
+      detail: Valves, D-rings, seams, buoyancy
 process_cta:
   title: 製造プロセスを見る
   desc: ボートが生産のすべての段階をたどる様子をご覧ください — 原材料から海に出られる状態まで。
   label: 生産プロセスを見る →
   link: /factory/process
-intelligence_tagline: Factory Intelligence
-intelligence_title: Explore Our Manufacturing Capabilities
-
-intelligence_cards:
-  - title: Production Capacity
-    icon: C
-    icon_bg: blue
-    desc: '12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.'
-    metrics:
-      - label: MOQ
-        value: 'SUP: 5-10 / SUP: 2-5'
-      - label: Lead Time
-        value: '30-45 days'
-    link: /factory/capacity
-    link_label: 'Full capacity details →'
-  - title: Quality Lab & Testing
-    icon: Q
-    icon_bg: green
-    desc: 'Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat.'
-    metrics:
-      - label: Lab Equipment
-        value: 'Tensile tester, temp chamber, leak tank'
-      - label: Standards
-        value: 'ISO 9001, CE, AS 1799'
-    link: /factory/quality-lab
-    link_label: 'Lab procedures & equipment →'
-  - title: OEM/ODM Capability
-    icon: O
-    icon_bg: purple
-    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
-    metrics:
-      - label: Certifications
-        value: 'ISO 9001, BSCI, CE, REACH'
-      - label: Shipping
-        value: 'FOB, CIF, DDP to 50+ countries'
-    link: /factory/oem-capability
-    link_label: 'Full OEM services →'

@@ -1,10 +1,6 @@
-﻿hero:
-  tagline: Kontakt
-  title: Kontakt afarer
-  subtitle: Vi er her for at hjælpe dig. Kontakt os vedrørende produktspørgsmål, OEM/ODM partnerskaber eller andre spørgsmål.
-  image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
-  imageAlt: Kontakt afarer
-
+hero_text:
+  tagline: Contact
+  title: GET IN TOUCH
 contact_form:
   id: form
   title: Send os en besked
@@ -13,9 +9,9 @@ contact_form:
   submit_button: Send forespørgsel →Få et tilbud
   success_message: Tak! Din besked er landet i vores indbakke. Vi svarer inden for én arbejdsdag.
   error_message: Noget gik galt ved afsendelse af din besked. Prøv igen eller send os en e-mail direkte.
-  default_country_code: '+1'
+  default_country_code: "+1"
   captcha:
-    label: 'Anti-spam: løs venligst følgende'
+    label: "Anti-spam: løs venligst følgende"
   fields:
     - name: firstName
       label: Fornavn
@@ -51,22 +47,22 @@ contact_form:
       row: 6
       type: select
       options:
-        - value: ''
+        - value: ""
           label: Vælg forventet mængde...
         - value: sample
           label: Kun prøver / prototyper
-        - value: '5-10'
+        - value: 5-10
           label: 50—00 enheder (standard MOQ)
-        - value: '100-500'
+        - value: 100-500
           label: 100—00 enheder
-        - value: '500-plus'
+        - value: 500-plus
           label: 500+ enheder (volumenpriser)
     - name: customization
       label: Brug for tilpasning?
       row: 7
       type: select
       options:
-        - value: ''
+        - value: ""
           label: Vælg tilpasningstype...
         - value: none
           label: Standardprodukt (uden tilpasning)
@@ -81,7 +77,7 @@ contact_form:
       row: 8
       type: select
       options:
-        - value: ''
+        - value: ""
           label: Vælg produktkategori...
         - value: all
           label: Alle produkter / fuld katalog

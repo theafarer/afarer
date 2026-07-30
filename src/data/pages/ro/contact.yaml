@@ -1,10 +1,6 @@
-﻿hero:
+hero_text:
   tagline: Contact
-  title: Contactează afarer
-  subtitle: Suntem aici să te ajutăm. Contactează-ne pentru întrebări despre produse, parteneriate OEM/ODM sau orice altceva.
-  image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
-  imageAlt: Contactează afarer
-
+  title: GET IN TOUCH
 contact_form:
   id: form
   title: Trimiteți-ne un mesaj
@@ -13,9 +9,9 @@ contact_form:
   submit_button: Trimite solicitarea →Obține o ofertă
   success_message: Mulțumim! Mesajul dvs. a ajuns în căsuța noastră poștală. Vom răspunde într-o zi lucrătoare.
   error_message: Ceva a mers greșit la trimiterea mesajului. Încercați din nou sau trimiteți-ne un e-mail direct.
-  default_country_code: '+1'
+  default_country_code: "+1"
   captcha:
-    label: 'Anti-spam: rezolvați următoarea cerință'
+    label: "Anti-spam: rezolvați următoarea cerință"
   fields:
     - name: firstName
       label: Prenume
@@ -51,22 +47,22 @@ contact_form:
       row: 6
       type: select
       options:
-        - value: 'Suport clienți'
+        - value: Suport clienți
           label: Selectați volumul estimat...
         - value: sample
           label: Doar mostre / prototipuri
-        - value: '5-10'
+        - value: 5-10
           label: 50—00 unități (MOQ standard)
-        - value: '100-500'
+        - value: 100-500
           label: 100—00 unități
-        - value: '500-plus'
+        - value: 500-plus
           label: 500+ unități (prețuri volumetrice)
     - name: customization
       label: Aveți nevoie de personalizare?
       row: 7
       type: select
       options:
-        - value: 'Asistență tehnică'
+        - value: Asistență tehnică
           label: Selectați tipul de personalizare...
         - value: none
           label: Produs standard (fără personalizare)
@@ -81,7 +77,7 @@ contact_form:
       row: 8
       type: select
       options:
-        - value: 'Vânzări'
+        - value: Vânzări
           label: Selectați categoria de produs...
         - value: all
           label: Toate produsele / catalog complet

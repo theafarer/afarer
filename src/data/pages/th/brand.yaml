@@ -1,13 +1,32 @@
 hero:
-  tagline: แบรนด์
-  title: แบรนด์ afarer
-  subtitle: คุณภาพ นวัตกรรม และความน่าเชื่อถือ — นี่คือ afarer
-story:
-  tagline: เรื่องราวของเรา
-  title: สร้างความไว้วางใจตั้งแต่ 2012
-  body: |
-    afarer ก่อตั้งขึ้นด้วยวิสัยทัศน์ที่ชัดเจน — เพื่อผลิตเรือเป่าลมระดับพรีเมียมและอุปกรณ์กีฬาทางน้ำที่ทนทานต่อสภาพจริง ในกว่าทศวรรษ เราเติบโตจากโรงงานเล็ก ๆ สู่ผู้ผลิตที่ได้รับการยอมรับระดับโลก
-mission:
-  tagline: ภารกิจ
-  title: ภารกิจของเรา
-  body: มอบผลิตภัณฑ์กีฬาทางน้ำคุณภาพสูง นวัตกรรม และราคาเข้าถึงได้ ที่ทำให้กิจกรรมทางน้ำเข้าถึงได้สำหรับทุกคน
+  tagline: Brand
+  title: '{BRAND}'
+  subtitle: Ocean Performance for Every Surfer
+  cta: Explore Gear →
+  cta_link: /products
+  secondary_cta: Learn Surfing
+  secondary_cta_link: /guides
+
+position:
+  tagline: Position
+  subtitle: Ocean Performance for Every Surfer
+
+products_section:
+  tagline: Products
+  cta: All Products →
+  cta_link: /products
+
+global_section:
+  tagline: Global
+  title: Available in {count} Regions
+
+social_section:
+  tagline: Social
+  title: What surfers are reading
+  read_guide: Read guide →
+
+cta_section:
+  title: Start your ocean journey
+  subtitle: Every product CE certified. Backed by warranty. Designed for real surf.
+  cta_suffix: '→'
+  secondary_cta: About {BRAND}

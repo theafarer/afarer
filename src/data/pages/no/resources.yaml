@@ -1,57 +1,50 @@
-﻿hero_text:
-  tagline: Resources
-  title: 'Nedlastningssenter & Kjøperguider'
-  subtitle: 'Få tilgang til produktkataloger, OEM-guider, kjøpersjekklister og teknisk dokumentasjon for å ta informerte innkjøpsbeslutninger.'
-features3_downloads:
-  tagline: Downloads
-  title: 'Produktdokumentasjon<br />& Kjøperressurser'
-  isBeforeContent: false
-  columns: 2
-  items:
-    - title: '2026 Marine Product Catalog'
-      description: 'Komplett produktspekter inkludert SUP-båter, oppblåsbare båter, SUP-brett, kajakker og tilbehør. Spesifikasjoner, konfigurasjoner og alternativer. PDF-format.'
-      icon: tabler:file-text
-    - title: 'OEM Manufacturing Guide'
-      description: 'Alt du trenger å vite om OEM/ODM-partnerskap: prosessoversikt, minimumsordremengder, tilpasningsmuligheter, kvalitetskontroll og frakt.'
-      icon: tabler:building-factory
-    - title: 'SUP Boat Buyer Guide'
-      description: 'Hvordan velge riktig SUP: skrogmaterialer, slangematerialer, motorvalg, størrelseshensyn og konfigurasjonsalternativer for ulike applikasjoner.'
-      icon: tabler:file-description
-    - title: 'SUP Supplier Checklist'
-      description: 'Viktige hensyn ved valg av SUP-brettprodusent: kvalitetsindikatorer, sertifiseringskrav, MOQ-hensyn og hva du skal se etter i en fabrikkaudit.'
-      icon: tabler:clipboard-check
-    - title: 'Inflatable Boat Material Guide'
-      description: 'PVC vs Hypalon: sammenligning av holdbarhet, UV-bestandighet, levetid, reparasjonsmuligheter og kostnadshensyn for ulike marine applikasjoner.'
-      icon: tabler:files
-    - title: 'Custom Manufacturing Brief Template'
-      description: 'Last ned vår produktbrief-mal. Fyll inn dine krav og returner den til oss for et tilbud og gjennomførbarhetsvurdering samme uke.'
-      icon: tabler:template
-faqs:
-  title: Frequently Asked Questions
-  subtitle: 'Vanlige spørsmål om våre produkter, produksjonsprosess og partnerskapsmodell.'
-  columns: 2
-  items:
-    - title: What is the minimum order quantity?
-      description: 'MOQ varierer etter produktkategori. SUP-båter starter vanligvis fra 10 enheter per modell. SUP-brett fra 50 enheter. Kontakt salgsteamet vårt for produktspesifikk MOQ-informasjon.'
-      icon: tabler:help-circle
-    - title: Can I get samples before placing an order?
-      description: 'Ja. afarer tilbyr prøveproduksjon for evaluering før masseproduksjon. Prøvekostnader er forhandlingsbare og krediteres ofte den første produksjonsordren.'
-      icon: tabler:package
-    - title: What payment terms are available?
-      description: 'Standardvilkår er 30% depositum ved bestilling, 70% før forsendelse. LC-vilkår tilgjengelig for kvalifiserte kunder. Kontakt økonomiavdelingen vår for å diskutere ordninger.'
-      icon: tabler:currency-dollar
-    - title: How long does production take?
-      description: 'Typiske ledetider: SUP-båter 30-45 dager, SUP-brett 20-30 dager, oppblåsbare båter 25-35 dager. Tilpasset utvikling legger til 15-30 dager for prototyping.'
-      icon: tabler:calendar-clock
-    - title: What certifications do your products carry?
-      description: 'CE-sertifisering for EU-markeder, US Coast Guard godkjent produksjon, ISO-kvalitetssystem, BSCI-overholdelse og REACH-materialoverholdelse.'
-      icon: tabler:certificate
-    - title: Do you offer custom packaging and branding?
-      description: 'Ja. Vi tilbyr tilpasset emballasje med din logo, farger og merkevareidentitet. MOQ for tilpasset emballasje avhenger av produktkategorien.'
-      icon: tabler:color-swatch
+meta:
+  title: B2B Resources & Downloads | {SITE}
+  description: Download OEM manufacturing guides, product catalogs, quality reports, and ROI calculators for inflatable SUP businesses.
+hero:
+  tagline: Resource Center
+  title: Tools & Resources<br />For SUP Business Partners
+  subtitle: Download OEM guides, product catalogs, quality reports, and use our ROI calculator to plan your SUP fleet investment.
+resources:
+  - title: 2026 OEM/ODM Product Catalog
+    description: Complete product lineup with specifications, pricing tiers, MOQ, and customization options for B2B partners.
+    icon: tabler:file-text
+    type: catalog
+    link: /media
+    cta: Download Catalog
+  - title: Private Label SUP Brand Guide
+    description: Step-by-step guide to launching your own SUP brand — from market research and design to production and global delivery.
+    icon: tabler:book
+    type: guide
+    link: /news/private-label-sup-oem-guide
+    cta: Read Guide
+  - title: SUP Fleet ROI Calculator
+    description: Estimate your resort or club SUP fleet investment, projected revenue, and payback period with our interactive calculator.
+    icon: tabler:calculator
+    type: tool
+    link: "#roi-calculator"
+    cta: Calculate ROI
+  - title: Quality & Certification Report
+    description: CE certification documents, ISO 9001 quality management, UV aging test results, and pressure hold test data.
+    icon: tabler:certificate
+    type: report
+    link: /evidence
+    cta: View Reports
+  - title: Factory Capability Brochure
+    description: Virtual tour of our 12,000 m² manufacturing facility with production line details and quality control processes.
+    icon: tabler:building-factory
+    type: brochure
+    link: /factory
+    cta: Tour Factory
+  - title: Resort Fleet Revenue Guide
+    description: Commercial SUP fleet ROI analysis with pricing models, utilization rates, and real case study results from 5-star resorts.
+    icon: tabler:chart-bar
+    type: guide
+    link: /news/commercial-sup-fleet-roi-resorts
+    cta: Read Guide
 cta:
-  title: 'Trenger du hjelp til å finne riktig ressurs?'
-  subtitle: 'Kontakt teamet vårt for personlig veiledning om produktvalg, OEM-partnerskap eller tekniske spesifikasjoner.'
+  title: Trenger du hjelp til å finne riktig ressurs?
+  subtitle: Kontakt teamet vårt for personlig veiledning om produktvalg, OEM-partnerskap eller tekniske spesifikasjoner.
   actions:
     - variant: primary
       text: Contact our team
