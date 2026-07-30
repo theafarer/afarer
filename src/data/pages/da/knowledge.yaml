@@ -1,51 +1,51 @@
 hero:
-  tagline: Vidensgraf
-  title: Vandudforskningsviden
+  tagline: Knowledge Graph
+  title: Water Exploration Knowledge
   subtitle: |
-    En struktureret vidensbase, der dækker oppustelig SUP-teknologi,<br />
-    vandsikkerhed, bådteknik og eventyrplanlægning.
-  taglineSection: Udforsk. Lær. Gå med tillid.
+    A structured knowledge base covering inflatable SUP technology,<br />
+    water safety, boat engineering, and adventure planning.
+  taglineSection: Explore. Learn. Go with confidence.
 clusters:
-  tagline: Vidensklynger
-  title: Udforsk efter emne
-  subtitle: Dybdegående dyk ned i teknologien, sikkerheden og færdighederne bag hvert afarer-produkt.
+  tagline: Knowledge Clusters
+  title: Explore by topic
+  subtitle: Deep dives into the technology, safety, and skills behind every afarer product.
   items:
-    - title: SUP-viden
-      description: Fra valg af dit første bræt til avancerede turteknikker —alt om paddleboarding.
+    - title: SUP Buying Guides
+      description: From choosing your first board to advanced touring techniques —everything about stand-up paddle boarding.
       icon: tabler:lifebuoy
       topics:
-        - Sådan vælger du dit første oppustelige SUP
-        - Bedste SUP-størrelse til begyndere
-        - Hvor svært er paddleboarding?
-        - Oppustelig vs hård plade sammenligning
-        - SUP-sikkerhedstjekliste
-    - title: Bådviden
-      description: Tekniske guider om oppustelige både, SUP'er, joller og kajakker —teknik, materialer og drift.
-      icon: tabler:sailboat
-      topics:
-        - Oppustelige bådtyper forklaret
-        - PVC vs Hypalon sammenligning
-        - SUP vs Jolle sammenligning
-        - Drop-stitch teknologi dybdegående
-        - Marine materialevidenskabsguide
-    - title: Sikkerhedsviden
-      description: Væsentlig sikkerhedsviden for enhver padler —fra PFD-valg til vejrlæsning til selvbjergningsteknikker.
-      icon: tabler:shield
-      topics:
-        - SUP-sikkerhedstjekliste
-        - Har du brug for en redningsvest?
-        - Sikkerhedsguide til havpadling
-        - Flodsikkerhed for oppustelige kajakker
-        - Vejr- og vandforholdsbevidsthed
-    - title: Teknologi
-      description: Ingeniørarbejdet bag afarer-produkter —materialer, konstruktionsmetoder og kvalitetstestning.
+        - How to choose your first inflatable SUP
+        - SUP size and weight capacity guide
+        - Best SUP for beginners, touring, yoga, and racing
+        - Common SUP buying mistakes to avoid
+        - Inflatable vs hard board comparison
+    - title: SUP Engineering & Technology
+      description: Technical guides on inflatable SUP boards —materials, construction methods, and manufacturing processes.
       icon: tabler:microscope
       topics:
-        - Marine-grade PVC-teknologi
-        - Drop-stitch kerne forklaret
-        - Hvorfor PSI betyder noget for oppustelige SUP'er
-        - RF-svejsning vs klæbebinding
-        - Kvalitetstestning og certificering
+        - Drop-stitch technology deep dive
+        - Military-grade PVC specifications
+        - Fusion lamination vs adhesive bonding
+        - EVA foam technology and artwork methods
+        - SUP valve types and fin systems
+    - title: SUP Safety & Maintenance
+      description: Essential safety knowledge for every paddler —from PFD selection to weather reading to board care and repair.
+      icon: tabler:shield
+      topics:
+        - SUP safety checklist and PFD requirements
+        - Multi-chamber safety for remote water
+        - SUP inflation PSI guide
+        - Board storage and winter care
+        - Inflatable repair techniques
+    - title: SUP Skills & Techniques
+      description: Paddling techniques, touring skills, and fitness training for all skill levels.
+      icon: tabler:sailboat
+      topics:
+        - Beginner paddling techniques
+        - Intermediate stroke mastery
+        - Touring and expedition planning
+        - SUP fitness and racing training
+        - Whitewater and river running skills
     - title: SUP Lifestyle & Special Uses
       description: Specialized SUP activities —yoga, fishing, dogs, families, and travel tips.
       icon: tabler:heart
@@ -65,19 +65,19 @@ clusters:
         - SUP board materials explained
         - UV printing vs EVA block artwork
 featured_guides:
-  tagline: Udvalgte guider
-  title: Mest populære vidensressourcer
+  tagline: Featured Guides
+  title: Most popular knowledge resources
   items:
-    - title: SUP-grundlæggende
+    - title: SUP Basics
       href: /learn/sup
-    - title: Oppustelig vs hård plade
+    - title: Inflatable vs Hard Board
       href: /compare/inflatable-vs-hardboard
-    - title: Vandsikkerhedsguide
+    - title: Water Safety Guide
       href: /learn/water-safety
-    - title: Materialereference
+    - title: Materials Reference
       href: /learn/materials
-    - title: SUP-størrelsesguide
-      href: /size-guide
+    - title: SUP Buying Guide
+      href: /guides/how-to-choose-your-sup
     - title: SUP Size Guide
       href: /guides/sup-size-guide
     - title: SUP Tech Center
@@ -89,11 +89,11 @@ featured_guides:
     - title: Paddle Techniques
       href: /guides/paddling-techniques
 cta:
-  title: Begynd at udforske
-  subtitle: Dyk ned i vores vidensbase og få de oplysninger, du har brug for til dit næste vandeventyr.
+  title: Start exploring
+  subtitle: Dive into our knowledge base and get the information you need for your next water adventure.
   actions:
     - variant: primary
-      text: Gennemse alle guider
+      text: Browse all guides
       href: /academy
-    - text: Udforsk vidensgraf
+    - text: Explore Knowledge Graph
       href: /knowledge

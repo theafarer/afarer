@@ -1,73 +1,70 @@
 hero:
-  tagline: 'Su Keşif Bilgisi'
-  title: 'Öğrenin'
+  tagline: Water Exploration Knowledge
+  title: Learn
   subtitle: |
-    Rehberler, eğitimler ve derinlemesine bilgiler —suyu güvenle keşfetmek<br />
-    için ihtiyacınız olan her şey. İlk SUP''inizi seçmekten ileri tekniklerde ustalaşmaya kadar.
-  taglineSection: 'Her kürekçi için bilgi. Başlangıç seviyesinden profesyonele.'
-
+    Guides, tutorials, and deep dives —everything you need to explore<br />
+    water with confidence. From choosing your first SUP to mastering advanced techniques.
+  taglineSection: Knowledge for every paddler. From beginner to professional.
 featured:
-  tagline: 'Öne Çıkan Konular'
-  title: 'Öğrenme yolculuğunuza başlayın'
-  subtitle: 'İster su sporlarında yeni olun ister seviyenizi yükseltmek isteyin, rehberlerimiz size yardımcı olur.'
+  tagline: Featured Topics
+  title: Start your learning journey
+  subtitle: Whether you are new to water sports or looking to level up, our guides have you covered.
   items:
-    - title: 'SUP Temelleri'
-      description: 'Bir başlangıç seviyesinin bilmesi gereken her şey —board türleri, pala boyutlandırması, duruş ve ilk gün ipuçları.'
-      icon: 'tabler:lifebuoy'
-      href: '/learn/sup'
-    - title: 'Şişme vs Sert Board'
-      description: 'Hangisi size uygun? Taşınabilirlik, performans, dayanıklılık ve maliyeti yan yana karşılaştırıyoruz.'
-      icon: 'tabler:arrows-left-right'
-      href: '/compare/inflatable-vs-hardboard'
-    - title: 'Su Güvenliği'
-      description: 'Her kürekçinin sahip olması gereken temel güvenlik bilgisi —hava durumu, can yelekleri, kendi kendine kurtarma ve daha fazlası.'
-      icon: 'tabler:shield'
-      href: '/learn/water-safety'
-    - title: 'Malzeme Rehberi'
-      description: 'PVC vs Hypalon, drop-stitch teknolojisi, denye değerleri —ekipmanınızın nelerden yapıldığını anlayın.'
-      icon: 'tabler:flask'
-      href: '/learn/materials'
-    - title: 'SUP Boyut Rehberi'
-      description: 'Kilonuz, beceriniz ve kürek stiliniz için doğru board uzunluğunu, genişliğini ve hacmini bulun.'
-      icon: 'tabler:ruler'
-      href: '/size-guide'
-    - title: 'Orta Seviye Teknikler'
-      description: 'Gelişmiş kürek darbeleri, dönüş teknikleri ve dalgalı su kullanımı ile küreğinizi bir üst seviyeye taşıyın.'
-      icon: 'tabler:droplet'
-      href: '/v2/intermediate-techniques'
-
+    - title: SUP Basics
+      description: Everything a beginner needs to know —board types, paddle sizing, stance, and first-day tips.
+      icon: tabler:lifebuoy
+      href: /learn/sup
+    - title: Inflatable vs Hard Board
+      description: Which is right for you? We compare portability, performance, durability, and cost side by side.
+      icon: tabler:arrows-left-right
+      href: /compare/inflatable-vs-hardboard
+    - title: Water Safety
+      description: Essential safety knowledge every paddler should have —weather, PFDs, self-rescue, and more.
+      icon: tabler:shield
+      href: /learn/water-safety
+    - title: Materials Guide
+      description: PVC vs Hypalon, drop-stitch technology, denier ratings —understand what your gear is made of.
+      icon: tabler:flask
+      href: /learn/materials
+    - title: SUP Size Guide
+      description: Find the right board length, width, and volume for your weight, skill, and paddling style.
+      icon: tabler:ruler
+      href: /size-guide
+    - title: Intermediate Techniques
+      description: Step up your paddling with advanced strokes, turning techniques, and rough-water handling.
+      icon: tabler:droplet
+      href: /v2/intermediate-techniques
 categories:
-  tagline: 'Kategoriler'
-  title: 'Konuya göre keşfedin'
-  subtitle: 'Tüm öğrenme içeriği, beceri seviyesine ve ilgi alanına göre düzenlenmiştir.'
+  tagline: Categories
+  title: Explore by topic
+  subtitle: All learning content organized by skill level and interest.
   columns:
-    - title: 'Başlangıç'
+    - title: Beginner
       items:
-        - 'SUP Temelleri —buradan başlayın'
-        - 'Şişme vs Sert Board'
-        - 'Su Güvenliği Temelleri'
-        - "SUP'inizi Nasıl Seçersiniz"
-        - 'Pompa ve Paket Rehberi'
-    - title: 'Orta Seviye'
+        - SUP Basics —start here
+        - Inflatable vs Hard Board
+        - Water Safety Essentials
+        - How to Choose Your SUP
+        - Pump & Pack Guide
+    - title: Intermediate
       items:
-        - 'Kürek Teknikleri'
-        - 'Şişme Teknolojisi'
-        - 'Malzeme Referansı'
-        - 'PVC vs Hypalon Karşılaştırması'
-        - 'Drop-Stitch Çekirdek Açıklaması'
-    - title: 'İleri ve Profesyonel'
+        - Paddling Techniques
+        - Inflatable Technology
+        - Materials Reference
+        - PVC vs Hypalon Comparison
+        - Drop-Stitch Core Explained
+    - title: Advanced & Professional
       items:
-        - 'Filo Operasyonları'
-        - 'Ticari Sınıf Ekipman'
-        - 'Güvenlik ve Kurtarma Protokolleri'
-        - 'Özel Yapımlar ve OEM'
-
+        - Fleet Operations
+        - Commercial-Grade Equipment
+        - Safety & Rescue Protocols
+        - Custom Builds & OEM
 cta:
-  title: 'Hala sorularınız mı var?'
-  subtitle: 'Ekipman, güvenlik ve teknikler hakkında kişiselleştirilmiş yanıtlar için AI rehberimize sorun.'
+  title: Still have questions?
+  subtitle: Ask our AI guide for personalized answers about gear, safety, and techniques.
   actions:
     - variant: primary
-      text: "Su Danışmanı AI'ya Sorun"
+      text: Ask the Water Advisor AI
       href: '#ai-guide'
-    - text: 'Tüm rehberlere göz atın'
-      href: '/academy'
+    - text: Browse all guides
+      href: /academy

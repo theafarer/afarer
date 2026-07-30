@@ -1,112 +1,106 @@
-﻿hero:
-  tagline: Sobre nós
+hero:
+  tagline: About us
   image:
     src: https://assets.afarer.com/images/afarer/factory/afarer-factory-building.webp
-    alt: Oficina afarer
+    alt: afarer factory and workshop
   title: |
-    Engenharia naval, <br />
-    feita à <span class="text-accent dark:text-white">afarer</span>
-  subtitle: 'Começámos numa oficina costeira com um barco e uma convicção teimosa: os produtos navais devem ser projetados como se fizessem diferença, porque fazem. Hoje enviamos para mais de 40 países, mas cada casco ainda passa pelas mesmas mãos que fundaram a empresa.'
-
+    Marine engineering, <br />
+    built the <span class="text-accent dark:text-white">afarer</span> way
+  subtitle: 'We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company.'
 stats:
-  title: Em números
+  title: By the numbers
   columns: 4
   stats:
-    - title: Cascos entregues
-      amount: '2,400+'
-    - title: Países de destino
+    - title: Hulls delivered
+      amount: 2,400+
+    - title: Countries shipped
       amount: '40'
-    - title: Anos de experiência combinada
+    - title: Years of combined experience
       amount: '60'
-    - title: Resposta média de garantia (horas)
+    - title: Average warranty response (hours)
       amount: '24'
-
 features3_what_we_build:
-  title: O que construímos
-  subtitle: 'Começámos numa oficina costeira com um barco e uma convicção teimosa: os produtos navais devem ser projetados como se fizessem diferença, porque fazem. Hoje enviamos para mais de 40 países, mas cada casco ainda passa pelas mesmas mãos que fundaram a empresa.'
+  title: What we build
+  subtitle: 'We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company.'
   columns: 3
   isBeforeContent: true
   items:
-    - title: Barcos SUP
-      description: RIBs de casco de alumínio de 3,3 m a 7,5 m. Projetados para patrulha, mergulho, pesca e uso familiar.
+    - title: SUP boards
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
       icon: tabler:ship
-    - title: Barcos insufláveis
-      description: SUPs insufláveis em PVC e Hypalon de 2,4 m a 4,2 m. Leves, resistentes e fáceis de arrumar.
+    - title: Inflatable SUPs
+      description: PVC inflatable SUP boards from 9 ft to 12 ft. Light, tough and easy to stow.
       icon: tabler:speedboat
-    - title: Tenders para superiates
-      description: RIBs compactos e de alta especificação construídos à medida para combinar com o visual do seu iate.
+    - title: Premium SUP packages
+      description: Compact, high-spec SUPs custom-built to match your brand or fleet requirements.
       icon: tabler:crown
-
 features3_more:
   columns: 3
   isAfterContent: true
   items:
-    - title: Acessórios
-      description: Remos, bombas, capas, sacos estanques, depósitos de combustível e eletrônica. Tudo compatível com os nossos barcos.
+    - title: Accessories
+      description: Paddles, pumps, covers, dry-bags and electronics. All matched to our boards.
       icon: tabler:package
-    - title: Reequipamento e reparação
-      description: Substituição de tubos, retrofitting de eletrônica e upgrades de motor na nossa oficina.
+    - title: Refit & repair
+      description: In-house board repair, pad replacement and accessory upgrades.
       icon: tabler:tool
-    - title: Construções personalizadas
-      description: Projeto projeto-a-projeto para clientes comerciais, científicos e militares.
+    - title: Custom builds
+      description: Project-by-project design for commercial, scientific and military customers.
       icon: tabler:hammer
   image:
     src: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-2.webp
-    alt: Construção de barco personalizado
-
+    alt: Boat design and engineering discussion
 steps2_values:
-  title: Os nossos valores
-  subtitle: Três princípios que moldam cada produto desde o primeiro dia.
+  title: Our values
+  subtitle: Three principles that have shaped every product since day one.
   items:
-    - title: Construir como se levasse a sua família
-      description: Cada casco, soldadura e fixador é tratado como se fosse para a nossa própria família usar.
+    - title: Build like it carries your family
+      description: Every hull, weld and fastener is treated as if our own families will use it.
       icon: tabler:heart
-    - title: Projetar antes de vender
-      description: RIBs de casco de alumínio de 3,3 m a 7,5 m. Projetados para patrulha, mergulho, pesca e uso familiar.
+    - title: Engineer before we sell
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
       icon: tabler:settings
-    - title: Apoio que supera a garantia
-      description: Cascos com vinte anos ainda nos ligam a pedir peças, e nós continuamos a atender.
+    - title: Support that outlasts the warranty
+      description: Twenty-year-old hulls still call us for spare parts, and we still pick up.
       icon: tabler:headset
-
 steps2_milestones:
-  title: Marcos
-  subtitle: Uma versão resumida da história da afarer.
+  title: Milestones
+  subtitle: A short version of the afarer story.
   isReversed: true
   items:
-    - title: Fundada numa oficina costeira
-      description: Começada por dois arquitetos navais com uma CNC e uma ideia teimosa.
+    - title: Founded in a coastal workshop
+      description: Started by two naval architects with a CNC mill and a stubborn idea.
       icon: tabler:building-factory
-    - title: Primeiros 1 000 cascos entregues
-      description: Atingido no sétimo ano, sobretudo pelo passa-palavra e clientes recorrentes.
+    - title: First 1,000 hulls delivered
+      description: Reached in our seventh year, mostly through word of mouth and repeat customers.
       icon: tabler:circle-check
-    - title: Programa de exportação internacional
-      description: Agora a enviar para mais de 40 países com parceiros de apoio localizados em cinco continentes.
+    - title: International export programme
+      description: Now shipping to 40+ countries with localised support partners on five continents.
       icon: tabler:world
-
 features2_locations:
-  title: As nossas localizações
-  tagline: Encontre-nos
+  title: Our locations
+  tagline: Find us
   columns: 3
   items:
-    - title: Sede e oficina
-      description: RIBs de casco de alumínio de 3,3 m a 7,5 m. Projetados para patrulha, mergulho, pesca e uso familiar.
-    - title: Centro de assistência UE
-      description: RIBs de casco de alumínio de 3,3 m a 7,5 m. Projetados para patrulha, mergulho, pesca e uso familiar.
-    - title: Rede de parceiros APAC
-      description: Parceiros de assistência autorizados na Austrália, Japão, Singapura e Hong Kong.
-brand_hub_tagline: Marca
-brand_hub_title: Explore a nossa marca
-brand_hub_subtitle: Aprofunde-se na nossa experiência em engenharia naval, presença global e os princípios que nos orientam.
+    - title: Headquarters & workshop
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+    - title: EU service centre
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+    - title: APAC partner network
+      description: Authorised service partners in Australia, Japan, Singapore and Hong Kong.
+brand_hub_tagline: Brand
+brand_hub_title: Explore Our Brand
+brand_hub_subtitle: Dive deeper into our SUP engineering expertise, global presence, and the principles that drive us.
 brand_hub_cards:
-  - title: Experiência Naval
-    desc: 'Décadas de ciência de materiais, fabricação de precisão e testes reais —desde a fabricação de PVC/Hypalon até o design de casco em V profundo e tecnologia drop-stitch.'
+  - title: Marine Expertise
+    desc: Decades of material science, precision manufacturing, and real-world testing —from PVC/Hypalon fabrication to deep-V hull design and drop-stitch technology.
     link: /brand-marine-expertise
-    link_label: 'Saiba mais →'
-  - title: Presença Global
-    desc: 'Envio para mais de 50 países a partir da nossa unidade em Qingdao com parceiros de serviço autorizados na Europa, Ásia-Pacífico e Américas.'
+    link_label: Learn more →
+  - title: Global Presence
+    desc: Shipping to 50+ countries from our Qingdao facility with authorized service partners across Europe, Asia-Pacific, and the Americas.
     link: /brand-global-presence
-    link_label: 'Saiba mais →'
-  - title: Por que a afarer
-    desc: 'Integração vertical, dupla certificação (ISO 9001 + BSCI), conformidade CE e MOQs baixos —construído para marcas, distribuidores e agências governamentais.'
+    link_label: Learn more →
+  - title: Why afarer
+    desc: Vertical integration, dual certification (ISO 9001 + BSCI), CE compliance, and low MOQs —built for brands, distributors, and government agencies.
     link: /brand-why-afarer
-    link_label: 'Saiba mais →'
+    link_label: Learn more →

@@ -1,65 +1,65 @@
 hero:
   tagline: afarer Academy
-  title: Kenniscentrum
-  subtitle: Handleidingen en tutorials voor elk vaardigheidsniveau —van SUP-basis tot geavanceerde reddingstechnieken
+  title: Learning Center
+  subtitle: Guides and tutorials for every skill level —from SUP basics to advanced rescue techniques
 categories:
   - level: Beginner
     color: from-green-500 to-emerald-600
     badge: bg-green-100 text-green-700
     guides:
-      - title: SUP-basis
-        desc: Leer de basis van staand peddelen —houding, peddeltechniek en balans.
+      - title: SUP Basics
+        desc: Learn the fundamentals of stand-up paddleboarding —stance, stroke technique, and balance.
         slug: sup-basics
-      - title: Peddeltechnieken
-        desc: Voorwaarts peddelen, achterwaarts peddelen, trekpeddel en lage steun —beheers de basispeddelbewegingen.
+      - title: Paddle Techniques
+        desc: Forward stroke, sweep stroke, draw stroke, and low brace —master the essential paddle moves.
         slug: paddle-techniques
-      - title: Veiligheid voorop
-        desc: Essentiële veiligheidspraktijken, waaronder weerscontrole, PFD-gebruik, leiblijnregels en zelfredding.
+      - title: Safety First
+        desc: Essential safety practices including weather checks, PFD use, leash rules, and self-rescue.
         slug: safety-first
-  - level: Gemiddeld
+  - level: Intermediate
     color: from-blue-500 to-indigo-600
     badge: bg-blue-100 text-blue-700
     guides:
-      - title: Basis toerkajakken
-        desc: Meerdaagse tochten plannen —navigatie, hydratatie, tempo en windvoorspellingen lezen.
+      - title: Touring Essentials
+        desc: Planning multi-hour paddles —navigation, hydration, pacing, and reading wind forecasts.
         slug: touring-essentials
-      - title: Weer lezen
-        desc: Marinevoorspellingen interpreteren, wolkenpatronen herkennen en de invloed van wind op water begrijpen.
+      - title: Weather Reading
+        desc: Interpret marine forecasts, identify cloud patterns, and understand wind effects on water.
         slug: weather-reading
-      - title: Navigatiebasis
-        desc: Kaartlezen, kompas gebruiken, GPS-waypoints en routeplanning voor kustnavigatie.
+      - title: Navigation Basics
+        desc: Chart reading, compass use, GPS waypoints, and route planning for coastal paddling.
         slug: navigation-basics
-      - title: Getijdenbewustzijn
-        desc: Inzicht in getijdencycli, stromingen en hun invloed op vertrektijd en route.
+      - title: Tidal Awareness
+        desc: Understanding tide cycles, currents, and how they affect launch timing and routing.
         slug: tidal-awareness
-  - level: Gevorderd
+  - level: Advanced
     color: from-purple-500 to-violet-600
     badge: bg-purple-100 text-purple-700
     guides:
-      - title: Meerdaagse tochten plannen
-        desc: Expeditielogistiek —uitrustingskeuze, maaltijdplanning, veiligheidsprotocollen en noodcontacten.
+      - title: Multi-Day Trip Planning
+        desc: Expedition logistics —gear selection, food planning, safety protocols, and emergency contacts.
         slug: multi-day-trip-planning
-      - title: Reddingstechnieken
-        desc: Zelfredding, T-redding, Eskimoredding voor kajaks en sleepprotocollen op open water.
+      - title: Rescue Techniques
+        desc: Self-rescue, T-rescue, and towing protocols for open water.
         slug: rescue-techniques
-      - title: Nachtpeddelen
-        desc: Navigatie in het donker —verlichtingseisen, routegeheugen, groepscommunicatie en gevarenbewustzijn.
+      - title: Night Paddling
+        desc: Navigation after dark —lighting requirements, route memory, group communication, and hazard awareness.
         slug: night-paddling
-  - level: Onderhoud
+  - level: Maintenance
     color: from-amber-500 to-orange-600
     badge: bg-amber-100 text-amber-700
     guides:
-      - title: Reiniging en verzorging
-        desc: Spoelen met zoet water, UV-bescherming, schimmelpreventie en juiste droogtechnieken na elke sessie.
+      - title: Cleaning & Care
+        desc: Freshwater rinsing, UV protection, mildew prevention, and proper drying techniques after every session.
         slug: cleaning-and-care
-      - title: Opslag
-        desc: Beste opslagpraktijken voor opblaasbare boards en boten —leeglaten, opvouwen, temperatuurbeheer en houdbaarheid.
+      - title: Storage Guide
+        desc: Best practices for storing inflatable SUP boards —deflation, folding, temperature control, and shelf life.
         slug: storage-guide
-      - title: Reparatiebasis
-        desc: Kleine lekken, lekkende naden en klepproblemen repareren met PVC-reparatiesets en patchtechnieken.
+      - title: Repair Basics
+        desc: Fix small punctures, seam leaks, and valve issues with PVC repair kits and patch techniques.
         slug: repair-basics
-      - title: Kleponderhoud
-        desc: Identificatie van kleptypen (Halkey-Roberts, Boston, Leafield), reinigen van vuil en vervangen van defecte kleppen.
+      - title: Valve Maintenance
+        desc: Identify valve types (Halkey-Roberts, Boston, Leafield), clean debris, and replace faulty stems.
         slug: valve-maintenance
 knowledge_center_tagline: Knowledge Center
 knowledge_center_title: Marine Equipment & Industry Guides
@@ -159,9 +159,9 @@ knowledge_sections:
       - title: SUP for Commercial Operations
         desc: Why inflatable SUPs are a versatile product for commercial fleets, rental businesses, and professional operators.
         href: /use-cases/search-and-rescue
-read_guide: Lees de handleiding →
+read_guide: Read guide →
 cta:
-  title: Weet je niet waar te beginnen?
-  desc: Doe onze vaardigheidsbeoordelingstest om de juiste handleidingen en uitrusting voor jouw niveau te vinden.
-  label: Neem contact op →
+  title: Not sure where to start?
+  desc: Take our skill assessment quiz to find the right guides and gear for your level.
+  label: Contact us →
   link: /contact

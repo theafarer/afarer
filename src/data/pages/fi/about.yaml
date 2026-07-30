@@ -1,113 +1,106 @@
-﻿hero:
-  tagline: Meistä
+hero:
+  tagline: About us
   image:
     src: https://assets.afarer.com/images/afarer/factory/afarer-factory-building.webp
-    alt: afarer-tehdas ja työpaja
+    alt: afarer factory and workshop
   title: |
-    Meritekniikkaa, <br />
-    rakennettu <span class="text-accent dark:text-white">afarer</span>-tavalla
-  subtitle: 'Aloitimme rannikkopajassa yhdellä veneellä ja itsepäisellä uskomuksella: merituotteiden tulee olla suunniteltuja huolella, koska ne ovat tärkeitä. Nykyään toimitamme yli 40 maahan, mutta jokainen runko kulkee edelleen samojen käsien läpi, jotka perustivat yrityksen.'
-
+    Marine engineering, <br />
+    built the <span class="text-accent dark:text-white">afarer</span> way
+  subtitle: 'We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company.'
 stats:
-  title: Lukuina
+  title: By the numbers
   columns: 4
   stats:
-    - title: Toimitettuja runkoja
-      amount: '2,400+'
-    - title: Maita, joihin toimitetaan
+    - title: Hulls delivered
+      amount: 2,400+
+    - title: Countries shipped
       amount: '40'
-    - title: Yhdistetty kokemus vuosina
+    - title: Years of combined experience
       amount: '60'
-    - title: Keskimääräinen takuuvaste (tunteja)
+    - title: Average warranty response (hours)
       amount: '24'
-
 features3_what_we_build:
-  title: Mitä rakennamme
-  subtitle: Keskittynyt tuotevalikoima, jonka tunnemme perusteellisesti —ei puolivalmiita kokeiluja, ei merkkituotteiden uudelleenbrändäystä.
+  title: What we build
+  subtitle: 'We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company.'
   columns: 3
   isBeforeContent: true
   items:
-    - title: SUP-veneet
-      description: Alumiinirunkoiset SUP-veneet 3,3 m —7,5 m. Suunniteltu partiointiin, sukellukseen, kalastukseen ja perhekäyttöön.
+    - title: SUP boards
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
       icon: tabler:ship
-    - title: Kumiveneet
-      description: PVC- ja Hypalon-kumiveneet 2,4 m —4,2 m. Kevyitä, kestäviä ja helppoja säilyttää.
+    - title: Inflatable SUPs
+      description: PVC inflatable SUP boards from 9 ft to 12 ft. Light, tough and easy to stow.
       icon: tabler:speedboat
-    - title: Superjahtien tenderit
-      description: Kompaktit, huippuluokan SUP-veneet, jotka on rakennettu vastaamaan emoaluksesi ilmettä.
+    - title: Premium SUP packages
+      description: Compact, high-spec SUPs custom-built to match your brand or fleet requirements.
       icon: tabler:crown
-
 features3_more:
   columns: 3
   isAfterContent: true
   items:
-    - title: Varusteet
-      description: Airot, pumput, suojat, kuivalaukut, polttoainesäiliöt ja elektroniikka. Kaikki yhteensopivia veneidemme kanssa.
+    - title: Accessories
+      description: Paddles, pumps, covers, dry-bags and electronics. All matched to our boards.
       icon: tabler:package
-    - title: Kunnostus ja korjaus
-      description: Oma putkien vaihto, elektroniikan päivitys ja moottoripäivitykset.
+    - title: Refit & repair
+      description: In-house board repair, pad replacement and accessory upgrades.
       icon: tabler:tool
-    - title: Räätälöidyt rakennusprojektit
-      description: Projekti kerrallaan suunnittelua kaupallisiin, tieteellisiin ja sotilaallisiin tarpeisiin.
+    - title: Custom builds
+      description: Project-by-project design for commercial, scientific and military customers.
       icon: tabler:hammer
   image:
     src: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-2.webp
-    alt: Veneen suunnittelu- ja insinöörityökeskustelu
-
+    alt: Boat design and engineering discussion
 steps2_values:
-  title: Arvomme
-  subtitle: Kolme periaatetta, jotka ovat muokanneet jokaista tuotetta ensimmäisestä päivästä lähtien.
+  title: Our values
+  subtitle: Three principles that have shaped every product since day one.
   items:
-    - title: Rakenna kuin se kantaisi perhettäsi
-      description: Jokaista runkoa, hitsiä ja kiinnitintä käsitellään kuin oma perheemme käyttäisi sitä.
+    - title: Build like it carries your family
+      description: Every hull, weld and fastener is treated as if our own families will use it.
       icon: tabler:heart
-    - title: Suunnittele ennen kuin myymme
-      description: Jos määrittely on väärä, muutamme määrittelyä —emme koskaan asiakasta.
+    - title: Engineer before we sell
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
       icon: tabler:settings
-    - title: Tuki, joka kestää takuuta pidempään
-      description: Kaksikymmentä vuotta vanhat rungot soittavat edelleen meille varaosia varten, ja vastaamme yhä.
+    - title: Support that outlasts the warranty
+      description: Twenty-year-old hulls still call us for spare parts, and we still pick up.
       icon: tabler:headset
-
 steps2_milestones:
-  title: Virstanpylväät
-  subtitle: Lyhyt versio afarerin tarinasta.
+  title: Milestones
+  subtitle: A short version of the afarer story.
   isReversed: true
   items:
-    - title: Perustettu rannikkopajassa
-      description: Kahden laivainsinöörin perustama, CNC-koneella ja itsepäisellä idealla.
+    - title: Founded in a coastal workshop
+      description: Started by two naval architects with a CNC mill and a stubborn idea.
       icon: tabler:building-factory
-    - title: Ensimmäiset 1 000 runkoa toimitettu
-      description: Saavutettu seitsemäntenä vuotena, pääasiassa puskaradion ja toistuvien asiakkaiden kautta.
+    - title: First 1,000 hulls delivered
+      description: Reached in our seventh year, mostly through word of mouth and repeat customers.
       icon: tabler:circle-check
-    - title: Kansainvälinen vientiohjelma
-      description: Toimitamme nyt yli 40 maahan, paikallisia tukikumppaneita viidellä mantereella.
+    - title: International export programme
+      description: Now shipping to 40+ countries with localised support partners on five continents.
       icon: tabler:world
-
 features2_locations:
-  title: Toimipisteemme
-  tagline: Löydä meidät
+  title: Our locations
+  tagline: Find us
   columns: 3
   items:
-    - title: Pääkonttori ja työpaja
-      description: Alumiinirunkoiset SUP-veneet 3,3 m – 7,5 m. Suunniteltu partiointiin, sukellukseen, kalastukseen ja perhekäyttöön.
-    - title: EU-huoltokeskus
-      description: Välimeren satama —kunnostus, korjaus ja takuutuki Euroopan asiakkaille.
-    - title: APAC-kumppaniverkosto
-      description: Valtuutetut huoltokumppanit Australiassa, Japanissa, Singaporessa ja Hongkongissa.
+    - title: Headquarters & workshop
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+    - title: EU service centre
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+    - title: APAC partner network
+      description: Authorised service partners in Australia, Japan, Singapore and Hong Kong.
 brand_hub_tagline: Brand
 brand_hub_title: Explore Our Brand
-brand_hub_subtitle: Dive deeper into our marine engineering expertise, global presence, and the principles that drive us.
-
+brand_hub_subtitle: Dive deeper into our SUP engineering expertise, global presence, and the principles that drive us.
 brand_hub_cards:
   - title: Marine Expertise
-    desc: 'Decades of material science, precision manufacturing, and real-world testing —from PVC/Hypalon fabrication to deep-V hull design and drop-stitch technology.'
+    desc: Decades of material science, precision manufacturing, and real-world testing —from PVC/Hypalon fabrication to deep-V hull design and drop-stitch technology.
     link: /brand-marine-expertise
-    link_label: 'Learn more →'
+    link_label: Learn more →
   - title: Global Presence
-    desc: 'Shipping to 50+ countries from our Qingdao facility with authorized service partners across Europe, Asia-Pacific, and the Americas.'
+    desc: Shipping to 50+ countries from our Qingdao facility with authorized service partners across Europe, Asia-Pacific, and the Americas.
     link: /brand-global-presence
-    link_label: 'Learn more →'
+    link_label: Learn more →
   - title: Why afarer
-    desc: 'Vertical integration, dual certification (ISO 9001 + BSCI), CE compliance, and low MOQs —built for brands, distributors, and government agencies.'
+    desc: Vertical integration, dual certification (ISO 9001 + BSCI), CE compliance, and low MOQs —built for brands, distributors, and government agencies.
     link: /brand-why-afarer
-    link_label: 'Learn more →'
+    link_label: Learn more →

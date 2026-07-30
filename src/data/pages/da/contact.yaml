@@ -3,24 +3,24 @@ hero_text:
   title: GET IN TOUCH
 contact_form:
   id: form
-  title: Send os en besked
-  subtitle: Tilbud, tekniske spørgsmål eller partnerskabshenvendelser —skriv til os. Vi svarer inden for én arbejdsdag.
+  title: Send us a message
+  subtitle: For quotes, technical questions or partnership enquiries, drop us a line. We reply within one business day.
   email_to: info@afarer.com
-  submit_button: Send forespørgsel →Få et tilbud
-  success_message: Tak! Din besked er landet i vores indbakke. Vi svarer inden for én arbejdsdag.
-  error_message: Noget gik galt ved afsendelse af din besked. Prøv igen eller send os en e-mail direkte.
+  submit_button: Send Inquiry →Get a Quote
+  success_message: Thanks! Your message has landed in our inbox. We will reply within one business day.
+  error_message: Something went wrong sending your message. Please try again or email us directly.
   default_country_code: '+1'
   captcha:
-    label: 'Anti-spam: løs venligst følgende'
+    label: 'Anti-spam: please solve the following'
   fields:
     - name: firstName
-      label: Fornavn
+      label: Country
       row: 1
       type: select
       optionsKey: countries
       step: 1
     - name: lastName
-      label: Efternavn
+      label: Estimated Order Volume
       row: 1
       type: select
       options:
@@ -36,7 +36,7 @@ contact_form:
           label: 500+ units (Volume pricing)
       step: 1
     - name: companyName
-      label: Virksomhedsnavn
+      label: Customization Needed?
       row: 2
       type: select
       options:
@@ -52,7 +52,7 @@ contact_form:
           label: Not sure — need consultation
       step: 1
     - name: address
-      label: Adresse
+      label: Product Categories of Interest
       row: 3
       type: select
       options:
@@ -68,70 +68,70 @@ contact_form:
           label: Accessories (pumps, oars, bags)
       step: 1
     - name: zip
-      label: Postnummer
+      label: First Name
       row: 4
       step: 2
     - name: country
-      label: Land
+      label: Last Name
       row: 4
       step: 2
     - name: email
-      label: E-mail
+      label: Company Name
       row: 5
       step: 2
     - name: tel
-      label: Telefon
+      label: E-mail
       row: 5
       type: tel
       step: 2
     - name: orderVolume
-      label: Forventet ordremængde
+      label: TEL
       row: 6
       type: select
       withCountryCode: true
       step: 2
     - name: customization
-      label: Brug for tilpasning?
+      label: Address
       row: 7
       step: 2
     - name: productInterest
-      label: Produktkategorier af interesse
+      label: Zip / Postal Code
       row: 8
       step: 2
     - name: subject
-      label: Emne
+      label: Subject
       row: 9
       step: 3
     - name: message
-      label: Besked
+      label: Message
       row: 10
       type: textarea
       rows: 6
       step: 3
 features2_other_ways:
-  title: Andre måder at kontakte os
+  title: Other ways to reach us
   columns: 3
   items:
-    - title: Salgshenvendelser
-      description: Tilbud, konfigurationer, forhandleransøgninger og bulkordrer.
+    - title: Sales enquiries
+      description: Quotes, configurations, dealer applications and bulk orders.
       icon: tabler:shopping-bag
-    - title: Teknisk support
-      description: Garanti, reparationer, reservedele og driftsrelaterede spørgsmål.
+    - title: Technical support
+      description: Warranty, repairs, spare parts and operating questions.
       icon: tabler:tool
-    - title: Presse og partnerskaber
-      description: Mediesæt, sponsorater og branchesamarbejde.
+    - title: Press & partnerships
+      description: Media kits, sponsorship and industry collaboration.
       icon: tabler:news
-    - title: Telefon
+    - title: Phone
       description: +86 13305324192
       icon: tabler:headset
-    - title: E-mail
+    - title: Email
       description: info@afarer.com
       icon: tabler:mail
-    - title: Hovedkontor
-      description: Economic Development Zone, Laixi, Qingdao, Kina, 266600
+    - title: Headquarters
+      description: Economic Development Zone, Laixi, Qingdao, China, 266600
       icon: tabler:map-pin
 map:
-  title: Vores beliggenhed
-  subtitle: Besøg os på hovedkontoret
-  address: Economic Development Zone, Laixi, Qingdao, Kina, 266600
+  title: Our Location
+  subtitle: Visit us at our headquarters
+  address: Economic Development Zone, Laixi, Qingdao, China, 266600
   zoom: 15

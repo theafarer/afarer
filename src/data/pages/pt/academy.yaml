@@ -1,65 +1,65 @@
 hero:
   tagline: afarer Academy
-  title: Centro de Aprendizagem
-  subtitle: Guias e tutoriais para todos os níveis —desde básicos de SUP a técnicas avançadas de resgate
+  title: Learning Center
+  subtitle: Guides and tutorials for every skill level —from SUP basics to advanced rescue techniques
 categories:
-  - level: Iniciante
+  - level: Beginner
     color: from-green-500 to-emerald-600
     badge: bg-green-100 text-green-700
     guides:
-      - title: Fundamentos de SUP
-        desc: Aprenda os fundamentos do paddleboarding em pé —postura, técnica de remada e equilíbrio.
+      - title: SUP Basics
+        desc: Learn the fundamentals of stand-up paddleboarding —stance, stroke technique, and balance.
         slug: sup-basics
-      - title: Técnicas de Remo
-        desc: Remada para frente, remada de varredura, remada de tração e brace baixo —domine os movimentos essenciais do remo.
+      - title: Paddle Techniques
+        desc: Forward stroke, sweep stroke, draw stroke, and low brace —master the essential paddle moves.
         slug: paddle-techniques
-      - title: Segurança Primeiro
-        desc: Práticas essenciais de segurança incluindo verificação meteorológica, uso de PFD, regras de leash e autorresgate.
+      - title: Safety First
+        desc: Essential safety practices including weather checks, PFD use, leash rules, and self-rescue.
         slug: safety-first
-  - level: Intermediário
+  - level: Intermediate
     color: from-blue-500 to-indigo-600
     badge: bg-blue-100 text-blue-700
     guides:
-      - title: Essenciais de Passeio
-        desc: Planeamento de remadas de várias horas —navegação, hidratação, ritmo e leitura de previsões de vento.
+      - title: Touring Essentials
+        desc: Planning multi-hour paddles —navigation, hydration, pacing, and reading wind forecasts.
         slug: touring-essentials
-      - title: Leitura Meteorológica
-        desc: Interprete previsões marinhas, identifique padrões de nuvens e entenda os efeitos do vento na água.
+      - title: Weather Reading
+        desc: Interpret marine forecasts, identify cloud patterns, and understand wind effects on water.
         slug: weather-reading
-      - title: Fundamentos de Navegação
-        desc: Leitura de cartas, uso de bússola, waypoints GPS e planeamento de rotas para remada costeira.
+      - title: Navigation Basics
+        desc: Chart reading, compass use, GPS waypoints, and route planning for coastal paddling.
         slug: navigation-basics
-      - title: Consciência das Marés
-        desc: Compreensão dos ciclos de marés, correntes e como afetam o timing de lançamento e a rota.
+      - title: Tidal Awareness
+        desc: Understanding tide cycles, currents, and how they affect launch timing and routing.
         slug: tidal-awareness
-  - level: Avançado
+  - level: Advanced
     color: from-purple-500 to-violet-600
     badge: bg-purple-100 text-purple-700
     guides:
-      - title: Planeamento de Viagens de Vários Dias
-        desc: Logística de expedição —seleção de equipamento, planeamento de refeições, protocolos de segurança e contactos de emergência.
+      - title: Multi-Day Trip Planning
+        desc: Expedition logistics —gear selection, food planning, safety protocols, and emergency contacts.
         slug: multi-day-trip-planning
-      - title: Técnicas de Resgate
-        desc: Autorresgate, resgate T, resgate esquimó para caiaques e protocolos de reboque em águas abertas.
+      - title: Rescue Techniques
+        desc: Self-rescue, T-rescue, and towing protocols for open water.
         slug: rescue-techniques
-      - title: Remada Noturna
-        desc: Navegação após o anoitecer —requisitos de iluminação, memória de rota, comunicação em grupo e consciência de perigos.
+      - title: Night Paddling
+        desc: Navigation after dark —lighting requirements, route memory, group communication, and hazard awareness.
         slug: night-paddling
-  - level: Manutenção
+  - level: Maintenance
     color: from-amber-500 to-orange-600
     badge: bg-amber-100 text-amber-700
     guides:
-      - title: Limpeza e Cuidados
-        desc: Enxaguamento com água doce, proteção UV, prevenção de bolor e técnicas adequadas de secagem após cada sessão.
+      - title: Cleaning & Care
+        desc: Freshwater rinsing, UV protection, mildew prevention, and proper drying techniques after every session.
         slug: cleaning-and-care
-      - title: Guia de Armazenamento
-        desc: Melhores práticas para armazenar pranchas e barcos infláveis —desinsuflação, dobragem, controlo de temperatura e vida útil.
+      - title: Storage Guide
+        desc: Best practices for storing inflatable SUP boards —deflation, folding, temperature control, and shelf life.
         slug: storage-guide
-      - title: Fundamentos de Reparação
-        desc: Repare pequenos furos, fugas em costuras e problemas de válvulas com kits de reparação PVC e técnicas de remendo.
+      - title: Repair Basics
+        desc: Fix small punctures, seam leaks, and valve issues with PVC repair kits and patch techniques.
         slug: repair-basics
-      - title: Manutenção de Válvulas
-        desc: Identifique tipos de válvulas (Halkey-Roberts, Boston, Leafield), limpe detritos e substitua hastes defeituosas.
+      - title: Valve Maintenance
+        desc: Identify valve types (Halkey-Roberts, Boston, Leafield), clean debris, and replace faulty stems.
         slug: valve-maintenance
 knowledge_center_tagline: Knowledge Center
 knowledge_center_title: Marine Equipment & Industry Guides
@@ -159,9 +159,9 @@ knowledge_sections:
       - title: SUP for Commercial Operations
         desc: Why inflatable SUPs are a versatile product for commercial fleets, rental businesses, and professional operators.
         href: /use-cases/search-and-rescue
-read_guide: Ler guia →
+read_guide: Read guide →
 cta:
-  title: Não sabe por onde começar?
-  desc: Faça o nosso teste de avaliação de habilidades para encontrar os guias e equipamento certos para o seu nível.
-  label: Contacte-nos →
+  title: Not sure where to start?
+  desc: Take our skill assessment quiz to find the right guides and gear for your level.
+  label: Contact us →
   link: /contact

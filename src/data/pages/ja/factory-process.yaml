@@ -1,48 +1,49 @@
 hero:
-  tagline: プロセス
-  title: 製造プロセス
-  subtitle: 原材料から海上準備完了まで — すべての工程を当社が管理
-  back_label: 工場に戻る
+  tagline: Process
+  title: Manufacturing Process
+  subtitle: From raw material to sea-ready SUP —every step under our control
+  back_label: Back to Factory
   back_link: /factory
-
-intro: 生産を外部の工場に委託するブランドとは異なり、afarerは製造チェーン全体を所有・運営しています。この垂直統合により、すべての段階で厳格な品質管理を維持し、カスタム要件に迅速に対応し、ロットごとに一貫した製品品質を提供することができます。以下は、当社施設でボートが製造されるプロセスです。
-
+intro: >-
+  Unlike brands that outsource production to third-party factories, afarer owns and operates its entire manufacturing chain. This vertical integration allows us to maintain strict quality control at every stage, respond quickly to custom requirements, and deliver consistent product quality batch
+  after batch. Here is how a SUP board is built in our facility.
 steps:
   - step: '01'
-    title: 材料受入・検査
-    description: 入荷するPVC生地、ガラス繊維マット、樹脂、金具の各バッチは仕様に照らして検査されます。生地サンプルは、生産にリリースされる前に引張強度、厚さの均一性、耐紫外線性がテストされます。不適合材料は隔離され返品されます。
-    duration: 1〜2日
+    title: Material Receipt & Inspection
+    description: Every incoming batch of PVC fabric, fiberglass mat, resin, and hardware is inspected against specification. Fabric samples are tested for tensile strength, thickness uniformity, and UV resistance before release to production. Non-conforming materials are quarantined and returned.
+    duration: 1— days
   - step: '02'
-    title: 自動PVC切断
-    description: 承認された生地は自動CNC切断機にセットされ、サブミリ精度で切断されます。コンピューター最適化されたネスティングにより、パネルの廃棄率は通常5%未満に抑えられます。カットされたパネルはボートモデルとチャンバーごとにラベル付けされ、溶接ワークショップに送られます。
-    duration: ボートキットあたり2〜4時間
+    title: Automatic PVC Cutting
+    description: Approved fabrics are laid on the automatic CNC cutting machine and cut with sub-millimetre accuracy. Computer-optimised nesting arranges panels to minimise waste —typically below 5%. Cut panels are labelled by boat model and chamber, then bundled for transfer to the welding workshop.
+    duration: 2— hours per boat kit
   - step: '03'
-    title: チューブ熱封着・溶接
-    description: 承認された生地は自動CNC切断機にセットされ、サブミリ精度で切断されます。コンピューター最適化されたネスティングにより、パネルの廃棄率は通常5%未満に抑えられます。カットされたパネルはボートモデルとチャンバーごとにラベル付けされ、溶接ワークショップに送られます。
-    duration: ボートキットあたり2〜4時間
+    title: Tube Heat Sealing & Welding
+    description: >-
+      Panels are tacked and bonded using heat sealing machines  with hot-air welding at controlled temperatures of 200—00 °C. Main seams are reinforced with RF dielectric welding for airtight, high-strength joints. Completed chambers are inflated to 1.5× working pressure for 30-minute air-retention
+      validation.
+    duration: 1— days per boat
   - step: '04'
-    title: FRP RIBハル成形
-    description: RIBボートハルはハンドレイアップFRP成形で製造されます。ガラス繊維マットとロービングクロスの層が精密金型内でポリエステルまたはビニルエステル樹脂とともにハンドローリングされます。各層は一貫した積層品質のためにバキュームバッグ処理されます。ハルは高光沢、耐紫外線のマリン表面を提供するゲルコートで仕上げられます。
-    duration: ボートキットあたり2〜4時間
+    title: Drop-Stitch Core Bonding
+    description: SUP board drop-stitch cores are bonded to outer PVC laminates using heat lamination. Thousands of internal polyester threads connect top and bottom layers, creating a rigid structure at 12-15 PSI. Rail bands are triple-layer fusion bonded for edge strength.
+    duration: 1— days per board
   - step: '05'
-    title: チューブ熱封着・溶接
-    description: 入荷するPVC生地、ガラス繊維マット、樹脂、金具の各バッチは仕様に照らして検査されます。生地サンプルは、生産にリリースされる前に引張強度、厚さの均一性、耐紫外線性がテストされます。不適合材料は隔離され返品されます。
-    duration: 1〜2日
+    title: SUP Printing & Decoration
+    description: SUP board deck graphics are applied using digital printing  for full-colour photo-quality designs, and screen printing  for durable logos and repeating patterns. Prints are cured and sealed for UV and abrasion resistance.
+    duration: 1— days
   - step: '06'
-    title: 最終組立・艤装
-    description: RIBボートハルはハンドレイアップFRP成形で製造されます。ガラス繊維マットとロービングクロスの層が精密金型内でポリエステルまたはビニルエステル樹脂とともにハンドローリングされます。各層は一貫した積層品質のためにバキュームバッグ処理されます。ハルは高光沢、耐紫外線のマリン表面を提供するゲルコートで仕上げられます。
-    duration: 1〜2日
+    title: Final Assembly & Fitting
+    description: Valves, D-rings, handles, fin boxes, and deck pads are installed on the assembly line. Each board follows a 100-point assembly checklist with mandatory sign-off at each stage.
+    duration: 1— days
   - step: '07'
-    title: 品質テスト・検査
-    description: 承認された生地は自動CNC切断機にセットされ、サブミリ精度で切断されます。コンピューター最適化されたネスティングにより、パネルの廃棄率は通常5%未満に抑えられます。カットされたパネルはボートモデルとチャンバーごとにラベル付けされ、溶接ワークショップに送られます。
-    duration: 1〜2日
+    title: Quality Testing & Inspection
+    description: 'Every completed board undergoes mandatory quality gate: chamber air-retention test, hardware function check, fastener torque verification, and cosmetic inspection. Custom and prototype builds also receive in-water trials covering stability and handling.'
+    duration: 1— days
   - step: '08'
-    title: 材料受入・検査
-    description: 承認された生地は自動CNC切断機にセットされ、サブミリ精度で切断されます。コンピューター最適化されたネスティングにより、パネルの廃棄率は通常5%未満に抑えられます。カットされたパネルはボートモデルとチャンバーごとにラベル付けされ、溶接ワークショップに送られます。
-    duration: 1〜2日
-
+    title: Packing & Shipping
+    description: Boards are deflated, folded per procedure, packed in heavy-duty woven bags or retail boxes, and loaded for shipment. Each package is labelled with model, serial number, and destination. We coordinate with freight forwarders for FCL and LCL container shipments worldwide.
+    duration: 1 day
 cta:
-  title: 設備と機械を見る
-  desc: afarerボートの背後にある産業用グレードの設備をご覧ください。
-  label: 設備を見る →
+  title: See our equipment and machinery
+  desc: Explore the industrial-grade equipment behind every afarer SUP board.
+  label: View equipment →
   link: /factory/equipment

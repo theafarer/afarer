@@ -1,30 +1,30 @@
 hero:
-  tagline: Equipo
-  title: Equipo y Maquinaria de Fabricación
-  subtitle: Equipo de grado industrial para corte, soldadura, impresión y ensamblaje
-  back_label: Volver a la Fábrica
+  tagline: Equipment
+  title: Manufacturing Equipment & Machinery
+  subtitle: Industrial-grade equipment across cutting, welding, printing, and assembly
+  back_label: Back to Factory
   back_link: /factory
 categories:
-  - title: Corte y Preparación de Materiales
+  - title: Cutting & Material Preparation
     items:
       - name: Máquina Cortadora Automática de PVC
-        spec: Controlada por CNC, 6.5 m × 2.5 m, precisión 0.1 mm
-        desc: Máquina cortadora automática controlada por computadora para tejidos PVC, Hypalon y drop-stitch. El software de anidado optimiza la utilización del material por debajo del 5 % de desperdicio.
+        spec: CNC-controlled, 6.5 m × 2.5 m, 0.1 mm accuracy
+        desc: Computer-controlled automatic cutting machine for PVC, Hypalon, and drop-stitch fabrics. Nesting software optimises material utilisation to below 5% waste.
       - name: Extendedora de Tejido
-        spec: Ancho máx. 3 m, alimentación de tensión controlada
-        desc: Coloca el tejido en capas simples o múltiples con tensión controlada para evitar la distorsión antes del corte.
-  - title: Soldadura y Unión de Tubos
+        spec: 3 m max width, tension-controlled feed
+        desc: Lays fabric in single or multiple plies with controlled tension to prevent distortion before cutting.
+  - title: Tube Welding & Bonding
     items:
       - name: Máquina de Sellado por Calor
-        spec: Soldadura de aire caliente, variable 200—00 °C, 0.5— m/min
-        desc: Máquina de sellado térmico por aire caliente para unir y soldar costuras de tubos PVC y Hypalon. Se usa para fijar, sellar y fundir cámaras de tubo y uniones de flotación.
+        spec: Hot-air welding, variable 200—00 °C, 0.5— m/min
+        desc: Hot-air heat sealing machine for bonding and welding PVC and Hypalon tube seams. Used for tacking, sealing, and fusing tube chambers and float joints.
       - name: Prensa Dieléctrica RF
-        spec: 15 kW, placa 2000 × 600 mm
-        desc: Prensa de soldadura de alta frecuencia para costuras longitudinales principales, uniones de bañera a tubo y fabricación de cámaras grandes.
+        spec: 15 kW, platen 2000 × 600 mm
+        desc: Radio-frequency welding press for main longitudinal seams, transom-to-tube joints, and large-chamber fabrication.
       - name: Soldadora RF Controlada por CNC
-        spec: 8 kW, mesa XY 2500 × 1200 mm
-        desc: Soldadura programable de costuras curvas para geometrías complejas, grabado de logotipos y parches de precisión.
-  - title: Fabricación de Cascos SUP
+        spec: 8 kW, XY table 2500 × 1200 mm
+        desc: Programmable curved-seam welding for complex geometries, logo embossing, and precision patchwork.
+  - title: SUP Board Manufacturing
     items:
       - name: Drop-Stitch Core Lamination Press
         spec: Large-format press for board cores up to 14 ft LOA
@@ -32,15 +32,15 @@ categories:
       - name: CNC Router (5-axis)
         spec: 3 m × 2 m × 1 m envelope, water-cooled spindle
         desc: Machining of fin boxes, handle cutouts, and custom board components.
-  - title: Impresión y Decoración SUP
+  - title: SUP Printing & Decoration
     items:
       - name: Impresora Digital
-        spec: Inyección de tinta de alta resolución, ancho de impresión hasta 2 m
-        desc: Impresión digital directa al tejido para gráficos de cubierta SUP a todo color. Imprime patrones personalizados, degradados e imágenes de calidad fotográfica con tintas base agua resistentes a los UV.
+        spec: High-resolution inkjet, up to 2 m print width
+        desc: Direct-to-fabric digital printing for full-colour SUP deck graphics. Prints custom patterns, gradients, and photo-quality images with UV-resistantwater-based inks.
       - name: Máquina de Serigrafía
-        spec: Manual y semiautomática, registro multicolor
-        desc: Serigrafía para logotipos de tablas SUP, marcas comerciales y patrones repetitivos. Proporciona impresiones duraderas y opacas con saturación de color vibrante.
-  - title: Ensamblaje y Equipamiento
+        spec: Manual and semi-automatic, multi-colour registration
+        desc: Screen printing for SUP board logos, brand marks, and repeating patterns. Provides durable, opaque prints with vibrant colour saturation.
+  - title: Assembly & Rigging
     items:
       - name: Board Assembly Station
         spec: Modular adjustable, multi-station layout
@@ -51,22 +51,22 @@ categories:
       - name: Deck Pad Laminator
         spec: 3 m × 1.5 m, temperature-controlled
         desc: Heat lamination of EVA foam deck pads to SUP board tops with consistent bond strength.
-  - title: Pruebas y Control de Calidad
+  - title: Testing & Quality Control
     items:
       - name: Probador Universal de Tracción
-        spec: 50 kN, ASTM D751
-        desc: Prueba de fuerza de rotura, elongación en la rotura y propagación del desgarro para lotes de tejido.
+        spec: 50 kN,  / ASTM D751
+        desc: Breaking force, elongation at break, and tear propagation testing for fabric batches.
       - name: Banco de Prueba de Retención de Aire
-        spec: Programable, retención de presión 30 min
-        desc: Prueba automatizada de retención de presión para cada cámara de tubo antes del ensamblaje.
+        spec: Programmable, 30-min pressure-hold
+        desc: Automated pressure-hold test for every tube chamber before assembly.
       - name: Probador de Desprendimiento de Costuras
-        spec: Desprendimiento motorizado 180° a 100 mm/min
-        desc: Prueba de resistencia al desprendimiento de costuras soldadas y pegadas según ISO 6185.
+        spec: Motorised 180° peel at 100 mm/min
+        desc: Weld and glued-seam peel strength testing per ISO 6185.
       - name: Cámara de Envejecimiento por Arco de Xenón
-        spec: 2000 h exposición
-        desc: Prueba de resistencia a los UV para cambio de color y retención de resistencia.
+        spec: 2000 h exposure
+        desc: UV resistance testing for colour change and strength retention.
 cta:
-  title: ¿Interesado en una visita a la fábrica?
-  desc: Damos la bienvenida a los visitantes en nuestras instalaciones de Qingdao. Vea nuestro equipo y procesos en persona.
-  label: Agendar una visita →
+  title: Interested in a factory tour?
+  desc: We welcome visitors to our Qingdao facility. See our equipment and processes in person.
+  label: Schedule a visit →
   link: /contact

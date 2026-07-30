@@ -1,37 +1,37 @@
 hero_text:
   tagline: Get a Quote
-  title: Vraag een Offerte Aan<br />voor Uw Project
-  subtitle: Vertel ons uw wensen en ons team reageert binnen 2 werkdagen met een gedetailleerde offerte.
+  title: Request a Quotation<br />for Your Project
+  subtitle: Tell us about your requirements and our team will respond with a detailed quotation within 2 business days.
 steps2_process:
   title: How It Works
-  subtitle: Vier eenvoudige stappen van aanvraag tot offerte.
+  subtitle: Four simple steps from inquiry to quotation.
   items:
-    - title: 'Stap 1: Diens Uw Wensen In'
-      description: Vul het onderstaande formulier in met uw producttype, hoeveelheid en specificaties. Hoe meer detail u verstrekt, hoe nauwkeuriger uw offerte.
+    - title: 'Step 1: Submit Your Requirements'
+      description: Fill out the form below with your product type, quantity, and specifications. The more detail you provide, the more accurate your quotation.
       icon: tabler:file-text
-    - title: 'Stap 2: Wij Beoordelen & Adviseren'
-      description: Ons technische team beoordeelt uw wensen en neemt mogelijk contact met u op voor verduidelijking. Wij geven aanbevelingen over productconfiguratie en opties.
+    - title: 'Step 2: We Review & Advise'
+      description: Our engineering team reviews your requirements and may contact you for clarification. We provide recommendations on product configuration and options.
       icon: tabler:users
-    - title: 'Stap 3: Ontvang Uw Offerte'
-      description: U ontvangt een gedetailleerde offerte inclusief eenheidsprijs, MOQ, levertijd, betalingsvoorwaarden en verzendopties. Doorgaans binnen 48 uur.
+    - title: 'Step 3: Receive Your Quote'
+      description: You receive a detailed quotation including unit pricing, MOQ, lead time, payment terms, and shipping options. Typically within 48 hours.
       icon: tabler:currency-dollar
-    - title: 'Stap 4: Monster & Productie'
-      description: Na acceptatie van de offerte gaan we over tot monsterproductie (indien van toepassing) of direct tot massaproductie. Regelmatige updates gedurende het hele proces.
+    - title: 'Step 4: Sample & Production'
+      description: After quote acceptance, we proceed to sample production (if applicable) or directly to mass production. Regular updates throughout the process.
       icon: tabler:building-factory
 content_form:
   tagline: Quotation Form
-  title: Vertel Ons Over Uw Project
-  subtitle: Alle velden met * zijn verplicht.
+  title: Tell Us About Your Project
+  subtitle: All fields with * are required.
   fields:
     - name: Product Type
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
         - SUP Board
         - Inflatable SUP
+        - Inflatable SUP Board
         - Life Vest
-        - Accessory
+        - Marine Accessory
+        - Custom OEM/ODM
     - name: Quantity
       type: text
       options:
@@ -47,13 +47,13 @@ content_form:
         - Other
     - name: Target Market
       type: text
-      placeholder: e.g. Europe, North America, Middle East
+      placeholder: e.g. 50 units
     - name: Customization Needed
       type: text
-      placeholder: e.g. custom colors, branding, packaging
+      placeholder: e.g. Europe, North America, Middle East
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: e.g. Italy, UAE, USA, Australia
     - name: Additional Requirements
       type: textarea
       options:
@@ -81,8 +81,8 @@ content_form:
       type: file
       placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
 cta:
-  title: Liever per e-mail bespreken?
-  subtitle: Stuur uw aanvraag rechtstreeks naar ons verkoopteam en wij reageren binnen 24 uur.
+  title: Prefer to discuss by email?
+  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
   actions:
     - variant: primary
       text: Email us directly

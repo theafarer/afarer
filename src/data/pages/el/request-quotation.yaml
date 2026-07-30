@@ -1,37 +1,37 @@
 hero_text:
   tagline: Get a Quote
-  title: Ζητήστε μια Προσφορά<br />για το Έργο σας
-  subtitle: Πείτε μας τις απαιτήσεις σας και η ομάδα μας θα απαντήσει με λεπτομερή προσφορά εντός 2 εργάσιμων ημερών.
+  title: Request a Quotation<br />for Your Project
+  subtitle: Tell us about your requirements and our team will respond with a detailed quotation within 2 business days.
 steps2_process:
   title: How It Works
-  subtitle: Τέσσερα απλά βήματα από το αίτημα έως την προσφορά.
+  subtitle: Four simple steps from inquiry to quotation.
   items:
-    - title: 'Βήμα 1: Υποβάλετε τις Απαιτήσεις σας'
-      description: Συμπληρώστε την παρακάτω φόρμα με τον τύπο προϊόντος, την ποσότητα και τις προδιαγραφές. Όσο περισσότερες λεπτομέρειες παρέχετε, τόσο πιο ακριβής θα είναι η προσφορά σας.
+    - title: 'Step 1: Submit Your Requirements'
+      description: Fill out the form below with your product type, quantity, and specifications. The more detail you provide, the more accurate your quotation.
       icon: tabler:file-text
-    - title: 'Βήμα 2: Εξετάζουμε & Συμβουλεύουμε'
-      description: Η ομάδα μηχανικών μας εξετάζει τις απαιτήσεις σας και μπορεί να επικοινωνήσει μαζί σας για διευκρινίσεις. Παρέχουμε συστάσεις σχετικά με τη διαμόρφωση και τις επιλογές προϊόντος.
+    - title: 'Step 2: We Review & Advise'
+      description: Our engineering team reviews your requirements and may contact you for clarification. We provide recommendations on product configuration and options.
       icon: tabler:users
-    - title: 'Βήμα 3: Λάβετε την Προσφορά σας'
-      description: Λαμβάνετε μια λεπτομερή προσφορά που περιλαμβάνει τιμολόγηση ανά μονάδα, MOQ, χρόνο παράδοσης, όρους πληρωμής και επιλογές αποστολής. Συνήθως εντός 48 ωρών.
+    - title: 'Step 3: Receive Your Quote'
+      description: You receive a detailed quotation including unit pricing, MOQ, lead time, payment terms, and shipping options. Typically within 48 hours.
       icon: tabler:currency-dollar
-    - title: 'Βήμα 4: Δείγμα & Παραγωγή'
-      description: Μετά την αποδοχή της προσφοράς, προχωράμε σε παραγωγή δείγματος (εάν ισχύει) ή απευθείας σε μαζική παραγωγή. Τακτικές ενημερώσεις σε όλη τη διαδικασία.
+    - title: 'Step 4: Sample & Production'
+      description: After quote acceptance, we proceed to sample production (if applicable) or directly to mass production. Regular updates throughout the process.
       icon: tabler:building-factory
 content_form:
   tagline: Quotation Form
-  title: Πείτε Μας για το Έργο σας
-  subtitle: Όλα τα πεδία με * είναι υποχρεωτικά.
+  title: Tell Us About Your Project
+  subtitle: All fields with * are required.
   fields:
     - name: Product Type
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
         - SUP Board
         - Inflatable SUP
+        - Inflatable SUP Board
         - Life Vest
-        - Accessory
+        - Marine Accessory
+        - Custom OEM/ODM
     - name: Quantity
       type: text
       options:
@@ -47,13 +47,13 @@ content_form:
         - Other
     - name: Target Market
       type: text
-      placeholder: e.g. Europe, North America, Middle East
+      placeholder: e.g. 50 units
     - name: Customization Needed
       type: text
-      placeholder: e.g. custom colors, branding, packaging
+      placeholder: e.g. Europe, North America, Middle East
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: e.g. Italy, UAE, USA, Australia
     - name: Additional Requirements
       type: textarea
       options:
@@ -81,8 +81,8 @@ content_form:
       type: file
       placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
 cta:
-  title: Προτιμάτε να συζητήσετε μέσω email;
-  subtitle: Στείλτε το αίτημά σας απευθείας στην ομάδα πωλήσεών μας και θα απαντήσουμε εντός 24 ωρών.
+  title: Prefer to discuss by email?
+  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
   actions:
     - variant: primary
       text: Email us directly

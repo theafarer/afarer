@@ -1,73 +1,70 @@
 hero:
-  tagline: '水探索の知識'
-  title: '学ぶ'
+  tagline: Water Exploration Knowledge
+  title: Learn
   subtitle: |
-    ガイド、チュートリアル、深掘り — 自信を持って水を探索するために<br />
-    必要なすべて。初めてのSUP選びから高度なテクニックの習得まで。
-  taglineSection: 'すべてのパドラーのための知識。初心者からプロフェッショナルまで。'
-
+    Guides, tutorials, and deep dives —everything you need to explore<br />
+    water with confidence. From choosing your first SUP to mastering advanced techniques.
+  taglineSection: Knowledge for every paddler. From beginner to professional.
 featured:
-  tagline: '注目のトピック'
-  title: '学習の旅を始めよう'
-  subtitle: 'ウォータースポーツが初めてでも、スキルアップを目指していても、私たちのガイドが対応します。'
+  tagline: Featured Topics
+  title: Start your learning journey
+  subtitle: Whether you are new to water sports or looking to level up, our guides have you covered.
   items:
-    - title: 'SUPの基礎'
-      description: '初心者が知るべきすべて — ボードの種類、パドルのサイズ、スタンス、初日のヒント。'
-      icon: 'tabler:lifebuoy'
-      href: '/learn/sup'
-    - title: 'インフレータブル vs ハードボード'
-      description: 'どちらが適していますか？携帯性、パフォーマンス、耐久性、コストを比較します。'
-      icon: 'tabler:arrows-left-right'
-      href: '/compare/inflatable-vs-hardboard'
-    - title: '水上安全'
-      description: 'すべてのパドラーが持つべき必須安全知識 — 天候、PFD、自己救助など。'
-      icon: 'tabler:shield'
-      href: '/learn/water-safety'
-    - title: '材料ガイド'
-      description: 'PVC vs ハイパロン、ドロップステッチ技術、デニール定格 — ギアの素材を理解する。'
-      icon: 'tabler:flask'
-      href: '/learn/materials'
-    - title: 'SUPサイズガイド'
-      description: '体重、スキル、パドリングスタイルに適したボードの長さ、幅、容量を見つけましょう。'
-      icon: 'tabler:ruler'
-      href: '/size-guide'
-    - title: '中級テクニック'
-      description: '高度なストローク、旋回テクニック、荒れた水域のハンドリングでパドリングをレベルアップ。'
-      icon: 'tabler:droplet'
-      href: '/v2/intermediate-techniques'
-
+    - title: SUP Basics
+      description: Everything a beginner needs to know —board types, paddle sizing, stance, and first-day tips.
+      icon: tabler:lifebuoy
+      href: /learn/sup
+    - title: Inflatable vs Hard Board
+      description: Which is right for you? We compare portability, performance, durability, and cost side by side.
+      icon: tabler:arrows-left-right
+      href: /compare/inflatable-vs-hardboard
+    - title: Water Safety
+      description: Essential safety knowledge every paddler should have —weather, PFDs, self-rescue, and more.
+      icon: tabler:shield
+      href: /learn/water-safety
+    - title: Materials Guide
+      description: PVC vs Hypalon, drop-stitch technology, denier ratings —understand what your gear is made of.
+      icon: tabler:flask
+      href: /learn/materials
+    - title: SUP Size Guide
+      description: Find the right board length, width, and volume for your weight, skill, and paddling style.
+      icon: tabler:ruler
+      href: /size-guide
+    - title: Intermediate Techniques
+      description: Step up your paddling with advanced strokes, turning techniques, and rough-water handling.
+      icon: tabler:droplet
+      href: /v2/intermediate-techniques
 categories:
-  tagline: 'カテゴリー'
-  title: 'トピック別に探す'
-  subtitle: 'すべての学習コンテンツをスキルレベルと興味別に整理。'
+  tagline: Categories
+  title: Explore by topic
+  subtitle: All learning content organized by skill level and interest.
   columns:
-    - title: '初心者'
+    - title: Beginner
       items:
-        - 'SUPの基礎 — ここから始めよう'
-        - 'インフレータブル vs ハードボード'
-        - '水上安全の essentials'
-        - 'SUPの選び方'
-        - 'ポンプ＆パックガイド'
-    - title: '中級'
+        - SUP Basics —start here
+        - Inflatable vs Hard Board
+        - Water Safety Essentials
+        - How to Choose Your SUP
+        - Pump & Pack Guide
+    - title: Intermediate
       items:
-        - 'パドリングテクニック'
-        - 'インフレータブル技術'
-        - '材料リファレンス'
-        - 'PVC vs ハイパロン比較'
-        - 'ドロップステッチコア解説'
-    - title: '上級＆プロフェッショナル'
+        - Paddling Techniques
+        - Inflatable Technology
+        - Materials Reference
+        - PVC vs Hypalon Comparison
+        - Drop-Stitch Core Explained
+    - title: Advanced & Professional
       items:
-        - 'フリートオペレーション'
-        - '商業グレード機器'
-        - '安全＆救助プロトコル'
-        - 'カスタムビルド＆OEM'
-
+        - Fleet Operations
+        - Commercial-Grade Equipment
+        - Safety & Rescue Protocols
+        - Custom Builds & OEM
 cta:
-  title: 'まだ質問がありますか？'
-  subtitle: 'AIガイドに尋ねて、ギア、安全性、テクニックについてパーソナライズされた回答を得ましょう。'
+  title: Still have questions?
+  subtitle: Ask our AI guide for personalized answers about gear, safety, and techniques.
   actions:
     - variant: primary
-      text: 'ウォーターアドバイザーAIに質問'
+      text: Ask the Water Advisor AI
       href: '#ai-guide'
-    - text: 'すべてのガイドを見る'
-      href: '/academy'
+    - text: Browse all guides
+      href: /academy

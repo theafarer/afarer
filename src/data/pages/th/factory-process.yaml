@@ -1,30 +1,34 @@
 hero:
-  tagline: กระบวนการผลิต
-  title: กระบวนการผลิตของเรา
-  subtitle: จากวัตถุดิบถึงสินค้าสำเร็จ — ทุกขั้นตอนควบคุมคุณภาพ
+  tagline: Process
+  title: Manufacturing Process
+  subtitle: From raw material to sea-ready SUP —every step under our control
   back_label: Back to Factory
   back_link: /factory
-intro: Unlike brands that outsource production to third-party factories, afarer owns and operates its entire manufacturing chain. This vertical integration allows us to maintain strict quality control at every stage, respond quickly to custom requirements, and deliver consistent product quality batch after batch. Here is how a SUP board is built in our facility.
+intro: >-
+  Unlike brands that outsource production to third-party factories, afarer owns and operates its entire manufacturing chain. This vertical integration allows us to maintain strict quality control at every stage, respond quickly to custom requirements, and deliver consistent product quality batch
+  after batch. Here is how a SUP board is built in our facility.
 steps:
   - step: '01'
-    title: ตัด
-    description: เครื่อง CNC ตัดผ้าอัตโนมัติตามข้อกำหนด
+    title: Material Receipt & Inspection
+    description: Every incoming batch of PVC fabric, fiberglass mat, resin, and hardware is inspected against specification. Fabric samples are tested for tensile strength, thickness uniformity, and UV resistance before release to production. Non-conforming materials are quarantined and returned.
     duration: 1— days
   - step: '02'
-    title: เชื่อม
-    description: การเชื่อม RF และลมร้อนสร้างรอยต่อที่แข็งแรงและกันอากาศ
+    title: Automatic PVC Cutting
+    description: Approved fabrics are laid on the automatic CNC cutting machine and cut with sub-millimetre accuracy. Computer-optimised nesting arranges panels to minimise waste —typically below 5%. Cut panels are labelled by boat model and chamber, then bundled for transfer to the welding workshop.
     duration: 2— hours per boat kit
   - step: '03'
-    title: ประกอบ
-    description: ช่างเทคนิคมีฝีมือติดตั้งวาล์ว อุปกรณ์เสริม และฟิตติ้ง
+    title: Tube Heat Sealing & Welding
+    description: >-
+      Panels are tacked and bonded using heat sealing machines  with hot-air welding at controlled temperatures of 200—00 °C. Main seams are reinforced with RF dielectric welding for airtight, high-strength joints. Completed chambers are inflated to 1.5× working pressure for 30-minute air-retention
+      validation.
     duration: 1— days per boat
   - step: '04'
-    title: ทดสอบ
-    description: สินค้าทุกชิ้นผ่านการทดสอบแรงดัน การลอยตัว และการตรวจสอบ
+    title: Drop-Stitch Core Bonding
+    description: SUP board drop-stitch cores are bonded to outer PVC laminates using heat lamination. Thousands of internal polyester threads connect top and bottom layers, creating a rigid structure at 12-15 PSI. Rail bands are triple-layer fusion bonded for edge strength.
     duration: 1— days per board
   - step: '05'
-    title: บรรจุ
-    description: สินค้าถูกบรรจุอย่างระมัดระวังและเตรียมพร้อมจัดส่ง
+    title: SUP Printing & Decoration
+    description: SUP board deck graphics are applied using digital printing  for full-colour photo-quality designs, and screen printing  for durable logos and repeating patterns. Prints are cured and sealed for UV and abrasion resistance.
     duration: 1— days
   - step: '06'
     title: Final Assembly & Fitting

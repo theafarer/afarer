@@ -1,51 +1,51 @@
 hero:
-  tagline: مخطط المعرفة
-  title: معرفة استكشاف المياه
+  tagline: Knowledge Graph
+  title: Water Exploration Knowledge
   subtitle: |
-    قاعدة معرفية منظمة تغطي تقنية SUP القابلة للنفخ،<br />
-    السلامة المائية، هندسة القوارب، وتخطيط المغامرات.
-  taglineSection: استكشف. تعلم. انطلق بثقة.
+    A structured knowledge base covering inflatable SUP technology,<br />
+    water safety, boat engineering, and adventure planning.
+  taglineSection: Explore. Learn. Go with confidence.
 clusters:
-  tagline: مجموعات المعرفة
-  title: استكشف حسب الموضوع
-  subtitle: غوص عميق في التكنولوجيا والسلامة والمهارات وراء كل منتج من أكوافارير.
+  tagline: Knowledge Clusters
+  title: Explore by topic
+  subtitle: Deep dives into the technology, safety, and skills behind every afarer product.
   items:
-    - title: معرفة SUP
-      description: من اختيار أول لوح لك إلى تقنيات الجولات المتقدمة —كل شيء عن التجديف الوقوف.
+    - title: SUP Buying Guides
+      description: From choosing your first board to advanced touring techniques —everything about stand-up paddle boarding.
       icon: tabler:lifebuoy
       topics:
-        - كيف تختار أول SUP قابل للنفخ لك
-        - أفضل حجم SUP للمبتدئين
-        - ما مدى صعوبة التجديف الوقوف؟
-        - مقارنة القابل للنفخ مقابل اللوح الصلب
-        - قائمة فحص سلامة SUP
-    - title: معرفة القوارب
-      description: أدلة تقنية عن القوارب القابلة للنفخ وRIB والقوارب الصغيرة والكاياك —الهندسة والمواد والتشغيل.
-      icon: tabler:sailboat
-      topics:
-        - أنواع القوارب القابلة للنفخ موضحة
-        - مقارنة PVC مقابل Hypalon
-        - مقارنة SUP مقابل القارب الصغير
-        - غوص عميق في تقنية الخياطة المتساقطة
-        - دليل علم المواد البحرية
-    - title: معرفة السلامة
-      description: معرفة سلامة أساسية لكل مجداف —من اختيار سترة النجاة إلى قراءة الطقس إلى تقنيات الإنقاذ الذاتي.
-      icon: tabler:shield
-      topics:
-        - قائمة فحص سلامة SUP
-        - هل تحتاج سترة نجاة؟
-        - دليل سلامة التجديف في المحيط
-        - سلامة الأنهار لقوارب الكاياك القابلة للنفخ
-        - الوعي بالطقس وظروف المياه
-    - title: التكنولوجيا
-      description: الهندسة وراء منتجات أكوافارير —المواد وطرق البناء واختبار الجودة.
+        - How to choose your first inflatable SUP
+        - SUP size and weight capacity guide
+        - Best SUP for beginners, touring, yoga, and racing
+        - Common SUP buying mistakes to avoid
+        - Inflatable vs hard board comparison
+    - title: SUP Engineering & Technology
+      description: Technical guides on inflatable SUP boards —materials, construction methods, and manufacturing processes.
       icon: tabler:microscope
       topics:
-        - تقنية PVC البحرية
-        - شرح الخياطة المتساقطة
-        - لماذا PSI مهم لـ SUP القابل للنفخ
-        - لحام RF مقابل الربط اللاصق
-        - اختبار الجودة والشهادات
+        - Drop-stitch technology deep dive
+        - Military-grade PVC specifications
+        - Fusion lamination vs adhesive bonding
+        - EVA foam technology and artwork methods
+        - SUP valve types and fin systems
+    - title: SUP Safety & Maintenance
+      description: Essential safety knowledge for every paddler —from PFD selection to weather reading to board care and repair.
+      icon: tabler:shield
+      topics:
+        - SUP safety checklist and PFD requirements
+        - Multi-chamber safety for remote water
+        - SUP inflation PSI guide
+        - Board storage and winter care
+        - Inflatable repair techniques
+    - title: SUP Skills & Techniques
+      description: Paddling techniques, touring skills, and fitness training for all skill levels.
+      icon: tabler:sailboat
+      topics:
+        - Beginner paddling techniques
+        - Intermediate stroke mastery
+        - Touring and expedition planning
+        - SUP fitness and racing training
+        - Whitewater and river running skills
     - title: SUP Lifestyle & Special Uses
       description: Specialized SUP activities —yoga, fishing, dogs, families, and travel tips.
       icon: tabler:heart
@@ -65,19 +65,19 @@ clusters:
         - SUP board materials explained
         - UV printing vs EVA block artwork
 featured_guides:
-  tagline: الأدلة المميزة
-  title: أكثر موارد المعرفة شعبية
+  tagline: Featured Guides
+  title: Most popular knowledge resources
   items:
-    - title: أساسيات SUP
+    - title: SUP Basics
       href: /learn/sup
-    - title: قابل للنفخ مقابل اللوح الصلب
+    - title: Inflatable vs Hard Board
       href: /compare/inflatable-vs-hardboard
-    - title: دليل السلامة المائية
+    - title: Water Safety Guide
       href: /learn/water-safety
-    - title: مرجع المواد
+    - title: Materials Reference
       href: /learn/materials
-    - title: دليل حجم SUP
-      href: /size-guide
+    - title: SUP Buying Guide
+      href: /guides/how-to-choose-your-sup
     - title: SUP Size Guide
       href: /guides/sup-size-guide
     - title: SUP Tech Center
@@ -89,11 +89,11 @@ featured_guides:
     - title: Paddle Techniques
       href: /guides/paddling-techniques
 cta:
-  title: ابدأ الاستكشاف
-  subtitle: اغص في قاعدة معارفنا واحصل على المعلومات التي تحتاجها لمغامرتك المائية القادمة.
+  title: Start exploring
+  subtitle: Dive into our knowledge base and get the information you need for your next water adventure.
   actions:
     - variant: primary
-      text: تصفح جميع الأدلة
+      text: Browse all guides
       href: /academy
-    - text: استكشف مخطط المعرفة
+    - text: Explore Knowledge Graph
       href: /knowledge

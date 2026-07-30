@@ -1,30 +1,30 @@
 hero:
-  tagline: Utrustning
-  title: Tillverkningsutrustning och Maskiner
-  subtitle: Industriell utrustning för skärning, svetsning, tryck och montering
-  back_label: Tillbaka till Fabriken
+  tagline: Equipment
+  title: Manufacturing Equipment & Machinery
+  subtitle: Industrial-grade equipment across cutting, welding, printing, and assembly
+  back_label: Back to Factory
   back_link: /factory
 categories:
-  - title: Skärning och Materialförberedelse
+  - title: Cutting & Material Preparation
     items:
       - name: Automatisk PVC-skärmaskin
-        spec: CNC-styrd, 6.5 m × 2.5 m, 0.1 mm noggrannhet
-        desc: Datorstyrd automatisk skärmaskin för PVC-, Hypalon- och drop-stitch-tyger. Nesting-programvara optimerar materialutnyttjandet till under 5 % avfall.
+        spec: CNC-controlled, 6.5 m × 2.5 m, 0.1 mm accuracy
+        desc: Computer-controlled automatic cutting machine for PVC, Hypalon, and drop-stitch fabrics. Nesting software optimises material utilisation to below 5% waste.
       - name: Tygspridare
-        spec: 3 m max. bredd, spänningsstyrd matning
-        desc: Lägger tyg i enkla eller flera lager med kontrollerad spänning för att förhindra förvridning före skärning.
-  - title: Rörsvetsning och Fogning
+        spec: 3 m max width, tension-controlled feed
+        desc: Lays fabric in single or multiple plies with controlled tension to prevent distortion before cutting.
+  - title: Tube Welding & Bonding
     items:
       - name: Värmekapslingsmaskin
-        spec: Varmluftssvetsning, variabel 200—00 °C, 0.5— m/min
-        desc: Varmluftsvärmekapslingsmaskin för sammanfogning och svetsning av PVC- och Hypalon-rörsömmar. Används för fastsättning, tätning och sammansmältning av rörkammare och flottfogar.
+        spec: Hot-air welding, variable 200—00 °C, 0.5— m/min
+        desc: Hot-air heat sealing machine for bonding and welding PVC and Hypalon tube seams. Used for tacking, sealing, and fusing tube chambers and float joints.
       - name: Dielektrisk RF-press
-        spec: 15 kW, platta 2000 × 600 mm
-        desc: Högfrekvent svetspress för huvudlängsgömmar, akterspegel-till-rör-fogar och tillverkning av stora kammare.
+        spec: 15 kW, platen 2000 × 600 mm
+        desc: Radio-frequency welding press for main longitudinal seams, transom-to-tube joints, and large-chamber fabrication.
       - name: CNC-styrd RF-svets
-        spec: 8 kW, XY-bord 2500 × 1200 mm
-        desc: Programmerbar kurvad-söm-svetsning för komplexa geometrier, logo-prägling och precisionslappning.
-  - title: SUP-skrovtillverkning
+        spec: 8 kW, XY table 2500 × 1200 mm
+        desc: Programmable curved-seam welding for complex geometries, logo embossing, and precision patchwork.
+  - title: SUP Board Manufacturing
     items:
       - name: Drop-Stitch Core Lamination Press
         spec: Large-format press for board cores up to 14 ft LOA
@@ -32,15 +32,15 @@ categories:
       - name: CNC Router (5-axis)
         spec: 3 m × 2 m × 1 m envelope, water-cooled spindle
         desc: Machining of fin boxes, handle cutouts, and custom board components.
-  - title: SUP-tryck och Dekoration
+  - title: SUP Printing & Decoration
     items:
       - name: Digital skrivare
-        spec: Högupplöst bläckstråle, tryckbredd upp till 2 m
-        desc: Direkt-på-tyg digitaltryck för helfärgade SUP-däckgrafik. Skriver ut anpassade mönster, gradienter och fotokvalitetsbilder med UV-resistenta vattenbaserade bläck.
+        spec: High-resolution inkjet, up to 2 m print width
+        desc: Direct-to-fabric digital printing for full-colour SUP deck graphics. Prints custom patterns, gradients, and photo-quality images with UV-resistantwater-based inks.
       - name: Silketrycksmaskin
-        spec: Manuell och halvautomatisk, flerfärgsregistrering
-        desc: Silketryck för SUP-brädeslogotyper, varumärken och upprepade mönster. Ger hållbara, ogenomskinliga tryck med livfull färgmättnad.
-  - title: Montering och Rigging
+        spec: Manual and semi-automatic, multi-colour registration
+        desc: Screen printing for SUP board logos, brand marks, and repeating patterns. Provides durable, opaque prints with vibrant colour saturation.
+  - title: Assembly & Rigging
     items:
       - name: Board Assembly Station
         spec: Modular adjustable, multi-station layout
@@ -51,22 +51,22 @@ categories:
       - name: Deck Pad Laminator
         spec: 3 m × 1.5 m, temperature-controlled
         desc: Heat lamination of EVA foam deck pads to SUP board tops with consistent bond strength.
-  - title: Testning och Kvalitetskontroll
+  - title: Testing & Quality Control
     items:
       - name: Universell Dragtestare
-        spec: 50 kN, ASTM D751
-        desc: Brottkraft, förlängning vid brott och rivningsspridningstest för tygpartier.
+        spec: 50 kN,  / ASTM D751
+        desc: Breaking force, elongation at break, and tear propagation testing for fabric batches.
       - name: Luftretentionsteststativ
-        spec: Programmerbar, 30 min. tryckhållning
-        desc: Automatiserat tryckhållningstest för varje rörkammare före montering.
+        spec: Programmable, 30-min pressure-hold
+        desc: Automated pressure-hold test for every tube chamber before assembly.
       - name: Söm-avskalningstestare
-        spec: Motoriserad 180° avskalning vid 100 mm/min
-        desc: Svetsade och limmade sömmars avskalningshållfasthetstest enligt ISO 6185.
+        spec: Motorised 180° peel at 100 mm/min
+        desc: Weld and glued-seam peel strength testing per ISO 6185.
       - name: Xenon-båge-åldringskammare
-        spec: 2000 h exponering
-        desc: UV-motståndstest för färgförändring och styrkebevarande.
+        spec: 2000 h exposure
+        desc: UV resistance testing for colour change and strength retention.
 cta:
-  title: Intresserad av en fabriksrundtur?
-  desc: Vi välkomnar besökare i vår anläggning i Qingdao. Se vår utrustning och våra processer personligen.
-  label: Planera ett besök →
+  title: Interested in a factory tour?
+  desc: We welcome visitors to our Qingdao facility. See our equipment and processes in person.
+  label: Schedule a visit →
   link: /contact

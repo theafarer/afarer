@@ -1,73 +1,70 @@
 hero:
-  tagline: 'Znalosti o objevování vod'
-  title: 'Učení'
+  tagline: Water Exploration Knowledge
+  title: Learn
   subtitle: |
-    Průvodce, tutoriály a hluboké ponory —vše, co potřebujete k objevování<br />
-    vody s jistotou. Od výběru prvního SUP po zvládnutí pokročilých technik.
-  taglineSection: 'Znalosti pro každého pádlujícího. Od začátečníka po profesionála.'
-
+    Guides, tutorials, and deep dives —everything you need to explore<br />
+    water with confidence. From choosing your first SUP to mastering advanced techniques.
+  taglineSection: Knowledge for every paddler. From beginner to professional.
 featured:
-  tagline: 'Doporučená témata'
-  title: 'Začněte svou vzdělávací cestu'
-  subtitle: 'Ať už jste v vodních sportech noví nebo se chcete posunout na vyšší úroveň, naši průvodci vás pokryjí.'
+  tagline: Featured Topics
+  title: Start your learning journey
+  subtitle: Whether you are new to water sports or looking to level up, our guides have you covered.
   items:
-    - title: 'Základy SUP'
-      description: 'Vše, co začátečník potřebuje vědět —typy prken, velikost pádel, postoj a tipy na první den.'
-      icon: 'tabler:lifebuoy'
-      href: '/learn/sup'
-    - title: 'Nafukovací vs pevné prkno'
-      description: 'Které je pro vás to pravé? Srovnáváme přenosnost, výkon, odolnost a cenu vedle sebe.'
-      icon: 'tabler:arrows-left-right'
-      href: '/compare/inflatable-vs-hardboard'
-    - title: 'Bezpečnost na vodě'
-      description: 'Základní bezpečnostní znalosti, které by měl mít každý pádlující —počasí, PFD, sebezáchrana a více.'
-      icon: 'tabler:shield'
-      href: '/learn/water-safety'
-    - title: 'Průvodce materiály'
-      description: 'PVC vs Hypalon, drop-stitch technologie, denier hodnocení —pochopte, z čeho je vaše vybavení vyrobeno.'
-      icon: 'tabler:flask'
-      href: '/learn/materials'
-    - title: 'Průvodce velikostí SUP'
-      description: 'Najděte správnou délku, šířku a objem prkna pro svou váhu, dovednosti a styl pádlování.'
-      icon: 'tabler:ruler'
-      href: '/size-guide'
-    - title: 'Středně pokročilé techniky'
-      description: 'Posuňte své pádlování pomocí pokročilých záběrů, technik otáčení a ovládání v rozbouřené vodě.'
-      icon: 'tabler:droplet'
-      href: '/v2/intermediate-techniques'
-
+    - title: SUP Basics
+      description: Everything a beginner needs to know —board types, paddle sizing, stance, and first-day tips.
+      icon: tabler:lifebuoy
+      href: /learn/sup
+    - title: Inflatable vs Hard Board
+      description: Which is right for you? We compare portability, performance, durability, and cost side by side.
+      icon: tabler:arrows-left-right
+      href: /compare/inflatable-vs-hardboard
+    - title: Water Safety
+      description: Essential safety knowledge every paddler should have —weather, PFDs, self-rescue, and more.
+      icon: tabler:shield
+      href: /learn/water-safety
+    - title: Materials Guide
+      description: PVC vs Hypalon, drop-stitch technology, denier ratings —understand what your gear is made of.
+      icon: tabler:flask
+      href: /learn/materials
+    - title: SUP Size Guide
+      description: Find the right board length, width, and volume for your weight, skill, and paddling style.
+      icon: tabler:ruler
+      href: /size-guide
+    - title: Intermediate Techniques
+      description: Step up your paddling with advanced strokes, turning techniques, and rough-water handling.
+      icon: tabler:droplet
+      href: /v2/intermediate-techniques
 categories:
-  tagline: 'Kategorie'
-  title: 'Objevujte podle tématu'
-  subtitle: 'Veškerý vzdělávací obsah organizovaný podle úrovně dovedností a zájmu.'
+  tagline: Categories
+  title: Explore by topic
+  subtitle: All learning content organized by skill level and interest.
   columns:
-    - title: 'Začátečník'
+    - title: Beginner
       items:
-        - 'Základy SUP —začněte zde'
-        - 'Nafukovací vs pevné prkno'
-        - 'Základy bezpečnosti na vodě'
-        - 'Jak vybrat své SUP'
-        - 'Průvodce pumpou a balením'
-    - title: 'Středně pokročilý'
+        - SUP Basics —start here
+        - Inflatable vs Hard Board
+        - Water Safety Essentials
+        - How to Choose Your SUP
+        - Pump & Pack Guide
+    - title: Intermediate
       items:
-        - 'Techniky pádlování'
-        - 'Nafukovací technologie'
-        - 'Materiálová reference'
-        - 'Srovnání PVC vs Hypalon'
-        - 'Drop-stitch jádro vysvětleno'
-    - title: 'Pokročilý a profesionální'
+        - Paddling Techniques
+        - Inflatable Technology
+        - Materials Reference
+        - PVC vs Hypalon Comparison
+        - Drop-Stitch Core Explained
+    - title: Advanced & Professional
       items:
-        - 'Flotilové operace'
-        - 'Komerční vybavení'
-        - 'Bezpečnostní a záchranné protokoly'
-        - 'Custom stavby a OEM'
-
+        - Fleet Operations
+        - Commercial-Grade Equipment
+        - Safety & Rescue Protocols
+        - Custom Builds & OEM
 cta:
-  title: 'Stále máte otázky?'
-  subtitle: 'Zeptejte se našeho AI průvodce na personalizované odpovědi o vybavení, bezpečnosti a technikách.'
+  title: Still have questions?
+  subtitle: Ask our AI guide for personalized answers about gear, safety, and techniques.
   actions:
     - variant: primary
-      text: 'Zeptat se Water Advisor AI'
+      text: Ask the Water Advisor AI
       href: '#ai-guide'
-    - text: 'Prohlížet všechny průvodce'
-      href: '/academy'
+    - text: Browse all guides
+      href: /academy

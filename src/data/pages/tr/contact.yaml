@@ -1,26 +1,26 @@
 hero_text:
-  tagline: İletişim
-  title: BİZE ULAŞIN
+  tagline: Contact
+  title: GET IN TOUCH
 contact_form:
   id: form
-  title: Mesaj Gönderin
-  subtitle: Fiyat teklifi, teknik sorular veya iş birliği için bize yazın. Bir iş günü içinde yanıtlıyoruz.
+  title: Send us a message
+  subtitle: For quotes, technical questions or partnership enquiries, drop us a line. We reply within one business day.
   email_to: info@afarer.com
-  submit_button: Gönder
-  success_message: Teşekkürler! Mesajınız alındı. Bir iş günü içinde yanıtlayacağız.
-  error_message: Gönderim sırasında bir hata oluştu. Lütfen tekrar deneyin veya doğrudan e-posta adresine yazın.
+  submit_button: Send Inquiry →Get a Quote
+  success_message: Thanks! Your message has landed in our inbox. We will reply within one business day.
+  error_message: Something went wrong sending your message. Please try again or email us directly.
   default_country_code: '+1'
   captcha:
-    label: 'Anti-spam: aşağıdaki işlemi çözün'
+    label: 'Anti-spam: please solve the following'
   fields:
     - name: firstName
-      label: Ad
+      label: Country
       row: 1
       type: select
       optionsKey: countries
       step: 1
     - name: lastName
-      label: Soyad
+      label: Estimated Order Volume
       row: 1
       type: select
       options:
@@ -36,7 +36,7 @@ contact_form:
           label: 500+ units (Volume pricing)
       step: 1
     - name: companyName
-      label: Şirket
+      label: Customization Needed?
       row: 2
       type: select
       options:
@@ -52,7 +52,7 @@ contact_form:
           label: Not sure — need consultation
       step: 1
     - name: address
-      label: Adres
+      label: Product Categories of Interest
       row: 3
       type: select
       options:
@@ -68,70 +68,70 @@ contact_form:
           label: Accessories (pumps, oars, bags)
       step: 1
     - name: zip
-      label: Posta Kodu
+      label: First Name
       row: 4
       step: 2
     - name: country
-      label: Ülke
+      label: Last Name
       row: 4
       step: 2
     - name: email
-      label: E-posta
+      label: Company Name
       row: 5
       step: 2
     - name: tel
-      label: Telefon
+      label: E-mail
       row: 5
       type: tel
       step: 2
     - name: orderVolume
-      label: Tahmini Sipariş Hacmi
+      label: TEL
       row: 6
       type: select
       withCountryCode: true
       step: 2
     - name: customization
-      label: Özelleştirme gerekli mi?
+      label: Address
       row: 7
       step: 2
     - name: productInterest
-      label: İlgilenilen Ürün Kategorileri
+      label: Zip / Postal Code
       row: 8
       step: 2
     - name: subject
-      label: Konu
+      label: Subject
       row: 9
       step: 3
     - name: message
-      label: Mesaj
+      label: Message
       row: 10
       type: textarea
       rows: 6
       step: 3
 features2_other_ways:
-  title: Diğer İletişim Yolları
+  title: Other ways to reach us
   columns: 3
   items:
-    - title: Satış Soruları
-      description: Fiyat teklifleri, konfigürasyonlar, bayi başvuruları ve toptan siparişler.
+    - title: Sales enquiries
+      description: Quotes, configurations, dealer applications and bulk orders.
       icon: tabler:shopping-bag
-    - title: Teknik Destek
-      description: Garanti, onarım, yedek parça ve kullanım soruları.
+    - title: Technical support
+      description: Warranty, repairs, spare parts and operating questions.
       icon: tabler:tool
-    - title: Basın ve Ortaklıklar
-      description: Medya kitleri, sponsorluk ve sektör iş birlikleri.
+    - title: Press & partnerships
+      description: Media kits, sponsorship and industry collaboration.
       icon: tabler:news
-    - title: Telefon
+    - title: Phone
       description: +86 13305324192
       icon: tabler:headset
-    - title: E-posta
+    - title: Email
       description: info@afarer.com
       icon: tabler:mail
-    - title: Genel Merkez
-      description: Ekonomik Kalkınma Bölgesi, Laixi, Qingdao, Çin, 266600
+    - title: Headquarters
+      description: Economic Development Zone, Laixi, Qingdao, China, 266600
       icon: tabler:map-pin
 map:
-  title: Konumumuz
-  subtitle: Bizi Ziyaret Edin
-  address: Ekonomik Kalkınma Bölgesi, Laixi, Qingdao, Çin, 266600
+  title: Our Location
+  subtitle: Visit us at our headquarters
+  address: Economic Development Zone, Laixi, Qingdao, China, 266600
   zoom: 15

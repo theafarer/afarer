@@ -1,26 +1,26 @@
 hero_text:
-  tagline: Kontakt
-  title: SKONTAKTUJ SIĘ Z NAMI
+  tagline: Contact
+  title: GET IN TOUCH
 contact_form:
   id: form
-  title: Wyślij wiadomość
-  subtitle: W sprawie wyceny, pytań technicznych lub partnerstwa —napisz do nas. Odpowiadamy w ciągu jednego dnia roboczego.
+  title: Send us a message
+  subtitle: For quotes, technical questions or partnership enquiries, drop us a line. We reply within one business day.
   email_to: info@afarer.com
-  submit_button: Wyślij
-  success_message: Dziękujemy! Twoja wiadomość została odebrana. Odpowiemy w ciągu jednego dnia roboczego.
-  error_message: Wystąpił błąd podczas wysyłania. Spróbuj ponownie lub napisz bezpośrednio na adres e-mail.
+  submit_button: Send Inquiry →Get a Quote
+  success_message: Thanks! Your message has landed in our inbox. We will reply within one business day.
+  error_message: Something went wrong sending your message. Please try again or email us directly.
   default_country_code: '+1'
   captcha:
-    label: 'Antyspam: rozwiąż następujące zadanie'
+    label: 'Anti-spam: please solve the following'
   fields:
     - name: firstName
-      label: Imię
+      label: Country
       row: 1
       type: select
       optionsKey: countries
       step: 1
     - name: lastName
-      label: Nazwisko
+      label: Estimated Order Volume
       row: 1
       type: select
       options:
@@ -36,7 +36,7 @@ contact_form:
           label: 500+ units (Volume pricing)
       step: 1
     - name: companyName
-      label: Firma
+      label: Customization Needed?
       row: 2
       type: select
       options:
@@ -52,7 +52,7 @@ contact_form:
           label: Not sure — need consultation
       step: 1
     - name: address
-      label: Adres
+      label: Product Categories of Interest
       row: 3
       type: select
       options:
@@ -68,70 +68,70 @@ contact_form:
           label: Accessories (pumps, oars, bags)
       step: 1
     - name: zip
-      label: Kod pocztowy
+      label: First Name
       row: 4
       step: 2
     - name: country
-      label: Kraj
+      label: Last Name
       row: 4
       step: 2
     - name: email
-      label: Email
+      label: Company Name
       row: 5
       step: 2
     - name: tel
-      label: Telefon
+      label: E-mail
       row: 5
       type: tel
       step: 2
     - name: orderVolume
-      label: Szacowana wielkość zamówienia
+      label: TEL
       row: 6
       type: select
       withCountryCode: true
       step: 2
     - name: customization
-      label: Potrzebujesz personalizacji?
+      label: Address
       row: 7
       step: 2
     - name: productInterest
-      label: Interesujące kategorie produktów
+      label: Zip / Postal Code
       row: 8
       step: 2
     - name: subject
-      label: Temat
+      label: Subject
       row: 9
       step: 3
     - name: message
-      label: Wiadomość
+      label: Message
       row: 10
       type: textarea
       rows: 6
       step: 3
 features2_other_ways:
-  title: Inne sposoby kontaktu
+  title: Other ways to reach us
   columns: 3
   items:
-    - title: Zapytania handlowe
-      description: Wyceny, konfiguracje, zgłoszenia dealerskie i zamówienia hurtowe.
+    - title: Sales enquiries
+      description: Quotes, configurations, dealer applications and bulk orders.
       icon: tabler:shopping-bag
-    - title: Wsparcie techniczne
-      description: Gwarancja, naprawy, części i pytania eksploatacyjne.
+    - title: Technical support
+      description: Warranty, repairs, spare parts and operating questions.
       icon: tabler:tool
-    - title: Prasa i partnerstwa
-      description: Pakiety medialne, sponsoring i współpraca branżowa.
+    - title: Press & partnerships
+      description: Media kits, sponsorship and industry collaboration.
       icon: tabler:news
-    - title: Telefon
+    - title: Phone
       description: +86 13305324192
       icon: tabler:headset
     - title: Email
       description: info@afarer.com
       icon: tabler:mail
-    - title: Siedziba główna
+    - title: Headquarters
       description: Economic Development Zone, Laixi, Qingdao, China, 266600
       icon: tabler:map-pin
 map:
-  title: Nasza lokalizacja
-  subtitle: Odwiedź nas
+  title: Our Location
+  subtitle: Visit us at our headquarters
   address: Economic Development Zone, Laixi, Qingdao, China, 266600
   zoom: 15

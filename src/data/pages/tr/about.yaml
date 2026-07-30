@@ -1,113 +1,106 @@
-﻿hero:
-  tagline: Hakkımızda
+hero:
+  tagline: About us
   image:
     src: https://assets.afarer.com/images/afarer/factory/afarer-factory-building.webp
-    alt: afarer Atölyesi
+    alt: afarer factory and workshop
   title: |
-    Deniz mühendisliğini <br />
-    <span class="text-accent dark:text-white">afarer</span> tarzıyla buluşturuyoruz
-  subtitle: 'Bir sahil atölyesinde, tek bir tekne ve sarsılmaz bir inançla başladık: deniz ürünleri, hayat buna bağlıymış gibi tasarlanmalıdır —çünkü öyledir. Bugün 40+ ülkeye teslimat yapıyoruz, ancak her gövde hâlâ şirketi kuran aynı ellerden geçiyor.'
-
+    Marine engineering, <br />
+    built the <span class="text-accent dark:text-white">afarer</span> way
+  subtitle: 'We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company.'
 stats:
-  title: Rakamlarla
+  title: By the numbers
   columns: 4
   stats:
-    - title: Teslim Edilen Gövde
-      amount: '2,400+'
-    - title: Teslimat Yapılan Ülke
+    - title: Hulls delivered
+      amount: 2,400+
+    - title: Countries shipped
       amount: '40'
-    - title: Toplam Deneyim (yıl)
+    - title: Years of combined experience
       amount: '60'
-    - title: Ortalama Yanıt Süresi (s)
+    - title: Average warranty response (hours)
       amount: '24'
-
 features3_what_we_build:
-  title: Ne Üretiyoruz
-  subtitle: En ince ayrıntısına kadar bildiğimiz odaklanmış bir ürün gamı —kestirme yol veya rozet mühendisliği yok.
+  title: What we build
+  subtitle: 'We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company.'
   columns: 3
   isBeforeContent: true
   items:
-    - title: SUP Botlar
-      description: 3,3 m'den 7,5 m'ye kadar alüminyum gövdeli SUP'ler. Devriye, dalış, balıkçılık ve aile kullanımı için tasarlanmıştır.
+    - title: SUP boards
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
       icon: tabler:ship
-    - title: Şişme Botlar
-      description: 2,4 m'den 4,2 m'ye kadar PVC ve Hypalon şişme botlar. Hafif, dayanıklı ve kolay saklanabilir.
+    - title: Inflatable SUPs
+      description: PVC inflatable SUP boards from 9 ft to 12 ft. Light, tough and easy to stow.
       icon: tabler:speedboat
-    - title: Süperyat Tenderi
-      description: Ana yat tasarımına göre üretilmiş, yüksek spesifikasyonlu kompakt SUP'ler.
+    - title: Premium SUP packages
+      description: Compact, high-spec SUPs custom-built to match your brand or fleet requirements.
       icon: tabler:crown
-
 features3_more:
   columns: 3
   isAfterContent: true
   items:
-    - title: Aksesuarlar
-      description: Kemerler, pompalar, örtüler, su geçirmez çantalar, yakıt tankları ve elektronik. Tamamı botlarımızla uyumlu.
+    - title: Accessories
+      description: Paddles, pumps, covers, dry-bags and electronics. All matched to our boards.
       icon: tabler:package
-    - title: Modifikasyon ve Onarım
-      description: Şişme bölme onarımı, elektronik yükseltme ve motor değişimi.
+    - title: Refit & repair
+      description: In-house board repair, pad replacement and accessory upgrades.
       icon: tabler:tool
-    - title: Özel Ürünler
-      description: Ticari, bilimsel ve askeri müşteriler için tasarım.
+    - title: Custom builds
+      description: Project-by-project design for commercial, scientific and military customers.
       icon: tabler:hammer
   image:
     src: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-2.webp
-    alt: Özel yapım tekne
-
+    alt: Boat design and engineering discussion
 steps2_values:
-  title: Değerlerimiz
-  subtitle: İlk günden itibaren her ürünü şekillendiren üç ilke.
+  title: Our values
+  subtitle: Three principles that have shaped every product since day one.
   items:
-    - title: Teknede ailen varmış gibi inşa et
-      description: Her gövde, her kaynak ve her bileşen, kendi ailemiz kullanacakmış gibi işlenir.
+    - title: Build like it carries your family
+      description: Every hull, weld and fastener is treated as if our own families will use it.
       icon: tabler:heart
-    - title: Satıştan Önce Mühendislik
-      description: Spesifikasyon yanlışsa, spesifikasyonu değiştiririz —asla müşteriyi değil.
+    - title: Engineer before we sell
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
       icon: tabler:settings
-    - title: Garanti Ötesi Destek
-      description: Yirmi yıllık gövdeler hâlâ yedek parça için arar —biz de hâlâ yanıtlarız.
+    - title: Support that outlasts the warranty
+      description: Twenty-year-old hulls still call us for spare parts, and we still pick up.
       icon: tabler:headset
-
 steps2_milestones:
-  title: Kilometre Taşları
-  subtitle: afarer hikayesinin kısa versiyonu.
+  title: Milestones
+  subtitle: A short version of the afarer story.
   isReversed: true
   items:
-    - title: Sahil atölyesinde kuruldu
-      description: Bir CNC freze makinesi ve sarsılmaz bir vizyona sahip iki deniz mühendisi.
+    - title: Founded in a coastal workshop
+      description: Started by two naval architects with a CNC mill and a stubborn idea.
       icon: tabler:building-factory
-    - title: İlk 1.000 gövde teslimatı
-      description: Yedinci yılda, ağırlıklı olarak ağızdan ağıza ve tekrar eden müşteriler sayesinde ulaşıldı.
+    - title: First 1,000 hulls delivered
+      description: Reached in our seventh year, mostly through word of mouth and repeat customers.
       icon: tabler:circle-check
-    - title: Uluslararası ihracat programı
-      description: Beş kıtada yerel servis ortaklarıyla 40+ ülkeye teslimat.
+    - title: International export programme
+      description: Now shipping to 40+ countries with localised support partners on five continents.
       icon: tabler:world
-
 features2_locations:
-  title: Lokasyonlarımız
-  tagline: Bizi Nerede Bulabilirsiniz
+  title: Our locations
+  tagline: Find us
   columns: 3
   items:
-    - title: Genel Merkez ve Atölye
-      description: Sahil sanayi parkı, bina 4 —randevu ile ziyaret için hafta içi açık.
-    - title: AB Servis Merkezi
-      description: Akdeniz limanı —Avrupalı müşteriler için modifikasyon, onarım ve garanti desteği.
-    - title: APAC Ortak Ağı
-      description: Avustralya, Japonya, Singapur ve Hong Kong'da yetkili servis ortakları.
+    - title: Headquarters & workshop
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+    - title: EU service centre
+      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+    - title: APAC partner network
+      description: Authorised service partners in Australia, Japan, Singapore and Hong Kong.
 brand_hub_tagline: Brand
 brand_hub_title: Explore Our Brand
-brand_hub_subtitle: Dive deeper into our marine engineering expertise, global presence, and the principles that drive us.
-
+brand_hub_subtitle: Dive deeper into our SUP engineering expertise, global presence, and the principles that drive us.
 brand_hub_cards:
   - title: Marine Expertise
-    desc: 'Decades of material science, precision manufacturing, and real-world testing —from PVC/Hypalon fabrication to deep-V hull design and drop-stitch technology.'
+    desc: Decades of material science, precision manufacturing, and real-world testing —from PVC/Hypalon fabrication to deep-V hull design and drop-stitch technology.
     link: /brand-marine-expertise
-    link_label: 'Learn more →'
+    link_label: Learn more →
   - title: Global Presence
-    desc: 'Shipping to 50+ countries from our Qingdao facility with authorized service partners across Europe, Asia-Pacific, and the Americas.'
+    desc: Shipping to 50+ countries from our Qingdao facility with authorized service partners across Europe, Asia-Pacific, and the Americas.
     link: /brand-global-presence
-    link_label: 'Learn more →'
+    link_label: Learn more →
   - title: Why afarer
-    desc: 'Vertical integration, dual certification (ISO 9001 + BSCI), CE compliance, and low MOQs —built for brands, distributors, and government agencies.'
+    desc: Vertical integration, dual certification (ISO 9001 + BSCI), CE compliance, and low MOQs —built for brands, distributors, and government agencies.
     link: /brand-why-afarer
-    link_label: 'Learn more →'
+    link_label: Learn more →

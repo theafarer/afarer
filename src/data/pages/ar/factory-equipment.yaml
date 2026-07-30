@@ -1,30 +1,30 @@
 hero:
-  tagline: المعدات
-  title: المعدات والآلات الصناعية
-  subtitle: معدات صناعية لقطع واللحام والطباعة والتجميع
-  back_label: العودة إلى المصنع
+  tagline: Equipment
+  title: Manufacturing Equipment & Machinery
+  subtitle: Industrial-grade equipment across cutting, welding, printing, and assembly
+  back_label: Back to Factory
   back_link: /factory
 categories:
-  - title: القطع وتجهيز المواد
+  - title: Cutting & Material Preparation
     items:
       - name: ماكينة قطع PVC أوتوماتيكية
-        spec: تحكم CNC، 6.5 m × 2.5 m، دقة 0.1 mm
-        desc: ماكينة قطع أوتوماتيكية يتحكم بها الحاسوب لأنسجة PVC وHypalon وdrop-stitch. يحسّن برنامج التعشيش استخدام المواد إلى أقل من 5% هدر.
+        spec: CNC-controlled, 6.5 m × 2.5 m, 0.1 mm accuracy
+        desc: Computer-controlled automatic cutting machine for PVC, Hypalon, and drop-stitch fabrics. Nesting software optimises material utilisation to below 5% waste.
       - name: فارش الأقمشة
-        spec: عرض أقصى 3 m، تغذية متحكم بها بالشد
-        desc: يفرد القماش في طبقات مفردة أو متعددة بشد متحكم به لمنع التشوه قبل القطع.
-  - title: لحام الأنابيب والربط
+        spec: 3 m max width, tension-controlled feed
+        desc: Lays fabric in single or multiple plies with controlled tension to prevent distortion before cutting.
+  - title: Tube Welding & Bonding
     items:
       - name: ماكينة ختم بالحرارة
-        spec: لحام هواء ساخن، متغير 200—00 °C، 0.5— m/min
-        desc: ماكينة ختم حراري بالهواء الساخن لربط ولحام درزات أنابيب PVC وHypalon. تُستخدم للتثبيت والختم وصهر حجرات الأنابيب ومفاصل الطفو.
+        spec: Hot-air welding, variable 200—00 °C, 0.5— m/min
+        desc: Hot-air heat sealing machine for bonding and welding PVC and Hypalon tube seams. Used for tacking, sealing, and fusing tube chambers and float joints.
       - name: مكبس RF عازل
-        spec: 15 kW، لوح 2000 × 600 mm
-        desc: مكبس لحام بالتردد الراديوي للدرزات الطولية الرئيسية، ومفاصل الهيكل إلى الأنبوب، وتصنيع الحجرات الكبيرة.
+        spec: 15 kW, platen 2000 × 600 mm
+        desc: Radio-frequency welding press for main longitudinal seams, transom-to-tube joints, and large-chamber fabrication.
       - name: لحام RF بتحكم CNC
-        spec: 8 kW، طاولة XY 2500 × 1200 mm
-        desc: لحام درزات منحنية قابل للبرمجة للأشكال المعقدة، وختم الشعارات، وترقيع دقيق.
-  - title: تصنيع هيكل SUP
+        spec: 8 kW, XY table 2500 × 1200 mm
+        desc: Programmable curved-seam welding for complex geometries, logo embossing, and precision patchwork.
+  - title: SUP Board Manufacturing
     items:
       - name: Drop-Stitch Core Lamination Press
         spec: Large-format press for board cores up to 14 ft LOA
@@ -32,15 +32,15 @@ categories:
       - name: CNC Router (5-axis)
         spec: 3 m × 2 m × 1 m envelope, water-cooled spindle
         desc: Machining of fin boxes, handle cutouts, and custom board components.
-  - title: طباعة وتزيين SUP
+  - title: SUP Printing & Decoration
     items:
       - name: طابعة رقمية
-        spec: حبر بدقة عالية، عرض طباعة حتى 2 m
-        desc: طباعة رقمية مباشرة على القماش لرسومات سطح SUP ملونة بالكامل. تطبع أنماطًا مخصصة وتدرجات وصورًا بجودة الصورة بأحبار مائية مقاومة للأشعة فوق البنفسجية.
+        spec: High-resolution inkjet, up to 2 m print width
+        desc: Direct-to-fabric digital printing for full-colour SUP deck graphics. Prints custom patterns, gradients, and photo-quality images with UV-resistantwater-based inks.
       - name: ماكينة طباعة بالشاشة
-        spec: يدوي ونصف آلي، تسجيل متعدد الألوان
-        desc: طباعة بالشاشة لشعارات ألواح SUP والعلامات التجارية والأنماط المتكررة. توفر طباعات متينة معتمة بتشبع لوني حيوي.
-  - title: التجميع والتركيب
+        spec: Manual and semi-automatic, multi-colour registration
+        desc: Screen printing for SUP board logos, brand marks, and repeating patterns. Provides durable, opaque prints with vibrant colour saturation.
+  - title: Assembly & Rigging
     items:
       - name: Board Assembly Station
         spec: Modular adjustable, multi-station layout
@@ -51,22 +51,22 @@ categories:
       - name: Deck Pad Laminator
         spec: 3 m × 1.5 m, temperature-controlled
         desc: Heat lamination of EVA foam deck pads to SUP board tops with consistent bond strength.
-  - title: الاختبار وضبط الجودة
+  - title: Testing & Quality Control
     items:
       - name: مختبر الشد الشامل
-        spec: 50 kN، ASTM D751
-        desc: اختبار قوة الكسر والاستطالة عند الكسر وانتشار التمزق لدفعات الأقمشة.
+        spec: 50 kN,  / ASTM D751
+        desc: Breaking force, elongation at break, and tear propagation testing for fabric batches.
       - name: جهاز اختبار الاحتفاظ بالهواء
-        spec: قابل للبرمجة، احتفاظ ضغط 30 دقيقة
-        desc: اختبار احتفاظ ضغط آلي لكل حجرة أنبوب قبل التجميع.
+        spec: Programmable, 30-min pressure-hold
+        desc: Automated pressure-hold test for every tube chamber before assembly.
       - name: مختبر قشر الدرزات
-        spec: قشر كهربائي 180° عند 100 mm/min
-        desc: اختبار قوة قشر الدرزات الملحومة والمُلصقة وفق ISO 6185.
+        spec: Motorised 180° peel at 100 mm/min
+        desc: Weld and glued-seam peel strength testing per ISO 6185.
       - name: غرفة تعرية بقوس زينون
-        spec: 2000 h تعرض
-        desc: اختبار مقاومة الأشعة فوق البنفسجية لتغير اللون والحفاظ على القوة.
+        spec: 2000 h exposure
+        desc: UV resistance testing for colour change and strength retention.
 cta:
-  title: مهتم بجولة في المصنع؟
-  desc: نرحب بالزوار في منشأتنا في تشينغداو. شاهد معداتنا وعملياتنا بأنفسكم.
-  label: جدول موعد زيارة →
+  title: Interested in a factory tour?
+  desc: We welcome visitors to our Qingdao facility. See our equipment and processes in person.
+  label: Schedule a visit →
   link: /contact

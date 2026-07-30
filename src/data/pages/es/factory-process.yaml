@@ -1,48 +1,49 @@
-﻿hero:
-  tagline: Proceso
-  title: Proceso de fabricación
-  subtitle: De la materia prima al barco listo para navegar —cada paso bajo nuestro control
-  back_label: Volver a la fábrica
+hero:
+  tagline: Process
+  title: Manufacturing Process
+  subtitle: From raw material to sea-ready SUP —every step under our control
+  back_label: Back to Factory
   back_link: /factory
-
-intro: A diferencia de las marcas que subcontratan la producción a fábricas de terceros, afarer posee y opera toda su cadena de fabricación. Esta integración vertical nos permite mantener un estricto control de calidad en cada etapa, responder rápidamente a los requisitos personalizados y entregar una calidad de producto constante lote tras lote. Así es como se construye un barco en nuestras instalaciones.
-
+intro: >-
+  Unlike brands that outsource production to third-party factories, afarer owns and operates its entire manufacturing chain. This vertical integration allows us to maintain strict quality control at every stage, respond quickly to custom requirements, and deliver consistent product quality batch
+  after batch. Here is how a SUP board is built in our facility.
 steps:
   - step: '01'
-    title: Recepción e inspección de materiales
-    description: Cada lote entrante de tela de PVC, mat de fibra de vidrio, resina y herrajes se inspecciona según las especificaciones. Las muestras de tela se prueban para verificar resistencia a la tracción, uniformidad de espesor y resistencia a los rayos UV antes de liberarlas a producción. Los materiales no conformes se ponen en cuarentena y se devuelven.
-    duration: 1— días
+    title: Material Receipt & Inspection
+    description: Every incoming batch of PVC fabric, fiberglass mat, resin, and hardware is inspected against specification. Fabric samples are tested for tensile strength, thickness uniformity, and UV resistance before release to production. Non-conforming materials are quarantined and returned.
+    duration: 1— days
   - step: '02'
-    title: Corte automático de PVC
-    description: Las telas aprobadas se colocan en la máquina de corte CNC automática y se cortan con precisión submilimétrica. El anidado optimizado por computadora dispone los paneles para minimizar el desperdicio —normalmente por debajo del 5%. Los paneles cortados se etiquetan por modelo de barco y cámara, y luego se agrupan para su traslado al taller de soldadura.
-    duration: 2— horas por kit de barco
+    title: Automatic PVC Cutting
+    description: Approved fabrics are laid on the automatic CNC cutting machine and cut with sub-millimetre accuracy. Computer-optimised nesting arranges panels to minimise waste —typically below 5%. Cut panels are labelled by boat model and chamber, then bundled for transfer to the welding workshop.
+    duration: 2— hours per boat kit
   - step: '03'
-    title: Termosellado y soldadura de tubos
-    description: Los paneles se fijan y unen mediante máquinas de termosellado con soldadura de aire caliente a temperaturas controladas de 200—00 °C. Las costuras principales se refuerzan con soldadura dieléctrica RF para uniones herméticas y de alta resistencia. Las cámaras terminadas se inflan a 1,5 veces la presión de trabajo durante una validación de retención de aire de 30 minutos.
-    duration: 1— días por barco
+    title: Tube Heat Sealing & Welding
+    description: >-
+      Panels are tacked and bonded using heat sealing machines  with hot-air welding at controlled temperatures of 200—00 °C. Main seams are reinforced with RF dielectric welding for airtight, high-strength joints. Completed chambers are inflated to 1.5× working pressure for 30-minute air-retention
+      validation.
+    duration: 1— days per boat
   - step: '04'
-    title: Moldeo del casco SUP de fibra de vidrio
-    description: Los cascos de los botes SUP se producen mediante moldeo de fibra de vidrio con laminado manual. Las capas de mat de fibra de vidrio y roving tejido se enrollan a mano con resina de poliéster o viniléster en moldes de precisión. Cada capa se embolsa al vacío para lograr una calidad de laminado constante. El casco se termina con gelcoat para obtener una superficie marina de alto brillo y resistente a los rayos UV.
-    duration: 2— días por casco
+    title: Drop-Stitch Core Bonding
+    description: SUP board drop-stitch cores are bonded to outer PVC laminates using heat lamination. Thousands of internal polyester threads connect top and bottom layers, creating a rigid structure at 12-15 PSI. Rail bands are triple-layer fusion bonded for edge strength.
+    duration: 1— days per board
   - step: '05'
-    title: Impresión y decoración de SUP
-    description: Los gráficos de la cubierta de las tablas de SUP se aplican mediante impresión digital para diseños fotográficos a todo color y serigrafía para logotipos duraderos y patrones repetitivos. Las impresiones se curan y sellan para resistir los rayos UV y la abrasión.
-    duration: 1— días
+    title: SUP Printing & Decoration
+    description: SUP board deck graphics are applied using digital printing  for full-colour photo-quality designs, and screen printing  for durable logos and repeating patterns. Prints are cured and sealed for UV and abrasion resistance.
+    duration: 1— days
   - step: '06'
-    title: Ensamblaje final y aparejado
-    description: Los cascos de fibra de vidrio y los conjuntos de tubos de PVC se acoplan en la línea de ensamblaje. Se monta el motor, se conectan los controles de dirección y acelerador, se instala el sistema de combustible y se cablea todo el arnés eléctrico. Cada barco sigue una lista de verificación de ensamblaje de 100 puntos con aprobación obligatoria en cada etapa.
-    duration: 2— días
+    title: Final Assembly & Fitting
+    description: Valves, D-rings, handles, fin boxes, and deck pads are installed on the assembly line. Each board follows a 100-point assembly checklist with mandatory sign-off at each stage.
+    duration: 1— days
   - step: '07'
-    title: Pruebas de calidad e inspección
-    description: 'Cada barco terminado pasa por una puerta de calidad obligatoria: prueba de retención de aire de las cámaras, comprobación del funcionamiento de los sistemas, verificación del par de apriete de los fijadores e inspección estética. Las construcciones personalizadas y los prototipos también reciben pruebas de navegación en el agua que cubren velocidad, manejo, estabilidad y resistencia.'
-    duration: 1— días
+    title: Quality Testing & Inspection
+    description: 'Every completed board undergoes mandatory quality gate: chamber air-retention test, hardware function check, fastener torque verification, and cosmetic inspection. Custom and prototype builds also receive in-water trials covering stability and handling.'
+    duration: 1— days
   - step: '08'
-    title: Embalaje y envío
-    description: Los barcos se desinflan, se pliegan según el procedimiento, se embalan en bolsas tejidas de alta resistencia o cajas de contrachapado, y se cargan para su envío. Cada paquete se etiqueta con el modelo, el número de serie y el destino. Coordinamos con los transitarios para los envíos de contenedores FCL y LCL en todo el mundo.
-    duration: 1 día
-
+    title: Packing & Shipping
+    description: Boards are deflated, folded per procedure, packed in heavy-duty woven bags or retail boxes, and loaded for shipment. Each package is labelled with model, serial number, and destination. We coordinate with freight forwarders for FCL and LCL container shipments worldwide.
+    duration: 1 day
 cta:
-  title: Conoce nuestro equipamiento y maquinaria
-  desc: Explora el equipamiento de grado industrial detrás de cada barco afarer.
-  label: Ver equipamiento →
+  title: See our equipment and machinery
+  desc: Explore the industrial-grade equipment behind every afarer SUP board.
+  label: View equipment →
   link: /factory/equipment

@@ -1,37 +1,37 @@
 hero_text:
   tagline: Get a Quote
-  title: 귀하의 프로젝트에 대한<br />견적 요청
-  subtitle: 귀하의 요구 사항을 알려주시면 저희 팀에서 영업일 기준 2일 이내에 자세한 견적을 보내드리겠습니다.
+  title: Request a Quotation<br />for Your Project
+  subtitle: Tell us about your requirements and our team will respond with a detailed quotation within 2 business days.
 steps2_process:
   title: How It Works
-  subtitle: 문의부터 견적까지 간단한 4단계.
+  subtitle: Four simple steps from inquiry to quotation.
   items:
     - title: 'Step 1: Submit Your Requirements'
-      description: 아래 양식에 제품 유형, 수량, 사양을 입력하세요. 자세한 내용을 제공할수록 견적이 더 정확해집니다.
+      description: Fill out the form below with your product type, quantity, and specifications. The more detail you provide, the more accurate your quotation.
       icon: tabler:file-text
     - title: 'Step 2: We Review & Advise'
-      description: 당사 엔지니어링 팀은 귀하의 요구 사항을 검토한 후 확인을 위해 귀하에게 연락할 수 있습니다. 제품 구성 및 옵션에 대한 권장 사항을 제공합니다.
+      description: Our engineering team reviews your requirements and may contact you for clarification. We provide recommendations on product configuration and options.
       icon: tabler:users
     - title: 'Step 3: Receive Your Quote'
-      description: 단가, MOQ, 리드타임, 결제 조건, 배송 옵션을 포함한 자세한 견적을 받아보실 수 있습니다. 일반적으로 48시간 이내입니다.
+      description: You receive a detailed quotation including unit pricing, MOQ, lead time, payment terms, and shipping options. Typically within 48 hours.
       icon: tabler:currency-dollar
     - title: 'Step 4: Sample & Production'
-      description: 견적 승인 후 샘플 제작(해당되는 경우)을 진행하거나 직접 대량 생산을 진행합니다. 프로세스 전반에 걸쳐 정기적인 업데이트가 이루어집니다.
+      description: After quote acceptance, we proceed to sample production (if applicable) or directly to mass production. Regular updates throughout the process.
       icon: tabler:building-factory
 content_form:
   tagline: Quotation Form
-  title: 귀하의 프로젝트에 대해 알려주십시오
-  subtitle: '*가 있는 모든 필드는 필수입니다.'
+  title: Tell Us About Your Project
+  subtitle: All fields with * are required.
   fields:
     - name: Product Type
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
         - SUP Board
         - Inflatable SUP
+        - Inflatable SUP Board
         - Life Vest
-        - Accessory
+        - Marine Accessory
+        - Custom OEM/ODM
     - name: Quantity
       type: text
       options:
@@ -47,13 +47,13 @@ content_form:
         - Other
     - name: Target Market
       type: text
-      placeholder: e.g. Europe, North America, Middle East
+      placeholder: e.g. 50 units
     - name: Customization Needed
       type: text
-      placeholder: e.g. custom colors, branding, packaging
+      placeholder: e.g. Europe, North America, Middle East
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: e.g. Italy, UAE, USA, Australia
     - name: Additional Requirements
       type: textarea
       options:

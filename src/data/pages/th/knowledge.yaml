@@ -1,51 +1,51 @@
 hero:
-  tagline: กราฟความรู้
-  title: ความรู้การสำรวจทางน้ำ
+  tagline: Knowledge Graph
+  title: Water Exploration Knowledge
   subtitle: |
-    ฐานความรู้ที่มีโครงสร้างครอบคลุมเทคโนโลยี SUP แบบเป่าลม<br />
-    ความปลอดภัยทางน้ำ วิศวกรรมเรือ และการวางแผนการผจญภัย
-  taglineSection: สำรวจ เรียนรู้ ไปด้วยความมั่นใจ
+    A structured knowledge base covering inflatable SUP technology,<br />
+    water safety, boat engineering, and adventure planning.
+  taglineSection: Explore. Learn. Go with confidence.
 clusters:
-  tagline: กลุ่มความรู้
-  title: สำรวจตามหัวข้อ
-  subtitle: ดำดิ่งลึกสู่เทคโนโลยี ความปลอดภัย และทักษะเบื้องหลังทุกผลิตภัณฑ์ afarer
+  tagline: Knowledge Clusters
+  title: Explore by topic
+  subtitle: Deep dives into the technology, safety, and skills behind every afarer product.
   items:
-    - title: ความรู้ SUP
-      description: ตั้งแต่การเลือกกระดานแรกจนถึงเทคนิคทัวร์ริ่งขั้นสูง —ทุกอย่างเกี่ยวกับการพายยืน
+    - title: SUP Buying Guides
+      description: From choosing your first board to advanced touring techniques —everything about stand-up paddle boarding.
       icon: tabler:lifebuoy
       topics:
-        - วิธีเลือก SUP เป่าลมแรกของคุณ
-        - ขนาด SUP ที่ดีที่สุดสำหรับผู้เริ่มต้น
-        - การพายยืนยากแค่ไหน?
-        - เปรียบเทียบกระดานเป่าลมกับกระดานแข็ง
-        - รายการตรวจสอบความปลอดภัย SUP
-    - title: ความรู้เรือ
-      description: คำแนะนำทางเทคนิคเกี่ยวกับเรือเป่าลม SUP ดิงกี้ และคายัค —วิศวกรรม วัสดุ และการปฏิบัติการ
-      icon: tabler:sailboat
-      topics:
-        - ประเภทเรือเป่าลมอธิบาย
-        - เปรียบเทียบ PVC vs Hypalon
-        - เปรียบเทียบ SUP vs ดิงกี้
-        - เทคโนโลยี drop-stitch เจาะลึก
-        - คู่มือวัสดุศาสตร์ทางทะเล
-    - title: ความรู้ความปลอดภัย
-      description: ความรู้ด้านความปลอดภัยที่จำเป็นสำหรับนักพายทุกคน —ตั้งแต่การเลือก PFD การอ่านสภาพอากาศ ถึงเทคนิคการช่วยเหลือตนเอง
-      icon: tabler:shield
-      topics:
-        - รายการตรวจสอบความปลอดภัย SUP
-        - คุณต้องการเสื้อชูชีพหรือไม่?
-        - คู่มือความปลอดภัยการพายในมหาสมุทร
-        - ความปลอดภัยในแม่น้ำสำหรับคายัคเป่าลม
-        - การตระหนักถึงสภาพอากาศและสภาพน้ำ
-    - title: เทคโนโลยี
-      description: วิศวกรรมเบื้องหลังผลิตภัณฑ์ afarer —วัสดุ วิธีการก่อสร้าง และการทดสอบคุณภาพ
+        - How to choose your first inflatable SUP
+        - SUP size and weight capacity guide
+        - Best SUP for beginners, touring, yoga, and racing
+        - Common SUP buying mistakes to avoid
+        - Inflatable vs hard board comparison
+    - title: SUP Engineering & Technology
+      description: Technical guides on inflatable SUP boards —materials, construction methods, and manufacturing processes.
       icon: tabler:microscope
       topics:
-        - เทคโนโลยี PVC ระดับทะเล
-        - แกน drop-stitch อธิบาย
-        - ทำไม PSI ถึงสำคัญสำหรับ SUP เป่าลม
-        - การเชื่อม RF vs การติดด้วยกาว
-        - การทดสอบคุณภาพและการรับรอง
+        - Drop-stitch technology deep dive
+        - Military-grade PVC specifications
+        - Fusion lamination vs adhesive bonding
+        - EVA foam technology and artwork methods
+        - SUP valve types and fin systems
+    - title: SUP Safety & Maintenance
+      description: Essential safety knowledge for every paddler —from PFD selection to weather reading to board care and repair.
+      icon: tabler:shield
+      topics:
+        - SUP safety checklist and PFD requirements
+        - Multi-chamber safety for remote water
+        - SUP inflation PSI guide
+        - Board storage and winter care
+        - Inflatable repair techniques
+    - title: SUP Skills & Techniques
+      description: Paddling techniques, touring skills, and fitness training for all skill levels.
+      icon: tabler:sailboat
+      topics:
+        - Beginner paddling techniques
+        - Intermediate stroke mastery
+        - Touring and expedition planning
+        - SUP fitness and racing training
+        - Whitewater and river running skills
     - title: SUP Lifestyle & Special Uses
       description: Specialized SUP activities —yoga, fishing, dogs, families, and travel tips.
       icon: tabler:heart
@@ -65,19 +65,19 @@ clusters:
         - SUP board materials explained
         - UV printing vs EVA block artwork
 featured_guides:
-  tagline: คำแนะนำแนะนำ
-  title: แหล่งความรู้ยอดนิยม
+  tagline: Featured Guides
+  title: Most popular knowledge resources
   items:
-    - title: พื้นฐาน SUP
+    - title: SUP Basics
       href: /learn/sup
-    - title: กระดานเป่าลม vs กระดานแข็ง
+    - title: Inflatable vs Hard Board
       href: /compare/inflatable-vs-hardboard
-    - title: คู่มือความปลอดภัยทางน้ำ
+    - title: Water Safety Guide
       href: /learn/water-safety
-    - title: เอกสารอ้างอิงวัสดุ
+    - title: Materials Reference
       href: /learn/materials
-    - title: คู่มือขนาด SUP
-      href: /size-guide
+    - title: SUP Buying Guide
+      href: /guides/how-to-choose-your-sup
     - title: SUP Size Guide
       href: /guides/sup-size-guide
     - title: SUP Tech Center
@@ -89,11 +89,11 @@ featured_guides:
     - title: Paddle Techniques
       href: /guides/paddling-techniques
 cta:
-  title: เริ่มสำรวจ
-  subtitle: ดำดิ่งสู่ฐานความรู้ของเราและรับข้อมูลที่คุณต้องการสำหรับการผจญภัยทางน้ำครั้งต่อไป
+  title: Start exploring
+  subtitle: Dive into our knowledge base and get the information you need for your next water adventure.
   actions:
     - variant: primary
-      text: เรียกดูคำแนะนำทั้งหมด
+      text: Browse all guides
       href: /academy
-    - text: สำรวจกราฟความรู้
+    - text: Explore Knowledge Graph
       href: /knowledge

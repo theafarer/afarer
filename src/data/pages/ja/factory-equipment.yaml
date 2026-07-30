@@ -1,30 +1,30 @@
 hero:
-  tagline: 設備
-  title: 製造装置および機械
-  subtitle: 切断、溶接、印刷、組立に対応する工業グレードの装置
-  back_label: 工場に戻る
+  tagline: Equipment
+  title: Manufacturing Equipment & Machinery
+  subtitle: Industrial-grade equipment across cutting, welding, printing, and assembly
+  back_label: Back to Factory
   back_link: /factory
 categories:
-  - title: 切断と素材準備
+  - title: Cutting & Material Preparation
     items:
       - name: 自動PVC切断機
-        spec: CNC制御、6.5 m × 2.5 m、0.1 mm精度
-        desc: PVC、Hypalon、drop-stitch生地用のコンピュータ制御自動切断機。ネスティングソフトウェアが材料利用率を5%未満の廃棄に最適化します。
+        spec: CNC-controlled, 6.5 m × 2.5 m, 0.1 mm accuracy
+        desc: Computer-controlled automatic cutting machine for PVC, Hypalon, and drop-stitch fabrics. Nesting software optimises material utilisation to below 5% waste.
       - name: 生地広げ機
-        spec: 最大幅3 m、テンション制御給送
-        desc: 切断前の歪みを防ぐため、制御されたテンションで単層または多層の生地を敷設します。
-  - title: チューブ溶接と接合
+        spec: 3 m max width, tension-controlled feed
+        desc: Lays fabric in single or multiple plies with controlled tension to prevent distortion before cutting.
+  - title: Tube Welding & Bonding
     items:
       - name: ヒートシール機
-        spec: 熱風溶接、可変200–600 °C、0.5–5 m/min
-        desc: PVCおよびHypalonチューブシームの接合および溶接用の熱風熱シール機。チューブチャンバーやフロート継手の仮止め、シール、融着に使用します。
+        spec: Hot-air welding, variable 200—00 °C, 0.5— m/min
+        desc: Hot-air heat sealing machine for bonding and welding PVC and Hypalon tube seams. Used for tacking, sealing, and fusing tube chambers and float joints.
       - name: 誘電RFプレス
-        spec: 15 kW、プラテン2000 × 600 mm
-        desc: 主縦シーム、トランサム-チューブ継手、大型チャンバー製造用の高周波溶接プレス。
+        spec: 15 kW, platen 2000 × 600 mm
+        desc: Radio-frequency welding press for main longitudinal seams, transom-to-tube joints, and large-chamber fabrication.
       - name: CNC制御RF溶接機
-        spec: 8 kW、XYテーブル2500 × 1200 mm
-        desc: 複雑な形状、ロゴエンボス、精密パッチのためのプログラム可能な曲線シーム溶接。
-  - title: RIBハル製造
+        spec: 8 kW, XY table 2500 × 1200 mm
+        desc: Programmable curved-seam welding for complex geometries, logo embossing, and precision patchwork.
+  - title: SUP Board Manufacturing
     items:
       - name: Drop-Stitch Core Lamination Press
         spec: Large-format press for board cores up to 14 ft LOA
@@ -32,15 +32,15 @@ categories:
       - name: CNC Router (5-axis)
         spec: 3 m × 2 m × 1 m envelope, water-cooled spindle
         desc: Machining of fin boxes, handle cutouts, and custom board components.
-  - title: SUP印刷と装飾
+  - title: SUP Printing & Decoration
     items:
       - name: デジタルプリンタ
-        spec: 高解像度インクジェット、印刷幅最大2 m
-        desc: フルカラーSUPデッキグラフィック用の直接布地デジタル印刷。UV耐性の水性インクでカスタムパターン、グラデーション、写真品質の画像を印刷します。
+        spec: High-resolution inkjet, up to 2 m print width
+        desc: Direct-to-fabric digital printing for full-colour SUP deck graphics. Prints custom patterns, gradients, and photo-quality images with UV-resistantwater-based inks.
       - name: シルクスクリーン印刷機
-        spec: 手動および半自動、多色登録
-        desc: SUPボードロゴ、ブランドマーク、繰り返しパターン用のシルクスクリーン。鮮やかな色彩で耐久性があり不透明な印刷を提供します。
-  - title: 組立と艤装
+        spec: Manual and semi-automatic, multi-colour registration
+        desc: Screen printing for SUP board logos, brand marks, and repeating patterns. Provides durable, opaque prints with vibrant colour saturation.
+  - title: Assembly & Rigging
     items:
       - name: Board Assembly Station
         spec: Modular adjustable, multi-station layout
@@ -51,22 +51,22 @@ categories:
       - name: Deck Pad Laminator
         spec: 3 m × 1.5 m, temperature-controlled
         desc: Heat lamination of EVA foam deck pads to SUP board tops with consistent bond strength.
-  - title: 試験と品質管理
+  - title: Testing & Quality Control
     items:
       - name: 万能引張試験機
-        spec: 50 kN, ASTM D751
-        desc: 布地ロットの破断力、破断伸び、引き裂き伝播試験。
+        spec: 50 kN,  / ASTM D751
+        desc: Breaking force, elongation at break, and tear propagation testing for fabric batches.
       - name: 空気保持試験台
-        spec: プログラマブル、30分圧力保持
-        desc: 組立前の各チューブチャンバーの自動圧力保持試験。
+        spec: Programmable, 30-min pressure-hold
+        desc: Automated pressure-hold test for every tube chamber before assembly.
       - name: シーム剥離試験機
-        spec: モーター式180°剥離、100 mm/min
-        desc: ISO 6185に準拠した溶接および接着シームの剥離強度試験。
+        spec: Motorised 180° peel at 100 mm/min
+        desc: Weld and glued-seam peel strength testing per ISO 6185.
       - name: キセノンアーク耐候試験機
-        spec: 2000 h曝露
-        desc: 変色と強度維持のためのUV耐性試験。
+        spec: 2000 h exposure
+        desc: UV resistance testing for colour change and strength retention.
 cta:
-  title: 工場見学にご興味はありますか？
-  desc: 青島の施設へお客様を歓迎します。装置と工程を直接ご覧ください。
-  label: 見学を予約する →
+  title: Interested in a factory tour?
+  desc: We welcome visitors to our Qingdao facility. See our equipment and processes in person.
+  label: Schedule a visit →
   link: /contact

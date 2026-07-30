@@ -1,51 +1,51 @@
 hero:
-  tagline: Kennisgraaf
-  title: Waterverkenning Kennis
+  tagline: Knowledge Graph
+  title: Water Exploration Knowledge
   subtitle: |
-    Een gestructureerde kennisbank over opblaasbare SUP-technologie,<br />
-    waterveiligheid, boottechniek en avonturenplanning.
-  taglineSection: Verken. Leer. Ga met vertrouwen.
+    A structured knowledge base covering inflatable SUP technology,<br />
+    water safety, boat engineering, and adventure planning.
+  taglineSection: Explore. Learn. Go with confidence.
 clusters:
-  tagline: Kennisclusters
-  title: Verken op onderwerp
-  subtitle: Diepgaande duiken in de technologie, veiligheid en vaardigheden achter elk afarer product.
+  tagline: Knowledge Clusters
+  title: Explore by topic
+  subtitle: Deep dives into the technology, safety, and skills behind every afarer product.
   items:
-    - title: SUP Kennis
-      description: Van het kiezen van je eerste board tot geavanceerde touringtechnieken —alles over stand-up paddle boarding.
+    - title: SUP Buying Guides
+      description: From choosing your first board to advanced touring techniques —everything about stand-up paddle boarding.
       icon: tabler:lifebuoy
       topics:
-        - Hoe kies je je eerste opblaasbare SUP
-        - Beste SUP maat voor beginners
-        - Hoe moeilijk is paddle boarding?
-        - Opblaasbaar vs hardboard vergelijking
-        - SUP veiligheidschecklist
-    - title: Boot Kennis
-      description: Technische gidsen over opblaasbare boten, RIBs, bijboten en kajaks —techniek, materialen en bediening.
-      icon: tabler:sailboat
-      topics:
-        - Types opblaasbare boten uitgelegd
-        - PVC vs Hypalon vergelijking
-        - SUP vs Bijboot vergelijking
-        - Drop-stitch technologie verdieping
-        - Mariene materiaalkunde gids
-    - title: Veiligheid Kennis
-      description: Essentiële veiligheidskennis voor elke peddelaar —van PFD-keuze tot weerslezen tot zelfreddingstechnieken.
-      icon: tabler:shield
-      topics:
-        - SUP veiligheidschecklist
-        - Heb je een zwemvest nodig?
-        - Oceaan peddelen veiligheidsgids
-        - Rivierveiligheid voor opblaasbare kajaks
-        - Weer- en waterconditiebewustzijn
-    - title: Technologie
-      description: De techniek achter afarer producten —materialen, constructiemethoden en kwaliteitstesten.
+        - How to choose your first inflatable SUP
+        - SUP size and weight capacity guide
+        - Best SUP for beginners, touring, yoga, and racing
+        - Common SUP buying mistakes to avoid
+        - Inflatable vs hard board comparison
+    - title: SUP Engineering & Technology
+      description: Technical guides on inflatable SUP boards —materials, construction methods, and manufacturing processes.
       icon: tabler:microscope
       topics:
-        - Marine-grade PVC technologie
-        - Drop-stitch kern uitgelegd
-        - Waarom PSI belangrijk is voor opblaasbare SUPs
-        - RF-lassen vs adhesieve verbinding
-        - Kwaliteitstesten en certificering
+        - Drop-stitch technology deep dive
+        - Military-grade PVC specifications
+        - Fusion lamination vs adhesive bonding
+        - EVA foam technology and artwork methods
+        - SUP valve types and fin systems
+    - title: SUP Safety & Maintenance
+      description: Essential safety knowledge for every paddler —from PFD selection to weather reading to board care and repair.
+      icon: tabler:shield
+      topics:
+        - SUP safety checklist and PFD requirements
+        - Multi-chamber safety for remote water
+        - SUP inflation PSI guide
+        - Board storage and winter care
+        - Inflatable repair techniques
+    - title: SUP Skills & Techniques
+      description: Paddling techniques, touring skills, and fitness training for all skill levels.
+      icon: tabler:sailboat
+      topics:
+        - Beginner paddling techniques
+        - Intermediate stroke mastery
+        - Touring and expedition planning
+        - SUP fitness and racing training
+        - Whitewater and river running skills
     - title: SUP Lifestyle & Special Uses
       description: Specialized SUP activities —yoga, fishing, dogs, families, and travel tips.
       icon: tabler:heart
@@ -65,19 +65,19 @@ clusters:
         - SUP board materials explained
         - UV printing vs EVA block artwork
 featured_guides:
-  tagline: Aanbevolen Gidsen
-  title: Meest populaire kennisbronnen
+  tagline: Featured Guides
+  title: Most popular knowledge resources
   items:
-    - title: SUP Basis
+    - title: SUP Basics
       href: /learn/sup
-    - title: Opblaasbaar vs Hardboard
+    - title: Inflatable vs Hard Board
       href: /compare/inflatable-vs-hardboard
-    - title: Waterveiligheidsgids
+    - title: Water Safety Guide
       href: /learn/water-safety
-    - title: Materialen Referentie
+    - title: Materials Reference
       href: /learn/materials
-    - title: SUP Maatgids
-      href: /size-guide
+    - title: SUP Buying Guide
+      href: /guides/how-to-choose-your-sup
     - title: SUP Size Guide
       href: /guides/sup-size-guide
     - title: SUP Tech Center
@@ -89,11 +89,11 @@ featured_guides:
     - title: Paddle Techniques
       href: /guides/paddling-techniques
 cta:
-  title: Begin met verkennen
-  subtitle: Duik in onze kennisbank en krijg de informatie die je nodig hebt voor je volgende wateravontuur.
+  title: Start exploring
+  subtitle: Dive into our knowledge base and get the information you need for your next water adventure.
   actions:
     - variant: primary
-      text: Bekijk alle gidsen
+      text: Browse all guides
       href: /academy
-    - text: Verken Kennisgraaf
+    - text: Explore Knowledge Graph
       href: /knowledge

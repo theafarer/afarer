@@ -1,56 +1,53 @@
-﻿hero:
-  tagline: Zasoby
-  title: Centrum mediów
-  subtitle: Pobierz materiały marki, zdjęcia produktów, katalogi i filmy
-
+hero:
+  tagline: Resources
+  title: Media Center
+  subtitle: Download brand assets, product imagery, catalogs, and videos
 sections:
   - id: product-images
-    title: Zdjęcia produktów
-    desc: Wysokiej rozdzielczości zdjęcia produktów do użytku w sieci, druku i handlu detalicznym.
+    title: Product Images
+    desc: High-resolution product photos for web, print, and retail use.
     items:
-      - Galeria desek SUP
-      - Galeria łodzi SUP
-      - Galeria nadmuchiwanych kajaków
-      - Akcesoria i sprzęt bezpieczeństwa
+      - SUP Boards Gallery
+      - Drop-Stitch SUPs Gallery
+      - Inflatable SUPs Gallery
+      - Accessories & Safety Gear
   - id: logo-brand-kit
-    title: Logo i zestaw marki
-    desc: Oficjalne pliki logo afarer, paleta kolorów, typografia i wytyczne marki.
+    title: Logo & Brand Kit
+    desc: Official afarer logo files, colour palette, typography, and brand guidelines.
     items:
-      - Podstawowe logo (PNG/SVG/EPS)
-      - Znak ikonograficzny
-      - Paleta kolorów
-      - Specyfikacja typografii
-      - Wytyczne marki PDF
+      - Primary Logo (PNG/SVG/EPS)
+      - Icon Mark
+      - Colour Palette
+      - Typography Specs
+      - Brand Guidelines PDF
   - id: catalogs
-    title: Katalogi PDF
-    desc: Katalogi produktów, arkusze specyfikacji i dokumentacja techniczna do pobrania.
+    title: PDF Catalogs
+    desc: Product catalogs, spec sheets, and technical documentation for download.
     items:
-      - Katalog produktów 2026
-      - Prezentacja możliwości OEM/ODM
-      - Broszura serii SUP
-      - Specyfikacje techniczne
+      - 2026 Product Catalog
+      - OEM/ODM Capability Deck
+      - SUP Series Brochure
+      - Technical Specifications
   - id: videos
-    title: Filmy
-    desc: Prezentacje produktów, wycieczki po fabryce, filmy marki i referencje klientów.
+    title: Videos
+    desc: Product demos, factory tours, brand films, and customer testimonials.
     items:
-      - Prezentacje produktów
-      - Wycieczka po fabryce
-      - Film marki
-      - Historie klientów
-      - Poradniki
-
-request_access: Poproś o dostęp →
-
+      - Product Demos
+      - Factory Tour
+      - Brand Film
+      - Customer Stories
+      - How-To Guides
+request_access: Request access →
 cta:
-  title: Potrzebujesz pomocy w znalezieniu materiałów?
-  desc: Skontaktuj się z naszym zespołem ds. marki w sprawie niestandardowych zamówień materiałów, partnerstw medialnych lub zapytań prasowych.
+  title: Need help finding assets?
+  desc: Contact our brand team for custom asset requests, media partnerships, or press inquiries.
   links:
-    - label: Odwiedź naszą fabrykę
+    - label: Visit our factory
       href: /factory
-      desc: Zobacz nasz zakład produkcyjny o powierzchni 12 000 m²
-    - label: Wytyczne marki
+      desc: See our 12,000 sqm manufacturing facility
+    - label: Brand guidelines
       href: /brand
-      desc: Poznaj markę afarer
-    - label: Współpracuj z nami
+      desc: Learn about the afarer brand
+    - label: Partner with us
       href: /contact
-      desc: Zapytania OEM, ODM i dystrybucyjne
+      desc: OEM, ODM, and distribution inquiries

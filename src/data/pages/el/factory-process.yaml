@@ -1,48 +1,49 @@
-﻿hero:
-  tagline: Διαδικασία
-  title: Διαδικασία παραγωγής
-  subtitle: Από την πρώτη ύλη στο έτοιμο για θάλασσα σκάφος —κάθε βήμα υπό τον έλεγχό μας
-  back_label: Επιστροφή στο εργοστάσιο
+hero:
+  tagline: Process
+  title: Manufacturing Process
+  subtitle: From raw material to sea-ready SUP —every step under our control
+  back_label: Back to Factory
   back_link: /factory
-
-intro: Σε αντίθεση με επωνυμίες που αναθέτουν την παραγωγή σε τρίτα εργοστάσια, η afarer κατέχει και λειτουργεί ολόκληρη την αλυσίδα παραγωγής της. Αυτή η κάθετη ολοκλήρωση μας επιτρέπει να διατηρούμε αυστηρό ποιοτικό έλεγχο σε κάθε στάδιο, να ανταποκρινόμαστε γρήγορα σε προσαρμοσμένες απαιτήσεις και να παρέχουμε σταθερή ποιότητα προϊόντων παρτίδα με παρτίδα. Να πώς κατασκευάζεται ένα σκάφος στην εγκατάστασή μας.
-
+intro: >-
+  Unlike brands that outsource production to third-party factories, afarer owns and operates its entire manufacturing chain. This vertical integration allows us to maintain strict quality control at every stage, respond quickly to custom requirements, and deliver consistent product quality batch
+  after batch. Here is how a SUP board is built in our facility.
 steps:
   - step: '01'
-    title: Παραλαβή και επιθεώρηση υλικών
-    description: Κάθε εισερχόμενη παρτίδα υφάσματος PVC, υαλοπίνακα fiberglass, ρητίνης και εξαρτημάτων ελέγχεται σύμφωνα με τις προδιαγραφές. Δείγματα υφασμάτων δοκιμάζονται για αντοχή εφελκυσμού, ομοιογένεια πάχους και αντοχή UV πριν εγκριθούν για παραγωγή. Τα μη συμμορφούμενα υλικά απομονώνονται και επιστρέφονται.
-    duration: 1— ημέρες
+    title: Material Receipt & Inspection
+    description: Every incoming batch of PVC fabric, fiberglass mat, resin, and hardware is inspected against specification. Fabric samples are tested for tensile strength, thickness uniformity, and UV resistance before release to production. Non-conforming materials are quarantined and returned.
+    duration: 1— days
   - step: '02'
-    title: Αυτόματη κοπή PVC
-    description: Τα εγκεκριμένα υφάσματα απλώνονται στην αυτόματη μηχανή κοπής CNC και κόβονται με ακρίβεια κάτω του χιλιοστού. Η βελτιστοποιημένη από υπολογιστή διάταξη τοποθετεί τα πάνελ για ελαχιστοποίηση αποβλήτων —συνήθως κάτω από 5%. Τα κομμένα πάνελ επισημαίνονται με μοντέλο σκάφους και θάλαμο και συσκευάζονται για μεταφορά στο συνεργείο συγκόλλησης.
-    duration: 2— ώρες ανά σετ σκάφους
+    title: Automatic PVC Cutting
+    description: Approved fabrics are laid on the automatic CNC cutting machine and cut with sub-millimetre accuracy. Computer-optimised nesting arranges panels to minimise waste —typically below 5%. Cut panels are labelled by boat model and chamber, then bundled for transfer to the welding workshop.
+    duration: 2— hours per boat kit
   - step: '03'
-    title: Συγκόλληση σωλήνων και συγκόλληση
-    description: Τα πάνελ συνδέονται και ενώνονται με μηχανές συγκόλλησης θερμού αέρα  σε ελεγχόμενες θερμοκρασίες 200—00 °C. Οι κύριες ραφές ενισχύονται με διηλεκτρική συγκόλληση RF για στεγανές, υψηλής αντοχής συνδέσεις. Οι έτοιμοι θάλαμοι φουσκώνονται στο 1,5× της πίεσης λειτουργίας για 30λεπτη επικύρωση συγκράτησης αέρα.
-    duration: 1— ημέρες ανά σκάφος
+    title: Tube Heat Sealing & Welding
+    description: >-
+      Panels are tacked and bonded using heat sealing machines  with hot-air welding at controlled temperatures of 200—00 °C. Main seams are reinforced with RF dielectric welding for airtight, high-strength joints. Completed chambers are inflated to 1.5× working pressure for 30-minute air-retention
+      validation.
+    duration: 1— days per boat
   - step: '04'
-    title: Διαμόρφωση γάστρας SUP από fiberglass
-    description: Οι γάστρες SUP παράγονται με χειροποίητη στρώση fiberglass. Στρώσεις υαλοπίνακα και υφάσματος κορδονιού τυλίγονται με πολυεστερική ή βινυλοεστερική ρητίνη σε ακριβή καλούπια. Κάθε στρώση κενούται για σταθερή ποιότητα ελάσματος. Η γάστρα τελειώνει με gelcoat για υψηλής στιλπνότητας, ανθεκτική στην UV θαλάσσια επιφάνεια.
-    duration: 2— ημέρες ανά γάστρα
+    title: Drop-Stitch Core Bonding
+    description: SUP board drop-stitch cores are bonded to outer PVC laminates using heat lamination. Thousands of internal polyester threads connect top and bottom layers, creating a rigid structure at 12-15 PSI. Rail bands are triple-layer fusion bonded for edge strength.
+    duration: 1— days per board
   - step: '05'
-    title: Εκτύπωση SUP και διακόσμηση
-    description: Τα γραφικά καταστρώματος σανίδας SUP εφαρμόζονται με ψηφιακή εκτύπωση  για έγχρωμα σχέδια φωτογραφικής ποιότητας και μεταξοτυπία  για ανθεκτικά λογότυπα και επαναλαμβανόμενα σχέδια. Οι εκτυπώσεις σκληρύνονται και σφραγίζονται για αντοχή UV και τριβής.
-    duration: 1— ημέρες
+    title: SUP Printing & Decoration
+    description: SUP board deck graphics are applied using digital printing  for full-colour photo-quality designs, and screen printing  for durable logos and repeating patterns. Prints are cured and sealed for UV and abrasion resistance.
+    duration: 1— days
   - step: '06'
-    title: Τελική συναρμολόγηση και εξάρτυση
-    description: Οι γάστρες fiberglass και τα συγκροτήματα σωλήνων PVC ενώνονται στη γραμμή συναρμολόγησης. Ο κινητήρας τοποθετείται, συνδέονται τα συστήματα διεύθυνσης και ελέγχου, εγκαθίσταται το σύστημα καυσίμου και καλωδιώνεται πλήρως η ηλεκτρική εγκατάσταση. Κάθε σκάφος περνά από λίστα ελέγχου 100 σημείων με υποχρεωτική έγκριση σε κάθε στάδιο.
-    duration: 2— ημέρες
+    title: Final Assembly & Fitting
+    description: Valves, D-rings, handles, fin boxes, and deck pads are installed on the assembly line. Each board follows a 100-point assembly checklist with mandatory sign-off at each stage.
+    duration: 1— days
   - step: '07'
-    title: Ποιοτικός έλεγχος και επιθεώρηση
-    description: 'Κάθε ολοκληρωμένο σκάφος περνά υποχρεωτική πύλη ποιότητας: δοκιμή συγκράτησης αέρα θαλάμων, λειτουργικό έλεγχο συστημάτων, επαλήθευση ροπής συνδετήρων και καλλυντική επιθεώρηση. Οι προσαρμοσμένες κατασκευές και τα πρωτότυπα υποβάλλονται επίσης σε θαλάσσιες δοκιμές που περιλαμβάνουν ταχύτητα, χειρισμό, σταθερότητα και ανθεκτικότητα.'
-    duration: 1— ημέρες
+    title: Quality Testing & Inspection
+    description: 'Every completed board undergoes mandatory quality gate: chamber air-retention test, hardware function check, fastener torque verification, and cosmetic inspection. Custom and prototype builds also receive in-water trials covering stability and handling.'
+    duration: 1— days
   - step: '08'
-    title: Συσκευασία και αποστολή
-    description: Τα σκάφη ξεφουσκώνονται, διπλώνονται σύμφωνα με διαδικασία, συσκευάζονται σε ανθεκτικές υφασμάτινες τσάντες ή κόντρα-πλακέ και φορτώνονται για αποστολή. Κάθε πακέτο επισημαίνεται με μοντέλο, σειριακό αριθμό και προορισμό. Συντονιζόμαστε με μεταφορείς για αποστολές FCL και LCL παγκοσμίως.
-    duration: 1 ημέρα
-
+    title: Packing & Shipping
+    description: Boards are deflated, folded per procedure, packed in heavy-duty woven bags or retail boxes, and loaded for shipment. Each package is labelled with model, serial number, and destination. We coordinate with freight forwarders for FCL and LCL container shipments worldwide.
+    duration: 1 day
 cta:
-  title: Δείτε τον εξοπλισμό και τα μηχανήματά μας
-  desc: Γνωρίστε τον βιομηχανικό εξοπλισμό πίσω από κάθε σκάφος afarer.
-  label: Δείτε τον εξοπλισμό →
+  title: See our equipment and machinery
+  desc: Explore the industrial-grade equipment behind every afarer SUP board.
+  label: View equipment →
   link: /factory/equipment
