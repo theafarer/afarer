@@ -1,41 +1,37 @@
 hero:
-  tagline: Factory
-  title: Factory & Manufacturing
-  subtitle: 12,000 m2 of integrated manufacturing —from raw material to finished SUP
+  tagline: Фабрика
+  title: Фабрика и производство
+  subtitle: 12 000 м2 интегрированного производства —от сырья до готовой лодки
 intro:
-  - >-
-    As a factory brand of **Qingdao Vatrad Group Co., Ltd.**, afarer controls every stage of production —from the arrival of raw PVC materials to the final pre-delivery inspection of the finished SUP. Our manufacturing facility in the Qingdao Economic Development Zone spans 12,000 square metres and
-    houses dedicated workshops for PVC cutting, drop-stitch core bonding, SUP digital printing, final assembly, and quality testing.
-  - >-
-    By integrating design, engineering, prototyping, manufacturing, and testing under one roof, we eliminate the inefficiencies of contract manufacturing and maintain direct control over build quality, material selection, and delivery timelines. Every SUP that leaves our workshop is built by our
-    people, on our equipment, to our standards.
+  - Как фабричный бренд **Qingdao Vatrad Group Co., Ltd.**, afarer контролирует каждый этап производства —от поступления сырья до финальной проверки готовой лодки. Наше производственное помещение в зоне экономического развития Циндао занимает 12 000 квадратных метров и включает специализированные цеха для раскроя ПВХ, термосварки труб, производства стеклопластиковых SUP-корпусов, цифровой печати SUP, финальной сборки и контроля качества.
+  - Объединяя дизайн, инженерию, прототипирование, производство и тестирование под одной крышей, мы устраняем неэффективность контрактного производства и сохраняем прямой контроль над качеством сборки, выбором материалов и сроками поставки. Каждая лодка, покидающая наш цех, построена нашими людьми, на нашем оборудовании, по нашим стандартам.
 stats:
-  - value: 12,000 m2
-    label: Manufacturing floor
+  - value: 12 000 м2
+    label: Производственная площадь
   - value: 200+
-    label: Skilled workers
-  - value: 15,000+
-    label: SUPs produced annually
+    label: Квалифицированных рабочих
+  - value: 15 000+
+    label: Лодок производится ежегодно
   - value: null
-    label: Quality certified
+    label: Сертифицировано по качеству
 intelligence_tagline: Factory Intelligence
 intelligence_title: Explore Our Manufacturing Capabilities
 intelligence_cards:
   - title: Production Capacity
     icon: C
     icon_bg: blue
-    desc: 12,000 m² facility producing 15,000+ SUPs/yr across SUP board and safety equipment lines. 200+ workers, 2 shifts.
+    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
     metrics:
       - label: MOQ
-        value: 'SUP: 5—0'
+        value: "SUP: 5-10 / SUP: 2-5"
       - label: Lead Time
-        value: 30—5 days
+        value: 30-45 days
     link: /factory/capacity
     link_label: Full capacity details →
   - title: Quality Lab & Testing
     icon: Q
     icon_bg: green
-    desc: 'Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat.'
+    desc: "Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat."
     metrics:
       - label: Lab Equipment
         value: Tensile tester, temp chamber, leak tank
@@ -46,7 +42,7 @@ intelligence_cards:
   - title: OEM/ODM Capability
     icon: O
     icon_bg: purple
-    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom board colors, deck graphics (digital & screen printing), and drop-ship logistics.'
+    desc: "End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics."
     metrics:
       - label: Certifications
         value: ISO 9001, BSCI, CE, REACH
@@ -55,122 +51,122 @@ intelligence_cards:
     link: /factory/oem-capability
     link_label: Full OEM services →
 workshops_section:
-  tagline: Workshops
-  title: Manufacturing Workshops
+  tagline: Цеха
+  title: Производственные цеха
   workshops:
-    - title: PVC Cutting & Material Preparation
-      description: Automatic CNC cutting machines process PVC, Hypalon, and drop-stitch fabrics with sub-millimetre precision. Computer-optimised nesting minimises material waste and ensures every panel meets its dimensional specification before welding.
+    - title: Раскрой ПВХ и подготовка материалов
+      description: Автоматические ЧПУ-раскройные машины обрабатывают ПВХ, Hypalon и drop-stitch ткани с субмиллиметровой точностью. Компьютерно-оптимизированный расклад минимизирует отходы материала.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
-    - title: Tube Welding & Heat Sealing
-      description: Dedicated welding workshop with heat sealing machines  and RF dielectric presses. Hot-air heat sealers bond and fuse PVC tube chambers, while RF welds produce high-strength airtight seams that exceed  requirements.
+    - title: Сварка труб и термосварка
+      description: Специализированный сварочный цех с машинами термосварки  и RF-прессами. Горячевоздушные сварочные аппараты соединяют ПВХ-камеры труб, а RF-сварка создает высокопрочные герметичные швы, превышающие требования .
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
-    - title: Drop-Stitch Core Bonding
-      description: SUP board drop-stitch cores are bonded to outer PVC laminates using heat lamination. Thousands of internal polyester threads connect top and bottom layers, creating a rigid structure at 12-15 PSI. Rail bands are triple-layer fusion bonded for edge strength.
+    - title: Производство SUP-корпусов —стеклопластик
+      description: Корпуса SUP-лодок производятся методом ручной выкладки стеклопластика с полиэфирными и винилэфирными смолами. Каждый слой раскатывается вручную и вакуумируется для стабильного качества.
+      image: https://assets.afarer.com/images/afarer/factory/afarer-warehouse-storage.webp
+    - title: Печать и декорирование SUP
+      description: SUP-доски декорируются цифровой печатью  для полноцветной графики и шелкографией  для логотипов. Цифровые принтеры создают фото-качественные рисунки палубы.
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1.webp
-    - title: SUP Printing & Decoration
-      description: SUP boards are decorated using digital printing  for full-colour graphics and screen printing  for logos and repeating patterns. Digital printers produce photo-quality deck designs, while screen printing delivers durable, vivid brand marks.
-      image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1.webp
-    - title: Final Assembly & Fitting
-      description: Assembly line where valves, D-rings, handles, fin boxes, and deck pads are installed on each SUP board. Each board follows a 100-point assembly checklist signed off by the team lead.
+    - title: Финальная сборка и оснастка
+      description: Сборочная линия, где стеклопластиковые корпуса и ПВХ-трубы соединяются, монтируются двигатели, подключаются системы управления и проводка. Каждая лодка проходит 100-точечный чек-лист.
       image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
-    - title: Quality Testing & Inspection
-      description: Every completed boat undergoes mandatory air-retention testing, seam peel verification, and a full systems check before shipping. Our quality lab operates independently from production and reports directly to management.
+    - title: Контроль качества и инспекция
+      description: Каждая готовая лодка проходит обязательное тестирование удержания воздуха, верификацию швов и полную проверку систем перед отправкой. Лаборатория качества работает независимо от производства.
       image: https://assets.afarer.com/images/afarer/factory/afarer-pressure-testing.webp
 equipment_section:
-  tagline: Equipment
-  title: Key Manufacturing Equipment
-  view_full: View full equipment list →
+  tagline: Оборудование
+  title: Ключевое производственное оборудование
+  view_full: Полный список оборудования →
   view_full_link: /factory/equipment
   items:
     - name: Автоматическая машина раскроя ПВХ
-      spec: CNC-controlled, 0.1 mm accuracy
+      spec: ЧПУ, точность 0,1 мм
     - name: Машина термосварки
-      spec: Hot-air, 200°C—00 °C, for tube bonding
+      spec: Горячий воздух, 200°C—00 °C, для соединения труб
     - name: RF-пресс диэлектрической сварки
-      spec: 15 kW, airtight seam welding
+      spec: 15 кВт, герметичная сварка швов
     - name: Формы ручной выкладки стеклопластика
-      spec: SUP cores up to 14 ft
+      spec: SUP-корпуса до 6 м
     - name: Цифровой принтер
-      spec: Full-colour SUP deck graphics
+      spec: Полноцветная графика для SUP
     - name: Шелкографическая машина
-      spec: Multi-colour logo printing
+      spec: Многоцветная печать логотипов
 qc_section:
-  tagline: Quality Control
-  title: Testing & Quality Assurance Process
-  subtitle: Every boat undergoes mandatory testing before shipping. Our quality lab operates independently from production and reports directly to management.
+  tagline: Контроль качества
+  title: Процесс тестирования и обеспечения качества
+  subtitle: Каждая лодка проходит обязательное тестирование перед отправкой. Лаборатория качества независима от производства и подчиняется руководству.
   steps:
-    - step: '1'
-      title: Raw Material Inspection
-      desc: PVC, Hypalon, and drop-stitch fabrics undergo tensile testing (), tear propagation, and UV resistance verification before any batch enters production.
-    - step: '2'
-      title: 48-Hour Air Retention Test
-      desc: Every tube chamber is inflated to 125% of rated pressure and held for 48 hours. Pressure drop below 5% triggers automatic rejection and seam re-inspection.
-    - step: '3'
-      title: Load & Balance Testing
-      desc: Completed boats are loaded to maximum rated capacity and tested for stability, freeboard, and handling. Each vessel is water-tested before final inspection.
+    - step: "1"
+      title: Инспекция сырья
+      desc: ПВХ, Hypalon и drop-stitch ткани проходят тестирование на растяжение (), распространение разрыва и УФ-стойкость перед поступлением в производство.
+    - step: "2"
+      title: 48-часовой тест удержания воздуха
+      desc: Каждая камера надувается до 125% номинального давления и выдерживается 48 часов. Падение давления ниже 5% вызывает автоматическое отклонение.
+    - step: "3"
+      title: Тестирование нагрузки и баланса
+      desc: Готовые лодки загружаются до максимальной грузоподъемности и тестируются на устойчивость, надводный борт и управляемость.
 oem_section:
-  tagline: OEM Projects
-  title: Brand & OEM Partnership Case Studies
-  subtitle: From concept to container —how we help global brands launch and scale their inflatable SUP lines.
+  tagline: OEM проекты
+  title: Кейсы партнерства брендов и OEM
+  subtitle: От концепции до контейнера —как мы помогаем глобальным брендам запускать и масштабировать линейки надувных плавсредств.
   cases:
-    - challenge: European outdoor retailer needed a private-label SUP line with unique deck graphics, eco-friendly PVC, and retail-ready packaging —all delivered in 60 days.
-      solution: Developed custom digital print files, sourced REACH-compliant PVC, and compressed sampling from 3 rounds to 1 by co-locating the design team at our Qingdao factory.
-      result: 55 days from signed PO to FOB. 2,400 units across 4 SKUs. Repeat order placed before first container arrived.
-    - challenge: US watersports startup needed a high-performance drop-stitch SUP with custom shape, co-branded packaging, and BSCI certification for retail placement.
-      solution: Adapted existing SUP mould with modified outline, developed co-branded packaging artwork, and provided full BSCI audit documentation.
-      result: Successfully listed in 3 major US outdoor chains. 5,000+ units in first year with 98% sell-through rate.
-    - challenge: Australian distributor required a CE-certified SUP range with custom colours and compliance with Australian standards.
-      solution: Produced pre-production samples with 4 colour variants and coordinated third-party compliance testing.
-      result: 3-model SUP range launched in AU/NZ market. Followed by government tender win for 12 patrol SUPs.
+    - challenge: Европейскому ритейлеру нужна была private-label SUP-линейка с уникальной графикой, экологичным ПВХ и готовой к ритейлу упаковкой —все за 60 дней.
+      solution: Разработали файлы цифровой печати, нашли REACH-совместимый ПВХ, сократили сэмплирование с 3 раундов до 1.
+      result: 55 дней от подписания заказа до FOB. 2 400 единиц, 4 SKU. Повторный заказ до прибытия первого контейнера.
+    - challenge: Американский стартап водных видов спорта нуждался в высокопроизводительном drop-stitch байдарке с индивидуальной формой корпуса и BSCI сертификацией.
+      solution: Адаптировали форму с модифицированным профилем, разработали упаковку, предоставили документацию BSCI.
+      result: Успешный запуск в 3 крупных сетях США. 5 000+ единиц за первый год.
+    - challenge: Австралийский дистрибьютор требовал CE-сертифицированную линейку SUP с индивидуальными цветами труб и опцией Hypalon.
+      solution: Произвели предсерийные образцы, закупили CSM Hypalon у японского поставщика, организовали тестирование AS 1799.
+      result: 3-модельная линейка SUP запущена в Австралии и Новой Зеландии.
 faq_section:
   tagline: FAQ
-  title: B2B & OEM Frequently Asked Questions
+  title: Часто задаваемые вопросы B2B и OEM
   questions:
-    - q: What is the minimum order quantity (MOQ) for OEM inflatable SUP boards?
-      a: MOQ starts at 5—0 units for standard OEM models. Custom moulds and private-label projects require a minimum of 200 units depending on complexity. Trial orders and sample runs are available for new brand launches.
-    - q: Does afarer hold BSCI certification?
-      a: Yes. Our factory maintains valid BSCI social compliance certification (audit report available on request). We also hold  for quality management and all products carry CE  certification. REACH and RoHS compliance documentation provided with every OEM shipment.
-    - q: What is the typical lead time for an OEM order?
-      a: Yes. Our factory maintains valid BSCI social compliance certification (audit report available on request). We also hold  for quality management and all products carry CE  certification. REACH and RoHS compliance documentation provided with every OEM shipment.
-    - q: Can you ship FOB Qingdao or CIF to our port?
-      a: Yes. We ship FOB Qingdao, CIF major global ports, and DDP for qualified partners. Our logistics team manages container booking, export documentation, and customs clearance. We ship to 50+ countries across EU, US, AU, and Asia markets.
-b2b_moq: 'Standard MOQ: 5—0 units per model. Trial orders welcome for new partnerships.'
+    - q: Каков минимальный объем заказа (MOQ) для OEM надувных SUP-досок?
+      a: MOQ начинается от 5—0 единиц для стандартных OEM моделей. Индивидуальные формы и проекты private label требуют минимум 200 единиц. Пробные заказы доступны.
+    - q: Имеет ли afarer сертификацию BSCI?
+      a: Да. Наша фабрика имеет действующую сертификацию BSCI. Мы также имеем  для управления качеством, и все продукты имеют сертификацию CE .
+    - q: Каков типичный срок поставки OEM заказа?
+      a: Стандартный срок 30—5 дней с подтверждения заказа. Разработка формы добавляет 15—0 дней. Доступно ускоренное производство.
+    - q: Можете ли вы отгрузить FOB Циндао или CIF в наш порт?
+      a: Да. Мы отгружаем FOB Циндао, CIF в крупные мировые порты и DDP для квалифицированных партнеров. Мы отгружаем в 50+ стран.
+b2b_moq: "Стандартный MOQ: 5—0 единиц на модель (SUP/байдарка/drop-stitch). SUP MOQ: 2— единиц. Пробные заказы приветствуются."
 production_flow:
   tagline: Production Flow
   title: From Material to Finished Boat
   subtitle: Every boat passes through 6 production stages with QC checkpoints at every step. No shortcuts, no skipped inspections.
   stages:
-    - stage: '01'
+    - stage: "01"
       title: Material Receiving & Incoming QC
       description: All incoming materials are logged by batch/lot number in our ERP system. PVC fabric rolls, drop-stitch cores, valves, adhesives, and hardware are quarantined until QC sign-off.
       qc_check: Tensile strength (ASTM D751), tear resistance (ISO 4674), thickness gauge, adhesive viscosity, visual defect scan
       qc_threshold: 100% of batches tested. Reject if tensile < 90% of spec, tear < spec min, or any visual defect
       responsibility: Incoming QC team (3 inspectors)
-    - stage: '02'
+    - stage: "02"
       title: CNC Cutting & Material Prep
       description: Computer-optimized nesting lays out panels on PVC stock to minimize waste. Automatic CNC cutting machines maintain 0.1 mm positional accuracy.
       qc_check: Dimensional check against CAD DXF files, edge quality inspection, panel count verification
       qc_threshold: Every 20th panel measured. Tolerance ±0.5 mm. Reject batch if >2% out of tolerance
       responsibility: Cutting workshop lead
-    - stage: '03'
+    - stage: "03"
       title: Welding & Drop-Stitch Bonding
       description: Drop-stitch cores are bonded to outer PVC laminates using heat lamination. Tube chambers are RF-welded or hot-air welded. Rail bands are triple-layer fusion bonded.
       qc_check: Peel test every 50 units (ASTM D751), weld width measurement, hot-air temperature log review, visual seam inspection under backlight
       qc_threshold: Peel strength min 8 N/cm. Weld width tolerance ±1 mm. Any visible channeling = reject
       responsibility: Welding QC (2 inspectors per shift)
-    - stage: '04'
+    - stage: "04"
       title: Assembly & Rigging
-      description: 'Boats move to final assembly where all components are mated: hull + tubes, valves installed, D-rings, handles, fin boxes, and carry bag fitting. Each unit follows a 100-point assembly checklist.'
+      description: "Boats move to final assembly where all components are mated: hull + tubes, valves installed, D-rings, handles, fin boxes, and carry bag fitting. Each unit follows a 100-point assembly checklist."
       qc_check: 100-point checklist sign-off per unit, valve function test (10 open/close cycles), hardware torque verification, visual inspection
-      qc_threshold: 'Zero-defect policy on safety-critical items (valves, D-rings, handles). Minor cosmetic: AQL 2.5 (ISO 2859)'
+      qc_threshold: "Zero-defect policy on safety-critical items (valves, D-rings, handles). Minor cosmetic: AQL 2.5 (ISO 2859)"
       responsibility: Assembly team lead + line QC
-    - stage: '05'
+    - stage: "05"
       title: Pressure Testing & Quality Hold
       description: Every chamber is inflated to 1.25× rated pressure (typically 20—5 PSI) and held for 24—8 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.
       qc_check: 24h pressure hold log, sensor calibration verified daily, temperature-compensated pressure reading, seam re-test after repair
       qc_threshold: Max 5% pressure drop over 24h at stable temp. Any chamber exceeding this = 100% re-test of entire production batch
       responsibility: Quality lab (independent of production, reports to management)
-    - stage: '06'
+    - stage: "06"
       title: Final Inspection & Packing
       description: Final visual and functional inspection. Surface defects, color consistency, label/BIN verification, packaging integrity, and accessory completeness. Units are vacuum-packed, boxed, and palletized for container loading.
       qc_check: Full visual inspection, accessory checklist per SKU, packaging drop test (1 m, random sample), label/bar code scan verification
@@ -252,7 +248,7 @@ qc_dashboard:
       label: Tolerance on safety defects
       detail: Valves, D-rings, seams, buoyancy
 process_cta:
-  title: See our manufacturing process
-  desc: Follow a SUP through every stage of production —from raw material to sea-ready board.
-  label: View production process →
+  title: Посмотреть наш производственный процесс
+  desc: Проследите путь лодки через все этапы производства —от сырья до готового судна.
+  label: Смотреть процесс производства →
   link: /factory/process

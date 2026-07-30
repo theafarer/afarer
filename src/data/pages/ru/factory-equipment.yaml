@@ -1,30 +1,30 @@
 hero:
-  tagline: Equipment
-  title: Manufacturing Equipment & Machinery
-  subtitle: Industrial-grade equipment across cutting, welding, printing, and assembly
-  back_label: Back to Factory
+  tagline: Оборудование
+  title: Производственное Оборудование и Машины
+  subtitle: Промышленное оборудование для резки, сварки, печати и сборки
+  back_label: Назад на Завод
   back_link: /factory
 categories:
-  - title: Cutting & Material Preparation
+  - title: Резка и Подготовка Материалов
     items:
       - name: Автоматическая Резальная Машина PVC
-        spec: CNC-controlled, 6.5 m × 2.5 m, 0.1 mm accuracy
-        desc: Computer-controlled automatic cutting machine for PVC, Hypalon, and drop-stitch fabrics. Nesting software optimises material utilisation to below 5% waste.
+        spec: Управление CNC, 6.5 m × 2.5 m, точность 0.1 mm
+        desc: Управляемая компьютером автоматическая резальная машина для тканей PVC, Hypalon и drop-stitch. Программное обеспечение раскроя оптимизирует использование материала менее чем до 5% отходов.
       - name: Раскладчик Ткани
-        spec: 3 m max width, tension-controlled feed
-        desc: Lays fabric in single or multiple plies with controlled tension to prevent distortion before cutting.
-  - title: Tube Welding & Bonding
+        spec: Ширина макс. 3 m, подача с контролем натяжения
+        desc: Укладывает ткань в один или несколько слоёв с контролируемым натяжением для предотвращения деформации перед резкой.
+  - title: Сварка Труб и Соединение
     items:
       - name: Машина Термосварки
-        spec: Hot-air welding, variable 200—00 °C, 0.5— m/min
-        desc: Hot-air heat sealing machine for bonding and welding PVC and Hypalon tube seams. Used for tacking, sealing, and fusing tube chambers and float joints.
+        spec: Сварка горячим воздухом, переменная 200—00 °C, 0.5— m/min
+        desc: Машина термосварки горячим воздухом для соединения и сварки швов труб PVC и Hypalon. Используется для фиксации, герметизации и сплавления камер труб и поплавковых соединений.
       - name: Диэлектрический RF-пресс
-        spec: 15 kW, platen 2000 × 600 mm
-        desc: Radio-frequency welding press for main longitudinal seams, transom-to-tube joints, and large-chamber fabrication.
+        spec: 15 kW, плита 2000 × 600 mm
+        desc: Пресс высокочастотной сварки для основных продольных швов, соединений транца с трубой и изготовления больших камер.
       - name: RF-сварочный Аппарат с CNC
-        spec: 8 kW, XY table 2500 × 1200 mm
-        desc: Programmable curved-seam welding for complex geometries, logo embossing, and precision patchwork.
-  - title: SUP Board Manufacturing
+        spec: 8 kW, стол XY 2500 × 1200 mm
+        desc: Программируемая сварка криволинейных швов для сложных геометрий, тиснения логотипов и точной заплатки.
+  - title: Производство Корпусов SUP
     items:
       - name: Drop-Stitch Core Lamination Press
         spec: Large-format press for board cores up to 14 ft LOA
@@ -32,15 +32,15 @@ categories:
       - name: CNC Router (5-axis)
         spec: 3 m × 2 m × 1 m envelope, water-cooled spindle
         desc: Machining of fin boxes, handle cutouts, and custom board components.
-  - title: SUP Printing & Decoration
+  - title: Печать и Декорирование SUP
     items:
       - name: Цифровой Принтер
-        spec: High-resolution inkjet, up to 2 m print width
-        desc: Direct-to-fabric digital printing for full-colour SUP deck graphics. Prints custom patterns, gradients, and photo-quality images with UV-resistantwater-based inks.
+        spec: Струйная печать высокого разрешения, ширина печати до 2 m
+        desc: Прямая цифровая печать по ткани для полноцветной графики палубы SUP. Печатает индивидуальные узоры, градиенты и изображения фотографического качества водными стойкими к УФ чернилами.
       - name: Машина Шелкографии
-        spec: Manual and semi-automatic, multi-colour registration
-        desc: Screen printing for SUP board logos, brand marks, and repeating patterns. Provides durable, opaque prints with vibrant colour saturation.
-  - title: Assembly & Rigging
+        spec: Ручная и полуавтоматическая, многокрасочная регистрация
+        desc: Шелкография для логотипов досок SUP, торговых марок и повторяющихся узоров. Обеспечивает долговечные, непрозрачные отпечатки с яркой насыщенностью цвета.
+  - title: Сборка и Оснастка
     items:
       - name: Board Assembly Station
         spec: Modular adjustable, multi-station layout
@@ -51,22 +51,22 @@ categories:
       - name: Deck Pad Laminator
         spec: 3 m × 1.5 m, temperature-controlled
         desc: Heat lamination of EVA foam deck pads to SUP board tops with consistent bond strength.
-  - title: Testing & Quality Control
+  - title: Тестирование и Контроль Качества
     items:
       - name: Универсальная Разрывная Машина
-        spec: 50 kN,  / ASTM D751
-        desc: Breaking force, elongation at break, and tear propagation testing for fabric batches.
+        spec: 50 kN, ASTM D751
+        desc: Испытание разрывной нагрузки, удлинения при разрыве и распространения разрыва для партий ткани.
       - name: Стенд Испытания Герметичности Воздуха
-        spec: Programmable, 30-min pressure-hold
-        desc: Automated pressure-hold test for every tube chamber before assembly.
+        spec: Программируемый, удержание давления 30 мин
+        desc: Автоматизированное испытание удержания давления для каждой камеры трубы перед сборкой.
       - name: Тестер Отслаивания Швов
-        spec: Motorised 180° peel at 100 mm/min
-        desc: Weld and glued-seam peel strength testing per ISO 6185.
+        spec: Моторизованное отслаивание 180° при 100 mm/min
+        desc: Испытание прочности на отслаивание сваренных и склеенных швов согласно ISO 6185.
       - name: Камера Старения Ксеноновой Дугой
-        spec: 2000 h exposure
-        desc: UV resistance testing for colour change and strength retention.
+        spec: 2000 h воздействие
+        desc: Испытание стойкости к УФ для изменения цвета и сохранения прочности.
 cta:
-  title: Interested in a factory tour?
-  desc: We welcome visitors to our Qingdao facility. See our equipment and processes in person.
-  label: Schedule a visit →
+  title: Заинтересованы в экскурсии по заводу?
+  desc: Мы рады гостям в нашем предприятии в Циндао. Посмотрите наше оборудование и процессы лично.
+  label: Запланировать визит →
   link: /contact

@@ -1,49 +1,48 @@
-hero:
-  tagline: Process
-  title: Manufacturing Process
-  subtitle: From raw material to sea-ready SUP —every step under our control
-  back_label: Back to Factory
+﻿hero:
+  tagline: Süreç
+  title: Üretim Süreci
+  subtitle: Ham maddeden denize hazır tekneye —her adım bizim kontrolümüzde
+  back_label: Fabrikaya Dön
   back_link: /factory
-intro: >-
-  Unlike brands that outsource production to third-party factories, afarer owns and operates its entire manufacturing chain. This vertical integration allows us to maintain strict quality control at every stage, respond quickly to custom requirements, and deliver consistent product quality batch
-  after batch. Here is how a SUP board is built in our facility.
+
+intro: Üretimi üçüncü taraf fabrikalara yaptıran markaların aksine afarer, tüm üretim zincirinin sahibidir ve işletir. Bu dikey entegrasyon, her aşamada sıkı kalite kontrolü sağlamamıza, özel taleplere hızlı yanıt vermemize ve partiden partiye tutarlı ürün kalitesi sunmamıza olanak tanır. İşte tesisimizde bir teknenin nasıl inşa edildiği.
+
 steps:
   - step: '01'
-    title: Material Receipt & Inspection
-    description: Every incoming batch of PVC fabric, fiberglass mat, resin, and hardware is inspected against specification. Fabric samples are tested for tensile strength, thickness uniformity, and UV resistance before release to production. Non-conforming materials are quarantined and returned.
-    duration: 1— days
+    title: Malzeme Kabul ve Muayene
+    description: Gelen her PVC kumaş, fiberglas keçe, reçine ve donanım partisi spesifikasyonlara göre incelenir. Kumaş numuneleri, üretime kabul edilmeden önce çekme mukavemeti, kalınlık homojenliği ve UV direnci açısından test edilir. Uygun olmayan malzemeler karantinaya alınır ve iade edilir.
+    duration: 1— gün
   - step: '02'
-    title: Automatic PVC Cutting
-    description: Approved fabrics are laid on the automatic CNC cutting machine and cut with sub-millimetre accuracy. Computer-optimised nesting arranges panels to minimise waste —typically below 5%. Cut panels are labelled by boat model and chamber, then bundled for transfer to the welding workshop.
-    duration: 2— hours per boat kit
+    title: Otomatik PVC Kesim
+    description: "Onaylanan kumaşlar, otomatik CNC kesim makinesine serilir ve milimetre altı hassasiyetle kesilir. Bilgisayar destekli optimizasyon, panelleri atığı en aza indirecek şekilde yerleştirir —tipik olarak %5'in altında. Kesilen paneller, tekne modeli ve odasına göre etiketlenir ve kaynak atölyesine aktarılmak üzere paketlenir."
+    duration: Tekne seti başına 2— saat
   - step: '03'
-    title: Tube Heat Sealing & Welding
-    description: >-
-      Panels are tacked and bonded using heat sealing machines  with hot-air welding at controlled temperatures of 200—00 °C. Main seams are reinforced with RF dielectric welding for airtight, high-strength joints. Completed chambers are inflated to 1.5× working pressure for 30-minute air-retention
-      validation.
-    duration: 1— days per boat
+    title: Boru Kaynağı ve Birleştirme
+    description: Paneller, kontrollü 200—00 °C sıcaklıklarda sıcak hava kaynak makineleri ile teyellenir ve birleştirilir. Ana dikişler, hava geçirmez, yüksek mukavemetli bağlantılar için dielektrik RF kaynağı ile güçlendirilir. Bitmiş odalar, 30 dakikalık hava tutma doğrulaması için çalışma basıncının 1,5 katına şişirilir.
+    duration: Tekne başına 1— gün
   - step: '04'
-    title: Drop-Stitch Core Bonding
-    description: SUP board drop-stitch cores are bonded to outer PVC laminates using heat lamination. Thousands of internal polyester threads connect top and bottom layers, creating a rigid structure at 12-15 PSI. Rail bands are triple-layer fusion bonded for edge strength.
-    duration: 1— days per board
+    title: SUP Fiberglas Gövde Kalıplama
+    description: "SUP bot gövdeleri, el yatırmalı fiberglas yöntemiyle üretilir. Fiberglas keçe ve roving kumaş katmanları, hassas kalıplarda polyester veya vinil ester reçine ile elle rulolanır. Her kat, tutarlı laminat kalitesi için vakumla paketlenir. Gövde, yüksek parlaklıkta, UV'ye dayanıklı deniz yüzeyi için jelkot ile kaplanır."
+    duration: Gövde başına 2— gün
   - step: '05'
-    title: SUP Printing & Decoration
-    description: SUP board deck graphics are applied using digital printing  for full-colour photo-quality designs, and screen printing  for durable logos and repeating patterns. Prints are cured and sealed for UV and abrasion resistance.
-    duration: 1— days
+    title: SUP Baskı ve Dekorasyon
+    description: SUP tahtası güverte grafikleri, tam renkli, fotoğraf kalitesinde desenler için dijital baskı ve dayanıklı logolar ile tekrarlayan desenler için serigrafi baskı ile uygulanır. Baskılar, UV ve aşınma direnci için kürlenir ve sızdırmaz hale getirilir.
+    duration: 1— gün
   - step: '06'
-    title: Final Assembly & Fitting
-    description: Valves, D-rings, handles, fin boxes, and deck pads are installed on the assembly line. Each board follows a 100-point assembly checklist with mandatory sign-off at each stage.
-    duration: 1— days
+    title: Son Montaj ve Donanım
+    description: Fiberglas gövdeler ve PVC boru tertibatları montaj hattında birleştirilir. Motor monte edilir, direksiyon ve kontrol sistemleri bağlanır, yakıt sistemi kurulur ve tam elektrik tesisatı yapılır. Her tekne, her aşamada zorunlu onay ile 100 maddelik bir montaj kontrol listesinden geçer.
+    duration: 2— gün
   - step: '07'
-    title: Quality Testing & Inspection
-    description: 'Every completed board undergoes mandatory quality gate: chamber air-retention test, hardware function check, fastener torque verification, and cosmetic inspection. Custom and prototype builds also receive in-water trials covering stability and handling.'
-    duration: 1— days
+    title: Kalite Testi ve Muayene
+    description: 'Tamamlanan her tekne zorunlu kalite aşamalarından geçer: oda hava tutma testi, sistem fonksiyonel kontrolü, bağlantı elemanı tork doğrulaması ve kozmetik muayene. Özel ve prototip tasarımlar ayrıca hız, kullanım, denge ve dayanıklılık içeren suda deniz denemelerinden geçer.'
+    duration: 1— gün
   - step: '08'
-    title: Packing & Shipping
-    description: Boards are deflated, folded per procedure, packed in heavy-duty woven bags or retail boxes, and loaded for shipment. Each package is labelled with model, serial number, and destination. We coordinate with freight forwarders for FCL and LCL container shipments worldwide.
-    duration: 1 day
+    title: Paketleme ve Sevkiyat
+    description: Botların havası alınır, prosedüre göre katlanır, sağlam kumaş veya kontrplak torbalara paketlenir ve nakliye için yüklenir. Her paket, model, seri numarası ve varış yeri ile etiketlenir. Dünya çapında FCL ve LCL gönderileri için nakliyecilerle koordinasyon sağlarız.
+    duration: 1 gün
+
 cta:
-  title: See our equipment and machinery
-  desc: Explore the industrial-grade equipment behind every afarer SUP board.
-  label: View equipment →
+  title: Ekipman ve makinelerimizi görün
+  desc: Her afarer teknesinin arkasındaki endüstriyel ekipmanı keşfedin.
+  label: Ekipmanı Görün →
   link: /factory/equipment

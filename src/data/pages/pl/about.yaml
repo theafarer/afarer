@@ -1,106 +1,112 @@
-hero:
-  tagline: About us
+﻿hero:
+  tagline: O firmie
   image:
     src: https://assets.afarer.com/images/afarer/factory/afarer-factory-building.webp
-    alt: afarer factory and workshop
+    alt: Warsztat afarer
   title: |
-    Marine engineering, <br />
-    built the <span class="text-accent dark:text-white">afarer</span> way
-  subtitle: 'We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company.'
+    Inżynieria okrętowa <br />
+    w stylu <span class="text-accent dark:text-white">afarer</span>
+  subtitle: 'Zaczęliśmy w nadmorskim warsztacie z jedną łodzią i niezachwianym przekonaniem: produkty morskie powinny być zaprojektowane tak, jakby od nich zależało życie —bo tak jest. Dziś dostarczamy do 40+ krajów, ale każdy kadłub wciąż przechodzi przez te same ręce, które założyły firmę.'
+
 stats:
-  title: By the numbers
+  title: W liczbach
   columns: 4
   stats:
-    - title: Hulls delivered
-      amount: 2,400+
-    - title: Countries shipped
+    - title: Dostarczone kadłuby
+      amount: '2,400+'
+    - title: Kraje dostaw
       amount: '40'
-    - title: Years of combined experience
+    - title: Łączne doświadczenie (lata)
       amount: '60'
-    - title: Average warranty response (hours)
+    - title: Średni czas odpowiedzi (h)
       amount: '24'
+
 features3_what_we_build:
-  title: What we build
-  subtitle: 'We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company.'
+  title: Co budujemy
+  subtitle: Skoncentrowana linia produktów, którą znamy od podszewki —żadnych półśrodków ani badge engineeringu.
   columns: 3
   isBeforeContent: true
   items:
-    - title: SUP boards
-      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+    - title: Łodzie SUP
+      description: SUP z kadłubem aluminiowym od 3,3 m do 7,5 m. Zaprojektowane do patrolowania, nurkowania, wędkowania i użytku rodzinnego.
       icon: tabler:ship
-    - title: Inflatable SUPs
-      description: PVC inflatable SUP boards from 9 ft to 12 ft. Light, tough and easy to stow.
+    - title: Łodzie pneumatyczne
+      description: Łodzie pneumatyczne z PVC i Hypalon od 2,4 m do 4,2 m. Lekkie, wytrzymałe i łatwe w przechowywaniu.
       icon: tabler:speedboat
-    - title: Premium SUP packages
-      description: Compact, high-spec SUPs custom-built to match your brand or fleet requirements.
+    - title: Tender do superjachtów
+      description: Kompaktowe SUP o wysokich specyfikacjach, wykonane na miarę projektu jachtu macierzystego.
       icon: tabler:crown
+
 features3_more:
   columns: 3
   isAfterContent: true
   items:
-    - title: Accessories
-      description: Paddles, pumps, covers, dry-bags and electronics. All matched to our boards.
+    - title: Akcesoria
+      description: Pasy, pompy, pokrowce, torby wodoodporne, zbiorniki paliwa i elektronika. Wszystko kompatybilne z naszymi łodziami.
       icon: tabler:package
-    - title: Refit & repair
-      description: In-house board repair, pad replacement and accessory upgrades.
+    - title: Modyfikacje i naprawy
+      description: Naprawa przedziałów pneumatycznych, modernizacja elektroniki i wymiana silników.
       icon: tabler:tool
-    - title: Custom builds
-      description: Project-by-project design for commercial, scientific and military customers.
+    - title: Produkty na zamówienie
+      description: Projektowanie dla klientów komercyjnych, naukowych i wojskowych.
       icon: tabler:hammer
   image:
     src: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-2.webp
-    alt: Boat design and engineering discussion
+    alt: Łódź na zamówienie
+
 steps2_values:
-  title: Our values
-  subtitle: Three principles that have shaped every product since day one.
+  title: Nasze wartości
+  subtitle: Trzy zasady kształtujące każdy produkt od pierwszego dnia.
   items:
-    - title: Build like it carries your family
-      description: Every hull, weld and fastener is treated as if our own families will use it.
+    - title: Buduj tak, jakby w łodzi była twoja rodzina
+      description: Każdy kadłub, każdy spaw i każdy komponent są traktowane tak, jakby miały być używane przez nasze własne rodziny.
       icon: tabler:heart
-    - title: Engineer before we sell
-      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+    - title: Inżynieria przed sprzedażą
+      description: Jeśli specyfikacja jest błędna, zmieniamy specyfikację —nigdy klienta.
       icon: tabler:settings
-    - title: Support that outlasts the warranty
-      description: Twenty-year-old hulls still call us for spare parts, and we still pick up.
+    - title: Wsparcie poza gwarancją
+      description: Dwudziestoletnie kadłuby wciąż dzwonią po części —i wciąż odbieramy.
       icon: tabler:headset
+
 steps2_milestones:
-  title: Milestones
-  subtitle: A short version of the afarer story.
+  title: Kamienie milowe
+  subtitle: Krótka wersja historii afarer.
   isReversed: true
   items:
-    - title: Founded in a coastal workshop
-      description: Started by two naval architects with a CNC mill and a stubborn idea.
+    - title: Założona w nadmorskim warsztacie
+      description: Dwóch inżynierów okrętowych z jedną frezarką CNC i niezachwianą ideą.
       icon: tabler:building-factory
-    - title: First 1,000 hulls delivered
-      description: Reached in our seventh year, mostly through word of mouth and repeat customers.
+    - title: Pierwsze 1 000 dostarczonych kadłubów
+      description: Osiągnięte w siódmym roku, głównie dzięki poczcie pantoflowej i stałym klientom.
       icon: tabler:circle-check
-    - title: International export programme
-      description: Now shipping to 40+ countries with localised support partners on five continents.
+    - title: Międzynarodowy program eksportowy
+      description: Dostawy do 40+ krajów z lokalnymi partnerami serwisowymi na pięciu kontynentach.
       icon: tabler:world
+
 features2_locations:
-  title: Our locations
-  tagline: Find us
+  title: Nasze lokalizacje
+  tagline: Gdzie nas znaleźć
   columns: 3
   items:
-    - title: Headquarters & workshop
-      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
-    - title: EU service centre
-      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
-    - title: APAC partner network
-      description: Authorised service partners in Australia, Japan, Singapore and Hong Kong.
-brand_hub_tagline: Brand
-brand_hub_title: Explore Our Brand
-brand_hub_subtitle: Dive deeper into our SUP engineering expertise, global presence, and the principles that drive us.
+    - title: Siedziba główna i warsztat
+      description: Nadmorski park przemysłowy, budynek 4 —otwarte pn-pt dla odwiedzin po umówieniu.
+    - title: Centrum serwisowe UE
+      description: Port śródziemnomorski —modyfikacje, naprawy i wsparcie gwarancyjne dla klientów europejskich.
+    - title: Sieć partnerska APAC
+      description: Autoryzowani partnerzy serwisowi w Australii, Japonii, Singapurze i Hongkongu.
+brand_hub_tagline: Marka
+brand_hub_title: Poznaj naszą markę
+brand_hub_subtitle: Zanurz się w naszej wiedzy z zakresu inżynierii morskiej, globalnej obecności i zasad, które nami kierują.
 brand_hub_cards:
-  - title: Marine Expertise
-    desc: Decades of material science, precision manufacturing, and real-world testing —from PVC/Hypalon fabrication to deep-V hull design and drop-stitch technology.
+  - title: Wiedza Morska
+    desc: 'Dekady nauki o materiałach, precyzyjnej produkcji i testów w rzeczywistych warunkach —od produkcji PVC/Hypalon po konstrukcję głębokiego kadłuba V i technologię drop-stitch.'
     link: /brand-marine-expertise
-    link_label: Learn more →
-  - title: Global Presence
-    desc: Shipping to 50+ countries from our Qingdao facility with authorized service partners across Europe, Asia-Pacific, and the Americas.
+    link_label: 'Dowiedz się więcej →'
+  - title: Globalna Obecność
+    desc: 'Wysyłka do ponad 50 krajów z naszego zakładu w Qingdao z autoryzowanymi partnerami serwisowymi w Europie, Azji-Pacyfiku i Amerykach.'
     link: /brand-global-presence
-    link_label: Learn more →
-  - title: Why afarer
-    desc: Vertical integration, dual certification (ISO 9001 + BSCI), CE compliance, and low MOQs —built for brands, distributors, and government agencies.
+    link_label: 'Dowiedz się więcej →'
+  - title: Dlaczego afarer
+    desc: 'Pionowa integracja, podwójna certyfikacja (ISO 9001 + BSCI), zgodność z CE i niskie MOQ —stworzone dla marek, dystrybutorów i agencji rządowych.'
     link: /brand-why-afarer
-    link_label: Learn more →
+    link_label: 'Dowiedz się więcej →'

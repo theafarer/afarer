@@ -1,106 +1,113 @@
-hero:
-  tagline: About us
+﻿hero:
+  tagline: Om företaget
   image:
     src: https://assets.afarer.com/images/afarer/factory/afarer-factory-building.webp
-    alt: afarer factory and workshop
+    alt: afarer-verkstad
   title: |
-    Marine engineering, <br />
-    built the <span class="text-accent dark:text-white">afarer</span> way
-  subtitle: 'We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company.'
+    Marin ingenjörskonst <br />
+    i <span class="text-accent dark:text-white">afarer</span>-stil
+  subtitle: 'Vi började i en kustverkstad med en båt och en orubblig övertygelse: marina produkter bör vara designade som om livet hängde på dem —för det gör det. Idag levererar vi till 40+ länder, men varje skrov går fortfarande genom samma händer som grundade företaget.'
+
 stats:
-  title: By the numbers
+  title: I siffror
   columns: 4
   stats:
-    - title: Hulls delivered
-      amount: 2,400+
-    - title: Countries shipped
+    - title: Levererade skrov
+      amount: '2,400+'
+    - title: Leveransländer
       amount: '40'
-    - title: Years of combined experience
+    - title: Total erfarenhet (år)
       amount: '60'
-    - title: Average warranty response (hours)
+    - title: Genomsnittlig svarstid (h)
       amount: '24'
+
 features3_what_we_build:
-  title: What we build
-  subtitle: 'We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company.'
+  title: Vad vi bygger
+  subtitle: En fokuserad produktlinje vi kan utan och innan —inga genvägar eller badge engineering.
   columns: 3
   isBeforeContent: true
   items:
-    - title: SUP boards
-      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+    - title: SUP-båtar
+      description: SUP med aluminiumskrov från 3,3 m till 7,5 m. Designade för patrullering, dykning, fiske och familjebruk.
       icon: tabler:ship
-    - title: Inflatable SUPs
-      description: PVC inflatable SUP boards from 9 ft to 12 ft. Light, tough and easy to stow.
+    - title: Gummibåtar
+      description: PVC- och Hypalon-gummibåtar från 2,4 m till 4,2 m. Lätta, hållbara och lätta att förvara.
       icon: tabler:speedboat
-    - title: Premium SUP packages
-      description: Compact, high-spec SUPs custom-built to match your brand or fleet requirements.
+    - title: Superyacht-tender
+      description: Kompakta SUP med höga specifikationer, anpassade till värdytans design.
       icon: tabler:crown
+
 features3_more:
   columns: 3
   isAfterContent: true
   items:
-    - title: Accessories
-      description: Paddles, pumps, covers, dry-bags and electronics. All matched to our boards.
+    - title: Tillbehör
+      description: Selar, pumpar, skydd, vattentäta väskor, bränsletankar och elektronik. Allt kompatibelt med våra båtar.
       icon: tabler:package
-    - title: Refit & repair
-      description: In-house board repair, pad replacement and accessory upgrades.
+    - title: Modifieringar och reparationer
+      description: Reparation av luftkammare, elektronikuppgraderingar och motorbyten.
       icon: tabler:tool
-    - title: Custom builds
-      description: Project-by-project design for commercial, scientific and military customers.
+    - title: Skräddarsydda produkter
+      description: Design för kommersiella, vetenskapliga och militära kunder.
       icon: tabler:hammer
   image:
     src: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-2.webp
-    alt: Boat design and engineering discussion
+    alt: Skräddarsydd båt
+
 steps2_values:
-  title: Our values
-  subtitle: Three principles that have shaped every product since day one.
+  title: Våra värderingar
+  subtitle: Tre principer som format varje produkt från dag ett.
   items:
-    - title: Build like it carries your family
-      description: Every hull, weld and fastener is treated as if our own families will use it.
+    - title: Bygg som om din familj var i båten
+      description: Varje skrov, varje svets och varje komponent behandlas som om de skulle användas av våra egna familjer.
       icon: tabler:heart
-    - title: Engineer before we sell
-      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
+    - title: Ingenjörskonst före försäljning
+      description: Om specifikationen är fel ändrar vi specifikationen —aldrig kunden.
       icon: tabler:settings
-    - title: Support that outlasts the warranty
-      description: Twenty-year-old hulls still call us for spare parts, and we still pick up.
+    - title: Support efter garantin
+      description: Tjugo år gamla skrov ringer fortfarande efter delar —och vi svarar fortfarande.
       icon: tabler:headset
+
 steps2_milestones:
-  title: Milestones
-  subtitle: A short version of the afarer story.
+  title: Milstolpar
+  subtitle: Den korta versionen av afarers historia.
   isReversed: true
   items:
-    - title: Founded in a coastal workshop
-      description: Started by two naval architects with a CNC mill and a stubborn idea.
+    - title: Grundad i en kustverkstad
+      description: Två mariningenjörer med en CNC-fräs och en orubblig idé.
       icon: tabler:building-factory
-    - title: First 1,000 hulls delivered
-      description: Reached in our seventh year, mostly through word of mouth and repeat customers.
+    - title: Första 1 000 levererade skroven
+      description: Uppnått under det sjunde året, främst genom mun-mot-mun-metoden och återkommande kunder.
       icon: tabler:circle-check
-    - title: International export programme
-      description: Now shipping to 40+ countries with localised support partners on five continents.
+    - title: Internationellt exportprogram
+      description: Leveranser till 40+ länder med lokala servicepartners på fem kontinenter.
       icon: tabler:world
+
 features2_locations:
-  title: Our locations
-  tagline: Find us
+  title: Våra platser
+  tagline: Var du hittar oss
   columns: 3
   items:
-    - title: Headquarters & workshop
-      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
-    - title: EU service centre
-      description: Inflatable SUP boards from 9 ft to 12 ft. Designed for touring, yoga, fishing and family use.
-    - title: APAC partner network
-      description: Authorised service partners in Australia, Japan, Singapore and Hong Kong.
+    - title: Huvudkontor och verkstad
+      description: SUP med aluminiumskrov från 3,3 m till 7,5 m. Designade för patrullering, dykning, fiske och familjebruk.
+    - title: EU-servicecenter
+      description: Medelhavshamn —modifieringar, reparationer och garantisupport för europeiska kunder.
+    - title: APAC-partnernätverk
+      description: Auktoriserade servicepartners i Australien, Japan, Singapore och Hongkong.
 brand_hub_tagline: Brand
 brand_hub_title: Explore Our Brand
-brand_hub_subtitle: Dive deeper into our SUP engineering expertise, global presence, and the principles that drive us.
+brand_hub_subtitle: Dive deeper into our marine engineering expertise, global presence, and the principles that drive us.
+
 brand_hub_cards:
   - title: Marine Expertise
-    desc: Decades of material science, precision manufacturing, and real-world testing —from PVC/Hypalon fabrication to deep-V hull design and drop-stitch technology.
+    desc: 'Decades of material science, precision manufacturing, and real-world testing —from PVC/Hypalon fabrication to deep-V hull design and drop-stitch technology.'
     link: /brand-marine-expertise
-    link_label: Learn more →
+    link_label: 'Learn more →'
   - title: Global Presence
-    desc: Shipping to 50+ countries from our Qingdao facility with authorized service partners across Europe, Asia-Pacific, and the Americas.
+    desc: 'Shipping to 50+ countries from our Qingdao facility with authorized service partners across Europe, Asia-Pacific, and the Americas.'
     link: /brand-global-presence
-    link_label: Learn more →
+    link_label: 'Learn more →'
   - title: Why afarer
-    desc: Vertical integration, dual certification (ISO 9001 + BSCI), CE compliance, and low MOQs —built for brands, distributors, and government agencies.
+    desc: 'Vertical integration, dual certification (ISO 9001 + BSCI), CE compliance, and low MOQs —built for brands, distributors, and government agencies.'
     link: /brand-why-afarer
-    link_label: Learn more →
+    link_label: 'Learn more →'

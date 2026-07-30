@@ -1,65 +1,65 @@
 hero:
-  tagline: afarer Academy
-  title: Learning Center
-  subtitle: Guides and tutorials for every skill level —from SUP basics to advanced rescue techniques
+  tagline: afarer Akademi
+  title: Bilgi Merkezi
+  subtitle: Her beceri seviyesi için rehberler ve eğitimler —SUP temellerinden ileri kurtarma tekniklerine
 categories:
-  - level: Beginner
+  - level: Başlangıç
     color: from-green-500 to-emerald-600
     badge: bg-green-100 text-green-700
     guides:
-      - title: SUP Basics
-        desc: Learn the fundamentals of stand-up paddleboarding —stance, stroke technique, and balance.
+      - title: SUP Temelleri
+        desc: Ayakta kürek çekmenin temellerini öğrenin —duruş, kürek tekniği ve denge.
         slug: sup-basics
-      - title: Paddle Techniques
-        desc: Forward stroke, sweep stroke, draw stroke, and low brace —master the essential paddle moves.
+      - title: Kürek Teknikleri
+        desc: İleri kürek, geri kürek, çekiş küreği ve alçak destek —temel kürek hareketlerinde ustalaşın.
         slug: paddle-techniques
-      - title: Safety First
-        desc: Essential safety practices including weather checks, PFD use, leash rules, and self-rescue.
+      - title: Önce Güvenlik
+        desc: Hava durumu kontrolü, PFD kullanımı, bağlantı halatı kuralları ve kendi kendine kurtarma dahil temel güvenlik uygulamaları.
         slug: safety-first
-  - level: Intermediate
+  - level: Orta
     color: from-blue-500 to-indigo-600
     badge: bg-blue-100 text-blue-700
     guides:
-      - title: Touring Essentials
-        desc: Planning multi-hour paddles —navigation, hydration, pacing, and reading wind forecasts.
+      - title: Kano Gezisi Temelleri
+        desc: Çok saatli gezileri planlama —navigasyon, sıvı alımı, tempo ve rüzgar tahminlerini okuma.
         slug: touring-essentials
-      - title: Weather Reading
-        desc: Interpret marine forecasts, identify cloud patterns, and understand wind effects on water.
+      - title: Hava Durumu Okuma
+        desc: Deniz tahminlerini yorumlayın, bulut desenlerini tanıyın ve rüzgarın su üzerindeki etkisini anlayın.
         slug: weather-reading
-      - title: Navigation Basics
-        desc: Chart reading, compass use, GPS waypoints, and route planning for coastal paddling.
+      - title: Navigasyon Temelleri
+        desc: Harita okuma, pusula kullanımı, GPS noktaları ve kıyı seyri için rota planlama.
         slug: navigation-basics
-      - title: Tidal Awareness
-        desc: Understanding tide cycles, currents, and how they affect launch timing and routing.
+      - title: Gelgit Farkındalığı
+        desc: Gelgit döngülerini, akıntıları ve bunların hareket zamanlaması ile rota üzerindeki etkilerini anlama.
         slug: tidal-awareness
-  - level: Advanced
+  - level: İleri
     color: from-purple-500 to-violet-600
     badge: bg-purple-100 text-purple-700
     guides:
-      - title: Multi-Day Trip Planning
-        desc: Expedition logistics —gear selection, food planning, safety protocols, and emergency contacts.
+      - title: Çok Günlü Gezi Planlama
+        desc: Sefer lojistiği —ekipman seçimi, yemek planlaması, güvenlik protokolleri ve acil durum irtibatları.
         slug: multi-day-trip-planning
-      - title: Rescue Techniques
-        desc: Self-rescue, T-rescue, and towing protocols for open water.
+      - title: Kurtarma Teknikleri
+        desc: Kendi kendine kurtarma, T kurtarma, kanolar için Eskimo kurtarması ve açık suda çekme protokolleri.
         slug: rescue-techniques
-      - title: Night Paddling
-        desc: Navigation after dark —lighting requirements, route memory, group communication, and hazard awareness.
+      - title: Gece Kürek Çekme
+        desc: Karanlıkta navigasyon —aydınlatma gereksinimleri, rota hafızası, grup iletişimi ve tehlike farkındalığı.
         slug: night-paddling
-  - level: Maintenance
+  - level: Bakım
     color: from-amber-500 to-orange-600
     badge: bg-amber-100 text-amber-700
     guides:
-      - title: Cleaning & Care
-        desc: Freshwater rinsing, UV protection, mildew prevention, and proper drying techniques after every session.
+      - title: Temizlik ve Bakım
+        desc: Tatlı su ile durulama, UV koruması, küf önleme ve her kullanımdan sonra uygun kurutma teknikleri.
         slug: cleaning-and-care
-      - title: Storage Guide
-        desc: Best practices for storing inflatable SUP boards —deflation, folding, temperature control, and shelf life.
+      - title: Depolama
+        desc: Şişme tahta ve botları saklama için en iyi uygulamalar —havasını alma, katlama, sıcaklık kontrolü ve raf ömrü.
         slug: storage-guide
-      - title: Repair Basics
-        desc: Fix small punctures, seam leaks, and valve issues with PVC repair kits and patch techniques.
+      - title: Onarım Temelleri
+        desc: PVC tamir kitleri ve yama teknikleri kullanarak küçük delikleri, sızdıran dikişleri ve valf sorunlarını giderme.
         slug: repair-basics
-      - title: Valve Maintenance
-        desc: Identify valve types (Halkey-Roberts, Boston, Leafield), clean debris, and replace faulty stems.
+      - title: Valf Bakımı
+        desc: Valf tiplerini tanıma (Halkey-Roberts, Boston, Leafield), kalıntı temizliği ve arızalı milleri değiştirme.
         slug: valve-maintenance
 knowledge_center_tagline: Knowledge Center
 knowledge_center_title: Marine Equipment & Industry Guides
@@ -159,9 +159,9 @@ knowledge_sections:
       - title: SUP for Commercial Operations
         desc: Why inflatable SUPs are a versatile product for commercial fleets, rental businesses, and professional operators.
         href: /use-cases/search-and-rescue
-read_guide: Read guide →
+read_guide: Rehberi Oku →
 cta:
-  title: Not sure where to start?
-  desc: Take our skill assessment quiz to find the right guides and gear for your level.
-  label: Contact us →
+  title: Nereden başlayacağınızı bilmiyor musunuz?
+  desc: Seviyenize uygun rehberleri ve ekipmanı bulmak için beceri değerlendirme testimizi çözün.
+  label: Bizimle İletişime Geçin →
   link: /contact

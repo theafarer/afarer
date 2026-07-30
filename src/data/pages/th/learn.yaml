@@ -1,70 +1,73 @@
 hero:
-  tagline: Water Exploration Knowledge
-  title: Learn
+  tagline: 'ความรู้การสำรวจทางน้ำ'
+  title: 'เรียนรู้'
   subtitle: |
-    Guides, tutorials, and deep dives —everything you need to explore<br />
-    water with confidence. From choosing your first SUP to mastering advanced techniques.
-  taglineSection: Knowledge for every paddler. From beginner to professional.
+    คำแนะนำ บทเรียน และดำดิ่งลึก —ทุกสิ่งที่คุณต้องการเพื่อสำรวจ<br />
+    ผืนน้ำด้วยความมั่นใจ ตั้งแต่การเลือก SUP แรกจนถึงการเชี่ยวชาญเทคนิคขั้นสูง
+  taglineSection: 'ความรู้สำหรับนักพายทุกคน ตั้งแต่ผู้เริ่มต้นถึงมืออาชีพ'
+
 featured:
-  tagline: Featured Topics
-  title: Start your learning journey
-  subtitle: Whether you are new to water sports or looking to level up, our guides have you covered.
+  tagline: 'หัวข้อแนะนำ'
+  title: 'เริ่มต้นการเดินทางเรียนรู้ของคุณ'
+  subtitle: 'ไม่ว่าคุณจะใหม่กับกีฬาทางน้ำหรือต้องการยกระดับ คำแนะนำของเราครอบคลุมคุณ'
   items:
-    - title: SUP Basics
-      description: Everything a beginner needs to know —board types, paddle sizing, stance, and first-day tips.
-      icon: tabler:lifebuoy
-      href: /learn/sup
-    - title: Inflatable vs Hard Board
-      description: Which is right for you? We compare portability, performance, durability, and cost side by side.
-      icon: tabler:arrows-left-right
-      href: /compare/inflatable-vs-hardboard
-    - title: Water Safety
-      description: Essential safety knowledge every paddler should have —weather, PFDs, self-rescue, and more.
-      icon: tabler:shield
-      href: /learn/water-safety
-    - title: Materials Guide
-      description: PVC vs Hypalon, drop-stitch technology, denier ratings —understand what your gear is made of.
-      icon: tabler:flask
-      href: /learn/materials
-    - title: SUP Size Guide
-      description: Find the right board length, width, and volume for your weight, skill, and paddling style.
-      icon: tabler:ruler
-      href: /size-guide
-    - title: Intermediate Techniques
-      description: Step up your paddling with advanced strokes, turning techniques, and rough-water handling.
-      icon: tabler:droplet
-      href: /v2/intermediate-techniques
+    - title: 'พื้นฐาน SUP'
+      description: 'ทุกสิ่งที่ผู้เริ่มต้นจำเป็นต้องรู้ —ประเภทกระดาน ขนาดพาย ท่ายืน และเคล็ดลับวันแรก'
+      icon: 'tabler:lifebuoy'
+      href: '/learn/sup'
+    - title: 'กระดานเป่าลม vs กระดานแข็ง'
+      description: 'อันไหนเหมาะกับคุณ? เราเปรียบเทียบความพกพา ประสิทธิภาพ ความทนทาน และราคาเคียงข้างกัน'
+      icon: 'tabler:arrows-left-right'
+      href: '/compare/inflatable-vs-hardboard'
+    - title: 'ความปลอดภัยทางน้ำ'
+      description: 'ความรู้ด้านความปลอดภัยที่จำเป็นที่นักพายทุกคนควรมี —สภาพอากาศ เสื้อชูชีพ การช่วยเหลือตนเอง และอื่นๆ'
+      icon: 'tabler:shield'
+      href: '/learn/water-safety'
+    - title: 'คู่มือวัสดุ'
+      description: 'PVC vs Hypalon เทคโนโลยี drop-stitch ระดับเดเนียร์ —เข้าใจว่าอุปกรณ์ของคุณทำจากอะไร'
+      icon: 'tabler:flask'
+      href: '/learn/materials'
+    - title: 'คู่มือขนาด SUP'
+      description: 'ค้นหาความยาว ความกว้าง และปริมาตรกระดานที่เหมาะสมสำหรับน้ำหนัก ทักษะ และสไตล์การพายของคุณ'
+      icon: 'tabler:ruler'
+      href: '/size-guide'
+    - title: 'เทคนิคระดับกลาง'
+      description: 'ยกระดับการพายของคุณด้วยการพายขั้นสูง เทคนิคการเลี้ยว และการจัดการในน้ำขุ่น'
+      icon: 'tabler:droplet'
+      href: '/v2/intermediate-techniques'
+
 categories:
-  tagline: Categories
-  title: Explore by topic
-  subtitle: All learning content organized by skill level and interest.
+  tagline: 'หมวดหมู่'
+  title: 'สำรวจตามหัวข้อ'
+  subtitle: 'เนื้อหาเรียนรู้ทั้งหมดจัดตามระดับทักษะและความสนใจ'
   columns:
-    - title: Beginner
+    - title: 'ผู้เริ่มต้น'
       items:
-        - SUP Basics —start here
-        - Inflatable vs Hard Board
-        - Water Safety Essentials
-        - How to Choose Your SUP
-        - Pump & Pack Guide
-    - title: Intermediate
+        - 'พื้นฐาน SUP —เริ่มที่นี่'
+        - 'กระดานเป่าลม vs กระดานแข็ง'
+        - 'พื้นฐานความปลอดภัยทางน้ำ'
+        - 'วิธีเลือก SUP ของคุณ'
+        - 'คู่มือปั๊มและการบรรจุ'
+    - title: 'ระดับกลาง'
       items:
-        - Paddling Techniques
-        - Inflatable Technology
-        - Materials Reference
-        - PVC vs Hypalon Comparison
-        - Drop-Stitch Core Explained
-    - title: Advanced & Professional
+        - 'เทคนิคการพาย'
+        - 'เทคโนโลยีเป่าลม'
+        - 'เอกสารอ้างอิงวัสดุ'
+        - 'เปรียบเทียบ PVC vs Hypalon'
+        - 'แกน drop-stitch อธิบาย'
+    - title: 'ขั้นสูงและมืออาชีพ'
       items:
-        - Fleet Operations
-        - Commercial-Grade Equipment
-        - Safety & Rescue Protocols
-        - Custom Builds & OEM
+        - 'ปฏิบัติการกองเรือ'
+        - 'อุปกรณ์ระดับพาณิชย์'
+        - 'ระเบียบปฏิบัติความปลอดภัยและกู้ภัย'
+        - 'การสร้างแบบกำหนดเองและ OEM'
+
 cta:
-  title: Still have questions?
-  subtitle: Ask our AI guide for personalized answers about gear, safety, and techniques.
+  title: 'ยังมีคำถาม?'
+  subtitle: 'ถาม AI Guide ของเราสำหรับคำตอบส่วนบุคคลเกี่ยวกับอุปกรณ์ ความปลอดภัย และเทคนิค'
   actions:
     - variant: primary
-      text: Ask the Water Advisor AI
+      text: 'ถาม Water Advisor AI'
       href: '#ai-guide'
-    - text: Browse all guides
-      href: /academy
+    - text: 'เรียกดูคำแนะนำทั้งหมด'
+      href: '/academy'

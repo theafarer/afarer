@@ -1,70 +1,73 @@
 hero:
-  tagline: Water Exploration Knowledge
-  title: Learn
+  tagline: 'Vattenutforskningskunskap'
+  title: 'Lär dig'
   subtitle: |
-    Guides, tutorials, and deep dives —everything you need to explore<br />
-    water with confidence. From choosing your first SUP to mastering advanced techniques.
-  taglineSection: Knowledge for every paddler. From beginner to professional.
+    Guider, handledningar och djupdyk —allt du behöver för att utforska<br />
+    vatten med förtroende. Från att välja ditt första SUP till att bemästra avancerade tekniker.
+  taglineSection: 'Kunskap för varje paddlare. Från nybörjare till professionell.'
+
 featured:
-  tagline: Featured Topics
-  title: Start your learning journey
-  subtitle: Whether you are new to water sports or looking to level up, our guides have you covered.
+  tagline: 'Utvalda ämnen'
+  title: 'Börja din inlärningsresa'
+  subtitle: 'Oavsett om du är ny inom vattensport eller vill ta dig till nästa nivå, våra guider täcker dig.'
   items:
-    - title: SUP Basics
-      description: Everything a beginner needs to know —board types, paddle sizing, stance, and first-day tips.
-      icon: tabler:lifebuoy
-      href: /learn/sup
-    - title: Inflatable vs Hard Board
-      description: Which is right for you? We compare portability, performance, durability, and cost side by side.
-      icon: tabler:arrows-left-right
-      href: /compare/inflatable-vs-hardboard
-    - title: Water Safety
-      description: Essential safety knowledge every paddler should have —weather, PFDs, self-rescue, and more.
-      icon: tabler:shield
-      href: /learn/water-safety
-    - title: Materials Guide
-      description: PVC vs Hypalon, drop-stitch technology, denier ratings —understand what your gear is made of.
-      icon: tabler:flask
-      href: /learn/materials
-    - title: SUP Size Guide
-      description: Find the right board length, width, and volume for your weight, skill, and paddling style.
-      icon: tabler:ruler
-      href: /size-guide
-    - title: Intermediate Techniques
-      description: Step up your paddling with advanced strokes, turning techniques, and rough-water handling.
-      icon: tabler:droplet
-      href: /v2/intermediate-techniques
+    - title: 'SUP-grunderna'
+      description: 'Allt en nybörjare behöver veta —brädtyper, paddelstorlek, hållning och första dagens tips.'
+      icon: 'tabler:lifebuoy'
+      href: '/learn/sup'
+    - title: 'Uppblåsbart vs hårt bräde'
+      description: 'Vilket är rätt för dig? Vi jämför bärbarhet, prestanda, hållbarhet och kostnad sida vid sida.'
+      icon: 'tabler:arrows-left-right'
+      href: '/compare/inflatable-vs-hardboard'
+    - title: 'Vattensäkerhet'
+      description: 'Viktig säkerhetskunskap varje paddlare bör ha —väder, flytvästar, självräddning och mer.'
+      icon: 'tabler:shield'
+      href: '/learn/water-safety'
+    - title: 'Materialguide'
+      description: 'PVC vs Hypalon, drop-stitch-teknik, denier-klassificeringar —förstå vad din utrustning är gjord av.'
+      icon: 'tabler:flask'
+      href: '/learn/materials'
+    - title: 'SUP-storleksguide'
+      description: 'Hitta rätt brädlängd, -bredd och -volym för din vikt, skicklighet och paddelstil.'
+      icon: 'tabler:ruler'
+      href: '/size-guide'
+    - title: 'Medelnivåtekniker'
+      description: 'Förbättra din paddling med avancerade tag, svängtekniker och hantering i oroligt vatten.'
+      icon: 'tabler:droplet'
+      href: '/v2/intermediate-techniques'
+
 categories:
-  tagline: Categories
-  title: Explore by topic
-  subtitle: All learning content organized by skill level and interest.
+  tagline: 'Kategorier'
+  title: 'Utforska efter ämne'
+  subtitle: 'Allt inlärningsinnehåll organiserat efter färdighetsnivå och intresse.'
   columns:
-    - title: Beginner
+    - title: 'Nybörjare'
       items:
-        - SUP Basics —start here
-        - Inflatable vs Hard Board
-        - Water Safety Essentials
-        - How to Choose Your SUP
-        - Pump & Pack Guide
-    - title: Intermediate
+        - 'SUP-grunderna — börja här'
+        - 'Uppblåsbart vs hårt bräde'
+        - 'Vattensäkerhetens grunder'
+        - 'Hur du väljer ditt SUP'
+        - 'Pump- och packguide'
+    - title: 'Medelnivå'
       items:
-        - Paddling Techniques
-        - Inflatable Technology
-        - Materials Reference
-        - PVC vs Hypalon Comparison
-        - Drop-Stitch Core Explained
-    - title: Advanced & Professional
+        - 'Paddeltekniker'
+        - 'Uppblåsbar teknik'
+        - 'Materialreferens'
+        - 'PVC vs Hypalon jämförelse'
+        - 'Drop-Stitch kärna förklarad'
+    - title: 'Avancerad och professionell'
       items:
-        - Fleet Operations
-        - Commercial-Grade Equipment
-        - Safety & Rescue Protocols
-        - Custom Builds & OEM
+        - 'Flottoperationer'
+        - 'Kommersiell utrustning'
+        - 'Säkerhets- och räddningsprotokoll'
+        - 'Anpassade byggen och OEM'
+
 cta:
-  title: Still have questions?
-  subtitle: Ask our AI guide for personalized answers about gear, safety, and techniques.
+  title: 'Har du fortfarande frågor?'
+  subtitle: 'Fråga vår AI-guide för personliga svar om utrustning, säkerhet och tekniker.'
   actions:
     - variant: primary
-      text: Ask the Water Advisor AI
+      text: 'Fråga Water Advisor AI'
       href: '#ai-guide'
-    - text: Browse all guides
-      href: /academy
+    - text: 'Bläddra bland alla guider'
+      href: '/academy'

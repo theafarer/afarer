@@ -1,51 +1,51 @@
 hero:
-  tagline: Knowledge Graph
-  title: Water Exploration Knowledge
+  tagline: Bilgi Grafiği
+  title: Su Keşif Bilgisi
   subtitle: |
-    A structured knowledge base covering inflatable SUP technology,<br />
-    water safety, boat engineering, and adventure planning.
-  taglineSection: Explore. Learn. Go with confidence.
+    Şişme SUP teknolojisi, su güvenliği, bot mühendisliği<br />
+    ve macera planlamasını kapsayan yapılandırılmış bir bilgi tabanı.
+  taglineSection: Keşfedin. Öğrenin. Güvenle gidin.
 clusters:
-  tagline: Knowledge Clusters
-  title: Explore by topic
-  subtitle: Deep dives into the technology, safety, and skills behind every afarer product.
+  tagline: Bilgi Kümeleri
+  title: Konuya göre keşfedin
+  subtitle: Her afarer ürününün arkasındaki teknoloji, güvenlik ve becerilere derinlemesine dalışlar.
   items:
-    - title: SUP Buying Guides
-      description: From choosing your first board to advanced touring techniques —everything about stand-up paddle boarding.
+    - title: SUP Bilgisi
+      description: İlk boardınızı seçmekten ileri tur tekniklerine kadar —stand-up paddle hakkında her şey.
       icon: tabler:lifebuoy
       topics:
-        - How to choose your first inflatable SUP
-        - SUP size and weight capacity guide
-        - Best SUP for beginners, touring, yoga, and racing
-        - Common SUP buying mistakes to avoid
-        - Inflatable vs hard board comparison
-    - title: SUP Engineering & Technology
-      description: Technical guides on inflatable SUP boards —materials, construction methods, and manufacturing processes.
-      icon: tabler:microscope
-      topics:
-        - Drop-stitch technology deep dive
-        - Military-grade PVC specifications
-        - Fusion lamination vs adhesive bonding
-        - EVA foam technology and artwork methods
-        - SUP valve types and fin systems
-    - title: SUP Safety & Maintenance
-      description: Essential safety knowledge for every paddler —from PFD selection to weather reading to board care and repair.
-      icon: tabler:shield
-      topics:
-        - SUP safety checklist and PFD requirements
-        - Multi-chamber safety for remote water
-        - SUP inflation PSI guide
-        - Board storage and winter care
-        - Inflatable repair techniques
-    - title: SUP Skills & Techniques
-      description: Paddling techniques, touring skills, and fitness training for all skill levels.
+        - İlk şişme SUP'inizi nasıl seçersiniz
+        - Yeni başlayanlar için en iyi SUP boyutu
+        - Paddle board ne kadar zor?
+        - Şişme vs sert board karşılaştırması
+        - SUP güvenlik kontrol listesi
+    - title: Bot Bilgisi
+      description: Şişme botlar, SUP'ler, şişme botlar ve kayaklar hakkında teknik rehberler —mühendislik, malzemeler ve kullanım.
       icon: tabler:sailboat
       topics:
-        - Beginner paddling techniques
-        - Intermediate stroke mastery
-        - Touring and expedition planning
-        - SUP fitness and racing training
-        - Whitewater and river running skills
+        - Şişme bot türleri açıklandı
+        - PVC vs Hypalon karşılaştırması
+        - SUP vs Şişme Bot karşılaştırması
+        - Drop-stitch teknolojisi derinlemesine
+        - Deniz malzemesi bilimi rehberi
+    - title: Güvenlik Bilgisi
+      description: Her kürekçi için temel güvenlik bilgisi —can yeleği seçiminden hava durumu okumaya ve kendi kendine kurtarma tekniklerine kadar.
+      icon: tabler:shield
+      topics:
+        - SUP güvenlik kontrol listesi
+        - Can yeleğine ihtiyacınız var mı?
+        - Okyanus kürek güvenlik rehberi
+        - Şişme kayaklar için nehir güvenliği
+        - Hava durumu ve su koşulu farkındalığı
+    - title: Teknoloji
+      description: afarer ürünlerinin arkasındaki mühendislik —malzemeler, yapım yöntemleri ve kalite testi.
+      icon: tabler:microscope
+      topics:
+        - Deniz sınıfı PVC teknolojisi
+        - Drop-stitch çekirdek açıklaması
+        - PSI şişme SUPlar için neden önemlidir
+        - RF kaynağı vs yapıştırıcı birleştirme
+        - Kalite testi ve sertifikasyon
     - title: SUP Lifestyle & Special Uses
       description: Specialized SUP activities —yoga, fishing, dogs, families, and travel tips.
       icon: tabler:heart
@@ -65,19 +65,19 @@ clusters:
         - SUP board materials explained
         - UV printing vs EVA block artwork
 featured_guides:
-  tagline: Featured Guides
-  title: Most popular knowledge resources
+  tagline: Öne Çıkan Rehberler
+  title: En popüler bilgi kaynakları
   items:
-    - title: SUP Basics
+    - title: SUP Temelleri
       href: /learn/sup
-    - title: Inflatable vs Hard Board
+    - title: Şişme vs Sert Board
       href: /compare/inflatable-vs-hardboard
-    - title: Water Safety Guide
+    - title: Su Güvenlik Rehberi
       href: /learn/water-safety
-    - title: Materials Reference
+    - title: Malzeme Referansı
       href: /learn/materials
-    - title: SUP Buying Guide
-      href: /guides/how-to-choose-your-sup
+    - title: SUP Boyut Rehberi
+      href: /size-guide
     - title: SUP Size Guide
       href: /guides/sup-size-guide
     - title: SUP Tech Center
@@ -89,11 +89,11 @@ featured_guides:
     - title: Paddle Techniques
       href: /guides/paddling-techniques
 cta:
-  title: Start exploring
-  subtitle: Dive into our knowledge base and get the information you need for your next water adventure.
+  title: Keşfetmeye başlayın
+  subtitle: Bilgi tabanımıza dalın ve bir sonraki su maceranız için ihtiyacınız olan bilgileri alın.
   actions:
     - variant: primary
-      text: Browse all guides
+      text: Tüm rehberlere göz atın
       href: /academy
-    - text: Explore Knowledge Graph
+    - text: Bilgi Grafiğini Keşfedin
       href: /knowledge

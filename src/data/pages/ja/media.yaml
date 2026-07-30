@@ -1,53 +1,56 @@
 hero:
-  tagline: Resources
-  title: Media Center
-  subtitle: Download brand assets, product imagery, catalogs, and videos
+  tagline: リソース
+  title: メディアセンター
+  subtitle: ブランドアセット、製品画像、カタログ、ビデオをダウンロード
+
 sections:
   - id: product-images
-    title: Product Images
-    desc: High-resolution product photos for web, print, and retail use.
+    title: 製品画像
+    desc: ウェブ、印刷、小売り用途向けの高解像度製品写真。
     items:
-      - SUP Boards Gallery
-      - Drop-Stitch SUPs Gallery
-      - Inflatable SUPs Gallery
-      - Accessories & Safety Gear
+      - SUPボードギャラリー
+      - RIBボートギャラリー
+      - インフレータブルカヤックギャラリー
+      - アクセサリー＆安全装備
   - id: logo-brand-kit
-    title: Logo & Brand Kit
-    desc: Official afarer logo files, colour palette, typography, and brand guidelines.
+    title: ロゴ＆ブランドキット
+    desc: 公式afarerロゴファイル、カラーパレット、タイポグラフィ、ブランドガイドライン。
     items:
-      - Primary Logo (PNG/SVG/EPS)
-      - Icon Mark
-      - Colour Palette
-      - Typography Specs
-      - Brand Guidelines PDF
+      - プライマリロゴ（PNG/SVG/EPS）
+      - アイコンマーク
+      - カラーパレット
+      - タイポグラフィ仕様
+      - ブランドガイドラインPDF
   - id: catalogs
-    title: PDF Catalogs
-    desc: Product catalogs, spec sheets, and technical documentation for download.
+    title: PDFカタログ
+    desc: 製品カタログ、スペックシート、技術文書をダウンロード可能。
     items:
-      - 2026 Product Catalog
-      - OEM/ODM Capability Deck
-      - SUP Series Brochure
-      - Technical Specifications
+      - 2026年製品カタログ
+      - OEM/ODM能力紹介
+      - RIBシリーズパンフレット
+      - 技術仕様書
   - id: videos
-    title: Videos
-    desc: Product demos, factory tours, brand films, and customer testimonials.
+    title: ビデオ
+    desc: 製品デモ、工場見学、ブランドフィルム、お客様の声。
     items:
-      - Product Demos
-      - Factory Tour
-      - Brand Film
-      - Customer Stories
-      - How-To Guides
-request_access: Request access →
+      - 製品デモ
+      - 工場見学
+      - ブランドフィルム
+      - お客様の声
+      - ハウツーガイド
+
+request_access: アクセスをリクエスト →
+
 cta:
-  title: Need help finding assets?
-  desc: Contact our brand team for custom asset requests, media partnerships, or press inquiries.
+  title: アセットの検索が必要ですか？
+  desc: カスタムアセットリクエスト、メディアパートナーシップ、プレスに関するお問い合わせは、ブランドチームまでご連絡ください。
   links:
-    - label: Visit our factory
+    - label: 工場を見学
       href: /factory
-      desc: See our 12,000 sqm manufacturing facility
-    - label: Brand guidelines
+      desc: 12,000m²の製造施設を見る
+    - label: ブランドガイドライン
       href: /brand
-      desc: Learn about the afarer brand
-    - label: Partner with us
+      desc: afarerブランドについて学ぶ
+    - label: パートナーシップ
       href: /contact
-      desc: OEM, ODM, and distribution inquiries
+      desc: OEM、ODM、販売に関するお問い合わせ

@@ -1,26 +1,26 @@
 hero_text:
-  tagline: Contact
-  title: GET IN TOUCH
+  tagline: Yhteystiedot
+  title: OTA YHTEYTTÄ
 contact_form:
   id: form
-  title: Send us a message
-  subtitle: For quotes, technical questions or partnership enquiries, drop us a line. We reply within one business day.
+  title: Lähetä meille viesti
+  subtitle: Tarjouksia, teknisiä kysymyksiä tai kumppanuustiedusteluja varten, lähetä meille viesti. Vastaamme yhden arkipäivän kuluessa.
   email_to: info@afarer.com
-  submit_button: Send Inquiry →Get a Quote
-  success_message: Thanks! Your message has landed in our inbox. We will reply within one business day.
-  error_message: Something went wrong sending your message. Please try again or email us directly.
+  submit_button: Lähetä tiedustelu →Pyydä tarjous
+  success_message: Kiitos! Viestisi on saapunut postilaatikkoomme. Vastaamme yhden arkipäivän kuluessa.
+  error_message: Viestisi lähettämisessä tapahtui virhe. Yritä uudelleen tai lähetä sähköpostia suoraan.
   default_country_code: '+1'
   captcha:
-    label: 'Anti-spam: please solve the following'
+    label: 'Roskapostinsuojaus: ratkaise seuraava'
   fields:
     - name: firstName
-      label: Country
+      label: Etunimi
       row: 1
       type: select
       optionsKey: countries
       step: 1
     - name: lastName
-      label: Estimated Order Volume
+      label: Sukunimi
       row: 1
       type: select
       options:
@@ -36,7 +36,7 @@ contact_form:
           label: 500+ units (Volume pricing)
       step: 1
     - name: companyName
-      label: Customization Needed?
+      label: Yrityksen nimi
       row: 2
       type: select
       options:
@@ -52,7 +52,7 @@ contact_form:
           label: Not sure — need consultation
       step: 1
     - name: address
-      label: Product Categories of Interest
+      label: Osoite
       row: 3
       type: select
       options:
@@ -68,70 +68,70 @@ contact_form:
           label: Accessories (pumps, oars, bags)
       step: 1
     - name: zip
-      label: First Name
+      label: Postinumero
       row: 4
       step: 2
     - name: country
-      label: Last Name
+      label: Maa
       row: 4
       step: 2
     - name: email
-      label: Company Name
+      label: Sähköposti
       row: 5
       step: 2
     - name: tel
-      label: E-mail
+      label: Puhelin
       row: 5
       type: tel
       step: 2
     - name: orderVolume
-      label: TEL
+      label: Arvioitu tilausmäärä
       row: 6
       type: select
       withCountryCode: true
       step: 2
     - name: customization
-      label: Address
+      label: Tarvitaanko räätälöintiä?
       row: 7
       step: 2
     - name: productInterest
-      label: Zip / Postal Code
+      label: Kiinnostavat tuoteryhmät
       row: 8
       step: 2
     - name: subject
-      label: Subject
+      label: Aihe
       row: 9
       step: 3
     - name: message
-      label: Message
+      label: Viesti
       row: 10
       type: textarea
       rows: 6
       step: 3
 features2_other_ways:
-  title: Other ways to reach us
+  title: Muita tapoja tavoittaa meidät
   columns: 3
   items:
-    - title: Sales enquiries
-      description: Quotes, configurations, dealer applications and bulk orders.
+    - title: Myyntitiedustelut
+      description: Tarjoukset, kokoonpanot, jälleenmyyntihakemukset ja irtotilaukset.
       icon: tabler:shopping-bag
-    - title: Technical support
-      description: Warranty, repairs, spare parts and operating questions.
+    - title: Tekninen tuki
+      description: Takuu, korjaukset, varaosat ja käyttökysymykset.
       icon: tabler:tool
-    - title: Press & partnerships
-      description: Media kits, sponsorship and industry collaboration.
+    - title: Media ja kumppanuudet
+      description: Mediakitit, sponsorointi ja alan yhteistyö.
       icon: tabler:news
-    - title: Phone
+    - title: Puhelin
       description: +86 13305324192
       icon: tabler:headset
-    - title: Email
+    - title: Sähköposti
       description: info@afarer.com
       icon: tabler:mail
-    - title: Headquarters
-      description: Economic Development Zone, Laixi, Qingdao, China, 266600
+    - title: Pääkonttori
+      description: Economic Development Zone, Laixi, Qingdao, Kiina, 266600
       icon: tabler:map-pin
 map:
-  title: Our Location
-  subtitle: Visit us at our headquarters
-  address: Economic Development Zone, Laixi, Qingdao, China, 266600
+  title: Sijaintimme
+  subtitle: Vieraile pääkonttorillamme
+  address: Economic Development Zone, Laixi, Qingdao, Kiina, 266600
   zoom: 15

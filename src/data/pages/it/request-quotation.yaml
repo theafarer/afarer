@@ -26,12 +26,12 @@ content_form:
     - name: Product Type
       type: select
       options:
+        - SUP Boat
+        - Inflatable Boat
         - SUP Board
         - Inflatable SUP
-        - Inflatable SUP Board
         - Life Vest
-        - Marine Accessory
-        - Custom OEM/ODM
+        - Accessory
     - name: Quantity
       type: text
       options:
@@ -47,13 +47,13 @@ content_form:
         - Other
     - name: Target Market
       type: text
-      placeholder: e.g. 50 units
+      placeholder: e.g. Europe, North America, Middle East
     - name: Customization Needed
       type: text
-      placeholder: e.g. Europe, North America, Middle East
+      placeholder: e.g. custom colors, branding, packaging
     - name: Timeline
       type: text
-      placeholder: e.g. Italy, UAE, USA, Australia
+      placeholder: e.g. delivery within 90 days
     - name: Additional Requirements
       type: textarea
       options:

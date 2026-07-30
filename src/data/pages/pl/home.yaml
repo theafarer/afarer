@@ -1,25 +1,27 @@
 hero:
-  tagline: Premium Inflatable SUP Manufacturer & OEM Partner
-  title: Premium Inflatable SUP Manufacturer<br />&amp; OEM Partner
+  tagline: Inżynieria dla niezawodnych wodnych przygód
+  title: |
+    Zaprojektowane do wody. <br class="hidden sm:inline" />
+    Zbudowane do <span class="text-accent dark:text-white">życia na pokładzie</span>.
   subtitle: |
-    Designing and manufacturing inflatable paddle boards for global brands,<br />
-    resorts, paddle clubs and water adventure businesses.<br />
-    OEM/ODM partner with 12,000m² facility and CE-certified production.
+    <span class="hidden sm:inline"><span class="font-semibold">afarer</span> projektuje i produkuje wysokiej jakości łodzie pneumatyczne, SUP i produkty techniczne.</span>
+    <span class="block mb-1 sm:hidden font-bold text-blue-600">afarer: stworzone do wydajności.</span>
+    Dla profesjonalistów morskich, operatorów komercyjnych i entuzjastów wymagających niezawodności i rzemiosła.
   taglineSection: Commercial-grade inflatable SUP solutions for resorts, clubs, retailers, and water brands.
   actions:
     - variant: primary
-      text: Request OEM Quote
-      href: /oem-odm-manufacturer
-      icon: tabler:package
-    - text: Download Catalog
-      href: /resources/download-catalog
+      text: Zobacz produkty
+      href: /products
+      icon: tabler:shopping-bag
+    - text: Dowiedz się więcej
+      href: '#features'
       icon: tabler:file-text
     - text: Explore SUP Solutions
       href: /solutions
       icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
-    alt: afarer inflatable SUP boards at a tropical resort waterfront —commercial fleet for water businesses
+    alt: afarer okładka
 who_we_serve:
   tagline: Who We Serve
   title: Complete SUP Solutions for Every Water Business
@@ -105,12 +107,13 @@ oem_section:
   cta: Start Your Brand Journey
   cta_link: /oem-odm-manufacturer
 cta:
-  title: Ready to build your water adventure business?
-  subtitle: Whether you are launching a club, outfitting a resort, or building a brand — we are here to help.
+  title: |
+    Gotowy skonfigurować <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">swoją następną Łódź</span>?
+  subtitle: Powiedz nam, jak będziesz używać łodzi, a w ciągu jednego dnia roboczego zaproponujemy model, opcje i cenę.
   actions:
     - variant: primary
-      text: Start Your Project
+      text: Zapytaj o cenę
       href: /contact
-      icon: tabler:send
-    - text: Download OEM Guide
-      href: /resources/download-catalog
+      icon: tabler:message-circle
+    - text: Przeglądaj katalog
+      href: /products

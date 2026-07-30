@@ -1,51 +1,51 @@
 hero:
-  tagline: Knowledge Graph
-  title: Water Exploration Knowledge
+  tagline: 知識グラフ
+  title: 水探索の知識
   subtitle: |
-    A structured knowledge base covering inflatable SUP technology,<br />
-    water safety, boat engineering, and adventure planning.
-  taglineSection: Explore. Learn. Go with confidence.
+    インフレータブルSUP技術、水上安全、<br />
+    ボート工学、冒険計画をカバーする構造化された知識ベース。
+  taglineSection: 探検する。学ぶ。自信を持って出かけよう。
 clusters:
-  tagline: Knowledge Clusters
-  title: Explore by topic
-  subtitle: Deep dives into the technology, safety, and skills behind every afarer product.
+  tagline: 知識クラスター
+  title: トピック別に探す
+  subtitle: アクアフェアラーのすべての製品の背後にある技術、安全性、スキルへの深掘り。
   items:
-    - title: SUP Buying Guides
-      description: From choosing your first board to advanced touring techniques —everything about stand-up paddle boarding.
+    - title: SUP知識
+      description: 最初のボードの選び方から高度なツーリングテクニックまで — スタンドアップパドルボーディングのすべて。
       icon: tabler:lifebuoy
       topics:
-        - How to choose your first inflatable SUP
-        - SUP size and weight capacity guide
-        - Best SUP for beginners, touring, yoga, and racing
-        - Common SUP buying mistakes to avoid
-        - Inflatable vs hard board comparison
-    - title: SUP Engineering & Technology
-      description: Technical guides on inflatable SUP boards —materials, construction methods, and manufacturing processes.
-      icon: tabler:microscope
-      topics:
-        - Drop-stitch technology deep dive
-        - Military-grade PVC specifications
-        - Fusion lamination vs adhesive bonding
-        - EVA foam technology and artwork methods
-        - SUP valve types and fin systems
-    - title: SUP Safety & Maintenance
-      description: Essential safety knowledge for every paddler —from PFD selection to weather reading to board care and repair.
-      icon: tabler:shield
-      topics:
-        - SUP safety checklist and PFD requirements
-        - Multi-chamber safety for remote water
-        - SUP inflation PSI guide
-        - Board storage and winter care
-        - Inflatable repair techniques
-    - title: SUP Skills & Techniques
-      description: Paddling techniques, touring skills, and fitness training for all skill levels.
+        - 初めてのインフレータブルSUPの選び方
+        - 初心者に最適なSUPサイズ
+        - パドルボーディングの難易度は？
+        - インフレータブル vs ハードボード比較
+        - SUP安全チェックリスト
+    - title: ボート知識
+      description: インフレータブルボート、SUP、ディンギー、カヤックに関する技術ガイド — 工学、材料、操作。
       icon: tabler:sailboat
       topics:
-        - Beginner paddling techniques
-        - Intermediate stroke mastery
-        - Touring and expedition planning
-        - SUP fitness and racing training
-        - Whitewater and river running skills
+        - インフレータブルボートの種類説明
+        - PVC vs ハイパロン比較
+        - SUP vs ディンギー比較
+        - ドロップステッチ技術の深掘り
+        - 海洋材料科学ガイド
+    - title: 安全知識
+      description: すべてのパドラーのための必須安全知識 — PFDの選択から天候の読み方、自己救助テクニックまで。
+      icon: tabler:shield
+      topics:
+        - SUP安全チェックリスト
+        - ライフジャケットは必要ですか？
+        - 海洋パドリング安全ガイド
+        - インフレータブルカヤックの川の安全
+        - 天候と水の状態の認識
+    - title: テクノロジー
+      description: アクアフェアラー製品の背後にあるエンジニアリング — 材料、製造方法、品質テスト。
+      icon: tabler:microscope
+      topics:
+        - マリングレードPVC技術
+        - ドロップステッチコアの説明
+        - インフレータブルSUPにPSIが重要な理由
+        - RF溶着 vs 接着剤接合
+        - 品質テストと認証
     - title: SUP Lifestyle & Special Uses
       description: Specialized SUP activities —yoga, fishing, dogs, families, and travel tips.
       icon: tabler:heart
@@ -65,19 +65,19 @@ clusters:
         - SUP board materials explained
         - UV printing vs EVA block artwork
 featured_guides:
-  tagline: Featured Guides
-  title: Most popular knowledge resources
+  tagline: 注目のガイド
+  title: 最も人気のある知識リソース
   items:
-    - title: SUP Basics
+    - title: SUPの基礎
       href: /learn/sup
-    - title: Inflatable vs Hard Board
+    - title: インフレータブル vs ハードボード
       href: /compare/inflatable-vs-hardboard
-    - title: Water Safety Guide
+    - title: 水上安全ガイド
       href: /learn/water-safety
-    - title: Materials Reference
+    - title: 材料リファレンス
       href: /learn/materials
-    - title: SUP Buying Guide
-      href: /guides/how-to-choose-your-sup
+    - title: SUPサイズガイド
+      href: /size-guide
     - title: SUP Size Guide
       href: /guides/sup-size-guide
     - title: SUP Tech Center
@@ -89,11 +89,11 @@ featured_guides:
     - title: Paddle Techniques
       href: /guides/paddling-techniques
 cta:
-  title: Start exploring
-  subtitle: Dive into our knowledge base and get the information you need for your next water adventure.
+  title: 探検を始めよう
+  subtitle: 知識ベースに飛び込んで、次の水の冒険に必要な情報を入手しましょう。
   actions:
     - variant: primary
-      text: Browse all guides
+      text: すべてのガイドを見る
       href: /academy
-    - text: Explore Knowledge Graph
+    - text: 知識グラフを探検
       href: /knowledge

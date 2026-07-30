@@ -1,25 +1,24 @@
 hero:
-  tagline: Premium Inflatable SUP Manufacturer & OEM Partner
-  title: Premium Inflatable SUP Manufacturer<br />&amp; OEM Partner
+  tagline: Ingenieurstechnik für zuverlässige Abenteuer auf dem Wasser
+  title: afarer
   subtitle: |
-    Designing and manufacturing inflatable paddle boards for global brands,<br />
-    resorts, paddle clubs and water adventure businesses.<br />
-    OEM/ODM partner with 12,000m² facility and CE-certified production.
-  taglineSection: Commercial-grade inflatable SUP solutions for resorts, clubs, retailers, and water brands.
+    Eine globale Wassersportmarke für aufblasbare SUPs, Boote<br />
+    und Marineausrüstung für Familien, Entdecker und Profis.
+  taglineSection: Für die Erkundung entworfen. Für Zuverlässigkeit konstruiert. Für globale Partner gebaut.
   actions:
     - variant: primary
-      text: Request OEM Quote
-      href: /oem-odm-manufacturer
-      icon: tabler:package
-    - text: Download Catalog
-      href: /resources/download-catalog
+      text: Produkte ansehen
+      href: /products
+      icon: tabler:shopping-bag
+    - text: Mehr erfahren
+      href: '#features'
       icon: tabler:file-text
     - text: Explore SUP Solutions
       href: /solutions
       icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
-    alt: afarer inflatable SUP boards at a tropical resort waterfront —commercial fleet for water businesses
+    alt: afarer Titelbild
 who_we_serve:
   tagline: Who We Serve
   title: Complete SUP Solutions for Every Water Business
@@ -105,12 +104,13 @@ oem_section:
   cta: Start Your Brand Journey
   cta_link: /oem-odm-manufacturer
 cta:
-  title: Ready to build your water adventure business?
-  subtitle: Whether you are launching a club, outfitting a resort, or building a brand — we are here to help.
+  title: |
+    Bereit, Ihr <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">nächstes Boot</span> zu konfigurieren?
+  subtitle: Teilen Sie uns mit, wie Sie Ihr Boot nutzen, und wir empfehlen Ihnen innerhalb eines Werktags ein Modell, Optionen und einen Preis.
   actions:
     - variant: primary
-      text: Start Your Project
+      text: Angebot anfordern
       href: /contact
-      icon: tabler:send
-    - text: Download OEM Guide
-      href: /resources/download-catalog
+      icon: tabler:message-circle
+    - text: Katalog durchstöbern
+      href: /products

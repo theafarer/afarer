@@ -1,37 +1,37 @@
 hero_text:
   tagline: Get a Quote
-  title: Request a Quotation<br />for Your Project
-  subtitle: Tell us about your requirements and our team will respond with a detailed quotation within 2 business days.
+  title: Pyydä tarjous<br />projektiisi
+  subtitle: Kerro meille vaatimuksistasi, niin tiimimme vastaa yksityiskohtaisella tarjouksella 2 työpäivän kuluessa.
 steps2_process:
   title: How It Works
-  subtitle: Four simple steps from inquiry to quotation.
+  subtitle: Neljä yksinkertaista vaihetta tiedustelusta tarjoukseen.
   items:
     - title: 'Step 1: Submit Your Requirements'
-      description: Fill out the form below with your product type, quantity, and specifications. The more detail you provide, the more accurate your quotation.
+      description: Täytä alla oleva lomake tuotetyypillä, määrällä ja teknisillä tiedoilla. Mitä enemmän yksityiskohtia annat, sitä tarkempi tarjouksesi on.
       icon: tabler:file-text
     - title: 'Step 2: We Review & Advise'
-      description: Our engineering team reviews your requirements and may contact you for clarification. We provide recommendations on product configuration and options.
+      description: Insinööritiimimme tarkastelee vaatimuksiasi ja voi ottaa sinuun yhteyttä selvennystä varten. Annamme suosituksia tuotteen kokoonpanosta ja vaihtoehdoista.
       icon: tabler:users
     - title: 'Step 3: Receive Your Quote'
-      description: You receive a detailed quotation including unit pricing, MOQ, lead time, payment terms, and shipping options. Typically within 48 hours.
+      description: Saat yksityiskohtaisen tarjouksen, joka sisältää yksikköhinnan, MOQ:n, toimitusajan, maksuehdot ja toimitusvaihtoehdot. Tyypillisesti 48 tunnin kuluessa.
       icon: tabler:currency-dollar
     - title: 'Step 4: Sample & Production'
-      description: After quote acceptance, we proceed to sample production (if applicable) or directly to mass production. Regular updates throughout the process.
+      description: Tarjouksen hyväksymisen jälkeen siirrymme näytevalmistukseen (jos sovellettavissa) tai suoraan massatuotantoon. Säännöllisiä päivityksiä koko prosessin ajan.
       icon: tabler:building-factory
 content_form:
   tagline: Quotation Form
-  title: Tell Us About Your Project
-  subtitle: All fields with * are required.
+  title: Kerro meille projektistasi
+  subtitle: Kaikki *-merkityt kentät ovat pakollisia.
   fields:
     - name: Product Type
       type: select
       options:
+        - SUP Boat
+        - Inflatable Boat
         - SUP Board
         - Inflatable SUP
-        - Inflatable SUP Board
         - Life Vest
-        - Marine Accessory
-        - Custom OEM/ODM
+        - Accessory
     - name: Quantity
       type: text
       options:
@@ -47,13 +47,13 @@ content_form:
         - Other
     - name: Target Market
       type: text
-      placeholder: e.g. 50 units
+      placeholder: e.g. Europe, North America, Middle East
     - name: Customization Needed
       type: text
-      placeholder: e.g. Europe, North America, Middle East
+      placeholder: e.g. custom colors, branding, packaging
     - name: Timeline
       type: text
-      placeholder: e.g. Italy, UAE, USA, Australia
+      placeholder: e.g. delivery within 90 days
     - name: Additional Requirements
       type: textarea
       options:

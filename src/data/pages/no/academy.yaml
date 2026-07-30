@@ -1,65 +1,65 @@
 hero:
   tagline: afarer Academy
-  title: Learning Center
-  subtitle: Guides and tutorials for every skill level —from SUP basics to advanced rescue techniques
+  title: Kunnskapssenter
+  subtitle: Veiledninger og opplæringsprogrammer på alle ferdighetsnivåer —fra SUP-grunnleggende til avanserte redningsteknikker
 categories:
-  - level: Beginner
+  - level: Nybegynner
     color: from-green-500 to-emerald-600
     badge: bg-green-100 text-green-700
     guides:
-      - title: SUP Basics
-        desc: Learn the fundamentals of stand-up paddleboarding —stance, stroke technique, and balance.
+      - title: SUP-grunnleggende
+        desc: Lær det grunnleggende om stående padling —holdning, padleteknikk og balanse.
         slug: sup-basics
-      - title: Paddle Techniques
-        desc: Forward stroke, sweep stroke, draw stroke, and low brace —master the essential paddle moves.
+      - title: Padleteknikker
+        desc: Fremoverpadling, sveipende padling, dragpadling og lav støtte —mestr de grunnleggende paddelbevegelsene.
         slug: paddle-techniques
-      - title: Safety First
-        desc: Essential safety practices including weather checks, PFD use, leash rules, and self-rescue.
+      - title: Sikkerhet først
+        desc: Grunnleggende sikkerhetspraksis, inkludert værsjekk, bruk av PFD, regler for leash og selvredning.
         slug: safety-first
-  - level: Intermediate
+  - level: Middels
     color: from-blue-500 to-indigo-600
     badge: bg-blue-100 text-blue-700
     guides:
-      - title: Touring Essentials
-        desc: Planning multi-hour paddles —navigation, hydration, pacing, and reading wind forecasts.
+      - title: Kajakktur-grunnleggende
+        desc: Planlegging av flertimers turer —navigasjon, væskeinntak, tempo og tolking av vindvarsler.
         slug: touring-essentials
-      - title: Weather Reading
-        desc: Interpret marine forecasts, identify cloud patterns, and understand wind effects on water.
+      - title: Værtolking
+        desc: Tolk maritime værmeldinger, gjenkjenn skymønstre og forstå vindens påvirkning på vannet.
         slug: weather-reading
-      - title: Navigation Basics
-        desc: Chart reading, compass use, GPS waypoints, and route planning for coastal paddling.
+      - title: Navigasjonsgrunnleggende
+        desc: Kartlesing, kompassbruk, GPS-punkter og ruteplanlegging for kystpadling.
         slug: navigation-basics
-      - title: Tidal Awareness
-        desc: Understanding tide cycles, currents, and how they affect launch timing and routing.
+      - title: Tidevannsbevissthet
+        desc: Forstå tidevannssykluser, strømmer og deres påvirkning på starttidspunkt og rute.
         slug: tidal-awareness
-  - level: Advanced
+  - level: Avansert
     color: from-purple-500 to-violet-600
     badge: bg-purple-100 text-purple-700
     guides:
-      - title: Multi-Day Trip Planning
-        desc: Expedition logistics —gear selection, food planning, safety protocols, and emergency contacts.
+      - title: Planlegging av flerdagers turer
+        desc: Ekspedisjonslogistikk —utstyrvalg, måltidsplanlegging, sikkerhetsprotokoller og nødkontakter.
         slug: multi-day-trip-planning
-      - title: Rescue Techniques
-        desc: Self-rescue, T-rescue, and towing protocols for open water.
+      - title: Redningsteknikker
+        desc: Selvredning, T-redning, eskimoredning for kajakker og taueprotokoller på åpent vann.
         slug: rescue-techniques
-      - title: Night Paddling
-        desc: Navigation after dark —lighting requirements, route memory, group communication, and hazard awareness.
+      - title: Nattpadling
+        desc: Navigasjon i mørket —belysningskrav, ruteminne, gruppekommunikasjon og risikobevissthet.
         slug: night-paddling
-  - level: Maintenance
+  - level: Vedlikehold
     color: from-amber-500 to-orange-600
     badge: bg-amber-100 text-amber-700
     guides:
-      - title: Cleaning & Care
-        desc: Freshwater rinsing, UV protection, mildew prevention, and proper drying techniques after every session.
+      - title: Rengjøring og stell
+        desc: Skylling med ferskvann, UV-beskyttelse, muggforebygging og riktige tørketeknikker etter hver økt.
         slug: cleaning-and-care
-      - title: Storage Guide
-        desc: Best practices for storing inflatable SUP boards —deflation, folding, temperature control, and shelf life.
+      - title: Oppbevaring
+        desc: Beste praksis for oppbevaring av oppblåsbare brett og båter —tømming, folding, temperaturkontroll og holdbarhet.
         slug: storage-guide
-      - title: Repair Basics
-        desc: Fix small punctures, seam leaks, and valve issues with PVC repair kits and patch techniques.
+      - title: Reparasjonsgrunnleggende
+        desc: Reparasjon av små punkteringer, utette sømmer og ventilproblemer med PVC-reparasjonssett og lappeteknikker.
         slug: repair-basics
-      - title: Valve Maintenance
-        desc: Identify valve types (Halkey-Roberts, Boston, Leafield), clean debris, and replace faulty stems.
+      - title: Ventilvedlikehold
+        desc: Identifisering av ventiltyper (Halkey-Roberts, Boston, Leafield), rengjøring av smuss og utskifting av defekte ventiler.
         slug: valve-maintenance
 knowledge_center_tagline: Knowledge Center
 knowledge_center_title: Marine Equipment & Industry Guides
@@ -159,9 +159,9 @@ knowledge_sections:
       - title: SUP for Commercial Operations
         desc: Why inflatable SUPs are a versatile product for commercial fleets, rental businesses, and professional operators.
         href: /use-cases/search-and-rescue
-read_guide: Read guide →
+read_guide: Les veiledningen →
 cta:
-  title: Not sure where to start?
-  desc: Take our skill assessment quiz to find the right guides and gear for your level.
-  label: Contact us →
+  title: Vet du ikke hvor du skal begynne?
+  desc: Ta ferdighetsvurderingsquizen vår for å finne de riktige veiledningene og utstyret for ditt nivå.
+  label: Kontakt oss →
   link: /contact

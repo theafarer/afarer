@@ -1,26 +1,26 @@
 hero_text:
-  tagline: Contact
-  title: GET IN TOUCH
+  tagline: 문의하기
+  title: 문의하기
 contact_form:
   id: form
-  title: Send us a message
-  subtitle: For quotes, technical questions or partnership enquiries, drop us a line. We reply within one business day.
+  title: 메시지 보내기
+  subtitle: 견적, 기술 문의 또는 제휴 문의는 이곳으로 보내주세요. 1영업일 이내에 답변드립니다.
   email_to: info@afarer.com
-  submit_button: Send Inquiry →Get a Quote
-  success_message: Thanks! Your message has landed in our inbox. We will reply within one business day.
-  error_message: Something went wrong sending your message. Please try again or email us directly.
+  submit_button: 메시지 보내기
+  success_message: 감사합니다! 메시지를 받았습니다. 1영업일 이내에 답변드리겠습니다.
+  error_message: 메시지 전송 중 오류가 발생했습니다. 다시 시도하거나 직접 이메일을 보내주세요.
   default_country_code: '+1'
   captcha:
-    label: 'Anti-spam: please solve the following'
+    label: '안티스팸: 다음 문제를 풀어주세요'
   fields:
     - name: firstName
-      label: Country
+      label: 이름
       row: 1
       type: select
       optionsKey: countries
       step: 1
     - name: lastName
-      label: Estimated Order Volume
+      label: 성
       row: 1
       type: select
       options:
@@ -36,7 +36,7 @@ contact_form:
           label: 500+ units (Volume pricing)
       step: 1
     - name: companyName
-      label: Customization Needed?
+      label: 회사명
       row: 2
       type: select
       options:
@@ -52,7 +52,7 @@ contact_form:
           label: Not sure — need consultation
       step: 1
     - name: address
-      label: Product Categories of Interest
+      label: 주소
       row: 3
       type: select
       options:
@@ -68,70 +68,70 @@ contact_form:
           label: Accessories (pumps, oars, bags)
       step: 1
     - name: zip
-      label: First Name
+      label: 우편번호
       row: 4
       step: 2
     - name: country
-      label: Last Name
+      label: 국가
       row: 4
       step: 2
     - name: email
-      label: Company Name
+      label: 이메일
       row: 5
       step: 2
     - name: tel
-      label: E-mail
+      label: 전화번호
       row: 5
       type: tel
       step: 2
     - name: orderVolume
-      label: TEL
+      label: 예상 주문 수량
       row: 6
       type: select
       withCountryCode: true
       step: 2
     - name: customization
-      label: Address
+      label: 맞춤 제작이 필요하십니까?
       row: 7
       step: 2
     - name: productInterest
-      label: Zip / Postal Code
+      label: 관심 제품 카테고리
       row: 8
       step: 2
     - name: subject
-      label: Subject
+      label: 제목
       row: 9
       step: 3
     - name: message
-      label: Message
+      label: 메시지
       row: 10
       type: textarea
       rows: 6
       step: 3
 features2_other_ways:
-  title: Other ways to reach us
+  title: 다른 연락 방법
   columns: 3
   items:
-    - title: Sales enquiries
-      description: Quotes, configurations, dealer applications and bulk orders.
+    - title: 영업 문의
+      description: 견적, 설정, 딜러 신청, 대량 주문.
       icon: tabler:shopping-bag
-    - title: Technical support
-      description: Warranty, repairs, spare parts and operating questions.
+    - title: 기술 지원
+      description: 보증, 수리, 부품, 운영 관련 질문.
       icon: tabler:tool
-    - title: Press & partnerships
-      description: Media kits, sponsorship and industry collaboration.
+    - title: 언론 및 제휴
+      description: 미디어 키트, 스폰서십, 업계 협업.
       icon: tabler:news
-    - title: Phone
+    - title: 전화
       description: +86 13305324192
       icon: tabler:headset
-    - title: Email
+    - title: 이메일
       description: info@afarer.com
       icon: tabler:mail
-    - title: Headquarters
+    - title: 본사
       description: Economic Development Zone, Laixi, Qingdao, China, 266600
       icon: tabler:map-pin
 map:
-  title: Our Location
-  subtitle: Visit us at our headquarters
+  title: 위치
+  subtitle: 본사로 방문해 주세요
   address: Economic Development Zone, Laixi, Qingdao, China, 266600
   zoom: 15

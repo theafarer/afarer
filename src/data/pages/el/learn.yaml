@@ -1,70 +1,73 @@
 hero:
-  tagline: Water Exploration Knowledge
-  title: Learn
+  tagline: 'Γνώση Εξερεύνησης Νερού'
+  title: 'Μάθετε'
   subtitle: |
-    Guides, tutorials, and deep dives —everything you need to explore<br />
-    water with confidence. From choosing your first SUP to mastering advanced techniques.
-  taglineSection: Knowledge for every paddler. From beginner to professional.
+    Οδηγοί, σεμινάρια και βαθιές καταδύσεις —όλα όσα χρειάζεστε για να εξερευνήσετε<br />
+    το νερό με αυτοπεποίθηση. Από την επιλογή του πρώτου σας SUP έως προηγμένες τεχνικές.
+  taglineSection: 'Γνώση για κάθε κωπηλάτη. Από αρχάριο έως επαγγελματία.'
+
 featured:
-  tagline: Featured Topics
-  title: Start your learning journey
-  subtitle: Whether you are new to water sports or looking to level up, our guides have you covered.
+  tagline: 'Προτεινόμενα Θέματα'
+  title: 'Ξεκινήστε το μαθησιακό σας ταξίδι'
+  subtitle: 'Είτε είστε νέος στα θαλάσσια σπορ είτε θέλετε να ανεβείτε επίπεδο, οι οδηγοί μας σας καλύπτουν.'
   items:
-    - title: SUP Basics
-      description: Everything a beginner needs to know —board types, paddle sizing, stance, and first-day tips.
-      icon: tabler:lifebuoy
-      href: /learn/sup
-    - title: Inflatable vs Hard Board
-      description: Which is right for you? We compare portability, performance, durability, and cost side by side.
-      icon: tabler:arrows-left-right
-      href: /compare/inflatable-vs-hardboard
-    - title: Water Safety
-      description: Essential safety knowledge every paddler should have —weather, PFDs, self-rescue, and more.
-      icon: tabler:shield
-      href: /learn/water-safety
-    - title: Materials Guide
-      description: PVC vs Hypalon, drop-stitch technology, denier ratings —understand what your gear is made of.
-      icon: tabler:flask
-      href: /learn/materials
-    - title: SUP Size Guide
-      description: Find the right board length, width, and volume for your weight, skill, and paddling style.
-      icon: tabler:ruler
-      href: /size-guide
-    - title: Intermediate Techniques
-      description: Step up your paddling with advanced strokes, turning techniques, and rough-water handling.
-      icon: tabler:droplet
-      href: /v2/intermediate-techniques
+    - title: 'Βασικά SUP'
+      description: 'Όλα όσα πρέπει να γνωρίζει ένας αρχάριος —τύποι σανίδων, μέγεθος κουπιού, στάση και συμβουλές.'
+      icon: 'tabler:lifebuoy'
+      href: '/learn/sup'
+    - title: 'Φουσκωτό vs Σκληρή Σανίδα'
+      description: 'Ποιο είναι κατάλληλο για εσάς; Συγκρίνουμε φορητότητα, απόδοση και ανθεκτικότητα.'
+      icon: 'tabler:arrows-left-right'
+      href: '/compare/inflatable-vs-hardboard'
+    - title: 'Ασφάλεια Νερού'
+      description: 'Βασική γνώση ασφαλείας —καιρός, PFD, αυτοδιάσωση και άλλα.'
+      icon: 'tabler:shield'
+      href: '/learn/water-safety'
+    - title: 'Οδηγός Υλικών'
+      description: 'PVC vs Hypalon, τεχνολογία drop-stitch —κατανοήστε από τι είναι φτιαγμένος ο εξοπλισμός σας.'
+      icon: 'tabler:flask'
+      href: '/learn/materials'
+    - title: 'Οδηγός Μεγέθους SUP'
+      description: 'Βρείτε το σωστό μήκος, πλάτος και όγκο σανίδας για εσάς.'
+      icon: 'tabler:ruler'
+      href: '/size-guide'
+    - title: 'Ενδιάμεσες Τεχνικές'
+      description: 'Ανεβάστε επίπεδο με προηγμένες κινήσεις και τεχνικές στροφής.'
+      icon: 'tabler:droplet'
+      href: '/v2/intermediate-techniques'
+
 categories:
-  tagline: Categories
-  title: Explore by topic
-  subtitle: All learning content organized by skill level and interest.
+  tagline: 'Κατηγορίες'
+  title: 'Εξερευνήστε ανά θέμα'
+  subtitle: 'Όλο το μαθησιακό περιεχόμενο οργανωμένο ανά επίπεδο δεξιοτήτων.'
   columns:
-    - title: Beginner
+    - title: 'Αρχάριος'
       items:
-        - SUP Basics —start here
-        - Inflatable vs Hard Board
-        - Water Safety Essentials
-        - How to Choose Your SUP
-        - Pump & Pack Guide
-    - title: Intermediate
+        - 'Βασικά SUP —ξεκινήστε εδώ'
+        - 'Φουσκωτό vs Σκληρή Σανίδα'
+        - 'Βασικά Ασφάλειας Νερού'
+        - 'Πώς να Επιλέξετε το SUP σας'
+        - 'Οδηγός Αντλίας & Συσκευασίας'
+    - title: 'Ενδιάμεσος'
       items:
-        - Paddling Techniques
-        - Inflatable Technology
-        - Materials Reference
-        - PVC vs Hypalon Comparison
-        - Drop-Stitch Core Explained
-    - title: Advanced & Professional
+        - 'Τεχνικές Κωπηλασίας'
+        - 'Τεχνολογία Φουσκωτών'
+        - 'Αναφορά Υλικών'
+        - 'Σύγκριση PVC vs Hypalon'
+        - 'Εξήγηση Drop-Stitch Core'
+    - title: 'Προχωρημένος & Επαγγελματίας'
       items:
-        - Fleet Operations
-        - Commercial-Grade Equipment
-        - Safety & Rescue Protocols
-        - Custom Builds & OEM
+        - 'Λειτουργίες Στόλου'
+        - 'Εξοπλισμός Εμπορικής Κατηγορίας'
+        - 'Πρωτόκολλα Ασφάλειας & Διάσωσης'
+        - 'Προσαρμοσμένες Κατασκευές & OEM'
+
 cta:
-  title: Still have questions?
-  subtitle: Ask our AI guide for personalized answers about gear, safety, and techniques.
+  title: 'Ακόμα έχετε ερωτήσεις;'
+  subtitle: 'Ρωτήστε τον οδηγό AI μας για εξατομικευμένες απαντήσεις.'
   actions:
     - variant: primary
-      text: Ask the Water Advisor AI
+      text: 'Ρωτήστε τον Σύμβουλο Νερού AI'
       href: '#ai-guide'
-    - text: Browse all guides
-      href: /academy
+    - text: 'Περιηγηθείτε σε όλους τους οδηγούς'
+      href: '/academy'

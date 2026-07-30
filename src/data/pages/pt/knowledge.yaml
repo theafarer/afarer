@@ -1,51 +1,51 @@
 hero:
-  tagline: Knowledge Graph
-  title: Water Exploration Knowledge
+  tagline: Grafo de Conhecimento
+  title: Conhecimento em Exploração Aquática
   subtitle: |
-    A structured knowledge base covering inflatable SUP technology,<br />
-    water safety, boat engineering, and adventure planning.
-  taglineSection: Explore. Learn. Go with confidence.
+    Uma base de conhecimento estruturada cobrindo tecnologia de SUP inflável,<br />
+    segurança aquática, engenharia de barcos e planejamento de aventuras.
+  taglineSection: Explore. Aprenda. Vá com confiança.
 clusters:
-  tagline: Knowledge Clusters
-  title: Explore by topic
-  subtitle: Deep dives into the technology, safety, and skills behind every afarer product.
+  tagline: Clusters de Conhecimento
+  title: Explore por tópico
+  subtitle: Aprofundamentos na tecnologia, segurança e habilidades por trás de cada produto afarer.
   items:
-    - title: SUP Buying Guides
-      description: From choosing your first board to advanced touring techniques —everything about stand-up paddle boarding.
+    - title: Conhecimento em SUP
+      description: Desde escolher sua primeira prancha até técnicas avançadas de travessia —tudo sobre stand-up paddle.
       icon: tabler:lifebuoy
       topics:
-        - How to choose your first inflatable SUP
-        - SUP size and weight capacity guide
-        - Best SUP for beginners, touring, yoga, and racing
-        - Common SUP buying mistakes to avoid
-        - Inflatable vs hard board comparison
-    - title: SUP Engineering & Technology
-      description: Technical guides on inflatable SUP boards —materials, construction methods, and manufacturing processes.
-      icon: tabler:microscope
-      topics:
-        - Drop-stitch technology deep dive
-        - Military-grade PVC specifications
-        - Fusion lamination vs adhesive bonding
-        - EVA foam technology and artwork methods
-        - SUP valve types and fin systems
-    - title: SUP Safety & Maintenance
-      description: Essential safety knowledge for every paddler —from PFD selection to weather reading to board care and repair.
-      icon: tabler:shield
-      topics:
-        - SUP safety checklist and PFD requirements
-        - Multi-chamber safety for remote water
-        - SUP inflation PSI guide
-        - Board storage and winter care
-        - Inflatable repair techniques
-    - title: SUP Skills & Techniques
-      description: Paddling techniques, touring skills, and fitness training for all skill levels.
+        - Como escolher seu primeiro SUP inflável
+        - Melhor tamanho de SUP para iniciantes
+        - Qual a dificuldade do paddle board?
+        - 'Comparação: inflável vs prancha rígida'
+        - Lista de verificação de segurança SUP
+    - title: Conhecimento em Barcos
+      description: Guias técnicos sobre botes infláveis, RIBs, dingues e caiaques —engenharia, materiais e operação.
       icon: tabler:sailboat
       topics:
-        - Beginner paddling techniques
-        - Intermediate stroke mastery
-        - Touring and expedition planning
-        - SUP fitness and racing training
-        - Whitewater and river running skills
+        - Tipos de botes infláveis explicados
+        - Comparação PVC vs Hypalon
+        - Comparação SUP vs Dingue
+        - Aprofundamento em tecnologia drop-stitch
+        - Guia de ciência dos materiais marítimos
+    - title: Conhecimento em Segurança
+      description: Conhecimento essencial de segurança para cada remador —desde seleção de colete salva-vidas até leitura meteorológica e técnicas de auto-resgate.
+      icon: tabler:shield
+      topics:
+        - Lista de verificação de segurança SUP
+        - Você precisa de um colete salva-vidas?
+        - Guia de segurança para remo em oceano
+        - Segurança em rios para caiaques infláveis
+        - Consciência meteorológica e condições da água
+    - title: Tecnologia
+      description: A engenharia por trás dos produtos afarer —materiais, métodos de construção e testes de qualidade.
+      icon: tabler:microscope
+      topics:
+        - Tecnologia de PVC de grau marítimo
+        - Núcleo drop-stitch explicado
+        - Por que o PSI é importante para SUPs infláveis
+        - Soldagem RF vs colagem adesiva
+        - Testes de qualidade e certificação
     - title: SUP Lifestyle & Special Uses
       description: Specialized SUP activities —yoga, fishing, dogs, families, and travel tips.
       icon: tabler:heart
@@ -65,19 +65,19 @@ clusters:
         - SUP board materials explained
         - UV printing vs EVA block artwork
 featured_guides:
-  tagline: Featured Guides
-  title: Most popular knowledge resources
+  tagline: Guias em Destaque
+  title: Recursos de conhecimento mais populares
   items:
-    - title: SUP Basics
+    - title: Fundamentos de SUP
       href: /learn/sup
-    - title: Inflatable vs Hard Board
+    - title: Inflável vs Prancha Rígida
       href: /compare/inflatable-vs-hardboard
-    - title: Water Safety Guide
+    - title: Guia de Segurança Aquática
       href: /learn/water-safety
-    - title: Materials Reference
+    - title: Referência de Materiais
       href: /learn/materials
-    - title: SUP Buying Guide
-      href: /guides/how-to-choose-your-sup
+    - title: Guia de Tamanho SUP
+      href: /size-guide
     - title: SUP Size Guide
       href: /guides/sup-size-guide
     - title: SUP Tech Center
@@ -89,11 +89,11 @@ featured_guides:
     - title: Paddle Techniques
       href: /guides/paddling-techniques
 cta:
-  title: Start exploring
-  subtitle: Dive into our knowledge base and get the information you need for your next water adventure.
+  title: Comece a explorar
+  subtitle: Mergulhe em nossa base de conhecimento e obtenha as informações necessárias para sua próxima aventura aquática.
   actions:
     - variant: primary
-      text: Browse all guides
+      text: Ver todos os guias
       href: /academy
-    - text: Explore Knowledge Graph
+    - text: Explorar Grafo de Conhecimento
       href: /knowledge

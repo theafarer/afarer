@@ -1,49 +1,48 @@
-hero:
-  tagline: Process
-  title: Manufacturing Process
-  subtitle: From raw material to sea-ready SUP —every step under our control
-  back_label: Back to Factory
+﻿hero:
+  tagline: Prosessi
+  title: Tuotantoprosessi
+  subtitle: Raaka-aineesta merivalmiiksi veneeksi —jokainen vaihe hallinnassamme
+  back_label: Takaisin tehtaalle
   back_link: /factory
-intro: >-
-  Unlike brands that outsource production to third-party factories, afarer owns and operates its entire manufacturing chain. This vertical integration allows us to maintain strict quality control at every stage, respond quickly to custom requirements, and deliver consistent product quality batch
-  after batch. Here is how a SUP board is built in our facility.
+
+intro: Toisin kuin brändit, jotka ulkoistavat tuotannon kolmannen osapuolen tehtaille, afarer omistaa ja operoi koko tuotantoketjunsa. Tämä vertikaalinen integraatio mahdollistaa tiukan laadunvalvonnan jokaisessa vaiheessa, nopean reagoinnin räätälöityihin vaatimuksiin ja tasaisen tuotelaadun erästä toiseen. Näin vene rakennetaan laitoksessamme.
+
 steps:
   - step: '01'
-    title: Material Receipt & Inspection
-    description: Every incoming batch of PVC fabric, fiberglass mat, resin, and hardware is inspected against specification. Fabric samples are tested for tensile strength, thickness uniformity, and UV resistance before release to production. Non-conforming materials are quarantined and returned.
-    duration: 1— days
+    title: Materiaalien vastaanotto ja tarkastus
+    description: Jokainen saapuva PVC-kangaserä, lasikuitumatto, hartsi ja laitteisto tarkastetaan määrittelyjen mukaisesti. Kangasnäytteet testataan vetolujuuden, paksuuden tasaisuuden ja UV-kestävyyden osalta ennen tuotantoon luovutusta. Poikkeavat materiaalit asetetaan karanteeniin ja palautetaan.
+    duration: 1— päivää
   - step: '02'
-    title: Automatic PVC Cutting
-    description: Approved fabrics are laid on the automatic CNC cutting machine and cut with sub-millimetre accuracy. Computer-optimised nesting arranges panels to minimise waste —typically below 5%. Cut panels are labelled by boat model and chamber, then bundled for transfer to the welding workshop.
-    duration: 2— hours per boat kit
+    title: Automaattinen PVC-leikkaus
+    description: Hyväksytyt kankaat asetetaan automaattiselle CNC-leikkauskoneelle ja leikataan alle millimetrin tarkkuudella. Tietokoneoptimoitu sijoittelu järjestää paneelit hukan minimoimiseksi —tyypillisesti alle 5 %. Leikatut paneelit merkitään venemallin ja kammion mukaan, niputetaan ja siirretään hitsauspajaan.
+    duration: 2— tuntia per venesarja
   - step: '03'
-    title: Tube Heat Sealing & Welding
-    description: >-
-      Panels are tacked and bonded using heat sealing machines  with hot-air welding at controlled temperatures of 200—00 °C. Main seams are reinforced with RF dielectric welding for airtight, high-strength joints. Completed chambers are inflated to 1.5× working pressure for 30-minute air-retention
-      validation.
-    duration: 1— days per boat
+    title: Putkien kuumasaumaus ja hitsaus
+    description: Paneelit harsitaan ja liitetään kuumasaumauskoneilla  kuumailmahitsauksella säädetyissä lämpötiloissa 200—00 °C. Pääsaumat vahvistetaan RF-dielektrisellä hitsauksella ilmatiiviitä, lujia liitoksia varten. Valmiit kammiot täytetään 1,5-kertaiseen käyttöpaineeseen 30 minuutin ilmanpysyvyyden varmistusta varten.
+    duration: 1— päivää per vene
   - step: '04'
-    title: Drop-Stitch Core Bonding
-    description: SUP board drop-stitch cores are bonded to outer PVC laminates using heat lamination. Thousands of internal polyester threads connect top and bottom layers, creating a rigid structure at 12-15 PSI. Rail bands are triple-layer fusion bonded for edge strength.
-    duration: 1— days per board
+    title: Lasikuituisten SUP-runkojen muovaus
+    description: SUP-veneiden rungot valmistetaan käsinlaminoimalla lasikuitua. Lasikuitumaton ja kudotun rovingin kerrokset käsitellään käsin polyesteri- tai vinyyliesterihartsilla tarkkuusmuoteissa. Jokainen kerros tyhjiöpussitetaan tasaisen laminaatin laadun varmistamiseksi. Runko viimeistellään gelcoatilla korkeakiiltoista, UV-kestävää meripintaa varten.
+    duration: 2— päivää per runko
   - step: '05'
-    title: SUP Printing & Decoration
-    description: SUP board deck graphics are applied using digital printing  for full-colour photo-quality designs, and screen printing  for durable logos and repeating patterns. Prints are cured and sealed for UV and abrasion resistance.
-    duration: 1— days
+    title: SUP-painatus ja koristelu
+    description: SUP-lautojen kansigrafiikat levitetään digitaalipainatuksella  täysvärisiin valokuvanlaatuisiin kuvioihin ja silkkipainatuksella  kestäviin logoihin ja toistuviin kuvioihin. Tulosteet kovetetaan ja suljetaan UV- ja kulutuskestävyyttä varten.
+    duration: 1— päivää
   - step: '06'
-    title: Final Assembly & Fitting
-    description: Valves, D-rings, handles, fin boxes, and deck pads are installed on the assembly line. Each board follows a 100-point assembly checklist with mandatory sign-off at each stage.
-    duration: 1— days
+    title: Loppukokoonpano ja varustelu
+    description: Lasikuituiset rungot ja PVC-putkiyksiköt yhdistetään kokoonpanolinjalla. Moottori asennetaan, ohjaus- ja kaasulaitteet kytketään, polttoainejärjestelmä asennetaan ja täydellinen sähköjohtosarja johdotetaan. Jokainen vene noudattaa 100-pisteistä kokoonpanotarkistuslistaa, jossa on pakollinen hyväksyntä jokaisessa vaiheessa.
+    duration: 2— päivää
   - step: '07'
-    title: Quality Testing & Inspection
-    description: 'Every completed board undergoes mandatory quality gate: chamber air-retention test, hardware function check, fastener torque verification, and cosmetic inspection. Custom and prototype builds also receive in-water trials covering stability and handling.'
-    duration: 1— days
+    title: Laaduntestaus ja tarkastus
+    description: 'Jokainen valmis vene käy läpi pakollisen laadunportin: kammioiden ilmanpysyvyystesti, järjestelmien toimintatarkastus, kiinnittimien vääntömomentin varmistus ja kosmeettinen tarkastus. Räätälöidyt ja prototyyppirakennukset saavat myös vesillä tehtäviä merikokeita, jotka kattavat nopeuden, käsiteltävyyden, vakauden ja kestävyyden.'
+    duration: 1— päivää
   - step: '08'
-    title: Packing & Shipping
-    description: Boards are deflated, folded per procedure, packed in heavy-duty woven bags or retail boxes, and loaded for shipment. Each package is labelled with model, serial number, and destination. We coordinate with freight forwarders for FCL and LCL container shipments worldwide.
-    duration: 1 day
+    title: Pakkaus ja lähetys
+    description: Veneet tyhjennetään, taitellaan ohjeiden mukaisesti, pakataan raskaisiin kudottuihin pusseihin tai vanerilaatikoihin ja lastataan lähetystä varten. Jokainen pakkaus merkitään mallilla, sarjanumerolla ja määränpäällä. Koordinoimme rahdinkuljettajien kanssa FCL- ja LCL-konttilähetyksiä maailmanlaajuisesti.
+    duration: 1 päivä
+
 cta:
-  title: See our equipment and machinery
-  desc: Explore the industrial-grade equipment behind every afarer SUP board.
-  label: View equipment →
+  title: Katso laitteitamme ja koneitamme
+  desc: Tutustu teollisuusluokan laitteisiin jokaisen afarer-veneen takana.
+  label: Katso laitteet →
   link: /factory/equipment

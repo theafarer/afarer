@@ -1,37 +1,37 @@
 hero_text:
   tagline: Get a Quote
-  title: Request a Quotation<br />for Your Project
-  subtitle: Tell us about your requirements and our team will respond with a detailed quotation within 2 business days.
+  title: Solicite un Presupuesto<br />para su Proyecto
+  subtitle: Cuéntenos sus requisitos. Respondemos con presupuesto detallado en 2 días hábiles.
 steps2_process:
   title: How It Works
-  subtitle: Four simple steps from inquiry to quotation.
+  subtitle: Cuatro pasos simples desde la consulta hasta el presupuesto.
   items:
-    - title: 'Step 1: Submit Your Requirements'
-      description: Fill out the form below with your product type, quantity, and specifications. The more detail you provide, the more accurate your quotation.
+    - title: 'Paso 1: Envíe sus requisitos'
+      description: Complete el formulario con tipo de producto, cantidad y especificaciones.
       icon: tabler:file-text
-    - title: 'Step 2: We Review & Advise'
-      description: Our engineering team reviews your requirements and may contact you for clarification. We provide recommendations on product configuration and options.
+    - title: 'Paso 2: Revisamos y asesoramos'
+      description: Nuestro equipo de ingeniería revisa sus requisitos y recomienda configuraciones.
       icon: tabler:users
-    - title: 'Step 3: Receive Your Quote'
-      description: You receive a detailed quotation including unit pricing, MOQ, lead time, payment terms, and shipping options. Typically within 48 hours.
+    - title: 'Paso 3: Reciba su presupuesto'
+      description: Recibe un presupuesto detallado con precios, MOQ, plazos, condiciones de pago y envío. Generalmente en 48 horas.
       icon: tabler:currency-dollar
-    - title: 'Step 4: Sample & Production'
-      description: After quote acceptance, we proceed to sample production (if applicable) or directly to mass production. Regular updates throughout the process.
+    - title: 'Paso 4: Muestra y Producción'
+      description: Tras la aceptación del presupuesto, procedemos a la producción de muestras o directamen
       icon: tabler:building-factory
 content_form:
   tagline: Quotation Form
-  title: Tell Us About Your Project
-  subtitle: All fields with * are required.
+  title: Cuéntenos sobre su proyecto
+  subtitle: Todos los campos con * son obligatorios.
   fields:
     - name: Product Type
       type: select
       options:
+        - SUP Boat
+        - Inflatable Boat
         - SUP Board
         - Inflatable SUP
-        - Inflatable SUP Board
         - Life Vest
-        - Marine Accessory
-        - Custom OEM/ODM
+        - Accessory
     - name: Quantity
       type: text
       options:
@@ -47,13 +47,13 @@ content_form:
         - Other
     - name: Target Market
       type: text
-      placeholder: e.g. 50 units
+      placeholder: e.g. Europe, North America, Middle East
     - name: Customization Needed
       type: text
-      placeholder: e.g. Europe, North America, Middle East
+      placeholder: e.g. custom colors, branding, packaging
     - name: Timeline
       type: text
-      placeholder: e.g. Italy, UAE, USA, Australia
+      placeholder: e.g. delivery within 90 days
     - name: Additional Requirements
       type: textarea
       options:
@@ -81,8 +81,8 @@ content_form:
       type: file
       placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
 cta:
-  title: Prefer to discuss by email?
-  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
+  title: ¿Prefiere discutir por correo?
+  subtitle: Envíe su consulta directamente a nuestro equipo de ventas. Respondemos en 24 horas.
   actions:
     - variant: primary
       text: Email us directly

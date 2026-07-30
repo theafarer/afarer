@@ -1,25 +1,27 @@
 hero:
-  tagline: Premium Inflatable SUP Manufacturer & OEM Partner
-  title: Premium Inflatable SUP Manufacturer<br />&amp; OEM Partner
+  tagline: ''
+  title: |
+    Projetado para a água. <br class="hidden sm:inline" />
+    Construído para a <span class="text-accent dark:text-white">vida a bordo</span>.
   subtitle: |
-    Designing and manufacturing inflatable paddle boards for global brands,<br />
-    resorts, paddle clubs and water adventure businesses.<br />
-    OEM/ODM partner with 12,000m² facility and CE-certified production.
+    <span class="hidden sm:inline"><span class="font-semibold">afarer</span> concebe e fabrica barcos insufláveis, RIBs e produtos de engenharia de qualidade superior.</span>
+    <span class="block mb-1 sm:hidden font-bold text-blue-600">afarer: construído para desempenhar.</span>
+    Adequado para profissionais marítimos, operadores comerciais e entusiastas que exigem fiabilidade e artesanato.
   taglineSection: Commercial-grade inflatable SUP solutions for resorts, clubs, retailers, and water brands.
   actions:
     - variant: primary
-      text: Request OEM Quote
-      href: /oem-odm-manufacturer
-      icon: tabler:package
-    - text: Download Catalog
-      href: /resources/download-catalog
+      text: Ver produtos
+      href: /products
+      icon: tabler:shopping-bag
+    - text: Saber mais
+      href: '#features'
       icon: tabler:file-text
     - text: Explore SUP Solutions
       href: /solutions
       icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
-    alt: afarer inflatable SUP boards at a tropical resort waterfront —commercial fleet for water businesses
+    alt: Imagem principal afarer
 who_we_serve:
   tagline: Who We Serve
   title: Complete SUP Solutions for Every Water Business
@@ -105,12 +107,13 @@ oem_section:
   cta: Start Your Brand Journey
   cta_link: /oem-odm-manufacturer
 cta:
-  title: Ready to build your water adventure business?
-  subtitle: Whether you are launching a club, outfitting a resort, or building a brand — we are here to help.
+  title: |
+    Pronto para especificar o seu <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">próximo barco</span>?
+  subtitle: Diga-nos como usa o seu barco e recomendaremos um modelo, opções e um preço num dia útil.
   actions:
     - variant: primary
-      text: Start Your Project
+      text: Pedir orçamento
       href: /contact
-      icon: tabler:send
-    - text: Download OEM Guide
-      href: /resources/download-catalog
+      icon: tabler:message-circle
+    - text: Ver catálogo
+      href: /products

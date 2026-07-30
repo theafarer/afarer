@@ -1,26 +1,26 @@
 hero_text:
-  tagline: Contact
-  title: GET IN TOUCH
+  tagline: Επικοινωνία
+  title: ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ
 contact_form:
   id: form
-  title: Send us a message
-  subtitle: For quotes, technical questions or partnership enquiries, drop us a line. We reply within one business day.
+  title: Στείλτε μήνυμα
+  subtitle: Για προσφορά, τεχνικές ερωτήσεις ή συνεργασία —γράψτε μας. Απαντάμε εντός μίας εργάσιμης ημέρας.
   email_to: info@afarer.com
-  submit_button: Send Inquiry →Get a Quote
-  success_message: Thanks! Your message has landed in our inbox. We will reply within one business day.
-  error_message: Something went wrong sending your message. Please try again or email us directly.
+  submit_button: Αποστολή
+  success_message: Ευχαριστούμε! Το μήνυμά σας ελήφθη. Θα απαντήσουμε εντός μίας εργάσιμης ημέρας.
+  error_message: Παρουσιάστηκε σφάλμα κατά την αποστολή. Δοκιμάστε ξανά ή γράψτε απευθείας στο email.
   default_country_code: '+1'
   captcha:
-    label: 'Anti-spam: please solve the following'
+    label: 'Antispam: λύστε την παρακάτω άσκηση'
   fields:
     - name: firstName
-      label: Country
+      label: Όνομα
       row: 1
       type: select
       optionsKey: countries
       step: 1
     - name: lastName
-      label: Estimated Order Volume
+      label: Επώνυμο
       row: 1
       type: select
       options:
@@ -36,7 +36,7 @@ contact_form:
           label: 500+ units (Volume pricing)
       step: 1
     - name: companyName
-      label: Customization Needed?
+      label: Εταιρεία
       row: 2
       type: select
       options:
@@ -52,7 +52,7 @@ contact_form:
           label: Not sure — need consultation
       step: 1
     - name: address
-      label: Product Categories of Interest
+      label: Διεύθυνση
       row: 3
       type: select
       options:
@@ -68,70 +68,70 @@ contact_form:
           label: Accessories (pumps, oars, bags)
       step: 1
     - name: zip
-      label: First Name
+      label: Ταχ. Κώδικας
       row: 4
       step: 2
     - name: country
-      label: Last Name
+      label: Χώρα
       row: 4
       step: 2
     - name: email
-      label: Company Name
+      label: Email
       row: 5
       step: 2
     - name: tel
-      label: E-mail
+      label: Τηλέφωνο
       row: 5
       type: tel
       step: 2
     - name: orderVolume
-      label: TEL
+      label: Εκτιμώμενος όγκος παραγγελίας
       row: 6
       type: select
       withCountryCode: true
       step: 2
     - name: customization
-      label: Address
+      label: Χρειάζεστε προσαρμογή;
       row: 7
       step: 2
     - name: productInterest
-      label: Zip / Postal Code
+      label: Κατηγορίες προϊόντων ενδιαφέροντος
       row: 8
       step: 2
     - name: subject
-      label: Subject
+      label: Θέμα
       row: 9
       step: 3
     - name: message
-      label: Message
+      label: Μήνυμα
       row: 10
       type: textarea
       rows: 6
       step: 3
 features2_other_ways:
-  title: Other ways to reach us
+  title: Άλλοι τρόποι επικοινωνίας
   columns: 3
   items:
-    - title: Sales enquiries
-      description: Quotes, configurations, dealer applications and bulk orders.
+    - title: Εμπορικά ερωτήματα
+      description: Προσφορές, διαμορφώσεις, αιτήματα αντιπροσώπων και χονδρικές παραγγελίες.
       icon: tabler:shopping-bag
-    - title: Technical support
-      description: Warranty, repairs, spare parts and operating questions.
+    - title: Τεχνική υποστήριξη
+      description: Εγγύηση, επισκευές, ανταλλακτικά και ερωτήσεις λειτουργίας.
       icon: tabler:tool
-    - title: Press & partnerships
-      description: Media kits, sponsorship and industry collaboration.
+    - title: Τύπος και συνεργασίες
+      description: Πακέτα μέσων, χορηγίες και βιομηχανικές συνεργασίες.
       icon: tabler:news
-    - title: Phone
+    - title: Τηλέφωνο
       description: +86 13305324192
       icon: tabler:headset
     - title: Email
       description: info@afarer.com
       icon: tabler:mail
-    - title: Headquarters
+    - title: Έδρα
       description: Economic Development Zone, Laixi, Qingdao, China, 266600
       icon: tabler:map-pin
 map:
-  title: Our Location
-  subtitle: Visit us at our headquarters
+  title: Η τοποθεσία μας
+  subtitle: Επισκεφθείτε μας
   address: Economic Development Zone, Laixi, Qingdao, China, 266600
   zoom: 15

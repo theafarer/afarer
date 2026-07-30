@@ -1,37 +1,37 @@
 hero_text:
   tagline: Get a Quote
-  title: Request a Quotation<br />for Your Project
-  subtitle: Tell us about your requirements and our team will respond with a detailed quotation within 2 business days.
+  title: Požádat o cenovou nabídku<br />pro váš projekt
+  subtitle: Sdělte nám své požadavky a náš tým vám odpoví podrobnou cenovou nabídkou do 2 pracovních dnů.
 steps2_process:
   title: How It Works
-  subtitle: Four simple steps from inquiry to quotation.
+  subtitle: Čtyři jednoduché kroky od poptávky k cenové nabídce.
   items:
     - title: 'Step 1: Submit Your Requirements'
-      description: Fill out the form below with your product type, quantity, and specifications. The more detail you provide, the more accurate your quotation.
+      description: Vyplňte formulář níže s typem produktu, množstvím a specifikacemi. Čím více podrobností poskytnete, tím přesnější bude vaše cenová nabídka.
       icon: tabler:file-text
     - title: 'Step 2: We Review & Advise'
-      description: Our engineering team reviews your requirements and may contact you for clarification. We provide recommendations on product configuration and options.
+      description: Náš inženýrský tým zkontroluje vaše požadavky a může vás kontaktovat pro upřesnění. Poskytujeme doporučení ohledně konfigurace produktu a možností.
       icon: tabler:users
     - title: 'Step 3: Receive Your Quote'
-      description: You receive a detailed quotation including unit pricing, MOQ, lead time, payment terms, and shipping options. Typically within 48 hours.
+      description: Obdržíte podrobnou cenovou nabídku včetně jednotkových cen, MOQ, dodacích lhůt, platebních podmínek a možností dopravy. Obvykle do 48 hodin.
       icon: tabler:currency-dollar
     - title: 'Step 4: Sample & Production'
-      description: After quote acceptance, we proceed to sample production (if applicable) or directly to mass production. Regular updates throughout the process.
+      description: Po přijetí cenové nabídky přejdeme k výrobě vzorků (je-li to relevantní) nebo přímo k sériové výrobě. Pravidelné aktualizace v průběhu celého procesu.
       icon: tabler:building-factory
 content_form:
   tagline: Quotation Form
-  title: Tell Us About Your Project
-  subtitle: All fields with * are required.
+  title: Řekněte nám o svém projektu
+  subtitle: Všechna pole označená * jsou povinná.
   fields:
     - name: Product Type
       type: select
       options:
+        - SUP Boat
+        - Inflatable Boat
         - SUP Board
         - Inflatable SUP
-        - Inflatable SUP Board
         - Life Vest
-        - Marine Accessory
-        - Custom OEM/ODM
+        - Accessory
     - name: Quantity
       type: text
       options:
@@ -47,13 +47,13 @@ content_form:
         - Other
     - name: Target Market
       type: text
-      placeholder: e.g. 50 units
+      placeholder: e.g. Europe, North America, Middle East
     - name: Customization Needed
       type: text
-      placeholder: e.g. Europe, North America, Middle East
+      placeholder: e.g. custom colors, branding, packaging
     - name: Timeline
       type: text
-      placeholder: e.g. Italy, UAE, USA, Australia
+      placeholder: e.g. delivery within 90 days
     - name: Additional Requirements
       type: textarea
       options:

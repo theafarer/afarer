@@ -1,26 +1,26 @@
 hero_text:
-  tagline: Contact
-  title: GET IN TOUCH
+  tagline: お問い合わせ
+  title: お問い合わせ
 contact_form:
   id: form
-  title: Send us a message
-  subtitle: For quotes, technical questions or partnership enquiries, drop us a line. We reply within one business day.
+  title: メッセージを送信
+  subtitle: 見積もり、技術的な質問、パートナーシップのお問い合わせはこちらから。1営業日以内に返信します。
   email_to: info@afarer.com
-  submit_button: Send Inquiry →Get a Quote
-  success_message: Thanks! Your message has landed in our inbox. We will reply within one business day.
-  error_message: Something went wrong sending your message. Please try again or email us directly.
+  submit_button: 送信
+  success_message: ありがとうございます！メッセージを受信しました。1営業日以内に返信します。
+  error_message: 送信中にエラーが発生しました。もう一度お試しいただくか、直接メールをお送りください。
   default_country_code: '+1'
   captcha:
-    label: 'Anti-spam: please solve the following'
+    label: アンチスパム：次の問題を解いてください
   fields:
     - name: firstName
-      label: Country
+      label: 名
       row: 1
       type: select
       optionsKey: countries
       step: 1
     - name: lastName
-      label: Estimated Order Volume
+      label: 姓
       row: 1
       type: select
       options:
@@ -36,7 +36,7 @@ contact_form:
           label: 500+ units (Volume pricing)
       step: 1
     - name: companyName
-      label: Customization Needed?
+      label: 会社名
       row: 2
       type: select
       options:
@@ -52,7 +52,7 @@ contact_form:
           label: Not sure — need consultation
       step: 1
     - name: address
-      label: Product Categories of Interest
+      label: 住所
       row: 3
       type: select
       options:
@@ -68,70 +68,70 @@ contact_form:
           label: Accessories (pumps, oars, bags)
       step: 1
     - name: zip
-      label: First Name
+      label: 郵便番号
       row: 4
       step: 2
     - name: country
-      label: Last Name
+      label: 国
       row: 4
       step: 2
     - name: email
-      label: Company Name
+      label: メールアドレス
       row: 5
       step: 2
     - name: tel
-      label: E-mail
+      label: 電話番号
       row: 5
       type: tel
       step: 2
     - name: orderVolume
-      label: TEL
+      label: 見積もり注文量
       row: 6
       type: select
       withCountryCode: true
       step: 2
     - name: customization
-      label: Address
+      label: カスタマイズは必要ですか？
       row: 7
       step: 2
     - name: productInterest
-      label: Zip / Postal Code
+      label: 関心のある製品カテゴリ
       row: 8
       step: 2
     - name: subject
-      label: Subject
+      label: 件名
       row: 9
       step: 3
     - name: message
-      label: Message
+      label: メッセージ
       row: 10
       type: textarea
       rows: 6
       step: 3
 features2_other_ways:
-  title: Other ways to reach us
+  title: その他の連絡方法
   columns: 3
   items:
-    - title: Sales enquiries
-      description: Quotes, configurations, dealer applications and bulk orders.
+    - title: 営業に関するお問い合わせ
+      description: 見積もり、設定、ディーラー申込、大口注文。
       icon: tabler:shopping-bag
-    - title: Technical support
-      description: Warranty, repairs, spare parts and operating questions.
+    - title: テクニカルサポート
+      description: 保証、修理、部品、運用に関する質問。
       icon: tabler:tool
-    - title: Press & partnerships
-      description: Media kits, sponsorship and industry collaboration.
+    - title: プレス＆パートナーシップ
+      description: メディアキット、スポンサーシップ、業界コラボレーション。
       icon: tabler:news
-    - title: Phone
+    - title: 電話
       description: +86 13305324192
       icon: tabler:headset
-    - title: Email
+    - title: メール
       description: info@afarer.com
       icon: tabler:mail
-    - title: Headquarters
+    - title: 本社
       description: Economic Development Zone, Laixi, Qingdao, China, 266600
       icon: tabler:map-pin
 map:
-  title: Our Location
-  subtitle: Visit us at our headquarters
+  title: 所在地
+  subtitle: 本社へお越しください
   address: Economic Development Zone, Laixi, Qingdao, China, 266600
   zoom: 15
