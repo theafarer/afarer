@@ -1,27 +1,27 @@
-﻿hero_text:
+hero_text:
   tagline: Get a Quote
-  title: 'Angebot anfordern<br />für Ihr Projekt'
-  subtitle: 'Teilen Sie uns Ihre Anforderungen mit. Wir antworten mit einem detaillierten Angebot innerhalb von 2 Werktagen.'
+  title: Angebot anfordern<br />für Ihr Projekt
+  subtitle: Teilen Sie uns Ihre Anforderungen mit. Wir antworten mit einem detaillierten Angebot innerhalb von 2 Werktagen.
 steps2_process:
   title: How It Works
-  subtitle: 'Vier einfache Schritte von der Anfrage bis zum Angebot.'
+  subtitle: Vier einfache Schritte von der Anfrage bis zum Angebot.
   items:
     - title: 'Schritt 1: Anforderungen senden'
-      description: 'Formular mit Produkttyp, Menge und Spezifikationen ausfüllen. Je detaillierter, desto genauer das Angebot.'
+      description: Formular mit Produkttyp, Menge und Spezifikationen ausfüllen. Je detaillierter, desto genauer das Angebot.
       icon: tabler:file-text
     - title: 'Schritt 2: Wir prüfen & beraten'
-      description: 'Unser Engineering-Team prüft Ihre Anforderungen und gibt Empfehlungen zu Produktkonfiguration.'
+      description: Unser Engineering-Team prüft Ihre Anforderungen und gibt Empfehlungen zu Produktkonfiguration.
       icon: tabler:users
     - title: 'Schritt 3: Angebot erhalten'
-      description: 'Sie erhalten ein detailliertes Angebot mit Preisen, MOQ, Lieferzeit, Zahlungsbedingungen und Versandoptionen. In der Regel innerhalb von 48 Stunden.'
+      description: Sie erhalten ein detailliertes Angebot mit Preisen, MOQ, Lieferzeit, Zahlungsbedingungen und Versandoptionen. In der Regel innerhalb von 48 Stunden.
       icon: tabler:currency-dollar
     - title: 'Schritt 4: Muster & Produktion'
-      description: 'Nach Angebotsannahme erfolgt die Musterproduktion (falls zutreffend) oder direkt die Massen'
+      description: Nach Angebotsannahme erfolgt die Musterproduktion (falls zutreffend) oder direkt die Massen
       icon: tabler:building-factory
 content_form:
   tagline: Quotation Form
-  title: 'Erzählen Sie uns von Ihrem Projekt'
-  subtitle: 'Alle mit * gekennzeichneten Felder sind Pflichtfelder.'
+  title: Erzählen Sie uns von Ihrem Projekt
+  subtitle: Alle mit * gekennzeichneten Felder sind Pflichtfelder.
   fields:
     - name: Product Type
       type: select
@@ -32,10 +32,19 @@ content_form:
         - Inflatable SUP
         - Life Vest
         - Accessory
-        - Custom
     - name: Quantity
       type: text
-      placeholder: e.g. 50 units
+      options:
+        - Diving Center
+        - Fishing
+        - Marine Tourism / Resort
+        - Search & Rescue
+        - Yacht Tender
+        - Commercial Workboat
+        - Government / Military
+        - OEM / Private Label
+        - Personal / Recreational
+        - Other
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -47,10 +56,33 @@ content_form:
       placeholder: e.g. delivery within 90 days
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements
+      options:
+        - No Preference
+        - Marine-Grade PVC (1100 dtex)
+        - Premium Hypalon / CSM
+        - Fiberglass Hull
+        - Aluminum Hull
+    - name: Engine Requirement
+      type: text
+      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+    - name: Customization Required
+      type: text
+      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+    - name: Timeline
+      type: text
+      placeholder: e.g. delivery within 90 days
+    - name: Additional Requirements
+      type: textarea
+      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+    - name: Upload Specification
+      type: file
+      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+    - name: Upload Logo / Artwork
+      type: file
+      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
 cta:
-  title: 'Lieber per E-Mail besprechen?'
-  subtitle: 'Senden Sie Ihre Anfrage direkt an unser Verkaufsteam. Wir antworten innerhalb von 24 Stunden.'
+  title: Lieber per E-Mail besprechen?
+  subtitle: Senden Sie Ihre Anfrage direkt an unser Verkaufsteam. Wir antworten innerhalb von 24 Stunden.
   actions:
     - variant: primary
       text: Email us directly

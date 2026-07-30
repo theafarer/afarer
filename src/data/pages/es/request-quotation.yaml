@@ -1,27 +1,27 @@
-﻿hero_text:
+hero_text:
   tagline: Get a Quote
-  title: 'Solicite un Presupuesto<br />para su Proyecto'
-  subtitle: 'Cuéntenos sus requisitos. Respondemos con presupuesto detallado en 2 días hábiles.'
+  title: Solicite un Presupuesto<br />para su Proyecto
+  subtitle: Cuéntenos sus requisitos. Respondemos con presupuesto detallado en 2 días hábiles.
 steps2_process:
   title: How It Works
-  subtitle: 'Cuatro pasos simples desde la consulta hasta el presupuesto.'
+  subtitle: Cuatro pasos simples desde la consulta hasta el presupuesto.
   items:
     - title: 'Paso 1: Envíe sus requisitos'
-      description: 'Complete el formulario con tipo de producto, cantidad y especificaciones.'
+      description: Complete el formulario con tipo de producto, cantidad y especificaciones.
       icon: tabler:file-text
     - title: 'Paso 2: Revisamos y asesoramos'
-      description: 'Nuestro equipo de ingeniería revisa sus requisitos y recomienda configuraciones.'
+      description: Nuestro equipo de ingeniería revisa sus requisitos y recomienda configuraciones.
       icon: tabler:users
     - title: 'Paso 3: Reciba su presupuesto'
-      description: 'Recibe un presupuesto detallado con precios, MOQ, plazos, condiciones de pago y envío. Generalmente en 48 horas.'
+      description: Recibe un presupuesto detallado con precios, MOQ, plazos, condiciones de pago y envío. Generalmente en 48 horas.
       icon: tabler:currency-dollar
     - title: 'Paso 4: Muestra y Producción'
-      description: 'Tras la aceptación del presupuesto, procedemos a la producción de muestras o directamen'
+      description: Tras la aceptación del presupuesto, procedemos a la producción de muestras o directamen
       icon: tabler:building-factory
 content_form:
   tagline: Quotation Form
-  title: 'Cuéntenos sobre su proyecto'
-  subtitle: 'Todos los campos con * son obligatorios.'
+  title: Cuéntenos sobre su proyecto
+  subtitle: Todos los campos con * son obligatorios.
   fields:
     - name: Product Type
       type: select
@@ -32,10 +32,19 @@ content_form:
         - Inflatable SUP
         - Life Vest
         - Accessory
-        - Custom
     - name: Quantity
       type: text
-      placeholder: e.g. 50 units
+      options:
+        - Diving Center
+        - Fishing
+        - Marine Tourism / Resort
+        - Search & Rescue
+        - Yacht Tender
+        - Commercial Workboat
+        - Government / Military
+        - OEM / Private Label
+        - Personal / Recreational
+        - Other
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -47,10 +56,33 @@ content_form:
       placeholder: e.g. delivery within 90 days
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements
+      options:
+        - No Preference
+        - Marine-Grade PVC (1100 dtex)
+        - Premium Hypalon / CSM
+        - Fiberglass Hull
+        - Aluminum Hull
+    - name: Engine Requirement
+      type: text
+      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+    - name: Customization Required
+      type: text
+      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+    - name: Timeline
+      type: text
+      placeholder: e.g. delivery within 90 days
+    - name: Additional Requirements
+      type: textarea
+      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+    - name: Upload Specification
+      type: file
+      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+    - name: Upload Logo / Artwork
+      type: file
+      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
 cta:
-  title: '¿Prefiere discutir por correo?'
-  subtitle: 'Envíe su consulta directamente a nuestro equipo de ventas. Respondemos en 24 horas.'
+  title: ¿Prefiere discutir por correo?
+  subtitle: Envíe su consulta directamente a nuestro equipo de ventas. Respondemos en 24 horas.
   actions:
     - variant: primary
       text: Email us directly

@@ -1,4 +1,4 @@
-﻿hero_text:
+hero_text:
   tagline: Yhteystiedot
   title: OTA YHTEYTTÄ
 contact_form:
@@ -16,91 +16,98 @@ contact_form:
     - name: firstName
       label: Etunimi
       row: 1
+      type: select
+      optionsKey: countries
+      step: 1
     - name: lastName
       label: Sukunimi
       row: 1
+      type: select
+      options:
+        - value: ''
+          label: Select your estimated volume...
+        - value: sample
+          label: Samples / Prototypes only
+        - value: 5-10
+          label: 5–10 units (Standard MOQ)
+        - value: 100-500
+          label: 100–500 units
+        - value: 500-plus
+          label: 500+ units (Volume pricing)
+      step: 1
     - name: companyName
       label: Yrityksen nimi
       row: 2
+      type: select
+      options:
+        - value: ''
+          label: Select customization type...
+        - value: none
+          label: Standard product (no customization)
+        - value: logo
+          label: Custom Logo / Branding only
+        - value: full
+          label: Full OEM (size, color, graphics, packaging)
+        - value: consultation
+          label: Not sure — need consultation
+      step: 1
     - name: address
       label: Osoite
       row: 3
+      type: select
+      options:
+        - value: ''
+          label: Select product category...
+        - value: all
+          label: All products / Full catalog
+        - value: sup
+          label: SUP Boards / Paddleboards
+        - value: safety
+          label: Safety Equipment / Life Vests
+        - value: accessory
+          label: Accessories (pumps, oars, bags)
+      step: 1
     - name: zip
       label: Postinumero
       row: 4
+      step: 2
     - name: country
       label: Maa
       row: 4
-      type: select
-      optionsKey: countries
+      step: 2
     - name: email
       label: Sähköposti
       row: 5
-      type: email
+      step: 2
     - name: tel
       label: Puhelin
       row: 5
       type: tel
-      withCountryCode: true
+      step: 2
     - name: orderVolume
       label: Arvioitu tilausmäärä
       row: 6
       type: select
-      options:
-        - value: ''
-          label: Valitse arvioitu määrä...
-        - value: sample
-          label: Vain näytteet / prototyypit
-        - value: '5-10'
-          label: 50—00 yksikköä (vakio MOQ)
-        - value: '100-500'
-          label: 100—00 yksikköä
-        - value: '500-plus'
-          label: 500+ yksikköä (volyymihinnoittelu)
+      withCountryCode: true
+      step: 2
     - name: customization
       label: Tarvitaanko räätälöintiä?
       row: 7
-      type: select
-      options:
-        - value: ''
-          label: Valitse räätälöintityyppi...
-        - value: none
-          label: Vakiotuote (ei räätälöintiä)
-        - value: logo
-          label: Vain oma logo / brändäys
-        - value: full
-          label: Täysi OEM (koko, väri, grafiikka, pakkaus)
-        - value: consultation
-          label: En ole varma —tarvitsen konsultaatiota
+      step: 2
     - name: productInterest
       label: Kiinnostavat tuoteryhmät
       row: 8
-      type: select
-      options:
-        - value: ''
-          label: Valitse tuoteryhmä...
-        - value: all
-          label: Kaikki tuotteet / koko katalogi
-        - value: sup
-          label: SUP-laudat / Melontalautailulautaset
-        - value: SUP
-          label: Kuminen kajakki
-        - value: SUP
-          label: SUP-veneet
-        - value: SUP
-          label: Kuminen jolla / Tenderit
-        - value: safety
-          label: Turvallisuusvarusteet / Pelastusliivit
-        - value: accessory
-          label: Tarvikkeet (pumput, airot, laukut)
+      step: 2
     - name: subject
       label: Aihe
       row: 9
+      step: 3
     - name: message
       label: Viesti
       row: 10
       type: textarea
       rows: 6
+      step: 3
 features2_other_ways:
   title: Muita tapoja tavoittaa meidät
   columns: 3
@@ -115,7 +122,7 @@ features2_other_ways:
       description: Mediakitit, sponsorointi ja alan yhteistyö.
       icon: tabler:news
     - title: Puhelin
-      description: '+86 13305324192'
+      description: +86 13305324192
       icon: tabler:headset
     - title: Sähköposti
       description: info@afarer.com

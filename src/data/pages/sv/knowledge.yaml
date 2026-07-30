@@ -1,74 +1,99 @@
-﻿hero:
-  tagline: 'Kunskapsgraf'
-  title: 'Vattenutforskningskunskap'
+hero:
+  tagline: Kunskapsgraf
+  title: Vattenutforskningskunskap
   subtitle: |
     En strukturerad kunskapsbas som täcker uppblåsbar SUP-teknik,<br />
     vattensäkerhet, båtteknik och äventyrsplanering.
-  taglineSection: 'Utforska. Lär dig. Gå med förtroende.'
-
+  taglineSection: Utforska. Lär dig. Gå med förtroende.
 clusters:
-  tagline: 'Kunskapskluster'
-  title: 'Utforska efter ämne'
-  subtitle: 'Djupdyk i tekniken, säkerheten och färdigheterna bakom varje afarer-produkt.'
+  tagline: Kunskapskluster
+  title: Utforska efter ämne
+  subtitle: Djupdyk i tekniken, säkerheten och färdigheterna bakom varje afarer-produkt.
   items:
-    - title: 'SUP-kunskap'
-      description: 'Från att välja ditt första bräde till avancerade turtekniker —allt om paddleboarding.'
-      icon: 'tabler:lifebuoy'
+    - title: SUP-kunskap
+      description: Från att välja ditt första bräde till avancerade turtekniker —allt om paddleboarding.
+      icon: tabler:lifebuoy
       topics:
-        - 'Hur du väljer ditt första uppblåsbara SUP'
-        - 'Bästa SUP-storleken för nybörjare'
-        - 'Hur svårt är paddleboarding?'
-        - 'Jämförelse uppblåsbart vs hårt bräde'
-        - 'SUP-säkerhetschecklista'
-    - title: 'Båtkunskap'
-      description: 'Tekniska guider om uppblåsbara båtar, SUP, jollar och kajaker —teknik, material och drift.'
-      icon: 'tabler:sailboat'
+        - Hur du väljer ditt första uppblåsbara SUP
+        - Bästa SUP-storleken för nybörjare
+        - Hur svårt är paddleboarding?
+        - Jämförelse uppblåsbart vs hårt bräde
+        - SUP-säkerhetschecklista
+    - title: Båtkunskap
+      description: Tekniska guider om uppblåsbara båtar, SUP, jollar och kajaker —teknik, material och drift.
+      icon: tabler:sailboat
       topics:
-        - 'Uppblåsbara båttyper förklarade'
-        - 'PVC vs Hypalon jämförelse'
-        - 'SUP vs Jolle jämförelse'
-        - 'Drop-stitch-teknik djupdyk'
-        - 'Marin materialvetenskapsguide'
-    - title: 'Säkerhetskunskap'
-      description: 'Viktig säkerhetskunskap för varje paddlare —från PFD-val till väderavläsning till självräddningstekniker.'
-      icon: 'tabler:shield'
+        - Uppblåsbara båttyper förklarade
+        - PVC vs Hypalon jämförelse
+        - SUP vs Jolle jämförelse
+        - Drop-stitch-teknik djupdyk
+        - Marin materialvetenskapsguide
+    - title: Säkerhetskunskap
+      description: Viktig säkerhetskunskap för varje paddlare —från PFD-val till väderavläsning till självräddningstekniker.
+      icon: tabler:shield
       topics:
-        - 'SUP-säkerhetschecklista'
-        - 'Behöver du en flytväst?'
-        - 'Säkerhetsguide för havspaddling'
-        - 'Flodsäkerhet för uppblåsbara kajaker'
-        - 'Medvetenhet om väder och vattenförhållanden'
-    - title: 'Teknologi'
-      description: 'Viktig säkerhetskunskap för varje paddlare —från PFD-val till väderavläsning till självräddningstekniker.'
-      icon: 'tabler:microscope'
+        - SUP-säkerhetschecklista
+        - Behöver du en flytväst?
+        - Säkerhetsguide för havspaddling
+        - Flodsäkerhet för uppblåsbara kajaker
+        - Medvetenhet om väder och vattenförhållanden
+    - title: Teknologi
+      description: Viktig säkerhetskunskap för varje paddlare —från PFD-val till väderavläsning till självräddningstekniker.
+      icon: tabler:microscope
       topics:
-        - 'Marin-grade PVC-teknik'
-        - 'Drop-stitch-kärna förklarad'
-        - 'Varför PSI spelar roll för uppblåsbara SUP'
-        - 'RF-svetsning vs limbindning'
-        - 'Kvalitetstestning och certifiering'
-
+        - Marin-grade PVC-teknik
+        - Drop-stitch-kärna förklarad
+        - Varför PSI spelar roll för uppblåsbara SUP
+        - RF-svetsning vs limbindning
+        - Kvalitetstestning och certifiering
+    - title: SUP Lifestyle & Special Uses
+      description: Specialized SUP activities —yoga, fishing, dogs, families, and travel tips.
+      icon: tabler:heart
+      topics:
+        - SUP yoga and meditation on water
+        - Fishing from an inflatable SUP
+        - Paddle boarding with dogs and kids
+        - Traveling with your SUP by air and car
+        - SUP accessories and gear essentials
+    - title: SUP Comparisons & References
+      description: Side-by-side comparisons to help you make informed decisions.
+      icon: tabler:chart-bar
+      topics:
+        - SUP vs kayak — which is right for you?
+        - PVC vs Hypalon material comparison
+        - Single chamber vs multi-chamber safety
+        - SUP board materials explained
+        - UV printing vs EVA block artwork
 featured_guides:
-  tagline: 'Utvalda guider'
-  title: 'Mest populära kunskapsresurser'
+  tagline: Utvalda guider
+  title: Mest populära kunskapsresurser
   items:
-    - title: 'SUP-grunderna'
-      href: '/learn/sup'
-    - title: 'Uppblåsbart vs hårt bräde'
-      href: '/compare/inflatable-vs-hardboard'
-    - title: 'Vattensäkerhetsguide'
-      href: '/learn/water-safety'
-    - title: 'Materialreferens'
-      href: '/learn/materials'
-    - title: 'SUP-storleksguide'
-      href: '/size-guide'
-
+    - title: SUP-grunderna
+      href: /learn/sup
+    - title: Uppblåsbart vs hårt bräde
+      href: /compare/inflatable-vs-hardboard
+    - title: Vattensäkerhetsguide
+      href: /learn/water-safety
+    - title: Materialreferens
+      href: /learn/materials
+    - title: SUP-storleksguide
+      href: /size-guide
+    - title: SUP Size Guide
+      href: /guides/sup-size-guide
+    - title: SUP Tech Center
+      href: /research
+    - title: SUP Maintenance
+      href: /guides/sup-maintenance
+    - title: Touring Guide
+      href: /guides/sup-for-touring
+    - title: Paddle Techniques
+      href: /guides/paddling-techniques
 cta:
-  title: 'Börja utforska'
-  subtitle: 'Dyk in i vår kunskapsbas och få informationen du behöver för ditt nästa vattenäventyr.'
+  title: Börja utforska
+  subtitle: Dyk in i vår kunskapsbas och få informationen du behöver för ditt nästa vattenäventyr.
   actions:
     - variant: primary
-      text: 'Bläddra bland alla guider'
-      href: '/academy'
-    - text: 'Utforska kunskapsgraf'
-      href: '/knowledge'
+      text: Bläddra bland alla guider
+      href: /academy
+    - text: Utforska kunskapsgraf
+      href: /knowledge

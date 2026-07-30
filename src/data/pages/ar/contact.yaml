@@ -1,4 +1,4 @@
-﻿hero_text:
+hero_text:
   tagline: اتصل بنا
   title: تواصل معنا
 contact_form:
@@ -16,92 +16,98 @@ contact_form:
     - name: firstName
       label: الاسم الأول
       row: 1
+      type: select
+      optionsKey: countries
+      step: 1
     - name: lastName
       label: اسم العائلة
       row: 1
+      type: select
+      options:
+        - value: ''
+          label: Select your estimated volume...
+        - value: sample
+          label: Samples / Prototypes only
+        - value: 5-10
+          label: 5–10 units (Standard MOQ)
+        - value: 100-500
+          label: 100–500 units
+        - value: 500-plus
+          label: 500+ units (Volume pricing)
+      step: 1
     - name: companyName
       label: اسم الشركة
       row: 2
+      type: select
+      options:
+        - value: ''
+          label: Select customization type...
+        - value: none
+          label: Standard product (no customization)
+        - value: logo
+          label: Custom Logo / Branding only
+        - value: full
+          label: Full OEM (size, color, graphics, packaging)
+        - value: consultation
+          label: Not sure — need consultation
+      step: 1
     - name: address
       label: العنوان
       row: 3
+      type: select
+      options:
+        - value: ''
+          label: Select product category...
+        - value: all
+          label: All products / Full catalog
+        - value: sup
+          label: SUP Boards / Paddleboards
+        - value: safety
+          label: Safety Equipment / Life Vests
+        - value: accessory
+          label: Accessories (pumps, oars, bags)
+      step: 1
     - name: zip
       label: الرمز البريدي
       row: 4
+      step: 2
     - name: country
       label: الدولة
       row: 4
-      type: select
-      optionsKey: countries
+      step: 2
     - name: email
       label: البريد الإلكتروني
       row: 5
-      type: email
+      step: 2
     - name: tel
       label: الهاتف
       row: 5
       type: tel
-      withCountryCode: true
+      step: 2
     - name: orderVolume
       label: حجم الطلب التقديري
       row: 6
       type: select
-      options:
-        - value: ''
-          label: اختر الحجم التقديري...
-        - value: sample
-          label: عينات / نماذج أولية فقط
-        - value: '5-10'
-          label: 50—00 وحدة (الحد الأدنى القياسي للطلب)
-        - value: '100-500'
-          label: 100—00 وحدة
-        - value: '500-plus'
-          label: 500+ وحدة (تسعير الكميات)
+      withCountryCode: true
+      step: 2
     - name: customization
       label: هل تحتاج إلى تخصيص؟
       row: 7
-      type: select
-      options:
-        - value: ''
-          label: اختر نوع التخصيص...
-        - value: none
-          label: منتج قياسي (بدون تخصيص)
-        - value: logo
-          label: شعار / علامة تجارية مخصصة فقط
-        - value: full
-          label: OEM كامل (الحجم, اللون, الرسومات, التغليف)
-        - value: consultation
-          label: لست متأكداً —أحتاج استشارة
+      step: 2
     - name: productInterest
       label: فئات المنتجات المهمة
       row: 8
-      type: select
-      options:
-        - value: ''
-          label: اختر فئة المنتج...
-        - value: all
-          label: جميع المنتجات / الكتالوج الكامل
-        - value: sup
-          label: ألواح SUP / ألواح التجديف
-        - value: SUP
-          label: قوارب كاياك قابلة للنفخ
-        - value: SUP
-          label: قوارب SUP
-        - value: SUP
-          label: قوارب دنجي / الزوارق
-        - value: safety
-          label: معدات السلامة / سترات النجاة
-        - value: accessory
-          label: الملحقات (مضخات, مجاديف, حقائب)
-
+      step: 2
     - name: subject
       label: الموضوع
       row: 9
+      step: 3
     - name: message
       label: الرسالة
       row: 10
       type: textarea
       rows: 6
+      step: 3
 features2_other_ways:
   title: طرق أخرى للتواصل معنا
   columns: 3
@@ -116,7 +122,7 @@ features2_other_ways:
       description: الحزم الإعلامية، الرعاية والتعاون الصناعي.
       icon: tabler:news
     - title: الهاتف
-      description: '+86 13305324192'
+      description: +86 13305324192
       icon: tabler:headset
     - title: البريد الإلكتروني
       description: info@afarer.com

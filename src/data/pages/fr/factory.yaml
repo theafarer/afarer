@@ -1,193 +1,218 @@
-﻿hero:
+hero:
   tagline: Usine
-  title: Usine & Fabrication
-  subtitle: 12 000 m² de fabrication intégrée —de la matière première au bateau fini
-
+  title: Usine et Fabrication
+  subtitle: 12 000 m² de fabrication intégrée — de la matière première au SUP fini
 intro:
-  - En tant que marque d''usine de la **Qingdao Vatrad Group Co., Ltd.**, afarer contrôle chaque étape de la production —de l''arrivée des matières premières PVC et fibre de verre à l''inspection finale avant expédition du bateau fini. Notre installation de fabrication dans la Zone de Développement Économique de Qingdao s''étend sur 12 000 mètres carrés et abrite des ateliers dédiés pour la découpe PVC, le thermoscellage des tubes, la production de coques SUP en fibre de verre, l''impression numérique SUP, l''assemblage final et les tests qualité.
-  - En intégrant conception, ingénierie, prototypage, fabrication et tests sous un même toit, nous éliminons les inefficacités de la fabrication contractuelle et maintenons un contrôle direct sur la qualité de construction, la sélection des matériaux et les délais de livraison. Chaque bateau qui quitte notre atelier est construit par notre personnel, sur nos équipements, selon nos normes.
-
+  - En tant que marque d'usine du **Groupe Qingdao Vatrad Co., Ltd.**, afarer contrôle chaque étape de la production — de l'arrivée des matières premières PVC à l'inspection finale avant livraison du SUP fini. Notre installation de fabrication dans la zone de développement économique de Qingdao s'étend sur 12 000 m² et abrite des ateliers dédiés à la découpe PVC, l'assemblage cœur drop-stitch, l'impression numérique SUP, l'assemblage final et les tests qualité.
+  - En intégrant conception, ingénierie, prototypage, fabrication et tests sous un même toit, nous éliminons les inefficacités de la sous-traitance et maintenons un contrôle direct sur la qualité, les matériaux et les délais. Chaque SUP qui sort de notre atelier est construit par nos équipes, sur nos équipements, selon nos normes.
 stats:
   - value: 12 000 m²
-    label: Surface de fabrication
+    label: Manufacturing floor
   - value: 200+
-    label: Travailleurs qualifiés
+    label: Skilled workers
   - value: 15 000+
-    label: Bateaux produits annuellement
-  - value:
-    label: Certifié qualité
-
+    label: SUPs produced annually
+  - value: null
+    label: Quality certified
+intelligence_tagline: Intelligence Usine
+intelligence_title: Explorez nos Capacités de Fabrication
+intelligence_cards:
+  - title: Capacité de Production
+    icon: C
+    icon_bg: blue
+    desc: Installation de 12 000 m² produisant 15 000+ SUP/an. 200+ travailleurs, 2 équipes.
+    metrics:
+      - label: MOQ
+        value: 'SUP: 5—0'
+      - label: Délai
+        value: 30—5 jours
+    link: /factory/capacity
+    link_label: Voir capacités complètes →
+  - title: Laboratoire Qualité et Tests
+    icon: Q
+    icon_bg: green
+    desc: 'Laboratoire CQ indépendant avec 4 étapes : inspection matières premières, maintien de pression 48h à 1,25x, test de pelage des soudures et vérification charge/équilibre.'
+    metrics:
+      - label: Lab Equipment
+        value: Testeur traction, chambre température, bac fuite
+      - label: Normes
+        value: ISO 9001, CE, AS 1799
+    link: /factory/quality-lab
+    link_label: Procédures labo et équipement →
+  - title: Capacité OEM/ODM
+    icon: O
+    icon_bg: purple
+    desc: 'Services OEM/ODM complets : conception de moules, emballage marque blanche, couleurs personnalisées, graphiques pont et logistique drop-ship.'
+    metrics:
+      - label: Certifications
+        value: ISO 9001, BSCI, CE, REACH
+      - label: Expédition
+        value: FOB, CIF, DDP vers 50+ pays
+    link: /factory/oem-capability
+    link_label: Services OEM complets →
 workshops_section:
   tagline: Ateliers
   title: Ateliers de Fabrication
   workshops:
-    - title: Découpe PVC & Préparation des Matériaux
-      description: Les machines de découpe CNC automatiques traitent les tissus PVC, Hypalon et drop-stitch avec une précision submillimétrique. Le nesting optimisé par ordinateur minimise les déchets de matériau et garantit que chaque panneau respecte ses spécifications dimensionnelles avant soudage.
+    - title: Découpe PVC et Préparation des Matériaux
+      description: Les machines CNC traitent les tissus PVC, Hypalon et drop-stitch avec une précision submillimétrique. Le calepinage optimisé minimise les déchets et garantit les spécifications dimensionnelles.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
-    - title: Soudage de Tubes & Thermoscellage
-      description: Atelier de soudage dédié avec machines de thermoscellage  et presses diélectriques RF. Les thermoscelleuses à air chaud lient et fusionnent les chambres des tubes PVC, tandis que les soudures RF produisent des joints hermétiques haute résistance qui dépassent les exigences .
+    - title: Soudure de Tubes et Thermoscellage
+      description: Atelier de soudure dédié avec machines de thermosoudure et presses diélectriques RF. Les thermosoudeuses à air chaud lient et fusionnent les chambres des tubes PVC, tandis que les soudures RF produisent des joints étanches à haute résistance qui dépassent les exigences.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
-    - title: Production de Coques SUP —Fibre de Verre
-      description: Les coques de bateaux SUP sont produites par moulage en fibre de verre par stratification manuelle avec des systèmes de résine polyester et vinylester. Chaque couche est roulée à la main et mise sous vide pour une qualité constante. La cabine de pulvérisation gelcoat offre une finition marine haute brillance résistante aux UV.
-      image: https://assets.afarer.com/images/afarer/factory/afarer-warehouse-storage.webp
-    - title: Impression & Décoration SUP
-      description: Les planches SUP sont décorées par impression numérique  pour graphiques couleur et sérigraphie  pour logos et motifs répétés. Les imprimantes numériques produisent des designs de pont photo-réalistes, tandis que la sérigraphie offre des marques de marque durables et vives.
+    - title: Liaison du Cœur Drop-Stitch
+      description: Les cœurs drop-stitch sont liés aux stratifiés PVC par thermolamination. Des milliers de fils polyester créent une structure rigide à 12-15 PSI. Les bandes de bord sont fusionnées en triple couche.
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1.webp
-    - title: Assemblage Final & Gréement
-      description: Chaîne d''assemblage où les coques en fibre de verre et les tubes PVC sont accouplés, les moteurs sont montés, la direction et les commandes sont connectées, et les systèmes électriques sont câblés. Chaque bateau suit une liste de contrôle d''assemblage en 100 points signée par le chef d''équipe.
+    - title: Impression et Décoration SUP
+      description: Les planches SUP sont décorées par impression numérique pour les graphiques couleur et sérigraphie pour les logos et motifs répétés. Les imprimantes numériques produisent des designs de pont qualité photo, tandis que la sérigraphie offre des marques de marque durables et vives.
+      image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1.webp
+    - title: Assemblage Final et Montage
+      description: Chaîne d'assemblage où valves, anneaux D, poignées, boîtiers d'aileron et pads sont installés. Chaque planche suit une checklist 100 points validée par le chef d'équipe.
       image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
-    - title: Tests Qualité & Inspection
-      description: Chaque bateau fini subit un test obligatoire de rétention d''air, une vérification de pelage des joints et une vérification complète des systèmes avant expédition. Notre laboratoire qualité opère indépendamment de la production et rapporte directement à la direction.
+    - title: Tests Qualité et Inspection
+      description: Chaque bateau subit un test de rétention d'air, vérification de pelage et contrôle complet des systèmes avant expédition. Le laboratoire qualité est indépendant de la production.
       image: https://assets.afarer.com/images/afarer/factory/afarer-pressure-testing.webp
-
 equipment_section:
   tagline: Équipement
-  title: Équipement Clé de Fabrication
+  title: Équipements Clés de Fabrication
   view_full: Voir la liste complète des équipements →
   view_full_link: /factory/equipment
   items:
-    - name: Machine de Découpe PVC Automatique
-      spec: Commande CNC, précision 0,1 mm
-    - name: Machine de Thermoscellage
-      spec: Air chaud, 200 °C—00 °C, pour liaison de tubes
-    - name: Presse à Souder Diélectrique RF
-      spec: 15 kW, soudure de joints hermétiques
-    - name: Moules de Stratification Manuelle Fibre de Verre
-      spec: Coques SUP jusqu''à 6 m
-    - name: Imprimante Numérique
-      spec: Graphiques couleur pour ponts SUP
-    - name: Machine de Sérigraphie
+    - name: Machine de découpe PVC automatique
+      spec: Contrôle CNC, précision 0,1 mm
+    - name: Machine de thermoscellage
+      spec: Air chaud, 200°C–600 °C, pour collage de tubes
+    - name: Presse de soudure diélectrique RF
+      spec: 15 kW, soudure de joints étanches
+    - name: Presse de laminage cœur drop-stitch
+      spec: SUP cores up to 14 ft
+    - name: Imprimante numérique
+      spec: Graphiques pont SUP couleur
+    - name: Machine de sérigraphie
       spec: Impression logo multicolore
-
 qc_section:
-  tagline: Contrôle Qualité
+  tagline: Contrôle qualité
   title: Processus de Test et Assurance Qualité
-  subtitle: Chaque bateau subit des tests obligatoires avant expédition. Notre laboratoire qualité opère indépendamment de la production et rapporte directement à la direction.
+  subtitle: Chaque bateau subit des tests obligatoires avant expédition. Le laboratoire qualité est indépendant de la production.
   steps:
     - step: '1'
       title: Inspection des Matières Premières
-      desc: Les tissus PVC, Hypalon et drop-stitch subissent un test de traction (), de propagation de déchirure et de vérification de résistance UV avant que tout lot n''entre en production.
+      desc: Les tissus PVC, Hypalon et drop-stitch subissent des tests de traction, de propagation de déchirure et de vérification de résistance UV avant qu’un lot n’entre en production.
     - step: '2'
-      title: Test de Rétention d''Air de 48 Heures
-      desc: Chaque chambre de tube est gonflée à 125 % de la pression nominale et maintenue pendant 48 heures. Une chute de pression inférieure à 5 % déclenche un rejet automatique et une réinspection des joints.
+      title: Test de Rétention d'Air 48 Heures
+      desc: Chaque chambre est gonflée à 125 % de la pression nominale pendant 48h. Une chute >5 % déclenche un rejet et une réinspection.
     - step: '3'
-      title: Test de Charge et d''Équilibre
-      desc: Les bateaux finis sont chargés à la capacité maximale nominale et testés pour la stabilité, le franc-bord et la maniabilité. Chaque embarcation est testée sur l''eau avant l''inspection finale.
-
+      title: Test de Charge et d'Équilibre
+      desc: Les bateaux sont chargés à capacité maximale et testés pour la stabilité, le franc-bord et la maniabilité. Chaque embarcation est testée dans l'eau.
 oem_section:
   tagline: Projets OEM
-  title: Études de Cas de Partenariat Marque et OEM
-  subtitle: Du concept au conteneur —comment nous aidons les marques mondiales à lancer et développer leurs gammes d''embarcations gonflables.
+  title: Études de Cas Partenariats Marque et OEM
+  subtitle: Du concept au conteneur — comment nous aidons les marques mondiales à lancer et développer leurs gammes de SUP gonflables.
   cases:
-    - challenge: Un détaillant européen d''outdoor avait besoin d''une ligne SUP marque privée avec des graphiques de pont uniques, du PVC écologique et un emballage prêt pour la vente au détail —le tout livré en 60 jours.
-      solution: Développement de fichiers d''impression numérique personnalisés, approvisionnement en PVC conforme REACH et compression de l''échantillonnage de 3 tours à 1 en co-implantant l''équipe de design dans notre usine de Qingdao.
-      result: 55 jours du bon de commande signé au FOB. 2 400 unités sur 4 SKUs. Commande répétée avant l''arrivée du premier conteneur.
-    - challenge: Une startup américaine de sports nautiques avait besoin d''un SUP drop-stitch haute performance avec forme de coque personnalisée, emballage co-marqué et certification BSCI pour le placement en magasin.
-      solution: Adaptation du moule de SUP drop-stitch existant avec profil de rocker modifié, développement de l''emballage co-marqué et fourniture de la documentation complète d''audit BSCI.
-      result: Listé avec succès dans 3 grandes chaînes outdoor américaines. 5 000+ unités en première année avec 98 % de taux de vente.
-    - challenge: Un distributeur australien nécessitait une gamme SUP certifiée CE avec couleurs de tubes personnalisées, option de mise à niveau Hypalon et conformité à la norme australienne AS 1799.
-      solution: Production d''échantillons de pré-production avec 4 variantes de couleur de tubes, approvisionnement en Hypalon CSM auprès d''un fournisseur japonais et coordination des tests de conformité AS 1799 par un tiers.
-      result: Gamme SUP de 3 modèles lancée sur le marché AU/NZ. Suivie d''un appel d''offres gouvernemental pour 12 SUP de patrouille.
-
+    - challenge: Un détaillant européen avait besoin d'une gamme SUP marque blanche avec graphiques uniques, PVC écologique et emballage prêt vente — livré en 60 jours.
+      solution: Développement de fichiers numériques, approvisionnement PVC conforme REACH et réduction de l'échantillonnage de 3 à 1 tour en co-implantant l'équipe design à Qingdao.
+      result: 55 jours du bon de commande au FOB. 2 400 unités sur 4 SKUs. Commande renouvelée avant l'arrivée du premier conteneur.
+    - challenge: Une startup américaine avait besoin d'un SUP drop-stitch haute performance avec forme personnalisée et certification BSCI.
+      solution: Adaptation du moule SUP, développement des visuels d'emballage co-marqué et documentation d'audit BSCI complète.
+      result: Listé dans 3 grandes chaînes outdoor américaines. 5 000+ unités en 1ère année avec 98 % de taux d'écoulement.
+    - challenge: Un distributeur australien avait besoin d'une gamme SUP certifiée CE avec couleurs personnalisées.
+      solution: Production d'échantillons de pré-série avec 4 variantes de couleur et tests de conformité tiers.
+      result: Gamme SUP 3 modèles lancée sur le marché AU/NZ. Suivie d'un appel d'offres gagné pour 12 SUP de patrouille.
 faq_section:
   tagline: FAQ
-  title: Questions Fréquemment Posées B2B et OEM
+  title: Questions Fréquentes B2B et OEM
   questions:
-    - q: Quelle est la quantité minimale de commande (MOQ) pour les planches SUP gonflables OEM ?
-      a: La MOQ commence à 5—0 unités pour les modèles OEM standard. Les moules personnalisés et les projets marque privée nécessitent un minimum de 200 unités selon la complexité. Les commandes d''essai et les échantillons sont disponibles pour les lancements de nouvelles marques.
+    - q: Quel est le volume minimum de commande (MOQ) pour les planches SUP gonflables OEM ?
+      a: Le MOQ commence à 5–50 unités pour les modèles OEM standard. Les moules personnalisés et les projets de marque de distributeur nécessitent un minimum de 200 unités selon la complexité. Les commandes d’essai et les séries d’échantillons sont disponibles pour les lancements de nouvelles marques.
     - q: afarer détient-il la certification BSCI ?
-      a: Oui. Notre usine maintient une certification de conformité sociale BSCI valide (rapport d''audit disponible sur demande). Nous détenons également  pour le management qualité et tous les produits portent la certification CE . La documentation de conformité REACH et RoHS est fournie avec chaque expédition OEM.
-    - q: Quel est le délai de livraison typique pour une commande OEM ?
-      a: Oui. Notre usine maintient une certification de conformité sociale BSCI valide (rapport d''audit disponible sur demande). Nous détenons également  pour le management qualité et tous les produits portent la certification CE . La documentation de conformité REACH et RoHS est fournie avec chaque expédition OEM.
-    - q: Pouvez-vous expédier FOB Qingdao ou CIF vers notre port ?
-      a: Oui. Nous expédions FOB Qingdao, CIF vers les grands ports mondiaux et DDP pour les partenaires qualifiés. Notre équipe logistique gère la réservation de conteneurs, la documentation d''exportation et le dédouanement. Nous expédions dans 50+ pays à travers les marchés UE, USA, AU et Asie.
-
-b2b_moq: "MOQ standard : 5—0 unités par modèle (SUP/SUP/drop-stitch). MOQ SUP : 2— unités. Commandes d'essai bienvenues pour les nouveaux partenariats."
-
+      a: Oui. Notre usine maintient une certification de conformité sociale BSCI valide (rapport d'audit disponible sur demande). Nous détenons également la certification pour la gestion de la qualité et tous les produits portent la certification CE. La documentation de conformité REACH et RoHS est fournie avec chaque expédition OEM.
+    - q: Quel est le délai habituel pour une commande OEM ?
+      a: Oui. Notre usine maintient une certification de conformité sociale BSCI valide (rapport d'audit disponible sur demande). Nous détenons également la certification pour la gestion de la qualité et tous les produits portent la certification CE. La documentation de conformité REACH et RoHS est fournie avec chaque expédition OEM.
+    - q: Pouvez-vous expédier FOB Qingdao ou CIF jusqu'à notre port ?
+      a: Oui. Nous expédions FOB Qingdao, CIF ports mondiaux et DDP pour partenaires qualifiés. Nous expédions vers 50+ pays.
+b2b_moq: 'MOQ standard : 5–50 unités par modèle. Commandes d’essai bienvenues pour les nouveaux partenariats.'
 production_flow:
   tagline: Flux de Production
   title: De la Matière au Bateau Fini
-  subtitle: Chaque bateau passe par 6 étapes de production avec des points de contrôle CQ à chaque étape. Pas de raccourcis, pas d'inspections sautées.
+  subtitle: Chaque bateau passe par 6 étapes de production avec des points de contrôle à chaque étape. Aucun raccourci.
   stages:
     - stage: '01'
-      title: Réception des Matières & CQ Entrant
-      description: Toutes les matières entrantes sont enregistrées par numéro de lot dans notre système ERP. Les rouleaux de tissu PVC, les noyaux drop-stitch, les vannes, les adhésifs et la quincaillerie sont mis en quarantaine jusqu'à l'approbation du CQ.
-      qc_check: "Résistance à la traction (ASTM D751), résistance au déchirement (ISO 4674), jauge d'épaisseur, viscosité de l'adhésif, inspection visuelle des défauts"
-      qc_threshold: '100% des lots testés. Rejet si traction < 90% de la spécification, déchirement < min spécifié, ou tout défaut visuel'
-      responsibility: Équipe CQ entrante (3 inspecteurs)
+      title: Réception des matériaux et CQ entrant
+      description: Tous les matériaux entrants sont enregistrés dans notre ERP. Les rouleaux PVC, cœurs drop-stitch, valves et quincaillerie sont en quarantaine jusqu'à validation CQ.
+      qc_check: Résistance traction (ASTM D751), résistance déchirure (ISO 4674), jauge d'épaisseur, viscosité adhésif, scan défauts visuels
+      qc_threshold: 100 % des lots testés. Rejet si traction < 90 %, déchirure < min ou tout défaut visuel
+      responsibility: Équipe CQ entrant (3 inspecteurs)
     - stage: '02'
-      title: Découpe CNC & Préparation des Matériaux
-      description: Le nesting optimisé par ordinateur dispose les panneaux sur le stock PVC pour minimiser les déchets. Les machines de découpe CNC automatiques maintiennent une précision de position de 0,1 mm.
-      qc_check: 'Contrôle dimensionnel par rapport aux fichiers DXF CAO, inspection de la qualité des bords, vérification du nombre de panneaux'
-      qc_threshold: 'Chaque 20e panneau mesuré. Tolérance ±0,5 mm. Rejet du lot si >2% hors tolérance'
-      responsibility: Chef d'atelier de découpe
+      title: Découpe CNC et préparation
+      description: Le calepinage optimisé dispose les panneaux sur le stock PVC pour minimiser les déchets. Les machines CNC maintiennent une précision de 0,1 mm.
+      qc_check: Vérification dimensionnelle contre fichiers CAD DXF, inspection qualité des bords, vérification du nombre de panneaux
+      qc_threshold: Chaque 20ème panneau mesuré. Tolérance ±0,5 mm. Rejet du lot si >2 % hors tolérance
+      responsibility: Responsable atelier découpe
     - stage: '03'
-      title: Soudage & Liaison Drop-Stitch
-      description: Les noyaux drop-stitch sont liés aux laminés PVC extérieurs par thermolamination. Les chambres des tubes sont soudées par RF ou air chaud. Les bandes de rail sont liées par fusion triple couche.
-      qc_check: "Test de pelage toutes les 50 unités (ASTM D751), mesure de largeur de soudure, relevé de température d'air chaud, inspection visuelle des joints sous contre-jour"
-      qc_threshold: 'Résistance au pelage min 8 N/cm. Tolérance de largeur de soudure ±1 mm. Tout canal visible = rejet'
-      responsibility: CQ soudage (2 inspecteurs par équipe)
+      title: Soudure et liaison drop-stitch
+      description: Les cœurs drop-stitch sont liés aux stratifiés PVC par thermolamination. Les chambres sont soudées par RF ou air chaud.
+      qc_check: Test de pelage tous les 50 unités, mesure largeur soudure, revue température air chaud, inspection visuelle des joints sous rétroéclairage
+      qc_threshold: Résistance pelage min 8 N/cm. Tolérance largeur soudure ±1 mm. Tout cannelure visible = rejet
+      responsibility: CQ soudure (2 inspecteurs par équipe)
     - stage: '04'
-      title: Assemblage & Gréement
-      description: "Les bateaux passent à l'assemblage final où tous les composants sont accouplés : coque + tubes, vannes installées, anneaux D, poignées, boîtes à dérive et sac de transport. Chaque unité suit une liste de contrôle d'assemblage en 100 points."
-      qc_check: 'Validation de la liste de contrôle en 100 points par unité, test de fonction des vannes (10 cycles ouverture/fermeture), vérification du couple de serrage, inspection visuelle'
-      qc_threshold: 'Politique zéro défaut sur les articles critiques pour la sécurité (vannes, anneaux D, poignées). Esthétique mineure : AQL 2.5 (ISO 2859)'
-      responsibility: Chef d'équipe d'assemblage + CQ de ligne
+      title: Assemblage et gréement
+      description: 'Les bateaux passent à l''assemblage final : coque + tubes, valves, anneaux D, poignées, boîtiers d''aileron et sac de transport. Chaque unité suit une checklist 100 points.'
+      qc_check: Validation checklist 100 points par unité, test fonction valve, vérification couple de serrage, inspection visuelle
+      qc_threshold: 'Politique zéro défaut sur les éléments de sécurité. Défauts mineurs : AQL 2.5 (ISO 2859)'
+      responsibility: Chef d'équipe assemblage + CQ ligne
     - stage: '05'
-      title: Test de Pression & Quarantaine Qualité
-      description: Chaque chambre est gonflée à 1,25× la pression nominale (généralement 20-25 PSI) et maintenue pendant 24 à 48 heures. Les capteurs de pression enregistrent en continu. Les chambres dépassant 5% de chute de pression sont rejetées et envoyées pour réinspection des joints.
-      qc_check: 'Relevé de pression 24h, calibration du capteur vérifiée quotidiennement, lecture de pression compensée en température, retest des joints après réparation'
-      qc_threshold: 'Max 5% de chute de pression sur 24h à température stable. Toute chambre dépassant ce seuil = retest 100% de tout le lot de production'
+      title: Test de pression et retenue qualité
+      description: Chaque chambre est gonflée à 1,25× la pression nominale (typically 20—5 PSI) and held for 24—8 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.
+      qc_check: Journal de maintien de pression 24h, étalonnage capteurs quotidien, lecture compensée en température, re-test après réparation
+      qc_threshold: Max 5% de chute de pression sur 24h à température stable. Tout dépassement = re-test 100 % du lot
       responsibility: Laboratoire qualité (indépendant de la production, rapporte à la direction)
     - stage: '06'
-      title: Inspection Finale & Emballage
-      description: Inspection visuelle et fonctionnelle finale. Défauts de surface, consistance des couleurs, vérification des étiquettes/BIN, intégrité de l'emballage et exhaustivité des accessoires. Les unités sont emballées sous vide, mises en carton et palettisées pour le chargement en conteneur.
-      qc_check: "Inspection visuelle complète, liste de contrôle des accessoires par SKU, test de chute d'emballage (1 m, échantillon aléatoire), vérification par scan d'étiquette/code-barres"
-      qc_threshold: 'AQL 2.5 pour les défauts majeurs, AQL 4.0 pour les défauts mineurs. Tolérance zéro pour les défauts de sécurité. 100% des unités inspectées visuellement'
+      title: Inspection finale et emballage
+      description: Inspection visuelle et fonctionnelle finale. Défauts de surface, cohérence des couleurs, vérification des étiquettes/BIN, intégrité de l’emballage et intégralité des accessoires. Les unités sont conditionnées sous vide, mises en boîte et palettisées pour le chargement en conteneur.
+      qc_check: Inspection visuelle complète, checklist accessoires par SKU, test chute emballage (1 m), vérification code-barres
+      qc_threshold: AQL 2.5 défauts majeurs, AQL 4.0 défauts mineurs. Tolérance zéro défauts sécurité. 100 % des unités inspectées visuellement.
       responsibility: Équipe CQ finale (4 inspecteurs) + Chef d'équipe emballage
-
 workforce:
   tagline: Notre Équipe
-  title: Effectifs et Expertise
+  title: Main-d'œuvre et Expertise
   engineers: 25+
-  engineers_detail: "Ingénieurs répartis entre R&D, conception de moules, laboratoire de matériaux et ingénierie de production. Moyenne de 7+ ans dans la fabrication d'embarcations gonflables."
-  shift_pattern: '2 équipes/jour (07:00—5:30, 15:30—0:00). Équipe de nuit optionnelle pour les commandes urgentes.'
-  training: 'Formation CQ mensuelle, exercices de sécurité trimestriels, évaluation annuelle des compétences. Les nouvelles recrues suivent une induction de 40 heures avant de travailler sur la ligne de production.'
+  engineers_detail: Ingénieurs en R&D, conception moules, laboratoire matériaux. Moyenne de 7+ ans dans la fabrication gonflable.
+  shift_pattern: 2 équipes/jour (07:00—15:30, 15:30—00:00). Équipe de nuit optionnelle pour urgences.
+  training: Formation QC mensuelle, exercices de sécurité trimestriels, évaluation annuelle des compétences. Les nouvelles recrues suivent une formation d’accueil de 40 heures avant de travailler sur la chaîne de production.
   departments:
     - name: R&D et Ingénierie
       count: 25+
-      role: Conception de produits, ingénierie de moules, laboratoire de matériaux
-    - name: Découpe et Préparation
+      role: Conception produits, ingénierie moules, laboratoire matériaux
+    - name: Découpe et préparation des matériaux
       count: 15
-      role: Découpe CNC, préparation des panneaux, manutention des matériaux
-    - name: Soudage et Lamination
+      role: Découpe CNC, préparation des panneaux, manutention
+    - name: Soudure et stratification
       count: 40
-      role: Soudage RF, soudage à air chaud, liaison drop-stitch
-    - name: Coques SUP (FRP)
+      role: Soudure RF, soudure à air chaud, liaison drop-stitch
+    - name: Liaison du cœur SUP
       count: 30
-      role: Stratification fibre de verre, gelcoat, mise sous vide
-    - name: Assemblage et Gréement
+      role: Stratification drop-stitch, liaison thermique, fusion des bandes de bord
+    - name: Assemblage et gréement
       count: 35
-      role: Assemblage final, installation de quincaillerie, vérification des systèmes
-    - name: Contrôle Qualité
+      role: Assemblage final, installation quincaillerie, vérification des systèmes
+    - name: Contrôle qualité
       count: 12
-      role: CQ entrant, CQ en cours, inspection finale, tests en laboratoire
-    - name: Logistique et Emballage
+      role: CQ entrant, CQ en cours, inspection finale, tests laboratoire
+    - name: Logistique et emballage
       count: 20
-      role: Emballage, chargement conteneur, documentation d'exportation
-    - name: Direction et Administration
+      role: Emballage, chargement conteneur, documentation export
+    - name: Gestion et administration
       count: 15
-      role: Ventes, achats, RH, finance, conformité
-
+      role: Ventes, approvisionnement, RH, finances, conformité
 material_traceability:
   tagline: Traçabilité
-  title: Suivi des Matériaux et Contrôle des Lots
-  description: Chaque lot de matière première reçoit un numéro de lot unique dans notre système ERP. De l'arrivée à travers la production jusqu'au produit fini, la nomenclature de chaque bateau remonte au lot fournisseur d'origine. Cela permet une traçabilité amont complète pour toute enquête qualité ou conformité.
-  system: ERP personnalisé (système interne Qingdao Vatrad Group) + étiquettes de lot physiques sur chaque ordre de fabrication
-  coverage: 100% des matériaux de production —PVC, Hypalon, tissu drop-stitch, adhésifs, vannes, quincaillerie, emballage
+  title: Suivi des Matières et Contrôle des Lots
+  description: Chaque lot de matière première reçoit un numéro de lot unique in our ERP system. From arrival through production to the finished product, each boat's bill of materials links back to the original supplier batch. This enables full upstream traceability for any quality or compliance inquiry.
+  system: ERP personnalisé (système interne Qingdao Vatrad) + étiquettes de lot physiques sur chaque ordre
+  coverage: 100 % des matériaux de production — PVC, Hypalon, tissu drop-stitch, adhésifs, valves, quincaillerie, emballage
   records_retained: 10 ans (selon exigence CE 2013/53/UE)
   suppliers:
-    - material: PVC de qualité marine
+    - material: PVC qualité marine
       source: Fournisseurs chinois et coréens
       certified: ISO 9001, REACH, RoHS
     - material: Hypalon (CSM)
@@ -195,74 +220,35 @@ material_traceability:
       certified: ISO 9001, REACH
     - material: Tissu drop-stitch
       source: Tissage interne + partenaire externe
-      certified: CQ interne + ISO 9001 fournisseur
-    - material: Vannes et Quincaillerie
+      certified: CQ interne + fournisseur ISO 9001
+    - material: Valves et Quincaillerie
       source: Fournisseurs OEM chinois
-      certified: ISO 9001, certificats matière par lot
-
+      certified: ISO 9001, certificats matériaux par lot
 qc_dashboard:
   tagline: CQ en Chiffres
   title: Métriques de Contrôle Qualité
-  subtitle: Données réelles de réussite/échec de notre ligne de production. Notre laboratoire qualité opère indépendamment de la production et rapporte directement à la direction.
+  subtitle: Vraies données de réussite/échec de notre chaîne de production. Notre laboratoire qualité opère indépendamment de la production et rapporte directement à la direction.
   stats:
-    - value: 100%
-      label: Unités testées sous pression
+    - value: 100 %
+      label: Units pressure-tested
       detail: Chaque bateau, chaque chambre, chaque lot
-    - value: '<5%'
-      label: Chute de pression max autorisée
+    - value: <5 %
+      label: Max allowable pressure drop
       detail: Sur 24h à 1,25× la pression nominale
-    - value: AQL 2.5
-      label: Seuil de défaut majeur
+    - value: AQL 2,5
+      label: Major defect threshold
       detail: Selon norme d'échantillonnage ISO 2859
-    - value: 24—8h
-      label: Durée de maintien sous pression
+    - value: 24—8 h
+      label: Pressure hold duration
       detail: Selon la catégorie de produit
     - value: 1,25×
-      label: Pression d'essai vs nominale
+      label: Test pressure vs rated
       detail: Marge de sécurité sur chaque chambre
     - value: 0%
-      label: Tolérance sur les défauts de sécurité
-      detail: Vannes, anneaux D, joints, flottabilité
-
+      label: Tolerance on safety defects
+      detail: Valves, anneaux D, soudures, flottabilité
 process_cta:
   title: Voir notre processus de fabrication
-  desc: Suivez un bateau à travers chaque étape de la production —de la matière première à l'embarcation prête pour la mer.
+  desc: Suivez un SUP à chaque étape de production — de la matière première à la planche prête pour la mer.
   label: Voir le processus de production →
   link: /factory/process
-intelligence_tagline: Factory Intelligence
-intelligence_title: Explore Our Manufacturing Capabilities
-
-intelligence_cards:
-  - title: Production Capacity
-    icon: C
-    icon_bg: blue
-    desc: '12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.'
-    metrics:
-      - label: MOQ
-        value: 'SUP: 5-10 / SUP: 2-5'
-      - label: Lead Time
-        value: '30-45 days'
-    link: /factory/capacity
-    link_label: 'Détails de capacité →'
-  - title: Quality Lab & Testing
-    icon: Q
-    icon_bg: green
-    desc: 'Laboratoire CQ indépendant avec 4 étapes : inspection matières premières, maintien de pression 48h, test de pelage des soudures, vérification charge/équilibre.'
-    metrics:
-      - label: Lab Equipment
-        value: 'Tensile tester, temp chamber, leak tank'
-      - label: Standards
-        value: 'ISO 9001, CE, AS 1799'
-    link: /factory/quality-lab
-    link_label: 'Procédures de laboratoire & équipement →'
-  - title: OEM/ODM Capability
-    icon: O
-    icon_bg: purple
-    desc: 'Services OEM/ODM complets : conception de moule, emballage marque blanche, couleurs personnalisées, graphiques de pont, option Hypalon, logistique drop-ship.'
-    metrics:
-      - label: Certifications
-        value: 'ISO 9001, BSCI, CE, REACH'
-      - label: Shipping
-        value: 'FOB, CIF, DDP to 50+ countries'
-    link: /factory/oem-capability
-    link_label: 'Services OEM complets →'

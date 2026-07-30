@@ -1,57 +1,89 @@
-﻿hero_text:
+hero_text:
   tagline: Get a Quote
-  title: 'Demander un Devis<br />pour Votre Projet'
-  subtitle: 'Dites-nous vos besoins. Nous répondons avec un devis détaillé sous 2 jours ouvrés.'
+  title: Demander un Devis<br />pour Votre Projet
+  subtitle: Parlez-nous de vos exigences et notre équipe répondra avec un devis détaillé sous 2 jours ouvrés.
 steps2_process:
   title: How It Works
-  subtitle: 'Quatre étapes simples de la demande au devis.'
+  subtitle: Quatre étapes simples de la demande au devis.
   items:
-    - title: 'Étape 1 : Soumettez vos besoins'
-      description: 'Remplissez le formulaire avec type de produit, quantité et spécifications.'
+    - title: 'Étape 1 : Soumettez Vos Exigences'
+      description: Remplissez le formulaire ci-dessous avec votre type de produit, votre quantité et vos spécifications. Plus vous fournissez de détails, plus votre devis sera précis.
       icon: tabler:file-text
-    - title: 'Étape 2 : Nous examinons & conseillons'
-      description: 'Notre équipe d’ingénierie examine vos besoins et recommande des configurations.'
+    - title: 'Étape 2 : Nous Examinons et Conseillons'
+      description: Notre équipe d’ingénierie examine vos exigences et peut vous contacter pour des éclaircissements. Nous fournissons des recommandations sur la configuration et les options du produit.
       icon: tabler:users
-    - title: 'Étape 3 : Recevez votre devis'
-      description: 'Vous recevez un devis détaillé avec prix, MOQ, délais, conditions de paiement et expédition. Généralement sous 48 heures.'
+    - title: 'Étape 3 : Recevez Votre Devis'
+      description: Vous recevez un devis détaillé incluant le prix unitaire, le MOQ, le délai, les conditions de paiement et les options d'expédition. Généralement sous 48 heures.
       icon: tabler:currency-dollar
-    - title: 'Étape 4 : Échantillon & Production'
-      description: 'Après acceptation du devis, nous procédons à la production d’échantillons ou direct'
+    - title: 'Étape 4 : Échantillon et Production'
+      description: Après acceptation du devis, nous procédons à la production d'échantillons (si applicable) ou directement à la production en série. Mises à jour régulières tout au long du processus.
       icon: tabler:building-factory
 content_form:
   tagline: Quotation Form
-  title: 'Parlez-nous de votre projet'
-  subtitle: 'Tous les champs avec * sont obligatoires.'
+  title: Parlez-Nous de Votre Projet
+  subtitle: Tous les champs avec * sont obligatoires.
   fields:
-    - name: Product Type
-      type: select
+    - name: Catégorie de produit
+      type: sélectionner
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-        - Custom
-    - name: Quantity
+        - Planche SUP
+        - SUP gonflable
+        - Planche SUP Gonflable
+        - Gilet de sauvetage
+        - Accessoire marin
+        - OEM/ODM personnalisé
+    - name: Application
+      type: sélectionner
+      options:
+        - Centre de plongée
+        - Pêche
+        - Tourisme marin / Complexe
+        - Recherche et Sauvetage
+        - Annexe de yacht
+        - Bateau de travail commercial
+        - Gouvernement / Militaire
+        - OEM / Marque blanche
+        - Personnel / Loisir
+        - Autre
+    - name: Quantité
       type: text
-      placeholder: e.g. 50 units
-    - name: Target Market
+      placeholder: p. ex. 50 unités
+    - name: Marché cible
       type: text
-      placeholder: e.g. Europe, North America, Middle East
-    - name: Customization Needed
+      placeholder: p. ex. Europe, Amérique du Nord, Moyen-Orient
+    - name: Pays de livraison
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
+      placeholder: p. ex. Italie, EAU, États-Unis, Australie
+    - name: Préférence de matériau
+      type: sélectionner
+      options:
+        - Aucune préférence
+        - PVC qualité marine (1100 dtex)
+        - Hypalon / CSM Premium
+        - Coque en Fibre de Verre
+        - Coque en Aluminium
+    - name: Spécification Moteur
       type: text
-      placeholder: e.g. delivery within 90 days
-    - name: Additional Requirements
+      placeholder: p. ex. 60 CV hors-bord, sans moteur, jumeaux 115 CV
+    - name: Personnalisation requise
+      type: text
+      placeholder: p. ex. couleurs personnalisées, marque/logo, emballage, accessoires spéciaux
+    - name: Calendrier
+      type: text
+      placeholder: p. ex. livraison sous 90 jours
+    - name: Exigences supplémentaires
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements
+      placeholder: Décrivez votre application, spécifications techniques, or any special requirements —include reference drawings, specifications, or links if available
+    - name: Télécharger le cahier des charges
+      type: fichier
+      placeholder: Téléchargez votre fiche technique, dessin ou document de référence (PDF, DWG, DXF)
+    - name: Télécharger le logo / visuel
+      type: fichier
+      placeholder: Téléchargez votre logo ou artwork pour un branding personnalisé (AI, EPS, PNG)
 cta:
-  title: 'Vous préférez discuter par email ?'
-  subtitle: 'Envoyez votre demande directement à notre équipe commerciale. Réponse sous 24 heures.'
+  title: Vous préférez discuter par email ?
+  subtitle: Envoyez votre demande directement à notre équipe commerciale et nous répondrons sous 24 heures.
   actions:
     - variant: primary
-      text: Email us directly
+      text: Envoyez-nous un email directement
       href: /contact

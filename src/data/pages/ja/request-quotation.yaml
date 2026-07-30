@@ -1,26 +1,26 @@
-﻿hero_text:
+hero_text:
   tagline: Get a Quote
-  title: 'プロジェクトの見積もりをリクエスト<br />'
-  subtitle: 'お客様の要件についてお知らせください。当社のチームが 2 営業日以内に詳細な見積もりを返信いたします。'
+  title: プロジェクトの見積もりをリクエスト<br />
+  subtitle: お客様の要件についてお知らせください。当社のチームが 2 営業日以内に詳細な見積もりを返信いたします。
 steps2_process:
   title: How It Works
-  subtitle: 'お問い合わせからお見積りまでの簡単4ステップ。'
+  subtitle: お問い合わせからお見積りまでの簡単4ステップ。
   items:
     - title: 'Step 1: Submit Your Requirements'
-      description: '以下のフォームに製品の種類、数量、仕様をご記入ください。 より詳細に提供するほど、見積もりはより正確になります。'
+      description: 以下のフォームに製品の種類、数量、仕様をご記入ください。 より詳細に提供するほど、見積もりはより正確になります。
       icon: tabler:file-text
     - title: 'Step 2: We Review & Advise'
-      description: '当社のエンジニアリング チームがお客様の要件を検討し、説明のためご連絡させていただく場合があります。 製品構成やオプションに関する推奨事項を提供します。'
+      description: 当社のエンジニアリング チームがお客様の要件を検討し、説明のためご連絡させていただく場合があります。 製品構成やオプションに関する推奨事項を提供します。
       icon: tabler:users
     - title: 'Step 3: Receive Your Quote'
-      description: '単価、MOQ、リードタイム、支払い条件、配送オプションを含む詳細な見積もりが届きます。 通常は 48 時間以内です。'
+      description: 単価、MOQ、リードタイム、支払い条件、配送オプションを含む詳細な見積もりが届きます。 通常は 48 時間以内です。
       icon: tabler:currency-dollar
     - title: 'Step 4: Sample & Production'
-      description: '見積もりの​​承諾後、サンプル生産 (該当する場合) または直接量産に進みます。 プロセス全体を通じて定期的に更新。'
+      description: 見積もりの​​承諾後、サンプル生産 (該当する場合) または直接量産に進みます。 プロセス全体を通じて定期的に更新。
       icon: tabler:building-factory
 content_form:
   tagline: Quotation Form
-  title: 'あなたのプロジェクトについて教えてください'
+  title: あなたのプロジェクトについて教えてください
   subtitle: '* が付いているフィールドはすべて必須です。'
   fields:
     - name: Product Type
@@ -32,10 +32,19 @@ content_form:
         - Inflatable SUP
         - Life Vest
         - Accessory
-        - Custom
     - name: Quantity
       type: text
-      placeholder: e.g. 50 units
+      options:
+        - Diving Center
+        - Fishing
+        - Marine Tourism / Resort
+        - Search & Rescue
+        - Yacht Tender
+        - Commercial Workboat
+        - Government / Military
+        - OEM / Private Label
+        - Personal / Recreational
+        - Other
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -47,10 +56,33 @@ content_form:
       placeholder: e.g. delivery within 90 days
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements
+      options:
+        - No Preference
+        - Marine-Grade PVC (1100 dtex)
+        - Premium Hypalon / CSM
+        - Fiberglass Hull
+        - Aluminum Hull
+    - name: Engine Requirement
+      type: text
+      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+    - name: Customization Required
+      type: text
+      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+    - name: Timeline
+      type: text
+      placeholder: e.g. delivery within 90 days
+    - name: Additional Requirements
+      type: textarea
+      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+    - name: Upload Specification
+      type: file
+      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+    - name: Upload Logo / Artwork
+      type: file
+      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
 cta:
-  title: 'Prefer to discuss by email?'
-  subtitle: 'Send your inquiry directly to our sales team and we will respond within 24 hours.'
+  title: Prefer to discuss by email?
+  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
   actions:
     - variant: primary
       text: Email us directly

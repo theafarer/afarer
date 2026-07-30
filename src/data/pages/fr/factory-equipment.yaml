@@ -1,80 +1,72 @@
-﻿hero:
-  tagline: 'Équipement'
-  title: 'Équipement et Machines de Fabrication'
-  subtitle: "Équipement de grade industriel pour la découpe, le soudage, l'impression et l'assemblage"
-  back_label: "Retour à l'Usine"
+hero:
+  tagline: Équipement
+  title: Équipements et Machines de Fabrication
+  subtitle: Équipement de qualité industrielle pour la découpe, soudure, impression et assemblage
+  back_label: Retour à l'Usine
   back_link: /factory
-
 categories:
-  - title: 'Découpe et Préparation des Matériaux'
+  - title: Découpe et Préparation des Matériaux
     items:
-      - name: 'Machine de Découpe Automatique PVC'
-        spec: 'Contrôlée par CNC, 6.5 m × 2.5 m, précision 0.1 mm'
-        desc: "Machine de découpe automatique contrôlée par ordinateur pour les tissus PVC, Hypalon et drop-stitch. Le logiciel d'imbrication optimise l'utilisation du matériau à moins de 5 % de perte."
-      - name: 'Étaleuse de Tissu'
-        spec: 'Largeur max 3 m, alimentation à tension contrôlée'
-        desc: 'Pose le tissu en plis simples ou multiples avec une tension contrôlée pour éviter la distorsion avant la découpe.'
-  - title: 'Soudage et Liaison des Tubes'
+      - name: Machine de découpe PVC automatique
+        spec: Contrôle CNC, 6,5 m × 2,5 m, précision 0,1 mm
+        desc: Machine de découpe automatique commandée par ordinateur pour tissus PVC, Hypalon et drop-stitch. Le logiciel de nesting optimise l’utilisation des matériaux à moins de 5 % de déchets.
+      - name: Étaloir de Tissu
+        spec: 3 m de largeur max, alimentation à tension contrôlée
+        desc: Dispose le tissu en une ou plusieurs couches avec une tension contrôlée pour éviter la déformation avant la découpe.
+  - title: Soudure et Assemblage de Tubes
     items:
-      - name: 'Machine de Soudure par Thermoscellage'
-        spec: 'Soudure à air chaud, variable 200—00 °C, 0.5— m/min'
-        desc: "Machine de thermoscellage à air chaud pour l'assemblage et la soudure des coutures de tubes PVC et Hypalon. Utilisée pour le pointage, l'étanchéité et la fusion des chambres de tube et des joints de flottaison."
-      - name: 'Presse RF Diélectrique'
-        spec: '15 kW, plaque 2000 × 600 mm'
-        desc: 'Presse de soudure haute fréquence pour les coutures longitudinales principales, les joints transom-tube et la fabrication de grandes chambres.'
-      - name: 'Soudeuse RF Contrôlée par CNC'
-        spec: '8 kW, table XY 2500 × 1200 mm'
-        desc: 'Soudure programmable de coutures courbes pour géométries complexes, gaufrage de logo et raccommodage de précision.'
-  - title: 'Fabrication de Coque SUP'
+      - name: Machine de thermoscellage
+        spec: Soudure à air chaud, variable 200–600 °C, 0,5–4 m/min
+        desc: Machine de thermosoudure à air chaud pour le collage et la soudure des joints de tubes PVC et Hypalon. Utilisée pour le pointage, le scellement et la fusion des chambres de tubes et des joints de flotteurs.
+      - name: Presse Diélectrique RF
+        spec: 15 kW, plateau 2000 × 600 mm
+        desc: Presse de soudure radiofréquence pour les joints longitudinaux principaux, les joints tableau-arrière/tubes et la fabrication de grandes chambres.
+      - name: Soudeuse RF à Commande CNC
+        spec: 8 kW, table XY 2500 × 1200 mm
+        desc: Soudure programmable de joints courbes pour géométries complexes, gaufrage de logo et patchwork de précision.
+  - title: Fabrication de planches SUP
     items:
-      - name: 'Moules en Fibre de Verre à Pose Manuelle'
-        spec: "Plusieurs moules pour coques SUP jusqu'à 6 m LOA"
-        desc: 'Moulage traditionnel de fibre de verre à pose manuelle avec systèmes de résine polyester et vinylester. Chaque couche est roulée à la main et mise sous vide pour une qualité et résistance constantes du stratifié.'
-      - name: 'Cabine de Pulvérisation Gelcoat'
-        spec: 'Température contrôlée, ventilation à air filtré'
-        desc: "Application de gelcoat sur les coques SUP. Offre une finition brillante, résistante aux UV, avec un contrôle précis de l'épaisseur."
-      - name: 'Routeur CNC (5 axes)'
-        spec: 'Enveloppe 3 m × 2 m × 1 m, broche refroidie par eau'
-        desc: 'Usinage des inserts de coque, moules de console, bases de siège et supports sur mesure.'
-  - title: 'Impression et Décoration SUP'
+      - name: Presse de laminage cœur drop-stitch
+        spec: Presse grand format pour âmes de planches jusqu’à 14 ft LOA
+        desc: Laminage de précision des âmes drop-stitch sur les stratifiés PVC externes. Chaque couche est liée sous pression pour une qualité et une résistance constantes.
+      - name: Défonceuse CNC (5 axes)
+        spec: 3 m × 2 m × 1 m enveloppe, broche refroidie par eau
+        desc: Usinage de boîtiers d’ailerons, découpes de poignées et composants de planches personnalisés.
+  - title: Impression et Décoration SUP
     items:
-      - name: 'Imprimante Numérique'
-        spec: "Jet d'encre haute résolution, largeur d'impression jusqu'à 2 m"
-        desc: "Impression numérique directe sur tissu pour graphismes de pont SUP en pleine couleur. Imprime motifs personnalisés, dégradés et images de qualité photo avec encres à base d'eau résistantes aux UV."
-      - name: 'Machine de Sérigraphie'
-        spec: 'Manuelle et semi-automatique, enregistrement multicolore'
-        desc: 'Sérigraphie pour logos de planches SUP, marques et motifs répétitifs. Offre des impressions durables, opaques avec une saturation colorée vive.'
-  - title: 'Assemblage et Gréement'
+      - name: Imprimante numérique
+        spec: Jet d'encre haute résolution, jusqu'à 2 m de largeur
+        desc: Impression numérique directe sur tissu pour graphismes SUP couleur. Prints custom patterns, gradients, and photo-quality images with UV-resistantwater-based inks.
+      - name: Machine de sérigraphie
+        spec: Manuel et semi-automatique, registration multicolore
+        desc: Sérigraphie pour logos de planches SUP, marques de fabrique et motifs répétés. Fournit des impressions durables et opaques avec une saturation de couleur vibrante.
+  - title: Assemblage et gréement
     items:
-      - name: 'Palan de Moteur'
-        spec: 'Capacité 500 kg, barre de répartition réglable'
-        desc: 'Montage sûr des moteurs hors-bord de 2.5 à 60 ch.'
-      - name: 'Châssis Maquette de Console'
-        spec: 'Hauteur et angle réglables'
-        desc: "Pré-équipement du direction, de l'accélérateur et des panneaux d'instruments avant l'installation."
-      - name: 'Sertisseuse de Durite Hydraulique'
-        spec: 'Jusqu''à 1" ID, manomètre numérique'
-        desc: 'Ensembles de durites de direction hydraulique de longueur personnalisée avec raccords sertis.'
-      - name: 'Planche de Faisceaux Électrique'
-        spec: '3 m × 1.5 m, schémas de câblage préimprimés'
-        desc: 'Assemblage et test de faisceaux électriques complets hors du bateau.'
-  - title: 'Essais et Contrôle Qualité'
+      - name: Poste d'Assemblage de Planches
+        spec: Disposition modulaire ajustable multi-postes
+        desc: Assemblage des boîtiers d'aileron, poignées, anneaux en D, valves et pads de pont sur les planches SUP.
+      - name: Presse d'Installation de Valve
+        spec: Pneumatique, pression ajustable
+        desc: Installation de précision et étanchéité des valves Halkey-Roberts et Leafield.
+      - name: Lamineur de Pad de Pont
+        spec: 3 m × 1,5 m, température contrôlée
+        desc: Laminage thermique des pads de pont en mousse EVA sur le dessus des SUP avec une force de liaison constante.
+  - title: Tests et Contrôle Qualité
     items:
-      - name: 'Machine de Traction Universelle'
-        spec: '50 kN, ASTM D751'
-        desc: "Essai de force de rupture, d'allongement à la rupture et de propagation de déchirure pour lots de tissu."
-      - name: "Banc d'Essai de Rétention d'Air"
-        spec: 'Programmable, maintien de pression 30 min'
-        desc: "Test automatisé de maintien de pression pour chaque chambre de tube avant l'assemblage."
-      - name: 'Testeur de Pelage de Couture'
-        spec: 'Pelage motorisé 180° à 100 mm/min'
-        desc: 'Essai de résistance au pelage des coutures soudées et collées selon ISO 6185.'
-      - name: 'Chambre de Vieillissement à Arc Xénon'
-        spec: '2000 h exposition'
-        desc: 'Essai de résistance UV pour changement de couleur et retention de résistance.'
-
+      - name: Testeur de Traction Universel
+        spec: 50 kN,  / ASTM D751
+        desc: Test de force de rupture, d'allongement et de propagation de déchirure pour les lots de tissu.
+      - name: Banc de Test de Rétention d'Air
+        spec: Programmable, maintien de pression 30 min
+        desc: Test de maintien de pression automatisé pour chaque chambre avant assemblage.
+      - name: Testeur de Pelage des Joints
+        spec: Pelage motorisé à 180° à 100 mm/min
+        desc: Test de résistance au pelage des soudures et des joints collés selon ISO 6185.
+      - name: Chambre de Vieillissement au Xénon
+        spec: Exposition 2000 h
+        desc: Test de résistance UV pour le changement de couleur et le maintien de la résistance.
 cta:
-  title: "Intéressé par une visite d'usine ?"
-  desc: 'Nous accueillons les visiteurs dans notre installation de Qingdao. Voyez notre équipement et nos processus en personne.'
-  label: 'Planifier une visite →'
+  title: Intéressé par une visite d'usine ?
+  desc: Nous accueillons les visiteurs dans notre installation de Qingdao. Voyez nos équipements et processus en personne.
+  label: Planifier une visite →
   link: /contact

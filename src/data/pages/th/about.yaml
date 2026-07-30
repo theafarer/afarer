@@ -1,22 +1,25 @@
 hero:
   tagline: เกี่ยวกับเรา
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-factory-building.webp
+    alt: afarer factory and workshop
   title: เกี่ยวกับ afarer
   subtitle: ผู้ผลิตเรือเป่าลมSUP และอุปกรณ์กีฬาทางน้ำตั้งแต่2012 รับรอง CE และISO
-  cta: อ่านเรื่องราวของเรา
-  image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
-  imageAlt: โรงงาน afarer
 stats:
-  - value: "2012"
-    label: ก่อตั้ง
-  - value: 12,000
-    label: ตร.ม พื้นที่ผลิต
-  - value: 50+
-    label: ประเทศส่งออก
-  - value: ISO 9001
-    label: การรับรอง
+  title: By the numbers
+  columns: 4
+  stats:
+    - title: Hulls delivered
+      amount: 2,400+
+    - title: Countries shipped
+      amount: '40'
+    - title: Years of combined experience
+      amount: '60'
+    - title: Average warranty response (hours)
+      amount: '24'
 features3_what_we_build:
   title: What we build
-  subtitle: "We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company."
+  subtitle: 'We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company.'
   columns: 3
   isBeforeContent: true
   items:

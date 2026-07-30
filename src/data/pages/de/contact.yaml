@@ -1,4 +1,4 @@
-﻿hero_text:
+hero_text:
   tagline: Kontakt
   title: NEHMEN SIE KONTAKT AUF
 contact_form:
@@ -16,92 +16,98 @@ contact_form:
     - name: firstName
       label: Vorname
       row: 1
+      type: select
+      optionsKey: countries
+      step: 1
     - name: lastName
       label: Nachname
       row: 1
+      type: select
+      options:
+        - value: ''
+          label: Select your estimated volume...
+        - value: sample
+          label: Samples / Prototypes only
+        - value: 5-10
+          label: 5–10 units (Standard MOQ)
+        - value: 100-500
+          label: 100–500 units
+        - value: 500-plus
+          label: 500+ units (Volume pricing)
+      step: 1
     - name: companyName
       label: Unternehmen
       row: 2
+      type: select
+      options:
+        - value: ''
+          label: Select customization type...
+        - value: none
+          label: Standard product (no customization)
+        - value: logo
+          label: Custom Logo / Branding only
+        - value: full
+          label: Full OEM (size, color, graphics, packaging)
+        - value: consultation
+          label: Not sure — need consultation
+      step: 1
     - name: address
       label: Adresse
       row: 3
+      type: select
+      options:
+        - value: ''
+          label: Select product category...
+        - value: all
+          label: All products / Full catalog
+        - value: sup
+          label: SUP Boards / Paddleboards
+        - value: safety
+          label: Safety Equipment / Life Vests
+        - value: accessory
+          label: Accessories (pumps, oars, bags)
+      step: 1
     - name: zip
       label: PLZ / Postleitzahl
       row: 4
+      step: 2
     - name: country
       label: Land
       row: 4
-      type: select
-      optionsKey: countries
+      step: 2
     - name: email
       label: E-Mail
       row: 5
-      type: email
+      step: 2
     - name: tel
       label: TEL
       row: 5
       type: tel
-      withCountryCode: true
+      step: 2
     - name: orderVolume
       label: Geschätztes Bestellvolumen
       row: 6
       type: select
-      options:
-        - value: ''
-          label: Wählen Sie das geschätzte Volumen...
-        - value: sample
-          label: Nur Muster / Prototypen
-        - value: '5-10'
-          label: 50—00 Einheiten (Standard-Moq)
-        - value: '100-500'
-          label: 100—00 Einheiten
-        - value: '500-plus'
-          label: 500+ Einheiten (Mengenrabatt)
+      withCountryCode: true
+      step: 2
     - name: customization
       label: Anpassung erforderlich?
       row: 7
-      type: select
-      options:
-        - value: ''
-          label: Wählen Sie den Anpassungstyp...
-        - value: none
-          label: Standardprodukt (keine Anpassung)
-        - value: logo
-          label: Nur eigenes Logo / Branding
-        - value: full
-          label: Vollständige OEM (Größe, Farbe, Grafik, Verpackung)
-        - value: consultation
-          label: Nicht sicher —Beratung erforderlich
+      step: 2
     - name: productInterest
       label: Produktkategorien von Interesse
       row: 8
-      type: select
-      options:
-        - value: ''
-          label: Wählen Sie eine Produktkategorie...
-        - value: all
-          label: Alle Produkte / Gesamtkatalog
-        - value: sup
-          label: SUP-Boards / Paddleboards
-        - value: SUP
-          label: Schlauchkajaks
-        - value: SUP
-          label: SUP-Boote
-        - value: SUP
-          label: Beiboote / Tender
-        - value: safety
-          label: Sicherheitsausrüstung / Schwimmwesten
-        - value: accessory
-          label: Zubehör (Pumpen, Paddel, Taschen)
-
+      step: 2
     - name: subject
       label: Betreff
       row: 9
+      step: 3
     - name: message
       label: Nachricht
       row: 10
       type: textarea
       rows: 6
+      step: 3
 features2_other_ways:
   title: Weitere Möglichkeiten, uns zu erreichen
   columns: 3
@@ -116,7 +122,7 @@ features2_other_ways:
       description: Medienpakete, Sponsoring und Branchenkooperationen.
       icon: tabler:news
     - title: Telefon
-      description: '+86 13305324192'
+      description: +86 13305324192
       icon: tabler:headset
     - title: E-Mail
       description: info@afarer.com

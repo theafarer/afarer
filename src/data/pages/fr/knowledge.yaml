@@ -1,74 +1,99 @@
-﻿hero:
-  tagline: 'Graphique de Connaissances'
-  title: 'Exploration des Connaissances Nautiques'
-  subtitle: |
+hero:
+  tagline: Graphique de Connaissances
+  title: Connaissances sur l'Exploration Aquatique
+  subtitle: |-
     Une base de connaissances structurée couvrant la technologie SUP gonflable,<br />
-    la sécurité nautique, l'ingénierie des bateaux et la planification d'aventures.
-  taglineSection: 'Explorez. Apprenez. Partez en toute confiance.'
-
+    la sécurité nautique et l'ingénierie
+  taglineSection: Explorez. Apprenez. Partez en confiance.
 clusters:
-  tagline: 'Groupes de Connaissances'
-  title: 'Explorer par thème'
-  subtitle: 'Plongées approfondies dans la technologie, la sécurité et les compétences derrière chaque produit afarer.'
+  tagline: Knowledge Clusters
+  title: Explorer par sujet
+  subtitle: Plongées dans la technologie, la sécurité et les compétences behind every afarer product.
   items:
-    - title: 'Connaissances SUP'
-      description: 'Du choix de votre première planche aux techniques de randonnée avancées —tout sur le stand-up paddle.'
-      icon: 'tabler:lifebuoy'
+    - title: Guides d'Achat SUP
+      description: Du choix de votre première planche aux techniques de randonnée avancées — tout sur le stand-up paddle.
+      icon: tabler:lifebuoy
       topics:
-        - 'Comment choisir votre premier SUP gonflable'
-        - 'Meilleure taille de SUP pour débutants'
-        - 'Le paddle est-il difficile ?'
-        - 'Comparaison SUP gonflable vs rigide'
-        - 'Liste de sécurité SUP'
-    - title: 'Connaissances Bateaux'
-      description: 'Guides techniques sur les bateaux gonflables, RIBs, annexes et SUPs —ingénierie, matériaux et fonctionnement.'
-      icon: 'tabler:sailboat'
+        - Comment choisir votre premier SUP gonflable
+        - Guide taille et capacité de poids SUP
+        - Meilleur SUP pour débutants, randonnée, yoga et course
+        - Erreurs d'achat SUP courantes à éviter
+        - Comparaison gonflable vs planche rigide
+    - title: Ingénierie et technologie SUP
+      description: Guides techniques sur les planches SUP gonflables — matériaux, méthodes de construction et procédés de fabrication.
+      icon: tabler:microscope
       topics:
-        - 'Types de bateaux gonflables expliqués'
-        - 'Comparaison PVC vs Hypalon'
-        - 'Comparaison SUP vs Annexe'
-        - 'Technologie drop-stitch approfondie'
-        - 'Guide des matériaux marins'
-    - title: 'Connaissances Sécurité'
-      description: "Connaissances de sécurité essentielles pour chaque pagayeur —du choix du VFI à la lecture météo en passant par les techniques d'auto-sauvetage."
-      icon: 'tabler:shield'
+        - Plongée dans la technologie drop-stitch
+        - Spécifications PVC qualité militaire
+        - Laminage par fusion vs collage adhésif
+        - Technologie de mousse EVA et méthodes d'illustration
+        - Types de valves SUP et systèmes d'ailerons
+    - title: Sécurité et Entretien SUP
+      description: Connaissances de sécurité essentielles pour chaque pagayeur —from PFD selection to weather reading to board care and repair.
+      icon: tabler:shield
       topics:
-        - 'Liste de sécurité SUP'
-        - "Avez-vous besoin d'un gilet de sauvetage ?"
-        - 'Guide de sécurité en pagayage océanique'
-        - 'Sécurité en rivière pour SUPs gonflables'
-        - 'Connaissance des conditions météo et aquatiques'
-    - title: 'Technologie'
-      description: "L'ingénierie derrière les produits afarer —matériaux, méthodes de construction et tests qualité."
-      icon: 'tabler:microscope'
+        - Checklist sécurité SUP et exigences VFI
+        - Sécurité multi-chambres pour eaux isolées
+        - Guide PSI de gonflage SUP
+        - Stockage de la planche et entretien hivernal
+        - Techniques de réparation gonflable
+    - title: Compétences et Techniques SUP
+      description: Techniques de pagaie, compétences de randonnée et entraînement physique pour tous les niveaux.
+      icon: tabler:sailboat
       topics:
-        - 'Technologie PVC marine'
-        - 'Noyau drop-stitch expliqué'
-        - 'Pourquoi le PSI est important pour les SUP gonflables'
-        - 'Soudure RF vs liaison adhésive'
-        - 'Tests qualité et certification'
-
+        - Techniques de pagaie pour débutants
+        - Maîtrise des coups de pagaie intermédiaires
+        - Planification de randonnées et expéditions
+        - Entraînement fitness et course SUP
+        - Compétences en eaux vives et rivière
+    - title: Style de vie SUP et usages spéciaux
+      description: Activités SUP spécialisées — yoga, pêche, chiens, familles et conseils voyage.
+      icon: tabler:heart
+      topics:
+        - Yoga SUP et méditation sur l'eau
+        - Pêche depuis un SUP gonflable
+        - Paddle avec chiens et enfants
+        - Voyager avec votre SUP en avion et en voiture
+        - Accessoires SUP et équipements essentiels
+    - title: Comparaisons et références SUP
+      description: Comparaisons côte à côte pour vous aider à prendre des décisions éclairées.
+      icon: tabler:chart-bar
+      topics:
+        - SUP vs kayak — quel est le bon pour vous ?
+        - Comparaison des matériaux PVC vs Hypalon
+        - Sécurité chambre simple vs multi-chambres
+        - Matériaux des planches SUP expliqués
+        - Impression UV vs blocs EVA
 featured_guides:
-  tagline: 'Guides Recommandés'
-  title: 'Ressources de connaissances les plus populaires'
+  tagline: Guides en Vedette
+  title: Ressources de connaissances les plus populaires
   items:
-    - title: 'Bases du SUP'
-      href: '/learn/sup'
-    - title: 'Gonflable vs Planche Rigide'
-      href: '/compare/inflatable-vs-hardboard'
-    - title: 'Guide de Sécurité Nautique'
-      href: '/learn/water-safety'
-    - title: 'Référence des Matériaux'
-      href: '/learn/materials'
-    - title: 'Guide des Tailles SUP'
-      href: '/size-guide'
-
+    - title: Bases du SUP
+      href: /learn/sup
+    - title: Gonflable vs Planche Rigide
+      href: /compare/inflatable-vs-hardboard
+    - title: Guide de Sécurité Aquatique
+      href: /learn/water-safety
+    - title: Référence des Matériaux
+      href: /learn/materials
+    - title: Guide d'achat SUP
+      href: /guides/how-to-choose-your-sup
+    - title: Guide des tailles SUP
+      href: /guides/sup-size-guide
+    - title: Centre technique SUP
+      href: /research
+    - title: Entretien SUP
+      href: /guides/sup-maintenance
+    - title: Guide de touring
+      href: /guides/sup-for-touring
+    - title: Techniques de pagaie
+      href: /guides/paddling-techniques
 cta:
-  title: 'Commencez à explorer'
-  subtitle: 'Plongez dans notre base de connaissances et obtenez les informations nécessaires pour votre prochaine aventure aquatique.'
+  title: Commencer l'exploration
+  subtitle: Plongez dans notre base de connaissances and get the information you need for your next water adventure.
   actions:
     - variant: primary
-      text: 'Parcourir tous les guides'
-      href: '/academy'
-    - text: 'Explorer le Graphique de Connaissances'
-      href: '/knowledge'
+      text: Parcourir tous les guides
+      href: /academy
+    - text: Explorer le Graphe de Connaissances
+      href: /knowledge

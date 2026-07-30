@@ -1,74 +1,99 @@
-﻿hero:
-  tagline: 'Grafo de Conocimiento'
-  title: 'Conocimiento de Exploración Acuática'
+hero:
+  tagline: Grafo de Conocimiento
+  title: Conocimiento de Exploración Acuática
   subtitle: |
     Una base de conocimiento estructurada que cubre tecnología SUP inflable,<br />
     seguridad acuática, ingeniería de embarcaciones y planificación de aventuras.
-  taglineSection: 'Explora. Aprende. Ve con confianza.'
-
+  taglineSection: Explora. Aprende. Ve con confianza.
 clusters:
-  tagline: 'Clústeres de Conocimiento'
-  title: 'Explora por tema'
-  subtitle: 'Inmersiones profundas en la tecnología, seguridad y habilidades detrás de cada producto afarer.'
+  tagline: Clústeres de Conocimiento
+  title: Explora por tema
+  subtitle: Inmersiones profundas en la tecnología, seguridad y habilidades detrás de cada producto afarer.
   items:
-    - title: 'Conocimiento de SUP'
-      description: 'Desde elegir tu primera tabla hasta técnicas avanzadas de travesía —todo sobre paddleboarding.'
-      icon: 'tabler:lifebuoy'
+    - title: Conocimiento de SUP
+      description: Desde elegir tu primera tabla hasta técnicas avanzadas de travesía —todo sobre paddleboarding.
+      icon: tabler:lifebuoy
       topics:
-        - 'Cómo elegir tu primer SUP inflable'
-        - 'Mejor tamaño de SUP para principiantes'
-        - '¿Qué tan difícil es el paddleboarding?'
-        - 'Comparación de tabla inflable vs rígida'
-        - 'Lista de verificación de seguridad SUP'
-    - title: 'Conocimiento de Embarcaciones'
-      description: 'Guías técnicas sobre botes inflables, SUP, dinghys y SUPs —ingeniería, materiales y operación.'
-      icon: 'tabler:sailboat'
+        - Cómo elegir tu primer SUP inflable
+        - Mejor tamaño de SUP para principiantes
+        - ¿Qué tan difícil es el paddleboarding?
+        - Comparación de tabla inflable vs rígida
+        - Lista de verificación de seguridad SUP
+    - title: Conocimiento de Embarcaciones
+      description: Guías técnicas sobre botes inflables, SUP, dinghys y SUPs —ingeniería, materiales y operación.
+      icon: tabler:sailboat
       topics:
-        - 'Tipos de botes inflables explicados'
-        - 'Comparación PVC vs Hypalon'
-        - 'Comparación SUP vs SUP'
-        - 'Inmersión profunda en tecnología drop-stitch'
-        - 'Guía de ciencia de materiales marinos'
-    - title: 'Conocimiento de Seguridad'
-      description: 'Conocimientos esenciales de seguridad para cada remero —desde selección de PFD hasta lectura del clima y técnicas de autorrescate.'
-      icon: 'tabler:shield'
+        - Tipos de botes inflables explicados
+        - Comparación PVC vs Hypalon
+        - Comparación SUP vs SUP
+        - Inmersión profunda en tecnología drop-stitch
+        - Guía de ciencia de materiales marinos
+    - title: Conocimiento de Seguridad
+      description: Conocimientos esenciales de seguridad para cada remero —desde selección de PFD hasta lectura del clima y técnicas de autorrescate.
+      icon: tabler:shield
       topics:
-        - 'Lista de verificación de seguridad SUP'
-        - '¿Necesitas un chaleco salvavidas?'
-        - 'Guía de seguridad para remar en océano'
-        - 'Seguridad en ríos para SUPs inflables'
-        - 'Conciencia del clima y condiciones del agua'
-    - title: 'Tecnología'
-      description: 'Conocimientos esenciales de seguridad para cada remero —desde selección de PFD hasta lectura del clima y técnicas de autorrescate.'
-      icon: 'tabler:microscope'
+        - Lista de verificación de seguridad SUP
+        - ¿Necesitas un chaleco salvavidas?
+        - Guía de seguridad para remar en océano
+        - Seguridad en ríos para SUPs inflables
+        - Conciencia del clima y condiciones del agua
+    - title: Tecnología
+      description: Conocimientos esenciales de seguridad para cada remero —desde selección de PFD hasta lectura del clima y técnicas de autorrescate.
+      icon: tabler:microscope
       topics:
-        - 'Tecnología PVC de grado marino'
-        - 'Núcleo drop-stitch explicado'
-        - 'Por qué el PSI importa para los SUP inflables'
-        - 'Soldadura RF vs unión adhesiva'
-        - 'Pruebas de calidad y certificación'
-
+        - Tecnología PVC de grado marino
+        - Núcleo drop-stitch explicado
+        - Por qué el PSI importa para los SUP inflables
+        - Soldadura RF vs unión adhesiva
+        - Pruebas de calidad y certificación
+    - title: SUP Lifestyle & Special Uses
+      description: Specialized SUP activities —yoga, fishing, dogs, families, and travel tips.
+      icon: tabler:heart
+      topics:
+        - SUP yoga and meditation on water
+        - Fishing from an inflatable SUP
+        - Paddle boarding with dogs and kids
+        - Traveling with your SUP by air and car
+        - SUP accessories and gear essentials
+    - title: SUP Comparisons & References
+      description: Side-by-side comparisons to help you make informed decisions.
+      icon: tabler:chart-bar
+      topics:
+        - SUP vs kayak — which is right for you?
+        - PVC vs Hypalon material comparison
+        - Single chamber vs multi-chamber safety
+        - SUP board materials explained
+        - UV printing vs EVA block artwork
 featured_guides:
-  tagline: 'Guías Destacadas'
-  title: 'Recursos de conocimiento más populares'
+  tagline: Guías Destacadas
+  title: Recursos de conocimiento más populares
   items:
-    - title: 'Conceptos Básicos de SUP'
-      href: '/learn/sup'
-    - title: 'Tabla Inflable vs Rígida'
-      href: '/compare/inflatable-vs-hardboard'
-    - title: 'Guía de Seguridad Acuática'
-      href: '/learn/water-safety'
-    - title: 'Referencia de Materiales'
-      href: '/learn/materials'
-    - title: 'Guía de Tamaños SUP'
-      href: '/size-guide'
-
+    - title: Conceptos Básicos de SUP
+      href: /learn/sup
+    - title: Tabla Inflable vs Rígida
+      href: /compare/inflatable-vs-hardboard
+    - title: Guía de Seguridad Acuática
+      href: /learn/water-safety
+    - title: Referencia de Materiales
+      href: /learn/materials
+    - title: Guía de Tamaños SUP
+      href: /size-guide
+    - title: SUP Size Guide
+      href: /guides/sup-size-guide
+    - title: SUP Tech Center
+      href: /research
+    - title: SUP Maintenance
+      href: /guides/sup-maintenance
+    - title: Touring Guide
+      href: /guides/sup-for-touring
+    - title: Paddle Techniques
+      href: /guides/paddling-techniques
 cta:
-  title: 'Comienza a explorar'
-  subtitle: 'Sumérgete en nuestra base de conocimiento y obtén la información que necesitas para tu próxima aventura acuática.'
+  title: Comienza a explorar
+  subtitle: Sumérgete en nuestra base de conocimiento y obtén la información que necesitas para tu próxima aventura acuática.
   actions:
     - variant: primary
-      text: 'Ver todas las guías'
-      href: '/academy'
-    - text: 'Explorar grafo de conocimiento'
-      href: '/knowledge'
+      text: Ver todas las guías
+      href: /academy
+    - text: Explorar grafo de conocimiento
+      href: /knowledge

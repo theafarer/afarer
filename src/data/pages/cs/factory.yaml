@@ -2,18 +2,16 @@ hero:
   tagline: Továrna
   title: Naše továrna
   subtitle: 12 000 m² moderního výrobního zařízení v Qingdao, Čína.
-  image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
-  imageAlt: Továrna afarer
 intro:
   - Naše továrna v Qingdao je srdcem výroby afarer. S rozlohou 12 000 m² a více než 200 kvalifikovanými zaměstnanci máme kapacitu a odbornost vyrábět vysoce kvalitní nafukovací čluny a vybavení pro vodní sporty v měřítku.
   - Naše zařízení je vybaveno nejmodernějšími stroji, včetně automatických CNC řezacích strojů, RF dielektrických svářeček, horkovzdušných těsnicích zařízení a digitálních tiskáren.
-  - Udržujeme přísnou kontrolu kvality v každé fázi výroby, od vstupní kontroly surovin až po závěrečné testování hotových výrobků.
 stats:
   - value: 12 000
     label: m² celková plocha
   - value: 200+
     label: Kvalifikovaných zaměstnanců
-  - value: "6"
+  - value: '6'
+    label: SUPs produced annually
   - value: ISO 9001
     label: Certifikace
 intelligence_tagline: Factory Intelligence
@@ -25,7 +23,7 @@ intelligence_cards:
     desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
     metrics:
       - label: MOQ
-        value: "SUP: 5-10 / SUP: 2-5"
+        value: 'SUP: 5-10 / SUP: 2-5'
       - label: Lead Time
         value: 30-45 days
     link: /factory/capacity
@@ -33,7 +31,7 @@ intelligence_cards:
   - title: Quality Lab & Testing
     icon: Q
     icon_bg: green
-    desc: "Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat."
+    desc: 'Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat.'
     metrics:
       - label: Lab Equipment
         value: Tensile tester, temp chamber, leak tank
@@ -44,7 +42,7 @@ intelligence_cards:
   - title: OEM/ODM Capability
     icon: O
     icon_bg: purple
-    desc: "End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics."
+    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
     metrics:
       - label: Certifications
         value: ISO 9001, BSCI, CE, REACH
@@ -97,13 +95,13 @@ qc_section:
   title: Testing & Quality Assurance Process
   subtitle: Every boat undergoes mandatory testing before shipping. Our quality lab operates independently from production and reports directly to management.
   steps:
-    - step: "1"
+    - step: '1'
       title: Raw Material Inspection
       desc: PVC, Hypalon, and drop-stitch fabrics undergo tensile testing (), tear propagation, and UV resistance verification before any batch enters production.
-    - step: "2"
+    - step: '2'
       title: 48-Hour Air Retention Test
       desc: Every tube chamber is inflated to 125% of rated pressure and held for 48 hours. Pressure drop below 5% triggers automatic rejection and seam re-inspection.
-    - step: "3"
+    - step: '3'
       title: Load & Balance Testing
       desc: Completed boats are loaded to maximum rated capacity and tested for stability, freeboard, and handling. Each vessel is water-tested before final inspection.
 oem_section:
@@ -132,43 +130,43 @@ faq_section:
       a: Yes. Our factory maintains valid BSCI social compliance certification (audit report available on request). We also hold  for quality management and all products carry CE  certification. REACH and RoHS compliance documentation provided with every OEM shipment.
     - q: Can you ship FOB Qingdao or CIF to our port?
       a: Yes. We ship FOB Qingdao, CIF major global ports, and DDP for qualified partners. Our logistics team manages container booking, export documentation, and customs clearance. We ship to 50+ countries across EU, US, AU, and Asia markets.
-b2b_moq: "Standardní MOQ: 5—0 jednotek na model (SUP/kajak/drop-stitch). MOQ pro SUP: 2— jednotek. Zkušební objednávky vítány pro nová partnerství."
+b2b_moq: 'Standardní MOQ: 5—0 jednotek na model (SUP/kajak/drop-stitch). MOQ pro SUP: 2— jednotek. Zkušební objednávky vítány pro nová partnerství.'
 production_flow:
   tagline: Production Flow
   title: From Material to Finished Boat
   subtitle: Every boat passes through 6 production stages with QC checkpoints at every step. No shortcuts, no skipped inspections.
   stages:
-    - stage: "01"
+    - stage: '01'
       title: Material Receiving & Incoming QC
       description: All incoming materials are logged by batch/lot number in our ERP system. PVC fabric rolls, drop-stitch cores, valves, adhesives, and hardware are quarantined until QC sign-off.
       qc_check: Tensile strength (ASTM D751), tear resistance (ISO 4674), thickness gauge, adhesive viscosity, visual defect scan
       qc_threshold: 100% of batches tested. Reject if tensile < 90% of spec, tear < spec min, or any visual defect
       responsibility: Incoming QC team (3 inspectors)
-    - stage: "02"
+    - stage: '02'
       title: CNC Cutting & Material Prep
       description: Computer-optimized nesting lays out panels on PVC stock to minimize waste. Automatic CNC cutting machines maintain 0.1 mm positional accuracy.
       qc_check: Dimensional check against CAD DXF files, edge quality inspection, panel count verification
       qc_threshold: Every 20th panel measured. Tolerance ±0.5 mm. Reject batch if >2% out of tolerance
       responsibility: Cutting workshop lead
-    - stage: "03"
+    - stage: '03'
       title: Welding & Drop-Stitch Bonding
       description: Drop-stitch cores are bonded to outer PVC laminates using heat lamination. Tube chambers are RF-welded or hot-air welded. Rail bands are triple-layer fusion bonded.
       qc_check: Peel test every 50 units (ASTM D751), weld width measurement, hot-air temperature log review, visual seam inspection under backlight
       qc_threshold: Peel strength min 8 N/cm. Weld width tolerance ±1 mm. Any visible channeling = reject
       responsibility: Welding QC (2 inspectors per shift)
-    - stage: "04"
+    - stage: '04'
       title: Assembly & Rigging
-      description: "Boats move to final assembly where all components are mated: hull + tubes, valves installed, D-rings, handles, fin boxes, and carry bag fitting. Each unit follows a 100-point assembly checklist."
+      description: 'Boats move to final assembly where all components are mated: hull + tubes, valves installed, D-rings, handles, fin boxes, and carry bag fitting. Each unit follows a 100-point assembly checklist.'
       qc_check: 100-point checklist sign-off per unit, valve function test (10 open/close cycles), hardware torque verification, visual inspection
-      qc_threshold: "Zero-defect policy on safety-critical items (valves, D-rings, handles). Minor cosmetic: AQL 2.5 (ISO 2859)"
+      qc_threshold: 'Zero-defect policy on safety-critical items (valves, D-rings, handles). Minor cosmetic: AQL 2.5 (ISO 2859)'
       responsibility: Assembly team lead + line QC
-    - stage: "05"
+    - stage: '05'
       title: Pressure Testing & Quality Hold
       description: Every chamber is inflated to 1.25× rated pressure (typically 20—5 PSI) and held for 24—8 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.
       qc_check: 24h pressure hold log, sensor calibration verified daily, temperature-compensated pressure reading, seam re-test after repair
       qc_threshold: Max 5% pressure drop over 24h at stable temp. Any chamber exceeding this = 100% re-test of entire production batch
       responsibility: Quality lab (independent of production, reports to management)
-    - stage: "06"
+    - stage: '06'
       title: Final Inspection & Packing
       description: Final visual and functional inspection. Surface defects, color consistency, label/BIN verification, packaging integrity, and accessory completeness. Units are vacuum-packed, boxed, and palletized for container loading.
       qc_check: Full visual inspection, accessory checklist per SKU, packaging drop test (1 m, random sample), label/bar code scan verification

@@ -22,7 +22,7 @@ resources:
     description: Estimate your resort or club SUP fleet investment, projected revenue, and payback period with our interactive calculator.
     icon: tabler:calculator
     type: tool
-    link: "#roi-calculator"
+    link: '#roi-calculator'
     cta: Calculate ROI
   - title: Quality & Certification Report
     description: CE certification documents, ISO 9001 quality management, UV aging test results, and pressure hold test data.
@@ -45,7 +45,5 @@ resources:
 cta:
   title: Hulp nodig bij het vinden van de juiste bron?
   subtitle: Neem contact op met ons team voor persoonlijk advies over productselectie, OEM-partnerschappen of technische specificaties.
-  actions:
-    - variant: primary
-      text: Contact our team
-      href: /contact
+  button: Contact Sales Team
+  link: /contact?source=resources

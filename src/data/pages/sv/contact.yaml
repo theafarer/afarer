@@ -1,4 +1,4 @@
-﻿hero_text:
+hero_text:
   tagline: Kontakt
   title: KONTAKTA OSS
 contact_form:
@@ -16,92 +16,98 @@ contact_form:
     - name: firstName
       label: Förnamn
       row: 1
+      type: select
+      optionsKey: countries
+      step: 1
     - name: lastName
       label: Efternamn
       row: 1
+      type: select
+      options:
+        - value: ''
+          label: Select your estimated volume...
+        - value: sample
+          label: Samples / Prototypes only
+        - value: 5-10
+          label: 5–10 units (Standard MOQ)
+        - value: 100-500
+          label: 100–500 units
+        - value: 500-plus
+          label: 500+ units (Volume pricing)
+      step: 1
     - name: companyName
       label: Företag
       row: 2
+      type: select
+      options:
+        - value: ''
+          label: Select customization type...
+        - value: none
+          label: Standard product (no customization)
+        - value: logo
+          label: Custom Logo / Branding only
+        - value: full
+          label: Full OEM (size, color, graphics, packaging)
+        - value: consultation
+          label: Not sure — need consultation
+      step: 1
     - name: address
       label: Adress
       row: 3
+      type: select
+      options:
+        - value: ''
+          label: Select product category...
+        - value: all
+          label: All products / Full catalog
+        - value: sup
+          label: SUP Boards / Paddleboards
+        - value: safety
+          label: Safety Equipment / Life Vests
+        - value: accessory
+          label: Accessories (pumps, oars, bags)
+      step: 1
     - name: zip
       label: Postnummer
       row: 4
+      step: 2
     - name: country
       label: Land
       row: 4
-      type: select
-      optionsKey: countries
+      step: 2
     - name: email
       label: E-post
       row: 5
-      type: email
+      step: 2
     - name: tel
       label: Telefon
       row: 5
       type: tel
-      withCountryCode: true
+      step: 2
     - name: orderVolume
       label: Uppskattad ordervolym
       row: 6
       type: select
-      options:
-        - value: ''
-          label: Välj uppskattad volym...
-        - value: sample
-          label: Endast prover / prototyper
-        - value: '5-10'
-          label: 50—00 enheter (standard MOQ)
-        - value: '100-500'
-          label: 100—00 enheter
-        - value: '500-plus'
-          label: 500+ enheter (volympris)
+      withCountryCode: true
+      step: 2
     - name: customization
       label: Behöver du anpassning?
       row: 7
-      type: select
-      options:
-        - value: ''
-          label: Välj anpassningstyp...
-        - value: none
-          label: Standardprodukt (utan anpassning)
-        - value: logo
-          label: Endast anpassad logotyp / varumärke
-        - value: full
-          label: Full OEM (storlek, färg, grafik, förpackning)
-        - value: consultation
-          label: Osäker —behöver rådgivning
+      step: 2
     - name: productInterest
       label: Intressanta produktkategorier
       row: 8
-      type: select
-      options:
-        - value: ''
-          label: Välj produktkategori...
-        - value: all
-          label: Alla produkter / full katalog
-        - value: sup
-          label: SUP-brädor / paddleboards
-        - value: SUP
-          label: Uppblåsbara kajaker
-        - value: SUP
-          label: SUP-båtar
-        - value: SUP
-          label: Jollar / tenderbåtar
-        - value: safety
-          label: Säkerhetsutrustning / flytvästar
-        - value: accessory
-          label: Tillbehör (pumpar, åror, väskor)
-
+      step: 2
     - name: subject
       label: Ämne
       row: 9
+      step: 3
     - name: message
       label: Meddelande
       row: 10
       type: textarea
       rows: 6
+      step: 3
 features2_other_ways:
   title: Andra kontaktvägar
   columns: 3
@@ -116,7 +122,7 @@ features2_other_ways:
       description: Mediakit, sponsring och branschsamarbeten.
       icon: tabler:news
     - title: Telefon
-      description: '+86 13305324192'
+      description: +86 13305324192
       icon: tabler:headset
     - title: E-post
       description: info@afarer.com

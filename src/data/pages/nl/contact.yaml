@@ -1,4 +1,4 @@
-﻿hero_text:
+hero_text:
   tagline: Contact
   title: NEEM CONTACT MET ONS OP
 contact_form:
@@ -16,92 +16,98 @@ contact_form:
     - name: firstName
       label: Voornaam
       row: 1
+      type: select
+      optionsKey: countries
+      step: 1
     - name: lastName
       label: Achternaam
       row: 1
+      type: select
+      options:
+        - value: ''
+          label: Select your estimated volume...
+        - value: sample
+          label: Samples / Prototypes only
+        - value: 5-10
+          label: 5–10 units (Standard MOQ)
+        - value: 100-500
+          label: 100–500 units
+        - value: 500-plus
+          label: 500+ units (Volume pricing)
+      step: 1
     - name: companyName
       label: Bedrijf
       row: 2
+      type: select
+      options:
+        - value: ''
+          label: Select customization type...
+        - value: none
+          label: Standard product (no customization)
+        - value: logo
+          label: Custom Logo / Branding only
+        - value: full
+          label: Full OEM (size, color, graphics, packaging)
+        - value: consultation
+          label: Not sure — need consultation
+      step: 1
     - name: address
       label: Adres
       row: 3
+      type: select
+      options:
+        - value: ''
+          label: Select product category...
+        - value: all
+          label: All products / Full catalog
+        - value: sup
+          label: SUP Boards / Paddleboards
+        - value: safety
+          label: Safety Equipment / Life Vests
+        - value: accessory
+          label: Accessories (pumps, oars, bags)
+      step: 1
     - name: zip
       label: Postcode
       row: 4
+      step: 2
     - name: country
       label: Land
       row: 4
-      type: select
-      optionsKey: countries
+      step: 2
     - name: email
       label: E-mail
       row: 5
-      type: email
+      step: 2
     - name: tel
       label: Telefoon
       row: 5
       type: tel
-      withCountryCode: true
+      step: 2
     - name: orderVolume
       label: Geschat bestelvolume
       row: 6
       type: select
-      options:
-        - value: ''
-          label: Selecteer geschat volume...
-        - value: sample
-          label: Alleen monsters / prototypes
-        - value: '5-10'
-          label: 50—00 eenheden (standaard MOQ)
-        - value: '100-500'
-          label: 100—00 eenheden
-        - value: '500-plus'
-          label: 500+ eenheden (volumeprijzen)
+      withCountryCode: true
+      step: 2
     - name: customization
       label: Maatwerk nodig?
       row: 7
-      type: select
-      options:
-        - value: ''
-          label: Selecteer maatwerktype...
-        - value: none
-          label: Standaardproduct (geen maatwerk)
-        - value: logo
-          label: Alleen aangepast logo / branding
-        - value: full
-          label: Volledige OEM (formaat, kleur, graphics, verpakking)
-        - value: consultation
-          label: Niet zeker —advies nodig
+      step: 2
     - name: productInterest
       label: Interessante productcategorieën
       row: 8
-      type: select
-      options:
-        - value: ''
-          label: Selecteer een productcategorie...
-        - value: all
-          label: Alle producten / volledige catalogus
-        - value: sup
-          label: SUP-planken / paddleboards
-        - value: SUP
-          label: Opblaasbare kajaks
-        - value: SUP
-          label: SUP-boten
-        - value: SUP
-          label: Bijboten / tenders
-        - value: safety
-          label: Veiligheidsuitrusting / reddingsvesten
-        - value: accessory
-          label: Accessoires (pompen, riemen, tassen)
-
+      step: 2
     - name: subject
       label: Onderwerp
       row: 9
+      step: 3
     - name: message
       label: Bericht
       row: 10
       type: textarea
       rows: 6
+      step: 3
 features2_other_ways:
   title: Andere contactmogelijkheden
   columns: 3
@@ -116,7 +122,7 @@ features2_other_ways:
       description: Mediapakketten, sponsoring en branche-samenwerking.
       icon: tabler:news
     - title: Telefoon
-      description: '+86 13305324192'
+      description: +86 13305324192
       icon: tabler:headset
     - title: E-mail
       description: info@afarer.com

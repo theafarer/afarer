@@ -1,4 +1,4 @@
-﻿hero_text:
+hero_text:
   tagline: お問い合わせ
   title: お問い合わせ
 contact_form:
@@ -11,97 +11,103 @@ contact_form:
   error_message: 送信中にエラーが発生しました。もう一度お試しいただくか、直接メールをお送りください。
   default_country_code: '+1'
   captcha:
-    label: 'アンチスパム：次の問題を解いてください'
+    label: アンチスパム：次の問題を解いてください
   fields:
     - name: firstName
       label: 名
       row: 1
+      type: select
+      optionsKey: countries
+      step: 1
     - name: lastName
       label: 姓
       row: 1
+      type: select
+      options:
+        - value: ''
+          label: Select your estimated volume...
+        - value: sample
+          label: Samples / Prototypes only
+        - value: 5-10
+          label: 5–10 units (Standard MOQ)
+        - value: 100-500
+          label: 100–500 units
+        - value: 500-plus
+          label: 500+ units (Volume pricing)
+      step: 1
     - name: companyName
       label: 会社名
       row: 2
+      type: select
+      options:
+        - value: ''
+          label: Select customization type...
+        - value: none
+          label: Standard product (no customization)
+        - value: logo
+          label: Custom Logo / Branding only
+        - value: full
+          label: Full OEM (size, color, graphics, packaging)
+        - value: consultation
+          label: Not sure — need consultation
+      step: 1
     - name: address
       label: 住所
       row: 3
+      type: select
+      options:
+        - value: ''
+          label: Select product category...
+        - value: all
+          label: All products / Full catalog
+        - value: sup
+          label: SUP Boards / Paddleboards
+        - value: safety
+          label: Safety Equipment / Life Vests
+        - value: accessory
+          label: Accessories (pumps, oars, bags)
+      step: 1
     - name: zip
       label: 郵便番号
       row: 4
+      step: 2
     - name: country
       label: 国
       row: 4
-      type: select
-      optionsKey: countries
+      step: 2
     - name: email
       label: メールアドレス
       row: 5
-      type: email
+      step: 2
     - name: tel
       label: 電話番号
       row: 5
       type: tel
-      withCountryCode: true
+      step: 2
     - name: orderVolume
       label: 見積もり注文量
       row: 6
       type: select
-      options:
-        - value: ''
-          label: 見積もり数量を選択...
-        - value: sample
-          label: サンプル/プロトタイプのみ
-        - value: '5-10'
-          label: 50–100ユニット (標準MOQ)
-        - value: '100-500'
-          label: 100–500ユニット
-        - value: '500-plus'
-          label: 500+ユニット (数量割引)
+      withCountryCode: true
+      step: 2
     - name: customization
       label: カスタマイズは必要ですか？
       row: 7
-      type: select
-      options:
-        - value: ''
-          label: カスタマイズタイプを選択...
-        - value: none
-          label: 標準製品（カスタマイズなし）
-        - value: logo
-          label: カスタムロゴ/ブランドのみ
-        - value: full
-          label: フルOEM（サイズ、色、グラフィック、パッケージ）
-        - value: consultation
-          label: 不明 — 相談が必要
+      step: 2
     - name: productInterest
       label: 関心のある製品カテゴリ
       row: 8
-      type: select
-      options:
-        - value: ''
-          label: 製品カテゴリを選択...
-        - value: all
-          label: 全製品 / 完全カタログ
-        - value: sup
-          label: SUPボード / パドルボード
-        - value: SUP
-          label: インフレータブルカヤック
-        - value: SUP
-          label: RIBボート
-        - value: SUP
-          label: ディンギー / テンダー
-        - value: safety
-          label: 安全装備 / 救命胴衣
-        - value: accessory
-          label: アクセサリー（ポンプ、オール、バッグ）
-
+      step: 2
     - name: subject
       label: 件名
       row: 9
+      step: 3
     - name: message
       label: メッセージ
       row: 10
       type: textarea
       rows: 6
+      step: 3
 features2_other_ways:
   title: その他の連絡方法
   columns: 3
@@ -116,7 +122,7 @@ features2_other_ways:
       description: メディアキット、スポンサーシップ、業界コラボレーション。
       icon: tabler:news
     - title: 電話
-      description: '+86 13305324192'
+      description: +86 13305324192
       icon: tabler:headset
     - title: メール
       description: info@afarer.com

@@ -1,4 +1,4 @@
-﻿hero_text:
+hero_text:
   tagline: Contacto
   title: PONTE EN CONTACTO
 contact_form:
@@ -7,7 +7,7 @@ contact_form:
   subtitle: Para presupuestos, preguntas técnicas o consultas de colaboración, escríbenos. Respondemos en un día hábil.
   email_to: info@afarer.com
   submit_button: Enviar consulta →Obtener presupuesto
-  success_message: '¡Gracias! Tu mensaje ha llegado a nuestra bandeja de entrada. Responderemos en un día hábil.'
+  success_message: ¡Gracias! Tu mensaje ha llegado a nuestra bandeja de entrada. Responderemos en un día hábil.
   error_message: Algo salió mal al enviar tu mensaje. Inténtalo de nuevo o escríbenos directamente por correo.
   default_country_code: '+1'
   captcha:
@@ -16,91 +16,98 @@ contact_form:
     - name: firstName
       label: Nombre
       row: 1
+      type: select
+      optionsKey: countries
+      step: 1
     - name: lastName
       label: Apellido
       row: 1
+      type: select
+      options:
+        - value: ''
+          label: Select your estimated volume...
+        - value: sample
+          label: Samples / Prototypes only
+        - value: 5-10
+          label: 5–10 units (Standard MOQ)
+        - value: 100-500
+          label: 100–500 units
+        - value: 500-plus
+          label: 500+ units (Volume pricing)
+      step: 1
     - name: companyName
       label: Nombre de la empresa
       row: 2
+      type: select
+      options:
+        - value: ''
+          label: Select customization type...
+        - value: none
+          label: Standard product (no customization)
+        - value: logo
+          label: Custom Logo / Branding only
+        - value: full
+          label: Full OEM (size, color, graphics, packaging)
+        - value: consultation
+          label: Not sure — need consultation
+      step: 1
     - name: address
       label: Dirección
       row: 3
+      type: select
+      options:
+        - value: ''
+          label: Select product category...
+        - value: all
+          label: All products / Full catalog
+        - value: sup
+          label: SUP Boards / Paddleboards
+        - value: safety
+          label: Safety Equipment / Life Vests
+        - value: accessory
+          label: Accessories (pumps, oars, bags)
+      step: 1
     - name: zip
       label: Código postal
       row: 4
+      step: 2
     - name: country
       label: País
       row: 4
-      type: select
-      optionsKey: countries
+      step: 2
     - name: email
       label: Correo electrónico
       row: 5
-      type: email
+      step: 2
     - name: tel
       label: TEL
       row: 5
       type: tel
-      withCountryCode: true
+      step: 2
     - name: orderVolume
       label: Volumen de pedido estimado
       row: 6
       type: select
-      options:
-        - value: ''
-          label: Selecciona tu volumen estimado...
-        - value: sample
-          label: Solo muestras / prototipos
-        - value: '5-10'
-          label: 50—00 unidades (MOQ estándar)
-        - value: '100-500'
-          label: 100—00 unidades
-        - value: '500-plus'
-          label: 500+ unidades (precio por volumen)
+      withCountryCode: true
+      step: 2
     - name: customization
       label: ¿Necesitas personalización?
       row: 7
-      type: select
-      options:
-        - value: ''
-          label: Selecciona el tipo de personalización...
-        - value: none
-          label: Producto estándar (sin personalización)
-        - value: logo
-          label: Solo logotipo / marca personalizada
-        - value: full
-          label: OEM completo (tamaño, color, gráficos, embalaje)
-        - value: consultation
-          label: No estoy seguro —necesito asesoría
+      step: 2
     - name: productInterest
       label: Categorías de producto de interés
       row: 8
-      type: select
-      options:
-        - value: ''
-          label: Selecciona la categoría de producto...
-        - value: all
-          label: Todos los productos / catálogo completo
-        - value: sup
-          label: Tablas de SUP / paddleboards
-        - value: SUP
-          label: SUPs inflables
-        - value: SUP
-          label: Botes SUP
-        - value: SUP
-          label: Botes / auxiliares
-        - value: safety
-          label: Equipos de seguridad / chalecos salvavidas
-        - value: accessory
-          label: Accesorios (bombas, remos, bolsas)
+      step: 2
     - name: subject
       label: Asunto
       row: 9
+      step: 3
     - name: message
       label: Mensaje
       row: 10
       type: textarea
       rows: 6
+      step: 3
 features2_other_ways:
   title: Otras formas de contactarnos
   columns: 3
@@ -115,7 +122,7 @@ features2_other_ways:
       description: Kits de prensa, patrocinios y colaboración en el sector.
       icon: tabler:news
     - title: Teléfono
-      description: '+86 13305324192'
+      description: +86 13305324192
       icon: tabler:headset
     - title: Correo electrónico
       description: info@afarer.com

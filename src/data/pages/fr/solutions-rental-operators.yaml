@@ -1,71 +1,66 @@
 meta:
-  title: 'SUP Rental Fleet Solutions | {SITE}'
-  description: 'High-rotation SUP boards engineered for daily rental use. UV-resistant PVC, reinforced seams, quick-dry materials. Scale your rental business with Afarer.'
-
+  title: Solutions de flotte SUP pour location | {SITE}
+  description: Planches SUP haut-rotation conçues pour la location quotidienne. PVC résistant aux UV, coutures renforcées, matériaux à séchage rapide. Développez votre activité de location avec afarer.
 hero:
-  tagline: Rental Operators
-  title: 'Scale Your Rental Business<br />With Confidence'
-  subtitle: 'High-rotation SUP boards engineered for daily rental use, 365 days a year. Your revenue never takes a day off.'
+  tagline: Opérateurs de Location
+  title: Développez Votre Activité de Location<br />En Toute Confiance
+  subtitle: Planches SUP haut-rotation conçues pour l'utilisation locative quotidienne, 365 jours par an. Vos revenus ne prennent jamais de repos.
   image:
     src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
     alt: Busy rental kiosk with SUP boards ready for guests
-
 features:
-  title: Built for the Rental Grind
-  subtitle: 'Every board is engineered for 500+ rental cycles with minimal maintenance.'
+  title: Conçu pour la Location Intensive
+  subtitle: Chaque planche est conçue pour 500+ cycles de location avec un entretien minimal.
   items:
-    - title: '500+ Rental Cycles'
-      description: 'Tested to survive daily use in saltwater, sun, and sand.'
-      icon: 'tabler:shield-check'
-    - title: 'UV-Resistant Fabric'
-      description: 'No fading or degradation after 1 year of outdoor storage.'
-      icon: 'tabler:sun'
-    - title: 'Reinforced Seams'
-      description: '3x stronger than standard inflatable board construction.'
-      icon: 'tabler:layers-intersect'
-    - title: 'Quick-Dry Materials'
-      description: 'Boards ready for next rental in under 30 minutes.'
-      icon: 'tabler:droplet'
-    - title: 'Stackable Storage'
-      description: 'Space-saving design — store 40% more boards in the same area.'
-      icon: 'tabler:stack'
-    - title: 'Color-Coded Sizes'
-      description: 'Staff grabs the right board instantly with color-coded sizing.'
-      icon: 'tabler:color-swatch'
-
+    - title: 500+ Cycles de Location
+      description: Testée pour résister à l'utilisation quotidienne en eau salée, soleil et sable.
+      icon: tabler:shield-check
+    - title: Tissu Résistant aux UV
+      description: Aucune décoloration ou dégradation après 1 an de stockage extérieur.
+      icon: tabler:sun
+    - title: Joints Renforcés
+      description: 3x plus résistant que la construction standard de planche gonflable.
+      icon: tabler:layers-intersect
+    - title: Matériaux à Séchage Rapide
+      description: Planches prêtes pour la prochaine location en moins de 30 minutes.
+      icon: tabler:droplet
+    - title: Rangement Empilable
+      description: Design gain de place — stockez 40 % de planches supplémentaires dans la même zone.
+      icon: tabler:stack
+    - title: Tailles Codées par Couleur
+      description: Le personnel saisit la bonne planche instantanément grâce au code couleur des tailles.
+      icon: tabler:color-swatch
 stats:
-  title: Operations Metrics
+  title: Métriques Opérationnelles
   stats:
-    - title: Board Turnover
-      amount: '< 5 min'
-    - title: Annual Maintenance
-      amount: '~15 min/board'
-    - title: Parts Dispatch
-      amount: '48h'
-    - title: Defect Rate
-      amount: '< 0.5%'
-
+    - title: Renouvellement des Planches
+      amount: < 5 min
+    - title: Entretien Annuel
+      amount: ~15 min/planche
+    - title: Expédition des Pièces
+      amount: 48h
+    - title: Taux de Défauts
+      amount: < 0,5 %
 fleet_guide:
-  title: Fleet Sizing Guide
-  subtitle: 'Estimate the fleet size and revenue potential for your rental operation.'
+  title: Guide de dimensionnement de flotte
+  subtitle: Estimez la taille de la flotte et le potentiel de revenus pour votre activité de location.
   tiers:
-    - label: Small Kiosk
-      boards: '15-20'
-      revenue: '$XX,XXX/yr'
-    - label: Mid-Size Operation
-      boards: '30-50'
-      revenue: '$XX,XXX/yr'
-    - label: Large Beach Rental
-      boards: '50-100'
-      revenue: '$XXX,XXX/yr'
-
+    - label: Petit Kiosque
+      boards: 15-20
+      revenue: $XX XXX/an
+    - label: Opération Moyenne
+      boards: 30-50
+      revenue: $XX XXX/an
+    - label: Grande Location de Plage
+      boards: 50-100
+      revenue: $XXX XXX/an
 cta:
-  title: 'Ready to scale your rental business?'
-  subtitle: 'Get rental pricing or compare board models for your operation.'
+  title: Prêt à développer votre activité de location ?
+  subtitle: Obtenez des tarifs de location ou comparez les modèles de planches pour votre activité.
   actions:
-    - text: 'Get Rental Pricing'
-      href: '/contact?package=rental'
-      variant: 'primary'
-    - text: 'Compare Board Models'
-      href: '/compare'
-      variant: 'secondary'
+    - text: Obtenir les Tarifs de Location
+      href: /contact?package=rental
+      variant: primary
+    - text: Comparer les Modèles de Planches
+      href: /compare
+      variant: secondary

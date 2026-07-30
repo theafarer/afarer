@@ -1,27 +1,27 @@
-﻿hero_text:
+hero_text:
   tagline: Get a Quote
-  title: 'Anmod om et tilbud<br />til dit projekt'
-  subtitle: 'Fortæl os om dine krav, så svarer vores team med et detaljeret tilbud inden for 2 hverdage.'
+  title: Anmod om et tilbud<br />til dit projekt
+  subtitle: Fortæl os om dine krav, så svarer vores team med et detaljeret tilbud inden for 2 hverdage.
 steps2_process:
   title: How It Works
-  subtitle: 'Fire enkle trin fra forespørgsel til tilbud.'
+  subtitle: Fire enkle trin fra forespørgsel til tilbud.
   items:
     - title: 'Step 1: Submit Your Requirements'
-      description: 'Udfyld formularen nedenfor med din produkttype, mængde og specifikationer. Jo flere detaljer du giver, desto mere nøjagtigt bliver dit tilbud.'
+      description: Udfyld formularen nedenfor med din produkttype, mængde og specifikationer. Jo flere detaljer du giver, desto mere nøjagtigt bliver dit tilbud.
       icon: tabler:file-text
     - title: 'Step 2: We Review & Advise'
-      description: 'Vores ingeniørteam gennemgår dine krav og kan kontakte dig for afklaring. Vi giver anbefalinger om produktkonfiguration og muligheder.'
+      description: Vores ingeniørteam gennemgår dine krav og kan kontakte dig for afklaring. Vi giver anbefalinger om produktkonfiguration og muligheder.
       icon: tabler:users
     - title: 'Step 3: Receive Your Quote'
-      description: 'Du modtager et detaljeret tilbud inklusive enhedspris, MOQ, leveringstid, betalingsbetingelser og forsendelsesmuligheder. Typisk inden for 48 timer.'
+      description: Du modtager et detaljeret tilbud inklusive enhedspris, MOQ, leveringstid, betalingsbetingelser og forsendelsesmuligheder. Typisk inden for 48 timer.
       icon: tabler:currency-dollar
     - title: 'Step 4: Sample & Production'
-      description: 'Efter tilbudsgodkendelse går vi videre til prøveproduktion (hvis relevant) eller direkte til masseproduktion. Regelmæssige opdateringer gennem hele processen.'
+      description: Efter tilbudsgodkendelse går vi videre til prøveproduktion (hvis relevant) eller direkte til masseproduktion. Regelmæssige opdateringer gennem hele processen.
       icon: tabler:building-factory
 content_form:
   tagline: Quotation Form
-  title: 'Fortæl os om dit projekt'
-  subtitle: 'Alle felter med * er påkrævet.'
+  title: Fortæl os om dit projekt
+  subtitle: Alle felter med * er påkrævet.
   fields:
     - name: Product Type
       type: select
@@ -32,10 +32,19 @@ content_form:
         - Inflatable SUP
         - Life Vest
         - Accessory
-        - Custom
     - name: Quantity
       type: text
-      placeholder: e.g. 50 units
+      options:
+        - Diving Center
+        - Fishing
+        - Marine Tourism / Resort
+        - Search & Rescue
+        - Yacht Tender
+        - Commercial Workboat
+        - Government / Military
+        - OEM / Private Label
+        - Personal / Recreational
+        - Other
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -47,10 +56,33 @@ content_form:
       placeholder: e.g. delivery within 90 days
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements
+      options:
+        - No Preference
+        - Marine-Grade PVC (1100 dtex)
+        - Premium Hypalon / CSM
+        - Fiberglass Hull
+        - Aluminum Hull
+    - name: Engine Requirement
+      type: text
+      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+    - name: Customization Required
+      type: text
+      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+    - name: Timeline
+      type: text
+      placeholder: e.g. delivery within 90 days
+    - name: Additional Requirements
+      type: textarea
+      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+    - name: Upload Specification
+      type: file
+      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+    - name: Upload Logo / Artwork
+      type: file
+      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
 cta:
-  title: 'Prefer to discuss by email?'
-  subtitle: 'Send your inquiry directly to our sales team and we will respond within 24 hours.'
+  title: Prefer to discuss by email?
+  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
   actions:
     - variant: primary
       text: Email us directly

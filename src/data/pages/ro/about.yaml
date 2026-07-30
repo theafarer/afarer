@@ -1,22 +1,25 @@
 hero:
   tagline: Despre noi
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-factory-building.webp
+    alt: afarer factory and workshop
   title: Despre afarer
   subtitle: Producător de bărci gonflabile, SUP și echipamente sportive acvatice din 2012. Certificat CE și ISO.
-  cta: Citește povestea noastră
-  image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
-  imageAlt: Fabrica afarer
 stats:
-  - value: "2012"
-    label: Fondată
-  - value: "12.000"
-    label: m² suprafață de producție
-  - value: 50+
-    label: Țări de export
-  - value: ISO 9001
-    label: Certificare
+  title: By the numbers
+  columns: 4
+  stats:
+    - title: Hulls delivered
+      amount: 2,400+
+    - title: Countries shipped
+      amount: '40'
+    - title: Years of combined experience
+      amount: '60'
+    - title: Average warranty response (hours)
+      amount: '24'
 features3_what_we_build:
   title: What we build
-  subtitle: "We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company."
+  subtitle: 'We started in a coastal workshop with one boat and a stubborn belief: marine products should be engineered like they matter, because they do. Today we ship to over 40 countries, but every hull still passes through the same hands that started the company.'
   columns: 3
   isBeforeContent: true
   items:

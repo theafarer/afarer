@@ -1,74 +1,99 @@
-﻿hero:
-  tagline: 'Bilgi Grafiği'
-  title: 'Su Keşif Bilgisi'
+hero:
+  tagline: Bilgi Grafiği
+  title: Su Keşif Bilgisi
   subtitle: |
     Şişme SUP teknolojisi, su güvenliği, bot mühendisliği<br />
     ve macera planlamasını kapsayan yapılandırılmış bir bilgi tabanı.
-  taglineSection: 'Keşfedin. Öğrenin. Güvenle gidin.'
-
+  taglineSection: Keşfedin. Öğrenin. Güvenle gidin.
 clusters:
-  tagline: 'Bilgi Kümeleri'
-  title: 'Konuya göre keşfedin'
-  subtitle: 'Her afarer ürününün arkasındaki teknoloji, güvenlik ve becerilere derinlemesine dalışlar.'
+  tagline: Bilgi Kümeleri
+  title: Konuya göre keşfedin
+  subtitle: Her afarer ürününün arkasındaki teknoloji, güvenlik ve becerilere derinlemesine dalışlar.
   items:
-    - title: 'SUP Bilgisi'
-      description: 'İlk boardınızı seçmekten ileri tur tekniklerine kadar —stand-up paddle hakkında her şey.'
-      icon: 'tabler:lifebuoy'
+    - title: SUP Bilgisi
+      description: İlk boardınızı seçmekten ileri tur tekniklerine kadar —stand-up paddle hakkında her şey.
+      icon: tabler:lifebuoy
       topics:
-        - "İlk şişme SUP'inizi nasıl seçersiniz"
-        - 'Yeni başlayanlar için en iyi SUP boyutu'
-        - 'Paddle board ne kadar zor?'
-        - 'Şişme vs sert board karşılaştırması'
-        - 'SUP güvenlik kontrol listesi'
-    - title: 'Bot Bilgisi'
-      description: "Şişme botlar, SUP'ler, şişme botlar ve kayaklar hakkında teknik rehberler —mühendislik, malzemeler ve kullanım."
-      icon: 'tabler:sailboat'
+        - İlk şişme SUP'inizi nasıl seçersiniz
+        - Yeni başlayanlar için en iyi SUP boyutu
+        - Paddle board ne kadar zor?
+        - Şişme vs sert board karşılaştırması
+        - SUP güvenlik kontrol listesi
+    - title: Bot Bilgisi
+      description: Şişme botlar, SUP'ler, şişme botlar ve kayaklar hakkında teknik rehberler —mühendislik, malzemeler ve kullanım.
+      icon: tabler:sailboat
       topics:
-        - 'Şişme bot türleri açıklandı'
-        - 'PVC vs Hypalon karşılaştırması'
-        - 'SUP vs Şişme Bot karşılaştırması'
-        - 'Drop-stitch teknolojisi derinlemesine'
-        - 'Deniz malzemesi bilimi rehberi'
-    - title: 'Güvenlik Bilgisi'
-      description: 'Her kürekçi için temel güvenlik bilgisi —can yeleği seçiminden hava durumu okumaya ve kendi kendine kurtarma tekniklerine kadar.'
-      icon: 'tabler:shield'
+        - Şişme bot türleri açıklandı
+        - PVC vs Hypalon karşılaştırması
+        - SUP vs Şişme Bot karşılaştırması
+        - Drop-stitch teknolojisi derinlemesine
+        - Deniz malzemesi bilimi rehberi
+    - title: Güvenlik Bilgisi
+      description: Her kürekçi için temel güvenlik bilgisi —can yeleği seçiminden hava durumu okumaya ve kendi kendine kurtarma tekniklerine kadar.
+      icon: tabler:shield
       topics:
-        - 'SUP güvenlik kontrol listesi'
-        - 'Can yeleğine ihtiyacınız var mı?'
-        - 'Okyanus kürek güvenlik rehberi'
-        - 'Şişme kayaklar için nehir güvenliği'
-        - 'Hava durumu ve su koşulu farkındalığı'
-    - title: 'Teknoloji'
-      description: 'afarer ürünlerinin arkasındaki mühendislik —malzemeler, yapım yöntemleri ve kalite testi.'
-      icon: 'tabler:microscope'
+        - SUP güvenlik kontrol listesi
+        - Can yeleğine ihtiyacınız var mı?
+        - Okyanus kürek güvenlik rehberi
+        - Şişme kayaklar için nehir güvenliği
+        - Hava durumu ve su koşulu farkındalığı
+    - title: Teknoloji
+      description: afarer ürünlerinin arkasındaki mühendislik —malzemeler, yapım yöntemleri ve kalite testi.
+      icon: tabler:microscope
       topics:
-        - 'Deniz sınıfı PVC teknolojisi'
-        - 'Drop-stitch çekirdek açıklaması'
-        - 'PSI şişme SUPlar için neden önemlidir'
-        - 'RF kaynağı vs yapıştırıcı birleştirme'
-        - 'Kalite testi ve sertifikasyon'
-
+        - Deniz sınıfı PVC teknolojisi
+        - Drop-stitch çekirdek açıklaması
+        - PSI şişme SUPlar için neden önemlidir
+        - RF kaynağı vs yapıştırıcı birleştirme
+        - Kalite testi ve sertifikasyon
+    - title: SUP Lifestyle & Special Uses
+      description: Specialized SUP activities —yoga, fishing, dogs, families, and travel tips.
+      icon: tabler:heart
+      topics:
+        - SUP yoga and meditation on water
+        - Fishing from an inflatable SUP
+        - Paddle boarding with dogs and kids
+        - Traveling with your SUP by air and car
+        - SUP accessories and gear essentials
+    - title: SUP Comparisons & References
+      description: Side-by-side comparisons to help you make informed decisions.
+      icon: tabler:chart-bar
+      topics:
+        - SUP vs kayak — which is right for you?
+        - PVC vs Hypalon material comparison
+        - Single chamber vs multi-chamber safety
+        - SUP board materials explained
+        - UV printing vs EVA block artwork
 featured_guides:
-  tagline: 'Öne Çıkan Rehberler'
-  title: 'En popüler bilgi kaynakları'
+  tagline: Öne Çıkan Rehberler
+  title: En popüler bilgi kaynakları
   items:
-    - title: 'SUP Temelleri'
-      href: '/learn/sup'
-    - title: 'Şişme vs Sert Board'
-      href: '/compare/inflatable-vs-hardboard'
-    - title: 'Su Güvenlik Rehberi'
-      href: '/learn/water-safety'
-    - title: 'Malzeme Referansı'
-      href: '/learn/materials'
-    - title: 'SUP Boyut Rehberi'
-      href: '/size-guide'
-
+    - title: SUP Temelleri
+      href: /learn/sup
+    - title: Şişme vs Sert Board
+      href: /compare/inflatable-vs-hardboard
+    - title: Su Güvenlik Rehberi
+      href: /learn/water-safety
+    - title: Malzeme Referansı
+      href: /learn/materials
+    - title: SUP Boyut Rehberi
+      href: /size-guide
+    - title: SUP Size Guide
+      href: /guides/sup-size-guide
+    - title: SUP Tech Center
+      href: /research
+    - title: SUP Maintenance
+      href: /guides/sup-maintenance
+    - title: Touring Guide
+      href: /guides/sup-for-touring
+    - title: Paddle Techniques
+      href: /guides/paddling-techniques
 cta:
-  title: 'Keşfetmeye başlayın'
-  subtitle: 'Bilgi tabanımıza dalın ve bir sonraki su maceranız için ihtiyacınız olan bilgileri alın.'
+  title: Keşfetmeye başlayın
+  subtitle: Bilgi tabanımıza dalın ve bir sonraki su maceranız için ihtiyacınız olan bilgileri alın.
   actions:
     - variant: primary
-      text: 'Tüm rehberlere göz atın'
-      href: '/academy'
-    - text: 'Bilgi Grafiğini Keşfedin'
-      href: '/knowledge'
+      text: Tüm rehberlere göz atın
+      href: /academy
+    - text: Bilgi Grafiğini Keşfedin
+      href: /knowledge

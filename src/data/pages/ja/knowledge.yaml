@@ -1,74 +1,99 @@
-﻿hero:
-  tagline: '知識グラフ'
-  title: '水探索の知識'
+hero:
+  tagline: 知識グラフ
+  title: 水探索の知識
   subtitle: |
     インフレータブルSUP技術、水上安全、<br />
     ボート工学、冒険計画をカバーする構造化された知識ベース。
-  taglineSection: '探検する。学ぶ。自信を持って出かけよう。'
-
+  taglineSection: 探検する。学ぶ。自信を持って出かけよう。
 clusters:
-  tagline: '知識クラスター'
-  title: 'トピック別に探す'
-  subtitle: 'アクアフェアラーのすべての製品の背後にある技術、安全性、スキルへの深掘り。'
+  tagline: 知識クラスター
+  title: トピック別に探す
+  subtitle: アクアフェアラーのすべての製品の背後にある技術、安全性、スキルへの深掘り。
   items:
-    - title: 'SUP知識'
-      description: '最初のボードの選び方から高度なツーリングテクニックまで — スタンドアップパドルボーディングのすべて。'
-      icon: 'tabler:lifebuoy'
+    - title: SUP知識
+      description: 最初のボードの選び方から高度なツーリングテクニックまで — スタンドアップパドルボーディングのすべて。
+      icon: tabler:lifebuoy
       topics:
-        - '初めてのインフレータブルSUPの選び方'
-        - '初心者に最適なSUPサイズ'
-        - 'パドルボーディングの難易度は？'
-        - 'インフレータブル vs ハードボード比較'
-        - 'SUP安全チェックリスト'
-    - title: 'ボート知識'
-      description: 'インフレータブルボート、SUP、ディンギー、カヤックに関する技術ガイド — 工学、材料、操作。'
-      icon: 'tabler:sailboat'
+        - 初めてのインフレータブルSUPの選び方
+        - 初心者に最適なSUPサイズ
+        - パドルボーディングの難易度は？
+        - インフレータブル vs ハードボード比較
+        - SUP安全チェックリスト
+    - title: ボート知識
+      description: インフレータブルボート、SUP、ディンギー、カヤックに関する技術ガイド — 工学、材料、操作。
+      icon: tabler:sailboat
       topics:
-        - 'インフレータブルボートの種類説明'
-        - 'PVC vs ハイパロン比較'
-        - 'SUP vs ディンギー比較'
-        - 'ドロップステッチ技術の深掘り'
-        - '海洋材料科学ガイド'
-    - title: '安全知識'
-      description: 'すべてのパドラーのための必須安全知識 — PFDの選択から天候の読み方、自己救助テクニックまで。'
-      icon: 'tabler:shield'
+        - インフレータブルボートの種類説明
+        - PVC vs ハイパロン比較
+        - SUP vs ディンギー比較
+        - ドロップステッチ技術の深掘り
+        - 海洋材料科学ガイド
+    - title: 安全知識
+      description: すべてのパドラーのための必須安全知識 — PFDの選択から天候の読み方、自己救助テクニックまで。
+      icon: tabler:shield
       topics:
-        - 'SUP安全チェックリスト'
-        - 'ライフジャケットは必要ですか？'
-        - '海洋パドリング安全ガイド'
-        - 'インフレータブルカヤックの川の安全'
-        - '天候と水の状態の認識'
-    - title: 'テクノロジー'
-      description: 'アクアフェアラー製品の背後にあるエンジニアリング — 材料、製造方法、品質テスト。'
-      icon: 'tabler:microscope'
+        - SUP安全チェックリスト
+        - ライフジャケットは必要ですか？
+        - 海洋パドリング安全ガイド
+        - インフレータブルカヤックの川の安全
+        - 天候と水の状態の認識
+    - title: テクノロジー
+      description: アクアフェアラー製品の背後にあるエンジニアリング — 材料、製造方法、品質テスト。
+      icon: tabler:microscope
       topics:
-        - 'マリングレードPVC技術'
-        - 'ドロップステッチコアの説明'
-        - 'インフレータブルSUPにPSIが重要な理由'
-        - 'RF溶着 vs 接着剤接合'
-        - '品質テストと認証'
-
+        - マリングレードPVC技術
+        - ドロップステッチコアの説明
+        - インフレータブルSUPにPSIが重要な理由
+        - RF溶着 vs 接着剤接合
+        - 品質テストと認証
+    - title: SUP Lifestyle & Special Uses
+      description: Specialized SUP activities —yoga, fishing, dogs, families, and travel tips.
+      icon: tabler:heart
+      topics:
+        - SUP yoga and meditation on water
+        - Fishing from an inflatable SUP
+        - Paddle boarding with dogs and kids
+        - Traveling with your SUP by air and car
+        - SUP accessories and gear essentials
+    - title: SUP Comparisons & References
+      description: Side-by-side comparisons to help you make informed decisions.
+      icon: tabler:chart-bar
+      topics:
+        - SUP vs kayak — which is right for you?
+        - PVC vs Hypalon material comparison
+        - Single chamber vs multi-chamber safety
+        - SUP board materials explained
+        - UV printing vs EVA block artwork
 featured_guides:
-  tagline: '注目のガイド'
-  title: '最も人気のある知識リソース'
+  tagline: 注目のガイド
+  title: 最も人気のある知識リソース
   items:
-    - title: 'SUPの基礎'
-      href: '/learn/sup'
-    - title: 'インフレータブル vs ハードボード'
-      href: '/compare/inflatable-vs-hardboard'
-    - title: '水上安全ガイド'
-      href: '/learn/water-safety'
-    - title: '材料リファレンス'
-      href: '/learn/materials'
-    - title: 'SUPサイズガイド'
-      href: '/size-guide'
-
+    - title: SUPの基礎
+      href: /learn/sup
+    - title: インフレータブル vs ハードボード
+      href: /compare/inflatable-vs-hardboard
+    - title: 水上安全ガイド
+      href: /learn/water-safety
+    - title: 材料リファレンス
+      href: /learn/materials
+    - title: SUPサイズガイド
+      href: /size-guide
+    - title: SUP Size Guide
+      href: /guides/sup-size-guide
+    - title: SUP Tech Center
+      href: /research
+    - title: SUP Maintenance
+      href: /guides/sup-maintenance
+    - title: Touring Guide
+      href: /guides/sup-for-touring
+    - title: Paddle Techniques
+      href: /guides/paddling-techniques
 cta:
-  title: '探検を始めよう'
-  subtitle: '知識ベースに飛び込んで、次の水の冒険に必要な情報を入手しましょう。'
+  title: 探検を始めよう
+  subtitle: 知識ベースに飛び込んで、次の水の冒険に必要な情報を入手しましょう。
   actions:
     - variant: primary
-      text: 'すべてのガイドを見る'
-      href: '/academy'
-    - text: '知識グラフを探検'
-      href: '/knowledge'
+      text: すべてのガイドを見る
+      href: /academy
+    - text: 知識グラフを探検
+      href: /knowledge

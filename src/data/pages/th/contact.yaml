@@ -9,98 +9,105 @@ contact_form:
   submit_button: ส่งคำถาม → ขอใบเสนอราคา
   success_message: ขอบคุณ! ข้อความของคุณถึงกล่องจดหมายของเราแล้ว เราจะตอบกลับภายในหนึ่งวันทำการ
   error_message: เกิดข้อผิดพลาดในการส่งข้อความของคุณ กรุณาลองอีกครั้งหรือส่งอีเมลถึงเราโดยตรง
-  default_country_code: "+1"
+  default_country_code: '+1'
   captcha:
-    label: "ป้องกันสแปม: กรุณาแก้ปัญหาต่อไปนี้"
+    label: 'ป้องกันสแปม: กรุณาแก้ปัญหาต่อไปนี้'
   fields:
     - name: firstName
       label: ชื่อ
       row: 1
+      type: select
+      optionsKey: countries
+      step: 1
     - name: lastName
       label: นามสกุล
       row: 1
+      type: select
+      options:
+        - value: ''
+          label: Select your estimated volume...
+        - value: sample
+          label: Samples / Prototypes only
+        - value: 5-10
+          label: 5–10 units (Standard MOQ)
+        - value: 100-500
+          label: 100–500 units
+        - value: 500-plus
+          label: 500+ units (Volume pricing)
+      step: 1
     - name: companyName
       label: ชื่อบริษัท
       row: 2
+      type: select
+      options:
+        - value: ''
+          label: Select customization type...
+        - value: none
+          label: Standard product (no customization)
+        - value: logo
+          label: Custom Logo / Branding only
+        - value: full
+          label: Full OEM (size, color, graphics, packaging)
+        - value: consultation
+          label: Not sure — need consultation
+      step: 1
     - name: address
       label: ที่อยู่
       row: 3
+      type: select
+      options:
+        - value: ''
+          label: Select product category...
+        - value: all
+          label: All products / Full catalog
+        - value: sup
+          label: SUP Boards / Paddleboards
+        - value: safety
+          label: Safety Equipment / Life Vests
+        - value: accessory
+          label: Accessories (pumps, oars, bags)
+      step: 1
     - name: zip
       label: รหัสไปรษณีย์
       row: 4
+      step: 2
     - name: country
       label: ประเทศ
       row: 4
-      type: select
-      optionsKey: countries
+      step: 2
     - name: email
       label: อีเมล
       row: 5
-      type: email
+      step: 2
     - name: tel
       label: โทรศัพท์
       row: 5
       type: tel
-      withCountryCode: true
+      step: 2
     - name: orderVolume
       label: ปริมาณการสั่งซื้อโดยประมาณ
       row: 6
       type: select
-      options:
-        - value: ฝ่ายบริการลูกค้า
-          label: เลือกปริมาณโดยประมาณ...
-        - value: sample
-          label: เฉพาะตัวอย่าง / ต้นแบบ
-        - value: 5-10
-          label: 50–100 หน่วย (MOQ มาตรฐาน)
-        - value: 100-500
-          label: 100–500 หน่วย
-        - value: 500-plus
-          label: 500+ หน่วย (ราคาตามปริมาณ)
+      withCountryCode: true
+      step: 2
     - name: customization
       label: ต้องการปรับแต่งหรือไม่?
       row: 7
-      type: select
-      options:
-        - value: ฝ่ายสนับสนุนทางเทคนิค
-          label: เลือกประเภทการปรับแต่ง...
-        - value: none
-          label: สินค้ามาตรฐาน (ไม่ปรับแต่ง)
-        - value: logo
-          label: เฉพาะโลโก้ / แบรนด์ที่กำหนดเอง
-        - value: full
-          label: OEM เต็มรูปแบบ (ขนาด สี กราฟิก บรรจุภัณฑ์)
-        - value: consultation
-          label: ไม่แน่ใจ — ต้องการคำปรึกษา
+      step: 2
     - name: productInterest
       label: หมวดหมู่สินค้าที่สนใจ
       row: 8
-      type: select
-      options:
-        - value: ฝ่ายขาย
-          label: เลือกหมวดหมู่สินค้า...
-        - value: all
-          label: สินค้าทั้งหมด / แคตตาล็อกทั้งหมด
-        - value: sup
-          label: บอร์ด SUP / บอร์ดพาย
-        - value: SUP
-          label: เรือคายัคเป่าลม
-        - value: SUP
-          label: เรือ SUP
-        - value: SUP
-          label: เรือดิงกี้ / เรือเทนเดอร์
-        - value: safety
-          label: อุปกรณ์นิรภัย / เสื้อชูชีพ
-        - value: accessory
-          label: อุปกรณ์เสริม (ปั๊ม, ไม้พาย, กระเป๋า)
+      step: 2
     - name: subject
       label: หัวข้อ
       row: 9
+      step: 3
     - name: message
       label: ข้อความ
       row: 10
       type: textarea
       rows: 6
+      step: 3
 features2_other_ways:
   title: ช่องทางอื่นในการติดต่อเรา
   columns: 3
