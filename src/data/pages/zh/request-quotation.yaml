@@ -23,31 +23,63 @@ content_form:
   title: 告訴我們您的項目
   subtitle: 帶 * 的字段為必填項。
   fields:
-    - name: Product Type
+    - name: 產品類別
       type: select
       options:
-        - SUP 艇
-        - 充氣艇
+        - SUP 槳板
+        - 充氣 SUP
         - SUP 板
-        - 充氣皮划艇
         - 救生衣
-        - Accessory
-        - Custom
-    - name: Quantity
+        - 船用配件
+        - 定製 OEM/ODM
+    - name: 應用領域
+      type: select
+      options:
+        - 潛水中心
+        - 釣魚
+        - 海洋旅遊 / 度假村
+        - 搜索與救援
+        - 遊艇接駁
+        - 商業工作船
+        - 政府 / 軍用
+        - OEM / 貼牌
+        - 個人 / 休閒
+        - 其他
+    - name: 數量
       type: text
-      placeholder: e.g. 50 units
-    - name: Target Market
+      placeholder: 例如 50 件
+    - name: 目標市場
       type: text
-      placeholder: e.g. Europe, North America, Middle East
-    - name: Customization Needed
+      placeholder: 例如歐洲、北美、中東
+    - name: 送達國家
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
+      placeholder: 例如意大利、阿聯酋、美國、澳大利亞
+    - name: 材料偏好
+      type: select
+      options:
+        - 無偏好
+        - 船舶級 PVC（1100 dtex）
+        - 高級 Hypalon / CSM
+        - 玻璃鋼船體
+        - 鋁合金船體
+    - name: 引擎需求
       type: text
-      placeholder: e.g. delivery within 90 days
-    - name: Additional Requirements
+      placeholder: 例如 60 HP 舷外機、無引擎、雙 115 HP
+    - name: 所需定製
+      type: text
+      placeholder: 例如定製顏色、品牌/標誌、包裝、特殊配件
+    - name: 時間線
+      type: text
+      placeholder: 例如 90 天內交貨
+    - name: 其他要求
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements
+      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+    - name: 上傳規格書
+      type: file
+      placeholder: 上傳您的規格表、圖紙或參考文件（PDF、DWG、DXF）
+    - name: 上傳標誌 / 設計稿
+      type: file
+      placeholder: 上傳您的標誌或設計稿用於定製品牌（AI、EPS、PNG）
 cta:
   title: 更傾向於通過電子郵件討論？
   subtitle: 直接將您的詢價發送給我們的銷售團隊，我們將在 24 小時內回覆。

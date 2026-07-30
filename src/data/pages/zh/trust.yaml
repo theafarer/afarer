@@ -12,7 +12,7 @@ stats:
   stats:
     - title: CE認證
       description: 所有休閒產品符合歐盟安全標準
-    - title: ISO 9001
+    - title: ""
       description: 自2012年起的質量管理體系
     - title: BSCI與REACH
       description: 道德製造和材料合規
@@ -25,9 +25,9 @@ features3_certifications:
   isBeforeContent: true
   items:
     - title: CE認證
-      description: 所有afarer SUP、皮艇、小艇和RIB均符合歐洲休閒船艇CE安全標準。每件產品在出廠前都經過壓力、浮力和負載測試。
+      description: All afarer SUPs meet the European CE safety standard for recreational use. Each product undergoes pressure, buoyancy, and load testing before leaving the factory.
       icon: tabler:certificate
-    - title: ISO 9001
+    - title: ""
       description: 我們12,000平方米的青島工廠在ISO 9001質量管理體系下運行。每個生產批次都可追溯、有記錄和經過檢驗。
       icon: tabler:clipboard-check
     - title: BSCI社會合規
@@ -45,15 +45,15 @@ features3_certifications:
 testimonials:
   tagline: 客戶信任
   title: 客戶評價
-  subtitle: 從初次劃槳者到專業船隊運營商——看看他們為什麼信任afarer。
+  subtitle: 從初次划槳者到專業船隊運營商——了解他們為何信賴 afarer。
   items:
-    - content: 我們為整個租賃船隊配備了afarer SUP。兩個季節，零故障。CE認證使保險審批順利進行。
+    - content: We outfitted our entire rental fleet with afarer SUPs. Two seasons in, zero failures. The CE certification made insurance approval seamless.
       name: Marco V.
       title: 旅遊運營商，克羅地亞
     - content: 作為首次買家，我擔心質量問題。他們分享的ISO文件和測試報告給了我完全的信心。
       name: James T.
       title: SUP Explorer 11擁有者，加拿大
-    - content: 我們與afarer合作採購沿海巡邏艇。他們的QC流程每個批次都一致——這種可靠性在關鍵任務中至關重要。
+    - content: We work with afarer for our coastal patrol units. Their QC process is consistent across every batch —that reliability matters in mission-critical operations.
       name: Andres中校
       title: 海軍採購，菲律賓
 steps2_manufacturing:
@@ -75,12 +75,58 @@ steps2_manufacturing:
 factory_audit:
   title: 工廠審核
   subtitle: 歡迎隨時蒞臨工廠實地考察。
+  stats:
+    - value: 12,000 m²
+      label: Production Facility
+    - value: 200+
+      label: Skilled Workers
+    - value: 15,000+
+      label: Annual Unit Capacity
+    - value: BSCI
+      label: Social Compliance
+  highlights:
+    - title: BSCI 認證
+      desc: amfori BSCI 社會合規認證——道德勞工、安全條件、環境責任。
+      link: /certifications
+    - title: 歡迎審核
+      desc: 我們歡迎客戶工廠審核。預約參觀或虛擬導覽我們的青島生產線。
+      link: /factory
+    - title: 全程可追溯
+      desc: 每個生產批次均有記錄和可追溯——從原材料批號到最終 QC 簽署。
+    - title: ISO 9001:2015
+      desc: Quality management system certified by SGS. Our processes meet international manufacturing standards.
+      link: /certifications
 warranty_section:
   title: 保修政策
   subtitle: 全面的產品保修服務。
+  items:
+    - title: 2 年產品保修
+      desc: All afarer products carry a 2-year warranty against manufacturing defects — seam failure, valve defects, and material delamination under normal use.
+    - title: 終身零件支援
+      desc: Genuine replacement parts — valves, repair kits, fins, D-rings — available for all models. We maintain moulds and tooling for a minimum of 5 years after production end.
+    - title: 48 小時索賠響應
+      desc: Warranty claims acknowledged within 48 hours. Replacement boards shipped within 10 business days for approved claims.
+    - title: 全球維修網絡
+      desc: Authorised repair centres in 15+ countries. Field repair kits available for remote operations. DIY repair guides for minor damage.
+    - title: OEM 客戶支援
+      desc: Dedicated account managers for B2B partners. Quarterly business reviews, inventory planning, and co-branded marketing support.
+    - title: 認證文件包
+      desc: Full compliance documentation provided with every shipment — CE Declaration, test reports, material safety data sheets.
+      link: /contact
 trust_resources:
   title: 信任資源
   subtitle: 認證證書和檢測報告。
+  items:
+    - title: 認證組合
+      desc: CE, ISO 9001, BSCI, REACH, RoHS, AS 1799 certificates in one package.
+    - title: QC 測試標準報告
+      desc: 24 小時壓力保持測試、ISO UV 老化測試、拉伸強度驗證——完整方法。
+    - title: 工廠概況與審核報告
+      desc: 12,000 m² 設施概覽，含生產線照片和第三方審核摘要。
+    - title: 保修政策文件
+      desc: 完整保修條款、索賠流程和更換零件定價。
+  cta_text: 申請信任資源
+  cta_link: /contact
 faqs_sup:
   title: SUP板常見問題
   subtitle: 關於我們站立式槳板的常見問題。
@@ -101,6 +147,20 @@ faqs_sup:
 faqs_materials:
   title: 材料常見問題
   subtitle: 關於材料的常見疑問。
+  columns: 2
+  items:
+    - title: What materials are used in afarer inflatable SUPs?
+      description: We use military-grade PVC (1100 denier) with UV-stabilized, abrasion-resistant construction, compliant with EU REACH and RoHS regulations.
+    - title: How long do inflatable SUPs last?
+      description: With proper care, a quality PVC inflatable SUP lasts 5—0 years. Regular cleaning, UV protection, and proper storage significantly extend service life.
+    - title: What maintenance is required for an inflatable SUP?
+      description: Basic maintenance includes rinsing with fresh water after each use (especially in saltwater), drying before storage, checking valve seals annually, and avoiding prolonged sun exposure when not in use.
+    - title: Can inflatable SUPs be used in saltwater?
+      description: Yes. All afarer inflatable SUPs are designed for both freshwater and saltwater use. We recommend rinsing with fresh water and drying thoroughly after saltwater exposure.
+    - title: How do I store an inflatable SUP?
+      description: Deflate, clean, and dry the board completely before storage. Roll loosely (avoid tight folds), store in a cool dry place away from direct sunlight, and keep off concrete floors to prevent moisture wicking.
+    - title: What is the weight capacity of afarer inflatable SUPs?
+      description: Weight capacities range from 100 kg for our smallest models to over 200 kg for larger boards. Each product page lists the maximum load rating for your specific model.
 cta:
   title: 想親自查看認證嗎？
   subtitle: 索取我們的認證組合、工廠審核報告或材料合規文件。無需NDA。

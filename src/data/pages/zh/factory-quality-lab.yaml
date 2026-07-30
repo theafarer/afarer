@@ -2,30 +2,27 @@ hero:
   tagline: 品質管制實驗室
   title: 測試實驗室與品質保證
   subtitle: 獨立品質實驗室，遵循 ISO 9001 流程 — 每件產品出廠前均經測試
-
-intro: Afarer 設有獨立於生產部門的專屬品質管制實驗室。每批原材料及每艘成品船在放行前，均須通過文件化的檢驗流程。我們的品管團隊直接向管理層報告，確保品質決策的公正性。
-
+intro: afarer operates a dedicated quality control laboratory that operates independently from production. Every batch of raw material and every finished boat passes through documented inspection protocols before release. Our QC team reports directly to management, ensuring impartial quality decisions.
 highlights:
   - value: 100%
     label: 產品經壓力測試
-    detail: 每個氣室、每艘船
+    detail: Every chamber, every boat
   - value: 48 小時
     label: 氣密測試時長
     detail: 在 1.25 倍額定壓力下
-  - value: '<5%'
+  - value: "&lt;5%"
     label: 最大允許壓降
     detail: 在 24 小時保持期間
   - value: AQL 2.5
     label: 主要缺陷閾值
     detail: 依 ISO 2859 抽樣
-
 test_procedures:
   - title: 原材料檢驗
     description: 每批進廠的 PVC、Hypalon、織點芯材織物及五金配件均須在驗收前進行測試。驗證拉伸強度（ASTM D751）、抗撕裂強度（ISO 4674）及 UV 抗性。不合格材料予以隔離並退貨。
     standards:
       - ASTM D751（拉伸）
       - ISO 4674（撕裂）
-      - ISO 4892（UV）
+      - ISO 4892 (UV)
   - title: 製程品管檢查點
     description: 生產操作員在各階段進行自檢。品管稽核員在輪班期間進行隨機抽樣。每 50 件進行一次焊接剝離測試。每 20 片面板進行一次尺寸檢查。
     standards:
@@ -38,11 +35,10 @@ test_procedures:
       - ISO 6185
       - CE 2013/53/EU
   - title: 載重與平衡測試
-    description: 成品船在最大額定載重下進行穩定性、乾舷高度及操控性測試。每艘船在最終檢驗核准前均須通過水上測試。
+    description: Completed boats are tested at maximum rated capacity for stability, freeboard, and handling. Each vessel undergoes water testing before final inspection approval.
     standards:
       - ISO 12217
       - CE 2013/53/EU
-
 equipment:
   - name: 萬能試驗機（拉伸）
     spec: 5 kN，符合 ASTM D751
@@ -55,6 +51,6 @@ equipment:
   - name: 剝離測試機（焊接）
     spec: 電動，50 N 容量
   - name: 溫度試驗箱
-    spec: -40°C 至 +100°C
+    spec: "-40°C 至 +100°C"
   - name: 洩漏檢測槽
     spec: 6 m × 2 m，附照明

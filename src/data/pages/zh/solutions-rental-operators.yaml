@@ -1,71 +1,66 @@
 meta:
-  title: 'SUP 租賃船隊方案 | {SITE}'
-  description: '為每日租賃使用設計的高週轉 SUP 板。抗 UV 面料、加強接縫、快乾材料。與 Afarer 一起擴展您的租賃業務。'
-
+  title: SUP 租賃船隊方案 | {SITE}
+  description: 為每日租賃使用設計的高週轉 SUP 板。抗 UV 面料、加強接縫、快乾材料。與 Afarer 一起擴展您的租賃業務。
 hero:
   tagline: 租賃業者
-  title: '自信擴展您的<br />租賃業務'
-  subtitle: '專為全年 365 天每日租賃使用設計的高週轉 SUP 板。您的收入從不休息。'
+  title: 自信擴展您的<br />租賃業務
+  subtitle: 專為全年 365 天每日租賃使用設計的高週轉 SUP 板。您的收入從不休息。
   image:
     src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
     alt: SUP 板已備妥的繁忙租賃服務站
-
 features:
   title: 專為租賃高強度使用設計
-  subtitle: '每張板經過工程設計，可承受 500+ 租賃循環，維護需求極低。'
+  subtitle: 每張板經過工程設計，可承受 500+ 租賃循環，維護需求極低。
   items:
-    - title: '500+ 租賃循環'
-      description: '經過測試，可在海水、陽光及沙灘的日常使用中存活。'
-      icon: 'tabler:shield-check'
-    - title: '抗 UV 面料'
-      description: '室外存放 1 年後不褪色、不劣化。'
-      icon: 'tabler:sun'
-    - title: '加強接縫'
-      description: '強度為標準充氣板結構的 3 倍。'
-      icon: 'tabler:layers-intersect'
-    - title: '快乾材料'
-      description: '板身在 30 分鐘內即可準備好下一次租賃。'
-      icon: 'tabler:droplet'
-    - title: '可堆疊存放'
-      description: '節省空間設計 — 相同面積可多存放 40% 板身。'
-      icon: 'tabler:stack'
-    - title: '顏色編碼尺寸'
-      description: '員工透過顏色編碼尺寸即時拿取正確板身。'
-      icon: 'tabler:color-swatch'
-
+    - title: 500+ 租賃循環
+      description: 經過測試，可在海水、陽光及沙灘的日常使用中存活。
+      icon: tabler:shield-check
+    - title: 抗 UV 面料
+      description: 室外存放 1 年後不褪色、不劣化。
+      icon: tabler:sun
+    - title: 加強接縫
+      description: 強度為標準充氣板結構的 3 倍。
+      icon: tabler:layers-intersect
+    - title: 快乾材料
+      description: 板身在 30 分鐘內即可準備好下一次租賃。
+      icon: tabler:droplet
+    - title: 可堆疊存放
+      description: 節省空間設計 — 相同面積可多存放 40% 板身。
+      icon: tabler:stack
+    - title: 顏色編碼尺寸
+      description: 員工透過顏色編碼尺寸即時拿取正確板身。
+      icon: tabler:color-swatch
 stats:
   title: 營運指標
   stats:
     - title: 板身週轉時間
-      amount: '< 5 分鐘'
+      amount: < 5 分鐘
     - title: 年度維護
-      amount: '每板約 15 分鐘'
+      amount: ~15 min/board
     - title: 備品發貨
-      amount: '48 小時'
+      amount: 48 小時
     - title: 瑕疵率
-      amount: '< 0.5%'
-
+      amount: < 0.5%
 fleet_guide:
   title: 船隊規模指南
-  subtitle: '估算租賃業務的船隊規模與營收潛力。'
+  subtitle: 估算您租賃業務的船隊規模和收入潛力。
   tiers:
     - label: 小型服務站
-      boards: '15-20'
-      revenue: '$XX,XXX/年'
+      boards: 15-20
+      revenue: $XX,XXX/年
     - label: 中型營運
-      boards: '30-50'
-      revenue: '$XX,XXX/年'
+      boards: 30-50
+      revenue: $XX,XXX/年
     - label: 大型海灘租賃
-      boards: '50-100'
-      revenue: '$XXX,XXX/年'
-
+      boards: 50-100
+      revenue: $XXX,XXX/年
 cta:
-  title: '準備擴展您的租賃業務？'
-  subtitle: '取得租賃價格或比較適合您營運的板型。'
+  title: 準備擴展您的租賃業務？
+  subtitle: 取得租賃價格或比較適合您營運的板型。
   actions:
-    - text: '取得租賃價格'
-      href: '/contact?package=rental'
-      variant: 'primary'
-    - text: '比較板型'
-      href: '/compare'
-      variant: 'secondary'
+    - text: 取得租賃價格
+      href: /contact?package=rental
+      variant: primary
+    - text: 比較板型
+      href: /compare
+      variant: secondary

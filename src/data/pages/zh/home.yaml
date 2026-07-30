@@ -1,22 +1,26 @@
 hero:
-  tagline: 中國充氣船艇製造商 — 自2012年
+  tagline: 高端充氣 SUP 製造商與 OEM 合作夥伴
   title: |
-    充氣船艇工廠 — <br class="hidden sm:inline" />
-    OEM/ODM <span class="text-accent dark:text-white">製造商</span>
+    高端充氣 SUP 製造商<br />&amp; OEM 合作夥伴
   subtitle: |
-    <span class="hidden sm:inline"><span class="font-semibold">afarer</span> 是一家位於中國的 OEM/ODM 製造商，專業生產 CE 認證的充氣船、SUP、皮划艇、SUP 及海洋安全設備。</span>
-    <span class="block mb-1 sm:hidden font-bold text-blue-600">afarer：自 2012 年起值得信賴的工廠。</span>
-    為 50 多個國家的 B2B 客戶提供批量批發、貼牌、定製設計及完整的供應鏈解決方案。
+    為全球品牌、度假村、槳板俱樂部及水上運動企業<br />
+    設計和製造充氣槳板。<br />
+    擁有 12,000m² 廠房和 CE 認證產能的 OEM/ODM 合作夥伴。
+  taglineSection: 為度假村、俱樂部、零售商和水上品牌提供商用級充氣 SUP 解決方案。
   actions:
     - variant: primary
-      text: 瀏覽產品
-      href: /products
-      icon: tabler:shopping-bag
-    - text: 瞭解更多
-      href: "#features"
+      text: 獲取 OEM 報價
+      href: /oem-odm-manufacturer
+      icon: tabler:package
+    - text: 下載目錄
+      href: /resources/download-catalog
+      icon: tabler:file-text
+    - text: 探索 SUP 方案
+      href: /solutions
+      icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
-    alt: afarer 首頁圖片
+    alt: afarer 充氣 SUP 槳板在熱帶度假村水域——商用船隊
 who_we_serve:
   tagline: 我們的客戶
   title: 為每個水上業務提供完整的 SUP 解決方案
@@ -102,13 +106,12 @@ oem_section:
   cta: 開始您的品牌之旅
   cta_link: /oem-odm-manufacturer
 cta:
-  title: |
-    準備好開始您的 <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">OEM/ODM 項目</span>？
-  subtitle: 告訴我們您的需求，我們將在一個工作日內提供定製報價、最小起訂量詳情和交貨期。
+  title: 準備好開展您的水上運動業務了嗎？
+  subtitle: 無論是創辦俱樂部、裝備度假村，還是打造品牌——我們隨時為您提供幫助。
   actions:
     - variant: primary
-      text: 獲取報價
+      text: 啟動您的項目
       href: /contact
-      icon: tabler:message-circle
-    - text: 參觀工廠
-      href: /factory
+      icon: tabler:send
+    - text: 下載 OEM 指南
+      href: /resources/download-catalog

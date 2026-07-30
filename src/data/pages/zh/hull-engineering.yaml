@@ -1,85 +1,81 @@
 meta:
-  title: '船體工程工作室 — CAD、有限元素分析與客製 RIB 船體設計 | {SITE}'
-  description: '探索我們的船體工程工作室，了解 CAD 設計、有限元素分析（FEA）及客製 HDPE/鋁合金/玻璃鋼船體開發。聯絡我們的工程團隊，啟動您的下一個 RIB 專案。'
-back_text: '返回研發中心'
-home_label: '首頁'
-
+  title: Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
+  description: Explore our Hull Engineering Studio for CAD design, finite element analysis (FEA), and custom HDPE/aluminium/fibre glass hull development. Contact our engineering team to start your next RIB project.
+back_text: 返回研發中心
+home_label: 首頁
 hero:
-  tagline: '實驗室 02'
-  title: '船體工程工作室'
-  subtitle: '數位模擬、結構智慧、客製船體設計'
-  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
-  image_alt: 'Afarer 船體工程 CAD 設計工作站'
-
-intro: '船體是任何 RIB 或充氣船的根基。它必須輕巧以實現高效滑行，堅固以吸收衝擊載荷，並在廣泛的溫度範圍內保持尺寸穩定。在 {SITE.name}，我們的船體工程工作室結合先進的 CAD 建模、有限元素分析（FEA）及數十年的實務造船工程經驗，提供針對預期任務優化的船體——而非從型錄中套用的通用形狀。'
-
+  tagline: 實驗室 02
+  title: Hull Engineering Studio
+  subtitle: 數字模擬、結構智能、定製船體設計
+  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
+  image_alt: Afarer 船體工程 CAD 設計工作站
+intro: The hull is the backbone of any RIB or inflatable boat. It must be light enough to plane efficiently, strong enough to absorb impact loads, and dimensionally stable across a wide temperature range. At {SITE.name}, our Hull Engineering Studio combines advanced CAD modelling, finite element analysis (FEA), and decades of practical naval-architecture experience to deliver hulls that are optimised for their intended mission — not generic shapes adapted from a catalogue.
 content_html: |
-  <h2>強度與流體動力學的結合</h2>
-  <p>我們採用三種主要船體材料——滾塑成型 HDPE、焊接海洋級鋁合金及手工鋪設玻璃鋼——並具備在內部設計、模擬及驗證每種材料的工程能力。</p>
+  <h2>Where strength meets hydrodynamics</h2>
+  <p>We work with three primary hull materials — rotationally moulded HDPE, welded marine-grade aluminium, and hand-laid fibreglass — and have the engineering capability to design, simulate, and validate each one in-house.</p>
 
-  <h2>設計工具與標準</h2>
-  <p>我們的數位工程環境包括：</p>
+  <h2>Design tools and standards</h2>
+  <p>Our digital engineering environment includes:</p>
   <table>
-    <thead><tr><th>能力</th><th>軟體 / 工具</th><th>應用</th></tr></thead>
+    <thead><tr><th>Capability</th><th>Software / Tool</th><th>Application</th></tr></thead>
     <tbody>
-      <tr><td>3D 參數化建模</td><td>SolidWorks Professional</td><td>船體曲面、縱骨系統、引擎支架、甲板佈局</td></tr>
-      <tr><td>有限元素分析</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>應力分佈、模態分析、撞擊/衝擊模擬</td></tr>
-      <tr><td>計算流體力學</td><td>Ansys Fluent / Star-CCM+</td><td>流體阻力預測、縱傾優化</td></tr>
-      <tr><td>疊層工程</td><td>ESAComp / CADEC</td><td>玻璃纖維層疊順序、芯材選擇、重量估算</td></tr>
-      <tr><td>模具流動模擬</td><td>Moldex3D</td><td>滾塑成型壁厚預測</td></tr>
+      <tr><td>3D parametric modelling</td><td>SolidWorks Professional</td><td>Hull surface, stringer system, engine bracket, deck layout</td></tr>
+      <tr><td>Finite element analysis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Stress mapping, modal analysis, crash/impact simulation</td></tr>
+      <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamic drag prediction, trim optimisation</td></tr>
+      <tr><td>Laminate engineering</td><td>ESAComp / CADEC</td><td>Fibreglass layer stacking, core selection, weight estimation</td></tr>
+      <tr><td>Mould flow simulation</td><td>Moldex3D</td><td>Rotomoulding wall-thickness prediction</td></tr>
     </tbody>
   </table>
 
-  <h2>我們的工程流程</h2>
-  <p>每個船體設計，無論是標準型號還是完全客製的專案，都遵循嚴謹的五階段流程：</p>
+  <h2>Our engineering workflow</h2>
+  <p>Every hull design, whether it is a standard model or a fully custom project, follows a rigorous five-stage process:</p>
   <ol>
-    <li><strong>概念與需求收集</strong> — 我們與您會面，定義有效載荷、速度範圍、海況能力、拖曳要求及任何特殊任務裝備（甲板艙口、操控台位置、油箱整合）。</li>
-    <li><strong>3D 曲面與靜水力計算</strong> — 在 SolidWorks 中建立船體外形，並使用內建分析工具檢查靜水力穩定性（GM、復原力臂）。</li>
-    <li><strong>結構有限元素分析</strong> — 定義載荷工況：靜態（人員 + 裝備）、動態（5g 滑行衝擊）及砰擊（從波峰以 3 m/s 落下）。審查應力分佈；安全係數須 ≥ 2.5。</li>
-    <li><strong>CFD 阻力優化</strong> — 在三種載重條件及五種速度下模擬船體。逐步降低浸水面積、縱傾角及剩餘阻力。</li>
-    <li><strong>設計審查與發布</strong> — 完整的工程套件（3D 模型、FEA 報告、CFD 報告、重量估算、疊層圖）在發布至原型車間前，由我們的首席船舶工程師審查。</li>
+    <li><strong>Concept &amp; requirements gathering</strong> — We meet with you to define payload, speed envelope, sea-state capability, towing requirements, and any special mission equipment (deck hatches, console positions, fuel-tank integration).</li>
+    <li><strong>3D surfacing &amp; hydrostatic calculation</strong> — The hull form is modelled in SolidWorks and checked for hydrostatic stability (GM, righting arm) using built-in analysis tools.</li>
+    <li><strong>Structural FEA</strong> — Load cases are defined: static (crew + gear), dynamic (planing impacts at 5g), and slamming (dropping from a wave crest at 3 m/s). Stress contours are reviewed; safety factor ≥ 2.5 is mandatory.</li>
+    <li><strong>CFD drag optimisation</strong> — The hull is simulated at three loading conditions and five speeds. Wetted surface area, trim angle, and residual resistance are iteratively reduced.</li>
+    <li><strong>Design review &amp; release</strong> — The complete engineering package (3D model, FEA report, CFD report, weight estimate, ply book) is reviewed by our senior naval architect before release to the prototype workshop.</li>
   </ol>
 
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA 應力分佈 — RIB 450 巡邏艇船體（鋁合金 5083）</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Stress Distribution — RIB 450 Patrol Hull (Aluminium 5083)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
-        <span class="text-gray-500">最大載重安全係數</span>
+        <span class="text-gray-500">Safety factor at max payload</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
-        <span class="text-gray-500">較上一代阻力降低</span>
+        <span class="text-gray-500">Drag reduction vs previous generation</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
-        <span class="text-gray-500">最大砰擊壓力（設計極限）</span>
+        <span class="text-gray-500">Peak slamming pressure (design limit)</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
-        <span class="block text-2xl font-bold text-blue-600">18,000 小時</span>
-        <span class="text-gray-500">2025 年累計 FEA 運算時數</span>
+        <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
+        <span class="text-gray-500">Cumulative FEA runtime in 2025</span>
       </div>
     </div>
   </div>
 
-  <h2>客製化：您的船體，您的規則</h2>
-  <p>沒有兩個使用者有完全相同的需求。港口巡邏 RIB 需要淺 V 型船體以在低速時保持穩定；快速攔截艇需要帶防濺條的深 V 型船體；潛水支援船需要寬橫樑和低尾板。我們不會將您的應用強行套入既有的船體形狀。我們根據您的規格從頭設計。</p>
-  <p>近期客製船體工程專案範例：</p>
+  <h2>Customisation: your hull, your rules</h2>
+  <p>No two operators have identical requirements. A harbour-patrol RIB needs a shallow-V hull for stability at low speed; a fast-interception craft needs a deep-V with spray rails; a dive-support boat needs a wide beam and a low transom. We do not force your application into a pre-existing hull shape. We design from your specification upward.</p>
+  <p>Examples of recent custom hull engineering projects:</p>
   <ul>
-    <li>為加勒比海旅遊業者設計的加長型 6.8 m HDPE 船體，採用強化船首適應沙灘登陸（底部厚度增加 15%）。</li>
-    <li>為海岸防衛隊設計的輕量鋁合金 7.2 m RIB，整合油箱隔板及設備櫃加強筋。</li>
-    <li>玻璃鋼 5.5 m 潛水船，採用降低尾板及雙電瓶箱，方便潛水者重新登船。</li>
+    <li>A stretched 6.8 m HDPE hull for a Caribbean tour operator, with a reinforced bow for beach landings (+15 % bottom thickness).</li>
+    <li>A lightweight aluminium 7.2 m RIB for a coast guard, with integrated fuel-tank baffles and equipment-locker stiffeners.</li>
+    <li>A fibreglass 5.5 m dive boat with a cut-down transom and twin battery boxes, designed for easy snorkeller reboarding.</li>
   </ul>
 
-  <h2>我們的工程師</h2>
-  <p>工作室由一位擁有 14 年高速船設計經驗的資深船舶工程師領導，並由兩位專精 FEA 及 CFD 的機械工程師支援。三人均擁有國際知名大學的船舶工程或造船工程高級學位。團隊定期在產業期刊發表論文，並在國際高性能船舶會議等場合發表演講。</p>
+  <h2>Our engineers</h2>
+  <p>The studio is led by a senior naval architect with 14 years of experience in high-speed craft design, supported by two mechanical engineers specialised in FEA and CFD. All three hold advanced degrees in marine engineering or naval architecture from internationally recognised universities. The team publishes regularly in industry journals and presents at conferences such as the International Conference on High-Performance Marine Vehicles.</p>
 
-  <h2>在下一個船體專案與我們合作</h2>
-  <p>從最初的概念草圖到最終的應力報告，我們的船體工程工作室是您打造經由精密工程設計而非僅是建造的船隻的合作夥伴。我們在前期投入模擬時數，確保每一道焊接、每一層疊層及船體的每一條曲線都有其存在的理由。</p>
-  <p>無論您需要對現有型號進行小幅修改，還是完全從零開始設計，我們都準備好討論您的需求。</p>
-
+  <h2>Partner with us on your next hull</h2>
+  <p>From the first concept sketch to the final stress report, our Hull Engineering Studio is your partner in creating a boat that is not just built — but engineered. We invest the simulation hours upfront so that every weld, every laminate layer, and every curve of the hull is there for a reason.</p>
+  <p>Whether you need a minor modification to an existing model or a completely clean-sheet design, we are ready to discuss your requirements.</p>
 cta:
-  title: '開始您的船體設計諮詢'
-  subtitle: '告訴我們您的任務需求，我們將建議合適的工程路徑。'
-  button_text: '聯絡我們的工程團隊'
+  title: 開始您的船體設計諮詢
+  subtitle: 告訴我們您的任務需求，我們將建議合適的工程路徑。
+  button_text: 聯絡我們的工程團隊
   button_link: /contact

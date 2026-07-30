@@ -1,45 +1,45 @@
 hero:
   tagline: 流程
   title: 製造流程
-  subtitle: 從原材料到可下海的船隻——每一步都在我們的掌控之中
+  subtitle: 從原材料到可下水的 SUP——每一步都在我們的控制之下
   back_label: 返回工廠
   back_link: /factory
-intro: 與將生產外包給第三方工廠的品牌不同，afarer擁有並運營其整個製造鏈。這種垂直整合使我們能夠在每個環節保持嚴格的質量控制，快速響應定製需求，並批次接批次地提供一致的產品質量。以下是我們工廠中一艘船的製造過程。
+intro: Unlike brands that outsource production to third-party factories, afarer owns and operates its entire manufacturing chain. This vertical integration allows us to maintain strict quality control at every stage, respond quickly to custom requirements, and deliver consistent product quality batch after batch. Here is how a SUP board is built in our facility.
 steps:
-  - step: '01'
+  - step: "01"
     title: 材料接收與檢驗
     description: 每批進廠的PVC面料、玻璃纖維氈、樹脂和五金件都按照規格進行檢查。面料樣品在放行生產前進行拉伸強度、厚度均勻性和抗紫外線測試。不合格材料被隔離並退回。
     duration: 1–2天
-  - step: '02'
+  - step: "02"
     title: 自動PVC裁切
-    description: 合格面料鋪設在自動CNC裁切機上，以亞毫米精度裁剪。計算機優化套裁安排面板以最小化浪費——通常低於5%。裁切後的面板按船型編號和氣室標記，然後打包送往焊接車間。
-    duration: 每套船2–4小時
-  - step: '03'
+    description: Approved fabrics are laid on the automatic CNC cutting machine and cut with sub-millimetre accuracy. Computer-optimised nesting arranges panels to minimise waste —typically below 5%. Cut panels are labelled by boat model and chamber, then bundled for transfer to the welding workshop.
+    duration: 2— hours per boat kit
+  - step: "03"
     title: 材料接收與檢驗
     description: 面板使用熱封機（壓膠機）在200–600°C的受控溫度下進行熱風焊接定位和粘合。主縫採用高頻介質焊接進行加固，形成氣密、高強度的接頭。完成的氣室充氣至1.5倍工作壓力，保持30分鐘進行氣密性驗證。
-    duration: 每套船2–4小時
-  - step: '04'
-    title: 玻璃鋼RIB船殼成型
+    duration: 1— days per boat
+  - step: "04"
+    title: 落針式芯材粘合
     description: 面板使用熱封機（壓膠機）在200–600°C的受控溫度下進行熱風焊接定位和粘合。主縫採用高頻介質焊接進行加固，形成氣密、高強度的接頭。完成的氣室充氣至1.5倍工作壓力，保持30分鐘進行氣密性驗證。
-    duration: 每套船2–4小時
-  - step: '05'
-    title: 玻璃鋼RIB船殼成型
+    duration: 1— days per board
+  - step: "05"
+    title: SUP 印刷與裝飾
     description: 每批進廠的PVC面料、玻璃纖維氈、樹脂和五金件都按照規格進行檢查。面料樣品在放行生產前進行拉伸強度、厚度均勻性和抗紫外線測試。不合格材料被隔離並退回。
     duration: 1–2天
-  - step: '06'
+  - step: "06"
     title: 最終組裝與裝配
     description: 面板使用熱封機（壓膠機）在200–600°C的受控溫度下進行熱風焊接定位和粘合。主縫採用高頻介質焊接進行加固，形成氣密、高強度的接頭。完成的氣室充氣至1.5倍工作壓力，保持30分鐘進行氣密性驗證。
     duration: 1–2天
-  - step: '07'
+  - step: "07"
     title: 材料接收與檢驗
-    description: 合格面料鋪設在自動CNC裁切機上，以亞毫米精度裁剪。計算機優化套裁安排面板以最小化浪費——通常低於5%。裁切後的面板按船型編號和氣室標記，然後打包送往焊接車間。
+    description: "Every completed board undergoes mandatory quality gate: chamber air-retention test, hardware function check, fastener torque verification, and cosmetic inspection. Custom and prototype builds also receive in-water trials covering stability and handling."
     duration: 1–2天
-  - step: '08'
+  - step: "08"
     title: 材料接收與檢驗
     description: 每批進廠的PVC面料、玻璃纖維氈、樹脂和五金件都按照規格進行檢查。面料樣品在放行生產前進行拉伸強度、厚度均勻性和抗紫外線測試。不合格材料被隔離並退回。
     duration: 1–2天
 cta:
   title: 查看我們的設備和機械
-  desc: 探索每艘afarer船背後的工業級設備。
+  desc: 探索每塊 afarer SUP 槳板背後的工業級設備。
   label: 查看設備 →
   link: /factory/equipment

@@ -2,8 +2,8 @@ hero:
   tagline: 知識圖譜
   title: 水上探索知識
   subtitle: |
-    一個結構化的知識庫，涵蓋充氣SUP技術、<br />
-    水上安全、船隻工程和冒險規劃。
+    A structured knowledge base covering inflatable SUP technology,<br />
+    water safety, boat engineering, and adventure planning.
   taglineSection: 探索。學習。自信出發。
 clusters:
   tagline: 知識集群
@@ -19,13 +19,13 @@ clusters:
         - 槳板運動有多難？
         - 充氣板與硬板對比
         - SUP安全清單
-    - title: 船隻知識
-      description: 關於充氣船、SUP、小艇和皮艇的技術指南——工程、材料和操作。
-      icon: tabler:sailboat
+    - title: SUP Engineering & Technology
+      description: 充氣 SUP 槳板技術指南——材料、建造方法和製造工藝。
+      icon: tabler:microscope
       topics:
-        - 充氣船類型詳解
+        - 落針式技術深度解析
         - PVC與Hypalon對比
-        - RIB與小艇對比
+        - 融合層壓 vs 粘合劑粘接
         - 滴塑技術深度解析
         - 海洋材料科學指南
     - title: 安全知識
@@ -33,19 +33,37 @@ clusters:
       icon: tabler:shield
       topics:
         - SUP安全清單
-        - 你需要救生衣嗎？
+        - 偏遠水域多氣室安全設計
         - 海洋劃槳安全指南
-        - 充氣皮艇河流安全
+        - 槳板存放和冬季保養
         - 天氣和水情意識
     - title: 技術
       description: afarer產品背後的工程——材料、製造方法和質量測試。
-      icon: tabler:microscope
+      icon: tabler:sailboat
       topics:
         - 海洋級PVC技術
         - 滴塑核心解析
         - 為什麼PSI對充氣SUP很重要
         - RF焊接與粘合對比
         - 質量測試和認證
+    - title: SUP 生活方式與特殊用途
+      description: SUP 專項活動——瑜伽、釣魚、寵物、家庭和旅行技巧。
+      icon: tabler:heart
+      topics:
+        - 水上 SUP 瑜伽和冥想
+        - 充氣 SUP 釣魚
+        - 與狗和孩子一起划槳
+        - 乘坐飛機和汽車攜帶 SUP 旅行
+        - SUP 配件和裝備必備
+    - title: SUP 對比與參考
+      description: 並排對比，幫助您做出明智決策。
+      icon: tabler:chart-bar
+      topics:
+        - SUP vs 皮划艇——哪個適合您？
+        - PVC vs Hypalon 材料對比
+        - 單氣室 vs 多氣室安全
+        - SUP 槳板材料詳解
+        - UV 印刷 vs EVA 色塊圖案
 featured_guides:
   tagline: 精選指南
   title: 最受歡迎的知識資源
@@ -59,7 +77,17 @@ featured_guides:
     - title: 材料參考
       href: /learn/materials
     - title: SUP尺寸指南
-      href: /size-guide
+      href: /guides/how-to-choose-your-sup
+    - title: SUP 尺寸指南
+      href: /guides/sup-size-guide
+    - title: SUP 技術中心
+      href: /research
+    - title: SUP 維護保養
+      href: /guides/sup-maintenance
+    - title: 旅行指南
+      href: /guides/sup-for-touring
+    - title: 划槳技巧
+      href: /guides/paddling-techniques
 cta:
   title: 開始探索
   subtitle: 深入我們的知識庫，獲取下一次水上冒險所需的信息。

@@ -1,16 +1,29 @@
 meta:
   title: 度假村 SUP 船隊方案 | {SITE}
-  description: 為度假村和飯店提供的完整 SUP 船隊方案。商用級板身、客製品牌、員工培訓，以及從 20 到 100 張以上的 ROI 優化方案。
+  description: Complete SUP fleet solutions for resorts and hotels. Commercial-grade boards, custom branding, staff training, and ROI-optimized packages from 20 to 100+ boards.
 hero:
   tagline: 度假村與飯店
   title: 為您的貴賓打造<br />優質水上體驗
-  subtitle: 為全球度假村、飯店及濱海目的地的完整 SUP 船隊方案。單一合作夥伴。單一發票。零麻煩。
+  subtitle: Afarer equips resorts worldwide with commercial-grade inflatable SUP fleets — from 20-board starter packages to 100+ board flagship programs. Custom branding, staff training, and replacement parts included.
   image:
     src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
     alt: 度假村貴賓在 pristine 沙灘享受 SUP 立槳
 roi_section:
   title: 度假村 SUP 投資回報
-  subtitle: 利用數據驅動的船隊方案最大化您的 SUP 租賃收入。
+  subtitle: 度假村如何通過單次投資實現年 SUP 租賃收入 $50,000 - $200,000+。
+  metrics:
+    - metric: $50K–$200K+
+      label: Annual SUP Revenue
+      detail: 按度假村計算，基於船隊規模和入住率
+    - metric: 4–6 Months
+      label: Average Payback Period
+      detail: 一個季節內收回全部船隊投資
+    - metric: 40%
+      label: Revenue Increase
+      detail: 轉用 Afarer 船隊後的平均提升
+    - metric: 500+
+      label: Rental Cycles Per Board
+      detail: 商用級耐用性，適用於日常使用
 packages:
   title: 度假村方案系統
   subtitle: 選擇符合您貴賓容量與營收目標的方案。
@@ -19,10 +32,12 @@ packages:
       tagline: 適合：精品度假村，每日最多 20 位貴賓
       features:
         - 20 張 SUP 板（混合尺寸）
-        - 20 支槳 + 20 件救生衣
+        - 20 支槳（可調節）+ 20 件救生衣
         - 4 個雙動打氣筒
         - 2 個存放架
         - 1 組修補套件
+        - 12 個月保修 + CE 認證
+      revenue: 年收入潛力 $50K–$80K
       cta_text: 取得入門方案
     - name: 高級方案
       tagline: 適合：大型度假村，每日 50-100 位貴賓
@@ -34,6 +49,9 @@ packages:
         - 2 組修補套件
         - 所有板身客製品牌
         - 員工培訓課程（線上）
+        - 12 個月保修 + CE 認證
+      revenue: 年收入潛力 $120K–$200K+
+      popular: true
       cta_text: 取得高級方案
     - name: 旗艦方案
       tagline: 適合：超高端度假村，每日 100 位以上貴賓
@@ -44,9 +62,21 @@ packages:
         - 專屬客戶經理
         - 優先備品（24 小時發貨）
         - 客製品牌 + 標誌
+        - 營銷照片/視頻套裝
+        - 24 個月保修 + CE 認證
+      revenue: 年收入潛力 $200K+
       cta_text: 取得旗艦方案
 case_study:
   quote: 自合作以來，我們的 SUP 出租率提升了 60%，客人滿意度大幅提高。
+  author: 水上活動經理
+  location: 五星級度假村，馬爾代夫
+  results:
+    - label: Revenue Growth
+      value: +40%
+    - label: Cost Reduction
+      value: "-60%"
+    - label: 回本週期
+      value: 4 Months
 features:
   title: 度假村選擇 Afarer 的理由
   subtitle: 商用級耐用性、全球物流，以及了解酒店業的合作夥伴。

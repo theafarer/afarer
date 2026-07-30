@@ -24,17 +24,14 @@ categories:
       - name: CNC控制的RF焊機
         spec: 8 kW, XY工作臺2500 × 1200 mm
         desc: 用於複雜幾何形狀、徽標壓花和精密補片的程序化曲線接縫焊接。
-  - title: RIB船體製造
+  - title: SUP 槳板製造
     items:
       - name: 玻璃纖維手工鋪層模具
-        spec: 用於長達6 m LOA的RIB船體的多個模具
+        spec: 大幅面壓力機，適用於長達 14 英尺的槳板芯材
         desc: 採用聚酯和乙烯基酯樹脂系統的傳統手工鋪層玻璃纖維成型。每層手工滾壓並真空袋壓，以確保層壓板質量與強度一致。
       - name: 膠衣噴塗房
         spec: 溫度控制, 過濾空氣通風
-        desc: 用於RIB船體的膠衣噴塗。提供高光澤、抗紫外線的表面，厚度控制精確。
-      - name: CNC路由器（5軸）
-        spec: 3 m × 2 m × 1 m行程, 水冷主軸
-        desc: 加工船體嵌件、控制台模具、座椅底座和定製支架。
+        desc: 尾鰭盒、手柄開口和定製槳板部件的加工。
   - title: SUP印刷與裝飾
     items:
       - name: 數字打印機
@@ -54,13 +51,10 @@ categories:
       - name: 液壓軟管壓接機
         spec: 最大1" ID, 數字壓力錶
         desc: 帶有壓制接頭的定製長度液壓轉向軟管組件。
-      - name: 電氣線束板
-        spec: 3 m × 1.5 m, 預先印製的接線圖
-        desc: 在船外組裝和測試完整的電氣線束。
   - title: 測試與質量控制
     items:
       - name: 萬能拉力試驗機
-        spec: 50 kN, ASTM D751
+        spec: 50 kN，/ ASTM D751
         desc: 面料批次的斷裂力、斷裂伸長率和撕裂擴展測試。
       - name: 保氣測試臺
         spec: 可編程, 保壓30分鐘

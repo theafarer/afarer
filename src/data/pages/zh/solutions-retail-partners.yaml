@@ -11,6 +11,36 @@ hero:
 margin_section:
   title: 零售利潤空間
   subtitle: 具競爭力的批發價格，保障您的零售利潤。
+  items:
+    - tier: 基礎合作夥伴
+      discount: 20%
+      moq: 500 件/年
+      margin_note: ~$150–250 profit per board
+      features:
+        - 訪問完整產品線
+        - 營銷材料套裝
+        - 郵件支援
+        - 產品目錄訪問
+    - tier: 高級合作夥伴
+      discount: 30%
+      moq: 2,000+ 件/年
+      margin_note: ~$250–400 profit per board
+      features:
+        - 專屬客戶經理
+        - 獨家區域保護
+        - 定製營銷支援
+        - 新品優先訪問
+        - 員工培訓課程
+    - tier: 旗艦合作夥伴
+      discount: 35%+
+      moq: 5,000+ 件/年
+      margin_note: ~$350–500+ profit per board
+      features:
+        - 聯名營銷活動
+        - 店內陳列支援
+        - 現場員工培訓
+        - 聯合社交媒體推廣
+        - 優先產能分配
 product_line:
   title: 完整產品線
   subtitle: 適合每位進門顧客的 SUP 板。
@@ -26,10 +56,23 @@ product_line:
     - name: 競速系列
       description: 愛好者市場 — 品牌光環
     - name: 配件
-      description: 高利潤附加產品（槳、救生衣、打氣筒、背包）
+      description: High margin add-ons (paddles, vests, pumps, bags)
 catalog:
   title: 批發產品目錄
   subtitle: 瀏覽我們面向零售合作夥伴的完整 SUP 產品線。
+  items:
+    - name: 2026 Product Catalog
+      desc: Full lineup with specs, pricing, and ordering information
+      icon: tabler:file-text
+      link: /resources/download-catalog
+    - name: 零售合作夥伴指南
+      desc: 利潤計算器、銷售技巧和最佳實踐
+      icon: tabler:book
+      link: /resources/download-catalog
+    - name: 營銷素材包
+      desc: 高解像度產品照片、生活場景圖像和 POS 材料
+      icon: tabler:photo
+      link: /media
 support:
   title: 零售合作夥伴支援
   subtitle: 自信銷售所需的一切。

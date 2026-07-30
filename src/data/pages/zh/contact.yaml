@@ -9,98 +9,105 @@ contact_form:
   submit_button: 發送消息
   success_message: 謝謝！您的消息已收到。我們會在一個工作日內回覆。
   error_message: 發送消息時出錯。請重試或直接給我們發送郵件。
-  default_country_code: '+1'
+  default_country_code: "+1"
   captcha:
     label: 反垃圾：請解答以下問題
   fields:
-    - name: firstName
+    - name: country
       label: 名字
       row: 1
-    - name: lastName
-      label: 姓氏
-      row: 1
-    - name: companyName
-      label: 公司
-      row: 2
-    - name: address
-      label: 地址
-      row: 3
-    - name: zip
-      label: 郵政編碼
-      row: 4
-    - name: country
-      label: 國家
-      row: 4
       type: select
       optionsKey: countries
-    - name: email
+      step: 1
+    - name: orderVolume
+      label: 姓氏
+      row: 2
+      type: select
+      options:
+        - value: ""
+          label: Select your estimated volume...
+        - value: sample
+          label: Samples / Prototypes only
+        - value: 5-10
+          label: 5–10 units (Standard MOQ)
+        - value: 100-500
+          label: 100–500 units
+        - value: 500-plus
+          label: 500+ units (Volume pricing)
+      step: 1
+    - name: customization
+      label: 公司
+      row: 3
+      type: select
+      options:
+        - value: ""
+          label: Select customization type...
+        - value: none
+          label: Standard product (no customization)
+        - value: logo
+          label: Custom Logo / Branding only
+        - value: full
+          label: Full OEM (size, color, graphics, packaging)
+        - value: consultation
+          label: Not sure — need consultation
+      step: 1
+    - name: productInterest
+      label: 地址
+      row: 4
+      type: select
+      options:
+        - value: ""
+          label: Select product category...
+        - value: all
+          label: All products / Full catalog
+        - value: sup
+          label: SUP Boards / Paddleboards
+        - value: safety
+          label: Safety Equipment / Life Vests
+        - value: accessory
+          label: Accessories (pumps, oars, bags)
+      step: 1
+    - name: firstName
+      label: 郵政編碼
+      row: 1
+      step: 2
+    - name: lastName
+      label: 國家
+      row: 1
+      step: 2
+    - name: companyName
       label: 郵箱
-      row: 5
-      type: email
-    - name: tel
+      row: 2
+      step: 2
+    - name: email
       label: 電話
-      row: 5
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: 預估訂單量
+      row: 3
       type: tel
       withCountryCode: true
-    - name: orderVolume
-      label: 預估訂單量
-      row: 6
-      type: select
-      options:
-        - value: ''
-          label: 選擇預估數量...
-        - value: sample
-          label: 僅樣品/原型
-        - value: 5-10
-          label: 50–100個（標準起訂量）
-        - value: 100-500
-          label: 100–500個
-        - value: 500-plus
-          label: 500+個（批量價格）
-    - name: customization
+      step: 2
+    - name: address
       label: 需要定製嗎？
-      row: 7
-      type: select
-      options:
-        - value: ''
-          label: 選擇定製類型...
-        - value: none
-          label: 標準產品（無需定製）
-        - value: logo
-          label: 僅定製標誌/品牌
-        - value: full
-          label: 全面OEM（尺寸、顏色、圖形、包裝）
-        - value: consultation
-          label: 不確定 — 需要諮詢
-    - name: productInterest
+      row: 4
+      step: 2
+    - name: zip
       label: 感興趣的產品類別
-      row: 8
-      type: select
-      options:
-        - value: ''
-          label: 選擇產品類別...
-        - value: all
-          label: 所有產品 / 全部目錄
-        - value: sup
-          label: SUP槳板
-        - value: SUP
-          label: 充氣皮划艇
-        - value: SUP
-          label: RIB充氣艇
-        - value: SUP
-          label: 小艇 / 交通艇
-        - value: safety
-          label: 安全裝備 / 救生衣
-        - value: accessory
-          label: 配件（泵、槳、包）
+      row: 5
+      step: 2
     - name: subject
       label: 主題
-      row: 9
+      row: 1
+      step: 3
     - name: message
       label: 留言
-      row: 10
+      row: 2
       type: textarea
       rows: 6
+      step: 3
 features2_other_ways:
   title: 其他聯繫方式
   columns: 3

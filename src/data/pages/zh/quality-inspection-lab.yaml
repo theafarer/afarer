@@ -1,120 +1,116 @@
 meta:
-  title: '品質檢驗實驗室 — ISO 合規 RIB 測試與認證 | {SITE}'
-  description: '充氣船的獨立品質驗證。拉伸測試、氣密循環測試、接縫剝離測試及材料認證。聯絡我們的品質實驗室進行第三方測試。'
-back_text: '返回研發中心'
-home_label: '首頁'
-
+  title: 品質檢驗實驗室 — ISO 合規 RIB 測試與認證 | {SITE}
+  description: Independent quality verification for inflatable boats. Tensile testing, air-retention cycling, seam peel tests, and material certification. Contact our quality lab for third-party testing.
+back_text: 返回研發中心
+home_label: 首頁
 hero:
-  tagline: '實驗室 06'
-  title: '品質檢驗實驗室'
-  subtitle: '獨立驗證 — 每項測試在出貨前均通過'
-  image: 'https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp'
-  image_alt: 'Afarer 品質檢驗實驗室 UV 測試'
-
-intro: '從我們車間出廠的每艘船都附有認證，證明其已通過一系列定義的品質檢驗及材料測試。我們的品質檢驗實驗室是組織內的獨立職能部門——它直接向總經理報告，而非生產部門——確保沒有任何商業壓力能夠影響檢驗關卡。如果某批材料或成品船未達到公布的規格，實驗室有權中止出貨，直到不符合項目解決為止。'
-
+  tagline: 實驗室 06
+  title: 品質檢驗實驗室
+  subtitle: 獨立驗證 — 每項測試在出貨前均通過
+  image: https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp
+  image_alt: Afarer 品質檢驗實驗室 UV 測試
+intro: Every boat that leaves our workshop carries the certification that it has passed a defined set of quality inspections and material tests. Our Quality & Inspection Lab is an independent function within the organisation — it reports directly to the managing director, not to production — ensuring that no commercial pressure can compromise the inspection gate. If a material batch or a completed boat does not meet the published specification, the lab has the authority to halt shipment until the non-conformance is resolved.
 content_html: |
-  <h2>信任，但需驗證</h2>
-  <p>實驗室依據 ISO 9001 原則運作品質管理系統，我們的測試方法在適用情況下基於 ISO、ASTM 及 EN 標準。我們詳細記錄執行的每項測試，建立從原材料接收到最終船隻交付的完整追溯鏈。</p>
+  <h2>Trust, but verify</h2>
+  <p>The lab operates under a quality management system aligned with principles, and our test methods are based on ISO, ASTM, and EN standards wherever applicable. We maintain detailed records of every test performed, creating a complete traceability chain from raw material receipt to final boat delivery.</p>
 
-  <h2>測試設備與能力</h2>
+  <h2>Test equipment and capabilities</h2>
   <table>
-    <thead><tr><th>設備</th><th>執行的測試</th><th>標準 / 方法</th></tr></thead>
+    <thead><tr><th>Equipment</th><th>Tests Performed</th><th>Standard / Method</th></tr></thead>
     <tbody>
-      <tr><td>萬能試驗機（50 kN）</td><td>拉伸強度（織物）、剝離強度（接縫）、撕裂傳播</td><td>ISO 1421、ISO 4674</td></tr>
-      <tr><td>氣密測試台（可程式）</td><td>1000 次充氣/放氣耐久性、30 分鐘保壓測試</td><td>ISO 6185（內部）</td></tr>
-      <tr><td>接縫剝離治具（電動 180° 剝離）</td><td>焊接與黏合接縫在 100 mm/min 下的剝離強度</td><td>ISO 1421 / ASTM D1876</td></tr>
-      <tr><td>耐水壓測試儀</td><td>織物抗水滲透性（0–1000 mbar）</td><td>ISO 811</td></tr>
-      <tr><td>數位厚度計與測微器</td><td>織物厚度、管壁厚度、膠膜厚度</td><td>ISO 2286-3</td></tr>
-      <tr><td>環境試驗箱</td><td>溫度調節（-40°C 至 +80°C），用於低溫破裂及熱老化測試</td><td>ISO 188、ISO 4675</td></tr>
-      <tr><td>色彩分光光度計</td><td>UV 曝曬後的 Delta-E 顏色量測</td><td>ISO 105-A05 / ASTM D2244</td></tr>
+      <tr><td>Universal testing machine (50 kN)</td><td>Tensile strength (fabric), peel resistance (seams), tear propagation</td><td>ISO 1421, ISO 4674</td></tr>
+      <tr><td>Air-retention test rig (programmable)</td><td>1000-cycle inflation/deflation endurance, 30 min pressure-hold test</td><td>ISO 6185 (internal)</td></tr>
+      <tr><td>Seam-peel jig (motorised 180° peel)</td><td>Weld and glued-seam peel strength at 100 mm/min</td><td>ISO 1421 / ASTM D1876</td></tr>
+      <tr><td>Hydrostatic head tester</td><td>Water penetration resistance of fabric (0–1000 mbar)</td><td>ISO 811</td></tr>
+      <tr><td>Digital thickness gauge &amp; micrometre</td><td>Fabric thickness, tube wall thickness, adhesive-film thickness</td><td>ISO 2286-3</td></tr>
+      <tr><td>Environmental chamber</td><td>Temperature conditioning (-40 °C to +80 °C) for cold-crack and heat-ageing tests</td><td>ISO 188, ISO 4675</td></tr>
+      <tr><td>Colour spectrophotometer</td><td>Delta-E colour measurement after UV exposure</td><td>ISO 105-A05 / ASTM D2244</td></tr>
     </tbody>
   </table>
 
-  <h2>檢驗關卡 — 從材料到交貨</h2>
-  <p>每艘船都遵循定義的品質計畫，包含強制檢驗點。沒有船隻能跳過關卡；每個關卡必須由品質檢驗員簽署核准後，才能進入下一生產階段。</p>
+  <h2>The inspection gates — from material to delivery</h2>
+  <p>Every boat follows a defined quality plan with mandatory inspection points. No boat can skip a gate; each gate must be signed off by a quality inspector before the next production stage begins.</p>
 
   <div class="not-prose my-8">
     <div class="relative">
       <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-200 dark:bg-blue-800"></div>
       <div class="space-y-6 relative">
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">關卡 1</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 1</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">進料檢驗</p>
-            <p class="text-xs text-gray-500 mt-1">織物批次、黏合劑批次、五金配件——放行至生產前，全部對照進廠規格進行檢查。</p>
+            <p class="text-sm font-semibold">Incoming material inspection</p>
+            <p class="text-xs text-gray-500 mt-1">Fabric batch, adhesive batch, hardware — all checked against incoming specification before release to production.</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">關卡 2</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 2</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">製程焊接檢驗</p>
-            <p class="text-xs text-gray-500 mt-1">每個生產班次開始時測試首件焊接樣本（剝離 + 目視）。</p>
+            <p class="text-sm font-semibold">In-process weld inspection</p>
+            <p class="text-xs text-gray-500 mt-1">First-off weld coupon tested (peel + visual) at start of each production shift.</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">關卡 3</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 3</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">氣室氣密測試</p>
-            <p class="text-xs text-gray-500 mt-1">每個氣室加壓至工作壓力的 1.5 倍，保持 30 分鐘。依序號記錄數據。</p>
+            <p class="text-sm font-semibold">Chamber air test</p>
+            <p class="text-xs text-gray-500 mt-1">Each chamber pressurised to 1.5 x working pressure, held 30 min. Data logged per serial number.</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">關卡 4</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 4</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">出貨前檢驗</p>
-            <p class="text-xs text-gray-500 mt-1">整船檢查：所有緊固件鎖緊、系統功能正常、無外觀缺陷。100 點檢查表。</p>
+            <p class="text-sm font-semibold">Pre-delivery inspection</p>
+            <p class="text-xs text-gray-500 mt-1">Complete boat inspected: all fasteners torqued, systems functional, no cosmetic defects. 100-point checklist.</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">關卡 5</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 5</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">最終認證</p>
-            <p class="text-xs text-gray-500 mt-1">彙編測試報告、審查檢驗記錄、核發符合性證書。</p>
+            <p class="text-sm font-semibold">Final certification</p>
+            <p class="text-xs text-gray-500 mt-1">Test reports compiled, inspection records reviewed, Certificate of Conformance issued.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <h2>關鍵品質指標（2025 年滾動平均）</h2>
+  <h2>Key quality metrics (2025 rolling average)</h2>
   <div class="not-prose my-8 grid grid-cols-2 md:grid-cols-4 gap-4">
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
-      <span class="block text-2xl font-bold text-blue-600">99.7%</span>
-      <span class="text-xs text-gray-500">首次通過率（織物批次）</span>
+      <span class="block text-2xl font-bold text-blue-600">99.7 %</span>
+      <span class="text-xs text-gray-500">First-pass yield (fabric batch)</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
-      <span class="block text-2xl font-bold text-blue-600">< 0.2%</span>
-      <span class="text-xs text-gray-500">焊接拒收率（線性公尺）</span>
+      <span class="block text-2xl font-bold text-blue-600">&lt; 0.2 %</span>
+      <span class="text-xs text-gray-500">Weld reject rate (linear metre)</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
-      <span class="block text-2xl font-bold text-blue-600">100%</span>
-      <span class="text-xs text-gray-500">組裝前氣室經氣密測試</span>
+      <span class="block text-2xl font-bold text-blue-600">100 %</span>
+      <span class="text-xs text-gray-500">Chambers air-tested before assembly</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
       <span class="block text-2xl font-bold text-blue-600">ISO 6185</span>
-      <span class="text-xs text-gray-500">設計類別合規</span>
+      <span class="text-xs text-gray-500">Design category compliance</span>
     </div>
   </div>
 
-  <h2>我們的品質團隊</h2>
-  <p>實驗室由一位品質經理（10 年海事品管經驗，ASQ 認證品質工程師）、兩位品質檢驗員（各持有二級 NDT 目視檢測認證）及一位負責所有物理測試的材料技術員組成。團隊每年透過獨立第三方機構進行能力驗證，確保我們的測試結果保持準確且可再現。</p>
+  <h2>Our quality team</h2>
+  <p>The lab is staffed by a quality manager (10 years in marine QA, ASQ Certified Quality Engineer), two quality inspectors (each with Level 2 NDT certification in visual testing), and a materials technician responsible for all physical testing. The team undergoes annual proficiency testing through an independent third-party provider to ensure that our test results remain accurate and reproducible.</p>
 
-  <h2>客戶獨立測試服務</h2>
-  <p>我們的品質檢驗實驗室提供獨立測試服務。如果您需要驗證織物規格、驗證新的黏合劑系統，或為採購驗收取得第三方測試報告，我們可以依照適用標準執行測試並核發認證測試報告。</p>
-  <p>近期第三方測試工作範例：</p>
+  <h2>Independent testing for clients</h2>
+  <p>Our Quality &amp; Inspection Lab is available for independent testing services. If you need to verify a fabric specification, validate a new adhesive system, or obtain a third-party test report for a procurement qualification, we can perform the tests to the applicable standard and issue a certified test report.</p>
+  <p>Examples of recent third-party testing work:</p>
   <ul>
-    <li>為歐洲軍方採購項目進行的五種競爭性黏合膠膜產品剝離強度比較。</li>
-    <li>新型橙色顏料 PVC 配方的加速老化研究（UV + 熱循環），每 500 小時間隔進行定期量測。</li>
-    <li>新型高壓氣管設計的 50 個原型隔板閥門的氣密性驗證。</li>
+    <li>Peel-strength comparison of five competitive adhesive film products for a European military procurement programme.</li>
+    <li>Accelerated ageing study (UV + thermal cycling) for a new orange-pigmented PVC formulation, with regular interim measurements at 500 h intervals.</li>
+    <li>Air-retention validation of 50 prototype baffle valves for a new high-pressure tube design.</li>
   </ul>
 
-  <h2>我們對您的承諾</h2>
-  <p>當您收到 {SITE.name} 船隻時，您也將收到其品質檔案——一份彙編記錄，包含適用於您特定船隻的測試結果：織物批次證書、焊接剝離測試、氣室氣密測試記錄及出貨前檢驗檢查表。每個數字都可追溯。每位檢驗員都可識別。這不僅是文件——這是我們對所交付產品符合規格的承諾。</p>
-  <p>如果您有任何品質疑慮，可以直接聯絡實驗室——聯絡資訊印在您的符合性證書上。我們認真對待每項查詢，並承諾在 48 小時內啟動正式調查。</p>
-
+  <h2>Our commitment to you</h2>
+  <p>When you receive a {SITE.name} boat, you also receive its quality dossier — a compiled record of the test results that apply to your specific boat. Fabric batch certificate, weld peel tests, chamber air-test logs, and pre-delivery inspection checklist. Every number is traceable. Every inspector is identified. This is not just paperwork — it is our promise that what we delivered is what we specified.</p>
+  <p>If you ever have a quality concern, you can contact the lab directly — the contact details are printed on your certificate of conformance. We take every query seriously and commit to a formal investigation within 48 hours.</p>
 cta:
-  title: '需要獨立測試或品質驗證？'
-  subtitle: '我們的實驗室接受第三方測試工作——請與我們聯絡提供您的需求。'
-  button_text: '聯絡品質實驗室'
+  title: 需要獨立測試或品質驗證？
+  subtitle: 我們的實驗室接受第三方測試工作——請與我們聯絡提供您的需求。
+  button_text: 聯絡品質實驗室
   button_link: /contact
