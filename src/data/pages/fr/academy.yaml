@@ -1,0 +1,72 @@
+﻿hero:
+  tagline: Académie afarer
+  title: Centre d'apprentissage
+  subtitle: Guides et tutoriels pour tous les niveaux —des bases du SUP aux techniques de sauvetage avancées
+
+categories:
+  - level: Débutant
+    color: from-green-500 to-emerald-600
+    badge: bg-green-100 text-green-700
+    guides:
+      - title: Bases du SUP
+        desc: Apprenez les fondamentaux du stand-up paddle —posture, technique de pagaie et équilibre.
+        slug: sup-basics
+      - title: Techniques de pagaie
+        desc: Coup avant, coup circulaire, coup de traction et appui bas —maîtrisez les mouvements essentiels de pagaie.
+        slug: paddle-techniques
+      - title: Sécurité d'abord
+        desc: Pratiques de sécurité essentielles incluant la vérification météo, l'utilisation du VFI, les règles de leash et l'auto-sauvetage.
+        slug: safety-first
+  - level: Intermédiaire
+    color: from-blue-500 to-indigo-600
+    badge: bg-blue-100 text-blue-700
+    guides:
+      - title: Essentiels du tourisme
+        desc: Planification de pagaies de plusieurs heures —navigation, hydratation, rythme et lecture des prévisions de vent.
+        slug: touring-essentials
+      - title: Lecture météo
+        desc: Interpréter les prévisions marines, identifier les motifs nuageux et comprendre les effets du vent sur l'eau.
+        slug: weather-reading
+      - title: Bases de la navigation
+        desc: Lecture de cartes, utilisation de la boussole, points de cheminement GPS et planification d'itinéraires pour la pagaie côtière.
+        slug: navigation-basics
+      - title: Connaissance des marées
+        desc: Comprendre les cycles des marées, les courants et leur impact sur le moment du départ et le routage.
+        slug: tidal-awareness
+  - level: Avancé
+    color: from-purple-500 to-violet-600
+    badge: bg-purple-100 text-purple-700
+    guides:
+      - title: Planification de voyages multi-jours
+        desc: Logistique d'expédition —sélection d'équipement, planification des repas, protocoles de sécurité et contacts d'urgence.
+        slug: multi-day-trip-planning
+      - title: Techniques de sauvetage
+        desc: Auto-sauvetage, sauvetage en T, sauvetage esquimau pour SUPs et protocoles de remorquage en eau libre.
+        slug: rescue-techniques
+      - title: Pagaie de nuit
+        desc: Navigation après la tombée de la nuit —exigences d'éclairage, mémoire d'itinéraire, communication de groupe et sensibilisation aux dangers.
+        slug: night-paddling
+  - level: Entretien
+    color: from-amber-500 to-orange-600
+    badge: bg-amber-100 text-amber-700
+    guides:
+      - title: Nettoyage & entretien
+        desc: Rinçage à l'eau douce, protection UV, prévention des moisissures et techniques de séchage appropriées après chaque session.
+        slug: cleaning-and-care
+      - title: Guide de stockage
+        desc: Meilleures pratiques pour le stockage des planches et bateaux gonflables —dégonflage, pliage, contrôle de la température et durée de conservation.
+        slug: storage-guide
+      - title: Bases de la réparation
+        desc: Réparer les petites perforations, fuites de soudure et problèmes de valve avec des kits de réparation PVC et techniques de rapiéçage.
+        slug: repair-basics
+      - title: Entretien des valves
+        desc: Identifier les types de valves (Halkey-Roberts, Boston, Leafield), nettoyer les débris et remplacer les tiges défectueuses.
+        slug: valve-maintenance
+
+read_guide: Lire le guide →
+
+cta:
+  title: Vous ne savez pas par où commencer ?
+  desc: Faites notre quiz d'évaluation pour trouver les guides et l'équipement adaptés à votre niveau.
+  label: Contactez-nous →
+  link: /contact

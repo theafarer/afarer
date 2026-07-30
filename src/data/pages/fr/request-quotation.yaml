@@ -1,0 +1,57 @@
+﻿hero_text:
+  tagline: Get a Quote
+  title: 'Demander un Devis<br />pour Votre Projet'
+  subtitle: 'Dites-nous vos besoins. Nous répondons avec un devis détaillé sous 2 jours ouvrés.'
+steps2_process:
+  title: How It Works
+  subtitle: 'Quatre étapes simples de la demande au devis.'
+  items:
+    - title: 'Étape 1 : Soumettez vos besoins'
+      description: 'Remplissez le formulaire avec type de produit, quantité et spécifications.'
+      icon: tabler:file-text
+    - title: 'Étape 2 : Nous examinons & conseillons'
+      description: 'Notre équipe d’ingénierie examine vos besoins et recommande des configurations.'
+      icon: tabler:users
+    - title: 'Étape 3 : Recevez votre devis'
+      description: 'Vous recevez un devis détaillé avec prix, MOQ, délais, conditions de paiement et expédition. Généralement sous 48 heures.'
+      icon: tabler:currency-dollar
+    - title: 'Étape 4 : Échantillon & Production'
+      description: 'Après acceptation du devis, nous procédons à la production d’échantillons ou direct'
+      icon: tabler:building-factory
+content_form:
+  tagline: Quotation Form
+  title: 'Parlez-nous de votre projet'
+  subtitle: 'Tous les champs avec * sont obligatoires.'
+  fields:
+    - name: Product Type
+      type: select
+      options:
+        - SUP Boat
+        - Inflatable Boat
+        - SUP Board
+        - Inflatable SUP
+        - Life Vest
+        - Accessory
+        - Custom
+    - name: Quantity
+      type: text
+      placeholder: e.g. 50 units
+    - name: Target Market
+      type: text
+      placeholder: e.g. Europe, North America, Middle East
+    - name: Customization Needed
+      type: text
+      placeholder: e.g. custom colors, branding, packaging
+    - name: Timeline
+      type: text
+      placeholder: e.g. delivery within 90 days
+    - name: Additional Requirements
+      type: textarea
+      placeholder: Describe your application, technical specifications, or any special requirements
+cta:
+  title: 'Vous préférez discuter par email ?'
+  subtitle: 'Envoyez votre demande directement à notre équipe commerciale. Réponse sous 24 heures.'
+  actions:
+    - variant: primary
+      text: Email us directly
+      href: /contact

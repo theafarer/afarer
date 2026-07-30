@@ -1,0 +1,81 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `SUP Hull Design — Rocker, Rails, and Displacement vs Planing Hulls | ${SITE.name}`,
+  description:
+    'Technical guide to inflatable SUP hull design: rocker profiles, rail shapes, displacement vs planing hulls. How shape affects stability, speed, tracking, and handling.',
+  ignoreTitleTemplate: true,
+};
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'SUP Hull Design Guide',
+  description: metadata.description,
+  author: { '@type': 'Organization', name: SITE.name },
+  datePublished: '2026-07-27',
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd data={jsonLd} />
+  <article class="max-w-4xl mx-auto px-6 py-16">
+    <nav class="text-sm text-gray-500 mb-8">
+      <a href="/" class="hover:text-sky-600">{SITE.name}</a><span class="mx-2">/</span><a
+        href="/research"
+        class="hover:text-sky-600">Research</a
+      ><span class="mx-2">/</span><span class="text-gray-900">SUP Hull Design</span>
+    </nav>
+    <div class="mb-4">
+      <span
+        class="inline-block text-xs font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full"
+        >Engineering</span
+      ><span class="ml-3 text-sm text-gray-400">9 min read</span>
+    </div>
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">SUP Hull Design Guide</h1>
+    <p class="text-xl text-gray-500 mb-12 leading-relaxed">
+      Every dimension of a SUP hull — rocker, rail shape, entry line, and bottom contour — is engineered for a specific
+      performance profile. Understanding hull design helps you match a board to your paddling style.
+    </p>
+    <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600">
+      <h2>Rocker Profile</h2>
+      <p>
+        Rocker is the curvature of the board from nose to tail when viewed from the side. More rocker (higher nose
+        curve) helps the board ride over chop and waves without pearling (nose diving). Less rocker (flatter profile)
+        maximizes waterline length for better glide and tracking. All-around SUPs use moderate rocker — enough nose lift
+        for chop management without sacrificing too much waterline. Dedicated touring boards minimize rocker for maximum
+        glide efficiency. Whitewater boards use significant nose rocker to prevent pearling in steep river drops.
+      </p>
+      <h2>Rail Shape</h2>
+      <p>
+        The rail (edge of the board) significantly affects stability and turning. Hard rails (sharper edge) bite into
+        the water for better tracking but can catch in crosswind conditions. Soft rails (rounded edge) release water
+        more easily for smoother carving but provide less edge hold. Tapered rails (thicker at the center, thinner at
+        the edge) reduce drag while maintaining volume. Inflatable SUP rails are naturally softer than hard boards,
+        which is one reason inflatables feel more stable to beginners but less responsive to advanced paddlers.
+      </p>
+      <h2>Displacement vs Planing Hull</h2>
+      <p>
+        <strong>Displacement hulls</strong> have a pointed bow that parts the water, creating a clean entry and efficient
+        forward motion. The hull pushes water aside (displaces it) rather than riding on top. Displacement hulls excel at
+        straight-line speed and tracking in flat to moderate chop. They are standard on touring and racing SUPs.
+      </p>
+      <p>
+        <strong>Planing hulls</strong> have a flatter, wider bow that rides on top of the water rather than pushing through
+        it. They are more stable at rest and plane onto the surface at speed for reduced drag. Planing hulls turn more easily
+        and are preferred for surfing, whitewater, and all-around recreational use. Most all-around SUPs use a hybrid design
+        with a slight displacement entry transitioning to a planing tail.
+      </p>
+      <h2>Bottom Contour</h2>
+      <p>
+        Flat bottom: maximum primary stability, best for beginners and yoga. V-bottom (single concave): channels water
+        for improved tracking, common on touring boards. Double concave: reduces drag at speed, channels water to the
+        fins for enhanced hold. Inflatable SUP construction limits bottom contour complexity compared to hard boards
+        because the PVC must maintain a smooth inflation shape, but advanced manufacturers use strategic reinforcement
+        panels to create subtle bottom contours.
+      </p>
+    </div>
+  </article>
+</Layout>

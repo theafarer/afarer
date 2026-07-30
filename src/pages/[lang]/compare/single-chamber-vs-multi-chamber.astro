@@ -1,0 +1,260 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { languages, defaultLang } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+
+const metadata = {
+  title: `${t('compare.singleVsMulti.title') || 'Single Chamber vs Multi Chamber SUP — Which Is Safer?'}`,
+  description:
+    t('compare.singleVsMulti.desc') ||
+    'Compare single and multi chamber inflatable SUP boards across safety, durability, weight, cost, and use cases. Understand why chamber count matters for your safety.',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="Article"
+    article={{
+      headline: t('compare.singleVsMulti.headline') || 'Single Chamber vs Multi Chamber SUP — Which Is Safer?',
+      description:
+        t('compare.singleVsMulti.desc') ||
+        'Compare single and multi chamber inflatable SUP boards across safety, durability, weight, cost, and use cases.',
+      datePublished: '2026-07-27',
+    }}
+    data={{ url: `https://afarer.com/${lang}/compare/single-chamber-vs-multi-chamber` }}
+  />
+  <JsonLd
+    type="BreadcrumbList"
+    breadcrumbs={[
+      { name: t('home') || 'Home', href: `/${lang}/` },
+      { name: t('compare.label') || 'Compare', href: `/${lang}/compare` },
+      { name: t('compare.singleVsMulti.short') || 'Single vs Multi Chamber' },
+    ]}
+  />
+  <section class="max-w-4xl mx-auto py-24 px-6">
+    <a href={`/${lang}/compare`} class="text-sm text-sky-600 hover:text-sky-700"
+      >&larr; {t('compare.backToAll') || 'All Comparisons'}</a
+    >
+    <h1 class="mt-4 text-4xl font-semibold text-gray-900">
+      {t('compare.singleVsMulti.heading') || 'Single Chamber vs Multi Chamber SUP'}
+    </h1>
+    <p class="mt-4 text-lg text-gray-500">
+      {
+        t('compare.singleVsMulti.subtitle') ||
+          'The number of air chambers in an inflatable SUP board is one of the most important safety factors — yet it is often overlooked by first-time buyers. Here is everything you need to know.'
+      }
+    </p>
+
+    <div class="mt-12 overflow-x-auto">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="border-b-2 border-gray-200">
+            <th class="text-left py-4 px-4 font-semibold text-gray-700">{t('compare.factor') || 'Factor'}</th>
+            <th class="text-left py-4 px-4 font-semibold text-sky-700 bg-sky-50">
+              {t('compare.singleVsMulti.col1Title') || 'Single Chamber'}
+            </th>
+            <th class="text-left py-4 px-4 font-semibold text-emerald-700 bg-emerald-50">
+              {t('compare.singleVsMulti.col2Title') || 'Multi Chamber (3+)'}
+            </th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr class="hover:bg-gray-50"
+            ><td class="py-3 px-4 font-medium text-gray-900">{t('compare.singleVsMulti.r1') || 'Safety'}</td><td
+              class="py-3 px-4 text-gray-600"
+              >{
+                t('compare.singleVsMulti.r1a') || 'A single puncture deflates the entire board. No backup buoyancy.'
+              }</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{
+                t('compare.singleVsMulti.r1b') ||
+                  'Each chamber is independent. A puncture in one leaves others inflated — you stay afloat and paddle back.'
+              }</td
+            ></tr
+          >
+          <tr class="hover:bg-gray-50"
+            ><td class="py-3 px-4 font-medium text-gray-900">{t('compare.singleVsMulti.r2') || 'Number of Chambers'}</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{
+                t('compare.singleVsMulti.r2a') || '1 main air chamber (+ a small outer safety rail on some models).'
+              }</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{
+                t('compare.singleVsMulti.r2b') ||
+                  '3–5 independent chambers. Each with its own valve and pressure integrity.'
+              }</td
+            ></tr
+          >
+          <tr class="hover:bg-gray-50"
+            ><td class="py-3 px-4 font-medium text-gray-900"
+              >{t('compare.singleVsMulti.r3') || 'Buoyancy Redundancy'}</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{t('compare.singleVsMulti.r3a') || 'None. Total loss of buoyancy on failure.'}</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{t('compare.singleVsMulti.r3b') || 'Full. 2+ remaining chambers keep the board operational.'}</td
+            ></tr
+          >
+          <tr class="hover:bg-gray-50"
+            ><td class="py-3 px-4 font-medium text-gray-900">{t('compare.singleVsMulti.r4') || 'Weight'}</td><td
+              class="py-3 px-4 text-gray-600"
+              >{
+                t('compare.singleVsMulti.r4a') || 'Lighter. Fewer internal weld lines and valves mean less material.'
+              }</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{
+                t('compare.singleVsMulti.r4b') ||
+                  'Slightly heavier. Internal baffles and additional valve hardware add weight.'
+              }</td
+            ></tr
+          >
+          <tr class="hover:bg-gray-50"
+            ><td class="py-3 px-4 font-medium text-gray-900">{t('compare.singleVsMulti.r5') || 'Packed Size'}</td><td
+              class="py-3 px-4 text-gray-600"
+              >{t('compare.singleVsMulti.r5a') || 'More compact when deflated. Easier to store and travel with.'}</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{t('compare.singleVsMulti.r5b') || 'Slightly bulkier. Internal dividers prevent fully flat folding.'}</td
+            ></tr
+          >
+          <tr class="hover:bg-gray-50"
+            ><td class="py-3 px-4 font-medium text-gray-900">{t('compare.singleVsMulti.r6') || 'Setup Time'}</td><td
+              class="py-3 px-4 text-gray-600"
+              >{t('compare.singleVsMulti.r6a') || 'Faster. Only one chamber to inflate.'}</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{t('compare.singleVsMulti.r6b') || 'Slower. Each chamber must be inflated separately.'}</td
+            ></tr
+          >
+          <tr class="hover:bg-gray-50"
+            ><td class="py-3 px-4 font-medium text-gray-900"
+              >{t('compare.singleVsMulti.r7') || 'Stiffness / Rigidity'}</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{t('compare.singleVsMulti.r7a') || 'Good. Single large chamber holds uniform pressure.'}</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{
+                t('compare.singleVsMulti.r7b') ||
+                  'Excellent. Internal baffles reduce flex and create a stiffer platform.'
+              }</td
+            ></tr
+          >
+          <tr class="hover:bg-gray-50"
+            ><td class="py-3 px-4 font-medium text-gray-900">{t('compare.singleVsMulti.r8') || 'Cost'}</td><td
+              class="py-3 px-4 text-gray-600"
+              >{t('compare.singleVsMulti.r8a') || 'Lower. Simpler manufacturing with fewer components.'}</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{
+                t('compare.singleVsMulti.r8b') ||
+                  'Higher. Complex internal construction and additional valves increase cost.'
+              }</td
+            ></tr
+          >
+          <tr class="hover:bg-gray-50"
+            ><td class="py-3 px-4 font-medium text-gray-900">{t('compare.singleVsMulti.r9') || 'Durability'}</td><td
+              class="py-3 px-4 text-gray-600"
+              >{
+                t('compare.singleVsMulti.r9a') ||
+                  'Moderate. Single point of failure if the main chamber is compromised.'
+              }</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{
+                t('compare.singleVsMulti.r9b') ||
+                  'Superior. Redundant chambers provide failsafe operation in demanding conditions.'
+              }</td
+            ></tr
+          >
+          <tr class="hover:bg-gray-50"
+            ><td class="py-3 px-4 font-medium text-gray-900">{t('compare.singleVsMulti.r10') || 'Repair Ease'}</td><td
+              class="py-3 px-4 text-gray-600"
+              >{t('compare.singleVsMulti.r10a') || 'Simple. Single chamber to locate and patch.'}</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{
+                t('compare.singleVsMulti.r10b') ||
+                  'Moderate. Must identify which chamber is leaking. Repair process is the same.'
+              }</td
+            ></tr
+          >
+          <tr class="hover:bg-gray-50"
+            ><td class="py-3 px-4 font-medium text-gray-900">{t('compare.singleVsMulti.r11') || 'Best For'}</td><td
+              class="py-3 px-4 text-gray-600"
+              >{
+                t('compare.singleVsMulti.r11a') ||
+                  'Casual recreational paddling in calm, sheltered waters close to shore.'
+              }</td
+            ><td class="py-3 px-4 text-gray-600"
+              >{
+                t('compare.singleVsMulti.r11b') ||
+                  'Coastal touring, open water, rental fleets, safety-conscious paddlers, commercial use.'
+              }</td
+            ></tr
+          >
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="mt-12 text-2xl font-semibold text-gray-900">
+      {t('compare.singleVsMulti.whyMattersTitle') || 'Why Chamber Count Matters'}
+    </h2>
+    <p class="mt-4 text-gray-600 leading-relaxed">
+      {
+        t('compare.singleVsMulti.whyMattersP1') ||
+          'The most significant safety advantage of multi-chamber construction is <strong>buoyancy redundancy</strong>. If you puncture a single-chamber board 500 meters offshore, you lose all flotation immediately. With a multi-chamber board, you lose only one section — the remaining chambers keep you and the board afloat, giving you time to paddle back or signal for help.'
+      }
+    </p>
+    <p class="mt-4 text-gray-600 leading-relaxed">
+      {
+        t('compare.singleVsMulti.whyMattersP2') ||
+          'For rental operators, resorts, and paddle clubs, multi-chamber boards reduce liability and equipment downtime. A minor puncture no longer means a total board failure — the board remains usable until end-of-day repair.'
+      }
+    </p>
+
+    <h2 class="mt-8 text-2xl font-semibold text-gray-900">
+      {t('compare.singleVsMulti.whenSingleTitle') || 'When Single Chamber Is Acceptable'}
+    </h2>
+    <p class="mt-4 text-gray-600 leading-relaxed">
+      {
+        t('compare.singleVsMulti.whenSingleDesc') ||
+          'Single-chamber boards are fine for protected waters, swimming pools, shallow beaches, and SUP yoga where the water depth is safe to stand in. They are also lighter and more affordable — a good choice for casual recreational use where the risk of puncture is minimal.'
+      }
+    </p>
+
+    <h2 class="mt-8 text-2xl font-semibold text-gray-900">
+      {t('compare.singleVsMulti.recTitle') || 'The Bottom Line'}
+    </h2>
+    <p class="mt-4 text-gray-600 leading-relaxed">
+      {
+        t('compare.singleVsMulti.recDesc') ||
+          'For anyone paddling beyond wading depth — and especially for commercial operators — a <strong>multi-chamber SUP</strong> is the only responsible choice. All afarer SUP boards feature multi-chamber drop-stitch construction with 3+ independent chambers for maximum safety and structural rigidity. Always pair your board with a CE-certified life vest for complete protection.'
+      }
+    </p>
+    <div class="mt-8 flex gap-4 flex-wrap">
+      <a
+        href={`/${lang}/products`}
+        class="px-6 py-3 bg-gray-900 text-white rounded-full text-sm font-medium hover:bg-gray-800 transition"
+        >{t('compare.singleVsMulti.cta') || 'Shop Multi-Chamber SUPs'}</a
+      >
+      <a
+        href={`/${lang}/safety`}
+        class="px-6 py-3 border border-gray-200 text-gray-700 rounded-full text-sm font-medium hover:border-gray-400 transition"
+        >{t('compare.singleVsMulti.safetyCta') || 'Safety Guide'}</a
+      >
+    </div>
+  </section>
+
+  <section class="sr-only" data-ai-block="definition" aria-hidden="true">
+    <p>
+      {
+        t('compare.singleVsMulti.aiBlock') ||
+          'Comparison between single chamber and multi chamber inflatable SUP boards across 11 key factors: safety, number of chambers, buoyancy redundancy, weight, packed size, setup time, stiffness, cost, durability, repair ease, and best use cases. Multi-chamber boards (3-5 independent chambers) provide critical buoyancy redundancy. All afarer SUP boards feature multi-chamber drop-stitch construction.'
+      }
+    </p>
+  </section>
+</Layout>

@@ -1,0 +1,139 @@
+﻿---
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export const prerender = true;
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/solutions-rental-operators.ts';
+import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'solutions-rental-operators');
+
+const hero = page.hero ?? {};
+const features = page.features ?? {};
+const stats = page.stats ?? {};
+const fleetGuide = page.fleet_guide ?? {};
+const cta = page.cta ?? {};
+const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+
+const metadata = {
+  title: hero.title ? hero.title.replace('{SITE}', SITE.name) : `SUP Rental Fleet Solutions — ${SITE.name}`,
+  description: hero.subtitle || '',
+};
+const crumbs = [
+  { name: t('nav.home') || 'Home', href: `/${lang}/` },
+  { name: t('nav.solutions') || 'Solutions', href: `/${lang}/solutions/` },
+  { name: 'Rental Operators' },
+];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero tagline={hero.tagline} image={hero.image} title={hero.title} subtitle={hero.subtitle} />
+
+  <Features title={features.title} subtitle={features.subtitle} items={features.items} columns={3} />
+
+  {stats.stats?.length > 0 && <Stats title={stats.title} stats={stats.stats} />}
+
+  {
+    fleetGuide.tiers?.length > 0 && (
+      <WidgetWrapper containerClass="max-w-5xl mx-auto">
+        <Headline title={fleetGuide.title} subtitle={fleetGuide.subtitle} />
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+          {fleetGuide.tiers?.map((tier: any) => (
+            <div class="rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow px-6 py-8 text-center">
+              <p class="text-sm font-semibold uppercase tracking-widest text-primary">{tier.label}</p>
+              <p class="text-3xl font-bold mt-4">{tier.boards}</p>
+              <p class="text-sm text-muted mt-1">Boards</p>
+              <p class="text-xl font-semibold text-primary mt-4">{tier.revenue}</p>
+              <p class="text-sm text-muted mt-1">Estimated Revenue</p>
+            </div>
+          ))}
+        </div>
+      </WidgetWrapper>
+    )
+  }
+
+  <!-- Related Products -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <div class="text-center mb-8">
+      <span class="text-sm font-semibold text-sky-600 tracking-[0.15em] uppercase"
+        >{t('product.related') || 'Featured Products'}</span
+      >
+      <h2 class="mt-2 text-2xl font-bold text-gray-900 dark:text-slate-100">SUPs for Rental Operations</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a
+        href={lh('/products/sup-explorer-11')}
+        class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
+        <h3
+          class="font-semibold text-gray-900 dark:text-slate-100 group-hover:text-sky-700 dark:group-hover:text-sky-400"
+        >
+          SUP Explorer 11
+        </h3>
+        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">
+          Durable all-rounder built for high-rotation rental use.
+        </p>
+        <span class="mt-3 inline-block text-sm font-medium text-sky-600">{t('product.view') || 'View Product'} →</span>
+      </a>
+      <a
+        href={lh('/products/sup-ocean-voyager')}
+        class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
+        <h3
+          class="font-semibold text-gray-900 dark:text-slate-100 group-hover:text-sky-700 dark:group-hover:text-sky-400"
+        >
+          SUP Ocean Voyager
+        </h3>
+        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">Premium touring SUP for experienced renters.</p>
+        <span class="mt-3 inline-block text-sm font-medium text-sky-600">{t('product.view') || 'View Product'} →</span>
+      </a>
+      <a
+        href={lh('/products/life-vest-classic')}
+        class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
+        <h3
+          class="font-semibold text-gray-900 dark:text-slate-100 group-hover:text-sky-700 dark:group-hover:text-sky-400"
+        >
+          Life Vest Classic
+        </h3>
+        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">CE-certified rental fleet safety equipment.</p>
+        <span class="mt-3 inline-block text-sm font-medium text-sky-600">{t('product.view') || 'View Product'} →</span>
+      </a>
+    </div>
+  </section>
+
+  <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
+  <JsonLd
+    type="Service"
+    service={{
+      name: hero.title ? hero.title.replace('{SITE}', SITE.name) : 'SUP Rental Fleet Solutions',
+      description: hero.subtitle || 'High-rotation SUP boards engineered for daily rental use',
+      serviceType: 'Rental Operator Solutions',
+      areaServed: ['Global'],
+      url: `/${lang}/solutions/rental-operators`,
+      items: [
+        { name: 'Rental-Grade SUPs', description: 'UV-resistant, quick-dry, stackable boards for high rotation' },
+        { name: 'Fleet Management', description: 'RFID tracking and inventory management systems' },
+        { name: 'Staff Training', description: 'On-site rental operations training and support' },
+      ],
+    }}
+  />
+</Layout>

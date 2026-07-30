@@ -1,0 +1,53 @@
+﻿---
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export const prerender = true;
+
+import Steps2 from '~/components/widgets/Steps2.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/request-quotation.ts';
+import { languages } from '~/i18n/config';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'request-quotation');
+
+const hero = page.hero_text ?? {};
+const process = page.steps2_process ?? {};
+const form = page.content_form ?? {};
+const cta = page.cta ?? {};
+const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+
+const metadata = {
+  title: `Request a Quote — ${SITE.name} | OEM/ODM Marine Manufacturing`,
+  description:
+    "Submit your product requirements for a detailed quotation from Afarer's manufacturing team. We respond within 2 business days.",
+};
+const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Request a Quote' }];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <HeroText tagline={hero.tagline} title={hero.title} subtitle={hero.subtitle} />
+  <Steps2 title={process.title} subtitle={process.subtitle} items={process.items} />
+  <Content
+    tagline={form.tagline}
+    title={form.title}
+    subtitle={form.subtitle}
+    content={form.fields
+      ?.map(
+        (f: any) =>
+          `- **${f.name}** ${f.type === 'textarea' ? '(long text)' : f.type === 'select' ? `(${f.options?.join(', ')})` : `(${f.type})`}: ${f.placeholder || ''}`
+      )
+      .join('\n')}
+  />
+  <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
+</Layout>

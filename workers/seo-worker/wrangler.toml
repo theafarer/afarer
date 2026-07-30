@@ -1,0 +1,15 @@
+name = "afarer-seo"
+main = "src/index.ts"
+compatibility_date = "2026-07-08"
+compatibility_flags = ["nodejs_compat"]
+
+routes = [
+  { pattern = "afarer.com/api/search", zone_name = "afarer.com" },
+  { pattern = "afarer.com/api/geo-score", zone_name = "afarer.com" },
+  { pattern = "afarer.com/api/page-inspect", zone_name = "afarer.com" },
+  { pattern = "afarer.com/api/seo/*", zone_name = "afarer.com" },
+]
+
+[[r2_buckets]]
+binding = "DATA_BUCKET"
+bucket_name = "afarer-data"

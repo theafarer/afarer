@@ -1,0 +1,174 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import RelatedPages from '~/components/content/RelatedPages.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `ODM SUP Board – Custom SUP Design & Manufacturing Service | ${SITE.name}`,
+  description: `ODM SUP board development service from ${SITE.name}. We design, engineer, and manufacture inflatable SUP boards based on market trends. Custom branding, CE certified. MOQ 5-10 units.`,
+};
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'ODM SUP Board' }];
+
+const benefits = [
+  { title: 'Market-Driven Design', desc: 'Our team identifies emerging trends, consumer preferences, and market gaps. We develop products that are ready to sell before you invest in custom mold design.' },
+  { title: 'Faster Time-to-Market', desc: 'Skip the design and development phase. Select from our ODM catalog, customize branding and packaging, and launch in weeks instead of months.' },
+  { title: 'Lower Upfront Investment', desc: 'No mold creation costs, no engineering fees. ODM products use proven platform designs with validated manufacturing processes and established supply chains.' },
+  { title: 'Proven Performance', desc: 'Every ODM design undergoes rigorous field testing, quality validation, and compliance certification before being offered to clients.' },
+  { title: 'Exclusive Regional Rights', desc: 'We offer exclusive distribution agreements for ODM models in your target market. Your product, your territory, your brand.' },
+  { title: 'Continuous Innovation', desc: 'Our R&D team regularly updates ODM models with new materials, improved construction, and enhanced features based on market feedback.' },
+];
+
+const steps = [
+  { step: '1', title: 'Market Research', desc: 'We analyze global SUP market trends, competitor products, and consumer preferences to identify high-potential product opportunities.' },
+  { step: '2', title: 'Product Concept', desc: 'Our design team creates concept sketches, specifications, and target pricing. Concepts presented with market positioning analysis.' },
+  { step: '3', title: 'Engineering & Prototyping', desc: 'Detailed 3D CAD design, FEA structural analysis, and pre-production samples. Designs validated for performance, durability, and manufacturability.' },
+  { step: '4', title: 'Client Selection', desc: 'You review the ODM portfolio and select products that match your brand strategy. Customize colors, graphics, packaging, and accessory configuration.' },
+  { step: '5', title: 'Production & QC', desc: 'Bulk manufacturing with full quality control. CE declaration of conformity, ISO 9001 traceability, and AQL 2.5 inspection standard.' },
+  { step: '6', title: 'Branded Delivery', desc: 'Finished products with your branding, packaging, and documentation. FOB Qingdao with full export support and global shipping.' },
+];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <meta name="ai-intent" content="odm-sup-board,sup-board-odm,oem-odm-sup-manufacturer,custom-sup-design-service,odm-inflatable-paddle-board" />
+  <JsonLd type="BreadcrumbList" breadcrumbs={crumbs} />
+  <JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What is ODM SUP board service?", acceptedAnswer: { "@type": "Answer", text: "ODM (Original Design Manufacturing) means we design and develop SUP boards based on our market research and present them to you. You select products, customize branding, and sell them under your brand without investing in product development." } }, { "@type": "Question", name: "How is ODM different from OEM?", acceptedAnswer: { "@type": "Answer", text: "With OEM, you bring your own design and we manufacture it. With ODM, we design the product based on market trends and you select from our portfolio. ODM requires lower upfront investment since there are no mold or engineering costs." } }, { "@type": "Question", name: "What is the MOQ for ODM SUP boards?", acceptedAnswer: { "@type": "Answer", text: "Standard MOQ is 5-10 units per model for ODM SUP boards. Sample orders are available for evaluation before committing to bulk production." } }, { "@type": "Question", name: "Can I get exclusive rights to an ODM SUP model?", acceptedAnswer: { "@type": "Answer", text: "Yes. We offer exclusive regional distribution agreements for ODM models. Contact our sales team to discuss exclusivity terms for your target market." } }, { "@type": "Question", name: "How long does ODM SUP board production take?", acceptedAnswer: { "@type": "Answer", text: "Since ODM products use proven designs, production is faster than OEM. Sample orders: 7-10 working days. Bulk production: 25-35 days from order confirmation. Total timeline including shipping: 6-10 weeks." } }] }} />
+
+  <!-- Hero -->
+  <section class="relative py-24 px-6 overflow-hidden bg-secondary">
+    <div class="absolute inset-0">
+      <img src="https://assets.afarer.com/images/afarer/products/sup-series/sup-cruiser-allrounder-1.webp" alt="ODM SUP board design and manufacturing" class="w-full h-full object-cover opacity-30" style="object-position: center 40%;" />
+      <div class="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/60 to-secondary/30"></div>
+    </div>
+    <div class="relative z-10 max-w-5xl mx-auto text-center">
+      <span class="text-sm font-semibold text-sky-300 tracking-[0.2em] uppercase">ODM Service</span>
+      <h1 class="mt-4 text-4xl md:text-6xl font-bold text-white leading-tight">ODM SUP Board Development</h1>
+      <p class="mt-6 text-lg text-white/80 max-w-3xl mx-auto">Market-ready SUP board designs developed by our R&D team. Select proven products, add your brand, and launch faster with lower upfront investment. Full ODM service from concept to delivery.</p>
+      <div class="mt-10 flex items-center justify-center gap-4 flex-wrap">
+        <a href="/contact?subject=ODM%20SUP%20Inquiry" class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all">Explore ODM Products <span>→</span></a>
+        <a href="/oem-odm-manufacturer" class="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition-all">Full OEM/ODM Services →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="bg-gray-50 px-6 py-16 border-y border-gray-200">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-sm font-semibold text-sky-600 tracking-[0.15em] uppercase">Why ODM</span>
+        <h2 class="mt-4 text-4xl font-bold text-gray-900">Benefits of ODM SUP Board Development</h2>
+        <p class="mt-4 text-lg text-gray-500">Launch SUP products faster and more cost-effectively with ODM.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {benefits.map((b) => (
+          <div class="bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 bg-sky-50 rounded-xl flex items-center justify-center text-sky-600 font-bold text-lg">&#9733;</div>
+            <h3 class="mt-4 text-lg font-semibold text-gray-900">{b.title}</h3>
+            <p class="mt-2 text-sm text-gray-500 leading-relaxed">{b.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="text-center mb-16">
+      <span class="text-sm font-semibold text-sky-600 tracking-[0.15em] uppercase">ODM Process</span>
+      <h2 class="mt-4 text-4xl font-bold text-gray-900">How ODM SUP Board Development Works</h2>
+      <p class="mt-4 text-lg text-gray-500">Six stages from market research to your branded delivery.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {steps.map((s) => (
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-shadow">
+          <span class="text-4xl font-bold text-sky-200">{s.step}</span>
+          <h3 class="mt-3 text-lg font-semibold text-gray-900">{s.title}</h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">{s.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ODM vs OEM -->
+  <section class="bg-gray-50 px-6 py-16 border-y border-gray-200">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-sm font-semibold text-sky-600 tracking-[0.15em] uppercase">ODM vs OEM</span>
+        <h2 class="mt-4 text-3xl font-bold text-gray-900">ODM vs OEM: Which Is Right for You?</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-2xl p-6 border border-gray-200">
+          <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">ODM (Original Design Manufacturing)</span>
+          <ul class="mt-4 space-y-2 text-sm text-gray-600">
+            <li class="flex items-start gap-2"><span class="text-sky-500 mt-0.5">&#10003;</span> Products designed by our R&D team based on market trends</li>
+            <li class="flex items-start gap-2"><span class="text-sky-500 mt-0.5">&#10003;</span> Lower upfront investment — no mold or engineering costs</li>
+            <li class="flex items-start gap-2"><span class="text-sky-500 mt-0.5">&#10003;</span> Faster time-to-market with proven platform designs</li>
+            <li class="flex items-start gap-2"><span class="text-sky-500 mt-0.5">&#10003;</span> Customize branding, colors, and packaging only</li>
+            <li class="flex items-start gap-2"><span class="text-sky-500 mt-0.5">&#10003;</span> Exclusive regional rights available</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-gray-200">
+          <span class="text-xs font-bold text-gray-600 uppercase tracking-wider">OEM (Original Equipment Manufacturing)</span>
+          <ul class="mt-4 space-y-2 text-sm text-gray-600">
+            <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5">&#10003;</span> Your own design, specifications, and intellectual property</li>
+            <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5">&#10003;</span> Higher upfront — custom mold creation and engineering</li>
+            <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5">&#10003;</span> Longer development timeline with design + prototyping</li>
+            <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5">&#10003;</span> Full control over every aspect of the product</li>
+            <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5">&#10003;</span> Exclusive IP ownership — the design is yours</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="max-w-3xl mx-auto px-6 py-16">
+    <div class="text-center mb-12">
+      <span class="text-sm font-semibold text-sky-600 tracking-[0.15em] uppercase">FAQs</span>
+      <h2 class="mt-4 text-3xl font-bold text-gray-900">ODM SUP Board FAQ</h2>
+      <p class="mt-4 text-gray-500">Common questions about our ODM service.</p>
+    </div>
+    <div class="space-y-4">
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>What is ODM SUP board service?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4"><p class="text-gray-600 leading-relaxed">ODM (Original Design Manufacturing) means we design and develop SUP boards based on our market research and present them to you. You select products, customize branding, and sell them under your brand without investing in product development.</p></div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>How is ODM different from OEM?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4"><p class="text-gray-600 leading-relaxed">With OEM, you bring your own design and we manufacture it. With ODM, we design the product based on market trends and you select from our portfolio. ODM requires lower upfront investment since there are no mold or engineering costs.</p></div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>What is the MOQ for ODM SUP boards?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4"><p class="text-gray-600 leading-relaxed">Standard MOQ is 5-10 units per model for ODM SUP boards. Sample orders are available for evaluation before committing to bulk production.</p></div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>Can I get exclusive rights to an ODM SUP model?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4"><p class="text-gray-600 leading-relaxed">Yes. We offer exclusive regional distribution agreements for ODM models. Contact our sales team to discuss exclusivity terms for your target market.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <RelatedPages
+    title="Related Services"
+    subtitle="Explore more OEM/ODM capabilities"
+    links={[
+      { title: 'OEM SUP Board', description: 'Full OEM manufacturing for custom paddle boards.', href: '/oem-sup-board', label: 'OEM' },
+      { title: 'Private Label SUP', description: 'Complete private label service for your brand.', href: '/private-label-sup', label: 'Private Label' },
+      { title: 'OEM/ODM Manufacturer', description: 'Full-spectrum manufacturing services.', href: '/oem-odm-manufacturer', label: 'OEM/ODM' },
+      { title: 'Factory Overview', description: 'Tour our 12,000 m² ISO-certified facility.', href: '/factory', label: 'Factory' },
+    ]}
+  />
+</Layout>

@@ -1,0 +1,148 @@
+﻿hero:
+  tagline: Fabrika
+  title: Fabrika ve Üretim
+  subtitle: 12.000 m2 entegre üretim —hammaddeden bitmiş bota
+
+intro:
+  - "**Qingdao Vatrad Group Co., Ltd.**'nin bir fabrika markası olan afarer, üretimin her aşamasını kontrol eder —ham PVC ve fiberglas malzemelerin gelişinden bitmiş botun sevkiyat öncesi son denetimine kadar. Qingdao Ekonomik Kalkınma Bölgesi'ndeki üretim tesisimiz 12.000 metrekare alan kaplar ve PVC kesim, boru ısı yalıtımı, fiberglas SUP gövde üretimi, SUP dijital baskı, son montaj ve kalite testi için özel atölyelere ev sahipliği yapar."
+  - Tasarım, mühendislik, prototipleme, üretim ve testi tek çatı altında birleştirerek, sözleşmeli üretimin verimsizliklerini ortadan kaldırır ve yapı kalitesi, malzeme seçimi ve teslimat süreleri üzerinde doğrudan kontrol sahibi oluruz. Atölyemizden çıkan her bot, bizim insanlarımız tarafından, bizim ekipmanımızda, bizim standartlarımıza göre üretilir.
+
+stats:
+  - value: 12.000 m2
+    label: Üretim alanı
+  - value: 200+
+    label: Vasıflı işçi
+  - value: 15.000+
+    label: Yıllık üretilen bot
+  - value: 'ISO 9001'
+    label: Kalite sertifikalı
+
+workshops_section:
+  tagline: Atölyeler
+  title: Üretim Atölyeleri
+  workshops:
+    - title: PVC Kesim ve Malzeme Hazırlığı
+      description: Otomatik CNC kesim makineleri, PVC, Hypalon ve drop-stitch kumaşları milimetre altı hassasiyetle işler. Bilgisayar destekli optimizasyon, malzeme israfını en aza indirir ve her panelin kaynak öncesinde boyutsal spesifikasyonunu karşılamasını sağlar.
+      image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
+    - title: Boru Kaynağı ve Isı Yalıtımı
+      description: Isı yalıtım makineleri ve RF dielektrik preslerle donatılmış özel kaynak atölyesi. Sıcak hava ısı yalıtıcıları, PVC tüp odalarını birleştirir ve kaynaştırırken, RF kaynakları ISO 6185 gereksinimlerini aşan yüksek mukavemetli hava geçirmez dikişler üretir.
+      image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
+    - title: SUP Gövde Üretimi —Fiberglas
+      description: SUP bot gövdeleri, polyester ve vinilester reçine sistemleri ile el yatırmalı fiberglas kalıplama kullanılarak üretilir. Her katman, tutarlı kalite için elle yuvarlanır ve vakum torbalanır. Jelkot sprey kabini, yüksek parlaklıkta, UV'ye dayanıklı bir deniz kaplaması sağlar.
+      image: https://assets.afarer.com/images/afarer/factory/afarer-warehouse-storage.webp
+    - title: SUP Baskı ve Dekorasyon
+      description: SUP boardları, tam renkli grafikler için dijital baskı  ve logolar ve tekrar eden desenler için serigrafi  kullanılarak dekore edilir. Dijital yazıcılar fotoğraf kalitesinde güverte tasarımları üretirken, serigrafi dayanıklı, canlı marka işaretleri sunar.
+      image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1.webp
+    - title: Son Montaj ve Donanım
+      description: Fiberglas gövdelerin ve PVC tüplerin birleştirildiği, motorların monte edildiği, direksiyon ve kontrollerin bağlandığı ve elektrik sistemlerinin kablolandığı montaj hattı. Her bot, ekip lideri tarafından imzalanan 100 puanlık bir montaj kontrol listesini takip eder.
+      image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
+    - title: Kalite Testi ve Denetim
+      description: Tamamlanan her bot, sevkiyattan önce zorunlu hava tutma testi, dikiş soyulma doğrulaması ve tam sistem kontrolünden geçer. Kalite laboratuvarımız üretimden bağımsız olarak çalışır ve doğrudan yönetime rapor verir.
+      image: https://assets.afarer.com/images/afarer/factory/afarer-pressure-testing.webp
+
+equipment_section:
+  tagline: Ekipman
+  title: Ana Üretim Ekipmanları
+  view_full: Tam ekipman listesini görüntüle →
+  view_full_link: /factory/equipment
+  items:
+    - name: Otomatik PVC Kesim Makinesi
+      spec: CNC kontrollü, 0,1 mm hassasiyet
+    - name: Isı Yalıtım Makinesi
+      spec: Sıcak hava, 200°C—00 °C, boru birleştirme için
+    - name: RF Dielektrik Kaynak Presi
+      spec: 15 kW, hava geçirmez dikiş kaynağı
+    - name: Fiberglas El Yatırmalı Kalıplar
+      spec: 6 m'ye kadar SUP gövdeleri
+    - name: Dijital Yazıcı
+      spec: Tam renkli SUP güverte grafikleri
+    - name: Serigrafi Makinesi
+      spec: Çok renkli logo baskısı
+
+qc_section:
+  tagline: Kalite Kontrol
+  title: Test ve Kalite Güvence Süreci
+  subtitle: Her bot, sevkiyattan önce zorunlu testlerden geçer. Kalite laboratuvarımız üretimden bağımsız olarak çalışır ve doğrudan yönetime rapor verir.
+  steps:
+    - step: '1'
+      title: Hammadde Denetimi
+      desc: PVC, Hypalon ve drop-stitch kumaşlar, herhangi bir parti üretime girmeden önce çekme testi (), yırtılma yayılması ve UV direnci doğrulamasından geçer.
+    - step: '2'
+      title: 48 Saat Hava Tutma Testi
+      desc: Her tüp odası, nominal basıncın %125'ine kadar şişirilir ve 48 saat bekletilir. %5'in altındaki basınç düşüşü, otomatik reddetme ve dikiş yeniden incelemesini tetikler.
+    - step: '3'
+      title: Yük ve Denge Testi
+      desc: Tamamlanan botlar, maksimum nominal kapasiteye kadar yüklenir ve stabilite, serbest bordo ve kullanım açısından test edilir. Her bot, son denetimden önce suda test edilir.
+
+oem_section:
+  tagline: OEM Projeleri
+  title: Marka ve OEM Ortaklığı Vaka Çalışmaları
+  subtitle: Kavramdan konteynere —küresel markaların şişme deniz aracı hatlarını başlatmasına ve ölçeklendirmesine nasıl yardımcı olduğumuz.
+  cases:
+    - challenge: Avrupalı bir açık hava perakendecisi, benzersiz güverte grafiklerine, çevre dostu PVC'ye ve perakendeye hazır ambalaja sahip özel etiketli bir SUP hattına ihtiyaç duyuyordu —tamamı 60 günde teslim edilecek.
+      solution: Özel dijital baskı dosyaları geliştirdik, REACH uyumlu PVC tedarik ettik ve tasarım ekibini Qingdao fabrikamıza yerleştirerek numune sürecini 3 turdan 1 tura indirdik.
+      result: İmzalı siparişten FOB'a 55 gün. 4 SKU'da 2.400 adet. İlk konteyner gelmeden tekrar sipariş verildi.
+    - challenge: ABD merkezli bir su sporları start-up'ı, özel gövde şekline, ortak markalı ambalaja ve perakende yerleşimi için BSCI sertifikasına sahip yüksek performanslı bir drop-stitch SUP ihtiyacı duyuyordu.
+      solution: Mevcut drop-stitch SUP kalıbını değiştirilmiş rocker profiliyle uyarladık, ortak markalı ambalaj sanatı geliştirdik ve tam BSCI denetim belgeleri sağladık.
+      result: 3 büyük ABD açık hava zincirinde başarıyla listelendi. İlk yılda %98 satış oranıyla 5.000+ adet.
+    - challenge: Avustralyalı bir distribütör, özel tüp renklerine, Hypalon yükseltme seçeneğine ve Avustralya Standardı AS 1799'a uygunluğa sahip CE sertifikalı bir SUP serisine ihtiyaç duyuyordu.
+      solution: 4 tüp renk varyantı ile ön üretim numuneleri ürettik, Japon tedarikçiden CSM Hypalon tedarik ettik ve üçüncü taraf AS 1799 uyumluluk testini koordine ettik.
+      result: AU/NZ pazarında 3 modelli SUP serisi piyasaya sürüldü. Ardından 12 devriye SUP'si için devlet ihalesi kazanıldı.
+
+faq_section:
+  tagline: SSS
+  title: B2B ve OEM Sıkça Sorulan Sorular
+  questions:
+    - q: OEM şişme SUP boardları için minimum sipariş miktarı (MOQ) nedir?
+      a: Standart OEM modelleri için MOQ 5—0 adetten başlar. Özel kalıplar ve özel etiket projeleri, karmaşıklığa bağlı olarak minimum 200 adet gerektirir. Yeni marka lansmanları için deneme siparişleri ve numune çalışmaları mevcuttur.
+    - q: afarer BSCI sertifikasına sahip mi?
+      a: Evet. Fabrikamız geçerli BSCI sosyal uyumluluk sertifikasına sahiptir (denetim raporu talep üzerine mevcuttur). Ayrıca kalite yönetimi için ISO 9001 ve tüm ürünler CE CE  sertifikasına sahiptir. Her OEM sevkiyatıyla birlikte REACH ve RoHS uyumluluk belgeleri sağlanır.
+    - q: Bir OEM siparişi için tipik teslim süresi nedir?
+      a: Evet. Fabrikamız geçerli BSCI sosyal uyumluluk sertifikasına sahiptir (denetim raporu talep üzerine mevcuttur). Ayrıca kalite yönetimi için ISO 9001 ve tüm ürünler CE CE  sertifikasına sahiptir. Her OEM sevkiyatıyla birlikte REACH ve RoHS uyumluluk belgeleri sağlanır.
+    - q: FOB Qingdao veya CIF olarak limanımıza gönderebilir misiniz?
+      a: Evet. FOB Qingdao, büyük küresel limanlara CIF ve nitelikli ortaklar için DDP olarak gönderim yapıyoruz. Lojistik ekibimiz konteyner rezervasyonu, ihracat belgeleri ve gümrük işlemlerini yönetir. AB, ABD, AU ve Asya pazarlarında 50'den fazla ülkeye gönderim yapıyoruz.
+
+b2b_moq: 'Standart MOQ: Model başına 5—0 adet (SUP/SUP/drop-stitch). SUP MOQ: 2— adet. Yeni ortaklıklar için deneme siparişleri kabul edilir.'
+
+process_cta:
+  title: Üretim sürecimizi görün
+  desc: Bir botun hammaddeden denize hazır hale gelene kadar her üretim aşamasını takip edin.
+  label: Üretim sürecini görüntüle →
+  link: /factory/process
+intelligence_tagline: Factory Intelligence
+intelligence_title: Explore Our Manufacturing Capabilities
+
+intelligence_cards:
+  - title: Production Capacity
+    icon: C
+    icon_bg: blue
+    desc: '12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.'
+    metrics:
+      - label: MOQ
+        value: 'SUP: 5-10 / SUP: 2-5'
+      - label: Lead Time
+        value: '30-45 days'
+    link: /factory/capacity
+    link_label: 'Full capacity details →'
+  - title: Quality Lab & Testing
+    icon: Q
+    icon_bg: green
+    desc: 'Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat.'
+    metrics:
+      - label: Lab Equipment
+        value: 'Tensile tester, temp chamber, leak tank'
+      - label: Standards
+        value: 'ISO 9001, CE, AS 1799'
+    link: /factory/quality-lab
+    link_label: 'Lab procedures & equipment →'
+  - title: OEM/ODM Capability
+    icon: O
+    icon_bg: purple
+    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
+    metrics:
+      - label: Certifications
+        value: 'ISO 9001, BSCI, CE, REACH'
+      - label: Shipping
+        value: 'FOB, CIF, DDP to 50+ countries'
+    link: /factory/oem-capability
+    link_label: 'Full OEM services →'

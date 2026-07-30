@@ -1,0 +1,83 @@
+---
+export const prerender = true;
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/certifications.ts';
+import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'certifications') || {};
+
+const hero = page.hero ?? {};
+const certifications = page.content_certifications ?? {};
+const factory = page.content_factory ?? {};
+const safety = page.content_safety ?? {};
+const cta = page.cta ?? {};
+
+const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+
+const metadata = {
+  title: `Certifications — ${SITE.name} | Quality & Compliance Standards`,
+  description:
+    t('certifications.metaDesc') ||
+    'Afarer products are CE certified, ISO 9001:2015, UKCA marked, BSCI compliant, and REACH compliant.',
+};
+const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Certifications' }];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero tagline={hero.tagline} image={hero.image} title={hero.title} subtitle={hero.subtitle} />
+  <Features3
+    tagline={certifications.tagline}
+    title={certifications.title}
+    subtitle={certifications.subtitle}
+    columns={3}
+    items={certifications.items}
+  />
+  <Content
+    tagline={factory.tagline}
+    title={factory.title}
+    subtitle={factory.subtitle}
+    content={factory.list?.map((i: string) => (i ? `- ${i}` : '')).join('\n')}
+  />
+  <Features3
+    tagline={safety.tagline}
+    title={safety.title}
+    subtitle={safety.subtitle}
+    columns={3}
+    items={safety.items}
+  />
+  <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
+  <JsonLd
+    type="Service"
+    service={{
+      name: 'Marine Equipment Certification & Compliance',
+      description: 'CE certified, ISO 9001:2015, UKCA marked, BSCI compliant, REACH compliant marine products.',
+      serviceType: 'Product Certification & Compliance',
+      areaServed: ['EU', 'UK', 'US', 'AU', 'Global'],
+      url: `/${lang}/certifications`,
+      items: [
+        { name: 'CE Certification', description: 'EU directive compliance for recreational craft' },
+        { name: 'ISO 9001:2015', description: 'Quality management system certified by SGS/BSI' },
+        { name: 'UKCA Marking', description: 'UK market conformity assessment' },
+        { name: 'BSCI Compliance', description: 'amfori social compliance certification' },
+        { name: 'REACH Compliance', description: 'European chemical safety regulation compliance' },
+      ],
+    }}
+  />
+</Layout>

@@ -1,0 +1,63 @@
+hero:
+  tagline: 認證與標準
+  title: 質量認證<br />與合規標準
+  subtitle: afarer 產品按照國際海洋安全標準、質量管理體系和環境法規製造。
+  image:
+    src: https://assets.afarer.com/images/afarer/certifications/certifications-hero.webp
+    alt: afarer 質量認證與合規文件
+content_certifications:
+  tagline: 我們的認證
+  title: 認證質量<br />全球認可
+  subtitle: 每件 afarer 產品都有認證支持，證明我們對質量、安全和環境責任的承諾。
+  items:
+    - title: CE 認證
+      description: 所有 afarer 產品符合歐盟對休閒船艇的 CE 標誌要求，確保滿足安全、健康和環保標準。
+      icon: tabler:certificate
+    - title: ISO 9001:2015
+      description: 我們的質量管理體系通過 ISO 9001:2015 認證，涵蓋充氣船艇和船用設備的設計、製造和分銷。
+      icon: tabler:clipboard-check
+    - title: UKCA 標誌
+      description: 在英國市場銷售的產品帶有 UKCA 標誌，確認符合英國船用設備和個人船艇法規。
+      icon: tabler:shield
+    - title: BSCI 合規
+      description: afarer 通過 BSCI（商業社會合規倡議）審計，展示了道德製造實踐、公平勞動條件和供應鏈責任。
+      icon: tabler:heart-handshake
+    - title: REACH 合規
+      description: afarer 產品中使用的所有材料符合歐盟 REACH 化學品安全法規，確保我們的 PVC、Hypalon 或組件中不含受限物質。
+      icon: tabler:flask
+    - title: 材料測試
+      description: 面料經過拉伸強度、撕裂強度、紫外線降解和冷裂性能測試。每批產品都經過抽樣驗證。
+      icon: tabler:test-pipe
+content_factory:
+  tagline: 工廠標準
+  title: 製造卓越<br />——按規格打造
+  subtitle: 我們的 12,000 m² 工廠在生產各階段均遵循嚴格的質量控制規程。
+  list:
+    - 來料檢驗：所有原材料——PVC 布、Hypalon、鋁材、膠合板、膠粘劑——在進入生產前均按規格進行檢測。
+    - 過程質量控制：每個生產階段都有文件化的 QC 檢查點。焊接強度、接縫對齊、閥門安裝和配件扭矩在線驗證。
+    - 壓力測試：每個充氣氣室在 1.5 倍額定壓力下進行 24 小時壓力測試。洩漏率必須為零方可通過。
+    - 最終檢驗：成品在發貨前檢查尺寸精度、外觀質量、配件齊全度和包裝完整性。
+    - 批次可追溯性：每件產品帶有與生產批次記錄關聯的序列號，實現從原材料到成品的全程可追溯。
+content_safety:
+  tagline: 海洋安全標準
+  title: 安全第一<br />——為可靠運行而設計
+  subtitle: afarer 產品按照國際海洋安全標準設計和測試，適用於商業和休閒用途。
+  items:
+    - title: ISO 6185
+      description: 充氣艇符合 ISO 6185 關於結構、穩定性、浮力和負載能力的標準。
+      icon: tabler:sailboat
+    - title: ABYC 標準
+      description: 電氣系統和燃油系統遵循 ABYC（美國船艇與遊艇委員會）標準，確保安全安裝和運行。
+      icon: tabler:bolt
+    - title: SOLAS 合規
+      description: 安全設備和救生器具在適用情況下符合 SOLAS（海上人命安全）要求。
+      icon: tabler:lifebuoy
+cta:
+  title: 您的項目需要認證產品嗎？
+  subtitle: 聯繫我們的團隊，討論您的市場所需的認證要求、文件和合規性。
+  actions:
+    - variant: primary
+      text: 申請認證文件
+      href: /contact
+    - text: 查看我們的質量頁面
+      href: /quality

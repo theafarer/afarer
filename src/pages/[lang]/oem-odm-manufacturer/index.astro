@@ -1,0 +1,325 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from 'astrowind:config';
+import { languages, defaultLang } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+
+const metadata = {
+  title: `${t('oem.title') || 'Inflatable SUP OEM/ODM Manufacturer'} | ${SITE.name}`,
+  description:
+    t('oem.desc') ||
+    `${SITE.name} — premier OEM/ODM manufacturer of inflatable SUP boards. CE-certified. Custom mold, private label, bulk wholesale. From idea to market in 16 weeks.`,
+};
+
+const steps = [
+  { num: '01', title: t('oem.step1') || 'Idea & Brief', desc: t('oem.step1.desc') || 'Share your vision, target market, and specifications.' },
+  { num: '02', title: t('oem.step2') || 'Design & Engineering', desc: t('oem.step2.desc') || '3D modeling, material selection, and custom graphic design.' },
+  { num: '03', title: t('oem.step3') || 'Prototype & Validate', desc: t('oem.step3.desc') || 'Sample production with CE certification and quality testing.' },
+  { num: '04', title: t('oem.step4') || 'Mass Production', desc: t('oem.step4.desc') || 'Full-scale manufacturing with inline QC and factory audit support.' },
+  { num: '05', title: t('oem.step5') || 'Global Delivery', desc: t('oem.step5.desc') || 'FOB Qingdao logistics, CIF major ports, door-to-door.' },
+];
+
+const packages = [
+  {
+    name: t('oem.pkg.starter') || 'Starter Brand',
+    moq: '50–100 units',
+    models: '1–2 models',
+    leadTime: '12–16 weeks',
+    features: [
+      t('oem.pkg.starter.f1') || 'Basic logo printing (1 color)',
+      t('oem.pkg.starter.f2') || 'Standard packaging',
+      t('oem.pkg.starter.f3') || 'Standard PVC material',
+      t('oem.pkg.starter.f4') || 'Email support',
+      t('oem.pkg.starter.f5') || 'CE certified',
+    ],
+  },
+  {
+    name: t('oem.pkg.growing') || 'Growing Brand',
+    moq: '300–1,000 units',
+    models: '3–5 models',
+    leadTime: '10–14 weeks',
+    features: [
+      t('oem.pkg.growing.f1') || 'Custom color + multi-color logo',
+      t('oem.pkg.growing.f2') || 'Custom packaging & labels',
+      t('oem.pkg.growing.f3') || 'Premium PVC or Hypalon option',
+      t('oem.pkg.growing.f4') || 'Product photography included',
+      t('oem.pkg.growing.f5') || 'Dedicated account manager',
+      t('oem.pkg.growing.f6') || 'Marketing materials package',
+    ],
+    popular: true,
+  },
+  {
+    name: t('oem.pkg.established') || 'Established Brand',
+    moq: '1,000+ units',
+    models: 'Full product line',
+    leadTime: '8–12 weeks',
+    features: [
+      t('oem.pkg.established.f1') || 'Full customization (shape, graphic, materials)',
+      t('oem.pkg.established.f2') || 'Premium packaging & display boxes',
+      t('oem.pkg.established.f3') || 'Custom mold development',
+      t('oem.pkg.established.f4') || 'Priority production lanes',
+      t('oem.pkg.established.f5') || 'Dedicated QA engineer',
+      t('oem.pkg.established.f6') || 'Exclusive territory rights available',
+    ],
+  },
+];
+---
+
+<Layout metadata={metadata}>
+  <meta name="ai-intent" content="oem-odm-inflatable-sup-manufacturing,drop-stitch-sup-factory,custom-paddle-board-wholesale,china-sup-board-manufacturer,private-label-sup" />
+
+  <!-- Hero -->
+  <section class="relative min-h-[70vh] flex items-center overflow-hidden bg-secondary">
+    <div class="absolute inset-0">
+      <img src="https://assets.afarer.com/images/afarer/hero/production-dept.webp" alt="" class="w-full h-full object-cover opacity-40" style="object-position: center 30%;" />
+      <div class="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/60 to-secondary/30"></div>
+    </div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 w-full">
+      <div class="max-w-3xl">
+        <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary mb-6">
+          <span class="w-8 h-px bg-primary"></span>
+          {t('oem.badge') || 'OEM/ODM Manufacturing Partner'}
+        </span>
+        <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.05] text-balance text-white">
+          {t('oem.heading') || 'Your SUP Brand.<br />Built By Afarer.'}
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-white/70 max-w-2xl text-pretty leading-relaxed">
+          {t('oem.subtitle') || 'From idea to market in 16 weeks. We design, prototype, manufacture, and ship your custom inflatable SUP — private label, custom mold, or bulk wholesale.'}
+        </p>
+        <div class="mt-10 flex items-center gap-4 flex-wrap">
+          <a href={`/${lang}/contact`} class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5">
+            {t('oem.cta') || 'Start Your OEM Project'} <span class="text-lg">→</span>
+          </a>
+          <a href={`/${lang}/media`} class="inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white/80 font-medium rounded-full hover:bg-white/10 hover:text-white transition-all backdrop-blur-sm">
+            {t('oem.catalog') || 'Download Product Catalog'}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="max-w-6xl mx-auto px-6 -mt-16 relative z-20">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white rounded-2xl shadow-lg p-8">
+      <div class="text-center">
+        <span class="block text-3xl font-bold text-primary">12,000 m²</span>
+        <span class="text-xs text-gray-500 mt-1 block">{t('oem.stat1') || 'Certified workshop'}</span>
+      </div>
+      <div class="text-center">
+        <span class="block text-3xl font-bold text-primary">200+</span>
+        <span class="text-xs text-gray-500 mt-1 block">{t('oem.stat2') || 'Skilled workers'}</span>
+      </div>
+      <div class="text-center">
+        <span class="block text-3xl font-bold text-primary">15,000+</span>
+        <span class="text-xs text-gray-500 mt-1 block">{t('oem.stat3') || 'Units annually'}</span>
+      </div>
+      <div class="text-center">
+        <span class="block text-3xl font-bold text-primary">50+</span>
+        <span class="text-xs text-gray-500 mt-1 block">{t('oem.stat4') || 'Countries exported'}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-Step Process -->
+  <section class="max-w-6xl mx-auto px-6 py-28">
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary mb-4">
+        <span class="w-8 h-px bg-primary"></span>
+        {t('oem.process.tagline') || 'How It Works'}
+      </span>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-secondary">
+        {t('oem.process.title') || 'From Idea To Market In 16 Weeks'}
+      </h2>
+      <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
+        {t('oem.process.subtitle') || 'A proven 5-phase process that takes your SUP brand from concept to global delivery.'}
+      </p>
+    </div>
+    <div class="relative">
+      <div class="hidden lg:block absolute top-24 left-[10%] right-[10%] h-px bg-gray-200"></div>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        {steps.map((step, i) => (
+          <div class="relative bg-white rounded-3xl p-8 text-center border border-gray-200 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 group">
+            <span class="block w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg mb-4 group-hover:bg-primary group-hover:text-white transition-colors">{step.num}</span>
+            <h3 class="text-lg font-bold text-secondary">{step.title}</h3>
+            <p class="mt-2 text-sm text-gray-500 leading-relaxed">{step.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- OEM Packages -->
+  <section class="bg-[#F8FAFB] py-28 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary mb-4">
+          <span class="w-8 h-px bg-primary"></span>
+          {t('oem.packages.tagline') || 'Packages'}
+        </span>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-secondary">
+          {t('oem.packages.title') || 'Choose Your Launch Package'}
+        </h2>
+        <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
+          {t('oem.packages.subtitle') || 'Flexible options for every stage of brand growth — from startup to established brand.'}
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+        {packages.map((pkg) => (
+          <div class={`relative bg-white rounded-3xl p-8 border-2 ${pkg.popular ? 'border-primary shadow-xl scale-[1.02]' : 'border-gray-200'} hover:shadow-xl transition-all`}>
+            {pkg.popular ? (
+              <span class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-white text-xs font-semibold rounded-full">
+                {t('oem.packages.popular') || 'Most Popular'}
+              </span>
+            ) : null}
+            <h3 class="text-2xl font-bold text-secondary mt-2">{pkg.name}</h3>
+            <div class="mt-4 space-y-2 text-sm text-gray-500">
+              <p><span class="font-semibold text-gray-700">{t('oem.packages.moq') || 'MOQ'}:</span> {pkg.moq}</p>
+              <p><span class="font-semibold text-gray-700">{t('oem.packages.models') || 'Models'}:</span> {pkg.models}</p>
+              <p><span class="font-semibold text-gray-700">{t('oem.packages.leadtime') || 'Lead Time'}:</span> {pkg.leadTime}</p>
+            </div>
+            <ul class="mt-6 space-y-3">
+              {pkg.features.map((f) => (
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="text-primary flex-shrink-0 mt-0.5">✓</span> {f}
+                </li>
+              ))}
+            </ul>
+            <a
+              href={`/${lang}/contact?package=${pkg.name.toLowerCase().replace(/\s+/g, '-')}`}
+              class={`mt-8 inline-flex items-center justify-center w-full gap-2 px-6 py-3 font-semibold rounded-full transition-all ${pkg.popular ? 'bg-primary hover:bg-[#0088B3] text-white shadow-lg' : 'bg-gray-100 hover:bg-gray-200 text-secondary'}`}
+            >
+              {t('oem.packages.cta') || 'Get a Quote'} →
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Afarer -->
+  <section class="max-w-6xl mx-auto px-6 py-28">
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary mb-4">
+        <span class="w-8 h-px bg-primary"></span>
+        {t('oem.why.tagline') || 'Why Afarer'}
+      </span>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-secondary">
+        {t('oem.why.title') || 'Why Partner with Afarer?'}
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+      <div class="bg-[#F8FAFB] rounded-3xl p-8 hover:shadow-lg transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 text-primary">
+          <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" /></svg>
+        </div>
+        <h3 class="text-lg font-bold text-secondary">{t('oem.why.factory') || 'Vertically Integrated Factory'}</h3>
+        <p class="mt-3 text-sm text-gray-500 leading-relaxed">{t('oem.why.factory.desc') || '12,000 m² dedicated manufacturing facility — not a trading company. Full control over production quality, cost, and timelines.'}</p>
+      </div>
+      <div class="bg-[#F8FAFB] rounded-3xl p-8 hover:shadow-lg transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 text-primary">
+          <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>
+        </div>
+        <h3 class="text-lg font-bold text-secondary">{t('oem.why.cert') || 'Full Certification Suite'}</h3>
+        <p class="mt-3 text-sm text-gray-500 leading-relaxed">{t('oem.why.cert.desc') || 'CE / ISO 9001 / UKCA / BSCI / REACH / USCG Type III — every product certified for global markets.'}</p>
+      </div>
+      <div class="bg-[#F8FAFB] rounded-3xl p-8 hover:shadow-lg transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 text-primary">
+          <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        </div>
+        <h3 class="text-lg font-bold text-secondary">{t('oem.why.moq') || 'Industry-Low MOQ'}</h3>
+        <p class="mt-3 text-sm text-gray-500 leading-relaxed">{t('oem.why.moq.desc') || 'Start from 50 units (standard models). Custom mold from 200+ units. Lowest minimum order quantities in the industry.'}</p>
+      </div>
+      <div class="bg-[#F8FAFB] rounded-3xl p-8 hover:shadow-lg transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 text-primary">
+          <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
+        </div>
+        <h3 class="text-lg font-bold text-secondary">{t('oem.why.design') || 'In-House Design Studio'}</h3>
+        <p class="mt-3 text-sm text-gray-500 leading-relaxed">{t('oem.why.design.desc') || 'Full design support — 3D modeling, graphic design, color matching, and packaging design. Your vision, professionally executed.'}</p>
+      </div>
+      <div class="bg-[#F8FAFB] rounded-3xl p-8 hover:shadow-lg transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 text-primary">
+          <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>
+        </div>
+        <h3 class="text-lg font-bold text-secondary">{t('oem.why.logistics') || 'Global Logistics Network'}</h3>
+        <p class="mt-3 text-sm text-gray-500 leading-relaxed">{t('oem.why.logistics.desc') || 'FOB Qingdao, CIF major ports, door-to-door delivery to 50+ countries. Customs clearance support and documentation included.'}</p>
+      </div>
+      <div class="bg-[#F8FAFB] rounded-3xl p-8 hover:shadow-lg transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 text-primary">
+          <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" /></svg>
+        </div>
+        <h3 class="text-lg font-bold text-secondary">{t('oem.why.support') || 'Dedicated Account Management'}</h3>
+        <p class="mt-3 text-sm text-gray-500 leading-relaxed">{t('oem.why.support.desc') || 'One point of contact from brief to delivery. Regular production updates, photos, and transparent communication throughout.'}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cost Calculator / Estimate -->
+  <section class="bg-secondary py-28 px-6">
+    <div class="max-w-4xl mx-auto text-center reveal">
+      <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-white/40 mb-4 justify-center">
+        <span class="w-8 h-px bg-primary"></span>
+        {t('oem.estimate.tagline') || 'Quick Estimate'}
+      </span>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-white">
+        {t('oem.estimate.title') || 'Get a Quick OEM Estimate'}
+      </h2>
+      <p class="mt-4 text-lg text-white/60 max-w-2xl mx-auto">
+        {t('oem.estimate.subtitle') || 'Tell us about your project and we will reply with a detailed quotation within 24 hours.'}
+      </p>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+          <span class="text-3xl font-bold text-primary">50</span>
+          <p class="mt-1 text-sm text-white/60">{t('oem.estimate.minUnits') || 'Minimum units (standard models)'}</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+          <span class="text-3xl font-bold text-primary">16</span>
+          <p class="mt-1 text-sm text-white/60">{t('oem.estimate.leadWeeks') || 'Weeks from brief to shipment'}</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+          <span class="text-3xl font-bold text-primary">50+</span>
+          <p class="mt-1 text-sm text-white/60">{t('oem.estimate.countries') || 'Countries with delivery track record'}</p>
+        </div>
+      </div>
+      <div class="mt-10">
+        <a href={`/${lang}/contact`} class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5">
+          {t('oem.estimate.cta') || 'Request a Quote'} <span>→</span>
+        </a>
+      </div>
+      <p class="mt-4 text-sm text-white/30">{t('oem.moq') || 'MOQ 50 units for standard models. Custom mold: 200+ units. FOB Qingdao.'}</p>
+    </div>
+  </section>
+
+  <!-- FAQ / Final CTA -->
+  <section class="max-w-4xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-secondary">{t('oem.faq.title') || 'Still Have Questions?'}</h2>
+    <p class="mt-4 text-lg text-gray-500">{t('oem.faq.subtitle') || 'Our OEM team is ready to help you get started.'}</p>
+    <div class="mt-8 flex items-center justify-center gap-4 flex-wrap">
+      <a href={`/${lang}/contact`} class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all">
+        {t('oem.cta') || 'Start Your OEM Project'} <span>→</span>
+      </a>
+      <a href={`/${lang}/research/oem-buyer-guide`} class="inline-flex items-center gap-2 px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full font-medium hover:border-primary hover:text-primary transition-all">
+        {t('oem.faq.guide') || 'Read OEM Buyer Guide'}
+      </a>
+    </div>
+  </section>
+
+  <script is:inline type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: SITE.name,
+    url: `https://afarer.com/${lang}/oem-odm-manufacturer`,
+    foundingDate: '2012',
+    parentOrganization: { '@type': 'Organization', name: 'Qingdao Vatrad Group Co., Ltd.', foundingDate: '2000' },
+    numberOfEmployees: { '@type': 'QuantitativeValue', minValue: 200, maxValue: 300 },
+    makesOffer: { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'OEM/ODM Inflatable SUP Manufacturing' } },
+  })} />
+</Layout>

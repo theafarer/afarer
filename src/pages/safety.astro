@@ -1,0 +1,234 @@
+﻿---
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+import Layout from '~/layouts/PageLayout.astro';
+import { products } from '../data/products';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/safety.ts';
+import JsonLd from '~/components/common/JsonLd.astro';
+
+const lang = Astro.locals.lang;
+
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'safety') || {};
+const hero = page.hero || {};
+const certifications = page.certifications || [];
+const related = page.related || {};
+
+const metadata = {
+  title: `Safety –{SITE.name}`,
+  description:
+    'afarer safety standards: CE certification, SOLAS compliance, pressure and buoyancy testing, and product safety guidelines.',
+};
+
+const safetyProducts = products.filter((p) => p.id === 'life-vest-classic' || p.id === 'life-vest-pro');
+
+const safetyStandards = [
+  {
+    title: 'CE Certification',
+    body: 'All afarer safety equipment complies with CE marking requirements under the European Personal Protective Equipment Regulation (EU) 2016/425. Every product is independently tested by notified bodies.',
+  },
+  {
+    title: '',
+    body: 'Life vests meet  flotation standards. The Life Vest Classic provides 50N+ buoyancy for sheltered waters; the Life Vest Pro meets SOLAS requirements with automatic inflation for offshore use.',
+  },
+  {
+    title: 'SOLAS Compliance',
+    body: 'The Life Vest Pro complies with SOLAS (Safety of Life at Sea) regulations for offshore and commercial marine operations. Tested for 24-hour buoyancy retention and automatic activation.',
+  },
+  {
+    title: '',
+    body: 'All inflatable boats and RIBs are designed and tested to  standards for inflatable craft, covering buoyancy, stability, and load capacity in controlled and coastal waters.',
+  },
+];
+---
+
+<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Safety', item: 'https://afarer.com/safety/' }] }} />
+<JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What safety certifications does afarer hold?", acceptedAnswer: { "@type": "Answer", text: "Afarer products are CE certified under EU 2016/425 for PPE, with ISO 9001 quality management and BSCI social compliance. Life vests meet ISO 12402 flotation standards and SOLAS requirements for offshore use." } }, { "@type": "Question", name: "Are afarer life vests suitable for offshore use?", acceptedAnswer: { "@type": "Answer", text: "The Life Vest Pro is SOLAS-compliant with automatic inflation for offshore and commercial marine operations. The Life Vest Classic provides 50N+ buoyancy for sheltered waters and recreational use." } }, { "@type": "Question", name: "How does afarer test inflatable boat safety?", acceptedAnswer: { "@type": "Answer", text: "Every boat undergoes 1.5x working pressure inflation tests, 24-hour buoyancy retention tests for life vests, and mandatory seam peel verification. AQL 2.5 inspection standard applies to all outgoing products." } }, { "@type": "Question", name: "What safety guidelines should I follow?", acceptedAnswer: { "@type": "Answer", text: "Always wear a properly fitted life vest, check inflation pressure before use, avoid over-inflation, inspect for damage before each trip, and follow local boating regulations for your waterway classification." } }, { "@type": "Question", name: "Do afarer products meet international marine standards?", acceptedAnswer: { "@type": "Answer", text: "Yes. Inflatable boats are designed to ISO 6185 standards for inflatable craft covering buoyancy, stability, and load capacity. Life vests comply with ISO 12402 and SOLAS regulations." } }] }} />
+
+<Layout metadata={metadata}>
+  <meta name="ai-intent" content="water-safety-equipment,ce-certified-life-vests,marine-safety-standards" />
+
+  <section class="max-w-4xl mx-auto py-24 px-6" data-ai-block="definition">
+    <span class="text-sm font-semibold text-[#06b6d4] tracking-[0.15em] uppercase">{hero.tagline || 'Safety'}</span>
+    <h1 class="mt-4 text-4xl font-bold text-gray-900">{hero.title || 'Safety Standards & Certification'}</h1>
+    <p class="mt-4 text-lg text-gray-500">
+      {
+        hero.subtitle ||
+          'Every afarer product undergoes rigorous testing and meets international safety standards for recreational and professional use.'
+      }
+    </p>
+  </section>
+
+  <!-- Safety Standards -->
+  <section class="max-w-5xl mx-auto pb-16 px-6">
+    <div class="grid md:grid-cols-2 gap-6">
+      {
+        (certifications.length > 0 ? certifications : safetyStandards).map((cert: any) => (
+          <div class="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                <svg
+                  class="w-5 h-5 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
+                </svg>
+              </div>
+              <h2 class="text-lg font-bold text-gray-900">{cert.title}</h2>
+            </div>
+            <p class="text-sm text-gray-600 leading-relaxed">{cert.body || cert.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Safety Products -->
+  {
+    safetyProducts.length > 0 && (
+      <section class="max-w-5xl mx-auto pb-16 px-6">
+        <div class="text-center mb-10">
+          <span class="text-sm font-semibold text-[#06b6d4] tracking-[0.15em] uppercase">Safety Products</span>
+          <h2 class="mt-2 text-3xl font-bold text-gray-900">Our Life Vest Range</h2>
+          <p class="mt-3 text-gray-500">
+            From sheltered waters to offshore operations –certified protection for every environment.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          {safetyProducts.map((s) => (
+            <div class="bg-white border-2 border-green-100 rounded-2xl p-6 hover:border-green-300 transition-colors">
+              <h3 class="font-bold text-gray-900 text-lg">{s.name}</h3>
+              <p class="mt-2 text-sm text-gray-600 leading-relaxed">{s.desc}</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                {s.safety_rules.map((r) => (
+                  <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs font-medium">{r}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- Testing Process -->
+  <section class="max-w-5xl mx-auto pb-16 px-6">
+    <div class="bg-gray-50 rounded-2xl border border-gray-200 p-8 md:p-12">
+      <div class="text-center mb-10">
+        <span class="text-sm font-semibold text-[#06b6d4] tracking-[0.15em] uppercase">Our Testing Process</span>
+        <h2 class="mt-2 text-3xl font-bold text-gray-900">How We Test for Safety</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-3xl font-bold text-[#06b6d4]">1.5x</div>
+          <p class="mt-2 text-sm text-gray-600">
+            Working pressure inflation test –every chamber is inflated to 1.5x normal pressure for 30-minute
+            air-retention validation
+          </p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-[#06b6d4]">24hr</div>
+          <p class="mt-2 text-sm text-gray-600">
+            Buoyancy retention test –life vests are submerged for 24 hours to verify flotation performance
+          </p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-[#06b6d4]">100%</div>
+          <p class="mt-2 text-sm text-gray-600">
+            Every boat undergoes mandatory seam peel verification, air retention, and full systems check before shipping
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="max-w-4xl mx-auto pb-16 px-6">
+    <div class="text-center mb-10">
+      <span class="text-sm font-semibold text-[#06b6d4] tracking-[0.15em] uppercase">FAQs</span>
+      <h2 class="mt-2 text-3xl font-bold text-gray-900">Safety Questions Answered</h2>
+      <p class="mt-3 text-gray-500">Common questions about our safety standards and certifications.</p>
+    </div>
+    <div class="space-y-4">
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>What safety certifications does afarer hold?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Afarer products are CE certified under EU 2016/425 for PPE, with ISO 9001 quality management and BSCI social compliance. Life vests meet ISO 12402 flotation standards and SOLAS requirements for offshore use.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>Are afarer life vests suitable for offshore use?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">The Life Vest Pro is SOLAS-compliant with automatic inflation for offshore and commercial marine operations. The Life Vest Classic provides 50N+ buoyancy for sheltered waters and recreational use.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>How does afarer test inflatable boat safety?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Every boat undergoes 1.5x working pressure inflation tests, 24-hour buoyancy retention tests for life vests, and mandatory seam peel verification. AQL 2.5 inspection standard applies to all outgoing products.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>What safety guidelines should I follow?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Always wear a properly fitted life vest, check inflation pressure before use, avoid over-inflation, inspect for damage before each trip, and follow local boating regulations for your waterway classification.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Related Links -->
+  <section class="max-w-4xl mx-auto pb-20 px-6">
+    <div class="p-6 bg-white rounded-2xl border border-gray-200">
+      <h2 class="font-semibold text-gray-900">{related.title || 'Related Resources'}</h2>
+      <div class="mt-3 flex flex-wrap gap-3 text-sm">
+        {
+          (related.links && related.links.length > 0
+            ? related.links
+            : [
+                { text: 'Safety Tips Guide', url: '/guides/safety-tips' },
+                { text: 'FAQ', url: '/faq' },
+                { text: 'Technology', url: '/technology' },
+                { text: 'All Products', url: '/products' },
+              ]
+          ).map((link: any) => (
+            <a
+              href={link.url}
+              class="px-3 py-1.5 bg-white rounded-lg border border-gray-200 text-gray-700 hover:border-sky-300 hover:text-sky-600 transition-colors"
+            >
+              {link.text} →
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-only" data-ai-block="constraint" aria-hidden="true">
+    <p>
+      afarer safety equipment is designed for controlled training, recreational, and professional marine environments.
+      Not designed for extreme sports, high-speed racing, or unregulated adventure activities without proper
+      certification.
+    </p>
+  </section>
+</Layout>

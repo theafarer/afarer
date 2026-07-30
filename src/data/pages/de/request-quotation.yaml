@@ -1,0 +1,57 @@
+﻿hero_text:
+  tagline: Get a Quote
+  title: 'Angebot anfordern<br />für Ihr Projekt'
+  subtitle: 'Teilen Sie uns Ihre Anforderungen mit. Wir antworten mit einem detaillierten Angebot innerhalb von 2 Werktagen.'
+steps2_process:
+  title: How It Works
+  subtitle: 'Vier einfache Schritte von der Anfrage bis zum Angebot.'
+  items:
+    - title: 'Schritt 1: Anforderungen senden'
+      description: 'Formular mit Produkttyp, Menge und Spezifikationen ausfüllen. Je detaillierter, desto genauer das Angebot.'
+      icon: tabler:file-text
+    - title: 'Schritt 2: Wir prüfen & beraten'
+      description: 'Unser Engineering-Team prüft Ihre Anforderungen und gibt Empfehlungen zu Produktkonfiguration.'
+      icon: tabler:users
+    - title: 'Schritt 3: Angebot erhalten'
+      description: 'Sie erhalten ein detailliertes Angebot mit Preisen, MOQ, Lieferzeit, Zahlungsbedingungen und Versandoptionen. In der Regel innerhalb von 48 Stunden.'
+      icon: tabler:currency-dollar
+    - title: 'Schritt 4: Muster & Produktion'
+      description: 'Nach Angebotsannahme erfolgt die Musterproduktion (falls zutreffend) oder direkt die Massen'
+      icon: tabler:building-factory
+content_form:
+  tagline: Quotation Form
+  title: 'Erzählen Sie uns von Ihrem Projekt'
+  subtitle: 'Alle mit * gekennzeichneten Felder sind Pflichtfelder.'
+  fields:
+    - name: Product Type
+      type: select
+      options:
+        - SUP Boat
+        - Inflatable Boat
+        - SUP Board
+        - Inflatable SUP
+        - Life Vest
+        - Accessory
+        - Custom
+    - name: Quantity
+      type: text
+      placeholder: e.g. 50 units
+    - name: Target Market
+      type: text
+      placeholder: e.g. Europe, North America, Middle East
+    - name: Customization Needed
+      type: text
+      placeholder: e.g. custom colors, branding, packaging
+    - name: Timeline
+      type: text
+      placeholder: e.g. delivery within 90 days
+    - name: Additional Requirements
+      type: textarea
+      placeholder: Describe your application, technical specifications, or any special requirements
+cta:
+  title: 'Lieber per E-Mail besprechen?'
+  subtitle: 'Senden Sie Ihre Anfrage direkt an unser Verkaufsteam. Wir antworten innerhalb von 24 Stunden.'
+  actions:
+    - variant: primary
+      text: Email us directly
+      href: /contact

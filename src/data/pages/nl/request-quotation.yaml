@@ -1,0 +1,57 @@
+﻿hero_text:
+  tagline: Get a Quote
+  title: 'Vraag een Offerte Aan<br />voor Uw Project'
+  subtitle: 'Vertel ons uw wensen en ons team reageert binnen 2 werkdagen met een gedetailleerde offerte.'
+steps2_process:
+  title: How It Works
+  subtitle: 'Vier eenvoudige stappen van aanvraag tot offerte.'
+  items:
+    - title: 'Stap 1: Diens Uw Wensen In'
+      description: 'Vul het onderstaande formulier in met uw producttype, hoeveelheid en specificaties. Hoe meer detail u verstrekt, hoe nauwkeuriger uw offerte.'
+      icon: tabler:file-text
+    - title: 'Stap 2: Wij Beoordelen & Adviseren'
+      description: 'Ons technische team beoordeelt uw wensen en neemt mogelijk contact met u op voor verduidelijking. Wij geven aanbevelingen over productconfiguratie en opties.'
+      icon: tabler:users
+    - title: 'Stap 3: Ontvang Uw Offerte'
+      description: 'U ontvangt een gedetailleerde offerte inclusief eenheidsprijs, MOQ, levertijd, betalingsvoorwaarden en verzendopties. Doorgaans binnen 48 uur.'
+      icon: tabler:currency-dollar
+    - title: 'Stap 4: Monster & Productie'
+      description: 'Na acceptatie van de offerte gaan we over tot monsterproductie (indien van toepassing) of direct tot massaproductie. Regelmatige updates gedurende het hele proces.'
+      icon: tabler:building-factory
+content_form:
+  tagline: Quotation Form
+  title: 'Vertel Ons Over Uw Project'
+  subtitle: 'Alle velden met * zijn verplicht.'
+  fields:
+    - name: Product Type
+      type: select
+      options:
+        - SUP Boat
+        - Inflatable Boat
+        - SUP Board
+        - Inflatable SUP
+        - Life Vest
+        - Accessory
+        - Custom
+    - name: Quantity
+      type: text
+      placeholder: e.g. 50 units
+    - name: Target Market
+      type: text
+      placeholder: e.g. Europe, North America, Middle East
+    - name: Customization Needed
+      type: text
+      placeholder: e.g. custom colors, branding, packaging
+    - name: Timeline
+      type: text
+      placeholder: e.g. delivery within 90 days
+    - name: Additional Requirements
+      type: textarea
+      placeholder: Describe your application, technical specifications, or any special requirements
+cta:
+  title: 'Liever per e-mail bespreken?'
+  subtitle: 'Stuur uw aanvraag rechtstreeks naar ons verkoopteam en wij reageren binnen 24 uur.'
+  actions:
+    - variant: primary
+      text: Email us directly
+      href: /contact

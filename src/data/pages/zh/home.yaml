@@ -1,0 +1,171 @@
+hero:
+  tagline: 中國充氣船艇製造商 — 自2012年
+  title: |
+    充氣船艇工廠 — <br class="hidden sm:inline" />
+    OEM/ODM <span class="text-accent dark:text-white">製造商</span>
+  subtitle: |
+    <span class="hidden sm:inline"><span class="font-semibold">afarer</span> 是一家位於中國的 OEM/ODM 製造商，專業生產 CE 認證的充氣船、SUP、皮划艇、SUP 及海洋安全設備。</span>
+    <span class="block mb-1 sm:hidden font-bold text-blue-600">afarer：自 2012 年起值得信賴的工廠。</span>
+    為 50 多個國家的 B2B 客戶提供批量批發、貼牌、定製設計及完整的供應鏈解決方案。
+  actions:
+    - variant: primary
+      text: 瀏覽產品
+      href: /products
+      icon: tabler:shopping-bag
+    - text: 瞭解更多
+      href: '#features'
+  image:
+    src: ~/assets/images/hero-image.webp
+    alt: afarer 首頁圖片
+hero_carousel:
+  autoplay_interval: 5000
+  slides:
+    - image:
+        src: https://assets.afarer.com/images/afarer/hero/tech-meeting-small.webp
+        alt: afarer 工廠及設施全景
+      tagline: 歡迎
+      title: |
+        為水面而設計。<br />
+        為 <span class="text-sky-300">水上生活</span> 而造。
+      subtitle: 為海事專業人士和愛好者打造的高品質充氣船、SUP 及工程產品。
+      actions:
+        - text: 瀏覽產品
+          href: /products
+          variant: primary
+        - text: 獲取報價
+          href: /contact
+          variant: secondary
+    - image:
+        src: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
+        alt: afarer 船隻在水中
+      tagline: 工藝
+      title: |
+        船體比保修期更耐用。<br />
+        服務比船體更長久。
+      subtitle: 船用級材料。鋁合金焊接。二十年的老船仍向我們訂購配件。
+      actions:
+        - text: 我們的故事
+          href: /about
+          variant: primary
+    - image:
+        src: https://assets.afarer.com/images/afarer/hero/afarer-hero-design-concept.webp
+        alt: afarer 充氣船在水上
+      tagline: 支持
+      title: |
+        售前精工製造。<br />
+        售後長久支持。
+      subtitle: 在 40 多個國家擁有授權服務合作伙伴。二十年的老船仍向我們訂購配件——我們依然接聽電話。
+      actions:
+        - text: 聯繫我們
+          href: /contact
+          variant: primary
+        - text: 查看價格
+          href: /pricing
+          variant: secondary
+features:
+  id: features
+  tagline: 為什麼選擇 afarer
+  title: 選擇 afarer 的收穫
+  subtitle: 數十年的船舶工程經驗，濃縮成一條專注的產品線。堅固耐用，經過海上測試，終身支持。
+  columns: 2
+  items:
+    - title: 船用級材料
+      description: 採用重型 PVC、Hypalon 和鋁合金船體，具有抗紫外線、耐磨和耐海水腐蝕性能。
+      icon: tabler:shield-check
+    - title: 生產級品質
+      description: 每個船體都經過壓力測試，每道焊縫都經過檢查。我們只交付連自己都放心下水使用的產品。
+      icon: tabler:certificate
+    - title: 模塊化設計
+      description: 可根據任務定製側浮筒佈局、駕駛臺位置、燃油容量及配件。
+      icon: tabler:layout-grid
+    - title: 誠實的規格
+      description: 真實載荷、真實尺寸、真實重量。絕無誇大宣傳。
+      icon: tabler:ruler-measure
+    - title: 快速交貨與配件
+      description: 常規型號數日內發貨。正品配件和耗材全年有庫存。
+      icon: tabler:truck-delivery
+    - title: 終身支持
+      description: 可直接聯繫我們的工程團隊，獲取技術問題、維修和改裝建議。
+      icon: tabler:lifebuoy
+featured_products:
+  id: featured
+  title: 精選產品
+  subtitle: 從我們當前目錄中精心挑選——本季最受歡迎的型號。
+  linkText: 查看全部產品
+  linkUrl: /products
+content_workshop:
+  isReversed: true
+  tagline: 車間探秘
+  title: 從船體圖紙到交付，每一步都在廠內完成
+  content: |
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">看得見、摸得著、可衡量的品質</h3>
+  items:
+    - title: 由船舶設計師設計
+      description: 船體線條在廠內繪製，並在首個原型下水前通過 CFD 分析迭代優化。
+    - title: 在我們的工廠焊接組裝
+      description: 管道焊接、駕駛臺裝配和舾裝在同一廠房屋頂下完成，確保在每個環節把控品質。
+    - title: 發貨前海上測試
+      description: 每個型號都完成數小時的海上試航，涵蓋起滑、轉向、最高速度和載荷處理。
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
+    alt: afarer 生產車間
+steps:
+  title: 從規格表到下水，只需五步
+  items:
+    - title: 第一步：<span class="font-medium">配置</span>
+      description: 選擇型號、確定選配、在線或電話獲取報價。我們的團隊在一個工作日內回覆。
+      icon: tabler:list-numbers
+    - title: 第二步：<span class="font-medium">確認</span>
+      description: 我們以書面形式確認規格、交貨期和總費用。無驚喜，無隱藏費用。
+      icon: tabler:checks
+    - title: 第三步：<span class="font-medium">建造</span>
+      description: 在我們的車間開始生產。我們會在關鍵節點發送進度照片。
+      icon: tabler:tool
+    - title: 第四步：<span class="font-medium">交付</span>
+      description: 經過固定、縮膜包裝，通過海運或空運發貨。報關文件全程處理。
+      icon: tabler:truck-loading
+    - title: 第五步：<span class="font-medium">支持</span>
+      description: 兩年船體保修加終身技術支持。配件 48 小時內發貨。
+      icon: tabler:headset
+  image:
+    src: https://assets.afarer.com/images/afarer/hero/production-dept.webp
+    alt: afarer 製造流程
+blog_latest:
+  title: 期刊
+  information: |
+    來自工程團隊的文章、技術筆記和案例研究。
+    每當有項目發貨、標準更新或有人分享值得講述的故事時，都會添加新內容。
+faqs:
+  title: 常見問題
+  subtitle: 關於 afarer 充氣船、保修、運輸和 OEM/ODM 合作的常見諮詢。如果您的疑問不在列表中，請給我們留言。
+  columns: 2
+  items:
+    - title: afarer 的美國倉庫在哪裡？運輸需要多長時間？
+      description: 我們的美國倉庫位於加州蒙特克萊爾（Montclair, CA）。西海岸：2–3 天。中西部：3–4 天。東海岸：4–5 天。也提供國際運輸——請聯繫我們獲取個性化報價。
+      icon: tabler:truck-delivery
+    - title: afarer 充氣船的保修政策是什麼？
+      description: afarer 充氣船艇產品享有 5 年有限保修，涵蓋管材面料完整性、接縫氣密性、玻璃鋼船體結構和充氣閥。工廠安裝的配件保修 1 年。商業用途：1 年有限保修。完整條款和條件請參閱我們的保修頁面。
+      icon: tabler:shield-check
+    - title: afarer 船隻是否包含註冊文件？
+      description: 是的，每艘 afarer 充氣船都附有註冊所需文件。製造商標明書可在用戶手冊的背面找到，也可根據需要提供可下載副本。已獲美國海岸警衛隊製造批准。
+      icon: tabler:file-text
+    - title: afarer 船隻是否通過美國海岸警衛隊批准？
+      description: 是的，afarer 充氣船已獲美國海岸警衛隊（USCG）製造批准。我們的工廠還持有 CE 認證（歐盟市場準入）和  認證。
+      icon: tabler:flag
+    - title: 如果產品包裝到貨時損壞怎麼辦？
+      description: 如果您的 afarer 產品包裝到貨時已損壞，請拒收並將包裹退回寄件人。聯繫我們的支持團隊，我們將及時為您更換。
+      icon: tabler:package
+    - title: 如果產品未在預計交貨日期到達怎麼辦？
+      description: afarer 提供的交貨時間為預估時間，無法保證。發貨後，包裹接收由客戶負責。如果包裹留在您指定的送達地址，所有權在交付時即轉移。
+      icon: tabler:calendar-clock
+cta:
+  title: |
+    準備好開始您的 <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">OEM/ODM 項目</span>？
+  subtitle: 告訴我們您的需求，我們將在一個工作日內提供定製報價、最小起訂量詳情和交貨期。
+  actions:
+    - variant: primary
+      text: 獲取報價
+      href: /contact
+      icon: tabler:message-circle
+    - text: 參觀工廠
+      href: /factory

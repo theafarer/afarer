@@ -1,0 +1,116 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const comparisons = [
+  {
+    slug: 'inflatable-vs-hardboard',
+    title: 'Inflatable vs Hardboard',
+    desc: 'Inflatable SUP vs hard epoxy board –portability, performance, durability, storage, and cost compared.',
+    image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+  },
+  {
+    slug: 'pvc-vs-hypalon',
+    title: 'PVC vs Hypalon',
+    desc: 'PVC vs Hypalon (CSM) inflatable boat material –durability, UV resistance, weight, repairability, and cost compared.',
+    image: 'https://assets.afarer.com/images/afarer/products/afarer-inflatable-boat.webp',
+  },
+  {
+    slug: 'afarer-vs-traditional-manufacturers',
+    title: 'afarer vs Traditional Manufacturers',
+    desc: 'Compare afarer with traditional boat manufacturers across quality, pricing, customization, MOQ, and delivery.',
+    image: 'https://assets.afarer.com/images/afarer/brand/afarer-team.webp',
+  },
+  {
+    slug: 'single-chamber-vs-multi-chamber',
+    title: 'Single vs Multi Chamber SUP',
+    desc: 'Single chamber vs multi chamber inflatable SUP boards compared across safety, buoyancy redundancy, weight, cost, and durability.',
+    image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+  },
+];
+
+const metadata = {
+  title: `Comparisons & Buying Guides | ${SITE.name}`,
+  description: `Side-by-side comparisons of SUP board materials and types. PVC vs Hypalon, Inflatable vs Hardboard, afarer vs Traditional Manufacturers.`,
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    data={{
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      headline: 'Comparisons & Buying Guides',
+      description: metadata.description,
+      author: { '@type': 'Organization', name: SITE.name },
+    }}
+  />
+
+  <div class="max-w-6xl mx-auto px-6 py-16">
+    <nav class="text-sm text-gray-500 mb-8">
+      <a href="/" class="hover:text-sky-600">{SITE.name}</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">Compare</span>
+    </nav>
+
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-sm font-medium text-sky-600 tracking-wide uppercase">Compare</span>
+      <h1 class="mt-4 text-4xl font-bold text-gray-900">Comparisons & Buying Guides</h1>
+      <p class="mt-4 text-lg text-gray-500">
+        Side-by-side comparisons of SUP board materials, types, and brands to help you choose the right board.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Product Comparison Table -->
+      <a
+        href="/products/compare"
+        class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all hover:-translate-y-0.5 flex flex-col"
+      >
+        <div class="h-44 bg-gradient-to-br from-sky-100 to-blue-50 flex items-center justify-center">
+          <span class="text-5xl">&#128202;</span>
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <h2 class="text-lg font-semibold text-gray-900 group-hover:text-sky-700 transition-colors mb-2">
+            Product Comparison Table
+          </h2>
+          <p class="text-sm text-gray-500 line-clamp-3 flex-1">
+            Compare all afarer products side by side across specifications, pricing, and skill levels.
+          </p>
+          <span class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-sky-600 group-hover:text-sky-700"
+            >View comparison &rarr;</span
+          >
+        </div>
+      </a>
+
+      {
+        comparisons.map((c) => (
+          <a
+            href={`/compare/${c.slug}`}
+            class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all hover:-translate-y-0.5 flex flex-col"
+          >
+            <div class="h-44 bg-gray-100 overflow-hidden">
+              <img
+                src={c.image}
+                alt={c.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <h2 class="text-lg font-semibold text-gray-900 group-hover:text-sky-700 transition-colors mb-2">
+                {c.title}
+              </h2>
+              <p class="text-sm text-gray-500 line-clamp-3 flex-1">{c.desc}</p>
+              <span class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-sky-600 group-hover:text-sky-700">
+                View comparison &rarr;
+              </span>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</Layout>

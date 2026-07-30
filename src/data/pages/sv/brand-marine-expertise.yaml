@@ -1,0 +1,68 @@
+﻿hero:
+  tagline: Marine Expertise
+  title: 'Årtionden av marinteknik<br />i varje skrov'
+  subtitle: 'afarer kombinerar djup materialvetenskap, precisionstillverkning och verklighetstestning för att producera båtar som presterar när det räknas.'
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
+    alt: afarer marine engineering and R&D team at work
+expertise_materials:
+  tagline: Material Science
+  title: 'Välj rätt material<br />för varje tillämpning'
+  subtitle: 'Vi arbetar med tre kärnmaterial —varje valt för specifika användningsfall och prestandakrav.'
+  columns: 3
+  items:
+    - title: Marine-Grade PVC
+      description: '1100 denier PVC fabric —our most versatile material. UV-stabilized, abrasion-resistant, and REACH compliant. Ideal for recreational boats, SUP boards, and SUPs where weight and cost efficiency matter.'
+      icon: tabler:droplet
+    - title: Premium Hypalon/CSM
+      description: 'Överlägsen kemisk beständighet och UV-stabilitet. Hypalon-båtar kan hålla 15-20 år med rätt skötsel. Rekommenderas för kommersiella, räddnings- och militära tillämpningar där långsiktig hållbarhet är kritisk.'
+      icon: tabler:shield
+    - title: Fiberglass & Aluminum
+      description: 'Djupa V-formade glasfiberskrov för SUP och patrullbåtar —vågskärande prestanda i grov sjö. Aluminiumskrov för tunga kommersiella arbetsbåtar som kräver maximal styrka och lastkapacitet.'
+      icon: tabler:building-arch
+expertise_manufacturing:
+  tagline: Manufacturing Capabilities
+  title: 'Precisionstillverkning<br />i varje steg'
+  subtitle: 'Vår 12 000 m² anläggning är utrustad med specialiserad maskineri för varje produktionssteg.'
+  columns: 2
+  items:
+    - title: CNC Cutting
+      description: 'Datorstyrd skärning säkerställer precisa, repeterbara tygpaneler med minimalt spill. Varje bit passar exakt som designad.'
+      icon: tabler:cpu
+    - title: High-Frequency Welding
+      description: 'Industriell HF-svetsning skapar sömmar starkare än basmaterialet. Konsekvent temperatur- och tryckkontroll säkerställer lufttäta förseglingar i varje produktionskörning.'
+      icon: tabler:bolt
+    - title: Drop Stitch Core Assembly
+      description: 'Tusentals polyestertrådar ansluter tygets övre och nedre lager, vilket möjliggör högtrycksuppblåsning (15-20 PSI) för styva, stabila SUP-brädor och golv.'
+      icon: tabler:building-arch
+    - title: Pressure Testing
+      description: 'Varje uppblåsbar produkt trycktestas före leverans. SUP-slangar testas vid 1,5x nominellt tryck —om det håller där kommer det att presterar på vattnet.'
+      icon: tabler:wind
+    - title: Seam Strength Testing
+      description: 'Slumpmässiga prover från varje produktionsbatch genomgår destruktiv sömhållfasthetstestning. Resultaten loggas och är spårbara till specifika produktionskörningar.'
+      icon: tabler:files
+    - title: Water Testing
+      description: 'Varje SUP-modell genomgår sjöprov innan certifiering. Verklighetstestning i kustförhållanden validerar prestanda, hantering och stabilitet.'
+      icon: tabler:droplet
+expertise_design:
+  tagline: Design & Engineering
+  title: 'Konstruerad för verkliga förhållanden'
+  subtitle: 'Vår designfilosofi börjar med hur båten kommer att användas —sedan bygger vi konstruktionen runt det användningsfallet.'
+  items:
+    - title: Deep-V Hull Design
+      description: "Our fiberglass hulls feature calculated deadrise angles optimized for each model's length and intended use. Steeper V for rough-water performance, shallower for stability."
+    - title: Multi-Chamber Safety
+      description: 'Varje båt har 3-7 oberoende luftkammare. Om en avdelning äventyras håller de återstående kamrarna båten flytande och funktionsduglig.'
+    - title: Ergonomic Layout
+      description: 'Konsollposition, slanghöjd och sitsplacering är designade för operatörens komfort vid längre användning —oavsett om det är patrullering, fiske eller transport.'
+    - title: Custom Configuration
+      description: 'Slangfärger, konsollkonfiguration, bränslekapacitet, tillbehörsfästen —varje modell kan anpassas för att matcha specifika operativa krav.'
+cta:
+  title: 'Har du en specifik tillämpning i åtanke?'
+  subtitle: 'Vårt ingenjörsteam kan ge råd om materialval, design och tillverkning för ditt projekt.'
+  actions:
+    - variant: primary
+      text: Ask our engineers
+      href: /contact
+    - text: View product range
+      href: /products

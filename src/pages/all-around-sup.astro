@@ -1,0 +1,234 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+
+const metadata = {
+  title: 'All-Around SUP Board | Versatile Inflatable Paddle Board | Afarer OEM Manufacturer',
+  description:
+    'Afarer all-around inflatable SUP boards — versatile designs for recreation, fitness, and casual touring. Stable, portable, beginner-friendly. CE certified. OEM/ODM manufacturing available for brands, resorts, and clubs.',
+  ignoreTitleTemplate: true,
+};
+const pageUrl = 'https://afarer.com/all-around-sup/';
+const today = '2026-07-27';
+
+const faqItems = [
+  {
+    question: 'What is an all-around SUP board?',
+    answer: 'An all-around SUP board is the most versatile inflatable paddle board category, designed to perform well across flatwater lakes, slow rivers, and protected coastal waters. It balances stability, maneuverability, and tracking for recreation, fitness, and casual touring.'
+  },
+  {
+    question: 'What size all-around SUP should I choose?',
+    answer: 'For most adults, an all-around SUP between 10\'6" and 11\'6" with 32"–34" width provides the best balance of stability and performance. Heavier paddlers (200+ lbs) should choose longer/wider models for adequate buoyancy.'
+  },
+  {
+    question: 'Are inflatable all-around SUPs stable for beginners?',
+    answer: 'Yes. All-around SUPs are the most beginner-friendly category due to their wide tail, moderate rocker, and balanced dimensions. The wide platform provides exceptional stability for learning paddle techniques.'
+  },
+  {
+    question: 'Can all-around SUPs be used for touring?',
+    answer: 'Yes. While purpose-built touring SUPs offer better glide for long distances, all-around boards handle casual touring and day trips on calm water very well. Their moderate length provides adequate tracking for most recreational needs.'
+  },
+  {
+    question: 'Do you manufacture all-around SUPs for private label brands?',
+    answer: 'Yes. Afarer offers OEM/ODM manufacturing for all-around SUP boards. We provide custom deck graphics, color matching, packaging design, and compliance documentation for brands, resorts, and retail partners worldwide.'
+  },
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqItems.map((f) => ({ '@type': 'Question', name: f.question, acceptedAnswer: { '@type': 'Answer', text: f.answer } })) };
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="Article"
+    data={{
+      headline: 'All-Around SUP Board — The Most Versatile Inflatable Paddle Board',
+      description: metadata.description,
+      datePublished: today,
+      author: { '@type': 'Organization', name: 'Afarer' },
+      url: pageUrl,
+    }}
+  />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: 'Home', item: 'https://afarer.com/' },
+        { position: 2, name: 'Inflatable SUP Boards', item: 'https://afarer.com/inflatable-sup/' },
+        { position: 3, name: 'All-Around SUP', item: pageUrl },
+      ],
+    }}
+  />
+  <JsonLd data={faqLd} />
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto py-24 px-6">
+    <a href="/inflatable-sup/" class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-8 transition-colors">← SUP Product Center</a>
+    <div class="max-w-4xl">
+      <span class="text-xs font-semibold text-primary tracking-[0.25em] uppercase">SUP Category</span>
+      <h1 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-secondary leading-[1.1]">All-Around SUP Board</h1>
+      <p class="mt-6 text-lg text-gray-500 max-w-3xl leading-relaxed">
+        The all-around SUP is the most versatile inflatable paddle board category — equally at home on calm lakes, slow rivers, and protected coastal waters. Afarer all-around SUPs combine balanced dimensions with stable drop-stitch platforms that deliver performance across recreation, fitness, and casual touring. Whether you are a first-time paddler or an experienced enthusiast looking for one board to do it all, the all-around SUP is the smartest choice.
+      </p>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">Key Features of All-Around SUPs</h2>
+        <p class="mt-4 text-lg text-gray-500">Why the all-around category dominates the SUP market.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center mx-auto">
+            <svg class="w-7 h-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v2.25M12 21v-2.25M3 12h2.25M18.75 12H21M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </div>
+          <h3 class="mt-5 text-lg font-bold text-secondary">Balanced Dimensions</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">10'6"–11'6" length with 32"–34" width delivers optimal stability without sacrificing maneuverability. Tracks well on flat water, turns easily in tight spaces.</p>
+        </div>
+        <div class="text-center bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center mx-auto">
+            <svg class="w-7 h-7 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          </div>
+          <h3 class="mt-5 text-lg font-bold text-secondary">Beginner-Friendly Stability</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Wide tail and moderate rocker provide a forgiving platform for learning paddle techniques. New paddlers typically stand and paddle confidently within their first session.</p>
+        </div>
+        <div class="text-center bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-50 to-amber-100 flex items-center justify-center mx-auto">
+            <svg class="w-7 h-7 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"/></svg>
+          </div>
+          <h3 class="mt-5 text-lg font-bold text-secondary">Fully Portable</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Packs into a backpack under 25 lbs. Take it on road trips, flights, or store in a closet. No roof rack needed. Inflates in 5–8 minutes with included pump.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Products -->
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-8">Best All-Around SUP Products from Afarer</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <a href="/products/sup-explorer-11" class="group flex items-start gap-4 bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-all">
+          <div class="w-20 h-20 rounded-xl bg-gradient-to-br from-blue-50 to-cyan-50 flex-shrink-0 overflow-hidden">
+            <img src="https://assets.afarer.com/images/afarer/products/afarer-sup-allround-board.webp" alt="SUP Explorer 11'" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">SUP Explorer 11'</h3>
+            <p class="mt-1 text-sm text-gray-500">Perfect all-around board for recreation and fitness. 32" width, beginner-friendly, 11' drop-stitch construction.</p>
+            <span class="inline-block mt-2 text-xs font-medium text-primary">Learn more →</span>
+          </div>
+        </a>
+        <a href="/products/sup-dolphin-wave" class="group flex items-start gap-4 bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-all">
+          <div class="w-20 h-20 rounded-xl bg-gradient-to-br from-teal-50 to-green-50 flex-shrink-0 overflow-hidden">
+            <img src="https://assets.afarer.com/images/afarer/products/sup-series/sup-dolphin-wave-1.webp" alt="Dolphin Wave Series" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">Dolphin Wave Series</h3>
+            <p class="mt-1 text-sm text-gray-500">Versatile touring all-rounder for lakes and coastal paddling. Great glide with enhanced tracking fin system.</p>
+            <span class="inline-block mt-2 text-xs font-medium text-primary">Learn more →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Is It For -->
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">Who Is an All-Around SUP For?</h2>
+        <p class="mt-4 text-lg text-gray-500">The most versatile board category suits the widest range of paddlers.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">Recreational Paddlers</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Perfect for weekend lake outings, gentle river floats, and coastal explorations. One board handles everything from flat-water cruising to light fitness paddling.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">First-Time Buyers</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">If you are buying your first SUP, an all-around board is the safest choice. Its forgiving stability makes learning faster and more enjoyable.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">Resort & Rental Fleets</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">All-around SUPs are the preferred choice for resort water activity programs and rental operations. Their durability, stability, and universal appeal make them ideal for guest use. OEM branding available.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">Private Label Brands</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Launching a SUP brand? The all-around category offers the broadest market appeal for private-label programs. Afarer provides turn-key OEM manufacturing with custom graphics, packaging, and compliance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OEM Section -->
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">OEM/ODM Manufacturing for All-Around SUPs</h2>
+      <p class="text-lg text-gray-500 leading-relaxed mb-8">
+        Afarer manufactures all-around SUP boards for global brands, resorts, paddle clubs, and retail chains. Our 12,000 m² facility produces CE-certified drop-stitch boards with custom deck graphics, color-matched PVC, and retail-ready packaging. MOQ from 50 units. Lead times from 30 days.
+      </p>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">Custom</span>
+          <p class="mt-1 text-sm text-gray-500">Deck graphics, color, packaging</p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">50+</span>
+          <p class="mt-1 text-sm text-gray-500">Units minimum order</p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">30 Days</span>
+          <p class="mt-1 text-sm text-gray-500">Typical lead time</p>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <a href="/oem-odm-manufacturer" class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all">Request OEM Quote <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">All-Around SUP — Frequently Asked Questions</h2>
+      <p class="text-lg text-gray-500 text-center mb-12">Common questions about selecting, using, and manufacturing all-around paddle boards.</p>
+      <div class="space-y-4">
+        {faqItems.map((item) => (
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-lg font-semibold text-secondary">{item.question}</h3>
+            <p class="mt-2 text-sm text-gray-500 leading-relaxed">{item.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Guides -->
+  <section class="max-w-6xl mx-auto py-16 px-6">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary">All-Around SUP Guides</h2>
+      <p class="mt-4 text-lg text-gray-500">Related content to help you choose and use your all-around board.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href="/compare/inflatable-vs-hardboard" class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all">
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">Inflatable vs Hard Board</h3>
+        <p class="mt-2 text-sm text-gray-500">Which type is right for your paddling style?</p>
+      </a>
+      <a href="/compare/pvc-vs-hypalon" class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all">
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">PVC vs Hypalon Material</h3>
+        <p class="mt-2 text-sm text-gray-500">Material comparison for inflatable boards.</p>
+      </a>
+      <a href="/compare/single-chamber-vs-multi-chamber" class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all">
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">Chamber Safety Guide</h3>
+        <p class="mt-2 text-sm text-gray-500">Learn about single vs multi-chamber SUPs.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-secondary">Start with the Right Board</h2>
+    <p class="mt-4 text-lg text-gray-500">Our team can help you select the perfect all-around SUP or discuss OEM manufacturing for your brand.</p>
+    <a href="/contact" class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all">Get a Quote <span>→</span></a>
+  </section>
+</Layout>

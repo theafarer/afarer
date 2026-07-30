@@ -1,0 +1,29 @@
+---
+import merge from 'lodash.merge';
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { SITE } from 'astrowind:config';
+import JsonLd from '~/components/common/JsonLd.astro';
+
+import communityData from '~/data/pages/community.yaml';
+
+const page = merge({}, communityData);
+
+const metadata = {
+  title: `Community –Join the afarer Paddling Community –${SITE.name}`,
+  description:
+    'Real adventures from real people. Join thousands of paddlers exploring lakes, rivers, and coastlines with afarer.',
+};
+---
+
+<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Community', item: 'https://afarer.com/community/' }] }} />
+
+<Layout metadata={metadata}>
+  <Hero {...page.hero} />
+  <Stats {...page.stats} />
+  <Testimonials {...page.stories} />
+  <CallToAction {...page.cta} />
+</Layout>

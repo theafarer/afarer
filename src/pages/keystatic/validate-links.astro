@@ -1,0 +1,344 @@
+---
+import AdminLayout from '~/layouts/AdminLayout.astro';
+import { verifySessionToken } from '~/lib/auth';
+
+export const prerender = true;
+
+const session = Astro.cookies.get('ks-admin-session')?.value;
+const verified = session ? verifySessionToken(session) : null;
+
+interface BrokenRef {
+  url: string;
+  path: string;
+}
+interface ExtRef {
+  url: string;
+  path: string;
+}
+
+const knownSet = new Set<string>();
+const staticPagePatterns: string[] = [];
+
+/* Walk src/pages/ filesystem at build time (import.meta.glob cannot
+   match [lang] or [slug] directories on Windows due to glob bracket
+   interpretation) */
+import fs from 'node:fs';
+import path from 'node:path';
+
+interface PageFile {
+  rel: string;
+}
+function walkPages(dir: string, base: string, out: PageFile[]): void {
+  let entries: fs.Dirent[];
+  try {
+    entries = fs.readdirSync(dir, { withFileTypes: true });
+  } catch {
+    return;
+  }
+  for (const e of entries) {
+    const abs = path.join(dir, e.name);
+    const rel = path.relative(base, abs).replace(/\\/g, '/');
+    if (e.isDirectory()) {
+      if (!e.name.startsWith('_')) walkPages(abs, base, out);
+    } else if (e.isFile()) {
+      const ext = path.extname(e.name);
+      if (['.astro', '.md', '.mdx', '.ts'].includes(ext)) out.push({ rel });
+    }
+  }
+}
+const pageFiles: PageFile[] = [];
+walkPages(path.resolve('src/pages'), path.resolve('src/pages'), pageFiles);
+
+for (const { rel } of pageFiles) {
+  /* Strip [lang]/ prefix to get the base route */
+  const stripped = rel.startsWith('[lang]/') ? rel.slice(7) : rel;
+
+  /* Skip private partials */
+  if (stripped.includes('/_') || stripped.startsWith('_')) continue;
+  /* Skip dynamic-segment files */
+  if (/\[.*?\]/.test(stripped)) {
+    staticPagePatterns.push('/' + stripped.replace(/\.(astro|md|mdx|ts)$/, '').replace(/\[.*?\]/g, ':param'));
+    continue;
+  }
+
+  let route = '/' + stripped.replace(/\.(astro|md|mdx|ts)$/, '');
+  if (route.endsWith('/index')) route = route.slice(0, -6);
+  if (route.endsWith('//')) route = route.slice(0, -1);
+  knownSet.add(route === '' ? '/' : route);
+}
+
+/* Add routes from products and blog posts */
+const productRaw: Record<string, string> = import.meta.glob('/src/data/product/**/*.{yaml,yml,json}', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>;
+for (const fpath of Object.keys(productRaw)) {
+  const name = fpath
+    .replace(/\\/g, '/')
+    .replace(/^.*[\\/]/, '')
+    .replace(/\.\w+$/, '');
+  if (name) knownSet.add('/products/' + name);
+}
+
+const postRaw: Record<string, string> = import.meta.glob('/src/data/post/**/*.{md,mdx}', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>;
+for (const fpath of Object.keys(postRaw)) {
+  const name = fpath
+    .replace(/\\/g, '/')
+    .replace(/^.*[\\/]/, '')
+    .replace(/\.\w+$/, '');
+  if (name) knownSet.add('/blog/' + name);
+}
+
+/* Add known static path patterns */
+const extraRoutes = [
+  '/',
+  '/about',
+  '/technology',
+  '/oem-odm',
+  '/safety',
+  '/quality-testing',
+  '/certifications',
+  '/factory',
+  '/contact',
+  '/faq',
+  '/warranty',
+  '/privacy',
+  '/terms',
+  '/disclaimer',
+  '/trust',
+  '/resources/download-catalog',
+  '/news',
+  '/journal',
+  '/guides',
+  '/size-guide',
+  '/b2b-solutions-matrix',
+  '/search',
+  '/rss.xml',
+  '/llms.txt',
+];
+for (const r of extraRoutes) knownSet.add(r);
+
+const knownPaths = [...knownSet].sort();
+
+/* ------------------------------------------------------------------ */
+/* 2. Scan data files for references                                   */
+/* ------------------------------------------------------------------ */
+const allDataRaw: Record<string, string> = import.meta.glob('/src/data/**/*.{yaml,yml,json,md,mdx}', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>;
+
+function normalizePath(p: string): string {
+  return p.replace(/\\/g, '/');
+}
+
+const broken: BrokenRef[] = [];
+const known: string[] = [];
+const external: ExtRef[] = [];
+const seenKnown = new Set<string>();
+const seenExt = new Set<string>();
+let totalUrls = 0;
+
+for (const [fpath, raw] of Object.entries(allDataRaw)) {
+  const rel = normalizePath(fpath).replace(/^\/src\/data\//, '');
+  if (rel.startsWith('contact/')) continue;
+  if (/\.enc\.json$/.test(rel)) continue;
+
+  const hrefMatches = raw.matchAll(/(?:href|url|linkUrl)\s*:\s*(['"])([^'"]+)\1/g);
+  for (const m of hrefMatches) {
+    totalUrls++;
+    const link = m[2];
+    classify(link, rel);
+  }
+
+  const mdLinkMatches = raw.matchAll(/\[([^\]]*)\]\(([^)]+)\)/g);
+  for (const m of mdLinkMatches) {
+    const link = m[2].split('#')[0].split('?')[0];
+    if (!link || link.startsWith('#')) continue;
+    totalUrls++;
+    classify(link, rel);
+  }
+
+  const htmlAnchorMatches = raw.matchAll(/<a[^>]+href\s*=\s*(['"])([^'"]+)\1[^>]*>/gi);
+  for (const m of htmlAnchorMatches) {
+    totalUrls++;
+    const link = m[2].split('#')[0].split('?')[0];
+    classify(link, rel);
+  }
+}
+
+function matchesPattern(url: string, pattern: string): boolean {
+  const urlParts = url.split('/');
+  const patParts = pattern.split('/');
+  if (urlParts.length !== patParts.length) return false;
+  for (let i = 0; i < urlParts.length; i++) {
+    if (patParts[i] === ':param') continue;
+    if (patParts[i] !== urlParts[i]) return false;
+  }
+  return true;
+}
+
+function classify(link: string, sourceFile: string) {
+  if (link.startsWith('http://') || link.startsWith('https://')) {
+    const key = link + '|' + sourceFile;
+    if (!seenExt.has(key)) {
+      seenExt.add(key);
+      external.push({ url: link, path: sourceFile });
+    }
+    return;
+  }
+
+  if (!link.startsWith('/')) return;
+
+  const stripped = link.split('#')[0].split('?')[0].replace(/\/+$/, '') || '/';
+  if (knownSet.has(stripped)) {
+    if (!seenKnown.has(stripped)) {
+      seenKnown.add(stripped);
+      known.push(stripped);
+    }
+  } else if (staticPagePatterns.some((p) => matchesPattern(stripped, p))) {
+    if (!seenKnown.has(stripped)) {
+      seenKnown.add(stripped);
+      known.push(stripped);
+    }
+  } else {
+    broken.push({ url: stripped, path: sourceFile });
+  }
+}
+
+known.sort();
+const brokenSorted = broken.sort((a, b) => a.url.localeCompare(b.url));
+---
+
+<AdminLayout title="Link Validation" active="links" username={verified?.username}>
+  <div class="mb-6">
+    <a href="/keystatic/link-refactor" class="text-sm text-gray-500 hover:underline">← Link Refactoring Tool</a>
+    <h1 class="mt-2 text-2xl font-semibold">Link Validation</h1>
+    <p class="mt-1 text-sm text-gray-500">
+      Scanned <strong>{Object.keys(allDataRaw).length}</strong> data files, extracted <strong>{totalUrls}</strong> references,
+      checked against <strong>{knownPaths.length}</strong> known routes + <strong>{staticPagePatterns.length}</strong> dynamic
+      patterns. External links are listed but not checked. Query strings and hash fragments are ignored.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mb-6">
+    <div class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-4">
+      <div class="text-xs uppercase tracking-wide opacity-70">Files scanned</div>
+      <div class="mt-1 text-3xl font-semibold">{Object.keys(allDataRaw).length}</div>
+    </div>
+    <div class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-4">
+      <div class="text-xs uppercase tracking-wide opacity-70">Total references</div>
+      <div class="mt-1 text-3xl font-semibold">{totalUrls}</div>
+    </div>
+    <div class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-4">
+      <div class="text-xs uppercase tracking-wide opacity-70">Known internal URLs</div>
+      <div class="mt-1 text-3xl font-semibold">{known.length}</div>
+    </div>
+    <div
+      class="rounded-xl border {brokenSorted.length === 0 ? 'border-green-200 dark:border-green-900 bg-green-50 dark:bg-green-950/30' : 'border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-950/30'} p-4"
+    >
+      <div class="text-xs uppercase tracking-wide opacity-70">Broken references</div>
+      <div class="mt-1 text-3xl font-semibold">{brokenSorted.length}</div>
+    </div>
+  </div>
+
+  {
+    brokenSorted.length > 0 && (
+      <div class="rounded-xl border border-red-200 dark:border-red-800 bg-white dark:bg-gray-950 overflow-hidden mb-6">
+        <div class="px-5 py-3 bg-red-50 dark:bg-red-950/30 text-sm font-semibold text-red-900 dark:text-red-200">
+          Broken internal references ({brokenSorted.length})
+        </div>
+        <table class="w-full text-sm">
+          {brokenSorted.map((b) => (
+            <tr class="border-t border-gray-100 dark:border-gray-800">
+              <td class="px-3 py-2 font-mono text-xs text-red-600 dark:text-red-400 whitespace-nowrap">{b.url}</td>
+              <td class="px-3 py-2 text-xs text-gray-500">
+                <code class="font-mono">{b.path}</code>
+              </td>
+            </tr>
+          ))}
+        </table>
+      </div>
+    )
+  }
+  {
+    brokenSorted.length === 0 && (
+      <div class="rounded-lg border border-green-200 bg-green-50 dark:bg-green-950/30 dark:border-green-800 p-4 text-sm text-green-800 dark:text-green-300 mb-6">
+        All internal references point to known routes.
+      </div>
+    )
+  }
+
+  <details
+    class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 overflow-hidden mb-6"
+  >
+    <summary class="px-5 py-3 cursor-pointer text-sm font-semibold">Known routes matched ({known.length})</summary>
+    <div
+      class="px-5 py-3 border-t border-gray-200 dark:border-gray-800 text-xs grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 font-mono"
+    >
+      {
+        known.map((u) => (
+          <a class="text-blue-600 hover:underline truncate" href={u} target="_blank" rel="noopener">
+            {u}
+          </a>
+        ))
+      }
+    </div>
+  </details>
+
+  {
+    staticPagePatterns.length > 0 && (
+      <details class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 overflow-hidden mb-6">
+        <summary class="px-5 py-3 cursor-pointer text-sm font-semibold">
+          Dynamic route patterns ({staticPagePatterns.length})
+        </summary>
+        <div class="px-5 py-3 border-t border-gray-200 dark:border-gray-800 text-xs grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 font-mono text-gray-500">
+          {staticPagePatterns.map((p) => (
+            <span>{p}</span>
+          ))}
+        </div>
+      </details>
+    )
+  }
+
+  {
+    external.length > 0 && (
+      <details class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 overflow-hidden mb-6">
+        <summary class="px-5 py-3 cursor-pointer text-sm font-semibold">
+          External links (reference only, {external.length})
+        </summary>
+        <table class="w-full text-xs border-t border-gray-200 dark:border-gray-800">
+          {external.slice(0, 200).map((e) => (
+            <tr class="border-b border-gray-100 dark:border-gray-800">
+              <td class="px-3 py-1 font-mono text-blue-600 truncate max-w-xs">
+                <a href={e.url} target="_blank" rel="noopener">
+                  {e.url}
+                </a>
+              </td>
+              <td class="px-3 py-1 text-gray-500">
+                <code class="font-mono">{e.path}</code>
+              </td>
+            </tr>
+          ))}
+          {external.length > 200 && (
+            <tr>
+              <td colspan="2" class="px-3 py-2 text-xs text-gray-500 text-center">
+                &mdash; Showing first 200 only
+              </td>
+            </tr>
+          )}
+        </table>
+      </details>
+    )
+  }
+
+  <div class="mt-8 pt-4 border-t border-gray-200 dark:border-gray-800 text-xs text-gray-500">
+    <p>Last scanned at build time. Rebuild the site to refresh.</p>
+  </div>
+</AdminLayout>

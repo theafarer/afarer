@@ -1,0 +1,14 @@
+name = "afarer-admin"
+main = "index.ts"
+compatibility_date = "2026-07-08"
+compatibility_flags = ["nodejs_compat"]
+
+routes = [
+  { pattern = "afarer.com/api/admin/*", zone_name = "afarer.com" },
+  { pattern = "afarer.com/api/auth/*", zone_name = "afarer.com" },
+]
+
+[vars]
+ADMIN_USERNAME = "admin"
+GITHUB_OWNER = "afarer"
+GITHUB_REPO = "official"

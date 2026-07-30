@@ -1,0 +1,73 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from 'astrowind:config';
+
+export const prerender = true;
+
+import { languages } from '~/i18n/config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/randdcenter.ts';
+import __pageSlugData from '~/i18n/generated/pages/hull-engineering.ts';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+
+setPageContentData(__pageData);
+setPageContentData(__pageSlugData);
+const page = getPageContent(lang, 'hull-engineering');
+const randd = getPageContent(lang, 'randdcenter');
+
+const crumbs = [
+  { name: page.home_label || 'Home', href: `/${lang}/` },
+  { name: randd.hero?.tagline || 'R&D Center', href: `/${lang}/randdcenter` },
+  { name: page.hero?.title || 'Hull Engineering Studio' },
+];
+
+const metadata = {
+  title: (page.meta?.title || '').replace('{SITE}', SITE.name) || `Hull Engineering Studio | ${SITE.name}`,
+  description: (page.meta?.description || '').replace('{SITE}', SITE.name) || '',
+};
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <section class="px-6 sm:px-6 py-16 sm:py-20 mx-auto max-w-5xl">
+    <a href={`/${lang}/randdcenter`} class="text-sm text-gray-500 hover:underline"
+      >&larr; {page.back_text || 'Back to R&D Center'}</a
+    >
+    <div class="mt-4 grid md:grid-cols-5 gap-10">
+      <div class="md:col-span-3">
+        <p class="text-sm font-semibold text-primary uppercase tracking-wider">{page.hero?.tagline}</p>
+        <h1 class="mt-2 text-3xl md:text-4xl font-bold">{page.hero?.title}</h1>
+        <p class="mt-3 text-lg text-muted">{page.hero?.subtitle}</p>
+      </div>
+      <div class="md:col-span-2">
+        <img
+          src={page.hero?.image ||
+            'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'}
+          alt={page.hero?.image_alt || ''}
+          class="w-full h-48 object-cover rounded-xl"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="px-6 sm:px-6 pb-12 mx-auto max-w-4xl prose prose-gray dark:prose-invert">
+    {page.intro && <p>{page.intro}</p>}
+    {page.content_html && <div set:html={page.content_html} />}
+  </section>
+
+  <section class="px-6 sm:px-6 pb-20 mx-auto max-w-4xl text-center">
+    <div class="rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-8">
+      <h2 class="text-xl font-bold">{page.cta?.title}</h2>
+      <p class="mt-2 text-sm text-muted">{page.cta?.subtitle}</p>
+      <a
+        href={`/${lang}${page.cta?.button_link || '/contact'}`}
+        class="mt-4 inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90"
+        >{page.cta?.button_text}</a
+      >
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,134 @@
+﻿hero:
+  tagline: Contact
+  title: Contactează afarer
+  subtitle: Suntem aici să te ajutăm. Contactează-ne pentru întrebări despre produse, parteneriate OEM/ODM sau orice altceva.
+  image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
+  imageAlt: Contactează afarer
+
+contact_form:
+  id: form
+  title: Trimiteți-ne un mesaj
+  subtitle: Pentru oferte, întrebări tehnice sau solicitări de parteneriat, scrieți-ne. Răspundem într-o zi lucrătoare.
+  email_to: info@afarer.com
+  submit_button: Trimite solicitarea →Obține o ofertă
+  success_message: Mulțumim! Mesajul dvs. a ajuns în căsuța noastră poștală. Vom răspunde într-o zi lucrătoare.
+  error_message: Ceva a mers greșit la trimiterea mesajului. Încercați din nou sau trimiteți-ne un e-mail direct.
+  default_country_code: '+1'
+  captcha:
+    label: 'Anti-spam: rezolvați următoarea cerință'
+  fields:
+    - name: firstName
+      label: Prenume
+      row: 1
+    - name: lastName
+      label: Nume
+      row: 1
+    - name: companyName
+      label: Numele companiei
+      row: 2
+    - name: address
+      label: Adresă
+      row: 3
+    - name: zip
+      label: Cod poștal
+      row: 4
+    - name: country
+      label: Țară
+      row: 4
+      type: select
+      optionsKey: countries
+    - name: email
+      label: E-mail
+      row: 5
+      type: email
+    - name: tel
+      label: Telefon
+      row: 5
+      type: tel
+      withCountryCode: true
+    - name: orderVolume
+      label: Volum estimat al comenzii
+      row: 6
+      type: select
+      options:
+        - value: 'Suport clienți'
+          label: Selectați volumul estimat...
+        - value: sample
+          label: Doar mostre / prototipuri
+        - value: '5-10'
+          label: 50—00 unități (MOQ standard)
+        - value: '100-500'
+          label: 100—00 unități
+        - value: '500-plus'
+          label: 500+ unități (prețuri volumetrice)
+    - name: customization
+      label: Aveți nevoie de personalizare?
+      row: 7
+      type: select
+      options:
+        - value: 'Asistență tehnică'
+          label: Selectați tipul de personalizare...
+        - value: none
+          label: Produs standard (fără personalizare)
+        - value: logo
+          label: Doar logo / branding personalizat
+        - value: full
+          label: OEM complet (dimensiune, culoare, grafică, ambalaj)
+        - value: consultation
+          label: Nu sunt sigur —am nevoie de consultanță
+    - name: productInterest
+      label: Categorii de produse de interes
+      row: 8
+      type: select
+      options:
+        - value: 'Vânzări'
+          label: Selectați categoria de produs...
+        - value: all
+          label: Toate produsele / catalog complet
+        - value: sup
+          label: Plăci SUP / paddleboard-uri
+        - value: SUP
+          label: Caiac gonflabil
+        - value: SUP
+          label: Bărci SUP
+        - value: SUP
+          label: Bărci mici / tender
+        - value: safety
+          label: Echipament de siguranță / veste de salvare
+        - value: accessory
+          label: Accesorii (pompe, vâsle, genți)
+    - name: subject
+      label: Subiect
+      row: 9
+    - name: message
+      label: Mesaj
+      row: 10
+      type: textarea
+      rows: 6
+features2_other_ways:
+  title: Alte modalități de a ne contacta
+  columns: 3
+  items:
+    - title: Întrebări despre vânzări
+      description: Oferte, configurații, cereri de distribuitor și comenzi în vrac.
+      icon: tabler:shopping-bag
+    - title: Suport tehnic
+      description: Garanție, reparații, piese de schimb și întrebări de operare.
+      icon: tabler:tool
+    - title: Presă și parteneriate
+      description: Kituri media, sponsorizări și colaborare industrială.
+      icon: tabler:news
+    - title: Telefon
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: E-mail
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: Sediu central
+      description: Economic Development Zone, Laixi, Qingdao, China, 266600
+      icon: tabler:map-pin
+map:
+  title: Locația noastră
+  subtitle: Vizitați-ne la sediul central
+  address: Economic Development Zone, Laixi, Qingdao, China, 266600
+  zoom: 15

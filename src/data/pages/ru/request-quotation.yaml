@@ -1,0 +1,57 @@
+﻿hero_text:
+  tagline: Get a Quote
+  title: 'Запросить предложение<br />для вашего проекта'
+  subtitle: 'Расскажите нам о ваших требованиях, и наша команда ответит с подробным предложением в течение 2 рабочих дней.'
+steps2_process:
+  title: How It Works
+  subtitle: 'Четыре простых шага от запроса до предложения.'
+  items:
+    - title: 'Step 1: Submit Your Requirements'
+      description: 'Заполните форму ниже с указанием типа продукта, количества и спецификаций. Чем больше деталей вы предоставите, тем точнее будет ваше предложение.'
+      icon: tabler:file-text
+    - title: 'Step 2: We Review & Advise'
+      description: 'Наша инженерная команда рассматривает ваши требования и может связаться с вами для уточнения. Мы предоставляем рекомендации по конфигурации и опциям продукта.'
+      icon: tabler:users
+    - title: 'Step 3: Receive Your Quote'
+      description: 'Вы получаете подробное предложение, включающее цены за единицу, MOQ, сроки поставки, условия оплаты и варианты доставки. Обычно в течение 48 часов.'
+      icon: tabler:currency-dollar
+    - title: 'Step 4: Sample & Production'
+      description: 'После принятия предложения мы переходим к производству образцов (если применимо) или сразу к массовому производству. Регулярные обновления на протяжении всего процесса.'
+      icon: tabler:building-factory
+content_form:
+  tagline: Quotation Form
+  title: 'Расскажите нам о вашем проекте'
+  subtitle: 'Все поля с * обязательны для заполнения.'
+  fields:
+    - name: Product Type
+      type: select
+      options:
+        - SUP Boat
+        - Inflatable Boat
+        - SUP Board
+        - Inflatable SUP
+        - Life Vest
+        - Accessory
+        - Custom
+    - name: Quantity
+      type: text
+      placeholder: e.g. 50 units
+    - name: Target Market
+      type: text
+      placeholder: e.g. Europe, North America, Middle East
+    - name: Customization Needed
+      type: text
+      placeholder: e.g. custom colors, branding, packaging
+    - name: Timeline
+      type: text
+      placeholder: e.g. delivery within 90 days
+    - name: Additional Requirements
+      type: textarea
+      placeholder: Describe your application, technical specifications, or any special requirements
+cta:
+  title: 'Prefer to discuss by email?'
+  subtitle: 'Send your inquiry directly to our sales team and we will respond within 24 hours.'
+  actions:
+    - variant: primary
+      text: Email us directly
+      href: /contact

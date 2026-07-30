@@ -1,0 +1,353 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import AiQuickAnswer from '~/components/common/AiQuickAnswer.astro';
+
+const metadata = {
+  title: 'Inflatable SUP Guide –Complete Resource on Types, Materials, Selection & Safety',
+  description:
+    'A comprehensive guide to inflatable SUPs covering types, construction methods, materials comparison, selection criteria, safety standards, and maintenance.',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="Article"
+    article={{
+      headline: 'Inflatable SUP Guide –The Complete Resource',
+      description:
+        'A comprehensive guide to inflatable SUPs covering types, construction methods, materials comparison, selection criteria, safety standards, and maintenance.',
+      datePublished: '2026-07-07',
+    }}
+    data={{ url: 'https://afarer.com/marine-industry/' }}
+  />
+
+  <JsonLd
+    type="BreadcrumbList"
+    breadcrumbs={[
+      { name: 'Home', href: '/' },
+      { name: 'Marine Industry', href: '/marine-industry' },
+      { name: 'Inflatable SUP Guide', href: '/marine-industry/' },
+    ]}
+  />
+
+  <AiQuickAnswer
+    entityType="Guide"
+    quickAnswer="An inflatable SUP is a portable stand-up paddle board constructed with a drop-stitch core and PVC fabric shells filled with pressurized air. Modern iSUPs use military-grade PVC fabrics with RF welding, achieving rigidity comparable to hard boards at 12-15 PSI. They are lightweight, packable, and suitable for recreation, touring, yoga, and fishing."
+    facts={[
+      { label: 'Global Market Size', value: '$1.2B (2026)' },
+      { label: 'Primary Materials', value: 'Drop-Stitch PVC' },
+      { label: 'Lifespan Range', value: '5-12 years' },
+      { label: 'CE Certification', value: 'Required (EU)' },
+    ]}
+  />
+
+  <section class="max-w-4xl mx-auto py-16 px-6">
+    <h1 class="text-4xl font-semibold text-gray-900">Inflatable SUP Guide</h1>
+    <p class="mt-4 text-lg text-gray-500">
+      The definitive resource on inflatable stand-up paddle boards –from all-around recreational boards to touring,
+      yoga, and fishing SUPs.
+    </p>
+
+    <nav class="mt-8 flex flex-wrap gap-2">
+      {
+        ['Types', 'Construction', 'Materials', 'Selection', 'Safety', 'Maintenance', 'Applications'].map((section) => (
+          <a
+            href={`#${section.toLowerCase()}`}
+            class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-full text-sm font-medium text-gray-700 transition"
+          >
+            {section}
+          </a>
+        ))
+      }
+    </nav>
+
+    <section id="types" class="mt-16">
+      <h2 class="text-2xl font-semibold text-gray-900">Types of Inflatable SUPs</h2>
+      <div class="mt-8 grid gap-6">
+        {
+          [
+            {
+              title: 'All-Around SUP',
+              desc: 'The most versatile category. 10-11 ft length, 32-34" width. Stable, forgiving shape ideal for beginners, recreational paddling on lakes, rivers, and sheltered coastal waters. The best choice for a single-board quiver.',
+            },
+            {
+              title: 'Touring SUP',
+              desc: 'Longer (11-14 ft) and narrower (30-32") for distance paddling. Displacement nose improves tracking and glide efficiency. Designed for fitness paddling, exploration, and multi-day trips.',
+            },
+            {
+              title: 'Yoga / Fitness SUP',
+              desc: 'Extra-wide platform (34-36") maximizing stability for on-water yoga, Pilates, and fitness. Full-length EVA deck pad for comfort. D-rings for accessory attachment.',
+            },
+            {
+              title: 'Fishing SUP',
+              desc: 'Wide stable boards with bungee cargo decks for gear storage. Rod holder and fishfinder mounting options. Silent approach for accessing shallow waters without spooking fish.',
+            },
+            {
+              title: 'Surf SUP',
+              desc: 'Shorter (8-10 ft) with rounded nose and pulled-in tail for wave riding. Rocker profile for surf performance. Narrower rail profile.',
+            },
+          ].map((item) => (
+            <div class="flex gap-4 p-5 bg-gray-50 rounded-xl border border-gray-200">
+              <div>
+                <h3 class="font-semibold text-gray-900">{item.title}</h3>
+                <p class="mt-1 text-sm text-gray-600">{item.desc}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section id="construction" class="mt-16">
+      <h2 class="text-2xl font-semibold text-gray-900">Construction Methods</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl border border-gray-200">
+          <h3 class="font-semibold text-gray-900">Drop-Stitch Core</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            Thousands of polyester threads connect top and bottom PVC layers, enabling high-pressure inflation (12-15
+            PSI) for rigid performance. Thread density determines rigidity and weight. This is the defining technology
+            of modern iSUPs.
+          </p>
+        </div>
+        <div class="p-6 rounded-xl border border-gray-200">
+          <h3 class="font-semibold text-gray-900">RF Welding (High-Frequency)</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            Uses electromagnetic energy to fuse PVC layers at molecular level. Creates the strongest airtight seams.
+            Common in high-quality SUPs. Requires specialized machinery and skilled operation.
+          </p>
+        </div>
+        <div class="p-6 rounded-xl border border-gray-200">
+          <h3 class="font-semibold text-gray-900">Heat Welding</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            Hot air welding used for seams and reinforcements. Common for rail bands and attachment points. Effective
+            for mid-range PVC fabrics.
+          </p>
+        </div>
+        <div class="p-6 rounded-xl border border-gray-200">
+          <h3 class="font-semibold text-gray-900">Adhesive Bonding</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            Two-part PVC adhesive bonds fabric panels. Used for deck pad attachment and some seam applications. Less
+            common in modern production due to lower bond strength.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="materials" class="mt-16">
+      <h2 class="text-2xl font-semibold text-gray-900">Materials Comparison</h2>
+      <div class="mt-6 overflow-x-auto">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-gray-50 border-b-2 border-gray-200">
+              <th class="px-4 py-3 text-left font-semibold text-gray-700">Property</th>
+              <th class="px-4 py-3 text-center font-semibold text-sky-700">Standard PVC</th>
+              <th class="px-4 py-3 text-center font-semibold text-emerald-700">Military-Grade PVC</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              [
+                ['Relative Cost', '$ (budget)', '$$ (premium)'],
+                ['UV Resistance', 'Good (with coating)', 'Excellent (stabilized)'],
+                ['Abrasion Resistance', 'Moderate', 'Good-Excellent'],
+                ['Tensile Strength', '800-1100 dtex', '1100-1670 dtex'],
+                ['Cold Flexibility', 'Stiffens below 0\u00b0C', 'Flexible to -10\u00b0C'],
+                ['Lifespan', '3-5 years', '5-12 years'],
+                ['Seam Method', 'Heat welding', 'RF welding / fusion'],
+                ['Repair', 'PVC glue (easy)', 'PVC glue (easy)'],
+              ].map((row, i) => (
+                <tr class={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                  {row.map((cell, j) => (
+                    <td
+                      class={`px-4 py-3 border-b border-gray-200 ${j === 0 ? 'font-medium text-gray-700' : 'text-center text-gray-600'}`}
+                    >
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm text-gray-500">
+        Military-grade PVC (1100-1670 dtex) offers superior durability for frequent paddlers at a moderate price
+        premium. Standard PVC is sufficient for occasional recreational use.
+      </p>
+    </section>
+
+    <section id="selection" class="mt-16">
+      <h2 class="text-2xl font-semibold text-gray-900">How to Choose an Inflatable SUP</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-sky-50 rounded-xl border border-sky-200">
+          <h3 class="font-semibold text-gray-900">1. Define Your Use Case</h3>
+          <ul class="mt-3 space-y-2 text-sm text-gray-600">
+            <li>Recreation: All-around SUP</li>
+            <li>Fitness: Touring SUP</li>
+            <li>Yoga: Wide SUP</li>
+            <li>Fishing: Fishing SUP</li>
+            <li>Surfing: Surf SUP</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-sky-50 rounded-xl border border-sky-200">
+          <h3 class="font-semibold text-gray-900">2. Set Your Budget</h3>
+          <ul class="mt-3 space-y-2 text-sm text-gray-600">
+            <li>$200-$400: Entry-level SUP</li>
+            <li>$400-$700: Mid-range SUP</li>
+            <li>$700-$1,200: Premium SUP</li>
+            <li>$1,200+: Professional/Commercial</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-sky-50 rounded-xl border border-sky-200">
+          <h3 class="font-semibold text-gray-900">3. Consider Material</h3>
+          <ul class="mt-3 space-y-2 text-sm text-gray-600">
+            <li>PVC: Budget-friendly, light</li>
+            <li>Military-Grade PVC: Durable</li>
+            <li>Drop-Stitch density: More = stiffer</li>
+            <li>Fabric weight: 1100-1670 dtex</li>
+            <li>Rail band: Reinforced edge</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="safety" class="mt-16">
+      <h2 class="text-2xl font-semibold text-gray-900">Safety & Standards</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl border border-gray-200">
+          <h3 class="font-semibold text-gray-900">CE Certification</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            Inflatable SUPs sold in the EU may require CE marking under applicable directives. Certification covers
+            design, buoyancy, stability, and load capacity. afarer SUPs are CE-certified for recreational use.
+          </p>
+        </div>
+        <div class="p-6 rounded-xl border border-gray-200">
+          <h3 class="font-semibold text-gray-900">Essential Safety Equipment</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            Life jackets/PFDs (CE 12402), coil leash, whistle or signaling device, and a phone in a waterproof case. For
+            open water, consider a VHF radio and navigation light.
+          </p>
+        </div>
+        <div class="p-6 rounded-xl border border-gray-200">
+          <h3 class="font-semibold text-gray-900">Safe Operation</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            Always wear a leash. Check inflation pressure before launch. Know your limits and wind conditions. File a
+            float plan. Take a SUP safety course.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="maintenance" class="mt-16">
+      <h2 class="text-2xl font-semibold text-gray-900">Maintenance & Care</h2>
+      <div class="mt-8 space-y-4 text-sm text-gray-600">
+        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl">
+          <span class="text-sky-600 font-bold flex-shrink-0">1.</span><span
+            >Rinse with fresh water after every saltwater use. Dry completely before deflating and storing.</span
+          >
+        </div>
+        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl">
+          <span class="text-sky-600 font-bold flex-shrink-0">2.</span><span
+            >Store in a cool, dry place away from direct sunlight and extreme temperatures.</span
+          >
+        </div>
+        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl">
+          <span class="text-sky-600 font-bold flex-shrink-0">3.</span><span
+            >Check valves and seams before each season. Apply silicone lubricant to valve cores annually.</span
+          >
+        </div>
+        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl">
+          <span class="text-sky-600 font-bold flex-shrink-0">4.</span><span
+            >Clean with mild soap and water. Never use solvents, bleach, or pressure washers on the fabric.</span
+          >
+        </div>
+        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl">
+          <span class="text-sky-600 font-bold flex-shrink-0">5.</span><span
+            >Repair punctures promptly with a PVC patch kit. For larger damage, use manufacturer-recommended repair
+            materials.</span
+          >
+        </div>
+        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl">
+          <span class="text-sky-600 font-bold flex-shrink-0">6.</span><span
+            >Replace valves every 3-5 years. Replace board at end of service life (visible wear, porosity, seam
+            separation).</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="applications" class="mt-16">
+      <h2 class="text-2xl font-semibold text-gray-900">Industry Applications</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-4">
+        {
+          [
+            {
+              title: 'Recreational Paddling',
+              desc: 'Family outings, lake cruising, river paddling, and fitness on calm waters.',
+            },
+            {
+              title: 'Tourism & Rental',
+              desc: 'Resort fleets, tour operators, and rental shops using durable SUPs for high-turnover guest use.',
+            },
+            {
+              title: 'Fitness & Wellness',
+              desc: 'SUP yoga, Pilates, fitness classes, and personal training on the water.',
+            },
+            {
+              title: 'Fishing',
+              desc: 'Anglers using stable SUP platforms for silent access to shallow waters and casting.',
+            },
+            {
+              title: 'Surfing',
+              desc: 'Wave riding on inflatable surf SUPs for recreational and beginner surfers.',
+            },
+            {
+              title: 'OEM Manufacturing',
+              desc: 'Custom private-label production for brands, retailers, and specialized operators.',
+            },
+          ].map((app) => (
+            <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+              <h3 class="font-semibold text-sm text-gray-900">{app.title}</h3>
+              <p class="mt-1 text-xs text-gray-500">{app.desc}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="mt-16 bg-gradient-to-br from-sky-50 to-blue-50 rounded-2xl p-8 border border-sky-200">
+      <h2 class="text-xl font-semibold text-gray-900">Explore afarer Inflatable SUPs</h2>
+      <p class="mt-4 text-sm text-gray-600">
+        afarer designs and manufactures CE-certified inflatable SUP boards for recreational, professional, and OEM
+        markets. All boards built with military-grade PVC fabrics using advanced RF welding and drop-stitch
+        construction.
+      </p>
+      <div class="mt-6 flex gap-4 flex-wrap">
+        <a
+          href="/products"
+          class="px-6 py-3 bg-gray-900 text-white rounded-full text-sm font-medium hover:bg-gray-800 transition"
+          >View Products</a
+        >
+        <a
+          href="/academy"
+          class="px-6 py-3 border border-gray-200 text-gray-700 rounded-full text-sm font-medium hover:border-gray-400 transition"
+          >Learning Center</a
+        >
+      </div>
+    </section>
+  </section>
+
+  <section class="sr-only" data-ai-block="definition" aria-hidden="true">
+    <p>
+      Comprehensive inflatable SUP guide covering types (all-around, touring, yoga, fishing, surf), construction methods
+      (drop-stitch core, RF welding, heat welding, adhesive bonding), materials (PVC, military-grade PVC), selection
+      criteria (use case, budget, materials), safety standards (CE certification, essential equipment), maintenance
+      (cleaning, storage, repairs, valve care), and industry applications (recreational, tourism, fitness, fishing,
+      surfing, OEM).
+    </p>
+  </section>
+</Layout>

@@ -1,0 +1,134 @@
+﻿hero:
+  tagline: Kontakt
+  title: Kontaktujte afarer
+  subtitle: Jsme tu, abychom vám pomohli. Kontaktujte nás ohledně dotazů na produkty, OEM/ODM partnerství nebo jakékoli jiné otázky.
+  image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
+  imageAlt: Kontakt afarer
+
+contact_form:
+  id: form
+  title: Pošlete nám zprávu
+  subtitle: Pro poptávky, technické dotazy nebo partnerské dotazy nám napište. Odpovíme do jednoho pracovního dne.
+  email_to: info@afarer.com
+  submit_button: Odeslat poptávku →Získat nabídku
+  success_message: Děkujeme! Vaše zpráva dorazila do naší schránky. Odpovíme do jednoho pracovního dne.
+  error_message: Při odesílání zprávy došlo k chybě. Zkuste to znovu nebo nám napište přímo e-mail.
+  default_country_code: '+1'
+  captcha:
+    label: 'Ochrana proti spamu: vyřešte následující'
+  fields:
+    - name: firstName
+      label: Jméno
+      row: 1
+    - name: lastName
+      label: Příjmení
+      row: 1
+    - name: companyName
+      label: Název společnosti
+      row: 2
+    - name: address
+      label: Adresa
+      row: 3
+    - name: zip
+      label: PSČ
+      row: 4
+    - name: country
+      label: Země
+      row: 4
+      type: select
+      optionsKey: countries
+    - name: email
+      label: E-mail
+      row: 5
+      type: email
+    - name: tel
+      label: Telefon
+      row: 5
+      type: tel
+      withCountryCode: true
+    - name: orderVolume
+      label: Odhadovaný objem objednávky
+      row: 6
+      type: select
+      options:
+        - value: 'Zákaznický servis'
+          label: Vyberte odhadovaný objem...
+        - value: sample
+          label: Pouze vzorky / prototypy
+        - value: '5-10'
+          label: 50—00 jednotek (standardní MOQ)
+        - value: '100-500'
+          label: 100—00 jednotek
+        - value: '500-plus'
+          label: 500+ jednotek (množstevní ceny)
+    - name: customization
+      label: Potřebujete úpravy?
+      row: 7
+      type: select
+      options:
+        - value: 'Technická podpora'
+          label: Vyberte typ úprav...
+        - value: none
+          label: Standardní produkt (bez úprav)
+        - value: logo
+          label: Pouze vlastní logo / značka
+        - value: full
+          label: Plné OEM (velikost, barva, grafika, balení)
+        - value: consultation
+          label: Nejsem si jistý —potřebuji konzultaci
+    - name: productInterest
+      label: Kategorie produktů
+      row: 8
+      type: select
+      options:
+        - value: 'Prodej'
+          label: Vyberte kategorii produktu...
+        - value: all
+          label: Všechny produkty / celý katalog
+        - value: sup
+          label: SUP pádlovací prkna
+        - value: SUP
+          label: Nafukovací kajaky
+        - value: SUP
+          label: SUP čluny
+        - value: SUP
+          label: Přívěsné čluny
+        - value: safety
+          label: Bezpečnostní vybavení / záchranné vesty
+        - value: accessory
+          label: Příslušenství (pumpy, pádla, tašky)
+    - name: subject
+      label: Předmět
+      row: 9
+    - name: message
+      label: Zpráva
+      row: 10
+      type: textarea
+      rows: 6
+features2_other_ways:
+  title: Další způsoby, jak nás kontaktovat
+  columns: 3
+  items:
+    - title: Prodejní dotazy
+      description: Nabídky, konfigurace, dealerské přihlášky a velkoobchodní objednávky.
+      icon: tabler:shopping-bag
+    - title: Technická podpora
+      description: Záruka, opravy, náhradní díly a provozní dotazy.
+      icon: tabler:tool
+    - title: Média a partnerství
+      description: Mediální sady, sponzoring a průmyslová spolupráce.
+      icon: tabler:news
+    - title: Telefon
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: E-mail
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: Sídlo společnosti
+      description: Economic Development Zone, Laixi, Qingdao, Čína, 266600
+      icon: tabler:map-pin
+map:
+  title: Naše poloha
+  subtitle: Navštivte nás v našem sídle
+  address: Economic Development Zone, Laixi, Qingdao, Čína, 266600
+  zoom: 15

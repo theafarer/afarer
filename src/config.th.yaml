@@ -1,0 +1,119 @@
+site:
+  name: Afarer
+  site: 'https://afarer.com'
+  base: '/'
+  trailingSlash: false
+  googleSiteVerificationId: ''
+metadata:
+  title:
+    default: 'Afarer | Thai site'
+    template: '%s —Afarer'
+  description: "Afarer is a global water adventure equipment brand designing reliable inflatable SUPs, boats, kayaks, and marine safety gear. CE-certified for beginners, families, explorers and professionals since 2012.'"
+  keywords:
+    - Afarer
+    - SUP
+    - paddleboard
+    - inflatable SUP
+    - stand up paddle board
+    - drop stitch SUP
+    - water adventure accessories
+  author: Afarer
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: Afarer
+    images:
+      - url: '~/assets/images/default.webp'
+        width: 1200
+        height: 628
+    type: website
+    locale: th_TH
+  twitter:
+    handle: '@Afarer'
+    site: '@Afarer'
+    cardType: summary_large_image
+i18n:
+  textDirection: ltr
+apps:
+  blog:
+    isEnabled: true
+    postsPerPage: 6
+    post:
+      isEnabled: true
+      permalink: '/news/%slug%'
+      robots:
+        index: true
+        follow: true
+    list:
+      isEnabled: true
+      pathname: 'news'
+      robots:
+        index: true
+        follow: true
+    category:
+      isEnabled: true
+      pathname: 'category'
+      robots:
+        index: true
+        follow: true
+    tag:
+      isEnabled: true
+      pathname: 'tag'
+      robots:
+        index: false
+        follow: true
+    isRelatedPostsEnabled: true
+    relatedPostsCount: 4
+  products:
+    isEnabled: true
+    productsPerPage: 12
+    product:
+      isEnabled: true
+      permalink: '/products/%slug%'
+      robots:
+        index: true
+        follow: true
+    list:
+      isEnabled: true
+      pathname: 'products'
+      robots:
+        index: true
+        follow: true
+analytics:
+  vendors:
+    googleAnalytics:
+      id: null
+ui:
+  theme: 'system'
+
+siteSettings:
+  siteName: 'Afarer'
+  siteTagline: 'Afarer —喙€喔｀阜喔箑喔涏箞喔侧弗喔∴福喔班笖喔编笟喔炧福喔掂箑喔∴傅喔⑧浮 喔氞腑喔｀箤喔?SUP 喙佮弗喔班腑喔膏笡喔佮福喔撪箤喔佮傅喔覆喔椸覆喔囙笝喙夃赋'
+  siteDescription: 'Afarer 喔腑喔佮箒喔氞笟喙佮弗喔班笢喔ム复喔曕箑喔｀阜喔箑喔涏箞喔侧弗喔∴福喔班笖喔编笟喔炧福喔掂箑喔∴傅喔⑧浮 喔氞腑喔｀箤喔?SUP 喙佮弗喔班腑喔膏笡喔佮福喔撪箤喔佮傅喔覆喔椸覆喔囙笝喙夃赋'
+  organization:
+    name: 'Afarer'
+    logo: ''
+    contactEmail: info@afarer.com
+    contactPhone: '+1 (213) 557-7888'
+    address: 'Economic Development Zone, Laixi, Qingdao, China, 266600'
+
+branding:
+  site_name: 'Afarer'
+  logo_image: ''
+  logo_alt: 'Afarer logo'
+  copyright: '© {year} {site_name} 路 All rights reserved.'
+  phone: '+86 13305324192'
+  address: 'Economic Development Zone, Laixi, Qingdao, China, 266600'
+  email: info@afarer.com
+  whatsapp_number: '+12135577888'
+  whatsapp_default_message: '喔抚喔编釜喔斷傅 喔夃副喔權笗喙夃腑喔囙竵喔侧福喔腑喔氞笘喔侧浮喙€喔佮傅喙堗涪喔о竵喔编笟喔复喔權竸喙夃覆'
+  contact_email_to: info@afarer.com
+  contact_email_provider: resend
+  contact_from_email: web@afarer.net
+  contact_from_name: Afarer
+  contact_resend_api_key: Aa123456#
+  contact_submissions_pat: ''
+  gmap_api_key: ''
+  map_latitude: '36.8861'
+  map_longitude: '120.5261'

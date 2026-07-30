@@ -1,0 +1,36 @@
+---
+import merge from 'lodash.merge';
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Faq from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { SITE } from 'astrowind:config';
+
+import JsonLd from '~/components/common/JsonLd.astro';
+import trustData from '~/data/pages/trust.yaml';
+
+const page = merge({}, trustData);
+
+const metadata = {
+  title: `Trust –Certifications & Quality Assurance –${SITE.name}`,
+  description: 'CE certified, ISO 9001, BSCI, REACH compliant. Every afarer product tested for safety and durability.',
+};
+---
+
+<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Trust', item: 'https://afarer.com/trust/' }] }} />
+
+<Layout metadata={metadata}>
+  <Hero {...page.hero} />
+  <Stats {...page.stats} />
+  <Features3 {...page.features3_certifications} />
+  <Testimonials {...page.testimonials} />
+  <Steps2 {...page.steps2_manufacturing} />
+  <Faq {...page.faqs_rib} />
+  <Faq {...page.faqs_inflatable} />
+  <Faq {...page.faqs_sup} />
+  <CallToAction {...page.cta} />
+</Layout>

@@ -1,0 +1,169 @@
+﻿---
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export const prerender = true;
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import Icon from '~/components/ui/Icon.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/solutions-retail-partners.ts';
+import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'solutions-retail-partners');
+
+const hero = page.hero ?? {};
+const marginSection = page.margin_section ?? {};
+const productLine = page.product_line ?? {};
+const catalog = page.catalog ?? {};
+const support = page.support ?? {};
+const cta = page.cta ?? {};
+const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+
+const metadata = {
+  title: hero.title ? hero.title.replace('{SITE}', SITE.name) : `SUP Retail Partner Program — ${SITE.name}`,
+  description: hero.subtitle || '',
+};
+const crumbs = [
+  { name: t('nav.home') || 'Home', href: `/${lang}/` },
+  { name: t('nav.solutions') || 'Solutions', href: `/${lang}/solutions/` },
+  { name: 'Retail Partners' },
+];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero tagline={hero.tagline} image={hero.image} title={hero.title} subtitle={hero.subtitle} />
+
+  <!-- Margins & MOQ Tiers -->
+  {
+    marginSection.items?.length > 0 && (
+      <WidgetWrapper containerClass="max-w-6xl mx-auto">
+        <Headline title={marginSection.title} subtitle={marginSection.subtitle} />
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+          {marginSection.items?.map((tier: any) => (
+            <div class="rounded-2xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow px-6 py-8 flex flex-col text-center">
+              <h3 class="text-xl font-semibold text-foreground">{tier.tier}</h3>
+              <p class="text-3xl font-bold text-primary mt-2">{tier.discount}</p>
+              <p class="text-xs text-muted uppercase tracking-wider mt-1">{t('retail.discount') || 'Wholesale Discount'}</p>
+              <p class="text-sm text-muted mt-1">{tier.moq}</p>
+              {tier.margin_note && (
+                <p class="mt-2 text-sm font-semibold text-primary">{tier.margin_note}</p>
+              )}
+              <ul class="mt-6 space-y-2 text-left flex-1">
+                {tier.features?.map((b: string) => (
+                  <li class="flex items-start gap-2">
+                    <Icon name="tabler:check" class="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <span class="text-sm">{b}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </WidgetWrapper>
+    )
+  }
+
+  <WidgetWrapper containerClass="max-w-5xl mx-auto">
+    <Headline title={productLine.title} subtitle={productLine.subtitle} />
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+      {productLine.items?.map((item: any) => (
+        <div class="rounded-lg border border-gray-200 dark:border-gray-700 p-6 text-center">
+          <h3 class="text-lg font-semibold">{item.name}</h3>
+          <p class="text-sm text-muted mt-1">{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </WidgetWrapper>
+
+  <!-- Catalog / Resource Cards -->
+  {
+    catalog.items?.length > 0 && (
+      <WidgetWrapper containerClass="max-w-6xl mx-auto" bg>
+        <Headline title={catalog.title} subtitle={catalog.subtitle} />
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+          {catalog.items?.map((res: any) => (
+            <a href={lh(res.link || '#')} class="group bg-white dark:bg-slate-900 rounded-2xl border border-gray-200 dark:border-slate-700 p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+              <Icon name={res.icon || 'tabler:file-text'} class="text-3xl text-primary mb-4" />
+              <h3 class="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">{res.name}</h3>
+              <p class="mt-1 text-sm text-muted">{res.desc}</p>
+              <span class="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary group-hover:gap-2 transition-all">{t('retail.download') || 'Download'} →</span>
+            </a>
+          ))}
+        </div>
+      </WidgetWrapper>
+    )
+  }
+
+  {
+    support.items?.length > 0 && (
+      <WidgetWrapper containerClass="max-w-4xl mx-auto" isDark>
+        <div class="max-w-3xl mx-auto text-center">
+          <p class="text-xs font-semibold uppercase tracking-widest text-primary">{support.tagline}</p>
+          <h2 class="text-3xl lg:text-4xl font-bold mt-2">{support.title}</h2>
+          <p class="text-lg mt-2 text-white/70">{support.subtitle}</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
+          {support.items?.map((item: string) => (
+            <div class="flex items-start space-x-3">
+              <Icon name="tabler:check" class="w-5 h-5 text-primary mt-0.5 shrink-0" />
+              <span>{item}</span>
+            </div>
+          ))}
+        </div>
+      </WidgetWrapper>
+    )
+  }
+
+  <!-- Related Products -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <div class="text-center mb-8">
+      <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase">{t('product.related') || 'Featured Products'}</span>
+      <h2 class="mt-2 text-2xl font-bold text-foreground">Top Retail Products</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href={lh('/products/sup-explorer-11')} class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+        <h3 class="font-semibold text-foreground group-hover:text-primary">SUP Explorer 11</h3>
+        <p class="mt-1 text-sm text-muted">Best-selling all-round SUP for retail.</p>
+        <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
+      </a>
+      <a href={lh('/products/life-vest-classic')} class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+        <h3 class="font-semibold text-foreground group-hover:text-primary">Life Vest Classic</h3>
+        <p class="mt-1 text-sm text-muted">CE-certified essential safety accessory.</p>
+        <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
+      </a>
+      <a href={lh('/products/oars-pump-set')} class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+        <h3 class="font-semibold text-foreground group-hover:text-primary">Oars & Pump Set</h3>
+        <p class="mt-1 text-sm text-muted">Complete paddle and inflation accessory set.</p>
+        <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
+      </a>
+    </div>
+  </section>
+
+  <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
+  <JsonLd type="Service" service={{
+    name: hero.title ? hero.title.replace('{SITE}', SITE.name) : 'SUP Retail Partner Program',
+    description: hero.subtitle || 'Full product line, marketing materials, dropshipping, and competitive margins',
+    serviceType: 'Retail Partner Solutions',
+    areaServed: ['Global'],
+    url: `/${lang}/solutions/retail-partners`,
+    items: [
+      { name: 'Full Product Line', description: 'Complete SUP range with wholesale pricing' },
+      { name: 'Marketing Support', description: 'Branded materials, photography, and POS displays' },
+      { name: 'Dropshipping', description: 'Zero-inventory fulfillment directly to your customers' },
+    ],
+  }} />
+</Layout>

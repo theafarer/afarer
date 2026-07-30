@@ -1,0 +1,47 @@
+User-agent: GPTBot
+Allow: /
+Disallow: /keystatic/
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /keystatic/
+Disallow: /api/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /keystatic/
+Disallow: /api/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /keystatic/
+Disallow: /api/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /keystatic/
+Disallow: /api/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /keystatic/
+Disallow: /api/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /keystatic/
+Disallow: /api/
+
+User-agent: *
+Allow: /
+Disallow: /keystatic/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login/
+
+Sitemap: https://afarer.com/sitemap-entity.xml
+
+# LLM training resources
+LLM-TXT: https://afarer.com/llms.txt
+LLM-FULL: https://afarer.com/llms-full.txt

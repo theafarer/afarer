@@ -1,0 +1,54 @@
+﻿hero:
+  tagline: โรงงาน
+  title: โรงงานของเรา
+  subtitle: '12,000 ตร.ม. โรงงานผลิตที่ทันสมัยในชิงเต่า ประเทศจีน'
+  image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
+  imageAlt: โรงงาน afarer
+stats:
+  - value: '12,000'
+    label: ตร.ม. พื้นที่ทั้งหมด
+  - value: '200+'
+    label: พนักงานมีฝีมือ
+  - value: '6'
+    label: สายการผลิต
+  - value: 'ISO 9001'
+    label: ตร.ม. พื้นที่ทั้งหมด
+
+b2b_moq: 'MOQ มาตรฐาน: 5–10 หน่วยต่อรุ่น (SUP/คายัค/drop-stitch). MOQ สำหรับ SUP: 2–5 หน่วย ยินดีต้อนรับคำสั่งซื้อทดลองสำหรับพันธมิตรใหม่'
+intelligence_tagline: Factory Intelligence
+intelligence_title: Explore Our Manufacturing Capabilities
+
+intelligence_cards:
+  - title: Production Capacity
+    icon: C
+    icon_bg: blue
+    desc: '12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.'
+    metrics:
+      - label: MOQ
+        value: 'SUP: 5-10 / SUP: 2-5'
+      - label: Lead Time
+        value: '30-45 days'
+    link: /factory/capacity
+    link_label: 'Full capacity details →'
+  - title: Quality Lab & Testing
+    icon: Q
+    icon_bg: green
+    desc: 'Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat.'
+    metrics:
+      - label: Lab Equipment
+        value: 'Tensile tester, temp chamber, leak tank'
+      - label: Standards
+        value: 'ISO 9001, CE, AS 1799'
+    link: /factory/quality-lab
+    link_label: 'Lab procedures & equipment →'
+  - title: OEM/ODM Capability
+    icon: O
+    icon_bg: purple
+    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
+    metrics:
+      - label: Certifications
+        value: 'ISO 9001, BSCI, CE, REACH'
+      - label: Shipping
+        value: 'FOB, CIF, DDP to 50+ countries'
+    link: /factory/oem-capability
+    link_label: 'Full OEM services →'

@@ -1,0 +1,89 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `SUP Quality Testing Standards — CE, Pressure, and Durability Tests | ${SITE.name}`,
+  description:
+    'Technical guide to inflatable SUP quality testing: CE certification process, pressure hold tests, seam strength testing, UV resistance, and factory quality control protocols.',
+  ignoreTitleTemplate: true,
+};
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'SUP Quality Testing Standards',
+  description: metadata.description,
+  author: { '@type': 'Organization', name: SITE.name },
+  datePublished: '2026-07-27',
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd data={jsonLd} />
+  <article class="max-w-4xl mx-auto px-6 py-16">
+    <nav class="text-sm text-gray-500 mb-8">
+      <a href="/" class="hover:text-sky-600">{SITE.name}</a><span class="mx-2">/</span><a
+        href="/research"
+        class="hover:text-sky-600">Research</a
+      ><span class="mx-2">/</span><span class="text-gray-900">Quality Testing Standards</span>
+    </nav>
+    <div class="mb-4">
+      <span
+        class="inline-block text-xs font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full"
+        >Compliance</span
+      ><span class="ml-3 text-sm text-gray-400">8 min read</span>
+    </div>
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">SUP Quality Testing Standards</h1>
+    <p class="text-xl text-gray-500 mb-12 leading-relaxed">
+      Inflatable SUP quality is verified through a battery of standardized tests covering pressure retention, seam
+      strength, material durability, and safety compliance.
+    </p>
+    <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600">
+      <h2>CE Certification (EU)</h2>
+      <p>
+        CE marking on an inflatable SUP indicates conformity with European health, safety, and environmental standards.
+        For watercraft, the relevant directive is the Recreational Craft Directive (2013/53/EU) or the Personal
+        Protective Equipment Regulation (2016/425) for life vests. CE certification requires: manufacturer declaration
+        of conformity, technical documentation, third-party testing by a notified body, and affixing the CE mark.
+        Products without CE marking cannot be legally sold in the EU. For SUPs, CE certification covers buoyancy,
+        stability, load capacity, and safety warnings.
+      </p>
+      <h2>Pressure Hold Test</h2>
+      <p>
+        Every production board is inflated to 15-18 PSI (depending on rated pressure) and held for a minimum of 24
+        hours. Acceptable pressure loss is &lt; 0.5 PSI over 24 hours at constant temperature. The test is conducted at
+        20°C (68°F) in a temperature-controlled room to eliminate temperature-related pressure variation. Boards that
+        fail the pressure hold test are inspected for leaks using soap solution and repaired or discarded.
+      </p>
+      <h2>Seam Strength Testing</h2>
+      <p>
+        Destructive peel tests measure seam bond strength. A 1-inch wide strip is cut from the seam area and pulled
+        apart in a tensile testing machine. Minimum acceptable peel strength for fusion-laminated seams is 50 N/cm
+        (Newtons per centimeter). Adhesive-bonded seams typically test at 30-40 N/cm. Samples are taken from production
+        batches at regular intervals — every 100 boards or every shift, whichever is more frequent.
+      </p>
+      <h2>UV Resistance Testing</h2>
+      <p>
+        PVC samples are exposed to UV radiation in a QUV accelerated weathering tester per ASTM G154 standards. The
+        standard test cycle alternates UV exposure (8 hours at 60°C) with condensation (4 hours at 50°C) for 500-1000
+        hours total. Acceptable results: no cracking, no significant color change (Delta E &lt; 5), and tensile strength
+        retention &gt; 80% of original. Boards rated for "coastal" or "tropical" use require passing the 1000-hour test
+        cycle.
+      </p>
+      <h2>Drop-Stitch Thread Test</h2>
+      <p>
+        The tensile strength of drop-stitch threads is tested by pulling individual threads to failure. Minimum
+        acceptable load per thread is 30 N (approximately 3 kg). Thread density (picks per inch) is verified by counting
+        threads in a 1-inch square section under magnification. Acceptable density is 9-11 picks per inch for
+        recreational SUPs and 11-13 for performance SUPs.
+      </p>
+      <h2>Temperature Cycling</h2>
+      <p>
+        Boards are subjected to temperature cycling between -20°C (-4°F) and +60°C (140°F) over 24-hour cycles for 10
+        cycles. After cycling, the board must hold pressure and show no seam delamination, PVC cracking, or EVA pad
+        detachment. This test ensures the board survives extreme transport and storage conditions.
+      </p>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,89 @@
+meta:
+  title: '高頻焊接中心 — 氣密接縫的介電鍵合技術 | {SITE}'
+  description: '射頻焊接技術，提供符合標準的氣密接縫。剝離測試、氣密性驗證及客製接縫規格。'
+back_text: '返回研發中心'
+home_label: '首頁'
+
+hero:
+  tagline: '實驗室 03'
+  title: '高頻焊接中心'
+  subtitle: '壓力之下依然牢固的介電鍵合技術'
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1.webp'
+  image_alt: 'Afarer 高頻焊接介電鍵合製程'
+
+intro: '充氣船的可靠性取決於其接縫。一個弱焊接點就能危及整個氣室——而在海上，氣室失效不是不便，而是安全隱患。在 {SITE.name}，我們投資建設了專業的高頻（RF）焊接中心，結合工業級介電焊接機與嚴格的製程控制及焊後測試。我們生產的每一道接縫均有文件記錄、可追溯，並經認證符合或超越充氣船國際標準的要求。'
+
+content_html: |
+  <h2>接縫背後的科學</h2>
+  <p>RF 焊接使用高頻電磁能量（通常為 27.12 MHz）激發 PVC 或 Hypalon 塗層織物中的極性分子，在材料介面精確產生熱量。與熱風或熱楔焊接不同，RF 焊接形成真正的分子鍵結——兩層織物在焊接區域融合為單一均質材料，產生與母材同等強度的接頭。</p>
+
+  <h2>焊接設備與製程控制</h2>
+  <p>我們的焊接中心配備：</p>
+  <table>
+    <thead><tr><th>設備</th><th>功率 / 能力</th><th>應用</th></tr></thead>
+    <tbody>
+      <tr><td>介電 RF 壓機 1</td><td>15 kW，壓板 2000 × 600 mm</td><td>主要縱向接縫、尾板與管材連接</td></tr>
+      <tr><td>介電 RF 壓機 2</td><td>10 kW，壓板 1500 × 500 mm</td><td>隔板焊接、錐體連接、氣閥貼片</td></tr>
+      <tr><td>CNC 控制 RF 焊接機</td><td>8 kW，XY 檯面 2500 × 1200 mm</td><td>曲線焊接、標誌/面板壓印、精密拼接</td></tr>
+      <tr><td>熱楔自動焊接機</td><td>可調溫度，最高 1.2 m/min</td><td>Hypalon/CSM 材料的備用方法</td></tr>
+    </tbody>
+  </table>
+  <p>每台 RF 壓機均配備閉迴路溫度與壓力監控。焊接參數——功率、加壓時間、冷卻時間、電極壓力——依材料類型設定，並記錄於我們的製造執行系統（MES）中以實現完全追溯。</p>
+
+  <h2>焊接品質測試——每道接縫、每艘船</h2>
+  <p>焊接完整性透過強制四步測試流程驗證：</p>
+  <ol>
+    <li><strong>目視檢查</strong>——100% 接縫經過目視檢查，確認無燒穿、錯位、汙染或融合不完全。拒收閾值：線性公尺數的 0.5%。</li>
+    <li><strong>剝離測試</strong>——從每生產批次焊接的測試樣片上裁切 25 mm 寬試條。最小剝離力：PVC 1100 dtex 為 120 N/25 mm。</li>
+    <li><strong>氣密測試</strong>——每個完成的氣室加壓至工作壓力的 1.5 倍，保持 30 分鐘。壓力下降不得超過 2%。</li>
+    <li><strong>熱循環測試</strong>——樣品在 -20°C 至 +60°C 之間循環 50 次，然後再次進行剝離測試。可接受的強度損失：< 10%。</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">剝離強度比較 — RF 與熱風焊接（PVC 1100 dtex）</p>
+    <div class="space-y-3">
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">RF 焊接</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">184 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">熱風焊接</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">130 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">ISO 標準最低</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-green-500 rounded" style="width:48%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">96 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">RF 焊接始終達到母材強度的 90-95%，遠高於 ISO 標準最低要求。</p>
+  </div>
+
+  <h2>專業技術</h2>
+  <p>我們的焊接團隊由一位在塗層織物介電焊接領域擁有 11 年經驗的資深製程工程師領導。每位操作員須完成 6 個月的內部認證計畫，方能從事生產接縫工作。每年須重新認證，包括依據內部 A 級標準（剝離強度 ≥ 160 N/25 mm）評估的實作焊接測試。</p>
+
+  <h2>因應特殊需求的客製焊接方案</h2>
+  <p>我們了解一種焊接規格無法適用所有應用。我們的 RF 焊接中心經常為有特殊需求的客戶開發客製接縫配置：</p>
+  <ul>
+    <li><strong>多層強化貼片</strong>——對於磨擦條和船首錐體等高磨損區域，我們開發多道 RF 焊接，在不受影響彈性的情況下整合耐磨外層。</li>
+    <li><strong>導電或 RF 屏蔽接縫</strong>——對於需要電磁屏蔽的軍用或監視船隻，我們在接縫疊層內焊接導電網層。</li>
+    <li><strong>變色面板焊接</strong>——雙色織物面板（例如橙色船身 + 灰色上層）以隱藏式重疊焊接，在維持品牌美觀的同時不產生可見接合線。</li>
+  </ul>
+
+  <h2>我們對您的承諾</h2>
+  <p>我們交付的每艘船都附有焊接品質保證：若任何接縫在保固期內正常使用下失效，我們將免費維修或更換受影響的氣室，並進行根本原因調查以防止再次發生。這不僅是一項保固——更是根據實際營運數據持續改進的承諾。</p>
+  <p>當您選擇 {SITE.name}，您選擇的是經過工程設計、測試並有文件記錄的接縫——而不僅僅是焊接。這就是能浮的船與能表現的船之間的差異。</p>
+
+cta:
+  title: '討論您的焊接需求'
+  subtitle: '客製接縫規格、材料相容性或製程驗證。'
+  button_text: '聯絡我們的焊接團隊'
+  button_link: /contact

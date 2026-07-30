@@ -1,0 +1,75 @@
+---
+export const prerender = true;
+
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/solutions.ts';
+import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'solutions');
+
+const hero = page.hero ?? {};
+const stats = page.stats ?? {};
+const solutions = page.features3_solutions ?? {};
+const cta = page.cta ?? {};
+const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+const localizedItems = solutions.items?.map((item: any) => ({
+  ...item,
+  link: item.link ? `/${lang}${item.link}` : item.link,
+}));
+
+const metadata = {
+  title: `Business Solutions — ${SITE.name} | SUP Equipment for Resorts, Retail & Rental`,
+  description:
+    t('solutions.metaDesc') ||
+    'Complete SUP business solutions for resorts, hotels, paddle clubs, rental operators, retail partners, distributors, and private label brands worldwide.',
+};
+const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Solutions' }];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero tagline={hero.tagline} image={hero.image} title={hero.title} subtitle={hero.subtitle} />
+  <Stats title={stats.title} stats={stats.stats} />
+  <Features3
+    tagline={solutions.tagline}
+    title={solutions.title}
+    subtitle={solutions.subtitle}
+    columns={solutions.columns}
+    items={localizedItems}
+  />
+  <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
+  <JsonLd
+    type="Service"
+    service={{
+      name: 'SUP Business Solutions',
+      description:
+        'Complete SUP solutions for resorts, hotels, paddle clubs, rental operators, retail partners, distributors, and private label brands.',
+      serviceType: 'Business Solutions',
+      areaServed: ['Global'],
+      url: `/${lang}/solutions`,
+      items: [
+        { name: 'Resorts & Hotels', description: 'SUP fleet programs for hospitality properties' },
+        { name: 'Paddle Clubs', description: 'Commercial-grade SUP fleets for clubs and schools' },
+        { name: 'Rental Operators', description: 'High-rotation SUPs for daily rental operations' },
+        { name: 'Retail Partners', description: 'SUP retail partnership with full product line' },
+        { name: 'Distributors', description: 'Global distribution network for SUP products' },
+        { name: 'Build Your Own Brand', description: 'OEM/ODM SUP manufacturing for new brands' },
+      ],
+    }}
+  />
+</Layout>

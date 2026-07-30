@@ -1,0 +1,109 @@
+hero:
+  tagline: 關於我們
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-factory-building.webp
+    alt: afarer 工廠及車間
+  title: |
+    船舶工程，<br />
+    以 <span class="text-accent dark:text-white">afarer</span> 的方式打造
+  subtitle: 我們在一間沿海車間裡起步，只有一條船和一個執著的信念：船用產品應當以認真的態度來製造——因為它們確實關乎生命。如今，我們發貨到 40 多個國家，但每一條船體仍然經過創始團隊親手把關。
+stats:
+  title: 數據一覽
+  columns: 4
+  stats:
+    - title: 已交付船體
+      amount: 2,400+
+    - title: 已發貨國家
+      amount: '40'
+    - title: 累計經驗年限
+      amount: '60'
+    - title: 平均保修響應時間（小時）
+      amount: '24'
+features3_what_we_build:
+  title: 我們的產品
+  subtitle: 一條我們瞭如指掌的專注產品線——沒有半成品實驗，沒有貼牌工程。
+  columns: 3
+  isBeforeContent: true
+  items:
+    - title: SUP 硬殼充氣船
+      description: 鋁合金船體 SUP，3.3m 至 7.5m，專為巡邏、潛水、釣魚和家庭使用設計。
+      icon: tabler:ship
+    - title: 充氣船
+      description: PVC 和 Hypalon 充氣小艇，2.4m 至 4.2m，輕便、堅固、易於存放。
+      icon: tabler:speedboat
+    - title: 超級遊艇小艇
+      description: 緊湊型高規格 SUP，可定製以匹配母艇的外觀風格。
+      icon: tabler:crown
+features3_more:
+  columns: 3
+  isAfterContent: true
+  items:
+    - title: 配件
+      description: 槳、泵、罩、幹袋、油箱和電子設備，全部與我們的船隻匹配。
+      icon: tabler:package
+    - title: 改裝與維修
+      description: 廠內管道更換、電子設備改造和發動機升級。
+      icon: tabler:tool
+    - title: 定製建造
+      description: 為商業、科研和軍用客戶提供逐項目定製設計。
+      icon: tabler:hammer
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-2.webp
+    alt: 船舶設計與工程討論
+steps2_values:
+  title: 我們的價值觀
+  subtitle: 從第一天起就塑造每個產品的三項原則。
+  items:
+    - title: 像承載自己家人一樣打造
+      description: 每條船體、每道焊縫、每個緊固件都以自用的標準對待。
+      icon: tabler:heart
+    - title: 先工程後銷售
+      description: 如果規格有誤，我們改規格——而不是改客戶。
+      icon: tabler:settings
+    - title: 比保修更持久的支持
+      description: 二十年船齡的老船仍向我們訂購配件，我們依然接聽電話。
+      icon: tabler:headset
+steps2_milestones:
+  title: 里程碑
+  subtitle: afarer 故事的簡版。
+  isReversed: true
+  items:
+    - title: 在沿海車間創立
+      description: 由兩位船舶設計師憑一臺 CNC 銑床和一個執著的想法起步。
+      icon: tabler:building-factory
+    - title: 交付第 1,000 條船體
+      description: 在第七年達成，主要依靠口碑和回頭客。
+      icon: tabler:circle-check
+    - title: 國際出口計劃
+      description: 現已發貨至 40 多個國家，在五大洲擁有本地化支持合作伙伴。
+      icon: tabler:world
+features2_locations:
+  title: 我們的位置
+  tagline: 找到我們
+  columns: 3
+  items:
+    - title: 總部與車間
+      description: 沿海工業園區，4 號樓——週一至週五開放，參觀請預約。
+      icon: tabler:building
+    - title: 歐盟服務中心
+      description: 地中海港口——為歐洲客戶提供改裝、維修和保修支持。
+      icon: tabler:ship
+    - title: 亞太合作伙伴網絡
+      description: 在澳大利亞、日本、新加坡和香港設有授權服務合作伙伴。
+      icon: tabler:globe
+brand_hub_tagline: Brand
+brand_hub_title: Explore Our Brand
+brand_hub_subtitle: Dive deeper into our marine engineering expertise, global presence, and the principles that drive us.
+brand_hub_cards:
+  - title: Marine Expertise
+    desc: Decades of material science, precision manufacturing, and real-world testing — from PVC/Hypalon fabrication to deep-V hull design and drop-stitch technology.
+    link: /brand-marine-expertise
+    link_label: Learn more →
+  - title: Global Presence
+    desc: Shipping to 50+ countries from our Qingdao facility with authorized service partners across Europe, Asia-Pacific, and the Americas.
+    link: /brand-global-presence
+    link_label: Learn more →
+  - title: Why afarer
+    desc: Vertical integration, dual certification (ISO 9001 + BSCI), CE compliance, and low MOQs — built for brands, distributors, and government agencies.
+    link: /brand-why-afarer
+    link_label: Learn more →

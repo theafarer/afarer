@@ -1,0 +1,102 @@
+meta:
+  title: 'PVC 織物實驗室 — 充氣船材料測試 | {SITE}'
+  description: '從纖維到成品氣管的科學材料測試。PVC 織物的拉伸強度、UV 老化、低溫彈性及耐磨性測試。聯絡我們的實驗室團隊，取得客製織物規格。'
+back_text: '返回研發中心'
+home_label: '首頁'
+
+hero:
+  tagline: '實驗室 01'
+  title: 'PVC 織物實驗室'
+  subtitle: '科學材料測試 — 從纖維到成品氣管'
+  image: 'https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp'
+  image_alt: 'Afarer PVC 織物材料測試實驗室'
+
+intro: '氣管織物是充氣船中最重要的單一材料。它必須承受持續的 UV 曝曬、反覆的充氣循環、碼頭及雜物的磨損，以及極端的溫度變化——同時在多年內保持其結構完整性。在 {SITE.name}，我們的 PVC 織物實驗室專門致力於我們每艘船所使用的織物的特性分析、驗證及持續改進。'
+
+content_html: |
+  <h2>每艘充氣船的基礎</h2>
+  <p>我們不僅依賴供應商的數據表。進入我們車間的每批 PVC 及 Hypalon 織物都在內部獨立測試。這確保了我們公布的材料規格就是您實際獲得的材料性能——批次一致、年年如此。</p>
+
+  <h2>標準化測試設備</h2>
+  <p>我們的織物實驗室配備符合 ISO、ASTM 及 EN 測試方法的工業級儀器：</p>
+  <table>
+    <thead><tr><th>設備</th><th>量測參數</th><th>標準</th></tr></thead>
+    <tbody>
+      <tr><td>萬能拉伸試驗機（50 kN）</td><td>斷裂力、斷裂伸長率、撕裂傳播</td><td>ISO 1421 / ASTM D751</td></tr>
+      <tr><td>氙弧老化試驗箱</td><td>UV 抗性（2000 小時後顏色變化、強度保持率）</td><td>ISO 4892 / ASTM G155</td></tr>
+      <tr><td>低溫彈性試驗機</td><td>-30°C 至 -50°C 的破裂點</td><td>ISO 4675 / ASTM D2136</td></tr>
+      <tr><td>Taber 磨耗試驗機</td><td>1000 次循環後重量損失（CS-10 磨輪）</td><td>ASTM D3389 / ISO 5470-1</td></tr>
+      <tr><td>數位厚度計（0.001 mm 解析度）</td><td>幅寬範圍內的均勻性</td><td>ISO 2286-3</td></tr>
+      <tr><td>耐水壓測試儀</td><td>抗水滲透性</td><td>ISO 811</td></tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-gray-500">* 所有設備每年由第三方認可實驗室進行校正。</p>
+
+  <h2>從數據到決策：典型測試流程</h2>
+  <p>當新織物候選品送達時，會經過標準化的七步認證流程：</p>
+  <ol>
+    <li><strong>進貨檢驗</strong> — 表面缺陷、針孔及尺寸合規性目視檢查。</li>
+    <li><strong>厚度分布測量</strong> — 全幅 20 點量測；CV < 3% 為驗收要求。</li>
+    <li><strong>拉伸測試</strong> — 經向及緯向各 5 個樣本。1100 dtex PVC 最低 3500 N/50 mm。</li>
+    <li><strong>UV 調質</strong> — 在氙弧試驗箱中曝曬 1000 h；強度保持率最低要求 80%。</li>
+    <li><strong>低溫破裂</strong> — 在 -35°C 下 4 小時，然後在 25 mm 心軸上進行 180° 彎曲。不得有可見裂紋。</li>
+    <li><strong>耐磨性</strong> — 1000 次循環，重量損失 ≤ 0.05 g。</li>
+    <li><strong>核准簽署</strong> — 僅在通過全部七道關卡後，織物才可放行投入生產。</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">典型 PVC 1100 dtex — UV 曝曬後拉伸強度保持率</p>
+    <div class="flex items-end gap-3 h-40">
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-600 rounded-t" style="height:100%"></div>
+        <span class="text-xs mt-1">0 小時<br />100%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-500 rounded-t" style="height:95%"></div>
+        <span class="text-xs mt-1">500 小時<br />95%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-400 rounded-t" style="height:88%"></div>
+        <span class="text-xs mt-1">1000 小時<br />88%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-300 rounded-t" style="height:82%"></div>
+        <span class="text-xs mt-1">2000 小時<br />82%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-gray-300 rounded-t" style="height:65%"></div>
+        <span class="text-xs mt-1">競爭者<br />~65%</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">我們的 PVC 1100 dtex 織物在 2000 小時氙弧曝曬後仍保持 >80% 的拉伸強度，而典型的產業等級會降至 70% 以下。</p>
+  </div>
+
+  <h2>我們的專業團隊</h2>
+  <p>實驗室由兩名全職材料工程師組成，各持有高分子科學或紡織工程學位，且至少具有六年產業經驗。他們由三名負責日常測試及資料記錄的技術員支援。團隊定期參與國際標準化組織（ISO）舉辦的實驗室間比對試驗，以驗證我們測試方法的準確性。</p>
+
+  <h2>解決您最棘手的材料挑戰</h2>
+  <p>每個海洋環境都不同。在波斯灣作業的巡邏艇與北海的救援船所面臨的 UV 及溫度條件差異極大。我們的織物實驗室協助您選擇——或開發——針對您營運狀況優化的織物規格。</p>
+  <p>近期客製方案包括：</p>
+  <ul>
+    <li>為軍方客戶開發的高耐磨 PVC 混合配方，其船隻經常在珊瑚礁上登陸（耐磨壽命增加 40%）。</li>
+    <li>為北極研究站開發的低溫 Hypalon 配方，測試至 -50°C 無脆化。</li>
+    <li>為搜救船隊開發的色穩定橙色織物，在熱帶陽光曝曬 3 年後仍保持可見度。</li>
+  </ul>
+  <p>我們不銷售「現成」織物並期望它們適用。我們測試、驗證並推薦——或創造——針對您特定任務需求的量身定制方案。這就是 {SITE.name} 的差異所在。</p>
+
+  <h2>我們如何為您服務</h2>
+  <p>當您向我們提出材料挑戰時，您可以期待以下流程：</p>
+  <ol>
+    <li><strong>諮詢</strong> — 我們討論您的營運環境、性能目標及預算。</li>
+    <li><strong>提案</strong> — 擬定測試計畫，包含明確的合格/不合格標準及時間表。</li>
+    <li><strong>執行</strong> — 我們的實驗室執行測試，產出包含原始數據及比較分析的詳細報告。</li>
+    <li><strong>建議</strong> — 我們提出織物規格建議，若有多種材料符合要求則提供替代選項。</li>
+    <li><strong>追蹤</strong> — 交付後，我們仍持續為您提供使用中的材料問題支援。</li>
+  </ol>
+  <p>我們的目標不僅是向您銷售船隻。而是確保您收到的船隻能夠在您的作業條件下可靠地執行——而這始於織物。</p>
+
+cta:
+  title: '需要客製織物規格？'
+  subtitle: '聯絡我們的材料工程團隊討論您的需求。'
+  button_text: '聯絡實驗室團隊'
+  button_link: /contact

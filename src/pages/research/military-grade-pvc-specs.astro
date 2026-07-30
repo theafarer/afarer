@@ -1,0 +1,93 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `Military-Grade PVC Specifications — SUP Material Standards | ${SITE.name}`,
+  description:
+    'Technical specifications for military-grade PVC used in inflatable SUPs: denier rating, fabric density, coating weight, tensile strength, and how to evaluate PVC quality when sourcing.',
+  ignoreTitleTemplate: true,
+};
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Military-Grade PVC Specifications',
+  description: metadata.description,
+  author: { '@type': 'Organization', name: SITE.name },
+  datePublished: '2026-07-27',
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd data={jsonLd} />
+  <article class="max-w-4xl mx-auto px-6 py-16">
+    <nav class="text-sm text-gray-500 mb-8">
+      <a href="/" class="hover:text-sky-600">{SITE.name}</a><span class="mx-2">/</span><a
+        href="/research"
+        class="hover:text-sky-600">Research</a
+      ><span class="mx-2">/</span><span class="text-gray-900">Military-Grade PVC</span>
+    </nav>
+    <div class="mb-4">
+      <span
+        class="inline-block text-xs font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full"
+        >Materials</span
+      ><span class="ml-3 text-sm text-gray-400">8 min read</span>
+    </div>
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">Military-Grade PVC Specifications</h1>
+    <p class="text-xl text-gray-500 mb-12 leading-relaxed">
+      "Military-grade PVC" is a widely used but loosely defined term. Understanding the actual material specifications
+      helps you evaluate SUP quality objectively.
+    </p>
+    <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600">
+      <h2>What Military-Grade Actually Means</h2>
+      <p>
+        In the inflatable watercraft industry, "military-grade" typically refers to PVC fabric meeting or exceeding
+        standards originally developed for military inflatable boats (MIL-SPEC). Key specifications include: minimum
+        tensile strength of 600 N/cm in the warp direction, minimum tear strength of 100 N, and UV resistance per
+        MIL-STD-810. However, the term is not legally regulated — any manufacturer can claim "military-grade" regardless
+        of actual specifications. Reputable manufacturers publish their material test data and certification.
+      </p>
+      <h2>Denier Rating</h2>
+      <p>
+        Denier (D) measures the linear mass density of the polyester fabric core. Higher denier = thicker, stronger
+        threads. Standard SUP PVC uses 1000D to 1600D fabric. 1000D is adequate for recreational boards under 220 lb
+        capacity. 1600D is preferred for high-pressure touring boards, whitewater boards, and boards rated for 300+ lb
+        capacity. Thread tensile strength at 1600D is approximately 40% higher than 1000D. Afarer uses 1600D fabric for
+        all SUP models rated above 220 lb capacity.
+      </p>
+      <h2>PVC Coating Weight</h2>
+      <p>
+        PVC coating is applied to both sides of the polyester fabric. Total coating weight is measured in g/m² (grams
+        per square meter). Standard coating: 600-800 g/m² total (300-400 g/m² per side). Heavy-duty coating: 900-1100
+        g/m² total. Heavier coating improves abrasion resistance and air retention but adds weight and stiffness to the
+        fabric. The coating must be evenly applied — uneven coating creates weak spots that may fail under pressure.
+      </p>
+      <h2>Total Fabric Thickness</h2>
+      <p>
+        Measured in millimeters, total thickness includes the fabric core plus both PVC coating layers. Entry-level:
+        0.6-0.8mm. Standard quality: 0.9-1.0mm. Premium: 1.1-1.2mm. Whitewater/heavy duty: 1.2-1.5mm. Thicker PVC is
+        more puncture-resistant and holds pressure longer but is heavier and stiffer to fold and pack. The industry
+        trend is toward thinner, higher-strength PVC using advanced coating formulations rather than simply adding
+        material thickness.
+      </p>
+      <h2>Key Quality Indicators</h2>
+      <ul>
+        <li>
+          <strong>Cold crack resistance:</strong> Tested at -20°C to -30°C — quality PVC does not crack when flexed at low
+          temperatures.
+        </li><li>
+          <strong>Hydrolysis resistance:</strong> Resistance to chemical breakdown in warm, humid conditions — critical for
+          tropical use.
+        </li><li>
+          <strong>Flex crack resistance:</strong> Measured by repeated folding (DeMattia flex test) — premium PVC survives
+          100,000+ flex cycles without cracking.
+        </li><li>
+          <strong>Color fastness:</strong> Rated on the blue wool scale (1-8) — minimum 6 for SUP applications.
+        </li><li>
+          <strong>Flame retardancy:</strong> Some applications require self-extinguishing PVC per UL 94 or equivalent standards.
+        </li>
+      </ul>
+    </div>
+  </article>
+</Layout>

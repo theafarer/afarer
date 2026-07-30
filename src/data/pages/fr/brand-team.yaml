@@ -1,0 +1,77 @@
+﻿hero:
+  tagline: Our Team
+  title: 'Les Personnes Derrière afarer<br />—L’Ingénierie de la Liberté'
+  subtitle: 'Fondé en 2012 à Qingdao, en Chine, afarer a été construit par des ingénieurs marins, des scientifiques des matériaux'
+  image:
+    src: /images/team-all.webp
+    alt: afarer full team photo —engineering, production, and leadership
+founding:
+  tagline: Our Founding
+  title: 'D’un Atelier Côtier<br />à une Installation de 12 000 m²'
+  subtitle: 'afarer a été fondé par une équipe d’ingénieurs maritimes avec des décennies d’expérience.'
+  items:
+    - title: 'Founded: 2012'
+      description: 'Établi à Qingdao, Chine – un pôle maritime majeur.'
+      icon: tabler:calendar
+    - title: '200+ Employees'
+      description: 'Dont 50+ ingénieurs R&D, spécialistes CQ et techniciens.'
+      icon: tabler:users
+    - title: '12,000 m² Facility'
+      description: 'Usine dédiée avec 6 lignes de production pour SUP, pneumatiques et SUP.'
+      icon: tabler:building-factory
+    - title: '50+ Countries Served'
+      description: 'Exportation vers Europe, Amériques, Moyen-Orient, Asie-Pacifique et Afrique.'
+      icon: tabler:globe
+leadership:
+  tagline: Leadership
+  title: 'Direction & Leadership Technique'
+  subtitle: 'Notre équipe de direction réunit une expertise approfondie en ingénierie maritime, commerce international et management de la qualité.'
+  columns: 3
+  items:
+    - title: 'Founder & CEO'
+      name: 'Toby Liu'
+      description: '15+ years in marine manufacturing. Previously led R&D at a major Chinese boat manufacturer. Holds multiple patents in inflatable boat design.'
+      icon: tabler:crown
+      image: https://assets.afarer.com/images/afarer/team/afarer-toby-liu-team.webp
+    - title: 'Chief Engineer'
+      name: 'Zhang Wei'
+      description: '20+ years in PVC/Hypalon fabrication and deep-V hull design. Former technical director at a European marine engineering firm.'
+      icon: tabler:engine
+      image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"%3E%3Ccircle cx="64" cy="64" r="64" fill="%23e5e7eb"/%3E%3Ccircle cx="64" cy="48" r="18" fill="%239ca3af"/%3E%3Cellipse cx="64" cy="100" rx="32" ry="20" fill="%239ca3af"/%3E%3C/svg%3E'
+    - title: 'Head of R&D'
+      name: 'Chen Ming'
+      description: 'Doctorat en science des matériaux. Spécialisé dans la technologie drop-stitch et le soudage haute fréquence'
+      icon: tabler:flask
+      image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"%3E%3Ccircle cx="64" cy="64" r="64" fill="%23e5e7eb"/%3E%3Ccircle cx="64" cy="48" r="18" fill="%239ca3af"/%3E%3Cellipse cx="64" cy="100" rx="32" ry="20" fill="%239ca3af"/%3E%3C/svg%3E'
+    - title: 'Directeur de Production'
+      name: 'Liu Qiang'
+      description: '18+ years in lean manufacturing and production line optimization. Six Sigma Black Belt. Implemented ISO 9001 quality systems.'
+      icon: tabler:settings
+      image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"%3E%3Ccircle cx="64" cy="64" r="64" fill="%23e5e7eb"/%3E%3Ccircle cx="64" cy="48" r="18" fill="%239ca3af"/%3E%3Cellipse cx="64" cy="100" rx="32" ry="20" fill="%239ca3af"/%3E%3C/svg%3E'
+    - title: 'Responsable Qualité'
+      name: 'Wang Fang'
+      description: '12+ years in marine quality control. Certified CE and ISO auditor. Oversees testing for every production batch.'
+      icon: tabler:shield-check
+      image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"%3E%3Ccircle cx="64" cy="64" r="64" fill="%23e5e7eb"/%3E%3Ccircle cx="64" cy="48" r="18" fill="%239ca3af"/%3E%3Cellipse cx="64" cy="100" rx="32" ry="20" fill="%239ca3af"/%3E%3C/svg%3E'
+    - title: 'Directeur Commercial et Opérations'
+      name: 'Helen Lee'
+      description: '15+ years in international B2B trade. Managed OEM/ODM partnerships across 30+ countries. Fluent in 4 languages.'
+      icon: tabler:briefcase
+      image: https://assets.afarer.com/images/afarer/team/afarer-helen-contact-sales.webp
+philosophy:
+  tagline: Design Philosophy
+  title: 'Conception Axée sur l’Ingénierie<br />—Chaque Détail Compte'
+  subtitle: 'Notre philosophie d’ingénierie repose sur trois principes directeurs.'
+  list:
+    - 'Fiabilité d’abord : chaque produit afarer est testé pour résister aux conditions réelles'
+    - 'Précision de fabrication : nos installations utilisent la découpe CNC, le soudage haute fréquence'
+    - 'Innovation continue : notre équipe R&D évalue les nouveaux matériaux, méthodes de production et designs'
+cta:
+  title: 'Vous voulez discuter d’un projet ?'
+  subtitle: 'Nos ingénieurs conseillent sur la sélection, personnalisation et OEM/ODM.'
+  actions:
+    - variant: primary
+      text: Contact our team
+      href: /contact
+    - text: View our products
+      href: /products

@@ -1,0 +1,100 @@
+﻿name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: node --version && npm --version
+      - run: npm install --ignore-scripts
+
+      # Generate GEO data
+      - run: node scripts/geo-build.mjs
+      - run: node scripts/generate-data-json.mjs
+      - run: npx tsx scripts/generate-geo-files.ts
+
+      # Generate site assets
+      - run: node scripts/_gen-uiall.cjs
+      - run: node scripts/_gen-pages.cjs
+      - run: node scripts/gen-icon-svgs.cjs
+
+      # Astro build (static)
+      - run: npx astro build
+      - run: node scripts/clean-public-assets.mjs
+
+      # Upload R2
+      - name: Upload R2 assets
+        continue-on-error: true
+        run: node scripts/fast-upload-r2.mjs
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+
+      # Create Pages project if missing
+      - name: Ensure Pages project exists
+        continue-on-error: true
+        run: |
+          curl -s -X POST "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CLOUDFLARE_ACCOUNT_ID }}/pages/projects" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{"name":"afarer","production_branch":"main"}' || true
+
+      # Deploy Pages
+      - name: Deploy Pages
+        run: npx --yes wrangler pages deploy dist/ --project-name afarer
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      # Deploy 5 Workers
+      - name: Deploy contact-worker
+        continue-on-error: true
+        run: npx --yes wrangler deploy -c workers/contact-worker/wrangler.toml
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      - name: Deploy seo-worker
+        continue-on-error: true
+        run: npx --yes wrangler deploy -c workers/seo-worker/wrangler.toml
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      - name: Deploy ai-worker
+        continue-on-error: true
+        run: npx --yes wrangler deploy -c workers/ai-worker/wrangler.toml
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      - name: Deploy admin-worker
+        continue-on-error: true
+        run: npx --yes wrangler deploy -c workers/admin-worker/wrangler.toml
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      - name: Deploy automation-worker
+        continue-on-error: true
+        run: npx --yes wrangler deploy -c workers/automation-worker/wrangler.toml
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      # Purge CDN cache
+      - name: Purge CDN cache
+        continue-on-error: true
+        run: |
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{"purge_everything":true}'

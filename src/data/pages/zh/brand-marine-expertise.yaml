@@ -1,0 +1,68 @@
+hero:
+  tagline: 海洋專業
+  title: 數十年的海洋工程<br />融入每個船體
+  subtitle: afarer 結合深厚的材料科學、精密製造和真實測試，製造在關鍵時刻表現出色的船艇。
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
+    alt: afarer 海洋工程與研發團隊工作中
+expertise_materials:
+  tagline: 材料科學
+  title: 為每個應用<br />選擇合適的材料
+  subtitle: 我們使用三種核心材料——每種都針對特定應用場景和性能要求而選擇。
+  columns: 3
+  items:
+    - title: 船用級 PVC
+      description: 1100 旦尼爾 PVC 面料——我們最通用的材料。抗紫外線、耐磨、符合 REACH。適用於注重重量和成本效益的休閒船、SUP 板和皮划艇。
+      icon: tabler:droplet
+    - title: 高級 Hypalon/CSM
+      description: 卓越的耐化學性和紫外線穩定性。Hypalon 船艇在適當保養下可使用 15-20 年。推薦用於長期耐用性至關重要的商業、救援和軍事應用。
+      icon: tabler:shield
+    - title: 玻璃鋼與鋁合金
+      description: 用於 SUP 和巡邏艇的深 V 玻璃鋼船體——惡劣條件下劈波斬浪的性能。鋁合金船體用於需要最大強度和載荷能力的重型商業工作船。
+      icon: tabler:building-arch
+expertise_manufacturing:
+  tagline: 製造能力
+  title: 每一步<br />都精確製造
+  subtitle: 我們的 12,000 m² 工廠配備了適用於生產各階段的專用機械。
+  columns: 2
+  items:
+    - title: CNC 切割
+      description: 計算機控制的切割確保精確、可重複的面料裁片，浪費最少。每件都與設計完全吻合。
+      icon: tabler:cpu
+    - title: 高頻焊接
+      description: 工業級 HF 高頻焊接產生比基材更牢固的接縫。恆定的溫度和壓力控制確保每批生產的氣密密封。
+      icon: tabler:bolt
+    - title: 滴塑芯組裝
+      description: 數千根聚酯線連接上下面料層，允許高壓充氣（15-20 PSI），形成堅固穩定的 SUP 板和甲板。
+      icon: tabler:building-arch
+    - title: 壓力測試
+      description: 每件充氣產品在發貨前都經過壓力測試。SUP 管在 1.5 倍額定壓力下測試——如果能保持，它就能在水上表現出色。
+      icon: tabler:wind
+    - title: 接縫強度測試
+      description: 每批產品中的隨機樣品經過破壞性接縫強度測試。結果記錄並可追溯到特定生產批次。
+      icon: tabler:files
+    - title: 水上測試
+      description: 每款 SUP 型號在認證前都經過海上試航。在沿海條件下的真實測試驗證了性能、操控性和穩定性。
+      icon: tabler:droplet
+expertise_design:
+  tagline: 設計與工程
+  title: 為真實條件而設計
+  subtitle: 我們的設計理念從船艇的使用方式開始——然後圍繞該使用場景構建工程。
+  items:
+    - title: 深 V 船體設計
+      description: 我們的玻璃鋼船體具有經過計算的縱傾角，針對每個型號的長度和預期用途進行了優化。更陡的 V 角用於惡劣水域性能，更淺的 V 角用於穩定性。
+    - title: 多氣室安全
+      description: 每艘船配備 3-7 個獨立氣室。如果其中一個氣室受損，其餘氣室仍能保持船艇漂浮和運行。
+    - title: 人體工學佈局
+      description: 控制台位置、管高度和座椅位置圍繞操作員在長時間使用中的舒適性設計——無論是巡邏、釣魚還是運輸。
+    - title: 定製配置
+      description: 管顏色、控制台配置、燃油容量、附件安裝座——每個型號均可定製以匹配特定操作要求。
+cta:
+  title: 有特定的應用場景嗎？
+  subtitle: 我們的工程團隊可以為您的項目提供材料選擇、設計和製造方面的建議。
+  actions:
+    - variant: primary
+      text: 諮詢我們的工程師
+      href: /contact
+    - text: 查看產品系列
+      href: /products

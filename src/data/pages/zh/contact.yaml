@@ -1,0 +1,130 @@
+hero_text:
+  tagline: 聯繫方式
+  title: 聯繫我們
+contact_form:
+  id: form
+  title: 發送消息
+  subtitle: 如需報價、技術諮詢或合作垂詢，請給我們留言。我們會在一個工作日內回覆。
+  email_to: info@afarer.com
+  submit_button: 發送消息
+  success_message: 謝謝！您的消息已收到。我們會在一個工作日內回覆。
+  error_message: 發送消息時出錯。請重試或直接給我們發送郵件。
+  default_country_code: '+1'
+  captcha:
+    label: 反垃圾：請解答以下問題
+  fields:
+    - name: firstName
+      label: 名字
+      row: 1
+    - name: lastName
+      label: 姓氏
+      row: 1
+    - name: companyName
+      label: 公司
+      row: 2
+    - name: address
+      label: 地址
+      row: 3
+    - name: zip
+      label: 郵政編碼
+      row: 4
+    - name: country
+      label: 國家
+      row: 4
+      type: select
+      optionsKey: countries
+    - name: email
+      label: 郵箱
+      row: 5
+      type: email
+    - name: tel
+      label: 電話
+      row: 5
+      type: tel
+      withCountryCode: true
+    - name: orderVolume
+      label: 預估訂單量
+      row: 6
+      type: select
+      options:
+        - value: ''
+          label: 選擇預估數量...
+        - value: sample
+          label: 僅樣品/原型
+        - value: 5-10
+          label: 50–100個（標準起訂量）
+        - value: 100-500
+          label: 100–500個
+        - value: 500-plus
+          label: 500+個（批量價格）
+    - name: customization
+      label: 需要定製嗎？
+      row: 7
+      type: select
+      options:
+        - value: ''
+          label: 選擇定製類型...
+        - value: none
+          label: 標準產品（無需定製）
+        - value: logo
+          label: 僅定製標誌/品牌
+        - value: full
+          label: 全面OEM（尺寸、顏色、圖形、包裝）
+        - value: consultation
+          label: 不確定 — 需要諮詢
+    - name: productInterest
+      label: 感興趣的產品類別
+      row: 8
+      type: select
+      options:
+        - value: ''
+          label: 選擇產品類別...
+        - value: all
+          label: 所有產品 / 全部目錄
+        - value: sup
+          label: SUP槳板
+        - value: SUP
+          label: 充氣皮划艇
+        - value: SUP
+          label: RIB充氣艇
+        - value: SUP
+          label: 小艇 / 交通艇
+        - value: safety
+          label: 安全裝備 / 救生衣
+        - value: accessory
+          label: 配件（泵、槳、包）
+    - name: subject
+      label: 主題
+      row: 9
+    - name: message
+      label: 留言
+      row: 10
+      type: textarea
+      rows: 6
+features2_other_ways:
+  title: 其他聯繫方式
+  columns: 3
+  items:
+    - title: 銷售諮詢
+      description: 報價、配置、經銷商申請和大宗訂單。
+      icon: tabler:shopping-bag
+    - title: 技術支持
+      description: 保修、維修、配件和操作問題。
+      icon: tabler:tool
+    - title: 媒體與合作伙伴
+      description: 媒體資料包、贊助和行業合作。
+      icon: tabler:news
+    - title: 電話
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: 郵箱
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: 總部地址
+      description: Economic Development Zone, Laixi, Qingdao, China, 266600
+      icon: tabler:map-pin
+map:
+  title: 我們的位置
+  subtitle: 歡迎光臨總部
+  address: Economic Development Zone, Laixi, Qingdao, China, 266600
+  zoom: 15

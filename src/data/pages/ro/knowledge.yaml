@@ -1,0 +1,74 @@
+﻿hero:
+  tagline: 'Graficul Cunoașterii'
+  title: 'Cunoașterea Explorării Apei'
+  subtitle: |
+    O bază de cunoștințe structurată care acoperă tehnologia SUP gonflabil,<br />
+    siguranța pe apă, ingineria ambarcațiunilor și planificarea aventurilor.
+  taglineSection: 'Explorează. Învață. Mergi cu încredere.'
+
+clusters:
+  tagline: 'Grupuri de Cunoaștere'
+  title: 'Explorează pe subiect'
+  subtitle: 'Scufundări profunde în tehnologia, siguranța și abilitățile din spatele fiecărui produs afarer.'
+  items:
+    - title: 'Cunoaștere SUP'
+      description: 'De la alegerea primei plăci la tehnici avansate de turism —totul despre paddleboarding.'
+      icon: 'tabler:lifebuoy'
+      topics:
+        - 'Cum să alegi primul tău SUP gonflabil'
+        - 'Cea mai bună dimensiune SUP pentru începători'
+        - 'Cât de dificil este paddleboarding-ul?'
+        - 'Comparație între placă gonflabilă și placă rigidă'
+        - 'Listă de verificare siguranță SUP'
+    - title: 'Cunoaștere Ambarcațiuni'
+      description: 'Ghiduri tehnice despre bărci gonflabile, SUP-uri, șalupe și caiac —inginerie, materiale și operare.'
+      icon: 'tabler:sailboat'
+      topics:
+        - 'Tipuri de bărci gonflabile explicate'
+        - 'Comparație PVC vs Hypalon'
+        - 'Comparație SUP vs Șalupă'
+        - 'Tehnologia drop-stitch în profunzime'
+        - 'Ghid de știință a materialelor marine'
+    - title: 'Cunoaștere Siguranță'
+      description: 'Cunoștințe esențiale de siguranță pentru fiecare vâslaș —de la alegerea PFD la citirea vremii și tehnici de auto-salvare.'
+      icon: 'tabler:shield'
+      topics:
+        - 'Listă de verificare siguranță SUP'
+        - 'Ai nevoie de vestă de salvare?'
+        - 'Ghid de siguranță pentru vâslit în ocean'
+        - 'Siguranța pe râuri pentru caiace gonflabile'
+        - 'Conștientizarea vremii și condițiilor apei'
+    - title: 'Tehnologie'
+      description: 'Ingineria din spatele produselor afarer —materiale, metode de construcție și testare a calității.'
+      icon: 'tabler:microscope'
+      topics:
+        - 'Tehnologie PVC de calitate marină'
+        - 'Miezul drop-stitch explicat'
+        - 'De ce contează PSI-ul pentru SUP-urile gonflabile'
+        - 'Sudare RF vs lipire adezivă'
+        - 'Testare calitate și certificare'
+
+featured_guides:
+  tagline: 'Ghiduri Recomandate'
+  title: 'Cele mai populare resurse de cunoștințe'
+  items:
+    - title: 'Bazele SUP'
+      href: '/learn/sup'
+    - title: 'Placă gonflabilă vs placă rigidă'
+      href: '/compare/inflatable-vs-hardboard'
+    - title: 'Ghid de siguranță pe apă'
+      href: '/learn/water-safety'
+    - title: 'Referință materiale'
+      href: '/learn/materials'
+    - title: 'Ghid dimensiuni SUP'
+      href: '/size-guide'
+
+cta:
+  title: 'Începe să explorezi'
+  subtitle: 'Scufundă-te în baza noastră de cunoștințe și obține informațiile de care ai nevoie pentru următoarea ta aventură pe apă.'
+  actions:
+    - variant: primary
+      text: 'Vizionează toate ghidurile'
+      href: '/academy'
+    - text: 'Explorează graficul de cunoaștere'
+      href: '/knowledge'

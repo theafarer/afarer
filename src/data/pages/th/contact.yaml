@@ -1,0 +1,134 @@
+﻿hero:
+  tagline: ติดต่อ
+  title: ติดต่อ afarer
+  subtitle: เราอยู่ที่นี่เพื่อช่วยคุณ ติดต่อเราเกี่ยวกับคำถามสินค้า พันธมิตร OEM/ODM หรือเรื่องอื่น ๆ
+  image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
+  imageAlt: ติดต่อ afarer
+
+contact_form:
+  id: form
+  title: ส่งข้อความถึงเรา
+  subtitle: สำหรับใบเสนอราคา คำถามทางเทคนิค หรือสอบถามความร่วมมือ กรุณาส่งข้อความถึงเรา เราจะตอบกลับภายในหนึ่งวันทำการ
+  email_to: info@afarer.com
+  submit_button: ส่งคำถาม → ขอใบเสนอราคา
+  success_message: ขอบคุณ! ข้อความของคุณถึงกล่องจดหมายของเราแล้ว เราจะตอบกลับภายในหนึ่งวันทำการ
+  error_message: เกิดข้อผิดพลาดในการส่งข้อความของคุณ กรุณาลองอีกครั้งหรือส่งอีเมลถึงเราโดยตรง
+  default_country_code: '+1'
+  captcha:
+    label: 'ป้องกันสแปม: กรุณาแก้ปัญหาต่อไปนี้'
+  fields:
+    - name: firstName
+      label: ชื่อ
+      row: 1
+    - name: lastName
+      label: นามสกุล
+      row: 1
+    - name: companyName
+      label: ชื่อบริษัท
+      row: 2
+    - name: address
+      label: ที่อยู่
+      row: 3
+    - name: zip
+      label: รหัสไปรษณีย์
+      row: 4
+    - name: country
+      label: ประเทศ
+      row: 4
+      type: select
+      optionsKey: countries
+    - name: email
+      label: อีเมล
+      row: 5
+      type: email
+    - name: tel
+      label: โทรศัพท์
+      row: 5
+      type: tel
+      withCountryCode: true
+    - name: orderVolume
+      label: ปริมาณการสั่งซื้อโดยประมาณ
+      row: 6
+      type: select
+      options:
+        - value: 'ฝ่ายบริการลูกค้า'
+          label: เลือกปริมาณโดยประมาณ...
+        - value: sample
+          label: เฉพาะตัวอย่าง / ต้นแบบ
+        - value: '5-10'
+          label: 50–100 หน่วย (MOQ มาตรฐาน)
+        - value: '100-500'
+          label: 100–500 หน่วย
+        - value: '500-plus'
+          label: 500+ หน่วย (ราคาตามปริมาณ)
+    - name: customization
+      label: ต้องการปรับแต่งหรือไม่?
+      row: 7
+      type: select
+      options:
+        - value: 'ฝ่ายสนับสนุนทางเทคนิค'
+          label: เลือกประเภทการปรับแต่ง...
+        - value: none
+          label: สินค้ามาตรฐาน (ไม่ปรับแต่ง)
+        - value: logo
+          label: เฉพาะโลโก้ / แบรนด์ที่กำหนดเอง
+        - value: full
+          label: OEM เต็มรูปแบบ (ขนาด สี กราฟิก บรรจุภัณฑ์)
+        - value: consultation
+          label: ไม่แน่ใจ — ต้องการคำปรึกษา
+    - name: productInterest
+      label: หมวดหมู่สินค้าที่สนใจ
+      row: 8
+      type: select
+      options:
+        - value: 'ฝ่ายขาย'
+          label: เลือกหมวดหมู่สินค้า...
+        - value: all
+          label: สินค้าทั้งหมด / แคตตาล็อกทั้งหมด
+        - value: sup
+          label: บอร์ด SUP / บอร์ดพาย
+        - value: SUP
+          label: เรือคายัคเป่าลม
+        - value: SUP
+          label: เรือ SUP
+        - value: SUP
+          label: เรือดิงกี้ / เรือเทนเดอร์
+        - value: safety
+          label: อุปกรณ์นิรภัย / เสื้อชูชีพ
+        - value: accessory
+          label: อุปกรณ์เสริม (ปั๊ม, ไม้พาย, กระเป๋า)
+    - name: subject
+      label: หัวข้อ
+      row: 9
+    - name: message
+      label: ข้อความ
+      row: 10
+      type: textarea
+      rows: 6
+features2_other_ways:
+  title: ช่องทางอื่นในการติดต่อเรา
+  columns: 3
+  items:
+    - title: สอบถามการขาย
+      description: ใบเสนอราคา การกำหนดค่า การสมัครเป็นตัวแทนจำหน่าย และคำสั่งซื้อจำนวนมาก
+      icon: tabler:shopping-bag
+    - title: ฝ่ายสนับสนุนทางเทคนิค
+      description: การรับประกัน การซ่อมแซม อะไหล่ และคำถามเกี่ยวกับการใช้งาน
+      icon: tabler:tool
+    - title: สื่อและพันธมิตร
+      description: สื่อ kits การสนับสนุน และความร่วมมือทางอุตสาหกรรม
+      icon: tabler:news
+    - title: โทรศัพท์
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: อีเมล
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: สำนักงานใหญ่
+      description: Economic Development Zone, Laixi, Qingdao, China, 266600
+      icon: tabler:map-pin
+map:
+  title: ที่ตั้งของเรา
+  subtitle: เยี่ยมชมเราที่สำนักงานใหญ่
+  address: Economic Development Zone, Laixi, Qingdao, China, 266600
+  zoom: 15

@@ -1,0 +1,144 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from 'astrowind:config';
+import JsonLd from '~/components/common/JsonLd.astro';
+
+const metadata = {
+  title: `Gallery –${SITE.name}`,
+  description: `Browse the ${SITE.name} gallery –product photos, factory workshops, on-water action shots, and customer adventures from around the world.`,
+};
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Gallery' }];
+
+const albums = [
+  {
+    title: 'Inflatable Boats',
+    desc: 'Hypalon and PVC inflatable boats for patrol, dive, fishing and family use.',
+    images: [
+      'https://assets.afarer.com/images/afarer/hero/hero-5.webp',
+      'https://assets.afarer.com/images/afarer/hero/hero-5.webp',
+      'https://assets.afarer.com/images/afarer/hero/boat man afarer-min.webp',
+    ],
+  },
+  {
+    title: 'SUP Boards',
+    desc: 'Drop-stitch inflatable SUP boards for touring, surfing, yoga and fishing.',
+    images: [
+      'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+      'https://assets.afarer.com/images/afarer/hero/boat man afarer-min.webp',
+    ],
+  },
+  {
+    title: 'Factory & Workshop',
+    desc: 'Our 12,000 m² manufacturing facility in Qingdao, China.',
+    images: [
+      'https://assets.afarer.com/images/afarer/factory/afarer-factory-building.webp',
+      'https://assets.afarer.com/images/afarer/hero/production-workshop.webp',
+      'https://assets.afarer.com/images/afarer/factory/afarer-warehouse-storage.webp',
+      'https://assets.afarer.com/images/afarer/factory/afarer-pressure-testing.webp',
+    ],
+  },
+];
+---
+
+<JsonLd
+  type="BreadcrumbList"
+  data={{
+    itemListElement: [
+      { position: 1, name: 'Home', item: 'https://afarer.com/' },
+      { position: 2, name: 'Gallery', item: 'https://afarer.com/gallery/' },
+    ],
+  }}
+/>
+<JsonLd
+  type="FAQPage"
+  data={{
+    mainEntity: [
+      { "@type": "Question", name: "What types of products are shown in the gallery?", acceptedAnswer: { "@type": "Answer", text: "Our gallery showcases Afarer inflatable SUP boards, life vests, paddles, pumps, and accessories. Images include product shots, lifestyle photography, and factory production photos." } },
+      { "@type": "Question", name: "Can I use gallery images for my website?", acceptedAnswer: { "@type": "Answer", text: "Gallery images are the property of Afarer. Partners and media may request usage rights through our media center. Contact us for authorized image licensing." } },
+      { "@type": "Question", name: "Are the product photos accurate representations?", acceptedAnswer: { "@type": "Answer", text: "Yes. All product photos are of actual Afarer production boards. Colors are calibrated to represent the final product accurately, though slight variations may occur between screens." } },
+      { "@type": "Question", name: "Do you have photos of custom branded boards?", acceptedAnswer: { "@type": "Answer", text: "Yes. Contact our sales team for examples of custom OEM/ODM boards produced for partner brands. We can share case studies with custom graphics and private label designs." } },
+      { "@type": "Question", name: "How often is the gallery updated?", acceptedAnswer: { "@type": "Answer", text: "We update our gallery regularly with new product launches, factory expansions, trade show appearances, and community events. Check back frequently for the latest visual content." } },
+    ]
+  }}
+/>
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <section class="px-6 sm:px-6 py-16 sm:py-20 lg:py-24 mx-auto max-w-5xl text-center">
+    <p class="text-sm font-semibold text-primary uppercase tracking-wider">{SITE.name}</p>
+    <h1 class="mt-3 text-4xl md:text-5xl font-bold">Gallery</h1>
+    <p class="mt-3 text-lg text-muted">Product shots, factory floor, and adventures on the water</p>
+  </section>
+
+  {
+    albums.map((album) => (
+      <section class="px-6 sm:px-6 pb-16 mx-auto max-w-6xl">
+        <div class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900">{album.title}</h2>
+          <p class="mt-1 text-sm text-muted">{album.desc}</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {album.images.map((src) => (
+            <div class="rounded-xl overflow-hidden bg-gray-100 aspect-[4/3]">
+              <img
+                src={src}
+                alt={`${album.title} –${SITE.name}`}
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+    ))
+  }
+
+  <section class="px-6 sm:px-6 py-20 mx-auto max-w-4xl text-center">
+    <div class="rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-8">
+      <h2 class="text-xl font-bold">Want to see more?</h2>
+      <p class="mt-2 text-sm text-muted">
+        Follow us on social media for the latest product releases, factory updates, and customer adventures.
+      </p>
+      <div class="mt-6 flex justify-center gap-4">
+        <a
+          href="https://www.instagram.com/afarer"
+          class="px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90">Instagram</a
+        >
+        <a
+          href="https://www.youtube.com/@afarer"
+          class="px-6 py-3 border border-gray-300 rounded-md font-semibold hover:bg-gray-50 transition">YouTube</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">Gallery — Frequently Asked Questions</h2>
+      <p class="text-lg text-gray-500 text-center mb-12">Common questions about our product gallery and image usage.</p>
+      <div class="space-y-4">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">What types of products are shown in the gallery?</h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Our gallery showcases Afarer inflatable SUP boards, life vests, paddles, pumps, and accessories. Images include product shots, lifestyle photography, and factory production photos.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">Can I use gallery images for my website?</h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Gallery images are the property of Afarer. Partners and media may request usage rights through our media center. Contact us for authorized image licensing.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">Are the product photos accurate representations?</h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. All product photos are of actual Afarer production boards. Colors are calibrated to represent the final product accurately, though slight variations may occur between screens.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">Do you have photos of custom branded boards?</h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Contact our sales team for examples of custom OEM/ODM boards produced for partner brands. We can share case studies with custom graphics and private label designs.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">How often is the gallery updated?</h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">We update our gallery regularly with new product launches, factory expansions, trade show appearances, and community events. Check back frequently for the latest visual content.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

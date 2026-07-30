@@ -1,0 +1,80 @@
+meta:
+  title: 'SUP Retail Partner Program | {SITE}'
+  description: 'Become an Afarer retail partner. Full product line, professional marketing materials, dropshipping options, and competitive margins for SUP retailers.'
+
+hero:
+  tagline: Retail Partners
+  title: 'Become An Afarer<br />Retail Partner'
+  subtitle: 'Sell the fastest-growing SUP brand in your market. Full product line, professional marketing materials, dropshipping options, and margins that make sense.'
+  image:
+    src: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp
+    alt: Afarer SUP boards displayed in a retail store
+
+product_line:
+  title: Complete Product Line
+  subtitle: 'A SUP board for every customer who walks through your door.'
+  items:
+    - name: All-Round Series
+      description: 'Best seller — fits 80% of customers'
+    - name: Touring Series
+      description: 'Performance paddlers — higher margin'
+    - name: Yoga Series
+      description: 'Niche market — premium pricing'
+    - name: Kids Series
+      description: 'Family customers — repeat buyer'
+    - name: Racing Series
+      description: 'Enthusiast market — brand halo'
+    - name: Accessories
+      description: 'High margin add-ons (paddles, vests, pumps, bags)'
+
+support:
+  title: Retail Partner Support
+  subtitle: 'Everything you need to sell confidently.'
+  items:
+    - 'High-res product images (professional photography)'
+    - 'Lifestyle photos for social media, website, and catalog'
+    - 'Marketing materials — posters, shelf talkers, banners'
+    - 'Product training videos for staff education'
+    - 'Social media content pack (weekly posts)'
+    - 'SEO-optimized product descriptions'
+    - 'Dropshipping option available — no inventory risk'
+    - 'Net 30 payment terms'
+
+tiers:
+  title: Partner Tiers
+  subtitle: 'Choose the partnership level that fits your business.'
+  items:
+    - name: Basic Partner
+      discount: '20% wholesale'
+      requirements: '500 units/yr'
+      benefits:
+        - 'Access to marketing materials'
+        - 'Email support'
+        - 'Product catalog access'
+    - name: Premium Partner
+      discount: '30% wholesale'
+      requirements: '2,000+ units/yr'
+      benefits:
+        - 'Dedicated account manager'
+        - 'Exclusive territory protection'
+        - 'Custom marketing support'
+        - 'First access to new products'
+    - name: Flagship Partner
+      discount: '35%+ wholesale'
+      requirements: '5,000+ units/yr'
+      benefits:
+        - 'Co-branded marketing campaigns'
+        - 'In-store display support'
+        - 'On-site staff training'
+        - 'Joint social media promotions'
+
+cta:
+  title: 'Ready to become a partner?'
+  subtitle: 'Apply for partnership or download our retail catalog.'
+  actions:
+    - text: 'Apply for Partnership'
+      href: '/contact?partner=retail'
+      variant: 'primary'
+    - text: 'Download Retail Catalog'
+      href: '/resources/download-catalog'
+      variant: 'secondary'

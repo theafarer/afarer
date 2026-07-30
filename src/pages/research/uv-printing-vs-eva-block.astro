@@ -1,0 +1,93 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `UV Printing vs EVA Block Piecing — SUP Artwork Technology Comparison | ${SITE.name}`,
+  description:
+    'Technical comparison of UV digital printing and EVA color-block piecing for SUP board artwork. Durability, color fastness, cost, and application methods for each technology.',
+  ignoreTitleTemplate: true,
+};
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'UV Printing vs EVA Block Piecing — SUP Artwork Technology',
+  description: metadata.description,
+  author: { '@type': 'Organization', name: SITE.name },
+  datePublished: '2026-07-27',
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd data={jsonLd} />
+  <article class="max-w-4xl mx-auto px-6 py-16">
+    <nav class="text-sm text-gray-500 mb-8">
+      <a href="/" class="hover:text-sky-600">{SITE.name}</a><span class="mx-2">/</span><a
+        href="/research"
+        class="hover:text-sky-600">Research</a
+      ><span class="mx-2">/</span><span class="text-gray-900">SUP Artwork Technology</span>
+    </nav>
+    <div class="mb-4">
+      <span
+        class="inline-block text-xs font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full"
+        >Technology</span
+      ><span class="ml-3 text-sm text-gray-400">6 min read</span>
+    </div>
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">UV Printing vs EVA Block Piecing</h1>
+    <p class="text-xl text-gray-500 mb-12 leading-relaxed">
+      Two fundamentally different approaches to adding artwork to SUP boards — understanding their trade-offs is
+      essential for choosing the right manufacturing method.
+    </p>
+    <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600">
+      <h2>UV Digital Printing</h2>
+      <p>
+        UV printing applies ink directly to the PVC or EVA surface using inkjet print heads, then cures it instantly
+        with UV light. This allows full-color photographic-quality artwork with gradients, shadows, and fine details. UV
+        inks are formulated with flexible polymers that can stretch up to 150% without cracking, accommodating board
+        inflation and folding. The printing is performed on flat PVC sheets before assembly or on finished boards using
+        3-axis print gantries.
+      </p>
+      <h3>Advantages</h3>
+      <ul>
+        <li>Full CMYK color with no design complexity limits</li><li>Photographic quality with smooth gradients</li><li>
+          Lower setup cost for custom runs
+        </li><li>Fast iteration — digital file to printed board in hours</li>
+      </ul>
+      <h3>Limitations</h3>
+      <ul>
+        <li>Surface ink layer — vulnerable to abrasion from foot traffic</li><li>
+          UV exposure can fade inks over 2-3 years
+        </li><li>Stretchable inks are more expensive than standard UV inks</li><li>
+          High-elongation areas (rail curves) may show micro-cracking over time
+        </li>
+      </ul>
+      <h2>EVA Color-Block Piecing</h2>
+      <p>
+        Color-block piecing uses physically different colored EVA sheets that are die-cut and assembled into a seamless
+        pad. The color is inherent to the EVA material — there is no ink layer to scratch, peel, or fade. CNC
+        die-cutting achieves sub-millimeter precision for complex interlocking shapes.
+      </p>
+      <h3>Advantages</h3>
+      <ul>
+        <li>Zero fading — colors are structural, not surface-applied</li><li>
+          100% abrasion resistant under foot traffic
+        </li><li>No cracking from inflation or folding</li><li>Lasts the lifetime of the board</li>
+      </ul>
+      <h3>Limitations</h3>
+      <ul>
+        <li>Limited to solid color blocks — no gradients or photographic detail</li><li>
+          Higher die-cutting tooling cost per design
+        </li><li>More complex assembly labor</li><li>Designs limited to interlocking geometries</li>
+      </ul>
+      <h2>Hybrid Approach</h2>
+      <p>
+        Afarer uses a hybrid approach on many models: UV digital printing on the nose (where photographic detail matters
+        and foot traffic is minimal) combined with EVA color-block piecing on the standing zone (where abrasion
+        resistance is critical). This division of labor gives each technology responsibility for what it does best. For
+        360-degree visual continuity, screen-printed rail bands extend the design around the board sides using
+        specialized stretchable PVC inks.
+      </p>
+    </div>
+  </article>
+</Layout>

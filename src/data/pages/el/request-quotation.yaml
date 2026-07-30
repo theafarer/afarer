@@ -1,0 +1,57 @@
+﻿hero_text:
+  tagline: Get a Quote
+  title: 'Ζητήστε μια Προσφορά<br />για το Έργο σας'
+  subtitle: 'Πείτε μας τις απαιτήσεις σας και η ομάδα μας θα απαντήσει με λεπτομερή προσφορά εντός 2 εργάσιμων ημερών.'
+steps2_process:
+  title: How It Works
+  subtitle: 'Τέσσερα απλά βήματα από το αίτημα έως την προσφορά.'
+  items:
+    - title: 'Βήμα 1: Υποβάλετε τις Απαιτήσεις σας'
+      description: 'Συμπληρώστε την παρακάτω φόρμα με τον τύπο προϊόντος, την ποσότητα και τις προδιαγραφές. Όσο περισσότερες λεπτομέρειες παρέχετε, τόσο πιο ακριβής θα είναι η προσφορά σας.'
+      icon: tabler:file-text
+    - title: 'Βήμα 2: Εξετάζουμε & Συμβουλεύουμε'
+      description: 'Η ομάδα μηχανικών μας εξετάζει τις απαιτήσεις σας και μπορεί να επικοινωνήσει μαζί σας για διευκρινίσεις. Παρέχουμε συστάσεις σχετικά με τη διαμόρφωση και τις επιλογές προϊόντος.'
+      icon: tabler:users
+    - title: 'Βήμα 3: Λάβετε την Προσφορά σας'
+      description: 'Λαμβάνετε μια λεπτομερή προσφορά που περιλαμβάνει τιμολόγηση ανά μονάδα, MOQ, χρόνο παράδοσης, όρους πληρωμής και επιλογές αποστολής. Συνήθως εντός 48 ωρών.'
+      icon: tabler:currency-dollar
+    - title: 'Βήμα 4: Δείγμα & Παραγωγή'
+      description: 'Μετά την αποδοχή της προσφοράς, προχωράμε σε παραγωγή δείγματος (εάν ισχύει) ή απευθείας σε μαζική παραγωγή. Τακτικές ενημερώσεις σε όλη τη διαδικασία.'
+      icon: tabler:building-factory
+content_form:
+  tagline: Quotation Form
+  title: 'Πείτε Μας για το Έργο σας'
+  subtitle: 'Όλα τα πεδία με * είναι υποχρεωτικά.'
+  fields:
+    - name: Product Type
+      type: select
+      options:
+        - SUP Boat
+        - Inflatable Boat
+        - SUP Board
+        - Inflatable SUP
+        - Life Vest
+        - Accessory
+        - Custom
+    - name: Quantity
+      type: text
+      placeholder: e.g. 50 units
+    - name: Target Market
+      type: text
+      placeholder: e.g. Europe, North America, Middle East
+    - name: Customization Needed
+      type: text
+      placeholder: e.g. custom colors, branding, packaging
+    - name: Timeline
+      type: text
+      placeholder: e.g. delivery within 90 days
+    - name: Additional Requirements
+      type: textarea
+      placeholder: Describe your application, technical specifications, or any special requirements
+cta:
+  title: 'Προτιμάτε να συζητήσετε μέσω email;'
+  subtitle: 'Στείλτε το αίτημά σας απευθείας στην ομάδα πωλήσεών μας και θα απαντήσουμε εντός 24 ωρών.'
+  actions:
+    - variant: primary
+      text: Email us directly
+      href: /contact

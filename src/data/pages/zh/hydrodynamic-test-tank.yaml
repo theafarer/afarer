@@ -1,0 +1,112 @@
+meta:
+  title: '流體動力測試水池 — 縮尺模型拖曳與船體優化 | {SITE}'
+  description: '使用我們的流體動力測試水池驗證您的 RIB 船體性能。縮尺模型拖曳、滑行分析及燃油效率測試。立即預約測試時段。'
+back_text: '返回研發中心'
+home_label: '首頁'
+
+hero:
+  tagline: '實驗室 04'
+  title: '流體動力測試水池'
+  subtitle: '在首個全尺寸原型之前驗證性能'
+  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
+  image_alt: 'Afarer 流體動力測試水池性能測試'
+
+intro: '一個常見的誤解是流體動力測試僅適用於遠洋船舶。實際上，小型滑行船體——例如 4–6 米 RIB——的性能與其水下形狀的關聯程度，不亞於油輪與其球型船首的關係。縱傾角、浸水面積、噴濺產生及通氣現象，都對速度、燃油消耗及乘坐舒適性產生顯著影響。在 {SITE.name}，我們設有專屬的流體動力測試水池，能夠在投入金屬與織物建造全尺寸原型之前，以模型比例量化這些效應。'
+
+content_html: |
+  <h2>為什麼要對小船進行水池測試？</h2>
+  <p>以模型比例（通常為 1:3 至 1:5）進行測試，使我們能夠快速且經濟地迭代船體形狀。一週的水池測試可以產生需要數月全尺寸試誤法才能獲得的相同性能數據——而且成本僅為其一小部分。</p>
+
+  <h2>設施規格</h2>
+  <table>
+    <thead><tr><th>參數</th><th>規格</th></tr></thead>
+    <tbody>
+      <tr><td>水池尺寸</td><td>35 m（長）× 3.5 m（寬）× 1.8 m（深）</td></tr>
+      <tr><td>拖曳車</td><td>電動伺服驅動，最高速度 12 m/s（23 節），速度精度 ± 0.5%</td></tr>
+      <tr><td>造波機</td><td>瓣式，可程式規則與不規則海況，模型比例 Hs 最高 0.3 m</td></tr>
+      <tr><td>儀器</td><td>6 分量測力計（阻力、側向力、偏轉力矩）、加速度計、傾角計、波高探針</td></tr>
+      <tr><td>資料擷取</td><td>每通道 1000 Hz 取樣，即時顯示 + 後處理套件</td></tr>
+      <tr><td>模型製作</td><td>內部 CNC 銑削及 3D 列印，模型船全長最長 1.8 m</td></tr>
+    </tbody>
+  </table>
+
+  <h2>我們的測試計畫</h2>
+  <p>水池中的標準船體開發計畫依以下順序進行：</p>
+  <ol>
+    <li><strong>模型建造</strong> — 以高密度泡棉 CNC 加工 1:3.5 比例模型，並包覆玻璃鋼以確保剛性。重量及重心調整至符合傅汝德比例縮放的全載重條件。</li>
+    <li><strong>阻力測試</strong> — 模型以 8–10 種速度拖曳，涵蓋運作範圍。使用 ITTC-1957 方法量測總阻力，並分解為摩擦阻力及剩餘阻力。</li>
+    <li><strong>縱傾與下沉量測</strong> — 記錄各速度下的航行縱傾角及下沉量。滑行船體的目標最佳縱傾角為 4–6°。</li>
+    <li><strong>船艉波調查</strong> — 在兩種速度下量測橫向波浪剖面，評估興波阻力並識別可能導致艉部干擾的橫向波交互作用。</li>
+    <li><strong>耐海性（可選）</strong> — 在規則波中進行頂浪及順浪測試，量測附加阻力、垂直加速度及砰擊機率。</li>
+    <li><strong>數據分析與建議</strong> — 提交完整報告，包含比較圖表、速度/功率曲線及針對全尺寸船體的具體設計建議。</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">典型水池測試結果 — 阻力 vs 速度（RIB 450 船體，1:3.5 比例）</p>
+    <div class="space-y-2">
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">5 節（實船）</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:18%"></div>
+        </div>
+        <span class="w-16 text-right">42 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">10 節（實船）</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:35%"></div>
+        </div>
+        <span class="w-16 text-right">81 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">15 節（實船）</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:52%"></div>
+        </div>
+        <span class="w-16 text-right">121 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">20 節（實船）</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:68%"></div>
+        </div>
+        <span class="w-16 text-right">158 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">25 節（實船）</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:85%"></div>
+        </div>
+        <span class="w-16 text-right">197 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">30 節（實船）</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:100%"></div>
+        </div>
+        <span class="w-16 text-right">232 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">模型比例阻力（N），對應傅汝德比例速度。實船功率預測依據 ITTC-1978 性能預測方法。</p>
+  </div>
+
+  <h2>專家團隊</h2>
+  <p>我們的水池由一位擁有造船工程博士學位、並在歐洲主要海事研究機構擁有 8 年拖曳水池經驗的流體動力學家操作。他由一位負責所有模型及儀器準備的技術人員支援。團隊遵循 ITTC（國際拖曳水池會議）推薦程序，確保每項測試均可重複、可追溯並具有國際公信力。</p>
+
+  <h2>客製船體開發的水池測試</h2>
+  <p>我們的水池不僅用於內部設計的船體——我們也定期為希望驗證客製船體形狀或調查性能問題的客戶執行測試計畫：</p>
+  <ul>
+    <li><strong>船體形狀比較</strong> — 在相同條件下測試兩個或多個候選船體形狀，提供客觀的阻力/速度/穩定性比較，協助您的設計決策。</li>
+    <li><strong>附屬物優化</strong> — 攔截板、防濺條、縱傾調整片及防擦條可在各種配置下進行測試，量化它們對阻力降低的個別貢獻。</li>
+    <li><strong>引擎匹配研究</strong> — 將阻力數據轉換為功率預測曲線，讓您為目標速度和有效載荷選擇最佳引擎馬力。</li>
+  </ul>
+
+  <h2>為什麼與我們一起測試？</h2>
+  <p>我們不僅提供一組原始數據。我們的報告將水池數據轉化為可行的工程建議：「將防濺條提高 8 mm 以減少巡航速度下的浸水面積」、「將尾板處的底部升高角增加 3° 以減少砰擊加速度」或「將縱向重心後移 150 mm 以改善滑行姿態」。您離開時將清楚了解要改變什麼以及為什麼。</p>
+  <p>我們的水池也提供按次計費的獨立第三方測試服務。如果您正在開發船體並希望獲得 unbiased、專業執行的流體動力評估，我們歡迎您的洽詢。</p>
+
+cta:
+  title: '預約水池測試時段'
+  subtitle: '無論您需要完整的開發計畫還是單次比較測試，我們都能夠配合您的時程。'
+  button_text: '聯絡我們的流體動力團隊'
+  button_link: /contact

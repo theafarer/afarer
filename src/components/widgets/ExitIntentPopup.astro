@@ -1,0 +1,106 @@
+---
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  buttonText?: string;
+  buttonHref?: string;
+  delay?: number;
+}
+
+const {
+  title = 'Before You Go — Download Our OEM Guide',
+  subtitle = 'Learn how to launch your private label SUP brand with our complete manufacturing white paper. 42 pages covering mold design, QC, compliance, and logistics.',
+  buttonText = 'Download Free Guide',
+  buttonHref = '/whitepaper/oem-sup-manufacturing-guide',
+  delay = 3000,
+} = Astro.props;
+---
+
+<div id="exit-intent-overlay" class="fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm hidden items-center justify-center p-4">
+  <div class="bg-white dark:bg-slate-900 rounded-3xl max-w-lg w-full shadow-2xl overflow-hidden relative animate-fade-in-up">
+    <button type="button" id="exit-intent-close" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-slate-800 text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors z-10" aria-label="Close">
+      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+
+    <div class="p-8 md:p-10">
+      <div class="w-14 h-14 bg-sky-100 dark:bg-sky-900/40 rounded-2xl flex items-center justify-center text-sky-600 dark:text-sky-400 mb-6">
+        <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      </div>
+      <h3 class="text-2xl font-bold text-gray-900 dark:text-white">{title}</h3>
+      <p class="mt-3 text-gray-500 dark:text-slate-400 leading-relaxed">{subtitle}</p>
+
+      <div class="mt-6 space-y-3">
+        <div class="flex items-center gap-3 text-sm text-gray-600 dark:text-slate-300">
+          <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          <span>10 chapters covering every stage of OEM production</span>
+        </div>
+        <div class="flex items-center gap-3 text-sm text-gray-600 dark:text-slate-300">
+          <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          <span>Factory audit checklist & NDA templates included</span>
+        </div>
+        <div class="flex items-center gap-3 text-sm text-gray-600 dark:text-slate-300">
+          <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          <span>Real brand launch case studies with budgets</span>
+        </div>
+      </div>
+
+      <a href={buttonHref} class="mt-6 block w-full text-center px-6 py-3.5 bg-sky-600 hover:bg-sky-700 text-white font-semibold rounded-xl transition-colors">
+        {buttonText} →
+      </a>
+      <button type="button" id="exit-intent-dismiss" class="mt-3 w-full text-center text-sm text-gray-400 hover:text-gray-600 dark:hover:text-slate-300 transition-colors">
+        No thanks, I'll explore the site
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in-up { animation: fadeInUp 0.4s ease-out; }
+</style>
+
+<script is:inline>
+  (function () {
+    var overlay = document.getElementById('exit-intent-overlay');
+    var closeBtn = document.getElementById('exit-intent-close');
+    var dismissBtn = document.getElementById('exit-intent-dismiss');
+    var shown = false;
+    var delayMs = {delay};
+    var timer = null;
+
+    function show() {
+      if (shown) return;
+      shown = true;
+      overlay.classList.remove('hidden');
+      overlay.classList.add('flex');
+    }
+
+    function hide() {
+      overlay.classList.add('hidden');
+      overlay.classList.remove('flex');
+      if (timer) { clearTimeout(timer); timer = null; }
+    }
+
+    // Exit intent: mouse leaves viewport from top
+    document.addEventListener('mouseleave', function (e) {
+      if (shown) return;
+      if (e.clientY > 0) return;
+      timer = setTimeout(show, 300);
+    });
+
+    // Close handlers
+    if (closeBtn) closeBtn.addEventListener('click', hide);
+    if (dismissBtn) dismissBtn.addEventListener('click', hide);
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) hide();
+    });
+
+    // Also show after delay if not shown
+    setTimeout(function () {
+      if (!shown) show();
+    }, delayMs * 2);
+  })();
+</script>

@@ -1,0 +1,167 @@
+---
+export const prerender = true;
+
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `Paddle Club Fleet Solutions — ${SITE.name} | SUP Club Partnerships`,
+  description:
+    'End-to-end paddle club solutions: fleet supply, branded retail merchandise, event support, and membership program integration.',
+};
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Solutions', href: '/solutions/' }, { name: 'Paddle Clubs' }];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero
+    tagline="Paddle Clubs"
+    title="Complete Fleet & Retail Programs for SUP Clubs"
+    subtitle="From fleet supply to branded retail gear, Afarer partners with paddle clubs to deliver premium member experiences and new revenue streams."
+    image="https://assets.afarer.com/images/afarer/solutions/afarer-paddle-club-fleet.webp"
+  />
+  <Stats
+    title="Powering paddling communities worldwide"
+    stats={[
+      { title: 'Club Partners', amount: '150+' },
+      { title: 'Boards in Clubs', amount: '4,500+' },
+      { title: 'Member Reach', amount: '3M+' },
+      { title: 'Avg Satisfaction', amount: '4.8/5' },
+    ]}
+  />
+  <Content
+    tagline="The Challenge"
+    title="Club growth demands reliable equipment and new revenue"
+    subtitle="Paddle clubs need durable fleets, retail merchandise that members want to buy, and events that build community — all without increasing overhead."
+    content="Most clubs start with a mismatched collection of consumer boards that don't hold up to shared use. As membership grows, maintenance costs rise, and without a retail program, clubs miss out on significant revenue from gear, apparel, and accessories. Event organization becomes a logistical burden without the right support."
+  />
+  <Content
+    tagline="Our Solution"
+    title="Club partnership program built for growth"
+    subtitle="A complete ecosystem: fleet supply, retail merchandise, event kits, and membership perks — all from a single partner."
+    content="- Club Fleet Program: bulk pricing on commercial-grade SUPs, kayaks, and accessories\n- Retail Partnership: branded merchandise for your club shop with dropship fulfillment\n- Event Kits: race buoys, timing equipment, and branded tents for club events\n- Member Perks: exclusive discounts on Afarer gear for club members\n- Staff Training: on-site certification for rental and instruction staff\n- Co-Branding: custom colorways and logos on all fleet equipment"
+  />
+  <Content
+    tagline="Success Story"
+    title="How one club grew membership 40% in a season"
+    subtitle="A mid-sized paddle club in California partnered with Afarer to upgrade their fleet and launch a retail program."
+    items={[
+      { title: 'New fleet of 48 SUPs', description: 'Replaced aging boards with commercial-grade Explorer 11 models.' },
+      {
+        title: 'Club shop launched',
+        description: 'Branded apparel and accessories generated $120K in first-year revenue.',
+      },
+      { title: 'Member perks program', description: 'Exclusive discounts drove 40% membership growth.' },
+    ]}
+  />
+  <!-- Related Products -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <div class="text-center mb-8">
+      <span class="text-sm font-semibold text-sky-600 tracking-[0.15em] uppercase">Featured Products</span>
+      <h2 class="mt-2 text-2xl font-bold text-gray-900">SUPs for Paddle Clubs</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a
+        href="/en/products/sup-explorer-11"
+        class="group bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-sky-700">SUP Explorer 11</h3>
+        <p class="mt-1 text-sm text-gray-500">Stable all-rounder ideal for club rentals and lessons.</p>
+        <span class="mt-3 inline-block text-sm font-medium text-sky-600">View Product →</span>
+      </a>
+      <a
+        href="/en/products/sup-ocean-voyager"
+        class="group bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-sky-700">SUP Ocean Voyager</h3>
+        <p class="mt-1 text-sm text-gray-500">Touring SUP for club expeditions and advanced members.</p>
+        <span class="mt-3 inline-block text-sm font-medium text-sky-600">View Product →</span>
+      </a>
+      <a
+        href="/en/products/life-vest-classic"
+        class="group bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-sky-700">Life Vest Classic</h3>
+        <p class="mt-1 text-sm text-gray-500">CE-certified buoyancy aid for all club members.</p>
+        <span class="mt-3 inline-block text-sm font-medium text-sky-600">View Product →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <div class="text-center mb-10">
+      <span class="text-sm font-semibold text-sky-600 tracking-[0.15em] uppercase">FAQs</span>
+      <h2 class="mt-2 text-3xl font-bold text-gray-900">Paddle Club FAQ</h2>
+      <p class="mt-3 text-gray-500">Common questions about our club partnership program.</p>
+    </div>
+    <div class="space-y-4">
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>What does the paddle club partnership include?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Our club partnership program includes fleet supply at bulk pricing, branded retail merchandise with dropship fulfillment, event kits, member perks with exclusive discounts, and staff training certification.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>Can paddle clubs get custom-branded equipment?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Yes. Co-branding with custom colorways and logos on all fleet equipment is included. Retail merchandise for your club shop can be customized with your club identity.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>Does afarer support club events and races?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Yes. Event kits include race buoys, timing equipment, and branded tents for club events. We also provide marketing materials and staff training support.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>What is the minimum fleet size for clubs?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Club fleet programs are available for any size. Typical clubs start with 10-20 boards and expand seasonally. Bulk pricing improves with larger fleet commitments.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+  <CallToAction
+    title="Take your paddle club to the next level"
+    subtitle="Book a consultation to discuss your club's fleet, retail, and event needs."
+    actions={[
+      { text: 'Start the Conversation', href: '/contact?solution=paddle-clubs', variant: 'primary', type: 'button' },
+      { text: 'Partner Success Stories', href: '/evidence', variant: 'secondary', type: 'button' },
+    ]}
+  />
+  <JsonLd
+    type="Service"
+    service={{
+      name: 'Paddle Club SUP Solutions',
+      description:
+        'End-to-end paddle club solutions: fleet supply, branded retail merchandise, event support, and membership program integration.',
+      serviceType: 'Paddle Club Solutions',
+      areaServed: ['Global'],
+      url: '/solutions/paddle-clubs',
+      items: [
+        { name: 'Club Fleet Program', description: 'Bulk pricing on commercial-grade SUPs and accessories' },
+        { name: 'Retail Partnership', description: 'Branded merchandise for club shops with dropship fulfillment' },
+        { name: 'Event Kits', description: 'Race buoys, timing equipment, and branded tents for club events' },
+      ],
+    }}
+  />
+<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Solutions', item: 'https://afarer.com/solutions/' }, { position: 3, name: 'Paddle Clubs', item: 'https://afarer.com/solutions/paddle-clubs/' }] }} />
+<JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What does the paddle club partnership include?", acceptedAnswer: { "@type": "Answer", text: "Our club partnership program includes fleet supply at bulk pricing, branded retail merchandise with dropship fulfillment, event kits, member perks with exclusive discounts, and staff training certification." } }, { "@type": "Question", name: "Can paddle clubs get custom-branded equipment?", acceptedAnswer: { "@type": "Answer", text: "Yes. Co-branding with custom colorways and logos on all fleet equipment is included. Retail merchandise for your club shop can be customized with your club identity." } }, { "@type": "Question", name: "What is the minimum fleet size for clubs?", acceptedAnswer: { "@type": "Answer", text: "Club fleet programs are available for any size. Typical clubs start with 10-20 boards and expand seasonally. Bulk pricing improves with larger fleet commitments." } }, { "@type": "Question", name: "Does afarer support club events and races?", acceptedAnswer: { "@type": "Answer", text: "Yes. Event kits include race buoys, timing equipment, and branded tents for club events. We also provide marketing materials and staff training support." } }] }} />
+</Layout>

@@ -1,0 +1,75 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `SUP Knowledge — Inflatable SUP Guides — ${SITE.name}`,
+  description: 'Technical guides on inflatable SUPs — engineering, materials, operation, and maintenance.',
+};
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Learn' }, { name: 'SUP Knowledge' }];
+
+const topics = [
+  {
+    title: 'SUP Board Types',
+    desc: 'All-around, touring, yoga, and fishing SUPs — learn the differences and choose the right one.',
+    href: '/v2/sup-types',
+  },
+  {
+    title: 'PVC vs Drop-Stitch',
+    desc: 'Understanding materials and construction methods for inflatable SUP boards.',
+    href: '/learn/materials',
+  },
+  {
+    title: 'SUP Technology',
+    desc: 'Construction methods — RF welding, drop-stitch core lamination, and seam types explained.',
+    href: '/v2/inflatable-technology',
+  },
+  {
+    title: 'SUP Maintenance',
+    desc: 'Cleaning, storage, valve care, and winterization for inflatable SUPs.',
+    href: '/v2/inflatable-sup-maintenance',
+  },
+  {
+    title: 'SUP Safety',
+    desc: 'Essential safety equipment, PFD requirements, and paddling guidelines.',
+    href: '/learn/water-safety',
+  },
+];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <JsonLd
+    type="Article"
+    article={{
+      headline: metadata.title,
+      description: metadata.description,
+      datePublished: '2024-12-01',
+      dateModified: '2025-06-10',
+    }}
+  />
+  <section class="px-6 py-16 max-w-5xl mx-auto text-center">
+    <p class="text-sm font-semibold text-primary uppercase tracking-wider">SUP Knowledge</p>
+    <h1 class="mt-3 text-4xl md:text-5xl font-bold">Inflatable SUP Guides</h1>
+    <p class="mt-3 text-lg text-muted max-w-2xl mx-auto">
+      Technical guides covering engineering, materials, operation, and maintenance of inflatable SUP boards.
+    </p>
+  </section>
+
+  <section class="px-6 pb-20 max-w-6xl mx-auto">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {
+        topics.map((t) => (
+          <a
+            href={t.href}
+            class="group block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+          >
+            <h3 class="font-semibold text-gray-900 group-hover:text-sky-600 transition-colors">{t.title}</h3>
+            <p class="mt-2 text-sm text-gray-500 leading-relaxed">{t.desc}</p>
+            <span class="mt-4 inline-flex text-sm font-medium text-sky-600 group-hover:text-sky-700">Read guide →</span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

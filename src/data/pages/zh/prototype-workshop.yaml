@@ -1,0 +1,95 @@
+meta:
+  title: '原型車間 — 全尺寸 RIB 原型製作與海上測試 | {SITE}'
+  description: '從 CAD 到可出海船隻只需 8–12 週。我們的原型車間建造、安裝並測試客製 RIB 及充氣船。立即啟動您的原型專案。'
+back_text: '返回研發中心'
+home_label: '首頁'
+
+hero:
+  tagline: '實驗室 05'
+  title: '原型車間'
+  subtitle: '從 CAD 模型到可出海船隻 — 建造、安裝、驗證'
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp'
+  image_alt: 'Afarer 原型車間船隻製造'
+
+intro: '無論 CAD 模型多麼詳細，都無法揭示船隻在水中的實際表現。這就是為什麼我們的原型車間旨在盡快且準確地將工程數據轉化為實體的可航行船隻。每款新的 {SITE.name} 型號——以及每個重要的客製建造——在投入生產模具之前，都必須通過這個車間。'
+
+content_html: |
+  <h2>設計化為現實的地方</h2>
+  <p>車間配備齊全，可同時進行船體、氣管及裝配的製造。這種平行工作流程可將原型交期從工程發布縮短至 8–12 週，而產業標準為 16–20 週。當您的應用需要專門解決方案時，我們可以在三個月內從概念推進到水上驗證。</p>
+
+  <h2>車間能力</h2>
+  <table>
+    <thead><tr><th>工作站</th><th>設備</th><th>用途</th></tr></thead>
+    <tbody>
+      <tr><td>船體製造</td><td>滾塑成型爐（HDPE）、TIG 焊接區（鋁合金）、手工鋪層模具（玻璃鋼）</td><td>三種材料類型的全尺寸船體生產</td></tr>
+      <tr><td>氣管組裝</td><td>RF 焊接機、熱風定位台、充氣測試治具</td><td>全尺寸氣管組件製造，含所有隔板、錐體及氣閥</td></tr>
+      <tr><td>裝配與安裝</td><td>引擎吊架（500 kg）、操控台模型架、液壓軟管壓接機、電氣線束板</td><td>完整裝備：引擎、轉向、控制、燃油系統、電子設備、座椅</td></tr>
+      <tr><td>儀器區</td><td>GPS 速度感測器、燃油流量計、加速度計、熱電偶陣列、資料記錄器</td><td>海上測試儀器安裝與校正</td></tr>
+    </tbody>
+  </table>
+
+  <h2>原型旅程 — 逐步說明</h2>
+  <ol>
+    <li><strong>工程交接</strong> — 設計套件（3D 模型、FEA 報告、材料清單、疊層計畫）由車間負責人及專案工程師正式審查。任何製造問題在開始切割前標記並解決。</li>
+    <li><strong>船體生產</strong> — 依據工程規格建造船體。HDPE：從 Moldex3D 模擬載入滾塑成型程式。鋁合金：CNC 切割板材在 TIG 焊接區按核准焊接圖進行焊接。玻璃鋼：按疊層圖逐層進行。</li>
+    <li><strong>氣管製造</strong> — 使用 CNC 模板裁切織物，然後 RF 焊接為全尺寸氣室。每個氣室充氣至測試壓力，放置 24 小時進行初始穩定。</li>
+    <li><strong>組裝與裝配</strong> — 船體與氣管結合。懸掛引擎、連接轉向與控制系統、安裝燃油系統，所有電路佈線並驗證。</li>
+    <li><strong>靜態測試</strong> — 船隻下水前進行：浮力檢查（滿載 + 30% 儲備）、燃油系統壓力測試、轉向系統全鎖循環測試、電氣接地連續性測試。</li>
+    <li><strong>海上測試計畫</strong> — 20 小時水上測試，詳見下文。</li>
+    <li><strong>原型審查</strong> — 與工程、生產及品質團隊舉行正式簽核會議。任何必要的設計變更均記錄並納入量產發布。</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20 小時海上測試計畫 — 測試時程</p>
+    <div class="space-y-2 text-sm">
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
+        <span class="flex-1">港口操縱 — 低速操控、倒車、護舷檢查</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">4 h</span>
+        <span class="flex-1">速度測試 — GPS 驗證最高速度、巡航速度、3 個 RPM 點的燃油消耗</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">迴轉測試 — 20 節下的戰術直徑、前進距離及橫移，左右各一</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">砰擊測試 — 在 0.5–1.0 m 波浪中反覆航行；舵手座椅底部加速度計記錄</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">穩定性測試 — 4 名船員 + 裝備在右舷時的靜態傾側角，偏移載重</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">續航測試 — 以巡航速度連續航行 3 小時；溫度監控（引擎、燃油、電氣）</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
+        <span class="flex-1">最終檢查 — 測試後全面檢查所有系統、鎖緊/檢查所有緊固件、記錄結果</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>特殊應用的客製原型</h2>
+  <p>原型車間是我們解決標準量產船無法應對的問題的地方。近期範例包括：</p>
+  <ul>
+    <li>為搜救組織打造的 7.8 m RIB，需要配備翻覆保護的客製艙室結構、整合式擔架架及船首聲納吊艙——均在我們設施內完成原型製作、安裝及測試。</li>
+    <li>為水文測量承包商打造的 5.2 m 充氣船，配備降低尾板、可拆卸儀器桅杆及設計用於最小化流體干擾的穿殼式換能器底座。</li>
+    <li>為超級遊艇打造的電動驅動 4.5 m 小艇，在客戶承諾訂購四艘船隊之前，原型用於驗證續航里程、充電基礎設施及噪音水準。</li>
+  </ul>
+
+  <h2>我們的原型團隊</h2>
+  <p>車間配備八名多技能海事技師，每人均接受至少三個核心領域（船體、氣管、裝配）中兩個領域的交叉培訓。團隊負責人是一位擁有 16 年經驗的資深造船師，涵蓋從一次性客製到量產系列的豐富經歷。每個原型都指派一名專屬專案工程師，在整個建造及測試過程中作為客戶的單一聯絡窗口。</p>
+
+  <h2>客戶參與</h2>
+  <p>我們積極鼓勵客戶在原型建造期間參與關鍵里程碑——特別是初期安裝審查及海上測試。您在這些階段的營運回饋對於在船隻投入量產前進行微調具有無可估量的價值。我們不是在真空中建造；我們與您合作建造。</p>
+  <p>20 小時海上測試也是您的團隊熟悉船隻操控、系統佈局及維護要求的機會，確保量產船隻交付時能夠順利過渡到營運狀態。</p>
+
+cta:
+  title: '啟動您的原型專案'
+  subtitle: '告訴我們您需要的船隻，我們將提出原型開發計畫。'
+  button_text: '聯絡我們的原型團隊'
+  button_link: /contact

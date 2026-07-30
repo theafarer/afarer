@@ -1,0 +1,642 @@
+---
+import AdminLayout from '~/layouts/AdminLayout.astro';
+import yaml from 'js-yaml';
+
+export const prerender = true;
+
+const LANGUAGES: Record<string, string> = {
+  en: 'English',
+  zh: '中文',
+  fr: 'Français',
+  de: 'Deutsch',
+  es: 'Español',
+  pt: 'Português',
+  ar: 'العربية',
+  it: 'Italiano',
+  ja: '日本語',
+  ko: '한국어',
+  ru: 'Русский',
+  pl: 'Polski',
+  nl: 'Nederlands',
+  sv: 'Svenska',
+  no: 'Norsk',
+  el: 'Ελληνικά',
+  tr: 'Türkçe',
+  fi: 'Suomi',
+  cs: 'Čeština',
+  da: 'Dansk',
+  ro: 'Română',
+  th: 'ไทย',
+};
+
+const LANG_CODES = Object.keys(LANGUAGES);
+const NON_EN_CODES = LANG_CODES.filter((l) => l !== 'en');
+
+/* ------------------------------------------------------------------ */
+/* 1. Load all page YAML files (English + localized)                  */
+/* ------------------------------------------------------------------ */
+const pageRawModules: Record<string, string> = import.meta.glob('/src/data/pages/**/*.yaml', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>;
+
+/* ------------------------------------------------------------------ */
+/* 2. Load all navigation YAML files                                  */
+/* ------------------------------------------------------------------ */
+const navRawModules: Record<string, string> = import.meta.glob('/src/data/site/navigation*.yaml', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>;
+
+/* ------------------------------------------------------------------ */
+/* Parse & Organise Page Files                                        */
+/* ------------------------------------------------------------------ */
+const englishPages: string[] = [];
+const langPages: Record<string, string[]> = {};
+for (const code of LANG_CODES) langPages[code] = [];
+
+for (const filePath of Object.keys(pageRawModules)) {
+  const rel = filePath.replace(/\\/g, '/').replace(/^\/src\/data\/pages\//, '');
+  if (rel.includes('/')) {
+    const [lang, ...rest] = rel.split('/');
+    const pageName = rest.join('/').replace(/\.yaml$/, '');
+    if (LANG_CODES.includes(lang) && pageName) {
+      langPages[lang].push(pageName);
+    }
+  } else {
+    const name = rel.replace(/\.yaml$/, '');
+    if (name) englishPages.push(name);
+  }
+}
+
+englishPages.sort();
+for (const code of LANG_CODES) langPages[code].sort();
+
+/* Page Coverage Analysis */
+interface PageCoverage {
+  page: string;
+  total: number;
+  langs: Record<string, boolean>;
+}
+
+const pageCoverage: PageCoverage[] = englishPages.map((page) => {
+  const langs: Record<string, boolean> = {};
+  let total = 0;
+  for (const code of LANG_CODES) {
+    const has = langPages[code].includes(page);
+    langs[code] = has;
+    if (has) total++;
+  }
+  return { page, total, langs };
+});
+
+/* Compute per-language stats */
+interface LangStat {
+  code: string;
+  name: string;
+  pages: number;
+  missing: number;
+  coverage: number;
+}
+
+const langStats: LangStat[] = LANG_CODES.map((code) => {
+  const present = englishPages.filter((p) => langPages[code].includes(p)).length;
+  const missing = englishPages.length - present;
+  return {
+    code,
+    name: LANGUAGES[code],
+    pages: langPages[code].length,
+    missing,
+    coverage: englishPages.length > 0 ? Math.round((present / englishPages.length) * 100) : 0,
+  };
+});
+
+/* Pages missing from at least one non-English language */
+const pagesWithGaps = pageCoverage.filter((p) => NON_EN_CODES.some((c) => !p.langs[c]));
+
+/* ------------------------------------------------------------------ */
+/* Navigation Structure Analysis                                       */
+/* ------------------------------------------------------------------ */
+
+function extractNavUrls(doc: any): string[] {
+  const urls: string[] = [];
+  if (!doc) return urls;
+  const walk = (links: any[]) => {
+    if (!links) return;
+    for (const item of links) {
+      if (item.href && item.href.startsWith('/')) urls.push(item.href);
+      if (item.links) walk(item.links);
+      if (item.link) walk(item.link);
+    }
+  };
+  walk(doc.header?.links);
+  walk(doc.footer?.links?.flatMap((f: any) => f.links || []));
+  return [...new Set(urls)].sort();
+}
+
+function extractNavTexts(doc: any): string[] {
+  const texts: string[] = [];
+  if (!doc) return texts;
+  const walk = (links: any[]) => {
+    if (!links) return;
+    for (const item of links) {
+      if (item.text) texts.push(item.text);
+      if (item.title) texts.push(item.title);
+      if (item.links) walk(item.links);
+    }
+  };
+  walk(doc.header?.links);
+  walk(doc.footer?.links?.flatMap((f: any) => f.links || []));
+  return texts;
+}
+
+interface NavHealth {
+  lang: string;
+  name: string;
+  parsed: boolean;
+  urlDiff: string[];
+  textSample: string[];
+  error?: string;
+}
+
+let englishNavUrls: string[] = [];
+const navHealth: NavHealth[] = [];
+
+for (const code of LANG_CODES) {
+  const key = code === 'en' ? '/src/data/site/navigation.yaml' : `/src/data/site/navigation.${code}.yaml`;
+  const raw = navRawModules[key];
+  const entry: NavHealth = {
+    lang: code,
+    name: LANGUAGES[code],
+    parsed: !!raw,
+    urlDiff: [],
+    textSample: [],
+  };
+  if (raw) {
+    try {
+      const doc = yaml.load(raw) as any;
+      const urls = extractNavUrls(doc);
+      if (code === 'en') englishNavUrls = urls;
+      entry.urlDiff = extractNavUrls(doc).filter((u) => !englishNavUrls.includes(u));
+      entry.textSample = extractNavTexts(doc).slice(0, 10);
+    } catch (e) {
+      entry.parsed = false;
+      entry.error = String(e);
+    }
+  } else {
+    entry.error = 'File not found';
+  }
+  navHealth.push(entry);
+}
+
+/* English Leakage Detection (non-English nav files containing ASCII English phrases) */
+interface EnglishLeak {
+  lang: string;
+  name: string;
+  matches: string[];
+}
+
+function isAsciiEnglish(s: string): boolean {
+  return /^[A-Za-z0-9\s\-'.,!?&()]+$/.test(s);
+}
+
+function detectEnglishLeaks(texts: string[]): string[] {
+  const commonEnglishWords = [
+    'the',
+    'and',
+    'for',
+    'with',
+    'from',
+    'your',
+    'our',
+    'about',
+    'contact',
+    'home',
+    'products',
+    'resources',
+    'solutions',
+    'technology',
+    'services',
+    'support',
+    'news',
+    'blog',
+    'faq',
+    'search',
+    'sign',
+    'login',
+    'shop',
+    'store',
+    'cart',
+    'checkout',
+    'get',
+    'quote',
+    'price',
+    'pricing',
+    'download',
+    'catalog',
+    'guide',
+    'learn',
+    'privacy',
+    'terms',
+    'warranty',
+    'safety',
+    'quality',
+    'trust',
+    'company',
+  ];
+  const leaks: string[] = [];
+  for (const text of texts) {
+    if (!text) continue;
+    if (isAsciiEnglish(text) && text.length > 2) {
+      const lower = text.toLowerCase();
+      if (commonEnglishWords.some((w) => lower.includes(w))) {
+        leaks.push(text);
+      }
+    }
+  }
+  return leaks;
+}
+
+const englishLeaks: EnglishLeak[] = [];
+for (const code of NON_EN_CODES) {
+  const key = `/src/data/site/navigation.${code}.yaml`;
+  const raw = navRawModules[key];
+  if (raw) {
+    try {
+      const doc = yaml.load(raw) as any;
+      const texts = extractNavTexts(doc);
+      const leaks = detectEnglishLeaks(texts);
+      if (leaks.length > 0) {
+        englishLeaks.push({ lang: code, name: LANGUAGES[code], matches: [...new Set(leaks)] });
+      }
+    } catch {
+      // skip
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Overall health score                                                */
+/* ------------------------------------------------------------------ */
+const totalPages = englishPages.length;
+const fullyTranslatedPages = pageCoverage.filter((p) => NON_EN_CODES.every((c) => p.langs[c])).length;
+const overallCoverage = totalPages > 0 ? Math.round((fullyTranslatedPages / totalPages) * 100) : 0;
+const avgLangCoverage =
+  langStats.length > 0
+    ? Math.round(langStats.filter((s) => s.code !== 'en').reduce((a, s) => a + s.coverage, 0) / (langStats.length - 1))
+    : 0;
+const navIssues = navHealth.filter((n) => n.lang !== 'en' && !n.parsed).length;
+const leakCount = englishLeaks.length;
+
+/* eslint-disable @typescript-eslint/no-unused-vars */
+const _hc = (score: number): string => {
+  if (score >= 95) return 'text-green-600 dark:text-green-400';
+  if (score >= 80) return 'text-yellow-600 dark:text-yellow-400';
+  return 'text-red-600 dark:text-red-400';
+};
+const _hb = (score: number): string => {
+  if (score >= 95) return 'bg-green-50 dark:bg-green-950/30 border-green-200 dark:border-green-900';
+  if (score >= 80) return 'bg-yellow-50 dark:bg-yellow-950/30 border-yellow-200 dark:border-yellow-900';
+  return 'bg-red-50 dark:bg-red-950/30 border-red-200 dark:border-red-900';
+};
+/* eslint-enable @typescript-eslint/no-unused-vars */
+---
+
+<AdminLayout title="Localization Health" active="l10n" username="">
+  <div class="mb-6">
+    <a href="/keystatic" class="text-sm text-gray-500 hover:underline">← Back to Dashboard</a>
+    <h1 class="mt-2 text-2xl font-semibold">Localization Health Monitor</h1>
+    <p class="mt-1 text-sm text-gray-500">
+      <span data-total-languages>{Object.keys(LANGUAGES).length}</span> languages ·
+      <span data-total-pages>{totalPages}</span> English pages · Scanned <span data-scanned-files
+        >{Object.keys(pageRawModules).length}</span
+      > files
+    </p>
+  </div>
+
+  <!-- Summary Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <div class="rounded-xl border {_hb(overallCoverage)} p-4">
+      <div class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">
+        Fully Translated Pages
+      </div>
+      <div class="mt-1 text-2xl font-bold {_hc(overallCoverage)}">{fullyTranslatedPages}/{totalPages}</div>
+      <div class="mt-0.5 text-sm text-gray-500">{overallCoverage}% complete</div>
+    </div>
+    <div class="rounded-xl border {_hb(avgLangCoverage)} p-4">
+      <div class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">
+        Avg Language Coverage
+      </div>
+      <div class="mt-1 text-2xl font-bold {_hc(avgLangCoverage)}">{avgLangCoverage}%</div>
+      <div class="mt-0.5 text-sm text-gray-500">across {LANG_CODES.length - 1} non-English languages</div>
+    </div>
+    <div
+      class="rounded-xl border {navIssues > 0 ? 'border-yellow-200 dark:border-yellow-900 bg-yellow-50 dark:bg-yellow-950/30' : 'border-green-200 dark:border-green-900 bg-green-50 dark:bg-green-950/30'} p-4"
+    >
+      <div class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">Nav Files Missing</div>
+      <div
+        class="mt-1 text-2xl font-bold {navIssues > 0 ? 'text-yellow-600 dark:text-yellow-400' : 'text-green-600 dark:text-green-400'}"
+      >
+        {navIssues}
+      </div>
+      <div class="mt-0.5 text-sm text-gray-500">of {LANG_CODES.length} languages</div>
+    </div>
+    <div
+      class="rounded-xl border {leakCount > 0 ? 'border-yellow-200 dark:border-yellow-900 bg-yellow-50 dark:bg-yellow-950/30' : 'border-green-200 dark:border-green-900 bg-green-50 dark:bg-green-950/30'} p-4"
+    >
+      <div class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">English Leakage</div>
+      <div
+        class="mt-1 text-2xl font-bold {leakCount > 0 ? 'text-yellow-600 dark:text-yellow-400' : 'text-green-600 dark:text-green-400'}"
+      >
+        {leakCount}
+      </div>
+      <div class="mt-0.5 text-sm text-gray-500">languages with untranslated nav text</div>
+    </div>
+  </div>
+
+  <!-- Page Coverage by Language -->
+  <section class="mb-8">
+    <details open>
+      <summary class="cursor-pointer text-lg font-semibold mb-3">Page Coverage by Language</summary>
+      <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-800">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+              <th class="text-left px-4 py-2.5 font-medium text-gray-600 dark:text-gray-400">Language</th>
+              <th class="text-right px-4 py-2.5 font-medium text-gray-600 dark:text-gray-400">Pages</th>
+              <th class="text-right px-4 py-2.5 font-medium text-gray-600 dark:text-gray-400">Missing</th>
+              <th class="text-right px-4 py-2.5 font-medium text-gray-600 dark:text-gray-400">Coverage</th>
+              <th class="px-4 py-2.5 font-medium text-gray-600 dark:text-gray-400">Bar</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              langStats.map((s) => (
+                <tr class="border-b border-gray-100 dark:border-gray-800 odd:bg-white even:bg-gray-50 dark:odd:bg-gray-950 dark:even:bg-gray-900">
+                  <td class="px-4 py-2">
+                    <span class="font-mono text-xs text-gray-400">{s.code}</span>
+                    <span class="ml-2">{s.name}</span>
+                    {s.code === 'en' && <span class="ml-2 text-xs text-blue-600 dark:text-blue-400">(source)</span>}
+                  </td>
+                  <td class="px-4 py-2 text-right font-mono">{s.pages}</td>
+                  <td class="px-4 py-2 text-right font-mono {s.missing > 0 ? 'text-red-600 dark:text-red-400' : 'text-green-600 dark:text-green-400'}">
+                    {s.missing}
+                  </td>
+                  <td class="px-4 py-2 text-right font-mono {_hc(s.coverage)}">{s.coverage}%</td>
+                  <td class="px-4 py-2">
+                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                      <div
+                        class="h-2 rounded-full {s.coverage >= 95 ? 'bg-green-500' : s.coverage >= 80 ? 'bg-yellow-500' : 'bg-red-500'}"
+                        style="width: {s.coverage}%"
+                      />
+                    </div>
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </section>
+
+  <!-- Pages with Translation Gaps -->
+  <section class="mb-8">
+    <details open>
+      <summary class="cursor-pointer text-lg font-semibold mb-3">
+        Pages with Translation Gaps
+        {
+          pagesWithGaps.length > 0 && (
+            <span class="ml-2 text-sm font-normal text-red-500">({pagesWithGaps.length} pages incomplete)</span>
+          )
+        }
+      </summary>
+      {
+        pagesWithGaps.length === 0 && (
+          <div class="rounded-xl border border-green-200 dark:border-green-900 bg-green-50 dark:bg-green-950/30 p-6 text-center text-sm text-green-700 dark:text-green-300">
+            All English pages are translated across all {LANG_CODES.length} languages.
+          </div>
+        )
+      }
+      {
+        pagesWithGaps.length > 0 && (
+          <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-800">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+                  <th class="text-left px-4 py-2.5 font-medium text-gray-600 dark:text-gray-400">Page</th>
+                  <th class="text-right px-4 py-2.5 font-medium text-gray-600 dark:text-gray-400">Languages</th>
+                  <th class="px-4 py-2.5 font-medium text-gray-600 dark:text-gray-400">Missing In</th>
+                </tr>
+              </thead>
+              <tbody>
+                {pagesWithGaps.map((p) => {
+                  const missingLangs = NON_EN_CODES.filter((c) => !p.langs[c]);
+                  return (
+                    <tr class="border-b border-gray-100 dark:border-gray-800 odd:bg-white even:bg-gray-50 dark:odd:bg-gray-950 dark:even:bg-gray-900">
+                      <td class="px-4 py-2 font-mono text-xs">{p.page}</td>
+                      <td class="px-4 py-2 text-right font-mono">
+                        {p.total}/{LANG_CODES.length}
+                      </td>
+                      <td class="px-4 py-2">
+                        <div class="flex flex-wrap gap-1">
+                          {missingLangs.map((c) => (
+                            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-300">
+                              {c}
+                            </span>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )
+      }
+    </details>
+  </section>
+
+  <!-- Navigation Health -->
+  <section class="mb-8">
+    <details open>
+      <summary class="cursor-pointer text-lg font-semibold mb-3">Navigation Structure Health</summary>
+      <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-800">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+              <th class="text-left px-4 py-2.5 font-medium text-gray-600 dark:text-gray-400">Language</th>
+              <th class="text-center px-4 py-2.5 font-medium text-gray-600 dark:text-gray-400">Status</th>
+              <th class="text-right px-4 py-2.5 font-medium text-gray-600 dark:text-gray-400">URLs</th>
+              <th class="px-4 py-2.5 font-medium text-gray-600 dark:text-gray-400">Extra URLs (not in English)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              navHealth.map((n) => (
+                <tr class="border-b border-gray-100 dark:border-gray-800 odd:bg-white even:bg-gray-50 dark:odd:bg-gray-950 dark:even:bg-gray-900">
+                  <td class="px-4 py-2">
+                    <span class="font-mono text-xs text-gray-400">{n.lang}</span>
+                    <span class="ml-2">{n.name}</span>
+                  </td>
+                  <td class="px-4 py-2 text-center">
+                    {n.error ? (
+                      <span class="text-red-500 text-xs" title={n.error}>
+                        ❌
+                      </span>
+                    ) : n.lang !== 'en' && n.urlDiff.length > 0 ? (
+                      <span class="text-yellow-500" title="Has extra/missing URLs">
+                        ⚠️
+                      </span>
+                    ) : (
+                      <span class="text-green-500">✅</span>
+                    )}
+                  </td>
+                  <td class="px-4 py-2 text-right font-mono text-xs">
+                    {n.parsed
+                      ? extractNavUrls(
+                          yaml.load(
+                            navRawModules[
+                              n.lang === 'en'
+                                ? '/src/data/site/navigation.yaml'
+                                : `/src/data/site/navigation.${n.lang}.yaml`
+                            ]
+                          ) as any
+                        ).length
+                      : '-'}
+                  </td>
+                  <td class="px-4 py-2">
+                    {n.urlDiff.length > 0 ? (
+                      <div class="flex flex-wrap gap-1">
+                        {n.urlDiff.map((url) => (
+                          <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono bg-yellow-100 dark:bg-yellow-950 text-yellow-700 dark:text-yellow-300">
+                            {url}
+                          </span>
+                        ))}
+                      </div>
+                    ) : (
+                      <span class="text-gray-400 text-xs">{n.lang === 'en' ? '(baseline)' : 'No differences'}</span>
+                    )}
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </section>
+
+  <!-- English Leakage -->
+  <section class="mb-8">
+    <details>
+      <summary class="cursor-pointer text-lg font-semibold mb-3">
+        English Leakage in Nav Files
+        {
+          englishLeaks.length > 0 && (
+            <span class="ml-2 text-sm font-normal text-yellow-500">({englishLeaks.length} languages affected)</span>
+          )
+        }
+      </summary>
+      {
+        englishLeaks.length === 0 && (
+          <div class="rounded-xl border border-green-200 dark:border-green-900 bg-green-50 dark:bg-green-950/30 p-6 text-center text-sm text-green-700 dark:text-green-300">
+            No English text detected in non-English navigation files.
+          </div>
+        )
+      }
+      {
+        englishLeaks.length > 0 && (
+          <div class="space-y-3">
+            {englishLeaks.map((leak) => (
+              <div class="rounded-xl border border-yellow-200 dark:border-yellow-900 bg-yellow-50 dark:bg-yellow-950/30 p-4">
+                <div class="font-medium text-sm mb-2">
+                  <span class="font-mono text-xs text-gray-500">{leak.lang}</span>
+                  <span class="ml-2">{leak.name}</span>
+                </div>
+                <ul class="space-y-1">
+                  {leak.matches.map((m) => (
+                    <li class="text-sm font-mono bg-white dark:bg-gray-900 rounded px-2 py-1 border border-yellow-100 dark:border-yellow-900">
+                      {m}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )
+      }
+    </details>
+  </section>
+
+  <!-- All Pages Matrix (collapsed) -->
+  <section class="mb-8">
+    <details>
+      <summary class="cursor-pointer text-lg font-semibold mb-3"
+        >Full Page Coverage Matrix ({totalPages} pages × {LANG_CODES.length} languages)</summary
+      >
+      <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-800 max-h-96 overflow-y-auto">
+        <table class="w-full text-xs">
+          <thead class="sticky top-0 bg-gray-50 dark:bg-gray-900">
+            <tr class="border-b border-gray-200 dark:border-gray-800">
+              <th class="text-left px-3 py-2 font-medium text-gray-600 dark:text-gray-400">Page</th>
+              {
+                LANG_CODES.map((code) => (
+                  <th
+                    class="px-2 py-2 text-center font-medium text-gray-600 dark:text-gray-400"
+                    title={LANGUAGES[code]}
+                  >
+                    {code}
+                  </th>
+                ))
+              }
+            </tr>
+          </thead>
+          <tbody>
+            {
+              pageCoverage.map((p) => (
+                <tr class="border-b border-gray-100 dark:border-gray-800 odd:bg-white even:bg-gray-50 dark:odd:bg-gray-950 dark:even:bg-gray-900">
+                  <td class="px-3 py-1.5 font-mono whitespace-nowrap">{p.page}</td>
+                  {LANG_CODES.map((code) => (
+                    <td class="px-2 py-1.5 text-center">
+                      {p.langs[code] ? <span class="text-green-500">✓</span> : <span class="text-red-400">✗</span>}
+                    </td>
+                  ))}
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </section>
+
+  <div class="mt-8 pt-4 border-t border-gray-200 dark:border-gray-800 text-xs text-gray-500">
+    <p>Last scanned at build time. Rebuild the site to refresh health data.</p>
+    <p>
+      Source: <code class="font-mono">src/data/pages/**/*.yaml</code> + <code class="font-mono"
+        >src/data/site/navigation*.yaml</code
+      > ·
+      <span data-scan-time>{new Date().toISOString()}</span>
+    </p>
+  </div>
+</AdminLayout>
+
+<style>
+  table {
+    border-collapse: collapse;
+  }
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  details summary::before {
+    content: '▶ ';
+    font-size: 0.7em;
+  }
+  details[open] summary::before {
+    content: '▼ ';
+  }
+</style>

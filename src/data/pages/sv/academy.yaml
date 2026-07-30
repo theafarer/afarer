@@ -1,0 +1,72 @@
+hero:
+  tagline: afarer Academy
+  title: Kunskapscenter
+  subtitle: Guider och handledningar för alla färdighetsnivåer —från SUP-grunder till avancerade räddningstekniker
+
+categories:
+  - level: Nybörjare
+    color: from-green-500 to-emerald-600
+    badge: bg-green-100 text-green-700
+    guides:
+      - title: SUP-grunder
+        desc: Lär dig grunderna i paddleboarding —hållning, paddelteknik och balans.
+        slug: sup-basics
+      - title: Paddeltekniker
+        desc: Framåtpaddling, bakåtpaddling, dragpaddling och lågt stöd —bemästra grundläggande paddelrörelser.
+        slug: paddle-techniques
+      - title: Säkerhet först
+        desc: Grundläggande säkerhetspraxis inklusive väderkontroll, användning av PFD, koppelregler och självräddning.
+        slug: safety-first
+  - level: Medelnivå
+    color: from-blue-500 to-indigo-600
+    badge: bg-blue-100 text-blue-700
+    guides:
+      - title: Grunderna i kajakturism
+        desc: Planering av flertimmars paddling —navigation, vätskebalans, tempo och tolkning av vindprognoser.
+        slug: touring-essentials
+      - title: Avläsa väder
+        desc: Tolka sjöprognoser, känna igen molnmönster och förstå vindens påverkan på vattnet.
+        slug: weather-reading
+      - title: Navigationsgrunder
+        desc: Kartläsning, användning av kompass, GPS-punkter och ruttplanering för kustnära paddling.
+        slug: navigation-basics
+      - title: Tidvattensmedvetenhet
+        desc: Förstå tidvattencykler, strömmar och deras påverkan på starttid och rutt.
+        slug: tidal-awareness
+  - level: Avancerad
+    color: from-purple-500 to-violet-600
+    badge: bg-purple-100 text-purple-700
+    guides:
+      - title: Planering av flerdagsturer
+        desc: Expeditionens logistik —utrustningsval, måltidsplanering, säkerhetsprotokoll och nödkontakter.
+        slug: multi-day-trip-planning
+      - title: Räddningstekniker
+        desc: Självräddning, T-räddning, eskimåsväng för kajaker och bogsering på öppet vatten.
+        slug: rescue-techniques
+      - title: Nattpaddling
+        desc: Navigation i mörker —belysningskrav, ruttminne, gruppkommunikation och faromedvetenhet.
+        slug: night-paddling
+  - level: Underhåll
+    color: from-amber-500 to-orange-600
+    badge: bg-amber-100 text-amber-700
+    guides:
+      - title: Rengöring och skötsel
+        desc: Sköljning med sötvatten, UV-skydd, mögelprevention och korrekta torkningstekniker efter varje pass.
+        slug: cleaning-and-care
+      - title: Förvaring
+        desc: Bästa praxis för förvaring av uppblåsbara brädor och båtar —tömning, hopvikning, temperaturkontroll och hållbarhet.
+        slug: storage-guide
+      - title: Reparationsgrunder
+        desc: Lagning av små punkteringar, läckande sömmar och ventilproblem med PVC-reparationssatser och lapptekniker.
+        slug: repair-basics
+      - title: Ventilunderhåll
+        desc: Identifiering av ventiltyper (Halkey-Roberts, Boston, Leafield), rengöring av skräp och byte av defekta spindlar.
+        slug: valve-maintenance
+
+read_guide: Läs guiden →
+
+cta:
+  title: Vet du inte var du ska börja?
+  desc: Gör vår färdighetsbedömning för att hitta rätt guider och utrustning för din nivå.
+  label: Kontakta oss →
+  link: /contact

@@ -1,0 +1,98 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `How Inflatable SUPs Are Made — Manufacturing Process Deep Dive | ${SITE.name}`,
+  description:
+    'Complete walkthrough of inflatable SUP manufacturing: PVC cutting, drop-stitch core assembly, fusion lamination, valve installation, EVA pad application, and quality testing. Factory tour from raw materials to finished board.',
+  ignoreTitleTemplate: true,
+};
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'How Inflatable SUPs Are Made — Manufacturing Process Deep Dive',
+  description: metadata.description,
+  author: { '@type': 'Organization', name: SITE.name },
+  datePublished: '2026-07-27',
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd data={jsonLd} />
+  <article class="max-w-4xl mx-auto px-6 py-16">
+    <nav class="text-sm text-gray-500 mb-8">
+      <a href="/" class="hover:text-sky-600">{SITE.name}</a><span class="mx-2">/</span><a
+        href="/research"
+        class="hover:text-sky-600">Research</a
+      ><span class="mx-2">/</span><span class="text-gray-900">SUP Manufacturing Process</span>
+    </nav>
+    <div class="mb-4">
+      <span
+        class="inline-block text-xs font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full"
+        >Manufacturing</span
+      ><span class="ml-3 text-sm text-gray-400">10 min read</span>
+    </div>
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">How Inflatable SUPs Are Made</h1>
+    <p class="text-xl text-gray-500 mb-12 leading-relaxed">
+      From raw PVC rolls to a finished inflatable SUP board — every step of manufacturing directly affects rigidity,
+      durability, and longevity. This guide covers the full production process.
+    </p>
+    <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600">
+      <h2>1. PVC Material Preparation</h2>
+      <p>
+        Manufacturing begins with military-grade PVC fabric in roll form. Typical inflatable SUP PVC is 0.9mm–1.2mm
+        thick with a denier rating of 1100–1600 for the inner fabric layer. The PVC undergoes UV stabilizer treatment
+        and is color-matched to design specifications. Computer-controlled cutting machines (CNC) precisely cut the top
+        and bottom panels, rail strips, and reinforcement patches from the PVC rolls.
+      </p>
+      <h2>2. Drop-Stitch Core Assembly</h2>
+      <p>
+        The drop-stitch core is the defining technology of inflatable SUPs. Thousands of polyester threads are woven
+        between two layers of PVC film. Each thread is approximately 6" long (matching the final board thickness). The
+        threads stand perpendicular when the board is inflated, connecting the deck and hull. Higher thread density
+        (measured in picks per inch) correlates with better rigidity. Afarer boards use 9-11 picks per inch density.
+      </p>
+      <h2>3. Fusion Lamination</h2>
+      <p>
+        The drop-stitch core is sandwiched between the top and bottom PVC panels. Fusion lamination uses high-frequency
+        welding (also called RF welding or dielectric welding) to bond the panels to the core without adhesive. The
+        fusion process melts the PVC layers together at the molecular level, creating a bond that is stronger than the
+        surrounding material. Temperature, pressure, and welding time are precisely controlled.
+      </p>
+      <h2>4. Rail and Seam Welding</h2>
+      <p>
+        The rail strip (a separate piece of PVC that forms the board's side edge) is welded around the perimeter. This
+        is the most critical step — rail seam failure is the most common cause of inflatable SUP failure. Quality
+        manufacturers use overlapping seam construction rather than butt seams. Afarer uses triple-layer rail welding
+        for impact resistance.
+      </p>
+      <h2>5. Valve Installation</h2>
+      <p>
+        Halkey-Roberts style valves are installed into a reinforced PVC patch on the deck. The valve base is
+        fusion-welded, not glued. A secondary internal reinforcement plate distributes inflation pressure. Each valve
+        undergoes individual air-leak testing at 20 PSI — above the board's rated maximum.
+      </p>
+      <h2>6. EVA Traction Pad Application</h2>
+      <p>
+        EVA foam deck pads are die-cut to shape and applied using industrial-grade contact adhesive or mechanical heat
+        bonding. Multi-color EVA block piecing involves precisely fitting different colored EVA shapes together like a
+        puzzle before bonding to the board. Laser-engraved patterns are created by etching the top EVA layer to reveal a
+        contrasting bottom layer.
+      </p>
+      <h2>7. Accessory Attachment</h2>
+      <p>
+        D-rings for bungee cords, leash attachment points, and carry handles are attached using reinforced PVC patches
+        that are fusion-welded to the hull. The center carry handle webbing is anchored through the EVA pad directly to
+        the core PVC substrate, ensuring lifting loads are borne by the rigid hull structure.
+      </p>
+      <h2>8. Quality Testing</h2>
+      <p>
+        Every board is inflated to 15-18 PSI and held for 24 hours to verify pressure retention. Visual inspection
+        checks seam alignment, EVA pad adhesion, and artwork registration. Random samples undergo destructive testing —
+        peel tests on seams, tensile tests on drop-stitch threads, and UV exposure tests on printed graphics.
+      </p>
+    </div>
+  </article>
+</Layout>

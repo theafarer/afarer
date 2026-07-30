@@ -1,0 +1,624 @@
+---
+import type { InferGetStaticPropsType } from 'astro';
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import merge from 'lodash.merge';
+import ProductLayout from '~/layouts/ProductLayout.astro';
+import ProductCard from '~/components/widgets/ProductCard.astro';
+import ToBlogLink from '~/components/blog/ToBlogLink.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import Tldr from '~/components/common/Tldr.astro';
+import TrustBadges from '~/components/common/TrustBadges.astro';
+
+import { findRelatedProducts, getStaticPathsProduct, CATEGORY_SLUG_TO_URL } from '~/utils/products';
+import { findImage } from '~/utils/images';
+import { SITE } from 'astrowind:config';
+import { getCanonical, getPermalink } from '~/utils/permalinks';
+import type { MetaData } from '~/types';
+import { products as productRecords } from '~/data/products';
+import { guides } from '~/data/guides';
+
+export const prerender = true;
+
+export const getStaticPaths = getStaticPathsProduct;
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { product } = Astro.props as Props;
+const rec = productRecords.find((p) => p.id === product.slug);
+const url = getCanonical(getPermalink(product.permalink, 'product'));
+const image = await findImage(product.image);
+const gallery = await Promise.all(
+  (product.gallery ?? []).map(async (g) => ({
+    raw: await findImage(g.url),
+    alt: g.alt || product.title,
+  }))
+);
+const related = await findRelatedProducts(product, 3);
+const relatedGuides = rec ? guides.filter((g) => g.relatedProducts.includes(rec.id)).slice(0, 3) : [];
+
+const defaultTitle = product.categoryLabel
+  ? `${product.title} — ${product.categoryLabel} | ${SITE.name}`
+  : `${product.title} | ${SITE.name}`;
+const defaultDesc =
+  (product.summary ?? product.description)
+    ? `${product.summary ?? product.description} — Contact ${SITE.name} for pricing, specs, and ordering.`
+    : `Explore the ${product.title} from ${SITE.name}. Contact us for pricing, technical specs, and ordering information.`;
+
+const metadata = merge(
+  {
+    title: defaultTitle,
+    description: defaultDesc,
+    canonical: url,
+    robots: { index: !product.draft, follow: true },
+    openGraph: {
+      type: 'website',
+      ...(image ? { images: [{ url: image, width: 1200, height: 630 }] } : {}),
+    },
+  },
+  product.metadata ? { ...product.metadata, canonical: product.metadata.canonical || url } : {}
+) as MetaData;
+
+const productCrumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Products', href: '/products' },
+  ...(product.categoryLabel
+    ? [{ name: product.categoryLabel, href: `/${CATEGORY_SLUG_TO_URL[product.category || ''] || 'products'}` }]
+    : []),
+  { name: product.title },
+];
+
+const specRows = product.specs ?? [];
+---
+
+<ProductLayout metadata={metadata} breadcrumbs={productCrumbs}>
+  <JsonLd
+    type="Product"
+    product={{
+      name: product.title,
+      description: product.summary ?? product.description ?? '',
+      sku: product.sku,
+      image: image ? String(image) : undefined,
+      url: String(url || ''),
+      category: product.categoryLabel,
+      brandName: SITE.name,
+      manufacturerName: SITE.name,
+      countryOfOrigin: 'China',
+      material: rec?.ai_specs?.material || rec?.ai_specs?.hull || rec?.ai_specs?.tubes || undefined,
+      ...(rec?.ai_specs?.weight ? { weight: rec.ai_specs.weight } : {}),
+      ...(rec?.ai_specs?.length ? { depth: rec.ai_specs.length } : {}),
+      ...(rec?.ai_specs?.width ? { width: rec.ai_specs.width } : {}),
+      ...(rec?.ai_specs?.thickness ? { height: rec.ai_specs.thickness } : {}),
+      ...(product.price ? { inStock: product.inStock } : {}),
+    }}
+  />
+  <JsonLd type="BreadcrumbList" breadcrumbs={productCrumbs.map((c) => ({ name: c.name, href: c.href }))} />
+
+  <!-- Product Hero: Apple-style Full-width -->
+  <section class="bg-white dark:bg-[#071e2d]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 md:pt-16 pb-12 md:pb-20">
+      <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+        <!-- Left: Large Product Image -->
+        <div class="order-last md:order-first">
+          <div class="relative aspect-square bg-[#F8FAFB] dark:bg-[#0a2a3d] rounded-3xl overflow-hidden shadow-sm">
+            {
+              gallery.length > 0 && gallery[0].raw ? (
+                typeof gallery[0].raw === 'string' ? (
+                  <img
+                    id="gallery-main"
+                    src={gallery[0].raw}
+                    alt={gallery[0].alt || product.title}
+                    class="w-full h-full object-contain p-8 md:p-12"
+                    loading="eager"
+                    fetchpriority="high"
+                  />
+                ) : (
+                  <Image
+                    id="gallery-main"
+                    src={gallery[0].raw as ImageMetadata}
+                    alt={gallery[0].alt || product.title}
+                    class="w-full h-full object-contain p-8 md:p-12"
+                    widths={[600, 900]}
+                    width={600}
+                    height={600}
+                    format="webp"
+                    loading="eager"
+                    fetchpriority="high"
+                  />
+                )
+              ) : image ? (
+                typeof image === 'string' ? (
+                  <img
+                    id="gallery-main"
+                    src={image}
+                    alt={product.title}
+                    class="w-full h-full object-contain p-8 md:p-12"
+                    loading="eager"
+                    fetchpriority="high"
+                  />
+                ) : (
+                  <Image
+                    id="gallery-main"
+                    src={image as ImageMetadata}
+                    alt={product.title}
+                    class="w-full h-full object-contain p-8 md:p-12"
+                    widths={[600, 900]}
+                    width={600}
+                    height={600}
+                    format="webp"
+                    loading="eager"
+                    fetchpriority="high"
+                  />
+                )
+              ) : (
+                <div class="w-full h-full flex items-center justify-center text-gray-300 dark:text-slate-600 text-sm">
+                  No image available
+                </div>
+              )
+            }
+          </div>
+          {
+            gallery.length > 1 && (
+              <div class="flex gap-3 mt-4 overflow-x-auto pb-2">
+                {gallery.map((g, i) => (
+                  <button
+                    data-gallery-thumb={typeof g.raw === 'string' ? g.raw : String(g.raw?.src || '')}
+                    data-gallery-alt={g.alt || `Image ${i + 1}`}
+                    class={`flex-shrink-0 w-16 h-16 rounded-xl overflow-hidden border-2 transition-colors bg-gray-100 dark:bg-slate-800 ${i === 0 ? 'border-primary' : 'border-transparent hover:border-primary/50'}`}
+                    aria-label={`View ${g.alt || `image ${i + 1}`}`}
+                  >
+                    {typeof g.raw === 'string' ? (
+                      <img
+                        src={g.raw}
+                        alt={g.alt || `Image ${i + 1}`}
+                        class="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    ) : g.raw ? (
+                      <Image
+                        src={g.raw as ImageMetadata}
+                        alt={g.alt || `Image ${i + 1}`}
+                        class="w-full h-full object-cover"
+                        widths={[64]}
+                        width={64}
+                        height={64}
+                        format="webp"
+                        loading="lazy"
+                      />
+                    ) : null}
+                  </button>
+                ))}
+              </div>
+            )
+          }
+        </div>
+        <!-- Right: Product Info -->
+        <div class="order-first md:order-last">
+          <div class="flex items-center gap-3 text-xs text-gray-400 dark:text-slate-500 mb-4">
+            {
+              product.categoryLabel && (
+                <span class="font-semibold uppercase tracking-[0.15em] text-primary">{product.categoryLabel}</span>
+              )
+            }
+            {
+              product.sku && (
+                <>
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <span class="font-mono">{product.sku}</span>
+                  </>
+                </>
+              )
+            }
+          </div>
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#071e2d] dark:text-white leading-[1.05]"
+          >
+            {product.title}
+          </h1>
+          {
+            product.summary && (
+              <p class="mt-4 text-lg text-gray-500 dark:text-slate-400 leading-relaxed max-w-lg">{product.summary}</p>
+            )
+          }
+          {/* Specs Grid */}
+          {
+            specRows.length > 0 && (
+              <div class="mt-8 grid grid-cols-2 gap-3">
+                {specRows.slice(0, 6).map((s) => (
+                  <div class="bg-[#F8FAFB] dark:bg-slate-800/50 rounded-xl px-4 py-3 border border-gray-100 dark:border-slate-700">
+                    <span class="text-[10px] font-semibold uppercase tracking-wider text-gray-400 dark:text-slate-500">
+                      {s.label}
+                    </span>
+                    <span class="block mt-0.5 text-sm font-medium text-[#071e2d] dark:text-slate-200">{s.value}</span>
+                  </div>
+                ))}
+              </div>
+            )
+          }
+          {
+            specRows.length > 6 && (
+              <details class="group mt-4">
+                <summary class="text-sm font-medium text-primary cursor-pointer hover:text-[#0088B3] transition-colors list-none flex items-center gap-2">
+                  Full Specifications{' '}
+                  <span class="text-[10px] group-open:rotate-180 transition-transform">&#9660;</span>
+                </summary>
+                <div class="mt-3 grid grid-cols-2 gap-2">
+                  {specRows.slice(6).map((s) => (
+                    <div class="flex items-center justify-between p-2.5 rounded-lg bg-gray-50 dark:bg-slate-800/50">
+                      <span class="text-xs font-medium text-gray-600 dark:text-slate-400">{s.label}</span>
+                      <span class="text-xs text-gray-500 dark:text-slate-500 ml-2 text-right">{s.value}</span>
+                    </div>
+                  ))}
+                </div>
+              </details>
+            )
+          }
+          {/* CTA */}
+          <div class="mt-10 flex flex-col sm:flex-row gap-3">
+            <a
+              href={`/contact?product=${encodeURIComponent(product.title)}`}
+              class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 text-sm"
+            >
+              Request an OEM Quote →
+            </a>
+            <a
+              href={`/contact?product=${encodeURIComponent(product.title)}&sample=1`}
+              class="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-gray-200 dark:border-slate-600 text-gray-700 dark:text-slate-300 font-medium rounded-full hover:border-gray-300 dark:hover:border-slate-500 transition-all text-sm"
+            >
+              Get a Custom Sample
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* TLDR (AI-crawlable) */}
+  {
+    rec && (
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 -mt-1 relative z-10">
+        <Tldr
+          summary={rec.definition}
+          points={[`${rec.audience}`, `Use cases: ${rec.ai_use_cases.slice(0, 3).join(', ')}`]}
+        />
+      </section>
+    )
+  }
+
+  {/* MDX Content - Clean prose */}
+  {
+    product.Content && (
+      <section class="bg-white dark:bg-[#071e2d] border-b border-gray-100 dark:border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+          <div class="prose prose-gray dark:prose-invert prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-[#071e2d] dark:prose-headings:text-white prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-10 prose-h3:mb-4 prose-p:text-gray-600 dark:prose-p:text-slate-400 prose-p:leading-relaxed prose-li:text-gray-600 dark:prose-li:text-slate-400 prose-strong:text-[#071e2d] dark:prose-strong:text-white prose-ul:space-y-3 max-w-none">
+            <product.Content />
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {/* Why This Exists (Problem) */}
+  {
+    rec && rec.problem && (
+      <section
+        class="bg-gray-50/50 dark:bg-slate-900/50 border-b border-gray-100 dark:border-slate-800"
+        data-ai-block="problem"
+      >
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+          <div class="bg-primary/10 border-l-4 border-primary rounded-r-xl px-6 py-5">
+            <div class="flex items-start gap-3">
+              <span class="text-primary text-xs font-semibold uppercase tracking-wider flex-shrink-0 mt-0.5">
+                Why this exists
+              </span>
+              <div class="space-y-2 text-sm text-gray-700 dark:text-slate-300 leading-relaxed">
+                <p>{rec.problem}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {/* Product Definition — Who is it for? */}
+  {
+    rec && rec.definition && (
+      <section
+        class="bg-gray-50/50 dark:bg-slate-900/50 border-b border-gray-100 dark:border-slate-800"
+        data-ai-block="definition"
+      >
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+          <span class="text-xs font-semibold uppercase tracking-wider text-primary mb-2 block">Product Definition</span>
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 mb-4">
+            Who is it for?
+          </h2>
+          <p class="text-base text-gray-600 dark:text-slate-400 leading-relaxed">{rec.definition}</p>
+          {rec.audience && (
+            <div class="mt-6 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl p-5">
+              <p class="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-2">Designed for</p>
+              <p class="text-sm text-gray-600 dark:text-slate-400 capitalize">{rec.audience}</p>
+            </div>
+          )}
+        </div>
+      </section>
+    )
+  }
+
+  {/* Overview + Use Cases */}
+  {
+    rec && rec.ai_use_cases.length > 0 && (
+      <section
+        class="bg-white dark:bg-slate-950 border-b border-gray-100 dark:border-slate-800"
+        data-ai-block="use-case"
+      >
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 mb-6">
+            Use Cases
+          </h2>
+          <div class="grid md:grid-cols-2 gap-3">
+            {rec.ai_use_cases.map((uc) => (
+              <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50 dark:bg-slate-800/50 border border-gray-100 dark:border-slate-700">
+                <span class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0" />
+                <p class="text-sm text-gray-700 dark:text-slate-300">{uc}</p>
+              </div>
+            ))}
+            <div class="flex items-start gap-3 p-4 rounded-xl bg-primary/10 border border-primary/30 dark:border-primary/50">
+              <span class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0" />
+              <div>
+                <p class="text-sm font-semibold text-primary">Skill level</p>
+                <p class="text-sm text-primary capitalize">{rec.skill}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {/* Comparison */}
+  {
+    rec && rec.ai_comparison && (
+      <section
+        class="bg-gray-50/50 dark:bg-slate-900/50 border-b border-gray-100 dark:border-slate-800"
+        data-ai-block="comparison"
+      >
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+          <span class="text-xs font-semibold uppercase tracking-wider text-primary mb-2 block">Comparison</span>
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 mb-4">
+            How it compares
+          </h2>
+          <p class="text-base text-gray-600 dark:text-slate-400 leading-relaxed">{rec.ai_comparison}</p>
+        </div>
+      </section>
+    )
+  }
+
+  {/* FAQ Section */}
+  {
+    rec && rec.ai_faq.length > 0 && (
+      <section class="bg-white dark:bg-slate-950 border-b border-gray-100 dark:border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 mb-8">
+            Frequently Asked Questions
+          </h2>
+          <div class="space-y-3">
+            {rec.ai_faq.map((f) => (
+              <details class="group rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 open:shadow-sm transition-shadow">
+                <summary class="flex items-center justify-between px-5 py-4 cursor-pointer text-sm font-semibold text-gray-900 dark:text-slate-200 list-none">
+                  {f.q}
+                  <span class="shrink-0 ml-2 text-gray-300 dark:text-slate-600 group-open:rotate-180 transition-transform text-xs">
+                    &#9660;
+                  </span>
+                </summary>
+                <div class="px-5 pb-4 text-sm text-gray-600 dark:text-slate-400 leading-relaxed border-t border-gray-100 dark:border-slate-700 pt-3 mt-0">
+                  {f.a}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <JsonLd type="FAQPage" faqs={rec?.ai_faq || []} />
+
+  {/* Full Technical Specifications */}
+  {
+    specRows.length > 0 && (
+      <section class="bg-white dark:bg-slate-950 border-b border-gray-100 dark:border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+          <span class="text-xs font-semibold uppercase tracking-wider text-primary mb-2 block">Technical Data</span>
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 mb-8">
+            Full Specifications
+          </h2>
+          <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-slate-700">
+            <table class="w-full text-sm">
+              <tbody>
+                {specRows.map((s, i) => (
+                  <tr class={i % 2 === 0 ? 'bg-gray-50 dark:bg-slate-800/50' : 'bg-white dark:bg-slate-950'}>
+                    <td class="px-5 py-3.5 font-semibold text-gray-700 dark:text-slate-300 w-1/3 border-b border-gray-100 dark:border-slate-800">
+                      {s.label}
+                    </td>
+                    <td class="px-5 py-3.5 text-gray-600 dark:text-slate-400 border-b border-gray-100 dark:border-slate-800">
+                      {s.value}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {/* Materials & Construction */}
+  {
+    rec && rec.ai_specs && (
+      <section class="bg-gray-50/50 dark:bg-slate-900/50 border-b border-gray-100 dark:border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+          <span class="text-xs font-semibold uppercase tracking-wider text-primary mb-2 block">Construction</span>
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 mb-6">
+            Materials & Construction
+          </h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {Object.entries(rec.ai_specs)
+              .filter(([k]) => !['length', 'width', 'height', 'weight', 'max_load', 'pressure', 'warranty'].includes(k))
+              .slice(0, 6)
+              .map(([k, v]) => (
+                <div class="bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 p-5">
+                  <div class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-slate-500 mb-1">
+                    {k.replace(/_/g, ' ')}
+                  </div>
+                  <div class="text-sm font-medium text-gray-900 dark:text-slate-200">{v}</div>
+                </div>
+              ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {/* Trust Badges */}
+  <section class="bg-gray-50/50 dark:bg-slate-900/50 border-b border-gray-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+      <TrustBadges layout="row" />
+    </div>
+  </section>
+
+  {/* Related Products */}
+  {
+    related.length > 0 && (
+      <section class="bg-white dark:bg-slate-950 border-b border-gray-100 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+          <h2 class="text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-slate-100 mb-6">
+            Compare with other {product.categoryLabel || 'products'}
+          </h2>
+          <div class="grid md:grid-cols-3 gap-4">
+            {related.map((p) => (
+              <ProductCard product={p} showMeta={false} />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {/* Related Guides */}
+  {
+    relatedGuides.length > 0 && (
+      <section class="bg-gray-50/50 dark:bg-slate-900/50 border-b border-gray-100 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+          <h2 class="text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-slate-100 mb-6">
+            Related Guides
+          </h2>
+          <div class="grid md:grid-cols-3 gap-4">
+            {relatedGuides.map((g) => (
+              <a
+                href={`/guides/${g.slug}`}
+                class="block p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 hover:shadow-md transition-shadow"
+              >
+                <h3 class="text-sm font-semibold text-gray-900 dark:text-slate-200">{g.title}</h3>
+                <p class="mt-1 text-xs text-gray-500 dark:text-slate-400 line-clamp-2">{g.description}</p>
+                <span class="mt-2 inline-flex items-center gap-1 text-xs font-medium text-primary">Read guide</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {/* Final CTA */}
+  <section class="bg-secondary">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 md:py-20 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">Interested in {product.title}?</h2>
+      <p class="text-lg text-white/70 mb-8 max-w-xl mx-auto">
+        Contact our team for detailed specifications, pricing, and ordering information.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a
+          href={`/contact?product=${encodeURIComponent(product.title)}`}
+          class="inline-flex items-center gap-2 px-8 py-4 bg-white text-secondary font-semibold rounded-full hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
+        >
+          Request an OEM Quote
+        </a>
+        <a
+          href={`/contact?product=${encodeURIComponent(product.title)}&sample=1`}
+          class="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition-all"
+        >
+          Get a Custom Sample
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* Image Gallery Script */}
+  <script>
+    const thumbnails = document.querySelectorAll<HTMLElement>('[data-gallery-thumb]');
+    if (thumbnails.length > 1) {
+      const mainImage = document.getElementById('gallery-main');
+      if (thumbnails && mainImage) {
+        thumbnails.forEach((thumb) => {
+          thumb.addEventListener('click', () => {
+            const url = thumb.dataset.galleryThumb;
+            const alt = thumb.dataset.galleryAlt || '';
+            if (url) {
+              mainImage.setAttribute('src', url);
+              mainImage.setAttribute('alt', alt);
+              thumbnails.forEach((t) => t.classList.remove('border-primary'));
+              thumb.classList.add('border-primary');
+            }
+          });
+        });
+      }
+    }
+  </script>
+
+  {/* Hidden AI data blocks (machine-readable) */}
+  {
+    rec && (
+      <section class="sr-only" aria-hidden="true">
+        <div data-ai-block="definition">
+          <p>{rec.definition}</p>
+          <p>Problem it solves: {rec.problem}</p>
+          <p>How it works: {rec.howItWorks}</p>
+          <p>Target audience: {rec.audience}</p>
+        </div>
+        <div data-ai-block="use-case">
+          <p>Use cases: {rec.ai_use_cases.join('; ')}</p>
+          <p>Environments: {rec.environment.join(', ')}</p>
+          <p>Water conditions: {rec.water_condition.join(', ')}</p>
+          <p>Skill level: {rec.skill}</p>
+        </div>
+        <div data-ai-block="specification">
+          {Object.entries(rec.ai_specs).map(([k, v]) => (
+            <p data-spec={k}>
+              {k}: {v}
+            </p>
+          ))}
+        </div>
+        <div data-ai-block="comparison">
+          <p>{rec.ai_comparison}</p>
+        </div>
+        <div data-ai-block="faq">
+          {rec.ai_faq.map((f) => (
+            <p>
+              <strong>Q:</strong> {f.q} <strong>A:</strong> {f.a}
+            </p>
+          ))}
+        </div>
+        <div data-ai-block="constraint">
+          <p>Safety rules: {rec.safety_rules.join('; ')}</p>
+          <p>Safety level: {rec.safety_level}</p>
+          <p>Regions: {rec.region.join(', ')}</p>
+        </div>
+      </section>
+    )
+  }
+
+  <ToBlogLink />
+</ProductLayout>

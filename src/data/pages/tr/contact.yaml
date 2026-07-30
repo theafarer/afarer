@@ -1,0 +1,131 @@
+﻿hero_text:
+  tagline: İletişim
+  title: BİZE ULAŞIN
+contact_form:
+  id: form
+  title: Mesaj Gönderin
+  subtitle: Fiyat teklifi, teknik sorular veya iş birliği için bize yazın. Bir iş günü içinde yanıtlıyoruz.
+  email_to: info@afarer.com
+  submit_button: Gönder
+  success_message: Teşekkürler! Mesajınız alındı. Bir iş günü içinde yanıtlayacağız.
+  error_message: Gönderim sırasında bir hata oluştu. Lütfen tekrar deneyin veya doğrudan e-posta adresine yazın.
+  default_country_code: '+1'
+  captcha:
+    label: 'Anti-spam: aşağıdaki işlemi çözün'
+  fields:
+    - name: firstName
+      label: Ad
+      row: 1
+    - name: lastName
+      label: Soyad
+      row: 1
+    - name: companyName
+      label: Şirket
+      row: 2
+    - name: address
+      label: Adres
+      row: 3
+    - name: zip
+      label: Posta Kodu
+      row: 4
+    - name: country
+      label: Ülke
+      row: 4
+      type: select
+      optionsKey: countries
+    - name: email
+      label: E-posta
+      row: 5
+      type: email
+    - name: tel
+      label: Telefon
+      row: 5
+      type: tel
+      withCountryCode: true
+    - name: orderVolume
+      label: Tahmini Sipariş Hacmi
+      row: 6
+      type: select
+      options:
+        - value: ''
+          label: Tahmini hacmi seçin...
+        - value: sample
+          label: Sadece numuneler / prototipler
+        - value: '5-10'
+          label: 50—00 adet (standart MOQ)
+        - value: '100-500'
+          label: 100—00 adet
+        - value: '500-plus'
+          label: 500+ adet (hacim fiyatlandırması)
+    - name: customization
+      label: Özelleştirme gerekli mi?
+      row: 7
+      type: select
+      options:
+        - value: ''
+          label: Özelleştirme türünü seçin...
+        - value: none
+          label: Standart ürün (özelleştirme yok)
+        - value: logo
+          label: Sadece özel logo / marka
+        - value: full
+          label: Tam OEM (boyut, renk, grafik, paketleme)
+        - value: consultation
+          label: Emin değilim —danışmanlık gerekli
+    - name: productInterest
+      label: İlgilenilen Ürün Kategorileri
+      row: 8
+      type: select
+      options:
+        - value: ''
+          label: Ürün kategorisini seçin...
+        - value: all
+          label: Tüm ürünler / tam katalog
+        - value: sup
+          label: SUP Tahtaları / Paddleboardlar
+        - value: SUP
+          label: Şişme Kayaklar
+        - value: SUP
+          label: SUP Botlar
+        - value: SUP
+          label: Filika / Tender Botlar
+        - value: safety
+          label: Güvenlik Ekipmanları / Can Yelekleri
+        - value: accessory
+          label: Aksesuarlar (pompalar, kürekler, çantalar)
+
+    - name: subject
+      label: Konu
+      row: 9
+    - name: message
+      label: Mesaj
+      row: 10
+      type: textarea
+      rows: 6
+features2_other_ways:
+  title: Diğer İletişim Yolları
+  columns: 3
+  items:
+    - title: Satış Soruları
+      description: Fiyat teklifleri, konfigürasyonlar, bayi başvuruları ve toptan siparişler.
+      icon: tabler:shopping-bag
+    - title: Teknik Destek
+      description: Garanti, onarım, yedek parça ve kullanım soruları.
+      icon: tabler:tool
+    - title: Basın ve Ortaklıklar
+      description: Medya kitleri, sponsorluk ve sektör iş birlikleri.
+      icon: tabler:news
+    - title: Telefon
+      description: '+86 13305324192'
+      icon: tabler:headset
+    - title: E-posta
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: Genel Merkez
+      description: Ekonomik Kalkınma Bölgesi, Laixi, Qingdao, Çin, 266600
+      icon: tabler:map-pin
+map:
+  title: Konumumuz
+  subtitle: Bizi Ziyaret Edin
+  address: Ekonomik Kalkınma Bölgesi, Laixi, Qingdao, Çin, 266600
+  zoom: 15

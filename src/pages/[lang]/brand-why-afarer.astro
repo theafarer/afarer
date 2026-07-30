@@ -1,0 +1,51 @@
+---
+export const prerender = true;
+
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/brand-why-afarer.ts';
+import { languages } from '~/i18n/config';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'brand-why-afarer');
+
+const hero = page.hero ?? {};
+const stats = page.stats ?? {};
+const reasons = page.features3_reasons ?? {};
+const testimonials = page.testimonials ?? {};
+const cta = page.cta ?? {};
+const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+
+const metadata = {
+  title: `Why Choose ${SITE.name} — OEM/ODM Marine Manufacturer`,
+  description:
+    'Seven reasons why global brands choose Afarer: real manufacturing, engineering-led design, certified quality, flexible OEM/ODM, global logistics, lifetime support.',
+};
+const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Brand' }, { name: 'Why Afarer' }];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero tagline={hero.tagline} image={hero.image} title={hero.title} subtitle={hero.subtitle} />
+  <Stats title={stats.title} stats={stats.stats} />
+  <Features3
+    tagline={reasons.tagline}
+    title={reasons.title}
+    subtitle={reasons.subtitle}
+    columns={reasons.columns}
+    items={reasons.items}
+  />
+  <Testimonials tagline={testimonials.tagline} title={testimonials.title} testimonials={testimonials.items} />
+  <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
+</Layout>

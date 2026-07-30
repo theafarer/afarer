@@ -1,0 +1,68 @@
+﻿hero:
+  tagline: Marine Expertise
+  title: 'Десятилетия морского инжиниринга<br />в каждом корпусе'
+  subtitle: 'afarer сочетает глубокое материаловедение, прецизионное производство и реальные испытания для создания плавсредств, которые работают, когда это важно.'
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
+    alt: afarer marine engineering and R&D team at work
+expertise_materials:
+  tagline: Material Science
+  title: 'Выбор правильного материала<br />для каждого применения'
+  subtitle: 'Мы работаем с тремя основными материалами —каждый выбран для конкретных случаев использования и требований к производительности.'
+  columns: 3
+  items:
+    - title: Marine-Grade PVC
+      description: '1100 denier PVC fabric —our most versatile material. UV-stabilized, abrasion-resistant, and REACH compliant. Ideal for recreational boats, SUP boards, and SUPs where weight and cost efficiency matter.'
+      icon: tabler:droplet
+    - title: Premium Hypalon/CSM
+      description: 'Превосходная химическая стойкость и УФ-стабильность. Лодки из Hypalon могут прослужить 15-20 лет при правильном уходе. Рекомендуется для коммерческих, спасательных и военных применений, где критична долговременная прочность.'
+      icon: tabler:shield
+    - title: Fiberglass & Aluminum
+      description: 'Стеклопластиковые корпуса Deep-V для SUP и патрульных катеров —режущая волны производительность в сложных условиях. Алюминиевые корпуса для тяжелых коммерческих рабочих лодок, требующих максимальной прочности и грузоподъемности.'
+      icon: tabler:building-arch
+expertise_manufacturing:
+  tagline: Manufacturing Capabilities
+  title: 'Прецизионное производство<br />на каждом этапе'
+  subtitle: 'Наше предприятие площадью 12 000 м² оснащено специализированным оборудованием для каждого этапа производства.'
+  columns: 2
+  items:
+    - title: CNC Cutting
+      description: 'Компьютеризированный раскрой обеспечивает точные, повторяемые панели ткани с минимальными отходами. Каждая деталь подходит точно, как задумано.'
+      icon: tabler:cpu
+    - title: High-Frequency Welding
+      description: 'Промышленная ВЧ-сварка создает швы прочнее основного материала. Постоянный контроль температуры и давления обеспечивает герметичные уплотнения в каждом производственном цикле.'
+      icon: tabler:bolt
+    - title: Drop Stitch Core Assembly
+      description: 'Тысячи полиэфирных нитей соединяют верхний и нижний слои ткани, обеспечивая надув под высоким давлением (15-20 PSI) для жестких, стабильных SUP-досок и полов.'
+      icon: tabler:building-arch
+    - title: Pressure Testing
+      description: 'Каждое надувное изделие проходит проверку давлением перед отправкой. Трубы SUP тестируются при давлении в 1,5 раза выше номинального —если выдерживает там, будет работать на воде.'
+      icon: tabler:wind
+    - title: Seam Strength Testing
+      description: 'Случайные образцы из каждой производственной партии проходят разрушающий тест прочности швов. Результаты регистрируются и отслеживаются до конкретных производственных серий.'
+      icon: tabler:files
+    - title: Water Testing
+      description: 'Каждая модель SUP проходит морские испытания перед сертификацией. Реальное тестирование в прибрежных условиях подтверждает производительность, управляемость и устойчивость.'
+      icon: tabler:droplet
+expertise_design:
+  tagline: Design & Engineering
+  title: 'Спроектировано для реальных условий'
+  subtitle: 'Наша философия дизайна начинается с того, как лодка будет использоваться, —затем строит инжиниринг вокруг этого случая использования.'
+  items:
+    - title: Deep-V Hull Design
+      description: "Our fiberglass hulls feature calculated deadrise angles optimized for each model's length and intended use. Steeper V for rough-water performance, shallower for stability."
+    - title: Multi-Chamber Safety
+      description: 'Every boat features 3-7 independent air chambers. If one compartment is compromised, the remaining chambers keep the boat afloat and operational.'
+    - title: Ergonomic Layout
+      description: 'Console position, tube height, and seat placement are designed around operator comfort during extended use —whether patrolling, fishing, or transporting.'
+    - title: Custom Configuration
+      description: 'Tube colors, console configuration, fuel capacity, accessory mounts —each model can be customized to match specific operational requirements.'
+cta:
+  title: 'Есть на примете конкретное применение?'
+  subtitle: 'Наша инженерная команда может проконсультировать по выбору материалов, дизайну и производству для вашего проекта.'
+  actions:
+    - variant: primary
+      text: Ask our engineers
+      href: /contact
+    - text: View product range
+      href: /products

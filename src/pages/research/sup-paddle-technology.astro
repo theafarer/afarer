@@ -1,0 +1,93 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `SUP Paddle Technology — Materials, Blade Shapes, and Shaft Stiffness | ${SITE.name}`,
+  description:
+    'Technical guide to SUP paddle design: aluminum vs fiberglass vs carbon shafts, blade shapes for touring vs surfing vs racing, and how paddle weight affects paddling efficiency.',
+  ignoreTitleTemplate: true,
+};
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'SUP Paddle Technology Guide',
+  description: metadata.description,
+  author: { '@type': 'Organization', name: SITE.name },
+  datePublished: '2026-07-27',
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd data={jsonLd} />
+  <article class="max-w-4xl mx-auto px-6 py-16">
+    <nav class="text-sm text-gray-500 mb-8">
+      <a href="/" class="hover:text-sky-600">{SITE.name}</a><span class="mx-2">/</span><a
+        href="/research"
+        class="hover:text-sky-600">Research</a
+      ><span class="mx-2">/</span><span class="text-gray-900">SUP Paddle Technology</span>
+    </nav>
+    <div class="mb-4">
+      <span
+        class="inline-block text-xs font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full"
+        >Equipment</span
+      ><span class="ml-3 text-sm text-gray-400">7 min read</span>
+    </div>
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">SUP Paddle Technology Guide</h1>
+    <p class="text-xl text-gray-500 mb-12 leading-relaxed">
+      The paddle is your primary propulsion tool — its material, weight, blade shape, and shaft stiffness directly
+      affect paddling efficiency, endurance, and enjoyment.
+    </p>
+    <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600">
+      <h2>Shaft Materials</h2>
+      <p>
+        <strong>Aluminum:</strong> Most affordable and durable. Standard on entry-level SUPs and included in most bundle kits.
+        Heavier (28-32 oz) and less stiff than composites. The weight becomes noticeable on paddles longer than 2-3 miles.
+        Aluminum shafts are corrosion-resistant with anodized coating but may bend under extreme stress.
+      </p>
+      <p>
+        <strong>Fiberglass:</strong> Mid-range option with good stiffness-to-weight ratio (18-24 oz). Fiberglass shafts dampen
+        vibration better than aluminum, reducing arm fatigue. More expensive than aluminum but significantly lighter. Suitable
+        for recreational and intermediate paddlers.
+      </p>
+      <p>
+        <strong>Carbon Fiber:</strong> Premium option — lightest (12-18 oz), stiffest, and best vibration damping. Carbon
+        shafts reduce paddling fatigue dramatically on long-distance paddles. The high modulus carbon used in racing paddles
+        is stiffer and lighter but more brittle. Standard modulus carbon offers a better durability-to-weight ratio for everyday
+        use. Afarer recommends carbon paddles for touring, fitness, and racing paddlers.
+      </p>
+      <h2>Blade Shapes</h2>
+      <ul>
+        <li>
+          <strong>Rectangular / Dihedral:</strong> Most common all-around blade shape. The dihedral ridge down the center
+          of the blade face improves tracking through the water and reduces flutter. Good for general paddling.
+        </li><li>
+          <strong>Scoop / Spoon:</strong> Concave blade face that "scoops" water for powerful forward strokes. Preferred by
+          touring and racing paddlers for maximum propulsion per stroke. Requires proper technique to use efficiently.
+        </li><li>
+          <strong>Teardrop / Asymmetric:</strong> Narrower profile with a pointed tip. Reduces blade entry splash and provides
+          smooth power throughout the stroke. Common on higher-end adjustable paddles.
+        </li><li>
+          <strong>Surf / Oval:</strong> Smaller blade surface area for quick, high-cadence strokes. Designed for surfing and
+          whitewater where maneuverability matters more than raw power.
+        </li>
+      </ul>
+      <h2>Paddle Length</h2>
+      <p>
+        Correct paddle length is critical for efficient paddling. The general rule: add 8-10 inches to your height for
+        recreational paddling. Touring paddlers add 10-12 inches for extended reach. A paddle that is too short forces
+        you to bend forward, straining your lower back. A paddle that is too long creates inefficient leverage and
+        shoulder fatigue. Adjustable paddles (2-piece or 3-piece telescoping) let you fine-tune length and pack for
+        travel.
+      </p>
+      <h2>Blade Size</h2>
+      <p>
+        Blade surface area ranges from 65 to 120 square inches. Larger blades (95-120 sq in) provide more power per
+        stroke but require more strength. Smaller blades (65-85 sq in) allow higher stroke cadence for cardio training.
+        General recommendation: 85-100 sq in for most adult paddlers. Larger paddlers or those seeking power should size
+        up; fitness paddlers seeking cardio benefit should size down.
+      </p>
+    </div>
+  </article>
+</Layout>

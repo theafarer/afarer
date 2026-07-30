@@ -1,0 +1,125 @@
+---
+export const prerender = true;
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/b2b-solutions-matrix.ts';
+import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'b2b-solutions-matrix');
+
+const hero = page.hero ?? {};
+const solutions = page.solutions ?? {};
+const cta = page.cta ?? {};
+const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+const localizedItems = solutions.items?.map((item: any) => ({
+  ...item,
+  link: item.link ? `/${lang}${item.link}` : item.link,
+}));
+
+const metadata = {
+  title: `B2B Client Solutions Matrix — ${SITE.name} | 24 Business Solutions`,
+  description:
+    t('b2bSolutionsMatrix.metaDesc') ||
+    'Complete Afarer B2B client solutions matrix covering 24 customer types — find the solution for your business.',
+};
+const crumbs = [
+  { name: 'Home', href: `/${lang}/` },
+  { name: t('nav.solutions') || 'Solutions' },
+  { name: 'B2B Solutions Matrix' },
+];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero tagline={hero.tagline} image={hero.image} title={hero.title} subtitle={hero.subtitle} />
+
+  <section class="max-w-7xl mx-auto py-16 px-6">
+    <div class="text-center mb-12">
+      <p class="text-sm font-semibold tracking-wide text-gray-500 uppercase">{solutions.tagline}</p>
+      <h2 class="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">{solutions.title}</h2>
+      <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">{solutions.subtitle}</p>
+    </div>
+
+    <div class="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-gray-50 border-b border-gray-200">
+            <th class="text-left px-6 py-4 font-semibold text-gray-700 whitespace-nowrap w-[28%]">#</th>
+            <th class="text-left px-6 py-4 font-semibold text-gray-700 whitespace-nowrap w-[28%]"
+              >{lang === 'zh' ? '核心需求' : 'Core Need'}</th
+            >
+            <th class="text-left px-6 py-4 font-semibold text-gray-700 whitespace-nowrap w-[44%]"
+              >{lang === 'zh' ? '解決方案' : 'Solution'}</th
+            >
+          </tr>
+        </thead>
+        <tbody>
+          {
+            localizedItems?.map((item: any, _idx: any) => (
+              <tr class="border-b border-gray-100 last:border-b-0 hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 text-gray-900 font-medium">{item.clientType}</td>
+                <td class="px-6 py-4 text-gray-600">{item.need}</td>
+                <td class="px-6 py-4">
+                  <a
+                    href={item.link}
+                    class="inline-flex items-center gap-1.5 text-sky-600 hover:text-sky-700 font-medium transition"
+                  >
+                    {item.solutionPage}
+                    <svg
+                      class="w-4 h-4 flex-shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
+
+  <JsonLd
+    type="ItemList"
+    itemList={{
+      name: 'B2B Client Solutions Matrix',
+      description: '24 Afarer B2B solutions matched to customer types',
+      url: `/${lang}/b2b-solutions-matrix`,
+      numberOfItems: localizedItems?.length || 24,
+      itemListElement: localizedItems?.map((item: any, idx: any) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        item: {
+          '@type': 'Service',
+          name: item.clientType,
+          description: item.need,
+          url: `${SITE.siteUrl || 'https://afarer.com'}${item.link}`,
+        },
+      })),
+    }}
+  />
+</Layout>

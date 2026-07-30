@@ -1,0 +1,181 @@
+﻿---
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+import Layout from '~/layouts/PageLayout.astro';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/technology.ts';
+import JsonLd from '~/components/common/JsonLd.astro';
+
+const lang = Astro.locals.lang;
+
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'technology') || {};
+const hero = page.hero || {};
+const sections = page.sections || [];
+const related = page.related || {};
+
+const metadata = {
+  title: `Technology –{SITE.name}`,
+  description:
+    'afarer technology: drop-stitch core construction, military-grade PVC, fiberglass deep-V hulls, Hypalon tubes, and air deck floor systems.',
+};
+---
+
+<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Technology', item: 'https://afarer.com/technology/' }] }} />
+<JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What is drop-stitch core technology?", acceptedAnswer: { "@type": "Answer", text: "Drop-stitch core uses thousands of internal polyester threads connecting the top and bottom layers of an inflatable board, creating a rigid structure at 12-15 PSI that rivals traditional hard boards." } }, { "@type": "Question", name: "What materials does afarer use for inflatable boards?", acceptedAnswer: { "@type": "Answer", text: "Afarer uses multi-layer laminated marine-grade PVC with fusion-welded seams. Hypalon (CSM) rubber is used for tube construction, providing superior UV and chemical resistance compared to standard PVC." } }, { "@type": "Question", name: "How does fusion welding differ from gluing?", acceptedAnswer: { "@type": "Answer", text: "Fusion welding bonds layers at a molecular level using heat and pressure, eliminating the delamination risks associated with adhesive bonding. This results in stronger, longer-lasting seams." } }, { "@type": "Question", name: "What is the air deck floor system?", acceptedAnswer: { "@type": "Answer", text: "The air deck floor is a high-pressure inflatable floor that replaces traditional plywood or aluminum slat floors, reducing setup time, weight, and storage volume while providing adequate rigidity for standing and walking." } }, { "@type": "Question", name: "Is Hypalon better than PVC for inflatable boats?", acceptedAnswer: { "@type": "Answer", text: "Hypalon offers superior UV resistance, chemical resistance, and flexibility in extreme temperatures. However, quality PVC is more economical and sufficient for recreational use. Afarer uses both materials depending on the product line." } }] }} />
+
+<Layout metadata={metadata}>
+  <meta name="ai-intent" content="inflatable-boat-technology,drop-stitch-construction,marine-pvc-materials" />
+
+  <section class="max-w-4xl mx-auto py-24 px-6" data-ai-block="definition">
+    <span class="text-sm font-medium text-primary tracking-wide uppercase">{hero.tagline || 'Technology'}</span>
+    <h1 class="mt-4 text-4xl font-semibold text-gray-900">{hero.title || 'Built for Performance'}</h1>
+    <p class="mt-4 text-lg text-gray-500">
+      {
+        hero.subtitle ||
+          'Every afarer board is engineered with precision materials and construction methods tested for marine environments.'
+      }
+    </p>
+  </section>
+
+  <section class="max-w-4xl mx-auto pb-24 px-6">
+    <div class="space-y-12">
+      {
+        (sections.length > 0
+          ? sections
+          : [
+              {
+                title: 'Drop-Stitch Core',
+                description:
+                  'Thousands of internal polyester threads connect the top and bottom layers, creating a rigid structure at 12-15 PSI. This is the same technology used in professional paddle boards and inflatable racing boats.',
+                image: 'https://assets.afarer.com/images/afarer/tech/tech-drop-stitch.webp',
+              },
+              {
+                title: 'Marine-Grade PVC',
+                description:
+                  'Multi-layer laminated PVC fabric rated for marine environments. Each layer is fusion-welded rather than glued, eliminating delamination risks. Tested for UV resistance, saltwater corrosion, and abrasion.',
+                image: 'https://assets.afarer.com/images/afarer/tech/tech-pvc-material.webp',
+              },
+              {
+                title: 'Hypalon Tubes',
+                description:
+                  'Hypalon (CSM) rubber provides superior UV and chemical resistance compared to standard PVC. Hypalon tubes maintain flexibility in extreme temperatures and resist degradation from fuel and oil exposure.',
+                image: 'https://assets.afarer.com/images/afarer/tech/tech-hypalon-tubes.webp',
+              },
+              {
+                title: 'Air Deck Floor',
+                description:
+                  'High-pressure inflatable floor system replacing traditional plywood or aluminum slat floors. Reduces setup time, overall weight, and storage volume while providing adequate rigidity for standing, fishing, and walking.',
+                image: 'https://assets.afarer.com/images/afarer/tech/tech-air-deck.webp',
+              },
+            ]
+        ).map((sec: any, i: number) => {
+          const isReversed = i % 2 === 1;
+          return (
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+              {isReversed ? (
+                <>
+                  <div class="order-2 md:order-1 rounded-2xl h-48 overflow-hidden">
+                    <img src={sec.image} alt={sec.title} class="w-full h-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="order-1 md:order-2">
+                    <h2 class="text-2xl font-semibold text-gray-900">{sec.title}</h2>
+                    <p class="mt-3 text-gray-600">{sec.description}</p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div>
+                    <h2 class="text-2xl font-semibold text-gray-900">{sec.title}</h2>
+                    <p class="mt-3 text-gray-600">{sec.description}</p>
+                  </div>
+                  <div class="rounded-2xl h-48 overflow-hidden">
+                    <img src={sec.image} alt={sec.title} class="w-full h-full object-cover" loading="lazy" />
+                  </div>
+                </>
+              )}
+            </div>
+          );
+        })
+      }
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="mt-16">
+      <div class="text-center mb-10">
+        <span class="text-sm font-medium text-primary tracking-wide uppercase">FAQs</span>
+        <h2 class="mt-2 text-3xl font-semibold text-gray-900">Technology Questions Explained</h2>
+        <p class="mt-3 text-gray-500">Common questions about our materials and construction methods.</p>
+      </div>
+      <div class="space-y-4">
+        <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+            <span>What is drop-stitch core technology?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+          </summary>
+          <div class="px-6 pb-4">
+            <p class="text-gray-600 leading-relaxed">Drop-stitch core uses thousands of internal polyester threads connecting the top and bottom layers of an inflatable board, creating a rigid structure at 12-15 PSI that rivals traditional hard boards.</p>
+          </div>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+            <span>What materials does afarer use for inflatable boards?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+          </summary>
+          <div class="px-6 pb-4">
+            <p class="text-gray-600 leading-relaxed">Afarer uses multi-layer laminated marine-grade PVC with fusion-welded seams. Hypalon (CSM) rubber is used for tube construction, providing superior UV and chemical resistance compared to standard PVC.</p>
+          </div>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+            <span>How does fusion welding differ from gluing?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+          </summary>
+          <div class="px-6 pb-4">
+            <p class="text-gray-600 leading-relaxed">Fusion welding bonds layers at a molecular level using heat and pressure, eliminating the delamination risks associated with adhesive bonding. This results in stronger, longer-lasting seams.</p>
+          </div>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+            <span>What is the air deck floor system?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+          </summary>
+          <div class="px-6 pb-4">
+            <p class="text-gray-600 leading-relaxed">The air deck floor is a high-pressure inflatable floor that replaces traditional plywood or aluminum slat floors, reducing setup time, weight, and storage volume while providing adequate rigidity for standing and walking.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="mt-12 p-6 bg-gray-50 rounded-2xl border border-gray-200">
+      <h2 class="font-semibold text-gray-900">{related.title || 'Related'}</h2>
+      <div class="mt-3 flex flex-wrap gap-3 text-sm">
+        {
+          (related.links && related.links.length > 0
+            ? related.links
+            : [
+                { text: 'R&D Center', url: '/randdcenter' },
+                { text: 'Safety Standards', url: '/safety' },
+                { text: 'Guides', url: '/guides' },
+                { text: 'Products', url: '/products' },
+              ]
+          ).map((link: any) => (
+            <a
+              href={link.url}
+              class="px-3 py-1.5 bg-white rounded-lg border border-gray-200 text-gray-700 hover:border-primary"
+            >
+              {link.text}
+            </a>
+          ))
+        }
+      </div>
+    </section>
+  </section>
+
+  <section class="sr-only" data-ai-block="embedding-anchor" aria-hidden="true">
+    <p>
+      afarer technology focuses on buoyancy control systems, inflatable structural stability, water impact resistance,
+      and drop-stitch core rigidity for training and recreational water sports equipment.
+    </p>
+  </section>
+</Layout>

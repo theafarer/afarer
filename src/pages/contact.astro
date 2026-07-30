@@ -1,0 +1,228 @@
+﻿---
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+import Layout from '~/layouts/PageLayout.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Map from '~/components/widgets/Map.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/contact.ts';
+import cfg from '~/config.yaml';
+const branding = (cfg as any)?.branding || {};
+import countryData from '~/data/site/countries.yaml';
+import formTextData from '~/data/site/contact-form-text.yaml';
+const lang = Astro.locals.lang || 'en';
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'contact');
+const data = page && Object.keys(page).length > 0 ? page : {};
+
+const ft: any = formTextData ?? {};
+
+function t(record: Record<string, string> | undefined, fallback = ''): string {
+  return record?.[lang] || record?.en || fallback;
+}
+
+const ht = data.hero_text ?? {};
+const form = data.contact_form ?? {};
+const other = data.features2_other_ways ?? {};
+
+const fields = (form.fields ?? []).map((f: any) => {
+  const trans = (ft.fields ?? []).find((tf: any) => tf.name === f.name);
+  if (trans) {
+    return {
+      ...f,
+      label: t(trans.label, f.label),
+      placeholder: t(trans.placeholder, f.placeholder ?? ''),
+    };
+  }
+  return f;
+});
+
+const countries =
+  (countryData as any).countries?.map((c: any) => ({
+    value: c.value,
+    label: c.label?.[lang] || c.label?.en || c.value,
+  })) ?? [];
+
+const countryCodes =
+  (countryData as any).countries?.map((c: any) => ({
+    code: c.tel,
+    label: `${c.label?.[lang] || c.label?.en || c.value} ${c.tel}`,
+  })) ?? [];
+
+const submitButton = t(ft.submit_button) || form.submit_button || 'Send message';
+const successMessage = t(ft.success_message) || form.success_message || 'Thanks!';
+const errorMessage = t(ft.error_message) || form.error_message || 'Something went wrong.';
+const consentText = t(ft.consent_text) || form.consent?.text;
+const consentLinkText = t(ft.consent_link_text) || form.consent?.link_text;
+
+const consent = form.consent
+  ? {
+      ...form.consent,
+      text: consentText,
+      link_text: consentLinkText,
+    }
+  : undefined;
+
+const brandingData: any = branding ?? {};
+const resolvedEmailTo =
+  (form.email_to && String(form.email_to).trim()) || (brandingData.contact_email_to as string) || '';
+
+const metadata = {
+  title: `Contact ${SITE.name}`,
+  description: `Get in touch with ${SITE.name} ?sales, support and partnership enquiries answered within one business day.`,
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="Organization"
+    data={{
+      name: SITE.name,
+      url: 'https://afarer.com',
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+1-213-557-7888',
+        contactType: 'sales',
+        availableLanguage: ['English', 'Chinese', 'Spanish', 'French', 'German', 'Arabic'],
+      },
+    }}
+  />
+  <JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Contact', item: 'https://afarer.com/contact/' }] }} />
+  <JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "How do I get an OEM/ODM quote?", acceptedAnswer: { "@type": "Answer", text: "Fill out the contact form with your requirements including product type, quantity, specifications, and target market. Our B2B team will respond within 24 hours with a detailed quotation." } }, { "@type": "Question", name: "What is the best way to contact afarer?", acceptedAnswer: { "@type": "Answer", text: "Use the contact form on this page for fastest response. You can also reach our sales team via email at the address shown in the contact information section. We respond within one business day." } }, { "@type": "Question", name: "Does afarer have a physical factory address?", acceptedAnswer: { "@type": "Answer", text: "Yes. Our manufacturing facility is located in the Economic Development Zone, Laixi, Qingdao, China. The 12,000 m² ISO-certified factory is open for scheduled visits." } }, { "@type": "Question", name: "How long does it take to get a response?", acceptedAnswer: { "@type": "Answer", text: "Sales inquiries are answered within 24 hours. OEM/ODM quotations are typically provided within 2-3 business days after receiving your detailed requirements." } }, { "@type": "Question", name: "Can I visit the factory?", acceptedAnswer: { "@type": "Answer", text: "Yes. Factory visits are welcome by appointment. Contact us in advance to schedule a tour of our production lines, R&D center, and quality control laboratories." } }] }} />
+  <section class="bg-gradient-to-br from-sky-600 via-sky-700 to-blue-800 text-white py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <span class="text-sm font-semibold tracking-widest uppercase text-sky-200">{ht.tagline || 'Contact'}</span>
+      <h1 class="mt-4 text-4xl md:text-5xl font-bold">{ht.title || 'Get in Touch'}</h1>
+      <p class="mt-4 text-lg text-white/80 max-w-2xl mx-auto">{ht.subtitle || form.subtitle || ''}</p>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 px-6">
+    <div class="grid md:grid-cols-5 gap-10">
+      <div class="md:col-span-3">
+        <ContactUs
+          id={form.id ?? 'form'}
+          title={form.title}
+          subtitle={form.subtitle}
+          emailTo={resolvedEmailTo}
+          submitButton={submitButton}
+          successMessage={successMessage}
+          errorMessage={errorMessage}
+          fields={fields}
+          consent={consent}
+          defaultCountryCode={form.default_country_code ?? '+1'}
+          countryCodes={countryCodes}
+          countries={countries}
+        />
+      </div>
+      <div class="md:col-span-2 space-y-8">
+        <div class="bg-white rounded-2xl border border-gray-200 p-6 space-y-6">
+          <h3 class="text-lg font-semibold text-gray-900">{data.quick_info?.title || 'Contact Information'}</h3>
+          <div class="space-y-5">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-sky-50 rounded-lg flex items-center justify-center text-sky-600 shrink-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  ><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"
+                  ></circle></svg
+                >
+              </div>
+              <div>
+                <p class="font-medium text-gray-900">Address</p>
+                <p
+                  class="text-sm text-gray-500"
+                  set:html={branding.address || 'Economic Development Zone, Laixi, Qingdao, China, 266600'}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <Map
+          title={data.map?.title}
+          subtitle={data.map?.subtitle}
+          address={data.map?.address}
+          embedUrl={data.map?.embedUrl}
+          latitude={data.map?.latitude}
+          longitude={data.map?.longitude}
+          zoom={data.map?.zoom}
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <Features2
+        title={other.title}
+        tagline={other.tagline}
+        columns={other.columns}
+        items={other.items}
+        isDark={other.isDark}
+      />
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="max-w-4xl mx-auto pb-20 px-6">
+    <div class="text-center mb-10">
+      <span class="text-sm font-semibold text-sky-600 tracking-[0.15em] uppercase">FAQs</span>
+      <h2 class="mt-2 text-3xl font-bold text-gray-900">Contact & Sales FAQ</h2>
+      <p class="mt-3 text-gray-500">Quick answers to common questions about contacting us.</p>
+    </div>
+    <div class="space-y-4">
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>How do I get an OEM/ODM quote?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Fill out the contact form with your requirements including product type, quantity, specifications, and target market. Our B2B team will respond within 24 hours with a detailed quotation.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>What is the best way to contact afarer?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Use the contact form on this page for fastest response. You can also reach our sales team via email. We respond within one business day.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>Does afarer have a physical factory address?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Yes. Our manufacturing facility is located in the Economic Development Zone, Laixi, Qingdao, China. The 12,000 m² ISO-certified factory is open for scheduled visits.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>How long does it take to get a response?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Sales inquiries are answered within 24 hours. OEM/ODM quotations are typically provided within 2-3 business days after receiving your detailed requirements.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>Can I visit the factory?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Yes. Factory visits are welcome by appointment. Contact us in advance to schedule a tour of our production lines, R&D center, and quality control laboratories.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+</Layout>

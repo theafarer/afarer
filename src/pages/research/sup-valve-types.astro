@@ -1,0 +1,78 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `SUP Valve Types — Halkey Roberts, Military, and Beyond | ${SITE.name}`,
+  description:
+    'Complete guide to inflatable SUP valve types: Halkey-Roberts, military-style, Boston, and leaf valves. How they work, compatibility, maintenance, and replacement.',
+  ignoreTitleTemplate: true,
+};
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'SUP Valve Types Guide',
+  description: metadata.description,
+  author: { '@type': 'Organization', name: SITE.name },
+  datePublished: '2026-07-27',
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd data={jsonLd} />
+  <article class="max-w-4xl mx-auto px-6 py-16">
+    <nav class="text-sm text-gray-500 mb-8">
+      <a href="/" class="hover:text-sky-600">{SITE.name}</a><span class="mx-2">/</span><a
+        href="/research"
+        class="hover:text-sky-600">Research</a
+      ><span class="mx-2">/</span><span class="text-gray-900">SUP Valve Types</span>
+    </nav>
+    <div class="mb-4">
+      <span
+        class="inline-block text-xs font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full"
+        >Engineering</span
+      ><span class="ml-3 text-sm text-gray-400">6 min read</span>
+    </div>
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">SUP Valve Types Guide</h1>
+    <p class="text-xl text-gray-500 mb-12 leading-relaxed">
+      The valve is the most mechanically complex component on an inflatable SUP. Understanding valve types,
+      compatibility, and maintenance prevents inflation problems and extends board life.
+    </p>
+    <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600">
+      <h2>Halkey-Roberts Valve</h2>
+      <p>
+        The most common SUP valve standard. Halkey-Roberts (HR) valves feature a spring-loaded central pin that opens
+        when pressed, allowing rapid deflation. The valve body is threaded to accept a screw-on pump adapter. HR valves
+        are designed for high-pressure inflation (12-20 PSI) and are the preferred standard across the SUP industry.
+        Advantages include wide pump compatibility, easy replacement (threaded base), and reliable sealing at high
+        pressure. Some budget HR valves use plastic internals that can crack — quality valves use brass or stainless
+        steel internals.
+      </p>
+      <h2>Military-Style Valve</h2>
+      <p>
+        Also called "military" or "leaf" valves, these are simpler than HR valves with fewer moving parts. They use a
+        spring-loaded flap rather than a central pin. Deflation requires manually holding the flap open. Military valves
+        are common on lower-cost SUPs and some European brands. They are less prone to mechanical failure (fewer parts)
+        but harder to deflate quickly and less compatible with standard pump adapters. Some paddlers prefer them for
+        river running where simplicity and robustness outweigh convenience.
+      </p>
+      <h2>Boston Valve</h2>
+      <p>
+        A two-part valve system with an inner plug and outer cap. Boston valves are commonly found on kayaks and
+        whitewater SUPs. The inner plug seals the air chamber; the outer cap protects the plug. They allow high-volume
+        airflow for fast inflation/deflation but require two hands to operate. Boston valves are less common on
+        recreational SUPs but are standard on many whitewater-specific boards where rapid deflation for self-rescue is
+        critical.
+      </p>
+      <h2>Valve Maintenance</h2>
+      <p>
+        All valve types require periodic inspection. Check the O-ring or gasket for cracks or deformation — a damaged
+        gasket causes slow leaks. Clean valve threads with a soft brush to remove sand and debris. Apply silicone-based
+        valve lubricant (not petroleum-based, which degrades rubber) annually. For HR valves, test the spring action —
+        the pin should snap back firmly. If the valve leaks around the base (not through the opening), the base gasket
+        may need replacement or tightening.
+      </p>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,68 @@
+﻿hero:
+  tagline: Marine Expertise
+  title: 'Tiår med marinteknikk<br />i hvert skrog'
+  subtitle: 'afarer kombinerer dyp materialvitenskap, presisjonsproduksjon og virkelighetstesting for å produsere farkoster som yter når det teller.'
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
+    alt: afarer marine engineering and R&D team at work
+expertise_materials:
+  tagline: Material Science
+  title: 'Velg riktig material<br />for hver applikasjon'
+  subtitle: 'Vi jobber med tre kjernematerialer —hver valgt for spesifikke bruksområder og ytelseskrav.'
+  columns: 3
+  items:
+    - title: Marine-Grade PVC
+      description: '1100 denier PVC fabric —our most versatile material. UV-stabilized, abrasion-resistant, and REACH compliant. Ideal for recreational boats, SUP boards, and SUPs where weight and cost efficiency matter.'
+      icon: tabler:droplet
+    - title: Premium Hypalon/CSM
+      description: 'Overlegen kjemisk motstand og UV-stabilitet. Hypalon-båter kan vare 15-20 år med riktig pleie. Anbefales for kommersielle, rednings- og militære applikasjoner hvor langsiktig holdbarhet er kritisk.'
+      icon: tabler:shield
+    - title: Fiberglass & Aluminum
+      description: 'Dype V-formede glassfiberskrog for SUP-er og patruljebåter —bølgeskjærende ytelse i røffe forhold. Aluminiumskrog for tunge kommersielle arbeidsbåter som krever maksimal styrke og lastekapasitet.'
+      icon: tabler:building-arch
+expertise_manufacturing:
+  tagline: Manufacturing Capabilities
+  title: 'Presisjonsproduksjon<br />på hvert trinn'
+  subtitle: '12.000 m²-anlegget vårt er utstyrt med spesialisert maskineri for hvert produksjonstrinn.'
+  columns: 2
+  items:
+    - title: CNC Cutting
+      description: 'Datastyrt kutting sikrer presise, repeterbare stoffpaneler med minimalt avfall. Hver bit passer nøyaktig som designet.'
+      icon: tabler:cpu
+    - title: High-Frequency Welding
+      description: 'Industriell HF-sveising skaper sømmer sterkere enn basismaterialet. Konsekvent temperatur- og trykkkontroll sikrer lufttette forseglinger på tvers av hver produksjonskjøring.'
+      icon: tabler:bolt
+    - title: Drop Stitch Core Assembly
+      description: 'Tusenvis av polyestertråder forbinder øvre og nedre stofflag, noe som muliggjør høytrykksoppblåsing (15-20 PSI) for stive, stabile SUP-brett og gulv.'
+      icon: tabler:building-arch
+    - title: Pressure Testing
+      description: 'Hvert oppblåsbart produkt trykktestes før forsendelse. SUP-rør testes ved 1,5x nominelt trykk —hvis det holder der, vil det prestere på vannet.'
+      icon: tabler:wind
+    - title: Seam Strength Testing
+      description: 'Tilfeldige prøver fra hver produksjonsbatch gjennomgår destruktiv sømstyrketesting. Resultater logges og er sporbare til spesifikke produksjonskjøringer.'
+      icon: tabler:files
+    - title: Water Testing
+      description: 'Hver SUP-modell gjennomgår sjøprøver før sertifisering. Virkelighetstesting i kystforhold validerer ytelse, håndtering og stabilitet.'
+      icon: tabler:droplet
+expertise_design:
+  tagline: Design & Engineering
+  title: 'Konstruert for reelle forhold'
+  subtitle: 'Designfilosofien vår starter med hvordan båten skal brukes —deretter bygger vi konstruksjonen rundt det bruksområdet.'
+  items:
+    - title: Deep-V Hull Design
+      description: "Our fiberglass hulls feature calculated deadrise angles optimized for each model's length and intended use. Steeper V for rough-water performance, shallower for stability."
+    - title: Multi-Chamber Safety
+      description: 'Hver båt har 3-7 uavhengige luftkammer. Hvis ett rom kompromitteres, holder de resterende kamrene båten flytende og operativ.'
+    - title: Ergonomic Layout
+      description: 'Konsollposisjon, rørhøyde og seteplassering er designet rundt operatørens komfort under lengre bruk —enten det er patruljering, fiske eller transport.'
+    - title: Custom Configuration
+      description: 'Rørfarger, konsollkonfigurasjon, drivstoffkapasitet, tilbehørsfester —hver modell kan tilpasses for å matche spesifikke operasjonelle krav.'
+cta:
+  title: 'Har du en spesifikk applikasjon i tankene?'
+  subtitle: 'Ingeniørteamet vårt kan gi råd om materialvalg, design og produksjon for prosjektet ditt.'
+  actions:
+    - variant: primary
+      text: Ask our engineers
+      href: /contact
+    - text: View product range
+      href: /products

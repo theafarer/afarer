@@ -1,0 +1,166 @@
+---
+export const prerender = true;
+
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `Resort SUP Fleet Solutions — ${SITE.name} | Hospitality Water Sports`,
+  description:
+    'Complete inflatable SUP fleet programs for resorts, hotels, and waterfront properties. Commercial-grade boards, custom branding, and staff training support.',
+};
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Solutions', href: '/solutions/' }, { name: 'Resorts & Hotels' }];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero
+    tagline="Resort Water Sports"
+    title="Complete SUP Fleet Programs for Hospitality Properties"
+    subtitle="Commercial-grade inflatable SUP fleets with custom branding, staff training, and ongoing support — tailored for resorts, hotels, and waterfront clubs."
+    image="https://assets.afarer.com/images/afarer/solutions/afarer-resort-sup-fleet.webp"
+  />
+  <Stats
+    title="Trusted by hospitality leaders worldwide"
+    stats={[
+      { title: 'Hotels Served', amount: '200+' },
+      { title: 'SUPs Delivered', amount: '12,000+' },
+      { title: 'Avg Fleet Size', amount: '24' },
+      { title: 'Retention Rate', amount: '94%' },
+    ]}
+  />
+  <Content
+    tagline="The Challenge"
+    title="Hospitality guests expect premium water experiences"
+    subtitle="Hotels and resorts face equipment that wears out mid-season, inconsistent quality across large fleets, and lack of branding options."
+    content="Standard consumer SUPs aren't built for daily rental use. They fade, delaminate, and lose rigidity under constant inflation cycles. Meanwhile, guests expect Instagram-worthy equipment that matches the property's aesthetic. Without a dedicated fleet program, properties end up replacing boards every season — driving up costs and disappointing guests."
+  />
+  <Content
+    tagline="Our Solution"
+    title="Purpose-built commercial SUP fleets"
+    subtitle="Fleets engineered for daily rental, easy storage, and quick turnaround between guests."
+    content="- Drop-stitch military-grade PVC withstands 1000+ inflation cycles\n- UV-resistant graphics maintain color for 3+ seasons\n- Custom colorways and logo printing for brand alignment\n- Integrated RFID tracking for fleet management\n- Staff training program included with every fleet order\n- Dedicated account manager with 48-hour replacement guarantee"
+  />
+  <Content
+    tagline="Recommended Models"
+    title="Best SUPs for Resort Fleets"
+    subtitle="Boards selected for durability, stability, and guest satisfaction."
+    items={[
+      {
+        title: 'SUP Explorer 11',
+        description: 'Wide-body all-rounder, perfect for first-time guests. 11\' x 34" x 6".',
+      },
+      { title: 'SUP Tropical Breeze', description: 'Lightweight touring board with premium graphics. 10\'6" x 32".' },
+      { title: 'SUP Medusa Glow', description: 'LED-lit night SUP for evening lagoon experiences.' },
+    ]}
+  />
+  <!-- Related Products -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <div class="text-center mb-8">
+      <span class="text-sm font-semibold text-sky-600 tracking-[0.15em] uppercase">Featured Products</span>
+      <h2 class="mt-2 text-2xl font-bold text-gray-900">SUPs for Resort Fleets</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a
+        href="/en/products/sup-explorer-11"
+        class="group bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-sky-700">SUP Explorer 11</h3>
+        <p class="mt-1 text-sm text-gray-500">Wide-body all-rounder for first-time guests. 11' x 34" x 6".</p>
+        <span class="mt-3 inline-block text-sm font-medium text-sky-600">View Product →</span>
+      </a>
+      <a
+        href="/en/products/sup-tropical-breeze"
+        class="group bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-sky-700">SUP Tropical Breeze</h3>
+        <p class="mt-1 text-sm text-gray-500">Lightweight touring board with premium graphics.</p>
+        <span class="mt-3 inline-block text-sm font-medium text-sky-600">View Product →</span>
+      </a>
+      <a
+        href="/en/products/sup-medusa-glow"
+        class="group bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-sky-700">SUP Medusa Glow</h3>
+        <p class="mt-1 text-sm text-gray-500">LED-lit night SUP for evening lagoon experiences.</p>
+        <span class="mt-3 inline-block text-sm font-medium text-sky-600">View Product →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <div class="text-center mb-10">
+      <span class="text-sm font-semibold text-sky-600 tracking-[0.15em] uppercase">FAQs</span>
+      <h2 class="mt-2 text-3xl font-bold text-gray-900">Resort Fleet FAQ</h2>
+      <p class="mt-3 text-gray-500">Common questions about our resort fleet programs.</p>
+    </div>
+    <div class="space-y-4">
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>What is included in a resort SUP fleet program?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Our fleet programs include commercial-grade inflatable SUPs with custom branding, staff training certification, RFID tracking for fleet management, and a dedicated account manager with 48-hour replacement guarantee.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>Can resorts get custom-branded SUP boards?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Yes. Custom colorways, logo heat-transfer or screen printing, and branded packaging are included. Boards can be designed to match your property's aesthetic for Instagram-worthy guest experiences.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>How durable are resort fleet SUPs?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Our commercial-grade SUPs use military-grade PVC with UV-resistant graphics that maintain color for 3+ seasons. Boards are engineered to withstand 1000+ inflation cycles and daily rental use.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>What training do you provide for resort staff?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Staff training programs include on-site certification for rental and instruction staff, covering equipment handling, guest safety, basic maintenance, and rental operations.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+  <CallToAction
+    title="Ready to upgrade your resort fleet?"
+    subtitle="Get a custom fleet proposal with pricing, branding mockups, and deployment timeline."
+    actions={[
+      { text: 'Request Fleet Quote', href: '/contact?fleet=resorts-hotels', variant: 'primary', type: 'button' },
+      { text: 'View Case Studies', href: '/evidence', variant: 'secondary', type: 'button' },
+    ]}
+  />
+  <JsonLd
+    type="Service"
+    service={{
+      name: 'Resort SUP Fleet Solutions',
+      description: 'Complete inflatable SUP fleet programs for resorts, hotels, and waterfront properties.',
+      serviceType: 'Hospitality SUP Solutions',
+      areaServed: ['Global'],
+      url: '/solutions/resorts-hotels',
+      items: [
+        { name: 'Custom Fleet Programs', description: 'Commercial-grade SUP fleets with custom branding' },
+        { name: 'Staff Training', description: 'On-site certification for rental and instruction staff' },
+        { name: 'Ongoing Support', description: 'Dedicated account manager with 48-hour replacement guarantee' },
+      ],
+    }}
+  />
+<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Solutions', item: 'https://afarer.com/solutions/' }, { position: 3, name: 'Resorts & Hotels', item: 'https://afarer.com/solutions/resorts-hotels/' }] }} />
+<JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What is included in a resort SUP fleet program?", acceptedAnswer: { "@type": "Answer", text: "Our fleet programs include commercial-grade inflatable SUPs with custom branding, staff training certification, RFID tracking for fleet management, and a dedicated account manager with 48-hour replacement guarantee." } }, { "@type": "Question", name: "Can resorts get custom-branded SUP boards?", acceptedAnswer: { "@type": "Answer", text: "Yes. Custom colorways, logo heat-transfer or screen printing, and branded packaging are included. Boards can be designed to match your property's aesthetic for Instagram-worthy guest experiences." } }, { "@type": "Question", name: "How durable are resort fleet SUPs?", acceptedAnswer: { "@type": "Answer", text: "Our commercial-grade SUPs use military-grade PVC with UV-resistant graphics that maintain color for 3+ seasons. Boards are engineered to withstand 1000+ inflation cycles and daily rental use." } }, { "@type": "Question", name: "What training do you provide for resort staff?", acceptedAnswer: { "@type": "Answer", text: "Staff training programs include on-site certification for rental and instruction staff, covering equipment handling, guest safety, basic maintenance, and rental operations." } }, { "@type": "Question", name: "What is the typical fleet size for a resort?", acceptedAnswer: { "@type": "Answer", text: "Average fleet size is 24 boards. Resorts typically start with 10-20 boards for initial programs and scale up based on guest demand and occupancy rates." } }] }} />
+</Layout>

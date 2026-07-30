@@ -1,0 +1,58 @@
+﻿hero_text:
+  tagline: Resources
+  title: 'Centre de Téléchargement & Guides d’Achat'
+  subtitle: 'Accédez aux catalogues produits, guides OEM, listes de contrôle et documentation technique'
+features3_downloads:
+  tagline: Downloads
+  title: 'Documentation Produit<br />& Ressources Acheteur'
+  isBeforeContent: false
+  columns: 2
+  items:
+    - title: '2026 Marine Product Catalog'
+      description: 'Gamme complète : SUP, bateaux pneumatiques, planches SUP, SUPs et accessoires. Format PDF.'
+      icon: tabler:file-text
+    - title: 'Guide de Fabrication OEM'
+      description: 'Tout sur les partenariats OEM/ODM : processus, MOQ, personnalisation, qualité, expédition.'
+      icon: tabler:building-factory
+    - title: 'Guide d’Achat Bateau SUP'
+      description: 'Comment choisir le bon SUP : matériaux, moteur, taille et configuration.'
+      icon: tabler:file-description
+    - title: 'Liste de Contrôle Fournisseur SUP'
+      description: "Considérations clés pour choisir un fabricant SUP : qualité, certifications, MOQ,         audit d'usine."
+      icon: tabler:clipboard-check
+    - title: 'Guide des Matériaux pour Bateaux Pneumatiques'
+      description: 'PVC vs Hypalon : durabilité, résistance UV, durée de vie, réparation, coût.'
+      icon: tabler:files
+    - title: 'Modèle de Cahier des Charges de Fabrication Personnalisée'
+      description: 'Téléchargez notre modèle, remplissez-le et renvoyez-le pour un devis sous une semaine.'
+      icon: tabler:template
+faqs:
+  title: Frequently Asked Questions
+  subtitle: 'Questions sur nos produits, processus et partenariat.'
+  columns: 2
+  items:
+    - title: What is the minimum order quantity?
+      description: 'La MOQ varie selon la catégorie. SUP à partir de 10, SUP à partir de 50 unités.'
+      icon: tabler:help-circle
+    - title: Can I get samples before placing an order?
+      description: 'Oui, afarer propose des échantillons. Coûts négociables, souvent crédités.'
+      icon: tabler:package
+    - title: What payment terms are available?
+      description: '30% dépôt, 70% avant expédition. LC pour clients éligibles.'
+      icon: tabler:currency-dollar
+    - title: How long does production take?
+      description: 'Délais typiques : SUP 30-45j, SUP 20-30j, pneumatiques 25-35j. Prototypage +15-30j.'
+      icon: tabler:calendar-clock
+    - title: What certifications do your products carry?
+      description: 'Certification CE, USCG, ISO, BSCI, REACH.'
+      icon: tabler:certificate
+    - title: Do you offer custom packaging and branding?
+      description: 'Oui. Emballage personnalisé avec logo, couleurs et identité.'
+      icon: tabler:color-swatch
+cta:
+  title: 'Besoin d’aide pour trouver la ressource ?'
+  subtitle: 'Contactez notre équipe pour des conseils sur les produits, partenariats OEM ou spécifications.'
+  actions:
+    - variant: primary
+      text: Contact our team
+      href: /contact

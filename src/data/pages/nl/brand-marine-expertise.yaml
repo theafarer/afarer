@@ -1,0 +1,68 @@
+﻿hero:
+  tagline: Marine Expertise
+  title: 'Decennia van Maritieme Techniek<br />in Elk Romp'
+  subtitle: 'afarer combineert diepgaande materiaalwetenschap, precisieproductie en praktijktesten om vaartuigen te produceren die presteren wanneer het erop aankomt.'
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
+    alt: afarer marine engineering and R&D team at work
+expertise_materials:
+  tagline: Material Science
+  title: 'Het Juiste Materiaal Kiezen<br />voor Elke Toepassing'
+  subtitle: 'We werken met drie kernmaterialen —elk geselecteerd voor specifieke gebruikssituaties en prestatie-eisen.'
+  columns: 3
+  items:
+    - title: Marine-Grade PVC
+      description: '1100 denier PVC fabric —our most versatile material. UV-stabilized, abrasion-resistant, and REACH compliant. Ideal for recreational boats, SUP boards, and SUPs where weight and cost efficiency matter.'
+      icon: tabler:droplet
+    - title: Premium Hypalon/CSM
+      description: 'Superieure chemische bestendigheid en UV-stabiliteit. Hypalon boten kunnen 15-20 jaar meegaan met goed onderhoud. Aanbevolen voor commerciële, reddings- en militaire toepassingen waar lange termijn duurzaamheid cruciaal is.'
+      icon: tabler:shield
+    - title: Fiberglass & Aluminum
+      description: "Deep-V glasvezelrompen voor SUP's en patrouilleboten —golfsnijdende prestaties in ruwe omstandigheden. Aluminium rompen voor zware commerciële werkboten die maximale sterkte en laadvermogen vereisen."
+      icon: tabler:building-arch
+expertise_manufacturing:
+  tagline: Manufacturing Capabilities
+  title: 'Precisieproductie<br />bij Elke Stap'
+  subtitle: 'Onze 12.000 m² faciliteit is uitgerust met gespecialiseerde machines voor elke productiefase.'
+  columns: 2
+  items:
+    - title: CNC Cutting
+      description: 'Computergestuurd snijden zorgt voor precieze, herhaalbare stofpanelen met minimaal afval. Elk stuk past precies zoals ontworpen.'
+      icon: tabler:cpu
+    - title: High-Frequency Welding
+      description: 'Industrieel HF-lassen creëert naden die sterker zijn dan het basismateriaal. Consistente temperatuur- en drukregeling zorgt voor luchtdichte afdichtingen bij elke productierun.'
+      icon: tabler:bolt
+    - title: Drop Stitch Core Assembly
+      description: 'Duizenden polyesterdraden verbinden de bovenste en onderste stoflagen, waardoor hogedrukinflatie (15-20 PSI) mogelijk is voor stijve, stabiele SUP-planken en vloeren.'
+      icon: tabler:building-arch
+    - title: Pressure Testing
+      description: 'Elk opblaasbaar product wordt voor verzending aan een druktest onderworpen. SUP-buizen worden getest op 1,5x de nominale druk —als het daar standhoudt, presteert het op het water.'
+      icon: tabler:wind
+    - title: Seam Strength Testing
+      description: 'Willekeurige monsters van elke productiebatch ondergaan destructieve naadsterktetesten. Resultaten worden geregistreerd en zijn traceerbaar naar specifieke productieruns.'
+      icon: tabler:files
+    - title: Water Testing
+      description: 'Elk SUP-model ondergaat zeeproeven vóór certificering. Praktijktesten in kustomstandigheden valideren prestaties, handling en stabiliteit.'
+      icon: tabler:droplet
+expertise_design:
+  tagline: Design & Engineering
+  title: 'Ontworpen voor Echte Omstandigheden'
+  subtitle: 'Onze ontwerpfilosofie begint met hoe de boot zal worden gebruikt —en bouwt vervolgens de engineering rond die gebruikssituatie.'
+  items:
+    - title: Deep-V Hull Design
+      description: "Our fiberglass hulls feature calculated deadrise angles optimized for each model's length and intended use. Steeper V for rough-water performance, shallower for stability."
+    - title: Multi-Chamber Safety
+      description: 'Elke boot heeft 3-7 onafhankelijke luchtkamers. Als één compartiment wordt aangetast, houden de overige kamers de boot drijvend en operationeel.'
+    - title: Ergonomic Layout
+      description: 'Consolepositie, buishoogte en stoelplaatsing zijn ontworpen rond het comfort van de gebruiker tijdens langdurig gebruik —of het nu patrouilleren, vissen of transporteren is.'
+    - title: Custom Configuration
+      description: 'Buiskleuren, consoleconfiguratie, brandstofcapaciteit, accessoirebevestigingen —elk model kan worden aangepast aan specifieke operationele vereisten.'
+cta:
+  title: 'Heeft u een specifieke toepassing in gedachten?'
+  subtitle: 'Ons technische team kan adviseren over materiaalkeuze, ontwerp en productie voor uw project.'
+  actions:
+    - variant: primary
+      text: Ask our engineers
+      href: /contact
+    - text: View product range
+      href: /products

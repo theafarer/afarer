@@ -1,0 +1,92 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `Fusion Lamination vs Glue — Inflatable SUP Seam Technology | ${SITE.name}`,
+  description:
+    'Technical comparison of fusion lamination (RF welding) vs adhesive bonding for inflatable SUP seams. Strength, durability, manufacturing speed, and quality indicators.',
+  ignoreTitleTemplate: true,
+};
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Fusion Lamination vs Glue — SUP Seam Technology',
+  description: metadata.description,
+  author: { '@type': 'Organization', name: SITE.name },
+  datePublished: '2026-07-27',
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd data={jsonLd} />
+  <article class="max-w-4xl mx-auto px-6 py-16">
+    <nav class="text-sm text-gray-500 mb-8">
+      <a href="/" class="hover:text-sky-600">{SITE.name}</a><span class="mx-2">/</span><a
+        href="/research"
+        class="hover:text-sky-600">Research</a
+      ><span class="mx-2">/</span><span class="text-gray-900">Fusion Lamination vs Glue</span>
+    </nav>
+    <div class="mb-4">
+      <span
+        class="inline-block text-xs font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full"
+        >Materials</span
+      ><span class="ml-3 text-sm text-gray-400">8 min read</span>
+    </div>
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">Fusion Lamination vs Glue</h1>
+    <p class="text-xl text-gray-500 mb-12 leading-relaxed">
+      The seam bonding method is the single most important factor in inflatable SUP durability. Fusion lamination and
+      adhesive bonding produce fundamentally different joint characteristics.
+    </p>
+    <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600">
+      <h2>Fusion Lamination (RF Welding)</h2>
+      <p>
+        Radio-frequency (RF) welding uses electromagnetic energy at 27.12 MHz to excite PVC molecules at the seam
+        interface. The molecules vibrate and generate heat, melting the PVC layers together. When the RF field is
+        removed, the material cools and solidifies into a single homogeneous joint. The bond strength equals or exceeds
+        the parent material — the seam is stronger than the surrounding PVC.
+      </p>
+      <h3>Process Parameters</h3>
+      <ul>
+        <li>Frequency: 27.12 MHz (ISM band)</li><li>Temperature at weld interface: 160-200°C (320-392°F)</li><li>
+          Weld time: 3-8 seconds per seam segment
+        </li><li>Pressure: 40-80 PSI at the electrode</li><li>Cooling time: 2-4 seconds under maintained pressure</li>
+      </ul>
+      <h3>Advantages</h3>
+      <ul>
+        <li>Molecular bond — no adhesive layer to fail</li><li>Consistent, repeatable weld quality</li><li>
+          No curing time — immediate full strength
+        </li><li>No VOCs or solvent emissions</li><li>Higher temperature resistance than adhesive bonds</li>
+      </ul>
+      <h2>Adhesive Bonding</h2>
+      <p>
+        Adhesive bonding uses two-component polyurethane or contact cement to join PVC layers. The adhesive is applied
+        to both surfaces, allowed to dry to tack, then pressed together under rollers or in a laminating press. Full
+        cure takes 24-72 hours depending on temperature and humidity. Adhesive bonds rely on mechanical interlocking and
+        surface chemistry rather than molecular fusion.
+      </p>
+      <h3>Advantages</h3>
+      <ul>
+        <li>Lower equipment investment</li><li>Can bond dissimilar materials (PVC to fabric, etc.)</li><li>
+          More forgiving of surface contamination
+        </li><li>Lower energy consumption per board</li>
+      </ul>
+      <h3>Limitations</h3>
+      <ul>
+        <li>Adhesive layer is the weakest point — peel failure mode</li><li>
+          Vulnerable to heat — adhesives soften at 60-80°C
+        </li><li>Curing time slows production</li><li>Quality depends on surface preparation consistency</li><li>
+          Solvent-based adhesives emit VOCs
+        </li>
+      </ul>
+      <h2>Quality Indicators</h2>
+      <p>
+        To identify fusion-laminated vs glue-bonded boards: fusion seams show a smooth, uniform bead line at the rail
+        edge with no visible adhesive squeeze-out. Glue-bonded seams may show dried adhesive residue. On fusion seams,
+        the rail and deck PVC blend together seamlessly. On glue-bonded boards, you can sometimes separate the layers at
+        the seam edge with fingernail pressure — a sign of a weak bond.
+      </p>
+    </div>
+  </article>
+</Layout>

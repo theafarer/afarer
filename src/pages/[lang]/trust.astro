@@ -1,0 +1,162 @@
+---
+export const prerender = true;
+
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/trust.ts';
+import { languages } from '~/i18n/config';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'trust');
+
+const hero = page.hero ?? {};
+const stats = page.stats ?? {};
+const certs = page.features3_certifications ?? {};
+const testimonials = page.testimonials ?? {};
+const steps = page.steps2_manufacturing ?? {};
+const faqs = page.faqs ?? {};
+const cta = page.cta ?? {};
+const factoryAudit = page.factory_audit ?? {};
+const warrantySection = page.warranty_section ?? {};
+const trustResources = page.trust_resources ?? {};
+
+const metadata = {
+  title: `Trust ${SITE.name} — Certifications, Quality & Global Standards`,
+  description: `${SITE.name} products are CE certified. Learn about our quality testing, material compliance, and the standards behind every product.`,
+};
+const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Trust' }];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero tagline={hero.tagline} image={hero.image} title={hero.title} subtitle={hero.subtitle} />
+
+  <Stats title={stats.title} stats={stats.stats} />
+
+  <Features3
+    title={certs.title}
+    subtitle={certs.subtitle}
+    columns={certs.columns}
+    isBeforeContent={certs.isBeforeContent}
+    items={certs.items}
+  />
+
+  <Testimonials tagline={testimonials.tagline} title={testimonials.title} subtitle={testimonials.subtitle} />
+
+  <Steps2 title={steps.title} subtitle={steps.subtitle} items={steps.items} />
+
+  <!-- Factory Audit -->
+  {
+    factoryAudit.stats?.length ? (
+      <section class="relative py-28 md:py-36 px-6 bg-secondary overflow-hidden">
+        <div class="max-w-6xl mx-auto relative z-10">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-white">{factoryAudit.title}</h2>
+            <p class="mt-4 text-lg text-white/60 max-w-2xl mx-auto">{factoryAudit.subtitle}</p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {factoryAudit.stats.map((s: any) => (
+              <div class="text-center">
+                <div class="text-4xl md:text-5xl font-bold text-primary">{s.value}</div>
+                <p class="mt-2 text-sm text-white/50 uppercase tracking-wider">{s.label}</p>
+              </div>
+            ))}
+          </div>
+          <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {factoryAudit.highlights?.map((h: any) => (
+              h.link ? (
+                <a href={h.link.startsWith('/') ? '/' + lang + h.link : h.link} class="block bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all">
+                  <h3 class="text-lg font-semibold text-white">{h.title}</h3>
+                  <p class="mt-2 text-sm text-white/60">{h.desc}</p>
+                  <span class="mt-3 inline-flex text-sm text-primary font-medium">Learn more →</span>
+                </a>
+              ) : (
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                  <h3 class="text-lg font-semibold text-white">{h.title}</h3>
+                  <p class="mt-2 text-sm text-white/60">{h.desc}</p>
+                </div>
+              )
+            ))}
+          </div>
+        </div>
+      </section>
+    ) : null
+  }
+
+  <!-- Warranty & Support -->
+  {
+    warrantySection.items?.length ? (
+      <section class="relative py-28 md:py-36 px-6 bg-white overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-secondary">{warrantySection.title}</h2>
+            <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">{warrantySection.subtitle}</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {warrantySection.items.map((item: any) => (
+              item.link ? (
+                <a href={item.link.startsWith('/') ? '/' + lang + item.link : item.link} class="bg-[#F8FAFB] rounded-3xl p-8 hover:shadow-lg transition-all hover:-translate-y-0.5 group">
+                  <h3 class="text-xl font-bold text-secondary">{item.title}</h3>
+                  <p class="mt-3 text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                  <span class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary group-hover:gap-2 transition-all">Learn more →</span>
+                </a>
+              ) : (
+                <div class="bg-[#F8FAFB] rounded-3xl p-8">
+                  <h3 class="text-xl font-bold text-secondary">{item.title}</h3>
+                  <p class="mt-3 text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                </div>
+              )
+            ))}
+          </div>
+        </div>
+      </section>
+    ) : null
+  }
+
+  <!-- Trust Resources -->
+  {
+    trustResources.items?.length ? (
+      <section class="relative py-28 md:py-36 px-6 bg-[#F8FAFB] overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-secondary">{trustResources.title}</h2>
+            <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">{trustResources.subtitle}</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {trustResources.items.map((item: any) => (
+              <div class="bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition-all">
+                <h3 class="text-lg font-semibold text-secondary">{item.title}</h3>
+                <p class="mt-2 text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div class="mt-12 text-center">
+            <a
+              href={trustResources.cta_link ? '/' + lang + trustResources.cta_link : '/' + lang + '/contact'}
+              class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all"
+            >
+              {trustResources.cta_text || 'Request Trust Resources'}
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    ) : null
+  }
+
+  <FAQs title={faqs.title} subtitle={faqs.subtitle} columns={faqs.columns} items={faqs.items} />
+
+  <CallToAction title={cta.title} subtitle={cta.subtitle} actions={cta.actions} />
+</Layout>

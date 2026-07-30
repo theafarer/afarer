@@ -1,0 +1,63 @@
+hero:
+  tagline: Certifications & Standards
+  title: 'Laatusertifioinnit<br />& Vaatimustenmukaisuusstandardit'
+  subtitle: 'afarer tuotteet valmistetaan kansainvälisten meriturvallisuusstandardien, laadunhallintajärjestelmien ja ympäristömääräysten mukaisesti.'
+  image:
+    src: https://assets.afarer.com/images/afarer/certifications/certifications-hero.webp
+    alt: afarer quality certifications and compliance documentation
+content_certifications:
+  tagline: Our Certifications
+  title: 'Sertifioitu laatu,<br />maailmanlaajuisesti tunnustettu'
+  subtitle: 'Jokaista afarer-tuotetta tukevat sertifioinnit, jotka osoittavat sitoutumisemme laatuun, turvallisuuteen ja ympäristövastuuseen.'
+  items:
+    - title: 'CE Certified'
+      description: 'Kaikki afarer-tuotteet täyttävät eurooppalaiset CE-merkintävaatimukset vapaa-ajan vesikulkuneuvoille varmistaen turvallisuus-, terveys- ja ympäristönsuojelustandardien täyttymisen.'
+      icon: tabler:certificate
+    - title: 'ISO 9001:2015'
+      description: 'Laadunhallintajärjestelmämme on ISO 9001:2015 -sertifioitu ja kattaa kumiveneiden ja merivarusteiden suunnittelun, valmistuksen ja jakelun.'
+      icon: tabler:clipboard-check
+    - title: 'UKCA Marked'
+      description: 'Ison-Britannian markkinoilla myytävät tuotteet kantavat UKCA-merkinnän, joka vahvistaa Ison-Britannian merivarusteita ja henkilökohtaisia vesikulkuneuvoja koskevien määräysten noudattamisen.'
+      icon: tabler:shield
+    - title: 'BSCI Compliant'
+      description: 'afarer on BSCI (Business Social Compliance Initiative) -auditoitu, mikä osoittaa eettisiä valmistuskäytäntöjä, oikeudenmukaisia työoloja ja toimitusketjun vastuullisuutta.'
+      icon: tabler:heart-handshake
+    - title: 'REACH Compliant'
+      description: 'Kaikki afarer-tuotteissa käytetyt materiaalit täyttävät EU:n REACH-asetuksen kemikaaliturvallisuusvaatimukset, mikä varmistaa, että PVC:ssämme, Hypalonissamme tai komponenteissamme ei ole rajoitettuja aineita.'
+      icon: tabler:flask
+    - title: 'Material Testing'
+      description: 'Kankaat testataan vetolujuuden, repäisylujuuden, UV-hajoamisen ja kylmämurtumisen suhteen. Jokainen tuotantoerä näytteistetään ja varmennetaan.'
+      icon: tabler:test-pipe
+content_factory:
+  tagline: Factory Standards
+  title: 'Valmistuksen erinomaisuus<br />—rakennettu määritysten mukaan'
+  subtitle: '12 000 m² laitoksemme toimii tiukkojen laadunvalvontaprotokollien alla jokaisessa tuotantovaiheessa.'
+  list:
+    - 'Incoming Material Inspection: All raw materials —PVC fabric, Hypalon, aluminum, plywood, adhesives —are tested against specifications before entering production.'
+    - 'In-Process Quality Control: Every production stage has documented QC checkpoints. Weld strength, seam alignment, valve installation, and fitting torque are verified inline.'
+    - 'Pressure Testing: Every inflatable chamber is pressure-tested at 1.5× rated pressure for 24 hours. Leak rate must be zero for passing grade.'
+    - 'Final Inspection: Completed products are inspected for dimensional accuracy, cosmetic finish, accessory completeness, and packaging integrity before shipping.'
+    - 'Batch Traceability: Every product carries a serial number linked to production batch records, enabling full traceability from raw material to finished goods.'
+content_safety:
+  tagline: Marine Safety Standards
+  title: 'Turvallisuus ensin<br />—suunniteltu luotettavaan käyttöön'
+  subtitle: 'afarer-tuotteet on suunniteltu ja testattu täyttämään kansainväliset meriturvallisuusstandardit kaupalliseen ja virkistyskäyttöön.'
+  items:
+    - title: 'ISO 6185'
+      description: 'Kumiveneet täyttävät ISO 6185 -standardit rakenteen, vakauden, kelluvuuden ja kantavuuden osalta.'
+      icon: tabler:sailboat
+    - title: 'ABYC Standards'
+      description: 'Sähköjärjestelmät ja polttoainejärjestelmät noudattavat ABYC-standardeja (American Boat & Yacht Council) turvallisen asennuksen ja käytön takaamiseksi.'
+      icon: tabler:bolt
+    - title: 'SOLAS Compliance'
+      description: 'Turvallisuusvarusteet ja pelastusvälineet täyttävät SOLAS-vaatimukset (Safety of Life at Sea) soveltuvin osin.'
+      icon: tabler:lifebuoy
+cta:
+  title: 'Tarvitsetko sertifioituja tuotteita projektiisi?'
+  subtitle: 'Ota yhteyttä tiimiimme keskustellaksesi sertifiointivaatimuksista, dokumentaatiosta ja vaatimustenmukaisuudesta markkinoillasi.'
+  actions:
+    - variant: primary
+      text: Request certification docs
+      href: /contact
+    - text: View our quality page
+      href: /quality

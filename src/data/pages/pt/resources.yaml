@@ -1,0 +1,58 @@
+﻿hero_text:
+  tagline: Resources
+  title: 'Central de Downloads & Guias do Comprador'
+  subtitle: 'Acesse catálogos de produtos, guias OEM, listas de verificação e documentação técnica'
+features3_downloads:
+  tagline: Downloads
+  title: 'Documentação do Produto<br />& Recursos do Comprador'
+  isBeforeContent: false
+  columns: 2
+  items:
+    - title: '2026 Marine Product Catalog'
+      description: 'Linha completa: RIBs, botes infláveis, pranchas SUP, caiaques e acessórios. Formato PDF.'
+      icon: tabler:file-text
+    - title: 'Guia de Fabricação OEM'
+      description: 'Tudo sobre parcerias OEM/ODM: processo, MOQ, personalização, qualidade, envio.'
+      icon: tabler:building-factory
+    - title: 'Guia do Comprador de Barcos SUP'
+      description: 'Como escolher o SUP certo: materiais, motor, tamanho e configuração.'
+      icon: tabler:file-description
+    - title: 'Lista de Verificação de Fornecedores SUP'
+      description: 'Considerações principais ao escolher fabricante SUP: qualidade, certificações, MOQ, auditoria.'
+      icon: tabler:clipboard-check
+    - title: 'Guia de Materiais para Botes Infláveis'
+      description: 'PVC vs Hypalon: durabilidade, resistência UV, vida útil, reparo, custo.'
+      icon: tabler:files
+    - title: 'Modelo de Brief de Fabricação Personalizada'
+      description: 'Baixe nosso modelo, preencha e envie para orçamento em uma semana.'
+      icon: tabler:template
+faqs:
+  title: Frequently Asked Questions
+  subtitle: 'Perguntas sobre produtos, processo e parceria.'
+  columns: 2
+  items:
+    - title: What is the minimum order quantity?
+      description: 'O MOQ varia por categoria. RIBs a partir de 10, SUP a partir de 50 unidades.'
+      icon: tabler:help-circle
+    - title: Can I get samples before placing an order?
+      description: 'Sim, afarer fornece amostras. Custos negociáveis, frequentemente creditados.'
+      icon: tabler:package
+    - title: What payment terms are available?
+      description: '30% depósito, 70% antes do envio. LC para clientes qualificados.'
+      icon: tabler:currency-dollar
+    - title: How long does production take?
+      description: 'Prazos típicos: SUP 30-45d, SUP 20-30d, infláveis 25-35d. Prototipagem +15-30d.'
+      icon: tabler:calendar-clock
+    - title: What certifications do your products carry?
+      description: 'Certificação CE, USCG, ISO, BSCI, REACH.'
+      icon: tabler:certificate
+    - title: Do you offer custom packaging and branding?
+      description: 'Sim. Embalagem personalizada com logo, cores e identidade.'
+      icon: tabler:color-swatch
+cta:
+  title: 'Precisa de ajuda para encontrar o recurso?'
+  subtitle: 'Contacte nossa equipe para orientação sobre produtos, OEM ou especificações.'
+  actions:
+    - variant: primary
+      text: Contact our team
+      href: /contact

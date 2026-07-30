@@ -1,0 +1,23 @@
+name = "afarer-ai"
+main = "index.ts"
+compatibility_date = "2026-07-08"
+compatibility_flags = ["nodejs_compat"]
+
+routes = [
+  { pattern = "afarer.com/api/chat*", zone_name = "afarer.com" },
+  { pattern = "afarer.com/api/ask*", zone_name = "afarer.com" },
+  { pattern = "afarer.com/api/search*", zone_name = "afarer.com" },
+  { pattern = "afarer.com/api/embed*", zone_name = "afarer.com" },
+  { pattern = "afarer.com/api/ai/*", zone_name = "afarer.com" },
+]
+
+[ai]
+binding = "AI"
+
+[[vectorize]]
+binding = "VECTORIZE"
+index_name = "ai-index"
+
+[[r2_buckets]]
+binding = "DATA_BUCKET"
+bucket_name = "afarer-data"

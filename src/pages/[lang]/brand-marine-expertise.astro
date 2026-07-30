@@ -1,0 +1,62 @@
+﻿---
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export const prerender = true;
+
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/brand-marine-expertise.ts';
+import { languages } from '~/i18n/config';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'brand-marine-expertise');
+
+const hero = page.hero ?? {};
+const materials = page.expertise_materials ?? {};
+const manufacturing = page.expertise_manufacturing ?? {};
+const design = page.expertise_design ?? {};
+const cta = page.cta ?? {};
+const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+
+const metadata = {
+  title: `Marine Engineering Expertise — ${SITE.name} | Material Science & Manufacturing`,
+  description:
+    "Afarer's marine engineering expertise spans PVC/Hypalon fabrication, deep-V hull design, drop stitch technology, and precision manufacturing.",
+};
+const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Brand' }, { name: 'Marine Expertise' }];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero tagline={hero.tagline} image={hero.image} title={hero.title} subtitle={hero.subtitle} />
+  <Features3
+    tagline={materials.tagline}
+    title={materials.title}
+    subtitle={materials.subtitle}
+    columns={materials.columns}
+    items={materials.items}
+  />
+  <Features3
+    tagline={manufacturing.tagline}
+    title={manufacturing.title}
+    subtitle={manufacturing.subtitle}
+    columns={manufacturing.columns}
+    items={manufacturing.items}
+  />
+  <Content
+    tagline={design.tagline}
+    title={design.title}
+    subtitle={design.subtitle}
+    content={design.items?.map((i: any) => `**${i.title}:** ${i.description}`).join('\n\n')}
+  />
+  <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
+</Layout>

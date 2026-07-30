@@ -1,0 +1,78 @@
+﻿hero:
+  tagline: Global Presence
+  title: 'Plus de 50 Pays<br />Sur Chaque Continent'
+  subtitle: 'Des patrouilles côtières européennes aux distributeurs australiens – les bateaux afarer dans le monde.'
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-factory-building.webp
+    alt: afarer global marine manufacturing and distribution
+stats:
+  title: Global Reach
+  stats:
+    - title: Countries
+      amount: '50+'
+    - title: Export Markets
+      amount: Europe, Americas, Asia, Middle East, Oceania
+    - title: Production
+      amount: Qingdao, China
+    - title: US Warehouse
+      amount: Montclair, CA
+features3_markets:
+  tagline: Key Markets
+  title: 'Expertise Régionale<br />pour des Besoins Locaux'
+  subtitle: 'Nous comprenons que chaque marché a des exigences réglementaires différentes.'
+  isBeforeContent: false
+  columns: 4
+  items:
+    - title: Europe & UK
+      description: 'Produits certifiés CE conformes EN ISO 6185. Forte demande dans l’UE.'
+      icon: tabler:map-pin
+    - title: North America
+      description: 'Fabrication approuvée USCG. Entrepôt à Montclair, CA.'
+      icon: tabler:map-pin
+    - title: Australia & Oceania
+      description: 'Marché fort pour SUP en Australie. Bateaux Hypalon appréciés pour la résistance UV.'
+      icon: tabler:map-pin
+    - title: Middle East
+      description: 'Demande croissante pour bateaux de patrouille et sauvetage. SUP à coque aluminium populaires.'
+      icon: tabler:map-pin
+features3_distribution:
+  tagline: Distribution Network
+  title: 'Partenariat avec des Distributeurs<br />dans le Monde'
+  subtitle: 'Nous travaillons avec des distributeurs d’équipements marins, marques OEM et agences.'
+  isBeforeContent: false
+  columns: 3
+  items:
+    - title: OEM/ODM Partnerships
+      description: 'Fabrication marque blanche pour marques mondiales. Tout du design au drop-shipping.'
+      icon: tabler:building
+    - title: Distributor Network
+      description: 'Distributeurs agréés dans 20+ pays avec stock et support local.'
+      icon: tabler:users
+    - title: Government & Institutional
+      description: 'Fourniture directe aux garde-côtes, organisations de secours et programmes militaires.'
+      icon: tabler:building-community
+steps2_logistics:
+  title: 'Logistique & Support Mondiaux'
+  subtitle: 'De l’usine à la destination – nous gérons toute la chaîne.'
+  items:
+    - title: Shipping Options
+      description: 'Fret maritime (FOB Qingdao), fret aérien pour urgences, coursier pour échantillons.'
+      icon: tabler:truck-delivery
+    - title: US Warehouse
+      description: 'Stock à Montclair, CA pour livraison rapide en Amérique du Nord.'
+      icon: tabler:building-warehouse
+    - title: Spare Parts
+      description: 'Pièces détachées afarer d’origine en stock toute l’année.'
+      icon: tabler:package
+    - title: Technical Support
+      description: 'Ligne directe vers notre équipe d’ingénierie pour questions et conseils.'
+      icon: tabler:headset
+cta:
+  title: 'Vous voulez devenir distributeur ?'
+  subtitle: 'Nous développons activement notre réseau de distribution.'
+  actions:
+    - variant: primary
+      text: Partnership inquiry
+      href: /contact
+    - text: View our product range
+      href: /products

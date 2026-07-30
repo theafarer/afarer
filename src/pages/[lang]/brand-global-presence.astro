@@ -1,0 +1,59 @@
+---
+export const prerender = true;
+
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/brand-global-presence.ts';
+import { languages } from '~/i18n/config';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'brand-global-presence');
+
+const hero = page.hero ?? {};
+const stats = page.stats ?? {};
+const markets = page.features3_markets ?? {};
+const distribution = page.features3_distribution ?? {};
+const logistics = page.steps2_logistics ?? {};
+const cta = page.cta ?? {};
+const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+
+const metadata = {
+  title: `Global Presence — ${SITE.name} | Manufacturing & Distribution Worldwide`,
+  description:
+    'Afarer serves 50+ countries from our Qingdao facility and US warehouse in Montclair, CA. Find a distributor or become a partner.',
+};
+const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Brand' }, { name: 'Global Presence' }];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero tagline={hero.tagline} image={hero.image} title={hero.title} subtitle={hero.subtitle} />
+  <Stats title={stats.title} stats={stats.stats} />
+  <Features3
+    tagline={markets.tagline}
+    title={markets.title}
+    subtitle={markets.subtitle}
+    columns={markets.columns}
+    items={markets.items}
+  />
+  <Features3
+    tagline={distribution.tagline}
+    title={distribution.title}
+    subtitle={distribution.subtitle}
+    columns={distribution.columns}
+    items={distribution.items}
+  />
+  <Steps2 title={logistics.title} subtitle={logistics.subtitle} items={logistics.items} />
+  <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
+</Layout>

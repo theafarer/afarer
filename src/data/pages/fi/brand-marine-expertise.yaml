@@ -1,0 +1,68 @@
+﻿hero:
+  tagline: Marine Expertise
+  title: 'Vuosikymmenten meritekniikka<br />jokaisessa rungossa'
+  subtitle: 'afarer yhdistää syvällisen materiaalitieteen, tarkkuusvalmistuksen ja todellisen maailman testauksen tuottaakseen vesikulkuneuvoja, jotka suoriutuvat kun sillä on merkitystä.'
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
+    alt: afarer marine engineering and R&D team at work
+expertise_materials:
+  tagline: Material Science
+  title: 'Oikean materiaalin valinta<br />jokaiseen käyttötarkoitukseen'
+  subtitle: 'Työskentelemme kolmen ydinmateriaalin kanssa —jokainen valittu tiettyihin käyttötapauksiin ja suorituskykyvaatimuksiin.'
+  columns: 3
+  items:
+    - title: Marine-Grade PVC
+      description: '1100 denier PVC fabric —our most versatile material. UV-stabilized, abrasion-resistant, and REACH compliant. Ideal for recreational boats, SUP boards, and SUPs where weight and cost efficiency matter.'
+      icon: tabler:droplet
+    - title: Premium Hypalon/CSM
+      description: 'Erinomainen kemiallinen kestävyys ja UV-stabiilisuus. Hypalon-veneet voivat kestää 15-20 vuotta asianmukaisella hoidolla. Suositellaan kaupallisiin, pelastus- ja sotilassovelluksiin, joissa pitkäaikainen kestävyys on kriittistä.'
+      icon: tabler:shield
+    - title: Fiberglass & Aluminum
+      description: 'Syvä-V lasikuitu rungot SUP-veneille ja partiointiveneille —aallonleikkaava suorituskyky kovissa olosuhteissa. Alumiinirungot raskaisiin kaupallisiin työveneisiin, jotka vaativat maksimaalista lujuutta ja kantavuutta.'
+      icon: tabler:building-arch
+expertise_manufacturing:
+  tagline: Manufacturing Capabilities
+  title: 'Tarkkuusvalmistus<br />joka vaiheessa'
+  subtitle: '12 000 m² laitoksemme on varustettu erikoistuneilla koneilla jokaista tuotantovaihetta varten.'
+  columns: 2
+  items:
+    - title: CNC Cutting
+      description: 'Tietokoneohjattu leikkaus varmistaa tarkat, toistettavat kangaspaneelit mahdollisimman vähällä hukalla. Jokainen osa sopii täsmälleen suunnitellusti.'
+      icon: tabler:cpu
+    - title: High-Frequency Welding
+      description: 'Teollinen HF-hitsaus luo saumoja, jotka ovat vahvempia kuin perusmateriaali. Tasainen lämpötilan ja paineen säätö varmistaa ilmatiiviit tiivisteet jokaisessa tuotantoerässä.'
+      icon: tabler:bolt
+    - title: Drop Stitch Core Assembly
+      description: 'Tuhannet polyesterlangat yhdistävät kankaan ylä- ja alakerroksen mahdollistaen korkeapainetäytön (15-20 PSI) jäykille, vakaille SUP-laudoille ja lattioille.'
+      icon: tabler:building-arch
+    - title: Pressure Testing
+      description: 'Jokainen kumituote painetestataan ennen lähetystä. SUP-putket testataan 1,5-kertaisella nimellispaineella —jos se kestää siellä, se suoriutuu vedellä.'
+      icon: tabler:wind
+    - title: Seam Strength Testing
+      description: 'Satunnaiset näytteet jokaisesta tuotantoerästä käyvät läpi tuhoavan saumanlujuustestauksen. Tulokset kirjataan ja ovat jäljitettävissä tiettyihin tuotantoeriin.'
+      icon: tabler:files
+    - title: Water Testing
+      description: 'Jokainen SUP-malli käy läpi merikokeet ennen sertifiointia. Todellisen maailman testaus rannikko-olosuhteissa vahvistaa suorituskyvyn, käsiteltävyyden ja vakauden.'
+      icon: tabler:droplet
+expertise_design:
+  tagline: Design & Engineering
+  title: 'Suunniteltu todellisiin olosuhteisiin'
+  subtitle: 'Suunnittelufilosofiamme lähtee siitä, miten venettä käytetään —sitten rakennamme tekniikan sen käyttötapauksen ympärille.'
+  items:
+    - title: Deep-V Hull Design
+      description: "Our fiberglass hulls feature calculated deadrise angles optimized for each model's length and intended use. Steeper V for rough-water performance, shallower for stability."
+    - title: Multi-Chamber Safety
+      description: 'Jokaisessa veneessä on 3-7 riippumatonta ilmakammiota. Jos yksi osasto vaurioituu, jäljellä olevat kammiot pitävät veneen pinnalla ja toimintakuntoisena.'
+    - title: Ergonomic Layout
+      description: 'Konsolin sijainti, putkien korkeus ja istuimen sijoitus on suunniteltu käyttäjän mukavuuden ympärille pidempiaikaisessa käytössä —olipa kyseessä partiointi, kalastus tai kuljetus.'
+    - title: Custom Configuration
+      description: 'Putkien värit, konsolin kokoonpano, polttoainekapasiteetti, tarvikekiinnikkeet —jokainen malli voidaan räätälöidä vastaamaan tiettyjä toiminnallisia vaatimuksia.'
+cta:
+  title: 'Onko sinulla tietty sovellus mielessä?'
+  subtitle: 'Insinööritiimimme voi neuvoa materiaalien valinnassa, suunnittelussa ja valmistuksessa projektiisi.'
+  actions:
+    - variant: primary
+      text: Ask our engineers
+      href: /contact
+    - text: View product range
+      href: /products

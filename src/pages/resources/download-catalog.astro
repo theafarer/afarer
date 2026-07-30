@@ -1,0 +1,64 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `Download Catalog – Inflatable SUP & Boat Product Brochures | ${SITE.name}`,
+  description:
+    'Download Afarer product catalogs, technical specifications, and OEM brochures. Inflatable SUP boards, boats, RIBs, and accessories — factory spec sheets.',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="Article"
+    data={{
+      headline: 'Download Afarer Product Catalogs',
+      description: metadata.description,
+      author: { '@type': 'Organization', name: SITE.name },
+      datePublished: '2026-07-27',
+      url: 'https://afarer.com/resources/download-catalog/',
+    }}
+  />
+
+  <section class="max-w-4xl mx-auto py-24 px-6">
+    <span class="text-xs font-semibold text-primary tracking-[0.25em] uppercase">Resources</span>
+    <h1 class="mt-4 text-4xl md:text-5xl font-bold text-secondary">Download Catalog</h1>
+    <p class="mt-4 text-lg text-gray-500">
+      Access Afarer product catalogs, technical data sheets, and OEM brochures. Factory-direct specifications for
+      inflatable SUPs, boats, RIBs, and accessories.
+    </p>
+    <div class="mt-10 grid md:grid-cols-2 gap-6">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-all">
+        <h2 class="text-lg font-bold text-secondary">SUP Product Catalog</h2>
+        <p class="mt-2 text-sm text-gray-500">
+          Complete SUP collection — all-around, touring, adventure, yoga, and kids boards. Specifications, artwork
+          options, and accessory bundles.
+        </p>
+        <span class="inline-block mt-4 text-sm font-medium text-primary">Coming Soon</span>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-all">
+        <h2 class="text-lg font-bold text-secondary">OEM / Private Label Brochure</h2>
+        <p class="mt-2 text-sm text-gray-500">
+          Manufacturing capabilities, minimum order quantities, customization options, and quality control processes for
+          brand partners.
+        </p>
+        <a href="/contact" class="inline-block mt-4 text-sm font-medium text-primary hover:underline"
+          >Request OEM Brochure →</a
+        >
+      </div>
+    </div>
+    <div class="mt-10 p-6 bg-gray-50 rounded-2xl border border-gray-200 text-center">
+      <p class="text-sm text-gray-500">
+        Not finding what you need? Contact our sales team for customized product documentation.
+      </p>
+      <a
+        href="/contact"
+        class="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full text-sm transition-all"
+        >Contact Sales <span>→</span></a
+      >
+    </div>
+  </section>
+</Layout>

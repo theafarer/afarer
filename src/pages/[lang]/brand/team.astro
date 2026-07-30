@@ -1,0 +1,67 @@
+---
+export const prerender = true;
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/brand-team.ts';
+import { languages } from '~/i18n/config';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'brand-team') || {};
+
+const hero = page.hero ?? {};
+const founding = page.founding ?? {};
+const leadership = page.leadership ?? {};
+const philosophy = page.philosophy ?? {};
+const cta = page.cta ?? {};
+
+// Use local image path in dev mode so team-all.webp displays without CDN upload
+const isDev = import.meta.env.DEV;
+const heroImage =
+  isDev && hero.image?.src?.includes('team-all.webp') ? { ...hero.image, src: '/images/team-all.webp' } : hero.image;
+
+const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+
+const metadata = {
+  title: `Team — ${SITE.name} | Marine Engineering & Leadership`,
+  description:
+    'Meet the Afarer team — marine engineers, material scientists, and manufacturing experts with decades of combined experience in inflatable boat design and production.',
+};
+const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Brand', href: `/${lang}/brand/` }, { name: 'Team' }];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero tagline={hero.tagline} image={heroImage} title={hero.title} subtitle={hero.subtitle} />
+  <Features3
+    tagline={founding.tagline}
+    title={founding.title}
+    subtitle={founding.subtitle}
+    columns={4}
+    items={founding.items}
+  />
+  <Features3
+    tagline={leadership.tagline}
+    title={leadership.title}
+    subtitle={leadership.subtitle}
+    columns={leadership.columns}
+    items={leadership.items}
+  />
+  <Content
+    tagline={philosophy.tagline}
+    title={philosophy.title}
+    subtitle={philosophy.subtitle}
+    content={philosophy.list?.map((i: string) => (i ? `- ${i}` : '')).join('\n')}
+  />
+  <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
+</Layout>

@@ -1,0 +1,145 @@
+site:
+  name: Afarer
+  site: 'https://afarer.com'
+  base: '/'
+  trailingSlash: false
+
+  googleSiteVerificationId: ''
+
+# Default SEO metadata
+metadata:
+  title:
+    default: Afarer —Premium SUPs & Water Adventure Accessories
+    template: '%s —Afarer'
+  description: 'Premium SUPs, paddle boards, and water adventure accessories. Commercial-grade inflatable SUP boards, life vests, pumps, and paddles for every adventure.'
+  keywords:
+    - Afarer
+    - SUP
+    - paddleboard
+    - inflatable SUP
+    - drop stitch SUP
+    - stand up paddle board
+    - marine accessories
+  author: Afarer
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: Afarer
+    images:
+      - url: '~/assets/images/default.webp'
+        width: 1200
+        height: 628
+    type: website
+    locale: en_US
+  twitter:
+    handle: '@afarer'
+    site: '@afarer'
+    cardType: summary_large_image
+
+i18n:
+  textDirection: ltr
+
+apps:
+  blog:
+    isEnabled: true
+    postsPerPage: 6
+
+    post:
+      isEnabled: true
+      permalink: '/news/%slug%'
+      robots:
+        index: true
+        follow: true
+
+    list:
+      isEnabled: true
+      pathname: 'news'
+      robots:
+        index: true
+        follow: true
+
+    category:
+      isEnabled: true
+      pathname: 'category'
+      robots:
+        index: true
+        follow: true
+
+    tag:
+      isEnabled: true
+      pathname: 'tag'
+      robots:
+        index: false
+        follow: true
+
+    isRelatedPostsEnabled: true
+    relatedPostsCount: 4
+
+  products:
+    isEnabled: true
+    productsPerPage: 12
+    product:
+      isEnabled: true
+      permalink: '/products/%slug%'
+      robots:
+        index: true
+        follow: true
+    list:
+      isEnabled: true
+      pathname: 'products'
+      robots:
+        index: true
+        follow: true
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: null
+
+siteSettings:
+  siteName: Afarer
+  siteTagline: 'Water Adventure Equipment Brand —Inflatable SUP, Boats & Marine Gear'
+  siteDescription: 'Afarer is a global water adventure equipment brand designing reliable inflatable SUPs, boats, kayaks, and marine safety gear. CE-certified and trusted by adventurers worldwide.'
+  organization:
+    name: Afarer
+    logo: ''
+    contactEmail: info@afarer.com
+    contactPhone: '+1 (213) 557-7888'
+    address: 'Economic Development Zone, Laixi, Qingdao, China, 266600'
+  socialLinks:
+    - platform: linkedin
+      url: 'https://www.linkedin.com/company/afarer'
+    - platform: youtube
+      url: 'https://www.youtube.com/@Afarer'
+    - platform: x
+      url: 'https://x.com/afarer'
+    - platform: instagram
+      url: 'https://www.instagram.com/afarer'
+    - platform: facebook
+      url: 'https://www.facebook.com/afarer'
+    - platform: rss
+      url: /rss.xml
+
+ui:
+  theme: 'system'
+
+branding:
+  site_name: 'Afarer'
+  logo_image: ''
+  logo_alt: 'Afarer logo'
+  copyright: '© {year} {site_name} 路 All rights reserved.'
+  phone: '+86 13305324192'
+  address: 'Economic Development Zone, Laixi, Qingdao, China, 266600'
+  email: info@afarer.com
+  whatsapp_number: '+12135577888'
+  whatsapp_default_message: 'Hello, I would like to inquire about a product.'
+  contact_email_to: info@afarer.com
+  contact_email_provider: resend
+  contact_from_email: web@afarer.net
+  contact_from_name: Afarer
+  contact_resend_api_key: Aa123456#
+  contact_submissions_pat: ''
+  gmap_api_key: ''
+  map_latitude: '36.8861'
+  map_longitude: '120.5261'

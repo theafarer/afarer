@@ -1,0 +1,88 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `EVA Foam Technology — SUP Deck Pad Materials and Construction | ${SITE.name}`,
+  description:
+    'Technical deep dive into EVA foam used for SUP deck traction pads: material properties, die-cutting, laser engraving, multi-color block piecing, and adhesion methods.',
+  ignoreTitleTemplate: true,
+};
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'EVA Foam Technology for SUP Deck Pads',
+  description: metadata.description,
+  author: { '@type': 'Organization', name: SITE.name },
+  datePublished: '2026-07-27',
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd data={jsonLd} />
+  <article class="max-w-4xl mx-auto px-6 py-16">
+    <nav class="text-sm text-gray-500 mb-8">
+      <a href="/" class="hover:text-sky-600">{SITE.name}</a><span class="mx-2">/</span><a
+        href="/research"
+        class="hover:text-sky-600">Research</a
+      ><span class="mx-2">/</span><span class="text-gray-900">EVA Foam Technology</span>
+    </nav>
+    <div class="mb-4">
+      <span
+        class="inline-block text-xs font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full"
+        >Materials</span
+      ><span class="ml-3 text-sm text-gray-400">7 min read</span>
+    </div>
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">EVA Foam Technology for SUP Deck Pads</h1>
+    <p class="text-xl text-gray-500 mb-12 leading-relaxed">
+      The traction pad on an inflatable SUP is more than a comfort feature — it is a critical structural and aesthetic
+      component. This guide explores EVA foam materials, construction methods, and quality indicators.
+    </p>
+    <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600">
+      <h2>What Is EVA Foam?</h2>
+      <p>
+        Ethylene-vinyl acetate (EVA) is a closed-cell foam copolymer widely used in SUP deck pads. Closed-cell structure
+        means water cannot penetrate the foam, preventing waterlogging and bacterial growth. EVA provides excellent
+        shock absorption, UV resistance, and durability. Typical density for SUP pads is 80-120 kg/m³ — dense enough for
+        abrasion resistance but soft enough for barefoot comfort.
+      </p>
+      <h2>Dual-Layer EVA Construction</h2>
+      <p>
+        Premium SUP pads use dual-layer composite EVA with a softer top layer (for grip and comfort) bonded to a denser
+        bottom layer (for structural integrity). The two layers are heat-laminated together before cutting. Total pad
+        thickness ranges from 4mm to 8mm. Thicker pads offer more comfort but add weight and may reduce board rigidity
+        feel.
+      </p>
+      <h2>Color-Block Piecing</h2>
+      <p>
+        Multi-color block piecing involves die-cutting shapes from different colored EVA sheets and puzzle-assembling
+        them into a seamless pad. The die-cut edges are precisely matched so the assembled pattern has no gaps or
+        overlaps. This technique creates permanent color — the colors are inherent to the EVA material, not printed on
+        the surface. Afarer uses CNC die-cutting for sub-millimeter precision in color-block patterns.
+      </p>
+      <h2>Laser Engraving</h2>
+      <p>
+        Laser engraving uses a CO₂ laser to etch away the top colored layer of a dual-layer EVA pad, revealing the
+        contrasting bottom layer. The result is a permanent, 3D-textured pattern that will never wear off. Laser
+        parameters (power, speed, frequency) must be precisely controlled to achieve the correct engraving depth without
+        burning through both layers. Afarer's Flowing Lotus series uses this technology for intricate lotus and koi
+        patterns.
+      </p>
+      <h2>Mechanical Heat Embossing</h2>
+      <p>
+        Heat embossing uses a heated metal roller or stamp to press patterns into the EVA surface under controlled
+        pressure and temperature. The compressed areas become denser and slightly recessed, creating a permanent 3D
+        texture. Unlike laser engraving, embossing does not remove material — it compresses it. This technique is used
+        for wave patterns and geometric textures on Afarer's Ocean Pulse and Leviathan Wake series.
+      </p>
+      <h2>Adhesion Methods</h2>
+      <p>
+        EVA pads are bonded to the PVC hull using either contact adhesive or heat-activated adhesive film. Contact
+        adhesive is sprayed on both surfaces and allowed to become tacky before pressing together. Heat-activated film
+        is placed between the pad and PVC, then heat-pressed to activate the bond. Heat bonding provides more consistent
+        adhesion and eliminates solvent fumes. Afarer uses industrial-grade heat bonding for all production boards.
+      </p>
+    </div>
+  </article>
+</Layout>

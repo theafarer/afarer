@@ -1,0 +1,68 @@
+﻿hero:
+  tagline: Marine Expertise
+  title: 'Décadas de Ingeniería Marina<br />en Cada Casco'
+  subtitle: 'afarer combina ciencia de materiales, fabricación de precisión y pruebas reales.'
+  image:
+    src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
+    alt: afarer marine engineering and R&D team at work
+expertise_materials:
+  tagline: Material Science
+  title: 'Elegir el Material Correcto<br />para Cada Aplicación'
+  subtitle: 'Trabajamos con tres materiales principales – cada uno para casos específicos.'
+  columns: 3
+  items:
+    - title: Marine-Grade PVC
+      description: '1100 denier PVC fabric —our most versatile material. UV-stabilized, abrasion-resistant, and REACH compliant. Ideal for recreational boats, SUP boards, and SUPs where weight and cost efficiency matter.'
+      icon: tabler:droplet
+    - title: Premium Hypalon/CSM
+      description: 'Resistencia química y estabilidad UV superiores. Los barcos Hypalon duran 15-20 años. Recomendado para usos comerciales, rescate y militares.'
+      icon: tabler:shield
+    - title: Fiberglass & Aluminum
+      description: 'Cascos Deep-V de fibra de vidrio para SUP y patrulla. Cascos de aluminio para trabajo pesado.'
+      icon: tabler:building-arch
+expertise_manufacturing:
+  tagline: Manufacturing Capabilities
+  title: 'Fabricación de Precisión<br />en Cada Paso'
+  subtitle: 'Nuestra instalación de 12.000 m² está equipada con maquinaria especializada.'
+  columns: 2
+  items:
+    - title: CNC Cutting
+      description: 'El corte controlado por computadora garantiza paneles precisos y repetibles.'
+      icon: tabler:cpu
+    - title: High-Frequency Welding
+      description: 'La soldadura HF industrial crea uniones más fuertes que el material base.'
+      icon: tabler:bolt
+    - title: Drop Stitch Core Assembly
+      description: 'Miles de hilos de poliéster conectan capas para inflado a alta presión (15-20 PSI).'
+      icon: tabler:building-arch
+    - title: Pressure Testing
+      description: 'Cada producto inflable se prueba bajo presión antes del envío.'
+      icon: tabler:wind
+    - title: Seam Strength Testing
+      description: 'Muestras aleatorias se someten a pruebas destructivas de resistencia.'
+      icon: tabler:files
+    - title: Water Testing
+      description: 'Cada modelo SUP se somete a pruebas de mar antes de la certificación.'
+      icon: tabler:droplet
+expertise_design:
+  tagline: Design & Engineering
+  title: 'Diseñado para Condiciones Reales'
+  subtitle: 'Nuestra filosofía de diseño comienza con el uso del barco.'
+  items:
+    - title: Deep-V Hull Design
+      description: "Our fiberglass hulls feature calculated deadrise angles optimized for each model's length and intended use. Steeper V for rough-water performance, shallower for stability."
+    - title: Multi-Chamber Safety
+      description: 'Cada barco cuenta con 3-7 cámaras de aire independientes. Si un compartimento se ve comprometido, los demás'
+    - title: Ergonomic Layout
+      description: 'La posición de la consola, la altura del tubo y la colocación del asiento están diseñadas para la comodidad'
+    - title: Custom Configuration
+      description: 'Colores de tubos, configuración de consola, capacidad de combustible, soportes para accesorios – cada modelo personalizable'
+cta:
+  title: '¿Tiene una aplicación específica?'
+  subtitle: 'Nuestro equipo de ingeniería asesora sobre materiales, diseño y fabricación.'
+  actions:
+    - variant: primary
+      text: Ask our engineers
+      href: /contact
+    - text: View product range
+      href: /products

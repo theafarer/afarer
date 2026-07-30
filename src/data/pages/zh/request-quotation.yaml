@@ -1,0 +1,57 @@
+hero_text:
+  tagline: 獲取報價
+  title: 為您的項目<br />請求報價
+  subtitle: 告訴我們您的需求，我們的團隊將在 2 個工作日內回覆詳細報價。
+steps2_process:
+  title: 運作方式
+  subtitle: 從詢價到報價只需四個簡單步驟。
+  items:
+    - title: 第一步：提交您的需求
+      description: 填寫下面的表格，註明產品類型、數量和規格。您提供的細節越多，報價就越準確。
+      icon: tabler:file-text
+    - title: 第二步：我們審核與建議
+      description: 我們的工程團隊審核您的需求，並可能聯繫您進行確認。我們提供產品配置和選型建議。
+      icon: tabler:users
+    - title: 第三步：收到報價
+      description: 您將收到詳細報價，包括單價、MOQ、交期、付款方式和運輸選項。通常在 48 小時內。
+      icon: tabler:currency-dollar
+    - title: 第四步：樣品與大貨生產
+      description: 報價確認後，我們進行樣品製作（如適用）或直接進入大貨生產。全程定期更新進度。
+      icon: tabler:building-factory
+content_form:
+  tagline: 報價表單
+  title: 告訴我們您的項目
+  subtitle: 帶 * 的字段為必填項。
+  fields:
+    - name: Product Type
+      type: select
+      options:
+        - SUP 艇
+        - 充氣艇
+        - SUP 板
+        - 充氣皮划艇
+        - 救生衣
+        - Accessory
+        - Custom
+    - name: Quantity
+      type: text
+      placeholder: e.g. 50 units
+    - name: Target Market
+      type: text
+      placeholder: e.g. Europe, North America, Middle East
+    - name: Customization Needed
+      type: text
+      placeholder: e.g. custom colors, branding, packaging
+    - name: Timeline
+      type: text
+      placeholder: e.g. delivery within 90 days
+    - name: Additional Requirements
+      type: textarea
+      placeholder: Describe your application, technical specifications, or any special requirements
+cta:
+  title: 更傾向於通過電子郵件討論？
+  subtitle: 直接將您的詢價發送給我們的銷售團隊，我們將在 24 小時內回覆。
+  actions:
+    - variant: primary
+      text: 直接給我們發郵件
+      href: /contact

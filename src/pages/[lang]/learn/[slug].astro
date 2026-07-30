@@ -1,0 +1,280 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { languages, defaultLang } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+
+export function getStaticPaths() {
+  const slugs = [
+    'sup',
+    'inflatable-boat',
+    'water-safety',
+    'sup-basics',
+    'drop-stitch-core',
+    'inflatable-technology',
+    'intermediate-techniques',
+    'materials',
+    'pvc-vs-hypalon',
+    'safety-in-water-sports',
+    'sup-size-guide',
+  ];
+  const paths: Array<{ params: { lang: string; slug: string } }> = [];
+  for (const lang of Object.keys(languages)) {
+    for (const slug of slugs) {
+      paths.push({ params: { lang, slug } });
+    }
+  }
+  return paths;
+}
+
+const { lang, slug } = Astro.params;
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+
+const LEARN_PAGES: Record<
+  string,
+  { title: string; description: string; articles: Array<{ title: string; desc: string; href: string }> }
+> = {
+  sup: {
+    title: 'SUP Knowledge — Inflatable SUP Guides & Resources | Afarer',
+    description:
+      'Complete SUP knowledge hub covering beginner guides, board sizing, technique tutorials, safety tips, and inflatable SUP technology.',
+    articles: [
+      {
+        title: "SUP Basics — Beginner's Guide",
+        desc: 'Everything a beginner needs to know — board types, paddle sizing, stance, and first-day tips.',
+        href: '/learn/sup',
+      },
+      {
+        title: 'SUP Size Guide',
+        desc: 'Find the right board length, width, and volume for your weight, skill, and paddling style.',
+        href: '/size-guide',
+      },
+      {
+        title: 'Inflatable vs Hard Board',
+        desc: 'Which is right for you? Portability, performance, durability, and cost compared.',
+        href: '/compare/inflatable-vs-hardboard',
+      },
+      {
+        title: 'Intermediate Techniques',
+        desc: 'Step up your paddling with advanced strokes, turning techniques, and rough-water handling.',
+        href: '/v2/intermediate-techniques',
+      },
+      {
+        title: 'How to Choose an Inflatable SUP',
+        desc: 'Navigate the key factors — construction, thickness, fin setup, and included accessories.',
+        href: '/guides/how-to-choose-inflatable-sup',
+      },
+      {
+        title: 'Water Safety',
+        desc: 'Essential safety knowledge including weather reading, PFD selection, self-rescue, and group paddling.',
+        href: '/learn/water-safety',
+      },
+    ],
+  },
+  'inflatable-boat': {
+    title: 'Inflatable Boat Knowledge — Technology & Materials | Afarer',
+    description:
+      'Deep dive into inflatable boat and SUP technology. Learn about drop-stitch construction, PVC vs Hypalon materials, marine-grade engineering, and quality standards.',
+    articles: [
+      {
+        title: 'Materials Reference',
+        desc: 'PVC, Hypalon, drop-stitch, denier ratings — understand what your inflatable gear is made of.',
+        href: '/learn/materials',
+      },
+      {
+        title: 'PVC vs Hypalon',
+        desc: 'The definitive comparison of PVC and Hypalon fabrics for inflatable boats — durability, UV resistance, and cost.',
+        href: '/learn/materials',
+      },
+      {
+        title: 'Drop-Stitch Core Explained',
+        desc: 'How thousands of internal threads create a rigid platform at 12-15 PSI for high-performance inflatable SUPs.',
+        href: '/learn/materials',
+      },
+      {
+        title: 'Inflatable Technology Overview',
+        desc: 'How inflatable boats and SUPs are constructed — from material layup to valve systems and seam welding.',
+        href: '/learn/materials',
+      },
+      {
+        title: 'Rigid Inflatable Boat (RIB) Guide',
+        desc: 'Everything about RIB construction, hull types, tube materials, and choosing the right RIB for your needs.',
+        href: '/guides/rib-guide',
+      },
+      {
+        title: 'Inflatable Boat vs RIB',
+        desc: 'Key differences between traditional inflatable dinghies and rigid-hull inflatable boats for various use cases.',
+        href: '/guides/inflatable-boat-vs-rib',
+      },
+    ],
+  },
+  'water-safety': {
+    title: 'Water Safety Knowledge — Safe Paddling Guides | Afarer',
+    description:
+      'Comprehensive water safety resources for SUP, kayaking, and boating. Learn about PFD selection, weather reading, self-rescue, cold water safety, and CE certification.',
+    articles: [
+      {
+        title: 'Water Safety Guide',
+        desc: 'Essential safety knowledge for every paddler — weather, PFDs, self-rescue, and group paddling protocols.',
+        href: '/learn/water-safety',
+      },
+      {
+        title: 'Life Jacket & PFD Guide',
+        desc: 'How to choose the right personal flotation device for SUP, kayaking, boating, and professional use.',
+        href: '/guides/life-jacket-guide',
+      },
+      {
+        title: 'SUP Safety Checklist',
+        desc: 'Pre-launch safety checklist every stand-up paddle boarder should follow before hitting the water.',
+        href: '/guides/sup-safety-checklist',
+      },
+      {
+        title: 'Cold Water Paddling Safety',
+        desc: 'Essential precautions, gear, and techniques for paddling in cold water conditions.',
+        href: '/guides/cold-water-safety',
+      },
+      {
+        title: 'Beginner Paddling Mistakes',
+        desc: 'Common mistakes first-time paddlers make and how to avoid them for a safer, more enjoyable experience.',
+        href: '/guides/beginner-mistakes',
+      },
+      {
+        title: 'CE Certification Explained',
+        desc: 'What CE certification means for inflatable watercraft — the standards, testing, and why it matters for safety.',
+        href: '/trust',
+      },
+    ],
+  },
+  'sup-basics': {
+    title: "SUP Basics — Beginner's Guide to Stand-Up Paddle Boarding",
+    description:
+      "Everything you need to know to start stand-up paddle boarding. Gear guides, sizing advice, safety tips, and beginner techniques from Afarer's knowledge center.",
+    articles: [],
+  },
+  'drop-stitch-core': {
+    title: 'Drop-Stitch Core Technology — How Inflatable SUPs Achieve Rigidity',
+    description:
+      'Deep dive into drop-stitch construction technology: how thousands of polyester threads create rigid inflatable platforms at 15-25 PSI. Thread density, fabric integration, manufacturing process, and performance comparisons.',
+    articles: [],
+  },
+  'inflatable-technology': {
+    title: 'Inflatable Watercraft Technology — Materials, Construction & Engineering',
+    description:
+      'How inflatable boats and SUPs are built — material layup, drop-stitch cores, valve systems, RF welding, and quality testing. Understand what makes a durable, high-performance inflatable.',
+    articles: [],
+  },
+  'intermediate-techniques': {
+    title: 'Intermediate SUP & Kayak Techniques — Beyond the Basics',
+    description:
+      'Level up your paddling skills with advanced paddle strokes, rough water handling, wind management, self-rescue techniques, and group paddling etiquette. For paddlers ready to move beyond beginner skills.',
+    articles: [],
+  },
+  materials: {
+    title: 'Inflatable Watercraft Materials — PVC, Hypalon, EVA & Drop-Stitch Fabric',
+    description:
+      'Comprehensive guide to materials used in inflatable watercraft manufacturing: military-grade PVC, Hypalon (CSM), EVA foam decking, drop-stitch fabric, carbon fiber, and aluminum alloys. Specifications, applications, and selection criteria.',
+    articles: [],
+  },
+  'pvc-vs-hypalon': {
+    title: 'PVC vs Hypalon Inflatable Boat Material — Complete Comparison',
+    description:
+      "Detailed comparison of PVC vs Hypalon (CSM) for inflatable boats, RIBs, and dinghies. Durability, cost, repairability, UV resistance, temperature range, and application recommendations with data from Afarer's PVC Fabric Lab.",
+    articles: [],
+  },
+  'safety-in-water-sports': {
+    title: 'Water Sports Safety — Essential Knowledge for Paddlers',
+    description:
+      'Essential safety knowledge for every paddler — weather reading, PFD selection, self-rescue, and group paddling protocols.',
+    articles: [],
+  },
+  'sup-size-guide': {
+    title: 'SUP Size Guide — How to Choose the Right Board Length, Width & Volume',
+    description:
+      'Comprehensive SUP sizing guide covering board length, width, thickness, volume (liters), and rider weight matching. Find the right inflatable SUP size for your weight, skill level, and paddling activity.',
+    articles: [],
+  },
+};
+
+const page = LEARN_PAGES[slug];
+const pageTitle = t('learn.' + slug + '.title') || page.title;
+const pageDesc = t('learn.' + slug + '.description') || page.description;
+const lArticles = (page.articles || []).map((a) => ({
+  ...a,
+  href: a.href.startsWith('/guides/')
+    ? `/${lang}${a.href}`
+    : a.href.startsWith('/learn/')
+      ? `/${lang}${a.href}`
+      : a.href.startsWith('/') && !a.href.startsWith('//')
+        ? `/${lang}${a.href}`
+        : a.href,
+}));
+
+const metadata = {
+  title: pageTitle,
+  description: pageDesc,
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="BreadcrumbList"
+    breadcrumbs={[
+      { name: 'Home', href: `/${lang}` },
+      { name: t('nav.learn') || 'Learn', href: `/${lang}/knowledge` },
+      { name: pageTitle },
+    ]}
+  />
+
+  <section class="max-w-5xl mx-auto px-6 pt-24 pb-4" data-ai-block="definition">
+    <h1 class="text-4xl font-semibold text-gray-900 dark:text-slate-100">{pageTitle}</h1>
+    <p class="mt-4 text-lg text-gray-500 dark:text-slate-400 max-w-3xl">{pageDesc}</p>
+
+    {
+      lArticles.length > 0 && (
+        <div class="mt-16 grid md:grid-cols-2 gap-6">
+          {lArticles.map((a) => (
+            <a
+              href={a.href}
+              class="group block p-6 rounded-2xl border border-gray-200 dark:border-slate-700 hover:shadow-lg hover:border-sky-300 dark:hover:border-sky-600 transition-all"
+            >
+              <h2 class="font-semibold text-gray-900 dark:text-slate-100 group-hover:text-sky-600 transition-colors">
+                {a.title}
+              </h2>
+              <p class="mt-2 text-sm text-gray-500 dark:text-slate-400 leading-relaxed">{a.desc}</p>
+              <span class="mt-3 inline-block text-sm font-medium text-sky-600">Read guide →</span>
+            </a>
+          ))}
+        </div>
+      )
+    }
+  </section>
+
+  <section class="max-w-5xl mx-auto px-6 pb-16">
+    <div class="grid md:grid-cols-3 gap-4 text-sm">
+      <a
+        href={`/${lang}/technology`}
+        class="block p-4 rounded-xl border border-gray-200 dark:border-slate-700 hover:border-sky-300 dark:hover:border-sky-600 transition"
+      >
+        <span class="font-medium text-sky-600">{t('nav.technology') || 'Technology'}</span>
+        <p class="mt-1 text-gray-500 dark:text-slate-400">Marine safety engineering and material testing</p>
+      </a>
+      <a
+        href={`/${lang}/products`}
+        class="block p-4 rounded-xl border border-gray-200 dark:border-slate-700 hover:border-sky-300 dark:hover:border-sky-600 transition"
+      >
+        <span class="font-medium text-sky-600">{t('product.pageTitle') || 'Products'}</span>
+        <p class="mt-1 text-gray-500 dark:text-slate-400">Explore the full Afarer product catalog</p>
+      </a>
+      <a
+        href={`/${lang}/trust`}
+        class="block p-4 rounded-xl border border-gray-200 dark:border-slate-700 hover:border-sky-300 dark:hover:border-sky-600 transition"
+      >
+        <span class="font-medium text-sky-600">{t('nav.trust') || 'Trust'}</span>
+        <p class="mt-1 text-gray-500 dark:text-slate-400">CE, ISO and BSCI compliance</p>
+      </a>
+    </div>
+  </section>
+</Layout>

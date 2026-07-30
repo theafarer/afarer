@@ -1,0 +1,38 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import JsonLd from '~/components/common/JsonLd.astro';
+import __pageData from '~/i18n/generated/pages/warranty.ts';
+
+const lang = 'en';
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'warranty') || {};
+
+const metadata = {
+  title: `Warranty –${SITE.name}`,
+  description:
+    'afarer 5-year limited warranty coverage for inflatable boats, SUPs, and marine products. Tube fabric, seams, hull structure, and valve warranty terms.',
+};
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Warranty' }];
+---
+
+<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Warranty', item: 'https://afarer.com/warranty/' }] }} />
+<JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What does the Afarer warranty cover?", acceptedAnswer: { "@type": "Answer", text: "Afarer offers a 3-year limited warranty on inflatable SUP boards covering manufacturing defects in materials and workmanship including seam integrity, valve function, and drop-stitch core delamination under normal use." } }, { "@type": "Question", name: "How long is the warranty period?", acceptedAnswer: { "@type": "Answer", text: "Afarer inflatable SUPs come with a 3-year limited warranty. Accessories including pumps, paddles, and life vests carry a 1-year warranty against manufacturing defects." } }, { "@type": "Question", name: "What is not covered by the warranty?", acceptedAnswer: { "@type": "Answer", text: "The warranty does not cover damage from misuse, improper inflation, over-inflation, exposure to sharp objects, chemical damage, unauthorized repairs, or normal wear and tear including UV fading." } }, { "@type": "Question", name: "How do I make a warranty claim?", acceptedAnswer: { "@type": "Answer", text: "Contact our warranty team with your order number, photos of the defect, and a description of the issue. We will review and provide a resolution within 3-5 business days." } }, { "@type": "Question", name: "Is the warranty transferable?", acceptedAnswer: { "@type": "Answer", text: "The Afarer limited warranty is issued to the original purchaser and is not transferable to subsequent owners. Proof of purchase from an authorized Afarer dealer is required." } }] }} />
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <section class="max-w-4xl mx-auto py-24 px-6">
+    <span class="text-sm font-medium text-sky-600 tracking-wide uppercase">{page.label || 'Warranty'}</span>
+    <h1 class="mt-4 text-4xl font-semibold text-gray-900 dark:text-gray-100">
+      {page.headline || 'Manufacturer Limited Warranty'}
+    </h1>
+    <p class="mt-4 text-lg text-gray-500 dark:text-gray-400">
+      {page.subtitle || 'afarer stands behind the quality of every product we manufacture.'}
+    </p>
+  </section>
+
+  <section class="max-w-4xl mx-auto pb-24 px-6">
+    <div class="prose prose-gray dark:prose-invert max-w-none" set:html={page.body || ''} />
+  </section>
+</Layout>

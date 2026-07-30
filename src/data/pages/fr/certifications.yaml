@@ -1,0 +1,63 @@
+hero:
+  tagline: Certifications & Standards
+  title: 'Certifications Qualité<br />& Normes de Conformité'
+  subtitle: 'Les produits afarer sont fabriqués conformément aux normes internationales de sécurité maritime, aux systèmes de management de la qualité et aux réglementations environnementales.'
+  image:
+    src: https://assets.afarer.com/images/afarer/certifications/certifications-hero.webp
+    alt: afarer quality certifications and compliance documentation
+content_certifications:
+  tagline: Our Certifications
+  title: 'Qualité Certifiée,<br />Reconnue Mondialement'
+  subtitle: 'Chaque produit afarer est soutenu par des certifications démontrant notre engagement envers la qualité, la sécurité et la responsabilité environnementale.'
+  items:
+    - title: 'CE Certified'
+      description: 'Tous les produits afarer sont conformes aux exigences de marquage CE.'
+      icon: tabler:certificate
+    - title: 'ISO 9001:2015'
+      description: 'Notre SMQ est certifié ISO 9001:2015 pour la conception, fabrication et distribution.'
+      icon: tabler:clipboard-check
+    - title: 'UKCA Marked'
+      description: 'Les produits vendus au Royaume-Uni portent le marquage UKCA.'
+      icon: tabler:shield
+    - title: 'BSCI Compliant'
+      description: 'afarer est audité BSCI pour des pratiques de fabrication éthiques.'
+      icon: tabler:heart-handshake
+    - title: 'Conforme REACH'
+      description: 'Tous les matériaux utilisés dans les produits afarer sont conformes au règlement REACH de l’UE'
+      icon: tabler:flask
+    - title: 'Test des Matériaux'
+      description: 'Les tissus sont testés pour résistance, UV et fissuration à froid. Chaque lot est vérifié.'
+      icon: tabler:test-pipe
+content_factory:
+  tagline: Factory Standards
+  title: 'Excellence de Fabrication<br />—Construit sur Mesure'
+  subtitle: 'Notre installation de 12 000 m² fonctionne sous protocoles de contrôle qualité stricts.'
+  list:
+    - 'Inspection des matières entrantes : tous les matériaux bruts – tissu PVC, Hypalon, aluminium, contreplaqué'
+    - 'Contrôle qualité en cours de processus : chaque étape de production a des points de contrôle CQ documentés'
+    - 'Test de pression : chaque compartiment gonflable est testé à 1,5× la pression nominale pendant 24h'
+    - 'Inspection finale : les produits finis sont inspectés pour la précision dimensionnelle, la finition esthétique'
+    - 'Tracabilité des lots : chaque produit porte un numéro de série lié aux enregistrements de lot de production'
+content_safety:
+  tagline: Marine Safety Standards
+  title: 'Sécurité d’Abord<br />—Conçu pour la Fiabilité'
+  subtitle: 'Les produits afarer sont conçus et testés pour répondre aux normes internationales de sécurité maritime.'
+  items:
+    - title: 'ISO 6185'
+      description: 'Les bateaux pneumatiques sont conformes à la norme ISO 6185.'
+      icon: tabler:sailboat
+    - title: 'ABYC Standards'
+      description: 'Les systèmes électriques et carburant suivent les normes ABYC.'
+      icon: tabler:bolt
+    - title: 'Conformité SOLAS'
+      description: 'Les équipements de sécurité et les appareils de sauvetage répondent aux exigences SOLAS.'
+      icon: tabler:lifebuoy
+cta:
+  title: 'Besoin de produits certifiés ?'
+  subtitle: 'Contactez-nous pour les exigences de certification, documentation et conformité.'
+  actions:
+    - variant: primary
+      text: Request certification docs
+      href: /contact
+    - text: View our quality page
+      href: /quality

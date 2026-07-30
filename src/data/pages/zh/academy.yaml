@@ -1,0 +1,167 @@
+hero:
+  tagline: afarer學院
+  title: 學習中心
+  subtitle: 適合各個技能水平的指南和教程——從SUP基礎到高級救援技巧
+categories:
+  - level: 初學者
+    color: from-green-500 to-emerald-600
+    badge: bg-green-100 text-green-700
+    guides:
+      - title: SUP基礎
+        desc: 學習站立槳板的基本要領——姿勢、劃槳技巧和平衡。
+        slug: sup-basics
+      - title: 劃槳技巧
+        desc: 前劃、掃劃、拉槳和低位支撐——掌握基本的劃槳動作。
+        slug: paddle-techniques
+      - title: 安全第一
+        desc: 基本安全實踐，包括天氣檢查、救生衣使用、腳繩規則和自救。
+        slug: safety-first
+  - level: 中級
+    color: from-blue-500 to-indigo-600
+    badge: bg-blue-100 text-blue-700
+    guides:
+      - title: 旅行要點
+        desc: 規劃多小時的划行——導航、補水、配速和解讀風向預報。
+        slug: touring-essentials
+      - title: 天氣判讀
+        desc: 解讀海洋預報、識別雲型、瞭解風對水面的影響。
+        slug: weather-reading
+      - title: 導航基礎
+        desc: 海圖閱讀、指南針使用、GPS航點設置和沿海划行路線規劃。
+        slug: navigation-basics
+      - title: 潮汐意識
+        desc: 瞭解潮汐週期、水流及其對出發時間和路線的影響。
+        slug: tidal-awareness
+  - level: 高級
+    color: from-purple-500 to-violet-600
+    badge: bg-purple-100 text-purple-700
+    guides:
+      - title: 多日旅行規劃
+        desc: 遠徵後勤——裝備選擇、食物規劃、安全協議和緊急聯繫人。
+        slug: multi-day-trip-planning
+      - title: 救援技巧
+        desc: 自救、T型救援、皮划艇愛斯基摩救援以及開闊水域拖曳方案。
+        slug: rescue-techniques
+      - title: 夜間划行
+        desc: 夜間導航——照明要求、路線記憶、群體溝通和危險意識。
+        slug: night-paddling
+  - level: 維護保養
+    color: from-amber-500 to-orange-600
+    badge: bg-amber-100 text-amber-700
+    guides:
+      - title: 清潔與保養
+        desc: 每次使用後用淡水沖洗、紫外線防護、防黴處理和正確的乾燥技巧。
+        slug: cleaning-and-care
+      - title: 存放指南
+        desc: 充氣板和船隻的存放最佳實踐——放氣、摺疊、溫度控制和保質期。
+        slug: storage-guide
+      - title: 維修基礎
+        desc: 使用PVC修補套件和貼片技術修復小孔、接縫漏氣和閥門問題。
+        slug: repair-basics
+      - title: 閥門維護
+        desc: 識別閥門類型（Halkey-Roberts、Boston、Leafield）、清理雜物、更換故障閥杆。
+        slug: valve-maintenance
+read_guide: 閱讀指南 →
+cta:
+  title: 不確定從哪裡開始？
+  desc: 參加我們的技能評估測試，找到適合您水平的指南和裝備。
+  label: 聯繫我們 →
+  link: /contact
+knowledge_center_tagline: 知識中心
+knowledge_center_title: 船舶裝備與行業指南
+knowledge_center_subtitle: 面向海洋專業人士、船隊運營者和水上運動愛好者的專業知識和購買指南。
+knowledge_sections:
+  - title: SUP 船知識
+    tagline: 剛性充氣艇指南
+    desc: 關於 SUP 船的一切——船體設計、材料、發動機選擇、維護以及商業和休閒用途的購買建議。
+    guides:
+      - title: 如何選擇合適的 SUP 船
+        desc: 選擇 SUP 的完整指南——尺寸、發動機功率、管材、船體類型和預期用途。
+        href: /guides/SUP-buying-guide
+      - title: SUP 與充氣船對比
+        desc: 剛性充氣船與傳統充氣小艇的比較——船體設計、性能、耐用性和容量。
+        href: /compare/SUP-vs-SUP
+      - title: 商用 SUP 與休閒 SUP 對比
+        desc: 商用級與休閒級 SUP 船的比較——建造標準、材料、壽命、成本和認證。
+        href: /compare/commercial-vs-recreational-SUP
+      - title: 鋁合金與玻璃鋼船體對比
+        desc: 比較 SUP 船的鋁合金和玻璃鋼船體在重量、成本、耐用性和耐腐蝕性方面的差異。
+        href: /compare/aluminum-vs-fiberglass
+  - title: 充氣船指南
+    tagline: 充氣艇知識
+    desc: 關於充氣船的全面指南——PVC 與 Hypalon 材料、建造方法、安全標準和維護最佳實踐。
+    guides:
+      - title: PVC 與 Hypalon 材料指南
+        desc: PVC 和 Hypalon CSM 用於充氣船製造的權威比較。
+        href: /compare/pvc-vs-hypalon
+      - title: 充氣船是如何製造的
+        desc: 製造工藝——材料切割、高頻焊接、接縫構造、壓力測試和質量控制。
+        href: /learn/inflatable-technology
+      - title: 充氣船安全指南
+        desc: 安全標準、負載能力、正確充氣、出發前檢查和應急程序。
+        href: /learn/water-safety
+      - title: 充氣船維護保養
+        desc: 清潔、存放、紫外線防護、防凍以及充氣船和 SUP 的維修。
+        href: /guides/maintenance-guide
+  - title: 船舶知識
+    tagline: 充氣船與 SUP 中心
+    desc: 涵蓋充氣船類型、材料、建造方法、維護和安全的技術指南——從小艇到 SUP。
+    guides:
+      - title: 充氣船類型
+        desc: 小艇、SUP、皮划艇和接駁船——瞭解差異並選擇合適的產品。
+        href: /v2/inflatable-boat-types
+      - title: 拉絲技術
+        desc: 數千根內部拉絲如何創建剛性、高壓充氣結構。
+        href: /learn/drop-stitch-core
+      - title: 材料參考
+        desc: PVC 丹尼數等級、面料重量、紫外線防護和船用材料詳解。
+        href: /learn/materials
+      - title: SUP 與小艇對比
+        desc: 針對不同使用場景比較剛性充氣船與傳統充氣小艇。
+        href: /v2/SUP-vs-SUP
+  - title: SUP 知識
+    tagline: 站立槳板指南
+    desc: 關於 SUP 板的一切——充氣與硬板對比、板體尺寸、材料技術以及適合各技能水平的專家建議。
+    guides:
+      - title: 充氣 SUP 與硬板 SUP 對比
+        desc: 比較 iSUP 和硬環氧樹脂板在便攜性、耐用性、性能和性價比方面的差異。
+        href: /learn/sup
+      - title: SUP 板尺寸指南
+        desc: 長度、寬度和厚度如何影響穩定性、速度和機動性。
+        href: /learn/sup
+      - title: SUP 維護與保養
+        desc: 充氣 SUP 板的清潔、存放、紫外線防護和維修技巧。
+        href: /inflatable-sup-maintenance
+      - title: 選擇您的第一塊 SUP
+        desc: 為初學者提供根據體重、技能水平和預期用途選擇合適站立槳板的指南。
+        href: /learn/sup
+  - title: 租賃運營指南
+    tagline: 租賃業務船隊管理
+    desc: 關於為海灘租賃點、水上運動中心和酒店建立和管理 SUP 租賃船隊的指南。
+    guides:
+      - title: 建立您的租賃船隊
+        desc: 如何為您的租賃業務選擇合適的 SUP 板——耐用性、尺寸和投資回報率考慮。
+        href: /solutions/rental-operators
+      - title: 船隊維護指南
+        desc: 通過基本維護實踐最大化板的使用壽命並減少租賃船隊的停機時間。
+        href: /solutions/rental-operators
+  - title: 度假村與酒店指南
+    tagline: 酒店水上活動
+    desc: 關於為度假村、酒店和濱水目的地啟動和管理 SUP 項目的指南。
+    guides:
+      - title: 啟動度假村 SUP 項目
+        desc: 啟動客人 SUP 活動時需要考慮的因素——船隊規模、人員配備和收入模型。
+        href: /solutions/resorts-hotels
+      - title: SUP 與其他水上活動對比
+        desc: 從客人體驗和運營效率方面比較 SUP 項目與其他水上運動。
+        href: /learn/sup
+  - title: 零售與分銷指南
+    tagline: SUP 商業合作
+    desc: 關於成為 SUP 零售合作伙伴或分銷商的指南——庫存規劃、市場定位和增長策略。
+    guides:
+      - title: 成為 SUP 零售商
+        desc: 如何選擇產品線、管理庫存以及在零售店中營銷 SUP 板。
+        href: /solutions/retail-partners
+      - title: 商業運營中的 SUP
+        desc: 為什麼充氣 SUP 是商業船隊、租賃業務和專業運營商的多功能產品。
+        href: /use-cases/search-and-rescue

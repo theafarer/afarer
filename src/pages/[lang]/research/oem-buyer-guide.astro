@@ -1,0 +1,80 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+import { languages, defaultLang } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __researchPageData from '~/i18n/generated/pages/research-oem-buyer-guide.ts';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+
+setPageContentData(__researchPageData);
+const page = getPageContent(lang, 'research-oem-buyer-guide');
+
+const metadata = {
+  title:
+    (page.meta?.title || '').replace('{SITE}', SITE.name) ||
+    `OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | ${SITE.name}`,
+  description: (page.meta?.description || '').replace('{SITE}', SITE.name) || '',
+  ignoreTitleTemplate: true,
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline:
+    (page.meta?.title || '').replace('{SITE}', SITE.name) ||
+    'OEM Buyer Guide — Sourcing Inflatable Watercraft from Asian Manufacturers',
+  description: metadata.description,
+  author: { '@type': 'Organization', name: SITE.name },
+  datePublished: '2024-05-08',
+  dateModified: '2025-06-10',
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd data={jsonLd} />
+
+  <article class="max-w-4xl mx-auto px-6 py-16">
+    <nav class="text-sm text-gray-500 mb-8">
+      <a href={`/${lang}/`} class="hover:text-sky-600">{SITE.name}</a>
+      <span class="mx-2">/</span>
+      <a href={`/${lang}/research`} class="hover:text-sky-600">{t('home.research.title')}</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">{t('home.research.oemBuyer')}</span>
+    </nav>
+
+    <div class="mb-4">
+      <span
+        class="inline-block text-xs font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full"
+        >{page.hero?.tagline}</span
+      >
+      <span class="ml-2 text-xs text-gray-400">{page.hero?.subtitle}</span>
+    </div>
+
+    <div class="prose prose-gray dark:prose-invert max-w-none">
+      <h1>{page.hero?.title || t('home.research.oemBuyer')}</h1>
+      {page.content_html && <div set:html={page.content_html} />}
+    </div>
+  </article>
+
+  <section class="max-w-4xl mx-auto px-6 pb-20 text-center">
+    <div class="rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-8">
+      <h2 class="text-xl font-bold">{page.cta?.title}</h2>
+      <p class="mt-2 text-sm text-muted">{page.cta?.subtitle}</p>
+      <a
+        href={`/${lang}${page.cta?.button_link || '/contact'}`}
+        class="mt-4 inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90"
+        >{page.cta?.button_text}</a
+      >
+    </div>
+  </section>
+</Layout>

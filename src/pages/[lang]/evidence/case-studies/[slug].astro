@@ -1,0 +1,180 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+import { languages, defaultLang } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+import { pageContentData } from '~/i18n/generated/data';
+
+interface CaseStudy {
+  id: string;
+  client: string;
+  product: string;
+  industry: string;
+  challenge: string;
+  solution: string;
+  result: string;
+  image: string;
+  tags: string[];
+  outcome_metrics: { label: string; value: string | number }[];
+  before_after?: { label: string; before: string; after: string }[];
+  video_url?: string;
+}
+
+export function getStaticPaths() {
+  const d = pageContentData['en/site-evidence'] || {};
+  const studies: CaseStudy[] = d.case_studies ?? [];
+  const paths: { params: { lang: string; slug: string } }[] = [];
+  for (const lang of Object.keys(languages)) {
+    for (const cs of studies) {
+      paths.push({ params: { lang, slug: cs.id } });
+    }
+  }
+  return paths;
+}
+
+const { lang, slug } = Astro.params;
+
+const d = pageContentData[`${lang}/site-evidence`] || pageContentData['en/site-evidence'] || {};
+const allCaseStudies: CaseStudy[] = d.case_studies ?? [];
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+
+const study = allCaseStudies.find((cs) => cs.id === slug);
+
+const metadata = {
+  title: study ? `${study.client} — ${study.product} | ${SITE.name}` : 'Case Study',
+  description: study ? `${study.challenge.substring(0, 160)}` : 'Afarer case study',
+  ignoreTitleTemplate: true,
+};
+---
+
+{
+  study && (
+    <Layout metadata={metadata}>
+      <JsonLd type="BreadcrumbList" breadcrumbs={[{ name: SITE.name, href: `/${lang}/` }, { name: t('home.evidence.title'), href: `/${lang}/evidence` }, { name: t('home.evidence.caseStudies') || 'Case Studies', href: `/${lang}/evidence/case-studies` }, { name: study.client }]} />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: `${study.client} — ${study.product}`,
+          description: metadata.description,
+          author: { '@type': 'Organization', name: SITE.name },
+          datePublished: '2025-01-01',
+          dateModified: '2026-06-01',
+          citation: study.outcome_metrics.map((m) => `${m.label}: ${m.value}`),
+          about: { '@type': 'Product', name: study.product },
+          isBasedOn: { '@type': 'Product', name: study.product },
+        }}
+      />
+
+      <div class="max-w-4xl mx-auto px-6 py-16">
+        <nav class="text-sm text-gray-500 mb-8">
+          <a href={`/${lang}/`} class="hover:text-sky-600">
+            {SITE.name}
+          </a>
+          <span class="mx-2">/</span>
+          <a href={`/${lang}/evidence`} class="hover:text-sky-600">
+            {t('home.evidence.title')}
+          </a>
+          <span class="mx-2">/</span>
+          <span class="text-gray-900">{study.client}</span>
+        </nav>
+
+        <div class="mb-4">
+          <span class="inline-block text-xs font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full">
+            {study.industry}
+          </span>
+        </div>
+
+        <h1 class="text-4xl font-bold text-gray-900 mb-2">{study.client}</h1>
+        <p class="text-xl text-gray-500 mb-8">{study.product}</p>
+
+        {/* Outcome Metrics */}
+        <div class="grid grid-cols-3 gap-4 mb-12">
+          {study.outcome_metrics.map((m) => (
+            <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+              <div class="text-2xl font-bold text-sky-600">{m.value}</div>
+              <div class="text-xs text-gray-500 mt-1">{m.label}</div>
+            </div>
+          ))}
+        </div>
+
+        <div class="relative h-72 bg-gray-100 rounded-2xl overflow-hidden mb-12">
+          <img src={study.image} alt={study.product} class="w-full h-full object-cover" />
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+            <span class="text-white text-sm font-medium">{study.product}</span>
+          </div>
+        </div>
+
+        <!-- Before / After Comparison -->
+        {study.before_after?.length > 0 && (
+          <div class="mb-12 bg-gray-50 rounded-2xl p-8 border border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">{t('evidence.beforeAfter') || 'Before & After'}</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {study.before_after.map((ba: any) => (
+                <div class="text-center">
+                  <p class="text-sm font-medium text-gray-500 mb-3">{ba.label}</p>
+                  <div class="flex items-center justify-center gap-4">
+                    <div class="bg-red-50 rounded-xl px-4 py-3 flex-1">
+                      <p class="text-xs text-red-500 uppercase tracking-wider font-semibold">{t('evidence.before') || 'Before'}</p>
+                      <p class="text-lg font-bold text-red-600">{ba.before}</p>
+                    </div>
+                    <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                    <div class="bg-green-50 rounded-xl px-4 py-3 flex-1">
+                      <p class="text-xs text-green-500 uppercase tracking-wider font-semibold">{t('evidence.after') || 'After'}</p>
+                      <p class="text-lg font-bold text-green-600">{ba.after}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <!-- Video Embed -->
+        {study.video_url && (
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">{t('evidence.video') || 'Video Testimonial'}</h2>
+            <div class="aspect-video rounded-2xl overflow-hidden bg-gray-100">
+              <iframe src={study.video_url} class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        )}
+
+        <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600">
+          <h2>{t('v2.problem')}</h2>
+          <p>{study.challenge}</p>
+
+          <h2>{t('v2.solution')}</h2>
+          <p>{study.solution}</p>
+
+          <h2>{t('evidence.result') || 'The Result'}</h2>
+          <p>{study.result}</p>
+
+          <h2>{t('evidence.keyCapabilities') || 'Key Capabilities'}</h2>
+          <ul>
+            {study.tags.map((tag) => (
+              <li>
+                <strong>{tag}</strong>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="mt-16 pt-8 border-t border-gray-200 flex items-center justify-between">
+          <a href={`/${lang}/evidence`} class="text-sky-600 hover:text-sky-700 font-medium">
+            &larr; {t('evidence.back') || 'Back to Evidence'}
+          </a>
+          <a
+            href={`/${lang}/contact`}
+            class="inline-block bg-sky-600 text-white font-semibold px-6 py-2.5 rounded-xl hover:bg-sky-700 transition-colors text-sm"
+          >
+            {t('home.evidence.ctaButton')}
+          </a>
+        </div>
+      </div>
+    </Layout>
+  )
+}

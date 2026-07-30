@@ -1,0 +1,63 @@
+hero:
+  tagline: 'Sertifikalar ve Standartlar'
+  title: 'Kalite Sertifikaları<br />& Uyumluluk Standartları'
+  subtitle: 'afarer ürünleri uluslararası deniz güvenliği standartlarına, kalite yönetim sistemlerine ve çevre düzenlemelerine uygun olarak üretilmektedir.'
+  image:
+    src: https://assets.afarer.com/images/afarer/certifications/certifications-hero.webp
+    alt: afarer quality certifications and compliance documentation
+content_certifications:
+  tagline: 'Sertifikalarımız'
+  title: 'Sertifikalı Kalite,<br />Dünya çapında Tanınmış'
+  subtitle: 'Her afarer ürünü kalite, güvenlik ve çevre sorumluluğuna olan bağlılığımızı gösteren sertifikalarla desteklenmektedir.'
+  items:
+    - title: 'CE Certified'
+      description: 'Tüm afarer ürünleri, eğlence amaçlı deniz taşıtlarına yönelik Avrupa CE işaretleme gerekliliklerine uygundur ve güvenlik, sağlık ve çevre koruma standartlarının karşılanmasını sağlar.'
+      icon: tabler:certificate
+    - title: 'ISO 9001:2015'
+      description: 'Kalite yönetim sistemimiz ISO 9001:2015 sertifikalıdır ve şişirilebilir deniz taşıtları ve denizcilik ekipmanlarının tasarımını, üretimini ve dağıtımını kapsar.'
+      icon: tabler:clipboard-check
+    - title: 'UKCA Marked'
+      description: 'Birleşik Krallık pazarında satılan ürünler, denizcilik ekipmanı ve kişisel deniz taşıtlarına ilişkin Birleşik Krallık düzenlemelerine uygunluğu doğrulayan UKCA işaretini taşır.'
+      icon: tabler:shield
+    - title: 'BSCI Compliant'
+      description: 'afarer, BSCI (İşletme Sosyal Uyumluluk Girişimi) tarafından denetlenmiş olup, etik üretim uygulamaları, adil çalışma koşulları ve tedarik zinciri sorumluluğunu kanıtlamaktadır.'
+      icon: tabler:heart-handshake
+    - title: 'REACH Compliant'
+      description: 'afarer ürünlerinde kullanılan tüm malzemeler, kimyasal güvenlik açısından AB REACH düzenlemelerine uygundur ve PVC, Hypalon veya bileşenlerimizde kısıtlanmış maddelerin bulunmadığını garanti eder.'
+      icon: tabler:flask
+    - title: 'Material Testing'
+      description: 'Kumaşlar çekme mukavemeti, yırtılma direnci, UV bozulması ve soğukta çatlama performansı açısından test edilir. Her üretim partisinden numune alınır ve doğrulanır.'
+      icon: tabler:test-pipe
+content_factory:
+  tagline: 'Fabrika Standartları'
+  title: 'Üretimde Mükemmeliyet<br />—Şartlara Göre Geliştirildi'
+  subtitle: "12.000 m²'lik tesisimiz, üretimin her aşamasında sıkı kalite kontrol protokolleri altında çalışmaktadır."
+  list:
+    - 'Incoming Material Inspection: All raw materials —PVC fabric, Hypalon, aluminum, plywood, adhesives —are tested against specifications before entering production.'
+    - 'In-Process Quality Control: Every production stage has documented QC checkpoints. Weld strength, seam alignment, valve installation, and fitting torque are verified inline.'
+    - 'Pressure Testing: Every inflatable chamber is pressure-tested at 1.5× rated pressure for 24 hours. Leak rate must be zero for passing grade.'
+    - 'Final Inspection: Completed products are inspected for dimensional accuracy, cosmetic finish, accessory completeness, and packaging integrity before shipping.'
+    - 'Batch Traceability: Every product carries a serial number linked to production batch records, enabling full traceability from raw material to finished goods.'
+content_safety:
+  tagline: 'Deniz Güvenliği Standartları'
+  title: 'Önce Güvenlik<br />—Güvenilir Çalışma için Tasarlandı'
+  subtitle: 'afarer ürünleri, ticari ve eğlence amaçlı kullanıma yönelik uluslararası deniz güvenliği standartlarını karşılayacak şekilde tasarlanmış ve test edilmiştir.'
+  items:
+    - title: 'ISO 6185'
+      description: 'Şişme botlar inşaat, stabilite, yüzdürme ve yük kapasitesi açısından ISO 6185 standartlarına uygundur.'
+      icon: tabler:sailboat
+    - title: 'ABYC Standards'
+      description: 'Elektrik sistemleri ve yakıt sistemleri, güvenli kurulum ve çalıştırma açısından ABYC (Amerikan Tekne ve Yat Konseyi) standartlarına uygundur.'
+      icon: tabler:bolt
+    - title: 'SOLAS Compliance'
+      description: 'Güvenlik ekipmanı ve can kurtarma cihazları, uygun olduğu yerde SOLAS (Denizde Can Güvenliği) gerekliliklerini karşılar.'
+      icon: tabler:lifebuoy
+cta:
+  title: 'Projeniz için sertifikalı ürünlere mi ihtiyacınız var?'
+  subtitle: 'Pazarınız için sertifika gerekliliklerini, dokümantasyonu ve uyumluluğu görüşmek üzere ekibimizle iletişime geçin.'
+  actions:
+    - variant: primary
+      text: 'Sertifikasyon dokümanlarını isteyin'
+      href: /contact
+    - text: View our quality page
+      href: /quality

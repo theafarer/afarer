@@ -1,0 +1,165 @@
+---
+export const prerender = true;
+
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `SUP Business Solutions — ${SITE.name} | B2B Partnerships`,
+  description:
+    'Complete SUP business solutions for resorts, hotels, paddle clubs, rental operators, retail partners, distributors, and private label brands.',
+};
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Solutions' }];
+
+const solutionItems = [
+  { title: 'Resorts & Hotels', description: 'Complete SUP fleet programs with custom branding and staff training for hospitality properties.', url: '/solutions/resorts-hotels' },
+  { title: 'Paddle Clubs', description: 'Commercial-grade SUP fleets for paddle clubs, schools, and membership organizations.', url: '/solutions/paddle-clubs' },
+  { title: 'Rental Operators', description: 'High-rotation SUPs engineered for daily rental use at beach kiosks and water sports centers.', url: '/solutions/rental-operators' },
+  { title: 'Retail Partners', description: 'Full product line, marketing materials, dropshipping, and competitive margins for SUP retailers.', url: '/solutions/retail-partners' },
+  { title: 'Distributors', description: 'Exclusive territories, complete product portfolio, and dedicated account management in 50+ countries.', url: '/solutions/distributors' },
+  { title: 'Build Your Own Brand', description: 'End-to-end OEM/ODM SUP manufacturing — design, prototyping, production, and global logistics.', url: '/solutions/build-your-own-brand' },
+];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <JsonLd type="ItemList" data={{
+    name: 'SUP Business Solutions',
+    description: metadata.description,
+    numberOfItems: solutionItems.length,
+    itemListElement: solutionItems.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: { '@type': 'Service', name: item.title, description: item.description, url: `https://afarer.com${item.url}` },
+    })),
+  }} />
+<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Solutions', item: 'https://afarer.com/solutions/' }] }} />
+<JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What business solutions does afarer offer?", acceptedAnswer: { "@type": "Answer", text: "Afarer offers six business solutions: Resorts & Hotels fleet programs, Paddle Club partnerships, Rental Operator supply, Retail Partner programs, Distributor territories, and Build Your Own Brand OEM/ODM manufacturing." } }, { "@type": "Question", name: "Can I get custom branding on my SUP fleet?", acceptedAnswer: { "@type": "Answer", text: "Yes. All business solutions include custom branding options including logo heat-transfer or screen printing, branded packaging, and custom colorways. Full private label service is available." } }, { "@type": "Question", name: "What is the minimum order for business solutions?", acceptedAnswer: { "@type": "Answer", text: "Minimum orders vary by solution. Fleet programs start at 10+ units, retail partnerships start at 50+ units, and OEM/ODM manufacturing starts at 5-10 units per model." } }, { "@type": "Question", name: "Does afarer offer dropshipping for retail partners?", acceptedAnswer: { "@type": "Answer", text: "Yes. Retail partners can leverage our dropshipping fulfillment network. We handle inventory, packaging, and shipping direct to your customers under your brand." } }, { "@type": "Question", name: "How do I become an afarer distributor?", acceptedAnswer: { "@type": "Answer", text: "Distributors receive exclusive territories, a complete product portfolio, dedicated account management, marketing support, and competitive wholesale pricing. Contact our B2B team to discuss your market." } }] }} />
+  <Hero
+    tagline="Business Solutions"
+    title="SUP Solutions for Every Business Model"
+    subtitle="From resorts to retail, rental operators to global distributors — Afarer provides complete SUP solutions tailored to your business."
+    image="https://assets.afarer.com/images/afarer/hero/afarer-hero-b2b.webp"
+  />
+  <Stats
+    title="Trusted by businesses worldwide"
+    stats={[
+      { title: 'Markets Served', amount: '50+' },
+      { title: 'Countries Exported', amount: '50+' },
+      { title: 'Custom Solutions', amount: '100+' },
+      { title: 'Years Experience', amount: 'Since 2012' },
+    ]}
+  />
+  <Features3
+    tagline="Solutions by Business Type"
+    title="Find the right SUP solution for your business"
+    subtitle="Every solution is backed by engineering expertise, CE certification, and dedicated support."
+    columns={3}
+    items={[
+      {
+        title: 'Resorts & Hotels',
+        description: 'Complete SUP fleet programs with custom branding and staff training for hospitality properties.',
+        icon: 'tabler:building',
+        callToAction: { text: 'Learn More', href: '/solutions/resorts-hotels' },
+      },
+      {
+        title: 'Paddle Clubs',
+        description: 'Commercial-grade SUP fleets for paddle clubs, schools, and membership organizations.',
+        icon: 'tabler:users',
+        callToAction: { text: 'Learn More', href: '/solutions/paddle-clubs' },
+      },
+      {
+        title: 'Rental Operators',
+        description: 'High-rotation SUPs engineered for daily rental use at beach kiosks and water sports centers.',
+        icon: 'tabler:currency-dollar',
+        callToAction: { text: 'Learn More', href: '/solutions/rental-operators' },
+      },
+      {
+        title: 'Retail Partners',
+        description: 'Full product line, marketing materials, dropshipping, and competitive margins for SUP retailers.',
+        icon: 'tabler:shopping-cart',
+        callToAction: { text: 'Learn More', href: '/solutions/retail-partners' },
+      },
+      {
+        title: 'Distributors',
+        description:
+          'Exclusive territories, complete product portfolio, and dedicated account management in 50+ countries.',
+        icon: 'tabler:world',
+        callToAction: { text: 'Learn More', href: '/solutions/distributors' },
+      },
+      {
+        title: 'Build Your Own Brand',
+        description: 'End-to-end OEM/ODM SUP manufacturing — design, prototyping, production, and global logistics.',
+        icon: 'tabler:package',
+        callToAction: { text: 'Learn More', href: '/solutions/build-your-own-brand' },
+      },
+    ]}
+  />
+  <!-- FAQ Section -->
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <div class="text-center mb-10">
+      <span class="text-sm font-semibold text-primary tracking-wide uppercase">FAQs</span>
+      <h2 class="mt-2 text-3xl font-semibold text-gray-900">Business Solutions FAQ</h2>
+      <p class="mt-3 text-gray-500">Common questions about our business partnership programs.</p>
+    </div>
+    <div class="space-y-4">
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>What business solutions does afarer offer?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Afarer offers six business solutions: Resorts & Hotels fleet programs, Paddle Club partnerships, Rental Operator supply, Retail Partner programs, Distributor territories, and Build Your Own Brand OEM/ODM manufacturing.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>Can I get custom branding on my SUP fleet?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Yes. All business solutions include custom branding options including logo heat-transfer or screen printing, branded packaging, and custom colorways. Full private label service is available.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>What is the minimum order for business solutions?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Minimum orders vary by solution. Fleet programs start at 10+ units, retail partnerships start at 50+ units, and OEM/ODM manufacturing starts at 5-10 units per model.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>Does afarer offer dropshipping for retail partners?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Yes. Retail partners can leverage our dropshipping fulfillment network. We handle inventory, packaging, and shipping direct to your customers under your brand.</p>
+        </div>
+      </details>
+      <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <span>How do I become an afarer distributor?</span>
+          <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
+        </summary>
+        <div class="px-6 pb-4">
+          <p class="text-gray-600 leading-relaxed">Distributors receive exclusive territories, a complete product portfolio, dedicated account management, marketing support, and competitive wholesale pricing. Contact our B2B team to discuss your market.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+  <CallToAction
+    title="Not sure which solution fits your business?"
+    subtitle="Describe your operation and we'll recommend the right partnership package within 24 hours."
+    actions={[
+      { text: 'Get a Recommendation', href: '/contact', variant: 'primary', type: 'button' },
+      { text: 'Browse Products', href: '/products', variant: 'secondary', type: 'button' },
+    ]}
+  />
+</Layout>

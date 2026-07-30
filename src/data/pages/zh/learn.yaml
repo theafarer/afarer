@@ -1,0 +1,70 @@
+hero:
+  tagline: 水上探索知識
+  title: 學習
+  subtitle: |
+    指南、教程和深度解析——自信探索水上世界所需的一切。<br />
+    從選擇第一個SUP到掌握高級技術。
+  taglineSection: 為每位劃槳者提供知識。從新手到專業人士。
+featured:
+  tagline: 精選主題
+  title: 開始你的學習之旅
+  subtitle: 無論你是水上運動新手還是希望提升水平，我們的指南都能滿足你的需求。
+  items:
+    - title: SUP基礎
+      description: 初學者需要知道的一切——板型、槳尺寸、站姿和第一天技巧。
+      icon: tabler:lifebuoy
+      href: /learn/sup
+    - title: 充氣板vs硬板
+      description: 哪個適合你？我們從便攜性、性能、耐用性和成本方面進行全面比較。
+      icon: tabler:arrows-left-right
+      href: /compare/inflatable-vs-hardboard
+    - title: 水上安全
+      description: 每位劃槳者都應掌握的基本安全知識——天氣、PFD、自救等。
+      icon: tabler:shield
+      href: /learn/water-safety
+    - title: 材料指南
+      description: PVC vs Hypalon、滴塑技術、旦尼爾等級——瞭解你的裝備由什麼製成。
+      icon: tabler:flask
+      href: /learn/materials
+    - title: SUP尺寸指南
+      description: 根據你的體重、技能和劃槳風格找到合適的板長、寬度和體積。
+      icon: tabler:ruler
+      href: /size-guide
+    - title: 中級技術
+      description: 通過高級劃槳、轉彎技術和激流處理來提升你的劃槳水平。
+      icon: tabler:droplet
+      href: /v2/intermediate-techniques
+categories:
+  tagline: 分類
+  title: 按主題探索
+  subtitle: 所有學習內容按技能水平和興趣組織。
+  columns:
+    - title: 初學者
+      items:
+        - SUP基礎——從這裡開始
+        - 充氣板vs硬板
+        - 水上安全要點
+        - 如何選擇你的SUP
+        - 充氣和收納指南
+    - title: 中級
+      items:
+        - 劃槳技術
+        - 充氣技術
+        - 材料參考
+        - PVC與Hypalon對比
+        - 滴塑核心解析
+    - title: 高級與專業
+      items:
+        - 船隊運營
+        - 商業級設備
+        - 安全與救援協議
+        - 定製製造與OEM
+cta:
+  title: 還有問題？
+  subtitle: 向我們的AI嚮導詢問關於裝備、安全和技術的個性化答案。
+  actions:
+    - variant: primary
+      text: 諮詢水上顧問AI
+      href: '#ai-guide'
+    - text: 瀏覽所有指南
+      href: /academy

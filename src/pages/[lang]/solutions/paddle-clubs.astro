@@ -1,0 +1,158 @@
+﻿---
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export const prerender = true;
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import Icon from '~/components/ui/Icon.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/solutions-paddle-clubs.ts';
+import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'solutions-paddle-clubs');
+
+const hero = page.hero ?? {};
+const benefits = page.benefits ?? {};
+const packages = page.packages ?? {};
+const training = page.training ?? {};
+const features = page.features ?? {};
+const cta = page.cta ?? {};
+const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+
+const metadata = {
+  title: hero.title ? hero.title.replace('{SITE}', SITE.name) : `Paddle Club Fleet Solutions — ${SITE.name}`,
+  description: hero.subtitle || '',
+};
+const crumbs = [
+  { name: t('nav.home') || 'Home', href: `/${lang}/` },
+  { name: t('nav.solutions') || 'Solutions', href: `/${lang}/solutions/` },
+  { name: hero.tagline || 'Paddle Clubs' },
+];
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero tagline={hero.tagline} image={hero.image} title={hero.title} subtitle={hero.subtitle} />
+
+  <!-- Benefits Metrics -->
+  {
+    benefits.items?.length > 0 && (
+      <WidgetWrapper containerClass="max-w-6xl mx-auto">
+        <Headline title={benefits.title} subtitle={benefits.subtitle} />
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+          {benefits.items.map((m: any) => (
+            <div class="text-center p-6 rounded-2xl bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 shadow-sm">
+              <div class="text-3xl md:text-4xl font-bold text-primary">{m.metric || ''}</div>
+              <div class="mt-2 font-semibold text-foreground">{m.label || ''}</div>
+              <div class="mt-1 text-xs text-muted">{m.detail || ''}</div>
+            </div>
+          ))}
+        </div>
+      </WidgetWrapper>
+    )
+  }
+
+  <!-- Packages -->
+  {
+    packages.items?.length > 0 && (
+      <WidgetWrapper containerClass="max-w-6xl mx-auto">
+        <Headline title={packages.title} subtitle={packages.subtitle} />
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+          {packages.items?.map((pkg: any) => (
+            <div class={`relative rounded-2xl border-2 ${pkg.popular ? 'border-primary shadow-xl scale-[1.02]' : 'border-gray-200 dark:border-slate-700'} bg-white dark:bg-slate-900 px-6 py-8 flex flex-col`}>
+              {pkg.popular ? (
+                <span class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-white text-xs font-semibold rounded-full whitespace-nowrap">
+                  {t('packages.popular') || 'Most Popular'}
+                </span>
+              ) : null}
+              <p class="text-sm font-semibold uppercase tracking-widest text-primary mt-2">{pkg.name}</p>
+              <p class="text-xs text-muted mt-1 mb-4">{pkg.tagline}</p>
+              <ul class="text-left text-sm text-muted space-y-2 flex-1">
+                {pkg.features?.map((f: string) => (
+                  <li class="flex items-start gap-2">
+                    <Icon name="tabler:check" class="text-primary shrink-0 mt-0.5" />
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </WidgetWrapper>
+    )
+  }
+
+  <!-- Training Center Packages -->
+  {
+    training.items?.length > 0 && (
+      <WidgetWrapper containerClass="max-w-5xl mx-auto" bg>
+        <Headline title={training.title} subtitle={training.subtitle} />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+          {training.items?.map((tpg: any) => (
+            <div class="rounded-2xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-6 py-8 flex flex-col">
+              <p class="text-sm font-semibold uppercase tracking-widest text-primary">{tpg.name}</p>
+              <ul class="mt-4 text-left text-sm text-muted space-y-2 flex-1">
+                {tpg.features?.map((f: string) => (
+                  <li class="flex items-start gap-2">
+                    <Icon name="tabler:check" class="text-primary shrink-0 mt-0.5" />
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </WidgetWrapper>
+    )
+  }
+
+  <Features title={features.title} subtitle={features.subtitle} items={features.items} columns={3} />
+
+  <!-- Related Products -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <div class="text-center mb-8">
+      <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase">{t('product.related') || 'Featured Products'}</span>
+      <h2 class="mt-2 text-2xl font-bold text-foreground">SUPs for Paddle Clubs</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href={lh('/products/sup-explorer-11')} class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+        <h3 class="font-semibold text-foreground group-hover:text-primary">SUP Explorer 11</h3>
+        <p class="mt-1 text-sm text-muted">Stable all-rounder ideal for club rentals and lessons.</p>
+        <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
+      </a>
+      <a href={lh('/products/sup-ocean-voyager')} class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+        <h3 class="font-semibold text-foreground group-hover:text-primary">SUP Ocean Voyager</h3>
+        <p class="mt-1 text-sm text-muted">Touring SUP for club expeditions and advanced members.</p>
+        <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
+      </a>
+      <a href={lh('/products/life-vest-classic')} class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+        <h3 class="font-semibold text-foreground group-hover:text-primary">Life Vest Classic</h3>
+        <p class="mt-1 text-sm text-muted">CE-certified safety equipment for club fleets.</p>
+        <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
+      </a>
+    </div>
+  </section>
+
+  <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
+  <JsonLd type="Service" service={{
+    name: hero.title ? hero.title.replace('{SITE}', SITE.name) : 'Paddle Club Fleet Solutions',
+    description: hero.subtitle || 'Complete fleet and retail programs for SUP clubs',
+    serviceType: 'Paddle Club Solutions',
+    areaServed: ['Global'],
+    url: `/${lang}/solutions/paddle-clubs`,
+  }} />
+</Layout>

@@ -1,0 +1,83 @@
+﻿hero:
+  tagline: Továrna
+  title: Naše továrna
+  subtitle: '12 000 m² moderního výrobního zařízení v Qingdao, Čína.'
+  image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
+  imageAlt: Továrna afarer
+
+stats:
+  - value: '12 000'
+    label: m² celková plocha
+  - value: '200+'
+    label: Kvalifikovaných zaměstnanců
+  - value: '6'
+  - value: 'ISO 9001'
+    label: Certifikace
+
+intro:
+  - Naše továrna v Qingdao je srdcem výroby afarer. S rozlohou 12 000 m² a více než 200 kvalifikovanými zaměstnanci máme kapacitu a odbornost vyrábět vysoce kvalitní nafukovací čluny a vybavení pro vodní sporty v měřítku.
+  - Naše zařízení je vybaveno nejmodernějšími stroji, včetně automatických CNC řezacích strojů, RF dielektrických svářeček, horkovzdušných těsnicích zařízení a digitálních tiskáren.
+  - Udržujeme přísnou kontrolu kvality v každé fázi výroby, od vstupní kontroly surovin až po závěrečné testování hotových výrobků.
+
+workshops:
+  - title: Dílna na výrobu SUP
+    description: Výroba nafukovacích SUP prken s technologií drop-stitch.
+    image: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-pulse-1.webp
+  - title: Dílna na výrobu SUP
+    description: Montáž a svařování SUP člunů.
+    image: https://assets.afarer.com/images/afarer/products/SUP/afarer-SUP-330-boat.webp
+  - title: Svářecí dílna
+    description: RF a horkovzdušné svařování všech produktů.
+    image: https://assets.afarer.com/images/afarer/factory/afarer-producting-department3.webp
+  - title: Kontrolní a testovací dílna
+    description: Testování kvality a kontrola hotových výrobků.
+    image: https://assets.afarer.com/images/afarer/factory/afarer-pvc-material-testing.webp
+
+equipment:
+  - title: CNC řezací stroje
+    description: Přesné řezání tkanin s minimálním odpadem.
+  - title: RF svářečky
+    description: Vysokopevnostní dielektrické svařování.
+  - title: Horkovzdušné těsnicí zařízení
+    description: Automatické svařování pro PVC a Hypalon.
+  - title: Testovací stanice
+    description: Tlakové a vztlakové testování každého produktu.
+
+b2b_moq: 'Standardní MOQ: 5—0 jednotek na model (SUP/kajak/drop-stitch). MOQ pro SUP: 2— jednotek. Zkušební objednávky vítány pro nová partnerství.'
+intelligence_tagline: Factory Intelligence
+intelligence_title: Explore Our Manufacturing Capabilities
+
+intelligence_cards:
+  - title: Production Capacity
+    icon: C
+    icon_bg: blue
+    desc: '12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.'
+    metrics:
+      - label: MOQ
+        value: 'SUP: 5-10 / SUP: 2-5'
+      - label: Lead Time
+        value: '30-45 days'
+    link: /factory/capacity
+    link_label: 'Full capacity details →'
+  - title: Quality Lab & Testing
+    icon: Q
+    icon_bg: green
+    desc: 'Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat.'
+    metrics:
+      - label: Lab Equipment
+        value: 'Tensile tester, temp chamber, leak tank'
+      - label: Standards
+        value: 'ISO 9001, CE, AS 1799'
+    link: /factory/quality-lab
+    link_label: 'Lab procedures & equipment →'
+  - title: OEM/ODM Capability
+    icon: O
+    icon_bg: purple
+    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
+    metrics:
+      - label: Certifications
+        value: 'ISO 9001, BSCI, CE, REACH'
+      - label: Shipping
+        value: 'FOB, CIF, DDP to 50+ countries'
+    link: /factory/oem-capability
+    link_label: 'Full OEM services →'

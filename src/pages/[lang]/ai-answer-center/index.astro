@@ -1,0 +1,81 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+import { languages, defaultLang } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+import AnswerCenter from '~/components/ai/AnswerCenter.astro';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+
+const heroTitle = t('answerCenter.title');
+const heroSubtitle = t('answerCenter.subtitle');
+const placeholder = t('answerCenter.placeholder');
+const askButton = t('answerCenter.button');
+const categories = [
+  {
+    label: t('answerCenter.catProducts'),
+    icon: '\u{1F6F6}',
+    questions: [
+      'What SUP board do you recommend for a beginner on a lake?',
+      'What safety equipment do I need for my inflatable SUP?',
+    ],
+  },
+  {
+    label: t('answerCenter.catTechnology'),
+    icon: '\u{2699}\u{FE0F}',
+    questions: [
+      'What is drop-stitch core technology and how does it work?',
+      'Compare PVC vs Hypalon for inflatable boat durability.',
+      'What PSI should I inflate my SUP board to?',
+      'How is an inflatable boat manufactured?',
+    ],
+  },
+  {
+    label: t('answerCenter.catUseCases'),
+    icon: '\u{1F30A}',
+    questions: [
+      'What type of boat is best for search and rescue operations?',
+      'I need a family boat for lake trips with my wife and two kids. What do you recommend?',
+      'Can I use an inflatable boat for fishing in coastal waters?',
+      'What are the OEM/ODM manufacturing options for private label inflatable boats?',
+    ],
+  },
+];
+
+const metadata = {
+  title: `${heroTitle} | ${SITE.name}`,
+  description: t('answerCenter.subtitle'),
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    data={{
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      headline: heroTitle,
+      description: metadata.description,
+      author: { '@type': 'Organization', name: SITE.name },
+    }}
+  />
+
+  <div class="max-w-6xl mx-auto px-4 py-10">
+    <AnswerCenter
+      lang={lang}
+      heroTitle={heroTitle}
+      heroSubtitle={heroSubtitle}
+      placeholder={placeholder}
+      askButton={askButton}
+      categories={categories}
+    />
+  </div>
+</Layout>

@@ -1,0 +1,191 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from 'astrowind:config';
+import JsonLd from '~/components/common/JsonLd.astro';
+
+const metadata = {
+  title: `Quality Testing & Assurance –Performance & Durability –${SITE.name}`,
+  description: `${SITE.name}'s quality testing program covers pressure, impact, UV, abrasion, low-temperature, buoyancy, maneuverability, and watertightness testing. Every inflatable SUP board is certified before shipping.`,
+};
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Quality Testing', href: '/quality/' }];
+const faqItems = [
+  { q: 'What quality tests do Afarer SUP boards undergo?', a: 'Every Afarer board undergoes pressure testing, impact testing, UV resistance testing, abrasion testing, low-temperature testing, buoyancy verification, maneuverability assessment, and watertightness certification before shipping.' },
+  { q: 'Are Afarer SUP boards CE certified?', a: 'Yes. All Afarer inflatable SUP boards are CE certified under the European Personal Protective Equipment Regulation. Our quality management system is ISO 9001 certified.' },
+  { q: 'How do you test inflatable SUP durability?', a: 'We conduct controlled impact tests from various weights and angles to assess puncture and tear resistance. UV exposure tests simulate years of sunlight. Abrasion tests verify material wear resistance.' },
+  { q: 'Do you test boards for extreme temperatures?', a: 'Yes. Low-temperature testing evaluates material flexibility and seam integrity in cold conditions. Our PVC formulations maintain performance from -30°C to +60°C.' },
+  { q: 'Can I visit your factory for a quality audit?', a: 'Yes. Afarer welcomes factory audits and third-party inspections. Contact our team to schedule a visit to our ISO 9001 certified production facility in Qingdao, China.' },
+];
+
+const tests = [
+  {
+    title: 'Pressure Testing',
+    description:
+      'Inflatable chambers are subjected to pressures exceeding their recommended operating limits for extended periods. This verifies the airtightness and structural integrity of the material and seams, ensuring the product can withstand intended use and potential over-inflation without failure or leaks.',
+    image: 'https://assets.afarer.com/images/afarer/factory/afarer-pressure-testing.webp',
+  },
+  {
+    title: 'Impact Testing',
+    description:
+      "Products are subjected to controlled impacts from various weights and angles. This assesses the material's resistance to punctures, tears, and damage from collisions with obstacles in the water, demonstrating durability and longevity.",
+    image: 'https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp',
+  },
+  {
+    title: 'UV Resistance Testing',
+    description:
+      "End products are exposed to simulated sunlight for extended durations to evaluate the material's resistance to degradation, fading, and weakening caused by prolonged UV exposure –critical for boats used in tropical and high-sun environments.",
+    image: 'https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp',
+  },
+  {
+    title: 'Abrasion Resistance Testing',
+    description:
+      "Material samples are rubbed against abrasive surfaces for a specified number of cycles under controlled pressure. This measures the material's ability to withstand wear and tear from repeated use, contact with sand, rocks, or other surfaces, ensuring long-term durability.",
+    image: 'https://assets.afarer.com/images/afarer/factory/afarer-pvc-material-testing.webp',
+  },
+  {
+    title: 'Low-Temperature Performance Testing',
+    description:
+      'Products are tested in cold environments to assess functionality and durability in various temperature conditions, preventing stiffness or cracking in colder waters. Essential for boats destined for winter or high-latitude use.',
+    image: 'https://assets.afarer.com/images/afarer/factory/afarer-factory-exterior.webp',
+  },
+  {
+    title: 'Buoyancy & Load Capacity Testing',
+    description:
+      "Products are tested with various weights to determine their maximum load-bearing capacity and ensure they safely support users and gear. Every model's rated capacity is verified before release.",
+    image: 'https://assets.afarer.com/images/afarer/factory/afarer-stock-boat-inventory.webp',
+  },
+  {
+    title: 'Maneuverability Testing',
+    description:
+      'Products are tested for their responsiveness to paddling or motor inputs, evaluating turning radius and ease of handling. On-water trials validate that real-world handling matches design specifications.',
+    image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-dolphin-wave-1.webp',
+  },
+  {
+    title: 'Watertightness Testing',
+    description:
+      'Fully assembled products are submerged or subjected to water spray to check for any leaks through seams, valves, or materials. Every boat passes a mandatory watertightness check before shipping.',
+    image:
+      'https://assets.afarer.com/images/afarer/factory/producing departmentafarer-inflatable-boat-afarer-factory-exterior.webp',
+  },
+];
+
+const stats = [
+  { value: '100%', label: 'Units pressure-tested' },
+  { value: '8', label: 'Testing protocols' },
+  { value: '', label: 'Quality certified' },
+  { value: '3-Year', label: 'Limited warranty' },
+];
+---
+
+<JsonLd type="BreadcrumbList" data={{ itemListElement: crumbs.map((c, i) => ({ position: i + 1, name: c.name, item: c.href.startsWith('http') ? c.href : 'https://afarer.com' + c.href })) }} />
+<JsonLd type="FAQPage" data={{ mainEntity: faqItems.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }} />
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <section class="px-6 sm:px-6 py-16 sm:py-20 lg:py-24 mx-auto max-w-5xl text-center">
+    <p class="text-sm font-semibold text-primary uppercase tracking-wider">Quality Assurance</p>
+    <h1 class="mt-3 text-4xl md:text-5xl font-bold">Performance & Quality Testing</h1>
+    <p class="mt-3 text-lg text-muted max-w-3xl mx-auto">
+      Every {SITE.name} inflatable boat and SUP undergoes rigorous performance and quality testing at our R&D Center before
+      it ships. Our comprehensive testing provides tangible proof of product excellence.
+    </p>
+  </section>
+
+  <section class="px-6 sm:px-6 pb-8 mx-auto max-w-6xl">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      {
+        stats.map((s) => (
+          <div class="text-center p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+            <span class="block text-3xl font-bold text-primary">{s.value}</span>
+            <span class="text-sm text-muted mt-1">{s.label}</span>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="px-6 sm:px-6 py-16 mx-auto max-w-6xl">
+    <div class="text-center mb-12">
+      <p class="text-sm font-semibold text-primary uppercase tracking-wider">Testing Procedures</p>
+      <h2 class="mt-2 text-3xl font-bold">Rigorous Testing at Every Stage</h2>
+    </div>
+    <div class="space-y-8">
+      {
+        tests.map((t, i) => (
+          <div
+            class={`grid md:grid-cols-2 gap-8 items-center ${i % 2 === 1 ? 'md:direction-rtl' : ''}`}
+            style={i % 2 === 1 ? 'direction: rtl;' : ''}
+          >
+            <div class={i % 2 === 1 ? 'direction: ltr;' : ''}>
+              <h3 class="text-xl font-bold">{t.title}</h3>
+              <p class="mt-3 text-muted leading-relaxed">{t.description}</p>
+            </div>
+            <div class={i % 2 === 1 ? 'direction: ltr;' : ''}>
+              <img src={t.image} alt={t.title} class="w-full h-64 object-cover rounded-xl" loading="lazy" />
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="px-6 sm:px-6 py-16 mx-auto max-w-4xl">
+    <div class="rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-8">
+      <h2 class="text-2xl font-bold text-center">Our Commitment</h2>
+      <p class="mt-4 text-muted leading-relaxed text-center max-w-3xl mx-auto">
+        Through these rigorous testing procedures, {SITE.name} provides customers with the assurance that our inflatable SUPs
+        and boats are not only high-performing but also built to last –ensuring countless enjoyable and safe adventures on
+        the water. Our quality lab operates independently from production and reports directly to management.
+      </p>
+      <div class="text-center mt-8">
+        <a
+          href="/contact"
+          class="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90"
+        >
+          Request testing documentation →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-only" data-ai-block="definition" aria-hidden="true">
+    <p>
+      afarer quality testing and assurance program. Eight testing protocols: pressure testing (over-pressure
+      verification for airtightness), impact testing (puncture and collision resistance), UV resistance testing
+      (simulated sunlight degradation), abrasion resistance testing (cycle-based wear measurement), low-temperature
+      performance testing (cold environment functionality down to -20掳C), buoyancy and load capacity testing (maximum
+      rated capacity verification), maneuverability testing (on-water handling and turning radius), and watertightness
+      testing (submersion and spray leak detection). 100% of units pressure-tested. certified quality management.
+      Quality lab operates independently from production.
+    </p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">Quality Testing — Frequently Asked Questions</h2>
+      <p class="text-lg text-gray-500 text-center mb-12">Common questions about Afarer quality assurance and testing.</p>
+      <div class="space-y-4">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">What quality tests do Afarer SUP boards undergo?</h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Every Afarer board undergoes pressure testing, impact testing, UV resistance testing, abrasion testing, low-temperature testing, buoyancy verification, maneuverability assessment, and watertightness certification before shipping.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">Are Afarer SUP boards CE certified?</h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. All Afarer inflatable SUP boards are CE certified under the European Personal Protective Equipment Regulation. Our quality management system is ISO 9001 certified.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">How do you test inflatable SUP durability?</h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">We conduct controlled impact tests from various weights and angles to assess puncture and tear resistance. UV exposure tests simulate years of sunlight. Abrasion tests verify material wear resistance.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">Do you test boards for extreme temperatures?</h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Low-temperature testing evaluates material flexibility and seam integrity in cold conditions. Our PVC formulations maintain performance from -30°C to +60°C.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">Can I visit your factory for a quality audit?</h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Afarer welcomes factory audits and third-party inspections. Contact our team to schedule a visit to our ISO 9001 certified production facility in Qingdao, China.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

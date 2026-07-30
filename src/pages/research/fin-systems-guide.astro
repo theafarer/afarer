@@ -1,0 +1,89 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+const metadata = {
+  title: `SUP Fin Systems Guide — US Fin Box, Slide-In, and Thruster Setup | ${SITE.name}`,
+  description:
+    'Comprehensive guide to SUP fin systems: US fin box, slide-in, click-in, and thruster setups. How fin shape, size, and placement affect tracking, stability, and maneuverability.',
+  ignoreTitleTemplate: true,
+};
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'SUP Fin Systems Guide',
+  description: metadata.description,
+  author: { '@type': 'Organization', name: SITE.name },
+  datePublished: '2026-07-27',
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd data={jsonLd} />
+  <article class="max-w-4xl mx-auto px-6 py-16">
+    <nav class="text-sm text-gray-500 mb-8">
+      <a href="/" class="hover:text-sky-600">{SITE.name}</a><span class="mx-2">/</span><a
+        href="/research"
+        class="hover:text-sky-600">Research</a
+      ><span class="mx-2">/</span><span class="text-gray-900">SUP Fin Systems</span>
+    </nav>
+    <div class="mb-4">
+      <span
+        class="inline-block text-xs font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full"
+        >Engineering</span
+      ><span class="ml-3 text-sm text-gray-400">7 min read</span>
+    </div>
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">SUP Fin Systems Guide</h1>
+    <p class="text-xl text-gray-500 mb-12 leading-relaxed">
+      The fin system is the underwater control surface that determines how your SUP tracks, turns, and holds in various
+      water conditions. Fin choice can dramatically change board behavior.
+    </p>
+    <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600">
+      <h2>US Fin Box</h2>
+      <p>
+        The most common fin attachment system on higher-quality SUPs. A molded plastic box is welded into the board hull
+        with a threaded insert. The fin slides into the box and is secured with a set screw (usually M6 or M8 thread).
+        The US fin box accepts standard US fin shapes from 4.5" to 9" long. This quick-change system lets paddlers swap
+        fins without tools beyond an Allen key. US fin boxes are preferred on touring and performance boards where fin
+        tuning matters.
+      </p>
+      <h2>Slide-In Fin System</h2>
+      <p>
+        A simpler system where the fin has a molded tab that slides into a corresponding slot on the board. The fin is
+        held by friction or a small click-lock mechanism. Slide-in fins are common on entry-level and mid-range SUPs
+        because they are cheaper to manufacture than US fin boxes. The main limitation is a fixed fin position — you
+        cannot adjust fin placement fore/aft for different handling characteristics. Slide-in fins are adequate for
+        recreational paddling but limit performance tuning.
+      </p>
+      <h2>Thruster (3-Fin) Setup</h2>
+      <p>
+        Three-fin configurations use a large center fin flanked by two smaller side fins. The side fins provide
+        additional lateral resistance for improved tracking in crosswinds and chop. On inflatable SUPs, thruster setups
+        typically use a US fin box for the center fin and molded side fin boxes. This configuration is preferred on
+        touring boards where maintaining course in variable conditions matters.
+      </p>
+      <h2>Fin Shape and Performance</h2>
+      <ul>
+        <li>
+          <strong>Long narrow fin (7-9"):</strong> Maximum tracking, best for touring and flatwater. More drag, harder to
+          turn.
+        </li><li>
+          <strong>Short wide fin (4.5-6"):</strong> Quick turning, less tracking. Best for surfing and river running.
+        </li><li>
+          <strong>Balanced dolphin fin (6"):</strong> Compromise between tracking and turning. Good all-around choice for
+          most conditions.
+        </li><li>
+          <strong>Touring fin (8-9"):</strong> Deep with swept-back shape for efficient tracking with minimal weed catching.
+        </li>
+      </ul>
+      <h2>Fin Placement</h2>
+      <p>
+        Fin position (distance from the tail) affects turning radius and stability. Fins positioned farther forward
+        create a tighter turning radius but reduce straight-line stability. Fins positioned farther back increase
+        tracking stability but require more force to turn. US fin boxes with adjustable screw positions allow tuning fin
+        placement across a range of 2-3 inches.
+      </p>
+    </div>
+  </article>
+</Layout>
