@@ -1,71 +1,66 @@
 meta:
-  title: 'SUP Rental Fleet Solutions | {SITE}'
-  description: 'High-rotation SUP boards engineered for daily rental use. UV-resistant PVC, reinforced seams, quick-dry materials. Scale your rental business with Afarer.'
-
+  title: โซลูชันกองเรือเช่า SUP | {SITE}
+  description: บอร์ด SUP ที่ใช้งานหมุนเวียนสูง ออกแบบทางวิศวกรรมสำหรับการใช้งานให้เช่ารายวัน PVC ทนรังสี UV ตะเข็บเสริมความแข็งแรง วัสดุแห้งเร็ว ขยายธุรกิจให้เช่าของคุณไปกับ Afarer
 hero:
-  tagline: Rental Operators
-  title: 'Scale Your Rental Business<br />With Confidence'
-  subtitle: 'High-rotation SUP boards engineered for daily rental use, 365 days a year. Your revenue never takes a day off.'
+  tagline: ผู้ประกอบการธุรกิจให้เช่า
+  title: ขยายธุรกิจเช่าของคุณ<br />ด้วยความมั่นใจ
+  subtitle: บอร์ด SUP ที่ใช้งานหมุนเวียนสูง ออกแบบวิศวกรรมมาเพื่อให้บริการเช่ารายวัน 365 วันต่อปี รายได้ของคุณไม่เคยหยุดพัก
   image:
     src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
-    alt: Busy rental kiosk with SUP boards ready for guests
-
+    alt: จุดให้เช่าที่คึกคัก พร้อมบอร์ด SUP ให้บริการแขก
 features:
-  title: Built for the Rental Grind
-  subtitle: 'Every board is engineered for 500+ rental cycles with minimal maintenance.'
+  title: สร้างมาเพื่อรองรับการใช้งานหนักในธุรกิจให้เช่า
+  subtitle: บอร์ดทุกใบถูกออกแบบมาสำหรับการให้เช่ามากกว่า 500 รอบ โดยแทบไม่ต้องบำรุงรักษา
   items:
-    - title: '500+ Rental Cycles'
-      description: 'Tested to survive daily use in saltwater, sun, and sand.'
-      icon: 'tabler:shield-check'
-    - title: 'UV-Resistant Fabric'
-      description: 'No fading or degradation after 1 year of outdoor storage.'
-      icon: 'tabler:sun'
-    - title: 'Reinforced Seams'
-      description: '3x stronger than standard inflatable board construction.'
-      icon: 'tabler:layers-intersect'
-    - title: 'Quick-Dry Materials'
-      description: 'Boards ready for next rental in under 30 minutes.'
-      icon: 'tabler:droplet'
-    - title: 'Stackable Storage'
-      description: 'Space-saving design — store 40% more boards in the same area.'
-      icon: 'tabler:stack'
-    - title: 'Color-Coded Sizes'
-      description: 'Staff grabs the right board instantly with color-coded sizing.'
-      icon: 'tabler:color-swatch'
-
+    - title: รอบการเช่า 500+ ครั้ง
+      description: ผ่านการทดสอบเพื่อรองรับการใช้งานประจำวันในน้ำทะเล แดด และทราย
+      icon: tabler:shield-check
+    - title: ผ้ากันรังสียูวี (UV-Resistant)
+      description: ไม่ซีดจางหรือเสื่อมสภาพหลังการจัดเก็บกลางแจ้งเป็นเวลา 1 ปี
+      icon: tabler:sun
+    - title: รอยเชื่อมเสริมความแข็งแรง
+      description: แข็งแรงกว่าบอร์ดเป่าลมมาตรฐาน 3 เท่า
+      icon: tabler:layers-intersect
+    - title: วัสดุแห้งเร็ว
+      description: บอร์ดพร้อมให้เช่าครั้งถัดไปในเวลาไม่ถึง 30 นาที
+      icon: tabler:droplet
+    - title: การจัดเก็บแบบซ้อนกันได้
+      description: การออกแบบประหยัดพื้นที่ — จัดเก็บบอร์ดได้เพิ่มขึ้น 40% ในพื้นที่เท่าเดิม
+      icon: tabler:stack
+    - title: ขนาดรหัสสี
+      description: พนักงานหยิบบอร์ดที่ถูกต้องได้ทันทีด้วยระบบรหัสสีบอกขนาด
+      icon: tabler:color-swatch
 stats:
-  title: Operations Metrics
+  title: ตัวชี้วัดการดำเนินงาน
   stats:
-    - title: Board Turnover
-      amount: '< 5 min'
-    - title: Annual Maintenance
-      amount: '~15 min/board'
-    - title: Parts Dispatch
-      amount: '48h'
-    - title: Defect Rate
-      amount: '< 0.5%'
-
+    - title: อัตราการหมุนเวียนบอร์ด
+      amount: < 5 min
+    - title: การดูแลรักษาประจำปี
+      amount: ~15 นาที/บอร์ด
+    - title: การจัดส่งอะไหล่
+      amount: 48h
+    - title: อัตราสินค้าบกพร่อง
+      amount: < 0.5%
 fleet_guide:
-  title: Fleet Sizing Guide
-  subtitle: 'Estimate the fleet size and revenue potential for your rental operation.'
+  title: คู่มือการกำหนดขนาดกองเรือ
+  subtitle: ประเมินขนาดกองเรือและศักยภาพรายได้สำหรับธุรกิจให้เช่าของคุณ
   tiers:
-    - label: Small Kiosk
-      boards: '15-20'
-      revenue: '$XX,XXX/yr'
-    - label: Mid-Size Operation
-      boards: '30-50'
-      revenue: '$XX,XXX/yr'
-    - label: Large Beach Rental
-      boards: '50-100'
-      revenue: '$XXX,XXX/yr'
-
+    - label: คีออสขนาดเล็ก
+      boards: 15-20
+      revenue: $XX,XXX/yr
+    - label: กิจการขนาดกลาง
+      boards: 30-50
+      revenue: $XX,XXX/yr
+    - label: ผู้ให้เช่าชายหาดรายใหญ่
+      boards: 50-100
+      revenue: $XXX,XXX/yr
 cta:
-  title: 'Ready to scale your rental business?'
-  subtitle: 'Get rental pricing or compare board models for your operation.'
+  title: พร้อมที่จะขยายธุรกิจให้เช่าของคุณแล้วหรือยัง?
+  subtitle: รับข้อมูลราคาเช่าหรือเปรียบเทียบรุ่นบอร์ดสำหรับธุรกิจของคุณ
   actions:
-    - text: 'Get Rental Pricing'
-      href: '/contact?package=rental'
-      variant: 'primary'
-    - text: 'Compare Board Models'
-      href: '/compare'
-      variant: 'secondary'
+    - text: ขอราคาเช่า
+      href: /contact?package=rental
+      variant: primary
+    - text: เปรียบเทียบรุ่นบอร์ด
+      href: /compare
+      variant: secondary

@@ -1,48 +1,55 @@
 meta:
-  title: 'Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}'
-  description: 'Validate your RIB hull performance with our hydrodynamic test tank. Scale-model towing, planing analysis, and fuel efficiency testing. Book a tank test session today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Bazin de testare hidrodinamică — Remorcaje la scară și optimizarea carenei | {SITE}
+  description: Validați performanța carenei RIB cu bazinul nostru de testare hidrodinamică. Remorcarea modelelor la scară redusă, analiza planării și testarea eficienței consumului de combustibil. Rezervați astăzi o sesiune de testare în bazin.
+back_text: Înapoi la Centrul R&D
+home_label: Acasă
 hero:
-  tagline: 'Lab 04'
-  title: 'Hydrodynamic Test Tank'
-  subtitle: 'Validating performance before the first full-scale prototype'
-  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
-  image_alt: 'Afarer hydrodynamic test tank performance testing'
+  tagline: Lab 04
+  title: Bazin de testare hidrodinamică
+  subtitle: Validarea performanței înainte de primul prototip la scară completă
+  image: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp
+  image_alt: Testarea performanței în rezervorul hidrodinamic de testare afarer
+intro: >-
+  Este o concepție greșită comună că testarea hidrodinamică este rezervată navelor de mare cursă. În realitate, performanța unei carene mici de planare — cum ar fi o barcă RIB de 4–6 m — depinde la fel de mult de forma sa subacvatică pe cât depinde un petrolier de bulbul de la prova. Unghiul de
+  asietă, suprafața udată, generarea de stropi și ventilația au un efect dramatic asupra vitezei, consumului de combustibil și confortului de navigare. La {SITE.name}, operăm un bazin hidrodinamic dedicat care ne permite să cuantificăm aceste efecte la scară de model — înainte de a angaja metalul și
+  țesătura pentru un prototip la scară reală.
+content_html: >-
+  <h2>De ce testăm în bazin o ambarcațiune mică?</h2>
 
-intro: 'It is a common misconception that hydrodynamic testing is reserved for ocean-going ships. In reality, the performance of a small planing hull — such as a 4–6 m RIB — is just as dependent on its underwater shape as a tanker is on its bulbous bow. Trim angle, wetted surface area, spray generation, and ventilation all have a dramatic effect on speed, fuel consumption, and ride comfort. At {SITE.name}, we operate a dedicated hydrodynamic test tank that allows us to quantify these effects at model scale — before committing metal and fabric to a full-size prototype.'
+  <p>Testarea la scară de model (de obicei 1:3 până la 1:5) ne permite să iterăm rapid și eficient formele carenei. O săptămână în bazin poate genera aceleași date de performanță care ar necesita luni de încercări la scară reală — și la o fracțiune din cost.</p>
 
-content_html: |
-  <h2>Why tank-test a small boat?</h2>
-  <p>Testing at model scale (typically 1:3 to 1:5) gives us the ability to iterate hull shapes rapidly and cost-effectively. A week in the tank can generate the same performance data that would require months of full-scale trial-and-error — and at a fraction of the cost.</p>
 
-  <h2>Facility specifications</h2>
+  <h2>Specificațiile facilității</h2>
+
   <table>
-    <thead><tr><th>Parameter</th><th>Specification</th></tr></thead>
+    <thead><tr><th>Parametru</th><th>Specificație</th></tr></thead>
     <tbody>
-      <tr><td>Tank dimensions</td><td>35 m (L) × 3.5 m (W) × 1.8 m (D)</td></tr>
-      <tr><td>Towing carriage</td><td>Electric servo-driven, max speed 12 m/s (23 kn), speed accuracy ± 0.5 %</td></tr>
-      <tr><td>Wave generator</td><td>Flap-type, programmable regular &amp; irregular sea states, Hs up to 0.3 m at model scale</td></tr>
-      <tr><td>Instrumentation</td><td>6-component dynamometer (resistance, side force, yaw moment), accelerometers, inclinometers, wave probes</td></tr>
-      <tr><td>Data acquisition</td><td>Sampling at 1000 Hz per channel, real-time display + post-processing suite</td></tr>
-      <tr><td>Model fabrication</td><td>In-house CNC milling and 3D printing for model hulls up to 1.8 m LOA</td></tr>
+      <tr><td>Dimensiunile bazinului</td><td>35 m (L) × 3.5 m (W) × 1.8 m (D)</td></tr>
+      <tr><td>Cărucior de remorcare</td><td>Acționat electric cu servomotor, viteză maximă 12 m/s (23 kn), precizia vitezei ± 0,5 %</td></tr>
+      <tr><td>Generator de valuri</td><td>Tip clapetă, stări de mare regulate &amp; neregulate programabile, Hs de până la 0,3 m la scară de model</td></tr>
+      <tr><td>Instrumentație</td><td>Dinamometru pe 6 componente (rezistență, forță laterală, moment de girație), accelerometre, inclinometre, sonde pentru valuri</td></tr>
+      <tr><td>Achiziție de date</td><td>Eșantionare la 1000 Hz pe canal, afișare în timp real + pachet de postprocesare</td></tr>
+      <tr><td>Fabricarea modelelor</td><td>Frezare CNC și imprimare 3D în cadrul companiei, pentru carene model de până la 1,8 m LOA</td></tr>
     </tbody>
   </table>
 
-  <h2>Our test programme</h2>
-  <p>A standard hull development programme in our tank follows this sequence:</p>
+
+  <h2>Programul nostru de testare</h2>
+
+  <p>Un program standard de dezvoltare a carenei în bazinul nostru urmează această secvență:</p>
+
   <ol>
-    <li><strong>Model build</strong> — A 1:3.5 scale model is CNC-machined from high-density foam and glassed for rigidity. Weight and CG are adjusted to match Froude-scaled full-load condition.</li>
-    <li><strong>Resistance runs</strong> — The model is towed at 8-10 speeds spanning the operating range. Total resistance is measured and decomposed into frictional and residuary components using the ITTC-1957 method.</li>
-    <li><strong>Trim &amp; sinkage measurement</strong> — Running trim and sinkage are recorded at each speed. An optimal trim angle of 4-6° for planing hulls is the target.</li>
-    <li><strong>Wake survey</strong> — Transverse wave cuts are measured at two speeds to assess wave-making resistance and identify transverse wave interactions that could cause stern interference.</li>
-    <li><strong>Seakeeping (optional)</strong> — Head-sea and following-sea runs in regular waves to measure added resistance, vertical acceleration, and slamming probability.</li>
-    <li><strong>Data analysis &amp; recommendations</strong> — A full report is delivered with comparative charts, speed/power curves, and specific design recommendations for the full-scale hull.</li>
+    <li><strong>Construirea modelului</strong> — Un model la scara 1:3,5 este prelucrat prin CNC din spumă de înaltă densitate și acoperit cu fibră de sticlă pentru rigiditate. Greutatea și CG sunt ajustate pentru a corespunde condiției de încărcare completă scalată Froude.</li>
+    <li><strong>Teste de rezistență</strong> — Modelul este remorcat la 8-10 viteze care acoperă intervalul de operare. Rezistența totală este măsurată și descompusă în componente fricțională și reziduală folosind metoda ITTC-1957.</li>
+    <li><strong>Măsurarea asietei &amp; tasării</strong> — Asieta din mers și tasarea sunt înregistrate la fiecare viteză. Ținta este un unghi optim de asietă de 4-6° pentru carenele cu planare.</li>
+    <li><strong>Studiul valului de prova</strong> — Tăieturile transversale de val sunt măsurate la două viteze pentru a evalua rezistența la formare de val și pentru a identifica interacțiunile valurilor transversale care ar putea cauza interferențe la pupa.</li>
+    <li><strong>Comportament pe mare (opțional)</strong> — Teste în val de prova și val de pupa, în valuri regulate, pentru a măsura rezistența adițională, accelerația verticală și probabilitatea de slamming.</li>
+    <li><strong>Analiza datelor &amp; recomandări</strong> — Se livrează un raport complet, cu grafice comparative, curbe viteză/putere și recomandări specifice de proiectare pentru carena la scară reală.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typical Tank Test Results — Resistance vs Speed (RIB 450 hull, 1:3.5 scale)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Rezultate tipice ale testelor în bazin — Rezistență vs. viteză (carenă RIB 450, scară 1:3,5)</p>
     <div class="space-y-2">
       <div class="flex items-center gap-2 text-xs">
         <span class="w-20">5 kn (1:1)</span>
@@ -87,26 +94,35 @@ content_html: |
         <span class="w-16 text-right">232 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">Model-scale resistance (N) at Froude-scaled speeds. Full-scale power prediction follows the ITTC-1978 performance-prediction method.</p>
+    <p class="text-xs text-gray-400 mt-2">Rezistența la scară de model (N) la viteze scalate Froude. Predicția puterii la scară reală urmează metoda de predicție a performanței ITTC-1978.</p>
   </div>
 
-  <h2>Expert team</h2>
-  <p>Our tank is operated by a hydrodynamicist with a PhD in naval architecture and 8 years of towing-tank experience at a major European maritime research institute. He is supported by a technician who prepares all models and instrumentation. The team follows the ITTC (International Towing Tank Conference) Recommended Procedures to ensure that every test is repeatable, traceable, and internationally defensible.</p>
 
-  <h2>Tank-testing for custom hull development</h2>
-  <p>Our tank is not only used for house-designed hulls — we regularly run test programmes for clients who want to validate a custom hull shape or investigate a performance issue:</p>
+  <h2>Echipa de experți</h2>
+
+  <p>Bazinul nostru este operat de un hidrodinamicist cu doctorat în arhitectură navală și 8 ani de experiență cu bazinele de remorcare la un important institut european de cercetare maritimă. Acesta este sprijinit de un tehnician care pregătește toate modelele și instrumentația. Echipa urmează
+  Procedurile recomandate ITTC (International Towing Tank Conference) pentru a se asigura că fiecare test este repetabil, trasabil și apărabil la nivel internațional.</p>
+
+
+  <h2>Testarea în bazin pentru dezvoltarea carenelor personalizate</h2>
+
+  <p>Bazinul nostru nu este folosit doar pentru carenele proiectate în cadrul companiei — rulăm în mod regulat programe de testare pentru clienții care doresc să valideze o formă personalizată de carenă sau să investigheze o problemă de performanță:</p>
+
   <ul>
-    <li><strong>Hull-form comparison</strong> — Two or more candidate hull shapes tested under identical conditions, providing an objective drag/speed/stability comparison to inform your design choice.</li>
-    <li><strong>Appendage optimisation</strong> — Interceptor plates, spray rails, trim tabs, and strakes can be tested in various configurations to quantify their individual contribution to drag reduction.</li>
-    <li><strong>Engine-matching study</strong> — Resistance data is converted to a power-prediction curve, allowing you to select the optimum engine horsepower for your target speed and payload.</li>
+    <li><strong>Compararea formelor de carenă</strong> — Două sau mai multe forme candidate de carenă testate în condiții identice, oferind o comparație obiectivă a rezistenței/vitezei/stabilității pentru a vă informa alegerea de proiectare.</li>
+    <li><strong>Optimizarea apendicilor</strong> — Plăci interceptor, șine anti-stropire, trim tabs și spranele pot fi testate în diverse configurații pentru a cuantifica contribuția individuală la reducerea rezistenței.</li>
+    <li><strong>Studiu de potrivire a motorului</strong> — Datele de rezistență sunt convertite într-o curbă de predicție a puterii, permițându-vă să selectați puterea optimă a motorului pentru viteza și sarcina utilă dorite.</li>
   </ul>
 
-  <h2>Why test with us?</h2>
-  <p>We do not just give you a set of raw numbers. Our reports translate tank data into actionable engineering recommendations: "Raise the spray-rail by 8 mm to reduce wetted surface at cruise speed", "Increase deadrise at the transom by 3° to reduce slamming acceleration", or "Move the longitudinal centre of gravity 150 mm aft for improved planing attitude". You leave with a clear understanding of what to change and why.</p>
-  <p>Our tank is also available for independent third-party testing on a fee-for-service basis. If you are developing a hull and want an unbiased, professionally executed hydrodynamic assessment, we welcome your enquiry.</p>
 
+  <h2>De ce să testați cu noi?</h2>
+
+  <p>Nu vă oferim doar un set de cifre brute. Rapoartele noastre transformă datele din bazin în recomandări inginerești acționabile: „Ridicați șina anti-stropire cu 8 mm pentru a reduce suprafața udată la viteza de croazieră", „Măriți deadrise-ul la oglindă cu 3° pentru a reduce accelerația de
+  slamming" sau „Mutați centrul de greutate longitudinal cu 150 mm spre pupa pentru o atitudine de planare îmbunătățită". Plecați cu o înțelegere clară a ceea ce trebuie schimbat și de ce.</p>
+
+  <p>Bazinul nostru este disponibil și pentru testări independente de către terți, pe bază de servicii plătite. Dacă dezvoltați o carenă și doriți o evaluare hidrodinamică imparțială, executată profesional, vă invităm să ne contactați.</p>
 cta:
-  title: 'Book a tank test session'
-  subtitle: 'Whether you need a full development programme or a single comparative test, we can accommodate your schedule.'
-  button_text: 'Contact our hydrodynamics team'
+  title: Rezervă o sesiune de testare în bazin
+  subtitle: Fie că aveți nevoie de un program complet de dezvoltare sau de un singur test comparativ, ne putem adapta programului dumneavoastră.
+  button_text: Contactează echipa noastră de hidrodinamică
   button_link: /contact

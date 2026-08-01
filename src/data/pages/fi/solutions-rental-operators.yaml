@@ -1,71 +1,66 @@
 meta:
-  title: 'SUP Rental Fleet Solutions | {SITE}'
-  description: 'High-rotation SUP boards engineered for daily rental use. UV-resistant PVC, reinforced seams, quick-dry materials. Scale your rental business with Afarer.'
-
+  title: SUP vuokralaivasto-ratkaisut | {SITE}
+  description: Suuren käyntimäärän SUP-lautta, suunniteltu päivittäiseen vuokrauskäyttöön. UV-suojaava PVC, vahvistetut saumat, nopeasti kuivuvat materiaalit. Kasvata vuokraustoimintoasi Afarerin avulla.
 hero:
-  tagline: Rental Operators
-  title: 'Scale Your Rental Business<br />With Confidence'
-  subtitle: 'High-rotation SUP boards engineered for daily rental use, 365 days a year. Your revenue never takes a day off.'
+  tagline: Vuokraajat
+  title: Kasvata vuokrausliiketoimintaasi<br />Varmuudella
+  subtitle: Korkeakierteiset SUP-laudat suunniteltu päivittäiseen vuokrauskäyttöön, 365 päivää vuodessa. Tulosi ei koskaan lepää päivääkään.
   image:
     src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
-    alt: Busy rental kiosk with SUP boards ready for guests
-
+    alt: Ruuhkainen vuokrauskioski, SUP-laudat valmiina vieraille
 features:
-  title: Built for the Rental Grind
-  subtitle: 'Every board is engineered for 500+ rental cycles with minimal maintenance.'
+  title: Rakennettu vuokrauksen arkeen
+  subtitle: Jokainen lauta on suunniteltu 500+ vuokrausjaksoon vähimmällä huollolla.
   items:
-    - title: '500+ Rental Cycles'
-      description: 'Tested to survive daily use in saltwater, sun, and sand.'
-      icon: 'tabler:shield-check'
-    - title: 'UV-Resistant Fabric'
-      description: 'No fading or degradation after 1 year of outdoor storage.'
-      icon: 'tabler:sun'
-    - title: 'Reinforced Seams'
-      description: '3x stronger than standard inflatable board construction.'
-      icon: 'tabler:layers-intersect'
-    - title: 'Quick-Dry Materials'
-      description: 'Boards ready for next rental in under 30 minutes.'
-      icon: 'tabler:droplet'
-    - title: 'Stackable Storage'
-      description: 'Space-saving design — store 40% more boards in the same area.'
-      icon: 'tabler:stack'
-    - title: 'Color-Coded Sizes'
-      description: 'Staff grabs the right board instantly with color-coded sizing.'
-      icon: 'tabler:color-swatch'
-
+    - title: 500+ vuokrakertaa
+      description: Testattu kestämään päivittäistä käyttöä suolavedessä, auringossa ja hiekassa.
+      icon: tabler:shield-check
+    - title: UV-kestävä kangas
+      description: Ei haalistumista tai heikkenemistä vuoden ulkosäilytyksen jälkeen.
+      icon: tabler:sun
+    - title: Vahvistetut saumat
+      description: 3 kertaa vahvempi kuin standardi laukeavan lautan rakenne.
+      icon: tabler:layers-intersect
+    - title: Nopeakuivuvat materiaalit
+      description: Laudat valmiina seuraavaan vuokraukseen alle 30 minuutissa.
+      icon: tabler:droplet
+    - title: Pinottava varastointi
+      description: Tilansäästävä suunnittelu — tallenna 40 % enemmän lautoja samassa tilassa.
+      icon: tabler:stack
+    - title: Värikoodatut koot
+      description: Henkilökunta valitsee oikean laudan heti värikoodatun koon avulla.
+      icon: tabler:color-swatch
 stats:
-  title: Operations Metrics
+  title: Toimintamittarit
   stats:
-    - title: Board Turnover
-      amount: '< 5 min'
-    - title: Annual Maintenance
-      amount: '~15 min/board'
-    - title: Parts Dispatch
-      amount: '48h'
-    - title: Defect Rate
-      amount: '< 0.5%'
-
+    - title: Lautojen vaihtuvuus
+      amount: < 5 min
+    - title: Vuosihuolto
+      amount: ~15 min/laudalle
+    - title: Varaa lähetys
+      amount: 48h
+    - title: Viallisuusaste
+      amount: < 0,5 %
 fleet_guide:
-  title: Fleet Sizing Guide
-  subtitle: 'Estimate the fleet size and revenue potential for your rental operation.'
+  title: Laivaston koko-opas
+  subtitle: Arvioi vuokraustoiminnan laivastokoko ja tulopotentiaali.
   tiers:
-    - label: Small Kiosk
-      boards: '15-20'
-      revenue: '$XX,XXX/yr'
-    - label: Mid-Size Operation
-      boards: '30-50'
-      revenue: '$XX,XXX/yr'
-    - label: Large Beach Rental
-      boards: '50-100'
-      revenue: '$XXX,XXX/yr'
-
+    - label: Pieni kioski
+      boards: 15–20
+      revenue: $XX,XXX/vuosi
+    - label: Keskikokoinen toiminta
+      boards: 30-50
+      revenue: $XX,XXX/vuosi
+    - label: Suuri rantavuokraamo
+      boards: 50-100
+      revenue: $XXX,XXX/vuodessa
 cta:
-  title: 'Ready to scale your rental business?'
-  subtitle: 'Get rental pricing or compare board models for your operation.'
+  title: Valmis skaalamaan vuokrilaitastasi?
+  subtitle: Hanki vuokraushinnasto tai vertaile lautasmalleja toimintasi tarpeisiin.
   actions:
-    - text: 'Get Rental Pricing'
-      href: '/contact?package=rental'
-      variant: 'primary'
-    - text: 'Compare Board Models'
-      href: '/compare'
-      variant: 'secondary'
+    - text: Hae vuokrahintoja
+      href: /contact?package=rental
+      variant: primary
+    - text: Vertaa lautamalleja
+      href: /compare
+      variant: secondary

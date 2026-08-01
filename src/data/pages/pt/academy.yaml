@@ -1,163 +1,163 @@
 hero:
-  tagline: afarer Academy
+  tagline: Academia Afarer
   title: Centro de Aprendizagem
   subtitle: Guias e tutoriais para todos os níveis —desde básicos de SUP a técnicas avançadas de resgate
 categories:
   - level: Iniciante
-    color: from-green-500 to-emerald-600
-    badge: bg-green-100 text-green-700
+    color: de-verde-500 para-esmeralda-600
+    badge: bg-verde-100 texto-verde-700
     guides:
       - title: Fundamentos de SUP
         desc: Aprenda os fundamentos do paddleboarding em pé —postura, técnica de remada e equilíbrio.
-        slug: sup-basics
+        slug: fundamentos-do-sup
       - title: Técnicas de Remo
         desc: Remada para frente, remada de varredura, remada de tração e brace baixo —domine os movimentos essenciais do remo.
-        slug: paddle-techniques
+        slug: técnicas de remada
       - title: Segurança Primeiro
         desc: Práticas essenciais de segurança incluindo verificação meteorológica, uso de PFD, regras de leash e autorresgate.
-        slug: safety-first
+        slug: segurança em primeiro lugar
   - level: Intermediário
-    color: from-blue-500 to-indigo-600
-    badge: bg-blue-100 text-blue-700
+    color: de-azul-500 para-índigo-600
+    badge: bg-azul-100 texto-azul-700
     guides:
       - title: Essenciais de Passeio
         desc: Planeamento de remadas de várias horas —navegação, hidratação, ritmo e leitura de previsões de vento.
-        slug: touring-essentials
+        slug: essenciais-para-turismo
       - title: Leitura Meteorológica
         desc: Interprete previsões marinhas, identifique padrões de nuvens e entenda os efeitos do vento na água.
-        slug: weather-reading
+        slug: leitura do tempo
       - title: Fundamentos de Navegação
         desc: Leitura de cartas, uso de bússola, waypoints GPS e planeamento de rotas para remada costeira.
-        slug: navigation-basics
+        slug: noções básicas de navegação
       - title: Consciência das Marés
         desc: Compreensão dos ciclos de marés, correntes e como afetam o timing de lançamento e a rota.
-        slug: tidal-awareness
+        slug: consciência das marés
   - level: Avançado
-    color: from-purple-500 to-violet-600
-    badge: bg-purple-100 text-purple-700
+    color: de-roxo-500 para-violeta-600
+    badge: bg-roxo-100 texto-roxo-700
     guides:
       - title: Planeamento de Viagens de Vários Dias
         desc: Logística de expedição —seleção de equipamento, planeamento de refeições, protocolos de segurança e contactos de emergência.
-        slug: multi-day-trip-planning
+        slug: planejamento-de-viagem-de-múltos-dias
       - title: Técnicas de Resgate
         desc: Autorresgate, resgate T, resgate esquimó para caiaques e protocolos de reboque em águas abertas.
-        slug: rescue-techniques
+        slug: técnicas de resgate
       - title: Remada Noturna
         desc: Navegação após o anoitecer —requisitos de iluminação, memória de rota, comunicação em grupo e consciência de perigos.
-        slug: night-paddling
+        slug: remo noturno
   - level: Manutenção
-    color: from-amber-500 to-orange-600
-    badge: bg-amber-100 text-amber-700
+    color: de-âmbar-500 para-laranja-600
+    badge: bg-âmbar-100 texto-âmbar-700
     guides:
       - title: Limpeza e Cuidados
         desc: Enxaguamento com água doce, proteção UV, prevenção de bolor e técnicas adequadas de secagem após cada sessão.
-        slug: cleaning-and-care
+        slug: limpeza-e-cuidado
       - title: Guia de Armazenamento
         desc: Melhores práticas para armazenar pranchas e barcos infláveis —desinsuflação, dobragem, controlo de temperatura e vida útil.
-        slug: storage-guide
+        slug: guia-de-armazenamento
       - title: Fundamentos de Reparação
         desc: Repare pequenos furos, fugas em costuras e problemas de válvulas com kits de reparação PVC e técnicas de remendo.
-        slug: repair-basics
+        slug: noções básicas de reparo
       - title: Manutenção de Válvulas
         desc: Identifique tipos de válvulas (Halkey-Roberts, Boston, Leafield), limpe detritos e substitua hastes defeituosas.
-        slug: valve-maintenance
-knowledge_center_tagline: Knowledge Center
-knowledge_center_title: Marine Equipment & Industry Guides
-knowledge_center_subtitle: Expert knowledge and buying guides for marine professionals, fleet operators, and water sports enthusiasts.
+        slug: manutenção de válvula
+knowledge_center_tagline: Centro de Conhecimento
+knowledge_center_title: Equipamentos Marinhos e Guias da Indústria
+knowledge_center_subtitle: Conhecimento especializado e guias de compra para profissionais marítimos, operadores de frota e entusiastas de esportes aquáticos.
 knowledge_sections:
-  - title: SUP Board Knowledge
-    tagline: Stand-Up Paddleboard Guides
-    desc: Everything about SUP boards —board design, materials, size selection, maintenance, and buying advice for recreational and commercial use.
+  - title: Conhecimento do Conselho SUP
+    tagline: Guias de Stand-Up Paddle
+    desc: Tudo sobre pranchas de SUP — design da prancha, materiais, escolha de tamanho, manutenção e conselhos de compra para uso recreativo e comercial.
     guides:
-      - title: How to Choose the Right SUP Board
-        desc: Complete guide to selecting a SUP —size, volume, material, shape, and intended use.
+      - title: Como Escolher a Prancha de SUP Certa
+        desc: Guia completo para escolher um SUP — tamanho, volume, material, formato e uso pretendido.
         href: /learn/sup
-      - title: Inflatable vs Hard SUP
-        desc: Inflatable SUP vs hard epoxy board —portability, durability, performance, and value compared.
+      - title: SUP Inflável vs Rígido
+        desc: SUP inflável vs prancha dura de epóxi — portabilidade, durabilidade, desempenho e valor comparados.
         href: /compare/inflatable-vs-hardboard
       - title: All-Around vs Touring vs Yoga SUP
-        desc: Different SUP board types —construction standards, shapes, sizes, and recommended uses.
+        desc: Diferentes tipos de prancha de SUP — padrões de construção, formatos, tamanhos e usos recomendados.
         href: /learn/sup
-      - title: Drop-Stitch vs Traditional Construction
-        desc: Compare drop-stitch and traditional construction for SUP boards across weight, cost, durability, and rigidity.
+      - title: Construção Drop-Stitch vs Tradicional
+        desc: Compare a construção drop-stitch e a construção tradicional para pranchas de SUP em termos de peso, custo, durabilidade e rigidez.
         href: /learn/drop-stitch-core
-  - title: Inflatable SUP Guide
-    tagline: Inflatable SUP Knowledge
-    desc: Comprehensive guides on inflatable SUPs —PVC materials, drop-stitch construction, safety standards, and maintenance best practices.
+  - title: Guia de SUP Inflável
+    tagline: Conhecimento sobre SUP Inflável
+    desc: Guias completos sobre SUPs infláveis — materiais de PVC, construção drop-stitch, normas de segurança e melhores práticas de manutenção.
     guides:
-      - title: PVC Material Guide
-        desc: Definitive guide to PVC materials used in inflatable SUP board construction.
+      - title: Guia de Material de PVC
+        desc: Guia definitivo dos materiais de PVC usados na construção de pranchas de SUP infláveis.
         href: /learn/materials
-      - title: How Inflatable SUPs Are Made
-        desc: Manufacturing process —material cutting, drop-stitch core bonding, seam construction, pressure testing, and quality control.
+      - title: Como os SUPs Infláveis São Feitos
+        desc: Processo de fabricação — corte de material, colagem do núcleo de ponto de gota, construção de costura, teste de pressão e controle de qualidade.
         href: /learn/inflatable-technology
-      - title: SUP Safety Guide
-        desc: Safety standards, load capacity, proper inflation, pre-departure checks, and emergency procedures.
+      - title: Guia de Segurança de SUP
+        desc: Normas de segurança, capacidade de carga, inflação adequada, verificações pré-partida e procedimentos de emergência.
         href: /learn/water-safety
-      - title: SUP Maintenance
-        desc: Cleaning, storage, UV protection, and repair of inflatable SUP boards.
+      - title: Manutenção de SUP
+        desc: Limpeza, armazenamento, proteção contra UV e reparo de pranchas infláveis de SUP.
         href: /inflatable-sup-maintenance
-  - title: SUP Board Knowledge
-    tagline: SUP Board Hub
-    desc: Technical guides covering SUP board types, materials, construction methods, maintenance, and safety.
+  - title: Conhecimento do Conselho SUP
+    tagline: Central de Pranchas de SUP
+    desc: Guias técnicos cobrindo tipos de pranchas de SUP, materiais, métodos de construção, manutenção e segurança.
     guides:
-      - title: SUP Board Types
-        desc: All-around, touring, yoga, sport, and kids SUPs —learn the differences and choose the right one.
+      - title: Tipos de Pranchas de SUP
+        desc: SUPs para todas as finalidades, passeios, yoga, esportes e crianças — aprenda as diferenças e escolha o certo.
         href: /learn/sup
-      - title: Drop-Stitch Technology
-        desc: How thousands of internal threads create rigid, high-pressure inflatable structures.
+      - title: Tecnologia Drop-Stitch
+        desc: Como milhares de fios internos criam estruturas infláveis rígidas e de alta pressão.
         href: /learn/drop-stitch-core
-      - title: Materials Reference
-        desc: PVC denier ratings, fabric weights, UV resistance, and marine-grade materials explained.
+      - title: Referência de Materiais
+        desc: Classificações de denier de PVC, pesos de tecido, resistência UV e materiais de qualidade marítima explicados.
         href: /learn/materials
-      - title: SUP Buying Guide
-        desc: Compare different SUP board types for different use cases and skill levels.
+      - title: Guia de Compra de SUP
+        desc: Compare diferentes tipos de pranchas de SUP para diferentes usos e níveis de habilidade.
         href: /learn/sup
-  - title: SUP Knowledge
-    tagline: Stand-Up Paddleboard Guides
-    desc: Everything about SUP boards —inflatable vs rigid, board dimensions, material technology, and expert advice for all skill levels.
+  - title: Conhecimento de SUP
+    tagline: Guias de Stand-Up Paddle
+    desc: Tudo sobre pranchas de SUP — infláveis vs rígidas, dimensões da prancha, tecnologia dos materiais e conselhos de especialistas para todos os níveis de habilidade.
     guides:
-      - title: Inflatable vs Hard SUP
-        desc: Compare iSUPs and hard epoxy boards across portability, durability, performance, and value.
+      - title: SUP Inflável vs Rígido
+        desc: Compare iSUPs e pranchas rígidas de epóxi em termos de portabilidade, durabilidade, desempenho e custo-benefício.
         href: /learn/sup
-      - title: SUP Board Dimensions Guide
-        desc: How length, width, and thickness affect stability, speed, and maneuverability.
+      - title: Guia de Dimensões de Prancha de SUP
+        desc: Como comprimento, largura e espessura afetam a estabilidade, velocidade e manobrabilidade.
         href: /learn/sup
-      - title: SUP Maintenance & Care
-        desc: Cleaning, storage, UV protection, and repair tips for inflatable SUP boards.
+      - title: Manutenção e Cuidados com SUP
+        desc: Dicas de limpeza, armazenamento, proteção contra UV e reparo para pranchas infláveis de SUP.
         href: /inflatable-sup-maintenance
-      - title: Choosing Your First SUP
-        desc: Beginner's guide to selecting the right stand-up paddleboard for your weight, skill level, and intended use.
+      - title: Escolhendo Seu Primeiro SUP
+        desc: Guia para iniciantes sobre como escolher a prancha de stand-up paddle certa para o seu peso, nível de habilidade e uso pretendido.
         href: /learn/sup
-  - title: Rental Operations Guide
-    tagline: Fleet Management for Rental Businesses
-    desc: Guides on building and managing SUP rental fleets for beach kiosks, water sports centers, and hospitality properties.
+  - title: Guia de Operações de Aluguel
+    tagline: Gestão de Frotas para Negócios de Aluguel
+    desc: Guias sobre como construir e gerenciar frotas de aluguel de SUP para quiosques de praia, centros de esportes aquáticos e propriedades de hospitalidade.
     guides:
-      - title: Building Your Rental Fleet
-        desc: How to choose the right SUP boards for your rental operation —durability, sizing, and ROI considerations.
+      - title: Construindo Sua Frota de Aluguel
+        desc: Como escolher as pranchas de SUP certas para sua operação de aluguel — considerações sobre durabilidade, tamanho e ROI.
         href: /solutions/rental-operators
-      - title: Fleet Maintenance Guide
-        desc: Essential maintenance practices to maximize board lifespan and minimize downtime for rental fleets.
+      - title: Guia de Manutenção da Frota
+        desc: Práticas essenciais de manutenção para maximizar a vida útil das pranchas e minimizar o tempo de inatividade das frotas de aluguel.
         href: /solutions/rental-operators
-  - title: Resort & Hospitality Guide
-    tagline: Water Activities for Hospitality
-    desc: Guides on launching and managing SUP programs for resorts, hotels, and waterfront destinations.
+  - title: Guia de Resorts e Hospitalidade
+    tagline: Atividades Aquáticas para Hotelaria
+    desc: Guias sobre como lançar e gerenciar programas de SUP para resorts, hotéis e destinos à beira-mar.
     guides:
-      - title: Starting a Resort SUP Program
-        desc: Factors to consider when launching guest SUP activities —fleet sizing, staffing, and revenue modeling.
+      - title: Iniciando um Programa de SUP em Resort
+        desc: Fatores a considerar ao lançar atividades de stand up paddle para hóspedes — dimensionamento da frota, equipe e modelagem de receita.
         href: /solutions/resorts-hotels
-      - title: SUP vs Other Water Activities
-        desc: Compare SUP programs with other water sports for guest experience and operational efficiency.
+      - title: SUP vs Outras Atividades Aquáticas
+        desc: Compare os programas de SUP com outros esportes aquáticos em termos de experiência do hóspede e eficiência operacional.
         href: /learn/sup
-  - title: Retail & Distribution Guide
-    tagline: SUP Business Partnerships
-    desc: Guides on becoming a SUP retail partner or distributor —inventory planning, market positioning, and growth strategies.
+  - title: Guia de Varejo e Distribuição
+    tagline: Parcerias de Negócios SUP
+    desc: Guias sobre como se tornar um parceiro de varejo ou distribuidor de SUP — planejamento de estoque, posicionamento no mercado e estratégias de crescimento.
     guides:
-      - title: Becoming a SUP Retailer
-        desc: How to choose product lines, manage inventory, and market SUP boards in your retail store.
+      - title: Tornando-se um Varejista de SUP
+        desc: Como escolher linhas de produtos, gerenciar o estoque e comercializar pranchas de SUP em sua loja de varejo.
         href: /solutions/retail-partners
-      - title: SUP for Commercial Operations
-        desc: Why inflatable SUPs are a versatile product for commercial fleets, rental businesses, and professional operators.
+      - title: SUP para Operações Comerciais
+        desc: Por que os SUPs infláveis são um produto versátil para frotas comerciais, negócios de aluguel e operadores profissionais.
         href: /use-cases/search-and-rescue
 read_guide: Ler guia →
 cta:

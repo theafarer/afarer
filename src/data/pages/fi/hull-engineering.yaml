@@ -1,85 +1,103 @@
 meta:
-  title: 'Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}'
-  description: 'Explore our Hull Engineering Studio for CAD design, finite element analysis (FEA), and custom HDPE/aluminium/fibre glass hull development. Contact our engineering team to start your next RIB project.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Rungonsuunnittelustudio – CAD, FEA ja räätälöity RIB-rungon suunnittelu | {SITE}
+  description: 'Tutustu runkoinsinööristudioomme: CAD-suunnittelu, raja-elementtianalyysi (FEA) ja mukautettujen HDPE/alumiini/lasikuiturunkojen kehitys. Ota yhteyttä insinööritiimiimme aloittaaksesi seuraavan RIB-projektisi.'
+back_text: Takaisin tutkimus- ja kehityskeskukseen
+home_label: Koti
 hero:
-  tagline: 'Lab 02'
-  title: 'Hull Engineering Studio'
-  subtitle: 'Digital simulation, structural intelligence, custom hull design'
-  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
-  image_alt: 'Afarer hull engineering CAD design workstation'
+  tagline: Laboratorio 02
+  title: Rungon suunnittelustudio
+  subtitle: Digitaalinen simulointi, rakenteellinen älykkyys, räätälöity runkosuunnittelu
+  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
+  image_alt: Afarerin rungonsuunnittelun CAD-työasema
+intro: >-
+  Runko on jokaisen RIB- tai kumiveneen selkäranka. Sen on oltava riittävän kevyt liukuakseen tehokkaasti, riittävän vahva kestääkseen iskukuormituksia ja mittapysyvä laajalla lämpötila-alueella. {SITE.name}:ssa runkosuunnittelustudiomme yhdistää edistyneen CAD-mallinnuksen,
+  elementtimenetelmälaskennan (FEA) ja vuosikymmenten käytännön laivasuunnittelukokemuksen tuottaakseen runkoja, jotka on optimoitu juuri omaan käyttötarkoitukseensa — eivät geneerisiä muotoja, jotka on poimittu luettelosta.
+content_html: >
+  <h2>Missä lujuus kohtaa hydrodynamiikan</h2>
 
-intro: 'The hull is the backbone of any RIB or inflatable boat. It must be light enough to plane efficiently, strong enough to absorb impact loads, and dimensionally stable across a wide temperature range. At {SITE.name}, our Hull Engineering Studio combines advanced CAD modelling, finite element analysis (FEA), and decades of practical naval-architecture experience to deliver hulls that are optimised for their intended mission — not generic shapes adapted from a catalogue.'
+  <p>Työskentelemme kolmen pääasiallisen runkomateriaalin kanssa — rotaatiovaletun HDPE:n, hitsatun merikelpoisen alumiinin ja käsin laminoidun lasikuidun — ja meillä on tekninen osaaminen suunnitella, simuloida ja validoida jokainen näistä omassa talossa.</p>
 
-content_html: |
-  <h2>Where strength meets hydrodynamics</h2>
-  <p>We work with three primary hull materials — rotationally moulded HDPE, welded marine-grade aluminium, and hand-laid fibreglass — and have the engineering capability to design, simulate, and validate each one in-house.</p>
 
-  <h2>Design tools and standards</h2>
-  <p>Our digital engineering environment includes:</p>
+  <h2>Suunnittelutyökalut ja standardit</h2>
+
+  <p>Digitaalinen suunnitteluympäristömme sisältää:</p>
+
   <table>
-    <thead><tr><th>Capability</th><th>Software / Tool</th><th>Application</th></tr></thead>
+    <thead><tr><th>Osaaminen</th><th>Ohjelmisto / työkalu</th><th>Sovelluskohde</th></tr></thead>
     <tbody>
-      <tr><td>3D parametric modelling</td><td>SolidWorks Professional</td><td>Hull surface, stringer system, engine bracket, deck layout</td></tr>
-      <tr><td>Finite element analysis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Stress mapping, modal analysis, crash/impact simulation</td></tr>
-      <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamic drag prediction, trim optimisation</td></tr>
-      <tr><td>Laminate engineering</td><td>ESAComp / CADEC</td><td>Fibreglass layer stacking, core selection, weight estimation</td></tr>
-      <tr><td>Mould flow simulation</td><td>Moldex3D</td><td>Rotomoulding wall-thickness prediction</td></tr>
+      <tr><td>3D-parametrinen mallinnus</td><td>SolidWorks Professional</td><td>Rungon pinta, stringerijärjestelmä, moottoripukki, kannen asettelu</td></tr>
+      <tr><td>Elementtimenetelmäanalyysi</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Jännityskartoitus, ominaistaajuusanalyysi, törmäys-/iskusimulaatio</td></tr>
+      <tr><td>Laskennallinen virtausdynamiikka</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynaamisen vastuksen ennustaminen, trimmin optimointi</td></tr>
+      <tr><td>Laminaattisuunnittelu</td><td>ESAComp / CADEC</td><td>Lasikuitukerrosten pinonta, ydinmateriaalin valinta, painoarvio</td></tr>
+      <tr><td>Muottivirtaussimulointi</td><td>Moldex3D</td><td>Rotaatiovalun seinämäpaksuuden ennustaminen</td></tr>
     </tbody>
   </table>
 
-  <h2>Our engineering workflow</h2>
-  <p>Every hull design, whether it is a standard model or a fully custom project, follows a rigorous five-stage process:</p>
+
+  <h2>Suunnitteluprosessimme</h2>
+
+  <p>Jokainen rungon suunnitelma — olipa kyse vakiomallista tai täysin räätälöidystä projektista — noudattaa tarkkaa viisivaiheista prosessia:</p>
+
   <ol>
-    <li><strong>Concept &amp; requirements gathering</strong> — We meet with you to define payload, speed envelope, sea-state capability, towing requirements, and any special mission equipment (deck hatches, console positions, fuel-tank integration).</li>
-    <li><strong>3D surfacing &amp; hydrostatic calculation</strong> — The hull form is modelled in SolidWorks and checked for hydrostatic stability (GM, righting arm) using built-in analysis tools.</li>
-    <li><strong>Structural FEA</strong> — Load cases are defined: static (crew + gear), dynamic (planing impacts at 5g), and slamming (dropping from a wave crest at 3 m/s). Stress contours are reviewed; safety factor ≥ 2.5 is mandatory.</li>
-    <li><strong>CFD drag optimisation</strong> — The hull is simulated at three loading conditions and five speeds. Wetted surface area, trim angle, and residual resistance are iteratively reduced.</li>
-    <li><strong>Design review &amp; release</strong> — The complete engineering package (3D model, FEA report, CFD report, weight estimate, ply book) is reviewed by our senior naval architect before release to the prototype workshop.</li>
+    <li><strong>Konsepti ja vaatimusten keruu</strong> — Tapaamme sinut määrittääksemme hyötykuorman, nopeusalueen, aallokonkestävyyden, hinausvaatimukset ja erityiset tehtävävarusteet (kansiluukut, konsolin sijainnit, polttoainesäiliön integrointi).</li>
+    <li><strong>3D-pinnanmuotoilu ja hydrostaattinen laskenta</strong> — Rungon muoto mallinnetaan SolidWorksissä ja tarkistetaan hydrostaattisen stabiilisuuden osalta (GM, oikaisuvarsi) sisäänrakennettuja analyysityökaluja käyttäen.</li>
+    <li><strong>Rakenteellinen FEA</strong> — Kuormitustapaukset määritellään: staattinen (miehistö + varusteet), dynaaminen (liukuvaiheen iskut 5g) ja lyönti (putoaminen aallonharjalta nopeudella 3 m/s). Jännitysjakaumat käydään läpi; varmuuskerroin ≥ 2.5 on pakollinen.</li>
+    <li><strong>CFD-vastuksen optimointi</strong> — Runko simuloidaan kolmella kuormitustasolla ja viidellä nopeudella. Märkä pinta-ala, trimmikulma ja jäännösvastus pienennetään iteratiivisesti.</li>
+    <li><strong>Suunnittelun tarkistus ja luovutus</strong> — Koko suunnittelupaketti (3D-malli, FEA-raportti, CFD-raportti, painoarvio, laminaattikirja) tarkistetaan vanhemman laivasuunnittelijamme toimesta ennen luovutusta protopajaan.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Stress Distribution — RIB 450 Patrol Hull (Aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA-jännitysjakauma — RIB 450 -partiorunko (alumiini 5083)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
-        <span class="text-gray-500">Safety factor at max payload</span>
+        <span class="text-gray-500">Varmuuskerroin maksimikuormalla</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
-        <span class="text-gray-500">Drag reduction vs previous generation</span>
+        <span class="text-gray-500">Vastuksen vähennys edelliseen sukupolveen verrattuna</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
-        <span class="text-gray-500">Peak slamming pressure (design limit)</span>
+        <span class="text-gray-500">Suurin lyöntipaine (suunnitteluraja)</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
-        <span class="text-gray-500">Cumulative FEA runtime in 2025</span>
+        <span class="text-gray-500">FEA-laskennan kokonaisaika vuonna 2025</span>
       </div>
     </div>
   </div>
 
-  <h2>Customisation: your hull, your rules</h2>
-  <p>No two operators have identical requirements. A harbour-patrol RIB needs a shallow-V hull for stability at low speed; a fast-interception craft needs a deep-V with spray rails; a dive-support boat needs a wide beam and a low transom. We do not force your application into a pre-existing hull shape. We design from your specification upward.</p>
-  <p>Examples of recent custom hull engineering projects:</p>
+
+  <h2>Räätälöinti: sinun runkosi, sinun sääntösi</h2>
+
+  <p>Yksikään toimija ei ole vaatimuksiltaan samanlainen. Satamapartio-RIB tarvitsee matala-V-rungon vakauteen alhaisella nopeudella; nopeaan kiinniottoon tarkoitettu vene tarvitsee syvän V:n ja roiskekiskot; sukellustoiminnan tukivene tarvitsee leveän rungon ja matalan peräpeilin. Emme pakota
+  käyttötarkoitustasi olemassa olevaan rungon muotoon. Suunnittelemme lähtien sinun spesifikaatiostasi.</p>
+
+  <p>Esimerkkejä viimeaikaisista räätälöidyistä rungonsuunnitteluprojekteista:</p>
+
   <ul>
-    <li>A stretched 6.8 m HDPE hull for a Caribbean tour operator, with a reinforced bow for beach landings (+15 % bottom thickness).</li>
-    <li>A lightweight aluminium 7.2 m RIB for a coast guard, with integrated fuel-tank baffles and equipment-locker stiffeners.</li>
-    <li>A fibreglass 5.5 m dive boat with a cut-down transom and twin battery boxes, designed for easy snorkeller reboarding.</li>
+    <li>Venytetty 6.8 m HDPE-runko karibialaiselle matkanjärjestäjälle, vahvistettu keula rantautumisia varten (+15 % pohjan paksuus).</li>
+    <li>Kevyt alumiininen 7.2 m RIB rannikkovartiostolle, integroidut polttoainesäiliön välilevyt ja varustekaappien vahvikkeet.</li>
+    <li>Lasikuituinen 5.5 m sukellusvene madalletulla peräpeilillä ja kaksoisakkulaatikoilla, suunniteltu helpottamaan snorklaajien nousua takaisin veneeseen.</li>
   </ul>
 
-  <h2>Our engineers</h2>
-  <p>The studio is led by a senior naval architect with 14 years of experience in high-speed craft design, supported by two mechanical engineers specialised in FEA and CFD. All three hold advanced degrees in marine engineering or naval architecture from internationally recognised universities. The team publishes regularly in industry journals and presents at conferences such as the International Conference on High-Performance Marine Vehicles.</p>
 
-  <h2>Partner with us on your next hull</h2>
-  <p>From the first concept sketch to the final stress report, our Hull Engineering Studio is your partner in creating a boat that is not just built — but engineered. We invest the simulation hours upfront so that every weld, every laminate layer, and every curve of the hull is there for a reason.</p>
-  <p>Whether you need a minor modification to an existing model or a completely clean-sheet design, we are ready to discuss your requirements.</p>
+  <h2>Insinöörimme</h2>
 
+  <p>Studiota johtaa vanhempi laivasuunnittelija, jolla on 14 vuoden kokemus suurnopeusveneiden suunnittelusta, ja häntä tukee kaksi FEA:han ja CFD:hen erikoistunutta konetekniikan insinööriä. Kaikilla kolmella on jatkotutkinto meritekniikasta tai laivasuunnittelusta kansainvälisesti tunnustetuista
+  yliopistoista. Tiimi julkaisee säännöllisesti alan ammattilehdissä ja esiintyy konferensseissa, kuten International Conference on High-Performance Marine Vehicles -konferenssissa.</p>
+
+
+  <h2>Kumppaninasi seuraavassa runkoprojektissasi</h2>
+
+  <p>Ensimmäisestä konseptiluonnoksesta lopulliseen jännitysraporttiin asti rungonsuunnittelustudiomme on kumppanisi veneen luomisessa, joka ei ole vain rakennettu — vaan suunniteltu. Panostamme simulaatioaikaan etukäteen, jotta jokainen hitsi, jokainen laminaattikerros ja jokainen rungon kaari on
+  olemassa syystä.</p>
+
+  <p>Tarvitsetpa pienen muokkauksen olemassa olevaan malliin tai täysin puhtaalta pöydältä lähtevän suunnitelman, olemme valmiita keskustelemaan vaatimuksistasi.</p>
 cta:
-  title: 'Start your hull design consultation'
-  subtitle: 'Tell us about your mission profile and we will propose an engineering path.'
-  button_text: 'Contact our engineering team'
-  button_link: /contact
+  title: Aloita runkosuunnittelun konsultaatio
+  subtitle: Kertokaa missio-profiilistanne, ja ehdotamme insinööriratkaisun.
+  button_text: Ota yhteyttä insinööriteippiimme
+  button_link: /yhteystiedot

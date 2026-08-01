@@ -1,48 +1,55 @@
 meta:
-  title: 'Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}'
-  description: 'Validate your RIB hull performance with our hydrodynamic test tank. Scale-model towing, planing analysis, and fuel efficiency testing. Book a tank test session today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Tanque de Pruebas Hidrodinámicas — Remolque de Modelos a Escala y Optimización del Casco | {SITE}
+  description: Valide el rendimiento del casco de su RIB con nuestra piscina de pruebas hidrodinámica. Remolque de modelos a escala, análisis de planeo y pruebas de eficiencia de combustible. Reserve hoy una sesión de prueba en la piscina.
+back_text: De vuelta al Centro de I+D
+home_label: Inicio
 hero:
-  tagline: 'Lab 04'
-  title: 'Hydrodynamic Test Tank'
-  subtitle: 'Validating performance before the first full-scale prototype'
-  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
-  image_alt: 'Afarer hydrodynamic test tank performance testing'
+  tagline: Laboratorio 04
+  title: Tanque de prueba hidrodinámico
+  subtitle: Validando el rendimiento antes del primer prototipo a gran escala
+  image: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp
+  image_alt: Pruebas de rendimiento en tanque de ensayo hidrodinámico Afarer
+intro: >-
+  Es un concepto erróneo común que las pruebas hidrodinámicas estén reservadas para barcos de navegación oceánica. En realidad, el rendimiento de un casco pequeño planeador —como un RIB de 4–6 m— depende tanto de su forma bajo el agua como un petrolero depende de su proa bulbosa. El ángulo de
+  trimado, el área de superficie mojada, la generación de rociada y la ventilación tienen un efecto dramático en la velocidad, el consumo de combustible y la comodidad de la navegación. En {SITE.name}, operamos un tanque de pruebas hidrodinámicas dedicado que nos permite cuantificar estos efectos a
+  escala de modelo —antes de comprometer metal y tela con un prototipo a tamaño real.
+content_html: >
+  <h2>¿Por qué realizar pruebas de tanque en un barco pequeño?</h2>
 
-intro: 'It is a common misconception that hydrodynamic testing is reserved for ocean-going ships. In reality, the performance of a small planing hull — such as a 4–6 m RIB — is just as dependent on its underwater shape as a tanker is on its bulbous bow. Trim angle, wetted surface area, spray generation, and ventilation all have a dramatic effect on speed, fuel consumption, and ride comfort. At {SITE.name}, we operate a dedicated hydrodynamic test tank that allows us to quantify these effects at model scale — before committing metal and fabric to a full-size prototype.'
+  <p>Probar a escala de modelo (normalmente de 1:3 a 1:5) nos permite iterar las formas del casco de forma rápida y rentable. Una semana en el tanque puede generar los mismos datos de rendimiento que requerirían meses de prueba y error a escala real, y a una fracción del coste.</p>
 
-content_html: |
-  <h2>Why tank-test a small boat?</h2>
-  <p>Testing at model scale (typically 1:3 to 1:5) gives us the ability to iterate hull shapes rapidly and cost-effectively. A week in the tank can generate the same performance data that would require months of full-scale trial-and-error — and at a fraction of the cost.</p>
 
-  <h2>Facility specifications</h2>
+  <h2>Especificaciones de las instalaciones</h2>
+
   <table>
-    <thead><tr><th>Parameter</th><th>Specification</th></tr></thead>
+    <thead><tr><th>Parámetro</th><th>Especificación</th></tr></thead>
     <tbody>
-      <tr><td>Tank dimensions</td><td>35 m (L) × 3.5 m (W) × 1.8 m (D)</td></tr>
-      <tr><td>Towing carriage</td><td>Electric servo-driven, max speed 12 m/s (23 kn), speed accuracy ± 0.5 %</td></tr>
-      <tr><td>Wave generator</td><td>Flap-type, programmable regular &amp; irregular sea states, Hs up to 0.3 m at model scale</td></tr>
-      <tr><td>Instrumentation</td><td>6-component dynamometer (resistance, side force, yaw moment), accelerometers, inclinometers, wave probes</td></tr>
-      <tr><td>Data acquisition</td><td>Sampling at 1000 Hz per channel, real-time display + post-processing suite</td></tr>
-      <tr><td>Model fabrication</td><td>In-house CNC milling and 3D printing for model hulls up to 1.8 m LOA</td></tr>
+      <tr><td>Dimensiones del tanque</td><td>35 m (L) × 3.5 m (W) × 1.8 m (D)</td></tr>
+      <tr><td>Carro de remolque</td><td>Accionamiento servoeléctrico, velocidad máxima 12 m/s (23 nudos), precisión de velocidad ± 0.5 %</td></tr>
+      <tr><td>Generador de olas</td><td>Tipo flap, estados de mar regulares e irregulares programables, Hs hasta 0.3 m a escala de modelo</td></tr>
+      <tr><td>Instrumentación</td><td>Dinamómetro de 6 componentes (resistencia, fuerza lateral, momento de guiñada), acelerómetros, inclinómetros, sondas de olas</td></tr>
+      <tr><td>Adquisición de datos</td><td>Muestreo a 1000 Hz por canal, visualización en tiempo real + paquete de postprocesado</td></tr>
+      <tr><td>Fabricación de modelos</td><td>Fresado CNC e impresión 3D internos para cascos de modelo de hasta 1.8 m de eslora total</td></tr>
     </tbody>
   </table>
 
-  <h2>Our test programme</h2>
-  <p>A standard hull development programme in our tank follows this sequence:</p>
+
+  <h2>Nuestro programa de pruebas</h2>
+
+  <p>Un programa estándar de desarrollo de casco en nuestro tanque sigue esta secuencia:</p>
+
   <ol>
-    <li><strong>Model build</strong> — A 1:3.5 scale model is CNC-machined from high-density foam and glassed for rigidity. Weight and CG are adjusted to match Froude-scaled full-load condition.</li>
-    <li><strong>Resistance runs</strong> — The model is towed at 8-10 speeds spanning the operating range. Total resistance is measured and decomposed into frictional and residuary components using the ITTC-1957 method.</li>
-    <li><strong>Trim &amp; sinkage measurement</strong> — Running trim and sinkage are recorded at each speed. An optimal trim angle of 4-6° for planing hulls is the target.</li>
-    <li><strong>Wake survey</strong> — Transverse wave cuts are measured at two speeds to assess wave-making resistance and identify transverse wave interactions that could cause stern interference.</li>
-    <li><strong>Seakeeping (optional)</strong> — Head-sea and following-sea runs in regular waves to measure added resistance, vertical acceleration, and slamming probability.</li>
-    <li><strong>Data analysis &amp; recommendations</strong> — A full report is delivered with comparative charts, speed/power curves, and specific design recommendations for the full-scale hull.</li>
+    <li><strong>Construcción del modelo</strong> — Un modelo a escala 1:3.5 se mecaniza por CNC a partir de espuma de alta densidad y se encola para darle rigidez. El peso y el CG se ajustan para coincidir con la condición de plena carga escalada según Froude.</li>
+    <li><strong>Pruebas de resistencia</strong> — El modelo se remolca a 8-10 velocidades que abarcan el rango operativo. La resistencia total se mide y se descompone en componentes friccional y residual según el método ITTC-1957.</li>
+    <li><strong>Medición del asiento y el asentamiento</strong> — El asiento y el asentamiento dinámicos se registran a cada velocidad. El objetivo es un ángulo de asiento óptimo de 4-6° para cascos de planeo.</li>
+    <li><strong>Estudio de la estela</strong> — Se miden cortes de olas transversales a dos velocidades para evaluar la resistencia por formación de olas e identificar interacciones de olas transversales que puedan causar interferencia en la popa.</li>
+    <li><strong>Comportamiento en la mar (opcional)</strong> — Pruebas en olas de proa y de popa en olas regulares para medir la resistencia adicional, la aceleración vertical y la probabilidad de impacto.</li>
+    <li><strong>Análisis de datos y recomendaciones</strong> — Se entrega un informe completo con gráficos comparativos, curvas de velocidad/potencia y recomendaciones de diseño específicas para el casco a escala real.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typical Tank Test Results — Resistance vs Speed (RIB 450 hull, 1:3.5 scale)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Resultados típicos de las pruebas en tanque — Resistencia vs. velocidad (casco RIB 450, escala 1:3.5)</p>
     <div class="space-y-2">
       <div class="flex items-center gap-2 text-xs">
         <span class="w-20">5 kn (1:1)</span>
@@ -87,26 +94,35 @@ content_html: |
         <span class="w-16 text-right">232 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">Model-scale resistance (N) at Froude-scaled speeds. Full-scale power prediction follows the ITTC-1978 performance-prediction method.</p>
+    <p class="text-xs text-gray-400 mt-2">Resistencia a escala de modelo (N) a velocidades escaladas según Froude. La predicción de potencia a escala real sigue el método de predicción de rendimiento ITTC-1978.</p>
   </div>
 
-  <h2>Expert team</h2>
-  <p>Our tank is operated by a hydrodynamicist with a PhD in naval architecture and 8 years of towing-tank experience at a major European maritime research institute. He is supported by a technician who prepares all models and instrumentation. The team follows the ITTC (International Towing Tank Conference) Recommended Procedures to ensure that every test is repeatable, traceable, and internationally defensible.</p>
 
-  <h2>Tank-testing for custom hull development</h2>
-  <p>Our tank is not only used for house-designed hulls — we regularly run test programmes for clients who want to validate a custom hull shape or investigate a performance issue:</p>
+  <h2>Equipo de expertos</h2>
+
+  <p>Nuestro tanque está operado por un hidrodinamista con doctorado en arquitectura naval y 8 años de experiencia en tanques de remolque en un importante instituto europeo de investigación marítima. Cuenta con el apoyo de un técnico que prepara todos los modelos y la instrumentación. El equipo
+  sigue los Procedimientos Recomendados del ITTC (Conferencia Internacional de Tanques de Remolque) para garantizar que cada prueba sea repetible, trazable y defendible a nivel internacional.</p>
+
+
+  <h2>Pruebas en tanque para el desarrollo de cascos personalizados</h2>
+
+  <p>Nuestro tanque no solo se utiliza para cascos de diseño propio; ejecutamos regularmente programas de pruebas para clientes que desean validar una forma de casco personalizada o investigar un problema de rendimiento:</p>
+
   <ul>
-    <li><strong>Hull-form comparison</strong> — Two or more candidate hull shapes tested under identical conditions, providing an objective drag/speed/stability comparison to inform your design choice.</li>
-    <li><strong>Appendage optimisation</strong> — Interceptor plates, spray rails, trim tabs, and strakes can be tested in various configurations to quantify their individual contribution to drag reduction.</li>
-    <li><strong>Engine-matching study</strong> — Resistance data is converted to a power-prediction curve, allowing you to select the optimum engine horsepower for your target speed and payload.</li>
+    <li><strong>Comparación de formas de casco</strong> — Dos o más formas de casco candidatas probadas en condiciones idénticas, lo que proporciona una comparación objetiva de resistencia/velocidad/estabilidad para fundamentar su decisión de diseño.</li>
+    <li><strong>Optimización de apéndices</strong> — Las placas interceptoras, los túneles de spray, los flaps de trimado y las quillas pueden probarse en diversas configuraciones para cuantificar su contribución individual a la reducción de la resistencia.</li>
+    <li><strong>Estudio de acoplamiento del motor</strong> — Los datos de resistencia se convierten en una curva de predicción de potencia, lo que le permite seleccionar la potencia óptima del motor para su velocidad objetivo y su carga útil.</li>
   </ul>
 
-  <h2>Why test with us?</h2>
-  <p>We do not just give you a set of raw numbers. Our reports translate tank data into actionable engineering recommendations: "Raise the spray-rail by 8 mm to reduce wetted surface at cruise speed", "Increase deadrise at the transom by 3° to reduce slamming acceleration", or "Move the longitudinal centre of gravity 150 mm aft for improved planing attitude". You leave with a clear understanding of what to change and why.</p>
-  <p>Our tank is also available for independent third-party testing on a fee-for-service basis. If you are developing a hull and want an unbiased, professionally executed hydrodynamic assessment, we welcome your enquiry.</p>
 
+  <h2>¿Por qué probar con nosotros?</h2>
+
+  <p>No solo le entregamos un conjunto de números brutos. Nuestros informes convierten los datos del tanque en recomendaciones de ingeniería accionables: "Eleve el túnnel de spray 8 mm para reducir la superficie mojada a velocidad de crucero", "Aumente el deadrise en el espejo de popa 3° para
+  reducir la aceleración por impacto" o "Desplace el centro de gravedad longitudinal 150 mm hacia popa para mejorar la actitud de planeo". Usted sale con una comprensión clara de qué cambiar y por qué.</p>
+
+  <p>Nuestro tanque también está disponible para pruebas independientes de terceros sobre la base de pago por servicio. Si está desarrollando un casco y desea una evaluación hidrodinámica imparcial y ejecutada profesionalmente, le invitamos a ponerse en contacto con nosotros.</p>
 cta:
-  title: 'Book a tank test session'
-  subtitle: 'Whether you need a full development programme or a single comparative test, we can accommodate your schedule.'
-  button_text: 'Contact our hydrodynamics team'
-  button_link: /contact
+  title: Reservar una sesión de prueba de tanque
+  subtitle: Ya sea que necesite un programa completo de desarrollo o una prueba comparativa única, podemos adaptarnos a su horario.
+  button_text: Contacte a nuestro equipo de hidrodinámica
+  button_link: /contacto

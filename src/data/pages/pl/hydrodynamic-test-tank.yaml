@@ -1,48 +1,55 @@
 meta:
-  title: 'Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}'
-  description: 'Validate your RIB hull performance with our hydrodynamic test tank. Scale-model towing, planing analysis, and fuel efficiency testing. Book a tank test session today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Hydrodynamiczny zbiornik testowy — holowanie modeli i optymalizacja kadłuba | {SITE}
+  description: Zweryfikuj osiągi kadłuba RIB w naszym hydrodynamicznym basenie testowym. Holowanie modeli w skali, analiza poślizgu i testy wydajności paliwowej. Zarezerwuj sesję testową w basenie już dziś.
+back_text: Powrót do Centrum Badań i Rozwoju
+home_label: Dom
 hero:
-  tagline: 'Lab 04'
-  title: 'Hydrodynamic Test Tank'
-  subtitle: 'Validating performance before the first full-scale prototype'
-  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
-  image_alt: 'Afarer hydrodynamic test tank performance testing'
+  tagline: Laboratorium 04
+  title: Hydrodynamiczny zbiornik testowy
+  subtitle: Weryfikacja wydajności przed pierwszym prototypem pełnoskalowym
+  image: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp
+  image_alt: Testy wydajnościowe w hydrodynamicznym zbiorniku do badań Afarer
+intro: >-
+  Powszechnym błędnym przekonaniem jest, że testy hydrodynamiczne są zarezerwowane dla statków oceanicznych. W rzeczywistości wydajność małego kadłuba ślizgowego — takiego jak 4–6 m RIB — zależy od jego kształtu podwodnego tak samo, jak duży zbiornikowiec zależy od swojego bulbous bow. Kąt trymu,
+  zwilżona powierzchnia, generowanie fal i wentylacja mają dramatyczny wpływ na prędkość, zużycie paliwa i komfort jazdy. W {SITE.name} dysponujemy dedykowanym zbiornikiem do testów hydrodynamicznych, który pozwala nam ilościowo określić te efekty w skali modelu — zanim zdecydujemy się na
+  pełnowymiarowy prototyp z metalu i włókna.
+content_html: >
+  <h2>Dlaczego warto przeprowadzić badania modelowe w basenie holowniczym?</h2>
 
-intro: 'It is a common misconception that hydrodynamic testing is reserved for ocean-going ships. In reality, the performance of a small planing hull — such as a 4–6 m RIB — is just as dependent on its underwater shape as a tanker is on its bulbous bow. Trim angle, wetted surface area, spray generation, and ventilation all have a dramatic effect on speed, fuel consumption, and ride comfort. At {SITE.name}, we operate a dedicated hydrodynamic test tank that allows us to quantify these effects at model scale — before committing metal and fabric to a full-size prototype.'
+  <p>Badania w skali modelu (zwykle od 1:3 do 1:5) pozwalają nam szybko i ekonomicznie iterować kształt kadłuba. Tydzień w basenie może dostarczyć te same dane eksploatacyjne, które w pełnej skali wymagałyby miesięcy prób i błędów — i to za ułamek kosztów.</p>
 
-content_html: |
-  <h2>Why tank-test a small boat?</h2>
-  <p>Testing at model scale (typically 1:3 to 1:5) gives us the ability to iterate hull shapes rapidly and cost-effectively. A week in the tank can generate the same performance data that would require months of full-scale trial-and-error — and at a fraction of the cost.</p>
 
-  <h2>Facility specifications</h2>
+  <h2>Specyfikacja obiektu</h2>
+
   <table>
-    <thead><tr><th>Parameter</th><th>Specification</th></tr></thead>
+    <thead><tr><th>Parametr</th><th>Specyfikacja</th></tr></thead>
     <tbody>
-      <tr><td>Tank dimensions</td><td>35 m (L) × 3.5 m (W) × 1.8 m (D)</td></tr>
-      <tr><td>Towing carriage</td><td>Electric servo-driven, max speed 12 m/s (23 kn), speed accuracy ± 0.5 %</td></tr>
-      <tr><td>Wave generator</td><td>Flap-type, programmable regular &amp; irregular sea states, Hs up to 0.3 m at model scale</td></tr>
-      <tr><td>Instrumentation</td><td>6-component dynamometer (resistance, side force, yaw moment), accelerometers, inclinometers, wave probes</td></tr>
-      <tr><td>Data acquisition</td><td>Sampling at 1000 Hz per channel, real-time display + post-processing suite</td></tr>
-      <tr><td>Model fabrication</td><td>In-house CNC milling and 3D printing for model hulls up to 1.8 m LOA</td></tr>
+      <tr><td>Wymiary basenu</td><td>35 m (dł.) × 3,5 m (szer.) × 1,8 m (głęb.)</td></tr>
+      <tr><td>Wózek holowniczy</td><td>Napęd elektryczny serwo, prędkość maks. 12 m/s (23 węzły), dokładność prędkości ± 0,5 %</td></tr>
+      <tr><td>Generator fal</td><td>Typ klapowy, programowalne regularne i nieregularne stany morza, Hs do 0,3 m w skali modelu</td></tr>
+      <tr><td>Oprzyrządowanie</td><td>6-składowy dynamometr (opór, siła boczna, moment odchylający), akcelerometry, inklinometry, sondy falowe</td></tr>
+      <tr><td>Akwizycja danych</td><td>Próbkowanie 1000 Hz na kanał, podgląd w czasie rzeczywistym + pakiet do post-processingu</td></tr>
+      <tr><td>Wytwarzanie modeli</td><td>Wewnętrzne frezowanie CNC i druk 3D dla kadłubów modeli o długości całkowitej do 1,8 m</td></tr>
     </tbody>
   </table>
 
-  <h2>Our test programme</h2>
-  <p>A standard hull development programme in our tank follows this sequence:</p>
+
+  <h2>Nasz program badań</h2>
+
+  <p>Standardowy program opracowania kadłuba w naszym basenie przebiega w następującej kolejności:</p>
+
   <ol>
-    <li><strong>Model build</strong> — A 1:3.5 scale model is CNC-machined from high-density foam and glassed for rigidity. Weight and CG are adjusted to match Froude-scaled full-load condition.</li>
-    <li><strong>Resistance runs</strong> — The model is towed at 8-10 speeds spanning the operating range. Total resistance is measured and decomposed into frictional and residuary components using the ITTC-1957 method.</li>
-    <li><strong>Trim &amp; sinkage measurement</strong> — Running trim and sinkage are recorded at each speed. An optimal trim angle of 4-6° for planing hulls is the target.</li>
-    <li><strong>Wake survey</strong> — Transverse wave cuts are measured at two speeds to assess wave-making resistance and identify transverse wave interactions that could cause stern interference.</li>
-    <li><strong>Seakeeping (optional)</strong> — Head-sea and following-sea runs in regular waves to measure added resistance, vertical acceleration, and slamming probability.</li>
-    <li><strong>Data analysis &amp; recommendations</strong> — A full report is delivered with comparative charts, speed/power curves, and specific design recommendations for the full-scale hull.</li>
+    <li><strong>Budowa modelu</strong> — Model w skali 1:3,5 jest frezowany CNC z pianki o wysokiej gęstości i laminowany dla zapewnienia sztywności. Masa i środek ciężkości są dopasowane do stanu pełnego obciążenia przeskalowanego wg kryterium Froude'a.</li>
+    <li><strong>Pomiary oporu</strong> — Model jest holowany z prędkościami 8–10 obejmującymi zakres eksploatacyjny. Opór całkowity jest mierzony i rozkładany na składową tarcia oraz składową resztkową metodą ITTC-1957.</li>
+    <li><strong>Pomiar przegłębienia i zanurzenia</strong> — Przegłębienie bieżące i zanurzenie są rejestrowane przy każdej prędkości. Celem jest optymalny kąt przegłębienia 4–6° dla kadłubów ślizgowych.</li>
+    <li><strong>Badanie śladu falowego</strong> — Poprzeczne przekroje fal są mierzone przy dwóch prędkościach w celu oceny oporu falowego i identyfikacji poprzecznych interakcji falowych, które mogłyby powodować interferencje na rufie.</li>
+    <li><strong>Zachowanie na fali (opcjonalnie)</strong> — Próby na fali czołowej i od rufy przy falach regularnych w celu pomiaru oporu dodatkowego, przyspieszenia pionowego oraz prawdopodobieństwa slammu.</li>
+    <li><strong>Analiza danych i zalecenia</strong> — Dostarczany jest pełny raport z wykresami porównawczymi, krzywymi prędkości/mocy oraz konkretnymi zaleceniami projektowymi dla kadłuba w pełnej skali.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typical Tank Test Results — Resistance vs Speed (RIB 450 hull, 1:3.5 scale)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typowe wyniki badań w basenie — opór w funkcji prędkości (kadłub RIB 450, skala 1:3,5)</p>
     <div class="space-y-2">
       <div class="flex items-center gap-2 text-xs">
         <span class="w-20">5 kn (1:1)</span>
@@ -87,26 +94,35 @@ content_html: |
         <span class="w-16 text-right">232 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">Model-scale resistance (N) at Froude-scaled speeds. Full-scale power prediction follows the ITTC-1978 performance-prediction method.</p>
+    <p class="text-xs text-gray-400 mt-2">Opór w skali modelu (N) przy prędkościach przeskalowanych wg kryterium Froude'a. Prognoza mocy w pełnej skali zgodnie z metodą prognozowania osiągów ITTC-1978.</p>
   </div>
 
-  <h2>Expert team</h2>
-  <p>Our tank is operated by a hydrodynamicist with a PhD in naval architecture and 8 years of towing-tank experience at a major European maritime research institute. He is supported by a technician who prepares all models and instrumentation. The team follows the ITTC (International Towing Tank Conference) Recommended Procedures to ensure that every test is repeatable, traceable, and internationally defensible.</p>
 
-  <h2>Tank-testing for custom hull development</h2>
-  <p>Our tank is not only used for house-designed hulls — we regularly run test programmes for clients who want to validate a custom hull shape or investigate a performance issue:</p>
+  <h2>Zespół ekspertów</h2>
+
+  <p>Nasz basen obsługuje hydrodynamik z doktoratem w dziedzinie architektury okrętowej i 8-letnim doświadczeniem w basenach holowniczych w czołowym europejskim instytucie badań morskich. Wspiera go technik, który przygotowuje wszystkie modele i oprzyrządowanie. Zespół stosuje zalecane procedury
+  ITTC (International Towing Tank Conference), aby zapewnić, że każde badanie jest powtarzalne, możliwe do prześledzenia i wiarygodne na arenie międzynarodowej.</p>
+
+
+  <h2>Badania w basenie dla opracowania kadłuba na zamówienie</h2>
+
+  <p>Nasz basen służy nie tylko kadłubom własnej konstrukcji — regularnie prowadzimy programy badawcze dla klientów, którzy chcą zweryfikować indywidualny kształt kadłuba lub zbadać problem eksploatacyjny:</p>
+
   <ul>
-    <li><strong>Hull-form comparison</strong> — Two or more candidate hull shapes tested under identical conditions, providing an objective drag/speed/stability comparison to inform your design choice.</li>
-    <li><strong>Appendage optimisation</strong> — Interceptor plates, spray rails, trim tabs, and strakes can be tested in various configurations to quantify their individual contribution to drag reduction.</li>
-    <li><strong>Engine-matching study</strong> — Resistance data is converted to a power-prediction curve, allowing you to select the optimum engine horsepower for your target speed and payload.</li>
+    <li><strong>Porównanie form kadłuba</strong> — Dwa lub więcej wariantów kształtu kadłuba testowanych w identycznych warunkach, co zapewnia obiektywne porównanie oporu/prędkości/stateczności, które wesprze Twoją decyzję projektową.</li>
+    <li><strong>Optymalizacja urządzeń dodatkowych</strong> — Płyty interceptorowe, listwy tryskowe, płetwy odbojowe i strugi mogą być testowane w różnych konfiguracjach, aby określić ich indywidualny wkład w redukcję oporu.</li>
+    <li><strong>Studium doboru silnika</strong> — Dane o oporze są przeliczane na krzywą prognozy mocy, co pozwala dobrać optymalną moc silnika do docelowej prędkości i ładowności.</li>
   </ul>
 
-  <h2>Why test with us?</h2>
-  <p>We do not just give you a set of raw numbers. Our reports translate tank data into actionable engineering recommendations: "Raise the spray-rail by 8 mm to reduce wetted surface at cruise speed", "Increase deadrise at the transom by 3° to reduce slamming acceleration", or "Move the longitudinal centre of gravity 150 mm aft for improved planing attitude". You leave with a clear understanding of what to change and why.</p>
-  <p>Our tank is also available for independent third-party testing on a fee-for-service basis. If you are developing a hull and want an unbiased, professionally executed hydrodynamic assessment, we welcome your enquiry.</p>
 
+  <h2>Dlaczego warto testować z nami?</h2>
+
+  <p>Nie przekazujemy Ci tylko zbioru surowych liczb. Nasze raporty przekształcają dane z basenu w konkretne zalecenia inżynierskie: „Podnieś listwę tryskową o 8 mm, aby zmniejszyć powierzchnię zwilżaną przy prędkości przelotowej", „Zwiększ denny wznios na pawęży o 3°, aby zmniejszyć przyspieszenie
+  podczas slammu" lub „Przesuń wzdłużny środek ciężkości o 150 mm do tyłu, aby poprawić zachowanie ślizgowe". Otrzymujesz jasne zrozumienie, co zmienić i dlaczego.</p>
+
+  <p>Nasz basen jest również dostępny do niezależnych badań prowadzonych przez strony trzecie na zasadzie usług odpłatnych. Jeśli opracowujesz kadłub i potrzebujesz bezstronnej, profesjonalnie przeprowadzonej oceny hydrodynamicznej, zapraszamy do kontaktu.</p>
 cta:
-  title: 'Book a tank test session'
-  subtitle: 'Whether you need a full development programme or a single comparative test, we can accommodate your schedule.'
-  button_text: 'Contact our hydrodynamics team'
-  button_link: /contact
+  title: Zarezerwuj sesję testu zbiornika
+  subtitle: Niezależnie od tego, czy potrzebujesz pełnego programu rozwojowego, czy pojedynczego testu porównawczego, możemy dostosować się do Twojego harmonogramu.
+  button_text: Skontaktuj się z naszym zespołem ds. hydrodynamiki
+  button_link: /kontakt

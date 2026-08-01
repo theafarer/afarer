@@ -1,95 +1,110 @@
 meta:
-  title: 'Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}'
-  description: 'From CAD to sea-ready boat in 8-12 weeks. Our Prototype Workshop builds, rigs, and sea-trials custom RIBs and inflatable boats. Start your prototype project today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Prototip Atölyesi — Tam Ölçekli RIB Prototipleme ve Deniz Denemeleri | {SITE}
+  description: CAD'den denize hazır tekneye 8-12 hafta içinde. Prototip Atölyemiz özel RIB'leri ve şişme tekneleri inşa eder, donatır ve deniz testlerini yapar. Prototip projenize bugün başlayın.
+back_text: Ar-Ge Merkezine Dön
+home_label: Ana Sayfa
 hero:
-  tagline: 'Lab 05'
-  title: 'Prototype Workshop'
-  subtitle: 'From CAD model to sea-ready boat — built, fitted, and proven'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp'
-  image_alt: 'Afarer prototype workshop boat fabrication'
+  tagline: Laboratuvar 05
+  title: Prototip Atölyesi
+  subtitle: CAD modelinden denize hazır tekneye — inşa edilmiş, donatılmış ve kanıtlanmış
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp
+  image_alt: Afarer prototip atölyesi tekne üretimi
+intro: >-
+  Bir CAD modeli, ne kadar detaylı olursa olsun, bir teknenin suyla buluşana kadar nasıl performans göstereceğini ortaya koyamaz. Bu nedenle Prototip Atölyemiz, mühendislik verilerini mümkün olan en hızlı ve doğrudan fiziksel, deniz seyirine uygun bir tekneye dönüştürmek için tasarlanmıştır. Her
+  yeni {SITE.name} modeli — ve her önemli özel üretim — üretim kalıplarına geçmeden önce bu atölyeden geçer.
+content_html: >
+  <h2>Tasarımın gerçeğe dönüştüğü yer</h2>
 
-intro: 'A CAD model, no matter how detailed, cannot reveal how a boat will actually handle until it meets the water. That is why our Prototype Workshop is designed to translate engineering data into a physical, seagoing craft as quickly and accurately as possible. Every new {SITE.name} model — and every significant custom build — passes through this workshop before the production tooling is committed.'
+  <p>Atölye, gövde, tüpler ve teçhizatın eş zamanlı olarak üretilmesi için tam donanımlıdır. Bu paralel iş akışı yaklaşımı, mühendislik onayından sonra prototip sürelerini endüstri standardı olan 16-20 haftaya kıyasla 8-12 haftaya düşürür. Uygulamanız özel bir çözüm gerektirdiğinde, konseptten su
+  üzerindeki doğrulamaya üç aydan kısa sürede ulaşabiliriz.</p>
 
-content_html: |
-  <h2>Where design becomes reality</h2>
-  <p>The workshop is fully equipped for simultaneous fabrication of hull, tubes, and rigging. This parallel-workflow approach cuts prototype lead time to 8-12 weeks from engineering release, compared to the industry norm of 16-20 weeks. When your application demands a specialised solution, we can move from concept to on-water validation in under three months.</p>
 
-  <h2>Workshop capabilities</h2>
+  <h2>Atölye olanakları</h2>
+
   <table>
-    <thead><tr><th>Workstation</th><th>Equipment</th><th>Purpose</th></tr></thead>
+    <thead><tr><th>İstasyon</th><th>Ekipman</th><th>Amaç</th></tr></thead>
     <tbody>
-      <tr><td>Hull fabrication</td><td>Rotational moulding oven (HDPE), TIG welding bay (aluminium), hand-lay-up moulds (fibreglass)</td><td>Full-scale hull production in all three material types</td></tr>
-      <tr><td>Tube assembly</td><td>RF welding press, hot-air tacking station, inflation test jig</td><td>Fabrication of full-size tube assemblies with all baffles, cones, and valves</td></tr>
-      <tr><td>Rigging &amp; fitting</td><td>Engine hoist (500 kg), console mock-up frame, hydraulic hose crimper, electrical harness board</td><td>Complete outfitting: engine, steering, controls, fuel system, electronics, seating</td></tr>
-      <tr><td>Instrumentation bay</td><td>GPS speed sensor, fuel-flow meter, accelerometers, thermocouple array, data-logger</td><td>Sea-trial instrumentation installation and calibration</td></tr>
+      <tr><td>Gövde üretimi</td><td>Döndürmeli kalıplama fırını (HDPE), TIG kaynak körüğü (alüminyum), el ile lamine kalıplar (fiberglas)</td><td>Üç malzeme türünde de tam ölçekli gövde üretimi</td></tr>
+      <tr><td>Tüp birleştirme</td><td>RF kaynak presi, sıcak hava yapıştırma istasyonu, şişirme test tezgahı</td><td>Tüm bölmeler, koniler ve vanalarla birlikte tam boy tüp assembliesinin üretimi</td></tr>
+      <tr><td>Teçhizat &amp; donanım</td><td>Motor vinç (500 kg), konsol maket çerçevesi, hidrolik hortum penses, elektrik kablo demeti paneli</td><td>Komple donanım: motor, dümen, kontroller, yakıt sistemi, elektronik, koltuklar</td></tr>
+      <tr><td>Enstrüman körüğü</td><td>GPS hız sensörü, yakıt akış ölçer, ivme ölçerler, termokuple dizisi, veri kaydedici</td><td>Deniz denemesi enstrüman kurulumu ve kalibrasyonu</td></tr>
     </tbody>
   </table>
 
-  <h2>The prototype journey — step by step</h2>
+
+  <h2>Prototip yolculuğu — adım adım</h2>
+
   <ol>
-    <li><strong>Engineering handover</strong> — The design package (3D model, FEA report, bill of materials, layup schedule) is formally reviewed by the workshop lead and the project engineer. Any manufacturing concerns are flagged and resolved before cutting begins.</li>
-    <li><strong>Hull production</strong> — The hull is built according to the engineering specification. For HDPE: the rotational moulding programme is loaded from the Moldex3D simulation. For aluminium: the CNC-cut plates are welded in the TIG bay following the approved weld map. For fibreglass: the ply book is followed layer by layer.</li>
-    <li><strong>Tube fabrication</strong> — Fabric is cut using CNC-pattern templates, then RF-welded into full-size chambers. Each chamber is inflated to test pressure and left for 24 h for initial stabilisation.</li>
-    <li><strong>Assembly &amp; rigging</strong> — Hull and tubes are mated. The engine is hung, steering and controls are connected, fuel system is installed, and all electrical circuits are wired and verified.</li>
-    <li><strong>Static tests</strong> — Before the boat touches water, it undergoes: buoyancy check (full load + 30 % reserve), fuel system pressure test, steering system full-lock cycle test, electrical earth-bond continuity test.</li>
-    <li><strong>Sea trial programme</strong> — 20 hours of in-water testing, detailed below.</li>
-    <li><strong>Prototype review</strong> — A formal sign-off meeting is held with engineering, production, and quality teams. Any required design changes are documented and incorporated into the production release.</li>
+    <li><strong>Mühendislik devri</strong> — Tasarım paketi (3D model, FEA raporu, malzeme listesi, laminasyon programı) atölye sorumlusu ve proje mühendisi tarafından resmi olarak incelenir. Üretime ilişkin endişeler kesim başlamadan önce tespit edilir ve çözülür.</li>
+    <li><strong>Gövde üretimi</strong> — Gövde mühendislik şartnamesine göre üretilir. HDPE için: döndürmeli kalıplama programı Moldex3D simülasyonundan yüklenir. Alüminyum için: CNC ile kesilmiş plakalar onaylı kaynak haritasına göre TIG körüğünde kaynaklanır. Fiberglas için: laminasyon kitabına kat kat uyulur.</li>
+    <li><strong>Tüp üretimi</strong> — Kumaş CNC kalıp şablonları kullanılarak kesilir ve ardından tam boy bölmelere RF ile kaynatılır. Her bölme test basıncına kadar şişirilir ve başlangıç stabilizasyonu için 24 saat boyunca bırakılır.</li>
+    <li><strong>Birleştirme &amp; teçhizat</strong> — Gövde ve tüpler birleştirilir. Motor asılır, dümen ve kontroller bağlanır, yakıt sistemi kurulur ve tüm elektrik devreleri bağlanarak doğrulanır.</li>
+    <li><strong>Statik testler</strong> — Tekne suya girmeden önce şunlara tabi tutulur: yüzdürme kontrolü (tam yük + %30 yedek), yakıt sistemi basınç testi, dümen sistemi tam kilitleme döngü testi, elektrik topraklama süreklilik testi.</li>
+    <li><strong>Deniz denemesi programı</strong> — Aşağıda ayrıntıları verilen 20 saatlik su testi.</li>
+    <li><strong>Prototip incelemesi</strong> — Mühendislik, üretim ve kalite ekipleriyle resmi bir kabul toplantısı yapılır. Gerekli tasarım değişiklikleri belgelenir ve üretim versiyonuna dahil edilir.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20-Hour Sea Trial Programme — Test Schedule</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20 Saatlik Deniz Denemesi Programı — Test Takvimi</p>
     <div class="space-y-2 text-sm">
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
-        <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Harbour manoeuvring — low-speed handling, reverse, fendering check</span>
+        <span class="w-12 text-xs font-bold text-blue-600">2 s</span>
+        <span class="flex-1">Liman manevrası — düşük hız manevrası, geri vites, borda kontrolü</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
-        <span class="w-12 text-xs font-bold text-blue-600">4 h</span>
-        <span class="flex-1">Speed trial — GPS-verified top speed, cruise speed, fuel consumption at 3 RPM points</span>
+        <span class="w-12 text-xs font-bold text-blue-600">4 s</span>
+        <span class="flex-1">Hız denemesi — GPS ile doğrulanmış maksimum hız, seyir hızı, 3 devir noktasında yakıt tüketimi</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
-        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Turning test — tactical diameter, advance, and transfer at 20 kn, port and starboard</span>
+        <span class="w-12 text-xs font-bold text-blue-600">3 s</span>
+        <span class="flex-1">Dönüş testi — taktik çap, avans ve transfer, 20 kn'da iskele ve sancak</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
-        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Slamming test — repeated runs through 0.5–1.0 m chop; accelerometer on helm seat base</span>
+        <span class="w-12 text-xs font-bold text-blue-600">3 s</span>
+        <span class="flex-1">Darbe testi — 0,5–1,0 m dalga boyunda tekrarlı geçişler; dümen koltuğu tabanında ivme ölçer</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
-        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Stability test — static heel angle with 4 crew + gear to starboard, offset load</span>
+        <span class="w-12 text-xs font-bold text-blue-600">3 s</span>
+        <span class="flex-1">Stabilite testi — 4 mürettebat + ekipman ile sancakta statik eğim açısı, dengesiz yük</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
-        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Endurance run — 3 h continuous at cruise speed; temperature monitoring (engine, fuel, electrical)</span>
+        <span class="w-12 text-xs font-bold text-blue-600">3 s</span>
+        <span class="flex-1">Dayanıklılık çalışması — seyir hızında 3 saat kesintisiz; sıcaklık izleme (motor, yakıt, elektrik)</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
-        <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Final inspection — post-trial inspection of all systems, tighten/check all fasteners, document findings</span>
+        <span class="w-12 text-xs font-bold text-blue-600">2 s</span>
+        <span class="flex-1">Son kontrol — deneme sonrası tüm sistemlerin kontrolü, tüm bağlantı elemanlarının sıkılması/kontrol edilmesi, bulguların belgelenmesi</span>
       </div>
     </div>
   </div>
 
-  <h2>Custom prototyping for unique applications</h2>
-  <p>The Prototype Workshop is where we solve the problems that standard production boats cannot address. Recent examples include:</p>
+
+  <h2>Benzersiz uygulamalar için özel prototipleme</h2>
+
+  <p>Prototip Atölyesi, standart üretim teknelerinin çözemediği sorunları çözdüğümüzdür. Son örnekler şunları içermektedir:</p>
+
   <ul>
-    <li>A 7.8 m RIB for a search-and-rescue organisation, requiring a custom cabin structure with roll-over protection, integrated stretcher mounts, and a bow-mounted sonar pod — all prototyped, fitted, and tested at our facility.</li>
-    <li>A 5.2 m inflatable for a hydrographic survey contractor, with a cut-down transom, removable instrument mast, and through-hull transducer pockets designed to minimise flow disturbance.</li>
-    <li>An electric-drive 4.5 m tender for a superyacht, where the prototype was used to validate range, charging infrastructure, and noise levels before the client committed to a fleet of four.</li>
+    <li>Arama-kurtarma kuruluşu için 7,8 m RIB;devrilmeye karşı korumalı özel kabin yapısı, entegre sedye montaj noktaları ve pruvaya monte edilen sonar pod'u — tamamı tesisimizde prototiplenmiş, monte edilmiş ve test edilmiştir.</li>
+    <li>Hidrografik ölçüm yüklenicisi için 5,2 m şişirilebilir tekne; kısaltılmış transom, çıkarılabilir enstrüman direği ve akış bozulmasını en aza indirmek için tasarlanmış gövde içi transducer cepleri.</li>
+    <li>Süperyat için elektrik tahrikli 4,5 m servis teknesi; prototip, müşterinin dört teknelik filo taahhüdünde bulunmasından önce menzil, şarj altyapısı ve gürültü seviyelerini doğrulamak için kullanılmıştır.</li>
   </ul>
 
-  <h2>Our prototyping team</h2>
-  <p>The workshop is staffed by eight multi-skilled marine technicians, each cross-trained in at least two of the three core disciplines (hull, tube, rigging). The team lead is a master boatbuilder with 16 years of experience spanning custom one-off builds to production series. Every prototype is assigned a dedicated project engineer who serves as the single point of contact for the client throughout the build and trial process.</p>
 
-  <h2>Client involvement</h2>
-  <p>We actively encourage our clients to attend key milestones during the prototype build — particularly the initial fit-out review and the sea trial. Your operational feedback during these stages is invaluable in fine-tuning the boat before it enters production. We do not build in a vacuum; we build in partnership with you.</p>
-  <p>The 20-hour sea trial is also an opportunity for your team to familiarise themselves with the boat's handling, systems layout, and maintenance requirements, ensuring a smooth transition to service when the production boats are delivered.</p>
+  <h2>Prototipleme ekibimiz</h2>
 
+  <p>Atölye, her biri üç temel disiplinden (gövde, tüp, teçhizat) en az ikisinde çapraz eğitim almış sekiz çok yetenekli deniz teknisyeni tarafından işletilmektedir. Ekip lideri, özel tek seferlik üretimlerden seri üretime kadar 16 yıllık deneyime sahip bir usta tekne üreticisidir. Her prototip,
+  yapım ve deneme süreci boyunca müşteri için tek temas noktası olarak görev yapan özel bir proje mühendisine atanır.</p>
+
+
+  <h2>Müşteri katılımı</h2>
+
+  <p>Müşterilerimizi prototip üretimi sırasında önemli dönüm noktalarına katılmaya — özellikle ilk donanım incelemesine ve deniz denemesine — aktif olarak teşvik ediyoruz. Bu aşamalardaki operasyonel geri bildirimleriniz, teknenin üretime girmeden önce ince ayar yapılması için paha biçilmez bir
+  değer taşımaktadır. Biz bir boşlukta değil, sizinle birlikte üretiyoruz.</p>
+
+  <p>20 saatlik deniz denemesi ayrıca ekibinizin teknenin kullanımına, sistem yerleşimine ve bakım gereksinimlerine aşina olması için bir fırsat sunar; üretim tekneleri teslim edildiğinde sorunsuz bir hizmete geçiş sağlar.</p>
 cta:
-  title: 'Start your prototype project'
-  subtitle: 'Tell us about the boat you need and we will propose a prototype development plan.'
-  button_text: 'Contact our prototyping team'
-  button_link: /contact
+  title: Prototip projenizi başlatın
+  subtitle: İhtiyacınız olan tekne hakkında bize bilgi verin, bir prototip geliştirme planı önereceğiz.
+  button_text: Prototipleme ekibimizle iletişime geçin
+  button_link: /iletisim

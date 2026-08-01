@@ -1,112 +1,21 @@
 meta:
-  title: 'Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}'
-  description: 'Validate your RIB hull performance with our hydrodynamic test tank. Scale-model towing, planing analysis, and fuel efficiency testing. Book a tank test session today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Hydrodynamischer Prüftank — Schleppversuche mit Maßstabsmodellen & Rumpfoptimierung | {SITE}
+  description: Validieren Sie die RIB-Rumpfleistung mit unserem hydrodynamischen Testbecken. Ziehversuche mit Modellmaßstab, Gleitplattenanalyse und Verbrauchstests. Buchen Sie noch heute eine Testbecken-Sitzung.
+back_text: Zurück zum F&E-Zentrum
+home_label: Zuhause
 hero:
-  tagline: 'Lab 04'
-  title: 'Hydrodynamic Test Tank'
-  subtitle: 'Validating performance before the first full-scale prototype'
-  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
-  image_alt: 'Afarer hydrodynamic test tank performance testing'
-
-intro: 'It is a common misconception that hydrodynamic testing is reserved for ocean-going ships. In reality, the performance of a small planing hull — such as a 4–6 m RIB — is just as dependent on its underwater shape as a tanker is on its bulbous bow. Trim angle, wetted surface area, spray generation, and ventilation all have a dramatic effect on speed, fuel consumption, and ride comfort. At {SITE.name}, we operate a dedicated hydrodynamic test tank that allows us to quantify these effects at model scale — before committing metal and fabric to a full-size prototype.'
-
-content_html: |
-  <h2>Why tank-test a small boat?</h2>
-  <p>Testing at model scale (typically 1:3 to 1:5) gives us the ability to iterate hull shapes rapidly and cost-effectively. A week in the tank can generate the same performance data that would require months of full-scale trial-and-error — and at a fraction of the cost.</p>
-
-  <h2>Facility specifications</h2>
-  <table>
-    <thead><tr><th>Parameter</th><th>Specification</th></tr></thead>
-    <tbody>
-      <tr><td>Tank dimensions</td><td>35 m (L) × 3.5 m (W) × 1.8 m (D)</td></tr>
-      <tr><td>Towing carriage</td><td>Electric servo-driven, max speed 12 m/s (23 kn), speed accuracy ± 0.5 %</td></tr>
-      <tr><td>Wave generator</td><td>Flap-type, programmable regular &amp; irregular sea states, Hs up to 0.3 m at model scale</td></tr>
-      <tr><td>Instrumentation</td><td>6-component dynamometer (resistance, side force, yaw moment), accelerometers, inclinometers, wave probes</td></tr>
-      <tr><td>Data acquisition</td><td>Sampling at 1000 Hz per channel, real-time display + post-processing suite</td></tr>
-      <tr><td>Model fabrication</td><td>In-house CNC milling and 3D printing for model hulls up to 1.8 m LOA</td></tr>
-    </tbody>
-  </table>
-
-  <h2>Our test programme</h2>
-  <p>A standard hull development programme in our tank follows this sequence:</p>
-  <ol>
-    <li><strong>Model build</strong> — A 1:3.5 scale model is CNC-machined from high-density foam and glassed for rigidity. Weight and CG are adjusted to match Froude-scaled full-load condition.</li>
-    <li><strong>Resistance runs</strong> — The model is towed at 8-10 speeds spanning the operating range. Total resistance is measured and decomposed into frictional and residuary components using the ITTC-1957 method.</li>
-    <li><strong>Trim &amp; sinkage measurement</strong> — Running trim and sinkage are recorded at each speed. An optimal trim angle of 4-6° for planing hulls is the target.</li>
-    <li><strong>Wake survey</strong> — Transverse wave cuts are measured at two speeds to assess wave-making resistance and identify transverse wave interactions that could cause stern interference.</li>
-    <li><strong>Seakeeping (optional)</strong> — Head-sea and following-sea runs in regular waves to measure added resistance, vertical acceleration, and slamming probability.</li>
-    <li><strong>Data analysis &amp; recommendations</strong> — A full report is delivered with comparative charts, speed/power curves, and specific design recommendations for the full-scale hull.</li>
-  </ol>
-
-  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typical Tank Test Results — Resistance vs Speed (RIB 450 hull, 1:3.5 scale)</p>
-    <div class="space-y-2">
-      <div class="flex items-center gap-2 text-xs">
-        <span class="w-20">5 kn (1:1)</span>
-        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
-          <div class="h-full bg-blue-600 rounded" style="width:18%"></div>
-        </div>
-        <span class="w-16 text-right">42 N</span>
-      </div>
-      <div class="flex items-center gap-2 text-xs">
-        <span class="w-20">10 kn (1:1)</span>
-        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
-          <div class="h-full bg-blue-600 rounded" style="width:35%"></div>
-        </div>
-        <span class="w-16 text-right">81 N</span>
-      </div>
-      <div class="flex items-center gap-2 text-xs">
-        <span class="w-20">15 kn (1:1)</span>
-        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
-          <div class="h-full bg-blue-600 rounded" style="width:52%"></div>
-        </div>
-        <span class="w-16 text-right">121 N</span>
-      </div>
-      <div class="flex items-center gap-2 text-xs">
-        <span class="w-20">20 kn (1:1)</span>
-        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
-          <div class="h-full bg-blue-600 rounded" style="width:68%"></div>
-        </div>
-        <span class="w-16 text-right">158 N</span>
-      </div>
-      <div class="flex items-center gap-2 text-xs">
-        <span class="w-20">25 kn (1:1)</span>
-        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
-          <div class="h-full bg-blue-600 rounded" style="width:85%"></div>
-        </div>
-        <span class="w-16 text-right">197 N</span>
-      </div>
-      <div class="flex items-center gap-2 text-xs">
-        <span class="w-20">30 kn (1:1)</span>
-        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
-          <div class="h-full bg-blue-600 rounded" style="width:100%"></div>
-        </div>
-        <span class="w-16 text-right">232 N</span>
-      </div>
-    </div>
-    <p class="text-xs text-gray-400 mt-2">Model-scale resistance (N) at Froude-scaled speeds. Full-scale power prediction follows the ITTC-1978 performance-prediction method.</p>
-  </div>
-
-  <h2>Expert team</h2>
-  <p>Our tank is operated by a hydrodynamicist with a PhD in naval architecture and 8 years of towing-tank experience at a major European maritime research institute. He is supported by a technician who prepares all models and instrumentation. The team follows the ITTC (International Towing Tank Conference) Recommended Procedures to ensure that every test is repeatable, traceable, and internationally defensible.</p>
-
-  <h2>Tank-testing for custom hull development</h2>
-  <p>Our tank is not only used for house-designed hulls — we regularly run test programmes for clients who want to validate a custom hull shape or investigate a performance issue:</p>
-  <ul>
-    <li><strong>Hull-form comparison</strong> — Two or more candidate hull shapes tested under identical conditions, providing an objective drag/speed/stability comparison to inform your design choice.</li>
-    <li><strong>Appendage optimisation</strong> — Interceptor plates, spray rails, trim tabs, and strakes can be tested in various configurations to quantify their individual contribution to drag reduction.</li>
-    <li><strong>Engine-matching study</strong> — Resistance data is converted to a power-prediction curve, allowing you to select the optimum engine horsepower for your target speed and payload.</li>
-  </ul>
-
-  <h2>Why test with us?</h2>
-  <p>We do not just give you a set of raw numbers. Our reports translate tank data into actionable engineering recommendations: "Raise the spray-rail by 8 mm to reduce wetted surface at cruise speed", "Increase deadrise at the transom by 3° to reduce slamming acceleration", or "Move the longitudinal centre of gravity 150 mm aft for improved planing attitude". You leave with a clear understanding of what to change and why.</p>
-  <p>Our tank is also available for independent third-party testing on a fee-for-service basis. If you are developing a hull and want an unbiased, professionally executed hydrodynamic assessment, we welcome your enquiry.</p>
-
+  tagline: Labor 04
+  title: Hydrodynamischer Testtank
+  subtitle: Überprüfung der Leistung vor dem ersten vollwertigen Prototyp
+  image: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp
+  image_alt: Afarer hydrodynamische Testbeckenleistungstest
+intro: >-
+  Es ist ein weit verbreitetes Missverständnis, dass hydrodynamische Tests nur für seetüchtige Schiffe vorbehalten sind. In Wirklichkeit hängt die Leistung eines kleinen Gleitkörpers – wie eines 4–6 m RIB – genauso sehr von seiner Unterwasserform ab wie die eines Tankers von seinem Bugsporn.
+  Trimmwinkel, benetzte Oberfläche, Spritzwasserbildung und Belüftung haben alle einen dramatischen Einfluss auf Geschwindigkeit, Kraftstoffverbrauch und Fahrkomfort. Bei {SITE.name} betreiben wir einen speziellen hydrodynamischen Testtank, der es uns ermöglicht, diese Effekte im Modellmaßstab zu
+  quantifizieren – bevor Metall und Stoff in ein vollgroßes Prototypenbauprojekt gesteckt werden.
+content_html: "<h2>Warum einen Schlauchboot-Tanktest durchführen?</h2>\n<p>Tests im Modellmaßstab (typischerweise 1:3 bis 1:5) ermöglichen es uns, Rumpfformen schnell und kostengünstig zu iterieren. Eine Woche im Tank kann dieselben Leistungsdaten generieren, die bei Versuchen im Originalmaßstab Monate erfordern würden — und dies zu einem Bruchteil der Kosten.</p>\n\n<h2>Einrichtungsspezifikationen</h2>\n<table>\n  <thead><tr><th>Parameter</th><th>Spezifikation</th></tr></thead>\n  <tbody>\n    <tr><td>Tankabmessungen</td><td>35 m (L) × 3,5 m (B) × 1,8 m (T)</td></tr>\n    <tr><td>Schleppwagen</td><td>Elektrisch servogesteuert, max. Geschwindigkeit 12 m/s (23 kn), Geschwindigkeitsgenauigkeit ± 0,5 %</td></tr>\n    <tr><td>Wellengenerator</td><td>Klappenartig, programmierbare regelmäßige &amp; unregelmäßige Seezustände, Hs bis zu 0,3 m im Modellmaßstab</td></tr>\n    <tr><td>Messtechnik</td><td>6-Komponenten-Dynamometer (Widerstand, Seitenkraft, Giermoment), Beschleunigungsmesser, Neigungsmesser, Wellenmesssonden</td></tr>\n    <tr><td>Datenerfassung</td><td>Abtastrate 1000 Hz pro Kanal, Echtzeit-Anzeige + Nachbearbeitungssoftware</td></tr>\n    <tr><td>Modellfertigung</td><td>Interne CNC-Fräsen und 3D-Druck für Modellrumpfe bis 1,8 m Länge über alles</td></tr>\n  </tbody>\n</table>\n\n<h2>Unser Prüfprogramm</h2>\n<p>Ein standardmäßiges Rumpfentwicklungsprogramm in unserem Tank folgt dieser Reihenfolge:</p>\n<ol>\n  <li><strong>Modellbau</strong> — Ein 1:3,5-Maßstabsmodell wird aus hochdichtem Schaumstoff CNC-gefräst und mit Glasfaser für Steifigkeit verstärkt. Gewicht und Schwerpunkt werden an den Froude-skalierten Vollastzustand angepasst.</li>\n  <li><strong>Widerstandsmessungen</strong> — Das Modell wird bei 8–10 Geschwindigkeiten im Betriebsbereich geschleppt. Der Gesamtwiderstand wird gemessen und mit der ITTC-1957-Methode in Reibungs- und Restwiderstand aufgeteilt.</li>\n  <li><strong>Trim- und Einsinkmessung</strong> — Laufender Trim und Einsinken werden bei jeder Geschwindigkeit aufgezeichnet. Ein optimaler Trimwinkel von 4–6° für Gleithüllen ist das Ziel.</li>\n  <li><strong>Nachlaufuntersuchung</strong> — Querwellenverläufe werden bei zwei Geschwindigkeiten gemessen, um den Wellenwiderstand zu bewerten und Querwellenwechselwirkungen zu identifizieren, die eine Heckbeeinflussung verursachen könnten.</li>\n  <li><strong>Seegangseigenschaften (optional)</strong> — Bugsee- und Hecksee-Versuche in regelmäßigen Wellen zur Messung des Zusatzwiderstands, der vertikalen Beschleunigung und der Schlaggerwahrscheinlichkeit.</li>\n  <li><strong>Datenanalyse &amp; Empfehlungen</strong> — Ein vollständiger Bericht wird mit Vergleichsdiagrammen, Geschwindigkeits-/Leistungskurven und spezifischen Designempfehlungen für den Rumpf im Originalmaßstab geliefert.</li>\n</ol>\n\n<div class=\"not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800\">\n  <p class=\"text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider\">Typische Tanktestergebnisse — Widerstand vs. Geschwindigkeit (RIB 450 Rumpf, 1:3,5 Maßstab)</p>\n  <div class=\"space-y-2\">\n    <div class=\"flex items-center gap-2 text-xs\">\n      <span class=\"w-20\">5 kn (1:1)</span>\n      <div class=\"flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded\">\n        <div class=\"h-full bg-blue-600 rounded\" style=\"width:18%\"></div>\n      </div>\n      <span class=\"w-16 text-right\">42 N</span>\n    </div>\n    <div class=\"flex items-center gap-2 text-xs\">\n      <span class=\"w-20\">10 kn (1:1)</span>\n      <div class=\"flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded\">\n        <div class=\"h-full bg-blue-600 rounded\" style=\"width:35%\"></div>\n      </div>\n      <span class=\"w-16 text-right\">81 N</span>\n    </div>\n    <div class=\"flex items-center gap-2 text-xs\">\n      <span class=\"w-20\">15 kn (1:1)</span>\n      <div class=\"flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded\">\n        <div class=\"h-full bg-blue-600 rounded\" style=\"width:52%\"></div>\n      </div>\n      <span class=\"w-16 text-right\">121 N</span>\n    </div>\n    <div class=\"flex items-center gap-2 text-xs\">\n      <span class=\"w-20\">20 kn (1:1)</span>\n      <div class=\"flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded\">\n        <div class=\"h-full bg-blue-600 rounded\" style=\"width:68%\"></div>\n      </div>\n      <span class=\"w-16 text-right\">158 N</span>\n    </div>\n    <div class=\"flex items-center gap-2 text-xs\">\n      <span class=\"w-20\">25 kn (1:1)</span>\n      <div class=\"flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded\">\n        <div class=\"h-full bg-blue-600 rounded\" style=\"width:85%\"></div>\n      </div>\n      <span class=\"w-16 text-right\">197 N</span>\n    </div>\n    <div class=\"flex items-center gap-2 text-xs\">\n      <span class=\"w-20\">30 kn (1:1)</span>\n      <div class=\"flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded\">\n        <div class=\"h-full bg-blue-600 rounded\" style=\"width:100%\"></div>\n      </div>\n      <span class=\"w-16 text-right\">232 N</span>\n    </div>\n  </div>\n  <p class=\"text-xs text-gray-400 mt-2\">Modellmaßstabs-Widerstand (N) bei Froude-skalierten Geschwindigkeiten. Die Leistungsprognose im Originalmaßstab erfolgt nach der ITTC-1978-Leistungsprognose-Methode.</p>\n</div>\n\n<h2>Expertenteam</h2>\n<p>Unser Tank wird von einem Hydrodynamiker mit Promotion in Schiffsingenieurwesen und 8 Jahren Schlepptankerfahrung an einem großen europäischen Meeresforschungsinstitut betrieben. Er wird von einem Techniker unterstützt, der alle Modelle und die Messtechnik vorbereitet. Das Team folgt den empfohlenen Verfahren der ITTC (International Towing Tank Conference), um sicherzustellen, dass jeder Test reproduzierbar, nachvollziehbar und international vertretbar ist.</p>\n\n<h2>Tanktests für kundenspezifische Rumpfentwicklung</h2>\n<p>Unser Tank wird nicht nur für eigene Rumpfdesigns verwendet — wir führen regelmäßig Prüfprogramme für Kunden durch, die eine kundenspezifische Rumpfform validieren oder ein Leistungsproblem untersuchen möchten:</p>\n<ul>\n  <li><strong>Rumpfform-Vergleich</strong> — Zwei oder mehr Rumpfform-Kandidaten werden unter identischen Bedingungen getestet und liefern einen objektiven Widerstand/Geschwindigkeit/Stabilitäts-Vergleich für Ihre Designentscheidung.</li>\n  <li><strong>Anbauteil-Optimierung</strong> — Interceptor-Platten, Spritzleisten, Trimklappen und Schecken können in verschiedenen Konfigurationen getestet werden, um ihren individuellen Beitrag zur Widerstandsreduzierung zu quantifizieren.</li>\n  <li><strong>Motorabstimmungsstudie</strong> — Die Widerstandsdaten werden in eine Leistungsprognosekurve umgerechnet, sodass Sie die optimale Motorleistung für Ihre Zielgeschwindigkeit und Nutzlast auswählen können.</li>\n</ul>\n\n<h2>Warum bei uns testen?</h2>\n<p>Wir geben Ihnen nicht nur eine Reihe von Rohdaten. Unsere Berichte übersetzen Tankdaten in umsetzbare konstruktionstechnische Empfehlungen: „Spritzleiste um 8 mm anheben, um die benetzte Oberfläche bei Reisegeschwindigkeit zu verringern\", „Spantenwinkel am Heck um 3° erhöhen, um die Schlaggerwahrscheinlichkeit zu reduzieren\", oder „Längsschwerpunkt um 150 mm nach hinten verlagern für verbesserte Gleiteigenschaften\". Sie verlassen uns mit einem klaren Verständnis dessen, was geändert werden muss und warum.</p>\n<p>Unser Tank steht auch für unabhängige Drittanbieter-Tests auf Honorarbasis zur Verfügung. Wenn Sie einen Rumpf entwickeln und eine unvoreingenommen, professionell durchgeführte hydrodynamische Bewertung wünschen, freuen wir uns auf Ihre Anfrage.</p>\n\r\n"
 cta:
-  title: 'Book a tank test session'
-  subtitle: 'Whether you need a full development programme or a single comparative test, we can accommodate your schedule.'
-  button_text: 'Contact our hydrodynamics team'
-  button_link: /contact
+  title: Einen Panzertest-Termin buchen
+  subtitle: Egal, ob Sie ein vollständiges Entwicklungsprogramm oder einen einzelnen Vergleichstest benötigen, wir können uns nach Ihrem Zeitplan richten.
+  button_text: Kontaktieren Sie unser Hydrodynamik-Team
+  button_link: /kontakt

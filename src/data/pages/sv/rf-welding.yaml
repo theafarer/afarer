@@ -1,89 +1,107 @@
 meta:
-  title: 'RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}'
-  description: 'Radio-frequency welding technology delivering compliant airtight seams. Peel testing, air-retention validation, and custom seam specifications.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: RF-svetsningscenter — dielektrisk binding för lufttäta sömmar | {SITE}
+  description: Radiofrekvenssvetsteknik för att leverera efterlevnadskraftiga lufttätta sömmar. Peelingprovning, luftläckagevalidering och skräddarsydda sömmspecifikationer.
+back_text: Tillbaka till FoU-centrum
+home_label: Hem
 hero:
-  tagline: 'Lab 03'
-  title: 'RF Welding Center'
-  subtitle: 'Dielectric bonding technology for welds that hold under pressure'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1.webp'
-  image_alt: 'Afarer RF welding dielectric bonding process'
+  tagline: Laboratorium 03
+  title: RF-svetsningscenter
+  subtitle: Dielektrisk bindningsteknik för svetsar som håller under tryck
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1.webp
+  image_alt: Afarers RF-svets­process för die­lektrisk binding
+intro: >-
+  En oppustbar båt är bara så pålitlig som dess sömmar. En enda svag svetsning kan compromise hela en kamma — och till havs är ett kammabrot en säkerhetsrisk, inte ett besvär. På {SITE.name} har vi investerat i ett dedikerat Radiofrekvens (RF) svetsningscenter som kombinerar industriella
+  dielektriska svetspressar med strikt processkontroll och efter-svetsprovning. Varje söm vi producerar dokumenteras, är spårbar och certifierad för att uppfylla eller överträda kraven i — den internationella standarden för oppustbara fartyg.
+content_html: >-
+  <h2>Vetenskapen bakom sömmen</h2>
 
-intro: 'An inflatable boat is only as reliable as its seams. A single weak weld can compromise an entire chamber — and at sea, a chamber failure is not an inconvenience; it is a safety hazard. At {SITE.name}, we have invested in a dedicated Radio-Frequency (RF) Welding Center that combines industrial-grade dielectric welding presses with rigorous process control and post-weld testing. Every seam we produce is documented, traceable, and certified to meet or exceed the requirements of — the international standard for inflatable craft.'
+  <p>RF-svetsning använder högfrekvent elektromagnetisk energi (vanligen 27,12 MHz) för att excitera de pola moleklerna i PVC- eller Hypalon-belagd duk och generera värme exakt vid materialgränsen. Till skillnad från varmlufts- eller vinkkantssvetsning skapar RF-svetsning en verklig
+  molekylärbindning — de två duklagena smälter samman till ett homogent material i svetszonen, vilket ger en fog som är lika stark som basmaterialet själv.</p>
 
-content_html: |
-  <h2>The science behind the seam</h2>
-  <p>RF welding uses high-frequency electromagnetic energy (typically 27.12 MHz) to excite the polar molecules within PVC or Hypalon-coated fabric, generating heat precisely at the material interface. Unlike hot-air or hot-wedge welding, RF welding creates a true molecular bond — the two fabric layers fuse into a single homogeneous material at the weld zone, producing a joint that is as strong as the parent material itself.</p>
 
-  <h2>Welding equipment and process control</h2>
-  <p>Our welding centre is equipped with:</p>
+  <h2>Svetsutrustning och processkontroll</h2>
+
+  <p>Vårt svetscenter är utrustat med:</p>
+
   <table>
-    <thead><tr><th>Machine</th><th>Power / Capacity</th><th>Application</th></tr></thead>
+    <thead><tr><th>Maskin</th><th>Effekt / Kapacitet</th><th>Tillämpning</th></tr></thead>
     <tbody>
-      <tr><td>Dielectric RF press 1</td><td>15 kW, platen 2000 × 600 mm</td><td>Main longitudinal seams, transom-to-tube joints</td></tr>
-      <tr><td>Dielectric RF press 2</td><td>10 kW, platen 1500 × 500 mm</td><td>Baffle welds, cone attachments, valve patches</td></tr>
-      <tr><td>CNC controlled RF welder</td><td>8 kW, XY table 2500 × 1200 mm</td><td>Curved seams, logo/panel embossing, precision patchwork</td></tr>
-      <tr><td>Hot-wedge automatic welder</td><td>Variable temperature, 1.2 m/min max</td><td>Backup method for Hypalon/CSM materials</td></tr>
+      <tr><td>Dielektrisk RF-press 1</td><td>15 kW, platta 2000 × 600 mm</td><td>Huvudlångsömmar, transom-rörfogar</td></tr>
+      <tr><td>Dielektrisk RF-press 2</td><td>10 kW, platta 1500 × 500 mm</td><td>Bafflesvetsning, konfästen, ventilkuddar</td></tr>
+      <tr><td>CNC-styrd RF-svets</td><td>8 kW, XY-bord 2500 × 1200 mm</td><td>Kurvor, sömmar, logotyp-/panelpreget, precisionssvarsning</td></tr>
+      <tr><td>Varmkantssvets automatisk</td><td>Variabel temperatur, max 1,2 m/min</td><td>Reservmetod för Hypalon/CSM-material</td></tr>
     </tbody>
   </table>
-  <p>Every RF press is equipped with closed-loop temperature and pressure monitoring. Weld parameters — power, press time, cooling time, electrode pressure — are programmed per material type and recorded in our Manufacturing Execution System (MES) for full traceability.</p>
 
-  <h2>Weld quality tests — every seam, every boat</h2>
-  <p>Weld integrity is verified through a mandatory four-test protocol:</p>
+  <p>Varje RF-press är utrustad med stängd slinga för temperatur- och tryckövervakning. Svetsparametrar — effekt, pressningstid, svaltid, elektroddstryck — programmeras per materialtyp och loggas i vårt tillverkningssystem (MES) för full spårbarhet.</p>
+
+
+  <h2>Svetskvalitetstester — varje söm, varje båt</h2>
+
+  <p>Svetskvaliteten verifieras genom ett obligatoriskt protokoll med fyra tester:</p>
+
   <ol>
-    <li><strong>Visual inspection</strong> — 100 % of seams are visually inspected for burn-through, misalignment, contamination, or incomplete fusion. Reject rate threshold: 0.5 % of linear metres.</li>
-    <li><strong>Peel test ()</strong> — A 25 mm wide strip is cut from a test coupon welded with each production batch. Minimum peel force: 120 N/25 mm for PVC 1100 dtex.</li>
-    <li><strong>Air-retention test</strong> — Every completed chamber is pressurised to 1.5 × working pressure and held for 30 minutes. Pressure drop must not exceed 2 %.</li>
-    <li><strong>Thermal cycling test</strong> — Sample coupons are cycled from -20 °C to +60 °C for 50 cycles, then peel-tested again. Acceptable strength loss: &lt; 10 %.</li>
+    <li><strong>Visuell inspektion</strong> — 100 % av sömmarna inspekteras visuellt för genombränning, missriktning, kontaminering eller ofullständig sammanfogning. Avvisningströskel: 0,5 % av lopsmeterna.</li>
+    <li><strong>Dragprov ()</strong> — Ett 25 mm brett band skärs från ett prov som svetsats med varje produktionsparti. Minsta draghäftning: 120 N/25 mm för PVC 1100 dtex.</li>
+    <li><strong>Lufttäthetstest</strong> — Varje färdig kamma pumpas upp till 1,5 × arbetstryck och hålls i 30 minuter. Tryckfallet får inte överstiga 2 %.</li>
+    <li><strong>Termocykeltest</strong> — Provbitar cyklas från −20 °C till +60 °C i 50 cykler och dragprovats därefter igen. Acceptabelt styrkeförlust: &lt; 10 %.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Peel Strength Comparison — RF vs Hot-Air Welding (PVC 1100 dtex)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Jämförelse av draghäftning — RF-svetsning vs. varmluftssvetsning (PVC 1100 dtex)</p>
     <div class="space-y-3">
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium">RF Weld</span>
+        <span class="w-24 text-xs font-medium">RF-svetsning</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">184 N</span>
       </div>
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium">Hot-Air</span>
+        <span class="w-24 text-xs font-medium">Varmluft</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">130 N</span>
       </div>
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium"> min</span>
+        <span class="w-24 text-xs font-medium"> min.</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-green-500 rounded" style="width:48%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">96 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">RF welding consistently achieves 90-95 % of parent-material strength, well above the minimum.</p>
+    <p class="text-xs text-gray-400 mt-2">RF-svetsning uppnår konsekvent 90–95 % av basmaterialets styrka, klart över minimumkravet.</p>
   </div>
 
-  <h2>Professional expertise</h2>
-  <p>Our welding team is led by a senior process engineer with 11 years of experience in dielectric welding of coated textiles. Each operator completes a 6-month in-house certification programme before being allowed to work on production seams. Recertification is required annually, including a practical weld test evaluated against our internal Grade-A standard (peel strength ≥ 160 N/25 mm).</p>
 
-  <h2>Custom welding solutions for unique requirements</h2>
-  <p>We understand that one welding specification does not fit every application. Our RF Welding Center routinely develops custom seam configurations for clients with special requirements:</p>
+  <h2>Professionell kompetens</h2>
+
+  <p>Vårt svetsningspersonal leds av en senior processtekniker med 11 års erfarenhet av dielektrisk svetsning av belagda textilier. Varje operatör genomgår ett 6-månaders internt certifieringsprogram innan hen får arbeta med produktsömmar. Omskolning krävs årligen, inklusive ett praktiskt svetsprov
+  som bedöms mot vår interna A-klassstandard (draghäftning ≥ 160 N/25 mm).</p>
+
+
+  <h2>Anpassade svetslösningar för unika behov</h2>
+
+  <p>Vi förstår att en enda svetspecifikation inte passar alla tillämpningar. Vårt RF-svetsningscenter utvecklar rutinmässigt anpassade sömkonfigurationer för kunder med särskilda behov:</p>
+
   <ul>
-    <li><strong>Multi-layer reinforcement patches</strong> — for high-wear areas such as rubbing strakes and bow cones, we develop multi-pass RF welds that integrate a wear-resistant outer layer without compromising flexibility.</li>
-    <li><strong>Conductive or RF-opaque seams</strong> — for military or surveillance vessels requiring electromagnetic shielding, we weld in conductive mesh layers within the seam stack-up.</li>
-    <li><strong>Colour-change panel welding</strong> — dual-colour fabric panels (e.g. orange hull + grey topside) welded with a concealed overlap to maintain brand aesthetics without a visible join line.</li>
+    <li><strong>Flerskiktsförstärkningskuddar</strong> — för slitageutsatta områden som skraplistar och bogsken utvecklar vi multipass RF-svetsningar som integrerar ett slitetåligt yttre lager utan att kompromissa flexibiliteten.</li>
+    <li><strong>Ledande eller RF-opaka sömmar</strong> — för militär- eller övervakningsfartyg som kräver elektromagnetisk skärmning svetsar vi ledande nät innanför sömsuppen.</li>
+    <li><strong>Färgbyte panelsvetsning</strong> — tvåfärgade dukpaneler (t.ex. orange skrov + grå översida) svetsas med dold överlappning för att behålla varumärkesestetiken utan synlig foglinje.</li>
   </ul>
 
-  <h2>Our commitment to you</h2>
-  <p>Every boat we deliver carries our weld-quality guarantee: if any seam fails in normal service within the warranty period, we repair or replace the affected chamber at no cost, and a root-cause investigation is performed to prevent recurrence. This is not simply a warranty — it is a commitment to continuous improvement driven by real-world operational data.</p>
-  <p>When you choose {SITE.name}, you are choosing seams that are engineered, tested, and documented — not just welded. That is the difference between a boat that floats and a boat that performs.</p>
 
+  <h2>Vårt engagemang för dig</h2>
+
+  <p>Varje båt vi levererar bär vår svetskvalitetsgaranti: om någon söm misslyckas under normal drift inom garantiperioden reparerar eller ersätter vi den drabbade kammaren utan kostnad, och en undersökning av orsaken utförs för att förhindra upprepning. Detta är inte bara en garanti — det är ett
+  engagemang för kontinuerlig förbättring driven av verklighetsbaserad driftdata.</p>
+
+  <p>När du väljer {SITE.name} väljer du sömmar som är konstruerade, testade och dokumenterade — inte bara svetsade. Det är skillnaden mellan en båt som flyter och en båt som presterar.</p>
 cta:
-  title: 'Discuss your welding requirements'
-  subtitle: 'Custom seam specifications, material compatibility, or process validation.'
-  button_text: 'Contact our welding team'
-  button_link: /contact
+  title: Diskutera dina svetsningsbehov
+  subtitle: Anpassade sömspecifikationer, materialkompatibilitet eller processvalidering.
+  button_text: Kontakta vårt svetsningsteam
+  button_link: /kontakt

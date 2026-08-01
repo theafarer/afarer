@@ -1,89 +1,85 @@
 meta:
-  title: 'RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}'
-  description: 'Radio-frequency welding technology delivering compliant airtight seams. Peel testing, air-retention validation, and custom seam specifications.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: RF 용접 센터 — 기밀 이음새를 위한 유전체 본딩 | {SITE}
+  description: 합격 기준의 공기 차단 이음새를 제공하는 고주파 용접 기술. 밀착 테스트, 공기 유지 검증 및 맞춤 이음새 사양.
+back_text: R&D 센터로 돌아가기
+home_label: 홈
 hero:
-  tagline: 'Lab 03'
-  title: 'RF Welding Center'
-  subtitle: 'Dielectric bonding technology for welds that hold under pressure'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1.webp'
-  image_alt: 'Afarer RF welding dielectric bonding process'
-
-intro: 'An inflatable boat is only as reliable as its seams. A single weak weld can compromise an entire chamber — and at sea, a chamber failure is not an inconvenience; it is a safety hazard. At {SITE.name}, we have invested in a dedicated Radio-Frequency (RF) Welding Center that combines industrial-grade dielectric welding presses with rigorous process control and post-weld testing. Every seam we produce is documented, traceable, and certified to meet or exceed the requirements of — the international standard for inflatable craft.'
-
+  tagline: Lab 03
+  title: RF 용접 센터
+  subtitle: 내압 용접을 위한 유전체 본딩 기술
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1.webp
+  image_alt: afarer RF 용접 유전체 접합 공정
+intro: 인플레이터블 보트는 이음새만큼만 안정적입니다. 하나의 약한 용접이 전체 챔버를 손상시킬 수 있으며, 바다에서 챔버 고장은 불편함이 아니라 안전 위험입니다. {SITE.name}에서는 산업 등급 유전체 용접 프레스와 엄격한 공정 제어 및 용접 후 테스트를 결합하는 전용 고주파(RF) 용접 센터에 투자했습니다. 우리가 생산하는 모든 이음새는 문서화되어 있고 추적 가능하며, 인플레이터블 보트의 국제 표준 — 요건을 충족하거나 초과하도록 인증됩니다.
 content_html: |
-  <h2>The science behind the seam</h2>
-  <p>RF welding uses high-frequency electromagnetic energy (typically 27.12 MHz) to excite the polar molecules within PVC or Hypalon-coated fabric, generating heat precisely at the material interface. Unlike hot-air or hot-wedge welding, RF welding creates a true molecular bond — the two fabric layers fuse into a single homogeneous material at the weld zone, producing a joint that is as strong as the parent material itself.</p>
+  <h2>이은사의 과학</h2>
+  <p>RF 용접은 고주파 전자기 에너지(일반적으로 27.12 MHz)를 사용하여 PVC 또는 Hypalon 코팅 원단 내의 귀성 분자를 활성화시어 재료 경계면에서 정확하게 열을 생성합니다. 열폰 용접나 열 Wedge 용접과 다른과, RF 용접은 진정한 분자 결합을 형성하여 용접 영역에서 두 원단 레이어가 하나의 그라진 재료로 융합되어 모재와 동등한 강도의 이은사를 만든니다.</p>
 
-  <h2>Welding equipment and process control</h2>
-  <p>Our welding centre is equipped with:</p>
+  <h2>용접 장비 밀 공정 관리</h2>
+  <p>저희 용접 센터는 안된 공팅을 갖고 있습니다:</p>
   <table>
-    <thead><tr><th>Machine</th><th>Power / Capacity</th><th>Application</th></tr></thead>
+    <thead><tr><th>장비</th><th>출력 / 용량</th><th>욤도</th></tr></thead>
     <tbody>
-      <tr><td>Dielectric RF press 1</td><td>15 kW, platen 2000 × 600 mm</td><td>Main longitudinal seams, transom-to-tube joints</td></tr>
-      <tr><td>Dielectric RF press 2</td><td>10 kW, platen 1500 × 500 mm</td><td>Baffle welds, cone attachments, valve patches</td></tr>
-      <tr><td>CNC controlled RF welder</td><td>8 kW, XY table 2500 × 1200 mm</td><td>Curved seams, logo/panel embossing, precision patchwork</td></tr>
-      <tr><td>Hot-wedge automatic welder</td><td>Variable temperature, 1.2 m/min max</td><td>Backup method for Hypalon/CSM materials</td></tr>
+      <tr><td>유전체 RF 프레스 1</td><td>15kW, 피라텐 2000 × 600mm</td><td>주요 종방향 이은사, 트랜쇼-튜브 이은사</td></tr>
+      <tr><td>유전체 RF 프레스 2</td><td>10kW, 피라텐 1500 × 500mm</td><td>뺑프 용접, 콘 부착, 배브 패치</td></tr>
+      <tr><td>CNC 제어 RF 용접기</td><td>8kW, XY 테이블 2500 × 1200mm</td><td>곡선 이은사, 로고/패너 각인, 정문 패치워크</td></tr>
+      <tr><td>핧웨지 자동 용접기</td><td>가변 온도, 최대 1.2m/min</td><td>Hypalon/CSM 소재 대치 방법</td></tr>
     </tbody>
   </table>
-  <p>Every RF press is equipped with closed-loop temperature and pressure monitoring. Weld parameters — power, press time, cooling time, electrode pressure — are programmed per material type and recorded in our Manufacturing Execution System (MES) for full traceability.</p>
+  <p>모든 RF 프레스에는 폜루프 온도 밀 액력 모니터링이 장치되언시다. 용접 매개별수(출력, 가압 시간, 띀갑 시간, 전근 압력)는 소재 유형별로 프로그램되고 완전한 추적 가능성을 위해 제작 실행 시스템(MES)에 기록됩니다.</p>
 
-  <h2>Weld quality tests — every seam, every boat</h2>
-  <p>Weld integrity is verified through a mandatory four-test protocol:</p>
+  <h2>용접 품질 테스트 — 모든 이은사, 모든 보트</h2>
+  <p>용접 무이다리성은 4개 항목의 필수 테스트 프로톤을 통해 검증됩니다:</p>
   <ol>
-    <li><strong>Visual inspection</strong> — 100 % of seams are visually inspected for burn-through, misalignment, contamination, or incomplete fusion. Reject rate threshold: 0.5 % of linear metres.</li>
-    <li><strong>Peel test ()</strong> — A 25 mm wide strip is cut from a test coupon welded with each production batch. Minimum peel force: 120 N/25 mm for PVC 1100 dtex.</li>
-    <li><strong>Air-retention test</strong> — Every completed chamber is pressurised to 1.5 × working pressure and held for 30 minutes. Pressure drop must not exceed 2 %.</li>
-    <li><strong>Thermal cycling test</strong> — Sample coupons are cycled from -20 °C to +60 °C for 50 cycles, then peel-tested again. Acceptable strength loss: &lt; 10 %.</li>
+    <li><strong>육안 검사</strong> — 이은사 100%를 대상으로 열-through, 불러운 정렬, 오얼 또는 불완절 융합 여부를 육안 검사합니다. 불합겱 기준: 선형 미터다이 0.5%.</li>
+    <li><strong>볼창 테스트 ()</strong> — 각 생사 배치와 매니어 용접된 시퍼에서 25mm 폴의 스트립을 절닌합니다. 최소 볼창력: PVC 1100 dtex의 경우 120N/25mm.</li>
+    <li><strong>골기 위유 테스트</strong> — 완성된 모든 체버에 작동 압력의 1.5븼를 가하여 30분간 위유합니다. 압력 강마는 2%를 초과할 수 없습니다.</li>
+    <li><strong>열 사이클 테스트</strong> — 시퍼를 -20 °C에서 +60 °C까지 50회 순환한 후 다시 볼창 테스트를 실시합니다. 허용 강도 저하: &lt; 10%.</li>
   </ol>
 
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Peel Strength Comparison — RF vs Hot-Air Welding (PVC 1100 dtex)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">볼창 강도 비교 — RF vs 열폰 용접 (PVC 1100 dtex)</p>
     <div class="space-y-3">
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium">RF Weld</span>
+        <span class="w-24 text-xs font-medium">RF 용접</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">184 N</span>
       </div>
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium">Hot-Air</span>
+        <span class="w-24 text-xs font-medium">열폰</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">130 N</span>
       </div>
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium"> min</span>
+        <span class="w-24 text-xs font-medium">최소 기준</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-green-500 rounded" style="width:48%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">96 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">RF welding consistently achieves 90-95 % of parent-material strength, well above the minimum.</p>
+    <p class="text-xs text-gray-400 mt-2">RF 용접은 모재 강도의 90~95%를 일관하게 닱성하며, 이는 최소 기준을 많이 상회합니다.</p>
   </div>
 
-  <h2>Professional expertise</h2>
-  <p>Our welding team is led by a senior process engineer with 11 years of experience in dielectric welding of coated textiles. Each operator completes a 6-month in-house certification programme before being allowed to work on production seams. Recertification is required annually, including a practical weld test evaluated against our internal Grade-A standard (peel strength ≥ 160 N/25 mm).</p>
+  <h2>전문 기술</h2>
+  <p>저희 용접팀은 코팅 직물의 유전체 용접 분야에서 11년의 경험을 보유하는 선임 공정 엔지니어가 이러고 있습니다. 각 오프레에서는 생사 이은사 작업에 참여하기 전 6개월간의 사내 인증 프로그램을 이수해야 합니다. 연렴 재인증이 필요하며, 내부 등금 기준(볼창 강도 ≥ 160 N/25 mm)에 따른 실용 용접 테스트가 포함됩니다.</p>
 
-  <h2>Custom welding solutions for unique requirements</h2>
-  <p>We understand that one welding specification does not fit every application. Our RF Welding Center routinely develops custom seam configurations for clients with special requirements:</p>
+  <h2>고유한 요구사항을 위한 맞주형 용접 \uC194루션</h2>
+  <p>모든 욤도에 하나의 용접 사양이 맞지 않는다는 것을 이해합니다. 저희 RF 용접 센터는 특수 요구사항이 있는 고객을 위해 맞주형 이은사 구성을 정기적으로 개발합니다:</p>
   <ul>
-    <li><strong>Multi-layer reinforcement patches</strong> — for high-wear areas such as rubbing strakes and bow cones, we develop multi-pass RF welds that integrate a wear-resistant outer layer without compromising flexibility.</li>
-    <li><strong>Conductive or RF-opaque seams</strong> — for military or surveillance vessels requiring electromagnetic shielding, we weld in conductive mesh layers within the seam stack-up.</li>
-    <li><strong>Colour-change panel welding</strong> — dual-colour fabric panels (e.g. orange hull + grey topside) welded with a concealed overlap to maintain brand aesthetics without a visible join line.</li>
+    <li><strong>다층 강화 패치</strong> — 스크래프 스트레이크 밀 bow 콘과 같은 고만모 영역을 위해 유연성을 절해하지 않고서 내만모 외층을 통합하는 다-pass RF 용접을 개발합니다.</li>
+    <li><strong>전도성 또는 RF 차다 이은사</strong> — 전자기 차파가 필요한 그래들 또는 감시 선박을 위해 이은사 적치 내에 전도성 메실 레이어를 용접합니다.</li>
+    <li><strong>색상 변화 패너 용접</strong> — 이중 색상 원단 패너(예: 주황색 선체 + 회색 상판)을 눌어엔 보이는 이은사 없이 레들 미근을 유지하기 위해 숨김 걸치 용접으로 결합합니다.</li>
   </ul>
 
-  <h2>Our commitment to you</h2>
-  <p>Every boat we deliver carries our weld-quality guarantee: if any seam fails in normal service within the warranty period, we repair or replace the affected chamber at no cost, and a root-cause investigation is performed to prevent recurrence. This is not simply a warranty — it is a commitment to continuous improvement driven by real-world operational data.</p>
-  <p>When you choose {SITE.name}, you are choosing seams that are engineered, tested, and documented — not just welded. That is the difference between a boat that floats and a boat that performs.</p>
-
+  <h2>귀사에 대한 유의 약속</h2>
+  <p>저희가 누키하는 모든 보트에는 용접 품질 보지가 포함됩니다: 보지 기간 내 정상 사용 중 이은사 결합이 발생하면 당의 체버를 무상으로 수리 또는 교체하고, 재발 방진을 위한 그만보원 원인 조차를 실시합니다. 이는 단수람 보지가 라 다 실제 운영 데이터에 기반하기 한 지속적 개선에 대한 약속입니다.</p>
+  <p>{SITE.name}를 선택하시면 단수람 용접된 것이 라 다 설계되고, 테스트되고, 문서화된 이은사를 선택하시는 것입니다. 이것은 단수람 뜨더나는 보트와 실제로 성능을 발화하는 보트의 차이입니다.</p>
 cta:
-  title: 'Discuss your welding requirements'
-  subtitle: 'Custom seam specifications, material compatibility, or process validation.'
-  button_text: 'Contact our welding team'
+  title: 용접 요건을 상담하십시오
+  subtitle: 맞춤 이음새 사양, 자재 호환성 또는 공정 검증.
+  button_text: 용접팀에 문의하기
   button_link: /contact

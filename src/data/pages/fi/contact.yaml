@@ -17,7 +17,7 @@ contact_form:
       label: Etunimi
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: maata
       step: 1
     - name: lastName
       label: Sukunimi
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
-        - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: Valitse arvioitu tilavuus…
+        - value: näyte
+          label: Vain näytteet / prototyypit
+        - value: 5–10
+          label: 5–10 kappaleta (standardi MOQ)
         - value: 100-500
-          label: 100–500 units
+          label: 100–500 kappaletta
         - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 500+ kpl (määräalennus)
       step: 1
     - name: companyName
       label: Yrityksen nimi
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
-        - value: none
-          label: Standard product (no customization)
+          label: Valitse mukautustyyppi...
+        - value: Ei yhtään
+          label: Vakiotuote (ei räätälöintiä)
         - value: logo
-          label: Custom Logo / Branding only
-        - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: Vain mukautettu logo / brändäys
+        - value: Täysi
+          label: Täysi OEM (koko, väri, grafiikka, pakkaus)
+        - value: konsultaatio
+          label: En ole varma — tarvitsen konsultaatiota
       step: 1
     - name: address
       label: Osoite
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
+          label: Valitse tuoteryhmä...
+        - value: kaikki
+          label: Kaikki tuotteet / koko luettelo
         - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: SUP-laudat / Soutulaudat
+        - value: turvallisuus
+          label: Turvalaitteet / pelastusliivit
+        - value: lisävaruste
+          label: Lisävarusteet (pumput, aomat, laukut)
       step: 1
     - name: zip
       label: Postinumero

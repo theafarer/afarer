@@ -1,120 +1,116 @@
 meta:
-  title: 'Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}'
-  description: 'Independent quality verification for inflatable boats. Tensile testing, air-retention cycling, seam peel tests, and material certification. Contact our quality lab for third-party testing.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
+  description: インフレータブルボートのための独立品質検証。引張試験、空気保持サイクリング、シーム剥離試験、素材認証。サードパーティテストについては品質試験所までお問い合わせください。
+back_text: R&Dセンターへ戻る
+home_label: ホーム
 hero:
-  tagline: 'Lab 06'
-  title: 'Quality & Inspection Lab'
-  subtitle: 'Independent verification — every test passed before delivery'
-  image: 'https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp'
-  image_alt: 'Afarer quality inspection laboratory UV testing'
+  tagline: Lab 06
+  title: 品質＆検査ラボ
+  subtitle: 第三者検証 — 出荷前に全試験に合格
+  image: https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp
+  image_alt: afarer品質検査ラボ UV試験
+intro: 当社のワークショップを出荷するすべてのボートには、定められた品質検査および材料試験に合格したことが保証されています。品質・検査ラボは組織内の独立した機能です — 生産ではなく、取締役に直接報告 — これにより、商業的圧力が検査の壁を損なうことがありません。材料バッチまたは完成ボートが公開仕様を満たさない場合、ラボは不適合が解消されるまで出荷を停止する権限を持っています。
+content_html: |-
+  <h2>信頼と検証</h2>
+  <p>当社ラボは品質管理システムに準拠して運営されており、試験方法はISO、ASTM、EN規格に基づいています。全ての試験について詳細な記録を維持し、原材料受入から最終ボート納品まで完全なトレーサビリティチェーンを構築しています。</p>
 
-intro: 'Every boat that leaves our workshop carries the certification that it has passed a defined set of quality inspections and material tests. Our Quality & Inspection Lab is an independent function within the organisation — it reports directly to the managing director, not to production — ensuring that no commercial pressure can compromise the inspection gate. If a material batch or a completed boat does not meet the published specification, the lab has the authority to halt shipment until the non-conformance is resolved.'
-
-content_html: |
-  <h2>Trust, but verify</h2>
-  <p>The lab operates under a quality management system aligned with principles, and our test methods are based on ISO, ASTM, and EN standards wherever applicable. We maintain detailed records of every test performed, creating a complete traceability chain from raw material receipt to final boat delivery.</p>
-
-  <h2>Test equipment and capabilities</h2>
+  <h2>試験機器と能力</h2>
   <table>
-    <thead><tr><th>Equipment</th><th>Tests Performed</th><th>Standard / Method</th></tr></thead>
+    <thead><tr><th>機器</th><th>実施試験</th><th>規格／方法</th></tr></thead>
     <tbody>
-      <tr><td>Universal testing machine (50 kN)</td><td>Tensile strength (fabric), peel resistance (seams), tear propagation</td><td>ISO 1421, ISO 4674</td></tr>
-      <tr><td>Air-retention test rig (programmable)</td><td>1000-cycle inflation/deflation endurance, 30 min pressure-hold test</td><td>ISO 6185 (internal)</td></tr>
-      <tr><td>Seam-peel jig (motorised 180° peel)</td><td>Weld and glued-seam peel strength at 100 mm/min</td><td>ISO 1421 / ASTM D1876</td></tr>
-      <tr><td>Hydrostatic head tester</td><td>Water penetration resistance of fabric (0–1000 mbar)</td><td>ISO 811</td></tr>
-      <tr><td>Digital thickness gauge &amp; micrometre</td><td>Fabric thickness, tube wall thickness, adhesive-film thickness</td><td>ISO 2286-3</td></tr>
-      <tr><td>Environmental chamber</td><td>Temperature conditioning (-40 °C to +80 °C) for cold-crack and heat-ageing tests</td><td>ISO 188, ISO 4675</td></tr>
-      <tr><td>Colour spectrophotometer</td><td>Delta-E colour measurement after UV exposure</td><td>ISO 105-A05 / ASTM D2244</td></tr>
+      <tr><td>汎用試験機（50 kN）</td><td>引張強度（生地）、剥離抵抗（シーム）、裂傷伝播</td><td>ISO 1421、ISO 4674</td></tr>
+      <tr><td>空気保持試験装置（プログラム式）</td><td>1000サイクル膨張収縮耐久性、30分間加圧保持試験</td><td>ISO 6185（社内規格）</td></tr>
+      <tr><td>シーム剥離治具（自動180°剥離）</td><td>溶接着シーム剥離強度（100 mm/min）</td><td>ISO 1421 / ASTM D1876</td></tr>
+      <tr><td>静水圧試験機</td><td>生地の水分浸透抵抗性（0–1000 mbar）</td><td>ISO 811</td></tr>
+      <tr><td>デジタル厚度計＆マイクロメーター</td><td>生地厚さ、チューブ壁厚、接着フィルム厚さ</td><td>ISO 2286-3</td></tr>
+      <tr><td>恒温槽</td><td>クリークラック試験・熱劣化試験用温度調節（-40°C～+80°C）</td><td>ISO 188、ISO 4675</td></tr>
+      <tr><td>色分光光度計</td><td>UV曝露後のDelta-E色差測定</td><td>ISO 105-A05 / ASTM D2244</td></tr>
     </tbody>
   </table>
 
-  <h2>The inspection gates — from material to delivery</h2>
-  <p>Every boat follows a defined quality plan with mandatory inspection points. No boat can skip a gate; each gate must be signed off by a quality inspector before the next production stage begins.</p>
+  <h2>検査ゲート — 素材から納品まで</h2>
+  <p>全ボートは必須の検査ポイントを含む定義された品質計画に従います。ゲートをスキップすることは許されず、各ゲートは品質検査官の署名後に次の生産段階に進むことができます。</p>
 
   <div class="not-prose my-8">
     <div class="relative">
       <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-200 dark:bg-blue-800"></div>
       <div class="space-y-6 relative">
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 1</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">ゲート1</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">Incoming material inspection</p>
-            <p class="text-xs text-gray-500 mt-1">Fabric batch, adhesive batch, hardware — all checked against incoming specification before release to production.</p>
+            <p class="text-sm font-semibold">入荷素材検査</p>
+            <p class="text-xs text-gray-500 mt-1">生地ロット、接着剤ロット、ハードウェア — 全て入荷仕様に基づき検査後に生産に投入されます。</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 2</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">ゲート2</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">In-process weld inspection</p>
-            <p class="text-xs text-gray-500 mt-1">First-off weld coupon tested (peel + visual) at start of each production shift.</p>
+            <p class="text-sm font-semibold">工程内溶接検査</p>
+            <p class="text-xs text-gray-500 mt-1">各生産シフト開始時に初物溶接クーポンを試験（剥離＋外観検査）。</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 3</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">ゲート3</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">Chamber air test</p>
-            <p class="text-xs text-gray-500 mt-1">Each chamber pressurised to 1.5 x working pressure, held 30 min. Data logged per serial number.</p>
+            <p class="text-sm font-semibold">チャンバー空気試験</p>
+            <p class="text-xs text-gray-500 mt-1">各チャンバーを作動圧力の1.5倍に加圧し、30分間保持。ロット番号ごとにデータ記録。</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 4</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">ゲート4</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">Pre-delivery inspection</p>
-            <p class="text-xs text-gray-500 mt-1">Complete boat inspected: all fasteners torqued, systems functional, no cosmetic defects. 100-point checklist.</p>
+            <p class="text-sm font-semibold">出荷前検査</p>
+            <p class="text-xs text-gray-500 mt-1">完成ボートを全検査：全留め具のトルク確認、システム機能確認、外観欠陥なし。100項目チェックリスト。</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 5</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">ゲート5</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">Final certification</p>
-            <p class="text-xs text-gray-500 mt-1">Test reports compiled, inspection records reviewed, Certificate of Conformance issued.</p>
+            <p class="text-sm font-semibold">最終認証</p>
+            <p class="text-xs text-gray-500 mt-1">試験レポート作成、検査記録確認、適合証明書発行。</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <h2>Key quality metrics (2025 rolling average)</h2>
+  <h2>主要品質指標（2025年ローリング平均）</h2>
   <div class="not-prose my-8 grid grid-cols-2 md:grid-cols-4 gap-4">
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
       <span class="block text-2xl font-bold text-blue-600">99.7 %</span>
-      <span class="text-xs text-gray-500">First-pass yield (fabric batch)</span>
+      <span class="text-xs text-gray-500">初回合格率（生地ロット）</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
       <span class="block text-2xl font-bold text-blue-600">&lt; 0.2 %</span>
-      <span class="text-xs text-gray-500">Weld reject rate (linear metre)</span>
+      <span class="text-xs text-gray-500">溶接不良率（リニアメートル）</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
       <span class="block text-2xl font-bold text-blue-600">100 %</span>
-      <span class="text-xs text-gray-500">Chambers air-tested before assembly</span>
+      <span class="text-xs text-gray-500">組立前エアテスト実施率</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
       <span class="block text-2xl font-bold text-blue-600">ISO 6185</span>
-      <span class="text-xs text-gray-500">Design category compliance</span>
+      <span class="text-xs text-gray-500">設計カテゴリ適合</span>
     </div>
   </div>
 
-  <h2>Our quality team</h2>
-  <p>The lab is staffed by a quality manager (10 years in marine QA, ASQ Certified Quality Engineer), two quality inspectors (each with Level 2 NDT certification in visual testing), and a materials technician responsible for all physical testing. The team undergoes annual proficiency testing through an independent third-party provider to ensure that our test results remain accurate and reproducible.</p>
+  <h2>品質管理チーム</h2>
+  <p>ラボは、海事QAで10年の経験を持つASQ認定品質エンジニア1名、視覚試験でLevel 2 NDT認証を保持する品質検査官2名、全物理試験を担当する材料技術者1名で構成されています。チームは第三者提供者による年次能力試験を受け、試験結果の正確性と再現性を維持しています。</p>
 
-  <h2>Independent testing for clients</h2>
-  <p>Our Quality &amp; Inspection Lab is available for independent testing services. If you need to verify a fabric specification, validate a new adhesive system, or obtain a third-party test report for a procurement qualification, we can perform the tests to the applicable standard and issue a certified test report.</p>
-  <p>Examples of recent third-party testing work:</p>
+  <h2>お客様向け第三者試験</h2>
+  <p>当社の品質・検査ラボは第三者試験サービスも提供しています。生地仕様の検証、新規接着剤システムの検証、調達資格のための第三者試験レポートの取得など、適用規格に従って試験を実施し、認証付き試験レポートを発行します。</p>
+  <p>最近の第三者試験業務の例：</p>
   <ul>
-    <li>Peel-strength comparison of five competitive adhesive film products for a European military procurement programme.</li>
-    <li>Accelerated ageing study (UV + thermal cycling) for a new orange-pigmented PVC formulation, with regular interim measurements at 500 h intervals.</li>
-    <li>Air-retention validation of 50 prototype baffle valves for a new high-pressure tube design.</li>
+    <li>欧州軍調達プログラム向け、5種の競合接着フィルム製品の剥離強度比較。</li>
+    <li>新規オレンジ顔料PVC配合の加速老化試験（UV＋熱サイクル）、500時間ごとの定期中間測定。</li>
+    <li>新規高圧チューブ設計の試作バッフルバルブ50個の空気保持検証。</li>
   </ul>
 
-  <h2>Our commitment to you</h2>
-  <p>When you receive a {SITE.name} boat, you also receive its quality dossier — a compiled record of the test results that apply to your specific boat. Fabric batch certificate, weld peel tests, chamber air-test logs, and pre-delivery inspection checklist. Every number is traceable. Every inspector is identified. This is not just paperwork — it is our promise that what we delivered is what we specified.</p>
-  <p>If you ever have a quality concern, you can contact the lab directly — the contact details are printed on your certificate of conformance. We take every query seriously and commit to a formal investigation within 48 hours.</p>
-
+  <h2>お客様への約束</h2>
+  <p>{SITE.name}のボートを受け取ると、その品質ドッサルも同時に提供されます。お客様のボートに適用される試験結果をまとめた記録です。生地バッチ証明書、溶接剥離試験、チャンバーエアテストログ、出荷前検査チェックリスト。全ての数値はトレーサビリティが可能で、全ての検査官は特定されています。これは単なる書類ではなく、指定通りに納品したという私たちの約束です。</p>
+  <p>品質に関するご懸念がございましたら、ラボに直接お問い合わせください。連絡先は適合証明書に記載されています。全てのお問い合わせに真摯に対応し、48時間以内に正式な調査を実施することをお約束します。</p>
 cta:
-  title: 'Need independent testing or quality verification?'
-  subtitle: 'Our lab accepts third-party testing work — contact us with your requirements.'
-  button_text: 'Contact the quality lab'
+  title: 独立した試験や品質検証が必要ですか？
+  subtitle: 当社ラボは第三者試験業務も承ります。お気軽にご要望をお問い合わせください。
+  button_text: 品質ラボにお問い合わせ
   button_link: /contact

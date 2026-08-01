@@ -1,60 +1,56 @@
 hero:
-  tagline: Quality Control Laboratory
-  title: Testing Laboratory & Quality Assurance
-  subtitle: Independent quality lab with ISO 9001 processes —every unit tested before shipment
-
-intro: afarer operates a dedicated quality control laboratory that operates independently from production. Every batch of raw material and every finished boat passes through documented inspection protocols before release. Our QC team reports directly to management, ensuring impartial quality decisions.
-
+  tagline: 품질 관리 연구소
+  title: 시험 연구소 및 품질 보증
+  subtitle: ISO 9001 프로세스를 갖춘 독립 품질 실험실 — 모든 제품이 출하 전 테스트 완료
+intro: afarer는 생산과 독립적으로 운영되는 전담 품질 관리 실험실을 운영하고 있습니다. 모든 원자재 배치와 완제품 보트는 출하 전 문서화된 검사 프로토콜을 거칩니다. QC 팀은 경영진에게 직접 보고하여 공정한 품질 결정을 보장합니다.
 highlights:
   - value: 100%
-    label: Units pressure-tested
-    detail: Every chamber, every boat
+    label: 내압 시험 완료된 유닛
+    detail: 모든 챔버, 모든 보트
   - value: 48 h
-    label: Air retention test duration
-    detail: At 1.25× rated pressure
+    label: 공기 유지 시험 시간
+    detail: 1.25× 정격 압력 기준
   - value: '&lt;5%'
-    label: Max allowed pressure drop
-    detail: Over 24-hour hold period
+    label: 최대 허용 압력 강하
+    detail: 24시간 이상 보관 기간
   - value: AQL 2.5
-    label: Major defect threshold
-    detail: Per ISO 2859 sampling
-
+    label: 중대 결함 기준
+    detail: ISO 2859 샘플링 기준
 test_procedures:
-  - title: Raw Material Inspection
-    description: Every incoming batch of PVC, Hypalon, drop-stitch fabric, and hardware is tested before acceptance. Tensile strength (ASTM D751), tear resistance (ISO 4674), and UV resistance are verified. Non-conforming materials are quarantined and returned.
+  - title: 원자재 검사
+    description: PVC, Hypalon, 드롭스티치 원단, 하드웨어 등 모든 입고 배치는 승인 전에 테스트됩니다. 인장 강도(ASTM D751), 내파성(ISO 4674), 내UV성이 검증되며, 부적합 자재는 격리 후 반송됩니다.
     standards:
-      - ASTM D751 (tensile)
-      - ISO 4674 (tear)
+      - ASTM D751 (인장)
+      - ISO 4674 (인열)
       - ISO 4892 (UV)
-  - title: In-Process QC Checkpoints
-    description: Production operators perform self-inspection at each stage. QC auditors conduct random sampling throughout the shift. Weld peel tests are performed every 50 units. Dimensional checks happen every 20th panel.
+  - title: 공정 중 품질 관리 체크포인트
+    description: 생산 작업자는 각 공정 단계에서 자체 점검을 실시합니다. QC 감사관은 교대 근무 내내 무작위 샘플링을 수행합니다. 용접 박리 테스트는 50개 유닛마다, 치수 검사는 20번째 패널마다 실시됩니다.
     standards:
-      - ASTM D751 (peel)
-      - Internal 100-point checklist
-      - ISO 2859 sampling
-  - title: 48-Hour Air Retention Test
-    description: Every tube chamber is inflated to 125% of rated pressure and held for 48 hours. Pressure sensors log continuously with temperature compensation. Any chamber exceeding 5% pressure drop triggers automatic batch re-inspection.
+      - ASTM D751 (박리)
+      - 내부 100점 체크리스트
+      - ISO 2859 샘플링
+  - title: 48시간 공기 유지 테스트
+    description: 모든 튜브 챔버는 정격 압력의 125%로 팽창되어 48시간 동안 유지됩니다. 압력 센서는 온도 보상과 함께 연속적으로 기록됩니다. 압력 강하가 5%를 초과하는 챔버는 자동으로 배치 재검사를 받습니다.
     standards:
       - ISO 6185
       - CE 2013/53/EU
-  - title: Load & Balance Testing
-    description: Completed boats are tested at maximum rated capacity for stability, freeboard, and handling. Each vessel undergoes water testing before final inspection approval.
+  - title: 하중 및 균형 테스트
+    description: 완성된 보트는 최대 정격 용량에서 안정성, 갑판 높이 및 조작성을 시험합니다. 각 선박은 최종 검사 승인 전 수중 시험을 거칩니다.
     standards:
       - ISO 12217
       - CE 2013/53/EU
-
 equipment:
   - name: Universal Testing Machine (tensile)
-    spec: 5 kN, ASTM D751 compliant
+    spec: 5 kN, ASTM D751 규격 충족
   - name: Pressure Decay Tester
-    spec: Multi-channel, 0—0 psi, datalogging
+    spec: 다채널, 0—0 psi, 데이터 로깅
   - name: UV Weathering Chamber
-    spec: ISO 4892, 1,000 h cycles
+    spec: ISO 4892, 1,000시간 사이클
   - name: Thickness Gauge (digital)
-    spec: 0.01 mm resolution
+    spec: 0.01mm 해상도
   - name: Peel Tester (weld)
-    spec: Motorized, 50 N capacity
+    spec: 모터 구동, 50N 용량
   - name: Temperature Chamber
-    spec: -40 °C to +100 °C
+    spec: '-40°C ~ +100°C'
   - name: Leak Detection Tank
-    spec: 6 m × 2 m, illuminated
+    spec: 6m × 2m, 조명 시설 포함

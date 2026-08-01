@@ -14,39 +14,39 @@ stats:
     label: Σκάφη ετησίως
   - value: null
     label: Πιστοποιημένο ποιότητας
-intelligence_tagline: Factory Intelligence
-intelligence_title: Explore Our Manufacturing Capabilities
+intelligence_tagline: Βιομηχανική Νοημοσύνη Εργοστασίου
+intelligence_title: Ανακαλύψτε τις Κατασκευαστικές μας Δυνατότητες
 intelligence_cards:
-  - title: Production Capacity
+  - title: Παραγωγική Δυνατότητα
     icon: C
-    icon_bg: blue
+    icon_bg: μπλε
     desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
     metrics:
       - label: MOQ
-        value: "SUP: 5-10 / SUP: 2-5"
-      - label: Lead Time
+        value: 'SUP: 5-10 / SUP: 2-5'
+      - label: Χρόνος Παράδοσης
         value: 30-45 days
     link: /factory/capacity
-    link_label: Full capacity details →
-  - title: Quality Lab & Testing
+    link_label: Πλήρης λεπτομέρειες ικανότητας παραγωγής →
+  - title: Εργαστήριο Ποιότητας & Δοκιμών
     icon: Q
-    icon_bg: green
-    desc: "Ανεξάρτητο εργαστήριο QC με 4 στάδια δοκιμών: επιθεώρηση πρώτων υλών (εφελκυσμός, σχίσιμο, UV), 48ωρη συγκράτηση πίεσης στο 1,25x ονομαστικής πίεσης, δοκιμή αποκόλλησης ραφής και επαλήθευση φορτίου/ισορροπίας σε κάθε σκάφος."
+    icon_bg: πράσινο
+    desc: 'Ανεξάρτητο εργαστήριο QC με 4 στάδια δοκιμών: επιθεώρηση πρώτων υλών (εφελκυσμός, σχίσιμο, UV), 48ωρη συγκράτηση πίεσης στο 1,25x ονομαστικής πίεσης, δοκιμή αποκόλλησης ραφής και επαλήθευση φορτίου/ισορροπίας σε κάθε σκάφος.'
     metrics:
-      - label: Lab Equipment
+      - label: Εργαστηριακός Εξοπλισμός
         value: Συσκευή εφελκυσμού, θάλαμος θερμοκρασίας, δεξαμενή διαρροής
-      - label: Standards
+      - label: Πρότυπα
         value: ISO 9001, CE, AS 1799
     link: /factory/quality-lab
     link_label: Διαδικασίες εργαστηρίου & εξοπλισμός →
-  - title: OEM/ODM Capability
+  - title: Δυνατότητα OEM/ODM
     icon: O
-    icon_bg: purple
-    desc: "Υπηρεσίες OEM/ODM από άκρο σε άκρο: προσαρμοσμένος σχεδιασμός καλουπιού, συσκευασία ιδιωτικής ετικέτας, προσαρμοσμένα χρώματα σωλήνων, γραφικά καταστρώματος (ψηφιακή & μεταξοτυπία), επιλογή αναβάθμισης Hypalon και logistics απευθείας αποστολής."
+    icon_bg: μωβ
+    desc: 'Υπηρεσίες OEM/ODM από άκρο σε άκρο: προσαρμοσμένος σχεδιασμός καλουπιού, συσκευασία ιδιωτικής ετικέτας, προσαρμοσμένα χρώματα σωλήνων, γραφικά καταστρώματος (ψηφιακή & μεταξοτυπία), επιλογή αναβάθμισης Hypalon και logistics απευθείας αποστολής.'
     metrics:
-      - label: Certifications
+      - label: Πιστοποιήσεις
         value: ISO 9001, BSCI, CE, REACH
-      - label: Shipping
+      - label: Αποστολή
         value: FOB, CIF, DDP σε 50+ χώρες
     link: /factory/oem-capability
     link_label: Πλήρεις υπηρεσίες OEM →
@@ -95,13 +95,13 @@ qc_section:
   title: Διαδικασία Δοκιμών & Διασφάλισης Ποιότητας
   subtitle: Κάθε σκάφος υποβάλλεται σε υποχρεωτική δοκιμή πριν την αποστολή.
   steps:
-    - step: "1"
+    - step: '1'
       title: Επιθεώρηση Πρώτων Υλών
       desc: PVC, Hypalon και drop-stitch υφάσματα υποβάλλονται σε δοκιμή εφελκυσμού και UV αντοχής.
-    - step: "2"
+    - step: '2'
       title: 48ωρη Δοκιμή Συγκράτησης Αέρα
       desc: Κάθε θάλαμος φουσκώνεται στο 125% της ονομαστικής πίεσης και διατηρείται για 48 ώρες.
-    - step: "3"
+    - step: '3'
       title: Δοκιμή Φορτίου & Ισορροπίας
       desc: Τα έτοιμα σκάφη φορτώνονται στη μέγιστη χωρητικότητα και δοκιμάζονται.
 oem_section:
@@ -130,123 +130,125 @@ faq_section:
       a: 30—5 ημέρες από επιβεβαίωση PO.
     - q: Μπορείτε να αποστείλετε FOB Qingdao ή CIF;
       a: Ναι. Αποστέλλουμε FOB Qingdao, CIF και DDP.
-b2b_moq: "Τυπικό MOQ: 5—0 μονάδες ανά μοντέλο (SUP/καγιάκ). SUP MOQ: 2— μονάδες."
+b2b_moq: 'Τυπικό MOQ: 5—0 μονάδες ανά μοντέλο (SUP/καγιάκ). SUP MOQ: 2— μονάδες.'
 production_flow:
-  tagline: Production Flow
-  title: From Material to Finished Boat
-  subtitle: Every boat passes through 6 production stages with QC checkpoints at every step. No shortcuts, no skipped inspections.
+  tagline: Ροή Παραγωγής
+  title: Από το Υλικό στο Έτοιμο Σκάφος
+  subtitle: Κάθε πλοίο διέρχεται από 6 παραγωγικά στάδια με σημεία ελέγχου ποιότητας σε κάθε βήμα. Καμία συντομεύσεις, καμία αμελήσεις ελέγχων.
   stages:
-    - stage: "01"
-      title: Material Receiving & Incoming QC
-      description: All incoming materials are logged by batch/lot number in our ERP system. PVC fabric rolls, drop-stitch cores, valves, adhesives, and hardware are quarantined until QC sign-off.
-      qc_check: Tensile strength (ASTM D751), tear resistance (ISO 4674), thickness gauge, adhesive viscosity, visual defect scan
-      qc_threshold: 100% of batches tested. Reject if tensile < 90% of spec, tear < spec min, or any visual defect
-      responsibility: Incoming QC team (3 inspectors)
-    - stage: "02"
-      title: CNC Cutting & Material Prep
-      description: Computer-optimized nesting lays out panels on PVC stock to minimize waste. Automatic CNC cutting machines maintain 0.1 mm positional accuracy.
-      qc_check: Dimensional check against CAD DXF files, edge quality inspection, panel count verification
-      qc_threshold: Every 20th panel measured. Tolerance ±0.5 mm. Reject batch if >2% out of tolerance
-      responsibility: Cutting workshop lead
-    - stage: "03"
-      title: Welding & Drop-Stitch Bonding
-      description: Drop-stitch cores are bonded to outer PVC laminates using heat lamination. Tube chambers are RF-welded or hot-air welded. Rail bands are triple-layer fusion bonded.
-      qc_check: Peel test every 50 units (ASTM D751), weld width measurement, hot-air temperature log review, visual seam inspection under backlight
-      qc_threshold: Peel strength min 8 N/cm. Weld width tolerance ±1 mm. Any visible channeling = reject
-      responsibility: Welding QC (2 inspectors per shift)
-    - stage: "04"
-      title: Assembly & Rigging
-      description: "Boats move to final assembly where all components are mated: hull + tubes, valves installed, D-rings, handles, fin boxes, and carry bag fitting. Each unit follows a 100-point assembly checklist."
-      qc_check: 100-point checklist sign-off per unit, valve function test (10 open/close cycles), hardware torque verification, visual inspection
-      qc_threshold: "Zero-defect policy on safety-critical items (valves, D-rings, handles). Minor cosmetic: AQL 2.5 (ISO 2859)"
-      responsibility: Assembly team lead + line QC
-    - stage: "05"
-      title: Pressure Testing & Quality Hold
-      description: Every chamber is inflated to 1.25× rated pressure (typically 20—5 PSI) and held for 24—8 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.
-      qc_check: 24h pressure hold log, sensor calibration verified daily, temperature-compensated pressure reading, seam re-test after repair
-      qc_threshold: Max 5% pressure drop over 24h at stable temp. Any chamber exceeding this = 100% re-test of entire production batch
-      responsibility: Quality lab (independent of production, reports to management)
-    - stage: "06"
-      title: Final Inspection & Packing
-      description: Final visual and functional inspection. Surface defects, color consistency, label/BIN verification, packaging integrity, and accessory completeness. Units are vacuum-packed, boxed, and palletized for container loading.
-      qc_check: Full visual inspection, accessory checklist per SKU, packaging drop test (1 m, random sample), label/bar code scan verification
-      qc_threshold: AQL 2.5 for major defects, AQL 4.0 for minor. Zero tolerance on safety defects. 100% of units visually inspected
-      responsibility: Final QC team (4 inspectors) + Packing team lead
+    - stage: '01'
+      title: Παραλαβή Υλικών & Ποιοτικός Έλεγχος Εισερχομένων
+      description: Όλα τα εισερχόμενα υλικά καταγράφονται με αριθμό παρτίδας στο σύστημα ERP μας. Τα ρολά υφάσματος PVC, οι πυρήνες drop-stitch, οι βαλβίδες, τα συγκολλητικά και τα μεταλλικά εξαρτήματα παραμένουν σε καραντίνα έως ότου δοθεί η έγκριση από τον έλεγχο ποιότητας (QC).
+      qc_check: Αντοχή σε εφελκυσμό (ASTM D751), αντοχή σε σχίσιμο (ISO 4674), μέτρηση πάχους, ιξώδες κόλλας, οπτικός έλεγχος ελαττωμάτων
+      qc_threshold: Δοκιμάζεται το 100% των παρτίδων. Απόρριψη αν η αντοχή σε εφελκυσμό < 90% της προδιαγραφής, η αντοχή σε σχίσιμο < το ελάχιστο της προδιαγραφής ή υπάρχει οποιοδήποτε οπτικό ελάττωμα
+      responsibility: Ομάδα QC εισερχομένων (3 επιθεωρητές)
+    - stage: '02'
+      title: Κοπή CNC & Προετοιμασία Υλικών
+      description: Η βελτιστοποιημένη μέσω υπολογιστή διάταξη κοπής τοποθετεί τα πάνελ πάνω στο PVC ώστε να ελαχιστοποιείται η σπατάλη. Οι αυτόματες μηχανές κοπής CNC εξασφαλίζουν ακρίβεια θέσης 0.1 mm.
+      qc_check: Έλεγχος διαστάσεων έναντι αρχείων CAD DXF, επιθεώρηση ποιότητας ακμών, επαλήθευση αριθμού πάνελ
+      qc_threshold: Κάθε 20ό πάνελ ελέγχεται. Ανοχή ±0,5 mm. Απόρριψη παρτίδας εάν >2% εκτός ανοχής
+      responsibility: Χρόνος εκκίνησης εργαστηρίου κόψιμου
+    - stage: '03'
+      title: Συγκόλληση & Σύνδεση Drop-Stitch
+      description: Οι πυρήνες drop-stitch συγκολλώνται σε εξωτερικούς PVC λαμινάτ χρησιμοποιώντας θερμικό λαμινάρισμα. Οι θερμοκοιλίες σωλήνων είναι RF συγκολλημένες ή συγκολλημένες με ζεστό αέρα. Τα ράγα ενίσχυσης είναι συγκολλημένα με τριπλή στρώση συγκόλλησης.
+      qc_check: Δοκιμή αποκόλλησης κάθε 50 μονάδες (ASTM D751), μέτρηση πλάτους συγκόλλησης, έλεγχος καταγραφών θερμοκρασίας θερμού αέρα, οπτικός έλεγχος ραφής υπό οπίσθιο φωτισμό
+      qc_threshold: Αντοχή αποκόλλησης ελάχ. 8 N/cm. Ανοχή πλάτους συγκόλλησης ±1 mm. Οποιαδήποτε ορατή διαμόρφωση αυλακώσεων = απόρριψη
+      responsibility: Ποιοτικός έλεγχος συγκόλλησης (2 επιθεωρητές ανά βάρδια)
+    - stage: '04'
+      title: Συναρμολόγηση & Εξαρτισμός
+      description: 'Τα σκάφη προχωρούν στη τελική συναρμολόγηση, όπου συνδέονται όλα τα εξαρτήματα: γάστρα + σωλήνες, τοποθέτηση βαλβίδων, δακτύλιοι D, λαβές, υποδοχές πτερυγίων και τοποθέτηση τσάντας μεταφοράς. Κάθε μονάδα ακολουθεί λίστα ελέγχου συναρμολόγησης 100 σημείων.'
+      qc_check: Υπογραφή λίστας ελέγχου 100 σημείων ανά μονάδα, δοκιμή λειτουργίας βαλβίδων (10 κύκλοι ανοίγματος/κλεισίματος), έλεγχος ροπής εξαρτημάτων, οπτικός έλεγχος
+      qc_threshold: 'Πολιτική μηδενικών ελαττωμάτων για τα κρίσιμα για την ασφάλεια εξαρτήματα (βαλβίδες, δακτύλιοι D, λαβές). Μικρά αισθητικά ελαττώματα: AQL 2.5 (ISO 2859)'
+      responsibility: Επικεφαλής ομάδας συναρμολόγησης + έλεγχος ποιότητας γραμμής
+    - stage: '05'
+      title: Δοκιμές Πίεσης & Συγκράτηση Ποιότητας
+      description: Κάθε θάλαμος γεμίζεται με αέρα σε 1,25× κανονική πίεση (συνήθως 20—5 PSI) και κρατιέται για 24—8 ώρες. Οι αισθητήρες πίεσης καταγράφουν συνεχώς. Οι θάλαμοι που ξεπερνούν την 5% πτώση πίεσης απορρίπτονται και αποστέλλονται για επαναέλεγχο των νήματων.
+      qc_check: Αρχείο καταγραφής 24ωρης συγκράτησης πίεσης, καθημερινή επαλήθευση βαθμονόμησης αισθητήρων, ένδειξη πίεσης αντισταθμισμένη ως προς τη θερμοκρασία, επανέλεγχος ραφών μετά από επισκευή
+      qc_threshold: Μέγιστη πτώση πίεσης 5% σε 24 ώρες σε σταθερή θερμοκρασία. Οποιαδήποτε θερμοκοιλία που υπερβαίνει αυτό = 100% επαναδοκιμή ολόκληρης παρτίας παραγωγής
+      responsibility: Εργαστήριο ποιότητας (ανεξάρτητο από την παραγωγή, αναφέρεται στη διοίκηση)
+    - stage: '06'
+      title: Τελικός Έλεγχος & Συσκευασία
+      description: Τελικός οπτικός και λειτουργικός έλεγχος. Επιφανειακά ελαττώματα, χρωματική συνέπεια, επαλήθευση ετικέτας/BIN, ακεραιότητα συσκευασίας και πληρότητα αξεσουάρ. Οι μονάδες συσκευάζονται υπό κενό, τοποθετούνται σε κουτιά και παλετοποιούνται για φόρτωση σε εμπορευματοκιβώτια.
+      qc_check: Πλήρης οπτικός έλεγχος, λίστα ελέγχου αξεσουάρ ανά SKU, δοκιμή πτώσης συσκευασίας (1 m, τυχαίο δείγμα), επαλήθευση σάρωσης ετικέτας/γραμμικού κώδικα
+      qc_threshold: AQL 2.5 για σοβαρά ελαττώματα, AQL 4.0 για ήσσονος σημασίας. Μηδενική ανοχή σε ελαττώματα ασφαλείας. 100% των μονάδων ελέγχονται οπτικά
+      responsibility: Τελική ομάδα QC (4 ελεγκτές) + επικεφαλής ομάδας συσκευασίας
 workforce:
-  tagline: Our People
-  title: Workforce & Expertise
+  tagline: Οι Άνθρωποί μας
+  title: Εργατικό Δυναμικό & Τεχνογνωσία
   engineers: 25+
-  engineers_detail: Engineers across R&D, mold design, materials lab, and production engineering. Average 7+ years in inflatable manufacturing.
-  shift_pattern: 2 shifts/day (07:00—5:30, 15:30—0:00). Optional night shift for urgent orders.
-  training: Monthly QC training, quarterly safety drills, annual skills assessment. New hires complete 40-hour induction before working on production line.
+  engineers_detail: Μηχανικοί σε R&D, σχεδιασμό μοτίου, εργαστήριο υλικών και μηχανική παραγωγή. Μέση εμπειρία 7+ χρόνια στην κατασκευή στεγανών.
+  shift_pattern: 2 βάρδιες/ημέρα (07:00—5:30, 15:30—0:00). Προαιρετική νυχτερινή βάρδια για επείγουσες παραγγελίες.
+  training: Μηνιαίος εκπαιδευτικός έλεγχος ποιότητας, τριμηνίες ασφαλειακές ασκήσεις, ετήσιος αξιολογητικός έλεγχος δεξιοτήτων. Οι νέοι εκλεκτοί ολοκληρώνουν 40ώρη εισαγωγική εκπαίδευση πριν ξεκινήσουν στη γραμμή παραγωγής.
   departments:
     - name: R&D & Engineering
       count: 25+
-      role: Product design, mold engineering, materials lab
+      role: Σχεδιασμός προϊόντος, μηχανική καλουπιών, εργαστήριο υλικών
     - name: Cutting & Material Prep
       count: 15
-      role: CNC cutting, panel preparation, material handling
+      role: Κοπή CNC, προετοιμασία πάνελ, διαχείριση υλικών
     - name: Welding & Lamination
       count: 40
-      role: RF welding, hot-air welding, drop-stitch bonding
+      role: Συγκόλληση RF, συγκόλληση θερμού αέρα, συγκόλληση drop stitch
     - name: SUP Core Bonding
       count: 30
-      role: Drop-stitch lamination, heat bonding, rail band fusion
+      role: Επικόλληση drop-stitch, θερμοσυγκόλληση, συγκόλληση λωρίδων πλευρών (rail band)
     - name: Assembly & Rigging
       count: 35
-      role: Final assembly, hardware installation, systems check
+      role: Τελική συναρμολόγηση, εγκατάσταση εξαρτημάτων, έλεγχος συστημάτων
     - name: Quality Control
       count: 12
-      role: Incoming QC, in-process QC, final inspection, lab testing
+      role: QC εισερχομένων, QC στη ροή παραγωγής, τελικός έλεγχος, εργαστηριακές δοκιμές
     - name: Logistics & Packing
       count: 20
-      role: Packaging, container loading, export documentation
+      role: Συσκευασία, φόρτωση container, τεκμηρίωση εξαγωγών
     - name: Management & Admin
       count: 15
-      role: Sales, procurement, HR, finance, compliance
+      role: Πωλήσεις, προμήθειες, ανθρώπινο δυναμικό, οικονομικά, συμμόρφωση
 material_traceability:
-  tagline: Traceability
-  title: Material Tracking & Batch Control
-  description: Every batch of raw material is assigned a unique lot number in our ERP system. From arrival through production to the finished product, each boat's bill of materials links back to the original supplier batch. This enables full upstream traceability for any quality or compliance inquiry.
-  system: Custom ERP (Qingdao Vatrad Group internal system) + physical batch tags on each work order
-  coverage: 100% of production materials —PVC, Hypalon, drop-stitch fabric, adhesives, valves, hardware, packaging
-  records_retained: 10 years (per CE 2013/53/EU requirement)
+  tagline: Ιχνηλασιμότητα
+  title: Παρακολούθηση Υλικών & Έλεγχος Σύμπακτου
+  description: >-
+    Κάθε παρτίδα πρώτης ύλης λαμβάνει έναν μοναδικό αριθμό παρτίδας στο σύστημα ERP μας. Από την παραλαβή, μέσω της παραγωγής έως το τελικό προϊόν, ο κατάλογος υλικών κάθε σκάφους συνδέεται με την αρχική παρτίδα του προμηθευτή. Αυτό εξασφαλίζει πλήρη ιχνηλασιμότητα προς τα πάνω για κάθε ζήτημα
+    ποιότητας ή συμμόρφωσης.
+  system: Προσαρμοσμένη ERP (εσωτερικό σύστημα Qingdao Vatrad Group) + φυσικά batch tags σε κάθε παραγγελία εργασίας
+  coverage: 100% των υλικών παραγωγής —PVC, Hypalon, ύφασμα drop-stitch, κόλλες, βαλβίδες, εξαρτήματα, συσκευασία
+  records_retained: 10 χρόνια (σύμφωνα με την απαίτηση CE 2013/53/ΕΕ)
   suppliers:
-    - material: Marine-grade PVC
-      source: Chinese and Korean suppliers
+    - material: PVC ναυτιλιακής ποιότητας
+      source: Κινέζοι και Κορεάτες προμηθευτές
       certified: ISO 9001, REACH, RoHS
     - material: Hypalon (CSM)
-      source: Japanese supplier
+      source: Ιάπωνας προμηθευτής
       certified: ISO 9001, REACH
-    - material: Drop-stitch fabric
-      source: In-house weaving + external partner
-      certified: Internal QC + supplier ISO 9001
-    - material: Valves & Hardware
-      source: Chinese OEM suppliers
-      certified: ISO 9001, material certs per batch
+    - material: Ύφασμα drop-stitch
+      source: Εσωτερικό πλεκτικό + εξωτερικός εταίρος
+      certified: Εσωτερικός έλεγχος ποιότητας + ISO 9001 προμηθευτή
+    - material: Βαλβίδες & Εξαρτήματα
+      source: Κινέζοι προμηθευτές OEM
+      certified: ISO 9001, πιστοποιητικά υλικών ανά παρτίδα
 qc_dashboard:
-  tagline: QC by the Numbers
-  title: Quality Control Metrics
-  subtitle: Real pass/fail data from our production line. Our quality lab operates independently from production and reports directly to management.
+  tagline: Ποιοτικός Έλεγχος σε Αριθμούς
+  title: Μετρικές Ποιοτικού Ελέγχου
+  subtitle: Πραγματικά δεδομένα επιτυχίας/αποτυχίας από τη γραμμή παραγωγής μας. Το εργαστήριο ποιότητάς μας λειτουργεί ανεξάρτητα από την παραγωγή και αναφέρεται απευθείας στη διοίκηση.
   stats:
     - value: 100%
-      label: Units pressure-tested
-      detail: Every boat, every chamber, every batch
+      label: Μονάδες που υποβλήθηκαν σε δοκιμή πίεσης
+      detail: Κάθε σκάφος, κάθε θάλαμος, κάθε παρτίδα
     - value: <5%
-      label: Max allowable pressure drop
-      detail: Over 24h at 1.25× rated pressure
+      label: Μέγιστη επιτρεπόμενη πτώση πίεσης
+      detail: Πάνω από 24 ώρες σε 1,25× την ονομαστική πίεση
     - value: AQL 2.5
-      label: Major defect threshold
-      detail: Per ISO 2859 sampling standard
+      label: Όριο σοβαρών ελαττωμάτων
+      detail: Σύμφωνα με το πρότυπο δειγματοληψίας ISO 2859
     - value: 24—8h
-      label: Pressure hold duration
-      detail: Depending on product category
+      label: Διάρκεια συγκράτησης πίεσης
+      detail: Ανάλογα με την κατηγορία προϊόντος
     - value: 1.25×
-      label: Test pressure vs rated
-      detail: Safety margin on every chamber
+      label: Πίεση δοκιμής έναντι ονομαστικής πίεσης
+      detail: Περιθώριο ασφαλείας σε κάθε θάλαμο
     - value: 0%
-      label: Tolerance on safety defects
-      detail: Valves, D-rings, seams, buoyancy
+      label: Ανοχή σε ελαττώματα ασφαλείας
+      detail: Βαλβίδες, δακτύλιοι D, ραφές, άνωση
 process_cta:
   title: Δείτε τη διαδικασία κατασκευής μας
   desc: Ακολουθήστε ένα σκάφος σε κάθε στάδιο παραγωγής.

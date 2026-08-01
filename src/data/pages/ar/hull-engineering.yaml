@@ -1,85 +1,102 @@
 meta:
-  title: 'Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}'
-  description: 'Explore our Hull Engineering Studio for CAD design, finite element analysis (FEA), and custom HDPE/aluminium/fibre glass hull development. Contact our engineering team to start your next RIB project.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: استوديو هندسة هياكل القوارب — CAD وFEA وتصميم هياكل RIB المخصصة | {SITE}
+  description: 'استوديو هندسة الهيكل: تصميم CAD، وتحليل العناصر المحدودة (FEA)، وتطوير قوالب مخصصة من HDPE/الألمنيوم/الألياف الزجاجية. تواصل مع فريق الهندسة لبدء مشروع RIB القادم.'
+back_text: العودة إلى مركز البحث والتطوير
+home_label: الرئيسية
 hero:
-  tagline: 'Lab 02'
-  title: 'Hull Engineering Studio'
-  subtitle: 'Digital simulation, structural intelligence, custom hull design'
-  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
-  image_alt: 'Afarer hull engineering CAD design workstation'
+  tagline: المختبر 02
+  title: استوديو هندسة الهياكل
+  subtitle: محاكاة رقمية، وذكاء إنشائي، وتصميم هياكل مخصصة
+  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
+  image_alt: محطة عمل التصميم الهندسي CAD لهياكل afarer
+intro: >-
+  الهيكل هو العمود الفقري لأي قارب RIB أو قارب قابل للنفخ. يجب أن يكون خفيفًا بما يكفي للانزلاق على الماء بكفاءة، وقويًا بما يكفي لامتصاص أحمال الصدمات، ومستقر الأبعاد عبر نطاق واسع من درجات الحرارة. في {SITE.name}، يجمع استوديو هندسة الهياكل لدينا بين النمذجة المتقدمة باستخدام CAD، وتحليل العناصر
+  المحدودة (FEA)، وعقود من الخبرة العملية في الهندسة البحرية لتقديم هياكل محسّنة لمهمتها المقصودة — لا أشكال عامة مقتبسة من كتالوج.
+content_html: >
+  <h2>حيث تلتقي القوة بالديناميكا المائية</h2>
 
-intro: 'The hull is the backbone of any RIB or inflatable boat. It must be light enough to plane efficiently, strong enough to absorb impact loads, and dimensionally stable across a wide temperature range. At {SITE.name}, our Hull Engineering Studio combines advanced CAD modelling, finite element analysis (FEA), and decades of practical naval-architecture experience to deliver hulls that are optimised for their intended mission — not generic shapes adapted from a catalogue.'
+  <p>نعمل مع ثلاث مواد أساسية للهياكل — HDPE المُشكَّل بالقولبة الدورانية، والألمنيوم الملحوم بدرجة بحرية، والألياف الزجاجية المرصوفة يدويًا — ونمتلك القدرة الهندسية لتصميم كل منها ومحاكاته والتحقق منه داخليًا.</p>
 
-content_html: |
-  <h2>Where strength meets hydrodynamics</h2>
-  <p>We work with three primary hull materials — rotationally moulded HDPE, welded marine-grade aluminium, and hand-laid fibreglass — and have the engineering capability to design, simulate, and validate each one in-house.</p>
 
-  <h2>Design tools and standards</h2>
-  <p>Our digital engineering environment includes:</p>
+  <h2>أدوات التصميم والمعايير</h2>
+
+  <p>تشمل بيئتنا الهندسية الرقمية:</p>
+
   <table>
-    <thead><tr><th>Capability</th><th>Software / Tool</th><th>Application</th></tr></thead>
+    <thead><tr><th>القدرة</th><th>البرنامج / الأداة</th><th>الاستخدام</th></tr></thead>
     <tbody>
-      <tr><td>3D parametric modelling</td><td>SolidWorks Professional</td><td>Hull surface, stringer system, engine bracket, deck layout</td></tr>
-      <tr><td>Finite element analysis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Stress mapping, modal analysis, crash/impact simulation</td></tr>
-      <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamic drag prediction, trim optimisation</td></tr>
-      <tr><td>Laminate engineering</td><td>ESAComp / CADEC</td><td>Fibreglass layer stacking, core selection, weight estimation</td></tr>
-      <tr><td>Mould flow simulation</td><td>Moldex3D</td><td>Rotomoulding wall-thickness prediction</td></tr>
+      <tr><td>النمذجة البارامترية ثلاثية الأبعاد</td><td>SolidWorks Professional</td><td>سطح الهيكل، ونظام السترنجرز، وحامل المحرك، وتخطيط السطح</td></tr>
+      <tr><td>تحليل العناصر المحدودة</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>خرائط الإجهاد، والتحليل الاهتزازي، ومحاكاة الارتطام والصدمات</td></tr>
+      <tr><td>ديناميكا الموائع الحاسوبية</td><td>Ansys Fluent / Star-CCM+</td><td>التنبؤ بالمقاومة الهيدروديناميكية، وتحسين زاوية الارتفاع (الترم)</td></tr>
+      <tr><td>هندسة الطبقات المركبة</td><td>ESAComp / CADEC</td><td>ترتيب طبقات الألياف الزجاجية، واختيار النواة، وتقدير الوزن</td></tr>
+      <tr><td>محاكاة تدفق القالب</td><td>Moldex3D</td><td>التنبؤ بسمك الجدار في القولبة الدورانية</td></tr>
     </tbody>
   </table>
 
-  <h2>Our engineering workflow</h2>
-  <p>Every hull design, whether it is a standard model or a fully custom project, follows a rigorous five-stage process:</p>
+
+  <h2>منهجية عملنا الهندسية</h2>
+
+  <p>يخضع كل تصميم هيكل، سواء كان موديلًا قياسيًا أو مشروعًا مخصصًا بالكامل، لعملية صارمة من خمس مراحل:</p>
+
   <ol>
-    <li><strong>Concept &amp; requirements gathering</strong> — We meet with you to define payload, speed envelope, sea-state capability, towing requirements, and any special mission equipment (deck hatches, console positions, fuel-tank integration).</li>
-    <li><strong>3D surfacing &amp; hydrostatic calculation</strong> — The hull form is modelled in SolidWorks and checked for hydrostatic stability (GM, righting arm) using built-in analysis tools.</li>
-    <li><strong>Structural FEA</strong> — Load cases are defined: static (crew + gear), dynamic (planing impacts at 5g), and slamming (dropping from a wave crest at 3 m/s). Stress contours are reviewed; safety factor ≥ 2.5 is mandatory.</li>
-    <li><strong>CFD drag optimisation</strong> — The hull is simulated at three loading conditions and five speeds. Wetted surface area, trim angle, and residual resistance are iteratively reduced.</li>
-    <li><strong>Design review &amp; release</strong> — The complete engineering package (3D model, FEA report, CFD report, weight estimate, ply book) is reviewed by our senior naval architect before release to the prototype workshop.</li>
+    <li><strong>المفهوم وجمع المتطلبات</strong> — نلتقي بك لتحديد الحمولة، ونطاق السرعة، والقدرة على تحمل حالات البحر، ومتطلبات القطر، وأي معدات خاصة بالمهام (فتحات السطح، ومواضع لوحة التحكم، ودمج خزان الوقود).</li>
+    <li><strong>التسطيح ثلاثي الأبعاد والحسابات الهيدروستاتيكية</strong> — تُنمذج هيكلية القارب في SolidWorks وتُفحص من حيث الاستقرار الهيدروستاتيكي (GM، وذراع التقويم) باستخدام أدوات التحليل المدمجة.</li>
+    <li><strong>التحليل الإنشائي بالعناصر المحدودة (FEA)</strong> — تُحدد حالات الأحمال: الساكنة (الطاقم + المعدات)، والديناميكية (ارتطامات الانزلاق المائي عند 5g)، والارتطام الموجي (السقوط من قمة الموجة بسرعة 3 م/ث). وتُراجع خطوط الإجهاد؛ مع اشتراط عامل أمان لا يقل عن 2.5.</li>
+    <li><strong>تحسين المقاومة باستخدام CFD</strong> — تُحاكى الهيكلية في ثلاث حالات تحميل وبخمس سرعات، مع تقليل مساحة السطح المبتل وزاوية الارتفاع والمقاومة المتبقية بشكل تكراري.</li>
+    <li><strong>مراجعة التصميم والإصدار</strong> — تُراجع الحزمة الهندسية الكاملة (النموذج ثلاثي الأبعاد، وتقرير FEA، وتقرير CFD، وتقدير الوزن، ودفتر الطبقات) من قبل مهندسنا البحري الأول قبل إصدارها إلى ورشة النماذج الأولية.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Stress Distribution — RIB 450 Patrol Hull (Aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">توزيع الإجهاد FEA — هيكل دوريات RIB 450 (ألمنيوم 5083)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
-        <span class="text-gray-500">Safety factor at max payload</span>
+        <span class="text-gray-500">عامل الأمان عند أقصى حمولة</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
-        <span class="text-gray-500">Drag reduction vs previous generation</span>
+        <span class="text-gray-500">تقليل المقاومة مقارنة بالجيل السابق</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
-        <span class="text-gray-500">Peak slamming pressure (design limit)</span>
+        <span class="text-gray-500">ذروة ضغط الارتطام الموجي (حد التصميم)</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
-        <span class="text-gray-500">Cumulative FEA runtime in 2025</span>
+        <span class="text-gray-500">إجمالي وقت تشغيل FEA في 2025</span>
       </div>
     </div>
   </div>
 
-  <h2>Customisation: your hull, your rules</h2>
-  <p>No two operators have identical requirements. A harbour-patrol RIB needs a shallow-V hull for stability at low speed; a fast-interception craft needs a deep-V with spray rails; a dive-support boat needs a wide beam and a low transom. We do not force your application into a pre-existing hull shape. We design from your specification upward.</p>
-  <p>Examples of recent custom hull engineering projects:</p>
+
+  <h2>التخصيص: هيكلك، وقواعدك</h2>
+
+  <p>لا يوجد مشغّلان بمتطلبات متطابقة. فقارب RIB لدوريات الميناء يحتاج هيكلًا بقاع V ضحل للثبات عند السرعات المنخفضة؛ وقارب الاعتراض السريع يحتاج قاع V عميقًا مع حواجز رش؛ وقارب دعم الغوص يحتاج عرضًا كبيرًا ولوح مؤخرة منخفضًا. لا نفرض على تطبيقك شكل هيكل جاهزًا مسبقًا، بل نصمم انطلاقًا من
+  مواصفاتك.</p>
+
+  <p>أمثلة على مشاريع هندسة الهياكل المخصصة الحديثة:</p>
+
   <ul>
-    <li>A stretched 6.8 m HDPE hull for a Caribbean tour operator, with a reinforced bow for beach landings (+15 % bottom thickness).</li>
-    <li>A lightweight aluminium 7.2 m RIB for a coast guard, with integrated fuel-tank baffles and equipment-locker stiffeners.</li>
-    <li>A fibreglass 5.5 m dive boat with a cut-down transom and twin battery boxes, designed for easy snorkeller reboarding.</li>
+    <li>هيكل HDPE ممتد بطول 6.8 م لمشغّل جولات سياحية في الكاريبي، بمقدمة معززة لعمليات الهبوط على الشواطئ (+15 % سماكة القاع).</li>
+    <li>قارب RIB خفيف الوزن من الألمنيوم بطول 7.2 م لخفر السواحل، مع حواجز خزان وقود مدمجة ومقويات لخزائن المعدات.</li>
+    <li>قارب غوص من الألياف الزجاجية بطول 5.5 م بلوح مؤخرة منخفض وصندوقَي بطارية، مصمم لتسهيل صعود السباحين المزودين بأنبوب تنفس.</li>
   </ul>
 
-  <h2>Our engineers</h2>
-  <p>The studio is led by a senior naval architect with 14 years of experience in high-speed craft design, supported by two mechanical engineers specialised in FEA and CFD. All three hold advanced degrees in marine engineering or naval architecture from internationally recognised universities. The team publishes regularly in industry journals and presents at conferences such as the International Conference on High-Performance Marine Vehicles.</p>
 
-  <h2>Partner with us on your next hull</h2>
-  <p>From the first concept sketch to the final stress report, our Hull Engineering Studio is your partner in creating a boat that is not just built — but engineered. We invest the simulation hours upfront so that every weld, every laminate layer, and every curve of the hull is there for a reason.</p>
-  <p>Whether you need a minor modification to an existing model or a completely clean-sheet design, we are ready to discuss your requirements.</p>
+  <h2>مهندسونا</h2>
 
+  <p>يقود الاستوديو مهندس بحري أول بخبرة 14 عامًا في تصميم القوارب عالية السرعة، ويدعمه مهندسان ميكانيكيان متخصصان في FEA وCFD. ويحمل الثلاثة شهادات عليا في الهندسة البحرية أو العمارة البحرية من جامعات معترف بها دوليًا. وينشر الفريق بانتظام في المجلات الصناعية ويشارك في مؤتمرات مثل المؤتمر الدولي
+  للقوارب البحرية عالية الأداء.</p>
+
+
+  <h2>كن شريكًا لنا في هيكلك القادم</h2>
+
+  <p>من أول رسم تخطيطي للمفهوم إلى تقرير الإجهاد النهائي، يظل استوديو هندسة الهياكل لدينا شريكك في صناعة قارب ليس مجرد بناء — بل هندسة. نستثمر ساعات المحاكاة مقدمًا بحيث تكون كل لحامة وكل طبقة مركبة وكل منحنى في الهيكل موجودًا لهدف محدد.</p>
+
+  <p>سواء كنت بحاجة إلى تعديل بسيط على موديل حالي أو تصميم جديد كليًا من الصفر، فنحن جاهزون لمناقشة متطلباتك.</p>
 cta:
-  title: 'Start your hull design consultation'
-  subtitle: 'Tell us about your mission profile and we will propose an engineering path.'
-  button_text: 'Contact our engineering team'
+  title: ابدأ استشارتك لتصميم الهيكل
+  subtitle: أخبرنا بطبيعة مهمتك وسنقترح عليك مسارًا هندسيًا.
+  button_text: تواصل مع فريق الهندسة لدينا
   button_link: /contact

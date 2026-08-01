@@ -1,85 +1,103 @@
 meta:
-  title: 'Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}'
-  description: 'Explore our Hull Engineering Studio for CAD design, finite element analysis (FEA), and custom HDPE/aluminium/fibre glass hull development. Contact our engineering team to start your next RIB project.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Στούντιο Μηχανικής Γάστρας — CAD, FEA & Σχεδιασμός Προσαρμοσμένων Γαστρών RIB | {SITE}
+  description: Εξερευνήστε το Hull Engineering Studio μας για σχεδιασμό CAD, ανάλυση πεπερασμένων στοιχείων (FEA) και ανάπτυξη προσαρμοσμένων γαστρών από HDPE/αλουμίνιο/υαλοβάμβακα. Επικοινωνήστε με τη μηχανική μας ομάδα για να ξεκινήσετε το επόμενο έργο RIB σας.
+back_text: Επιστροφή στο Κέντρο Ε&Α
+home_label: Αρχική
 hero:
-  tagline: 'Lab 02'
-  title: 'Hull Engineering Studio'
-  subtitle: 'Digital simulation, structural intelligence, custom hull design'
-  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
-  image_alt: 'Afarer hull engineering CAD design workstation'
+  tagline: Εργαστήριο 02
+  title: Στούντιο Μηχανικής Γάστρας
+  subtitle: Ψηφιακή περιγραφή, δομική νοημοσύνη, προσαρμοσμένος σχεδιασμός κοιλότητας
+  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
+  image_alt: Σταθμός εργασίας σχεδιασμού CAD για τη μηχανική γάστρας της Afarer
+intro: >-
+  Η γάστρα αποτελεί τη ραχοκοκαλιά κάθε σκάφους RIB ή φουσκωτού σκάφους. Πρέπει να είναι αρκετά ελαφριά ώστε να ολισθαίνει αποτελεσματικά, αρκετά ανθεκτική ώστε να απορροφά τα φορτία κρούσης και διαστασιακά σταθερή σε ευρύ φάσμα θερμοκρασιών. Στην {SITE.name}, το Στούντιο Μηχανικής Γαστρών συνδυάζει
+  προηγμένη μοντελοποίηση CAD, ανάλυση πεπερασμένων στοιχείων (FEA) και δεκαετίες πρακτικής εμπειρίας στη ναυπηγική αρχιτεκτονική για να παραδίδει γάστρες βελτιστοποιημένες για την εκάστοτε αποστολή — όχι γενικά σχήματα προσαρμοσμένα από κατάλογο.
+content_html: >-
+  <h2>Όπου η αντοχή συναντά την υδροδυναμική</h2>
 
-intro: 'The hull is the backbone of any RIB or inflatable boat. It must be light enough to plane efficiently, strong enough to absorb impact loads, and dimensionally stable across a wide temperature range. At {SITE.name}, our Hull Engineering Studio combines advanced CAD modelling, finite element analysis (FEA), and decades of practical naval-architecture experience to deliver hulls that are optimised for their intended mission — not generic shapes adapted from a catalogue.'
+  <p>Εργαζόμαστε με τρία κύρια υλικά γαστρών — HDPE περιστροφικής χύτευσης, συγκολλημένο αλουμίνιο ναυτιλιακής ποιότητας και υαλοβάμβακα χειροποίητης στρώσης — και διαθέτουμε τη μηχανολογική ικανότητα να σχεδιάζουμε, να προσομοιώνουμε και να επικυρώνουμε το καθένα εσωτερικά.</p>
 
-content_html: |
-  <h2>Where strength meets hydrodynamics</h2>
-  <p>We work with three primary hull materials — rotationally moulded HDPE, welded marine-grade aluminium, and hand-laid fibreglass — and have the engineering capability to design, simulate, and validate each one in-house.</p>
 
-  <h2>Design tools and standards</h2>
-  <p>Our digital engineering environment includes:</p>
+  <h2>Εργαλεία σχεδιασμού και πρότυπα</h2>
+
+  <p>Το ψηφιακό μηχανολογικό μας περιβάλλον περιλαμβάνει:</p>
+
   <table>
-    <thead><tr><th>Capability</th><th>Software / Tool</th><th>Application</th></tr></thead>
+    <thead><tr><th>Δυνατότητα</th><th>Λογισμικό / Εργαλείο</th><th>Εφαρμογή</th></tr></thead>
     <tbody>
-      <tr><td>3D parametric modelling</td><td>SolidWorks Professional</td><td>Hull surface, stringer system, engine bracket, deck layout</td></tr>
-      <tr><td>Finite element analysis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Stress mapping, modal analysis, crash/impact simulation</td></tr>
-      <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamic drag prediction, trim optimisation</td></tr>
-      <tr><td>Laminate engineering</td><td>ESAComp / CADEC</td><td>Fibreglass layer stacking, core selection, weight estimation</td></tr>
-      <tr><td>Mould flow simulation</td><td>Moldex3D</td><td>Rotomoulding wall-thickness prediction</td></tr>
+      <tr><td>Παραμετρική μοντελοποίηση 3D</td><td>SolidWorks Professional</td><td>Επιφάνεια γάστρας, σύστημα ενισχυτικών, στήριγμα κινητήρα, διάταξη καταστρώματος</td></tr>
+      <tr><td>Ανάλυση πεπερασμένων στοιχείων</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Χαρτογράφηση τάσεων, ιδιομορφική ανάλυση, προσομοίωση σύγκρουσης/κρούσης</td></tr>
+      <tr><td>Υπολογιστική ρευστοδυναμική</td><td>Ansys Fluent / Star-CCM+</td><td>Πρόβλεψη υδροδυναμικής αντίστασης, βελτιστοποίηση διαγωγής</td></tr>
+      <tr><td>Μηχανική επιστρώσεων (laminate)</td><td>ESAComp / CADEC</td><td>Διάταξη στρώσεων υαλοβάμβακα, επιλογή πυρήνα, εκτίμηση βάρους</td></tr>
+      <tr><td>Προσομοίωση ροής στο καλούπι</td><td>Moldex3D</td><td>Πρόβλεψη πάχους τοιχώματος περιστροφικής χύτευσης</td></tr>
     </tbody>
   </table>
 
-  <h2>Our engineering workflow</h2>
-  <p>Every hull design, whether it is a standard model or a fully custom project, follows a rigorous five-stage process:</p>
+
+  <h2>Η μηχανολογική μας διαδικασία εργασίας</h2>
+
+  <p>Κάθε σχεδιασμός γάστρας, είτε πρόκειται για τυπικό μοντέλο είτε για πλήρως προσαρμοσμένο έργο, ακολουθεί μια αυστηρή διαδικασία πέντε σταδίων:</p>
+
   <ol>
-    <li><strong>Concept &amp; requirements gathering</strong> — We meet with you to define payload, speed envelope, sea-state capability, towing requirements, and any special mission equipment (deck hatches, console positions, fuel-tank integration).</li>
-    <li><strong>3D surfacing &amp; hydrostatic calculation</strong> — The hull form is modelled in SolidWorks and checked for hydrostatic stability (GM, righting arm) using built-in analysis tools.</li>
-    <li><strong>Structural FEA</strong> — Load cases are defined: static (crew + gear), dynamic (planing impacts at 5g), and slamming (dropping from a wave crest at 3 m/s). Stress contours are reviewed; safety factor ≥ 2.5 is mandatory.</li>
-    <li><strong>CFD drag optimisation</strong> — The hull is simulated at three loading conditions and five speeds. Wetted surface area, trim angle, and residual resistance are iteratively reduced.</li>
-    <li><strong>Design review &amp; release</strong> — The complete engineering package (3D model, FEA report, CFD report, weight estimate, ply book) is reviewed by our senior naval architect before release to the prototype workshop.</li>
+    <li><strong>Συλλογή ιδέας &amp; απαιτήσεων</strong> — Συναντιόμαστε μαζί σας για να καθορίσουμε το ωφέλιμο φορτίο, το εύρος ταχυτήτων, τη δυνατότητα πλεύσης ανά κατάσταση θαλάσσης, τις απαιτήσεις ρυμούλκησης και τυχόν ειδικό εξοπλισμό αποστολής (καταπακτές καταστρώματος, θέσεις κονσόλας, ενσωμάτωση δεξαμενής καυσίμου).</li>
+    <li><strong>Επιφανειακή μοντελοποίηση 3D &amp; υδροστατικός υπολογισμός</strong> — Η μορφή της γάστρας μοντελοποιείται στο SolidWorks και ελέγχεται για υδροστατική ευστάθεια (GM, μοχλός επαναφοράς) με ενσωματωμένα εργαλεία ανάλυσης.</li>
+    <li><strong>Δομική ανάλυση FEA</strong> — Καθορίζονται σενάρια φόρτισης: στατικά (πλήρωμα + εξοπλισμός), δυναμικά (κρούσεις ολίσθησης στα 5g) και χτυπήματα κύματος (πτώση από κορυφή κύματος με ταχύτητα 3 m/s). Εξετάζονται οι κατανομές τάσεων· ο συντελεστής ασφαλείας ≥ 2.5 είναι υποχρεωτικός.</li>
+    <li><strong>Βελτιστοποίηση αντίστασης με CFD</strong> — Η γάστρα προσομοιώνεται σε τρεις συνθήκες φόρτισης και πέντε ταχύτητες. Η βρεχόμενη επιφάνεια, η γωνία διαγωγής και η υπολειμματική αντίσταση μειώνονται επαναληπτικά.</li>
+    <li><strong>Ανασκόπηση σχεδιασμού &amp; έγκριση</strong> — Το πλήρες μηχανολογικό πακέτο (τρισδιάστατο μοντέλο, έκθεση FEA, έκθεση CFD, εκτίμηση βάρους, βιβλίο επιστρώσεων) ελέγχεται από τον έμπειρο ναυπηγό μας πριν από την αποδέσμευσή του στο εργαστήριο πρωτοτύπων.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Stress Distribution — RIB 450 Patrol Hull (Aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Κατανομή Τάσεων FEA — Γάστρα Περιπολικού RIB 450 (Αλουμίνιο 5083)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
-        <span class="text-gray-500">Safety factor at max payload</span>
+        <span class="text-gray-500">Συντελεστής ασφαλείας στο μέγιστο ωφέλιμο φορτίο</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
-        <span class="text-gray-500">Drag reduction vs previous generation</span>
+        <span class="text-gray-500">Μείωση αντίστασης σε σχέση με την προηγούμενη γενιά</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
-        <span class="text-gray-500">Peak slamming pressure (design limit)</span>
+        <span class="text-gray-500">Μέγιστη πίεση χτυπήματος κύματος (όριο σχεδιασμού)</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
-        <span class="text-gray-500">Cumulative FEA runtime in 2025</span>
+        <span class="text-gray-500">Συνολικός χρόνος εκτέλεσης FEA το 2025</span>
       </div>
     </div>
   </div>
 
-  <h2>Customisation: your hull, your rules</h2>
-  <p>No two operators have identical requirements. A harbour-patrol RIB needs a shallow-V hull for stability at low speed; a fast-interception craft needs a deep-V with spray rails; a dive-support boat needs a wide beam and a low transom. We do not force your application into a pre-existing hull shape. We design from your specification upward.</p>
-  <p>Examples of recent custom hull engineering projects:</p>
+
+  <h2>Προσαρμογή: η γάστρα σας, οι κανόνες σας</h2>
+
+  <p>Κανένας χειριστής δεν έχει πανομοιότυπες απαιτήσεις. Ένα RIB περιπολίας λιμανιού χρειάζεται γάστρα με ρηχό V για ευστάθεια σε χαμηλή ταχύτητα· ένα σκάφος ταχείας αναχαίτισης χρειάζεται βαθύ V με διαμήκεις απολήξεις ψεκασμού (spray rails)· ένα σκάφος υποστήριξης καταδύσεων χρειάζεται μεγάλο
+  πλάτος και χαμηλό transom. Δεν προσαρμόζουμε την εφαρμογή σας σε μια προϋπάρχουσα μορφή γάστρας. Σχεδιάζουμε από τις δικές σας προδιαγραφές και πάνω.</p>
+
+  <p>Παραδείγματα πρόσφατων έργων προσαρμοσμένης μηχανικής γαστρών:</p>
+
   <ul>
-    <li>A stretched 6.8 m HDPE hull for a Caribbean tour operator, with a reinforced bow for beach landings (+15 % bottom thickness).</li>
-    <li>A lightweight aluminium 7.2 m RIB for a coast guard, with integrated fuel-tank baffles and equipment-locker stiffeners.</li>
-    <li>A fibreglass 5.5 m dive boat with a cut-down transom and twin battery boxes, designed for easy snorkeller reboarding.</li>
+    <li>Μια επιμηκυμένη γάστρα HDPE 6.8 m για τουριστικό πράκτορα στην Καραϊβική, με ενισχυμένη πλώρη για προσεγγίσεις σε παραλίες (+15 % πάχος πυθμένα).</li>
+    <li>Ένα ελαφρύ αλουμινένιο RIB 7.2 m για ακτοφυλακή, με ενσωματωμένα διαφράγματα δεξαμενής καυσίμου και ενισχυτικά ερμαρίων εξοπλισμού.</li>
+    <li>Ένα σκάφος καταδύσεων από υαλοβάμβακα 5.5 m με χαμηλωμένο transom και διπλές θήκες μπαταριών, σχεδιασμένο για εύκολη επανεπιβίβαση των κολυμβητών με αναπνευστήρα.</li>
   </ul>
 
-  <h2>Our engineers</h2>
-  <p>The studio is led by a senior naval architect with 14 years of experience in high-speed craft design, supported by two mechanical engineers specialised in FEA and CFD. All three hold advanced degrees in marine engineering or naval architecture from internationally recognised universities. The team publishes regularly in industry journals and presents at conferences such as the International Conference on High-Performance Marine Vehicles.</p>
 
-  <h2>Partner with us on your next hull</h2>
-  <p>From the first concept sketch to the final stress report, our Hull Engineering Studio is your partner in creating a boat that is not just built — but engineered. We invest the simulation hours upfront so that every weld, every laminate layer, and every curve of the hull is there for a reason.</p>
-  <p>Whether you need a minor modification to an existing model or a completely clean-sheet design, we are ready to discuss your requirements.</p>
+  <h2>Οι μηχανικοί μας</h2>
 
+  <p>Το στούντιο διευθύνεται από έναν έμπειρο ναυπηγό με 14 χρόνια εμπειρίας στον σχεδιασμό σκαφών υψηλών ταχυτήτων, με την υποστήριξη δύο μηχανικών εξειδικευμένων σε FEA και CFD. Και οι τρεις κατέχουν μεταπτυχιακούς τίτλους στη ναυπηγική μηχανική ή τη ναυτική αρχιτεκτονική από διεθνώς αναγνωρισμένα
+  πανεπιστήμια. Η ομάδα δημοσιεύει τακτικά σε κλαδικά επιστημονικά περιοδικά και παρουσιάζει σε συνέδρια, όπως το International Conference on High-Performance Marine Vehicles.</p>
+
+
+  <h2>Συνεργαστείτε μαζί μας για την επόμενη γάστρα σας</h2>
+
+  <p>Από το πρώτο σκαρίφημα ιδέας έως την τελική έκθεση τάσεων, το Στούντιο Μηχανικής Γάστρας είναι ο συνεργάτης σας στη δημιουργία ενός σκάφους που δεν είναι απλώς κατασκευασμένο — αλλά μηχανολογικά σχεδιασμένο. Επενδύουμε τις ώρες προσομοίωσης εκ των προτέρων, ώστε κάθε συγκόλληση, κάθε στρώση
+  επένδυσης και κάθε καμπύλη της γάστρας να υπάρχει για κάποιον λόγο.</p>
+
+  <p>Είτε χρειάζεστε μια μικρή τροποποίηση σε ένα υπάρχον μοντέλο είτε έναν εντελώς νέο σχεδιασμό από λευκό χαρτί, είμαστε έτοιμοι να συζητήσουμε τις απαιτήσεις σας.</p>
 cta:
-  title: 'Start your hull design consultation'
-  subtitle: 'Tell us about your mission profile and we will propose an engineering path.'
-  button_text: 'Contact our engineering team'
+  title: Ξεκινήστε τη Συμβουλευτική Σχεδίασης Κύλωσης
+  subtitle: Περιγράψτε μας το προφίλ της αποστολής σας και θα σας προτείνουμε μια μηχανολογική προσέγγιση.
+  button_text: Επικοινωνήστε με την ομάδα μηχανικών μας
   button_link: /contact

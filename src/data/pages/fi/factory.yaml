@@ -3,8 +3,12 @@ hero:
   title: Tehdas ja tuotanto
   subtitle: 12 000 m2 integroitua tuotantoa —raaka-aineesta valmiiseen veneeseen
 intro:
-  - Qingdao Vatrad Group Co., Ltd.:n tehdasbr?ndin? afarer hallitsee jokaista tuotannon vaihetta —raaka-PVC:n ja lasikuitumateriaalien saapumisesta valmiin veneen lopulliseen esitarkastukseen. Tuotantolaitoksemme Qingdaon talouskehitysalueella kattaa 12 000 neli?metri? ja sis?lt?? erilliset ty?pajat PVC-leikkaukselle, putkien kuumasaumaukselle, lasikuituisten SUP-runkojen tuotannolle, SUP-digitaalipainatukselle, loppukokoonpanolle ja laaduntestaukselle.
-  - Yhdist?m?ll? suunnittelun, insin??rity?n, prototyyppauksen, valmistuksen ja testauksen saman katon alle eliminoimme sopimusvalmistuksen tehottomuudet ja s?ilyt?mme suoran hallinnan rakennuslaadussa, materiaalivalinnassa ja toimitusaikatauluissa. Jokainen ty?pajaltamme l?htev? vene on rakennettu meid?n ihmistemme toimesta, meid?n laitteillamme, meid?n standardeillamme.
+  - >-
+    Qingdao Vatrad Group Co., Ltd.:n tehdasbr?ndin? afarer hallitsee jokaista tuotannon vaihetta —raaka-PVC:n ja lasikuitumateriaalien saapumisesta valmiin veneen lopulliseen esitarkastukseen. Tuotantolaitoksemme Qingdaon talouskehitysalueella kattaa 12 000 neli?metri? ja sis?lt?? erilliset ty?pajat
+    PVC-leikkaukselle, putkien kuumasaumaukselle, lasikuituisten SUP-runkojen tuotannolle, SUP-digitaalipainatukselle, loppukokoonpanolle ja laaduntestaukselle.
+  - >-
+    Yhdist?m?ll? suunnittelun, insin??rity?n, prototyyppauksen, valmistuksen ja testauksen saman katon alle eliminoimme sopimusvalmistuksen tehottomuudet ja s?ilyt?mme suoran hallinnan rakennuslaadussa, materiaalivalinnassa ja toimitusaikatauluissa. Jokainen ty?pajaltamme l?htev? vene on rakennettu
+    meid?n ihmistemme toimesta, meid?n laitteillamme, meid?n standardeillamme.
 stats:
   - value: 12 000 m2
     label: Tuotantopinta-ala
@@ -14,42 +18,42 @@ stats:
     label: Veneit? valmistetaan vuosittain
   - value: null
     label: Laatusertifioitu
-intelligence_tagline: Factory Intelligence
-intelligence_title: Explore Our Manufacturing Capabilities
+intelligence_tagline: Tehtaan älykkyys
+intelligence_title: Tutustu valmistuskykyihimme
 intelligence_cards:
-  - title: Production Capacity
+  - title: Tuotantokapasiteetti
     icon: C
-    icon_bg: blue
+    icon_bg: sininen
     desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
     metrics:
       - label: MOQ
-        value: "SUP: 5-10 / SUP: 2-5"
-      - label: Lead Time
+        value: 'SUP: 5-10 / SUP: 2-5'
+      - label: Toimitusaika
         value: 30-45 days
     link: /factory/capacity
-    link_label: Full capacity details →
-  - title: Quality Lab & Testing
+    link_label: Täydelliset kapasiteettitiedot →
+  - title: Laatorialabo ja testaus
     icon: Q
-    icon_bg: green
-    desc: "Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat."
+    icon_bg: vihreä
+    desc: 'Riippumaton laadunvalvontalaboratorio 4 testausvaiheella: raaka-aineiden tarkastus (vetolujuus, repäisylujuus, UV), 48 tunnin painetesti 1.25-kertaisella nimellispaineella, sauman repäisytestaus sekä kuorma- ja tasapainotarkastus jokaiselle veneelle.'
     metrics:
-      - label: Lab Equipment
-        value: Tensile tester, temp chamber, leak tank
-      - label: Standards
+      - label: Laboratoriolaitteet
+        value: Vetolujuustestilaite, lämpökaappi, vuotosäiliö
+      - label: Standardit
         value: ISO 9001, CE, AS 1799
     link: /factory/quality-lab
-    link_label: Lab procedures & equipment →
-  - title: OEM/ODM Capability
+    link_label: Laboratoriomenettelyt ja -varusteet →
+  - title: OEM/ODM-kyvykkys
     icon: O
-    icon_bg: purple
-    desc: "End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics."
+    icon_bg: violetti
+    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
     metrics:
-      - label: Certifications
+      - label: Sertifikaatit
         value: ISO 9001, BSCI, CE, REACH
-      - label: Shipping
-        value: FOB, CIF, DDP to 50+ countries
+      - label: Toimitus
+        value: FOB, CIF, DDP yli 50 maahan
     link: /factory/oem-capability
-    link_label: Full OEM services →
+    link_label: Täydet OEM-palvelut →
 workshops_section:
   tagline: Ty?pajat
   title: Tuotantoty?pajat
@@ -95,13 +99,13 @@ qc_section:
   title: Testaus- ja laadunvarmistusprosessi
   subtitle: Jokainen vene k?y l?pi pakollisen testauksen ennen l?hetyst?. Laatulaboratoriomme toimii riippumattomana tuotannosta ja raportoi suoraan johdolle.
   steps:
-    - step: "1"
+    - step: '1'
       title: Raaka-aineen tarkastus
       desc: PVC-, Hypalon- ja drop-stitch-kankaat k?yv?t l?pi vetolujuustestauksen (), repe?m?n levi?misen ja UV-kest?vyyden varmistuksen ennen kuin mik??n er? menee tuotantoon.
-    - step: "2"
+    - step: '2'
       title: 48 tunnin ilmanpysyvyystesti
       desc: Jokainen putkikammio t?ytet??n 125 %:iin nimellispaineesta ja pidet??n 48 tuntia. Yli 5 %:n paineen lasku aiheuttaa automaattisen hylk?yksen ja sauman uudelleentarkastuksen.
-    - step: "3"
+    - step: '3'
       title: Kuorma- ja tasapainotestaus
       desc: Valmiit veneet kuormitetaan enimm?iskantavuuteen ja testataan vakauden, vapaan laidan ja k?sitelt?vyyden osalta. Jokainen alus vesitestataan ennen lopullista tarkastusta.
 oem_section:
@@ -125,128 +129,132 @@ faq_section:
     - q: Mik? on v?himm?istilausm??r? (MOQ) OEM-kumisille SUP-laudoille?
       a: MOQ alkaa 5—0 yksiköstä vakio-OEM-malleille. R??t?l?idyt muotit ja oman etiketin projektit vaativat v?hint??n 200 yksikk?? riippuen monimutkaisuudesta. Koetilaukset ja n?yte-er?t ovat saatavilla uusille br?ndilanseerauksille.
     - q: Onko afarerilla BSCI-sertifiointi?
-      a: Kyll?. Tehtaallamme on voimassa oleva BSCI-sosiaalinen vaatimustenmukaisuussertifiointi (auditointiraportti saatavilla pyynn?st?). Meill? on my?s  laadunhallinnalle ja kaikki tuotteet ovat CE-sertifioituja . REACH- ja RoHS-vaatimustenmukaisuusdokumentaatio toimitetaan jokaisen OEM-toimituksen mukana.
+      a: >-
+        Kyll?. Tehtaallamme on voimassa oleva BSCI-sosiaalinen vaatimustenmukaisuussertifiointi (auditointiraportti saatavilla pyynn?st?). Meill? on my?s  laadunhallinnalle ja kaikki tuotteet ovat CE-sertifioituja . REACH- ja RoHS-vaatimustenmukaisuusdokumentaatio toimitetaan jokaisen
+        OEM-toimituksen mukana.
     - q: Mik? on tyypillinen toimitusaika OEM-tilaukselle?
       a: Vakiotoimitusaika on 30°C45 p?iv?? vahvistetusta ostotilauksesta ja k?sirahasta. R??t?l?ityjen muottien kehitys lis?? 15°C20 p?iv?? ty?kalujen valmistukseen. Tarjoamme nopeutettua tuotantoa kiireellisille tilauksille ja sesonkikiireille ennen kes?? (tammi°Cmaaliskuu).
     - q: Voitteko toimittaa FOB Qingdao tai CIF satamaamme?
       a: Kyll?. Toimitamme FOB Qingdao, CIF t?rkeimpiin maailmansatamiin ja DDP p?teville kumppaneille. Logistiikkatiimimme hoitaa konttivarauksen, vientidokumentaation ja tulliselvityksen. Toimitamme yli 50 maahan EU:n, USA:n, AU:n ja Aasian markkinoilla.
-b2b_moq: "Vakio-MOQ: 5—0 yksikköä per malli (SUP/kajakki/drop-stitch). SUP-MOQ: 2— yksikköä. Koetilaukset tervetulleita uusille kumppanuuksille."
+b2b_moq: 'Vakio-MOQ: 5—0 yksikköä per malli (SUP/kajakki/drop-stitch). SUP-MOQ: 2— yksikköä. Koetilaukset tervetulleita uusille kumppanuuksille.'
 production_flow:
-  tagline: Production Flow
-  title: From Material to Finished Boat
-  subtitle: Every boat passes through 6 production stages with QC checkpoints at every step. No shortcuts, no skipped inspections.
+  tagline: Tuotannonkulku
+  title: Materiaalista valmiiksi veneeksi
+  subtitle: Jokainen vene kulkee kuuden tuotantovaiheen läpi, ja jokaisessa vaiheessa on laadintatarkastuspisteitä. Ei oikoteitä, ei ohitettuja tarkastuksia.
   stages:
-    - stage: "01"
-      title: Material Receiving & Incoming QC
-      description: All incoming materials are logged by batch/lot number in our ERP system. PVC fabric rolls, drop-stitch cores, valves, adhesives, and hardware are quarantined until QC sign-off.
-      qc_check: Tensile strength (ASTM D751), tear resistance (ISO 4674), thickness gauge, adhesive viscosity, visual defect scan
-      qc_threshold: 100% of batches tested. Reject if tensile < 90% of spec, tear < spec min, or any visual defect
-      responsibility: Incoming QC team (3 inspectors)
-    - stage: "02"
-      title: CNC Cutting & Material Prep
-      description: Computer-optimized nesting lays out panels on PVC stock to minimize waste. Automatic CNC cutting machines maintain 0.1 mm positional accuracy.
-      qc_check: Dimensional check against CAD DXF files, edge quality inspection, panel count verification
-      qc_threshold: Every 20th panel measured. Tolerance ±0.5 mm. Reject batch if >2% out of tolerance
-      responsibility: Cutting workshop lead
-    - stage: "03"
-      title: Welding & Drop-Stitch Bonding
-      description: Drop-stitch cores are bonded to outer PVC laminates using heat lamination. Tube chambers are RF-welded or hot-air welded. Rail bands are triple-layer fusion bonded.
-      qc_check: Peel test every 50 units (ASTM D751), weld width measurement, hot-air temperature log review, visual seam inspection under backlight
-      qc_threshold: Peel strength min 8 N/cm. Weld width tolerance ±1 mm. Any visible channeling = reject
-      responsibility: Welding QC (2 inspectors per shift)
-    - stage: "04"
-      title: Assembly & Rigging
-      description: "Boats move to final assembly where all components are mated: hull + tubes, valves installed, D-rings, handles, fin boxes, and carry bag fitting. Each unit follows a 100-point assembly checklist."
-      qc_check: 100-point checklist sign-off per unit, valve function test (10 open/close cycles), hardware torque verification, visual inspection
-      qc_threshold: "Zero-defect policy on safety-critical items (valves, D-rings, handles). Minor cosmetic: AQL 2.5 (ISO 2859)"
-      responsibility: Assembly team lead + line QC
-    - stage: "05"
-      title: Pressure Testing & Quality Hold
-      description: Every chamber is inflated to 1.25× rated pressure (typically 20—5 PSI) and held for 24—8 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.
-      qc_check: 24h pressure hold log, sensor calibration verified daily, temperature-compensated pressure reading, seam re-test after repair
-      qc_threshold: Max 5% pressure drop over 24h at stable temp. Any chamber exceeding this = 100% re-test of entire production batch
-      responsibility: Quality lab (independent of production, reports to management)
-    - stage: "06"
-      title: Final Inspection & Packing
-      description: Final visual and functional inspection. Surface defects, color consistency, label/BIN verification, packaging integrity, and accessory completeness. Units are vacuum-packed, boxed, and palletized for container loading.
-      qc_check: Full visual inspection, accessory checklist per SKU, packaging drop test (1 m, random sample), label/bar code scan verification
-      qc_threshold: AQL 2.5 for major defects, AQL 4.0 for minor. Zero tolerance on safety defects. 100% of units visually inspected
-      responsibility: Final QC team (4 inspectors) + Packing team lead
+    - stage: '01'
+      title: Materiaalivastaanotto ja saapuvan laadunvalvonta
+      description: Kaikki saapuvat materiaalit kirjataan eränumeron mukaan ERP-järjestelmäämme. PVC-kangasrullat, drop-stitch-ytimet, venttiilit, liimat ja laitteisto eristetään QC-hyväksyntään asti.
+      qc_check: Vetovoima (ASTM D751), repelmisaste (ISO 4674), paksuuden mittaus, liimankaantavuus, visuaalinen vikaskanaus
+      qc_threshold: 100 % eristä testattu. Hylkää, jos vetolujuus < 90 % määrityksestä, repeäminen < määrityksen minimi tai mikä tahansa visuaalinen vika
+      responsibility: Saapuvan tavaran laadunvalvontatiimi (3 tarkastajaa)
+    - stage: '02'
+      title: CNC-leikkaus ja materiaalien valmistelu
+      description: Tietokoneoptimoitu paneelien asettelu PVC-materiaalille minimoi jätteen. Automaattiset CNC-leikkuukoneet ylläpitävät 0,1 mm:n sijaintitarkkuuden.
+      qc_check: Mittatarkastus CAD DXF -tiedostoja vasten, reunojen laadun tarkastus, paneelimäärien varmistus
+      qc_threshold: Joka 20. paneeli mitataan. Toleranssi ±0.5 mm. Erä hylätään, jos yli 2 % on toleranssin ulkopuolella
+      responsibility: Leikkauspajan työnjohtaja
+    - stage: '03'
+      title: Hitsaus ja drop-stitch -sidonta
+      description: Drop-stitch-ytimen liimataan ulkoiseen PVC-laminaattiin lämpöliimauksella. Putki kammiot ovat RF-hitsattuja tai ilmalaastettuja. Raitakärjet ovat kolmikerroksisia sulautusliimauksia.
+      qc_check: Peel-testaus joka 50:n yksikön kohdalla (ASTM D751), hitsauksen leveyden mittaus, kuuman ilmalämpötilan logien tarkastus, näköteinen liittojen tarkastus takavalolla
+      qc_threshold: Koorroisuus väh. 8 N/cm. Hitsin leveyden toleranssi ±1 mm. Mikä tahansa näkyvä kanaali = hylkää
+      responsibility: Hitsaus QC (2 tarkastajaa/vuorossa)
+    - stage: '04'
+      title: Kokoonpano ja varustaminen
+      description: 'Veneet siirtyvät lopputarkastukseen, jossa kaikki komponentit yhdistetään: runko + putket, venttiilit asennetaan, D-renkaat, kädensijat, evätelineet ja kantolaukun asennus. Jokainen yksikkö seuraa 100 kohdan asennuslista.'
+      qc_check: 100 kohdan tarkastuslistan hyväksyntä yksikköä kohti, venttiilin toimintatesti (10 avaus/sulkukierrosta), laitteiston vääntömomenttien vahvistus, visuaalinen tarkastus
+      qc_threshold: 'Nollavikapolitiikka turvallisuuksien kriittisille osille (venttiilit, D-renkaat, kahvat). Pienet kosmeettiset: AQL 2,5 (ISO 2859)'
+      responsibility: Kokoonpanotiimin vetäjä + linjakohtainen laadunvalvonta
+    - stage: '05'
+      title: Paineentestaus ja laatupidätys
+      description: Jokainen kammio täytetään 1.25× nimellispaineeseen (tyypillisesti 20—5 PSI) ja sitä pidetään paineessa 24—8 tuntia. Painetunnistimet kirjaavat tietoja jatkuvasti. Kammiot, joissa painehäviö ylittää 5 %, hylätään ja lähetetään saumojen uudelleentarkastukseen.
+      qc_check: 24 tunnin paineenpitoloki, anturien kalibrointi varmistettu päivittäin, lämpötilakompensoitu painelukema, saumojen uudelleentestaus korjauksen jälkeen
+      qc_threshold: Max 5 % paineen lasku 24 tunnissa vakaassa lämpötilassa. Yksikään kammio, joka ylittää tämän, = 100 % koko tuotantosarjan uudelleentestaus
+      responsibility: Laadunvarmistuslaboratorio (riippumaton tuotannosta, raportoijaa johdolle)
+    - stage: '06'
+      title: Lopullinen tarkastus ja pakkaus
+      description: Lopullinen visuaalinen ja toiminnallinen tarkastus. Pinnalliset vinohavainrot, värikonstaanttisuus, merkinnän/BIN-varmennus, pakkausintegriteetti ja lisävarusteiden täydellisyys. Yksiköt pumputetaan, kootaan laatikoihin ja lastataan palleille konttikuljetusta varten.
+      qc_check: Täydellinen visuaalinen tarkastus, lisävarustelista kullekin SKU:lle, pakkauspudotustesti (1 m, satunnaisotos), etiketti/viivakoodin skannausvahvistus
+      qc_threshold: AQL 2,5 suurille vioille, AQL 4,0 pienille. Nollatoleranssi turvallisuusvioille. 100 % yksiköistä visuaalisesti tarkastettu
+      responsibility: Lopullinen laatuvalvontatiimi (4 tarkastajaa) + pakkausryhmän esimies
 workforce:
-  tagline: Our People
-  title: Workforce & Expertise
+  tagline: Henkilöstömme
+  title: Henkilöstö ja asiantuntemus
   engineers: 25+
-  engineers_detail: Engineers across R&D, mold design, materials lab, and production engineering. Average 7+ years in inflatable manufacturing.
-  shift_pattern: 2 shifts/day (07:00—5:30, 15:30—0:00). Optional night shift for urgent orders.
-  training: Monthly QC training, quarterly safety drills, annual skills assessment. New hires complete 40-hour induction before working on production line.
+  engineers_detail: Insinöörejä T&K:sta, muottisuunnittelusta, materiaalilaboratoriosta ja tuotantotekniikasta. Keskimäärin yli 7 vuoden kokemus täytettävien tuotteiden valmistuksesta.
+  shift_pattern: 2 vuoroa/päivä (07:00—5:30, 15:30—0:00). Valinnainen yövuoro kiireellisiä tilauksia varten.
+  training: Kuukausittainen laadintakoulutus, kolmen kuukauden turvaharjoitukset, vuosittainen taidonantuntemuksen arvioinnin. Uudet työntekijät suorittavat 40-tuntisen koeamisen ennen kuin aloittavat tuotantolinjalla.
   departments:
     - name: R&D & Engineering
       count: 25+
-      role: Product design, mold engineering, materials lab
+      role: Tuotesuunnittelu, kaluppisuunnittelu, materiaalilaboratorio
     - name: Cutting & Material Prep
       count: 15
-      role: CNC cutting, panel preparation, material handling
+      role: CNC-leikkaus, paneelin valmistelu, materiaalikäsittely
     - name: Welding & Lamination
       count: 40
-      role: RF welding, hot-air welding, drop-stitch bonding
+      role: RF-hitsaus, ilmahitsaus, drop-stitch -liitos
     - name: SUP Core Bonding
       count: 30
-      role: Drop-stitch lamination, heat bonding, rail band fusion
+      role: Drop-stitch-laminaatio, lämpösidos, reunasäikeiden sulautus
     - name: Assembly & Rigging
       count: 35
-      role: Final assembly, hardware installation, systems check
+      role: Lopputarkastus, laitteiston asennus, järjestelmien tarkistus
     - name: Quality Control
       count: 12
-      role: Incoming QC, in-process QC, final inspection, lab testing
+      role: Saapuvan tavaran laatuvalvonta, valmistuksen aikainen laatuvalvonta, lopullinen tarkastus, laboratoriotestaus
     - name: Logistics & Packing
       count: 20
-      role: Packaging, container loading, export documentation
+      role: Paketointi, konttien lastaus, vientidokumentaatio
     - name: Management & Admin
       count: 15
-      role: Sales, procurement, HR, finance, compliance
+      role: Myynti, hankinta, henkilöstöhallinto, talous, vaatimustenmukaisuus
 material_traceability:
-  tagline: Traceability
-  title: Material Tracking & Batch Control
-  description: Every batch of raw material is assigned a unique lot number in our ERP system. From arrival through production to the finished product, each boat's bill of materials links back to the original supplier batch. This enables full upstream traceability for any quality or compliance inquiry.
-  system: Custom ERP (Qingdao Vatrad Group internal system) + physical batch tags on each work order
-  coverage: 100% of production materials —PVC, Hypalon, drop-stitch fabric, adhesives, valves, hardware, packaging
-  records_retained: 10 years (per CE 2013/53/EU requirement)
+  tagline: Jäljitettävyys
+  title: Materiaalien seuranta ja erävalvonta
+  description: >-
+    Jokainen raaka-aine-erä saa yksilöllisen eränumeron ERP-järjestelmässämme. Raaka-aineen saapumisesta tuotannon läpi valmiiksi tuotteeksi jokaisen veneen materiaaliluettelo on yhdistettävissä alkuperäiseen toimittajaerään. Tämä mahdollistaa täyden jäljitettävyyden ylöspäin kaikissa laatu- tai
+    vaatimustenmukaisuuskyselyissä.
+  system: Oma ERP (Qingdao Vatrad Groupin sisäinen järjestelmä) + fyysiset erätaudit jokaisella työtilauksella
+  coverage: 100 % tuotantomateriaaleista — PVC, Hypalon, drop-stitch -kangas, liimat, venttiilit, metalliosat, pakkaus
+  records_retained: 10 vuotta (CE 2013/53/EU -vaatimuksen mukaisesti)
   suppliers:
-    - material: Marine-grade PVC
-      source: Chinese and Korean suppliers
+    - material: Meriluokan PVC
+      source: Kiinalaiset ja korealaiset toimittajat
       certified: ISO 9001, REACH, RoHS
     - material: Hypalon (CSM)
-      source: Japanese supplier
+      source: Japanilainen toimittaja
       certified: ISO 9001, REACH
-    - material: Drop-stitch fabric
-      source: In-house weaving + external partner
-      certified: Internal QC + supplier ISO 9001
-    - material: Valves & Hardware
-      source: Chinese OEM suppliers
-      certified: ISO 9001, material certs per batch
+    - material: Drop-stitch-kangas
+      source: Oma kudonta + ulkopuolinen kumppani
+      certified: Sisäinen laadunvalvonta + toimittajan ISO 9001
+    - material: Venttiilit ja varusteet
+      source: Kiinalaiset OEM-toimittajat
+      certified: ISO 9001, materiaalisertifikaatit eräkohtaisesti
 qc_dashboard:
-  tagline: QC by the Numbers
-  title: Quality Control Metrics
-  subtitle: Real pass/fail data from our production line. Our quality lab operates independently from production and reports directly to management.
+  tagline: QC luvuittain
+  title: Laadunvalvonnan mittarit
+  subtitle: Todelliset läpäisy/hylkäys-tulot tuotantolinnaltamme. Laatulaboratoriomme toimii tuotannosta riippumattomana ja raportoi suoraan johdolle.
   stats:
     - value: 100%
-      label: Units pressure-tested
-      detail: Every boat, every chamber, every batch
+      label: Yksiköt painekokeilla
+      detail: Jokainen vene, jokainen kammi, jokainen erä
     - value: <5%
-      label: Max allowable pressure drop
-      detail: Over 24h at 1.25× rated pressure
+      label: Suurin sallittu painehäviö
+      detail: Yli 24 h 1.25× nimellispaineella
     - value: AQL 2.5
-      label: Major defect threshold
-      detail: Per ISO 2859 sampling standard
+      label: Merkittävän virheen raja-arvo
+      detail: ISO 2859 -otantastandardin mukaisesti
     - value: 24—8h
-      label: Pressure hold duration
-      detail: Depending on product category
-    - value: 1.25×
-      label: Test pressure vs rated
-      detail: Safety margin on every chamber
+      label: Paineenpitokesto
+      detail: Tuotekategorian mukaan
+    - value: 1,25×
+      label: Testipaine vs. nimellispaine
+      detail: Turvamarginaali joka kammiossa
     - value: 0%
-      label: Tolerance on safety defects
-      detail: Valves, D-rings, seams, buoyancy
+      label: Toleranssi turvallisuusvioille
+      detail: Venttiilit, D-renkaat, saumat, kelluvuus
 process_cta:
   title: Katso tuotantoprosessimme
   desc: Seuraa venett? l?pi jokaisen tuotannon vaiheen —raaka-aineesta merivalmiiksi alukseksi.

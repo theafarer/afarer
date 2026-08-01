@@ -17,7 +17,7 @@ contact_form:
       label: Nome
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: paesi
       step: 1
     - name: lastName
       label: Cognome
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
+          label: Seleziona il tuo volume stimato...
+        - value: campione
+          label: Solo campioni / prototipi
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5–10 unità (MOQ standard)
         - value: 100-500
-          label: 100–500 units
-        - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 100–500 unità
+        - value: più di 500
+          label: 500 unità (Prezzo a volume)
       step: 1
     - name: companyName
       label: Azienda
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
-        - value: none
-          label: Standard product (no customization)
+          label: Seleziona il tipo di personalizzazione...
+        - value: nessuno
+          label: Prodotto standard (nessuna personalizzazione)
         - value: logo
-          label: Custom Logo / Branding only
-        - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: Solo logo / branding personalizzato
+        - value: pieno
+          label: OEM completo (dimensione, colore, grafica, confezione)
+        - value: consultazione
+          label: Non sicuro — bisogno di consultazione
       step: 1
     - name: address
       label: Indirizzo
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
-        - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: Seleziona categoria di prodotto...
+        - value: tutto
+          label: Tutti i prodotti / Catalogo completo
+        - value: ciao
+          label: Tavole SUP / Tavole da paddle
+        - value: sicurezza
+          label: Attrezzatura di sicurezza / Giubbotti di salvataggio
+        - value: accessorio
+          label: Accessori (pompe, remi, borse)
       step: 1
     - name: zip
       label: CAP
@@ -122,9 +122,9 @@ features2_other_ways:
       description: Kit media, sponsorizzazioni e collaborazioni di settore.
       icon: tabler:news
     - title: Telefono
-      description: +86 13305324192
+      description: 86 13305324192
       icon: tabler:headset
-    - title: Email
+    - title: E-mail
       description: info@afarer.com
       icon: tabler:mail
     - title: Sede centrale

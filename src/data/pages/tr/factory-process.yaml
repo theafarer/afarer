@@ -1,12 +1,12 @@
-﻿hero:
+hero:
   tagline: Süreç
   title: Üretim Süreci
   subtitle: Ham maddeden denize hazır tekneye —her adım bizim kontrolümüzde
   back_label: Fabrikaya Dön
-  back_link: /factory
-
-intro: Üretimi üçüncü taraf fabrikalara yaptıran markaların aksine afarer, tüm üretim zincirinin sahibidir ve işletir. Bu dikey entegrasyon, her aşamada sıkı kalite kontrolü sağlamamıza, özel taleplere hızlı yanıt vermemize ve partiden partiye tutarlı ürün kalitesi sunmamıza olanak tanır. İşte tesisimizde bir teknenin nasıl inşa edildiği.
-
+  back_link: /fabrika
+intro: >-
+  Üretimi üçüncü taraf fabrikalara yaptıran markaların aksine afarer, tüm üretim zincirinin sahibidir ve işletir. Bu dikey entegrasyon, her aşamada sıkı kalite kontrolü sağlamamıza, özel taleplere hızlı yanıt vermemize ve partiden partiye tutarlı ürün kalitesi sunmamıza olanak tanır. İşte
+  tesisimizde bir teknenin nasıl inşa edildiği.
 steps:
   - step: '01'
     title: Malzeme Kabul ve Muayene
@@ -14,15 +14,21 @@ steps:
     duration: 1— gün
   - step: '02'
     title: Otomatik PVC Kesim
-    description: "Onaylanan kumaşlar, otomatik CNC kesim makinesine serilir ve milimetre altı hassasiyetle kesilir. Bilgisayar destekli optimizasyon, panelleri atığı en aza indirecek şekilde yerleştirir —tipik olarak %5'in altında. Kesilen paneller, tekne modeli ve odasına göre etiketlenir ve kaynak atölyesine aktarılmak üzere paketlenir."
+    description: >-
+      Onaylanan kumaşlar, otomatik CNC kesim makinesine serilir ve milimetre altı hassasiyetle kesilir. Bilgisayar destekli optimizasyon, panelleri atığı en aza indirecek şekilde yerleştirir —tipik olarak %5'in altında. Kesilen paneller, tekne modeli ve odasına göre etiketlenir ve kaynak atölyesine
+      aktarılmak üzere paketlenir.
     duration: Tekne seti başına 2— saat
   - step: '03'
     title: Boru Kaynağı ve Birleştirme
-    description: Paneller, kontrollü 200—00 °C sıcaklıklarda sıcak hava kaynak makineleri ile teyellenir ve birleştirilir. Ana dikişler, hava geçirmez, yüksek mukavemetli bağlantılar için dielektrik RF kaynağı ile güçlendirilir. Bitmiş odalar, 30 dakikalık hava tutma doğrulaması için çalışma basıncının 1,5 katına şişirilir.
+    description: >-
+      Paneller, kontrollü 200—00 °C sıcaklıklarda sıcak hava kaynak makineleri ile teyellenir ve birleştirilir. Ana dikişler, hava geçirmez, yüksek mukavemetli bağlantılar için dielektrik RF kaynağı ile güçlendirilir. Bitmiş odalar, 30 dakikalık hava tutma doğrulaması için çalışma basıncının 1,5
+      katına şişirilir.
     duration: Tekne başına 1— gün
   - step: '04'
     title: SUP Fiberglas Gövde Kalıplama
-    description: "SUP bot gövdeleri, el yatırmalı fiberglas yöntemiyle üretilir. Fiberglas keçe ve roving kumaş katmanları, hassas kalıplarda polyester veya vinil ester reçine ile elle rulolanır. Her kat, tutarlı laminat kalitesi için vakumla paketlenir. Gövde, yüksek parlaklıkta, UV'ye dayanıklı deniz yüzeyi için jelkot ile kaplanır."
+    description: >-
+      SUP bot gövdeleri, el yatırmalı fiberglas yöntemiyle üretilir. Fiberglas keçe ve roving kumaş katmanları, hassas kalıplarda polyester veya vinil ester reçine ile elle rulolanır. Her kat, tutarlı laminat kalitesi için vakumla paketlenir. Gövde, yüksek parlaklıkta, UV'ye dayanıklı deniz yüzeyi
+      için jelkot ile kaplanır.
     duration: Gövde başına 2— gün
   - step: '05'
     title: SUP Baskı ve Dekorasyon
@@ -40,7 +46,6 @@ steps:
     title: Paketleme ve Sevkiyat
     description: Botların havası alınır, prosedüre göre katlanır, sağlam kumaş veya kontrplak torbalara paketlenir ve nakliye için yüklenir. Her paket, model, seri numarası ve varış yeri ile etiketlenir. Dünya çapında FCL ve LCL gönderileri için nakliyecilerle koordinasyon sağlarız.
     duration: 1 gün
-
 cta:
   title: Ekipman ve makinelerimizi görün
   desc: Her afarer teknesinin arkasındaki endüstriyel ekipmanı keşfedin.

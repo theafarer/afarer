@@ -1,89 +1,108 @@
 meta:
-  title: 'RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}'
-  description: 'Radio-frequency welding technology delivering compliant airtight seams. Peel testing, air-retention validation, and custom seam specifications.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Centro de Soldagem RF — União Dielétrica para Costuras Herméticas | {SITE}
+  description: Tecnologia de soldagem por radiofrequência que proporciona costuras herméticas flexíveis. Teste de descolamento, validação de retenção de ar e especificações de costura personalizadas.
+back_text: De volta ao Centro de P&D
+home_label: Início
 hero:
-  tagline: 'Lab 03'
-  title: 'RF Welding Center'
-  subtitle: 'Dielectric bonding technology for welds that hold under pressure'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1.webp'
-  image_alt: 'Afarer RF welding dielectric bonding process'
+  tagline: Laboratório 03
+  title: Centro de Soldagem RF
+  subtitle: Tecnologia de ligação dielétrica para soldas que resistem sob pressão
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1.webp
+  image_alt: Processo de união dielétrica por soldagem RF Afarer
+intro: >-
+  Um barco inflável é tão confiável quanto suas costuras. Uma única solda fraca pode comprometer toda uma câmara — e no mar, a falha de uma câmara não é apenas um inconveniente; é um risco à segurança. No {SITE.name}, investimos em um Centro de Soldagem por Radiofrequência (RF) dedicado, que combina
+  prensas de soldagem dielétrica de grau industrial com controle rigoroso de processo e testes pós-solda. Cada costura que produzimos é documentada, rastreável e certificada para atender ou superar os requisitos da — norma internacional para embarcações infláveis.
+content_html: >
+  <h2>A ciência por trás da solda</h2>
 
-intro: 'An inflatable boat is only as reliable as its seams. A single weak weld can compromise an entire chamber — and at sea, a chamber failure is not an inconvenience; it is a safety hazard. At {SITE.name}, we have invested in a dedicated Radio-Frequency (RF) Welding Center that combines industrial-grade dielectric welding presses with rigorous process control and post-weld testing. Every seam we produce is documented, traceable, and certified to meet or exceed the requirements of — the international standard for inflatable craft.'
+  <p>A soldagem RF utiliza energia eletromagnética de alta frequência (normalmente 27.12 MHz) para excitar as moléculas polares do tecido revestido de PVC ou Hypalon, gerando calor precisamente na interface do material. Diferentemente da soldagem a ar quente ou por cunha quente, a soldagem RF cria
+  uma verdadeira ligação molecular — as duas camadas de tecido se fundem em um único material homogêneo na zona de solda, produzindo uma junção tão resistente quanto o próprio material de base.</p>
 
-content_html: |
-  <h2>The science behind the seam</h2>
-  <p>RF welding uses high-frequency electromagnetic energy (typically 27.12 MHz) to excite the polar molecules within PVC or Hypalon-coated fabric, generating heat precisely at the material interface. Unlike hot-air or hot-wedge welding, RF welding creates a true molecular bond — the two fabric layers fuse into a single homogeneous material at the weld zone, producing a joint that is as strong as the parent material itself.</p>
 
-  <h2>Welding equipment and process control</h2>
-  <p>Our welding centre is equipped with:</p>
+  <h2>Equipamento de soldagem e controle de processo</h2>
+
+  <p>Nosso centro de soldagem é equipado com:</p>
+
   <table>
-    <thead><tr><th>Machine</th><th>Power / Capacity</th><th>Application</th></tr></thead>
+    <thead><tr><th>Máquina</th><th>Potência / Capacidade</th><th>Aplicação</th></tr></thead>
     <tbody>
-      <tr><td>Dielectric RF press 1</td><td>15 kW, platen 2000 × 600 mm</td><td>Main longitudinal seams, transom-to-tube joints</td></tr>
-      <tr><td>Dielectric RF press 2</td><td>10 kW, platen 1500 × 500 mm</td><td>Baffle welds, cone attachments, valve patches</td></tr>
-      <tr><td>CNC controlled RF welder</td><td>8 kW, XY table 2500 × 1200 mm</td><td>Curved seams, logo/panel embossing, precision patchwork</td></tr>
-      <tr><td>Hot-wedge automatic welder</td><td>Variable temperature, 1.2 m/min max</td><td>Backup method for Hypalon/CSM materials</td></tr>
+      <tr><td>Prensa RF dielétrica 1</td><td>15 kW, placa 2000 × 600 mm</td><td>Soldas longitudinais principais, juntas entre espelho de popa e tubos</td></tr>
+      <tr><td>Prensa RF dielétrica 2</td><td>10 kW, placa 1500 × 500 mm</td><td>Soldas de defletores, fixações de cones, remendos de válvulas</td></tr>
+      <tr><td>Soldadora RF controlada por CNC</td><td>8 kW, mesa XY 2500 × 1200 mm</td><td>Soldas curvas, gravação de logotipos/painéis, remendos de precisão</td></tr>
+      <tr><td>Soldadora automática por cunha quente</td><td>Temperatura variável, máx. 1.2 m/min</td><td>Método de reserva para materiais Hypalon/CSM</td></tr>
     </tbody>
   </table>
-  <p>Every RF press is equipped with closed-loop temperature and pressure monitoring. Weld parameters — power, press time, cooling time, electrode pressure — are programmed per material type and recorded in our Manufacturing Execution System (MES) for full traceability.</p>
 
-  <h2>Weld quality tests — every seam, every boat</h2>
-  <p>Weld integrity is verified through a mandatory four-test protocol:</p>
+  <p>Toda prensa RF é equipada com monitoramento de temperatura e pressão em malha fechada. Os parâmetros de soldagem — potência, tempo de prensagem, tempo de resfriamento, pressão do eletrodo — são programados por tipo de material e registrados em nosso Sistema de Execução de Manufatura (MES) para
+  rastreabilidade completa.</p>
+
+
+  <h2>Testes de qualidade de solda — cada solda, cada embarcação</h2>
+
+  <p>A integridade da solda é verificada por meio de um protocolo obrigatório de quatro testes:</p>
+
   <ol>
-    <li><strong>Visual inspection</strong> — 100 % of seams are visually inspected for burn-through, misalignment, contamination, or incomplete fusion. Reject rate threshold: 0.5 % of linear metres.</li>
-    <li><strong>Peel test ()</strong> — A 25 mm wide strip is cut from a test coupon welded with each production batch. Minimum peel force: 120 N/25 mm for PVC 1100 dtex.</li>
-    <li><strong>Air-retention test</strong> — Every completed chamber is pressurised to 1.5 × working pressure and held for 30 minutes. Pressure drop must not exceed 2 %.</li>
-    <li><strong>Thermal cycling test</strong> — Sample coupons are cycled from -20 °C to +60 °C for 50 cycles, then peel-tested again. Acceptable strength loss: &lt; 10 %.</li>
+    <li><strong>Inspeção visual</strong> — 100 % das soldas são inspecionadas visualmente quanto a queima, desalinhamento, contaminação ou fusão incompleta. Limite de taxa de rejeição: 0.5 % dos metros lineares.</li>
+    <li><strong>Teste de descolamento ()</strong> — Uma tira de 25 mm de largura é cortada de um corpo de prova soldado com cada lote de produção. Força mínima de descolamento: 120 N/25 mm para PVC 1100 dtex.</li>
+    <li><strong>Teste de retenção de ar</strong> — Cada câmara concluída é pressurizada a 1.5 × a pressão de trabalho e mantida por 30 minutos. A queda de pressão não deve exceder 2 %.</li>
+    <li><strong>Teste de ciclagem térmica</strong> — Corpos de prova são ciclados de -20 °C a +60 °C por 50 ciclos e depois submetidos novamente ao teste de descolamento. Perda de resistência aceitável: &lt; 10 %.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Peel Strength Comparison — RF vs Hot-Air Welding (PVC 1100 dtex)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Comparação de Resistência ao Descolamento — Soldagem RF vs. Ar Quente (PVC 1100 dtex)</p>
     <div class="space-y-3">
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium">RF Weld</span>
+        <span class="w-24 text-xs font-medium">Solda RF</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">184 N</span>
       </div>
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium">Hot-Air</span>
+        <span class="w-24 text-xs font-medium">Ar Quente</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">130 N</span>
       </div>
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium"> min</span>
+        <span class="w-24 text-xs font-medium"> mín.</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-green-500 rounded" style="width:48%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">96 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">RF welding consistently achieves 90-95 % of parent-material strength, well above the minimum.</p>
+    <p class="text-xs text-gray-400 mt-2">A soldagem RF atinge consistentemente 90-95 % da resistência do material de base, bem acima do mínimo.</p>
   </div>
 
-  <h2>Professional expertise</h2>
-  <p>Our welding team is led by a senior process engineer with 11 years of experience in dielectric welding of coated textiles. Each operator completes a 6-month in-house certification programme before being allowed to work on production seams. Recertification is required annually, including a practical weld test evaluated against our internal Grade-A standard (peel strength ≥ 160 N/25 mm).</p>
 
-  <h2>Custom welding solutions for unique requirements</h2>
-  <p>We understand that one welding specification does not fit every application. Our RF Welding Center routinely develops custom seam configurations for clients with special requirements:</p>
+  <h2>Experiência profissional</h2>
+
+  <p>Nossa equipe de soldagem é liderada por um engenheiro de processos sênior com 11 anos de experiência em soldagem dielétrica de têxteis revestidos. Cada operador conclui um programa de certificação interna de 6 meses antes de poder trabalhar em soldas de produção. A recertificação é exigida
+  anualmente, incluindo um teste prático de solda avaliado de acordo com nosso padrão interno Grau-A (resistência ao descolamento ≥ 160 N/25 mm).</p>
+
+
+  <h2>Soluções de soldagem personalizadas para requisitos exclusivos</h2>
+
+  <p>Entendemos que uma única especificação de soldagem não atende a todas as aplicações. Nosso Centro de Soldagem RF desenvolve rotineiramente configurações de solda personalizadas para clientes com requisitos especiais:</p>
+
   <ul>
-    <li><strong>Multi-layer reinforcement patches</strong> — for high-wear areas such as rubbing strakes and bow cones, we develop multi-pass RF welds that integrate a wear-resistant outer layer without compromising flexibility.</li>
-    <li><strong>Conductive or RF-opaque seams</strong> — for military or surveillance vessels requiring electromagnetic shielding, we weld in conductive mesh layers within the seam stack-up.</li>
-    <li><strong>Colour-change panel welding</strong> — dual-colour fabric panels (e.g. orange hull + grey topside) welded with a concealed overlap to maintain brand aesthetics without a visible join line.</li>
+    <li><strong>Remendos de reforço multicamada</strong> — para áreas de alto desgaste, como costados de fricção e cones de proa, desenvolvemos soldas RF de múltiplas passagens que integram uma camada externa resistente ao desgaste sem comprometer a flexibilidade.</li>
+    <li><strong>Soldas condutivas ou opacas a RF</strong> — para embarcações militares ou de vigilância que exigem blindagem eletromagnética, soldamos camadas de malha condutiva dentro da pilha da solda.</li>
+    <li><strong>Soldagem de painéis com mudança de cor</strong> — painéis de tecido bicolores (ex.: casco laranja + borda cinza) soldados com uma sobreposição oculta para manter a estética da marca sem uma linha de junção visível.</li>
   </ul>
 
-  <h2>Our commitment to you</h2>
-  <p>Every boat we deliver carries our weld-quality guarantee: if any seam fails in normal service within the warranty period, we repair or replace the affected chamber at no cost, and a root-cause investigation is performed to prevent recurrence. This is not simply a warranty — it is a commitment to continuous improvement driven by real-world operational data.</p>
-  <p>When you choose {SITE.name}, you are choosing seams that are engineered, tested, and documented — not just welded. That is the difference between a boat that floats and a boat that performs.</p>
 
+  <h2>Nosso compromisso com você</h2>
+
+  <p>Toda embarcação que entregamos carrega nossa garantia de qualidade de solda: se qualquer solda falhar em serviço normal dentro do período de garantia, repararemos ou substituiremos a câmara afetada sem custo, e uma investigação de causa raiz será realizada para evitar a recorrência. Isso não é
+  simplesmente uma garantia — é um compromisso com a melhoria contínua impulsionada por dados operacionais reais.</p>
+
+  <p>Ao escolher a {SITE.name}, você está escolhendo soldas que são projetadas, testadas e documentadas — não apenas soldadas. Essa é a diferença entre uma embarcação que flutua e uma embarcação que tem desempenho.</p>
 cta:
-  title: 'Discuss your welding requirements'
-  subtitle: 'Custom seam specifications, material compatibility, or process validation.'
-  button_text: 'Contact our welding team'
-  button_link: /contact
+  title: Discuta seus requisitos de soldagem
+  subtitle: Especificações personalizadas de costura, compatibilidade de materiais ou validação de processo.
+  button_text: Entre em contato com nossa equipe de soldagem
+  button_link: /contato

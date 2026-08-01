@@ -1,9 +1,9 @@
 hero_text:
-  tagline: Get a Quote
+  tagline: Ein Angebot einholen
   title: Angebot anfordern<br />für Ihr Projekt
   subtitle: Teilen Sie uns Ihre Anforderungen mit. Wir antworten mit einem detaillierten Angebot innerhalb von 2 Werktagen.
 steps2_process:
-  title: How It Works
+  title: Wie es funktioniert
   subtitle: Vier einfache Schritte von der Anfrage bis zum Angebot.
   items:
     - title: 'Schritt 1: Anforderungen senden'
@@ -19,7 +19,7 @@ steps2_process:
       description: Nach Angebotsannahme erfolgt die Musterproduktion (falls zutreffend) oder direkt die Massen
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
+  tagline: Angebotsformular
   title: Erzählen Sie uns von Ihrem Projekt
   subtitle: Alle mit * gekennzeichneten Felder sind Pflichtfelder.
   fields:
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - Tauchzentrum
+        - Angeln
+        - Marine Tourismus / Resort
+        - Suche & Rettung
+        - Yachtbeiboot
+        - Gewerbliches Arbeitsboot
+        - Regierung / Militär
+        - OEM / Eigenmarke
+        - Persönlich / Freizeit
+        - Andere
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
-        - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - Keine Präferenz
+        - Marine-PVC (1100 dtex)
+        - Premium-Hypalon / CSM
+        - GFK-Rumpf
+        - Aluminium-Rumpf
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: z. B. 60-PS-Außenborder, kein Motor, zwei 115-PS-Motoren
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: z. B. individuelle Farben, Marken-/Logoanpassung, Verpackung, spezielle Armaturen
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: z. B. Lieferung innerhalb von 90 Tagen
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: Beschreiben Sie Ihre Anwendung, technische Spezifikationen oder besondere Anforderungen – fügen Sie, falls verfügbar, Referenzzeichnungen, Spezifikationen oder Links bei
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: Laden Sie Ihr Datenblatt, Ihre Zeichnung oder Ihr Referenzdokument (PDF, DWG, DXF) hoch
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: Laden Sie Ihr Logo oder Artwork für individuelles Branding hoch (AI, EPS, PNG)
 cta:
   title: Lieber per E-Mail besprechen?
   subtitle: Senden Sie Ihre Anfrage direkt an unser Verkaufsteam. Wir antworten innerhalb von 24 Stunden.
   actions:
     - variant: primary
-      text: Email us directly
+      text: Senden Sie uns direkt eine E-Mail
       href: /contact

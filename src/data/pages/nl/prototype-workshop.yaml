@@ -1,95 +1,110 @@
 meta:
-  title: 'Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}'
-  description: 'From CAD to sea-ready boat in 8-12 weeks. Our Prototype Workshop builds, rigs, and sea-trials custom RIBs and inflatable boats. Start your prototype project today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Prototype Werkplaats — Volledige Schaal RIB Prototyping & Zeeproeven | {SITE}
+  description: Van CAD naar zeeklaar boot in 8-12 weken. Onze Prototype Workshop bouwt, monteert en test op zee op maat gemaakte RIBs en opblaasbare boten. Begin vandaag nog met uw prototypeproject.
+back_text: Terug naar R&D Centrum
+home_label: Home
 hero:
-  tagline: 'Lab 05'
-  title: 'Prototype Workshop'
-  subtitle: 'From CAD model to sea-ready boat — built, fitted, and proven'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp'
-  image_alt: 'Afarer prototype workshop boat fabrication'
+  tagline: Lab 05
+  title: Prototype Werkplaats
+  subtitle: Van CAD-model tot zeevaardige boot — gebouwd, uitgerust en bewezen
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp
+  image_alt: Afarer prototype werkplaats bootfabricage
+intro: >-
+  Een CAD-model, hoe gedetailleerd ook, kan niet laten zien hoe een boot daadwerkelijk zal varen totdat deze het water ontmoet. Daarom is onze Prototype Werkplaats ontworpen om engineeringgegevens zo snel en nauwkeurig mogelijk om te zetten in een fysiek, zeegaand vaartuig. Elk nieuw
+  {SITE.name}-model — en elke belangrijke custom build — gaat door deze werkplaats voordat het productiegereedschap wordt ingezet.
+content_html: >
+  <h2>Waar ontwerp werkelijkheid wordt</h2>
 
-intro: 'A CAD model, no matter how detailed, cannot reveal how a boat will actually handle until it meets the water. That is why our Prototype Workshop is designed to translate engineering data into a physical, seagoing craft as quickly and accurately as possible. Every new {SITE.name} model — and every significant custom build — passes through this workshop before the production tooling is committed.'
+  <p>De werkplaats is volledig uitgerust voor de gelijktijdige fabricage van romp, buizen en tuigage. Deze parallelle werkwijze verkort de doorlooptijd van het prototype van engineeringrelease tot 8-12 weken, vergeleken met de industriestandaard van 16-20 weken. Wanneer uw toepassing een
+  gespecialiseerde oplossing vereist, kunnen we in minder dan drie maanden van concept naar validatie op het water gaan.</p>
 
-content_html: |
-  <h2>Where design becomes reality</h2>
-  <p>The workshop is fully equipped for simultaneous fabrication of hull, tubes, and rigging. This parallel-workflow approach cuts prototype lead time to 8-12 weeks from engineering release, compared to the industry norm of 16-20 weeks. When your application demands a specialised solution, we can move from concept to on-water validation in under three months.</p>
 
-  <h2>Workshop capabilities</h2>
+  <h2>Mogelijkheden van de werkplaats</h2>
+
   <table>
-    <thead><tr><th>Workstation</th><th>Equipment</th><th>Purpose</th></tr></thead>
+    <thead><tr><th>Werkstation</th><th>Apparatuur</th><th>Doel</th></tr></thead>
     <tbody>
-      <tr><td>Hull fabrication</td><td>Rotational moulding oven (HDPE), TIG welding bay (aluminium), hand-lay-up moulds (fibreglass)</td><td>Full-scale hull production in all three material types</td></tr>
-      <tr><td>Tube assembly</td><td>RF welding press, hot-air tacking station, inflation test jig</td><td>Fabrication of full-size tube assemblies with all baffles, cones, and valves</td></tr>
-      <tr><td>Rigging &amp; fitting</td><td>Engine hoist (500 kg), console mock-up frame, hydraulic hose crimper, electrical harness board</td><td>Complete outfitting: engine, steering, controls, fuel system, electronics, seating</td></tr>
-      <tr><td>Instrumentation bay</td><td>GPS speed sensor, fuel-flow meter, accelerometers, thermocouple array, data-logger</td><td>Sea-trial instrumentation installation and calibration</td></tr>
+      <tr><td>Rompfabricage</td><td>Rotatiemaloven (HDPE), TIG-lasruimte (aluminium), handlamineermallen (glasvezel)</td><td>Productie van rompen op ware grootte in alle drie de materiaalsoorten</td></tr>
+      <tr><td>Buizenmontage</td><td>RF-laspers, hete-luchthechtstation, opblaastestmal</td><td>Fabricage van buizenconstructies op ware grootte met alle schotten, kegels en ventielen</td></tr>
+      <tr><td>Tuigage &amp; afbouw</td><td>Motorkraan (500 kg), mock-upframe voor de console, hydraulische slangkrimper, kabelboombord</td><td>Volledige uitrusting: motor, besturing, bediening, brandstofsysteem, elektronica, zitplaatsen</td></tr>
+      <tr><td>Instrumentenruimte</td><td>GPS-snelheidssensor, brandstofstroommeter, accelerometers, thermokoppelarray, datalogger</td><td>Installatie en kalibratie van meetinstrumenten voor de proefvaart</td></tr>
     </tbody>
   </table>
 
-  <h2>The prototype journey — step by step</h2>
+
+  <h2>Het prototype-traject — stap voor stap</h2>
+
   <ol>
-    <li><strong>Engineering handover</strong> — The design package (3D model, FEA report, bill of materials, layup schedule) is formally reviewed by the workshop lead and the project engineer. Any manufacturing concerns are flagged and resolved before cutting begins.</li>
-    <li><strong>Hull production</strong> — The hull is built according to the engineering specification. For HDPE: the rotational moulding programme is loaded from the Moldex3D simulation. For aluminium: the CNC-cut plates are welded in the TIG bay following the approved weld map. For fibreglass: the ply book is followed layer by layer.</li>
-    <li><strong>Tube fabrication</strong> — Fabric is cut using CNC-pattern templates, then RF-welded into full-size chambers. Each chamber is inflated to test pressure and left for 24 h for initial stabilisation.</li>
-    <li><strong>Assembly &amp; rigging</strong> — Hull and tubes are mated. The engine is hung, steering and controls are connected, fuel system is installed, and all electrical circuits are wired and verified.</li>
-    <li><strong>Static tests</strong> — Before the boat touches water, it undergoes: buoyancy check (full load + 30 % reserve), fuel system pressure test, steering system full-lock cycle test, electrical earth-bond continuity test.</li>
-    <li><strong>Sea trial programme</strong> — 20 hours of in-water testing, detailed below.</li>
-    <li><strong>Prototype review</strong> — A formal sign-off meeting is held with engineering, production, and quality teams. Any required design changes are documented and incorporated into the production release.</li>
+    <li><strong>Engineeringoverdracht</strong> — Het ontwerppakket (3D-model, FEA-rapport, stuklijst, lamineerschema) wordt formeel beoordeeld door de werkplaatsleider en de projectingenieur. Eventuele productiepunten worden gesignaleerd en opgelost voordat met snijden wordt begonnen.</li>
+    <li><strong>Rompfabricage</strong> — De romp wordt gebouwd volgens de engineeringspecificatie. Voor HDPE: het rotatiemalprogramma wordt geladen uit de Moldex3D-simulatie. Voor aluminium: de CNC-gesneden platen worden in de TIG-ruimte gelast volgens de goedgekeurde laskaart. Voor glasvezel: het laminaatschema wordt laag voor laag gevolgd.</li>
+    <li><strong>Buizenfabricage</strong> — Het weefsel wordt gesneden met CNC-patroonmallen en vervolgens met RF-lassen tot kamers op ware grootte gevormd. Elke kamer wordt opgeblazen tot testdruk en gedurende 24 uur voor initiële stabilisatie achtergelaten.</li>
+    <li><strong>Montage &amp; tuigage</strong> — Romp en buizen worden gekoppeld. De motor wordt geplaatst, besturing en bediening worden aangesloten, het brandstofsysteem wordt geïnstalleerd en alle elektrische circuits worden bedraad en gecontroleerd.</li>
+    <li><strong>Statische tests</strong> — Voordat de boot het water raakt, ondergaat hij: een drijfvermogencheck (volledige belasting + 30 % reserve), een drukproef van het brandstofsysteem, een cyclustest van het stuurmechanisme over de volledige uitslag en een continuïteitstest van de aardverbinding.</li>
+    <li><strong>Proefvaartprogramma</strong> — 20 uur testen op het water, hieronder in detail beschreven.</li>
+    <li><strong>Prototype-review</strong> — Er wordt een formele afstemmingsvergadering gehouden met de teams voor engineering, productie en kwaliteit. Eventuele noodzakelijke ontwerpwijzigingen worden gedocumenteerd en verwerkt in de productierelease.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20-Hour Sea Trial Programme — Test Schedule</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Proefvaartprogramma van 20 uur — testschema</p>
     <div class="space-y-2 text-sm">
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Harbour manoeuvring — low-speed handling, reverse, fendering check</span>
+        <span class="flex-1">Havenmanoeuvres — besturing bij lage snelheid, achteruitvaren, controle van de fenders</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">4 h</span>
-        <span class="flex-1">Speed trial — GPS-verified top speed, cruise speed, fuel consumption at 3 RPM points</span>
+        <span class="flex-1">Snelheidsproef — met GPS geverifieerde topsnelheid, kruissnelheid en brandstofverbruik bij 3 toerentallen</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Turning test — tactical diameter, advance, and transfer at 20 kn, port and starboard</span>
+        <span class="flex-1">Draaiproef — tactische diameter, advance en transfer bij 20 kn, bakboord en stuurboord</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Slamming test — repeated runs through 0.5–1.0 m chop; accelerometer on helm seat base</span>
+        <span class="flex-1">Slammingtest — herhaalde passages door 0.5–1.0 m kortgolvig water; accelerometer op de voet van de stuurstoel</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Stability test — static heel angle with 4 crew + gear to starboard, offset load</span>
+        <span class="flex-1">Stabiliteitstest — statische hellingshoek met 4 bemanningsleden + uitrusting aan stuurboord, excentrische belasting</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Endurance run — 3 h continuous at cruise speed; temperature monitoring (engine, fuel, electrical)</span>
+        <span class="flex-1">Duurrit — 3 uur aaneengesloten op kruissnelheid; temperatuurbewaking (motor, brandstof, elektrisch)</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Final inspection — post-trial inspection of all systems, tighten/check all fasteners, document findings</span>
+        <span class="flex-1">Eindinspectie — inspectie van alle systemen na de proefvaart, alle bevestigingen aandraaien/controleren, bevindingen documenteren</span>
       </div>
     </div>
   </div>
 
-  <h2>Custom prototyping for unique applications</h2>
-  <p>The Prototype Workshop is where we solve the problems that standard production boats cannot address. Recent examples include:</p>
+
+  <h2>Maatwerkprototyping voor bijzondere toepassingen</h2>
+
+  <p>De prototypewerkplaats is de plek waar we de problemen oplossen die standaard productieboten niet kunnen aanpakken. Recente voorbeelden zijn onder meer:</p>
+
   <ul>
-    <li>A 7.8 m RIB for a search-and-rescue organisation, requiring a custom cabin structure with roll-over protection, integrated stretcher mounts, and a bow-mounted sonar pod — all prototyped, fitted, and tested at our facility.</li>
-    <li>A 5.2 m inflatable for a hydrographic survey contractor, with a cut-down transom, removable instrument mast, and through-hull transducer pockets designed to minimise flow disturbance.</li>
-    <li>An electric-drive 4.5 m tender for a superyacht, where the prototype was used to validate range, charging infrastructure, and noise levels before the client committed to a fleet of four.</li>
+    <li>Een 7.8 m RIB voor een zoek- en reddingsorganisatie, met een op maat gemaakte cabineconstructie met kantelbeveiliging, geïntegreerde bevestigingen voor brancards en een op de boeg gemonteerde sonarpod — allemaal geprototypeerd, gemonteerd en getest in onze faciliteit.</li>
+    <li>Een 5.2 m opblaasbare boot voor een hydrografische meetcontractant, met een verlaagd spiegel, een afneembare instrumentenmast en door de romp gevoerde transducerholtes die zijn ontworpen om stromingsverstoring te minimaliseren.</li>
+    <li>Een 4.5 m tender met elektrische aandrijving voor een superjacht, waarbij het prototype is gebruikt om bereik, laadinfrastructuur en geluidsniveaus te valideren voordat de klant overging tot een vloot van vier stuks.</li>
   </ul>
 
-  <h2>Our prototyping team</h2>
-  <p>The workshop is staffed by eight multi-skilled marine technicians, each cross-trained in at least two of the three core disciplines (hull, tube, rigging). The team lead is a master boatbuilder with 16 years of experience spanning custom one-off builds to production series. Every prototype is assigned a dedicated project engineer who serves as the single point of contact for the client throughout the build and trial process.</p>
 
-  <h2>Client involvement</h2>
-  <p>We actively encourage our clients to attend key milestones during the prototype build — particularly the initial fit-out review and the sea trial. Your operational feedback during these stages is invaluable in fine-tuning the boat before it enters production. We do not build in a vacuum; we build in partnership with you.</p>
-  <p>The 20-hour sea trial is also an opportunity for your team to familiarise themselves with the boat's handling, systems layout, and maintenance requirements, ensuring a smooth transition to service when the production boats are delivered.</p>
+  <h2>Ons prototypingteam</h2>
 
+  <p>De werkplaats wordt bemand door acht veelzijdige maritieme technici, die elk zijn opgeleid in ten minste twee van de drie kerndisciplines (romp, buizen, tuigage). De teamleider is een meesterbotenbouwer met 16 jaar ervaring, van unieke op maat gebouwde boten tot productieseries. Aan elk
+  prototype wordt een toegewijde projectingenieur toegewezen die gedurende het hele bouw- en testtraject het vaste aanspreekpunt voor de klant is.</p>
+
+
+  <h2>Betrokkenheid van de klant</h2>
+
+  <p>We moedigen onze klanten actief aan om aanwezig te zijn bij de belangrijkste mijlpalen tijdens de bouw van het prototype — in het bijzonder de eerste inrichtingsreview en de proefvaart. Uw operationele feedback tijdens deze fasen is van onschatbare waarde bij het finetunen van de boot voordat
+  hij in productie gaat. We bouwen niet in een vacuüm; we bouwen in partnerschap met u.</p>
+
+  <p>De proefvaart van 20 uur is ook een gelegenheid voor uw team om vertrouwd te raken met het vaargedrag van de boot, de indeling van de systemen en de onderhoudsvereisten, zodat de overgang naar gebruik vlekkeloos verloopt wanneer de productieboten worden geleverd.</p>
 cta:
-  title: 'Start your prototype project'
-  subtitle: 'Tell us about the boat you need and we will propose a prototype development plan.'
-  button_text: 'Contact our prototyping team'
+  title: Begin je prototypeproject
+  subtitle: Vertel ons over de boot die u nodig heeft en wij zullen een prototype-ontwikkelingsplan voorstellen.
+  button_text: Neem contact op met ons prototypingteam
   button_link: /contact

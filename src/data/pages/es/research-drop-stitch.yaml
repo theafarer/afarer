@@ -1,70 +1,86 @@
 meta:
-  title: 'How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}'
-  description: 'Deep dive into drop stitch technology: how thousands of internal threads turn flexible PVC into a rigid, high-pressure core capable of 15-20 PSI. Construction methods, materials, quality indicators, and applications across SUPs, kayaks, and inflatable boats.'
-back_text: 'Back to Research'
-
+  title: Cómo Funciona el Drop Stitch — La Ingeniería Detrás de los Núcleos Rígidos Inflables | {SITE}
+  description: 'Profundización en la tecnología de puntada caída: cómo miles de hilos internos convierten el PVC flexible en un núcleo rígido de alta presión capaz de soportar 15-20 PSI. Métodos de construcción, materiales, indicadores de calidad y aplicaciones en SUPs, kayaks y embarcaciones inflables.'
+back_text: Volver a la investigación
 hero:
-  tagline: 'Technology'
-  title: 'How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores'
-  subtitle: '8 min read'
+  tagline: Tecnología
+  title: Cómo Funciona el Drop Stitch — La Ingeniería Detrás de los Núcleos Rígidos Inflables
+  subtitle: Lectura de 8 min
+content_html: >
+  <h2>¿Qué es el punto caído?</h2>
 
-content_html: |
-  <h2>What Is Drop Stitch?</h2>
-  <p>Drop stitch (also called "drop-stitch fabric" or "drop-stitch core") is a construction method in which thousands of individual polyester threads connect the top and bottom layers of a fabric shell. When the shell is inflated, these threads act as internal tension members — they prevent the top and bottom panels from bulging outward into a round shape, forcing the panel to remain flat and rigid.</p>
-  <p>The result is a lightweight, portable structure that can withstand 15 – 20 PSI of internal pressure — comparable to the rigidity of a hard-shell board but fully deflatable for storage and transport.</p>
+  <p>La puntada caída (también llamada "tejido de puntada caída" o "núcleo de puntada caída") es un método de construcción en el que miles de hilos individuales de poliéster conectan las capas superior e inferior de una capa de tela. Cuando la carcasa se infla, estas roscas actúan como elementos de
+  tensión interna: evitan que los paneles superior e inferior se abulten hacia fuera formando una forma redonda, obligando al panel a permanecer plano y rígido.</p>
 
-  <h2>How It Works: The Physics</h2>
-  <p>In a conventional inflatable structure (like a balloon or an air mattress), the internal air pressure pushes equally in all directions. Without internal restraint, the structure becomes cylindrical or spherical. Drop stitch solves this by introducing tensile reinforcement:</p>
+  <p>El resultado es una estructura ligera y portátil que puede soportar entre 15 y 20 PSI de presión interna, comparable a la rigidez de una placa de carcasa rígida, pero totalmente desinflable para su almacenamiento y transporte.</p>
+
+
+  <h2>Cómo funciona: La física</h2>
+
+  <p>En una estructura inflable convencional (como un globo o un colchón hinchable), la presión interna del aire se desplaza por igual en todas las direcciones. Sin sujeción interna, la estructura se vuelve cilíndrica o esférica. El punto de caída soluciona esto introduciendo refuerzo a la
+  tracción:</p>
+
   <ul>
-    <li>Thousands of threads connect the top and bottom fabric layers</li>
-    <li>When inflated, the air pressure tries to push the top and bottom apart</li>
-    <li>The threads resist this separation, transferring the load into tension along the thread axis</li>
-    <li>The result is a flat, rigid panel that resists bending</li>
+    <li>Miles de hilos conectan las capas superior e inferior de tela</li>
+    <li>Cuando se infla, la presión del aire intenta separar la parte superior y inferior</li>
+    <li>Las roscas resisten esta separación, transfiriendo la carga a la tensión a lo largo del eje de la rosca</li>
+    <li>El resultado es un panel plano y rígido que resiste la flexión</li>
   </ul>
 
-  <h2>Construction Process</h2>
+
+  <h2>Proceso de construcción</h2>
+
   <ol>
-    <li><strong>Weaving:</strong> Polyester threads are woven simultaneously into two separate layers of base fabric (typically 1,100 DTEX or 1,680 DTEX PVC-coated polyester). The threads are loop-woven between the layers at a 90&deg; angle.</li>
-    <li><strong>Coating:</strong> The woven base fabric is coated with PVC (or occasionally TPU) using a knife-coating or calendar-coating process. This seals the threads and creates the air-tight membrane.</li>
-    <li><strong>Layer bonding:</strong> The drop-stitch core is bonded to outer laminated layers (typically 0.9 mm or 1.2 mm PVC) using heat lamination or adhesive.</li>
-    <li><strong>Welding:</strong> Rail bands are welded along the edges using hot air welding, RF welding, or high-frequency welding to create the side walls of the board.</li>
-    <li><strong>Valve installation:</strong> Boston valves or Halkey-Roberts valves are installed, typically with a pressure relief mechanism to prevent over-inflation.</li>
+    <li><strong>Tejido:</strong> Los hilos de poliéster se entrelazan simultáneamente en dos capas separadas de tela base (normalmente 1.100 DTEX o 1.680 DTEX poliéster recubierto de PVC). Los hilos se entrelazan en lazo entre las capas en un ángulo de 90°.</li>
+    <li><strong>Recubrimiento:</strong> La base tejida se recubre con PVC (o ocasionalmente TPU) mediante un proceso de recubrimiento con cuchillo o recubrimiento calendario. Esto sella las roscas y crea la membrana hermética.</li>
+    <li><strong>Unión de capas:</strong> El núcleo de punto de gota se une a capas laminadas exteriores (normalmente PVC de 0,9 mm o 1,2 mm) mediante laminación térmica o adhesivo.</li>
+    <li><strong>Soldadura:</strong> Las bandas de raíles se sueldan a lo largo de los bordes mediante soldadura a aire caliente, soldadura RF o soldadura de alta frecuencia para crear las paredes laterales de la placa.</li>
+    <li><strong>Instalación de válvulas:</strong> Se instalan válvulas Boston o válvulas Halkey-Roberts, normalmente con un mecanismo de alivio de presión para evitar la sobreinflación.</li>
   </ol>
 
-  <h2>Key Quality Indicators</h2>
-  <table class="w-full text-sm border-collapse">
+
+  <h2>Indicadores clave de calidad</h2>
+
+  <table class="w-texto completo-sm border-collapse">
     <thead>
       <tr class="bg-gray-100">
         <th class="p-3 text-left font-semibold text-gray-900 border">Parameter</th>
-        <th class="p-3 text-left font-semibold text-gray-900 border">Entry Level</th>
-        <th class="p-3 text-left font-semibold text-gray-900 border">Premium</th>
+        <ª clase="p-3 texto-izquierda-texto seminegrita-gris-borde 900">Nivel de entrada</th>
+        <ª clase="p-3 texto-izquierda-fuente-seminegrita texto-gris-borde 900">Premium</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td class="p-3 border">Thread density</td><td class="p-3 border">1 thread / sq in</td><td class="p-3 border">2 threads / sq in</td></tr>
-      <tr><td class="p-3 border">Base fabric</td><td class="p-3 border">1,100 DTEX</td><td class="p-3 border">1,680 DTEX</td></tr>
-      <tr><td class="p-3 border">Max pressure</td><td class="p-3 border">12 – 15 PSI</td><td class="p-3 border">18 – 22 PSI</td></tr>
-      <tr><td class="p-3 border">PVC thickness</td><td class="p-3 border">0.6 – 0.9 mm</td><td class="p-3 border">1.0 – 1.2 mm</td></tr>
-      <tr><td class="p-3 border">Rail construction</td><td class="p-3 border">Folded &amp; glued</td><td class="p-3 border">Welded &amp; fusion-bonded</td></tr>
+      <tr><td class="p-3 borde">Thread density</td><td class="p-3 borde">1 hilo / sq in</td><td class="p-3 borde">2 hilos / sq in</td></tr>
+      <tr><td class="p-3 borde">Base tela</td><td clase="p-3 borde">1.100 DTEX</td><td clase="p-3 borde">1.680 DTEX</td></tr>
+      <tr><td class="p-3 borde">Presión máxima</td><td clase="p-3 borde">12 – 15 PSI</td><td clase="p-3 borde">18 – 22 PSI</td></tr>
+      <tr><td class="p-3 borde">PVC espesor</td><td class="p-3 borde">0,6 – 0,9 mm</td><td class="p-3 borde">1,0 – 1,2 mm</td></tr>
+      <tr><td class="p-3 borde">Construcción de raíles</td><td class="p-3 borde">Doblado y pegado</td><td class="p-3 borde">Soldado y fusionado</td></tr>
     </tbody>
   </table>
 
-  <h2>Applications</h2>
+
+  <h2>Aplicaciones</h2>
+
   <ul>
-    <li><strong>SUP Boards:</strong> 4" – 6" thickness, 15 – 20 PSI, 1 – 2 threads/sq in</li>
-    <li><strong>Kayaks:</strong> Drop-stitch floor + inflatable side chambers, 10 – 15 PSI floor</li>
-    <li><strong>RIB floors:</strong> Drop-stitch floors for lightweight, packable RIB tenders, 12 – 18 PSI</li>
-    <li><strong>Boat fenders:</strong> Low-pressure drop stitch for shaped fenders with flat faces</li>
+    <li><strong>Placas SUP:</strong> 4" – 6" de grosor, 15 – 20 PSI, 1 – 2 roscas por pulgada cuadrada</li>
+    <li><strong>Kayaks:</strong> Cámaras laterales inflables de suelo con punto de caída, suelo de 10 a 15 PSI</li>
+    <li><strong>Suelos de costillas:</strong> Suelos de puntadas caídas para tenders ligeros y plegables de RIB, 12 – 18 PSI</li>
+    <li><strong>Guardabarros de barco:</strong> Puntada de caída de baja presión para guardabarros moldeados con caras planas</li>
   </ul>
 
-  <h2>Drop Stitch vs. Air Deck (Fiberglass or Wood Core)</h2>
-  <p>Hard-shell boards use EPS foam cores with fiberglass or wood stringer reinforcement. They are lighter, stiffer, and more responsive — but they cannot be deflated. Drop stitch trades some rigidity for full portability. For most recreational users, modern drop-stitch SUPs at 20 PSI are indistinguishable from entry-level hard boards in rigidity.</p>
 
-  <h2>How Afarer Uses Drop Stitch</h2>
-  <p>Afarer uses a 1,680 DTEX drop-stitch core across its SUP lineup, with 2 threads per square inch and a 1.2 mm PVC outer laminate. Boards are rated to 20 PSI and undergo a 24-hour pressure hold test at 1.5x rated pressure before shipment. Rail bands are hot-air welded with triple-layer fusion, and pressure relief valves are standard across all models.</p>
+  <h2>Puntada de caída vs. cubierta de aire (fibra de vidrio o núcleo de madera)</h2>
 
+  <p>Las tablas de carcasa dura utilizan núcleos de espuma EPS con refuerzo de fibra de vidrio o madera. Son más ligeras, rígidas y más receptivas, pero no se pueden desinflar. El punto de caída sacrifica algo de rigidez por una portabilidad total. Para la mayoría de los usuarios recreativos, los
+  SUP modernos de puntadas caídas a 20 PSI son indistinguibles de las tablas duras de nivel básico en rigidez.</p>
+
+
+  <h2>Cómo Afarer utiliza el punto de caída</h2>
+
+  <p>Afarer utiliza un núcleo de puntada caída DTEX de 1.680 en toda su gama SUP, con 2 hilos por pulgada cuadrada y un laminado exterior de PVC de 1,2 mm. Las placas están clasificadas para 20 PSI y se someten a una prueba de mantenimiento de presión de 24 horas a 1,5 veces la presión nominal antes
+  del envío. Las bandas de los raíles se soldan con aire caliente con fusión triple capa, y las válvulas de alivio de presión son estándar en todos los modelos.</p>
 cta:
-  title: 'Want to learn more about drop stitch?'
-  subtitle: 'Contact us for technical specifications and OEM inquiries.'
-  button_text: 'Contact sales'
-  button_link: /contact
+  title: ¿Quieres aprender más sobre la puntada caída?
+  subtitle: Contáctenos para especificaciones técnicas y consultas de OEM.
+  button_text: Contactar ventas
+  button_link: /contacto

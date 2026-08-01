@@ -2,26 +2,28 @@ hero:
   tagline: Laadunvarmistus
   title: Suorituskyky- ja laatutestaus
   subtitle: Jokainen afarerin kumivene ja SUP-lauta käy läpi tiukan suorituskyky- ja laatutestauksen T&K-keskuksessamme ennen lähetystä. Kattava testauksemme tarjoaa konkreettista näyttöä tuotteiden erinomaisuudesta.
-
 stats:
   - value: 100%
     label: Yksiköistä painetestattu
   - value: '8'
     label: Testausprotokollaa
-  - value:
+  - value: null
     label: Laatusertifioitu
   - value: 3 vuotta
     label: Rajoitettu takuu
-
 tests:
   - title: Painetestaus
-    description: Täytettäviä kammioita altistetaan niiden suositeltuja käyttörajoja korkeammille paineille pitkien ajanjaksojen ajan. Tämä varmistaa materiaalin ja saumojen ilmatiiviyden sekä rakenteellisen eheyden varmistaen, että tuote kestää aiottua käyttöä ja mahdollista ylitäyttöä ilman vikoja tai vuotoja.
+    description: >-
+      Täytettäviä kammioita altistetaan niiden suositeltuja käyttörajoja korkeammille paineille pitkien ajanjaksojen ajan. Tämä varmistaa materiaalin ja saumojen ilmatiiviyden sekä rakenteellisen eheyden varmistaen, että tuote kestää aiottua käyttöä ja mahdollista ylitäyttöä ilman vikoja tai
+      vuotoja.
     image: https://assets.afarer.com/images/afarer/factory/afarer-pressure-testing.webp
   - title: Iskunkestävyystestaus
     description: Tuotteita altistetaan hallituille iskuille eri painoista ja kulmista. Tämä arvioi materiaalin kestävyyttä puhkaisuja, repeämiä ja törmäysvaurioita vastaan vedessä, osoittaen kestävyyttä ja pitkäikäisyyttä.
     image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
   - title: UV-kestävyystestaus
-    description: Täytettäviä kammioita altistetaan niiden suositeltuja käyttörajoja korkeammille paineille pitkien ajanjaksojen ajan. Tämä varmistaa materiaalin ja saumojen ilmatiiviyden sekä rakenteellisen eheyden varmistaen, että tuote kestää aiottua käyttöä ja mahdollista ylitäyttöä ilman vikoja tai vuotoja.
+    description: >-
+      Täytettäviä kammioita altistetaan niiden suositeltuja käyttörajoja korkeammille paineille pitkien ajanjaksojen ajan. Tämä varmistaa materiaalin ja saumojen ilmatiiviyden sekä rakenteellisen eheyden varmistaen, että tuote kestää aiottua käyttöä ja mahdollista ylitäyttöä ilman vikoja tai
+      vuotoja.
     image: https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp
   - title: Kulutuskestävyystestaus
     description: Materiaalinäytteitä hangataan hankaavia pintoja vastaan määrätyn määrän jaksoja hallitussa paineessa. Tämä mittaa materiaalin kykyä kestää kulutusta toistuvasta käytöstä, kosketuksesta hiekkaan, kiviin tai muihin pintoihin varmistaen pitkäaikaisen kestävyyden.
@@ -38,13 +40,13 @@ tests:
   - title: Vesitiiviystestaus
     description: Täysin koottuja tuotteita upotetaan tai altistetaan vesisuihkulle vuotojen tarkistamiseksi saumoista, venttiileistä tai materiaaleista. Jokainen vene läpäisee pakollisen vesitiiviystarkastuksen ennen lähetystä.
     image: https://assets.afarer.com/images/afarer/factory/afarer-production-department-2.webp
-
 testing_section:
   tagline: Testausmenettelyt
   title: Perusteellinen testaus jokaisessa vaiheessa
-
 commitment:
   title: Sitoumuksemme
-  body: Näiden tiukkojen testausmenettelyjen avulla {SITE} tarjoaa asiakkailleen varmuuden siitä, että kumiveneemme ja SUP-lautamme ovat paitsi korkeasuorituskykyisiä, myös rakennettu kestämään —turvaten lukemattomia nautinnollisia ja turvallisia seikkailuja vesillä. Laatulaboratoriomme toimii riippumattomasti tuotannosta ja raportoi suoraan johdolle.
+  body: >-
+    Näiden tiukkojen testausmenettelyjen avulla {SITE} tarjoaa asiakkailleen varmuuden siitä, että kumiveneemme ja SUP-lautamme ovat paitsi korkeasuorituskykyisiä, myös rakennettu kestämään —turvaten lukemattomia nautinnollisia ja turvallisia seikkailuja vesillä. Laatulaboratoriomme toimii
+    riippumattomasti tuotannosta ja raportoi suoraan johdolle.
   cta: Pyydä testausdokumentaatiota
-  cta_link: /contact
+  cta_link: /yhteystiedot

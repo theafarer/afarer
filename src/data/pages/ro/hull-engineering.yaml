@@ -1,85 +1,103 @@
 meta:
-  title: 'Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}'
-  description: 'Explore our Hull Engineering Studio for CAD design, finite element analysis (FEA), and custom HDPE/aluminium/fibre glass hull development. Contact our engineering team to start your next RIB project.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Studio de inginerie a cocii — CAD, FEA și design personalizat de cocă RIB | {SITE}
+  description: Explorează studioul nostru de inginerie a cocăilor pentru design CAD, analiză cu elemente finite (FEA) și dezvoltare de cocă personalizate din HDPE/aluminiu/fibră de sticlă. Contactează echipa noastră de ingineri pentru a începe următorul tău proiect RIB.
+back_text: Înapoi la Centrul R&D
+home_label: Acasă
 hero:
-  tagline: 'Lab 02'
-  title: 'Hull Engineering Studio'
-  subtitle: 'Digital simulation, structural intelligence, custom hull design'
-  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
-  image_alt: 'Afarer hull engineering CAD design workstation'
+  tagline: Laborator 02
+  title: Studioul de Inginerie a Carenelor
+  subtitle: Simulare digitală, inteligență structurală, design personalizat al carenei
+  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
+  image_alt: Stație de lucru CAD pentru ingineria carenelor afarer
+intro: >-
+  Carena este coloana vertebrală a oricărei ambarcațiuni RIB sau bărci gonflabile. Trebuie să fie suficient de ușoară pentru a plana eficient, suficient de rezistentă pentru a absorbi sarcinile de impact și stabilă dimensional pe un interval larg de temperaturi. La {SITE.name}, Studioul nostru de
+  Inginerie a Carenelor combină modelare CAD avansată, analiza cu elemente finite (FEA) și decenii de experiență practică în arhitectură navală pentru a livra carene optimizate pentru misiunea lor — nu forme generice adaptate dintr-un catalog.
+content_html: >
+  <h2>Unde rezistența întâlnește hidrodinamica</h2>
 
-intro: 'The hull is the backbone of any RIB or inflatable boat. It must be light enough to plane efficiently, strong enough to absorb impact loads, and dimensionally stable across a wide temperature range. At {SITE.name}, our Hull Engineering Studio combines advanced CAD modelling, finite element analysis (FEA), and decades of practical naval-architecture experience to deliver hulls that are optimised for their intended mission — not generic shapes adapted from a catalogue.'
+  <p>Lucrăm cu trei materiale principale pentru carene —HDPE turnat rotativ, aluminiu naval sudat și fibră de sticlă stratificată manual —și avem capacitatea de inginerie de a proiecta, simula și valida fiecare dintre ele intern.</p>
 
-content_html: |
-  <h2>Where strength meets hydrodynamics</h2>
-  <p>We work with three primary hull materials — rotationally moulded HDPE, welded marine-grade aluminium, and hand-laid fibreglass — and have the engineering capability to design, simulate, and validate each one in-house.</p>
 
-  <h2>Design tools and standards</h2>
-  <p>Our digital engineering environment includes:</p>
+  <h2>Instrumente și standarde de proiectare</h2>
+
+  <p>Mediul nostru digital de inginerie include:</p>
+
   <table>
-    <thead><tr><th>Capability</th><th>Software / Tool</th><th>Application</th></tr></thead>
+    <thead><tr><th>Capacitate</th><th>Software / Instrument</th><th>Aplicație</th></tr></thead>
     <tbody>
-      <tr><td>3D parametric modelling</td><td>SolidWorks Professional</td><td>Hull surface, stringer system, engine bracket, deck layout</td></tr>
-      <tr><td>Finite element analysis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Stress mapping, modal analysis, crash/impact simulation</td></tr>
-      <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamic drag prediction, trim optimisation</td></tr>
-      <tr><td>Laminate engineering</td><td>ESAComp / CADEC</td><td>Fibreglass layer stacking, core selection, weight estimation</td></tr>
-      <tr><td>Mould flow simulation</td><td>Moldex3D</td><td>Rotomoulding wall-thickness prediction</td></tr>
+      <tr><td>Modelare parametrică 3D</td><td>SolidWorks Professional</td><td>Suprafața carenei, sistem de stinghiere, suport motor, amenajarea punții</td></tr>
+      <tr><td>Analiza cu elemente finite</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Cartografierea tensiunilor, analiză modală, simulare de coliziune/impact</td></tr>
+      <tr><td>Dinamica fluidelor computațională</td><td>Ansys Fluent / Star-CCM+</td><td>Predicția rezistenței hidrodinamice, optimizarea asietei</td></tr>
+      <tr><td>Ingineria laminatelor</td><td>ESAComp / CADEC</td><td>Stratificarea fibrei de sticlă, selecția miezului, estimarea greutății</td></tr>
+      <tr><td>Simularea fluxului în matriță</td><td>Moldex3D</td><td>Predicția grosimii pereților la rotomulare</td></tr>
     </tbody>
   </table>
 
-  <h2>Our engineering workflow</h2>
-  <p>Every hull design, whether it is a standard model or a fully custom project, follows a rigorous five-stage process:</p>
+
+  <h2>Fluxul nostru de lucru în inginerie</h2>
+
+  <p>Fiecare design de carenă, fie că este un model standard sau un proiect complet personalizat, urmează un proces riguros în cinci etape:</p>
+
   <ol>
-    <li><strong>Concept &amp; requirements gathering</strong> — We meet with you to define payload, speed envelope, sea-state capability, towing requirements, and any special mission equipment (deck hatches, console positions, fuel-tank integration).</li>
-    <li><strong>3D surfacing &amp; hydrostatic calculation</strong> — The hull form is modelled in SolidWorks and checked for hydrostatic stability (GM, righting arm) using built-in analysis tools.</li>
-    <li><strong>Structural FEA</strong> — Load cases are defined: static (crew + gear), dynamic (planing impacts at 5g), and slamming (dropping from a wave crest at 3 m/s). Stress contours are reviewed; safety factor ≥ 2.5 is mandatory.</li>
-    <li><strong>CFD drag optimisation</strong> — The hull is simulated at three loading conditions and five speeds. Wetted surface area, trim angle, and residual resistance are iteratively reduced.</li>
-    <li><strong>Design review &amp; release</strong> — The complete engineering package (3D model, FEA report, CFD report, weight estimate, ply book) is reviewed by our senior naval architect before release to the prototype workshop.</li>
+    <li><strong>Concept și colectarea cerințelor</strong> —Ne întâlnim cu dumneavoastră pentru a defini sarcina utilă, plaja de viteze, capacitatea la starea mării, cerințele de remorcare și orice echipament special de misiune (capace de punte, poziții ale consolei, integrarea rezervorului de combustibil).</li>
+    <li><strong>Modelare 3D a suprafețelor și calcul hidrostatic</strong> —Forma carenei este modelată în SolidWorks și verificată pentru stabilitate hidrostatică (GM, brațul de redresare) folosind instrumente de analiză integrate.</li>
+    <li><strong>FEA structural</strong> —Se definesc cazurile de încărcare: static (echipaj + echipament), dinamic (impacturi în planare la 5g) și „slamming" (cădere de pe creasta unui val la 3 m/s). Se analizează contururile de tensiune; factorul de siguranță ≥ 2.5 este obligatoriu.</li>
+    <li><strong>Optimizarea rezistenței prin CFD</strong> —Carena este simulată în trei condiții de încărcare și la cinci viteze. Suprafața udată, unghiul de asietă și rezistența reziduală sunt reduse iterativ.</li>
+    <li><strong>Revizuirea și lansarea designului</strong> —Pachetul complet de inginerie (model 3D, raport FEA, raport CFD, estimare de greutate, plan de stratificare) este revizuit de arhitectul nostru naval principal înainte de lansarea către atelierul de prototipuri.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Stress Distribution — RIB 450 Patrol Hull (Aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Distribuția tensiunilor FEA —Carena de patrulare RIB 450 (Aluminiu 5083)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
-        <span class="text-gray-500">Safety factor at max payload</span>
+        <span class="text-gray-500">Factor de siguranță la sarcină utilă maximă</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
-        <span class="text-gray-500">Drag reduction vs previous generation</span>
+        <span class="text-gray-500">Reducerea rezistenței față de generația anterioară</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
-        <span class="text-gray-500">Peak slamming pressure (design limit)</span>
+        <span class="text-gray-500">Presiunea maximă de slamming (limită de proiectare)</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
-        <span class="text-gray-500">Cumulative FEA runtime in 2025</span>
+        <span class="text-gray-500">Timp cumulativ de rulare FEA în 2025</span>
       </div>
     </div>
   </div>
 
-  <h2>Customisation: your hull, your rules</h2>
-  <p>No two operators have identical requirements. A harbour-patrol RIB needs a shallow-V hull for stability at low speed; a fast-interception craft needs a deep-V with spray rails; a dive-support boat needs a wide beam and a low transom. We do not force your application into a pre-existing hull shape. We design from your specification upward.</p>
-  <p>Examples of recent custom hull engineering projects:</p>
+
+  <h2>Personalizare: carena dumneavoastră, regulile dumneavoastră</h2>
+
+  <p>Nici doi operatori nu au cerințe identice. Un RIB de patrulare portuară are nevoie de o carenă cu V redus pentru stabilitate la viteză mică; o ambarcațiune de interceptare rapidă are nevoie de un V adânc cu stinghii anti-stropire; o barcă de suport pentru scufundări are nevoie de o lățime mare
+  și de o oglindă joasă. Nu forțăm aplicația dumneavoastră într-o formă de carenă preexistentă. Proiectăm pornind de la specificațiile dumneavoastră.</p>
+
+  <p>Exemple de proiecte recente de inginerie a carenelor personalizate:</p>
+
   <ul>
-    <li>A stretched 6.8 m HDPE hull for a Caribbean tour operator, with a reinforced bow for beach landings (+15 % bottom thickness).</li>
-    <li>A lightweight aluminium 7.2 m RIB for a coast guard, with integrated fuel-tank baffles and equipment-locker stiffeners.</li>
-    <li>A fibreglass 5.5 m dive boat with a cut-down transom and twin battery boxes, designed for easy snorkeller reboarding.</li>
+    <li>O carenă HDPE lungită de 6.8 m pentru un tour operator din Caraibe, cu prova întărită pentru aterizări pe plajă (+15 % grosimea fundului).</li>
+    <li>Un RIB ușor din aluminiu, de 7.2 m, pentru garda de coastă, cu deflectoare integrate ale rezervorului de combustibil și întărituri pentru dulapurile de echipament.</li>
+    <li>O barcă de scufundări din fibră de sticlă, de 5.5 m, cu oglindă redusă și cutii duble pentru baterii, proiectată pentru reîmbarcarea ușoară a snorkelerilor.</li>
   </ul>
 
-  <h2>Our engineers</h2>
-  <p>The studio is led by a senior naval architect with 14 years of experience in high-speed craft design, supported by two mechanical engineers specialised in FEA and CFD. All three hold advanced degrees in marine engineering or naval architecture from internationally recognised universities. The team publishes regularly in industry journals and presents at conferences such as the International Conference on High-Performance Marine Vehicles.</p>
 
-  <h2>Partner with us on your next hull</h2>
-  <p>From the first concept sketch to the final stress report, our Hull Engineering Studio is your partner in creating a boat that is not just built — but engineered. We invest the simulation hours upfront so that every weld, every laminate layer, and every curve of the hull is there for a reason.</p>
-  <p>Whether you need a minor modification to an existing model or a completely clean-sheet design, we are ready to discuss your requirements.</p>
+  <h2>Inginerii noștri</h2>
 
+  <p>Studioul este condus de un arhitect naval principal cu 14 ani de experiență în proiectarea ambarcațiunilor de mare viteză, sprijinit de doi ingineri mecanici specializați în FEA și CFD. Toți trei dețin diplome avansate în inginerie marină sau arhitectură navală de la universități recunoscute
+  internațional. Echipa publică în mod regulat în reviste de specialitate și prezintă lucrări la conferințe precum International Conference on High-Performance Marine Vehicles.</p>
+
+
+  <h2>Partener pentru următoarea dumneavoastră carenă</h2>
+
+  <p>De la prima schiță de concept până la raportul final de tensiuni, Studioul nostru de Inginerie a Carenelor este partenerul dumneavoastră în crearea unei bărci care nu este doar construită —ci proiectată. Investim orele de simulare în avans, astfel încât fiecare sudură, fiecare strat de laminat
+  și fiecare curbă a carenei să existe dintr-un motiv.</p>
+
+  <p>Fie că aveți nevoie de o modificare minoră a unui model existent sau de un design complet de la zero, suntem gata să discutăm cerințele dumneavoastră.</p>
 cta:
-  title: 'Start your hull design consultation'
-  subtitle: 'Tell us about your mission profile and we will propose an engineering path.'
-  button_text: 'Contact our engineering team'
+  title: Începeți consultanța pentru proiectarea carenei
+  subtitle: Spuneți-ne profilul misiunii dvs. și vă vom propune o soluție de inginerie.
+  button_text: Contactați echipa noastră de inginerie
   button_link: /contact

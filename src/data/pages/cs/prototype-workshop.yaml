@@ -1,95 +1,110 @@
 meta:
-  title: 'Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}'
-  description: 'From CAD to sea-ready boat in 8-12 weeks. Our Prototype Workshop builds, rigs, and sea-trials custom RIBs and inflatable boats. Start your prototype project today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Prototypová dílna — Prototypování RIB v plném měřítku a námořní zkoušky | {SITE}
+  description: Od CAD po loď připravenou na vodu za 8–12 týdnů. Náš Prototypový workshop staví, vybavuje a zkouší na vodě zakázkové čluny RIB a nafukovací čluny. Spusťte svůj prototypový projekt ještě dnes.
+back_text: Zpět do centra výzkumu a vývoje
+home_label: Domů
 hero:
-  tagline: 'Lab 05'
-  title: 'Prototype Workshop'
-  subtitle: 'From CAD model to sea-ready boat — built, fitted, and proven'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp'
-  image_alt: 'Afarer prototype workshop boat fabrication'
+  tagline: Laboratoř 05
+  title: Prototypová dílna
+  subtitle: Od CAD modelu k lodi připravené na moře — postavené, vybavené a prověřené
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp
+  image_alt: Výroba člunů v prototypové dílně afarer
+intro: >-
+  Model CAD, ať je sebedetailnější, neodhalí, jak se člun skutečně chová, dokud se nesetká s vodou. Proto je naše Prototypová dílna navržena tak, aby převáděla inženýrská data na fyzické plavidlo pro otevřené moře co nejrychleji a nejpřesněji. Každý nový model {SITE.name} – a každá významná
+  zakázková stavba – prochází touto dílnou, než se zadá výroba nástrojů.
+content_html: >-
+  <h2>Kde se design stává skutečností</h2>
 
-intro: 'A CAD model, no matter how detailed, cannot reveal how a boat will actually handle until it meets the water. That is why our Prototype Workshop is designed to translate engineering data into a physical, seagoing craft as quickly and accurately as possible. Every new {SITE.name} model — and every significant custom build — passes through this workshop before the production tooling is committed.'
+  <p>Dílna je plně vybavena pro souběžnou výrobu trupu, nafukovacích komor a výstroje. Tento přístup s paralelním tokem práce zkracuje dobu výroby prototypu na 8–12 týdnů od uvolnění konstrukce oproti oborovému standardu 16–20 týdnů. Pokud vaše aplikace vyžaduje specializované řešení, dokážeme se
+  dostat od konceptu k ověření na vodě za méně než tři měsíce.</p>
 
-content_html: |
-  <h2>Where design becomes reality</h2>
-  <p>The workshop is fully equipped for simultaneous fabrication of hull, tubes, and rigging. This parallel-workflow approach cuts prototype lead time to 8-12 weeks from engineering release, compared to the industry norm of 16-20 weeks. When your application demands a specialised solution, we can move from concept to on-water validation in under three months.</p>
 
-  <h2>Workshop capabilities</h2>
+  <h2>Možnosti dílny</h2>
+
   <table>
-    <thead><tr><th>Workstation</th><th>Equipment</th><th>Purpose</th></tr></thead>
+    <thead><tr><th>Pracoviště</th><th>Vybavení</th><th>Účel</th></tr></thead>
     <tbody>
-      <tr><td>Hull fabrication</td><td>Rotational moulding oven (HDPE), TIG welding bay (aluminium), hand-lay-up moulds (fibreglass)</td><td>Full-scale hull production in all three material types</td></tr>
-      <tr><td>Tube assembly</td><td>RF welding press, hot-air tacking station, inflation test jig</td><td>Fabrication of full-size tube assemblies with all baffles, cones, and valves</td></tr>
-      <tr><td>Rigging &amp; fitting</td><td>Engine hoist (500 kg), console mock-up frame, hydraulic hose crimper, electrical harness board</td><td>Complete outfitting: engine, steering, controls, fuel system, electronics, seating</td></tr>
-      <tr><td>Instrumentation bay</td><td>GPS speed sensor, fuel-flow meter, accelerometers, thermocouple array, data-logger</td><td>Sea-trial instrumentation installation and calibration</td></tr>
+      <tr><td>Výroba trupu</td><td>Rotační pec (HDPE), svařovací pracoviště TIG (hliník), formy pro ruční laminaci (sklolaminát)</td><td>Výroba trupu v plné velikosti ze všech tří typů materiálů</td></tr>
+      <tr><td>Montáž nafukovacích komor</td><td>RF svařovací lis, stanoviště pro bodové svařování horkým vzduchem, přípravek pro zkoušku nahuštění</td><td>Výroba nafukovacích komor v plné velikosti se všemi přepážkami, kužely a ventily</td></tr>
+      <tr><td>Montáž a výstroj</td><td>Zvedák motoru (500 kg), zkušební rám konzoly, krimpovací kleště hydraulických hadic, deska elektrických kabeláží</td><td>Kompletní výstroj: motor, řízení, ovládací prvky, palivový systém, elektronika, sedadla</td></tr>
+      <tr><td>Pracoviště přístrojů</td><td>GPS senzor rychlosti, průtokoměr paliva, akcelerometry, termočlánkové pole, datalogger</td><td>Instalace a kalibrace přístrojového vybavení pro zkoušky na vodě</td></tr>
     </tbody>
   </table>
 
-  <h2>The prototype journey — step by step</h2>
+
+  <h2>Cesta prototypu — krok za krokem</h2>
+
   <ol>
-    <li><strong>Engineering handover</strong> — The design package (3D model, FEA report, bill of materials, layup schedule) is formally reviewed by the workshop lead and the project engineer. Any manufacturing concerns are flagged and resolved before cutting begins.</li>
-    <li><strong>Hull production</strong> — The hull is built according to the engineering specification. For HDPE: the rotational moulding programme is loaded from the Moldex3D simulation. For aluminium: the CNC-cut plates are welded in the TIG bay following the approved weld map. For fibreglass: the ply book is followed layer by layer.</li>
-    <li><strong>Tube fabrication</strong> — Fabric is cut using CNC-pattern templates, then RF-welded into full-size chambers. Each chamber is inflated to test pressure and left for 24 h for initial stabilisation.</li>
-    <li><strong>Assembly &amp; rigging</strong> — Hull and tubes are mated. The engine is hung, steering and controls are connected, fuel system is installed, and all electrical circuits are wired and verified.</li>
-    <li><strong>Static tests</strong> — Before the boat touches water, it undergoes: buoyancy check (full load + 30 % reserve), fuel system pressure test, steering system full-lock cycle test, electrical earth-bond continuity test.</li>
-    <li><strong>Sea trial programme</strong> — 20 hours of in-water testing, detailed below.</li>
-    <li><strong>Prototype review</strong> — A formal sign-off meeting is held with engineering, production, and quality teams. Any required design changes are documented and incorporated into the production release.</li>
+    <li><strong>Předání konstrukce</strong> — Kompletní konstrukční balíček (3D model, zpráva FEA, kusovník, harmonogram vrstvení) je formálně přezkoumán vedoucím dílny a projektovým inženýrem. Veškeré výrobní připomínky se vyznačí a vyřeší dříve, než začne řezání.</li>
+    <li><strong>Výroba trupu</strong> — Trup se staví podle konstrukční specifikace. Pro HDPE: rotační program se načítá ze simulace Moldex3D. Pro hliník: CNC vyřezané plechy se svařují v TIG pracovišti podle schválené mapy svarů. Pro sklolaminát: jednotlivé vrstvy se kladou jedna po druhé podle plánu vrstvení.</li>
+    <li><strong>Výroba nafukovacích komor</strong> — Tkanina se řeže pomocí CNC šablon a poté se RF svařuje do komor plné velikosti. Každá komora se nahustí na zkušební tlak a nechá se 24 h pro počáteční stabilizaci.</li>
+    <li><strong>Montáž a výstroj</strong> — Trup a nafukovací komory se spojí. Zavěsí se motor, připojí se řízení a ovládací prvky, nainstaluje se palivový systém a všechny elektrické obvody se zapojí a ověří.</li>
+    <li><strong>Statické zkoušky</strong> — Než se člun dotkne vody, projde: kontrolou vztlaku (plné zatížení + 30 % rezerva), tlakovou zkouškou palivového systému, zkouškou plného rozsahu řízení a zkouškou spojitosti elektrického uzemnění.</li>
+    <li><strong>Program zkoušek na vodě</strong> — 20 hodin testování na vodě, podrobnosti níže.</li>
+    <li><strong>Přezkoumání prototypu</strong> — Koná se formální schvalovací jednání za účasti konstrukčního, výrobního a týmu kvality. Veškeré nutné konstrukční změny se zdokumentují a zapracují do výrobního uvolnění.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20-Hour Sea Trial Programme — Test Schedule</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Program dvacetihodinové zkoušky na vodě — Harmonogram testů</p>
     <div class="space-y-2 text-sm">
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Harbour manoeuvring — low-speed handling, reverse, fendering check</span>
+        <span class="flex-1">Manévrování v přístavu — ovládání při nízké rychlosti, couvání, kontrola odrazníků</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">4 h</span>
-        <span class="flex-1">Speed trial — GPS-verified top speed, cruise speed, fuel consumption at 3 RPM points</span>
+        <span class="flex-1">Rychlostní zkouška — maximální rychlost ověřená GPS, cestovní rychlost, spotřeba paliva ve 3 bodech otáček</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Turning test — tactical diameter, advance, and transfer at 20 kn, port and starboard</span>
+        <span class="flex-1">Zkouška zatáčení — taktický průměr, postup a posun při 20 kn, levobok a pravobok</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Slamming test — repeated runs through 0.5–1.0 m chop; accelerometer on helm seat base</span>
+        <span class="flex-1">Test dopadů — opakované průjezdy přes vlny 0.5–1.0 m; akcelerometr na podstavci sedadla kormidelníka</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Stability test — static heel angle with 4 crew + gear to starboard, offset load</span>
+        <span class="flex-1">Zkouška stability — statický úhel náklonu se 4 členy posádky a vybavením na pravoboku, nesymetrické zatížení</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Endurance run — 3 h continuous at cruise speed; temperature monitoring (engine, fuel, electrical)</span>
+        <span class="flex-1">Vytrvalostní jízda — 3 h nepřetržitě při cestovní rychlosti; sledování teplot (motor, palivo, elektroinstalace)</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Final inspection — post-trial inspection of all systems, tighten/check all fasteners, document findings</span>
+        <span class="flex-1">Závěrečná prohlídka — kontrola všech systémů po zkoušce, dotažení a kontrola všech spojovacích prvků, dokumentace zjištění</span>
       </div>
     </div>
   </div>
 
-  <h2>Custom prototyping for unique applications</h2>
-  <p>The Prototype Workshop is where we solve the problems that standard production boats cannot address. Recent examples include:</p>
+
+  <h2>Zakázkové prototypy pro speciální aplikace</h2>
+
+  <p>Prototypový workshop je místo, kde řešíme problémy, které standardní sériové čluny pokrýt neumějí. Mezi nedávné příklady patří:</p>
+
   <ul>
-    <li>A 7.8 m RIB for a search-and-rescue organisation, requiring a custom cabin structure with roll-over protection, integrated stretcher mounts, and a bow-mounted sonar pod — all prototyped, fitted, and tested at our facility.</li>
-    <li>A 5.2 m inflatable for a hydrographic survey contractor, with a cut-down transom, removable instrument mast, and through-hull transducer pockets designed to minimise flow disturbance.</li>
-    <li>An electric-drive 4.5 m tender for a superyacht, where the prototype was used to validate range, charging infrastructure, and noise levels before the client committed to a fleet of four.</li>
+    <li>RIB o délce 7.8 m pro záchrannou organizaci, vyžadující zakázkovou nástavbu kabiny s ochranou proti převrácení, integrovanými úchytkami pro nosítka a sonarovou gondolou na přídi — vše prototypováno, osazeno a testováno v našem zařízení.</li>
+    <li>Nafukovací člun o délce 5.2 m pro dodavatele hydrografického průzkumu se sníženým zrcadlem, demontovatelným stožárem pro přístroje a kapsami pro převodníky skrz trup navrženými tak, aby minimalizovaly rušení proudění.</li>
+    <li>Elektrický tender o délce 4.5 m pro superjachtu, kde prototyp posloužil k ověření dojezdu, nabíjecí infrastruktury a hladiny hluku, než se klient zavázal k pořízení flotily čtyř člunů.</li>
   </ul>
 
-  <h2>Our prototyping team</h2>
-  <p>The workshop is staffed by eight multi-skilled marine technicians, each cross-trained in at least two of the three core disciplines (hull, tube, rigging). The team lead is a master boatbuilder with 16 years of experience spanning custom one-off builds to production series. Every prototype is assigned a dedicated project engineer who serves as the single point of contact for the client throughout the build and trial process.</p>
 
-  <h2>Client involvement</h2>
-  <p>We actively encourage our clients to attend key milestones during the prototype build — particularly the initial fit-out review and the sea trial. Your operational feedback during these stages is invaluable in fine-tuning the boat before it enters production. We do not build in a vacuum; we build in partnership with you.</p>
-  <p>The 20-hour sea trial is also an opportunity for your team to familiarise themselves with the boat's handling, systems layout, and maintenance requirements, ensuring a smooth transition to service when the production boats are delivered.</p>
+  <h2>Náš prototypový tým</h2>
 
+  <p>Dílna zaměstnává osm všestranných námořních techniků, z nichž každý je proškolen nejméně ve dvou ze tří klíčových disciplín (trup, nafukovací komory, vybavení). Vedoucí týmu je mistr stavitel člunů se 16 lety zkušeností, které sahají od zakázkových kusových staveb až po sériovou výrobu. Každému
+  prototypu je přidělen projektový inženýr, který je pro klienta jediným kontaktním místem po celou dobu stavby a zkoušek.</p>
+
+
+  <h2>Zapojení klienta</h2>
+
+  <p>Naše klienty aktivně vybízíme k účasti na klíčových milnících stavby prototypu — zejména při přejímce prvotní kompletace a při zkouškách na vodě. Vaše provozní zpětná vazba je v této fázi neocenitelná pro doladění člunu před zahájením výroby. Nestavíme ve vzduchoprázdnu; stavíme v partnerství s
+  vámi.</p>
+
+  <p>Dvacetihodinová zkouška na vodě je také příležitostí, aby se váš tým seznámil s ovládáním člunu, uspořádáním systémů a požadavky na údržbu, což zajistí plynulý přechod do provozu po dodání sériových člunů.</p>
 cta:
-  title: 'Start your prototype project'
-  subtitle: 'Tell us about the boat you need and we will propose a prototype development plan.'
-  button_text: 'Contact our prototyping team'
+  title: Zahajte svůj prototypový projekt
+  subtitle: Popište nám člun, který potřebujete, a my navrhneme plán vývoje prototypu.
+  button_text: Kontaktujte náš prototypový tým
   button_link: /contact

@@ -2,17 +2,15 @@ hero:
   tagline: Kvalitetssikring
   title: Ytelses- og kvalitetstesting
   subtitle: Hver afarer-gummibåt og SUP gjennomgår strenge ytelses- og kvalitetstester i vårt FoU-senter før forsendelse. Våre omfattende tester gir håndgripelig bevis på produkteksellens.
-
 stats:
   - value: 100%
     label: Trykktestede enheter
   - value: '8'
     label: Testprotokoller
-  - value:
+  - value: null
     label: Kvalitetssertifikat
-  - value: 3-Year
+  - value: 3-årig
     label: Begrenset garanti
-
 tests:
   - title: Trykktest
     description: Luftkamre utsettes for trykk over anbefalte arbeidsgrenser over lengre tid. Dette verifiserer tetthet og strukturell integritet av materiale og sømmer, og sikrer at produktet tåler tiltenkt bruk og potensiell overoppblåsing uten feil eller lekkasjer.
@@ -38,13 +36,13 @@ tests:
   - title: Vanntetthetstest
     description: Fullt monterte produkter senkes eller utsettes for vann for å sjekke for lekkasjer gjennom sømmer, ventiler eller materialer. Hver båt gjennomgår obligatorisk vanntetthetskontroll før forsendelse.
     image: https://assets.afarer.com/images/afarer/factory/afarer-production-department-2.webp
-
 testing_section:
   tagline: Testprosedyrer
   title: Strenge tester på hvert trinn
-
 commitment:
   title: Vårt løfte
-  body: Gjennom disse strenge testprosedyrene gir {SITE} kundene trygghet på at våre oppblåsbare SUP-er og båter ikke bare er ytelsesdyktige, men også bygget for å vare i årevis —og garanterer utallige hyggelige og trygge eventyr på vannet. Kvalitetslaboratoriet vårt opererer uavhengig av produksjonen og rapporterer direkte til ledelsen.
+  body: >-
+    Gjennom disse strenge testprosedyrene gir {SITE} kundene trygghet på at våre oppblåsbare SUP-er og båter ikke bare er ytelsesdyktige, men også bygget for å vare i årevis —og garanterer utallige hyggelige og trygge eventyr på vannet. Kvalitetslaboratoriet vårt opererer uavhengig av produksjonen
+    og rapporterer direkte til ledelsen.
   cta: Be om testdokumentasjon
   cta_link: /contact

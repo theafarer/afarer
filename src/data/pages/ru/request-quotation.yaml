@@ -1,25 +1,25 @@
 hero_text:
-  tagline: Get a Quote
+  tagline: Получить предложение
   title: Запросить предложение<br />для вашего проекта
   subtitle: Расскажите нам о ваших требованиях, и наша команда ответит с подробным предложением в течение 2 рабочих дней.
 steps2_process:
-  title: How It Works
+  title: Как это работает
   subtitle: Четыре простых шага от запроса до предложения.
   items:
-    - title: 'Step 1: Submit Your Requirements'
+    - title: 'Шаг 1: Отправьте ваши требования'
       description: Заполните форму ниже с указанием типа продукта, количества и спецификаций. Чем больше деталей вы предоставите, тем точнее будет ваше предложение.
       icon: tabler:file-text
-    - title: 'Step 2: We Review & Advise'
+    - title: 'Шаг 2: Мы рассматриваем и даем рекомендации'
       description: Наша инженерная команда рассматривает ваши требования и может связаться с вами для уточнения. Мы предоставляем рекомендации по конфигурации и опциям продукта.
       icon: tabler:users
-    - title: 'Step 3: Receive Your Quote'
+    - title: 'Шаг 3: Получите вашу смету'
       description: Вы получаете подробное предложение, включающее цены за единицу, MOQ, сроки поставки, условия оплаты и варианты доставки. Обычно в течение 48 часов.
       icon: tabler:currency-dollar
-    - title: 'Step 4: Sample & Production'
+    - title: 'Шаг 4: Образец и производство'
       description: После принятия предложения мы переходим к производству образцов (если применимо) или сразу к массовому производству. Регулярные обновления на протяжении всего процесса.
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
+  tagline: Форма запроса цены
   title: Расскажите нам о вашем проекте
   subtitle: Все поля с * обязательны для заполнения.
   fields:
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - Дайвинг-центр
+        - Рыбалка
+        - Морской туризм / Курорт
+        - Поиск и спасение
+        - Яхтенный тендер
+        - Коммерческое рабочее судно
+        - Правительство / Военные
+        - ОЕМ / Частная марка
+        - Личное / Развлекательное
+        - Другое
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
-        - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - Без предпочтений
+        - Морской ПВХ (1100 дтекс)
+        - Премиум Гипалон / CSM
+        - Стеклопластиковый корпус
+        - Алюминиевый корпус
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: например, 60 л.с. подвесной, без двигателя, двойной 115 л.с.
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: например, индивидуальные цвета, брендинг/логотип, упаковка, специальные элементы
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: например, доставка в течение 90 дней
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: Опишите ваше приложение, технические характеристики или любые специальные требования — включите прилагаемые чертежи, спецификации или ссылки, если они доступны
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: Загрузите ваш технический паспорт, чертеж или справочный документ (PDF, DWG, DXF)
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: Загрузите ваш логотип или произведение искусства для индивидуального брендинга (AI, EPS, PNG)
 cta:
-  title: Prefer to discuss by email?
-  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
+  title: Предпочитаете обсудить по электронной почте?
+  subtitle: Отправьте ваш запрос напрямую нашей команде продаж, и мы ответим в течение 24 часов.
   actions:
     - variant: primary
-      text: Email us directly
+      text: Напишите нам напрямую
       href: /contact

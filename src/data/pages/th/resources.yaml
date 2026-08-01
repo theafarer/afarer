@@ -1,52 +1,49 @@
 meta:
-  title: 'B2B Resources & Downloads | {SITE}'
-  description: 'Download OEM manufacturing guides, product catalogs, quality reports, and ROI calculators for inflatable SUP businesses.'
-
+  title: ทรัพยากรและไฟล์ดาวน์โหลดสำหรับ B2B | {SITE}
+  description: ดาวน์โหลดคู่มือการผลิตแบบ OEM แคตตาล็อกสินค้า รายงานคุณภาพ และเครื่องคำนวณ ROI สำหรับธุรกิจซัพเป่าลม
 hero:
-  tagline: Resource Center
-  title: 'Tools & Resources<br />For SUP Business Partners'
-  subtitle: 'Download OEM guides, product catalogs, quality reports, and use our ROI calculator to plan your SUP fleet investment.'
-
+  tagline: ศูนย์ทรัพยากรความรู้
+  title: เครื่องมือและทรัพยากร<br />สำหรับพันธมิตรธุรกิจ SUP
+  subtitle: ดาวน์โหลดคู่มือ OEM แคตตาล็อกผลิตภัณฑ์ รายงานคุณภาพ และใช้เครื่องคำนวณ ROI เพื่อวางแผนการลงทุนในกองเรือ SUP ของคุณ
 resources:
-  - title: '2026 OEM/ODM Product Catalog'
-    description: 'Complete product lineup with specifications, pricing tiers, MOQ, and customization options for B2B partners.'
-    icon: 'tabler:file-text'
-    type: 'catalog'
-    link: '/media'
-    cta: 'Download Catalog'
-  - title: 'Private Label SUP Brand Guide'
-    description: 'Step-by-step guide to launching your own SUP brand — from market research and design to production and global delivery.'
-    icon: 'tabler:book'
-    type: 'guide'
-    link: '/news/private-label-sup-oem-guide'
-    cta: 'Read Guide'
-  - title: 'SUP Fleet ROI Calculator'
-    description: 'Estimate your resort or club SUP fleet investment, projected revenue, and payback period with our interactive calculator.'
-    icon: 'tabler:calculator'
-    type: 'tool'
+  - title: แคตตาล็อกผลิตภัณฑ์ OEM/ODM 2026
+    description: ไลน์ผลิตภัณฑ์ครบวงจรพร้อมข้อมูลจำเพาะ ระดับราคา MOQ และตัวเลือกการปรับแต่งสำหรับพันธมิตร B2B
+    icon: tabler:file-text
+    type: catalog
+    link: /media
+    cta: ดาวน์โหลดแคตตาล็อก
+  - title: คู่มือแบรนด์ SUP แบบ Private Label
+    description: คู่มือทีละขั้นตอนสำหรับการเริ่มแบรนด์ SUP ของคุณเอง — ตั้งแต่การวิจัยตลาดและการออกแบบ ไปจนถึงการผลิตและการจัดส่งทั่วโลก
+    icon: tabler:book
+    type: guide
+    link: /news/private-label-sup-oem-guide
+    cta: อ่านคู่มือ
+  - title: เครื่องคำนวณ ROI สำหรับฝูงเรือ SUP
+    description: ประมาณการเงินลงทุนกองเรือ SUP สำหรับรีสอร์ทหรือคลับของคุณ รายได้ที่คาดการณ์ และระยะเวลาคืนทุนด้วยเครื่องคำนวณแบบโต้ตอบของเรา
+    icon: tabler:calculator
+    type: tool
     link: '#roi-calculator'
-    cta: 'Calculate ROI'
-  - title: 'Quality & Certification Report'
-    description: 'CE certification documents, ISO 9001 quality management, UV aging test results, and pressure hold test data.'
-    icon: 'tabler:certificate'
-    type: 'report'
-    link: '/evidence'
-    cta: 'View Reports'
-  - title: 'Factory Capability Brochure'
-    description: 'Virtual tour of our 12,000 m² manufacturing facility with production line details and quality control processes.'
-    icon: 'tabler:building-factory'
-    type: 'brochure'
-    link: '/factory'
-    cta: 'Tour Factory'
-  - title: 'Resort Fleet Revenue Guide'
-    description: 'Commercial SUP fleet ROI analysis with pricing models, utilization rates, and real case study results from 5-star resorts.'
-    icon: 'tabler:chart-bar'
-    type: 'guide'
-    link: '/news/commercial-sup-fleet-roi-resorts'
-    cta: 'Read Guide'
-
+    cta: คำนวณ ROI
+  - title: รายงานคุณภาพและการรับรอง
+    description: เอกสารการรับรอง CE ระบบการจัดการคุณภาพ ISO 9001 ผลการทดสอบการเสื่อมสภาพจากรังสี UV และข้อมูลการทดสอบการคงแรงดัน
+    icon: tabler:certificate
+    type: report
+    link: /evidence
+    cta: ดูรายงาน
+  - title: โบรชัวร์ศักยภาพโรงงาน
+    description: ทัวร์เสมือนจริงภายในโรงงานผลิตขนาด 12,000 m² ของเรา พร้อมรายละเอียดสายการผลิตและกระบวนการควบคุมคุณภาพ
+    icon: tabler:building-factory
+    type: brochure
+    link: /factory
+    cta: เยี่ยมชมโรงงาน
+  - title: คู่มือรายได้จากกองเรือรีสอร์ท
+    description: การวิเคราะห์ผลตอบแทนการลงทุน (ROI) ของฝูงบอร์ด SUP เชิงพาณิชย์ พร้อมโมเดลการตั้งราคา อัตราการใช้งาน และผลลัพธ์กรณีศึกษาจริงจากรีสอร์ทระดับ 5 ดาว
+    icon: tabler:chart-bar
+    type: guide
+    link: /news/commercial-sup-fleet-roi-resorts
+    cta: อ่านคู่มือ
 cta:
-  title: 'Need Custom Support?'
-  subtitle: 'Contact our B2B team for personalized guidance on your project.'
-  button: 'Contact Sales Team'
-  link: '/contact?source=resources'
+  title: ต้องการการสนับสนุนแบบกำหนดเองหรือไม่?
+  subtitle: ติดต่อทีม B2B ของเราเพื่อรับคำแนะนำเฉพาะสำหรับโปรเจกต์ของคุณ
+  button: ติดต่อทีมขาย
+  link: /contact?source=resources

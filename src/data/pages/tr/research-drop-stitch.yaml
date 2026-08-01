@@ -1,70 +1,85 @@
 meta:
-  title: 'How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}'
-  description: 'Deep dive into drop stitch technology: how thousands of internal threads turn flexible PVC into a rigid, high-pressure core capable of 15-20 PSI. Construction methods, materials, quality indicators, and applications across SUPs, kayaks, and inflatable boats.'
-back_text: 'Back to Research'
-
+  title: Drop-Stitch Nasıl Çalışır — Şişirilebilir Sert Çekirdeklerin Arkasındaki Mühendislik | {SITE}
+  description: 'Drop stitch teknolojisi hakkında kapsamlı bilgi: binlerce iç ipliğin esnek PVC''yi 15-20 PSI''ya kadar basınca dayanıklı rijit bir çekirdeğe nasıl dönüştürdüğü. Üretim yöntemleri, malzemeler, kalite göstergeleri ve SUP''lar, kanolar ve şişirilebilir teknelerdeki uygulamalar.'
+back_text: Araştırmaya Dön
 hero:
-  tagline: 'Technology'
-  title: 'How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores'
-  subtitle: '8 min read'
+  tagline: Teknoloji
+  title: Drop Stitch Nasıl Çalışır — Şişirilebilir Sert Çekirdeklerin Mühendisliği
+  subtitle: 8 dk okuma
+content_html: >
+  <h2>Drop Stitch Nedir?</h2>
 
-content_html: |
-  <h2>What Is Drop Stitch?</h2>
-  <p>Drop stitch (also called "drop-stitch fabric" or "drop-stitch core") is a construction method in which thousands of individual polyester threads connect the top and bottom layers of a fabric shell. When the shell is inflated, these threads act as internal tension members — they prevent the top and bottom panels from bulging outward into a round shape, forcing the panel to remain flat and rigid.</p>
-  <p>The result is a lightweight, portable structure that can withstand 15 – 20 PSI of internal pressure — comparable to the rigidity of a hard-shell board but fully deflatable for storage and transport.</p>
+  <p>Drop stitch ("drop-stitch kumaş" veya "drop-stitch çekirdek" olarak da adlandırılır), binlerce polyester ipliğin kumaş kabuğunun üst ve alt katmanlarını birleştirdiği bir üretim yöntemidir. Kabuk şişirildiğinde, bu iplikler iç gerilme elemanları olarak görev yapar — üst ve alt panellerin dışa
+  doğru şişerek yuvarlak bir şekil almasını önler ve panelin düz ve rijit kalmasını sağlar.</p>
 
-  <h2>How It Works: The Physics</h2>
-  <p>In a conventional inflatable structure (like a balloon or an air mattress), the internal air pressure pushes equally in all directions. Without internal restraint, the structure becomes cylindrical or spherical. Drop stitch solves this by introducing tensile reinforcement:</p>
+  <p>Sonuç, 15 – 20 PSI iç basınca dayanabilen, hafif ve taşınabilir bir yapıdır — sert kabuklu bir tahtanın rijitliğine eş değer, ancak depolama ve taşıma için tamamen sökülebilir.</p>
+
+
+  <h2>Nasıl Çalışır: Fizik</h2>
+
+  <p>Geleneksel bir şişirilebilir yapıda (bir balon veya hava yatağı gibi), iç hava basıncı her yöne eşit olarak baskı uygular. İç kısıtlama olmadan, yapı silindirik veya küresel hale gelir. Drop stitch, gerilme takviyesi ekleyerek bunu çözer:</p>
+
   <ul>
-    <li>Thousands of threads connect the top and bottom fabric layers</li>
-    <li>When inflated, the air pressure tries to push the top and bottom apart</li>
-    <li>The threads resist this separation, transferring the load into tension along the thread axis</li>
-    <li>The result is a flat, rigid panel that resists bending</li>
+    <li>Binlerce iplik üst ve alt kumaş katmanlarını birleştirir</li>
+    <li>Şişirildiğinde, hava basıncı üst ve alt katmanları birbirinden ayırmaya çalışır</li>
+    <li>İplikler bu ayrışmaya direnir ve yükü iplik ekseni boyunca gerilime dönüştürür</li>
+    <li>Sonuç, eğilmeye dirençli düz, rijit bir paneldir</li>
   </ul>
 
-  <h2>Construction Process</h2>
+
+  <h2>Üretim Süreci</h2>
+
   <ol>
-    <li><strong>Weaving:</strong> Polyester threads are woven simultaneously into two separate layers of base fabric (typically 1,100 DTEX or 1,680 DTEX PVC-coated polyester). The threads are loop-woven between the layers at a 90&deg; angle.</li>
-    <li><strong>Coating:</strong> The woven base fabric is coated with PVC (or occasionally TPU) using a knife-coating or calendar-coating process. This seals the threads and creates the air-tight membrane.</li>
-    <li><strong>Layer bonding:</strong> The drop-stitch core is bonded to outer laminated layers (typically 0.9 mm or 1.2 mm PVC) using heat lamination or adhesive.</li>
-    <li><strong>Welding:</strong> Rail bands are welded along the edges using hot air welding, RF welding, or high-frequency welding to create the side walls of the board.</li>
-    <li><strong>Valve installation:</strong> Boston valves or Halkey-Roberts valves are installed, typically with a pressure relief mechanism to prevent over-inflation.</li>
+    <li><strong>Dokuma:</strong> Polyester iplikler, iki ayrı taban kumaş katmanına (genellikle 1.100 DTEX veya 1.680 DTEX PVC kaplı polyester) aynı anda dokunur. İplikler katmanlar arasında 90&deg; açıyla döngüsel olarak dokunur.</li>
+    <li><strong>Kaplama:</strong> Dokunmuş taban kumaşı, bıçak kaplama veya silindir kaplama işlemiyle PVC (veya bazen TPU) ile kaplanır. Bu işlem iplikleri mühürler ve hava geçirmez membranı oluşturur.</li>
+    <li><strong>Katman yapıştırma:</strong> Drop-stitch çekirdek, ısı lamine veya yapıştırıcı kullanılarak dış lamine katmanlara (genellikle 0,9 mm veya 1,2 mm PVC) yapıştırılır.</li>
+    <li><strong>Kaynak:</strong> Kenar bantları, tahtanın yan duvarlarını oluşturmak için sıcak hava kaynağı, RF kaynağı veya yüksek frekans kaynağı ile kenarları boyunca kaynatılır.</li>
+    <li><strong>Vana montajı:</strong> Boston vanaları veya Halkey-Roberts vanaları takılır, genellikle aşırı şişmeyi önlemek için basınç tahliye mekanizması ile birlikte.</li>
   </ol>
 
-  <h2>Key Quality Indicators</h2>
+
+  <h2>Temel Kalite Göstergeleri</h2>
+
   <table class="w-full text-sm border-collapse">
     <thead>
       <tr class="bg-gray-100">
-        <th class="p-3 text-left font-semibold text-gray-900 border">Parameter</th>
-        <th class="p-3 text-left font-semibold text-gray-900 border">Entry Level</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">Parametre</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">Giriş Seviyesi</th>
         <th class="p-3 text-left font-semibold text-gray-900 border">Premium</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td class="p-3 border">Thread density</td><td class="p-3 border">1 thread / sq in</td><td class="p-3 border">2 threads / sq in</td></tr>
-      <tr><td class="p-3 border">Base fabric</td><td class="p-3 border">1,100 DTEX</td><td class="p-3 border">1,680 DTEX</td></tr>
-      <tr><td class="p-3 border">Max pressure</td><td class="p-3 border">12 – 15 PSI</td><td class="p-3 border">18 – 22 PSI</td></tr>
-      <tr><td class="p-3 border">PVC thickness</td><td class="p-3 border">0.6 – 0.9 mm</td><td class="p-3 border">1.0 – 1.2 mm</td></tr>
-      <tr><td class="p-3 border">Rail construction</td><td class="p-3 border">Folded &amp; glued</td><td class="p-3 border">Welded &amp; fusion-bonded</td></tr>
+      <tr><td class="p-3 border">İplik yoğunluğu</td><td class="p-3 border">1 iplik / inç²</td><td class="p-3 border">2 iplik / inç²</td></tr>
+      <tr><td class="p-3 border">Taban kumaşı</td><td class="p-3 border">1.100 DTEX</td><td class="p-3 border">1.680 DTEX</td></tr>
+      <tr><td class="p-3 border">Maksimum basınç</td><td class="p-3 border">12 – 15 PSI</td><td class="p-3 border">18 – 22 PSI</td></tr>
+      <tr><td class="p-3 border">PVC kalınlığı</td><td class="p-3 border">0,6 – 0,9 mm</td><td class="p-3 border">1,0 – 1,2 mm</td></tr>
+      <tr><td class="p-3 border">Kenar yapımı</td><td class="p-3 border">Katlanmış &amp; yapıştırılmış</td><td class="p-3 border">Kaynaklı &amp; birleşik yapıştırılmış</td></tr>
     </tbody>
   </table>
 
-  <h2>Applications</h2>
+
+  <h2>Uygulamalar</h2>
+
   <ul>
-    <li><strong>SUP Boards:</strong> 4" – 6" thickness, 15 – 20 PSI, 1 – 2 threads/sq in</li>
-    <li><strong>Kayaks:</strong> Drop-stitch floor + inflatable side chambers, 10 – 15 PSI floor</li>
-    <li><strong>RIB floors:</strong> Drop-stitch floors for lightweight, packable RIB tenders, 12 – 18 PSI</li>
-    <li><strong>Boat fenders:</strong> Low-pressure drop stitch for shaped fenders with flat faces</li>
+    <li><strong>SUP Tahtaları:</strong> 4" – 6" kalınlık, 15 – 20 PSI, 1 – 2 iplik/inç²</li>
+    <li><strong>Kanolar:</strong> Drop-stitch zemin + şişirilebilir yan odacıklar, 10 – 15 PSI zemin</li>
+    <li><strong>RIB zeminleri:</strong> Hafif, taşınabilir RIB tenderleri için drop-stitch zeminler, 12 – 18 PSI</li>
+    <li><strong>Tekne tamponları:</strong> Düz yüzlü şekilli tamponlar için düşük basınçlı drop stitch</li>
   </ul>
 
-  <h2>Drop Stitch vs. Air Deck (Fiberglass or Wood Core)</h2>
-  <p>Hard-shell boards use EPS foam cores with fiberglass or wood stringer reinforcement. They are lighter, stiffer, and more responsive — but they cannot be deflated. Drop stitch trades some rigidity for full portability. For most recreational users, modern drop-stitch SUPs at 20 PSI are indistinguishable from entry-level hard boards in rigidity.</p>
 
-  <h2>How Afarer Uses Drop Stitch</h2>
-  <p>Afarer uses a 1,680 DTEX drop-stitch core across its SUP lineup, with 2 threads per square inch and a 1.2 mm PVC outer laminate. Boards are rated to 20 PSI and undergo a 24-hour pressure hold test at 1.5x rated pressure before shipment. Rail bands are hot-air welded with triple-layer fusion, and pressure relief valves are standard across all models.</p>
+  <h2>Drop Stitch vs. Air Deck (Fiberglas veya Ahşap Çekirdek)</h2>
 
+  <p>Sert kabuklu tahtalar, fiberglas veya ahşap takviyeli EPS köpük çekirdekleri kullanır. Daha hafif, daha rijit ve daha duyarlıdır — ancak sökülemezler. Drop stitch, tam taşınabilirlik için bir miktar rijitlikten fedakarlık eder. Çoğu rekreasyonel kullanıcı için, 20 PSI'daki modern drop-stitch
+  SUP'ları giriş seviyesi sert tahtalarla rijitlik açısından ayırt edilemez.</p>
+
+
+  <h2>Afarer Drop Stitch'i Nasıl Kullanır</h2>
+
+  <p>Afarer, tüm SUP yelpazesinde inç karesi başına 2 iplik ve 1,2 mm PVC dış lamine ile 1.680 DTEX drop-stitch çekirdek kullanır. Tahtalar 20 PSI'ya kadar derecelendirilir ve sevkiyat öncesi 1,5x nominal basınçta 24 saat basınç tutma testine tabi tutulur. Kenar bantları üç katmanlı birleşik sıcak
+  hava kaynağı ile kaynatılır ve basınç tahliye vanaları tüm modellerde standarttır.</p>
 cta:
-  title: 'Want to learn more about drop stitch?'
-  subtitle: 'Contact us for technical specifications and OEM inquiries.'
-  button_text: 'Contact sales'
-  button_link: /contact
+  title: Drop stitch hakkında daha fazla bilgi edinmek ister misiniz?
+  subtitle: Teknik özellikler ve OEM talepleri için bizimle iletişime geçin.
+  button_text: Satış ekibiyle iletişime geçin
+  button_link: /iletisim

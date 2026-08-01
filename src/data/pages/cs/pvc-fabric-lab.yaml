@@ -1,51 +1,60 @@
 meta:
-  title: 'PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}'
-  description: 'Scientific material testing from fibre to finished tube. Tensile strength, UV weathering, low-temperature flexibility, and abrasion resistance for PVC fabrics. Contact our lab team for a custom fabric specification.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Laboratoř PVC tkanin – testování materiálů pro nafukovací čluny | {SITE}
+  description: Vědecké testování materiálů od vlákna až po hotovou trubku. Pevnost v tahu, stárnutí vlivem UV záření, pružnost za nízkých teplot a odolnost proti oděru pro PVC tkaniny. Pro individuální specifikaci tkaniny kontaktujte náš laboratorní tým.
+back_text: Zpět do centra výzkumu a vývoje
+home_label: Domů
 hero:
-  tagline: 'Lab 01'
-  title: 'PVC Fabric Lab'
-  subtitle: 'Scientific material testing — from fibre to finished tube'
-  image: 'https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp'
-  image_alt: 'Afarer PVC fabric material testing laboratory'
+  tagline: Laboratoř 01
+  title: Laboratoř PVC tkanin
+  subtitle: Vědecké testování materiálů — od vlákna po hotovou komoru
+  image: https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp
+  image_alt: Laboratoř pro testování PVC tkanin společnosti Afarer
+intro: >-
+  Tkanina komor je jediným nejdůležitějším materiálem v nafukovacím člunu. Musí odolávat neustálému působení UV záření, opakovaným cyklům nafouknutí, oděru o mola a nečistoty i extrémním teplotním výkyvům – a přitom si po celá léta zachovat strukturální integritu. Ve společnosti {SITE.name} je naše
+  laboratoř PVC tkanin zasvěcena výhradně charakterizaci, validaci a neustálému zlepšování tkanin, které používáme v každém člunu, jenž vyrábíme.
+content_html: >
+  <h2>Základ každého nafukovacího člunu</h2>
 
-intro: 'The tube fabric is the single most critical material in an inflatable boat. It must withstand constant UV exposure, repeated inflation cycles, abrasion against docks and debris, and extreme temperature swings — all while maintaining its structural integrity for years. At {SITE.name}, our PVC Fabric Lab is dedicated exclusively to the characterisation, validation, and continuous improvement of the fabrics we use in every boat we build.'
+  <p>Nespoléháme se pouze na údaje z datových listů dodavatelů. Každá šarže PVC a Hypalon tkaniny, která vstoupí do naší dílny, je nezávisle testována u nás. To zaručuje, že specifikace materiálu, kterou zveřejňujeme, odpovídá výkonu materiálu, který skutečně obdržíte — šarži po šarži, rok co
+  rok.</p>
 
-content_html: |
-  <h2>The foundation of every inflatable boat</h2>
-  <p>We do not rely solely on supplier data sheets. Every batch of PVC and Hypalon fabric that enters our workshop is independently tested in-house. This guarantees that the material specification we publish is the material performance you receive — lot after lot, year after year.</p>
 
-  <h2>Standardised testing equipment</h2>
-  <p>Our fabric lab is equipped with industrial-grade instruments that conform to ISO, ASTM, and EN test methods:</p>
+  <h2>Standardizované testovací vybavení</h2>
+
+  <p>Naše laboratoř tkanin je vybavena průmyslovými přístroji odpovídajícími testovacím metodám ISO, ASTM a EN:</p>
+
   <table>
-    <thead><tr><th>Equipment</th><th>Parameters Measured</th><th>Standard</th></tr></thead>
+    <thead><tr><th>Vybavení</th><th>Měřené parametry</th><th>Norma</th></tr></thead>
     <tbody>
-      <tr><td>Universal tensile tester (50 kN)</td><td>Breaking force, elongation at break, tear propagation</td><td>ISO 1421 / ASTM D751</td></tr>
-      <tr><td>Xenon-arc weathering chamber</td><td>UV resistance (colour change, strength retention after 2000 h)</td><td>ISO 4892 / ASTM G155</td></tr>
-      <tr><td>Low-temperature flex tester</td><td>Crack point at -30 °C to -50 °C</td><td>ISO 4675 / ASTM D2136</td></tr>
-      <tr><td>Taber abrasion tester</td><td>Weight loss after 1000 cycles (CS-10 wheel)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
-      <tr><td>Thickness gauge (digital, 0.001 mm resolution)</td><td>Uniformity across roll width</td><td>ISO 2286-3</td></tr>
-      <tr><td>Hydrostatic head tester</td><td>Water penetration resistance</td><td>ISO 811</td></tr>
+      <tr><td>Univerzální tahový tester (50 kN)</td><td>Mez pevnosti, tažnost při přetržení, šíření trhliny</td><td>ISO 1421 / ASTM D751</td></tr>
+      <tr><td>Xenonová komora pro stárnutí</td><td>UV odolnost (změna barvy, zachování pevnosti po 2000 h)</td><td>ISO 4892 / ASTM G155</td></tr>
+      <tr><td>Nízkoteplotní ohýbač</td><td>Bod praskání při -30 °C až -50 °C</td><td>ISO 4675 / ASTM D2136</td></tr>
+      <tr><td>Taberův tester oděru</td><td>Úbytek hmotnosti po 1000 cyklech (kotouč CS-10)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
+      <tr><td>Tloušťkoměr (digitální, rozlišení 0,001 mm)</td><td>Rovnoměrnost po šířce role</td><td>ISO 2286-3</td></tr>
+      <tr><td>Tester hydrostatického tlaku</td><td>Odolnost proti průniku vody</td><td>ISO 811</td></tr>
     </tbody>
   </table>
-  <p class="text-sm text-gray-500">* All equipment is calibrated annually by third-party accredited laboratories.</p>
 
-  <h2>From data to decision: a typical test workflow</h2>
-  <p>When a new fabric candidate arrives, it follows a standardised seven-step qualification process:</p>
+  <p class="text-sm text-gray-500">* Všechna zařízení jsou každoročně kalibrována akreditovanými laboratořemi třetích stran.</p>
+
+
+  <h2>Od dat k rozhodnutí: typický testovací postup</h2>
+
+  <p>Když dorazí nový kandidátní materiál, prochází standardizovaným sedmistupňovým kvalifikačním procesem:</p>
+
   <ol>
-    <li><strong>Receipt inspection</strong> — visual check for surface defects, pinholes, and dimensional compliance.</li>
-    <li><strong>Thickness mapping</strong> — 20-point measurement across the roll; CV &lt; 3% is required for acceptance.</li>
-    <li><strong>Tensile testing</strong> — 5 specimens in warp and weft directions. Minimum 3500 N/50 mm for 1100 dtex PVC.</li>
-    <li><strong>UV conditioning</strong> — 1000 h exposure in xenon-arc chamber; minimum 80 % strength retention required.</li>
-    <li><strong>Cold crack</strong> — 4 h at -35 °C, then 180° bend over a 25 mm mandrel. No visible cracking.</li>
-    <li><strong>Abrasion resistance</strong> — 1000 cycles, weight loss ≤ 0.05 g.</li>
-    <li><strong>Approval sign-off</strong> — only after all seven gates are passed is the fabric released for production.</li>
+    <li><strong>Přejímací kontrola</strong> — vizuální kontrola povrchových vad, mikroskopických otvorů a rozměrové shody.</li>
+    <li><strong>Mapování tloušťky</strong> — měření na 20 bodech po délce role; pro přijetí je vyžadováno CV &lt; 3 %.</li>
+    <li><strong>Zkouška tahem</strong> — 5 vzorků v osnovním a útkovém směru. Minimum 3500 N/50 mm pro PVC 1100 dtex.</li>
+    <li><strong>UV kondicionování</strong> — 1000 h expozice v xenonové komoře; vyžadováno zachování minimálně 80 % pevnosti.</li>
+    <li><strong>Test praskání za studena</strong> — 4 h při -35 °C, poté ohyb o 180° přes trn o průměru 25 mm. Žádné viditelné praskání.</li>
+    <li><strong>Odolnost proti oděru</strong> — 1000 cyklů, úbytek hmotnosti ≤ 0,05 g.</li>
+    <li><strong>Schválení</strong> — teprve po úspěšném absolvování všech sedmi kontrol je tkanina uvolněna do výroby.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typical PVC 1100 dtex — Tensile Retention After UV Exposure</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typické PVC 1100 dtex — zachování pevnosti v tahu po UV expozici</p>
     <div class="flex items-end gap-3 h-40">
       <div class="flex-1 flex flex-col items-center">
         <div class="w-full bg-blue-600 rounded-t" style="height:100%"></div>
@@ -65,38 +74,49 @@ content_html: |
       </div>
       <div class="flex-1 flex flex-col items-center">
         <div class="w-full bg-gray-300 rounded-t" style="height:65%"></div>
-        <span class="text-xs mt-1">Competitor<br />~65%</span>
+        <span class="text-xs mt-1">Konkurence<br />~65%</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">Our PVC 1100 dtex fabric retains &gt; 80 % tensile strength after 2000 h xenon-arc exposure, compared to typical industry grades that drop below 70 %.</p>
+    <p class="text-xs text-gray-400 mt-2">Naše tkanina PVC 1100 dtex si po 2000 h expozice v xenonové komoře zachovává &gt; 80 % pevnosti v tahu, zatímco běžné průmyslové třídy klesají pod 70 %.</p>
   </div>
 
-  <h2>Our professional team</h2>
-  <p>The lab is staffed by two full-time material engineers, each holding a degree in polymer science or textile engineering with a minimum of six years of industry experience. They are supported by three technicians who perform day-to-day testing and data logging. The team regularly participates in inter-laboratory round-robin trials organised by the International Organization for Standardization (ISO) to validate the accuracy of our test methods.</p>
 
-  <h2>Solving your toughest material challenges</h2>
-  <p>Every marine environment is different. A patrol boat operating in the Persian Gulf faces vastly different UV and temperature conditions than a rescue craft in the North Sea. Our Fabric Lab helps you select — or develop — a fabric specification that is optimised for your operating profile.</p>
-  <p>Recent custom solutions include:</p>
+  <h2>Náš profesionální tým</h2>
+
+  <p>V laboratoři pracují dva materiáloví inženýři na plný úvazek, každý s titulem v oboru polymerní vědy nebo textilního inženýrství a s minimálně šesti lety průmyslové praxe. K dispozici jsou jim tři technici, kteří zajišťují každodenní testování a záznam dat. Tým se pravidelně účastní
+  mezilaboratorních srovnávacích testů organizovaných Mezinárodní organizací pro normalizaci (ISO) k ověření přesnosti našich testovacích metod.</p>
+
+
+  <h2>Řešení vašich nejnáročnějších materiálových výzev</h2>
+
+  <p>Každé mořské prostředí je jiné. Hlídkový člun operující v Perském zálivu čelí zcela odlišným UV a teplotním podmínkám než záchranné plavidlo v Severním moři. Naše tkaninová laboratoř vám pomůže vybrat — nebo vyvinout — specifikaci tkaniny optimalizovanou pro váš provozní profil.</p>
+
+  <p>Nedávná řešení na míru zahrnují:</p>
+
   <ul>
-    <li>A high-abrasion PVC blend for a military client whose boats regularly beach on coral reefs (+40 % abrasion life).</li>
-    <li>A low-temperature Hypalon formulation for an Arctic research station, tested to -50 °C without embrittlement.</li>
-    <li>A colour-stabilised orange fabric for a search-and-rescue fleet, maintaining visibility after 3 years of tropical sun exposure.</li>
+    <li>Vysoce otěruvzdornou PVC směs pro vojenského zákazníka, jehož čluny se pravidelně vyplavují na korálových útesech (+40 % životnosti proti oděru).</li>
+    <li>Nízkoteplotní recepturu z Hypalonu pro arktickou výzkumnou stanici, testovanou do -50 °C bez zkřehnutí.</li>
+    <li>Barevně stabilizovanou oranžovou tkaninu pro záchrannou flotilu, která si zachovává viditelnost i po 3 letech tropického slunečního záření.</li>
   </ul>
-  <p>We do not sell "off-the-shelf" fabrics and hope they work. We test, validate, and recommend — or create — a tailored solution for your specific mission profile. That is the {SITE.name} difference.</p>
 
-  <h2>How we serve you</h2>
-  <p>When you bring a material challenge to us, here is what you can expect:</p>
+  <p>Neprodáváme „skladové" tkaniny a nedoufáme, že budou fungovat. Testujeme, ověřujeme a doporučujeme — nebo vytváříme — řešení na míru pro váš konkrétní provozní profil. V tom je rozdíl značky {SITE.name}.</p>
+
+
+  <h2>Jak vám pomáháme</h2>
+
+  <p>Když k nám přinesete materiálovou výzvu, můžete očekávat toto:</p>
+
   <ol>
-    <li><strong>Consultation</strong> — we discuss your operating environment, performance targets, and budget.</li>
-    <li><strong>Proposal</strong> — a test plan is drafted with clear pass/fail criteria and a timeline.</li>
-    <li><strong>Execution</strong> — our lab runs the tests and produces a detailed report with raw data and comparative analysis.</li>
-    <li><strong>Recommendation</strong> — we present a fabric specification, including alternative options if multiple materials meet your requirements.</li>
-    <li><strong>Follow-up</strong> — after delivery, we remain available to support any in-service material questions.</li>
+    <li><strong>Konzultace</strong> — probereme vaše provozní prostředí, výkonnostní cíle a rozpočet.</li>
+    <li><strong>Návrh</strong> — připraví se plán testů s jasnými kritérii vyhovění/nevyhovění a časovým harmonogramem.</li>
+    <li><strong>Realizace</strong> — naše laboratoř provede testy a vypracuje podrobnou zprávu se surovými daty a srovnávací analýzou.</li>
+    <li><strong>Doporučení</strong> — předložíme specifikaci tkaniny včetně alternativních možností, pokud vašim požadavkům vyhovuje více materiálů.</li>
+    <li><strong>Následná podpora</strong> — po dodání jsme i nadále k dispozici pro veškeré dotazy týkající se materiálu v provozu.</li>
   </ol>
-  <p>Our goal is not simply to sell you a boat. It is to ensure that the boat you receive performs reliably in the conditions you operate in — and that starts with the fabric.</p>
 
+  <p>Naším cílem není pouze prodat vám člun. Naším cílem je zajistit, aby člun, který obdržíte, spolehlivě fungoval v podmínkách, ve kterých provozujete — a to začíná u tkaniny.</p>
 cta:
-  title: 'Need a custom fabric specification?'
-  subtitle: 'Contact our material engineering team to discuss your requirements.'
-  button_text: 'Contact our lab team'
+  title: Potřebujete vlastní specifikaci tkaniny?
+  subtitle: Obraťte se na náš tým materiálového inženýrství a prodiskutujte své požadavky.
+  button_text: Kontaktujte náš laboratorní tým
   button_link: /contact

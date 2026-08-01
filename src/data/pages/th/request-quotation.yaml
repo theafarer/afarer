@@ -1,25 +1,25 @@
 hero_text:
-  tagline: Get a Quote
+  tagline: ขอใบเสนอราคา
   title: ขอใบเสนอราคา<br />สำหรับโครงการของคุณ
   subtitle: บอกเราเกี่ยวกับความต้องการของคุณ แล้วทีมงานของเราจะตอบกลับพร้อมใบเสนอราคาโดยละเอียดภายใน 2 วันทำการ
 steps2_process:
-  title: How It Works
+  title: วิธีการทำงาน
   subtitle: สี่ขั้นตอนง่ายๆ จากการสอบถามไปจนถึงใบเสนอราคา
   items:
-    - title: 'Step 1: Submit Your Requirements'
+    - title: 'ขั้นตอนที่ 1: ส่งข้อมูลความต้องการของคุณ'
       description: กรอกแบบฟอร์มด้านล่างพร้อมประเภทผลิตภัณฑ์ ปริมาณ และข้อกำหนดของคุณ ยิ่งคุณระบุรายละเอียดมากเท่าใด ใบเสนอราคาของคุณก็จะยิ่งแม่นยำมากขึ้นเท่านั้น
       icon: tabler:file-text
-    - title: 'Step 2: We Review & Advise'
+    - title: 'ขั้นตอนที่ 2: เราตรวจสอบและให้คำแนะนำ'
       description: ทีมวิศวกรของเราจะตรวจสอบความต้องการของคุณ และอาจติดต่อคุณเพื่อขอคำชี้แจง เราให้คำแนะนำเกี่ยวกับการกำหนดค่าผลิตภัณฑ์และตัวเลือกต่างๆ
       icon: tabler:users
-    - title: 'Step 3: Receive Your Quote'
+    - title: 'ขั้นตอนที่ 3: รับใบเสนอราคาของคุณ'
       description: คุณจะได้รับใบเสนอราคาโดยละเอียด รวมถึงราคาต่อหน่วย, MOQ, ระยะเวลาดำเนินการ, เงื่อนไขการชำระเงิน และตัวเลือกในการจัดส่ง โดยปกติภายใน 48 ชั่วโมง
       icon: tabler:currency-dollar
-    - title: 'Step 4: Sample & Production'
+    - title: 'ขั้นตอนที่ 4: ตัวอย่างและการผลิต'
       description: หลังจากการยอมรับใบเสนอราคา เราจะดำเนินการผลิตตัวอย่าง (ถ้ามี) หรือดำเนินการผลิตโดยตรงในจำนวนมาก อัปเดตเป็นประจำตลอดกระบวนการ
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
+  tagline: แบบฟอร์มขอใบเสนอราคา
   title: บอกเราเกี่ยวกับโครงการของคุณ
   subtitle: ต้องกรอกข้อมูลทุกช่องที่มี *
   fields:
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - ศูนย์ดำน้ำ
+        - ตกปลา
+        - การท่องเที่ยวทางทะเล / รีสอร์ท
+        - ค้นหาและกู้ภัย (Search & Rescue)
+        - เรือบริการสำหรับเรือยอทช์
+        - เรือทำงานเชิงพาณิชย์
+        - ภาครัฐ / การทหาร
+        - OEM / ตราสินค้าส่วนตัว (Private Label)
+        - ส่วนบุคคล / เพื่อการพักผ่อน
+        - อื่น ๆ
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
-        - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - ไม่ระบุความต้องการพิเศษ
+        - PVC เกรดสำหรับใช้ในทะเล (1100 dtex)
+        - ไฮพาลอน / CSM ระดับพรีเมียม
+        - ตัวเรือไฟเบอร์กลาส
+        - ตัวเรืออะลูมิเนียม
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: เช่น เอาต์บอร์ด 60 แรงม้า ไม่รวมเครื่องยนต์ เครื่องคู่ 115 แรงม้า
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: เช่น สีที่กำหนดเอง แบรนด์/โลโก้ บรรจุภัณฑ์ อุปกรณ์พิเศษ
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: เช่น จัดส่งภายใน 90 วัน
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: อธิบายการใช้งาน ข้อกำหนดทางเทคนิค หรือความต้องการพิเศษใด ๆ —รวมถึงแบบอ้างอิง ข้อมูลจำเพาะ หรือลิงก์ หากมี
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: อัปโหลดเอกสารสเปก ภาพวาด หรือเอกสารอ้างอิงของคุณ (PDF, DWG, DXF)
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: อัปโหลดโลโก้หรือไฟล์อาร์ตเวิร์กของคุณเพื่อการพิมพ์แบรนด์ตามสั่ง (AI, EPS, PNG)
 cta:
-  title: Prefer to discuss by email?
-  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
+  title: ต้องการปรึกษาผ่านอีเมลหรือไม่?
+  subtitle: ส่งคำถามของคุณตรงถึงทีมขายของเรา แล้วเราจะตอบกลับภายใน 24 ชั่วโมง
   actions:
     - variant: primary
-      text: Email us directly
+      text: ส่งอีเมลถึงเราโดยตรง
       href: /contact

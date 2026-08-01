@@ -1,48 +1,56 @@
 meta:
-  title: 'Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}'
-  description: 'Validate your RIB hull performance with our hydrodynamic test tank. Scale-model towing, planing analysis, and fuel efficiency testing. Book a tank test session today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Δεξαμενή Υδροδυναμικών Δοκιμών — Ρυμούλκηση Μοντέλου Κλίμακας & Βελτιστοποίηση Γάστρας | {SITE}
+  description: Αξιολογήστε τις επιδόσεις της γάστρας RIB σας με τη δεξαμενή υδροδυναμικών δοκιμών μας. Ρυμούλκηση μοντέλων κλίμακας, ανάλυση ολίσθησης και δοκιμές απόδοσης καυσίμου. Κλείστε σήμερα μια συνεδρία δοκιμών στη δεξαμενή.
+back_text: Επιστροφή στο Κέντρο Ε&Α
+home_label: Αρχική
 hero:
-  tagline: 'Lab 04'
-  title: 'Hydrodynamic Test Tank'
-  subtitle: 'Validating performance before the first full-scale prototype'
-  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
-  image_alt: 'Afarer hydrodynamic test tank performance testing'
+  tagline: Εργαστήριο 04
+  title: Δεξαμενή Υδροδυναμικών Δοκιμών
+  subtitle: Επικύρωση της απόδοσης πριν από το πρώτο πρωτότυπο πλήρους κλίμακας
+  image: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp
+  image_alt: Δοκιμές επίδοσης στη δεξαμενή υδροδυναμικών δοκιμών Afarer
+intro: >-
+  Είναι μια κοινή παρανόηση ότι οι υδροδυναμικές δοκιμές προορίζονται μόνο για τα υπερωκεάνια πλοία. Στην πραγματικότητα, η απόδοση μιας μικρής γάστρας πλεύσης (planing hull) — όπως ένα RIB 4–6 m — εξαρτάται εξίσου από το υποβρύχιο σχήμα της όσο και ένα δεξαμενόπλοιο από το βολβοειδές τόξο του. Η
+  γωνία trim, η βρεχόμενη επιφάνεια, η παραγωγή σταγονιδίων και ο αερισμός έχουν δραματική επίδραση στην ταχύτητα, στην κατανάλωση καυσίμου και στην άνεση της πλεύσης. Στην {SITE.name}, διαθέτουμε ειδική δεξαμενή υδροδυναμικών δοκιμών που μας επιτρέπει να ποσοτικοποιήσουμε αυτές τις επιδράσεις σε
+  κλίμακα μοντέλου — πριν δεσμεύσουμε μέταλλο και ύφασμα σε ένα πρωτότυπο πλήρους μεγέθους.
+content_html: >
+  <h2>Γιατί να δοκιμάζουμε ένα μικρό σκάφος σε δεξαμενή;</h2>
 
-intro: 'It is a common misconception that hydrodynamic testing is reserved for ocean-going ships. In reality, the performance of a small planing hull — such as a 4–6 m RIB — is just as dependent on its underwater shape as a tanker is on its bulbous bow. Trim angle, wetted surface area, spray generation, and ventilation all have a dramatic effect on speed, fuel consumption, and ride comfort. At {SITE.name}, we operate a dedicated hydrodynamic test tank that allows us to quantify these effects at model scale — before committing metal and fabric to a full-size prototype.'
+  <p>Οι δοκιμές σε κλίμακα μοντέλου (συνήθως 1:3 έως 1:5) μας δίνουν τη δυνατότητα να βελτιώνουμε τις μορφές του κύτους γρήγορα και οικονομικά. Μία εβδομάδα στη δεξαμενή μπορεί να παράγει τα ίδια δεδομένα επιδόσεων που θα απαιτούσαν μήνες δοκιμών δοκιμή-και-λάθος σε πλήρη κλίμακα — και σε κλάσμα του
+  κόστους.</p>
 
-content_html: |
-  <h2>Why tank-test a small boat?</h2>
-  <p>Testing at model scale (typically 1:3 to 1:5) gives us the ability to iterate hull shapes rapidly and cost-effectively. A week in the tank can generate the same performance data that would require months of full-scale trial-and-error — and at a fraction of the cost.</p>
 
-  <h2>Facility specifications</h2>
+  <h2>Προδιαγραφές εγκατάστασης</h2>
+
   <table>
-    <thead><tr><th>Parameter</th><th>Specification</th></tr></thead>
+    <thead><tr><th>Παράμετρος</th><th>Προδιαγραφή</th></tr></thead>
     <tbody>
-      <tr><td>Tank dimensions</td><td>35 m (L) × 3.5 m (W) × 1.8 m (D)</td></tr>
-      <tr><td>Towing carriage</td><td>Electric servo-driven, max speed 12 m/s (23 kn), speed accuracy ± 0.5 %</td></tr>
-      <tr><td>Wave generator</td><td>Flap-type, programmable regular &amp; irregular sea states, Hs up to 0.3 m at model scale</td></tr>
-      <tr><td>Instrumentation</td><td>6-component dynamometer (resistance, side force, yaw moment), accelerometers, inclinometers, wave probes</td></tr>
-      <tr><td>Data acquisition</td><td>Sampling at 1000 Hz per channel, real-time display + post-processing suite</td></tr>
-      <tr><td>Model fabrication</td><td>In-house CNC milling and 3D printing for model hulls up to 1.8 m LOA</td></tr>
+      <tr><td>Διαστάσεις δεξαμενής</td><td>35 m (L) × 3.5 m (W) × 1.8 m (D)</td></tr>
+      <tr><td>Ρυμουλκό όχημα</td><td>Ηλεκτροκίνητο με σερβοκινητήρα, μέγιστη ταχύτητα 12 m/s (23 kn), ακρίβεια ταχύτητας ± 0.5 %</td></tr>
+      <tr><td>Γεννήτρια κυμάτων</td><td>Τύπου πτερυγίου, προγραμματιζόμενες κανονικές &amp; μη κανονικές καταστάσεις θάλασσας, Hs έως 0.3 m σε κλίμακα μοντέλου</td></tr>
+      <tr><td>Όργανα μέτρησης</td><td>Δυναμόμετρο 6 συνιστωσών (αντίσταση, πλευρική δύναμη, ροπή εκτροπής), επιταχυνσιόμετρα, κλισιόμετρα, αισθητήρες κυμάτων</td></tr>
+      <tr><td>Συλλογή δεδομένων</td><td>Δειγματοληψία στα 1000 Hz ανά κανάλι, ζωντανή προβολή + πακέτο μετα-επεξεργασίας</td></tr>
+      <tr><td>Κατασκευή μοντέλων</td><td>Φρεζάρισμα CNC και τρισδιάστατη εκτύπωση εντός της εταιρείας για κύτη μοντέλων έως 1.8 m LOA</td></tr>
     </tbody>
   </table>
 
-  <h2>Our test programme</h2>
-  <p>A standard hull development programme in our tank follows this sequence:</p>
+
+  <h2>Το πρόγραμμα δοκιμών μας</h2>
+
+  <p>Ένα τυπικό πρόγραμμα ανάπτυξης κύτους στη δεξαμενή μας ακολουθεί την εξής σειρά:</p>
+
   <ol>
-    <li><strong>Model build</strong> — A 1:3.5 scale model is CNC-machined from high-density foam and glassed for rigidity. Weight and CG are adjusted to match Froude-scaled full-load condition.</li>
-    <li><strong>Resistance runs</strong> — The model is towed at 8-10 speeds spanning the operating range. Total resistance is measured and decomposed into frictional and residuary components using the ITTC-1957 method.</li>
-    <li><strong>Trim &amp; sinkage measurement</strong> — Running trim and sinkage are recorded at each speed. An optimal trim angle of 4-6° for planing hulls is the target.</li>
-    <li><strong>Wake survey</strong> — Transverse wave cuts are measured at two speeds to assess wave-making resistance and identify transverse wave interactions that could cause stern interference.</li>
-    <li><strong>Seakeeping (optional)</strong> — Head-sea and following-sea runs in regular waves to measure added resistance, vertical acceleration, and slamming probability.</li>
-    <li><strong>Data analysis &amp; recommendations</strong> — A full report is delivered with comparative charts, speed/power curves, and specific design recommendations for the full-scale hull.</li>
+    <li><strong>Κατασκευή μοντέλου</strong> — Ένα μοντέλο κλίμακας 1:3.5 κατεργάζεται με CNC από αφρό υψηλής πυκνότητας και επενδύεται με fiberglass για ακαμψία. Το βάρος και το κέντρο βάρους (CG) ρυθμίζονται ώστε να αντιστοιχούν στην κατάσταση πλήρους φόρτωσης με κλιμάκωση κατά Froude.</li>
+    <li><strong>Δοκιμές αντίστασης</strong> — Το μοντέλο ρυμουλκείται σε 8-10 ταχύτητες που καλύπτουν το φάσμα λειτουργίας. Η συνολική αντίσταση μετράται και αναλύεται σε συνιστώσα τριβής και υπολειπόμενη συνιστώσα με τη μέθοδο ITTC-1957.</li>
+    <li><strong>Μέτρηση διαγωγής &amp; βύθισης</strong> — Η διαγωγή και το βύθισμα κατά τη ρυμούλκηση καταγράφονται σε κάθε ταχύτητα. Στόχος είναι μια βέλτιστη γωνία διαγωγής 4-6° για κύτη ταχύπλοου τύπου (planing).</li>
+    <li><strong>Αποτύπωση κυματολοιπού</strong> — Οι εγκάρσιες τομές κυμάτων μετρώνται σε δύο ταχύτητες για την εκτίμηση της αντίστασης λόγω κυματισμού και τον εντοπισμό αλληλεπιδράσεων εγκάρσιων κυμάτων που θα μπορούσαν να προκαλέσουν παρεμβολές στην πρύμνη.</li>
+    <li><strong>Συμπεριφορά εν πλω (προαιρετικά)</strong> — Δοκιμές με κύμα από την πλώρη και από την πρύμνη σε κανονικά κύματα για τη μέτρηση της πρόσθετης αντίστασης, της κατακόρυφης επιτάχυνσης και της πιθανότητας πρόσκρουσης (slamming).</li>
+    <li><strong>Ανάλυση δεδομένων &amp; συστάσεις</strong> — Παραδίδεται πλήρης έκθεση με συγκριτικά διαγράμματα, καμπύλες ταχύτητας/ισχύος και συγκεκριμένες σχεδιαστικές συστάσεις για το κύτος πλήρους κλίμακας.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typical Tank Test Results — Resistance vs Speed (RIB 450 hull, 1:3.5 scale)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Τυπικά Αποτελέσματα Δοκιμών Δεξαμενής — Αντίσταση ως προς Ταχύτητα (κύτος RIB 450, κλίμακα 1:3.5)</p>
     <div class="space-y-2">
       <div class="flex items-center gap-2 text-xs">
         <span class="w-20">5 kn (1:1)</span>
@@ -87,26 +95,35 @@ content_html: |
         <span class="w-16 text-right">232 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">Model-scale resistance (N) at Froude-scaled speeds. Full-scale power prediction follows the ITTC-1978 performance-prediction method.</p>
+    <p class="text-xs text-gray-400 mt-2">Αντίσταση κλίμακας μοντέλου (N) σε ταχύτητες κλιμάκωσης κατά Froude. Η πρόβλεψη ισχύος σε πλήρη κλίμακα ακολουθεί τη μέθοδο πρόβλεψης επιδόσεων ITTC-1978.</p>
   </div>
 
-  <h2>Expert team</h2>
-  <p>Our tank is operated by a hydrodynamicist with a PhD in naval architecture and 8 years of towing-tank experience at a major European maritime research institute. He is supported by a technician who prepares all models and instrumentation. The team follows the ITTC (International Towing Tank Conference) Recommended Procedures to ensure that every test is repeatable, traceable, and internationally defensible.</p>
 
-  <h2>Tank-testing for custom hull development</h2>
-  <p>Our tank is not only used for house-designed hulls — we regularly run test programmes for clients who want to validate a custom hull shape or investigate a performance issue:</p>
+  <h2>Εξειδικευμένη ομάδα</h2>
+
+  <p>Τη δεξαμενή μας διαχειρίζεται ένας υδροδυναμικός με διδακτορικό στη ναυπηγική και 8 χρόνια εμπειρίας σε δεξαμενές ρυμούλκησης σε μεγάλο ευρωπαϊκό ναυτιλιακό ερευνητικό ινστιτούτο. Υποστηρίζεται από τεχνικό που προετοιμάζει όλα τα μοντέλα και τα όργανα μέτρησης. Η ομάδα ακολουθεί τις
+  Συνιστώμενες Διαδικασίες του ITTC (International Towing Tank Conference) ώστε κάθε δοκιμή να είναι επαναλήψιμη, ιχνηλάσιμη και διεθνώς αποδεκτή.</p>
+
+
+  <h2>Δοκιμές δεξαμενής για ανάπτυξη προσαρμοσμένου κύτους</h2>
+
+  <p>Η δεξαμενή μας δεν χρησιμοποιείται μόνο για κύτη που σχεδιάζονται εσωτερικά — εκτελούμε τακτικά προγράμματα δοκιμών για πελάτες που θέλουν να επικυρώσουν μια προσαρμοσμένη μορφή κύτους ή να διερευνήσουν ένα ζήτημα επιδόσεων:</p>
+
   <ul>
-    <li><strong>Hull-form comparison</strong> — Two or more candidate hull shapes tested under identical conditions, providing an objective drag/speed/stability comparison to inform your design choice.</li>
-    <li><strong>Appendage optimisation</strong> — Interceptor plates, spray rails, trim tabs, and strakes can be tested in various configurations to quantify their individual contribution to drag reduction.</li>
-    <li><strong>Engine-matching study</strong> — Resistance data is converted to a power-prediction curve, allowing you to select the optimum engine horsepower for your target speed and payload.</li>
+    <li><strong>Σύγκριση μορφών κύτους</strong> — Δύο ή περισσότερες υποψήφιες μορφές κύτους δοκιμάζονται υπό πανομοιότυπες συνθήκες, παρέχοντας μια αντικειμενική σύγκριση αντίστασης/ταχύτητας/σταθερότητας για την τεκμηρίωση της σχεδιαστικής σας επιλογής.</li>
+    <li><strong>Βελτιστοποίηση εξαρτημάτων</strong> — Πλάκες interceptor, ράγες εκτόξευσης νερού (spray rails), trim tabs και επιμήκεις σιδηροτροχιές (strakes) μπορούν να δοκιμαστούν σε διάφορες διαμορφώσεις για να ποσοτικοποιηθεί η ατομική συμβολή τους στη μείωση της αντίστασης.</li>
+    <li><strong>Μελέτη αντιστοίχισης κινητήρα</strong> — Τα δεδομένα αντίστασης μετατρέπονται σε καμπύλη πρόβλεψης ισχύος, επιτρέποντάς σας να επιλέξετε τη βέλτιστη ιπποδύναμη κινητήρα για την επιθυμητή ταχύτητα και το ωφέλιμο φορτίο.</li>
   </ul>
 
-  <h2>Why test with us?</h2>
-  <p>We do not just give you a set of raw numbers. Our reports translate tank data into actionable engineering recommendations: "Raise the spray-rail by 8 mm to reduce wetted surface at cruise speed", "Increase deadrise at the transom by 3° to reduce slamming acceleration", or "Move the longitudinal centre of gravity 150 mm aft for improved planing attitude". You leave with a clear understanding of what to change and why.</p>
-  <p>Our tank is also available for independent third-party testing on a fee-for-service basis. If you are developing a hull and want an unbiased, professionally executed hydrodynamic assessment, we welcome your enquiry.</p>
 
+  <h2>Γιατί να δοκιμάσετε με εμάς;</h2>
+
+  <p>Δεν σας δίνουμε απλώς ένα σύνολο ακατέργαστων αριθμών. Οι εκθέσεις μας μετατρέπουν τα δεδομένα της δεξαμενής σε εφαρμόσιμες μηχανικές συστάσεις: «Ανεβάστε τη ράγα εκτόξευσης νερού κατά 8 mm για να μειωθεί η βρεχόμενη επιφάνεια στην ταχύτητα πλεύσης», «Αυξήστε τη νεκρή ανατολή (deadrise) στην
+  τραβέρσα κατά 3° για να μειωθεί η επιτάχυνση από πρόσκρουση» ή «Μετακινήστε το διαμήκες κέντρο βάρους 150 mm προς την πρύμνη για βελτιωμένη στάση πλαγίσματος». Φεύγετε με σαφή κατανόηση του τι πρέπει να αλλάξετε και γιατί.</p>
+
+  <p>Η δεξαμενή μας διατίθεται επίσης για ανεξάρτητες δοκιμές από τρίτους με χρέωση ανά υπηρεσία. Εάν αναπτύσσετε ένα κύτος και επιθυμείτε μια αμερόληπτη, επαγγελματικά εκτελεσμένη υδροδυναμική αξιολόγηση, οι ερωτήσεις σας είναι ευπρόσδεκτες.</p>
 cta:
-  title: 'Book a tank test session'
-  subtitle: 'Whether you need a full development programme or a single comparative test, we can accommodate your schedule.'
-  button_text: 'Contact our hydrodynamics team'
+  title: Κλείστε μια συνεδρία δοκιμών στη δεξαμενή
+  subtitle: Είτε χρειάζεστε πρόγραμμα πλήρους ανάπτυξης είτε μία σύγκρισης δοκιμής, μπορούμε να προσαρμόσουμε το πρόγραμμα σας.
+  button_text: Επικοινωνήστε με την ομάδα υδροδυναμικής μας
   button_link: /contact

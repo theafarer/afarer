@@ -1,71 +1,66 @@
 meta:
-  title: 'SUP Rental Fleet Solutions | {SITE}'
-  description: 'High-rotation SUP boards engineered for daily rental use. UV-resistant PVC, reinforced seams, quick-dry materials. Scale your rental business with Afarer.'
-
+  title: Řešení pro půjčovny SUP | {SITE}
+  description: SUP prkna pro intenzivní provoz, konstruovaná pro každodenní půjčování. PVC odolné vůči UV záření, zesílené švy, rychleschnoucí materiály. Rozšiřte svůj pronájem s afarer.
 hero:
-  tagline: Rental Operators
-  title: 'Scale Your Rental Business<br />With Confidence'
-  subtitle: 'High-rotation SUP boards engineered for daily rental use, 365 days a year. Your revenue never takes a day off.'
+  tagline: Provozovatelé půjčoven
+  title: Rozšiřte své podnikání v oblasti půjčoven<br />s jistotou
+  subtitle: SUP prkna s vysokou obrátkovostí určená pro každodenní provoz v půjčovnách, 365 dní v roce. Vaše tržby si nikdy nevezmou volno.
   image:
     src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
-    alt: Busy rental kiosk with SUP boards ready for guests
-
+    alt: Rušný kiosk půjčovny se SUP prkny připravenými pro hosty
 features:
-  title: Built for the Rental Grind
-  subtitle: 'Every board is engineered for 500+ rental cycles with minimal maintenance.'
+  title: Stavěno pro náročný provoz půjčoven
+  subtitle: Každé prkno je navrženo pro více než 500 půjčovacích cyklů s minimální údržbou.
   items:
-    - title: '500+ Rental Cycles'
-      description: 'Tested to survive daily use in saltwater, sun, and sand.'
-      icon: 'tabler:shield-check'
-    - title: 'UV-Resistant Fabric'
-      description: 'No fading or degradation after 1 year of outdoor storage.'
-      icon: 'tabler:sun'
-    - title: 'Reinforced Seams'
-      description: '3x stronger than standard inflatable board construction.'
-      icon: 'tabler:layers-intersect'
-    - title: 'Quick-Dry Materials'
-      description: 'Boards ready for next rental in under 30 minutes.'
-      icon: 'tabler:droplet'
-    - title: 'Stackable Storage'
-      description: 'Space-saving design — store 40% more boards in the same area.'
-      icon: 'tabler:stack'
-    - title: 'Color-Coded Sizes'
-      description: 'Staff grabs the right board instantly with color-coded sizing.'
-      icon: 'tabler:color-swatch'
-
+    - title: 500+ cyklů pronájmu
+      description: Testováno tak, aby odolalo každodennímu použití ve slané vodě, na slunci a v písku.
+      icon: tabler:shield-check
+    - title: Tkanina odolná proti UV záření
+      description: Bez vyblednutí nebo degradace po 1 roce skladování venku.
+      icon: tabler:sun
+    - title: Zesílené švy
+      description: 3x pevnější než standardní konstrukce nafukovacího prkna.
+      icon: tabler:layers-intersect
+    - title: Materiály s rychlým schnutím
+      description: Prkna připravená k dalšímu pronájmu za méně než 30 minut.
+      icon: tabler:droplet
+    - title: Stohovatelné skladování
+      description: Prostorově úsporný design — uskladněte o 40 % více prken ve stejné ploše.
+      icon: tabler:stack
+    - title: Velikosti rozlišené barvami
+      description: Personál okamžitě vybere správné prkno díky barevnému velikostnímu kódování.
+      icon: tabler:color-swatch
 stats:
-  title: Operations Metrics
+  title: Provozní ukazatele
   stats:
-    - title: Board Turnover
-      amount: '< 5 min'
-    - title: Annual Maintenance
-      amount: '~15 min/board'
-    - title: Parts Dispatch
-      amount: '48h'
-    - title: Defect Rate
-      amount: '< 0.5%'
-
+    - title: Obrat desek
+      amount: < 5 min
+    - title: Roční údržba
+      amount: ~15 min/prkno
+    - title: Expedice náhradních dílů
+      amount: 48h
+    - title: Míra závad
+      amount: < 0.5%
 fleet_guide:
-  title: Fleet Sizing Guide
-  subtitle: 'Estimate the fleet size and revenue potential for your rental operation.'
+  title: Průvodce velikostí flotily
+  subtitle: Odhadněte velikost flotily a výnosový potenciál pro vaši půjčovnu.
   tiers:
-    - label: Small Kiosk
-      boards: '15-20'
-      revenue: '$XX,XXX/yr'
-    - label: Mid-Size Operation
-      boards: '30-50'
-      revenue: '$XX,XXX/yr'
-    - label: Large Beach Rental
-      boards: '50-100'
-      revenue: '$XXX,XXX/yr'
-
+    - label: Malý kiosk
+      boards: 15-20
+      revenue: $XX,XXX/yr
+    - label: Středně velký provoz
+      boards: 30-50
+      revenue: $XX,XXX/yr
+    - label: Velká plážová půjčovna
+      boards: 50–100
+      revenue: $XXX,XXX/yr
 cta:
-  title: 'Ready to scale your rental business?'
-  subtitle: 'Get rental pricing or compare board models for your operation.'
+  title: Připraveni rozšířit svou půjčovnu?
+  subtitle: Získejte ceny pro půjčovny nebo porovnejte modely prken pro váš provoz.
   actions:
-    - text: 'Get Rental Pricing'
-      href: '/contact?package=rental'
-      variant: 'primary'
-    - text: 'Compare Board Models'
-      href: '/compare'
-      variant: 'secondary'
+    - text: Získejte ceník pronájmu
+      href: /contact?package=rental
+      variant: primary
+    - text: Porovnat modely prken
+      href: /compare
+      variant: secondary

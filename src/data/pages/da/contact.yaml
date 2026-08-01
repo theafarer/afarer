@@ -1,6 +1,6 @@
 hero_text:
-  tagline: Contact
-  title: GET IN TOUCH
+  tagline: Kontakt
+  title: KONTAKT OS
 contact_form:
   id: form
   title: Send os en besked
@@ -17,7 +17,7 @@ contact_form:
       label: Fornavn
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: lande
       step: 1
     - name: lastName
       label: Efternavn
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
+          label: Vælg dit forventede volumen...
+        - value: prøve
+          label: Kun prøver/prototyper
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5–10 enheder (standard-MOQ)
         - value: 100-500
-          label: 100–500 units
-        - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 100–500 enheder
+        - value: 500+
+          label: 500+ enheder (mængdepriser)
       step: 1
     - name: companyName
       label: Virksomhedsnavn
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
-        - value: none
-          label: Standard product (no customization)
+          label: Vælg tilpasningstype...
+        - value: Ingen
+          label: Standardprodukt (uden tilpasning)
         - value: logo
-          label: Custom Logo / Branding only
-        - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: Kun tilpasset logo / branding
+        - value: fuld
+          label: Fuld OEM (størrelse, farve, grafik, emballage)
+        - value: rådgivning
+          label: Ikke sikker — har brug for rådgivning
       step: 1
     - name: address
       label: Adresse
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
+          label: Vælg produktkategori...
+        - value: alle
+          label: Alle produkter / Fuld katalog
         - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: SUP-boards / paddleboards
+        - value: sikkerhed
+          label: Sikkerhedsudstyr / redningsveste
+        - value: tilbehør
+          label: Tilbehør (pumper, årer, tasker)
       step: 1
     - name: zip
       label: Postnummer

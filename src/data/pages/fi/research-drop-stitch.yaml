@@ -1,70 +1,85 @@
 meta:
-  title: 'How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}'
-  description: 'Deep dive into drop stitch technology: how thousands of internal threads turn flexible PVC into a rigid, high-pressure core capable of 15-20 PSI. Construction methods, materials, quality indicators, and applications across SUPs, kayaks, and inflatable boats.'
-back_text: 'Back to Research'
-
+  title: Näin drop-stitch toimii — tekniikka täytettävien jäykkien ytimien takana | {SITE}
+  description: 'Perusteellinen tutustuminen drop-stitch-tekniikkaan: kuinka tuhannet sisäiset langat muuntavat joustavan PVC:n jääkseksi, korkeapainoiseksi ytimeksi, joka kestää 15–20 PSI. Rakennustavat, materiaalit, laadun indikaattorit ja sovellukset SUP-lautoilla, koskiveloilla ja laukeavissa veneissä.'
+back_text: Tutkimukseen
 hero:
-  tagline: 'Technology'
-  title: 'How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores'
-  subtitle: '8 min read'
+  tagline: Teknologia
+  title: Miten drop-stitch toimii — Tekniikka kumipohjaisten jäykkien runkojen takana
+  subtitle: 8 min lukemista
+content_html: >
+  <h2>Mikä on drop-stitch-rakenne?</h2>
 
-content_html: |
-  <h2>What Is Drop Stitch?</h2>
-  <p>Drop stitch (also called "drop-stitch fabric" or "drop-stitch core") is a construction method in which thousands of individual polyester threads connect the top and bottom layers of a fabric shell. When the shell is inflated, these threads act as internal tension members — they prevent the top and bottom panels from bulging outward into a round shape, forcing the panel to remain flat and rigid.</p>
-  <p>The result is a lightweight, portable structure that can withstand 15 – 20 PSI of internal pressure — comparable to the rigidity of a hard-shell board but fully deflatable for storage and transport.</p>
+  <p>Drop-stitch (kutsutaan myös nimellä "drop-stitch-kangas" tai "drop-stitch-sydän") on valmistusmenetelmä, jossa tuhannet yksittäiset polyesterilangat yhdistävät kankaankuoren ylä- ja alakerrokset. Kun kuori täytetään ilmalla, langat toimivat sisäisinä jännitysrakenteina —ne estävät ylä- ja
+  alapaneeleita pullistumasta ulospäin pyöreäksi muodoksi ja pakottavat paneelin pysymään tasaisena ja jäykkänä.</p>
 
-  <h2>How It Works: The Physics</h2>
-  <p>In a conventional inflatable structure (like a balloon or an air mattress), the internal air pressure pushes equally in all directions. Without internal restraint, the structure becomes cylindrical or spherical. Drop stitch solves this by introducing tensile reinforcement:</p>
+  <p>Tuloksena on kevyt ja helposti mukana kuljetettava rakenne, joka kestää 15 – 20 PSI:n sisäisen paineen —vertailukelpoinen jäykkyydeltään kovakuorisen laudan kanssa, mutta täysin tyhjennettävissä säilytystä ja kuljetusta varten.</p>
+
+
+  <h2>Näin se toimii: fysiikka</h2>
+
+  <p>Tavanomaisessa täytettävässä rakenteessa (kuten ilmapallossa tai ilmapatjassa) sisäinen ilmanpaine työntää tasaisesti kaikkiin suuntiin. Ilman sisäistä rajoitetta rakenne muuttuu sylinterimäiseksi tai pallomaiseksi. Drop-stitch ratkaisee tämän lisäämällä vetolujuutta vahvistavan rakenteen:</p>
+
   <ul>
-    <li>Thousands of threads connect the top and bottom fabric layers</li>
-    <li>When inflated, the air pressure tries to push the top and bottom apart</li>
-    <li>The threads resist this separation, transferring the load into tension along the thread axis</li>
-    <li>The result is a flat, rigid panel that resists bending</li>
+    <li>Tuhannet langat yhdistävät kankaan ylä- ja alakerrokset</li>
+    <li>Täytettäessä ilmanpaine pyrkii työntämään ylä- ja alakerrokset erilleen</li>
+    <li>Langat vastustavat erottumista ja siirtävät kuorman jännitykseksi langan suuntaisesti</li>
+    <li>Tuloksena on tasainen, jäykkä paneeli, joka vastustaa taipumista</li>
   </ul>
 
-  <h2>Construction Process</h2>
+
+  <h2>Valmistusprosessi</h2>
+
   <ol>
-    <li><strong>Weaving:</strong> Polyester threads are woven simultaneously into two separate layers of base fabric (typically 1,100 DTEX or 1,680 DTEX PVC-coated polyester). The threads are loop-woven between the layers at a 90&deg; angle.</li>
-    <li><strong>Coating:</strong> The woven base fabric is coated with PVC (or occasionally TPU) using a knife-coating or calendar-coating process. This seals the threads and creates the air-tight membrane.</li>
-    <li><strong>Layer bonding:</strong> The drop-stitch core is bonded to outer laminated layers (typically 0.9 mm or 1.2 mm PVC) using heat lamination or adhesive.</li>
-    <li><strong>Welding:</strong> Rail bands are welded along the edges using hot air welding, RF welding, or high-frequency welding to create the side walls of the board.</li>
-    <li><strong>Valve installation:</strong> Boston valves or Halkey-Roberts valves are installed, typically with a pressure relief mechanism to prevent over-inflation.</li>
+    <li><strong>Kudonta:</strong> Polyesterilangat kudotaan samanaikaisesti kahteen erilliseen pohjakangaskerrokseen (tyypillisesti 1,100 DTEX tai 1,680 DTEX PVC-pinnoitettua polyesteriä). Langat kudotaan silmukkakuviona kerrosten välissä 90&deg;:n kulmassa.</li>
+    <li><strong>Pinnoitus:</strong> Kudottu pohjakangas pinnoitetaan PVC:llä (tai satunnaisesti TPU:lla) kaulainpinnoitus- tai kalanterointimenetelmällä. Tämä sulkee langat ja luo ilmatiiviin kalvon.</li>
+    <li><strong>Kerrosten liimaus:</strong> Drop-stitch-sydän liimataan ulkoisiin laminoituihin kerroksiin (tyypillisesti 0.9 mm tai 1.2 mm PVC) kuumalaminoinnilla tai liimaamalla.</li>
+    <li><strong>Hitsaus:</strong> Reunakaistat hitsataan reunoja pitkin kuumailmahitsauksella, RF-hitsauksella tai korkeataajuushitsauksella laudan sivuseinien luomiseksi.</li>
+    <li><strong>Venttiilien asennus:</strong> Asennetaan Boston- tai Halkey-Roberts-venttiilit, tyypillisesti paineenalennusmekanismilla ylitäytön estämiseksi.</li>
   </ol>
 
-  <h2>Key Quality Indicators</h2>
+
+  <h2>Keskeiset laatuindikaattorit</h2>
+
   <table class="w-full text-sm border-collapse">
     <thead>
       <tr class="bg-gray-100">
-        <th class="p-3 text-left font-semibold text-gray-900 border">Parameter</th>
-        <th class="p-3 text-left font-semibold text-gray-900 border">Entry Level</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">Parametri</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">Aloitustaso</th>
         <th class="p-3 text-left font-semibold text-gray-900 border">Premium</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td class="p-3 border">Thread density</td><td class="p-3 border">1 thread / sq in</td><td class="p-3 border">2 threads / sq in</td></tr>
-      <tr><td class="p-3 border">Base fabric</td><td class="p-3 border">1,100 DTEX</td><td class="p-3 border">1,680 DTEX</td></tr>
-      <tr><td class="p-3 border">Max pressure</td><td class="p-3 border">12 – 15 PSI</td><td class="p-3 border">18 – 22 PSI</td></tr>
-      <tr><td class="p-3 border">PVC thickness</td><td class="p-3 border">0.6 – 0.9 mm</td><td class="p-3 border">1.0 – 1.2 mm</td></tr>
-      <tr><td class="p-3 border">Rail construction</td><td class="p-3 border">Folded &amp; glued</td><td class="p-3 border">Welded &amp; fusion-bonded</td></tr>
+      <tr><td class="p-3 border">Langan tiheys</td><td class="p-3 border">1 lanka / neliötuuma</td><td class="p-3 border">2 lankaa / neliötuuma</td></tr>
+      <tr><td class="p-3 border">Pohjakangas</td><td class="p-3 border">1,100 DTEX</td><td class="p-3 border">1,680 DTEX</td></tr>
+      <tr><td class="p-3 border">Enimmäispaine</td><td class="p-3 border">12 – 15 PSI</td><td class="p-3 border">18 – 22 PSI</td></tr>
+      <tr><td class="p-3 border">PVC:n paksuus</td><td class="p-3 border">0.6 – 0.9 mm</td><td class="p-3 border">1.0 – 1.2 mm</td></tr>
+      <tr><td class="p-3 border">Reunakaistan rakenne</td><td class="p-3 border">Taitettu &amp; liimattu</td><td class="p-3 border">Hitsattu &amp; sulaliitosliimattu</td></tr>
     </tbody>
   </table>
 
-  <h2>Applications</h2>
+
+  <h2>Käyttökohteet</h2>
+
   <ul>
-    <li><strong>SUP Boards:</strong> 4" – 6" thickness, 15 – 20 PSI, 1 – 2 threads/sq in</li>
-    <li><strong>Kayaks:</strong> Drop-stitch floor + inflatable side chambers, 10 – 15 PSI floor</li>
-    <li><strong>RIB floors:</strong> Drop-stitch floors for lightweight, packable RIB tenders, 12 – 18 PSI</li>
-    <li><strong>Boat fenders:</strong> Low-pressure drop stitch for shaped fenders with flat faces</li>
+    <li><strong>SUP-laudat:</strong> 4" – 6" paksuus, 15 – 20 PSI, 1 – 2 lankaa/neliötuuma</li>
+    <li><strong>Kajakit:</strong> Drop-stitch-pohja + täytettävät sivukammiot, 10 – 15 PSI:n pohja</li>
+    <li><strong>RIB-pohjat:</strong> Drop-stitch-pohjat kevyisiin, pakattaviin RIB-peräveneisiin, 12 – 18 PSI</li>
+    <li><strong>Veneen lepuuttajat:</strong> Matalapaineinen drop-stitch muotoiltuihin, tasapintaisiin lepuuttajiin</li>
   </ul>
 
-  <h2>Drop Stitch vs. Air Deck (Fiberglass or Wood Core)</h2>
-  <p>Hard-shell boards use EPS foam cores with fiberglass or wood stringer reinforcement. They are lighter, stiffer, and more responsive — but they cannot be deflated. Drop stitch trades some rigidity for full portability. For most recreational users, modern drop-stitch SUPs at 20 PSI are indistinguishable from entry-level hard boards in rigidity.</p>
 
-  <h2>How Afarer Uses Drop Stitch</h2>
-  <p>Afarer uses a 1,680 DTEX drop-stitch core across its SUP lineup, with 2 threads per square inch and a 1.2 mm PVC outer laminate. Boards are rated to 20 PSI and undergo a 24-hour pressure hold test at 1.5x rated pressure before shipment. Rail bands are hot-air welded with triple-layer fusion, and pressure relief valves are standard across all models.</p>
+  <h2>Drop-stitch vs. ilmakansi (lasikuitu- tai puusydän)</h2>
 
+  <p>Kovakuorisissa laudoissa käytetään EPS-vaahtoydintä lasikuitu- tai puujäykisteillä. Ne ovat kevyempiä, jäykempiä ja herkempiä —mutta niitä ei voi tyhjentää. Drop-stitch vaihtaa osan jäykkyydestä täydelliseen kuljetettavuuteen. Useimmille vapaa-ajan käyttäjille nykyaikaiset
+  drop-stitch-SUP-laudat 20 PSI:n paineella ovat jäykkyydeltään erottamattomia aloitustason kovakuorisista laudoista.</p>
+
+
+  <h2>Näin Afarer käyttää drop-stitch-rakennetta</h2>
+
+  <p>Afarer käyttää 1,680 DTEX drop-stitch-sydäntä koko SUP-mallistossaan, 2 langalla neliötuumaa kohti ja 1.2 mm PVC-ulkopinnoituksella. Laudat on mitoitettu 20 PSI:n paineelle ja ne käyvät läpi 24 tunnin painetestin 1.5-kertaisella nimellispaineella ennen toimitusta. Reunakaistat hitsataan
+  kuumailmahitsauksella kolmikerroksisella sulaliitoksella, ja paineenalennusventtiilit ovat vakiona kaikissa malleissa.</p>
 cta:
-  title: 'Want to learn more about drop stitch?'
-  subtitle: 'Contact us for technical specifications and OEM inquiries.'
-  button_text: 'Contact sales'
-  button_link: /contact
+  title: Haluatko oppia lisää drop stitch -tekniikasta?
+  subtitle: Ota yhteyttä saadaksesi tekniset tiedot ja OEM-kyselyt.
+  button_text: Ota yhteyttä myyntiin
+  button_link: /yhteystiedot

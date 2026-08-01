@@ -1,70 +1,14 @@
 meta:
-  title: 'How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}'
-  description: 'Deep dive into drop stitch technology: how thousands of internal threads turn flexible PVC into a rigid, high-pressure core capable of 15-20 PSI. Construction methods, materials, quality indicators, and applications across SUPs, kayaks, and inflatable boats.'
-back_text: 'Back to Research'
-
+  title: 드롭스티치 원리 — 인플레이션블 리지드 코어의 엔지니어링 | {SITE}
+  description: '드롭 스티치 기술 심층 분석: 수천 개의 내부 실이 유연한 PVC를 15-20 PSI의 고압 경질 코어로 전환하는 방식. 건설 방법, 소재, 품질 지표, SUP, 카약, 팽창식 보트 응용 분야.'
+back_text: 연구로 돌아가기
 hero:
-  tagline: 'Technology'
-  title: 'How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores'
-  subtitle: '8 min read'
-
-content_html: |
-  <h2>What Is Drop Stitch?</h2>
-  <p>Drop stitch (also called "drop-stitch fabric" or "drop-stitch core") is a construction method in which thousands of individual polyester threads connect the top and bottom layers of a fabric shell. When the shell is inflated, these threads act as internal tension members — they prevent the top and bottom panels from bulging outward into a round shape, forcing the panel to remain flat and rigid.</p>
-  <p>The result is a lightweight, portable structure that can withstand 15 – 20 PSI of internal pressure — comparable to the rigidity of a hard-shell board but fully deflatable for storage and transport.</p>
-
-  <h2>How It Works: The Physics</h2>
-  <p>In a conventional inflatable structure (like a balloon or an air mattress), the internal air pressure pushes equally in all directions. Without internal restraint, the structure becomes cylindrical or spherical. Drop stitch solves this by introducing tensile reinforcement:</p>
-  <ul>
-    <li>Thousands of threads connect the top and bottom fabric layers</li>
-    <li>When inflated, the air pressure tries to push the top and bottom apart</li>
-    <li>The threads resist this separation, transferring the load into tension along the thread axis</li>
-    <li>The result is a flat, rigid panel that resists bending</li>
-  </ul>
-
-  <h2>Construction Process</h2>
-  <ol>
-    <li><strong>Weaving:</strong> Polyester threads are woven simultaneously into two separate layers of base fabric (typically 1,100 DTEX or 1,680 DTEX PVC-coated polyester). The threads are loop-woven between the layers at a 90&deg; angle.</li>
-    <li><strong>Coating:</strong> The woven base fabric is coated with PVC (or occasionally TPU) using a knife-coating or calendar-coating process. This seals the threads and creates the air-tight membrane.</li>
-    <li><strong>Layer bonding:</strong> The drop-stitch core is bonded to outer laminated layers (typically 0.9 mm or 1.2 mm PVC) using heat lamination or adhesive.</li>
-    <li><strong>Welding:</strong> Rail bands are welded along the edges using hot air welding, RF welding, or high-frequency welding to create the side walls of the board.</li>
-    <li><strong>Valve installation:</strong> Boston valves or Halkey-Roberts valves are installed, typically with a pressure relief mechanism to prevent over-inflation.</li>
-  </ol>
-
-  <h2>Key Quality Indicators</h2>
-  <table class="w-full text-sm border-collapse">
-    <thead>
-      <tr class="bg-gray-100">
-        <th class="p-3 text-left font-semibold text-gray-900 border">Parameter</th>
-        <th class="p-3 text-left font-semibold text-gray-900 border">Entry Level</th>
-        <th class="p-3 text-left font-semibold text-gray-900 border">Premium</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td class="p-3 border">Thread density</td><td class="p-3 border">1 thread / sq in</td><td class="p-3 border">2 threads / sq in</td></tr>
-      <tr><td class="p-3 border">Base fabric</td><td class="p-3 border">1,100 DTEX</td><td class="p-3 border">1,680 DTEX</td></tr>
-      <tr><td class="p-3 border">Max pressure</td><td class="p-3 border">12 – 15 PSI</td><td class="p-3 border">18 – 22 PSI</td></tr>
-      <tr><td class="p-3 border">PVC thickness</td><td class="p-3 border">0.6 – 0.9 mm</td><td class="p-3 border">1.0 – 1.2 mm</td></tr>
-      <tr><td class="p-3 border">Rail construction</td><td class="p-3 border">Folded &amp; glued</td><td class="p-3 border">Welded &amp; fusion-bonded</td></tr>
-    </tbody>
-  </table>
-
-  <h2>Applications</h2>
-  <ul>
-    <li><strong>SUP Boards:</strong> 4" – 6" thickness, 15 – 20 PSI, 1 – 2 threads/sq in</li>
-    <li><strong>Kayaks:</strong> Drop-stitch floor + inflatable side chambers, 10 – 15 PSI floor</li>
-    <li><strong>RIB floors:</strong> Drop-stitch floors for lightweight, packable RIB tenders, 12 – 18 PSI</li>
-    <li><strong>Boat fenders:</strong> Low-pressure drop stitch for shaped fenders with flat faces</li>
-  </ul>
-
-  <h2>Drop Stitch vs. Air Deck (Fiberglass or Wood Core)</h2>
-  <p>Hard-shell boards use EPS foam cores with fiberglass or wood stringer reinforcement. They are lighter, stiffer, and more responsive — but they cannot be deflated. Drop stitch trades some rigidity for full portability. For most recreational users, modern drop-stitch SUPs at 20 PSI are indistinguishable from entry-level hard boards in rigidity.</p>
-
-  <h2>How Afarer Uses Drop Stitch</h2>
-  <p>Afarer uses a 1,680 DTEX drop-stitch core across its SUP lineup, with 2 threads per square inch and a 1.2 mm PVC outer laminate. Boards are rated to 20 PSI and undergo a 24-hour pressure hold test at 1.5x rated pressure before shipment. Rail bands are hot-air welded with triple-layer fusion, and pressure relief valves are standard across all models.</p>
-
+  tagline: 기술
+  title: 드롭스티치 원리 — 인플레이터블 리지드 코어의 공학
+  subtitle: 8분 읽기
+content_html: "<h2>탄더론스티치럼?</h2>\n<p>더론스티치(“더론스티치 직믳”라고 “더론스티치 코어”라고도 하면서) 다른 사용법입니다. 수천 개의 과열평하과 냹리연시터 실이 직믳 슄의 상단과 하단 When the shell is inflated, 이 실들은 내부 인장 부재로 작용하여 — 상단과 하단 팬넘이 둥피 형태로 부투어 오라가는 것을 방지하고 팬넘을 폄평하고 단달하게 유지시킴니다.</p>\n<p>그 과만이 되었다 15 – 20 PSI 의 내부 압력을 겨할 수 있는 경량 탁대용 구조가 — 하들슈드 보드와 비프되는 강성을 가진다고 하지만 보관 바 운보를 위해 완전히 공기 매약 수 있습니다.</p>\n\n<h2>작동 원리: 물리학</h2>\n<p>일\bc18적인 인플레인스붜(예: 피웠 또는 에어 마트리스)에서는 내부 공기압이 모든 방향으로 동일하게 박어내니다. 내부 구소가 없으면 구조는 원광형나 구형이 됩니다. 더론스티치는 인장 보강을 도입하여 이를 해과합니다:</p>\n<ul>\n  <li>수천 개의 실이 상단과 하단 직믳 레미어를 연과합니다</li>\n  <li>팬장하면 공기압이 상단과 하단을 박어내려고 합니다</li>\n  <li>실은 이 분리에 절하여 하중을 실 중을 픸 매핑 력으로 전달합니다</li>\n  <li>그 과만이 고절에 절하는 폄평하고 단달한 팬넘이 됩니다</li>\n</ul>\n\n<h2>제작 과정</h2>\n<ol>\n  <li><strong>직주:</strong> 냹리연시터 실이 두 개의 별대 기반 직믳 레미어(일\bc18적으로 1,100 DTEX 또는 1,680 DTEX PVC 콘특 냹리연시터)로 동시에 직주됩니다. 실은 90&deg; 각도로 레미어 사이에 루프 직주됩니다.</li>\n  <li><strong>콘특:</strong> 직주된 기반 직믳에 나이프 콘특 또는 캘릸덴 콘특 과정을 사용하여 PVC(든리게 TPU)를 콘특합니다. 이를 통해 실을 밁정하고 기미 막을 형성합니다.</li>\n  <li><strong>레미어 번드:</strong> 더론스티치 코어를 열 라미너이틱 또는 접해제를 사용하여 외부 라미너이틱 레미어(일\bc18적으로 0.9mm 또는 1.2mm PVC)에 번드합니다.</li>\n  <li><strong>용접:</strong> 레미어 버드를 열픽 용접, RF 용접 또는 고주파 용접으로 가장자를 따라 용접하여 보드의 측반을 만든니다.</li>\n  <li><strong>버블 설치:</strong> 보스턴 버블 또는 핬키-로버츠 버블을 설치하면서, 과팬장 방지를 위한 압력 조절 장치가 일\bc18적으로 포함됩니다.</li>\n</ol>\n\n<h2>학심 품질 지표</h2>\n<table class=\"w-full text-sm border-collapse\">\n  <thead>\n    <tr class=\"bg-gray-100\">\n      <th class=\"p-3 text-left font-semibold text-gray-900 border\">파라미터</th>\n      <th class=\"p-3 text-left font-semibold text-gray-900 border\">Entry Level</th>\n      <th class=\"p-3 text-left font-semibold text-gray-900 border\">프리미엀</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td class=\"p-3 border\">실 밸도</td><td class=\"p-3 border\">1 thread / sq in</td><td class=\"p-3 border\">2 threads / sq in</td></tr>\n    <tr><td class=\"p-3 border\">기반 직믳</td><td class=\"p-3 border\">1,100 DTEX</td><td class=\"p-3 border\">1,680 DTEX</td></tr>\n    <tr><td class=\"p-3 border\">최대 압력</td><td class=\"p-3 border\">12 – 15 PSI</td><td class=\"p-3 border\">18 – 22 PSI</td></tr>\n    <tr><td class=\"p-3 border\">PVC 둘금</td><td class=\"p-3 border\">0.6 – 0.9 mm</td><td class=\"p-3 border\">1.0 – 1.2 mm</td></tr>\n    <tr><td class=\"p-3 border\">레미어 구조</td><td class=\"p-3 border\">접잠 &amp; 번드</td><td class=\"p-3 border\">용접 &amp; 필원 번드</td></tr>\n  </tbody>\n</table>\n\n<h2>응용 분야</h2>\n<ul>\n  <li><strong>SUP 보드:</strong> 4\" – 6\" 둘금, 15 – 20 PSI, 1 – 2실/sq in</li>\n  <li><strong>카안:</strong> 더론스티치 바닥 + 인플레인스붜 측면 체버, 10 – 15 PSI 바닥</li>\n  <li><strong>RIB 바닥:</strong> Drop-stitch 바닥s for lightweight, packable RIB tenders, 12 – 18 PSI</li>\n  <li><strong>보트 펜더:</strong> 저압 더론스티치 평면 형태의 펜더를 위한</li>\n</ul>\n\n<h2>더론스티치 vs. 에어돁(유리쇼프 또는 우드 코어)</h2>\n<p>하들슈드 보드는 EPS 폸 코어에 유리쇼프 또는 우드 스특거 보강이 적용된 실용 코어를 사용합니다. 더 간락하고, 더 단달하면, 더 반응이 빠리고 — 공기를 매약 수 없습니다. 더론스티치는 부분 강성을 탁대성과 교환합니다. 대부분의 레저 사용자에게 modern 더론스티치 SUP는 20 PSI에서 entry-level 하들 보드와 강성 차이를 구별하기 어렵습니다.</p>\n\n<h2>afarer의 더론스티치 활용</h2>\n<p>afarer는 전체 SUP 라인어에서 1,680 DTEX 더론스티치 코어를 사용하면서, 제미카인다만 2개의 실과 1.2mm PVC 외부 라미너이틱을 적용합니다. 보드는 20 PSI로 등구가 매겨지, 출하 전 정구 압력의 1.5빘에서 24시간 압력 윤지 시험을 겨친니다. 레미어 버드는 삼중 레미어 필원으로 열픽 용접되면, 압력 조절 버블은 모든 모델에 기본으로 장악됩니다.</p>\n"
 cta:
-  title: 'Want to learn more about drop stitch?'
-  subtitle: 'Contact us for technical specifications and OEM inquiries.'
-  button_text: 'Contact sales'
+  title: 드롭 스티치에 대해 더 자세히 알아보시겠습니까?
+  subtitle: 기술 사양 및 OEM 문의는 저희에게 연락해 주세요.
+  button_text: 영업팀 문의
   button_link: /contact

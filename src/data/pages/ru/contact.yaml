@@ -9,7 +9,7 @@ contact_form:
   submit_button: Отправить
   success_message: Спасибо! Ваше сообщение получено. Мы ответим в течение одного рабочего дня.
   error_message: Произошла ошибка при отправке. Попробуйте снова или напишите нам напрямую по электронной почте.
-  default_country_code: '+1'
+  default_country_code: Один
   captcha:
     label: 'Антиспам: решите следующую задачу'
   fields:
@@ -17,7 +17,7 @@ contact_form:
       label: Имя
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: страны
       step: 1
     - name: lastName
       label: Фамилия
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
+          label: Выберите ваш предполагаемый объем...
+        - value: образец
+          label: Только образцы / прототипы
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5–10 единиц (стандартный минимальный заказ)
         - value: 100-500
-          label: 100–500 units
-        - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 100–500 единиц
+        - value: более 500
+          label: 500 единиц (Объемное ценообразование)
       step: 1
     - name: companyName
       label: Компания
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
-        - value: none
-          label: Standard product (no customization)
-        - value: logo
-          label: Custom Logo / Branding only
-        - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: Выберите тип настройки...
+        - value: нет
+          label: Стандартный продукт (без кастомизации)
+        - value: логотип
+          label: Только индивидуальный логотип / фирменный стиль
+        - value: полный
+          label: Полный OEM (размер, цвет, графика, упаковка)
+        - value: консультация
+          label: Не уверен — нужна консультация
       step: 1
     - name: address
       label: Адрес
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
-        - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: Выберите категорию продукта...
+        - value: все
+          label: Все продукты / Полный каталог
+        - value: привет
+          label: SUP доски / паддлборды
+        - value: безопасность
+          label: Средства безопасности / Спасательные жилеты
+        - value: аксессуар
+          label: Аксессуары (насосы, весла, сумки)
       step: 1
     - name: zip
       label: Индекс
@@ -122,16 +122,16 @@ features2_other_ways:
       description: Медиа-киты, спонсорство и отраслевое сотрудничество.
       icon: tabler:news
     - title: Телефон
-      description: +86 13305324192
+      description: 86 13305324192
       icon: tabler:headset
-    - title: Email
+    - title: Электронная почта
       description: info@afarer.com
       icon: tabler:mail
     - title: Головной офис
-      description: Economic Development Zone, Laixi, Qingdao, China, 266600
+      description: Зона экономического развития, Лайси, Циндао, Китай, 266600
       icon: tabler:map-pin
 map:
   title: Наше местоположение
   subtitle: Приезжайте в гости
-  address: Economic Development Zone, Laixi, Qingdao, China, 266600
+  address: Зона экономического развития, Лайси, Циндао, Китай, 266600
   zoom: 15

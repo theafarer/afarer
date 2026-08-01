@@ -17,7 +17,7 @@ contact_form:
       label: 이름
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: 국가
       step: 1
     - name: lastName
       label: 성
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
+          label: 예상 거래량을 선택하세요...
+        - value: 샘플
+          label: 샘플/프로토타입만
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5–10대 (표준 MOQ)
         - value: 100-500
-          label: 100–500 units
-        - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 100–500대
+        - value: 500 이상
+          label: 500대 이상 (대량 구매 할인)
       step: 1
     - name: companyName
       label: 회사명
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
+          label: 맞춤 유형 선택...
         - value: none
-          label: Standard product (no customization)
-        - value: logo
-          label: Custom Logo / Branding only
-        - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: 표준 제품 (맞춤 제작 없음)
+        - value: 로고
+          label: 맞춤 로고/브랜딩 전용
+        - value: 전체
+          label: 풀 OEM(사이즈, 색상, 그래픽, 패키징)
+        - value: 상담
+          label: 확실하지 않음 — 상담 필요
       step: 1
     - name: address
       label: 주소
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
+          label: 제품 카테고리 선택...
+        - value: 전체
+          label: 전체 제품 / 전체 카탈로그
         - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: SUP 보드 / 패들보드
+        - value: 안전
+          label: 안전 장비 / 구명 조끼
+        - value: 액세서리
+          label: 액세서리(펌프, 패들, 가방)
       step: 1
     - name: zip
       label: 우편번호
@@ -128,10 +128,10 @@ features2_other_ways:
       description: info@afarer.com
       icon: tabler:mail
     - title: 본사
-      description: Economic Development Zone, Laixi, Qingdao, China, 266600
+      description: 중국 칭다오시 라이시 경제개발구, 266600
       icon: tabler:map-pin
 map:
   title: 위치
   subtitle: 본사로 방문해 주세요
-  address: Economic Development Zone, Laixi, Qingdao, China, 266600
+  address: 중국 칭다오시 라이시 경제개발구, 266600
   zoom: 15

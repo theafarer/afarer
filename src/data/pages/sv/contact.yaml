@@ -17,7 +17,7 @@ contact_form:
       label: Förnamn
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: länder
       step: 1
     - name: lastName
       label: Efternamn
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
+          label: Välj din uppskattade volym...
+        - value: prov
+          label: Endast prov / prototyper
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5–10 enheter (standard MOQ)
         - value: 100-500
-          label: 100–500 units
+          label: 100–500 enheter
         - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 500+ enheter (volympris)
       step: 1
     - name: companyName
       label: Företag
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
-        - value: none
-          label: Standard product (no customization)
+          label: Välj anpassningstyp...
+        - value: inget
+          label: Standardprodukt (utan anpassning)
         - value: logo
-          label: Custom Logo / Branding only
-        - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: Anpassat logotype / enbart varumärke
+        - value: fullständig
+          label: Fullständig OEM (storlek, färg, grafik, förpackning)
+        - value: konsultation
+          label: Osäker — behöver konsultation
       step: 1
     - name: address
       label: Adress
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
+          label: Välj produktkategori...
+        - value: alla
+          label: Alla produkter / Fullständig katalog
         - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: SUP-brädor / Paddelbrädor
+        - value: säkerhet
+          label: Säkerhetsutrustning / räddningsvästar
+        - value: tillbehör
+          label: Tillbehör (pumpar, åror, väskor)
       step: 1
     - name: zip
       label: Postnummer

@@ -1,25 +1,25 @@
 hero_text:
-  tagline: Get a Quote
+  tagline: Få et tilbud
   title: Be om et tilbud<br />for ditt prosjekt
   subtitle: Fortell oss om dine krav, så svarer teamet vårt med et detaljert tilbud innen 2 virkedager.
 steps2_process:
-  title: How It Works
+  title: Slik fungerer det
   subtitle: Fire enkle steg fra forespørsel til tilbud.
   items:
-    - title: 'Step 1: Submit Your Requirements'
+    - title: 'Steg 1: Send inn dine krav'
       description: Fyll ut skjemaet nedenfor med produkttype, mengde og spesifikasjoner. Jo mer detalj du oppgir, desto mer nøyaktig blir tilbudet ditt.
       icon: tabler:file-text
-    - title: 'Step 2: We Review & Advise'
+    - title: 'Trinn 2: Vi vurderer og gir råd'
       description: Vårt ingeniørteam gjennomgår dine krav og kan kontakte deg for avklaring. Vi gir anbefalinger om produktkonfigurasjon og alternativer.
       icon: tabler:users
-    - title: 'Step 3: Receive Your Quote'
+    - title: 'Trinn 3: Motta ditt tilbud'
       description: Du mottar et detaljert tilbud inkludert enhetspris, MOQ, ledetid, betalingsbetingelser og fraktalternativer. Vanligvis innen 48 timer.
       icon: tabler:currency-dollar
-    - title: 'Step 4: Sample & Production'
+    - title: 'Trinn 4: Prøve og produksjon'
       description: Etter tilbudsgodkjennelse går vi videre til prøveproduksjon (hvis aktuelt) eller direkte til masseproduksjon. Regelmessige oppdateringer gjennom hele prosessen.
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
+  tagline: Tilbudsforespørsel
   title: Fortell oss om prosjektet ditt
   subtitle: Alle felt med * er påkrevd.
   fields:
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - Dykkesenter
+        - Fiske
+        - Marin turisme / resort
+        - Søk og redning
+        - Yacht-tender
+        - Kommersiell arbeidsbåt
+        - Statlig / militært
+        - OEM / eget merke
+        - Personlig / Fritid
+        - Annet
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
+        - Ingen preferanse
+        - Marin-grade PVC (1100 dtex)
         - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - Glassfiberskrog
+        - Aluminiumsskrog
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: f.eks. 60 HK utenbordsmotor, ingen motor, to 115 HK
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: f.eks. tilpassede farger, merkevare/logo, emballasje, spesielle tilbehør
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: f.eks. levering innen 90 dager
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: Beskriv din applikasjon, tekniske spesifikasjoner eller eventuelle spesielle krav — inkluder referansetegninger, spesifikasjoner eller lenker hvis tilgjengelig
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: Last opp spesifikasjonsarket, tegningen eller referansedokumentet ditt (PDF, DWG, DXF)
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: Last opp logoen eller grafikken din for tilpasset merking (AI, EPS, PNG)
 cta:
-  title: Prefer to discuss by email?
-  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
+  title: Foretrekker du å diskutere via e-post?
+  subtitle: Send din henvendelse direkte til vårt salgsteam, så svarer vi innen 24 timer.
   actions:
     - variant: primary
-      text: Email us directly
+      text: Send oss en e-post direkte
       href: /contact

@@ -1,85 +1,103 @@
 meta:
-  title: 'Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}'
-  description: 'Explore our Hull Engineering Studio for CAD design, finite element analysis (FEA), and custom HDPE/aluminium/fibre glass hull development. Contact our engineering team to start your next RIB project.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Skrovingenjörsstudio — CAD, FEA och anpassad RIB-skrotdesign | {SITE}
+  description: Utforska vår skrovingenjörsstudio för CAD-design, elementmetodanalys (FEA) och anpassad utveckling av HDPE/aluminium/glasfibrerskrov. Kontakta vårt ingenjörsteam för att påbörja ditt nästa RIB-projekt.
+back_text: Tillbaka till FoU-centrum
+home_label: Hem
 hero:
-  tagline: 'Lab 02'
-  title: 'Hull Engineering Studio'
-  subtitle: 'Digital simulation, structural intelligence, custom hull design'
-  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
-  image_alt: 'Afarer hull engineering CAD design workstation'
+  tagline: Laboratorium 02
+  title: Skroveteknisk studio
+  subtitle: Digital simulering, strukturar intelligens, skräddarsydd skrogdesign
+  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
+  image_alt: Afarers arbetsstation för skrovdesign i CAD
+intro: >-
+  Skroget är ryggraden i varje RIB eller inflerbar båt. Det måste vara tillräckligt lätt för att plana effektivt, tillräckligt starkt för att absorbera stötlaster och dimensionsstabilt över ett brett temperaturintervall. Hos {SITE.name} kombinerar vår skrogverkstad avancerad CAD-modellering,
+  elementmetodanalyse (FEA) och årtionden av praktisk marinarkitekturerfarenhet för att leverera skrog som är optimerade för sitt ändamål — inte generiska former anpassade från en katalog.
+content_html: >
+  <h2>Där styrka möter hydrodynamik</h2>
 
-intro: 'The hull is the backbone of any RIB or inflatable boat. It must be light enough to plane efficiently, strong enough to absorb impact loads, and dimensionally stable across a wide temperature range. At {SITE.name}, our Hull Engineering Studio combines advanced CAD modelling, finite element analysis (FEA), and decades of practical naval-architecture experience to deliver hulls that are optimised for their intended mission — not generic shapes adapted from a catalogue.'
+  <p>Vi arbetar med tre huvudsakliga skrovmaterial — roterande stöpgjuten HDPE, svetsad maringrad aluminium och handlagd glasfiber — och har teknisk förmåga att designa, simulera och validera var och en internt.</p>
 
-content_html: |
-  <h2>Where strength meets hydrodynamics</h2>
-  <p>We work with three primary hull materials — rotationally moulded HDPE, welded marine-grade aluminium, and hand-laid fibreglass — and have the engineering capability to design, simulate, and validate each one in-house.</p>
 
-  <h2>Design tools and standards</h2>
-  <p>Our digital engineering environment includes:</p>
+  <h2>Designverktyg och standarder</h2>
+
+  <p>Vår digitala engineeringmiljö omfattar:</p>
+
   <table>
-    <thead><tr><th>Capability</th><th>Software / Tool</th><th>Application</th></tr></thead>
+    <thead><tr><th>Förmåga</th><th>Mjukvara / Verktyg</th><th>Tillämpning</th></tr></thead>
     <tbody>
-      <tr><td>3D parametric modelling</td><td>SolidWorks Professional</td><td>Hull surface, stringer system, engine bracket, deck layout</td></tr>
-      <tr><td>Finite element analysis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Stress mapping, modal analysis, crash/impact simulation</td></tr>
-      <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamic drag prediction, trim optimisation</td></tr>
-      <tr><td>Laminate engineering</td><td>ESAComp / CADEC</td><td>Fibreglass layer stacking, core selection, weight estimation</td></tr>
-      <tr><td>Mould flow simulation</td><td>Moldex3D</td><td>Rotomoulding wall-thickness prediction</td></tr>
+      <tr><td>3D-parametrisk modellering</td><td>SolidWorks Professional</td><td>Skrovyta, strängsystem, motorbeslag, däcksplanering</td></tr>
+      <tr><td>Elementmetodanalys</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Spanningskartering, modal analys, krock/impulssimulering</td></tr>
+      <tr><td>Beräkningsbaserad strömningsmekanik</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamisk dragningsförutsägelse, trimmoptimering</td></tr>
+      <tr><td>Laminatkonstruktion</td><td>ESAComp / CADEC</td><td>Glasfiberlagerstapling, kärnval, viktestimation</td></tr>
+      <tr><td>Formflödessimulering</td><td>Moldex3D</td><td>Rotgjutning vägg-tjockleksförutsägelse</td></tr>
     </tbody>
   </table>
 
-  <h2>Our engineering workflow</h2>
-  <p>Every hull design, whether it is a standard model or a fully custom project, follows a rigorous five-stage process:</p>
+
+  <h2>Vår engineeringprocess</h2>
+
+  <p>Varje skrovdesign, oavsett om det är en standardmodell eller ett helt anpassat projekt, följer en sträng femstegsprocess:</p>
+
   <ol>
-    <li><strong>Concept &amp; requirements gathering</strong> — We meet with you to define payload, speed envelope, sea-state capability, towing requirements, and any special mission equipment (deck hatches, console positions, fuel-tank integration).</li>
-    <li><strong>3D surfacing &amp; hydrostatic calculation</strong> — The hull form is modelled in SolidWorks and checked for hydrostatic stability (GM, righting arm) using built-in analysis tools.</li>
-    <li><strong>Structural FEA</strong> — Load cases are defined: static (crew + gear), dynamic (planing impacts at 5g), and slamming (dropping from a wave crest at 3 m/s). Stress contours are reviewed; safety factor ≥ 2.5 is mandatory.</li>
-    <li><strong>CFD drag optimisation</strong> — The hull is simulated at three loading conditions and five speeds. Wetted surface area, trim angle, and residual resistance are iteratively reduced.</li>
-    <li><strong>Design review &amp; release</strong> — The complete engineering package (3D model, FEA report, CFD report, weight estimate, ply book) is reviewed by our senior naval architect before release to the prototype workshop.</li>
+    <li><strong>Koncept &amp; kravinsamling</strong> — Vi möter er för att definiera last, hastighetsintervall, havstillståndskapacitet, bogseringskrav och eventuellt specialutrustning för uppdrag (däcksluckor, konsolpositioner, bränsletankintegration).</li>
+    <li><strong>3D-ytmodellering &amp; hydrostatisk beräkning</strong> — Skrovet formges i SolidWorks och kontrolleras för hydrostatisk stabilitet (GM, rättningsarm) med inbyggda analysverktyg.</li>
+    <li><strong>Strukturell FEA</strong> — Lastfall definieras: statiskt (besättning + utrustning), dynamiskt (planerande slag vid 5g) och slagsmot (fallande från vågkam vid 3 m/s). Spanningskonturer granskas; säkerhetsfaktor ≥ 2,5 är obligatorisk.</li>
+    <li><strong>CFD-dragningsoptimering</strong> — Skrovet simuleras vid tre lasttillstånd och fem hastigheter. Fuktad yta, trimvinkel och restmotstånd minskas iterativt.</li>
+    <li><strong>Designgranskning &amp; frigivning</strong> — Den kompletta engineeringpaketet (3D-modell, FEA-rapport, CFD-rapport, viktestimation, lagerbok) granskas av vår seniora skeppsarkitekt innan frigivning till prototypverkstaden.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Stress Distribution — RIB 450 Patrol Hull (Aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA-spanningsfördelning — RIB 450 Patrullskrov (Aluminium 5083)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
-        <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
-        <span class="text-gray-500">Safety factor at max payload</span>
+        <span class="block text-2xl font-bold text-blue-600">2,8 : 1</span>
+        <span class="text-gray-500">Säkerhetsfaktor vid maxlast</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
-        <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
-        <span class="text-gray-500">Drag reduction vs previous generation</span>
+        <span class="block text-2xl font-bold text-blue-600">15,2 %</span>
+        <span class="text-gray-500">Dragminskning jämfört med föregående generation</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
-        <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
-        <span class="text-gray-500">Peak slamming pressure (design limit)</span>
+        <span class="block text-2xl font-bold text-blue-600">87 kN/m2</span>
+        <span class="text-gray-500">Maximal slagsmotstryck (desigongränsvärde)</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
-        <span class="text-gray-500">Cumulative FEA runtime in 2025</span>
+        <span class="text-gray-500">Ackumulerad FEA-körtid 2025</span>
       </div>
     </div>
   </div>
 
-  <h2>Customisation: your hull, your rules</h2>
-  <p>No two operators have identical requirements. A harbour-patrol RIB needs a shallow-V hull for stability at low speed; a fast-interception craft needs a deep-V with spray rails; a dive-support boat needs a wide beam and a low transom. We do not force your application into a pre-existing hull shape. We design from your specification upward.</p>
-  <p>Examples of recent custom hull engineering projects:</p>
+
+  <h2>Anpassning: er skrov, era regler</h2>
+
+  <p>Inga två operatörer har identiska krav. En hamnpatrullerande RIB behöver ett grunt V-skrov för stabilitet vid låg hastighet; en snabbinterceptionsfarkost behöver ett djupt V med spröjslinjer; en dykarstödsbåt behöver en bred bredd och en låg akterstäv. Vi tvingar inte er applikation i en
+  förutbestämd skrovform. Vi designar utifrån era specifikationer.</p>
+
+  <p>Exempel på senaste anpassade skrovengineeringprojekt:</p>
+
   <ul>
-    <li>A stretched 6.8 m HDPE hull for a Caribbean tour operator, with a reinforced bow for beach landings (+15 % bottom thickness).</li>
-    <li>A lightweight aluminium 7.2 m RIB for a coast guard, with integrated fuel-tank baffles and equipment-locker stiffeners.</li>
-    <li>A fibreglass 5.5 m dive boat with a cut-down transom and twin battery boxes, designed for easy snorkeller reboarding.</li>
+    <li>Ett förlängt 6,8 m HDPE-skrov för en karibisk tour-operatör, med förstärkt bog för strändlandningar (+15 % botten-tjocklek).</li>
+    <li>En lättviktig aluminium 7,2 m RIB för en kustbevakning, med integrerade bränsletanksväggar och utrustningslådesstegringar.</li>
+    <li>En glasfiber 5,5 m dykbåt med nedskuren akterstäv och dubbla batterilådor, designad för enkel ombordtagning av snorklare.</li>
   </ul>
 
-  <h2>Our engineers</h2>
-  <p>The studio is led by a senior naval architect with 14 years of experience in high-speed craft design, supported by two mechanical engineers specialised in FEA and CFD. All three hold advanced degrees in marine engineering or naval architecture from internationally recognised universities. The team publishes regularly in industry journals and presents at conferences such as the International Conference on High-Performance Marine Vehicles.</p>
 
-  <h2>Partner with us on your next hull</h2>
-  <p>From the first concept sketch to the final stress report, our Hull Engineering Studio is your partner in creating a boat that is not just built — but engineered. We invest the simulation hours upfront so that every weld, every laminate layer, and every curve of the hull is there for a reason.</p>
-  <p>Whether you need a minor modification to an existing model or a completely clean-sheet design, we are ready to discuss your requirements.</p>
+  <h2>Våra ingenjörer</h2>
 
+  <p>Studion leds av en senior skeppsarkitekt med 14 års erfarenhet av höghastighetsfarkostdesign, understödd av två mekaniska ingenjörer specialiserade på FEA och CFD. Alla tre har avancerade examen i marin teknik eller skeppsarkitektur från internationellt erkända universitet. Teamet publicerar
+  regelbundet i branschtidskrift och presenterar på konferenser som International Conference on High-Performance Marine Vehicles.</p>
+
+
+  <h2>Samarbeta med oss om ert nästa skrov</h2>
+
+  <p>Från den första konceptskissen till den slutliga spänningsrapporten är vår Skrovengineeringstudio er partner i att skapa en båt som inte bara är byggd — utan engineerad. Vi investerar simuleringstimmar i förväg så att varje svets, varje laminatlager och varje kurva på skrovet finns där av en
+  anledning.</p>
+
+  <p>Oavsett om ni behöver en mindre modification av en befintlig modell eller en helt ny design, är vi redo att diskutera era behov.</p>
 cta:
-  title: 'Start your hull design consultation'
-  subtitle: 'Tell us about your mission profile and we will propose an engineering path.'
-  button_text: 'Contact our engineering team'
-  button_link: /contact
+  title: Starta din konsultation för skrovdesign
+  subtitle: Berätta om er uppdrags­profil så föreslår vi en teknisk väg.
+  button_text: Kontakta vårt ingenjörsteam
+  button_link: /kontakt

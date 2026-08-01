@@ -34767,73 +34767,399 @@ Contact:
 }
 ```
 
+## Company Facts
+### Certification Facts
+
+```json
+{
+  "ce_certification": {
+    "scope": "Full product line",
+    "authority": "European Union",
+    "standards": [
+      "EN ISO 6185",
+      "EN ISO 10087",
+      "EN ISO 10240"
+    ],
+    "validity": "Current"
+  },
+  "iso_quality_system": {
+    "scope": "Manufacturing facility",
+    "standard": "ISO 9001",
+    "validity": "Current"
+  },
+  "bsci_compliance": {
+    "scope": "Social responsibility",
+    "authority": "BSCI",
+    "validity": "Current"
+  },
+  "reach_compliance": {
+    "scope": "Material safety",
+    "authority": "EU REACH Regulation",
+    "validity": "Current"
+  },
+  "uscg_approval": {
+    "scope": "US Coast Guard approved manufacturing",
+    "authority": "United States Coast Guard",
+    "validity": "Current"
+  },
+  "product_testing": [
+    "Buoyancy testing",
+    "Load capacity testing",
+    "Seam strength testing",
+    "UV resistance testing",
+    "Abrasion resistance testing",
+    "Pressure hold testing"
+  ]
+}
+```
+
+### Company Facts
+
+```json
+{
+  "name": "afarer",
+  "industry": "Marine equipment manufacturing",
+  "specialization": [
+    "RIB boats",
+    "Inflatable boats",
+    "SUP boards",
+    "Inflatable kayaks",
+    "Life vests",
+    "Marine accessories"
+  ],
+  "manufacturing_location": "Qingdao, China",
+  "facility_size": "12,000 m²",
+  "employees": "200+",
+  "annual_capacity": "15,000+ units",
+  "markets": "50+ countries",
+  "business_model": [
+    "OEM",
+    "ODM",
+    "Private Label",
+    "Wholesale",
+    "Custom manufacturing"
+  ],
+  "founded": 2012,
+  "certifications": [
+    "CE",
+    "ISO",
+    "BSCI",
+    "REACH"
+  ],
+  "expertise": [
+    "Marine-grade PVC fabrication",
+    "Hypalon/CSM rubber processing",
+    "Drop stitch core technology",
+    "Deep-V fiberglass hull design",
+    "Aluminum hull fabrication",
+    "High-frequency welding",
+    "CNC cutting",
+    "Pressure testing"
+  ]
+}
+```
+
+### Manufacturing Facts
+
+```json
+{
+  "facility": {
+    "location": "Qingdao, China",
+    "size": "12,000 m²",
+    "employees": "200+",
+    "annual_capacity": "15,000+ units"
+  },
+  "capabilities": {
+    "design": [
+      "Product requirement analysis",
+      "3D modeling",
+      "Prototype development"
+    ],
+    "materials": [
+      "Marine-grade PVC (1100 denier)",
+      "Hypalon/CSM rubber",
+      "Fiberglass",
+      "Aluminum alloys",
+      "Stainless steel"
+    ],
+    "processes": [
+      "CNC cutting",
+      "High-frequency welding",
+      "PVC/Hypalon fabrication",
+      "Drop stitch core assembly",
+      "Fiberglass layup",
+      "Aluminum hull welding",
+      "Tube assembly & seam sealing",
+      "Pressure testing",
+      "Water testing"
+    ],
+    "equipment": [
+      "CNC cutting machines",
+      "High-frequency welding machines",
+      "Drop stitch production line",
+      "Pressure testing rigs",
+      "Material aging testers",
+      "Seam strength testers"
+    ]
+  },
+  "quality_control": [
+    "Incoming material inspection",
+    "In-process quality checks",
+    "Seam strength testing",
+    "Pressure testing for all inflatable products",
+    "Final product inspection",
+    "Sea trials for RIB boats"
+  ],
+  "oem_process": [
+    "Product requirement analysis",
+    "Design confirmation",
+    "Prototype production",
+    "Testing & validation",
+    "Mass production",
+    "Quality inspection",
+    "Global shipping"
+  ],
+  "customization_options": [
+    "Tube colors",
+    "Console position",
+    "Fuel capacity",
+    "Accessory mounts",
+    "Branding & logos",
+    "Packaging"
+  ]
+}
+```
+
+## Company Facts
+### Certification Facts
+
+```json
+{
+  "ce_certification": {
+    "scope": "Full product line",
+    "authority": "European Union",
+    "standards": [
+      "EN ISO 6185",
+      "EN ISO 10087",
+      "EN ISO 10240"
+    ],
+    "validity": "Current"
+  },
+  "iso_quality_system": {
+    "scope": "Manufacturing facility",
+    "standard": "ISO 9001",
+    "validity": "Current"
+  },
+  "bsci_compliance": {
+    "scope": "Social responsibility",
+    "authority": "BSCI",
+    "validity": "Current"
+  },
+  "reach_compliance": {
+    "scope": "Material safety",
+    "authority": "EU REACH Regulation",
+    "validity": "Current"
+  },
+  "uscg_approval": {
+    "scope": "US Coast Guard approved manufacturing",
+    "authority": "United States Coast Guard",
+    "validity": "Current"
+  },
+  "product_testing": [
+    "Buoyancy testing",
+    "Load capacity testing",
+    "Seam strength testing",
+    "UV resistance testing",
+    "Abrasion resistance testing",
+    "Pressure hold testing"
+  ]
+}
+```
+
+### Company Facts
+
+```json
+{
+  "name": "afarer",
+  "industry": "Marine equipment manufacturing",
+  "specialization": [
+    "RIB boats",
+    "Inflatable boats",
+    "SUP boards",
+    "Inflatable kayaks",
+    "Life vests",
+    "Marine accessories"
+  ],
+  "manufacturing_location": "Qingdao, China",
+  "facility_size": "12,000 m²",
+  "employees": "200+",
+  "annual_capacity": "15,000+ units",
+  "markets": "50+ countries",
+  "business_model": [
+    "OEM",
+    "ODM",
+    "Private Label",
+    "Wholesale",
+    "Custom manufacturing"
+  ],
+  "founded": 2012,
+  "certifications": [
+    "CE",
+    "ISO",
+    "BSCI",
+    "REACH"
+  ],
+  "expertise": [
+    "Marine-grade PVC fabrication",
+    "Hypalon/CSM rubber processing",
+    "Drop stitch core technology",
+    "Deep-V fiberglass hull design",
+    "Aluminum hull fabrication",
+    "High-frequency welding",
+    "CNC cutting",
+    "Pressure testing"
+  ]
+}
+```
+
+### Manufacturing Facts
+
+```json
+{
+  "facility": {
+    "location": "Qingdao, China",
+    "size": "12,000 m²",
+    "employees": "200+",
+    "annual_capacity": "15,000+ units"
+  },
+  "capabilities": {
+    "design": [
+      "Product requirement analysis",
+      "3D modeling",
+      "Prototype development"
+    ],
+    "materials": [
+      "Marine-grade PVC (1100 denier)",
+      "Hypalon/CSM rubber",
+      "Fiberglass",
+      "Aluminum alloys",
+      "Stainless steel"
+    ],
+    "processes": [
+      "CNC cutting",
+      "High-frequency welding",
+      "PVC/Hypalon fabrication",
+      "Drop stitch core assembly",
+      "Fiberglass layup",
+      "Aluminum hull welding",
+      "Tube assembly & seam sealing",
+      "Pressure testing",
+      "Water testing"
+    ],
+    "equipment": [
+      "CNC cutting machines",
+      "High-frequency welding machines",
+      "Drop stitch production line",
+      "Pressure testing rigs",
+      "Material aging testers",
+      "Seam strength testers"
+    ]
+  },
+  "quality_control": [
+    "Incoming material inspection",
+    "In-process quality checks",
+    "Seam strength testing",
+    "Pressure testing for all inflatable products",
+    "Final product inspection",
+    "Sea trials for RIB boats"
+  ],
+  "oem_process": [
+    "Product requirement analysis",
+    "Design confirmation",
+    "Prototype production",
+    "Testing & validation",
+    "Mass production",
+    "Quality inspection",
+    "Global shipping"
+  ],
+  "customization_options": [
+    "Tube colors",
+    "Console position",
+    "Fuel capacity",
+    "Accessory mounts",
+    "Branding & logos",
+    "Packaging"
+  ]
+}
+```
+
 ## Site Pages
 - https://afarer.com/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
 - https://afarer.com/academy/ — Learning Center
 - https://afarer.com/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/ar/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/ar/academy/ — Learning Center
-- https://afarer.com/ar/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/ar/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/ar/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/ar/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/ar/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/ar/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
-- https://afarer.com/ar/brand/ — {BRAND}
-- https://afarer.com/ar/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/ar/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/ar/about/ — هندسة بحرية، بطريقة <span class="text-accent dark:text-white">afarer</span>
+- https://afarer.com/ar/academy/ — مركز التعلم
+- https://afarer.com/ar/afarer-story/ — afarer —هندسة الحرية على الماء
+- https://afarer.com/ar/b2b-solutions-matrix/ — مصفوفة حلول العملاء B2B | {SITE}
+- https://afarer.com/ar/brand-global-presence/ — نخدم أكثر من 50 دولة في كل قارة
+- https://afarer.com/ar/brand-marine-expertise/ — عقود من الهندسة البحرية في كل هيكل
+- https://afarer.com/ar/brand-team/ — الأشخاص الذين يقفون وراء رحلة بعيدة —هندسة الحرية في المياه
+- https://afarer.com/ar/brand-why-afarer/ — سبعة أسباب وراء اختيار العلامات التجارية العالمية للسفر
+- https://afarer.com/ar/brand/ — العلامة التجارية
+- https://afarer.com/ar/cases/ — مشاريع حقيقية، نتائج حقيقية —afarer في العمل
+- https://afarer.com/ar/certifications/ — شهادات الجودة ومعايير الامتثال
 - https://afarer.com/ar/commercial-workboats/
-- https://afarer.com/ar/community/ — The afarer Community
-- https://afarer.com/ar/contact/ — GET IN TOUCH
-- https://afarer.com/ar/custom/ — Design Your Own SUP Board
+- https://afarer.com/ar/community/ — مجتمع أكوافارير
+- https://afarer.com/ar/contact/ — تواصل معنا
+- https://afarer.com/ar/custom/ — صمم قاربك الخاص
 - https://afarer.com/ar/disaster-relief/
-- https://afarer.com/ar/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/ar/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/ar/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/ar/factory-process/ — Manufacturing Process
-- https://afarer.com/ar/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/ar/factory/ — Factory & Manufacturing
+- https://afarer.com/ar/factory-capacity/ — القدرة التصنيعية والإنتاج السنوي
+- https://afarer.com/ar/factory-equipment/ — المعدات والآلات الصناعية
+- https://afarer.com/ar/factory-oem-capability/ — التصنيع وفق نظام OEM والعلامة الخاصة
+- https://afarer.com/ar/factory-process/ — عملية التصنيع
+- https://afarer.com/ar/factory-quality-lab/ — مختبر الاختبار وضمان الجودة
+- https://afarer.com/ar/factory/ — المصنع والتصنيع
 - https://afarer.com/ar/fishing/
-- https://afarer.com/ar/gallery/ — Gallery
-- https://afarer.com/ar/guides/ — New to SUP?
-- https://afarer.com/ar/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/ar/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/ar/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/ar/gallery/ — معرض الصور
+- https://afarer.com/ar/guides/ — جديد على ألواح SUP؟
+- https://afarer.com/ar/home/ — مصنع القوارب القابلة للنفخ —<br class="hidden sm:inline" /> OEM/ODM <span class="text-accent dark:text-white">مصنّع</span>
+- https://afarer.com/ar/hull-engineering/ — استوديو هندسة هياكل القوارب — CAD وFEA وتصميم هياكل RIB المخصصة | {SITE}
+- https://afarer.com/ar/hydrodynamic-test-tank/ — خزان الاختبار الهيدروديناميكي — سحب النماذج المصغّرة وتحسين هيكل القارب | {SITE}
 - https://afarer.com/ar/inflatable-vs-hardboard/
-- https://afarer.com/ar/journal/ — Journal
-- https://afarer.com/ar/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/ar/learn/ — Learn
-- https://afarer.com/ar/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/ar/journal/ — مجلة afarer
+- https://afarer.com/ar/knowledge/ — معرفة استكشاف المياه
+- https://afarer.com/ar/learn/ — تعلم
+- https://afarer.com/ar/lifestyle/ — أسلوب حياة afarer
 - https://afarer.com/ar/maritime-safety-defense/
-- https://afarer.com/ar/media/ — Media Center
-- https://afarer.com/ar/news/ — News
-- https://afarer.com/ar/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/ar/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/ar/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/ar/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/ar/quality/ — Performance & Quality Testing
-- https://afarer.com/ar/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/ar/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/ar/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/ar/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/ar/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/ar/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/ar/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/ar/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/ar/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/ar/safety/ — Safety Standards & Certification
+- https://afarer.com/ar/media/ — المركز الإعلامي
+- https://afarer.com/ar/news/ — الأخبار
+- https://afarer.com/ar/partners/ — كن شريكًا بعيدًا —شبكة التوزيع العالمية
+- https://afarer.com/ar/prototype-workshop/ — ورشة النماذج الأولية — تصنيع نماذج RIB بالحجم الكامل والتجارب البحرية | {SITE}
+- https://afarer.com/ar/pvc-fabric-lab/ — مختبر أقمشة PVC — اختبار المواد للقوارب القابلة للنفخ | {SITE}
+- https://afarer.com/ar/quality-inspection-lab/ — مختبر الجودة والفحص — اختبار واعتماد RIB متوافق مع ISO | {SITE}
+- https://afarer.com/ar/quality/ — اختبارات الأداء والجودة
+- https://afarer.com/ar/randdcenter/ — مركز البحث والتطوير | {SITE}
+- https://afarer.com/ar/request-quotation/ — اطلب عرض أسعار لمشروعك
+- https://afarer.com/ar/research-ce-certification/ — كيف تعمل شهادة CE للمركبات المائية القابلة للنفخ | {SITE}
+- https://afarer.com/ar/research-drop-stitch/ — كيف تعمل تقنية Drop Stitch — الهندسة وراء القلوب الصلبة القابلة للنفخ | {SITE}
+- https://afarer.com/ar/research-oem-buyer-guide/ — دليل مشتري OEM — توريد القوارب القابلة للنفخ من آسيا | {SITE}
+- https://afarer.com/ar/research-pvc-vs-hypalon/ — PVC مقابل Hypalon — مقارنة تقنية للقوارب القابلة للنفخ | {SITE}
+- https://afarer.com/ar/research-sup-thickness/ — كيف تختار سُمك SUP — تحليل هندسي | {SITE}
+- https://afarer.com/ar/resources/ — موارد وتنزيلات B2B | {SITE}
+- https://afarer.com/ar/rf-welding/ — مركز اللحام بالترددات الراديوية — الربط العازل للحامات محكمة الإغلاق | {SITE}
+- https://afarer.com/ar/safety/ — معايير وشهادات السلامة
 - https://afarer.com/ar/search-and-rescue/
-- https://afarer.com/ar/size-guide/ — Size & Specs Guide
-- https://afarer.com/ar/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/ar/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/ar/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/ar/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/ar/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/ar/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/ar/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/ar/technology/ — Built for Performance
+- https://afarer.com/ar/size-guide/ — دليل المقاسات والمواصفات
+- https://afarer.com/ar/solutions-build-your-own-brand/ — تصنيع ألواح SUP بعلامة تجارية خاصة | {SITE}
+- https://afarer.com/ar/solutions-distributors/ — برنامج شركاء توزيع ألواح SUP | {SITE}
+- https://afarer.com/ar/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/ar/solutions-rental-operators/ — حلول أساطيل تأجير ألواح SUP | {SITE}
+- https://afarer.com/ar/solutions-resorts-hotels/ — حلول أساطيل SUP للمنتجعات | {SITE}
+- https://afarer.com/ar/solutions-retail-partners/ — برنامج شركاء التجزئة لـ SUP | {SITE}
+- https://afarer.com/ar/solutions/ — حلول SUP لكل الأعمال
+- https://afarer.com/ar/technology/ — تقنيتنا
 - https://afarer.com/ar/tourism-recreation/
-- https://afarer.com/ar/trust/ — Trust afarer
+- https://afarer.com/ar/trust/ — ثق بأكوافارير
 - https://afarer.com/ar/warranty/
 - https://afarer.com/ar/what-is-sup/
 - https://afarer.com/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
@@ -34847,331 +35173,331 @@ Contact:
 - https://afarer.com/commercial-workboats/
 - https://afarer.com/community/ — The afarer Community
 - https://afarer.com/contact/ — GET IN TOUCH
-- https://afarer.com/cs/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/cs/academy/ — Learning Center
-- https://afarer.com/cs/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/cs/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/cs/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/cs/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/cs/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/cs/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/cs/about/ — O afarer
+- https://afarer.com/cs/academy/ — Vzdělávací centrum
+- https://afarer.com/cs/afarer-story/ — afarer —Inženýrství svobody na vodě
+- https://afarer.com/cs/b2b-solutions-matrix/ — Matice B2B řešení pro klienty | {SITE}
+- https://afarer.com/cs/brand-global-presence/ — Obsluhujeme 50+ zemí na každém kontinentu
+- https://afarer.com/cs/brand-marine-expertise/ — Desetiletí námořního inženýrství v každém trupu
+- https://afarer.com/cs/brand-team/ — Lidé za afarer —inženýrství svobody na vodě
+- https://afarer.com/cs/brand-why-afarer/ — Sedm důvodů, proč globální značky volí afarer
 - https://afarer.com/cs/brand/ — {BRAND}
-- https://afarer.com/cs/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/cs/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/cs/cases/ — Skutečné projekty, skutečné výsledky —afarer v akci
+- https://afarer.com/cs/certifications/ — Certifikáty kvality a normy shody
 - https://afarer.com/cs/commercial-workboats/
-- https://afarer.com/cs/community/ — The afarer Community
-- https://afarer.com/cs/contact/ — GET IN TOUCH
-- https://afarer.com/cs/custom/ — Design Your Own SUP Board
+- https://afarer.com/cs/community/ — Komunita afarer
+- https://afarer.com/cs/contact/ — KONTAKTUJTE NÁS
+- https://afarer.com/cs/custom/ — Navrhněte si vlastní SUP prkno
 - https://afarer.com/cs/disaster-relief/
-- https://afarer.com/cs/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/cs/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/cs/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/cs/factory-process/ — Manufacturing Process
-- https://afarer.com/cs/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/cs/factory/ — Factory & Manufacturing
+- https://afarer.com/cs/factory-capacity/ — Výrobní kapacita a roční produkce
+- https://afarer.com/cs/factory-equipment/ — Výrobní zařízení a stroje
+- https://afarer.com/cs/factory-oem-capability/ — Výroba OEM a pod vlastní značkou
+- https://afarer.com/cs/factory-process/ — Náš výrobní proces
+- https://afarer.com/cs/factory-quality-lab/ — Testovací laboratoř a zajištění kvality
+- https://afarer.com/cs/factory/ — Naše továrna
 - https://afarer.com/cs/fishing/
-- https://afarer.com/cs/gallery/ — Gallery
-- https://afarer.com/cs/guides/ — New to SUP?
-- https://afarer.com/cs/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/cs/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/cs/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/cs/gallery/ — Galerie
+- https://afarer.com/cs/guides/ — Jste v SUP nováčkem?
+- https://afarer.com/cs/home/ — Prémiový výrobce nafukovacích SUP prken &amp; OEM partner
+- https://afarer.com/cs/hull-engineering/ — Studio konstrukce trupů — CAD, FEA a návrh trupů RIB na míru | {SITE}
+- https://afarer.com/cs/hydrodynamic-test-tank/ — Hydrodynamický zkušební tank – vlečné zkoušky modelů a optimalizace trupu | {SITE}
 - https://afarer.com/cs/inflatable-vs-hardboard/
-- https://afarer.com/cs/journal/ — Journal
-- https://afarer.com/cs/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/cs/learn/ — Learn
-- https://afarer.com/cs/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/cs/journal/ — Deník
+- https://afarer.com/cs/knowledge/ — Znalosti o objevování vod
+- https://afarer.com/cs/learn/ — Učení
+- https://afarer.com/cs/lifestyle/ — Životní styl afarer
 - https://afarer.com/cs/maritime-safety-defense/
-- https://afarer.com/cs/media/ — Media Center
-- https://afarer.com/cs/news/ — News
-- https://afarer.com/cs/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/cs/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/cs/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/cs/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/cs/quality/ — Performance & Quality Testing
-- https://afarer.com/cs/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/cs/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/cs/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/cs/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/cs/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/cs/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/cs/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/cs/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/cs/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/cs/safety/ — Safety Standards & Certification
+- https://afarer.com/cs/media/ — Mediální centrum
+- https://afarer.com/cs/news/ — Novinky
+- https://afarer.com/cs/partners/ — Staňte se partnerem afarer —globální distribuční síť
+- https://afarer.com/cs/prototype-workshop/ — Prototypová dílna — Prototypování RIB v plném měřítku a námořní zkoušky | {SITE}
+- https://afarer.com/cs/pvc-fabric-lab/ — Laboratoř PVC tkanin – testování materiálů pro nafukovací čluny | {SITE}
+- https://afarer.com/cs/quality-inspection-lab/ — Laboratoř kvality a kontroly — Testování a certifikace RIB v souladu s ISO | {SITE}
+- https://afarer.com/cs/quality/ — Testování výkonu a kvality
+- https://afarer.com/cs/randdcenter/ — Centrum výzkumu a vývoje | {SITE}
+- https://afarer.com/cs/request-quotation/ — Požádat o cenovou nabídku pro váš projekt
+- https://afarer.com/cs/research-ce-certification/ — Jak funguje certifikace CE pro nafukovací plavidla | {SITE}
+- https://afarer.com/cs/research-drop-stitch/ — Jak funguje technologie Drop Stitch — inženýrství za nafukovacími tuhými jádry | {SITE}
+- https://afarer.com/cs/research-oem-buyer-guide/ — Průvodce pro OEM kupující – nákup nafukovacích plavidel z Asie | {SITE}
+- https://afarer.com/cs/research-pvc-vs-hypalon/ — PVC vs. Hypalon — technické srovnání pro nafukovací čluny | {SITE}
+- https://afarer.com/cs/research-sup-thickness/ — Jak vybrat tloušťku SUP — inženýrská analýza | {SITE}
+- https://afarer.com/cs/resources/ — B2B zdroje a ke stažení | {SITE}
+- https://afarer.com/cs/rf-welding/ — Centrum RF svařování – dielektrické spojování vzduchotěsných švů | {SITE}
+- https://afarer.com/cs/safety/ — Bezpečnostní normy a certifikace
 - https://afarer.com/cs/search-and-rescue/
-- https://afarer.com/cs/size-guide/ — Size & Specs Guide
-- https://afarer.com/cs/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/cs/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/cs/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/cs/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/cs/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/cs/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/cs/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/cs/technology/ — Built for Performance
+- https://afarer.com/cs/size-guide/ — Průvodce velikostmi a specifikacemi
+- https://afarer.com/cs/solutions-build-your-own-brand/ — Výroba SUP prken privátních značek | {SITE}
+- https://afarer.com/cs/solutions-distributors/ — Program distribučních partnerů SUP | {SITE}
+- https://afarer.com/cs/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/cs/solutions-rental-operators/ — Řešení pro půjčovny SUP | {SITE}
+- https://afarer.com/cs/solutions-resorts-hotels/ — Řešení SUP flotil pro resorty | {SITE}
+- https://afarer.com/cs/solutions-retail-partners/ — Program pro maloobchodní partnery SUP | {SITE}
+- https://afarer.com/cs/solutions/ — SUP řešení pro každé podnikání
+- https://afarer.com/cs/technology/ — Postaveno pro výkon
 - https://afarer.com/cs/tourism-recreation/
-- https://afarer.com/cs/trust/ — Trust afarer
+- https://afarer.com/cs/trust/ — Důvěřujte afarer
 - https://afarer.com/cs/warranty/
 - https://afarer.com/cs/what-is-sup/
 - https://afarer.com/custom/ — Design Your Own SUP Board
-- https://afarer.com/da/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/da/academy/ — Learning Center
-- https://afarer.com/da/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/da/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/da/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/da/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/da/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/da/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/da/about/ — Om afarer
+- https://afarer.com/da/academy/ — Læringscenter
+- https://afarer.com/da/afarer-story/ — afarer —Ingeniørkunst for Frihed på Vandet
+- https://afarer.com/da/b2b-solutions-matrix/ — Matrix over B2B-kundeløsninger | {SITE}
+- https://afarer.com/da/brand-global-presence/ — Betjener 50+ lande over alle kontinenter
+- https://afarer.com/da/brand-marine-expertise/ — Årtiers marineingeniørarbejde i hvert skrog
+- https://afarer.com/da/brand-team/ — Menneskerne bag afarer —Konstruktionsfrihed på vandet
+- https://afarer.com/da/brand-why-afarer/ — Syv grunde til hvorfor globale brands vælger afarer
 - https://afarer.com/da/brand/ — {BRAND}
-- https://afarer.com/da/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/da/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/da/cases/ — Virkelige projekter, virkelige resultater —afarer i aktion
+- https://afarer.com/da/certifications/ — Kvalitetscertificeringer & Overholdelsesstandarder
 - https://afarer.com/da/commercial-workboats/
-- https://afarer.com/da/community/ — The afarer Community
-- https://afarer.com/da/contact/ — GET IN TOUCH
-- https://afarer.com/da/custom/ — Design Your Own SUP Board
+- https://afarer.com/da/community/ — afarer-fællesskabet
+- https://afarer.com/da/contact/ — KONTAKT OS
+- https://afarer.com/da/custom/ — Design dit eget SUP-board
 - https://afarer.com/da/disaster-relief/
-- https://afarer.com/da/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/da/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/da/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/da/factory-process/ — Manufacturing Process
-- https://afarer.com/da/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/da/factory/ — Factory & Manufacturing
+- https://afarer.com/da/factory-capacity/ — Produktionskapacitet & årlig produktion
+- https://afarer.com/da/factory-equipment/ — Produktionsudstyr og maskiner
+- https://afarer.com/da/factory-oem-capability/ — OEM- og private label-produktion
+- https://afarer.com/da/factory-process/ — Vores produktionsproces
+- https://afarer.com/da/factory-quality-lab/ — Testlaboratorium og kvalitetssikring
+- https://afarer.com/da/factory/ — Vores fabrik
 - https://afarer.com/da/fishing/
-- https://afarer.com/da/gallery/ — Gallery
-- https://afarer.com/da/guides/ — New to SUP?
-- https://afarer.com/da/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/da/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/da/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/da/gallery/ — Galleri
+- https://afarer.com/da/guides/ — Ny til SUP?
+- https://afarer.com/da/home/ — Premium-producent af oppustelige SUP-boards &amp; OEM-partner
+- https://afarer.com/da/hull-engineering/ — Hull Engineering Studio — CAD, FEA & tilpasset RIB-skrogdesign | {SITE}
+- https://afarer.com/da/hydrodynamic-test-tank/ — Hydrodynamisk testbassin – slæbeforsøg med skalamodeller & skrogoptimering | {SITE}
 - https://afarer.com/da/inflatable-vs-hardboard/
-- https://afarer.com/da/journal/ — Journal
-- https://afarer.com/da/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/da/learn/ — Learn
-- https://afarer.com/da/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/da/journal/ — Magasin
+- https://afarer.com/da/knowledge/ — Vandudforskningsviden
+- https://afarer.com/da/learn/ — Lær
+- https://afarer.com/da/lifestyle/ — afarer- livsstilen
 - https://afarer.com/da/maritime-safety-defense/
-- https://afarer.com/da/media/ — Media Center
-- https://afarer.com/da/news/ — News
-- https://afarer.com/da/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/da/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/da/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/da/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/da/quality/ — Performance & Quality Testing
-- https://afarer.com/da/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/da/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/da/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/da/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/da/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/da/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/da/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/da/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/da/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/da/safety/ — Safety Standards & Certification
+- https://afarer.com/da/media/ — Mediecenter
+- https://afarer.com/da/news/ — Nyheder
+- https://afarer.com/da/partners/ — Bliv en afarer-partner —Globalt distributionsnetværk
+- https://afarer.com/da/prototype-workshop/ — Prototypeworkshop — fuldskala RIB-prototyping og søprøver | {SITE}
+- https://afarer.com/da/pvc-fabric-lab/ — PVC-stoflaboratorium — materialetest af oppustelige både | {SITE}
+- https://afarer.com/da/quality-inspection-lab/ — Kvalitets- og inspektionslaboratorium — ISO-kompatibel RIB-test og -certificering | {SITE}
+- https://afarer.com/da/quality/ — Ydeevne- og kvalitetstestning
+- https://afarer.com/da/randdcenter/ — R&D-center | {SITE}
+- https://afarer.com/da/request-quotation/ — Anmod om et tilbud til dit projekt
+- https://afarer.com/da/research-ce-certification/ — Sådan fungerer CE-certificering for oppustelige fartøjer | {SITE}
+- https://afarer.com/da/research-drop-stitch/ — Sådan fungerer drop stitch — teknologien bag oppustelige stive kerner | {SITE}
+- https://afarer.com/da/research-oem-buyer-guide/ — OEM-køberguide – indkøb af oppustelige fartøjer fra Asien | {SITE}
+- https://afarer.com/da/research-pvc-vs-hypalon/ — PVC vs. Hypalon — teknisk sammenligning for oppustelige både | {SITE}
+- https://afarer.com/da/research-sup-thickness/ — Sådan vælger du SUP-tykkelse — teknisk analyse | {SITE}
+- https://afarer.com/da/resources/ — B2B-ressourcer & downloads | {SITE}
+- https://afarer.com/da/rf-welding/ — RF-svejsecenter — dielektrisk binding til lufttætte sømme | {SITE}
+- https://afarer.com/da/safety/ — Sikkerhedsstandarder og certificering
 - https://afarer.com/da/search-and-rescue/
-- https://afarer.com/da/size-guide/ — Size & Specs Guide
-- https://afarer.com/da/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/da/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/da/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/da/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/da/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/da/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/da/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/da/technology/ — Built for Performance
+- https://afarer.com/da/size-guide/ — Størrelses- og specifikationsguide
+- https://afarer.com/da/solutions-build-your-own-brand/ — Private label SUP-produktion | {SITE}
+- https://afarer.com/da/solutions-distributors/ — SUP-distributionspartnerprogram | {SITE}
+- https://afarer.com/da/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/da/solutions-rental-operators/ — SUP-udlejningsflådeløsninger | {SITE}
+- https://afarer.com/da/solutions-resorts-hotels/ — Resort SUP-flådeløsninger | {SITE}
+- https://afarer.com/da/solutions-retail-partners/ — SUP-partnerprogram for detailhandel | {SITE}
+- https://afarer.com/da/solutions/ — SUP-løsninger til enhver virksomhed
+- https://afarer.com/da/technology/ — Bygget til ydeevne
 - https://afarer.com/da/tourism-recreation/
-- https://afarer.com/da/trust/ — Trust afarer
+- https://afarer.com/da/trust/ — Stol på afarer
 - https://afarer.com/da/warranty/
 - https://afarer.com/da/what-is-sup/
-- https://afarer.com/de/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/de/academy/ — Learning Center
-- https://afarer.com/de/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/de/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/de/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/de/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/de/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/de/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
-- https://afarer.com/de/brand/ — {BRAND}
-- https://afarer.com/de/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/de/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/de/about/ — Schiffstechnik, auf die <span class="text-accent dark:text-white">afarer</span>-Art
+- https://afarer.com/de/academy/ — Lernzentrum
+- https://afarer.com/de/afarer-story/ — afarer —Engineering Freiheit auf dem Wasser
+- https://afarer.com/de/b2b-solutions-matrix/ — B2B-Kundenlösungs-Matrix | {SITE}
+- https://afarer.com/de/brand-global-presence/ — Über 50 Länder betreuen Auf jedem Kontinent
+- https://afarer.com/de/brand-marine-expertise/ — Jahrzehnte Schiffsingenieurwesen in jedem Rumpf
+- https://afarer.com/de/brand-team/ — Die Menschen hinter afarer —Freiheit auf dem Wasser
+- https://afarer.com/de/brand-why-afarer/ — Sieben Gründe für globale Marken afarer zu wählen
+- https://afarer.com/de/brand/ — {MARKENNAME}
+- https://afarer.com/de/cases/ — Echte Projekte, echte Ergebnisse —afarer in Aktion
+- https://afarer.com/de/certifications/ — Qualitätszertifizierungen & Compliance-Standards
 - https://afarer.com/de/commercial-workboats/
-- https://afarer.com/de/community/ — The afarer Community
-- https://afarer.com/de/contact/ — GET IN TOUCH
-- https://afarer.com/de/custom/ — Design Your Own SUP Board
+- https://afarer.com/de/community/ — Die afarer Community
+- https://afarer.com/de/contact/ — NEHMEN SIE KONTAKT AUF
+- https://afarer.com/de/custom/ — Entwerfen Sie Ihr eigenes Wasserfahrzeug
 - https://afarer.com/de/disaster-relief/
-- https://afarer.com/de/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/de/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/de/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/de/factory-process/ — Manufacturing Process
-- https://afarer.com/de/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/de/factory/ — Factory & Manufacturing
+- https://afarer.com/de/factory-capacity/ — Herstellungskapazität & Jahresproduktion
+- https://afarer.com/de/factory-equipment/ — Fertigungsausrüstung & Maschinen
+- https://afarer.com/de/factory-oem-capability/ — OEM- und Eigenmarkenfertigung
+- https://afarer.com/de/factory-process/ — Fertigungsprozess
+- https://afarer.com/de/factory-quality-lab/ — Prüflabor und Qualitätssicherung
+- https://afarer.com/de/factory/ — Fabrik & Fertigung
 - https://afarer.com/de/fishing/
-- https://afarer.com/de/gallery/ — Gallery
-- https://afarer.com/de/guides/ — New to SUP?
-- https://afarer.com/de/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/de/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/de/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/de/gallery/ — Galerie
+- https://afarer.com/de/guides/ — Neu im SUP?
+- https://afarer.com/de/home/ — afarer
+- https://afarer.com/de/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Maßgeschneidertes RIB-Rumpfdesign | {SITE}
+- https://afarer.com/de/hydrodynamic-test-tank/ — Hydrodynamischer Prüftank — Schleppversuche mit Maßstabsmodellen & Rumpfoptimierung | {SITE}
 - https://afarer.com/de/inflatable-vs-hardboard/
-- https://afarer.com/de/journal/ — Journal
-- https://afarer.com/de/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/de/learn/ — Learn
-- https://afarer.com/de/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/de/journal/ — Das afarer Journal
+- https://afarer.com/de/knowledge/ — Wassererkundungs-Wissen
+- https://afarer.com/de/learn/ — Lernen
+- https://afarer.com/de/lifestyle/ — Der afarer Lebensstil
 - https://afarer.com/de/maritime-safety-defense/
-- https://afarer.com/de/media/ — Media Center
-- https://afarer.com/de/news/ — News
-- https://afarer.com/de/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/de/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/de/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/de/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/de/quality/ — Performance & Quality Testing
-- https://afarer.com/de/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/de/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/de/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/de/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/de/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/de/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/de/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/de/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/de/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/de/safety/ — Safety Standards & Certification
+- https://afarer.com/de/media/ — Mediencenter
+- https://afarer.com/de/news/ — Neuigkeiten
+- https://afarer.com/de/partners/ — Werden Sie afarer-Partner —Globales Vertriebsnetz
+- https://afarer.com/de/prototype-workshop/ — Prototypwerkstatt — Vollmaßstab-RIB-Prototypenbau & Seetests | {SITE}
+- https://afarer.com/de/pvc-fabric-lab/ — PVC-Gewebe-Labor — Materialprüfung für Schlauchboote | {SITE}
+- https://afarer.com/de/quality-inspection-lab/ — Qualitäts- & Inspektionslabor — ISO-konforme RIB-Prüfung & Zertifizierung | {SITE}
+- https://afarer.com/de/quality/ — Leistungs- & Qualitätstests
+- https://afarer.com/de/randdcenter/ — F&E-Zentrum | {SITE}
+- https://afarer.com/de/request-quotation/ — Angebot anfordern für Ihr Projekt
+- https://afarer.com/de/research-ce-certification/ — Wie die CE-Zertifizierung für aufblasbare Wasserfahrzeuge funktioniert | {SITE}
+- https://afarer.com/de/research-drop-stitch/ — Wie Drop Stitch funktioniert — Die Technik hinter aufblasbaren starren Kernen | {SITE}
+- https://afarer.com/de/research-oem-buyer-guide/ — OEM-Käuferhandbuch — Beschaffung aufblasbarer Wasserfahrzeuge aus Asien | {SITE}
+- https://afarer.com/de/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technischer Vergleich für Schlauchboote | {SITE}
+- https://afarer.com/de/research-sup-thickness/ — Wie man die SUP-Stärke wählt — Ingenieuranalyse | {SITE}
+- https://afarer.com/de/resources/ — B2B-Ressourcen & Downloads | {SITE}
+- https://afarer.com/de/rf-welding/ — RF-Schweißzentrum — Dielektrisches Verbinden für luftdichte Nähte | {SITE}
+- https://afarer.com/de/safety/ — Sicherheitsstandards und Zertifizierung
 - https://afarer.com/de/search-and-rescue/
-- https://afarer.com/de/size-guide/ — Size & Specs Guide
-- https://afarer.com/de/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/de/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/de/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/de/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/de/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/de/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/de/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/de/technology/ — Built for Performance
+- https://afarer.com/de/size-guide/ — Größen- und Spezifikationsleitfaden
+- https://afarer.com/de/solutions-build-your-own-brand/ — Private-Label-SUP-Herstellung | {SITE}
+- https://afarer.com/de/solutions-distributors/ — SUP-Distributionspartnerprogramm | {SITE}
+- https://afarer.com/de/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/de/solutions-rental-operators/ — SUP Mietflottenlösungen | {SITE}
+- https://afarer.com/de/solutions-resorts-hotels/ — Resort SUP Flottenlösungen | {SITE}
+- https://afarer.com/de/solutions-retail-partners/ — SUP Einzelhandelspartnerprogramm | {SITE}
+- https://afarer.com/de/solutions/ — SUP-Lösungen Für jedes Unternehmen
+- https://afarer.com/de/technology/ — Unsere Technologie
 - https://afarer.com/de/tourism-recreation/
-- https://afarer.com/de/trust/ — Trust afarer
+- https://afarer.com/de/trust/ — Vertraue auf afarer
 - https://afarer.com/de/warranty/
 - https://afarer.com/de/what-is-sup/
 - https://afarer.com/disaster-relief/
-- https://afarer.com/el/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/el/academy/ — Learning Center
-- https://afarer.com/el/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/el/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/el/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/el/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/el/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/el/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/el/about/ — Ναυτική μηχανική σε στιλ <span class="text-accent dark:text-white">afarer</span>
+- https://afarer.com/el/academy/ — Κέντρο γνώσης
+- https://afarer.com/el/afarer-story/ — afarer —Μηχανική της ελευθερίας στο νερό
+- https://afarer.com/el/b2b-solutions-matrix/ — Πίνακας Λύσεων για Πελάτες B2B | {SITE}
+- https://afarer.com/el/brand-global-presence/ — Εξυπηρετώντας 50+ Χώρες σε Κάθε Ήπειρο
+- https://afarer.com/el/brand-marine-expertise/ — Δεκαετίες Θαλάσσιας Μηχανικής σε Κάθε Κύτος
+- https://afarer.com/el/brand-team/ — Οι Άνθρωποι Πίσω από την afarer —Μηχανική της Ελευθερίας στο Νερό
+- https://afarer.com/el/brand-why-afarer/ — Επτά Λόγοι για τους Οποίους οι Παγκόσμιες Μάρκες Επιλέγουν την afarer
 - https://afarer.com/el/brand/ — {BRAND}
-- https://afarer.com/el/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/el/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/el/cases/ — Πραγματικά έργα, πραγματικά αποτελέσματα —afarer σε δράση
+- https://afarer.com/el/certifications/ — Πιστοποιήσεις Ποιότητας & Πρότυπα Συμμόρφωσης
 - https://afarer.com/el/commercial-workboats/
-- https://afarer.com/el/community/ — The afarer Community
-- https://afarer.com/el/contact/ — GET IN TOUCH
-- https://afarer.com/el/custom/ — Design Your Own SUP Board
+- https://afarer.com/el/community/ — Η Κοινότητα afarer
+- https://afarer.com/el/contact/ — ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ
+- https://afarer.com/el/custom/ — Σχεδιάστε το δικό σας σκάφος
 - https://afarer.com/el/disaster-relief/
-- https://afarer.com/el/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/el/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/el/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/el/factory-process/ — Manufacturing Process
-- https://afarer.com/el/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/el/factory/ — Factory & Manufacturing
+- https://afarer.com/el/factory-capacity/ — Παραγωγική Δυναμικότητα & Ετήσια Παραγωγή
+- https://afarer.com/el/factory-equipment/ — Εξοπλισμός και Μηχανήματα Παραγωγής
+- https://afarer.com/el/factory-oem-capability/ — Κατασκευή OEM & Ιδιωτικής Ετικέτας
+- https://afarer.com/el/factory-process/ — Διαδικασία παραγωγής
+- https://afarer.com/el/factory-quality-lab/ — Εργαστήριο Δοκιμών & Διασφάλιση Ποιότητας
+- https://afarer.com/el/factory/ — Εργοστάσιο & Κατασκευή
 - https://afarer.com/el/fishing/
-- https://afarer.com/el/gallery/ — Gallery
-- https://afarer.com/el/guides/ — New to SUP?
-- https://afarer.com/el/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/el/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/el/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/el/gallery/ — Συλλογή
+- https://afarer.com/el/guides/ — Νέοι στο SUP;
+- https://afarer.com/el/home/ — Σχεδιασμένα για το νερό. <br class="hidden sm:inline" /> Κατασκευασμένα για <span class="text-accent dark:text-white">ζωή στο σκάφος</span>.
+- https://afarer.com/el/hull-engineering/ — Στούντιο Μηχανικής Γάστρας — CAD, FEA & Σχεδιασμός Προσαρμοσμένων Γαστρών RIB | {SITE}
+- https://afarer.com/el/hydrodynamic-test-tank/ — Δεξαμενή Υδροδυναμικών Δοκιμών — Ρυμούλκηση Μοντέλου Κλίμακας & Βελτιστοποίηση Γάστρας | {SITE}
 - https://afarer.com/el/inflatable-vs-hardboard/
-- https://afarer.com/el/journal/ — Journal
-- https://afarer.com/el/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/el/learn/ — Learn
-- https://afarer.com/el/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/el/journal/ — Ημερολόγιο afarer
+- https://afarer.com/el/knowledge/ — Γνώση Εξερεύνησης Νερού
+- https://afarer.com/el/learn/ — Μάθετε
+- https://afarer.com/el/lifestyle/ — Τρόπος ζωής afarer
 - https://afarer.com/el/maritime-safety-defense/
-- https://afarer.com/el/media/ — Media Center
-- https://afarer.com/el/news/ — News
-- https://afarer.com/el/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/el/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/el/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/el/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/el/quality/ — Performance & Quality Testing
-- https://afarer.com/el/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/el/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/el/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/el/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/el/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/el/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/el/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/el/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/el/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/el/safety/ — Safety Standards & Certification
+- https://afarer.com/el/media/ — Κέντρο πολυμέσων
+- https://afarer.com/el/news/ — Νέα
+- https://afarer.com/el/partners/ — Γίνετε Συνεργάτης afarer —Παγκόσμιο Δίκτυο Διανομής
+- https://afarer.com/el/prototype-workshop/ — Εργαστήριο Πρωτοτύπων — Πρωτοτύπηση RIB Πλήρους Κλίμακας & Δοκιμές στη Θάλασσα | {SITE}
+- https://afarer.com/el/pvc-fabric-lab/ — Εργαστήριο Υφασμάτων PVC — Δοκιμές Υλικών για Φουσκωτά Σκάφη | {SITE}
+- https://afarer.com/el/quality-inspection-lab/ — Εργαστήριο Ποιότητας & Επιθεώρησης — Δοκιμές & Πιστοποίηση RIB σύμφωνα με ISO | {SITE}
+- https://afarer.com/el/quality/ — Δοκιμές απόδοσης και ποιότητας
+- https://afarer.com/el/randdcenter/ — Κέντρο Ε&Α | {SITE}
+- https://afarer.com/el/request-quotation/ — Ζητήστε μια Προσφορά για το Έργο σας
+- https://afarer.com/el/research-ce-certification/ — Πώς Λειτουργεί η Πιστοποίηση CE για Φουσκωτά Σκάφη | {SITE}
+- https://afarer.com/el/research-drop-stitch/ — Πώς Λειτουργεί το Drop Stitch — Η Μηχανική Πίσω από τους Άκαμπτους Φουσκωτούς Πυρήνες | {SITE}
+- https://afarer.com/el/research-oem-buyer-guide/ — Οδηγός Αγορέα OEM — Προμήθεια Στεγανών Πλοίων από την Ασία | {SITE}
+- https://afarer.com/el/research-pvc-vs-hypalon/ — PVC vs Hypalon — Τεχνική Σύγκριση για Φουσκωτά Σκάφη | {SITE}
+- https://afarer.com/el/research-sup-thickness/ — Πώς να Επιλέξετε το Πάχος του SUP — Τεχνική Ανάλυση | {SITE}
+- https://afarer.com/el/resources/ — Πόροι & Λήψεις B2B | {SITE}
+- https://afarer.com/el/rf-welding/ — Κέντρο Συγκόλλησης RF — Διηλεκτρική Συγκόλληση για Αεροστεγείς Ραφές | {SITE}
+- https://afarer.com/el/safety/ — Πρότυπα ασφαλείας και πιστοποίηση
 - https://afarer.com/el/search-and-rescue/
-- https://afarer.com/el/size-guide/ — Size & Specs Guide
-- https://afarer.com/el/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/el/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/el/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/el/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/el/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/el/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/el/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/el/technology/ — Built for Performance
+- https://afarer.com/el/size-guide/ — Οδηγός μεγεθών και προδιαγραφών
+- https://afarer.com/el/solutions-build-your-own-brand/ — Κατασκευή SUP Ιδιωτικής Ετικέτας | {SITE}
+- https://afarer.com/el/solutions-distributors/ — Πρόγραμμα Συνεργατών Διανομής SUP | {SITE}
+- https://afarer.com/el/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/el/solutions-rental-operators/ — Λύσεις Στόλων Ενοικίασης SUP | {SITE}
+- https://afarer.com/el/solutions-resorts-hotels/ — Λύσεις Στόλων SUP για Θέρετρα | {SITE}
+- https://afarer.com/el/solutions-retail-partners/ — Πρόγραμμα Συναδέλφων Πωλήσεων SUP | {SITE}
+- https://afarer.com/el/solutions/ — SUP Λύσεις Για κάθε επιχείρηση
+- https://afarer.com/el/technology/ — Η τεχνολογία μας
 - https://afarer.com/el/tourism-recreation/
-- https://afarer.com/el/trust/ — Trust afarer
+- https://afarer.com/el/trust/ — Εμπιστευτείτε την afarer
 - https://afarer.com/el/warranty/
 - https://afarer.com/el/what-is-sup/
-- https://afarer.com/es/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/es/academy/ — Learning Center
-- https://afarer.com/es/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/es/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/es/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/es/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/es/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/es/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/es/about/ — Ingeniería marina, hecha a la manera <span class="text-accent dark:text-white">afarer</span>
+- https://afarer.com/es/academy/ — Centro de aprendizaje
+- https://afarer.com/es/afarer-story/ — afarer —Ingeniería de la Libertad en el Agua
+- https://afarer.com/es/b2b-solutions-matrix/ — Matriz de Soluciones para Clientes B2B | {SITE}
+- https://afarer.com/es/brand-global-presence/ — Sirviendo a 50+ Países en Cada Continente
+- https://afarer.com/es/brand-marine-expertise/ — Décadas de Ingeniería Marina en Cada Casco
+- https://afarer.com/es/brand-team/ — Las Personas Detrás de afarer —Ingeniería de Libertad
+- https://afarer.com/es/brand-why-afarer/ — Siete Razones por las que las Marcas Eligen afarer
 - https://afarer.com/es/brand/ — {BRAND}
-- https://afarer.com/es/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/es/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/es/cases/ — Proyectos reales, resultados reales —afarer en acción
+- https://afarer.com/es/certifications/ — Certificaciones de Calidad & Estándares de Cumplimiento
 - https://afarer.com/es/commercial-workboats/
-- https://afarer.com/es/community/ — The afarer Community
-- https://afarer.com/es/contact/ — GET IN TOUCH
-- https://afarer.com/es/custom/ — Design Your Own SUP Board
+- https://afarer.com/es/community/ — La comunidad de afarer
+- https://afarer.com/es/contact/ — PONTE EN CONTACTO
+- https://afarer.com/es/custom/ — Diseña tu propia embarcación
 - https://afarer.com/es/disaster-relief/
-- https://afarer.com/es/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/es/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/es/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/es/factory-process/ — Manufacturing Process
-- https://afarer.com/es/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/es/factory/ — Factory & Manufacturing
+- https://afarer.com/es/factory-capacity/ — Capacidad de Fabricación y Producción Anual
+- https://afarer.com/es/factory-equipment/ — Equipo y Maquinaria de Fabricación
+- https://afarer.com/es/factory-oem-capability/ — Fabricación OEM y de Marca Privada
+- https://afarer.com/es/factory-process/ — Proceso de fabricación
+- https://afarer.com/es/factory-quality-lab/ — Laboratorio de Pruebas y Aseguramiento de Calidad
+- https://afarer.com/es/factory/ — Fábrica y fabricación
 - https://afarer.com/es/fishing/
-- https://afarer.com/es/gallery/ — Gallery
-- https://afarer.com/es/guides/ — New to SUP?
-- https://afarer.com/es/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/es/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/es/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/es/gallery/ — Galería
+- https://afarer.com/es/guides/ — ¿Nuevo en SUP?
+- https://afarer.com/es/home/ — afarer
+- https://afarer.com/es/hull-engineering/ — Hull Engineering Studio — CAD, FEA y Diseño Personalizado de Casco RIB | {SITE}
+- https://afarer.com/es/hydrodynamic-test-tank/ — Tanque de Pruebas Hidrodinámicas — Remolque de Modelos a Escala y Optimización del Casco | {SITE}
 - https://afarer.com/es/inflatable-vs-hardboard/
-- https://afarer.com/es/journal/ — Journal
-- https://afarer.com/es/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/es/learn/ — Learn
-- https://afarer.com/es/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/es/journal/ — La revista afarer
+- https://afarer.com/es/knowledge/ — Conocimiento de Exploración Acuática
+- https://afarer.com/es/learn/ — Aprende
+- https://afarer.com/es/lifestyle/ — El estilo de vida afarer
 - https://afarer.com/es/maritime-safety-defense/
-- https://afarer.com/es/media/ — Media Center
-- https://afarer.com/es/news/ — News
-- https://afarer.com/es/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/es/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/es/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/es/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/es/quality/ — Performance & Quality Testing
-- https://afarer.com/es/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/es/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/es/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/es/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/es/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/es/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/es/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/es/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/es/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/es/safety/ — Safety Standards & Certification
+- https://afarer.com/es/media/ — Centro de medios
+- https://afarer.com/es/news/ — Noticias
+- https://afarer.com/es/partners/ — Sea socio de afarer —Red Global de Distribución
+- https://afarer.com/es/prototype-workshop/ — Taller de Prototipos — Prototipado de RIB a Escala Real y Pruebas en el Mar | {SITE}
+- https://afarer.com/es/pvc-fabric-lab/ — Laboratorio de Tela de PVC — Pruebas de Material para Botes Inflables | {SITE}
+- https://afarer.com/es/quality-inspection-lab/ — Laboratorio de Calidad e Inspección — Pruebas y Certificación de RIB Cumpliendo ISO | {SITE}
+- https://afarer.com/es/quality/ — Pruebas de rendimiento y calidad
+- https://afarer.com/es/randdcenter/ — Centro de I+D | {SITE}
+- https://afarer.com/es/request-quotation/ — Solicite un Presupuesto para su Proyecto
+- https://afarer.com/es/research-ce-certification/ — Cómo Funciona la Certificación CE para Embarcaciones Inflables | {SITE}
+- https://afarer.com/es/research-drop-stitch/ — Cómo Funciona el Drop Stitch — La Ingeniería Detrás de los Núcleos Rígidos Inflables | {SITE}
+- https://afarer.com/es/research-oem-buyer-guide/ — Guía del Comprador OEM — Adquisición de Embarcaciones Inflables desde Asia | {SITE}
+- https://afarer.com/es/research-pvc-vs-hypalon/ — PVC vs Hypalon — Comparación Técnica para Botes Inflables | {SITE}
+- https://afarer.com/es/research-sup-thickness/ — Cómo Elegir el Grosor de un SUP — Análisis de Ingeniería | {SITE}
+- https://afarer.com/es/resources/ — Recursos y Descargas B2B | {SITE}
+- https://afarer.com/es/rf-welding/ — Centro de Soldadura RF — Unión Dieléctrica para Costuras Herméticas | {SITE}
+- https://afarer.com/es/safety/ — Estándares y certificación de seguridad
 - https://afarer.com/es/search-and-rescue/
-- https://afarer.com/es/size-guide/ — Size & Specs Guide
-- https://afarer.com/es/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/es/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/es/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/es/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/es/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/es/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/es/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/es/technology/ — Built for Performance
+- https://afarer.com/es/size-guide/ — Guía de tallas y especificaciones
+- https://afarer.com/es/solutions-build-your-own-brand/ — Fabricación de SUP de Marca Privada | {SITE}
+- https://afarer.com/es/solutions-distributors/ — Programa de Socios de Distribución SUP | {SITE}
+- https://afarer.com/es/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/es/solutions-rental-operators/ — Soluciones de Flota de Alquiler de SUP | {SITE}
+- https://afarer.com/es/solutions-resorts-hotels/ — Soluciones de Flota de SUP para Resorts | {SITE}
+- https://afarer.com/es/solutions-retail-partners/ — Programa de Socios Minoristas SUP | {SITE}
+- https://afarer.com/es/solutions/ — Soluciones SUP Para Cada Negocio
+- https://afarer.com/es/technology/ — Nuestra tecnología
 - https://afarer.com/es/tourism-recreation/
-- https://afarer.com/es/trust/ — Trust afarer
+- https://afarer.com/es/trust/ — Confía en afarer
 - https://afarer.com/es/warranty/
 - https://afarer.com/es/what-is-sup/
 - https://afarer.com/factory-capacity/ — Manufacturing Capacity & Annual Output
@@ -35180,69 +35506,69 @@ Contact:
 - https://afarer.com/factory-process/ — Manufacturing Process
 - https://afarer.com/factory-quality-lab/ — Testing Laboratory & Quality Assurance
 - https://afarer.com/factory/ — Factory & Manufacturing
-- https://afarer.com/fi/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/fi/academy/ — Learning Center
-- https://afarer.com/fi/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/fi/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/fi/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/fi/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/fi/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/fi/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/fi/about/ — Meritekniikkaa, rakennettu <span class="text-accent dark:text-white">afarer</span>-tavalla
+- https://afarer.com/fi/academy/ — Oppimiskeskus
+- https://afarer.com/fi/afarer-story/ — afarer —Vapautta Vesillä Tekniikan Voimin
+- https://afarer.com/fi/b2b-solutions-matrix/ — B2B-asiakasratkaisut | {SITE}
+- https://afarer.com/fi/brand-global-presence/ — Palvelee 50+ maata kaikilla mantereilla
+- https://afarer.com/fi/brand-marine-expertise/ — Vuosikymmenten meritekniikka jokaisessa rungossa
+- https://afarer.com/fi/brand-team/ — Ihmiset afarerin takana —Suunnittelun vapaus vesillä
+- https://afarer.com/fi/brand-why-afarer/ — Seitsemän syytä miksi globaalit brändit valitsevat afarerin
 - https://afarer.com/fi/brand/ — {BRAND}
-- https://afarer.com/fi/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/fi/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/fi/cases/ — Oikeita projekteja, oikeita tuloksia —afarer toiminnassa
+- https://afarer.com/fi/certifications/ — Laatusertifioinnit & Vaatimustenmukaisuusstandardit
 - https://afarer.com/fi/commercial-workboats/
-- https://afarer.com/fi/community/ — The afarer Community
-- https://afarer.com/fi/contact/ — GET IN TOUCH
-- https://afarer.com/fi/custom/ — Design Your Own SUP Board
+- https://afarer.com/fi/community/ — afarer-yhteisö
+- https://afarer.com/fi/contact/ — OTA YHTEYTTÄ
+- https://afarer.com/fi/custom/ — Suunnittele oma vesialuksesi
 - https://afarer.com/fi/disaster-relief/
-- https://afarer.com/fi/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/fi/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/fi/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/fi/factory-process/ — Manufacturing Process
-- https://afarer.com/fi/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/fi/factory/ — Factory & Manufacturing
+- https://afarer.com/fi/factory-capacity/ — Valmistuskapasiteetti ja vuosituotanto
+- https://afarer.com/fi/factory-equipment/ — Valmistuskalusto ja koneet
+- https://afarer.com/fi/factory-oem-capability/ — OEM- ja Private Label -valmistus
+- https://afarer.com/fi/factory-process/ — Tuotantoprosessi
+- https://afarer.com/fi/factory-quality-lab/ — Testauslaboratorio ja laadintatarkastus
+- https://afarer.com/fi/factory/ — Tehdas ja tuotanto
 - https://afarer.com/fi/fishing/
-- https://afarer.com/fi/gallery/ — Gallery
-- https://afarer.com/fi/guides/ — New to SUP?
-- https://afarer.com/fi/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/fi/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/fi/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/fi/gallery/ — Galleria
+- https://afarer.com/fi/guides/ — Uusi SUP:n parissa?
+- https://afarer.com/fi/home/ — Kumiveneiden tehdas —<br class="hidden sm:inline" /> OEM/ODM <span class="text-accent dark:text-white">valmistaja</span>
+- https://afarer.com/fi/hull-engineering/ — Rungonsuunnittelustudio – CAD, FEA ja räätälöity RIB-rungon suunnittelu | {SITE}
+- https://afarer.com/fi/hydrodynamic-test-tank/ — Dynaaminen testiallas — mittakaavamallin veto ja rungon optimointi | {SITE}
 - https://afarer.com/fi/inflatable-vs-hardboard/
-- https://afarer.com/fi/journal/ — Journal
-- https://afarer.com/fi/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/fi/learn/ — Learn
-- https://afarer.com/fi/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/fi/journal/ — Päiväkirja
+- https://afarer.com/fi/knowledge/ — Vesilläliikkumisen tietämys
+- https://afarer.com/fi/learn/ — Opi
+- https://afarer.com/fi/lifestyle/ — afarer- elämäntapa
 - https://afarer.com/fi/maritime-safety-defense/
-- https://afarer.com/fi/media/ — Media Center
-- https://afarer.com/fi/news/ — News
-- https://afarer.com/fi/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/fi/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/fi/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/fi/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/fi/quality/ — Performance & Quality Testing
-- https://afarer.com/fi/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/fi/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/fi/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/fi/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/fi/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/fi/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/fi/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/fi/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/fi/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/fi/safety/ — Safety Standards & Certification
+- https://afarer.com/fi/media/ — Mediakeskus
+- https://afarer.com/fi/news/ — Uutiset
+- https://afarer.com/fi/partners/ — Tule afarer-kumppaniksi —Maailmanlaajuinen jakeluverkosto
+- https://afarer.com/fi/prototype-workshop/ — Prototyypityspaja — Täysimittainen RIB-prototyypitys ja meritestit | {SITE}
+- https://afarer.com/fi/pvc-fabric-lab/ — PVC-kankaslaboratorio – Materiaalitestaus laukeaville veneille | {SITE}
+- https://afarer.com/fi/quality-inspection-lab/ — Laatu- ja tarkastuslaboratorio — ISO-vaatimusten mukainen RIB-testaus ja sertifiointi | {SITE}
+- https://afarer.com/fi/quality/ — Suorituskyky- ja laatutestaus
+- https://afarer.com/fi/randdcenter/ — T&K-keskus | {SITE}
+- https://afarer.com/fi/request-quotation/ — Pyydä tarjous projektiisi
+- https://afarer.com/fi/research-ce-certification/ — Miten CE-sertifointi toimii kumiveneille | {SITE}
+- https://afarer.com/fi/research-drop-stitch/ — Näin drop-stitch toimii — tekniikka täytettävien jäykkien ytimien takana | {SITE}
+- https://afarer.com/fi/research-oem-buyer-guide/ — OEM-ostajan opas – Puhallettavien vesikulkuneuvojen hankinta Aasiasta | {SITE}
+- https://afarer.com/fi/research-pvc-vs-hypalon/ — PVC vs Hypalon – Tekninen vertailu laukeaville veneille | {SITE}
+- https://afarer.com/fi/research-sup-thickness/ — Näin valitset SUP-laudan paksuuden — tekninen analyysi | {SITE}
+- https://afarer.com/fi/resources/ — B2B-resurssit ja lataukset | {SITE}
+- https://afarer.com/fi/rf-welding/ — RF-hitsauskeskus — Dielektrinen liitos tiiviille saumalle | {SITE}
+- https://afarer.com/fi/safety/ — Turvallisuusstandardit ja -sertifiointi
 - https://afarer.com/fi/search-and-rescue/
-- https://afarer.com/fi/size-guide/ — Size & Specs Guide
-- https://afarer.com/fi/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/fi/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/fi/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/fi/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/fi/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/fi/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/fi/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/fi/technology/ — Built for Performance
+- https://afarer.com/fi/size-guide/ — Koko- ja tekniset tiedot
+- https://afarer.com/fi/solutions-build-your-own-brand/ — Private Label SUP-valmistus | {SITE}
+- https://afarer.com/fi/solutions-distributors/ — SUP-jakelukumppaniohjelma | {SITE}
+- https://afarer.com/fi/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/fi/solutions-rental-operators/ — SUP vuokralaivasto-ratkaisut | {SITE}
+- https://afarer.com/fi/solutions-resorts-hotels/ — Lomakohteen SUP-valikoimiratkaisut | {SITE}
+- https://afarer.com/fi/solutions-retail-partners/ — SUP-jälleenmyyjäkumppaniohjelma | {SITE}
+- https://afarer.com/fi/solutions/ — SUP-ratkaisut Jokaiselle liiketoiminnalle
+- https://afarer.com/fi/technology/ — Rakennettu suorituskyvylle
 - https://afarer.com/fi/tourism-recreation/
-- https://afarer.com/fi/trust/ — Trust afarer
+- https://afarer.com/fi/trust/ — Luota afareriin
 - https://afarer.com/fi/warranty/
 - https://afarer.com/fi/what-is-sup/
 - https://afarer.com/fishing/
@@ -35317,201 +35643,201 @@ Contact:
 - https://afarer.com/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
 - https://afarer.com/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
 - https://afarer.com/inflatable-vs-hardboard/
-- https://afarer.com/it/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/it/academy/ — Learning Center
-- https://afarer.com/it/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/it/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/it/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/it/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/it/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/it/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/it/about/ — Ingegneria navale, alla <span class="text-accent dark:text-white">afarer</span>
+- https://afarer.com/it/academy/ — Centro di apprendimento
+- https://afarer.com/it/afarer-story/ — afarer —Ingegneria della Libertà sull'Acqua
+- https://afarer.com/it/b2b-solutions-matrix/ — Matrice di Soluzioni per Clienti B2B | {SITE}
+- https://afarer.com/it/brand-global-presence/ — Servendo 50 paesi In ogni continente
+- https://afarer.com/it/brand-marine-expertise/ — Decenni di Ingegneria Marina in Ogni Scafo
+- https://afarer.com/it/brand-team/ — Le persone dietro afarer —Ingegneria della libertà sull'acqua
+- https://afarer.com/it/brand-why-afarer/ — Sette motivi per cui i marchi globali scelgono afarer
 - https://afarer.com/it/brand/ — {BRAND}
-- https://afarer.com/it/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/it/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/it/cases/ — Progetti reali, risultati reali —afarer in azione
+- https://afarer.com/it/certifications/ — Certificazioni di Qualità e Standard di Conformità
 - https://afarer.com/it/commercial-workboats/
-- https://afarer.com/it/community/ — The afarer Community
-- https://afarer.com/it/contact/ — GET IN TOUCH
-- https://afarer.com/it/custom/ — Design Your Own SUP Board
+- https://afarer.com/it/community/ — La Comunità afarer
+- https://afarer.com/it/contact/ — CONTATTACI
+- https://afarer.com/it/custom/ — Progetta la tua imbarcazione
 - https://afarer.com/it/disaster-relief/
-- https://afarer.com/it/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/it/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/it/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/it/factory-process/ — Manufacturing Process
-- https://afarer.com/it/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/it/factory/ — Factory & Manufacturing
+- https://afarer.com/it/factory-capacity/ — Capacità di produzione e produzione annua
+- https://afarer.com/it/factory-equipment/ — Attrezzature e Macchinari di Produzione
+- https://afarer.com/it/factory-oem-capability/ — Produzione OEM e a Marchio Privato
+- https://afarer.com/it/factory-process/ — Processo di produzione
+- https://afarer.com/it/factory-quality-lab/ — Laboratorio di Collaudo e Garanzia Qualità
+- https://afarer.com/it/factory/ — Fabbrica & Produzione
 - https://afarer.com/it/fishing/
-- https://afarer.com/it/gallery/ — Gallery
-- https://afarer.com/it/guides/ — New to SUP?
-- https://afarer.com/it/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/it/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/it/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/it/gallery/ — Galleria
+- https://afarer.com/it/guides/ — Nuovo al SUP?
+- https://afarer.com/it/home/ — Progettato per l'acqua. <br class="hidden sm:inline" /> Costruito per la <span class="text-accent dark:text-white">vita a bordo</span>.
+- https://afarer.com/it/hull-engineering/ — Hull Engineering Studio — CAD, FEA e Progettazione Personalizzata Scafo RIB | {SITE}
+- https://afarer.com/it/hydrodynamic-test-tank/ — Vasca di Prova Idrodinamica — Rimorchio di Modelli in Scala e Ottimizzazione dello Scafo | {SITE}
 - https://afarer.com/it/inflatable-vs-hardboard/
-- https://afarer.com/it/journal/ — Journal
-- https://afarer.com/it/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/it/learn/ — Learn
-- https://afarer.com/it/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/it/journal/ — Il diario afarer
+- https://afarer.com/it/knowledge/ — Conoscenza dell'Esplorazione Acquatica
+- https://afarer.com/it/learn/ — Impara
+- https://afarer.com/it/lifestyle/ — Lo stile di vita afarer
 - https://afarer.com/it/maritime-safety-defense/
-- https://afarer.com/it/media/ — Media Center
-- https://afarer.com/it/news/ — News
-- https://afarer.com/it/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/it/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/it/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/it/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/it/quality/ — Performance & Quality Testing
-- https://afarer.com/it/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/it/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/it/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/it/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/it/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/it/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/it/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/it/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/it/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/it/safety/ — Safety Standards & Certification
+- https://afarer.com/it/media/ — Centro media
+- https://afarer.com/it/news/ — Novità
+- https://afarer.com/it/partners/ — Diventa un Partner afarer —Rete di Distribuzione Globale
+- https://afarer.com/it/prototype-workshop/ — Officina di Prototipi — Prototipazione RIB a Grandezza Naturale e Prove in Mare | {SITE}
+- https://afarer.com/it/pvc-fabric-lab/ — Laboratorio Tessuti in PVC — Test dei Materiali per Barche Gonfiabili | {SITE}
+- https://afarer.com/it/quality-inspection-lab/ — Laboratorio di Qualità e Ispezione — Collaudi e Certificazioni RIB Conformi ISO | {SITE}
+- https://afarer.com/it/quality/ — Test di prestazione & qualità
+- https://afarer.com/it/randdcenter/ — Centro R&S | {SITE}
+- https://afarer.com/it/request-quotation/ — Richiedi un preventivo per il tuo progetto
+- https://afarer.com/it/research-ce-certification/ — Come Funziona la Certificazione CE per i Mezzi d'Acqua Gonfiabili | {SITE}
+- https://afarer.com/it/research-drop-stitch/ — Come Funziona il Drop Stitch — L'Ingegneria Dietro i Nuclei Rigidi Gonfiabili | {SITE}
+- https://afarer.com/it/research-oem-buyer-guide/ — Guida per Acquirenti OEM — Approvvigionamento di Imbarcazioni Gonfiabili dall'Asia | {SITE}
+- https://afarer.com/it/research-pvc-vs-hypalon/ — PVC vs Hypalon — Confronto Tecnico per Barche Gonfiabili | {SITE}
+- https://afarer.com/it/research-sup-thickness/ — Come scegliere lo spessore del SUP — Analisi ingegneristica | {SITE}
+- https://afarer.com/it/resources/ — Risorse e Download B2B | {SITE}
+- https://afarer.com/it/rf-welding/ — Centro di Saldatura RF — Giunzione Dielettrica per Cuciture Ermetiche | {SITE}
+- https://afarer.com/it/safety/ — Standard e certificazione di sicurezza
 - https://afarer.com/it/search-and-rescue/
-- https://afarer.com/it/size-guide/ — Size & Specs Guide
-- https://afarer.com/it/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/it/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/it/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/it/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/it/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/it/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/it/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/it/technology/ — Built for Performance
+- https://afarer.com/it/size-guide/ — Guida a taglie e specifiche
+- https://afarer.com/it/solutions-build-your-own-brand/ — Produzione di SUP a Marchio Privato | {SITE}
+- https://afarer.com/it/solutions-distributors/ — Programma Partner di Distribuzione SUP | {SITE}
+- https://afarer.com/it/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/it/solutions-rental-operators/ — Soluzioni per il Noleggio di Flotte SUP | {SITE}
+- https://afarer.com/it/solutions-resorts-hotels/ — Soluzioni per flotte di SUP da resort | {SITE}
+- https://afarer.com/it/solutions-retail-partners/ — Programma Partner Retail SUP | {SITE}
+- https://afarer.com/it/solutions/ — Soluzioni SUP Per Ogni Azienda
+- https://afarer.com/it/technology/ — La nostra tecnologia
 - https://afarer.com/it/tourism-recreation/
-- https://afarer.com/it/trust/ — Trust afarer
+- https://afarer.com/it/trust/ — Fidati di afarer
 - https://afarer.com/it/warranty/
 - https://afarer.com/it/what-is-sup/
-- https://afarer.com/ja/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/ja/academy/ — Learning Center
-- https://afarer.com/ja/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/ja/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/ja/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/ja/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/ja/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/ja/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/ja/about/ — マリンエンジニアリング、 <span class="text-accent dark:text-white">afarer</span>流に造る
+- https://afarer.com/ja/academy/ — 瀛︾繏銈汇兂銈裤兗
+- https://afarer.com/ja/afarer-story/ — afarer — 水上の自由をエンジニアリングする
+- https://afarer.com/ja/b2b-solutions-matrix/ — B2Bクライアントソリューションマトリックス | {SITE}
+- https://afarer.com/ja/brand-global-presence/ — 50 か国以上にサービスを提供 あらゆる大陸にわたって
+- https://afarer.com/ja/brand-marine-expertise/ — 数十年にわたる海洋工学 すべての船体
+- https://afarer.com/ja/brand-team/ — 農業を営む人々 —水上の自由を工学的に追求する
+- https://afarer.com/ja/brand-why-afarer/ — グローバルブランドが アファーラーを選ぶ 7 つの理由
 - https://afarer.com/ja/brand/ — {BRAND}
-- https://afarer.com/ja/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/ja/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/ja/cases/ — 実際のプロジェクト、実際の成果 — afarerの実績
+- https://afarer.com/ja/certifications/ — 品質認証 と準拠基準
 - https://afarer.com/ja/commercial-workboats/
-- https://afarer.com/ja/community/ — The afarer Community
-- https://afarer.com/ja/contact/ — GET IN TOUCH
-- https://afarer.com/ja/custom/ — Design Your Own SUP Board
+- https://afarer.com/ja/community/ — アクアフェアラーコミュニティ
+- https://afarer.com/ja/contact/ — お問い合わせ
+- https://afarer.com/ja/custom/ — あなただけの ウォータークラフトをデザイン
 - https://afarer.com/ja/disaster-relief/
-- https://afarer.com/ja/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/ja/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/ja/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/ja/factory-process/ — Manufacturing Process
-- https://afarer.com/ja/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/ja/factory/ — Factory & Manufacturing
+- https://afarer.com/ja/factory-capacity/ — 製造能力と年間生産量
+- https://afarer.com/ja/factory-equipment/ — 製造装置および機械
+- https://afarer.com/ja/factory-oem-capability/ — OEM＆プライベートレーベル製造
+- https://afarer.com/ja/factory-process/ — 製造プロセス
+- https://afarer.com/ja/factory-quality-lab/ — 試験ラボ＆品質保証
+- https://afarer.com/ja/factory/ — 工場と製造
 - https://afarer.com/ja/fishing/
-- https://afarer.com/ja/gallery/ — Gallery
-- https://afarer.com/ja/guides/ — New to SUP?
-- https://afarer.com/ja/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/ja/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/ja/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/ja/gallery/ — ギャラリー
+- https://afarer.com/ja/guides/ — SUP初挑戦？
+- https://afarer.com/ja/home/ — afarer
+- https://afarer.com/ja/hull-engineering/ — ハルエンジニアリングスタジオ ― CAD、FEA、カスタムRIBハル設計 | {SITE}
+- https://afarer.com/ja/hydrodynamic-test-tank/ — 流体力学試験水槽 — スケールモデル曳航＆船体最適化 | {SITE}
 - https://afarer.com/ja/inflatable-vs-hardboard/
-- https://afarer.com/ja/journal/ — Journal
-- https://afarer.com/ja/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/ja/learn/ — Learn
-- https://afarer.com/ja/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/ja/journal/ — afarer ジャーナル
+- https://afarer.com/ja/knowledge/ — 水探索の知識
+- https://afarer.com/ja/learn/ — 学ぶ
+- https://afarer.com/ja/lifestyle/ — afarer ライフスタイル
 - https://afarer.com/ja/maritime-safety-defense/
-- https://afarer.com/ja/media/ — Media Center
-- https://afarer.com/ja/news/ — News
-- https://afarer.com/ja/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/ja/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/ja/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
+- https://afarer.com/ja/media/ — メディアセンター
+- https://afarer.com/ja/news/ — ニュース
+- https://afarer.com/ja/partners/ — 遠方パートナーになる —グローバル販売ネットワーク
+- https://afarer.com/ja/prototype-workshop/ — プロトタイプ工房 — フルスケールRIB試作＆海上試験 | {SITE}
+- https://afarer.com/ja/pvc-fabric-lab/ — PVCファブリックラボ — インフレータブルボート向け素材試験 | {SITE}
 - https://afarer.com/ja/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/ja/quality/ — Performance & Quality Testing
-- https://afarer.com/ja/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/ja/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/ja/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/ja/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/ja/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/ja/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/ja/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/ja/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/ja/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/ja/safety/ — Safety Standards & Certification
+- https://afarer.com/ja/quality/ — 性能・品質テスト
+- https://afarer.com/ja/randdcenter/ — 研究開発センター｜{SITE}
+- https://afarer.com/ja/request-quotation/ — プロジェクトの見積もりをリクエスト
+- https://afarer.com/ja/research-ce-certification/ — イフレータブル水上乗り物におけるCE認証の仕組み | {SITE}
+- https://afarer.com/ja/research-drop-stitch/ — ドロップステッチの仕組み ―― インフレータブルリジッドコアの背景にある技術 | {SITE}
+- https://afarer.com/ja/research-oem-buyer-guide/ — OEMバイヤーガイド — アジアからのインフレータブル船舶調達 | {SITE}
+- https://afarer.com/ja/research-pvc-vs-hypalon/ — PVC vs Hypalon — インフレータブルボートの技術比較 | {SITE}
+- https://afarer.com/ja/research-sup-thickness/ — SUPの厚さの選び方 ―― エンジニアリング分析 | {SITE}
+- https://afarer.com/ja/resources/ — B2Bリソース＆ダウンロード | {SITE}
+- https://afarer.com/ja/rf-welding/ — RF溶接センター — 気密シームの誘電体ボンディング | {SITE}
+- https://afarer.com/ja/safety/ — 安全基準と認証
 - https://afarer.com/ja/search-and-rescue/
-- https://afarer.com/ja/size-guide/ — Size & Specs Guide
-- https://afarer.com/ja/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/ja/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/ja/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/ja/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/ja/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/ja/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/ja/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/ja/technology/ — Built for Performance
+- https://afarer.com/ja/size-guide/ — サイズと仕様ガイド
+- https://afarer.com/ja/solutions-build-your-own-brand/ — Private Label SUP製造 | {SITE}
+- https://afarer.com/ja/solutions-distributors/ — SUP流通パートナー program | {SITE}
+- https://afarer.com/ja/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/ja/solutions-rental-operators/ — SUPレンタルフリートソリューション | {SITE}
+- https://afarer.com/ja/solutions-resorts-hotels/ — リゾートSUPフリートソリューション | {SITE}
+- https://afarer.com/ja/solutions-retail-partners/ — SUPリテールパートナープログラム | {SITE}
+- https://afarer.com/ja/solutions/ — SUPソリューション すべてのビジネスのために
+- https://afarer.com/ja/technology/ — 私たちのテクノロジー
 - https://afarer.com/ja/tourism-recreation/
-- https://afarer.com/ja/trust/ — Trust afarer
+- https://afarer.com/ja/trust/ — アクアフェアラーを信頼
 - https://afarer.com/ja/warranty/
 - https://afarer.com/ja/what-is-sup/
 - https://afarer.com/journal/ — Journal
 - https://afarer.com/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/ko/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/ko/academy/ — Learning Center
-- https://afarer.com/ko/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/ko/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/ko/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/ko/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/ko/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/ko/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/ko/about/ — 해양 엔지니어링, <span class="text-accent dark:text-white">afarer</span> 방식으로 구축되다
+- https://afarer.com/ko/academy/ — 頃欖姷 靹柬劙
+- https://afarer.com/ko/afarer-story/ — afarer — 수상의 자유를 엔지니어링하다
+- https://afarer.com/ko/b2b-solutions-matrix/ — B2B 고객 솔루션 매트릭스 | {SITE}
+- https://afarer.com/ko/brand-global-presence/ — 모든 대륙에 걸쳐 50개 이상의 국가에 서비스 제공
+- https://afarer.com/ko/brand-marine-expertise/ — 모든 선체에서 수십 년간의 해양 공학
+- https://afarer.com/ko/brand-team/ — 멀리 떨어져 있는 사람들 —물 위의 자유 공학
+- https://afarer.com/ko/brand-why-afarer/ — 글로벌 브랜드를 선택해야 하는 7가지 이유 더 먼 곳을 선택하세요
 - https://afarer.com/ko/brand/ — {BRAND}
-- https://afarer.com/ko/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/ko/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/ko/cases/ — 실제 프로젝트, 실제 결과 — afarer의 실행
+- https://afarer.com/ko/certifications/ — 품질 인증 및 규정 준수 표준
 - https://afarer.com/ko/commercial-workboats/
-- https://afarer.com/ko/community/ — The afarer Community
-- https://afarer.com/ko/contact/ — GET IN TOUCH
-- https://afarer.com/ko/custom/ — Design Your Own SUP Board
+- https://afarer.com/ko/community/ — afarer 커뮤니티
+- https://afarer.com/ko/contact/ — 문의하기
+- https://afarer.com/ko/custom/ — 나만의 수상 선박 디자인
 - https://afarer.com/ko/disaster-relief/
-- https://afarer.com/ko/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/ko/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/ko/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/ko/factory-process/ — Manufacturing Process
-- https://afarer.com/ko/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/ko/factory/ — Factory & Manufacturing
+- https://afarer.com/ko/factory-capacity/ — 제조능력 및 연간 생산량
+- https://afarer.com/ko/factory-equipment/ — 제조 장비 및 기계
+- https://afarer.com/ko/factory-oem-capability/ — OEM 및 프라이빗 라벨 제조
+- https://afarer.com/ko/factory-process/ — 제조 프로세스
+- https://afarer.com/ko/factory-quality-lab/ — 시험 연구소 및 품질 보증
+- https://afarer.com/ko/factory/ — 공장 및 제조
 - https://afarer.com/ko/fishing/
-- https://afarer.com/ko/gallery/ — Gallery
-- https://afarer.com/ko/guides/ — New to SUP?
-- https://afarer.com/ko/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/ko/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/ko/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/ko/gallery/ — 갤러리
+- https://afarer.com/ko/guides/ — SUP가 처음이신가요?
+- https://afarer.com/ko/home/ — afarer
+- https://afarer.com/ko/hull-engineering/ — 선체 엔지니어링 스튜디오 — CAD, FEA 및 맞춤 RIB 선체 설계 | {SITE}
+- https://afarer.com/ko/hydrodynamic-test-tank/ — 수역학 테스트 탱크 — 축소 모델 견인 및 선체 최적화 | {SITE}
 - https://afarer.com/ko/inflatable-vs-hardboard/
-- https://afarer.com/ko/journal/ — Journal
-- https://afarer.com/ko/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/ko/learn/ — Learn
-- https://afarer.com/ko/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/ko/journal/ — afarer 저널
+- https://afarer.com/ko/knowledge/ — 수상 탐험 지식
+- https://afarer.com/ko/learn/ — 학습
+- https://afarer.com/ko/lifestyle/ — afarer 라이프스타일
 - https://afarer.com/ko/maritime-safety-defense/
-- https://afarer.com/ko/media/ — Media Center
-- https://afarer.com/ko/news/ — News
-- https://afarer.com/ko/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/ko/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/ko/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/ko/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/ko/quality/ — Performance & Quality Testing
-- https://afarer.com/ko/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/ko/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/ko/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/ko/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/ko/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/ko/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/ko/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/ko/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/ko/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/ko/safety/ — Safety Standards & Certification
+- https://afarer.com/ko/media/ — 미디어 센터
+- https://afarer.com/ko/news/ — 뉴스
+- https://afarer.com/ko/partners/ — 더 먼 파트너가 되세요 —글로벌 유통 네트워크
+- https://afarer.com/ko/prototype-workshop/ — 프로토타입 워크숍 — 풀스케일 RIB 프로토타입 제작 및 해상 시험 | {SITE}
+- https://afarer.com/ko/pvc-fabric-lab/ — PVC 원단 연구소 — 인플레이터블 보트 소재 시험 | {SITE}
+- https://afarer.com/ko/quality-inspection-lab/ — 품질 및 검사 랩 — ISO 규격 RIB 테스트 및 인증 | {SITE}
+- https://afarer.com/ko/quality/ — 성능 및 품질 테스트
+- https://afarer.com/ko/randdcenter/ — 연구개발센터 | {SITE}
+- https://afarer.com/ko/request-quotation/ — 귀하의 프로젝트에 대한 견적 요청
+- https://afarer.com/ko/research-ce-certification/ — 인플레이터블 수상선박의 CE 인증 절차 | {SITE}
+- https://afarer.com/ko/research-drop-stitch/ — 드롭스티치 원리 — 인플레이션블 리지드 코어의 엔지니어링 | {SITE}
+- https://afarer.com/ko/research-oem-buyer-guide/ — OEM 구매 가이드 — 아시아 인플레이트 수상선 조달 | {SITE}
+- https://afarer.com/ko/research-pvc-vs-hypalon/ — PVC vs 하이팔론 — 인플레이터블 보트 기술 비교 | {SITE}
+- https://afarer.com/ko/research-sup-thickness/ — SUP 두께 선택 방법 — 엔지니어링 분석 | {SITE}
+- https://afarer.com/ko/resources/ — B2B 리소스 및 다운로드 | {SITE}
+- https://afarer.com/ko/rf-welding/ — RF 용접 센터 — 기밀 이음새를 위한 유전체 본딩 | {SITE}
+- https://afarer.com/ko/safety/ — 안전 기준 및 인증
 - https://afarer.com/ko/search-and-rescue/
-- https://afarer.com/ko/size-guide/ — Size & Specs Guide
-- https://afarer.com/ko/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/ko/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/ko/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/ko/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/ko/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/ko/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/ko/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/ko/technology/ — Built for Performance
+- https://afarer.com/ko/size-guide/ — 사이즈 및 사양 가이드
+- https://afarer.com/ko/solutions-build-your-own-brand/ — 프라이빗 라벨 SUP 제조 | {SITE}
+- https://afarer.com/ko/solutions-distributors/ — SUP 유통 파트너 프로그램 | {SITE}
+- https://afarer.com/ko/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/ko/solutions-rental-operators/ — SUP 렌탈 플리트 솔루션 | {SITE}
+- https://afarer.com/ko/solutions-resorts-hotels/ — 리조트 SUP 플릿 솔루션 | {SITE}
+- https://afarer.com/ko/solutions-retail-partners/ — SUP 리테일 파트너 프로그램 | {SITE}
+- https://afarer.com/ko/solutions/ — 모든 비즈니스를 위한 SUP 솔루션
+- https://afarer.com/ko/technology/ — 당사의 기술
 - https://afarer.com/ko/tourism-recreation/
-- https://afarer.com/ko/trust/ — Trust afarer
+- https://afarer.com/ko/trust/ — afarer를 신뢰하세요
 - https://afarer.com/ko/warranty/
 - https://afarer.com/ko/what-is-sup/
 - https://afarer.com/learn/ — Learn
@@ -35519,266 +35845,266 @@ Contact:
 - https://afarer.com/maritime-safety-defense/
 - https://afarer.com/media/ — Media Center
 - https://afarer.com/news/ — News
-- https://afarer.com/nl/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/nl/academy/ — Learning Center
-- https://afarer.com/nl/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/nl/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/nl/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/nl/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/nl/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/nl/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/nl/about/ — Scheepsbouwkunde in <span class="text-accent dark:text-white">afarer</span>-stijl
+- https://afarer.com/nl/academy/ — Kenniscentrum
+- https://afarer.com/nl/afarer-story/ — afarer —Vrijheid op het Water Ontwerpen
+- https://afarer.com/nl/b2b-solutions-matrix/ — B2B Klantoplossingenmatrix | {SITE}
+- https://afarer.com/nl/brand-global-presence/ — Actief in 50+ Landen op Elk Continent
+- https://afarer.com/nl/brand-marine-expertise/ — Decennia van Maritieme Techniek in Elk Romp
+- https://afarer.com/nl/brand-team/ — De Mensen Achter afarer —Vrijheid op het Water Ontwerpen
+- https://afarer.com/nl/brand-why-afarer/ — Zeven Redenen Waarom Wereldwijde Merken Kiezen voor afarer
 - https://afarer.com/nl/brand/ — {BRAND}
-- https://afarer.com/nl/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/nl/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/nl/cases/ — Echte projecten, echte resultaten —afarer in actie
+- https://afarer.com/nl/certifications/ — Kwaliteitscertificeringen & Nalevingsnormen
 - https://afarer.com/nl/commercial-workboats/
-- https://afarer.com/nl/community/ — The afarer Community
-- https://afarer.com/nl/contact/ — GET IN TOUCH
-- https://afarer.com/nl/custom/ — Design Your Own SUP Board
+- https://afarer.com/nl/community/ — De afarer Gemeenschap
+- https://afarer.com/nl/contact/ — NEEM CONTACT MET ONS OP
+- https://afarer.com/nl/custom/ — Ontwerp je eigen boot
 - https://afarer.com/nl/disaster-relief/
-- https://afarer.com/nl/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/nl/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/nl/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/nl/factory-process/ — Manufacturing Process
-- https://afarer.com/nl/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/nl/factory/ — Factory & Manufacturing
+- https://afarer.com/nl/factory-capacity/ — Productiecapaciteit & Jaarlijkse Output
+- https://afarer.com/nl/factory-equipment/ — Productieapparatuur & Machines
+- https://afarer.com/nl/factory-oem-capability/ — OEM- en private label-productie
+- https://afarer.com/nl/factory-process/ — Productieproces
+- https://afarer.com/nl/factory-quality-lab/ — Testlaboratorium & Kwaliteitsborging
+- https://afarer.com/nl/factory/ — Fabriek & Productie
 - https://afarer.com/nl/fishing/
-- https://afarer.com/nl/gallery/ — Gallery
-- https://afarer.com/nl/guides/ — New to SUP?
-- https://afarer.com/nl/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/nl/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/nl/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/nl/gallery/ — Galerij
+- https://afarer.com/nl/guides/ — Nieuw met SUP?
+- https://afarer.com/nl/home/ — Ontworpen voor het water. <br class="hidden sm:inline" /> Gebouwd voor het <span class="text-accent dark:text-white">leven aan boord</span>.
+- https://afarer.com/nl/hull-engineering/ — Hull Engineering Studio — CAD, FEA en Aangepast RIB Rompontwerp | {SITE}
+- https://afarer.com/nl/hydrodynamic-test-tank/ — Hydrodynamische Testtank — Scale-Model Slepen & Rompopimalisatie | {SITE}
 - https://afarer.com/nl/inflatable-vs-hardboard/
-- https://afarer.com/nl/journal/ — Journal
-- https://afarer.com/nl/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/nl/learn/ — Learn
-- https://afarer.com/nl/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/nl/journal/ — afarer Dagboek
+- https://afarer.com/nl/knowledge/ — Waterverkenning Kennis
+- https://afarer.com/nl/learn/ — Leer
+- https://afarer.com/nl/lifestyle/ — afarer Lifestyle
 - https://afarer.com/nl/maritime-safety-defense/
-- https://afarer.com/nl/media/ — Media Center
-- https://afarer.com/nl/news/ — News
-- https://afarer.com/nl/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/nl/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/nl/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/nl/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/nl/quality/ — Performance & Quality Testing
-- https://afarer.com/nl/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/nl/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/nl/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/nl/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/nl/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/nl/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/nl/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/nl/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/nl/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/nl/safety/ — Safety Standards & Certification
+- https://afarer.com/nl/media/ — Media Centrum
+- https://afarer.com/nl/news/ — Nieuws
+- https://afarer.com/nl/partners/ — Word een afarer Partner —Wereldwijd Distributienetwerk
+- https://afarer.com/nl/prototype-workshop/ — Prototype Werkplaats — Volledige Schaal RIB Prototyping & Zeeproeven | {SITE}
+- https://afarer.com/nl/pvc-fabric-lab/ — PVC Stof Lab — Materiaaltesten voor Opblaasbare Boten | {SITE}
+- https://afarer.com/nl/quality-inspection-lab/ — Kwaliteit & Inspectie Laboratorium — ISO-Conforme RIB-Testen & Certificering | {SITE}
+- https://afarer.com/nl/quality/ — Prestatie- en kwaliteitstesten
+- https://afarer.com/nl/randdcenter/ — R&D Centrum | {SITE}
+- https://afarer.com/nl/request-quotation/ — Vraag een Offerte Aan voor Uw Project
+- https://afarer.com/nl/research-ce-certification/ — Hoe CE-certificering werkt voor opblaasbare vaartuigen | {SITE}
+- https://afarer.com/nl/research-drop-stitch/ — Hoe Drop Stitch Werkt — De Engineering Achter Opblaasbare Stevige Kernen | {SITE}
+- https://afarer.com/nl/research-oem-buyer-guide/ — OEM Koperhandleiding — Inkoop van Opblaasbare Watercraft uit Azië | {SITE}
+- https://afarer.com/nl/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technische Vergelijking voor Opblaasboten | {SITE}
+- https://afarer.com/nl/research-sup-thickness/ — Hoe de dikte van een SUP te kiezen — Technische analyse | {SITE}
+- https://afarer.com/nl/resources/ — B2B bronnen en downloads | {SITE}
+- https://afarer.com/nl/rf-welding/ — RF Lascentrum — Dielectrisch Lijmen voor Luchtdichte Naden | {SITE}
+- https://afarer.com/nl/safety/ — Veiligheidsnormen en certificering
 - https://afarer.com/nl/search-and-rescue/
-- https://afarer.com/nl/size-guide/ — Size & Specs Guide
-- https://afarer.com/nl/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/nl/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/nl/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/nl/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/nl/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/nl/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/nl/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/nl/technology/ — Built for Performance
+- https://afarer.com/nl/size-guide/ — Maat- en specificatiegids
+- https://afarer.com/nl/solutions-build-your-own-brand/ — Private label SUP-fabricage | {SITE}
+- https://afarer.com/nl/solutions-distributors/ — SUP Distributie Partnerprogramma | {SITE}
+- https://afarer.com/nl/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/nl/solutions-rental-operators/ — SUP Verhuurvloot Oplossingen | {SITE}
+- https://afarer.com/nl/solutions-resorts-hotels/ — Resort SUP-vlootoplossingen | {SITE}
+- https://afarer.com/nl/solutions-retail-partners/ — SUP Retail Partner Programma | {SITE}
+- https://afarer.com/nl/solutions/ — SUP-oplossingen Voor Elk Bedrijf
+- https://afarer.com/nl/technology/ — Onze technologie
 - https://afarer.com/nl/tourism-recreation/
-- https://afarer.com/nl/trust/ — Trust afarer
+- https://afarer.com/nl/trust/ — Vertrouw afarer
 - https://afarer.com/nl/warranty/
 - https://afarer.com/nl/what-is-sup/
-- https://afarer.com/no/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/no/academy/ — Learning Center
-- https://afarer.com/no/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/no/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/no/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/no/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/no/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/no/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/no/about/ — Marine engineering i <span class="text-accent dark:text-white">afarer</span>-stil
+- https://afarer.com/no/academy/ — Kunnskapssenter
+- https://afarer.com/no/afarer-story/ — afarer —Ingeniørkunst for Frihet på Vannet
+- https://afarer.com/no/b2b-solutions-matrix/ — B2B-kundeløsningsmatrise | {SITE}
+- https://afarer.com/no/brand-global-presence/ — Betjener 50+ land over alle kontinenter
+- https://afarer.com/no/brand-marine-expertise/ — Tiår med marinteknikk i hvert skrog
+- https://afarer.com/no/brand-team/ — Menneskene bak afarer —Konstruksjonsfrihet på vannet
+- https://afarer.com/no/brand-why-afarer/ — Syv grunner til hvorfor globale merkevarer velger afarer
 - https://afarer.com/no/brand/ — {BRAND}
-- https://afarer.com/no/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/no/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/no/cases/ — Virkelige prosjekter, virkelige resultater —afarer i aksjon
+- https://afarer.com/no/certifications/ — Kvalitetssertifiseringer & Overholdelsesstandarder
 - https://afarer.com/no/commercial-workboats/
-- https://afarer.com/no/community/ — The afarer Community
-- https://afarer.com/no/contact/ — GET IN TOUCH
-- https://afarer.com/no/custom/ — Design Your Own SUP Board
+- https://afarer.com/no/community/ — afarer-fellesskapet
+- https://afarer.com/no/contact/ — KONTAKT OSS
+- https://afarer.com/no/custom/ — Design din egen båt
 - https://afarer.com/no/disaster-relief/
-- https://afarer.com/no/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/no/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/no/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/no/factory-process/ — Manufacturing Process
-- https://afarer.com/no/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/no/factory/ — Factory & Manufacturing
+- https://afarer.com/no/factory-capacity/ — Produksjonskapasitet og årlig produksjon
+- https://afarer.com/no/factory-equipment/ — Produksjonsutstyr og maskiner
+- https://afarer.com/no/factory-oem-capability/ — OEM- og Private Label-produksjon
+- https://afarer.com/no/factory-process/ — Produksjonsprosess
+- https://afarer.com/no/factory-quality-lab/ — Testing laboratorium og kvalitetssikring
+- https://afarer.com/no/factory/ — Fabrikk og produksjon
 - https://afarer.com/no/fishing/
-- https://afarer.com/no/gallery/ — Gallery
-- https://afarer.com/no/guides/ — New to SUP?
-- https://afarer.com/no/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/no/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/no/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/no/gallery/ — Galleri
+- https://afarer.com/no/guides/ — Ny innen SUP?
+- https://afarer.com/no/home/ — Designet for vannet. <br class="hidden sm:inline" /> Bygget for <span class="text-accent dark:text-white">livet om bord</span>.
+- https://afarer.com/no/hull-engineering/ — Skrogteknisk studio — CAD, FEA og tilpasset RIB-skrogdesign | {SITE}
+- https://afarer.com/no/hydrodynamic-test-tank/ — Hydrodynamisk testtank — skalamodelltowing og skrogoptimalisering | {SITE}
 - https://afarer.com/no/inflatable-vs-hardboard/
-- https://afarer.com/no/journal/ — Journal
-- https://afarer.com/no/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/no/learn/ — Learn
-- https://afarer.com/no/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/no/journal/ — afarer-journalen
+- https://afarer.com/no/knowledge/ — Vannutforskningskunnskap
+- https://afarer.com/no/learn/ — Lær
+- https://afarer.com/no/lifestyle/ — afarer- livsstil
 - https://afarer.com/no/maritime-safety-defense/
-- https://afarer.com/no/media/ — Media Center
-- https://afarer.com/no/news/ — News
-- https://afarer.com/no/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/no/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/no/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/no/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/no/quality/ — Performance & Quality Testing
-- https://afarer.com/no/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/no/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/no/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/no/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/no/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/no/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/no/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/no/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/no/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/no/safety/ — Safety Standards & Certification
+- https://afarer.com/no/media/ — Mediesenter
+- https://afarer.com/no/news/ — Nyheter
+- https://afarer.com/no/partners/ — Bli en afarer-partner —Globalt distribusjonsnettverk
+- https://afarer.com/no/prototype-workshop/ — Prototypeverksted — fullskala RIB-prototyping og havforsøk | {SITE}
+- https://afarer.com/no/pvc-fabric-lab/ — PVC-stofflaboratorium — materialtesting for oppblåsbare båter | {SITE}
+- https://afarer.com/no/quality-inspection-lab/ — Kvalitets- og inspeksjonslaboratorium — ISO-sertifisert RIB-testing og sertifisering | {SITE}
+- https://afarer.com/no/quality/ — Ytelses- og kvalitetstesting
+- https://afarer.com/no/randdcenter/ — FoU-senter | {SITE}
+- https://afarer.com/no/request-quotation/ — Be om et tilbud for ditt prosjekt
+- https://afarer.com/no/research-ce-certification/ — Hvordan CE-sertifisering fungerer for oppblåsbare vannfartøy | {SITE}
+- https://afarer.com/no/research-drop-stitch/ — Hvordan drop-stitch fungerer — ingeniørkunsten bak oppblåsbare faste kjerner | {SITE}
+- https://afarer.com/no/research-oem-buyer-guide/ — OEM-kjøperguide — Innkjøp av oppblåsbare vannfartøy fra Asia | {SITE}
+- https://afarer.com/no/research-pvc-vs-hypalon/ — PVC vs Hypalon — teknisk sammenligning for oppblåsbare båter | {SITE}
+- https://afarer.com/no/research-sup-thickness/ — Hvordan velge SUP-tykkelse — ingeniøranalyse | {SITE}
+- https://afarer.com/no/resources/ — B2B-ressurser og nedlastinger | {SITE}
+- https://afarer.com/no/rf-welding/ — RF-sveisesenter — dielektrisk binding for tetteste sommer | {SITE}
+- https://afarer.com/no/safety/ — Sikkerhetsstandarder og sertifisering
 - https://afarer.com/no/search-and-rescue/
-- https://afarer.com/no/size-guide/ — Size & Specs Guide
-- https://afarer.com/no/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/no/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/no/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/no/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/no/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/no/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/no/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/no/technology/ — Built for Performance
+- https://afarer.com/no/size-guide/ — Størrelses- og spesifikasjonsguide
+- https://afarer.com/no/solutions-build-your-own-brand/ — Hvitvaremerkeproduksjon av SUP | {SITE}
+- https://afarer.com/no/solutions-distributors/ — SUP-distribusjonspartnerprogram | {SITE}
+- https://afarer.com/no/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/no/solutions-rental-operators/ — SUP-utleieløsninger for flåte | {SITE}
+- https://afarer.com/no/solutions-resorts-hotels/ — Resort SUP-flåteløsninger | {SITE}
+- https://afarer.com/no/solutions-retail-partners/ — SUP-forhandlerpartnerprogram | {SITE}
+- https://afarer.com/no/solutions/ — SUP-løsninger for enhver virksomhet
+- https://afarer.com/no/technology/ — Vår teknologi
 - https://afarer.com/no/tourism-recreation/
-- https://afarer.com/no/trust/ — Trust afarer
+- https://afarer.com/no/trust/ — Stol på afarer
 - https://afarer.com/no/warranty/
 - https://afarer.com/no/what-is-sup/
 - https://afarer.com/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/pl/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/pl/academy/ — Learning Center
-- https://afarer.com/pl/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/pl/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/pl/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/pl/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/pl/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/pl/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/pl/about/ — Inżynieria okrętowa w stylu <span class="text-accent dark:text-white">afarer</span>
+- https://afarer.com/pl/academy/ — Centrum wiedzy
+- https://afarer.com/pl/afarer-story/ — afarer —Inżynieria wolności na wodzie
+- https://afarer.com/pl/b2b-solutions-matrix/ — Macierz Rozwiązań dla Klientów B2B | {SITE}
+- https://afarer.com/pl/brand-global-presence/ — Obsługujemy ponad 50 krajów na każdym kontynencie
+- https://afarer.com/pl/brand-marine-expertise/ — Dziesięciolecia inżynierii morskiej w każdym kadłubie
+- https://afarer.com/pl/brand-team/ — Ludzie stojący za afarer —inżynieria wolności na wodzie
+- https://afarer.com/pl/brand-why-afarer/ — Siedem powodów, dla których globalne marki wybierają afarer
 - https://afarer.com/pl/brand/ — {BRAND}
-- https://afarer.com/pl/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/pl/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/pl/cases/ — Realne projekty, realne rezultaty —afarer w działaniu
+- https://afarer.com/pl/certifications/ — Certyfikaty jakości i standardy zgodności
 - https://afarer.com/pl/commercial-workboats/
-- https://afarer.com/pl/community/ — The afarer Community
-- https://afarer.com/pl/contact/ — GET IN TOUCH
-- https://afarer.com/pl/custom/ — Design Your Own SUP Board
+- https://afarer.com/pl/community/ — Społeczność afarer
+- https://afarer.com/pl/contact/ — SKONTAKTUJ SIĘ Z NAMI
+- https://afarer.com/pl/custom/ — Zaprojektuj własną łodź
 - https://afarer.com/pl/disaster-relief/
-- https://afarer.com/pl/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/pl/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/pl/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/pl/factory-process/ — Manufacturing Process
-- https://afarer.com/pl/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/pl/factory/ — Factory & Manufacturing
+- https://afarer.com/pl/factory-capacity/ — Możliwości produkcyjne i roczna produkcja
+- https://afarer.com/pl/factory-equipment/ — Wyposażenie i Maszyny Produkcyjne
+- https://afarer.com/pl/factory-oem-capability/ — Produkcja OEM i marek własnych
+- https://afarer.com/pl/factory-process/ — Proces produkcyjny
+- https://afarer.com/pl/factory-quality-lab/ — Laboratorium Testowe i Zapewnienie Jakości
+- https://afarer.com/pl/factory/ — Fabryka i Produkcja
 - https://afarer.com/pl/fishing/
-- https://afarer.com/pl/gallery/ — Gallery
-- https://afarer.com/pl/guides/ — New to SUP?
-- https://afarer.com/pl/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/pl/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/pl/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/pl/gallery/ — Galeria
+- https://afarer.com/pl/guides/ — Nowy w SUP?
+- https://afarer.com/pl/home/ — Zaprojektowane do wody. <br class="hidden sm:inline" /> Zbudowane do <span class="text-accent dark:text-white">życia na pokładzie</span>.
+- https://afarer.com/pl/hull-engineering/ — Hull Engineering Studio — Projektowanie kadłubów RIB CAD, FEA i na zamówienie | {SITE}
+- https://afarer.com/pl/hydrodynamic-test-tank/ — Hydrodynamiczny zbiornik testowy — holowanie modeli i optymalizacja kadłuba | {SITE}
 - https://afarer.com/pl/inflatable-vs-hardboard/
-- https://afarer.com/pl/journal/ — Journal
-- https://afarer.com/pl/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/pl/learn/ — Learn
-- https://afarer.com/pl/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/pl/journal/ — Dziennik afarer
+- https://afarer.com/pl/knowledge/ — Wiedza o eksploracji wody
+- https://afarer.com/pl/learn/ — Ucz się
+- https://afarer.com/pl/lifestyle/ — Styl życia afarer
 - https://afarer.com/pl/maritime-safety-defense/
-- https://afarer.com/pl/media/ — Media Center
-- https://afarer.com/pl/news/ — News
-- https://afarer.com/pl/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/pl/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/pl/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/pl/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/pl/quality/ — Performance & Quality Testing
-- https://afarer.com/pl/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/pl/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/pl/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/pl/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/pl/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/pl/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/pl/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/pl/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/pl/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/pl/safety/ — Safety Standards & Certification
+- https://afarer.com/pl/media/ — Centrum mediów
+- https://afarer.com/pl/news/ — Aktualności
+- https://afarer.com/pl/partners/ — Zostań partnerem afarer —globalna sieć dystrybucji
+- https://afarer.com/pl/prototype-workshop/ — Warsztat Prototypów — Prototypowanie RIB w Pełnej Skali i Próby Morskie | {SITE}
+- https://afarer.com/pl/pvc-fabric-lab/ — Laboratorium tkanin PCV — Badanie materiałów dla łodzi pneumatycznych | {SITE}
+- https://afarer.com/pl/quality-inspection-lab/ — Laboratorium Jakości i Inspekcji — Testowanie i Certyfikacja RIB zgodne z ISO | {SITE}
+- https://afarer.com/pl/quality/ — Testy wydajności i jakości
+- https://afarer.com/pl/randdcenter/ — Centrum Badań i Rozwoju | {SITE}
+- https://afarer.com/pl/request-quotation/ — Poproś o wycenę dla swojego projektu
+- https://afarer.com/pl/research-ce-certification/ — Jak działa certyfikacja CE dla nadmuchiwanych jednostek pływających | {SITE}
+- https://afarer.com/pl/research-drop-stitch/ — Jak działa Drop Stitch — Inżynieria stojąca za nadmuchiwanymi sztywnymi rdzeniami | {SITE}
+- https://afarer.com/pl/research-oem-buyer-guide/ — Przewodnik dla nabywców OEM — Pozyskiwanie dmuchanych jednostek wodnych z Azji | {SITE}
+- https://afarer.com/pl/research-pvc-vs-hypalon/ — PVC vs Hypalon — Porównanie techniczne dla łodzi pneumatycznych | {SITE}
+- https://afarer.com/pl/research-sup-thickness/ — Jak wybrać grubość SUP — analiza inżynierska | {SITE}
+- https://afarer.com/pl/resources/ — Zasoby i pobieranie materiałów B2B | {SITE}
+- https://afarer.com/pl/rf-welding/ — Centrum Spawania RF — Łączenie Dielektryczne dla Szczelnych Szwów | {SITE}
+- https://afarer.com/pl/safety/ — Standardy bezpieczeństwa i certyfikacja
 - https://afarer.com/pl/search-and-rescue/
-- https://afarer.com/pl/size-guide/ — Size & Specs Guide
-- https://afarer.com/pl/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/pl/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/pl/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/pl/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/pl/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/pl/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/pl/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/pl/technology/ — Built for Performance
+- https://afarer.com/pl/size-guide/ — Przewodnik po rozmiarach i specyfikacjach
+- https://afarer.com/pl/solutions-build-your-own-brand/ — Produkcja SUP na prywatną markę | {SITE}
+- https://afarer.com/pl/solutions-distributors/ — Program Partnerski Dystrybucji SUP | {SITE}
+- https://afarer.com/pl/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/pl/solutions-rental-operators/ — Rozwiązania dla Floty Wynajmu SUP | {SITE}
+- https://afarer.com/pl/solutions-resorts-hotels/ — Rozwiązania flot SUP dla ośrodków wypoczynkowych | {SITE}
+- https://afarer.com/pl/solutions-retail-partners/ — Program Partnerski SUP Retail | {SITE}
+- https://afarer.com/pl/solutions/ — Rozwiązania SUP Dla Każdego Biznesu
+- https://afarer.com/pl/technology/ — Nasza technologia
 - https://afarer.com/pl/tourism-recreation/
-- https://afarer.com/pl/trust/ — Trust afarer
+- https://afarer.com/pl/trust/ — Zaufaj afarer
 - https://afarer.com/pl/warranty/
 - https://afarer.com/pl/what-is-sup/
 - https://afarer.com/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/pt/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/pt/academy/ — Learning Center
-- https://afarer.com/pt/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/pt/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/pt/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/pt/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/pt/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/pt/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/pt/about/ — Engenharia naval, feita à <span class="text-accent dark:text-white">afarer</span>
+- https://afarer.com/pt/academy/ — Centro de Aprendizagem
+- https://afarer.com/pt/afarer-story/ — afarer —Engenharia da Liberdade na Água
+- https://afarer.com/pt/b2b-solutions-matrix/ — Matriz de Soluções para Clientes B2B | {SITE}
+- https://afarer.com/pt/brand-global-presence/ — Atendendo 50+ Países em Cada Continente
+- https://afarer.com/pt/brand-marine-expertise/ — Décadas de Engenharia Naval em Cada Casco
+- https://afarer.com/pt/brand-team/ — As Pessoas Por Trás da afarer —Engenharia da Liberdade
+- https://afarer.com/pt/brand-why-afarer/ — Sete Razões para Marcas Globais Escolherem afarer
 - https://afarer.com/pt/brand/ — {BRAND}
-- https://afarer.com/pt/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/pt/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/pt/cases/ — Projetos reais, resultados reais —afarer em ação
+- https://afarer.com/pt/certifications/ — Certificações de Qualidade & Padrões de Conformidade
 - https://afarer.com/pt/commercial-workboats/
-- https://afarer.com/pt/community/ — The afarer Community
-- https://afarer.com/pt/contact/ — GET IN TOUCH
-- https://afarer.com/pt/custom/ — Design Your Own SUP Board
+- https://afarer.com/pt/community/ — A Comunidade afarer
+- https://afarer.com/pt/contact/ — ENTRE EM CONTACTO
+- https://afarer.com/pt/custom/ — Projete o Seu Próprio Barco
 - https://afarer.com/pt/disaster-relief/
-- https://afarer.com/pt/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/pt/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/pt/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/pt/factory-process/ — Manufacturing Process
-- https://afarer.com/pt/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/pt/factory/ — Factory & Manufacturing
+- https://afarer.com/pt/factory-capacity/ — Capacidade de Fabricação e Produção Anual
+- https://afarer.com/pt/factory-equipment/ — Equipamentos e Maquinaria de Fabrico
+- https://afarer.com/pt/factory-oem-capability/ — Fabricação OEM e Marca Própria
+- https://afarer.com/pt/factory-process/ — Processo de Fabrico
+- https://afarer.com/pt/factory-quality-lab/ — Laboratório de Testes e Garantia de Qualidade
+- https://afarer.com/pt/factory/ — Fábrica e Fabricação
 - https://afarer.com/pt/fishing/
-- https://afarer.com/pt/gallery/ — Gallery
-- https://afarer.com/pt/guides/ — New to SUP?
-- https://afarer.com/pt/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/pt/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/pt/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/pt/gallery/ — Galeria
+- https://afarer.com/pt/guides/ — Novo no SUP?
+- https://afarer.com/pt/home/ — Projetado para a água. <br class="hidden sm:inline" /> Construído para a <span class="text-accent dark:text-white">vida a bordo</span>.
+- https://afarer.com/pt/hull-engineering/ — Hull Engineering Studio — CAD, FEA e Design Personalizado de Casco RIB | {SITE}
+- https://afarer.com/pt/hydrodynamic-test-tank/ — Tanque de Teste Hidrodinâmico — Reboque de Modelo em Escala e Otimização de Casco | {SITE}
 - https://afarer.com/pt/inflatable-vs-hardboard/
-- https://afarer.com/pt/journal/ — Journal
-- https://afarer.com/pt/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/pt/learn/ — Learn
-- https://afarer.com/pt/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/pt/journal/ — O diário afarer
+- https://afarer.com/pt/knowledge/ — Conhecimento em Exploração Aquática
+- https://afarer.com/pt/learn/ — Aprender
+- https://afarer.com/pt/lifestyle/ — O Estilo de Vida afarer
 - https://afarer.com/pt/maritime-safety-defense/
-- https://afarer.com/pt/media/ — Media Center
-- https://afarer.com/pt/news/ — News
-- https://afarer.com/pt/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/pt/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/pt/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/pt/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/pt/quality/ — Performance & Quality Testing
-- https://afarer.com/pt/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/pt/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/pt/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/pt/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/pt/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/pt/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/pt/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/pt/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/pt/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/pt/safety/ — Safety Standards & Certification
+- https://afarer.com/pt/media/ — Centro de Média
+- https://afarer.com/pt/news/ — Notícias
+- https://afarer.com/pt/partners/ — Torne-se Parceiro afarer —Rede Global de Distribuição
+- https://afarer.com/pt/prototype-workshop/ — Oficina de Protótipos — Prototipagem em Escala Real de RIB e Testes em Mar | {SITE}
+- https://afarer.com/pt/pvc-fabric-lab/ — Laboratório de Tecidos de PVC — Teste de Materiais para Barcos Infláveis | {SITE}
+- https://afarer.com/pt/quality-inspection-lab/ — Laboratório de Qualidade & Inspeção — Testes e Certificação de RIB em Conformidade com ISO | {SITE}
+- https://afarer.com/pt/quality/ — Testes de Desempenho e Qualidade
+- https://afarer.com/pt/randdcenter/ — Centro de P&D | {SITE}
+- https://afarer.com/pt/request-quotation/ — Solicite um Orçamento para seu Projeto
+- https://afarer.com/pt/research-ce-certification/ — Como Funciona a Certificação CE para Embarcações Infláveis | {SITE}
+- https://afarer.com/pt/research-drop-stitch/ — Como Funciona o Drop Stitch — A Engenharia por Trás dos Núcleos Rígidos Infláveis | {SITE}
+- https://afarer.com/pt/research-oem-buyer-guide/ — Guia do Comprador OEM — Como Obter Embarcações Infláveis da Ásia | {SITE}
+- https://afarer.com/pt/research-pvc-vs-hypalon/ — PVC vs Hypalon — Comparação Técnica para Barcos Infláveis | {SITE}
+- https://afarer.com/pt/research-sup-thickness/ — Como Escolher a Espessura do SUP — Análise de Engenharia | {SITE}
+- https://afarer.com/pt/resources/ — Recursos e Downloads B2B | {SITE}
+- https://afarer.com/pt/rf-welding/ — Centro de Soldagem RF — União Dielétrica para Costuras Herméticas | {SITE}
+- https://afarer.com/pt/safety/ — Padrões e certificação de segurança
 - https://afarer.com/pt/search-and-rescue/
-- https://afarer.com/pt/size-guide/ — Size & Specs Guide
-- https://afarer.com/pt/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/pt/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/pt/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/pt/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/pt/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/pt/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/pt/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/pt/technology/ — Built for Performance
+- https://afarer.com/pt/size-guide/ — Guia de tamanhos e especificações
+- https://afarer.com/pt/solutions-build-your-own-brand/ — Fabricação de SUP de Marca Própria | {SITE}
+- https://afarer.com/pt/solutions-distributors/ — Programa de Parceiro de Distribuição SUP | {SITE}
+- https://afarer.com/pt/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/pt/solutions-rental-operators/ — Soluções de Frota de Aluguel de SUP | {SITE}
+- https://afarer.com/pt/solutions-resorts-hotels/ — Soluções para Frota de SUP de Resort | {SITE}
+- https://afarer.com/pt/solutions-retail-partners/ — Programa de Parceiro Varejista SUP | {SITE}
+- https://afarer.com/pt/solutions/ — Soluções SUP Para Todo Negócio
+- https://afarer.com/pt/technology/ — Nossa tecnologia
 - https://afarer.com/pt/tourism-recreation/
-- https://afarer.com/pt/trust/ — Trust afarer
+- https://afarer.com/pt/trust/ — Confie na afarer
 - https://afarer.com/pt/warranty/
 - https://afarer.com/pt/what-is-sup/
 - https://afarer.com/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
@@ -35793,134 +36119,134 @@ Contact:
 - https://afarer.com/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
 - https://afarer.com/resources/ — B2B Resources & Downloads | {SITE}
 - https://afarer.com/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/ro/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/ro/academy/ — Learning Center
-- https://afarer.com/ro/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/ro/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/ro/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/ro/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/ro/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/ro/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/ro/about/ — Despre afarer
+- https://afarer.com/ro/academy/ — Centru de învățare
+- https://afarer.com/ro/afarer-story/ — afarer —Ingineria libertății pe apă
+- https://afarer.com/ro/b2b-solutions-matrix/ — Matricea de soluții pentru clienți B2B | {SITE}
+- https://afarer.com/ro/brand-global-presence/ — Deservim 50+ țări pe fiecare continent
+- https://afarer.com/ro/brand-marine-expertise/ — Decenii de inginerie marină în fiecare carenă
+- https://afarer.com/ro/brand-team/ — Oamenii din spatele afarer —ingineria libertății pe apă
+- https://afarer.com/ro/brand-why-afarer/ — Șapte motive pentru care mărcile globale aleg afarer
 - https://afarer.com/ro/brand/ — {BRAND}
-- https://afarer.com/ro/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/ro/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/ro/cases/ — Proiecte reale, rezultate reale —afarer în acțiune
+- https://afarer.com/ro/certifications/ — Certificări de calitate și standarde de conformitate
 - https://afarer.com/ro/commercial-workboats/
-- https://afarer.com/ro/community/ — The afarer Community
-- https://afarer.com/ro/contact/ — GET IN TOUCH
-- https://afarer.com/ro/custom/ — Design Your Own SUP Board
+- https://afarer.com/ro/community/ — Comunitatea afarer
+- https://afarer.com/ro/contact/ — CONTACTAȚI-NE
+- https://afarer.com/ro/custom/ — Proiectează-ți Propria Placă SUP
 - https://afarer.com/ro/disaster-relief/
-- https://afarer.com/ro/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/ro/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/ro/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/ro/factory-process/ — Manufacturing Process
-- https://afarer.com/ro/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/ro/factory/ — Factory & Manufacturing
+- https://afarer.com/ro/factory-capacity/ — Capacitate de producție și producție anuală
+- https://afarer.com/ro/factory-equipment/ — Echipamente și Mașini de Fabricație
+- https://afarer.com/ro/factory-oem-capability/ — Producție OEM și private label
+- https://afarer.com/ro/factory-process/ — Procesul nostru de producție
+- https://afarer.com/ro/factory-quality-lab/ — Laborator de testare și asigurarea calității
+- https://afarer.com/ro/factory/ — Fabrica noastră
 - https://afarer.com/ro/fishing/
-- https://afarer.com/ro/gallery/ — Gallery
-- https://afarer.com/ro/guides/ — New to SUP?
-- https://afarer.com/ro/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/ro/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/ro/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/ro/gallery/ — Galerie
+- https://afarer.com/ro/guides/ — Începător în SUP?
+- https://afarer.com/ro/home/ — Producător premium de plăci SUP pneumatice &amp; partener OEM
+- https://afarer.com/ro/hull-engineering/ — Studio de inginerie a cocii — CAD, FEA și design personalizat de cocă RIB | {SITE}
+- https://afarer.com/ro/hydrodynamic-test-tank/ — Bazin de testare hidrodinamică — Remorcaje la scară și optimizarea carenei | {SITE}
 - https://afarer.com/ro/inflatable-vs-hardboard/
-- https://afarer.com/ro/journal/ — Journal
-- https://afarer.com/ro/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/ro/learn/ — Learn
-- https://afarer.com/ro/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/ro/journal/ — Jurnal
+- https://afarer.com/ro/knowledge/ — Cunoașterea Explorării Apei
+- https://afarer.com/ro/learn/ — Învață
+- https://afarer.com/ro/lifestyle/ — Stilul de viață afarer
 - https://afarer.com/ro/maritime-safety-defense/
-- https://afarer.com/ro/media/ — Media Center
-- https://afarer.com/ro/news/ — News
-- https://afarer.com/ro/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/ro/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/ro/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/ro/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/ro/quality/ — Performance & Quality Testing
-- https://afarer.com/ro/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/ro/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/ro/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/ro/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/ro/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/ro/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/ro/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/ro/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/ro/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/ro/safety/ — Safety Standards & Certification
+- https://afarer.com/ro/media/ — Centru media
+- https://afarer.com/ro/news/ — Noutăți
+- https://afarer.com/ro/partners/ — Deveniți partener afarer —rețea globală de distribuție
+- https://afarer.com/ro/prototype-workshop/ — Atelier de prototipuri — Prototipare RIB la scară reală și încercări pe mare | {SITE}
+- https://afarer.com/ro/pvc-fabric-lab/ — Laborator de materiale PVC — Testarea materialelor pentru bărci gonflabile | {SITE}
+- https://afarer.com/ro/quality-inspection-lab/ — Laborator de calitate și inspecție — testare și certificare RIB conform ISO | {SITE}
+- https://afarer.com/ro/quality/ — Testare de performanță și calitate
+- https://afarer.com/ro/randdcenter/ — Centrul de Cercetare și Dezvoltare | {SITE}
+- https://afarer.com/ro/request-quotation/ — Solicitați o ofertă pentru proiectul dvs.
+- https://afarer.com/ro/research-ce-certification/ — Cum funcționează certificarea CE pentru ambarcațiunile gonflabile | {SITE}
+- https://afarer.com/ro/research-drop-stitch/ — Cum funcționează Drop Stitch — ingineria din spatele miezurilor rigide pneumatice | {SITE}
+- https://afarer.com/ro/research-oem-buyer-guide/ — Ghid pentru cumpărători OEM — Achiziționarea ambarcațiunilor gonflabile din Asia | {SITE}
+- https://afarer.com/ro/research-pvc-vs-hypalon/ — PVC vs Hypalon — comparație tehnică pentru bărci gonflabile | {SITE}
+- https://afarer.com/ro/research-sup-thickness/ — Cum să alegeți grosimea SUP — Analiză inginerească | {SITE}
+- https://afarer.com/ro/resources/ — Resurse și descărcări B2B | {SITE}
+- https://afarer.com/ro/rf-welding/ — Centru de Sudare RF —Legătură Dielectrică pentru Cusături Etanșe | {SITE}
+- https://afarer.com/ro/safety/ — Standarde de siguranță și certificare
 - https://afarer.com/ro/search-and-rescue/
-- https://afarer.com/ro/size-guide/ — Size & Specs Guide
-- https://afarer.com/ro/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/ro/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/ro/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/ro/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/ro/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/ro/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/ro/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/ro/technology/ — Built for Performance
+- https://afarer.com/ro/size-guide/ — Ghid de dimensiuni și specificații
+- https://afarer.com/ro/solutions-build-your-own-brand/ — Producție SUP cu Etichetă Privată | {SITE}
+- https://afarer.com/ro/solutions-distributors/ — Program de parteneri de distribuție SUP | {SITE}
+- https://afarer.com/ro/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/ro/solutions-rental-operators/ — Soluții pentru flote de închiriere SUP | {SITE}
+- https://afarer.com/ro/solutions-resorts-hotels/ — Soluții de flotă SUP pentru stațiuni | {SITE}
+- https://afarer.com/ro/solutions-retail-partners/ — Program de parteneriat retail SUP | {SITE}
+- https://afarer.com/ro/solutions/ — Soluții SUP Pentru orice afacere
+- https://afarer.com/ro/technology/ — Construit pentru performanță
 - https://afarer.com/ro/tourism-recreation/
-- https://afarer.com/ro/trust/ — Trust afarer
+- https://afarer.com/ro/trust/ — Ai Încredere în afarer
 - https://afarer.com/ro/warranty/
 - https://afarer.com/ro/what-is-sup/
-- https://afarer.com/ru/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/ru/academy/ — Learning Center
-- https://afarer.com/ru/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/ru/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/ru/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/ru/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/ru/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/ru/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/ru/about/ — Морское машиностроение в стиле <span class="text-accent dark:text-white">afarer</span>
+- https://afarer.com/ru/academy/ — Учебный центр
+- https://afarer.com/ru/afarer-story/ — afarer — Инженерная свобода на воде
+- https://afarer.com/ru/b2b-solutions-matrix/ — Матрица решений для B2B-клиентов | {SITE}
+- https://afarer.com/ru/brand-global-presence/ — Обслуживаем более 50 стран на всех континентах
+- https://afarer.com/ru/brand-marine-expertise/ — Десятилетия морского инжиниринга в каждом корпусе
+- https://afarer.com/ru/brand-team/ — Люди, стоящие за afarer —инжиниринг свободы на воде
+- https://afarer.com/ru/brand-why-afarer/ — Семь причин, почему мировые бренды выбирают afarer
 - https://afarer.com/ru/brand/ — {BRAND}
-- https://afarer.com/ru/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/ru/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/ru/cases/ — Реальные проекты, реальные результаты —afarer в деле
+- https://afarer.com/ru/certifications/ — Сертификаты качества и стандарты соответствия
 - https://afarer.com/ru/commercial-workboats/
-- https://afarer.com/ru/community/ — The afarer Community
-- https://afarer.com/ru/contact/ — GET IN TOUCH
-- https://afarer.com/ru/custom/ — Design Your Own SUP Board
+- https://afarer.com/ru/community/ — Сообщество afarer
+- https://afarer.com/ru/contact/ — СВЯЖИТЕСЬ С НАМИ
+- https://afarer.com/ru/custom/ — Спроектируйте Свою Лодку
 - https://afarer.com/ru/disaster-relief/
-- https://afarer.com/ru/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/ru/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/ru/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/ru/factory-process/ — Manufacturing Process
-- https://afarer.com/ru/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/ru/factory/ — Factory & Manufacturing
+- https://afarer.com/ru/factory-capacity/ — Производственные мощности и годовой выпуск
+- https://afarer.com/ru/factory-equipment/ — Производственное Оборудование и Машины
+- https://afarer.com/ru/factory-oem-capability/ — OEM и производство под частной маркой
+- https://afarer.com/ru/factory-process/ — Производственный процесс
+- https://afarer.com/ru/factory-quality-lab/ — Испытательная лаборатория и контроль качества
+- https://afarer.com/ru/factory/ — Фабрика и производство
 - https://afarer.com/ru/fishing/
-- https://afarer.com/ru/gallery/ — Gallery
-- https://afarer.com/ru/guides/ — New to SUP?
-- https://afarer.com/ru/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/ru/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/ru/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/ru/gallery/ — Галерея
+- https://afarer.com/ru/guides/ — Новичок в SUP?
+- https://afarer.com/ru/home/ — Завод надувных плавсредств —<br class="hidden sm:inline" /> OEM/ODM <span class="text-accent dark:text-white">Производитель</span>
+- https://afarer.com/ru/hull-engineering/ — Студия корабельного проектирования Hull — CAD, FEA и индивидуальная разработка корпуса RIB | {SITE}
+- https://afarer.com/ru/hydrodynamic-test-tank/ — Гидродинамический испытательный бассейн — буксировка модели в масштабе и оптимизация корпуса | {SITE}
 - https://afarer.com/ru/inflatable-vs-hardboard/
-- https://afarer.com/ru/journal/ — Journal
-- https://afarer.com/ru/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/ru/learn/ — Learn
-- https://afarer.com/ru/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/ru/journal/ — Журнал afarer
+- https://afarer.com/ru/knowledge/ — Знания об исследовании воды
+- https://afarer.com/ru/learn/ — Обучение
+- https://afarer.com/ru/lifestyle/ — Образ жизни afarer
 - https://afarer.com/ru/maritime-safety-defense/
-- https://afarer.com/ru/media/ — Media Center
-- https://afarer.com/ru/news/ — News
-- https://afarer.com/ru/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/ru/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/ru/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/ru/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/ru/quality/ — Performance & Quality Testing
-- https://afarer.com/ru/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/ru/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/ru/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/ru/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/ru/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/ru/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/ru/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/ru/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/ru/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/ru/safety/ — Safety Standards & Certification
+- https://afarer.com/ru/media/ — Медиацентр
+- https://afarer.com/ru/news/ — Новости
+- https://afarer.com/ru/partners/ — Станьте партнером afarer —глобальная дистрибьюторская сеть
+- https://afarer.com/ru/prototype-workshop/ — Мастерская прототипов — Полномасштабное создание прототипов РИБ и морские испытания | {SITE}
+- https://afarer.com/ru/pvc-fabric-lab/ — Лаборатория тканей ПВХ — испытания материалов для надувных лодок | {SITE}
+- https://afarer.com/ru/quality-inspection-lab/ — Лаборатория качества и инспекции — тестирование и сертификация РИБ в соответствии с ISO | {SITE}
+- https://afarer.com/ru/quality/ — Испытания производительности и качества
+- https://afarer.com/ru/randdcenter/ — Центр НИОКР | {SITE}
+- https://afarer.com/ru/request-quotation/ — Запросить предложение для вашего проекта
+- https://afarer.com/ru/research-ce-certification/ — Как работает сертификация CE для надувных водных транспортных средств | {SITE}
+- https://afarer.com/ru/research-drop-stitch/ — Как работает технология Drop Stitch — инженерия надувных жестких сердечников | {SITE}
+- https://afarer.com/ru/research-oem-buyer-guide/ — Руководство покупателя OEM — Закупка надувных водных судов из Азии | {SITE}
+- https://afarer.com/ru/research-pvc-vs-hypalon/ — ПВХ против Гипалона — техническое сравнение надувных лодок | {SITE}
+- https://afarer.com/ru/research-sup-thickness/ — Как выбрать толщину SUP — инженерный анализ | {SITE}
+- https://afarer.com/ru/resources/ — Ресурсы и загрузки для B2B | {SITE}
+- https://afarer.com/ru/rf-welding/ — RF Welding Center — Диэлектрическое соединение для герметичных швов | {SITE}
+- https://afarer.com/ru/safety/ — Стандарты безопасности и сертификация
 - https://afarer.com/ru/search-and-rescue/
-- https://afarer.com/ru/size-guide/ — Size & Specs Guide
-- https://afarer.com/ru/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/ru/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/ru/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/ru/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/ru/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/ru/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/ru/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/ru/technology/ — Built for Performance
+- https://afarer.com/ru/size-guide/ — Руководство по размерам и спецификациям
+- https://afarer.com/ru/solutions-build-your-own-brand/ — Производство SUP под частной маркой | {SITE}
+- https://afarer.com/ru/solutions-distributors/ — Партнёрская программа распределения SUP | {SITE}
+- https://afarer.com/ru/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/ru/solutions-rental-operators/ — Решения для аренды флота SUP | {SITE}
+- https://afarer.com/ru/solutions-resorts-hotels/ — Решения для флота SUP курорта | {SITE}
+- https://afarer.com/ru/solutions-retail-partners/ — Программа розничного партнера SUP | {SITE}
+- https://afarer.com/ru/solutions/ — Решения SUP Для любого бизнеса
+- https://afarer.com/ru/technology/ — Наши технологии
 - https://afarer.com/ru/tourism-recreation/
-- https://afarer.com/ru/trust/ — Trust afarer
+- https://afarer.com/ru/trust/ — Доверие afarer
 - https://afarer.com/ru/warranty/
 - https://afarer.com/ru/what-is-sup/
 - https://afarer.com/safety/ — Safety Standards & Certification
@@ -35933,201 +36259,201 @@ Contact:
 - https://afarer.com/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
 - https://afarer.com/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
 - https://afarer.com/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/sv/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/sv/academy/ — Learning Center
-- https://afarer.com/sv/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/sv/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/sv/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/sv/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/sv/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/sv/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/sv/about/ — Marin ingenjörskonst i <span class="text-accent dark:text-white">afarer</span>-stil
+- https://afarer.com/sv/academy/ — Kunskapscenter
+- https://afarer.com/sv/afarer-story/ — afarer —Ingenjörskonst för Frihet på Vattnet
+- https://afarer.com/sv/b2b-solutions-matrix/ — B2B-kundlösningens matris | {SITE}
+- https://afarer.com/sv/brand-global-presence/ — Betjänar 50+ länder över alla kontinenter
+- https://afarer.com/sv/brand-marine-expertise/ — Årtionden av marinteknik i varje skrov
+- https://afarer.com/sv/brand-team/ — Människorna bakom afarer —Konstruktionsfrihet på vattnet
+- https://afarer.com/sv/brand-why-afarer/ — Sju anledningar till varför globala varumärken väljer afarer
 - https://afarer.com/sv/brand/ — {BRAND}
-- https://afarer.com/sv/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/sv/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/sv/cases/ — Verkliga projekt, verkliga resultat —afarer i handling
+- https://afarer.com/sv/certifications/ — Kvalitetscertifieringar & Efterlevnadsstandarder
 - https://afarer.com/sv/commercial-workboats/
-- https://afarer.com/sv/community/ — The afarer Community
-- https://afarer.com/sv/contact/ — GET IN TOUCH
-- https://afarer.com/sv/custom/ — Design Your Own SUP Board
+- https://afarer.com/sv/community/ — afarer-gemenskapen
+- https://afarer.com/sv/contact/ — KONTAKTA OSS
+- https://afarer.com/sv/custom/ — Designa din egen båt
 - https://afarer.com/sv/disaster-relief/
-- https://afarer.com/sv/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/sv/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/sv/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/sv/factory-process/ — Manufacturing Process
-- https://afarer.com/sv/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/sv/factory/ — Factory & Manufacturing
+- https://afarer.com/sv/factory-capacity/ — Tillverkningskapacitet och årlig produktion
+- https://afarer.com/sv/factory-equipment/ — Tillverkningsutrustning och Maskiner
+- https://afarer.com/sv/factory-oem-capability/ — OEM- och privatmärkestillverkning
+- https://afarer.com/sv/factory-process/ — Produktionsprocess
+- https://afarer.com/sv/factory-quality-lab/ — Testlaboratorium och kvalitetssäkring
+- https://afarer.com/sv/factory/ — Fabrik och produktion
 - https://afarer.com/sv/fishing/
-- https://afarer.com/sv/gallery/ — Gallery
-- https://afarer.com/sv/guides/ — New to SUP?
-- https://afarer.com/sv/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/sv/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/sv/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/sv/gallery/ — Galleri
+- https://afarer.com/sv/guides/ — Ny med SUP?
+- https://afarer.com/sv/home/ — Designade för vattnet. <br class="hidden sm:inline" /> Byggda för <span class="text-accent dark:text-white">livet ombord</span>.
+- https://afarer.com/sv/hull-engineering/ — Skrovingenjörsstudio — CAD, FEA och anpassad RIB-skrotdesign | {SITE}
+- https://afarer.com/sv/hydrodynamic-test-tank/ — Hydrodynamisk testtank — Skalmodellsläp och skroptimering | {SITE}
 - https://afarer.com/sv/inflatable-vs-hardboard/
-- https://afarer.com/sv/journal/ — Journal
-- https://afarer.com/sv/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/sv/learn/ — Learn
-- https://afarer.com/sv/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/sv/journal/ — afarer Journal
+- https://afarer.com/sv/knowledge/ — Vattenutforskningskunskap
+- https://afarer.com/sv/learn/ — Lär dig
+- https://afarer.com/sv/lifestyle/ — Livsstil afarer
 - https://afarer.com/sv/maritime-safety-defense/
-- https://afarer.com/sv/media/ — Media Center
-- https://afarer.com/sv/news/ — News
-- https://afarer.com/sv/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/sv/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/sv/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/sv/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/sv/quality/ — Performance & Quality Testing
-- https://afarer.com/sv/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/sv/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/sv/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/sv/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/sv/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/sv/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/sv/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/sv/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/sv/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/sv/safety/ — Safety Standards & Certification
+- https://afarer.com/sv/media/ — Mediecenter
+- https://afarer.com/sv/news/ — Nyheter
+- https://afarer.com/sv/partners/ — Bli en afarer-partner —Globalt distributionsnätverk
+- https://afarer.com/sv/prototype-workshop/ — Prototypverkstad — fullskalig RIB-prototyp och havsprovning | {SITE}
+- https://afarer.com/sv/pvc-fabric-lab/ — PVC-tyglaboratorium — Materialtestning för uppblåsbara båtar | {SITE}
+- https://afarer.com/sv/quality-inspection-lab/ — Kvalitets- och inspektionslabb — ISO-kompatibel RIB-testning och certifiering | {SITE}
+- https://afarer.com/sv/quality/ — Prestanda- och kvalitetstester
+- https://afarer.com/sv/randdcenter/ — Forsknings- och utvecklingscenter | {SITE}
+- https://afarer.com/sv/request-quotation/ — Begär en offert för ditt projekt
+- https://afarer.com/sv/research-ce-certification/ — Hur CE-certifiering fungerar för uppblåsbara vattenfartyg | {SITE}
+- https://afarer.com/sv/research-drop-stitch/ — Hur Drop Stitch fungerar — Tekniken bakom oppblåsbara styva kärnor | {SITE}
+- https://afarer.com/sv/research-oem-buyer-guide/ — OEM-köpguide – Inköp av oppust vattenfordon från Asien | {SITE}
+- https://afarer.com/sv/research-pvc-vs-hypalon/ — PVC mot Hypalon — teknisk jämförelse för oppustbara båtar | {SITE}
+- https://afarer.com/sv/research-sup-thickness/ — Hur du väljer SUP-tjocklek — Teknisk analys | {SITE}
+- https://afarer.com/sv/resources/ — B2B-resurser och nedladdningar | {SITE}
+- https://afarer.com/sv/rf-welding/ — RF-svetsningscenter — dielektrisk binding för lufttäta sömmar | {SITE}
+- https://afarer.com/sv/safety/ — Säkerhetsstandarder och certifiering
 - https://afarer.com/sv/search-and-rescue/
-- https://afarer.com/sv/size-guide/ — Size & Specs Guide
-- https://afarer.com/sv/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/sv/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/sv/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/sv/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/sv/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/sv/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/sv/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/sv/technology/ — Built for Performance
+- https://afarer.com/sv/size-guide/ — Storleks- och specifikationsguide
+- https://afarer.com/sv/solutions-build-your-own-brand/ — Privatmärkt SUP-tillverkning | {SITE}
+- https://afarer.com/sv/solutions-distributors/ — SUP-distributörspartnerskap | {SITE}
+- https://afarer.com/sv/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/sv/solutions-rental-operators/ — SUP-lösningar för uthyrningsflottor | {SITE}
+- https://afarer.com/sv/solutions-resorts-hotels/ — Resort SUP-flottlösningar | {SITE}
+- https://afarer.com/sv/solutions-retail-partners/ — SUP-detaljhandelspartnerskap | {SITE}
+- https://afarer.com/sv/solutions/ — SUP-lösningar för varje företag
+- https://afarer.com/sv/technology/ — Vår teknologi
 - https://afarer.com/sv/tourism-recreation/
-- https://afarer.com/sv/trust/ — Trust afarer
+- https://afarer.com/sv/trust/ — Lita på afarer
 - https://afarer.com/sv/warranty/
 - https://afarer.com/sv/what-is-sup/
 - https://afarer.com/technology/ — Built for Performance
-- https://afarer.com/th/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/th/academy/ — Learning Center
-- https://afarer.com/th/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/th/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/th/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/th/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/th/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/th/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/th/about/ — เกี่ยวกับ afarer
+- https://afarer.com/th/academy/ — ศูนย์การเรียนรู้
+- https://afarer.com/th/afarer-story/ — afarer — สร้างสรรค์อิสระบนผืนน้ำด้วยวิศวกรรม
+- https://afarer.com/th/b2b-solutions-matrix/ — B2B เมทริกซ์โซลูชั่นสำหรับลูกค้า | {SITE}
+- https://afarer.com/th/brand-global-presence/ — ให้บริการมากกว่า 50 ประเทศ ทั่วทุกทวีป
+- https://afarer.com/th/brand-marine-expertise/ — ทศวรรษแห่งวิศวกรรมทางทะเล ในทุกลำเรือ
+- https://afarer.com/th/brand-team/ — ผู้อยู่เบื้องหลังความห่างไกล —วิศวกรรมอิสระทางน้ำ
+- https://afarer.com/th/brand-why-afarer/ — เหตุผลเจ็ดประการว่าทำไมแบรนด์ระดับโลก เลือกให้ห่างไกล
 - https://afarer.com/th/brand/ — {BRAND}
-- https://afarer.com/th/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/th/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/th/cases/ — โปรเจกต์จริง ผลลัพธ์จริง — afarer ในการปฏิบัติจริง
+- https://afarer.com/th/certifications/ — การรับรองคุณภาพ และมาตรฐานการปฏิบัติตามข้อกำหนด
 - https://afarer.com/th/commercial-workboats/
-- https://afarer.com/th/community/ — The afarer Community
-- https://afarer.com/th/contact/ — GET IN TOUCH
-- https://afarer.com/th/custom/ — Design Your Own SUP Board
+- https://afarer.com/th/community/ — ชุมชน afarer
+- https://afarer.com/th/contact/ — ติดต่อเรา
+- https://afarer.com/th/custom/ — ออกแบบบอร์ด SUP ด้วยตัวคุณเอง
 - https://afarer.com/th/disaster-relief/
-- https://afarer.com/th/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/th/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/th/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/th/factory-process/ — Manufacturing Process
-- https://afarer.com/th/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/th/factory/ — Factory & Manufacturing
+- https://afarer.com/th/factory-capacity/ — กำลังการผลิตและผลผลิตประจำปี
+- https://afarer.com/th/factory-equipment/ — เครื่องจักรและอุปกรณ์การผลิต
+- https://afarer.com/th/factory-oem-capability/ — การผลิตแบบ OEM และแบรนด์ส่วนตัว (Private Label)
+- https://afarer.com/th/factory-process/ — กระบวนการผลิตของเรา
+- https://afarer.com/th/factory-quality-lab/ — ห้องปฏิบัติการทดสอบและการประกันคุณภาพ
+- https://afarer.com/th/factory/ — โรงงานของเรา
 - https://afarer.com/th/fishing/
-- https://afarer.com/th/gallery/ — Gallery
-- https://afarer.com/th/guides/ — New to SUP?
-- https://afarer.com/th/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
+- https://afarer.com/th/gallery/ — แกลเลอรี
+- https://afarer.com/th/guides/ — เพิ่งเริ่มเล่น SUP ใช่ไหม?
+- https://afarer.com/th/home/ — ผู้ผลิตเรือยางเป่าลม SUP ระดับพรีเมียม &amp; พันธมิตร OEM
 - https://afarer.com/th/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/th/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/th/hydrodynamic-test-tank/ — ถังทดสอบอุทกพลศาสตร์ — การลากจูงโมเดลจำลองขนาดย่อและการปรับรูปทรงตัวเรือให้เหมาะสม | {SITE}
 - https://afarer.com/th/inflatable-vs-hardboard/
-- https://afarer.com/th/journal/ — Journal
-- https://afarer.com/th/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/th/learn/ — Learn
-- https://afarer.com/th/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/th/journal/ — บล็อก
+- https://afarer.com/th/knowledge/ — ความรู้การสำรวจทางน้ำ
+- https://afarer.com/th/learn/ — เรียนรู้
+- https://afarer.com/th/lifestyle/ — ไลฟ์สไตล์ afarer
 - https://afarer.com/th/maritime-safety-defense/
-- https://afarer.com/th/media/ — Media Center
-- https://afarer.com/th/news/ — News
-- https://afarer.com/th/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/th/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/th/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/th/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/th/quality/ — Performance & Quality Testing
-- https://afarer.com/th/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/th/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/th/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/th/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/th/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/th/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/th/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/th/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/th/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/th/safety/ — Safety Standards & Certification
+- https://afarer.com/th/media/ — ศูนย์สื่อ
+- https://afarer.com/th/news/ — ข่าวสาร
+- https://afarer.com/th/partners/ — ร่วมเป็นพันธมิตรที่ห่างไกล —เครือข่ายการจัดจำหน่ายทั่วโลก
+- https://afarer.com/th/prototype-workshop/ — เวิร์กชอปต้นแบบ —การทำต้นแบบ RIB ขนาดจริงและการทดลองใช้งานบนน้ำ | {SITE}
+- https://afarer.com/th/pvc-fabric-lab/ — ห้องปฏิบัติการผ้า PVC — การทดสอบวัสดุสำหรับเรือเป่าลม | {SITE}
+- https://afarer.com/th/quality-inspection-lab/ — ห้องปฏิบัติการคุณภาพและการตรวจสอบ — การทดสอบและการรับรอง RIB ตามมาตรฐาน ISO | {SITE}
+- https://afarer.com/th/quality/ — การทดสอบประสิทธิภาพและคุณภาพ
+- https://afarer.com/th/randdcenter/ — ศูนย์ R&D | {SITE}
+- https://afarer.com/th/request-quotation/ — ขอใบเสนอราคา สำหรับโครงการของคุณ
+- https://afarer.com/th/research-ce-certification/ — การรับรอง CE สำหรับเรือเป่าลมทำงานอย่างไร | {SITE}
+- https://afarer.com/th/research-drop-stitch/ — หลักการทำงานของ Drop Stitch — วิศวกรรมเบื้องหลังแกนแข็งแบบเป่าลม | {SITE}
+- https://afarer.com/th/research-oem-buyer-guide/ — คู่มือผู้ซื้อ OEM —การจัดหาเรือเป่าลมจากเอเชีย | {SITE}
+- https://afarer.com/th/research-pvc-vs-hypalon/ — PVC กับ Hypalon —การเปรียบเทียบเชิงเทคนิคสำหรับเรือยาง | {SITE}
+- https://afarer.com/th/research-sup-thickness/ — วิธีเลือกความหนาของบอร์ด SUP — บทวิเคราะห์ทางวิศวกรรม | {SITE}
+- https://afarer.com/th/resources/ — ทรัพยากรและไฟล์ดาวน์โหลดสำหรับ B2B | {SITE}
+- https://afarer.com/th/rf-welding/ — ศูนย์เชื่อม RF — การยึดติดด้วยคลื่นไดอิเล็กทริกเพื่อตะเข็บกันอากาศ | {SITE}
+- https://afarer.com/th/safety/ — มาตรฐานความปลอดภัยและการรับรอง
 - https://afarer.com/th/search-and-rescue/
-- https://afarer.com/th/size-guide/ — Size & Specs Guide
-- https://afarer.com/th/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/th/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/th/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/th/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/th/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/th/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/th/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/th/technology/ — Built for Performance
+- https://afarer.com/th/size-guide/ — คู่มือขนาดและข้อมูลจำเพาะ
+- https://afarer.com/th/solutions-build-your-own-brand/ — การผลิต SUP แบบ Private Label | {SITE}
+- https://afarer.com/th/solutions-distributors/ — โปรแกรมพันธมิตรตัวแทนจำหน่าย SUP | {SITE}
+- https://afarer.com/th/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/th/solutions-rental-operators/ — โซลูชันกองเรือเช่า SUP | {SITE}
+- https://afarer.com/th/solutions-resorts-hotels/ — โซลูชั่นกองเรือ SUP สำหรับรีสอร์ท | {SITE}
+- https://afarer.com/th/solutions-retail-partners/ — โปรแกรมพันธมิตรค้าปลีก SUP | {SITE}
+- https://afarer.com/th/solutions/ — โซลูชันซัพ สำหรับทุกธุรกิจ
+- https://afarer.com/th/technology/ — สร้างเพื่อประสิทธิภาพ
 - https://afarer.com/th/tourism-recreation/
-- https://afarer.com/th/trust/ — Trust afarer
+- https://afarer.com/th/trust/ — เชื่อมั่นใน afarer
 - https://afarer.com/th/warranty/
 - https://afarer.com/th/what-is-sup/
 - https://afarer.com/tourism-recreation/
-- https://afarer.com/tr/about/ — Marine engineering, built the <span class="text-accent dark:text-white">afarer</span> way
-- https://afarer.com/tr/academy/ — Learning Center
-- https://afarer.com/tr/afarer-story/ — afarer —Engineering Freedom On Water
-- https://afarer.com/tr/b2b-solutions-matrix/ — B2B Client Solutions Matrix | {SITE}
-- https://afarer.com/tr/brand-global-presence/ — Serving 50+ Countries Across Every Continent
-- https://afarer.com/tr/brand-marine-expertise/ — Decades of Marine Engineering in Every Hull
-- https://afarer.com/tr/brand-team/ — The People Behind afarer —Engineering Freedom on Water
-- https://afarer.com/tr/brand-why-afarer/ — Seven Reasons Why Global Brands Choose afarer
+- https://afarer.com/tr/about/ — Deniz mühendisliğini <span class="text-accent dark:text-white">afarer</span> tarzıyla buluşturuyoruz
+- https://afarer.com/tr/academy/ — Bilgi Merkezi
+- https://afarer.com/tr/afarer-story/ — afarer —Suda Mühendislik Özgürlüğü
+- https://afarer.com/tr/b2b-solutions-matrix/ — B2B Müşteri Çözüm Matrisi | {SITE}
+- https://afarer.com/tr/brand-global-presence/ — Her Kıtada 50'den Fazla Ülkeye Hizmet Veriyoruz
+- https://afarer.com/tr/brand-marine-expertise/ — Her Gövdede Onlarca Yıllık Gemi Mühendisliği
+- https://afarer.com/tr/brand-team/ — Uzaktaki İnsanlar —Suda Mühendislik Özgürlüğü
+- https://afarer.com/tr/brand-why-afarer/ — Küresel Markaların Daha Uzakları Seçmesinin Yedi Nedeni
 - https://afarer.com/tr/brand/ — {BRAND}
-- https://afarer.com/tr/cases/ — Real Projects, Real Results —afarer in Action
-- https://afarer.com/tr/certifications/ — Quality Certifications & Compliance Standards
+- https://afarer.com/tr/cases/ — Gerçek projeler, gerçek sonuçlar —afarer iş başında
+- https://afarer.com/tr/certifications/ — Kalite Sertifikaları & Uyumluluk Standartları
 - https://afarer.com/tr/commercial-workboats/
-- https://afarer.com/tr/community/ — The afarer Community
-- https://afarer.com/tr/contact/ — GET IN TOUCH
-- https://afarer.com/tr/custom/ — Design Your Own SUP Board
+- https://afarer.com/tr/community/ — afarer Topluluğu
+- https://afarer.com/tr/contact/ — BİZE ULAŞIN
+- https://afarer.com/tr/custom/ — Kendi teknenizi tasarlayın
 - https://afarer.com/tr/disaster-relief/
-- https://afarer.com/tr/factory-capacity/ — Manufacturing Capacity & Annual Output
-- https://afarer.com/tr/factory-equipment/ — Manufacturing Equipment & Machinery
-- https://afarer.com/tr/factory-oem-capability/ — OEM & Private Label Manufacturing
-- https://afarer.com/tr/factory-process/ — Manufacturing Process
-- https://afarer.com/tr/factory-quality-lab/ — Testing Laboratory & Quality Assurance
-- https://afarer.com/tr/factory/ — Factory & Manufacturing
+- https://afarer.com/tr/factory-capacity/ — Üretim Kapasitesi ve Yıllık Üretim
+- https://afarer.com/tr/factory-equipment/ — İmalat Ekipmanları ve Makineleri
+- https://afarer.com/tr/factory-oem-capability/ — OEM ve Private Label Üretimi
+- https://afarer.com/tr/factory-process/ — Üretim Süreci
+- https://afarer.com/tr/factory-quality-lab/ — Test Laboratuvarı ve Kalite Güvencesi
+- https://afarer.com/tr/factory/ — Fabrika ve Üretim
 - https://afarer.com/tr/fishing/
-- https://afarer.com/tr/gallery/ — Gallery
-- https://afarer.com/tr/guides/ — New to SUP?
-- https://afarer.com/tr/home/ — Premium Inflatable SUP Manufacturer &amp; OEM Partner
-- https://afarer.com/tr/hull-engineering/ — Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
-- https://afarer.com/tr/hydrodynamic-test-tank/ — Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}
+- https://afarer.com/tr/gallery/ — Galeri
+- https://afarer.com/tr/guides/ — SUP'a yeni mi başladınız?
+- https://afarer.com/tr/home/ — Su için tasarlandı. <br class="hidden sm:inline" /> <span class="text-accent dark:text-white">Denizde yaşamak</span> için üretildi.
+- https://afarer.com/tr/hull-engineering/ — Gövde Mühendisliği Stüdyosu — CAD, FEA ve Özel RIB Gövde Tasarımı | {SITE}
+- https://afarer.com/tr/hydrodynamic-test-tank/ — Hidrodinamik Test Tankı — Ölçekli Model Çekme ve Gövde Optimizasyonu | {SITE}
 - https://afarer.com/tr/inflatable-vs-hardboard/
-- https://afarer.com/tr/journal/ — Journal
-- https://afarer.com/tr/knowledge/ — Water Exploration Knowledge
-- https://afarer.com/tr/learn/ — Learn
-- https://afarer.com/tr/lifestyle/ — The afarer Lifestyle
+- https://afarer.com/tr/journal/ — afarer Günlüğü
+- https://afarer.com/tr/knowledge/ — Su Keşif Bilgisi
+- https://afarer.com/tr/learn/ — Öğrenin
+- https://afarer.com/tr/lifestyle/ — afarer Yaşam Tarzı
 - https://afarer.com/tr/maritime-safety-defense/
-- https://afarer.com/tr/media/ — Media Center
-- https://afarer.com/tr/news/ — News
-- https://afarer.com/tr/partners/ — Become an afarer Partner —Global Distribution Network
-- https://afarer.com/tr/prototype-workshop/ — Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}
-- https://afarer.com/tr/pvc-fabric-lab/ — PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}
-- https://afarer.com/tr/quality-inspection-lab/ — Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}
-- https://afarer.com/tr/quality/ — Performance & Quality Testing
-- https://afarer.com/tr/randdcenter/ — R&D Center | {SITE}
-- https://afarer.com/tr/request-quotation/ — Request a Quotation for Your Project
-- https://afarer.com/tr/research-ce-certification/ — How CE Certification Works for Inflatable Watercraft | {SITE}
-- https://afarer.com/tr/research-drop-stitch/ — How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}
-- https://afarer.com/tr/research-oem-buyer-guide/ — OEM Buyer Guide — Sourcing Inflatable Watercraft from Asia | {SITE}
-- https://afarer.com/tr/research-pvc-vs-hypalon/ — PVC vs Hypalon — Technical Comparison for Inflatable Boats | {SITE}
-- https://afarer.com/tr/research-sup-thickness/ — How to Choose SUP Thickness — Engineering Analysis | {SITE}
-- https://afarer.com/tr/resources/ — B2B Resources & Downloads | {SITE}
-- https://afarer.com/tr/rf-welding/ — RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}
-- https://afarer.com/tr/safety/ — Safety Standards & Certification
+- https://afarer.com/tr/media/ — Medya Merkezi
+- https://afarer.com/tr/news/ — Haberler
+- https://afarer.com/tr/partners/ — Daha Uzak Bir İş Ortağı Olun —Küresel Dağıtım Ağı
+- https://afarer.com/tr/prototype-workshop/ — Prototip Atölyesi — Tam Ölçekli RIB Prototipleme ve Deniz Denemeleri | {SITE}
+- https://afarer.com/tr/pvc-fabric-lab/ — PVC Kumaş Laboratuvarı → Şişirilebilir Botlar İçin Malzeme Testi | {SITE}
+- https://afarer.com/tr/quality-inspection-lab/ — Kalite ve Denetim Laboratuvarı — Uyumlu RIB Test ve Sertifikalandırma | {SITE}
+- https://afarer.com/tr/quality/ — Performans ve Kalite Testleri
+- https://afarer.com/tr/randdcenter/ — Ar-Ge Merkezi | {SITE}
+- https://afarer.com/tr/request-quotation/ — Projeniz için Teklif İsteyin
+- https://afarer.com/tr/research-ce-certification/ — Şişirilebilir Teknelerde CE Sertifikasyonu Nasıl Çalışır | {SITE}
+- https://afarer.com/tr/research-drop-stitch/ — Drop-Stitch Nasıl Çalışır — Şişirilebilir Sert Çekirdeklerin Arkasındaki Mühendislik | {SITE}
+- https://afarer.com/tr/research-oem-buyer-guide/ — OEM Satın Alma Kılavuzu — Asya'dan Şişirilebilir Su Araçları Temini | {SITE}
+- https://afarer.com/tr/research-pvc-vs-hypalon/ — PVC ve Hypalon → Şişirilebilir Botlar İçin Teknik Karşılaştırma | {SITE}
+- https://afarer.com/tr/research-sup-thickness/ — SUP Kalınlığı Nasıl Seçilir — Mühendislik Analizi | {SITE}
+- https://afarer.com/tr/resources/ — B2B Kaynakları ve İndirmeler | {SITE}
+- https://afarer.com/tr/rf-welding/ — RF Kaynak Merkezi — Hava Geçirmez Dikişler için Dielektrik Bağlama | {SITE}
+- https://afarer.com/tr/safety/ — Güvenlik Standartları ve Sertifikasyon
 - https://afarer.com/tr/search-and-rescue/
-- https://afarer.com/tr/size-guide/ — Size & Specs Guide
-- https://afarer.com/tr/solutions-build-your-own-brand/ — Private Label SUP Manufacturing | {SITE}
-- https://afarer.com/tr/solutions-distributors/ — SUP Distribution Partner Program | {SITE}
-- https://afarer.com/tr/solutions-paddle-clubs/ — Paddle Club SUP Equipment & Fleet Solutions | {SITE}
-- https://afarer.com/tr/solutions-rental-operators/ — SUP Rental Fleet Solutions | {SITE}
-- https://afarer.com/tr/solutions-resorts-hotels/ — Resort SUP Fleet Solutions | {SITE}
-- https://afarer.com/tr/solutions-retail-partners/ — SUP Retail Partner Program | {SITE}
-- https://afarer.com/tr/solutions/ — SUP Solutions For Every Business
-- https://afarer.com/tr/technology/ — Built for Performance
+- https://afarer.com/tr/size-guide/ — Beden ve Özellik Rehberi
+- https://afarer.com/tr/solutions-build-your-own-brand/ — Private Label SUP Üretimi | {SITE}
+- https://afarer.com/tr/solutions-distributors/ — SUP Distribütörlük Programı | {SITE}
+- https://afarer.com/tr/solutions-paddle-clubs/ — Paddle Club Fleet Solutions | {SITE}
+- https://afarer.com/tr/solutions-rental-operators/ — SUP Kiralama Filo Çözümleri | {SITE}
+- https://afarer.com/tr/solutions-resorts-hotels/ — Tatil Köyü SUP Filo Çözümleri | {SITE}
+- https://afarer.com/tr/solutions-retail-partners/ — SUP Perakende Ortaklık Programı | {SITE}
+- https://afarer.com/tr/solutions/ — Her İş İçin SUP Çözümleri
+- https://afarer.com/tr/technology/ — Teknolojimiz
 - https://afarer.com/tr/tourism-recreation/
-- https://afarer.com/tr/trust/ — Trust afarer
+- https://afarer.com/tr/trust/ — afarer'a Güvenin
 - https://afarer.com/tr/warranty/
 - https://afarer.com/tr/what-is-sup/
 - https://afarer.com/trust/ — Trust afarer

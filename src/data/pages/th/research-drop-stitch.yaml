@@ -1,70 +1,85 @@
 meta:
-  title: 'How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores | {SITE}'
-  description: 'Deep dive into drop stitch technology: how thousands of internal threads turn flexible PVC into a rigid, high-pressure core capable of 15-20 PSI. Construction methods, materials, quality indicators, and applications across SUPs, kayaks, and inflatable boats.'
-back_text: 'Back to Research'
-
+  title: หลักการทำงานของ Drop Stitch — วิศวกรรมเบื้องหลังแกนแข็งแบบเป่าลม | {SITE}
+  description: 'เจาะลึกเทคโนโลยี drop stitch: เส้นใยภายในหลายพันเส้นเปลี่ยน PVC ที่ยืดหยุ่นให้กลายเป็นแกนที่แข็งแรงและทนแรงดันสูงได้ถึง 15-20 PSI ได้อย่างไร ครอบคลุมวิธีการก่อสร้าง วัสดุ ตัวชี้วัดคุณภาพ และการประยุกต์ใช้กับซัพ เรือแคนู และเรือเป่าลม'
+back_text: กลับไปยังงานวิจัย
 hero:
-  tagline: 'Technology'
-  title: 'How Drop Stitch Works — The Engineering Behind Inflatable Rigid Cores'
-  subtitle: '8 min read'
+  tagline: เทคโนโลยี
+  title: หลักการทำงานของ Drop Stitch — วิศวกรรมเบื้องหลังแกนแข็งแบบเป่าลม
+  subtitle: อ่าน 8 นาที
+content_html: >
+  <h2>ดรอปสติทช์ (Drop Stitch) คืออะไร?</h2>
 
-content_html: |
-  <h2>What Is Drop Stitch?</h2>
-  <p>Drop stitch (also called "drop-stitch fabric" or "drop-stitch core") is a construction method in which thousands of individual polyester threads connect the top and bottom layers of a fabric shell. When the shell is inflated, these threads act as internal tension members — they prevent the top and bottom panels from bulging outward into a round shape, forcing the panel to remain flat and rigid.</p>
-  <p>The result is a lightweight, portable structure that can withstand 15 – 20 PSI of internal pressure — comparable to the rigidity of a hard-shell board but fully deflatable for storage and transport.</p>
+  <p>ดรอปสติทช์ (เรียกอีกอย่างว่า "ผ้าดรอปสติทช์" หรือ "แกนดรอปสติทช์") เป็นวิธีการก่อสร้างที่เส้นใยโพลีเอสเตอร์หลายพันเส้นเชื่อมต่อชั้นบนและชั้นล่างของเปลือกผ้าเข้าด้วยกัน เมื่อเปลือกผ้าถูกเป่าลม เส้นใยเหล่านี้จะทำหน้าที่เป็นชิ้นส่วนรับแรงดึงภายใน
+  —ป้องกันไม่ให้แผ่นด้านบนและด้านล่างโป่งออกเป็นรูปทรงกลม ทำให้แผ่นยังคงแบนและแข็ง</p>
 
-  <h2>How It Works: The Physics</h2>
-  <p>In a conventional inflatable structure (like a balloon or an air mattress), the internal air pressure pushes equally in all directions. Without internal restraint, the structure becomes cylindrical or spherical. Drop stitch solves this by introducing tensile reinforcement:</p>
+  <p>ผลลัพธ์คือโครงสร้างน้ำหนักเบาที่พกพาได้ ซึ่งสามารถทนแรงดันภายใน 15 – 20 PSI —มีความแข็งเทียบเท่าบอร์ดเปลือกแข็ง แต่สามารถยุบแฟลตเพื่อจัดเก็บและขนส่งได้อย่างสมบูรณ์</p>
+
+
+  <h2>หลักการทำงาน: ฟิสิกส์เบื้องหลัง</h2>
+
+  <p>ในโครงสร้างเป่าลมทั่วไป (เช่น ลูกโป่งหรือที่นอนลม) แรงดันอากาศภายในดันออกเท่ากันทุกทิศทาง หากไม่มีตัวยึดภายใน โครงสร้างจะกลายเป็นทรงกระบอกหรือทรงกลม ดรอปสติทช์แก้ปัญหานี้ด้วยการเพิ่มการเสริมแรงแบบรับแรงดึง:</p>
+
   <ul>
-    <li>Thousands of threads connect the top and bottom fabric layers</li>
-    <li>When inflated, the air pressure tries to push the top and bottom apart</li>
-    <li>The threads resist this separation, transferring the load into tension along the thread axis</li>
-    <li>The result is a flat, rigid panel that resists bending</li>
+    <li>เส้นใยหลายพันเส้นเชื่อมชั้นผ้าด้านบนและด้านล่าง</li>
+    <li>เมื่อเป่าลม แรงดันอากาศจะพยายามดันชั้นบนและชั้นล่างให้แยกออกจากกัน</li>
+    <li>เส้นใยต้านทานการแยกนี้ โดยถ่ายเทแรงให้กลายเป็นแรงดึงตามแนวแกนของเส้นใย</li>
+    <li>ผลลัพธ์คือแผ่นเรียบและแข็งที่ต้านทานการดัดงอ</li>
   </ul>
 
-  <h2>Construction Process</h2>
+
+  <h2>ขั้นตอนการผลิต</h2>
+
   <ol>
-    <li><strong>Weaving:</strong> Polyester threads are woven simultaneously into two separate layers of base fabric (typically 1,100 DTEX or 1,680 DTEX PVC-coated polyester). The threads are loop-woven between the layers at a 90&deg; angle.</li>
-    <li><strong>Coating:</strong> The woven base fabric is coated with PVC (or occasionally TPU) using a knife-coating or calendar-coating process. This seals the threads and creates the air-tight membrane.</li>
-    <li><strong>Layer bonding:</strong> The drop-stitch core is bonded to outer laminated layers (typically 0.9 mm or 1.2 mm PVC) using heat lamination or adhesive.</li>
-    <li><strong>Welding:</strong> Rail bands are welded along the edges using hot air welding, RF welding, or high-frequency welding to create the side walls of the board.</li>
-    <li><strong>Valve installation:</strong> Boston valves or Halkey-Roberts valves are installed, typically with a pressure relief mechanism to prevent over-inflation.</li>
+    <li><strong>การทอ:</strong> เส้นใยโพลีเอสเตอร์ถูกทอพร้อมกันเป็นผ้าฐานสองชั้นแยกกัน (โดยทั่วไปเป็นโพลีเอสเตอร์เคลือบ PVC 1,100 DTEX หรือ 1,680 DTEX) เส้นใยถูกทอเป็นห่วงเชื่อมระหว่างสองชั้นในมุม 90&deg;</li>
+    <li><strong>การเคลือบ:</strong> ผ้าฐานที่ทอแล้วถูกเคลือบด้วย PVC (หรือบางครั้งเป็น TPU) ด้วยกระบวนการเคลือบแบบมีดหรือแบบลูกกลิ้ง ทำให้เส้นใยถูกปิดผนึกและสร้างเมมเบรนที่อากาศรั่วไม่ได้</li>
+    <li><strong>การยึดชั้นวัสดุ:</strong> แกนดรอปสติทช์ถูกยึดเข้ากับชั้นเคลือบด้านนอก (โดยทั่วไปเป็น PVC 0.9 มม. หรือ 1.2 มม.) ด้วยการเคลือบด้วยความร้อนหรือกาว</li>
+    <li><strong>การเชื่อม:</strong> แถบขอบถูกเชื่อมตามขอบด้วยการเชื่อมลมร้อน การเชื่อม RF หรือการเชื่อมความถี่สูง เพื่อสร้างผนังด้านข้างของบอร์ด</li>
+    <li><strong>การติดตั้งวาล์ว:</strong> ติดตั้งวาล์ว Boston หรือวาล์ว Halkey-Roberts โดยทั่วไปพร้อมกลไกระบายแรงดันเพื่อป้องกันการเป่าลมเกิน</li>
   </ol>
 
-  <h2>Key Quality Indicators</h2>
+
+  <h2>ตัวชี้วัดคุณภาพที่สำคัญ</h2>
+
   <table class="w-full text-sm border-collapse">
     <thead>
       <tr class="bg-gray-100">
-        <th class="p-3 text-left font-semibold text-gray-900 border">Parameter</th>
-        <th class="p-3 text-left font-semibold text-gray-900 border">Entry Level</th>
-        <th class="p-3 text-left font-semibold text-gray-900 border">Premium</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">พารามิเตอร์</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">ระดับเริ่มต้น</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">พรีเมียม</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td class="p-3 border">Thread density</td><td class="p-3 border">1 thread / sq in</td><td class="p-3 border">2 threads / sq in</td></tr>
-      <tr><td class="p-3 border">Base fabric</td><td class="p-3 border">1,100 DTEX</td><td class="p-3 border">1,680 DTEX</td></tr>
-      <tr><td class="p-3 border">Max pressure</td><td class="p-3 border">12 – 15 PSI</td><td class="p-3 border">18 – 22 PSI</td></tr>
-      <tr><td class="p-3 border">PVC thickness</td><td class="p-3 border">0.6 – 0.9 mm</td><td class="p-3 border">1.0 – 1.2 mm</td></tr>
-      <tr><td class="p-3 border">Rail construction</td><td class="p-3 border">Folded &amp; glued</td><td class="p-3 border">Welded &amp; fusion-bonded</td></tr>
+      <tr><td class="p-3 border">ความหนาแน่นของเส้นใย</td><td class="p-3 border">1 เส้น / ตร.นิ้ว</td><td class="p-3 border">2 เส้น / ตร.นิ้ว</td></tr>
+      <tr><td class="p-3 border">ผ้าฐาน</td><td class="p-3 border">1,100 DTEX</td><td class="p-3 border">1,680 DTEX</td></tr>
+      <tr><td class="p-3 border">แรงดันสูงสุด</td><td class="p-3 border">12 – 15 PSI</td><td class="p-3 border">18 – 22 PSI</td></tr>
+      <tr><td class="p-3 border">ความหนา PVC</td><td class="p-3 border">0.6 – 0.9 มม.</td><td class="p-3 border">1.0 – 1.2 มม.</td></tr>
+      <tr><td class="p-3 border">โครงสร้างแถบขอบ</td><td class="p-3 border">พับและติดกาว</td><td class="p-3 border">เชื่อมและหลอมยึดติด</td></tr>
     </tbody>
   </table>
 
-  <h2>Applications</h2>
+
+  <h2>การประยุกต์ใช้งาน</h2>
+
   <ul>
-    <li><strong>SUP Boards:</strong> 4" – 6" thickness, 15 – 20 PSI, 1 – 2 threads/sq in</li>
-    <li><strong>Kayaks:</strong> Drop-stitch floor + inflatable side chambers, 10 – 15 PSI floor</li>
-    <li><strong>RIB floors:</strong> Drop-stitch floors for lightweight, packable RIB tenders, 12 – 18 PSI</li>
-    <li><strong>Boat fenders:</strong> Low-pressure drop stitch for shaped fenders with flat faces</li>
+    <li><strong>บอร์ด SUP:</strong> ความหนา 4" – 6", แรงดัน 15 – 20 PSI, เส้นใย 1 – 2 เส้น/ตร.นิ้ว</li>
+    <li><strong>เรือคายัค:</strong> พื้นดรอปสติทช์ + ห้องลมด้านข้างเป่าลม, แรงดันพื้น 10 – 15 PSI</li>
+    <li><strong>พื้น RIB:</strong> พื้นดรอปสติทช์สำหรับเรือเล็ก RIB ที่มีน้ำหนักเบาและพับเก็บได้, แรงดัน 12 – 18 PSI</li>
+    <li><strong>กันชนเรือ:</strong> ดรอปสติทช์แรงดันต่ำสำหรับกันชนรูปทรงที่มีหน้าพื้นเรียบ</li>
   </ul>
 
-  <h2>Drop Stitch vs. Air Deck (Fiberglass or Wood Core)</h2>
-  <p>Hard-shell boards use EPS foam cores with fiberglass or wood stringer reinforcement. They are lighter, stiffer, and more responsive — but they cannot be deflated. Drop stitch trades some rigidity for full portability. For most recreational users, modern drop-stitch SUPs at 20 PSI are indistinguishable from entry-level hard boards in rigidity.</p>
 
-  <h2>How Afarer Uses Drop Stitch</h2>
-  <p>Afarer uses a 1,680 DTEX drop-stitch core across its SUP lineup, with 2 threads per square inch and a 1.2 mm PVC outer laminate. Boards are rated to 20 PSI and undergo a 24-hour pressure hold test at 1.5x rated pressure before shipment. Rail bands are hot-air welded with triple-layer fusion, and pressure relief valves are standard across all models.</p>
+  <h2>ดรอปสติทช์ เทียบกับ เด็คแข็ง (แกนไฟเบอร์กลาสหรือไม้)</h2>
 
+  <p>บอร์ดเปลือกแข็งใช้แกนโฟม EPS พร้อมการเสริมแรงด้วยสตริงเกอร์ไฟเบอร์กลาสหรือไม้ บอร์ดเหล่านี้เบากว่า แข็งกว่า และตอบสนองได้ดีกว่า —แต่ไม่สามารถยุบแฟลตได้ ดรอปสติทช์แลกความแข็งบางส่วนเพื่อความสะดวกในการพกพาอย่างเต็มรูปแบบ สำหรับผู้ใช้เพื่อสันทนาการส่วนใหญ่ SUP ดรอปสติทช์สมัยใหม่ที่แรงดัน 20 PSI
+  มีความแข็งแยกไม่ออกจากบอร์ดแข็งระดับเริ่มต้น</p>
+
+
+  <h2>afarer ใช้ดรอปสติทช์อย่างไร</h2>
+
+  <p>afarer ใช้แกนดรอปสติทช์ 1,680 DTEX ทั่วทั้งไลน์อัป SUP โดยมีเส้นใย 2 เส้นต่อตารางนิ้วและชั้นเคลือบ PVC ภายนอก 1.2 มม. บอร์ดได้รับการรับรองถึง 20 PSI และผ่านการทดสอบการคงแรงดัน 24 ชั่วโมงที่ 1.5 เท่าของแรงดันที่กำหนดก่อนจัดส่ง แถบขอบเชื่อมด้วยลมร้อนแบบหลอมสามชั้น
+  และวาล์วระบายแรงดันเป็นอุปกรณ์มาตรฐานทุกรุ่น</p>
 cta:
-  title: 'Want to learn more about drop stitch?'
-  subtitle: 'Contact us for technical specifications and OEM inquiries.'
-  button_text: 'Contact sales'
+  title: อยากเรียนรู้เพิ่มเติมเกี่ยวกับ Drop Stitch หรือไม่?
+  subtitle: ติดต่อเราเพื่อข้อมูลจำเพาะทางเทคนิคและสอบถามเกี่ยวกับ OEM
+  button_text: ติดต่อฝ่ายขาย
   button_link: /contact

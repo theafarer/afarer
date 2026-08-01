@@ -1,51 +1,48 @@
 meta:
-  title: 'PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}'
-  description: 'Scientific material testing from fibre to finished tube. Tensile strength, UV weathering, low-temperature flexibility, and abrasion resistance for PVC fabrics. Contact our lab team for a custom fabric specification.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: PVC 원단 연구소 — 인플레이터블 보트 소재 시험 | {SITE}
+  description: 섬유부터 완성된 튜브까지 과학적 소재 테스트. PVC 직물의 인장 강도, UV 풍화, 저온 유연성 및 마모 저항성. 맞춤 직물 사양을 위해 우리 실험실 팀에 문의하십시오.
+back_text: R&D 센터로 돌아가기
+home_label: 홈
 hero:
-  tagline: 'Lab 01'
-  title: 'PVC Fabric Lab'
-  subtitle: 'Scientific material testing — from fibre to finished tube'
-  image: 'https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp'
-  image_alt: 'Afarer PVC fabric material testing laboratory'
+  tagline: 연구소 01
+  title: PVC 원단 연구소
+  subtitle: 과학적 소재 시험 — 원사에서 완성 튜브까지
+  image: https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp
+  image_alt: afarer PVC 원단 자재 테스트 실험실
+intro: 튜브 원단은 인플레이션 보트에서 가장 중요한 소재입니다. 지속적인 UV 노출, 반복적인 공기 충전 주기, 부두 및 잔해물과의 마찰, 극심한 온도 변화를 견디면서도 수년간 구조적 무결성을 유지해야 합니다. {SITE.name}에서는 보트 제작에 사용되는 모든 원단의 특성 분석, 검증 및 지속적 개선에 전념하는 PVC 원단 연구소를 운영하고 있습니다.
+content_html: |-
+  <h2>팽창식 보트의 기반이 될 건설</h2>
+  <p>공급자 데이터 시트에만 의존하지 않습니다. 공방에 입고되는 모든 PVC 및 Hypalon 원단은 내부 시험소에서 독립적으로 테스트를 받습니다. 이는 자사가 발표하는 소재 사양과 고객이 실제로 수령하는 소재 성능이 일관되게 일치함을 보장합니다.</p>
 
-intro: 'The tube fabric is the single most critical material in an inflatable boat. It must withstand constant UV exposure, repeated inflation cycles, abrasion against docks and debris, and extreme temperature swings — all while maintaining its structural integrity for years. At {SITE.name}, our PVC Fabric Lab is dedicated exclusively to the characterisation, validation, and continuous improvement of the fabrics we use in every boat we build.'
-
-content_html: |
-  <h2>The foundation of every inflatable boat</h2>
-  <p>We do not rely solely on supplier data sheets. Every batch of PVC and Hypalon fabric that enters our workshop is independently tested in-house. This guarantees that the material specification we publish is the material performance you receive — lot after lot, year after year.</p>
-
-  <h2>Standardised testing equipment</h2>
-  <p>Our fabric lab is equipped with industrial-grade instruments that conform to ISO, ASTM, and EN test methods:</p>
+  <h2>표준화된 시험 장비</h2>
+  <p>원단 연구소는 ISO, ASTM 및 EN 시험 방법에 부합하는 산업 등급 장비를 갖추고 있습니다:</p>
   <table>
-    <thead><tr><th>Equipment</th><th>Parameters Measured</th><th>Standard</th></tr></thead>
+    <thead><tr><th>장비</th><th>측정 변수</th><th>표준</th></tr></thead>
     <tbody>
-      <tr><td>Universal tensile tester (50 kN)</td><td>Breaking force, elongation at break, tear propagation</td><td>ISO 1421 / ASTM D751</td></tr>
-      <tr><td>Xenon-arc weathering chamber</td><td>UV resistance (colour change, strength retention after 2000 h)</td><td>ISO 4892 / ASTM G155</td></tr>
-      <tr><td>Low-temperature flex tester</td><td>Crack point at -30 °C to -50 °C</td><td>ISO 4675 / ASTM D2136</td></tr>
-      <tr><td>Taber abrasion tester</td><td>Weight loss after 1000 cycles (CS-10 wheel)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
-      <tr><td>Thickness gauge (digital, 0.001 mm resolution)</td><td>Uniformity across roll width</td><td>ISO 2286-3</td></tr>
-      <tr><td>Hydrostatic head tester</td><td>Water penetration resistance</td><td>ISO 811</td></tr>
+      <tr><td>범용 인장 시험기 (50 kN)</td><td>파괴 하중, 파괴 시 연신율, 파괴 전파</td><td>ISO 1421 / ASTM D751</td></tr>
+      <tr><td>ksenon-arc 내후성 챔버</td><td>내UV성 (색상 변화, 2000시간 후 강도 유지율)</td><td>ISO 4892 / ASTM G155</td></tr>
+      <tr><td>저온 예비 시험기</td><td>-30 °C부터 -50 °C까지 균열점</td><td>ISO 4675 / ASTM D2136</td></tr>
+      <tr><td>Taber 마모 시험기</td><td>1000회 (CS-10 휠) 후 중량 감소</td><td>ASTM D3389 / ISO 5470-1</td></tr>
+      <tr><td>두께 게이지 (디지털, 0.001 mm 해상도)</td><td>포괄 범위 균일도</td><td>ISO 2286-3</td></tr>
+      <tr><td>수두 저항 시험기</td><td>수분 침투 저항</td><td>ISO 811</td></tr>
     </tbody>
   </table>
-  <p class="text-sm text-gray-500">* All equipment is calibrated annually by third-party accredited laboratories.</p>
+  <p class="text-sm text-gray-500">* 모든 장비는 제3자 공인 시험소에 의해 연간 교정됩니다.</p>
 
-  <h2>From data to decision: a typical test workflow</h2>
-  <p>When a new fabric candidate arrives, it follows a standardised seven-step qualification process:</p>
+  <h2>데이터에서 결정으로: 표준 시험 워크플로</h2>
+  <p>새로운 원단 후보가 입고되면, 표준화된 7단계 자격 인증 과정을 거칩니다:</p>
   <ol>
-    <li><strong>Receipt inspection</strong> — visual check for surface defects, pinholes, and dimensional compliance.</li>
-    <li><strong>Thickness mapping</strong> — 20-point measurement across the roll; CV &lt; 3% is required for acceptance.</li>
-    <li><strong>Tensile testing</strong> — 5 specimens in warp and weft directions. Minimum 3500 N/50 mm for 1100 dtex PVC.</li>
-    <li><strong>UV conditioning</strong> — 1000 h exposure in xenon-arc chamber; minimum 80 % strength retention required.</li>
-    <li><strong>Cold crack</strong> — 4 h at -35 °C, then 180° bend over a 25 mm mandrel. No visible cracking.</li>
-    <li><strong>Abrasion resistance</strong> — 1000 cycles, weight loss ≤ 0.05 g.</li>
-    <li><strong>Approval sign-off</strong> — only after all seven gates are passed is the fabric released for production.</li>
+    <li><strong>입고 검사</strong> — 표면 결점, 핀홀 및 치수 적합성 육안 검사.</li>
+    <li><strong>두께 매핑</strong> — 포괄 범위 20점 측정; 합격 기준 CV &lt; 3%.</li>
+    <li><strong>인장 시험</strong> — 경사방향 및 위프방향 시편 5개. 1100 dtex PVC의 경우 최소 3500 N/50 mm.</li>
+    <li><strong>UV 공급</strong> — xenon-arc 챔버에서 1000시간 노출; 최소 80% 강도 유지율 필요.</li>
+    <li><strong>저온 균열</strong> — -35°C에서 4시간 후 25 mm 마ัน드릴 위에서 180° 굽힘. 눈에 보이는 균열 없음.</li>
+    <li><strong>내마모성</strong> — 1000회, 중량 감소 ≤ 0.05 g.</li>
+    <li><strong>승인 확정</strong> — 7단계를 모두 통과해야만 원단이 생산에 투입됩니다.</li>
   </ol>
 
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typical PVC 1100 dtex — Tensile Retention After UV Exposure</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">표준 PVC 1100 dtex — UV 노출 후 인장 강도 유지율</p>
     <div class="flex items-end gap-3 h-40">
       <div class="flex-1 flex flex-col items-center">
         <div class="w-full bg-blue-600 rounded-t" style="height:100%"></div>
@@ -65,38 +62,37 @@ content_html: |
       </div>
       <div class="flex-1 flex flex-col items-center">
         <div class="w-full bg-gray-300 rounded-t" style="height:65%"></div>
-        <span class="text-xs mt-1">Competitor<br />~65%</span>
+        <span class="text-xs mt-1">경쟁사<br />~65%</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">Our PVC 1100 dtex fabric retains &gt; 80 % tensile strength after 2000 h xenon-arc exposure, compared to typical industry grades that drop below 70 %.</p>
+    <p class="text-xs text-gray-400 mt-2">PVC 1100 dtex 원단은 2000시간 xenon-arc 노출 후 > 80% 인장 강도를 유지하며, 이는 70% 이하로 떨어지는 업계 표준 등급과 대조됩니다.</p>
   </div>
 
-  <h2>Our professional team</h2>
-  <p>The lab is staffed by two full-time material engineers, each holding a degree in polymer science or textile engineering with a minimum of six years of industry experience. They are supported by three technicians who perform day-to-day testing and data logging. The team regularly participates in inter-laboratory round-robin trials organised by the International Organization for Standardization (ISO) to validate the accuracy of our test methods.</p>
+  <h2>전문 팀</h2>
+  <p>연구소는 고분자 공학 또는 섬유 공학 학위를 보유하고 최소 6년 이상의 산업 경력을 가진 두 명의 정규직 소재 엔지니어가 담당합니다. 이들은 일상적인 시험 및 데이터 기록을 수행하는 세 명의 기술자 지원을 받습니다. 팀은 국제표준화기구 (ISO)가 주관하는 시험소 간 상호비교 시험에 정기적으로 참여하여 자사 시험 방법의 정확성을 검증합니다.</p>
 
-  <h2>Solving your toughest material challenges</h2>
-  <p>Every marine environment is different. A patrol boat operating in the Persian Gulf faces vastly different UV and temperature conditions than a rescue craft in the North Sea. Our Fabric Lab helps you select — or develop — a fabric specification that is optimised for your operating profile.</p>
-  <p>Recent custom solutions include:</p>
+  <h2>가장 어려운 소재 문제를 해결</h2>
+  <p>모든 해양 환경은 다릅니다. 페르시아만에서 운용하는 순찰 보트는 북해의 구조 선박과 비교할 수 없이 다른 UV 및 온도 조건에 직면합니다. 원단 연구소는 귀사의 운용 프로파일에 최적화된 원단 사양을 선택하거나 개발하는 데 도움을 드립니다.</p>
+  <p>최근 맞춤 솔루션 사례:</p>
   <ul>
-    <li>A high-abrasion PVC blend for a military client whose boats regularly beach on coral reefs (+40 % abrasion life).</li>
-    <li>A low-temperature Hypalon formulation for an Arctic research station, tested to -50 °C without embrittlement.</li>
-    <li>A colour-stabilised orange fabric for a search-and-rescue fleet, maintaining visibility after 3 years of tropical sun exposure.</li>
+    <li>산호초에 정기적으로 좌초하는 군용 보트용 고내마모 PVC 혼합물 (+40% 마모 수명).</li>
+    <li>북극 연구소를 위한 저온 Hyplon 수식, -50°C에서 취화 없이 시험 완료.</li>
+    <li>검색 및 구조 함대용 색상 안정화 오렌지 원단, 3년간의 열대 일사 노출 후에도 가시성 유지.</li>
   </ul>
-  <p>We do not sell "off-the-shelf" fabrics and hope they work. We test, validate, and recommend — or create — a tailored solution for your specific mission profile. That is the {SITE.name} difference.</p>
+  <p>자사는 " 범용 원단"을 판매하여 효과가 있기를 바라지 않습니다. 시험하고, 검증하고, 추천하거나 — 귀사의 특정 임무 프로파일에 맞는 맞춤 솔루션을 만듭니다. 이것이 {SITE.name}의 차이점입니다.</p>
 
-  <h2>How we serve you</h2>
-  <p>When you bring a material challenge to us, here is what you can expect:</p>
+  <h2>어떻게 보여드리는지</h2>
+  <p>소재 문제를 가지고 오시면, 다음을 기대하실 수 있습니다:</p>
   <ol>
-    <li><strong>Consultation</strong> — we discuss your operating environment, performance targets, and budget.</li>
-    <li><strong>Proposal</strong> — a test plan is drafted with clear pass/fail criteria and a timeline.</li>
-    <li><strong>Execution</strong> — our lab runs the tests and produces a detailed report with raw data and comparative analysis.</li>
-    <li><strong>Recommendation</strong> — we present a fabric specification, including alternative options if multiple materials meet your requirements.</li>
-    <li><strong>Follow-up</strong> — after delivery, we remain available to support any in-service material questions.</li>
+    <li><strong>상담</strong> — 운용 환경, 성능 목표 및 예산을 논의합니다.</li>
+    <li><strong>제안</strong> — 확인된 합격/불합격 기준 및 일정과 함께 시험 계획을 작성합니다.</li>
+    <li><strong>실행</strong> — 자사 연구소에서 시험을 수행하고 원시 데이터 및 비교 분석을 포함한 상세 보고서를 제공합니다.</li>
+    <li><strong>권고</strong> — 원단 사양을 제시하며, 여러 소재가 귀사의 요건을 충족하는 경우 대안 옵션도 포함합니다.</li>
+    <li><strong>사후 관리</strong> — 납품 후에도 운용 중 소재 관련 질문에 대한 지원을 지속적으로 제공합니다.</li>
   </ol>
-  <p>Our goal is not simply to sell you a boat. It is to ensure that the boat you receive performs reliably in the conditions you operate in — and that starts with the fabric.</p>
-
+  <p>자사의 목표는 단순히 보트를 판매하는 것이 아닙니다. 고객이 수령한 보트가 운용 조건에서 안정적으로 성능을 발휘할 수 있도록 보장하는 것이며, 그 시작은 원단에서 비롯됩니다.</p>
 cta:
-  title: 'Need a custom fabric specification?'
-  subtitle: 'Contact our material engineering team to discuss your requirements.'
-  button_text: 'Contact our lab team'
+  title: 맞춤형 직물 사양이 필요하십니까?
+  subtitle: 요구사항을 논의하기 위해 자재 엔지니어링 팀에 문의하세요.
+  button_text: 연구팀에 문의하기
   button_link: /contact

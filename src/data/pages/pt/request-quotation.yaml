@@ -1,9 +1,9 @@
 hero_text:
-  tagline: Get a Quote
+  tagline: Obter um Orçamento
   title: Solicite um Orçamento<br />para seu Projeto
   subtitle: Conte-nos seus requisitos. Respondemos com orçamento detalhado em 2 dias úteis.
 steps2_process:
-  title: How It Works
+  title: Como Funciona
   subtitle: Quatro etapas simples da consulta ao orçamento.
   items:
     - title: 'Etapa 1: Envie seus requisitos'
@@ -19,7 +19,7 @@ steps2_process:
       description: Após aceitação do orçamento, seguimos para produção de amostras ou diretamente para
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
+  tagline: Formulário de Cotação
   title: Fale sobre seu projeto
   subtitle: Todos os campos com * são obrigatórios.
   fields:
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - Centro de Mergulho
+        - Pesca
+        - Turismo Marítimo / Resort
+        - Busca e Resgate
+        - Lanchinha de iate
+        - Embarcação Comercial de Trabalho
+        - Governo / Militar
+        - OEM / Marca Própria
+        - Pessoal / Recreativo
+        - Outro
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
-        - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - Sem preferência
+        - PVC Grau Marinho (1100 dtex)
+        - Hypalon / CSM Premium
+        - Casco de fibra de vidro
+        - Casco de Alumínio
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: por exemplo, motor de popa 60 HP, sem motor, duplo 115 HP
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: por exemplo, cores personalizadas, marca/logo, embalagem, acessórios especiais
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: por exemplo, entrega em até 90 dias
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: Descreva sua aplicação, especificações técnicas ou quaisquer requisitos especiais — inclua desenhos de referência, especificações ou links, se disponíveis
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: Envie sua folha de especificações, desenho ou documento de referência (PDF, DWG, DXF)
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: Envie seu logo ou arte para personalização de marca (AI, EPS, PNG)
 cta:
   title: Prefere discutir por e-mail?
   subtitle: Envie sua consulta diretamente à nossa equipe de vendas. Respondemos em 24 horas.
   actions:
     - variant: primary
-      text: Email us directly
+      text: Envie-nos um e-mail diretamente
       href: /contact

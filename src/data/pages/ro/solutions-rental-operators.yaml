@@ -1,71 +1,66 @@
 meta:
-  title: 'SUP Rental Fleet Solutions | {SITE}'
-  description: 'High-rotation SUP boards engineered for daily rental use. UV-resistant PVC, reinforced seams, quick-dry materials. Scale your rental business with Afarer.'
-
+  title: Soluții pentru flote de închiriere SUP | {SITE}
+  description: Plăci SUP cu rotație ridicată, proiectate pentru utilizare zilnică la închiriere. PVC rezistent la UV, cusături ranforsate, materiale cu uscare rapidă. Dezvoltați-vă afacerea de închiriere cu Afarer.
 hero:
-  tagline: Rental Operators
-  title: 'Scale Your Rental Business<br />With Confidence'
-  subtitle: 'High-rotation SUP boards engineered for daily rental use, 365 days a year. Your revenue never takes a day off.'
+  tagline: Operatori de închiriere
+  title: Extindeți-vă afacerea de închiriere<br />Cu încredere
+  subtitle: Plăci SUP cu rotație ridicată, proiectate pentru închiriere zilnică, 365 de zile pe an. Veniturile dumneavoastră nu iau niciodată o pauză.
   image:
     src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
-    alt: Busy rental kiosk with SUP boards ready for guests
-
+    alt: Chioșc de închiriere aglomerat, cu plăci SUP pregătite pentru clienți
 features:
-  title: Built for the Rental Grind
-  subtitle: 'Every board is engineered for 500+ rental cycles with minimal maintenance.'
+  title: Construit pentru uz intensiv în închirieri
+  subtitle: Fiecare placă este proiectată pentru peste 500 de cicluri de închiriere, cu întreținere minimă.
   items:
-    - title: '500+ Rental Cycles'
-      description: 'Tested to survive daily use in saltwater, sun, and sand.'
-      icon: 'tabler:shield-check'
-    - title: 'UV-Resistant Fabric'
-      description: 'No fading or degradation after 1 year of outdoor storage.'
-      icon: 'tabler:sun'
-    - title: 'Reinforced Seams'
-      description: '3x stronger than standard inflatable board construction.'
-      icon: 'tabler:layers-intersect'
-    - title: 'Quick-Dry Materials'
-      description: 'Boards ready for next rental in under 30 minutes.'
-      icon: 'tabler:droplet'
-    - title: 'Stackable Storage'
-      description: 'Space-saving design — store 40% more boards in the same area.'
-      icon: 'tabler:stack'
-    - title: 'Color-Coded Sizes'
-      description: 'Staff grabs the right board instantly with color-coded sizing.'
-      icon: 'tabler:color-swatch'
-
+    - title: Peste 500 de cicluri de închiriere
+      description: Testate pentru a rezista utilizării zilnice în apă sărată, soare și nisip.
+      icon: tabler:shield-check
+    - title: Țesătură rezistentă la UV
+      description: Fără decolorare sau degradare după 1 an de depozitare în exterior.
+      icon: tabler:sun
+    - title: Cusături ranforsate
+      description: De 3 ori mai rezistentă decât construcția standard a plăcilor gonflabile.
+      icon: tabler:layers-intersect
+    - title: Materiale cu uscare rapidă
+      description: Plăci gata pentru următoarea închiriere în mai puțin de 30 de minute.
+      icon: tabler:droplet
+    - title: Depozitare stivuibilă
+      description: Design care economisește spațiu —stocați cu 40% mai multe plăci în aceeași suprafață.
+      icon: tabler:stack
+    - title: Mărimi codificate pe culori
+      description: Personalul apucă imediat placa potrivită, grație codificării mărimilor pe culori.
+      icon: tabler:color-swatch
 stats:
-  title: Operations Metrics
+  title: Indicatori operaționali
   stats:
-    - title: Board Turnover
-      amount: '< 5 min'
-    - title: Annual Maintenance
-      amount: '~15 min/board'
-    - title: Parts Dispatch
-      amount: '48h'
-    - title: Defect Rate
-      amount: '< 0.5%'
-
+    - title: Rotația plăcilor
+      amount: < 5 min
+    - title: Întreținere anuală
+      amount: ~15 min/placă
+    - title: Expedierea pieselor de schimb
+      amount: 48h
+    - title: Rata defectelor
+      amount: < 0.5%
 fleet_guide:
-  title: Fleet Sizing Guide
-  subtitle: 'Estimate the fleet size and revenue potential for your rental operation.'
+  title: Ghid pentru dimensionarea flotei
+  subtitle: Estimează dimensiunea flotei și potențialul de venit pentru afacerea ta de închirieri.
   tiers:
-    - label: Small Kiosk
-      boards: '15-20'
-      revenue: '$XX,XXX/yr'
-    - label: Mid-Size Operation
-      boards: '30-50'
-      revenue: '$XX,XXX/yr'
-    - label: Large Beach Rental
-      boards: '50-100'
-      revenue: '$XXX,XXX/yr'
-
+    - label: Chioșc mic
+      boards: 15-20
+      revenue: $XX,XXX/yr
+    - label: Operațiune de dimensiuni medii
+      boards: 30-50
+      revenue: $XX,XXX/yr
+    - label: Închiriere pe plajă la scară largă
+      boards: 50-100
+      revenue: $XXX,XXX/yr
 cta:
-  title: 'Ready to scale your rental business?'
-  subtitle: 'Get rental pricing or compare board models for your operation.'
+  title: Sunteți gata să extindeți afacerea dvs. de închiriere?
+  subtitle: Obțineți prețuri pentru închirieri sau comparați modelele de plăci pentru afacerea dumneavoastră.
   actions:
-    - text: 'Get Rental Pricing'
-      href: '/contact?package=rental'
-      variant: 'primary'
-    - text: 'Compare Board Models'
-      href: '/compare'
-      variant: 'secondary'
+    - text: Obțineți tarifele de închiriere
+      href: /contact?package=rental
+      variant: primary
+    - text: Comparați modelele de plăci
+      href: /compare
+      variant: secondary

@@ -1,51 +1,59 @@
 meta:
-  title: 'PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}'
-  description: 'Scientific material testing from fibre to finished tube. Tensile strength, UV weathering, low-temperature flexibility, and abrasion resistance for PVC fabrics. Contact our lab team for a custom fabric specification.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: ห้องปฏิบัติการผ้า PVC — การทดสอบวัสดุสำหรับเรือเป่าลม | {SITE}
+  description: การทดสอบวัสดุเชิงวิทยาศาสตร์ตั้งแต่เส้นใยจนถึงเรือสำเร็จรูป ครอบคลุมความต้านทานแรงดึง ความทนทานต่อสภาพอากาศและรังสี UV ความยืดหยุ่นที่อุณหภูมิต่ำ และความต้านทานการสึกกร่อนของผ้า PVC ติดต่อทีมห้องปฏิบัติการของเราเพื่อขอสเปกผ้าแบบเฉพาะ
+back_text: ย้อนกลับไปยังศูนย์วิจัยและพัฒนา (R&D Center)
+home_label: หน้าแรก
 hero:
-  tagline: 'Lab 01'
-  title: 'PVC Fabric Lab'
-  subtitle: 'Scientific material testing — from fibre to finished tube'
-  image: 'https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp'
-  image_alt: 'Afarer PVC fabric material testing laboratory'
+  tagline: ห้องปฏิบัติการ 01
+  title: ห้องปฏิบัติการผ้า PVC
+  subtitle: การทดสอบวัสดุทางวิทยาศาสตร์ — ตั้งแต่เส้นใยจนถึงท่อยางสำเร็จรูป
+  image: https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp
+  image_alt: ห้องปฏิบัติการทดสอบวัสดุผ้า PVC ของ Afarer
+intro: >-
+  ผ้าสำหรับทำท่อลมคือวัสดุที่สำคัญที่สุดในเรือเป่าลม ต้องทนต่อการสัมผัสรังสี UV อย่างต่อเนื่อง การเป่าลมซ้ำ ๆ การเสียดสีกับท่าเทียบเรือและเศษขยะในน้ำ รวมถึงการเปลี่ยนแปลงอุณหภูมิอย่างรุนแรง — ทั้งหมดในขณะที่ยังคงความแข็งแรงเชิงโครงสร้างเป็นเวลาหลายปี ที่ {SITE.name} ห้องปฏิบัติการผ้า PVC (PVC Fabric
+  Lab) ของเรามุ่งเน้นเฉพาะการระบุคุณลักษณะ การตรวจสอบความถูกต้อง และการพัฒนาอย่างต่อเนื่องของผ้าที่เราใช้ในเรือทุกลำที่เราสร้าง
+content_html: >
+  <h2>รากฐานของเรือเป่าลมทุกลำ</h2>
 
-intro: 'The tube fabric is the single most critical material in an inflatable boat. It must withstand constant UV exposure, repeated inflation cycles, abrasion against docks and debris, and extreme temperature swings — all while maintaining its structural integrity for years. At {SITE.name}, our PVC Fabric Lab is dedicated exclusively to the characterisation, validation, and continuous improvement of the fabrics we use in every boat we build.'
+  <p>เราไม่พึ่งพาเอกสารข้อมูลจากซัพพลายเออร์เพียงอย่างเดียว ผ้า PVC และ Hypalon ทุกชุดที่เข้าสู่โรงงานของเราจะถูกทดสอบอย่างอิสระภายในองค์กรเอง สิ่งนี้รับประกันว่าข้อกำหนดวัสดุที่เราประกาศคือสมรรถนะของวัสดุที่คุณจะได้รับจริง — ทุกล็อต ทุกปี</p>
 
-content_html: |
-  <h2>The foundation of every inflatable boat</h2>
-  <p>We do not rely solely on supplier data sheets. Every batch of PVC and Hypalon fabric that enters our workshop is independently tested in-house. This guarantees that the material specification we publish is the material performance you receive — lot after lot, year after year.</p>
 
-  <h2>Standardised testing equipment</h2>
-  <p>Our fabric lab is equipped with industrial-grade instruments that conform to ISO, ASTM, and EN test methods:</p>
+  <h2>อุปกรณ์ทดสอบที่ได้มาตรฐาน</h2>
+
+  <p>ห้องปฏิบัติการผ้าของเราติดตั้งเครื่องมือเกรดอุตสาหกรรมที่สอดคล้องกับวิธีทดสอบตามมาตรฐาน ISO, ASTM และ EN:</p>
+
   <table>
-    <thead><tr><th>Equipment</th><th>Parameters Measured</th><th>Standard</th></tr></thead>
+    <thead><tr><th>อุปกรณ์</th><th>พารามิเตอร์ที่วัด</th><th>มาตรฐาน</th></tr></thead>
     <tbody>
-      <tr><td>Universal tensile tester (50 kN)</td><td>Breaking force, elongation at break, tear propagation</td><td>ISO 1421 / ASTM D751</td></tr>
-      <tr><td>Xenon-arc weathering chamber</td><td>UV resistance (colour change, strength retention after 2000 h)</td><td>ISO 4892 / ASTM G155</td></tr>
-      <tr><td>Low-temperature flex tester</td><td>Crack point at -30 °C to -50 °C</td><td>ISO 4675 / ASTM D2136</td></tr>
-      <tr><td>Taber abrasion tester</td><td>Weight loss after 1000 cycles (CS-10 wheel)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
-      <tr><td>Thickness gauge (digital, 0.001 mm resolution)</td><td>Uniformity across roll width</td><td>ISO 2286-3</td></tr>
-      <tr><td>Hydrostatic head tester</td><td>Water penetration resistance</td><td>ISO 811</td></tr>
+      <tr><td>เครื่องทดสอบแรงดึงอเนกประสงค์ (50 kN)</td><td>แรงแตกหัก การยืดตัว ณ จุดขาด การแพร่ของรอยฉีกขาด</td><td>ISO 1421 / ASTM D751</td></tr>
+      <tr><td>ตู้ทดสอบสภาพอากาศแบบ Xenon-arc</td><td>ความทนทานต่อ UV (การเปลี่ยนสี การคงความแข็งแรงหลัง 2000 ชั่วโมง)</td><td>ISO 4892 / ASTM G155</td></tr>
+      <tr><td>เครื่องทดสอบการดัดงอที่อุณหภูมิต่ำ</td><td>จุดแตกที่อุณหภูมิ -30 °C ถึง -50 °C</td><td>ISO 4675 / ASTM D2136</td></tr>
+      <tr><td>เครื่องทดสอบการสึกกร่อนแบบ Taber</td><td>การสูญเสียน้ำหนักหลัง 1000 รอบ (ล้อ CS-10)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
+      <tr><td>เครื่องวัดความหนา (ดิจิทัล ความละเอียด 0.001 มม.)</td><td>ความสม่ำเสมอตลอดความกว้างของม้วนผ้า</td><td>ISO 2286-3</td></tr>
+      <tr><td>เครื่องทดสอบแรงดันน้ำแบบ Hydrostatic head</td><td>ความต้านทานการซึมผ่านของน้ำ</td><td>ISO 811</td></tr>
     </tbody>
   </table>
-  <p class="text-sm text-gray-500">* All equipment is calibrated annually by third-party accredited laboratories.</p>
 
-  <h2>From data to decision: a typical test workflow</h2>
-  <p>When a new fabric candidate arrives, it follows a standardised seven-step qualification process:</p>
+  <p class="text-sm text-gray-500">* อุปกรณ์ทั้งหมดได้รับการสอบเทียบเป็นประจำทุกปีโดยห้องปฏิบัติการที่ได้รับการรับรองจากบุคคลที่สาม</p>
+
+
+  <h2>จากข้อมูลสู่การตัดสินใจ: กระบวนการทดสอบโดยทั่วไป</h2>
+
+  <p>เมื่อผ้าใหม่ที่คัดเลือกมาเข้ารับการทดสอบ จะผ่านกระบวนการรับรอง 7 ขั้นตอนตามมาตรฐาน:</p>
+
   <ol>
-    <li><strong>Receipt inspection</strong> — visual check for surface defects, pinholes, and dimensional compliance.</li>
-    <li><strong>Thickness mapping</strong> — 20-point measurement across the roll; CV &lt; 3% is required for acceptance.</li>
-    <li><strong>Tensile testing</strong> — 5 specimens in warp and weft directions. Minimum 3500 N/50 mm for 1100 dtex PVC.</li>
-    <li><strong>UV conditioning</strong> — 1000 h exposure in xenon-arc chamber; minimum 80 % strength retention required.</li>
-    <li><strong>Cold crack</strong> — 4 h at -35 °C, then 180° bend over a 25 mm mandrel. No visible cracking.</li>
-    <li><strong>Abrasion resistance</strong> — 1000 cycles, weight loss ≤ 0.05 g.</li>
-    <li><strong>Approval sign-off</strong> — only after all seven gates are passed is the fabric released for production.</li>
+    <li><strong>การตรวจสอบเมื่อรับเข้า</strong> — การตรวจด้วยสายตาเพื่อหาตำหนิบนผิว รูเข็ม และความสอดคล้องของขนาด</li>
+    <li><strong>การทำแผนที่ความหนา</strong> — วัด 20 จุดตลอดความกว้างของม้วนผ้า โดยต้องมีค่า CV &lt; 3% จึงจะผ่านการยอมรับ</li>
+    <li><strong>การทดสอบแรงดึง</strong> — ตัวอย่างทดสอบ 5 ชิ้นในทิศทางเส้นยืนและเส้นพุ่ง ค่าต่ำสุด 3500 N/50 มม. สำหรับ PVC 1100 dtex</li>
+    <li><strong>การปรับสภาพด้วย UV</strong> — ผ่านการฉายแสงในตู้ Xenon-arc 1000 ชั่วโมง โดยต้องคงความแข็งแรงอย่างน้อย 80 %</li>
+    <li><strong>การทดสอบการแตกที่อุณหภูมิต่ำ</strong> — เก็บที่ -35 °C เป็นเวลา 4 ชั่วโมง จากนั้นงอ 180° ครอบแกนขนาด 25 มม. ต้องไม่พบรอยแตกให้เห็น</li>
+    <li><strong>ความทนทานต่อการสึกกร่อน</strong> — 1000 รอบ การสูญเสียน้ำหนักไม่เกิน 0.05 กรัม</li>
+    <li><strong>การอนุมัติรับรอง</strong> — ผ้าจะถูกปล่อยเข้าสู่การผลิตได้ก็ต่อเมื่อผ่านครบทั้ง 7 ขั้นตอนเท่านั้น</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typical PVC 1100 dtex — Tensile Retention After UV Exposure</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">PVC 1100 dtex ทั่วไป — การคงความแข็งแรงหลังการฉาย UV</p>
     <div class="flex items-end gap-3 h-40">
       <div class="flex-1 flex flex-col items-center">
         <div class="w-full bg-blue-600 rounded-t" style="height:100%"></div>
@@ -65,38 +73,49 @@ content_html: |
       </div>
       <div class="flex-1 flex flex-col items-center">
         <div class="w-full bg-gray-300 rounded-t" style="height:65%"></div>
-        <span class="text-xs mt-1">Competitor<br />~65%</span>
+        <span class="text-xs mt-1">คู่แข่ง<br />~65%</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">Our PVC 1100 dtex fabric retains &gt; 80 % tensile strength after 2000 h xenon-arc exposure, compared to typical industry grades that drop below 70 %.</p>
+    <p class="text-xs text-gray-400 mt-2">ผ้า PVC 1100 dtex ของเราคงความแข็งแรงของแรงดึง &gt; 80 % หลังผ่านการฉายแสง Xenon-arc 2000 ชั่วโมง เทียบกับเกรดทั่วไปในอุตสาหกรรมที่ลดลงต่ำกว่า 70 %</p>
   </div>
 
-  <h2>Our professional team</h2>
-  <p>The lab is staffed by two full-time material engineers, each holding a degree in polymer science or textile engineering with a minimum of six years of industry experience. They are supported by three technicians who perform day-to-day testing and data logging. The team regularly participates in inter-laboratory round-robin trials organised by the International Organization for Standardization (ISO) to validate the accuracy of our test methods.</p>
 
-  <h2>Solving your toughest material challenges</h2>
-  <p>Every marine environment is different. A patrol boat operating in the Persian Gulf faces vastly different UV and temperature conditions than a rescue craft in the North Sea. Our Fabric Lab helps you select — or develop — a fabric specification that is optimised for your operating profile.</p>
-  <p>Recent custom solutions include:</p>
+  <h2>ทีมงานมืออาชีพของเรา</h2>
+
+  <p>ห้องปฏิบัติการมีวิศวกรวัสดุประจำเต็มเวลาสองคน ซึ่งแต่ละคนจบการศึกษาด้านวิทยาศาสตร์พอลิเมอร์หรือวิศวกรรมสิ่งทอ และมีประสบการณ์ในอุตสาหกรรมไม่น้อยกว่าหกปี โดยมีช่างเทคนิคสามคนคอยสนับสนุนการทดสอบประจำวันและการบันทึกข้อมูล ทีมงานเข้าร่วมการทดสอบเปรียบเทียบระหว่างห้องปฏิบัติการ (round-robin)
+  ที่จัดโดยองค์การระหว่างประเทศว่าด้วยการมาตรฐาน (ISO) เป็นประจำ เพื่อยืนยันความแม่นยำของวิธีทดสอบของเรา</p>
+
+
+  <h2>จัดการกับความท้าทายด้านวัสดุที่ยากที่สุดของคุณ</h2>
+
+  <p>สภาพแวดล้อมทางทะเลแต่ละแห่งมีความแตกต่างกัน เรือลาดตระเวนที่ปฏิบัติงานในอ่าวเปอร์เซียเผชิญสภาวะ UV และอุณหภูมิที่แตกต่างอย่างสิ้นเชิงจากเรือกู้ภัยในทะเลเหนือ ห้องปฏิบัติการผ้าของเราช่วยให้คุณเลือก — หรือพัฒนาข้อกำหนดผ้า — ที่ปรับให้เหมาะสมกับรูปแบบการใช้งานของคุณ</p>
+
+  <p>ตัวอย่างโซลูชันสั่งทำพิเศษล่าสุด:</p>
+
   <ul>
-    <li>A high-abrasion PVC blend for a military client whose boats regularly beach on coral reefs (+40 % abrasion life).</li>
-    <li>A low-temperature Hypalon formulation for an Arctic research station, tested to -50 °C without embrittlement.</li>
-    <li>A colour-stabilised orange fabric for a search-and-rescue fleet, maintaining visibility after 3 years of tropical sun exposure.</li>
+    <li>สูตรผสม PVC ที่ทนทานต่อการสึกกร่อนสูงสำหรับลูกค้ากองทัพที่เรือต้องจอดเกยบนแนวปะการังเป็นประจำ (+40 % อายุการใช้งานด้านการสึกกร่อน)</li>
+    <li>สูตร Hypalon สำหรับอุณหภูมิต่ำสำหรับสถานีวิจัยอาร์กติก ซึ่งผ่านการทดสอบที่ -50 °C โดยไม่เปราะแตก</li>
+    <li>ผ้าสีส้มที่คงสีได้ดีสำหรับฝูงเรือค้นหาและกู้ภัย คงความชัดเจนมองเห็นได้ดีหลังโดนแสงแดดเขตร้อนเป็นเวลา 3 ปี</li>
   </ul>
-  <p>We do not sell "off-the-shelf" fabrics and hope they work. We test, validate, and recommend — or create — a tailored solution for your specific mission profile. That is the {SITE.name} difference.</p>
 
-  <h2>How we serve you</h2>
-  <p>When you bring a material challenge to us, here is what you can expect:</p>
+  <p>เราไม่ขายผ้าสำเร็จรูป "ตามท้องตลาด" แล้วหวังว่าจะใช้งานได้ดี เราใช้วิธีทดสอบ ตรวจสอบ และแนะนำ — หรือสร้างโซลูชันที่ปรับแต่งเฉพาะ — ให้เข้ากับรูปแบบภารกิจของคุณ นี่คือความแตกต่างของ {SITE.name}</p>
+
+
+  <h2>เราบริการคุณอย่างไร</h2>
+
+  <p>เมื่อคุณนำความท้าทายด้านวัสดุมาหาเรา นี่คือสิ่งที่คุณจะได้รับ:</p>
+
   <ol>
-    <li><strong>Consultation</strong> — we discuss your operating environment, performance targets, and budget.</li>
-    <li><strong>Proposal</strong> — a test plan is drafted with clear pass/fail criteria and a timeline.</li>
-    <li><strong>Execution</strong> — our lab runs the tests and produces a detailed report with raw data and comparative analysis.</li>
-    <li><strong>Recommendation</strong> — we present a fabric specification, including alternative options if multiple materials meet your requirements.</li>
-    <li><strong>Follow-up</strong> — after delivery, we remain available to support any in-service material questions.</li>
+    <li><strong>การปรึกษา</strong> — เราหารือเกี่ยวกับสภาพแวดล้อมการใช้งาน เป้าหมายสมรรถนะ และงบประมาณของคุณ</li>
+    <li><strong>ข้อเสนอ</strong> — จัดทำแผนการทดสอบพร้อมเกณฑ์ผ่าน/ไม่ผ่านที่ชัดเจนและกรอบเวลา</li>
+    <li><strong>การดำเนินการ</strong> — ห้องปฏิบัติการของเราดำเนินการทดสอบและจัดทำรายงานโดยละเอียดพร้อมข้อมูลดิบและการวิเคราะห์เปรียบเทียบ</li>
+    <li><strong>คำแนะนำ</strong> — เรานำเสนอข้อกำหนดผ้าที่เหมาะสม รวมถึงตัวเลือกอื่น ๆ หากมีวัสดุหลายชนิดที่ตรงตามความต้องการของคุณ</li>
+    <li><strong>การติดตามผล</strong> — หลังการส่งมอบ เรายังคงพร้อมให้การสนับสนุนสำหรับคำถามด้านวัสดุระหว่างการใช้งาน</li>
   </ol>
-  <p>Our goal is not simply to sell you a boat. It is to ensure that the boat you receive performs reliably in the conditions you operate in — and that starts with the fabric.</p>
 
+  <p>เป้าหมายของเราไม่ใช่เพียงแค่ขายเรือให้คุณ แต่คือการทำให้แน่ใจว่าเรือที่คุณได้รับจะทำงานได้อย่างน่าเชื่อถือในสภาพการใช้งานของคุณ — และจุดเริ่มต้นนั้นอยู่ที่ผ้า</p>
 cta:
-  title: 'Need a custom fabric specification?'
-  subtitle: 'Contact our material engineering team to discuss your requirements.'
-  button_text: 'Contact our lab team'
+  title: ต้องการสเปกผ้าใบตามกำหนดหรือไม่?
+  subtitle: ติดต่อทีมวิศวกรรมวัสดุของเราเพื่อหารือเกี่ยวกับความต้องการของคุณ
+  button_text: ติดต่อทีมห้องปฏิบัติการของเรา
   button_link: /contact

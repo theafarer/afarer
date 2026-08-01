@@ -1,6 +1,6 @@
 hero_text:
-  tagline: Contact
-  title: GET IN TOUCH
+  tagline: ติดต่อเรา
+  title: ติดต่อเรา
 contact_form:
   id: form
   title: ส่งข้อความถึงเรา
@@ -17,7 +17,7 @@ contact_form:
       label: ชื่อ
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: ประเทศ
       step: 1
     - name: lastName
       label: นามสกุล
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
+          label: เลือกปริมาณโดยประมาณของคุณ...
+        - value: ตัวอย่าง
+          label: เฉพาะตัวอย่าง / ต้นแบบเท่านั้น
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5–10 ลำ (MOQ มาตรฐาน)
         - value: 100-500
-          label: 100–500 units
-        - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 100–500 หน่วย
+        - value: มากกว่า 500
+          label: 500+ ลำ (ราคาสำหรับสั่งซื้อจำนวนมาก)
       step: 1
     - name: companyName
       label: ชื่อบริษัท
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
-        - value: none
-          label: Standard product (no customization)
+          label: เลือกประเภทการปรับแต่ง...
+        - value: ไม่มี
+          label: ผลิตภัณฑ์มาตรฐาน (ไม่มีการปรับแต่ง)
         - value: logo
-          label: Custom Logo / Branding only
-        - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: เฉพาะโลโก้ / แบรนด์สั่งทำ
+        - value: เต็มรูปแบบ
+          label: OEM ครบวงจร (ขนาด สี กราฟิก บรรจุภัณฑ์)
+        - value: การปรึกษา
+          label: ไม่แน่ใจ — ต้องการคำปรึกษา
       step: 1
     - name: address
       label: ที่อยู่
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
+          label: เลือกหมวดหมู่สินค้า...
+        - value: ทั้งหมด
+          label: สินค้าทั้งหมด / แคตตาล็อกฉบับสมบูรณ์
         - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: บอร์ดซัพ / แพดเดิลบอร์ด
+        - value: ความปลอดภัย
+          label: อุปกรณ์ความปลอดภัย / เสื้อชูชีพ
+        - value: อุปกรณ์เสริม
+          label: อุปกรณ์เสริม (ปั๊มลม พาย กระเป๋า)
       step: 1
     - name: zip
       label: รหัสไปรษณีย์

@@ -1,95 +1,110 @@
 meta:
-  title: 'Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}'
-  description: 'From CAD to sea-ready boat in 8-12 weeks. Our Prototype Workshop builds, rigs, and sea-trials custom RIBs and inflatable boats. Start your prototype project today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Prototypeworkshop — fuldskala RIB-prototyping og søprøver | {SITE}
+  description: Fra CAD til søklar båd på 8-12 uger. Vores prototypeværksted bygger, udruster og søprøver skræddersyede RIB'er og oppustelige både. Start dit prototypeprojekt i dag.
+back_text: Tilbage til R&D-center
+home_label: Forside
 hero:
-  tagline: 'Lab 05'
-  title: 'Prototype Workshop'
-  subtitle: 'From CAD model to sea-ready boat — built, fitted, and proven'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp'
-  image_alt: 'Afarer prototype workshop boat fabrication'
+  tagline: Lab 05
+  title: Prototypeværksted
+  subtitle: Fra CAD-model til søklar båd — bygget, udstyret og afprøvet
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp
+  image_alt: Bådfremstilling i Afarers prototypeværksted
+intro: >-
+  En CAD-model, uanset hvor detaljeret den er, kan ikke afsløre, hvordan en båd faktisk vil opføre sig, før den møder vandet. Derfor er vores Prototype Workshop designet til at omsætte ingeniørdata til et fysisk, sødygtigt fartøj så hurtigt og præcist som muligt. Hver ny {SITE.name}-model – og
+  ethvert væsentligt specialbygget fartøj – passerer gennem værkstedet, før produktionsværktøjet fastlægges.
+content_html: >
+  <h2>Hvor design bliver til virkelighed</h2>
 
-intro: 'A CAD model, no matter how detailed, cannot reveal how a boat will actually handle until it meets the water. That is why our Prototype Workshop is designed to translate engineering data into a physical, seagoing craft as quickly and accurately as possible. Every new {SITE.name} model — and every significant custom build — passes through this workshop before the production tooling is committed.'
+  <p>Værkstedet er fuldt udstyret til samtidig fremstilling af skrog, slanger og rigging. Denne parallelle arbejdsgang forkorter prototypegennemløbstiden til 8-12 uger fra konstruktionsgodkendelse, mod branchens normale 16-20 uger. Når din applikation kræver en specialiseret løsning, kan vi gå fra
+  koncept til validering på vandet på under tre måneder.</p>
 
-content_html: |
-  <h2>Where design becomes reality</h2>
-  <p>The workshop is fully equipped for simultaneous fabrication of hull, tubes, and rigging. This parallel-workflow approach cuts prototype lead time to 8-12 weeks from engineering release, compared to the industry norm of 16-20 weeks. When your application demands a specialised solution, we can move from concept to on-water validation in under three months.</p>
 
-  <h2>Workshop capabilities</h2>
+  <h2>Værkstedets kapaciteter</h2>
+
   <table>
-    <thead><tr><th>Workstation</th><th>Equipment</th><th>Purpose</th></tr></thead>
+    <thead><tr><th>Arbejdsstation</th><th>Udstyr</th><th>Formål</th></tr></thead>
     <tbody>
-      <tr><td>Hull fabrication</td><td>Rotational moulding oven (HDPE), TIG welding bay (aluminium), hand-lay-up moulds (fibreglass)</td><td>Full-scale hull production in all three material types</td></tr>
-      <tr><td>Tube assembly</td><td>RF welding press, hot-air tacking station, inflation test jig</td><td>Fabrication of full-size tube assemblies with all baffles, cones, and valves</td></tr>
-      <tr><td>Rigging &amp; fitting</td><td>Engine hoist (500 kg), console mock-up frame, hydraulic hose crimper, electrical harness board</td><td>Complete outfitting: engine, steering, controls, fuel system, electronics, seating</td></tr>
-      <tr><td>Instrumentation bay</td><td>GPS speed sensor, fuel-flow meter, accelerometers, thermocouple array, data-logger</td><td>Sea-trial instrumentation installation and calibration</td></tr>
+      <tr><td>Skrogfremstilling</td><td>Rotationsstøbeovn (HDPE), TIG-svejseplads (aluminium), håndoplægningsforme (glasfiber)</td><td>Fuldskala-produktion af skrog i alle tre materialetyper</td></tr>
+      <tr><td>Slangemontering</td><td>RF-svejsepresse, varmluftspunktsvejsestation, oppustningstestarmatur</td><td>Fremstilling af slangesamlinger i fuld størrelse med alle skodder, kegler og ventiler</td></tr>
+      <tr><td>Rigging &amp; montering</td><td>Motorløft (500 kg), konsolmockup-ramme, hydraulisk slangekrymper, kabeltrækbræt</td><td>Fuld udrustning: motor, styring, betjeningsdele, brændstofsystem, elektronik og sæder</td></tr>
+      <tr><td>Instrumenteringsplads</td><td>GPS-hastighedssensor, brændstofmåler, accelerometre, termoelementmatrix, data-logger</td><td>Installation og kalibrering af måleudstyr til søprøver</td></tr>
     </tbody>
   </table>
 
-  <h2>The prototype journey — step by step</h2>
+
+  <h2>Prototypens rejse — trin for trin</h2>
+
   <ol>
-    <li><strong>Engineering handover</strong> — The design package (3D model, FEA report, bill of materials, layup schedule) is formally reviewed by the workshop lead and the project engineer. Any manufacturing concerns are flagged and resolved before cutting begins.</li>
-    <li><strong>Hull production</strong> — The hull is built according to the engineering specification. For HDPE: the rotational moulding programme is loaded from the Moldex3D simulation. For aluminium: the CNC-cut plates are welded in the TIG bay following the approved weld map. For fibreglass: the ply book is followed layer by layer.</li>
-    <li><strong>Tube fabrication</strong> — Fabric is cut using CNC-pattern templates, then RF-welded into full-size chambers. Each chamber is inflated to test pressure and left for 24 h for initial stabilisation.</li>
-    <li><strong>Assembly &amp; rigging</strong> — Hull and tubes are mated. The engine is hung, steering and controls are connected, fuel system is installed, and all electrical circuits are wired and verified.</li>
-    <li><strong>Static tests</strong> — Before the boat touches water, it undergoes: buoyancy check (full load + 30 % reserve), fuel system pressure test, steering system full-lock cycle test, electrical earth-bond continuity test.</li>
-    <li><strong>Sea trial programme</strong> — 20 hours of in-water testing, detailed below.</li>
-    <li><strong>Prototype review</strong> — A formal sign-off meeting is held with engineering, production, and quality teams. Any required design changes are documented and incorporated into the production release.</li>
+    <li><strong>Overdragelse fra konstruktion</strong> — Konstruktionspakken (3D-model, FEA-rapport, materialeliste, lægningsplan) gennemgås formelt af værkstedslederen og projektkonstruktøren. Eventuelle produktionsmæssige bekymringer markeres og løses, før skæringen går i gang.</li>
+    <li><strong>Skrogproduktion</strong> — Skroget bygges efter konstruktionsspecifikationen. For HDPE: rotationsstøbeprogrammet indlæses fra Moldex3D-simuleringen. For aluminium: de CNC-skårne plader svejses i TIG-afdelingen efter det godkendte svejsekort. For glasfiber: lagbogen følges lag for lag.</li>
+    <li><strong>Slangefremstilling</strong> — Stoffet skæres med CNC-skabeloner og RF-svejses derefter til kamre i fuld størrelse. Hvert kammer pumpes op til testtryk og efterlades i 24 timer til indledende stabilisering.</li>
+    <li><strong>Samling &amp; rigging</strong> — Skrog og slanger samles. Motoren monteres, styring og betjening tilsluttes, brændstofsystemet installeres, og alle elektriske kredsløb trækkes og kontrolleres.</li>
+    <li><strong>Statiske test</strong> — Inden båden kommer på vandet, gennemgår den: opdriftskontrol (fuld last + 30 % reserve), trykprøvning af brændstofsystem, cyklustest af styresystemet ved fuldt udslag og kontinuitetstest af jordforbindelsen i det elektriske system.</li>
+    <li><strong>Søprøveprogram</strong> — 20 timers test på vandet, detaljeret nedenfor.</li>
+    <li><strong>Prototypegennemgang</strong> — Der afholdes et formelt godkendelsesmøde med konstruktions-, produktions- og kvalitetsteams. Eventuelle nødvendige designændringer dokumenteres og indarbejdes i produktionsudgivelsen.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20-Hour Sea Trial Programme — Test Schedule</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20-timers søprøveprogram — testplan</p>
     <div class="space-y-2 text-sm">
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Harbour manoeuvring — low-speed handling, reverse, fendering check</span>
+        <span class="flex-1">Havnemanøvrering — manøvrering ved lav fart, bakning, kontrol af fendere</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">4 h</span>
-        <span class="flex-1">Speed trial — GPS-verified top speed, cruise speed, fuel consumption at 3 RPM points</span>
+        <span class="flex-1">Hastighedstest — GPS-verificeret topfart, marchfart, brændstofforbrug ved 3 RPM-punkter</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Turning test — tactical diameter, advance, and transfer at 20 kn, port and starboard</span>
+        <span class="flex-1">Vendetest — taktisk diameter, fremdrift og drift ved 20 kn, bagbord og styrbord</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Slamming test — repeated runs through 0.5–1.0 m chop; accelerometer on helm seat base</span>
+        <span class="flex-1">Slagtøjstest — gentagne gennemkørsler i 0,5–1,0 m kort sø; accelerometer på rorsædets base</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Stability test — static heel angle with 4 crew + gear to starboard, offset load</span>
+        <span class="flex-1">Stabilitetstest — statisk krængningsvinkel med 4 besætningsmedlemmer + udstyr mod styrbord, forskudt last</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Endurance run — 3 h continuous at cruise speed; temperature monitoring (engine, fuel, electrical)</span>
+        <span class="flex-1">Udholdenhedskørsel — 3 timer uafbrudt ved marchfart; temperaturmåling (motor, brændstof, elektrisk)</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Final inspection — post-trial inspection of all systems, tighten/check all fasteners, document findings</span>
+        <span class="flex-1">Endelig inspektion — inspektion af alle systemer efter prøven, efterspænding/kontrol af alle fastgørelser, dokumentation af resultaterne</span>
       </div>
     </div>
   </div>
 
-  <h2>Custom prototyping for unique applications</h2>
-  <p>The Prototype Workshop is where we solve the problems that standard production boats cannot address. Recent examples include:</p>
+
+  <h2>Skræddersyet prototyping til unikke applikationer</h2>
+
+  <p>Prototypeværkstedet er der, hvor vi løser de problemer, som standardproduktionsbåde ikke kan håndtere. Nylige eksempler omfatter:</p>
+
   <ul>
-    <li>A 7.8 m RIB for a search-and-rescue organisation, requiring a custom cabin structure with roll-over protection, integrated stretcher mounts, and a bow-mounted sonar pod — all prototyped, fitted, and tested at our facility.</li>
-    <li>A 5.2 m inflatable for a hydrographic survey contractor, with a cut-down transom, removable instrument mast, and through-hull transducer pockets designed to minimise flow disturbance.</li>
-    <li>An electric-drive 4.5 m tender for a superyacht, where the prototype was used to validate range, charging infrastructure, and noise levels before the client committed to a fleet of four.</li>
+    <li>En 7,8 m RIB til en eftersøgnings- og redningsorganisation, som krævede en specialbygget kabinestruktur med væltesikring, integrerede båremonteringer og en i bovet monteret sonarpod — alt sammen prototyperet, monteret og testet på vores facilitet.</li>
+    <li>En 5,2 m oppustelig båd til en hydrografisk opmålingsentreprenør med nedsat hækspejl, aftagelig instrumentmast og gennemgående transducerlommer i skroget, designet til at minimere strømningsforstyrrelser.</li>
+    <li>En elektrisk 4,5 m tender til en superyacht, hvor prototypen blev brugt til at validere rækkevidde, opladningsinfrastruktur og støjniveau, før kunden forpligtede sig til en flåde på fire.</li>
   </ul>
 
-  <h2>Our prototyping team</h2>
-  <p>The workshop is staffed by eight multi-skilled marine technicians, each cross-trained in at least two of the three core disciplines (hull, tube, rigging). The team lead is a master boatbuilder with 16 years of experience spanning custom one-off builds to production series. Every prototype is assigned a dedicated project engineer who serves as the single point of contact for the client throughout the build and trial process.</p>
 
-  <h2>Client involvement</h2>
-  <p>We actively encourage our clients to attend key milestones during the prototype build — particularly the initial fit-out review and the sea trial. Your operational feedback during these stages is invaluable in fine-tuning the boat before it enters production. We do not build in a vacuum; we build in partnership with you.</p>
-  <p>The 20-hour sea trial is also an opportunity for your team to familiarise themselves with the boat's handling, systems layout, and maintenance requirements, ensuring a smooth transition to service when the production boats are delivered.</p>
+  <h2>Vores prototypeteam</h2>
 
+  <p>Værkstedet er bemandet med otte alsidige marineteknikere, der hver især er krydsuddannet inden for mindst to af de tre kernefag (skrog, slange, rigging). Teamlederen er en mesterbådebygger med 16 års erfaring, der spænder fra specialbyggede enkeltstykker til produktionsserier. Hver prototype
+  får tildelt en dedikeret projektkonstruktør, der fungerer som kundens eneste kontaktpunkt gennem hele bygge- og prøveforløbet.</p>
+
+
+  <h2>Kundeinddragelse</h2>
+
+  <p>Vi opfordrer aktivt vores kunder til at deltage i de vigtigste milepæle under prototypebyggeriet — især den indledende udrustningsgennemgang og søprøven. Din operationelle feedback i disse faser er uvurderlig til at finjustere båden, før den går i produktion. Vi bygger ikke i et vakuum; vi
+  bygger i partnerskab med dig.</p>
+
+  <p>Den 20-timers søprøve er også en mulighed for dit team for at blive fortrolig med bådens håndtering, systemopbygning og vedligeholdelseskrav, så overgangen til drift forløber problemfrit, når produktionsbådene leveres.</p>
 cta:
-  title: 'Start your prototype project'
-  subtitle: 'Tell us about the boat you need and we will propose a prototype development plan.'
-  button_text: 'Contact our prototyping team'
+  title: Start dit prototypeprojekt
+  subtitle: Fortæl os om den båd, du har brug for, og vi udarbejder en plan for prototypeudvikling.
+  button_text: Kontakt vores prototyping-team
   button_link: /contact

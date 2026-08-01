@@ -1,12 +1,12 @@
-﻿hero:
+hero:
   tagline: Process
   title: Produktionsprocess
   subtitle: Från råmaterial till sjöklar båt —varje steg under vår kontroll
   back_label: Tillbaka till fabriken
-  back_link: /factory
-
-intro: Till skillnad från märken som lägger ut produktion på tredjepartsfabriker äger och driver afarer hela sin produktionskedja. Denna vertikala integration gör att vi kan upprätthålla strikt kvalitetskontroll i varje steg, snabbt reagera på anpassade krav och leverera jämn produktkvalitet batch efter batch. Så här byggs en båt i vår anläggning.
-
+  back_link: /fabrik
+intro: >-
+  Till skillnad från märken som lägger ut produktion på tredjepartsfabriker äger och driver afarer hela sin produktionskedja. Denna vertikala integration gör att vi kan upprätthålla strikt kvalitetskontroll i varje steg, snabbt reagera på anpassade krav och leverera jämn produktkvalitet batch efter
+  batch. Så här byggs en båt i vår anläggning.
 steps:
   - step: '01'
     title: Materialmottagning och inspektion
@@ -34,13 +34,14 @@ steps:
     duration: 2— dagar
   - step: '07'
     title: Kvalitetstestning och inspektion
-    description: 'Varje färdig båt genomgår en obligatorisk kvalitetsgrind: lufttäthetstest av kammare, funktionell systemkontroll, verifiering av fästmoment och kosmetisk inspektion. Anpassade och prototypkonstruktioner genomgår även sjöprov på vatten som omfattar hastighet, manövrering, stabilitet och hållbarhet.'
+    description: >-
+      Varje färdig båt genomgår en obligatorisk kvalitetsgrind: lufttäthetstest av kammare, funktionell systemkontroll, verifiering av fästmoment och kosmetisk inspektion. Anpassade och prototypkonstruktioner genomgår även sjöprov på vatten som omfattar hastighet, manövrering, stabilitet och
+      hållbarhet.
     duration: 1— dagar
   - step: '08'
     title: Packning och frakt
     description: Båtar töms på luft, viks enligt procedur, packas i slitstarka tygpåsar eller plywoodlådor och lastas för frakt. Varje paket märks med modell, serienummer och destination. Vi samordnar med transportörer för FCL- och LCL-frakt över hela världen.
     duration: 1 dag
-
 cta:
   title: Se vår utrustning och maskiner
   desc: Lär känna den industriella utrustningen bakom varje afarer-båt.

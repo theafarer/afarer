@@ -1,6 +1,6 @@
 hero_text:
-  tagline: Contact
-  title: GET IN TOUCH
+  tagline: Kontakt
+  title: KONTAKTUJTE NÁS
 contact_form:
   id: form
   title: Pošlete nám zprávu
@@ -17,7 +17,7 @@ contact_form:
       label: Jméno
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: zemí
       step: 1
     - name: lastName
       label: Příjmení
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
+          label: Vyberte odhadovaný objem...
+        - value: Vzorek
+          label: Pouze vzorky / prototypy
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5–10 kusů (standardní MOQ)
         - value: 100-500
-          label: 100–500 units
-        - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 100–500 kusů
+        - value: Více než 500
+          label: 500+ kusů (velkoobchodní ceny)
       step: 1
     - name: companyName
       label: Název společnosti
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
-        - value: none
-          label: Standard product (no customization)
+          label: Vyberte typ přizpůsobení...
+        - value: žádné
+          label: Standardní produkt (bez úprav na míru)
         - value: logo
-          label: Custom Logo / Branding only
-        - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: Pouze vlastní logo / branding
+        - value: plné
+          label: Plný OEM (velikost, barva, grafika, balení)
+        - value: konzultace
+          label: Nejsem si jistý — potřebuji konzultaci
       step: 1
     - name: address
       label: Adresa
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
+          label: Vyberte kategorii produktu...
+        - value: vše
+          label: Všechny produkty / Kompletní katalog
         - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: SUP prkna / paddleboardy
+        - value: bezpečnost
+          label: Bezpečnostní vybavení / záchranné vesty
+        - value: příslušenství
+          label: Příslušenství (pumpy, pádla, tašky)
       step: 1
     - name: zip
       label: PSČ

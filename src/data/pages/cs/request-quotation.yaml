@@ -1,25 +1,25 @@
 hero_text:
-  tagline: Get a Quote
+  tagline: Vyžádat cenovou nabídku
   title: Požádat o cenovou nabídku<br />pro váš projekt
   subtitle: Sdělte nám své požadavky a náš tým vám odpoví podrobnou cenovou nabídkou do 2 pracovních dnů.
 steps2_process:
-  title: How It Works
+  title: Jak to funguje
   subtitle: Čtyři jednoduché kroky od poptávky k cenové nabídce.
   items:
-    - title: 'Step 1: Submit Your Requirements'
+    - title: 'Krok 1: Zašlete své požadavky'
       description: Vyplňte formulář níže s typem produktu, množstvím a specifikacemi. Čím více podrobností poskytnete, tím přesnější bude vaše cenová nabídka.
       icon: tabler:file-text
-    - title: 'Step 2: We Review & Advise'
+    - title: 'Krok 2: Posoudíme a poradíme'
       description: Náš inženýrský tým zkontroluje vaše požadavky a může vás kontaktovat pro upřesnění. Poskytujeme doporučení ohledně konfigurace produktu a možností.
       icon: tabler:users
-    - title: 'Step 3: Receive Your Quote'
+    - title: 'Krok 3: Obdržíte svou nabídku'
       description: Obdržíte podrobnou cenovou nabídku včetně jednotkových cen, MOQ, dodacích lhůt, platebních podmínek a možností dopravy. Obvykle do 48 hodin.
       icon: tabler:currency-dollar
-    - title: 'Step 4: Sample & Production'
+    - title: 'Krok 4: Vzorek a výroba'
       description: Po přijetí cenové nabídky přejdeme k výrobě vzorků (je-li to relevantní) nebo přímo k sériové výrobě. Pravidelné aktualizace v průběhu celého procesu.
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
+  tagline: Formulář pro poptávku
   title: Řekněte nám o svém projektu
   subtitle: Všechna pole označená * jsou povinná.
   fields:
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - Potápěčské centrum
+        - Rybaření
+        - Námořní turistika / Resort
+        - Pátrání a záchrana
+        - Tender pro jachty
+        - Komerční pracovní člun
+        - Státní sektor / armáda
+        - OEM / privátní značka
+        - Osobní / rekreační
+        - Jiné
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
-        - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - Bez preference
+        - PVC námořní kvality (1100 dtex)
+        - Prémiový hypalon / CSM
+        - Trup ze sklolaminátu
+        - Hliníkový trup
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: např. přívěsný motor 60 HP, bez motoru, dva motory 115 HP
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: např. vlastní barvy, branding/logo, balení, speciální kování
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: např. dodání do 90 dnů
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: Popište své použití, technické specifikace nebo případné zvláštní požadavky — pokud máte k dispozici referenční výkresy, specifikace nebo odkazy, přiložte je
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: Nahrajte svůj technický list, výkres nebo referenční dokument (PDF, DWG, DXF)
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: Nahrajte své logo nebo grafiku pro vlastní branding (AI, EPS, PNG)
 cta:
-  title: Prefer to discuss by email?
-  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
+  title: Dáváte přednost e-mailové komunikaci?
+  subtitle: Pošlete svůj dotaz přímo našemu obchodnímu týmu a odpovíme do 24 hodin.
   actions:
     - variant: primary
-      text: Email us directly
+      text: Napište nám e-mail přímo
       href: /contact

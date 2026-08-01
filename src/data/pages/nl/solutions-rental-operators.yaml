@@ -1,71 +1,66 @@
 meta:
-  title: 'SUP Rental Fleet Solutions | {SITE}'
-  description: 'High-rotation SUP boards engineered for daily rental use. UV-resistant PVC, reinforced seams, quick-dry materials. Scale your rental business with Afarer.'
-
+  title: SUP Verhuurvloot Oplossingen | {SITE}
+  description: SUP-boards met hoge rotatie, ontworpen voor dagelijks verhuurgebruik. UV-bestendig PVC, versterkte naden, snel drogende materialen. Schaal uw verhuizaken uit met Afarer.
 hero:
-  tagline: Rental Operators
-  title: 'Scale Your Rental Business<br />With Confidence'
-  subtitle: 'High-rotation SUP boards engineered for daily rental use, 365 days a year. Your revenue never takes a day off.'
+  tagline: Verhuuroperators
+  title: Schaal uw verhuurbedrijf<br />Met vertrouwen
+  subtitle: High-rotatie SUP-boards ontwikkeld voor dagelijks verhuurgebruik, 365 dagen per jaar. Uw inkomsten nemen nooit een vrije dag.
   image:
     src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
-    alt: Busy rental kiosk with SUP boards ready for guests
-
+    alt: Drukke verhuurkiosk met SUP-borden klaar voor gasten
 features:
-  title: Built for the Rental Grind
-  subtitle: 'Every board is engineered for 500+ rental cycles with minimal maintenance.'
+  title: Gemaakt voor het verhuurwerk
+  subtitle: Elk board is ontworpen voor 500 huurcycli met minimaal onderhoud.
   items:
-    - title: '500+ Rental Cycles'
-      description: 'Tested to survive daily use in saltwater, sun, and sand.'
-      icon: 'tabler:shield-check'
-    - title: 'UV-Resistant Fabric'
-      description: 'No fading or degradation after 1 year of outdoor storage.'
-      icon: 'tabler:sun'
-    - title: 'Reinforced Seams'
-      description: '3x stronger than standard inflatable board construction.'
-      icon: 'tabler:layers-intersect'
-    - title: 'Quick-Dry Materials'
-      description: 'Boards ready for next rental in under 30 minutes.'
-      icon: 'tabler:droplet'
-    - title: 'Stackable Storage'
-      description: 'Space-saving design — store 40% more boards in the same area.'
-      icon: 'tabler:stack'
-    - title: 'Color-Coded Sizes'
-      description: 'Staff grabs the right board instantly with color-coded sizing.'
-      icon: 'tabler:color-swatch'
-
+    - title: 500 Verhuur Fietsen
+      description: Getest om dagelijks gebruik in zout water, zon en zand te overleven.
+      icon: tabler:shield-check
+    - title: UV-bestendig textiel
+      description: Geen vervaging of achteruitgang na 1 jaar opslag buitenshuis.
+      icon: tabler:sun
+    - title: Versterkte naden
+      description: 3x sterker dan de standaardconstructie van opblaasbare boards.
+      icon: tabler:layers-intersect
+    - title: Sneldrogende materialen
+      description: Borden klaar voor de volgende verhuur in minder dan 30 minuten.
+      icon: tabler:droplet
+    - title: Stapelbare Opberging
+      description: Ruimtebesparend ontwerp — berg 40% meer borden op in hetzelfde gebied.
+      icon: tabler:stack
+    - title: Kleurgecodeerde maten
+      description: Het personeel pakt onmiddellijk het juiste bord met kleurgecodeerde maten.
+      icon: tabler:color-swatch
 stats:
-  title: Operations Metrics
+  title: Operationele statistieken
   stats:
-    - title: Board Turnover
-      amount: '< 5 min'
-    - title: Annual Maintenance
-      amount: '~15 min/board'
-    - title: Parts Dispatch
-      amount: '48h'
-    - title: Defect Rate
-      amount: '< 0.5%'
-
+    - title: Bestuursomzet
+      amount: < 5 min
+    - title: Jaarlijks Onderhoud
+      amount: ~15 min/bord
+    - title: Onderdelenverzending
+      amount: 48u
+    - title: Foutpercentage
+      amount: < 0,5%
 fleet_guide:
-  title: Fleet Sizing Guide
-  subtitle: 'Estimate the fleet size and revenue potential for your rental operation.'
+  title: Gids voor het Bepalen van Vlootgrootte
+  subtitle: Schat de vloottgrootte en het omzetpotentieel voor uw verhuurbedrijf.
   tiers:
-    - label: Small Kiosk
-      boards: '15-20'
-      revenue: '$XX,XXX/yr'
-    - label: Mid-Size Operation
-      boards: '30-50'
-      revenue: '$XX,XXX/yr'
-    - label: Large Beach Rental
-      boards: '50-100'
-      revenue: '$XXX,XXX/yr'
-
+    - label: Kleine kiosk
+      boards: 15-20
+      revenue: $XX.XXX/jaar
+    - label: Middelgrote operatie
+      boards: 30-50
+      revenue: $XX.XXX/jaar
+    - label: Grote strandverhuur
+      boards: 50-100
+      revenue: $XXX.XXX/jaar
 cta:
-  title: 'Ready to scale your rental business?'
-  subtitle: 'Get rental pricing or compare board models for your operation.'
+  title: Klaar om je verhuurbedrijf uit te breiden?
+  subtitle: Krijg huurprijzen of vergelijk bordmodellen voor uw operatie.
   actions:
-    - text: 'Get Rental Pricing'
-      href: '/contact?package=rental'
-      variant: 'primary'
-    - text: 'Compare Board Models'
-      href: '/compare'
-      variant: 'secondary'
+    - text: Bekijk huurprijzen
+      href: /contact?package=rental
+      variant: primary
+    - text: Vergelijk bordmodellen
+      href: /compare
+      variant: secondary

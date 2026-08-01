@@ -17,7 +17,7 @@ contact_form:
       label: Ad
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: ülkeler
       step: 1
     - name: lastName
       label: Soyad
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
+          label: Tahmini hacminizi seçin...
+        - value: örnek
+          label: Yalnızca Numune / Prototip
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5–10 birim (Standart MOQ)
         - value: 100-500
-          label: 100–500 units
-        - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 100–500 adet
+        - value: 500'den fazla
+          label: 500+ adet (Toplu fiyatlandırma)
       step: 1
     - name: companyName
       label: Şirket
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
+          label: Özelleştirme türünü seçin...
         - value: none
-          label: Standard product (no customization)
+          label: Standart ürün (özelleştirme yok)
         - value: logo
-          label: Custom Logo / Branding only
-        - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: Yalnızca Özel Logo / Markalama
+        - value: tam
+          label: Tam OEM (boyut, renk, grafik, paketleme)
+        - value: danışmanlık
+          label: Emin değilim — danışmanlık gerekiyor
       step: 1
     - name: address
       label: Adres
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
+          label: Ürün kategorisi seçin...
+        - value: tümü
+          label: Tüm ürünler / Tam katalog
         - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: SUP Tahtaları / Kürekli Tahtalar
+        - value: güvenlik
+          label: Güvenlik Ekipmanları / Can Yelekleri
+        - value: aksesuar
+          label: Aksesuarlar (pompalar, kürekler, çantalar)
       step: 1
     - name: zip
       label: Posta Kodu

@@ -17,7 +17,7 @@ contact_form:
       label: الاسم الأول
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: الدول
       step: 1
     - name: lastName
       label: اسم العائلة
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
+          label: اختر حجمك التقديري...
+        - value: عينة
+          label: عينات / نماذج أولية فقط
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5–10 وحدات (الحد الأدنى للطلب القياسي MOQ)
         - value: 100-500
-          label: 100–500 units
-        - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 100–500 وحدة
+        - value: أكثر من 500
+          label: أكثر من 500 وحدة (تسعير حسب الكمية)
       step: 1
     - name: companyName
       label: اسم الشركة
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
-        - value: none
-          label: Standard product (no customization)
+          label: اختر نوع التخصيص...
+        - value: لا يوجد
+          label: منتج قياسي (بدون تخصيص)
         - value: logo
-          label: Custom Logo / Branding only
-        - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: شعار مخصص / علامة تجارية فقط
+        - value: كامل
+          label: OEM كامل (الحجم، اللون، التصاميم، التغليف)
+        - value: استشارة
+          label: غير متأكد — أحتاج إلى استشارة
       step: 1
     - name: address
       label: العنوان
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
+          label: اختر فئة المنتج...
+        - value: الكل
+          label: جميع المنتجات / الكتالوج الكامل
         - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: ألواح SUP / ألواح التجديف
+        - value: السلامة
+          label: معدات السلامة / سترات النجاة
+        - value: ملحق
+          label: الملحقات (المضخات، المجاديف، الحقائب)
       step: 1
     - name: zip
       label: الرمز البريدي
@@ -128,10 +128,10 @@ features2_other_ways:
       description: info@afarer.com
       icon: tabler:mail
     - title: المقر الرئيسي
-      description: Economic Development Zone, Laixi, Qingdao, China, 266600
+      description: منطقة التنمية الاقتصادية، لايشي، تشينغداو، الصين، 266600
       icon: tabler:map-pin
 map:
   title: موقعنا
   subtitle: زرنا في مقرنا الرئيسي
-  address: Economic Development Zone, Laixi, Qingdao, China, 266600
+  address: منطقة التنمية الاقتصادية، لايشي، تشينغداو، الصين، 266600
   zoom: 15

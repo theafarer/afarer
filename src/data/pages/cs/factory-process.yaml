@@ -2,44 +2,46 @@ hero:
   tagline: Výrobní proces
   title: Náš výrobní proces
   subtitle: Od suroviny po hotový výrobek —každý krok je řízen kvalitou.
-  back_label: Back to Factory
+  back_label: Zpět do továrny
   back_link: /factory
-intro: Unlike brands that outsource production to third-party factories, afarer owns and operates its entire manufacturing chain. This vertical integration allows us to maintain strict quality control at every stage, respond quickly to custom requirements, and deliver consistent product quality batch after batch. Here is how a SUP board is built in our facility.
+intro: >-
+  Na rozdíl od značek, které outsourcují výrobu do třetích továren, afarer vlastní a provozuje celý svůj výrobní řetězec. Tato vertikální integrace nám umožňuje udržovat přísnou kontrolu kvality v každé fázi, rychle reagovat na individuální požadavky a dodávat konzistentní kvalitu šarži za šarží.
+  Takto se SUP prkno vyrábí v našem závodě.
 steps:
   - step: '01'
     title: Řezání
     description: Automatické CNC stroje přesně řežou tkaniny podle specifikací.
-    duration: 1— days
+    duration: 1— dní
   - step: '02'
     title: Svařování
     description: RF a horkovzdušné svařování vytváří pevné, vzduchotěsné spoje.
-    duration: 2— hours per boat kit
+    duration: 2— hodiny na lodní sadu
   - step: '03'
     title: Montáž
     description: Kvalifikovaní technici montují ventily, příslušenství a armatury.
-    duration: 1— days per boat
+    duration: 1— dní na člun
   - step: '04'
     title: Testování
     description: Každý produkt prochází tlakovými, vztlakovými a kontrolními testy.
-    duration: 1— days per board
+    duration: 1— dní na prkno
   - step: '05'
     title: Balení
     description: Produkty jsou pečlivě zabaleny a připraveny k odeslání.
-    duration: 1— days
+    duration: 1— dní
   - step: '06'
-    title: Final Assembly & Fitting
-    description: Valves, D-rings, handles, fin boxes, and deck pads are installed on the assembly line. Each board follows a 100-point assembly checklist with mandatory sign-off at each stage.
-    duration: 1— days
+    title: Finální montáž a osazení
+    description: Ventily, D-kroužky, držadla, fin boxy a palubové podložky se montují na montážní lince. Každé prkno prochází 100bodovým montážním kontrolním seznamem s povinným podpisem v každé fázi.
+    duration: 1— dní
   - step: '07'
-    title: Quality Testing & Inspection
-    description: 'Every completed board undergoes mandatory quality gate: chamber air-retention test, hardware function check, fastener torque verification, and cosmetic inspection. Custom and prototype builds also receive in-water trials covering stability and handling.'
-    duration: 1— days
+    title: Testování a kontrola kvality
+    description: 'Každé dokončené prkno prochází povinnou kontrolou kvality: test zadržení vzduchu v komorách, kontrola funkčnosti kování, ověření utahovacího momentu spojovacích prvků a vizuální kontrola. Zakázkové a prototypové výrobky navíc absolvují zkoušky na vodě zaměřené na stabilitu a ovladatelnost.'
+    duration: 1— dní
   - step: '08'
-    title: Packing & Shipping
-    description: Boards are deflated, folded per procedure, packed in heavy-duty woven bags or retail boxes, and loaded for shipment. Each package is labelled with model, serial number, and destination. We coordinate with freight forwarders for FCL and LCL container shipments worldwide.
-    duration: 1 day
+    title: Balení a expedice
+    description: Desky se vypustí, složí podle postupu, zabalí do pevných tkaných vaků nebo maloobchodních krabic a naloží k expedici. Každý balík je označen modelem, výrobním číslem a destinací. S přepravními společnostmi koordinujeme kontejnerové zásilky FCL a LCL po celém světě.
+    duration: 1 den
 cta:
-  title: See our equipment and machinery
-  desc: Explore the industrial-grade equipment behind every afarer SUP board.
-  label: View equipment →
+  title: Podívejte se na naše vybavení a stroje
+  desc: Prozkoumejte průmyslové vybavení, které stojí za každým SUP prknem afarer.
+  label: Zobrazit vybavení →
   link: /factory/equipment

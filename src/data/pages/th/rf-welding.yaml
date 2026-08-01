@@ -1,89 +1,107 @@
 meta:
-  title: 'RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}'
-  description: 'Radio-frequency welding technology delivering compliant airtight seams. Peel testing, air-retention validation, and custom seam specifications.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: ศูนย์เชื่อม RF — การยึดติดด้วยคลื่นไดอิเล็กทริกเพื่อตะเข็บกันอากาศ | {SITE}
+  description: เทคโนโลยีการเชื่อมด้วยคลื่นความถี่วิทยุ (RF) ให้ตะเข็บกันอากาศที่ได้มาตรฐาน พร้อมการทดสอบการลอก (peel test) การตรวจสอบการคงอากาศ และสเปกตะเข็บตามความต้องการเฉพาะ
+back_text: ย้อนกลับไปยังศูนย์วิจัยและพัฒนา (R&D Center)
+home_label: หน้าแรก
 hero:
-  tagline: 'Lab 03'
-  title: 'RF Welding Center'
-  subtitle: 'Dielectric bonding technology for welds that hold under pressure'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1.webp'
-  image_alt: 'Afarer RF welding dielectric bonding process'
+  tagline: ห้องปฏิบัติการ 03
+  title: ศูนย์เชื่อม RF
+  subtitle: เทคโนโลยีการยึดติดแบบไดอิเล็กตริกเพื่อรอยเชื่อมที่คงทนภายใต้แรงดัน
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1.webp
+  image_alt: กระบวนการเชื่อมไดอิเล็กทริกด้วย RF ของ afarer
+intro: >-
+  เรือเป่าลมจะเชื่อถือได้เท่าคุณภาพของรอยต่อเท่านั้น รอยเชื่อมที่อ่อนแอเพียงจุดเดียวสามารถกระทบต่อห้องลมทั้งห้อง และในทะเล ความล้มเหลวของห้องลมไม่ใช่เพียงความไม่สะดวก แต่คืออันตรายต่อความปลอดภัย ที่ {SITE.name} เราได้ลงทุนสร้างศูนย์เชื่อมคลื่นวิทยุ (RF) โดยเฉพาะ
+  ซึ่งผสานเครื่องอัดเชื่อมไฟฟ้าความถี่สูงระดับอุตสาหกรรมเข้ากับการควบคุมกระบวนการอย่างเข้มงวดและการทดสอบหลังการเชื่อม รอยต่อทุกจุดที่เราผลิตได้รับการบันทึก ตรวจสอบย้อนกลับได้ และรับรองว่าตรงตามหรือเกินกว่าข้อกำหนดของ — มาตรฐานสากลสำหรับเรือเป่าลม
+content_html: >
+  <h2>วิทยาศาสตร์เบื้องหลังรอยเชื่อม</h2>
 
-intro: 'An inflatable boat is only as reliable as its seams. A single weak weld can compromise an entire chamber — and at sea, a chamber failure is not an inconvenience; it is a safety hazard. At {SITE.name}, we have invested in a dedicated Radio-Frequency (RF) Welding Center that combines industrial-grade dielectric welding presses with rigorous process control and post-weld testing. Every seam we produce is documented, traceable, and certified to meet or exceed the requirements of — the international standard for inflatable craft.'
+  <p>การเชื่อม RF ใช้พลังงานแม่เหล็กไฟฟ้าความถี่สูง (โดยทั่วไป 27.12 MHz) เพื่อกระตุ้นโมเลกุลที่มีขั้วภายในผ้าเคลือบ PVC หรือ Hypalon ทำให้เกิดความร้อนอย่างแม่นยำที่รอยต่อระหว่างวัสดุ แตกต่างจากการเชื่อมด้วยลมร้อนหรือลิ่มร้อน การเชื่อม RF สร้างพันธะโมเลกุลที่แท้จริง —
+  ผ้าสองชั้นหลอมรวมเป็นวัสดุเนื้อเดียวกันชิ้นเดียวที่บริเวณรอยเชื่อม ทำให้รอยต่อมีความแข็งแรงเทียบเท่าวัสดุต้นทาง</p>
 
-content_html: |
-  <h2>The science behind the seam</h2>
-  <p>RF welding uses high-frequency electromagnetic energy (typically 27.12 MHz) to excite the polar molecules within PVC or Hypalon-coated fabric, generating heat precisely at the material interface. Unlike hot-air or hot-wedge welding, RF welding creates a true molecular bond — the two fabric layers fuse into a single homogeneous material at the weld zone, producing a joint that is as strong as the parent material itself.</p>
 
-  <h2>Welding equipment and process control</h2>
-  <p>Our welding centre is equipped with:</p>
+  <h2>อุปกรณ์การเชื่อมและการควบคุมกระบวนการ</h2>
+
+  <p>ศูนย์การเชื่อมของเราติดตั้งด้วย:</p>
+
   <table>
-    <thead><tr><th>Machine</th><th>Power / Capacity</th><th>Application</th></tr></thead>
+    <thead><tr><th>เครื่องจักร</th><th>กำลังไฟ / ความจุ</th><th>การประยุกต์ใช้งาน</th></tr></thead>
     <tbody>
-      <tr><td>Dielectric RF press 1</td><td>15 kW, platen 2000 × 600 mm</td><td>Main longitudinal seams, transom-to-tube joints</td></tr>
-      <tr><td>Dielectric RF press 2</td><td>10 kW, platen 1500 × 500 mm</td><td>Baffle welds, cone attachments, valve patches</td></tr>
-      <tr><td>CNC controlled RF welder</td><td>8 kW, XY table 2500 × 1200 mm</td><td>Curved seams, logo/panel embossing, precision patchwork</td></tr>
-      <tr><td>Hot-wedge automatic welder</td><td>Variable temperature, 1.2 m/min max</td><td>Backup method for Hypalon/CSM materials</td></tr>
+      <tr><td>เครื่องอัด RF ไดอิเล็กทริก 1</td><td>15 kW, platen 2000 × 600 mm</td><td>รอยเชื่อมตามยาวหลัก ข้อต่อท้ายเรือถึงท่อลม</td></tr>
+      <tr><td>เครื่องอัด RF ไดอิเล็กทริก 2</td><td>10 kW, platen 1500 × 500 mm</td><td>รอยเชื่อมแผ่นกั้น การติดตั้งกรวยหัวเรือ แผ่นเสริมวาล์ว</td></tr>
+      <tr><td>เครื่องเชื่อม RF แบบควบคุมด้วย CNC</td><td>8 kW, XY table 2500 × 1200 mm</td><td>รอยเชื่อมโค้ง การนูนขึ้นรูปโลโก้/แผง การปะซ่อมความแม่นยำสูง</td></tr>
+      <tr><td>เครื่องเชื่อมอัตโนมัติแบบลิ่มร้อน</td><td>Variable temperature, 1.2 m/min max</td><td>วิธีการสำรองสำหรับวัสดุ Hypalon/CSM</td></tr>
     </tbody>
   </table>
-  <p>Every RF press is equipped with closed-loop temperature and pressure monitoring. Weld parameters — power, press time, cooling time, electrode pressure — are programmed per material type and recorded in our Manufacturing Execution System (MES) for full traceability.</p>
 
-  <h2>Weld quality tests — every seam, every boat</h2>
-  <p>Weld integrity is verified through a mandatory four-test protocol:</p>
+  <p>เครื่องอัด RF ทุกเครื่องติดตั้งระบบตรวจสอบอุณหภูมิและแรงดันแบบวงปิด (closed-loop) พารามิเตอร์การเชื่อม — กำลังไฟ เวลาอัด เวลาหล่อเย็น แรงดันอิเล็กโทรด — ถูกตั้งโปรแกรมตามประเภทวัสดุและบันทึกลงในระบบบริหารการผลิต (MES) ของเราเพื่อการตรวจสอบย้อนกลับครบวงจร</p>
+
+
+  <h2>การทดสอบคุณภาพรอยเชื่อม — ทุกรอยเชื่อม ทุกเรือ</h2>
+
+  <p>ความสมบูรณ์ของรอยเชื่อมถูกตรวจสอบผ่านระเบียบการทดสอบสี่รายการที่บังคับ:</p>
+
   <ol>
-    <li><strong>Visual inspection</strong> — 100 % of seams are visually inspected for burn-through, misalignment, contamination, or incomplete fusion. Reject rate threshold: 0.5 % of linear metres.</li>
-    <li><strong>Peel test ()</strong> — A 25 mm wide strip is cut from a test coupon welded with each production batch. Minimum peel force: 120 N/25 mm for PVC 1100 dtex.</li>
-    <li><strong>Air-retention test</strong> — Every completed chamber is pressurised to 1.5 × working pressure and held for 30 minutes. Pressure drop must not exceed 2 %.</li>
-    <li><strong>Thermal cycling test</strong> — Sample coupons are cycled from -20 °C to +60 °C for 50 cycles, then peel-tested again. Acceptable strength loss: &lt; 10 %.</li>
+    <li><strong>การตรวจสอบด้วยสายตา</strong> — ตรวจสอบรอยเชื่อมทั้งหมด 100 % ด้วยสายตาเพื่อหาการทะลุไหม้ การเยื้องแนว การปนเปื้อน หรือการหลอมรวมที่ไม่สมบูรณ์ เกณฑ์อัตราการปฏิเสธ: 0.5 % ของเมตรเชิงเส้น</li>
+    <li><strong>การทดสอบการลอก ()</strong> — แถบกว้าง 25 มม. ถูกตัดจากชิ้นทดสอบที่เชื่อมพร้อมกับการผลิตแต่ละล็อต แรงลอกขั้นต่ำ: 120 N/25 มม. สำหรับ PVC 1100 dtex</li>
+    <li><strong>การทดสอบการกักอากาศ</strong> — ห้องลมที่เสร็จสมบูรณ์ทุกห้องถูกเติมแรงดัน 1.5 เท่าของแรงดันใช้งานและค้างไว้ 30 นาที แรงดันที่ลดลงต้องไม่เกิน 2 %</li>
+    <li><strong>การทดสอบวัฏจักรความร้อน</strong> — ชิ้นทดสอบถูกทำให้ผ่านวัฏจักรอุณหภูมิจาก -20 °C ถึง +60 °C จำนวน 50 รอบ จากนั้นทดสอบการลอกอีกครั้ง การสูญเสียความแข็งแรงที่ยอมรับได้: &lt; 10 %</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Peel Strength Comparison — RF vs Hot-Air Welding (PVC 1100 dtex)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">การเปรียบเทียบความแข็งแรงการลอก — การเชื่อม RF เทียบกับการเชื่อมลมร้อน (PVC 1100 dtex)</p>
     <div class="space-y-3">
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium">RF Weld</span>
+        <span class="w-24 text-xs font-medium">การเชื่อม RF</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">184 N</span>
       </div>
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium">Hot-Air</span>
+        <span class="w-24 text-xs font-medium">ลมร้อน</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">130 N</span>
       </div>
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium"> min</span>
+        <span class="w-24 text-xs font-medium">ขั้นต่ำ</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-green-500 rounded" style="width:48%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">96 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">RF welding consistently achieves 90-95 % of parent-material strength, well above the minimum.</p>
+    <p class="text-xs text-gray-400 mt-2">การเชื่อม RF ให้ความแข็งแรงสม่ำเสมอ 90-95 % ของวัสดุต้นทาง ซึ่งสูงกว่าเกณฑ์ขั้นต่ำอย่างมาก</p>
   </div>
 
-  <h2>Professional expertise</h2>
-  <p>Our welding team is led by a senior process engineer with 11 years of experience in dielectric welding of coated textiles. Each operator completes a 6-month in-house certification programme before being allowed to work on production seams. Recertification is required annually, including a practical weld test evaluated against our internal Grade-A standard (peel strength ≥ 160 N/25 mm).</p>
 
-  <h2>Custom welding solutions for unique requirements</h2>
-  <p>We understand that one welding specification does not fit every application. Our RF Welding Center routinely develops custom seam configurations for clients with special requirements:</p>
+  <h2>ความเชี่ยวชาญระดับมืออาชีพ</h2>
+
+  <p>ทีมเชื่อมของเรานำโดยวิศวกรกระบวนการอาวุโสที่มีประสบการณ์ 11 ปีในการเชื่อมไดอิเล็กทริกของสิ่งทอเคลือบ ผู้ปฏิบัติงานแต่ละคนต้องผ่านโปรแกรมการรับรองภายในองค์กร 6 เดือนก่อนได้รับอนุญาตให้ทำงานรอยเชื่อมในสายการผลิต ต้องมีการรับรองใหม่ทุกปี รวมถึงการทดสอบการเชื่อมภาคปฏิบัติที่ประเมินตามมาตรฐานระดับ A
+  ภายในของเรา (ความแข็งแรงการลอก ≥ 160 N/25 มม.)</p>
+
+
+  <h2>โซลูชันการเชื่อมเฉพาะสำหรับความต้องการพิเศษ</h2>
+
+  <p>เราเข้าใจดีว่าข้อกำหนดการเชื่อมแบบเดียวไม่เหมาะกับทุกการใช้งาน ศูนย์เชื่อม RF ของเราพัฒนารูปแบบรอยเชื่อมเฉพาะสำหรับลูกค้าที่มีความต้องการพิเศษอยู่เป็นประจำ:</p>
+
   <ul>
-    <li><strong>Multi-layer reinforcement patches</strong> — for high-wear areas such as rubbing strakes and bow cones, we develop multi-pass RF welds that integrate a wear-resistant outer layer without compromising flexibility.</li>
-    <li><strong>Conductive or RF-opaque seams</strong> — for military or surveillance vessels requiring electromagnetic shielding, we weld in conductive mesh layers within the seam stack-up.</li>
-    <li><strong>Colour-change panel welding</strong> — dual-colour fabric panels (e.g. orange hull + grey topside) welded with a concealed overlap to maintain brand aesthetics without a visible join line.</li>
+    <li><strong>แผ่นเสริมแรงหลายชั้น</strong> — สำหรับบริเวณที่สึกหรอสูง เช่น ครีบกันเสียดสีและกรวยหัวเรือ เราพัฒนาการเชื่อม RF แบบหลายรอบที่ผสานชั้นนอกทนทานต่อการสึกหรอโดยไม่ลดทอนความยืดหยุ่น</li>
+    <li><strong>รอยเชื่อมนำไฟฟ้าหรือบดบังคลื่น RF</strong> — สำหรับเรือทหารหรือเรือเฝ้าตรวจที่ต้องการการบดบังคลื่นแม่เหล็กไฟฟ้า เราจึงเชื่อมชั้นตาข่ายนำไฟฟ้าเข้าไปภายในชั้นของรอยเชื่อม</li>
+    <li><strong>การเชื่อมแผงเปลี่ยนสี</strong> — แผงผ้าสองสี (เช่น ตัวเรือสีส้ม + ด้านบนสีเทา) เชื่อมด้วยรอยต่อทับแบบซ่อนเพื่อรักษาความสวยงามของแบรนด์โดยไม่มีเส้นรอยต่อที่มองเห็นได้</li>
   </ul>
 
-  <h2>Our commitment to you</h2>
-  <p>Every boat we deliver carries our weld-quality guarantee: if any seam fails in normal service within the warranty period, we repair or replace the affected chamber at no cost, and a root-cause investigation is performed to prevent recurrence. This is not simply a warranty — it is a commitment to continuous improvement driven by real-world operational data.</p>
-  <p>When you choose {SITE.name}, you are choosing seams that are engineered, tested, and documented — not just welded. That is the difference between a boat that floats and a boat that performs.</p>
 
+  <h2>พันธสัญญาของเราที่มีต่อคุณ</h2>
+
+  <p>เรือทุกลำที่เราส่งมอบมาพร้อมการรับประกันคุณภาพรอยเชื่อม: หากรอยเชื่อมใดเสียหายระหว่างการใช้งานปกติภายในระยะเวลารับประกัน เราจะซ่อมแซมหรือเปลี่ยนห้องลมที่เกี่ยวข้องโดยไม่คิดค่าใช้จ่าย และดำเนินการวิเคราะห์หาสาเหตุต้นตอเพื่อป้องกันไม่ให้เกิดซ้ำ นี่ไม่ใช่เพียงการรับประกัน —
+  แต่เป็นพันธสัญญาในการพัฒนาอย่างต่อเนื่องที่ขับเคลื่อนด้วยข้อมูลการปฏิบัติงานจริง</p>
+
+  <p>เมื่อคุณเลือก {SITE.name} คุณกำลังเลือกรอยเชื่อมที่ถูกออกแบบ ทดสอบ และบันทึกข้อมูล — ไม่ใช่เพียงแค่ถูกเชื่อม นั่นคือความแตกต่างระหว่างเรือที่ลอยน้ำได้กับเรือที่ทำงานได้อย่างยอดเยี่ยม</p>
 cta:
-  title: 'Discuss your welding requirements'
-  subtitle: 'Custom seam specifications, material compatibility, or process validation.'
-  button_text: 'Contact our welding team'
+  title: ปรึกษาความต้องการด้านการเชื่อมของคุณ
+  subtitle: ข้อกำหนดตะเข็บพิเศษ ความเข้ากันได้ของวัสดุ หรือการตรวจสอบความถูกต้องของกระบวนการ
+  button_text: ติดต่อทีมงานเชื่อมของเรา
   button_link: /contact

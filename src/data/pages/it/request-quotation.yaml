@@ -1,27 +1,27 @@
 hero_text:
-  tagline: Get a Quote
-  title: Request a Quotation<br />for Your Project
-  subtitle: Tell us about your requirements and our team will respond with a detailed quotation within 2 business days.
+  tagline: Richiedi un preventivo
+  title: Richiedi un preventivo<br />per il tuo progetto
+  subtitle: Dicci i tuoi requisiti e il nostro team risponderà con un preventivo dettagliato entro 2 giorni lavorativi.
 steps2_process:
-  title: How It Works
-  subtitle: Four simple steps from inquiry to quotation.
+  title: Come Funziona
+  subtitle: Quattro semplici passi dalla richiesta di informazioni al preventivo.
   items:
-    - title: 'Step 1: Submit Your Requirements'
-      description: Fill out the form below with your product type, quantity, and specifications. The more detail you provide, the more accurate your quotation.
+    - title: 'Passo 1: Invia le tue richieste'
+      description: Compila il modulo sottostante con il tipo di prodotto, la quantità e le specifiche. Più dettagli fornisci, più accurato sarà il tuo preventivo.
       icon: tabler:file-text
-    - title: 'Step 2: We Review & Advise'
-      description: Our engineering team reviews your requirements and may contact you for clarification. We provide recommendations on product configuration and options.
+    - title: 'Fase 2: Esaminiamo e Consigliamo'
+      description: Il nostro team di ingegneri esamina le vostre esigenze e potrebbe contattarvi per chiarimenti. Forniamo raccomandazioni sulla configurazione e le opzioni del prodotto.
       icon: tabler:users
-    - title: 'Step 3: Receive Your Quote'
-      description: You receive a detailed quotation including unit pricing, MOQ, lead time, payment terms, and shipping options. Typically within 48 hours.
+    - title: 'Passo 3: Ricevi il tuo preventivo'
+      description: Riceverai un preventivo dettagliato che include il prezzo unitario, la quantità minima d'ordine, i tempi di consegna, le condizioni di pagamento e le opzioni di spedizione. Di solito entro 48 ore.
       icon: tabler:currency-dollar
-    - title: 'Step 4: Sample & Production'
-      description: After quote acceptance, we proceed to sample production (if applicable) or directly to mass production. Regular updates throughout the process.
+    - title: 'Fase 4: Campione e Produzione'
+      description: Dopo l'accettazione del preventivo, procediamo con la produzione di campioni (se applicabile) o direttamente con la produzione di massa. Aggiornamenti regolari durante tutto il processo.
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
-  title: Tell Us About Your Project
-  subtitle: All fields with * are required.
+  tagline: Modulo di preventivo
+  title: Parlaci del tuo progetto
+  subtitle: Tutti i campi con * sono obbligatori.
   fields:
     - name: Product Type
       type: select
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - Centro Subacqueo
+        - Pesca
+        - Turismo Marino / Resort
+        - Ricerca e soccorso
+        - Gommone da yacht
+        - Imbarcazione da lavoro commerciale
+        - Governo / Militare
+        - OEM / Etichetta Privata
+        - Personale / Ricreativo
+        - Altro
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
-        - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - Nessuna preferenza
+        - PVC di grado marina (1100 dtex)
+        - Hypalon / CSM Premium
+        - Scafo in vetroresina
+        - Scafo in alluminio
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: es. fuoribordo 60 CV, senza motore, doppio 115 CV
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: ad esempio colori personalizzati, marchio/logo, confezionamento, accessori speciali
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: ad esempio consegna entro 90 giorni
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: Descrivi la tua applicazione, specifiche tecniche o eventuali requisiti speciali — includi disegni di riferimento, specifiche o link se disponibili
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: Carica la tua scheda tecnica, disegno o documento di riferimento (PDF, DWG, DXF)
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: Carica il tuo logo o opera d'arte per la personalizzazione del marchio (AI, EPS, PNG)
 cta:
-  title: Prefer to discuss by email?
-  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
+  title: Preferisci discutere via email?
+  subtitle: Invia la tua richiesta direttamente al nostro team di vendita e risponderemo entro 24 ore.
   actions:
     - variant: primary
-      text: Email us directly
+      text: Inviaci un'email direttamente
       href: /contact

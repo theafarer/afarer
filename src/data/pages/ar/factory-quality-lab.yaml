@@ -1,60 +1,56 @@
 hero:
-  tagline: Quality Control Laboratory
-  title: Testing Laboratory & Quality Assurance
-  subtitle: Independent quality lab with ISO 9001 processes —every unit tested before shipment
-
-intro: afarer operates a dedicated quality control laboratory that operates independently from production. Every batch of raw material and every finished boat passes through documented inspection protocols before release. Our QC team reports directly to management, ensuring impartial quality decisions.
-
+  tagline: مختبر مراقبة الجودة
+  title: مختبر الاختبار وضمان الجودة
+  subtitle: مختبر جودة مستقل يعمل بإجراءات ISO 9001 —يُختبر كل منتج قبل الشحن
+intro: تدير afarer مختبراً متخصصاً لمراقبة الجودة يعمل بشكل مستقل عن الإنتاج. تمر كل دفعة من المواد الخام وكل قارب مكتمل عبر بروتوكولات فحص موثقة قبل الإفراج عنه. يرفع فريق مراقبة الجودة تقاريره مباشرة إلى الإدارة، ما يضمن قرارات جودة محايدة.
 highlights:
   - value: 100%
-    label: Units pressure-tested
-    detail: Every chamber, every boat
+    label: وحدات خضعت لاختبار الضغط
+    detail: كل غرفة، كل قارب
   - value: 48 h
-    label: Air retention test duration
-    detail: At 1.25× rated pressure
+    label: مدة اختبار الاحتفاظ بالهواء
+    detail: عند 1.25× الضغط الاسمي
   - value: '&lt;5%'
-    label: Max allowed pressure drop
-    detail: Over 24-hour hold period
+    label: أقصى انخفاض مسموح للضغط
+    detail: فترة احتجاز تتجاوز 24 ساعة
   - value: AQL 2.5
-    label: Major defect threshold
-    detail: Per ISO 2859 sampling
-
+    label: حد العيوب الرئيسية
+    detail: وفقًا لنظام أخذ العينات ISO 2859
 test_procedures:
-  - title: Raw Material Inspection
-    description: Every incoming batch of PVC, Hypalon, drop-stitch fabric, and hardware is tested before acceptance. Tensile strength (ASTM D751), tear resistance (ISO 4674), and UV resistance are verified. Non-conforming materials are quarantined and returned.
+  - title: فحص المواد الخام
+    description: تُختبر كل دفعة واردة من PVC وهيبالون وقماش الدروب-ستيتش والتركيبات قبل قبولها. يُتحقق من قوة الشد (ASTM D751) ومقاومة التمزق (ISO 4674) ومقاومة الأشعة فوق البنفسجية. وتُعزل المواد غير المطابقة وتُعاد إلى المورد.
     standards:
       - ASTM D751 (tensile)
-      - ISO 4674 (tear)
+      - ISO 4674 (التمزق)
       - ISO 4892 (UV)
-  - title: In-Process QC Checkpoints
-    description: Production operators perform self-inspection at each stage. QC auditors conduct random sampling throughout the shift. Weld peel tests are performed every 50 units. Dimensional checks happen every 20th panel.
+  - title: نقاط فحص مراقبة الجودة أثناء الإنتاج
+    description: يقوم مشغلو الإنتاج بالتفتيش الذاتي في كل مرحلة. يقوم مدققو مراقبة الجودة بأخذ عينات عشوائية خلال الوردية. تُجرى اختبارات تقشير اللحامات كل 50 وحدة. تتم الفحوصات البُعدية كل 20 لوحة.
     standards:
       - ASTM D751 (peel)
-      - Internal 100-point checklist
-      - ISO 2859 sampling
-  - title: 48-Hour Air Retention Test
-    description: Every tube chamber is inflated to 125% of rated pressure and held for 48 hours. Pressure sensors log continuously with temperature compensation. Any chamber exceeding 5% pressure drop triggers automatic batch re-inspection.
+      - قائمة فحص داخلية من 100 نقطة
+      - أخذ العينات وفق معيار ISO 2859
+  - title: اختبار الاحتفاظ بالهواء لمدة 48 ساعة
+    description: يُنفخ كل حجرة من حجرات الأنبوب حتى 125% من الضغط المقنن ويُحتفظ بها لمدة 48 ساعة، مع تسجيل مستمر من أجهزة استشعار الضغط وتعويض درجات الحرارة. وأي حجرة تتجاوز نسبة انخفاض ضغطها 5% تخضع تلقائيًا لإعادة فحص الدفعة.
     standards:
       - ISO 6185
       - CE 2013/53/EU
-  - title: Load & Balance Testing
-    description: Completed boats are tested at maximum rated capacity for stability, freeboard, and handling. Each vessel undergoes water testing before final inspection approval.
+  - title: اختبار الحمل والتوازن
+    description: تُختبر القوارب المكتملة بأقصى حمولة مقررة للتحقق من الثبات، وارتفاع الجانب الحر، وسهولة المناورة. ويخضع كل قارب لاختبار على الماء قبل اعتماد الفحص النهائي.
     standards:
       - ISO 12217
       - CE 2013/53/EU
-
 equipment:
   - name: Universal Testing Machine (tensile)
-    spec: 5 kN, ASTM D751 compliant
+    spec: 5 kN، متوافق مع ASTM D751
   - name: Pressure Decay Tester
-    spec: Multi-channel, 0—0 psi, datalogging
+    spec: متعدد القنوات، 0—0 psi، مع تسجيل البيانات
   - name: UV Weathering Chamber
-    spec: ISO 4892, 1,000 h cycles
+    spec: ISO 4892، دورة 1,000 ساعة
   - name: Thickness Gauge (digital)
-    spec: 0.01 mm resolution
+    spec: دقة 0.01 مم
   - name: Peel Tester (weld)
-    spec: Motorized, 50 N capacity
+    spec: مزوّد بمحرك، سعة 50 نيوتن
   - name: Temperature Chamber
-    spec: -40 °C to +100 °C
+    spec: '-40 °C إلى +100 °C'
   - name: Leak Detection Tank
-    spec: 6 m × 2 m, illuminated
+    spec: 6 م × 2 م، مضاء

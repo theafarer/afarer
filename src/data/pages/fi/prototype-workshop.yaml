@@ -1,95 +1,110 @@
 meta:
-  title: 'Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}'
-  description: 'From CAD to sea-ready boat in 8-12 weeks. Our Prototype Workshop builds, rigs, and sea-trials custom RIBs and inflatable boats. Start your prototype project today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Prototyypityspaja — Täysimittainen RIB-prototyypitys ja meritestit | {SITE}
+  description: CADista merille valmiiksi veneeksi 8–12 viikossa. Prototyyppityöpajamme rakentaa, varustaa ja meritestaa mukautetut RIBit ja ilmatäytettävät veneet. Aloita prototyyppiprojektisi tänään.
+back_text: Takaisin tutkimus- ja kehityskeskukseen
+home_label: Koti
 hero:
-  tagline: 'Lab 05'
-  title: 'Prototype Workshop'
-  subtitle: 'From CAD model to sea-ready boat — built, fitted, and proven'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp'
-  image_alt: 'Afarer prototype workshop boat fabrication'
+  tagline: Laboratorio 05
+  title: Prototyyppipaja
+  subtitle: CAD-mallista merikelpoiseksi veneeksi — rakennettu, varusteltu ja testattu
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp
+  image_alt: Veneenrakennus Afarerin protopajassa
+intro: >-
+  CAD-malli, olipa se kuinka yksityiskohtainen tahansa, ei voi paljastaa, miten vene todellisuudessa käyttäytyy, ennen kuin se lasketaan veteen. Siksi prototyyppipajamme on suunniteltu muuttamaan suunnittelutiedot fyysiseksi, merikelpoiseksi veneeksi mahdollisimman nopeasti ja tarkasti. Jokainen
+  uusi {SITE.name}-malli — ja jokainen merkittävä mittatilausvene — käy tämän pajan läpi ennen kuin tuotantotyökalut lyödään lukkoon.
+content_html: >
+  <h2>Missä suunnittelu muotoutuu todellisuudeksi</h2>
 
-intro: 'A CAD model, no matter how detailed, cannot reveal how a boat will actually handle until it meets the water. That is why our Prototype Workshop is designed to translate engineering data into a physical, seagoing craft as quickly and accurately as possible. Every new {SITE.name} model — and every significant custom build — passes through this workshop before the production tooling is committed.'
+  <p>Työpaja on varustettu täysimittaisille rungon, piipujen ja riggarin samanaikaiselle valmistukselle. Tämä rinnakkainen työnkulku lyhentää prototyypin valmistusaikaa 8–12 viikkoon insinöörin luovutuksesta lähtien, verrattuna teollisuuden normiin 16–20 viikkoa. Kun sovelluksessasi vaaditaan
+  erikoistunutta ratkaisua, voimme siirtyä konseptista vesikokeisiin alle kolmessa kuukaudessa.</p>
 
-content_html: |
-  <h2>Where design becomes reality</h2>
-  <p>The workshop is fully equipped for simultaneous fabrication of hull, tubes, and rigging. This parallel-workflow approach cuts prototype lead time to 8-12 weeks from engineering release, compared to the industry norm of 16-20 weeks. When your application demands a specialised solution, we can move from concept to on-water validation in under three months.</p>
 
-  <h2>Workshop capabilities</h2>
+  <h2>Työpajan valmiudet</h2>
+
   <table>
-    <thead><tr><th>Workstation</th><th>Equipment</th><th>Purpose</th></tr></thead>
+    <thead><tr><th>Työasema</th><th>Varusteet</th><th>Tarkoitus</th></tr></thead>
     <tbody>
-      <tr><td>Hull fabrication</td><td>Rotational moulding oven (HDPE), TIG welding bay (aluminium), hand-lay-up moulds (fibreglass)</td><td>Full-scale hull production in all three material types</td></tr>
-      <tr><td>Tube assembly</td><td>RF welding press, hot-air tacking station, inflation test jig</td><td>Fabrication of full-size tube assemblies with all baffles, cones, and valves</td></tr>
-      <tr><td>Rigging &amp; fitting</td><td>Engine hoist (500 kg), console mock-up frame, hydraulic hose crimper, electrical harness board</td><td>Complete outfitting: engine, steering, controls, fuel system, electronics, seating</td></tr>
-      <tr><td>Instrumentation bay</td><td>GPS speed sensor, fuel-flow meter, accelerometers, thermocouple array, data-logger</td><td>Sea-trial instrumentation installation and calibration</td></tr>
+      <tr><td>Rungon valmistus</td><td>Kiertomuovausuuni (HDPE), TIG-hitsausbaari (alumiini), käsinlasittumis-mallit (lasikuitu)</td><td>Rungon täysmittainen valmistus kaikissa kolmessa materiaalityypissä</td></tr>
+      <tr><td>Piipun kokoonpano</td><td>RF-hitsauspaine, kuuman ilman liitosasema, kuivauspaine testiviite</td><td>Täysikokoonpanoisten piipu-kokoonpanojen valmistus kaikkine suojilla, konoin ja venttiilein</td></tr>
+      <tr><td>Riggaru ja asennus</td><td>Moottorin nosturi (500 kg), ohjaimen mallikehys, hydraulinen letkenpuristin, sähköasennuspaneeli</td><td>Kokonaisvarustelu: moottori, ohjaus, säätö, polttoainevälineistö, elektroniikka, istumiset</td></tr>
+      <tr><td>Irtaimistobay</td><td>GPS-nopeus-anturi, polttoainevirtamittari, kiihdyttimet, termokoppisarja, tietojen tallentaja</td><td>Meretkokeen irttaimiston asennus ja kalibrointi</td></tr>
     </tbody>
   </table>
 
-  <h2>The prototype journey — step by step</h2>
+
+  <h2>Prototyypin matka — vaihe vaiheelta</h2>
+
   <ol>
-    <li><strong>Engineering handover</strong> — The design package (3D model, FEA report, bill of materials, layup schedule) is formally reviewed by the workshop lead and the project engineer. Any manufacturing concerns are flagged and resolved before cutting begins.</li>
-    <li><strong>Hull production</strong> — The hull is built according to the engineering specification. For HDPE: the rotational moulding programme is loaded from the Moldex3D simulation. For aluminium: the CNC-cut plates are welded in the TIG bay following the approved weld map. For fibreglass: the ply book is followed layer by layer.</li>
-    <li><strong>Tube fabrication</strong> — Fabric is cut using CNC-pattern templates, then RF-welded into full-size chambers. Each chamber is inflated to test pressure and left for 24 h for initial stabilisation.</li>
-    <li><strong>Assembly &amp; rigging</strong> — Hull and tubes are mated. The engine is hung, steering and controls are connected, fuel system is installed, and all electrical circuits are wired and verified.</li>
-    <li><strong>Static tests</strong> — Before the boat touches water, it undergoes: buoyancy check (full load + 30 % reserve), fuel system pressure test, steering system full-lock cycle test, electrical earth-bond continuity test.</li>
-    <li><strong>Sea trial programme</strong> — 20 hours of in-water testing, detailed below.</li>
-    <li><strong>Prototype review</strong> — A formal sign-off meeting is held with engineering, production, and quality teams. Any required design changes are documented and incorporated into the production release.</li>
+    <li><strong>Insinöörin luovutus</strong> — Suunnittelupaketti (3D-malli, FEA-raportti, osalta lista, kerrosohjelma) tarkastetaan virallisesti työpajan johtajan ja projekti-insinöörin toimesta. Kaikki valmistuskysymykset merkitään ja ratkaistaan ennen leikkauksen aloittamista.</li>
+    <li><strong>Rungon tuotanto</strong> — Runko rakennetaan insinöörin tarkennuksen mukaan. HDPE:lle kiertomuovausohjelma ladataan Moldex3D-simulaatiosta. Alumiinille: CNC-leikatut levyt hitataan TIG-bayssa hyväksytyn hitsauskaavion mukaisesti. Lasikuidulle: kerros-kirjaa seurataan kerros kerrallaan.</li>
+    <li><strong>Piipun valmistus</strong> — Kangas leikataan CNC-pohjatietojen mukaan, sitten RF-hitataan täysikokoisiin kammioihin. Jokainen kammio puhallettiin testipaineeseen ja jäätetään 24 tuntia alustusta varten.</li>
+    <li><strong>Kokoonpano ja riggaru</strong> — Runko ja piiput liitetään. Moottori ripustetaan, ohjaus ja säätö yhdistetään, polttoainevälineistö asennetaan ja kaikki sähköpiirit kytketään ja varmistetaan.</li>
+    <li><strong>Staattiset testit</strong> — Ennen kuin vene koskettaa vettä, se läpäisee: kelluntatarkistus (kokolasti + 30 % varavuoro), polttoainevälineistön painekoe, ohjausjärjestelmän täys lukituskiertokoe, sähkön maapainokokkuuden jatkuvuuskoe.</li>
+    <li><strong>Meretkoeohjelma</strong> — 20 tuntia vedessä testausta, yksityiskohtaisesti alla.</li>
+    <li><strong>Prototyypin tarkistus</strong> — Virallinen hyväksymiskokous järjestetään insinöörien, tuotannon ja laadun tiimien kanssa. Kaikki tarvittavat suunnittelumuutokset dokumentoidaan ja sisällytetään tuotannon luovutukseen.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20-Hour Sea Trial Programme — Test Schedule</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20-Tunnin Meretkoeohjelma — Testausaikataulu</p>
     <div class="space-y-2 text-sm">
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Harbour manoeuvring — low-speed handling, reverse, fendering check</span>
+        <span class="flex-1">Sataman manöövöinti — hitaankin käsittelyn perusteella, perä, fenderitarkistus</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">4 h</span>
-        <span class="flex-1">Speed trial — GPS-verified top speed, cruise speed, fuel consumption at 3 RPM points</span>
+        <span class="flex-1">Nopeuskokeet — GPS-tarkistettu huippunopeus, kruiisiknopeus, polttoaineen kulutus 3 RPM-kohdassa</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Turning test — tactical diameter, advance, and transfer at 20 kn, port and starboard</span>
+        <span class="flex-1">Kääntötestit — taktinen halkaisija, eteneminen ja siirtymä 20 solmissa, vasemmalla ja oikealla</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Slamming test — repeated runs through 0.5–1.0 m chop; accelerometer on helm seat base</span>
+        <span class="flex-1">Koputustestit — toistuvat kulut 0,5–1,0 m aaltoissa; kiihdyttin ohjauksen paikan pohjassa</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Stability test — static heel angle with 4 crew + gear to starboard, offset load</span>
+        <span class="flex-1">Stabiilisuustestit — staattinen kallistuskulma 4 miehistö + varuste oikealle, epitasainen kuorma</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Endurance run — 3 h continuous at cruise speed; temperature monitoring (engine, fuel, electrical)</span>
+        <span class="flex-1">Kestävyysajo — 3 tuntia jatkuvasti kruiisiknopeudella; lämpötilan seuranta (moottori, polttoaine, sähkö)</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Final inspection — post-trial inspection of all systems, tighten/check all fasteners, document findings</span>
+        <span class="flex-1">Lopullinen tarkastus — tentin jälkipyyhi kaikille järjestelmille, kiristä/tarkasta kaikki kiinnitykset, dokumentoi tulokset</span>
       </div>
     </div>
   </div>
 
-  <h2>Custom prototyping for unique applications</h2>
-  <p>The Prototype Workshop is where we solve the problems that standard production boats cannot address. Recent examples include:</p>
+
+  <h2>Erityisprototyypit yksilöllisiin käyttötapauksiin</h2>
+
+  <p>Prototyypityöpaja on se paikka, jossa ratkaistaan ne ongelmat, joita normaali tuotannon venettä ei pysty. Viimeaikaisia esimerkkejä:</p>
+
   <ul>
-    <li>A 7.8 m RIB for a search-and-rescue organisation, requiring a custom cabin structure with roll-over protection, integrated stretcher mounts, and a bow-mounted sonar pod — all prototyped, fitted, and tested at our facility.</li>
-    <li>A 5.2 m inflatable for a hydrographic survey contractor, with a cut-down transom, removable instrument mast, and through-hull transducer pockets designed to minimise flow disturbance.</li>
-    <li>An electric-drive 4.5 m tender for a superyacht, where the prototype was used to validate range, charging infrastructure, and noise levels before the client committed to a fleet of four.</li>
+    <li>7,8 m RIB etsimisen ja pelastusjärjestölle, joka vaatii mukautettu kannen rakenteen kaatumisensuojan, integroidut istumakannattimet ja keulassa sijaitsevan sonar-kopan — kaikki prototyypit asennettu ja testattu laitoksellamme.</li>
+    <li>5,2 m tulehtuva vedetilanteelle hydrografinen mittausurakoitsija, katkaisulla keulalla, irrotettavalla mittausmastolla ja läpi-runton transduser-taskuilla, jotka on suunniteltu virran häiriön minimoimiseksi.</li>
+    <li>Sähköajurin 4,5 m suojusvene superveren, jossa prototyyppi käytettiin toiminnan, latausinfrastruktuurin ja melutasojen validointiin ennen kuin asiakas sitoutui neljän laivaston.</li>
   </ul>
 
-  <h2>Our prototyping team</h2>
-  <p>The workshop is staffed by eight multi-skilled marine technicians, each cross-trained in at least two of the three core disciplines (hull, tube, rigging). The team lead is a master boatbuilder with 16 years of experience spanning custom one-off builds to production series. Every prototype is assigned a dedicated project engineer who serves as the single point of contact for the client throughout the build and trial process.</p>
 
-  <h2>Client involvement</h2>
-  <p>We actively encourage our clients to attend key milestones during the prototype build — particularly the initial fit-out review and the sea trial. Your operational feedback during these stages is invaluable in fine-tuning the boat before it enters production. We do not build in a vacuum; we build in partnership with you.</p>
-  <p>The 20-hour sea trial is also an opportunity for your team to familiarise themselves with the boat's handling, systems layout, and maintenance requirements, ensuring a smooth transition to service when the production boats are delivered.</p>
+  <h2>Prototyypintiimi</h2>
 
+  <p>Työpajassa työskentelee kahdeksan monitaitoisia meriteknikkoa, joista jokainen on koulutettu vähintään kahdessa kolmesta ydinaluetta (runko, piipu, riggaru). Tiimin johtaja on mestari veneenrakentaja 16 vuoden kokemuksella yksilölliset kerran rakennetut rakenteet tuotantosarjoihin. Jokaiselle
+  prototyypille tulee eriko projekti-insinööri, joka toimii asiakkaan ainoana yhteyshenkilönä koko rakennus- ja kokeen ajan.</p>
+
+
+  <h2>Asiakkaan osallistuminen</h2>
+
+  <p>Kannustamme aktiivisesti asiakkaitamme osallistumaan prototyypin rakennuksen tärkeisiin virstanpylväisiin — erityisesti alkuvarustelun tarkastus ja meretkoe. Toiminnallinen palaute näissä vaiheissa on arvokasta veneen hienosäätämiseksi ennen kuin tuotteisto tulee tuotantoon. Emme rakenna
+  tyhjiössä; rakennamme kumppanina kanssanne.</p>
+
+  <p>20 tunnin meretkoe on myös mahdollisuus teidän tiimienne tutustua veneen kuljetukseihin, järjestelmien asetteluun ja huolto vaatimuksiin, mikä varmistaa sujuvan siirtymisen palvelukseen kun tuotannon veneet luovutetaan.</p>
 cta:
-  title: 'Start your prototype project'
-  subtitle: 'Tell us about the boat you need and we will propose a prototype development plan.'
-  button_text: 'Contact our prototyping team'
-  button_link: /contact
+  title: Aloita prototyyppiprojektisi
+  subtitle: Kerro tarvitsimastasi veneestä ja ehdotamme prototyypin kehityssuunnitelmaa.
+  button_text: Ota yhteys prototyyppitiimiimme
+  button_link: /yhteystiedot

@@ -17,7 +17,7 @@ contact_form:
       label: Όνομα
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: χώρες
       step: 1
     - name: lastName
       label: Επώνυμο
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
+          label: Επιλέξτε τον εκτιμώμενο όγκο σας...
+        - value: δείγμα
+          label: Μόνο δείγματα / πρωτότυπα
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5–10 μονάδες (Τυπικό MOQ)
         - value: 100-500
-          label: 100–500 units
-        - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 100–500 μονάδες
+        - value: Πάνω από 500
+          label: 500+ μονάδες (Τιμή όγκου)
       step: 1
     - name: companyName
       label: Εταιρεία
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
-        - value: none
-          label: Standard product (no customization)
-        - value: logo
-          label: Custom Logo / Branding only
-        - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: Επιλέξτε τύπο προσαρμογής...
+        - value: Κανένα
+          label: Τυποποιημένο προϊόν (χωρίς προσαρμογή)
+        - value: λογότυπο
+          label: Μόνο Προσαρμοσμένο Λογότυπο / Σήμα
+        - value: πλήρης
+          label: Πλήρες OEM (μέγεθος, χρώμα, γραφικά, συσκευασία)
+        - value: Συμβουλευτική
+          label: Δεν είμαι σίγουρος — χρειάζομαι συμβουλή
       step: 1
     - name: address
       label: Διεύθυνση
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
+          label: Επιλέξτε κατηγορία προϊόντος...
+        - value: όλα
+          label: Όλα τα προϊόντα / Πλήρης κατάλογος
         - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: Πίνακες SUP / Πολωτά
+        - value: ασφάλεια
+          label: Εξοπλισμός Ασφαλείας / Σωσίβια
+        - value: αξεσουάρ
+          label: Αξεσουάρ (αντλίες, κουπιά, τσάντες)
       step: 1
     - name: zip
       label: Ταχ. Κώδικας

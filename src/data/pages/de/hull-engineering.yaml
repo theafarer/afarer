@@ -1,85 +1,104 @@
 meta:
-  title: 'Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}'
-  description: 'Explore our Hull Engineering Studio for CAD design, finite element analysis (FEA), and custom HDPE/aluminium/fibre glass hull development. Contact our engineering team to start your next RIB project.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Hull Engineering Studio — CAD, FEA & Maßgeschneidertes RIB-Rumpfdesign | {SITE}
+  description: Erkunden Sie unser Hull Engineering Studio für CAD-Design, Finite-Elemente-Analyse (FEA) und die Entwicklung individueller HDPE-/Aluminium-/Fiberglashüllen. Kontaktieren Sie unser Ingenieurteam, um Ihr nächstes RIB-Projekt zu starten.
+back_text: Zurück zum F&E-Zentrum
+home_label: Zuhause
 hero:
-  tagline: 'Lab 02'
-  title: 'Hull Engineering Studio'
-  subtitle: 'Digital simulation, structural intelligence, custom hull design'
-  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
-  image_alt: 'Afarer hull engineering CAD design workstation'
+  tagline: Labor 02
+  title: Hull Ingenieurstudio
+  subtitle: Digitale Simulation, strukturelle Intelligenz, maßgeschneidertes Rumpfdesign
+  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
+  image_alt: Afarer Hüllentechnik CAD-Design-Arbeitsstation
+intro: >-
+  Der Rumpf ist das Rückgrat eines jeden RIB- oder Schlauchbootes. Er muss leicht genug sein, um effizient zu gleiten, stark genug, um Aufpralllasten zu absorbieren, und dimensionsstabil über einen weiten Temperaturbereich. Bei {SITE.name} kombiniert unser Hull Engineering Studio fortschrittliche
+  CAD-Modellierung, Finite-Elemente-Analyse (FEA) und jahrzehntelange praktische Erfahrung in der Schiffbaukunst, um Rümpfe zu liefern, die für ihre jeweilige Mission optimiert sind – nicht generische Formen, die aus einem Katalog angepasst wurden.
+content_html: >
+  <h2>Wo Stärke auf Hydrodynamik trifft</h2>
 
-intro: 'The hull is the backbone of any RIB or inflatable boat. It must be light enough to plane efficiently, strong enough to absorb impact loads, and dimensionally stable across a wide temperature range. At {SITE.name}, our Hull Engineering Studio combines advanced CAD modelling, finite element analysis (FEA), and decades of practical naval-architecture experience to deliver hulls that are optimised for their intended mission — not generic shapes adapted from a catalogue.'
+  <p>Wir arbeiten mit drei primären Rumpfwerkstoffen — rotationalgeformtem HDPE, geschweißtem marinequalifiziertem Aluminium und handgelegtem glasfaserverstärktem Kunststoff — und verfügen über die ingenieurtechnische Fähigkeit, jeden einzelnen in-house zu konstruieren, zu simulieren und zu
+  validieren.</p>
 
-content_html: |
-  <h2>Where strength meets hydrodynamics</h2>
-  <p>We work with three primary hull materials — rotationally moulded HDPE, welded marine-grade aluminium, and hand-laid fibreglass — and have the engineering capability to design, simulate, and validate each one in-house.</p>
 
-  <h2>Design tools and standards</h2>
-  <p>Our digital engineering environment includes:</p>
+  <h2>Konstruktionswerkzeuge und Normen</h2>
+
+  <p>Unsere digitale Ingenieurmgebung umfasst:</p>
+
   <table>
-    <thead><tr><th>Capability</th><th>Software / Tool</th><th>Application</th></tr></thead>
+    <thead><tr><th>Fähigkeit</th><th>Software / Werkzeug</th><th>Anwendung</th></tr></thead>
     <tbody>
-      <tr><td>3D parametric modelling</td><td>SolidWorks Professional</td><td>Hull surface, stringer system, engine bracket, deck layout</td></tr>
-      <tr><td>Finite element analysis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Stress mapping, modal analysis, crash/impact simulation</td></tr>
-      <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamic drag prediction, trim optimisation</td></tr>
-      <tr><td>Laminate engineering</td><td>ESAComp / CADEC</td><td>Fibreglass layer stacking, core selection, weight estimation</td></tr>
-      <tr><td>Mould flow simulation</td><td>Moldex3D</td><td>Rotomoulding wall-thickness prediction</td></tr>
+      <tr><td>3D-parametrische Modellierung</td><td>SolidWorks Professional</td><td>Rumpfoberfläche, Stringersystem, Motorhalterung, Deckslayout</td></tr>
+      <tr><td>Finite-Elemente-Analyse</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Spannungsverteilung, Modalanalyse, Aufprall-/Kollisions-Simulation</td></tr>
+      <tr><td>Numerische Strömungsmechanik</td><td>Ansys Fluent / Star-CCM+</td><td>Vorhersage des hydrodynamischen Widerstands, Trimmoptimierung</td></tr>
+      <tr><td>Laminatkonstruktion</td><td>ESAComp / CADEC</td><td>Glasfaser-Schichtstapelung, Kernmaterialauswahl, Gewichtsschätzung</td></tr>
+      <tr><td>Spritzguss-Simulation</td><td>Moldex3D</td><td>Vorhersage der Wandstärke beim Rotationsgießen</td></tr>
     </tbody>
   </table>
 
-  <h2>Our engineering workflow</h2>
-  <p>Every hull design, whether it is a standard model or a fully custom project, follows a rigorous five-stage process:</p>
+
+  <h2>Unser ingenieurtechnischer Workflow</h2>
+
+  <p>Jede Rumpfkonstruktion, ob Standardmodell oder vollständiges Individualprojekt, durchläuft einen strengen fünfstufigen Prozess:</p>
+
   <ol>
-    <li><strong>Concept &amp; requirements gathering</strong> — We meet with you to define payload, speed envelope, sea-state capability, towing requirements, and any special mission equipment (deck hatches, console positions, fuel-tank integration).</li>
-    <li><strong>3D surfacing &amp; hydrostatic calculation</strong> — The hull form is modelled in SolidWorks and checked for hydrostatic stability (GM, righting arm) using built-in analysis tools.</li>
-    <li><strong>Structural FEA</strong> — Load cases are defined: static (crew + gear), dynamic (planing impacts at 5g), and slamming (dropping from a wave crest at 3 m/s). Stress contours are reviewed; safety factor ≥ 2.5 is mandatory.</li>
-    <li><strong>CFD drag optimisation</strong> — The hull is simulated at three loading conditions and five speeds. Wetted surface area, trim angle, and residual resistance are iteratively reduced.</li>
-    <li><strong>Design review &amp; release</strong> — The complete engineering package (3D model, FEA report, CFD report, weight estimate, ply book) is reviewed by our senior naval architect before release to the prototype workshop.</li>
+    <li><strong>Konzept &amp; Anforderungserfassung</strong> — Wir treffen uns mit Ihnen, um Nutzlast, Geschwindigkeitsbereich, Seegangsverhalten, Abschleppanforderungen und jede besondere Missionsausrüstung (Decksluken, Konsolenpositionen, Kraftstofftankintegration) zu definieren.</li>
+    <li><strong>3D-Modellierung &amp; hydrostatische Berechnung</strong> — Die Rumpfform wird in SolidWorks modelliert und auf hydrostatische Stabilität (GM, Aufrichtungsarm) mit integrierten Analysewerkzeugen geprüft.</li>
+    <li><strong>Strukturelle FEA</strong> — Lastfälle werden definiert: statisch (Crew + Ausrüstung), dynamisch (Planungsaufprall bei 5g) und Schlaglast (Absturz von einem Wellenkamm mit 3 m/s). Spannungskonturen werden überprüft; ein Sicherheitsfaktor ≥ 2,5 ist zwingend vorgeschrieben.</li>
+    <li><strong>CFD-Widerstandsoptimierung</strong> — Der Rumpf wird bei drei Beladungszuständen und fünf Geschwindigkeiten simuliert. Benetzungsfläche, Trimhwinkel und Restwiderstand werden iterativ reduziert.</li>
+    <li><strong>Konstruktionsprüfung &amp; Freigabe</strong> — Das vollständige Ingenieurpaket (3D-Modell, FEA-Bericht, CFD-Bericht, Gewichtsschätzung, Stapelbuch) wird von unserem Senior-Schiffbauingenieur geprüft, bevor es an die Prototypenwerkstatt freigegeben wird.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Stress Distribution — RIB 450 Patrol Hull (Aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Spannungsverteilung — RIB 450 Patrouillenrumpf (Aluminium 5083)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
-        <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
-        <span class="text-gray-500">Safety factor at max payload</span>
+        <span class="block text-2xl font-bold text-blue-600">2,8 : 1</span>
+        <span class="text-gray-500">Sicherheitsfaktor bei max. Nutzlast</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
-        <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
-        <span class="text-gray-500">Drag reduction vs previous generation</span>
+        <span class="block text-2xl font-bold text-blue-600">15,2 %</span>
+        <span class="text-gray-500">Widerstandsreduktion gegenüber Vorgängergeneration</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
-        <span class="text-gray-500">Peak slamming pressure (design limit)</span>
+        <span class="text-gray-500">Spitzen-Schlagdruck (Begrenzungswert)</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
-        <span class="text-gray-500">Cumulative FEA runtime in 2025</span>
+        <span class="text-gray-500">Kumulierte FEA-Laufzeit im Jahr 2025</span>
       </div>
     </div>
   </div>
 
-  <h2>Customisation: your hull, your rules</h2>
-  <p>No two operators have identical requirements. A harbour-patrol RIB needs a shallow-V hull for stability at low speed; a fast-interception craft needs a deep-V with spray rails; a dive-support boat needs a wide beam and a low transom. We do not force your application into a pre-existing hull shape. We design from your specification upward.</p>
-  <p>Examples of recent custom hull engineering projects:</p>
+
+  <h2>Individualisierung: Ihr Rumpf, Ihre Regeln</h2>
+
+  <p>Kein zwei Betreiber haben identische Anforderungen. Ein Hafen-Patrouillen-RIB benötigt einen Rumpf mit flachem V für Stabilität bei niedriger Geschwindigkeit; ein Schnelleinsatzboot braucht ein tiefes V mit Sprayleisten; ein Tauchunterstützungsboot benötigt eine große Breite und einen niedrigen
+  Heckspiegel. Wir zwingen Ihre Anwendung nicht in eine vorgefertigte Rumpfform. Wir gestalten ausgehend von Ihrer Spezifikation nach oben.</p>
+
+  <p>Beispiele aktueller individueller Rumpfprojekte:</p>
+
   <ul>
-    <li>A stretched 6.8 m HDPE hull for a Caribbean tour operator, with a reinforced bow for beach landings (+15 % bottom thickness).</li>
-    <li>A lightweight aluminium 7.2 m RIB for a coast guard, with integrated fuel-tank baffles and equipment-locker stiffeners.</li>
-    <li>A fibreglass 5.5 m dive boat with a cut-down transom and twin battery boxes, designed for easy snorkeller reboarding.</li>
+    <li>Ein verlängerter 6,8 m HDPE-Rumpf für einen karibischen Touranbieter, mit verstärktem Bug für Strandlandungen (+15 % Bodenstärke).</li>
+    <li>Ein leichter Aluminium-RIB mit 7,2 m für eine Küstenwache, mit integrierten Kraftstofftankschalldämpfern und Ausrüstungsfach-Versteifungen.</li>
+    <li>Ein glasfaserverstärkter 5,5 m Tauchboot mit abgesenktem Heckspiegel und doppelten Batteriekästen, konzipiert für das einfache Wiedereinsteigen von Schnorchlern.</li>
   </ul>
 
-  <h2>Our engineers</h2>
-  <p>The studio is led by a senior naval architect with 14 years of experience in high-speed craft design, supported by two mechanical engineers specialised in FEA and CFD. All three hold advanced degrees in marine engineering or naval architecture from internationally recognised universities. The team publishes regularly in industry journals and presents at conferences such as the International Conference on High-Performance Marine Vehicles.</p>
 
-  <h2>Partner with us on your next hull</h2>
-  <p>From the first concept sketch to the final stress report, our Hull Engineering Studio is your partner in creating a boat that is not just built — but engineered. We invest the simulation hours upfront so that every weld, every laminate layer, and every curve of the hull is there for a reason.</p>
-  <p>Whether you need a minor modification to an existing model or a completely clean-sheet design, we are ready to discuss your requirements.</p>
+  <h2>Unsere Ingenieure</h2>
 
+  <p>Das Studio wird von einem Senior-Schiffbauingenieur mit 14 Jahren Erfahrung in der Konstruktion von Hochgeschwindigkeitsfahrzeugen geleitet, unterstützt von zwei Maschbauingenieuren mit Spezialisierung auf FEA und CFD. Alle drei verfügen über einen Abschluss in Marineingenieurwesen oder
+  Schiffbau von international anerkannten Universitäten. Das Team veröffentlicht regelmäßig in Fachzeitschriften und präsentiert auf Konferenzen wie der International Conference on High-Performance Marine Vehicles.</p>
+
+
+  <h2>Partnerschaft mit uns für Ihren nächsten Rumpf</h2>
+
+  <p>Vom ersten Konzeptentwurf bis zum finalen Spannungsbericht ist unser Hull Engineering Studio Ihr Partner bei der Schaffung eines Bootes, das nicht nur gebaut — sondern konstruiert ist. Wir investieren die Simulationsstunden im Voraus, damit jede Schweißnaht, jede Laminatschicht und jede Kurve
+  des Rumpfs einen Grund hat.</p>
+
+  <p>Ob Sie eine geringfügige Änderung an einem bestehenden Modell oder ein völlig neues Konzept benötigen — wir sind bereit, Ihre Anforderungen zu besprechen.</p>
 cta:
-  title: 'Start your hull design consultation'
-  subtitle: 'Tell us about your mission profile and we will propose an engineering path.'
-  button_text: 'Contact our engineering team'
-  button_link: /contact
+  title: Beginnen Sie Ihre Rumpfdesign-Beratung
+  subtitle: Erzählen Sie uns von Ihrem Missionsprofil und wir werden einen technischen Weg vorschlagen.
+  button_text: Kontaktieren Sie unser Ingenieurteam
+  button_link: /kontakt

@@ -1,9 +1,9 @@
 hero_text:
-  tagline: Get a Quote
+  tagline: Obtener una cotización
   title: Solicite un Presupuesto<br />para su Proyecto
   subtitle: Cuéntenos sus requisitos. Respondemos con presupuesto detallado en 2 días hábiles.
 steps2_process:
-  title: How It Works
+  title: Cómo Funciona
   subtitle: Cuatro pasos simples desde la consulta hasta el presupuesto.
   items:
     - title: 'Paso 1: Envíe sus requisitos'
@@ -19,7 +19,7 @@ steps2_process:
       description: Tras la aceptación del presupuesto, procedemos a la producción de muestras o directamen
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
+  tagline: Formulario de Cotización
   title: Cuéntenos sobre su proyecto
   subtitle: Todos los campos con * son obligatorios.
   fields:
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - Centro de buceo
+        - Pesca
+        - Turismo Marino / Resort
+        - Búsqueda y rescate
+        - Lancha auxiliar de yate
+        - Barco de trabajo comercial
+        - Gobierno / Militar
+        - Fabricante de equipo original / Marca privada
+        - Personal / Recreativo
+        - Otros
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
-        - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - Sin preferencia
+        - PVC de grado marino (1100 dtex)
+        - Hypalon / CSM Premium
+        - Casco de fibra de vidrio
+        - Casco de aluminio
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: p. ej. motor fuera de borda de 60 HP, sin motor, doble 115 HP
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: por ejemplo, colores personalizados, marca/logotipo, embalaje, accesorios especiales
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: por ejemplo, entrega dentro de 90 días
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: Describa su aplicación, especificaciones técnicas o cualquier requisito especial —incluya dibujos de referencia, especificaciones o enlaces si están disponibles
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: Sube tu hoja de especificaciones, dibujo o documento de referencia (PDF, DWG, DXF)
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: Sube tu logo o arte para personalización de marca (AI, EPS, PNG)
 cta:
   title: ¿Prefiere discutir por correo?
   subtitle: Envíe su consulta directamente a nuestro equipo de ventas. Respondemos en 24 horas.
   actions:
     - variant: primary
-      text: Email us directly
+      text: Envíanos un correo electrónico directamente
       href: /contact

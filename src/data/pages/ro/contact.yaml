@@ -1,6 +1,6 @@
 hero_text:
   tagline: Contact
-  title: GET IN TOUCH
+  title: CONTACTAȚI-NE
 contact_form:
   id: form
   title: Trimiteți-ne un mesaj
@@ -17,7 +17,7 @@ contact_form:
       label: Prenume
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: țări
       step: 1
     - name: lastName
       label: Nume
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
+          label: Selectați volumul estimat...
+        - value: Probă
+          label: Doar mostre / prototipuri
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5–10 unități (MOQ standard)
         - value: 100-500
-          label: 100–500 units
-        - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 100–500 de unități
+        - value: Peste 500
+          label: 500+ unități (prețuri de volum)
       step: 1
     - name: companyName
       label: Numele companiei
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
-        - value: none
-          label: Standard product (no customization)
+          label: Selectați tipul de personalizare...
+        - value: niciuna
+          label: Produs standard (fără personalizare)
         - value: logo
-          label: Custom Logo / Branding only
+          label: Doar logo / branding personalizat
         - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: OEM complet (dimensiune, culoare, grafică, ambalaj)
+        - value: consultanță
+          label: Nu sunt sigur — am nevoie de consultanță
       step: 1
     - name: address
       label: Adresă
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
+          label: Selectați categoria de produse...
+        - value: toate
+          label: Toate produsele / Catalog complet
         - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: Plăci SUP / Paddleboard-uri
+        - value: siguranță
+          label: Echipament de siguranță / Veste de salvare
+        - value: accesoriu
+          label: Accesorii (pompe, vâsle, saci)
       step: 1
     - name: zip
       label: Cod poștal

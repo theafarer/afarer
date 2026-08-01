@@ -1,85 +1,103 @@
 meta:
-  title: 'Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}'
-  description: 'Explore our Hull Engineering Studio for CAD design, finite element analysis (FEA), and custom HDPE/aluminium/fibre glass hull development. Contact our engineering team to start your next RIB project.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Gövde Mühendisliği Stüdyosu — CAD, FEA ve Özel RIB Gövde Tasarımı | {SITE}
+  description: Gövde Mühendislik Atölyemizde CAD tasarımı, sonlu eleman analizi (FEA) ve özel HDPE/alüminyum/fiberglas gövde geliştirme hakkında bilgi edinin. Bir sonraki RIB projenize başlamak için mühendislik ekibimizle iletişime geçin.
+back_text: Ar-Ge Merkezine Dön
+home_label: Ana Sayfa
 hero:
-  tagline: 'Lab 02'
-  title: 'Hull Engineering Studio'
-  subtitle: 'Digital simulation, structural intelligence, custom hull design'
-  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
-  image_alt: 'Afarer hull engineering CAD design workstation'
+  tagline: Laboratuvar 02
+  title: Gövde Mühendislik Stüdyosu
+  subtitle: Dijital simülasyon, yapısal zeka, özel gövde tasarımı
+  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
+  image_alt: Afarer gövde mühendisliği CAD tasarım istasyonu
+intro: >-
+  Gövde, herhangi bir RIB veya şişirilebilir teknenin omurgasıdır. Verimli bir şekilde plane yapacak kadar hafif, darbe yüklerini absorbe edecek kadar güçlü ve geniş bir sıcaklık aralığında boyutsal olarak stabil olmalıdır. {SITE.name}'de Gövde Mühendisliği Stüdyomuz, gelişmiş CAD modelleme, sonlu
+  eleman analizi (FEA) ve onlarca yıllık pratik deniz mimarlığı deneyimini birleştirerek, katalogdan uyarlanan genel şekiller değil, kendi görevleri için optimize edilmiş gövdeler sunmaktadır.
+content_html: >
+  <h2>Gücün hidrodinamikle buluştuğu yer</h2>
 
-intro: 'The hull is the backbone of any RIB or inflatable boat. It must be light enough to plane efficiently, strong enough to absorb impact loads, and dimensionally stable across a wide temperature range. At {SITE.name}, our Hull Engineering Studio combines advanced CAD modelling, finite element analysis (FEA), and decades of practical naval-architecture experience to deliver hulls that are optimised for their intended mission — not generic shapes adapted from a catalogue.'
+  <p>Üç ana gövde malzemesiyle çalışıyoruz — döner kalıplı HDPE, kaynaklı deniz sınıfı alüminyum ve elde dökülen fiberglas — ve her birini tasarlamak, simüle etmek ve doğrulamak için mühendislik kapasitemiz mevcuttur.</p>
 
-content_html: |
-  <h2>Where strength meets hydrodynamics</h2>
-  <p>We work with three primary hull materials — rotationally moulded HDPE, welded marine-grade aluminium, and hand-laid fibreglass — and have the engineering capability to design, simulate, and validate each one in-house.</p>
 
-  <h2>Design tools and standards</h2>
-  <p>Our digital engineering environment includes:</p>
+  <h2>Tasarım araçları ve standartlar</h2>
+
+  <p>Dijital mühendislik ortamımız şunları içerir:</p>
+
   <table>
-    <thead><tr><th>Capability</th><th>Software / Tool</th><th>Application</th></tr></thead>
+    <thead><tr><th>Kapasite</th><th>Yazılım / Araç</th><th>Uygulama</th></tr></thead>
     <tbody>
-      <tr><td>3D parametric modelling</td><td>SolidWorks Professional</td><td>Hull surface, stringer system, engine bracket, deck layout</td></tr>
-      <tr><td>Finite element analysis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Stress mapping, modal analysis, crash/impact simulation</td></tr>
-      <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamic drag prediction, trim optimisation</td></tr>
-      <tr><td>Laminate engineering</td><td>ESAComp / CADEC</td><td>Fibreglass layer stacking, core selection, weight estimation</td></tr>
-      <tr><td>Mould flow simulation</td><td>Moldex3D</td><td>Rotomoulding wall-thickness prediction</td></tr>
+      <tr><td>3D parametrik modelleme</td><td>SolidWorks Professional</td><td>Gövde yüzeyi, stringer sistemi, motor braket, güverte yerleşimi</td></tr>
+      <tr><td>Sonlu eleman analizi</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Gerilme haritalama, modal analiz, çarpışma/etkileşim simülasyonu</td></tr>
+      <tr><td>Hesaplamalı akışkanlar dinamiği</td><td>Ansys Fluent / Star-CCM+</td><td>Hidrodinamik sürükleme tahmini, trim optimizasyonu</td></tr>
+      <tr><td>Lamine mühendisliği</td><td>ESAComp / CADEC</td><td>Fiberglas katman istiflenmesi, çekirdek seçimi, ağırlık tahmini</td></tr>
+      <tr><td>Kalıp akış simülasyonu</td><td>Moldex3D</td><td>Döner kalıplama duvar kalınlığı tahmini</td></tr>
     </tbody>
   </table>
 
-  <h2>Our engineering workflow</h2>
-  <p>Every hull design, whether it is a standard model or a fully custom project, follows a rigorous five-stage process:</p>
+
+  <h2>Mühendislik iş akışımız</h2>
+
+  <p>Standart bir model veya tamamen özel bir proje olsun, her gövde tasarımı katı bir beş aşamalı süreçten geçer:</p>
+
   <ol>
-    <li><strong>Concept &amp; requirements gathering</strong> — We meet with you to define payload, speed envelope, sea-state capability, towing requirements, and any special mission equipment (deck hatches, console positions, fuel-tank integration).</li>
-    <li><strong>3D surfacing &amp; hydrostatic calculation</strong> — The hull form is modelled in SolidWorks and checked for hydrostatic stability (GM, righting arm) using built-in analysis tools.</li>
-    <li><strong>Structural FEA</strong> — Load cases are defined: static (crew + gear), dynamic (planing impacts at 5g), and slamming (dropping from a wave crest at 3 m/s). Stress contours are reviewed; safety factor ≥ 2.5 is mandatory.</li>
-    <li><strong>CFD drag optimisation</strong> — The hull is simulated at three loading conditions and five speeds. Wetted surface area, trim angle, and residual resistance are iteratively reduced.</li>
-    <li><strong>Design review &amp; release</strong> — The complete engineering package (3D model, FEA report, CFD report, weight estimate, ply book) is reviewed by our senior naval architect before release to the prototype workshop.</li>
+    <li><strong>Kavram ve gereksinim toplama</strong> — Yük, hız aralığı, deniz durumu kapasitesi, çekme gereksinimleri ve özel görev ekipmanları (güverte kapakları, konsol konumları, yakıt tankı entegrasyonu) tanımlamak üzere sizinle görüşüyoruz.</li>
+    <li><strong>3D yüzey oluşturma ve hidrostatik hesaplama</strong> — Gövde formu SolidWorks’te modellenir ve dahili analiz araçları kullanılarak hidrostatik stabilite (GM, düzeltme kolu) kontrol edilir.</li>
+    <li><strong>Yapısal FEA</strong> — Yük durumları tanımlanır: statik (ekip + ekipman), dinamik (5g’de plane etkileri) ve çarpmalı (3 m/s hızla dalga tepesinden düşme). Gerilme kontrolleri gözden geçirilir; emniyet katsayısı ≥ 2,5 zorunludur.</li>
+    <li><strong>CFD sürükleme optimizasyonu</strong> — Gövde üç yükleme durumunda ve beş hızda simüle edilir. Islak yüzey alanı, trim açısı ve artan direnç yinelenerek azaltılır.</li>
+    <li><strong>Tasarım incelemesi ve yayın</strong> — Tam mühendislik paketi (3D model, FEA raporu, CFD raporu, ağırlık tahmini, katman kitabı) prototip atölyesine gönderilmeden önce kıdemli gemi mimarımız tarafından incelenir.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Stress Distribution — RIB 450 Patrol Hull (Aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Gerilme Dağılımı — RIB 450 Patrol Gövdesi (Alüminyum 5083)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
-        <span class="text-gray-500">Safety factor at max payload</span>
+        <span class="text-gray-500">Maksimum yükte emniyet katsayısı</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
-        <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
-        <span class="text-gray-500">Drag reduction vs previous generation</span>
+        <span class="block text-2xl font-bold text-blue-600">%15,2</span>
+        <span class="text-gray-500">Önceki nesle göre sürükleme azalması</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
-        <span class="text-gray-500">Peak slamming pressure (design limit)</span>
+        <span class="text-gray-500">Tepe çarpmalı basınç (tasarım limiti)</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
-        <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
-        <span class="text-gray-500">Cumulative FEA runtime in 2025</span>
+        <span class="block text-2xl font-bold text-blue-600">18 000 saat</span>
+        <span class="text-gray-500">2025’te kümülatif FEA çalışma süresi</span>
       </div>
     </div>
   </div>
 
-  <h2>Customisation: your hull, your rules</h2>
-  <p>No two operators have identical requirements. A harbour-patrol RIB needs a shallow-V hull for stability at low speed; a fast-interception craft needs a deep-V with spray rails; a dive-support boat needs a wide beam and a low transom. We do not force your application into a pre-existing hull shape. We design from your specification upward.</p>
-  <p>Examples of recent custom hull engineering projects:</p>
+
+  <h2>Özelleştirme: gövdeniz, kurallarınız</h2>
+
+  <p>Hiçbir iki operatörün gereksinimleri aynı değildir. Liman devriye RIB’i düşük hızda stabilite için sığ-V gövdeye ihtiyaç duyar; hızlı önleme teknesi sprey raylarıyla derin-V’ye ihtiyaç duyar; dalış destek teknesi geniş bir kirişe ve alçak bir kıç aynasına ihtiyaç duyar. Uygulamanızı önceden var
+  olan bir gövde formuna zorlamıyoruz. Spesifikasyonunuzdan başlayarak tasarlıyoruz.</p>
+
+  <p>Yakın zamanda gerçekleştirilen özel gövde mühendisliği projelerinden örnekler:</p>
+
   <ul>
-    <li>A stretched 6.8 m HDPE hull for a Caribbean tour operator, with a reinforced bow for beach landings (+15 % bottom thickness).</li>
-    <li>A lightweight aluminium 7.2 m RIB for a coast guard, with integrated fuel-tank baffles and equipment-locker stiffeners.</li>
-    <li>A fibreglass 5.5 m dive boat with a cut-down transom and twin battery boxes, designed for easy snorkeller reboarding.</li>
+    <li>Karayipler’deki bir tur operatörü için uzatılmış 6,8 m HDPE gövde, plaj inişleri için takviyeli pruva (+%15 dip kalınlığı).</li>
+    <li>Sahil güvenlik için hafif alüminyum 7,2 m RIB, entegre yakıt tankı baffle’ları ve ekipman dolabı takviyeleri.</li>
+    <li>Kısaltılmış kıç aynası ve çift batarya kutuları olan 5,5 m fiberglas dalış teknesi, snorkelcilerin kolayca tekrar binmesi için tasarlandı.</li>
   </ul>
 
-  <h2>Our engineers</h2>
-  <p>The studio is led by a senior naval architect with 14 years of experience in high-speed craft design, supported by two mechanical engineers specialised in FEA and CFD. All three hold advanced degrees in marine engineering or naval architecture from internationally recognised universities. The team publishes regularly in industry journals and presents at conferences such as the International Conference on High-Performance Marine Vehicles.</p>
 
-  <h2>Partner with us on your next hull</h2>
-  <p>From the first concept sketch to the final stress report, our Hull Engineering Studio is your partner in creating a boat that is not just built — but engineered. We invest the simulation hours upfront so that every weld, every laminate layer, and every curve of the hull is there for a reason.</p>
-  <p>Whether you need a minor modification to an existing model or a completely clean-sheet design, we are ready to discuss your requirements.</p>
+  <h2>Mühendislerimiz</h2>
 
+  <p>Stüdyo, 14 yıllık yüksek hızlı tekne tasarım deneyimine sahip kıdemli bir gemi mimarı tarafından yönetilmektedir ve FEA ile CFD konusunda uzmanlaşmış iki makine mühendisi tarafından desteklenmektedir. Üçü de uluslararası tanınmış üniversitelerden deniz mühendisliği veya gemi mimarlığında ileri
+  derecelere sahiptir. Ekip, endüstri dergilerinde düzenli olarak yayın yapmakta ve Uluslararası Yüksek Performanslı Deniz Araçları Konferansı gibi konferanslarda sunumlar yapmaktadır.</p>
+
+
+  <h2>Bir sonraki gövdenizde bizimle iş birliği yapın</h2>
+
+  <p>İlk kavram eskizinden nihai gerilme raporuna kadar, Gövde Mühendisliği Stüdyomuz yalnızca inşa edilmekle kalmayan — aynı zamanda mühendislikle tasarlanmış bir tekne oluşturmanızda ortağınızdır. Her kaynağı, her laminate katmanını ve her gövde eğrisini bir nedenle yerinde tutmak için simulasyon
+  saatlerine önceden yatırım yapıyoruz.</p>
+
+  <p>Mevcut bir modele küçük bir değişiklik mi gerekiyor yoksa tamamen sıfırdan bir tasarım mı istiyorsunuz, gereksinimlerinizi tartışmaya hazırız.</p>
 cta:
-  title: 'Start your hull design consultation'
-  subtitle: 'Tell us about your mission profile and we will propose an engineering path.'
-  button_text: 'Contact our engineering team'
-  button_link: /contact
+  title: Gövde tasarım danışmanlığınızı başlatın
+  subtitle: Görev profilinizi bize anlatın, size bir mühendislik yolu önerelim.
+  button_text: Mühendislik ekibimizle iletişime geçin
+  button_link: /iletisim

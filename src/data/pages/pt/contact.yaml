@@ -9,7 +9,7 @@ contact_form:
   submit_button: Enviar mensagem
   success_message: Obrigado! A sua mensagem chegou à nossa caixa de entrada. Responderemos num dia útil.
   error_message: Ocorreu um erro ao enviar a sua mensagem. Tente novamente ou envie-nos um e-mail diretamente.
-  default_country_code: '+1'
+  default_country_code: Um
   captcha:
     label: 'Anti-spam: por favor, resolva o seguinte'
   fields:
@@ -17,7 +17,7 @@ contact_form:
       label: Primeiro Nome
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: países
       step: 1
     - name: lastName
       label: Último Nome
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
+          label: Selecione seu volume estimado...
+        - value: amostra
+          label: Apenas amostras / protótipos
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5–10 unidades (MOQ padrão)
         - value: 100-500
-          label: 100–500 units
-        - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 100–500 unidades
+        - value: mais de 500
+          label: 500 unidades (Preços por volume)
       step: 1
     - name: companyName
       label: Nome da Empresa
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
-        - value: none
-          label: Standard product (no customization)
+          label: Selecione o tipo de personalização...
+        - value: nenhum
+          label: Produto padrão (sem personalização)
         - value: logo
-          label: Custom Logo / Branding only
-        - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: Apenas Logotipo / Marca Personalizada
+        - value: cheio
+          label: OEM completo (tamanho, cor, gráficos, embalagem)
+        - value: consulta
+          label: Não tenho certeza — preciso de consulta
       step: 1
     - name: address
       label: Morada
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
-        - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: Selecione a categoria do produto...
+        - value: todos
+          label: Todos os produtos / Catálogo completo
+        - value: e aí
+          label: Pranchas de SUP / Pranchas de Stand Up Paddle
+        - value: segurança
+          label: Equipamento de Segurança / Coletes Salva-vidas
+        - value: acessório
+          label: Acessórios (bombas, remos, bolsas)
       step: 1
     - name: zip
       label: Código Postal
@@ -122,16 +122,16 @@ features2_other_ways:
       description: Kits de imprensa, patrocínios e colaboração no setor.
       icon: tabler:news
     - title: Telefone
-      description: +86 13305324192
+      description: 86 13305324192
       icon: tabler:headset
     - title: E-mail
       description: info@afarer.com
       icon: tabler:mail
     - title: Sede
-      description: Economic Development Zone, Laixi, Qingdao, China, 266600
+      description: Zona de Desenvolvimento Econômico, Laixi, Qingdao, China, 266600
       icon: tabler:map-pin
 map:
   title: A nossa localização
   subtitle: Visite-nos na nossa sede
-  address: Economic Development Zone, Laixi, Qingdao, China, 266600
+  address: Zona de Desenvolvimento Econômico, Laixi, Qingdao, China, 266600
   zoom: 15

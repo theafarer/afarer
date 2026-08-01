@@ -1,85 +1,103 @@
 meta:
-  title: 'Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}'
-  description: 'Explore our Hull Engineering Studio for CAD design, finite element analysis (FEA), and custom HDPE/aluminium/fibre glass hull development. Contact our engineering team to start your next RIB project.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}
+  description: สำรวจ Hull Engineering Studio ของเราสำหรับงานออกแบบ CAD การวิเคราะห์ไฟไนต์เอลิเมนต์ (FEA) และการพัฒนาตัวเรือ HDPE/อะลูมิเนียม/ไฟเบอร์กลาสตามสั่ง ติดต่อทีมวิศวกรของเราเพื่อเริ่มโปรเจกต์เรือ RIB โครงการถัดไปของคุณ
+back_text: ย้อนกลับไปยังศูนย์วิจัยและพัฒนา (R&D Center)
+home_label: หน้าแรก
 hero:
-  tagline: 'Lab 02'
-  title: 'Hull Engineering Studio'
-  subtitle: 'Digital simulation, structural intelligence, custom hull design'
-  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
-  image_alt: 'Afarer hull engineering CAD design workstation'
+  tagline: ห้องปฏิบัติการ 02
+  title: สตูดิโอวิศวกรรมตัวเรือ
+  subtitle: การจำลองแบบดิจิทัล โครงสร้างอัจฉริยะ และการออกแบบตัวเรือตามความต้องการ
+  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
+  image_alt: เวิร์กสเตชันออกแบบ CAD งานวิศวกรรมตัวเรือของ Afarer
+intro: >-
+  ตัวเรือคือกระดูกสันหลังของเรือ RIB หรือเรือเป่าลมทุกลำ ต้องเบาพอที่จะแล่นไถลได้อย่างมีประสิทธิภาพ แข็งแรงพอที่จะรองรับแรงกระแทก และมีเสถียรภาพด้านมิติในช่วงอุณหภูมิที่กว้าง ที่ {SITE.name} สตูดิโอวิศวกรรมตัวเรือของเราผสานการสร้างแบบจำลอง CAD ขั้นสูง การวิเคราะห์ไฟไนต์เอลิเมนต์ (FEA)
+  และประสบการณ์จริงด้านสถาปัตยกรรมต่อเรือนานหลายทศวรรษ เพื่อส่งมอบตัวเรือที่ปรับให้เหมาะกับภารกิจของมันอย่างแท้จริง — ไม่ใช่รูปทรงมาตรฐานที่ดัดแปลงมาจากแคตตาล็อก
+content_html: >
+  <h2>จุดที่ความแข็งแกร่งบรรจบกับอุทกพลศาสตร์</h2>
 
-intro: 'The hull is the backbone of any RIB or inflatable boat. It must be light enough to plane efficiently, strong enough to absorb impact loads, and dimensionally stable across a wide temperature range. At {SITE.name}, our Hull Engineering Studio combines advanced CAD modelling, finite element analysis (FEA), and decades of practical naval-architecture experience to deliver hulls that are optimised for their intended mission — not generic shapes adapted from a catalogue.'
+  <p>เราทำงานกับวัสดุตัวเรือหลักสามชนิด — HDPE หล่อแบบหมุน อะลูมิเนียมเกรดทะเลแบบเชื่อม และไฟเบอร์กลาสขึ้นรูปด้วยมือ — พร้อมความสามารถด้านวิศวกรรมในการออกแบบ จำลอง และตรวจสอบรับรองวัสดุแต่ละชนิดภายในบริษัทของเรา</p>
 
-content_html: |
-  <h2>Where strength meets hydrodynamics</h2>
-  <p>We work with three primary hull materials — rotationally moulded HDPE, welded marine-grade aluminium, and hand-laid fibreglass — and have the engineering capability to design, simulate, and validate each one in-house.</p>
 
-  <h2>Design tools and standards</h2>
-  <p>Our digital engineering environment includes:</p>
+  <h2>เครื่องมือและมาตรฐานการออกแบบ</h2>
+
+  <p>สภาพแวดล้อมงานวิศวกรรมดิจิทัลของเราประกอบด้วย:</p>
+
   <table>
-    <thead><tr><th>Capability</th><th>Software / Tool</th><th>Application</th></tr></thead>
+    <thead><tr><th>ความสามารถ</th><th>ซอฟต์แวร์ / เครื่องมือ</th><th>การประยุกต์ใช้งาน</th></tr></thead>
     <tbody>
-      <tr><td>3D parametric modelling</td><td>SolidWorks Professional</td><td>Hull surface, stringer system, engine bracket, deck layout</td></tr>
-      <tr><td>Finite element analysis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Stress mapping, modal analysis, crash/impact simulation</td></tr>
-      <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamic drag prediction, trim optimisation</td></tr>
-      <tr><td>Laminate engineering</td><td>ESAComp / CADEC</td><td>Fibreglass layer stacking, core selection, weight estimation</td></tr>
-      <tr><td>Mould flow simulation</td><td>Moldex3D</td><td>Rotomoulding wall-thickness prediction</td></tr>
+      <tr><td>การสร้างแบบจำลองพารามิเตอร์ 3D</td><td>SolidWorks Professional</td><td>พื้นผิวตัวเรือ ระบบคานเสริม กรอบยึดเครื่องยนต์ ผังดาดฟ้า</td></tr>
+      <tr><td>การวิเคราะห์ไฟไนต์เอลิเมนต์</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>การทำแผนที่ความเค้น การวิเคราะห์โหมด การจำลองการชน/แรงกระแทก</td></tr>
+      <tr><td>พลศาสตร์ของไหลเชิงคำนวณ</td><td>Ansys Fluent / Star-CCM+</td><td>การคาดการณ์แรงต้านเชิงอุทกพลศาสตร์ การปรับมุมกระดกเรือให้เหมาะสม</td></tr>
+      <tr><td>วิศวกรรมลามิเนต</td><td>ESAComp / CADEC</td><td>การเรียงชั้นไฟเบอร์กลาส การเลือกแกน การประมาณน้ำหนัก</td></tr>
+      <tr><td>การจำลองการไหลในแม่พิมพ์</td><td>Moldex3D</td><td>การคาดการณ์ความหนาผนังของการหล่อแบบหมุน</td></tr>
     </tbody>
   </table>
 
-  <h2>Our engineering workflow</h2>
-  <p>Every hull design, whether it is a standard model or a fully custom project, follows a rigorous five-stage process:</p>
+
+  <h2>ขั้นตอนการทำงานวิศวกรรมของเรา</h2>
+
+  <p>การออกแบบตัวเรือทุกรูปแบบ ไม่ว่าจะเป็นรุ่นมาตรฐานหรือโครงการสั่งทำพิเศษ ล้วนผ่านกระบวนการที่เข้มงวดห้าขั้นตอน:</p>
+
   <ol>
-    <li><strong>Concept &amp; requirements gathering</strong> — We meet with you to define payload, speed envelope, sea-state capability, towing requirements, and any special mission equipment (deck hatches, console positions, fuel-tank integration).</li>
-    <li><strong>3D surfacing &amp; hydrostatic calculation</strong> — The hull form is modelled in SolidWorks and checked for hydrostatic stability (GM, righting arm) using built-in analysis tools.</li>
-    <li><strong>Structural FEA</strong> — Load cases are defined: static (crew + gear), dynamic (planing impacts at 5g), and slamming (dropping from a wave crest at 3 m/s). Stress contours are reviewed; safety factor ≥ 2.5 is mandatory.</li>
-    <li><strong>CFD drag optimisation</strong> — The hull is simulated at three loading conditions and five speeds. Wetted surface area, trim angle, and residual resistance are iteratively reduced.</li>
-    <li><strong>Design review &amp; release</strong> — The complete engineering package (3D model, FEA report, CFD report, weight estimate, ply book) is reviewed by our senior naval architect before release to the prototype workshop.</li>
+    <li><strong>การรวบรวมแนวคิดและความต้องการ</strong> — เราประชุมกับคุณเพื่อกำหนดน้ำหนักบรรทุก ขอบเขตความเร็ว ความสามารถในการทนคลื่นลม ข้อกำหนดการลากจูง และอุปกรณ์ภารกิจพิเศษต่าง ๆ (ช่องเปิดดาดฟ้า ตำแหน่งคอนโซลบังคับเรือ การติดตั้งถังเชื้อเพลิง)</li>
+    <li><strong>การขึ้นผิวเรือ 3D และการคำนวณอุทกสถิตย์</strong> — รูปทรงตัวเรือถูกสร้างแบบจำลองใน SolidWorks และตรวจสอบความเสถียรทางอุทกสถิตย์ (GM, แขนคืนตัว) ด้วยเครื่องมือวิเคราะห์ในตัว</li>
+    <li><strong>FEA ด้านโครงสร้าง</strong> — กำหนดกรณีการรับน้ำหนัก: สถิต (ลูกเรือ + อุปกรณ์) ไดนามิก (การกระแทกขณะแล่นบนผิวน้ำที่ 5g) และการกระแทกซ้ำ (การตกลงจากยอดคลื่นที่ความเร็ว 3 m/s) ตรวจสอบแนวความเค้นโดยต้องมีค่าความปลอดภัย ≥ 2.5 ตามข้อกำหนด</li>
+    <li><strong>การปรับลดแรงต้านด้วย CFD</strong> — จำลองตัวเรือภายใต้สภาวะการบรรทุกสามแบบและความเร็วห้าระดับ พื้นที่ผิวเปียกน้ำ มุมกระดกเรือ และแรงต้านตกค้างจะถูกลดลงซ้ำ ๆ จนเหมาะสมที่สุด</li>
+    <li><strong>การทบทวนและปล่อยแบบการออกแบบ</strong> — ชุดเอกสารวิศวกรรมครบชุด (โมเดล 3D รายงาน FEA รายงาน CFD ประมาณการน้ำหนัก ตารางการเรียงชั้นวัสดุ) จะได้รับการทบทวนโดยสถาปนิกเรืออาวุโสของเราก่อนส่งต่อให้โรงงานทำต้นแบบ</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Stress Distribution — RIB 450 Patrol Hull (Aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">การกระจายความเค้น FEA — ตัวเรือลาดตระเวน RIB 450 (อะลูมิเนียม 5083)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
-        <span class="text-gray-500">Safety factor at max payload</span>
+        <span class="text-gray-500">ค่าความปลอดภัยที่น้ำหนักบรรทุกสูงสุด</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
-        <span class="text-gray-500">Drag reduction vs previous generation</span>
+        <span class="text-gray-500">การลดแรงต้านเทียบกับรุ่นก่อนหน้า</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
-        <span class="text-gray-500">Peak slamming pressure (design limit)</span>
+        <span class="text-gray-500">แรงกดกระแทกสูงสุด (ขีดจำกัดการออกแบบ)</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
-        <span class="text-gray-500">Cumulative FEA runtime in 2025</span>
+        <span class="text-gray-500">ระยะเวลาการทำงาน FEA สะสมในปี 2025</span>
       </div>
     </div>
   </div>
 
-  <h2>Customisation: your hull, your rules</h2>
-  <p>No two operators have identical requirements. A harbour-patrol RIB needs a shallow-V hull for stability at low speed; a fast-interception craft needs a deep-V with spray rails; a dive-support boat needs a wide beam and a low transom. We do not force your application into a pre-existing hull shape. We design from your specification upward.</p>
-  <p>Examples of recent custom hull engineering projects:</p>
+
+  <h2>การปรับแต่ง: ตัวเรือของคุณ ตามเงื่อนไขของคุณ</h2>
+
+  <p>ไม่มีผู้ประกอบการสองรายใดที่มีความต้องการเหมือนกัน เรือลาดตระเวนท่าเรือแบบ RIB ต้องการตัวเรือแบบ V ตื้นเพื่อความมั่นคงที่ความเร็วต่ำ เรือดักจับความเร็วสูงต้องการตัวเรือแบบ V ลึกพร้อมครีบกันละอองน้ำ เรือสนับสนุนการดำน้ำต้องการความกว้างลำเรือมากและท้ายเรือที่ต่ำ
+  เราไม่บังคับการใช้งานของคุณให้เข้ากับรูปทรงตัวเรือที่มีอยู่เดิม แต่เราออกแบบขึ้นจากข้อกำหนดของคุณ</p>
+
+  <p>ตัวอย่างโครงการวิศวกรรมตัวเรือสั่งทำพิเศษล่าสุด:</p>
+
   <ul>
-    <li>A stretched 6.8 m HDPE hull for a Caribbean tour operator, with a reinforced bow for beach landings (+15 % bottom thickness).</li>
-    <li>A lightweight aluminium 7.2 m RIB for a coast guard, with integrated fuel-tank baffles and equipment-locker stiffeners.</li>
-    <li>A fibreglass 5.5 m dive boat with a cut-down transom and twin battery boxes, designed for easy snorkeller reboarding.</li>
+    <li>ตัวเรือ HDPE ขนาด 6.8 ม. แบบยืดยาวสำหรับผู้ประกอบการทัวร์ในทะเลแคริบเบียน พร้อมหัวเรือเสริมความแข็งแรงสำหรับการเกยหาด (+15 % ความหนาก้นเรือ)</li>
+    <li>เรือ RIB อะลูมิเนียมน้ำหนักเบาขนาด 7.2 ม. สำหรับหน่วยยามฝั่ง พร้อมแผ่นกั้นถังเชื้อเพลิงแบบบูรณาการและเหล็กเสริมล็อกเกอร์อุปกรณ์</li>
+    <li>เรือดำน้ำไฟเบอร์กลาสขนาด 5.5 ม. พร้อมท้ายเรือลดระดับและกล่องแบตเตอรี่คู่ ออกแบบเพื่อให้ผู้เล่นดำน้ำตื้นกลับขึ้นเรือได้สะดวก</li>
   </ul>
 
-  <h2>Our engineers</h2>
-  <p>The studio is led by a senior naval architect with 14 years of experience in high-speed craft design, supported by two mechanical engineers specialised in FEA and CFD. All three hold advanced degrees in marine engineering or naval architecture from internationally recognised universities. The team publishes regularly in industry journals and presents at conferences such as the International Conference on High-Performance Marine Vehicles.</p>
 
-  <h2>Partner with us on your next hull</h2>
-  <p>From the first concept sketch to the final stress report, our Hull Engineering Studio is your partner in creating a boat that is not just built — but engineered. We invest the simulation hours upfront so that every weld, every laminate layer, and every curve of the hull is there for a reason.</p>
-  <p>Whether you need a minor modification to an existing model or a completely clean-sheet design, we are ready to discuss your requirements.</p>
+  <h2>ทีมวิศวกรของเรา</h2>
 
+  <p>สตูดิโอแห่งนี้นำโดยสถาปนิกเรืออาวุโสที่มีประสบการณ์ 14 ปีในการออกแบบเรือความเร็วสูง พร้อมด้วยวิศวกรเครื่องกลสองคนที่เชี่ยวชาญด้าน FEA และ CFD ทั้งสามคนสำเร็จการศึกษาระดับสูงด้านวิศวกรรมทางทะเลหรือสถาปัตยกรรมเรือจากมหาวิทยาลัยที่ได้รับการยอมรับในระดับสากล
+  ทีมงานตีพิมพ์ผลงานในวารสารอุตสาหกรรมอย่างสม่ำเสมอและนำเสนองานในงานประชุมต่าง ๆ เช่น การประชุมนานาชาติว่าด้วยยานยนต์ทางทะเลสมรรถนะสูง</p>
+
+
+  <h2>ร่วมงานกับเราสำหรับตัวเรือรุ่นถัดไปของคุณ</h2>
+
+  <p>ตั้งแต่ภาพร่างแนวคิดแรกจนถึงรายงานความเค้นฉบับสุดท้าย สตูดิโอวิศวกรรมตัวเรือ (Hull Engineering Studio) ของเราคือพาร์ทเนอร์ของคุณในการสร้างเรือที่ไม่ใช่เพียงแค่ถูกผลิตขึ้น — แต่ถูกออกแบบอย่างวิศวกรรม เราลงทุนชั่วโมงการจำลองตั้งแต่ต้น เพื่อให้รอยเชื่อมทุกจุด ชั้นลามิเนตทุกชั้น
+  และทุกเส้นโค้งของตัวเรือล้วนมีความหมาย</p>
+
+  <p>ไม่ว่าคุณต้องการปรับเปลี่ยนเล็กน้อยกับรุ่นที่มีอยู่ หรือต้องการการออกแบบใหม่ทั้งหมดบนกระดาษเปล่า เราพร้อมหารือเกี่ยวกับความต้องการของคุณ</p>
 cta:
-  title: 'Start your hull design consultation'
-  subtitle: 'Tell us about your mission profile and we will propose an engineering path.'
-  button_text: 'Contact our engineering team'
+  title: เริ่มปรึกษาการออกแบบตัวเรือกับเรา
+  subtitle: บอกเราเกี่ยวกับลักษณะภารกิจของคุณ แล้วเราจะเสนอแนวทางวิศวกรรมที่เหมาะสม
+  button_text: ติดต่อทีมวิศวกรรมของเรา
   button_link: /contact

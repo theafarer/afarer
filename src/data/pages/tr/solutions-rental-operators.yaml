@@ -1,71 +1,66 @@
 meta:
-  title: 'SUP Rental Fleet Solutions | {SITE}'
-  description: 'High-rotation SUP boards engineered for daily rental use. UV-resistant PVC, reinforced seams, quick-dry materials. Scale your rental business with Afarer.'
-
+  title: SUP Kiralama Filo Çözümleri | {SITE}
+  description: Günlük kiralama kullanımı için tasarlanmış yüksek devirli SUP tahtaları. UV dirençli PVC, takviyeli dikişler, çabuk kuruyan malzemeler. Kiralama işinizi Afarer ile büyütün.
 hero:
-  tagline: Rental Operators
-  title: 'Scale Your Rental Business<br />With Confidence'
-  subtitle: 'High-rotation SUP boards engineered for daily rental use, 365 days a year. Your revenue never takes a day off.'
+  tagline: Kiralama İşletmeleri
+  title: Kiralama İşletmenizi<br />Güvenle Büyütün
+  subtitle: Yılın 365 günü günlük kiralama için tasarlanmış yüksek döngülü SUP boardlar. Geliriniz asla bir gün bile durmaz.
   image:
     src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
-    alt: Busy rental kiosk with SUP boards ready for guests
-
+    alt: Misafirler için hazır SUP tahtaları olan yoğun kiralama kiosku
 features:
-  title: Built for the Rental Grind
-  subtitle: 'Every board is engineered for 500+ rental cycles with minimal maintenance.'
+  title: Kiralama Yoğunluğu İçin Üretildi
+  subtitle: Her tahta minimum bakım ile 500+ kiralama döngüsü için mühendislikle tasarlanmıştır.
   items:
-    - title: '500+ Rental Cycles'
-      description: 'Tested to survive daily use in saltwater, sun, and sand.'
-      icon: 'tabler:shield-check'
-    - title: 'UV-Resistant Fabric'
-      description: 'No fading or degradation after 1 year of outdoor storage.'
-      icon: 'tabler:sun'
-    - title: 'Reinforced Seams'
-      description: '3x stronger than standard inflatable board construction.'
-      icon: 'tabler:layers-intersect'
-    - title: 'Quick-Dry Materials'
-      description: 'Boards ready for next rental in under 30 minutes.'
-      icon: 'tabler:droplet'
-    - title: 'Stackable Storage'
-      description: 'Space-saving design — store 40% more boards in the same area.'
-      icon: 'tabler:stack'
-    - title: 'Color-Coded Sizes'
-      description: 'Staff grabs the right board instantly with color-coded sizing.'
-      icon: 'tabler:color-swatch'
-
+    - title: 500+ Kiralama Döngüsü
+      description: Tuzlu su, güneş ve kumda günlük kullanıma dayanacak şekilde test edilmiştir.
+      icon: tabler:shield-check
+    - title: UV Dirençli Kumaş
+      description: 1 yıllık açık hava depolamasından sonra solma veya bozulma yok.
+      icon: tabler:sun
+    - title: Güçlendirilmiş Dikişler
+      description: Standart şişirilebilir tahta yapımından 3 kat daha güçlü.
+      icon: tabler:layers-intersect
+    - title: Hızlı Kuruyan Malzemeler
+      description: Tahtalar 30 dakikadan kısa sürede bir sonraki kiralamaya hazır.
+      icon: tabler:droplet
+    - title: İstiflenebilir Depolama
+      description: Yerden tasarruf sağlayan tasarım — aynı alanda %40 daha fazla board depolayın.
+      icon: tabler:stack
+    - title: Renk Kodlu Boyutlar
+      description: Personel renk kodlu boyutlandırma ile doğru boardu anında alır.
+      icon: tabler:color-swatch
 stats:
-  title: Operations Metrics
+  title: Operasyon Metrikleri
   stats:
-    - title: Board Turnover
-      amount: '< 5 min'
-    - title: Annual Maintenance
-      amount: '~15 min/board'
-    - title: Parts Dispatch
-      amount: '48h'
-    - title: Defect Rate
-      amount: '< 0.5%'
-
+    - title: Panel Devir Hızı
+      amount: < 5 dk
+    - title: Yıllık Bakım
+      amount: ~15 dk/board
+    - title: Parça Sevkiyatı
+      amount: 48h
+    - title: Hata Oranı
+      amount: < %0,5
 fleet_guide:
-  title: Fleet Sizing Guide
-  subtitle: 'Estimate the fleet size and revenue potential for your rental operation.'
+  title: Filo Boyutlandırma Rehberi
+  subtitle: Kiralama operasyonunuz için filo boyutunu ve gelir potansiyelini tahmin edin.
   tiers:
-    - label: Small Kiosk
-      boards: '15-20'
-      revenue: '$XX,XXX/yr'
-    - label: Mid-Size Operation
-      boards: '30-50'
-      revenue: '$XX,XXX/yr'
-    - label: Large Beach Rental
-      boards: '50-100'
-      revenue: '$XXX,XXX/yr'
-
+    - label: Küçük Kiosk
+      boards: 15-20
+      revenue: $XX,XXX/yıl
+    - label: Orta Boy İşletme
+      boards: 30-50
+      revenue: $XX,XXX/yıl
+    - label: Büyük Plaj Kiralama
+      boards: 50-100
+      revenue: $XXX,XXX/yıl
 cta:
-  title: 'Ready to scale your rental business?'
-  subtitle: 'Get rental pricing or compare board models for your operation.'
+  title: Kiralama işinizi ölçeklendirmeye hazır mısınız?
+  subtitle: İşletmeniz için kiralama fiyatlarını alın veya tahta modellerini karşılaştırın.
   actions:
-    - text: 'Get Rental Pricing'
-      href: '/contact?package=rental'
-      variant: 'primary'
-    - text: 'Compare Board Models'
-      href: '/compare'
-      variant: 'secondary'
+    - text: Kiralama Fiyatlarını Alın
+      href: /contact?package=rental
+      variant: primary
+    - text: Board Modellerini Karşılaştırın
+      href: /compare
+      variant: secondary

@@ -1,71 +1,66 @@
 meta:
-  title: 'SUP Rental Fleet Solutions | {SITE}'
-  description: 'High-rotation SUP boards engineered for daily rental use. UV-resistant PVC, reinforced seams, quick-dry materials. Scale your rental business with Afarer.'
-
+  title: SUP-utleieløsninger for flåte | {SITE}
+  description: SUP-brett med høy rotasjon, konstruert for daglig utleiebruk. UV-bestandig PVC, forsterkede sømmer, hurtigtørkende materialer. Skaler utleievirksomheten din med Afarer.
 hero:
-  tagline: Rental Operators
-  title: 'Scale Your Rental Business<br />With Confidence'
-  subtitle: 'High-rotation SUP boards engineered for daily rental use, 365 days a year. Your revenue never takes a day off.'
+  tagline: Utleieoperatører
+  title: Skaler din utleievirksomhet<br />med tillit
+  subtitle: Høyt rotasjons-SUP-brett konstruert for daglig utleiebruk, 365 dager i året. Din inntekt tar aldri en fridag.
   image:
     src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
-    alt: Busy rental kiosk with SUP boards ready for guests
-
+    alt: Travel utleiebod med SUP-bord klare for gjester
 features:
-  title: Built for the Rental Grind
-  subtitle: 'Every board is engineered for 500+ rental cycles with minimal maintenance.'
+  title: Bygget for utleiebruk
+  subtitle: Hvert brett er konstruert for 500+ utleiesykluser med minimalt vedlikehold.
   items:
-    - title: '500+ Rental Cycles'
-      description: 'Tested to survive daily use in saltwater, sun, and sand.'
-      icon: 'tabler:shield-check'
-    - title: 'UV-Resistant Fabric'
-      description: 'No fading or degradation after 1 year of outdoor storage.'
-      icon: 'tabler:sun'
-    - title: 'Reinforced Seams'
-      description: '3x stronger than standard inflatable board construction.'
-      icon: 'tabler:layers-intersect'
-    - title: 'Quick-Dry Materials'
-      description: 'Boards ready for next rental in under 30 minutes.'
-      icon: 'tabler:droplet'
-    - title: 'Stackable Storage'
-      description: 'Space-saving design — store 40% more boards in the same area.'
-      icon: 'tabler:stack'
-    - title: 'Color-Coded Sizes'
-      description: 'Staff grabs the right board instantly with color-coded sizing.'
-      icon: 'tabler:color-swatch'
-
+    - title: 500+ utleiesykluser
+      description: Testet for å tåle daglig bruk i saltvann, sol og sand.
+      icon: tabler:shield-check
+    - title: UV-bestandig tekstil
+      description: Ingen falming eller nedbrytning etter 1 års utendørs lagring.
+      icon: tabler:sun
+    - title: Forsterkede sømmer
+      description: 3 ganger sterkere enn standard oppblåsbar brettkonstruksjon.
+      icon: tabler:layers-intersect
+    - title: Hurtigtørkende materialer
+      description: Brett klare for neste utleie på under 30 minutter.
+      icon: tabler:droplet
+    - title: Stabelbar lagring
+      description: Plassbesparende design — lagre 40 % flere brett i samme område.
+      icon: tabler:stack
+    - title: Fargekodede størrelser
+      description: Ansatte velger riktig brett umiddelbart med fargekodet størrelse.
+      icon: tabler:color-swatch
 stats:
-  title: Operations Metrics
+  title: Driftsmålinger
   stats:
-    - title: Board Turnover
-      amount: '< 5 min'
-    - title: Annual Maintenance
-      amount: '~15 min/board'
-    - title: Parts Dispatch
-      amount: '48h'
-    - title: Defect Rate
-      amount: '< 0.5%'
-
+    - title: Brettomsetning
+      amount: < 5 min
+    - title: Årlig vedlikehold
+      amount: ~15 min/brett
+    - title: Reservedelforsendelse
+      amount: 48h
+    - title: Feilrate
+      amount: < 0,5 %
 fleet_guide:
-  title: Fleet Sizing Guide
-  subtitle: 'Estimate the fleet size and revenue potential for your rental operation.'
+  title: Guide for flåtestørrelse
+  subtitle: Estimer flåtestørrelsen og inntektspotensialet for din utleievirksomhet.
   tiers:
-    - label: Small Kiosk
-      boards: '15-20'
-      revenue: '$XX,XXX/yr'
-    - label: Mid-Size Operation
-      boards: '30-50'
-      revenue: '$XX,XXX/yr'
-    - label: Large Beach Rental
-      boards: '50-100'
-      revenue: '$XXX,XXX/yr'
-
+    - label: Liten utleiebod
+      boards: 15-20
+      revenue: $XX XXX/år
+    - label: Mellomstor drift
+      boards: 30–50
+      revenue: $XX XXX/år
+    - label: Stor strandutleie
+      boards: 50-100
+      revenue: $XXX,XXX/år
 cta:
-  title: 'Ready to scale your rental business?'
-  subtitle: 'Get rental pricing or compare board models for your operation.'
+  title: Klar til å skalere utleievirksomheten din?
+  subtitle: Få utleiepriser eller sammenlign brettmodeller for din virksomhet.
   actions:
-    - text: 'Get Rental Pricing'
-      href: '/contact?package=rental'
-      variant: 'primary'
-    - text: 'Compare Board Models'
-      href: '/compare'
-      variant: 'secondary'
+    - text: Få utleiepriser
+      href: /contact?package=rental
+      variant: primary
+    - text: Sammenlign brettmodeller
+      href: /compare
+      variant: secondary

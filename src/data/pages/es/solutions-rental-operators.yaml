@@ -1,71 +1,66 @@
 meta:
-  title: 'SUP Rental Fleet Solutions | {SITE}'
-  description: 'High-rotation SUP boards engineered for daily rental use. UV-resistant PVC, reinforced seams, quick-dry materials. Scale your rental business with Afarer.'
-
+  title: Soluciones de Flota de Alquiler de SUP | {SITE}
+  description: Tablas de SUP de alta rotación diseñadas para uso diario en alquiler. PVC resistente a los rayos UV, costuras reforzadas, materiales de secado rápido. Amplía tu negocio de alquiler con Afarer.
 hero:
-  tagline: Rental Operators
-  title: 'Scale Your Rental Business<br />With Confidence'
-  subtitle: 'High-rotation SUP boards engineered for daily rental use, 365 days a year. Your revenue never takes a day off.'
+  tagline: Operadores de alquiler
+  title: Haz crecer tu negocio de alquiler<br />Con confianza
+  subtitle: Tablas de SUP de alta rotación diseñadas para uso diario de alquiler, los 365 días del año. Tus ingresos nunca se toman un día libre.
   image:
     src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
-    alt: Busy rental kiosk with SUP boards ready for guests
-
+    alt: Quisco de alquiler ocupado con tablas de SUP listas para los huéspedes
 features:
-  title: Built for the Rental Grind
-  subtitle: 'Every board is engineered for 500+ rental cycles with minimal maintenance.'
+  title: Construido para la rutina del alquiler
+  subtitle: Cada tablero está diseñado para 500 ciclos de alquiler con un mantenimiento mínimo.
   items:
-    - title: '500+ Rental Cycles'
-      description: 'Tested to survive daily use in saltwater, sun, and sand.'
-      icon: 'tabler:shield-check'
-    - title: 'UV-Resistant Fabric'
-      description: 'No fading or degradation after 1 year of outdoor storage.'
-      icon: 'tabler:sun'
-    - title: 'Reinforced Seams'
-      description: '3x stronger than standard inflatable board construction.'
-      icon: 'tabler:layers-intersect'
-    - title: 'Quick-Dry Materials'
-      description: 'Boards ready for next rental in under 30 minutes.'
-      icon: 'tabler:droplet'
-    - title: 'Stackable Storage'
-      description: 'Space-saving design — store 40% more boards in the same area.'
-      icon: 'tabler:stack'
-    - title: 'Color-Coded Sizes'
-      description: 'Staff grabs the right board instantly with color-coded sizing.'
-      icon: 'tabler:color-swatch'
-
+    - title: 500 Ciclos de Alquiler
+      description: Probado para sobrevivir al uso diario en agua salada, sol y arena.
+      icon: tabler:shield-check
+    - title: Tela resistente a los rayos UV
+      description: Sin decoloración ni degradación después de 1 año de almacenamiento en exteriores.
+      icon: tabler:sun
+    - title: Costuras reforzadas
+      description: 3 veces más fuerte que la construcción estándar de tablas inflables.
+      icon: tabler:layers-intersect
+    - title: Materiales de secado rápido
+      description: Tablas listas para el próximo alquiler en menos de 30 minutos.
+      icon: tabler:droplet
+    - title: Almacenamiento apilable
+      description: 'Diseño que ahorra espacio: almacena un 40% más de tablas en el mismo espacio.'
+      icon: tabler:stack
+    - title: Tamaños codificados por color
+      description: El personal agarra instantáneamente la tabla correcta con un tamaño codificado por colores.
+      icon: tabler:color-swatch
 stats:
-  title: Operations Metrics
+  title: Métricas de Operaciones
   stats:
-    - title: Board Turnover
-      amount: '< 5 min'
-    - title: Annual Maintenance
-      amount: '~15 min/board'
-    - title: Parts Dispatch
-      amount: '48h'
-    - title: Defect Rate
-      amount: '< 0.5%'
-
+    - title: Rotación de la junta
+      amount: < 5 min
+    - title: Mantenimiento Anual
+      amount: ~15 min/tablero
+    - title: Despacho de piezas
+      amount: 48 h
+    - title: Tasa de defectos
+      amount: < 0,5%
 fleet_guide:
-  title: Fleet Sizing Guide
-  subtitle: 'Estimate the fleet size and revenue potential for your rental operation.'
+  title: Guía de Dimensionamiento de Flotas
+  subtitle: Estime el tamaño de la flota y el potencial de ingresos de su operación de alquiler.
   tiers:
-    - label: Small Kiosk
-      boards: '15-20'
-      revenue: '$XX,XXX/yr'
-    - label: Mid-Size Operation
-      boards: '30-50'
-      revenue: '$XX,XXX/yr'
-    - label: Large Beach Rental
-      boards: '50-100'
-      revenue: '$XXX,XXX/yr'
-
+    - label: Pequeño quiosco
+      boards: 15-20
+      revenue: $XX,XXX/año
+    - label: Operación de tamaño medio
+      boards: 30-50
+      revenue: $XX,XXX/año
+    - label: Gran alquiler en la playa
+      boards: 50-100
+      revenue: $XXX,XXX/año
 cta:
-  title: 'Ready to scale your rental business?'
-  subtitle: 'Get rental pricing or compare board models for your operation.'
+  title: ¿Listo para escalar tu negocio de alquiler?
+  subtitle: Obtenga precios de alquiler o compare modelos de placas para su operación.
   actions:
-    - text: 'Get Rental Pricing'
-      href: '/contact?package=rental'
-      variant: 'primary'
-    - text: 'Compare Board Models'
-      href: '/compare'
-      variant: 'secondary'
+    - text: Obtener precios de alquiler
+      href: /contact?package=rental
+      variant: primary
+    - text: Comparar modelos de placa
+      href: /compare
+      variant: secondary

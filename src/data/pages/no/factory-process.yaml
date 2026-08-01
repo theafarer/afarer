@@ -1,12 +1,12 @@
-﻿hero:
+hero:
   tagline: Prosess
   title: Produksjonsprosess
   subtitle: Fra råvare til sjøklar båt —hvert steg under vår kontroll
   back_label: Tilbake til fabrikken
-  back_link: /factory
-
-intro: I motsetning til merker som setter bort produksjonen til tredjepartsfabrikker, eier og driver afarer hele sin produksjonskjede. Denne vertikale integrasjonen lar oss opprettholde streng kvalitetskontroll på hvert trinn, raskt respondere på tilpassede krav og levere jevn produktkvalitet batch etter batch. Slik bygges en båt i vårt anlegg.
-
+  back_link: /fabrikk
+intro: >-
+  I motsetning til merker som setter bort produksjonen til tredjepartsfabrikker, eier og driver afarer hele sin produksjonskjede. Denne vertikale integrasjonen lar oss opprettholde streng kvalitetskontroll på hvert trinn, raskt respondere på tilpassede krav og levere jevn produktkvalitet batch etter
+  batch. Slik bygges en båt i vårt anlegg.
 steps:
   - step: '01'
     title: Materialmottak og inspeksjon
@@ -22,7 +22,9 @@ steps:
     duration: 1— dager per båt
   - step: '04'
     title: Støping av SUP-skrog i glassfiber
-    description: SUP-båtskrog produseres med håndopplegging av glassfiber. Lag med glassfibermatte og vevd stoff håndrulles med polyester- eller vinylesterharpiks i presisjonsformer. Hvert lag vakuumpakkes for jevn laminatkvalitet. Skroget etterbehandles med gelcoat for en høyglanset, UV-bestandig marin overflate.
+    description: >-
+      SUP-båtskrog produseres med håndopplegging av glassfiber. Lag med glassfibermatte og vevd stoff håndrulles med polyester- eller vinylesterharpiks i presisjonsformer. Hvert lag vakuumpakkes for jevn laminatkvalitet. Skroget etterbehandles med gelcoat for en høyglanset, UV-bestandig marin
+      overflate.
     duration: 2— dager per skrog
   - step: '05'
     title: SUP-trykking og dekorasjon
@@ -40,7 +42,6 @@ steps:
     title: Pakking og forsendelse
     description: Båtene tømmes for luft, brettes etter prosedyre, pakkes i slitesterke stoff- eller kryssfinervesker og lastes for forsendelse. Hver pakke merkes med modell, serienummer og destinasjon. Vi koordinerer med speditører for FCL- og LCL-forsendelser over hele verden.
     duration: 1 dag
-
 cta:
   title: Se vårt utstyr og maskiner
   desc: Oppdag industriutstyret bak hver afarer-båt.

@@ -3,7 +3,7 @@ hero:
   title: Attrezzature e Macchinari di Produzione
   subtitle: Attrezzature di grado industriale per taglio, saldatura, stampa e assemblaggio
   back_label: Torna alla Fabbrica
-  back_link: /factory
+  back_link: /fabbrica
 categories:
   - title: Taglio e Preparazione dei Materiali
     items:
@@ -27,11 +27,11 @@ categories:
   - title: Fabbricazione Scafo SUP
     items:
       - name: Drop-Stitch Core Lamination Press
-        spec: Large-format press for board cores up to 14 ft LOA
-        desc: Precision lamination of drop-stitch cores to outer PVC laminates. Each layer is pressure-bonded for consistent quality and strength.
+        spec: Pressa di grande formato per nuclei di pannelli fino a 14 piedi di lunghezza complessiva
+        desc: Laminazione di precisione dei nuclei a punto cadente su laminati esterni in PVC. Ogni strato è pressato per garantire qualità e resistenza costanti.
       - name: CNC Router (5-axis)
-        spec: 3 m × 2 m × 1 m envelope, water-cooled spindle
-        desc: Machining of fin boxes, handle cutouts, and custom board components.
+        spec: Involucro di 3 m × 2 m × 1 m, mandrino raffreddato ad acqua
+        desc: Lavorazione delle scatole delle pinne, dei ritagli per i manici e dei componenti personalizzati delle tavole.
   - title: Stampa e Decorazione SUP
     items:
       - name: Stampante Digitale
@@ -43,14 +43,14 @@ categories:
   - title: Assemblaggio e Allestimento
     items:
       - name: Board Assembly Station
-        spec: Modular adjustable, multi-station layout
-        desc: Assembly of fin boxes, handles, D-rings, valves, and deck pads onto SUP boards.
+        spec: Layout modulare regolabile a più stazioni
+        desc: Assemblaggio di scatole per pinne, maniglie, D-ring, valvole e tappetini sul ponte delle tavole SUP.
       - name: Valve Installation Press
-        spec: Pneumatic, adjustable pressure
-        desc: Precision installation and sealing of Halkey-Roberts and Leafield valves.
+        spec: Pneumatico, pressione regolabile
+        desc: Installazione e sigillatura di precisione delle valvole Halkey-Roberts e Leafield.
       - name: Deck Pad Laminator
-        spec: 3 m × 1.5 m, temperature-controlled
-        desc: Heat lamination of EVA foam deck pads to SUP board tops with consistent bond strength.
+        spec: 3 m × 1,5 m, a temperatura controllata
+        desc: Laminazione a caldo dei tappetini in schiuma EVA sulle coperture delle tavole SUP con resistenza dell'adesione costante.
   - title: Test e Controllo Qualità
     items:
       - name: Tensile Tester Universale

@@ -1,120 +1,139 @@
 meta:
-  title: 'Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}'
-  description: 'Independent quality verification for inflatable boats. Tensile testing, air-retention cycling, seam peel tests, and material certification. Contact our quality lab for third-party testing.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Kalite ve Denetim Laboratuvarı — Uyumlu RIB Test ve Sertifikalandırma | {SITE}
+  description: Şişirilebilir tekneler için bağımsız kalite doğrulama. Çekme dayanımı testi, hava tutma döngüleri, dikiş soyulma testleri ve malzeme sertifikasyonu. Üçüncü taraf testleri için kalite laboratuvarımızla iletişime geçin.
+back_text: Ar-Ge Merkezine Dön
+home_label: Ana Sayfa
 hero:
-  tagline: 'Lab 06'
-  title: 'Quality & Inspection Lab'
-  subtitle: 'Independent verification — every test passed before delivery'
-  image: 'https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp'
-  image_alt: 'Afarer quality inspection laboratory UV testing'
+  tagline: Lab 06
+  title: Kalite ve Muayene Laboratuvarı
+  subtitle: Bağımsız doğrulama — teslimattan önce her test geçildi
+  image: https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp
+  image_alt: Afarer kalite kontrol laboratuvarı UV testi
+intro: >-
+  Atölyemizden çıkan her tekne, belirlenmiş bir dizi kalite kontrolü ve malzeme testinden geçtiğini belgeleyen sertifikayla birlikte gelir. Kalite ve Kontrol Laboratuvarımız kuruluş bünyesinde bağımsız bir birimdir — doğrudan Genel Müdüre rapor verir, Üretim bölümüne değil — böylece hiçbir ticari
+  baskının kontrol kapılarını olumsuz etkilemesi önlenir. Bir malzeme partisi veya tamamlanmış bir tekne yayımlanan teknik özelliklere uymuyorsa, laboratuvar uygunsuzluk giderilene kadar sevkiyatı durdurma yetkisine sahiptir.
+content_html: >
+  <h2>Güvenin, ama doğrulayın</h2>
 
-intro: 'Every boat that leaves our workshop carries the certification that it has passed a defined set of quality inspections and material tests. Our Quality & Inspection Lab is an independent function within the organisation — it reports directly to the managing director, not to production — ensuring that no commercial pressure can compromise the inspection gate. If a material batch or a completed boat does not meet the published specification, the lab has the authority to halt shipment until the non-conformance is resolved.'
+  <p>Laboratuvarımız, ilkelerle uyumlu bir kalite yönetim sistemi altında çalışır ve test yöntemlerimiz mümkün olan her yerde ISO, ASTM ve EN standartlarına dayanır. Gerçekleştirilen her testin ayrıntılı kayıtlarını tutarız; ham madde kabulünden nihai tekne teslimatına kadar eksiksiz bir
+  izlenebilirlik zinciri oluştururuz.</p>
 
-content_html: |
-  <h2>Trust, but verify</h2>
-  <p>The lab operates under a quality management system aligned with principles, and our test methods are based on ISO, ASTM, and EN standards wherever applicable. We maintain detailed records of every test performed, creating a complete traceability chain from raw material receipt to final boat delivery.</p>
 
-  <h2>Test equipment and capabilities</h2>
+  <h2>Test ekipmanları ve kapasiteleri</h2>
+
   <table>
-    <thead><tr><th>Equipment</th><th>Tests Performed</th><th>Standard / Method</th></tr></thead>
+    <thead><tr><th>Ekipman</th><th>Yapılan Testler</th><th>Standart / Yöntem</th></tr></thead>
     <tbody>
-      <tr><td>Universal testing machine (50 kN)</td><td>Tensile strength (fabric), peel resistance (seams), tear propagation</td><td>ISO 1421, ISO 4674</td></tr>
-      <tr><td>Air-retention test rig (programmable)</td><td>1000-cycle inflation/deflation endurance, 30 min pressure-hold test</td><td>ISO 6185 (internal)</td></tr>
-      <tr><td>Seam-peel jig (motorised 180° peel)</td><td>Weld and glued-seam peel strength at 100 mm/min</td><td>ISO 1421 / ASTM D1876</td></tr>
-      <tr><td>Hydrostatic head tester</td><td>Water penetration resistance of fabric (0–1000 mbar)</td><td>ISO 811</td></tr>
-      <tr><td>Digital thickness gauge &amp; micrometre</td><td>Fabric thickness, tube wall thickness, adhesive-film thickness</td><td>ISO 2286-3</td></tr>
-      <tr><td>Environmental chamber</td><td>Temperature conditioning (-40 °C to +80 °C) for cold-crack and heat-ageing tests</td><td>ISO 188, ISO 4675</td></tr>
-      <tr><td>Colour spectrophotometer</td><td>Delta-E colour measurement after UV exposure</td><td>ISO 105-A05 / ASTM D2244</td></tr>
+      <tr><td>Evrensel test makinesi (50 kN)</td><td>Çekme dayanımı (kumaş), soyma direnci (dikişler), yırtılma yayılması</td><td>ISO 1421, ISO 4674</td></tr>
+      <tr><td>Hava geçirmezlik testi düzenği (programlanabilir)</td><td>1000 döngü şişirme/indirme dayanımı, 30 dk basınç tutma testi</td><td>ISO 6185 (dahili)</td></tr>
+      <tr><td>Dikiş soyma aparatı (motorlu 180° soyma)</td><td>100 mm/min hızında kaynak ve yapıştırılmış dikiş soyma dayanımı</td><td>ISO 1421 / ASTM D1876</td></tr>
+      <tr><td>Hidrostatik basınç test cihazı</td><td>Kumaşın su geçirmezlik direnci (0–1000 mbar)</td><td>ISO 811</td></tr>
+      <tr><td>Dijital kalınlık ölçer &amp; mikrometre</td><td>Kumaş kalınlığı, tüp et kalınlığı, yapıştırıcı film kalınlığı</td><td>ISO 2286-3</td></tr>
+      <tr><td>Çevre odası</td><td>Soğuk çatlama ve sıcaklık yaşlandırma testleri için sıcaklık ayarı (-40 °C ile +80 °C)</td><td>ISO 188, ISO 4675</td></tr>
+      <tr><td>Renk spektrofotometresi</td><td>UV maruziyeti sonrası Delta-E renk ölçümü</td><td>ISO 105-A05 / ASTM D2244</td></tr>
     </tbody>
   </table>
 
-  <h2>The inspection gates — from material to delivery</h2>
-  <p>Every boat follows a defined quality plan with mandatory inspection points. No boat can skip a gate; each gate must be signed off by a quality inspector before the next production stage begins.</p>
+
+  <h2>Kontrol noktaları — malzemeden teslimata</h2>
+
+  <p>Her tekne, zorunlu kontrol noktalarına sahip tanımlanmış bir kalite planına uyar. Bir tekne bir kontrol noktasını atlayamaz; her kontrol noktası bir sonraki üretim aşaması başlamadan önce kalite denetçisi tarafından onaylanmalıdır.</p>
+
 
   <div class="not-prose my-8">
     <div class="relative">
       <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-200 dark:bg-blue-800"></div>
       <div class="space-y-6 relative">
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 1</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Kontrol Noktası 1</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">Incoming material inspection</p>
-            <p class="text-xs text-gray-500 mt-1">Fabric batch, adhesive batch, hardware — all checked against incoming specification before release to production.</p>
+            <p class="text-sm font-semibold">Gelen malzeme muayenesi</p>
+            <p class="text-xs text-gray-500 mt-1">Kumaş partisi, yapıştırıcı partisi, donanım — tümü ürettime serbest bırakılmadan önce gelen spesifikasyona göre kontrol edilir.</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 2</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Kontrol Noktası 2</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">In-process weld inspection</p>
-            <p class="text-xs text-gray-500 mt-1">First-off weld coupon tested (peel + visual) at start of each production shift.</p>
+            <p class="text-sm font-semibold">Süreç içi kaynak muayenesi</p>
+            <p class="text-xs text-gray-500 mt-1">Her üretim vardiya başında ilk kaynak numunesi test edilir (soyma + görsel).</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 3</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Kontrol Noktası 3</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">Chamber air test</p>
-            <p class="text-xs text-gray-500 mt-1">Each chamber pressurised to 1.5 x working pressure, held 30 min. Data logged per serial number.</p>
+            <p class="text-sm font-semibold">Kamara hava testi</p>
+            <p class="text-xs text-gray-500 mt-1">Her kamaraya 1,5 x çalışma basıncı uygulanır ve 30 dakika tutulur. Veriler seri numarasına göre kaydedilir.</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 4</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Kontrol Noktası 4</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">Pre-delivery inspection</p>
-            <p class="text-xs text-gray-500 mt-1">Complete boat inspected: all fasteners torqued, systems functional, no cosmetic defects. 100-point checklist.</p>
+            <p class="text-sm font-semibold">Teslimat öncesi muayene</p>
+            <p class="text-xs text-gray-500 mt-1">Tam tekne muayene edilir: tüm bağlantı elemanları torklanmış, sistemler fonksiyonel, kusur yok. 100 maddelik kontrol listesi.</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 5</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Kontrol Noktası 5</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">Final certification</p>
-            <p class="text-xs text-gray-500 mt-1">Test reports compiled, inspection records reviewed, Certificate of Conformance issued.</p>
+            <p class="text-sm font-semibold">Nihai sertifikasyon</p>
+            <p class="text-xs text-gray-500 mt-1">Test raporları derlenir, muayene kayıtları gözden geçirilir, Uygunluk Sertifikası düzenlenir.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <h2>Key quality metrics (2025 rolling average)</h2>
+
+  <h2>Temel kalite göstergeleri (2025 yuvarlama ortalaması)</h2>
+
   <div class="not-prose my-8 grid grid-cols-2 md:grid-cols-4 gap-4">
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
-      <span class="block text-2xl font-bold text-blue-600">99.7 %</span>
-      <span class="text-xs text-gray-500">First-pass yield (fabric batch)</span>
+      <span class="block text-2xl font-bold text-blue-600">99,7 %</span>
+      <span class="text-xs text-gray-500">İlk geçiş verimi (kumaş partisi)</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
-      <span class="block text-2xl font-bold text-blue-600">&lt; 0.2 %</span>
-      <span class="text-xs text-gray-500">Weld reject rate (linear metre)</span>
+      <span class="block text-2xl font-bold text-blue-600">&lt; 0,2 %</span>
+      <span class="text-xs text-gray-500">Kaynak ret oranı (lineer metre)</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
       <span class="block text-2xl font-bold text-blue-600">100 %</span>
-      <span class="text-xs text-gray-500">Chambers air-tested before assembly</span>
+      <span class="text-xs text-gray-500">Montaj öncesi kamara hava testi yapılanlar</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
       <span class="block text-2xl font-bold text-blue-600">ISO 6185</span>
-      <span class="text-xs text-gray-500">Design category compliance</span>
+      <span class="text-xs text-gray-500">Tasarım kategorisi uyumluluğu</span>
     </div>
   </div>
 
-  <h2>Our quality team</h2>
-  <p>The lab is staffed by a quality manager (10 years in marine QA, ASQ Certified Quality Engineer), two quality inspectors (each with Level 2 NDT certification in visual testing), and a materials technician responsible for all physical testing. The team undergoes annual proficiency testing through an independent third-party provider to ensure that our test results remain accurate and reproducible.</p>
 
-  <h2>Independent testing for clients</h2>
-  <p>Our Quality &amp; Inspection Lab is available for independent testing services. If you need to verify a fabric specification, validate a new adhesive system, or obtain a third-party test report for a procurement qualification, we can perform the tests to the applicable standard and issue a certified test report.</p>
-  <p>Examples of recent third-party testing work:</p>
+  <h2>Kalite ekibimiz</h2>
+
+  <p>Laboratuvar, bir kalite müdürü (denizcilik QA'da 10 yıl, ASQ Sertifikalı Kalite Mühendisi), iki kalite denetçisi (her biri görsel testte Seviye 2 NDT sertifikasına sahip) ve tüm fiziksel testlerden sorumlu bir malzeme teknisyeni ile donatılmıştır. Ekip, test sonuçlarımızın doğru ve
+  tekrarlanabilir olmasını sağlamak için bağımsız bir üçüncü taraf kuruluş aracılığıyla yıllık yeterlilik testine tabi tutulur.</p>
+
+
+  <h2>Müşteriler için bağımsız testler</h2>
+
+  <p>Kalite ve Muayene Laboratuvarımız bağımsız test hizmetleri için açıktır. Bir kumaş spesifikasyonunu doğrulamak, yeni bir yapıştırıcı sistemini onaylamak veya tedarik yeterliliği için bir üçüncü taraf test raporu almak istiyorsanız, ilgili standarta göre testleri gerçekleştirebilir ve
+  sertifikalı bir test raporu düzenleyebiliriz.</p>
+
+  <p>Yakın zamanda gerçekleştirilen üçüncü taraf test çalışmalarından örnekler:</p>
+
   <ul>
-    <li>Peel-strength comparison of five competitive adhesive film products for a European military procurement programme.</li>
-    <li>Accelerated ageing study (UV + thermal cycling) for a new orange-pigmented PVC formulation, with regular interim measurements at 500 h intervals.</li>
-    <li>Air-retention validation of 50 prototype baffle valves for a new high-pressure tube design.</li>
+    <li>Avrupa askeri tedarik programı için beş rekabetçi yapıştırıcı film ürünüünün soyma dayanımı karşılaştırması.</li>
+    <li>Yeni turuncu pigmentli PVC formülasyonu için hızlandırılmış yaşlandırma çalışması (UV + termal döngü), 500 saat aralıklarla düzenli ara ölçümleri.</li>
+    <li>Yeni yüksek basınçlı tüp tasarımı için 50 prototip baffle valfin hava geçirmezlik doğrulaması.</li>
   </ul>
 
-  <h2>Our commitment to you</h2>
-  <p>When you receive a {SITE.name} boat, you also receive its quality dossier — a compiled record of the test results that apply to your specific boat. Fabric batch certificate, weld peel tests, chamber air-test logs, and pre-delivery inspection checklist. Every number is traceable. Every inspector is identified. This is not just paperwork — it is our promise that what we delivered is what we specified.</p>
-  <p>If you ever have a quality concern, you can contact the lab directly — the contact details are printed on your certificate of conformance. We take every query seriously and commit to a formal investigation within 48 hours.</p>
 
+  <h2>Size olan taahhütümüz</h2>
+
+  <p>{SITE.name} teknesini aldığınızda, kalite dosyasını da alırsınız —belirli teknenize uygulanabilir test sonuçlarının derlenmiş bir kaydı. Kumaş parti sertifikası, kaynak soyma testleri, kamara hava testi kayıtları ve teslimat öncesi muayene kontrol listesi. Her rakam izlenebilir. Her denetçi
+  tanımlıdır. Bu yalnızca bir kağıt işi değil —teslim ettiğimizin spesifiye ettiğimiz olduğuna dair sözümüzdür.</p>
+
+  <p>Herhangi bir kalite endişeniz olursa laboratuvarla doğrudan iletişime geçebilirsiniz —iletişim bilgileri uygunluk sertifikanızın üzerindedir. Her sorguyu ciddiye alırız ve 48 saat içinde resmi bir soruşturma taahhüt ederiz.</p>
 cta:
-  title: 'Need independent testing or quality verification?'
-  subtitle: 'Our lab accepts third-party testing work — contact us with your requirements.'
-  button_text: 'Contact the quality lab'
-  button_link: /contact
+  title: Bağımsız test veya kalite doğrulamasına mı ihtiyacınız var?
+  subtitle: Laboratuvarımız üçüncü taraf test çalışmalarını kabul eder — gereksinimlerinizle bize ulaşın.
+  button_text: Kalite laboratuvarıyla iletişime geçin
+  button_link: /iletisim

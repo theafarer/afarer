@@ -1,163 +1,163 @@
 hero:
-  tagline: afarer Academy
+  tagline: afarer Academie
   title: Kenniscentrum
   subtitle: Handleidingen en tutorials voor elk vaardigheidsniveau —van SUP-basis tot geavanceerde reddingstechnieken
 categories:
   - level: Beginner
-    color: from-green-500 to-emerald-600
-    badge: bg-green-100 text-green-700
+    color: van-groen-500 naar-smaragd-600
+    badge: bg-groen-100 tekst-groen-700
     guides:
       - title: SUP-basis
         desc: Leer de basis van staand peddelen —houding, peddeltechniek en balans.
-        slug: sup-basics
+        slug: sup-basis
       - title: Peddeltechnieken
         desc: Voorwaarts peddelen, achterwaarts peddelen, trekpeddel en lage steun —beheers de basispeddelbewegingen.
-        slug: paddle-techniques
+        slug: peddeltechnieken
       - title: Veiligheid voorop
         desc: Essentiële veiligheidspraktijken, waaronder weerscontrole, PFD-gebruik, leiblijnregels en zelfredding.
-        slug: safety-first
+        slug: veiligheid-eerst
   - level: Gemiddeld
-    color: from-blue-500 to-indigo-600
-    badge: bg-blue-100 text-blue-700
+    color: van-blauw-500 naar-indigo-600
+    badge: bg-blauw-100 tekst-blauw-700
     guides:
       - title: Basis toerkajakken
         desc: Meerdaagse tochten plannen —navigatie, hydratatie, tempo en windvoorspellingen lezen.
-        slug: touring-essentials
+        slug: toeristische-essentials
       - title: Weer lezen
         desc: Marinevoorspellingen interpreteren, wolkenpatronen herkennen en de invloed van wind op water begrijpen.
-        slug: weather-reading
+        slug: weerbericht
       - title: Navigatiebasis
         desc: Kaartlezen, kompas gebruiken, GPS-waypoints en routeplanning voor kustnavigatie.
-        slug: navigation-basics
+        slug: navigatie-basics
       - title: Getijdenbewustzijn
         desc: Inzicht in getijdencycli, stromingen en hun invloed op vertrektijd en route.
-        slug: tidal-awareness
+        slug: getijdenbewustzijn
   - level: Gevorderd
-    color: from-purple-500 to-violet-600
-    badge: bg-purple-100 text-purple-700
+    color: van-paars-500 naar-violet-600
+    badge: bg-paars-100 tekst-paars-700
     guides:
       - title: Meerdaagse tochten plannen
         desc: Expeditielogistiek —uitrustingskeuze, maaltijdplanning, veiligheidsprotocollen en noodcontacten.
-        slug: multi-day-trip-planning
+        slug: meerdaagse-reisplanning
       - title: Reddingstechnieken
         desc: Zelfredding, T-redding, Eskimoredding voor kajaks en sleepprotocollen op open water.
-        slug: rescue-techniques
+        slug: reddingstechnieken
       - title: Nachtpeddelen
         desc: Navigatie in het donker —verlichtingseisen, routegeheugen, groepscommunicatie en gevarenbewustzijn.
-        slug: night-paddling
+        slug: nachtpeddelen
   - level: Onderhoud
-    color: from-amber-500 to-orange-600
+    color: van-amber-500 naar-oranje-600
     badge: bg-amber-100 text-amber-700
     guides:
       - title: Reiniging en verzorging
         desc: Spoelen met zoet water, UV-bescherming, schimmelpreventie en juiste droogtechnieken na elke sessie.
-        slug: cleaning-and-care
+        slug: reiniging-en-onderhoud
       - title: Opslag
         desc: Beste opslagpraktijken voor opblaasbare boards en boten —leeglaten, opvouwen, temperatuurbeheer en houdbaarheid.
-        slug: storage-guide
+        slug: opslag-gids
       - title: Reparatiebasis
         desc: Kleine lekken, lekkende naden en klepproblemen repareren met PVC-reparatiesets en patchtechnieken.
-        slug: repair-basics
+        slug: reparatie-basics
       - title: Kleponderhoud
         desc: Identificatie van kleptypen (Halkey-Roberts, Boston, Leafield), reinigen van vuil en vervangen van defecte kleppen.
-        slug: valve-maintenance
-knowledge_center_tagline: Knowledge Center
-knowledge_center_title: Marine Equipment & Industry Guides
-knowledge_center_subtitle: Expert knowledge and buying guides for marine professionals, fleet operators, and water sports enthusiasts.
+        slug: klep-onderhoud
+knowledge_center_tagline: Kenniscentrum
+knowledge_center_title: Marine-uitrusting & industriehandleidingen
+knowledge_center_subtitle: Expertkennis en koopgidsen voor maritieme professionals, vlootbeheerders en watersportliefhebbers.
 knowledge_sections:
-  - title: SUP Board Knowledge
-    tagline: Stand-Up Paddleboard Guides
-    desc: Everything about SUP boards —board design, materials, size selection, maintenance, and buying advice for recreational and commercial use.
+  - title: SUP Board Kennis
+    tagline: Stand-up paddleboard gidsen
+    desc: Alles over SUP-boards — boardontwerp, materialen, maatkeuze, onderhoud en aankoopadvies voor recreatief en commercieel gebruik.
     guides:
-      - title: How to Choose the Right SUP Board
-        desc: Complete guide to selecting a SUP —size, volume, material, shape, and intended use.
+      - title: Hoe kies je het juiste SUP-board
+        desc: Complete gids voor het kiezen van een SUP — grootte, volume, materiaal, vorm en beoogd gebruik.
         href: /learn/sup
-      - title: Inflatable vs Hard SUP
-        desc: Inflatable SUP vs hard epoxy board —portability, durability, performance, and value compared.
+      - title: Opblaasbare vs Harde SUP
+        desc: Opblaasbare SUP versus harde epoxy-plank — draagbaarheid, duurzaamheid, prestaties en waarde vergeleken.
         href: /compare/inflatable-vs-hardboard
-      - title: All-Around vs Touring vs Yoga SUP
-        desc: Different SUP board types —construction standards, shapes, sizes, and recommended uses.
+      - title: Allround vs Touring vs Yoga SUP
+        desc: Verschillende soorten SUP-boards — bouwnormen, vormen, maten en aanbevolen gebruik.
         href: /learn/sup
-      - title: Drop-Stitch vs Traditional Construction
-        desc: Compare drop-stitch and traditional construction for SUP boards across weight, cost, durability, and rigidity.
+      - title: Drop-Stitch versus traditionele constructie
+        desc: Vergelijk drop-stitch en traditionele constructie voor SUP-boards op het gebied van gewicht, kosten, duurzaamheid en stijfheid.
         href: /learn/drop-stitch-core
-  - title: Inflatable SUP Guide
-    tagline: Inflatable SUP Knowledge
-    desc: Comprehensive guides on inflatable SUPs —PVC materials, drop-stitch construction, safety standards, and maintenance best practices.
+  - title: Opblaasbare SUP-gids
+    tagline: Opblaasbare SUP Kennis
+    desc: Uitgebreide handleidingen over opblaasbare SUP's — PVC-materialen, drop-stitch constructie, veiligheidsnormen en beste onderhoudspraktijken.
     guides:
-      - title: PVC Material Guide
-        desc: Definitive guide to PVC materials used in inflatable SUP board construction.
+      - title: PVC Materiaalgids
+        desc: Definitieve gids voor PVC-materialen die worden gebruikt bij de constructie van opblaasbare SUP-boards.
         href: /learn/materials
-      - title: How Inflatable SUPs Are Made
-        desc: Manufacturing process —material cutting, drop-stitch core bonding, seam construction, pressure testing, and quality control.
+      - title: Hoe opblaasbare SUP's worden gemaakt
+        desc: Productieproces — materiaal snijden, drop-stitch kernlijmen, naadconstructie, druktesten en kwaliteitscontrole.
         href: /learn/inflatable-technology
-      - title: SUP Safety Guide
-        desc: Safety standards, load capacity, proper inflation, pre-departure checks, and emergency procedures.
+      - title: SUP Veiligheidsgids
+        desc: Veiligheidsnormen, draagvermogen, juiste ophoging, controles voorafgaand aan vertrek en noodprocedures.
         href: /learn/water-safety
-      - title: SUP Maintenance
-        desc: Cleaning, storage, UV protection, and repair of inflatable SUP boards.
+      - title: SUP Onderhoud
+        desc: Reiniging, opslag, UV-bescherming en reparatie van opblaasbare SUP-boards.
         href: /inflatable-sup-maintenance
-  - title: SUP Board Knowledge
+  - title: SUP Board Kennis
     tagline: SUP Board Hub
-    desc: Technical guides covering SUP board types, materials, construction methods, maintenance, and safety.
+    desc: Technische handleidingen over SUP-boardtypes, materialen, constructiemethoden, onderhoud en veiligheid.
     guides:
-      - title: SUP Board Types
-        desc: All-around, touring, yoga, sport, and kids SUPs —learn the differences and choose the right one.
+      - title: SUP Boardtypen
+        desc: Allround, touring, yoga, sport- en kind-SUP's — leer de verschillen en kies de juiste.
         href: /learn/sup
-      - title: Drop-Stitch Technology
-        desc: How thousands of internal threads create rigid, high-pressure inflatable structures.
+      - title: Drop-Stitch Technologie
+        desc: Hoe duizenden interne draden stijve, hogedruk-opblaasbare structuren creëren.
         href: /learn/drop-stitch-core
-      - title: Materials Reference
-        desc: PVC denier ratings, fabric weights, UV resistance, and marine-grade materials explained.
+      - title: Materiaalreferentie
+        desc: PVC-denierclassificaties, stofgewichten, UV-bestendigheid en materialen van maritieme kwaliteit uitgelegd.
         href: /learn/materials
-      - title: SUP Buying Guide
-        desc: Compare different SUP board types for different use cases and skill levels.
+      - title: SUP Koopgids
+        desc: Vergelijk verschillende soorten SUP-boards voor verschillende gebruikssituaties en vaardigheidsniveaus.
         href: /learn/sup
-  - title: SUP Knowledge
-    tagline: Stand-Up Paddleboard Guides
-    desc: Everything about SUP boards —inflatable vs rigid, board dimensions, material technology, and expert advice for all skill levels.
+  - title: SUP Kennis
+    tagline: Stand-up paddleboard gidsen
+    desc: Alles over SUP-boards — opblaasbaar versus stijf, boardafmetingen, materiaaltechnologie en deskundig advies voor alle vaardigheidsniveaus.
     guides:
-      - title: Inflatable vs Hard SUP
-        desc: Compare iSUPs and hard epoxy boards across portability, durability, performance, and value.
+      - title: Opblaasbare vs Harde SUP
+        desc: Vergelijk iSUP's en harde epoxyboards op het gebied van draagbaarheid, duurzaamheid, prestaties en waarde.
         href: /learn/sup
-      - title: SUP Board Dimensions Guide
-        desc: How length, width, and thickness affect stability, speed, and maneuverability.
+      - title: SUP Board Afmetingen Gids
+        desc: Hoe lengte, breedte en dikte de stabiliteit, snelheid en wendbaarheid beïnvloeden.
         href: /learn/sup
-      - title: SUP Maintenance & Care
-        desc: Cleaning, storage, UV protection, and repair tips for inflatable SUP boards.
+      - title: SUP Onderhoud & Verzorging
+        desc: Schoonmaken, opbergen, UV-bescherming en reparatietips voor opblaasbare SUP-boards.
         href: /inflatable-sup-maintenance
-      - title: Choosing Your First SUP
-        desc: Beginner's guide to selecting the right stand-up paddleboard for your weight, skill level, and intended use.
+      - title: Je Eerste SUP Kiezen
+        desc: Handleiding voor beginners om het juiste stand-up paddleboard te kiezen op basis van je gewicht, vaardigheidsniveau en beoogd gebruik.
         href: /learn/sup
-  - title: Rental Operations Guide
-    tagline: Fleet Management for Rental Businesses
-    desc: Guides on building and managing SUP rental fleets for beach kiosks, water sports centers, and hospitality properties.
+  - title: Gids voor huuractiviteiten
+    tagline: Vlootbeheer voor verhuurbedrijven
+    desc: Gidsen over het opbouwen en beheren van SUP-verhuren voor strandkiosken, watersportcentra en horecaproducten.
     guides:
-      - title: Building Your Rental Fleet
-        desc: How to choose the right SUP boards for your rental operation —durability, sizing, and ROI considerations.
+      - title: Het opbouwen van uw verhuurvloot
+        desc: Hoe de juiste SUP-boards te kiezen voor uw verhuurbedrijf — duurzaamheid, afmetingen en ROI-overwegingen.
         href: /solutions/rental-operators
-      - title: Fleet Maintenance Guide
-        desc: Essential maintenance practices to maximize board lifespan and minimize downtime for rental fleets.
+      - title: Gids voor Vlootonderhoud
+        desc: Essentiële onderhoudspraktijken om de levensduur van boards te maximaliseren en stilstandtijd voor verhuivloten te minimaliseren.
         href: /solutions/rental-operators
-  - title: Resort & Hospitality Guide
-    tagline: Water Activities for Hospitality
-    desc: Guides on launching and managing SUP programs for resorts, hotels, and waterfront destinations.
+  - title: Resort- en gastvrijheidsgids
+    tagline: Wateractiviteiten voor de horeca
+    desc: Gidsen voor het opstarten en beheren van SUP-programma's voor resorts, hotels en bestemmingen aan het water.
     guides:
-      - title: Starting a Resort SUP Program
-        desc: Factors to consider when launching guest SUP activities —fleet sizing, staffing, and revenue modeling.
+      - title: Een SUP-programma starten bij een resort
+        desc: Factoren om rekening mee te houden bij het lanceren van SUP-activiteiten voor gasten — vlootgrootte, personeel en omzetmodellering.
         href: /solutions/resorts-hotels
-      - title: SUP vs Other Water Activities
-        desc: Compare SUP programs with other water sports for guest experience and operational efficiency.
+      - title: SUP versus andere wateractiviteiten
+        desc: Vergelijk SUP-programma's met andere watersporten op het gebied van gastervaring en operationele efficiëntie.
         href: /learn/sup
-  - title: Retail & Distribution Guide
-    tagline: SUP Business Partnerships
-    desc: Guides on becoming a SUP retail partner or distributor —inventory planning, market positioning, and growth strategies.
+  - title: Retail- en distributiegids
+    tagline: SUP Zakelijke Partnerschappen
+    desc: Gidsen over het worden van een SUP-retailpartner of distributeur — voorraadplanning, marktpositionering en groeistrategieën.
     guides:
-      - title: Becoming a SUP Retailer
-        desc: How to choose product lines, manage inventory, and market SUP boards in your retail store.
+      - title: Worden van een SUP-verkoper
+        desc: Hoe productlijnen te kiezen, voorraad te beheren en SUP-boards in uw winkel te verkopen.
         href: /solutions/retail-partners
-      - title: SUP for Commercial Operations
-        desc: Why inflatable SUPs are a versatile product for commercial fleets, rental businesses, and professional operators.
+      - title: SUP voor Commerciële Operaties
+        desc: Waarom opblaasbare SUP's een veelzijdig product zijn voor commerciële vloten, verhuurbedrijven en professionele operators.
         href: /use-cases/search-and-rescue
 read_guide: Lees de handleiding →
 cta:

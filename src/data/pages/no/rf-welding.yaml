@@ -1,56 +1,65 @@
 meta:
-  title: 'RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}'
-  description: 'Radio-frequency welding technology delivering compliant airtight seams. Peel testing, air-retention validation, and custom seam specifications.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: RF-sveisesenter — dielektrisk binding for tetteste sommer | {SITE}
+  description: Radiofrekvens sveiseteknologi som gir kompatible lufttette sømmer. Peelingstesting, luftretensjonsvalidering og tilpassede sømspesifikasjoner.
+back_text: Tilbake til FoU-senteret
+home_label: Hjem
 hero:
-  tagline: 'Lab 03'
-  title: 'RF Welding Center'
-  subtitle: 'Dielectric bonding technology for welds that hold under pressure'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1.webp'
-  image_alt: 'Afarer RF welding dielectric bonding process'
+  tagline: Lab 03
+  title: RF-sveisesenter
+  subtitle: Dielektrisk bondingsteknologi for sveiser som holder under trykk
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1.webp
+  image_alt: Afarer RF-sveising dielektrisk binding
+intro: >-
+  En oppblåsbar båt er bare så pålitelig som sømmene dens. Et enkelt svakt sveis kan kompromittere et helt kammer — og til sjøs er en kammerfeil ikke bare et irritasjonsmoment; det er en sikkerhetsrisiko. Hos {SITE.name} har vi investert i et dedikert radiofrekvens (RF) sveisesenter som kombinerer
+  industrigrad dielektriske sveise presser med streng prosesskontroll og sveise-testing. Hver søm vi produserer er dokumentert, sporet og sertifisert for å møte eller overgå kravene til — den internasjonale standarden for oppblåsbare farkoster.
+content_html: >
+  <h2>Vitenskapen bak sømmen</h2>
 
-intro: 'An inflatable boat is only as reliable as its seams. A single weak weld can compromise an entire chamber — and at sea, a chamber failure is not an inconvenience; it is a safety hazard. At {SITE.name}, we have invested in a dedicated Radio-Frequency (RF) Welding Center that combines industrial-grade dielectric welding presses with rigorous process control and post-weld testing. Every seam we produce is documented, traceable, and certified to meet or exceed the requirements of — the international standard for inflatable craft.'
+  <p>RF-sveising bruker høyfrekvent elektromagnetisk energi (typisk 27,12 MHz) for å eksitere de polare molekylene i PVC- eller Hypalon-belagt stoff, og genererer varme presist ved materiellgrensesnittet. I motsetning til varmlufts- eller varmkile-sveising, skaper RF-sveising en sann molekylær
+  binding — de to stofflagene smelter sammen til et ensartet homogent materiale i sveiseområdet, og produserer en skjøt som er like sterk som base materialet selv.</p>
 
-content_html: |
-  <h2>The science behind the seam</h2>
-  <p>RF welding uses high-frequency electromagnetic energy (typically 27.12 MHz) to excite the polar molecules within PVC or Hypalon-coated fabric, generating heat precisely at the material interface. Unlike hot-air or hot-wedge welding, RF welding creates a true molecular bond — the two fabric layers fuse into a single homogeneous material at the weld zone, producing a joint that is as strong as the parent material itself.</p>
 
-  <h2>Welding equipment and process control</h2>
-  <p>Our welding centre is equipped with:</p>
+  <h2>Sveiseutstyr og prosesskontroll</h2>
+
+  <p>Vårt sveisesenter er utstyrt med:</p>
+
   <table>
-    <thead><tr><th>Machine</th><th>Power / Capacity</th><th>Application</th></tr></thead>
+    <thead><tr><th>Maskin</th><th>Effekt / Kapasitet</th><th>Anvendelse</th></tr></thead>
     <tbody>
-      <tr><td>Dielectric RF press 1</td><td>15 kW, platen 2000 × 600 mm</td><td>Main longitudinal seams, transom-to-tube joints</td></tr>
-      <tr><td>Dielectric RF press 2</td><td>10 kW, platen 1500 × 500 mm</td><td>Baffle welds, cone attachments, valve patches</td></tr>
-      <tr><td>CNC controlled RF welder</td><td>8 kW, XY table 2500 × 1200 mm</td><td>Curved seams, logo/panel embossing, precision patchwork</td></tr>
-      <tr><td>Hot-wedge automatic welder</td><td>Variable temperature, 1.2 m/min max</td><td>Backup method for Hypalon/CSM materials</td></tr>
+      <tr><td>Dielektrisk RF-presse 1</td><td>15 kW, plate 2000 × 600 mm</td><td>Hovedlongitudinale sømmer, transom-til-rør-sammenføyninger</td></tr>
+      <tr><td>Dielektrisk RF-presse 2</td><td>10 kW, plate 1500 × 500 mm</td><td>Skilleveggsveisinger, kjeglefester, ventilplaster</td></tr>
+      <tr><td>CNC-kontrollert RF-sveiser</td><td>8 kW, XY-bord 2500 × 1200 mm</td><td>Kurvesømmer, logo-/panelpreget, presisjonslappverk</td></tr>
+      <tr><td>Varmkile automatisk sveiser</td><td>Variable temperaturer, maks. 1,2 m/min</td><td>Reservemetode for Hypalon/CSM-materialer</td></tr>
     </tbody>
   </table>
-  <p>Every RF press is equipped with closed-loop temperature and pressure monitoring. Weld parameters — power, press time, cooling time, electrode pressure — are programmed per material type and recorded in our Manufacturing Execution System (MES) for full traceability.</p>
 
-  <h2>Weld quality tests — every seam, every boat</h2>
-  <p>Weld integrity is verified through a mandatory four-test protocol:</p>
+  <p>Alle RF-presser er utstyrt med lukket sløyfe-temperatur- og trykkovervåking. Sveiseparametere — effekt, pressetid, kjøletid, elektrodetrykk — programmeres per materialtype og registreres i vårt produksjonsutførelsessystem (MES) for full sporing.</p>
+
+
+  <h2>Sveisekvalitetstester — hver søm, hver båt</h2>
+
+  <p>Sveiseintegritet verifiseres gjennom en obligatorisk fire-testprotokoll:</p>
+
   <ol>
-    <li><strong>Visual inspection</strong> — 100 % of seams are visually inspected for burn-through, misalignment, contamination, or incomplete fusion. Reject rate threshold: 0.5 % of linear metres.</li>
-    <li><strong>Peel test ()</strong> — A 25 mm wide strip is cut from a test coupon welded with each production batch. Minimum peel force: 120 N/25 mm for PVC 1100 dtex.</li>
-    <li><strong>Air-retention test</strong> — Every completed chamber is pressurised to 1.5 × working pressure and held for 30 minutes. Pressure drop must not exceed 2 %.</li>
-    <li><strong>Thermal cycling test</strong> — Sample coupons are cycled from -20 °C to +60 °C for 50 cycles, then peel-tested again. Acceptable strength loss: &lt; 10 %.</li>
+    <li><strong>Visuell inspeksjon</strong> — 100 % av sømmene inspiseres visuelt for gjennomslag, feilplassering, forurensning eller ufullstendig sammensmeltning. Avvisningsrate terskel: 0,5 % av lineære meter.</li>
+    <li><strong>Skalltest ()</strong> — Et 25 mm bredt bånd klippes fra et teststykke sveist med hvert produksjonsparti. Minimum skallkraft: 120 N/25 mm for PVC 1100 dtex.</li>
+    <li><strong>Luftretensjonstest</strong> — Hvert fullført kammer overtrykkes til 1,5 × arbeidstrykk og holdes i 30 minutter. Trykkfall må ikke overstige 2 %.</li>
+    <li><strong>Termisk syklingstest</strong> — Teststykker sykles fra –20 °C til +60 °C i 50 sykluser, og skalltestes deretter igjen. Akseptabelt styrketap: &lt; 10 %.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Peel Strength Comparison — RF vs Hot-Air Welding (PVC 1100 dtex)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Sammenligning av skallstyrke — RF vs varmluftssveising (PVC 1100 dtex)</p>
     <div class="space-y-3">
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium">RF Weld</span>
+        <span class="w-24 text-xs font-medium">RF-sveising</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">184 N</span>
       </div>
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium">Hot-Air</span>
+        <span class="w-24 text-xs font-medium">Varmluft</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
         </div>
@@ -64,26 +73,35 @@ content_html: |
         <span class="text-xs font-bold w-12 text-right">96 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">RF welding consistently achieves 90-95 % of parent-material strength, well above the minimum.</p>
+    <p class="text-xs text-gray-400 mt-2">RF-sveising oppnår konsekvent 90–95 % av basematerialets styrke, godt over minimumskravet.</p>
   </div>
 
-  <h2>Professional expertise</h2>
-  <p>Our welding team is led by a senior process engineer with 11 years of experience in dielectric welding of coated textiles. Each operator completes a 6-month in-house certification programme before being allowed to work on production seams. Recertification is required annually, including a practical weld test evaluated against our internal Grade-A standard (peel strength ≥ 160 N/25 mm).</p>
 
-  <h2>Custom welding solutions for unique requirements</h2>
-  <p>We understand that one welding specification does not fit every application. Our RF Welding Center routinely develops custom seam configurations for clients with special requirements:</p>
+  <h2>Profesjonell ekspertise</h2>
+
+  <p>Vårt sveiseteam ledes av en senior prosessingeniør med 11 års erfaring med dielektrisk sveising av belagte tekstiler. hver operatør fullfører et 6-måneders internt sertifiseringsprogram før de får lov til å arbeide med produksjonssømmer. Resertifisering kreves årlig, inkludert en praktisk
+  sveisetest vurdert mot vår interne A-klasse-standard (skallstyrke ≥ 160 N/25 mm).</p>
+
+
+  <h2>Tilpassede sveiseløsninger for unike behov</h2>
+
+  <p>Vi forstår at en sveisespesifikasjon ikke passer for alle anvendelser. Vårt RF-sveisesenter utvikler rutinemessig tilpassede sømkonfigurasjoner for kunder med spesielle krav:</p>
+
   <ul>
-    <li><strong>Multi-layer reinforcement patches</strong> — for high-wear areas such as rubbing strakes and bow cones, we develop multi-pass RF welds that integrate a wear-resistant outer layer without compromising flexibility.</li>
-    <li><strong>Conductive or RF-opaque seams</strong> — for military or surveillance vessels requiring electromagnetic shielding, we weld in conductive mesh layers within the seam stack-up.</li>
-    <li><strong>Colour-change panel welding</strong> — dual-colour fabric panels (e.g. orange hull + grey topside) welded with a concealed overlap to maintain brand aesthetics without a visible join line.</li>
+    <li><strong>Flerlags forsterkningsplaster</strong> — for slitesterke områder som slitekanter og baugkjegler, utvikler vi flerpas RF-sveisinger som integrerer et slitesterkt ytre lag uten å compromise fleksibiliteten.</li>
+    <li><strong>Konduktive eller RF-uigjennomsiktige sømmer</strong> — for militære eller overvåkningsfartøy som krever elektromagnetisk skjerming, sveiser vi konduktive mesh-lag i sømoppbyggingen.</li>
+    <li><strong>Fargeendrende panelsveising</strong> — tofargede stoffpaneler (f.eks. oransje skrog + grå overbygning) sveiset med skjult overlap for å opprettholde merkeestetikken uten synlig sammenføyning.</li>
   </ul>
 
-  <h2>Our commitment to you</h2>
-  <p>Every boat we deliver carries our weld-quality guarantee: if any seam fails in normal service within the warranty period, we repair or replace the affected chamber at no cost, and a root-cause investigation is performed to prevent recurrence. This is not simply a warranty — it is a commitment to continuous improvement driven by real-world operational data.</p>
-  <p>When you choose {SITE.name}, you are choosing seams that are engineered, tested, and documented — not just welded. That is the difference between a boat that floats and a boat that performs.</p>
 
+  <h2>Vårt engasjement overfor deg</h2>
+
+  <p>Hver båt vi leverer bærer vår sveisekvalitetsgaranti: hvis en søm mislykkes i normal tjeneste innen garantiperioden, reparerer eller erstatter vi det berørte kammeret uten kostnad, og en rotårsaksundersøkelse utføres for å forhindre gjentakelse. Dette er ikke bare en garanti — det er et
+  engasjement for kontinuerlig forbedring drevet av data fra virkelig drift.</p>
+
+  <p>Når du velger {SITE.name}, velger du sømmer som er ingeniørmessig utformet, testet og dokumentert — ikke bare sveist. Det er forskjellen mellom en båt som flyter og en båt som presterer.</p>
 cta:
-  title: 'Discuss your welding requirements'
-  subtitle: 'Custom seam specifications, material compatibility, or process validation.'
-  button_text: 'Contact our welding team'
+  title: Diskuter dine sveisekrav
+  subtitle: Tilpassede sømspesifikasjoner, materialkompatibilitet eller prosessvalidering.
+  button_text: Kontakt sveise-teamet vårt
   button_link: /contact

@@ -1,25 +1,25 @@
 hero_text:
-  tagline: Get a Quote
+  tagline: お見積りを依頼する
   title: プロジェクトの見積もりをリクエスト<br />
   subtitle: お客様の要件についてお知らせください。当社のチームが 2 営業日以内に詳細な見積もりを返信いたします。
 steps2_process:
-  title: How It Works
+  title: 仕組み
   subtitle: お問い合わせからお見積りまでの簡単4ステップ。
   items:
-    - title: 'Step 1: Submit Your Requirements'
+    - title: ステップ1：ご要件を提出
       description: 以下のフォームに製品の種類、数量、仕様をご記入ください。 より詳細に提供するほど、見積もりはより正確になります。
       icon: tabler:file-text
-    - title: 'Step 2: We Review & Advise'
+    - title: ステップ2：レビューとアドバイス
       description: 当社のエンジニアリング チームがお客様の要件を検討し、説明のためご連絡させていただく場合があります。 製品構成やオプションに関する推奨事項を提供します。
       icon: tabler:users
-    - title: 'Step 3: Receive Your Quote'
+    - title: ステップ3：お見積りを受け取る
       description: 単価、MOQ、リードタイム、支払い条件、配送オプションを含む詳細な見積もりが届きます。 通常は 48 時間以内です。
       icon: tabler:currency-dollar
-    - title: 'Step 4: Sample & Production'
+    - title: ステップ4：サンプル及び量産
       description: 見積もりの​​承諾後、サンプル生産 (該当する場合) または直接量産に進みます。 プロセス全体を通じて定期的に更新。
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
+  tagline: 見積フォーム
   title: あなたのプロジェクトについて教えてください
   subtitle: '* が付いているフィールドはすべて必須です。'
   fields:
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - ダイビングセンター
+        - フィッシング
+        - マリンツーリズム / リゾート
+        - 捜索・救助
+        - ヨットテンダー
+        - 商用作業船
+        - 官公庁・軍事
+        - OEM／プライベートレーベル
+        - 個人・レジャー用
+        - その他
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
+        - 指定なし
+        - マリングレードPVC（1100デニール）
         - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - ガラス繊維強化プラスチック船体
+        - アルミニウム船体
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: 例：60馬力外付、エンジンなし、ツイン115馬力
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: '例: カスタムカラー、ブランド/ロゴ、パッケージ、特殊フィッティング'
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: 例：90日以内に納品
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: アプリケーション、技術仕様、または特別な要件を記述してください — 参考図面、仕様書、リンクがあれば添付してください
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: 仕様書、図面、参考資料（PDF、DWG、DXF）をアップロード
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: カスタムブランディング用のロゴまたはアートワークをアップロード（AI、EPS、PNG）
 cta:
-  title: Prefer to discuss by email?
-  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
+  title: メールでご相談されますか？
+  subtitle: お問い合わせを営業チームにお送りいただくと、24時間以内にご回答いたします。
   actions:
     - variant: primary
-      text: Email us directly
+      text: 直接電子メールで連絡
       href: /contact

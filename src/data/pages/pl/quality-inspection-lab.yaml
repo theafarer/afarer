@@ -1,120 +1,140 @@
 meta:
-  title: 'Quality & Inspection Lab — ISO-Compliant RIB Testing & Certification | {SITE}'
-  description: 'Independent quality verification for inflatable boats. Tensile testing, air-retention cycling, seam peel tests, and material certification. Contact our quality lab for third-party testing.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Laboratorium Jakości i Inspekcji — Testowanie i Certyfikacja RIB zgodne z ISO | {SITE}
+  description: Niezależna weryfikacja jakości dla łodzi pneumatycznych. Testy rozciągania, cykliczne próby utrzymywania powietrza, testy odrywania szwów i certyfikacja materiałów. Skontaktuj się z naszym laboratorium jakości w celu przeprowadzenia testów przez stronę trzecią.
+back_text: Powrót do Centrum Badań i Rozwoju
+home_label: Dom
 hero:
-  tagline: 'Lab 06'
-  title: 'Quality & Inspection Lab'
-  subtitle: 'Independent verification — every test passed before delivery'
-  image: 'https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp'
-  image_alt: 'Afarer quality inspection laboratory UV testing'
+  tagline: Laboratorium 06
+  title: Laboratorium Jakości i Kontroli
+  subtitle: Niezależna weryfikacja — każdy test zaliczony przed dostawą
+  image: https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp
+  image_alt: Laboratorium kontroli jakości Afarer Badanie UV
+intro: >-
+  Każda łódź, która opuszcza nasz warsztat, posiada certyfikat potwierdzający, że przeszła określony zestaw inspekcji jakości i testów materiałowych. Nasze Laboratorium Jakości i Inspekcji jest niezależną funkcją w ramach organizacji — raportuje bezpośrednio do dyrektora zarządzającego, a nie do
+  produkcji — co zapewnia, że żaden nacisk biznesowy nie może wpłynąć na proces kontroli. Jeśli partia materiału lub gotowa łódź nie spełnia opublikowanej specyfikacji, laboratorium ma uprawnienia do wstrzymania wysyłki, aż do usunięcia niezgodności.
+content_html: >
+  <h2>Ufaj, ale weryfikuj</h2>
 
-intro: 'Every boat that leaves our workshop carries the certification that it has passed a defined set of quality inspections and material tests. Our Quality & Inspection Lab is an independent function within the organisation — it reports directly to the managing director, not to production — ensuring that no commercial pressure can compromise the inspection gate. If a material batch or a completed boat does not meet the published specification, the lab has the authority to halt shipment until the non-conformance is resolved.'
+  <p>Laboratorium działa w ramach systemu zarządzania jakością zgodnego z uznanymi zasadami, a nasze metody badawcze są oparte na normach ISO, ASTM i EN wszędzie tam, gdzie ma to zastosowanie. Prowadzimy szczegółową dokumentację każdego wykonanego badania, tworząc kompletny łańcuch
+  identyfikowalności od przyjęcia surowca do końcowej dostawy łodzi.</p>
 
-content_html: |
-  <h2>Trust, but verify</h2>
-  <p>The lab operates under a quality management system aligned with principles, and our test methods are based on ISO, ASTM, and EN standards wherever applicable. We maintain detailed records of every test performed, creating a complete traceability chain from raw material receipt to final boat delivery.</p>
 
-  <h2>Test equipment and capabilities</h2>
+  <h2>Wyposażenie badawcze i możliwości</h2>
+
   <table>
-    <thead><tr><th>Equipment</th><th>Tests Performed</th><th>Standard / Method</th></tr></thead>
+    <thead><tr><th>Wyposażenie</th><th>Wykonywane badania</th><th>Norma / Metoda</th></tr></thead>
     <tbody>
-      <tr><td>Universal testing machine (50 kN)</td><td>Tensile strength (fabric), peel resistance (seams), tear propagation</td><td>ISO 1421, ISO 4674</td></tr>
-      <tr><td>Air-retention test rig (programmable)</td><td>1000-cycle inflation/deflation endurance, 30 min pressure-hold test</td><td>ISO 6185 (internal)</td></tr>
-      <tr><td>Seam-peel jig (motorised 180° peel)</td><td>Weld and glued-seam peel strength at 100 mm/min</td><td>ISO 1421 / ASTM D1876</td></tr>
-      <tr><td>Hydrostatic head tester</td><td>Water penetration resistance of fabric (0–1000 mbar)</td><td>ISO 811</td></tr>
-      <tr><td>Digital thickness gauge &amp; micrometre</td><td>Fabric thickness, tube wall thickness, adhesive-film thickness</td><td>ISO 2286-3</td></tr>
-      <tr><td>Environmental chamber</td><td>Temperature conditioning (-40 °C to +80 °C) for cold-crack and heat-ageing tests</td><td>ISO 188, ISO 4675</td></tr>
-      <tr><td>Colour spectrophotometer</td><td>Delta-E colour measurement after UV exposure</td><td>ISO 105-A05 / ASTM D2244</td></tr>
+      <tr><td>Uniwersalna maszyna wytrzymałościowa (50 kN)</td><td>Wytrzymałość na rozciąganie (tkanina), odporność na odrywanie (spawy), propagacja rozdarć</td><td>ISO 1421, ISO 4674</td></tr>
+      <tr><td>Programowalne stanowisko do badania szczelności</td><td>Wytrzymałość na 1000 cykli napompowania/opróżnienia, 30-minutowy test utrzymania ciśnienia</td><td>ISO 6185 (wewnętrznie)</td></tr>
+      <tr><td>Przyrząd do odrywania spawów (zmotoryzowany, odrywanie 180°)</td><td>Wytrzymałość na odrywanie spawów i klejonych szwów przy 100 mm/min</td><td>ISO 1421 / ASTM D1876</td></tr>
+      <tr><td>Stanowisko do pomiaru ciśnienia hydrostatycznego</td><td>Odporność tkaniny na przenikanie wody (0–1000 mbar)</td><td>ISO 811</td></tr>
+      <tr><td>Cyfrowy miernik grubości i mikrometr</td><td>Grubość tkaniny, grubość ścianki komory, grubość warstwy kleju</td><td>ISO 2286-3</td></tr>
+      <tr><td>Komora klimatyczna</td><td>Kondycjonowanie temperaturowe (–40 °C do +80 °C) dla testów pękania na zimno i starzenia cieplnego</td><td>ISO 188, ISO 4675</td></tr>
+      <tr><td>Spektrofotometr koloru</td><td>Pomiar różnicy kolorów Delta-E po ekspozycji na promieniowanie UV</td><td>ISO 105-A05 / ASTM D2244</td></tr>
     </tbody>
   </table>
 
-  <h2>The inspection gates — from material to delivery</h2>
-  <p>Every boat follows a defined quality plan with mandatory inspection points. No boat can skip a gate; each gate must be signed off by a quality inspector before the next production stage begins.</p>
+
+  <h2>Punkty kontroli — od materiału do dostawy</h2>
+
+  <p>Każda łódź przechodzi przez zdefiniowany plan jakości z obowiązkowymi punktami kontroli. Żadna łódź nie może pominąć punktu kontroli; każdy punkt musi zostać zatwierdzony przez inspektora jakości przed rozpoczęciem kolejnego etapu produkcji.</p>
+
 
   <div class="not-prose my-8">
     <div class="relative">
       <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-200 dark:bg-blue-800"></div>
       <div class="space-y-6 relative">
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 1</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Punkt kontroli 1</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">Incoming material inspection</p>
-            <p class="text-xs text-gray-500 mt-1">Fabric batch, adhesive batch, hardware — all checked against incoming specification before release to production.</p>
+            <p class="text-sm font-semibold">Kontrola materiałów przychodzących</p>
+            <p class="text-xs text-gray-500 mt-1">Partia tkaniny, partia kleju, osprzęt — wszystkie elementy są sprawdzane pod kątem zgodności ze specyfikacją wejściową przed przekazaniem do produkcji.</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 2</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Punkt kontroli 2</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">In-process weld inspection</p>
-            <p class="text-xs text-gray-500 mt-1">First-off weld coupon tested (peel + visual) at start of each production shift.</p>
+            <p class="text-sm font-semibold">Kontrola spawów w procesie</p>
+            <p class="text-xs text-gray-500 mt-1">Próbka pierwszego spawu (odrywanie + badanie wizualne) testowana na początku każdej zmiany produkcyjnej.</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 3</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Punkt kontroli 3</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">Chamber air test</p>
-            <p class="text-xs text-gray-500 mt-1">Each chamber pressurised to 1.5 x working pressure, held 30 min. Data logged per serial number.</p>
+            <p class="text-sm font-semibold">Próba ciśnieniowa komory</p>
+            <p class="text-xs text-gray-500 mt-1">Każda komora jest naprężana do 1,5-krotności ciśnienia roboczego i utrzymywana przez 30 minut. Dane rejestrowane dla każdego numeru seryjnego.</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 4</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Punkt kontroli 4</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">Pre-delivery inspection</p>
-            <p class="text-xs text-gray-500 mt-1">Complete boat inspected: all fasteners torqued, systems functional, no cosmetic defects. 100-point checklist.</p>
+            <p class="text-sm font-semibold">Kontrola przed dostawą</p>
+            <p class="text-xs text-gray-500 mt-1">Kontrola kompletnej łodzi: wszystkie elementy złączne dokręcone, systemy działają, brak wad wizualnych. Lista kontrolna obejmująca 100 punktów.</p>
           </div>
         </div>
         <div class="flex gap-4">
-          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 5</div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Punkt kontroli 5</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
-            <p class="text-sm font-semibold">Final certification</p>
-            <p class="text-xs text-gray-500 mt-1">Test reports compiled, inspection records reviewed, Certificate of Conformance issued.</p>
+            <p class="text-sm font-semibold">Certyfikacja końcowa</p>
+            <p class="text-xs text-gray-500 mt-1">Raporty z badań skompilowane, dokumentacja kontroli zweryfikowana, wydany certyfikat zgodności.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <h2>Key quality metrics (2025 rolling average)</h2>
+
+  <h2>Kluczowe wskaźniki jakości (średnia krocząca 2025)</h2>
+
   <div class="not-prose my-8 grid grid-cols-2 md:grid-cols-4 gap-4">
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
       <span class="block text-2xl font-bold text-blue-600">99.7 %</span>
-      <span class="text-xs text-gray-500">First-pass yield (fabric batch)</span>
+      <span class="text-xs text-gray-500">Wydajność pierwszego przejścia (partia tkaniny)</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
       <span class="block text-2xl font-bold text-blue-600">&lt; 0.2 %</span>
-      <span class="text-xs text-gray-500">Weld reject rate (linear metre)</span>
+      <span class="text-xs text-gray-500">Wskaźnik odrzuconych spawów (metr bieżący)</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
       <span class="block text-2xl font-bold text-blue-600">100 %</span>
-      <span class="text-xs text-gray-500">Chambers air-tested before assembly</span>
+      <span class="text-xs text-gray-500">Komory przetestowane ciśnieniowo przed montażem</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
       <span class="block text-2xl font-bold text-blue-600">ISO 6185</span>
-      <span class="text-xs text-gray-500">Design category compliance</span>
+      <span class="text-xs text-gray-500">Zgodność z kategorią projektową</span>
     </div>
   </div>
 
-  <h2>Our quality team</h2>
-  <p>The lab is staffed by a quality manager (10 years in marine QA, ASQ Certified Quality Engineer), two quality inspectors (each with Level 2 NDT certification in visual testing), and a materials technician responsible for all physical testing. The team undergoes annual proficiency testing through an independent third-party provider to ensure that our test results remain accurate and reproducible.</p>
 
-  <h2>Independent testing for clients</h2>
-  <p>Our Quality &amp; Inspection Lab is available for independent testing services. If you need to verify a fabric specification, validate a new adhesive system, or obtain a third-party test report for a procurement qualification, we can perform the tests to the applicable standard and issue a certified test report.</p>
-  <p>Examples of recent third-party testing work:</p>
+  <h2>Nasz zespół ds. jakości</h2>
+
+  <p>W laboratorium pracują kierownik ds. jakości (10 lat w kontroli jakości w przemyśle morskim, certyfikat ASQ Certified Quality Engineer), dwóch inspektorów jakości (każdy z certyfikacją NDT poziomu 2 w badaniach wizualnych) oraz technolog materiałowy odpowiedzialny za wszystkie badania fizyczne.
+  Zespół corocznie uczestniczy w badaniach biegłości prowadzonych przez niezależnego dostawcę zewnętrznego, aby nasze wyniki badań pozostały dokładne i powtarzalne.</p>
+
+
+  <h2>Niezależne badania dla klientów</h2>
+
+  <p>Nasze laboratorium kontroli jakości i badań jest dostępne do świadczenia niezależnych usług badawczych. Jeśli potrzebujesz zweryfikować specyfikację tkaniny, zatwierdzić nowy system klejenia lub uzyskać raport z badań strony trzeciej do kwalifikacji zakupowej, możemy wykonać badania zgodnie z
+  właściwą normą i wydać certyfikowany raport.</p>
+
+  <p>Przykłady niedawnych prac badawczych dla stron trzecich:</p>
+
   <ul>
-    <li>Peel-strength comparison of five competitive adhesive film products for a European military procurement programme.</li>
-    <li>Accelerated ageing study (UV + thermal cycling) for a new orange-pigmented PVC formulation, with regular interim measurements at 500 h intervals.</li>
-    <li>Air-retention validation of 50 prototype baffle valves for a new high-pressure tube design.</li>
+    <li>Porównanie wytrzymałości na odrywanie pięciu konkurencyjnych folii klejących dla europejskiego programu zamówień wojskowych.</li>
+    <li>Badanie przyspieszonego starzenia (promieniowanie UV + cykle termiczne) nowej formuły pomarańczowego PVC, z regularnymi pomiarami pośrednimi w odstępach 500 h.</li>
+    <li>Walidacja szczelności 50 prototypowych zaworów przegrodowych dla nowej konstrukcji komór wysokociśnieniowych.</li>
   </ul>
 
-  <h2>Our commitment to you</h2>
-  <p>When you receive a {SITE.name} boat, you also receive its quality dossier — a compiled record of the test results that apply to your specific boat. Fabric batch certificate, weld peel tests, chamber air-test logs, and pre-delivery inspection checklist. Every number is traceable. Every inspector is identified. This is not just paperwork — it is our promise that what we delivered is what we specified.</p>
-  <p>If you ever have a quality concern, you can contact the lab directly — the contact details are printed on your certificate of conformance. We take every query seriously and commit to a formal investigation within 48 hours.</p>
 
+  <h2>Nasze zobowiązanie wobec Ciebie</h2>
+
+  <p>Otrzymując łódź {SITE.name}, otrzymujesz również jej dossier jakości — kompletny zapis wyników badań dotyczących Twojej konkretnej łodzi. Certyfikat partii tkaniny, badania odrywania spawów, dzienniki prób ciśnieniowych komór oraz lista kontrolna z kontroli przed dostawą. Każda liczba jest
+  możliwa do prześledzenia. Każdy inspektor jest zidentyfikowany. To nie jest tylko papierologia — to nasza obietnica, że to, co dostarczyliśmy, jest zgodne z tym, co zostało określone w specyfikacji.</p>
+
+  <p>Jeśli kiedykolwiek będziesz mieć wątpliwości co do jakości, możesz skontaktować się bezpośrednio z laboratorium — dane kontaktowe są wydrukowane na Twoim certyfikacie zgodności. Każde zapytanie traktujemy poważnie i zobowiązujemy się do przeprowadzenia formalnego postępowania wyjaśniającego w
+  ciągu 48 godzin.</p>
 cta:
-  title: 'Need independent testing or quality verification?'
-  subtitle: 'Our lab accepts third-party testing work — contact us with your requirements.'
-  button_text: 'Contact the quality lab'
-  button_link: /contact
+  title: Potrzebne niezależne testy lub weryfikacja jakości?
+  subtitle: Nasze laboratorium przyjmuje zlecenia testów od firm zewnętrznych — skontaktuj się z nami ze swoimi wymaganiami.
+  button_text: Skontaktuj się z laboratorium jakości
+  button_link: /kontakt

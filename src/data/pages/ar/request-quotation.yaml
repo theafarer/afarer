@@ -1,25 +1,25 @@
 hero_text:
-  tagline: Get a Quote
+  tagline: اطلب عرض سعر
   title: اطلب عرض أسعار<br />لمشروعك
   subtitle: أخبرنا عن متطلباتك وسيقوم فريقنا بالرد عليك بتقديم عرض أسعار تفصيلي خلال يومي عمل.
 steps2_process:
-  title: How It Works
+  title: كيف تعمل العملية
   subtitle: أربع خطوات بسيطة من الاستفسار إلى الاقتباس.
   items:
-    - title: 'Step 1: Submit Your Requirements'
+    - title: 'الخطوة 1: أرسل متطلباتك'
       description: املأ النموذج أدناه بنوع منتجك وكميته ومواصفاته. كلما زادت التفاصيل التي تقدمها، كلما كان عرض الأسعار الخاص بك أكثر دقة.
       icon: tabler:file-text
-    - title: 'Step 2: We Review & Advise'
+    - title: 'الخطوة 2: نراجع ونستشير'
       description: يقوم فريقنا الهندسي بمراجعة متطلباتك وقد يتصل بك للتوضيح. نحن نقدم توصيات بشأن تكوين المنتج وخياراته.
       icon: tabler:users
-    - title: 'Step 3: Receive Your Quote'
+    - title: 'الخطوة 3: استلام عرض السعر'
       description: ستتلقى عرض أسعار تفصيليًا يتضمن تسعير الوحدة وموك والمدة الزمنية وشروط الدفع وخيارات الشحن. عادة خلال 48 ساعة.
       icon: tabler:currency-dollar
-    - title: 'Step 4: Sample & Production'
+    - title: 'الخطوة 4: العينة والإنتاج'
       description: بعد قبول عرض الأسعار، ننتقل إلى إنتاج العينات (إن أمكن) أو مباشرة إلى الإنتاج الضخم. تحديثات منتظمة طوال العملية.
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
+  tagline: نموذج عرض السعر
   title: أخبرنا عن مشروعك
   subtitle: جميع الحقول التي تحتوي على * مطلوبة.
   fields:
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - مركز الغوص
+        - صيد الأسماك
+        - السياحة البحرية / المنتجعات
+        - البحث والإنقاذ
+        - قارب اليخوت المساعد
+        - قارب عمل تجاري
+        - الحكومة / القطاع العسكري
+        - OEM / العلامة الخاصة
+        - شخصي / ترفيهي
+        - أخرى
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
-        - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - لا تفضيل
+        - PVC من الدرجة البحرية (1100 dtex)
+        - Hypalon / CSM فاخر
+        - هيكل من الألياف الزجاجية
+        - هيكل ألمنيوم
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: 'مثال: محرك خارجي بقوة 60 حصانًا، بدون محرك، محرك مزدوج بقوة 115 حصانًا'
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: 'مثال: ألوان مخصصة، وعلامة تجارية/شعار، وتغليف، وتركيبات خاصة'
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: 'مثال: التسليم خلال 90 يومًا'
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: صف تطبيقك، أو مواصفاتك الفنية، أو أي متطلبات خاصة — وأرفق الرسومات المرجعية أو المواصفات أو الروابط إن كانت متوفرة
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: ارفع ورقة المواصفات أو الرسم أو المستند المرجعي (PDF, DWG, DXF)
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: ارفع شعارك أو تصميمك الفني للعلامة التجارية المخصصة (AI, EPS, PNG)
 cta:
-  title: Prefer to discuss by email?
-  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
+  title: هل تفضل المناقشة عبر البريد الإلكتروني؟
+  subtitle: أرسل استفسارك مباشرة إلى فريق المبيعات لدينا وسنرد عليك خلال 24 ساعة.
   actions:
     - variant: primary
-      text: Email us directly
+      text: راسلنا مباشرة عبر البريد الإلكتروني
       href: /contact

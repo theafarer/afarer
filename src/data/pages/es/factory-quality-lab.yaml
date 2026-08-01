@@ -1,60 +1,60 @@
 hero:
-  tagline: Quality Control Laboratory
-  title: Testing Laboratory & Quality Assurance
-  subtitle: Independent quality lab with ISO 9001 processes —every unit tested before shipment
-
-intro: afarer operates a dedicated quality control laboratory that operates independently from production. Every batch of raw material and every finished boat passes through documented inspection protocols before release. Our QC team reports directly to management, ensuring impartial quality decisions.
-
+  tagline: Laboratorio de Control de Calidad
+  title: Laboratorio de Pruebas y Aseguramiento de Calidad
+  subtitle: 'Laboratorio de calidad independiente con procesos ISO 9001: cada unidad probada antes del envío'
+intro: >-
+  Afarer opera un laboratorio de control de calidad dedicado que funciona de manera independiente de la producción. Cada lote de materia prima y cada barco terminado pasa por protocolos de inspección documentados antes de su liberación. Nuestro equipo de control de calidad informa directamente a la
+  dirección, asegurando decisiones de calidad imparciales.
 highlights:
   - value: 100%
-    label: Units pressure-tested
-    detail: Every chamber, every boat
+    label: Unidades probadas a presión
+    detail: Cada cámara, cada barco
   - value: 48 h
-    label: Air retention test duration
-    detail: At 1.25× rated pressure
-  - value: '&lt;5%'
-    label: Max allowed pressure drop
-    detail: Over 24-hour hold period
+    label: Duración de la prueba de retención de aire
+    detail: A 1,25× la presión nominal
+  - value: <5%
+    label: Máxima caída de presión permitida
+    detail: Período de retención de más de 24 horas
   - value: AQL 2.5
-    label: Major defect threshold
-    detail: Per ISO 2859 sampling
-
+    label: Umbral de defecto mayor
+    detail: Según el muestreo ISO 2859
 test_procedures:
-  - title: Raw Material Inspection
-    description: Every incoming batch of PVC, Hypalon, drop-stitch fabric, and hardware is tested before acceptance. Tensile strength (ASTM D751), tear resistance (ISO 4674), and UV resistance are verified. Non-conforming materials are quarantined and returned.
+  - title: Inspección de materia prima
+    description: >-
+      Cada lote entrante de PVC, Hypalon, tela de puntada inversa y herrajes se prueba antes de ser aceptado. Se verifica la resistencia a la tracción (ASTM D751), la resistencia al desgarro (ISO 4674) y la resistencia a los rayos UV. Los materiales que no cumplen con las normas se ponen en
+      cuarentena y se devuelven.
     standards:
-      - ASTM D751 (tensile)
-      - ISO 4674 (tear)
+      - ASTM D751 (tensión)
+      - ISO 4674 (rasgadura)
       - ISO 4892 (UV)
-  - title: In-Process QC Checkpoints
-    description: Production operators perform self-inspection at each stage. QC auditors conduct random sampling throughout the shift. Weld peel tests are performed every 50 units. Dimensional checks happen every 20th panel.
+  - title: Puntos de control de control de calidad en proceso
+    description: Los operadores de producción realizan autoinspección en cada etapa. Los auditores de control de calidad realizan muestreos aleatorios durante todo el turno. Las pruebas de pelado de soldadura se realizan cada 50 unidades. Los controles dimensionales se realizan en cada vigésimo panel.
     standards:
-      - ASTM D751 (peel)
-      - Internal 100-point checklist
-      - ISO 2859 sampling
-  - title: 48-Hour Air Retention Test
-    description: Every tube chamber is inflated to 125% of rated pressure and held for 48 hours. Pressure sensors log continuously with temperature compensation. Any chamber exceeding 5% pressure drop triggers automatic batch re-inspection.
+      - ASTM D751 (desprendimiento)
+      - Lista de verificación interna de 100 puntos
+      - muestreo ISO 2859
+  - title: Prueba de retención de aire de 48 horas
+    description: Cada cámara de tubo se infla al 125% de la presión nominal y se mantiene durante 48 horas. Los sensores de presión registran continuamente con compensación de temperatura. Cualquier cámara que supere una caída de presión del 5% activa la re-inspección automática del lote.
     standards:
       - ISO 6185
-      - CE 2013/53/EU
-  - title: Load & Balance Testing
-    description: Completed boats are tested at maximum rated capacity for stability, freeboard, and handling. Each vessel undergoes water testing before final inspection approval.
+      - CE 2013/53/UE
+  - title: Pruebas de Carga y Equilibrio
+    description: Los barcos completados se prueban a la capacidad máxima nominal para estabilidad, francobordo y manejo. Cada embarcación se somete a pruebas en agua antes de la aprobación de la inspección final.
     standards:
       - ISO 12217
-      - CE 2013/53/EU
-
+      - CE 2013/53/UE
 equipment:
   - name: Universal Testing Machine (tensile)
-    spec: 5 kN, ASTM D751 compliant
+    spec: 5 kN, conforme a ASTM D751
   - name: Pressure Decay Tester
-    spec: Multi-channel, 0—0 psi, datalogging
+    spec: Multicanal, 0—0 psi, registro de datos
   - name: UV Weathering Chamber
-    spec: ISO 4892, 1,000 h cycles
+    spec: ISO 4892, 1.000 h ciclos
   - name: Thickness Gauge (digital)
-    spec: 0.01 mm resolution
+    spec: Resolución de 0,01 mm
   - name: Peel Tester (weld)
-    spec: Motorized, 50 N capacity
+    spec: Motorizado, capacidad de 50 N
   - name: Temperature Chamber
-    spec: -40 °C to +100 °C
+    spec: '-40 °C a 100 °C'
   - name: Leak Detection Tank
-    spec: 6 m × 2 m, illuminated
+    spec: 6 m × 2 m, iluminado

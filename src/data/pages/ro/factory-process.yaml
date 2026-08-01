@@ -2,9 +2,11 @@ hero:
   tagline: Proces de producție
   title: Procesul nostru de producție
   subtitle: De la materie primă la produs finit —fiecare pas este controlat calitativ.
-  back_label: Back to Factory
+  back_label: Înapoi la fabrică
   back_link: /factory
-intro: Unlike brands that outsource production to third-party factories, afarer owns and operates its entire manufacturing chain. This vertical integration allows us to maintain strict quality control at every stage, respond quickly to custom requirements, and deliver consistent product quality batch after batch. Here is how a SUP board is built in our facility.
+intro: >-
+  Spre deosebire de mărcile care externalizează producția către fabrici terțe, afarer deține și operează întregul lanț de producție. Această integrare verticală ne permite să menținem un control riguros al calității în fiecare etapă, să răspundem rapid cerințelor personalizate și să livrăm o
+  calitate constantă a produselor, lot după lot. Iată cum este construită o placă SUP în unitatea noastră.
 steps:
   - step: '01'
     title: Tăiere
@@ -13,7 +15,7 @@ steps:
   - step: '02'
     title: Sudare
     description: Sudarea RF și cu aer cald creează îmbinări puternice și etanșe.
-    duration: 2— hours per boat kit
+    duration: 2— ore per trusă de barcă
   - step: '03'
     title: Asamblare
     description: Tehnicieni calificați montează valve, accesorii și fittinguri.
@@ -21,25 +23,29 @@ steps:
   - step: '04'
     title: Testare
     description: Fiecare produs trece prin teste de presiune, flotabilitate și inspecție.
-    duration: 1— days per board
+    duration: 1— zile per placă
   - step: '05'
     title: Ambalare
     description: Produsele sunt ambalate cu grijă și pregătite pentru expediere.
     duration: 1— days
   - step: '06'
-    title: Final Assembly & Fitting
-    description: Valves, D-rings, handles, fin boxes, and deck pads are installed on the assembly line. Each board follows a 100-point assembly checklist with mandatory sign-off at each stage.
+    title: Asamblare finală & Montaj
+    description: Supapele, inelele D, mânerele, casetele pentru aripioare și padurile de punte sunt instalate pe linia de asamblare. Fiecare placă urmează o listă de verificare a asamblării cu 100 de puncte, cu semnare obligatorie la fiecare etapă.
     duration: 1— days
   - step: '07'
-    title: Quality Testing & Inspection
-    description: 'Every completed board undergoes mandatory quality gate: chamber air-retention test, hardware function check, fastener torque verification, and cosmetic inspection. Custom and prototype builds also receive in-water trials covering stability and handling.'
+    title: Testarea și inspecția calității
+    description: >-
+      Fiecare placă finalizată trece printr-un control obligatoriu de calitate: test de etanșeitate la aer al camerelor, verificarea funcționării accesoriilor, verificarea cuplului de strângere a elementelor de fixare și inspecție cosmetică. Producțiile personalizate și prototipurile beneficiază, de
+      asemenea, de teste în apă care acoperă stabilitatea și manevrabilitatea.
     duration: 1— days
   - step: '08'
-    title: Packing & Shipping
-    description: Boards are deflated, folded per procedure, packed in heavy-duty woven bags or retail boxes, and loaded for shipment. Each package is labelled with model, serial number, and destination. We coordinate with freight forwarders for FCL and LCL container shipments worldwide.
-    duration: 1 day
+    title: Ambalare și expediere
+    description: >-
+      Plăcile sunt dezumflate și pliate conform procedurii, ambalate în saci țesuți de mare rezistență sau cutii de retail și încărcate pentru expediere. Fiecare pachet este etichetat cu modelul, numărul de serie și destinația. Coordonăm cu agențiile de transport expedierile în containere FCL și LCL
+      către toată lumea.
+    duration: 1 zi
 cta:
-  title: See our equipment and machinery
-  desc: Explore the industrial-grade equipment behind every afarer SUP board.
-  label: View equipment →
+  title: Vezi echipamentele și utilajele noastre
+  desc: Descoperiți echipamentele de calitate industrială din spatele fiecărei plăci SUP afarer.
+  label: Vedeți echipamentele →
   link: /factory/equipment

@@ -1,48 +1,55 @@
 meta:
-  title: 'Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}'
-  description: 'Validate your RIB hull performance with our hydrodynamic test tank. Scale-model towing, planing analysis, and fuel efficiency testing. Book a tank test session today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Hydrodynamische Testtank — Scale-Model Slepen & Rompopimalisatie | {SITE}
+  description: Valideer de prestaties van uw RIB-romp met onze hydrodynamische testtank. Slepen van schaalmodellen, planingsanalyse en brandstofefficiëntietests. Boek vandaag nog een tanksessietest.
+back_text: Terug naar R&D Centrum
+home_label: Home
 hero:
-  tagline: 'Lab 04'
-  title: 'Hydrodynamic Test Tank'
-  subtitle: 'Validating performance before the first full-scale prototype'
-  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
-  image_alt: 'Afarer hydrodynamic test tank performance testing'
+  tagline: Lab 04
+  title: Hydrodynamische testtank
+  subtitle: Prestaties valideren voordat het eerste volwaardige prototype wordt gemaakt
+  image: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp
+  image_alt: Afarer hydrodynamische testtankprestatie test
+intro: >-
+  Het is een veelvoorkomend misverstand dat hydrodynamisch testen is voorbehouden aan zeegaande schepen. In werkelijkheid is de prestaties van een klein glijhuls — zoals een 4–6 m RIB — net zo afhankelijk van zijn onderwatervorm als een tanker van zijn bolle boeg. Trimhoek, bevochtigd oppervlak,
+  spuitvorming en ventilatie hebben allemaal een dramatisch effect op snelheid, brandstofverbruik en rijcomfort. Bij {SITE.name} beschikken we over een speciaal hydrodynamisch testbassin waarmee we deze effecten op schaal van een model kunnen kwantificeren — voordat we materiaal en stoffen inzetten
+  voor een volwaardige prototype.
+content_html: >
+  <h2>Waarom een kleine boot in een sleeptank testen?</h2>
 
-intro: 'It is a common misconception that hydrodynamic testing is reserved for ocean-going ships. In reality, the performance of a small planing hull — such as a 4–6 m RIB — is just as dependent on its underwater shape as a tanker is on its bulbous bow. Trim angle, wetted surface area, spray generation, and ventilation all have a dramatic effect on speed, fuel consumption, and ride comfort. At {SITE.name}, we operate a dedicated hydrodynamic test tank that allows us to quantify these effects at model scale — before committing metal and fabric to a full-size prototype.'
+  <p>Testen op modelschaal (doorgaans 1:3 tot 1:5) stelt ons in staat om rompvormen snel en kosteneffectief te optimaliseren. Een week in de tank levert dezelfde prestatiegegevens op die anders maanden van trial-and-error op ware grootte zouden vereisen — en voor een fractie van de kosten.</p>
 
-content_html: |
-  <h2>Why tank-test a small boat?</h2>
-  <p>Testing at model scale (typically 1:3 to 1:5) gives us the ability to iterate hull shapes rapidly and cost-effectively. A week in the tank can generate the same performance data that would require months of full-scale trial-and-error — and at a fraction of the cost.</p>
 
-  <h2>Facility specifications</h2>
+  <h2>Specificaties van de faciliteit</h2>
+
   <table>
-    <thead><tr><th>Parameter</th><th>Specification</th></tr></thead>
+    <thead><tr><th>Parameter</th><th>Specificatie</th></tr></thead>
     <tbody>
-      <tr><td>Tank dimensions</td><td>35 m (L) × 3.5 m (W) × 1.8 m (D)</td></tr>
-      <tr><td>Towing carriage</td><td>Electric servo-driven, max speed 12 m/s (23 kn), speed accuracy ± 0.5 %</td></tr>
-      <tr><td>Wave generator</td><td>Flap-type, programmable regular &amp; irregular sea states, Hs up to 0.3 m at model scale</td></tr>
-      <tr><td>Instrumentation</td><td>6-component dynamometer (resistance, side force, yaw moment), accelerometers, inclinometers, wave probes</td></tr>
-      <tr><td>Data acquisition</td><td>Sampling at 1000 Hz per channel, real-time display + post-processing suite</td></tr>
-      <tr><td>Model fabrication</td><td>In-house CNC milling and 3D printing for model hulls up to 1.8 m LOA</td></tr>
+      <tr><td>Afmetingen tank</td><td>35 m (L) × 3.5 m (W) × 1.8 m (D)</td></tr>
+      <tr><td>Sleeptoestel</td><td>Elektrisch servogestuurd, max. snelheid 12 m/s (23 kn), nauwkeurigheid ± 0.5 %</td></tr>
+      <tr><td>Golfgenerator</td><td>Kleptype, programmeerbare regelmatige &amp; onregelmatige zeegangen, Hs tot 0.3 m op modelschaal</td></tr>
+      <tr><td>Instrumentatie</td><td>6-componenten-dynamometer (weerstand, dwarskracht, gierkoppel), versnellingsopnemers, hellingmeters, golfsondes</td></tr>
+      <tr><td>Dataregistratie</td><td>Bemonstering op 1000 Hz per kanaal, realtime weergave + nabewerkingssuite</td></tr>
+      <tr><td>Modelproductie</td><td>Interne CNC-frezing en 3D-printen voor modelrompen tot 1.8 m LOA</td></tr>
     </tbody>
   </table>
 
-  <h2>Our test programme</h2>
-  <p>A standard hull development programme in our tank follows this sequence:</p>
+
+  <h2>Ons testprogramma</h2>
+
+  <p>Een standaard rompontwikkelingsprogramma in onze tank verloopt als volgt:</p>
+
   <ol>
-    <li><strong>Model build</strong> — A 1:3.5 scale model is CNC-machined from high-density foam and glassed for rigidity. Weight and CG are adjusted to match Froude-scaled full-load condition.</li>
-    <li><strong>Resistance runs</strong> — The model is towed at 8-10 speeds spanning the operating range. Total resistance is measured and decomposed into frictional and residuary components using the ITTC-1957 method.</li>
-    <li><strong>Trim &amp; sinkage measurement</strong> — Running trim and sinkage are recorded at each speed. An optimal trim angle of 4-6° for planing hulls is the target.</li>
-    <li><strong>Wake survey</strong> — Transverse wave cuts are measured at two speeds to assess wave-making resistance and identify transverse wave interactions that could cause stern interference.</li>
-    <li><strong>Seakeeping (optional)</strong> — Head-sea and following-sea runs in regular waves to measure added resistance, vertical acceleration, and slamming probability.</li>
-    <li><strong>Data analysis &amp; recommendations</strong> — A full report is delivered with comparative charts, speed/power curves, and specific design recommendations for the full-scale hull.</li>
+    <li><strong>Modelbouw</strong> — Een 1:3.5-schaalmodel wordt met CNC gefreesd uit hogedichtheidsschuim en gelamineerd voor stijfheid. Gewicht en zwaartepunt worden aangepast aan de Froude-geschaalde volbeladingsconditie.</li>
+    <li><strong>Weerstandsproeven</strong> — Het model wordt gesleept met 8-10 snelheden over het volledige bedrijfsbereik. De totale weerstand wordt gemeten en gesplitst in wrijvings- en restweerstandscomponenten volgens de ITTC-1957-methode.</li>
+    <li><strong>Meting van trim en inzinking</strong> — Trim en inzinking in bedrijf worden bij elke snelheid geregistreerd. Een optimale trimhoek van 4-6° voor planerende rompen is het streefdoel.</li>
+    <li><strong>Kielzogonderzoek</strong> — Dwarse golfprofielen worden bij twee snelheden gemeten om de golfmakende weerstand te beoordelen en dwarse golfinteracties op te sporen die hekinterferentie kunnen veroorzaken.</li>
+    <li><strong>Zeegang (optioneel)</strong> — Proeven in kop- en hekgolven in regelmatige golven om meerweerstand, verticale versnelling en de kans op stampen (slamming) te meten.</li>
+    <li><strong>Gegevensanalyse &amp; aanbevelingen</strong> — Er wordt een volledig rapport opgeleverd met vergelijkende grafieken, snelheids-/vermogenscurven en concrete ontwerpaanbevelingen voor de romp op ware grootte.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typical Tank Test Results — Resistance vs Speed (RIB 450 hull, 1:3.5 scale)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typische sleeptankresultaten — Weerstand vs. snelheid (romp RIB 450, schaal 1:3.5)</p>
     <div class="space-y-2">
       <div class="flex items-center gap-2 text-xs">
         <span class="w-20">5 kn (1:1)</span>
@@ -87,26 +94,35 @@ content_html: |
         <span class="w-16 text-right">232 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">Model-scale resistance (N) at Froude-scaled speeds. Full-scale power prediction follows the ITTC-1978 performance-prediction method.</p>
+    <p class="text-xs text-gray-400 mt-2">Weerstand op modelschaal (N) bij Froude-geschaalde snelheden. Vermogensvoorspelling op ware grootte volgt de ITTC-1978-prestatievoorspellingsmethode.</p>
   </div>
 
-  <h2>Expert team</h2>
-  <p>Our tank is operated by a hydrodynamicist with a PhD in naval architecture and 8 years of towing-tank experience at a major European maritime research institute. He is supported by a technician who prepares all models and instrumentation. The team follows the ITTC (International Towing Tank Conference) Recommended Procedures to ensure that every test is repeatable, traceable, and internationally defensible.</p>
 
-  <h2>Tank-testing for custom hull development</h2>
-  <p>Our tank is not only used for house-designed hulls — we regularly run test programmes for clients who want to validate a custom hull shape or investigate a performance issue:</p>
+  <h2>Expertteam</h2>
+
+  <p>Onze tank wordt bediend door een hydrodynamicus met een PhD in scheepsbouwkunde en 8 jaar sleeptankervaring bij een toonaangevend Europees maritiem onderzoeksinstituut. Hij wordt ondersteund door een technicus die alle modellen en instrumentatie voorbereidt. Het team volgt de aanbevolen
+  procedures van de ITTC (International Towing Tank Conference) om te garanderen dat elke test reproduceerbaar, traceerbaar en internationaal verdedigbaar is.</p>
+
+
+  <h2>Sleeptanktesten voor de ontwikkeling van maatwerkrompen</h2>
+
+  <p>Onze tank wordt niet alleen gebruikt voor rompen van eigen ontwerp — we voeren regelmatig testprogramma's uit voor klanten die een aangepaste rompvorm willen valideren of een prestatieprobleem willen onderzoeken:</p>
+
   <ul>
-    <li><strong>Hull-form comparison</strong> — Two or more candidate hull shapes tested under identical conditions, providing an objective drag/speed/stability comparison to inform your design choice.</li>
-    <li><strong>Appendage optimisation</strong> — Interceptor plates, spray rails, trim tabs, and strakes can be tested in various configurations to quantify their individual contribution to drag reduction.</li>
-    <li><strong>Engine-matching study</strong> — Resistance data is converted to a power-prediction curve, allowing you to select the optimum engine horsepower for your target speed and payload.</li>
+    <li><strong>Vergelijking van rompvormen</strong> — Twee of meer kandidaat-rompvormen worden onder identieke omstandigheden getest, wat een objectieve weerstands-/snelheids-/stabiliteitsvergelijking oplevert ter onderbouwing van uw ontwerpkeuze.</li>
+    <li><strong>Optimalisatie van appendages</strong> — Interceptorplaten, sprayrails, trimtabs en stringers kunnen in verschillende configuraties worden getest om hun individuele bijdrage aan weerstandsvermindering te kwantificeren.</li>
+    <li><strong>Motorafstemmingsstudie</strong> — Weerstandsgegevens worden omgezet in een vermogensvoorspellingscurve, zodat u het optimale motorvermogen kunt kiezen voor uw doelsnelheid en laadvermogen.</li>
   </ul>
 
-  <h2>Why test with us?</h2>
-  <p>We do not just give you a set of raw numbers. Our reports translate tank data into actionable engineering recommendations: "Raise the spray-rail by 8 mm to reduce wetted surface at cruise speed", "Increase deadrise at the transom by 3° to reduce slamming acceleration", or "Move the longitudinal centre of gravity 150 mm aft for improved planing attitude". You leave with a clear understanding of what to change and why.</p>
-  <p>Our tank is also available for independent third-party testing on a fee-for-service basis. If you are developing a hull and want an unbiased, professionally executed hydrodynamic assessment, we welcome your enquiry.</p>
 
+  <h2>Waarom bij ons testen?</h2>
+
+  <p>Wij geven u niet zomaar een set ruwe cijfers. Onze rapporten vertalen tankgegevens naar bruikbare technische aanbevelingen: "Verhoog de sprayrail met 8 mm om het natte oppervlak bij kruissnelheid te verkleinen", "Verhoog de deadrise aan de spiegel met 3° om de stampversnelling te verminderen",
+  of "Verplaats het longitudinale zwaartepunt 150 mm naar achteren voor een betere planeerhouding". U vertrekt met een duidelijk beeld van wat u moet aanpassen en waarom.</p>
+
+  <p>Onze tank is ook beschikbaar voor onafhankelijk testwerk door derden op betaalbasis. Als u een romp ontwikkelt en een objectieve, professioneel uitgevoerde hydrodynamische beoordeling wilt, dan verwelkomen wij uw aanvraag.</p>
 cta:
-  title: 'Book a tank test session'
-  subtitle: 'Whether you need a full development programme or a single comparative test, we can accommodate your schedule.'
-  button_text: 'Contact our hydrodynamics team'
+  title: Boek een tanktestsessie
+  subtitle: Of u nu een volledig ontwikkelingsprogramma nodig heeft of een enkele vergelijkende test, wij kunnen ons aanpassen aan uw schema.
+  button_text: Neem contact op met ons hydrodynamica-team
   button_link: /contact

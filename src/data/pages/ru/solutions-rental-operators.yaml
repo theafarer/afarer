@@ -1,71 +1,66 @@
 meta:
-  title: 'SUP Rental Fleet Solutions | {SITE}'
-  description: 'High-rotation SUP boards engineered for daily rental use. UV-resistant PVC, reinforced seams, quick-dry materials. Scale your rental business with Afarer.'
-
+  title: Решения для аренды флота SUP | {SITE}
+  description: SUP-доски с высокой популярностью, разработанные для ежедневной аренды. УФ-стойкий ПВХ, усиленные швы, быстро сохнущие материалы. Развивайте свой арендный бизнес с Afarer.
 hero:
-  tagline: Rental Operators
-  title: 'Scale Your Rental Business<br />With Confidence'
-  subtitle: 'High-rotation SUP boards engineered for daily rental use, 365 days a year. Your revenue never takes a day off.'
+  tagline: Арендные операторы
+  title: Масштабируйте свой арендный бизнес<br />С уверенностью
+  subtitle: SUP-доски с высокой проходимостью, разработанные для ежедневной аренды, 365 дней в году. Ваш доход никогда не отдыхает.
   image:
     src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
-    alt: Busy rental kiosk with SUP boards ready for guests
-
+    alt: Оживлённый прокатный киоск с досками для SUP, готовыми для гостей
 features:
-  title: Built for the Rental Grind
-  subtitle: 'Every board is engineered for 500+ rental cycles with minimal maintenance.'
+  title: Создано для арендного изнурения
+  subtitle: Каждая доска рассчитана на 500 циклов аренды с минимальным обслуживанием.
   items:
-    - title: '500+ Rental Cycles'
-      description: 'Tested to survive daily use in saltwater, sun, and sand.'
-      icon: 'tabler:shield-check'
-    - title: 'UV-Resistant Fabric'
-      description: 'No fading or degradation after 1 year of outdoor storage.'
-      icon: 'tabler:sun'
-    - title: 'Reinforced Seams'
-      description: '3x stronger than standard inflatable board construction.'
-      icon: 'tabler:layers-intersect'
-    - title: 'Quick-Dry Materials'
-      description: 'Boards ready for next rental in under 30 minutes.'
-      icon: 'tabler:droplet'
-    - title: 'Stackable Storage'
-      description: 'Space-saving design — store 40% more boards in the same area.'
-      icon: 'tabler:stack'
-    - title: 'Color-Coded Sizes'
-      description: 'Staff grabs the right board instantly with color-coded sizing.'
-      icon: 'tabler:color-swatch'
-
+    - title: 500 арендных велосипедов
+      description: Проверено на выносливость при ежедневном использовании в солёной воде, на солнце и в песке.
+      icon: tabler:shield-check
+    - title: УФ-устойчивая ткань
+      description: Отсутствие выцветания или деградации после 1 года хранения на улице.
+      icon: tabler:sun
+    - title: Усиленные швы
+      description: В 3 раза прочнее стандартной конструкции надувной доски.
+      icon: tabler:layers-intersect
+    - title: Материалы быстрого высыхания
+      description: Доски готовы к следующей аренде менее чем за 30 минут.
+      icon: tabler:droplet
+    - title: Складируемое хранилище
+      description: Компактный дизайн — храните на 40% больше досок на той же площади.
+      icon: tabler:stack
+    - title: Размеры по цвету
+      description: Персонал мгновенно берет правильную доску с цветовой кодировкой размеров.
+      icon: tabler:color-swatch
 stats:
-  title: Operations Metrics
+  title: Метрики операций
   stats:
-    - title: Board Turnover
-      amount: '< 5 min'
-    - title: Annual Maintenance
-      amount: '~15 min/board'
-    - title: Parts Dispatch
-      amount: '48h'
-    - title: Defect Rate
-      amount: '< 0.5%'
-
+    - title: Кадровая ротация совета
+      amount: < 5 мин
+    - title: Ежегодное обслуживание
+      amount: ~15 мин/доска
+    - title: Отправка деталей
+      amount: 48ч
+    - title: Коэффициент дефектности
+      amount: < 0,5%
 fleet_guide:
-  title: Fleet Sizing Guide
-  subtitle: 'Estimate the fleet size and revenue potential for your rental operation.'
+  title: Руководство по размеру автопарка
+  subtitle: Оцените размер автопарка и потенциал дохода для вашей арендной компании.
   tiers:
-    - label: Small Kiosk
-      boards: '15-20'
-      revenue: '$XX,XXX/yr'
-    - label: Mid-Size Operation
-      boards: '30-50'
-      revenue: '$XX,XXX/yr'
-    - label: Large Beach Rental
-      boards: '50-100'
-      revenue: '$XXX,XXX/yr'
-
+    - label: Маленький киоск
+      boards: 15-20
+      revenue: $XX,XXX/год
+    - label: Операция среднего размера
+      boards: 30-50
+      revenue: $XX,XXX/год
+    - label: Большой пляжный дом
+      boards: 50-100
+      revenue: $XXX,XXX/год
 cta:
-  title: 'Ready to scale your rental business?'
-  subtitle: 'Get rental pricing or compare board models for your operation.'
+  title: Готовы масштабировать свой арендный бизнес?
+  subtitle: Получите цены на аренду или сравните модели плат для вашего предприятия.
   actions:
-    - text: 'Get Rental Pricing'
-      href: '/contact?package=rental'
-      variant: 'primary'
-    - text: 'Compare Board Models'
-      href: '/compare'
-      variant: 'secondary'
+    - text: Узнать цену аренды
+      href: /contact?package=rental
+      variant: primary
+    - text: Сравнить модели плат
+      href: /compare
+      variant: secondary

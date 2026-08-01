@@ -1,25 +1,25 @@
 hero_text:
-  tagline: Get a Quote
+  tagline: Solicitați o ofertă
   title: Solicitați o ofertă<br />pentru proiectul dvs.
   subtitle: Spuneți-ne cerințele dvs. și echipa noastră va răspunde cu o ofertă detaliată în termen de 2 zile lucrătoare.
 steps2_process:
-  title: How It Works
+  title: Cum funcționează
   subtitle: Patru pași simpli de la întrebare la ofertă.
   items:
-    - title: 'Step 1: Submit Your Requirements'
+    - title: 'Pasul 1: Trimiteți cerințele dumneavoastră'
       description: Completați formularul de mai jos cu tipul de produs, cantitatea și specificațiile. Cu cât oferiți mai multe detalii, cu atât oferta va fi mai precisă.
       icon: tabler:file-text
-    - title: 'Step 2: We Review & Advise'
+    - title: 'Pasul 2: Analizăm și consiliem'
       description: Echipa noastră de ingineri analizează cerințele dvs. și vă poate contacta pentru clarificări. Oferim recomandări privind configurarea produsului și opțiunile.
       icon: tabler:users
-    - title: 'Step 3: Receive Your Quote'
+    - title: 'Pasul 3: Primiți oferta dumneavoastră'
       description: Primiți o ofertă detaliată, inclusiv prețuri unitare, MOQ, termen de livrare, condiții de plată și opțiuni de expediere. De obicei, în termen de 48 de ore.
       icon: tabler:currency-dollar
-    - title: 'Step 4: Sample & Production'
+    - title: 'Pasul 4: Probă și producție'
       description: După acceptarea ofertei, trecem la producția de mostre (dacă este cazul) sau direct la producția de masă. Actualizări regulate pe tot parcursul procesului.
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
+  tagline: Formular de ofertă
   title: Spuneți-ne despre proiectul dvs.
   subtitle: Toate câmpurile cu * sunt obligatorii.
   fields:
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - Centru de scufundări
+        - Pescuit
+        - Turism marin / Resort
+        - Căutare și salvare
+        - Tender pentru iaht
+        - Ambarcațiune de lucru comercială
+        - Guvern / Militar
+        - OEM / Marcă proprie
+        - Personal / Recreațional
+        - Altele
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
-        - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - Fără preferință
+        - PVC de calitate marină (1100 dtex)
+        - Hypalon / CSM Premium
+        - Cocă din fibră de sticlă
+        - Cocă din aluminiu
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: ex. motor exterior 60 HP, fără motor, două motoare 115 HP
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: ex. culori personalizate, branding/logo, ambalaj, accesorii speciale
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: de ex. livrare în termen de 90 de zile
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: Descrie aplicația ta, specificațiile tehnice sau orice cerințe speciale — include desene de referință, specificații sau linkuri, dacă sunt disponibile.
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: Încărcați fișa tehnică, desenul sau documentul de referință (PDF, DWG, DXF)
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: Încărcați logo-ul sau materialele grafice pentru branding personalizat (AI, EPS, PNG)
 cta:
-  title: Prefer to discuss by email?
-  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
+  title: Preferați să discutăm pe e-mail?
+  subtitle: Trimiteți solicitarea dumneavoastră direct echipei noastre de vânzări și vă vom răspunde în termen de 24 de ore.
   actions:
     - variant: primary
-      text: Email us directly
+      text: Scrieți-ne direct pe e-mail
       href: /contact

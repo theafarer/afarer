@@ -1,85 +1,103 @@
 meta:
-  title: 'Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}'
-  description: 'Explore our Hull Engineering Studio for CAD design, finite element analysis (FEA), and custom HDPE/aluminium/fibre glass hull development. Contact our engineering team to start your next RIB project.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Студия корабельного проектирования Hull — CAD, FEA и индивидуальная разработка корпуса RIB | {SITE}
+  description: Исследуйте нашу студию корпусного инжиниринга для проектирования в CAD, конечно-элементного анализа (FEA) и разработки индивидуальных корпусов из HDPE/алюминия/стеклопластика. Свяжитесь с нашей инженерной командой, чтобы начать ваш следующий проект RIB.
+back_text: Назад в центр НИОКР
+home_label: Дом
 hero:
-  tagline: 'Lab 02'
-  title: 'Hull Engineering Studio'
-  subtitle: 'Digital simulation, structural intelligence, custom hull design'
-  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
-  image_alt: 'Afarer hull engineering CAD design workstation'
+  tagline: Лабораторная работа 02
+  title: Инженерная студия Hull
+  subtitle: Цифровое моделирование, структурный интеллект, индивидуальный дизайн корпуса
+  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
+  image_alt: Рабочая станция CAD-дизайна корпуса судна Afarer
+intro: >-
+  Корпус является основой любого РИБа или надувной лодки. Он должен быть достаточно лёгким, чтобы эффективно идти по планированию, достаточно прочным, чтобы поглощать ударные нагрузки, и сохранять стабильные размеры в широком диапазоне температур. В {SITE.name} наша студия проектирования корпусов
+  сочетает передовое CAD-моделирование, анализ методом конечных элементов (FEA) и десятилетия практического опыта в судостроении, чтобы создавать корпуса, оптимизированные для их конкретной задачи — а не универсальные формы, адаптированные из каталога.
+content_html: >
+  <h2>Там, где прочность встречается с гидродинамикой</h2>
 
-intro: 'The hull is the backbone of any RIB or inflatable boat. It must be light enough to plane efficiently, strong enough to absorb impact loads, and dimensionally stable across a wide temperature range. At {SITE.name}, our Hull Engineering Studio combines advanced CAD modelling, finite element analysis (FEA), and decades of practical naval-architecture experience to deliver hulls that are optimised for their intended mission — not generic shapes adapted from a catalogue.'
+  <p>Мы работаем с тремя основными материалами корпуса — ротационно формованным HDPE, сварным алюминием морского класса и стеклопластиком ручной укладки — и обладаем инженерными возможностями для проектирования, моделирования и проверки каждого из них на собственном производстве.</p>
 
-content_html: |
-  <h2>Where strength meets hydrodynamics</h2>
-  <p>We work with three primary hull materials — rotationally moulded HDPE, welded marine-grade aluminium, and hand-laid fibreglass — and have the engineering capability to design, simulate, and validate each one in-house.</p>
 
-  <h2>Design tools and standards</h2>
-  <p>Our digital engineering environment includes:</p>
+  <h2>Инструменты проектирования и стандарты</h2>
+
+  <p>Наша цифровая инженерная среда включает:</p>
+
   <table>
-    <thead><tr><th>Capability</th><th>Software / Tool</th><th>Application</th></tr></thead>
+    <thead><tr><th>Возможность</th><th>Программное обеспечение / Инструмент</th><th>Применение</th></tr></thead>
     <tbody>
-      <tr><td>3D parametric modelling</td><td>SolidWorks Professional</td><td>Hull surface, stringer system, engine bracket, deck layout</td></tr>
-      <tr><td>Finite element analysis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Stress mapping, modal analysis, crash/impact simulation</td></tr>
-      <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamic drag prediction, trim optimisation</td></tr>
-      <tr><td>Laminate engineering</td><td>ESAComp / CADEC</td><td>Fibreglass layer stacking, core selection, weight estimation</td></tr>
-      <tr><td>Mould flow simulation</td><td>Moldex3D</td><td>Rotomoulding wall-thickness prediction</td></tr>
+      <tr><td>3D-параметрическое моделирование</td><td>SolidWorks Professional</td><td>Поверхность корпуса, система стрингеров, кронштейн двигателя, компоновка палубы</td></tr>
+      <tr><td>Метод конечных элементов</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Карты напряжений, модальный анализ, моделирование ударов и столкновений</td></tr>
+      <tr><td>Вычислительная гидродинамика</td><td>Ansys Fluent / Star-CCM+</td><td>Прогнозирование гидродинамического сопротивления, оптимизация дифферента</td></tr>
+      <tr><td>Инжиниринг ламинатов</td><td>ESAComp / CADEC</td><td>Укладка слоев стеклопластика, выбор сердечника, оценка массы</td></tr>
+      <tr><td>Моделирование течения расплава в форме</td><td>Moldex3D</td><td>Прогнозирование толщины стенки при ротационном формовании</td></tr>
     </tbody>
   </table>
 
-  <h2>Our engineering workflow</h2>
-  <p>Every hull design, whether it is a standard model or a fully custom project, follows a rigorous five-stage process:</p>
+
+  <h2>Наш инженерный процесс</h2>
+
+  <p>Каждая конструкция корпуса — стандартная модель или полностью индивидуальный проект — проходит строгий пятиэтапный процесс:</p>
+
   <ol>
-    <li><strong>Concept &amp; requirements gathering</strong> — We meet with you to define payload, speed envelope, sea-state capability, towing requirements, and any special mission equipment (deck hatches, console positions, fuel-tank integration).</li>
-    <li><strong>3D surfacing &amp; hydrostatic calculation</strong> — The hull form is modelled in SolidWorks and checked for hydrostatic stability (GM, righting arm) using built-in analysis tools.</li>
-    <li><strong>Structural FEA</strong> — Load cases are defined: static (crew + gear), dynamic (planing impacts at 5g), and slamming (dropping from a wave crest at 3 m/s). Stress contours are reviewed; safety factor ≥ 2.5 is mandatory.</li>
-    <li><strong>CFD drag optimisation</strong> — The hull is simulated at three loading conditions and five speeds. Wetted surface area, trim angle, and residual resistance are iteratively reduced.</li>
-    <li><strong>Design review &amp; release</strong> — The complete engineering package (3D model, FEA report, CFD report, weight estimate, ply book) is reviewed by our senior naval architect before release to the prototype workshop.</li>
+    <li><strong>Сбор концепции и требований</strong> — Мы встречаемся с вами, чтобы определить полезную нагрузку, диапазон скоростей, допустимое волнение моря, буксировочные требования и любое специальное служебное оборудование (палубные люки, расположение консоли, интеграция топливных баков).</li>
+    <li><strong>3D-моделирование поверхности и гидростатический расчет</strong> — Форма корпуса моделируется в SolidWorks и проверяется на гидростатическую остойчивость (GM, плечо восстанавливающего момента) с помощью встроенных инструментов анализа.</li>
+    <li><strong>Прочностной анализ методом конечных элементов (МКЭ)</strong> — Определяются расчетные случаи: статические (экипаж + снаряжение), динамические (удары при глиссировании при 5g) и ударные (сброс с гребня волны на скорости 3 м/с). Анализируются контуры напряжений; обязательным является коэффициент запаса ≥ 2.5.</li>
+    <li><strong>Оптимизация сопротивления с помощью CFD</strong> — Корпус моделируется при трех вариантах загрузки и на пяти скоростях. Смоченная поверхность, угол дифферента и остаточное сопротивление последовательно уменьшаются.</li>
+    <li><strong>Проверка конструкции и выпуск</strong> — Полный инженерный пакет (3D-модель, отчет МКЭ, отчет CFD, оценка массы, книга слоев) проверяется нашим старшим инженером-кораблестроителем перед передачей в прототипную мастерскую.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Stress Distribution — RIB 450 Patrol Hull (Aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Распределение напряжений по МКЭ — патрульный корпус RIB 450 (алюминий 5083)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
-        <span class="text-gray-500">Safety factor at max payload</span>
+        <span class="text-gray-500">Коэффициент запаса при максимальной полезной нагрузке</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
-        <span class="text-gray-500">Drag reduction vs previous generation</span>
+        <span class="text-gray-500">Снижение сопротивления по сравнению с предыдущим поколением</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
-        <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
-        <span class="text-gray-500">Peak slamming pressure (design limit)</span>
+        <span class="block text-2xl font-bold text-blue-600">87 кН/м²</span>
+        <span class="text-gray-500">Пиковое ударное давление (проектный предел)</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
-        <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
-        <span class="text-gray-500">Cumulative FEA runtime in 2025</span>
+        <span class="block text-2xl font-bold text-blue-600">18 000 ч</span>
+        <span class="text-gray-500">Суммарное время расчетов МКЭ в 2025 году</span>
       </div>
     </div>
   </div>
 
-  <h2>Customisation: your hull, your rules</h2>
-  <p>No two operators have identical requirements. A harbour-patrol RIB needs a shallow-V hull for stability at low speed; a fast-interception craft needs a deep-V with spray rails; a dive-support boat needs a wide beam and a low transom. We do not force your application into a pre-existing hull shape. We design from your specification upward.</p>
-  <p>Examples of recent custom hull engineering projects:</p>
+
+  <h2>Кастомизация: ваш корпус — ваши правила</h2>
+
+  <p>У двух разных операторов никогда не бывает одинаковых требований. Патрульному RIB для гавани нужен корпус с малой килеватостью для остойчивости на малых скоростях; быстроходному перехватчику — глубокое V с брызгоотбойниками; лодке для дайвинга — широкий корпус и низкий транец. Мы не подгоняем
+  вашу задачу под существующую форму корпуса. Мы проектируем, исходя из вашего технического задания.</p>
+
+  <p>Примеры недавних проектов по индивидуальной разработке корпусов:</p>
+
   <ul>
-    <li>A stretched 6.8 m HDPE hull for a Caribbean tour operator, with a reinforced bow for beach landings (+15 % bottom thickness).</li>
-    <li>A lightweight aluminium 7.2 m RIB for a coast guard, with integrated fuel-tank baffles and equipment-locker stiffeners.</li>
-    <li>A fibreglass 5.5 m dive boat with a cut-down transom and twin battery boxes, designed for easy snorkeller reboarding.</li>
+    <li>Удлиненный корпус из HDPE длиной 6.8 м для карибского туроператора с усиленным носом для высадки на пляж (+15 % толщина днища).</li>
+    <li>Легкий алюминиевый RIB длиной 7.2 м для береговой охраны с интегрированными перегородками топливных баков и ребрами жесткости шкафов для оборудования.</li>
+    <li>Стеклопластиковая лодка для дайвинга длиной 5.5 м с заниженным транцем и двумя аккумуляторными боксами, спроектированная для удобного подъема ныряльщиков на борт.</li>
   </ul>
 
-  <h2>Our engineers</h2>
-  <p>The studio is led by a senior naval architect with 14 years of experience in high-speed craft design, supported by two mechanical engineers specialised in FEA and CFD. All three hold advanced degrees in marine engineering or naval architecture from internationally recognised universities. The team publishes regularly in industry journals and presents at conferences such as the International Conference on High-Performance Marine Vehicles.</p>
 
-  <h2>Partner with us on your next hull</h2>
-  <p>From the first concept sketch to the final stress report, our Hull Engineering Studio is your partner in creating a boat that is not just built — but engineered. We invest the simulation hours upfront so that every weld, every laminate layer, and every curve of the hull is there for a reason.</p>
-  <p>Whether you need a minor modification to an existing model or a completely clean-sheet design, we are ready to discuss your requirements.</p>
+  <h2>Наши инженеры</h2>
 
+  <p>Конструкторское бюро возглавляет старший инженер-кораблестроитель с 14-летним опытом проектирования высокоскоростных судов; его поддерживают два инженера-механика, специализирующихся на МКЭ и CFD. Все трое имеют ученые степени в области морского машиностроения или кораблестроения, полученные в
+  международно признанных университетах. Команда регулярно публикуется в отраслевых журналах и выступает на таких конференциях, как Международная конференция по высокоскоростным морским судам.</p>
+
+
+  <h2>Станьте нашим партнером в создании вашего следующего корпуса</h2>
+
+  <p>От первого концептуального эскиза до итогового отчета по напряжениям наше бюро по проектированию корпусов — ваш партнер в создании лодки, которая не просто построена, а инженерно проработана. Мы вкладываем часы моделирования заранее, чтобы каждый шов, каждый слой ламината и каждый изгиб корпуса
+  были на месте не случайно.</p>
+
+  <p>Нужна ли вам небольшая доработка существующей модели или совершенно новый проект «с чистого листа» — мы готовы обсудить ваши требования.</p>
 cta:
-  title: 'Start your hull design consultation'
-  subtitle: 'Tell us about your mission profile and we will propose an engineering path.'
-  button_text: 'Contact our engineering team'
-  button_link: /contact
+  title: Начните консультацию по проектированию корпуса
+  subtitle: Расскажите нам о вашем профиле миссии, и мы предложим инженерный путь.
+  button_text: Свяжитесь с нашей инженерной командой
+  button_link: /контакт

@@ -17,7 +17,7 @@ contact_form:
       label: 名
       row: 1
       type: select
-      optionsKey: countries
+      optionsKey: 対応国数
       step: 1
     - name: lastName
       label: 姓
@@ -25,15 +25,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
-        - value: sample
-          label: Samples / Prototypes only
+          label: 推定ボリュームを選択してください...
+        - value: サンプル
+          label: サンプル／試作品のみ
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5〜10台（標準MOQ）
         - value: 100-500
-          label: 100–500 units
-        - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 100～500台
+        - value: 500以上
+          label: 500+台（数量割引あり）
       step: 1
     - name: companyName
       label: 会社名
@@ -41,15 +41,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
-        - value: none
-          label: Standard product (no customization)
-        - value: logo
-          label: Custom Logo / Branding only
-        - value: full
-          label: Full OEM (size, color, graphics, packaging)
-        - value: consultation
-          label: Not sure — need consultation
+          label: カスタマイズタイプを選択...
+        - value: なし
+          label: 標準商品（カスタマイズなし）
+        - value: ロゴ
+          label: カスタムロゴ/ブランディングのみ
+        - value: フル
+          label: 完全OEM（サイズ、カラー、グラフィック、パッケージ）
+        - value: 相談
+          label: 未定 — コンサルテーションが必要
       step: 1
     - name: address
       label: 住所
@@ -57,15 +57,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
-        - value: all
-          label: All products / Full catalog
+          label: 製品カテゴリを選択...
+        - value: すべて
+          label: 全製品 / フルカタログ
         - value: sup
-          label: SUP Boards / Paddleboards
-        - value: safety
-          label: Safety Equipment / Life Vests
-        - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: SUPボード／パドルボード
+        - value: 安全性
+          label: 安全装置／ライフベスト
+        - value: アクセサリー
+          label: アクセサリー（ポンプ、オール、バッグ）
       step: 1
     - name: zip
       label: 郵便番号
@@ -128,10 +128,10 @@ features2_other_ways:
       description: info@afarer.com
       icon: tabler:mail
     - title: 本社
-      description: Economic Development Zone, Laixi, Qingdao, China, 266600
+      description: 中国山東省青岛市莱西市経済開発区、郵便番号266600
       icon: tabler:map-pin
 map:
   title: 所在地
   subtitle: 本社へお越しください
-  address: Economic Development Zone, Laixi, Qingdao, China, 266600
+  address: 中国山東省青岛市莱西市経済開発区、郵便番号266600
   zoom: 15

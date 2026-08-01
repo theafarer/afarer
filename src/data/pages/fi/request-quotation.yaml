@@ -1,25 +1,25 @@
 hero_text:
-  tagline: Get a Quote
+  tagline: Pyydä tarjous
   title: Pyydä tarjous<br />projektiisi
   subtitle: Kerro meille vaatimuksistasi, niin tiimimme vastaa yksityiskohtaisella tarjouksella 2 työpäivän kuluessa.
 steps2_process:
-  title: How It Works
+  title: Näin se toimii
   subtitle: Neljä yksinkertaista vaihetta tiedustelusta tarjoukseen.
   items:
-    - title: 'Step 1: Submit Your Requirements'
+    - title: 'Vaihe 1: Lähetä vaatimuksesi'
       description: Täytä alla oleva lomake tuotetyypillä, määrällä ja teknisillä tiedoilla. Mitä enemmän yksityiskohtia annat, sitä tarkempi tarjouksesi on.
       icon: tabler:file-text
-    - title: 'Step 2: We Review & Advise'
+    - title: 'Vaihe 2: Arvioimme ja neuvomme'
       description: Insinööritiimimme tarkastelee vaatimuksiasi ja voi ottaa sinuun yhteyttä selvennystä varten. Annamme suosituksia tuotteen kokoonpanosta ja vaihtoehdoista.
       icon: tabler:users
-    - title: 'Step 3: Receive Your Quote'
+    - title: 'Vaihe 3: Saada tarjous'
       description: Saat yksityiskohtaisen tarjouksen, joka sisältää yksikköhinnan, MOQ:n, toimitusajan, maksuehdot ja toimitusvaihtoehdot. Tyypillisesti 48 tunnin kuluessa.
       icon: tabler:currency-dollar
-    - title: 'Step 4: Sample & Production'
+    - title: 'Vaihe 4: Otos ja tuotanto'
       description: Tarjouksen hyväksymisen jälkeen siirrymme näytevalmistukseen (jos sovellettavissa) tai suoraan massatuotantoon. Säännöllisiä päivityksiä koko prosessin ajan.
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
+  tagline: Tarjouslomake
   title: Kerro meille projektistasi
   subtitle: Kaikki *-merkityt kentät ovat pakollisia.
   fields:
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - Sukelluskeskus
+        - Kalastus
+        - Merimatkailu / lomakohteet
+        - Etsintä ja pelastus
+        - Huviveneen apuvene
+        - Kaupallinen työvene
+        - Julkinen hallinto / Puolustusvoimat
+        - OEM / Omamerkki
+        - Henkilökohtainen / virkistyskäyttö
+        - Muu
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
+        - Ei suositusta
+        - Meriluokan PVC (1100 dtex)
         - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - Lasikuidurunko
+        - Alumiinirunko
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: esim. 60 HV ulko-ohjaus, ei moottoria, kaksois 115 HV
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: esim. mukautetut värit, brändäys/logo, pakkaus, erikoisvarusteet
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: esim. toimitus 90 päivän sisällä
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: Kuvaile käyttötarkoituksesi, tekniset vaatimukset tai erityisvaatimukset —liitä mukaan viitepiirustukset, erittelyt tai linkit, jos saatavilla
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: Lataa tekniset tiedot, piirustus tai referenssidokumentti (PDF, DWG, DXF)
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: Lataa logosi tai kuva-aineistosi räätälöityä brändäystä varten (AI, EPS, PNG)
 cta:
-  title: Prefer to discuss by email?
-  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
+  title: Haluatko mieluummin keskustella sähköpostitse?
+  subtitle: Lähetä kysely suoraan myyntitiimimme, ja vastaamme 24 tunnin kuluessa.
   actions:
     - variant: primary
-      text: Email us directly
+      text: Lähetä meille suoraan sähköpostia
       href: /contact

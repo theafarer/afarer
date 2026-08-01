@@ -1,48 +1,54 @@
 meta:
-  title: 'Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}'
-  description: 'Validate your RIB hull performance with our hydrodynamic test tank. Scale-model towing, planing analysis, and fuel efficiency testing. Book a tank test session today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Hydrodynamický zkušební tank – vlečné zkoušky modelů a optimalizace trupu | {SITE}
+  description: Ověřte výkon trupu vašeho RIB v naší hydrodynamické zkušební nádrži. Vlečné zkoušky modelů, analýza klouzání a testování palivové účinnosti. Rezervujte si termín testu v nádrži ještě dnes.
+back_text: Zpět do centra výzkumu a vývoje
+home_label: Domů
 hero:
-  tagline: 'Lab 04'
-  title: 'Hydrodynamic Test Tank'
-  subtitle: 'Validating performance before the first full-scale prototype'
-  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
-  image_alt: 'Afarer hydrodynamic test tank performance testing'
+  tagline: Lab 04
+  title: Hydrodynamická zkušební nádrž
+  subtitle: Ověřování výkonu ještě před prvním prototypem v plné velikosti
+  image: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp
+  image_alt: Testování výkonu v hydrodynamické testovací nádrži Afarer
+intro: >-
+  Častým mýtem je, že hydrodynamické testování patří jen oceánským lodím. Ve skutečnosti je výkon malého kluzného trupu — třeba RIB o délce 4–6 m — stejně závislý na tvaru podvodní části trupu jako u tankeru na jeho baňaté přídi. Úhel trimu, smáčená plocha, stříkání a provzdušnění mají zásadní vliv
+  na rychlost, spotřebu paliva i jízdní komfort. Ve společnosti {SITE.name} provozujeme specializovanou hydrodynamickou testovací nádrž, díky níž tyto vlivy vyčíslíme v měřítku modelu — dříve, než se pustíme do prototypu v plné velikosti z kovu a tkaniny.
+content_html: >
+  <h2>Proč zkoušet malý člun v nádrži?</h2>
 
-intro: 'It is a common misconception that hydrodynamic testing is reserved for ocean-going ships. In reality, the performance of a small planing hull — such as a 4–6 m RIB — is just as dependent on its underwater shape as a tanker is on its bulbous bow. Trim angle, wetted surface area, spray generation, and ventilation all have a dramatic effect on speed, fuel consumption, and ride comfort. At {SITE.name}, we operate a dedicated hydrodynamic test tank that allows us to quantify these effects at model scale — before committing metal and fabric to a full-size prototype.'
+  <p>Zkoušky v měřítku modelu (obvykle 1:3 až 1:5) nám umožňují rychle a nákladově efektivně iterovat tvary trupů. Týden v nádrži přinese stejná výkonnostní data, na která by plnohodnotné zkoušky metodou pokus-omyl potřebovaly měsíce — a to za zlomek nákladů.</p>
 
-content_html: |
-  <h2>Why tank-test a small boat?</h2>
-  <p>Testing at model scale (typically 1:3 to 1:5) gives us the ability to iterate hull shapes rapidly and cost-effectively. A week in the tank can generate the same performance data that would require months of full-scale trial-and-error — and at a fraction of the cost.</p>
 
-  <h2>Facility specifications</h2>
+  <h2>Specifikace zařízení</h2>
+
   <table>
-    <thead><tr><th>Parameter</th><th>Specification</th></tr></thead>
+    <thead><tr><th>Parametr</th><th>Specifikace</th></tr></thead>
     <tbody>
-      <tr><td>Tank dimensions</td><td>35 m (L) × 3.5 m (W) × 1.8 m (D)</td></tr>
-      <tr><td>Towing carriage</td><td>Electric servo-driven, max speed 12 m/s (23 kn), speed accuracy ± 0.5 %</td></tr>
-      <tr><td>Wave generator</td><td>Flap-type, programmable regular &amp; irregular sea states, Hs up to 0.3 m at model scale</td></tr>
-      <tr><td>Instrumentation</td><td>6-component dynamometer (resistance, side force, yaw moment), accelerometers, inclinometers, wave probes</td></tr>
-      <tr><td>Data acquisition</td><td>Sampling at 1000 Hz per channel, real-time display + post-processing suite</td></tr>
-      <tr><td>Model fabrication</td><td>In-house CNC milling and 3D printing for model hulls up to 1.8 m LOA</td></tr>
+      <tr><td>Rozměry nádrže</td><td>35 m (D) × 3.5 m (Š) × 1.8 m (H)</td></tr>
+      <tr><td>Vlečný vozík</td><td>Elektrický, se servopohonem, max. rychlost 12 m/s (23 kn), přesnost rychlosti ± 0.5 %</td></tr>
+      <tr><td>Generátor vln</td><td>Klapkový typ, programovatelné pravidelné &amp; nepravidelné stavy moře, Hs až 0.3 m v měřítku modelu</td></tr>
+      <tr><td>Přístrojové vybavení</td><td>6složkový dynamometr (odpor, boční síla, moment zatáčení), akcelerometry, sklonoměry, vlnové sondy</td></tr>
+      <tr><td>Systém sběru dat</td><td>Vzorkování 1000 Hz na kanál, zobrazení v reálném čase + sada pro následné zpracování</td></tr>
+      <tr><td>Výroba modelů</td><td>Vlastní CNC frézování a 3D tisk modelů trupů do délky 1.8 m LOA</td></tr>
     </tbody>
   </table>
 
-  <h2>Our test programme</h2>
-  <p>A standard hull development programme in our tank follows this sequence:</p>
+
+  <h2>Náš zkušební program</h2>
+
+  <p>Standardní program vývoje trupu v naší nádrži probíhá v tomto pořadí:</p>
+
   <ol>
-    <li><strong>Model build</strong> — A 1:3.5 scale model is CNC-machined from high-density foam and glassed for rigidity. Weight and CG are adjusted to match Froude-scaled full-load condition.</li>
-    <li><strong>Resistance runs</strong> — The model is towed at 8-10 speeds spanning the operating range. Total resistance is measured and decomposed into frictional and residuary components using the ITTC-1957 method.</li>
-    <li><strong>Trim &amp; sinkage measurement</strong> — Running trim and sinkage are recorded at each speed. An optimal trim angle of 4-6° for planing hulls is the target.</li>
-    <li><strong>Wake survey</strong> — Transverse wave cuts are measured at two speeds to assess wave-making resistance and identify transverse wave interactions that could cause stern interference.</li>
-    <li><strong>Seakeeping (optional)</strong> — Head-sea and following-sea runs in regular waves to measure added resistance, vertical acceleration, and slamming probability.</li>
-    <li><strong>Data analysis &amp; recommendations</strong> — A full report is delivered with comparative charts, speed/power curves, and specific design recommendations for the full-scale hull.</li>
+    <li><strong>Stavba modelu</strong> — Model v měřítku 1:3.5 je CNC obroben z vysoce husté pěny a pro tuhost zalaminován. Hmotnost a těžiště (CG) jsou upraveny tak, aby odpovídaly Froudeho měřítku při plném zatížení.</li>
+    <li><strong>Zkoušky odporu</strong> — Model je vlečen při 8-10 rychlostech pokrývajících provozní rozsah. Celkový odpor se měří a rozkládá na třecí a zbytkovou složku metodou ITTC-1957.</li>
+    <li><strong>Měření trimu &amp; ponoru</strong> — Při každé rychlosti se zaznamenává provozní trim a ponor. Cílem je optimální úhel trimu 4-6° pro klouzající trupy.</li>
+    <li><strong>Průzkum brázdy</strong> — Při dvou rychlostech se měří příčné řezy vln, aby se posoudil odpor z tvorby vln a identifikovaly příčné vlnové interakce, které by mohly způsobovat interferenci v zádi.</li>
+    <li><strong>Chování na vlnách (volitelné)</strong> — Jízdy proti vlně a po vlně v pravidelných vlnách za účelem měření přídavného odporu, vertikálního zrychlení a pravděpodobnosti dopadu (slamming).</li>
+    <li><strong>Analýza dat &amp; doporučení</strong> — Dodává se kompletní protokol se srovnávacími grafy, křivkami rychlost/výkon a konkrétními konstrukčními doporučeními pro trup v plném měřítku.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typical Tank Test Results — Resistance vs Speed (RIB 450 hull, 1:3.5 scale)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typické výsledky zkoušek v nádrži — Odpor vs. rychlost (trup RIB 450, měřítko 1:3.5)</p>
     <div class="space-y-2">
       <div class="flex items-center gap-2 text-xs">
         <span class="w-20">5 kn (1:1)</span>
@@ -87,26 +93,35 @@ content_html: |
         <span class="w-16 text-right">232 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">Model-scale resistance (N) at Froude-scaled speeds. Full-scale power prediction follows the ITTC-1978 performance-prediction method.</p>
+    <p class="text-xs text-gray-400 mt-2">Odpor modelu (N) při rychlostech přepočtených podle Froudeho měřítka. Předpověď výkonu v plném měřítku se řídí metodou predikce výkonu ITTC-1978.</p>
   </div>
 
-  <h2>Expert team</h2>
-  <p>Our tank is operated by a hydrodynamicist with a PhD in naval architecture and 8 years of towing-tank experience at a major European maritime research institute. He is supported by a technician who prepares all models and instrumentation. The team follows the ITTC (International Towing Tank Conference) Recommended Procedures to ensure that every test is repeatable, traceable, and internationally defensible.</p>
 
-  <h2>Tank-testing for custom hull development</h2>
-  <p>Our tank is not only used for house-designed hulls — we regularly run test programmes for clients who want to validate a custom hull shape or investigate a performance issue:</p>
+  <h2>Odborný tým</h2>
+
+  <p>Naši nádrž obsluhuje hydrodynamik s doktorátem z lodní architektury a 8 lety zkušeností s vlečnými nádržemi ve významném evropském námořním výzkumném ústavu. Podporuje ho technik, který připravuje všechny modely a měřicí vybavení. Tým se řídí Doporučenými postupy ITTC (International Towing Tank
+  Conference), aby byl každý test opakovatelný, sledovatelný a mezinárodně obhajitelný.</p>
+
+
+  <h2>Zkoušky v nádrži pro vývoj vlastního trupu</h2>
+
+  <p>Naše nádrž neslouží jen pro trupy vlastní konstrukce — pravidelně provádíme zkušební programy pro klienty, kteří chtějí ověřit vlastní tvar trupu nebo prošetřit výkonnostní problém:</p>
+
   <ul>
-    <li><strong>Hull-form comparison</strong> — Two or more candidate hull shapes tested under identical conditions, providing an objective drag/speed/stability comparison to inform your design choice.</li>
-    <li><strong>Appendage optimisation</strong> — Interceptor plates, spray rails, trim tabs, and strakes can be tested in various configurations to quantify their individual contribution to drag reduction.</li>
-    <li><strong>Engine-matching study</strong> — Resistance data is converted to a power-prediction curve, allowing you to select the optimum engine horsepower for your target speed and payload.</li>
+    <li><strong>Porovnání tvarů trupu</strong> — Dva či více kandidátních tvarů trupu testovaných za identických podmínek poskytuje objektivní srovnání odporu/rychlosti/stability pro vaše konstrukční rozhodnutí.</li>
+    <li><strong>Optimalizace přívěsků</strong> — Interceptorové desky, protistříkové lišty, trimovací klapky a vlnolamy lze testovat v různých konfiguracích, abychom kvantifikovali jejich individuální přínos ke snížení odporu.</li>
+    <li><strong>Studie sladění motoru</strong> — Údaje o odporu se převedou na křivku předpovědi výkonu, což vám umožní zvolit optimální výkon motoru pro cílovou rychlost a nosnost.</li>
   </ul>
 
-  <h2>Why test with us?</h2>
-  <p>We do not just give you a set of raw numbers. Our reports translate tank data into actionable engineering recommendations: "Raise the spray-rail by 8 mm to reduce wetted surface at cruise speed", "Increase deadrise at the transom by 3° to reduce slamming acceleration", or "Move the longitudinal centre of gravity 150 mm aft for improved planing attitude". You leave with a clear understanding of what to change and why.</p>
-  <p>Our tank is also available for independent third-party testing on a fee-for-service basis. If you are developing a hull and want an unbiased, professionally executed hydrodynamic assessment, we welcome your enquiry.</p>
 
+  <h2>Proč testovat u nás?</h2>
+
+  <p>Nedáváme vám jen soubor syrových čísel. Naše protokoly převádějí data z nádrže na konkrétní inženýrská doporučení: „Zvyšte protistříkovou lištu o 8 mm, abyste snížili smáčený povrch při cestovní rychlosti“, „Zvyšte úhel kýlu v zrcadle o 3°, abyste snížili zrychlení při dopadu“, nebo „Posuňte
+  podélné těžiště o 150 mm dozadu pro lepší klouzavý postoj“. Odcházíte s jasným pochopením toho, co změnit a proč.</p>
+
+  <p>Naše nádrž je rovněž k dispozici pro nezávislé testování třetí stranou za úplatu. Pokud vyvíjíte trup a chcete nestranné, profesionálně provedené hydrodynamické posouzení, váš dotaz vítáme.</p>
 cta:
-  title: 'Book a tank test session'
-  subtitle: 'Whether you need a full development programme or a single comparative test, we can accommodate your schedule.'
-  button_text: 'Contact our hydrodynamics team'
+  title: Objednat termín testování v nádrži
+  subtitle: Ať potřebujete kompletní vývojový program, nebo jen jeden srovnávací test, přizpůsobíme se vašemu harmonogramu.
+  button_text: Kontaktujte náš hydrodynamický tým
   button_link: /contact

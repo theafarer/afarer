@@ -1,56 +1,65 @@
 meta:
-  title: 'RF Welding Center — Dielectric Bonding for Airtight Seams | {SITE}'
-  description: 'Radio-frequency welding technology delivering compliant airtight seams. Peel testing, air-retention validation, and custom seam specifications.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Centrum RF svařování – dielektrické spojování vzduchotěsných švů | {SITE}
+  description: Technologie vysokofrekvenčního svařování zajišťující vyhovující vzduchotěsné spoje. Testy odlupování, ověření udržení vzduchu a specifikace spojů na míru.
+back_text: Zpět do centra výzkumu a vývoje
+home_label: Domů
 hero:
-  tagline: 'Lab 03'
-  title: 'RF Welding Center'
-  subtitle: 'Dielectric bonding technology for welds that hold under pressure'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1.webp'
-  image_alt: 'Afarer RF welding dielectric bonding process'
+  tagline: Laboratoř 03
+  title: Centrum RF svařování
+  subtitle: Technologie dielektrického spojování pro svary, které drží i pod tlakem
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1.webp
+  image_alt: Proces dielektrického spojování RF svařováním afarer
+intro: >-
+  Nafukovací člun je spolehlivý jen do té míry, do jaké jsou spolehlivé jeho švy. Jediný slabý svar může ohrozit celou komoru — a na moři není selhání komory jen nepříjemnost, ale bezpečnostní riziko. Ve společnosti {SITE.name} jsme investovali do specializovaného centra vysokofrekvenčního (RF)
+  svařování, které spojuje průmyslové dielektrické svařovací lisy s přísnou kontrolou procesu a testováním po svaření. Každý náš svar je zdokumentovaný, dohledatelný a certifikovaný tak, aby splňoval nebo překračoval požadavky — mezinárodního standardu pro nafukovací plavidla.
+content_html: >
+  <h2>Věda stojící za svarem</h2>
 
-intro: 'An inflatable boat is only as reliable as its seams. A single weak weld can compromise an entire chamber — and at sea, a chamber failure is not an inconvenience; it is a safety hazard. At {SITE.name}, we have invested in a dedicated Radio-Frequency (RF) Welding Center that combines industrial-grade dielectric welding presses with rigorous process control and post-weld testing. Every seam we produce is documented, traceable, and certified to meet or exceed the requirements of — the international standard for inflatable craft.'
+  <p>RF svařování využívá vysokofrekvenční elektromagnetickou energii (obvykle 27.12 MHz) k rozkmitání polárních molekul v tkanině potažené PVC nebo Hypalonem, čímž vzniká teplo přesně na rozhraní materiálu. Na rozdíl od svařování horkým vzduchem nebo horkým klínem vytváří RF svařování skutečnou
+  molekulární vazbu — obě vrstvy tkaniny se v zóně svaru spojí v jediný homogenní materiál, takže spoj je stejně pevný jako samotný základní materiál.</p>
 
-content_html: |
-  <h2>The science behind the seam</h2>
-  <p>RF welding uses high-frequency electromagnetic energy (typically 27.12 MHz) to excite the polar molecules within PVC or Hypalon-coated fabric, generating heat precisely at the material interface. Unlike hot-air or hot-wedge welding, RF welding creates a true molecular bond — the two fabric layers fuse into a single homogeneous material at the weld zone, producing a joint that is as strong as the parent material itself.</p>
 
-  <h2>Welding equipment and process control</h2>
-  <p>Our welding centre is equipped with:</p>
+  <h2>Svařovací zařízení a řízení procesu</h2>
+
+  <p>Naše svařovací centrum je vybaveno:</p>
+
   <table>
-    <thead><tr><th>Machine</th><th>Power / Capacity</th><th>Application</th></tr></thead>
+    <thead><tr><th>Stroj</th><th>Výkon / kapacita</th><th>Použití</th></tr></thead>
     <tbody>
-      <tr><td>Dielectric RF press 1</td><td>15 kW, platen 2000 × 600 mm</td><td>Main longitudinal seams, transom-to-tube joints</td></tr>
-      <tr><td>Dielectric RF press 2</td><td>10 kW, platen 1500 × 500 mm</td><td>Baffle welds, cone attachments, valve patches</td></tr>
-      <tr><td>CNC controlled RF welder</td><td>8 kW, XY table 2500 × 1200 mm</td><td>Curved seams, logo/panel embossing, precision patchwork</td></tr>
-      <tr><td>Hot-wedge automatic welder</td><td>Variable temperature, 1.2 m/min max</td><td>Backup method for Hypalon/CSM materials</td></tr>
+      <tr><td>Dielektrický RF lis 1</td><td>15 kW, deska 2000 × 600 mm</td><td>Hlavní podélné svary, spoje zrcadlo–komora</td></tr>
+      <tr><td>Dielektrický RF lis 2</td><td>10 kW, deska 1500 × 500 mm</td><td>Svary přepážek, uchycení kuželů, záplaty ventilů</td></tr>
+      <tr><td>RF svářečka s CNC řízením</td><td>8 kW, XY stůl 2500 × 1200 mm</td><td>Křivočaré svary, ražba log/panelů, přesné záplatování</td></tr>
+      <tr><td>Automatická svářečka horkým klínem</td><td>Proměnná teplota, max. 1.2 m/min</td><td>Záložní metoda pro materiály Hypalon/CSM</td></tr>
     </tbody>
   </table>
-  <p>Every RF press is equipped with closed-loop temperature and pressure monitoring. Weld parameters — power, press time, cooling time, electrode pressure — are programmed per material type and recorded in our Manufacturing Execution System (MES) for full traceability.</p>
 
-  <h2>Weld quality tests — every seam, every boat</h2>
-  <p>Weld integrity is verified through a mandatory four-test protocol:</p>
+  <p>Každý RF lis je vybaven monitorováním teploty a tlaku v uzavřené smyčce. Svařovací parametry — výkon, doba lisování, doba chlazení, tlak elektrod — se programují podle typu materiálu a zaznamenávají do našeho systému řízení výroby (MES) pro úplnou sledovatelnost.</p>
+
+
+  <h2>Zkoušky kvality svarů — každý svar, každý člun</h2>
+
+  <p>Integrita svarů se ověřuje povinným protokolem čtyř zkoušek:</p>
+
   <ol>
-    <li><strong>Visual inspection</strong> — 100 % of seams are visually inspected for burn-through, misalignment, contamination, or incomplete fusion. Reject rate threshold: 0.5 % of linear metres.</li>
-    <li><strong>Peel test ()</strong> — A 25 mm wide strip is cut from a test coupon welded with each production batch. Minimum peel force: 120 N/25 mm for PVC 1100 dtex.</li>
-    <li><strong>Air-retention test</strong> — Every completed chamber is pressurised to 1.5 × working pressure and held for 30 minutes. Pressure drop must not exceed 2 %.</li>
-    <li><strong>Thermal cycling test</strong> — Sample coupons are cycled from -20 °C to +60 °C for 50 cycles, then peel-tested again. Acceptable strength loss: &lt; 10 %.</li>
+    <li><strong>Vizuální kontrola</strong> — 100 % svarů se vizuálně kontroluje na propálení, posunutí, znečištění nebo neúplné spojení. Hraniční míra zmetkovitosti: 0.5 % běžných metrů.</li>
+    <li><strong>Odtrhová zkouška ()</strong> — Z kontrolního vzorku svařeného s každou výrobní dávkou se vyřízne pruh o šířce 25 mm. Minimální odtrhová síla: 120 N/25 mm pro PVC 1100 dtex.</li>
+    <li><strong>Zkouška zadržení vzduchu</strong> — Každá hotová komora se natlakuje na 1.5 × provozní tlak a 30 minut se drží. Pokles tlaku nesmí překročit 2 %.</li>
+    <li><strong>Zkouška teplotními cykly</strong> — Vzorky procházejí 50 cykly od -20 °C do +60 °C a poté se znovu podrobí odtrhové zkoušce. Přípustná ztráta pevnosti: &lt; 10 %.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Peel Strength Comparison — RF vs Hot-Air Welding (PVC 1100 dtex)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Srovnání odtrhové pevnosti — RF vs. horkovzdušné svařování (PVC 1100 dtex)</p>
     <div class="space-y-3">
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium">RF Weld</span>
+        <span class="w-24 text-xs font-medium">RF svar</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
         </div>
         <span class="text-xs font-bold w-12 text-right">184 N</span>
       </div>
       <div class="flex items-center gap-3">
-        <span class="w-24 text-xs font-medium">Hot-Air</span>
+        <span class="w-24 text-xs font-medium">Horký vzduch</span>
         <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
           <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
         </div>
@@ -64,26 +73,35 @@ content_html: |
         <span class="text-xs font-bold w-12 text-right">96 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">RF welding consistently achieves 90-95 % of parent-material strength, well above the minimum.</p>
+    <p class="text-xs text-gray-400 mt-2">RF svařování trvale dosahuje 90-95 % pevnosti základního materiálu, což je výrazně nad minimum.</p>
   </div>
 
-  <h2>Professional expertise</h2>
-  <p>Our welding team is led by a senior process engineer with 11 years of experience in dielectric welding of coated textiles. Each operator completes a 6-month in-house certification programme before being allowed to work on production seams. Recertification is required annually, including a practical weld test evaluated against our internal Grade-A standard (peel strength ≥ 160 N/25 mm).</p>
 
-  <h2>Custom welding solutions for unique requirements</h2>
-  <p>We understand that one welding specification does not fit every application. Our RF Welding Center routinely develops custom seam configurations for clients with special requirements:</p>
+  <h2>Profesionální odbornost</h2>
+
+  <p>Náš svařovací tým vede zkušený procesní inženýr s 11 lety zkušeností s dielektrickým svařováním potažených textilií. Každý operátor absolvuje 6měsíční interní certifikační program, než smí pracovat na výrobních svarech. Recertifikace je povinná každoročně a zahrnuje praktickou zkoušku svaru
+  hodnocenou podle našeho interního standardu Grade-A (odtrhová pevnost ≥ 160 N/25 mm).</p>
+
+
+  <h2>Individuální svařovací řešení pro speciální požadavky</h2>
+
+  <p>Chápeme, že jedna svařovací specifikace nevyhoví každému použití. Naše RF svařovací centrum běžně vyvíjí vlastní konfigurace svarů pro klienty se speciálními požadavky:</p>
+
   <ul>
-    <li><strong>Multi-layer reinforcement patches</strong> — for high-wear areas such as rubbing strakes and bow cones, we develop multi-pass RF welds that integrate a wear-resistant outer layer without compromising flexibility.</li>
-    <li><strong>Conductive or RF-opaque seams</strong> — for military or surveillance vessels requiring electromagnetic shielding, we weld in conductive mesh layers within the seam stack-up.</li>
-    <li><strong>Colour-change panel welding</strong> — dual-colour fabric panels (e.g. orange hull + grey topside) welded with a concealed overlap to maintain brand aesthetics without a visible join line.</li>
+    <li><strong>Vícevrstvé výztužné záplaty</strong> — pro místa s vysokým opotřebením, jako jsou obrušované vlnolamy a příďové kužely, vyvíjíme víceprůchodové RF svary integrující otěruvzdornou vnější vrstvu, aniž by utrpěla pružnost.</li>
+    <li><strong>Vodivé nebo RF nepropustné svary</strong> — pro vojenská či monitorovací plavidla vyžadující elektromagnetické stínění svařujeme do svarové skladby vrstvy vodivé síťoviny.</li>
+    <li><strong>Svařování barevně odlišených panelů</strong> — dvoubarevné textilní panely (např. oranžový trup + šedá paluba) se svařují se skrytým přesahem, aby byla zachována estetika značky bez viditelné spojovací linie.</li>
   </ul>
 
-  <h2>Our commitment to you</h2>
-  <p>Every boat we deliver carries our weld-quality guarantee: if any seam fails in normal service within the warranty period, we repair or replace the affected chamber at no cost, and a root-cause investigation is performed to prevent recurrence. This is not simply a warranty — it is a commitment to continuous improvement driven by real-world operational data.</p>
-  <p>When you choose {SITE.name}, you are choosing seams that are engineered, tested, and documented — not just welded. That is the difference between a boat that floats and a boat that performs.</p>
 
+  <h2>Náš závazek vůči vám</h2>
+
+  <p>Každý člun, který dodáme, nese naši záruku kvality svarů: pokud jakýkoli svar v běžném provozu selže v rámci záruční doby, dotčenou komoru zdarma opravíme nebo vyměníme a provede se analýza příčin, aby se problém neopakoval. Nejedná se jen o záruku — je to závazek neustálého zlepšování na
+  základě reálných provozních dat.</p>
+
+  <p>Když zvolíte {SITE.name}, volíte svary, které jsou navrženy, testovány a zdokumentovány — nejen svařeny. To je rozdíl mezi člunem, který plave, a člunem, který podává výkon.</p>
 cta:
-  title: 'Discuss your welding requirements'
-  subtitle: 'Custom seam specifications, material compatibility, or process validation.'
-  button_text: 'Contact our welding team'
+  title: Prodiskutujte své požadavky na svařování
+  subtitle: Vlastní specifikace spojů, kompatibilita materiálů nebo validace procesů.
+  button_text: Kontaktujte náš svařovací tým
   button_link: /contact

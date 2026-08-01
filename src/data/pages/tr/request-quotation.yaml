@@ -1,25 +1,25 @@
 hero_text:
-  tagline: Get a Quote
+  tagline: Teklif Alın
   title: Projeniz için<br />Teklif İsteyin
   subtitle: İhtiyaçlarınızı bize bildirin; ekibimiz 2 iş günü içinde ayrıntılı bir teklifle yanıt verecektir.
 steps2_process:
-  title: How It Works
+  title: Nasıl Çalışır
   subtitle: Talepten teklife dört basit adım.
   items:
-    - title: 'Step 1: Submit Your Requirements'
+    - title: 'Adım 1: Gereksinimlerinizi Gönderin'
       description: Aşağıdaki formu ürün tipinizi, miktarını ve özelliklerini belirterek doldurun. Ne kadar ayrıntılı bilgi verirseniz teklifiniz o kadar doğru olur.
       icon: tabler:file-text
-    - title: 'Step 2: We Review & Advise'
+    - title: 'Adım 2: İnceleme ve Tavsiye'
       description: Mühendislik ekibimiz gereksinimlerinizi inceler ve açıklama için sizinle iletişime geçebilir. Ürün konfigürasyonu ve seçenekleri hakkında öneriler sunuyoruz.
       icon: tabler:users
-    - title: 'Step 3: Receive Your Quote'
+    - title: '3. Adım: Teklifinizi Alın'
       description: Birim fiyatlandırma, MOQ, teslim süresi, ödeme koşulları ve gönderim seçeneklerini içeren ayrıntılı bir teklif alırsınız. Genellikle 48 saat içinde.
       icon: tabler:currency-dollar
-    - title: 'Step 4: Sample & Production'
+    - title: 'Adım 4: Numune ve Üretim'
       description: Teklif kabulünün ardından numune üretimine (varsa) veya doğrudan seri üretime geçiyoruz. Süreç boyunca düzenli güncellemeler.
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
+  tagline: Teklif Formu
   title: Bize Projenizden Bahsedin
   subtitle: '* içeren tüm alanların doldurulması zorunludur.'
   fields:
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - Dalış Merkezi
+        - Balıkçılık
+        - Deniz Turizmi / Tatil Köyü
+        - Arama ve Kurtarma
+        - Yat Botu
+        - Ticari İş Teknesi
+        - Hükümet / Askeri
+        - OEM / Özel Marka
+        - Kişisel / Eğlence
+        - Diğer
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
+        - Tercih Yok
+        - Deniz Sınıfı PVC (1100 dtex)
         - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - Fiberglass Gövde
+        - Alüminyum Gövde
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: örn. 60 HP dıştan takma motor, motorsuz, ikiz 115 HP
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: örn. özel renkler, marka/logo, ambalaj, özel aksesuarlar
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: ör. 90 gün içinde teslimat
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: Uygulamanızı, teknik özelliklerinizi veya özel gereksinimlerinizi tanımlayın —mümkünse referans çizimleri, özellikler veya bağlantılar dahil edin
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: Teknik özellik sayfanızı, çiziminizi veya referans belgenizi yükleyin (PDF, DWG, DXF)
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: Özel markalama için logonuzu veya tasarımınızı yükleyin (AI, EPS, PNG)
 cta:
-  title: Prefer to discuss by email?
-  subtitle: Send your inquiry directly to our sales team and we will respond within 24 hours.
+  title: E-posta ile tartışmayı tercih eder misiniz?
+  subtitle: Sorgunuzu doğrudan satış ekibimize gönderin, 24 saat içinde yanıt vereceğiz.
   actions:
     - variant: primary
-      text: Email us directly
+      text: Bize doğrudan e-posta gönderin
       href: /contact

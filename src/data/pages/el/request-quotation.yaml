@@ -1,9 +1,9 @@
 hero_text:
-  tagline: Get a Quote
+  tagline: Ζητήστε Προσφορά
   title: Ζητήστε μια Προσφορά<br />για το Έργο σας
   subtitle: Πείτε μας τις απαιτήσεις σας και η ομάδα μας θα απαντήσει με λεπτομερή προσφορά εντός 2 εργάσιμων ημερών.
 steps2_process:
-  title: How It Works
+  title: Πώς Λειτουργεί
   subtitle: Τέσσερα απλά βήματα από το αίτημα έως την προσφορά.
   items:
     - title: 'Βήμα 1: Υποβάλετε τις Απαιτήσεις σας'
@@ -19,7 +19,7 @@ steps2_process:
       description: Μετά την αποδοχή της προσφοράς, προχωράμε σε παραγωγή δείγματος (εάν ισχύει) ή απευθείας σε μαζική παραγωγή. Τακτικές ενημερώσεις σε όλη τη διαδικασία.
       icon: tabler:building-factory
 content_form:
-  tagline: Quotation Form
+  tagline: Φόρμα Προσφοράς
   title: Πείτε Μας για το Έργο σας
   subtitle: Όλα τα πεδία με * είναι υποχρεωτικά.
   fields:
@@ -35,16 +35,16 @@ content_form:
     - name: Quantity
       type: text
       options:
-        - Diving Center
-        - Fishing
-        - Marine Tourism / Resort
-        - Search & Rescue
-        - Yacht Tender
-        - Commercial Workboat
-        - Government / Military
-        - OEM / Private Label
-        - Personal / Recreational
-        - Other
+        - Κέντρο Κατάδυσης
+        - Ψάρεμα
+        - Θαλάσσιος Τουρισμός / Εστία
+        - Έρευνα & Διάσωση
+        - Tender Γιοτ
+        - Εμπορικό Εργατικό Πλοίο
+        - Κυβέρνηση / Στρατός
+        - OEM / Ιδιωτική Ετικέτα
+        - Προσωπική / Ψυχαγωγική
+        - Άλλο
     - name: Target Market
       type: text
       placeholder: e.g. Europe, North America, Middle East
@@ -57,33 +57,33 @@ content_form:
     - name: Additional Requirements
       type: textarea
       options:
-        - No Preference
-        - Marine-Grade PVC (1100 dtex)
-        - Premium Hypalon / CSM
-        - Fiberglass Hull
-        - Aluminum Hull
+        - Χωρίς Προτίμηση
+        - PVC Ναυτιλιακής Ποιότητας (1100 dtex)
+        - Hypalon / CSM υψηλής ποιότητας
+        - Γάστρα από Fiberglass
+        - Γάστρα Αλουμινίου
     - name: Engine Requirement
       type: text
-      placeholder: e.g. 60 HP outboard, no engine, twin 115 HP
+      placeholder: πχ 60 HP εξωτερικός κινητήρας, χωρίς κινητήρα, δίδυμος 115 HP
     - name: Customization Required
       type: text
-      placeholder: e.g. custom colors, branding/logo, packaging, special fittings
+      placeholder: π.χ. προσαρμοσμένα χρώματα, branding/λογότυπο, συσκευασία, ειδικά εξαρτήματα
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: π.χ. παράδοση εντός 90 ημερών
     - name: Additional Requirements
       type: textarea
-      placeholder: Describe your application, technical specifications, or any special requirements —include reference drawings, specifications, or links if available
+      placeholder: Περιγράψτε την εφαρμογή σας, τις τεχνικές προδιαγραφές ή τυχόν ειδικές απαιτήσεις —συμπεριλάβετε σχέδια αναφοράς, προδιαγραφές ή συνδέσμους, εάν διατίθενται
     - name: Upload Specification
       type: file
-      placeholder: Upload your spec sheet, drawing, or reference document (PDF, DWG, DXF)
+      placeholder: Ανεβάστε το φύλλο προδιαγραφών, το σχέδιο ή το έγγραφο αναφοράς σας (PDF, DWG, DXF)
     - name: Upload Logo / Artwork
       type: file
-      placeholder: Upload your logo or artwork for custom branding (AI, EPS, PNG)
+      placeholder: Ανεβάστε το λογότυπο ή τα γραφικά σας για προσαρμοσμένη σήμανση (AI, EPS, PNG)
 cta:
   title: Προτιμάτε να συζητήσετε μέσω email;
   subtitle: Στείλτε το αίτημά σας απευθείας στην ομάδα πωλήσεών μας και θα απαντήσουμε εντός 24 ωρών.
   actions:
     - variant: primary
-      text: Email us directly
+      text: Στείλτε μας email απευθείας
       href: /contact

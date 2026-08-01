@@ -1,95 +1,110 @@
 meta:
-  title: 'Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}'
-  description: 'From CAD to sea-ready boat in 8-12 weeks. Our Prototype Workshop builds, rigs, and sea-trials custom RIBs and inflatable boats. Start your prototype project today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Мастерская прототипов — Полномасштабное создание прототипов РИБ и морские испытания | {SITE}
+  description: От CAD до готовой к выходу в море лодки за 8-12 недель. Наш прототипный цех строит, оснащает и проводит морские испытания на заказных RIB и надувных лодках. Начните ваш проект прототипа уже сегодня.
+back_text: Назад в центр НИОКР
+home_label: Дом
 hero:
-  tagline: 'Lab 05'
-  title: 'Prototype Workshop'
-  subtitle: 'From CAD model to sea-ready boat — built, fitted, and proven'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp'
-  image_alt: 'Afarer prototype workshop boat fabrication'
+  tagline: Лабораторная работа 05
+  title: Мастерская прототипов
+  subtitle: От модели CAD до готовой к морю лодки — построена, оснащена и проверена
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp
+  image_alt: Изготовление прототипной мастерской лодки Afarer
+intro: >-
+  3D-модель в CAD, каким бы подробным она ни была, не может показать, как лодка будет себя вести на воде, пока она с ней не столкнется. Именно поэтому наша мастерская прототипов создана для того, чтобы как можно быстрее и точнее превращать инженерные данные в физическое, мореплавательное судно.
+  Каждая новая модель {SITE.name} — и каждая значительная индивидуальная сборка — проходит через эту мастерскую перед тем, как начинается изготовление производственных инструментов.
+content_html: >-
+  <h2>Где дизайн становится реальностью</h2>
 
-intro: 'A CAD model, no matter how detailed, cannot reveal how a boat will actually handle until it meets the water. That is why our Prototype Workshop is designed to translate engineering data into a physical, seagoing craft as quickly and accurately as possible. Every new {SITE.name} model — and every significant custom build — passes through this workshop before the production tooling is committed.'
+  <p>Цех полностью оснащён для одновременного изготовления корпуса, баллонов и такелажа. Такой подход с параллельными рабочими процессами сокращает срок изготовления прототипа до 8-12 недель с момента инженерной передачи, по сравнению с отраслевой нормой в 16-20 недель. Если ваша задача требует
+  специализированного решения, мы можем пройти путь от концепции до испытаний на воде менее чем за три месяца.</p>
 
-content_html: |
-  <h2>Where design becomes reality</h2>
-  <p>The workshop is fully equipped for simultaneous fabrication of hull, tubes, and rigging. This parallel-workflow approach cuts prototype lead time to 8-12 weeks from engineering release, compared to the industry norm of 16-20 weeks. When your application demands a specialised solution, we can move from concept to on-water validation in under three months.</p>
 
-  <h2>Workshop capabilities</h2>
+  <h2>Возможности цеха</h2>
+
   <table>
-    <thead><tr><th>Workstation</th><th>Equipment</th><th>Purpose</th></tr></thead>
+    <thead><tr><th>Рабочее место</th><th>Оборудование</th><th>Назначение</th></tr></thead>
     <tbody>
-      <tr><td>Hull fabrication</td><td>Rotational moulding oven (HDPE), TIG welding bay (aluminium), hand-lay-up moulds (fibreglass)</td><td>Full-scale hull production in all three material types</td></tr>
-      <tr><td>Tube assembly</td><td>RF welding press, hot-air tacking station, inflation test jig</td><td>Fabrication of full-size tube assemblies with all baffles, cones, and valves</td></tr>
-      <tr><td>Rigging &amp; fitting</td><td>Engine hoist (500 kg), console mock-up frame, hydraulic hose crimper, electrical harness board</td><td>Complete outfitting: engine, steering, controls, fuel system, electronics, seating</td></tr>
-      <tr><td>Instrumentation bay</td><td>GPS speed sensor, fuel-flow meter, accelerometers, thermocouple array, data-logger</td><td>Sea-trial instrumentation installation and calibration</td></tr>
+      <tr><td>Изготовление корпуса</td><td>Печь ротационного формования (HDPE), участок TIG-сварки (алюминий), формы ручной выкладки (стеклопластик)</td><td>Полномасштабное производство корпусов во всех трёх типах материалов</td></tr>
+      <tr><td>Сборка баллонов</td><td>Пресс для RF-сварки, станция прихваточной сварки горячим воздухом, стенд для испытаний надувных изделий</td><td>Изготовление баллонов в полном размере со всеми перегородками, конусами и клапанами</td></tr>
+      <tr><td>Такелаж и оснастка</td><td>Моторный подъёмник (500 kg), рама-макет консоли, обжимное устройство для гидравлических шлангов, стенд электрожгутов</td><td>Полное оснащение: двигатель, рулевое управление, приборы, топливная система, электроника, сиденья</td></tr>
+      <tr><td>Измерительный пост</td><td>GPS-датчик скорости, расходомер топлива, акселерометры, термопарная матрица, регистратор данных</td><td>Установка и калибровка измерительного оборудования для ходовых испытаний</td></tr>
     </tbody>
   </table>
 
-  <h2>The prototype journey — step by step</h2>
+
+  <h2>Путь прототипа — шаг за шагом</h2>
+
   <ol>
-    <li><strong>Engineering handover</strong> — The design package (3D model, FEA report, bill of materials, layup schedule) is formally reviewed by the workshop lead and the project engineer. Any manufacturing concerns are flagged and resolved before cutting begins.</li>
-    <li><strong>Hull production</strong> — The hull is built according to the engineering specification. For HDPE: the rotational moulding programme is loaded from the Moldex3D simulation. For aluminium: the CNC-cut plates are welded in the TIG bay following the approved weld map. For fibreglass: the ply book is followed layer by layer.</li>
-    <li><strong>Tube fabrication</strong> — Fabric is cut using CNC-pattern templates, then RF-welded into full-size chambers. Each chamber is inflated to test pressure and left for 24 h for initial stabilisation.</li>
-    <li><strong>Assembly &amp; rigging</strong> — Hull and tubes are mated. The engine is hung, steering and controls are connected, fuel system is installed, and all electrical circuits are wired and verified.</li>
-    <li><strong>Static tests</strong> — Before the boat touches water, it undergoes: buoyancy check (full load + 30 % reserve), fuel system pressure test, steering system full-lock cycle test, electrical earth-bond continuity test.</li>
-    <li><strong>Sea trial programme</strong> — 20 hours of in-water testing, detailed below.</li>
-    <li><strong>Prototype review</strong> — A formal sign-off meeting is held with engineering, production, and quality teams. Any required design changes are documented and incorporated into the production release.</li>
+    <li><strong>Инженерная передача</strong> — Комплект конструкторской документации (3D-модель, отчёт FEA, спецификация материалов, график выкладки) официально рассматривается руководителем цеха и инженером проекта. Все вопросы по производству отмечаются и решаются до начала раскроя.</li>
+    <li><strong>Изготовление корпуса</strong> — Корпус строится в соответствии с инженерной спецификацией. Для HDPE: программа ротационного формования загружается из симуляции Moldex3D. Для алюминия: листы CNC-раскроя свариваются на участке TIG-сварки по утверждённой карте сварных швов. Для стеклопластика: карта выкладки слоёв соблюдается слой за слоем.</li>
+    <li><strong>Изготовление баллонов</strong> — Ткань раскраивается с использованием шаблонов CNC, затем сваривается методом RF-сварки в камеры полного размера. Каждая камера надувается до испытательного давления и выдерживается 24 h для первичной стабилизации.</li>
+    <li><strong>Сборка и такелаж</strong> — Корпус и баллоны соединяются. Устанавливается двигатель, подключаются рулевое управление и приборы, монтируется топливная система, выполняются и проверяются все электрические цепи.</li>
+    <li><strong>Статические испытания</strong> — Прежде чем лодка коснётся воды, проводятся: проверка плавучести (полная нагрузка + 30 % запаса), испытание топливной системы под давлением, цикловое испытание рулевого управления на полный ход, проверка непрерывности цепи заземления.</li>
+    <li><strong>Программа ходовых испытаний</strong> — 20 часов испытаний на воде, подробнее описано ниже.</li>
+    <li><strong>Приёмка прототипа</strong> — Проводится официальное совещание по приёмке с участием инженерных и производственных групп и отдела качества. Все необходимые изменения конструкции документируются и вносятся в производственную версию.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20-Hour Sea Trial Programme — Test Schedule</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Программа 20-часовых ходовых испытаний — график испытаний</p>
     <div class="space-y-2 text-sm">
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Harbour manoeuvring — low-speed handling, reverse, fendering check</span>
+        <span class="flex-1">Маневрирование в гавани — управление на малом ходу, задний ход, проверка кранцев</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">4 h</span>
-        <span class="flex-1">Speed trial — GPS-verified top speed, cruise speed, fuel consumption at 3 RPM points</span>
+        <span class="flex-1">Скоростные испытания — максимальная скорость по GPS, крейсерская скорость, расход топлива при трёх режимах RPM</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Turning test — tactical diameter, advance, and transfer at 20 kn, port and starboard</span>
+        <span class="flex-1">Испытание на циркуляцию — тактический диаметр, выдвиг и смещение на 20 kn, левый и правый борт</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Slamming test — repeated runs through 0.5–1.0 m chop; accelerometer on helm seat base</span>
+        <span class="flex-1">Испытание на удар о волну — многократные проходы по волнению 0.5–1.0 m; акселерометр на основании сиденья рулевого</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Stability test — static heel angle with 4 crew + gear to starboard, offset load</span>
+        <span class="flex-1">Испытание на остойчивость — статический угол крена с экипажем из 4 человек + грузом на правый борт, смещённая нагрузка</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Endurance run — 3 h continuous at cruise speed; temperature monitoring (engine, fuel, electrical)</span>
+        <span class="flex-1">Испытание на выносливость — 3 h непрерывного хода на крейсерской скорости; контроль температуры (двигатель, топливо, электрооборудование)</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Final inspection — post-trial inspection of all systems, tighten/check all fasteners, document findings</span>
+        <span class="flex-1">Финальный осмотр — послеиспытательный осмотр всех систем, подтяжка и проверка всех креплений, документирование результатов</span>
       </div>
     </div>
   </div>
 
-  <h2>Custom prototyping for unique applications</h2>
-  <p>The Prototype Workshop is where we solve the problems that standard production boats cannot address. Recent examples include:</p>
+
+  <h2>Индивидуальное прототипирование для уникальных задач</h2>
+
+  <p>Цех прототипирования — это место, где мы решаем задачи, с которыми не справляются стандартные серийные лодки. Последние примеры включают:</p>
+
   <ul>
-    <li>A 7.8 m RIB for a search-and-rescue organisation, requiring a custom cabin structure with roll-over protection, integrated stretcher mounts, and a bow-mounted sonar pod — all prototyped, fitted, and tested at our facility.</li>
-    <li>A 5.2 m inflatable for a hydrographic survey contractor, with a cut-down transom, removable instrument mast, and through-hull transducer pockets designed to minimise flow disturbance.</li>
-    <li>An electric-drive 4.5 m tender for a superyacht, where the prototype was used to validate range, charging infrastructure, and noise levels before the client committed to a fleet of four.</li>
+    <li>RIB длиной 7.8 m для поисково-спасательной организации, требующий индивидуальной конструкции кабины с защитой от опрокидывания, встроенными креплениями для носилок и носовым контейнером для гидролокатора — всё было спроектировано, смонтировано и испытано на нашем предприятии.</li>
+    <li>Надувная лодка 5.2 m для подрядчика гидрографических изысканий со срезанным транцем, съёмной мачтой для приборов и закладными нишами для датчиков в днище, спроектированными для минимизации возмущения потока.</li>
+    <li>Электрический тузик 4.5 m для суперяхты, где прототип использовался для проверки дальности хода, зарядной инфраструктуры и уровня шума, прежде чем заказчик заказал серию из четырёх лодок.</li>
   </ul>
 
-  <h2>Our prototyping team</h2>
-  <p>The workshop is staffed by eight multi-skilled marine technicians, each cross-trained in at least two of the three core disciplines (hull, tube, rigging). The team lead is a master boatbuilder with 16 years of experience spanning custom one-off builds to production series. Every prototype is assigned a dedicated project engineer who serves as the single point of contact for the client throughout the build and trial process.</p>
 
-  <h2>Client involvement</h2>
-  <p>We actively encourage our clients to attend key milestones during the prototype build — particularly the initial fit-out review and the sea trial. Your operational feedback during these stages is invaluable in fine-tuning the boat before it enters production. We do not build in a vacuum; we build in partnership with you.</p>
-  <p>The 20-hour sea trial is also an opportunity for your team to familiarise themselves with the boat's handling, systems layout, and maintenance requirements, ensuring a smooth transition to service when the production boats are delivered.</p>
+  <h2>Наша команда прототипирования</h2>
 
+  <p>В цехе работают восемь многопрофильных специалистов по судостроению, каждый из которых прошёл перекрёстное обучение как минимум по двум из трёх основных дисциплин (корпус, баллон, такелаж). Руководитель команды — мастер-судостроитель с 16-летним опытом: от единичных заказов до серийного
+  производства. Каждому прототипу назначается отдельный инженер проекта, который служит единой точкой контакта для клиента на протяжении всего процесса изготовления и испытаний.</p>
+
+
+  <h2>Участие клиента</h2>
+
+  <p>Мы настоятельно рекомендуем нашим клиентам присутствовать на ключевых этапах изготовления прототипа — особенно на предварительном осмотре оснастки и на ходовых испытаниях. Ваши замечания по эксплуатации на этих этапах неоценимы для доводки лодки перед запуском в производство. Мы не работаем в
+  вакууме — мы работаем в партнёрстве с вами.</p>
+
+  <p>20-часовые ходовые испытания — это также возможность для вашей команды ознакомиться с управляемостью лодки, расположением систем и требованиями к техническому обслуживанию, что обеспечивает плавный переход к эксплуатации после поставки серийных лодок.</p>
 cta:
-  title: 'Start your prototype project'
-  subtitle: 'Tell us about the boat you need and we will propose a prototype development plan.'
-  button_text: 'Contact our prototyping team'
-  button_link: /contact
+  title: Начните свой прототип проекта
+  subtitle: Расскажите нам о лодке, которая вам нужна, и мы предложим план разработки прототипа.
+  button_text: Свяжитесь с нашей командой прототипирования
+  button_link: /контакт

@@ -1,48 +1,45 @@
 meta:
-  title: 'Hydrodynamic Test Tank — Scale-Model Towing & Hull Optimisation | {SITE}'
-  description: 'Validate your RIB hull performance with our hydrodynamic test tank. Scale-model towing, planing analysis, and fuel efficiency testing. Book a tank test session today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: 流体力学試験水槽 — スケールモデル曳航＆船体最適化 | {SITE}
+  description: 当社の流体力学試験槽でRIBハル性能を検証してください。スケールモデルの牽引試験、プラニング分析、燃料効率試験を行います。今日、試験槽セッションをご予約ください。
+back_text: R&Dセンターへ戻る
+home_label: ホーム
 hero:
-  tagline: 'Lab 04'
-  title: 'Hydrodynamic Test Tank'
-  subtitle: 'Validating performance before the first full-scale prototype'
-  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
-  image_alt: 'Afarer hydrodynamic test tank performance testing'
+  tagline: Lab 04
+  title: 流体力学的試験槽
+  subtitle: 最初のフルスケール試作前の性能検証
+  image: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp
+  image_alt: afarer 水中动力試験タンク性能試験
+intro: 流体力学的試験が大型海洋船舶にのみ必要とされるという誤解はよく見られます。実際には、4〜6mのRIBのような小型プラーニング艇の性能も、その水中形状に依存度はタンカーのバルブブリッジと同程度です。トリム角度、浸水面積、スプレー発生、通風すべてが速度、燃料消費、乗り心地に大きな影響を与えます。{SITE.name}では、専用の流体力学的試験槽を備えており、フルサイズプロトタイプに金属と生地を投入する前にモデルスケールでこれらの効果を定量化できます。
+content_html: |-
+  <h2>小型ボートのタンクテストはなぜ重要ですか?</h2>
+  <p>モデルスケール（通常1:3〜1:5）でのテストにより、船殻形状を迅速かつ費用対効果よく反復できます。タンクでの1週間の作業で、フルスケール試験錯誤を数か月かけて行った場合と同等の性能データを、わずか一部のコストで得ることができます。</p>
 
-intro: 'It is a common misconception that hydrodynamic testing is reserved for ocean-going ships. In reality, the performance of a small planing hull — such as a 4–6 m RIB — is just as dependent on its underwater shape as a tanker is on its bulbous bow. Trim angle, wetted surface area, spray generation, and ventilation all have a dramatic effect on speed, fuel consumption, and ride comfort. At {SITE.name}, we operate a dedicated hydrodynamic test tank that allows us to quantify these effects at model scale — before committing metal and fabric to a full-size prototype.'
-
-content_html: |
-  <h2>Why tank-test a small boat?</h2>
-  <p>Testing at model scale (typically 1:3 to 1:5) gives us the ability to iterate hull shapes rapidly and cost-effectively. A week in the tank can generate the same performance data that would require months of full-scale trial-and-error — and at a fraction of the cost.</p>
-
-  <h2>Facility specifications</h2>
+  <h2>施設仕様</h2>
   <table>
-    <thead><tr><th>Parameter</th><th>Specification</th></tr></thead>
+    <thead><tr><th>パラメータ</th><th>仕様</th></tr></thead>
     <tbody>
-      <tr><td>Tank dimensions</td><td>35 m (L) × 3.5 m (W) × 1.8 m (D)</td></tr>
-      <tr><td>Towing carriage</td><td>Electric servo-driven, max speed 12 m/s (23 kn), speed accuracy ± 0.5 %</td></tr>
-      <tr><td>Wave generator</td><td>Flap-type, programmable regular &amp; irregular sea states, Hs up to 0.3 m at model scale</td></tr>
-      <tr><td>Instrumentation</td><td>6-component dynamometer (resistance, side force, yaw moment), accelerometers, inclinometers, wave probes</td></tr>
-      <tr><td>Data acquisition</td><td>Sampling at 1000 Hz per channel, real-time display + post-processing suite</td></tr>
-      <tr><td>Model fabrication</td><td>In-house CNC milling and 3D printing for model hulls up to 1.8 m LOA</td></tr>
+      <tr><td>タンク寸法</td><td>35 m (L) × 3.5 m (W) × 1.8 m (D)</td></tr>
+      <tr><td>牽引キャリッジ</td><td>電気サーボ駆動、最高速度12 m/s（23ノット）、速度精度± 0.5 %</td></tr>
+      <tr><td>波発生装置</td><td>フラップ式、プログラマブルな定常・不规则な海浪状態、モデルスケールで波高0.3 mまで</td></tr>
+      <tr><td>計測器</td><td>6成分ダイヤモメーター（抵抗、横方向力、ヨーモーメント）、加速度計、傾斜計、波センサー</td></tr>
+      <tr><td>データ取得</td><td>チャネルごとに1000 Hzでサンプリング、リアルタイム表示＋後処理スイート</td></tr>
+      <tr><td>モデル製作</td><td>モデル船殻（最大1.8 m LOA）のインハウスCNCフライス加工および3Dプリンティング</td></tr>
     </tbody>
   </table>
 
-  <h2>Our test programme</h2>
-  <p>A standard hull development programme in our tank follows this sequence:</p>
+  <h2>テストプログラム</h2>
+  <p>タンクでの標準的な船殻開発プログラムは、以下のシーケンスに従います：</p>
   <ol>
-    <li><strong>Model build</strong> — A 1:3.5 scale model is CNC-machined from high-density foam and glassed for rigidity. Weight and CG are adjusted to match Froude-scaled full-load condition.</li>
-    <li><strong>Resistance runs</strong> — The model is towed at 8-10 speeds spanning the operating range. Total resistance is measured and decomposed into frictional and residuary components using the ITTC-1957 method.</li>
-    <li><strong>Trim &amp; sinkage measurement</strong> — Running trim and sinkage are recorded at each speed. An optimal trim angle of 4-6° for planing hulls is the target.</li>
-    <li><strong>Wake survey</strong> — Transverse wave cuts are measured at two speeds to assess wave-making resistance and identify transverse wave interactions that could cause stern interference.</li>
-    <li><strong>Seakeeping (optional)</strong> — Head-sea and following-sea runs in regular waves to measure added resistance, vertical acceleration, and slamming probability.</li>
-    <li><strong>Data analysis &amp; recommendations</strong> — A full report is delivered with comparative charts, speed/power curves, and specific design recommendations for the full-scale hull.</li>
+    <li><strong>モデル製作</strong> — 1:3.5スケールモデルは高密度フォームからCNC加工され、剛性のためにガラス仕上げされています。重量と重心はフルロード条件のフルードスケールに合わせて調整されます。</li>
+    <li><strong>抵抗走行</strong> — モデルは運航範囲全体にわたる8〜10の速度で牽引されます。総抵抗が測定され、ITTC-1957法を用いて摩擦抵抗と残存抵抗成分に分解されます。</li>
+    <li><strong>トリムと喫水測定</strong> — 各速度で走行トリムと喫水が記録されます。プランニング船殻の最適トリム角度4〜6°が目標です。</li>
+    <li><strong>ウェイク調査</strong> — 2つの速度で横方向波の切り欠きを測定し、波発生抵抗を評価し、船尾干渉を引き起こす可能性のある横方向波の相互作用を特定します。</li>
+    <li><strong>耐航性（オプション）</strong> — 増加抵抗、垂直加速度、およびスラミング確率を測定するために、正規波での頭波および追い波走行を実施します。</li>
+    <li><strong>データ分析と推奨事項</strong> — 完全な報告書が比較チャート、速度/出力曲線、およびフルスケール船殻のための具体的な設計推奨事項とともに提供されます。</li>
   </ol>
 
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typical Tank Test Results — Resistance vs Speed (RIB 450 hull, 1:3.5 scale)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">典型的なタンクテスト結果 — 抵抗 vs 速度（RIB 450船殻、1:3.5スケール）</p>
     <div class="space-y-2">
       <div class="flex items-center gap-2 text-xs">
         <span class="w-20">5 kn (1:1)</span>
@@ -87,26 +84,25 @@ content_html: |
         <span class="w-16 text-right">232 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">Model-scale resistance (N) at Froude-scaled speeds. Full-scale power prediction follows the ITTC-1978 performance-prediction method.</p>
+    <p class="text-xs text-gray-400 mt-2">モデルスケールの抵抗（N）、フルード等価速度。フルスケール出力予測はITTC-1978性能予測法に従います。</p>
   </div>
 
-  <h2>Expert team</h2>
-  <p>Our tank is operated by a hydrodynamicist with a PhD in naval architecture and 8 years of towing-tank experience at a major European maritime research institute. He is supported by a technician who prepares all models and instrumentation. The team follows the ITTC (International Towing Tank Conference) Recommended Procedures to ensure that every test is repeatable, traceable, and internationally defensible.</p>
+  <h2>専門チーム</h2>
+  <p>当タンクは、博士（海事建築）号を持ち、主要な欧州海事研究機関で8年間の牽引タンク経験を持つ流体力学者が運営しています。彼はすべてのモデルと計測器を準備する技術者によってサポートされています。チームは、すべての試験が再現可能で、トレーサブルであり、国際的に正当化されることを保証するために、ITTC（International Towing Tank Conference）推奨手順に従っています。</p>
 
-  <h2>Tank-testing for custom hull development</h2>
-  <p>Our tank is not only used for house-designed hulls — we regularly run test programmes for clients who want to validate a custom hull shape or investigate a performance issue:</p>
+  <h2>カスタム船殻開発のためのタンクテスト</h2>
+  <p>当タンクは自社設計の船殻にのみ使用されるわけではありません — カスタム船殻形状を検証したり、性能問題を調査したいお客様のために、定期的にテストプログラムを実施しています：</p>
   <ul>
-    <li><strong>Hull-form comparison</strong> — Two or more candidate hull shapes tested under identical conditions, providing an objective drag/speed/stability comparison to inform your design choice.</li>
-    <li><strong>Appendage optimisation</strong> — Interceptor plates, spray rails, trim tabs, and strakes can be tested in various configurations to quantify their individual contribution to drag reduction.</li>
-    <li><strong>Engine-matching study</strong> — Resistance data is converted to a power-prediction curve, allowing you to select the optimum engine horsepower for your target speed and payload.</li>
+    <li><strong>船殻形状比較</strong> — 同一条件で2つ以上の候補船殻形状をテストし、設計選択に役立つ客観的な抵抗/速度/安定性の比較を提供します。</li>
+    <li><strong>付随部分最適化</strong> — インターセプターブレート、スプレーエッジ、トリムタブ、およびストレークを、さまざまな構成でテストし、それぞれの抵抗低減への個別寄与を定量化できます。</li>
+    <li><strong>エンジンマッチング研究</strong> — 抵抗データは出力予測曲線に変換され、目標速度と積載量に最適なエンジン馬力を選択できるようにします。</li>
   </ul>
 
-  <h2>Why test with us?</h2>
-  <p>We do not just give you a set of raw numbers. Our reports translate tank data into actionable engineering recommendations: "Raise the spray-rail by 8 mm to reduce wetted surface at cruise speed", "Increase deadrise at the transom by 3° to reduce slamming acceleration", or "Move the longitudinal centre of gravity 150 mm aft for improved planing attitude". You leave with a clear understanding of what to change and why.</p>
-  <p>Our tank is also available for independent third-party testing on a fee-for-service basis. If you are developing a hull and want an unbiased, professionally executed hydrodynamic assessment, we welcome your enquiry.</p>
-
+  <h2>なぜ当社でテストするのですか?</h2>
+  <p>私たちは単に生の数字を提示するだけでありません。我们的レポートはタンクデータを実行可能なエンジニアリング推奨事項に翻訳します：「巡航速度での濡れた表面積を減らすためにスプレーエッジを8 mm上げる」、「スラミング加速を減らすためにトランスムに deadrise を3°増やす」、「プラニング姿勢を改善するために縦重心を150 mm後方に移動する」。変更点とその理由を明確に理解した状態で去ります。</p>
+  <p>当タンクは、フィーフォーサービスベースで独立した第三者によるテストにも利用可能です。船殻を開発しており、偏りのない専門的な流体力学評価をご希望の場合は、お気軽にお問い合わせください。</p>
 cta:
-  title: 'Book a tank test session'
-  subtitle: 'Whether you need a full development programme or a single comparative test, we can accommodate your schedule.'
-  button_text: 'Contact our hydrodynamics team'
+  title: タンクテストセッションを予約する
+  subtitle: フル開発プログラムでも単体比較試験でも、お客様のスケジュールに合わせて対応いたします。
+  button_text: 流体力学チームに連絡
   button_link: /contact

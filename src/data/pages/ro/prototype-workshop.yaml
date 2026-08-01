@@ -1,95 +1,110 @@
 meta:
-  title: 'Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}'
-  description: 'From CAD to sea-ready boat in 8-12 weeks. Our Prototype Workshop builds, rigs, and sea-trials custom RIBs and inflatable boats. Start your prototype project today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Atelier de prototipuri — Prototipare RIB la scară reală și încercări pe mare | {SITE}
+  description: De la CAD la o ambarcațiune gata de mare în 8–12 săptămâni. Atelierul nostru de prototipuri construiește, echipează și testează pe mare RIB-uri și bărci pneumatice personalizate. Începe astăzi proiectul tău de prototip.
+back_text: Înapoi la Centrul R&D
+home_label: Acasă
 hero:
-  tagline: 'Lab 05'
-  title: 'Prototype Workshop'
-  subtitle: 'From CAD model to sea-ready boat — built, fitted, and proven'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp'
-  image_alt: 'Afarer prototype workshop boat fabrication'
+  tagline: Lab 05
+  title: Atelier de prototipuri
+  subtitle: De la modelul CAD la o barcă gata de mare —construită, echipată și dovedită
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp
+  image_alt: Fabricație de bărci prototip în atelierul Afarer
+intro: >-
+  Un model CAD, oricât de detaliat, nu poate dezvălui cum se va comporta efectiv o ambarcațiune înainte de a ajunge pe apă. De aceea, Atelierul nostru de prototipuri este conceput pentru a transforma datele inginerești într-o ambarcațiune fizică, aptă de navigație pe mare, cât mai rapid și mai
+  precis posibil. Fiecare model nou {SITE.name} — și fiecare construcție personalizată importantă — trece prin acest atelier înainte de a se angaja producția de serie.
+content_html: >
+  <h2>Acolo unde designul devine realitate</h2>
 
-intro: 'A CAD model, no matter how detailed, cannot reveal how a boat will actually handle until it meets the water. That is why our Prototype Workshop is designed to translate engineering data into a physical, seagoing craft as quickly and accurately as possible. Every new {SITE.name} model — and every significant custom build — passes through this workshop before the production tooling is committed.'
+  <p>Atelierul este complet echipat pentru fabricarea simultană a carenei, tuburilor și echipamentelor. Această abordare cu flux de lucru paralel reduce termenul de livrare al prototipului la 8-12 săptămâni de la lansarea în inginerie, față de norma din industrie de 16-20 săptămâni. Atunci când
+  aplicația dvs. necesită o soluție specializată, putem trece de la concept la validarea pe apă în mai puțin de trei luni.</p>
 
-content_html: |
-  <h2>Where design becomes reality</h2>
-  <p>The workshop is fully equipped for simultaneous fabrication of hull, tubes, and rigging. This parallel-workflow approach cuts prototype lead time to 8-12 weeks from engineering release, compared to the industry norm of 16-20 weeks. When your application demands a specialised solution, we can move from concept to on-water validation in under three months.</p>
 
-  <h2>Workshop capabilities</h2>
+  <h2>Capabilitățile atelierului</h2>
+
   <table>
-    <thead><tr><th>Workstation</th><th>Equipment</th><th>Purpose</th></tr></thead>
+    <thead><tr><th>Post de lucru</th><th>Echipamente</th><th>Scop</th></tr></thead>
     <tbody>
-      <tr><td>Hull fabrication</td><td>Rotational moulding oven (HDPE), TIG welding bay (aluminium), hand-lay-up moulds (fibreglass)</td><td>Full-scale hull production in all three material types</td></tr>
-      <tr><td>Tube assembly</td><td>RF welding press, hot-air tacking station, inflation test jig</td><td>Fabrication of full-size tube assemblies with all baffles, cones, and valves</td></tr>
-      <tr><td>Rigging &amp; fitting</td><td>Engine hoist (500 kg), console mock-up frame, hydraulic hose crimper, electrical harness board</td><td>Complete outfitting: engine, steering, controls, fuel system, electronics, seating</td></tr>
-      <tr><td>Instrumentation bay</td><td>GPS speed sensor, fuel-flow meter, accelerometers, thermocouple array, data-logger</td><td>Sea-trial instrumentation installation and calibration</td></tr>
+      <tr><td>Fabricarea carenei</td><td>Cuptor de rotomulare (HDPE), zonă de sudare TIG (aluminiu), matrițe de stratificare manuală (fibra de sticlă)</td><td>Producția carenei la scară reală în toate cele trei tipuri de material</td></tr>
+      <tr><td>Asamblarea tuburilor</td><td>Presă de sudare RF, stație de prindere cu aer cald, dispozitiv de testare la umflare</td><td>Fabricarea ansamblurilor de tuburi la scară reală, cu toate diafragmele, conurile și supapele</td></tr>
+      <tr><td>Echipare și montaj</td><td>Macara pentru motor (500 kg), cadru de machetă pentru consolă, dispozitiv de sertizare furtunuri hidraulice, panou de cablaje electrice</td><td>Dotare completă: motor, direcție, comenzi, sistem de combustibil, electronică, scaune</td></tr>
+      <tr><td>Zona de instrumentație</td><td>Senzor de viteză GPS, debitmetru de combustibil, accelerometre, rețea de termocupluri, data-logger</td><td>Instalarea și calibrarea instrumentației pentru probele pe mare</td></tr>
     </tbody>
   </table>
 
-  <h2>The prototype journey — step by step</h2>
+
+  <h2>Parcursul prototipului — pas cu pas</h2>
+
   <ol>
-    <li><strong>Engineering handover</strong> — The design package (3D model, FEA report, bill of materials, layup schedule) is formally reviewed by the workshop lead and the project engineer. Any manufacturing concerns are flagged and resolved before cutting begins.</li>
-    <li><strong>Hull production</strong> — The hull is built according to the engineering specification. For HDPE: the rotational moulding programme is loaded from the Moldex3D simulation. For aluminium: the CNC-cut plates are welded in the TIG bay following the approved weld map. For fibreglass: the ply book is followed layer by layer.</li>
-    <li><strong>Tube fabrication</strong> — Fabric is cut using CNC-pattern templates, then RF-welded into full-size chambers. Each chamber is inflated to test pressure and left for 24 h for initial stabilisation.</li>
-    <li><strong>Assembly &amp; rigging</strong> — Hull and tubes are mated. The engine is hung, steering and controls are connected, fuel system is installed, and all electrical circuits are wired and verified.</li>
-    <li><strong>Static tests</strong> — Before the boat touches water, it undergoes: buoyancy check (full load + 30 % reserve), fuel system pressure test, steering system full-lock cycle test, electrical earth-bond continuity test.</li>
-    <li><strong>Sea trial programme</strong> — 20 hours of in-water testing, detailed below.</li>
-    <li><strong>Prototype review</strong> — A formal sign-off meeting is held with engineering, production, and quality teams. Any required design changes are documented and incorporated into the production release.</li>
+    <li><strong>Predarea din inginerie</strong> — Pachetul de proiectare (model 3D, raport FEA, lista de materiale, planul de stratificare) este revizuit oficial de șeful atelierului și de inginerul de proiect. Orice problemă de producție este semnalată și rezolvată înainte de începerea tăierii.</li>
+    <li><strong>Producția carenei</strong> — Carena este construită conform specificațiilor de inginerie. Pentru HDPE: programul de rotomulare este încărcat din simularea Moldex3D. Pentru aluminiu: plăcile tăiate cu CNC sunt sudate în zona TIG, urmând harta de sudare aprobată. Pentru fibra de sticlă: planul de straturi este urmat strat cu strat.</li>
+    <li><strong>Fabricarea tuburilor</strong> — Materialul textil este tăiat folosind șabloane cu pattern CNC, apoi sudat prin RF în camere de dimensiuni reale. Fiecare cameră este umflată la presiunea de test și lăsată timp de 24 h pentru stabilizare inițială.</li>
+    <li><strong>Asamblare și echipare</strong> — Carena și tuburile sunt îmbinate. Motorul este montat, direcția și comenzile sunt conectate, sistemul de combustibil este instalat, iar toate circuitele electrice sunt cablate și verificate.</li>
+    <li><strong>Teste statice</strong> — Înainte ca barca să atingă apa, aceasta trece prin: verificarea flotabilității (sarcină completă + rezervă de 30 %), testul de presiune al sistemului de combustibil, testul de rotație completă a sistemului de direcție și testul de continuitate a legăturii electrice la masă.</li>
+    <li><strong>Programul de probe pe mare</strong> — 20 de ore de testare pe apă, detaliate mai jos.</li>
+    <li><strong>Revizuirea prototipului</strong> — Se organizează o ședință oficială de validare cu echipele de inginerie, producție și calitate. Orice modificare necesară a designului este documentată și integrată în versiunea de producție.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20-Hour Sea Trial Programme — Test Schedule</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Programul de probe pe mare de 20 de ore — Programul testelor</p>
     <div class="space-y-2 text-sm">
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Harbour manoeuvring — low-speed handling, reverse, fendering check</span>
+        <span class="flex-1">Manevre în port — manevrabilitate la viteză redusă, marșarier, verificarea apărătorilor</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">4 h</span>
-        <span class="flex-1">Speed trial — GPS-verified top speed, cruise speed, fuel consumption at 3 RPM points</span>
+        <span class="flex-1">Proba de viteză — viteza maximă verificată cu GPS, viteza de croazieră, consumul de combustibil la 3 regimuri RPM</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Turning test — tactical diameter, advance, and transfer at 20 kn, port and starboard</span>
+        <span class="flex-1">Proba de viraj — diametrul tactic, avansul și deplasarea laterală la 20 nd, la babord și la tribord</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Slamming test — repeated runs through 0.5–1.0 m chop; accelerometer on helm seat base</span>
+        <span class="flex-1">Proba de impact — treceri repetate prin valuri scurte de 0,5–1,0 m; accelerometru la baza scaunului pilotului</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Stability test — static heel angle with 4 crew + gear to starboard, offset load</span>
+        <span class="flex-1">Proba de stabilitate — unghi de înclinare static cu 4 membri ai echipajului + echipament la tribord, sarcină decalată</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Endurance run — 3 h continuous at cruise speed; temperature monitoring (engine, fuel, electrical)</span>
+        <span class="flex-1">Proba de anduranță — 3 h continue la viteza de croazieră; monitorizarea temperaturii (motor, combustibil, electric)</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Final inspection — post-trial inspection of all systems, tighten/check all fasteners, document findings</span>
+        <span class="flex-1">Inspecția finală — inspecția tuturor sistemelor după probe, strângerea/verificarea tuturor elementelor de fixare, documentarea constatărilor</span>
       </div>
     </div>
   </div>
 
-  <h2>Custom prototyping for unique applications</h2>
-  <p>The Prototype Workshop is where we solve the problems that standard production boats cannot address. Recent examples include:</p>
+
+  <h2>Prototipuri personalizate pentru aplicații unice</h2>
+
+  <p>Atelierul de prototipuri este locul unde rezolvăm problemele pe care bărcile standard de producție nu le pot aborda. Exemple recente includ:</p>
+
   <ul>
-    <li>A 7.8 m RIB for a search-and-rescue organisation, requiring a custom cabin structure with roll-over protection, integrated stretcher mounts, and a bow-mounted sonar pod — all prototyped, fitted, and tested at our facility.</li>
-    <li>A 5.2 m inflatable for a hydrographic survey contractor, with a cut-down transom, removable instrument mast, and through-hull transducer pockets designed to minimise flow disturbance.</li>
-    <li>An electric-drive 4.5 m tender for a superyacht, where the prototype was used to validate range, charging infrastructure, and noise levels before the client committed to a fleet of four.</li>
+    <li>Un RIB de 7,8 m pentru o organizație de căutare și salvare, care necesita o structură de cabină personalizată cu protecție la răsturnare, suporturi integrate pentru targă și un pod de sonar montat în prova — toate prototipate, montate și testate la unitatea noastră.</li>
+    <li>O barcă gonflabilă de 5,2 m pentru un contractant de cercetări hidrografice, cu oglinda coborâtă, catarg demontabil pentru instrumente și nișe pentru traductoare prin carenă, proiectate pentru a minimiza perturbarea fluxului.</li>
+    <li>O barcă auxiliară de 4,5 m cu propulsie electrică pentru un superyacht, unde prototipul a fost folosit pentru a valida autonomia, infrastructura de încărcare și nivelurile de zgomot înainte ca clientul să comande o flotă de patru unități.</li>
   </ul>
 
-  <h2>Our prototyping team</h2>
-  <p>The workshop is staffed by eight multi-skilled marine technicians, each cross-trained in at least two of the three core disciplines (hull, tube, rigging). The team lead is a master boatbuilder with 16 years of experience spanning custom one-off builds to production series. Every prototype is assigned a dedicated project engineer who serves as the single point of contact for the client throughout the build and trial process.</p>
 
-  <h2>Client involvement</h2>
-  <p>We actively encourage our clients to attend key milestones during the prototype build — particularly the initial fit-out review and the sea trial. Your operational feedback during these stages is invaluable in fine-tuning the boat before it enters production. We do not build in a vacuum; we build in partnership with you.</p>
-  <p>The 20-hour sea trial is also an opportunity for your team to familiarise themselves with the boat's handling, systems layout, and maintenance requirements, ensuring a smooth transition to service when the production boats are delivered.</p>
+  <h2>Echipa noastră de prototipare</h2>
 
+  <p>Atelierul este deservit de opt tehnicieni marini policalificați, fiecare instruit în cel puțin două dintre cele trei discipline de bază (carenă, tub, echipamente). Liderul echipei este un constructor de bărci expert, cu 16 ani de experiență, de la construcții unice personalizate la serii de
+  producție. Fiecărui prototip i se atribuie un inginer de proiect dedicat, care reprezintă un singur punct de contact pentru client pe tot parcursul procesului de construcție și testare.</p>
+
+
+  <h2>Implicarea clientului</h2>
+
+  <p>Încurajăm activ clienții să participe la momentele-cheie pe parcursul construcției prototipului — în special la revizuirea inițială a echipării și la probele pe mare. Feedback-ul dvs. operațional în aceste etape este de neprețuit pentru reglarea fină a bărcii înainte de intrarea în producție.
+  Nu construim în vid; construim în parteneriat cu dvs.</p>
+
+  <p>Probele pe mare de 20 de ore sunt, de asemenea, o oportunitate pentru echipa dvs. de a se familiariza cu manevrabilitatea bărcii, cu amplasarea sistemelor și cu cerințele de întreținere, asigurând o tranziție lină spre exploatare atunci când bărcile de producție sunt livrate.</p>
 cta:
-  title: 'Start your prototype project'
-  subtitle: 'Tell us about the boat you need and we will propose a prototype development plan.'
-  button_text: 'Contact our prototyping team'
+  title: Începeți proiectul de prototip
+  subtitle: Spuneți-ne ce barcă aveți nevoie și vă vom propune un plan de dezvoltare a prototipului.
+  button_text: Contactați echipa noastră de prototipare
   button_link: /contact

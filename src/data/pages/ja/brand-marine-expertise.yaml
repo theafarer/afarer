@@ -1,68 +1,68 @@
-﻿hero:
-  tagline: '海洋の専門知識'
-  title: '数十年にわたる海洋工学<br />すべての船体'
-  subtitle: 'afarer は、深い材料科学、精密製造、実世界のテストを組み合わせて、重要なときに機能する船舶を製造します。'
+hero:
+  tagline: 海洋の専門知識
+  title: 数十年にわたる海洋工学<br />すべての船体
+  subtitle: afarer は、深い材料科学、精密製造、実世界のテストを組み合わせて、重要なときに機能する船舶を製造します。
   image:
     src: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
-    alt: afarer marine engineering and R&D team at work
+    alt: afarer海洋工学・R&Dチームが作業中
 expertise_materials:
-  tagline: '材料科学'
-  title: 'あらゆる用途に適した素材を選択<br />'
-  subtitle: '当社は 3 つのコア素材を使用しており、それぞれが特定の使用例とパフォーマンス要件に合わせて選択されています。'
+  tagline: 材料科学
+  title: あらゆる用途に適した素材を選択<br />
+  subtitle: 当社は 3 つのコア素材を使用しており、それぞれが特定の使用例とパフォーマンス要件に合わせて選択されています。
   columns: 3
   items:
-    - title: Marine-Grade PVC
-      description: '1100 denier PVC fabric —our most versatile material. UV-stabilized, abrasion-resistant, and REACH compliant. Ideal for recreational boats, SUP boards, and SUPs where weight and cost efficiency matter.'
+    - title: マリングレードPVC
+      description: 1100 denier PVC fabric —our most versatile material. UV-stabilized, abrasion-resistant, and REACH compliant. Ideal for recreational boats, SUP boards, and SUPs where weight and cost efficiency matter.
       icon: tabler:droplet
-    - title: Premium Hypalon/CSM
-      description: '優れた耐薬品性と紫外線安定性。 ハイパロン ボートは、適切な手入れをすれば 15 ～ 20 年間使用できます。 長期耐久性が重要な商業、救助、軍事用途に推奨されます。'
+    - title: プレミアム Hypalon/CSM
+      description: 優れた耐薬品性と紫外線安定性。 ハイパロン ボートは、適切な手入れをすれば 15 ～ 20 年間使用できます。 長期耐久性が重要な商業、救助、軍事用途に推奨されます。
       icon: tabler:shield
-    - title: Fiberglass & Aluminum
-      description: 'SUP および巡視船用の Deep-V グラスファイバー船体 - 荒天時の波切り性能。 最大の強度と耐荷重を必要とする頑丈な商用作業船用のアルミニウム製船体。'
+    - title: 繊維強化プラスチック（FRP）＆アルミニウム
+      description: SUP および巡視船用の Deep-V グラスファイバー船体 - 荒天時の波切り性能。 最大の強度と耐荷重を必要とする頑丈な商用作業船用のアルミニウム製船体。
       icon: tabler:building-arch
 expertise_manufacturing:
-  tagline: '製造能力'
-  title: 'あらゆる段階での精密な製造<br />'
-  subtitle: '当社の 12,000 平方メートルの施設には、生産のあらゆる段階に特化した機械が備えられています。'
+  tagline: 製造能力
+  title: あらゆる段階での精密な製造<br />
+  subtitle: 当社の 12,000 平方メートルの施設には、生産のあらゆる段階に特化した機械が備えられています。
   columns: 2
   items:
-    - title: CNC Cutting
-      description: 'コンピューター制御の切断により、無駄を最小限に抑え、正確で再現性のあるファブリック パネルを実現します。 すべての部品が設計どおりに正確にフィットします。'
+    - title: CNCカット
+      description: コンピューター制御の切断により、無駄を最小限に抑え、正確で再現性のあるファブリック パネルを実現します。 すべての部品が設計どおりに正確にフィットします。
       icon: tabler:cpu
-    - title: High-Frequency Welding
-      description: '工業用HF溶接により、母材よりも強い継ぎ目が得られます。 一貫した温度と圧力制御により、あらゆる生産工程にわたって気密シールが保証されます。'
+    - title: 高周波溶接
+      description: 工業用HF溶接により、母材よりも強い継ぎ目が得られます。 一貫した温度と圧力制御により、あらゆる生産工程にわたって気密シールが保証されます。
       icon: tabler:bolt
-    - title: Drop Stitch Core Assembly
-      description: '何千ものポリエステル糸が上部と下部の生地層を接続し、高圧膨張 (15 ～ 20 PSI) で硬くて安定した SUP ボードとフロアを実現します。'
+    - title: ドロップスチッチコア組立
+      description: 何千ものポリエステル糸が上部と下部の生地層を接続し、高圧膨張 (15 ～ 20 PSI) で硬くて安定した SUP ボードとフロアを実現します。
       icon: tabler:building-arch
-    - title: Pressure Testing
-      description: 'すべてのインフレータブル製品は出荷前に圧力テストが行​​われます。 SUP チューブは 1.5 倍の定格圧力でテストされ、その圧力を維持できれば水上でも機能します。'
+    - title: 加圧試験
+      description: すべてのインフレータブル製品は出荷前に圧力テストが行​​われます。 SUP チューブは 1.5 倍の定格圧力でテストされ、その圧力を維持できれば水上でも機能します。
       icon: tabler:wind
-    - title: Seam Strength Testing
-      description: '各生産バッチからのランダムなサンプルは、破壊的な縫い目強度テストを受けます。 結果はログに記録され、特定の運用実行まで追跡できます。'
+    - title: シーム強度試験
+      description: 各生産バッチからのランダムなサンプルは、破壊的な縫い目強度テストを受けます。 結果はログに記録され、特定の運用実行まで追跡できます。
       icon: tabler:files
-    - title: Water Testing
-      description: 'すべての SUP モデルは認証前に海上試験を受けます。 沿岸環境における実際のテストにより、パフォーマンス、ハンドリング、安定性が検証されます。'
+    - title: 水試験
+      description: すべての SUP モデルは認証前に海上試験を受けます。 沿岸環境における実際のテストにより、パフォーマンス、ハンドリング、安定性が検証されます。
       icon: tabler:droplet
 expertise_design:
-  tagline: '設計とエンジニアリング'
-  title: '実際の状況に合わせて設計'
-  subtitle: '私たちの設計哲学は、ボートがどのように使用されるかということから始まり、次にその使用例に基づいてエンジニアリングを構築します。'
+  tagline: 設計とエンジニアリング
+  title: 実際の状況に合わせて設計
+  subtitle: 私たちの設計哲学は、ボートがどのように使用されるかということから始まり、次にその使用例に基づいてエンジニアリングを構築します。
   items:
-    - title: Deep-V Hull Design
-      description: "Our fiberglass hulls feature calculated deadrise angles optimized for each model's length and intended use. Steeper V for rough-water performance, shallower for stability."
-    - title: Multi-Chamber Safety
-      description: 'すべてのボートには 3 ～ 7 つの独立した空気室があります。 1 つのコンパートメントが損傷しても、残りのチャンバーがボートを浮かせて動作させ続けます。'
-    - title: Ergonomic Layout
-      description: 'コンソールの位置、チューブの高さ、シートの配置は、パトロール、釣り、輸送などの長時間使用時のオペレーターの快適性を中心に設計されています。'
-    - title: Custom Configuration
-      description: 'チューブの色、コンソール構成、燃料容量、アクセサリーマウント - 各モデルは、特定の運用要件に合わせてカスタマイズできます。'
+    - title: ディープV型ハル設計
+      description: ファイバーレースの船体は、各モデルの長さと用途に最適化されたデッドライ角度を特徴としています。急なV字型は荒水域での性能に、浅いV字型は安定性に適しています。
+    - title: マルチ Chamber セーフティ
+      description: すべてのボートには 3 ～ 7 つの独立した空気室があります。 1 つのコンパートメントが損傷しても、残りのチャンバーがボートを浮かせて動作させ続けます。
+    - title: 人間工学に基づいたレイアウト
+      description: コンソールの位置、チューブの高さ、シートの配置は、パトロール、釣り、輸送などの長時間使用時のオペレーターの快適性を中心に設計されています。
+    - title: カスタム構成
+      description: チューブの色、コンソール構成、燃料容量、アクセサリーマウント - 各モデルは、特定の運用要件に合わせてカスタマイズできます。
 cta:
-  title: '特定のアプリケーションを念頭に置いていますか?'
-  subtitle: '当社のエンジニアリング チームは、お客様のプロジェクトの材料選択、設計、製造についてアドバイスを提供します。'
+  title: 特定のアプリケーションを念頭に置いていますか?
+  subtitle: 当社のエンジニアリング チームは、お客様のプロジェクトの材料選択、設計、製造についてアドバイスを提供します。
   actions:
     - variant: primary
-      text: '当社のエンジニアに質問してください'
+      text: 当社のエンジニアに質問してください
       href: /contact
-    - text: View product range
+    - text: 製品ラインナップを見る
       href: /products

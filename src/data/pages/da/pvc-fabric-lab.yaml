@@ -1,51 +1,59 @@
 meta:
-  title: 'PVC Fabric Lab — Material Testing for Inflatable Boats | {SITE}'
-  description: 'Scientific material testing from fibre to finished tube. Tensile strength, UV weathering, low-temperature flexibility, and abrasion resistance for PVC fabrics. Contact our lab team for a custom fabric specification.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: PVC-stoflaboratorium — materialetest af oppustelige både | {SITE}
+  description: Videnskabelig materialetestning fra fiber til færdig slange. Trækstyrke, UV-påvirkning, fleksibilitet ved lave temperaturer og slidstyrke for PVC-stoffer. Kontakt vores laboratorieteam for en skræddersyet stofspecifikation.
+back_text: Tilbage til R&D-center
+home_label: Forside
 hero:
-  tagline: 'Lab 01'
-  title: 'PVC Fabric Lab'
-  subtitle: 'Scientific material testing — from fibre to finished tube'
-  image: 'https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp'
-  image_alt: 'Afarer PVC fabric material testing laboratory'
+  tagline: Laboratorium 01
+  title: PVC-stoflaboratorium
+  subtitle: Videnskabelig materialetestning — fra fiber til færdig slange
+  image: https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp
+  image_alt: Afarer PVC-stof materialetestlaboratorium
+intro: >-
+  Tube-stoffet er det enkeltvis vigtigste materiale i en oppustelig båd. Det skal modstå konstant UV-eksponering, gentagne oppumpningscyklusser, slid mod kajer og affald samt ekstreme temperaturudsving — alt sammen mens det bevarer sin strukturelle integritet i årevis. Hos {SITE.name} er vores
+  PVC-stoflaboratorium dedikeret udelukkende til karakterisering, validering og løbende forbedring af de stoffer, vi anvender i hver båd, vi bygger.
+content_html: >
+  <h2>Fundamentet for enhver oppustelig båd</h2>
 
-intro: 'The tube fabric is the single most critical material in an inflatable boat. It must withstand constant UV exposure, repeated inflation cycles, abrasion against docks and debris, and extreme temperature swings — all while maintaining its structural integrity for years. At {SITE.name}, our PVC Fabric Lab is dedicated exclusively to the characterisation, validation, and continuous improvement of the fabrics we use in every boat we build.'
+  <p>Vi stoler ikke udelukkende på leverandørernes datablade. Hver batch PVC- og Hypalon-stof, der kommer ind i vores værksted, testes uafhængigt internt. Det garanterer, at den materialespecifikation, vi offentliggør, er den materialeydeevne, du modtager — batch for batch, år efter år.</p>
 
-content_html: |
-  <h2>The foundation of every inflatable boat</h2>
-  <p>We do not rely solely on supplier data sheets. Every batch of PVC and Hypalon fabric that enters our workshop is independently tested in-house. This guarantees that the material specification we publish is the material performance you receive — lot after lot, year after year.</p>
 
-  <h2>Standardised testing equipment</h2>
-  <p>Our fabric lab is equipped with industrial-grade instruments that conform to ISO, ASTM, and EN test methods:</p>
+  <h2>Standardiseret testudstyr</h2>
+
+  <p>Vores stoflaboratorium er udstyret med industrielle instrumenter, der overholder ISO-, ASTM- og EN-testmetoder:</p>
+
   <table>
-    <thead><tr><th>Equipment</th><th>Parameters Measured</th><th>Standard</th></tr></thead>
+    <thead><tr><th>Udstyr</th><th>Målte parametre</th><th>Standard</th></tr></thead>
     <tbody>
-      <tr><td>Universal tensile tester (50 kN)</td><td>Breaking force, elongation at break, tear propagation</td><td>ISO 1421 / ASTM D751</td></tr>
-      <tr><td>Xenon-arc weathering chamber</td><td>UV resistance (colour change, strength retention after 2000 h)</td><td>ISO 4892 / ASTM G155</td></tr>
-      <tr><td>Low-temperature flex tester</td><td>Crack point at -30 °C to -50 °C</td><td>ISO 4675 / ASTM D2136</td></tr>
-      <tr><td>Taber abrasion tester</td><td>Weight loss after 1000 cycles (CS-10 wheel)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
-      <tr><td>Thickness gauge (digital, 0.001 mm resolution)</td><td>Uniformity across roll width</td><td>ISO 2286-3</td></tr>
-      <tr><td>Hydrostatic head tester</td><td>Water penetration resistance</td><td>ISO 811</td></tr>
+      <tr><td>Universel trækprøvemaskine (50 kN)</td><td>Brudkraft, brudforlængelse, rivningsudbredelse</td><td>ISO 1421 / ASTM D751</td></tr>
+      <tr><td>Vejrligskammer med xenonbue</td><td>UV-bestandighed (farveændring, styrkebevarelse efter 2000 h)</td><td>ISO 4892 / ASTM G155</td></tr>
+      <tr><td>Lavtemperatur-bøjningstester</td><td>Revnedannelse ved -30 °C til -50 °C</td><td>ISO 4675 / ASTM D2136</td></tr>
+      <tr><td>Taber-slidprøvemaskine</td><td>Vægttab efter 1000 cyklusser (CS-10-hjul)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
+      <tr><td>Tykkelsesmåler (digital, 0,001 mm opløsning)</td><td>Ensartethed hen over rullebredden</td><td>ISO 2286-3</td></tr>
+      <tr><td>Hydrostatisk tryktester</td><td>Modstand mod vandgennemtrængning</td><td>ISO 811</td></tr>
     </tbody>
   </table>
-  <p class="text-sm text-gray-500">* All equipment is calibrated annually by third-party accredited laboratories.</p>
 
-  <h2>From data to decision: a typical test workflow</h2>
-  <p>When a new fabric candidate arrives, it follows a standardised seven-step qualification process:</p>
+  <p class="text-sm text-gray-500">* Alt udstyr kalibreres årligt af tredjeparts-akkrediterede laboratorier.</p>
+
+
+  <h2>Fra data til beslutning: et typisk testforløb</h2>
+
+  <p>Når en ny stofkandidat ankommer, følger den en standardiseret kvalificeringsproces i syv trin:</p>
+
   <ol>
-    <li><strong>Receipt inspection</strong> — visual check for surface defects, pinholes, and dimensional compliance.</li>
-    <li><strong>Thickness mapping</strong> — 20-point measurement across the roll; CV &lt; 3% is required for acceptance.</li>
-    <li><strong>Tensile testing</strong> — 5 specimens in warp and weft directions. Minimum 3500 N/50 mm for 1100 dtex PVC.</li>
-    <li><strong>UV conditioning</strong> — 1000 h exposure in xenon-arc chamber; minimum 80 % strength retention required.</li>
-    <li><strong>Cold crack</strong> — 4 h at -35 °C, then 180° bend over a 25 mm mandrel. No visible cracking.</li>
-    <li><strong>Abrasion resistance</strong> — 1000 cycles, weight loss ≤ 0.05 g.</li>
-    <li><strong>Approval sign-off</strong> — only after all seven gates are passed is the fabric released for production.</li>
+    <li><strong>Modtagelseskontrol</strong> — visuel kontrol for overfladefejl, nålehuller og overholdelse af målene.</li>
+    <li><strong>Tykkelseskortlægning</strong> — 20-punktsmåling hen over banen; CV &lt; 3 % kræves for godkendelse.</li>
+    <li><strong>Trækprøvning</strong> — 5 prøveemner i kæde- og skudretning. Minimum 3500 N/50 mm for 1100 dtex PVC.</li>
+    <li><strong>UV-konditionering</strong> — 1000 h eksponering i xenonbuelyskammer; minimum 80 % styrkebevarelse kræves.</li>
+    <li><strong>Koldrevnedannelse</strong> — 4 h ved -35 °C, derefter 180° bøjning over en 25 mm dor. Ingen synlig revnedannelse.</li>
+    <li><strong>Slidstyrke</strong> — 1000 cyklusser, vægttab ≤ 0,05 g.</li>
+    <li><strong>Godkendelse</strong> — først når alle syv trin er bestået, frigives stoffet til produktion.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typical PVC 1100 dtex — Tensile Retention After UV Exposure</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typisk PVC 1100 dtex — trækstyrkebevarelse efter UV-eksponering</p>
     <div class="flex items-end gap-3 h-40">
       <div class="flex-1 flex flex-col items-center">
         <div class="w-full bg-blue-600 rounded-t" style="height:100%"></div>
@@ -65,38 +73,50 @@ content_html: |
       </div>
       <div class="flex-1 flex flex-col items-center">
         <div class="w-full bg-gray-300 rounded-t" style="height:65%"></div>
-        <span class="text-xs mt-1">Competitor<br />~65%</span>
+        <span class="text-xs mt-1">Konkurrent<br />~65%</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">Our PVC 1100 dtex fabric retains &gt; 80 % tensile strength after 2000 h xenon-arc exposure, compared to typical industry grades that drop below 70 %.</p>
+    <p class="text-xs text-gray-400 mt-2">Vores PVC 1100 dtex-stof bevarer &gt; 80 % trækstyrke efter 2000 h eksponering i xenonbuelyskammer, sammenlignet med typiske industrikvaliteter, der falder til under 70 %.</p>
   </div>
 
-  <h2>Our professional team</h2>
-  <p>The lab is staffed by two full-time material engineers, each holding a degree in polymer science or textile engineering with a minimum of six years of industry experience. They are supported by three technicians who perform day-to-day testing and data logging. The team regularly participates in inter-laboratory round-robin trials organised by the International Organization for Standardization (ISO) to validate the accuracy of our test methods.</p>
 
-  <h2>Solving your toughest material challenges</h2>
-  <p>Every marine environment is different. A patrol boat operating in the Persian Gulf faces vastly different UV and temperature conditions than a rescue craft in the North Sea. Our Fabric Lab helps you select — or develop — a fabric specification that is optimised for your operating profile.</p>
-  <p>Recent custom solutions include:</p>
+  <h2>Vores professionelle team</h2>
+
+  <p>Laboratoriet bemandes af to fuldtidsansatte materialeingeniører, som hver har en uddannelse i polymer- eller tekstilteknologi med mindst seks års brancheerfaring. De støttes af tre teknikere, der varetager den daglige testning og dataregistrering. Teamet deltager jævnligt i tværlaboratoriske
+  ringtest arrangeret af International Organization for Standardization (ISO) for at validere nøjagtigheden af vores testmetoder.</p>
+
+
+  <h2>Løsning af dine sværeste materialeudfordringer</h2>
+
+  <p>Ethvert maritimt miljø er forskelligt. En patruljebåd, der opererer i Den Persiske Golf, står over for vidt forskellige UV- og temperaturforhold end en redningsbåd i Nordsøen. Vores stoflaboratorium hjælper dig med at vælge — eller udvikle — en stoftype, der er optimeret til din
+  driftsprofil.</p>
+
+  <p>Nylige skræddersyede løsninger omfatter:</p>
+
   <ul>
-    <li>A high-abrasion PVC blend for a military client whose boats regularly beach on coral reefs (+40 % abrasion life).</li>
-    <li>A low-temperature Hypalon formulation for an Arctic research station, tested to -50 °C without embrittlement.</li>
-    <li>A colour-stabilised orange fabric for a search-and-rescue fleet, maintaining visibility after 3 years of tropical sun exposure.</li>
+    <li>En PVC-blanding med høj slidstyrke til en militær kunde, hvis både jævnligt sættes på grund ved koralrev (+40 % slidlevetid).</li>
+    <li>En lavtemperatur-Hypalon-formulering til en arktisk forskningsstation, testet til -50 °C uden skørhed.</li>
+    <li>Et farvestabiliseret orange stof til en redningsflåde, der bevarer synligheden efter 3 års eksponering i tropisk sol.</li>
   </ul>
-  <p>We do not sell "off-the-shelf" fabrics and hope they work. We test, validate, and recommend — or create — a tailored solution for your specific mission profile. That is the {SITE.name} difference.</p>
 
-  <h2>How we serve you</h2>
-  <p>When you bring a material challenge to us, here is what you can expect:</p>
+  <p>Vi sælger ikke "standardstoffer fra hylden" og håber på, at de virker. Vi tester, validerer og anbefaler — eller skaber — en skræddersyet løsning til din specifikke opgaveprofil. Det er {SITE.name}-forskellen.</p>
+
+
+  <h2>Sådan betjener vi dig</h2>
+
+  <p>Når du kommer til os med en materialeudfordring, kan du forvente følgende:</p>
+
   <ol>
-    <li><strong>Consultation</strong> — we discuss your operating environment, performance targets, and budget.</li>
-    <li><strong>Proposal</strong> — a test plan is drafted with clear pass/fail criteria and a timeline.</li>
-    <li><strong>Execution</strong> — our lab runs the tests and produces a detailed report with raw data and comparative analysis.</li>
-    <li><strong>Recommendation</strong> — we present a fabric specification, including alternative options if multiple materials meet your requirements.</li>
-    <li><strong>Follow-up</strong> — after delivery, we remain available to support any in-service material questions.</li>
+    <li><strong>Konsultation</strong> — vi drøfter dit driftsmiljø, dine præstationsmål og dit budget.</li>
+    <li><strong>Forslag</strong> — en testplan udarbejdes med klare bestået/ikke-bestået-kriterier og en tidsplan.</li>
+    <li><strong>Udførelse</strong> — vores laboratorium gennemfører testene og udarbejder en detaljeret rapport med rådata og sammenlignende analyse.</li>
+    <li><strong>Anbefaling</strong> — vi præsenterer en stoftype, herunder alternative muligheder, hvis flere materialer opfylder dine krav.</li>
+    <li><strong>Opfølgning</strong> — efter levering står vi fortsat til rådighed med støtte til eventuelle spørgsmål om materialet i brug.</li>
   </ol>
-  <p>Our goal is not simply to sell you a boat. It is to ensure that the boat you receive performs reliably in the conditions you operate in — and that starts with the fabric.</p>
 
+  <p>Vores mål er ikke blot at sælge dig en båd. Det er at sikre, at den båd, du modtager, præsterer pålideligt under de forhold, du opererer i — og det begynder med stoffet.</p>
 cta:
-  title: 'Need a custom fabric specification?'
-  subtitle: 'Contact our material engineering team to discuss your requirements.'
-  button_text: 'Contact our lab team'
+  title: Har du brug for en specialfremstillet stofspecifikation?
+  subtitle: Kontakt vores materialetekniske team for at drøfte dine krav.
+  button_text: Kontakt vores laboratorieteam
   button_link: /contact

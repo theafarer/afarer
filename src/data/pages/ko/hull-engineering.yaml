@@ -1,85 +1,81 @@
 meta:
-  title: 'Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}'
-  description: 'Explore our Hull Engineering Studio for CAD design, finite element analysis (FEA), and custom HDPE/aluminium/fibre glass hull development. Contact our engineering team to start your next RIB project.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: 선체 엔지니어링 스튜디오 — CAD, FEA 및 맞춤 RIB 선체 설계 | {SITE}
+  description: 'Hull Engineering Studio: CAD 설계, 유한 요소 해석(FEA), 커스텀 HDPE/알루미늄/섬유유리 선체 개발. 다음 RIB 프로젝트를 시작하려면 엔지니어링 팀에 문의하세요.'
+back_text: R&D 센터로 돌아가기
+home_label: 홈
 hero:
-  tagline: 'Lab 02'
-  title: 'Hull Engineering Studio'
-  subtitle: 'Digital simulation, structural intelligence, custom hull design'
-  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
-  image_alt: 'Afarer hull engineering CAD design workstation'
-
-intro: 'The hull is the backbone of any RIB or inflatable boat. It must be light enough to plane efficiently, strong enough to absorb impact loads, and dimensionally stable across a wide temperature range. At {SITE.name}, our Hull Engineering Studio combines advanced CAD modelling, finite element analysis (FEA), and decades of practical naval-architecture experience to deliver hulls that are optimised for their intended mission — not generic shapes adapted from a catalogue.'
-
+  tagline: Lab 02
+  title: 선체 엔지니어링 스튜디오
+  subtitle: 디지털 시뮬레이션, 구조 지능, 맞춤형 선체 설계
+  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
+  image_alt: afarer 선체 엔지니어링 CAD 설계 워크스테이션
+intro: 선체는 RIB 또는 팽창식 보트의 핵심입니다. 효율적인 탈수를 위해 가볍고, 충격 부하를 흡수할 만큼 강하며, 넓은 온도 범위에서 치수적으로 안정적이어야 합니다. {SITE.name}의 Hull Engineering Studio는 고급 CAD 모델링, 유한 요소 해석(FEA), 수십 년의 실무 해군 건축 경험을 결합하여 목표 임무에 최적화된 선체를 제공합니다 — 카탈로그에서 가져온 범용 형상이 아닙니다.
 content_html: |
-  <h2>Where strength meets hydrodynamics</h2>
-  <p>We work with three primary hull materials — rotationally moulded HDPE, welded marine-grade aluminium, and hand-laid fibreglass — and have the engineering capability to design, simulate, and validate each one in-house.</p>
+  <h2>힘과 유체역학이 만나는 곳</h2>
+  <p>당사는 회전 성형 HDPE, 용접 방식의 마린 등급 알루미늄, 수작업 적층 유리섬유 등 세 가지 주요 선체 소재를 다루며, 각각을 사내에서 설계, 시뮬레이션, 검증할 수 있는 엔지니어링 역량을 보유하고 있습니다.</p>
 
-  <h2>Design tools and standards</h2>
-  <p>Our digital engineering environment includes:</p>
+  <h2>설계 도구 및 기준</h2>
+  <p>당사의 디지털 엔지니어링 환경은 다음을 포함합니다:</p>
   <table>
-    <thead><tr><th>Capability</th><th>Software / Tool</th><th>Application</th></tr></thead>
+    <thead><tr><th>기능</th><th>소프트웨어 / 도구</th><th>적용 분야</th></tr></thead>
     <tbody>
-      <tr><td>3D parametric modelling</td><td>SolidWorks Professional</td><td>Hull surface, stringer system, engine bracket, deck layout</td></tr>
-      <tr><td>Finite element analysis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Stress mapping, modal analysis, crash/impact simulation</td></tr>
-      <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamic drag prediction, trim optimisation</td></tr>
-      <tr><td>Laminate engineering</td><td>ESAComp / CADEC</td><td>Fibreglass layer stacking, core selection, weight estimation</td></tr>
-      <tr><td>Mould flow simulation</td><td>Moldex3D</td><td>Rotomoulding wall-thickness prediction</td></tr>
+      <tr><td>3D 파라메트릭 모델링</td><td>SolidWorks Professional</td><td>선체 표면, 스트링거 시스템, 엔진 브래킷, 데크 레이아웃</td></tr>
+      <tr><td>유한 요소 해석</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>응력 매핑, 모달 해석, 충돌/임팩트 시뮬레이션</td></tr>
+      <tr><td>전산 유체 역학</td><td>Ansys Fluent / Star-CCM+</td><td>수력학적 항력 예측, 트림 최적화</td></tr>
+      <tr><td>라미네이트 엔지니어링</td><td>ESAComp / CADEC</td><td>유리섬유 레이어 적층, 코어 선정, 중량 추정</td></tr>
+      <tr><td>몰드 플로우 시뮬레이션</td><td>Moldex3D</td><td>로토몰딩 벽 두께 예측</td></tr>
     </tbody>
   </table>
 
-  <h2>Our engineering workflow</h2>
-  <p>Every hull design, whether it is a standard model or a fully custom project, follows a rigorous five-stage process:</p>
+  <h2>당사의 엔지니어링 워크플로우</h2>
+  <p>모든 선체 설계는 표준 모델이든 완전 맞춤형 프로젝트든 엄격한 5단계 프로세스를 따릅니다:</p>
   <ol>
-    <li><strong>Concept &amp; requirements gathering</strong> — We meet with you to define payload, speed envelope, sea-state capability, towing requirements, and any special mission equipment (deck hatches, console positions, fuel-tank integration).</li>
-    <li><strong>3D surfacing &amp; hydrostatic calculation</strong> — The hull form is modelled in SolidWorks and checked for hydrostatic stability (GM, righting arm) using built-in analysis tools.</li>
-    <li><strong>Structural FEA</strong> — Load cases are defined: static (crew + gear), dynamic (planing impacts at 5g), and slamming (dropping from a wave crest at 3 m/s). Stress contours are reviewed; safety factor ≥ 2.5 is mandatory.</li>
-    <li><strong>CFD drag optimisation</strong> — The hull is simulated at three loading conditions and five speeds. Wetted surface area, trim angle, and residual resistance are iteratively reduced.</li>
-    <li><strong>Design review &amp; release</strong> — The complete engineering package (3D model, FEA report, CFD report, weight estimate, ply book) is reviewed by our senior naval architect before release to the prototype workshop.</li>
+    <li><strong>컨셉 &amp; 요구사항 수집</strong> — 귀사와의 협의를 통해 적재량, 속도 범위, 해상 상태 대응 능력, 견인 요구사항, 그리고 특수 임무 장비(데크 해치, 콘솔 위치, 연료탱크 통합)를 정의합니다.</li>
+    <li><strong>3D 서페이싱 &amp; 정수력 계산</strong> — 선체 형상은 SolidWorks에서 모델링되며, 내장 분석 도구를 통해 정수적 안정성(GM, 복원암)을 검증합니다.</li>
+    <li><strong>구조 FEA</strong> — 하중 조건이 정의됩니다: 정적(승무원 + 장비), 동적(5g에서의 플레이닝 충격), 그리고 슬래밍(파도 정점에서 3m/s로 낙하). 응력 분포도를 검토하며, 안전율 ≥ 2.5가 필수입니다.</li>
+    <li><strong>CFD 항력 최적화</strong> — 선체는 세 가지 하중 조건과 다섯 가지 속도로 시뮬레이션됩니다. 침수 표면적, 트림 각도, 잔류 저항을 반복적으로 개선합니다.</li>
+    <li><strong>설계 검토 &amp; 릴리스</strong> — 완전한 엔지니어링 패키지(3D 모델, FEA 보고서, CFD 보고서, 중량 추정치, 플라이 북)는 프로토타입 워크숍으로 릴리스되기 전에 수석 조선 설계사가 검토합니다.</li>
   </ol>
 
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Stress Distribution — RIB 450 Patrol Hull (Aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA 응력 분포 — RIB 450 패트롤 선체(알루미늄 5083)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
-        <span class="text-gray-500">Safety factor at max payload</span>
+        <span class="text-gray-500">최대 적재 시 안전율</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
-        <span class="text-gray-500">Drag reduction vs previous generation</span>
+        <span class="text-gray-500">이전 세대 대비 항력 감소</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
-        <span class="text-gray-500">Peak slamming pressure (design limit)</span>
+        <span class="text-gray-500">최대 슬래밍 압력(설계 한계)</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
-        <span class="text-gray-500">Cumulative FEA runtime in 2025</span>
+        <span class="text-gray-500">2025년 누적 FEA 실행 시간</span>
       </div>
     </div>
   </div>
 
-  <h2>Customisation: your hull, your rules</h2>
-  <p>No two operators have identical requirements. A harbour-patrol RIB needs a shallow-V hull for stability at low speed; a fast-interception craft needs a deep-V with spray rails; a dive-support boat needs a wide beam and a low transom. We do not force your application into a pre-existing hull shape. We design from your specification upward.</p>
-  <p>Examples of recent custom hull engineering projects:</p>
+  <h2>커스터마이제이션: 귀하의 선체, 귀하의 규칙</h2>
+  <p>동일한 요구사항을 가진 운영자는 없습니다. 항만 경비 RIB는 저속 안정성을 위해 셜로우-V 선체가 필요하고, 고속 요격정은 스프레이 레일이 있는 딥-V가 필요하며, 다이빙 지원 보트는 넓은 빔과 낮은 트랜섬이 필요합니다. 당사는 기존 선체 형상에 귀사의 용도를 억지로 맞추지 않습니다. 귀사의 사양에 맞춰 처음부터 설계합니다.</p>
+  <p>최근 맞춤형 선체 엔지니어링 프로젝트 사례:</p>
   <ul>
-    <li>A stretched 6.8 m HDPE hull for a Caribbean tour operator, with a reinforced bow for beach landings (+15 % bottom thickness).</li>
-    <li>A lightweight aluminium 7.2 m RIB for a coast guard, with integrated fuel-tank baffles and equipment-locker stiffeners.</li>
-    <li>A fibreglass 5.5 m dive boat with a cut-down transom and twin battery boxes, designed for easy snorkeller reboarding.</li>
+    <li>카리브해 투어 운영자를 위한 연장형 6.8m HDPE 선체로, 비치 상륙을 위한 보강된 선수(+15% 선저 두께)를 갖추고 있습니다.</li>
+    <li>해안경비대를 위한 경량 알루미늄 7.2m RIB로, 통합 연료탱크 배플과 장비 보관함 스티프너를 갖추고 있습니다.</li>
+    <li>낮춰진 트랜섬과 이중 배터리 박스를 갖춘 유리섬유 5.5m 다이빙 보트로, 스노클러가 쉽게 다시 탑승할 수 있도록 설계되었습니다.</li>
   </ul>
 
-  <h2>Our engineers</h2>
-  <p>The studio is led by a senior naval architect with 14 years of experience in high-speed craft design, supported by two mechanical engineers specialised in FEA and CFD. All three hold advanced degrees in marine engineering or naval architecture from internationally recognised universities. The team publishes regularly in industry journals and presents at conferences such as the International Conference on High-Performance Marine Vehicles.</p>
+  <h2>당사의 엔지니어</h2>
+  <p>스튜디오는 고속 선박 설계 14년 경력의 수석 조선 설계사가 이끌며, FEA와 CFD를 전공한 기계 엔지니어 2명이 지원합니다. 세 명 모두 국제적으로 인정받는 대학에서 해양 공학 또는 조선 공학 석·박사 학위를 보유하고 있습니다. 팀은 업계 학술지에 정기적으로 논문을 게재하고 있으며, 고성능 해양 선박 국제 콘퍼런스(International Conference on High-Performance Marine Vehicles) 등 학회에서 발표하고 있습니다.</p>
 
-  <h2>Partner with us on your next hull</h2>
-  <p>From the first concept sketch to the final stress report, our Hull Engineering Studio is your partner in creating a boat that is not just built — but engineered. We invest the simulation hours upfront so that every weld, every laminate layer, and every curve of the hull is there for a reason.</p>
-  <p>Whether you need a minor modification to an existing model or a completely clean-sheet design, we are ready to discuss your requirements.</p>
-
+  <h2>차기 선체 프로젝트는 함께하세요</h2>
+  <p>첫 컨셉 스케치부터 최종 응력 보고서까지, 당사의 선체 엔지니어링 스튜디오는 단순히 제작되는 것이 아닌 엔지니어링되는 보트를 만드는 데 있어 귀사의 파트너입니다. 당사는 모든 용접, 모든 라미네이트 레이어, 선체의 모든 곡선에 이유가 있도록 시뮬레이션 시간을 사전에 투자합니다.</p>
+  <p>기존 모델의 소규모 수정이든 완전히 새로운 설계든, 귀사의 요구사항을 논의할 준비가 되어 있습니다.</p>
 cta:
-  title: 'Start your hull design consultation'
-  subtitle: 'Tell us about your mission profile and we will propose an engineering path.'
-  button_text: 'Contact our engineering team'
+  title: 보디 설계 상담 시작
+  subtitle: 미션 프로필을 알려주시면 엔지니어링 경로를 제안해 드립니다.
+  button_text: 엔지니어링 팀에 문의하십시오
   button_link: /contact

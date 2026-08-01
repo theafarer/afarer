@@ -1,85 +1,103 @@
 meta:
-  title: 'Hull Engineering Studio — CAD, FEA & Custom RIB Hull Design | {SITE}'
-  description: 'Explore our Hull Engineering Studio for CAD design, finite element analysis (FEA), and custom HDPE/aluminium/fibre glass hull development. Contact our engineering team to start your next RIB project.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Hull Engineering Studio — CAD, FEA en Aangepast RIB Rompontwerp | {SITE}
+  description: Ontdek onze Hull Engineering Studio voor CAD-ontwerp, eindige-elementenanalyse (FEA) en op maat gemaakte ontwikkeling van HDPE-/aluminium-/glasvezelrompen. Neem contact op met ons engineeringteam om uw volgende RIB-project te starten.
+back_text: Terug naar R&D Centrum
+home_label: Home
 hero:
-  tagline: 'Lab 02'
-  title: 'Hull Engineering Studio'
-  subtitle: 'Digital simulation, structural intelligence, custom hull design'
-  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
-  image_alt: 'Afarer hull engineering CAD design workstation'
+  tagline: Lab 02
+  title: Engineeringstudio voor de romp
+  subtitle: Digitale simulatie, structurele intelligentie, aangepast romponderwerp
+  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
+  image_alt: Afarer romp engineering CAD-ontwerpwerkstation
+intro: >-
+  De romp is de ruggengraat van elke RIB of opblaasbare boot. Hij moet licht genoeg zijn om efficiënt te kunnen planeren, sterk genoeg om impactbelastingen op te vangen en dimensionaal stabiel zijn over een breed temperatuurbereik. Bij {SITE.name} combineert onze Hull Engineering Studio geavanceerde
+  CAD-modellering, eindige-elementenanalyse (FEA) en tientallen jaren praktische ervaring in scheepsarchitectuur om rompen te leveren die geoptimaliseerd zijn voor hun beoogde missie — niet generieke vormen aangepast uit een catalogus.
+content_html: >
+  <h2>Waar sterkte en hydrodynamica samenkomen</h2>
 
-intro: 'The hull is the backbone of any RIB or inflatable boat. It must be light enough to plane efficiently, strong enough to absorb impact loads, and dimensionally stable across a wide temperature range. At {SITE.name}, our Hull Engineering Studio combines advanced CAD modelling, finite element analysis (FEA), and decades of practical naval-architecture experience to deliver hulls that are optimised for their intended mission — not generic shapes adapted from a catalogue.'
+  <p>We werken met drie primaire rompmaterialen — rotatiegegoten HDPE, gelast scheepsaluminium en handgelegd glasvezel — en beschikken over de technische capaciteit om elk materiaal in eigen huis te ontwerpen, te simuleren en te valideren.</p>
 
-content_html: |
-  <h2>Where strength meets hydrodynamics</h2>
-  <p>We work with three primary hull materials — rotationally moulded HDPE, welded marine-grade aluminium, and hand-laid fibreglass — and have the engineering capability to design, simulate, and validate each one in-house.</p>
 
-  <h2>Design tools and standards</h2>
-  <p>Our digital engineering environment includes:</p>
+  <h2>Ontwerptools en normen</h2>
+
+  <p>Onze digitale engineeringomgeving omvat:</p>
+
   <table>
-    <thead><tr><th>Capability</th><th>Software / Tool</th><th>Application</th></tr></thead>
+    <thead><tr><th>Capaciteit</th><th>Software / Tool</th><th>Toepassing</th></tr></thead>
     <tbody>
-      <tr><td>3D parametric modelling</td><td>SolidWorks Professional</td><td>Hull surface, stringer system, engine bracket, deck layout</td></tr>
-      <tr><td>Finite element analysis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Stress mapping, modal analysis, crash/impact simulation</td></tr>
-      <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamic drag prediction, trim optimisation</td></tr>
-      <tr><td>Laminate engineering</td><td>ESAComp / CADEC</td><td>Fibreglass layer stacking, core selection, weight estimation</td></tr>
-      <tr><td>Mould flow simulation</td><td>Moldex3D</td><td>Rotomoulding wall-thickness prediction</td></tr>
+      <tr><td>3D-parametrisch modelleren</td><td>SolidWorks Professional</td><td>Romp-oppervlak, stringersysteem, motorbracket, dekindeling</td></tr>
+      <tr><td>Eindige-elementenanalyse (FEA)</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Spanningstoewijzing, modale analyse, crash-/impactsimulatie</td></tr>
+      <tr><td>Numerieke stromingsleer (CFD)</td><td>Ansys Fluent / Star-CCM+</td><td>Voorspelling van hydrodynamische weerstand, trimoptimalisatie</td></tr>
+      <tr><td>Laminaatengineering</td><td>ESAComp / CADEC</td><td>Laagopbouw van glasvezel, kernselectie, gewichtsinschatting</td></tr>
+      <tr><td>Matrijsvloeisimulatie</td><td>Moldex3D</td><td>Voorspelling van wanddikte bij rotatiegieten</td></tr>
     </tbody>
   </table>
 
-  <h2>Our engineering workflow</h2>
-  <p>Every hull design, whether it is a standard model or a fully custom project, follows a rigorous five-stage process:</p>
+
+  <h2>Onze engineering-workflow</h2>
+
+  <p>Elk rompontwerp, of het nu een standaardmodel of een volledig op maat gemaakt project betreft, doorloopt een strikt vijfstappenproces:</p>
+
   <ol>
-    <li><strong>Concept &amp; requirements gathering</strong> — We meet with you to define payload, speed envelope, sea-state capability, towing requirements, and any special mission equipment (deck hatches, console positions, fuel-tank integration).</li>
-    <li><strong>3D surfacing &amp; hydrostatic calculation</strong> — The hull form is modelled in SolidWorks and checked for hydrostatic stability (GM, righting arm) using built-in analysis tools.</li>
-    <li><strong>Structural FEA</strong> — Load cases are defined: static (crew + gear), dynamic (planing impacts at 5g), and slamming (dropping from a wave crest at 3 m/s). Stress contours are reviewed; safety factor ≥ 2.5 is mandatory.</li>
-    <li><strong>CFD drag optimisation</strong> — The hull is simulated at three loading conditions and five speeds. Wetted surface area, trim angle, and residual resistance are iteratively reduced.</li>
-    <li><strong>Design review &amp; release</strong> — The complete engineering package (3D model, FEA report, CFD report, weight estimate, ply book) is reviewed by our senior naval architect before release to the prototype workshop.</li>
+    <li><strong>Concept &amp; eisenverzameling</strong> — We spreken met u af om het laadvermogen, het snelheidsbereik, de capaciteit voor zeecondities, de sleepvereisten en eventuele speciale missie-uitrusting (dekluiken, consoleposities, brandstoftankintegratie) te definiëren.</li>
+    <li><strong>3D-modellering &amp; hydrostatische berekening</strong> — De rompvorm wordt in SolidWorks gemodelleerd en met behulp van ingebouwde analysetools gecontroleerd op hydrostatische stabiliteit (GM, oprichtarm).</li>
+    <li><strong>Structurele FEA</strong> — Er worden belastingsgevallen gedefinieerd: statisch (bemanning + uitrusting), dynamisch (planeerimpact bij 5g) en slamming (neerkomen vanaf een golfkam met 3 m/s). De spanningscontouren worden beoordeeld; een veiligheidsfactor ≥ 2.5 is verplicht.</li>
+    <li><strong>CFD-weerstandsoptimalisatie</strong> — De romp wordt gesimuleerd onder drie beladingstoestanden en bij vijf snelheden. Het natte oppervlak, de trimhoek en de restweerstand worden iteratief verminderd.</li>
+    <li><strong>Ontwerpreview &amp; vrijgave</strong> — Het complete technische pakket (3D-model, FEA-rapport, CFD-rapport, gewichtsinschatting, platenboek) wordt vóór vrijgave aan de prototypenwerkplaats beoordeeld door onze senior scheepsarchitect.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA Stress Distribution — RIB 450 Patrol Hull (Aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA-spanningsverdeling — RIB 450 Patrol-romp (aluminium 5083)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
-        <span class="text-gray-500">Safety factor at max payload</span>
+        <span class="text-gray-500">Veiligheidsfactor bij maximaal laadvermogen</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
-        <span class="text-gray-500">Drag reduction vs previous generation</span>
+        <span class="text-gray-500">Weerstandsvermindering ten opzichte van de vorige generatie</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
-        <span class="text-gray-500">Peak slamming pressure (design limit)</span>
+        <span class="text-gray-500">Piekslammingdruk (ontwerplimiet)</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
-        <span class="text-gray-500">Cumulative FEA runtime in 2025</span>
+        <span class="text-gray-500">Cumulatieve FEA-rekentijd in 2025</span>
       </div>
     </div>
   </div>
 
-  <h2>Customisation: your hull, your rules</h2>
-  <p>No two operators have identical requirements. A harbour-patrol RIB needs a shallow-V hull for stability at low speed; a fast-interception craft needs a deep-V with spray rails; a dive-support boat needs a wide beam and a low transom. We do not force your application into a pre-existing hull shape. We design from your specification upward.</p>
-  <p>Examples of recent custom hull engineering projects:</p>
+
+  <h2>Maatwerk: uw romp, uw regels</h2>
+
+  <p>Geen twee gebruikers hebben identieke eisen. Een RIB voor havenpatrouille heeft een ondiepe V-romp nodig voor stabiliteit bij lage snelheid; een snelle onderscheppingsboot heeft een diepe V-romp met sprayrails nodig; een duikondersteuningsboot heeft een brede romp en een lage spiegel nodig. We
+  dwingen uw toepassing niet in een bestaande rompvorm. We ontwerpen uitgaande van uw specificatie.</p>
+
+  <p>Voorbeelden van recente projecten op het gebied van aangepaste rompengineering:</p>
+
   <ul>
-    <li>A stretched 6.8 m HDPE hull for a Caribbean tour operator, with a reinforced bow for beach landings (+15 % bottom thickness).</li>
-    <li>A lightweight aluminium 7.2 m RIB for a coast guard, with integrated fuel-tank baffles and equipment-locker stiffeners.</li>
-    <li>A fibreglass 5.5 m dive boat with a cut-down transom and twin battery boxes, designed for easy snorkeller reboarding.</li>
+    <li>Een uitgerekte HDPE-romp van 6.8 m voor een Caribische touroperator, met een versterkte boeg voor strandlandingen (+15 % bodemdikte).</li>
+    <li>Een lichtgewicht aluminium RIB van 7.2 m voor een kustwacht, met geïntegreerde brandstoftankschotten en verstijvers voor de uitrustingskluizen.</li>
+    <li>Een duikboot van glasvezel van 5.5 m met een verlaagde spiegel en dubbele accubakken, ontworpen voor een gemakkelijke herinstap voor snorkelaars.</li>
   </ul>
 
-  <h2>Our engineers</h2>
-  <p>The studio is led by a senior naval architect with 14 years of experience in high-speed craft design, supported by two mechanical engineers specialised in FEA and CFD. All three hold advanced degrees in marine engineering or naval architecture from internationally recognised universities. The team publishes regularly in industry journals and presents at conferences such as the International Conference on High-Performance Marine Vehicles.</p>
 
-  <h2>Partner with us on your next hull</h2>
-  <p>From the first concept sketch to the final stress report, our Hull Engineering Studio is your partner in creating a boat that is not just built — but engineered. We invest the simulation hours upfront so that every weld, every laminate layer, and every curve of the hull is there for a reason.</p>
-  <p>Whether you need a minor modification to an existing model or a completely clean-sheet design, we are ready to discuss your requirements.</p>
+  <h2>Onze engineers</h2>
 
+  <p>De studio staat onder leiding van een senior scheepsarchitect met 14 jaar ervaring in het ontwerp van hogesnelheidsvaartuigen, ondersteund door twee werktuigbouwkundigen die gespecialiseerd zijn in FEA en CFD. Alle drie hebben een gevorderd diploma in maritieme techniek of scheepsbouwkunde van
+  internationaal erkende universiteiten. Het team publiceert regelmatig in vaktijdschriften en presenteert op congressen zoals de International Conference on High-Performance Marine Vehicles.</p>
+
+
+  <h2>Werk samen met ons aan uw volgende romp</h2>
+
+  <p>Vanaf de eerste conceptschets tot aan het definitieve spanningsrapport is onze Hull Engineering Studio uw partner bij het creëren van een boot die niet alleen gebouwd — maar ook geëngineerd is. We investeren vooraf in de simulatie-uren, zodat elke las, elke laminaatlaag en elke curve van de
+  romp er met een reden is.</p>
+
+  <p>Of u nu een kleine aanpassing aan een bestaand model of een volledig nieuw ontwerp vanaf nul nodig hebt, wij staan klaar om uw eisen te bespreken.</p>
 cta:
-  title: 'Start your hull design consultation'
-  subtitle: 'Tell us about your mission profile and we will propose an engineering path.'
-  button_text: 'Contact our engineering team'
+  title: Begin uw rompontwerpconsultatie
+  subtitle: Vertel ons over uw missieprofiel en wij zullen een technisch pad voorstellen.
+  button_text: Neem contact op met ons engineeringteam
   button_link: /contact

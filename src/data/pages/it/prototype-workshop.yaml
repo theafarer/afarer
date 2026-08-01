@@ -1,95 +1,110 @@
 meta:
-  title: 'Prototype Workshop — Full-Scale RIB Prototyping & Sea Trials | {SITE}'
-  description: 'From CAD to sea-ready boat in 8-12 weeks. Our Prototype Workshop builds, rigs, and sea-trials custom RIBs and inflatable boats. Start your prototype project today.'
-back_text: 'Back to R&D Center'
-home_label: 'Home'
-
+  title: Officina di Prototipi — Prototipazione RIB a Grandezza Naturale e Prove in Mare | {SITE}
+  description: Da CAD a barca pronta per il mare in 8-12 settimane. Il nostro Laboratorio Prototipi costruisce, attrezza e sperimenta in mare RIB e gommoni personalizzati. Inizia oggi il tuo progetto prototipo.
+back_text: Torna al Centro R&S
+home_label: Casa
 hero:
-  tagline: 'Lab 05'
-  title: 'Prototype Workshop'
-  subtitle: 'From CAD model to sea-ready boat — built, fitted, and proven'
-  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp'
-  image_alt: 'Afarer prototype workshop boat fabrication'
+  tagline: Laboratorio 05
+  title: Laboratorio di prototipi
+  subtitle: Dal modello CAD alla barca pronta per il mare — costruita, equipaggiata e testata
+  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp
+  image_alt: Fabbricazione della barca prototipo del laboratorio Afarer
+intro: >-
+  Un modello CAD, per quanto dettagliato, non può rivelare come una barca si comporterà realmente finché non incontra l'acqua. Ecco perché il nostro Laboratorio Prototipi è progettato per trasformare i dati ingegneristici in un'imbarcazione fisica e navigabile nel modo più rapido e preciso
+  possibile. Ogni nuovo modello {SITE.name} — e ogni costruzione personalizzata significativa — passa attraverso questo laboratorio prima che venga avviata la produzione degli stampi.
+content_html: >-
+  <h2>Dove il design diventa realtà</h2>
 
-intro: 'A CAD model, no matter how detailed, cannot reveal how a boat will actually handle until it meets the water. That is why our Prototype Workshop is designed to translate engineering data into a physical, seagoing craft as quickly and accurately as possible. Every new {SITE.name} model — and every significant custom build — passes through this workshop before the production tooling is committed.'
+  <p>L'officina è completamente attrezzata per la fabbricazione simultanea di scafo, tubolari e allestimenti. Questo approccio a flusso parallelo riduce i tempi di prototipazione a 8-12 settimane dal rilascio dell'ingegneria, rispetto allo standard del settore di 16-20 settimane. Quando la Sua
+  applicazione richiede una soluzione specializzata, possiamo passare dal concept alla validazione in acqua in meno di tre mesi.</p>
 
-content_html: |
-  <h2>Where design becomes reality</h2>
-  <p>The workshop is fully equipped for simultaneous fabrication of hull, tubes, and rigging. This parallel-workflow approach cuts prototype lead time to 8-12 weeks from engineering release, compared to the industry norm of 16-20 weeks. When your application demands a specialised solution, we can move from concept to on-water validation in under three months.</p>
 
-  <h2>Workshop capabilities</h2>
+  <h2>Capacità dell'officina</h2>
+
   <table>
-    <thead><tr><th>Workstation</th><th>Equipment</th><th>Purpose</th></tr></thead>
+    <thead><tr><th>Postazione di lavoro</th><th>Attrezzatura</th><th>Scopo</th></tr></thead>
     <tbody>
-      <tr><td>Hull fabrication</td><td>Rotational moulding oven (HDPE), TIG welding bay (aluminium), hand-lay-up moulds (fibreglass)</td><td>Full-scale hull production in all three material types</td></tr>
-      <tr><td>Tube assembly</td><td>RF welding press, hot-air tacking station, inflation test jig</td><td>Fabrication of full-size tube assemblies with all baffles, cones, and valves</td></tr>
-      <tr><td>Rigging &amp; fitting</td><td>Engine hoist (500 kg), console mock-up frame, hydraulic hose crimper, electrical harness board</td><td>Complete outfitting: engine, steering, controls, fuel system, electronics, seating</td></tr>
-      <tr><td>Instrumentation bay</td><td>GPS speed sensor, fuel-flow meter, accelerometers, thermocouple array, data-logger</td><td>Sea-trial instrumentation installation and calibration</td></tr>
+      <tr><td>Fabbricazione scafo</td><td>Forno di rotostampaggio (HDPE), reparto saldatura TIG (alluminio), stampi per stratificazione manuale (vetroresina)</td><td>Produzione di scafi a grandezza naturale in tutti e tre i tipi di materiale</td></tr>
+      <tr><td>Assemblaggio tubolari</td><td>Pressa di saldatura RF, stazione di imbastitura ad aria calda, banco di prova di gonfiaggio</td><td>Fabbricazione di tubolari a grandezza naturale con tutti i diaframmi, i coni e le valvole</td></tr>
+      <tr><td>Allestimento &amp; montaggio</td><td>Argano motore (500 kg), telaio mock-up per console, crimpatrice per tubi idraulici, pannello per cablaggi elettrici</td><td>Allestimento completo: motore, timoneria, comandi, impianto carburante, elettronica, sedili</td></tr>
+      <tr><td>Banco strumentazione</td><td>Sensore di velocità GPS, misuratore di flusso carburante, accelerometri, schiera di termocoppie, data-logger</td><td>Installazione e calibrazione della strumentazione per le prove in mare</td></tr>
     </tbody>
   </table>
 
-  <h2>The prototype journey — step by step</h2>
+
+  <h2>Il percorso di prototipazione — passo dopo passo</h2>
+
   <ol>
-    <li><strong>Engineering handover</strong> — The design package (3D model, FEA report, bill of materials, layup schedule) is formally reviewed by the workshop lead and the project engineer. Any manufacturing concerns are flagged and resolved before cutting begins.</li>
-    <li><strong>Hull production</strong> — The hull is built according to the engineering specification. For HDPE: the rotational moulding programme is loaded from the Moldex3D simulation. For aluminium: the CNC-cut plates are welded in the TIG bay following the approved weld map. For fibreglass: the ply book is followed layer by layer.</li>
-    <li><strong>Tube fabrication</strong> — Fabric is cut using CNC-pattern templates, then RF-welded into full-size chambers. Each chamber is inflated to test pressure and left for 24 h for initial stabilisation.</li>
-    <li><strong>Assembly &amp; rigging</strong> — Hull and tubes are mated. The engine is hung, steering and controls are connected, fuel system is installed, and all electrical circuits are wired and verified.</li>
-    <li><strong>Static tests</strong> — Before the boat touches water, it undergoes: buoyancy check (full load + 30 % reserve), fuel system pressure test, steering system full-lock cycle test, electrical earth-bond continuity test.</li>
-    <li><strong>Sea trial programme</strong> — 20 hours of in-water testing, detailed below.</li>
-    <li><strong>Prototype review</strong> — A formal sign-off meeting is held with engineering, production, and quality teams. Any required design changes are documented and incorporated into the production release.</li>
+    <li><strong>Consegna del progetto ingegneristico</strong> — Il pacchetto di progettazione (modello 3D, relazione FEA, distinta dei materiali, programma di stratificazione) viene formalmente esaminato dal responsabile dell'officina e dall'ingegnere di progetto. Eventuali criticità produttive vengono segnalate e risolte prima dell'inizio del taglio.</li>
+    <li><strong>Produzione dello scafo</strong> — Lo scafo viene realizzato in base alle specifiche ingegneristiche. Per l'HDPE: il programma di rotostampaggio viene caricato dalla simulazione Moldex3D. Per l'alluminio: le lamiere tagliate a CNC vengono saldate nel reparto TIG seguendo la mappa di saldatura approvata. Per la vetroresina: si segue strato per strato il piano di stratificazione.</li>
+    <li><strong>Fabbricazione dei tubolari</strong> — Il tessuto viene tagliato con sagome a pattern CNC, quindi saldato a RF in camere a grandezza naturale. Ogni camera viene gonfiata alla pressione di prova e lasciata per 24 ore per la stabilizzazione iniziale.</li>
+    <li><strong>Assemblaggio &amp; allestimento</strong> — Scafo e tubolari vengono accoppiati. Il motore viene montato, timoneria e comandi vengono collegati, viene installato l'impianto carburante e tutti i circuiti elettrici vengono cablati e verificati.</li>
+    <li><strong>Test statici</strong> — Prima che l'imbarcazione tocchi l'acqua, vengono eseguiti: verifica di galleggiabilità (pieno carico + 30 % di riserva), prova di pressione dell'impianto carburante, prova del ciclo di sterzata completa della timoneria, prova di continuità del collegamento di massa elettrico.</li>
+    <li><strong>Programma di prove in mare</strong> — 20 ore di test in acqua, descritti in dettaglio di seguito.</li>
+    <li><strong>Revisione del prototipo</strong> — Si tiene una riunione formale di approvazione con i team di ingegneria, produzione e qualità. Le eventuali modifiche di progettazione richieste vengono documentate e integrate nella versione di produzione.</li>
   </ol>
 
+
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20-Hour Sea Trial Programme — Test Schedule</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Programma di prove in mare di 20 ore — Piano dei test</p>
     <div class="space-y-2 text-sm">
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Harbour manoeuvring — low-speed handling, reverse, fendering check</span>
+        <span class="flex-1">Manovre in porto — conduzione a bassa velocità, retromarcia, verifica dei parabordi</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">4 h</span>
-        <span class="flex-1">Speed trial — GPS-verified top speed, cruise speed, fuel consumption at 3 RPM points</span>
+        <span class="flex-1">Prova di velocità — velocità massima verificata con GPS, velocità di crociera, consumo di carburante a 3 punti di giri/min</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Turning test — tactical diameter, advance, and transfer at 20 kn, port and starboard</span>
+        <span class="flex-1">Prova di virata — diametro tattico, avanzamento e trasferimento a 20 kn, a sinistra e a destra</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Slamming test — repeated runs through 0.5–1.0 m chop; accelerometer on helm seat base</span>
+        <span class="flex-1">Prova di slamming — passaggi ripetuti in onde di 0,5–1,0 m; accelerometro sulla base del sedile di guida</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Stability test — static heel angle with 4 crew + gear to starboard, offset load</span>
+        <span class="flex-1">Prova di stabilità — angolo di sbandamento statico con 4 membri dell'equipaggio più attrezzatura a dritta, carico disassato</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
-        <span class="flex-1">Endurance run — 3 h continuous at cruise speed; temperature monitoring (engine, fuel, electrical)</span>
+        <span class="flex-1">Prova di resistenza — 3 ore continue alla velocità di crociera; monitoraggio delle temperature (motore, carburante, elettrica)</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
-        <span class="flex-1">Final inspection — post-trial inspection of all systems, tighten/check all fasteners, document findings</span>
+        <span class="flex-1">Ispezione finale — ispezione di tutti i sistemi a prova conclusa, serraggio/verifica di tutti gli elementi di fissaggio, documentazione dei risultati</span>
       </div>
     </div>
   </div>
 
-  <h2>Custom prototyping for unique applications</h2>
-  <p>The Prototype Workshop is where we solve the problems that standard production boats cannot address. Recent examples include:</p>
+
+  <h2>Prototipazione su misura per applicazioni uniche</h2>
+
+  <p>L'officina di prototipazione è il luogo in cui risolviamo i problemi che le imbarcazioni di produzione standard non possono affrontare. Esempi recenti includono:</p>
+
   <ul>
-    <li>A 7.8 m RIB for a search-and-rescue organisation, requiring a custom cabin structure with roll-over protection, integrated stretcher mounts, and a bow-mounted sonar pod — all prototyped, fitted, and tested at our facility.</li>
-    <li>A 5.2 m inflatable for a hydrographic survey contractor, with a cut-down transom, removable instrument mast, and through-hull transducer pockets designed to minimise flow disturbance.</li>
-    <li>An electric-drive 4.5 m tender for a superyacht, where the prototype was used to validate range, charging infrastructure, and noise levels before the client committed to a fleet of four.</li>
+    <li>Un RIB di 7,8 m per un'organizzazione di ricerca e soccorso, che richiedeva una struttura cabina su misura con protezione in caso di ribaltamento, supporti integrati per la barella e un pod sonar montato a prua — tutti prototipati, installati e testati presso il nostro stabilimento.</li>
+    <li>Un gommone gonfiabile di 5,2 m per un appaltatore di rilievi idrografici, con specchio di poppa ribassato, albero strumenti rimovibile e alloggiamenti passascafo per trasduttori progettati per ridurre al minimo la turbolenza del flusso.</li>
+    <li>Un tender di 4,5 m a propulsione elettrica per un superyacht, in cui il prototipo è stato utilizzato per validare autonomia, infrastruttura di ricarica e livelli di rumorosità prima che il cliente si impegnasse per una flotta di quattro unità.</li>
   </ul>
 
-  <h2>Our prototyping team</h2>
-  <p>The workshop is staffed by eight multi-skilled marine technicians, each cross-trained in at least two of the three core disciplines (hull, tube, rigging). The team lead is a master boatbuilder with 16 years of experience spanning custom one-off builds to production series. Every prototype is assigned a dedicated project engineer who serves as the single point of contact for the client throughout the build and trial process.</p>
 
-  <h2>Client involvement</h2>
-  <p>We actively encourage our clients to attend key milestones during the prototype build — particularly the initial fit-out review and the sea trial. Your operational feedback during these stages is invaluable in fine-tuning the boat before it enters production. We do not build in a vacuum; we build in partnership with you.</p>
-  <p>The 20-hour sea trial is also an opportunity for your team to familiarise themselves with the boat's handling, systems layout, and maintenance requirements, ensuring a smooth transition to service when the production boats are delivered.</p>
+  <h2>Il nostro team di prototipazione</h2>
 
+  <p>L'officina è composta da otto tecnici nautici polivalenti, ciascuno formato in almeno due delle tre discipline principali (scafo, tubolari, allestimento). Il responsabile del team è un maestro costruttore di barche con 16 anni di esperienza, dagli esemplari unici su misura alle serie di
+  produzione. Ogni prototipo è affidato a un ingegnere di progetto dedicato, che funge da punto di contatto unico per il cliente durante tutto il processo di costruzione e di prova.</p>
+
+
+  <h2>Coinvolgimento del cliente</h2>
+
+  <p>La incoraggiamo attivamente a partecipare alle tappe fondamentali della costruzione del prototipo — in particolare alla revisione iniziale dell'allestimento e alle prove in mare. Il Suo feedback operativo in queste fasi è preziosissimo per mettere a punto l'imbarcazione prima che entri in
+  produzione. Non costruiamo nel vuoto: costruiamo in partnership con Lei.</p>
+
+  <p>Le prove in mare di 20 ore sono anche un'opportunità per il Suo team di familiarizzare con la conduzione dell'imbarcazione, la disposizione dei sistemi e i requisiti di manutenzione, garantendo una transizione agevole al servizio quando le imbarcazioni di produzione verranno consegnate.</p>
 cta:
-  title: 'Start your prototype project'
-  subtitle: 'Tell us about the boat you need and we will propose a prototype development plan.'
-  button_text: 'Contact our prototyping team'
-  button_link: /contact
+  title: Avvia il tuo progetto prototipo
+  subtitle: Parlaci della barca di cui hai bisogno e ti proporremo un piano di sviluppo del prototipo.
+  button_text: Contatta il nostro team di prototipazione
+  button_link: /contatto

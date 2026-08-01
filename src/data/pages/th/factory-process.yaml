@@ -2,9 +2,11 @@ hero:
   tagline: กระบวนการผลิต
   title: กระบวนการผลิตของเรา
   subtitle: จากวัตถุดิบถึงสินค้าสำเร็จ — ทุกขั้นตอนควบคุมคุณภาพ
-  back_label: Back to Factory
+  back_label: กลับสู่หน้าโรงงาน
   back_link: /factory
-intro: Unlike brands that outsource production to third-party factories, afarer owns and operates its entire manufacturing chain. This vertical integration allows us to maintain strict quality control at every stage, respond quickly to custom requirements, and deliver consistent product quality batch after batch. Here is how a SUP board is built in our facility.
+intro: >-
+  ต่างจากแบรนด์ที่จ้างโรงงานภายนอกผลิต afarer เป็นเจ้าของและดำเนินการห่วงโซ่การผลิตทั้งหมดด้วยตัวเอง การบูรณาการแนวดิ่งนี้ทำให้เราควบคุมคุณภาพอย่างเข้มงวดได้ในทุกขั้นตอน ตอบสนองความต้องการแบบกำหนดได้อย่างรวดเร็ว และส่งมอบคุณภาพผลิตภัณฑ์ที่สม่ำเสมอในทุกรุ่นการผลิต นี่คือขั้นตอนการผลิตบอร์ด SUP
+  ในโรงงานของเรา
 steps:
   - step: '01'
     title: ตัด
@@ -13,33 +15,33 @@ steps:
   - step: '02'
     title: เชื่อม
     description: การเชื่อม RF และลมร้อนสร้างรอยต่อที่แข็งแรงและกันอากาศ
-    duration: 2— hours per boat kit
+    duration: 2— ชั่วโมงต่อชุดเรือ
   - step: '03'
     title: ประกอบ
     description: ช่างเทคนิคมีฝีมือติดตั้งวาล์ว อุปกรณ์เสริม และฟิตติ้ง
-    duration: 1— days per boat
+    duration: 1— วันต่อลำ
   - step: '04'
     title: ทดสอบ
     description: สินค้าทุกชิ้นผ่านการทดสอบแรงดัน การลอยตัว และการตรวจสอบ
-    duration: 1— days per board
+    duration: 1— วันต่อบอร์ด
   - step: '05'
     title: บรรจุ
     description: สินค้าถูกบรรจุอย่างระมัดระวังและเตรียมพร้อมจัดส่ง
     duration: 1— days
   - step: '06'
-    title: Final Assembly & Fitting
-    description: Valves, D-rings, handles, fin boxes, and deck pads are installed on the assembly line. Each board follows a 100-point assembly checklist with mandatory sign-off at each stage.
+    title: การประกอบขั้นสุดท้ายและการติดตั้งชิ้นส่วน
+    description: วาล์ว ห่วงรูปตัว D มือจับ กล่องครีบ และแผ่นรองดาดฟ้าติดตั้งบนสายการประกอบ บอร์ดแต่ละลำดำเนินการตามรายการตรวจสอบการประกอบ 100 จุด พร้อมการลงนามรับรองในทุกขั้นตอน
     duration: 1— days
   - step: '07'
-    title: Quality Testing & Inspection
-    description: 'Every completed board undergoes mandatory quality gate: chamber air-retention test, hardware function check, fastener torque verification, and cosmetic inspection. Custom and prototype builds also receive in-water trials covering stability and handling.'
+    title: การทดสอบคุณภาพและการตรวจสอบ
+    description: บอร์ดที่ผลิตเสร็จทุกลำต้องผ่านด่านควบคุมคุณภาพภาคบังคับ ได้แก่ การทดสอบการกักเก็บอากาศในห้องลม การตรวจสอบการทำงานของอุปกรณ์ การตรวจสอบแรงบิดของสลักเกลียว และการตรวจสอบความสวยงามของผิวงาน สำหรับบอร์ดสั่งทำพิเศษและต้นแบบจะได้รับการทดสอบในน้ำจริงครอบคลุมความเสถียรและการควบคุม
     duration: 1— days
   - step: '08'
-    title: Packing & Shipping
-    description: Boards are deflated, folded per procedure, packed in heavy-duty woven bags or retail boxes, and loaded for shipment. Each package is labelled with model, serial number, and destination. We coordinate with freight forwarders for FCL and LCL container shipments worldwide.
-    duration: 1 day
+    title: การบรรจุหีบห่อและการจัดส่ง
+    description: บอร์ดจะถูกลมออก พับตามขั้นตอนที่กำหนด บรรจุในกระสอบทอชนิดหนาหรือกล่องสำหรับค้าปลีก และเตรียมพร้อมสำหรับการจัดส่ง แพ็กเกจแต่ละชิ้นมีป้ายระบุรุ่น หมายเลขซีเรียล และปลายทาง เราประสานงานกับผู้ให้บริการขนส่งสินค้า (freight forwarders) สำหรับการจัดส่งตู้คอนเทนเนอร์แบบ FCL และ LCL ทั่วโลก
+    duration: 1 วัน
 cta:
-  title: See our equipment and machinery
-  desc: Explore the industrial-grade equipment behind every afarer SUP board.
-  label: View equipment →
+  title: ดูอุปกรณ์และเครื่องจักรของเรา
+  desc: สำรวจอุปกรณ์ระดับอุตสาหกรรมที่อยู่เบื้องหลังบอร์ด SUP ทุกใบของ afarer
+  label: ดูอุปกรณ์ →
   link: /factory/equipment

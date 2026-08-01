@@ -1,71 +1,66 @@
 meta:
-  title: 'SUP Rental Fleet Solutions | {SITE}'
-  description: 'High-rotation SUP boards engineered for daily rental use. UV-resistant PVC, reinforced seams, quick-dry materials. Scale your rental business with Afarer.'
-
+  title: SUPレンタルフリートソリューション | {SITE}
+  description: 日々のレンタル使用に設計された高回転SUPボード。UV耐性PVC、補強された縫い目、速乾性素材。Afarerとともにレンタルビジネスを拡大しましょう。
 hero:
-  tagline: Rental Operators
-  title: 'Scale Your Rental Business<br />With Confidence'
-  subtitle: 'High-rotation SUP boards engineered for daily rental use, 365 days a year. Your revenue never takes a day off.'
+  tagline: レンタル事業者
+  title: 賃貸事業を自信を持って<br />スケールアップ
+  subtitle: 年間365日、毎日のレンタル利用に耐えるハイローテーションSUPボード。収益は一日も休みません。
   image:
     src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
-    alt: Busy rental kiosk with SUP boards ready for guests
-
+    alt: ゲスト向けにSUPボードを準備した賑わうレンタルキオスク
 features:
-  title: Built for the Rental Grind
-  subtitle: 'Every board is engineered for 500+ rental cycles with minimal maintenance.'
+  title: レンタル業界向けに構築
+  subtitle: 全ボードはメンテナンスを最小限に抑え、500回以上のレンタルサイクルに耐えるよう設計されています。
   items:
-    - title: '500+ Rental Cycles'
-      description: 'Tested to survive daily use in saltwater, sun, and sand.'
-      icon: 'tabler:shield-check'
-    - title: 'UV-Resistant Fabric'
-      description: 'No fading or degradation after 1 year of outdoor storage.'
-      icon: 'tabler:sun'
-    - title: 'Reinforced Seams'
-      description: '3x stronger than standard inflatable board construction.'
-      icon: 'tabler:layers-intersect'
-    - title: 'Quick-Dry Materials'
-      description: 'Boards ready for next rental in under 30 minutes.'
-      icon: 'tabler:droplet'
-    - title: 'Stackable Storage'
-      description: 'Space-saving design — store 40% more boards in the same area.'
-      icon: 'tabler:stack'
-    - title: 'Color-Coded Sizes'
-      description: 'Staff grabs the right board instantly with color-coded sizing.'
-      icon: 'tabler:color-swatch'
-
+    - title: 500回以上のレンタルサイクル
+      description: 塩水、日光、砂での日常使用に耐える試験済み。
+      icon: tabler:shield-check
+    - title: UV耐性生地
+      description: 屋外保管1年後でも変色・劣化なし。
+      icon: tabler:sun
+    - title: 補強されたシーム
+      description: 標準的なインフレータブルボード構造の3倍の強度。
+      icon: tabler:layers-intersect
+    - title: 速乾素材
+      description: ボードは30分以内に次のレンタルに備えて準備完了。
+      icon: tabler:droplet
+    - title: スタッカブル収納
+      description: 省スペース設計 — 同じ面積で40%多くのボードを保管可能。
+      icon: tabler:stack
+    - title: カラーコードサイズ
+      description: スタッフはカラーコードされたサイズ表示ですぐに正しいボードを手に取れます。
+      icon: tabler:color-swatch
 stats:
-  title: Operations Metrics
+  title: オペレーション指標
   stats:
-    - title: Board Turnover
-      amount: '< 5 min'
-    - title: Annual Maintenance
-      amount: '~15 min/board'
-    - title: Parts Dispatch
-      amount: '48h'
-    - title: Defect Rate
-      amount: '< 0.5%'
-
+    - title: ボード回転率
+      amount: 5分未満
+    - title: 年間メンテナンス
+      amount: 約15分／ボード
+    - title: パーツ発送
+      amount: 48h
+    - title: 欠陥率
+      amount: < 0.5%
 fleet_guide:
-  title: Fleet Sizing Guide
-  subtitle: 'Estimate the fleet size and revenue potential for your rental operation.'
+  title: フリートサイズガイド
+  subtitle: レンタル事業のフリート規模と収益ポテンシャルを概算。
   tiers:
-    - label: Small Kiosk
-      boards: '15-20'
-      revenue: '$XX,XXX/yr'
-    - label: Mid-Size Operation
-      boards: '30-50'
-      revenue: '$XX,XXX/yr'
-    - label: Large Beach Rental
-      boards: '50-100'
-      revenue: '$XXX,XXX/yr'
-
+    - label: 小型キオスク
+      boards: 15～20
+      revenue: 年間$XX,XXX
+    - label: 中規模事業
+      boards: 30〜50
+      revenue: 年間$XX,XXX
+    - label: 大規模ビーチレンタル
+      boards: 50-100
+      revenue: $XXX,XXX/年
 cta:
-  title: 'Ready to scale your rental business?'
-  subtitle: 'Get rental pricing or compare board models for your operation.'
+  title: レンタル事業のスケールアップは準備はいかがですか？
+  subtitle: レンタル価格の取得、または事業用のボードモデル比較。
   actions:
-    - text: 'Get Rental Pricing'
-      href: '/contact?package=rental'
-      variant: 'primary'
-    - text: 'Compare Board Models'
-      href: '/compare'
-      variant: 'secondary'
+    - text: レンタル価格を取得
+      href: /contact?package=rental
+      variant: primary
+    - text: ボードモデルを比較する
+      href: /compare
+      variant: secondary
