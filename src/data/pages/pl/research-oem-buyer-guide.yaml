@@ -6,105 +6,83 @@ hero:
   tagline: Pozyskiwanie
   title: Przewodnik dla nabywców OEM — Pozyskiwanie nadmuchiwanego sprzętu wodnego z Azji
   subtitle: 12 minut czytania
-content_html: >
-  <h2>1. Wstępna kwalifikacja: Na co zwracać uwagę w fabryce</h2>
-
+content_html: |-
+  <h2>1. Wstępna kwalifikacja: na co zwracać uwagę przy wyborze fabryki</h2>
 
   <h3>Certyfikaty zgodności</h3>
-
   <ul>
     <li><strong>ISO 9001:2015</strong> – System zarządzania jakością</li>
-    <li><strong>Certyfikacja CE</strong> – Weryfikacja numeru Organu Powiadomionego</li>
+    <li><strong>Certyfikacja CE</strong> – Zweryfikuj numer jednostki notyfikowanej</li>
     <li><strong>BSCI / SMETA / SEDEX</strong> – Audyty zgodności społecznej</li>
     <li><strong>REACH / RoHS</strong> – Deklaracje zgodności materiałowej</li>
   </ul>
 
-
   <h3>Możliwości produkcyjne</h3>
-
   <ul>
-    <li>Tkanie rdzenia metodą drop-stitch na miejscu vs. outsourcing</li>
-    <li>Linia powłok PVC / laminacji</li>
-    <li>Urządzenia do spawania RF i spawania gorącym powietrzem</li>
-    <li>Produkcja form we własnym miejscu (obróbka CNC)</li>
-    <li>Laboratorium testowe (testy ciśnieniowe, starzenie UV, testy rozciągające)</li>
+    <li>Tkanie rdzenia drop-stitch na miejscu lub na zewnątrz</li>
+    <li>Linia powlekania / laminowania PVC</li>
+    <li>Sprzęt do zgrzewania RF i zgrzewania gorącym powietrzem</li>
+    <li>Produkcja form na miejscu (obróbka CNC)</li>
+    <li>Laboratorium badawcze (badania ciśnienia, starzenie UV, badania wytrzymałości na rozciąganie)</li>
   </ul>
 
-
   <h3>Weryfikacja doświadczenia</h3>
-
   <ul>
-    <li>Lata w produkcji nadmuchiwanych jednostek wodnych (minimum 5 lat)</li>
+    <li>Lata doświadczenia w produkcji nadmuchiwanych jednostek pływających (minimum 5 lat)</li>
     <li>Liczba inżynierów w zespole</li>
-    <li>Istniejący klienci OEM/ODM (referencje żądań)</li>
+    <li>Istniejący klienci OEM/ODM (poproś o referencje)</li>
     <li>Kierunki eksportu – czy już wysyłają na Twój rynek docelowy?</li>
   </ul>
 
-
   <h2>2. Protokoły kontroli jakości</h2>
-
-  <p>Kontrola jakości materiału wpadającego: wytrzymałość na rozciąganie (ASTM D751 lub ISO 1421), odporność na rozdarcia (ASTM D2261 lub ISO 4674), wytrzymałość na przyczepność, sprawdzanie punktów starzenia UV.</p>
-
-  <p>Kontrola jakości w trakcie procesu: monitorowanie wytrzymałości szwu co 50 jednostek, weryfikacja momentu obrotowego zaworu, sprawdzanie gęstości nici w trakcie ściegu drop-stitch, kontrole wymiarów względem rysunków CAD.</p>
-
-  <p>Inspekcja końcowa: test utrzymania 100% napompowania (24 godziny, maksymalnie spadek o 5%), inspekcja wizualna, test funkcji zaworu, losowe testy próbkowe (AQL 2.5 lub 4.0 zgodnie z ISO 2859).</p>
-
+  <p>Kontrola jakości przy dostawie materiałów: wytrzymałość na rozciąganie (ASTM D751 lub ISO 1421), odporność na rozdarcie (ASTM D2261 lub ISO 4674), siła przyczepności, punktowe kontrole starzenia UV.</p>
+  <p>Kontrola jakości w trakcie produkcji: monitorowanie wytrzymałości szwów co 50 sztuk, weryfikacja momentu dokręcenia zaworów, kontrole gęstości nici drop-stitch, kontrole wymiarowe względem rysunków CAD.</p>
+  <p>Inspekcja końcowa: test utrzymania ciśnienia w 100% (24 godziny, maks. spadek 5%), inspekcja wizualna, test działania zaworów, losowe badania próbek (AQL 2.5 lub 4.0 wg ISO 2859).</p>
 
   <h2>3. Lista kontrolna dokumentacji zgodności</h2>
-
   <ul>
     <li>Deklaracja zgodności (DoC) odnosząca się do właściwej dyrektywy UE</li>
-    <li>Certyfikat CE od organu powiadomionego</li>
-    <li>Raport z testu z akredytowanego laboratorium</li>
-    <li>Karty bezpieczeństwa materiałów (MSDS)</li>
-    <li>Deklaracja zgodności REACH</li>
-    <li>Wykaz materiałów z możliwością śledzenia dostawcy</li>
-    <li>Raport z inspekcji fabrycznej</li>
+    <li>Certyfikat CE od jednostki notyfikowanej</li>
+    <li>Raport z badań z akredytowanego laboratorium</li>
+    <li>Karty charakterystyki materiałów (MSDS)</li>
+    <li>Deklaracja zgodności z REACH</li>
+    <li>Specyfikacja materiałowa z identyfikowalnością dostawców</li>
+    <li>Raport z inspekcji fabryki</li>
   </ul>
 
-
   <h2>4. Negocjacje MOQ</h2>
-
   <table class="w-full text-sm border-collapse">
     <thead>
-      <TR Class="BG-Gray-100">
-        <klasa="p-3 czcionka po lewej stronie tekstu-półpogrubiona tekst-gray-900 ramka">Typ produktu</th>
-        <klasa="p-3 tekst-left font-półgruby tekst-gray-900 border">Standardowy MOQ</th>
-        <klasa="p-3 czcionka po lewej stronie tekstu-półpogrubiona notka-szara 900 ramka">Zasięg negocjowalny</th>
+      <tr class="bg-gray-100">
+        <th class="p-3 text-left font-semibold text-gray-900 border">Typ produktu</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">Standardowe MOQ</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">Zakres negocjowalny</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td class="p-3 border">SUP Boards</td><td class="p-3 frame">50 – 100 jednostek</td><td class="p-3 border">5 – 10 jednostek (próbny)</td></tr>
-      <tr><td class="p-3 border">Kayaks</td><td class="p-3 border">50 – 100 jednostek</td><td class="p-3 border">5 – 10 jednostek (próbny)</td></tr>
-      <tr><td class="p-3 border">Nadmuchiwane łodzie</td><td klasa="p-3 border">50 – 100 jednostek</td><td klasa="p-3 border">2 – 5 jednostek (próbny)</td></tr>
-      <tr><td class="p-3 border">RIB Boats</td><td class="p-3 border">20 – 50 units</td><td class="p-3 border">2 – 5 jednostek (próbny)</td></tr>
-      <tr><td class="p-3 border">Safety / Akcesoria</td><td class="p-3 border">200 – 500 sztuk</td><td class="p-3 border">50 – 100 jednostek (próbny)</td></tr>
+      <tr><td class="p-3 border">Deski SUP</td><td class="p-3 border">50 – 100 szt.</td><td class="p-3 border">5 – 10 szt. (próba)</td></tr>
+      <tr><td class="p-3 border">Kajaki</td><td class="p-3 border">50 – 100 szt.</td><td class="p-3 border">5 – 10 szt. (próba)</td></tr>
+      <tr><td class="p-3 border">Łodzie nadmuchiwane</td><td class="p-3 border">50 – 100 szt.</td><td class="p-3 border">2 – 5 szt. (próba)</td></tr>
+      <tr><td class="p-3 border">Łodzie RIB</td><td class="p-3 border">20 – 50 szt.</td><td class="p-3 border">2 – 5 szt. (próba)</td></tr>
+      <tr><td class="p-3 border">Sprzęt bezpieczeństwa / akcesoria</td><td class="p-3 border">200 – 500 szt.</td><td class="p-3 border">50 – 100 szt. (próba)</td></tr>
     </tbody>
   </table>
 
-
-  <h2>5. Logistyka i żegluga</h2>
-
-  <p>Typowe inkoterminy: <strong>FOB</strong> (Fabryka dostarcza do portu odlotu – najczęstsze), <strong>EXW</strong> (Kupujący organizuje całą wysyłkę od drzwi fabryki), <strong>CIF</strong> (Fabryka płaci fracht i ubezpieczenie do portu docelowego).</p>
-
-  <p>Produkty nadmuchiwane to produkty o niskiej masie i dużej objętości – często decyduje o kosztach wysyłki waga objętościowa (DIM). Poproś o pakowanie próżniowe w celu zmniejszenia objętości o 50–60%. Transport morski z Chin do UE: 25–35 dni; do zachodniego wybrzeża USA: 15–20 dni.</p>
-
+  <h2>5. Logistyka i wysyłka</h2>
+  <p>Typowe Incotermsy: <strong>FOB</strong> (fabryka dostarcza do portu wyjścia – najczęstsze), <strong>EXW</strong> (kupujący organizuje całą wysyłkę od drzwi fabryki), <strong>CIF</strong> (fabryka pokrywa fracht i ubezpieczenie do portu przeznaczenia).</p>
+  <p>Produkty nadmuchiwane mają niską wagę i dużą objętość – waga objętościowa (DIM) często decyduje o koszcie wysyłki. Poproś o pakowanie próżniowe, aby zmniejszyć objętość o 50–60%. Fracht morski z Chin do UE: 25–35 dni; na zachodnie wybrzeże USA: 15–20 dni.</p>
 
   <h2>6. Typowe pułapki</h2>
-
   <ul>
-    <li><strong>Brak audytu fabrycznego:</strong> Zawsze wykonuj lub zlecaj audyt zewnętrznej (QIMA, SGS, Bureau Veritas)</li>
-    <li><strong>Tylko specyfikacje ustne:</strong> Szczegółowa karta specyfikacji technicznej podpisana przez obie strony</li>
-    <li><strong>Pomijanie zatwierdzenia próbki:</strong> pisemne zatwierdzenie próbek przed produkcją masową</li>
-    <li><strong>Brak kontroli jakości podczas produkcji:</strong> Inspekcja przez stronę trzecią podczas produkcji (DUPRO) i przed wysyłką (PSI)</li>
-    <li><strong>Ignorowanie zgodności:</strong> Zweryfikować certyfikat CE/UKCA przed wyprodukowaniem</li>
+    <li><strong>Brak audytu fabryki:</strong> Zawsze przeprowadzaj lub zlecaj audyt strony trzeciej (QIMA, SGS, Bureau Veritas)</li>
+    <li><strong>Tylko ustne specyfikacje:</strong> Szczegółowa karta specyfikacji technicznej podpisana przez obie strony</li>
+    <li><strong>Pomijanie zatwierdzenia próbek:</strong> Pisemne zatwierdzenie próbek przed produkcją masową</li>
+    <li><strong>Brak kontroli jakości podczas produkcji:</strong> Inspekcja strony trzeciej w trakcie produkcji (DUPRO) i przed wysyłką (PSI)</li>
+    <li><strong>Ignorowanie zgodności:</strong> Zweryfikuj certyfikację CE/UKCA przed rozpoczęciem produkcji</li>
   </ul>
 
-
   <h2>7. Dlaczego Afarer</h2>
-
-  <p>Afarer produkuje nadmuchiwane jednostki wodne OEM/ODM od 2012 roku. Dzięki zakładowi o powierzchni 12 000 m² certyfikowanemu ISO 9001, 25 inżynierom oraz certyfikacji CE we wszystkich liniach produktowych, spełniamy wszystkie kryteria zawarte w tym przewodniku. Oferujemy próbne MOQ dla nowych
-  partnerów oraz pełne pakiety dokumentacji zgodności.</p>
+  <p>Afarer produkuje nadmuchiwane jednostki pływające OEM/ODM od 2012 roku. Dysponując certyfikowanym zakładem ISO 9001 o powierzchni 12,000 m&sup2;, ponad 25 inżynierami i certyfikacją CE we wszystkich liniach produktowych, spełniamy każde kryterium z tego przewodnika. Oferujemy próbne MOQ dla nowych partnerów oraz pełne pakiety dokumentacji zgodności.</p>
 cta:
   title: Gotowy, aby rozpocząć pozyskiwanie?
   subtitle: Skontaktuj się z naszym zespołem ds. OEM, aby omówić wymagania Twojego projektu.

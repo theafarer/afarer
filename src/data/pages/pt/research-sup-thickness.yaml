@@ -6,80 +6,63 @@ hero:
   tagline: Engenharia
   title: Como Escolher a Espessura do SUP — Análise de Engenharia
   subtitle: Leitura de 6 min
-content_html: >
+content_html: |-
   <h2>As Três Espessuras Padrão</h2>
 
-
-  <h3>4" (10 cm) – Turnê e Performance</h3>
-
+  <h3>4" (10 cm) – Touring e Desempenho</h3>
   <ul>
-    <li>Maior rigidez – menos flexão sob carga</li>
-    <li>Mais leve – menos material, menor volume de ar</li>
-    <li>Excelente rastreamento – redução do balanço lateral</li>
-    <li>Mais rápido – redução do arrasto, deslize mais fácil</li>
-    <li>Ideal para: Turismo, corridas, remo físico, remadores experientes</li>
+    <li>Rigidez máxima – menos flexão sob carga</li>
+    <li>Mais leve – menos material, menos volume de ar</li>
+    <li>Deriva excelente – menor oscilação lateral</li>
+    <li>Mais rápida – menor resistência, deslize mais fácil</li>
+    <li>Ideal para: Touring, corridas, remo de fitness, remadores experientes</li>
   </ul>
 
-
-  <h3>5" (12,7 cm) – Geral</h3>
-
+  <h3>5" (12.7 cm) – Polivalente</h3>
   <ul>
-    <li>Boa rigidez – relação equilíbrio flexão-rigidez</li>
-    <li>Peso moderado – uso padrão de material</li>
-    <li>Boa estabilidade secundária primária</li>
-    <li>Melhor para: Remo recreativo, iniciantes, uso casual de lagos e rios</li>
+    <li>Boa rigidez – relação flexão/rigidez equilibrada</li>
+    <li>Peso moderado – utilização padrão de material</li>
+    <li>Boa estabilidade primária + secundária</li>
+    <li>Ideal para: Remo recreativo, iniciantes, uso casual em lagos e rios</li>
   </ul>
 
-
-  <h3>6" (15,2 cm) – Estabilidade &amp; Yoga</h3>
-
+  <h3>6" (15.2 cm) – Estabilidade e Yoga</h3>
   <ul>
     <li>Maior estabilidade primária – flutuabilidade massiva</li>
-    <li>Mais pesado – mais material de PVC, maior volume de ar</li>
-    <li>Mais lento – mais arrasto, mais difícil de manter o deslize</li>
-    <li>Melhor para: Yoga/fitness, remadores pesados (100 kg), condições muito agitadas</li>
+    <li>Mais pesada – mais material de PVC, maior volume de ar</li>
+    <li>Mais lenta – mais resistência, mais difícil manter o deslize</li>
+    <li>Ideal para: Yoga/fitness, remadores pesados (100+ kg), condições muito agitadas</li>
   </ul>
 
-
   <h2>Análise de Engenharia</h2>
+  <p>A rigidez de um SUP insuflável é determinada pela pressão interna do ar e pelo momento de inércia da secção transversal da prancha. A 20 PSI, uma prancha de 4" apresenta aproximadamente 30% menos deflexão sob carga do que uma prancha de 6" com a mesma largura e comprimento. A estabilidade primária vem da largura da linha de água e da flutuabilidade; a estabilidade secundária é influenciada pela forma dos rails e pela largura da prancha.</p>
 
-  <p>A rigidez de um SUP inflável é determinada pela pressão interna do ar e pelo momento de inércia da seção transversal da prancha. Com 20 PSI, uma placa de 4" apresenta aproximadamente 30% menos deflexão sob carga do que uma placa de 6" com a mesma largura e comprimento. A estabilidade primária
-  vem da largura da linha d'água e da flutuabilidade; A estabilidade secundária é influenciada pelo formato dos trilhos e pela largura da tábua.</p>
-
-
-  <h2>Espessura pelo peso do remador</h2>
-
+  <h2>Espessura por Peso do Remador</h2>
   <table class="w-full text-sm border-collapse">
     <thead>
       <tr class="bg-gray-100">
-        <ª classe="p-3 texto-fonte esquerda-texto seminegrito-borda cinza-900">Peso do Remador</th>
-        <ª classe="p-3 texto-fonte esquerda-texto seminegrito-cinza-borda 900">Espessura recomendada</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">Peso do Remador</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">Espessura Recomendada</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td class="p-3 borda">Menos de 65 kg (143 lbs)</td><td class="p-3 borda">4"</td></tr>
-      <tr><classe td="borda p-3">65 – 90 kg (143 – 198 lbs)</td><classe td="borda p-3">5"</td></tr>
-      <tr><classe td="borda p-3">90 – 115 kg (198 – 253 lbs)</td><classe td="borda p-3">5" ou 6"</td></tr>
-      <tr><classe td="borda p-3">Mais de 115 kg (253 lbs)</td><classe td="borda p-3">6"</td></tr>
+      <tr><td class="p-3 border">Abaixo de 65 kg (143 lbs)</td><td class="p-3 border">4"</td></tr>
+      <tr><td class="p-3 border">65 – 90 kg (143 – 198 lbs)</td><td class="p-3 border">5"</td></tr>
+      <tr><td class="p-3 border">90 – 115 kg (198 – 253 lbs)</td><td class="p-3 border">5" ou 6"</td></tr>
+      <tr><td class="p-3 border">Acima de 115 kg (253 lbs)</td><td class="p-3 border">6"</td></tr>
     </tbody>
   </table>
 
+  <h2>Compromisso entre Espessura e PSI</h2>
+  <p>Uma ideia errada comum é que um PSI mais elevado pode compensar uma espessura excessiva. A 25 PSI, uma prancha de 6" apresenta mais flexão do que uma prancha de 4" a 15 PSI, porque o momento de inércia geométrico domina a equação de rigidez. Para remadores orientados para o desempenho, uma prancha mais fina a pressão mais baixa supera uma prancha mais espessa a pressão mais elevada.</p>
 
-  <h2>Compromisso entre espessura e PSI</h2>
-
-  <p>Um equívoco comum é pensar que PSI mais alto pode compensar a espessura excessiva. A 25 PSI, uma placa de 6" apresenta mais flexão do que uma de 4" a 15 PSI porque o momento geométrico de inércia domina a equação da rigidez. Para remadores orientados para desempenho, uma prancha mais fina em
-  menor pressão supera uma prancha mais grossa em pressão mais alta.</p>
-
-
-  <h2>Formação de Afarer</h2>
-
+  <h2>Linha da Afarer</h2>
   <ul>
-    <li><strong>Pranchas de 4":</strong> Série Cheetah Touring – SUPs de turismo de 12' x 30" x 4" para fitness e remo de longa</li> distância
-    <li><strong>Tábuas de 5":</strong> Série Cheetah All-Round – 10'6" x 32" x 5" para uso recreativo</li>
-    <li><strong>Pranchas de 6":</strong> Série Cheetah Ultra-Stable – 10' x 34" x 6" para yoga, grandes remadores e plataformas fotográficas</li>
+    <li><strong>Pranchas de 4":</strong> Série Cheetah Touring – SUPs de touring 12' x 30" x 4" para fitness e remo de distância</li>
+    <li><strong>Pranchas de 5":</strong> Série Cheetah All-Round – 10'6" x 32" x 5" para uso recreativo</li>
+    <li><strong>Pranchas de 6":</strong> Série Cheetah Ultra-Stable – 10' x 34" x 6" para yoga, remadores de grande porte e plataformas de fotografia</li>
   </ul>
-
-  <p>Todas as placas utilizam 1.680 núcleos de ponto de queda DTEX com pressão nominal de 20 PSI e laminados de PVC de 1,2 mm.</p>
+  <p>Todas as pranchas utilizam núcleos drop-stitch de 1,680 DTEX com pressão nominal de 20 PSI e laminados de PVC de 1.2 mm.</p>
 cta:
   title: Não tem certeza de qual espessura é certa para você?
   subtitle: Confira nossa linha de SUP ou consulte nossa equipe de dimensionamento.

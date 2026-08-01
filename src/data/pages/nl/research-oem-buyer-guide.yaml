@@ -6,105 +6,83 @@ hero:
   tagline: Inkoop
   title: OEM Kopersgids — Het inkopen van opblaasbare vaartuigen uit Azië
   subtitle: 12 minuten lezen
-content_html: >
-  <h2>1. Pre-kwalificatie: Waar je op moet letten in een fabriek</h2>
+content_html: |-
+  <h2>1. Voorafgaande kwalificatie: waar u op moet letten in een fabriek</h2>
 
-
-  <h3>Compliance-certificaten</h3>
-
+  <h3>Conformiteitscertificaten</h3>
   <ul>
     <li><strong>ISO 9001:2015</strong> – Kwaliteitsmanagementsysteem</li>
-    <li><strong>CE-certificering</strong> – Controleer het nummer van het Notified Body</li>
-    <li><strong>BSCI / SMETA / SEDEX</strong> – Social compliance audits</li>
-    <li><strong>REACH / RoHS</strong> – Materiële nalevingsverklaringen</li>
+    <li><strong>CE-certificering</strong> – Controleer het nummer van de aangemelde instantie</li>
+    <li><strong>BSCI / SMETA / SEDEX</strong> – Audits voor sociale conformiteit</li>
+    <li><strong>REACH / RoHS</strong> – Materiaalconformiteitsverklaringen</li>
   </ul>
 
-
-  <h3>Productiecapaciteiten</h3>
-
+  <h3>Productiemogelijkheden</h3>
   <ul>
     <li>Drop-stitch kernweven in eigen huis versus uitbesteed</li>
-    <li>PVC-coating / lamineerlijn</li>
-    <li>RF-lassen en heteluchtlasapparatuur</li>
-    <li>In-house matrijzen maken (CNC-bewerking)</li>
-    <li>Testlaboratorium (druktesten, UV-veroudering, trektesten)</li>
+    <li>PVC-coating / laminatielijn</li>
+    <li>Apparatuur voor RF-lassen en hete-lucht lassen</li>
+    <li>Eigen matrijzenbouw (CNC-bewerking)</li>
+    <li>Testlaboratorium (druktesten, UV-veroudering, trekproeven)</li>
   </ul>
 
-
-  <h3>Ervaringsverificatie</h3>
-
+  <h3>Verificatie van ervaring</h3>
   <ul>
-    <li>Jaren in de productie van opblaasbare watervaartuigen (minimaal 5 jaar)</li>
-    <li>Aantal medewerkers</li>
-    <li>Bestaande OEM/ODM-clients (referenties aanvragen)</li>
-    <li>Exportbestemmingen – worden ze al naar je doelmarkt verzonden?</li>
+    <li>Jaren ervaring in de fabricage van opblaasbare vaartuigen (minimaal 5+ jaar)</li>
+    <li>Aantal ingenieurs in dienst</li>
+    <li>Bestaande OEM/ODM-klanten (vraag referenties op)</li>
+    <li>Exportbestemmingen – leveren ze al aan uw doelmarkt?</li>
   </ul>
 
+  <h2>2. Protocollen voor kwaliteitscontrole</h2>
+  <p>Inkomende materiaalkwaliteitscontrole: treksterkte (ASTM D751 of ISO 1421), scheurweerstand (ASTM D2261 of ISO 4674), hechtsterkte, steekproefsgewijze UV-verouderingscontroles.</p>
+  <p>Kwaliteitscontrole tijdens productie: naadsterktebewaking om de 50 stuks, koppelverificatie van kleppen, controles van de draaddichtheid van drop stitch, maatcontroles aan de hand van CAD-tekeningen.</p>
+  <p>Eindinspectie: 100% opblaasbare druktest (24 uur, maximaal 5% drukverlies), visuele inspectie, functionele kleppentest, willekeurige steekproeftests (AQL 2,5 of 4,0 volgens ISO 2859).</p>
 
-  <h2>2. Kwaliteitscontroleprotocollen</h2>
-
-  <p>Inkomende materiaalcontrole: treksterkte (ASTM D751 of ISO 1421), scheurbestendigheid (ASTM D2261 of ISO 4674), hechtingssterkte, UV-verouderingscontroles.</p>
-
-  <p>In-process kwaliteitscontrole: naadsterktemonitoring elke 50 eenheden, klepkoppelverificatie, drop-stitch draaddichtheidscontroles, afmetingen met CAD-tekeningen.</p>
-
-  <p>Eindinspectie: 100% inflatiehoudtest (24 uur, maximaal 5% daling), visuele inspectie, klepfunctietest, willekeurige steekproef (AQL 2,5 of 4,0 volgens ISO 2859).</p>
-
-
-  <h2>3. Checklist voor naleving van documentatie</h2>
-
+  <h2>3. Checklist conformiteitsdocumentatie</h2>
   <ul>
-    <li>Conformiteitsverklaring (DoC) met verwijzing naar de juiste EU-richtlijn</li>
-    <li>CE-certificaat van het genoteerde orgaan</li>
-    <li>Testrapport van geaccrediteerd laboratorium</li>
-    <li>Materiaalveiligheidsgegevensbladen (MSDS)</li>
-    <li>REACH-nalevingsverklaring</li>
-    <li>Stuklijst van materialen met leverancierstraceerbaarheid</li>
+    <li>Conformiteitsverklaring (DoC) die verwijst naar de juiste EU-richtlijn</li>
+    <li>CE-certificaat van een aangemelde instantie</li>
+    <li>Testrapport van een geaccrediteerd laboratorium</li>
+    <li>Veiligheidsinformatiebladen (MSDS)</li>
+    <li>REACH-conformiteitsverklaring</li>
+    <li>Stuklijst met traceerbaarheid van leveranciers</li>
     <li>Fabrieksinspectierapport</li>
   </ul>
 
-
   <h2>4. MOQ-onderhandeling</h2>
-
   <table class="w-full text-sm border-collapse">
     <thead>
-      < klasse="bg-gray-100">
-        <de klasse="p-3 tekst-links lettertype-semibold tekst-grijs-900 rand">Producttype</th>
-        <e klasse="p-3 tekst-links lettertype-semibold text-grijs-900 rand">Standaard MOQ</th>
-        <e klasse="p-3 tekst-links lettertype-semivet tekst-grijs-900 rand">Onderhandelbaar bereik</th>
+      <tr class="bg-gray-100">
+        <th class="p-3 text-left font-semibold text-gray-900 border">Producttype</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">Standaard MOQ</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">Onderhandelingsruimte</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td klasse="p-3 rand">SUP Boards</td><td klasse="p-3 rand">50 – 100 studiepunten</td>< td klas="p-3 rand">5 – 10 eenheden (proef)</td></tr>
-      <tr><td-klasse="p-3 grens">Kajaks</td><td-klasse="p-3 grens">50 – 100 eenheden</td><td-klasse="p-3 grens">5 – 10 eenheden (proef)</td></tr>
-      <tr><td-klasse="p-3 border">Inflatable Boats</td><td-klasse="p-3 border">50 – 100 eenheden</td><td-klasse="p-3 border">2 – 5 units (proef)</td></tr>
-      <tr><td-klasse="p-3 grens">RIB Boten</td><td-klasse="p-3 grens">20 – 50 eenheden</td><td-klasse="p-3 grens">2 – 5 eenheden (proef)</td></tr>
-      <tr><td klasse="p-3 rand">Veiligheid / Accessoires</td><td klasse="p-3 rand">200 – 500 eenheden</td><td klasse="p-3 rand">50 – 100 eenheden (proef)</td></tr>
+      <tr><td class="p-3 border">SUP-planken</td><td class="p-3 border">50 – 100 stuks</td><td class="p-3 border">5 – 10 stuks (proef)</td></tr>
+      <tr><td class="p-3 border">Kajaks</td><td class="p-3 border">50 – 100 stuks</td><td class="p-3 border">5 – 10 stuks (proef)</td></tr>
+      <tr><td class="p-3 border">Opblaasbare boten</td><td class="p-3 border">50 – 100 stuks</td><td class="p-3 border">2 – 5 stuks (proef)</td></tr>
+      <tr><td class="p-3 border">RIB-boten</td><td class="p-3 border">20 – 50 stuks</td><td class="p-3 border">2 – 5 stuks (proef)</td></tr>
+      <tr><td class="p-3 border">Veiligheid / Accessoires</td><td class="p-3 border">200 – 500 stuks</td><td class="p-3 border">50 – 100 stuks (proef)</td></tr>
     </tbody>
   </table>
 
-
-  <h2>5. Logistiek en Scheepvaart</h2>
-
-  <p>Veelvoorkomende INCOTERMS: <strong>FOB</strong> (Factory levert aan vertrekhaven – meest voorkomend), <strong>EXW</strong> (Koper regelt alle verzending vanaf de fabrieksdeur), <strong>CIF</strong> (Factory betaalt vracht en verzekering naar de bestemmingshaven).</p>
-
-  <p>Opblaasbare producten zijn laaggewicht, hebben veel volume – volumetrisch gewicht (DIM) bepaalt vaak de verzendkosten. Vraag om vacuümverpakte verpakkingen om het volume met 50–60% te verminderen. zeevracht van China naar de EU: 25–35 dagen; naar de westkust van de VS: 15–20 dagen.</p>
-
+  <h2>5. Logistiek en verzending</h2>
+  <p>Veelvoorkomende Incoterms: <strong>FOB</strong> (fabriek levert af in de vertrekhaven – meest voorkomend), <strong>EXW</strong> (koper regelt alle verzending vanaf de fabrieksdeur), <strong>CIF</strong> (fabriek betaalt vracht en verzekering tot aan de bestemmingshaven).</p>
+  <p>Opblaasbare producten zijn licht maar volumineus – het volumetrische gewicht (DIM) bepaalt vaak de verzendkosten. Vraag om vacuümverpakking om het volume met 50–60% te verminderen. Zeevracht van China naar de EU: 25–35 dagen; naar de Amerikaanse westkust: 15–20 dagen.</p>
 
   <h2>6. Veelvoorkomende valkuilen</h2>
-
   <ul>
-    <li><strong>Geen fabrieksaudit:</strong> Voer altijd een audit uit of laat een derde partij audits uitvoeren (QIMA, SGS, Bureau Veritas)</li>
-    <li><strong>Alleen mondelinge specificaties:</strong> Gedetailleerde technische specificatieblad, ondertekend door beide partijen</li>
-    <li><strong>Proefgoedkeuring overslaan:</strong> Schriftelijke goedkeuring van monsters vóór bulkproductie</li>
-    <li><strong>Geen kwaliteitscontrole tijdens productie:</strong> Inspectie door derden tijdens productie (DUPRO) en vóór verzending (PSI)</li>
-    <li><strong>Naleving negeren:</strong> CE/UKCA-certificering verifiëren vóór productie</li>
+    <li><strong>Geen fabrieksaudit:</strong> Voer altijd zelf een audit van derden uit of besteed deze uit (QIMA, SGS, Bureau Veritas)</li>
+    <li><strong>Alleen mondelinge specificaties:</strong> Gedetailleerd technisch specificatieblad ondertekend door beide partijen</li>
+    <li><strong>Goedkeuring van monsters overslaan:</strong> Schriftelijke goedkeuring van monsters vóór de massaproductie</li>
+    <li><strong>Geen kwaliteitscontrole tijdens productie:</strong> Inspectie van derden tijdens productie (DUPRO) en vóór verzending (PSI)</li>
+    <li><strong>Conformiteit negeren:</strong> Controleer CE/UKCA-certificering vóór de productie</li>
   </ul>
 
-
-  <h2>7. Waarom Afarer</h2>
-
-  <p>Afarer produceert sinds 2012 OEM/ODM opblaasbare watervaartuigen. Met een 12.000 m² ISO 9001-gecertificeerde faciliteit, 25 ingenieurs en CE-certificering over alle productlijnen, voldoen we aan elk criterium in deze gids. We bieden proef-MOQ's aan voor nieuwe partners en volledige
-  compliance-documentatiepakketten.</p>
+  <h2>7. Waarom afarer</h2>
+  <p>afarer fabriceert al sinds 2012 OEM/ODM opblaasbare vaartuigen. Met een ISO 9001-gecertificeerde faciliteit van 12,000 m&sup2;, meer dan 25 ingenieurs en CE-certificering voor alle productlijnen voldoen we aan elk criterium in deze gids. We bieden proef-MOQ's voor nieuwe partners en volledige documentatiepakketten voor conformiteit.</p>
 cta:
   title: Klaar om te beginnen met sourcen?
   subtitle: Neem contact op met ons OEM-team om uw projectvereisten te bespreken.

@@ -6,81 +6,62 @@ hero:
   tagline: Materiali
   title: PVC vs Hypalon — Confronto Tecnico per Gommoni Gonfiabili
   subtitle: 10 minuti di lettura
-content_html: >
-  <h2>Panoramica del materiale</h2>
+content_html: |-
+  <h2>Panoramica sui materiali</h2>
 
+  <h3>PVC (cloruro di polivinile)</h3>
+  <p>Il PVC è un polimero termoplastico ampiamente utilizzato nella produzione di barche gonfiabili. Per le applicazioni marine viene tipicamente rinforzato con una rete in poliestere (1,100 – 1,680 DTEX) e rivestito su entrambi i lati. Le moderne formulazioni di PVC marino includono stabilizzanti UV e plastificanti per migliorare la flessibilità e la resistenza agli agenti atmosferici.</p>
 
-  <h3>PVC (Cloruro di polivinile)</h3>
+  <h3>Hypalon (CSM – polietilene clorosolfonato)</h3>
+  <p>L'Hypalon è un composto di gomma sintetica (ora prodotto genericamente come CSM dopo che DuPont ha interrotto il marchio Hypalon). È rinomato per l'eccezionale resistenza ai raggi UV e all'ozono, il che lo rende il materiale preferito per le barche gonfiabili professionali e di grado militare che trascorrono lunghi periodi alla luce diretta del sole.</p>
 
-  <p>Il PVC è un polimero termoplastico ampiamente utilizzato nella produzione di imbarcazioni gonfiabili. Per applicazioni marine, viene tipicamente rinforzato con una scrim in poliestere (1.100 – 1.680 DTEX) e rivestito su entrambi i lati. Le formulazioni moderne in PVC marino includono
-  stabilizzatori UV e plastificanti per migliorare la flessibilità e la resistenza agli agenti atmosferici.</p>
-
-
-  <h3>Hypalon (CSM – Polietilene clorosulfonato)</h3>
-
-  <p>Hypalon è un composto di gomma sintetica (ora prodotto genericamente come CSM dopo che DuPont ha interrotto il marchio Hypalon). È rinomata per l'eccezionale resistenza ai raggi UV e all'ozono, rendendola il materiale preferito per le imbarcazioni gonfiabili professionali e militari che
-  trascorrono lunghi periodi alla luce diretta del sole.</p>
-
-
-  <h2>Confronto Affiancato</h2>
-
+  <h2>Confronto affiancato</h2>
   <table class="w-full text-sm border-collapse">
     <thead>
       <tr class="bg-gray-100">
-        <class="p-3 testo-sinistra font-semigrassetto-grassetto-grigio-900 bordo">Proprietà</th>
-        <classe = p-3 testo-sinistra font-semigrassetto testo-grigio-900 bordo">PVC</th>
-        <classe = p-3 testo-sinistra font-semigrassetto testo-grigio-900 bordo">Hypalon (CSM)</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">Proprietà</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">PVC</th>
+        <th class="p-3 text-left font-semibold text-gray-900 border">Hypalon (CSM)</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td class="p-3 border font-medium">UV resistance</td><td class="p-3 border">Good (con stabilizzatori)</td><td class="p-3 border">Eccellente (intrinseco)</td></tr>
-      <tr><td class="p-3 border font-medium">Abrasion resistance</td><td class="p-3 border">Good</td><td class="p-3 border">Molto bene</td></tr>
-      <tr><classe-td="font-media del bordo p-3">Resistenza alla trazione</td><classe td="bordo p-3">3.000 – 5.000 N/5cm</td><classe td="bordo p-3">2.500 – 4.000 N/5cm</td></tr>
-      <tr><td class="p-3 border font-medium">Weight (per m²)</td><td class="p-3 border">850 – 1.200 g</td><td class="p-3 border">1.100 – 1.500 g</td></tr>
-      <tr><td class="p-3 border font-medium">Cold flex (bassa temperatura)</td><td class="p-3 border">-30°C</td><td class="p-3 border">-20°C</td></tr>
-      <tr><td class="p-3 border font-medium">Repairability</td><td class="p-3 border">Facile (saldatura termica o adesivo)</td><td class="bordo p-3">Richiede adesivo speciale CSM</td></tr>
-      <tr><td class="p-3 border font-medium">Metodo di giunta</td><td class="p-3 bordo">Saldatura RF, saldatura ad aria calda</td><td class="bordo p-3">Incollaggio manuale (cemento a contatto)</td></tr>
-      <tr><td class="p-3 border font-medium">Cost (material)</td><td class="p-3 bordo">$8 – $15 / m²</td><td class="p-3 bordo">$20 – $40 / m²</td></tr>
-      <tr><td class="p-3 border font-medium">Durata di vita (sole tropicale)</td><td class="p-3 border">5 – 8 anni</td><td class="p-3 border">10 – 15 anni</td></tr>
+      <tr><td class="p-3 border font-medium">Resistenza ai raggi UV</td><td class="p-3 border">Buona (con stabilizzanti)</td><td class="p-3 border">Eccellente (intrinseca)</td></tr>
+      <tr><td class="p-3 border font-medium">Resistenza all'abrasione</td><td class="p-3 border">Buona</td><td class="p-3 border">Molto buona</td></tr>
+      <tr><td class="p-3 border font-medium">Resistenza alla trazione</td><td class="p-3 border">3,000 – 5,000 N/5cm</td><td class="p-3 border">2,500 – 4,000 N/5cm</td></tr>
+      <tr><td class="p-3 border font-medium">Peso (per m&sup2;)</td><td class="p-3 border">850 – 1,200 g</td><td class="p-3 border">1,100 – 1,500 g</td></tr>
+      <tr><td class="p-3 border font-medium">Flessione a freddo (bassa temperatura)</td><td class="p-3 border">-30&deg;C</td><td class="p-3 border">-20&deg;C</td></tr>
+      <tr><td class="p-3 border font-medium">Riparabilità</td><td class="p-3 border">Facile (saldatura a caldo o adesivo)</td><td class="p-3 border">Richiede un adesivo CSM speciale</td></tr>
+      <tr><td class="p-3 border font-medium">Metodo di giunzione</td><td class="p-3 border">Saldatura RF, saldatura ad aria calda</td><td class="p-3 border">Incollaggio manuale (cemento di contatto)</td></tr>
+      <tr><td class="p-3 border font-medium">Costo (materiale)</td><td class="p-3 border">$8 – $15 / m&sup2;</td><td class="p-3 border">$20 – $40 / m&sup2;</td></tr>
+      <tr><td class="p-3 border font-medium">Durata (sole tropicale)</td><td class="p-3 border">5 – 8 anni</td><td class="p-3 border">10 – 15 anni</td></tr>
     </tbody>
   </table>
 
-
   <h2>Quale dovresti scegliere?</h2>
 
-
   <h3>Scegli il PVC quando:</h3>
-
   <ul>
-    <li>Il bilancio è una preoccupazione primaria</li>
+    <li>Il budget è una preoccupazione primaria</li>
     <li>La barca sarà conservata lontano dalla luce diretta del sole</li>
-    <li>Il peso conta (il PVC è più leggero dal 15 al 25%)</li>
-    <li>Serve flessibilità in condizioni di freddo sotto i -20°C</li>
+    <li>Il peso è importante (il PVC è più leggero del 15 – 25%)</li>
+    <li>Hai bisogno di flessibilità a freddo al di sotto di -20&deg;C</li>
     <li>Vuoi una gamma più ampia di opzioni di colore</li>
   </ul>
 
-
-  <h3>Scegli Hypalon quando:</h3>
-
+  <h3>Scegli l'Hypalon quando:</h3>
   <ul>
-    <li>La barca sarà ormeggiata o conservata alla luce diretta</li> del sole
-    <li>Ti trovi in un ambiente tropicale o ad alta intensità UV</li>
-    <li>La massima durata e durata sono la priorità</li>
+    <li>La barca sarà ormeggiata o conservata alla luce diretta del sole</li>
+    <li>Ti trovi in un ambiente tropicale o ad alto irraggiamento UV</li>
+    <li>La massima durabilità e durata sono la priorità</li>
     <li>Stai equipaggiando flotte professionali o commerciali</li>
-    <li>L'abrasione da sabbia, cemento o moli è una preoccupazione</li>
+    <li>L'abrasione da sabbia, cemento o banchine è una preoccupazione</li>
   </ul>
 
+  <h2>Differenze di produzione</h2>
+  <p>Le barche in PVC sono prodotte mediante saldatura RF (radiofrequenza) o saldatura ad aria calda, che crea un legame molecolare tra gli strati di tessuto rivestito. Questo consente una produzione automatizzata e costante con elevata produttività. Le barche in Hypalon vengono assemblate mediante incollaggio manuale con cemento di contatto. Ogni giunzione viene rullata e pressata manualmente, rendendo la produzione in Hypalon più laboriosa.</p>
 
-  <h2>Differenze nella produzione</h2>
-
-  <p>Le barche in PVC sono prodotte tramite saldatura RF (radiofrequenza) o saldatura ad aria calda, che crea un legame molecolare tra gli strati di tessuto rivestito. Questo consente una produzione automatizzata, costante e ad alta produttività. Le barche Hypalon vengono assemblate incollando a
-  mano con cemento a contatto. Ogni giuntura viene arrotolata e pressata manualmente, rendendo la produzione di Hypalon più laboriosa.</p>
-
-
-  <h2>Raccomandazione per l'Afarer</h2>
-
-  <p>Per la maggior parte degli utenti ricreativi, il PVC moderno di alta qualità con stabilizzatori UV offre il miglior equilibrio tra costo, peso, prestazioni e durata. Afarer utilizza PVC marino DTEX da 1.680 con un rivestimento a tre strati per le sue linee di prodotti consumer e OEM. Per
-  clienti commerciali e governativi che richiedono esposizione prolungata ai raggi UV, offriamo la produzione di Hypalon su richiesta.</p>
+  <h2>Raccomandazione di Afarer</h2>
+  <p>Per la maggior parte degli utenti ricreativi, il moderno PVC di alta qualità con stabilizzanti UV offre il miglior equilibrio tra costo, peso, prestazioni e durata. Afarer utilizza PVC marino da 1,680 DTEX con un rivestimento a tre strati per le sue linee di prodotto consumer e OEM. Per i clienti commerciali e governativi che richiedono un'esposizione prolungata ai raggi UV, offriamo la produzione in Hypalon su richiesta.</p>
 cta:
   title: Hai bisogno di aiuto nella scelta dei materiali?
   subtitle: Il nostro team può fornire consigli su PVC vs Hypalon per la vostra specifica applicazione.
