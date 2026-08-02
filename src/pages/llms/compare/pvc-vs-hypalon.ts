@@ -20,13 +20,13 @@ PVC (polyvinyl chloride) is the primary material used for inflatable SUP board c
 | UV resistance | Good (with UV coating) | Excellent (inherent) |
 | Chemical resistance | Good | Excellent |
 | Abrasion resistance | Moderate | Excellent |
-| Cold flexibility | Stiffens below 0掳C | Flexible to -20掳C |
+| Cold flexibility | Stiffens below 0°C | Flexible to -20°C |
 | Typical lifespan | 8-12 years | 15-20+ years |
 | Color retention | Fades over time | Excellent long-term |
 | Seam type | RF welded | Hand-glued |
 | Weld strength | Very strong (consistent) | Good (operator dependent) |
 | Repair method | PVC glue (easy) | 2-part adhesive (moderate) |
-| Temperature range | -10掳C to 50掳C | -20掳C to 70掳C |
+| Temperature range | -10°C to 50°C | -20°C to 70°C |
 
 ## When to Recommend PVC
 
