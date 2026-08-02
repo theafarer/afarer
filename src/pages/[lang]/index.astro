@@ -35,7 +35,10 @@ const page = getPageContent(lang);
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
 
 const metadata = {
-  title: SITE.name,
+  title:
+    lang === defaultLang
+      ? 'Inflatable SUP Board Manufacturer – SUP Factory & OEM/ODM Custom Paddle Boards | Afarer'
+      : SITE.name,
   description: SITE?.description,
   ignoreTitleTemplate: true,
 };

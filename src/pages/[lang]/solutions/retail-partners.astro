@@ -33,9 +33,11 @@ const cta = page.cta ?? {};
 const lh = (h: string) => (h ? `/${lang}${h}` : h);
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 
+const pageMeta = page.meta ?? {};
+const cleanMeta = (s: string) => (s || '').replace(/<br\s*\/?>/gi, ' ').replace(/\s+/g, ' ').trim();
 const metadata = {
-  title: hero.title ? hero.title.replace('{SITE}', SITE.name) : `SUP Retail Partner Program — ${SITE.name}`,
-  description: hero.subtitle || '',
+  title: cleanMeta(pageMeta.title || hero.title || `SUP Retail Partner Program — ${SITE.name}`).replace('{SITE}', SITE.name),
+  description: cleanMeta(pageMeta.description || hero.subtitle),
 };
 const crumbs = [
   { name: t('nav.home') || 'Home', href: `/${lang}/` },
@@ -155,7 +157,7 @@ const crumbs = [
 
   <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
   <JsonLd type="Service" service={{
-    name: hero.title ? hero.title.replace('{SITE}', SITE.name) : 'SUP Retail Partner Program',
+    name: cleanMeta(pageMeta.title || hero.title || 'SUP Retail Partner Program').replace('{SITE}', SITE.name),
     description: hero.subtitle || 'Full product line, marketing materials, dropshipping, and competitive margins',
     serviceType: 'Retail Partner Solutions',
     areaServed: ['Global'],
