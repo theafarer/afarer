@@ -85,7 +85,7 @@ equipment_section:
     - name: Automatic PVC Cutting Machine
       spec: CNC-styret, 0,1 mm præcision
     - name: Heat Sealing Machine
-      spec: Varmluft, 200°C—00 °C, til sammensvejsning af slanger
+      spec: Varmluft, 200°C–300 °C, til sammensvejsning af slanger
     - name: RF Dielectric Welding Press
       spec: 15 kW, lufttæt sømsvejsning
     - name: Drop-Stitch Core Lamination Press
@@ -127,14 +127,14 @@ faq_section:
   title: B2B & OEM — ofte stillede spørgsmål
   questions:
     - q: Hvad er minimumsordreantallet (MOQ) for OEM-oppustelige SUP-brædder?
-      a: MOQ starter ved 5—0 enheder for standard-OEM-modeller. Specialforme og private-label-projekter kræver et minimum på 200 enheder afhængigt af kompleksitet. Prøveordrer og samplekørsler er tilgængelige for nye brandlanceringer.
+      a: MOQ starter ved 5–10 enheder for standard-OEM-modeller. Specialforme og private-label-projekter kræver et minimum på 200 enheder afhængigt af kompleksitet. Prøveordrer og samplekørsler er tilgængelige for nye brandlanceringer.
     - q: Har afarer BSCI-certificering?
       a: Ja. Vores fabrik har en gyldig BSCI-certificering for social overholdelse (auditrapport kan udleveres på forespørgsel). Vi har desuden  til kvalitetsstyring, og alle produkter bærer CE- certificering. Dokumentation for REACH- og RoHS-overholdelse medfølger ved hver OEM-forsendelse.
     - q: Hvad er den typiske leveringstid for en OEM-ordre?
       a: Ja. Vores fabrik har en gyldig BSCI-certificering for social overholdelse (auditrapport kan udleveres på forespørgsel). Vi har desuden  til kvalitetsstyring, og alle produkter bærer CE- certificering. Dokumentation for REACH- og RoHS-overholdelse medfølger ved hver OEM-forsendelse.
     - q: Kan I sende FOB Qingdao eller CIF til vores havn?
       a: Ja. Vi leverer FOB Qingdao, CIF til store globale havne og DDP for kvalificerede partnere. Vores logistikteam varetager containerbooking, eksportdokumentation og toldbehandling. Vi leverer til 50+ lande på tværs af EU-, USA-, AU- og Asien-markederne.
-b2b_moq: 'Standard MOQ: 5—0 enheder pr. model (SUP/kajak/drop-stitch). SUP MOQ: 2— enheder. Prøveordrer velkomne til nye partnerskaber.'
+b2b_moq: 'Standard MOQ: 5–10 enheder pr. model (SUP/kajak/drop-stitch). SUP MOQ: 2–5 enheder. Prøveordrer velkomne til nye partnerskaber.'
 production_flow:
   tagline: Produktionsflow
   title: Fra materiale til færdig båd
@@ -166,7 +166,7 @@ production_flow:
       responsibility: Samlingsholdets leder + linje-QC
     - stage: '05'
       title: Tryktestning & kvalitetskontrol
-      description: Hvert kammer pustes op til 1.25× det nominelle tryk (typisk 20—5 PSI) og holdes i 24—8 timer. Tryksensorer logger løbende. Kamre, der overskrider et trykfald på 5 %, kasseres og sendes til fornyet inspektion af sømmene.
+      description: Hvert kammer pustes op til 1.25× det nominelle tryk (typisk 20–25 PSI) og holdes i 24–48 timer. Tryksensorer logger løbende. Kamre, der overskrider et trykfald på 5 %, kasseres og sendes til fornyet inspektion af sømmene.
       qc_check: 24-timers log over trykfastholdelse, daglig verifikation af sensorkalibrering, temperaturkompenseret trykaflæsning, omtest af sømme efter reparation
       qc_threshold: Maks. 5 % trykfald over 24 timer ved stabil temperatur. Overskrider en kammer dette = 100 % gen-test af hele produktionspartiet
       responsibility: Kvalitetslaboratorium (uafhængigt af produktionen, refererer til ledelsen)
@@ -181,7 +181,7 @@ workforce:
   title: Arbejdsstyrke og ekspertise
   engineers: 25+
   engineers_detail: Ingeniører inden for R&D, formdesign, materialelaboratorium og produktionsteknik. Gennemsnitligt 7+ års erfaring inden for fremstilling af oppustelige produkter.
-  shift_pattern: 2 skift/dag (07:00—5:30, 15:30—0:00). Valgfrit natskift ved hasteordrer.
+  shift_pattern: 2 skift/dag (07:00–15:30, 15:30–00:00). Valgfrit natskift ved hasteordrer.
   training: Månedlig QC-træning, kvartalsvise sikkerhedsøvelser, årlig kompetencevurdering. Nye medarbejdere gennemfører 40 timers introduktion, før de arbejder på produktionslinjen.
   departments:
     - name: R&D & Engineering
@@ -242,7 +242,7 @@ qc_dashboard:
     - value: AQL 2.5
       label: Tærskel for væsentlige fejl
       detail: I henhold til ISO 2859-stikprøvestandarden
-    - value: 24—8h
+    - value: 24–48h
       label: Varighed af trykfastholdelse
       detail: Afhænger af produktkategorien
     - value: 1.25×

@@ -85,7 +85,7 @@ equipment_section:
     - name: Automatische PVC-Schneidemaschine
       spec: CNC-gesteuert, 0,1 mm Genauigkeit
     - name: Heißsiegelmaschine
-      spec: Heißluft, 200 °C—00 °C, für Schlauchverbindung
+      spec: Heißluft, 200 °C–300 °C, für Schlauchverbindung
     - name: HF-Dielektrikumsschweißpresse
       spec: 15 kW, luftdichte Nahtschweißung
     - name: Glasfaser-Handlaminierformen
@@ -127,14 +127,14 @@ faq_section:
   title: B2B- & OEM-häufig gestellte Fragen
   questions:
     - q: Wie hoch ist die Mindestbestellmenge (MOQ) für OEM-aufblasbare SUP-Boards?
-      a: Die MOQ beginnt bei 5—0 Einheiten für Standard-OEM-Modelle. Kundenspezifische Formen und Private-Label-Projekte erfordern je nach Komplexität mindestens 200 Einheiten. Probebestellungen und Musterläufe sind für neue Marken erhältlich.
+      a: Die MOQ beginnt bei 5–10 Einheiten für Standard-OEM-Modelle. Kundenspezifische Formen und Private-Label-Projekte erfordern je nach Komplexität mindestens 200 Einheiten. Probebestellungen und Musterläufe sind für neue Marken erhältlich.
     - q: Besitzt afarer eine BSCI-Zertifizierung?
       a: Ja. Unser Werk unterhält eine gültige BSCI-Social-Compliance-Zertifizierung (Prüfbericht auf Anfrage erhältlich). Wir besitzen auch  für Qualitätsmanagement und alle Produkte tragen die CE-Zertifizierung . REACH- und RoHS-Konformitätsdokumentation wird mit jeder OEM-Sendung bereitgestellt.
     - q: Wie ist die typische Lieferzeit für einen OEM-Auftrag?
       a: Ja. Unser Werk unterhält eine gültige BSCI-Social-Compliance-Zertifizierung (Prüfbericht auf Anfrage erhältlich). Wir besitzen auch  für Qualitätsmanagement und alle Produkte tragen die CE-Zertifizierung . REACH- und RoHS-Konformitätsdokumentation wird mit jeder OEM-Sendung bereitgestellt.
     - q: Können Sie FOB Qingdao oder CIF zu unserem Hafen versenden?
       a: Ja. Wir versenden FOB Qingdao, CIF zu großen globalen Häfen und DDP für qualifizierte Partner. Unser Logistikteam übernimmt Containerbuchung, Exportedokumentation und Zollabfertigung. Wir versenden in 50+ Länder in den Märkten EU, USA, AU und Asien.
-b2b_moq: 'Standard-Mindestbestellmenge (MOQ): 5—0 Einheiten pro Modell (SUP/SUP/Drop-Stitch). SUP-MOQ: 2— Einheiten. Probebestellungen für neue Partnerschaften willkommen.'
+b2b_moq: 'Standard-Mindestbestellmenge (MOQ): 5–10 Einheiten pro Modell (SUP/SUP/Drop-Stitch). SUP-MOQ: 2–5 Einheiten. Probebestellungen für neue Partnerschaften willkommen.'
 production_flow:
   tagline: Produktionsfluss
   title: Vom Material zum fertigen Boot
@@ -166,7 +166,7 @@ production_flow:
       responsibility: Leiter Montageteam   Linien-QC
     - stage: Fünf
       title: Druckprüfung & Qualitätskontrolle
-      description: Jede Kammer wird auf das 1,25-fache des Nenn- drucks aufgepumpt (typischerweise 20—5 PSI) und für 24—8 Stunden gehalten. Drucksensoren protokollieren kontinuierlich. Kammern, die einen Druckabfall von mehr als 5 % aufweisen, werden abgelehnt und zur Nahtnachprüfung geschickt.
+      description: Jede Kammer wird auf das 1,25-fache des Nenn- drucks aufgepumpt (typischerweise 20–25 PSI) und für 24–48 Stunden gehalten. Drucksensoren protokollieren kontinuierlich. Kammern, die einen Druckabfall von mehr als 5 % aufweisen, werden abgelehnt und zur Nahtnachprüfung geschickt.
       qc_check: 24-Stunden-Druckhaltelog, Sensor-Kalibrierung täglich überprüft, temperaturkompensierte Druckanzeige, Nahtnachprüfung nach Reparatur
       qc_threshold: Maximal 5% Druckabfall über 24 Stunden bei stabiler Temperatur. Jede Kammer, die dies überschreitet = 100% Nachprüfung der gesamten Produktionscharge
       responsibility: Qualitätslabor (unabhängig von der Produktion, berichtet an die Geschäftsleitung)
@@ -181,7 +181,7 @@ workforce:
   title: Belegschaft & Fachwissen
   engineers: Fünfundzwanzig
   engineers_detail: Ingenieure in Forschung und Entwicklung, Werkzeugbau, Materiallabor und Produktionsingenieurwesen. Durchschnittlich 7 Jahre Erfahrung in der Herstellung von aufblasbaren Produkten.
-  shift_pattern: 2 Schichten/Tag (07:00—17:30, 15:30—00:00). Optionale Nachtschicht für dringende Aufträge.
+  shift_pattern: 2 Schichten/Tag (07:00–17:30, 15:30–00:00). Optionale Nachtschicht für dringende Aufträge.
   training: Monatliches QC-Training, vierteljährliche Sicherheitsübungen, jährliche Kompetenzbewertung. Neue Mitarbeiter absolvieren eine 40-stündige Einführung, bevor sie an der Produktionslinie arbeiten.
   departments:
     - name: R&D & Engineering
@@ -244,7 +244,7 @@ qc_dashboard:
     - value: AQL 2,5
       label: Schwelle für wesentliche Mängel
       detail: Nach ISO 2859 Prüfstandard
-    - value: 24—8h
+    - value: 24–48h
       label: Druckhaltezeit
       detail: Abhängig von der Produktkategorie
     - value: 1,25×

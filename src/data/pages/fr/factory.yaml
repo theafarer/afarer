@@ -23,9 +23,9 @@ intelligence_cards:
     desc: Installation de 12 000 m² produisant 15 000+ SUP/an. 200+ travailleurs, 2 équipes.
     metrics:
       - label: MOQ
-        value: 'SUP: 5—0'
+        value: 'SUP: 5–10'
       - label: Délai
-        value: 30—5 jours
+        value: 30–45 jours
     link: /factory/capacity
     link_label: Voir capacités complètes →
   - title: Laboratoire Qualité et Tests
@@ -162,7 +162,7 @@ production_flow:
       responsibility: Chef d'équipe assemblage + CQ ligne
     - stage: '05'
       title: Test de pression et retenue qualité
-      description: Chaque chambre est gonflée à 1,25× la pression nominale (typically 20—5 PSI) and held for 24—8 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.
+      description: Chaque chambre est gonflée à 1,25× la pression nominale (typically 20–25 PSI) and held for 24–48 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.
       qc_check: Journal de maintien de pression 24h, étalonnage capteurs quotidien, lecture compensée en température, re-test après réparation
       qc_threshold: Max 5% de chute de pression sur 24h à température stable. Tout dépassement = re-test 100 % du lot
       responsibility: Laboratoire qualité (indépendant de la production, rapporte à la direction)
@@ -177,7 +177,7 @@ workforce:
   title: Main-d'œuvre et Expertise
   engineers: 25+
   engineers_detail: Ingénieurs en R&D, conception moules, laboratoire matériaux. Moyenne de 7+ ans dans la fabrication gonflable.
-  shift_pattern: 2 équipes/jour (07:00—15:30, 15:30—00:00). Équipe de nuit optionnelle pour urgences.
+  shift_pattern: 2 équipes/jour (07:00–15:30, 15:30–00:00). Équipe de nuit optionnelle pour urgences.
   training: Formation QC mensuelle, exercices de sécurité trimestriels, évaluation annuelle des compétences. Les nouvelles recrues suivent une formation d’accueil de 40 heures avant de travailler sur la chaîne de production.
   departments:
     - name: R&D et Ingénierie
@@ -238,7 +238,7 @@ qc_dashboard:
     - value: AQL 2,5
       label: Major defect threshold
       detail: Selon norme d'échantillonnage ISO 2859
-    - value: 24—8 h
+    - value: 24–48 h
       label: Pressure hold duration
       detail: Selon la catégorie de produit
     - value: 1,25×

@@ -1,4 +1,4 @@
-﻿export interface FaqRecord {
+export interface FaqRecord {
   id: string;
   question: string;
   answer: string;
@@ -30,7 +30,7 @@ export const faqs: FaqRecord[] = [
     id: 'inflation-time',
     question: 'How long does it take to inflate?',
     answer:
-      'With the included dual-action pump, most boards inflate to 12—5 PSI in under 5 minutes. Our electric pump option cuts that to under 2 minutes. Deflation and packing take about 3 minutes.',
+      'With the included dual-action pump, most boards inflate to 12–15 PSI in under 5 minutes. Our electric pump option cuts that to under 2 minutes. Deflation and packing take about 3 minutes.',
     category: 'product',
     relatedProducts: [],
     relatedGuides: ['sup-maintenance'],
@@ -39,7 +39,7 @@ export const faqs: FaqRecord[] = [
     id: 'travel-sup',
     question: 'Can I travel with an inflatable SUP?',
     answer:
-      'Absolutely. Every afarer board packs into a backpack-sized carrying case that meets airline luggage requirements. At just 18—2 lbs, it is easy to carry to the beach, lake, or through airport terminals.',
+      'Absolutely. Every afarer board packs into a backpack-sized carrying case that meets airline luggage requirements. At just 18–22 lbs, it is easy to carry to the beach, lake, or through airport terminals.',
     category: 'general',
     relatedProducts: [],
     relatedGuides: [],
@@ -147,7 +147,7 @@ export const faqs: FaqRecord[] = [
     id: 'shipping-info',
     question: 'How long does shipping take?',
     answer:
-      'In-stock orders ship within 2— business days. US domestic orders arrive in 5—0 business days. International orders arrive in 10—0 business days depending on destination. Urgent orders can be expedited.',
+      'In-stock orders ship within 2–4 business days. US domestic orders arrive in 5–10 business days. International orders arrive in 10–15 business days depending on destination. Urgent orders can be expedited.',
     category: 'shipping',
     relatedProducts: [],
     relatedGuides: [],
@@ -174,7 +174,7 @@ export const faqs: FaqRecord[] = [
     id: 'paddle-length',
     question: 'What paddle length do I need?',
     answer:
-      'The paddle should be 6—8 inches taller than your height. Adjustable paddles allow fine-tuning for different conditions. See our paddle guide for detailed sizing.',
+      'The paddle should be 6–8 inches taller than your height. Adjustable paddles allow fine-tuning for different conditions. See our paddle guide for detailed sizing.',
     category: 'product',
     relatedProducts: [],
     relatedGuides: ['choosing-paddle'],
@@ -192,7 +192,7 @@ export const faqs: FaqRecord[] = [
     id: 'sup-width-stability',
     question: 'What SUP width is best for stability?',
     answer:
-      'For beginners, a width of 33—4 inches provides the best balance of stability and paddling ease. Boards narrower than 32 inches feel tippy to new paddlers. The afarer SUP Explorer 11 at 33 inches is ideal for learning.',
+      'For beginners, a width of 33–34 inches provides the best balance of stability and paddling ease. Boards narrower than 32 inches feel tippy to new paddlers. The afarer SUP Explorer 11 at 33 inches is ideal for learning.',
     category: 'product',
     relatedProducts: ['sup-explorer-11'],
     relatedGuides: ['sup-size-guide', 'paddle-board-size-guide'],
@@ -201,7 +201,7 @@ export const faqs: FaqRecord[] = [
     id: 'sup-volume-weight',
     question: 'How do I choose SUP volume for my weight?',
     answer:
-      'Multiply your weight in kg by 2.2 for a beginner-friendly volume target. For example, a 75 kg paddler needs at least 165 liters, but 220—60 liters is much more stable for learning. The SUP Explorer 11 offers 260 liters, suitable for riders up to 100 kg.',
+      'Multiply your weight in kg by 2.2 for a beginner-friendly volume target. For example, a 75 kg paddler needs at least 165 liters, but 220–260 liters is much more stable for learning. The SUP Explorer 11 offers 260 liters, suitable for riders up to 100 kg.',
     category: 'product',
     relatedProducts: ['sup-explorer-11'],
     relatedGuides: ['sup-size-guide', 'paddle-board-size-guide'],
@@ -219,7 +219,7 @@ export const faqs: FaqRecord[] = [
     id: 'fishing-sup-setup',
     question: 'Can I fish from a SUP board?',
     answer:
-      'Yes. SUP fishing is increasingly popular because the standing position offers excellent visibility into the water. Choose a board at least 11 feet long and 33—4 inches wide for stability. Add a milk crate with rod holders secured to the deck bungees, a small anchor, and always wear a PFD. The afarer SUP Explorer 11 works well for casual fishing.',
+      'Yes. SUP fishing is increasingly popular because the standing position offers excellent visibility into the water. Choose a board at least 11 feet long and 33–34 inches wide for stability. Add a milk crate with rod holders secured to the deck bungees, a small anchor, and always wear a PFD. The afarer SUP Explorer 11 works well for casual fishing.',
     category: 'general',
     relatedProducts: ['sup-explorer-11'],
     relatedGuides: ['fishing-sup-guide', 'sup-anchor-guide'],
@@ -237,7 +237,7 @@ export const faqs: FaqRecord[] = [
     id: 'airline-travel-sup',
     question: 'What are the airline rules for traveling with an inflatable SUP?',
     answer:
-      "Most airlines accept SUP backpacks as checked baggage if under 23—2 kg. The afarer backpack is approximately 90x40x30 cm and weighs about 15 kg packed. Some airlines may charge oversized baggage fees. Arrive early, wrap fins and pump separately in your carry-on, and label the bag as fragile. Always research your airline's sporting equipment policy before flying.",
+      "Most airlines accept SUP backpacks as checked baggage if under 23–32 kg. The afarer backpack is approximately 90x40x30 cm and weighs about 15 kg packed. Some airlines may charge oversized baggage fees. Arrive early, wrap fins and pump separately in your carry-on, and label the bag as fragile. Always research your airline's sporting equipment policy before flying.",
     category: 'general',
     relatedProducts: ['sup-explorer-11'],
     relatedGuides: ['sup-travel-guide'],
@@ -246,7 +246,7 @@ export const faqs: FaqRecord[] = [
     id: 'cold-weather-safety',
     question: 'What safety equipment do I need for cold water paddling?',
     answer:
-      'Water below 15掳C requires thermal protection. For 8—4掳C use a wetsuit or drysuit with boots, gloves, and hood. For 14—0掳C a 3/2mm wetsuit is sufficient. Always wear a properly fitted PFD for thermal protection and safety. Check local regulations for mandatory equipment requirements.',
+      'Water below 15°C requires thermal protection. For 8–14°C use a wetsuit or drysuit with boots, gloves, and hood. For 14–20°C a 3/2mm wetsuit is sufficient. Always wear a properly fitted PFD for thermal protection and safety. Check local regulations for mandatory equipment requirements.',
     category: 'product',
     relatedProducts: ['life-vest-pro'],
     relatedGuides: ['sup-safety-guide'],
@@ -255,7 +255,7 @@ export const faqs: FaqRecord[] = [
     id: 'oem-odm-details',
     question: 'What are the minimum order quantities for OEM/ODM?',
     answer:
-      'Minimum order quantities (MOQs) vary by product type and complexity. Custom branding on existing models typically requires 5—0 units. Fully custom hull designs require higher MOQs. Contact our sales team with your requirements for a detailed quote. We handle everything from custom colors and logos to entirely original mold designs.',
+      'Minimum order quantities (MOQs) vary by product type and complexity. Custom branding on existing models typically requires 5–10 units. Fully custom hull designs require higher MOQs. Contact our sales team with your requirements for a detailed quote. We handle everything from custom colors and logos to entirely original mold designs.',
     category: 'ordering',
     relatedProducts: [],
     relatedGuides: [],
@@ -273,7 +273,7 @@ export const faqs: FaqRecord[] = [
     id: 'sup-inflate-pressure',
     question: 'What PSI should I inflate my SUP to?',
     answer:
-      "Inflate to the board's rated maximum PSI for best performance —typically 15—8 PSI for quality inflatable SUPs. The afarer SUP Explorer 11 performs best at 15—8 PSI. Under-inflation causes the board to feel soft and track poorly. Over-inflation past the rated max risks damaging the drop-stitch threads. Check the sticker near the valve for your board's specific rating.",
+      "Inflate to the board's rated maximum PSI for best performance —typically 15–18 PSI for quality inflatable SUPs. The afarer SUP Explorer 11 performs best at 15–18 PSI. Under-inflation causes the board to feel soft and track poorly. Over-inflation past the rated max risks damaging the drop-stitch threads. Check the sticker near the valve for your board's specific rating.",
     category: 'product',
     relatedProducts: ['sup-explorer-11', 'sup-tour-12'],
     relatedGuides: ['how-to-choose-inflatable-sup', 'sup-pump-guide'],

@@ -14,4 +14,4 @@ entityType: technology
 
 Hypalon tubes are featured on afarer RIB models (RIB 330, RIB 450 Patrol). Unlike standard PVC, Hypalon (CSM) rubber provides superior UV and chemical resistance.
 
-Hypalon maintains flexibility in extreme temperatures (-30掳C to +70掳C) and resists degradation from fuel, oil, and saltwater exposure. This makes it the preferred material for professional and commercial marine applications.
+Hypalon maintains flexibility in extreme temperatures (-30°C to +70°C) and resists degradation from fuel, oil, and saltwater exposure. This makes it the preferred material for professional and commercial marine applications.

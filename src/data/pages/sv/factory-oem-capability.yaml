@@ -15,7 +15,7 @@ highlight:
   - value: 200+
     label: Anpassade projekt levererade
     detail: Över alla produktlinjer
-  - value: 30—5
+  - value: 30–45
     label: Standard ledtid (dagar)
     detail: Från PO till FOB
 services:
@@ -29,11 +29,11 @@ services:
     description: Anpassad detaljhandelsförpackning, varumärkesanpassade lådor, vakuumförpackning, pallning och containertilladdning. FOB Qingdao, CIF eller DDP-villkor tillgängliga.
 moq_table:
   - product: Luftfyllbara SUP-bräder
-    standard_moq: 5—0 enheter
+    standard_moq: 5–10 enheter
     custom_moq: 200+ enheter
     lead_time: 30–5 dagar
   - product: Räddningsvästar och säkerhet
-    standard_moq: 100—00 units
+    standard_moq: 100–200 units
     custom_moq: 1 000+ enheter
     lead_time: 20–30 dagar
 why_us:

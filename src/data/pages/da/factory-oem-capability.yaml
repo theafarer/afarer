@@ -15,7 +15,7 @@ highlight:
   - value: 200+
     label: Leverede specialprojekter
     detail: På tværs af alle produktlinjer
-  - value: 30—5
+  - value: 30–45
     label: Standard leveringstid (dage)
     detail: Fra PO til FOB
 services:
@@ -31,11 +31,11 @@ moq_table:
   - product: Opslåelige SUP-boards
     standard_moq: 5–0 enheder
     custom_moq: 200+ enheder
-    lead_time: 30—5 dage
+    lead_time: 30–45 dage
   - product: Redningsveste og sikkerhed
-    standard_moq: 100—00 enheder
+    standard_moq: 100–200 enheder
     custom_moq: 1,000+ enheder
-    lead_time: 20—0 days
+    lead_time: 20–30 days
 why_us:
   - title: Vertikal integration
     description: Vi ejer vores fabrik, forme og forsyningskæde —uden mellemmænd, uden underleverandører. Det giver os kontrol over kvalitet, pris og levering.

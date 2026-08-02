@@ -85,7 +85,7 @@ equipment_section:
     - name: Automatisk PVC-kuttmaskin
       spec: CNC-styrt, 0,1 mm nøyaktighet
     - name: Varmluftssveisemaskin
-      spec: Varmluft, 200 °C—00 °C, for rørfesting
+      spec: Varmluft, 200 °C–300 °C, for rørfesting
     - name: Dielektrisk RF-presse
       spec: 15 kW, lufttett sømsveising
     - name: Glassfiber håndopplegningsformer
@@ -127,14 +127,14 @@ faq_section:
   title: B2B- og OEM vanlige spørsmål
   questions:
     - q: Hva er minimumsbestillingsmengde (MOQ) for OEM av oppblåsbare SUP-brett?
-      a: MOQ starter på 5—0 enheter for standard OEM-modeller. Tilpassede former og private-label-prosjekter krever minimum 200 enheter avhengig av kompleksitet. Prøvebestillinger og testserier er tilgjengelige for nye merkelanseringer.
+      a: MOQ starter på 5–10 enheter for standard OEM-modeller. Tilpassede former og private-label-prosjekter krever minimum 200 enheter avhengig av kompleksitet. Prøvebestillinger og testserier er tilgjengelige for nye merkelanseringer.
     - q: Er afarer BSCI-sertifisert?
       a: Ja. Fabrikken vår opprettholder gyldig BSCI-sosialt samsvarssertifikat (revisjonsrapport tilgjengelig på forespørsel). Vi har også sertifisert kvalitetsstyring, og alle produkter er CE-sertifiserte. REACH- og RoHS-samsvarsdokumentasjon følger med hver OEM-forsendelse.
     - q: Hva er typisk leveringstid for en OEM-bestilling?
       a: MOQ starter på 5–10 enheter for standard OEM-modeller. Tilpassede former og private-label-prosjekter krever minimum 200 enheter avhengig av kompleksitet. Prøvebestillinger og testserier er tilgjengelige for nye merkelanseringer.
     - q: Kan dere sende FOB Qingdao eller CIF til havnen vår?
       a: Ja. Vi sender FOB Qingdao, CIF til større globale havner og DDP for kvalifiserte partnere. Logistikkteamet vårt håndterer containerbooking, eksportdokumentasjon og tollearbeid. Vi sender til 50+ land på tvers av EU-, USA-, AU- og Asia-markedene.
-b2b_moq: 'Standard MOQ: 5—0 enheter per modell (SUP/kajakk/drop-stitch). SUP MOQ: 2— enheter. Prøvebestillinger velkommen for nye partnerskap.'
+b2b_moq: 'Standard MOQ: 5–10 enheter per modell (SUP/kajakk/drop-stitch). SUP MOQ: 2–5 enheter. Prøvebestillinger velkommen for nye partnerskap.'
 production_flow:
   tagline: Produksjonsflyt
   title: Fra råvare til ferdig båt
@@ -166,7 +166,7 @@ production_flow:
       responsibility: Monteringsteamleder + linjekvalitetskontroll
     - stage: '05'
       title: Trykktesting og kvalitetskontroll
-      description: Hvert kammer blåses opp til 1,25× nominelt trykk (typisk 20—5 PSI) og holdes i 24—8 timer. Trykksensorer logger kontinuerlig. Kamre som overskrider 5 % trykkfall forkastes og sendes til sømrevisjon.
+      description: Hvert kammer blåses opp til 1,25× nominelt trykk (typisk 20–25 PSI) og holdes i 24–48 timer. Trykksensorer logger kontinuerlig. Kamre som overskrider 5 % trykkfall forkastes og sendes til sømrevisjon.
       qc_check: 24-timers trykkelogg, sensorkalibrering verifisert daglig, temperaturkompensert trykkavlesning, sømre-test etter reparasjon
       qc_threshold: Maks 5 % trykkfall over 24 timer ved stabil temperatur. Et kammer som overskriver dette = 100 % retesting av hele produksjonsbatchen
       responsibility: Kvalitetslaboratorium (uavhengig av produksjon, rapporterer til ledelsen)
@@ -181,7 +181,7 @@ workforce:
   title: Arbeidsstyrke og kompetanse
   engineers: 25+
   engineers_detail: Ingeniører innen FoU, formutforming, materiallaboratorium og produksjonsteknikk. Gjennomsnittlig 7+ år i oppblåsbare produksjon.
-  shift_pattern: 2 skift/dag (07:00—15:30, 15:30—0:00). Valgfritt nattskift for hasteordrer.
+  shift_pattern: 2 skift/dag (07:00–15:30, 15:30–00:00). Valgfritt nattskift for hasteordrer.
   training: Månedlig kvalitetstrening, kvartalsvise sikkerhetsøvelser, årlig ferdighetsvurdering. Nyansatte fullfører 40 timers innføring før de arbeider i produksjonslinjen.
   departments:
     - name: R&D & Engineering
@@ -242,7 +242,7 @@ qc_dashboard:
     - value: AQL 2,5
       label: Terskel for alvorlige feil
       detail: I henhold til ISO 2859-standard for prøvetaking
-    - value: 24—8 t
+    - value: 24–48 t
       label: Trykkelighetens varighet
       detail: Avhengig av produktkategori
     - value: 1,25×

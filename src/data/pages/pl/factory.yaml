@@ -87,7 +87,7 @@ equipment_section:
     - name: Automatyczna Maszyna do Cięcia PVC
       spec: Sterowana CNC, dokładność 0,1 mm
     - name: Maszyna do Uszczelniania Termicznego
-      spec: Gorące powietrze, 200°C—00 °C, do łączenia rur
+      spec: Gorące powietrze, 200°C–300 °C, do łączenia rur
     - name: Prasa Zgrzewająca Dielektryczna RF
       spec: 15 kW, spawanie szczelnych szwów
     - name: Formy do Ręcznego Formowania z Włókna Szklanego
@@ -129,14 +129,14 @@ faq_section:
   title: Często Zadawane Pytania B2B i OEM
   questions:
     - q: Jaka jest minimalna ilość zamówienia (MOQ) dla OEM nadmuchiwanych desek SUP?
-      a: MOQ zaczyna się od 5—0 sztuk dla standardowych modeli OEM. Niestandardowe formy i projekty pod własną marką wymagają minimum 200 sztuk, w zależności od złożoności. Zamówienia próbne i serie wzorcowe są dostępne dla nowych marek.
+      a: MOQ zaczyna się od 5–10 sztuk dla standardowych modeli OEM. Niestandardowe formy i projekty pod własną marką wymagają minimum 200 sztuk, w zależności od złożoności. Zamówienia próbne i serie wzorcowe są dostępne dla nowych marek.
     - q: Czy afarer posiada certyfikat BSCI?
       a: Tak. Nasza fabryka utrzymuje ważny certyfikat zgodności społecznej BSCI (raport z audytu dostępny na żądanie). Posiadamy również  do zarządzania jakością, a wszystkie produkty posiadają certyfikat CE . Dokumentacja zgodności REACH i RoHS jest dostarczana z każdą przesyłką OEM.
     - q: Jaki jest typowy czas realizacji zamówienia OEM?
       a: Tak. Nasza fabryka utrzymuje ważny certyfikat zgodności społecznej BSCI (raport z audytu dostępny na żądanie). Posiadamy również  do zarządzania jakością, a wszystkie produkty posiadają certyfikat CE . Dokumentacja zgodności REACH i RoHS jest dostarczana z każdą przesyłką OEM.
     - q: Czy możecie wysłać FOB Qingdao lub CIF do naszego portu?
       a: Tak. Wysyłamy FOB Qingdao, CIF do głównych portów świata oraz DDP dla kwalifikowanych partnerów. Nasz zespół logistyczny zarządza rezerwacją kontenerów, dokumentacją eksportową i odprawą celną. Wysyłamy do ponad 50 krajów na rynkach UE, USA, AU i Azji.
-b2b_moq: 'Standardowe MOQ: 5—0 sztuk na model (SUP/kajak/drop-stitch). MOQ SUP: 2— sztuk. Zamówienia próbne mile widziane dla nowych partnerstw.'
+b2b_moq: 'Standardowe MOQ: 5–10 sztuk na model (SUP/kajak/drop-stitch). MOQ SUP: 2–5 sztuk. Zamówienia próbne mile widziane dla nowych partnerstw.'
 production_flow:
   tagline: Przepływ produkcji
   title: Od materiału do gotowej łodzi
@@ -168,7 +168,7 @@ production_flow:
       responsibility: Kierownik zespołu montażowego   kontrola jakości na linii
     - stage: Pięć
       title: Test ciśnieniowy i zatrzymanie jakości
-      description: Każda komora jest napełniana do 1,25× nominalnego ciśnienia (zwykle 20—5 PSI) i utrzymywana przez 24—8 godzin. Czujniki ciśnienia rejestrują dane ciągłe. Komory, w których nastąpi spadek ciśnienia powyżej 5%, są odrzucane i wysyłane do ponownej kontroli szwów.
+      description: Każda komora jest napełniana do 1,25× nominalnego ciśnienia (zwykle 20–25 PSI) i utrzymywana przez 24–48 godzin. Czujniki ciśnienia rejestrują dane ciągłe. Komory, w których nastąpi spadek ciśnienia powyżej 5%, są odrzucane i wysyłane do ponownej kontroli szwów.
       qc_check: 24-godzinny zapis utrzymania ciśnienia, codziennie weryfikowana kalibracja czujnika, ciśnienie skompensowane temperaturowo, ponowne testowanie szwu po naprawie
       qc_threshold: Maksymalny spadek ciśnienia 5% przez 24h przy stabilnej temperaturze. Każda komora przekraczająca ten limit = 100% ponowny test całej partii produkcyjnej
       responsibility: Laboratorium jakości (niezależne od produkcji, podlega kierownictwu)
@@ -183,7 +183,7 @@ workforce:
   title: Siła robocza i doświadczenie
   engineers: Dwadzieścia pięć
   engineers_detail: Inżynierowie w działach B+R, projektowania form, laboratorium materiałów i inżynierii produkcji. Średnio 7 lat doświadczenia w produkcji wyrobów dmuchanych.
-  shift_pattern: 2 zmiany/dzień (07:00—17:30, 15:30—00:00). Opcjonalna zmiana nocna przy pilnych zamówieniach.
+  shift_pattern: 2 zmiany/dzień (07:00–17:30, 15:30–00:00). Opcjonalna zmiana nocna przy pilnych zamówieniach.
   training: Comiesięczne szkolenie kontroli jakości, kwartalne ćwiczenia bezpieczeństwa, coroczna ocena umiejętności. Nowi pracownicy kończą 40-godzinne wprowadzenie przed rozpoczęciem pracy na linii produkcyjnej.
   departments:
     - name: R&D & Engineering
@@ -246,7 +246,7 @@ qc_dashboard:
     - value: AQL 2,5
       label: Próg poważnej wady
       detail: Zgodnie z normą próbkowania ISO 2859
-    - value: 24—8h
+    - value: 24–48h
       label: Czas utrzymania ciśnienia
       detail: W zależności od kategorii produktu
     - value: 1,25×

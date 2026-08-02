@@ -87,7 +87,7 @@ equipment_section:
     - name: Macchina Taglio PVC Automatica
       spec: Controllo CNC, precisione 0,1 mm
     - name: Macchina Termosaldatrice
-      spec: Aria calda, 200 °C—00 °C, per legame tubolari
+      spec: Aria calda, 200 °C–300 °C, per legame tubolari
     - name: Pressa Saldatura Dielettrica RF
       spec: 15 kW, saldatura giunture ermetiche
     - name: Stampi Stratificazione Manuale Fibra di Vetro
@@ -129,14 +129,14 @@ faq_section:
   title: Domande Frequenti B2B e OEM
   questions:
     - q: Qual è la quantità minima d''ordine (MOQ) per tavole SUP gonfiabili OEM?
-      a: La MOQ inizia a 5—0 unità per modelli OEM standard. Stampi personalizzati e progetti private label richiedono un minimo di 200 unità a seconda della complessità. Ordini di prova e campionature sono disponibili per lanci di nuovi marchi.
+      a: La MOQ inizia a 5–10 unità per modelli OEM standard. Stampi personalizzati e progetti private label richiedono un minimo di 200 unità a seconda della complessità. Ordini di prova e campionature sono disponibili per lanci di nuovi marchi.
     - q: afarer possiede la certificazione BSCI?
       a: Sì. La nostra fabbrica mantiene una certificazione conformità sociale BSCI valida (rapporto audit disponibile su richiesta). Deteniamo anche  per la gestione qualità e tutti i prodotti portano la certificazione CE . La documentazione conformità REACH e RoHS è fornita con ogni spedizione OEM.
     - q: Qual è il tempo di consegna tipico per un ordine OEM?
       a: Sì. La nostra fabbrica mantiene una certificazione conformità sociale BSCI valida (rapporto audit disponibile su richiesta). Deteniamo anche  per la gestione qualità e tutti i prodotti portano la certificazione CE . La documentazione conformità REACH e RoHS è fornita con ogni spedizione OEM.
     - q: Potete spedire FOB Qingdao o CIF al nostro porto?
       a: Sì. Spediamo FOB Qingdao, CIF verso i principali porti globali e DDP per partner qualificati. Il nostro team logistico gestisce prenotazione container, documentazione export e sdoganamento. Spediamo in 50+ paesi nei mercati UE, USA, AU e Asia.
-b2b_moq: 'MOQ standard: 5—0 unità per modello (SUP/SUP/drop-stitch). MOQ SUP: 2— unità. Ordini di prova benvenuti per nuove partnership.'
+b2b_moq: 'MOQ standard: 5–10 unità per modello (SUP/SUP/drop-stitch). MOQ SUP: 2–5 unità. Ordini di prova benvenuti per nuove partnership.'
 production_flow:
   tagline: Flusso di produzione
   title: Dal materiale alla barca finita
@@ -168,7 +168,7 @@ production_flow:
       responsibility: Capo squadra di assemblaggio   controllo qualità di linea
     - stage: Cinque
       title: Verifica della Pressione e Controllo Qualità
-      description: Ogni camera viene gonfiata a 1,25× la pressione nominale (tipicamente 20—5 PSI) e mantenuta per 24—8 ore. I sensori di pressione registrano continuamente. Le camere che superano il 5% di perdita di pressione vengono respinte e inviate per una nuova ispezione delle cuciture.
+      description: Ogni camera viene gonfiata a 1,25× la pressione nominale (tipicamente 20–25 PSI) e mantenuta per 24–48 ore. I sensori di pressione registrano continuamente. Le camere che superano il 5% di perdita di pressione vengono respinte e inviate per una nuova ispezione delle cuciture.
       qc_check: Registro della pressione per 24 ore, calibrazione del sensore verificata quotidianamente, lettura della pressione compensata per la temperatura, ri-test della giunzione dopo la riparazione
       qc_threshold: Perdita di pressione massima del 5% in 24 ore a temperatura stabile. Qualsiasi camera che superi questo valore = nuovo test completo del lotto di produzione al 100%
       responsibility: Laboratorio qualità (indipendente dalla produzione, riferisce alla direzione)
@@ -183,7 +183,7 @@ workforce:
   title: Forza lavoro e competenze
   engineers: Venticinque
   engineers_detail: Ingegneri in R&S, progettazione stampi, laboratorio dei materiali e ingegneria di produzione. Media di 7 anni nella produzione di gonfiabili.
-  shift_pattern: 2 turni/giorno (07:00—17:30, 15:30—00:00). Turno di notte opzionale per ordini urgenti.
+  shift_pattern: 2 turni/giorno (07:00–17:30, 15:30–00:00). Turno di notte opzionale per ordini urgenti.
   training: Formazione QC mensile, esercitazioni di sicurezza trimestrali, valutazione delle competenze annuale. I nuovi assunti completano un'induzione di 40 ore prima di lavorare sulla linea di produzione.
   departments:
     - name: R&D & Engineering
@@ -246,7 +246,7 @@ qc_dashboard:
     - value: AQL 2,5
       label: Soglia di difetto maggiore
       detail: Secondo lo standard di campionamento ISO 2859
-    - value: 24—8h
+    - value: 24–48h
       label: Durata della pressione
       detail: A seconda della categoria di prodotto
     - value: 1,25×

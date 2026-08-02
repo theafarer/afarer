@@ -85,7 +85,7 @@ equipment_section:
     - name: Otomatik PVC Kesim Makinesi
       spec: CNC kontrollü, 0,1 mm hassasiyet
     - name: Isı Yalıtım Makinesi
-      spec: Sıcak hava, 200°C—00 °C, boru birleştirme için
+      spec: Sıcak hava, 200°C–300 °C, boru birleştirme için
     - name: RF Dielektrik Kaynak Presi
       spec: 15 kW, hava geçirmez dikiş kaynağı
     - name: Fiberglas El Yatırmalı Kalıplar
@@ -127,14 +127,14 @@ faq_section:
   title: B2B ve OEM Sıkça Sorulan Sorular
   questions:
     - q: OEM şişme SUP boardları için minimum sipariş miktarı (MOQ) nedir?
-      a: Standart OEM modelleri için MOQ 5—0 adetten başlar. Özel kalıplar ve özel etiket projeleri, karmaşıklığa bağlı olarak minimum 200 adet gerektirir. Yeni marka lansmanları için deneme siparişleri ve numune çalışmaları mevcuttur.
+      a: Standart OEM modelleri için MOQ 5–10 adetten başlar. Özel kalıplar ve özel etiket projeleri, karmaşıklığa bağlı olarak minimum 200 adet gerektirir. Yeni marka lansmanları için deneme siparişleri ve numune çalışmaları mevcuttur.
     - q: afarer BSCI sertifikasına sahip mi?
       a: Evet. Fabrikamız geçerli BSCI sosyal uyumluluk sertifikasına sahiptir (denetim raporu talep üzerine mevcuttur). Ayrıca kalite yönetimi için ISO 9001 ve tüm ürünler CE CE  sertifikasına sahiptir. Her OEM sevkiyatıyla birlikte REACH ve RoHS uyumluluk belgeleri sağlanır.
     - q: Bir OEM siparişi için tipik teslim süresi nedir?
       a: Evet. Fabrikamız geçerli BSCI sosyal uyumluluk sertifikasına sahiptir (denetim raporu talep üzerine mevcuttur). Ayrıca kalite yönetimi için ISO 9001 ve tüm ürünler CE CE  sertifikasına sahiptir. Her OEM sevkiyatıyla birlikte REACH ve RoHS uyumluluk belgeleri sağlanır.
     - q: FOB Qingdao veya CIF olarak limanımıza gönderebilir misiniz?
       a: Evet. FOB Qingdao, büyük küresel limanlara CIF ve nitelikli ortaklar için DDP olarak gönderim yapıyoruz. Lojistik ekibimiz konteyner rezervasyonu, ihracat belgeleri ve gümrük işlemlerini yönetir. AB, ABD, AU ve Asya pazarlarında 50'den fazla ülkeye gönderim yapıyoruz.
-b2b_moq: 'Standart MOQ: Model başına 5—0 adet (SUP/SUP/drop-stitch). SUP MOQ: 2— adet. Yeni ortaklıklar için deneme siparişleri kabul edilir.'
+b2b_moq: 'Standart MOQ: Model başına 5–10 adet (SUP/SUP/drop-stitch). SUP MOQ: 2–5 adet. Yeni ortaklıklar için deneme siparişleri kabul edilir.'
 production_flow:
   tagline: Üretim Akışı
   title: Ham Maddeden Bitmiş Tekneye
@@ -166,7 +166,7 @@ production_flow:
       responsibility: Montaj ekibi lideri + hat QC
     - stage: '05'
       title: Basınç Testi ve Kalite Kontrol
-      description: Her hava odası 1,25× nominal basınca (tipik olarak 20—5 PSI) şişirilir ve 24—8 saat boyunca tutulur. Basınç sensörleri sürekli olarak kayıt yapar. %5'ten fazla basınç düşüşü yaşayan odalar reddedilir ve dikiş yeniden kontrolüne gönderilir.
+      description: Her hava odası 1,25× nominal basınca (tipik olarak 20–25 PSI) şişirilir ve 24–48 saat boyunca tutulur. Basınç sensörleri sürekli olarak kayıt yapar. %5'ten fazla basınç düşüşü yaşayan odalar reddedilir ve dikiş yeniden kontrolüne gönderilir.
       qc_check: 24 saat basınç koruma kaydı, günlük sensör kalibrasyonu doğrulaması, sıcaklık kompanzasyonlu basınç okuması, onarım sonrası dikiş yeniden testi
       qc_threshold: Stabil sıcaklıkta 24 saatte maksimum %5 basınç düşüşü. Bu değeri aşan her oda = tüm parti üretiminin %100 yeniden testi
       responsibility: Kalite laboratuvarı (üretimden bağımsız, yönetime rapor verir)
@@ -181,7 +181,7 @@ workforce:
   title: İş Gücü ve Uzmanlık
   engineers: 25+
   engineers_detail: Ar-Ge, kalıp tasarımı, malzeme laboratuvarı ve üretim mühendisliği alanlarında mühendisler. Şişirilebilir üretimde ortalama 7+ yıl deneyim.
-  shift_pattern: Günde 2 vardiya (07:00—5:30, 15:30—0:00). Acil siparişler için opsiyonel gece vardiyası.
+  shift_pattern: Günde 2 vardiya (07:00–15:30, 15:30–00:00). Acil siparişler için opsiyonel gece vardiyası.
   training: Aylık kalite kontrol eğitimi, üç aylık güvenlik tatbikatları, yıllık beceri değerlendirmesi. Yeni işe alınanlar üretim hattında çalışmadan önce 40 saatlik oryantasyonu tamamlar.
   departments:
     - name: R&D & Engineering
@@ -242,7 +242,7 @@ qc_dashboard:
     - value: AQL 2.5
       label: Büyük kusur eşiği
       detail: ISO 2859 örnekleme standardına göre
-    - value: 24—8 saat
+    - value: 24–48 saat
       label: Basınç tutma süresi
       detail: Ürün kategorisine göre
     - value: 1.25×

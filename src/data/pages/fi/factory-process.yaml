@@ -11,41 +11,41 @@ steps:
   - step: '01'
     title: Materiaalien vastaanotto ja tarkastus
     description: Jokainen saapuva PVC-kangaserä, lasikuitumatto, hartsi ja laitteisto tarkastetaan määrittelyjen mukaisesti. Kangasnäytteet testataan vetolujuuden, paksuuden tasaisuuden ja UV-kestävyyden osalta ennen tuotantoon luovutusta. Poikkeavat materiaalit asetetaan karanteeniin ja palautetaan.
-    duration: 1— päivää
+    duration: 1–2 päivää
   - step: '02'
     title: Automaattinen PVC-leikkaus
     description: >-
       Hyväksytyt kankaat asetetaan automaattiselle CNC-leikkauskoneelle ja leikataan alle millimetrin tarkkuudella. Tietokoneoptimoitu sijoittelu järjestää paneelit hukan minimoimiseksi —tyypillisesti alle 5 %. Leikatut paneelit merkitään venemallin ja kammion mukaan, niputetaan ja siirretään
       hitsauspajaan.
-    duration: 2— tuntia per venesarja
+    duration: 2–4 tuntia per venesarja
   - step: '03'
     title: Putkien kuumasaumaus ja hitsaus
     description: >-
-      Paneelit harsitaan ja liitetään kuumasaumauskoneilla  kuumailmahitsauksella säädetyissä lämpötiloissa 200—00 °C. Pääsaumat vahvistetaan RF-dielektrisellä hitsauksella ilmatiiviitä, lujia liitoksia varten. Valmiit kammiot täytetään 1,5-kertaiseen käyttöpaineeseen 30 minuutin ilmanpysyvyyden
+      Paneelit harsitaan ja liitetään kuumasaumauskoneilla  kuumailmahitsauksella säädetyissä lämpötiloissa 200–300 °C. Pääsaumat vahvistetaan RF-dielektrisellä hitsauksella ilmatiiviitä, lujia liitoksia varten. Valmiit kammiot täytetään 1,5-kertaiseen käyttöpaineeseen 30 minuutin ilmanpysyvyyden
       varmistusta varten.
-    duration: 1— päivää per vene
+    duration: 1–2 päivää per vene
   - step: '04'
     title: Lasikuituisten SUP-runkojen muovaus
     description: >-
       SUP-veneiden rungot valmistetaan käsinlaminoimalla lasikuitua. Lasikuitumaton ja kudotun rovingin kerrokset käsitellään käsin polyesteri- tai vinyyliesterihartsilla tarkkuusmuoteissa. Jokainen kerros tyhjiöpussitetaan tasaisen laminaatin laadun varmistamiseksi. Runko viimeistellään gelcoatilla
       korkeakiiltoista, UV-kestävää meripintaa varten.
-    duration: 2— päivää per runko
+    duration: 2–4 päivää per runko
   - step: '05'
     title: SUP-painatus ja koristelu
     description: SUP-lautojen kansigrafiikat levitetään digitaalipainatuksella  täysvärisiin valokuvanlaatuisiin kuvioihin ja silkkipainatuksella  kestäviin logoihin ja toistuviin kuvioihin. Tulosteet kovetetaan ja suljetaan UV- ja kulutuskestävyyttä varten.
-    duration: 1— päivää
+    duration: 1–2 päivää
   - step: '06'
     title: Loppukokoonpano ja varustelu
     description: >-
       Lasikuituiset rungot ja PVC-putkiyksiköt yhdistetään kokoonpanolinjalla. Moottori asennetaan, ohjaus- ja kaasulaitteet kytketään, polttoainejärjestelmä asennetaan ja täydellinen sähköjohtosarja johdotetaan. Jokainen vene noudattaa 100-pisteistä kokoonpanotarkistuslistaa, jossa on pakollinen
       hyväksyntä jokaisessa vaiheessa.
-    duration: 2— päivää
+    duration: 2–4 päivää
   - step: '07'
     title: Laaduntestaus ja tarkastus
     description: >-
       Jokainen valmis vene käy läpi pakollisen laadunportin: kammioiden ilmanpysyvyystesti, järjestelmien toimintatarkastus, kiinnittimien vääntömomentin varmistus ja kosmeettinen tarkastus. Räätälöidyt ja prototyyppirakennukset saavat myös vesillä tehtäviä merikokeita, jotka kattavat nopeuden,
       käsiteltävyyden, vakauden ja kestävyyden.
-    duration: 1— päivää
+    duration: 1–2 päivää
   - step: '08'
     title: Pakkaus ja lähetys
     description: >-

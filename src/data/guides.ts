@@ -109,7 +109,7 @@ export const guides: GuideRecord[] = [
     audience: 'All paddle boarders and water sports participants.',
     steps: [
       'Check weather forecast —avoid winds over 15 mph and thunderstorms',
-      'Verify water temperature —cold water (<60掳F/15掳C) requires a wetsuit or drysuit',
+      'Verify water temperature —cold water (<60°F/15°C) requires a wetsuit or drysuit',
       'Inspect equipment —check for leaks, cracks, and proper inflation',
       'Wear a CE-certified life vest at all times',
       'Attach the leash to your ankle or calf',
@@ -190,7 +190,7 @@ export const guides: GuideRecord[] = [
       'Check wind speed and direction —offshore wind (blowing from land to sea) is the most dangerous',
       'Assess wave conditions —wave period matters as much as wave height',
       'Know the tide —tidal currents can be stronger than your paddling speed',
-      'Measure water temperature —below 60掳F/15掳C requires thermal protection',
+      'Measure water temperature —below 60°F/15°C requires thermal protection',
       'Check visibility —fog and heavy rain reduce visibility and increase collision risk',
       'Understand local hazards —submerged rocks, strong currents, boat traffic zones',
     ],

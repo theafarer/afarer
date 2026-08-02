@@ -15,7 +15,7 @@ highlight:
   - value: 200+
     label: Dodané zakázkové projekty
     detail: Napříč všemi produktovými řadami
-  - value: 30—5
+  - value: 30–45
     label: Standardní dodací lhůta (dny)
     detail: Od objednávky (PO) po dodání FOB
 services:
@@ -29,13 +29,13 @@ services:
     description: Vlastní maloobchodní balení, krabice s vlastní značkou, vakuové balení, paletizace a nakládka kontejnerů. K dispozici jsou dodací podmínky FOB Qingdao, CIF nebo DDP.
 moq_table:
   - product: Nafukovací SUP prkna
-    standard_moq: 5—0 kusů
+    standard_moq: 5–10 kusů
     custom_moq: 200+ jednotek
-    lead_time: 30—5 days
+    lead_time: 30–45 days
   - product: Záchranné vesty a bezpečnost
-    standard_moq: 100—00 kusů
+    standard_moq: 100–200 kusů
     custom_moq: 1,000+ kusů
-    lead_time: 20—0 dní
+    lead_time: 20–30 dní
 why_us:
   - title: Vertikální integrace
     description: Vlastníme továrnu, formy i dodavatelský řetězec — žádné mezičlánky, žádní subdodavatelé. Díky tomu máme pod kontrolou kvalitu, náklady i dodací termíny.

@@ -81,7 +81,7 @@ equipment_section:
     - name: Automatic PVC Cutting Machine
       spec: CNC řízené, přesnost 0.1 mm
     - name: Heat Sealing Machine
-      spec: Horkovzdušné, 200°C—00 °C, pro spojování komor
+      spec: Horkovzdušné, 200°C–300 °C, pro spojování komor
     - name: RF Dielectric Welding Press
       spec: 15 kW, vzduchotěsné svařování švů
     - name: Drop-Stitch Core Lamination Press
@@ -123,14 +123,14 @@ faq_section:
   title: Časté dotazy B2B a OEM
   questions:
     - q: Jaké je minimální objednací množství (MOQ) pro OEM nafukovací SUP prkna?
-      a: MOQ začíná na 5—0 kusech u standardních modelů OEM. Vlastní formy a projekty privátních značek vyžadují minimálně 200 kusů podle náročnosti. Pro uvedení nových značek nabízíme zkušební a vzorové zakázky.
+      a: MOQ začíná na 5–10 kusech u standardních modelů OEM. Vlastní formy a projekty privátních značek vyžadují minimálně 200 kusů podle náročnosti. Pro uvedení nových značek nabízíme zkušební a vzorové zakázky.
     - q: Má afarer certifikaci BSCI?
       a: Ano. Naše továrna udržuje platnou certifikaci sociální shody BSCI (protokol z auditu je k dispozici na vyžádání). Držíme také  pro řízení kvality a všechny produkty nesou certifikaci CE  . Dokumentace o souladu s REACH a RoHS je přiložena ke každé zásilce OEM.
     - q: Jaká je typická dodací lhůta objednávky OEM?
       a: Ano. Naše továrna udržuje platnou certifikaci sociální shody BSCI (protokol z auditu je k dispozici na vyžádání). Držíme také  pro řízení kvality a všechny produkty nesou certifikaci CE  . Dokumentace o souladu s REACH a RoHS je přiložena ke každé zásilce OEM.
     - q: Můžete dodat za podmínek FOB Qingdao nebo CIF do našeho přístavu?
       a: Ano. Dodáváme za podmínek FOB Qingdao, CIF do hlavních světových přístavů a DDP pro kvalifikované partnery. Náš logistický tým zajišťuje rezervaci kontejnerů, exportní dokumentaci a celní odbavení. Dodáváme do více než 50 zemí na trzích EU, USA, Austrálie a Asie.
-b2b_moq: 'Standardní MOQ: 5—0 jednotek na model (SUP/kajak/drop-stitch). MOQ pro SUP: 2— jednotek. Zkušební objednávky vítány pro nová partnerství.'
+b2b_moq: 'Standardní MOQ: 5–10 jednotek na model (SUP/kajak/drop-stitch). MOQ pro SUP: 2–5 jednotek. Zkušební objednávky vítány pro nová partnerství.'
 production_flow:
   tagline: Průběh výroby
   title: Od materiálu k hotovému člunu
@@ -162,7 +162,7 @@ production_flow:
       responsibility: Vedoucí montážního týmu + kontrola kvality na lince
     - stage: '05'
       title: Tlakové testy a kontrola kvality
-      description: Každá komora je nafouknuta na 1.25× jmenovitý tlak (obvykle 20—5 PSI) a udržována po dobu 24—8 hodin. Tlakové senzory nepřetržitě zaznamenávají hodnoty. Komory s poklesem tlaku nad 5 % jsou vyřazeny a odeslány k nové kontrole svarů.
+      description: Každá komora je nafouknuta na 1.25× jmenovitý tlak (obvykle 20–25 PSI) a udržována po dobu 24–48 hodin. Tlakové senzory nepřetržitě zaznamenávají hodnoty. Komory s poklesem tlaku nad 5 % jsou vyřazeny a odeslány k nové kontrole svarů.
       qc_check: 24hodinový záznam držení tlaku, denně ověřovaná kalibrace senzorů, údaj o tlaku kompenzovaný podle teploty, opakovaný test švů po opravě
       qc_threshold: Maximální pokles tlaku 5 % za 24 h při stabilní teplotě. Komora, která tento limit překročí = 100% opakovaný test celé výrobní šarže
       responsibility: Laboratoř kvality (nezávislá na výrobě, podléhá vedení)
@@ -177,7 +177,7 @@ workforce:
   title: Pracovní síla a odbornost
   engineers: 25+
   engineers_detail: Inženýři v oblasti výzkumu a vývoje, návrhu forem, materiálové laboratoře a výrobního inženýrství. V průměru více než 7 let zkušeností s výrobou nafukovacích člunů.
-  shift_pattern: 2 směny denně (07:00—5:30, 15:30—0:00). Pro urgentní objednávky je možná noční směna.
+  shift_pattern: 2 směny denně (07:00–15:30, 15:30–00:00). Pro urgentní objednávky je možná noční směna.
   training: Měsíční školení QC, čtvrtletní bezpečnostní cvičení, roční hodnocení dovedností. Noví zaměstnanci absolvují 40hodinové vstupní školení, než začnou pracovat na výrobní lince.
   departments:
     - name: R&D & Engineering
@@ -238,7 +238,7 @@ qc_dashboard:
     - value: AQL 2.5
       label: Hranice závažné vady
       detail: Podle normy pro výběr vzorků ISO 2859
-    - value: 24—8h
+    - value: 24–48h
       label: Doba udržení tlaku
       detail: V závislosti na kategorii produktu
     - value: 1.25×

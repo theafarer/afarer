@@ -15,7 +15,7 @@ highlight:
   - value: 200+
     label: Toimitetut räätälöidyt projektit
     detail: Kaikissa tuotelinjoissa
-  - value: 30—5
+  - value: 30–45
     label: Normaali toimitusaika (päivää)
     detail: PO:sta FOB:hen
 services:
@@ -29,13 +29,13 @@ services:
     description: Mukautettu vähittäispakkaus, omalla nimellä varustetut laatikot, tyhjöpakkaus, palettikäsittely ja konttiin lastaus. FOB Qingdao, CIF tai DDP toimitusehdot saatavilla.
 moq_table:
   - product: Puhallettavat SUP-laudat
-    standard_moq: 5—0 units
+    standard_moq: 5–10 units
     custom_moq: Yli 200 kappaletta
-    lead_time: 30—5 päivää
+    lead_time: 30–45 päivää
   - product: Pelastusliivit ja turvallisuus
     standard_moq: 100–00 kpl
     custom_moq: 1 000+ kappaletta
-    lead_time: 20—0 päivää
+    lead_time: 20–30 päivää
 why_us:
   - title: Vertikaalinen integraatio
     description: Omistamme tehtaamme, muotimme ja toimitusketjun —ei välittäjiä, ei alihankkijoita. Tämä antaa meille hallinnan laadusta, kustannuksista ja toimituksista.

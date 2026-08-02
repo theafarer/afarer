@@ -15,7 +15,7 @@ highlight:
   - value: 200+
     label: Özel projeler teslim edildi
     detail: Tüm ürün hatları genelinde
-  - value: 30—5
+  - value: 30–45
     label: Standart termin süresi (gün)
     detail: PO'dan FOB'a
 services:
@@ -29,13 +29,13 @@ services:
     description: Özel perakende ambalaj, özel markalı kutular, vakum paketleme, paletleme ve konteyner yükleme. FOB Qingdao, CIF veya DDP sevkiyat koşulları mevcuttur.
 moq_table:
   - product: Şişirilebilir SUP Tahtaları
-    standard_moq: 5—0 adet
+    standard_moq: 5–10 adet
     custom_moq: 200+ birim
-    lead_time: 30—5 gün
+    lead_time: 30–45 gün
   - product: Can Yelekleri ve Güvenlik
-    standard_moq: 100—00 adet
+    standard_moq: 100–200 adet
     custom_moq: 1.000+ adet
-    lead_time: 20—0 gün
+    lead_time: 20–30 gün
 why_us:
   - title: Dikey Entegrasyon
     description: Fabrikamızı, kalıplarımızı ve tedarik zincirimize sahibiz — aracılara, alt yüklenicilere gerek yok. Bu bize kalite, maliyet ve teslimat üzerinde kontrol sağlar.

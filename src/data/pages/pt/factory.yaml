@@ -87,7 +87,7 @@ equipment_section:
     - name: Máquina de Corte Automática de PVC
       spec: Controlada por CNC, precisão de 0,1 mm
     - name: Máquina de Selagem Térmica
-      spec: Ar quente, 200°C—00 °C, para união de tubos
+      spec: Ar quente, 200°C–300 °C, para união de tubos
     - name: Prensa de Soldagem Dielétrica RF
       spec: 15 kW, soldagem de juntas herméticas
     - name: Moldes de Lay-Up Manual em Fibra de Vidro
@@ -129,7 +129,7 @@ faq_section:
   title: Perguntas Frequentes B2B e OEM
   questions:
     - q: Qual é a quantidade mínima de pedido (MOQ) para pranchas SUP infláveis OEM?
-      a: A MOQ começa em 5—0 unidades para modelos OEM padrão. Moldes personalizados e projetos de marca própria exigem um mínimo de 200 unidades, dependendo da complexidade. Pedidos de teste e execuções de amostra estão disponíveis para lançamentos de novas marcas.
+      a: A MOQ começa em 5–10 unidades para modelos OEM padrão. Moldes personalizados e projetos de marca própria exigem um mínimo de 200 unidades, dependendo da complexidade. Pedidos de teste e execuções de amostra estão disponíveis para lançamentos de novas marcas.
     - q: A afarer possui certificação BSCI?
       a: >-
         Sim. Nossa fábrica mantém certificação de conformidade social BSCI válida (relatório de auditoria disponível mediante solicitação). Também possuímos  para gestão da qualidade e todos os produtos possuem certificação CE . Documentação de conformidade REACH e RoHS fornecida com cada remessa
@@ -170,7 +170,7 @@ production_flow:
       responsibility: Líder de equipe de montagem   QC de linha
     - stage: Cinco
       title: Testes de Pressão e Retenção de Qualidade
-      description: Cada câmara é inflada para 1,25× a pressão nominal (tipicamente 20—5 PSI) e mantida por 24—8 horas. Sensores de pressão registram continuamente. Câmaras que excedem queda de pressão de 5% são rejeitadas e enviadas para reinspeção da costura.
+      description: Cada câmara é inflada para 1,25× a pressão nominal (tipicamente 20–25 PSI) e mantida por 24–48 horas. Sensores de pressão registram continuamente. Câmaras que excedem queda de pressão de 5% são rejeitadas e enviadas para reinspeção da costura.
       qc_check: Registro de pressão mantida por 24h, calibração do sensor verificada diariamente, leitura de pressão compensada pela temperatura, reteste da junta após reparo
       qc_threshold: Queda de pressão máxima de 5% em 24h em temperatura estável. Qualquer câmara que exceder isso = re-teste de 100% de todo o lote de produção
       responsibility: Laboratório de qualidade (independente da produção, reporta-se à administração)
@@ -185,7 +185,7 @@ workforce:
   title: Força de Trabalho e Especialização
   engineers: Vinte e cinco
   engineers_detail: Engenheiros de P&D, design de moldes, laboratório de materiais e engenharia de produção. Média de 7 anos em fabricação de infláveis.
-  shift_pattern: 2 turnos/dia (07:00—17:30, 15:30—00:00). Turno noturno opcional para pedidos urgentes.
+  shift_pattern: 2 turnos/dia (07:00–17:30, 15:30–00:00). Turno noturno opcional para pedidos urgentes.
   training: Treinamento mensal de CQ, simulações de segurança trimestrais, avaliação anual de habilidades. Novos contratados completam uma indução de 40 horas antes de trabalhar na linha de produção.
   departments:
     - name: R&D & Engineering
@@ -248,7 +248,7 @@ qc_dashboard:
     - value: AQL 2,5
       label: Limiar de defeito grave
       detail: De acordo com a norma de amostragem ISO 2859
-    - value: 24—8h
+    - value: 24–48h
       label: Duração da manutenção da pressão
       detail: Dependendo da categoria do produto
     - value: 1,25×

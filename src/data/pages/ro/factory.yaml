@@ -87,7 +87,7 @@ equipment_section:
     - name: Automatic PVC Cutting Machine
       spec: Control CNC, precizie de 0.1 mm
     - name: Heat Sealing Machine
-      spec: Aer cald, 200°C—00 °C, pentru lipirea tuburilor
+      spec: Aer cald, 200°C–300 °C, pentru lipirea tuburilor
     - name: RF Dielectric Welding Press
       spec: 15 kW, sudarea etanșă a cusăturilor
     - name: Drop-Stitch Core Lamination Press
@@ -129,7 +129,7 @@ faq_section:
   title: Întrebări frecvente B2B & OEM
   questions:
     - q: Care este cantitatea minimă de comandă (MOQ) pentru plăcile SUP gonflabile OEM?
-      a: MOQ-ul începe de la 5—0 de unități pentru modelele OEM standard. Mucelele personalizate și proiectele private-label necesită un minim de 200 de unități, în funcție de complexitate. Comenzile de probă și seriile de testare sunt disponibile pentru lansarea de branduri noi.
+      a: MOQ-ul începe de la 5–10 de unități pentru modelele OEM standard. Mucelele personalizate și proiectele private-label necesită un minim de 200 de unități, în funcție de complexitate. Comenzile de probă și seriile de testare sunt disponibile pentru lansarea de branduri noi.
     - q: Deține afarer certificarea BSCI?
       a: >-
         Da. Fabrica noastră deține o certificare BSCI valabilă de conformitate socială (raportul de audit este disponibil la cerere). De asemenea, deținem  pentru managementul calității, iar toate produsele sunt livrate cu certificare CE . Documentația de conformitate REACH și RoHS este furnizată cu
@@ -140,7 +140,7 @@ faq_section:
         fiecare expediere OEM.
     - q: Puteți expedia FOB Qingdao sau CIF către portul nostru?
       a: Da. Expediem FOB Qingdao, CIF în principalele porturi globale și DDP pentru parteneri calificați. Echipa noastră de logistică se ocupă de rezervarea containerelor, documentația de export și vămuire. Expediem în peste 50 de țări, pe piețele din UE, SUA, Australia și Asia.
-b2b_moq: 'MOQ standard: 5—0 unități per model (SUP/caiac/drop-stitch). MOQ pentru SUP: 2— unități. Comenzile de test sunt binevenite pentru parteneriate noi.'
+b2b_moq: 'MOQ standard: 5–10 unități per model (SUP/caiac/drop-stitch). MOQ pentru SUP: 2–5 unități. Comenzile de test sunt binevenite pentru parteneriate noi.'
 production_flow:
   tagline: Fluxul de producție
   title: De la material la ambarcațiunea finită
@@ -172,7 +172,7 @@ production_flow:
       responsibility: Șef echipă de asamblare + control al calității pe linie
     - stage: '05'
       title: Testare la presiune și control al calității
-      description: Fiecare cameră este umflată la 1.25× din presiunea nominală (de obicei 20—5 PSI) și menținută timp de 24—8 ore. Senzorii de presiune înregistrează continuu. Camerele cu o scădere a presiunii de peste 5% sunt respinse și trimise la re-inspectarea îmbinărilor.
+      description: Fiecare cameră este umflată la 1.25× din presiunea nominală (de obicei 20–25 PSI) și menținută timp de 24–48 ore. Senzorii de presiune înregistrează continuu. Camerele cu o scădere a presiunii de peste 5% sunt respinse și trimise la re-inspectarea îmbinărilor.
       qc_check: Jurnal de menținere a presiunii timp de 24h, calibrare zilnică verificată a senzorilor, citire a presiunii compensată la temperatură, re-testare a cusăturilor după reparații
       qc_threshold: Pierdere de presiune max. 5% în 24h la temperatură stabilă. Orice cameră care depășește această valoare = retestare 100% a întregului lot de producție
       responsibility: Laborator de calitate (independent de producție, raportează conducerii)
@@ -187,7 +187,7 @@ workforce:
   title: Forță de muncă și expertiză
   engineers: 25+
   engineers_detail: Ingineri din cercetare și dezvoltare, proiectarea matrițelor, laboratorul de materiale și inginerie de producție. În medie, peste 7 ani de experiență în fabricarea produselor inflabile.
-  shift_pattern: 2 schimburi/zi (07:00—5:30, 15:30—0:00). Schimb de noapte opțional pentru comenzi urgente.
+  shift_pattern: 2 schimburi/zi (07:00–15:30, 15:30–00:00). Schimb de noapte opțional pentru comenzi urgente.
   training: Instruire lunară pentru controlul calității, exerciții de siguranță trimestriale, evaluare anuală a competențelor. Angajații noi parcurg o instruire introductivă de 40 de ore înainte de a lucra pe linia de producție.
   departments:
     - name: R&D & Engineering
@@ -250,7 +250,7 @@ qc_dashboard:
     - value: AQL 2.5
       label: Prag de defect major
       detail: Conform standardului de eșantionare ISO 2859
-    - value: 24—8h
+    - value: 24–48h
       label: Durata de menținere a presiunii
       detail: În funcție de categoria de produs
     - value: 1.25×

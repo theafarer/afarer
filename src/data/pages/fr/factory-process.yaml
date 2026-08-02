@@ -9,31 +9,31 @@ steps:
   - step: '01'
     title: Réception et Inspection des Matériaux
     description: Chaque lot entrant de tissu PVC, fiberglass mat, resin, and hardware is inspected against specification. Fabric samples are tested for tensile strength, thickness uniformity, and UV resistance before release to production. Non-conforming materials are quarantined and returned.
-    duration: 1— jours
+    duration: 1–2 jours
   - step: '02'
     title: Découpe Automatique PVC
     description: Les tissus approuvés sont découpés sur la machine CNC avec une précision submillimétrique. Le placement optimisé par ordinateur minimise les déchets — généralement moins de 5 %.
-    duration: 2— heures par kit bateau
+    duration: 2–4 heures par kit bateau
   - step: '03'
     title: Thermosoudure et Soudure de Tubes
     description: Les panneaux sont pointés et collés avec des machines de thermosoudure à air chaud à des températures contrôlées de 200–600 °C. Les joints principaux sont renforcés par soudure diélectrique RF pour des joints étanches à haute résistance. Les chambres terminées sont gonflées à 1,5 fois la pression de travail pour une validation de rétention d’air de 30 minutes.
-    duration: 1— jour par bateau
+    duration: 1–2 jour par bateau
   - step: '04'
     title: Liaison du Cœur Drop-Stitch
     description: Les cœurs drop-stitch sont liés aux stratifiés PVC par thermolamination. Des milliers de fils polyester créent une structure rigide à 12-15 PSI. Les bandes de bord sont fusionnées en triple couche.
-    duration: 1— jour par planche
+    duration: 1–2 jour par planche
   - step: '05'
     title: Impression et Décoration SUP
     description: Les graphiques de pont des planches SUP sont appliqués par impression numérique pour des designs couleur qualité photo, et sérigraphie pour des logos durables et motifs répétés. Les impressions sont durcies et scellées pour la résistance UV et à l'abrasion.
-    duration: 1— jours
+    duration: 1–2 jours
   - step: '06'
     title: Assemblage Final et Montage
     description: Les valves, anneaux en D, poignées, boîtiers d’ailerons et tapis de pont sont installés sur la chaîne d’assemblage. Chaque planche suit une liste de contrôle d’assemblage de 100 points avec validation obligatoire à chaque étape.
-    duration: 1— jours
+    duration: 1–2 jours
   - step: '07'
     title: Tests Qualité et Inspection
     description: 'Chaque planche terminée passe par un contrôle qualité obligatoire: chamber air-retention test, hardware function check, fastener torque verification, and cosmetic inspection. Custom and prototype builds also receive in-water trials covering stability and handling.'
-    duration: 1— jours
+    duration: 1–2 jours
   - step: '08'
     title: Emballage et Expédition
     description: Les planches sont dégonflées, pliées selon la procédure, emballées dans des sacs tissés renforcés ou des boîtes de vente au détail, et chargées pour expédition. Chaque colis est étiqueté avec le modèle, le numéro de série et la destination. Nous coordonnons avec des transitaires pour les expéditions FCL et LCL dans le monde entier.

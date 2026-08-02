@@ -127,7 +127,7 @@ faq_section:
   title: B2B- ja OEM-usein kysytyt kysymykset
   questions:
     - q: Mik? on v?himm?istilausm??r? (MOQ) OEM-kumisille SUP-laudoille?
-      a: MOQ alkaa 5—0 yksiköstä vakio-OEM-malleille. R??t?l?idyt muotit ja oman etiketin projektit vaativat v?hint??n 200 yksikk?? riippuen monimutkaisuudesta. Koetilaukset ja n?yte-er?t ovat saatavilla uusille br?ndilanseerauksille.
+      a: MOQ alkaa 5–10 yksiköstä vakio-OEM-malleille. R??t?l?idyt muotit ja oman etiketin projektit vaativat v?hint??n 200 yksikk?? riippuen monimutkaisuudesta. Koetilaukset ja n?yte-er?t ovat saatavilla uusille br?ndilanseerauksille.
     - q: Onko afarerilla BSCI-sertifiointi?
       a: >-
         Kyll?. Tehtaallamme on voimassa oleva BSCI-sosiaalinen vaatimustenmukaisuussertifiointi (auditointiraportti saatavilla pyynn?st?). Meill? on my?s  laadunhallinnalle ja kaikki tuotteet ovat CE-sertifioituja . REACH- ja RoHS-vaatimustenmukaisuusdokumentaatio toimitetaan jokaisen
@@ -136,7 +136,7 @@ faq_section:
       a: Vakiotoimitusaika on 30°C45 p?iv?? vahvistetusta ostotilauksesta ja k?sirahasta. R??t?l?ityjen muottien kehitys lis?? 15°C20 p?iv?? ty?kalujen valmistukseen. Tarjoamme nopeutettua tuotantoa kiireellisille tilauksille ja sesonkikiireille ennen kes?? (tammi°Cmaaliskuu).
     - q: Voitteko toimittaa FOB Qingdao tai CIF satamaamme?
       a: Kyll?. Toimitamme FOB Qingdao, CIF t?rkeimpiin maailmansatamiin ja DDP p?teville kumppaneille. Logistiikkatiimimme hoitaa konttivarauksen, vientidokumentaation ja tulliselvityksen. Toimitamme yli 50 maahan EU:n, USA:n, AU:n ja Aasian markkinoilla.
-b2b_moq: 'Vakio-MOQ: 5—0 yksikköä per malli (SUP/kajakki/drop-stitch). SUP-MOQ: 2— yksikköä. Koetilaukset tervetulleita uusille kumppanuuksille.'
+b2b_moq: 'Vakio-MOQ: 5–10 yksikköä per malli (SUP/kajakki/drop-stitch). SUP-MOQ: 2–5 yksikköä. Koetilaukset tervetulleita uusille kumppanuuksille.'
 production_flow:
   tagline: Tuotannonkulku
   title: Materiaalista valmiiksi veneeksi
@@ -168,7 +168,7 @@ production_flow:
       responsibility: Kokoonpanotiimin vetäjä + linjakohtainen laadunvalvonta
     - stage: '05'
       title: Paineentestaus ja laatupidätys
-      description: Jokainen kammio täytetään 1.25× nimellispaineeseen (tyypillisesti 20—5 PSI) ja sitä pidetään paineessa 24—8 tuntia. Painetunnistimet kirjaavat tietoja jatkuvasti. Kammiot, joissa painehäviö ylittää 5 %, hylätään ja lähetetään saumojen uudelleentarkastukseen.
+      description: Jokainen kammio täytetään 1.25× nimellispaineeseen (tyypillisesti 20–25 PSI) ja sitä pidetään paineessa 24–48 tuntia. Painetunnistimet kirjaavat tietoja jatkuvasti. Kammiot, joissa painehäviö ylittää 5 %, hylätään ja lähetetään saumojen uudelleentarkastukseen.
       qc_check: 24 tunnin paineenpitoloki, anturien kalibrointi varmistettu päivittäin, lämpötilakompensoitu painelukema, saumojen uudelleentestaus korjauksen jälkeen
       qc_threshold: Max 5 % paineen lasku 24 tunnissa vakaassa lämpötilassa. Yksikään kammio, joka ylittää tämän, = 100 % koko tuotantosarjan uudelleentestaus
       responsibility: Laadunvarmistuslaboratorio (riippumaton tuotannosta, raportoijaa johdolle)
@@ -183,7 +183,7 @@ workforce:
   title: Henkilöstö ja asiantuntemus
   engineers: 25+
   engineers_detail: Insinöörejä T&K:sta, muottisuunnittelusta, materiaalilaboratoriosta ja tuotantotekniikasta. Keskimäärin yli 7 vuoden kokemus täytettävien tuotteiden valmistuksesta.
-  shift_pattern: 2 vuoroa/päivä (07:00—5:30, 15:30—0:00). Valinnainen yövuoro kiireellisiä tilauksia varten.
+  shift_pattern: 2 vuoroa/päivä (07:00–15:30, 15:30–00:00). Valinnainen yövuoro kiireellisiä tilauksia varten.
   training: Kuukausittainen laadintakoulutus, kolmen kuukauden turvaharjoitukset, vuosittainen taidonantuntemuksen arvioinnin. Uudet työntekijät suorittavat 40-tuntisen koeamisen ennen kuin aloittavat tuotantolinjalla.
   departments:
     - name: R&D & Engineering
@@ -246,7 +246,7 @@ qc_dashboard:
     - value: AQL 2.5
       label: Merkittävän virheen raja-arvo
       detail: ISO 2859 -otantastandardin mukaisesti
-    - value: 24—8h
+    - value: 24–48h
       label: Paineenpitokesto
       detail: Tuotekategorian mukaan
     - value: 1,25×

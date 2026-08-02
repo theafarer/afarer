@@ -15,7 +15,7 @@ highlight:
   - value: Dwieście
     label: Dostarczone projekty niestandardowe
     detail: We wszystkich liniach produktów
-  - value: 30—5
+  - value: 30–45
     label: Standardowy czas realizacji (dni)
     detail: Od PO do FOB
 services:
@@ -29,11 +29,11 @@ services:
     description: Opakowania detaliczne na zamówienie, pudełka z własną marką, pakowanie próżniowe, paletyzacja i załadunek kontenerów. Dostępne warunki wysyłki FOB Qingdao, CIF lub DDP.
 moq_table:
   - product: Dmuchane deski SUP
-    standard_moq: 5—0 jednostek
+    standard_moq: 5–10 jednostek
     custom_moq: 200 jednostek
-    lead_time: 30—5 dni
+    lead_time: 30–45 dni
   - product: Kamizelki ratunkowe i bezpieczeństwo
-    standard_moq: 100—00 jednostek
+    standard_moq: 100–200 jednostek
     custom_moq: 1 000 jednostek
     lead_time: 20–0 dni
 why_us:
