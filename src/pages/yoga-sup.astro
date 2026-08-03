@@ -2,12 +2,12 @@
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 
-  const metadata = {
-    title: 'SUP Yoga Board | Best Inflatable Paddle Board for Yoga | Afarer OEM Manufacturer',
-    description:
-      'Afarer SUP yoga boards — wide, stable inflatable paddle boards designed for yoga and meditation on the water. Soft EVA decks, spacious platforms, CE certified. OEM/ODM manufacturing available for brands, resorts, and studios.',
-    ignoreTitleTemplate: true,
-  };
+const metadata = {
+  title: 'SUP Yoga Board | Best Inflatable Paddle Board for Yoga | Afarer OEM Manufacturer',
+  description:
+    'Afarer SUP yoga boards — wide, stable inflatable paddle boards designed for yoga and meditation on the water. Soft EVA decks, spacious platforms, CE certified. OEM/ODM manufacturing available for brands, resorts, and studios.',
+  ignoreTitleTemplate: true,
+};
 const pageUrl = 'https://afarer.com/yoga-sup/';
 const today = '2026-07-27';
 ---
@@ -37,12 +37,47 @@ const today = '2026-07-27';
     type="FAQPage"
     data={{
       mainEntity: [
-        { "@type": "Question", name: "What makes a SUP board good for yoga?", acceptedAnswer: { "@type": "Answer", text: "A SUP yoga board needs a wide stable platform (33-36 inches), soft EVA foam deck traction for barefoot comfort, and sufficient length for full-body poses. Stability is the most important factor - the wider the board, the easier it is to hold poses." } },
-        { "@type": "Question", name: "Is SUP yoga harder than regular yoga?", acceptedAnswer: { "@type": "Answer", text: "SUP yoga adds an element of balance challenge not found in studio practice. The unstable surface engages more stabilizer muscles, making even basic poses more intense. Many practitioners find it deepens body awareness and focus." } },
-        { "@type": "Question", name: "What SUP size is best for yoga?", acceptedAnswer: { "@type": "Answer", text: "The best yoga SUP is 10 to 11 feet long and 33 to 36 inches wide. Extra width provides the stability needed for standing poses and smooth transitions between postures." } },
-        { "@type": "Question", name: "Can beginners do SUP yoga?", acceptedAnswer: { "@type": "Answer", text: "Yes. Beginners should start with seated and kneeling poses on a wide, stable board in calm flat water. As confidence grows, progress to standing poses." } },
-        { "@type": "Question", name: "Do you manufacture yoga SUPs for private label?", acceptedAnswer: { "@type": "Answer", text: "Yes. Afarer offers OEM/ODM manufacturing for SUP yoga boards with custom deck pad colors, graphics, and packaging for yoga brands, studios, and resort wellness programs worldwide." } },
-      ]
+        {
+          '@type': 'Question',
+          name: 'What makes a SUP board good for yoga?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A SUP yoga board needs a wide stable platform (33-36 inches), soft EVA foam deck traction for barefoot comfort, and sufficient length for full-body poses. Stability is the most important factor - the wider the board, the easier it is to hold poses.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is SUP yoga harder than regular yoga?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'SUP yoga adds an element of balance challenge not found in studio practice. The unstable surface engages more stabilizer muscles, making even basic poses more intense. Many practitioners find it deepens body awareness and focus.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What SUP size is best for yoga?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'The best yoga SUP is 10 to 11 feet long and 33 to 36 inches wide. Extra width provides the stability needed for standing poses and smooth transitions between postures.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can beginners do SUP yoga?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Beginners should start with seated and kneeling poses on a wide, stable board in calm flat water. As confidence grows, progress to standing poses.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you manufacture yoga SUPs for private label?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Afarer offers OEM/ODM manufacturing for SUP yoga boards with custom deck pad colors, graphics, and packaging for yoga brands, studios, and resort wellness programs worldwide.',
+          },
+        },
+      ],
     }}
   />
 
@@ -70,28 +105,70 @@ const today = '2026-07-27';
       <h2 class="text-4xl md:text-5xl font-bold text-secondary text-center mb-16">Why an Afarer SUP Yoga Board?</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="bg-white rounded-2xl border border-gray-200 p-6 text-center">
-          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center mx-auto mb-4"><svg class="w-7 h-7 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg></div>
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg class="w-7 h-7 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
+              ></path></svg
+            >
+          </div>
           <h3 class="font-semibold text-gray-900">Spacious Deck</h3>
           <p class="mt-2 text-sm text-gray-500">
             Extra width provides ample space for yoga poses, transitions, and equipment.
           </p>
         </div>
         <div class="bg-white rounded-2xl border border-gray-200 p-6 text-center">
-          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-50 to-pink-100 flex items-center justify-center mx-auto mb-4"><svg class="w-7 h-7 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg></div>
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-50 to-pink-100 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg class="w-7 h-7 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg
+            >
+          </div>
           <h3 class="font-semibold text-gray-900">Soft EVA Traction</h3>
           <p class="mt-2 text-sm text-gray-500">
             Comfortable closed-cell foam deck pad provides grip and cushion for barefoot practice.
           </p>
         </div>
         <div class="bg-white rounded-2xl border border-gray-200 p-6 text-center">
-          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center mx-auto mb-4"><svg class="w-7 h-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg class="w-7 h-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg
+            >
+          </div>
           <h3 class="font-semibold text-gray-900">Ultra-Stable Platform</h3>
           <p class="mt-2 text-sm text-gray-500">
             Wide beam and flat hull design minimize wobble so you can focus on your practice.
           </p>
         </div>
         <div class="bg-white rounded-2xl border border-gray-200 p-6 text-center">
-          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-yellow-50 to-amber-100 flex items-center justify-center mx-auto mb-4"><svg class="w-7 h-7 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></div>
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-yellow-50 to-amber-100 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg class="w-7 h-7 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              ></path></svg
+            >
+          </div>
           <h3 class="font-semibold text-gray-900">Sunset Ready</h3>
           <p class="mt-2 text-sm text-gray-500">
             Lightweight and portable — carry your yoga studio to any calm water at any time of day.
@@ -165,19 +242,31 @@ const today = '2026-07-27';
       <div class="grid md:grid-cols-2 gap-6">
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Studio Yogis</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Take your mat practice to the water. The unstable surface deepens engagement in every pose, building core strength and balance that transforms your studio practice.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Take your mat practice to the water. The unstable surface deepens engagement in every pose, building core
+            strength and balance that transforms your studio practice.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Yoga Teachers & Retreat Leaders</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Offer unique SUP yoga classes and retreats. A fleet of yoga SUPs lets you host sessions on lakes, bays, and calm ocean inlets. OEM branding available for retreat centers.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Offer unique SUP yoga classes and retreats. A fleet of yoga SUPs lets you host sessions on lakes, bays, and
+            calm ocean inlets. OEM branding available for retreat centers.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Meditation Practitioners</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">The gentle rocking of water adds a meditative dimension to seated practice. Anchor in a quiet cove and experience stillness on the water.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            The gentle rocking of water adds a meditative dimension to seated practice. Anchor in a quiet cove and
+            experience stillness on the water.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Resort & Spa Programs</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Wellness resorts add SUP yoga as a premium guest experience. Boards store easily and launch from any calm water shoreline. Custom branding available.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Wellness resorts add SUP yoga as a premium guest experience. Boards store easily and launch from any calm
+            water shoreline. Custom branding available.
+          </p>
         </div>
       </div>
     </div>
@@ -188,7 +277,9 @@ const today = '2026-07-27';
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">OEM/ODM Manufacturing for SUP Yoga Boards</h2>
       <p class="text-lg text-gray-500 leading-relaxed mb-8">
-        Afarer manufactures SUP yoga boards for global wellness brands, yoga studios, and resort chains. Our production lines produce CE-certified yoga SUPs with custom EVA deck pad colors, graphics, and packaging. MOQ from 50 units. Lead times from 30 days.
+        Afarer manufactures SUP yoga boards for global wellness brands, yoga studios, and resort chains. Our production
+        lines produce CE-certified yoga SUPs with custom EVA deck pad colors, graphics, and packaging. MOQ from 50
+        units. Lead times from 30 days.
       </p>
       <div class="grid md:grid-cols-3 gap-4">
         <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
@@ -205,7 +296,11 @@ const today = '2026-07-27';
         </div>
       </div>
       <div class="mt-8 text-center">
-        <a href="/oem-odm-manufacturer" class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all">Request OEM Quote <span>→</span></a>
+        <a
+          href="/oem-odm-manufacturer"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+          >Request OEM Quote <span>→</span></a
+        >
       </div>
     </div>
   </section>
@@ -213,28 +308,49 @@ const today = '2026-07-27';
   <!-- FAQ -->
   <section class="bg-gray-50 py-16 px-6">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">SUP Yoga Board — Frequently Asked Questions</h2>
-      <p class="text-lg text-gray-500 text-center mb-12">Common questions about selecting, using, and manufacturing SUP yoga boards.</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        SUP Yoga Board — Frequently Asked Questions
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        Common questions about selecting, using, and manufacturing SUP yoga boards.
+      </p>
       <div class="space-y-4">
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">What makes a SUP board good for yoga?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">A SUP yoga board needs a wide stable platform (33"–36"), soft EVA foam deck traction for barefoot comfort, and sufficient length for full-body poses. Stability is the most important factor — the wider the board, the easier it is to hold poses.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            A SUP yoga board needs a wide stable platform (33"–36"), soft EVA foam deck traction for barefoot comfort,
+            and sufficient length for full-body poses. Stability is the most important factor — the wider the board, the
+            easier it is to hold poses.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Is SUP yoga harder than regular yoga?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">SUP yoga adds an element of balance challenge not found in studio practice. The unstable surface engages more stabilizer muscles, making even basic poses more intense. Many practitioners find it deepens body awareness and focus.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            SUP yoga adds an element of balance challenge not found in studio practice. The unstable surface engages
+            more stabilizer muscles, making even basic poses more intense. Many practitioners find it deepens body
+            awareness and focus.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">What SUP size is best for yoga?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">The best yoga SUP is 10'–11' long and 33"–36" wide. Extra width provides the stability needed for standing poses and smooth transitions between postures without worrying about tipping.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            The best yoga SUP is 10'–11' long and 33"–36" wide. Extra width provides the stability needed for standing
+            poses and smooth transitions between postures without worrying about tipping.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Can beginners do SUP yoga?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Beginners should start with seated and kneeling poses on a wide, stable board in calm flat water. As confidence grows, progress to standing poses. A calm lake or protected bay is ideal for your first session.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Beginners should start with seated and kneeling poses on a wide, stable board in calm flat water. As
+            confidence grows, progress to standing poses. A calm lake or protected bay is ideal for your first session.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Do you manufacture yoga SUPs for private label?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Afarer offers OEM/ODM manufacturing for SUP yoga boards with custom deck pad colors, graphics, and packaging for yoga brands, studios, and resort wellness programs worldwide.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Afarer offers OEM/ODM manufacturing for SUP yoga boards with custom deck pad colors, graphics, and
+            packaging for yoga brands, studios, and resort wellness programs worldwide.
+          </p>
         </div>
       </div>
     </div>
@@ -246,15 +362,26 @@ const today = '2026-07-27';
       <h2 class="text-3xl md:text-4xl font-bold text-secondary">Yoga SUP Resources</h2>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
-      <a href="/compare/single-chamber-vs-multi-chamber" class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all">
+      <a
+        href="/compare/single-chamber-vs-multi-chamber"
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
         <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">Safety on the Water</h3>
         <p class="mt-2 text-sm text-gray-500">Multi-chamber safety for worry-free practice.</p>
       </a>
-      <a href="/compare/inflatable-vs-hardboard" class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all">
-        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">Inflatable vs Hard for Yoga</h3>
+      <a
+        href="/compare/inflatable-vs-hardboard"
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          Inflatable vs Hard for Yoga
+        </h3>
         <p class="mt-2 text-sm text-gray-500">Why inflatable SUPs are preferred for yoga.</p>
       </a>
-      <a href="/compare/pvc-vs-hypalon" class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all">
+      <a
+        href="/compare/pvc-vs-hypalon"
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
         <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">Durable SUP Materials</h3>
         <p class="mt-2 text-sm text-gray-500">Understanding PVC vs Hypalon construction.</p>
       </a>

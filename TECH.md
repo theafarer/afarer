@@ -1,6 +1,6 @@
 ﻿# afarer — Technical Documentation
 
-> Last updated: 2026-07-30
+> Last updated: 2026-08-03
 > Project path: `E:\github\afarer`
 > Production: https://afarer.com (Cloudflare Pages)
 > Build: `npm run build` → `dist/` (7,564 pages)
@@ -11,9 +11,9 @@
 
 ### 1.1 Pure Static Generation (`output: 'static'`)
 
-All 7,564 pages are pre-rendered at build time. No SSR adapter. API Workers handle dynamic requests at edge.
+All ~7,564 pages are pre-rendered at build time. No SSR adapter. API endpoints are handled by standalone Workers at the edge.
 
-**Why not `output: 'server'`:** With `output: 'static'`, Cloudflare Workers + Assets serves static files directly at the edge without calling the Worker's `w.fetch`. The subdomain routing injected by `scripts/patch-worker.mjs` only works with `output: 'server'`. Do NOT change to `server` unless removing subdomain routing.
+**Why not `output: 'server'`:** The site is built and deployed as static Cloudflare Pages (`dist/` + `functions/_middleware.ts`). `scripts/patch-worker.mjs` only applies to a `output: 'server'` Cloudflare Workers+Assets build (`dist/server/wrangler.json`); it is **not** part of the current `npm run build` chain.
 
 ### 1.2 Locale Detection (Two Layers)
 
@@ -42,11 +42,12 @@ Priority for edge detection: Cookie (`x-user-locale`) → `cf-ipcountry` → `Ac
  3. scripts/generate-geo-files.ts (tsx) → Generate entity.json + llms-full.txt
     (idempotent: 52 products × 22 languages + 1,034 pages)
  4. scripts/_gen-uiall.cjs             → Generate ui-all.ts (merge 22 lang translations)
- 5. scripts/_gen-pages.cjs             → Generate pages/*.ts modules from JSON (54+ pages)
- 6. scripts/gen-icon-svgs.cjs          → Generate icon SVGs
- 7. astro build                        → Static site to dist/ (7,564 pages)
- 8. scripts/clean-public-assets.mjs    → Clean temp assets
- 9. (optional) scripts/fast-upload-r2.mjs → Upload to R2 (assets + data)
+ 5. scripts/_gen-pages.cjs             → Generate pages/*.ts modules from JSON (109 pages)
+ 6. scripts/_gen-seo-meta.cjs          → Generate SEO meta modules
+ 7. scripts/gen-icon-svgs.cjs          → Generate icon SVGs
+ 8. astro build                        → Static site to dist/ (7,564 pages)
+ 9. scripts/clean-public-assets.mjs    → Clean temp assets
+10. (optional) scripts/fast-upload-r2.mjs → Upload to R2 (assets + data)
 ```
 
 ### 2.2 CI/CD (GitHub Actions)
@@ -56,7 +57,7 @@ Trigger: Push to `main`
 ```
 checkout → npm install
  → geo-build → generate-data-json → generate-geo-files (tsx)
- → gen-uiall → gen-pages → gen-icon-svgs
+ → gen-uiall → gen-pages → gen-seo-meta → gen-icon-svgs
  → astro build
  → clean → R2 upload
  → Ensure Pages project → Pages deploy
@@ -88,7 +89,7 @@ checkout → npm install
 
 | Worker | Routes | Bindings | Purpose |
 |--------|--------|----------|---------|
-| contact-worker | `/api/contact*` | — | Contact form email (Resend) |
+| contact-worker | `/api/contact*` | — | Contact form POST → validate/sanitise → Resend email (`workers/contact-worker/index.ts`) |
 | seo-worker | `/api/search`, `/api/geo-score`, `/api/page-inspect`, `/api/seo/*` | R2 (DATA_BUCKET) | SEO tools, search |
 | ai-worker | `/api/chat*`, `/api/ask*`, `/api/search*`, `/api/embed*`, `/api/ai/*` | Workers AI, Vectorize, R2 | AI chat, RAG, embeddings |
 | admin-worker | `/api/admin/*`, `/api/auth/*` | — | Auth, GitHub CRUD |
@@ -160,7 +161,7 @@ When adding a nav item, update all 4:
 Page content stored in `src/data/pages/` as YAML:
 - Root level: English (default)
 - Language subdirectories (e.g., `fr/home.yaml`): per-locale translations
-- 22 languages × 55+ page YAML files each
+- 22 languages × 70 page YAML files each
 - Loaded at build time, compiled into TS modules by `_gen-pages.cjs`
 
 ---
@@ -233,31 +234,39 @@ All mojibake resolved. 0 U+FFFD, 0 remaining CJK corruption characters in source
 
 ## 7. Contact Form Internals
 
-### 7.1 Implementation Status (all implemented)
+### 7.1 Implementation Status
+
+`/api/contact` is a **standalone Cloudflare Worker** (`workers/contact-worker/index.ts`, deployed as `afarer-contact`, zone route `afarer.com/api/contact*`) — **not** a Pages Function. `/contact` pages are static.
 
 | Feature | Implementation |
 |---------|---------------|
-| Captcha | HMAC-signed cookie (math challenge) |
-| Rate limit | 5 submissions per IP per hour (in-memory sliding window) |
-| Honeypot | Hidden `email_confirm` field (CSS: `position:absolute; left:-9999px`) |
-| Encryption | AES-256-GCM (`SESSION_SECRET`-derived key) |
-| Storage | Encrypted records appended to `src/data/contact/submissions.enc.json` via GitHub API |
-| Email | Resend API with `Reply-To` set to submitter |
+| Endpoint | `POST /api/contact` → Worker (JSON or FormData body, CORS, 405 on non-POST) |
+| Validation | 10 fields sanitised (First/Last Name, Company, Address, Zip, Country, Email, TEL+country code, Subject, Message); required: first/last name, valid email, message ≥ 5 chars |
+| Spam block | Keyword filter: `viagra`, `cialis`, `crypto airdrop`, `investment opportunity`, `casino`, `betting` |
+| Email | Resend API with `Reply-To` set to submitter (`workers/contact-worker/index.ts`) |
+| Captcha | Not implemented (no HMAC captcha cookie; no `contact-captcha.ts`) |
+| Rate limit | Not implemented (`src/lib/rate-limit.ts` exists but unused) |
+| Honeypot | Hidden `email_confirm` field exists in forms but is ignored by the Worker |
+| Encryption / storage | Not implemented (no writer for `submissions.enc.json`; `contact-crypto.ts` only used for legacy admin decrypt) |
 
 ### 7.2 Flow
 
-1. Client loads contact page → math captcha cookie set (HMAC-signed)
-2. POST `/api/contact` → contact-worker validates captcha, sanitizes 10 fields
-3. Encrypts payload with AES-256-GCM
-4. Appends encrypted record to GitHub via PAT
-5. Optionally sends email via Resend
-6. Bot detection (honeypot filled): returns HTTP 200 with fake UUID, skips write + email
+1. Static `/contact` (`src/pages/contact.astro` / `[lang]/contact.astro`) renders the widget (`src/components/widgets/Contact.astro` — multi-step, abandonment recovery via `localStorage`, consent checkbox, honeypot input).
+2. Client-side JS submits `POST /api/contact` with **JSON** (Contact widget) or **FormData** (Newsletter widget — both now handled).
+3. contact-worker checks CORS/method, parses JSON body, sanitises 10 fields, validates required/email/message, blocks spam keywords.
+4. Sends email via Resend (`Reply-To` = submitter) when `CONTACT_EMAIL_TO` + `CONTACT_RESEND_API_KEY` + `CONTACT_FROM_EMAIL` are set; returns `{ success: true, id, receivedAt }`. Send failures are logged, not fatal.
 
-### 7.3 Security Notes
+### 7.3 Getting the Environment
 
-- Rate limit is per-Worker-isolate (no KV/DO): effective limit = `5 × isolate_count`
-- `contact_submissions_pat` and `contact_resend_api_key` are bundled into the Worker (in public repo). Use separate Fine-grained PAT scoped to single repo with Contents R/W only; rotate Resend key periodically.
-- Admin decrypts submissions via `/keystatic/contact-submissions` (decryption in session)
+- `CONTACT_EMAIL_TO` — destination inbox (required, else 500)
+- `CONTACT_RESEND_API_KEY`, `CONTACT_FROM_EMAIL`, `CONTACT_FROM_NAME` — Resend sender config
+- `CONTACT_EMAIL_PROVIDER` / `CONTACT_SUBMISSIONS_PAT` — accepted in the env interface but unused in the current handler
+
+### 7.4 Security Notes
+
+- Rate limit is per-Worker-isolate (no KV/DO); the current worker performs no rate limiting at all
+- Worker reads secrets from Cloudflare runtime env, not repo files; `contact_submissions_pat` / `contact_resend_api_key` in `branding.yaml` are legacy and should be scoped/rotated if populated
+- Admin `/keystatic/contact-submissions` reads + decrypts `submissions.enc.json` via GitHub API (`GitHubClient`), but nothing appends to it today — legacy path
 
 ---
 
@@ -317,8 +326,9 @@ When renaming URLs/names across the site:
 | `src/i18n/routing.ts` | Shared route definitions, `localizeHref()`, `entityForHref()` |
 | `src/i18n/page-content.ts` | Page YAML content loader (build-time cache) |
 | `src/utils/product-i18n.ts` | Product translation merge (YAML → TS → English fallback) |
-| `src/lib/contact-crypto.ts` | AES-256-GCM encrypt/decrypt for contact submissions |
-| `src/lib/rate-limit.ts` | In-memory sliding window rate limiter |
+| `src/lib/contact-crypto.ts` | AES-256-GCM encrypt/decrypt for legacy contact submissions |
+| `src/lib/rate-limit.ts` | In-memory sliding window rate limiter (currently unused) |
 | `src/lib/link-refactor.ts` | URL/name refactoring engine |
-| `scripts/patch-worker.mjs` | Subdomain routing injection for Workers |
-| `fix-encoding.mjs` | README.md GB2312 mojibake repair script |
+| `workers/contact-worker/index.ts` | Live `POST /api/contact` handler (validate + Resend email) |
+| `scripts/patch-worker.mjs` | `output: 'server'` only; subdomain routing + KV injection (not in current build) |
+| `scripts/fix-garbled.py` | Encoding/garble repair helpers (see §6; `find-garbled.py`, `check-encoding.py` too) |

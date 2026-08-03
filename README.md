@@ -106,9 +106,11 @@ All locale URLs use **path-based** format: `afarer.com/fr/products`, `afarer.com
 │ │ ├── [lang]/                    # Localized pages (22 languages)
 │ │ │ ├── index.astro            # Homepage (SSG)
 │ │ │ ├── about.astro            # About page
+│ │ │ ├── about/afarer.astro     # afarer entity page
+│ │ │ ├── afarer-story.astro     # Brand story
 │ │ │ ├── brand/                 # Brand hub
 │ │ │ │ ├── index.astro         # Brand index
-│ │ │ │ ├── afarer.astro     # afarer entity page
+│ │ │ │ ├── afarer.astro        # afarer entity page
 │ │ │ │ └── team.astro          # Team entity (founder, leadership, 6 profiles)
 │ │ │ ├── brand-story.astro      # Brand story
 │ │ │ ├── brand-marine-expertise.astro # Marine engineering expertise
@@ -117,6 +119,9 @@ All locale URLs use **path-based** format: `afarer.com/fr/products`, `afarer.com
 │ │ │ ├── certifications.astro   # CE, ISO 9001, UKCA, BSCI, REACH, safety
 │ │ │ ├── partners.astro         # Partner programs (distributor, dealer, OEM, etc.)
 │ │ │ ├── cases/                 # Case studies hub
+│ │ │ ├── evidence/              # Evidence & case-study detail
+│ │ │ │ ├── index.astro         # Evidence hub
+│ │ │ │ └── case-studies/       # [slug].astro detail pages
 │ │ │ ├── contact.astro          # Contact
 │ │ │ ├── custom/                # Custom Lab
 │ │ │ ├── disclaimer.astro       # Medical disclaimer (legal)
@@ -128,37 +133,53 @@ All locale URLs use **path-based** format: `afarer.com/fr/products`, `afarer.com
 │ │ │ │ ├── equipment.astro     # Equipment & machinery
 │ │ │ │ └── oem-capability.astro # OEM/ODM manufacturing
 │ │ │ ├── gallery/               # Gallery
-│ │ │ ├── guides/                # Buying guides (18 guides × 22 locales)
+│ │ │ ├── guides/                # Buying guides
 │ │ │ │ ├── index.astro         # Guides listing
 │ │ │ │ └── [slug].astro        # Guide detail
 │ │ │ ├── journal/               # Journal
+│ │ │ ├── learn/                 # Learn center (index + [slug])
 │ │ │ ├── lifestyle/             # Lifestyle
 │ │ │ ├── media/                 # Media Center
+│ │ │ ├── news/                  # News (index, [slug], category/tag pagination)
 │ │ │ ├── privacy.astro          # Privacy policy (legal)
 │ │ │ ├── quality.astro          # Quality
 │ │ │ ├── request-quotation.astro # RFQ page (with B2B fields: application, country, material, engine, uploads)
-│ │ │ ├── resources.astro        # Download center & buyer guides
+│ │ │ ├── research/              # Research library (index + [slug] guides)
+│ │ │ ├── resources/             # Download center & buyer guides
+│ │ │ │ ├── index.astro
+│ │ │ │ └── download-catalog.astro
 │ │ │ ├── safety.astro           # Safety
 │ │ │ ├── solutions/             # Industry solutions
 │ │ │ │ ├── index.astro         # Solutions hub
+│ │ │ │ ├── [slug].astro        # Solution detail
 │ │ │ │ ├── by-industry.astro   # By industry
 │ │ │ │ ├── by-use-case.astro   # By use case
-│ │ │ │ ├── diving-center-boats.astro
-│ │ │ │ ├── fishing-boat-solutions.astro
-│ │ │ │ ├── marine-tourism-equipment.astro
-│ │ │ │ ├── rescue-watercraft.astro
-│ │ │ │ └── yacht-tender-solutions.astro
+│ │ │ │ ├── build-your-own-brand.astro
+│ │ │ │ ├── distributors.astro
+│ │ │ │ ├── paddle-clubs.astro
+│ │ │ │ ├── rental-operators.astro
+│ │ │ │ ├── resorts-hotels.astro
+│ │ │ │ └── retail-partners.astro
 │ │ │ ├── technology.astro       # Technology
 │ │ │ ├── terms.astro            # Terms and conditions (legal)
 │ │ │ ├── academy/               # Academy index
 │ │ │ ├── products/              # Product catalog & detail
 │ │ │ ├── use-cases/             # Use-case pages
 │ │ │ ├── compare/               # Product comparisons
+│ │ │ ├── oem-odm-manufacturer/  # OEM/ODM manufacturer hub
+│ │ │ ├── oem-odm.astro          # OEM/ODM page
 │ │ │ ├── oem-process.astro      # OEM/ODM Process
 │ │ │ ├── engineering-team.astro # Engineering & R&D Team
 │ │ │ ├── randdcenter/           # R&D Center
+│ │ │ ├── trust.astro            # Trust
 │ │ │ ├── sitemap.xml.ts         # Per-locale sitemap
 │ │ │ └── llms.txt.ts            # Per-locale AI knowledge graph
+│ │ ├── keystatic/                # Admin panel (CMS: pages, posts, products, ...)
+│ │ ├── login.astro               # Admin login
+│ │ ├── _login/                   # Login helpers (change-password)
+│ │ ├── admin.astro               # Admin shell
+│ │ ├── internal/                 # GEO/SEO dashboards
+│ │ ├── news/                     # Non-localized blog (all prerender=true)
 │ │ ├── llms/                     # AI-readable markdown
 │ │ │ ├── products/[slug].ts     # Product markdown
 │ │ │ ├── news/[slug].ts         # News markdown
@@ -167,14 +188,13 @@ All locale URLs use **path-based** format: `afarer.com/fr/products`, `afarer.com
 │ │ │ └── pages/[slug].ts        # Standalone page markdown
 │ │ ├── llms.txt.ts               # Root llms.txt (prerender)
 │ │ ├── llms-full.txt.ts          # Root llms-full.txt (prerender)
-│ │ ├── _keystatic/                # Admin panel (SSR-only, moved out for v2 rewrite)
-│ │ ├── _login/                    # Login page (SSR-only, moved out for v2 rewrite)
-│ │ ├── internal/                 # GEO/SEO dashboards
-│ │ ├── news/                     # Blog (all prerender=true)
+│ │ ├── sitemap.xml.ts            # Root sitemap (prerender)
+│ │ ├── rss.xml.ts                # RSS feed (prerender)
+│ │ ├── search-index.json.ts      # Client-side search index (prerender)
 │ │ ├── [category].astro          # Product category pages
 │ │ ├── search.astro              # Client-side search
 │ │ ├── faq.astro                 # FAQ
-│ │ └── ...                       # 404, privacy, terms, B2B pages
+│ │ └── ...                       # 404, legal, B2B pages
 │ ├── components/
 │ ├── layouts/
 │ ├── lib/
@@ -248,7 +268,7 @@ See `TECH.md §3` for full Worker implementation details (wrangler config, 3 MB 
 - **Route:** `afarer.com/api/contact*`
 - **Methods:** `POST`
 - **Features:**
-  - JSON body parsing with validation (firstName, lastName, email, message, etc.)
+  - JSON body parsing (Contact widget) and FormData parsing (Newsletter widget) with validation (firstName, lastName, email, message, etc.)
   - Email validation + spam keyword filtering
   - Resend API email sending
   - CORS headers
@@ -355,7 +375,7 @@ Two layers of locale detection:
 See `TECH.md §2` for the full step-by-step pipeline. In brief:
 
 ```
-GEO build → Data JSON → GEO files → UI all → Pages → Icons → astro build → Clean → (R2 upload)
+GEO build → Data JSON → GEO files → UI all → Pages → SEO meta → Icons → astro build → Clean → (R2 upload)
 ```
 
 All 7,564 pages are pre-rendered as static HTML to `dist/`.
@@ -434,7 +454,7 @@ afarer-data/
 All page content is stored as YAML files in `src/data/pages/`:
 - **Root level** (e.g., `home.yaml`) —English (default)
 - **Language subdirectories** (e.g., `fr/home.yaml`, `de/home.yaml`) —Per-locale translations
-- **22 languages** total, each with 55+ page YAML files (including brand-team, certifications, partners, legal pages)
+- **22 languages** total, each with 70 page YAML files (including brand-team, certifications, partners, legal pages)
 
 ### 8.2 Data-Driven Page Templates
 Each page has a `.astro` template under `src/pages/[lang]/` that:
@@ -480,15 +500,15 @@ Keystatic CMS provides a form-based navigation editor at `/keystatic/navigation`
 
 | Feature | Status |
 |---------|--------|
-| Endpoint | `POST /api/contact` → contact-worker |
+| Endpoint | `POST /api/contact` → contact-worker (JSON from Contact widget, FormData from Newsletter widget) |
 | Email | Resend API (to `info@afarer.com`, from `web@mail.afarer.com`) |
 | Fields | firstName, lastName, email, message, companyName, address, tel, subject, country, zip |
 | Validation | Required fields, email regex, spam keyword filter |
-| Captcha | ✓ HMAC-signed math cookie |
-| Encryption | ✓ AES-256-GCM on submission data |
-| Rate limit | ✓ 5/hr per IP (in-memory sliding window) |
-| Honeypot | ✓ Hidden `email_confirm` field |
-| Submission storage | ✓ Encrypted to GitHub via PAT |
+| Captcha | Not implemented (no HMAC captcha cookie) |
+| Encryption | Not implemented (no AES-256-GCM payload encryption) |
+| Rate limit | Not implemented (`src/lib/rate-limit.ts` exists but is unused) |
+| Honeypot | Hidden `email_confirm` field exists in forms but is ignored by the Worker |
+| Submission storage | Not implemented (nothing appends to `submissions.enc.json`; `contact-crypto.ts` only used for legacy admin decrypt) |
 
 ---
 
@@ -527,7 +547,7 @@ const aboutData = pageContentData[`${lang}/site-about`] || pageContentData['en/s
 
 ## 12. Data Flow
 
-Product data flows from `src/data/products.ts` (52 products SSOT) → page templates → JSON-LD → static HTML. Page content flows from `src/data/pages/*.yaml` (55+ pages × 22 languages) → build-generated TS modules → widget-rendered HTML.
+Product data flows from `src/data/products.ts` (52 products SSOT) → page templates → JSON-LD → static HTML. Page content flows from `src/data/pages/*.yaml` (70 pages × 22 languages) → build-generated TS modules → widget-rendered HTML.
 
 AI-facing data (llms.txt, llms-full.txt, search index, GEO content) is auto-generated during build and uploaded to R2 for Worker runtime access.
 

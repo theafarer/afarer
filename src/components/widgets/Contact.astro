@@ -138,189 +138,334 @@ const rows = Object.keys(grouped)
       </div>
 
       <!-- Step Indicator -->
-      {steps.length > 1 && (
-        <div class="flex items-center justify-center gap-2 mb-6" data-step-indicator>
-          {steps.map((_, i) => (
-            <div class="flex items-center">
-              <div
-                class={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-colors ${i === 0 ? 'bg-primary text-white' : 'bg-gray-200 dark:bg-slate-700 text-muted'}`}
-                data-step-dot={i + 1}
-              >
-                {i + 1}
+      {
+        steps.length > 1 && (
+          <div class="flex items-center justify-center gap-2 mb-6" data-step-indicator>
+            {steps.map((_, i) => (
+              <div class="flex items-center">
+                <div
+                  class={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-colors ${i === 0 ? 'bg-primary text-white' : 'bg-gray-200 dark:bg-slate-700 text-muted'}`}
+                  data-step-dot={i + 1}
+                >
+                  {i + 1}
+                </div>
+                {i < steps.length - 1 && <div class="w-8 h-px bg-gray-200 dark:bg-slate-700" />}
               </div>
-              {i < steps.length - 1 && <div class="w-8 h-px bg-gray-200 dark:bg-slate-700" />}
-            </div>
-          ))}
-        </div>
-      )}
+            ))}
+          </div>
+        )
+      }
 
       <div data-form-fields>
-        {steps.length > 1 ? (
-          steps.map((step, si) => (
-            <div data-step={si + 1} style={{ display: si === 0 ? 'block' : 'none' }}>
-              <div class="space-y-7">
-                {(() => {
-                  const stepRows = [...new Set(step.fields.map((f) => f.row))].sort((a, b) => a - b);
-                  return stepRows.map((rowIdx) => {
-                    const row = step.fields.filter((f) => f.row === rowIdx);
-                    const isWide = row.length === 1 && (row[0].type === 'textarea' || row[0].type === 'text' || row[0].type === 'email');
-                    if (isWide) {
-                      const f = row[0];
-                      if (f.type === 'textarea') {
+        {
+          steps.length > 1 ? (
+            steps.map((step, si) => (
+              <div data-step={si + 1} style={{ display: si === 0 ? 'block' : 'none' }}>
+                <div class="space-y-7">
+                  {(() => {
+                    const stepRows = [...new Set(step.fields.map((f) => f.row))].sort((a, b) => a - b);
+                    return stepRows.map((rowIdx) => {
+                      const row = step.fields.filter((f) => f.row === rowIdx);
+                      const isWide =
+                        row.length === 1 &&
+                        (row[0].type === 'textarea' || row[0].type === 'text' || row[0].type === 'email');
+                      if (isWide) {
+                        const f = row[0];
+                        if (f.type === 'textarea') {
+                          return (
+                            <div>
+                              <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">
+                                {f.label}
+                              </label>
+                              <textarea
+                                id={`${id}-${f.name}`}
+                                name={f.name}
+                                rows={f.rows ?? 4}
+                                placeholder={f.placeholder}
+                                class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                              />
+                            </div>
+                          );
+                        }
                         return (
                           <div>
-                            <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">{f.label}</label>
-                            <textarea id={`${id}-${f.name}`} name={f.name} rows={f.rows ?? 4} placeholder={f.placeholder} class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900" />
+                            <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">
+                              {f.label}
+                            </label>
+                            <input
+                              id={`${id}-${f.name}`}
+                              type={(f.type === 'select' ? 'text' : (f.type ?? 'text')) as any}
+                              name={f.name}
+                              placeholder={f.placeholder}
+                              class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                            />
+                          </div>
+                        );
+                      }
+                      return (
+                        <div class={`grid grid-cols-1 sm:grid-cols-${row.length} gap-4`}>
+                          {row.map((f) => {
+                            if (f.withCountryCode) {
+                              return (
+                                <div>
+                                  <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">
+                                    {f.label}
+                                  </label>
+                                  <div class="flex gap-2">
+                                    <select
+                                      name={`${f.name}_countryCode`}
+                                      data-tel-country
+                                      class="py-2 px-2 block w-40 text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                                      aria-label={_ui('contact.countryCode', 'Country code')}
+                                    >
+                                      {countryCodes.map((c) => (
+                                        <option value={c.code} selected={c.code === defaultCountryCode}>
+                                          {c.label}
+                                        </option>
+                                      ))}
+                                    </select>
+                                    <input
+                                      id={`${id}-${f.name}`}
+                                      type="tel"
+                                      name={f.name}
+                                      inputmode="numeric"
+                                      placeholder={f.placeholder ?? '555 123 4567'}
+                                      class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                                    />
+                                  </div>
+                                </div>
+                              );
+                            }
+                            if (f.type === 'select') {
+                              const opts = resolveOptions(f);
+                              return (
+                                <div>
+                                  <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">
+                                    {f.label}
+                                  </label>
+                                  <select
+                                    id={`${id}-${f.name}`}
+                                    name={f.name}
+                                    class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                                    required
+                                  >
+                                    {opts.map((o) => (
+                                      <option value={o.value}>{o.label}</option>
+                                    ))}
+                                  </select>
+                                </div>
+                              );
+                            }
+                            return (
+                              <div>
+                                <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">
+                                  {f.label}
+                                </label>
+                                <input
+                                  id={`${id}-${f.name}`}
+                                  type={(f.type === 'email' ? 'email' : f.type === 'tel' ? 'tel' : 'text') as any}
+                                  name={f.name}
+                                  placeholder={f.placeholder}
+                                  class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                                />
+                              </div>
+                            );
+                          })}
+                        </div>
+                      );
+                    });
+                  })()}
+                </div>
+                {si < steps.length - 1 && (
+                  <div class="mt-6 flex justify-end">
+                    <button
+                      type="button"
+                      data-step-next
+                      class="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full transition-all text-sm"
+                    >
+                      {stepLabels[si] || `Step ${si + 1}`} →
+                    </button>
+                  </div>
+                )}
+              </div>
+            ))
+          ) : (
+            <div class="space-y-7">
+              {rows.map((rowIdx) => {
+                const row = grouped[rowIdx];
+                const isWide =
+                  row.length === 1 && (row[0].type === 'textarea' || row[0].type === 'text' || row[0].type === 'email');
+                if (isWide) {
+                  const f = row[0];
+                  if (f.type === 'textarea') {
+                    return (
+                      <div>
+                        <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">
+                          {f.label}
+                        </label>
+                        <textarea
+                          id={`${id}-${f.name}`}
+                          name={f.name}
+                          rows={f.rows ?? 4}
+                          placeholder={f.placeholder}
+                          class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                        />
+                      </div>
+                    );
+                  }
+                  return (
+                    <div>
+                      <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">
+                        {f.label}
+                      </label>
+                      <input
+                        id={`${id}-${f.name}`}
+                        type={(f.type === 'select' ? 'text' : (f.type ?? 'text')) as any}
+                        name={f.name}
+                        placeholder={f.placeholder}
+                        class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                      />
+                    </div>
+                  );
+                }
+                return (
+                  <div class={`grid grid-cols-1 sm:grid-cols-${row.length} gap-4`}>
+                    {row.map((f) => {
+                      if (f.withCountryCode) {
+                        return (
+                          <div>
+                            <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">
+                              {f.label}
+                            </label>
+                            <div class="flex gap-2">
+                              <select
+                                name={`${f.name}_countryCode`}
+                                data-tel-country
+                                class="py-2 px-2 block w-40 text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                                aria-label={_ui('contact.countryCode', 'Country code')}
+                              >
+                                {countryCodes.map((c) => (
+                                  <option value={c.code} selected={c.code === defaultCountryCode}>
+                                    {c.label}
+                                  </option>
+                                ))}
+                              </select>
+                              <input
+                                id={`${id}-${f.name}`}
+                                type="tel"
+                                name={f.name}
+                                inputmode="numeric"
+                                placeholder={f.placeholder ?? '555 123 4567'}
+                                class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                              />
+                            </div>
+                          </div>
+                        );
+                      }
+                      if (f.type === 'select') {
+                        const opts = resolveOptions(f);
+                        return (
+                          <div>
+                            <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">
+                              {f.label}
+                            </label>
+                            <select
+                              id={`${id}-${f.name}`}
+                              name={f.name}
+                              class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                              required
+                            >
+                              {opts.map((o) => (
+                                <option value={o.value}>{o.label}</option>
+                              ))}
+                            </select>
                           </div>
                         );
                       }
                       return (
                         <div>
-                          <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">{f.label}</label>
-                          <input id={`${id}-${f.name}`} type={(f.type === 'select' ? 'text' : (f.type ?? 'text')) as any} name={f.name} placeholder={f.placeholder} class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900" />
+                          <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">
+                            {f.label}
+                          </label>
+                          <input
+                            id={`${id}-${f.name}`}
+                            type={(f.type === 'email' ? 'email' : f.type === 'tel' ? 'tel' : 'text') as any}
+                            name={f.name}
+                            placeholder={f.placeholder}
+                            class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                          />
                         </div>
                       );
-                    }
-                    return (
-                      <div class={`grid grid-cols-1 sm:grid-cols-${row.length} gap-4`}>
-                        {row.map((f) => {
-                          if (f.withCountryCode) {
-                            return (
-                              <div>
-                                <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">{f.label}</label>
-                                <div class="flex gap-2">
-                                  <select name={`${f.name}_countryCode`} data-tel-country class="py-2 px-2 block w-40 text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900" aria-label={_ui('contact.countryCode', 'Country code')}>
-                                    {countryCodes.map((c) => (<option value={c.code} selected={c.code === defaultCountryCode}>{c.label}</option>))}
-                                  </select>
-                                  <input id={`${id}-${f.name}`} type="tel" name={f.name} inputmode="numeric" placeholder={f.placeholder ?? '555 123 4567'} class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900" />
-                                </div>
-                              </div>
-                            );
-                          }
-                          if (f.type === 'select') {
-                            const opts = resolveOptions(f);
-                            return (
-                              <div>
-                                <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">{f.label}</label>
-                                <select id={`${id}-${f.name}`} name={f.name} class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900" required>
-                                  {opts.map((o) => (<option value={o.value}>{o.label}</option>))}
-                                </select>
-                              </div>
-                            );
-                          }
-                          return (
-                            <div>
-                              <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">{f.label}</label>
-                              <input id={`${id}-${f.name}`} type={(f.type === 'email' ? 'email' : f.type === 'tel' ? 'tel' : 'text') as any} name={f.name} placeholder={f.placeholder} class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900" />
-                            </div>
-                          );
-                        })}
-                      </div>
-                    );
-                  });
-                })()}
-              </div>
-              {si < steps.length - 1 && (
-                <div class="mt-6 flex justify-end">
-                  <button type="button" data-step-next class="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full transition-all text-sm">
-                    {stepLabels[si] || `Step ${si + 1}`} →
-                  </button>
-                </div>
-              )}
-            </div>
-          ))
-        ) : (
-          <div class="space-y-7">
-            {rows.map((rowIdx) => {
-              const row = grouped[rowIdx];
-              const isWide = row.length === 1 && (row[0].type === 'textarea' || row[0].type === 'text' || row[0].type === 'email');
-              if (isWide) {
-                const f = row[0];
-                if (f.type === 'textarea') {
-                  return (
-                    <div>
-                      <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">{f.label}</label>
-                      <textarea id={`${id}-${f.name}`} name={f.name} rows={f.rows ?? 4} placeholder={f.placeholder} class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900" />
-                    </div>
-                  );
-                }
-                return (
-                  <div>
-                    <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">{f.label}</label>
-                    <input id={`${id}-${f.name}`} type={(f.type === 'select' ? 'text' : (f.type ?? 'text')) as any} name={f.name} placeholder={f.placeholder} class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900" />
+                    })}
                   </div>
                 );
-              }
-              return (
-                <div class={`grid grid-cols-1 sm:grid-cols-${row.length} gap-4`}>
-                  {row.map((f) => {
-                    if (f.withCountryCode) {
-                      return (
-                        <div>
-                          <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">{f.label}</label>
-                          <div class="flex gap-2">
-                            <select name={`${f.name}_countryCode`} data-tel-country class="py-2 px-2 block w-40 text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900" aria-label={_ui('contact.countryCode', 'Country code')}>
-                              {countryCodes.map((c) => (<option value={c.code} selected={c.code === defaultCountryCode}>{c.label}</option>))}
-                            </select>
-                            <input id={`${id}-${f.name}`} type="tel" name={f.name} inputmode="numeric" placeholder={f.placeholder ?? '555 123 4567'} class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900" />
-                          </div>
-                        </div>
-                      );
-                    }
-                    if (f.type === 'select') {
-                      const opts = resolveOptions(f);
-                      return (
-                        <div>
-                          <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">{f.label}</label>
-                          <select id={`${id}-${f.name}`} name={f.name} class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900" required>
-                            {opts.map((o) => (<option value={o.value}>{o.label}</option>))}
-                          </select>
-                        </div>
-                      );
-                    }
-                    return (
-                      <div>
-                        <label for={`${id}-${f.name}`} class="block text-sm font-medium mb-1">{f.label}</label>
-                        <input id={`${id}-${f.name}`} type={(f.type === 'email' ? 'email' : f.type === 'tel' ? 'tel' : 'text') as any} name={f.name} placeholder={f.placeholder} class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900" />
-                      </div>
-                    );
-                  })}
-                </div>
-              );
-            })}
-          </div>
-        )}
+              })}
+            </div>
+          )
+        }
       </div>
 
-      {steps.length > 1 && (
-        <div class="flex items-center justify-between pt-4" data-step-nav style="display:none">
-          <button type="button" data-step-back class="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-slate-600 text-muted font-medium rounded-full hover:bg-gray-50 dark:hover:bg-slate-800 transition-all text-sm">
-            ← Back
-          </button>
-          <button type="submit" class="inline-flex items-center gap-2 px-8 py-3 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full transition-all text-sm" data-submit-button style="display:none">
-            {submitButton}
-          </button>
-        </div>
-      )}
+      {
+        steps.length > 1 && (
+          <div class="flex items-center justify-between pt-4" data-step-nav style="display:none">
+            <button
+              type="button"
+              data-step-back
+              class="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-slate-600 text-muted font-medium rounded-full hover:bg-gray-50 dark:hover:bg-slate-800 transition-all text-sm"
+            >
+              ← Back
+            </button>
+            <button
+              type="submit"
+              class="inline-flex items-center gap-2 px-8 py-3 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full transition-all text-sm"
+              data-submit-button
+              style="display:none"
+            >
+              {submitButton}
+            </button>
+          </div>
+        )
+      }
 
-      {consent && (
-        <div class="pt-2 border-t border-gray-200 dark:border-gray-700">
-          <label class="flex items-start gap-3 text-sm text-muted dark:text-slate-300 cursor-pointer select-none">
-            <input type="checkbox" name="consent" data-consent data-consent-error={consentError} required={consentRequired} class="mt-1 h-4 w-4 shrink-0 rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary cursor-pointer" />
-            <span class="leading-relaxed">
-              {consentText}{' '}
-              <a href={consentLinkHref} target="_blank" rel="noopener noreferrer" class="text-primary underline underline-offset-2 hover:text-secondary dark:text-blue-400">{consentLinkText}</a>.
-            </span>
-          </label>
-          <p data-consent-error class="hidden mt-1 text-xs text-red-600 dark:text-red-400" />
-        </div>
-      )}
+      {
+        consent && (
+          <div class="pt-2 border-t border-gray-200 dark:border-gray-700">
+            <label class="flex items-start gap-3 text-sm text-muted dark:text-slate-300 cursor-pointer select-none">
+              <input
+                type="checkbox"
+                name="consent"
+                data-consent
+                data-consent-error={consentError}
+                required={consentRequired}
+                class="mt-1 h-4 w-4 shrink-0 rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary cursor-pointer"
+              />
+              <span class="leading-relaxed">
+                {consentText}{' '}
+                <a
+                  href={consentLinkHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-primary underline underline-offset-2 hover:text-secondary dark:text-blue-400"
+                >
+                  {consentLinkText}
+                </a>
+                .
+              </span>
+            </label>
+            <p data-consent-error class="hidden mt-1 text-xs text-red-600 dark:text-red-400" />
+          </div>
+        )
+      }
 
-      {steps.length <= 1 && (
-        <div class="pt-2">
-          <Button type="submit" variant="primary" data-submit-button>{submitButton}</Button>
-        </div>
-      )}
+      {
+        steps.length < 2 && (
+          <div class="pt-2">
+            <Button type="submit" variant="primary" data-submit-button>
+              {submitButton}
+            </Button>
+          </div>
+        )
+      }
 
       <div data-form-status class="hidden text-sm font-medium"></div>
     </form>
@@ -339,7 +484,11 @@ const rows = Object.keys(grouped)
         if (typeof v === 'string' && v.trim()) data[k] = v.trim();
       }
       if (Object.keys(data).length > 0) {
-        try { localStorage.setItem(FORMS_KEY, JSON.stringify(data)); } catch (_) {}
+        try {
+          localStorage.setItem(FORMS_KEY, JSON.stringify(data));
+        } catch {
+          /* ignore */
+        }
       }
     }
 
@@ -352,16 +501,25 @@ const rows = Object.keys(grouped)
         for (const [name, value] of Object.entries(data)) {
           if (typeof value !== 'string') continue;
           const el = formEl.querySelector(`[name="${name}"]`);
-          if (el && (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement || el instanceof HTMLSelectElement)) {
+          if (
+            el &&
+            (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement || el instanceof HTMLSelectElement)
+          ) {
             el.value = value;
           }
         }
-      } catch (_) {}
+      } catch {
+        /* ignore */
+      }
     }
 
     // Clear saved data after successful submit
     function clearPartialData() {
-      try { localStorage.removeItem(FORMS_KEY); } catch (_) {}
+      try {
+        localStorage.removeItem(FORMS_KEY);
+      } catch {
+        /* ignore */
+      }
     }
 
     // Warn before leaving with unsaved data
@@ -427,11 +585,15 @@ const rows = Object.keys(grouped)
 
       // Abandonment recovery: restore & track
       restorePartialData(formEl);
-      formEl.addEventListener('input', function () { savePartialData(formEl); });
+      formEl.addEventListener('input', function () {
+        savePartialData(formEl);
+      });
 
       // Warn before leaving
       let formSubmitted = false;
-      formEl.addEventListener('submit', function () { formSubmitted = true; });
+      formEl.addEventListener('submit', function () {
+        formSubmitted = true;
+      });
       window.addEventListener('beforeunload', function (e) {
         if (!formSubmitted && hasUnsavedData(formEl)) {
           e.preventDefault();
