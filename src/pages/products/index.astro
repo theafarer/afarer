@@ -39,8 +39,54 @@ const metadata = merge(
 ---
 
 <Layout metadata={metadata}>
-  <JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Products', item: 'https://afarer.com/products/' }] }} />
-  <JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What products does afarer manufacture?", acceptedAnswer: { "@type": "Answer", text: "Afarer manufactures inflatable SUP boards (all-around, touring, fishing, yoga, racing, kids), marine accessories (life vests, pumps, paddles, repair kits, bags), and commercial inflatable boats and RIBs." } }, { "@type": "Question", name: "Can I get custom manufacturing for my product needs?", acceptedAnswer: { "@type": "Answer", text: "Yes. We offer OEM/ODM services including custom design, private label, bulk wholesale, and contract manufacturing for all our product categories." } }, { "@type": "Question", name: "Are afarer products available for bulk orders?", acceptedAnswer: { "@type": "Answer", text: "Yes. Factory-direct and wholesale pricing is available for bulk orders. Contact our B2B team for quantity-based pricing and lead times." } }, { "@type": "Question", name: "What certifications do afarer products carry?", acceptedAnswer: { "@type": "Answer", text: "All afarer products are CE certified. Life vests comply with ISO 12402. Boats and SUPs are designed to ISO 6185 standards. Our factory is ISO 9001 and BSCI certified." } }] }} />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: 'Home', item: 'https://afarer.com/' },
+        { position: 2, name: 'Products', item: 'https://afarer.com/products/' },
+      ],
+    }}
+  />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What products does afarer manufacture?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Afarer manufactures inflatable SUP boards (all-around, touring, fishing, yoga, racing, kids), marine accessories (life vests, pumps, paddles, repair kits, bags), and commercial inflatable boats and RIBs.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can I get custom manufacturing for my product needs?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. We offer OEM/ODM services including custom design, private label, bulk wholesale, and contract manufacturing for all our product categories.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Are afarer products available for bulk orders?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Factory-direct and wholesale pricing is available for bulk orders. Contact our B2B team for quantity-based pricing and lead times.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What certifications do afarer products carry?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'All afarer products are CE certified. Life vests comply with ISO 12402. Boats and SUPs are designed to ISO 6185 standards. Our factory is ISO 9001 and BSCI certified.',
+          },
+        },
+      ],
+    }}
+  />
   <section class="px-4 md:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-6xl">
     <header class="mb-8 md:mb-12 text-center max-w-3xl mx-auto">
       <p class="text-sm font-semibold uppercase tracking-wider text-primary dark:text-blue-400 mb-2">Catalog</p>
@@ -125,39 +171,59 @@ const metadata = merge(
     </div>
     <div class="space-y-4">
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>What products does afarer manufacture?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Afarer manufactures inflatable SUP boards (all-around, touring, fishing, yoga, racing, kids), marine accessories (life vests, pumps, paddles, repair kits, bags), and commercial inflatable boats and RIBs.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Afarer manufactures inflatable SUP boards (all-around, touring, fishing, yoga, racing, kids), marine
+            accessories (life vests, pumps, paddles, repair kits, bags), and commercial inflatable boats and RIBs.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>Can I get custom manufacturing for my product needs?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Yes. We offer OEM/ODM services including custom design, private label, bulk wholesale, and contract manufacturing for all our product categories.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Yes. We offer OEM/ODM services including custom design, private label, bulk wholesale, and contract
+            manufacturing for all our product categories.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>Are afarer products available for bulk orders?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Yes. Factory-direct and wholesale pricing is available for bulk orders. Contact our B2B team for quantity-based pricing and lead times.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Yes. Factory-direct and wholesale pricing is available for bulk orders. Contact our B2B team for
+            quantity-based pricing and lead times.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>What certifications do afarer products carry?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">All afarer products are CE certified. Life vests comply with ISO 12402. Boats and SUPs are designed to ISO 6185 standards. Our factory is ISO 9001 and BSCI certified.</p>
+          <p class="text-gray-600 leading-relaxed">
+            All afarer products are CE certified. Life vests comply with ISO 12402. Boats and SUPs are designed to ISO
+            6185 standards. Our factory is ISO 9001 and BSCI certified.
+          </p>
         </div>
       </details>
     </div>

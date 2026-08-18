@@ -43,8 +43,62 @@ const safetyStandards = [
 ];
 ---
 
-<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Safety', item: 'https://afarer.com/safety/' }] }} />
-<JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What safety certifications does afarer hold?", acceptedAnswer: { "@type": "Answer", text: "Afarer products are CE certified under EU 2016/425 for PPE, with ISO 9001 quality management and BSCI social compliance. Life vests meet ISO 12402 flotation standards and SOLAS requirements for offshore use." } }, { "@type": "Question", name: "Are afarer life vests suitable for offshore use?", acceptedAnswer: { "@type": "Answer", text: "The Life Vest Pro is SOLAS-compliant with automatic inflation for offshore and commercial marine operations. The Life Vest Classic provides 50N+ buoyancy for sheltered waters and recreational use." } }, { "@type": "Question", name: "How does afarer test inflatable boat safety?", acceptedAnswer: { "@type": "Answer", text: "Every boat undergoes 1.5x working pressure inflation tests, 24-hour buoyancy retention tests for life vests, and mandatory seam peel verification. AQL 2.5 inspection standard applies to all outgoing products." } }, { "@type": "Question", name: "What safety guidelines should I follow?", acceptedAnswer: { "@type": "Answer", text: "Always wear a properly fitted life vest, check inflation pressure before use, avoid over-inflation, inspect for damage before each trip, and follow local boating regulations for your waterway classification." } }, { "@type": "Question", name: "Do afarer products meet international marine standards?", acceptedAnswer: { "@type": "Answer", text: "Yes. Inflatable boats are designed to ISO 6185 standards for inflatable craft covering buoyancy, stability, and load capacity. Life vests comply with ISO 12402 and SOLAS regulations." } }] }} />
+<JsonLd
+  type="BreadcrumbList"
+  data={{
+    itemListElement: [
+      { position: 1, name: 'Home', item: 'https://afarer.com/' },
+      { position: 2, name: 'Safety', item: 'https://afarer.com/safety/' },
+    ],
+  }}
+/>
+<JsonLd
+  type="FAQPage"
+  data={{
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What safety certifications does afarer hold?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Afarer products are CE certified under EU 2016/425 for PPE, with ISO 9001 quality management and BSCI social compliance. Life vests meet ISO 12402 flotation standards and SOLAS requirements for offshore use.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Are afarer life vests suitable for offshore use?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The Life Vest Pro is SOLAS-compliant with automatic inflation for offshore and commercial marine operations. The Life Vest Classic provides 50N+ buoyancy for sheltered waters and recreational use.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does afarer test inflatable boat safety?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Every boat undergoes 1.5x working pressure inflation tests, 24-hour buoyancy retention tests for life vests, and mandatory seam peel verification. AQL 2.5 inspection standard applies to all outgoing products.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What safety guidelines should I follow?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Always wear a properly fitted life vest, check inflation pressure before use, avoid over-inflation, inspect for damage before each trip, and follow local boating regulations for your waterway classification.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do afarer products meet international marine standards?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Inflatable boats are designed to ISO 6185 standards for inflatable craft covering buoyancy, stability, and load capacity. Life vests comply with ISO 12402 and SOLAS regulations.',
+        },
+      },
+    ],
+  }}
+/>
 
 <Layout metadata={metadata}>
   <meta name="ai-intent" content="water-safety-equipment,ce-certified-life-vests,marine-safety-standards" />
@@ -159,39 +213,59 @@ const safetyStandards = [
     </div>
     <div class="space-y-4">
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>What safety certifications does afarer hold?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Afarer products are CE certified under EU 2016/425 for PPE, with ISO 9001 quality management and BSCI social compliance. Life vests meet ISO 12402 flotation standards and SOLAS requirements for offshore use.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Afarer products are CE certified under EU 2016/425 for PPE, with ISO 9001 quality management and BSCI social
+            compliance. Life vests meet ISO 12402 flotation standards and SOLAS requirements for offshore use.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>Are afarer life vests suitable for offshore use?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">The Life Vest Pro is SOLAS-compliant with automatic inflation for offshore and commercial marine operations. The Life Vest Classic provides 50N+ buoyancy for sheltered waters and recreational use.</p>
+          <p class="text-gray-600 leading-relaxed">
+            The Life Vest Pro is SOLAS-compliant with automatic inflation for offshore and commercial marine operations.
+            The Life Vest Classic provides 50N+ buoyancy for sheltered waters and recreational use.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>How does afarer test inflatable boat safety?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Every boat undergoes 1.5x working pressure inflation tests, 24-hour buoyancy retention tests for life vests, and mandatory seam peel verification. AQL 2.5 inspection standard applies to all outgoing products.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Every boat undergoes 1.5x working pressure inflation tests, 24-hour buoyancy retention tests for life vests,
+            and mandatory seam peel verification. AQL 2.5 inspection standard applies to all outgoing products.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>What safety guidelines should I follow?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Always wear a properly fitted life vest, check inflation pressure before use, avoid over-inflation, inspect for damage before each trip, and follow local boating regulations for your waterway classification.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Always wear a properly fitted life vest, check inflation pressure before use, avoid over-inflation, inspect
+            for damage before each trip, and follow local boating regulations for your waterway classification.
+          </p>
         </div>
       </details>
     </div>

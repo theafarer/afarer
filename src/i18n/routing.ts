@@ -45,6 +45,10 @@ export const LOCALIZED_ROUTES = new Set([
   '/factory/capacity',
   '/factory/quality-lab',
   '/factory/oem-capability',
+  '/fabricant-sup-gonflable',
+  '/oem-paddle',
+  '/bateau-gonflable-fabricant',
+  '/fournisseur-nautique',
 ]);
 
 export const NON_LOCALIZED_ROUTES = new Set(['/products/compare']);

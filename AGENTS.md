@@ -111,29 +111,26 @@ When the admin renames a navigation item (e.g. `Blog` → `News`, `/blog` → `/
 
 The navigation editor (`src/pages/keystatic/navigation.astro`) shows a static warning that points at `/keystatic/link-refactor` whenever a nav URL/name is changed. After a successful save, the page also **auto-detects** which text/href pairs were modified and shows a floating banner at the bottom of the page. Each detected change has a one-click "重命名 URL →" / "重命名 文字 →" button that opens the refactor tool with the change pre-filled via `?oldUrl=&newUrl=` or `?oldName=&newName=` query params. The banner also has a "重新加载" button (to refresh the new SHA into the form) and a "收起" button (to dismiss).
 
-## Contact Form (encrypted submissions + email)
+## Contact Form (email via Cloudflare Worker)
 
-`/contact` is **SSR** (`prerender = false`) so the math captcha cookie can be set on every request. `POST /api/contact` is a Cloudflare Pages Function that:
+`/contact` and `/{lang}/contact` are **static** SSG pages (no SSR, no captcha cookie). `POST /api/contact` is handled by a **standalone Cloudflare Worker** (`workers/contact-worker/index.ts`, deployed as `afarer-contact`, zone route `afarer.com/api/contact*` — see `workers/contact-worker/wrangler.toml`). This is **not** a Pages Function; there is no `src/pages/api/contact.ts`.
 
-1. Validates the HMAC-signed captcha cookie (`src/lib/contact-captcha.ts`).
-2. Sanitises + validates 10 fields (First/Last Name, Company, Address, Zip, Country, E-mail, TEL with country code, Subject, Message).
-3. Encrypts the payload with **AES-256-GCM** (key derived from `SESSION_SECRET` env var or fallback) — `src/lib/contact-crypto.ts`.
-4. Appends the encrypted record to `src/data/contact/submissions.enc.json` via GitHub API using the **service-account Fine-grained PAT** stored in `branding.yaml` (`contact_submissions_pat`).
-5. Optionally sends an email via **Resend** with `Reply-To` set to the submitter — `src/pages/api/contact.ts` `sendEmailViaResend()`. Cloudflare Email Workers cannot send arbitrary outbound mail, so a transactional service is required.
+The worker does:
 
-Admin can read submissions at `/keystatic/contact-submissions` (decryption happens in the admin's session). The submissions file is **not** read by `search-index.json.ts` (it only scans `pages/`, `post/`, `product/`).
+1. CORS + `OPTIONS` preflight; rejects non-`POST` with 405.
+2. Parses a **JSON body** (the Contact widget) or **FormData** (Newsletter widget) via content-type detection. `request.json()` / `request.formData()` are used.
+3. Sanitises + validates 10 fields (First/Last Name, Company, Address, Zip, Country, E-mail, TEL with country code, Subject, Message): first + last name and a valid e-mail are required, Message must be ≥ 5 chars.
+4. Blocks spam keywords (viagra / cialis / crypto airdrop / investment opportunity / casino / betting) in `message` and `subject`.
+5. Optionally sends an email via **Resend** with `Reply-To` set to the submitter — `workers/contact-worker/index.ts`. Cloudflare Email Workers cannot send arbitrary outbound mail, so a transactional service is required.
+6. Destination e-mail and Resend key come from **Worker secrets** (`CONTACT_EMAIL_TO`, `CONTACT_RESEND_API_KEY`, `CONTACT_FROM_EMAIL`, `CONTACT_FROM_NAME`) — not from repo files.
 
-**Rate limiting + honeypot** (`src/lib/rate-limit.ts` + `src/components/widgets/Contact.astro`): `/api/contact` enforces **5 submissions per IP per hour** via an in-memory sliding window (`contact:<ip>` key). On overflow it returns HTTP 429 with `Retry-After`, `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Reset` headers. The contact form also has a hidden `email_confirm` honeypot field (`position:absolute; left:-9999px; tabindex=-1; aria-hidden=true`); if a bot fills it, the API returns HTTP 200 with a fake UUID but skips both the GitHub write and the email — so the bot can't tell it was caught. The map is per-Worker-isolate (no Cloudflare KV / DO), so under high traffic the effective limit is `5 × isolate_count`. For single-tenant or low-traffic sites this is sufficient.
+**Not implemented (legacy docs claimed these):** no HMAC captcha cookie (no `src/lib/contact-captcha.ts`), no AES-256-GCM payload encryption (no `src/data/contact/submissions.enc.json` writer — that file is never appended to anymore), and no rate limiting (`src/lib/rate-limit.ts` exists but is unused). The hidden `email_confirm` honeypot field (`position:absolute; left:-9999px; tabindex=-1; aria-hidden=true`) still exists in the forms but is **ignored** by the worker. `/keystatic/contact-submissions` still reads/decrypts `submissions.enc.json` via GitHub API (`src/lib/contact-crypto.ts`) for legacy records, but nothing writes that file today.
 
-**Security note:** `contact_submissions_pat` and `contact_resend_api_key` live in the public GitHub repo (bundled into the Cloudflare Worker). Use a separate Fine-grained PAT scoped to a single repo with Contents R/W only, and rotate the Resend key periodically.
+**Security note:** `contact_submissions_pat` and `contact_resend_api_key` in `branding.yaml` are legacy repo-stored values; the worker reads secrets from the Cloudflare env instead. Keep any repo-stored tokens scoped (Contents R/W only) and rotate them periodically.
 
-## Important: Subdomain Routing Requires `output: 'server'`
+## Important: Static Output + Edge Locale Middleware
 
-With `output: 'static'`, Cloudflare Workers + Assets serves static files directly at the edge **without** calling the Worker's `w.fetch`. The subdomain routing injected by `scripts/patch-worker.mjs` never executes for static paths.
-
-With `output: 'server'`, ALL requests go through the Worker, allowing the injected `w.fetch` override in `dist/server/entry.mjs` to intercept subdomain URLs and rewrite them to path-based URLs before Astro's handler serves the correct localized content.
-
-Do NOT change back to `output: 'static'` unless you remove subdomain routing.
+The site is built with `output: 'static'` (`astro.config.ts`) and the edge middleware `functions/_middleware.ts` handles locale detection/redirect and R2 `/images|/files` → `assets.afarer.com` (301). `scripts/patch-worker.mjs` (subdomain routing + `dist/server/wrangler.json` KV injection) targets the `output: 'server'` Cloudflare Workers+Assets build and is **not part of the current `npm run build` chain** — do not rely on it for the current static deployment.
 
 ## Iron Rule — Encoding / Garbled Text
 
@@ -179,4 +176,4 @@ After changes, always verify:
 
 1. `npm run build` succeeds
 2. `npm run check` passes (astro check + ESLint + Prettier)
-3. Visual check in browser: homepage, blog, dark mode, mobile menu, contact form (verify captcha + submission roundtrip end-to-end)
+3. Visual check in browser: homepage, blog, dark mode, mobile menu, contact form (verify submission roundtrip end-to-end: form posts JSON → `afarer-contact` Worker → Resend email)

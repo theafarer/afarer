@@ -35,9 +35,16 @@ const lh = (h: string) => (h ? `/${lang}${h}` : h);
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 
 const pageMeta = page.meta ?? {};
-const cleanMeta = (s: string) => (s || '').replace(/<br\s*\/?>/gi, ' ').replace(/\s+/g, ' ').trim();
+const cleanMeta = (s: string) =>
+  (s || '')
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 const metadata = {
-  title: cleanMeta(pageMeta.title || hero.title || `Resort SUP Fleet Solutions — ${SITE.name}`).replace('{SITE}', SITE.name),
+  title: cleanMeta(pageMeta.title || hero.title || `Resort SUP Fleet Solutions — ${SITE.name}`).replace(
+    '{SITE}',
+    SITE.name
+  ),
   description: cleanMeta(pageMeta.description || hero.subtitle),
 };
 const crumbs = [
@@ -75,7 +82,9 @@ const crumbs = [
         <Headline title={packages.title} subtitle={packages.subtitle} />
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
           {packages.items?.map((pkg: any) => (
-            <div class={`relative rounded-2xl border-2 ${pkg.popular ? 'border-primary shadow-xl scale-[1.02]' : 'border-gray-200 dark:border-slate-700'} bg-white dark:bg-slate-900 px-6 py-8 flex flex-col`}>
+            <div
+              class={`relative rounded-2xl border-2 ${pkg.popular ? 'border-primary shadow-xl scale-[1.02]' : 'border-gray-200 dark:border-slate-700'} bg-white dark:bg-slate-900 px-6 py-8 flex flex-col`}
+            >
               {pkg.popular ? (
                 <span class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-white text-xs font-semibold rounded-full whitespace-nowrap">
                   {t('packages.popular') || 'Most Popular'}
@@ -107,10 +116,15 @@ const crumbs = [
   {
     caseStudy.quote && (
       <WidgetWrapper containerClass="max-w-5xl mx-auto">
-        <Headline title={t('resort.caseStudy') || 'Real Results'} subtitle={t('resort.caseStudy.sub') || 'What resort operators say about partnering with Afarer.'} />
+        <Headline
+          title={t('resort.caseStudy') || 'Real Results'}
+          subtitle={t('resort.caseStudy.sub') || 'What resort operators say about partnering with Afarer.'}
+        />
         <div class="rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 border border-gray-200 dark:border-slate-700 p-8 md:p-12 mt-8">
           <Icon name="tabler:quote" class="text-3xl text-primary mb-4" />
-          <blockquote class="text-lg md:text-xl italic text-foreground leading-relaxed">&ldquo;{caseStudy.quote}&rdquo;</blockquote>
+          <blockquote class="text-lg md:text-xl italic text-foreground leading-relaxed">
+            &ldquo;{caseStudy.quote}&rdquo;
+          </blockquote>
           <div class="mt-6 flex items-center justify-between flex-wrap gap-4">
             <div>
               <p class="font-semibold text-foreground">{caseStudy.author}</p>
@@ -137,21 +151,32 @@ const crumbs = [
   <!-- Related Products -->
   <section class="max-w-6xl mx-auto px-6 py-12">
     <div class="text-center mb-8">
-      <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase">{t('product.related') || 'Featured Products'}</span>
+      <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase"
+        >{t('product.related') || 'Featured Products'}</span
+      >
       <h2 class="mt-2 text-2xl font-bold text-foreground">SUPs for Resort Fleets</h2>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
-      <a href={lh('/products/sup-explorer-11')} class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+      <a
+        href={lh('/products/sup-explorer-11')}
+        class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
         <h3 class="font-semibold text-foreground group-hover:text-primary">SUP Explorer 11</h3>
         <p class="mt-1 text-sm text-muted">Wide-body all-rounder for first-time guests.</p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
       </a>
-      <a href={lh('/products/sup-tropical-breeze')} class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+      <a
+        href={lh('/products/sup-tropical-breeze')}
+        class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
         <h3 class="font-semibold text-foreground group-hover:text-primary">SUP Tropical Breeze</h3>
         <p class="mt-1 text-sm text-muted">Lightweight touring board with premium graphics.</p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
       </a>
-      <a href={lh('/products/sup-medusa-glow')} class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+      <a
+        href={lh('/products/sup-medusa-glow')}
+        class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
         <h3 class="font-semibold text-foreground group-hover:text-primary">SUP Medusa Glow</h3>
         <p class="mt-1 text-sm text-muted">LED-lit night SUP for evening lagoon experiences.</p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
@@ -160,11 +185,14 @@ const crumbs = [
   </section>
 
   <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
-  <JsonLd type="Service" service={{
-    name: cleanMeta(pageMeta.title || hero.title || 'Resort SUP Fleet Solutions').replace('{SITE}', SITE.name),
-    description: hero.subtitle || 'Commercial-grade SUP fleets for hospitality properties',
-    serviceType: 'Hospitality Water Sports Solutions',
-    areaServed: ['Global'],
-    url: `/${lang}/solutions/resorts-hotels`,
-  }} />
+  <JsonLd
+    type="Service"
+    service={{
+      name: cleanMeta(pageMeta.title || hero.title || 'Resort SUP Fleet Solutions').replace('{SITE}', SITE.name),
+      description: hero.subtitle || 'Commercial-grade SUP fleets for hospitality properties',
+      serviceType: 'Hospitality Water Sports Solutions',
+      areaServed: ['Global'],
+      url: `/${lang}/solutions/resorts-hotels`,
+    }}
+  />
 </Layout>

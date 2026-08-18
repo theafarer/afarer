@@ -51,9 +51,18 @@ export default {
 
     let body: Record<string, string>;
     try {
-      body = (await request.json()) as Record<string, string>;
+      const contentType = request.headers.get('content-type') || '';
+      if (contentType.includes('application/json')) {
+        body = (await request.json()) as Record<string, string>;
+      } else {
+        const fd = await request.formData();
+        body = {};
+        fd.forEach((v, k) => {
+          if (typeof v === 'string') body[k] = v;
+        });
+      }
     } catch {
-      return json({ success: false, error: 'Invalid JSON' }, 400);
+      return json({ success: false, error: 'Invalid request body' }, 400);
     }
 
     const fields = {
@@ -68,6 +77,10 @@ export default {
       subject: sanitize(body.subject, 200),
       message: sanitize(body.message, 4000),
     };
+
+    const isNewsletter = fields.subject.toLowerCase() === 'newsletter signup';
+    if (isNewsletter && !fields.firstName) fields.firstName = 'Newsletter';
+    if (isNewsletter && !fields.lastName) fields.lastName = 'Subscriber';
 
     if (!fields.firstName || !fields.lastName)
       return json({ success: false, error: 'First and last name required' }, 400);
@@ -90,7 +103,7 @@ export default {
       const from = `${fromName} <${env.CONTACT_FROM_EMAIL}>`;
       const replyTo = `${fields.firstName} ${fields.lastName} <${fields.email}>`;
 
-      const subject = `[Contact] ${fields.subject || '(no subject)'} 鈥?${fields.firstName} ${fields.lastName}`;
+      const subject = `[Contact] ${fields.subject || '(no subject)'} —${fields.firstName} ${fields.lastName}`;
       const html = `<div style="font-family:sans-serif;max-width:640px;margin:0 auto">
         <h2>New contact form submission</h2>
         <p>Received at ${receivedAt} | IP: ${ip}</p>

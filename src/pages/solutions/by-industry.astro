@@ -83,8 +83,63 @@ const industries = [
 ];
 ---
 
-<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Solutions', item: 'https://afarer.com/solutions/' }, { position: 3, name: 'By Industry', item: 'https://afarer.com/solutions/by-industry/' }] }} />
-<JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What industries does afarer serve?", acceptedAnswer: { "@type": "Answer", text: "Afarer serves six primary industry verticals: Search & Rescue, Disaster Relief & Humanitarian Aid, Commercial Marine Operations, Defense & Government, Hospitality & Tourism, and Fishing & Aquaculture. Each solution is backed by CE certification and ISO quality management." } }, { "@type": "Question", name: "Does afarer offer custom solutions for specific industries?", acceptedAnswer: { "@type": "Answer", text: "Yes. Our OEM/ODM team can design and manufacture custom inflatable watercraft for your specific industry requirements, from concept to production at our 12,000 m² ISO-certified facility." } }, { "@type": "Question", name: "What certifications do afarer industry solutions carry?", acceptedAnswer: { "@type": "Answer", text: "All afarer solutions are CE certified. Options include SOLAS compliance for rescue craft, military-grade Hypalon for defense applications, and commercial fleet-grade construction for hospitality and rental operations." } }, { "@type": "Question", name: "Can I get a custom solution for an industry not listed?", acceptedAnswer: { "@type": "Answer", text: "Absolutely. Contact our OEM/ODM team with your requirements. Our R&D center supports CAD/FEA simulation, hydrodynamic testing, and custom material selection for any marine application." } }, { "@type": "Question", name: "What is the minimum order for custom industry solutions?", acceptedAnswer: { "@type": "Answer", text: "MOQ for custom SUPs starts at 5-10 units. For RIBs and specialized boats, MOQ varies by complexity. Contact our team for a detailed quote based on your specifications." } }] }} />
+<JsonLd
+  type="BreadcrumbList"
+  data={{
+    itemListElement: [
+      { position: 1, name: 'Home', item: 'https://afarer.com/' },
+      { position: 2, name: 'Solutions', item: 'https://afarer.com/solutions/' },
+      { position: 3, name: 'By Industry', item: 'https://afarer.com/solutions/by-industry/' },
+    ],
+  }}
+/>
+<JsonLd
+  type="FAQPage"
+  data={{
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What industries does afarer serve?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Afarer serves six primary industry verticals: Search & Rescue, Disaster Relief & Humanitarian Aid, Commercial Marine Operations, Defense & Government, Hospitality & Tourism, and Fishing & Aquaculture. Each solution is backed by CE certification and ISO quality management.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does afarer offer custom solutions for specific industries?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Our OEM/ODM team can design and manufacture custom inflatable watercraft for your specific industry requirements, from concept to production at our 12,000 m² ISO-certified facility.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What certifications do afarer industry solutions carry?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'All afarer solutions are CE certified. Options include SOLAS compliance for rescue craft, military-grade Hypalon for defense applications, and commercial fleet-grade construction for hospitality and rental operations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I get a custom solution for an industry not listed?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Absolutely. Contact our OEM/ODM team with your requirements. Our R&D center supports CAD/FEA simulation, hydrodynamic testing, and custom material selection for any marine application.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the minimum order for custom industry solutions?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'MOQ for custom SUPs starts at 5-10 units. For RIBs and specialized boats, MOQ varies by complexity. Contact our team for a detailed quote based on your specifications.',
+        },
+      },
+    ],
+  }}
+/>
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>
   <section class="max-w-6xl mx-auto py-24 px-6">
@@ -172,39 +227,61 @@ const industries = [
     </div>
     <div class="space-y-4">
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>What industries does afarer serve?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Afarer serves six primary industry verticals: Search & Rescue, Disaster Relief & Humanitarian Aid, Commercial Marine Operations, Defense & Government, Hospitality & Tourism, and Fishing & Aquaculture. Each solution is backed by CE certification and ISO quality management.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Afarer serves six primary industry verticals: Search & Rescue, Disaster Relief & Humanitarian Aid,
+            Commercial Marine Operations, Defense & Government, Hospitality & Tourism, and Fishing & Aquaculture. Each
+            solution is backed by CE certification and ISO quality management.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>Does afarer offer custom solutions for specific industries?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Yes. Our OEM/ODM team can design and manufacture custom inflatable watercraft for your specific industry requirements, from concept to production at our 12,000 m² ISO-certified facility.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Yes. Our OEM/ODM team can design and manufacture custom inflatable watercraft for your specific industry
+            requirements, from concept to production at our 12,000 m² ISO-certified facility.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>What certifications do afarer industry solutions carry?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">All afarer solutions are CE certified. Options include SOLAS compliance for rescue craft, military-grade Hypalon for defense applications, and commercial fleet-grade construction for hospitality and rental operations.</p>
+          <p class="text-gray-600 leading-relaxed">
+            All afarer solutions are CE certified. Options include SOLAS compliance for rescue craft, military-grade
+            Hypalon for defense applications, and commercial fleet-grade construction for hospitality and rental
+            operations.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>What is the minimum order for custom industry solutions?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">MOQ for custom SUPs starts at 5-10 units. For RIBs and specialized boats, MOQ varies by complexity. Contact our team for a detailed quote based on your specifications.</p>
+          <p class="text-gray-600 leading-relaxed">
+            MOQ for custom SUPs starts at 5-10 units. For RIBs and specialized boats, MOQ varies by complexity. Contact
+            our team for a detailed quote based on your specifications.
+          </p>
         </div>
       </details>
     </div>

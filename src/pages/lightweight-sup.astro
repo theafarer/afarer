@@ -2,12 +2,12 @@
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 
-  const metadata = {
-    title: 'Lightweight SUP Board | Ultra-Portable Inflatable Paddle Board | Afarer OEM Manufacturer',
-    description:
-      'Afarer lightweight SUP boards — ultra-portable inflatable paddle boards under 20 lbs. Easy to carry, pack, and travel with. Premium drop-stitch construction at half the weight. OEM/ODM manufacturing available for brands and retailers.',
-    ignoreTitleTemplate: true,
-  };
+const metadata = {
+  title: 'Lightweight SUP Board | Ultra-Portable Inflatable Paddle Board | Afarer OEM Manufacturer',
+  description:
+    'Afarer lightweight SUP boards — ultra-portable inflatable paddle boards under 20 lbs. Easy to carry, pack, and travel with. Premium drop-stitch construction at half the weight. OEM/ODM manufacturing available for brands and retailers.',
+  ignoreTitleTemplate: true,
+};
 const pageUrl = 'https://afarer.com/lightweight-sup/';
 const today = '2026-07-27';
 ---
@@ -37,12 +37,47 @@ const today = '2026-07-27';
     type="FAQPage"
     data={{
       mainEntity: [
-        { "@type": "Question", name: "How much does a lightweight SUP weigh?", acceptedAnswer: { "@type": "Answer", text: "Lightweight SUPs typically weigh between 16 and 20 lbs, significantly less than standard inflatable SUPs (22-28 lbs) and hard boards (25-40 lbs). The weight savings come from advanced materials and optimized drop-stitch layering." } },
-        { "@type": "Question", name: "Are lightweight SUPs less durable?", acceptedAnswer: { "@type": "Answer", text: "No. Lightweight SUPs use advanced drop-stitch materials that maintain rigidity while reducing overall weight. Premium military-grade PVC and fusion-laminated seams ensure durability comparable to heavier boards." } },
-        { "@type": "Question", name: "Can lightweight SUPs handle rough conditions?", acceptedAnswer: { "@type": "Answer", text: "Lightweight SUPs perform best on calm flatwater and moderate conditions. While durable, their lighter construction means they may flex more in challenging conditions like strong winds or rapids compared to heavier expedition-grade boards." } },
-        { "@type": "Question", name: "Is a lightweight SUP good for beginners?", acceptedAnswer: { "@type": "Answer", text: "Yes. Lightweight SUPs are excellent for beginners because they are easy to carry, transport, and store. The lower weight makes the overall learning experience more enjoyable and less physically demanding." } },
-        { "@type": "Question", name: "Do you manufacture lightweight SUPs for private label?", acceptedAnswer: { "@type": "Answer", text: "Yes. Afarer offers OEM/ODM manufacturing for lightweight SUP boards with custom graphics, packaging, and weight specifications for brands targeting travelers and portability-focused paddlers." } },
-      ]
+        {
+          '@type': 'Question',
+          name: 'How much does a lightweight SUP weigh?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Lightweight SUPs typically weigh between 16 and 20 lbs, significantly less than standard inflatable SUPs (22-28 lbs) and hard boards (25-40 lbs). The weight savings come from advanced materials and optimized drop-stitch layering.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Are lightweight SUPs less durable?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'No. Lightweight SUPs use advanced drop-stitch materials that maintain rigidity while reducing overall weight. Premium military-grade PVC and fusion-laminated seams ensure durability comparable to heavier boards.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can lightweight SUPs handle rough conditions?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Lightweight SUPs perform best on calm flatwater and moderate conditions. While durable, their lighter construction means they may flex more in challenging conditions like strong winds or rapids compared to heavier expedition-grade boards.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is a lightweight SUP good for beginners?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Lightweight SUPs are excellent for beginners because they are easy to carry, transport, and store. The lower weight makes the overall learning experience more enjoyable and less physically demanding.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you manufacture lightweight SUPs for private label?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Afarer offers OEM/ODM manufacturing for lightweight SUP boards with custom graphics, packaging, and weight specifications for brands targeting travelers and portability-focused paddlers.',
+          },
+        },
+      ],
     }}
   />
   <section class="max-w-6xl mx-auto py-24 px-6">
@@ -159,19 +194,31 @@ const today = '2026-07-27';
       <div class="grid md:grid-cols-2 gap-6">
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Air Travelers</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Lightweight SUPs pack into compact backpacks that fit airline luggage limits. Take your board to destinations worldwide without oversized baggage fees.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Lightweight SUPs pack into compact backpacks that fit airline luggage limits. Take your board to
+            destinations worldwide without oversized baggage fees.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Hikers & Backpackers</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Carry your SUP to remote lakes and launch spots. At under 20 lbs with backpack, it is practical to hike moderate distances to secluded paddling locations.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Carry your SUP to remote lakes and launch spots. At under 20 lbs with backpack, it is practical to hike
+            moderate distances to secluded paddling locations.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Small Space Dwellers</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Live in an apartment or condo? Lightweight SUPs pack into compact storage that fits closets, under beds, or car trunks.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Live in an apartment or condo? Lightweight SUPs pack into compact storage that fits closets, under beds, or
+            car trunks.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Rental & Retail Programs</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Lightweight boards are easier for guests to handle, reducing damage and staff assistance needs. OEM custom branding available for retail and rental programs.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Lightweight boards are easier for guests to handle, reducing damage and staff assistance needs. OEM custom
+            branding available for retail and rental programs.
+          </p>
         </div>
       </div>
     </div>
@@ -182,7 +229,9 @@ const today = '2026-07-27';
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">OEM/ODM Manufacturing for Lightweight SUPs</h2>
       <p class="text-lg text-gray-500 leading-relaxed mb-8">
-        Afarer manufactures lightweight SUP boards for global brands and travel retailers. Our production lines produce CE-certified lightweight SUPs using advanced materials that reduce weight without compromising rigidity. MOQ from 50 units. Lead times from 30 days.
+        Afarer manufactures lightweight SUP boards for global brands and travel retailers. Our production lines produce
+        CE-certified lightweight SUPs using advanced materials that reduce weight without compromising rigidity. MOQ
+        from 50 units. Lead times from 30 days.
       </p>
       <div class="grid md:grid-cols-3 gap-4">
         <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
@@ -199,7 +248,11 @@ const today = '2026-07-27';
         </div>
       </div>
       <div class="mt-8 text-center">
-        <a href="/oem-odm-manufacturer" class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all">Request OEM Quote <span>→</span></a>
+        <a
+          href="/oem-odm-manufacturer"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+          >Request OEM Quote <span>→</span></a
+        >
       </div>
     </div>
   </section>
@@ -207,28 +260,50 @@ const today = '2026-07-27';
   <!-- FAQ -->
   <section class="bg-gray-50 py-16 px-6">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">Lightweight SUP — Frequently Asked Questions</h2>
-      <p class="text-lg text-gray-500 text-center mb-12">Common questions about choosing and using lightweight paddle boards.</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        Lightweight SUP — Frequently Asked Questions
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        Common questions about choosing and using lightweight paddle boards.
+      </p>
       <div class="space-y-4">
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">How much does a lightweight SUP weigh?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Lightweight SUPs typically weigh between 16 and 20 lbs, significantly less than standard inflatable SUPs (22-28 lbs) and hard boards (25-40 lbs). The weight savings come from advanced materials and optimized drop-stitch layering.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Lightweight SUPs typically weigh between 16 and 20 lbs, significantly less than standard inflatable SUPs
+            (22-28 lbs) and hard boards (25-40 lbs). The weight savings come from advanced materials and optimized
+            drop-stitch layering.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Are lightweight SUPs less durable?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">No. Lightweight SUPs use advanced drop-stitch materials that maintain rigidity while reducing overall weight. Premium military-grade PVC and fusion-laminated seams ensure durability comparable to heavier boards.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            No. Lightweight SUPs use advanced drop-stitch materials that maintain rigidity while reducing overall
+            weight. Premium military-grade PVC and fusion-laminated seams ensure durability comparable to heavier
+            boards.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Can lightweight SUPs handle rough conditions?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Lightweight SUPs perform best on calm flatwater and moderate conditions. While durable, their lighter construction means they may flex more in challenging conditions like strong winds or rapids compared to heavier expedition-grade boards.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Lightweight SUPs perform best on calm flatwater and moderate conditions. While durable, their lighter
+            construction means they may flex more in challenging conditions like strong winds or rapids compared to
+            heavier expedition-grade boards.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Is a lightweight SUP good for beginners?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Lightweight SUPs are excellent for beginners because they are easy to carry, transport, and store. The lower weight makes the overall learning experience more enjoyable and less physically demanding.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Lightweight SUPs are excellent for beginners because they are easy to carry, transport, and store. The
+            lower weight makes the overall learning experience more enjoyable and less physically demanding.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Do you manufacture lightweight SUPs for private label?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Afarer offers OEM/ODM manufacturing for lightweight SUP boards with custom graphics, packaging, and weight specifications for brands targeting travelers and portability-focused paddlers.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Afarer offers OEM/ODM manufacturing for lightweight SUP boards with custom graphics, packaging, and
+            weight specifications for brands targeting travelers and portability-focused paddlers.
+          </p>
         </div>
       </div>
     </div>
@@ -237,6 +312,10 @@ const today = '2026-07-27';
   <section class="max-w-6xl mx-auto py-16 px-6 text-center">
     <h2 class="text-3xl md:text-4xl font-bold text-secondary">Find Your Lightweight SUP</h2>
     <p class="mt-4 text-lg text-gray-500">Contact us for lightweight SUP options, bulk orders, or custom designs.</p>
-    <a href="/contact" class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all">Get a Quote <span>→</span></a>
+    <a
+      href="/contact"
+      class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+      >Get a Quote <span>→</span></a
+    >
   </section>
 </Layout>

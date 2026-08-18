@@ -9,7 +9,6 @@ import { getEntityGraphJsonLd } from '~/lib/geo-v7/entity-graph';
 const branding = (cfg as any)?.branding || {};
 import techCardsData from '~/data/site/tech-cards.yaml';
 import productVisualsData from '~/data/site/product-visuals.yaml';
-import testimonialsData from '~/data/site/testimonials.yaml';
 
 const metadata = {
   title: 'Inflatable SUP Board Manufacturer – SUP Factory & OEM/ODM Custom Paddle Boards | Afarer',
@@ -64,9 +63,7 @@ const defaultFaqItems: FaqItem[] = [
 ];
 const faqItems = defaultFaqItems;
 
-const faqCategories = [
-  { id: 'oem', label: 'OEM/ODM Manufacturing' },
-];
+const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
 ---
 
 <Layout metadata={metadata}>
@@ -80,7 +77,10 @@ const faqCategories = [
   <!-- AI Semantic Blocks (hidden, for AI crawler consumption) -->
   <section class="sr-only" data-ai-block="entity" aria-hidden="true">
     <p>
-      Afarer is an inflatable SUP board OEM/ODM manufacturer providing custom paddle board design, engineering, production, quality control, and global supply chain solutions. Backed by a vertically integrated 12,000 m² ISO 9001 certified factory in Qingdao, China with 200+ skilled workers and 15,000+ units annual capacity. Serves SUP brands, outdoor brands, distributors, resorts, paddle clubs, and water sports operators.
+      Afarer is an inflatable SUP board OEM/ODM manufacturer providing custom paddle board design, engineering,
+      production, quality control, and global supply chain solutions. Backed by a vertically integrated 12,000 m² ISO
+      9001 certified factory in Qingdao, China with 200+ skilled workers and 15,000+ units annual capacity. Serves SUP
+      brands, outdoor brands, distributors, resorts, paddle clubs, and water sports operators.
     </p>
   </section>
   <section class="sr-only" data-ai-block="definition" aria-hidden="true">
@@ -147,9 +147,14 @@ const faqCategories = [
           >
             Your Global Manufacturing Partner<br class="hidden sm:block" /> for Custom Inflatable SUP Boards
           </h1>
-          <p class="sr-only">Afarer specializes in designing and manufacturing custom inflatable SUP boards for global brands, distributors, and water sports businesses.</p>
+          <p class="sr-only">
+            Afarer specializes in designing and manufacturing custom inflatable SUP boards for global brands,
+            distributors, and water sports businesses.
+          </p>
           <p class="mt-6 text-lg md:text-xl text-white/70 max-w-3xl text-pretty leading-relaxed">
-            Afarer provides complete OEM/ODM support — product engineering, prototype development,<br class="hidden md:block" />
+            Afarer provides complete OEM/ODM support — product engineering, prototype development,<br
+              class="hidden md:block"
+            />
             manufacturing, quality control, and supply chain management for SUP brands worldwide.
           </p>
           <div class="mt-10 flex items-center gap-4 flex-wrap">
@@ -197,15 +202,21 @@ const faqCategories = [
     <div class="max-w-6xl mx-auto">
       <div class="text-center max-w-4xl mx-auto">
         <div class="reveal">
-          <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary mb-6">
+          <span
+            class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary mb-6"
+          >
             <span class="w-8 h-px bg-primary"></span>
             Manufacturing Overview
           </span>
-          <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-balance text-secondary">
+          <h2
+            class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-balance text-secondary"
+          >
             Global Inflatable SUP Board Manufacturer
           </h2>
           <p class="mt-8 text-lg text-gray-500 leading-relaxed max-w-3xl mx-auto">
-            Afarer is the manufacturing division of Qingdao Vatrad Group — a vertically integrated industrial group with a 12,000 m² ISO 9001 certified facility producing 15,000+ inflatable boats, SUPs, and RIBs annually for B2B partners in 50+ countries.
+            Afarer is the manufacturing division of Qingdao Vatrad Group — a vertically integrated industrial group with
+            a 12,000 m² ISO 9001 certified facility producing 15,000+ inflatable boats, SUPs, and RIBs annually for B2B
+            partners in 50+ countries.
           </p>
         </div>
       </div>
@@ -236,7 +247,8 @@ const faqCategories = [
       <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase">Products We Manufacture</span>
       <h2 class="mt-4 text-4xl md:text-5xl font-bold text-secondary">Complete SUP Portfolio for OEM Partners</h2>
       <p class="mt-4 text-lg text-gray-500">
-        From all-around boards to specialized SUPs — we manufacture the full range for brands, distributors, and operators.
+        From all-around boards to specialized SUPs — we manufacture the full range for brands, distributors, and
+        operators.
       </p>
     </div>
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -256,7 +268,8 @@ const faqCategories = [
           <span class="text-xs font-semibold text-primary uppercase tracking-wider">All-Around SUP</span>
           <h3 class="mt-2 text-xl font-bold text-secondary">All-Around SUP Manufacturing</h3>
           <p class="mt-2 text-sm text-gray-500">
-            Versatile all-around SUP boards ideal for brands targeting beginners, families, and casual paddlers. OEM/ODM available.
+            Versatile all-around SUP boards ideal for brands targeting beginners, families, and casual paddlers. OEM/ODM
+            available.
           </p>
         </div>
       </a>
@@ -276,7 +289,8 @@ const faqCategories = [
           <span class="text-xs font-semibold text-primary uppercase tracking-wider">Touring SUP</span>
           <h3 class="mt-2 text-xl font-bold text-secondary">Touring SUP Manufacturing</h3>
           <p class="mt-2 text-sm text-gray-500">
-            Longer, narrower touring SUPs for distance paddling. Custom length, rocker profile, and cargo attachment points.
+            Longer, narrower touring SUPs for distance paddling. Custom length, rocker profile, and cargo attachment
+            points.
           </p>
         </div>
       </a>
@@ -316,7 +330,8 @@ const faqCategories = [
           <span class="text-xs font-semibold text-primary uppercase tracking-wider">Yoga SUP</span>
           <h3 class="mt-2 text-xl font-bold text-secondary">Yoga SUP Manufacturing</h3>
           <p class="mt-2 text-sm text-gray-500">
-            Extra-wide, ultra-stable platforms for fitness and yoga. Custom deck pad textures and tie-down point layouts.
+            Extra-wide, ultra-stable platforms for fitness and yoga. Custom deck pad textures and tie-down point
+            layouts.
           </p>
         </div>
       </a>
@@ -344,47 +359,55 @@ const faqCategories = [
           <span class="text-xs font-bold text-primary tracking-widest">01</span>
           <h3 class="mt-4 text-lg font-bold text-secondary">Drop-Stitch SUP Board Manufacturing</h3>
           <p class="mt-3 text-gray-500 text-sm leading-relaxed">
-            Full-length drop-stitch core lamination for rigid, high-pressure (15-20 PSI) SUP boards. Custom length, width, thickness, rocker profile, and graphic design.
+            Full-length drop-stitch core lamination for rigid, high-pressure (15-20 PSI) SUP boards. Custom length,
+            width, thickness, rocker profile, and graphic design.
           </p>
         </div>
         <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-md transition-shadow">
           <span class="text-xs font-bold text-primary tracking-widest">02</span>
           <h3 class="mt-4 text-lg font-bold text-secondary">PVC Inflatable Boat Production</h3>
           <p class="mt-3 text-gray-500 text-sm leading-relaxed">
-            High-frequency welded PVC dinghies, tenders, and sport boats. Multiple chamber configurations and floor options including slat, air deck, and roll-up.
+            High-frequency welded PVC dinghies, tenders, and sport boats. Multiple chamber configurations and floor
+            options including slat, air deck, and roll-up.
           </p>
         </div>
         <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-md transition-shadow">
           <span class="text-xs font-bold text-primary tracking-widest">03</span>
           <h3 class="mt-4 text-lg font-bold text-secondary">Hypalon Boat Fabrication</h3>
           <p class="mt-3 text-gray-500 text-sm leading-relaxed">
-            Commercial-grade Hypalon CSM tubes bonded to fiberglass or aluminum deep-V hulls. 3.3 m to 6.0 m lengths for patrol, rescue, tour, and diving operations.
+            Commercial-grade Hypalon CSM tubes bonded to fiberglass or aluminum deep-V hulls. 3.3 m to 6.0 m lengths for
+            patrol, rescue, tour, and diving operations.
           </p>
         </div>
         <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-md transition-shadow">
           <span class="text-xs font-bold text-primary tracking-widest">04</span>
           <h3 class="mt-4 text-lg font-bold text-secondary">Private Label & Custom Branding</h3>
           <p class="mt-3 text-gray-500 text-sm leading-relaxed">
-            Full private label service: custom logo heat-transfer or screen printing, branded packaging, user manuals in your language, and barcode/UPC registration.
+            Full private label service: custom logo heat-transfer or screen printing, branded packaging, user manuals in
+            your language, and barcode/UPC registration.
           </p>
         </div>
         <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-md transition-shadow">
           <span class="text-xs font-bold text-primary tracking-widest">05</span>
           <h3 class="mt-4 text-lg font-bold text-secondary">Custom Mold & Tooling Design</h3>
           <p class="mt-3 text-gray-500 text-sm leading-relaxed">
-            In-house 3D CAD/CAM engineering team. Custom aluminum and composite molds for unique hull shapes, deck configurations, and accessory mounting points.
+            In-house 3D CAD/CAM engineering team. Custom aluminum and composite molds for unique hull shapes, deck
+            configurations, and accessory mounting points.
           </p>
         </div>
         <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-md transition-shadow">
           <span class="text-xs font-bold text-primary tracking-widest">06</span>
           <h3 class="mt-4 text-lg font-bold text-secondary">OEM Accessories & Kitting</h3>
           <p class="mt-3 text-gray-500 text-sm leading-relaxed">
-            Life vests, dual-action pumps, carbon/nylon paddles, repair kits, carry bags, and leash assemblies. Full kitting and bundle packaging for retail-ready presentation.
+            Life vests, dual-action pumps, carbon/nylon paddles, repair kits, carry bags, and leash assemblies. Full
+            kitting and bundle packaging for retail-ready presentation.
           </p>
         </div>
       </div>
       <div class="text-center mt-12">
-        <a href="/factory" class="text-sm font-medium text-primary hover:text-[#0088B3]">Explore Manufacturing Capabilities →</a>
+        <a href="/factory" class="text-sm font-medium text-primary hover:text-[#0088B3]"
+          >Explore Manufacturing Capabilities →</a
+        >
       </div>
     </div>
   </section>
@@ -443,9 +466,12 @@ const faqCategories = [
     </div>
     <div class="relative text-center max-w-4xl mx-auto">
       <span class="text-sm font-semibold text-white/80 tracking-[0.15em] uppercase">Engineering & R&D</span>
-      <h2 class="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">From Concept to Production</h2>
+      <h2 class="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+        From Concept to Production
+      </h2>
       <p class="mt-6 text-lg text-white/80 max-w-2xl mx-auto">
-        Our R&D team supports every stage of product development — from initial concept and 3D design to prototype testing and mass production. 200+ engineers and skilled workers at your service.
+        Our R&D team supports every stage of product development — from initial concept and 3D design to prototype
+        testing and mass production. 200+ engineers and skilled workers at your service.
       </p>
       <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
         <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
@@ -481,7 +507,9 @@ const faqCategories = [
     <div class="text-center max-w-3xl mx-auto mb-16">
       <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase">Featured Products</span>
       <h2 class="mt-4 text-4xl md:text-5xl font-bold text-secondary">Popular OEM SUP Models</h2>
-      <p class="mt-4 text-lg text-gray-500">Our most requested OEM platforms. Customize length, width, thickness, graphics, and accessories.</p>
+      <p class="mt-4 text-lg text-gray-500">
+        Our most requested OEM platforms. Customize length, width, thickness, graphics, and accessories.
+      </p>
     </div>
     <div class="grid md:grid-cols-3 gap-8">
       {
@@ -542,7 +570,8 @@ const faqCategories = [
       </span>
       <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-white">End-to-End OEM/ODM Manufacturing</h2>
       <p class="mt-6 text-lg text-white/60 max-w-3xl mx-auto">
-        Afarer provides full-spectrum OEM and ODM services — from concept drawing and 3D mold prototyping to bulk production, compliance documentation, and FOB Qingdao shipping. MOQ 5-10 units (SUP). Lead time 30-45 days.
+        Afarer provides full-spectrum OEM and ODM services — from concept drawing and 3D mold prototyping to bulk
+        production, compliance documentation, and FOB Qingdao shipping. MOQ 5-10 units (SUP). Lead time 30-45 days.
       </p>
       <div class="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6 max-w-3xl mx-auto text-left">
         <div class="flex items-start gap-3">
@@ -605,7 +634,9 @@ const faqCategories = [
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase">Manufacturing Knowledge</span>
         <h2 class="mt-4 text-4xl md:text-5xl font-bold text-secondary">Resources for SUP Buyers</h2>
-        <p class="mt-4 text-lg text-gray-500">Guides and resources to help you make informed manufacturing decisions.</p>
+        <p class="mt-4 text-lg text-gray-500">
+          Guides and resources to help you make informed manufacturing decisions.
+        </p>
       </div>
       <div class="grid md:grid-cols-4 gap-6">
         <a
@@ -622,7 +653,9 @@ const faqCategories = [
               ></path></svg
             >
           </div>
-          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">How to Choose a SUP Manufacturer</h3>
+          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+            How to Choose a SUP Manufacturer
+          </h3>
           <p class="mt-2 text-sm text-gray-500">10 questions to ask before selecting an OEM SUP factory.</p>
         </a>
         <a
@@ -635,11 +668,12 @@ const faqCategories = [
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="1.5"
-                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-              ></path></svg
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg
             >
           </div>
-          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">OEM vs ODM SUP Manufacturing</h3>
+          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+            OEM vs ODM SUP Manufacturing
+          </h3>
           <p class="mt-2 text-sm text-gray-500">Understand the difference and choose the right model for your brand.</p>
         </a>
         <a
@@ -656,7 +690,9 @@ const faqCategories = [
               ></path></svg
             >
           </div>
-          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">SUP Manufacturing Technology</h3>
+          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+            SUP Manufacturing Technology
+          </h3>
           <p class="mt-2 text-sm text-gray-500">How inflatable SUP boards are engineered and manufactured.</p>
         </a>
         <a
@@ -690,19 +726,26 @@ const faqCategories = [
     <div class="text-center max-w-3xl mx-auto mb-16">
       <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase">OEM Partnerships</span>
       <h2 class="mt-4 text-4xl md:text-5xl font-bold text-secondary">Brands That Build With Afarer</h2>
-      <p class="mt-4 text-lg text-gray-500">Real partnerships that delivered results for global brands and operators.</p>
+      <p class="mt-4 text-lg text-gray-500">
+        Real partnerships that delivered results for global brands and operators.
+      </p>
     </div>
     <div class="grid md:grid-cols-3 gap-8">
       <div class="bg-white border border-gray-200 rounded-2xl p-8">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-700 font-bold text-sm">EU</div>
+          <div
+            class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-700 font-bold text-sm"
+          >
+            EU
+          </div>
           <div>
             <p class="font-semibold text-gray-900">European Outdoor Brand</p>
             <p class="text-xs text-gray-400">Startup SUP Launch</p>
           </div>
         </div>
         <p class="text-gray-600 text-sm leading-relaxed italic">
-          "We came to afarer with a sketch on a napkin. Eight months later, we had a production-ready product passing CE certification on the first attempt."
+          "We came to afarer with a sketch on a napkin. Eight months later, we had a production-ready product passing CE
+          certification on the first attempt."
         </p>
         <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-500">
           <span class="font-medium">3,000 units</span> · Custom Touring SUP · 90-day timeline
@@ -710,14 +753,19 @@ const faqCategories = [
       </div>
       <div class="bg-white border border-gray-200 rounded-2xl p-8">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold text-sm">US</div>
+          <div
+            class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 font-bold text-sm"
+          >
+            US
+          </div>
           <div>
             <p class="font-semibold text-gray-900">US Marine Equipment Co.</p>
             <p class="text-xs text-gray-400">OEM Partnership</p>
           </div>
         </div>
         <p class="text-gray-600 text-sm leading-relaxed italic">
-          "The IP protection and security at afarer gives us confidence to share our proprietary designs. They treat our IP as if it were their own."
+          "The IP protection and security at afarer gives us confidence to share our proprietary designs. They treat our
+          IP as if it were their own."
         </p>
         <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-500">
           <span class="font-medium">8,000+ units/yr</span> · 4-year partnership · Proprietary valve SUPs
@@ -725,14 +773,19 @@ const faqCategories = [
       </div>
       <div class="bg-white border border-gray-200 rounded-2xl p-8">
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 font-bold text-sm">AU</div>
+          <div
+            class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 font-bold text-sm"
+          >
+            AU
+          </div>
           <div>
             <p class="font-semibold text-gray-900">Australian Tour Operator</p>
             <p class="text-xs text-gray-400">Fleet Replacement</p>
           </div>
         </div>
         <p class="text-gray-600 text-sm leading-relaxed italic">
-          "We needed 120 boards in 45 days with UV-resistant materials. Afarer delivered on time with consistent quality across the entire fleet."
+          "We needed 120 boards in 45 days with UV-resistant materials. Afarer delivered on time with consistent quality
+          across the entire fleet."
         </p>
         <div class="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-500">
           <span class="font-medium">120 boards</span> · 45-day turnaround · UV-stabilized PVC
@@ -764,7 +817,9 @@ const faqCategories = [
       <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
         Ready to Start Your<br />OEM Project?
       </h2>
-      <p class="mt-6 text-xl text-white/70">Tell us about your requirements. We will reply with a detailed quotation within 24 hours.</p>
+      <p class="mt-6 text-xl text-white/70">
+        Tell us about your requirements. We will reply with a detailed quotation within 24 hours.
+      </p>
       <div class="mt-10 flex items-center justify-center gap-4 flex-wrap">
         <a
           href="/oem-odm-manufacturer"
@@ -789,7 +844,9 @@ const faqCategories = [
       <div class="text-center mb-16">
         <span class="text-sm font-medium text-sky-600 tracking-wide uppercase">FAQ</span>
         <h2 class="mt-4 text-4xl font-semibold text-gray-900">OEM Manufacturing FAQ</h2>
-        <p class="mt-4 text-lg text-gray-500">Common questions from brands and operators about partnering with Afarer.</p>
+        <p class="mt-4 text-lg text-gray-500">
+          Common questions from brands and operators about partnering with Afarer.
+        </p>
       </div>
       <div class="flex flex-wrap justify-center gap-2 mb-10" data-faq-tabs>
         {

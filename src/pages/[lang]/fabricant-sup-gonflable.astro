@@ -1,0 +1,20 @@
+---
+export const prerender = true;
+
+import SeoLanding from '~/components/widgets/SeoLanding.astro';
+import { languages, defaultLang } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/fabricant-sup-gonflable.ts';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+setPageContentData(__pageData);
+const page = getPageContent(lang, 'fabricant-sup-gonflable');
+---
+
+<SeoLanding page={page} lang={lang} pageName="fabricant-sup-gonflable" t={t} />

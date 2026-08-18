@@ -34,9 +34,16 @@ const lh = (h: string) => (h ? `/${lang}${h}` : h);
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 
 const pageMeta = page.meta ?? {};
-const cleanMeta = (s: string) => (s || '').replace(/<br\s*\/?>/gi, ' ').replace(/\s+/g, ' ').trim();
+const cleanMeta = (s: string) =>
+  (s || '')
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 const metadata = {
-  title: cleanMeta(pageMeta.title || hero.title || `SUP Rental Fleet Solutions — ${SITE.name}`).replace('{SITE}', SITE.name),
+  title: cleanMeta(pageMeta.title || hero.title || `SUP Rental Fleet Solutions — ${SITE.name}`).replace(
+    '{SITE}',
+    SITE.name
+  ),
   description: cleanMeta(pageMeta.description || hero.subtitle),
 };
 const crumbs = [

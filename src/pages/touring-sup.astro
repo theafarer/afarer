@@ -2,12 +2,12 @@
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 
-  const metadata = {
-    title: 'Touring SUP Board | Long-Distance Inflatable Paddle Board | Afarer OEM Manufacturer',
-    description:
-      'Afarer touring SUP boards — long-distance inflatable paddle boards with superior glide, pointed bows, and efficient tracking for lakes, coastal exploration, and multi-day expeditions. OEM/ODM manufacturing available for brands, resorts, and clubs.',
-    ignoreTitleTemplate: true,
-  };
+const metadata = {
+  title: 'Touring SUP Board | Long-Distance Inflatable Paddle Board | Afarer OEM Manufacturer',
+  description:
+    'Afarer touring SUP boards — long-distance inflatable paddle boards with superior glide, pointed bows, and efficient tracking for lakes, coastal exploration, and multi-day expeditions. OEM/ODM manufacturing available for brands, resorts, and clubs.',
+  ignoreTitleTemplate: true,
+};
 const pageUrl = 'https://afarer.com/touring-sup/';
 const today = '2026-07-27';
 ---
@@ -37,12 +37,47 @@ const today = '2026-07-27';
     type="FAQPage"
     data={{
       mainEntity: [
-        { '@type': 'Question', name: 'What is a touring SUP board?', acceptedAnswer: { '@type': 'Answer', text: 'A touring SUP board is a longer inflatable paddle board (12\'–14\') designed for efficient long-distance paddling on open water. It features a pointed displacement bow, deeper keel lines for tracking, and higher volume for carrying expedition gear.' } },
-        { '@type': 'Question', name: 'Is a touring SUP good for beginners?', acceptedAnswer: { '@type': 'Answer', text: 'Touring SUPs can be used by beginners on calm water, but their longer length makes them less maneuverable than all-around boards. Beginners comfortable with basic paddling technique will appreciate the superior tracking.' } },
-        { '@type': 'Question', name: 'How long should a touring SUP be?', acceptedAnswer: { '@type': 'Answer', text: 'Touring SUPs typically range from 12\' to 14\'. A 12\' board works well for day trips and lighter paddlers. A 14\' board offers maximum glide for long-distance expeditions and heavier paddlers.' } },
-        { '@type': 'Question', name: 'Can you use a touring SUP for racing?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Many touring SUPs are suitable for recreational racing and endurance events. Dedicated racing boards are lighter and narrower, but touring boards offer a good balance of speed and stability.' } },
-        { '@type': 'Question', name: 'Do you manufacture touring SUPs for private label?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Afarer offers OEM/ODM manufacturing for touring SUP boards with custom lengths, deck graphics, color matching, and compliance documentation for brands and retail partners worldwide.' } },
-      ]
+        {
+          '@type': 'Question',
+          name: 'What is a touring SUP board?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: "A touring SUP board is a longer inflatable paddle board (12'–14') designed for efficient long-distance paddling on open water. It features a pointed displacement bow, deeper keel lines for tracking, and higher volume for carrying expedition gear.",
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is a touring SUP good for beginners?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Touring SUPs can be used by beginners on calm water, but their longer length makes them less maneuverable than all-around boards. Beginners comfortable with basic paddling technique will appreciate the superior tracking.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How long should a touring SUP be?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: "Touring SUPs typically range from 12' to 14'. A 12' board works well for day trips and lighter paddlers. A 14' board offers maximum glide for long-distance expeditions and heavier paddlers.",
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you use a touring SUP for racing?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Many touring SUPs are suitable for recreational racing and endurance events. Dedicated racing boards are lighter and narrower, but touring boards offer a good balance of speed and stability.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you manufacture touring SUPs for private label?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Afarer offers OEM/ODM manufacturing for touring SUP boards with custom lengths, deck graphics, color matching, and compliance documentation for brands and retail partners worldwide.',
+          },
+        },
+      ],
     }}
   />
 
@@ -161,19 +196,31 @@ const today = '2026-07-27';
       <div class="grid md:grid-cols-2 gap-6">
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Distance Paddlers</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">If you regularly paddle 5–15 miles per session, a touring SUP reduces fatigue and makes each stroke count. Superior glide means more water covered with less effort.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            If you regularly paddle 5–15 miles per session, a touring SUP reduces fatigue and makes each stroke count.
+            Superior glide means more water covered with less effort.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Expedition & Multi-Day Trips</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Higher volume and weight capacity allow carrying camping gear, food, and water for overnight trips. Bungee deck rigging secures dry bags and equipment.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Higher volume and weight capacity allow carrying camping gear, food, and water for overnight trips. Bungee
+            deck rigging secures dry bags and equipment.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Fitness-Focused Paddlers</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Longer waterline and efficient hull design provide a better workout at higher speeds. Touring SUPs reward proper technique with noticeably faster paddling.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Longer waterline and efficient hull design provide a better workout at higher speeds. Touring SUPs reward
+            proper technique with noticeably faster paddling.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Resort & Rental Programs</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Guided tours and excursion programs benefit from touring SUPs. Their tracking and efficiency make group paddling easier. OEM branding available for custom programs.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Guided tours and excursion programs benefit from touring SUPs. Their tracking and efficiency make group
+            paddling easier. OEM branding available for custom programs.
+          </p>
         </div>
       </div>
     </div>
@@ -184,7 +231,9 @@ const today = '2026-07-27';
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">OEM/ODM Manufacturing for Touring SUPs</h2>
       <p class="text-lg text-gray-500 leading-relaxed mb-8">
-        Afarer manufactures touring SUP boards for global brands, expedition outfitters, and retail chains. Our drop-stitch production lines produce CE-certified touring boards with custom length options, deck graphics, and packaging. MOQ from 50 units. Lead times from 30 days.
+        Afarer manufactures touring SUP boards for global brands, expedition outfitters, and retail chains. Our
+        drop-stitch production lines produce CE-certified touring boards with custom length options, deck graphics, and
+        packaging. MOQ from 50 units. Lead times from 30 days.
       </p>
       <div class="grid md:grid-cols-3 gap-4">
         <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
@@ -201,7 +250,11 @@ const today = '2026-07-27';
         </div>
       </div>
       <div class="mt-8 text-center">
-        <a href="/oem-odm-manufacturer" class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all">Request OEM Quote <span>→</span></a>
+        <a
+          href="/oem-odm-manufacturer"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+          >Request OEM Quote <span>→</span></a
+        >
       </div>
     </div>
   </section>
@@ -209,28 +262,49 @@ const today = '2026-07-27';
   <!-- FAQ -->
   <section class="bg-gray-50 py-16 px-6">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">Touring SUP — Frequently Asked Questions</h2>
-      <p class="text-lg text-gray-500 text-center mb-12">Common questions about selecting, using, and manufacturing touring paddle boards.</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        Touring SUP — Frequently Asked Questions
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        Common questions about selecting, using, and manufacturing touring paddle boards.
+      </p>
       <div class="space-y-4">
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">What is a touring SUP board?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">A touring SUP board is a longer inflatable paddle board (12'–14') designed for efficient long-distance paddling on open water. It features a pointed displacement bow, deeper keel lines for tracking, and higher volume for carrying expedition gear.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            A touring SUP board is a longer inflatable paddle board (12'–14') designed for efficient long-distance
+            paddling on open water. It features a pointed displacement bow, deeper keel lines for tracking, and higher
+            volume for carrying expedition gear.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Is a touring SUP good for beginners?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Touring SUPs can be used by beginners on calm water, but their longer length makes them less maneuverable than all-around boards. Beginners comfortable with basic paddling technique will appreciate the superior tracking.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Touring SUPs can be used by beginners on calm water, but their longer length makes them less maneuverable
+            than all-around boards. Beginners comfortable with basic paddling technique will appreciate the superior
+            tracking.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">How long should a touring SUP be?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Touring SUPs typically range from 12' to 14'. A 12' board works well for day trips and lighter paddlers. A 14' board offers maximum glide for long-distance expeditions and heavier paddlers.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Touring SUPs typically range from 12' to 14'. A 12' board works well for day trips and lighter paddlers. A
+            14' board offers maximum glide for long-distance expeditions and heavier paddlers.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Can you use a touring SUP for racing?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Many touring SUPs are suitable for recreational racing and endurance events. Dedicated racing boards are lighter and narrower, but touring boards offer a good balance of speed and stability.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Many touring SUPs are suitable for recreational racing and endurance events. Dedicated racing boards
+            are lighter and narrower, but touring boards offer a good balance of speed and stability.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Do you manufacture touring SUPs for private label?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Afarer offers OEM/ODM manufacturing for touring SUP boards with custom lengths, deck graphics, color matching, and compliance documentation for brands and retail partners worldwide.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Afarer offers OEM/ODM manufacturing for touring SUP boards with custom lengths, deck graphics, color
+            matching, and compliance documentation for brands and retail partners worldwide.
+          </p>
         </div>
       </div>
     </div>

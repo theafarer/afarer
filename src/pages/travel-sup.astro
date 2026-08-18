@@ -3,11 +3,11 @@ import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 
 const metadata = {
-    title: 'Travel SUP Board | Portable Inflatable Paddle Board for Travel | Afarer OEM Manufacturer',
-    description:
-      'Afarer travel SUP boards — compact inflatable paddle boards designed for airline travel, road trips, and adventures. Backpack-friendly, TSA-approved, premium construction. OEM/ODM manufacturing available for brands and retailers.',
-    ignoreTitleTemplate: true,
-  };
+  title: 'Travel SUP Board | Portable Inflatable Paddle Board for Travel | Afarer OEM Manufacturer',
+  description:
+    'Afarer travel SUP boards — compact inflatable paddle boards designed for airline travel, road trips, and adventures. Backpack-friendly, TSA-approved, premium construction. OEM/ODM manufacturing available for brands and retailers.',
+  ignoreTitleTemplate: true,
+};
 const pageUrl = 'https://afarer.com/travel-sup/';
 const today = '2026-07-27';
 ---
@@ -37,12 +37,47 @@ const today = '2026-07-27';
     type="FAQPage"
     data={{
       mainEntity: [
-        { "@type": "Question", name: "What is a travel SUP board?", acceptedAnswer: { "@type": "Answer", text: "A travel SUP is a compact inflatable paddle board designed for portability. It packs into a backpack-sized bag that fits airline luggage requirements, allowing paddlers to take their board on flights, road trips, and to remote destinations." } },
-        { "@type": "Question", name: "Can you take a SUP on an airplane?", acceptedAnswer: { "@type": "Answer", text: "Yes. Travel SUPs are designed to fit within standard airline checked luggage dimensions (typically under 62 linear inches). The backpack carries the board, pump, paddle, and accessories all in one checked bag." } },
-        { "@type": "Question", name: "How long does a travel SUP take to inflate?", acceptedAnswer: { "@type": "Answer", text: "With the included dual-action pump, most travel SUPs inflate in 5-7 minutes. Electric pumps can reduce inflation time to 2-3 minutes. Deflation and packing take under 5 minutes." } },
-        { "@type": "Question", name: "Are travel SUPs as durable as regular SUPs?", acceptedAnswer: { "@type": "Answer", text: "Yes. Travel SUPs use the same premium drop-stitch construction and military-grade PVC as standard boards. The compact design does not compromise durability, rigidity, or performance." } },
-        { "@type": "Question", name: "Do you manufacture travel SUPs for private label?", acceptedAnswer: { "@type": "Answer", text: "Yes. Afarer offers OEM/ODM manufacturing for travel SUP boards with custom backpack designs, graphics, and packaging for travel brands, airlines, and destination retailers worldwide." } },
-      ]
+        {
+          '@type': 'Question',
+          name: 'What is a travel SUP board?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A travel SUP is a compact inflatable paddle board designed for portability. It packs into a backpack-sized bag that fits airline luggage requirements, allowing paddlers to take their board on flights, road trips, and to remote destinations.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you take a SUP on an airplane?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Travel SUPs are designed to fit within standard airline checked luggage dimensions (typically under 62 linear inches). The backpack carries the board, pump, paddle, and accessories all in one checked bag.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How long does a travel SUP take to inflate?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'With the included dual-action pump, most travel SUPs inflate in 5-7 minutes. Electric pumps can reduce inflation time to 2-3 minutes. Deflation and packing take under 5 minutes.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Are travel SUPs as durable as regular SUPs?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Travel SUPs use the same premium drop-stitch construction and military-grade PVC as standard boards. The compact design does not compromise durability, rigidity, or performance.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you manufacture travel SUPs for private label?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Afarer offers OEM/ODM manufacturing for travel SUP boards with custom backpack designs, graphics, and packaging for travel brands, airlines, and destination retailers worldwide.',
+          },
+        },
+      ],
     }}
   />
 
@@ -160,19 +195,31 @@ const today = '2026-07-27';
       <div class="grid md:grid-cols-2 gap-6">
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Frequent Flyers</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">If you travel regularly and want to paddle at your destination, a travel SUP packs into your luggage. No rental boards needed — paddle familiar equipment anywhere.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            If you travel regularly and want to paddle at your destination, a travel SUP packs into your luggage. No
+            rental boards needed — paddle familiar equipment anywhere.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Road Trip Adventurers</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Keep your travel SUP in the trunk ready for any water you discover on your journey. Compact backpack fits alongside camping and road trip gear.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Keep your travel SUP in the trunk ready for any water you discover on your journey. Compact backpack fits
+            alongside camping and road trip gear.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Digital Nomads</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Living location-independent? A travel SUP means you can paddle in every new destination. Light enough to move with your lifestyle.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Living location-independent? A travel SUP means you can paddle in every new destination. Light enough to
+            move with your lifestyle.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Destination Resorts & Rentals</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Stock your resort or rental property with travel SUPs that guests can easily transport to nearby waterways. OEM branding available.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Stock your resort or rental property with travel SUPs that guests can easily transport to nearby waterways.
+            OEM branding available.
+          </p>
         </div>
       </div>
     </div>
@@ -183,7 +230,9 @@ const today = '2026-07-27';
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">OEM/ODM Manufacturing for Travel SUPs</h2>
       <p class="text-lg text-gray-500 leading-relaxed mb-8">
-        Afarer manufactures travel SUP boards for global travel brands, airlines, and destination retailers. Our production lines produce CE-certified travel SUPs with compact backpack designs, custom graphics, and travel-friendly packaging. MOQ from 50 units. Lead times from 30 days.
+        Afarer manufactures travel SUP boards for global travel brands, airlines, and destination retailers. Our
+        production lines produce CE-certified travel SUPs with compact backpack designs, custom graphics, and
+        travel-friendly packaging. MOQ from 50 units. Lead times from 30 days.
       </p>
       <div class="grid md:grid-cols-3 gap-4">
         <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
@@ -200,7 +249,11 @@ const today = '2026-07-27';
         </div>
       </div>
       <div class="mt-8 text-center">
-        <a href="/oem-odm-manufacturer" class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all">Request OEM Quote <span>→</span></a>
+        <a
+          href="/oem-odm-manufacturer"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+          >Request OEM Quote <span>→</span></a
+        >
       </div>
     </div>
   </section>
@@ -208,28 +261,48 @@ const today = '2026-07-27';
   <!-- FAQ -->
   <section class="bg-gray-50 py-16 px-6">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">Travel SUP — Frequently Asked Questions</h2>
-      <p class="text-lg text-gray-500 text-center mb-12">Common questions about choosing and using travel paddle boards.</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        Travel SUP — Frequently Asked Questions
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        Common questions about choosing and using travel paddle boards.
+      </p>
       <div class="space-y-4">
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">What is a travel SUP board?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">A travel SUP is a compact inflatable paddle board designed for portability. It packs into a backpack-sized bag that fits airline luggage requirements, allowing paddlers to take their board on flights, road trips, and to remote destinations.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            A travel SUP is a compact inflatable paddle board designed for portability. It packs into a backpack-sized
+            bag that fits airline luggage requirements, allowing paddlers to take their board on flights, road trips,
+            and to remote destinations.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Can you take a SUP on an airplane?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Travel SUPs are designed to fit within standard airline checked luggage dimensions (typically under 62 linear inches). The backpack carries the board, pump, paddle, and accessories all in one checked bag.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Travel SUPs are designed to fit within standard airline checked luggage dimensions (typically under 62
+            linear inches). The backpack carries the board, pump, paddle, and accessories all in one checked bag.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">How long does a travel SUP take to inflate?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">With the included dual-action pump, most travel SUPs inflate in 5–7 minutes. Electric pumps can reduce inflation time to 2–3 minutes. Deflation and packing take under 5 minutes.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            With the included dual-action pump, most travel SUPs inflate in 5–7 minutes. Electric pumps can reduce
+            inflation time to 2–3 minutes. Deflation and packing take under 5 minutes.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Are travel SUPs as durable as regular SUPs?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Travel SUPs use the same premium drop-stitch construction and military-grade PVC as standard boards. The compact design does not compromise durability, rigidity, or performance.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Travel SUPs use the same premium drop-stitch construction and military-grade PVC as standard boards.
+            The compact design does not compromise durability, rigidity, or performance.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Do you manufacture travel SUPs for private label?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Afarer offers OEM/ODM manufacturing for travel SUP boards with custom backpack designs, graphics, and packaging for travel brands, airlines, and destination retailers worldwide.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Afarer offers OEM/ODM manufacturing for travel SUP boards with custom backpack designs, graphics, and
+            packaging for travel brands, airlines, and destination retailers worldwide.
+          </p>
         </div>
       </div>
     </div>
@@ -237,7 +310,13 @@ const today = '2026-07-27';
 
   <section class="max-w-6xl mx-auto py-16 px-6 text-center">
     <h2 class="text-3xl md:text-4xl font-bold text-secondary">Find Your Travel SUP</h2>
-    <p class="mt-4 text-lg text-gray-500">Contact us for travel SUP recommendations, bulk pricing, or custom packaging.</p>
-    <a href="/contact" class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all">Inquire About Travel SUPs <span>→</span></a>
+    <p class="mt-4 text-lg text-gray-500">
+      Contact us for travel SUP recommendations, bulk pricing, or custom packaging.
+    </p>
+    <a
+      href="/contact"
+      class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+      >Inquire About Travel SUPs <span>→</span></a
+    >
   </section>
 </Layout>

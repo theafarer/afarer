@@ -63,7 +63,10 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <JsonLd type="BreadcrumbList" breadcrumbs={[{ name: SITE.name, href: `/${lang}/` }, { name: t('home.evidence.title') }]} />
+  <JsonLd
+    type="BreadcrumbList"
+    breadcrumbs={[{ name: SITE.name, href: `/${lang}/` }, { name: t('home.evidence.title') }]}
+  />
   <JsonLd
     data={{
       '@context': 'https://schema.org',

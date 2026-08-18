@@ -3,11 +3,11 @@ import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 
 const metadata = {
-    title: 'Performance SUP Board | High-Performance Inflatable Paddle Board | Afarer OEM Manufacturer',
-    description:
-      'Afarer performance SUP boards — high-performance inflatable paddle boards for experienced paddlers. Longer hulls, displacement bows, and advanced drop-stitch for speed and tracking. OEM/ODM manufacturing available for brands and clubs.',
-    ignoreTitleTemplate: true,
-  };
+  title: 'Performance SUP Board | High-Performance Inflatable Paddle Board | Afarer OEM Manufacturer',
+  description:
+    'Afarer performance SUP boards — high-performance inflatable paddle boards for experienced paddlers. Longer hulls, displacement bows, and advanced drop-stitch for speed and tracking. OEM/ODM manufacturing available for brands and clubs.',
+  ignoreTitleTemplate: true,
+};
 const pageUrl = 'https://afarer.com/performance-sup/';
 const today = '2026-07-27';
 ---
@@ -37,12 +37,47 @@ const today = '2026-07-27';
     type="FAQPage"
     data={{
       mainEntity: [
-        { "@type": "Question", name: "What is a performance SUP board?", acceptedAnswer: { "@type": "Answer", text: "A performance SUP board is engineered for speed, tracking precision, and hydrodynamic efficiency. It features a longer displacement hull (12-14 feet), refined rocker profile, and narrower width for experienced paddlers who prioritize glide and responsiveness." } },
-        { "@type": "Question", name: "Is a performance SUP good for beginners?", acceptedAnswer: { "@type": "Answer", text: "Performance SUPs are generally not recommended for beginners. Their narrower width and refined handling require developed paddle technique. Beginners should start on a wider all-around board before transitioning to performance models." } },
-        { "@type": "Question", name: "What is the difference between a touring and performance SUP?", acceptedAnswer: { "@type": "Answer", text: "While both are designed for speed, performance SUPs typically have more aggressive hull shapes, narrower widths, and lighter construction optimized for racing and fitness paddling. Touring boards prioritize comfort and gear capacity for longer distances." } },
-        { "@type": "Question", name: "Can you race on a performance SUP?", acceptedAnswer: { "@type": "Answer", text: "Yes. Performance SUPs are designed for recreational racing, fitness paddling, and timed distance events. Their efficient hull designs and superior glide make them competitive in amateur racing categories." } },
-        { "@type": "Question", name: "Do you manufacture performance SUPs for private label?", acceptedAnswer: { "@type": "Answer", text: "Yes. Afarer offers OEM/ODM manufacturing for performance SUP boards with custom hull specifications, deck graphics, and compliance documentation for brands, clubs, and racing programs." } },
-      ]
+        {
+          '@type': 'Question',
+          name: 'What is a performance SUP board?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A performance SUP board is engineered for speed, tracking precision, and hydrodynamic efficiency. It features a longer displacement hull (12-14 feet), refined rocker profile, and narrower width for experienced paddlers who prioritize glide and responsiveness.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is a performance SUP good for beginners?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Performance SUPs are generally not recommended for beginners. Their narrower width and refined handling require developed paddle technique. Beginners should start on a wider all-around board before transitioning to performance models.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the difference between a touring and performance SUP?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'While both are designed for speed, performance SUPs typically have more aggressive hull shapes, narrower widths, and lighter construction optimized for racing and fitness paddling. Touring boards prioritize comfort and gear capacity for longer distances.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you race on a performance SUP?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Performance SUPs are designed for recreational racing, fitness paddling, and timed distance events. Their efficient hull designs and superior glide make them competitive in amateur racing categories.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you manufacture performance SUPs for private label?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Afarer offers OEM/ODM manufacturing for performance SUP boards with custom hull specifications, deck graphics, and compliance documentation for brands, clubs, and racing programs.',
+          },
+        },
+      ],
     }}
   />
 
@@ -161,19 +196,31 @@ const today = '2026-07-27';
       <div class="grid md:grid-cols-2 gap-6">
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Fitness Paddlers</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">If you paddle for exercise, a performance SUP maximizes your workout. Higher speeds, longer distances, and more efficient strokes mean better cardiovascular results.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            If you paddle for exercise, a performance SUP maximizes your workout. Higher speeds, longer distances, and
+            more efficient strokes mean better cardiovascular results.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Recreational Racers</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Compete in local SUP races and charity events. Performance hulls give you a competitive edge without the cost of dedicated carbon fiber race boards.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Compete in local SUP races and charity events. Performance hulls give you a competitive edge without the
+            cost of dedicated carbon fiber race boards.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Intermediate Paddlers Upgrading</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Comfortable on an all-around board? A performance SUP is your next step. The refined handling will improve your technique and open up new paddling possibilities.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Comfortable on an all-around board? A performance SUP is your next step. The refined handling will improve
+            your technique and open up new paddling possibilities.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Club & Team Programs</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Outfit your paddle club or racing team with consistent, high-performance equipment. OEM programs available for team branding.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Outfit your paddle club or racing team with consistent, high-performance equipment. OEM programs available
+            for team branding.
+          </p>
         </div>
       </div>
     </div>
@@ -184,7 +231,9 @@ const today = '2026-07-27';
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">OEM/ODM Manufacturing for Performance SUPs</h2>
       <p class="text-lg text-gray-500 leading-relaxed mb-8">
-        Afarer manufactures performance SUP boards for global brands, paddle clubs, and racing programs. Our production lines produce CE-certified performance SUPs with advanced hull designs, custom graphics, and competition-ready specifications. MOQ from 50 units. Lead times from 30 days.
+        Afarer manufactures performance SUP boards for global brands, paddle clubs, and racing programs. Our production
+        lines produce CE-certified performance SUPs with advanced hull designs, custom graphics, and competition-ready
+        specifications. MOQ from 50 units. Lead times from 30 days.
       </p>
       <div class="grid md:grid-cols-3 gap-4">
         <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
@@ -201,7 +250,11 @@ const today = '2026-07-27';
         </div>
       </div>
       <div class="mt-8 text-center">
-        <a href="/oem-odm-manufacturer" class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all">Request OEM Quote <span>→</span></a>
+        <a
+          href="/oem-odm-manufacturer"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+          >Request OEM Quote <span>→</span></a
+        >
       </div>
     </div>
   </section>
@@ -209,28 +262,52 @@ const today = '2026-07-27';
   <!-- FAQ -->
   <section class="bg-gray-50 py-16 px-6">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">Performance SUP — Frequently Asked Questions</h2>
-      <p class="text-lg text-gray-500 text-center mb-12">Common questions about selecting and using performance paddle boards.</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        Performance SUP — Frequently Asked Questions
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        Common questions about selecting and using performance paddle boards.
+      </p>
       <div class="space-y-4">
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">What is a performance SUP board?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">A performance SUP board is engineered for speed, tracking precision, and hydrodynamic efficiency. It features a longer displacement hull (12'–14'), refined rocker profile, and narrower width for experienced paddlers who prioritize glide and responsiveness.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            A performance SUP board is engineered for speed, tracking precision, and hydrodynamic efficiency. It
+            features a longer displacement hull (12'–14'), refined rocker profile, and narrower width for experienced
+            paddlers who prioritize glide and responsiveness.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Is a performance SUP good for beginners?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Performance SUPs are generally not recommended for beginners. Their narrower width and refined handling require developed paddle technique. Beginners should start on a wider all-around board before transitioning to performance models.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Performance SUPs are generally not recommended for beginners. Their narrower width and refined handling
+            require developed paddle technique. Beginners should start on a wider all-around board before transitioning
+            to performance models.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
-          <h3 class="text-lg font-semibold text-secondary">What is the difference between a touring and performance SUP?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">While both are designed for speed, performance SUPs typically have more aggressive hull shapes, narrower widths, and lighter construction optimized for racing and fitness paddling. Touring boards prioritize comfort and gear capacity for longer distances.</p>
+          <h3 class="text-lg font-semibold text-secondary">
+            What is the difference between a touring and performance SUP?
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            While both are designed for speed, performance SUPs typically have more aggressive hull shapes, narrower
+            widths, and lighter construction optimized for racing and fitness paddling. Touring boards prioritize
+            comfort and gear capacity for longer distances.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Can you race on a performance SUP?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Performance SUPs are designed for recreational racing, fitness paddling, and timed distance events. Their efficient hull designs and superior glide make them competitive in amateur racing categories.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Performance SUPs are designed for recreational racing, fitness paddling, and timed distance events.
+            Their efficient hull designs and superior glide make them competitive in amateur racing categories.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Do you manufacture performance SUPs for private label?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Afarer offers OEM/ODM manufacturing for performance SUP boards with custom hull specifications, deck graphics, and compliance documentation for brands, clubs, and racing programs.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Afarer offers OEM/ODM manufacturing for performance SUP boards with custom hull specifications, deck
+            graphics, and compliance documentation for brands, clubs, and racing programs.
+          </p>
         </div>
       </div>
     </div>
@@ -238,7 +315,13 @@ const today = '2026-07-27';
 
   <section class="max-w-6xl mx-auto py-16 px-6 text-center">
     <h2 class="text-3xl md:text-4xl font-bold text-secondary">Find Your Performance SUP</h2>
-    <p class="mt-4 text-lg text-gray-500">Contact us for performance SUP specs, bulk pricing, or custom configurations.</p>
-    <a href="/contact" class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all">Get Performance SUP Info <span>→</span></a>
+    <p class="mt-4 text-lg text-gray-500">
+      Contact us for performance SUP specs, bulk pricing, or custom configurations.
+    </p>
+    <a
+      href="/contact"
+      class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+      >Get Performance SUP Info <span>→</span></a
+    >
   </section>
 </Layout>

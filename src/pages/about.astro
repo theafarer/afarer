@@ -49,7 +49,53 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'About' }];
   />
   <JsonLd type="BreadcrumbList" breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'About' }]} />
   <Hero tagline={hero.tagline} image={hero.image} title={hero.title} subtitle={hero.subtitle} />
-<JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What makes afarer different from other SUP brands?", acceptedAnswer: { "@type": "Answer", text: "Afarer is vertically integrated from material sourcing to final quality control, with an ISO-certified facility. Every hull is built to the same standard set by our first boat, using marine-grade materials and fusion-welded construction." } }, { "@type": "Question", name: "Where are afarer products manufactured?", acceptedAnswer: { "@type": "Answer", text: "Afarer products are manufactured in Qingdao, China, at the ISO & CE-certified facility of parent enterprise Qingdao Vatrad Group Co., Ltd." } }, { "@type": "Question", name: "How long has afarer been in business?", acceptedAnswer: { "@type": "Answer", text: "Afarer was founded in 2012. We have over a decade of experience in inflatable marine product design and manufacturing, exporting to 40+ countries." } }, { "@type": "Question", name: "Is afarer a Chinese company?", acceptedAnswer: { "@type": "Answer", text: "Yes. Afarer is a premium water sports brand based in Qingdao, China, backed by the Qingdao Vatrad Group with over 2,400 hulls delivered to customers in 40+ countries." } }, { "@type": "Question", name: "What certifications does afarer hold?", acceptedAnswer: { "@type": "Answer", text: "Afarer's facility is ISO 9001 certified for quality management and BSCI certified for social compliance. Products are CE certified and tested for marine safety standards." } }] }} />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What makes afarer different from other SUP brands?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Afarer is vertically integrated from material sourcing to final quality control, with an ISO-certified facility. Every hull is built to the same standard set by our first boat, using marine-grade materials and fusion-welded construction.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Where are afarer products manufactured?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Afarer products are manufactured in Qingdao, China, at the ISO & CE-certified facility of parent enterprise Qingdao Vatrad Group Co., Ltd.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How long has afarer been in business?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Afarer was founded in 2012. We have over a decade of experience in inflatable marine product design and manufacturing, exporting to 40+ countries.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is afarer a Chinese company?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Afarer is a premium water sports brand based in Qingdao, China, backed by the Qingdao Vatrad Group with over 2,400 hulls delivered to customers in 40+ countries.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What certifications does afarer hold?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: "Afarer's facility is ISO 9001 certified for quality management and BSCI certified for social compliance. Products are CE certified and tested for marine safety standards.",
+          },
+        },
+      ],
+    }}
+  />
 
   <Stats title={stats.title} stats={stats.stats} />
 
@@ -354,39 +400,60 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'About' }];
     </div>
     <div class="space-y-4">
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>What makes afarer different from other SUP brands?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Afarer is vertically integrated from material sourcing to final quality control, with an ISO-certified facility. Every hull is built to the same standard set by our first boat, using marine-grade materials and fusion-welded construction.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Afarer is vertically integrated from material sourcing to final quality control, with an ISO-certified
+            facility. Every hull is built to the same standard set by our first boat, using marine-grade materials and
+            fusion-welded construction.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>Where are afarer products manufactured?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Afarer products are manufactured in Qingdao, China, at the ISO & CE-certified facility of parent enterprise Qingdao Vatrad Group Co., Ltd.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Afarer products are manufactured in Qingdao, China, at the ISO & CE-certified facility of parent enterprise
+            Qingdao Vatrad Group Co., Ltd.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>How long has afarer been in business?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Afarer was founded in 2012. We have over a decade of experience in inflatable marine product design and manufacturing, exporting to 40+ countries.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Afarer was founded in 2012. We have over a decade of experience in inflatable marine product design and
+            manufacturing, exporting to 40+ countries.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>What certifications does afarer hold?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Afarer's facility is ISO 9001 certified for quality management and BSCI certified for social compliance. Products are CE certified and tested for marine safety standards.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Afarer's facility is ISO 9001 certified for quality management and BSCI certified for social compliance.
+            Products are CE certified and tested for marine safety standards.
+          </p>
         </div>
       </details>
     </div>

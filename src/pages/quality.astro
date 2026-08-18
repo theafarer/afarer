@@ -8,13 +8,31 @@ const metadata = {
   description: `${SITE.name}'s SUP factory quality control program covers pressure, impact, UV, abrasion, low-temperature, buoyancy, maneuverability, and watertightness testing. Every inflatable SUP board is certified before shipping to OEM and wholesale buyers.`,
 };
 
-const crumbs = [{ name: 'Home', href: '/' }, { name: 'Quality Testing', href: '/quality/' }];
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Quality Testing', href: '/quality/' },
+];
 const faqItems = [
-  { q: 'What quality tests do Afarer SUP boards undergo?', a: 'Every Afarer board undergoes pressure testing, impact testing, UV resistance testing, abrasion testing, low-temperature testing, buoyancy verification, maneuverability assessment, and watertightness certification before shipping.' },
-  { q: 'Are Afarer SUP boards CE certified?', a: 'Yes. All Afarer inflatable SUP boards are CE certified under the European Personal Protective Equipment Regulation. Our quality management system is ISO 9001 certified.' },
-  { q: 'How do you test inflatable SUP durability?', a: 'We conduct controlled impact tests from various weights and angles to assess puncture and tear resistance. UV exposure tests simulate years of sunlight. Abrasion tests verify material wear resistance.' },
-  { q: 'Do you test boards for extreme temperatures?', a: 'Yes. Low-temperature testing evaluates material flexibility and seam integrity in cold conditions. Our PVC formulations maintain performance from -30°C to +60°C.' },
-  { q: 'Can I visit your factory for a quality audit?', a: 'Yes. Afarer welcomes factory audits and third-party inspections. Contact our team to schedule a visit to our ISO 9001 certified production facility in Qingdao, China.' },
+  {
+    q: 'What quality tests do Afarer SUP boards undergo?',
+    a: 'Every Afarer board undergoes pressure testing, impact testing, UV resistance testing, abrasion testing, low-temperature testing, buoyancy verification, maneuverability assessment, and watertightness certification before shipping.',
+  },
+  {
+    q: 'Are Afarer SUP boards CE certified?',
+    a: 'Yes. All Afarer inflatable SUP boards are CE certified under the European Personal Protective Equipment Regulation. Our quality management system is ISO 9001 certified.',
+  },
+  {
+    q: 'How do you test inflatable SUP durability?',
+    a: 'We conduct controlled impact tests from various weights and angles to assess puncture and tear resistance. UV exposure tests simulate years of sunlight. Abrasion tests verify material wear resistance.',
+  },
+  {
+    q: 'Do you test boards for extreme temperatures?',
+    a: 'Yes. Low-temperature testing evaluates material flexibility and seam integrity in cold conditions. Our PVC formulations maintain performance from -30°C to +60°C.',
+  },
+  {
+    q: 'Can I visit your factory for a quality audit?',
+    a: 'Yes. Afarer welcomes factory audits and third-party inspections. Contact our team to schedule a visit to our ISO 9001 certified production facility in Qingdao, China.',
+  },
 ];
 
 const tests = [
@@ -77,8 +95,26 @@ const stats = [
 ];
 ---
 
-<JsonLd type="BreadcrumbList" data={{ itemListElement: crumbs.map((c, i) => ({ position: i + 1, name: c.name, item: c.href.startsWith('http') ? c.href : 'https://afarer.com' + c.href })) }} />
-<JsonLd type="FAQPage" data={{ mainEntity: faqItems.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }} />
+<JsonLd
+  type="BreadcrumbList"
+  data={{
+    itemListElement: crumbs.map((c, i) => ({
+      position: i + 1,
+      name: c.name,
+      item: c.href.startsWith('http') ? c.href : 'https://afarer.com' + c.href,
+    })),
+  }}
+/>
+<JsonLd
+  type="FAQPage"
+  data={{
+    mainEntity: faqItems.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  }}
+/>
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>
   <section class="px-6 sm:px-6 py-16 sm:py-20 lg:py-24 mx-auto max-w-5xl text-center">
@@ -86,7 +122,8 @@ const stats = [
     <h1 class="mt-3 text-4xl md:text-5xl font-bold">Performance & Quality Testing</h1>
     <p class="mt-3 text-lg text-muted max-w-3xl mx-auto">
       Every {SITE.name} inflatable boat and SUP undergoes rigorous performance and quality control testing at our R&D Center
-      before it ships. Our comprehensive SUP quality testing provides tangible proof of product excellence for OEM and wholesale buyers.
+      before it ships. Our comprehensive SUP quality testing provides tangible proof of product excellence for OEM and wholesale
+      buyers.
     </p>
   </section>
 
@@ -162,28 +199,48 @@ const stats = [
   <!-- FAQ -->
   <section class="bg-gray-50 py-16 px-6">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">Quality Testing — Frequently Asked Questions</h2>
-      <p class="text-lg text-gray-500 text-center mb-12">Common questions about Afarer quality assurance and testing.</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        Quality Testing — Frequently Asked Questions
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        Common questions about Afarer quality assurance and testing.
+      </p>
       <div class="space-y-4">
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">What quality tests do Afarer SUP boards undergo?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Every Afarer board undergoes pressure testing, impact testing, UV resistance testing, abrasion testing, low-temperature testing, buoyancy verification, maneuverability assessment, and watertightness certification before shipping.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Every Afarer board undergoes pressure testing, impact testing, UV resistance testing, abrasion testing,
+            low-temperature testing, buoyancy verification, maneuverability assessment, and watertightness certification
+            before shipping.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Are Afarer SUP boards CE certified?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. All Afarer inflatable SUP boards are CE certified under the European Personal Protective Equipment Regulation. Our quality management system is ISO 9001 certified.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. All Afarer inflatable SUP boards are CE certified under the European Personal Protective Equipment
+            Regulation. Our quality management system is ISO 9001 certified.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">How do you test inflatable SUP durability?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">We conduct controlled impact tests from various weights and angles to assess puncture and tear resistance. UV exposure tests simulate years of sunlight. Abrasion tests verify material wear resistance.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            We conduct controlled impact tests from various weights and angles to assess puncture and tear resistance.
+            UV exposure tests simulate years of sunlight. Abrasion tests verify material wear resistance.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Do you test boards for extreme temperatures?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Low-temperature testing evaluates material flexibility and seam integrity in cold conditions. Our PVC formulations maintain performance from -30°C to +60°C.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Low-temperature testing evaluates material flexibility and seam integrity in cold conditions. Our PVC
+            formulations maintain performance from -30°C to +60°C.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Can I visit your factory for a quality audit?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Afarer welcomes factory audits and third-party inspections. Contact our team to schedule a visit to our ISO 9001 certified production facility in Qingdao, China.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Afarer welcomes factory audits and third-party inspections. Contact our team to schedule a visit to our
+            ISO 9001 certified production facility in Qingdao, China.
+          </p>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ contact_form:
   submit_button: 發送消息
   success_message: 謝謝！您的消息已收到。我們會在一個工作日內回覆。
   error_message: 發送消息時出錯。請重試或直接給我們發送郵件。
-  default_country_code: "+1"
+  default_country_code: '+1'
   captcha:
     label: 反垃圾：請解答以下問題
   fields:
@@ -24,7 +24,7 @@ contact_form:
       row: 2
       type: select
       options:
-        - value: ""
+        - value: ''
           label: Select your estimated volume...
         - value: sample
           label: Samples / Prototypes only
@@ -40,7 +40,7 @@ contact_form:
       row: 3
       type: select
       options:
-        - value: ""
+        - value: ''
           label: Select customization type...
         - value: none
           label: Standard product (no customization)
@@ -56,7 +56,7 @@ contact_form:
       row: 4
       type: select
       options:
-        - value: ""
+        - value: ''
           label: Select product category...
         - value: all
           label: All products / Full catalog

@@ -21,7 +21,15 @@ const metadata = {
 };
 ---
 
-<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Trust', item: 'https://afarer.com/trust/' }] }} />
+<JsonLd
+  type="BreadcrumbList"
+  data={{
+    itemListElement: [
+      { position: 1, name: 'Home', item: 'https://afarer.com/' },
+      { position: 2, name: 'Trust', item: 'https://afarer.com/trust/' },
+    ],
+  }}
+/>
 
 <Layout metadata={metadata}>
   <Hero {...page.hero} />

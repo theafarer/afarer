@@ -68,12 +68,47 @@ const segments = [
   type="FAQPage"
   data={{
     mainEntity: [
-      { "@type": "Question", name: "What makes Afarer engineering different?", acceptedAnswer: { "@type": "Answer", text: "Afarer combines in-house R&D with precision manufacturing. Our engineering team focuses on segment-specific design for touring, fishing, yoga, and recreational SUP boards, optimizing each model for its intended use case." } },
-      { "@type": "Question", name: "What materials do you use for SUP manufacturing?", acceptedAnswer: { "@type": "Answer", text: "Afarer uses military-grade PVC drop-stitch fabric, fusion-laminated seams, and reinforced rail construction. Materials are selected for durability, weight optimization, and compliance with CE certification standards." } },
-      { "@type": "Question", name: "How do you ensure consistent quality across production?", acceptedAnswer: { "@type": "Answer", text: "Our ISO 9001 quality management system governs every production stage. Each board undergoes pressure testing, seam integrity verification, and dimensional inspection before packaging. Statistical process control monitors production consistency." } },
-      { "@type": "Question", name: "Can you develop custom board designs for my brand?", acceptedAnswer: { "@type": "Answer", text: "Yes. Afarer's R&D team offers full ODM services including hydrodynamic simulation, prototype development, mold creation, and production ramp-up. Share your specifications and our engineers will develop your custom design." } },
-      { "@type": "Question", name: "What is your lead time for custom engineering projects?", acceptedAnswer: { "@type": "Answer", text: "Typical lead time for custom board development is 30-45 days from specification approval. This includes design, prototyping, testing, and production setup. Standard production orders ship within 30 days." } },
-    ]
+      {
+        '@type': 'Question',
+        name: 'What makes Afarer engineering different?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Afarer combines in-house R&D with precision manufacturing. Our engineering team focuses on segment-specific design for touring, fishing, yoga, and recreational SUP boards, optimizing each model for its intended use case.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What materials do you use for SUP manufacturing?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Afarer uses military-grade PVC drop-stitch fabric, fusion-laminated seams, and reinforced rail construction. Materials are selected for durability, weight optimization, and compliance with CE certification standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you ensure consistent quality across production?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our ISO 9001 quality management system governs every production stage. Each board undergoes pressure testing, seam integrity verification, and dimensional inspection before packaging. Statistical process control monitors production consistency.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can you develop custom board designs for my brand?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Yes. Afarer's R&D team offers full ODM services including hydrodynamic simulation, prototype development, mold creation, and production ramp-up. Share your specifications and our engineers will develop your custom design.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is your lead time for custom engineering projects?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Typical lead time for custom board development is 30-45 days from specification approval. This includes design, prototyping, testing, and production setup. Standard production orders ship within 30 days.',
+        },
+      },
+    ],
   }}
 />
 <Layout metadata={metadata} breadcrumbs={crumbs}>
@@ -207,28 +242,50 @@ const segments = [
   <!-- FAQ -->
   <section class="bg-gray-50 py-16 px-6">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">Engineering — Frequently Asked Questions</h2>
-      <p class="text-lg text-gray-500 text-center mb-12">Common questions about Afarer engineering, materials, and custom development.</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        Engineering — Frequently Asked Questions
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        Common questions about Afarer engineering, materials, and custom development.
+      </p>
       <div class="space-y-4">
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">What makes Afarer engineering different?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Afarer combines in-house R&D with precision manufacturing. Our engineering team focuses on segment-specific design for touring, fishing, yoga, and recreational SUP boards, optimizing each model for its intended use case.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Afarer combines in-house R&D with precision manufacturing. Our engineering team focuses on segment-specific
+            design for touring, fishing, yoga, and recreational SUP boards, optimizing each model for its intended use
+            case.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">What materials do you use for SUP manufacturing?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Afarer uses military-grade PVC drop-stitch fabric, fusion-laminated seams, and reinforced rail construction. Materials are selected for durability, weight optimization, and compliance with CE certification standards.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Afarer uses military-grade PVC drop-stitch fabric, fusion-laminated seams, and reinforced rail construction.
+            Materials are selected for durability, weight optimization, and compliance with CE certification standards.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">How do you ensure consistent quality across production?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Our ISO 9001 quality management system governs every production stage. Each board undergoes pressure testing, seam integrity verification, and dimensional inspection before packaging. Statistical process control monitors production consistency.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Our ISO 9001 quality management system governs every production stage. Each board undergoes pressure
+            testing, seam integrity verification, and dimensional inspection before packaging. Statistical process
+            control monitors production consistency.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Can you develop custom board designs for my brand?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Afarer's R&D team offers full ODM services including hydrodynamic simulation, prototype development, mold creation, and production ramp-up. Share your specifications and our engineers will develop your custom design.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Afarer's R&D team offers full ODM services including hydrodynamic simulation, prototype development,
+            mold creation, and production ramp-up. Share your specifications and our engineers will develop your custom
+            design.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">What is your lead time for custom engineering projects?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Typical lead time for custom board development is 30-45 days from specification approval. This includes design, prototyping, testing, and production setup. Standard production orders ship within 30 days.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Typical lead time for custom board development is 30-45 days from specification approval. This includes
+            design, prototyping, testing, and production setup. Standard production orders ship within 30 days.
+          </p>
         </div>
       </div>
     </div>

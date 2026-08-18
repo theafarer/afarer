@@ -90,8 +90,62 @@ const metadata = {
       },
     }}
   />
-  <JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Contact', item: 'https://afarer.com/contact/' }] }} />
-  <JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "How do I get an OEM/ODM quote?", acceptedAnswer: { "@type": "Answer", text: "Fill out the contact form with your requirements including product type, quantity, specifications, and target market. Our B2B team will respond within 24 hours with a detailed quotation." } }, { "@type": "Question", name: "What is the best way to contact afarer?", acceptedAnswer: { "@type": "Answer", text: "Use the contact form on this page for fastest response. You can also reach our sales team via email at the address shown in the contact information section. We respond within one business day." } }, { "@type": "Question", name: "Does afarer have a physical factory address?", acceptedAnswer: { "@type": "Answer", text: "Yes. Our manufacturing facility is located in the Economic Development Zone, Laixi, Qingdao, China. The 12,000 m² ISO-certified factory is open for scheduled visits." } }, { "@type": "Question", name: "How long does it take to get a response?", acceptedAnswer: { "@type": "Answer", text: "Sales inquiries are answered within 24 hours. OEM/ODM quotations are typically provided within 2-3 business days after receiving your detailed requirements." } }, { "@type": "Question", name: "Can I visit the factory?", acceptedAnswer: { "@type": "Answer", text: "Yes. Factory visits are welcome by appointment. Contact us in advance to schedule a tour of our production lines, R&D center, and quality control laboratories." } }] }} />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: 'Home', item: 'https://afarer.com/' },
+        { position: 2, name: 'Contact', item: 'https://afarer.com/contact/' },
+      ],
+    }}
+  />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'How do I get an OEM/ODM quote?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Fill out the contact form with your requirements including product type, quantity, specifications, and target market. Our B2B team will respond within 24 hours with a detailed quotation.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the best way to contact afarer?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Use the contact form on this page for fastest response. You can also reach our sales team via email at the address shown in the contact information section. We respond within one business day.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Does afarer have a physical factory address?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Our manufacturing facility is located in the Economic Development Zone, Laixi, Qingdao, China. The 12,000 m² ISO-certified factory is open for scheduled visits.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How long does it take to get a response?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Sales inquiries are answered within 24 hours. OEM/ODM quotations are typically provided within 2-3 business days after receiving your detailed requirements.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can I visit the factory?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Factory visits are welcome by appointment. Contact us in advance to schedule a tour of our production lines, R&D center, and quality control laboratories.',
+          },
+        },
+      ],
+    }}
+  />
   <section class="bg-gradient-to-br from-sky-600 via-sky-700 to-blue-800 text-white py-20 px-6">
     <div class="max-w-6xl mx-auto text-center">
       <span class="text-sm font-semibold tracking-widest uppercase text-sky-200">{ht.tagline || 'Contact'}</span>
@@ -179,48 +233,73 @@ const metadata = {
     </div>
     <div class="space-y-4">
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>How do I get an OEM/ODM quote?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Fill out the contact form with your requirements including product type, quantity, specifications, and target market. Our B2B team will respond within 24 hours with a detailed quotation.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Fill out the contact form with your requirements including product type, quantity, specifications, and
+            target market. Our B2B team will respond within 24 hours with a detailed quotation.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>What is the best way to contact afarer?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Use the contact form on this page for fastest response. You can also reach our sales team via email. We respond within one business day.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Use the contact form on this page for fastest response. You can also reach our sales team via email. We
+            respond within one business day.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>Does afarer have a physical factory address?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Yes. Our manufacturing facility is located in the Economic Development Zone, Laixi, Qingdao, China. The 12,000 m² ISO-certified factory is open for scheduled visits.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Yes. Our manufacturing facility is located in the Economic Development Zone, Laixi, Qingdao, China. The
+            12,000 m² ISO-certified factory is open for scheduled visits.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>How long does it take to get a response?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Sales inquiries are answered within 24 hours. OEM/ODM quotations are typically provided within 2-3 business days after receiving your detailed requirements.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Sales inquiries are answered within 24 hours. OEM/ODM quotations are typically provided within 2-3 business
+            days after receiving your detailed requirements.
+          </p>
         </div>
       </details>
       <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-        <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+        <summary
+          class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+        >
           <span>Can I visit the factory?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
-          <p class="text-gray-600 leading-relaxed">Yes. Factory visits are welcome by appointment. Contact us in advance to schedule a tour of our production lines, R&D center, and quality control laboratories.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Yes. Factory visits are welcome by appointment. Contact us in advance to schedule a tour of our production
+            lines, R&D center, and quality control laboratories.
+          </p>
         </div>
       </details>
     </div>

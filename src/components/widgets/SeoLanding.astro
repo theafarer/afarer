@@ -1,0 +1,113 @@
+---
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export const prerender = true;
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
+
+interface Props {
+  page: any;
+  lang: string;
+  pageName: string;
+  t: (key: string) => string;
+}
+
+const { page, lang, pageName, t } = Astro.props;
+
+const pageMeta = page.meta ?? {};
+const hero = page.hero ?? {};
+const stats = page.stats ?? [];
+const features = page.features ?? {};
+const faqs = page.faqs ?? {};
+const cta = page.cta ?? {};
+const geo = page.geo ?? {};
+
+const cleanMeta = (s: string) =>
+  (s || '')
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+const metadata = {
+  title: cleanMeta(pageMeta.title || hero.title || `${SITE.name}`).replace('{SITE}', SITE.name),
+  description: cleanMeta(pageMeta.description || hero.subtitle || `${SITE.name}`),
+  keywords: Array.isArray(pageMeta.keywords) ? pageMeta.keywords : [],
+};
+
+const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const heroActions = (hero.actions || []).map((a: any) => ({ ...a, href: lh(a.href) }));
+const ctaActions = (cta.actions || []).map((a: any) => ({ ...a, href: lh(a.href) }));
+
+const crumbs = [{ name: t('nav.home') || 'Home', href: `/${lang}/` }, { name: cleanMeta(hero.title || pageName) }];
+const faqItems = (faqs.items || []).map((f: any) => ({ question: f.title, answer: f.description }));
+---
+
+<Layout metadata={metadata} breadcrumbs={crumbs}>
+  <Hero tagline={hero.tagline} title={hero.title} subtitle={hero.subtitle} image={hero.image} actions={heroActions} />
+
+  {
+    stats.length > 0 && (
+      <section class="max-w-6xl mx-auto px-6 -mt-8 relative z-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white rounded-2xl shadow-lg p-8">
+          {stats.map((s: any) => (
+            <div class="text-center">
+              <span class="block text-3xl font-bold text-primary">{s.value}</span>
+              <span class="text-xs text-gray-500 mt-1 block">{s.label}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <Features
+    title={features.title}
+    subtitle={features.subtitle}
+    items={features.items}
+    columns={features.columns || 3}
+  />
+
+  {
+    geo.sentence && (
+      <section class="max-w-6xl mx-auto px-6 py-16">
+        <div class="rounded-2xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-8 md:p-12 shadow-sm">
+          <p class="text-xs font-semibold uppercase tracking-widest text-primary mb-4">
+            {geo.tagline || 'Positionnement B2B'}
+          </p>
+          <p class="text-lg md:text-xl text-gray-700 dark:text-slate-300 leading-relaxed font-medium">{geo.sentence}</p>
+          {geo.audiences?.length > 0 && (
+            <div class="mt-6 flex flex-wrap gap-3">
+              {geo.audiences.map((a: string) => (
+                <span class="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">{a}</span>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+    )
+  }
+
+  {faqs.items?.length > 0 && <FAQs title={faqs.title} subtitle={faqs.subtitle} items={faqs.items} columns={2} />}
+
+  <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
+
+  <JsonLd
+    type="Service"
+    service={{
+      name: metadata.title,
+      description: metadata.description,
+      serviceType: 'OEM/ODM Manufacturing',
+      areaServed: ['Global'],
+      url: `/${lang}/${pageName}`,
+      items: (features.items || []).slice(0, 6).map((f: any) => ({
+        name: f.title,
+        description: f.description,
+      })),
+    }}
+  />
+  <JsonLd type="FAQPage" faqs={faqItems} />
+</Layout>

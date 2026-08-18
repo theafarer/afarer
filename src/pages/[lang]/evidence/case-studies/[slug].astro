@@ -19,7 +19,7 @@ interface CaseStudy {
   image: string;
   tags: string[];
   outcome_metrics: { label: string; value: string | number }[];
-  before_after?: { label: string; before: string; after: string }[];
+  before_after?: { label: string; before: string | number; after: string | number }[];
   video_url?: string;
 }
 
@@ -53,7 +53,15 @@ const metadata = {
 {
   study && (
     <Layout metadata={metadata}>
-      <JsonLd type="BreadcrumbList" breadcrumbs={[{ name: SITE.name, href: `/${lang}/` }, { name: t('home.evidence.title'), href: `/${lang}/evidence` }, { name: t('home.evidence.caseStudies') || 'Case Studies', href: `/${lang}/evidence/case-studies` }, { name: study.client }]} />
+      <JsonLd
+        type="BreadcrumbList"
+        breadcrumbs={[
+          { name: SITE.name, href: `/${lang}/` },
+          { name: t('home.evidence.title'), href: `/${lang}/evidence` },
+          { name: t('home.evidence.caseStudies') || 'Case Studies', href: `/${lang}/evidence/case-studies` },
+          { name: study.client },
+        ]}
+      />
       <JsonLd
         data={{
           '@context': 'https://schema.org',
@@ -108,8 +116,8 @@ const metadata = {
           </div>
         </div>
 
-        <!-- Before / After Comparison -->
-        {study.before_after?.length > 0 && (
+        {/* Before / After Comparison */}
+        {study.before_after && study.before_after.length > 0 && (
           <div class="mb-12 bg-gray-50 rounded-2xl p-8 border border-gray-200">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">{t('evidence.beforeAfter') || 'Before & After'}</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -118,12 +126,28 @@ const metadata = {
                   <p class="text-sm font-medium text-gray-500 mb-3">{ba.label}</p>
                   <div class="flex items-center justify-center gap-4">
                     <div class="bg-red-50 rounded-xl px-4 py-3 flex-1">
-                      <p class="text-xs text-red-500 uppercase tracking-wider font-semibold">{t('evidence.before') || 'Before'}</p>
+                      <p class="text-xs text-red-500 uppercase tracking-wider font-semibold">
+                        {t('evidence.before') || 'Before'}
+                      </p>
                       <p class="text-lg font-bold text-red-600">{ba.before}</p>
                     </div>
-                    <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                    <svg
+                      class="w-5 h-5 text-primary flex-shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
                     <div class="bg-green-50 rounded-xl px-4 py-3 flex-1">
-                      <p class="text-xs text-green-500 uppercase tracking-wider font-semibold">{t('evidence.after') || 'After'}</p>
+                      <p class="text-xs text-green-500 uppercase tracking-wider font-semibold">
+                        {t('evidence.after') || 'After'}
+                      </p>
                       <p class="text-lg font-bold text-green-600">{ba.after}</p>
                     </div>
                   </div>
@@ -133,12 +157,18 @@ const metadata = {
           </div>
         )}
 
-        <!-- Video Embed -->
+        {/* Video Embed */}
         {study.video_url && (
           <div class="mb-12">
             <h2 class="text-2xl font-bold text-gray-900 mb-4">{t('evidence.video') || 'Video Testimonial'}</h2>
             <div class="aspect-video rounded-2xl overflow-hidden bg-gray-100">
-              <iframe src={study.video_url} class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe
+                src={study.video_url}
+                class="w-full h-full"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
             </div>
           </div>
         )}

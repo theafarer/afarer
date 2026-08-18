@@ -60,12 +60,47 @@ const capabilities = [
   type="FAQPage"
   data={{
     mainEntity: [
-      { "@type": "Question", name: "What design services does Afarer offer?", acceptedAnswer: { "@type": "Answer", text: "Afarer offers full ODM design services including hydrodynamic simulation, 3D modeling, graphic design, color matching, and prototype development. Our in-house R&D team collaborates with your brand from concept to production." } },
-      { "@type": "Question", name: "Can you match my brand's existing color scheme?", acceptedAnswer: { "@type": "Answer", text: "Yes. Our production team uses Pantone color matching to reproduce your brand colors accurately on SUP decks, rails, and accessory components. We provide physical color samples for approval before mass production." } },
-      { "@type": "Question", name: "Do you offer custom mold development?", acceptedAnswer: { "@type": "Answer", text: "Yes. Afarer develops custom molds for unique hull shapes, fin configurations, and deck designs. Our engineering team works from your CAD files or reference products to create production-ready tooling." } },
-      { "@type": "Question", name: "What graphic customization options are available?", acceptedAnswer: { "@type": "Answer", text: "We offer full deck graphic customization including digital print, hot stamping, embedded graphics, and custom EVA traction pad designs. Your logo, patterns, and branding can be applied to any board model." } },
-      { "@type": "Question", name: "Can I see a prototype before production?", acceptedAnswer: { "@type": "Answer", text: "Yes. Afarer provides prototype samples for all custom designs. We also offer AI-generated photorealistic mockups for rapid design review before physical sample production." } },
-    ]
+      {
+        '@type': 'Question',
+        name: 'What design services does Afarer offer?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Afarer offers full ODM design services including hydrodynamic simulation, 3D modeling, graphic design, color matching, and prototype development. Our in-house R&D team collaborates with your brand from concept to production.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: "Can you match my brand's existing color scheme?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Our production team uses Pantone color matching to reproduce your brand colors accurately on SUP decks, rails, and accessory components. We provide physical color samples for approval before mass production.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you offer custom mold development?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Afarer develops custom molds for unique hull shapes, fin configurations, and deck designs. Our engineering team works from your CAD files or reference products to create production-ready tooling.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What graphic customization options are available?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We offer full deck graphic customization including digital print, hot stamping, embedded graphics, and custom EVA traction pad designs. Your logo, patterns, and branding can be applied to any board model.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I see a prototype before production?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Afarer provides prototype samples for all custom designs. We also offer AI-generated photorealistic mockups for rapid design review before physical sample production.',
+        },
+      },
+    ],
   }}
 />
 
@@ -308,28 +343,48 @@ const capabilities = [
   <!-- FAQ -->
   <section class="bg-gray-50 py-16 px-6">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">Design & Innovation — Frequently Asked Questions</h2>
-      <p class="text-lg text-gray-500 text-center mb-12">Common questions about Afarer design services, customization, and prototyping.</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        Design & Innovation — Frequently Asked Questions
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        Common questions about Afarer design services, customization, and prototyping.
+      </p>
       <div class="space-y-4">
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">What design services does Afarer offer?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Afarer offers full ODM design services including hydrodynamic simulation, 3D modeling, graphic design, color matching, and prototype development. Our in-house R&D team collaborates with your brand from concept to production.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Afarer offers full ODM design services including hydrodynamic simulation, 3D modeling, graphic design, color
+            matching, and prototype development. Our in-house R&D team collaborates with your brand from concept to
+            production.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Can you match my brand's existing color scheme?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Our production team uses Pantone color matching to reproduce your brand colors accurately on SUP decks, rails, and accessory components. We provide physical color samples for approval before mass production.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Our production team uses Pantone color matching to reproduce your brand colors accurately on SUP decks,
+            rails, and accessory components. We provide physical color samples for approval before mass production.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Do you offer custom mold development?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Afarer develops custom molds for unique hull shapes, fin configurations, and deck designs. Our engineering team works from your CAD files or reference products to create production-ready tooling.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Afarer develops custom molds for unique hull shapes, fin configurations, and deck designs. Our
+            engineering team works from your CAD files or reference products to create production-ready tooling.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">What graphic customization options are available?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">We offer full deck graphic customization including digital print, hot stamping, embedded graphics, and custom EVA traction pad designs. Your logo, patterns, and branding can be applied to any board model.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            We offer full deck graphic customization including digital print, hot stamping, embedded graphics, and
+            custom EVA traction pad designs. Your logo, patterns, and branding can be applied to any board model.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Can I see a prototype before production?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Afarer provides prototype samples for all custom designs. We also offer AI-generated photorealistic mockups for rapid design review before physical sample production.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Afarer provides prototype samples for all custom designs. We also offer AI-generated photorealistic
+            mockups for rapid design review before physical sample production.
+          </p>
         </div>
       </div>
     </div>

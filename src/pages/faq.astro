@@ -21,7 +21,15 @@ const metadata = {
 const categories = [...new Set(faqs.map((f) => f.category))];
 ---
 
-<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'FAQ', item: 'https://afarer.com/faq/' }] }} />
+<JsonLd
+  type="BreadcrumbList"
+  data={{
+    itemListElement: [
+      { position: 1, name: 'Home', item: 'https://afarer.com/' },
+      { position: 2, name: 'FAQ', item: 'https://afarer.com/faq/' },
+    ],
+  }}
+/>
 
 <Layout metadata={metadata}>
   <meta name="ai-intent" content="faq,water-sports-questions,sup-buying-faq" />

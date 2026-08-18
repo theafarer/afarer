@@ -40,8 +40,62 @@ const getSpec = (p: (typeof products)[number], label: string) => {
       dateModified: '2025-06-15',
     }}
   />
-<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Size Guide', item: 'https://afarer.com/size-guide/' }] }} />
-<JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "How do I choose the right SUP board size?", acceptedAnswer: { "@type": "Answer", text: "Choose length based on your weight and intended use. Wider boards (32\"+) offer more stability. Longer boards (11-12 ft) track better for touring. Heavier paddlers need higher volume boards." } }, { "@type": "Question", name: "What is the weight capacity of afarer SUPs?", acceptedAnswer: { "@type": "Answer", text: "Weight capacities vary by model. Our inflatable SUPs typically support 220-350 lbs depending on length and volume. Check individual product specs for exact capacity." } }, { "@type": "Question", name: "Are all afarer SUPs the same width?", acceptedAnswer: { "@type": "Answer", text: "No. Board widths range from 30\" to 36\". Narrower boards (30-32\") are faster and better for touring. Wider boards (33-36\") offer more stability for fishing, yoga, and beginners." } }, { "@type": "Question", name: "What size SUP is best for beginners?", acceptedAnswer: { "@type": "Answer", text: "Beginners should choose a wider board (32-34\") that is 10-11 ft long. The extra width provides stability while learning balance and paddle technique." } }, { "@type": "Question", name: "Do SUP accessories come in universal sizes?", acceptedAnswer: { "@type": "Answer", text: "Most afarer accessories use universal sizing. Life vests come in S/M/L/XL, leashes in standard lengths, and paddles are adjustable from 68\" to 86\" to fit most paddlers." } }] }} />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: 'Home', item: 'https://afarer.com/' },
+        { position: 2, name: 'Size Guide', item: 'https://afarer.com/size-guide/' },
+      ],
+    }}
+  />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'How do I choose the right SUP board size?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Choose length based on your weight and intended use. Wider boards (32"+) offer more stability. Longer boards (11-12 ft) track better for touring. Heavier paddlers need higher volume boards.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the weight capacity of afarer SUPs?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Weight capacities vary by model. Our inflatable SUPs typically support 220-350 lbs depending on length and volume. Check individual product specs for exact capacity.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Are all afarer SUPs the same width?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'No. Board widths range from 30" to 36". Narrower boards (30-32") are faster and better for touring. Wider boards (33-36") offer more stability for fishing, yoga, and beginners.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What size SUP is best for beginners?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Beginners should choose a wider board (32-34") that is 10-11 ft long. The extra width provides stability while learning balance and paddle technique.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do SUP accessories come in universal sizes?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Most afarer accessories use universal sizing. Life vests come in S/M/L/XL, leashes in standard lengths, and paddles are adjustable from 68" to 86" to fit most paddlers.',
+          },
+        },
+      ],
+    }}
+  />
   <section class="max-w-6xl mx-auto py-24 px-6">
     <h1 class="text-4xl font-semibold text-gray-900">{hero.title || 'Size & Specs Guide'}</h1>
     <p class="mt-4 text-lg text-gray-500">

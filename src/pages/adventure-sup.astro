@@ -3,11 +3,11 @@ import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 
 const metadata = {
-    title: 'Adventure SUP Board | Expedition-Ready Inflatable Paddle Board | Afarer OEM Manufacturer',
-    description:
-      'Afarer adventure SUP boards — rugged inflatable paddle boards built for expeditions, river running, and remote water exploration. Military-grade PVC, high-weight capacity, expedition-ready. OEM/ODM manufacturing available for brands and outfitters.',
-    ignoreTitleTemplate: true,
-  };
+  title: 'Adventure SUP Board | Expedition-Ready Inflatable Paddle Board | Afarer OEM Manufacturer',
+  description:
+    'Afarer adventure SUP boards — rugged inflatable paddle boards built for expeditions, river running, and remote water exploration. Military-grade PVC, high-weight capacity, expedition-ready. OEM/ODM manufacturing available for brands and outfitters.',
+  ignoreTitleTemplate: true,
+};
 const pageUrl = 'https://afarer.com/adventure-sup/';
 const today = '2026-07-27';
 ---
@@ -37,12 +37,47 @@ const today = '2026-07-27';
     type="FAQPage"
     data={{
       mainEntity: [
-        { "@type": "Question", name: "What is an adventure SUP board?", acceptedAnswer: { "@type": "Answer", text: "An adventure SUP board is a rugged inflatable paddle board designed for expeditions, river running, and remote water exploration. It features reinforced construction, higher weight capacity (300+ lbs), and durable materials that withstand impacts from rocks and submerged obstacles." } },
-        { "@type": "Question", name: "How is an adventure SUP different from a regular SUP?", acceptedAnswer: { "@type": "Answer", text: "Adventure SUPs use thicker military-grade PVC, fusion-laminated seams, and reinforced rail construction. They offer higher weight capacity, more D-ring attachment points for gear, and greater durability against impacts compared to standard recreational boards." } },
-        { "@type": "Question", name: "Can you use an adventure SUP for whitewater?", acceptedAnswer: { "@type": "Answer", text: "Yes. Adventure SUPs are built for Class I-II river conditions and can handle moderate rapids. Their reinforced construction and responsive handling make them suitable for moving water expeditions." } },
-        { "@type": "Question", name: "What weight capacity do adventure SUPs have?", acceptedAnswer: { "@type": "Answer", text: "Adventure SUPs typically support 300 to 400+ lbs, allowing paddlers to carry camping gear, food, water, and equipment for multi-day expeditions without compromising performance." } },
-        { "@type": "Question", name: "Do you manufacture adventure SUPs for private label?", acceptedAnswer: { "@type": "Answer", text: "Yes. Afarer offers OEM/ODM manufacturing for adventure SUP boards with reinforced construction, custom graphics, and expedition-grade packaging for outdoor brands and outfitters worldwide." } },
-      ]
+        {
+          '@type': 'Question',
+          name: 'What is an adventure SUP board?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'An adventure SUP board is a rugged inflatable paddle board designed for expeditions, river running, and remote water exploration. It features reinforced construction, higher weight capacity (300+ lbs), and durable materials that withstand impacts from rocks and submerged obstacles.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How is an adventure SUP different from a regular SUP?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Adventure SUPs use thicker military-grade PVC, fusion-laminated seams, and reinforced rail construction. They offer higher weight capacity, more D-ring attachment points for gear, and greater durability against impacts compared to standard recreational boards.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you use an adventure SUP for whitewater?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Adventure SUPs are built for Class I-II river conditions and can handle moderate rapids. Their reinforced construction and responsive handling make them suitable for moving water expeditions.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What weight capacity do adventure SUPs have?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Adventure SUPs typically support 300 to 400+ lbs, allowing paddlers to carry camping gear, food, water, and equipment for multi-day expeditions without compromising performance.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you manufacture adventure SUPs for private label?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Afarer offers OEM/ODM manufacturing for adventure SUP boards with reinforced construction, custom graphics, and expedition-grade packaging for outdoor brands and outfitters worldwide.',
+          },
+        },
+      ],
     }}
   />
 
@@ -161,19 +196,31 @@ const today = '2026-07-27';
       <div class="grid md:grid-cols-2 gap-6">
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Expedition Paddlers</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Multi-day river trips and coastal expeditions demand a board that carries gear and handles remote conditions. Adventure SUPs are built for self-supported journeys.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Multi-day river trips and coastal expeditions demand a board that carries gear and handles remote
+            conditions. Adventure SUPs are built for self-supported journeys.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Backcountry Adventurers</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Hike your SUP to remote lakes and launch spots inaccessible by road. Light enough to carry, tough enough for unexplored waters.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Hike your SUP to remote lakes and launch spots inaccessible by road. Light enough to carry, tough enough for
+            unexplored waters.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">Outdoor Guides & Instructors</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Lead multi-day SUP expeditions with confidence. Adventure SUPs withstand heavy professional use and carry the gear your group needs.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Lead multi-day SUP expeditions with confidence. Adventure SUPs withstand heavy professional use and carry
+            the gear your group needs.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
           <h3 class="text-lg font-bold text-secondary">River & Coastal Outfitters</h3>
-          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Offer adventure SUP rentals and guided trips. Durable construction reduces maintenance costs. OEM custom branding available.</p>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            Offer adventure SUP rentals and guided trips. Durable construction reduces maintenance costs. OEM custom
+            branding available.
+          </p>
         </div>
       </div>
     </div>
@@ -184,7 +231,9 @@ const today = '2026-07-27';
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">OEM/ODM Manufacturing for Adventure SUPs</h2>
       <p class="text-lg text-gray-500 leading-relaxed mb-8">
-        Afarer manufactures adventure SUP boards for outdoor brands, expedition outfitters, and guide services. Our production lines produce CE-certified adventure SUPs with reinforced construction, custom graphics, and expedition-grade packaging. MOQ from 50 units. Lead times from 30 days.
+        Afarer manufactures adventure SUP boards for outdoor brands, expedition outfitters, and guide services. Our
+        production lines produce CE-certified adventure SUPs with reinforced construction, custom graphics, and
+        expedition-grade packaging. MOQ from 50 units. Lead times from 30 days.
       </p>
       <div class="grid md:grid-cols-3 gap-4">
         <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
@@ -201,7 +250,11 @@ const today = '2026-07-27';
         </div>
       </div>
       <div class="mt-8 text-center">
-        <a href="/oem-odm-manufacturer" class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all">Request OEM Quote <span>→</span></a>
+        <a
+          href="/oem-odm-manufacturer"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+          >Request OEM Quote <span>→</span></a
+        >
       </div>
     </div>
   </section>
@@ -209,28 +262,49 @@ const today = '2026-07-27';
   <!-- FAQ -->
   <section class="bg-gray-50 py-16 px-6">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">Adventure SUP — Frequently Asked Questions</h2>
-      <p class="text-lg text-gray-500 text-center mb-12">Common questions about selecting and using adventure paddle boards.</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        Adventure SUP — Frequently Asked Questions
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        Common questions about selecting and using adventure paddle boards.
+      </p>
       <div class="space-y-4">
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">What is an adventure SUP board?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">An adventure SUP board is a rugged inflatable paddle board designed for expeditions, river running, and remote water exploration. It features reinforced construction, higher weight capacity (300+ lbs), and durable materials that withstand impacts from rocks and submerged obstacles.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            An adventure SUP board is a rugged inflatable paddle board designed for expeditions, river running, and
+            remote water exploration. It features reinforced construction, higher weight capacity (300+ lbs), and
+            durable materials that withstand impacts from rocks and submerged obstacles.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">How is an adventure SUP different from a regular SUP?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Adventure SUPs use thicker military-grade PVC, fusion-laminated seams, and reinforced rail construction. They offer higher weight capacity, more D-ring attachment points for gear, and greater durability against impacts compared to standard recreational boards.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Adventure SUPs use thicker military-grade PVC, fusion-laminated seams, and reinforced rail construction.
+            They offer higher weight capacity, more D-ring attachment points for gear, and greater durability against
+            impacts compared to standard recreational boards.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Can you use an adventure SUP for whitewater?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Adventure SUPs are built for Class I-II river conditions and can handle moderate rapids. Their reinforced construction and responsive handling make them suitable for moving water expeditions.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Adventure SUPs are built for Class I-II river conditions and can handle moderate rapids. Their
+            reinforced construction and responsive handling make them suitable for moving water expeditions.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">What weight capacity do adventure SUPs have?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Adventure SUPs typically support 300 to 400+ lbs, allowing paddlers to carry camping gear, food, water, and equipment for multi-day expeditions without compromising performance.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Adventure SUPs typically support 300 to 400+ lbs, allowing paddlers to carry camping gear, food, water, and
+            equipment for multi-day expeditions without compromising performance.
+          </p>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl p-6">
           <h3 class="text-lg font-semibold text-secondary">Do you manufacture adventure SUPs for private label?</h3>
-          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Yes. Afarer offers OEM/ODM manufacturing for adventure SUP boards with reinforced construction, custom graphics, and expedition-grade packaging for outdoor brands and outfitters worldwide.</p>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            Yes. Afarer offers OEM/ODM manufacturing for adventure SUP boards with reinforced construction, custom
+            graphics, and expedition-grade packaging for outdoor brands and outfitters worldwide.
+          </p>
         </div>
       </div>
     </div>
@@ -242,16 +316,31 @@ const today = '2026-07-27';
       <h2 class="text-3xl md:text-4xl font-bold text-secondary">Adventure SUP Guides</h2>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
-      <a href="/compare/pvc-vs-hypalon" class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all">
-        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">PVC vs Hypalon for Expeditions</h3>
+      <a
+        href="/compare/pvc-vs-hypalon"
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          PVC vs Hypalon for Expeditions
+        </h3>
         <p class="mt-2 text-sm text-gray-500">Which material is tougher for remote adventure paddling?</p>
       </a>
-      <a href="/compare/single-chamber-vs-multi-chamber" class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all">
-        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">Chamber Safety for Remote Water</h3>
+      <a
+        href="/compare/single-chamber-vs-multi-chamber"
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          Chamber Safety for Remote Water
+        </h3>
         <p class="mt-2 text-sm text-gray-500">Why multi-chamber designs matter on long expeditions.</p>
       </a>
-      <a href="/compare/inflatable-vs-hardboard" class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all">
-        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">Inflatable vs Hard for Adventure</h3>
+      <a
+        href="/compare/inflatable-vs-hardboard"
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          Inflatable vs Hard for Adventure
+        </h3>
         <p class="mt-2 text-sm text-gray-500">Why inflatable wins for expedition travel.</p>
       </a>
     </div>
@@ -259,7 +348,13 @@ const today = '2026-07-27';
 
   <section class="max-w-6xl mx-auto py-16 px-6 text-center">
     <h2 class="text-3xl md:text-4xl font-bold text-secondary">Find Your Adventure SUP</h2>
-    <p class="mt-4 text-lg text-gray-500">Contact us for bulk orders, OEM adventure SUP production, or technical specs.</p>
-    <a href="/contact" class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all">Inquire About Adventure SUPs <span>→</span></a>
+    <p class="mt-4 text-lg text-gray-500">
+      Contact us for bulk orders, OEM adventure SUP production, or technical specs.
+    </p>
+    <a
+      href="/contact"
+      class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+      >Inquire About Adventure SUPs <span>→</span></a
+    >
   </section>
 </Layout>

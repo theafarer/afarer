@@ -12,33 +12,116 @@ const metadata = {
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Private Label SUP' }];
 
 const services = [
-  { title: 'Logo Application', desc: 'Heat-transfer or screen-printed logo on board deck and rail. Color-matched to your brand identity with Pantone accuracy.' },
-  { title: 'Custom Packaging', desc: 'Branded retail boxes, carry bags, and user manuals in your language. Barcode/UPC registration included.' },
-  { title: 'Color Customization', desc: 'Full board colorway customization. Deck pad colors, rail bands, and valve cover colors can match your brand palette.' },
-  { title: 'Accessory Branding', desc: 'Paddles, pumps, life vests, and repair kits with your logo. Complete brand experience across all bundle components.' },
-  { title: 'Retail-Ready Kitting', desc: 'Full bundle assembly: board, pump, paddle, leash, fin set, backpack, and repair kit — ready for retail sale with your branding.' },
-  { title: 'E-Commerce Support', desc: 'Product photography, description copy, spec sheets, and marketing materials for your online store or catalog.' },
+  {
+    title: 'Logo Application',
+    desc: 'Heat-transfer or screen-printed logo on board deck and rail. Color-matched to your brand identity with Pantone accuracy.',
+  },
+  {
+    title: 'Custom Packaging',
+    desc: 'Branded retail boxes, carry bags, and user manuals in your language. Barcode/UPC registration included.',
+  },
+  {
+    title: 'Color Customization',
+    desc: 'Full board colorway customization. Deck pad colors, rail bands, and valve cover colors can match your brand palette.',
+  },
+  {
+    title: 'Accessory Branding',
+    desc: 'Paddles, pumps, life vests, and repair kits with your logo. Complete brand experience across all bundle components.',
+  },
+  {
+    title: 'Retail-Ready Kitting',
+    desc: 'Full bundle assembly: board, pump, paddle, leash, fin set, backpack, and repair kit — ready for retail sale with your branding.',
+  },
+  {
+    title: 'E-Commerce Support',
+    desc: 'Product photography, description copy, spec sheets, and marketing materials for your online store or catalog.',
+  },
 ];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>
-  <meta name="ai-intent" content="private-label-sup,private-label-paddle-board,supplier,custom-branded-sup-board,sup-private-label" />
+  <meta
+    name="ai-intent"
+    content="private-label-sup,private-label-paddle-board,supplier,custom-branded-sup-board,sup-private-label"
+  />
   <JsonLd type="BreadcrumbList" breadcrumbs={crumbs} />
-  <JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What is private label SUP manufacturing?", acceptedAnswer: { "@type": "Answer", text: "Private label SUP manufacturing allows you to sell inflatable paddle boards under your own brand. We manufacture the boards with your logo, colors, and packaging — you sell them as your own product." } }, { "@type": "Question", name: "What is the minimum order for private label SUPs?", acceptedAnswer: { "@type": "Answer", text: "MOQ is 5-10 units per model for private label orders. Sample boards with your branding can be produced for approval before bulk production." } }, { "@type": "Question", name: "Can I start a SUP brand with private label manufacturing?", acceptedAnswer: { "@type": "Answer", text: "Yes. We help startups and entrepreneurs launch their own SUP brands. Our team can guide you through product selection, branding, packaging design, and e-commerce setup." } }, { "@type": "Question", name: "What is included in the private label package?", acceptedAnswer: { "@type": "Answer", text: "Includes custom logo application, branded packaging, user manuals in your language, barcode/UPC registration, and product photography support. Accessories can also be branded." } }, { "@type": "Question", name: "How quickly can I get private label SUPs to market?", acceptedAnswer: { "@type": "Answer", text: "From order to delivery: approximately 8-12 weeks. Sample production: 2-3 weeks. Bulk production: 4-6 weeks. Ocean freight: 2-4 weeks depending on destination." } }] }} />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is private label SUP manufacturing?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Private label SUP manufacturing allows you to sell inflatable paddle boards under your own brand. We manufacture the boards with your logo, colors, and packaging — you sell them as your own product.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the minimum order for private label SUPs?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'MOQ is 5-10 units per model for private label orders. Sample boards with your branding can be produced for approval before bulk production.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can I start a SUP brand with private label manufacturing?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. We help startups and entrepreneurs launch their own SUP brands. Our team can guide you through product selection, branding, packaging design, and e-commerce setup.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is included in the private label package?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Includes custom logo application, branded packaging, user manuals in your language, barcode/UPC registration, and product photography support. Accessories can also be branded.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How quickly can I get private label SUPs to market?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'From order to delivery: approximately 8-12 weeks. Sample production: 2-3 weeks. Bulk production: 4-6 weeks. Ocean freight: 2-4 weeks depending on destination.',
+          },
+        },
+      ],
+    }}
+  />
 
   <!-- Hero -->
   <section class="relative py-24 px-6 overflow-hidden bg-secondary">
     <div class="absolute inset-0">
-      <img src="https://assets.afarer.com/images/afarer/products/sup-series/sup-cheetah-surge-1.webp" alt="Private label SUP boards with custom branding" class="w-full h-full object-cover opacity-30" style="object-position: center 30%;" />
+      <img
+        src="https://assets.afarer.com/images/afarer/products/sup-series/sup-cheetah-surge-1.webp"
+        alt="Private label SUP boards with custom branding"
+        class="w-full h-full object-cover opacity-30"
+        style="object-position: center 30%;"
+      />
       <div class="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/60 to-secondary/30"></div>
     </div>
     <div class="relative z-10 max-w-5xl mx-auto text-center">
       <span class="text-sm font-semibold text-sky-300 tracking-[0.2em] uppercase">Private Label</span>
       <h1 class="mt-4 text-4xl md:text-6xl font-bold text-white leading-tight">Private Label SUP Manufacturer</h1>
-      <p class="mt-6 text-lg text-white/80 max-w-3xl mx-auto">Launch your own SUP brand without investing in manufacturing. Afarer produces private label SUP boards with your logo, colors, and packaging on CE-certified inflatable paddle boards — ready for retail or e-commerce.</p>
+      <p class="mt-6 text-lg text-white/80 max-w-3xl mx-auto">
+        Launch your own SUP brand without investing in manufacturing. Afarer produces private label SUP boards with your
+        logo, colors, and packaging on CE-certified inflatable paddle boards — ready for retail or e-commerce.
+      </p>
       <div class="mt-10 flex items-center justify-center gap-4 flex-wrap">
-        <a href="/contact?subject=Private%20Label%20Inquiry" class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all">Start Your Brand <span>→</span></a>
-        <a href="/oem-odm-manufacturer" class="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition-all">View OEM Services →</a>
+        <a
+          href="/contact?subject=Private%20Label%20Inquiry"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all"
+          >Start Your Brand <span>→</span></a
+        >
+        <a
+          href="/oem-odm-manufacturer"
+          class="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition-all"
+          >View OEM Services →</a
+        >
       </div>
     </div>
   </section>
@@ -49,16 +132,23 @@ const services = [
       <div class="text-center mb-16">
         <span class="text-sm font-semibold text-sky-600 tracking-[0.15em] uppercase">Private Label Services</span>
         <h2 class="mt-4 text-4xl font-bold text-gray-900">What We Offer</h2>
-        <p class="mt-4 text-lg text-gray-500">Everything you need to build and launch your own SUP brand — white label paddle boards with full customization.</p>
+        <p class="mt-4 text-lg text-gray-500">
+          Everything you need to build and launch your own SUP brand — white label paddle boards with full
+          customization.
+        </p>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((s) => (
-          <div class="bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
-            <div class="w-10 h-10 bg-sky-50 rounded-xl flex items-center justify-center text-sky-600 font-bold text-lg">&#10003;</div>
-            <h3 class="mt-4 text-lg font-semibold text-gray-900">{s.title}</h3>
-            <p class="mt-2 text-sm text-gray-500 leading-relaxed">{s.desc}</p>
-          </div>
-        ))}
+        {
+          services.map((s) => (
+            <div class="bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
+              <div class="w-10 h-10 bg-sky-50 rounded-xl flex items-center justify-center text-sky-600 font-bold text-lg">
+                &#10003;
+              </div>
+              <h3 class="mt-4 text-lg font-semibold text-gray-900">{s.title}</h3>
+              <p class="mt-2 text-sm text-gray-500 leading-relaxed">{s.desc}</p>
+            </div>
+          ))
+        }
       </div>
     </div>
   </section>
@@ -71,27 +161,47 @@ const services = [
     </div>
     <div class="grid md:grid-cols-5 gap-4">
       <div class="text-center">
-        <div class="w-14 h-14 mx-auto bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-bold text-xl">1</div>
+        <div
+          class="w-14 h-14 mx-auto bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-bold text-xl"
+        >
+          1
+        </div>
         <h3 class="mt-3 text-sm font-semibold text-gray-900">Choose Your Model</h3>
         <p class="mt-1 text-xs text-gray-500">Select from our SUP portfolio or request custom specifications.</p>
       </div>
       <div class="text-center">
-        <div class="w-14 h-14 mx-auto bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-bold text-xl">2</div>
+        <div
+          class="w-14 h-14 mx-auto bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-bold text-xl"
+        >
+          2
+        </div>
         <h3 class="mt-3 text-sm font-semibold text-gray-900">Design Your Branding</h3>
         <p class="mt-1 text-xs text-gray-500">Submit your logo, colors, and packaging requirements.</p>
       </div>
       <div class="text-center">
-        <div class="w-14 h-14 mx-auto bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-bold text-xl">3</div>
+        <div
+          class="w-14 h-14 mx-auto bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-bold text-xl"
+        >
+          3
+        </div>
         <h3 class="mt-3 text-sm font-semibold text-gray-900">Sample Approval</h3>
         <p class="mt-1 text-xs text-gray-500">We produce pre-production samples for your review and sign-off.</p>
       </div>
       <div class="text-center">
-        <div class="w-14 h-14 mx-auto bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-bold text-xl">4</div>
+        <div
+          class="w-14 h-14 mx-auto bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-bold text-xl"
+        >
+          4
+        </div>
         <h3 class="mt-3 text-sm font-semibold text-gray-900">Bulk Production</h3>
         <p class="mt-1 text-xs text-gray-500">Your order goes into production with full QC inspection.</p>
       </div>
       <div class="text-center">
-        <div class="w-14 h-14 mx-auto bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-bold text-xl">5</div>
+        <div
+          class="w-14 h-14 mx-auto bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-bold text-xl"
+        >
+          5
+        </div>
         <h3 class="mt-3 text-sm font-semibold text-gray-900">Global Delivery</h3>
         <p class="mt-1 text-xs text-gray-500">Finished products shipped FOB Qingdao to your warehouse or customers.</p>
       </div>
@@ -108,39 +218,74 @@ const services = [
       </div>
       <div class="space-y-4">
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>What is private label SUP manufacturing?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
-          <div class="px-6 pb-4"><p class="text-gray-600 leading-relaxed">Private label SUP manufacturing allows you to sell inflatable paddle boards under your own brand. We manufacture the boards with your logo, colors, and packaging — you sell them as your own product.</p></div>
+          <div class="px-6 pb-4">
+            <p class="text-gray-600 leading-relaxed">
+              Private label SUP manufacturing allows you to sell inflatable paddle boards under your own brand. We
+              manufacture the boards with your logo, colors, and packaging — you sell them as your own product.
+            </p>
+          </div>
         </details>
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>What is the minimum order for private label SUPs?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
-          <div class="px-6 pb-4"><p class="text-gray-600 leading-relaxed">MOQ is 5-10 units per model for private label orders. Sample boards with your branding can be produced for approval before bulk production.</p></div>
+          <div class="px-6 pb-4">
+            <p class="text-gray-600 leading-relaxed">
+              MOQ is 5-10 units per model for private label orders. Sample boards with your branding can be produced for
+              approval before bulk production.
+            </p>
+          </div>
         </details>
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>Can I start a SUP brand with private label manufacturing?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
-          <div class="px-6 pb-4"><p class="text-gray-600 leading-relaxed">Yes. We help startups and entrepreneurs launch their own SUP brands. Our team can guide you through product selection, branding, packaging design, and e-commerce setup.</p></div>
+          <div class="px-6 pb-4">
+            <p class="text-gray-600 leading-relaxed">
+              Yes. We help startups and entrepreneurs launch their own SUP brands. Our team can guide you through
+              product selection, branding, packaging design, and e-commerce setup.
+            </p>
+          </div>
         </details>
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>What is included in the private label package?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
-          <div class="px-6 pb-4"><p class="text-gray-600 leading-relaxed">Includes custom logo application, branded packaging, user manuals in your language, barcode/UPC registration, and product photography support. Accessories can also be branded.</p></div>
+          <div class="px-6 pb-4">
+            <p class="text-gray-600 leading-relaxed">
+              Includes custom logo application, branded packaging, user manuals in your language, barcode/UPC
+              registration, and product photography support. Accessories can also be branded.
+            </p>
+          </div>
         </details>
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>How quickly can I get private label SUPs to market?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
-          <div class="px-6 pb-4"><p class="text-gray-600 leading-relaxed">From order to delivery: approximately 8-12 weeks. Sample production: 2-3 weeks. Bulk production: 4-6 weeks. Ocean freight: 2-4 weeks depending on destination.</p></div>
+          <div class="px-6 pb-4">
+            <p class="text-gray-600 leading-relaxed">
+              From order to delivery: approximately 8-12 weeks. Sample production: 2-3 weeks. Bulk production: 4-6
+              weeks. Ocean freight: 2-4 weeks depending on destination.
+            </p>
+          </div>
         </details>
       </div>
     </div>
@@ -150,10 +295,30 @@ const services = [
     title="Related Services"
     subtitle="Explore more manufacturing options"
     links={[
-      { title: 'OEM SUP Board', description: 'Full OEM manufacturing for custom paddle boards.', href: '/oem-sup-board', label: 'OEM' },
-      { title: 'ODM Product Development', description: 'Design-to-production service for new SUP products.', href: '/odm-sup-board', label: 'ODM' },
-      { title: 'OEM/ODM Manufacturer', description: 'Full-spectrum manufacturing services.', href: '/oem-odm-manufacturer', label: 'OEM/ODM' },
-      { title: 'Custom Design', description: 'Custom mold design and product development.', href: '/design-powerhouse', label: 'Design' },
+      {
+        title: 'OEM SUP Board',
+        description: 'Full OEM manufacturing for custom paddle boards.',
+        href: '/oem-sup-board',
+        label: 'OEM',
+      },
+      {
+        title: 'ODM Product Development',
+        description: 'Design-to-production service for new SUP products.',
+        href: '/odm-sup-board',
+        label: 'ODM',
+      },
+      {
+        title: 'OEM/ODM Manufacturer',
+        description: 'Full-spectrum manufacturing services.',
+        href: '/oem-odm-manufacturer',
+        label: 'OEM/ODM',
+      },
+      {
+        title: 'Custom Design',
+        description: 'Custom mold design and product development.',
+        href: '/design-powerhouse',
+        label: 'Design',
+      },
     ]}
   />
 </Layout>

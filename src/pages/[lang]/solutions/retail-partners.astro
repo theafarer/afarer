@@ -34,9 +34,16 @@ const lh = (h: string) => (h ? `/${lang}${h}` : h);
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 
 const pageMeta = page.meta ?? {};
-const cleanMeta = (s: string) => (s || '').replace(/<br\s*\/?>/gi, ' ').replace(/\s+/g, ' ').trim();
+const cleanMeta = (s: string) =>
+  (s || '')
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 const metadata = {
-  title: cleanMeta(pageMeta.title || hero.title || `SUP Retail Partner Program — ${SITE.name}`).replace('{SITE}', SITE.name),
+  title: cleanMeta(pageMeta.title || hero.title || `SUP Retail Partner Program — ${SITE.name}`).replace(
+    '{SITE}',
+    SITE.name
+  ),
   description: cleanMeta(pageMeta.description || hero.subtitle),
 };
 const crumbs = [
@@ -59,11 +66,11 @@ const crumbs = [
             <div class="rounded-2xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow px-6 py-8 flex flex-col text-center">
               <h3 class="text-xl font-semibold text-foreground">{tier.tier}</h3>
               <p class="text-3xl font-bold text-primary mt-2">{tier.discount}</p>
-              <p class="text-xs text-muted uppercase tracking-wider mt-1">{t('retail.discount') || 'Wholesale Discount'}</p>
+              <p class="text-xs text-muted uppercase tracking-wider mt-1">
+                {t('retail.discount') || 'Wholesale Discount'}
+              </p>
               <p class="text-sm text-muted mt-1">{tier.moq}</p>
-              {tier.margin_note && (
-                <p class="mt-2 text-sm font-semibold text-primary">{tier.margin_note}</p>
-              )}
+              {tier.margin_note && <p class="mt-2 text-sm font-semibold text-primary">{tier.margin_note}</p>}
               <ul class="mt-6 space-y-2 text-left flex-1">
                 {tier.features?.map((b: string) => (
                   <li class="flex items-start gap-2">
@@ -82,27 +89,36 @@ const crumbs = [
   <WidgetWrapper containerClass="max-w-5xl mx-auto">
     <Headline title={productLine.title} subtitle={productLine.subtitle} />
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
-      {productLine.items?.map((item: any) => (
-        <div class="rounded-lg border border-gray-200 dark:border-gray-700 p-6 text-center">
-          <h3 class="text-lg font-semibold">{item.name}</h3>
-          <p class="text-sm text-muted mt-1">{item.description}</p>
-        </div>
-      ))}
+      {
+        productLine.items?.map((item: any) => (
+          <div class="rounded-lg border border-gray-200 dark:border-gray-700 p-6 text-center">
+            <h3 class="text-lg font-semibold">{item.name}</h3>
+            <p class="text-sm text-muted mt-1">{item.description}</p>
+          </div>
+        ))
+      }
     </div>
   </WidgetWrapper>
 
   <!-- Catalog / Resource Cards -->
   {
     catalog.items?.length > 0 && (
-      <WidgetWrapper containerClass="max-w-6xl mx-auto" bg>
+      <WidgetWrapper containerClass="max-w-6xl mx-auto" isDark>
         <Headline title={catalog.title} subtitle={catalog.subtitle} />
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
           {catalog.items?.map((res: any) => (
-            <a href={lh(res.link || '#')} class="group bg-white dark:bg-slate-900 rounded-2xl border border-gray-200 dark:border-slate-700 p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+            <a
+              href={lh(res.link || '#')}
+              class="group bg-white dark:bg-slate-900 rounded-2xl border border-gray-200 dark:border-slate-700 p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+            >
               <Icon name={res.icon || 'tabler:file-text'} class="text-3xl text-primary mb-4" />
-              <h3 class="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">{res.name}</h3>
+              <h3 class="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                {res.name}
+              </h3>
               <p class="mt-1 text-sm text-muted">{res.desc}</p>
-              <span class="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary group-hover:gap-2 transition-all">{t('retail.download') || 'Download'} →</span>
+              <span class="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary group-hover:gap-2 transition-all">
+                {t('retail.download') || 'Download'} →
+              </span>
             </a>
           ))}
         </div>
@@ -133,21 +149,32 @@ const crumbs = [
   <!-- Related Products -->
   <section class="max-w-6xl mx-auto px-6 py-12">
     <div class="text-center mb-8">
-      <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase">{t('product.related') || 'Featured Products'}</span>
+      <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase"
+        >{t('product.related') || 'Featured Products'}</span
+      >
       <h2 class="mt-2 text-2xl font-bold text-foreground">Top Retail Products</h2>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
-      <a href={lh('/products/sup-explorer-11')} class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+      <a
+        href={lh('/products/sup-explorer-11')}
+        class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
         <h3 class="font-semibold text-foreground group-hover:text-primary">SUP Explorer 11</h3>
         <p class="mt-1 text-sm text-muted">Best-selling all-round SUP for retail.</p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
       </a>
-      <a href={lh('/products/life-vest-classic')} class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+      <a
+        href={lh('/products/life-vest-classic')}
+        class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
         <h3 class="font-semibold text-foreground group-hover:text-primary">Life Vest Classic</h3>
         <p class="mt-1 text-sm text-muted">CE-certified essential safety accessory.</p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
       </a>
-      <a href={lh('/products/oars-pump-set')} class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5">
+      <a
+        href={lh('/products/oars-pump-set')}
+        class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
+      >
         <h3 class="font-semibold text-foreground group-hover:text-primary">Oars & Pump Set</h3>
         <p class="mt-1 text-sm text-muted">Complete paddle and inflation accessory set.</p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
@@ -156,16 +183,19 @@ const crumbs = [
   </section>
 
   <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
-  <JsonLd type="Service" service={{
-    name: cleanMeta(pageMeta.title || hero.title || 'SUP Retail Partner Program').replace('{SITE}', SITE.name),
-    description: hero.subtitle || 'Full product line, marketing materials, dropshipping, and competitive margins',
-    serviceType: 'Retail Partner Solutions',
-    areaServed: ['Global'],
-    url: `/${lang}/solutions/retail-partners`,
-    items: [
-      { name: 'Full Product Line', description: 'Complete SUP range with wholesale pricing' },
-      { name: 'Marketing Support', description: 'Branded materials, photography, and POS displays' },
-      { name: 'Dropshipping', description: 'Zero-inventory fulfillment directly to your customers' },
-    ],
-  }} />
+  <JsonLd
+    type="Service"
+    service={{
+      name: cleanMeta(pageMeta.title || hero.title || 'SUP Retail Partner Program').replace('{SITE}', SITE.name),
+      description: hero.subtitle || 'Full product line, marketing materials, dropshipping, and competitive margins',
+      serviceType: 'Retail Partner Solutions',
+      areaServed: ['Global'],
+      url: `/${lang}/solutions/retail-partners`,
+      items: [
+        { name: 'Full Product Line', description: 'Complete SUP range with wholesale pricing' },
+        { name: 'Marketing Support', description: 'Branded materials, photography, and POS displays' },
+        { name: 'Dropshipping', description: 'Zero-inventory fulfillment directly to your customers' },
+      ],
+    }}
+  />
 </Layout>

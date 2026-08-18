@@ -5,9 +5,10 @@ import { SEO } from 'astro-seo';
 import type { SEOProps } from 'astro-seo';
 
 import { SITE, METADATA } from 'astrowind:config';
-import { getLangFromUrl } from '~/i18n/utils';
+import { getLangFromUrl, removeLang } from '~/i18n/utils';
 import type { MetaData, MetaDataOpenGraph } from '~/types';
 import { getCanonical } from '~/utils/permalinks';
+import { seoPageMeta } from '~/i18n/generated/seo-meta';
 
 import { adaptOpenGraphImages } from '~/utils/images';
 
@@ -38,6 +39,30 @@ const {
 
 const currentLang = getLangFromUrl(Astro.url);
 
+// Localized page meta (title/description/keywords) from the per-page YAML
+// `meta:` blocks, keyed by lang + path. When a page defines its own meta for
+// the current language, it takes precedence over route-level hardcoded values.
+const routePath = removeLang(Astro.url.pathname);
+const pageMeta = seoPageMeta?.[`${currentLang}${routePath}`];
+
+const resolveTitle = (): string => {
+  if (pageMeta?.title) return String(pageMeta.title).replace('{SITE}', SITE?.name || 'Afarer');
+  return title || METADATA?.title?.default || '';
+};
+const resolveDescription = (): string => {
+  if (pageMeta?.description) return String(pageMeta.description).replace('{SITE}', SITE?.name || 'Afarer');
+  return description || METADATA?.description || '';
+};
+const resolveKeywords = (): string[] => {
+  if (pageMeta?.keywords?.length) return pageMeta.keywords;
+  if (Astro.props.keywords?.length) return Astro.props.keywords;
+  return seoSettings?.keywords || [];
+};
+
+const resolvedTitle = resolveTitle();
+const resolvedDescription = resolveDescription();
+const resolvedKeywords = resolveKeywords();
+
 const mergedOg: MetaDataOpenGraph = merge(
   {
     url: canonical,
@@ -62,13 +87,13 @@ function buildOpenGraph(og: MetaDataOpenGraph): SEOProps['openGraph'] | undefine
 
   return {
     basic: {
-      title: title || METADATA?.title?.default || '',
+      title: resolvedTitle || METADATA?.title?.default || '',
       type: og.type || 'website',
       image: imageUrl,
       url: og.url,
     },
     optional: {
-      description: description || METADATA?.description,
+      description: resolvedDescription || METADATA?.description,
       locale: og.locale,
       siteName: og.siteName,
     },
@@ -76,7 +101,7 @@ function buildOpenGraph(og: MetaDataOpenGraph): SEOProps['openGraph'] | undefine
       url: imageUrl,
       width: firstImage?.width,
       height: firstImage?.height,
-      alt: title || METADATA?.title?.default || '',
+      alt: resolvedTitle || METADATA?.title?.default || '',
     },
   };
 }
@@ -125,7 +150,7 @@ const resolveNofollow = (): boolean => {
 // skip the template (e.g. "OARS Pump Set –Afarer" + "%s –Afarer"
 // would produce "OARS Pump Set –Afarer –Afarer").
 const siteBrand = SITE?.name || 'Afarer';
-const rawTitle = title || METADATA?.title?.default || '';
+const rawTitle = resolvedTitle;
 const titleAlreadyBranded = rawTitle.includes(siteBrand);
 
 const seoProps: SEOProps = {
@@ -134,7 +159,7 @@ const seoProps: SEOProps = {
   canonical: canonical,
   noindex: resolveNoindex(),
   nofollow: resolveNofollow(),
-  description: description || METADATA?.description,
+  description: resolvedDescription,
   openGraph: buildOpenGraph(adaptedOg),
   twitter: mergedTwitter,
   surpressWarnings: true,
@@ -142,6 +167,7 @@ const seoProps: SEOProps = {
     meta: [
       { name: 'theme-color', content: '#0f172a' },
       { name: 'format-detection', content: 'telephone=no' },
+      ...(resolvedKeywords.length > 0 ? [{ name: 'keywords', content: resolvedKeywords.join(', ') }] : []),
     ],
   },
 };

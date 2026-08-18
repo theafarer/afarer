@@ -54,7 +54,15 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Evidence', item: 'https://afarer.com/evidence/' }] }} />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: 'Home', item: 'https://afarer.com/' },
+        { position: 2, name: 'Evidence', item: 'https://afarer.com/evidence/' },
+      ],
+    }}
+  />
   <JsonLd
     data={{
       '@context': 'https://schema.org',
@@ -77,7 +85,53 @@ const metadata = {
       author: { '@type': 'Organization', name: SITE.name },
     }}
   />
-  <JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What certifications does afarer hold?", acceptedAnswer: { "@type": "Answer", text: "Afarer holds ISO 9001 quality management certification, BSCI social compliance certification, CE marking for all products, and REACH compliance for materials. Certifications are independently audited." } }, { "@type": "Question", name: "How does afarer test product quality?", acceptedAnswer: { "@type": "Answer", text: "Every product undergoes 24-hour pressure retention testing at 1.25x rated pressure, seam peel verification, UV exposure testing, and AQL 2.5 final inspection per ISO 2859 sampling standards." } }, { "@type": "Question", name: "Can I get certification documents for my order?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every OEM/ODM order ships with CE declaration of conformity, ISO 9001 traceability records, BSCI social compliance report, and REACH material declarations." } }, { "@type": "Question", name: "Does afarer provide product specifications and datasheets?", acceptedAnswer: { "@type": "Answer", text: "Yes. We maintain detailed spec sheets for all product models including dimensions, weight capacities, material specifications, and test results. Download them from our spec sheet library." } }, { "@type": "Question", name: "Are case studies available for specific industries?", acceptedAnswer: { "@type": "Answer", text: "Yes. Our case studies cover OEM partnerships, resort fleet deployments, SAR operations, and commercial marine applications. Contact us for industry-specific references." } }] }} />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What certifications does afarer hold?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Afarer holds ISO 9001 quality management certification, BSCI social compliance certification, CE marking for all products, and REACH compliance for materials. Certifications are independently audited.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How does afarer test product quality?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Every product undergoes 24-hour pressure retention testing at 1.25x rated pressure, seam peel verification, UV exposure testing, and AQL 2.5 final inspection per ISO 2859 sampling standards.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can I get certification documents for my order?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Every OEM/ODM order ships with CE declaration of conformity, ISO 9001 traceability records, BSCI social compliance report, and REACH material declarations.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Does afarer provide product specifications and datasheets?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. We maintain detailed spec sheets for all product models including dimensions, weight capacities, material specifications, and test results. Download them from our spec sheet library.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Are case studies available for specific industries?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Our case studies cover OEM partnerships, resort fleet deployments, SAR operations, and commercial marine applications. Contact us for industry-specific references.',
+          },
+        },
+      ],
+    }}
+  />
 
   <div class="max-w-6xl mx-auto px-6 py-16">
     <nav class="text-sm text-gray-500 mb-8">
@@ -228,39 +282,59 @@ const metadata = {
       </div>
       <div class="space-y-4 max-w-3xl mx-auto">
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>What certifications does afarer hold?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
           <div class="px-6 pb-4">
-            <p class="text-gray-600 leading-relaxed">Afarer holds ISO 9001 quality management certification, BSCI social compliance certification, CE marking for all products, and REACH compliance for materials. Certifications are independently audited.</p>
+            <p class="text-gray-600 leading-relaxed">
+              Afarer holds ISO 9001 quality management certification, BSCI social compliance certification, CE marking
+              for all products, and REACH compliance for materials. Certifications are independently audited.
+            </p>
           </div>
         </details>
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>How does afarer test product quality?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
           <div class="px-6 pb-4">
-            <p class="text-gray-600 leading-relaxed">Every product undergoes 24-hour pressure retention testing at 1.25x rated pressure, seam peel verification, UV exposure testing, and AQL 2.5 final inspection per ISO 2859 sampling standards.</p>
+            <p class="text-gray-600 leading-relaxed">
+              Every product undergoes 24-hour pressure retention testing at 1.25x rated pressure, seam peel
+              verification, UV exposure testing, and AQL 2.5 final inspection per ISO 2859 sampling standards.
+            </p>
           </div>
         </details>
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>Can I get certification documents for my order?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
           <div class="px-6 pb-4">
-            <p class="text-gray-600 leading-relaxed">Yes. Every OEM/ODM order ships with CE declaration of conformity, ISO 9001 traceability records, BSCI social compliance report, and REACH material declarations.</p>
+            <p class="text-gray-600 leading-relaxed">
+              Yes. Every OEM/ODM order ships with CE declaration of conformity, ISO 9001 traceability records, BSCI
+              social compliance report, and REACH material declarations.
+            </p>
           </div>
         </details>
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>Are case studies available for specific industries?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
           <div class="px-6 pb-4">
-            <p class="text-gray-600 leading-relaxed">Yes. Our case studies cover OEM partnerships, resort fleet deployments, SAR operations, and commercial marine applications. Contact us for industry-specific references.</p>
+            <p class="text-gray-600 leading-relaxed">
+              Yes. Our case studies cover OEM partnerships, resort fleet deployments, SAR operations, and commercial
+              marine applications. Contact us for industry-specific references.
+            </p>
           </div>
         </details>
       </div>

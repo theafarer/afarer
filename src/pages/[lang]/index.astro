@@ -7,7 +7,6 @@ import { SITE } from 'astrowind:config';
 import { products } from '~/data/products';
 
 import JsonLd from '~/components/common/JsonLd.astro';
-import TrustBadges from '~/components/common/TrustBadges.astro';
 import TestimonialCarousel from '~/components/widgets/TestimonialCarousel.astro';
 import cfg from '~/config.yaml';
 const branding = (cfg as any)?.branding || {};
@@ -18,7 +17,6 @@ import __pageData from '~/i18n/generated/pages/home.ts';
 import techCardsData from '~/data/site/tech-cards.yaml';
 import productVisualsData from '~/data/site/product-visuals.yaml';
 import useCasesData from '~/data/site/use-cases.yaml';
-import proofPointsData from '~/data/site/proof-points.yaml';
 import testimonialsData from '~/data/site/testimonials.yaml';
 import learnData from '~/data/site/learning-center.yaml';
 
@@ -54,22 +52,6 @@ const defaultVisuals: Record<string, string> = {
 const rawVisuals = ((productVisualsData as any)?.visuals || []) as Array<{ id: string; image: string }>;
 const yamlVisuals = Object.fromEntries(rawVisuals.map((v) => [v.id, v.image]).filter(([, img]) => img));
 const productVisuals: Record<string, string> = { ...defaultVisuals, ...yamlVisuals };
-
-const rawPoints = ((proofPointsData as any)?.points || []) as Array<{
-  id: string;
-  metric: string;
-  label: string;
-  detail: string;
-}>;
-const defaultProofPoints = [
-  { metric: '8', label: t('home.proof.products'), detail: t('home.proof.products.detail') },
-  { metric: '50+', label: t('home.proof.countries'), detail: t('home.proof.countries.detail') },
-  { metric: '2012', label: t('home.proof.founded'), detail: t('home.proof.founded.detail') },
-  { metric: 'ISO', label: t('home.proof.certified'), detail: t('home.proof.certified.detail') },
-];
-const proofPoints = rawPoints.length
-  ? rawPoints.map((p) => ({ metric: p.metric, label: p.label, detail: p.detail }))
-  : defaultProofPoints;
 
 const defaultUseCases = [
   {
@@ -285,7 +267,9 @@ for (const cat of catalogCategories) {
     <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
       <div class="max-w-3xl">
         <div class="reveal">
-          <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-white/50 mb-6">
+          <span
+            class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-white/50 mb-6"
+          >
             <span class="w-8 h-px bg-primary"></span>
             {page.hero?.tagline || t('hero.since') || 'Premium Inflatable SUP Solutions'}
           </span>
@@ -295,7 +279,8 @@ for (const cat of catalogCategories) {
           />
           <p
             class="mt-6 text-lg md:text-xl text-white/70 max-w-2xl text-pretty leading-relaxed"
-            set:html={page.hero?.subtitle || 'Designing and manufacturing inflatable paddle boards for global brands, resorts, paddle clubs and water adventure businesses. OEM/ODM partner with 12,000m² facility and CE-certified production.'}
+            set:html={page.hero?.subtitle ||
+              'Designing and manufacturing inflatable paddle boards for global brands, resorts, paddle clubs and water adventure businesses. OEM/ODM partner with 12,000m² facility and CE-certified production.'}
           />
           <div class="mt-10 flex items-center gap-4 flex-wrap">
             {
@@ -319,7 +304,7 @@ for (const cat of catalogCategories) {
               )
             }
             {
-              !(page.hero?.actions?.length) && (
+              !page.hero?.actions?.length && (
                 <>
                   <a
                     href={'/' + lang + '/solutions'}
@@ -354,14 +339,15 @@ for (const cat of catalogCategories) {
         <div class="max-w-6xl mx-auto">
           <div class="text-center max-w-3xl mx-auto mb-16 reveal">
             <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary mb-4">
-              <span class="w-8 h-px bg-primary"></span>
+              <span class="w-8 h-px bg-primary" />
               {page.who_we_serve?.tagline || 'Who We Serve'}
             </span>
             <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-balance text-secondary">
               {page.who_we_serve?.title || 'Complete SUP Solutions for Every Water Business'}
             </h2>
             <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
-              {page.who_we_serve?.subtitle || 'Purpose-built equipment, manufacturing, and business support for four key markets.'}
+              {page.who_we_serve?.subtitle ||
+                'Purpose-built equipment, manufacturing, and business support for four key markets.'}
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -372,7 +358,12 @@ for (const cat of catalogCategories) {
               >
                 <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 text-primary">
                   <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z"
+                    />
                   </svg>
                 </div>
                 <h3 class="text-xl font-bold text-secondary mb-3">{item.title || ''}</h3>
@@ -395,14 +386,15 @@ for (const cat of catalogCategories) {
         <div class="max-w-6xl mx-auto">
           <div class="text-center max-w-3xl mx-auto mb-16 reveal">
             <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary mb-4">
-              <span class="w-8 h-px bg-primary"></span>
+              <span class="w-8 h-px bg-primary" />
               {page.business_solutions?.tagline || 'How We Help'}
             </span>
             <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-secondary">
               {page.business_solutions?.title || 'Your Partner From Concept To Revenue'}
             </h2>
             <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
-              {page.business_solutions?.subtitle || 'Four core capabilities that help water businesses launch, operate, and grow.'}
+              {page.business_solutions?.subtitle ||
+                'Four core capabilities that help water businesses launch, operate, and grow.'}
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
@@ -410,7 +402,12 @@ for (const cat of catalogCategories) {
               <div class="bg-[#F8FAFB] rounded-3xl p-8 group hover:shadow-lg transition-all duration-500 hover:-translate-y-1">
                 <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 text-primary">
                   <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+                    />
                   </svg>
                 </div>
                 <h3 class="text-xl font-bold text-secondary">{item.title || ''}</h3>
@@ -463,10 +460,22 @@ for (const cat of catalogCategories) {
             </div>
           </div>
           <div class="mt-8 flex flex-wrap gap-3">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 rounded-full text-xs font-medium text-primary">CE Certified</span>
-            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 rounded-full text-xs font-medium text-primary">ISO 9001:2015</span>
-            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 rounded-full text-xs font-medium text-primary">BSCI Compliant</span>
-            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 rounded-full text-xs font-medium text-primary">REACH Certified</span>
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 rounded-full text-xs font-medium text-primary"
+              >CE Certified</span
+            >
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 rounded-full text-xs font-medium text-primary"
+              >ISO 9001:2015</span
+            >
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 rounded-full text-xs font-medium text-primary"
+              >BSCI Compliant</span
+            >
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 rounded-full text-xs font-medium text-primary"
+              >REACH Certified</span
+            >
           </div>
         </div>
         <div class="reveal grid grid-cols-2 gap-4">
@@ -771,14 +780,15 @@ for (const cat of catalogCategories) {
         <div class="max-w-6xl mx-auto">
           <div class="text-center max-w-3xl mx-auto mb-16 reveal">
             <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary mb-4">
-              <span class="w-8 h-px bg-primary"></span>
+              <span class="w-8 h-px bg-primary" />
               {page.oem_section?.tagline || 'Launch Your Brand'}
             </span>
             <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-secondary">
               {page.oem_section?.title || 'From Idea To Market In 16 Weeks'}
             </h2>
             <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
-              {page.oem_section?.subtitle || 'Your complete SUP brand launch partner — design, prototype, manufacture, and ship.'}
+              {page.oem_section?.subtitle ||
+                'Your complete SUP brand launch partner — design, prototype, manufacture, and ship.'}
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 reveal">
@@ -792,7 +802,11 @@ for (const cat of catalogCategories) {
           </div>
           <div class="mt-12 text-center reveal">
             <a
-              href={page.oem_section?.cta_link ? '/' + lang + page.oem_section.cta_link : '/' + lang + '/oem-odm-manufacturer'}
+              href={
+                page.oem_section?.cta_link
+                  ? '/' + lang + page.oem_section.cta_link
+                  : '/' + lang + '/oem-odm-manufacturer'
+              }
               class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
             >
               {page.oem_section?.cta || 'Start Your Brand Journey'}
@@ -812,8 +826,10 @@ for (const cat of catalogCategories) {
           <span class="w-8 h-px bg-primary"></span>
           {t('home.lifestyle.tagline') || 'Lifestyle'}
         </span>
-        <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-secondary" set:html={t('home.lifestyle.title') || 'Water Is Our Element'}>
-        </h2>
+        <h2
+          class="text-4xl md:text-5xl font-bold tracking-tight text-secondary"
+          set:html={t('home.lifestyle.title') || 'Water Is Our Element'}
+        />
         <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
           {
             t('home.lifestyle.desc') ||
@@ -883,39 +899,46 @@ for (const cat of catalogCategories) {
         </p>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 reveal">
-        {(page.proof_points?.items || []).map((pt: any) => (
-          <div class="text-center">
-            <div class="text-4xl md:text-5xl font-bold text-primary">{pt.metric || ''}</div>
-            <p class="mt-2 text-sm text-white/50 uppercase tracking-wider">{pt.label || ''}</p>
-            <p class="mt-1 text-xs text-white/30">{pt.detail || ''}</p>
-          </div>
-        ))}
+        {
+          (page.proof_points?.items || []).map((pt: any) => (
+            <div class="text-center">
+              <div class="text-4xl md:text-5xl font-bold text-primary">{pt.metric || ''}</div>
+              <p class="mt-2 text-sm text-white/50 uppercase tracking-wider">{pt.label || ''}</p>
+              <p class="mt-1 text-xs text-white/30">{pt.detail || ''}</p>
+            </div>
+          ))
+        }
       </div>
       <div class="mt-16 text-center reveal">
         <h3 class="text-3xl font-semibold text-white">
           {page.cta?.title || 'Ready to build your water adventure business?'}
         </h3>
         <p class="mt-3 text-white/60 max-w-xl mx-auto">
-          {page.cta?.subtitle || 'Whether you are launching a club, outfitting a resort, or building a brand — we are here to help.'}
+          {
+            page.cta?.subtitle ||
+              'Whether you are launching a club, outfitting a resort, or building a brand — we are here to help.'
+          }
         </p>
         <div class="mt-8 flex items-center justify-center gap-4 flex-wrap">
-          {(page.cta?.actions || []).map((act: any) =>
-            act.variant === 'primary' ? (
-              <a
-                href={act.href ? '/' + lang + act.href : '/' + lang + '/contact'}
-                class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
-              >
-                {act.text || 'Contact Us'}
-              </a>
-            ) : (
-              <a
-                href={act.href ? '/' + lang + act.href : '/' + lang + '/resources/download-catalog'}
-                class="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-all"
-              >
-                {act.text || 'Download Catalog'}
-              </a>
+          {
+            (page.cta?.actions || []).map((act: any) =>
+              act.variant === 'primary' ? (
+                <a
+                  href={act.href ? '/' + lang + act.href : '/' + lang + '/contact'}
+                  class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
+                >
+                  {act.text || 'Contact Us'}
+                </a>
+              ) : (
+                <a
+                  href={act.href ? '/' + lang + act.href : '/' + lang + '/resources/download-catalog'}
+                  class="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-all"
+                >
+                  {act.text || 'Download Catalog'}
+                </a>
+              )
             )
-          )}
+          }
         </div>
       </div>
     </div>
@@ -1723,7 +1746,10 @@ for (const cat of catalogCategories) {
         <span class="text-sm font-semibold text-[#06b6d4] tracking-[0.15em] uppercase"
           >{t('home.lifestyle.tagline') || 'Lifestyle'}</span
         >
-        <h2 class="mt-4 text-4xl font-bold text-gray-900" set:html={t('home.lifestyle.title') || 'Water Adventure Awaits'}></h2>
+        <h2
+          class="mt-4 text-4xl font-bold text-gray-900"
+          set:html={t('home.lifestyle.title') || 'Water Adventure Awaits'}
+        />
         <p class="mt-4 text-lg text-gray-500">
           {t('home.lifestyle.subtitle') || 'Experience the freedom of premium inflatable water adventure.'}
         </p>
@@ -1904,7 +1930,13 @@ for (const cat of catalogCategories) {
     </div>
     <div class="mt-12">
       <TestimonialCarousel
-        testimonials={((testimonialsData as any)?.testimonials || []).map((item: { name: string; quote: string; rating: number }) => ({ name: item.name, quote: item.quote, rating: item.rating }))}
+        testimonials={((testimonialsData as any)?.testimonials || []).map(
+          (item: { name: string; quote: string; rating: number }) => ({
+            name: item.name,
+            quote: item.quote,
+            rating: item.rating,
+          })
+        )}
       />
     </div>
     <div class="text-center mt-10">

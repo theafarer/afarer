@@ -22,11 +22,68 @@ const metadata = {
 };
 ---
 
-<JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Technology', item: 'https://afarer.com/technology/' }] }} />
-<JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What is drop-stitch core technology?", acceptedAnswer: { "@type": "Answer", text: "Drop-stitch core uses thousands of internal polyester threads connecting the top and bottom layers of an inflatable board, creating a rigid structure at 12-15 PSI that rivals traditional hard boards." } }, { "@type": "Question", name: "What materials does afarer use for inflatable boards?", acceptedAnswer: { "@type": "Answer", text: "Afarer uses multi-layer laminated marine-grade PVC with fusion-welded seams. Hypalon (CSM) rubber is used for tube construction, providing superior UV and chemical resistance compared to standard PVC." } }, { "@type": "Question", name: "How does fusion welding differ from gluing?", acceptedAnswer: { "@type": "Answer", text: "Fusion welding bonds layers at a molecular level using heat and pressure, eliminating the delamination risks associated with adhesive bonding. This results in stronger, longer-lasting seams." } }, { "@type": "Question", name: "What is the air deck floor system?", acceptedAnswer: { "@type": "Answer", text: "The air deck floor is a high-pressure inflatable floor that replaces traditional plywood or aluminum slat floors, reducing setup time, weight, and storage volume while providing adequate rigidity for standing and walking." } }, { "@type": "Question", name: "Is Hypalon better than PVC for inflatable boats?", acceptedAnswer: { "@type": "Answer", text: "Hypalon offers superior UV resistance, chemical resistance, and flexibility in extreme temperatures. However, quality PVC is more economical and sufficient for recreational use. Afarer uses both materials depending on the product line." } }] }} />
+<JsonLd
+  type="BreadcrumbList"
+  data={{
+    itemListElement: [
+      { position: 1, name: 'Home', item: 'https://afarer.com/' },
+      { position: 2, name: 'Technology', item: 'https://afarer.com/technology/' },
+    ],
+  }}
+/>
+<JsonLd
+  type="FAQPage"
+  data={{
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is drop-stitch core technology?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Drop-stitch core uses thousands of internal polyester threads connecting the top and bottom layers of an inflatable board, creating a rigid structure at 12-15 PSI that rivals traditional hard boards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What materials does afarer use for inflatable boards?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Afarer uses multi-layer laminated marine-grade PVC with fusion-welded seams. Hypalon (CSM) rubber is used for tube construction, providing superior UV and chemical resistance compared to standard PVC.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does fusion welding differ from gluing?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Fusion welding bonds layers at a molecular level using heat and pressure, eliminating the delamination risks associated with adhesive bonding. This results in stronger, longer-lasting seams.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the air deck floor system?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The air deck floor is a high-pressure inflatable floor that replaces traditional plywood or aluminum slat floors, reducing setup time, weight, and storage volume while providing adequate rigidity for standing and walking.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is Hypalon better than PVC for inflatable boats?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Hypalon offers superior UV resistance, chemical resistance, and flexibility in extreme temperatures. However, quality PVC is more economical and sufficient for recreational use. Afarer uses both materials depending on the product line.',
+        },
+      },
+    ],
+  }}
+/>
 
 <Layout metadata={metadata}>
-  <meta name="ai-intent" content="inflatable-sup-technology,drop-stitch-construction,sup-board-construction,marine-pvc-materials,sup-manufacturing-technology" />
+  <meta
+    name="ai-intent"
+    content="inflatable-sup-technology,drop-stitch-construction,sup-board-construction,marine-pvc-materials,sup-manufacturing-technology"
+  />
 
   <section class="max-w-4xl mx-auto py-24 px-6" data-ai-block="definition">
     <span class="text-sm font-medium text-primary tracking-wide uppercase">{hero.tagline || 'Technology'}</span>
@@ -110,39 +167,60 @@ const metadata = {
       </div>
       <div class="space-y-4">
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>What is drop-stitch core technology?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
           <div class="px-6 pb-4">
-            <p class="text-gray-600 leading-relaxed">Drop-stitch core uses thousands of internal polyester threads connecting the top and bottom layers of an inflatable board, creating a rigid structure at 12-15 PSI that rivals traditional hard boards.</p>
+            <p class="text-gray-600 leading-relaxed">
+              Drop-stitch core uses thousands of internal polyester threads connecting the top and bottom layers of an
+              inflatable board, creating a rigid structure at 12-15 PSI that rivals traditional hard boards.
+            </p>
           </div>
         </details>
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>What materials does afarer use for inflatable boards?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
           <div class="px-6 pb-4">
-            <p class="text-gray-600 leading-relaxed">Afarer uses multi-layer laminated marine-grade PVC with fusion-welded seams. Hypalon (CSM) rubber is used for tube construction, providing superior UV and chemical resistance compared to standard PVC.</p>
+            <p class="text-gray-600 leading-relaxed">
+              Afarer uses multi-layer laminated marine-grade PVC with fusion-welded seams. Hypalon (CSM) rubber is used
+              for tube construction, providing superior UV and chemical resistance compared to standard PVC.
+            </p>
           </div>
         </details>
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>How does fusion welding differ from gluing?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
           <div class="px-6 pb-4">
-            <p class="text-gray-600 leading-relaxed">Fusion welding bonds layers at a molecular level using heat and pressure, eliminating the delamination risks associated with adhesive bonding. This results in stronger, longer-lasting seams.</p>
+            <p class="text-gray-600 leading-relaxed">
+              Fusion welding bonds layers at a molecular level using heat and pressure, eliminating the delamination
+              risks associated with adhesive bonding. This results in stronger, longer-lasting seams.
+            </p>
           </div>
         </details>
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>What is the air deck floor system?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
           <div class="px-6 pb-4">
-            <p class="text-gray-600 leading-relaxed">The air deck floor is a high-pressure inflatable floor that replaces traditional plywood or aluminum slat floors, reducing setup time, weight, and storage volume while providing adequate rigidity for standing and walking.</p>
+            <p class="text-gray-600 leading-relaxed">
+              The air deck floor is a high-pressure inflatable floor that replaces traditional plywood or aluminum slat
+              floors, reducing setup time, weight, and storage volume while providing adequate rigidity for standing and
+              walking.
+            </p>
           </div>
         </details>
       </div>

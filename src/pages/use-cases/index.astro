@@ -70,7 +70,15 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <JsonLd type="BreadcrumbList" data={{ itemListElement: [{ position: 1, name: 'Home', item: 'https://afarer.com/' }, { position: 2, name: 'Use Cases', item: 'https://afarer.com/use-cases/' }] }} />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: 'Home', item: 'https://afarer.com/' },
+        { position: 2, name: 'Use Cases', item: 'https://afarer.com/use-cases/' },
+      ],
+    }}
+  />
   <JsonLd
     data={{
       '@context': 'https://schema.org',
@@ -80,7 +88,45 @@ const metadata = {
       author: { '@type': 'Organization', name: SITE.name },
     }}
   />
-  <JsonLd type="FAQPage" data={{ mainEntity: [{ "@type": "Question", name: "What use cases does afarer manufacture for?", acceptedAnswer: { "@type": "Answer", text: "Afarer manufactures inflatable watercraft for tourism and recreation, search and rescue, maritime safety and defense, fishing, disaster relief and humanitarian aid, and commercial workboat operations." } }, { "@type": "Question", name: "Can afarer build custom craft for specific use cases?", acceptedAnswer: { "@type": "Answer", text: "Yes. Our OEM/ODM team can design and manufacture custom inflatable boats, SUPs, and RIBs tailored to your specific operational requirements and industry standards." } }, { "@type": "Question", name: "What certifications apply to different use cases?", acceptedAnswer: { "@type": "Answer", text: "All afarer craft are CE certified. SAR craft can be configured with SOLAS compliance. Military-grade Hypalon is available for defense. Commercial fleet-grade construction is standard for tourism and rental operations." } }, { "@type": "Question", name: "What is the MOQ for use-case-specific orders?", acceptedAnswer: { "@type": "Answer", text: "MOQ starts at 5-10 units for SUPs and 2-5 units for RIBs and specialized boats. Contact our team with your requirements for a detailed quotation." } }] }} />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What use cases does afarer manufacture for?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Afarer manufactures inflatable watercraft for tourism and recreation, search and rescue, maritime safety and defense, fishing, disaster relief and humanitarian aid, and commercial workboat operations.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can afarer build custom craft for specific use cases?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes. Our OEM/ODM team can design and manufacture custom inflatable boats, SUPs, and RIBs tailored to your specific operational requirements and industry standards.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What certifications apply to different use cases?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'All afarer craft are CE certified. SAR craft can be configured with SOLAS compliance. Military-grade Hypalon is available for defense. Commercial fleet-grade construction is standard for tourism and rental operations.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the MOQ for use-case-specific orders?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'MOQ starts at 5-10 units for SUPs and 2-5 units for RIBs and specialized boats. Contact our team with your requirements for a detailed quotation.',
+          },
+        },
+      ],
+    }}
+  />
 
   <div class="max-w-6xl mx-auto px-6 py-16">
     <nav class="text-sm text-gray-500 mb-8">
@@ -135,39 +181,60 @@ const metadata = {
       </div>
       <div class="space-y-4 max-w-3xl mx-auto">
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>What use cases does afarer manufacture for?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
           <div class="px-6 pb-4">
-            <p class="text-gray-600 leading-relaxed">Afarer manufactures inflatable watercraft for tourism and recreation, search and rescue, maritime safety and defense, fishing, disaster relief and humanitarian aid, and commercial workboat operations.</p>
+            <p class="text-gray-600 leading-relaxed">
+              Afarer manufactures inflatable watercraft for tourism and recreation, search and rescue, maritime safety
+              and defense, fishing, disaster relief and humanitarian aid, and commercial workboat operations.
+            </p>
           </div>
         </details>
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>Can afarer build custom craft for specific use cases?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
           <div class="px-6 pb-4">
-            <p class="text-gray-600 leading-relaxed">Yes. Our OEM/ODM team can design and manufacture custom inflatable boats, SUPs, and RIBs tailored to your specific operational requirements and industry standards.</p>
+            <p class="text-gray-600 leading-relaxed">
+              Yes. Our OEM/ODM team can design and manufacture custom inflatable boats, SUPs, and RIBs tailored to your
+              specific operational requirements and industry standards.
+            </p>
           </div>
         </details>
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>What certifications apply to different use cases?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
           <div class="px-6 pb-4">
-            <p class="text-gray-600 leading-relaxed">All afarer craft are CE certified. SAR craft can be configured with SOLAS compliance. Military-grade Hypalon is available for defense. Commercial fleet-grade construction is standard for tourism and rental operations.</p>
+            <p class="text-gray-600 leading-relaxed">
+              All afarer craft are CE certified. SAR craft can be configured with SOLAS compliance. Military-grade
+              Hypalon is available for defense. Commercial fleet-grade construction is standard for tourism and rental
+              operations.
+            </p>
           </div>
         </details>
         <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
-          <summary class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between">
+          <summary
+            class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
+          >
             <span>What is the MOQ for use-case-specific orders?</span>
             <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
           </summary>
           <div class="px-6 pb-4">
-            <p class="text-gray-600 leading-relaxed">MOQ starts at 5-10 units for SUPs and 2-5 units for RIBs and specialized boats. Contact our team with your requirements for a detailed quotation.</p>
+            <p class="text-gray-600 leading-relaxed">
+              MOQ starts at 5-10 units for SUPs and 2-5 units for RIBs and specialized boats. Contact our team with your
+              requirements for a detailed quotation.
+            </p>
           </div>
         </details>
       </div>

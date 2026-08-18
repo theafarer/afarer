@@ -23,7 +23,7 @@ intelligence_cards:
     desc: 12,000 m² facility producing 15,000+ SUPs/yr across SUP board and safety equipment lines. 200+ workers, 2 shifts.
     metrics:
       - label: 最小起訂量
-        value: "SUP: 5–10"
+        value: 'SUP: 5–10'
       - label: 交期
         value: 30–45 days
     link: /factory/capacity
@@ -31,7 +31,7 @@ intelligence_cards:
   - title: 質量實驗室與檢測
     icon: Q
     icon_bg: 綠色
-    desc: "Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat."
+    desc: 'Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat.'
     metrics:
       - label: 實驗室設備
         value: 拉伸測試儀、溫控箱、洩漏檢測槽
@@ -95,13 +95,13 @@ qc_section:
   title: 測試與質量保證流程
   subtitle: Every boat undergoes mandatory testing before shipping. Our quality lab operates independently from production and reports directly to management.
   steps:
-    - step: "1"
+    - step: '1'
       title: 原材料檢驗
       desc: PVC、Hypalon和滴塑面料在進入生產前經過拉伸測試、撕裂傳播和抗紫外線驗證。
-    - step: "2"
+    - step: '2'
       title: 48小時氣密性測試
       desc: 每個管室充氣至額定壓力的125%並保持48小時。壓力下降超過5%將自動觸發拒收和接縫重新檢查。
-    - step: "3"
+    - step: '3'
       title: 負載與平衡測試
       desc: Completed boats are loaded to maximum rated capacity and tested for stability, freeboard, and handling. Each vessel is water-tested before final inspection.
 oem_section:
@@ -130,43 +130,43 @@ faq_section:
       a: 標準交貨期為確認PO和定金後30-45天。定製模具開發增加15-20天。我們為緊急訂單和季節性高峰期提供加急生產。
     - q: 你們能按FOB青島或CIF運送到我們的港口嗎？
       a: 是的。我們按FOB青島、CIF全球主要港口和DDP為合格合作伙伴發貨。我們的物流團隊管理集裝箱預訂、出口文件和清關。我們發貨到全球50多個國家。
-b2b_moq: "Standard MOQ: 5–10 units per model. Trial orders welcome for new partnerships."
+b2b_moq: 'Standard MOQ: 5–10 units per model. Trial orders welcome for new partnerships.'
 production_flow:
   tagline: 生產流程
   title: 精益求精的製造工藝
   subtitle: 標準化生產流程，確保每件產品的一致性和質量。
   stages:
-    - stage: "01"
+    - stage: '01'
       title: 材料接收與來料 QC
       description: All incoming materials are logged by batch/lot number in our ERP system. PVC fabric rolls, drop-stitch cores, valves, adhesives, and hardware are quarantined until QC sign-off.
       qc_check: Tensile strength (ASTM D751), tear resistance (ISO 4674), thickness gauge, adhesive viscosity, visual defect scan
       qc_threshold: 100% of batches tested. Reject if tensile < 90% of spec, tear < spec min, or any visual defect
       responsibility: 來料 QC 團隊（3 人）
-    - stage: "02"
+    - stage: '02'
       title: CNC 切割與材料準備
       description: Computer-optimized nesting lays out panels on PVC stock to minimize waste. Automatic CNC cutting machines maintain 0.1 mm positional accuracy.
       qc_check: Dimensional check against CAD DXF files, edge quality inspection, panel count verification
       qc_threshold: Every 20th panel measured. Tolerance ±0.5 mm. Reject batch if >2% out of tolerance
       responsibility: 切割車間主管
-    - stage: "03"
+    - stage: '03'
       title: 焊接與落針式粘合
       description: Drop-stitch cores are bonded to outer PVC laminates using heat lamination. Tube chambers are RF-welded or hot-air welded. Rail bands are triple-layer fusion bonded.
       qc_check: Peel test every 50 units (ASTM D751), weld width measurement, hot-air temperature log review, visual seam inspection under backlight
       qc_threshold: 剝離強度最低 8 N/cm。焊縫寬度公差 ±1 mm。任何可見溝槽 = 拒收
       responsibility: 焊接 QC（每班 2 人）
-    - stage: "04"
+    - stage: '04'
       title: 組裝與裝配
-      description: "Boats move to final assembly where all components are mated: hull + tubes, valves installed, D-rings, handles, fin boxes, and carry bag fitting. Each unit follows a 100-point assembly checklist."
+      description: 'Boats move to final assembly where all components are mated: hull + tubes, valves installed, D-rings, handles, fin boxes, and carry bag fitting. Each unit follows a 100-point assembly checklist.'
       qc_check: 100-point checklist sign-off per unit, valve function test (10 open/close cycles), hardware torque verification, visual inspection
-      qc_threshold: "Zero-defect policy on safety-critical items (valves, D-rings, handles). Minor cosmetic: AQL 2.5 (ISO 2859)"
+      qc_threshold: 'Zero-defect policy on safety-critical items (valves, D-rings, handles). Minor cosmetic: AQL 2.5 (ISO 2859)'
       responsibility: 組裝團隊主管 + 產線 QC
-    - stage: "05"
+    - stage: '05'
       title: 壓力測試與質量保持
       description: Every chamber is inflated to 1.25× rated pressure (typically 20–25 PSI) and held for 24–48 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.
       qc_check: 24h pressure hold log, sensor calibration verified daily, temperature-compensated pressure reading, seam re-test after repair
       qc_threshold: Max 5% pressure drop over 24h at stable temp. Any chamber exceeding this = 100% re-test of entire production batch
       responsibility: 質量實驗室（獨立於生產，向管理層報告）
-    - stage: "06"
+    - stage: '06'
       title: 最終檢驗與包裝
       description: Final visual and functional inspection. Surface defects, color consistency, label/BIN verification, packaging integrity, and accessory completeness. Units are vacuum-packed, boxed, and palletized for container loading.
       qc_check: Full visual inspection, accessory checklist per SKU, packaging drop test (1 m, random sample), label/bar code scan verification
