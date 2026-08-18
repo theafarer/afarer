@@ -32,6 +32,55 @@ npm run check            # Astro check + ESLint + Prettier + i18n check
 
 ---
 
+## 0. How to Understand This Codebase Fast (AI & New Developers)
+
+This section is the fastest path to a correct mental model of the whole site. Read it top to bottom before touching any code.
+
+### 0.1 Fastest Reading Path (in order)
+
+| # | File | What you learn |
+|---|------|----------------|
+| 1 | `README.md` §1 | Request flow: CDN → Pages routes → 4 Workers → R2 |
+| 2 | `TECH.md` §2 | Build pipeline: how 7,564 pages are generated from YAML/TS sources |
+| 3 | `astro.config.ts` | `output: 'static'`, integrations, per-locale config loading (`src/config.{locale}.yaml`) |
+| 4 | `src/i18n/routing.ts` + `src/i18n/config.ts` | Locale/route model: 22 langs, `LOCALIZED_ROUTES`, `localizeHref()` |
+| 5 | `src/data/pages/*.yaml` | Where ALL page content lives (EN root + per-locale dirs) |
+| 6 | `src/content.config.ts` | Content Collections (CMS-editable: news, products, homepage, ...) |
+| 7 | `workers/*/index.ts` | The entire API surface (contact/chat/admin/automation) |
+| 8 | `functions/_middleware.ts` | Edge behavior: locale redirect, R2 asset redirect, security headers |
+| 9 | `.github/workflows/actions.yaml` | CI/CD: every generation step + deploy order |
+
+### 0.2 Architecture → File Map (every concern, every file)
+
+| Concern | Where it lives | Generated artifacts |
+|---------|----------------|---------------------|
+| Page routes | `src/pages/` (EN) + `src/pages/[lang]/` (localized) | static HTML in `dist/` |
+| Page content (per-locale) | `src/data/pages/*.yaml` (70 EN files) + `{lang}/` dirs (21 locales) | `src/i18n/generated/pages/*.ts` (115 modules, by `_gen-pages.cjs`) |
+| UI strings (header/footer/widgets) | `src/data/site/i18n-config.json` (git source of truth) | `public/data/i18n-config.json` + `src/i18n/generated/ui-all.ts` (by `_gen-uiall.cjs`) |
+| SEO meta (title/desc/keywords) | `src/data/pages/**/meta` (YAML) | `src/i18n/generated/seo-meta.ts` (572 entries / 78 routes, by `_gen-seo-meta.cjs`) → consumed by `src/components/common/Metadata.astro` |
+| Products | `src/data/products.ts` (52 SSOT) + `product-texts.ts` + `src/data/product-texts/{locale}/` + `src/content/products/*.mdx` | JSON-LD, `/llms/products/*` |
+| Blog / News | `src/content/news/*.md` (collection `post`) | `/news/*`, RSS |
+| Navigation | `src/data/site/navigation.yaml` + `navigation.{locale}.yaml` | Header/Footer menus |
+| Site config | `src/config.yaml` + `src/config.{locale}.yaml` (virtual module `astrowind:config`) | — |
+| Content Collections (homepage/about/contact/global) | `src/content/*/index.json` + schema in `src/content.config.ts` | CMS-editable blocks |
+| API / Workers | `workers/{contact,ai,admin,automation}-worker/` (4, each with `wrangler.toml`) | deployed separately |
+| Edge middleware | `functions/_middleware.ts` | locale + R2 redirect |
+| SEO analysis libraries | `src/lib/seo/*` (health-score, brand-os, rule-engine, task-list, ...) | internal dashboards |
+| GEO engines | `src/lib/geo-v7/*`, `src/lib/geo-v5/*`, `scripts/build-geo-v4.ts` | `llms.txt`, `entity.json`, GEO content |
+| Offline analysis engine | `src/engine/` (crawler/scorer/report — **not wired into the build**) | standalone only |
+| Internal dashboards | `src/pages/internal/seo/*` (10 pages) | `/internal/seo/*` |
+| Site search | `src/pages/search-index.json.ts` (static JSON) + `src/pages/search.astro` | `/search-index.json` |
+| Build scripts | `scripts/*` — chain defined in `package.json` `"build"` | see §6.2 |
+| CI/CD | `.github/workflows/actions.yaml` | push to `main` |
+| Docs | `README.md` (overview), `TECH.md` (deep internals), `AGENTS.md` (agent rules), `docs/b2b-strategy/` (information architecture) | — |
+| Agent skills | `.agents/skills/*.md` (add-page, add-component, add-blog-post, styling) | — |
+
+### 0.3 Generated Files (gitignored — never commit, never hand-edit)
+
+`src/i18n/generated/` (`pages/`, `ui/`, `ui-all.ts`, `seo-meta.ts`, `data.ts`, `page-content.json`, `i18n-config.json`) and `public/data/` are **build artifacts**. `npm run build` regenerates all of them; CI runs the identical steps. If you change YAML/TS sources, always run the build chain (or `npm run build`) — never edit the generated files directly.
+
+---
+
 ## 1. Architecture Overview
 
 ```
@@ -100,82 +149,30 @@ All locale URLs use **path-based** format: `afarer.com/fr/products`, `afarer.com
 /
 ├── src/
 │ ├── pages/
-│ │ ├── [lang]/                    # Localized pages (22 languages)
+│ │ ├── [lang]/                    # Localized pages (22 languages, path-based /{lang}/...)
 │ │ │ ├── index.astro            # Homepage (SSG)
-│ │ │ ├── about.astro            # About page
-│ │ │ ├── about/afarer.astro     # afarer entity page
-│ │ │ ├── afarer-story.astro     # Brand story
-│ │ │ ├── brand/                 # Brand hub
-│ │ │ │ ├── index.astro         # Brand index
-│ │ │ │ ├── afarer.astro        # afarer entity page
-│ │ │ │ └── team.astro          # Team entity (founder, leadership, 6 profiles)
-│ │ │ ├── brand-story.astro      # Brand story
-│ │ │ ├── brand-marine-expertise.astro # Marine engineering expertise
-│ │ │ ├── brand-global-presence.astro  # Global presence
-│ │ │ ├── brand-why-afarer.astro    # Why afarer
-│ │ │ ├── certifications.astro   # CE, ISO 9001, UKCA, BSCI, REACH, safety
-│ │ │ ├── partners.astro         # Partner programs (distributor, dealer, OEM, etc.)
-│ │ │ ├── cases/                 # Case studies hub
-│ │ │ ├── evidence/              # Evidence & case-study detail
-│ │ │ │ ├── index.astro         # Evidence hub
-│ │ │ │ └── case-studies/       # [slug].astro detail pages
-│ │ │ ├── contact.astro          # Contact
-│ │ │ ├── custom/                # Custom Lab
-│ │ │ ├── disclaimer.astro       # Medical disclaimer (legal)
-│ │ │ ├── factory/               # Factory, process, equipment
-│ │ │ │ ├── index.astro         # Factory overview
-│ │ │ │ ├── capacity.astro      # Production capacity
-│ │ │ │ ├── process.astro       # Production process
-│ │ │ │ ├── quality-lab.astro   # Quality lab & testing
-│ │ │ │ ├── equipment.astro     # Equipment & machinery
-│ │ │ │ └── oem-capability.astro # OEM/ODM manufacturing
-│ │ │ ├── gallery/               # Gallery
-│ │ │ ├── guides/                # Buying guides
-│ │ │ │ ├── index.astro         # Guides listing
-│ │ │ │ └── [slug].astro        # Guide detail
-│ │ │ ├── journal/               # Journal
-│ │ │ ├── learn/                 # Learn center (index + [slug])
-│ │ │ ├── lifestyle/             # Lifestyle
-│ │ │ ├── media/                 # Media Center
-│ │ │ ├── news/                  # News (index, [slug], category/tag pagination)
-│ │ │ ├── privacy.astro          # Privacy policy (legal)
-│ │ │ ├── quality.astro          # Quality
-│ │ │ ├── request-quotation.astro # RFQ page (with B2B fields: application, country, material, engine, uploads)
-│ │ │ ├── research/              # Research library (index + [slug] guides)
-│ │ │ ├── resources/             # Download center & buyer guides
-│ │ │ │ ├── index.astro
-│ │ │ │ └── download-catalog.astro
-│ │ │ ├── safety.astro           # Safety
-│ │ │ ├── solutions/             # Industry solutions
-│ │ │ │ ├── index.astro         # Solutions hub
-│ │ │ │ ├── [slug].astro        # Solution detail
-│ │ │ │ ├── by-industry.astro   # By industry
-│ │ │ │ ├── by-use-case.astro   # By use case
-│ │ │ │ ├── build-your-own-brand.astro
-│ │ │ │ ├── distributors.astro
-│ │ │ │ ├── paddle-clubs.astro
-│ │ │ │ ├── rental-operators.astro
-│ │ │ │ ├── resorts-hotels.astro
-│ │ │ │ └── retail-partners.astro
-│ │ │ ├── technology.astro       # Technology
-│ │ │ ├── terms.astro            # Terms and conditions (legal)
-│ │ │ ├── academy/               # Academy index
-│ │ │ ├── products/              # Product catalog & detail
-│ │ │ ├── use-cases/             # Use-case pages
-│ │ │ ├── compare/               # Product comparisons
-│ │ │ ├── oem-odm-manufacturer/  # OEM/ODM manufacturer hub
-│ │ │ ├── oem-odm.astro          # OEM/ODM page
-│ │ │ ├── oem-process.astro      # OEM/ODM Process
-│ │ │ ├── engineering-team.astro # Engineering & R&D Team
-│ │ │ ├── randdcenter/           # R&D Center
-│ │ │ ├── trust.astro            # Trust
+│ │ │ ├── about/ brand/ cases/ compare/ custom/ evidence/ factory/
+│ │ │ ├── gallery/ guides/ journal/ learn/ lifestyle/ media/ news/ products/
+│ │ │ ├── research/ resources/ solutions/ use-cases/ randdcenter/ knowledge-graph/
+│ │ │ ├── ai-answer-center/ buyer-center/ marine-industry/ oem-odm-manufacturer/
+│ │ │ ├── whitepaper/ academy/ v2/
+│ │ │ ├── oem-paddle.astro       # SEO landing page (SeoLanding widget)
+│ │ │ ├── bateau-gonflable-fabricant.astro  # FR SEO landing page
+│ │ │ ├── fabricant-sup-gonflable.astro     # FR SEO landing page
+│ │ │ ├── fournisseur-nautique.astro        # FR SEO landing page
+│ │ │ ├── oem-odm.astro / oem-process.astro / engineering-team.astro
+│ │ │ ├── request-quotation.astro / partners.astro / b2b-solutions-matrix.astro
+│ │ │ ├── trust.astro / certifications.astro / warranty.astro / safety.astro
 │ │ │ ├── sitemap.xml.ts         # Per-locale sitemap
 │ │ │ └── llms.txt.ts            # Per-locale AI knowledge graph
 │ │ ├── keystatic/                # Admin panel (CMS: pages, posts, products, ...)
 │ │ ├── login.astro               # Admin login
 │ │ ├── _login/                   # Login helpers (change-password)
 │ │ ├── admin.astro               # Admin shell
-│ │ ├── internal/                 # GEO/SEO dashboards
+│ │ ├── internal/seo/             # SEO/GEO dashboards (10 pages)
+│ │ │ ├── index.astro            # v4.0 Brand OS overview
+│ │ │ ├── brand-os.astro / brand.astro / social.astro / rules.astro
+│ │ │ ├── tasks.astro / queries.astro / workflow.astro / geo.astro / pages.astro
 │ │ ├── news/                     # Non-localized blog (all prerender=true)
 │ │ ├── llms/                     # AI-readable markdown
 │ │ │ ├── products/[slug].ts     # Product markdown
@@ -187,63 +184,64 @@ All locale URLs use **path-based** format: `afarer.com/fr/products`, `afarer.com
 │ │ ├── llms-full.txt.ts          # Root llms-full.txt (prerender)
 │ │ ├── sitemap.xml.ts            # Root sitemap (prerender)
 │ │ ├── rss.xml.ts                # RSS feed (prerender)
-│ │ ├── search-index.json.ts      # Client-side search index (prerender)
+│ │ ├── search-index.json.ts      # Client-side search index (static, prerendered)
 │ │ ├── [category].astro          # Product category pages
 │ │ ├── search.astro              # Client-side search
 │ │ ├── faq.astro                 # FAQ
 │ │ └── ...                       # 404, legal, B2B pages
 │ ├── components/
+│ │ ├── common/                 # Metadata (consumes seo-meta.ts), Image, JsonLd, Analytics
+│ │ ├── widgets/                # Hero, Features, FAQs, CTA, Header, Footer, Contact,
+│ │ │                          # SeoLanding (SEO landing renderer), ProductGrid, ...
+│ │ └── ui/ blocks/ seo/ knowledge-graph/ admin/ ai/ blog/
 │ ├── layouts/
-│ ├── lib/
+│ ├── lib/                      # Shared logic
+│ │ ├── seo/                   # health-score, brand-os, rule-engine, task-list,
+│ │ │                         # link-optimizer, ctr-analysis, gsc-extractor, ...
+│ │ ├── geo-v7/ geo-v5/ geo/ geo-seo/   # GEO scoring/generation engines
+│ │ ├── ai-gateway.ts / rag.ts / vector.ts / ai-quota.ts
+│ │ ├── auth.ts / github.ts / token-store.ts / i18n-admin.ts / link-refactor.ts
+│ │ └── contact-crypto.ts / rate-limit.ts (legacy/unused)
+│ ├── engine/                   # Standalone SEO analysis engine (not wired into build)
 │ ├── i18n/
+│ │ ├── generated/              # ⚠ BUILD ARTIFACTS (gitignored): pages/, ui/, ui-all.ts,
+│ │ │                          # seo-meta.ts, data.ts, page-content.json, i18n-config.json
+│ │ ├── routing.ts              # LOCALIZED_ROUTES + localizeHref() + entityForHref()
+│ │ └── config.ts / utils.ts / page-content.ts / data-registry.ts
 │ ├── data/
-│ │ ├── products.ts               # Product data SSOT (52 products)
-│ │ ├── product-texts.ts          # Translated product descriptions (22 langs)
-│ │ ├── geo/                      # GEO source data
-│ │ │ └── entity.json            # Schema.org Organization entity
-│ │ ├── pages/                    # Page YAML content (root = EN, subdir = per locale)
-│ │ │ ├── home.yaml
-│ │ │ ├── about.yaml
-│ │ │ ├── zh/                    # Per-locale page content
-│ │ │ ├── fr/
-│ │ │ └── ...
-│ │ └── ...
-│ ├── content/
-│ ├── middleware.ts                 # Astro locale middleware
-│ └── config.yaml                  # Site configuration
+│ │ ├── products.ts             # Product data SSOT (52 products)
+│ │ ├── product-texts.ts        # Translated product descriptions (22 langs)
+│ │ ├── product-texts/{locale}/ # Admin-editable product translation YAML
+│ │ ├── geo/                    # GEO source data (entity.json)
+│ │ ├── pages/                  # Page content YAML: 70 EN files + 21 locale dirs
+│ │ ├── site/                   # navigation*.yaml, i18n-config.json (UI strings SSOT), ...
+│ │ └── seo/sample-data.ts      # Demo GSC/query data for internal dashboards
+│ ├── content/                  # Content Collections (CMS-editable)
+│ │ ├── news/*.md / products/*.mdx
+│ │ └── homepage|about|contact|navigation|global/index.json
+│ ├── content.config.ts         # Astro v6 Content Layer: 10 collections + schemas
+│ ├── middleware.ts             # Astro locale middleware (sets locals.lang)
+│ └── config.yaml + config.{locale}.yaml   # Site configuration (astrowind:config)
 ├── public/
 │ ├── llms.txt                     # AI brand summary (22-language knowledge graph)
 │ ├── llms-full.txt                # Full AI knowledge base (auto-generated, 22 langs)
 │ ├── cs/llms.txt                  # Per-locale llms.txt
 │ ├── da/llms.txt
 │ ├── ...
-│ └── .well-known/
-│      └── entity.json             # Schema.org Organization (AI entity)
+│ ├── .well-known/
+│ │      └── entity.json             # Schema.org Organization (AI entity)
+│ └── data/                         # ⚠ generated (gitignored): i18n-config.json, page-content.json
 ├── functions/
 │ └── _middleware.ts                # Cloudflare Pages Functions middleware (locale + R2 redirect)
-├── workers/
-│ ├── contact-worker/              # Contact form API
-│ │ ├── index.ts
-│ │ └── wrangler.toml
-│ ├── ai-worker/                   # AI chat + embedding + vector search
-│ │ ├── index.ts
-│ │ └── wrangler.toml
-│ ├── admin-worker/                # Admin auth + GitHub CRUD
-│ │ ├── index.ts
-│ │ └── wrangler.toml
-│ └── automation-worker/           # Cron + GEO content generation
-│    ├── src/
-│    │ ├── index.ts
-│    │ ├── cron.ts
-│    │ ├── geo-generator.ts
-│    │ ├── gsc-fetch.ts
-│    │ ├── rule-engine.ts
-│    │ ├── task-export.ts
-│    │ └── geo-score.ts
-│    └── wrangler.toml
-├── scripts/                        # Build & utility scripts (40+ files)
+├── workers/                        # 4 standalone Workers (each: index.ts + wrangler.toml)
+│ ├── contact-worker/               # Contact form API
+│ ├── ai-worker/                    # AI chat + embedding + vector search
+│ ├── admin-worker/                 # Admin auth + GitHub CRUD
+│ └── automation-worker/            # Cron + GEO content generation
+├── scripts/                        # Build & utility scripts (50+; chain in package.json)
 ├── .github/workflows/actions.yaml  # CI/CD pipeline
-├── wrangler.toml                   # Root config (R2 binding only)
+├── keystatic.config.ts             # Keystatic CMS config
+├── wrangler.toml                   # Root Pages config (pages_build_output_dir = dist)
 └── astro.config.ts                 # Astro build config
 ```
 
@@ -415,10 +413,23 @@ afarer-data/
 | Image SEO | `fetchpriority=high` on LCP images, alt-text on all images |
 | Sales AI | Chat agent upgraded with sales-focused prompts, conversation history, product recommendation funnel |
 | AI Semantic Analysis | GEO v5: 26-node ontology scoring (100/100 health), content gap detection, topic clustering |
-| Internal dashboards | `/internal/seo/*` (pages, rules, queries, tasks, etc.) |
+| Internal dashboards | `/internal/seo/*` (10 pages: index, brand-os, brand, social, rules, tasks, queries, workflow, geo, pages) |
 | Automation | Daily cron: GSC fetch → Rule engine → GEO generator → Score report |
 | Case Studies | 6 real case studies with outcome metrics, citation JSON-LD, CollectionPage + Dataset schemas |
 | Evidence | Product test results with Dataset schema (ISO 2859, pressure hold, AQL 2.5) |
+
+### 7.4 SEO Landing Pages (per-locale, YAML-driven)
+
+Targeted B2B landing pages that rank for commercial keywords in a specific language (started with French: `bateau-gonflable-fabricant`, `fabricant-sup-gonflable`, `fournisseur-nautique`, `oem-paddle`; English `oem-paddle`):
+
+- **Template:** one `.astro` per page under `src/pages/[lang]/` (e.g. `oem-paddle.astro`), rendering the shared `SeoLanding.astro` widget (Hero → Stats → Features → FAQs → CTA + JSON-LD + breadcrumbs)
+- **Content:** per-locale YAML in `src/data/pages/*.yaml` (key = page name, e.g. `oem-paddle`) — `meta` (title/description/keywords), `hero`, `stats`, `features`, `faqs`, `cta`, `geo`
+- **SEO meta:** the `meta` block feeds `scripts/_gen-seo-meta.cjs` → `src/i18n/generated/seo-meta.ts` (572 entries / 78 routes) → `src/components/common/Metadata.astro` at build time
+- **To add a new one:** ① add page YAML ② add `.astro` route using `SeoLanding` (copy `oem-paddle.astro`) ③ run build (meta is generated automatically)
+
+### 7.5 Site Search (static, no Worker)
+
+Search is fully client-side: `src/pages/search-index.json.ts` prerenders `/search-index.json` at build time from live collections; `search.astro` / `[lang]/search.astro` fetch and filter it. **No `/api/search` Worker exists** — the old seo-worker that served one was deleted.
 
 ---
 
@@ -442,8 +453,8 @@ Each page has a `.astro` template under `src/pages/[lang]/` that:
 Page content → YAML data → Auto-generated `src/i18n/generated/pages/*.ts` → Widget-rendered static HTML.
 
 ### 8.3 UI Translation Pipeline
-1. **Master file:** `public/data/i18n-config.json` —All UI strings for all 22 languages
-2. **Generation:** `scripts/_gen-uiall.cjs` reads the master file and generates per-locale TS files
+1. **Source of truth (git):** `src/data/site/i18n-config.json` —All UI strings for all 22 languages
+2. **Generation:** `scripts/generate-data-json.mjs` copies it to `public/data/i18n-config.json` (gitignored build artifact); `scripts/_gen-uiall.cjs` reads that and generates per-locale TS files
 3. **Runtime:** `src/i18n/config.ts` imports generated translations via `getUiForLang(lang)`
 4. **Usage:** Components use `t('nav.products', currentLocale)` or `<span set:html={t(key, locale)}>`
 
@@ -548,6 +559,27 @@ Worker data is loaded at runtime from `DATA_BUCKET` —no JSON is bundled into W
 - **Pages Functions middleware:** Minimal overhead (locale detection + redirect logic)
 - **Idempotent GEO generation:** `llms-full.txt` is rebuilt from scratch each build —no duplicate accumulation
 - **Worker size limit:** All 4 Workers must stay under 3 MB; use R2 for data, avoid bundling large dependencies
+
+---
+
+## 14. Content Collections (CMS-editable content)
+
+Defined in `src/content.config.ts` using the **Astro v6 Content Layer API** (`glob()` / `file()` loaders) — 10 collections:
+
+| Collection | Source | Schema highlights |
+|-----------|--------|-------------------|
+| `post` | `src/content/news/*.md|mdx` | News/blog articles (`title`, `category`, `tags`, `metadata`, `entityType`, `entityRelations`) |
+| `product` | `src/content/products/*.mdx` | Product MDX (specs, gallery, price, category `accessory|service|sup`) |
+| `homepage` | `src/content/homepage/index.json` | Per-locale hero/carousel/features/steps/faqs/cta |
+| `about` | `src/content/about/index.json` | Per-locale sections (stats, milestones, locations) |
+| `contact` | `src/content/contact/index.json` | Contact form config + map + other ways |
+| `news` | `src/content/news/index.json` | News hub hero per locale |
+| `navigation` | `src/content/navigation/index.json` | Header/footer links per locale |
+| `global` | `src/content/global/index.json` | Site name/tagline/copyright per locale |
+| `technology` | `src/data/technology/*.md|mdx` | Technology articles |
+| `case-use` | `src/data/case-use/*.md|mdx` | Use-case articles |
+
+Per-locale schema helper `createLocaleSchema()` wraps every section in all 22 locales. JSON index files (homepage/about/contact/navigation/global) are **edited via the Keystatic admin** (`/keystatic/*`) and committed to GitHub through the admin-worker API. `entityType` + `entityRelations` on every record feed the knowledge-graph layer.
 
 ---
 

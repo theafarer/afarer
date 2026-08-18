@@ -1,6 +1,6 @@
 ﻿# afarer — Technical Documentation
 
-> Last updated: 2026-08-03
+> Last updated: 2026-08-18
 > Project path: `E:\github\afarer`
 > Production: https://afarer.com (Cloudflare Pages)
 > Build: `npm run build` → `dist/` (7,564 pages)
@@ -43,12 +43,14 @@ Priority for edge detection: Cookie (`x-user-locale`) → `cf-ipcountry` → `Ac
     (idempotent: 52 products × 22 languages + 1,034 pages)
  4. scripts/_gen-uiall.cjs             → Generate ui-all.ts (merge 22 lang translations)
  5. scripts/_gen-pages.cjs             → Generate pages/*.ts modules from JSON (109 pages)
- 6. scripts/_gen-seo-meta.cjs          → Generate SEO meta modules
- 7. scripts/gen-icon-svgs.cjs          → Generate icon SVGs
- 8. astro build                        → Static site to dist/ (7,564 pages)
- 9. scripts/clean-public-assets.mjs    → Clean temp assets
-10. (optional) scripts/fast-upload-r2.mjs → Upload to R2 (assets + data)
+6. scripts/_gen-seo-meta.cjs          → Generate seo-meta.ts (572 entries / 78 routes, from page YAML `meta` blocks; consumed by `src/components/common/Metadata.astro`)
+  7. scripts/gen-icon-svgs.cjs          → Generate icon SVGs
+  8. astro build                        → Static site to dist/ (7,564 pages)
+  9. scripts/clean-public-assets.mjs    → Clean temp assets
+ 10. (optional) scripts/fast-upload-r2.mjs → Upload to R2 (assets + data)
 ```
+
+> ⚠ Steps 2–7 write gitignored artifacts into `src/i18n/generated/` and `public/data/`. Never edit them by hand; always regenerate via the build chain. CI runs the same steps.
 
 ### 2.2 CI/CD (GitHub Actions)
 
@@ -73,10 +75,16 @@ checkout → npm install
 |---------|---------|
 | `npm run dev` | Astro dev server |
 | `npm run build` | Full production build (incl. GEO files) |
-| `npm run build:geo` | Generate GEO files only |
+| `npm run build:geo` | Generate GEO files only (`generate-geo-files.ts`) |
+| `npm run build:r2` | Upload assets + data to R2 |
 | `npm run deploy` | Build + Pages deploy |
 | `npm run deploy:all` | Build + Pages + 4 Workers deploy |
+| `npm run deploy:pages` | Pages deploy only (no build) |
+| `npm run deploy:worker-{contact,ai,admin,automation}` | Deploy a single Worker |
+| `npm run deploy:workers` | Deploy all 4 Workers |
 | `npm run deploy:r2` | Upload assets to R2 |
+| `npm run geo:build` | Run `scripts/geo-build.mjs` (GEO content + llms.txt) |
+| `npm run seo:pipeline` | Offline SEO task pipeline → `output/` (demo GSC data) |
 | `npm run check` | Astro check + eslint + prettier + i18n |
 
 ---
@@ -314,19 +322,90 @@ When renaming URLs/names across the site:
 
 ---
 
-## 9. Key Files Reference
+## 9. SEO & GEO Internals
+
+### 9.1 SEO Meta Generation (seo-meta.ts)
+
+`scripts/_gen-seo-meta.cjs` scans `src/pages/[lang]/` routes, maps each route path to a page YAML key (via `getPageContent(lang, 'key')` + manual overrides in the script), then extracts `meta` blocks from `src/i18n/generated/page-content.json` for all 22 languages:
+
+```
+route .astro → page key → page-content.json meta → src/i18n/generated/seo-meta.ts (572 entries, 78 routes)
+```
+
+`src/components/common/Metadata.astro` consumes it at build time:
+`seoPageMeta?.[`${currentLang}${routePath}`]` — title/description/keywords per locale, with `{SITE}` placeholder substitution.
+
+**Adding a page:** create the YAML (`src/data/pages/{key}.yaml` with `meta`) + route `.astro`; run the build chain — `_gen-pages.cjs` regenerates the page module, `_gen-seo-meta.cjs` regenerates the meta. Nothing else to wire up.
+
+### 9.2 SEO Landing Pages (SeoLanding widget)
+
+Per-locale B2B landing pages (`/oem-paddle`, `/bateau-gonflable-fabricant`, `/fabricant-sup-gonflable`, `/fournisseur-nautique` — currently EN/FR):
+
+- Route: `src/pages/[lang]/oem-paddle.astro` (copy-paste template) — loads YAML via `getPageContent(lang, 'oem-paddle')`, renders `SeoLanding.astro`
+- Widget: `src/components/widgets/SeoLanding.astro` — Hero → Stats → Features → FAQs → CTA + breadcrumbs + JSON-LD; locale-prefixes all internal hrefs via `/${lang}`
+- Content: YAML keys `meta`, `hero`, `stats`, `features`, `faqs`, `cta`, `geo` per locale (21 subdirs + EN root)
+- SEO meta comes automatically via §9.1
+
+### 9.3 SEO Analysis Libraries (`src/lib/seo/*`)
+
+Used by internal dashboards (no AI, no external API):
+
+| Module | Purpose |
+|--------|---------|
+| `health-score.ts` | Per-page SEO health scoring (A–F grade) |
+| `brand-os.ts` / `brand-layer.ts` | Brand OS model (global brand posture) |
+| `rule-engine.ts` | SEO rules evaluation |
+| `task-list.ts` / `task-exporter.ts` | Task generation/export (JSON/CSV/MD) |
+| `link-optimizer.ts` / `position-engine.ts` | Internal-link density analysis, position targets |
+| `ctr-analysis.ts` / `gsc-extractor.ts` | CTR analysis, GSC data extraction |
+| `geo-monitor.ts` / `geo-generator.ts` | GEO content monitoring/generation |
+| `semanticEngine.ts` / `topicCluster.ts` / `gapDetector.ts` / `scoring.ts` | Semantic ontology analysis (26 nodes), topic clusters, content gaps |
+| `kv-store.ts` / `schema.ts` / `types.ts` | Shared infrastructure |
+
+Dashboards: `/internal/seo/{index,brand-os,brand,social,rules,tasks,queries,workflow,geo,pages}` — static SSG pages reading `src/data/content-v2.ts` + `src/data/seo/sample-data.ts` (demo GSC data). Note: the old `geo-dashboard.astro` was deleted with the seo-worker (it depended on dead APIs).
+
+### 9.4 GEO Engines
+
+- `src/lib/geo-v7/*` — current GEO scoring/generation stack (`geo-v5/`, `geo/`, `geo-seo/` are older iterations; `build-geo-v4.ts` generates llms.txt)
+- `src/engine/*` — standalone offline SEO analysis engine (crawler, sitemap fetch, link graph, page/site scoring, reports). **Not wired into the build or any page** — kept for standalone analysis.
+- `scripts/seo-pipeline.mjs` (`npm run seo:pipeline`) — offline task pipeline writing `output/*` using demo query data.
+
+### 9.5 Site Search (static)
+
+`src/pages/search-index.json.ts` prerenders `/search-index.json` from live collections each build; `search.astro` / `[lang]/search.astro` fetch + filter client-side. The former `/api/search` Worker endpoint (seo-worker, R2 `search/index.json`) was deleted — nothing uploads that file today.
+
+---
+
+## 10. Content Collections (Astro v6 Content Layer)
+
+`src/content.config.ts` defines 10 collections via `glob()`/`file()` loaders. Locale-editable index JSON files (`homepage`, `about`, `contact`, `news`, `navigation`, `global`) are written by the Keystatic admin through the admin-worker GitHub API. `post` (news) and `product` collections carry `entityType`/`entityRelations` for the knowledge graph. See README §14 for the collection table.
+
+---
+
+## 11. Key Files Reference
 
 | File | Purpose |
 |------|---------|
-| `astro.config.ts` | Astro build config (output: static, integrations, aliases) |
-| `src/middleware.ts` | Astro locale middleware |
+| `astro.config.ts` | Astro build config (output: static, integrations, per-locale `config.{locale}.yaml` loading via `SITE_LOCALE`) |
+| `src/content.config.ts` | Content Collections schemas (10 collections) |
+| `keystatic.config.ts` | Keystatic CMS config |
+| `src/middleware.ts` | Astro locale middleware (`locals.lang`/`locale`/`isEN`) |
 | `functions/_middleware.ts` | Cloudflare edge middleware (locale redirect + R2) |
 | `src/i18n/routing.ts` | Shared route definitions, `localizeHref()`, `entityForHref()` |
 | `src/i18n/page-content.ts` | Page YAML content loader (build-time cache) |
+| `src/i18n/generated/*` | ⚠ Build artifacts (gitignored): `seo-meta.ts`, `ui-all.ts`, `data.ts`, `page-content.json`, `i18n-config.json`, `pages/`, `ui/` |
 | `src/utils/product-i18n.ts` | Product translation merge (YAML → TS → English fallback) |
+| `src/components/common/Metadata.astro` | Per-route SEO meta consumer (seo-meta.ts) |
+| `src/components/widgets/SeoLanding.astro` | SEO landing page renderer |
+| `src/pages/search-index.json.ts` | Static client-side search index (prerendered) |
+| `src/lib/seo/*` | SEO analysis libraries (health-score, brand-os, rule-engine, task-list, ...) |
+| `src/lib/geo-v7/*` | Current GEO generation/scoring stack |
+| `src/engine/*` | Standalone offline analysis engine (not in build) |
 | `src/lib/contact-crypto.ts` | AES-256-GCM encrypt/decrypt for legacy contact submissions |
 | `src/lib/rate-limit.ts` | In-memory sliding window rate limiter (currently unused) |
 | `src/lib/link-refactor.ts` | URL/name refactoring engine |
+| `scripts/_gen-seo-meta.cjs` | Generates `src/i18n/generated/seo-meta.ts` |
+| `scripts/_gen-pages.cjs` / `_gen-uiall.cjs` | Generate page modules / ui-all.ts |
 | `workers/contact-worker/index.ts` | Live `POST /api/contact` handler (validate + Resend email) |
 | `scripts/patch-worker.mjs` | `output: 'server'` only; subdomain routing + KV injection (not in current build) |
 | `scripts/fix-garbled.py` | Encoding/garble repair helpers (see §6; `find-garbled.py`, `check-encoding.py` too) |
