@@ -54,17 +54,10 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
-      # Deploy 5 Workers
+      # Deploy 4 Workers
       - name: Deploy contact-worker
         continue-on-error: true
         run: npx --yes wrangler deploy -c workers/contact-worker/wrangler.toml
-        env:
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-
-      - name: Deploy seo-worker
-        continue-on-error: true
-        run: npx --yes wrangler deploy -c workers/seo-worker/wrangler.toml
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -86,6 +79,14 @@ jobs:
       - name: Deploy automation-worker
         continue-on-error: true
         run: npx --yes wrangler deploy -c workers/automation-worker/wrangler.toml
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      # Delete legacy seo-worker (afarer-seo) — removed from the repo; harmless no-op once gone
+      - name: Delete legacy seo-worker
+        continue-on-error: true
+        run: npx --yes wrangler delete afarer-seo
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

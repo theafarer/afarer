@@ -61,7 +61,7 @@ checkout → npm install
  → astro build
  → clean → R2 upload
  → Ensure Pages project → Pages deploy
- → Deploy 5 Workers: contact → seo → ai → admin → automation
+ → Deploy 4 Workers: contact → ai → admin → automation
  → Purge CDN cache
 ```
 
@@ -75,7 +75,7 @@ checkout → npm install
 | `npm run build` | Full production build (incl. GEO files) |
 | `npm run build:geo` | Generate GEO files only |
 | `npm run deploy` | Build + Pages deploy |
-| `npm run deploy:all` | Build + Pages + 5 Workers deploy |
+| `npm run deploy:all` | Build + Pages + 4 Workers deploy |
 | `npm run deploy:r2` | Upload assets to R2 |
 | `npm run check` | Astro check + eslint + prettier + i18n |
 
@@ -85,12 +85,11 @@ checkout → npm install
 
 ### 3.1 Overview
 
-5 Cloudflare Workers deployed independently:
+4 Cloudflare Workers deployed independently:
 
 | Worker | Routes | Bindings | Purpose |
 |--------|--------|----------|---------|
 | contact-worker | `/api/contact*` | — | Contact form POST → validate/sanitise → Resend email (`workers/contact-worker/index.ts`) |
-| seo-worker | `/api/search`, `/api/geo-score`, `/api/page-inspect`, `/api/seo/*` | R2 (DATA_BUCKET) | SEO tools, search |
 | ai-worker | `/api/chat*`, `/api/ask*`, `/api/search*`, `/api/embed*`, `/api/ai/*` | Workers AI, Vectorize, R2 | AI chat, RAG, embeddings |
 | admin-worker | `/api/admin/*`, `/api/auth/*` | — | Auth, GitHub CRUD |
 | automation-worker | `/api/automation/*` (cron: daily 2AM) | R2 (DATA_BUCKET) | GEO generation, GSC fetch, SEO rules |
@@ -109,7 +108,6 @@ All Workers must stay under 3 MB uncompressed. Rules:
 See `workers/*/wrangler.toml` for per-worker config. Key bindings:
 
 - `ai-worker`: Workers AI (LLM), Vectorize (ai-index), R2 (DATA_BUCKET)
-- `seo-worker`: R2 (DATA_BUCKET) for search index, SEO rules, GEO data
 - `automation-worker`: R2 (DATA_BUCKET), cron trigger
 
 ---

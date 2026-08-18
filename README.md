@@ -1,6 +1,6 @@
 # afarer — Astro v6 Multilingual Platform
 
-Multilingual (22 languages) B2B water adventure equipment brand platform for **afarer** (SUPs & Accessories only), built on [Astro v6](https://astro.build) with pure static generation (`output:'static'`), deployed to **Cloudflare Pages + 5 Workers**.
+Multilingual (22 languages) B2B water adventure equipment brand platform for **afarer** (SUPs & Accessories only), built on [Astro v6](https://astro.build) with pure static generation (`output:'static'`), deployed to **Cloudflare Pages + 4 Workers**.
 
 **Scale:** 7,564 pages across 22 languages, 0 build errors
 **Domains:** `afarer.com` (production), `assets.afarer.com` (R2 asset storage)
@@ -23,7 +23,7 @@ npm run build            # Full build → dist/ (7564 pages, ~1-2 min)
 
 # Deploy
 npm run deploy           # Build + Pages deploy
-npm run deploy:all       # Build + Pages + 5 Workers
+npm run deploy:all       # Build + Pages + 4 Workers
 npm run deploy:r2        # Upload assets to R2 bucket
 
 # Validation
@@ -45,9 +45,6 @@ Request → afarer.com/{lang}/{path}
     │Routes:              │
     │ afarer.com/* → Pages (static HTML via Cloudflare Pages)
     │ /api/contact* → contact-worker
-    │ /api/search → seo-worker
-    │ /api/geo-score → seo-worker
-    │ /api/seo/* → seo-worker
     │ /api/chat*, /ask* → ai-worker
     │ /api/admin/* → admin-worker
     │ /api/auth/* → admin-worker
@@ -64,7 +61,7 @@ Request → afarer.com/{lang}/{path}
     ┌──────────────────────┐
     │R2 Buckets:          │
     │ afarer-assets → Static images/files/PDFs
-    │ afarer-data → SEO/GEO data, search index, rules
+    │ afarer-data → GEO data, rules (automation/ai workers)
     └──────────────────────┘
 ```
 
@@ -88,7 +85,7 @@ All locale URLs use **path-based** format: `afarer.com/fr/products`, `afarer.com
 | Contact         | Resend email (via contact-worker)                             |
 | Auth            | JWT (jose) + HMAC-SHA256 legacy cookie (admin-worker)         |
 | Frontend Host   | Cloudflare Pages (Direct Upload)                              |
-| Backend Workers | 5 Workers: contact, seo, ai, admin, automation                |
+| Backend Workers | 4 Workers: contact, ai, admin, automation                |
 | Asset Storage   | Cloudflare R2 (assets + data buckets)                         |
 | CI/CD           | GitHub Actions                                                |
 | SEO/GEO         | llms.txt (22 langs), llms-full.txt, entity.json, JSON-LD, sitemap |
@@ -228,14 +225,6 @@ All locale URLs use **path-based** format: `afarer.com/fr/products`, `afarer.com
 │ ├── contact-worker/              # Contact form API
 │ │ ├── index.ts
 │ │ └── wrangler.toml
-│ ├── seo-worker/                  # SEO + search API (R2-backed)
-│ │ ├── src/
-│ │ │ ├── index.ts
-│ │ │ ├── search.ts
-│ │ │ ├── geo-score.ts
-│ │ │ ├── page-inspect.ts
-│ │ │ └── seo.ts
-│ │ └── wrangler.toml
 │ ├── ai-worker/                   # AI chat + embedding + vector search
 │ │ ├── index.ts
 │ │ └── wrangler.toml
@@ -274,20 +263,7 @@ See `TECH.md §3` for full Worker implementation details (wrangler config, 3 MB 
   - CORS headers
 - **Secrets:** `CONTACT_RESEND_API_KEY`, `CONTACT_EMAIL_TO`, `CONTACT_FROM_EMAIL`, `CONTACT_FROM_NAME`
 
-### 4.2 seo-worker (afarer-seo)
-- **Routes:** `afarer.com/api/search`, `/api/geo-score`, `/api/page-inspect`, `/api/seo/*`
-- **Binding:** `DATA_BUCKET` (R2 —`afarer-data`)
-- **Endpoints:**
-  - `GET /api/search?q=...` —Full-text search against `search/index.json` from R2
-  - `GET /api/geo-score` —GEO/SEO scoring dashboard
-  - `GET /api/page-inspect?url=...` —Page-level SEO inspection
-  - `GET /api/seo/analyze` —SEO analysis report
-  - `GET /api/seo/tasks` —SEO task list
-  - `GET /api/seo/report` —Full SEO report
-  - `GET /api/seo/history` —Score history
-- **Data source:** All data loaded at runtime from R2 (`afarer-data`), no bundled JSON
-
-### 4.3 ai-worker (afarer-ai)
+### 4.2 ai-worker (afarer-ai)
 - **Routes:** `afarer.com/api/chat*`, `/api/ask*`, `/api/search*`, `/api/embed*`, `/api/ai/*`
 - **Bindings:** `AI` (Workers AI), `VECTORIZE` (ai-index), `DATA_BUCKET` (R2)
 - **Endpoints:**
@@ -298,7 +274,7 @@ See `TECH.md §3` for full Worker implementation details (wrangler config, 3 MB 
   - `GET /api/quota` —Usage status
   - `GET /api/sitemap` —AI sitemap (22 languages)
 
-### 4.4 admin-worker (afarer-admin)
+### 4.3 admin-worker (afarer-admin)
 - **Routes:** `afarer.com/api/admin/*`, `/api/auth/*`
 - **Endpoints:**
   - `POST /api/auth/login` —JWT + HMAC cookie auth
@@ -313,7 +289,7 @@ See `TECH.md §3` for full Worker implementation details (wrangler config, 3 MB 
 - **Secrets:** `SESSION_SECRET`, `GITHUB_TOKEN`, `ADMIN_PASSWORD_HASH`
 - **Vars:** `ADMIN_USERNAME`, `GITHUB_OWNER`, `GITHUB_REPO`
 
-### 4.5 automation-worker (afarer-automation)
+### 4.4 automation-worker (afarer-automation)
 - **Route:** `afarer.com/api/automation/*`
 - **Cron:** Daily `0 2 * * *`
 - **Binding:** `DATA_BUCKET` (R2)
@@ -326,7 +302,7 @@ See `TECH.md §3` for full Worker implementation details (wrangler config, 3 MB 
   - `GET /api/automation/geo/score` —Run GEO scoring assessment
 - **Daily automation pipeline:** GSC fetch → Rule engine → GEO generator → Score report → Log to R2
 
-### 4.6 Worker Constraints
+### 4.5 Worker Constraints
 
 **All Workers must be under 3 MB** (uncompressed code + static assets) per Cloudflare Workers deployment limit.
 
@@ -366,7 +342,7 @@ Two layers of locale detection:
 | `npm run build` | Full production build (incl. GEO files) |
 | `npm run build:geo` | Generate GEO files only |
 | `npm run deploy` | Build + Pages deploy |
-| `npm run deploy:all` | Build + Pages + 5 Workers deploy |
+| `npm run deploy:all` | Build + Pages + 4 Workers deploy |
 | `npm run deploy:r2` | Upload assets to R2 |
 | `npm run check` | Astro check + eslint + prettier + i18n |
 
@@ -439,7 +415,7 @@ afarer-data/
 | Image SEO | `fetchpriority=high` on LCP images, alt-text on all images |
 | Sales AI | Chat agent upgraded with sales-focused prompts, conversation history, product recommendation funnel |
 | AI Semantic Analysis | GEO v5: 26-node ontology scoring (100/100 health), content gap detection, topic clustering |
-| Internal dashboards | `/internal/geo-dashboard`, `/internal/seo/*` (pages, rules, queries, tasks, etc.) |
+| Internal dashboards | `/internal/seo/*` (pages, rules, queries, tasks, etc.) |
 | Automation | Daily cron: GSC fetch → Rule engine → GEO generator → Score report |
 | Case Studies | 6 real case studies with outcome metrics, citation JSON-LD, CollectionPage + Dataset schemas |
 | Evidence | Product test results with Dataset schema (ISO 2859, pressure hold, AQL 2.5) |
@@ -565,13 +541,13 @@ Worker data is loaded at runtime from `DATA_BUCKET` —no JSON is bundled into W
 
 - **Pure static deployment:** All 7,564 content pages are pre-rendered HTML, served directly from Cloudflare Pages edge cache
 - **Zero cold start for static routes:** No SSR Worker —every page is served as static HTML
-- **5 Workers with specific routes:** Only API requests trigger Worker execution
+- **4 Workers with specific routes:** Only API requests trigger Worker execution
 - **R2 data offload:** SEO/GEO data loaded at runtime from R2 (no bundled JSON in Workers) —keeps Workers under 3 MB
 - **R2 asset offload:** Images served from `assets.afarer.com` (separate subdomain, no cookie overhead)
 - **Remote image handling:** `adaptOpenGraphImages()` in `src/utils/images.ts` bypasses `getImage()` for remote URLs, avoiding Sharp fetch errors on CDN 404s
 - **Pages Functions middleware:** Minimal overhead (locale detection + redirect logic)
 - **Idempotent GEO generation:** `llms-full.txt` is rebuilt from scratch each build —no duplicate accumulation
-- **Worker size limit:** All 5 Workers must stay under 3 MB; use R2 for data, avoid bundling large dependencies
+- **Worker size limit:** All 4 Workers must stay under 3 MB; use R2 for data, avoid bundling large dependencies
 
 ---
 
