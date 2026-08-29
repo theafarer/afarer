@@ -1,8 +1,7 @@
-﻿name: Deploy
+﻿name: Deploy Legacy
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -13,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: node --version && npm --version
-      - run: npm install --ignore-scripts
+      - run: npm ci
       - name: Install PDF optimizer
         run: sudo apt-get update && sudo apt-get install -y ghostscript
 

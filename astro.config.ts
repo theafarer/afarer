@@ -8,7 +8,6 @@ import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 
 import astrowind from './vendor/integration';
-import imageOptimizer from './vendor/integration/image-optimizer';
 import yaml from '@rollup/plugin-yaml';
 
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter';
@@ -31,8 +30,6 @@ export default defineConfig({
       },
     }),
     mdx(),
-
-    imageOptimizer(),
 
     astrowind({
       config: configFile,

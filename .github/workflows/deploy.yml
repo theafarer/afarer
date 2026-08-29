@@ -1,4 +1,4 @@
-﻿name: Build & Deploy
+name: Build & Deploy
 
 on:
   push:
@@ -9,44 +9,63 @@ permissions:
   contents: read
 
 env:
-  NODE_VERSION: "22"
-  CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-  CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-  CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID || '' }}
+  NODE_VERSION: '22'
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Check Cloudflare credentials
+        id: guard
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Cloudflare credentials are not configured; deployment skipped."
+          fi
 
-      - uses: actions/setup-node@v4
+      - if: steps.guard.outputs.enabled == 'true'
+        uses: actions/checkout@v4
+      - if: steps.guard.outputs.enabled == 'true'
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
-
-      - run: npm ci
-      - name: Install PDF optimizer
+      - if: steps.guard.outputs.enabled == 'true'
+        run: npm ci
+      - if: steps.guard.outputs.enabled == 'true'
+        name: Install PDF optimizer
         run: sudo apt-get update && sudo apt-get install -y ghostscript
-      - run: npm run build
-      - name: Optimize R2 assets
+      - if: steps.guard.outputs.enabled == 'true'
+        run: npm run check
+      - if: steps.guard.outputs.enabled == 'true'
+        run: npm test
+      - if: steps.guard.outputs.enabled == 'true'
+        run: npm run build
+      - if: steps.guard.outputs.enabled == 'true'
+        run: npm run check:bundle
+      - if: steps.guard.outputs.enabled == 'true'
+        name: Optimize R2 assets
         run: npm run build:assets
-
-      - name: Upload assets to R2
+      - if: steps.guard.outputs.enabled == 'true'
+        name: Upload assets to R2
         run: node scripts/fast-upload-r2.mjs
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID || '' }}
           R2_ASSET_DIR: optimized-assets
-
-      - name: Deploy Pages
+      - if: steps.guard.outputs.enabled == 'true'
+        name: Deploy Pages
         run: npx wrangler pages deploy dist/ --project-name afarer
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-
-      - name: Deploy Workers
+      - if: steps.guard.outputs.enabled == 'true'
+        name: Deploy Workers
         run: npm run deploy:workers
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
