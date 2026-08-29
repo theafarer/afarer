@@ -9,10 +9,29 @@ import { guides } from '~/data/guides';
 import { products } from '~/data/products';
 
 export async function getStaticPaths() {
-  return guides.map((g) => ({
-    params: { slug: g.slug },
-    props: { guide: g },
-  }));
+  const dedicatedSlugs = new Set([
+    'how-to-choose-your-sup',
+    'beginner-guide',
+    'safety-tips',
+    'inflatable-vs-hard',
+    'weather-conditions',
+    'understanding-specs',
+    'sup-maintenance',
+    'paddling-techniques',
+    'sup-fitness',
+    'sup-yoga',
+    'sup-fishing',
+    'inflatable-repair',
+    'multi-day-trip',
+    'choosing-paddle',
+    'sup-with-kids',
+  ]);
+  return guides
+    .filter((guide) => !dedicatedSlugs.has(guide.slug))
+    .map((guide) => ({
+      params: { slug: guide.slug },
+      props: { guide },
+    }));
 }
 
 export interface Props {

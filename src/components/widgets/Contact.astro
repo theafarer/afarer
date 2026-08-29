@@ -597,7 +597,6 @@ const rows = Object.keys(grouped)
       window.addEventListener('beforeunload', function (e) {
         if (!formSubmitted && hasUnsavedData(formEl)) {
           e.preventDefault();
-          e.returnValue = '';
         }
       });
 

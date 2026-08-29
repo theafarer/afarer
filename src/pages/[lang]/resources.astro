@@ -9,11 +9,10 @@ import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/resources.ts';
-import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 
 export async function getStaticPaths() {
-  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+  return [];
 }
 
 const { lang } = Astro.params;

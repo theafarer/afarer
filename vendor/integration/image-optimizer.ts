@@ -3,10 +3,6 @@ import type { AstroIntegration } from 'astro';
 import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 export default function imageOptimizer(): AstroIntegration {
   let outDir: string;
@@ -27,10 +23,10 @@ export default function imageOptimizer(): AstroIntegration {
           return;
         }
 
-        const rootDir = path.resolve(__dirname, '../..');
-        const scriptPath = path.join(rootDir, 'scripts', 'optimize-images-worker.mjs');
+        const rootDir = path.resolve(process.cwd());
+        const scriptPath = path.join(rootDir, 'scripts', 'optimize-assets.mjs');
         try {
-          const output = execSync(`node "${scriptPath}" "${outDir}"`, { encoding: 'utf-8', timeout: 60000 });
+          const output = execSync(`node "${scriptPath}"`, { encoding: 'utf-8', timeout: 60000 });
           console.log(output.trim());
         } catch (err: any) {
           console.error(`[image-optimizer] Failed: ${err.message}`);

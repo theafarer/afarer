@@ -202,7 +202,7 @@ const jsonOutput = exportTasksJson(tasks);
               showToast('Copied to clipboard');
             })
             .catch((_e) => {
-              document.execCommand('copy');
+              void navigator.clipboard.writeText(ta.value);
               document.body.removeChild(ta);
               showToast('Copied to clipboard');
             });

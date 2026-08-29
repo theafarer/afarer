@@ -28,6 +28,7 @@ import type { ImageMetadata } from 'astro';
 import type { HTMLAttributes } from 'astro/types';
 import { transformUrl, parseUrl } from 'unpic';
 import { findImage } from '~/utils/images';
+import { responsiveImageSrc, responsiveImageSrcset } from '~/lib/responsive-assets';
 
 type Layout = 'constrained' | 'responsive' | 'fullWidth' | 'fixed' | 'cover';
 type Format = 'avif' | 'jpeg' | 'jpg' | 'png' | 'webp';
@@ -150,6 +151,9 @@ const expandWidths = (raw?: number[]): number[] | undefined => {
 const heightFromWidth = (variantWidth: number): number | undefined =>
   aspectRatio ? Math.round(variantWidth / aspectRatio) : undefined;
 
+const isR2Url = typeof resolved === 'string' && /^https:\/\/assets\.afarer\.com\/images\//.test(resolved);
+const r2Src = isR2Url ? responsiveImageSrc(resolved, w) : undefined;
+const r2SrcSet = isR2Url ? responsiveImageSrcset(resolved, widths) : undefined;
 const cdnSrc = isCdnUrl ? buildCdnUrl(w, h) : undefined;
 const cdnWidths = isCdnUrl ? expandWidths(widths) : undefined;
 const cdnSrcSet =
@@ -171,6 +175,8 @@ const cdnSrcSet =
       {...rest}
       style={finalStyle}
     />
+  ) : isR2Url ? (
+    <img src={r2Src} srcset={r2SrcSet} width={w} height={h} alt={alt} {...rest} style={finalStyle} />
   ) : (
     /* The native <Image /> typing is overly strict for our forwarding wrapper;
        we cast through `unknown` once so each call site keeps clean types. */

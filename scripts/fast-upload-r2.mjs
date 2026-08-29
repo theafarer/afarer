@@ -5,7 +5,7 @@ import { globSync } from 'glob';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
-const PUBLIC_DIR = path.join(ROOT, 'public');
+const PUBLIC_DIR = path.join(ROOT, process.env.R2_ASSET_DIR || 'public');
 const BUCKET = 'afarer-assets';
 const API_TOKEN = process.env.CLOUDFLARE_API_TOKEN;
 const ACCOUNT_ID = process.env.CLOUDFLARE_ACCOUNT_ID || '2ac0f11c5362bbba3a7b34693dd56ba4';
@@ -23,6 +23,7 @@ const ASSET_DIRS = [
   { dir: 'data', force: true },
   { dir: 'images', force: false },
   { dir: 'files', force: false },
+  { dir: '.', force: false },
 ];
 
 function detectMime(filePath) {
@@ -101,10 +102,11 @@ async function main() {
 
   for (const { dir, force } of ASSET_DIRS) {
     const fullDir = path.join(PUBLIC_DIR, dir);
-    const files = globSync(`${fullDir}/**/*`, { nodir: true });
+    const files = globSync(dir === '.' ? `${fullDir}/*` : `${fullDir}/**/*`, { nodir: true });
 
     for (const file of files) {
       const relativePath = path.relative(PUBLIC_DIR, file);
+      if (relativePath === 'responsive-images.json') continue;
       const r2Key = relativePath.replace(/\\/g, '/');
       const contentType = detectMime(file);
 

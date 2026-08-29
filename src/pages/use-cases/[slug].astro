@@ -12,11 +12,12 @@ import JsonLd from '~/components/common/JsonLd.astro';
 
 export function getStaticPaths() {
   const paths: { params: { slug: string } }[] = [];
+  const dedicatedSlugs = new Set(['fishing']);
   for (const node of nodes.filter((n) => n.type === 'use-case')) {
     const page = useCaseFromNode(node, 'en');
     if (page) {
       const slug = (node.slug && node.slug.en) || node.id;
-      if (!paths.find((p) => p.params.slug === slug)) {
+      if (!dedicatedSlugs.has(slug) && !paths.find((p) => p.params.slug === slug)) {
         paths.push({ params: { slug } });
       }
     }

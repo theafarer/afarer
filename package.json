@@ -13,6 +13,7 @@
     "build": "node scripts/geo-build.mjs && node scripts/generate-data-json.mjs && npx tsx scripts/generate-geo-files.ts && node scripts/_gen-uiall.cjs && node scripts/_gen-pages.cjs && node scripts/_gen-seo-meta.cjs && node scripts/gen-icon-svgs.cjs && astro build && node scripts/clean-public-assets.mjs",
     "build:all": "npm run build",
     "build:geo": "npx tsx scripts/generate-geo-files.ts",
+    "build:assets": "node scripts/optimize-assets.mjs",
     "build:r2": "node scripts/fast-upload-r2.mjs",
     "deploy": "npm run build && npx wrangler pages deploy dist/ --project-name afarer",
     "deploy:all": "npm run build && npm run deploy:pages && npm run deploy:workers",
