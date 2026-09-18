@@ -205,9 +205,7 @@ export const getProductCategories = async (): Promise<
   }));
 };
 
-export const getProductSeries = async (): Promise<
-  Array<{ slug: ProductSeries; title: string; count: number }>
-> => {
+export const getProductSeries = async (): Promise<Array<{ slug: ProductSeries; title: string; count: number }>> => {
   const products = await loadPublic();
   const map = new Map<ProductSeries, number>();
   products.forEach((p) => {
