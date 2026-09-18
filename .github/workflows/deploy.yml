@@ -40,6 +40,8 @@ jobs:
         name: Install PDF optimizer
         run: sudo apt-get update && sudo apt-get install -y ghostscript
       - if: steps.guard.outputs.enabled == 'true'
+        run: npm run generate
+      - if: steps.guard.outputs.enabled == 'true'
         run: npm run check
       - if: steps.guard.outputs.enabled == 'true'
         run: npm test
