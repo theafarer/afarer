@@ -321,6 +321,21 @@ const productCollection = defineCollection({
     image: z.string().optional(),
     gallery: z.array(productImageSchema).optional(),
     category: z.enum(['accessory', 'service', 'sup']).optional(),
+    series: z
+      .enum([
+        'all-around',
+        'fishing',
+        'kids-teens',
+        'mini',
+        'multi-person',
+        'multi-purpose',
+        'race',
+        'surf',
+        'touring',
+        'whitewater',
+        'yoga',
+      ])
+      .optional(),
     tags: z.array(z.string()).optional(),
     specs: z.array(productSpecSchema).optional(),
     price: productPriceSchema,

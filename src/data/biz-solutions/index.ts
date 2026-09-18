@@ -83,7 +83,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Afarer helps outdoor startups build custom SUP brands with OEM manufacturing, private label paddle boards, low MOQ production, product design, quality control, and global supply chain support.',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Afarer custom SUP boards description',
       },
     },
@@ -381,7 +381,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Afarer helps established outdoor brands expand into water sports with custom SUP manufacturing, Drop Stitch technology, PVC expertise, private label paddle boards, and complete product development solutions.',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Afarer custom SUP boards description',
       },
     },
@@ -674,7 +674,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Afarer helps surf shops and water lifestyle brands expand with private label inflatable SUP, inflatable kayak, and custom water sports products. Reduce shipping, storage, and inventory costs with advanced inflatable technology.',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Afarer custom SUP boards description',
       },
     },
@@ -983,7 +983,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Afarer helps Amazon, Walmart and Shopify sellers build differentiated SUP brands with custom inflatable paddle boards, private label manufacturing, unique graphics, fast supply chain, and ecommerce product support.',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Afarer custom SUP boards description',
       },
     },
@@ -1289,7 +1289,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Afarer helps fishing gear brands create custom Fishing SUP products with high stability designs, rod holder systems, cooler mounts, D-ring accessories, and private label manufacturing solutions.',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Afarer custom SUP boards description',
       },
     },
@@ -1581,7 +1581,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Afarer provides custom SUP Yoga equipment solutions for yoga studios, wellness retreats, and fitness brands. Create premium inflatable yoga SUP boards with wide stability design, full EVA decks, and private label manufacturing.',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Afarer custom SUP boards description',
       },
     },
@@ -1896,7 +1896,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Afarer helps creators launch their own SUP brands through fast prototype development, small MOQ production, custom graphics, limited edition designs, brand packaging, and flexible manufacturing solutions.',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Afarer custom SUP boards for creator and influencer brands',
       },
     },
@@ -2223,7 +2223,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Afarer provides Commercial SUP Fleet Solutions designed specifically for professional operators. We help SUP schools, paddle clubs, rental companies, resorts, adventure operators, and event organizers build reliable equipment fleets with commercial-grade construction and long-term support.',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Afarer commercial SUP fleet for paddle clubs and water sports schools',
       },
     },
@@ -2538,7 +2538,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Afarer provides Durable Rental Fleet Solutions designed specifically for commercial rental businesses. We help beach rental companies, lake activity operators, resort water centers, and adventure tourism businesses build profitable SUP fleets with durable construction and easy maintenance.',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Afarer durable rental SUP fleet for beach and water sports operators',
       },
     },
@@ -2857,7 +2857,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Afarer provides complete Resort Water Activity Packages designed specifically for hospitality businesses. We help luxury resorts, beach hotels, island destinations, eco resorts, and wellness retreats create branded water experiences through custom SUP fleets, storage systems, and staff training.',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Afarer resort water activity package with custom branded SUP boards',
       },
     },
@@ -3158,7 +3158,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Afarer provides SUP Academy Equipment Program, a complete equipment solution developed for professional teaching environments. We help SUP schools, youth training centers, summer camps, and outdoor education companies build reliable training fleets with beginner-friendly boards, kids models, and instructor equipment.',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Afarer SUP academy equipment for training schools and youth programs',
       },
     },
@@ -3473,7 +3473,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Afarer provides Luxury Portable SUP Package solutions designed specifically for cruise companies, expedition cruise operators, yacht charter companies, super yacht owners, and marina activity providers. Delivering ultra-portable inflatable SUP designs with marine-grade components and luxury customization.',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Afarer luxury portable SUP package for yachts and cruise ships',
       },
     },
@@ -3783,7 +3783,7 @@ const solutions: BizSolution[] = [
       title: 'Private Label SUP Manufacturing Solutions For Outdoor Retailers, Sporting Goods Chains & Global Brands',
       subtitle: 'Build Your Own SUP Product Line With A Reliable OEM Manufacturing Partner',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Private Label SUP Manufacturing For Retailers',
       },
     },
@@ -4100,7 +4100,7 @@ const solutions: BizSolution[] = [
       title: 'Long-Term SUP Manufacturing Partnership For Global Distributors & Importers',
       subtitle: 'Build A Successful Water Sports Business With A Reliable OEM Supply Partner',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'SUP Manufacturing Partnership For Global Distributors',
       },
     },
@@ -4409,7 +4409,7 @@ const solutions: BizSolution[] = [
       title: 'Custom Branded SUP Solutions For Corporate Events, Team Building & Brand Marketing Campaigns',
       subtitle: 'Turn Water Sports Equipment Into A Powerful Brand Experience',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Custom Branded SUP Boards For Corporate Events',
       },
     },
@@ -4722,7 +4722,7 @@ const solutions: BizSolution[] = [
       title: 'Add Inflatable SUP & Water Sports Products To Your Existing Brand',
       subtitle: 'Expand Your Market Without Building A New Factory',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'SUP Product Expansion For Water Sports Brands',
       },
     },
@@ -5035,7 +5035,7 @@ const solutions: BizSolution[] = [
       title: 'Custom SUP Solutions For Pet Adventure Brands & Human-Dog Outdoor Lifestyle Companies',
       subtitle: 'Create A Safe And Enjoyable Water Adventure Experience For Pets And Their Owners',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Pet-Friendly SUP Board For Dogs And Owners',
       },
     },
@@ -5341,7 +5341,7 @@ const solutions: BizSolution[] = [
       title: 'Commercial SUP Fleet Solutions For Beach Recreation Businesses & Water Sports Centers',
       subtitle: 'Build A Profitable Water Experience Business With Reliable Commercial Equipment',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Commercial SUP Fleet For Beach Recreation',
       },
     },
@@ -5640,7 +5640,7 @@ const solutions: BizSolution[] = [
       title: 'Commercial Water Park SUP Fleet™',
       subtitle: 'Create Safe, Interactive Water Experiences For Thousands Of Guests',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Commercial Water Park SUP Fleet',
       },
     },
@@ -5923,7 +5923,7 @@ const solutions: BizSolution[] = [
       title: 'Premium Custom SUP Collection™',
       subtitle: 'Transform Water Activities Into A Signature Luxury Experience',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Premium Custom SUP Collection',
       },
     },
@@ -6203,7 +6203,7 @@ const solutions: BizSolution[] = [
       title: 'Destination Water Sports Package™',
       subtitle: 'Transform Natural Water Resources Into Premium Tourism Experiences',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Destination Water Sports Package',
       },
     },
@@ -6486,7 +6486,7 @@ const solutions: BizSolution[] = [
       title: 'Kids Exploration SUP Program™',
       subtitle: 'Create Meaningful Outdoor Learning Experiences Through Water Exploration',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Kids Exploration SUP Program',
       },
     },
@@ -6768,7 +6768,7 @@ const solutions: BizSolution[] = [
       title: 'Professional Water Rescue SUP System™',
       subtitle: 'Reliable Equipment For Critical Water Rescue Operations',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Professional Water Rescue SUP System',
       },
     },
@@ -7053,7 +7053,7 @@ const solutions: BizSolution[] = [
       title: 'Eco Research & Monitoring SUP Platform™',
       subtitle: 'Transform SUP Technology Into A Low-Impact Research Platform',
       image: {
-        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1.webp',
+        src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Eco Research & Monitoring SUP Platform',
       },
     },

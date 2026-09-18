@@ -45,6 +45,19 @@ export interface Taxonomy {
 
 export type ProductCategory = 'sup' | 'accessory';
 
+export type ProductSeries =
+  | 'all-around'
+  | 'fishing'
+  | 'kids-teens'
+  | 'mini'
+  | 'multi-person'
+  | 'multi-purpose'
+  | 'race'
+  | 'surf'
+  | 'touring'
+  | 'whitewater'
+  | 'yoga';
+
 export interface ProductSpec {
   label: string;
   value: string;
@@ -74,6 +87,8 @@ export interface Product {
   gallery?: ProductGalleryImage[];
   category?: ProductCategory;
   categoryLabel?: string;
+  series?: ProductSeries;
+  seriesLabel?: string;
   tags?: Taxonomy[];
   specs?: ProductSpec[];
   price?: ProductPrice;

@@ -1,6 +1,6 @@
 ﻿/* eslint-disable @typescript-eslint/no-explicit-any */
 import { getCollection, render, type CollectionEntry } from 'astro:content';
-import type { Product, ProductCategory } from '~/types';
+import type { Product, ProductCategory, ProductSeries } from '~/types';
 import { APP_PRODUCTS } from 'astrowind:config';
 import { cleanSlug, PRODUCT_PERMALINK_PATTERN } from './permalinks';
 
@@ -9,7 +9,22 @@ const PRODUCT_CATEGORY_LABELS: Record<ProductCategory, string> = {
   accessory: 'Accessories',
 };
 
+const PRODUCT_SERIES_LABELS: Record<ProductSeries, string> = {
+  'all-around': 'All-Around',
+  fishing: 'Fishing SUP',
+  'kids-teens': 'Kids & Teens',
+  mini: 'Mini SUP',
+  'multi-person': 'Multi-Person / Giant',
+  'multi-purpose': 'Utility / Lure Skiff',
+  race: 'Race',
+  surf: 'Surf',
+  touring: 'Touring',
+  whitewater: 'Whitewater',
+  yoga: 'Yoga',
+};
+
 export const productCategoryLabels = PRODUCT_CATEGORY_LABELS;
+export const productSeriesLabels = PRODUCT_SERIES_LABELS;
 
 const getNormalizedProduct = async (product: CollectionEntry<'product'>): Promise<Product> => {
   const { id } = product;
@@ -27,6 +42,7 @@ const getNormalizedProduct = async (product: CollectionEntry<'product'>): Promis
     image,
     gallery = [],
     category: rawCategory,
+    series: rawSeries,
     tags: rawTags = [],
     specs = [],
     price,
@@ -51,6 +67,8 @@ const getNormalizedProduct = async (product: CollectionEntry<'product'>): Promis
 
   const category: ProductCategory | undefined = rawCategory as ProductCategory | undefined;
 
+  const series = rawSeries as ProductSeries | undefined;
+
   const tags = rawTags.map((tag: string) => ({
     slug: cleanSlug(tag),
     title: tag,
@@ -71,6 +89,8 @@ const getNormalizedProduct = async (product: CollectionEntry<'product'>): Promis
     gallery,
     category,
     categoryLabel: category ? PRODUCT_CATEGORY_LABELS[category] : undefined,
+    series,
+    seriesLabel: series ? PRODUCT_SERIES_LABELS[series] : undefined,
     tags,
     specs,
     price,
@@ -121,6 +141,7 @@ export const productRobots = () => APP_PRODUCTS?.product?.robots ?? { index: tru
 export interface ProductQuery {
   featured?: boolean;
   category?: ProductCategory;
+  series?: ProductSeries;
   limit?: number;
 }
 
@@ -128,6 +149,7 @@ export const getProducts = async (query: ProductQuery = {}): Promise<Array<Produ
   let products = await loadPublic();
   if (query.featured) products = products.filter((p) => p.featured);
   if (query.category) products = products.filter((p) => p.category === query.category);
+  if (query.series) products = products.filter((p) => p.series === query.series);
   if (query.limit) products = products.slice(0, query.limit);
   return products;
 };
@@ -181,6 +203,38 @@ export const getProductCategories = async (): Promise<
     title: PRODUCT_CATEGORY_LABELS[slug],
     count,
   }));
+};
+
+export const getProductSeries = async (): Promise<
+  Array<{ slug: ProductSeries; title: string; count: number }>
+> => {
+  const products = await loadPublic();
+  const map = new Map<ProductSeries, number>();
+  products.forEach((p) => {
+    if (p.series) {
+      map.set(p.series, (map.get(p.series) ?? 0) + 1);
+    }
+  });
+  const order: ProductSeries[] = [
+    'all-around',
+    'surf',
+    'touring',
+    'race',
+    'whitewater',
+    'yoga',
+    'fishing',
+    'mini',
+    'kids-teens',
+    'multi-person',
+    'multi-purpose',
+  ];
+  return Array.from(map.entries())
+    .sort((a, b) => order.indexOf(a[0]) - order.indexOf(b[0]))
+    .map(([slug, count]) => ({
+      slug,
+      title: PRODUCT_SERIES_LABELS[slug],
+      count,
+    }));
 };
 
 export const CATEGORY_SLUG_TO_URL: Record<ProductCategory, string> = {

@@ -11,25 +11,50 @@ import { SITE } from 'astrowind:config';
 import {
   getProducts,
   getProductCategories,
+  getProductSeries,
   isProductsEnabled,
   isProductsListEnabled,
-  CATEGORY_SLUG_TO_URL,
+  productSeriesLabels,
 } from '~/utils/products';
 import { PRODUCT_LIST, getCanonical, getPermalink } from '~/utils/permalinks';
 import type { MetaData } from '~/types';
 
 const products = await getProducts();
 const categories = await getProductCategories();
+const seriesArr = await getProductSeries();
 const rawCategory = (Astro.url?.searchParams?.get('category') ?? '') as 'accessory' | 'sup' | '';
 const activeCategory = rawCategory === 'accessory' || rawCategory === 'sup' ? rawCategory : null;
-const filteredProducts = activeCategory ? products.filter((p) => p.category === activeCategory) : products;
+const rawSeries = (Astro.url?.searchParams?.get('series') ?? '') as
+  | 'all-around'
+  | 'fishing'
+  | 'kids-teens'
+  | 'mini'
+  | 'multi-person'
+  | 'multi-purpose'
+  | 'race'
+  | 'surf'
+  | 'touring'
+  | 'whitewater'
+  | 'yoga'
+  | '';
+const activeSeries = seriesArr.some((s) => s.slug === rawSeries) ? rawSeries : null;
+const filteredByCategory = activeCategory ? products.filter((p) => p.category === activeCategory) : products;
+const filteredProducts = activeSeries
+  ? filteredByCategory.filter((p) => p.series === activeSeries)
+  : filteredByCategory;
 const totalCount = products.length;
 const hidden = !isProductsEnabled() || !isProductsListEnabled();
 
+const activeSeriesTitle = activeSeries && productSeriesLabels[activeSeries];
+
 const metadata = merge(
   {
-    title: `Inflatable SUP Products | ${SITE.name}`,
-    description: `Browse the full ${SITE.name} product catalog –inflatable SUP boards and accessories. Country distribution and co-branding available for qualified water-sports partners.`,
+    title: activeSeriesTitle
+      ? `${activeSeriesTitle} Inflatable SUP Boards | ${SITE.name}`
+      : `Inflatable SUP Products | ${SITE.name}`,
+    description: activeSeriesTitle
+      ? `Browse the ${activeSeriesTitle} collection of inflatable SUP paddle boards from ${SITE.name} – factory-direct drop-stitch construction with OEM/ODM manufacturing for water-sports partners.`
+      : `Browse the full ${SITE.name} product catalog –inflatable SUP boards and accessories. Country distribution and co-branding available for qualified water-sports partners.`,
     canonical: getCanonical(getPermalink(PRODUCT_LIST)),
     robots: { index: !hidden, follow: true },
     openGraph: { type: 'website' },
@@ -98,7 +123,7 @@ const metadata = merge(
 
     {
       categories.length > 0 && (
-        <WidgetWrapper containerClass="mb-10">
+        <WidgetWrapper containerClass="mb-6">
           <div class="flex flex-wrap items-center justify-center gap-2">
             <a
               href={getPermalink(PRODUCT_LIST)}
@@ -114,15 +139,49 @@ const metadata = merge(
             </a>
             {categories.map((c) => (
               <a
-                href={`/${CATEGORY_SLUG_TO_URL[c.slug]}`}
+                href={`${getPermalink(PRODUCT_LIST)}?category=${encodeURIComponent(c.slug)}`}
                 class:list={[
                   'inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium border transition-colors',
-                  activeCategory === c.slug
+                  activeCategory === c.slug && !activeSeries
                     ? 'bg-primary text-white border-primary dark:bg-blue-500 dark:border-blue-500'
                     : 'bg-white dark:bg-slate-800 border-gray-200 dark:border-slate-700 text-default dark:text-slate-200 hover:bg-gray-50 dark:hover:bg-slate-700',
                 ]}
               >
                 {c.title} ({c.count})
+              </a>
+            ))}
+          </div>
+        </WidgetWrapper>
+      )
+    }
+
+    {
+      seriesArr.length > 0 && (
+        <WidgetWrapper containerClass="mb-10">
+          <div class="flex flex-wrap items-center justify-center gap-2">
+            <a
+              href={getPermalink(PRODUCT_LIST)}
+              class:list={[
+                'inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium border transition-colors',
+                !activeSeries
+                  ? 'bg-primary text-white border-primary dark:bg-blue-500 dark:border-blue-500'
+                  : 'bg-white dark:bg-slate-800 border-gray-200 dark:border-slate-700 text-default dark:text-slate-200 hover:bg-gray-50 dark:hover:bg-slate-700',
+              ]}
+            >
+              <Icon name="tabler:layers-intersect" class="w-4 h-4" />
+              All series
+            </a>
+            {seriesArr.map((s) => (
+              <a
+                href={`${getPermalink(PRODUCT_LIST)}?series=${encodeURIComponent(s.slug)}`}
+                class:list={[
+                  'inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium border transition-colors',
+                  activeSeries === s.slug
+                    ? 'bg-primary text-white border-primary dark:bg-blue-500 dark:border-blue-500'
+                    : 'bg-white dark:bg-slate-800 border-gray-200 dark:border-slate-700 text-default dark:text-slate-200 hover:bg-gray-50 dark:hover:bg-slate-700',
+                ]}
+              >
+                {s.title} ({s.count})
               </a>
             ))}
           </div>
