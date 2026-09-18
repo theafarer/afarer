@@ -53,6 +53,8 @@ src/
   navigation.ts        # Navigation structure
   types.d.ts           # TypeScript type definitions
 vendor/integration/    # Custom Astro integration for config loading
+scripts/               # Build chain (`_gen-pages.cjs`, `_gen-seo-meta.cjs`, ...) — see §Build
+TOOLS/                 # One-off edit/i18n tools (meta-inject / i18n-merge / i18n-fix / one-off) + tool_instrction.md
 ```
 
 ### Path Aliases

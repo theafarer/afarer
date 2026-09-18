@@ -1,0 +1,405 @@
+// Injects English `meta:` blocks (title/description/keywords) into en pages
+// that lack them. Data-driven: PAGE_META maps page name -> meta.
+// Uses the same text-based surgery as _inject-fr-meta.cjs.
+const fs = require('fs');
+const path = require('path');
+const DIR = path.join(process.cwd(), 'src/data/pages');
+
+const PAGE_META = {
+  about: {
+    title: 'About — Inflatable SUP & Boat Manufacturer | {SITE}',
+    description:
+      'afarer is a professional inflatable SUP and boat manufacturer with an in-house factory, marine engineering, and OEM/ODM production. Discover our certified plant and nautical solutions for brands and businesses.',
+    keywords: [
+      'inflatable sup manufacturer',
+      'inflatable boat manufacturer',
+      'sup factory china',
+      'oem paddle board manufacturing',
+      'paddle board manufacturer',
+    ],
+  },
+  academy: {
+    title: 'Academy — SUP Guides & Paddle Training | {SITE}',
+    description:
+      'afarer Academy: inflatable paddle board guides, stand up paddle techniques, nautical safety, and materials knowledge for beginners and professionals.',
+    keywords: ['learn stand up paddle', 'sup beginner guide', 'paddle board basics', 'sup technique', 'sup lessons'],
+  },
+  'afarer-story': {
+    title: 'Our Story — Inflatable SUP & Boat Manufacturer | {SITE}',
+    description:
+      'From a coastal workshop to a global marine manufacturer: the afarer story of engineering freedom on water with a 12,000 m² certified factory.',
+    keywords: ['afarer history', 'afarer brand', 'inflatable sup manufacturer', 'inflatable boat manufacturer'],
+  },
+  'brand-global-presence': {
+    title: 'Global Presence — SUP Manufacturer Serving 50+ Countries | {SITE}',
+    description:
+      'afarer exports inflatable SUPs and boats to 50+ countries across every continent. Professional manufacturer and supplier for brands, distributors, and fleets.',
+    keywords: ['global sup manufacturer', 'paddle board exporter', 'sup factory china', 'professional sup supplier'],
+  },
+  'brand-marine-expertise': {
+    title: 'Marine Expertise — Engineering in Every Hull | {SITE}',
+    description:
+      'Decades of marine engineering in every hull. afarer masters drop stitch, marine PVC, and professional inflatable boat and SUP design.',
+    keywords: [
+      'marine engineering',
+      'inflatable boat manufacturer',
+      'inflatable sup manufacturer',
+      'paddle board manufacturing',
+    ],
+  },
+  'brand-team': {
+    title: 'Our Team — Marine Engineers & Builders | {SITE}',
+    description:
+      'Founded in 2012 in Qingdao, afarer was built by marine engineers, material scientists, and water sports enthusiasts. Meet the team behind the factory.',
+    keywords: ['afarer team', 'marine engineers', 'inflatable sup manufacturer', 'sup factory team'],
+  },
+  'brand-why-afarer': {
+    title: 'Why afarer — 7 Reasons Global Brands Choose Us | {SITE}',
+    description:
+      'Why global brands choose afarer: CE and ISO certifications, flexible MOQ, custom molds, and 30-day lead times from a professional inflatable SUP factory.',
+    keywords: [
+      'why choose afarer',
+      'inflatable sup manufacturer',
+      'sup factory china',
+      'inflatable paddle board supplier',
+    ],
+  },
+  brand: {
+    title: 'The afarer Brand — Professional Marine Manufacturer | {SITE}',
+    description:
+      'afarer: a professional inflatable SUP and boat manufacturer providing OEM/ODM production for brands, distributors, nautical clubs, and enterprises.',
+    keywords: ['afarer brand', 'inflatable sup manufacturer', 'inflatable boat manufacturer', 'sup factory china'],
+  },
+  cases: {
+    title: 'Case Studies — Successful OEM Projects | {SITE}',
+    description:
+      'Real projects, real results: SUP fleets for resorts, private labels, distribution, and rescue. See how afarer supports its OEM partners.',
+    keywords: [
+      'sup case studies',
+      'oem paddle board projects',
+      'sup manufacturer references',
+      'nautical project examples',
+    ],
+  },
+  certifications: {
+    title: 'Certifications — CE, ISO 9001 & Compliance | {SITE}',
+    description:
+      'afarer quality certifications: CE (Directive 2013/53/EU), ISO 9001:2015, BSCI. Compliance and safety for an inflatable SUP and boat manufacturer.',
+    keywords: ['ce certification sup', 'iso 9001 sup', 'nautical compliance', 'paddle board certification'],
+  },
+  'commercial-workboats': {
+    title: 'Commercial Workboats — OEM Inflatable Boats for Marine Industry | {SITE}',
+    description:
+      'afarer manufactures commercial-grade inflatable workboats for patrol, dive support, marine survey, and offshore logistics. OEM/ODM with CE certification and custom configurations.',
+    keywords: [
+      'commercial inflatable boat manufacturer',
+      'inflatable workboat oem',
+      'marine industry boat supplier',
+      'oem rigid inflatable boat',
+    ],
+  },
+  community: {
+    title: 'Community — SUP Adventures & Paddle Sports | {SITE}',
+    description:
+      'The afarer community: paddle clubs, SUP events, nautical adventures, and stories from inflatable stand up paddle enthusiasts.',
+    keywords: ['paddle community', 'sup club', 'paddle events', 'sup adventures'],
+  },
+  contact: {
+    title: 'Contact — OEM Quotes & SUP Manufacturer | {SITE}',
+    description:
+      'Contact afarer for OEM/ODM quotes, private label projects, or professional fleets. Inflatable SUP and boat manufacturer, we respond within 2 business days.',
+    keywords: ['contact afarer', 'oem paddle board quote', 'professional sup supplier', 'contact sup manufacturer'],
+  },
+  custom: {
+    title: 'Custom Lab — Custom Inflatable Paddle Boards | {SITE}',
+    description:
+      'Custom inflatable paddle boards: bespoke design, logo, custom mold, and production. OEM/ODM SUP manufacturer, MOQ 5–10 units, CE certified.',
+    keywords: [
+      'custom paddle board manufacturer',
+      'custom inflatable sup',
+      'paddle board with logo',
+      'oem inflatable sup',
+      'paddle board manufacturing',
+    ],
+  },
+  'disaster-relief': {
+    title: 'Disaster Relief Inflatable Boats — OEM Manufacturing | {SITE}',
+    description:
+      'afarer manufactures inflatable boats engineered for disaster relief and humanitarian aid: flood rescue, MEDEVAC, aid delivery, and personnel transport. CE certified.',
+    keywords: [
+      'disaster relief inflatable boat',
+      'rescue inflatable boat manufacturer',
+      'humanitarian aid boats',
+      'oem inflatable boat',
+    ],
+  },
+  'factory-capacity': {
+    title: 'Production Capacity — 12,000 m² Factory | {SITE}',
+    description:
+      'afarer factory capacity: 12,000 m² facility producing 15,000+ boats per year with room to scale. Large-scale OEM/ODM inflatable SUP and boat manufacturing.',
+    keywords: ['sup production capacity', 'inflatable sup factory', 'paddle board production', 'sup factory china'],
+  },
+  'factory-equipment': {
+    title: 'Factory Equipment — Cutting, RF Welding & Printing | {SITE}',
+    description:
+      'Industrial-grade afarer manufacturing equipment: PVC cutting, RF welding, digital printing, assembly, and testing for inflatable SUPs and boats.',
+    keywords: ['sup manufacturing equipment', 'inflatable sup factory', 'rf welding pvc', 'paddle board production'],
+  },
+  'factory-oem-capability': {
+    title: 'OEM & Private Label Manufacturing | {SITE}',
+    description:
+      'From concept to container: customize every detail of your inflatable SUP line. Full OEM/ODM service for private label paddle board brands.',
+    keywords: ['oem sup manufacturing', 'private label paddle board', 'oem inflatable sup', 'custom sup factory'],
+  },
+  'factory-process': {
+    title: 'Manufacturing Process — From Raw Material to SUP | {SITE}',
+    description:
+      'From raw material to sea-ready SUP: every step of the afarer manufacturing process under our control, from cutting and welding to testing.',
+    keywords: [
+      'sup manufacturing process',
+      'inflatable sup factory',
+      'paddle board production steps',
+      'pvc welding sup',
+    ],
+  },
+  'factory-quality-lab': {
+    title: 'Quality Lab — Testing & Quality Assurance | {SITE}',
+    description:
+      'Independent quality lab with ISO 9001 processes at afarer: every unit tested before shipment to guarantee inflatable SUP and boat quality.',
+    keywords: ['sup quality control', 'paddle board testing lab', 'iso 9001 sup factory', 'inflatable sup quality'],
+  },
+  factory: {
+    title: 'Factory & Manufacturing — Inflatable SUP OEM | {SITE}',
+    description:
+      'Tour the afarer factory: 12,000 m² plant with cutting, RF welding, printing, assembly, and quality lab for inflatable SUP and boat OEM/ODM manufacturing.',
+    keywords: [
+      'sup factory china',
+      'inflatable paddle board factory',
+      'oem sup manufacturer',
+      'inflatable sup manufacturing',
+    ],
+  },
+  fishing: {
+    title: 'Fishing from an Inflatable SUP: Complete Guide | {SITE}',
+    description:
+      'Learn why inflatable SUP boards are excellent fishing platforms: stability, portability, gear compatibility, and recommended board types.',
+    keywords: ['sup fishing', 'inflatable paddle board fishing', 'fishing paddle board', 'sup fishing board'],
+  },
+  gallery: {
+    title: 'Gallery — Inflatable SUPs & Boats | {SITE}',
+    description:
+      'Browse the afarer gallery: inflatable SUP boards, boats, factory, and production photos from our professional paddle board factory.',
+    keywords: ['sup photos', 'inflatable sup gallery', 'paddle board pictures', 'inflatable boat photos'],
+  },
+  guides: {
+    title: 'SUP Guides — Buy, Choose, Practice | {SITE}',
+    description:
+      'afarer SUP guides: how to buy, choose, and practice paddle boarding. Sizing, materials, and expert tips for inflatable SUP beginners and pros.',
+    keywords: ['sup buying guide', 'how to choose sup', 'sup sizing guide', 'inflatable paddle board tips'],
+  },
+  home: {
+    title: 'Inflatable SUP Manufacturer — Factory & OEM/ODM | {SITE}',
+    description:
+      'afarer is an inflatable SUP and boat manufacturer with a 12,000 m² factory: OEM/ODM paddle boards, private label production, CE certified. Partner with our SUP factory.',
+    keywords: [
+      'inflatable sup manufacturer',
+      'sup factory china',
+      'oem paddle board',
+      'inflatable paddle board supplier',
+      'inflatable boat manufacturer',
+    ],
+  },
+  'inflatable-vs-hardboard': {
+    title: 'Inflatable SUP vs Hard Board — Complete Comparison | {SITE}',
+    description:
+      'An in-depth comparison of inflatable and hard stand up paddle boards across portability, durability, performance, and use cases.',
+    keywords: [
+      'inflatable sup vs hard board',
+      'isup vs hard paddle board',
+      'inflatable paddle board comparison',
+      'best sup type',
+    ],
+  },
+  journal: {
+    title: 'Journal — Nautical Articles & Guides | {SITE}',
+    description:
+      'The afarer journal: articles and guides about inflatable SUPs, paddle boarding, boats, and the nautical industry.',
+    keywords: ['sup journal', 'paddle board articles', 'inflatable sup blog', 'nautical guides'],
+  },
+  knowledge: {
+    title: 'Knowledge — SUP & Boat Guides | {SITE}',
+    description:
+      'afarer knowledge base: guides on inflatable SUPs, paddle board materials, boat selection, and industry insights for brands and professionals.',
+    keywords: ['sup knowledge', 'inflatable sup guide', 'paddle board materials', 'sup industry insights'],
+  },
+  learn: {
+    title: 'Learn — SUP, Paddle & Boating | {SITE}',
+    description:
+      'Learn with afarer: inflatable SUP tutorials, paddle techniques, boat basics, and nautical education for enthusiasts and businesses.',
+    keywords: ['learn sup', 'paddle board tutorial', 'inflatable sup education', 'paddle techniques'],
+  },
+  lifestyle: {
+    title: 'Lifestyle — Paddle, Adventure & Exploration | {SITE}',
+    description:
+      'Explore the afarer lifestyle: paddle adventures, water exploration, and outdoor experiences with inflatable SUPs and boats.',
+    keywords: ['sup lifestyle', 'paddle adventures', 'inflatable sup outdoor', 'water sports lifestyle'],
+  },
+  'maritime-safety-defense': {
+    title: 'Maritime Safety & Defense Inflatable Boats — OEM | {SITE}',
+    description:
+      'afarer delivers uncompromising quality for maritime safety and defense: patrol, coastal security, force protection, and rapid response vessels. CE certified OEM.',
+    keywords: [
+      'maritime safety inflatable boat',
+      'defense inflatable boat manufacturer',
+      'patrol boat oem',
+      'military inflatable boat',
+    ],
+  },
+  media: {
+    title: 'Media Center — Press & afarer Resources | {SITE}',
+    description:
+      'The afarer media center: press releases, brand assets, and resources from our inflatable SUP and boat manufacturing company.',
+    keywords: ['afarer press', 'sup manufacturer media', 'paddle board press kit', 'nautical company news'],
+  },
+  news: {
+    title: 'News — SUP Manufacturer & Nautical Updates | {SITE}',
+    description:
+      'Latest news from afarer: factory updates, new inflatable SUP models, certifications, and nautical industry announcements.',
+    keywords: ['sup manufacturer news', 'afarer updates', 'inflatable sup announcements', 'nautical industry news'],
+  },
+  partners: {
+    title: 'Partners — Distribution & Wholesale | {SITE}',
+    description:
+      'Become an afarer partner: distribution networks, wholesale pricing, OEM/private label programs, and support for paddle board businesses worldwide.',
+    keywords: ['sup distribution partner', 'paddle board wholesale', 'inflatable sup distributor', 'sup partnership'],
+  },
+  quality: {
+    title: 'Quality & Testing — Manufacturing Control | {SITE}',
+    description:
+      'afarer quality system: independent testing lab, ISO 9001 processes, and every unit tested before shipment. Quality control for inflatable SUP and boat manufacturing.',
+    keywords: [
+      'sup quality control',
+      'inflatable sup testing',
+      'paddle board quality assurance',
+      'sup factory quality',
+    ],
+  },
+  'request-quotation': {
+    title: 'Request a Quotation — OEM SUP Manufacturing | {SITE}',
+    description:
+      'Request a detailed quotation for your inflatable SUP or boat project. OEM/ODM manufacturing, private label, or custom fleets — we respond within 2 business days.',
+    keywords: ['request sup quote', 'oem paddle board quote', 'sup factory quotation', 'inflatable sup price'],
+  },
+  safety: {
+    title: 'Safety — Standards & Certifications | {SITE}',
+    description:
+      'afarer product safety: CE certified inflatable SUPs and boats, rigorous testing, and compliance with international nautical safety standards.',
+    keywords: [
+      'sup safety standards',
+      'ce certified paddle board',
+      'inflatable sup safety',
+      'nautical safety compliance',
+    ],
+  },
+  'search-and-rescue': {
+    title: 'Search & Rescue Inflatable Boats — OEM Manufacturing | {SITE}',
+    description:
+      'afarer sets the standard for SAR inflatable boats: engineered for the reliability, durability, and performance that life-saving missions demand. CE certified OEM.',
+    keywords: [
+      'search and rescue boat manufacturer',
+      'sar inflatable boat',
+      'rescue boat oem',
+      'emergency inflatable boat',
+    ],
+  },
+  'size-guide': {
+    title: 'Size & Specs Guide — Inflatable SUPs & Boats | {SITE}',
+    description:
+      'Dimensions, capacities, and recommended uses for every afarer product. Find the right inflatable SUP or boat size for your needs.',
+    keywords: ['sup size guide', 'paddle board dimensions', 'inflatable sup specs', 'boat size chart'],
+  },
+  solutions: {
+    title: 'Business Solutions — SUP for Every Business | {SITE}',
+    description:
+      'afarer business solutions: SUP fleets for resorts, clubs, rentals, distribution, and private labels. Professional nautical equipment supplier for B2B.',
+    keywords: [
+      'sup business solutions',
+      'inflatable paddle board supplier',
+      'nautical equipment b2b',
+      'inflatable sup manufacturer',
+    ],
+  },
+  technology: {
+    title: 'Technology — Drop Stitch & Marine PVC | {SITE}',
+    description:
+      'afarer technologies: drop stitch construction, marine PVC, double-layer builds, and high pressure. Innovation from a professional inflatable SUP manufacturer.',
+    keywords: ['sup technology', 'drop stitch construction', 'high pressure sup', 'inflatable sup materials'],
+  },
+  'tourism-recreation': {
+    title: 'Tourism & Recreation — Inflatable SUPs & Boats | {SITE}',
+    description:
+      'Nautical equipment for tourism and recreation: inflatable SUPs, boats, and accessories for lakes, seas, and outdoor activities. From guided excursions to coastal cruising.',
+    keywords: ['sup tourism', 'recreational inflatable sup', 'leisure inflatable boat', 'sup rental equipment'],
+  },
+  trust: {
+    title: 'Trust — Quality, Standards & Reputation | {SITE}',
+    description:
+      'Why trust afarer: CE and ISO certifications, integrated factory, global references, and warranty. A professional inflatable SUP and boat manufacturer.',
+    keywords: [
+      'trusted sup manufacturer',
+      'certified paddle board factory',
+      'reliable sup supplier',
+      'certified sup factory',
+    ],
+  },
+  warranty: {
+    title: 'Warranty — Inflatable SUPs & Boats | {SITE}',
+    description:
+      'afarer warranty and after-sales support for inflatable SUPs, boats, and accessories. Our quality commitment for partners and customers.',
+    keywords: ['sup warranty', 'inflatable boat warranty', 'paddle board guarantee', 'after-sales support'],
+  },
+  'what-is-sup': {
+    title: 'What is an Inflatable SUP? — Beginner Guide | {SITE}',
+    description:
+      'What is an inflatable SUP? Complete guide to stand up paddle boards: construction, technology, uses, and how to choose your first board.',
+    keywords: ['what is an isup', 'inflatable paddle board', 'stand up paddle board', 'sup for beginners'],
+  },
+};
+
+function yamlQuote(s) {
+  return "'" + String(s).replace(/'/g, "''") + "'";
+}
+
+function metaBlock(meta) {
+  const lines = ['meta:'];
+  lines.push('  title: ' + yamlQuote(meta.title));
+  lines.push('  description: ' + yamlQuote(meta.description));
+  lines.push('  keywords:');
+  for (const k of meta.keywords) lines.push('    - ' + yamlQuote(k));
+  return lines.join('\n');
+}
+
+let ok = 0;
+let fail = [];
+for (const [name, meta] of Object.entries(PAGE_META)) {
+  const p = path.join(DIR, name + '.yaml');
+  if (!fs.existsSync(p)) {
+    fail.push(name + ' (missing)');
+    continue;
+  }
+  let content = fs.readFileSync(p, 'utf8');
+  const lines = content.split('\n');
+  const firstKey = lines.findIndex((l) => l.trim() && !l.startsWith(' '));
+  if (firstKey !== -1 && lines[firstKey].trim() === 'meta:') {
+    let end = firstKey + 1;
+    while (end < lines.length && (lines[end].trim() === '' || lines[end].startsWith(' '))) end++;
+    const newBlock = metaBlock(meta);
+    lines.splice(firstKey, end - firstKey, newBlock);
+    content = lines.join('\n');
+  } else {
+    content = metaBlock(meta) + '\n' + content;
+  }
+  fs.writeFileSync(p, content, 'utf8');
+  ok++;
+}
+console.log('updated', ok, 'files; failures:', fail.length, fail.join(', '));

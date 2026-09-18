@@ -406,6 +406,8 @@ Dashboards: `/internal/seo/{index,brand-os,brand,social,rules,tasks,queries,work
 | `src/lib/link-refactor.ts` | URL/name refactoring engine |
 | `scripts/_gen-seo-meta.cjs` | Generates `src/i18n/generated/seo-meta.ts` |
 | `scripts/_gen-pages.cjs` / `_gen-uiall.cjs` | Generate page modules / ui-all.ts |
+| `TOOLS/tool_instrction.md` | One-off editing/i18n script usage: meta-inject / i18n-merge / i18n-fix / one-off fixers |
+| `TOOLS/meta-inject/*` | SEO meta batch injection (`_inject-meta.cjs` + `_meta-{lang}.cjs` data), unused for builds |
 | `workers/contact-worker/index.ts` | Live `POST /api/contact` handler (validate + Resend email) |
 | `scripts/patch-worker.mjs` | `output: 'server'` only; subdomain routing + KV injection (not in current build) |
 | `scripts/fix-garbled.py` | Encoding/garble repair helpers (see §6; `find-garbled.py`, `check-encoding.py` too) |

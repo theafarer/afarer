@@ -2,7 +2,7 @@
 
 Multilingual (22 languages) B2B water adventure equipment brand platform for **afarer** (SUPs & Accessories only), built on [Astro v6](https://astro.build) with pure static generation (`output:'static'`), deployed to **Cloudflare Pages + 4 Workers**.
 
-**Scale:** 7,564 pages across 22 languages, 0 build errors
+**Scale:** 8,788 pages across 22 languages, 0 build errors
 **Domains:** `afarer.com` (production), `assets.afarer.com` (R2 asset storage)
 
 ---
@@ -19,7 +19,7 @@ yarn install
 npm run dev              # Start dev server at localhost:4321
 
 # Production build
-npm run build            # Full build → dist/ (7564 pages, ~1-2 min)
+npm run build            # Full build → dist/ (8788 pages, ~1-2 min)
 
 # Deploy
 npm run deploy           # Build + Pages deploy
@@ -41,7 +41,7 @@ This section is the fastest path to a correct mental model of the whole site. Re
 | # | File | What you learn |
 |---|------|----------------|
 | 1 | `README.md` §1 | Request flow: CDN → Pages routes → 4 Workers → R2 |
-| 2 | `TECH.md` §2 | Build pipeline: how 7,564 pages are generated from YAML/TS sources |
+| 2 | `TECH.md` §2 | Build pipeline: how 8,788 pages are generated from YAML/TS sources |
 | 3 | `astro.config.ts` | `output: 'static'`, integrations, per-locale config loading (`src/config.{locale}.yaml`) |
 | 4 | `src/i18n/routing.ts` + `src/i18n/config.ts` | Locale/route model: 22 langs, `LOCALIZED_ROUTES`, `localizeHref()` |
 | 5 | `src/data/pages/*.yaml` | Where ALL page content lives (EN root + per-locale dirs) |
@@ -71,6 +71,7 @@ This section is the fastest path to a correct mental model of the whole site. Re
 | Internal dashboards | `src/pages/internal/seo/*` (10 pages) | `/internal/seo/*` |
 | Site search | `src/pages/search-index.json.ts` (static JSON) + `src/pages/search.astro` | `/search-index.json` |
 | Build scripts | `scripts/*` — chain defined in `package.json` `"build"` | see §6.2 |
+| One-off editing/i18n tools | `TOOLS/` — meta-inject / i18n-merge / i18n-fix / one-off scripts + `tool_instrction.md` | intended for manual runs |
 | CI/CD | `.github/workflows/actions.yaml` | push to `main` |
 | Docs | `README.md` (overview), `TECH.md` (deep internals), `AGENTS.md` (agent rules), `docs/b2b-strategy/` (information architecture) | — |
 | Agent skills | `.agents/skills/*.md` (add-page, add-component, add-blog-post, styling) | — |
@@ -225,6 +226,9 @@ All locale URLs use **path-based** format: `afarer.com/fr/products`, `afarer.com
 ├── public/
 │ ├── llms.txt                     # AI brand summary (22-language knowledge graph)
 │ ├── llms-full.txt                # Full AI knowledge base (auto-generated, 22 langs)
+│ ├── favicon.ico / favicon-16x16.png / favicon-32x32.png   # Site favicons
+│ ├── android-chrome-192x192.png / android-chrome-512x512.png  # PWA icons + site logo
+│ ├── apple-touch-icon.png         # iOS bookmark icon
 │ ├── cs/llms.txt                  # Per-locale llms.txt
 │ ├── da/llms.txt
 │ ├── ...
@@ -239,6 +243,7 @@ All locale URLs use **path-based** format: `afarer.com/fr/products`, `afarer.com
 │ ├── admin-worker/                 # Admin auth + GitHub CRUD
 │ └── automation-worker/            # Cron + GEO content generation
 ├── scripts/                        # Build & utility scripts (50+; chain in package.json)
+├── TOOLS/                          # One-off editing/i18n scripts + tool_instrction.md
 ├── .github/workflows/actions.yaml  # CI/CD pipeline
 ├── keystatic.config.ts             # Keystatic CMS config
 ├── wrangler.toml                   # Root Pages config (pages_build_output_dir = dist)

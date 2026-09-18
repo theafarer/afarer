@@ -2,7 +2,7 @@
 
 > **Goal:** Transform afarer.com from a "SUP Manufacturer" site into "The World's Most Trusted Water Adventure Business Partner".
 > **Audience:** Resorts, Paddle Clubs, Rental Operators, Retailers, Distributors, Startup Brand Founders.
-> **Current built:** 7002 pages, ~1m 10s build.
+> **Current built:** 8788 pages, ~1m 40s build.
 
 ---
 
@@ -11,10 +11,64 @@
 ### Header Navigation (Desktop)
 
 ```
-[Logo]  Products  Solutions ▼  Resources ▼  About  Contact  [🌐 Lang] [🔍]
+[Logo]  Products  Explore Afarer ▼  Co-Brand ▼  Country Partners ▼  Support ▼  [🌐 Lang] [🔍] [Find a Distributor] [Get a Quote]
 ```
 
-#### Solutions dropdown
+#### Products dropdown
+
+```
+Products
+├─ SUP Boards                    → /inflatable-sup
+├─ All-Around SUP                → /all-around-sup
+├─ Touring SUP                   → /touring-sup
+├─ Yoga SUP                      → /yoga-sup
+├─ Kids SUP                      → /kids-sup
+├─ Fishing SUP                   → /fishing-sup
+├─ Whitewater SUP                → /whitewater-sup
+├─ Ultra-Stable SUP              → /ultra-stable-sup
+└─ Accessories                   → /sup-accessories
+```
+
+#### Explore Afarer dropdown
+
+```
+Explore Afarer
+├─ Why Afarer                    → /afarer-story
+├─ Technology & Materials        → /technology
+├─ Quality & Safety              → /quality-testing
+├─ Stories & Guides              → /en/journal
+└─ About                         → /en/about
+```
+
+#### Co-Brand dropdown
+
+```
+Co-Brand
+├─ Co-Brand With Afarer          → /co-brand
+├─ For Clubs & Resorts           → /en/solutions/resorts-hotels
+└─ For Retail Partners           → /en/solutions/retail-partners
+```
+
+#### Country Partners dropdown
+
+```
+Country Partners
+├─ Find a Distributor            → /distributor-program
+├─ Become a Country Partner      → /en/contact?subject=Country Partnership Application
+└─ For Distributors              → /en/solutions/distributors
+```
+
+#### Support dropdown
+
+```
+Support
+├─ Warranty & Claims             → /warranty
+├─ FAQ                           → /faq
+├─ Downloads & Manuals           → /resources/download-catalog
+└─ Contact Support               → /en/contact
+```
+
+#### Solution dropdown (legacy plan reference)
 
 ```
 Solutions
@@ -26,29 +80,15 @@ Solutions
 └─ Build Your Own Brand          → /solutions/build-your-own-brand
 ```
 
-#### Resources dropdown
-
-```
-Resources
-├─ Industry Guides               → /resources/industry-guides
-├─ Case Studies                  → /resources/case-studies
-├─ Factory Tour                  → /resources/factory-tour
-├─ Quality Control               → /resources/quality-control
-├─ Certifications                → /resources/certifications
-├─ B2B Catalog Download          → /resources/download-catalog
-└── Blog / Journal               → /journal
-```
-
 ### Footer Navigation
 
 ```
-Products        Solutions                  Resources              Company
-SUP Boards      For Resorts & Hotels       Industry Guides        About Us
-Accessories     For Paddle Clubs           Case Studies           Factory Tour
-Bundles         For Rental Operators       Catalog Download       Quality Control
-                For Retail Partners        B2B Blog               Certifications
-                For Distributors                                 Contact
-                Build Your Own Brand                             Privacy Policy
+Products        Explore Afarer  Co-Brand                Country Partners     Support
+SUP Boards      Why Afarer      Co-Brand With Afarer    Find a Distributor   Warranty & Claims
+Accessories     Technology      For Clubs & Resorts     Become a Country     FAQ
+Bundles         Quality &       For Retail Partners     Partner              Downloads & Manuals
+                Safety                                   For Distributors     Contact Support
+                About
 ```
 
 ---

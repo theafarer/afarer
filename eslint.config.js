@@ -86,6 +86,7 @@ export default [
       'types.generated.d.ts',
       '.astro',
       'scripts/*.cjs',
+      'TOOLS/**/*.cjs',
       'scripts/process-images.mjs',
       'scripts/migrate-domain.mjs',
       'scripts/seed-vectorize.cjs',
