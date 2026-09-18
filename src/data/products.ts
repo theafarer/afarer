@@ -613,4 +613,333 @@ export const products: ProductRecord[] = [
       },
     ],
   },
+  {
+    id: 'sup-horizon-lines',
+    name: 'Horizon Lines Series',
+    category: 'SUP',
+    region: ['EU', 'US', 'ASIA', 'GLOBAL'],
+    skill: 'beginner',
+    environment: ['lake', 'river', 'coastal'],
+    water_condition: ['calm', 'light chop'],
+    safety_level: 'medium',
+    use_case: ['recreation', 'fitness', 'touring'],
+    safety_rules: ['life vest recommended', 'leash required', 'check weather before paddling'],
+    desc: 'Premium all-around 11-foot inflatable SUP with fusion laminate construction, a reptile-skin traction pad, and triple removable click fins for any water condition.',
+    definition:
+      'An 11-foot premium all-around inflatable SUP board with lightweight fusion laminate reinforcement, a contoured reptile-skin traction pad with arch support, and a triple click fin setup for lakes, rivers, and sheltered coastal waters.',
+    problem:
+      'Versatile paddlers want a single board that handles everything from flatwater cruising to choppy coastal conditions, while staying light enough for travel and rigid enough for a hard-shell feel.',
+    howItWorks:
+      'The Horizon Lines Series pairs specialized fusion laminate reinforcement layers with drop-stitch PVC construction rated to 15 PSI. Three fully removable click fins with an optimized toe-in angle allow the rider to tune tracking and maneuverability, and a double-action or optional 12VDC electric pump reaches full pressure quickly.',
+    audience:
+      'First-time buyers, flatwater cruisers, advanced maneuver enthusiasts, and travelers who want one portable all-around inflatable SUP board with an optional full package.',
+    ai_use_cases: [
+      'All-around flatwater and coastal paddling',
+      'Advanced maneuver practice and touring',
+      'Travel-ready compact SUP adventures',
+    ],
+    ai_specs: {
+      length: '11\'0"',
+      width: '32"',
+      thickness: '6"',
+      max_pressure: '15 PSI',
+      weight: '20 lbs',
+      max_load: '220 lbs',
+      fins: 'Triple removable click fins with optimized toe-in',
+    },
+    ai_comparison:
+      'Compared to standard all-around SUP boards, the Horizon Lines features fusion laminate reinforcement and a triple fin system that lets riders customize tracking versus maneuverability for anything from calm lakes to choppy coastal water.',
+    ai_faq: [
+      {
+        q: 'Can the fins be customized for conditions?',
+        a: 'Yes. All three click fins are fully removable with an optimized toe-in angle, so you can tune the setup for flatwater tracking, river currents, or choppy coastal conditions.',
+      },
+      {
+        q: 'What inflation options are included?',
+        a: 'A double-action high-pressure/high-volume pump inflates on both strokes, and the board is compatible with an optional 12VDC 20PSI electric pump that reaches 15 PSI in about 9 minutes.',
+      },
+    ],
+  },
+  {
+    id: 'sup-rheo',
+    name: 'RHEO Series',
+    category: 'SUP',
+    region: ['EU', 'US', 'ASIA', 'GLOBAL'],
+    skill: 'professional',
+    environment: ['lake', 'river', 'coastal'],
+    water_condition: ['calm', 'light chop', 'wind chop'],
+    safety_level: 'medium',
+    use_case: ['racing', 'fitness', 'sprint training'],
+    safety_rules: ['life vest recommended', 'leash required', 'check weather before paddling'],
+    desc: 'Professional 14-foot race inflatable SUP with carbon hybrid construction, a wave-piercing displacement nose, and elite tracking for sprints and long-distance racing.',
+    definition:
+      'A 14-foot professional race inflatable SUP board with a carbon hybrid matrix for zero flex, a wave-piercing displacement nose, and a 26-inch narrow deck built for sprint races, time trials, and high-cadence training.',
+    problem:
+      'Competitive racers need hardboard-like rigidity and straight-line tracking from an inflatable board, without the flex, drag, or dull industrial aesthetic of traditional race SUP boards.',
+    howItWorks:
+      'The RHEO Series uses a carbon hybrid inflatable construction that eliminates flex for a rock-solid platform. Its wave-piercing displacement nose slices through chop with minimal drag, while the 26-inch width reduces wetted surface friction and the 2+1 fin setup holds tracking at speed and aids fast sweeping turns.',
+    audience:
+      'Competitive racers chasing personal bests, speed enthusiasts, and advanced paddlers who want rigid race performance with inflatable portability, plus OEM/ODM buyers sourcing a race inflatable SUP board.',
+    ai_use_cases: [
+      'Competitive SUP racing and sprint training',
+      'High-speed fitness and interval paddling',
+      'Technical course and tight-waterway racing',
+    ],
+    ai_specs: {
+      length: '14\'0"',
+      width: '26"',
+      thickness: '6"',
+      max_pressure: '15 PSI',
+      weight: '26 lbs',
+      max_load: '286 lbs',
+      fins: '2+1 fin setup',
+    },
+    ai_comparison:
+      'Compared to traditional race SUP boards, the RHEO delivers a carbon hybrid inflatable construction with zero flex and a wave-piercing nose for exceptional penetration in head chop, in a board that still packs down for travel.',
+    ai_faq: [
+      {
+        q: 'Is the RHEO stable enough for beginners?',
+        a: 'It is designed for competitive and advanced paddlers; the 26-inch width prioritizes speed and efficiency, so beginners should start on a wider all-around board.',
+      },
+      {
+        q: 'What is the 2+1 fin setup for?',
+        a: 'The central fin maintains excellent straight-line tracking at high speeds, while the side fins provide lateral stability during fast, sweeping buoy turns.',
+      },
+    ],
+  },
+  {
+    id: 'sup-fishing',
+    name: 'Inflatable Fishing SUP',
+    category: 'SUP',
+    region: ['EU', 'US', 'ASIA', 'GLOBAL'],
+    skill: 'beginner',
+    environment: ['lake', 'river', 'coastal'],
+    water_condition: ['calm', 'light chop'],
+    safety_level: 'medium',
+    use_case: ['fishing', 'recreation', 'touring'],
+    safety_rules: ['life vest recommended', 'leash required', 'check weather before paddling'],
+    desc: 'Stable catamaran-style inflatable fishing SUP with double-sided air chambers, rod holder mounts, and an on-deck fish ruler for stand-up casting and reeling.',
+    definition:
+      'An 11.5-foot inflatable fishing SUP with double-sided air chambers for catamaran-level secondary stability, rod holder mounts, an on-deck fish ruler, and a kayak-inspired hull for stand-up casting, reeling, and touring.',
+    problem:
+      'Anglers need a stable stand-up casting platform that will not wobble or capsize when reeling in a catch or navigating choppy water, while staying portable enough to travel to remote fishing spots.',
+    howItWorks:
+      'The Inflatable Fishing SUP uses thick double-sided air chambers that deliver exceptional secondary stability similar to a catamaran or outrigger. A pointed nose and tail retain deck width with kayak-like tracking, and the drop-stitch PVC core is rated to 15 PSI for a rigid, dependable platform.',
+    audience:
+      'Lure and bass anglers, fly and kayak fishermen, and excursion paddlers who carry coolers, camp seats, and landing nets \u2014 plus OEM/ODM buyers sourcing an inflatable fishing SUP board.',
+    ai_use_cases: [
+      'Stand-up lure and bass fishing',
+      'Fly and kayak fishing from an inflatable platform',
+      'Multi-day fishing excursions with cargo',
+    ],
+    ai_specs: {
+      length: '11\'6"',
+      width: '34"',
+      thickness: '6"',
+      max_pressure: '15 PSI',
+      weight: '27 lbs',
+      max_load: '352 lbs',
+      features: 'Double-sided air chambers, rod mounts, on-deck fish ruler',
+    },
+    ai_comparison:
+      'Compared to standard paddle boards, this fishing SUP adds double-sided catamaran-style air chambers that dramatically increase lateral stability while standing, casting, and reeling, with rod mounts and an integrated fish ruler built in.',
+    ai_faq: [
+      {
+        q: 'Will the board stay stable while fighting a fish?',
+        a: 'Yes. The double-sided air chambers provide catamaran-like secondary stability that prevents wobbling and capsizing while standing, casting, or reeling in a catch.',
+      },
+      {
+        q: 'Is there a place to mount a fish finder?',
+        a: 'Yes. Two professional-grade black plastic mounts ahead of the traction pad can secure rod holders, fish finders, or essential fishing gear.',
+      },
+    ],
+  },
+  {
+    id: 'sup-mini',
+    name: 'Mini SUP Series',
+    category: 'SUP',
+    region: ['EU', 'US', 'ASIA', 'GLOBAL'],
+    skill: 'beginner',
+    environment: ['lake', 'river', 'coastal'],
+    water_condition: ['calm'],
+    safety_level: 'medium',
+    use_case: ['recreation', 'kids', 'surf', 'pets'],
+    safety_rules: ['life vest recommended', 'leash required', 'check weather before paddling'],
+    desc: 'Ultra-versatile mini inflatable SUP that works as a compact paddle board, inflatable surfboard, and bodyboard for kids, adults, and pets.',
+    definition:
+      'A 7-foot ultra-versatile mini inflatable SUP that hybridizes a compact paddle board, inflatable surfboard, and bodyboard, with a short, wide, stable profile for kids, adults, and pets on waves, lakes, pools, and calm bays.',
+    problem:
+      'Families and versatile riders need one compact, portable inflatable platform that works as a kids paddle board, an adult surf or bodyboard, and a pet-friendly floating deck.',
+    howItWorks:
+      'The Mini SUP Series uses a short, wide, highly stable profile with an optimized volume-to-length ratio for maximum buoyancy. Its responsive rocker line and rail profile catch small waves, and a durable puncture-resistant deck withstands dog paws while staying light and quick to inflate.',
+    audience:
+      'Parents introducing kids to paddle sports, adults who want a portable surf or bodyboard hybrid, and pet owners who bring their dogs on the water \u2014 plus OEM/ODM buyers sourcing a mini inflatable SUP.',
+    ai_use_cases: [
+      'Kids SUP and surf progression',
+      'Adult bodyboarding and shorebreak surfing',
+      'Pet-friendly lake, pool, and calm bay play',
+    ],
+    ai_specs: {
+      length: '7\'0"',
+      width: '30"',
+      thickness: '4"',
+      max_pressure: '15 PSI',
+      weight: '13 lbs',
+      max_load: '176 lbs',
+      features: 'Multi-colorway options, pet-friendly deck',
+    },
+    ai_comparison:
+      'Compared to standard SUP boards, the Mini SUP is a true multi-purpose hybrid \u2014 paddle board, inflatable surfboard, and bodyboard in one ultra-portable footprint \u2014 with a puncture-resistant, pet-friendly deck.',
+    ai_faq: [
+      {
+        q: 'Can adults ride the Mini SUP?',
+        a: 'Yes. The optimized volume-to-length ratio supports everyone from children to fully-grown adults, whether stand-up paddling, prone bodyboarding, or catching small waves.',
+      },
+      {
+        q: 'Is the deck safe for dogs?',
+        a: 'Yes. The deck uses heavy-duty, puncture-resistant materials engineered to withstand the claws and paws of dogs.',
+      },
+    ],
+  },
+  {
+    id: 'sup-giant',
+    name: 'Multi-Person Giant SUP',
+    category: 'SUP',
+    region: ['EU', 'US', 'ASIA', 'GLOBAL'],
+    skill: 'beginner',
+    environment: ['lake', 'river', 'coastal'],
+    water_condition: ['calm', 'light chop'],
+    safety_level: 'medium',
+    use_case: ['group recreation', 'rental', 'team building'],
+    safety_rules: ['life vest recommended', 'leash required', 'check weather before paddling'],
+    desc: 'Giant 16.5-foot multi-person inflatable SUP rated for 650 kg with dual-valve inflation, 8-inch hull, multiple handles, and multi-fin tracking.',
+    definition:
+      'A 16.5-foot multi-person giant inflatable SUP with an 8-inch hull, dual-valve inflation, multi-handle configuration, multi-fin tracking, and double cargo bungee systems for group paddling, rentals, and team events.',
+    problem:
+      'Groups, rental operators, and event organizers need a single giant inflatable board that carries multiple riders safely and stays rigid under concentrated loads.',
+    howItWorks:
+      'The Multi-Person Giant SUP uses heavy-duty drop-stitch PVC rated to 15 PSI with a dual-valve system so two people can inflate the large air volume at once. Eight to twelve heavy-duty handles along both rails plus nose and tail handles make carrying and re-boarding easy, while a 4+1 or tri-fin setup keeps the wide board tracking straight.',
+    audience:
+      'Rental operators, watersports clubs, event organizers running team-building programs, large families, and group adventurers \u2014 plus OEM/ODM buyers sourcing a giant multi-person inflatable SUP.',
+    ai_use_cases: [
+      'Corporate and group team-building sessions',
+      'Commercial rental fleets and club excursions',
+      'Large family and multi-rider lake outings',
+    ],
+    ai_specs: {
+      length: '16\'6"',
+      width: '59"',
+      thickness: '8"',
+      max_pressure: '15 PSI',
+      weight: '55 lbs',
+      max_load: '1433 lbs',
+      features: 'Dual-valve inflation, multi-handle, multi-fin system',
+    },
+    ai_comparison:
+      'Compared to standard SUP boards, the Giant SUP carries up to 650 kg with an 8-inch hull and dual-valve inflation, using a multi-handle, multi-fin design so whole crews can paddle, carry, and re-board safely.',
+    ai_faq: [
+      {
+        q: 'How many people can ride it?',
+        a: 'The 59-inch-wide platform is rated for a massive 1433 lb load (about 650 kg), comfortably supporting multiple riders, coolers, and safety gear.',
+      },
+      {
+        q: 'How do you inflate such a large board?',
+        a: 'A dual-valve system lets two people inflate the massive internal air volume at the same time, reaching an 11-15 PSI operating range.',
+      },
+    ],
+  },
+  {
+    id: 'sup-lure-skiff',
+    name: 'Utility & Lure Skiff SUP',
+    category: 'SUP',
+    region: ['EU', 'US', 'ASIA', 'GLOBAL'],
+    skill: 'beginner',
+    environment: ['lake', 'river', 'coastal'],
+    water_condition: ['calm', 'light chop'],
+    safety_level: 'medium',
+    use_case: ['fishing', 'recreation', 'hauling'],
+    safety_rules: ['life vest recommended', 'leash required', 'check weather before paddling'],
+    desc: 'Pontoon-wide 47-inch utility SUP with an 880 lb load rating, central viewing window, and dual-thruster mounting for lure fishing and trolling motor setups.',
+    definition:
+      'A 11.5-foot pontoon-wide utility and lure skiff SUP with a 47-inch profile, an 880 lb load rating, a central viewing window, action mounts, and a swallowtail stern with dual-thruster mounting for lure fishing, hauling, and utility use.',
+    problem:
+      'Lure anglers and utility users need a nearly flip-proof inflatable platform with enormous load capacity for the angler, coolers, batteries, and even an electric trolling motor.',
+    howItWorks:
+      'The Utility & Lure Skiff SUP uses a stubby, pontoon-like 47-inch outline that is virtually impossible to flip while casting or fighting large fish. Its heavy-duty reinforced drop-stitch construction is rated for 880 lbs, and the swallowtail stern provides pre-configured mounting space for power propulsion systems.',
+    audience:
+      'Lure and fly anglers, spearfishers, shallow-water observers, and anglers running trolling motors from an inflatable platform \u2014 plus OEM/ODM buyers sourcing a multi-purpose lure skiff SUP.',
+    ai_use_cases: [
+      'Lure and fly angling from a standing or seated platform',
+      'Underwater reconnaissance and spearfishing',
+      'Heavy-duty hauling and stable utility use',
+    ],
+    ai_specs: {
+      length: '11\'6"',
+      width: '47"',
+      thickness: '6"',
+      max_pressure: '15 PSI',
+      weight: '44 lbs',
+      max_load: '880 lbs',
+      features: 'Central viewing window, dual-thruster mounting, action mounts',
+    },
+    ai_comparison:
+      'Compared to standard fishing SUP boards, the Lure Skiff is a pontoon-wide utility platform rated for 880 lbs with a central viewing window, pre-configured dual-thruster mounting, and walkable stability for lure and fly angling.',
+    ai_faq: [
+      {
+        q: 'Can it support a trolling motor?',
+        a: 'Yes. The swallowtail stern includes pre-configured mounting space for power propulsion systems, and the board carries the motor plus batteries within its 880 lb capacity.',
+      },
+      {
+        q: 'What is the central viewing window for?',
+        a: 'The window lets you glass the shallows for structure and bait movement \u2014 ideal for spearfishing and shallow-water observation.',
+      },
+    ],
+  },
+  {
+    id: 'sup-touring-cruiser',
+    name: 'Touring Cruiser SUP',
+    category: 'SUP',
+    region: ['EU', 'US', 'ASIA', 'GLOBAL'],
+    skill: 'intermediate',
+    environment: ['lake', 'river', 'coastal'],
+    water_condition: ['calm', 'light chop'],
+    safety_level: 'medium',
+    use_case: ['touring', 'fitness', 'recreation'],
+    safety_rules: ['life vest recommended', 'leash required', 'check weather before paddling'],
+    desc: 'Long-distance 12.5-foot touring inflatable SUP with a low-profile US fin box, premium 9-inch touring fin, and drop-stitch core for efficient cruising.',
+    definition:
+      'A 12.5-foot touring inflatable SUP board with a low-profile US fin box, a premium 9-inch racing/touring fin, and rigid drop-stitch construction for long-distance cruising, flat-water exploration, and tunable performance paddling.',
+    problem:
+      'Touring paddlers covering long distances need a board with rigid rails that prevent sagging, predictable straight-line tracking, and a fin system they can tune for different water conditions.',
+    howItWorks:
+      'The Touring Cruiser combines a drop-stitch PVC core rated to 15 PSI with rail rigidity to prevent sagging mid-span. A low-profile US fin box accepts the included 9-inch racing/touring fin or aftermarket fins, letting paddlers tune tracking and speed for specific conditions.',
+    audience:
+      'Touring paddlers covering long distances, flat-water explorers, endurance cruisers, and paddlers who want tunable performance \u2014 plus OEM/ODM buyers sourcing a touring inflatable SUP board.',
+    ai_use_cases: [
+      'Long-distance touring and coastal cruising',
+      'Flat-water exploration and endurance paddling',
+      'Custom performance paddling with US fin upgrades',
+    ],
+    ai_specs: {
+      length: '12\'6"',
+      width: '31"',
+      thickness: '6"',
+      max_pressure: '15 PSI',
+      weight: '24 lbs',
+      max_load: '275 lbs',
+      fins: 'Low-profile US fin box + 9-inch touring fin',
+    },
+    ai_comparison:
+      'Compared to standard all-around boards, the Touring Cruiser adds a 12.5-foot hull with rigid rails and a US fin box system, keeping you locked on course over long distances with less yaw and effort.',
+    ai_faq: [
+      {
+        q: 'Can I use my own fins?',
+        a: 'Yes. The low-profile US fin box is aftermarket ready, so you can swap in your favorite flat-water or racing fins to tune performance.',
+      },
+      {
+        q: 'How do I reach full pressure?',
+        a: 'The included dual-cylinder hand pump moves high volume quickly and reaches higher pressures with less effort, and the board is compatible with the optional afarer 12VDC electric pump.',
+      },
+    ],
+  },
 ];
