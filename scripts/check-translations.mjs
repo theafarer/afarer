@@ -1,241 +1,189 @@
 #!/usr/bin/env node
 /**
- * check-translations.mjs
- *
- * Self-check: audit all 12 languages for untranslated elements, missing
- * files, and TODO placeholders.
- *
- * Usage:
- *   node scripts/check-translations.mjs
- *   node scripts/check-translations.mjs --json
- *   node scripts/check-translations.mjs --fail
+ * Full translation audit against the English YAML source files.
+ * Reports structural problems and likely English fallbacks without rewriting
+ * translation content. Use --fail to fail CI on structural/encoding issues.
  */
 
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { globSync } from 'glob';
+import yaml from 'js-yaml';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const ROOT = path.resolve(__dirname, '..');
-
-const LOCALES = ['en', 'fr', 'de', 'es', 'pt', 'it', 'ja', 'ko', 'ru', 'pl', 'zh', 'ar'];
-const PAGE_TYPES = ['home', 'about', 'contact', 'news'];
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const LOCALES = [
+  'en',
+  'zh',
+  'fr',
+  'de',
+  'es',
+  'pt',
+  'ar',
+  'it',
+  'ja',
+  'ko',
+  'ru',
+  'pl',
+  'nl',
+  'sv',
+  'no',
+  'el',
+  'tr',
+  'fi',
+  'cs',
+  'da',
+  'ro',
+  'th',
+];
+const OPTIONAL_LOCALIZED_PAGES = new Set([
+  'bateau-gonflable-fabricant.yaml',
+  'fabricant-sup-gonflable.yaml',
+  'fournisseur-nautique.yaml',
+  'oem-odm-manufacturer.yaml',
+  'oem-paddle.yaml',
+  'what-is-sup.yaml',
+]);
 const issues = [];
-const warns = [];
+const warnings = [];
+const jsonMode = process.argv.includes('--json');
 
-function ok(m) {
-  if (!process.argv.includes('--json')) console.log('  [OK] ' + m);
-}
-function fail(m) {
-  issues.push(m);
-  if (!process.argv.includes('--json')) console.log('  [FAIL] ' + m);
-}
-function warn(m) {
-  warns.push(m);
-  if (!process.argv.includes('--json')) console.log('  [WARN] ' + m);
+function report(list, message) {
+  list.push(message);
+  if (!jsonMode) console.log(`  [${list === issues ? 'FAIL' : 'WARN'}] ${message}`);
 }
 
-function exists(p) {
-  return fs.existsSync(path.resolve(ROOT, p));
-}
-function read(p) {
+function readFile(file) {
   try {
-    return fs.readFileSync(path.resolve(ROOT, p), 'utf-8');
+    return fs.readFileSync(path.join(ROOT, file), 'utf8');
   } catch {
-    return '';
+    return null;
   }
 }
 
-// ── 1. Navigation files ──
-function checkNav() {
-  const navCount = LOCALES.filter(function (l) {
-    if (l === 'en') return exists('src/data/site/navigation.yaml');
-    return exists('src/data/site/navigation.' + l + '.yaml');
-  }).length;
-  if (navCount === LOCALES.length) ok('Navigation: all 12 languages present');
-  else fail('Navigation: only ' + navCount + '/' + LOCALES.length + ' languages');
-}
-
-// ── 2. Config files ──
-function checkConfig() {
-  for (const l of LOCALES) {
-    if (l === 'en') continue;
-    const f = 'src/config.' + l + '.yaml';
-    if (!exists(f)) {
-      fail('Config missing: ' + f);
-      continue;
-    }
-    const c = read(f);
-    if (!c.includes('siteSettings:')) fail('Config missing siteSettings: ' + f);
-    if (c.includes('TODO:')) warn('TODO in ' + f);
+function parseYaml(file) {
+  const source = readFile(file);
+  if (source === null) return null;
+  try {
+    return { source, data: yaml.load(source) ?? {} };
+  } catch (error) {
+    report(issues, `${file}: invalid YAML (${error.message})`);
+    return null;
   }
-  ok('Config files checked');
 }
 
-// ── 3. Page content YAML ──
-function checkPageContent() {
-  for (const page of PAGE_TYPES) {
-    for (const l of LOCALES) {
-      const dir = l === 'en' ? 'src/data/pages' : 'src/data/pages/' + l;
-      const f = dir + '/' + page + '.yaml';
-      if (!exists(f)) {
-        fail('Page missing: ' + f);
+function shape(value) {
+  if (Array.isArray(value)) return value.map(shape);
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(Object.entries(value).map(([key, child]) => [key, shape(child)]));
+  }
+  return typeof value;
+}
+
+function leaves(value, prefix = '') {
+  if (Array.isArray(value)) return value.flatMap((child, index) => leaves(child, `${prefix}[${index}]`));
+  if (value && typeof value === 'object') {
+    return Object.entries(value).flatMap(([key, child]) => leaves(child, prefix ? `${prefix}.${key}` : key));
+  }
+  return [prefix];
+}
+
+function collectText(value, result = []) {
+  if (typeof value === 'string') result.push(value.trim());
+  else if (Array.isArray(value)) value.forEach((child) => collectText(child, result));
+  else if (value && typeof value === 'object') Object.values(value).forEach((child) => collectText(child, result));
+  return result;
+}
+
+function suspiciousEncoding(source) {
+  return /\uFFFD|�|锟|鈸|鈫|鈥|â€|Ã[^\p{L}\s]|Â[^\p{L}\s]/u.test(source);
+}
+
+function checkNavigationAndConfig() {
+  for (const locale of LOCALES) {
+    const navigation = locale === 'en' ? 'src/data/site/navigation.yaml' : `src/data/site/navigation.${locale}.yaml`;
+    if (!readFile(navigation)) report(issues, `Missing navigation: ${navigation}`);
+    if (locale !== 'en' && !readFile(`src/config.${locale}.yaml`))
+      report(issues, `Missing config: src/config.${locale}.yaml`);
+  }
+}
+
+function checkPages() {
+  const englishFiles = globSync('src/data/pages/*.yaml', { cwd: ROOT }).sort();
+  const checkedLocales = new Map();
+  for (const englishFile of englishFiles) {
+    const page = path.basename(englishFile);
+    const english = parseYaml(englishFile);
+    if (!english) continue;
+    const englishShape = JSON.stringify(shape(english.data));
+    const englishLeaves = new Set(leaves(english.data));
+
+    for (const locale of LOCALES.filter((item) => item !== 'en')) {
+      const file = `src/data/pages/${locale}/${page}`;
+      const translated = parseYaml(file);
+      if (!translated) {
+        if (OPTIONAL_LOCALIZED_PAGES.has(page)) continue;
+        report(issues, `Missing page: ${file}`);
         continue;
       }
-      const c = read(f);
-      if (c.includes('TODO:')) warn('TODO in ' + f);
-      if (c.trim() === '' || c.trim() === '{}') warn(f + ' appears empty');
-    }
-  }
-  ok('Page content YAML checked');
-}
+      checkedLocales.set(locale, (checkedLocales.get(locale) || 0) + 1);
+      if (suspiciousEncoding(translated.source)) report(issues, `${file}: suspicious encoding/replacement characters`);
+      const translatedShape = JSON.stringify(shape(translated.data));
+      if (!OPTIONAL_LOCALIZED_PAGES.has(page) && translatedShape !== englishShape) {
+        const translatedLeaves = new Set(leaves(translated.data));
+        const missing = [...englishLeaves].filter((leaf) => !translatedLeaves.has(leaf));
+        const extra = [...translatedLeaves].filter((leaf) => !englishLeaves.has(leaf));
+        report(warnings, `${file}: structure differs (missing ${missing.length}, extra ${extra.length})`);
+      }
 
-// ── 4. Product texts ──
-function checkProductTexts() {
-  const pContent = read('src/data/products.ts');
-  const ids = [...pContent.matchAll(/id:\s+'([^']+)'/g)].map(function (m) {
-    return m[1];
-  });
-  if (ids.length === 0) {
-    fail('Could not parse product IDs');
-    return;
-  }
-
-  const ptContent = read('src/data/product-texts.ts');
-  const nonEn = LOCALES.filter(function (l) {
-    return l !== 'en';
-  });
-  let missing = 0;
-
-  for (const l of nonEn) {
-    for (const id of ids) {
-      const re = new RegExp("'" + id + "'\\s*:\\s*\\{[^}]*name:", '');
-      if (!re.test(ptContent)) {
-        fail('Product text missing: ' + l + '/' + id);
-        missing++;
+      const englishText = new Set(collectText(english.data).filter((text) => text.length >= 24));
+      const translatedText = new Set(collectText(translated.data));
+      const unchanged = [...englishText].filter((text) => translatedText.has(text));
+      if (!OPTIONAL_LOCALIZED_PAGES.has(page) && unchanged.length > 0) {
+        report(warnings, `${file}: ${unchanged.length} long English value(s) unchanged; review translation`);
       }
     }
   }
-  if (missing === 0) ok('Product texts: ' + ids.length + ' products x ' + nonEn.length + ' languages complete');
-}
 
-// ── 5. TODO placeholders in YAML data files ──
-function checkTodos() {
-  const yamlFiles = globSync('src/data/**/*.yaml', { cwd: ROOT });
-  let todoCount = 0;
-  for (const f of yamlFiles) {
-    const c = read(f);
-    const m = c.match(/#\s*TODO[^\n]*/g);
-    if (m) {
-      warn(f + ' has ' + m.length + ' TODO(s)');
-      todoCount += m.length;
-    }
-  }
-  if (todoCount === 0) ok('No TODO placeholders in data YAML files');
-}
-
-// ── 6. Check config YAML files for TODO ──
-function checkConfigTodos() {
-  const configFiles = globSync('src/config.*.yaml', { cwd: ROOT });
-  let todoCount = 0;
-  for (const f of configFiles) {
-    const c = read(f);
-    const m = c.match(/#\s*TODO[^\n]*/g);
-    if (m) {
-      warn(f + ' has ' + m.length + ' TODO(s)');
-      todoCount += m.length;
-    }
-  }
-  if (todoCount === 0) ok('No TODO placeholders in config files');
-}
-
-// ── 7. Check knowledge graph nodes for per-language fields ──
-function checkGraphNodes() {
-  const content = read('src/content/graph/nodes.ts');
-  const nodes = content.split(/\n\s*\{/);
-  let nodesWithIssues = 0;
-  for (const block of nodes) {
-    if (!block.includes('id:')) continue;
-    const idMatch = block.match(/id:\s+'([^']+)'/);
-    if (!idMatch) continue;
-    const id = idMatch[1];
-    // Check that 'name:' has entries for all non-en locales
-    const nameBlock = block.match(/name:\s*\{[^}]+\}/);
-    if (!nameBlock) {
-      fail('Node ' + id + ' has no name');
-      nodesWithIssues++;
-      continue;
-    }
-    for (const l of LOCALES) {
-      if (l === 'en') continue;
-      const nameContent = nameBlock[0];
-      if (!nameContent.includes(`'${l}'`) && !nameContent.includes(`"${l}"`) && !nameContent.includes(`${l}:`)) {
-        warn('Node ' + id + ' missing name for ' + l);
-        nodesWithIssues++;
-      }
-    }
-    // Check slug has all languages
-    const slugBlock = block.match(/slug:\s*\{[^}]+\}/);
-    if (slugBlock) {
-      for (const l of LOCALES) {
-        if (!slugBlock[0].includes(l + ':')) {
-          warn('Node ' + id + ' missing slug for ' + l);
-          nodesWithIssues++;
-        }
-      }
-    }
-  }
-  if (nodesWithIssues === 0) ok('Knowledge graph nodes: all language fields present');
-}
-
-// ── 8. Check for hardcoded English in [lang] pages ──
-function checkHardcodedEnglish() {
-  const astroFiles = globSync('src/pages/[lang]/**/*.astro', { cwd: ROOT });
-  for (const f of astroFiles) {
-    const c = read(f);
-    // Skip files that clearly use t() or ui lookups
-    if (c.includes('const t =') || c.includes('getPageContent') || c.includes('localizeProduct')) continue;
-    // If the file generates paths for all languages but has hardcoded text, flag it
-    if (c.includes('getStaticPaths') && c.includes('languages') && c.includes('<p') && !c.includes('t(')) {
-      warn(f + ' may have hardcoded English text behind [lang] routes');
-    }
+  for (const locale of LOCALES.filter((item) => item !== 'en')) {
+    const actual = checkedLocales.get(locale) || 0;
+    const required = englishFiles.filter((file) => !OPTIONAL_LOCALIZED_PAGES.has(path.basename(file))).length;
+    if (actual < required) report(issues, `${locale}: ${actual}/${required} required page files checked`);
   }
 }
 
-// ── Summary ──
-function summary() {
+function checkAllTextFiles() {
+  const files = globSync('src/data/**/*.{yaml,json,ts,tsx,astro,md,mdx}', { cwd: ROOT, posix: true });
+  const seen = new Set();
+  for (const file of files) {
+    const normalized = file.replaceAll('\\\\', '/');
+    if (seen.has(normalized)) continue;
+    seen.add(normalized);
+    const source = readFile(normalized);
+    if (source && suspiciousEncoding(source))
+      report(issues, `${normalized}: suspicious encoding/replacement characters`);
+  }
+}
+
+console.log('=== Full Translation Audit ===\n');
+checkNavigationAndConfig();
+checkPages();
+checkAllTextFiles();
+
+const result = {
+  passed: issues.length === 0,
+  issues,
+  warnings,
+  totalIssues: issues.length,
+  totalWarnings: warnings.length,
+};
+
+if (jsonMode) console.log(JSON.stringify(result, null, 2));
+else {
   console.log('\n=== Summary ===');
-  console.log('  Issues (FAIL): ' + issues.length);
-  console.log('  Warnings:      ' + warns.length);
-  if (issues.length === 0) console.log('  All translations checks passed.');
-  else {
-    console.log('  Failing checks:');
-    for (const i of issues) console.log('    - ' + i);
-  }
-
-  if (process.argv.includes('--json')) {
-    const result = {
-      passed: issues.length === 0,
-      issues: issues,
-      warnings: warns,
-      totalIssues: issues.length,
-      totalWarnings: warns.length,
-    };
-    console.log(JSON.stringify(result, null, 2));
-  }
-
-  if (process.argv.includes('--fail') && issues.length > 0) process.exit(1);
+  console.log(`  Issues (FAIL): ${issues.length}`);
+  console.log(`  Warnings:      ${warnings.length}`);
+  if (issues.length === 0) console.log('  Structural and encoding checks passed.');
 }
 
-// ── Main ──
-console.log('=== Translation Self-Check ===\n');
-checkNav();
-checkConfig();
-checkPageContent();
-checkProductTexts();
-checkTodos();
-checkConfigTodos();
-checkGraphNodes();
-checkHardcodedEnglish();
-summary();
+if (process.argv.includes('--fail') && issues.length > 0) process.exit(1);

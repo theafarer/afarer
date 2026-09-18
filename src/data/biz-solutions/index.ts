@@ -4906,7 +4906,7 @@ const solutions: BizSolution[] = [
             {
               title: 'Rental Operations Training & Logistics Setup',
               detail:
-                "Afarer's rental operations specialist spent 4 days at Kai's shop in October 2024 optimizing the rental workflow. They implemented a fleet management system using QR-coded boards with a mobile app for check-in/out, damage tracking, and preventive maintenance schedules. Afarer provided 10 heavy-duty battery pumps for same-day fleet turnover and a custom storage rack system maximizing the 600 sq ft warehouse. The training covered inflation protocols (each board inflated to 18 PSI in under 4 minutes), inspection checklists, repair procedures, and customer safety briefings standardized across all rental staff.",
+                "Afarer's rental operations specialist spent 4 days at Kai's shop in October 2024 optimizing the rental workflow. They implemented a fleet management system using QR-coded boards with a mobile app for check-in/out, damage tracking, and preventive maintenance schedules. Afarer provided 10 heavy-duty battery pumps for same-day fleet turnover and a custom storage rack system maximizing the 600 sq ft warehouse. The training covered inflation protocols (each board inflated to 12–15 PSI in under 4 minutes using the battery pumps), inspection checklists, repair procedures, and customer safety briefings standardized across all rental staff.",
             },
             {
               title: 'Pricing Strategy, Launch & Online Booking Integration',

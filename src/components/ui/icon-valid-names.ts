@@ -45,6 +45,7 @@ export const VALID_ICON_NAMES = new Set([
   "tabler:clipboard-check",
   "tabler:clock",
   "tabler:color-swatch",
+  "tabler:compass",
   "tabler:cpu",
   "tabler:crown",
   "tabler:currency-dollar",
@@ -124,4 +125,5 @@ export const VALID_ICON_NAMES = new Set([
 
 export const BROKEN_ICON_NAMES = [
   "tabler:brand-",
+  "tabler:waves",
 ];

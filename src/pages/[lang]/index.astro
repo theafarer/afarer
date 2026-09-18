@@ -33,11 +33,9 @@ const page = getPageContent(lang);
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
 
 const metadata = {
-  title:
-    lang === defaultLang
-      ? 'Inflatable SUP Board Manufacturer – SUP Factory & OEM/ODM Custom Paddle Boards | Afarer'
-      : SITE.name,
-  description: SITE?.description,
+  title: lang === defaultLang ? 'Performance Inflatable SUPs — Go Farther. Ride Stronger. | Afarer' : SITE.name,
+  description:
+    'Afarer designs performance inflatable paddle boards for open water, touring, yoga, and adventure. Drop-stitch rigidity, pressure-tested board by board, backed by a clear warranty.',
   ignoreTitleTemplate: true,
 };
 
@@ -144,7 +142,7 @@ const defaultFaqItems: Array<{ q: string; a: string; category: string }> = [
     q: t('faq.sup.weight') || 'What is the weight limit?',
     a:
       t('faq.sup.weight.a') ||
-      'Our All-Around SUPs support up to 220 lbs. Touring and Yoga series support up to 250 lbs.',
+      'Rider weight guidance is published on each product page — check board capacity, recommended PSI, and sizing notes to find your fit.',
     category: 'sup',
   },
   {
@@ -206,7 +204,7 @@ for (const cat of catalogCategories) {
     <p>
       {
         t('ai.entity') ||
-          'Afarer is a premier OEM/ODM manufacturer of high-performance inflatable SUP boards, backed by a vertically integrated factory with 200+ skilled workers and 15,000+ units annual capacity.'
+          'Afarer is a performance-led water sports brand creating distinctive inflatable SUPs for people who go farther, ride harder, and see more from the water.'
       }
     </p>
   </section>
@@ -214,7 +212,7 @@ for (const cat of catalogCategories) {
     <p>
       {
         t('ai.definition') ||
-          'Afarer manufactures inflatable SUPs, accessories, and safety equipment for recreational and professional water sports.'
+          'Afarer designs and builds inflatable SUPs, accessories, and safety equipment for recreational and performance water sports.'
       }
     </p>
   </section>
@@ -246,7 +244,7 @@ for (const cat of catalogCategories) {
     <p>
       {
         t('ai.process') ||
-          "Afarer's OEM/ODM process: (1) Specification & design brief, (2) 3D mold prototyping, (3) Sample production and CE compliance, (4) Bulk production with inline QC, (5) FOB Qingdao global shipping."
+          'Afarer boards are built around a high-density drop-stitch core with reinforced rails and fusion-laminated seams. Each board is pressure-tested and visually inspected before packing. Design partnership runs from concept, 3D design, and prototyping to inspected production and global logistics.'
       }
     </p>
   </section>
@@ -271,16 +269,16 @@ for (const cat of catalogCategories) {
             class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-white/50 mb-6"
           >
             <span class="w-8 h-px bg-primary"></span>
-            {page.hero?.tagline || t('hero.since') || 'Premium Inflatable SUP Solutions'}
+            {page.hero?.tagline || t('hero.since') || 'Performance Inflatable SUP Boards'}
           </span>
           <h1
             class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] text-balance text-white"
-            set:html={page.hero?.title || 'Premium Inflatable SUP Manufacturer<br />&amp; OEM Partner'}
+            set:html={page.hero?.title || 'Go Farther.<br />Ride Stronger.'}
           />
           <p
             class="mt-6 text-lg md:text-xl text-white/70 max-w-2xl text-pretty leading-relaxed"
             set:html={page.hero?.subtitle ||
-              'Designing and manufacturing inflatable paddle boards for global brands, resorts, paddle clubs and water adventure businesses. OEM/ODM partner with 12,000m² facility and CE-certified production.'}
+              'Performance inflatable SUPs designed for open water, long days, and the freedom to explore — stable when it matters, rigid under pressure.'}
           />
           <div class="mt-10 flex items-center gap-4 flex-wrap">
             {
@@ -307,17 +305,17 @@ for (const cat of catalogCategories) {
               !page.hero?.actions?.length && (
                 <>
                   <a
-                    href={'/' + lang + '/solutions'}
+                    href={'/' + lang + '/inflatable-sup'}
                     class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5"
                   >
-                    {t('cta.resorts') || 'Start Your Club / Resort Project'}
+                    {t('cta.explore') || 'Explore Boards'}
                     <span class="text-lg">→</span>
                   </a>
                   <a
-                    href={'/' + lang + '/oem-odm-manufacturer'}
+                    href={'/' + lang + '/size-guide'}
                     class="inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white/80 font-medium rounded-full hover:bg-white/10 hover:text-white transition-all backdrop-blur-sm"
                   >
-                    {t('cta.oem') || 'Launch Your SUP Brand'}
+                    {t('home.preview.title') || 'Find Your Ride'}
                   </a>
                 </>
               )
@@ -429,34 +427,38 @@ for (const cat of catalogCategories) {
             class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary mb-6"
           >
             <span class="w-8 h-px bg-primary"></span>
-            {t('home.brand.tagline') || 'Why Choose Afarer'}
+            {t('home.brand.tagline') || 'The Afarer Difference'}
           </span>
           <h2
             class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-balance text-secondary"
-            set:html={t('home.brand.title') || 'Why Global Brands<br />Choose Afarer'}
+            set:html={t('home.brand.title') || 'Why Afarer<br />Rides Different'}
           />
           <p class="mt-6 text-lg text-gray-500 leading-relaxed max-w-lg text-pretty">
             {
               t('home.brand.desc') ||
-                'Vertically integrated inflatable SUP manufacturer with 12,000m² facility, 200+ skilled workers, and 15,000+ units annual capacity. CE, ISO 9001, and BSCI certified production lines.'
+                'Every Afarer board starts with the water — its currents, conditions, and the people who ride it. High-density drop-stitch cores, reinforced rails, and shapes tuned for stability and glide, then pressure-tested board by board.'
             }
           </p>
           <div class="mt-8 grid grid-cols-2 gap-6">
             <div>
               <span class="text-3xl font-bold text-primary">{t('home.brand.years') || '10+'}</span>
-              <p class="text-sm text-gray-400 mt-1">{t('home.brand.years.label') || 'Years Experience'}</p>
+              <p class="text-sm text-gray-400 mt-1">{t('home.brand.years.label') || 'Years Riding & Refining'}</p>
             </div>
             <div>
-              <span class="text-3xl font-bold text-primary">{t('home.brand.facility') || '12,000m²'}</span>
-              <p class="text-sm text-gray-400 mt-1">{t('home.brand.facility.label') || 'Manufacturing Facility'}</p>
+              <span class="text-3xl font-bold text-primary">{t('home.brand.facility') || '12–15 PSI'}</span>
+              <p class="text-sm text-gray-400 mt-1">{t('home.brand.facility.label') || 'Drop-Stitch Core Rigidity'}</p>
             </div>
             <div>
-              <span class="text-3xl font-bold text-primary">{t('home.brand.workers') || '200+'}</span>
-              <p class="text-sm text-gray-400 mt-1">{t('home.brand.workers.label') || 'Skilled Workers'}</p>
+              <span class="text-3xl font-bold text-primary">{t('home.brand.workers') || '100%'}</span>
+              <p class="text-sm text-gray-400 mt-1">
+                {t('home.brand.workers.label') || 'Pressure-Tested Board by Board'}
+              </p>
             </div>
             <div>
               <span class="text-3xl font-bold text-primary">{t('home.brand.certified') || 'CE, ISO'}</span>
-              <p class="text-sm text-gray-400 mt-1">{t('home.brand.certified.label') || 'ISO 9001 · BSCI · REACH'}</p>
+              <p class="text-sm text-gray-400 mt-1">
+                {t('home.brand.certified.label') || 'Verifiable Safety & Quality Standards'}
+              </p>
             </div>
           </div>
           <div class="mt-8 flex flex-wrap gap-3">
@@ -727,38 +729,41 @@ for (const cat of catalogCategories) {
       <div class="text-center max-w-3xl mx-auto mb-16 reveal">
         <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-white/40 mb-4">
           <span class="w-8 h-px bg-primary"></span>
-          {t('home.factory.tagline') || 'Manufacturing'}
+          {t('home.factory.tagline') || 'Tested for Real Water'}
         </span>
         <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-white">
-          {t('home.factory.title') || 'Professional Manufacturing Excellence'}
+          {t('home.factory.title') || 'Quality Built In, Proven On the Water'}
         </h2>
         <p class="mt-4 text-lg text-white/60 max-w-2xl mx-auto">
-          {t('home.factory.subtitle') || 'Vertically integrated production with end-to-end quality control.'}
+          {
+            t('home.factory.subtitle') ||
+              'Design, materials, and inspection work together so every board is rigid, durable, and ride-ready.'
+          }
         </p>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 reveal">
         <div class="text-center">
           <span class="text-4xl md:text-5xl font-bold text-white">{t('home.factory.years') || '10+'}</span>
           <p class="mt-2 text-sm text-white/50 uppercase tracking-wider">
-            {t('home.factory.years.label') || 'Years Experience'}
+            {t('home.factory.years.label') || 'Years Designing for the Water'}
           </p>
         </div>
         <div class="text-center">
-          <span class="text-4xl md:text-5xl font-bold text-white">{t('home.factory.facility') || '12,000m²'}</span>
+          <span class="text-4xl md:text-5xl font-bold text-white">{t('home.factory.facility') || '12–15 PSI'}</span>
           <p class="mt-2 text-sm text-white/50 uppercase tracking-wider">
-            {t('home.factory.facility.label') || 'Manufacturing Facility'}
+            {t('home.factory.facility.label') || 'Drop-Stitch Working Pressure'}
           </p>
         </div>
         <div class="text-center">
-          <span class="text-4xl md:text-5xl font-bold text-white">{t('home.factory.workers') || '200+'}</span>
+          <span class="text-4xl md:text-5xl font-bold text-white">{t('home.factory.quality') || '100%'}</span>
           <p class="mt-2 text-sm text-white/50 uppercase tracking-wider">
-            {t('home.factory.workers.label') || 'Skilled Workers'}
+            {t('home.factory.quality.label') || 'Pressure-Tested & Inspected'}
           </p>
         </div>
         <div class="text-center">
-          <span class="text-4xl md:text-5xl font-bold text-white">{t('home.factory.global') || 'Global'}</span>
+          <span class="text-4xl md:text-5xl font-bold text-white">{t('home.factory.global') || '50+'}</span>
           <p class="mt-2 text-sm text-white/50 uppercase tracking-wider">
-            {t('home.factory.global.label') || 'OEM & ODM Partner'}
+            {t('home.factory.global.label') || 'Countries on the Water'}
           </p>
         </div>
       </div>
@@ -767,7 +772,7 @@ for (const cat of catalogCategories) {
           href={'/' + lang + '/factory'}
           class="inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white font-medium rounded-full hover:bg-white/10 transition-all"
         >
-          {t('home.factory.tour') || 'Tour Our Factory'} →
+          {t('home.factory.tour') || 'See How It’s Built'} →
         </a>
       </div>
     </div>
@@ -781,14 +786,14 @@ for (const cat of catalogCategories) {
           <div class="text-center max-w-3xl mx-auto mb-16 reveal">
             <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary mb-4">
               <span class="w-8 h-px bg-primary" />
-              {page.oem_section?.tagline || 'Launch Your Brand'}
+              {page.oem_section?.tagline || 'Afarer Studio'}
             </span>
             <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-secondary">
-              {page.oem_section?.title || 'From Idea To Market In 16 Weeks'}
+              {page.oem_section?.title || 'From Idea to Water — Design Partnership at Scale'}
             </h2>
             <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
               {page.oem_section?.subtitle ||
-                'Your complete SUP brand launch partner — design, prototype, manufacture, and ship.'}
+                'For retailers and emerging brands that want more than a catalog product: collaborative design, practical engineering, and products built to perform at scale.'}
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 reveal">
@@ -809,7 +814,7 @@ for (const cat of catalogCategories) {
               }
               class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
             >
-              {page.oem_section?.cta || 'Start Your Brand Journey'}
+              {page.oem_section?.cta || 'Start a Design Project'}
               <span>→</span>
             </a>
           </div>
@@ -895,7 +900,10 @@ for (const cat of catalogCategories) {
           {page.proof_points?.title || 'Trusted by Water Businesses Worldwide'}
         </h2>
         <p class="mt-4 text-lg text-white/60 max-w-2xl mx-auto">
-          {page.proof_points?.subtitle || 'Decades of marine engineering experience powering profitable SUP programs.'}
+          {
+            page.proof_points?.subtitle ||
+              'Design, performance, and quality you can verify — on the water and in the numbers.'
+          }
         </p>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 reveal">
@@ -1039,7 +1047,7 @@ for (const cat of catalogCategories) {
         <span
           class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-amber-600 group-hover:gap-2 transition-all"
         >
-          {t('home.factory.tour') || 'Tour Factory'} →
+          {t('home.resources.factoryTour.cta') || 'Tour Factory'} →
         </span>
       </a>
     </div>
@@ -1068,12 +1076,15 @@ for (const cat of catalogCategories) {
       <div class="space-y-1.5 text-sm text-gray-700 dark:text-slate-300 leading-relaxed">
         <p>
           <strong>Afarer</strong>
-          {t('home.ai.desc1') || 'designs and manufactures professional-grade inflatable water sports equipment.'}
+          {
+            t('home.ai.desc1') ||
+              'designs and builds performance inflatable water sports equipment for riders and operators.'
+          }
         </p>
         <p>
           {
             t('home.ai.desc2') ||
-              'Every product is CE certified, built from marine-grade PVC or Hypalon with drop-stitch construction.'
+              'Boards pair marine-grade materials with a drop-stitch core for rigid, stable performance at 12–15 PSI.'
           }
         </p>
       </div>
@@ -1679,19 +1690,22 @@ for (const cat of catalogCategories) {
                 <span class="text-[#06b6d4] mt-0.5">&#10003;</span>
                 {
                   t('home.why.afarer.point1') ||
-                    'Unbreakable — built with High-Density PVC to endure the toughest conditions.'
+                    'Rigid when it matters — high-density drop-stitch core and reinforced rails that stay stiff under pressure.'
                 }
               </li>
               <li class="flex gap-2">
                 <span class="text-[#06b6d4] mt-0.5">&#10003;</span>
                 {
                   t('home.why.afarer.point2') ||
-                    'Precision-engineered — flawless seams and airtight integrity for worry-free adventures.'
+                    'Precision-built — fusion-laminated seams and airtight integrity, pressure-tested board by board.'
                 }
               </li>
               <li class="flex gap-2">
                 <span class="text-[#06b6d4] mt-0.5">&#10003;</span>
-                {t('home.why.afarer.point3') || 'Relentlessly tested — proven to outperform, outlast, and outshine.'}
+                {
+                  t('home.why.afarer.point3') ||
+                    'Ride-validated — tuned in real water for stability, glide, and control.'
+                }
               </li>
             </ul>
             <a
@@ -1714,7 +1728,10 @@ for (const cat of catalogCategories) {
             <ul class="mt-3 text-sm text-gray-500 space-y-2">
               <li class="flex gap-2">
                 <span class="text-[#06b6d4] mt-0.5">&#10003;</span>
-                {t('home.why.afarer.warranty.point1') || '100% satisfaction guarantee on every order.'}
+                {
+                  t('home.why.afarer.warranty.point1') ||
+                    'Clear warranty terms on every board, with responsive after-sales support.'
+                }
               </li>
               <li class="flex gap-2">
                 <span class="text-[#06b6d4] mt-0.5">&#10003;</span>
@@ -1724,7 +1741,7 @@ for (const cat of catalogCategories) {
                 <span class="text-[#06b6d4] mt-0.5">&#10003;</span>
                 {
                   t('home.why.afarer.warranty.point3') ||
-                    'OEM/ODM partnerships with complete supply chain transparency.'
+                    'Full supply-chain transparency for clubs, retailers, and brand partners.'
                 }
               </li>
             </ul>
@@ -1776,34 +1793,34 @@ for (const cat of catalogCategories) {
     <div class="max-w-6xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-12">
         <span class="text-sm font-semibold text-[#06b6d4] tracking-[0.15em] uppercase"
-          >{t('home.social.tagline') || 'Social Proof'}</span
+          >{t('home.socialProof.tagline') || 'On the Water'}</span
         >
         <h2 class="mt-4 text-4xl font-bold text-gray-900">
-          {t('home.social.title') || 'Trusted by businesses worldwide'}
+          {t('home.socialProof.title') || 'Ridden & trusted on real water'}
         </h2>
         <p class="mt-4 text-lg text-gray-500">
-          {t('home.social.subtitle') || 'Join 500+ B2B partners across 50+ countries.'}
+          {t('home.socialProof.subtitle') || 'A growing community of paddlers and operators in 50+ countries.'}
         </p>
       </div>
       <div class="flex flex-wrap justify-center gap-6 md:gap-12 text-gray-400">
         <div class="flex flex-col items-center gap-1">
           <span class="text-3xl font-bold text-gray-900">500+</span><span class="text-xs uppercase tracking-wide"
-            >{t('home.social.partners') || 'B2B Partners'}</span
+            >{t('home.socialProof.partners') || 'Paddlers & Partners'}</span
           >
         </div>
         <div class="flex flex-col items-center gap-1">
           <span class="text-3xl font-bold text-gray-900">50+</span><span class="text-xs uppercase tracking-wide"
-            >{t('home.social.countries') || 'Countries'}</span
+            >{t('home.socialProof.countries') || 'Countries'}</span
           >
         </div>
         <div class="flex flex-col items-center gap-1">
           <span class="text-3xl font-bold text-gray-900">15+</span><span class="text-xs uppercase tracking-wide"
-            >{t('home.social.years') || 'Years Experience'}</span
+            >{t('home.socialProof.years') || 'Years Experience'}</span
           >
         </div>
         <div class="flex flex-col items-center gap-1">
           <span class="text-3xl font-bold text-gray-900">99.7%</span><span class="text-xs uppercase tracking-wide"
-            >{t('home.social.quality') || 'Quality Rate'}</span
+            >{t('home.socialProof.quality') || 'Pass-Rate on Final Inspection'}</span
           >
         </div>
       </div>
@@ -1899,7 +1916,7 @@ for (const cat of catalogCategories) {
         {t('home.community.title') || 'Real Riders. Real Adventures.'}
       </h2>
       <p class="mt-4 text-lg text-gray-500">
-        {t('home.community.subtitle') || 'Join thousands exploring lakes, rivers, and coastlines with Afarer.'}
+        {t('home.community.subtitle') || 'Real riders sharing real sessions on lakes, rivers, and coastlines.'}
       </p>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
