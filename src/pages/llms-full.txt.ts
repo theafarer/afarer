@@ -55,7 +55,7 @@ export async function GET() {
           '- Production: Drop-stitch SUP boards, welded PVC boards, glued Hypalon tubes, foam/inflatable PFDs',
           '- Certifications: CE, UKCA, FCC',
           '- Capacity: 15,000+ boats/year, 200+ workers, 14 R&D engineers',
-          '- OEM/ODM: MOQ 5-10 units (SUP)',
+          '- OEM/ODM: MOQ 50 units (SUP)',
         ],
       },
       {

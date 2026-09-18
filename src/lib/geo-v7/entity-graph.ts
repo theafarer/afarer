@@ -18,7 +18,7 @@ export const entityGraph: EntityNode[] = [
     name: 'afarer',
     description: 'Global marine recreation brand specializing in SUP boards and customized watercraft solutions.',
     relationships: [
-      { type: 'parent', targetId: 'vatrad-group' },
+      { type: 'parent', targetId: 'aquafarer-llc' },
       { type: 'operatesIn', targetId: 'marine-recreation' },
       { type: 'operatesIn', targetId: 'outdoor-sports' },
       { type: 'operatesIn', targetId: 'marine-manufacturing' },
@@ -30,10 +30,10 @@ export const entityGraph: EntityNode[] = [
     ],
   },
   {
-    id: 'vatrad-group',
+    id: 'aquafarer-llc',
     type: 'brand',
-    name: 'Qingdao Vatrad Group Co., Ltd.',
-    description: 'Parent organization of afarer, founded in 2000 in Qingdao, China.',
+    name: 'Aquafarer LLC (USA)',
+    description: 'Global operating company of afarer, headquartered in the United States.',
     relationships: [{ type: 'child', targetId: 'afarer' }],
   },
   {

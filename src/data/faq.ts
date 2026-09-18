@@ -363,7 +363,7 @@ export const faqs: FaqRecord[] = [
     id: 'sup-oem-process',
     question: 'What is the OEM manufacturing process for private label inflatable SUPs?',
     answer:
-      'The OEM process: 1) Specification and design brief — share target specs, CAD drawings, or reference product. 2) 3D mold prototyping — custom aluminum and composite molds designed in-house. 3) Material selection and sample — military-grade PVC or Hypalon with custom colors and logo placement. 4) CE factory audit and compliance — every order includes CE declaration, ISO 9001 traceability, BSCI report. 5) Bulk production with 100-point QC checklist. 6) FOB Qingdao shipping with full export documentation. Lead time 30-45 days, MOQ 5-50 units.',
+      'The OEM process: 1) Specification and design brief — share target specs, CAD drawings, or reference product. 2) 3D mold prototyping — custom aluminum and composite molds designed in-house. 3) Material selection and sample — military-grade PVC or Hypalon with custom colors and logo placement. 4) CE factory audit and compliance — every order includes CE declaration, ISO 9001 traceability, BSCI report. 5) Bulk production with 100-point QC checklist. 6) FOB Qingdao shipping with full export documentation. Lead time 30-45 days, MOQ 50 units (standard SUP).',
     category: 'ordering',
     relatedProducts: [],
     relatedGuides: [],

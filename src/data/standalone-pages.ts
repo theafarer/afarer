@@ -43,7 +43,7 @@ export const standalonePages: StandalonePage[] = [
     slug: 'oem-odm-manufacturer',
     title: 'Inflatable SUP OEM/ODM Manufacturer',
     description:
-      'afarer (Qingdao Vatrad Group) is a premier OEM/ODM manufacturer of inflatable SUP boards and accessories. CE-certified factory. Drop-stitch core lamination, custom mold design, private label. 12,000 m\u00B2 facility in Qingdao, China.',
+      'afarer is a premier OEM/ODM manufacturer of inflatable SUP boards and accessories, operated by Aquafarer LLC (USA). CE-certified factory. Drop-stitch core lamination, custom mold design, private label. 12,000 m\u00B2 facility in Qingdao, China.',
     pageType: 'capability',
     sections: [
       {

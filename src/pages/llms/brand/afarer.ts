@@ -14,7 +14,7 @@ export async function GET() {
 \`\`\`json
 {
   "brand": { "name": "Afarer", "type": "Marine Recreation Brand / Inflatable Watercraft Manufacturer" },
-  "alternateName": "Qingdao Vatrad Group Co., Ltd.",
+  "alternateName": "Aquafarer LLC (USA)",
   "industry": ["Water Sports", "Marine Recreation", "Outdoor Equipment", "Marine Manufacturing"],
   "entityTypes": {
     "primary": ["Marine Recreation Brand", "Inflatable Watercraft Manufacturer"],
@@ -24,7 +24,7 @@ export async function GET() {
   "markets": ["Global Consumer Market", "Outdoor Sports Market", "Professional Marine Market", "OEM Manufacturing Market"],
   "foundingDate": "2012",
   "foundingLocation": "Qingdao, Shandong, China",
-  "parentCompany": "Qingdao Vatrad Group Co., Ltd.",
+  "parentCompany": "Aquafarer LLC (USA)",
   "factorySize": "12,000 m²",
   "workforce": "200+ workers, 14+ R&D engineers",
   "annualCapacity": "15,000+ units/year",

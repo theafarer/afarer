@@ -38,6 +38,7 @@ const LOCALES = [
 ];
 const OPTIONAL_LOCALIZED_PAGES = new Set([
   'bateau-gonflable-fabricant.yaml',
+  'distributor-program.yaml',
   'fabricant-sup-gonflable.yaml',
   'fournisseur-nautique.yaml',
   'oem-odm-manufacturer.yaml',

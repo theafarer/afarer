@@ -32,6 +32,39 @@ const page = getPageContent(lang);
 
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
 
+const distributorDefault = {
+  tagline: 'Global Partner Program',
+  title: 'Sell Afarer in Your Market',
+  subtitle:
+    'A one-country-one-distributor program with territory exclusivity, dealer pricing, marketing support, and a dedicated Distributor Success Program.',
+  benefits: [
+    {
+      title: 'Territory Exclusivity',
+      description: 'One authorized distributor per country or region — no internal competition, no channel conflict.',
+    },
+    {
+      title: 'Direct-Factory Margins',
+      description: 'Distributor price lists and annual rebates on committed volumes, shipped FOB Qingdao.',
+    },
+    {
+      title: 'Marketing & Training Support',
+      description: 'Co-branded assets, dealer POS materials, product training, and launch campaigns.',
+    },
+    {
+      title: 'Dedicated Account Team',
+      description: 'A personal distributor manager plus onboarding, forecasting, and reorder support.',
+    },
+  ],
+  actions: [
+    { variant: 'primary', text: 'Become a Distributor', href: '/distributor-program' },
+    { text: 'Request Dealer Price List', href: '/contact?subject=Dealer Price List' },
+    { text: 'Apply for Country Partnership', href: '/contact?subject=Country Partnership Application' },
+    { text: 'Download Distributor Program', href: '/distributor-program' },
+  ],
+  note: 'Minimum first order of 100–300 units for Country/Regional Distributors. Trial orders from 10–30 units.',
+};
+const distributor = { ...distributorDefault, ...(page.distributor || {}) };
+
 const metadata = {
   title: lang === defaultLang ? 'Performance Inflatable SUPs — Go Farther. Ride Stronger. | Afarer' : SITE.name,
   description:
@@ -327,6 +360,60 @@ for (const cat of catalogCategories) {
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
       <span class="text-xs font-medium tracking-widest text-white/40 uppercase">{t('hero.scroll') || 'Scroll'}</span>
       <div class="w-px h-12 bg-gradient-to-b from-white/30 to-transparent"></div>
+    </div>
+  </section>
+
+  <!-- Distributor Program -->
+  <section
+    class="relative py-20 md:py-28 px-6 overflow-hidden bg-gradient-to-br from-[#0A2540] via-secondary to-[#003049]"
+    id="distributor"
+    data-ai-block="distributor"
+  >
+    <div class="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-primary/10 blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-32 w-[400px] h-[400px] rounded-full bg-primary/5 blur-3xl"></div>
+    <div class="relative z-10 max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto">
+        <span
+          class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary/80 mb-6"
+        >
+          <span class="w-8 h-px bg-primary"></span>
+          {distributor.tagline}
+        </span>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-balance text-white">{distributor.title}</h2>
+        <p class="mt-6 text-lg text-white/60 max-w-2xl mx-auto">{distributor.subtitle}</p>
+      </div>
+      <div class="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {
+          distributor.benefits.map((b: any) => (
+            <div class="bg-white/5 backdrop-blur rounded-2xl p-7 border border-white/10">
+              <h3 class="text-lg font-semibold text-white">{b.title}</h3>
+              <p class="mt-2 text-sm text-white/60">{b.description}</p>
+            </div>
+          ))
+        }
+      </div>
+      <div class="mt-12 flex flex-wrap items-center justify-center gap-4">
+        {
+          distributor.actions.map((act: any) =>
+            act.variant === 'primary' ? (
+              <a
+                href={act.href.startsWith('/') ? '/' + lang + act.href : act.href}
+                class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5"
+              >
+                {act.text} <span class="text-lg">→</span>
+              </a>
+            ) : (
+              <a
+                href={act.href.startsWith('/') ? '/' + lang + act.href : act.href}
+                class="inline-flex items-center gap-2 px-8 py-4 border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-all"
+              >
+                {act.text}
+              </a>
+            )
+          )
+        }
+      </div>
+      <p class="mt-8 text-center text-sm text-white/40">{distributor.note}</p>
     </div>
   </section>
 
@@ -2285,7 +2372,7 @@ for (const cat of catalogCategories) {
           addressCountry: 'China',
         },
       },
-      parentOrganization: { '@type': 'Organization', name: 'Qingdao Vatrad Group Co., Ltd.', foundingDate: '2000' },
+      parentOrganization: { '@type': 'Organization', name: 'Aquafarer LLC (USA)' },
       numberOfEmployees: { '@type': 'QuantitativeValue', minValue: 200, maxValue: 300 },
       address: {
         '@type': 'PostalAddress',

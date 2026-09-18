@@ -37,7 +37,7 @@ const aboutMap: Array<{ pattern: RegExp; about: Array<{ name: string; descriptio
       {
         name: 'Afarer brand entity',
         description:
-          'Complete Afarer company profile: founding history, parent company Vatrad Group, product ecosystem, global markets, certifications, and brand assets',
+          'Complete Afarer company profile: founding history, operating company Aquafarer LLC (USA), product ecosystem, global markets, certifications, and brand assets',
       },
     ],
   },

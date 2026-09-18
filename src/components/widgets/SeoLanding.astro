@@ -25,6 +25,7 @@ const stats = page.stats ?? [];
 const features = page.features ?? {};
 const faqs = page.faqs ?? {};
 const cta = page.cta ?? {};
+const table = page.table ?? {};
 const geo = page.geo ?? {};
 
 const cleanMeta = (s: string) =>
@@ -70,6 +71,46 @@ const faqItems = (faqs.items || []).map((f: any) => ({ question: f.title, answer
     items={features.items}
     columns={features.columns || 3}
   />
+
+  {
+    table.title && (
+      <section class="max-w-6xl mx-auto px-6 py-16">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary">{table.title}</h2>
+          {table.subtitle && <p class="mt-4 text-lg text-gray-500">{table.subtitle}</p>}
+        </div>
+        <div class="overflow-x-auto rounded-2xl border border-gray-200 dark:border-slate-700 shadow-sm">
+          <table class="w-full text-left text-sm bg-white dark:bg-slate-900">
+            <thead class="bg-gray-50 dark:bg-slate-800">
+              <tr>
+                {(table.head || []).map((h: string) => (
+                  <th class="px-6 py-4 font-semibold text-secondary" scope="col">
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200 dark:divide-slate-700">
+              {(table.rows || []).map((row: string[]) => (
+                <tr class="hover:bg-gray-50 dark:hover:bg-slate-800/50">
+                  {row.map((cell: string, i: number) => (
+                    <td
+                      class={`px-6 py-4 text-gray-600 dark:text-slate-300 ${
+                        i === 0 ? 'font-medium text-secondary' : ''
+                      }`}
+                    >
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        {table.caption && <p class="mt-3 text-xs text-gray-400">{table.caption}</p>}
+      </section>
+    )
+  }
 
   {
     geo.sentence && (
