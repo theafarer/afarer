@@ -33,8 +33,8 @@ const page = getPageContent(lang);
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
 
 const distributorDefault = {
-  tagline: 'Global Partner Program',
-  title: 'Sell Afarer in Your Market',
+  tagline: 'Country Exclusive Distributors',
+  title: 'One Country. One Official Afarer Distributor.',
   subtitle:
     'A one-country-one-distributor program with territory exclusivity, dealer pricing, marketing support, and a dedicated Distributor Success Program.',
   benefits: [
@@ -61,7 +61,7 @@ const distributorDefault = {
     { text: 'Apply for Country Partnership', href: '/contact?subject=Country Partnership Application' },
     { text: 'Download Distributor Program', href: '/distributor-program' },
   ],
-  note: 'Minimum first order of 100–300 units for Country/Regional Distributors. Trial orders from 10–30 units.',
+  note: 'Sample orders from 5–10 units. Trial orders 10–30. Authorized Dealer 30–50. Country/Regional Distributor 100–300+.',
 };
 const distributor = { ...distributorDefault, ...(page.distributor || {}) };
 
@@ -227,9 +227,9 @@ for (const cat of catalogCategories) {
 <Layout metadata={metadata}>
   <meta
     name="ai-intent"
-    content="oem-odm-inflatable-boat-manufacturing,drop-stitch-sup-factory,china-sup-board-manufacturer,private-label-sup-board-manufacturer,b2b-water-sports-equipment-wholesale,marine-pvc-boat-production,custom-inflatable-product-mold"
+    content="inflatable-sup-board-brand,performance-inflatable-sup,country-sup-distributor,co-branded-paddle-board,collections,all-around-sup,touring-sup,safety-approved-sup"
   />
-  <meta name="last-modified" content="2026-06-23" />
+  <meta name="last-modified" content="2026-09-18" />
   <meta name="X-Robots-Tag" content="index, follow" />
 
   <!-- AI Semantic Blocks -->
@@ -326,10 +326,10 @@ for (const cat of catalogCategories) {
                   </a>
                 ) : (
                   <a
-                    href={(act.href || '/oem-odm-manufacturer').startsWith('/') ? '/' + lang + act.href : act.href}
+                    href={(act.href || '/co-brand').startsWith('/') ? '/' + lang + act.href : act.href}
                     class="inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white/80 font-medium rounded-full hover:bg-white/10 hover:text-white transition-all backdrop-blur-sm"
                   >
-                    {act.text || 'OEM / Private Label'}
+                    {act.text || 'Co-Brand & Partnership'}
                   </a>
                 )
               )
@@ -865,7 +865,7 @@ for (const cat of catalogCategories) {
     </div>
   </section>
 
-  <!-- Section 5: OEM / ODM Service -->
+  <!-- Section 5: Co-Brand / Design Partnership -->
   {
     page.oem_section?.steps?.length ? (
       <section class="relative py-28 md:py-36 px-6 bg-white overflow-hidden">
@@ -873,14 +873,14 @@ for (const cat of catalogCategories) {
           <div class="text-center max-w-3xl mx-auto mb-16 reveal">
             <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary mb-4">
               <span class="w-8 h-px bg-primary" />
-              {page.oem_section?.tagline || 'Afarer Studio'}
+              {page.oem_section?.tagline || 'Co-Brand Collections'}
             </span>
             <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-secondary">
-              {page.oem_section?.title || 'From Idea to Water — Design Partnership at Scale'}
+              {page.oem_section?.title || 'From Idea to Water — Co-Branded Editions'}
             </h2>
             <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
               {page.oem_section?.subtitle ||
-                'For retailers and emerging brands that want more than a catalog product: collaborative design, practical engineering, and products built to perform at scale.'}
+                'For partners who want more than a catalog product: limited co-branded collections designed, engineered, and built with Afarer — while every board remains an Afarer product.'}
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 reveal">
@@ -894,14 +894,10 @@ for (const cat of catalogCategories) {
           </div>
           <div class="mt-12 text-center reveal">
             <a
-              href={
-                page.oem_section?.cta_link
-                  ? '/' + lang + page.oem_section.cta_link
-                  : '/' + lang + '/oem-odm-manufacturer'
-              }
+              href={page.oem_section?.cta_link ? '/' + lang + page.oem_section.cta_link : '/' + lang + '/co-brand'}
               class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
             >
-              {page.oem_section?.cta || 'Start a Design Project'}
+              {page.oem_section?.cta || 'Explore Co-Branding'}
               <span>→</span>
             </a>
           </div>

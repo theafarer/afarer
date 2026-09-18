@@ -9,14 +9,12 @@ import { SITE } from 'astrowind:config';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/cases.ts';
 import { languages } from '~/i18n/config';
-import { getUiForLang } from '~/i18n/generated/ui-all';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
-const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'cases');
 
@@ -27,10 +25,9 @@ const lh = (h: string) => (h ? `/${lang}${h}` : h);
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 
 const metadata = {
-  title: `Case Studies — ${SITE.name} | OEM/ODM Marine Manufacturing Projects`,
+  title: `Case Studies — ${SITE.name} | Water Sports Partnership Projects`,
   description:
-    t('cases.metaDesc') ||
-    'Real projects from around the world: diving center fleets, OEM partnerships, rescue boat supply, resort equipment packages, and more.',
+    'Real projects from around the world: diving center fleets, country distribution partnerships, rescue boat supply, resort equipment packages, and more.',
 };
 const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Case Studies' }];
 const caseSchemas = (cases.items || [])

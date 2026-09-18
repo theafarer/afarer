@@ -1,3 +1,11 @@
+meta:
+  title: '聯絡我們 — OEM 報價與 SUP 製造商 | {SITE}'
+  description: '如有 OEM/ODM 報價、自有品牌專案或專業船隊需求，歡迎聯繫 Afarer。作為充氣式 SUP 板與充氣船製造商，我們會在 2 個工作天內回覆。'
+  keywords:
+    - '聯絡 Afarer'
+    - 'OEM 立槳板報價'
+    - '專業 SUP 供應商'
+    - 'SUP 製造商聯繫'
 hero_text:
   tagline: 聯繫方式
   title: 聯繫我們
@@ -25,15 +33,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select your estimated volume...
+          label: 請選擇您的預估訂單量...
         - value: sample
-          label: Samples / Prototypes only
+          label: 僅樣品／原型
         - value: 5-10
-          label: 5–10 units (Standard MOQ)
+          label: 5–10 件（標準 MOQ）
         - value: 100-500
-          label: 100–500 units
+          label: 100–500 件
         - value: 500-plus
-          label: 500+ units (Volume pricing)
+          label: 500+ 件（量大優惠價）
       step: 1
     - name: customization
       label: 公司
@@ -41,15 +49,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select customization type...
+          label: 請選擇定製類型...
         - value: none
-          label: Standard product (no customization)
+          label: 標準產品（無需定製）
         - value: logo
-          label: Custom Logo / Branding only
+          label: 僅需客製標誌 / 品牌
         - value: full
-          label: Full OEM (size, color, graphics, packaging)
+          label: 完整 OEM（尺寸、顏色、圖形、包裝）
         - value: consultation
-          label: Not sure — need consultation
+          label: 不確定——需要諮詢
       step: 1
     - name: productInterest
       label: 地址
@@ -57,15 +65,15 @@ contact_form:
       type: select
       options:
         - value: ''
-          label: Select product category...
+          label: 請選擇產品類別...
         - value: all
-          label: All products / Full catalog
+          label: 全部產品／完整型錄
         - value: sup
-          label: SUP Boards / Paddleboards
+          label: SUP 板／立槳板
         - value: safety
-          label: Safety Equipment / Life Vests
+          label: 安全裝備／救生衣
         - value: accessory
-          label: Accessories (pumps, oars, bags)
+          label: 配件（打氣筒、槳、袋）
       step: 1
     - name: firstName
       label: 郵政編碼

@@ -1,3 +1,11 @@
+meta:
+  title: '工廠與生產 — 充氣式 SUP OEM | {SITE}'
+  description: '參觀 Afarer 工廠：12,000 平方公尺廠區內設有裁切、高頻焊接、印刷、組裝與品質實驗室，專注於充氣式 SUP 板與充氣船的 OEM/ODM 生產。'
+  keywords:
+    - 'SUP 工廠 中國'
+    - '充氣立槳板工廠'
+    - 'OEM SUP 製造商'
+    - '充氣式 SUP 生產'
 hero:
   tagline: 工廠
   title: 工廠與製造
@@ -20,7 +28,7 @@ intelligence_cards:
   - title: 生產能力
     icon: C
     icon_bg: 藍色
-    desc: 12,000 m² facility producing 15,000+ SUPs/yr across SUP board and safety equipment lines. 200+ workers, 2 shifts.
+    desc: 12,000 m² 廠區，年產超過 15,000 艘 SUP，涵蓋 SUP 板及安全裝備產線。200 余名員工，雙班制運作。
     metrics:
       - label: 最小起訂量
         value: 'SUP: 5–10'
@@ -31,7 +39,7 @@ intelligence_cards:
   - title: 質量實驗室與檢測
     icon: Q
     icon_bg: 綠色
-    desc: 'Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat.'
+    desc: '獨立 QC 實驗室，設有 4 個檢測階段：原材料檢驗（拉伸、撕裂、抗紫外線）、額定壓力 1.25 倍下 48 小時保壓、接縫剝離測試，以及每艘船艇的載重與平衡驗證。'
     metrics:
       - label: 實驗室設備
         value: 拉伸測試儀、溫控箱、洩漏檢測槽
@@ -61,16 +69,16 @@ workshops_section:
       description: 專用焊接車間配備熱封機和RF介質壓力機。熱風熱封機粘合PVC管室，RF焊接產生超過要求的高強度氣密接縫。
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: 落針式芯材粘合
-      description: SUP board drop-stitch cores are bonded to outer PVC laminates using heat lamination. Thousands of internal polyester threads connect top and bottom layers, creating a rigid structure at 12-15 PSI. Rail bands are triple-layer fusion bonded for edge strength.
+      description: SUP 板 drop-stitch 芯材透過熱層壓與外層 PVC 粘合。數千條內部聚酯紗線連接上下兩層，在 12–15 PSI 下形成剛性結構。側帶採用三層融合粘合技術以提升邊緣強度。
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1.webp
     - title: SUP印刷與裝飾
       description: SUP板採用數字印刷進行全綵圖形裝飾，絲網印刷用於標誌和重複圖案。數字打印機產生照片質量的甲板設計。
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1.webp
     - title: 最終裝配與安裝
-      description: Assembly line where valves, D-rings, handles, fin boxes, and deck pads are installed on each SUP board. Each board follows a 100-point assembly checklist signed off by the team lead.
+      description: 組裝線上安裝每塊 SUP 板的閥門、D 形環、把手、鰭盒及甲板墊。每塊板依據 100 點組裝檢查表由班組長簽核完成。
       image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
     - title: 質量測試與檢驗
-      description: Every completed boat undergoes mandatory air-retention testing, seam peel verification, and a full systems check before shipping. Our quality lab operates independently from production and reports directly to management.
+      description: 每艘完成的船艇均須通過強制氣密性測試、接縫剝離驗證及全面系統檢查後方可出貨。我們的品質實驗室獨立於生產部門運作，直接向管理層報告。
       image: https://assets.afarer.com/images/afarer/factory/afarer-pressure-testing.webp
 equipment_section:
   tagline: 設備
@@ -93,7 +101,7 @@ equipment_section:
 qc_section:
   tagline: 質量控制
   title: 測試與質量保證流程
-  subtitle: Every boat undergoes mandatory testing before shipping. Our quality lab operates independently from production and reports directly to management.
+  subtitle: 每艘船艇出貨前均須通過強制性測試。我們的品質實驗室獨立於生產部門運作，直接向管理層報告。
   steps:
     - step: '1'
       title: 原材料檢驗
@@ -103,7 +111,7 @@ qc_section:
       desc: 每個管室充氣至額定壓力的125%並保持48小時。壓力下降超過5%將自動觸發拒收和接縫重新檢查。
     - step: '3'
       title: 負載與平衡測試
-      desc: Completed boats are loaded to maximum rated capacity and tested for stability, freeboard, and handling. Each vessel is water-tested before final inspection.
+      desc: 完成的船艇裝載至最大額定容量，測試穩定性、乾舷及操控性能。每艘船艇在最終檢驗前均進行水上測試。
 oem_section:
   tagline: OEM項目
   title: 品牌與OEM合作案例研究
@@ -112,8 +120,8 @@ oem_section:
     - challenge: 歐洲戶外零售商需要自有品牌SUP產品線，具有獨特甲板圖形、環保PVC和零售就緒包裝——全部在60天內交付。
       solution: 開發定製數字打印文件，採購符合REACH的PVC，將取樣從3輪減少到1輪。
       result: 從簽署PO到FOB 55天。2,400件，4個SKU。第一批集裝箱到達前已下重複訂單。
-    - challenge: US watersports startup needed a high-performance drop-stitch SUP with custom shape, co-branded packaging, and BSCI certification for retail placement.
-      solution: Adapted existing SUP mould with modified outline, developed co-branded packaging artwork, and provided full BSCI audit documentation.
+    - challenge: 美國水上運動新創公司需要高性能 drop-stitch SUP，具備定製造型、聯合品牌包裝及 BSCI 認證，以符合零售上架要求。
+      solution: 改造既有 SUP 模具並調整外型輪廓，開發聯合品牌包裝設計圖稿，並提供完整的 BSCI 稽核文件。
       result: 成功進入3家美國主要戶外連鎖店。第一年5,000+件，售罄率98%。
     - challenge: 澳大利亞分銷商需要CE認證的RIB系列，具有定製管顏色、Hypalon升級選項和符合澳大利亞標準AS 1799。
       solution: 生產4種管顏色變體的預生產樣品，從日本供應商採購CSM Hypalon，協調第三方AS 1799合規測試。
@@ -130,7 +138,7 @@ faq_section:
       a: 標準交貨期為確認PO和定金後30-45天。定製模具開發增加15-20天。我們為緊急訂單和季節性高峰期提供加急生產。
     - q: 你們能按FOB青島或CIF運送到我們的港口嗎？
       a: 是的。我們按FOB青島、CIF全球主要港口和DDP為合格合作伙伴發貨。我們的物流團隊管理集裝箱預訂、出口文件和清關。我們發貨到全球50多個國家。
-b2b_moq: 'Standard MOQ: 5–10 units per model. Trial orders welcome for new partnerships.'
+b2b_moq: '標準 MOQ：每型號 5–10 件。歡迎新合作夥伴下試訂單。'
 production_flow:
   tagline: 生產流程
   title: 精益求精的製造工藝
@@ -138,51 +146,51 @@ production_flow:
   stages:
     - stage: '01'
       title: 材料接收與來料 QC
-      description: All incoming materials are logged by batch/lot number in our ERP system. PVC fabric rolls, drop-stitch cores, valves, adhesives, and hardware are quarantined until QC sign-off.
-      qc_check: Tensile strength (ASTM D751), tear resistance (ISO 4674), thickness gauge, adhesive viscosity, visual defect scan
-      qc_threshold: 100% of batches tested. Reject if tensile < 90% of spec, tear < spec min, or any visual defect
+      description: 所有進貨材料均按批次號碼登錄至 ERP 系統。PVC 布捲、drop-stitch 芯材、閥門、黏合劑及五金件在獲得 QC 簽核前均予以隔離。
+      qc_check: 拉伸強度（ASTM D751）、撕裂強度（ISO 4674）、厚度量測、黏合劑黏度、目視缺陷掃描
+      qc_threshold: 100% 批次全數檢驗。拉伸強度低於規格 90%、撕裂強度低於最低標準或有任何外觀缺陷即拒收
       responsibility: 來料 QC 團隊（3 人）
     - stage: '02'
       title: CNC 切割與材料準備
-      description: Computer-optimized nesting lays out panels on PVC stock to minimize waste. Automatic CNC cutting machines maintain 0.1 mm positional accuracy.
-      qc_check: Dimensional check against CAD DXF files, edge quality inspection, panel count verification
-      qc_threshold: Every 20th panel measured. Tolerance ±0.5 mm. Reject batch if >2% out of tolerance
+      description: 計算機優化排版將面板配置於 PVC 材料上以最小化浪費。自動 CNC 切割機保持 0.1 mm 的位置精度。
+      qc_check: 對照 CAD DXF 檔案進行尺寸檢查、邊緣品質檢驗及面板數量驗證
+      qc_threshold: 每 20 片面板進行一次測量。公差 ±0.5 mm。超出公差之面板超過 2% 則整批拒收
       responsibility: 切割車間主管
     - stage: '03'
       title: 焊接與落針式粘合
-      description: Drop-stitch cores are bonded to outer PVC laminates using heat lamination. Tube chambers are RF-welded or hot-air welded. Rail bands are triple-layer fusion bonded.
-      qc_check: Peel test every 50 units (ASTM D751), weld width measurement, hot-air temperature log review, visual seam inspection under backlight
+      description: Drop-stitch 芯材透過熱層壓與外層 PVC 粘合。管狀氣室採用 RF 焊接或熱風焊接。側帶採用三層融合粘合。
+      qc_check: 每 50 件進行剝離測試（ASTM D751）、焊縫寬度量測、熱風溫度記錄審查、背光下目視接縫檢驗
       qc_threshold: 剝離強度最低 8 N/cm。焊縫寬度公差 ±1 mm。任何可見溝槽 = 拒收
       responsibility: 焊接 QC（每班 2 人）
     - stage: '04'
       title: 組裝與裝配
-      description: 'Boats move to final assembly where all components are mated: hull + tubes, valves installed, D-rings, handles, fin boxes, and carry bag fitting. Each unit follows a 100-point assembly checklist.'
-      qc_check: 100-point checklist sign-off per unit, valve function test (10 open/close cycles), hardware torque verification, visual inspection
-      qc_threshold: 'Zero-defect policy on safety-critical items (valves, D-rings, handles). Minor cosmetic: AQL 2.5 (ISO 2859)'
+      description: '船艇進入最終組裝階段，所有部件組合：船體加管道、安裝閥門、D 形環、把手、鰭盒及提袋配件。每個單位遵循 100 點組裝檢查表。'
+      qc_check: 每單位 100 點檢查表簽核、閥門功能測試（10 次開關循環）、五金件扭力驗證、外觀檢驗
+      qc_threshold: '安全關鍵項目零缺陷政策（閥門、D 形環、把手）。輕微外觀問題：AQL 2.5（ISO 2859）'
       responsibility: 組裝團隊主管 + 產線 QC
     - stage: '05'
       title: 壓力測試與質量保持
-      description: Every chamber is inflated to 1.25× rated pressure (typically 20–25 PSI) and held for 24–48 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.
-      qc_check: 24h pressure hold log, sensor calibration verified daily, temperature-compensated pressure reading, seam re-test after repair
-      qc_threshold: Max 5% pressure drop over 24h at stable temp. Any chamber exceeding this = 100% re-test of entire production batch
+      description: 每個氣室充氣至額定壓力的 1.25 倍（通常為 20–25 PSI）並保持 24–48 小時。壓力感測器持續記錄。壓降超過 5% 的氣室予以拒收並送回接縫複檢。
+      qc_check: 24 小時保壓日誌、感測器每日校準驗證、溫度補償壓力讀數、修復後接縫複測
+      qc_threshold: 穩定溫度下 24 小時內壓降最高 5%。任何氣室超出此標準 = 該批次全數複測
       responsibility: 質量實驗室（獨立於生產，向管理層報告）
     - stage: '06'
       title: 最終檢驗與包裝
-      description: Final visual and functional inspection. Surface defects, color consistency, label/BIN verification, packaging integrity, and accessory completeness. Units are vacuum-packed, boxed, and palletized for container loading.
-      qc_check: Full visual inspection, accessory checklist per SKU, packaging drop test (1 m, random sample), label/bar code scan verification
-      qc_threshold: AQL 2.5 for major defects, AQL 4.0 for minor. Zero tolerance on safety defects. 100% of units visually inspected
+      description: 最終視覺與功能檢驗。檢查表面瑕疵、色彩一致性、標籤/料號驗證、包裝完整性及配件齊全度。產品經真空包裝、裝箱及棧板包裝以進行貨櫃裝載。
+      qc_check: 全面視覺檢驗、每個 SKU 配件清單檢查、包裝跌落測試（1 公尺，隨機抽樣）、標籤/條碼掃描驗證
+      qc_threshold: 主要缺陷 AQL 2.5、次要缺陷 AQL 4.0。安全缺陷零容忍。100% 產品目視檢驗
       responsibility: 最終 QC 團隊（4 人）+ 包裝團隊主管
 workforce:
   tagline: 專業團隊
   title: 經驗豐富的技術團隊
   engineers: 25+
-  engineers_detail: Engineers across R&D, mold design, materials lab, and production engineering. Average 7+ years in inflatable manufacturing.
-  shift_pattern: 2 shifts/day (07:00–15:30, 15:30–00:00). Optional night shift for urgent orders.
-  training: Monthly QC training, quarterly safety drills, annual skills assessment. New hires complete 40-hour induction before working on production line.
+  engineers_detail: 工程師涵蓋研發、模具設計、材料實驗室及生產工程領域，平均擁有 7 年以上充氣產品製造經驗。
+  shift_pattern: 每日雙班制（07:00–15:30、15:30–00:00）。緊急訂單可加開夜班。
+  training: 每月 QC 培訓、每季安全演練、年度技能評估。新進員工完成 40 小時職前培訓後方可上線作業。
   departments:
     - name: 研發與工程
       count: 25+
-      role: Product design, mold engineering, materials lab
+      role: 產品設計、模具工程、材料實驗室
     - name: 切割與材料準備
       count: 15
       role: CNC 切割、板材準備、物料搬運
@@ -207,9 +215,9 @@ workforce:
 material_traceability:
   tagline: 材料追溯
   title: 全流程材料追溯系統
-  description: Every batch of raw material is assigned a unique lot number in our ERP system. From arrival through production to the finished product, each boat's bill of materials links back to the original supplier batch. This enables full upstream traceability for any quality or compliance inquiry.
-  system: Custom ERP (Qingdao Vatrad Group internal system) + physical batch tags on each work order
-  coverage: 100% of production materials —PVC, Hypalon, drop-stitch fabric, adhesives, valves, hardware, packaging
+  description: 每批原材料在 ERP 系統中均分配唯一的批次號碼。從進料、生產到成品，每艘船艇的物料清單均可追溯至原始供應商批次，為品質或合規性查詢提供完整的上游追溯能力。
+  system: 定製 ERP 系統（Qingdao Vatrad Group 內部系統）+ 每筆工單附實體批次標籤
+  coverage: 100% 生產材料 — PVC、Hypalon、drop-stitch 面料、黏合劑、閥門、五金件、包裝材料
   records_retained: 10 年（符合 CE 2013/53/EU 要求）
   suppliers:
     - material: 船舶級 PVC
@@ -231,24 +239,24 @@ qc_dashboard:
   stats:
     - value: 100%
       label: Units pressure-tested
-      detail: Every boat, every chamber, every batch
+      detail: 每艘船艇、每個氣室、每批生產
     - value: <5%
-      label: Max allowable pressure drop
-      detail: Over 24h at 1.25× rated pressure
+      label: 最大允許壓降
+      detail: 1.25 倍額定壓力下 24 小時
     - value: AQL 2.5
       label: Major defect threshold
-      detail: Per ISO 2859 sampling standard
+      detail: 依據 ISO 2859 抽樣標準
     - value: 24–48h
       label: Pressure hold duration
-      detail: Depending on product category
+      detail: 視產品類別而定
     - value: 1.25×
       label: Test pressure vs rated
-      detail: Safety margin on every chamber
+      detail: 每個氣室均保有安全餘量
     - value: 0%
-      label: Tolerance on safety defects
-      detail: Valves, D-rings, seams, buoyancy
+      label: 安全缺陷零容忍
+      detail: 閥門、D 形環、接縫、浮力
 process_cta:
   title: 查看我們的製造流程
-  desc: Follow a SUP through every stage of production —from raw material to sea-ready board.
+  desc: 追蹤一塊 SUP 板從原材料到可下水成品的每個生產階段。
   label: 查看生產流程 →
   link: /factory/process

@@ -38,6 +38,7 @@ const LOCALES = [
 ];
 const OPTIONAL_LOCALIZED_PAGES = new Set([
   'bateau-gonflable-fabricant.yaml',
+  'co-brand.yaml',
   'distributor-program.yaml',
   'fabricant-sup-gonflable.yaml',
   'fournisseur-nautique.yaml',
@@ -139,7 +140,15 @@ function checkPages() {
 
       const englishText = new Set(collectText(english.data).filter((text) => text.length >= 24));
       const translatedText = new Set(collectText(translated.data));
-      const unchanged = [...englishText].filter((text) => translatedText.has(text));
+      function shouldTranslate(text) {
+        if (/^https?:|^data:|^\//.test(text)) return false;
+        if (/assets\.afarer\.com/.test(text)) return false;
+        if (/^tabler:/.test(text)) return false;
+        if (/^(from-|bg-|to-|text-|gap-)/.test(text)) return false;
+        if (/\.[a-z0-9]+$/.test(text) && !/\s/.test(text) && !/[\u00e0-\u017f]{2}/.test(text)) return false;
+        return true;
+      }
+      const unchanged = [...englishText].filter((text) => translatedText.has(text) && shouldTranslate(text));
       if (!OPTIONAL_LOCALIZED_PAGES.has(page) && unchanged.length > 0) {
         report(warnings, `${file}: ${unchanged.length} long English value(s) unchanged; review translation`);
       }

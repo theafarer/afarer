@@ -242,7 +242,7 @@ qc_dashboard:
       label: Units pressure-tested
       detail: Chaque bateau, chaque chambre, chaque lot
     - value: <5 %
-      label: Max allowable pressure drop
+      label: Chute de pression maximale autorisée
       detail: Sur 24h à 1,25× la pression nominale
     - value: AQL 2,5
       label: Major defect threshold
@@ -254,7 +254,7 @@ qc_dashboard:
       label: Test pressure vs rated
       detail: Marge de sécurité sur chaque chambre
     - value: 0%
-      label: Tolerance on safety defects
+      label: Tolérance sur les défauts de sécurité
       detail: Valves, anneaux D, soudures, flottabilité
 process_cta:
   title: Voir notre processus de fabrication

@@ -13,7 +13,7 @@ import productVisualsData from '~/data/site/product-visuals.yaml';
 const metadata = {
   title: 'Afarer — Performance Inflatable SUP Boards & Water Sports Gear',
   description:
-    'Afarer builds performance inflatable SUP boards and water sports gear for all-round, touring, fitness, and family paddling. Rigid drop-stitch construction at 12–15 PSI, pressure-tested board by board, and design support for brands and operators worldwide.',
+    'Afarer builds performance inflatable SUP boards and water sports gear for all-round, touring, fitness, and family paddling. Rigid drop-stitch construction at 12–15 PSI, pressure-tested board by board, with exclusive country partnerships and limited co-branded collections.',
   ignoreTitleTemplate: true,
 };
 
@@ -36,42 +36,50 @@ interface FaqItem {
 }
 const defaultFaqItems: FaqItem[] = [
   {
-    q: 'What makes Afarer different from other SUP manufacturers?',
-    a: 'Afarer is not a trading company — we are operated by Aquafarer LLC (USA), manufacturing at a 12,000 m² ISO 9001 certified facility run by our Qingdao Operation Team. We provide complete OEM/ODM support including product engineering, prototype development, manufacturing, quality control, and supply chain management.',
-    category: 'oem',
+    q: 'What makes Afarer different?',
+    a: 'Afarer is a global inflatable SUP brand, operated by Aquafarer LLC (USA). Our Qingdao Operation Team builds every board at a 12,000 m² ISO 9001 certified facility, with in-house engineering, board-by-board pressure testing, and a small number of exclusive country partnerships worldwide.',
+    category: 'sup',
   },
   {
-    q: 'Can Afarer help develop a new SUP product from scratch?',
-    a: 'Yes. Afarer supports customers from concept development, technical design, and prototype testing to mass production. Our in-house R&D team handles 3D CAD modeling, FEA structural analysis, mold fabrication, and CE compliance documentation.',
-    category: 'oem',
-  },
-  {
-    q: 'What is the minimum order quantity (MOQ) for OEM orders?',
-    a: 'MOQ is 50 units for standard SUP models. Custom molds and deep private-label projects require 200+ units. Trial orders are available for evaluation before large commitments.',
-    category: 'oem',
-  },
-  {
-    q: 'What quality control does Afarer provide?',
-    a: 'Afarer applies quality inspection throughout the process: incoming material inspection, in-process production QC, 24-hour pressure retention testing, seam peel verification, and final shipment inspection. Every product carries CE declaration of conformity.',
-    category: 'oem',
+    q: 'What quality control does Afarer apply?',
+    a: 'Afarer applies quality inspection throughout the process: incoming material inspection, in-process production QC, 24-hour pressure retention testing, seam peel verification, and final shipment inspection. Every product carries a CE declaration of conformity.',
+    category: 'sup',
   },
   {
     q: 'What are the typical lead times and payment terms?',
-    a: 'Standard lead time is 30-45 days from design approval to FOB Qingdao. Prototype samples are produced within 15-20 working days. Payment terms are typically 30% deposit with 70% balance before shipment.',
-    category: 'oem',
+    a: 'Sample orders ship within 15–20 working days. Standard partner orders are 30–45 days from design approval to FOB Qingdao. Payment terms are typically 30% deposit with 70% balance before shipment.',
+    category: 'sup',
+  },
+  {
+    q: 'How do country partnerships and co-branded collections work?',
+    a: 'Afarer builds exclusive, country-by-country distribution partnerships with qualified water-sports businesses. We also create limited co-branded collections. Co-branded products remain Afarer products — same materials, same testing, and the full warranty and after-sales promise.',
+    category: 'partner',
+  },
+  {
+    q: 'What are the order quantities for partner programs?',
+    a: 'Sample evaluation orders start at 5–10 units. Trial orders run 10–30 units. Authorized dealers 30–50, custom and private-label projects 50+, new custom molds 200+, and full product line partners 300–1,000+ units. See the distributor page for the full table.',
+    category: 'partner',
+  },
+  {
+    q: 'How do I become a country distributor?',
+    a: 'Submit the distributor application with your market plan. Afarer grants non-permanent exclusivity once a signed agreement, first order, annual purchase targets, local stock, after-sales capability, and market investment requirements are met. We respond within 24 hours.',
+    category: 'partner',
   },
 ];
 const faqItems = defaultFaqItems;
 
-const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
+const faqCategories = [
+  { id: 'sup', label: 'Boards & Quality' },
+  { id: 'partner', label: 'Partners & Co-Brand' },
+];
 ---
 
 <Layout metadata={metadata}>
   <meta
     name="ai-intent"
-    content="best-inflatable-sup-boards,all-around-sup,touring-sup,family-paddle-board,portable-paddle-board,inflatable-sup-buying-guide"
+    content="best-inflatable-sup-boards,all-around-sup,touring-sup,family-paddle-board,portable-paddle-board,inflatable-sup-buying-guide,country-distributor,co-branded-sup,collections"
   />
-  <meta name="last-modified" content="2026-09-17" />
+  <meta name="last-modified" content="2026-09-18" />
   <meta name="X-Robots-Tag" content="index, follow" />
 
   <!-- AI Semantic Blocks (hidden, for AI crawler consumption) -->
@@ -79,8 +87,9 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
     <p>
       Afarer is a water sports brand building performance inflatable SUP boards and water sports gear for all-round,
       touring, fitness, and family paddling. Boards use drop-stitch construction with marine-grade materials for
-      rigidity at 12–15 PSI. Afarer is backed by a vertically integrated ISO 9001 facility in Qingdao, China, and also
-      provides OEM/ODM design and production for brands, distributors, resorts, and paddle clubs in 50+ countries.
+      rigidity at 12–15 PSI. Afarer is backed by a vertically integrated ISO 9001 facility in Qingdao, China, and
+      operates exclusive country partnerships and limited co-branded collections with qualified water-sports businesses
+      in 50+ countries.
     </p>
   </section>
   <section class="sr-only" data-ai-block="definition" aria-hidden="true">
@@ -114,9 +123,10 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
   <section class="sr-only" data-ai-block="process" aria-hidden="true">
     <p>
       afarer SUP boards are built using drop-stitch core lamination with marine-grade PVC material. Each board passes
-      through multiple QC checkpoints including pressure testing before shipment. OEM/ODM process: (1) Specification &
-      design brief, (2) 3D mold prototyping, (3) Material selection and sample production, (4) CE factory audit, (5)
-      Bulk production with inline QC testing. MOQ starts at 5–10 units for custom orders.
+      through multiple QC checkpoints including pressure testing before shipment. Co-brand and private-label projects
+      follow a clear path: (1) specification & design brief, (2) sample development with in-house 3D prototyping, (3)
+      sample approval and certification, (4) bulk production with inline QC testing. Sample orders start at 5 units;
+      standard co-brand orders from 50 units, and custom molds from 200+ units.
     </p>
   </section>
 
@@ -125,7 +135,7 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
     <div class="absolute inset-0">
       <img
         src="https://assets.afarer.com/images/afarer/hero/production-dept.webp"
-        alt="Afarer inflatable SUP board manufacturing workshop in Qingdao"
+        alt="Afarer inflatable SUP board production line in Qingdao"
         class="w-full h-full object-cover opacity-30"
         style="object-position: center 40%;"
       />
@@ -412,7 +422,7 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
           <p class="mt-8 text-lg text-gray-500 leading-relaxed max-w-3xl mx-auto">
             Afarer is operated by Aquafarer LLC (USA). Our Qingdao Operation Team runs a 12,000 m² ISO 9001 certified
             facility producing 15,000+ inflatable boats, SUPs, and RIBs annually. It is the same facility that builds
-            every Afarer board, and it also serves brand and retail partners in 50+ countries.
+            every Afarer board, and it also serves exclusive country partners in 50+ countries.
           </p>
         </div>
       </div>
@@ -441,10 +451,10 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
   <section class="bg-gray-50 py-16 md:py-24 px-6">
     <div class="max-w-6xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase">Manufacturing Knowledge</span>
+        <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase">Buyer's Knowledge</span>
         <h2 class="mt-4 text-4xl md:text-5xl font-bold text-secondary">Resources for SUP Buyers</h2>
         <p class="mt-4 text-lg text-gray-500">
-          Guides and resources to help you make informed manufacturing decisions.
+          Guides and resources to help you make confident decisions — as a paddler or a partner.
         </p>
       </div>
       <div class="grid md:grid-cols-4 gap-6">
@@ -463,9 +473,9 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
             >
           </div>
           <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
-            How to Choose a SUP Manufacturer
+            How to Choose a SUP Partner
           </h3>
-          <p class="mt-2 text-sm text-gray-500">10 questions to ask before selecting an OEM SUP factory.</p>
+          <p class="mt-2 text-sm text-gray-500">10 questions to ask before selecting a production partner.</p>
         </a>
         <a
           href="/research/oem-vs-odm-sup-manufacturing"
@@ -481,7 +491,7 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
             >
           </div>
           <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
-            OEM vs ODM SUP Manufacturing
+            Co-Brand & Private Label Options
           </h3>
           <p class="mt-2 text-sm text-gray-500">Understand the difference and choose the right model for your brand.</p>
         </a>
@@ -524,7 +534,7 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
       </div>
       <div class="text-center mt-12">
         <a href="/research" class="text-sm font-medium text-primary hover:text-[#0088B3]"
-          >Visit Manufacturing Knowledge Center →</a
+          >Explore the Knowledge Center →</a
         >
       </div>
     </div>
@@ -567,7 +577,7 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
           </div>
           <div>
             <p class="font-semibold text-gray-900">US Marine Equipment Co.</p>
-            <p class="text-xs text-gray-400">OEM Partnership</p>
+            <p class="text-xs text-gray-400">Co-Brand Partnership</p>
           </div>
         </div>
         <p class="text-gray-600 text-sm leading-relaxed italic">
@@ -644,10 +654,10 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
         </div>
         <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-md transition-shadow">
           <span class="text-xs font-bold text-primary tracking-widest">04</span>
-          <h3 class="mt-4 text-lg font-bold text-secondary">Private Label & Custom Branding</h3>
+          <h3 class="mt-4 text-lg font-bold text-secondary">Co-Brand & Private Label</h3>
           <p class="mt-3 text-gray-500 text-sm leading-relaxed">
-            Full private label service: custom logo heat-transfer or screen printing, branded packaging, user manuals in
-            your language, and barcode/UPC registration.
+            Full co-brand and private label service: custom logo heat-transfer or screen printing, branded packaging,
+            user manuals in your language, and barcode/UPC registration.
           </p>
         </div>
         <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-md transition-shadow">
@@ -660,7 +670,7 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
         </div>
         <div class="bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-md transition-shadow">
           <span class="text-xs font-bold text-primary tracking-widest">06</span>
-          <h3 class="mt-4 text-lg font-bold text-secondary">OEM Accessories & Kitting</h3>
+          <h3 class="mt-4 text-lg font-bold text-secondary">Accessories & Kitting</h3>
           <p class="mt-3 text-gray-500 text-sm leading-relaxed">
             Life vests, dual-action pumps, carbon/nylon paddles, repair kits, carry bags, and leash assemblies. Full
             kitting and bundle packaging for retail-ready presentation.
@@ -692,8 +702,8 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
         From Concept to Production
       </h2>
       <p class="mt-6 text-lg text-white/80 max-w-2xl mx-auto">
-        Our R&D team supports every stage of product development — from initial concept and 3D design to prototype
-        testing and mass production. 200+ engineers and skilled workers at your service.
+        Our in-house R&D team supports every stage of product development — from initial concept and 3D design to
+        prototype testing and production validation. 200+ engineers and skilled workers build every Afarer board.
       </p>
       <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
         <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
@@ -724,7 +734,7 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
     </div>
   </section>
 
-  <!-- 08 OEM / ODM Services -->
+  <!-- 08 Partner Programs -->
   <section class="relative py-20 md:py-28 px-6 bg-secondary overflow-hidden">
     <div class="absolute inset-0 opacity-5">
       <div class="absolute top-10 left-10 w-64 h-64 rounded-full bg-white blur-3xl"></div>
@@ -733,12 +743,13 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
     <div class="max-w-5xl mx-auto relative z-10 text-center">
       <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-white/40 mb-6">
         <span class="w-8 h-px bg-primary"></span>
-        OEM / ODM Services
+        Partner Programs
       </span>
-      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-white">End-to-End OEM/ODM Manufacturing</h2>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-white">Grow With Afarer</h2>
       <p class="mt-6 text-lg text-white/60 max-w-3xl mx-auto">
-        Afarer provides full-spectrum OEM and ODM services — from concept drawing and 3D mold prototyping to bulk
-        production, compliance documentation, and FOB Qingdao shipping. MOQ 50 units (SUP). Lead time 30-45 days.
+        Afarer works with a small number of qualified water-sports businesses — through exclusive, country-by-country
+        distribution and limited co-branded collections. Every co-branded product remains an Afarer product, with the
+        same materials, testing, warranty, and after-sales promise.
       </p>
       <div class="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6 max-w-3xl mx-auto text-left">
         <div class="flex items-start gap-3">
@@ -746,88 +757,92 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
             class="flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold"
             >✓</span
           >
-          <span class="text-white/80 text-sm">Product Engineering & Design</span>
+          <span class="text-white/80 text-sm">Country-Exclusive Distribution</span>
         </div>
         <div class="flex items-start gap-3">
           <span
             class="flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold"
             >✓</span
           >
-          <span class="text-white/80 text-sm">Custom Mold & Tooling</span>
+          <span class="text-white/80 text-sm">Limited Co-Branded Collections</span>
         </div>
         <div class="flex items-start gap-3">
           <span
             class="flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold"
             >✓</span
           >
-          <span class="text-white/80 text-sm">Prototype Development & Testing</span>
+          <span class="text-white/80 text-sm">Product Engineering Support</span>
         </div>
         <div class="flex items-start gap-3">
           <span
             class="flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold"
             >✓</span
           >
-          <span class="text-white/80 text-sm">CE Certification & Compliance</span>
+          <span class="text-white/80 text-sm">CE Certification & Documentation</span>
         </div>
         <div class="flex items-start gap-3">
           <span
             class="flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold"
             >✓</span
           >
-          <span class="text-white/80 text-sm">Private Label & Custom Branding</span>
+          <span class="text-white/80 text-sm">Samples from Just 5 Units</span>
         </div>
         <div class="flex items-start gap-3">
           <span
             class="flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold"
             >✓</span
           >
-          <span class="text-white/80 text-sm">FOB Qingdao Logistics</span>
+          <span class="text-white/80 text-sm">FOB Qingdao & Global Logistics</span>
         </div>
       </div>
-      <div class="mt-12">
+      <div class="mt-12 flex items-center justify-center gap-4 flex-wrap">
         <a
-          href="/oem-odm-manufacturer"
+          href="/co-brand"
           class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all"
         >
-          Request OEM Quote <span>→</span>
+          Explore Co-Branding <span>→</span>
+        </a>
+        <a
+          href="/distributor-program"
+          class="inline-flex items-center gap-2 px-8 py-4 border border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition-all"
+        >
+          Become a Country Distributor
         </a>
       </div>
     </div>
   </section>
 
-  <!-- 11 OEM CTA -->
+  <!-- 11 Partnership CTA -->
   <section class="relative py-28 md:py-36 px-6 overflow-hidden">
     <div class="absolute inset-0">
       <img
         src="https://assets.afarer.com/images/afarer/hero/production-dept.webp"
-        alt="Afarer manufacturing facility"
+        alt="Afarer production and inspection lines"
         class="w-full h-full object-cover"
         loading="lazy"
       />
       <div class="absolute inset-0 bg-gradient-to-br from-secondary/85 via-secondary/70 to-secondary/80"></div>
     </div>
     <div class="relative text-center max-w-4xl mx-auto">
-      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-        Ready to Start Your<br />OEM Project?
-      </h2>
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">Let's Talk Partnership</h2>
       <p class="mt-6 text-xl text-white/70">
-        Tell us about your requirements. We will reply with a detailed quotation within 24 hours.
+        Tell us about your market and goals. Our partnership team will reply with a tailored proposal within 24 hours.
       </p>
       <div class="mt-10 flex items-center justify-center gap-4 flex-wrap">
         <a
-          href="/oem-odm-manufacturer"
+          href="/contact"
           class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all"
         >
-          Request OEM Quote <span>→</span>
+          Talk to the Partnership Team <span>→</span>
         </a>
         <a
-          href="/contact"
+          href="/distributor-program"
           class="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-all"
         >
-          Contact Our Team
+          View Distributor Program
         </a>
       </div>
-      <p class="mt-6 text-sm text-white/40">MOQ 50 units (SUP). Lead time 30-45 days. FOB Qingdao.</p>
+      <p class="mt-6 text-sm text-white/40">Responses within 24 hours · Sample orders from 5 units · FOB Qingdao.</p>
     </div>
   </section>
 
@@ -836,9 +851,9 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
     <div class="max-w-3xl mx-auto">
       <div class="text-center mb-16">
         <span class="text-sm font-medium text-sky-600 tracking-wide uppercase">FAQ</span>
-        <h2 class="mt-4 text-4xl font-semibold text-gray-900">OEM Manufacturing FAQ</h2>
+        <h2 class="mt-4 text-4xl font-semibold text-gray-900">Partner & Product FAQ</h2>
         <p class="mt-4 text-lg text-gray-500">
-          Common questions from brands and operators about partnering with Afarer.
+          Common questions from paddlers and partners about Afarer boards and programs.
         </p>
       </div>
       <div class="flex flex-wrap justify-center gap-2 mb-10" data-faq-tabs>
@@ -891,7 +906,7 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
       alternateName: 'afarer Inflatable Watercraft',
       url: 'https://afarer.com',
       description:
-        'Afarer builds performance inflatable SUP boards and water sports gear, with drop-stitch construction at 12–15 PSI. Backed by a 12,000 m² ISO 9001 certified facility and offering OEM/ODM design and production for brand and retail partners.',
+        'Afarer builds performance inflatable SUP boards and water sports gear, with drop-stitch construction at 12–15 PSI. Backed by a 12,000 m² ISO 9001 certified facility, operated by Aquafarer LLC (USA), with exclusive country partnerships and limited co-branded collections worldwide.',
       foundingDate: '2012',
       foundingLocation: {
         '@type': 'Place',
@@ -930,18 +945,18 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'OEM/ODM Inflatable Watercraft Manufacturing',
+          name: 'Inflatable SUP & Water Sports Equipment Manufacturing',
           description:
-            'Full-spectrum OEM and ODM services including private labeling, custom mold design, drop-stitch SUP production, and BSCI/CE 9001 compliance documentation.',
+            'Vertically integrated production of inflatable SUP boards, boats, and marine accessories, including co-branded collections, private label, and custom mold development.',
         },
       },
       knowsAbout: [
         'Inflatable SUP board manufacturing',
         'Drop-stitch core lamination technology',
-        'OEM/ODM water sports equipment production',
+        'Co-branded and private label collections',
         'PVC inflatable boat manufacturing',
         'Hypalon boat fabrication',
-        'Private label water sports branding',
+        'Water sports brand marketing',
         'Custom mold design and 3D prototyping',
         'Marine quality testing and pressure validation',
         'BSCI social compliance auditing',
@@ -985,7 +1000,7 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
       alternateName: 'afarer Inflatable Watercraft',
       url: 'https://afarer.com',
       description:
-        'Afarer designs performance inflatable SUP boards and water sports gear for all-round, touring, fitness, and family paddling, with OEM/ODM design and production for brands and operators.',
+        'Afarer designs performance inflatable SUP boards and water sports gear for all-round, touring, fitness, and family paddling, with exclusive country partnerships and limited co-branded collections.',
       slogan: 'Go Farther. Ride Stronger.',
       brandCategory: 'Marine Recreation',
       industry: ['Marine Recreation', 'Outdoor Sports', 'Marine Manufacturing'],
@@ -993,7 +1008,7 @@ const faqCategories = [{ id: 'oem', label: 'OEM/ODM Manufacturing' }];
         'Inflatable SUP Boards',
         'Inflatable Boats',
         'Marine Engineering',
-        'OEM/ODM Manufacturing',
+        'Co-Branded Collections',
         'Drop-Stitch Technology',
         'PVC and Hypalon Fabrication',
         'Custom Watercraft Design',

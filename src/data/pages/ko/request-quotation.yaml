@@ -1,3 +1,11 @@
+meta:
+  title: '견적 요청 — OEM SUP 생산 | {SITE}'
+  description: '팽창식 SUP 또는 보트 프로젝트에 대한 상세 견적을 요청하세요. OEM/ODM 생산, 자체 브랜드, 맞춤 함대 — 영업일 기준 2일 이내 답변.'
+  keywords:
+    - 'SUP 견적 요청'
+    - 'OEM 패들보드 견적'
+    - 'SUP 공장 견적'
+    - '팽창식 SUP 가격'
 hero_text:
   tagline: 견적 받기
   title: 귀하의 프로젝트에 대한<br />견적 요청
@@ -47,13 +55,13 @@ content_form:
         - 기타
     - name: Target Market
       type: text
-      placeholder: e.g. Europe, North America, Middle East
+      placeholder: '예: 유럽, 북미, 중동'
     - name: Customization Needed
       type: text
       placeholder: e.g. custom colors, branding, packaging
     - name: Timeline
       type: text
-      placeholder: e.g. delivery within 90 days
+      placeholder: '예: 90일 이내 배송'
     - name: Additional Requirements
       type: textarea
       options:
