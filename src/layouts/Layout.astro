@@ -38,7 +38,7 @@ const seo = await getSeoSettings();
 
 const orgName = seo.organizationName || SITE_SETTINGS.organization?.name || SITE_SETTINGS.siteName;
 const orgLogo =
-  seo.organizationLogo || SITE_SETTINGS.organization?.logo || new URL('/favicon.svg', seo.siteUrl).toString();
+  seo.organizationLogo || SITE_SETTINGS.organization?.logo || new URL('/favicon.ico', seo.siteUrl).toString();
 const sameAs = (seo.socialLinks || [])
   .map((s) => s?.url)
   .filter((u): u is string => typeof u === 'string' && u.length > 0);
