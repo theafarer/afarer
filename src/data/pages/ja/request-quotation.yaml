@@ -30,6 +30,11 @@ content_form:
   tagline: 見積フォーム
   title: あなたのプロジェクトについて教えてください
   subtitle: '* が付いているフィールドはすべて必須です。'
+  contact_fields:
+    firstName: 名
+    lastName: 姓
+    companyName: 会社名
+    email: メールアドレス
   fields:
     - name: Product Type
       type: select

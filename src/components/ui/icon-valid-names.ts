@@ -68,6 +68,7 @@ export const VALID_ICON_NAMES = new Set([
   "tabler:heart",
   "tabler:heart-handshake",
   "tabler:help-circle",
+  "tabler:info-circle",
   "tabler:info-square",
   "tabler:language",
   "tabler:layers-intersect",

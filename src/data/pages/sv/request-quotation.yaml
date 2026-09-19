@@ -30,6 +30,11 @@ content_form:
   tagline: Offertformulär
   title: Berätta om ditt projekt
   subtitle: Alla fält med * är obligatoriska.
+  contact_fields:
+    firstName: Förnamn
+    lastName: Efternamn
+    companyName: Företag
+    email: E-post
   fields:
     - name: Product Type
       type: select

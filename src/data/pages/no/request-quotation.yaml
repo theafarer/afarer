@@ -30,6 +30,11 @@ content_form:
   tagline: Tilbudsforespørsel
   title: Fortell oss om prosjektet ditt
   subtitle: Alle felt med * er påkrevd.
+  contact_fields:
+    firstName: Fornavn
+    lastName: Etternavn
+    companyName: Bedrift
+    email: E-post
   fields:
     - name: Product Type
       type: select

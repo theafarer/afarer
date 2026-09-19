@@ -30,6 +30,11 @@ content_form:
   tagline: Formular de ofertă
   title: Spuneți-ne despre proiectul dvs.
   subtitle: Toate câmpurile cu * sunt obligatorii.
+  contact_fields:
+    firstName: Prenume
+    lastName: Nume
+    companyName: Numele companiei
+    email: E-mail
   fields:
     - name: Product Type
       type: select

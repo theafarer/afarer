@@ -30,6 +30,11 @@ content_form:
   tagline: แบบฟอร์มขอใบเสนอราคา
   title: บอกเราเกี่ยวกับโครงการของคุณ
   subtitle: ต้องกรอกข้อมูลทุกช่องที่มี *
+  contact_fields:
+    firstName: ชื่อ
+    lastName: นามสกุล
+    companyName: ชื่อบริษัท
+    email: อีเมล
   fields:
     - name: Product Type
       type: select

@@ -30,6 +30,11 @@ content_form:
   tagline: Offerteformulier
   title: Vertel Ons Over Uw Project
   subtitle: Alle velden met * zijn verplicht.
+  contact_fields:
+    firstName: Voornaam
+    lastName: Achternaam
+    companyName: Bedrijf
+    email: E-mail
   fields:
     - name: Product Type
       type: select

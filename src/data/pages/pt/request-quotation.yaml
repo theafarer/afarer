@@ -30,6 +30,11 @@ content_form:
   tagline: Formulário de Cotação
   title: Fale sobre seu projeto
   subtitle: Todos os campos com * são obrigatórios.
+  contact_fields:
+    firstName: Primeiro Nome
+    lastName: Último Nome
+    companyName: Nome da Empresa
+    email: E-mail
   fields:
     - name: Product Type
       type: select

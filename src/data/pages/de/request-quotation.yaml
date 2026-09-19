@@ -30,6 +30,11 @@ content_form:
   tagline: Angebotsformular
   title: Erzählen Sie uns von Ihrem Projekt
   subtitle: Alle mit * gekennzeichneten Felder sind Pflichtfelder.
+  contact_fields:
+    firstName: Vorname
+    lastName: Nachname
+    companyName: Unternehmen
+    email: E-Mail
   fields:
     - name: Product Type
       type: select

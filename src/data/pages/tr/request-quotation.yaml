@@ -30,6 +30,11 @@ content_form:
   tagline: Teklif Formu
   title: Bize Projenizden Bahsedin
   subtitle: '* içeren tüm alanların doldurulması zorunludur.'
+  contact_fields:
+    firstName: Ad
+    lastName: Soyad
+    companyName: Şirket
+    email: E-posta
   fields:
     - name: Product Type
       type: select

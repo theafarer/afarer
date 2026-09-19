@@ -30,6 +30,11 @@ content_form:
   tagline: Φόρμα Προσφοράς
   title: Πείτε Μας για το Έργο σας
   subtitle: Όλα τα πεδία με * είναι υποχρεωτικά.
+  contact_fields:
+    firstName: Όνομα
+    lastName: Επώνυμο
+    companyName: Εταιρεία
+    email: Email
   fields:
     - name: Product Type
       type: select

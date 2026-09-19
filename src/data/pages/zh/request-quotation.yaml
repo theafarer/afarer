@@ -30,6 +30,11 @@ content_form:
   tagline: 報價表單
   title: 告訴我們您的項目
   subtitle: 帶 * 的字段為必填項。
+  contact_fields:
+    firstName: 名字
+    lastName: 姓氏
+    companyName: 公司
+    email: 電郵
   fields:
     - name: 產品類別
       type: select

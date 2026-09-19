@@ -1,0 +1,330 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import Icon from '~/components/ui/Icon.astro';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+
+interface ContactFields {
+  firstName?: string;
+  lastName?: string;
+  companyName?: string;
+  email?: string;
+}
+
+interface QuoteField {
+  name?: string;
+  type?: string;
+  options?: string[];
+  placeholder?: string;
+}
+
+interface Props {
+  tagline?: string;
+  title?: string;
+  subtitle?: string;
+  id?: string;
+  isDark?: boolean;
+  contactFields?: ContactFields;
+  fields?: QuoteField[];
+  language?: string;
+}
+
+const {
+  tagline,
+  title,
+  subtitle,
+  id = 'quotation-form',
+  isDark = false,
+  contactFields = {},
+  fields = [],
+  language = 'en',
+} = Astro.props;
+
+const _ui = (key: string, fallback: string) => getUiForLang(language)?.[key] || fallback;
+
+const submitLabel = _ui('cta.requestQuote', 'Request a Quote');
+const successMessage = _ui('contact.success', 'Thanks! Your message has landed in our inbox.');
+const errorMessage = _ui('contact.error', 'Something went wrong. Please try again.');
+const sendingLabel = (_ui('contact.submit', 'Send message').replace(/…$/, '') || 'Sending') + '…';
+
+const hasFileFields = fields.some((f) => (f.type ?? '').toLowerCase() === 'file');
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass="max-w-7xl mx-auto">
+  <Headline
+    title={title}
+    subtitle={subtitle}
+    tagline={tagline}
+    classes={{
+      container: 'max-w-xl sm:mx-auto lg:max-w-2xl',
+      title: 'text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-heading',
+      subtitle: 'max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400',
+    }}
+  />
+
+  <div class="mx-auto max-w-3xl">
+    <div
+      class="rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm p-6 sm:p-8"
+    >
+      <form
+        class="space-y-6"
+        data-quotation-form
+        data-submit-label={submitLabel}
+        data-sending-label={sendingLabel}
+        data-success-message={successMessage}
+        data-error-message={errorMessage}
+      >
+        <input type="hidden" name="subject" value="Request a Quotation" />
+
+        <div
+          aria-hidden="true"
+          style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;opacity:0;pointer-events:none"
+        >
+          <label for={`${id}-email-confirm`}>Do not fill this</label>
+          <input id={`${id}-email-confirm`} type="text" name="email_confirm" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <label for={`${id}-first-name`} class="block text-sm font-medium mb-1 text-muted dark:text-slate-300">
+              {contactFields.firstName || 'First Name'} *
+            </label>
+            <input
+              id={`${id}-first-name`}
+              name="firstName"
+              type="text"
+              required
+              class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+            />
+          </div>
+          <div>
+            <label for={`${id}-last-name`} class="block text-sm font-medium mb-1 text-muted dark:text-slate-300">
+              {contactFields.lastName || 'Last Name'} *
+            </label>
+            <input
+              id={`${id}-last-name`}
+              name="lastName"
+              type="text"
+              required
+              class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+            />
+          </div>
+          <div>
+            <label for={`${id}-company`} class="block text-sm font-medium mb-1 text-muted dark:text-slate-300">
+              {contactFields.companyName || 'Company Name'}
+            </label>
+            <input
+              id={`${id}-company`}
+              name="companyName"
+              type="text"
+              class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+            />
+          </div>
+          <div>
+            <label for={`${id}-email`} class="block text-sm font-medium mb-1 text-muted dark:text-slate-300">
+              {contactFields.email || 'E-mail'} *
+            </label>
+            <input
+              id={`${id}-email`}
+              name="email"
+              type="email"
+              required
+              class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+            />
+          </div>
+        </div>
+
+        <div class="border-t border-gray-200 dark:border-slate-700 pt-6">
+          {
+            fields.map((f) => {
+              const label = f.name || '';
+              const type = (f.type ?? 'text').toLowerCase();
+              const fid = `${id}-${String(label)
+                .replace(/[^a-z0-9]/gi, '-')
+                .toLowerCase()}`;
+              if (type === 'select') {
+                return (
+                  <div class="mb-5">
+                    <label for={fid} class="block text-sm font-medium mb-1 text-muted dark:text-slate-300">
+                      {label} *
+                    </label>
+                    <select
+                      id={fid}
+                      name={label}
+                      required
+                      class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                    >
+                      {f.placeholder && (
+                        <option value="" disabled selected>
+                          {f.placeholder}
+                        </option>
+                      )}
+                      {(f.options ?? []).map((o) => (
+                        <option value={o}>{o}</option>
+                      ))}
+                    </select>
+                  </div>
+                );
+              }
+              if (type === 'textarea') {
+                return (
+                  <div class="mb-5">
+                    <label for={fid} class="block text-sm font-medium mb-1 text-muted dark:text-slate-300">
+                      {label}
+                    </label>
+                    <textarea
+                      id={fid}
+                      name={label}
+                      rows={4}
+                      placeholder={f.placeholder}
+                      class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                    />
+                  </div>
+                );
+              }
+              if (type === 'file') {
+                return (
+                  <div class="mb-5">
+                    <label for={fid} class="block text-sm font-medium mb-1 text-muted dark:text-slate-300">
+                      {label}
+                    </label>
+                    <input
+                      id={fid}
+                      name={label}
+                      type="file"
+                      class="block w-full text-sm text-muted dark:text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-primary file:text-white file:font-semibold hover:file:bg-[#0088B3]"
+                    />
+                    {f.placeholder && f.placeholder !== label && (
+                      <p class="mt-1 text-xs text-muted dark:text-slate-500">{f.placeholder}</p>
+                    )}
+                  </div>
+                );
+              }
+              return (
+                <div class="mb-5">
+                  <label for={fid} class="block text-sm font-medium mb-1 text-muted dark:text-slate-300">
+                    {label} *
+                  </label>
+                  <input
+                    id={fid}
+                    name={label}
+                    type="text"
+                    required
+                    placeholder={f.placeholder}
+                    class="py-2 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                  />
+                </div>
+              );
+            })
+          }
+        </div>
+
+        {
+          hasFileFields && (
+            <p class="text-xs text-muted dark:text-slate-500 flex items-start gap-1.5">
+              <Icon name="tabler:info-circle" class="w-4 h-4 mt-0.5 shrink-0" />
+              <span>
+                {_ui(
+                  'contact.fileNote',
+                  'If you want to send files, please attach them by e-mail after submitting this form.'
+                )}
+              </span>
+            </p>
+          )
+        }
+
+        <div class="pt-2 flex flex-col items-center gap-4">
+          <button
+            type="submit"
+            data-submit-button
+            class="inline-flex items-center gap-2 px-8 py-3 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full transition-all text-sm"
+          >
+            {submitLabel}
+          </button>
+          <div data-form-status class="hidden text-sm font-medium"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</WidgetWrapper>
+
+<script is:inline>
+  (function () {
+    const forms = document.querySelectorAll('form[data-quotation-form]');
+    forms.forEach((formEl) => {
+      if (!(formEl instanceof HTMLFormElement)) return;
+      const statusEl = formEl.querySelector('[data-form-status]');
+      const submitBtn = formEl.querySelector('[data-submit-button]');
+      const successMsg = formEl.dataset.successMessage || 'Thanks!';
+      const errorMsg = formEl.dataset.errorMessage || 'Something went wrong.';
+      const sendingLabel = formEl.dataset.sendingLabel || 'Sending…';
+
+      formEl.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (!(formEl instanceof HTMLFormElement)) return;
+        statusEl.classList.add('hidden');
+        statusEl.textContent = '';
+
+        const submitLabel = submitBtn && submitBtn.textContent ? submitBtn.textContent : 'Submit';
+        if (submitBtn instanceof HTMLButtonElement) {
+          submitBtn.disabled = true;
+          submitBtn.textContent = sendingLabel;
+        }
+
+        const fd = new FormData(formEl);
+        const data = {};
+        for (const [k, v] of fd.entries()) {
+          if (typeof v === 'string') data[k] = v.trim();
+        }
+
+        const lines = [];
+        for (const [k, v] of Object.entries(data)) {
+          if (['firstName', 'lastName', 'companyName', 'email', 'subject', 'email_confirm'].includes(k)) continue;
+          if (!v) continue;
+          lines.push(k + ': ' + v);
+        }
+        data.message = lines.join('\n');
+
+        try {
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 15000);
+          const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+            signal: controller.signal,
+          });
+          clearTimeout(timeoutId);
+          const result = await res.json().catch(() => ({}));
+          if (!res.ok || !result.success) {
+            console.error('Quotation form API error:', res.status, result.error || result);
+            showStatus(statusEl, result.error || errorMsg, 'error');
+            return;
+          }
+          showStatus(statusEl, successMsg, 'success');
+          console.log('Quotation form success:', result);
+          formEl.reset();
+        } catch (fetchErr) {
+          console.error('Quotation form fetch error:', fetchErr);
+          showStatus(statusEl, errorMsg, 'error');
+        } finally {
+          if (submitBtn instanceof HTMLButtonElement) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = submitLabel;
+          }
+        }
+      });
+    });
+
+    function showStatus(el, msg, kind) {
+      if (!el) return;
+      el.classList.remove('hidden', 'text-green-600', 'text-red-600');
+      if (kind === 'success') {
+        el.classList.add('text-green-600');
+      } else {
+        el.classList.add('text-red-600');
+      }
+      el.textContent = msg;
+    }
+  })();
+</script>

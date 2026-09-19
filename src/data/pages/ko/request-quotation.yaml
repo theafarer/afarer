@@ -30,6 +30,11 @@ content_form:
   tagline: 견적 의뢰서
   title: 귀하의 프로젝트에 대해 알려주십시오
   subtitle: '*가 있는 모든 필드는 필수입니다.'
+  contact_fields:
+    firstName: 이름
+    lastName: 성
+    companyName: 회사명
+    email: 이메일
   fields:
     - name: Product Type
       type: select

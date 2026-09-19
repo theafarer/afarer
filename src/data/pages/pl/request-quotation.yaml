@@ -30,6 +30,11 @@ content_form:
   tagline: Formularz wyceny
   title: Opowiedz nam o swoim projekcie
   subtitle: Wszystkie pola z * są wymagane.
+  contact_fields:
+    firstName: Imię
+    lastName: Nazwisko
+    companyName: Firma
+    email: Email
   fields:
     - name: Product Type
       type: select

@@ -30,6 +30,11 @@ content_form:
   tagline: نموذج عرض السعر
   title: أخبرنا عن مشروعك
   subtitle: جميع الحقول التي تحتوي على * مطلوبة.
+  contact_fields:
+    firstName: الاسم الأول
+    lastName: اسم العائلة
+    companyName: اسم الشركة
+    email: البريد الإلكتروني
   fields:
     - name: Product Type
       type: select

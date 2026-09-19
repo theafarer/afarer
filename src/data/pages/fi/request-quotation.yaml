@@ -30,6 +30,11 @@ content_form:
   tagline: Tarjouslomake
   title: Kerro meille projektistasi
   subtitle: Kaikki *-merkityt kentät ovat pakollisia.
+  contact_fields:
+    firstName: Etunimi
+    lastName: Sukunimi
+    companyName: Yrityksen nimi
+    email: Sähköposti
   fields:
     - name: Product Type
       type: select

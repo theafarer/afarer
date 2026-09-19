@@ -4,7 +4,7 @@ export const prerender = true;
 
 import Steps2 from '~/components/widgets/Steps2.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
-import Content from '~/components/widgets/Content.astro';
+import QuotationForm from '~/components/widgets/QuotationForm.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
@@ -27,6 +27,9 @@ const cta = page.cta ?? {};
 const lh = (h: string) => (h ? `/${lang}${h}` : h);
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 
+const formContactFields = (form as any)?.contact_fields ?? {};
+const formFields = Array.isArray((form as any)?.fields) ? (form as any).fields : [];
+
 const metadata = {
   title: `Request a Quote — ${SITE.name} | OEM/ODM Marine Manufacturing`,
   description:
@@ -38,16 +41,13 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Request a Quote' }
 <Layout metadata={metadata} breadcrumbs={crumbs}>
   <HeroText tagline={hero.tagline} title={hero.title} subtitle={hero.subtitle} />
   <Steps2 title={process.title} subtitle={process.subtitle} items={process.items} />
-  <Content
+  <QuotationForm
     tagline={form.tagline}
     title={form.title}
     subtitle={form.subtitle}
-    content={form.fields
-      ?.map(
-        (f: any) =>
-          `- **${f.name}** ${f.type === 'textarea' ? '(long text)' : f.type === 'select' ? `(${f.options?.join(', ')})` : `(${f.type})`}: ${f.placeholder || ''}`
-      )
-      .join('\n')}
+    contactFields={formContactFields}
+    fields={formFields}
+    language={lang}
   />
   <CallToAction title={cta.title} subtitle={cta.subtitle} actions={ctaActions} />
 </Layout>

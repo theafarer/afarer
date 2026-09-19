@@ -30,6 +30,11 @@ content_form:
   tagline: Formulář pro poptávku
   title: Řekněte nám o svém projektu
   subtitle: Všechna pole označená * jsou povinná.
+  contact_fields:
+    firstName: Jméno
+    lastName: Příjmení
+    companyName: Název společnosti
+    email: E-mail
   fields:
     - name: Product Type
       type: select

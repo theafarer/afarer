@@ -30,6 +30,11 @@ content_form:
   tagline: Quotation Form
   title: 'Tell Us About Your Project'
   subtitle: 'All fields with * are required.'
+  contact_fields:
+    firstName: First Name
+    lastName: Last Name
+    companyName: Company Name
+    email: E-mail
   fields:
     - name: Product Category
       type: select

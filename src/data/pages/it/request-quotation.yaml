@@ -30,6 +30,11 @@ content_form:
   tagline: Modulo di preventivo
   title: Parlaci del tuo progetto
   subtitle: Tutti i campi con * sono obbligatori.
+  contact_fields:
+    firstName: Nome
+    lastName: Cognome
+    companyName: Azienda
+    email: Email
   fields:
     - name: Product Type
       type: select

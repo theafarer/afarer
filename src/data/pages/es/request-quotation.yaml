@@ -30,6 +30,11 @@ content_form:
   tagline: Formulario de Cotización
   title: Cuéntenos sobre su proyecto
   subtitle: Todos los campos con * son obligatorios.
+  contact_fields:
+    firstName: Nombre
+    lastName: Apellido
+    companyName: Nombre de la empresa
+    email: Correo electrónico
   fields:
     - name: Product Type
       type: select

@@ -30,9 +30,14 @@ content_form:
   tagline: Quotation Form
   title: Parlez-Nous de Votre Projet
   subtitle: Tous les champs avec * sont obligatoires.
+  contact_fields:
+    firstName: Prénom
+    lastName: Nom
+    companyName: Nom de l'entreprise
+    email: E-mail
   fields:
     - name: Catégorie de produit
-      type: sélectionner
+      type: select
       options:
         - Planche SUP
         - SUP gonflable
@@ -41,7 +46,7 @@ content_form:
         - Accessoire marin
         - OEM/ODM personnalisé
     - name: Application
-      type: sélectionner
+      type: select
       options:
         - Centre de plongée
         - Pêche
@@ -63,7 +68,7 @@ content_form:
       type: text
       placeholder: p. ex. Italie, EAU, États-Unis, Australie
     - name: Préférence de matériau
-      type: sélectionner
+      type: select
       options:
         - Aucune préférence
         - PVC qualité marine (1100 dtex)
@@ -83,10 +88,10 @@ content_form:
       type: textarea
       placeholder: Décrivez votre application, spécifications techniques, or any special requirements —include reference drawings, specifications, or links if available
     - name: Télécharger le cahier des charges
-      type: fichier
+      type: file
       placeholder: Téléchargez votre fiche technique, dessin ou document de référence (PDF, DWG, DXF)
     - name: Télécharger le logo / visuel
-      type: fichier
+      type: file
       placeholder: Téléchargez votre logo ou artwork pour un branding personnalisé (AI, EPS, PNG)
 cta:
   title: Vous préférez discuter par email ?

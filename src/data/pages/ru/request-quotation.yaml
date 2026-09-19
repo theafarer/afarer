@@ -30,6 +30,11 @@ content_form:
   tagline: Форма запроса цены
   title: Расскажите нам о вашем проекте
   subtitle: Все поля с * обязательны для заполнения.
+  contact_fields:
+    firstName: Имя
+    lastName: Фамилия
+    companyName: Компания
+    email: Email
   fields:
     - name: Product Type
       type: select
