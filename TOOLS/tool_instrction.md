@@ -62,10 +62,11 @@ TOOLS/
 
 ### 3. i18n-fix/ — i18n-config.json 修复
 
-| 文件                   | 用途                                                                                                                                 | 用法                                       |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------ |
-| `_fix-i18n.cjs`        | 修复 `i18n-config.json` 中损坏的英文 `compare.afarerVsTraditional.*` 值（从 astro fallback 源恢复）；同时处理 BOM、UTF-8 编码问题。  | `node TOOLS/i18n-fix/_fix-i18n.cjs`        |
-| `_fix-i18n-ranges.cjs` | 修复 en 值中范围/数字/符号格式（如 `300–1,000` 等会被 YAML 流式解析破坏的写法），自动备份到 `%TEMP%\opencode\i18n-config.json.bak`。 | `node TOOLS/i18n-fix/_fix-i18n-ranges.cjs` |
+| 文件                   | 用途                                                                                                                                                                 | 用法                                       |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| `_fix-i18n.cjs`        | 修复 `i18n-config.json` 中损坏的英文 `compare.afarerVsTraditional.*` 值（从 astro fallback 源恢复）；同时处理 BOM、UTF-8 编码问题。                                  | `node TOOLS/i18n-fix/_fix-i18n.cjs`        |
+| `_fix-i18n-ranges.cjs` | 修复 en 值中范围/数字/符号格式（如 `300–1,000` 等会被 YAML 流式解析破坏的写法），自动备份到 `%TEMP%\opencode\i18n-config.json.bak`。                                 | `node TOOLS/i18n-fix/_fix-i18n-ranges.cjs` |
+| `_fix-i18n-arrows.cjs` | 修复各语言 UI 字符串中被压成右箭头 `→` 的破折号：行内 `→` → 破折号 `— `、`compare.backToProducts` 前导 `→` → `← `、数字区间 `→` → 短破折号 `– `；保留 CTA 末尾箭头。 | `node TOOLS/i18n-fix/_fix-i18n-arrows.cjs` |
 
 ### 4. one-off/ — 一次性定点工具
 
