@@ -23,7 +23,15 @@ function fixSepCjk(s) {
   return s.replace(sepCjk, (m, sep, cjk) => sep + ' ' + CJK_LETTER[cjk]);
 }
 
-const contactLocales = ['contact.yaml', 'cs/contact.yaml', 'da/contact.yaml', 'es/contact.yaml', 'fi/contact.yaml', 'fr/contact.yaml', 'ro/contact.yaml'];
+const contactLocales = [
+  'contact.yaml',
+  'cs/contact.yaml',
+  'da/contact.yaml',
+  'es/contact.yaml',
+  'fi/contact.yaml',
+  'fr/contact.yaml',
+  'ro/contact.yaml',
+];
 const guideFiles = [
   'beginner-guide',
   'choosing-paddle',
@@ -63,7 +71,10 @@ tasks.push({
       .replace('(Contact email \u2192o)', '(Contact email \u2192 to)')
       .replace('(Contact \u2192rom)', '(Contact \u2192 from)'),
 });
-tasks.push({ rel: 'src/components/widgets/Footer.astro', fn: (s) => s.replace('${siteName} \u8def All rights reserved.', '${siteName} \u00b7 All rights reserved.') });
+tasks.push({
+  rel: 'src/components/widgets/Footer.astro',
+  fn: (s) => s.replace('${siteName} \u8def All rights reserved.', '${siteName} \u00b7 All rights reserved.'),
+});
 tasks.push({
   rel: 'src/pages/factory/index.astro',
   fn: (s) => s.split('Tolerance \u5364').join('Tolerance \u00b1').split('tolerance \u5364').join('tolerance \u00b1'),
@@ -80,7 +91,10 @@ tasks.push({
   rel: 'src/pages/compare/single-chamber-vs-multi-chamber.astro',
   fn: (s) => s.replace('3+\u72ec\u7acb chambers', '3+ independent chambers'),
 });
-tasks.push({ rel: 'src/pages/solutions/by-industry.astro', fn: (s) => s.replace("join(' \u8def ')", "join(' \u00b7 ')") });
+tasks.push({
+  rel: 'src/pages/solutions/by-industry.astro',
+  fn: (s) => s.replace("join(' \u8def ')", "join(' \u00b7 ')"),
+});
 
 let total = 0;
 for (const t of tasks) {
