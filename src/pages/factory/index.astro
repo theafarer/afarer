@@ -34,7 +34,7 @@ const flowStages = [
     description:
       'Computer-optimized nesting lays out panels on PVC stock to minimize waste. Automatic CNC cutting machines maintain 0.1 mm positional accuracy.',
     qc_check: 'Dimensional check against CAD DXF files, edge quality inspection, panel count verification',
-    qc_threshold: 'Every 20th panel measured. Tolerance 卤0.5 mm. Reject batch if >2% out of tolerance',
+    qc_threshold: 'Every 20th panel measured. Tolerance ±0.5 mm. Reject batch if >2% out of tolerance',
   },
   {
     stage: '03',
@@ -43,7 +43,7 @@ const flowStages = [
       'Drop-stitch cores are bonded to outer PVC laminates using heat lamination. Tube chambers are RF-welded or hot-air welded. Rail bands are triple-layer fusion bonded.',
     qc_check:
       'Peel test every 50 units (ASTM D751), weld width measurement, hot-air temperature log review, visual seam inspection under backlight',
-    qc_threshold: 'Peel strength min 8 N/cm. Weld width tolerance 卤1 mm. Any visible channeling = reject',
+    qc_threshold: 'Peel strength min 8 N/cm. Weld width tolerance ±1 mm. Any visible channeling = reject',
   },
   {
     stage: '04',

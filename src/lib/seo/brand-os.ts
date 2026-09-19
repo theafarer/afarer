@@ -223,14 +223,14 @@ const CTA_RULES: Array<{
     cta: {
       text: 'Find your first SUP',
       link: '/products/sup-explorer-11',
-      reason: 'Beginner content —攅ntry-level product',
+      reason: 'Beginner content — entry-level product',
     },
     products: ['sup-explorer-11', 'paddle-carbon', 'life-vest-classic'],
     keywords: ['beginner', 'entry-level', 'starter', 'inflatable SUP'],
   },
   {
     match: (s) => ['inflatable-vs-hardboard', 'sup-size-guide', 'paddle-board-size-guide'].some((k) => s.includes(k)),
-    cta: { text: 'Compare inflatable SUPs', link: '/products', reason: 'Comparison —攑roduct discovery' },
+    cta: { text: 'Compare inflatable SUPs', link: '/products', reason: 'Comparison — product discovery' },
     products: ['sup-explorer-11', 'sup-tour-12'],
     keywords: ['inflatable vs hard', 'SUP comparison', 'size guide'],
   },
@@ -240,14 +240,14 @@ const CTA_RULES: Array<{
     cta: {
       text: 'View safety equipment',
       link: '/products/life-vest-classic',
-      reason: 'Safety content —攕afety product',
+      reason: 'Safety content — safety product',
     },
     products: ['life-vest-classic', 'life-vest-pro'],
     keywords: ['safety', 'protection', 'life vest', 'marine safety'],
   },
   {
     match: (s) => ['why-afarer', 'manufacturing-process', 'factory-tour', 'quality-control'].some((k) => s.includes(k)),
-    cta: { text: 'Visit our factory', link: '/factory', reason: 'Brand content —攎anufacturing hub' },
+    cta: { text: 'Visit our factory', link: '/factory', reason: 'Brand content — manufacturing hub' },
     products: ['sup-explorer-11', 'life-vest-pro'],
     keywords: ['afarer', 'manufacturer', 'factory', 'OEM'],
   },
@@ -324,7 +324,7 @@ export function getEngines(): EngineStatus[] {
     },
     {
       name: 'Brand Engine',
-      description: 'Guide —擯roduct conversion, brand memory, return search, global identity',
+      description: 'Guide — product conversion, brand memory, return search, global identity',
       active: true,
       pages: pages.filter((p) => p.category === 'brand').length + 1,
       color: 'green',

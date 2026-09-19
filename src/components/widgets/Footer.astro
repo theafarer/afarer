@@ -181,7 +181,7 @@ function t(text: string | undefined, locale: string): string {
 
 const siteName = branding?.site_name?.trim() || 'Afarer';
 const year = new Date().getFullYear();
-const rawCopyright = footNote ?? branding?.copyright ?? `© ${year} ${siteName} 路 All rights reserved.`;
+const rawCopyright = footNote ?? branding?.copyright ?? `© ${year} ${siteName} · All rights reserved.`;
 const copyrightHtml = String(rawCopyright)
   .replace(/\{year\}/gi, String(year))
   .replace(/\{site_name\}/gi, siteName);
