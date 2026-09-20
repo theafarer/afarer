@@ -14,11 +14,8 @@ import { languages as langMap, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/home.ts';
-import techCardsData from '~/data/site/tech-cards.yaml';
 import productVisualsData from '~/data/site/product-visuals.yaml';
-import useCasesData from '~/data/site/use-cases.yaml';
-import testimonialsData from '~/data/site/testimonials.yaml';
-import learnData from '~/data/site/learning-center.yaml';
+import { pageContentData } from '~/i18n/generated/data';
 
 export async function getStaticPaths() {
   return Object.keys(langMap).map((lang) => ({
@@ -31,6 +28,14 @@ setPageContentData(__pageData);
 const page = getPageContent(lang);
 
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+
+const contentFor = (key: string) =>
+  (pageContentData as any)?.[`${lang}/${key}`] || (pageContentData as any)?.[`en/${key}`] || {};
+
+const useCasesData = contentFor('site-use-cases');
+const techCardsData = contentFor('site-tech-cards');
+const testimonialsData = contentFor('site-testimonials');
+const learnData = contentFor('site-learning-center');
 
 const distributorDefault = {
   tagline: 'Country Exclusive Distributors',
