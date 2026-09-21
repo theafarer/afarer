@@ -10,84 +10,168 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 
 const metadata = {
-  title: `Medical Disclaimer — ${SITE.name}`,
-  description:
+  title: fr(`Medical Disclaimer — ${SITE.name}`, `Avertissement médical — ${SITE.name}`),
+  description: fr(
     'Medical disclaimer for Afarer products and services. Information for informational and educational purposes only.',
+    'Avertissement médical pour les produits et services afarer. Informations fournies à des fins purement informatives et éducatives.'
+  ),
 };
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Medical Disclaimer' }];
+const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: fr('Medical Disclaimer', 'Avertissement médical') }];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>
   <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
-    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter">Medical Disclaimer</h1>
+    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter">
+      {fr('Medical Disclaimer', 'Avertissement médical')}
+    </h1>
     <div
       class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
     >
-      <p><em>Last updated: June 18, 2026</em></p>
-      <h2 id="general-information-only">General Information Only</h2>
+      <p><em>{fr('Last updated: June 18, 2026', 'Dernière mise à jour : 18 juin 2026')}</em></p>
+      <h2 id="general-information-only">{fr('General Information Only', 'Informations Générales Uniquement')}</h2>
       <p>
-        The content on this website, including text, graphics, images, and other material, is for <strong
-          >informational and educational purposes only</strong
-        >. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment.
+        {
+          fr(
+            'The content on this website, including text, graphics, images, and other material, is for ',
+            'Le contenu de ce site web, y compris les textes, graphiques, images et autres supports, est fourni '
+          )
+        }<strong
+          >{fr('informational and educational purposes only', 'à des fins purement informatives et éducatives')}</strong
+        >{
+          fr(
+            '. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment.',
+            '. Il n’est pas destiné à se substituer à un avis, un diagnostic ou un traitement médical professionnel.'
+          )
+        }
       </p>
-      <h2 id="no-doctor-patient-relationship">No Doctor-Patient Relationship</h2>
+      <h2 id="no-doctor-patient-relationship">
+        {fr('No Doctor-Patient Relationship', 'Aucune Relation Médecin-Patient')}
+      </h2>
       <p>
-        Use of this website, including access to product descriptions, blog articles, or technical documentation, does
-        not create a physician-patient, clinician-patient, or any other healthcare provider relationship between you and
-        Afarer or any of its affiliates.
+        {
+          fr(
+            'Use of this website, including access to product descriptions, blog articles, or technical documentation, does not create a physician-patient, clinician-patient, or any other healthcare provider relationship between you and Afarer or any of its affiliates.',
+            'L’utilisation de ce site web, y compris l’accès aux descriptions de produits, articles de blog ou documentation technique, ne crée aucune relation médecin-patient, clinicien-patient ou tout autre relation de prestataire de soins entre vous et afarer ou ses sociétés affiliées.'
+          )
+        }
       </p>
-      <h2 id="not-for-clinical-use">Not for Clinical Use</h2>
+      <h2 id="not-for-clinical-use">{fr('Not for Clinical Use', 'Non Destiné à un Usage Clinique')}</h2>
       <p>
-        Our products are designed for <strong>research, informational, and wellness purposes only</strong>. They are <strong
-          >not cleared or approved by the FDA, EMA, or any other regulatory body</strong
-        > for use in clinical diagnosis, disease prevention, or treatment decisions.
+        {fr('Our products are designed for ', 'Nos produits sont conçus pour ')}<strong
+          >{
+            fr(
+              'research, informational, and wellness purposes only',
+              'la recherche, l’information et le bien-être uniquement'
+            )
+          }</strong
+        >{fr('. They are ', '. Ils ne sont ')}<strong
+          >{
+            fr(
+              'not cleared or approved by the FDA, EMA, or any other regulatory body',
+              'ni autorisés ni approuvés par la FDA, l’EMA ou tout autre organisme de réglementation'
+            )
+          }</strong
+        >{
+          fr(
+            ' for use in clinical diagnosis, disease prevention, or treatment decisions.',
+            ' pour un usage en diagnostic clinique, prévention des maladies ou décisions de traitement.'
+          )
+        }
       </p>
       <p>
-        You should <strong>not</strong> make any medical or health-related decisions based on the data, reports, or information
-        provided through our products or website without consulting a qualified healthcare professional.
+        {fr('You should ', 'Vous ne devez ')}<strong>{fr('not', 'pas')}</strong>{
+          fr(
+            ' make any medical or health-related decisions based on the data, reports, or information provided through our products or website without consulting a qualified healthcare professional.',
+            ' prendre de décision médicale ou liée à la santé sur la base des données, rapports ou informations fournis via nos produits ou notre site web sans consulter un professionnel de santé qualifié.'
+          )
+        }
       </p>
-      <h2 id="no-warranties">No Warranties</h2>
+      <h2 id="no-warranties">{fr('No Warranties', 'Aucune Garantie')}</h2>
       <p>
-        Afarer makes no representation or warranty, express or implied, regarding the accuracy, completeness, or
-        reliability of the information provided on this website or through its products. All content and products are
-        provided <strong>"as is"</strong> without warranty of any kind.
+        {
+          fr(
+            'Afarer makes no representation or warranty, express or implied, regarding the accuracy, completeness, or reliability of the information provided on this website or through its products. All content and products are provided ',
+            'afarer ne fait aucune déclaration ni garantie, expresse ou implicite, quant à l’exactitude, l’exhaustivité ou la fiabilité des informations fournies sur ce site web ou via ses produits. Tout le contenu et les produits sont fournis '
+          )
+        }<strong>{fr('"as is"', '« en l’état »')}</strong>{
+          fr(' without warranty of any kind.', ' sans garantie d’aucune sorte.')
+        }
       </p>
-      <h2 id="limitation-of-liability">Limitation of Liability</h2>
+      <h2 id="limitation-of-liability">{fr('Limitation of Liability', 'Limitation de Responsabilité')}</h2>
       <p>
-        To the fullest extent permitted by applicable law, Afarer shall not be liable for any direct, indirect,
-        incidental, special, or consequential damages arising from the use of or inability to use this website, its
-        products, or any content therein.
+        {
+          fr(
+            'To the fullest extent permitted by applicable law, Afarer shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from the use of or inability to use this website, its products, or any content therein.',
+            'Dans la mesure maximale autorisée par la loi applicable, afarer ne pourra être tenu responsable de tout dommage direct, indirect, accessoire, spécial ou consécutif découlant de l’utilisation ou de l’impossibilité d’utiliser ce site web, ses produits ou tout contenu qui y figure.'
+          )
+        }
       </p>
-      <h2 id="data-privacy-genetic-information">Data Privacy & Genetic Information</h2>
+      <h2 id="data-privacy-genetic-information">
+        {fr('Data Privacy & Genetic Information', 'Confidentialité des Données & Informations Génétiques')}
+      </h2>
       <p>
-        Any genetic or health-related data you submit or generate through our services is handled in accordance with our <a
-          href={`/${lang}/privacy`}>Privacy Policy</a
-        >. We implement industry-standard encryption and access controls. However, no data transmission over the
-        internet can be guaranteed as 100% secure.
+        {
+          fr(
+            'Any genetic or health-related data you submit or generate through our services is handled in accordance with our ',
+            'Toute donnée génétique ou liée à la santé que vous soumettez ou générez via nos services est traitée conformément à notre '
+          )
+        }<a href={`/${lang}/privacy`}>{fr('Privacy Policy', 'Politique de Confidentialité')}</a>{
+          fr(
+            '. We implement industry-standard encryption and access controls. However, no data transmission over the internet can be guaranteed as 100% secure.',
+            '. Nous mettons en œuvre des contrôles d’accès et un chiffrement aux standards de l’industrie. Toutefois, aucune transmission de données sur internet ne peut être garantie comme étant 100 % sécurisée.'
+          )
+        }
       </p>
-      <h2 id="external-links">External Links</h2>
+      <h2 id="external-links">{fr('External Links', 'Liens Externes')}</h2>
       <p>
-        This website may contain links to third-party websites. Afarer does not endorse, control, or assume
-        responsibility for the content, privacy policies, or practices of any third-party sites.
+        {
+          fr(
+            'This website may contain links to third-party websites. Afarer does not endorse, control, or assume responsibility for the content, privacy policies, or practices of any third-party sites.',
+            'Ce site web peut contenir des liens vers des sites tiers. afarer ne cautionne pas, ne contrôle pas et n’assume aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques des sites tiers.'
+          )
+        }
       </p>
-      <h2 id="changes-to-this-disclaimer">Changes to This Disclaimer</h2>
+      <h2 id="changes-to-this-disclaimer">{fr('Changes to This Disclaimer', 'Modifications de Cet Avertissement')}</h2>
       <p>
-        We reserve the right to update this Medical Disclaimer at any time. Changes will be posted on this page with an
-        updated revision date.
+        {
+          fr(
+            'We reserve the right to update this Medical Disclaimer at any time. Changes will be posted on this page with an updated revision date.',
+            'Nous nous réservons le droit de mettre à jour cet Avertissement médical à tout moment. Les modifications seront publiées sur cette page avec une date de révision mise à jour.'
+          )
+        }
       </p>
-      <h2 id="contact">Contact</h2>
-      <p>If you have questions about this disclaimer, please contact us at:</p>
+      <h2 id="contact">{fr('Contact', 'Contact')}</h2>
+      <p>
+        {
+          fr(
+            'If you have questions about this disclaimer, please contact us at:',
+            'Si vous avez des questions sur cet avertissement, veuillez nous contacter :'
+          )
+        }
+      </p>
       <ul>
-        <li><strong>Email</strong>: info@afarer.com</li>
-        <li><strong>Address</strong>: Economic Development Zone, Laixi, Qingdao, China, 266600</li>
+        <li><strong>{fr('Email', 'E-mail')}</strong>: info@afarer.com</li>
+        <li>
+          <strong>{fr('Address', 'Adresse')}</strong>: {
+            fr(
+              'Economic Development Zone, Laixi, Qingdao, China, 266600',
+              'Zone de développement économique, Laixi, Qingdao, Chine, 266600'
+            )
+          }
+        </li>
       </ul>
       <hr />
       <p>
         <strong
-          >By using this website and its products, you acknowledge that you have read, understood, and agree to be bound
-          by this Medical Disclaimer.</strong
+          >{
+            fr(
+              'By using this website and its products, you acknowledge that you have read, understood, and agree to be bound by this Medical Disclaimer.',
+              'En utilisant ce site web et ses produits, vous reconnaissez avoir lu, compris et accepté d’être lié par cet Avertissement médical.'
+            )
+          }</strong
         >
       </p>
     </div>

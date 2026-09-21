@@ -10,11 +10,17 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 
 const metadata = {
-  title: `OEM SUP Manufacturing Guide — Free White Paper | ${SITE.name}`,
-  description:
+  title: fr(
+    `OEM SUP Manufacturing Guide — Free White Paper | ${SITE.name}`,
+    `Guide de Fabrication SUP OEM — Livre Blanc Gratuit | ${SITE.name}`
+  ),
+  description: fr(
     'Download our comprehensive white paper on OEM/ODM inflatable SUP manufacturing. Covers mold design, material selection, quality control, logistics, and cost optimization.',
+    'Téléchargez notre livre blanc complet sur la fabrication de SUP gonflables OEM/ODM. Couvre la conception de moules, le choix des matériaux, le contrôle qualité, la logistique et l’optimisation des coûts.'
+  ),
   ignoreTitleTemplate: true,
 };
 ---
@@ -22,79 +28,154 @@ const metadata = {
 <Layout
   metadata={metadata}
   breadcrumbs={[
-    { name: 'Home', href: `/${lang}/` },
-    { name: 'Resources', href: `/${lang}/resources` },
-    { name: 'OEM SUP Manufacturing Guide' },
+    { name: fr('Home', 'Accueil'), href: `/${lang}/` },
+    { name: fr('Resources', 'Ressources'), href: `/${lang}/resources` },
+    { name: fr('OEM SUP Manufacturing Guide', 'Guide de Fabrication SUP OEM') },
   ]}
 >
   <article class="max-w-4xl mx-auto px-6 py-16">
     <div class="text-center mb-12">
-      <span class="text-sm font-semibold uppercase tracking-wider text-sky-600">Free White Paper</span>
+      <span class="text-sm font-semibold uppercase tracking-wider text-sky-600"
+        >{fr('Free White Paper', 'Livre Blanc Gratuit')}</span
+      >
       <h1 class="mt-4 text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
-        The Complete Guide to OEM Inflatable SUP Manufacturing
+        {
+          fr(
+            'The Complete Guide to OEM Inflatable SUP Manufacturing',
+            'Le Guide Complet de la Fabrication de SUP Gonflables OEM'
+          )
+        }
       </h1>
       <p class="mt-4 text-lg text-gray-500 dark:text-slate-400 max-w-2xl mx-auto">
-        Everything you need to know about bringing a private label or custom SUP board from concept to container.
+        {
+          fr(
+            'Everything you need to know about bringing a private label or custom SUP board from concept to container.',
+            'Tout ce que vous devez savoir pour mener une planche SUP de marque privée ou sur mesure, du concept au conteneur.'
+          )
+        }
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-8 items-start">
       <div class="prose dark:prose-invert max-w-none">
-        <h2>What's Inside</h2>
+        <h2>{fr("What's Inside", 'Contenu du Guide')}</h2>
         <ul>
           <li>
-            <strong>Chapter 1</strong>: Market overview — global SUP market size, growth trends, and regional
-            opportunities
+            <strong>{fr('Chapter 1', 'Chapitre 1')}</strong>{
+              fr(
+                ': Market overview — global SUP market size, growth trends, and regional opportunities',
+                ' : Aperçu du marché — taille du marché mondial du SUP, tendances de croissance et opportunités régionales'
+              )
+            }
           </li>
           <li>
-            <strong>Chapter 2</strong>: Manufacturing methods — drop-stitch core lamination, HF welding, and material
-            science
+            <strong>{fr('Chapter 2', 'Chapitre 2')}</strong>{
+              fr(
+                ': Manufacturing methods — drop-stitch core lamination, HF welding, and material science',
+                ' : Méthodes de fabrication — stratification du cœur drop-stitch, soudure HF et science des matériaux'
+              )
+            }
           </li>
           <li>
-            <strong>Chapter 3</strong>: Mold design & tooling — CAD/CAM process, aluminum vs composite molds, cost
-            ranges
+            <strong>{fr('Chapter 3', 'Chapitre 3')}</strong>{
+              fr(
+                ': Mold design & tooling — CAD/CAM process, aluminum vs composite molds, cost ranges',
+                ' : Conception de moule et outillage — processus CAD/CAM, moules aluminium vs composites, fourchettes de coûts'
+              )
+            }
           </li>
           <li>
-            <strong>Chapter 4</strong>: Material selection guide — PVC grades, Hypalon, reinforcement fabrics, and
-            environmental resistance
+            <strong>{fr('Chapter 4', 'Chapitre 4')}</strong>{
+              fr(
+                ': Material selection guide — PVC grades, Hypalon, reinforcement fabrics, and environmental resistance',
+                ' : Guide de choix des matériaux — qualités de PVC, Hypalon, tissus de renfort et résistance aux conditions extérieures'
+              )
+            }
           </li>
           <li>
-            <strong>Chapter 5</strong>: Quality control framework — ISO 2859 sampling, burst testing, pressure
-            retention, seam integrity
+            <strong>{fr('Chapter 5', 'Chapitre 5')}</strong>{
+              fr(
+                ': Quality control framework — ISO 2859 sampling, burst testing, pressure retention, seam integrity',
+                ' : Cadre de contrôle qualité — échantillonnage ISO 2859, tests d’éclatement, maintien de pression, intégrité des soudures'
+              )
+            }
           </li>
           <li>
-            <strong>Chapter 6</strong>: Compliance & certification — CE, UKCA, BSCI, REACH, RoHS, and destination
-            country requirements
+            <strong>{fr('Chapter 6', 'Chapitre 6')}</strong>{
+              fr(
+                ': Compliance & certification — CE, UKCA, BSCI, REACH, RoHS, and destination country requirements',
+                ' : Conformité et certification — CE, UKCA, BSCI, REACH, RoHS et exigences du pays de destination'
+              )
+            }
           </li>
           <li>
-            <strong>Chapter 7</strong>: Cost optimization — mold amortization, volume pricing, material substitution,
-            and logistics consolidation
+            <strong>{fr('Chapter 7', 'Chapitre 7')}</strong>{
+              fr(
+                ': Cost optimization — mold amortization, volume pricing, material substitution, and logistics consolidation',
+                ' : Optimisation des coûts — amortissement du moule, prix par volume, substitution de matériaux et regroupement logistique'
+              )
+            }
           </li>
           <li>
-            <strong>Chapter 8</strong>: Logistics & shipping — FOB, CIF, DDP, container loading, customs clearance, and
-            freight forwarding
+            <strong>{fr('Chapter 8', 'Chapitre 8')}</strong>{
+              fr(
+                ': Logistics & shipping — FOB, CIF, DDP, container loading, customs clearance, and freight forwarding',
+                ' : Logistique et expédition — FOB, CIF, DDP, chargement de conteneurs, dédouanement et transit de fret'
+              )
+            }
           </li>
           <li>
-            <strong>Chapter 9</strong>: Supplier qualification — factory audit checklist, NDA templates, and
-            communication protocols
+            <strong>{fr('Chapter 9', 'Chapitre 9')}</strong>{
+              fr(
+                ': Supplier qualification — factory audit checklist, NDA templates, and communication protocols',
+                ' : Qualification des fournisseurs — liste de contrôle d’audit usine, modèles de NDA et protocoles de communication'
+              )
+            }
           </li>
-          <li><strong>Chapter 10</strong>: Case studies — real brand launches with timeline, budget, and outcomes</li>
+          <li>
+            <strong>{fr('Chapter 10', 'Chapitre 10')}</strong>{
+              fr(
+                ': Case studies — real brand launches with timeline, budget, and outcomes',
+                ' : Études de cas — lancements de marques réels avec calendrier, budget et résultats'
+              )
+            }
+          </li>
         </ul>
 
-        <h2>Who Should Read This</h2>
+        <h2>{fr('Who Should Read This', 'À Qui S’adresse ce Guide')}</h2>
         <ul>
-          <li>Entrepreneurs launching their first SUP brand</li>
-          <li>Existing water sports brands adding inflatable product lines</li>
-          <li>Retailers and distributors developing private label programs</li>
-          <li>Resort and rental operators planning branded fleet programs</li>
-          <li>Procurement professionals evaluating Asian manufacturing partners</li>
+          {
+            [
+              fr('Entrepreneurs launching their first SUP brand', 'Entrepreneurs lançant leur première marque de SUP'),
+              fr(
+                'Existing water sports brands adding inflatable product lines',
+                'Marques de sports nautiques existantes ajoutant des gammes de produits gonflables'
+              ),
+              fr(
+                'Retailers and distributors developing private label programs',
+                'Détaillants et distributeurs développant des programmes de marque privée'
+              ),
+              fr(
+                'Resort and rental operators planning branded fleet programs',
+                'Opérateurs de resorts et de location planifiant des programmes de flotte de marque'
+              ),
+              fr(
+                'Procurement professionals evaluating Asian manufacturing partners',
+                'Professionnels des achats évaluant des partenaires de fabrication asiatiques'
+              ),
+            ].map((li) => <li>{li}</li>)
+          }
         </ul>
 
         <div class="mt-8 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-xl p-6">
-          <p class="text-sm font-medium text-amber-800 dark:text-amber-300">Author</p>
+          <p class="text-sm font-medium text-amber-800 dark:text-amber-300">{fr('Author', 'Auteur')}</p>
           <p class="mt-1 text-gray-700 dark:text-slate-300">
-            Afarer OEM Engineering Team — 10+ years in inflatable marine manufacturing, 200+ brand launches across 50+
-            countries.
+            {
+              fr(
+                'Afarer OEM Engineering Team — 10+ years in inflatable marine manufacturing, 200+ brand launches across 50+ countries.',
+                'Équipe d’ingénierie OEM afarer — plus de 10 ans dans la fabrication nautique gonflable, plus de 200 lancements de marques dans plus de 50 pays.'
+              )
+            }
           </p>
         </div>
       </div>
@@ -113,9 +194,16 @@ const metadata = {
               ></path></svg
             >
           </div>
-          <h3 class="mt-4 text-xl font-bold text-gray-900 dark:text-white">Download Free White Paper</h3>
+          <h3 class="mt-4 text-xl font-bold text-gray-900 dark:text-white">
+            {fr('Download Free White Paper', 'Télécharger le Livre Blanc Gratuit')}
+          </h3>
           <p class="mt-2 text-sm text-gray-500 dark:text-slate-400">
-            42 pages. Instant PDF download. No credit card required.
+            {
+              fr(
+                '42 pages. Instant PDF download. No credit card required.',
+                '42 pages. Téléchargement PDF immédiat. Aucune carte de crédit requise.'
+              )
+            }
           </p>
         </div>
 
@@ -124,31 +212,45 @@ const metadata = {
             type="text"
             name="first_name"
             required
-            placeholder="First Name"
+            placeholder={fr('First Name', 'Prénom')}
             class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-sky-500 outline-none"
           />
           <input
             type="text"
             name="last_name"
             required
-            placeholder="Last Name"
+            placeholder={fr('Last Name', 'Nom')}
             class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-sky-500 outline-none"
           />
           <input
             type="email"
             name="email"
             required
-            placeholder="Work Email"
+            placeholder={fr('Work Email', 'E-mail Professionnel')}
             class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-sky-500 outline-none"
           />
           <input
             type="text"
             name="company"
-            placeholder="Company Name"
+            placeholder={fr('Company Name', 'Nom de l’Entreprise')}
             class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-sky-500 outline-none"
           />
-          <input type="hidden" name="subject" value="White Paper Download: OEM SUP Manufacturing Guide" />
-          <input type="hidden" name="message" value="Please send the white paper download link." />
+          <input
+            type="hidden"
+            name="subject"
+            value={fr(
+              'White Paper Download: OEM SUP Manufacturing Guide',
+              'Téléchargement du Livre Blanc : Guide de Fabrication SUP OEM'
+            )}
+          />
+          <input
+            type="hidden"
+            name="message"
+            value={fr(
+              'Please send the white paper download link.',
+              'Merci d’envoyer le lien de téléchargement du livre blanc.'
+            )}
+          />
           <input
             type="text"
             name="email_confirm"
@@ -160,10 +262,15 @@ const metadata = {
           <button
             type="submit"
             class="w-full px-6 py-3 bg-sky-600 hover:bg-sky-700 text-white font-semibold rounded-xl transition-colors"
-            >Download Free Guide</button
+            >{fr('Download Free Guide', 'Télécharger le Guide Gratuit')}</button
           >
           <p class="text-xs text-gray-400 dark:text-slate-500 text-center">
-            We respect your privacy. Unsubscribe anytime.
+            {
+              fr(
+                'We respect your privacy. Unsubscribe anytime.',
+                'Nous respectons votre vie privée. Désabonnement à tout moment.'
+              )
+            }
           </p>
           <div data-whitepaper-status class="text-sm text-center hidden"></div>
         </form>
@@ -171,28 +278,48 @@ const metadata = {
     </div>
 
     <div class="mt-16 border-t border-gray-200 dark:border-slate-700 pt-12">
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white text-center">What Industry Professionals Say</h2>
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white text-center">
+        {fr('What Industry Professionals Say', 'Ce que Disent les Professionnels du Secteur')}
+      </h2>
       <div class="mt-8 grid md:grid-cols-3 gap-6">
         <blockquote class="bg-gray-50 dark:bg-slate-800 rounded-xl p-6 border border-gray-200 dark:border-slate-700">
           <p class="text-gray-600 dark:text-slate-400 text-sm italic">
-            "The chapter on mold cost amortization alone saved us $12,000 on our first production run. Every brand owner
-            should read this before contacting a factory."
+            {
+              fr(
+                '"The chapter on mold cost amortization alone saved us $12,000 on our first production run. Every brand owner should read this before contacting a factory."',
+                '« Le chapitre sur l’amortissement des coûts de moule nous a à lui seul fait économiser 12 000 $ sur notre première série de production. Tout propriétaire de marque devrait le lire avant de contacter une usine. »'
+              )
+            }
           </p>
-          <footer class="mt-4 text-sm font-medium text-gray-900 dark:text-white">— Marine Brand Founder, US</footer>
+          <footer class="mt-4 text-sm font-medium text-gray-900 dark:text-white">
+            {fr('— Marine Brand Founder, US', '— Fondateur de marque marine, USA')}
+          </footer>
         </blockquote>
         <blockquote class="bg-gray-50 dark:bg-slate-800 rounded-xl p-6 border border-gray-200 dark:border-slate-700">
           <p class="text-gray-600 dark:text-slate-400 text-sm italic">
-            "We used the factory audit checklist to evaluate three Chinese manufacturers. It helped us identify the
-            right partner on the first attempt."
+            {
+              fr(
+                '"We used the factory audit checklist to evaluate three Chinese manufacturers. It helped us identify the right partner on the first attempt."',
+                '« Nous avons utilisé la liste de contrôle d’audit usine pour évaluer trois fabricants chinois. Elle nous a aidés à identifier le bon partenaire dès la première tentative. »'
+              )
+            }
           </p>
-          <footer class="mt-4 text-sm font-medium text-gray-900 dark:text-white">— Procurement Manager, EU</footer>
+          <footer class="mt-4 text-sm font-medium text-gray-900 dark:text-white">
+            {fr('— Procurement Manager, EU', '— Responsable des achats, UE')}
+          </footer>
         </blockquote>
         <blockquote class="bg-gray-50 dark:bg-slate-800 rounded-xl p-6 border border-gray-200 dark:border-slate-700">
           <p class="text-gray-600 dark:text-slate-400 text-sm italic">
-            "The compliance section clarified exactly which certifications we needed for the UK market. Worth the
-            download just for that chapter."
+            {
+              fr(
+                '"The compliance section clarified exactly which certifications we needed for the UK market. Worth the download just for that chapter."',
+                '« La section conformité a clarifié exactement quelles certifications nous avions besoin pour le marché britannique. Le téléchargement vaut le coup ne serait-ce que pour ce chapitre. »'
+              )
+            }
           </p>
-          <footer class="mt-4 text-sm font-medium text-gray-900 dark:text-white">— Retail Brand Director, UK</footer>
+          <footer class="mt-4 text-sm font-medium text-gray-900 dark:text-white">
+            {fr('— Retail Brand Director, UK', '— Directeur de marque de détail, Royaume-Uni')}
+          </footer>
         </blockquote>
       </div>
     </div>
@@ -202,6 +329,14 @@ const metadata = {
     (function () {
       const form = document.querySelector('form[data-whitepaper-form]');
       if (!form) return;
+      const isFr = window.location.pathname.startsWith('/fr/');
+      const msgs = {
+        thanks: isFr
+          ? 'Merci ! Consultez votre e-mail pour le lien de téléchargement.'
+          : 'Thanks! Check your email for the download link.',
+        error: isFr ? 'Une erreur est survenue. Veuillez réessayer.' : 'Something went wrong. Please try again.',
+        network: isFr ? 'Erreur réseau. Veuillez réessayer.' : 'Network error. Please try again.',
+      };
       form.addEventListener('submit', async function (e) {
         e.preventDefault();
         const status = form.querySelector('[data-whitepaper-status]');
@@ -212,17 +347,17 @@ const metadata = {
           const res = await fetch('/api/contact', { method: 'POST', body: fd });
           const data = await res.json();
           if (res.ok) {
-            status.textContent = 'Thanks! Check your email for the download link.';
+            status.textContent = msgs.thanks;
             status.className = 'mt-3 text-sm text-green-600 dark:text-green-400 text-center';
             form.querySelectorAll('input:not([type=hidden])').forEach(function (inp) {
               inp.value = '';
             });
           } else {
-            status.textContent = data?.error || 'Something went wrong. Please try again.';
+            status.textContent = data?.error || msgs.error;
             status.className = 'mt-3 text-sm text-red-600 dark:text-red-400 text-center';
           }
         } catch {
-          status.textContent = 'Network error. Please try again.';
+          status.textContent = msgs.network;
           status.className = 'mt-3 text-sm text-red-600 dark:text-red-400 text-center';
         }
         status.classList.remove('hidden');

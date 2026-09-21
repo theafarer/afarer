@@ -12,123 +12,255 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 
 const metadata = {
-  title: `Terms and Conditions — ${SITE.name}`,
-  description: t('terms.metaDesc') || 'Afarer terms and conditions governing the use of our website and services.',
+  title: fr(`Terms and Conditions — ${SITE.name}`, `Conditions Générales — ${SITE.name}`),
+  description:
+    t('terms.metaDesc') ||
+    fr(
+      'Afarer terms and conditions governing the use of our website and services.',
+      'Conditions générales afarer régissant l’utilisation de notre site web et de nos services.'
+    ),
 };
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Terms and Conditions' }];
+const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: fr('Terms and Conditions', 'Conditions Générales') }];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>
   <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
-    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter">Terms and Conditions</h1>
+    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter">
+      {fr('Terms and Conditions', 'Conditions Générales')}
+    </h1>
     <div
       class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
     >
-      <p><em>Last updated: January 06, 2023</em></p>
-      <p>Please read these terms and conditions carefully before using Our Service.</p>
+      <p><em>{fr('Last updated: January 06, 2023', 'Dernière mise à jour : 6 janvier 2023')}</em></p>
+      <p>
+        {
+          fr(
+            'Please read these terms and conditions carefully before using Our Service.',
+            'Veuillez lire attentivement les présentes conditions générales avant d’utiliser notre Service.'
+          )
+        }
+      </p>
 
-      <h2 id="interpretation-and-definitions">Interpretation and Definitions</h2>
-      <h3 id="interpretation">Interpretation</h3>
-      <p>The words of which the initial letter is capitalized have meanings defined under the following conditions.</p>
-      <h3 id="definitions">Definitions</h3>
-      <p>For the purposes of these Terms and Conditions:</p>
+      <h2 id="interpretation-and-definitions">
+        {fr('Interpretation and Definitions', 'Interprétation et Définitions')}
+      </h2>
+      <h3 id="interpretation">{fr('Interpretation', 'Interprétation')}</h3>
+      <p>
+        {
+          fr(
+            'The words of which the initial letter is capitalized have meanings defined under the following conditions.',
+            'Les mots dont la lettre initiale est en majuscule ont les significations définies dans les conditions suivantes.'
+          )
+        }
+      </p>
+      <h3 id="definitions">{fr('Definitions', 'Définitions')}</h3>
+      <p>{fr('For the purposes of these Terms and Conditions:', 'Aux fins des présentes Conditions Générales :')}</p>
       <ul>
         <li>
-          <strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party.
+          <strong>{fr('Affiliate', 'Filiale')}</strong>
+          {
+            fr(
+              'means an entity that controls, is controlled by or is under common control with a party.',
+              'désigne une entité qui contrôle une partie, est contrôlée par elle ou est sous contrôle commun avec elle.'
+            )
+          }
         </li>
-        <li><strong>Country</strong> refers to: California, United States</li>
-        <li><strong>Company</strong> refers to Afarer, a marine-engineering company.</li>
-        <li><strong>Device</strong> means any device that can access the Service.</li>
-        <li><strong>Service</strong> refers to the Website.</li>
         <li>
-          <strong>Website</strong> refers to Afarer, accessible from <a href="https://afarer.com">https://afarer.com</a>
+          <strong>{fr('Country', 'Pays')}</strong>
+          {fr('refers to: California, United States', 'fait référence à : la Californie, États-Unis')}
         </li>
-        <li><strong>You</strong> means the individual accessing or using the Service.</li>
+        <li>
+          <strong>{fr('Company', 'Société')}</strong>
+          {
+            fr(
+              'refers to Afarer, a marine-engineering company.',
+              'fait référence à afarer, une entreprise d’ingénierie marine.'
+            )
+          }
+        </li>
+        <li>
+          <strong>{fr('Device', 'Appareil')}</strong>
+          {fr('means any device that can access the Service.', 'désigne tout appareil pouvant accéder au Service.')}
+        </li>
+        <li>
+          <strong>{fr('Service', 'Service')}</strong>
+          {fr('refers to the Website.', 'fait référence au Site Web.')}
+        </li>
+        <li>
+          <strong>{fr('Website', 'Site Web')}</strong>
+          {fr('refers to Afarer, accessible from ', 'fait référence à afarer, accessible depuis ')}<a
+            href="https://afarer.com">{fr('afarer.com', 'https://afarer.com')}</a
+          > (https://afarer.com)
+        </li>
+        <li>
+          <strong>{fr('You', 'Vous')}</strong>
+          {
+            fr(
+              'means the individual accessing or using the Service.',
+              'désigne la personne accédant au Service ou l’utilisant.'
+            )
+          }
+        </li>
       </ul>
 
-      <h2 id="acknowledgment">Acknowledgment</h2>
+      <h2 id="acknowledgment">{fr('Acknowledgment', 'Reconnaissance')}</h2>
       <p>
-        These are the Terms and Conditions governing the use of this Service. Your access to and use of the Service is
-        conditioned on Your acceptance of and compliance with these Terms and Conditions.
+        {
+          fr(
+            'These are the Terms and Conditions governing the use of this Service. Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions.',
+            'Les présentes Conditions Générales régissent l’utilisation de ce Service. Votre accès au Service et votre utilisation de celui-ci sont subordonnés à votre acceptation et à votre respect des présentes Conditions Générales.'
+          )
+        }
       </p>
       <p>
-        You represent that you are over the age of 18. The Company does not permit those under 18 to use the Service.
-      </p>
-
-      <h2 id="links-to-other-websites">Links to Other Websites</h2>
-      <p>
-        Our Service may contain links to third-party web sites or services that are not owned or controlled by the
-        Company. We assume no responsibility for the content, privacy policies, or practices of any third party sites or
-        services.
-      </p>
-
-      <h2 id="termination">Termination</h2>
-      <p>
-        We may terminate or suspend Your access immediately, without prior notice or liability, for any reason
-        whatsoever, including without limitation if You breach these Terms and Conditions.
+        {
+          fr(
+            'You represent that you are over the age of 18. The Company does not permit those under 18 to use the Service.',
+            'Vous déclarez être âgé(e) de plus de 18 ans. La Société n’autorise pas les personnes de moins de 18 ans à utiliser le Service.'
+          )
+        }
       </p>
 
-      <h2 id="limitation-of-liability">Limitation of Liability</h2>
+      <h2 id="links-to-other-websites">{fr('Links to Other Websites', 'Liens vers d’Autres Sites Web')}</h2>
       <p>
-        To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for
-        any special, incidental, indirect, or consequential damages whatsoever.
+        {
+          fr(
+            'Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company. We assume no responsibility for the content, privacy policies, or practices of any third party sites or services.',
+            'Notre Service peut contenir des liens vers des sites web ou services tiers qui ne sont ni détenus ni contrôlés par la Société. Nous n’assumons aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques des sites ou services tiers.'
+          )
+        }
       </p>
 
-      <h2 id="as-is-and-as-available-disclaimer">"AS IS" and "AS AVAILABLE" Disclaimer</h2>
+      <h2 id="termination">{fr('Termination', 'Résiliation')}</h2>
       <p>
-        The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of
-        any kind.
+        {
+          fr(
+            'We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.',
+            'Nous pouvons résilier ou suspendre immédiatement votre accès, sans préavis ni responsabilité, pour quelque motif que ce soit, y compris, sans limitation, en cas de violation des présentes Conditions Générales.'
+          )
+        }
       </p>
 
-      <h2 id="governing-law">Governing Law</h2>
+      <h2 id="limitation-of-liability">{fr('Limitation of Liability', 'Limitation de Responsabilité')}</h2>
       <p>
-        The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the
-        Service.
+        {
+          fr(
+            'To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever.',
+            'Dans la mesure maximale autorisée par la loi applicable, la Société ou ses fournisseurs ne sauraient en aucun cas être tenus responsables de tout dommage spécial, accessoire, indirect ou consécutif, quel qu’il soit.'
+          )
+        }
       </p>
 
-      <h2 id="disputes-resolution">Disputes Resolution</h2>
+      <h2 id="as-is-and-as-available-disclaimer">
+        {fr('"AS IS" and "AS AVAILABLE" Disclaimer', 'Avertissement « EN L’ÉTAT » et « SELON DISPONIBILITÉ »')}
+      </h2>
       <p>
-        If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally
-        by contacting the Company.
+        {
+          fr(
+            'The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind.',
+            'Le Service vous est fourni « EN L’ÉTAT » et « SELON DISPONIBILITÉ », avec tous ses défauts, sans garantie d’aucune sorte.'
+          )
+        }
       </p>
 
-      <h2 id="for-european-union-eu-users">For European Union (EU) Users</h2>
+      <h2 id="governing-law">{fr('Governing Law', 'Droit Applicable')}</h2>
       <p>
-        If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country
-        in which you are resident in.
+        {
+          fr(
+            'The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service.',
+            'Les lois du Pays, à l’exclusion de ses règles de conflit de lois, régissent les présentes Conditions et votre utilisation du Service.'
+          )
+        }
       </p>
 
-      <h2 id="united-states-legal-compliance">United States Legal Compliance</h2>
+      <h2 id="disputes-resolution">{fr('Disputes Resolution', 'Résolution des Litiges')}</h2>
       <p>
-        You represent and warrant that You are not located in a country subject to US government embargo and You are not
-        listed on any US government list of prohibited or restricted parties.
+        {
+          fr(
+            'If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.',
+            'Si vous avez un litige ou un différend concernant le Service, vous acceptez de tenter d’abord de le résoudre à l’amiable en contactant la Société.'
+          )
+        }
       </p>
 
-      <h2 id="severability-and-waiver">Severability and Waiver</h2>
+      <h2 id="for-european-union-eu-users">
+        {fr('For European Union (EU) Users', 'Pour les Utilisateurs de l’Union Européenne (UE)')}
+      </h2>
       <p>
-        If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and
-        interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law.
+        {
+          fr(
+            'If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which you are resident in.',
+            'Si vous êtes un consommateur de l’Union européenne, vous bénéficiez des dispositions impératives de la loi du pays dans lequel vous résidez.'
+          )
+        }
       </p>
 
-      <h2 id="translation-interpretation">Translation Interpretation</h2>
+      <h2 id="united-states-legal-compliance">
+        {fr('United States Legal Compliance', 'Conformité Légale aux États-Unis')}
+      </h2>
       <p>
-        These Terms and Conditions may have been translated. You agree that the original English text shall prevail in
-        the case of a dispute.
+        {
+          fr(
+            'You represent and warrant that You are not located in a country subject to US government embargo and You are not listed on any US government list of prohibited or restricted parties.',
+            'Vous déclarez et garantissez que vous ne résidez pas dans un pays soumis à un embargo du gouvernement américain et que vous ne figurez sur aucune liste du gouvernement américain de personnes interdites ou restreintes.'
+          )
+        }
       </p>
 
-      <h2 id="changes-to-these-terms-and-conditions">Changes to These Terms and Conditions</h2>
+      <h2 id="severability-and-waiver">{fr('Severability and Waiver', 'Dissociabilité et Renonciation')}</h2>
       <p>
-        We reserve the right to modify or replace these Terms at any time. If a revision is material We will make
-        reasonable efforts to provide at least 30 days' notice.
+        {
+          fr(
+            'If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law.',
+            'Si une disposition des présentes Conditions est jugée inapplicable ou invalide, elle sera modifiée et interprétée de manière à atteindre, dans toute la mesure possible au regard du droit applicable, les objectifs de cette disposition.'
+          )
+        }
       </p>
 
-      <h2 id="contact-us">Contact Us</h2>
-      <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
+      <h2 id="translation-interpretation">{fr('Translation Interpretation', 'Interprétation des Traductions')}</h2>
+      <p>
+        {
+          fr(
+            'These Terms and Conditions may have been translated. You agree that the original English text shall prevail in the case of a dispute.',
+            'Les présentes Conditions Générales peuvent avoir été traduites. Vous acceptez que, en cas de litige, la version française prévale.'
+          )
+        }
+      </p>
+
+      <h2 id="changes-to-these-terms-and-conditions">
+        {fr('Changes to These Terms and Conditions', 'Modification des Présentes Conditions Générales')}
+      </h2>
+      <p>
+        {
+          fr(
+            "We reserve the right to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice.",
+            'Nous nous réservons le droit de modifier ou de remplacer les présentes Conditions à tout moment. Si une révision est substantielle, nous ferons des efforts raisonnables pour fournir un préavis d’au moins 30 jours.'
+          )
+        }
+      </p>
+
+      <h2 id="contact-us">{fr('Contact Us', 'Nous Contacter')}</h2>
+      <p>
+        {
+          fr(
+            'If you have any questions about these Terms and Conditions, You can contact us:',
+            'Si vous avez des questions concernant les présentes Conditions Générales, vous pouvez nous contacter :'
+          )
+        }
+      </p>
       <ul>
-        <li>By email: info@afarer.com</li>
-        <li>By mail: Economic Development Zone, Laixi, Qingdao, China, 266600</li>
+        <li>{fr('By email', 'Par e-mail')}: info@afarer.com</li>
+        <li>
+          {fr('By mail', 'Par courrier')}: {
+            fr(
+              'Economic Development Zone, Laixi, Qingdao, China, 266600',
+              'Zone de développement économique, Laixi, Qingdao, Chine, 266600'
+            )
+          }
+        </li>
       </ul>
     </div>
   </section>

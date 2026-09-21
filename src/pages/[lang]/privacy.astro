@@ -12,146 +12,298 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 
 const metadata = {
-  title: `Privacy Policy — ${SITE.name}`,
+  title: fr(`Privacy Policy — ${SITE.name}`, `Politique de Confidentialité — ${SITE.name}`),
   description:
-    t('privacy.metaDesc') || 'Afarer privacy policy. Learn how we collect, use, and protect your personal data.',
+    t('privacy.metaDesc') ||
+    fr(
+      'Afarer privacy policy. Learn how we collect, use, and protect your personal data.',
+      'Politique de confidentialité afarer. Découvrez comment nous collectons, utilisons et protégeons vos données personnelles.'
+    ),
 };
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Privacy Policy' }];
+const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: fr('Privacy Policy', 'Politique de Confidentialité') }];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>
   <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
-    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter">Privacy Policy</h1>
+    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter">
+      {fr('Privacy Policy', 'Politique de Confidentialité')}
+    </h1>
     <div
       class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8"
     >
-      <p><em>Last updated: June 28, 2026</em></p>
+      <p><em>{fr('Last updated: June 28, 2026', 'Dernière mise à jour : 28 juin 2026')}</em></p>
       <p>
-        This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
-        information when You use the Service and tells You about Your privacy rights and how the law protects You.
+        {
+          fr(
+            'This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.',
+            'La présente Politique de Confidentialité décrit nos politiques et procédures concernant la collecte, l’utilisation et la divulgation de vos informations lorsque vous utilisez le Service, et vous informe de vos droits en matière de confidentialité et de la manière dont la loi vous protège.'
+          )
+        }
       </p>
       <p>
-        We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection
-        and use of information in accordance with this Privacy Policy.
+        {
+          fr(
+            'We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.',
+            'Nous utilisons vos données personnelles pour fournir et améliorer le Service. En utilisant le Service, vous acceptez la collecte et l’utilisation d’informations conformément à la présente Politique de Confidentialité.'
+          )
+        }
       </p>
 
-      <h2 id="interpretation-and-definitions">Interpretation and Definitions</h2>
-      <h3 id="interpretation">Interpretation</h3>
+      <h2 id="interpretation-and-definitions">
+        {fr('Interpretation and Definitions', 'Interprétation et Définitions')}
+      </h2>
+      <h3 id="interpretation">{fr('Interpretation', 'Interprétation')}</h3>
       <p>
-        The words of which the initial letter is capitalized have meanings defined under the following conditions. The
-        following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+        {
+          fr(
+            'The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.',
+            'Les mots dont la lettre initiale est en majuscule ont les significations définies dans les conditions suivantes. Les définitions suivantes ont la même signification qu’elles apparaissent au singulier ou au pluriel.'
+          )
+        }
       </p>
-      <h3 id="definitions">Definitions</h3>
-      <p>For the purposes of this Privacy Policy:</p>
+      <h3 id="definitions">{fr('Definitions', 'Définitions')}</h3>
+      <p>{fr('For the purposes of this Privacy Policy:', 'Aux fins de la présente Politique de Confidentialité :')}</p>
       <ul>
         <li>
-          <strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.
+          <strong>{fr('Account', 'Compte')}</strong>
+          {
+            fr(
+              'means a unique account created for You to access our Service or parts of our Service.',
+              'désigne un compte unique créé pour vous permettre d’accéder à notre Service ou à des parties de notre Service.'
+            )
+          }
         </li>
         <li>
-          <strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to
-          Afarer, a water sports brand operated by Aquafarer LLC (USA), with product development and manufacturing managed
-          by the Aquafarer Operation Team in Qingdao, China.
+          <strong>{fr('Company', 'Société')}</strong> ({
+            fr(
+              'referred to as either "the Company", "We", "Us" or "Our" in this Agreement',
+              'désignée par « la Société », « Nous », « Notre » ou « Nos » dans le présent Accord'
+            )
+          }) {
+            fr(
+              'refers to Afarer, a water sports brand operated by Aquafarer LLC (USA), with product development and manufacturing managed by the Aquafarer Operation Team in Qingdao, China.',
+              'fait référence à afarer, une marque de sports nautiques opérée par Aquafarer LLC (USA), dont le développement produit et la fabrication sont gérés par l’Aquafarer Operation Team à Qingdao, en Chine.'
+            )
+          }
         </li>
         <li>
-          <strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by
-          a website.
+          <strong>{fr('Cookies', 'Cookies')}</strong>
+          {
+            fr(
+              'are small files that are placed on Your computer, mobile device or any other device by a website.',
+              'sont de petits fichiers placés sur votre ordinateur, appareil mobile ou tout autre appareil par un site web.'
+            )
+          }
         </li>
-        <li><strong>Country</strong> refers to: China</li>
-        <li><strong>Device</strong> means any device that can access the Service.</li>
+        <li><strong>{fr('Country', 'Pays')}</strong> {fr('refers to: China', 'fait référence à : la Chine')}</li>
         <li>
-          <strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.
+          <strong>{fr('Device', 'Appareil')}</strong>
+          {fr('means any device that can access the Service.', 'désigne tout appareil pouvant accéder au Service.')}
         </li>
-        <li><strong>Service</strong> refers to the Website.</li>
         <li>
-          <strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company.
+          <strong>{fr('Personal Data', 'Données Personnelles')}</strong>
+          {
+            fr(
+              'is any information that relates to an identified or identifiable individual.',
+              'sont toute information se rapportant à une personne identifiée ou identifiable.'
+            )
+          }
         </li>
-        <li><strong>Usage Data</strong> refers to data collected automatically.</li>
         <li>
-          <strong>Website</strong> refers to Afarer, accessible from <a href="https://afarer.com">https://afarer.com</a>
+          <strong>{fr('Service', 'Service')}</strong>
+          {fr('refers to the Website.', 'fait référence au Site Web.')}
         </li>
-        <li><strong>You</strong> means the individual accessing or using the Service.</li>
+        <li>
+          <strong>{fr('Service Provider', 'Prestataire de Services')}</strong>
+          {
+            fr(
+              'means any natural or legal person who processes the data on behalf of the Company.',
+              'désigne toute personne physique ou morale qui traite les données au nom de la Société.'
+            )
+          }
+        </li>
+        <li>
+          <strong>{fr('Usage Data', 'Données d’Utilisation')}</strong>
+          {fr('refers to data collected automatically.', 'fait référence aux données collectées automatiquement.')}
+        </li>
+        <li>
+          <strong>{fr('Website', 'Site Web')}</strong>
+          {fr('refers to Afarer, accessible from ', 'fait référence à afarer, accessible depuis ')}<a
+            href="https://afarer.com">{fr('afarer.com', 'https://afarer.com')}</a
+          > (https://afarer.com)
+        </li>
+        <li>
+          <strong>{fr('You', 'Vous')}</strong>
+          {
+            fr(
+              'means the individual accessing or using the Service.',
+              'désigne la personne accédant au Service ou l’utilisant.'
+            )
+          }
+        </li>
       </ul>
 
-      <h2 id="collecting-and-using-your-personal-data">Collecting and Using Your Personal Data</h2>
-      <h3 id="types-of-data-collected">Types of Data Collected</h3>
-      <h4 id="personal-data">Personal Data</h4>
+      <h2 id="collecting-and-using-your-personal-data">
+        {fr('Collecting and Using Your Personal Data', 'Collecte et Utilisation de Vos Données Personnelles')}
+      </h2>
+      <h3 id="types-of-data-collected">{fr('Types of Data Collected', 'Types de Données Collectées')}</h3>
+      <h4 id="personal-data">{fr('Personal Data', 'Données Personnelles')}</h4>
       <p>
-        While using Our Service, We may ask You to provide Us with certain personally identifiable information that can
-        be used to contact or identify You.
+        {
+          fr(
+            'While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You.',
+            'Lors de l’utilisation de notre Service, nous pouvons vous demander de nous fournir certaines informations personnelles identifiables qui peuvent être utilisées pour vous contacter ou vous identifier.'
+          )
+        }
       </p>
-      <h4 id="usage-data">Usage Data</h4>
+      <h4 id="usage-data">{fr('Usage Data', 'Données d’Utilisation')}</h4>
       <p>
-        Usage Data is collected automatically when using the Service, including Your Device's IP address, browser type,
-        browser version, pages visited, time and date of visit, time spent on pages, and other diagnostic data.
+        {
+          fr(
+            "Usage Data is collected automatically when using the Service, including Your Device's IP address, browser type, browser version, pages visited, time and date of visit, time spent on pages, and other diagnostic data.",
+            'Les données d’utilisation sont collectées automatiquement lors de l’utilisation du Service, notamment l’adresse IP de votre appareil, le type de navigateur, la version du navigateur, les pages visitées, la date et l’heure de visite, le temps passé sur les pages et d’autres données de diagnostic.'
+          )
+        }
       </p>
-      <h4 id="tracking-technologies-and-cookies">Tracking Technologies and Cookies</h4>
+      <h4 id="tracking-technologies-and-cookies">
+        {fr('Tracking Technologies and Cookies', 'Technologies de Suivi et Cookies')}
+      </h4>
       <p>
-        We use Cookies and similar tracking technologies. You can instruct Your browser to refuse all Cookies. We use
-        both Session and Persistent Cookies for essential, functional, and analytical purposes.
-      </p>
-
-      <h2 id="use-of-your-personal-data">Use of Your Personal Data</h2>
-      <p>
-        The Company may use Personal Data to provide and maintain our Service, manage Your Account, perform contracts,
-        contact You, provide news and offers, manage requests, and for business transfers or other purposes.
-      </p>
-
-      <h2 id="retention-of-your-personal-data">Retention of Your Personal Data</h2>
-      <p>
-        The Company will retain Your Personal Data only for as long as necessary for the purposes set out in this
-        Privacy Policy.
-      </p>
-
-      <h2 id="transfer-of-your-personal-data">Transfer of Your Personal Data</h2>
-      <p>
-        Your information may be transferred to computers located outside of Your jurisdiction. Your consent to this
-        Privacy Policy represents Your agreement to that transfer.
+        {
+          fr(
+            'We use Cookies and similar tracking technologies. You can instruct Your browser to refuse all Cookies. We use both Session and Persistent Cookies for essential, functional, and analytical purposes.',
+            'Nous utilisons des cookies et des technologies de suivi similaires. Vous pouvez configurer votre navigateur pour refuser tous les cookies. Nous utilisons des cookies de session et persistants à des fins essentielles, fonctionnelles et analytiques.'
+          )
+        }
       </p>
 
-      <h2 id="delete-your-personal-data">Delete Your Personal Data</h2>
+      <h2 id="use-of-your-personal-data">
+        {fr('Use of Your Personal Data', 'Utilisation de Vos Données Personnelles')}
+      </h2>
       <p>
-        You have the right to delete or request that We assist in deleting the Personal Data that We have collected
-        about You.
+        {
+          fr(
+            'The Company may use Personal Data to provide and maintain our Service, manage Your Account, perform contracts, contact You, provide news and offers, manage requests, and for business transfers or other purposes.',
+            'La Société peut utiliser les données personnelles pour fournir et maintenir notre Service, gérer votre compte, exécuter des contrats, vous contacter, fournir des actualités et des offres, gérer les demandes, ainsi qu’à des fins de transferts d’activité ou autres.'
+          )
+        }
       </p>
 
-      <h2 id="disclosure-of-your-personal-data">Disclosure of Your Personal Data</h2>
+      <h2 id="retention-of-your-personal-data">
+        {fr('Retention of Your Personal Data', 'Conservation de Vos Données Personnelles')}
+      </h2>
       <p>
-        The Company may disclose Your Personal Data if required by law or in response to valid requests by public
-        authorities.
+        {
+          fr(
+            'The Company will retain Your Personal Data only for as long as necessary for the purposes set out in this Privacy Policy.',
+            'La Société ne conservera vos données personnelles que le temps nécessaire aux fins énoncées dans la présente Politique de Confidentialité.'
+          )
+        }
       </p>
 
-      <h2 id="security-of-your-personal-data">Security of Your Personal Data</h2>
+      <h2 id="transfer-of-your-personal-data">
+        {fr('Transfer of Your Personal Data', 'Transfert de Vos Données Personnelles')}
+      </h2>
       <p>
-        The security of Your Personal Data is important to Us. While We strive to use commercially acceptable means to
-        protect Your Personal Data, We cannot guarantee its absolute security.
+        {
+          fr(
+            'Your information may be transferred to computers located outside of Your jurisdiction. Your consent to this Privacy Policy represents Your agreement to that transfer.',
+            'Vos informations peuvent être transférées vers des ordinateurs situés hors de votre juridiction. Votre consentement à la présente Politique de Confidentialité vaut accord pour ce transfert.'
+          )
+        }
       </p>
 
-      <h2 id="childrens-privacy">Children's Privacy</h2>
+      <h2 id="delete-your-personal-data">
+        {fr('Delete Your Personal Data', 'Suppression de Vos Données Personnelles')}
+      </h2>
       <p>
-        Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable
-        information from anyone under the age of 13.
+        {
+          fr(
+            'You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.',
+            'Vous avez le droit de supprimer les données personnelles que nous avons collectées à votre sujet, ou de demander notre aide pour cela.'
+          )
+        }
       </p>
 
-      <h2 id="links-to-other-websites">Links to Other Websites</h2>
+      <h2 id="disclosure-of-your-personal-data">
+        {fr('Disclosure of Your Personal Data', 'Divulgation de Vos Données Personnelles')}
+      </h2>
       <p>
-        Our Service may contain links to other websites. We have no control over and assume no responsibility for the
-        content or privacy policies of third-party sites.
+        {
+          fr(
+            'The Company may disclose Your Personal Data if required by law or in response to valid requests by public authorities.',
+            'La Société peut divulguer vos données personnelles si la loi l’exige ou en réponse à des demandes valides des autorités publiques.'
+          )
+        }
       </p>
 
-      <h2 id="changes-to-this-privacy-policy">Changes to This Privacy Policy</h2>
+      <h2 id="security-of-your-personal-data">
+        {fr('Security of Your Personal Data', 'Sécurité de Vos Données Personnelles')}
+      </h2>
       <p>
-        We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy
-        Policy on this page.
+        {
+          fr(
+            'The security of Your Personal Data is important to Us. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.',
+            'La sécurité de vos données personnelles est importante pour nous. Bien que nous nous efforcions d’utiliser des moyens commercialement acceptables pour protéger vos données personnelles, nous ne pouvons garantir leur sécurité absolue.'
+          )
+        }
       </p>
 
-      <h2 id="contact-us">Contact Us</h2>
-      <p>If you have any questions about this Privacy Policy, You can contact us:</p>
+      <h2 id="childrens-privacy">{fr("Children's Privacy", 'Confidentialité des Enfants')}</h2>
+      <p>
+        {
+          fr(
+            'Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13.',
+            'Notre Service ne s’adresse pas aux personnes de moins de 13 ans. Nous ne collectons pas sciemment d’informations personnelles identifiables auprès de personnes de moins de 13 ans.'
+          )
+        }
+      </p>
+
+      <h2 id="links-to-other-websites">{fr('Links to Other Websites', 'Liens vers d’Autres Sites Web')}</h2>
+      <p>
+        {
+          fr(
+            'Our Service may contain links to other websites. We have no control over and assume no responsibility for the content or privacy policies of third-party sites.',
+            'Notre Service peut contenir des liens vers d’autres sites web. Nous n’avons aucun contrôle sur le contenu ou les politiques de confidentialité des sites tiers et n’assumons aucune responsabilité à cet égard.'
+          )
+        }
+      </p>
+
+      <h2 id="changes-to-this-privacy-policy">
+        {fr('Changes to This Privacy Policy', 'Modifications de la Présente Politique de Confidentialité')}
+      </h2>
+      <p>
+        {
+          fr(
+            'We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.',
+            'Nous pouvons mettre à jour notre Politique de Confidentialité de temps à autre. Nous vous informerons de toute modification en publiant la nouvelle Politique de Confidentialité sur cette page.'
+          )
+        }
+      </p>
+
+      <h2 id="contact-us">{fr('Contact Us', 'Nous Contacter')}</h2>
+      <p>
+        {
+          fr(
+            'If you have any questions about this Privacy Policy, You can contact us:',
+            'Si vous avez des questions concernant la présente Politique de Confidentialité, vous pouvez nous contacter :'
+          )
+        }
+      </p>
       <ul>
-        <li>By email: info@afarer.com</li>
-        <li>By phone: +86 13305324192</li>
-        <li>By mail: Economic Development Zone, Laixi, Qingdao, China, 266600</li>
+        <li>{fr('By email', 'Par e-mail')}: info@afarer.com</li>
+        <li>{fr('By phone', 'Par téléphone')}: +86 13305324192</li>
+        <li>
+          {fr('By mail', 'Par courrier')}: {
+            fr(
+              'Economic Development Zone, Laixi, Qingdao, China, 266600',
+              'Zone de développement économique, Laixi, Qingdao, Chine, 266600'
+            )
+          }
+        </li>
       </ul>
     </div>
   </section>
