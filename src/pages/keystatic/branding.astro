@@ -21,7 +21,7 @@ let data: Record<string, any> = {
   site_name: 'afarer',
   logo_image: '',
   logo_alt: 'afarer logo',
-  copyright: '© {year} afarer 路 All rights reserved.',
+  copyright: '© {year} afarer · All rights reserved.',
   phone: '+86 13305324192',
   address: 'Economic Development Zone, Laixi, Qingdao, China, 266600',
   email: 'info@afarer.com',
@@ -78,7 +78,7 @@ const year = new Date().getFullYear();
     <div class="flex items-center justify-between gap-4 flex-wrap">
       <div>
         <h1 class="text-2xl font-semibold">
-          Branding & Logo <span class="text-base text-gray-400 font-normal">(鍝佺墝 ?Logo)</span>
+          Branding & Logo <span class="text-base text-gray-400 font-normal">(品牌与Logo)</span>
         </h1>
       </div>
       <div class="flex items-center gap-2">
@@ -98,16 +98,16 @@ const year = new Date().getFullYear();
       </div>
     </div>
     <p class="mt-1 text-sm text-gray-500">
-      缂栬緫绔欑偣鍚嶇О銆丩ogo銆佺増鏉冧俊鎭€佽仈绯绘柟寮忋€乄hatsApp銆侀偖浠堕厤缃拰璋锋瓕鍦板浘 ? Edit site name,
-      logo, copyright, contact info, WhatsApp, email config, and Google Maps. File: <code class="font-mono">{file}</code
-      >. You can use <code class="font-mono">{'{year}'}</code> and <code class="font-mono">{'{site_name}'}</code> placeholders
-      in the copyright text, which will be auto-replaced (current year {year}, current site_name "{data.site_name}").
+      编辑站点名称、Logo、版权信息、联系方式、WhatsApp、邮件配置和谷歌地图。 Edit site name, logo, copyright, contact
+      info, WhatsApp, email config, and Google Maps. File: <code class="font-mono">{file}</code>. You can use <code
+        class="font-mono">{'{year}'}</code
+      > and <code class="font-mono">{'{site_name}'}</code> placeholders in the copyright text, which will be auto-replaced
+      (current year {year}, current site_name "{data.site_name}").
       {!isDefault && <span class="text-amber-600 dark:text-amber-400"> –locale override</span>}
     </p>
     <p class="mt-1 text-xs text-amber-600 dark:text-amber-400">
-      <strong>鎻愮ず →</strong> 姝ら潰鏉跨紪杈戠殑鏄樉绀虹敤淇℃伅銆侸SON-LD 缁撴瀯鍖栨暟鎹腑鐨勭粍缁囦俊鎭拰绀句氦閾炬帴璇峰湪
-      SEO 闈㈡澘涓紪杈?? Tip: This panel edits display info. For JSON-LD organization info and social links, use the SEO
-      panel.
+      <strong>提示 →</strong> 此面板编辑的是显示用信息。JSON-LD 结构化数据中的组织信息和社交链接请在 SEO 面板中编辑。 Tip:
+      This panel edits display info. For JSON-LD organization info and social links, use the SEO panel.
     </p>
   </div>
 
@@ -190,15 +190,15 @@ const year = new Date().getFullYear();
 
     <div class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6 space-y-5">
       <h2 class="text-base font-semibold">
-        Contact Information <span class="text-xs text-gray-400 font-normal">( 系 式 - 页 示 )</span>
+        Contact Information <span class="text-xs text-gray-400 font-normal">(联系方式 - 页面显示)</span>
       </h2>
       <p class="text-xs text-gray-500">
-        示 footer contact 页 妗? 同 JSON-LD 峁? 械 织 息 前 SEO 濉? Displayed in footer and contact page. To update
-        JSON-LD organization info, use the SEO panel.
+        显示于 footer 和 contact 页面。更新 JSON-LD 组织信息请使用 SEO 面板。 Displayed in footer and contact page. To
+        update JSON-LD organization info, use the SEO panel.
       </p>
       <div>
         <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-          >Phone Number <span class="text-xs text-gray-400 font-normal">( 缁?</span></label
+          >Phone Number <span class="text-xs text-gray-400 font-normal">(电话)</span></label
         >
         <input
           type="text"
@@ -207,11 +207,11 @@ const year = new Date().getFullYear();
           placeholder="+86 13305324192"
           class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-900 text-sm font-mono"
         />
-        <p class="mt-1 text-xs text-gray-500">鏄剧ず ?footer ?contact 椤甸潰銆備笉浼氬奖 ?JSON-LD schema →</p>
+        <p class="mt-1 text-xs text-gray-500">显示于 footer 和 contact 页面。不会影响 JSON-LD schema →</p>
       </div>
       <div>
         <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-          >Address <span class="text-xs text-gray-400 font-normal">(鍦板潃)</span></label
+          >Address <span class="text-xs text-gray-400 font-normal">(地址)</span></label
         >
         <input
           type="text"
@@ -223,7 +223,7 @@ const year = new Date().getFullYear();
       </div>
       <div>
         <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-          >Email <span class="text-xs text-gray-400 font-normal">(閭)</span></label
+          >Email <span class="text-xs text-gray-400 font-normal">(邮箱)</span></label
         >
         <input
           type="email"
@@ -336,7 +336,7 @@ const year = new Date().getFullYear();
             >Do not send email (only store to GitHub)</option
           >
           <option value="resend" selected={data.contact_email_provider === 'resend'}
-            >Resend (Recommended 路 Free 100/day 路 Cloudflare compatible)</option
+            >Resend (Recommended · Free 100/day · Cloudflare compatible)</option
           >
         </select>
         <p class="mt-1 text-xs text-gray-500">
@@ -349,7 +349,7 @@ const year = new Date().getFullYear();
 
       <div>
         <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-          >Resend API Key <span class="text-xs text-gray-400 font-normal">(Resend 瀵嗛挜)</span></label
+          >Resend API Key <span class="text-xs text-gray-400 font-normal">(Resend 密钥)</span></label
         >
         <input
           type="password"
@@ -360,20 +360,20 @@ const year = new Date().getFullYear();
           class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-900 text-sm font-mono"
         />
         <p class="mt-1 text-xs text-gray-500">
-          鐢ㄤ簬鍙戦€佽仈绯昏〃鍗曢偖浠躲€傚垱寤哄湴鍧€ <a
+          用于发送联系表单邮件。创建地址 <a
             class="underline"
             href="https://resend.com/api-keys"
             target="_blank"
             rel="noopener">resend.com/api-keys</a
-          > 锛孎ull access 鏉冮檺鍗冲彲 → <strong class="text-amber-600"
-            >娉ㄦ剰锛氭瀵嗛挜鏄庢枃瀛樺偍 git 浠撳簱涓紝璇蜂娇鐢ㄤ笓鐢ㄥ瘑閽→</strong
+          >，Full access 权限即可 → <strong class="text-amber-600"
+            >注意：此密钥明文存储在 git 仓库中，请使用专用密钥 →</strong
           >
         </p>
       </div>
 
       <div>
         <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-          >GitHub PAT <span class="text-xs text-gray-400 font-normal">(鑱旂郴琛ㄥ崟瀛樺偍鐢ㄤ护 ?</span></label
+          >GitHub PAT <span class="text-xs text-gray-400 font-normal">(联系表单存储用密钥)</span></label
         >
         <input
           type="password"
@@ -384,9 +384,10 @@ const year = new Date().getFullYear();
           class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-900 text-sm font-mono"
         />
         <p class="mt-1 text-xs text-amber-800 dark:text-amber-300">
-          鐢ㄤ簬灏嗗姞瀵嗙殑鑱旂郴琛ㄥ崟鎻愪氦鍐欏叆 GitHub 浠撳簱 ? <strong>蹇呴』浣跨敤 Fine-grained PAT</strong
-          >锛堝垱寤鸿矾寰勶細GitHub Settings ?Developer settings ?Personal access tokens ?Fine-grained tokens锛夛紝
-          浠呭嬀閫夊搴斾粨搴撶殑 <strong>Contents: Read and write</strong> 鏉冮檺銆侰lassic PAT 鎷ユ湁瀹屾暣浠撳簱鏉冮檺锛屾硠闇查闄╂洿楂??
+          用于将加密的联系表单提交写入 GitHub 仓库。 <strong>必须使用 Fine-grained PAT</strong>（创建路径：GitHub
+          Settings → Developer settings → Personal access tokens → Fine-grained tokens）， 只勾选对应仓库的 <strong
+            >Contents: Read and write</strong
+          > 权限。Classic PAT 拥有完整仓库权限，泄露风险更高。
         </p>
       </div>
     </div>
