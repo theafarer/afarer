@@ -34,6 +34,7 @@ if (!page) {
 }
 
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 
 const hero = page.hero;
 const challenge = page.challenge;
@@ -41,7 +42,7 @@ const solutionsData = page.solutions;
 const cs =
   typeof page.caseStudy.customer === 'string'
     ? {
-        title: 'Case Study',
+        title: fr('Case Study', 'Étude de cas'),
         customer: { location: undefined, background: page.caseStudy.customer, goal: undefined } as {
           location?: string;
           background?: string;
@@ -143,19 +144,21 @@ const ctaActions = [
               <div class="grid md:grid-cols-3 gap-4 mb-6 pb-6 border-b border-gray-100 dark:border-gray-700">
                 {c.customer.location && (
                   <div>
-                    <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">Location</p>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">{fr('Location', 'Lieu')}</p>
                     <p class="text-sm font-medium text-gray-900 dark:text-slate-100 mt-1">{c.customer.location}</p>
                   </div>
                 )}
                 {c.customer.background && (
                   <div>
-                    <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">Background</p>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">
+                      {fr('Background', 'Contexte')}
+                    </p>
                     <p class="text-sm font-medium text-gray-900 dark:text-slate-100 mt-1">{c.customer.background}</p>
                   </div>
                 )}
                 {c.customer.goal && (
                   <div>
-                    <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">Goal</p>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">{fr('Goal', 'Objectif')}</p>
                     <p class="text-sm font-medium text-gray-900 dark:text-slate-100 mt-1">{c.customer.goal}</p>
                   </div>
                 )}
@@ -175,7 +178,9 @@ const ctaActions = [
               </div>
             )}
             <div>
-              <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">Results</p>
+              <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">
+                {fr('Results', 'Résultats')}
+              </p>
               <div class="flex flex-wrap gap-2">
                 {c.results.map((r) => (
                   <span class="inline-flex items-center gap-1.5 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-sm font-medium px-3 py-1.5 rounded-full">

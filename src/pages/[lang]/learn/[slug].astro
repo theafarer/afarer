@@ -31,6 +31,7 @@ export function getStaticPaths() {
 
 const { lang, slug } = Astro.params;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 
 const LEARN_PAGES: Record<
   string,
@@ -244,7 +245,9 @@ const metadata = {
                 {a.title}
               </h2>
               <p class="mt-2 text-sm text-gray-500 dark:text-slate-400 leading-relaxed">{a.desc}</p>
-              <span class="mt-3 inline-block text-sm font-medium text-sky-600">Read guide →</span>
+              <span class="mt-3 inline-block text-sm font-medium text-sky-600">
+                {fr('Read guide →', 'Lire le guide →')}
+              </span>
             </a>
           ))}
         </div>
@@ -259,21 +262,27 @@ const metadata = {
         class="block p-4 rounded-xl border border-gray-200 dark:border-slate-700 hover:border-sky-300 dark:hover:border-sky-600 transition"
       >
         <span class="font-medium text-sky-600">{t('nav.technology') || 'Technology'}</span>
-        <p class="mt-1 text-gray-500 dark:text-slate-400">Marine safety engineering and material testing</p>
+        <p class="mt-1 text-gray-500 dark:text-slate-400">
+          {fr('Marine safety engineering and material testing', 'Ingénierie de sécurité marine et tests de matériaux')}
+        </p>
       </a>
       <a
         href={`/${lang}/products`}
         class="block p-4 rounded-xl border border-gray-200 dark:border-slate-700 hover:border-sky-300 dark:hover:border-sky-600 transition"
       >
         <span class="font-medium text-sky-600">{t('product.pageTitle') || 'Products'}</span>
-        <p class="mt-1 text-gray-500 dark:text-slate-400">Explore the full Afarer product catalog</p>
+        <p class="mt-1 text-gray-500 dark:text-slate-400">
+          {fr('Explore the full Afarer product catalog', 'Explorez le catalogue complet de produits afarer')}
+        </p>
       </a>
       <a
         href={`/${lang}/trust`}
         class="block p-4 rounded-xl border border-gray-200 dark:border-slate-700 hover:border-sky-300 dark:hover:border-sky-600 transition"
       >
         <span class="font-medium text-sky-600">{t('nav.trust') || 'Trust'}</span>
-        <p class="mt-1 text-gray-500 dark:text-slate-400">CE, ISO and BSCI compliance</p>
+        <p class="mt-1 text-gray-500 dark:text-slate-400">
+          {fr('CE, ISO and BSCI compliance', 'Conformité CE, ISO et BSCI')}
+        </p>
       </a>
     </div>
   </section>

@@ -14,6 +14,7 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'factory');
 
@@ -267,11 +268,15 @@ const renderIntro = (text: string) => text.replace(/\*\*(.+?)\*\*/g, '<strong>$1
               </div>
               <div class="md:col-span-3 p-6">
                 <div class="mb-3">
-                  <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">QC Checkpoint</span>
+                  <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">
+                    {fr('QC Checkpoint', 'Point de contrôle QC')}
+                  </span>
                   <p class="mt-1 text-sm text-gray-700 dark:text-gray-300">{f.qc_check}</p>
                 </div>
                 <div>
-                  <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Pass / Fail Threshold</span>
+                  <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">
+                    {fr('Pass / Fail Threshold', 'Seuil réussite / échec')}
+                  </span>
                   <p class="mt-1 text-sm text-gray-700 dark:text-gray-300">{f.qc_threshold}</p>
                 </div>
               </div>
@@ -349,24 +354,26 @@ const renderIntro = (text: string) => text.replace(/\*\*(.+?)\*\*/g, '<strong>$1
       <div
         class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800"
       >
-        <span class="text-sm font-medium">Tracking system</span>
+        <span class="text-sm font-medium">{fr('Tracking system', 'Système de suivi')}</span>
         <span class="text-sm text-muted">{traceSection.system || 'Custom ERP + batch tags'}</span>
       </div>
       <div
         class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800"
       >
-        <span class="text-sm font-medium">Coverage</span>
+        <span class="text-sm font-medium">{fr('Coverage', 'Couverture')}</span>
         <span class="text-sm text-muted">{traceSection.coverage || '100% of production materials'}</span>
       </div>
       <div
         class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800"
       >
-        <span class="text-sm font-medium">Records retained</span>
+        <span class="text-sm font-medium">{fr('Records retained', 'Conservation des dossiers')}</span>
         <span class="text-sm text-muted">{traceSection.records_retained || '10 years'}</span>
       </div>
     </div>
     <div class="max-w-3xl mx-auto">
-      <h3 class="text-sm font-semibold text-sky-600 uppercase tracking-wider mb-3">Supplier Material Certifications</h3>
+      <h3 class="text-sm font-semibold text-sky-600 uppercase tracking-wider mb-3">
+        {fr('Supplier Material Certifications', 'Certifications des matériaux fournisseurs')}
+      </h3>
       <div class="grid md:grid-cols-2 gap-3">
         {
           suppliers.map((s: any) => (

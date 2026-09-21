@@ -48,6 +48,7 @@ export const getStaticPaths = async () => {
 
 const { lang, category: categorySlug } = Astro.params;
 const { paginatedPosts, currentPage, totalPages, categoryTitle } = Astro.props;
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 
 const prevUrl =
   currentPage > 1
@@ -58,7 +59,9 @@ const prevUrl =
 const nextUrl = currentPage < totalPages ? `/${lang}/news/category/${categorySlug}/${currentPage + 1}/` : undefined;
 
 const metadata = {
-  title: `Category '${categoryTitle}'${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
+  title: `${fr('Category', 'Catégorie')} '${categoryTitle}'${
+    currentPage > 1 ? ` — ${fr('Page', 'Page')} ${currentPage}` : ''
+  }`,
   robots: {
     index: blogCategoryRobots?.index,
     follow: blogCategoryRobots?.follow,

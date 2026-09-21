@@ -16,6 +16,7 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'guides');
 
@@ -116,7 +117,7 @@ const catNames: Record<string, string> = {
                   href={`/${lang}/guides/${g.slug}`}
                   class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-sky-600 hover:text-sky-700"
                 >
-                  Read guide →
+                  {fr('Read guide →', 'Lire le guide →')}
                 </a>
               </div>
             ))}

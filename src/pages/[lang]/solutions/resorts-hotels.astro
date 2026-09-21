@@ -22,6 +22,7 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'solutions-resorts-hotels');
 
@@ -154,7 +155,9 @@ const crumbs = [
       <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase"
         >{t('product.related') || 'Featured Products'}</span
       >
-      <h2 class="mt-2 text-2xl font-bold text-foreground">SUPs for Resort Fleets</h2>
+      <h2 class="mt-2 text-2xl font-bold text-foreground">
+        {fr('SUPs for Resort Fleets', 'SUP pour flottes de stations')}
+      </h2>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
       <a
@@ -162,7 +165,14 @@ const crumbs = [
         class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
       >
         <h3 class="font-semibold text-foreground group-hover:text-primary">SUP Explorer 11</h3>
-        <p class="mt-1 text-sm text-muted">Wide-body all-rounder for first-time guests.</p>
+        <p class="mt-1 text-sm text-muted">
+          {
+            fr(
+              'Wide-body all-rounder for first-time guests.',
+              'Polyvalent à semelle large pour les invités de première fois.'
+            )
+          }
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
       </a>
       <a
@@ -170,7 +180,9 @@ const crumbs = [
         class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
       >
         <h3 class="font-semibold text-foreground group-hover:text-primary">SUP Tropical Breeze</h3>
-        <p class="mt-1 text-sm text-muted">Lightweight touring board with premium graphics.</p>
+        <p class="mt-1 text-sm text-muted">
+          {fr('Lightweight touring board with premium graphics.', 'Planche de touring légère avec graphismes premium.')}
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
       </a>
       <a
@@ -178,7 +190,14 @@ const crumbs = [
         class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
       >
         <h3 class="font-semibold text-foreground group-hover:text-primary">SUP Medusa Glow</h3>
-        <p class="mt-1 text-sm text-muted">LED-lit night SUP for evening lagoon experiences.</p>
+        <p class="mt-1 text-sm text-muted">
+          {
+            fr(
+              'LED-lit night SUP for evening lagoon experiences.',
+              'SUP nocturne à LED pour des expériences en lagon en soirée.'
+            )
+          }
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
       </a>
     </div>

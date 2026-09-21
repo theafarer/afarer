@@ -16,6 +16,7 @@ export async function getStaticPaths() {
 }
 
 const lang = Astro.params.lang || 'en';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'news');
 const newsHeader = page?.hero_text ?? {};
@@ -127,14 +128,23 @@ const metadata = {
       class="mt-10 bg-gradient-to-r from-primary/10 to-secondary/5 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-4 border border-primary/20"
     >
       <div>
-        <h3 class="text-lg font-bold text-foreground">OEM/ODM Manufacturing Guide</h3>
-        <p class="text-sm text-muted mt-1">Download our complete guide to launching your private label SUP brand.</p>
+        <h3 class="text-lg font-bold text-foreground">
+          {fr('OEM/ODM Manufacturing Guide', 'Guide de fabrication OEM/ODM')}
+        </h3>
+        <p class="text-sm text-muted mt-1">
+          {
+            fr(
+              'Download our complete guide to launching your private label SUP brand.',
+              'Téléchargez notre guide complet pour lancer votre marque de SUP en marque privée.'
+            )
+          }
+        </p>
       </div>
       <a
         href={`/${lang}/resources/oem-guide`}
         class="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full transition-all whitespace-nowrap shrink-0"
       >
-        Download Free Guide →
+        {fr('Download Free Guide →', 'Télécharger le guide gratuit →')}
       </a>
     </div>
 

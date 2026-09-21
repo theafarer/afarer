@@ -47,6 +47,7 @@ export const getStaticPaths = async () => {
 };
 
 const { lang, tag: tagSlug } = Astro.params;
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 const { paginatedPosts, currentPage, totalPages, tagTitle } = Astro.props;
 
 const prevUrl =
@@ -58,7 +59,9 @@ const prevUrl =
 const nextUrl = currentPage < totalPages ? `/${lang}/news/tag/${tagSlug}/${currentPage + 1}/` : undefined;
 
 const metadata = {
-  title: `Posts by tag '${tagTitle}'${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
+  title: `${fr('Posts by tag', 'Articles par mot-clé')} '${tagTitle}'${
+    currentPage > 1 ? ` — ${fr('Page', 'Page')} ${currentPage}` : ''
+  }`,
   robots: {
     index: blogTagRobots?.index,
     follow: blogTagRobots?.follow,
@@ -68,7 +71,7 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <section class="section-premium mx-auto max-w-4xl px-6">
-    <Headline>Tag: {tagTitle}</Headline>
+    <Headline>{fr('Tag:', 'Mot-clé :')} {tagTitle}</Headline>
     <div class="mt-16">
       <Timeline posts={paginatedPosts} />
     </div>

@@ -28,6 +28,9 @@ if (!activeCategory) {
 }
 
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+const frCategory = (slug: string) =>
+  fr(slug, slug === 'supboard' ? 'planches de SUP' : slug === 'accessory' ? 'accessoires' : slug);
 const categoryKey = (cat: string) =>
   ({ INFLATABLE: 'inflatables', SUP: 'sups', ACCESSORY: 'accessories' })[cat] || cat.toLowerCase();
 
@@ -54,8 +57,8 @@ const productVisuals: Record<string, string> = { ...defaultVisuals, ...yamlVisua
 const categories = [...new Set(localizedProducts.map((p) => p.category))];
 
 const metadata: MetaData = {
-  title: `${urlSlug} — ${SITE.name}`,
-  description: `Browse ${SITE.name} ${urlSlug} products.`,
+  title: `${frCategory(urlSlug)} — ${SITE.name}`,
+  description: `${fr('Browse', 'Parcourir')} ${SITE.name} ${frCategory(urlSlug)} ${fr('products.', 'produits.')}`,
 };
 ---
 
@@ -63,8 +66,14 @@ const metadata: MetaData = {
   <section class="max-w-6xl mx-auto py-24 px-6">
     <div class="text-center max-w-3xl mx-auto mb-16">
       <span class="text-sm font-medium text-sky-600 tracking-wide uppercase">{t('product.catalog')}</span>
-      <h1 class="mt-4 text-4xl font-semibold text-gray-900 capitalize">Afarer {urlSlug}</h1>
-      <p class="mt-4 text-lg text-gray-500">Premium {urlSlug} — {t('product.pageDesc')}</p>
+      <h1 class="mt-4 text-4xl font-semibold text-gray-900 capitalize">
+        {fr('Afarer', 'afarer')}
+        {frCategory(urlSlug)}
+      </h1>
+      <p class="mt-4 text-lg text-gray-500">
+        {fr('Premium', 'Premium')}
+        {frCategory(urlSlug)} — {t('product.pageDesc')}
+      </p>
     </div>
 
     {
@@ -77,7 +86,7 @@ const metadata: MetaData = {
               'bg-white border-gray-200 text-gray-600 hover:bg-gray-50',
             ]}
           >
-            All ({localizedProducts.length})
+            {fr('All', 'Tout')} ({localizedProducts.length})
           </a>
           {categories.map((cat) => {
             const catUrl = CATEGORY_SLUG_TO_URL[cat.toLowerCase()];

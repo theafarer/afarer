@@ -13,6 +13,7 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 const p = (path: string) => (lang === 'en' ? path : `/${lang}${path}`);
 
 const title = t('people.title');
@@ -52,19 +53,19 @@ const depts = [
     <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14 max-w-3xl mx-auto">
       <div class="text-center p-5 rounded-xl bg-sky-50 dark:bg-sky-900/20">
         <div class="text-3xl font-extrabold text-sky-600">200+</div>
-        <div class="text-sm text-gray-500 dark:text-slate-400 mt-1">Staff</div>
+        <div class="text-sm text-gray-500 dark:text-slate-400 mt-1">{fr('Staff', 'Effectif')}</div>
       </div>
       <div class="text-center p-5 rounded-xl bg-emerald-50 dark:bg-emerald-900/20">
         <div class="text-3xl font-extrabold text-emerald-600">25+</div>
-        <div class="text-sm text-gray-500 dark:text-slate-400 mt-1">Engineers</div>
+        <div class="text-sm text-gray-500 dark:text-slate-400 mt-1">{fr('Engineers', 'Ingénieurs')}</div>
       </div>
       <div class="text-center p-5 rounded-xl bg-amber-50 dark:bg-amber-900/20">
         <div class="text-3xl font-extrabold text-amber-600">8+</div>
-        <div class="text-sm text-gray-500 dark:text-slate-400 mt-1">Avg Yrs</div>
+        <div class="text-sm text-gray-500 dark:text-slate-400 mt-1">{fr('Avg Yrs', 'Moy. années')}</div>
       </div>
       <div class="text-center p-5 rounded-xl bg-purple-50 dark:bg-purple-900/20">
         <div class="text-3xl font-extrabold text-purple-600">50+</div>
-        <div class="text-sm text-gray-500 dark:text-slate-400 mt-1">Countries</div>
+        <div class="text-sm text-gray-500 dark:text-slate-400 mt-1">{fr('Countries', 'Pays')}</div>
       </div>
     </section>
 

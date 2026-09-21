@@ -21,6 +21,7 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'solutions-retail-partners');
 
@@ -152,7 +153,9 @@ const crumbs = [
       <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase"
         >{t('product.related') || 'Featured Products'}</span
       >
-      <h2 class="mt-2 text-2xl font-bold text-foreground">Top Retail Products</h2>
+      <h2 class="mt-2 text-2xl font-bold text-foreground">
+        {fr('Top Retail Products', 'Meilleurs produits de vente au détail')}
+      </h2>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
       <a
@@ -160,7 +163,9 @@ const crumbs = [
         class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
       >
         <h3 class="font-semibold text-foreground group-hover:text-primary">SUP Explorer 11</h3>
-        <p class="mt-1 text-sm text-muted">Best-selling all-round SUP for retail.</p>
+        <p class="mt-1 text-sm text-muted">
+          {fr('Best-selling all-round SUP for retail.', 'SUP polyvalent best-seller pour la vente au détail.')}
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
       </a>
       <a
@@ -168,7 +173,9 @@ const crumbs = [
         class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
       >
         <h3 class="font-semibold text-foreground group-hover:text-primary">Life Vest Classic</h3>
-        <p class="mt-1 text-sm text-muted">CE-certified essential safety accessory.</p>
+        <p class="mt-1 text-sm text-muted">
+          {fr('CE-certified essential safety accessory.', 'Accessoire de sécurité essentiel certifié CE.')}
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
       </a>
       <a
@@ -176,7 +183,14 @@ const crumbs = [
         class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
       >
         <h3 class="font-semibold text-foreground group-hover:text-primary">Oars & Pump Set</h3>
-        <p class="mt-1 text-sm text-muted">Complete paddle and inflation accessory set.</p>
+        <p class="mt-1 text-sm text-muted">
+          {
+            fr(
+              'Complete paddle and inflation accessory set.',
+              "Ensemble complet d'accessoires de pagaie et de gonflage."
+            )
+          }
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
       </a>
     </div>

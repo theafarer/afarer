@@ -22,6 +22,7 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'solutions-paddle-clubs');
 
@@ -139,7 +140,7 @@ const crumbs = [
       <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase"
         >{t('product.related') || 'Featured Products'}</span
       >
-      <h2 class="mt-2 text-2xl font-bold text-foreground">SUPs for Paddle Clubs</h2>
+      <h2 class="mt-2 text-2xl font-bold text-foreground">{fr('SUPs for Paddle Clubs', 'SUP pour clubs de paddle')}</h2>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
       <a
@@ -147,7 +148,14 @@ const crumbs = [
         class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
       >
         <h3 class="font-semibold text-foreground group-hover:text-primary">SUP Explorer 11</h3>
-        <p class="mt-1 text-sm text-muted">Stable all-rounder ideal for club rentals and lessons.</p>
+        <p class="mt-1 text-sm text-muted">
+          {
+            fr(
+              'Stable all-rounder ideal for club rentals and lessons.',
+              'Polyvalent stable, idéal pour les locations et leçons de clubs.'
+            )
+          }
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
       </a>
       <a
@@ -155,7 +163,14 @@ const crumbs = [
         class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
       >
         <h3 class="font-semibold text-foreground group-hover:text-primary">SUP Ocean Voyager</h3>
-        <p class="mt-1 text-sm text-muted">Touring SUP for club expeditions and advanced members.</p>
+        <p class="mt-1 text-sm text-muted">
+          {
+            fr(
+              'Touring SUP for club expeditions and advanced members.',
+              'SUP de touring pour les expéditions de club et les membres avancés.'
+            )
+          }
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
       </a>
       <a
@@ -163,7 +178,14 @@ const crumbs = [
         class="group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
       >
         <h3 class="font-semibold text-foreground group-hover:text-primary">Life Vest Classic</h3>
-        <p class="mt-1 text-sm text-muted">CE-certified safety equipment for club fleets.</p>
+        <p class="mt-1 text-sm text-muted">
+          {
+            fr(
+              'CE-certified safety equipment for club fleets.',
+              'Équipement de sécurité certifié CE pour les flottes de clubs.'
+            )
+          }
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-primary">{t('product.view') || 'View Product'} →</span>
       </a>
     </div>

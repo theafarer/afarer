@@ -9,9 +9,12 @@ export async function getStaticPaths() {
 
 const { lang = defaultLang } = Astro.params;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 
 const q = Astro.url.searchParams.get('q') || '';
-const pageTitle = q ? `Search: ${q}` : t('search.title') || 'Search';
+const pageTitle = q
+  ? `${fr('Search', 'Recherche')}: ${q}`
+  : t('search.title') || fr('Search', 'Recherche');
 ---
 
 <Layout metadata={{ title: pageTitle }}>
@@ -49,6 +52,23 @@ const pageTitle = q ? `Search: ${q}` : t('search.title') || 'Search';
       const q = new URLSearchParams(location.search).get('q') || '';
       if (!q) return;
         const lang = document.querySelector('meta[name="x-locale"]')?.getAttribute('content') || 'en';
+        const typeLabels = {
+          product: lang === 'fr' ? 'Produits' : 'Products',
+          article: 'Articles',
+          guide: lang === 'fr' ? 'Guides' : 'Guides',
+          page: lang === 'fr' ? 'Pages' : 'Pages',
+        };
+        const S_noResults = lang === 'fr' ? 'Aucun résultat trouvé pour' : 'No results found for';
+        const S_tryDifferent = lang === 'fr' ? 'Essayez un autre mot-clé ou parcourez' : 'Try a different keyword or browse';
+        const S_guides = lang === 'fr' ? 'les guides' : 'guides';
+        const S_or = lang === 'fr' ? 'ou' : 'or';
+        const S_products = lang === 'fr' ? 'les produits' : 'products';
+        const TYPE_LABELS = typeLabels;
+        function resultCount(n) {
+          return lang === 'fr'
+            ? n + ' résultat' + (n > 1 ? 's' : '') + ' pour'
+            : n + ' result' + (n !== 1 ? 's' : '') + ' for';
+        }
         const res = await fetch('/search-index.json');
         if (!res.ok) return;
         const index = await res.json();
@@ -69,7 +89,7 @@ const pageTitle = q ? `Search: ${q}` : t('search.title') || 'Search';
       page: 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400',
     };
           const c = colors[type] || colors.page;
-          return '<span class="text-[11px] font-medium uppercase tracking-wider px-2 py-0.5 rounded-full ' + c + '">' + escapeHtml(type) + '</span>';
+          return '<span class="text-[11px] font-medium uppercase tracking-wider px-2 py-0.5 rounded-full ' + c + '">' + escapeHtml(TYPE_LABELS[type] || type) + '</span>';
         }
 
         const matches = index.filter(function (it) {
@@ -88,7 +108,7 @@ const pageTitle = q ? `Search: ${q}` : t('search.title') || 'Search';
         document.getElementById('loading')?.remove();
 
         if (matches.length === 0) {
-          container.innerHTML = '<div class="py-12 text-center"><p class="text-gray-500 dark:text-gray-400 text-lg">No results found for <strong>' + escapeHtml(q) + '</strong>.</p><p class="text-gray-400 dark:text-gray-500 text-sm mt-2">Try a different keyword or browse <a href="/' + lang + '/guides" class="text-sky-600 hover:underline">guides</a> or <a href="/' + lang + '/products" class="text-sky-600 hover:underline">products</a>.</p></div>';
+          container.innerHTML = '<div class="py-12 text-center"><p class="text-gray-500 dark:text-gray-400 text-lg">' + S_noResults + ' <strong>' + escapeHtml(q) + '</strong>.</p><p class="text-gray-400 dark:text-gray-500 text-sm mt-2">' + S_tryDifferent + ' <a href="/' + lang + '/guides" class="text-sky-600 hover:underline">' + S_guides + '</a> ' + S_or + ' <a href="/' + lang + '/products" class="text-sky-600 hover:underline">' + S_products + '</a>.</p></div>';
           filterBar.classList.add('hidden');
           return;
         }
@@ -96,7 +116,7 @@ const pageTitle = q ? `Search: ${q}` : t('search.title') || 'Search';
         let activeFilter = '';
         filterBar.classList.remove('hidden');
         filterBar.innerHTML = typeKeys.map(function (t) {
-          const label = t.charAt(0).toUpperCase() + t.slice(1) + 's';
+          const label = TYPE_LABELS[t] || t.charAt(0).toUpperCase() + t.slice(1) + 's';
           const count = types[t];
           const isActive = activeFilter === t;
           return '<button data-filter="' + t + '" class="px-3 py-1.5 text-xs font-medium rounded-full border transition ' + (isActive ? 'bg-gray-900 text-white dark:bg-white dark:text-gray-900 border-gray-900 dark:border-white' : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500') + '">' + label + ' (' + count + ')</button>';
@@ -104,7 +124,7 @@ const pageTitle = q ? `Search: ${q}` : t('search.title') || 'Search';
 
         function render(filter) {
           const filtered = filter ? matches.filter(function (m) { return m.type === filter; }) : matches;
-          container.innerHTML = '<p class="text-sm text-gray-500 dark:text-gray-400 mb-4">' + filtered.length + ' result' + (filtered.length !== 1 ? 's' : '') + ' for <strong>' + escapeHtml(q) + '</strong></p>'
+          container.innerHTML = '<p class="text-sm text-gray-500 dark:text-gray-400 mb-4">' + resultCount(filtered.length) + ' <strong>' + escapeHtml(q) + '</strong></p>'
             + filtered.map(function (m) {
               const img = m.image ? '<div class="shrink-0 w-16 h-16 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-700"><img src="' + escapeAttr(m.image) + '" alt="' + escapeAttr(m.title) + '" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display=\'none\'"></div>' : '';
                const localizedUrl = '/' + lang + m.url;

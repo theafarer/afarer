@@ -22,6 +22,7 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'solutions-build-your-own-brand');
 
@@ -111,7 +112,9 @@ const crumbs = [
       <span class="text-sm font-semibold text-sky-600 tracking-[0.15em] uppercase"
         >{t('product.related') || 'Featured Products'}</span
       >
-      <h2 class="mt-2 text-2xl font-bold text-gray-900 dark:text-slate-100">OEM-Ready Products</h2>
+      <h2 class="mt-2 text-2xl font-bold text-gray-900 dark:text-slate-100">
+        {fr('OEM-Ready Products', "Produits prêts pour l'OEM")}
+      </h2>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
       <a
@@ -123,7 +126,14 @@ const crumbs = [
         >
           SUP Explorer 11
         </h3>
-        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">Customizable white-label SUP for your brand.</p>
+        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">
+          {
+            fr(
+              'Customizable white-label SUP for your brand.',
+              'SUP à marque blanche personnalisable pour votre marque.'
+            )
+          }
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-sky-600">{t('product.view') || 'View Product'} →</span>
       </a>
       <a
@@ -135,7 +145,14 @@ const crumbs = [
         >
           SUP Ocean Voyager
         </h3>
-        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">Premium touring SUP available for private label.</p>
+        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">
+          {
+            fr(
+              'Premium touring SUP available for private label.',
+              'SUP de touring premium disponible en marque privée.'
+            )
+          }
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-sky-600">{t('product.view') || 'View Product'} →</span>
       </a>
       <a
@@ -147,7 +164,9 @@ const crumbs = [
         >
           Life Vest Classic
         </h3>
-        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">Custom-branded safety equipment option.</p>
+        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">
+          {fr('Custom-branded safety equipment option.', "Option d'équipement de sécurité personnalisé à la marque.")}
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-sky-600">{t('product.view') || 'View Product'} →</span>
       </a>
     </div>

@@ -20,6 +20,7 @@ const branding = (cfg as any)?.branding || {};
 import { pageContentData } from '~/i18n/generated/data';
 import formTextData from '~/data/site/contact-form-text.yaml';
 const lang = Astro.params.lang || 'en';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'contact');
 const data = page && Object.keys(page).length > 0 ? page : {};
@@ -144,7 +145,7 @@ const metadata = {
                 >
               </div>
               <div>
-                <p class="font-medium text-gray-900">Address</p>
+                <p class="font-medium text-gray-900">{fr('Address', 'Adresse')}</p>
                 <p
                   class="text-sm text-gray-500"
                   set:html={branding.address || 'Economic Development Zone, Laixi, Qingdao, China, 266600'}
@@ -166,7 +167,7 @@ const metadata = {
                 >
               </div>
               <div>
-                <p class="font-medium text-gray-900">Phone</p>
+                <p class="font-medium text-gray-900">{fr('Phone', 'Téléphone')}</p>
                 <p class="text-sm text-gray-500">{branding.phone || '213-557-7888'}</p>
               </div>
             </div>
@@ -184,7 +185,7 @@ const metadata = {
                 >
               </div>
               <div>
-                <p class="font-medium text-gray-900">Email</p>
+                <p class="font-medium text-gray-900">{fr('Email', 'E-mail')}</p>
                 <p class="text-sm text-gray-500">{branding.email || 'info@afarer.com'}</p>
               </div>
             </div>

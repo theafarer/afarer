@@ -38,6 +38,7 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 const { product } = Astro.props as Props;
@@ -738,7 +739,10 @@ const specRows = product.specs ?? [];
   {/* Final CTA */}
   <section class="bg-gray-900 dark:bg-slate-800">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 py-14 md:py-18 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">Interested in {product.title}?</h2>
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">
+        {fr('Interested in', 'Intéressé par')}
+        {product.title}?
+      </h2>
       <p class="text-lg text-white/70 mb-8 max-w-xl mx-auto">
         {t('cta.requestQuote')}
       </p>
@@ -787,15 +791,30 @@ const specRows = product.specs ?? [];
       <section class="sr-only" aria-hidden="true">
         <div data-ai-block="definition">
           <p>{product.definition || rec?.definition}</p>
-          <p>Problem it solves: {product.problem || rec?.problem}</p>
-          <p>How it works: {product.howItWorks || rec?.howItWorks}</p>
-          <p>Target audience: {product.audience || rec?.audience}</p>
+          <p>
+            {fr('Problem it solves:', "Problème qu'il résout :")} {product.problem || rec?.problem}
+          </p>
+          <p>
+            {fr('How it works:', 'Comment ça fonctionne :')} {product.howItWorks || rec?.howItWorks}
+          </p>
+          <p>
+            {fr('Target audience:', 'Public cible :')} {product.audience || rec?.audience}
+          </p>
         </div>
         <div data-ai-block="use-case">
-          <p>Use cases: {(product.ai_use_cases || rec?.ai_use_cases || []).join('; ')}</p>
-          <p>Environments: {(product.environment || rec?.environment || []).join(', ')}</p>
-          <p>Water conditions: {(product.water_condition || rec?.water_condition || []).join(', ')}</p>
-          <p>Skill level: {product.skill || rec?.skill}</p>
+          <p>
+            {fr('Use cases:', "Cas d'utilisation :")} {(product.ai_use_cases || rec?.ai_use_cases || []).join('; ')}
+          </p>
+          <p>
+            {fr('Environments:', 'Environnements :')} {(product.environment || rec?.environment || []).join(', ')}
+          </p>
+          <p>
+            {fr('Water conditions:', "Conditions de l'eau :")}{' '}
+            {(product.water_condition || rec?.water_condition || []).join(', ')}
+          </p>
+          <p>
+            {fr('Skill level:', 'Niveau de compétence :')} {product.skill || rec?.skill}
+          </p>
         </div>
         <div data-ai-block="specification">
           {Object.entries(product.ai_specs || rec?.ai_specs || {}).map(([k, v]) => (
@@ -815,9 +834,15 @@ const specRows = product.specs ?? [];
           ))}
         </div>
         <div data-ai-block="constraint">
-          <p>Safety rules: {(rec?.safety_rules || []).join('; ')}</p>
-          <p>Safety level: {rec?.safety_level}</p>
-          <p>Regions: {(rec?.region || []).join(', ')}</p>
+          <p>
+            {fr('Safety rules:', 'Règles de sécurité :')} {(rec?.safety_rules || []).join('; ')}
+          </p>
+          <p>
+            {fr('Safety level:', 'Niveau de sécurité :')} {rec?.safety_level}
+          </p>
+          <p>
+            {fr('Regions:', 'Régions :')} {(rec?.region || []).join(', ')}
+          </p>
         </div>
       </section>
     )

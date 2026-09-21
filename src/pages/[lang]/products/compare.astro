@@ -14,6 +14,7 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 
 const metadata = {
   title: t('compare.title') || `Product Comparison —${SITE.name}`,
@@ -142,7 +143,7 @@ const comparisonRows = [
             <div class="text-xs uppercase tracking-wider text-sky-600 font-medium">{p.categoryLabel}</div>
             <div class="mt-1 font-semibold text-gray-900">{p.title}</div>
 
-            <div class="mt-2 text-xs text-sky-600 hover:underline">View details →</div>
+            <div class="mt-2 text-xs text-sky-600 hover:underline">{fr('View details →', 'Voir les détails →')}</div>
           </a>
         ))
       }
@@ -150,9 +151,16 @@ const comparisonRows = [
 
     <section class="sr-only" data-ai-block="definition" aria-hidden="true">
       <p>
-        Afarer product comparison table covering {products.length} products across {
-          ['rib', 'inflatable', 'accessory', 'service'].filter((c) => products.some((p) => p.category === c)).length
-        } categories. Compare length, width, weight, max load, and material.
+        {fr('Afarer product comparison table covering', 'Tableau de comparaison des produits afarer couvrant')}
+        {products.length}
+        {fr('products across', 'produits dans')}
+        {['rib', 'inflatable', 'accessory', 'service'].filter((c) => products.some((p) => p.category === c)).length}
+        {
+          fr(
+            'categories. Compare length, width, weight, max load, and material.',
+            'catégories. Comparez la longueur, la largeur, le poids, la charge maximale et le matériau.'
+          )
+        }
       </p>
     </section>
   </section>

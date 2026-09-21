@@ -21,6 +21,7 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'solutions-distributors');
 
@@ -88,7 +89,9 @@ const crumbs = [
       <span class="text-sm font-semibold text-sky-600 tracking-[0.15em] uppercase"
         >{t('product.related') || 'Featured Products'}</span
       >
-      <h2 class="mt-2 text-2xl font-bold text-gray-900 dark:text-slate-100">Portfolio Products</h2>
+      <h2 class="mt-2 text-2xl font-bold text-gray-900 dark:text-slate-100">
+        {fr('Portfolio Products', 'Produits du portefeuille')}
+      </h2>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
       <a
@@ -100,7 +103,9 @@ const crumbs = [
         >
           SUP Explorer 11
         </h3>
-        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">Best-selling inflatable SUP for all markets.</p>
+        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">
+          {fr('Best-selling inflatable SUP for all markets.', 'SUP gonflable best-seller pour tous les marchés.')}
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-sky-600">{t('product.view') || 'View Product'} →</span>
       </a>
       <a
@@ -112,7 +117,9 @@ const crumbs = [
         >
           SUP Ocean Voyager
         </h3>
-        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">Premium touring SUP for advanced customers.</p>
+        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">
+          {fr('Premium touring SUP for advanced customers.', 'SUP de touring premium pour les clients avancés.')}
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-sky-600">{t('product.view') || 'View Product'} →</span>
       </a>
       <a
@@ -124,7 +131,9 @@ const crumbs = [
         >
           Life Vest Pro
         </h3>
-        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">Professional SOLAS-compliant life vest.</p>
+        <p class="mt-1 text-sm text-gray-500 dark:text-slate-400">
+          {fr('Professional SOLAS-compliant life vest.', 'Gilet de sauvetage professionnel conforme SOLAS.')}
+        </p>
         <span class="mt-3 inline-block text-sm font-medium text-sky-600">{t('product.view') || 'View Product'} →</span>
       </a>
     </div>
