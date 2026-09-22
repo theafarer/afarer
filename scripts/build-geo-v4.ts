@@ -258,7 +258,10 @@ function generateSitemap() {
     const prefix = lang === 'en' ? '' : `/${lang}`;
     const langBoost = LANG_PRIORITY[lang] ?? 0.5;
     for (const sp of staticPaths) {
-      const loc = `${base}${prefix}${sp.path}`;
+      // Paths recorded as /en/... exist only under a language prefix;
+      // rewrite the prefix per language instead of double-prefixing.
+      const p = sp.path.startsWith('/en/') && lang !== 'en' ? `/${lang}${sp.path.slice(3)}` : `${prefix}${sp.path}`;
+      const loc = `${base}${p}`;
       if (!entries.find((e) => e.loc === loc)) {
         entries.push({
           loc,

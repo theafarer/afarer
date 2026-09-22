@@ -18,58 +18,58 @@ categories:
     guides:
       - title: SUP Basics
         desc: スタンドアップパドルボードの基礎を学ぼう — スタンス、パドルテクニック、バランス。
-        slug: sup-basics
+        slug: beginner-sup-guide
       - title: Paddle Techniques
         desc: フォワードストローク、スイープストローク、ドロウストローク、ローブレース — 必須のパドルムーブをマスター。
-        slug: paddle-techniques
+        slug: sup-paddle-guide
       - title: Safety First
         desc: 天候チェック、PFDの着用、リーシュのルール、セルフレスキューなど、必須の安全習慣。
-        slug: safety-first
+        slug: sup-safety-guide
   - level: Intermediate
     color: from-blue-500 to-indigo-600
     badge: bg-blue-100 text-blue-700
     guides:
       - title: Touring Essentials
         desc: 数時間に及ぶパドリングの計画 — ナビゲーション、水分補給、ペース配分、風予報の読み方。
-        slug: touring-essentials
+        slug: touring-sup-guide
       - title: Weather Reading
         desc: 海上予報を読み解き、雲のパターンを識別し、風が水面に与える影響を理解する。
-        slug: weather-reading
+        slug: weather-planning-water-sports
       - title: Navigation Basics
         desc: 海図の読み方、コンパスの使い方、GPSウェイポイント、沿岸パドリングのルート計画。
-        slug: navigation-basics
+        slug: sup-navigation-guide
       - title: Tidal Awareness
         desc: 潮の満ち引きのサイクルと海流を理解し、出艇タイミングやルート選びへの影響をつかむ。
-        slug: tidal-awareness
+        slug: understanding-tides
   - level: Advanced
     color: from-purple-500 to-violet-600
     badge: bg-purple-100 text-purple-700
     guides:
       - title: Multi-Day Trip Planning
         desc: エクスペディションのロジスティクス — ギア選定、食料計画、安全プロトコル、緊急連絡先。
-        slug: multi-day-trip-planning
+        slug: sup-travel-guide
       - title: Rescue Techniques
         desc: 外洋でのセルフレスキュー、Tレスキュー、トーイングのプロトコル。
-        slug: rescue-techniques
+        slug: sup-self-rescue
       - title: Night Paddling
         desc: 夜間のナビゲーション — 灯火の要件、ルートの把握、グループ内の連絡、危険への意識。
-        slug: night-paddling
+        slug: ocean-safety-basics
   - level: Maintenance
     color: from-amber-500 to-orange-600
     badge: bg-amber-100 text-amber-700
     guides:
       - title: Cleaning & Care
         desc: 毎回のセッション後の真水すすぎ、UV保護、カビ防止、適切な乾燥テクニック。
-        slug: cleaning-and-care
+        slug: inflatable-sup-maintenance
       - title: Storage Guide
         desc: インフレータブルSUPボードの保管のベストプラクティス — 脱気、折りたたみ、温度管理、寿命維持。
-        slug: storage-guide
+        slug: inflatable-sup-storage
       - title: Repair Basics
         desc: PVCリペアキットとパッチ技術で、小さな穴、シームの漏れ、バルブの不具合を修理。
-        slug: repair-basics
+        slug: inflatable-sup-repair
       - title: Valve Maintenance
         desc: バルブタイプ（Halkey-Roberts、Boston、Leafield）を見分け、ゴミを取り除き、故障したステムを交換。
-        slug: valve-maintenance
+        slug: sup-pump-guide
 knowledge_center_tagline: Knowledge Center
 knowledge_center_title: マリン機器＆業界ガイド
 knowledge_center_subtitle: マリン業界のプロフェッショナル、フリート運営者、ウォータースポーツ愛好家のための専門知識と購入ガイド。
@@ -105,7 +105,7 @@ knowledge_sections:
         href: /learn/water-safety
       - title: SUP Maintenance
         desc: インフレータブルSUPボードの洗浄、保管、UV保護、修理。
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
   - title: SUP Board Knowledge
     tagline: SUP Board Hub
     desc: SUPボードのタイプ、素材、製造方法、メンテナンス、安全を網羅した技術ガイド。
@@ -134,7 +134,7 @@ knowledge_sections:
         href: /learn/sup
       - title: SUP Maintenance & Care
         desc: インフレータブルSUPボードの洗浄、保管、UV保護、修理のヒント。
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
       - title: Choosing Your First SUP
         desc: 体重、スキルレベル、使用目的に合ったスタンドアップパドルボードを選ぶための初心者向けガイド。
         href: /learn/sup

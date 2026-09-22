@@ -23,6 +23,7 @@ const comparisons = [
   },
   {
     slug: 'pvc-vs-hypalon',
+    href: '/v2/pvc-vs-hypalon-boats',
     title: t('compare.pvcVsHypalon'),
     desc: t('compare.pvcVsHypalon.desc'),
     image: 'https://assets.afarer.com/images/afarer/products/afarer-inflatable-boat.webp',
@@ -97,7 +98,7 @@ const metadata = {
       {
         comparisons.map((c) => (
           <a
-            href={`/${lang}/compare/${c.slug}`}
+            href={`/${lang}${c.href || `/compare/${c.slug}`}`}
             class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all hover:-translate-y-0.5 flex flex-col"
           >
             <div class="h-44 bg-gray-100 overflow-hidden">

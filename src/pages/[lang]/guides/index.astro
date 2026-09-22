@@ -4,7 +4,7 @@ export const prerender = true;
 import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import JsonLd from '~/components/common/JsonLd.astro';
-import { guides } from '~/data/guides';
+import { getGuidesForLang } from '~/i18n/localized-data';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/guides.ts';
 import { languages } from '~/i18n/config';
@@ -17,6 +17,7 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+const guides = getGuidesForLang(lang);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'guides');
 
@@ -32,15 +33,26 @@ const metadata = {
 
 const categories = [...new Set(guides.map((g) => g.category))];
 
-const catNames: Record<string, string> = {
-  'buying-guide': 'Buying Guides',
-  tutorial: 'Tutorials',
-  safety: 'Safety',
-  maintenance: 'Maintenance',
-  technical: 'Technical',
-  lifestyle: 'Lifestyle & Fitness',
-  planning: 'Trip Planning',
-};
+const catNames: Record<string, string> =
+  lang === 'fr'
+    ? {
+        'buying-guide': 'Guides d’achat',
+        tutorial: 'Tutoriels',
+        safety: 'Sécurité',
+        maintenance: 'Entretien',
+        technical: 'Technique',
+        lifestyle: 'Lifestyle & Fitness',
+        planning: 'Préparation de sorties',
+      }
+    : {
+        'buying-guide': 'Buying Guides',
+        tutorial: 'Tutorials',
+        safety: 'Safety',
+        maintenance: 'Maintenance',
+        technical: 'Technical',
+        lifestyle: 'Lifestyle & Fitness',
+        planning: 'Trip Planning',
+      };
 ---
 
 <Layout metadata={metadata}>
@@ -60,8 +72,12 @@ const catNames: Record<string, string> = {
       {hero.subtitle || 'Practical guides to help you choose, use, and enjoy inflatable water sports equipment.'}
     </p>
     <div class="mt-6 flex flex-wrap gap-2 text-xs">
-      <span class="px-3 py-1.5 bg-gray-100 text-gray-600 rounded-full font-medium">{guides.length} guides</span>
-      <span class="px-3 py-1.5 bg-gray-100 text-gray-600 rounded-full font-medium">{categories.length} categories</span>
+      <span class="px-3 py-1.5 bg-gray-100 text-gray-600 rounded-full font-medium"
+        >{guides.length} {fr('guides', 'guides')}</span
+      >
+      <span class="px-3 py-1.5 bg-gray-100 text-gray-600 rounded-full font-medium"
+        >{categories.length} {fr('categories', 'catégories')}</span
+      >
     </div>
   </section>
 
@@ -128,9 +144,12 @@ const catNames: Record<string, string> = {
 
   <section class="sr-only" data-ai-block="use-case" aria-hidden="true">
     <p>
-      Afarer guides cover beginner SUP selection, paddling technique, equipment comparison, water safety, maintenance,
-      fishing, yoga, fitness, kayaking, weather reading, repair, family paddling, trip planning, and board
-      specifications for recreational users.
+      {
+        fr(
+          'Afarer guides cover beginner SUP selection, paddling technique, equipment comparison, water safety, maintenance, fishing, yoga, fitness, kayaking, weather reading, repair, family paddling, trip planning, and board specifications for recreational users.',
+          'Les guides afarer couvrent le choix de votre première planche de paddle, la technique de pagaie, la comparaison des équipements, la sécurité nautique, l’entretien, la pêche, le yoga, le fitness, le kayak, la lecture de la météo, la réparation, les sorties en famille, la préparation de randonnées et les caractéristiques des planches pour les pratiquants loisir.'
+        )
+      }
     </p>
   </section>
 </Layout>

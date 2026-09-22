@@ -1,4 +1,4 @@
-﻿---
+---
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export const prerender = true;
 
@@ -32,7 +32,7 @@ const packages = page.packages ?? {};
 const features = page.features ?? {};
 const caseStudy = page.case_study ?? {};
 const cta = page.cta ?? {};
-const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}` : h);
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 
 const pageMeta = page.meta ?? {};

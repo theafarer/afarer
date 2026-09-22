@@ -2,7 +2,7 @@
 export const prerender = true;
 
 import Layout from '~/layouts/PageLayout.astro';
-import { contentV2Records } from '~/data/content-v2';
+import { getContentV2ForLang } from '~/i18n/localized-data';
 import { languages } from '~/i18n/config';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/journal.ts';
@@ -28,7 +28,9 @@ const metadata = {
 };
 
 const socialPacks = getAllSocialPacks();
-const recentGuides = contentV2Records.filter((c) => c.type === 'guide' || c.type === 'comparison').slice(0, 9);
+const recentGuides = getContentV2ForLang(lang)
+  .filter((c) => c.type === 'guide' || c.type === 'comparison')
+  .slice(0, 9);
 ---
 
 <Layout metadata={metadata}>
@@ -107,7 +109,7 @@ const recentGuides = contentV2Records.filter((c) => c.type === 'guide' || c.type
       </p>
       <div class="mt-8 flex justify-center gap-4">
         <a
-          href={`/${lang}/internal/seo/social`}
+          href="/internal/seo/social"
           class="px-6 py-3 bg-gray-900 text-white rounded-xl font-semibold hover:bg-gray-800 transition"
           >{socialSection.pipeline_cta || 'Social Pipeline →'}</a
         >

@@ -88,7 +88,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
               <>
                 {' '}
                 ·{' '}
-                <a class="hover:underline" href={getPermalink(post.category.slug, 'category')}>
+                <a class="hover:underline" href={`/${currentLang}/news${getPermalink(post.category.slug, 'category')}`}>
                   {post.category.title}
                 </a>
               </>

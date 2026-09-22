@@ -18,58 +18,58 @@ categories:
     guides:
       - title: Základy SUP
         desc: Naučte se základy stand-up paddleboardingu — postoj, techniku záběru a rovnováhu.
-        slug: sup-basics
+        slug: beginner-sup-guide
       - title: Techniky pádlování
         desc: Záběr vpřed, obloukový záběr, přitahovací záběr a nízká podpěra — zvládněte základní pádlařské dovednosti.
-        slug: paddle-techniques
+        slug: sup-paddle-guide
       - title: Bezpečnost na prvním místě
         desc: Základní bezpečnostní postupy včetně kontroly počasí, používání PFD, pravidel pro vodítko a sebezáchrany.
-        slug: safety-first
+        slug: sup-safety-guide
   - level: Středně pokročilí
     color: from-blue-500 to-indigo-600
     badge: bg-blue-100 text-blue-700
     guides:
       - title: Základy touringu
         desc: Plánování vícehodinových pádlování — navigace, hydratace, rozložení tempa a čtení předpovědi větru.
-        slug: touring-essentials
+        slug: touring-sup-guide
       - title: Čtení počasí
         desc: Interpretujte námořní předpovědi, rozpoznávejte typy oblačnosti a porozumějte vlivu větru na vodní hladinu.
-        slug: weather-reading
+        slug: weather-planning-water-sports
       - title: Základy navigace
         desc: Čtení námořních map, práce s kompasem, GPS waypointy a plánování tras pro pádlování podél pobřeží.
-        slug: navigation-basics
+        slug: sup-navigation-guide
       - title: Základy přílivu a odlivu
         desc: Pochopení cyklů přílivu a odlivu, mořských proudů a jejich vlivu na načasování spouštění na vodu a plánování trasy.
-        slug: tidal-awareness
+        slug: understanding-tides
   - level: Pokročilé
     color: from-purple-500 to-violet-600
     badge: bg-purple-100 text-purple-700
     guides:
       - title: Plánování vícedenních výprav
         desc: Logistika expedice — výběr vybavení, plánování stravy, bezpečnostní protokoly a nouzové kontakty.
-        slug: multi-day-trip-planning
+        slug: sup-travel-guide
       - title: Záchranné techniky
         desc: Protokoly sebezáchrany, T-rescue a vlečení pro otevřenou vodu.
-        slug: rescue-techniques
+        slug: sup-self-rescue
       - title: Noční pádlování
         desc: Navigace po setmění — požadavky na osvětlení, zapamatování trasy, komunikace ve skupině a povědomí o rizicích.
-        slug: night-paddling
+        slug: ocean-safety-basics
   - level: Údržba
     color: from-amber-500 to-orange-600
     badge: bg-amber-100 text-amber-700
     guides:
       - title: Čištění a údržba
         desc: Oplach sladkou vodou, ochrana před UV zářením, prevence plísní a správné sušení po každém použití.
-        slug: cleaning-and-care
+        slug: inflatable-sup-maintenance
       - title: Průvodce skladováním
         desc: Osvědčené postupy skladování nafukovacích SUP prken – vypuštění, skládání, kontrola teploty a životnost.
-        slug: storage-guide
+        slug: inflatable-sup-storage
       - title: Základy oprav
         desc: Opravte drobné proražení, netěsnosti švů a problémy s ventily pomocí PVC opravných sad a technik záplatování.
-        slug: repair-basics
+        slug: inflatable-sup-repair
       - title: Údržba ventilů
         desc: Rozpoznejte typy ventilů (Halkey-Roberts, Boston, Leafield), odstraňte nečistoty a vyměňte vadná vřetena.
-        slug: valve-maintenance
+        slug: sup-pump-guide
 knowledge_center_tagline: Znalostní centrum
 knowledge_center_title: Námořní vybavení a průmyslové příručky
 knowledge_center_subtitle: Odborné znalosti a nákupní průvodce pro námořní profesionály, provozovatele flotil a nadšence vodních sportů.
@@ -105,7 +105,7 @@ knowledge_sections:
         href: /learn/water-safety
       - title: Údržba SUP
         desc: Čištění, skladování, UV ochrana a opravy nafukovacích SUP desek.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
   - title: Průvodce SUP prkny
     tagline: Rozcestník SUP prken
     desc: Technické příručky pokrývající typy SUP prken, materiály, metody výroby, údržbu a bezpečnost.
@@ -134,7 +134,7 @@ knowledge_sections:
         href: /learn/sup
       - title: Údržba a péče o SUP
         desc: Tipy pro čištění, skladování, ochranu proti UV záření a opravy nafukovacích SUP prken.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
       - title: Jak vybrat své první SUP
         desc: Průvodce pro začátečníky výběrem správného paddleboardu podle vaší váhy, úrovně dovedností a zamýšleného použití.
         href: /learn/sup

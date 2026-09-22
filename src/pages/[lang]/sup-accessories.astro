@@ -1,0 +1,445 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { languages } from '~/i18n/config';
+import { localizeHref } from '~/i18n/routing';
+import { products } from '~/data/products';
+import productVisualsData from '~/data/site/product-visuals.yaml';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+
+interface VisualEntry {
+  id: string;
+  image: string;
+}
+
+const accessories = products.filter((p) => p.category === 'ACCESSORY');
+
+const visualEntries: VisualEntry[] = productVisualsData.visuals || [];
+const accessoryVisuals: Record<string, string> = Object.fromEntries(
+  visualEntries.filter((v) => Boolean(v?.id && v?.image)).map((v): [string, string] => [v.id, v.image])
+);
+
+const metadata = {
+  title: fr(
+    'SUP Accessories | Inflatable Board Pumps, Paddles, Leashes & Vests | Afarer',
+    'Accessoires de Paddle | Pompes, Pagaies, Leash & Gilets pour Paddle Gonflable | afarer'
+  ),
+  description: fr(
+    'Afarer SUP accessories — life vests, paddle pumps, oars, and maintenance gear for inflatable paddle boards. CE-certified safety equipment. OEM/ODM available.',
+    'Accessoires de paddle afarer — gilets de sauvetage, pompes, pagaies et matériel d’entretien pour paddles gonflables. Équipement de sécurité certifié CE. OEM/ODM disponible.'
+  ),
+  ignoreTitleTemplate: true,
+};
+const pageUrl = `https://afarer.com/${lang}/sup-accessories/`;
+const today = '2026-07-27';
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="Article"
+    data={{
+      headline: fr('SUP Accessories — Gear Up for the Water', 'Accessoires de Paddle — Équipez-vous pour l’eau'),
+      description: metadata.description,
+      datePublished: today,
+      author: { '@type': 'Organization', name: 'Afarer' },
+      url: pageUrl,
+    }}
+  />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: fr('Home', 'Accueil'), item: `https://afarer.com/${lang}/` },
+        {
+          position: 2,
+          name: fr('Inflatable SUP Boards', 'Paddles Gonflables'),
+          item: `https://afarer.com/${lang}/inflatable-sup/`,
+        },
+        { position: 3, name: fr('SUP Accessories', 'Accessoires de Paddle'), item: pageUrl },
+      ],
+    }}
+  />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: fr('What accessories do I need for an inflatable SUP?', 'Quels accessoires pour un paddle gonflable ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Every SUP needs a pump, paddle, leash, and life vest at minimum. Afarer SUPs ship as complete kits including a dual-action pump, 3-piece aluminum paddle, coiled leash, and backpack. Recommended upgrades include an electric pump, carbon fiber paddle, and SOLAS-approved life vest.',
+              'Chaque paddle nécessite a minima une pompe, une pagaie, un leash et un gilet de sauvetage. Les paddles afarer sont livrés en kits complets comprenant une pompe double action, une pagaie en aluminium en 3 parties, un leash spiralé et un sac à dos. Les mises à niveau recommandées incluent une pompe électrique, une pagaie en fibre de carbone et un gilet de sauvetage homologué SOLAS.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('What type of pump is best for inflatable SUPs?', 'Quel type de pompe pour un paddle gonflable ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Dual-action hand pumps are the standard choice for portability and reliability. Electric pumps offer faster inflation (2-3 minutes) at the cost of weight and power dependence. Afarer offers both options to suit different paddling styles.',
+              'Les pompes manuelles double action constituent le choix standard pour leur portabilité et leur fiabilité. Les pompes électriques offrent un gonflage plus rapide (2 à 3 minutes) au prix du poids et de la dépendance à l’énergie. afarer propose les deux options pour s’adapter à différents styles de paddle.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('Do I need a special life vest for SUP?', 'Faut-il un gilet de sauvetage spécial pour le paddle ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. SUP-specific life vests are designed for paddling mobility with shorter profiles and arm freedom. Afarer life vests meet CE and SOLAS standards with USCG-approved buoyancy ratings.',
+              'Oui. Les gilets de sauvetage spécifiques au paddle sont conçus pour la liberté de mouvement en pagayant, avec des profils plus courts et une amplitude totale des bras. Les gilets afarer respectent les normes CE et SOLAS avec des indices de flottabilité homologués USCG.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('What paddle length do I need?', 'Quelle longueur de pagaie me faut-il ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'A proper paddle length is 6-10 inches taller than your height. For a 6-foot person, a 76-78 inch paddle is ideal. Adjustable paddles let you fine-tune length for different conditions.',
+              'La longueur de pagaie idéale dépasse votre taille de 15 à 25 cm. Pour une personne mesurant 1,83 m, une pagaie de 193 à 198 cm est idéale. Les pagaies réglables permettent d’ajuster finement la longueur selon les conditions.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr(
+            'Do you manufacture SUP accessories for private label?',
+            'Fabriquez-vous des accessoires de paddle en marque blanche ?'
+          ),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. Afarer offers OEM/ODM manufacturing for SUP accessories including custom life vests, paddles, pumps, and maintenance kits with custom branding and packaging.',
+              'Oui. afarer propose la fabrication OEM/ODM d’accessoires de paddle, notamment des gilets de sauvetage, pagaies, pompes et kits d’entretien personnalisés, avec marque et emballage sur mesure.'
+            ),
+          },
+        },
+      ],
+    }}
+  />
+
+  <section class="max-w-6xl mx-auto py-24 px-6">
+    <a
+      href={localizeHref('/inflatable-sup/', lang || 'en')}
+      class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-8 transition-colors"
+      >{fr('← SUP Product Center', '← Centre produits paddle')}</a
+    >
+    <div class="max-w-4xl">
+      <span class="text-xs font-semibold text-primary tracking-[0.25em] uppercase"
+        >{fr('Accessories', 'Accessoires')}</span
+      >
+      <h1 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-secondary leading-[1.1]">
+        {fr('SUP Accessories', 'Accessoires de Paddle')}
+      </h1>
+      <p class="mt-6 text-lg text-gray-500 max-w-3xl leading-relaxed">
+        {
+          fr(
+            'Complete your SUP setup with Afarer accessories — from USCG-approved life vests and high-pressure pumps to spare oars and maintenance kits. Every accessory is designed to match the quality of our inflatable SUP boards and built for years of reliable service.',
+            'Complétez votre équipement de paddle avec les accessoires afarer — des gilets de sauvetage homologués USCG et des pompes haute pression aux pagaies de rechange et kits d’entretien. Chaque accessoire est conçu pour égaler la qualité de nos planches de paddle gonflables et bâti pour des années de service fiable.'
+          )
+        }
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">
+          {fr('Our Accessory Collection', 'Notre collection d’accessoires')}
+        </h2>
+        <p class="mt-4 text-lg text-gray-500">
+          {
+            fr(
+              'Every essential for a complete paddling experience.',
+              'Tout l’essentiel pour une expérience de paddle complète.'
+            )
+          }
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          accessories.map((p) => {
+            const img = accessoryVisuals[p.id] || '';
+            return (
+              <a
+                href={localizeHref('/products/' + p.id, lang || 'en')}
+                class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              >
+                <div class="aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
+                  {img && (
+                    <img
+                      src={img}
+                      alt={p.name}
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                  )}
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-secondary group-hover:text-primary transition-colors">{p.name}</h3>
+                  <p class="mt-2 text-sm text-gray-500 line-clamp-2">{p.desc}</p>
+                  <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                    {(p.use_case || []).slice(0, 3).map((u) => (
+                      <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded-full capitalize">{u}</span>
+                    ))}
+                  </div>
+                </div>
+              </a>
+            );
+          })
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-8">
+        {fr('Essential SUP Accessories Guide', 'Guide des accessoires de paddle essentiels')}
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="font-semibold text-gray-900">{fr('Life Vests & PFDs', 'Gilets de sauvetage & VFI')}</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                'A properly fitted life vest is the most important safety accessory. Our Classic and Pro vests meet CE and USCG standards for all water conditions.',
+                'Un gilet de sauvetage bien ajusté est l’accessoire de sécurité le plus important. Nos gilets Classic et Pro respectent les normes CE et USCG pour toutes les conditions aquatiques.'
+              )
+            }
+          </p>
+          <a
+            href={localizeHref('/products/life-vest-classic', lang || 'en')}
+            class="inline-block mt-3 text-sm font-medium text-primary hover:underline"
+            >{fr('Shop vests →', 'Voir les gilets →')}</a
+          >
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="font-semibold text-gray-900">{fr('Pumps & Inflation', 'Pompes & Gonflage')}</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                'High-pressure dual-chamber pumps reduce inflation time. Our oars & pump set includes everything you need to get on the water fast.',
+                'Les pompes double chambre haute pression réduisent le temps de gonflage. Notre ensemble pagaies & pompe contient tout le nécessaire pour prendre l’eau rapidement.'
+              )
+            }
+          </p>
+          <a
+            href={localizeHref('/products/oars-pump-set', lang || 'en')}
+            class="inline-block mt-3 text-sm font-medium text-primary hover:underline"
+            >{fr('Shop pumps →', 'Voir les pompes →')}</a
+          >
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="font-semibold text-gray-900">{fr('Paddles & Oars', 'Pagaies & Avirons')}</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                'Adjustable aluminum and fiberglass paddles suit paddlers of all heights. Spare oars are essential for expedition planning.',
+                'Les pagaies réglables en aluminium et en fibre de verre conviennent aux pagayeurs de toutes tailles. Des avirons de rechange sont indispensables pour préparer une expédition.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="font-semibold text-gray-900">{fr('Maintenance & Repair', 'Entretien & Réparation')}</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                'Keep your SUP in top condition with our maintenance kits, valve tools, and repair patches. Every board ships with a basic repair kit.',
+                'Gardez votre paddle en parfait état grâce à nos kits d’entretien, outils de valve et patchs de réparation. Chaque planche est livrée avec un kit de réparation basique.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+          {fr('Accessories Resources', 'Ressources sur les accessoires')}
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a
+          href={localizeHref('/compare/single-chamber-vs-multi-chamber', lang || 'en')}
+          class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+        >
+          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+            {fr('Safety Equipment Guide', 'Guide de l’équipement de sécurité')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {fr('Essential safety gear for every paddler.', 'L’équipement de sécurité essentiel pour chaque pagayeur.')}
+          </p>
+        </a>
+        <a
+          href={localizeHref('/v2/pvc-vs-hypalon-boats', lang || 'en')}
+          class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+        >
+          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+            {fr('Material Durability', 'Durabilité des matériaux')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {fr('Understanding PVC vs Hypalon for accessories.', 'Comprendre le PVC vs Hypalon pour les accessoires.')}
+          </p>
+        </a>
+        <a
+          href={localizeHref('/compare/inflatable-vs-hardboard', lang || 'en')}
+          class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+        >
+          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+            {fr('Gear Comparison', 'Comparatif des équipements')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {fr('Accessories for inflatable vs hard boards.', 'Les accessoires pour planches gonflables ou rigides.')}
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+      {fr('Complete Your SUP Kit', 'Complétez votre kit de paddle')}
+    </h2>
+    <p class="mt-4 text-lg text-gray-500">
+      {
+        fr(
+          'Contact us for bulk accessory orders, OEM production, or custom branding.',
+          'Contactez-nous pour des commandes d’accessoires en gros, une production OEM ou une personnalisation de marque.'
+        )
+      }
+    </p>
+    <a
+      href={localizeHref('/contact', lang || 'en')}
+      class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+      >{fr('Get a Quote', 'Demander un devis')} <span>→</span></a
+    >
+    <!-- FAQ -->
+    <section class="bg-gray-50 py-16 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+          {fr('SUP Accessories — Frequently Asked Questions', 'Accessoires de Paddle — Questions Fréquentes')}
+        </h2>
+        <p class="text-lg text-gray-500 text-center mb-12">
+          {
+            fr(
+              'Common questions about choosing and using SUP gear.',
+              'Questions courantes sur le choix et l’utilisation des accessoires de paddle.'
+            )
+          }
+        </p>
+        <div class="space-y-4">
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-lg font-semibold text-secondary">
+              {fr('What accessories do I need for an inflatable SUP?', 'Quels accessoires pour un paddle gonflable ?')}
+            </h3>
+            <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+              {
+                fr(
+                  'Every SUP needs a pump, paddle, leash, and life vest at minimum. Afarer SUPs ship as complete kits including a dual-action pump, 3-piece aluminum paddle, coiled leash, and backpack. Recommended upgrades include an electric pump, carbon fiber paddle, and SOLAS-approved life vest.',
+                  'Chaque paddle nécessite a minima une pompe, une pagaie, un leash et un gilet de sauvetage. Les paddles afarer sont livrés en kits complets comprenant une pompe double action, une pagaie en aluminium en 3 parties, un leash spiralé et un sac à dos. Les mises à niveau recommandées incluent une pompe électrique, une pagaie en fibre de carbone et un gilet de sauvetage homologué SOLAS.'
+                )
+              }
+            </p>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-lg font-semibold text-secondary">
+              {fr('What type of pump is best for inflatable SUPs?', 'Quel type de pompe pour un paddle gonflable ?')}
+            </h3>
+            <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+              {
+                fr(
+                  'Dual-action hand pumps are the standard choice for portability and reliability. Electric pumps offer faster inflation (2–3 minutes) at the cost of weight and power dependence. Afarer offers both options to suit different paddling styles.',
+                  'Les pompes manuelles double action constituent le choix standard pour leur portabilité et leur fiabilité. Les pompes électriques offrent un gonflage plus rapide (2 à 3 minutes) au prix du poids et de la dépendance à l’énergie. afarer propose les deux options pour s’adapter à différents styles de paddle.'
+                )
+              }
+            </p>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-lg font-semibold text-secondary">
+              {fr('Do I need a special life vest for SUP?', 'Faut-il un gilet de sauvetage spécial pour le paddle ?')}
+            </h3>
+            <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+              {
+                fr(
+                  'Yes. SUP-specific life vests are designed for paddling mobility with shorter profiles and arm freedom. Afarer life vests meet CE and SOLAS standards with USCG-approved buoyancy ratings.',
+                  'Oui. Les gilets de sauvetage spécifiques au paddle sont conçus pour la liberté de mouvement en pagayant, avec des profils plus courts et une amplitude totale des bras. Les gilets afarer respectent les normes CE et SOLAS avec des indices de flottabilité homologués USCG.'
+                )
+              }
+            </p>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-lg font-semibold text-secondary">
+              {fr('What paddle length do I need?', 'Quelle longueur de pagaie me faut-il ?')}
+            </h3>
+            <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+              {
+                fr(
+                  'A proper paddle length is 6–10 inches taller than your height. For a 6-foot person, a 76–78 inch paddle is ideal. Adjustable paddles let you fine-tune length for different conditions.',
+                  'La longueur de pagaie idéale dépasse votre taille de 15 à 25 cm. Pour une personne mesurant 1,83 m, une pagaie de 193 à 198 cm est idéale. Les pagaies réglables permettent d’ajuster finement la longueur selon les conditions.'
+                )
+              }
+            </p>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-lg font-semibold text-secondary">
+              {
+                fr(
+                  'Do you manufacture SUP accessories for private label?',
+                  'Fabriquez-vous des accessoires de paddle en marque blanche ?'
+                )
+              }
+            </h3>
+            <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+              {
+                fr(
+                  'Yes. Afarer offers OEM/ODM manufacturing for SUP accessories including custom life vests, paddles, pumps, and maintenance kits with custom branding and packaging.',
+                  'Oui. afarer propose la fabrication OEM/ODM d’accessoires de paddle, notamment des gilets de sauvetage, pagaies, pompes et kits d’entretien personnalisés, avec marque et emballage sur mesure.'
+                )
+              }
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto py-16 px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+        {fr('Equip Your SUP Adventure', 'Équipez votre aventure paddle')}
+      </h2>
+      <p class="mt-4 text-lg text-gray-500">
+        {
+          fr(
+            'Contact us for bulk pricing, custom accessory orders, or technical specifications.',
+            'Contactez-nous pour les tarifs de gros, les commandes d’accessoires personnalisés ou les spécifications techniques.'
+          )
+        }
+      </p>
+      <a
+        href={localizeHref('/contact', lang || 'en')}
+        class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+        >{fr('Get Accessory Info', 'Obtenir des informations sur les accessoires')} <span>→</span></a
+      >
+    </section>
+  </section>
+</Layout>

@@ -69,8 +69,8 @@
 
 - slug: afarer-story
   label: afarer Story
-  path: /afarer
-  permalink: /afarer
+  path: /afarer-story
+  permalink: /afarer-story
   file: src/data/pages/afarer-story.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -99,8 +99,8 @@
 
 - slug: brand-afarer
   label: Brand afarer
-  path: /brand/afarer
-  permalink: /brand/afarer
+  path: /en/brand/afarer
+  permalink: /en/brand/afarer
   file: src/data/pages/brand-afarer.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -113,8 +113,8 @@
 
 - slug: brand-global-presence
   label: Brand Global Presence
-  path: /brand/global-presence
-  permalink: /brand/global-presence
+  path: /brand-global-presence
+  permalink: /brand-global-presence
   file: src/data/pages/brand-global-presence.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -123,8 +123,8 @@
 
 - slug: brand-marine-expertise
   label: Brand Marine Expertise
-  path: /brand/marine-expertise
-  permalink: /brand/marine-expertise
+  path: /brand-marine-expertise
+  permalink: /brand-marine-expertise
   file: src/data/pages/brand-marine-expertise.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -135,8 +135,8 @@
 
 - slug: brand-story
   label: Brand Story
-  path: /brand/story
-  permalink: /brand/story
+  path: /en/brand-story
+  permalink: /en/brand-story
   file: src/data/pages/brand-story.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -148,8 +148,8 @@
 
 - slug: brand-team
   label: Brand Team
-  path: /brand/team
-  permalink: /brand/team
+  path: /en/brand/team
+  permalink: /en/brand/team
   file: src/data/pages/brand-team.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -160,8 +160,8 @@
 
 - slug: brand-why-afarer
   label: Brand Why afarer
-  path: /brand/why-afarer
-  permalink: /brand/why-afarer
+  path: /brand-why-afarer
+  permalink: /brand-why-afarer
   file: src/data/pages/brand-why-afarer.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -334,8 +334,8 @@
 
 - slug: fishing
   label: Fishing
-  path: /fishing
-  permalink: /fishing
+  path: /en/use-cases/fishing
+  permalink: /en/use-cases/fishing
   file: src/data/pages/fishing.yaml
   sections:
     - { key: label, type: content, label: 'Page Label' }
@@ -366,8 +366,8 @@
 
 - slug: inflatable-vs-hardboard
   label: Inflatable vs Hardboard
-  path: /inflatable-vs-hardboard
-  permalink: /inflatable-vs-hardboard
+  path: /compare/inflatable-vs-hardboard
+  permalink: /compare/inflatable-vs-hardboard
   file: src/data/pages/inflatable-vs-hardboard.yaml
   sections:
     - { key: label, type: content, label: 'Page Label' }
@@ -400,8 +400,8 @@
 
 - slug: learn
   label: Learn
-  path: /learn
-  permalink: /learn
+  path: /en/learn
+  permalink: /en/learn
   file: src/data/pages/learn.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -423,8 +423,8 @@
 
 - slug: maritime-safety-defense
   label: Maritime Safety & Defense
-  path: /maritime-safety-defense
-  permalink: /maritime-safety-defense
+  path: /en/use-cases/maritime-safety-defense
+  permalink: /en/use-cases/maritime-safety-defense
   file: src/data/pages/maritime-safety-defense.yaml
   sections:
     - { key: label, type: content, label: 'Page Label' }
@@ -455,8 +455,8 @@
 
 - slug: partners
   label: Partners
-  path: /partners
-  permalink: /partners
+  path: /en/partners
+  permalink: /en/partners
   file: src/data/pages/partners.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -495,8 +495,8 @@
 
 - slug: request-quotation
   label: Request Quotation
-  path: /request-quotation
-  permalink: /request-quotation
+  path: /en/request-quotation
+  permalink: /en/request-quotation
   file: src/data/pages/request-quotation.yaml
   sections:
     - { key: hero_text, type: hero_text, label: 'Top HeroText' }
@@ -505,8 +505,8 @@
 
 - slug: resources
   label: Resources
-  path: /resources
-  permalink: /resources
+  path: /resources/download-catalog
+  permalink: /resources/download-catalog
   file: src/data/pages/resources.yaml
   sections:
     - { key: hero_text, type: hero_text, label: 'Top HeroText' }
@@ -525,8 +525,8 @@
 
 - slug: search-and-rescue
   label: Search & Rescue
-  path: /search-and-rescue
-  permalink: /search-and-rescue
+  path: /en/use-cases/search-and-rescue
+  permalink: /en/use-cases/search-and-rescue
   file: src/data/pages/search-and-rescue.yaml
   sections:
     - { key: label, type: content, label: 'Page Label' }
@@ -569,8 +569,8 @@
 
 - slug: tourism-recreation
   label: Tourism & Recreation
-  path: /tourism-recreation
-  permalink: /tourism-recreation
+  path: /en/use-cases/tourism-recreation
+  permalink: /en/use-cases/tourism-recreation
   file: src/data/pages/tourism-recreation.yaml
   sections:
     - { key: label, type: content, label: 'Page Label' }
@@ -606,8 +606,8 @@
 
 - slug: what-is-sup
   label: What is SUP
-  path: /what-is-sup
-  permalink: /what-is-sup
+  path: /en/guides/what-is-sup
+  permalink: /en/guides/what-is-sup
   file: src/data/pages/what-is-sup.yaml
   sections:
     - { key: label, type: content, label: 'Page Label' }

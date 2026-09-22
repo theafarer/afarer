@@ -52,7 +52,7 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Marine Academy' }];
           <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {sec.guides.map((g: any) => (
               <a
-                href={g.href}
+                href={`/en${g.href}`}
                 class="group block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-sky-200 transition-all hover:-translate-y-0.5"
               >
                 <h4 class="font-semibold text-gray-900 group-hover:text-sky-600 transition-colors text-sm">
@@ -147,7 +147,7 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Marine Academy' }];
               '@type': 'Article',
               headline: g.title,
               description: g.desc,
-              url: `https://afarer.com${g.href}`,
+              url: `https://afarer.com/en${g.href}`,
             },
           }))
         ),

@@ -5,6 +5,7 @@ import JsonLd from '~/components/common/JsonLd.astro';
 import Tldr from '~/components/common/Tldr.astro';
 import { faqs } from '~/data/faq';
 import { guides } from '~/data/guides';
+import { contentV2Records } from '~/data/content-v2';
 import { products } from '~/data/products';
 import { defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
@@ -72,12 +73,23 @@ const categories = [...new Set(faqs.map((f) => f.category))];
                       })}
                       {item.relatedGuides.map((slug) => {
                         const g = guides.find((gg) => gg.slug === slug);
-                        return g ? (
+                        if (g) {
+                          return (
+                            <a
+                              href={`/guides/${slug}`}
+                              class="px-3 py-1 bg-sky-50 text-sky-700 rounded-full hover:bg-sky-100 transition-colors"
+                            >
+                              {g.title} →
+                            </a>
+                          );
+                        }
+                        const v2 = contentV2Records.find((cc) => cc.slug === slug);
+                        return v2 ? (
                           <a
-                            href={`/guides/${slug}`}
+                            href={`/v2/${slug}`}
                             class="px-3 py-1 bg-sky-50 text-sky-700 rounded-full hover:bg-sky-100 transition-colors"
                           >
-                            {g.title} →
+                            {v2.title} →
                           </a>
                         ) : null;
                       })}

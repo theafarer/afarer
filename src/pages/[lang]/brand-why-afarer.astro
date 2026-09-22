@@ -25,11 +25,11 @@ const stats = page.stats ?? {};
 const reasons = page.features3_reasons ?? {};
 const testimonials = page.testimonials ?? {};
 const cta = page.cta ?? {};
-const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}` : h);
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 
 const metadata = {
-  title: `Why Choose ${SITE.name} — OEM/ODM Marine Manufacturer`,
+  title: `Why Choose ${SITE.name} 鈥?OEM/ODM Marine Manufacturer`,
   description:
     'Seven reasons why global brands choose Afarer: real manufacturing, engineering-led design, certified quality, flexible OEM/ODM, global logistics, lifetime support.',
 };

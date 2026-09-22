@@ -18,58 +18,58 @@ categories:
     guides:
       - title: Bazele SUP
         desc: Învață fundamentele stand-up paddleboarding —postura, tehnica vâslirii și echilibrul.
-        slug: sup-basics
+        slug: beginner-sup-guide
       - title: Tehnici de vâslit
         desc: Vâslirea înainte, vâslirea circulară, vâslirea de tragere și sprijinul jos — stăpânește mișcările esențiale de vâslit.
-        slug: paddle-techniques
+        slug: sup-paddle-guide
       - title: Siguranța pe primul loc
         desc: Practici esențiale de siguranță, inclusiv verificarea condițiilor meteo, utilizarea dispozitivelor de flotabilitate (PFD), regulile lesei de siguranță și auto-salvarea.
-        slug: safety-first
+        slug: sup-safety-guide
   - level: Intermediar
     color: from-blue-500 to-indigo-600
     badge: bg-blue-100 text-blue-700
     guides:
       - title: Esențiale pentru touring
         desc: Planificarea sesiunilor de vâslit de mai multe ore — navigație, hidratare, ritm și citirea prognozelor meteo.
-        slug: touring-essentials
+        slug: touring-sup-guide
       - title: Lectura condițiilor meteo
         desc: Interpretați prognozele marine, identificați tiparele norilor și înțelegeți efectele vântului asupra apei.
-        slug: weather-reading
+        slug: weather-planning-water-sports
       - title: Elemente de bază pentru navigație
         desc: Citirea hărților, utilizarea busolei, punctele de traseu GPS și planificarea rutei pentru canotajul de coastă.
-        slug: navigation-basics
+        slug: sup-navigation-guide
       - title: Conștientizarea mareelor
         desc: Înțelegerea ciclurilor mareelor, a curenților și a modului în care acestea influențează momentul lansării și ruta.
-        slug: tidal-awareness
+        slug: understanding-tides
   - level: Avansat
     color: from-purple-500 to-violet-600
     badge: bg-purple-100 text-purple-700
     guides:
       - title: Planificarea excursiilor de mai multe zile
         desc: Logistica expedițiilor — selecția echipamentului, planificarea alimentației, protocoalele de siguranță și contactele de urgență.
-        slug: multi-day-trip-planning
+        slug: sup-travel-guide
       - title: Tehnici de salvare
         desc: Protocoale de auto-salvare, salvare tip T și remorcare pentru ape deschise.
-        slug: rescue-techniques
+        slug: sup-self-rescue
       - title: Vâslit pe timp de noapte
         desc: Navigarea pe întuneric — cerințe de iluminare, memorarea traseului, comunicarea în grup și conștientizarea pericolelor.
-        slug: night-paddling
+        slug: ocean-safety-basics
   - level: Întreținere
     color: from-amber-500 to-orange-600
     badge: bg-amber-100 text-amber-700
     guides:
       - title: Curățare și Întreținere
         desc: Clătire cu apă dulce, protecție UV, prevenirea mucegaiului și tehnici corecte de uscare după fiecare sesiune.
-        slug: cleaning-and-care
+        slug: inflatable-sup-maintenance
       - title: Ghid de depozitare
         desc: Cele mai bune practici pentru depozitarea plăcilor SUP gonflabile —deflație, pliere, controlul temperaturii și durata de viață.
-        slug: storage-guide
+        slug: inflatable-sup-storage
       - title: Bazele reparațiilor
         desc: Reparați perforațiile mici, scurgerile de la cusături și problemele cu supapele cu ajutorul kiturilor de reparare PVC și al tehnicilor de plasturi.
-        slug: repair-basics
+        slug: inflatable-sup-repair
       - title: Întreținerea supapelor
         desc: Identificați tipurile de supape (Halkey-Roberts, Boston, Leafield), curățați resturile și înlocuiți tijele defecte.
-        slug: valve-maintenance
+        slug: sup-pump-guide
 knowledge_center_tagline: Centru de cunoștințe
 knowledge_center_title: Echipamente marine & ghiduri din industrie
 knowledge_center_subtitle: Cunoștințe de specialitate și ghiduri de achiziție pentru profesioniști din domeniul marin, operatori de flote și pasionați de sporturi nautice.
@@ -105,7 +105,7 @@ knowledge_sections:
         href: /learn/water-safety
       - title: Întreținerea plăcilor SUP
         desc: Curățare, depozitare, protecție UV și reparații pentru plăcile SUP gonflabile.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
   - title: Cunoștințe despre plăcile SUP
     tagline: Centru de plăci SUP
     desc: Ghiduri tehnice despre tipurile de plăci SUP, materiale, metode de construcție, întreținere și siguranță.
@@ -134,7 +134,7 @@ knowledge_sections:
         href: /learn/sup
       - title: Întreținerea și îngrijirea SUP
         desc: Curățare, depozitare, protecție UV și sfaturi de reparații pentru plăcile SUP gonflabile.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
       - title: Alegerea primului tău SUP
         desc: Ghid pentru începători privind alegerea paddleboard-ului potrivit în funcție de greutatea dumneavoastră, nivelul de îndemânare și utilizarea prevăzută.
         href: /learn/sup

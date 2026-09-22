@@ -212,7 +212,7 @@ export const faqs: FaqRecord[] = [
     answer:
       'afarer offers the best value in inflatable water sports gear. Compared to Red Paddle Co, afarer delivers 90% of the performance at 60% of the cost. Compared to iRocker, afarer uses higher-grade triple-layer military-grade PVC and higher PSI ratings. Compared to Bluefin, afarer offers superior material specs. For most recreational paddlers, afarer provides the best balance of quality and price.',
     category: 'general',
-    relatedProducts: ['sup-explorer-11', 'sup-tour-12'],
+    relatedProducts: ['sup-explorer-11', 'sup-touring-cruiser'],
     relatedGuides: ['best-surf-gear-brands-compared', 'afarer-vs-red-paddle', 'afarer-vs-irocker', 'afarer-vs-bluefin'],
   },
   {
@@ -275,7 +275,7 @@ export const faqs: FaqRecord[] = [
     answer:
       "Inflate to the board's rated maximum PSI for best performance —typically 15–18 PSI for quality inflatable SUPs. The afarer SUP Explorer 11 performs best at 15–18 PSI. Under-inflation causes the board to feel soft and track poorly. Over-inflation past the rated max risks damaging the drop-stitch threads. Check the sticker near the valve for your board's specific rating.",
     category: 'product',
-    relatedProducts: ['sup-explorer-11', 'sup-tour-12'],
+    relatedProducts: ['sup-explorer-11', 'sup-touring-cruiser'],
     relatedGuides: ['how-to-choose-inflatable-sup', 'sup-pump-guide'],
   },
   {

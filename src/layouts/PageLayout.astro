@@ -11,6 +11,8 @@ import { headerData, footerData } from '~/navigation';
 
 import type { MetaData } from '~/types';
 import type { Crumb } from '~/components/common/Breadcrumbs.astro';
+import { getLangFromUrl } from '~/i18n/utils';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 
 export interface Props {
   metadata?: MetaData;
@@ -18,12 +20,16 @@ export interface Props {
 }
 
 const { metadata, breadcrumbs } = Astro.props;
+
+const pageLang = getLangFromUrl(Astro.url);
+const homeLabel = getUiForLang(pageLang)?.['breadcrumb.home'] || 'Home';
+const localizedCrumbs = (breadcrumbs || []).map((c) => (c.name === 'Home' ? { ...c, name: homeLabel } : c));
 ---
 
 <Layout metadata={metadata}>
   {
-    breadcrumbs && breadcrumbs.length > 0 && (
-      <JsonLd type="BreadcrumbList" breadcrumbs={breadcrumbs.map((c) => ({ name: c.name, href: c.href }))} />
+    localizedCrumbs.length > 0 && (
+      <JsonLd type="BreadcrumbList" breadcrumbs={localizedCrumbs.map((c) => ({ name: c.name, href: c.href }))} />
     )
   }
   <slot name="announcement">
@@ -34,9 +40,9 @@ const { metadata, breadcrumbs } = Astro.props;
   </slot>
   <main>
     {
-      breadcrumbs && breadcrumbs.length > 0 && (
+      localizedCrumbs.length > 0 && (
         <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
-          <Breadcrumbs crumbs={breadcrumbs} />
+          <Breadcrumbs crumbs={localizedCrumbs} />
         </div>
       )
     }

@@ -1,0 +1,556 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { languages } from '~/i18n/config';
+import { localizeHref } from '~/i18n/routing';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+
+const metadata = {
+  title: fr(
+    'Kids SUP Board | Best Inflatable Paddle Board for Children | Afarer OEM Manufacturer',
+    'Planche de Paddle Enfant | Meilleur Paddle Gonflable pour Enfants | Fabricant OEM afarer'
+  ),
+  description: fr(
+    'Afarer kids SUP boards — smaller, lighter inflatable paddle boards designed for children. Shorter length, lower volume, and kid-friendly designs for safe family paddling. OEM/ODM manufacturing available for brands and retailers.',
+    'Planches de paddle enfant afarer — paddles gonflables plus petits et plus légers conçus pour les enfants. Longueur réduite, volume inférieur et designs adaptés aux enfants pour des sorties familiales en toute sécurité. Fabrication OEM/ODM disponible pour les marques et les détaillants.'
+  ),
+  ignoreTitleTemplate: true,
+};
+const pageUrl = `https://afarer.com/${lang}/kids-sup/`;
+const today = '2026-07-27';
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="Article"
+    data={{
+      headline: fr(
+        'Kids SUP Board — Introducing Children to Paddle Boarding',
+        'Planche de Paddle Enfant — Initier les Enfants au Paddle'
+      ),
+      description: metadata.description,
+      datePublished: today,
+      author: { '@type': 'Organization', name: 'Afarer' },
+      url: pageUrl,
+    }}
+  />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: fr('Home', 'Accueil'), item: `https://afarer.com/${lang}/` },
+        {
+          position: 2,
+          name: fr('Inflatable SUP Boards', 'Paddles Gonflables'),
+          item: `https://afarer.com/${lang}/inflatable-sup/`,
+        },
+        { position: 3, name: fr('Kids SUP', 'Paddle enfant'), item: pageUrl },
+      ],
+    }}
+  />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: fr(
+            'What age is appropriate for a kids SUP board?',
+            'À partir de quel âge pour une planche de paddle enfant ?'
+          ),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Children as young as 5–6 years old can start on a kids SUP board with adult supervision. Boards for young children are typically 8′–9′ long with lower volume and lighter weight for easy handling.',
+              'Des enfants dès 5–6 ans peuvent débuter sur une planche de paddle enfant sous supervision d’un adulte. Les planches pour jeunes enfants mesurent généralement 2,40 à 2,70 m de long, avec un volume réduit et un poids léger pour une manipulation facile.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('What size SUP does a child need?', 'Quelle taille de paddle pour un enfant ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              "A kids SUP should match the child's weight and height. For children under 80 lbs, an 8′–9′ board with 26″–28″ width is appropriate. For teens and larger children, a 9′–10′ board with 28″–30″ width works well.",
+              'Un paddle enfant doit correspondre au poids et à la taille de l’enfant. Pour les enfants de moins de 36 kg, une planche de 2,40 à 2,70 m avec une largeur de 66 à 71 cm convient. Pour les ados et les enfants plus grands, une planche de 2,70 à 3,00 m avec une largeur de 71 à 76 cm fonctionne bien.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('Are inflatable SUPs safe for children?', 'Les paddles gonflables sont-ils sûrs pour les enfants ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. Inflatable SUPs are actually safer for children than hard boards because they have no sharp edges or hard rails. The soft inflatable construction cushions falls and reduces injury risk. Always pair with a life vest and adult supervision.',
+              'Oui. Les paddles gonflables sont en réalité plus sûrs pour les enfants que les planches rigides car ils n’ont ni arêtes vives ni rails durs. La construction gonflable souple amortit les chutes et réduit le risque de blessure. Associez toujours un gilet de sauvetage et une supervision d’adulte.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr(
+            'Can adults use kids SUP boards?',
+            'Les adultes peuvent-ils utiliser des planches de paddle enfant ?'
+          ),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Kids SUPs are designed for lower weight ranges and shorter heights. Adults generally exceed the weight capacity and will find the board unstable and underperforming. Adults should use appropriately sized boards.',
+              'Les paddles enfant sont conçus pour des plages de poids inférieures et des tailles plus petites. Les adultes dépassent généralement la capacité de charge et trouveront la planche instable et peu performante. Les adultes devraient utiliser des planches adaptées à leur gabarit.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr(
+            'Do you manufacture kids SUPs for private label?',
+            'Fabriquez-vous des paddles enfant en marque blanche ?'
+          ),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. Afarer offers OEM/ODM manufacturing for kids SUP boards with kid-friendly graphics, smaller form factors, and custom packaging for brands and retailers targeting family paddlers.',
+              'Oui. afarer propose la fabrication OEM/ODM de planches de paddle enfant avec des graphismes adaptés aux enfants, des formats plus compacts et des emballages personnalisés pour les marques et détaillants ciblant les familles de pratiquants.'
+            ),
+          },
+        },
+      ],
+    }}
+  />
+
+  <section class="max-w-6xl mx-auto py-24 px-6">
+    <a
+      href={localizeHref('/inflatable-sup/', lang || 'en')}
+      class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-8 transition-colors"
+      >{fr('← SUP Product Center', '← Centre produits paddle')}</a
+    >
+    <div class="max-w-4xl">
+      <span class="text-xs font-semibold text-primary tracking-[0.25em] uppercase"
+        >{fr('SUP Category', 'Catégorie paddle')}</span
+      >
+      <h1 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-secondary leading-[1.1]">
+        {fr('Kids SUP Board', 'Planche de Paddle Enfant')}
+      </h1>
+      <p class="mt-6 text-lg text-gray-500 max-w-3xl leading-relaxed">
+        {
+          fr(
+            'Introducing children to paddle boarding builds confidence, balance, and a lifelong connection to the water. Afarer kids SUPs are designed with shorter lengths, lower volume, and kid-friendly proportions that make learning natural and fun. Lighter and easier to handle than adult boards, they give young paddlers the independence they crave.',
+            'Initier les enfants au paddle développe la confiance, l’équilibre et un lien durable avec l’eau. Les paddles enfant afarer sont conçus avec des longueurs réduites, un volume inférieur et des proportions adaptées aux enfants qui rendent l’apprentissage naturel et amusant. Plus légers et plus faciles à manier que les planches adultes, ils offrent aux jeunes pratiquants l’autonomie qu’ils recherchent.'
+          )
+        }
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">
+          {fr('What Makes a Great Kids SUP?', 'Qu’est-ce qui fait un bon paddle enfant ?')}
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center">
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg class="w-7 h-7 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M3 12h2m2 0h2m2 0h2m2 0h2m2 0h2"></path></svg
+            >
+          </div>
+          <h3 class="text-lg font-bold text-secondary">{fr('Right-Sized Proportions', 'Proportions adaptées')}</h3>
+          <p class="mt-3 text-sm text-gray-500">
+            {
+              fr(
+                "Shorter length (8′–9′) and narrower width match a child's height, weight, and paddle reach for natural technique development.",
+                'Une longueur réduite (2,40 à 2,70 m) et une largeur plus étroite correspondent à la taille, au poids et à l’amplitude de bras de l’enfant pour un développement naturel de la technique.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center">
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg class="w-7 h-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M12 3v2.25M12 21v-2.25M3 12h2.25M18.75 12H21M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              ></path></svg
+            >
+          </div>
+          <h3 class="text-lg font-bold text-secondary">{fr('Lightweight Design', 'Design léger')}</h3>
+          <p class="mt-3 text-sm text-gray-500">
+            {
+              fr(
+                'At 12–15 lbs, kids can carry their own board from car to water. Builds responsibility and independence from day one.',
+                'Avec 5,5 à 7 kg, les enfants peuvent porter leur propre planche de la voiture à l’eau. Développe responsabilité et autonomie dès le premier jour.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center">
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-50 to-red-100 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg class="w-7 h-7 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              ></path></svg
+            >
+          </div>
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Soft Safe Construction', 'Construction souple et sûre')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500">
+            {
+              fr(
+                'Inflatable construction means no sharp edges or hard rails. Soft EVA deck provides grip and cushion for active kids.',
+                'La construction gonflable signifie aucune arête vive ni rail dur. Le pont en EVA souple offre adhérence et amorti pour les enfants actifs.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-8">
+        {fr('Kids SUP Safety Tips', 'Conseils de sécurité pour le paddle enfant')}
+      </h2>
+      <div class="space-y-6">
+        <div class="bg-white rounded-2xl border border-gray-200 p-6">
+          <h3 class="font-semibold text-gray-900">
+            {fr('Always Wear a Life Vest', 'Portez toujours un gilet de sauvetage')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                'Children should wear a properly fitted USCG-approved life vest at all times on the water. Check our ',
+                'Les enfants devraient porter en permanence sur l’eau un gilet de sauvetage homologué USCG correctement ajusté. Découvrez notre '
+              )
+            }<a href={localizeHref('/products/life-vest-classic', lang || 'en')} class="text-primary hover:underline"
+              >Life Vest Classic</a
+            >{fr(' for kid-friendly options.', ' pour des options adaptées aux enfants.')}
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-200 p-6">
+          <h3 class="font-semibold text-gray-900">
+            {fr('Start in Calm Shallow Water', 'Commencez dans une eau calme et peu profonde')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                'Choose protected lakes or gentle rivers with sandy entry. Avoid wind, current, and boat traffic for early sessions.',
+                'Choisissez des lacs protégés ou des rivières calmes avec un accès sablonneux. Évitez le vent, le courant et le trafic de bateaux pour les premières séances.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-200 p-6">
+          <h3 class="font-semibold text-gray-900">
+            {fr('Use a Leash & SUP Buddy', 'Utilisez une laisse & un partenaire de paddle')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                "A coiled leash keeps the board close. Children should always paddle with an adult SUP buddy within arm's reach.",
+                'Une laisse spiralée garde la planche à portée. Les enfants devraient toujours pagayer avec un adulte à portée de bras.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">
+          {fr('Who Is a Kids SUP For?', 'Pour qui est le paddle enfant ?')}
+        </h2>
+        <p class="mt-4 text-lg text-gray-500">
+          {
+            fr(
+              'Built for young paddlers and the families who love the water.',
+              'Conçu pour les jeunes pratiquants et les familles qui aiment l’eau.'
+            )
+          }
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">{fr('Active Families', 'Familles actives')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Give your children the same water experiences you enjoy. A kids SUP lets the whole family paddle together with age-appropriate equipment.',
+                'Offrez à vos enfants les mêmes expériences nautiques que celles que vous aimez. Un paddle enfant permet à toute la famille de pagayer ensemble avec un équipement adapté à l’âge.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('SUP Schools & Camps', 'Écoles de paddle & colonies de vacances')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Youth paddle programs need small, lightweight boards that children can handle independently. Durable construction withstands heavy use across multiple seasons.',
+                'Les programmes de paddle pour jeunes ont besoin de planches petites et légères que les enfants peuvent manier en autonomie. La construction durable résiste à un usage intensif sur plusieurs saisons.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">{fr('Confidence Building', 'Développement de la confiance')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Paddle boarding builds balance, coordination, and water confidence in children. The sense of independence from paddling their own board is invaluable.',
+                'Le paddle développe l’équilibre, la coordination et la confiance dans l’eau chez les enfants. Le sentiment d’autonomie lié au fait de pagayer sur sa propre planche est inestimable.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Resort Family Programs', 'Programmes familiaux de complexes hôteliers')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Family-friendly resorts stock kids SUPs for young guests. Lightweight and easy to store, they expand water activity offerings without significant investment.',
+                'Les complexes adaptés aux familles proposent des paddles enfant pour leurs jeunes clients. Légers et faciles à ranger, ils élargissent l’offre d’activités nautiques sans investissement important.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OEM Section -->
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">
+        {fr('OEM/ODM Manufacturing for Kids SUPs', 'Fabrication OEM/ODM de paddles enfant')}
+      </h2>
+      <p class="text-lg text-gray-500 leading-relaxed mb-8">
+        {
+          fr(
+            'Afarer manufactures kids SUP boards for global brands, outdoor retailers, and family-focused resort chains. Our production lines produce CE-certified kids SUPs with child-friendly graphics, lighter construction, and custom packaging. MOQ from 50 units. Lead times from 30 days.',
+            'afarer fabrique des planches de paddle enfant pour les marques internationales, les détaillants d’articles de plein air et les chaînes de complexes orientés familles. Nos lignes de production produisent des paddles enfant certifiés CE avec des graphismes adaptés aux enfants, une construction allégée et des emballages personnalisés. MOQ à partir de 50 unités. Délais de production à partir de 30 jours.'
+          )
+        }
+      </p>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">{fr('Custom', 'Sur mesure')}</span>
+          <p class="mt-1 text-sm text-gray-500">{fr('Graphics, size, packaging', 'Graphismes, taille, emballage')}</p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">50+</span>
+          <p class="mt-1 text-sm text-gray-500">{fr('Units minimum order', 'Unités minimum de commande')}</p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">{fr('30 Days', '30 Jours')}</span>
+          <p class="mt-1 text-sm text-gray-500">{fr('Typical lead time', 'Délai de production habituel')}</p>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <a
+          href={localizeHref('/oem-odm-manufacturer', lang || 'en')}
+          class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+          >{fr('Request OEM Quote', 'Demander un devis OEM')} <span>→</span></a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        {fr('Kids SUP — Frequently Asked Questions', 'Paddle Enfant — Questions Fréquentes')}
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        {
+          fr(
+            'Common questions about selecting, using, and manufacturing kids paddle boards.',
+            'Questions courantes sur le choix, l’utilisation et la fabrication de planches de paddle enfant.'
+          )
+        }
+      </p>
+      <div class="space-y-4">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {
+              fr(
+                'What age is appropriate for a kids SUP board?',
+                'À partir de quel âge pour une planche de paddle enfant ?'
+              )
+            }
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Children as young as 5–6 years old can start on a kids SUP board with adult supervision. Boards for young children are typically 8′–9′ long with lower volume and lighter weight for easy handling.',
+                'Des enfants dès 5–6 ans peuvent débuter sur une planche de paddle enfant sous supervision d’un adulte. Les planches pour jeunes enfants mesurent généralement 2,40 à 2,70 m de long, avec un volume réduit et un poids léger pour une manipulation facile.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('What size SUP does a child need?', 'Quelle taille de paddle pour un enfant ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                "A kids SUP should match the child's weight and height. For children under 80 lbs, an 8′–9′ board with 26″–28″ width is appropriate. For teens and larger children, a 9′–10′ board with 28″–30″ width works well.",
+                'Un paddle enfant doit correspondre au poids et à la taille de l’enfant. Pour les enfants de moins de 36 kg, une planche de 2,40 à 2,70 m avec une largeur de 66 à 71 cm convient. Pour les ados et les enfants plus grands, une planche de 2,70 à 3,00 m avec une largeur de 71 à 76 cm fonctionne bien.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('Are inflatable SUPs safe for children?', 'Les paddles gonflables sont-ils sûrs pour les enfants ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Yes. Inflatable SUPs are actually safer for children than hard boards because they have no sharp edges or hard rails. The soft inflatable construction cushions falls and reduces injury risk. Always pair with a life vest and adult supervision.',
+                'Oui. Les paddles gonflables sont en réalité plus sûrs pour les enfants que les planches rigides car ils n’ont ni arêtes vives ni rails durs. La construction gonflable souple amortit les chutes et réduit le risque de blessure. Associez toujours un gilet de sauvetage et une supervision d’adulte.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('Can adults use kids SUP boards?', 'Les adultes peuvent-ils utiliser des planches de paddle enfant ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Kids SUPs are designed for lower weight ranges and shorter heights. Adults generally exceed the weight capacity and will find the board unstable and underperforming. Adults should use appropriately sized boards.',
+                'Les paddles enfant sont conçus pour des plages de poids inférieures et des tailles plus petites. Les adultes dépassent généralement la capacité de charge et trouveront la planche instable et peu performante. Les adultes devraient utiliser des planches adaptées à leur gabarit.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {
+              fr(
+                'Do you manufacture kids SUPs for private label?',
+                'Fabriquez-vous des paddles enfant en marque blanche ?'
+              )
+            }
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Yes. Afarer offers OEM/ODM manufacturing for kids SUP boards with kid-friendly graphics, smaller form factors, and custom packaging for brands and retailers targeting family paddlers.',
+                'Oui. afarer propose la fabrication OEM/ODM de planches de paddle enfant avec des graphismes adaptés aux enfants, des formats plus compacts et des emballages personnalisés pour les marques et détaillants ciblant les familles de pratiquants.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Resources -->
+  <section class="max-w-6xl mx-auto py-16 px-6">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+        {fr('Family SUP Resources', 'Ressources paddle en famille')}
+      </h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a
+        href={localizeHref('/compare/single-chamber-vs-multi-chamber', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {fr('Family Safety Guide', 'Guide de sécurité en famille')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">
+          {fr('Multi-chamber safety for family paddling.', 'La sécurité multichambres pour le paddle en famille.')}
+        </p>
+      </a>
+      <a
+        href={localizeHref('/v2/pvc-vs-hypalon-boats', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {fr('Durable Materials', 'Matériaux durables')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">
+          {fr('Why PVC is ideal for kids boards.', 'Pourquoi le PVC est idéal pour les planches enfant.')}
+        </p>
+      </a>
+      <a
+        href={localizeHref('/compare/inflatable-vs-hardboard', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {fr('Inflatable for Families', 'Le gonflable pour les familles')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">
+          {
+            fr(
+              'Why inflatable SUPs are safer for children.',
+              'Pourquoi les paddles gonflables sont plus sûrs pour les enfants.'
+            )
+          }
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+      {fr('Find the Perfect Kids SUP Board', 'Trouvez la planche de paddle enfant parfaite')}
+    </h2>
+    <p class="mt-4 text-lg text-gray-500">
+      {
+        fr(
+          'Contact us about kids SUP board availability, bulk family sets, and OEM production.',
+          'Contactez-nous pour la disponibilité des planches de paddle enfant, les lots familiaux et la production OEM.'
+        )
+      }
+    </p>
+    <a
+      href={localizeHref('/contact', lang || 'en')}
+      class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+      >{fr('Contact Us', 'Contactez-nous')} <span>→</span></a
+    >
+  </section>
+</Layout>

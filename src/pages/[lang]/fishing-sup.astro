@@ -1,0 +1,537 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { languages } from '~/i18n/config';
+import { localizeHref } from '~/i18n/routing';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+
+const metadata = {
+  title: fr(
+    'Fishing SUP Board | Inflatable Paddle Board for Fishing | Afarer OEM Manufacturer',
+    'Planche de Paddle Pêche | Paddle Gonflable Pêche | Fabricant OEM afarer'
+  ),
+  description: fr(
+    'Afarer fishing SUP boards — stable, wide inflatable paddle boards designed for anglers. Mount accessories, store gear, and access remote fishing spots silently. OEM/ODM manufacturing available for brands, resorts, and clubs.',
+    'Planches de paddle pêche afarer — paddles gonflables larges et stables conçus pour les pêcheurs. Montez des accessoires, rangez votre matériel et accédez silencieusement aux spots de pêche reculés. Fabrication OEM/ODM disponible pour les marques, complexes hôteliers et clubs.'
+  ),
+  ignoreTitleTemplate: true,
+};
+const pageUrl = `https://afarer.com/${lang}/fishing-sup/`;
+const today = '2026-07-27';
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="Article"
+    data={{
+      headline: fr(
+        'Fishing SUP Board — The Angler’s Floating Platform',
+        'Planche de Paddle Pêche — La Plateforme Flottante du Pêcheur'
+      ),
+      description: metadata.description,
+      datePublished: today,
+      author: { '@type': 'Organization', name: 'Afarer' },
+      url: pageUrl,
+    }}
+  />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: fr('Home', 'Accueil'), item: `https://afarer.com/${lang}/` },
+        {
+          position: 2,
+          name: fr('Inflatable SUP Boards', 'Paddles Gonflables'),
+          item: `https://afarer.com/${lang}/inflatable-sup/`,
+        },
+        { position: 3, name: fr('Fishing SUP', 'Paddle pêche'), item: pageUrl },
+      ],
+    }}
+  />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: fr('What makes a good fishing SUP board?', 'Qu’est-ce qui fait une bonne planche de paddle pêche ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'A good fishing SUP needs a wide stable platform (34″+), sufficient weight capacity for angler plus gear, D-ring grid for mounting accessories, and durable multi-chamber construction for safety. Quiet approach and shallow draft are key advantages over boats.',
+              'Un bon paddle pêche nécessite une plateforme large et stable (86 cm et plus), une capacité de charge suffisante pour le pêcheur et son matériel, une grille d’anneaux en D pour monter des accessoires et une construction multichambres durable pour la sécurité. L’approche silencieuse et le faible tirant d’eau sont des avantages clés par rapport aux bateaux.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('Can you stand up and fish on a SUP?', 'Peut-on pêcher debout sur un paddle ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. Fishing SUPs are designed with extra-wide decks (34″–36″) that provide the stability needed for stand-up casting. The broad platform distributes weight evenly, allowing anglers to stand, kneel, or sit while fishing.',
+              'Oui. Les paddles pêche sont conçus avec des ponts extra-larges (86 à 91 cm) qui offrent la stabilité nécessaire pour lancer debout. La large plateforme répartit le poids uniformément, permettant aux pêcheurs de rester debout, à genoux ou assis en pêchant.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('What accessories do I need for SUP fishing?', 'Quels accessoires pour la pêche en paddle ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Essential SUP fishing accessories include a rod holder, anchor system, cooler or crate for gear, a personal flotation device, and a waterproof bag for electronics. Many fishing SUPs come with a D-ring grid for easy accessory mounting.',
+              'Les accessoires essentiels pour la pêche en paddle incluent un porte-canne, un système d’ancre, une glacière ou une caisse pour le matériel, un gilet de sauvetage et un sac étanche pour l’électronique. De nombreux paddles pêche sont équipés d’une grille d’anneaux en D pour un montage facile des accessoires.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('Is SUP fishing safe?', 'La pêche en paddle est-elle sûre ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. Choose a multi-chamber inflatable SUP for redundancy, always wear a life vest, use a leash, and check weather conditions before heading out. Avoid strong currents, wind, and boat traffic.',
+              'Oui. Choisissez un paddle gonflable multichambres pour la redondance, portez toujours un gilet de sauvetage, utilisez une laisse et vérifiez les conditions météo avant de partir. Évitez les courants forts, le vent et le trafic de bateaux.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr(
+            'Do you manufacture fishing SUPs for private label?',
+            'Fabriquez-vous des paddles pêche en marque blanche ?'
+          ),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. Afarer offers OEM/ODM manufacturing for fishing SUP boards with custom accessory mounting systems, deck graphics, color matching, and compliance documentation for brands and retail partners worldwide.',
+              'Oui. afarer propose la fabrication OEM/ODM de planches de paddle pêche avec des systèmes de montage d’accessoires personnalisés, des graphismes de pont, des couleurs assorties et une documentation de conformité pour les marques et partenaires de distribution du monde entier.'
+            ),
+          },
+        },
+      ],
+    }}
+  />
+
+  <section class="max-w-6xl mx-auto py-24 px-6">
+    <a
+      href={localizeHref('/inflatable-sup/', lang || 'en')}
+      class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-8 transition-colors"
+      >{fr('← SUP Product Center', '← Centre produits paddle')}</a
+    >
+    <div class="max-w-4xl">
+      <span class="text-xs font-semibold text-primary tracking-[0.25em] uppercase"
+        >{fr('SUP Category', 'Catégorie paddle')}</span
+      >
+      <h1 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-secondary leading-[1.1]">
+        {fr('Fishing SUP Board', 'Planche de Paddle Pêche')}
+      </h1>
+      <p class="mt-6 text-lg text-gray-500 max-w-3xl leading-relaxed">
+        {
+          fr(
+            'Fishing from a SUP gives anglers silent access to shallow coves, reed beds, and remote shorelines that boats cannot reach. Afarer fishing SUPs provide the stability, deck space, and mounting options needed for a productive day on the water. Stand, kneel, or sit while casting — the wide platform keeps you steady.',
+            'Pêcher en paddle offre aux pêcheurs un accès silencieux aux criques peu profondes, aux roselières et aux rives reculées que les bateaux ne peuvent pas atteindre. Les paddles pêche afarer offrent la stabilité, l’espace de pont et les options de montage nécessaires pour une journée productive sur l’eau. Debout, à genoux ou assis pour lancer — la plateforme large vous garde stable.'
+          )
+        }
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">
+          {fr('Why SUP Fishing?', 'Pourquoi la pêche en paddle ?')}
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8">
+          <h3 class="text-lg font-bold text-secondary">{fr('Silent Approach', 'Approche silencieuse')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'No motor noise, no hull slap. Glide silently into fishing spots without spooking fish. The ultimate stealth angling platform.',
+                'Aucun bruit de moteur, aucun clapot de coque. Glissez silencieusement vers les spots de pêche sans effrayer les poissons. La plateforme de pêche discrète ultime.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8">
+          <h3 class="text-lg font-bold text-secondary">{fr('Shallow Water Access', 'Accès aux eaux peu profondes')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'With only 4–6 inches of draft, navigate ultra-shallow waters, marshes, and flats that motorized boats cannot reach.',
+                'Avec seulement 10 à 15 cm de tirant d’eau, naviguez dans des eaux ultra-peu profondes, des marais et des étendues que les bateaux à moteur ne peuvent pas atteindre.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8">
+          <h3 class="text-lg font-bold text-secondary">{fr('Customizable Setup', 'Configuration personnalisable')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'D-ring grid and bungee deck rigging accommodate cooler mounts, rod holders, crate systems, and anchor attachments.',
+                'La grille d’anneaux en D et le laçage élastique du pont accueillent les supports de glacière, porte-cannes, caisses et attaches d’ancre.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-8">
+        {fr('Best Fishing SUP Boards', 'Meilleures planches de paddle pêche')}
+      </h2>
+      <p class="text-gray-500 mb-8">
+        {
+          fr(
+            'Our ultra-stable SUPs provide the ideal fishing platform. Wide decks support standing casts and gear storage.',
+            'Nos paddles ultra-stables offrent la plateforme de pêche idéale. Les ponts larges supportent les lancers debout et le rangement du matériel.'
+          )
+        }
+      </p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <a
+          href={localizeHref('/products/sup-tropical-breeze', lang || 'en')}
+          class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all"
+        >
+          <div class="aspect-[16/9] bg-gradient-to-br from-amber-50 to-orange-50 overflow-hidden">
+            <img
+              src="https://assets.afarer.com/images/afarer/products/sup-series/sup-tropical-breeze-1-1200w.webp"
+              alt="Tropical Breeze Series"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+              Tropical Breeze Island Escape
+            </h3>
+            <p class="mt-2 text-sm text-gray-500">
+              {
+                fr(
+                  'Extra-wide SUP with maximum primary stability. Ideal for stand-up casting and gear organization.',
+                  'Paddle extra-large avec une stabilité primaire maximale. Idéal pour les lancers debout et l’organisation du matériel.'
+                )
+              }
+            </p>
+            <span class="inline-block mt-4 text-sm font-medium text-primary"
+              >{fr('View product →', 'Voir le produit →')}</span
+            >
+          </div>
+        </a>
+        <a
+          href={localizeHref('/products/sup-explorer-11', lang || 'en')}
+          class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all"
+        >
+          <div class="aspect-[16/9] bg-gradient-to-br from-blue-50 to-cyan-50 overflow-hidden">
+            <img
+              src="https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-app-1-1200w.webp"
+              alt="SUP Explorer 11'"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">SUP Explorer 11'</h3>
+            <p class="mt-2 text-sm text-gray-500">
+              {
+                fr(
+                  'Versatile all-around SUP with great stability. Bungee deck rigging for securing fishing gear and coolers.',
+                  'Paddle polyvalent all-around avec une excellente stabilité. Laçage élastique du pont pour fixer le matériel de pêche et les glacières.'
+                )
+              }
+            </p>
+            <span class="inline-block mt-4 text-sm font-medium text-primary"
+              >{fr('View product →', 'Voir le produit →')}</span
+            >
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">
+          {fr('Who Is a Fishing SUP For?', 'Pour qui est le paddle pêche ?')}
+        </h2>
+        <p class="mt-4 text-lg text-gray-500">
+          {
+            fr(
+              'Built for anglers who want to fish where boats cannot go.',
+              'Conçu pour les pêcheurs qui veulent pêcher là où les bateaux ne vont pas.'
+            )
+          }
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Kayak Anglers Exploring SUP', 'Pêcheurs en kayak curieux de paddle')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Stand-up casting gives you a visibility advantage over kayak fishing. Spot fish, structure, and cover from an elevated position while accessing the same shallow waters.',
+                'Pêcher debout offre un avantage de visibilité par rapport à la pêche en kayak. Repérez les poissons, les structures et les caches depuis une position surélevée tout en accédant aux mêmes eaux peu profondes.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Fly Fishing Enthusiasts', 'Passionnés de pêche à la mouche')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'The silent, draft-free platform is perfect for fly fishing still water. Drift quietly across flats and sight-cast to cruising fish without spooking them.',
+                'La plateforme silencieuse, sans tirant d’eau, est parfaite pour la pêche à la mouche en eau calme. Dérivez silencieusement sur les étendues et lancez à vue aux poissons en déplacement sans les effrayer.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Weekend Sport Anglers', 'Pêcheurs sportifs du week-end')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Carry your fishing SUP in a backpack to remote lakes and rivers. No trailer needed. Set up, launch, and start fishing in minutes.',
+                'Transportez votre paddle pêche dans un sac à dos vers des lacs et des rivières reculés. Aucune remorque nécessaire. Montez, lancez-vous et commencez à pêcher en quelques minutes.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Resort & Guide Services', 'Complexes hôteliers & services de guides')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Offer SUP fishing as a guided experience. Durable, easy to store, and customizable with resort branding. OEM programs available.',
+                'Proposez la pêche en paddle comme expérience guidée. Durable, facile à ranger et personnalisable aux couleurs de votre complexe. Programmes OEM disponibles.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OEM Section -->
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">
+        {fr('OEM/ODM Manufacturing for Fishing SUPs', 'Fabrication OEM/ODM de paddles pêche')}
+      </h2>
+      <p class="text-lg text-gray-500 leading-relaxed mb-8">
+        {
+          fr(
+            'Afarer manufactures fishing SUP boards for global brands, outfitters, and retail chains. Our production lines produce CE-certified fishing SUPs with custom accessory mounting, deck graphics, and packaging. MOQ from 50 units. Lead times from 30 days.',
+            'afarer fabrique des planches de paddle pêche pour les marques internationales, les outfitters et les chaînes de distribution. Nos lignes de production produisent des paddles pêche certifiés CE avec montage d’accessoires personnalisé, graphismes de pont et emballage sur mesure. MOQ à partir de 50 unités. Délais de production à partir de 30 jours.'
+          )
+        }
+      </p>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">{fr('Custom', 'Sur mesure')}</span>
+          <p class="mt-1 text-sm text-gray-500">
+            {fr('Graphics, accessories, packaging', 'Graphismes, accessoires, emballage')}
+          </p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">50+</span>
+          <p class="mt-1 text-sm text-gray-500">{fr('Units minimum order', 'Unités minimum de commande')}</p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">{fr('30 Days', '30 Jours')}</span>
+          <p class="mt-1 text-sm text-gray-500">{fr('Typical lead time', 'Délai de production habituel')}</p>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <a
+          href={localizeHref('/oem-odm-manufacturer', lang || 'en')}
+          class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+          >{fr('Request OEM Quote', 'Demander un devis OEM')} <span>→</span></a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        {fr('Fishing SUP — Frequently Asked Questions', 'Paddle Pêche — Questions Fréquentes')}
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        {
+          fr(
+            'Common questions about selecting, using, and manufacturing fishing paddle boards.',
+            'Questions courantes sur le choix, l’utilisation et la fabrication de planches de paddle pêche.'
+          )
+        }
+      </p>
+      <div class="space-y-4">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('What makes a good fishing SUP board?', 'Qu’est-ce qui fait une bonne planche de paddle pêche ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'A good fishing SUP needs a wide stable platform (34″+), sufficient weight capacity for angler plus gear, D-ring grid for mounting accessories, and durable multi-chamber construction for safety. Quiet approach and shallow draft are key advantages over boats.',
+                'Un bon paddle pêche nécessite une plateforme large et stable (86 cm et plus), une capacité de charge suffisante pour le pêcheur et son matériel, une grille d’anneaux en D pour monter des accessoires et une construction multichambres durable pour la sécurité. L’approche silencieuse et le faible tirant d’eau sont des avantages clés par rapport aux bateaux.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('Can you stand up and fish on a SUP?', 'Peut-on pêcher debout sur un paddle ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Yes. Fishing SUPs are designed with extra-wide decks (34″–36″) that provide the stability needed for stand-up casting. The broad platform distributes weight evenly, allowing anglers to stand, kneel, or sit while fishing.',
+                'Oui. Les paddles pêche sont conçus avec des ponts extra-larges (86 à 91 cm) qui offrent la stabilité nécessaire pour lancer debout. La large plateforme répartit le poids uniformément, permettant aux pêcheurs de rester debout, à genoux ou assis en pêchant.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('What accessories do I need for SUP fishing?', 'Quels accessoires pour la pêche en paddle ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Essential SUP fishing accessories include a rod holder, anchor system, cooler or crate for gear, a personal flotation device, and a waterproof bag for electronics. Many fishing SUPs come with a D-ring grid for easy accessory mounting.',
+                'Les accessoires essentiels pour la pêche en paddle incluent un porte-canne, un système d’ancre, une glacière ou une caisse pour le matériel, un gilet de sauvetage et un sac étanche pour l’électronique. De nombreux paddles pêche sont équipés d’une grille d’anneaux en D pour un montage facile des accessoires.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('Is SUP fishing safe?', 'La pêche en paddle est-elle sûre ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Yes. Choose a multi-chamber inflatable SUP for redundancy, always wear a life vest, use a leash, and check weather conditions before heading out. Avoid strong currents, wind, and boat traffic.',
+                'Oui. Choisissez un paddle gonflable multichambres pour la redondance, portez toujours un gilet de sauvetage, utilisez une laisse et vérifiez les conditions météo avant de partir. Évitez les courants forts, le vent et le trafic de bateaux.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {
+              fr(
+                'Do you manufacture fishing SUPs for private label?',
+                'Fabriquez-vous des paddles pêche en marque blanche ?'
+              )
+            }
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Yes. Afarer offers OEM/ODM manufacturing for fishing SUP boards with custom accessory mounting systems, deck graphics, color matching, and compliance documentation for brands and retail partners worldwide.',
+                'Oui. afarer propose la fabrication OEM/ODM de planches de paddle pêche avec des systèmes de montage d’accessoires personnalisés, des graphismes de pont, des couleurs assorties et une documentation de conformité pour les marques et partenaires de distribution du monde entier.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Resources -->
+  <section class="max-w-6xl mx-auto py-16 px-6">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+        {fr('Fishing SUP Resources', 'Ressources sur le paddle pêche')}
+      </h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a
+        href={localizeHref('/compare/single-chamber-vs-multi-chamber', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {fr('Safety for Anglers', 'Sécurité pour les pêcheurs')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">
+          {
+            fr(
+              'Why multi-chamber SUPs are safer for fishing.',
+              'Pourquoi les paddles multichambres sont plus sûrs pour la pêche.'
+            )
+          }
+        </p>
+      </a>
+      <a
+        href={localizeHref('/v2/pvc-vs-hypalon-boats', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {fr('Durable SUP Materials', 'Matériaux de paddle durables')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">
+          {fr('PVC vs Hypalon for fishing applications.', 'PVC vs Hypalon pour la pêche.')}
+        </p>
+      </a>
+      <a
+        href={localizeHref('/compare/inflatable-vs-hardboard', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {fr('Inflatable vs Hard for Fishing', 'Gonflable ou rigide pour la pêche')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">
+          {fr('Why inflatable SUPs excel for anglers.', 'Pourquoi les paddles gonflables excellent pour les pêcheurs.')}
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+      {fr('Explore Fishing SUP Options', 'Explorez les options de paddle pêche')}
+    </h2>
+    <p class="mt-4 text-lg text-gray-500">
+      {
+        fr(
+          'Contact us for custom fishing SUP configurations, bulk orders, or OEM production.',
+          'Contactez-nous pour des configurations personnalisées de paddle pêche, des commandes en gros ou la production OEM.'
+        )
+      }
+    </p>
+    <a
+      href={localizeHref('/contact', lang || 'en')}
+      class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+      >{fr('Get a Quote', 'Obtenir un devis')} <span>→</span></a
+    >
+  </section>
+</Layout>

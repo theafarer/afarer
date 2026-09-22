@@ -4067,7 +4067,7 @@ const solutions: BizSolution[] = [
         text: 'Start Your Retail Private Label Project Today',
         href: '/contact?subject=retail-private-label-program',
       },
-      secondaryAction: { text: 'Explore Our SUP Products', href: '/products/sup-series' },
+      secondaryAction: { text: 'Explore Our SUP Products', href: '/products' },
     },
   },
 
@@ -4376,7 +4376,7 @@ const solutions: BizSolution[] = [
         text: 'Start Your Regional OEM Partnership Today',
         href: '/contact?subject=regional-oem-supply-chain-partner',
       },
-      secondaryAction: { text: 'View Our Product Portfolio', href: '/products/sup-series' },
+      secondaryAction: { text: 'View Our Product Portfolio', href: '/products' },
     },
   },
 
@@ -4689,7 +4689,7 @@ const solutions: BizSolution[] = [
         text: 'Start Your Corporate SUP Project Today',
         href: '/contact?subject=corporate-sup-event-package',
       },
-      secondaryAction: { text: 'See Our Customization Options', href: '/products/sup-series' },
+      secondaryAction: { text: 'See Our Customization Options', href: '/products' },
     },
   },
 
@@ -5002,7 +5002,7 @@ const solutions: BizSolution[] = [
         text: 'Start Your SUP Expansion Project Today',
         href: '/contact?subject=expand-your-water-sports-portfolio',
       },
-      secondaryAction: { text: 'Explore Our SUP Series', href: '/products/sup-series' },
+      secondaryAction: { text: 'Explore Our SUP Series', href: '/products' },
     },
   },
 
@@ -5308,7 +5308,7 @@ const solutions: BizSolution[] = [
         text: 'Start Your Pet-Friendly SUP Project Today',
         href: '/contact?subject=pet-friendly-paddle-board-program',
       },
-      secondaryAction: { text: 'View Our SUP Products', href: '/products/sup-series' },
+      secondaryAction: { text: 'View Our SUP Products', href: '/products' },
     },
   },
 
@@ -5611,7 +5611,7 @@ const solutions: BizSolution[] = [
         text: 'Start Your Commercial SUP Fleet Project Today',
         href: '/contact?subject=complete-beach-activity-equipment-solutions',
       },
-      secondaryAction: { text: 'View Our Commercial SUP Products', href: '/products/sup-series' },
+      secondaryAction: { text: 'View Our Commercial SUP Products', href: '/products' },
     },
   },
 
@@ -5892,7 +5892,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Create more than a water activity. Create a memorable guest experience that keeps visitors coming back.',
       primaryAction: { text: 'Start Your Project', href: '/contact?subject=commercial-water-park-sup-fleet' },
-      secondaryAction: { text: 'View SUP Products', href: '/products/sup-series' },
+      secondaryAction: { text: 'View SUP Products', href: '/products' },
     },
   },
 
@@ -6172,7 +6172,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Your property is unique. Your equipment should be unique too. Let Afarer help you craft a signature SUP collection.',
       primaryAction: { text: 'Start Your Project', href: '/contact?subject=premium-custom-sup-collection' },
-      secondaryAction: { text: 'View SUP Products', href: '/products/sup-series' },
+      secondaryAction: { text: 'View SUP Products', href: '/products' },
     },
   },
 
@@ -6455,7 +6455,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Your water resources have tourism potential. Afarer helps transform lakes, rivers, waterfronts, and public parks into memorable outdoor destinations.',
       primaryAction: { text: 'Start Your Project', href: '/contact?subject=destination-water-sports-package' },
-      secondaryAction: { text: 'View SUP Products', href: '/products/sup-series' },
+      secondaryAction: { text: 'View SUP Products', href: '/products' },
     },
   },
 
@@ -6737,7 +6737,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Help children discover confidence, teamwork, nature, and adventure through professionally designed SUP exploration programs.',
       primaryAction: { text: 'Start Your Project', href: '/contact?subject=kids-exploration-sup-program' },
-      secondaryAction: { text: 'View SUP Products', href: '/products/sup-series' },
+      secondaryAction: { text: 'View SUP Products', href: '/products' },
     },
   },
 
@@ -7021,7 +7021,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'Every rescue mission requires confidence. Afarer helps lifeguard teams, rescue organizations, training institutions, and emergency agencies build reliable water safety equipment systems.',
       primaryAction: { text: 'Start Your Project', href: '/contact?subject=professional-water-rescue-sup-system' },
-      secondaryAction: { text: 'View SUP Products', href: '/products/sup-series' },
+      secondaryAction: { text: 'View SUP Products', href: '/products' },
     },
   },
 
@@ -7306,7 +7306,7 @@ const solutions: BizSolution[] = [
       subtitle:
         'The future of water research requires flexible and sustainable solutions. Afarer helps marine NGOs, universities, research institutions, and environmental organizations create professional mobile water research platforms.',
       primaryAction: { text: 'Start Your Project', href: '/contact?subject=eco-research-monitoring-sup-platform' },
-      secondaryAction: { text: 'View SUP Products', href: '/products/sup-series' },
+      secondaryAction: { text: 'View SUP Products', href: '/products' },
     },
   },
 ];

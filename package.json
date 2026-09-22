@@ -10,8 +10,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "node scripts/geo-build.mjs && node scripts/generate-data-json.mjs && npx tsx scripts/generate-geo-files.ts && node scripts/_gen-uiall.cjs && node scripts/_gen-pages.cjs && node scripts/_gen-seo-meta.cjs && node scripts/gen-icon-svgs.cjs && astro build && node scripts/clean-public-assets.mjs",
-    "generate": "node scripts/generate-data-json.mjs && node scripts/_gen-uiall.cjs && node scripts/_gen-pages.cjs && node scripts/_gen-seo-meta.cjs && node scripts/gen-icon-svgs.cjs",
+    "build": "node scripts/geo-build.mjs && node scripts/generate-data-json.mjs && npx tsx scripts/generate-geo-files.ts && node scripts/_gen-uiall.cjs && node scripts/_gen-pages.cjs && node scripts/_gen-seo-meta.cjs && node scripts/gen-icon-svgs.cjs && node scripts/_gen-route-manifest.cjs && astro build && node scripts/clean-public-assets.mjs",
+    "generate": "node scripts/generate-data-json.mjs && node scripts/_gen-uiall.cjs && node scripts/_gen-pages.cjs && node scripts/_gen-seo-meta.cjs && node scripts/gen-icon-svgs.cjs && node scripts/_gen-route-manifest.cjs",
     "build:all": "npm run build",
     "build:geo": "npx tsx scripts/generate-geo-files.ts",
     "build:assets": "node scripts/optimize-assets.mjs",

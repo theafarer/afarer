@@ -18,58 +18,58 @@ categories:
     guides:
       - title: SUP-grunder
         desc: Lär dig grunderna i paddleboarding —hållning, paddelteknik och balans.
-        slug: sup-basics
+        slug: beginner-sup-guide
       - title: Paddeltekniker
         desc: Framåtpaddling, bakåtpaddling, dragpaddling och lågt stöd —bemästra grundläggande paddelrörelser.
-        slug: paddle-techniques
+        slug: sup-paddle-guide
       - title: Säkerhet först
         desc: Grundläggande säkerhetspraxis inklusive väderkontroll, användning av PFD, koppelregler och självräddning.
-        slug: safety-first
+        slug: sup-safety-guide
   - level: Medelnivå
     color: from-blue-500 to-indigo-600
     badge: bg-blue-100 text-blue-700
     guides:
       - title: Grunderna i kajakturism
         desc: Planering av flertimmars paddling —navigation, vätskebalans, tempo och tolkning av vindprognoser.
-        slug: touring-essentials
+        slug: touring-sup-guide
       - title: Avläsa väder
         desc: Tolka sjöprognoser, känna igen molnmönster och förstå vindens påverkan på vattnet.
-        slug: weather-reading
+        slug: weather-planning-water-sports
       - title: Navigationsgrunder
         desc: Kartläsning, användning av kompass, GPS-punkter och ruttplanering för kustnära paddling.
-        slug: navigation-basics
+        slug: sup-navigation-guide
       - title: Tidvattensmedvetenhet
         desc: Förstå tidvattencykler, strömmar och deras påverkan på starttid och rutt.
-        slug: tidal-awareness
+        slug: understanding-tides
   - level: Avancerad
     color: from-purple-500 to-violet-600
     badge: bg-purple-100 text-purple-700
     guides:
       - title: Planering av flerdagsturer
         desc: Expeditionens logistik —utrustningsval, måltidsplanering, säkerhetsprotokoll och nödkontakter.
-        slug: multi-day-trip-planning
+        slug: sup-travel-guide
       - title: Räddningstekniker
         desc: Självräddning, T-räddning, eskimåsväng för kajaker och bogsering på öppet vatten.
-        slug: rescue-techniques
+        slug: sup-self-rescue
       - title: Nattpaddling
         desc: Navigation i mörker —belysningskrav, ruttminne, gruppkommunikation och faromedvetenhet.
-        slug: night-paddling
+        slug: ocean-safety-basics
   - level: Underhåll
     color: from-amber-500 to-orange-600
     badge: bg-amber-100 text-amber-700
     guides:
       - title: Rengöring och skötsel
         desc: Sköljning med sötvatten, UV-skydd, mögelprevention och korrekta torkningstekniker efter varje pass.
-        slug: cleaning-and-care
+        slug: inflatable-sup-maintenance
       - title: Förvaring
         desc: Bästa praxis för förvaring av uppblåsbara brädor och båtar —tömning, hopvikning, temperaturkontroll och hållbarhet.
-        slug: storage-guide
+        slug: inflatable-sup-storage
       - title: Reparationsgrunder
         desc: Lagning av små punkteringar, läckande sömmar och ventilproblem med PVC-reparationssatser och lapptekniker.
-        slug: repair-basics
+        slug: inflatable-sup-repair
       - title: Ventilunderhåll
         desc: Identifiering av ventiltyper (Halkey-Roberts, Boston, Leafield), rengöring av skräp och byte av defekta spindlar.
-        slug: valve-maintenance
+        slug: sup-pump-guide
 knowledge_center_tagline: Kunskapscenter
 knowledge_center_title: Marinutrustning och branschguider
 knowledge_center_subtitle: Expertkunskap och inköpsguider för marina yrkesproffs, flottoperatörer och vattensportentusiaster.
@@ -105,7 +105,7 @@ knowledge_sections:
         href: /learn/water-safety
       - title: SUP-underhåll
         desc: Rengöring, förvaring, UV-skydd och reparation av oppustbara SUP-brädor.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
   - title: Kunskap om SUP-brädor
     tagline: SUP-brädhubb
     desc: Tekniska guider som omfattar SUP-brädtyper, material, konstruktionsmetoder, underhåll och säkerhet.
@@ -134,7 +134,7 @@ knowledge_sections:
         href: /learn/sup
       - title: Underhåll och skötsel av SUP
         desc: Råd om rengöring, förvaring, UV-skydd och reparation av oppustbara SUP-brädor.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
       - title: Välj din första SUP
         desc: Nybörjarguide till val av rätt SUP-bräda för din vikt, färdighetsnivå och avsedda användning.
         href: /learn/sup

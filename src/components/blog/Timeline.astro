@@ -43,7 +43,7 @@ const years = Object.keys(grouped)
                       <>
                         <span class="mx-2">·</span>
                         <a
-                          href={getPermalink(post.category.slug, 'category')}
+                          href={`/${currentLang}/news${getPermalink(post.category.slug, 'category')}`}
                           class="hover:text-primary transition-colors"
                         >
                           {post.category.title}

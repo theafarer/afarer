@@ -19,6 +19,8 @@ const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
 const d = pageContentData[`${lang}/site-use-cases`] || pageContentData['en/site-use-cases'] || {};
 const yamlCases: any[] = d.cases ?? [];
 
+const caseSlugMap: Record<string, string> = { family: 'family-recreation', outdoor: 'river-touring' };
+
 const staticUseCases = [
   { id: 'tourism-recreation', title: t('useCase.tourismRecreation'), desc: t('useCase.tourismRecreation.desc') },
   { id: 'search-and-rescue', title: t('useCase.searchAndRescue'), desc: t('useCase.searchAndRescue.desc') },
@@ -87,7 +89,7 @@ const metadata = {
       {
         allUseCases.map((uc) => (
           <a
-            href={`/${lang}/use-cases/${uc.id}`}
+            href={`/${lang}/use-cases/${caseSlugMap[uc.id] || uc.id}`}
             class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all hover:-translate-y-0.5 flex flex-col"
           >
             <div class="h-44 bg-gray-100 overflow-hidden">

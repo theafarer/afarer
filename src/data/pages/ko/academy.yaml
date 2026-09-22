@@ -18,58 +18,58 @@ categories:
     guides:
       - title: SUP Basics
         desc: 스탠드업 패들보딩의 기초를 배워보세요 — 자세, 스트로크 테크닉, 밸런스까지.
-        slug: sup-basics
+        slug: beginner-sup-guide
       - title: Paddle Techniques
         desc: 포워드 스트로크, 스윕 스트로크, 드로 스트로크, 로우 브레이스 — 필수 패들 동작을 완벽히 익히세요.
-        slug: paddle-techniques
+        slug: sup-paddle-guide
       - title: Safety First
         desc: 날씨 확인, PFD 사용, 리시 규칙, 셀프 리스큐 등 필수 안전 수칙을 다룹니다.
-        slug: safety-first
+        slug: sup-safety-guide
   - level: Intermediate
     color: from-blue-500 to-indigo-600
     badge: bg-blue-100 text-blue-700
     guides:
       - title: Touring Essentials
         desc: 수시간 패들링 계획 — 네비게이션, 수분 보충, 페이스 조절, 바람 예보 읽는 법.
-        slug: touring-essentials
+        slug: touring-sup-guide
       - title: Weather Reading
         desc: 해상 예보 해석, 구름 패턴 파악, 바람이 수면에 미치는 영향 이해하기.
-        slug: weather-reading
+        slug: weather-planning-water-sports
       - title: Navigation Basics
         desc: 해도 읽기, 나침반 사용, GPS 웨이포인트, 연안 패들링을 위한 경로 계획.
-        slug: navigation-basics
+        slug: sup-navigation-guide
       - title: Tidal Awareness
         desc: 조석 주기와 해류의 이해, 출항 시기와 항로에 미치는 영향 알아보기.
-        slug: tidal-awareness
+        slug: understanding-tides
   - level: Advanced
     color: from-purple-500 to-violet-600
     badge: bg-purple-100 text-purple-700
     guides:
       - title: Multi-Day Trip Planning
         desc: 원정 물류 — 장비 선택, 식량 계획, 안전 프로토콜, 비상 연락처.
-        slug: multi-day-trip-planning
+        slug: sup-travel-guide
       - title: Rescue Techniques
         desc: 오픈 워터를 위한 셀프 리스큐, T-리스큐, 토잉 프로토콜.
-        slug: rescue-techniques
+        slug: sup-self-rescue
       - title: Night Paddling
         desc: 야간 네비게이션 — 조명 요건, 경로 기억, 그룹 커뮤니케이션, 위험 인식.
-        slug: night-paddling
+        slug: ocean-safety-basics
   - level: Maintenance
     color: from-amber-500 to-orange-600
     badge: bg-amber-100 text-amber-700
     guides:
       - title: Cleaning & Care
         desc: 매 세션 후 민물 세척, UV 보호, 곰팡이 예방, 올바른 건조 테크닉.
-        slug: cleaning-and-care
+        slug: inflatable-sup-maintenance
       - title: Storage Guide
         desc: 팽창식 SUP 보드 보관 모범 사례 — 완전 공기 배출, 접기, 온도 관리, 보관 수명.
-        slug: storage-guide
+        slug: inflatable-sup-storage
       - title: Repair Basics
         desc: PVC 리페어 키트와 패치 테크닉으로 작은 펑크, 실밥 누수, 밸브 문제 해결하기.
-        slug: repair-basics
+        slug: inflatable-sup-repair
       - title: Valve Maintenance
         desc: 밸브 타입(Halkey-Roberts, Boston, Leafield) 구분, 이물질 제거, 고장난 스템 교체.
-        slug: valve-maintenance
+        slug: sup-pump-guide
 knowledge_center_tagline: Knowledge Center
 knowledge_center_title: 해양 장비 & 업계 가이드
 knowledge_center_subtitle: 해양 전문가, 플리트 운영자, 수상 스포츠 애호가를 위한 전문 지식과 구매 가이드.
@@ -105,7 +105,7 @@ knowledge_sections:
         href: /learn/water-safety
       - title: SUP Maintenance
         desc: 팽창식 SUP 보드의 세척, 보관, UV 보호, 수리.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
   - title: SUP Board Knowledge
     tagline: SUP Board Hub
     desc: SUP 보드 타입, 소재, 제조 공법, 유지보수, 안전을 다루는 기술 가이드.
@@ -134,7 +134,7 @@ knowledge_sections:
         href: /learn/sup
       - title: SUP Maintenance & Care
         desc: 팽창식 SUP 보드를 위한 세척, 보관, UV 보호, 수리 팁.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
       - title: Choosing Your First SUP
         desc: 체중, 실력 수준, 사용 목적에 맞는 스탠드업 패들보드를 고르는 초보자 가이드.
         href: /learn/sup

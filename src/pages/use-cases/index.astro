@@ -14,6 +14,7 @@ interface UseCaseEntry {
 }
 
 const d = useCasesData as any;
+const caseSlugMap: Record<string, string> = { family: 'family-recreation', outdoor: 'river-touring' };
 const useCases: UseCaseEntry[] = (d.cases ?? []).map((c: any) => ({
   id: c.id,
   title: c.title,
@@ -147,7 +148,7 @@ const metadata = {
       {
         allUseCases.map((uc) => (
           <a
-            href={`/use-cases/${uc.id}`}
+            href={`/use-cases/${caseSlugMap[uc.id] || uc.id}`}
             class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all hover:-translate-y-0.5 flex flex-col"
           >
             <div class="h-44 bg-gray-100 overflow-hidden">

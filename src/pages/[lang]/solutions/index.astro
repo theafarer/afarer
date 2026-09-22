@@ -26,7 +26,7 @@ const hero = page.hero ?? {};
 const stats = page.stats ?? {};
 const solutions = page.features3_solutions ?? {};
 const cta = page.cta ?? {};
-const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}` : h);
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 const localizedItems = solutions.items?.map((item: any) => ({
   ...item,
@@ -34,7 +34,7 @@ const localizedItems = solutions.items?.map((item: any) => ({
 }));
 
 const metadata = {
-  title: `Business Solutions — ${SITE.name} | SUP Equipment for Resorts, Retail & Rental`,
+  title: `Business Solutions 鈥?${SITE.name} | SUP Equipment for Resorts, Retail & Rental`,
   description:
     t('solutions.metaDesc') ||
     'Complete SUP business solutions for resorts, hotels, paddle clubs, rental operators, retail partners, distributors, and private label brands worldwide.',

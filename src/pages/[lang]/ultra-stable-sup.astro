@@ -1,0 +1,350 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { languages } from '~/i18n/config';
+import { localizeHref } from '~/i18n/routing';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+
+const metadata = {
+  title: fr(
+    'Ultra Stable SUP Board | Wide Inflatable Paddle Board | Afarer OEM Manufacturer',
+    'Paddle Extra-Stable | Planche de Paddle Gonflable Large | Fabricant OEM afarer'
+  ),
+  description: fr(
+    'Afarer ultra stable SUP boards — extra-wide inflatable paddle boards (34"+) for larger paddlers, yoga, fishing, and beginner confidence. Rock-solid stability on flatwater. OEM/ODM manufacturing available for brands, resorts, and clubs.',
+    'Planches de paddle extra-stables afarer — paddles gonflables extra-larges (86 cm et plus) pour les pagayeurs corpulents, le yoga, la pêche et la confiance des débutants. Stabilité à toute épreuve sur eau plate. Fabrication OEM/ODM disponible pour les marques, complexes hôteliers et clubs.'
+  ),
+  ignoreTitleTemplate: true,
+};
+const pageUrl = `https://afarer.com/${lang}/ultra-stable-sup/`;
+const today = '2026-07-27';
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="Article"
+    data={{
+      headline: fr(
+        'Ultra Stable SUP Board — Maximum Stability for Every Paddler',
+        'Planche de paddle extra-stable — Stabilité maximale pour tous les pagayeurs'
+      ),
+      description: metadata.description,
+      datePublished: today,
+      author: { '@type': 'Organization', name: 'Afarer' },
+      url: pageUrl,
+    }}
+  />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: fr('Home', 'Accueil'), item: `https://afarer.com/${lang}/` },
+        {
+          position: 2,
+          name: fr('Inflatable SUP Boards', 'Paddles Gonflables'),
+          item: `https://afarer.com/${lang}/inflatable-sup/`,
+        },
+        { position: 3, name: fr('Ultra Stable SUP', 'Paddle extra-stable'), item: pageUrl },
+      ],
+    }}
+  />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: fr('What is an ultra stable SUP board?', 'Qu’est-ce qu’une planche de paddle extra-stable ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'An ultra stable SUP board features an extra-wide deck (34+) and higher volume for maximum stability. Designed for larger paddlers, beginners, yoga practitioners, and anyone who prioritizes a solid, confidence-inspiring platform on the water.',
+              'Une planche de paddle extra-stable dispose d’un pont extra-large (86 cm et plus) et d’un volume accru pour une stabilité maximale. Conçue pour les pagayeurs corpulents, les débutants, les pratiquants de yoga et tous ceux qui privilégient une plateforme solide et rassurante sur l’eau.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('Who needs an ultra stable SUP?', 'Qui a besoin d’un paddle extra-stable ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Ultra stable SUPs are ideal for larger paddlers needing higher weight capacity, SUP yoga enthusiasts requiring a wide platform, anglers and photographers who stand while working, and beginners building confidence.',
+              'Les paddles extra-stables sont idéaux pour les pagayeurs corpulents ayant besoin d’une capacité de charge élevée, les adeptes de yoga sur paddle exigeant une plateforme large, les pêcheurs et photographes qui travaillent debout, ainsi que les débutants en quête de confiance.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('How wide should an ultra stable SUP be?', 'Quelle largeur pour un paddle extra-stable ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Ultra stable SUPs typically range from 34 to 36 inches wide. A 34-inch board suits most larger paddlers, while 35 to 36-inch boards provide maximum stability for yoga, fishing, and absolute beginner confidence.',
+              'Les paddles extra-stables mesurent généralement de 86 à 91 cm de large. Une planche de 86 cm convient à la plupart des pagayeurs corpulents, tandis que les planches de 89 à 91 cm offrent une stabilité maximale pour le yoga, la pêche et la confiance totale des débutants.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr(
+            'Are ultra stable SUPs slower than regular boards?',
+            'Les paddles extra-stables sont-ils plus lents que les planches classiques ?'
+          ),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. Wider boards create more drag and sacrifice some speed and tracking efficiency compared to standard-width boards. The trade-off is significantly better stability, which most users in this category prefer over speed.',
+              'Oui. Les planches plus larges créent plus de traînée et sacrifient une partie de la vitesse et de l’efficacité de trajectoire par rapport aux planches de largeur standard. En contrepartie, la stabilité est nettement meilleure — un compromis que la plupart des utilisateurs de cette catégorie privilégient par rapport à la vitesse.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr(
+            'Do you manufacture ultra stable SUPs for private label?',
+            'Fabriquez-vous des paddles extra-stables en marque blanche ?'
+          ),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. Afarer offers OEM/ODM manufacturing for ultra stable SUP boards with custom widths, deck graphics, traction pad options, and compliance documentation for brands and retailers worldwide.',
+              'Oui. afarer propose la fabrication OEM/ODM de planches de paddle extra-stables avec largeurs personnalisées, graphismes de pont, options d’antidérapant et documentation de conformité pour les marques et revendeurs du monde entier.'
+            ),
+          },
+        },
+      ],
+    }}
+  />
+
+  <section class="max-w-6xl mx-auto py-24 px-6">
+    <a
+      href={localizeHref('/inflatable-sup/', lang || 'en')}
+      class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-8 transition-colors"
+      >{fr('← SUP Product Center', '← Centre produits paddle')}</a
+    >
+    <div class="max-w-4xl">
+      <span class="text-xs font-semibold text-primary tracking-[0.25em] uppercase"
+        >{fr('SUP Category', 'Catégorie paddle')}</span
+      >
+      <h1 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-secondary leading-[1.1]">
+        {fr('Ultra Stable SUP Board', 'Planche de Paddle Extra-Stable')}
+      </h1>
+      <p class="mt-6 text-lg text-gray-500 max-w-3xl leading-relaxed">
+        {
+          fr(
+            'Ultra stable SUPs feature wider decks (34"+) and increased volume for paddlers who prioritize rock-solid stability above all else. Ideal for larger paddlers, SUP yoga practitioners, photography enthusiasts, and anyone who wants a platform that feels like standing on solid ground.',
+            'Les paddles extra-stables se caractérisent par des ponts plus larges (86 cm et plus) et un volume accru, pour les pagayeurs qui privilégient avant tout une stabilité à toute épreuve. Idéal pour les pagayeurs corpulents, les pratiquants de yoga sur paddle, les passionnés de photographie et tous ceux qui recherchent une plateforme donnant la sensation de se tenir sur un sol ferme.'
+          )
+        }
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">
+          {fr('Who Needs an Ultra Stable SUP?', 'Qui a besoin d’un paddle extra-stable ?')}
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center">
+          <div class="text-3xl mb-4">🧘</div>
+          <h3 class="text-lg font-bold text-secondary">{fr('Yoga & Fitness', 'Yoga & Fitness')}</h3>
+          <p class="mt-3 text-sm text-gray-500">
+            {
+              fr(
+                'A wide, stable platform lets you move through poses without worrying about balance. Perfect for SUP yoga and onboard workouts.',
+                'Une plateforme large et stable permet d’enchaîner les postures sans se soucier de l’équilibre. Parfaite pour le yoga sur paddle et les entraînements à bord.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center">
+          <div class="text-3xl mb-4">🧑</div>
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Larger Paddlers', 'Pagayeurs corpulents')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500">
+            {
+              fr(
+                'Higher weight capacity and wider beams provide the stability larger paddlers need for a comfortable, confident experience.',
+                'Une capacité de charge plus élevée et une largeur accrue offrent la stabilité dont les pagayeurs corpulents ont besoin pour une expérience confortable et sereine.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center">
+          <div class="text-3xl mb-4">🎣</div>
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Fishing & Photography', 'Pêche & Photographie')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500">
+            {
+              fr(
+                'Stand, kneel, or sit without tipping. The stable deck serves as a mobile platform for fishing, photography, or wildlife observation.',
+                'Debout, à genoux ou assis, sans risque de chavirer. Le pont stable sert de plateforme mobile pour la pêche, la photographie ou l’observation de la faune.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-8">
+        {fr('Ultra Stable Recommendations', 'Recommandations de paddles extra-stables')}
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <a
+          href={localizeHref('/products/sup-tropical-breeze', lang || 'en')}
+          class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all"
+        >
+          <div class="aspect-[16/9] bg-gradient-to-br from-amber-50 to-orange-50 overflow-hidden">
+            <img
+              src="https://assets.afarer.com/images/afarer/products/sup-series/sup-tropical-breeze-1-1200w.webp"
+              alt="Tropical Breeze Series"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+              Tropical Breeze Island Escape
+            </h3>
+            <p class="mt-2 text-sm text-gray-500">
+              {
+                fr(
+                  'Our widest platform SUP. Extra beam width provides unmatched primary stability. Ideal for larger paddlers, yoga, and leisure cruising.',
+                  'Notre paddle à la plateforme la plus large. La largeur de coque supplémentaire offre une stabilité primaire inégalée. Idéal pour les pagayeurs corpulents, le yoga et la croisière de loisir.'
+                )
+              }
+            </p>
+            <span class="inline-block mt-4 text-sm font-medium text-primary"
+              >{fr('View product →', 'Voir le produit →')}</span
+            >
+          </div>
+        </a>
+        <a
+          href={localizeHref('/products/sup-medusa-glow', lang || 'en')}
+          class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all"
+        >
+          <div class="aspect-[16/9] bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden">
+            <img
+              src="https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp"
+              alt="Medusa Glow Series"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+              Medusa Glow Series
+            </h3>
+            <p class="mt-2 text-sm text-gray-500">
+              {
+                fr(
+                  'Stable platform with yoga-friendly deck space. Glow-in-the-dark aesthetics for sunset and evening paddling sessions.',
+                  'Plateforme stable avec un espace de pont adapté au yoga. Esthétique phosphorescente pour les sorties au coucher du soleil et en soirée.'
+                )
+              }
+            </p>
+            <span class="inline-block mt-4 text-sm font-medium text-primary"
+              >{fr('View product →', 'Voir le produit →')}</span
+            >
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+          {fr('Stability Resources', 'Ressources sur la stabilité')}
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a
+          href={localizeHref('/research/sup-thickness-guide', lang || 'en')}
+          class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+        >
+          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+            {fr('SUP Thickness & Stability', 'Épaisseur du paddle & stabilité')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                'How board thickness impacts stability and performance.',
+                'Comment l’épaisseur de la planche influe sur la stabilité et les performances.'
+              )
+            }
+          </p>
+        </a>
+        <a
+          href={localizeHref('/compare/single-chamber-vs-multi-chamber', lang || 'en')}
+          class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+        >
+          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+            {fr('Multi-Chamber Safety', 'Sécurité multichambres')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                'Why chamber count matters for stability and safety.',
+                'Pourquoi le nombre de chambres compte pour la stabilité et la sécurité.'
+              )
+            }
+          </p>
+        </a>
+        <a
+          href={localizeHref('/compare/inflatable-vs-hardboard', lang || 'en')}
+          class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+        >
+          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+            {fr('Stability: Inflatable vs Hard', 'Stabilité : gonflable ou rigide')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                'Which type offers better stability for different uses.',
+                'Quel type offre la meilleure stabilité selon les usages.'
+              )
+            }
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+      {fr('Need Maximum Stability?', 'Besoin d’une stabilité maximale ?')}
+    </h2>
+    <p class="mt-4 text-lg text-gray-500">
+      {
+        fr(
+          'Contact our team for recommendations based on your weight, height, and paddling goals.',
+          'Contactez notre équipe pour des recommandations basées sur votre poids, votre taille et vos objectifs de paddle.'
+        )
+      }
+    </p>
+    <a
+      href={localizeHref('/contact', lang || 'en')}
+      class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+      >{fr('Get Personalized Advice', 'Obtenir des conseils personnalisés')} <span>→</span></a
+    >
+  </section>
+</Layout>

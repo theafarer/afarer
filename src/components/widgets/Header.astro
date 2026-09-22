@@ -56,6 +56,19 @@ const {
 
 const cleanPath = removeLang(new URL(Astro.url).pathname);
 
+// Language switcher target resolution: only link to a localized path when that
+// page was actually generated; otherwise fall back to the language home page.
+// See scripts/_gen-route-manifest.cjs (two-pass: manifest from previous dist/).
+import routeManifest from '~/i18n/generated/route-manifest.json';
+const availableRoutes: Set<string> = new Set(routeManifest);
+function langHref(locale: string): string {
+  let target = localizePath(cleanPath, locale);
+  if (target !== '/' && target.endsWith('/')) {
+    target = target.slice(0, -1);
+  }
+  return availableRoutes.has(target) ? target : `/${locale}`;
+}
+
 const navTextMap: Record<string, string> = {
   Products: 'nav.products',
   Learn: 'nav.learn',
@@ -175,6 +188,19 @@ const navTextMap: Record<string, string> = {
   'Download Catalog': 'nav.resourcesDownloadCatalog',
   'About Afarer': 'nav.about',
   'Get a Quote': 'cta.quote',
+  'Explore Afarer': 'nav.exploreAfarer',
+  'Technology & Materials': 'nav.technologyMaterials',
+  'Quality & Safety': 'nav.qualitySafety',
+  'Stories & Guides': 'nav.storiesGuides',
+  'Co-Brand': 'nav.coBrand',
+  'Co-Brand With Afarer': 'nav.coBrandWithAfarer',
+  'For Clubs & Resorts': 'nav.solutionsResorts',
+  'Country Partners': 'nav.countryPartners',
+  'Find a Distributor': 'nav.findDistributor',
+  'Become a Country Partner': 'nav.becomeCountryPartner',
+  'Warranty & Claims': 'nav.warrantyClaims',
+  'Downloads & Manuals': 'nav.downloadsManuals',
+  'Contact Support': 'nav.contactSupport',
 };
 
 function t(text: string | undefined, locale: string): string {
@@ -345,6 +371,7 @@ const currentLocale = getLangFromUrl(Astro.url);
               {actions.map((btnProps) => (
                 <Button
                   {...btnProps}
+                  text={t(btnProps.text, currentLocale)}
                   href={localizeHref(btnProps.href || '', currentLocale)}
                   class="ml-1 py-2 px-4 md:px-5 font-semibold shadow-none text-sm w-auto"
                 />
@@ -408,7 +435,7 @@ const currentLocale = getLangFromUrl(Astro.url);
           langs.map((l) => (
             <li>
               <a
-                href={localizePath(cleanPath, l.locale)}
+                href={langHref(l.locale)}
                 data-locale={l.locale}
                 data-lang-code={l.code}
                 data-lang-name={l.name}

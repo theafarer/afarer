@@ -47,7 +47,10 @@ const currentLang = getLangFromUrl(Astro.url);
               <>
                 {' '}
                 ·{' '}
-                <a class="hover:underline inline-block" href={getPermalink(post.category.slug, 'category')}>
+                <a
+                  class="hover:underline inline-block"
+                  href={`/${currentLang}/news${getPermalink(post.category.slug, 'category')}`}
+                >
                   {post.category.title}
                 </a>
               </>

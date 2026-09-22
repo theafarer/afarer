@@ -282,13 +282,7 @@ const brokenSorted = broken.sort((a, b) => a.url.localeCompare(b.url));
     <div
       class="px-5 py-3 border-t border-gray-200 dark:border-gray-800 text-xs grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 font-mono"
     >
-      {
-        known.map((u) => (
-          <a class="text-blue-600 hover:underline truncate" href={u} target="_blank" rel="noopener">
-            {u}
-          </a>
-        ))
-      }
+      {known.map((u) => <span class="text-gray-600 dark:text-gray-400 truncate">{u}</span>)}
     </div>
   </details>
 

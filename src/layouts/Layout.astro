@@ -27,6 +27,9 @@ import { getSeoSettings } from '~/utils/seo-settings';
 import langData from '~/data/site/languages.yaml';
 import { defaultLang, setLang } from '~/i18n/config';
 import { getLangFromUrl, removeLang, localizePath } from '~/i18n/utils';
+// Static route manifest from the previous build (scripts/_gen-route-manifest.cjs);
+// used to emit hreflang alternates only for languages where the page exists.
+import routeManifest from '~/i18n/generated/route-manifest.json';
 export interface Props {
   metadata?: MetaDataType;
 }
@@ -51,6 +54,19 @@ const pathname = Astro.url.pathname;
 const pathWithoutLang = removeLang(pathname);
 const currentLang = getLangFromUrl(Astro.url);
 const language = currentLang;
+// hreflang alternates: only for languages where this page was actually generated.
+const availableRoutes: Set<string> = new Set(routeManifest);
+const normalizePath = (p: string): string => (p !== '/' && p.endsWith('/') ? p.slice(0, -1) : p);
+const hreflangAlternates: Array<{ locale: string; target: string }> = enabledLangs
+  .map((l: any) => ({ locale: l.locale as string, target: normalizePath(localizePath(pathWithoutLang, l.locale)) }))
+  .filter((a: { locale: string; target: string }) => availableRoutes.has(a.target));
+const xDefaultTarget = normalizePath(localizePath(pathWithoutLang, defaultLang));
+if (!availableRoutes.has(xDefaultTarget)) {
+  // default-lang page missing but the un-prefixed root page exists (e.g. root-only EN guides)
+  if (availableRoutes.has(normalizePath(pathWithoutLang))) {
+    hreflangAlternates.push({ locale: 'x-default', target: normalizePath(pathWithoutLang) });
+  }
+}
 // Populate the generated per-language UI strings (small per-language modules,
 // statically imported in src/i18n/generated/ui-all.ts) for all components.
 setLang(currentLang);
@@ -70,20 +86,12 @@ const textDirection = language === 'ar' ? 'rtl' : defaultTextDir || 'ltr';
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
     <link rel="preconnect" href="https://assets.afarer.com" crossorigin />
 
+    {hreflangAlternates.map((a) => <link rel="alternate" hreflang={a.locale} href={`${siteUrlTrimmed}${a.target}`} />)}
     {
-      enabledLangs.map((l: any) => (
-        <link
-          rel="alternate"
-          hreflang={l.locale}
-          href={`${siteUrlTrimmed}${localizePath(pathWithoutLang, l.locale)}`}
-        />
-      ))
+      availableRoutes.has(xDefaultTarget) && (
+        <link rel="alternate" hreflang="x-default" href={`${siteUrlTrimmed}${xDefaultTarget}`} />
+      )
     }
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href={`${siteUrlTrimmed}${localizePath(pathWithoutLang, defaultLang)}`}
-    />
 
     <JsonLd
       type="Organization"

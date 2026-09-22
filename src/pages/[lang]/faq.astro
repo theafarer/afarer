@@ -5,8 +5,10 @@ import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import JsonLd from '~/components/common/JsonLd.astro';
 import Tldr from '~/components/common/Tldr.astro';
-import { faqs } from '~/data/faq';
-import { guides } from '~/data/guides';
+import { faqs as faqsEn } from '~/data/faq';
+import { faqsFr } from '~/data/faq.fr';
+import { faqsDe } from '~/data/faq.de';
+import { getGuidesForLang, getContentV2ForLang } from '~/i18n/localized-data';
 import { products } from '~/data/products';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
@@ -19,6 +21,9 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const faqs = lang === 'fr' ? faqsFr : lang === 'de' ? faqsDe : faqsEn;
+const guides = getGuidesForLang(lang);
+const contentV2 = getContentV2ForLang(lang);
 const metadata = {
   title: `FAQ — ${SITE.name}`,
   description:
@@ -96,12 +101,23 @@ const categories = [...new Set(faqs.map((f) => f.category))];
                       })}
                       {item.relatedGuides.map((slug) => {
                         const g = guides.find((gg) => gg.slug === slug);
-                        return g ? (
+                        if (g) {
+                          return (
+                            <a
+                              href={`/${lang}/guides/${slug}`}
+                              class="px-3 py-1 bg-sky-50 text-sky-700 rounded-full hover:bg-sky-100 transition-colors"
+                            >
+                              {g.title}
+                            </a>
+                          );
+                        }
+                        const v2 = contentV2.find((cc) => cc.slug === slug);
+                        return v2 ? (
                           <a
-                            href={`/${lang}/guides/${slug}`}
+                            href={`/${lang}/v2/${slug}`}
                             class="px-3 py-1 bg-sky-50 text-sky-700 rounded-full hover:bg-sky-100 transition-colors"
                           >
-                            {g.title}
+                            {v2.title}
                           </a>
                         ) : null;
                       })}

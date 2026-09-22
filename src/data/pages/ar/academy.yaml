@@ -18,58 +18,58 @@ categories:
     guides:
       - title: أساسيات SUP
         desc: تعلم أساسيات التجديف الوقوف —الوضعية، تقنية الضربة، والتوازن.
-        slug: sup - basics
+        slug: beginner-sup-guide
       - title: تقنيات المجذاف
         desc: الضربة الأمامية، الضربة الجانبية، ضربة السحب، والدعامة المنخفضة —أتقن حركات المجذاف الأساسية.
-        slug: تقنيات التجديف
+        slug: sup-paddle-guide
       - title: السلامة أولاً
         desc: ممارسات السلامة الأساسية بما في ذلك فحص الطقس، استخدام PFD، قواعد حبل الربط، والإنقاذ الذاتي.
-        slug: السلامة أولاً
+        slug: sup-safety-guide
   - level: متوسط
     color: from - blue -500 to - indigo -600
     badge: bg - blue -100 text - blue -700
     guides:
       - title: أساسيات الجولات
         desc: تخطيط جولات التجديف لعدة ساعات —الملاحة، الترطيب، السرعة، وقراءة توقعات الرياح.
-        slug: أساسيات الجولات السياحية
+        slug: touring-sup-guide
       - title: قراءة الطقس
         desc: تفسير التوقعات البحرية، تحديد أنماط السحب، وفهم تأثيرات الرياح على الماء.
-        slug: قراءة الطقس
+        slug: weather-planning-water-sports
       - title: أساسيات الملاحة
         desc: قراءة الخرائط، استخدام البوصلة، نقاط GPS، وتخطيط الطريق للتجديف الساحلي.
-        slug: أساسيات الملاحة
+        slug: sup-navigation-guide
       - title: الوعي بالمد والجزر
         desc: فهم دورات المد والجزر والتيارات وكيف تؤثر على توقيت الانطلاق والطريق.
-        slug: الوعي بالمد والجزر
+        slug: understanding-tides
   - level: متقدم
     color: من الأرجواني-500 إلى البنفسجي-600
     badge: bg - purple -100 text - purple -700
     guides:
       - title: تخطيط الرحلات متعددة الأيام
         desc: لوجستيات البعثة —اختيار المعدات، تخطيط الطعام، بروتوكولات السلامة، وجهات الاتصال في حالات الطوارئ.
-        slug: التخطيط للرحلات لعدة أيام
+        slug: sup-travel-guide
       - title: تقنيات الإنقاذ
         desc: الإنقاذ الذاتي، إنقاذ T، الإنقاذ الإسكيمو للكاياك، وبروتوكولات القطر في المياه المفتوحة.
-        slug: تقنيات الإنقاذ
+        slug: sup-self-rescue
       - title: التجديل الليلي
         desc: الملاحة بعد حلول الظلام —متطلبات الإضاءة، ذاكرة الطريق، التواصل الجماعي، والوعي بالمخاطر.
-        slug: التجديف الليلي
+        slug: ocean-safety-basics
   - level: الصيانة
     color: from - amber -500 to - orange -600
     badge: bg - amber -100 text - amber -700
     guides:
       - title: التنظيف والعناية
         desc: الشطف بالماء العذب، الحماية من الأشعة فوق البنفسجية، منع العفن، وتقنيات التجفيف المناسبة بعد كل جلسة.
-        slug: التنظيف والعناية
+        slug: inflatable-sup-maintenance
       - title: دليل التخزين
         desc: أفضل الممارسات لتخزين الألواح والقوارب القابلة للنفخ —التفريغ، الطي، التحكم في درجة الحرارة، والعمر الافتراضي.
-        slug: دليل التخزين
+        slug: inflatable-sup-storage
       - title: أساسيات الإصلاح
         desc: إصلاح الثقوب الصغيرة، تسربات الدرزات، ومشاكل الصمامات باستخدام مجموعات إصلاح PVC وتقنيات الرقعة.
-        slug: أساسيات الإصلاح
+        slug: inflatable-sup-repair
       - title: صيانة الصمامات
         desc: تحديد أنواع الصمامات (Halkey-Roberts، Boston، Leafield)، تنظيف الحطام، واستبدال السيقان التالفة.
-        slug: صيانة الصمامات
+        slug: sup-pump-guide
 knowledge_center_tagline: مركز المعرفة
 knowledge_center_title: أدلة المعدات والصناعة البحرية
 knowledge_center_subtitle: معرفة الخبراء وأدلة الشراء للمهنيين البحريين ومشغلي الأساطيل وعشاق الرياضات المائية.
@@ -105,7 +105,7 @@ knowledge_sections:
         href: /learn/water-safety
       - title: الصيانة الفرعية
         desc: تنظيف الألواح الفرعية القابلة للنفخ وتخزينها وحمايتها من الأشعة فوق البنفسجية وإصلاحها.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
   - title: معرفة مجلس الإدارة
     tagline: لوحة التجديف
     desc: الأدلة الفنية التي تغطي أنواع لوحات الدعم والمواد وطرق البناء والصيانة والسلامة.
@@ -134,7 +134,7 @@ knowledge_sections:
         href: /learn/sup
       - title: الصيانة والعناية
         desc: التنظيف والتخزين والحماية من الأشعة فوق البنفسجية ونصائح الإصلاح للألواح الفرعية القابلة للنفخ.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
       - title: اختيار مشوارك الأول
         desc: دليل المبتدئين لاختيار لوح التجديف المناسب لوزنك ومستوى مهارتك والاستخدام المقصود.
         href: /learn/sup

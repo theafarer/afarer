@@ -5,8 +5,8 @@ import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import JsonLd from '~/components/common/JsonLd.astro';
 import Tldr from '~/components/common/Tldr.astro';
-import { contentV2Records } from '~/data/content-v2';
-import { guides } from '~/data/guides';
+import { getContentV2ForLang, getGuidesForLang } from '~/i18n/localized-data';
+import type { ContentV2Record } from '~/data/content-v2';
 import { products } from '~/data/products';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
@@ -14,10 +14,10 @@ import { getUiForLang } from '~/i18n/generated/ui-all';
 export async function getStaticPaths() {
   const paths: Array<{
     params: { lang: string; slug: string };
-    props: { entry: (typeof contentV2Records)[number] };
+    props: { entry: ContentV2Record };
   }> = [];
   for (const lang of Object.keys(languages)) {
-    for (const entry of contentV2Records) {
+    for (const entry of getContentV2ForLang(lang)) {
       paths.push({ params: { lang, slug: entry.slug }, props: { entry } });
     }
   }
@@ -28,6 +28,9 @@ const { entry } = Astro.props;
 const { lang } = Astro.params;
 
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+
+const contentV2Records = getContentV2ForLang(lang);
+const guides = getGuidesForLang(lang);
 
 function notNull<T>(x: T | null | undefined): x is T {
   return x != null;
@@ -46,7 +49,10 @@ const isTierA = [
 ].includes(entry.slug);
 
 const metadata = {
-  title: `Best ${entry.title.replace(/\(.*?\)/g, '').trim()} — ${SITE.name}`,
+  title:
+    lang === 'fr' || lang === 'de'
+      ? `${entry.title.replace(/\(.*?\)/g, '').trim()} — ${SITE.name}`
+      : `Best ${entry.title.replace(/\(.*?\)/g, '').trim()} — ${SITE.name}`,
   description: entry.description,
 };
 

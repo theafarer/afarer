@@ -27,12 +27,13 @@ const categories = page.categories ?? {};
 const cta = page.cta ?? {};
 
 const metadata = {
-  title: `Learn — ${SITE.name} Water Sports Guides & Knowledge`,
+  title: page.meta?.title || `Learn — ${SITE.name} Water Sports Guides & Knowledge`,
   description:
+    page.meta?.description ||
     t('learn.metaDesc') ||
     'Guides, tutorials, and deep dives on SUP, water sports, and safety. Learn how to choose, use, and maintain your inflatable water adventure equipment.',
 };
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Learn' }];
+const crumbs = [{ name: t('breadcrumb.home') || 'Home', href: `/${lang}/` }, { name: hero.title || 'Learn' }];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>
@@ -53,7 +54,11 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Learn' }];
       {
         (featured.items || []).map((item: any) => (
           <a
-            href={item.href || '#'}
+            href={
+              item.href && item.href.startsWith('/') && !item.href.startsWith('//')
+                ? `/${lang}${item.href}`
+                : item.href || '#'
+            }
             class="group block p-6 rounded-2xl border border-gray-200 dark:border-slate-700 hover:shadow-lg transition-shadow"
           >
             <div class="w-10 h-10 bg-sky-50 dark:bg-sky-900/30 rounded-lg flex items-center justify-center text-sky-600">

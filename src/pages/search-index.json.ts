@@ -110,7 +110,7 @@ const staticPages: { url: string; title: string; excerpt: string; tags: string[]
     tags: ['faq', 'questions', 'answers', 'help', 'b2b', 'oem', 'support'],
   },
   {
-    url: '/whitepaper/oem-sup-manufacturing-guide',
+    url: '/en/whitepaper/oem-sup-manufacturing-guide',
     title: 'OEM SUP Manufacturing Guide — White Paper',
     excerpt:
       'Comprehensive guide to OEM inflatable SUP manufacturing: material selection, production processes, quality control, factory audits, and supply chain management.',

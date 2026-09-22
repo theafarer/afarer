@@ -4,7 +4,8 @@ export const prerender = true;
 import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import JsonLd from '~/components/common/JsonLd.astro';
-import { contentV2Records, type ContentV2Record } from '~/data/content-v2';
+import { getContentV2ForLang } from '~/i18n/localized-data';
+import type { ContentV2Record } from '~/data/content-v2';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 
@@ -16,6 +17,7 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const contentV2Records = getContentV2ForLang(lang);
 const metadata = {
   title: `Content Library —${SITE.name}`,
   description:

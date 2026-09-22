@@ -1,4 +1,7 @@
 export const LOCALIZED_ROUTES = new Set([
+  '/co-brand',
+  '/distributor-program',
+  '/request-quotation',
   '/disclaimer',
   '/privacy',
   '/terms',
@@ -49,6 +52,15 @@ export const LOCALIZED_ROUTES = new Set([
   '/oem-paddle',
   '/bateau-gonflable-fabricant',
   '/fournisseur-nautique',
+  '/inflatable-sup',
+  '/all-around-sup',
+  '/touring-sup',
+  '/yoga-sup',
+  '/kids-sup',
+  '/fishing-sup',
+  '/whitewater-sup',
+  '/ultra-stable-sup',
+  '/sup-accessories',
 ]);
 
 export const NON_LOCALIZED_ROUTES = new Set(['/products/compare']);

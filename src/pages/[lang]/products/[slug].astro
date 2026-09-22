@@ -21,7 +21,7 @@ import { getCanonical, getPermalink } from '~/utils/permalinks';
 import type { MetaData } from '~/types';
 import { products as productRecords } from '~/data/products';
 import { localizeProduct } from '~/utils/product-i18n';
-import { guides } from '~/data/guides';
+import { getGuidesForLang } from '~/i18n/localized-data';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 
@@ -53,7 +53,11 @@ const gallery = await Promise.all(
   }))
 );
 const related = await findRelatedProducts(product, 3);
-const relatedGuides = rec ? guides.filter((g) => g.relatedProducts.includes(rec.id)).slice(0, 3) : [];
+const relatedGuides = rec
+  ? getGuidesForLang(lang)
+      .filter((g) => g.relatedProducts.includes(rec.id))
+      .slice(0, 3)
+  : [];
 
 const defaultTitle = product.categoryLabel
   ? `${product.title} — ${product.categoryLabel} | ${SITE.name}`

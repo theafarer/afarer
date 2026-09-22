@@ -1,0 +1,495 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { languages } from '~/i18n/config';
+import { localizeHref } from '~/i18n/routing';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+
+const metadata = {
+  title: fr(
+    'Touring SUP Board | Long-Distance Inflatable Paddle Board | Afarer OEM Manufacturer',
+    'Paddle de Randonnée | Paddle Gonflable pour Longues Distances | Fabricant OEM afarer'
+  ),
+  description: fr(
+    'Afarer touring SUP boards — long-distance inflatable paddle boards with superior glide, pointed bows, and efficient tracking for lakes, coastal exploration, and multi-day expeditions. OEM/ODM manufacturing available for brands, resorts, and clubs.',
+    'Paddles de randonnée afarer — paddles gonflables pour longues distances avec un glissé supérieur, des proues pointues et une trajectoire efficace pour les lacs, l’exploration côtière et les expéditions de plusieurs jours. Fabrication OEM/ODM disponible pour les marques, complexes hôteliers et clubs.'
+  ),
+  ignoreTitleTemplate: true,
+};
+const pageUrl = `https://afarer.com/${lang}/touring-sup/`;
+const today = '2026-07-27';
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="Article"
+    data={{
+      headline: fr(
+        'Touring SUP Board — Engineered for Long-Distance Exploration',
+        'Paddle de Randonnée — Conçu pour l’Exploration sur Longues Distances'
+      ),
+      description: metadata.description,
+      datePublished: today,
+      author: { '@type': 'Organization', name: 'Afarer' },
+      url: pageUrl,
+    }}
+  />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: fr('Home', 'Accueil'), item: `https://afarer.com/${lang}/` },
+        {
+          position: 2,
+          name: fr('Inflatable SUP Boards', 'Paddles Gonflables'),
+          item: `https://afarer.com/${lang}/inflatable-sup/`,
+        },
+        { position: 3, name: fr('Touring SUP', 'Paddle de randonnée'), item: pageUrl },
+      ],
+    }}
+  />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: fr('What is a touring SUP board?', 'Qu’est-ce qu’un paddle de randonnée ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              "A touring SUP board is a longer inflatable paddle board (12'–14') designed for efficient long-distance paddling on open water. It features a pointed displacement bow, deeper keel lines for tracking, and higher volume for carrying expedition gear.",
+              'Un paddle de randonnée est un paddle gonflable plus long (3,65 à 4,27 m) conçu pour un pagayage efficace sur longues distances en eau libre. Il se caractérise par une proue à déplacement pointue, des quilles plus profondes pour la trajectoire et un volume supérieur pour transporter l’équipement d’expédition.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('Is a touring SUP good for beginners?', 'Un paddle de randonnée est-il adapté aux débutants ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Touring SUPs can be used by beginners on calm water, but their longer length makes them less maneuverable than all-around boards. Beginners comfortable with basic paddling technique will appreciate the superior tracking.',
+              'Les paddles de randonnée peuvent être utilisés par des débutants sur eau calme, mais leur longueur plus importante les rend moins maniables que les planches polyvalentes. Les débutants à l’aise avec les techniques de base de pagayage apprécieront leur trajectoire supérieure.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('How long should a touring SUP be?', 'Quelle longueur pour un paddle de randonnée ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              "Touring SUPs typically range from 12' to 14'. A 12' board works well for day trips and lighter paddlers. A 14' board offers maximum glide for long-distance expeditions and heavier paddlers.",
+              'Les paddles de randonnée mesurent généralement entre 3,65 et 4,27 m. Une planche de 3,65 m convient bien aux sorties à la journée et aux pagayeurs légers. Une planche de 4,27 m offre un glissé maximal pour les expéditions sur longues distances et les pagayeurs plus lourds.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr(
+            'Can you use a touring SUP for racing?',
+            'Peut-on utiliser un paddle de randonnée pour la compétition ?'
+          ),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. Many touring SUPs are suitable for recreational racing and endurance events. Dedicated racing boards are lighter and narrower, but touring boards offer a good balance of speed and stability.',
+              'Oui. De nombreux paddles de randonnée conviennent à la course récréative et aux épreuves d’endurance. Les planches de course dédiées sont plus légères et plus étroites, mais les planches de randonnée offrent un bon équilibre entre vitesse et stabilité.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr(
+            'Do you manufacture touring SUPs for private label?',
+            'Fabriquez-vous des paddles de randonnée en marque blanche ?'
+          ),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. Afarer offers OEM/ODM manufacturing for touring SUP boards with custom lengths, deck graphics, color matching, and compliance documentation for brands and retail partners worldwide.',
+              'Oui. afarer propose la fabrication OEM/ODM de planches de paddle de randonnée avec longueurs personnalisées, graphismes de pont, colorimétrage sur mesure et documentation de conformité pour les marques et partenaires de distribution du monde entier.'
+            ),
+          },
+        },
+      ],
+    }}
+  />
+
+  <section class="max-w-6xl mx-auto py-24 px-6">
+    <a
+      href={localizeHref('/inflatable-sup/', lang || 'en')}
+      class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-8 transition-colors"
+      >{fr('← SUP Product Center', '← Centre produits paddle')}</a
+    >
+    <div class="max-w-4xl">
+      <span class="text-xs font-semibold text-primary tracking-[0.25em] uppercase"
+        >{fr('SUP Category', 'Catégorie paddle')}</span
+      >
+      <h1 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-secondary leading-[1.1]">
+        {fr('Touring SUP Board', 'Paddle de Randonnée')}
+      </h1>
+      <p class="mt-6 text-lg text-gray-500 max-w-3xl leading-relaxed">
+        {
+          fr(
+            "Touring SUPs are purpose-built for long-distance paddling. Afarer touring boards feature longer hulls (12'–14'), pronounced displacement bows, and efficient glide profiles that track straight through open water. Whether crossing a lake or exploring coastal shorelines, a touring SUP delivers the speed and range that recreational boards cannot match.",
+            'Les paddles de randonnée sont conçus pour le pagayage sur longues distances. Les planches de randonnée afarer offrent des coques plus longues (3,65 à 4,27 m), des proues à déplacement prononcées et des profils de glissé efficaces qui maintiennent la trajectoire en eau libre. Que vous traversiez un lac ou exploriez les rivages côtiers, un paddle de randonnée offre la vitesse et l’autonomie que les planches récréatives ne peuvent égaler.'
+          )
+        }
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">
+          {fr('Why Choose a Touring SUP?', 'Pourquoi choisir un paddle de randonnée ?')}
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Superior Glide Efficiency', 'Efficacité de glissé supérieure')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Longer waterline length and a sharp displacement bow cut through chop and reduce drag. Each paddle stroke moves you farther with less effort.',
+                'Une ligne de flottaison plus longue et une proue à déplacement acérée traversent le clapot et réduisent la traînée. Chaque coup de pagaie vous fait avancer plus loin avec moins d’effort.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8">
+          <h3 class="text-lg font-bold text-secondary">{fr('Precise Tracking', 'Trajectoire précise')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Deep keel lines and straight hull profiles keep the board on course without constant correction strokes. Ideal for covering distance efficiently.',
+                'Des quilles profondes et des profils de coque droits maintiennent la planche cap sans coups de pagaie correctifs constants. Idéal pour couvrir la distance efficacement.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Expedition-Ready Capacity', 'Capacité prête pour l’expédition')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Higher volume and weight capacity allow carrying gear for multi-day trips. Bungee deck rigging secures dry bags and equipment.',
+                'Un volume et une capacité de charge supérieurs permettent d’emporter l’équipement pour des voyages de plusieurs jours. Les élastiques de pont fixent les sacs étanches et le matériel.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-8">
+        {fr('Best Touring SUP Products', 'Meilleurs paddles de randonnée')}
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <a
+          href={localizeHref('/products/sup-ocean-pulse', lang || 'en')}
+          class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all"
+        >
+          <div class="aspect-[16/9] bg-gradient-to-br from-indigo-50 to-blue-50 overflow-hidden">
+            <img
+              src="https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-pulse-1-1200w.webp"
+              alt="Ocean Pulse Series"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+              Ocean Pulse Series
+            </h3>
+            <p class="mt-2 text-sm text-gray-500">
+              {
+                fr(
+                  "Performance touring SUP with 12' hull, displacement nose, and intermediate skill rating. Ideal for fitness paddling and coastal exploration.",
+                  'Paddle de randonnée performant avec une coque de 3,65 m, une proue à déplacement et un niveau intermédiaire. Idéal pour le paddle fitness et l’exploration côtière.'
+                )
+              }
+            </p>
+            <span class="inline-block mt-4 text-sm font-medium text-primary"
+              >{fr('View product →', 'Voir le produit →')}</span
+            >
+          </div>
+        </a>
+        <a
+          href={localizeHref('/products/sup-ocean-voyager', lang || 'en')}
+          class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all"
+        >
+          <div class="aspect-[16/9] bg-gradient-to-br from-sky-50 to-cyan-50 overflow-hidden">
+            <img
+              src="https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp"
+              alt="Ocean Voyager Series"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+              Ocean Voyager Series
+            </h3>
+            <p class="mt-2 text-sm text-gray-500">
+              {
+                fr(
+                  'Advanced touring SUP for experienced paddlers. Longer hull, aggressive displacement bow, designed for open-water expeditions.',
+                  'Paddle de randonnée avancé pour pagayeurs expérimentés. Coque plus longue, proue à déplacement agressive, conçu pour les expéditions en eau libre.'
+                )
+              }
+            </p>
+            <span class="inline-block mt-4 text-sm font-medium text-primary"
+              >{fr('View product →', 'Voir le produit →')}</span
+            >
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">
+          {fr('Who Is a Touring SUP For?', 'Pour qui est le paddle de randonnée ?')}
+        </h2>
+        <p class="mt-4 text-lg text-gray-500">
+          {
+            fr(
+              'Purpose-built for paddlers who want to cover distance.',
+              'Conçu pour les pagayeurs qui veulent couvrir de la distance.'
+            )
+          }
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">{fr('Distance Paddlers', 'Pagayeurs de distance')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'If you regularly paddle 5–15 miles per session, a touring SUP reduces fatigue and makes each stroke count. Superior glide means more water covered with less effort.',
+                'Si vous pagayez régulièrement 8 à 24 km par séance, un paddle de randonnée réduit la fatigue et rend chaque coup de pagaie plus efficace. Un glissé supérieur signifie plus de distance couverte avec moins d’effort.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Expedition & Multi-Day Trips', 'Expéditions & voyages de plusieurs jours')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Higher volume and weight capacity allow carrying camping gear, food, and water for overnight trips. Bungee deck rigging secures dry bags and equipment.',
+                'Un volume et une capacité de charge supérieurs permettent d’emporter le matériel de camping, la nourriture et l’eau pour les sorties avec nuitée. Les élastiques de pont fixent les sacs étanches et le matériel.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Fitness-Focused Paddlers', 'Pagayeurs orientés fitness')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Longer waterline and efficient hull design provide a better workout at higher speeds. Touring SUPs reward proper technique with noticeably faster paddling.',
+                'Une ligne de flottaison plus longue et une coque au design efficace offrent un meilleur entraînement à vitesse plus élevée. Les paddles de randonnée récompensent la bonne technique par un pagayage nettement plus rapide.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Resort & Rental Programs', 'Programmes de complexes hôteliers & de location')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Guided tours and excursion programs benefit from touring SUPs. Their tracking and efficiency make group paddling easier. OEM branding available for custom programs.',
+                'Les visites guidées et les programmes d’excursion bénéficient des paddles de randonnée. Leur trajectoire et leur efficacité facilitent le pagayage en groupe. Marquage OEM disponible pour des programmes personnalisés.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OEM Section -->
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">
+        {fr('OEM/ODM Manufacturing for Touring SUPs', 'Fabrication OEM/ODM de paddles de randonnée')}
+      </h2>
+      <p class="text-lg text-gray-500 leading-relaxed mb-8">
+        {
+          fr(
+            'Afarer manufactures touring SUP boards for global brands, expedition outfitters, and retail chains. Our drop-stitch production lines produce CE-certified touring boards with custom length options, deck graphics, and packaging. MOQ from 50 units. Lead times from 30 days.',
+            'afarer fabrique des planches de paddle de randonnée pour les marques internationales, les organisateurs d’expéditions et les chaînes de distribution. Nos lignes de production drop-stitch produisent des planches de randonnée certifiées CE avec options de longueur personnalisée, graphismes de pont et emballages. MOQ à partir de 50 unités. Délais de production à partir de 30 jours.'
+          )
+        }
+      </p>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">{fr('Custom', 'Sur mesure')}</span>
+          <p class="mt-1 text-sm text-gray-500">
+            {fr('Length, graphics, color, packaging', 'Longueur, graphismes, couleur, emballage')}
+          </p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">50+</span>
+          <p class="mt-1 text-sm text-gray-500">{fr('Units minimum order', 'Unités minimum de commande')}</p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">{fr('30 Days', '30 Jours')}</span>
+          <p class="mt-1 text-sm text-gray-500">{fr('Typical lead time', 'Délai de production habituel')}</p>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <a
+          href={localizeHref('/oem-odm-manufacturer', lang || 'en')}
+          class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+          >{fr('Request OEM Quote', 'Demander un devis OEM')} <span>→</span></a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        {fr('Touring SUP — Frequently Asked Questions', 'Paddle de Randonnée — Questions Fréquentes')}
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        {
+          fr(
+            'Common questions about selecting, using, and manufacturing touring paddle boards.',
+            'Questions courantes sur le choix, l’utilisation et la fabrication de paddles de randonnée.'
+          )
+        }
+      </p>
+      <div class="space-y-4">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('What is a touring SUP board?', 'Qu’est-ce qu’un paddle de randonnée ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                "A touring SUP board is a longer inflatable paddle board (12'–14') designed for efficient long-distance paddling on open water. It features a pointed displacement bow, deeper keel lines for tracking, and higher volume for carrying expedition gear.",
+                'Un paddle de randonnée est un paddle gonflable plus long (3,65 à 4,27 m) conçu pour un pagayage efficace sur longues distances en eau libre. Il se caractérise par une proue à déplacement pointue, des quilles plus profondes pour la trajectoire et un volume supérieur pour transporter l’équipement d’expédition.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('Is a touring SUP good for beginners?', 'Un paddle de randonnée est-il adapté aux débutants ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Touring SUPs can be used by beginners on calm water, but their longer length makes them less maneuverable than all-around boards. Beginners comfortable with basic paddling technique will appreciate the superior tracking.',
+                'Les paddles de randonnée peuvent être utilisés par des débutants sur eau calme, mais leur longueur plus importante les rend moins maniables que les planches polyvalentes. Les débutants à l’aise avec les techniques de base de pagayage apprécieront leur trajectoire supérieure.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('How long should a touring SUP be?', 'Quelle longueur pour un paddle de randonnée ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                "Touring SUPs typically range from 12' to 14'. A 12' board works well for day trips and lighter paddlers. A 14' board offers maximum glide for long-distance expeditions and heavier paddlers.",
+                'Les paddles de randonnée mesurent généralement entre 3,65 et 4,27 m. Une planche de 3,65 m convient bien aux sorties à la journée et aux pagayeurs légers. Une planche de 4,27 m offre un glissé maximal pour les expéditions sur longues distances et les pagayeurs plus lourds.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {
+              fr(
+                'Can you use a touring SUP for racing?',
+                'Peut-on utiliser un paddle de randonnée pour la compétition ?'
+              )
+            }
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Yes. Many touring SUPs are suitable for recreational racing and endurance events. Dedicated racing boards are lighter and narrower, but touring boards offer a good balance of speed and stability.',
+                'Oui. De nombreux paddles de randonnée conviennent à la course récréative et aux épreuves d’endurance. Les planches de course dédiées sont plus légères et plus étroites, mais les planches de randonnée offrent un bon équilibre entre vitesse et stabilité.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {
+              fr(
+                'Do you manufacture touring SUPs for private label?',
+                'Fabriquez-vous des paddles de randonnée en marque blanche ?'
+              )
+            }
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Yes. Afarer offers OEM/ODM manufacturing for touring SUP boards with custom lengths, deck graphics, color matching, and compliance documentation for brands and retail partners worldwide.',
+                'Oui. afarer propose la fabrication OEM/ODM de planches de paddle de randonnée avec longueurs personnalisées, graphismes de pont, colorimétrage sur mesure et documentation de conformité pour les marques et partenaires de distribution du monde entier.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related CTA -->
+  <section class="max-w-6xl mx-auto py-16 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+      {fr('Explore Further with a Touring SUP', 'Explorez plus loin avec un paddle de randonnée')}
+    </h2>
+    <p class="mt-4 text-lg text-gray-500">
+      {
+        fr(
+          'Contact our team for bulk pricing, OEM options, or technical specifications.',
+          'Contactez notre équipe pour les tarifs de gros, les options OEM ou les spécifications techniques.'
+        )
+      }
+    </p>
+    <a
+      href={localizeHref('/contact', lang || 'en')}
+      class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+    >
+      {fr('Inquire About Touring SUPs', 'Se renseigner sur les paddles de randonnée')}
+      <span>→</span>
+    </a>
+  </section>
+</Layout>

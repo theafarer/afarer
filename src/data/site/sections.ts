@@ -70,15 +70,19 @@ export const SITE_SECTIONS: SiteSection[] = [
     path: '/compare/afarer-vs-traditional-manufacturers',
     sitemap: { entity: 'afarer-vs-traditional', type: 'compare', priority: '0.7' },
   },
-  { label: 'SUP Basics', path: '/learn/sup-basics', sitemap: { entity: 'sup-basics', type: 'guide', priority: '0.8' } },
+  {
+    label: 'SUP Basics',
+    path: '/en/learn/sup-basics',
+    sitemap: { entity: 'sup-basics', type: 'guide', priority: '0.8' },
+  },
   {
     label: 'Inflatable Technology',
-    path: '/learn/inflatable-technology',
+    path: '/en/learn/inflatable-technology',
     sitemap: { entity: 'inflatable-technology', type: 'guide', priority: '0.7' },
   },
   {
     label: 'Water Sports Safety',
-    path: '/learn/safety-in-water-sports',
+    path: '/en/learn/safety-in-water-sports',
     sitemap: { entity: 'safety-water-sports', type: 'guide', priority: '0.7' },
   },
   {
@@ -123,17 +127,17 @@ export const SITE_SECTIONS: SiteSection[] = [
   },
   {
     label: 'Drop-Stitch Core Technology',
-    path: '/learn/drop-stitch-core',
+    path: '/en/learn/drop-stitch-core',
     sitemap: { entity: 'drop-stitch-core', type: 'guide', priority: '0.7' },
   },
   {
     label: 'Intermediate Paddling Techniques',
-    path: '/learn/intermediate-techniques',
+    path: '/en/learn/intermediate-techniques',
     sitemap: { entity: 'intermediate-techniques', type: 'guide', priority: '0.6' },
   },
   {
     label: 'SUP Size Guide',
-    path: '/learn/sup-size-guide',
+    path: '/en/learn/sup-size-guide',
     sitemap: { entity: 'sup-size-guide-learn', type: 'guide', priority: '0.8' },
   },
   {
@@ -148,7 +152,7 @@ export const SITE_SECTIONS: SiteSection[] = [
   },
   {
     label: 'Certifications & Compliance',
-    path: '/certifications',
+    path: '/en/certifications',
     sitemap: { entity: 'certifications', type: 'support', priority: '0.6' },
   },
   {
@@ -168,12 +172,12 @@ export const SITE_SECTIONS: SiteSection[] = [
   },
   {
     label: 'Brand Team',
-    path: '/brand/team',
+    path: '/en/brand/team',
     sitemap: { entity: 'brand-team', type: 'brand', priority: '0.5' },
   },
   {
     label: 'Partners',
-    path: '/partners',
+    path: '/en/partners',
     sitemap: { entity: 'partners', type: 'service', priority: '0.5' },
   },
 ];

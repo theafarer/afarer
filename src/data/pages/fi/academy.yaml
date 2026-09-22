@@ -18,58 +18,58 @@ categories:
     guides:
       - title: SUP-perusteet
         desc: Opi seisontamelontalautailun perusteet —asento, melan veto ja tasapaino.
-        slug: sup-basics
+        slug: beginner-sup-guide
       - title: Melatekniikat
         desc: Eteenpäin veto, kaariveto, sivuveto ja matala tuki —hallitse olennaiset melontaliikkeet.
-        slug: paddle-techniques
+        slug: sup-paddle-guide
       - title: Turvallisuus ensin
         desc: Keskeiset turvallisuuskäytännöt, mukaan lukien säätarkistukset, pelastusliivien käyttö, melan narusäännöt ja itsensä pelastaminen.
-        slug: safety-first
+        slug: sup-safety-guide
   - level: Keskitaso
     color: from-blue-500 to-indigo-600
     badge: bg-blue-100 text-blue-700
     guides:
       - title: Retkeilyn perusteet
         desc: Monen tunnin melontaretkien suunnittelu —navigointi, nesteytys, rytmitys ja tuuliennusteiden lukeminen.
-        slug: touring-essentials
+        slug: touring-sup-guide
       - title: Säätilan lukeminen
         desc: Tulkitse merisääennusteita, tunnista pilvikuviot ja ymmärrä tuulen vaikutukset veteen.
-        slug: weather-reading
+        slug: weather-planning-water-sports
       - title: Navigoinnin perusteet
         desc: Kartanluku, kompassin käyttö, GPS-reittipisteet ja reittisuunnittelu rannikkomelontaan.
-        slug: navigation-basics
+        slug: sup-navigation-guide
       - title: Vuorovesitietoisuus
         desc: Vuorovesijaksojen, virtausten ja niiden vaikutuksen ymmärtäminen lähtöaikaan ja reititykseen.
-        slug: tidal-awareness
+        slug: understanding-tides
   - level: Edistynyt
     color: from-purple-500 to-violet-600
     badge: bg-purple-100 text-purple-700
     guides:
       - title: Monipäiväisen retken suunnittelu
         desc: Retkikunnan logistiikka —varustevalinta, ruokasuunnittelu, turvallisuusprotokollat ja hätäyhteystiedot.
-        slug: multi-day-trip-planning
+        slug: sup-travel-guide
       - title: Pelastustekniikat
         desc: Itsensä pelastaminen, T-pelastus, eskimo-pelastus kajakeille ja hinausprotokollat avovedessä.
-        slug: rescue-techniques
+        slug: sup-self-rescue
       - title: Yömelonta
         desc: Navigointi pimeällä —valaistusvaatimukset, reittimuisti, ryhmäviestintä ja vaaratietoisuus.
-        slug: night-paddling
+        slug: ocean-safety-basics
   - level: Ylläpito
     color: from-amber-500 to-orange-600
     badge: bg-amber-100 text-amber-700
     guides:
       - title: Puhdistus ja hoito
         desc: Makealla vedellä huuhtelu, UV-suojaus, homeen esto ja oikeat kuivaustekniikat jokaisen käyttökerran jälkeen.
-        slug: cleaning-and-care
+        slug: inflatable-sup-maintenance
       - title: Säilytysohje
         desc: Parhaat käytännöt kumilautojen ja -veneiden säilytykseen —tyhjennys, taittelu, lämpötilan hallinta ja säilyvyys.
-        slug: storage-guide
+        slug: inflatable-sup-storage
       - title: Korjauksen perusteet
         desc: Korjaa pienet puhkeamat, saumavuodot ja venttiiliongelmat PVC-korjaussarjoilla ja paikkaustekniikoilla.
-        slug: repair-basics
+        slug: inflatable-sup-repair
       - title: Venttiilien huolto
         desc: Tunnista venttiilityypit (Halkey-Roberts, Boston, Leafield), puhdista roskat ja vaihda vialliset varret.
-        slug: valve-maintenance
+        slug: sup-pump-guide
 knowledge_center_tagline: Tietokeskus
 knowledge_center_title: Meri- ja teollisuusalan oppaat
 knowledge_center_subtitle: Asiantuntijatietoa ja ostooppaita merenkulkualan ammattilaisille, laivaston ylläpitäjille ja vesilajien harrastajille.
@@ -105,7 +105,7 @@ knowledge_sections:
         href: /learn/water-safety
       - title: SUP-lautojen huolto
         desc: Puhdistus, säilytys, UV-suojaus ja ilmatäytteisten SUP-lautojen korjaus.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
   - title: SUP-lautaopas
     tagline: SUP-lautojen keskus
     desc: Tekniset oppaat SUP-lautatyyppien, materiaalien, valmistusmenetelmien, huollon ja turvallisuuden kattavuudella.
@@ -134,7 +134,7 @@ knowledge_sections:
         href: /learn/sup
       - title: SUP-laudan huolto ja hoito
         desc: Vinkkejä puhdistukseen, säilytykseen, UV-suojaukseen ja korjaukseen täytettäville SUP-laudoille.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
       - title: Ensimmäisen SUP-lautan valinta
         desc: Aloittelijan opas oikean stand-up paddleboardin valintaan painon, taitotason ja käyttötarkoituksen mukaan.
         href: /learn/sup

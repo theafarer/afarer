@@ -1,0 +1,600 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { languages } from '~/i18n/config';
+import { localizeHref } from '~/i18n/routing';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+
+const metadata = {
+  title: fr(
+    'SUP Yoga Board | Best Inflatable Paddle Board for Yoga | Afarer OEM Manufacturer',
+    'Planche de Paddle Yoga | Meilleur Paddle Gonflable pour le Yoga | Fabricant OEM afarer'
+  ),
+  description: fr(
+    'Afarer SUP yoga boards — wide, stable inflatable paddle boards designed for yoga and meditation on the water. Soft EVA decks, spacious platforms, CE certified. OEM/ODM manufacturing available for brands, resorts, and studios.',
+    'Planches de paddle yoga afarer — paddles gonflables larges et stables conçus pour le yoga et la méditation sur l’eau. Ponts EVA souples, plateformes spacieuses, certification CE. Fabrication OEM/ODM disponible pour les marques, complexes hôteliers et studios.'
+  ),
+  ignoreTitleTemplate: true,
+};
+const pageUrl = `https://afarer.com/${lang}/yoga-sup/`;
+const today = '2026-07-27';
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="Article"
+    data={{
+      headline: fr(
+        'SUP Yoga Board — Find Your Flow on the Water',
+        'Planche de Paddle Yoga — Trouvez votre Flow sur l’eau'
+      ),
+      description: metadata.description,
+      datePublished: today,
+      author: { '@type': 'Organization', name: 'Afarer' },
+      url: pageUrl,
+    }}
+  />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: fr('Home', 'Accueil'), item: `https://afarer.com/${lang}/` },
+        {
+          position: 2,
+          name: fr('Inflatable SUP Boards', 'Paddles Gonflables'),
+          item: `https://afarer.com/${lang}/inflatable-sup/`,
+        },
+        { position: 3, name: fr('SUP Yoga Board', 'Planche de Paddle Yoga'), item: pageUrl },
+      ],
+    }}
+  />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: fr(
+            'What makes a SUP board good for yoga?',
+            'Qu’est-ce qui rend une planche de paddle adaptée au yoga ?'
+          ),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'A SUP yoga board needs a wide stable platform (33-36 inches), soft EVA foam deck traction for barefoot comfort, and sufficient length for full-body poses. Stability is the most important factor - the wider the board, the easier it is to hold poses.',
+              'Une planche de paddle yoga nécessite une plateforme large et stable (84 à 91 cm), un antidérapant en mousse EVA souple pour le confort des pieds nus et une longueur suffisante pour les postures du corps entier. La stabilité est le facteur le plus important — plus la planche est large, plus il est facile de tenir les postures.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr(
+            'Is SUP yoga harder than regular yoga?',
+            'Le yoga sur paddle est-il plus difficile que le yoga classique ?'
+          ),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'SUP yoga adds an element of balance challenge not found in studio practice. The unstable surface engages more stabilizer muscles, making even basic poses more intense. Many practitioners find it deepens body awareness and focus.',
+              'Le yoga sur paddle ajoute un défi d’équilibre absent de la pratique en studio. La surface instable sollicite davantage les muscles stabilisateurs, rendant même les postures de base plus intenses. De nombreux pratiquants constatent que cela approfondit la conscience corporelle et la concentration.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('What SUP size is best for yoga?', 'Quelle taille de paddle pour le yoga ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'The best yoga SUP is 10 to 11 feet long and 33 to 36 inches wide. Extra width provides the stability needed for standing poses and smooth transitions between postures.',
+              'Le meilleur paddle de yoga mesure 3,00 à 3,35 m de long et 84 à 91 cm de large. La largeur supplémentaire offre la stabilité nécessaire pour les postures debout et des transitions fluides entre les postures.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('Can beginners do SUP yoga?', 'Les débutants peuvent-ils pratiquer le yoga sur paddle ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. Beginners should start with seated and kneeling poses on a wide, stable board in calm flat water. As confidence grows, progress to standing poses.',
+              'Oui. Les débutants devraient commencer par des postures assises et à genoux sur une planche large et stable dans une eau plate et calme. À mesure que la confiance grandit, passez aux postures debout.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr(
+            'Do you manufacture yoga SUPs for private label?',
+            'Fabriquez-vous des paddles de yoga en marque blanche ?'
+          ),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. Afarer offers OEM/ODM manufacturing for SUP yoga boards with custom deck pad colors, graphics, and packaging for yoga brands, studios, and resort wellness programs worldwide.',
+              'Oui. afarer propose la fabrication OEM/ODM de planches de paddle yoga avec couleurs de pont EVA personnalisées, graphismes et emballages sur mesure pour les marques de yoga, studios et programmes bien-être de complexes hôteliers du monde entier.'
+            ),
+          },
+        },
+      ],
+    }}
+  />
+
+  <section class="max-w-6xl mx-auto py-24 px-6">
+    <a
+      href={localizeHref('/inflatable-sup/', lang || 'en')}
+      class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-8 transition-colors"
+      >{fr('← SUP Product Center', '← Centre produits paddle')}</a
+    >
+    <div class="max-w-4xl">
+      <span class="text-xs font-semibold text-primary tracking-[0.25em] uppercase"
+        >{fr('SUP Category', 'Catégorie paddle')}</span
+      >
+      <h1 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-secondary leading-[1.1]">
+        {fr('SUP Yoga Board', 'Planche de Paddle Yoga')}
+      </h1>
+      <p class="mt-6 text-lg text-gray-500 max-w-3xl leading-relaxed">
+        {
+          fr(
+            'SUP yoga combines the mindfulness of yoga with the gentle challenge of balancing on water. Afarer SUP yoga boards provide the wide, stable platform needed to move through sun salutations, standing poses, and seated postures without distraction. Soft EVA traction decks keep you comfortable through every pose.',
+            'Le yoga sur paddle allie la pleine conscience du yoga au doux défi de l’équilibre sur l’eau. Les planches de paddle yoga afarer offrent la plateforme large et stable nécessaire pour enchaîner salutations au soleil, postures debout et postures assises sans distraction. Les ponts antidérapants en EVA souple vous gardent confortable dans chaque posture.'
+          )
+        }
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-secondary text-center mb-16">
+        {fr('Why an Afarer SUP Yoga Board?', 'Pourquoi choisir une planche de paddle yoga afarer ?')}
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl border border-gray-200 p-6 text-center">
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg class="w-7 h-7 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
+              ></path></svg
+            >
+          </div>
+          <h3 class="font-semibold text-gray-900">{fr('Spacious Deck', 'Pont spacieux')}</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                'Extra width provides ample space for yoga poses, transitions, and equipment.',
+                'La largeur supplémentaire offre un espace généreux pour les postures de yoga, les transitions et les accessoires.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-200 p-6 text-center">
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-50 to-pink-100 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg class="w-7 h-7 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg
+            >
+          </div>
+          <h3 class="font-semibold text-gray-900">{fr('Soft EVA Traction', 'Antidérapant EVA souple')}</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                'Comfortable closed-cell foam deck pad provides grip and cushion for barefoot practice.',
+                'Le tapis de pont en mousse à cellules fermées offre adhérence et amorti pour la pratique pieds nus.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-200 p-6 text-center">
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg class="w-7 h-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg
+            >
+          </div>
+          <h3 class="font-semibold text-gray-900">{fr('Ultra-Stable Platform', 'Plateforme ultra-stable')}</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                'Wide beam and flat hull design minimize wobble so you can focus on your practice.',
+                'La largeur généreuse et la coque plate minimisent le balancement pour que vous puissiez vous concentrer sur votre pratique.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-200 p-6 text-center">
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-yellow-50 to-amber-100 flex items-center justify-center mx-auto mb-4"
+          >
+            <svg class="w-7 h-7 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              ></path></svg
+            >
+          </div>
+          <h3 class="font-semibold text-gray-900">{fr('Sunset Ready', 'Prête au coucher de soleil')}</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              fr(
+                'Lightweight and portable — carry your yoga studio to any calm water at any time of day.',
+                'Légère et portable — emportez votre studio de yoga sur n’importe quelle eau calme, à toute heure du jour.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-8">
+        {fr('Best SUP Yoga Boards', 'Meilleures planches de paddle yoga')}
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <a
+          href={localizeHref('/products/sup-medusa-glow', lang || 'en')}
+          class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all"
+        >
+          <div class="aspect-[16/9] bg-gradient-to-br from-purple-50 to-pink-50 overflow-hidden">
+            <img
+              src="https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp"
+              alt="Medusa Glow Series"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+              Medusa Glow Series
+            </h3>
+            <p class="mt-2 text-sm text-gray-500">
+              {
+                fr(
+                  'Designed for yoga with glow-in-the-dark aesthetics. Wide stable platform, soft EVA deck, perfect for sunset and evening practice sessions.',
+                  'Conçue pour le yoga avec une esthétique phosphorescente. Plateforme large et stable, pont en EVA souple, parfaite pour les séances au coucher du soleil et en soirée.'
+                )
+              }
+            </p>
+            <span class="inline-block mt-4 text-sm font-medium text-primary"
+              >{fr('View product →', 'Voir le produit →')}</span
+            >
+          </div>
+        </a>
+        <a
+          href={localizeHref('/products/sup-flowing-lotus', lang || 'en')}
+          class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all"
+        >
+          <div class="aspect-[16/9] bg-gradient-to-br from-rose-50 to-pink-50 overflow-hidden">
+            <img
+              src="https://assets.afarer.com/images/afarer/products/sup-series/sup-flowing-lotus-1-1200w.webp"
+              alt="Flowing Lotus Series"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+              Flowing Lotus Series
+            </h3>
+            <p class="mt-2 text-sm text-gray-500">
+              {
+                fr(
+                  'The ultimate SUP yoga and meditation board. Peaceful lotus aesthetics with a spacious deck for seated and standing poses.',
+                  'La planche ultime de paddle yoga et de méditation. Esthétique lotus apaisante avec un pont spacieux pour les postures assises et debout.'
+                )
+              }
+            </p>
+            <span class="inline-block mt-4 text-sm font-medium text-primary"
+              >{fr('View product →', 'Voir le produit →')}</span
+            >
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">
+          {fr('Who Is a SUP Yoga Board For?', 'Pour qui est la planche de paddle yoga ?')}
+        </h2>
+        <p class="mt-4 text-lg text-gray-500">
+          {
+            fr(
+              'Designed for yogis who want to take their practice beyond the studio.',
+              'Conçue pour les yogis qui veulent pousser leur pratique au-delà du studio.'
+            )
+          }
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">{fr('Studio Yogis', 'Yogis de studio')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Take your mat practice to the water. The unstable surface deepens engagement in every pose, building core strength and balance that transforms your studio practice.',
+                'Emmenez votre pratique sur tapis sur l’eau. La surface instable approfondit l’engagement dans chaque posture, développant force du tronc et équilibre qui transforment votre pratique en studio.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Yoga Teachers & Retreat Leaders', 'Professeurs de yoga & animateurs de retraites')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Offer unique SUP yoga classes and retreats. A fleet of yoga SUPs lets you host sessions on lakes, bays, and calm ocean inlets. OEM branding available for retreat centers.',
+                'Proposez des cours et des retraites de yoga sur paddle uniques. Une flotte de paddles de yoga vous permet d’animer des séances sur des lacs, des baies et des criques océaniques calmes. Marquage OEM disponible pour les centres de retraites.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Meditation Practitioners', 'Pratiquants de méditation')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'The gentle rocking of water adds a meditative dimension to seated practice. Anchor in a quiet cove and experience stillness on the water.',
+                'Le doux balancement de l’eau ajoute une dimension méditative à la pratique assise. Ancrez-vous dans une crique paisible et découvrez l’immobilité sur l’eau.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Resort & Spa Programs', 'Programmes de complexes hôteliers & spas')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Wellness resorts add SUP yoga as a premium guest experience. Boards store easily and launch from any calm water shoreline. Custom branding available.',
+                'Les complexes bien-être ajoutent le yoga sur paddle comme expérience premium pour leurs clients. Les planches se rangent facilement et se lancent depuis n’importe quel rivage d’eau calme. Personnalisation de marque disponible.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OEM Section -->
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">
+        {fr('OEM/ODM Manufacturing for SUP Yoga Boards', 'Fabrication OEM/ODM de planches de paddle yoga')}
+      </h2>
+      <p class="text-lg text-gray-500 leading-relaxed mb-8">
+        {
+          fr(
+            'Afarer manufactures SUP yoga boards for global wellness brands, yoga studios, and resort chains. Our production lines produce CE-certified yoga SUPs with custom EVA deck pad colors, graphics, and packaging. MOQ from 50 units. Lead times from 30 days.',
+            'afarer fabrique des planches de paddle yoga pour les marques de bien-être internationales, les studios de yoga et les chaînes de complexes hôteliers. Nos lignes de production produisent des paddles de yoga certifiés CE avec couleurs de pont EVA personnalisées, graphismes et emballages sur mesure. MOQ à partir de 50 unités. Délais de production à partir de 30 jours.'
+          )
+        }
+      </p>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">{fr('Custom', 'Sur mesure')}</span>
+          <p class="mt-1 text-sm text-gray-500">
+            {fr('Deck pads, graphics, packaging', 'Ponts EVA, graphismes, emballage')}
+          </p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">50+</span>
+          <p class="mt-1 text-sm text-gray-500">{fr('Units minimum order', 'Unités minimum de commande')}</p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">{fr('30 Days', '30 Jours')}</span>
+          <p class="mt-1 text-sm text-gray-500">{fr('Typical lead time', 'Délai de production habituel')}</p>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <a
+          href={localizeHref('/oem-odm-manufacturer', lang || 'en')}
+          class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+          >{fr('Request OEM Quote', 'Demander un devis OEM')} <span>→</span></a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        {fr('SUP Yoga Board — Frequently Asked Questions', 'Planche de Paddle Yoga — Questions Fréquentes')}
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        {
+          fr(
+            'Common questions about selecting, using, and manufacturing SUP yoga boards.',
+            'Questions courantes sur le choix, l’utilisation et la fabrication de planches de paddle yoga.'
+          )
+        }
+      </p>
+      <div class="space-y-4">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('What makes a SUP board good for yoga?', 'Qu’est-ce qui rend une planche de paddle adaptée au yoga ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'A SUP yoga board needs a wide stable platform (33″–36″), soft EVA foam deck traction for barefoot comfort, and sufficient length for full-body poses. Stability is the most important factor — the wider the board, the easier it is to hold poses.',
+                'Une planche de paddle yoga nécessite une plateforme large et stable (84 à 91 cm), un antidérapant en mousse EVA souple pour le confort des pieds nus et une longueur suffisante pour les postures du corps entier. La stabilité est le facteur le plus important — plus la planche est large, plus il est facile de tenir les postures.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {
+              fr(
+                'Is SUP yoga harder than regular yoga?',
+                'Le yoga sur paddle est-il plus difficile que le yoga classique ?'
+              )
+            }
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'SUP yoga adds an element of balance challenge not found in studio practice. The unstable surface engages more stabilizer muscles, making even basic poses more intense. Many practitioners find it deepens body awareness and focus.',
+                'Le yoga sur paddle ajoute un défi d’équilibre absent de la pratique en studio. La surface instable sollicite davantage les muscles stabilisateurs, rendant même les postures de base plus intenses. De nombreux pratiquants constatent que cela approfondit la conscience corporelle et la concentration.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('What SUP size is best for yoga?', 'Quelle taille de paddle pour le yoga ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'The best yoga SUP is 10′–11′ long and 33″–36″ wide. Extra width provides the stability needed for standing poses and smooth transitions between postures without worrying about tipping.',
+                'Le meilleur paddle de yoga mesure 3,00 à 3,35 m de long et 84 à 91 cm de large. La largeur supplémentaire offre la stabilité nécessaire pour les postures debout et des transitions fluides entre les postures, sans craindre de chavirer.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('Can beginners do SUP yoga?', 'Les débutants peuvent-ils pratiquer le yoga sur paddle ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Yes. Beginners should start with seated and kneeling poses on a wide, stable board in calm flat water. As confidence grows, progress to standing poses. A calm lake or protected bay is ideal for your first session.',
+                'Oui. Les débutants devraient commencer par des postures assises et à genoux sur une planche large et stable dans une eau plate et calme. À mesure que la confiance grandit, passez aux postures debout. Un lac calme ou une baie protégée sont idéaux pour une première séance.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {
+              fr(
+                'Do you manufacture yoga SUPs for private label?',
+                'Fabriquez-vous des paddles de yoga en marque blanche ?'
+              )
+            }
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Yes. Afarer offers OEM/ODM manufacturing for SUP yoga boards with custom deck pad colors, graphics, and packaging for yoga brands, studios, and resort wellness programs worldwide.',
+                'Oui. afarer propose la fabrication OEM/ODM de planches de paddle yoga avec couleurs de pont EVA personnalisées, graphismes et emballages sur mesure pour les marques de yoga, studios et programmes bien-être de complexes hôteliers du monde entier.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Resources -->
+  <section class="max-w-6xl mx-auto py-16 px-6">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+        {fr('Yoga SUP Resources', 'Ressources sur le paddle yoga')}
+      </h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a
+        href={localizeHref('/compare/single-chamber-vs-multi-chamber', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {fr('Safety on the Water', 'Sécurité sur l’eau')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">
+          {
+            fr(
+              'Multi-chamber safety for worry-free practice.',
+              'La sécurité multichambres pour une pratique sans souci.'
+            )
+          }
+        </p>
+      </a>
+      <a
+        href={localizeHref('/compare/inflatable-vs-hardboard', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {fr('Inflatable vs Hard for Yoga', 'Gonflable ou rigide pour le yoga')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">
+          {
+            fr(
+              'Why inflatable SUPs are preferred for yoga.',
+              'Pourquoi les paddles gonflables sont privilégiés pour le yoga.'
+            )
+          }
+        </p>
+      </a>
+      <a
+        href={localizeHref('/v2/pvc-vs-hypalon-boats', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {fr('Durable SUP Materials', 'Matériaux de paddle durables')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">
+          {fr('Understanding PVC vs Hypalon construction.', 'Comprendre la construction PVC vs Hypalon.')}
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+      {fr('Find Your Ideal SUP Yoga Board', 'Trouvez votre planche de paddle yoga idéale')}
+    </h2>
+    <p class="mt-4 text-lg text-gray-500">
+      {
+        fr(
+          'Inquire about bulk pricing or custom yoga SUP production.',
+          'Renseignez-vous sur les tarifs de gros ou la production personnalisée de paddles de yoga.'
+        )
+      }
+    </p>
+    <a
+      href={localizeHref('/contact', lang || 'en')}
+      class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+      >{fr('Contact Us', 'Contactez-nous')} <span>→</span></a
+    >
+  </section>
+</Layout>

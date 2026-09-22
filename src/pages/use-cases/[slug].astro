@@ -31,6 +31,11 @@ const { slug } = Astro.params;
 const node = nodes.find((n) => (n.slug && (n.slug.en || n.id)) === slug);
 const page = node ? useCaseFromNode(node, lang) : null;
 
+const productCategoryUrl: Record<string, string> = {
+  'inflatable-sup': '/inflatable-sup',
+  'safety-equipment': '/v2/life-jacket-buying-guide',
+};
+
 const useCaseCrumbs = page
   ? [{ name: 'Home', href: '/' }, { name: t('useCase.label'), href: '/use-cases' }, { name: page.title }]
   : [];
@@ -109,7 +114,7 @@ const metadata = { title: metaTitle, description: metaDesc };
               const pName = p.name?.en || p.id;
               return (
                 <a
-                  href={`/guides/${pSlug}`}
+                  href={productCategoryUrl[p.id] || `/guides/${pSlug}`}
                   class="block p-4 bg-white rounded-xl border border-gray-200 hover:shadow-md transition-shadow"
                 >
                   <h3 class="text-sm font-semibold text-gray-900">{pName}</h3>

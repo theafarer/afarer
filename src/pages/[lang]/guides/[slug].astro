@@ -5,15 +5,16 @@ import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import JsonLd from '~/components/common/JsonLd.astro';
 import Tldr from '~/components/common/Tldr.astro';
-import { guides } from '~/data/guides';
+import { getGuidesForLang } from '~/i18n/localized-data';
+import type { GuideRecord } from '~/data/guides';
 import { products } from '~/data/products';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 
 export async function getStaticPaths() {
-  const paths: { params: { lang: string; slug: string }; props: { guide: (typeof guides)[number] } }[] = [];
+  const paths: { params: { lang: string; slug: string }; props: { guide: GuideRecord } }[] = [];
   for (const lang of Object.keys(languages)) {
-    for (const guide of guides) {
+    for (const guide of getGuidesForLang(lang)) {
       paths.push({ params: { lang, slug: guide.slug }, props: { guide } });
     }
   }
@@ -21,12 +22,13 @@ export async function getStaticPaths() {
 }
 
 export interface Props {
-  guide: (typeof guides)[number];
+  guide: GuideRecord;
 }
 
 const { lang } = Astro.params;
 const { guide } = Astro.props;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const guides = getGuidesForLang(lang);
 
 function notNull<T>(x: T | null | undefined): x is T {
   return x != null;
@@ -34,6 +36,21 @@ function notNull<T>(x: T | null | undefined): x is T {
 
 const relatedProducts = guide.relatedProducts.map((id) => products.find((p) => p.id === id)).filter(notNull);
 const relatedGuides = guide.relatedGuides.map((slug) => guides.find((g) => g.slug === slug)).filter(notNull);
+
+const FR_CATEGORY_LABELS: Record<string, string> = {
+  'buying-guide': 'Guide d’achat',
+  tutorial: 'Tutoriel',
+  safety: 'Sécurité',
+  maintenance: 'Entretien',
+  technical: 'Technique',
+  lifestyle: 'Lifestyle & Fitness',
+  planning: 'Préparation de sortie',
+};
+const FR_DIFFICULTY_LABELS: Record<string, string> = {
+  beginner: 'débutant',
+  intermediate: 'intermédiaire',
+  advanced: 'avancé',
+};
 
 const metadata = {
   title: `${guide.title} — ${SITE.name}`,
@@ -53,9 +70,15 @@ const metadata = {
 
     <div class="mt-4 flex flex-wrap gap-2 text-xs">
       <span class="px-2.5 py-1 bg-sky-50 text-sky-700 rounded-full font-medium capitalize"
-        >{guide.category.replace('-', ' ')}</span
+        >{
+          lang === 'fr'
+            ? FR_CATEGORY_LABELS[guide.category] || guide.category.replace('-', ' ')
+            : guide.category.replace('-', ' ')
+        }</span
       >
-      <span class="px-2.5 py-1 bg-gray-100 text-gray-600 rounded-full capitalize">{guide.difficulty}</span>
+      <span class="px-2.5 py-1 bg-gray-100 text-gray-600 rounded-full capitalize"
+        >{lang === 'fr' ? FR_DIFFICULTY_LABELS[guide.difficulty] || guide.difficulty : guide.difficulty}</span
+      >
       {guide.waterType.map((w) => <span class="px-2.5 py-1 bg-gray-100 text-gray-500 rounded-full">{w}</span>)}
     </div>
 

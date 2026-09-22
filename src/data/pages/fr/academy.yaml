@@ -18,58 +18,58 @@ categories:
     guides:
       - title: Bases du SUP
         desc: Apprenez les fondamentaux du paddle — posture, technique de pagaie et équilibre.
-        slug: sup-basics
+        slug: beginner-sup-guide
       - title: Techniques de pagaie
         desc: Pagaie avant, balayage, traction et appui bas — maîtrisez les mouvements essentiels.
-        slug: paddle-techniques
+        slug: sup-paddle-guide
       - title: Sécurité avant tout
         desc: 'Pratiques de sécurité essentielles : vérifications météo, utilisation du gilet, règles de leash et auto-sauvetage.'
-        slug: safety-first
+        slug: sup-safety-guide
   - level: Intermédiaire
     color: from-blue-500 to-indigo-600
     badge: bg-blue-100 text-blue-700
     guides:
       - title: Essentiels du touring
         desc: Planification de pagayages de plusieurs heures — navigation, hydratation, rythme et lecture des prévisions de vent.
-        slug: touring-essentials
+        slug: touring-sup-guide
       - title: Lecture météo
         desc: Interprétez les prévisions marines, identifiez les types de nuages et comprenez les effets du vent sur l'eau.
-        slug: weather-reading
+        slug: weather-planning-water-sports
       - title: Bases de navigation
         desc: Lecture de cartes, utilisation de la boussole, points GPS et planification d'itinéraires pour le pagayage côtier.
-        slug: navigation-basics
+        slug: sup-navigation-guide
       - title: Connaissance des marées
         desc: Comprendre les cycles de marée, les courants et leur impact sur le timing de lancement et l'itinéraire.
-        slug: tidal-awareness
+        slug: understanding-tides
   - level: Avancé
     color: from-purple-500 to-violet-600
     badge: bg-purple-100 text-purple-700
     guides:
       - title: Planification de voyages multi-jours
         desc: Logistique d'expédition — sélection d'équipement, planification alimentaire, protocoles de sécurité et contacts d'urgence.
-        slug: multi-day-trip-planning
+        slug: sup-travel-guide
       - title: Techniques de sauvetage
         desc: Auto-sauvetage, sauvetage en T et protocoles de remorquage en eau libre.
-        slug: rescue-techniques
+        slug: sup-self-rescue
       - title: Pagaie nocturne
         desc: Navigation de nuit — exigences d'éclairage, mémoire d'itinéraire, communication de groupe et sensibilisation aux dangers.
-        slug: night-paddling
+        slug: ocean-safety-basics
   - level: Entretien
     color: from-amber-500 to-orange-600
     badge: bg-amber-100 text-amber-700
     guides:
       - title: Nettoyage et entretien
         desc: Rinçage à l'eau douce, protection UV, prévention des moisissures et techniques de séchage après chaque session.
-        slug: cleaning-and-care
+        slug: inflatable-sup-maintenance
       - title: Guide de stockage
         desc: Meilleures pratiques de stockage des planches SUP gonflables — dégonflage, pliage, contrôle de la température et durée de vie.
-        slug: storage-guide
+        slug: inflatable-sup-storage
       - title: Bases de réparation
         desc: Réparation de petites perforations, fuites de joint et problèmes de valve avec kits de réparation PVC.
-        slug: repair-basics
+        slug: inflatable-sup-repair
       - title: Entretien des valves
         desc: Identifier les types de valves, nettoyer les débris et remplacer les tiges défectueuses.
-        slug: valve-maintenance
+        slug: sup-pump-guide
 knowledge_center_tagline: Centre de Connaissances
 knowledge_center_title: Guides équipement marin et industrie
 knowledge_center_subtitle: Connaissances expertes et guides d'achat pour professionnels marins, opérateurs de flottes et amateurs de sports nautiques.
@@ -105,7 +105,7 @@ knowledge_sections:
         href: /learn/water-safety
       - title: Entretien SUP
         desc: Nettoyage, stockage, protection UV et réparation des planches SUP gonflables.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
   - title: Connaissance des planches SUP
     tagline: Centre SUP
     desc: Guides techniques couvrant les types de planches SUP, matériaux, méthodes de construction, entretien et sécurité.
@@ -134,7 +134,7 @@ knowledge_sections:
         href: /learn/sup
       - title: Entretien et Soin des SUP
         desc: Conseils de nettoyage, stockage, protection UV et réparation pour planches SUP gonflables.
-        href: /inflatable-sup-maintenance
+        href: /v2/inflatable-sup-maintenance
       - title: Choisir Votre Premier SUP
         desc: Guide du débutant pour choisir la planche de paddle adaptée à votre poids, niveau et usage.
         href: /learn/sup

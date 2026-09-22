@@ -1,0 +1,534 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { languages } from '~/i18n/config';
+import { localizeHref } from '~/i18n/routing';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+
+const metadata = {
+  title: fr(
+    'Whitewater SUP Board | River-Running Inflatable Paddle Board | Afarer',
+    'Paddle Eau Vive | Planche de Paddle Gonflable pour Rivière | afarer'
+  ),
+  description: fr(
+    'Afarer whitewater SUP boards — rugged inflatable paddle boards for river running, Class I-II rapids, and moving water. Reinforced rails, high PSI drop-stitch, expedition-ready. OEM/ODM manufacturing available for brands and outfitters.',
+    'Planches de paddle eau vive afarer — paddles gonflables robustes pour la descente de rivière, les rapides de classe I-II et les eaux vives. Rails renforcés, drop-stitch haute pression PSI, prêtes pour l’expédition. Fabrication OEM/ODM disponible pour les marques et les professionnels de la rivière.'
+  ),
+  ignoreTitleTemplate: true,
+};
+const pageUrl = `https://afarer.com/${lang}/whitewater-sup/`;
+const today = '2026-07-27';
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="Article"
+    data={{
+      headline: fr('Whitewater SUP Board — Conquer the Rapids', 'Planche de paddle eau vive — Domptez les rapides'),
+      description: metadata.description,
+      datePublished: today,
+      author: { '@type': 'Organization', name: 'Afarer' },
+      url: pageUrl,
+    }}
+  />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: fr('Home', 'Accueil'), item: `https://afarer.com/${lang}/` },
+        {
+          position: 2,
+          name: fr('Inflatable SUP Boards', 'SUP gonflables'),
+          item: `https://afarer.com/${lang}/inflatable-sup/`,
+        },
+        { position: 3, name: fr('Whitewater SUP', 'Paddle eau vive'), item: pageUrl },
+      ],
+    }}
+  />
+  <JsonLd
+    type="FAQPage"
+    data={{
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: fr('What is a whitewater SUP board?', 'Qu’est-ce qu’une planche de paddle eau vive ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'A whitewater SUP board is a shorter, more rugged inflatable paddle board designed for river running on Class I–III rapids. It features reinforced rails, higher PSI construction, and a compact length (8’–10’) for quick maneuverability in moving water.',
+              'Une planche de paddle eau vive est un paddle gonflable plus court et plus robuste, conçu pour la descente de rivière sur des rapides de classe I à III. Elle dispose de rails renforcés, d’une construction à plus haute pression PSI et d’une longueur compacte (8’–10’) pour une manœuvrabilité rapide en eau vive.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('Can you use a regular SUP in whitewater?', 'Peut-on utiliser un paddle classique en eau vive ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Regular SUPs lack the reinforced construction, impact resistance, and maneuverability needed for whitewater. Standard boards risk delamination, rail damage, and poor handling in rapids. A dedicated whitewater SUP is recommended.',
+              'Les paddles classiques n’ont ni la construction renforcée, ni la résistance aux chocs, ni la manœuvrabilité nécessaires en eau vive. Les planches standard risquent la délamination, des dégâts sur les rails et un mauvais comportement dans les rapides. Un paddle eau vive dédié est recommandé.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('What PSI should a whitewater SUP be?', 'À quelle pression PSI gonfler un paddle eau vive ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Whitewater SUPs should be inflated to 15–18 PSI for maximum rigidity. Higher pressure maintains board shape through turbulent water and provides better response to paddle strokes for maneuvering around obstacles.',
+              'Les paddles eau vive doivent être gonflés à 15–18 PSI pour une rigidité maximale. Une pression plus élevée maintient la forme de la planche dans les eaux turbulentes et offre une meilleure réponse aux coups de pagaie pour slalomer entre les obstacles.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr('Is whitewater SUP dangerous?', 'Le paddle eau vive est-il dangereux ?'),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Whitewater SUP carries inherent risks as an extreme sport. Proper safety gear (helmet, life vest, leash, river shoes) and appropriate skill progression are essential. Start with Class I rapids and progress with experience.',
+              'Le paddle eau vive comporte des risques inhérents, comme tout sport extrême. Un équipement de sécurité adapté (casque, gilet de sauvetage, leash, chaussures de rivière) et une progression technique appropriée sont indispensables. Commencez par des rapides de classe I et progressez avec l’expérience.'
+            ),
+          },
+        },
+        {
+          '@type': 'Question',
+          name: fr(
+            'Do you manufacture whitewater SUPs for private label?',
+            'Fabriquez-vous des paddles eau vive en marque privée ?'
+          ),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: fr(
+              'Yes. Afarer offers OEM/ODM manufacturing for whitewater SUP boards with reinforced construction, custom graphics, and compliance documentation for outdoor brands and river outfitters.',
+              'Oui. afarer propose une fabrication OEM/ODM de planches de paddle eau vive avec construction renforcée, graphismes personnalisés et documentation de conformité pour les marques outdoor et les professionnels de la rivière.'
+            ),
+          },
+        },
+      ],
+    }}
+  />
+
+  <section class="max-w-6xl mx-auto py-24 px-6">
+    <a
+      href={localizeHref('/inflatable-sup/', lang || 'en')}
+      class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-8 transition-colors"
+      >{fr('← SUP Product Center', '← Centre Produits SUP')}</a
+    >
+    <div class="max-w-4xl">
+      <span class="text-xs font-semibold text-primary tracking-[0.25em] uppercase"
+        >{fr('SUP Category', 'Catégorie SUP')}</span
+      >
+      <h1 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-secondary leading-[1.1]">
+        {fr('Whitewater SUP Board', 'Planche de paddle eau vive')}
+      </h1>
+      <p class="mt-6 text-lg text-gray-500 max-w-3xl leading-relaxed">
+        {
+          fr(
+            'Whitewater SUP paddling demands a board that can withstand impacts, maintain rigidity in turbulence, and respond quickly to paddle strokes. Afarer whitewater SUPs feature reinforced rail construction, shorter lengths for maneuverability, and high-PSI drop-stitch cores that maintain shape through rapids and hydraulics.',
+            'La pratique du paddle eau vive exige une planche capable d’encaisser les chocs, de maintenir sa rigidité dans la turbulence et de réagir rapidement aux coups de pagaie. Les paddles eau vive afarer allient construction à rails renforcés, longueurs raccourcies pour la manœuvrabilité et noyaux drop-stitch haute pression PSI qui conservent leur forme à travers les rapides et les rouleaux.'
+          )
+        }
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">
+          {fr('Whitewater SUP Features', 'Caractéristiques du paddle eau vive')}
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8">
+          <h3 class="text-lg font-bold text-secondary">{fr('Impact-Resistant Rails', 'Rails résistants aux chocs')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Reinforced side rails with fusion-laminated seams absorb impacts from rocks and submerged obstacles without delamination or air loss.',
+                'Les rails latéraux renforcés aux coutures laminées par fusion absorbent les chocs des rochers et obstacles submergés sans délamination ni perte d’air.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8">
+          <h3 class="text-lg font-bold text-secondary">{fr('Shorter Agile Hull', 'Coque courte et agile')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Reduced length (9’–10’) provides tighter turning radius for navigating rapids, eddies, and tight river corridors with precision.',
+                'Une longueur réduite (9’–10’) offre un rayon de braquage plus serré pour naviguer avec précision dans les rapides, les contre-courants et les corridors fluviaux étroits.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8">
+          <h3 class="text-lg font-bold text-secondary">{fr('High-PSI Rigidity', 'Rigidité haute pression PSI')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                '15+ PSI drop-stitch construction maintains board shape and stiffness through turbulent water, preventing flex that compromises control.',
+                'La construction drop-stitch 15+ PSI maintient la forme et la rigidité de la planche dans les eaux turbulentes, évitant la flexion qui compromet le contrôle.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-8">
+        {fr('River-Ready Products', 'Produits prêts pour la rivière')}
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <a
+          href={localizeHref('/products/sup-leviathan-wake', lang || 'en')}
+          class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all"
+        >
+          <div class="aspect-[16/9] bg-gradient-to-br from-slate-50 to-blue-50 overflow-hidden">
+            <img
+              src="https://assets.afarer.com/images/afarer/products/sup-series/sup-leviathan-wake-1-1200w.webp"
+              alt="Leviathan Wake Series"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+              Leviathan Wake Series
+            </h3>
+            <p class="mt-2 text-sm text-gray-500">
+              {
+                fr(
+                  'Built for challenging water conditions. Reinforced construction, compact profile, and responsive handling for river running.',
+                  'Conçue pour les conditions d’eau difficiles. Construction renforcée, profil compact et comportement réactif pour la descente de rivière.'
+                )
+              }
+            </p>
+            <span class="inline-block mt-4 text-sm font-medium text-primary"
+              >{fr('View product →', 'Voir le produit →')}</span
+            >
+          </div>
+        </a>
+        <a
+          href={localizeHref('/products/sup-cheetah-surge', lang || 'en')}
+          class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all"
+        >
+          <div class="aspect-[16/9] bg-gradient-to-br from-yellow-50 to-amber-50 overflow-hidden">
+            <img
+              src="https://assets.afarer.com/images/afarer/products/sup-series/sup-cheetah-surge-1-1200w.webp"
+              alt="Cheetah Surge Edition"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+              Cheetah Surge Edition
+            </h3>
+            <p class="mt-2 text-sm text-gray-500">
+              {
+                fr(
+                  'Agile performance SUP with responsive handling. Suitable for experienced paddlers tackling dynamic river conditions.',
+                  'SUP de performance agile au comportement réactif. Convient aux pratiquants expérimentés qui affrontent des conditions fluviales dynamiques.'
+                )
+              }
+            </p>
+            <span class="inline-block mt-4 text-sm font-medium text-primary"
+              >{fr('View product →', 'Voir le produit →')}</span
+            >
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">
+          {fr('Who Is a Whitewater SUP For?', 'Pour qui est le paddle eau vive ?')}
+        </h2>
+        <p class="mt-4 text-lg text-gray-500">
+          {
+            fr(
+              'Built for paddlers who crave moving water and river adventure.',
+              'Conçues pour les pratiquants en quête d’eaux vives et d’aventure en rivière.'
+            )
+          }
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">{fr('River Runners', 'Descendeurs de rivière')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'If you live near rivers with Class I–III rapids, a whitewater SUP opens up a new dimension of paddling. Run waves, surf holes, and navigate technical lines that hard-shell kayaks can access.',
+                'Si vous vivez à proximité de rivières offrant des rapides de classe I à III, le paddle eau vive ouvre une nouvelle dimension de la pratique. Descendez les vagues, surfez les rouleaux et négociez des lignes techniques jusqu’ici réservées aux kayaks rigides.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('Expedition Kayakers Cross-Training', 'Kayakistes d’expédition en entraînement croisé')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Stand-up paddling on moving water builds balance, edging, and reading-water skills that translate directly to kayaking and canoeing.',
+                'La pratique du paddle debout en eau vive développe l’équilibre, le contrôle de la gîte et la lecture de l’eau — des compétences directement transposables au kayak et au canoë.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">{fr('Adventure Photographers', 'Photographes d’aventure')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'The elevated vantage point of SUP gives unique camera angles on river scenery. Stable whitewater boards carry camera gear safely through moderate rapids.',
+                'Le point de vue surélevé du paddle offre des angles de prise de vue uniques sur les paysages fluviaux. Les planches eau vive stables transportent le matériel photo en sécurité à travers des rapides modérés.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">
+            {fr('River Outfitters & Schools', 'Professionnels de la rivière & écoles')}
+          </h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Offer whitewater SUP as a premium guided experience. Durable construction and responsive handling make these boards ideal for instruction and rental fleets.',
+                'Proposez le paddle eau vive comme expérience guidée premium. Construction durable et comportement réactif rendent ces planches idéales pour l’enseignement et les flottes de location.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OEM Section -->
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">
+        {fr('OEM/ODM Manufacturing for Whitewater SUPs', 'Fabrication OEM/ODM de paddles eau vive')}
+      </h2>
+      <p class="text-lg text-gray-500 leading-relaxed mb-8">
+        {
+          fr(
+            'Afarer manufactures whitewater SUP boards for outdoor brands, river outfitters, and adventure companies. Our production lines produce CE-certified whitewater SUPs with reinforced rails, custom graphics, and expedition-grade packaging. MOQ from 50 units. Lead times from 30 days.',
+            'afarer fabrique des planches de paddle eau vive pour les marques outdoor, les professionnels de la rivière et les sociétés d’aventure. Nos lignes de production produisent des paddles eau vive certifiés CE avec rails renforcés, graphismes personnalisés et emballage grade expédition. MOQ à partir de 50 unités. Délais à partir de 30 jours.'
+          )
+        }
+      </p>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">{fr('Custom', 'Personnalisé')}</span>
+          <p class="mt-1 text-sm text-gray-500">
+            {fr('Reinforcement, graphics, packaging', 'Renforts, graphismes, emballage')}
+          </p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">50+</span>
+          <p class="mt-1 text-sm text-gray-500">{fr('Units minimum order', 'unités minimum de commande')}</p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">{fr('30 Days', '30 jours')}</span>
+          <p class="mt-1 text-sm text-gray-500">{fr('Typical lead time', 'Délai de livraison typique')}</p>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <a
+          href={localizeHref('/oem-odm-manufacturer', lang || 'en')}
+          class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+          >{fr('Request OEM Quote', 'Demander un devis OEM')} <span>→</span></a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        {fr('Whitewater SUP — Frequently Asked Questions', 'Paddle eau vive — Questions fréquentes')}
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        {
+          fr(
+            'Common questions about selecting, using, and manufacturing whitewater paddle boards.',
+            'Questions courantes sur le choix, l’utilisation et la fabrication des planches de paddle eau vive.'
+          )
+        }
+      </p>
+      <div class="space-y-4">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('What is a whitewater SUP board?', 'Qu’est-ce qu’une planche de paddle eau vive ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'A whitewater SUP board is a shorter, more rugged inflatable paddle board designed for river running on Class I–III rapids. It features reinforced rails, higher PSI construction, and a compact length (8’–10’) for quick maneuverability in moving water.',
+                'Une planche de paddle eau vive est un paddle gonflable plus court et plus robuste, conçu pour la descente de rivière sur des rapides de classe I à III. Elle dispose de rails renforcés, d’une construction à plus haute pression PSI et d’une longueur compacte (8’–10’) pour une manœuvrabilité rapide en eau vive.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('Can you use a regular SUP in whitewater?', 'Peut-on utiliser un paddle classique en eau vive ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Regular SUPs lack the reinforced construction, impact resistance, and maneuverability needed for whitewater. Standard boards risk delamination, rail damage, and poor handling in rapids. A dedicated whitewater SUP is recommended.',
+                'Les paddles classiques n’ont ni la construction renforcée, ni la résistance aux chocs, ni la manœuvrabilité nécessaires en eau vive. Les planches standard risquent la délamination, des dégâts sur les rails et un mauvais comportement dans les rapides. Un paddle eau vive dédié est recommandé.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('What PSI should a whitewater SUP be?', 'À quelle pression PSI gonfler un paddle eau vive ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Whitewater SUPs should be inflated to 15–18 PSI for maximum rigidity. Higher pressure maintains board shape through turbulent water and provides better response to paddle strokes for maneuvering around obstacles.',
+                'Les paddles eau vive doivent être gonflés à 15–18 PSI pour une rigidité maximale. Une pression plus élevée maintient la forme de la planche dans les eaux turbulentes et offre une meilleure réponse aux coups de pagaie pour slalomer entre les obstacles.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {fr('Is whitewater SUP dangerous?', 'Le paddle eau vive est-il dangereux ?')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Whitewater SUP carries inherent risks as an extreme sport. Proper safety gear (helmet, life vest, leash, river shoes) and appropriate skill progression are essential. Start with Class I rapids and progress with experience.',
+                'Le paddle eau vive comporte des risques inhérents, comme tout sport extrême. Un équipement de sécurité adapté (casque, gilet de sauvetage, leash, chaussures de rivière) et une progression technique appropriée sont indispensables. Commencez par des rapides de classe I et progressez avec l’expérience.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-secondary">
+            {
+              fr(
+                'Do you manufacture whitewater SUPs for private label?',
+                'Fabriquez-vous des paddles eau vive en marque privée ?'
+              )
+            }
+          </h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+            {
+              fr(
+                'Yes. Afarer offers OEM/ODM manufacturing for whitewater SUP boards with reinforced construction, custom graphics, and compliance documentation for outdoor brands and river outfitters.',
+                'Oui. afarer propose une fabrication OEM/ODM de planches de paddle eau vive avec construction renforcée, graphismes personnalisés et documentation de conformité pour les marques outdoor et les professionnels de la rivière.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Resources -->
+  <section class="max-w-6xl mx-auto py-16 px-6">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+        {fr('Whitewater Resources', 'Ressources eaux vives')}
+      </h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a
+        href={localizeHref('/compare/single-chamber-vs-multi-chamber', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {fr('Chamber Safety for Rivers', 'Sécurité des chambres pour la rivière')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">
+          {
+            fr(
+              'Why multi-chamber is critical in moving water.',
+              'Pourquoi les chambres multiples sont cruciales en eau vive.'
+            )
+          }
+        </p>
+      </a>
+      <a
+        href={localizeHref('/v2/pvc-vs-hypalon-boats', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {fr('PVC vs Hypalon Durability', 'Durabilité PVC vs Hypalon')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">
+          {
+            fr(
+              'Which material withstands river impacts better.',
+              'Quel matériau résiste le mieux aux chocs de la rivière.'
+            )
+          }
+        </p>
+      </a>
+      <a
+        href={localizeHref('/compare/inflatable-vs-hardboard', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {fr('Inflatable for Whitewater', 'Gonflable pour l’eau vive')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">
+          {
+            fr(
+              'Why inflatable SUPs dominate river running.',
+              'Pourquoi les SUP gonflables dominent la descente de rivière.'
+            )
+          }
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+      {fr('Explore Whitewater SUP Options', 'Explorez les options de paddle eau vive')}
+    </h2>
+    <p class="mt-4 text-lg text-gray-500">
+      {
+        fr(
+          'Contact us for technical specs, bulk orders, or OEM whitewater SUP production.',
+          'Contactez-nous pour les spécifications techniques, les commandes en gros ou la production OEM de paddles eau vive.'
+        )
+      }
+    </p>
+    <a
+      href={localizeHref('/contact', lang || 'en')}
+      class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+      >{fr('Inquire About Whitewater SUPs', 'Demander des informations sur les paddles eau vive')} <span>→</span></a
+    >
+  </section>
+</Layout>
