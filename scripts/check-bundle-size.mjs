@@ -45,4 +45,26 @@ if (failed) {
   console.error('[bundle] size gate failed');
   process.exit(1);
 }
+
+// Cloudflare deployment gates: free-plan per-asset size cap and total file count.
+const MAX_ASSET_MB = Number(process.env.ASSET_MAX_MB ?? 15);
+const MAX_FILE_COUNT = Number(process.env.DIST_MAX_FILES ?? 20000);
+const allFiles = walk(DIST);
+const oversized = allFiles
+  .map((file) => ({ file, mb: statSync(file).size / (1024 * 1024) }))
+  .filter((f) => f.mb > MAX_ASSET_MB)
+  .sort((a, b) => b.mb - a.mb);
+for (const f of oversized) {
+  console.error(`[bundle] ${f.file} = ${f.mb.toFixed(1)}MB exceeds ${MAX_ASSET_MB}MB asset limit`);
+}
+if (oversized.length) failed = true;
+console.log(
+  `[bundle] dist files: ${allFiles.length} (limit ${MAX_FILE_COUNT}) ${allFiles.length <= MAX_FILE_COUNT ? 'OK' : 'OVER LIMIT'}`
+);
+if (allFiles.length > MAX_FILE_COUNT) failed = true;
+
+if (failed) {
+  console.error('[bundle] size gate failed');
+  process.exit(1);
+}
 console.log('[bundle] size gate passed');

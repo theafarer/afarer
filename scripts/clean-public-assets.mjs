@@ -15,7 +15,10 @@ export function cleanBuildAssets() {
   for (const { dir, label } of candidates) {
     if (!existsSync(dir)) continue;
 
-    for (const sub of ['images', 'files']) {
+    // images/ and files/ are served from the R2 CDN custom domain;
+    // data/ holds build-time JSON copies (page-content.json is ~30MB) with no
+    // runtime consumers — deploying them breaks the Cloudflare asset size limit.
+    for (const sub of ['images', 'files', 'data']) {
       const subDir = path.join(dir, sub);
       if (existsSync(subDir)) {
         rmSync(subDir, { recursive: true, force: true });
