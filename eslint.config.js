@@ -94,6 +94,7 @@ export default [
       'i18n-tool.cjs',
       '_fix-*.js',
       'check-yaml*.ts',
+      'src/i18n/generated',
     ],
   },
 ];
