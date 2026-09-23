@@ -11,7 +11,6 @@ const AVAILABLE_LOCALES = {
   ko: '🇰🇷 한국어',
   ru: '🇷🇺 Русский',
   pl: '🇵🇱 Polski',
-  zh: '🇨🇳 简体中文',
   ar: '🇸🇦 العربية',
 };
 
@@ -390,15 +389,6 @@ export default config({
             copyright: fields.text({ label: 'Copyright text (HTML)' }),
           },
           { label: '🇵🇹 Português' }
-        ),
-        zh: fields.object(
-          {
-            site_name: fields.text({ label: 'Site Name' }),
-            site_tagline: fields.text({ label: 'Site Tagline' }),
-            site_description: fields.text({ label: 'Site Description', multiline: true }),
-            copyright: fields.text({ label: 'Copyright text (HTML)' }),
-          },
-          { label: '🇨🇳 简体中文' }
         ),
         ar: fields.object(
           {

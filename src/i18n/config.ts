@@ -1,7 +1,6 @@
 ﻿/* eslint-disable @typescript-eslint/no-explicit-any */
 export const languages: Record<string, string> = {
   en: 'English',
-  zh: '中文',
   fr: 'Français',
   de: 'Deutsch',
   es: 'Español',
@@ -22,6 +21,19 @@ export const languages: Record<string, string> = {
   da: 'Dansk',
   ro: 'Română',
   th: 'ไทย',
+  hr: 'Hrvatski',
+  hu: 'Magyar',
+  sk: 'Slovenčina',
+  bg: 'Български',
+  sl: 'Slovenščina',
+  sr: 'Српски',
+  id: 'Bahasa Indonesia',
+  he: 'עברית',
+  ms: 'Bahasa Melayu',
+  lt: 'Lietuvių',
+  lv: 'Latviešu',
+  et: 'Eesti',
+  tl: 'Tagalog',
 };
 export const defaultLang = 'en';
 export const showDefaultLang = true;

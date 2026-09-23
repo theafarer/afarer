@@ -42,7 +42,7 @@ const solutionsData = page.solutions;
 const cs =
   typeof page.caseStudy.customer === 'string'
     ? {
-        title: fr('Case Study', '脡tude de cas'),
+        title: fr('Case Study', 'Étude de cas'),
         customer: { location: undefined, background: page.caseStudy.customer, goal: undefined } as {
           location?: string;
           background?: string;
@@ -83,7 +83,7 @@ const ctaActions = [
   <WidgetWrapper containerClass="max-w-6xl mx-auto">
     <Headline
       title={challenge.title}
-      subtitle="Four challenges your business faces 鈥?and how Afarer solves each one."
+      subtitle="Four challenges your business faces —?and how Afarer solves each one."
     />
     <div class="grid md:grid-cols-2 gap-6 mt-10">
       {
@@ -179,7 +179,7 @@ const ctaActions = [
             )}
             <div>
               <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">
-                {fr('Results', 'R茅sultats')}
+                {fr('Results', 'Résultats')}
               </p>
               <div class="flex flex-wrap gap-2">
                 {c.results.map((r) => (

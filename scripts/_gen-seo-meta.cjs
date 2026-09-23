@@ -87,7 +87,19 @@ const langs = [
   'da',
   'ro',
   'th',
-  'zh',
+  'hr',
+  'hu',
+  'sk',
+  'bg',
+  'sl',
+  'sr',
+  'id',
+  'he',
+  'ms',
+  'lt',
+  'lv',
+  'et',
+  'tl',
 ];
 
 const out = {};

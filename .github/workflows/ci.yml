@@ -22,6 +22,8 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y ghostscript
       - run: npm run generate
       - run: npm run check
+        env:
+          NODE_OPTIONS: --max-old-space-size=6144
       - run: npm test
       - run: npm run build
         env:

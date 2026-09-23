@@ -29,7 +29,6 @@ function readSiteUrl(): string {
 
 const allLangs = [
   'en',
-  'zh',
   'fr',
   'de',
   'es',
@@ -50,6 +49,19 @@ const allLangs = [
   'da',
   'ro',
   'th',
+  'hr',
+  'hu',
+  'sk',
+  'bg',
+  'sl',
+  'sr',
+  'id',
+  'he',
+  'ms',
+  'lt',
+  'lv',
+  'et',
+  'tl',
 ];
 
 // --- v5 AI Semantic Analysis (run once in English for diagnostics) ---
@@ -81,7 +93,6 @@ if (gapGroups.high.length > 0) {
 
 const siteName: Record<string, string> = {
   en: 'afarer',
-  zh: 'afarer',
   fr: 'afarer',
   de: 'afarer',
   es: 'afarer',
@@ -97,7 +108,6 @@ const siteName: Record<string, string> = {
 
 const definition: Record<string, string> = {
   en: 'afarer designs professional-grade inflatable watercraft \u2014 SUP boards, kayaks, dinghies, RIBs, safety equipment, and accessories.',
-  zh: 'afarer 設計專業級充氣水上交通工具 — SUP 槳板、皮划艇、充氣艇、RIB、安全設備和配件。',
   fr: 'afarer con\u00e7oit des embarcations gonflables de qualit\u00e9 professionnelle \u2014 planches SUP, kayaks, annexes, RIB, \u00e9quipements de s\u00e9curit\u00e9 et accessoires.',
   de: 'afarer entwickelt professionelle aufblasbare Wasserfahrzeuge \u2014 SUP-Boards, Kajaks, Dingis, RIBs, Sicherheitsausr\u00fcstung und Zubeh\u00f6r.',
   es: 'afarer dise\u00f1a embarcaciones inflables de grado profesional \u2014 tablas SUP, kayaks, botes, RIB, equipos de seguridad y accesorios.',
@@ -113,7 +123,6 @@ const definition: Record<string, string> = {
 
 const summary: Record<string, string> = {
   en: 'afarer is a water sports knowledge system focused on inflatable SUPs, paddle systems, and ocean mobility gear. It structures water sports equipment as an interconnected ontology of categories, technologies, and use cases with AI-verified content completeness.',
-  zh: 'afarer 是一個水上運動知識系統，專注於充氣 SUP、槳板系統和海洋移動裝備。它將水上運動設備構建為類別、技術和用例的互聯本體，具有 AI 驗證的內容完整性。',
   fr: "afarer est un syst\u00e8me de connaissances sur les sports nautiques ax\u00e9 sur les SUP gonflables, les syst\u00e8mes de pagaie et les \u00e9quipements de mobilit\u00e9 oc\u00e9anique. Il structure les \u00e9quipements de sports nautiques en une ontologie interconnect\u00e9e de cat\u00e9gories, technologies et cas d'utilisation.",
   de: 'afarer ist ein Wissenssystem f\u00fcr Wassersport mit Schwerpunkt auf aufblasbaren SUPs, Paddelsystemen und Ausr\u00fcstung f\u00fcr die Meeresmobilit\u00e4t.',
   es: 'afarer es un sistema de conocimiento de deportes acu\u00e1ticos centrado en SUP inflables, sistemas de remo y equipos de movilidad oce\u00e1nica.',
@@ -196,7 +205,6 @@ const LANG_PRIORITY: Record<string, number> = {
   pt: 0.7,
   it: 0.7,
   nl: 0.65,
-  zh: 0.6,
   ar: 0.55,
   pl: 0.55,
   ru: 0.5,

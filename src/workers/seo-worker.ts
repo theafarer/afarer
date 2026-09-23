@@ -106,7 +106,7 @@ export default {
       });
     }
 
-    return new Response('Afarer v3.5 SEO Worker 璺?Free Tier', { status: 200 });
+    return new Response('Afarer v3.5 SEO Worker —Free Tier', { status: 200 });
   },
 
   async scheduled(_event: ScheduledEvent, env: Env): Promise<void> {

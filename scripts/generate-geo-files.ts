@@ -17,7 +17,6 @@ const SITE_URL = 'https://afarer.com';
 
 const LANGUAGES: Record<string, string> = {
   en: 'English',
-  zh: '中文',
   fr: 'Français',
   de: 'Deutsch',
   es: 'Español',
@@ -38,6 +37,19 @@ const LANGUAGES: Record<string, string> = {
   da: 'Dansk',
   ro: 'Română',
   th: 'ไทย',
+  hr: 'Hrvatski',
+  hu: 'Magyar',
+  sk: 'Slovenčina',
+  bg: 'Български',
+  sl: 'Slovenščina',
+  sr: 'Српски',
+  id: 'Bahasa Indonesia',
+  he: 'עברית',
+  ms: 'Bahasa Melayu',
+  lt: 'Lietuvių',
+  lv: 'Latviešu',
+  et: 'Eesti',
+  tl: 'Tagalog',
 };
 
 const CATEGORY_LABELS: Record<string, string> = {

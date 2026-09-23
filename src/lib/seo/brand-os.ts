@@ -113,13 +113,6 @@ export const BRAND: BrandIdentity = {
       keywords: ['fabricante barcos inflables', 'OEM', 'marino'],
       sitemapPriority: 0.7,
     },
-    {
-      locale: 'zh',
-      name: 'China',
-      flag: '🇨🇳',
-      keywords: ['充气船制造商', 'OEM', '水上用品工厂'],
-      sitemapPriority: 0.6,
-    },
   ],
   brandStory:
     'Founded in 2012 in Qingdao, China, afarer began as a specialized inflatable workshop serving local marine operators. Over a decade of engineering refinement, we grew into a 12,000 m² facility producing CE-certified SUPs and marine safety equipment for 40+ countries. Our R&D center drives innovation in drop-stitch construction and PVC formulation —bridging the gap between custom OEM manufacturing and commercial-grade reliability.',

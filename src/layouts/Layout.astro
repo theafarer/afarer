@@ -70,7 +70,7 @@ if (!availableRoutes.has(xDefaultTarget)) {
 // Populate the generated per-language UI strings (small per-language modules,
 // statically imported in src/i18n/generated/ui-all.ts) for all components.
 setLang(currentLang);
-const textDirection = language === 'ar' ? 'rtl' : defaultTextDir || 'ltr';
+const textDirection = language === 'ar' || language === 'he' ? 'rtl' : defaultTextDir || 'ltr';
 ---
 
 <!doctype html>

@@ -15,7 +15,6 @@ export async function GET() {
   <sitemap><loc>${base}/it/sitemap.xml</loc></sitemap>
   <sitemap><loc>${base}/ja/sitemap.xml</loc></sitemap>
   <sitemap><loc>${base}/ko/sitemap.xml</loc></sitemap>
-  <sitemap><loc>${base}/zh/sitemap.xml</loc></sitemap>
   <sitemap><loc>${base}/ar/sitemap.xml</loc></sitemap>
   <sitemap><loc>${base}/ru/sitemap.xml</loc></sitemap>
   <sitemap><loc>${base}/pl/sitemap.xml</loc></sitemap>
@@ -29,6 +28,19 @@ export async function GET() {
   <sitemap><loc>${base}/da/sitemap.xml</loc></sitemap>
   <sitemap><loc>${base}/ro/sitemap.xml</loc></sitemap>
   <sitemap><loc>${base}/th/sitemap.xml</loc></sitemap>
+  <sitemap><loc>${base}/hr/sitemap.xml</loc></sitemap>
+  <sitemap><loc>${base}/hu/sitemap.xml</loc></sitemap>
+  <sitemap><loc>${base}/sk/sitemap.xml</loc></sitemap>
+  <sitemap><loc>${base}/bg/sitemap.xml</loc></sitemap>
+  <sitemap><loc>${base}/sl/sitemap.xml</loc></sitemap>
+  <sitemap><loc>${base}/sr/sitemap.xml</loc></sitemap>
+  <sitemap><loc>${base}/id/sitemap.xml</loc></sitemap>
+  <sitemap><loc>${base}/he/sitemap.xml</loc></sitemap>
+  <sitemap><loc>${base}/ms/sitemap.xml</loc></sitemap>
+  <sitemap><loc>${base}/lt/sitemap.xml</loc></sitemap>
+  <sitemap><loc>${base}/lv/sitemap.xml</loc></sitemap>
+  <sitemap><loc>${base}/et/sitemap.xml</loc></sitemap>
+  <sitemap><loc>${base}/tl/sitemap.xml</loc></sitemap>
 </sitemapindex>`;
   return new Response(xml, {
     headers: { 'Content-Type': 'application/xml; charset=utf-8' },

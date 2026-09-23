@@ -1,7 +1,6 @@
 export interface BizSolution {
   slug: string;
   clientType: string;
-  clientTypeZh: string;
   brandName: string;
 
   meta: { title: string; description: string };
@@ -56,7 +55,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'sup-brand-startup',
     clientType: 'Outdoor Startup Founder',
-    clientTypeZh: '戶外運動創業品牌創始人',
     brandName: 'Build Your SUP Brand\u2122',
 
     meta: {
@@ -354,7 +352,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'expand-outdoor-brand-water-sports',
     clientType: 'Existing Outdoor Brand Manager',
-    clientTypeZh: '已有戶外品牌經理',
     brandName: 'Expand Your Outdoor Brand Into Water Sports\u2122',
 
     meta: {
@@ -647,7 +644,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'inflatable-technology-for-surf-business',
     clientType: 'Surf Shop Brand Owner',
-    clientTypeZh: '衝浪水上店品牌主',
     brandName: 'Bring Inflatable Technology Into Surf Business\u2122',
 
     meta: {
@@ -956,7 +952,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'ecommerce-sup-brand-development',
     clientType: 'Marketplace Brand Seller',
-    clientTypeZh: '電商 Amazon 賣家',
     brandName: 'Product Differentiation & Fast Supply\u2122',
 
     meta: {
@@ -1262,7 +1257,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'create-fishing-sup-brand',
     clientType: 'Fishing Gear Brand Owner',
-    clientTypeZh: '釣魚用品品牌主',
     brandName: 'Create Your Fishing SUP Brand\u2122',
 
     meta: {
@@ -1554,7 +1548,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'sup-yoga-wellness-equipment',
     clientType: 'Yoga & Wellness Brand Owner',
-    clientTypeZh: '瑜伽與 Wellness 品牌主',
     brandName: 'SUP Yoga Equipment Solutions\u2122',
 
     meta: {
@@ -1869,7 +1862,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'creator-influencer-sup-brand',
     clientType: 'Creator / Influencer Brand',
-    clientTypeZh: '创作者 / 网红自创品牌',
     brandName: 'Creator Edition SUP',
 
     meta: {
@@ -2050,7 +2042,7 @@ const solutions: BizSolution[] = [
           customer: {
             location: 'Manaus, Brazil',
             background:
-              "Carlos Mendes, 34, is a National Geographic-featured adventure photographer and drone pilot with 890,000 Instagram followers. After documenting remote Amazon river expeditions for 7 years, he noticed his audience increasingly asking about the inflatable SUPs he used to access拍摄 locations. With no paddling background, he needed Afarer to engineer a custom board that could serve as both camera platform and expedition craft, while launching a merchandised brand around his 'Rios do Brasil' series.",
+              "Carlos Mendes, 34, is a National Geographic-featured adventure photographer and drone pilot with 890,000 Instagram followers. After documenting remote Amazon river expeditions for 7 years, he noticed his audience increasingly asking about the inflatable SUPs he used to access filming locations. With no paddling background, he needed Afarer to engineer a custom board that could serve as both camera platform and expedition craft, while launching a merchandised brand around his 'Rios do Brasil' series.",
             goal: "Launch a co-branded signature SUP by May 2025 capturing Brazil's 5 major water biomes (Amazon, Pantanal, São Francisco, Paraná, and coastal Rio), preselling 500 units at R$4,990 each before production.",
           },
           steps: [
@@ -2196,7 +2188,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'commercial-sup-fleet',
     clientType: 'Paddle Club Founder',
-    clientTypeZh: '水上俱乐部创始人',
     brandName: 'Commercial SUP Fleet™',
 
     meta: {
@@ -2511,7 +2502,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'durable-sup-rental-fleet',
     clientType: 'Water Sports Rental Business Owner',
-    clientTypeZh: 'SUP租赁运营商 / 水上体验项目经营者',
     brandName: 'Durable Rental Fleet Solution™',
 
     meta: {
@@ -2830,7 +2820,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'resort-water-activity-package',
     clientType: 'Resort Activity Manager',
-    clientTypeZh: '酒店 / 度假村活动经理',
     brandName: 'Resort Water Activity Package™',
 
     meta: {
@@ -3130,7 +3119,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'sup-academy-equipment-program',
     clientType: 'Water Sports Academy Owner',
-    clientTypeZh: '水上运动培训机构 / SUP学校负责人',
     brandName: 'SUP Academy Equipment Program™',
 
     meta: {
@@ -3446,7 +3434,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'luxury-portable-sup-package',
     clientType: 'Cruise & Yacht Companies',
-    clientTypeZh: '邮轮与游艇公司',
     brandName: 'Luxury Portable SUP Package™',
 
     meta: {
@@ -3758,7 +3745,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'retail-private-label-program',
     clientType: 'Outdoor Retail Buyer & Private Label Team',
-    clientTypeZh: '户外用品零售商与商超自有品牌',
     brandName: 'Retail Private Label Program\u2122',
 
     meta: {
@@ -4074,7 +4060,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'regional-oem-supply-chain-partner',
     clientType: 'Water Sports Distributor & Importers',
-    clientTypeZh: '地区代理商与进口商',
     brandName: 'Regional OEM & Supply Chain Partner\u2122',
 
     meta: {
@@ -4383,7 +4368,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'corporate-sup-event-package',
     clientType: 'Corporate Custom Project Buyer',
-    clientTypeZh: '企业团建与公关活动定制客户',
     brandName: 'Corporate SUP Event Package\u2122',
 
     meta: {
@@ -4696,7 +4680,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'expand-your-water-sports-portfolio',
     clientType: 'Water Sports Equipment Brand Manager',
-    clientTypeZh: '传统水上运动设备品牌主',
     brandName: 'Expand Your Water Sports Portfolio\u2122',
 
     meta: {
@@ -5009,7 +4992,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'pet-friendly-paddle-board-program',
     clientType: 'Pet Adventure Brand Owner',
-    clientTypeZh: '宠物户外品牌主',
     brandName: 'Pet-Friendly Paddle Board Program\u2122',
 
     meta: {
@@ -5315,7 +5297,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'complete-beach-activity-equipment-solutions',
     clientType: 'Beach Recreation & Water Sports Center Operator',
-    clientTypeZh: '海滩娱乐与水上中心运营商',
     brandName: 'Complete Beach Activity Equipment Solutions\u2122',
 
     meta: {
@@ -5618,7 +5599,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'commercial-water-park-sup-fleet',
     clientType: 'Water Park & Theme Park Developer',
-    clientTypeZh: '水上乐园与主题公园运营商',
     brandName: 'Commercial Water Park SUP Fleet™',
     meta: {
       title: 'Commercial Water Park SUP Fleet Supplier | {SITE}',
@@ -5899,7 +5879,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'premium-custom-sup-collection',
     clientType: 'Private Island & Luxury Club Owner',
-    clientTypeZh: '私人岛屿、庄园与高端俱乐部主',
     brandName: 'Premium Custom SUP Collection™',
     meta: {
       title: 'Luxury Custom SUP Manufacturer | {SITE}',
@@ -6179,7 +6158,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'destination-water-sports-package',
     clientType: 'Tourism Board & Public Park Operator',
-    clientTypeZh: '政府旅游局与公共水岸项目方',
     brandName: 'Destination Water Sports Package™',
     meta: {
       title: 'Destination Water Sports Equipment Supplier | {SITE}',
@@ -6462,7 +6440,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'kids-exploration-sup-program',
     clientType: 'Kids Adventure & Summer Camp Operator',
-    clientTypeZh: '青少年探险与夏令营机构',
     brandName: 'Kids Exploration SUP Program™',
     meta: {
       title: 'Kids SUP Manufacturer | {SITE}',
@@ -6744,7 +6721,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'professional-water-rescue-sup-system',
     clientType: 'Water Rescue & Safety Organization',
-    clientTypeZh: '水上救援与应急培训机构',
     brandName: 'Professional Water Rescue SUP System™',
     meta: {
       title: 'Water Rescue SUP Manufacturer | {SITE}',
@@ -7028,7 +7004,6 @@ const solutions: BizSolution[] = [
   {
     slug: 'eco-research-monitoring-sup-platform',
     clientType: 'Marine Conservation & Research Institution',
-    clientTypeZh: '海洋环保 NGO 与水域科研机构',
     brandName: 'Eco Research & Monitoring SUP Platform™',
     meta: {
       title: 'Eco Research SUP Platform Manufacturer | {SITE}',

@@ -102,7 +102,7 @@ async function handleAsk(request: Request, env: Env): Promise<Response> {
 2. Recommend specific product models with reasons why they fit the use case.
 3. Mention relevant specifications (size, material, capacity, engine compatibility) to demonstrate expertise.
 4. If the customer mentions a budget or quantity, factor that into your response.
-5. Always include a call to action 鈥?offer a quote, sample, or consultation.
+5. Always include a call to action —offer a quote, sample, or consultation.
 6. Be professional and helpful. If you don't know something, say so rather than guessing.
 7. Cite sources from the context when available.
 
@@ -152,7 +152,6 @@ function handleSitemap(): Response {
   return json({
     pages: [
       `${baseUrl}/en/`,
-      `${baseUrl}/zh/`,
       `${baseUrl}/fr/`,
       `${baseUrl}/de/`,
       `${baseUrl}/es/`,
@@ -173,6 +172,19 @@ function handleSitemap(): Response {
       `${baseUrl}/da/`,
       `${baseUrl}/ro/`,
       `${baseUrl}/th/`,
+      `${baseUrl}/hr/`,
+      `${baseUrl}/hu/`,
+      `${baseUrl}/sk/`,
+      `${baseUrl}/bg/`,
+      `${baseUrl}/sl/`,
+      `${baseUrl}/sr/`,
+      `${baseUrl}/id/`,
+      `${baseUrl}/he/`,
+      `${baseUrl}/ms/`,
+      `${baseUrl}/lt/`,
+      `${baseUrl}/lv/`,
+      `${baseUrl}/et/`,
+      `${baseUrl}/tl/`,
     ],
   });
 }

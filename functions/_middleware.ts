@@ -1,6 +1,5 @@
 ﻿const LANGUAGES: Record<string, string> = {
   en: 'English',
-  zh: '中文',
   fr: 'Français',
   de: 'Deutsch',
   es: 'Español',
@@ -21,6 +20,19 @@
   da: 'Dansk',
   ro: 'Română',
   th: 'ไทย',
+  hr: 'Hrvatski',
+  hu: 'Magyar',
+  sk: 'Slovenčina',
+  bg: 'Български',
+  sl: 'Slovenščina',
+  sr: 'Српски',
+  id: 'Bahasa Indonesia',
+  he: 'עברית',
+  ms: 'Bahasa Melayu',
+  lt: 'Lietuvių',
+  lv: 'Latviešu',
+  et: 'Eesti',
+  tl: 'Tagalog',
 };
 
 const DEFAULT_LANG = 'en';
@@ -28,8 +40,6 @@ const DEFAULT_LANG = 'en';
 const LOCALE_MAP: Record<string, string> = {
   KR: 'ko',
   JP: 'ja',
-  CN: 'zh',
-  TW: 'zh',
   FR: 'fr',
   DE: 'de',
   ES: 'es',
@@ -51,12 +61,24 @@ const LOCALE_MAP: Record<string, string> = {
   DK: 'da',
   RO: 'ro',
   TH: 'th',
+  HR: 'hr',
+  HU: 'hu',
+  SK: 'sk',
+  BG: 'bg',
+  SI: 'sl',
+  RS: 'sr',
+  ID: 'id',
+  IL: 'he',
+  MY: 'ms',
+  LT: 'lt',
+  LV: 'lv',
+  EE: 'et',
+  PH: 'tl',
 };
 
 const ACCEPT_LANG_MAP: Record<string, string> = {
   ko: 'ko',
   ja: 'ja',
-  zh: 'zh',
   fr: 'fr',
   de: 'de',
   es: 'es',
@@ -75,6 +97,19 @@ const ACCEPT_LANG_MAP: Record<string, string> = {
   da: 'da',
   ro: 'ro',
   th: 'th',
+  hr: 'hr',
+  hu: 'hu',
+  sk: 'sk',
+  bg: 'bg',
+  sl: 'sl',
+  sr: 'sr',
+  id: 'id',
+  he: 'he',
+  ms: 'ms',
+  lt: 'lt',
+  lv: 'lv',
+  et: 'et',
+  tl: 'tl',
 };
 
 const ASSETS_BASE = 'https://assets.afarer.com';

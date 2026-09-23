@@ -14,7 +14,6 @@ import yaml from 'js-yaml';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const LOCALES = [
   'en',
-  'zh',
   'fr',
   'de',
   'es',

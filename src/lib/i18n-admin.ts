@@ -1,6 +1,5 @@
 export const ADMIN_LOCALES: Record<string, string> = {
   en: 'English',
-  zh: '中文',
   fr: 'Français',
   de: 'Deutsch',
   es: 'Español',

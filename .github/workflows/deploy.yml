@@ -43,6 +43,8 @@ jobs:
         run: npm run generate
       - if: steps.guard.outputs.enabled == 'true'
         run: npm run check
+        env:
+          NODE_OPTIONS: --max-old-space-size=6144
       - if: steps.guard.outputs.enabled == 'true'
         run: npm test
       - if: steps.guard.outputs.enabled == 'true'

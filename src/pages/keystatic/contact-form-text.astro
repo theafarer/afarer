@@ -19,7 +19,6 @@ const file = siteFileForLocale('src/data/site/contact-form-text.yaml', locale);
 const defaultData: Record<string, any> = {
   submit_button: {
     en: 'Send message',
-    zh: '\u53d1\u9001\u6d88\u606f',
     fr: 'Envoyer',
     de: 'Nachricht senden',
     es: 'Enviar mensaje',
@@ -27,7 +26,6 @@ const defaultData: Record<string, any> = {
   },
   success_message: {
     en: 'Thanks! Your message has landed in our inbox. We will reply within one business day.',
-    zh: '\u8c22\u8c22\uff01\u60a8\u7684\u6d88\u606f\u5df2\u53d1\u9001\u3002\u6211\u4eec\u4f1a\u5728\u4e00\u4e2a\u5de5\u4f5c\u65e5\u5185\u56de\u590d\u3002',
     fr: 'Merci ! Votre message a bien \u00e9t\u00e9 envoy\u00e9. Nous vous r\u00e9pondrons sous un jour ouvrable.',
     de: 'Vielen Dank! Ihre Nachricht ist eingegangen. Wir antworten innerhalb eines Werktags.',
     es: '\u00a1Gracias! Su mensaje ha sido enviado. Le responderemos en un d\u00eda h\u00e1bil.',
@@ -35,7 +33,6 @@ const defaultData: Record<string, any> = {
   },
   error_message: {
     en: 'Something went wrong sending your message. Please try again or email us directly.',
-    zh: '\u53d1\u9001\u6d88\u606f\u65f6\u51fa\u9519\u3002\u8bf7\u91cd\u8bd5\u6216\u76f4\u63a5\u7ed9\u6211\u4eec\u53d1\u9001\u90ae\u4ef6\u3002',
     fr: 'Une erreur est survenue. Veuillez r\u00e9essayer ou nous envoyer un e-mail directement.',
     de: 'Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.',
     es: 'Ocurri\u00f3 un error al enviar su mensaje. Intente de nuevo o escr\u00edbanos directamente.',
@@ -43,7 +40,6 @@ const defaultData: Record<string, any> = {
   },
   captcha_label: {
     en: 'Anti-spam: please solve the following',
-    zh: '\u9632\u5783\u573e\uff1a\u8bf7\u89e3\u7b54\u4ee5\u4e0b\u95ee\u9898',
     fr: 'Anti-spam : veuillez r\u00e9soudre',
     de: 'Anti-Spam: bitte l\u00f6sen Sie',
     es: 'Anti-spam: por favor resuelva',
@@ -51,7 +47,6 @@ const defaultData: Record<string, any> = {
   },
   consent_text: {
     en: 'I agree to the processing of my personal data in accordance with the',
-    zh: '\u6211\u540c\u610f\u6309\u7167',
     fr: "J'accepte le traitement de mes donn\u00e9es personnelles conform\u00e9ment \u00e0 la",
     de: 'Ich stimme der Verarbeitung meiner personenbezogenen Daten gem\u00e4\u00df der',
     es: 'Acepto el tratamiento de mis datos personales de acuerdo con la',
@@ -59,7 +54,6 @@ const defaultData: Record<string, any> = {
   },
   consent_link_text: {
     en: 'Privacy Policy',
-    zh: '\u9690\u79c1\u653f\u7b56',
     fr: 'Politique de confidentialit\u00e9',
     de: 'Datenschutzerkl\u00e4rung',
     es: 'Pol\u00edtica de privacidad',
@@ -68,88 +62,83 @@ const defaultData: Record<string, any> = {
   fields: [
     {
       name: 'firstName',
-      label: { en: 'First Name', zh: '\u540d', fr: 'Pr\u00e9nom', de: 'Vorname', es: 'Nombre', pt: 'Nome' },
-      placeholder: { en: '', zh: '', fr: '', de: '', es: '', pt: '' },
+      label: { en: 'First Name', fr: 'Pr\u00e9nom', de: 'Vorname', es: 'Nombre', pt: 'Nome' },
+      placeholder: { en: '', fr: '', de: '', es: '', pt: '' },
     },
     {
       name: 'lastName',
-      label: { en: 'Last Name', zh: '\u59d3', fr: 'Nom de famille', de: 'Nachname', es: 'Apellido', pt: 'Sobrenome' },
-      placeholder: { en: '', zh: '', fr: '', de: '', es: '', pt: '' },
+      label: { en: 'Last Name', fr: 'Nom de famille', de: 'Nachname', es: 'Apellido', pt: 'Sobrenome' },
+      placeholder: { en: '', fr: '', de: '', es: '', pt: '' },
     },
     {
       name: 'companyName',
       label: {
         en: 'Company Name',
-        zh: '\u516c\u53f8\u540d\u79f0',
         fr: 'Entreprise',
         de: 'Unternehmen',
         es: 'Empresa',
         pt: 'Empresa',
       },
-      placeholder: { en: '', zh: '', fr: '', de: '', es: '', pt: '' },
+      placeholder: { en: '', fr: '', de: '', es: '', pt: '' },
     },
     {
       name: 'address',
       label: {
         en: 'Address',
-        zh: '\u5730\u5740',
         fr: 'Adresse',
         de: 'Adresse',
         es: 'Direcci\u00f3n',
         pt: 'Endere\u00e7o',
       },
-      placeholder: { en: '', zh: '', fr: '', de: '', es: '', pt: '' },
+      placeholder: { en: '', fr: '', de: '', es: '', pt: '' },
     },
     {
       name: 'zip',
       label: {
         en: 'Zip / Postal Code',
-        zh: '\u90ae\u653f\u7f16\u7801',
         fr: 'Code postal',
         de: 'Postleitzahl',
         es: 'C\u00f3digo postal',
         pt: 'CEP',
       },
-      placeholder: { en: '', zh: '', fr: '', de: '', es: '', pt: '' },
+      placeholder: { en: '', fr: '', de: '', es: '', pt: '' },
     },
     {
       name: 'country',
-      label: { en: 'Country', zh: '\u56fd\u5bb6', fr: 'Pays', de: 'Land', es: 'Pa\u00eds', pt: 'Pa\u00eds' },
-      placeholder: { en: '', zh: '', fr: '', de: '', es: '', pt: '' },
+      label: { en: 'Country', fr: 'Pays', de: 'Land', es: 'Pa\u00eds', pt: 'Pa\u00eds' },
+      placeholder: { en: '', fr: '', de: '', es: '', pt: '' },
     },
     {
       name: 'email',
       label: {
         en: 'E-mail',
-        zh: '\u90ae\u7bb1',
         fr: 'E-mail',
         de: 'E-Mail',
         es: 'Correo electr\u00f3nico',
         pt: 'E-mail',
       },
-      placeholder: { en: '', zh: '', fr: '', de: '', es: '', pt: '' },
+      placeholder: { en: '', fr: '', de: '', es: '', pt: '' },
     },
     {
       name: 'tel',
       label: {
         en: 'TEL',
-        zh: '\u7535\u8bdd',
         fr: 'T\u00e9l\u00e9phone',
         de: 'Telefon',
         es: 'Tel\u00e9fono',
         pt: 'Telefone',
       },
-      placeholder: { en: '', zh: '', fr: '', de: '', es: '', pt: '' },
+      placeholder: { en: '', fr: '', de: '', es: '', pt: '' },
     },
     {
       name: 'subject',
-      label: { en: 'Subject', zh: '\u4e3b\u9898', fr: 'Sujet', de: 'Betreff', es: 'Asunto', pt: 'Assunto' },
-      placeholder: { en: '', zh: '', fr: '', de: '', es: '', pt: '' },
+      label: { en: 'Subject', fr: 'Sujet', de: 'Betreff', es: 'Asunto', pt: 'Assunto' },
+      placeholder: { en: '', fr: '', de: '', es: '', pt: '' },
     },
     {
       name: 'message',
-      label: { en: 'Message', zh: '\u7559\u8a00', fr: 'Message', de: 'Nachricht', es: 'Mensaje', pt: 'Mensagem' },
-      placeholder: { en: '', zh: '', fr: '', de: '', es: '', pt: '' },
+      label: { en: 'Message', fr: 'Message', de: 'Nachricht', es: 'Mensaje', pt: 'Mensagem' },
+      placeholder: { en: '', fr: '', de: '', es: '', pt: '' },
     },
   ],
 };
