@@ -367,6 +367,14 @@ When renaming URLs/names across the site:
 
 `src/data/biz-solutions/translations/{lang}.ts` 覆盖层 + `getSolutionBySlug(slug, lang)` 深合并（对象递归、数组整体替换）。新翻译一页：在 translations 目录加该 slug 的 override 导出即可，**不要改 EN 数据源**；翻译完成后把期望译文子串登记进 `TOOLS/verify/check-solutions-page.cjs` 的 `EXPECTED` 表做回归。
 
+#### L9. 删除组件前先全仓 grep 引用
+
+`grep "ComponentName" src/` 确认所有引用点后再删（含 import 与 JSX/模板用法）。实例：删除 `ChatWidget.astro` 时只清了 `Layout.astro`，漏了 `src/pages/404.astro` 的独立引用，`astro build` 在 Rollup 解析阶段才报 `Failed to resolve import`。教训：组件在页面内直接渲染（不止 Layout）时，删除必须以 grep 结果为准，不能凭"应该在 Layout 里"的假设。
+
+#### L10. 站内链接必须走 localizePath/localizeHref
+
+硬编码 `/contact` 这类绝对路径在非默认语言页面会跳回英文站。本站 `showDefaultLang=true`，连默认语言也会生成 `/en/...` 前缀页。规则：任何指向站内页面的 href 一律 `localizePath(path, currentLang)`（`src/i18n/utils.ts`）或 `localizeHref`（`src/i18n/routing.ts`），默认语言也不例外。
+
 ---
 
 ## 9. SEO & GEO Internals

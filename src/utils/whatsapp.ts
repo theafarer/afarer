@@ -24,3 +24,8 @@ export function getWhatsAppLink(): string {
 export function getWhatsAppLabel(locale: string): string {
   return getUiForLang(locale)?.['contact.whatsappChat'] || 'Chat on WhatsApp';
 }
+
+/** Contact email from branding; empty string when not configured. */
+export function getContactEmail(): string {
+  return (branding?.contact_email_to || '').toString().trim();
+}

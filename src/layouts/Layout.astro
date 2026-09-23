@@ -13,7 +13,6 @@ import Metadata from '~/components/common/Metadata.astro';
 import Analytics from '~/components/common/Analytics.astro';
 import BasicScripts from '~/components/common/BasicScripts.astro';
 import AIChat from '~/components/widgets/AIChat.astro';
-import ChatWidget from '~/components/ChatWidget.astro';
 import ExitIntentPopup from '~/components/widgets/ExitIntentPopup.astro';
 import WhatsAppFloat from '~/components/widgets/WhatsAppFloat.astro';
 import { getWhatsAppLink, getWhatsAppLabel } from '~/utils/whatsapp';
@@ -29,6 +28,7 @@ import { getSeoSettings } from '~/utils/seo-settings';
 import langData from '~/data/site/languages.yaml';
 import { defaultLang, setLang } from '~/i18n/config';
 import { getLangFromUrl, removeLang, localizePath } from '~/i18n/utils';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 // Static route manifest from the previous build (scripts/_gen-route-manifest.cjs);
 // used to emit hreflang alternates only for languages where the page exists.
 import routeManifest from '~/i18n/generated/route-manifest.json';
@@ -73,6 +73,8 @@ if (!availableRoutes.has(xDefaultTarget)) {
 // statically imported in src/i18n/generated/ui-all.ts) for all components.
 setLang(currentLang);
 const textDirection = language === 'ar' || language === 'he' ? 'rtl' : defaultTextDir || 'ltr';
+const mobileUi = getUiForLang(currentLang);
+const mobileT = (key: string, fallback: string): string => mobileUi?.[key] || fallback;
 ---
 
 <!doctype html>
@@ -172,7 +174,6 @@ const textDirection = language === 'ar' || language === 'he' ? 'rtl' : defaultTe
 
     <BasicScripts />
     <AIChat />
-    <ChatWidget />
     <WhatsAppFloat />
     <ExitIntentPopup />
     <div
@@ -196,14 +197,14 @@ const textDirection = language === 'ar' || language === 'he' ? 'rtl' : defaultTe
         )
       }
       <a
-        href="/contact"
+        href={localizePath('/contact', currentLang)}
         class="flex-1 text-center px-4 py-2.5 bg-sky-600 hover:bg-sky-700 text-white font-semibold rounded-xl text-sm transition-colors"
-        >Get a Quote</a
+        >{mobileT('cta.quote', 'Get a Quote')}</a
       >
       <a
-        href="/oem-odm-manufacturer"
+        href={localizePath('/oem-odm-manufacturer', currentLang)}
         class="flex-1 text-center px-4 py-2.5 bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 text-gray-900 dark:text-white font-semibold rounded-xl text-sm transition-colors"
-        >OEM Info</a
+        >{mobileT('cta.oemInfo', 'OEM Info')}</a
       >
     </div>
     <script is:inline>
