@@ -82,6 +82,7 @@ export const VALID_ICON_NAMES = new Set([
   "tabler:message-circle",
   "tabler:microscope",
   "tabler:mood-smile",
+  "tabler:moon",
   "tabler:news",
   "tabler:package",
   "tabler:package-off",
