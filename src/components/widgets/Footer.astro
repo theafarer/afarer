@@ -183,10 +183,6 @@ const navTextMap: Record<string, string> = {
   'Country Partnership': 'nav.countryPartnership',
   'Co-Branded Collections': 'nav.coBrandedCollections',
   'Clubs & Resorts': 'nav.clubsResorts',
-  SHOP: 'nav.footerShop',
-  PARTNER: 'nav.footerPartner',
-  DISCOVER: 'nav.footerDiscover',
-  SUPPORT: 'nav.footerSupport',
 };
 
 function t(text: string | undefined, locale: string): string {
@@ -239,10 +235,10 @@ const copyrightHtml = String(rawCopyright)
         {getUiForLang(currentLocale)?.['cta.quote'] || 'Get a Quote'} →
       </a>
     </div>
-    <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
       {
         links.map(({ title, links }) => (
-          <div class="col-span-6 md:col-span-2">
+          <div>
             <div class="text-white/90 font-medium mb-2">{t(title, currentLocale)}</div>
             {links && Array.isArray(links) && links.length > 0 && (
               <ul class="text-sm">
