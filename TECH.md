@@ -1,9 +1,9 @@
 ﻿# afarer — Technical Documentation
 
-> Last updated: 2026-08-18
+> Last updated: 2026-09-23
 > Project path: `E:\github\afarer`
 > Production: https://afarer.com (Cloudflare Pages)
-> Build: `npm run build` → `dist/` (7,564 pages)
+> Build: `npm run build` → `dist/` (13,858 pages, 34 languages)
 
 ---
 
@@ -11,7 +11,7 @@
 
 ### 1.1 Pure Static Generation (`output: 'static'`)
 
-All ~7,564 pages are pre-rendered at build time. No SSR adapter. API endpoints are handled by standalone Workers at the edge.
+All ~13,858 pages are pre-rendered at build time. No SSR adapter. API endpoints are handled by standalone Workers at the edge.
 
 **Why not `output: 'server'`:** The site is built and deployed as static Cloudflare Pages (`dist/` + `functions/_middleware.ts`). `scripts/patch-worker.mjs` only applies to a `output: 'server'` Cloudflare Workers+Assets build (`dist/server/wrangler.json`); it is **not** part of the current `npm run build` chain.
 
@@ -122,9 +122,13 @@ See `workers/*/wrangler.toml` for per-worker config. Key bindings:
 
 ## 4. Internationalization (i18n)
 
-### 4.1 Supported Languages (22)
+### 4.1 Supported Languages (34)
 
-`en`, `zh`, `fr`, `de`, `es`, `pt`, `ar` (RTL), `it`, `ja`, `ko`, `ru`, `pl`, `nl`, `sv`, `no`, `el`, `tr`, `fi`, `cs`, `da`, `ro`, `th`
+`en`, `fr`, `de`, `es`, `pt`, `ar` (RTL), `it`, `ja`, `ko`, `ru`, `pl`, `nl`, `sv`, `no`, `el`, `tr`, `fi`, `cs`, `da`, `ro`, `th`, `hr`, `hu`, `sk`, `bg`, `sl`, `sr`, `id`, `he` (RTL), `ms`, `lt`, `lv`, `et`, `tl`
+
+- `zh` was removed (2026-09); its re-appearance in `dist/` is a regression — checked by `TOOLS/verify/verify-langs.cjs`.
+- Language list SSOT: `src/data/site/languages.yaml` (`code`/`name`/`locale`/`textDirection`/`enabled`). Enabled languages drive `getStaticPaths` via `src/i18n/config.ts` and the header language switcher.
+- New languages fall back to English at runtime (`map[lang][key] || map.en[key]`) **without** needing an entry in `i18n-config.json` — never register a language there with an empty object/empty strings, that breaks the `||` fallback.
 
 ### 4.2 Translation Data Pipeline
 
@@ -320,6 +324,49 @@ When renaming URLs/names across the site:
 - `/keystatic/validate-links` — validate all internal links resolve
 - Sitemap, search index, and RSS feed auto-regenerate on build
 
+### 8.8 Lessons Learned — 历史 technical 错误记录（防再犯）
+
+以下均为本项目实际踩过的坑，按时间倒序追加。**新会话/新协作者必读。**
+
+#### L1. Windows PowerShell 5.1 命令行陷阱（多次踩中）
+
+| 陷阱 | 症状 | 规则 |
+|------|------|------|
+| `node -e "复杂脚本"` 引号被 PS 解析器吞掉/拆散 | ParserError（乱码报错指向意外的 `)`） | **禁止**在 PS 中内联复杂 `node -e`；一律写成 `.cjs` 脚本文件再 `node xxx.cjs` |
+| `&&` 链接命令 | `The token '&&' is not a valid statement separator` | PS 5.1 用 `cmd1; if ($?) { cmd2 }` |
+| `git ls-files ... \| head` / `rg` / `gh` | 命令不存在 | 本机未装 head/rg/gh；截断用 PS 原生方式，文件搜索用专用工具 |
+| `ls src/[lang]` 方括号被当通配符 | 路径解析错误/找不到 | 路径含 `[]` 必须用 `-LiteralPath` |
+| PS 控制台显示 UTF-8 为乱码 | 看似文件坏了 | 控制台 codepage 936 显示假象；**以 node 读取结果为准**，不要据此"修复"文件 |
+| `git commit -m "..."` 双引号消息被吞 | commit message 残缺 | 多行/含特殊字符消息一律 `git commit -F 临时文件` |
+
+#### L2. Git 远程名不是 origin
+
+本仓库远程名为 `theafarer`（`https://github.com/theafarer/afarer.git`），`git push origin main` 会失败。推送用 `git push theafarer main`。
+
+#### L3. Node 构建内存不足
+
+13k+ 页面构建超默认堆内存。本地构建前设置 `$env:NODE_OPTIONS="--max-old-space-size=4096"`（`astro check` 需 6144）。
+
+#### L4. 全站关键词搜索的假阳性（Brand Partners 教训）
+
+删除首页 Brand Partners 模块后，用 "brand partners" 全文搜索仍命中 en/ja/he/ar —— 实为 "Co-Brand Partners" 卡片标题与质保条款句子的合法文案，**不是残留**。教训：验证删除要用足够特异的关键词（如 `wavefella`、`foida-logo`），并用 `TOOLS/verify/check-dist.cjs --absent` 而非裸 grep；失败项必须人工复核上下文。
+
+#### L5. i18n-config.json 空语言段破坏回退
+
+运行时回退是 `map[lang][key] || map.en[key]`。若为某语言写入空对象或空串值，`||` 判空后仍回退 en 尚可，但**部分键有值部分为空**会造成同页混排。规则：新语言不写入 i18n-config.json；已翻译语言用 `TOOLS/i18n-manage/ui-keys.cjs set` 或 `TOOLS/i18n-merge/_merge-langs.cjs` 补齐整段。
+
+#### L6. 多语言模块增删必须走"脚本 + 全语言验证"流程
+
+一次改动产出 34 种语言页面，人工抽查必然漏。标准流程（详见 `TOOLS/tool_instrction.md` §5）：改代码 → `ui-keys.cjs` 清死键/加新键 → `npm run build` → `check-dist.cjs --absent/--present` 全语言断言 → `verify-langs.cjs` 整站六项。**先构建再验证，验证通过才算完成。**
+
+#### L7. 生成物漂移属预期
+
+`public/llms-full.txt` 随每次构建漂移（聚合 ja 等语言的合法标题）；`src/i18n/generated/**`、`public/data/*.json` 由构建链再生。diff 时识别这些文件，不要手工"修"它们，也不要对其内容变化大惊小怪。
+
+#### L8. Solutions 多语言机制
+
+`src/data/biz-solutions/translations/{lang}.ts` 覆盖层 + `getSolutionBySlug(slug, lang)` 深合并（对象递归、数组整体替换）。新翻译一页：在 translations 目录加该 slug 的 override 导出即可，**不要改 EN 数据源**；翻译完成后把期望译文子串登记进 `TOOLS/verify/check-solutions-page.cjs` 的 `EXPECTED` 表做回归。
+
 ---
 
 ## 9. SEO & GEO Internals
@@ -406,7 +453,9 @@ Dashboards: `/internal/seo/{index,brand-os,brand,social,rules,tasks,queries,work
 | `src/lib/link-refactor.ts` | URL/name refactoring engine |
 | `scripts/_gen-seo-meta.cjs` | Generates `src/i18n/generated/seo-meta.ts` |
 | `scripts/_gen-pages.cjs` / `_gen-uiall.cjs` | Generate page modules / ui-all.ts |
-| `TOOLS/tool_instrction.md` | One-off editing/i18n script usage: meta-inject / i18n-merge / i18n-fix / one-off fixers |
+| `TOOLS/tool_instrction.md` | 工具总目录文档：meta-inject / i18n-merge / i18n-fix / one-off / **verify（构建后全语言回归验证）** / **i18n-manage（UI 键批量管理 + CJK 泄漏扫描）** |
+| `TOOLS/verify/*.cjs` | 构建后回归验证：`verify-langs.cjs`（六项整站）、`check-dist.cjs`（--present/--absent 全语言断言）、`scan-en-leak.cjs`、`check-solutions-page.cjs` — 模块增删后必跑 |
+| `TOOLS/i18n-manage/*.cjs` | `ui-keys.cjs`（i18n UI 键 count/missing/add/remove/set）、`scan-cjk.cjs`（src/dist 中文泄漏扫描） |
 | `TOOLS/meta-inject/*` | SEO meta batch injection (`_inject-meta.cjs` + `_meta-{lang}.cjs` data), unused for builds |
 | `workers/contact-worker/index.ts` | Live `POST /api/contact` handler (validate + Resend email) |
 | `scripts/patch-worker.mjs` | `output: 'server'` only; subdomain routing + KV injection (not in current build) |
