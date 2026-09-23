@@ -40,9 +40,13 @@ console.log('2. /hr/about renders EN fallback:', /About/.test(hr));
 const alt = [...hr.matchAll(/hreflang="([^"]+)"/g)].map((m) => m[1]).sort();
 const newLangs = ['hr', 'he', 'tl'];
 console.log(
-  '3. hreflang count:', alt.length,
-  '| has hr,he,tl:', newLangs.every((l) => alt.includes(l)),
-  '| has zh:', alt.includes('zh'), '(must be false)'
+  '3. hreflang count:',
+  alt.length,
+  '| has hr,he,tl:',
+  newLangs.every((l) => alt.includes(l)),
+  '| has zh:',
+  alt.includes('zh'),
+  '(must be false)'
 );
 
 // 4. RTL
@@ -54,7 +58,10 @@ for (const l of ['he', 'ar']) {
 // 5. language switcher — links are page-relative: /xx/about
 const en = fs.readFileSync(path.join(DIST, 'en/about/index.html'), 'utf8');
 const missing = locales.filter((l) => !en.includes(`href="/${l}/about"`));
-console.log('5. switcher: locales missing from /en/about:', missing.length ? missing.join(',') : `none (all ${locales.length} present)`);
+console.log(
+  '5. switcher: locales missing from /en/about:',
+  missing.length ? missing.join(',') : `none (all ${locales.length} present)`
+);
 
 // 6. CJK scan on non-ja/ko dist HTML（日本語/한국어 为切换器标签白名单）
 const CJK = /[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]/;
@@ -79,7 +86,11 @@ for (const f of scanFiles) {
   scanned++;
   const rel = path.relative(DIST, f).replace(/\\/g, '/');
   let c;
-  try { c = fs.readFileSync(f, 'utf8'); } catch { continue; }
+  try {
+    c = fs.readFileSync(f, 'utf8');
+  } catch {
+    continue;
+  }
   if (!CJK.test(c)) continue;
   const strs = c.match(/[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uac00-\ud7af]{1,20}/g) || [];
   const filtered = [...new Set(strs)].filter(

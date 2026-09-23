@@ -23,7 +23,10 @@ const langs = [];
 for (const a of args) {
   if (a === '--page') continue;
   // --page 的下一个参数是路径
-  if (args.indexOf(a) > 0 && args[args.indexOf(a) - 1] === '--page') { page = a; continue; }
+  if (args.indexOf(a) > 0 && args[args.indexOf(a) - 1] === '--page') {
+    page = a;
+    continue;
+  }
   langs.push(a);
 }
 if (!langs.length) {

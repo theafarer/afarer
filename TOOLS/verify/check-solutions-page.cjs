@@ -63,8 +63,15 @@ const langs = args.slice(1).length ? args.slice(1) : Object.keys(EXPECTED[slug])
 let failed = 0;
 for (const l of langs) {
   const p = path.join(DIST, l, 'solutions', slug, 'index.html');
-  if (!fs.existsSync(p)) { console.log(`FAIL ${l}: file not found ${path.relative(DIST, p)}`); failed++; continue; }
-  if (!EXPECTED[slug][l]) { console.log(`SKIP ${l}: EXPECTED 表未登记该语言`); continue; }
+  if (!fs.existsSync(p)) {
+    console.log(`FAIL ${l}: file not found ${path.relative(DIST, p)}`);
+    failed++;
+    continue;
+  }
+  if (!EXPECTED[slug][l]) {
+    console.log(`SKIP ${l}: EXPECTED 表未登记该语言`);
+    continue;
+  }
   const s = fs.readFileSync(p, 'utf8');
   console.log(`=== ${l} ===`);
   let miss = 0;
@@ -74,7 +81,10 @@ for (const l of langs) {
     console.log(`  ${ok ? 'OK  ' : 'MISS'} ${exp}`);
   }
   for (const e of EN_LEFTOVERS) {
-    if (s.includes('>' + e) || s.includes(' ' + e)) { console.log(`  EN LEFTOVER: ${e}`); miss++; }
+    if (s.includes('>' + e) || s.includes(' ' + e)) {
+      console.log(`  EN LEFTOVER: ${e}`);
+      miss++;
+    }
   }
   if (miss) failed++;
 }

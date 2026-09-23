@@ -35,13 +35,20 @@ const absent = [];
 const present = [];
 let mode = null;
 for (const a of args) {
-  if (a === '--page' || a === '--absent' || a === '--present') { mode = a; continue; }
-  if (mode === '--page') { page = a; mode = null; }
-  else if (mode === '--absent') absent.push(a);
+  if (a === '--page' || a === '--absent' || a === '--present') {
+    mode = a;
+    continue;
+  }
+  if (mode === '--page') {
+    page = a;
+    mode = null;
+  } else if (mode === '--absent') absent.push(a);
   else if (mode === '--present') present.push(a);
 }
 if (!absent.length && !present.length) {
-  console.error('用法: node TOOLS/verify/check-dist.cjs [--page dist相对路径] [--absent s1 s2 ...] [--present s1 s2 ...]');
+  console.error(
+    '用法: node TOOLS/verify/check-dist.cjs [--page dist相对路径] [--absent s1 s2 ...] [--present s1 s2 ...]'
+  );
   process.exit(1);
 }
 
@@ -66,12 +73,26 @@ for (const l of locales) {
   let pass = true;
   const detail = [];
   for (const t of targets) {
-    if (!fs.existsSync(t)) { pass = false; detail.push(`MISSING FILE ${path.relative(DIST, t)}`); continue; }
+    if (!fs.existsSync(t)) {
+      pass = false;
+      detail.push(`MISSING FILE ${path.relative(DIST, t)}`);
+      continue;
+    }
     const c = fs.readFileSync(t, 'utf8');
-    for (const s of absent) if (c.includes(s)) { pass = false; detail.push(`RESIDUAL "${s}" in ${path.relative(DIST, t)}`); }
-    for (const s of present) if (!c.includes(s)) { pass = false; detail.push(`NOT FOUND "${s}" in ${path.relative(DIST, t)}`); }
+    for (const s of absent)
+      if (c.includes(s)) {
+        pass = false;
+        detail.push(`RESIDUAL "${s}" in ${path.relative(DIST, t)}`);
+      }
+    for (const s of present)
+      if (!c.includes(s)) {
+        pass = false;
+        detail.push(`NOT FOUND "${s}" in ${path.relative(DIST, t)}`);
+      }
   }
-  console.log(`${pass ? 'PASS' : 'FAIL'}  /${l}/${page || '(all html)'}${detail.length ? '  <= ' + detail.slice(0, 5).join(' ; ') : ''}`);
+  console.log(
+    `${pass ? 'PASS' : 'FAIL'}  /${l}/${page || '(all html)'}${detail.length ? '  <= ' + detail.slice(0, 5).join(' ; ') : ''}`
+  );
   if (!pass) failed++;
 }
 console.log(failed === 0 ? `ALL PASS (${locales.length} languages)` : `${failed}/${locales.length} languages FAILED`);

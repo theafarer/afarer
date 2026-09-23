@@ -18,7 +18,8 @@ TOOLS/
 │   └── check-solutions-page.cjs# B2B solutions 详情页翻译逐项断言（数据驱动）
 ├── i18n-manage/            # i18n-config.json UI 键批量管理
 │   ├── ui-keys.cjs             # UI 键 count/missing/remove/add/set（全语言）
-│   └── scan-cjk.cjs            # 源码/产物 CJK（中文）泄漏扫描
+│   ├── scan-cjk.cjs            # 源码/产物 CJK（中文）泄漏扫描
+│   └── sync-footer-from-header.cjs # navigation*.yaml 页脚 links 同步为 header.links 结构
 ├── meta-inject/            # SEO meta 批量注入工具 + 各语言 meta 数据源
 │   ├── _inject-meta.cjs        # 通用注入器（读 _meta-{lang}.cjs → 写入 {lang}/*.yaml）
 │   ├── _inject-en-meta.cjs     # 英文页 meta 注入（PAGE_META 数据驱动）
@@ -90,12 +91,12 @@ TOOLS/
 
 多语言站点一次改动会产出 34 种语言的页面，人工逐页检查不现实。**每次模块增删/内容修改并 `npm run build` 之后，务必用本节脚本做回归验证。**
 
-| 文件                        | 用途                                                                                                                                                                       | 用法（仓库根，需先构建 dist）                                                                                                  |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `verify-langs.cjs`          | 六项整站验证：① dist/zh 不存在 ② 未翻译语言 EN 回退 ③ hreflang 交替链接 ④ RTL 语言 dir=rtl ⑤ 语言切换器链接齐全 ⑥ 非 ja/ko 页面无 CJK 泄漏（自动跳过 llms*.txt 聚合文件）。 | `node TOOLS/verify/verify-langs.cjs`                                                                                             |
-| `check-dist.cjs`            | **通用内容核查**：对全部 34 种语言的指定页面断言关键词必须存在（`--present`）或必须不存在（`--absent`）。删除模块后查残留、新增功能后查生效都靠它。退出码非 0 = 有失败。       | `node TOOLS/verify/check-dist.cjs --page index.html --absent wavefella foida-logo`<br>`node TOOLS/verify/check-dist.cjs --page index.html --present "grid-cols-4 gap-1"` |
-| `scan-en-leak.cjs`          | 已翻译语言（fr/es/de 等）页面英文残留扫描：剥离标签后按"高 ASCII 比例 + 无重音字符 + 含英文虚词"启发式判定，结果需人工复核。                                                  | `node TOOLS/verify/scan-en-leak.cjs fr es`<br>`node TOOLS/verify/scan-en-leak.cjs fr --page about/index.html`                    |
-| `check-solutions-page.cjs`  | B2B solutions 详情页（`/[lang]/solutions/[slug]`）翻译逐项断言。期望译文子串维护在脚本内 `EXPECTED` 表，新翻译一页就补一组条目。                                              | `node TOOLS/verify/check-solutions-page.cjs corporate-sup-event-package fr es`                                                  |
+| 文件                       | 用途                                                                                                                                                                        | 用法（仓库根，需先构建 dist）                                                                                                                                            |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `verify-langs.cjs`         | 六项整站验证：① dist/zh 不存在 ② 未翻译语言 EN 回退 ③ hreflang 交替链接 ④ RTL 语言 dir=rtl ⑤ 语言切换器链接齐全 ⑥ 非 ja/ko 页面无 CJK 泄漏（自动跳过 llms*.txt 聚合文件）。 | `node TOOLS/verify/verify-langs.cjs`                                                                                                                                     |
+| `check-dist.cjs`           | **通用内容核查**：对全部 34 种语言的指定页面断言关键词必须存在（`--present`）或必须不存在（`--absent`）。删除模块后查残留、新增功能后查生效都靠它。退出码非 0 = 有失败。    | `node TOOLS/verify/check-dist.cjs --page index.html --absent wavefella foida-logo`<br>`node TOOLS/verify/check-dist.cjs --page index.html --present "grid-cols-4 gap-1"` |
+| `scan-en-leak.cjs`         | 已翻译语言（fr/es/de 等）页面英文残留扫描：剥离标签后按"高 ASCII 比例 + 无重音字符 + 含英文虚词"启发式判定，结果需人工复核。                                                | `node TOOLS/verify/scan-en-leak.cjs fr es`<br>`node TOOLS/verify/scan-en-leak.cjs fr --page about/index.html`                                                            |
+| `check-solutions-page.cjs` | B2B solutions 详情页（`/[lang]/solutions/[slug]`）翻译逐项断言。期望译文子串维护在脚本内 `EXPECTED` 表，新翻译一页就补一组条目。                                            | `node TOOLS/verify/check-solutions-page.cjs corporate-sup-event-package fr es`                                                                                           |
 
 **多语言模块增删标准流程（重要）：**
 
@@ -116,10 +117,11 @@ TOOLS/
 
 UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键运行时回退 en）。修改后必须重建同步生成物（见文末注意事项）。
 
-| 文件           | 用途                                                                                                                                                                             | 用法（仓库根）                                                                          |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `ui-keys.cjs`  | UI 键全语言批量操作：`count`（各语言键数）、`missing`（相对 en 缺失键）、`remove`（模块下线清死键）、`add`（新键先写 en）、`set`（为某语言写译文）。有防呆：重复 add、set 不存在的键/语言均拒绝。 | `node TOOLS/i18n-manage/ui-keys.cjs count`<br>`node TOOLS/i18n-manage/ui-keys.cjs remove home.resources.brandPartners`<br>`node TOOLS/i18n-manage/ui-keys.cjs add home.newKey "New text"`<br>`node TOOLS/i18n-manage/ui-keys.cjs set fr home.newKey "Nouveau texte"` |
-| `scan-cjk.cjs` | CJK（中文）泄漏扫描：`src` 模式扫 src/ + public/ 源码，`dist` 模式扫产物（跳过 ja/ko/_astro/llms*.txt）。白名单：切换器语言标签（日本語/한국어/中文）。                                             | `node TOOLS/i18n-manage/scan-cjk.cjs src`<br>`node TOOLS/i18n-manage/scan-cjk.cjs dist`    |
+| 文件                          | 用途                                                                                                                                                                                                                                                                                                                | 用法（仓库根）                                                                                                                                                                                                                                                        |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ui-keys.cjs`                 | UI 键全语言批量操作：`count`（各语言键数）、`missing`（相对 en 缺失键）、`remove`（模块下线清死键）、`add`（新键先写 en）、`set`（为某语言写译文）。有防呆：重复 add、set 不存在的键/语言均拒绝。                                                                                                                   | `node TOOLS/i18n-manage/ui-keys.cjs count`<br>`node TOOLS/i18n-manage/ui-keys.cjs remove home.resources.brandPartners`<br>`node TOOLS/i18n-manage/ui-keys.cjs add home.newKey "New text"`<br>`node TOOLS/i18n-manage/ui-keys.cjs set fr home.newKey "Nouveau texte"`  |
+| `scan-cjk.cjs`                | CJK（中文）泄漏扫描：`src` 模式扫 src/ + public/ 源码，`dist` 模式扫产物（跳过 ja/ko/_astro/llms*.txt）。白名单：切换器语言标签（日本語/한국어/中文）。                                                                                                                                                             | `node TOOLS/i18n-manage/scan-cjk.cjs src`<br>`node TOOLS/i18n-manage/scan-cjk.cjs dist`                                                                                                                                                                               |
+| `sync-footer-from-header.cjs` | 将全部 `src/data/site/navigation*.yaml`（EN + 21 语言镜像）的 `footer.links` 整体替换为各自 `header.links` 分组结构，使页脚与导航栏一致（5 组：Products / Explore Afarer / Co-Brand / Country Partners / Support）。分组标题在渲染时经 Footer navTextMap → i18n-config 键翻译。改 header 结构后跑一次即可同步页脚。 | 在仓库根 `node TOOLS/i18n-manage/sync-footer-from-header.cjs`，随后 `npm run build`；如增删分组，需同步维护 Footer.astro 的 navTextMap 与 i18n-config 对应键（用 ui-keys.cjs add/remove）。注意：navigation.{lang}.yaml 是 Keystatic 管理端镜像，构建仅读 EN 根文件。 |
 
 ---
 

@@ -46,16 +46,25 @@ switch (cmd) {
       if (l === 'en') continue;
       if (target && l !== target) continue;
       const miss = enKeys.filter((k) => !(k in cfg[l]));
-      if (miss.length) console.log(`${l}: ${miss.length} missing => ${miss.slice(0, 8).join(', ')}${miss.length > 8 ? ' ...' : ''}`);
+      if (miss.length)
+        console.log(`${l}: ${miss.length} missing => ${miss.slice(0, 8).join(', ')}${miss.length > 8 ? ' ...' : ''}`);
       else console.log(`${l}: 0 missing (complete)`);
     }
     break;
   }
 
   case 'remove': {
-    if (!rest.length) { console.error('用法: ui-keys.cjs remove <key> [key...]'); process.exit(1); }
+    if (!rest.length) {
+      console.error('用法: ui-keys.cjs remove <key> [key...]');
+      process.exit(1);
+    }
     let removed = 0;
-    for (const l of langs) for (const k of rest) if (k in cfg[l]) { delete cfg[l][k]; removed++; }
+    for (const l of langs)
+      for (const k of rest)
+        if (k in cfg[l]) {
+          delete cfg[l][k];
+          removed++;
+        }
     save();
     console.log(`removed ${removed} keys across ${langs.length} langs; en now ${Object.keys(cfg.en).length} keys`);
     break;
@@ -63,9 +72,15 @@ switch (cmd) {
 
   case 'add': {
     const [key, ...val] = rest;
-    if (!key || !val.length) { console.error('用法: ui-keys.cjs add <key> <en-value>'); process.exit(1); }
+    if (!key || !val.length) {
+      console.error('用法: ui-keys.cjs add <key> <en-value>');
+      process.exit(1);
+    }
     const value = val.join(' ');
-    if (key in cfg.en) { console.error(`ABORT: key "${key}" already exists in en`); process.exit(1); }
+    if (key in cfg.en) {
+      console.error(`ABORT: key "${key}" already exists in en`);
+      process.exit(1);
+    }
     cfg.en[key] = value;
     save();
     console.log(`added "${key}" to en (other langs fall back to en at runtime)`);
@@ -74,9 +89,18 @@ switch (cmd) {
 
   case 'set': {
     const [l, key, ...val] = rest;
-    if (!l || !key || !val.length) { console.error('用法: ui-keys.cjs set <lang> <key> <value>'); process.exit(1); }
-    if (!cfg[l]) { console.error(`ABORT: lang "${l}" not in i18n-config.json (do NOT create empty sections — see header warning)`); process.exit(1); }
-    if (!(key in cfg.en)) { console.error(`ABORT: key "${key}" not in en baseline; run "add" first`); process.exit(1); }
+    if (!l || !key || !val.length) {
+      console.error('用法: ui-keys.cjs set <lang> <key> <value>');
+      process.exit(1);
+    }
+    if (!cfg[l]) {
+      console.error(`ABORT: lang "${l}" not in i18n-config.json (do NOT create empty sections — see header warning)`);
+      process.exit(1);
+    }
+    if (!(key in cfg.en)) {
+      console.error(`ABORT: key "${key}" not in en baseline; run "add" first`);
+      process.exit(1);
+    }
     cfg[l][key] = val.join(' ');
     save();
     console.log(`set ${l}["${key}"]`);
