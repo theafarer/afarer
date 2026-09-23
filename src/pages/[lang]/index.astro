@@ -5,6 +5,7 @@ export const prerender = true;
 import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import { products } from '~/data/products';
+import { localizeProduct } from '~/utils/product-i18n';
 
 import JsonLd from '~/components/common/JsonLd.astro';
 import TestimonialCarousel from '~/components/widgets/TestimonialCarousel.astro';
@@ -225,8 +226,12 @@ const catalogCategories = [
 ];
 const groupedProducts: Record<string, typeof products> = {};
 for (const cat of catalogCategories) {
-  groupedProducts[cat.key] = products.filter((p) => p.category === cat.key).slice(0, 6);
+  groupedProducts[cat.key] = products
+    .filter((p) => p.category === cat.key)
+    .slice(0, 6)
+    .map((p) => localizeProduct(p, lang || defaultLang));
 }
+const localizedProducts = products.map((p) => localizeProduct(p, lang || defaultLang));
 ---
 
 <Layout metadata={metadata}>
@@ -2450,7 +2455,7 @@ for (const cat of catalogCategories) {
       brand: {
         '@type': 'Brand',
         name: 'Afarer',
-        brand: products.map((p) => ({
+        brand: localizedProducts.map((p) => ({
           '@type': 'Product',
           name: p.name,
           category: p.category,

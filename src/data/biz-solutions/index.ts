@@ -7288,8 +7288,27 @@ const solutions: BizSolution[] = [
 
 export default solutions;
 
-export function getSolutionBySlug(slug: string): BizSolution | undefined {
-  return solutions.find((s) => s.slug === slug);
+import { solutionTranslations } from './translations';
+
+function deepMerge<T>(base: T, override: unknown): T {
+  if (override === null || override === undefined) return base;
+  if (Array.isArray(base) || Array.isArray(override)) return (override as T) ?? base;
+  if (typeof base === 'object' && typeof override === 'object') {
+    const out: Record<string, unknown> = { ...(base as Record<string, unknown>) };
+    for (const [k, v] of Object.entries(override as Record<string, unknown>)) {
+      const bv = (base as Record<string, unknown>)[k];
+      out[k] = bv !== undefined && bv !== null && typeof bv === 'object' ? deepMerge(bv, v) : v;
+    }
+    return out as T;
+  }
+  return (override as T) ?? base;
+}
+
+export function getSolutionBySlug(slug: string, lang?: string): BizSolution | undefined {
+  const found = solutions.find((s) => s.slug === slug);
+  if (!found) return undefined;
+  const override = (lang && solutionTranslations[lang]?.[slug]) || undefined;
+  return override ? deepMerge(found, override) : found;
 }
 
 export function getAllSlugs(): string[] {

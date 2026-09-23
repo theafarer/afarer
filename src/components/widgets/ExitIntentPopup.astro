@@ -13,14 +13,23 @@ const { title, subtitle, buttonText, buttonHref, delay = 3000 } = Astro.props;
 
 const currentLocale = getLangFromUrl(Astro.url);
 const fr = currentLocale === 'fr';
+const es = currentLocale === 'es';
 const popupTitle =
-  title ?? (fr ? 'Avant de partir — Téléchargez notre guide OEM' : 'Before You Go — Download Our OEM Guide');
+  title ??
+  (fr
+    ? 'Avant de partir — Téléchargez notre guide OEM'
+    : es
+      ? 'Antes de irte — Descarga nuestra guía OEM'
+      : 'Before You Go — Download Our OEM Guide');
 const popupSubtitle =
   subtitle ??
   (fr
     ? 'Découvrez comment lancer votre marque de SUP en marque blanche grâce à notre livre blanc complet sur la fabrication. 42 pages couvrant la conception des moules, le contrôle qualité, la conformité et la logistique.'
-    : 'Learn how to launch your private label SUP brand with our complete manufacturing white paper. 42 pages covering mold design, QC, compliance, and logistics.');
-const popupButtonText = buttonText ?? (fr ? 'Télécharger le guide gratuit' : 'Download Free Guide');
+    : es
+      ? 'Descubre cómo lanzar tu marca de SUP de marca privada con nuestro libro blanco completo de fabricación. 42 páginas que cubren diseño de moldes, control de calidad, cumplimiento y logística.'
+      : 'Learn how to launch your private label SUP brand with our complete manufacturing white paper. 42 pages covering mold design, QC, compliance, and logistics.');
+const popupButtonText =
+  buttonText ?? (fr ? 'Télécharger le guide gratuit' : es ? 'Descargar la guía gratis' : 'Download Free Guide');
 const popupButtonHref = buttonHref ?? `/${currentLocale}/whitepaper/oem-sup-manufacturing-guide`;
 const bullets = fr
   ? [
@@ -28,11 +37,17 @@ const bullets = fr
       'Check-list d’audit d’usine et modèles de NDA inclus',
       'Études de cas réelles de lancements de marques, avec budgets',
     ]
-  : [
-      '10 chapters covering every stage of OEM production',
-      'Factory audit checklist & NDA templates included',
-      'Real brand launch case studies with budgets',
-    ];
+  : es
+    ? [
+        '10 capítulos que cubren cada etapa de la producción OEM',
+        'Checklist de auditoría de fábrica y plantillas de NDA incluidas',
+        'Casos reales de lanzamiento de marcas, con presupuestos',
+      ]
+    : [
+        '10 chapters covering every stage of OEM production',
+        'Factory audit checklist & NDA templates included',
+        'Real brand launch case studies with budgets',
+      ];
 ---
 
 <div
@@ -94,7 +109,13 @@ const bullets = fr
         id="exit-intent-dismiss"
         class="mt-3 w-full text-center text-sm text-gray-400 hover:text-gray-600 dark:hover:text-slate-300 transition-colors"
       >
-        {fr ? 'Non merci, je vais continuer à explorer le site' : 'No thanks, I’ll explore the site'}
+        {
+          fr
+            ? 'Non merci, je vais continuer à explorer le site'
+            : es
+              ? 'No gracias, seguiré explorando el sitio'
+              : 'No thanks, I’ll explore the site'
+        }
       </button>
     </div>
   </div>
