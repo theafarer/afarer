@@ -199,7 +199,7 @@ function generateSocialPosts(pageSlug) {
     },
     {
       platform: 'tiktok',
-      content: `${hook} 馃憜 Full guide at afarer.com${url}`,
+      content: `${hook} 📜 Full guide at afarer.com${url}`,
       hashtags: hashtags.slice(0, 3),
       cta: 'Full guide in bio',
     },

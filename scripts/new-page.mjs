@@ -34,14 +34,14 @@ const ROOT = path.resolve(__dirname, '..');
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 const ask = (q) => new Promise((r) => rl.question(q, r));
 
-// 鈹€鈹€ Constants 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+// ── Constants ────────────────────────────────────────────────────────────────
 const LOCALES = ['en', 'de', 'es', 'fr', 'it', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'ar'];
 const LANG_LABELS = {
   en: 'English',
-  fr: 'Fran莽ais',
+  fr: 'Français',
   de: 'Deutsch',
-  es: 'Espa帽ol',
-  pt: 'Portugu锚s',
+  es: 'Español',
+  pt: 'Português',
   it: 'Italiano',
   ja: 'Japanese',
   ko: 'Korean',
@@ -58,7 +58,7 @@ function slugify(s) {
     .replace(/^-|-$/g, '');
 }
 
-// 鈹€鈹€ File helpers 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+// ── File helpers ─────────────────────────────────────────────────────────────
 
 function read(p) {
   return fs.readFileSync(path.resolve(ROOT, p), 'utf-8');
@@ -67,13 +67,13 @@ function write(p, content) {
   const full = path.resolve(ROOT, p);
   fs.mkdirSync(path.dirname(full), { recursive: true });
   fs.writeFileSync(full, content, 'utf-8');
-  console.log(`  鉁?${p}`);
+  console.log(`  ✓ ${p}`);
 }
 function exists(p) {
   return fs.existsSync(path.resolve(ROOT, p));
 }
 
-// 鈹€鈹€ 1. Page Content YAML 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+// ── 1. Page Content YAML ─────────────────────────────────────────────────────
 
 async function createPageContent(name) {
   name = slugify(name);
@@ -101,14 +101,14 @@ cta:
       // English goes to src/data/pages/
       const fp = `src/data/pages/${name}.yaml`;
       if (exists(fp)) {
-        console.log(`  鈼?${fp} (exists, skipped)`);
+        console.log(`  ☑${fp} (exists, skipped)`);
         continue;
       }
       write(fp, yaml);
     } else {
       const fp = `src/data/pages/${code}/${name}.yaml`;
       if (exists(fp)) {
-        console.log(`  鈼?${fp} (exists, skipped)`);
+        console.log(`  ☑${fp} (exists, skipped)`);
         continue;
       }
       const localized = yaml.replace(
@@ -122,13 +122,13 @@ cta:
   console.log(`      Register the Astro route in src/pages/[lang]/ if needed.`);
 }
 
-// 鈹€鈹€ 2. Product 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+// ── 2. Product ───────────────────────────────────────────────────────────────
 
 async function createProduct(id) {
   id = slugify(id);
   const mdx = `src/content/products/${id}.mdx`;
   if (exists(mdx)) {
-    console.log(`  鉁?${mdx} already exists. Aborting.`);
+    console.log(`  ✗ ${mdx} already exists. Aborting.`);
     return;
   }
 
@@ -226,7 +226,7 @@ metadata:
     const marker = `  ${code}: {`;
     const idx = tContent.indexOf(marker);
     if (idx === -1) {
-      console.log(`  鈼?${code} block not found in product-texts.ts, insert manually`);
+      console.log(`  ✗ ${code} block not found in product-texts.ts, insert manually`);
       continue;
     }
     // Find the last } before the next language block or end
@@ -246,7 +246,7 @@ metadata:
       }
     }
     if (closeIdx === -1) {
-      console.log(`  鉁?Could not parse ${code} block`);
+      console.log(`  ✗ Could not parse ${code} block`);
       continue;
     }
     const blockEnd = blockStart + closeIdx;
@@ -255,20 +255,20 @@ metadata:
     const before = tContent.slice(0, lastBrace);
     const after = tContent.slice(lastBrace);
     tContent = before + textEntry + after;
-    console.log(`  鉁?${code} product-texts.ts (appended)`);
+    console.log(`  ✓ ${code} product-texts.ts (appended)`);
   }
 
   write(textsPath, tContent);
   console.log(`\nNext: add translations to product-texts.ts for field values marked TODO.`);
 }
 
-// 鈹€鈹€ 3. News 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+// ── 3. News ──────────────────────────────────────────────────────────────────
 
 async function createNews(slug) {
   slug = slugify(slug);
   const file = `src/content/news/${slug}.mdx`;
   if (exists(file)) {
-    console.log(`  鉁?${file} already exists.`);
+    console.log(`  ✓ ${file} already exists.`);
     return;
   }
 
@@ -297,13 +297,13 @@ TODO: write article content here.
   console.log(`\nNext: add a news image to public/images/afarer/news/${slug}.jpg`);
 }
 
-// 鈹€鈹€ 4. Technology 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+// ── 4. Technology ────────────────────────────────────────────────────────────
 
 async function createTech(slug) {
   slug = slugify(slug);
   const file = `src/data/technology/${slug}.md`;
   if (exists(file)) {
-    console.log(`  鉁?${file} already exists.`);
+    console.log(`  ✓ ${file} already exists.`);
     return;
   }
 
@@ -328,13 +328,13 @@ TODO: write detailed technology description.
   write(file, content);
 }
 
-// 鈹€鈹€ 5. Case Use 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+// ── 5. Case Use ──────────────────────────────────────────────────────────────
 
 async function createCaseUse(slug) {
   slug = slugify(slug);
   const file = `src/data/case-use/${slug}.md`;
   if (exists(file)) {
-    console.log(`  鉁?${file} already exists.`);
+    console.log(`  ✓ ${file} already exists.`);
     return;
   }
 
@@ -367,7 +367,7 @@ TODO: write detailed use case description.
   write(file, content);
 }
 
-// 鈹€鈹€ 6. Knowledge Graph Node 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+// ── 6. Knowledge Graph Node ──────────────────────────────────────────────────
 
 async function createNode(id) {
   id = slugify(id);
@@ -408,7 +408,7 @@ async function createNode(id) {
   console.log(`\nNext: add per-language name/description/features/faq in src/content/graph/nodes.ts`);
 }
 
-// 鈹€鈹€ Main 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+// ── Main ─────────────────────────────────────────────────────────────────────
 
 const [, , type, name] = process.argv;
 

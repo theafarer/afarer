@@ -77,7 +77,7 @@ async function main() {
 
   // Hardcoded sitemap (matches src/pages/api/ai/sitemap.ts)
   const pages = [
-    { id: 'home', url: '/', title: 'afarer 鈥?Premium Inflatables', type: 'page', section: 'main' },
+    { id: 'home', url: '/', title: 'afarer —Premium Inflatables', type: 'page', section: 'main' },
     { id: 'about', url: '/about', title: 'About afarer', type: 'page', section: 'main' },
     { id: 'services', url: '/services', title: 'Services', type: 'page', section: 'main' },
     { id: 'pricing', url: '/pricing', title: 'Pricing', type: 'page', section: 'main' },
@@ -169,12 +169,12 @@ async function main() {
   for (const page of pages) {
     const content = getPageContent(page.url);
     if (!content) {
-      console.warn(`  閴?${page.title} 鈥?no built file`);
+      console.warn(`  ✗ ${page.title} —no built file`);
       continue;
     }
 
     const chunks = chunkText(content, 400, 50);
-    console.log(`  ${page.title} (${page.url}) 閳?${chunks.length} chunks`);
+    console.log(`  ${page.title} (${page.url}) → ${chunks}.length} chunks`);
 
     const vectors = [];
 
@@ -315,7 +315,7 @@ async function upsertBatch(vectors, accountId, apiToken) {
     console.error(`  Upsert API error: ${JSON.stringify(data.errors)}`);
     throw new Error('Upsert API failed');
   }
-  process.stdout.write(`  閴?upserted ${vectors.length} vectors\n`);
+  process.stdout.write(`  ✓ upserted ${vectors.length} vectors\n`);
 }
 
 main().catch(console.error);
