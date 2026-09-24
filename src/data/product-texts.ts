@@ -106,39 +106,39 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
         'Familles, p\u00eacheurs, d\u00e9butants et utilisateurs r\u00e9cr\u00e9atifs ayant besoin d\u2019une planche SUP spacieuse et portable pour les loisirs sur lacs et eaux c\u00f4ti\u00e8res abrit\u00e9es.',
     },
     'sup-cheetah-surge': {
-      name: 'Cheetah Surge Edition',
+      name: 'Édition Cheetah Surge',
       desc: 'Planche SUP polyvalente inspirée de la nature sauvage avec assemblage de blocs EVA multicolores de haute précision.',
     },
     'sup-leviathan-wake': {
-      name: 'Leviathan Wake Series (The Whale Edition)',
+      name: 'Série Leviathan Wake (Édition Baleine)',
       desc: "Planche SUP polyvalente inspirée de l'océan avec un motif de baleine bleue et des lignes de houle noires et blanches.",
     },
     'sup-medusa-glow': {
-      name: 'Medusa Glow Series (The Jellyfish Edition)',
+      name: 'Série Medusa Glow (Édition Méduse)',
       desc: 'Planche SUP polyvalente inspirée des méduses avec assemblage de blocs EVA multicolores de haute précision.',
     },
     'sup-ocean-pulse': {
-      name: 'Ocean Pulse Series',
+      name: 'Série Ocean Pulse',
       desc: 'Planche SUP polyvalente inspirée des vagues topographiques avec impression UV et embossage mécanique de haute précision.',
     },
     'sup-ocean-voyager': {
-      name: 'Ocean Voyager Series',
+      name: 'Série Ocean Voyager',
       desc: 'Planche SUP polyvalente inspirée de la tortue marine avec assemblage de blocs EVA multicolores de haute précision.',
     },
     'sup-dolphin-wave': {
-      name: 'Dolphin Wave Series',
+      name: 'Série Dolphin Wave',
       desc: 'Planche SUP polyvalente inspirée des dauphins avec assemblage EVA CNC de haute précision et impressions latérales continues.',
     },
     'sup-flowing-lotus': {
-      name: 'Flowing Lotus Series',
+      name: 'Série Flowing Lotus',
       desc: "Planche SUP polyvalente inspirée de l'art oriental avec lotus, carpes koï et libellules, et gravure laser EVA.",
     },
     'sup-jungle-mandala': {
-      name: 'Jungle Mandala Series',
+      name: 'Série Jungle Mandala',
       desc: 'Planche SUP polyvalente inspirée de la forêt tropicale avec mandala, gravure laser EVA et impressions latérales.',
     },
     'sup-tropical-breeze': {
-      name: 'Tropical Breeze Island Escape Series',
+      name: 'Série Tropical Breeze Island Escape',
       desc: 'Planche SUP polyvalente inspirée du paradis tropical avec illustration de paysage et assemblage EVA abstrait.',
     },
     'sup-horizon-lines': {
@@ -418,39 +418,39 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       desc: 'Großzügiges SUP-Board 3,6 m mit verstärktem Air-Deck-Boden für Familienausflüge und Angeln.',
     },
     'sup-cheetah-surge': {
-      name: 'Cheetah Surge Edition',
+      name: 'Cheetah Surge Sonderedition',
       desc: 'Vielseitiges Wildtier-inspiriertes SUP-Board mit mehrfarbiger EVA-Block-Piecing-Technologie.',
     },
     'sup-leviathan-wake': {
-      name: 'Leviathan Wake Series (The Whale Edition)',
+      name: 'Leviathan Wake Serie (Wal-Edition)',
       desc: 'Ozean-inspiriertes Allround-SUP-Board mit Blauwal-Totem und schwarz-weißen Schwellenlinien.',
     },
     'sup-medusa-glow': {
-      name: 'Medusa Glow Series (The Jellyfish Edition)',
+      name: 'Medusa Glow Serie (Quallen-Edition)',
       desc: 'Traumhaftes Quallen-inspiriertes Allround-SUP mit mehrfarbiger EVA-Block-Piecing-Technologie.',
     },
     'sup-ocean-pulse': {
-      name: 'Ocean Pulse Series',
+      name: 'Ocean Pulse Serie',
       desc: 'Topografisch-wellendesign-inspiriertes Allround-SUP mit UV-Druck und mechanischer Prägung.',
     },
     'sup-ocean-voyager': {
-      name: 'Ocean Voyager Series',
+      name: 'Ocean Voyager Serie',
       desc: 'Meeresschildkröten-inspiriertes Allround-SUP mit mehrfarbiger EVA-Block-Piecing-Technologie.',
     },
     'sup-dolphin-wave': {
-      name: 'Dolphin Wave Series',
+      name: 'Dolphin Wave Serie',
       desc: 'Delfin-inspiriertes Allround-SUP mit CNC-gefrästem EVA-Farbblock-Splicing und durchgehendem Bahnendruck.',
     },
     'sup-flowing-lotus': {
-      name: 'Flowing Lotus Series',
+      name: 'Flowing Lotus Serie',
       desc: 'Ostasiatisch-inspiriertes Allround-SUP mit Lotus, Koi und Libellen sowie lasergravierter EVA-Auflage.',
     },
     'sup-jungle-mandala': {
-      name: 'Jungle Mandala Series',
+      name: 'Jungle Mandala Serie',
       desc: 'Tropisches Regenwald-Mandala-SUP mit lasergravierter EVA-Auflage und Siebdruck-Schienen.',
     },
     'sup-tropical-breeze': {
-      name: 'Tropical Breeze Island Escape Series',
+      name: 'Tropical Breeze Island Escape Serie',
       desc: 'Inselparadies-inspiriertes Allround-SUP mit Mikrolandschaftsillustration und abstraktem EVA-Farbblock.',
     },
     'sup-horizon-lines': {
@@ -730,39 +730,39 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       desc: 'Espaçosa tábua SUP insuflável de 3,6 m com piso Air-Deck reforçado para recreação familiar e pesca.',
     },
     'sup-cheetah-surge': {
-      name: 'Cheetah Surge Edition',
+      name: 'Edição Cheetah Surge',
       desc: 'SUP versátil inspirado na natureza com blocos EVA multicoloridos de alta precisão.',
     },
     'sup-leviathan-wake': {
-      name: 'Leviathan Wake Series (The Whale Edition)',
+      name: 'Série Leviathan Wake (Edição Baleia)',
       desc: 'SUP versátil inspirado no oceano com totem de baleia azul e linhas de ondulação preto e branco.',
     },
     'sup-medusa-glow': {
-      name: 'Medusa Glow Series (The Jellyfish Edition)',
+      name: 'Série Medusa Glow (Edição Água-Viva)',
       desc: 'SUP versátil inspirado em águas-vivas com blocos EVA multicoloridos de alta precisão.',
     },
     'sup-ocean-pulse': {
-      name: 'Ocean Pulse Series',
+      name: 'Série Ocean Pulse',
       desc: 'SUP versátil inspirado em ondas topográficas com impressão UV e relevo mecânico de alta precisão.',
     },
     'sup-ocean-voyager': {
-      name: 'Ocean Voyager Series',
+      name: 'Série Ocean Voyager',
       desc: 'SUP versátil inspirado em tartaruga marinha com blocos EVA multicoloridos de alta precisão.',
     },
     'sup-dolphin-wave': {
-      name: 'Dolphin Wave Series',
+      name: 'Série Dolphin Wave',
       desc: 'SUP versátil inspirado em golfinhos com blocos EVA CNC e serigrafia contínua nas laterais.',
     },
     'sup-flowing-lotus': {
-      name: 'Flowing Lotus Series',
+      name: 'Série Flowing Lotus',
       desc: 'SUP versátil inspirado em arte oriental com lótus, carpas e libélulas, e gravação a laser EVA.',
     },
     'sup-jungle-mandala': {
-      name: 'Jungle Mandala Series',
+      name: 'Série Jungle Mandala',
       desc: 'SUP versátil inspirado em floresta tropical com mandala, gravação a laser EVA e serigrafia nas laterais.',
     },
     'sup-tropical-breeze': {
-      name: 'Tropical Breeze Island Escape Series',
+      name: 'Série Tropical Breeze Island Escape',
       desc: 'SUP versátil inspirado em paraíso tropical com ilustração de paisagem e blocos EVA abstratos.',
     },
     'sup-horizon-lines': {
@@ -1042,39 +1042,39 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       desc: 'Espaciosa tabla SUP hinchable de 3,6 m con suelo Air-Deck reforzado para recreación familiar y pesca.',
     },
     'sup-cheetah-surge': {
-      name: 'Cheetah Surge Edition',
+      name: 'Edición Cheetah Surge',
       desc: 'SUP versátil inspirado en la naturaleza salvaje con bloques EVA multicolor de alta precisión.',
     },
     'sup-leviathan-wake': {
-      name: 'Leviathan Wake Series (The Whale Edition)',
+      name: 'Serie Leviathan Wake (Edición Ballena)',
       desc: 'SUP versátil inspirado en el océano con un tótem de ballena azul y líneas de oleaje en blanco y negro.',
     },
     'sup-medusa-glow': {
-      name: 'Medusa Glow Series (The Jellyfish Edition)',
+      name: 'Serie Medusa Glow (Edición Medusa)',
       desc: 'SUP versátil inspirado en medusas con bloques EVA multicolor de alta precisión.',
     },
     'sup-ocean-pulse': {
-      name: 'Ocean Pulse Series',
+      name: 'Serie Ocean Pulse',
       desc: 'SUP versátil inspirado en olas topográficas con impresión UV y gofrado mecánico de alta precisión.',
     },
     'sup-ocean-voyager': {
-      name: 'Ocean Voyager Series',
+      name: 'Serie Ocean Voyager',
       desc: 'SUP versátil inspirado en la tortuga marina con bloques EVA multicolor de alta precisión.',
     },
     'sup-dolphin-wave': {
-      name: 'Dolphin Wave Series',
+      name: 'Serie Dolphin Wave',
       desc: 'SUP versátil inspirado en delfines con bloques EVA CNC y serigrafía continua en los laterales.',
     },
     'sup-flowing-lotus': {
-      name: 'Flowing Lotus Series',
+      name: 'Serie Flowing Lotus',
       desc: 'SUP versátil inspirado en el arte oriental con loto, koi y libélulas, y grabado láser EVA.',
     },
     'sup-jungle-mandala': {
-      name: 'Jungle Mandala Series',
+      name: 'Serie Jungle Mandala',
       desc: 'SUP versátil inspirado en la selva tropical con mandala, grabado láser EVA y serigrafía en laterales.',
     },
     'sup-tropical-breeze': {
-      name: 'Tropical Breeze Island Escape Series',
+      name: 'Serie Tropical Breeze Island Escape',
       desc: 'SUP versátil inspirado en el paraíso tropical con ilustración de paisaje y bloques EVA abstractos.',
     },
     'sup-horizon-lines': {
@@ -1354,39 +1354,39 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       desc: 'Spaziosa tavola SUP gonfiabile da 3,6 m con pavimento Air-Deck rinforzato per ricreazione familiare e pesca.',
     },
     'sup-cheetah-surge': {
-      name: 'Cheetah Surge Edition',
+      name: 'Edizione Cheetah Surge',
       desc: 'Tavola SUP multiuso ispirata alla natura selvaggia con mosaico EVA multicolore.',
     },
     'sup-leviathan-wake': {
-      name: 'Leviathan Wake Series (The Whale Edition)',
+      name: 'Serie Leviathan Wake (Edizione Balena)',
       desc: "Tavola SUP multiuso ispirata all'oceano con totem di balenottera azzurra.",
     },
     'sup-medusa-glow': {
-      name: 'Medusa Glow Series (The Jellyfish Edition)',
+      name: 'Serie Medusa Glow (Edizione Medusa)',
       desc: 'Tavola SUP multiuso ispirata alla medusa con mosaico EVA multicolore premium.',
     },
     'sup-ocean-pulse': {
-      name: 'Ocean Pulse Series',
+      name: 'Serie Ocean Pulse',
       desc: 'Tavola SUP multiuso ispirata alle onde topografiche con stampa UV.',
     },
     'sup-ocean-voyager': {
-      name: 'Ocean Voyager Series',
+      name: 'Serie Ocean Voyager',
       desc: 'Tavola SUP multiuso ispirata alla tartaruga marina con mosaico EVA.',
     },
     'sup-dolphin-wave': {
-      name: 'Dolphin Wave Series',
+      name: 'Serie Dolphin Wave',
       desc: 'Tavola SUP multiuso ispirata al delfino con blocchi EVA tagliati CNC.',
     },
     'sup-flowing-lotus': {
-      name: 'Flowing Lotus Series',
+      name: 'Serie Flowing Lotus',
       desc: "Tavola SUP multiuso ispirata all'arte orientale con incisione laser EVA.",
     },
     'sup-jungle-mandala': {
-      name: 'Jungle Mandala Series',
+      name: 'Serie Jungle Mandala',
       desc: 'Tavola SUP multiuso ispirata alla foresta pluviale tropicale mandala con incisione laser EVA a doppio strato.',
     },
     'sup-tropical-breeze': {
-      name: 'Tropical Breeze Island Escape Series',
+      name: 'Serie Tropical Breeze Island Escape',
       desc: 'Tavola SUP multiuso ispirata al paradiso tropicale con illustrazione di micro-paesaggio.',
     },
     'sup-horizon-lines': {
@@ -1666,39 +1666,39 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       desc: 'Przestronna deska SUP 3,6 m ze wzmocnionym pokładem Air-Deck do rekreacji rodzinnej i wędkowania.',
     },
     'sup-cheetah-surge': {
-      name: 'Cheetah Surge Edition',
+      name: 'Edycja Cheetah Surge',
       desc: 'SUP uniwersalny inspirowany dziką przyrodą z wielokolorowym EVA block piecing.',
     },
     'sup-leviathan-wake': {
-      name: 'Leviathan Wake Series (The Whale Edition)',
+      name: 'Seria Leviathan Wake (Edycja Wieloryb)',
       desc: 'SUP uniwersalny inspirowany oceanem z totemem błękitnego wieloryba i czarno-białymi liniami fal.',
     },
     'sup-medusa-glow': {
-      name: 'Medusa Glow Series (The Jellyfish Edition)',
+      name: 'Seria Medusa Glow (Edycja Meduza)',
       desc: 'SUP uniwersalny inspirowany meduzami z wielokolorowym EVA block piecing.',
     },
     'sup-ocean-pulse': {
-      name: 'Ocean Pulse Series',
+      name: 'Seria Ocean Pulse',
       desc: 'SUP uniwersalny inspirowany topograficznymi falami z drukiem UV i tłoczeniem mechanicznym.',
     },
     'sup-ocean-voyager': {
-      name: 'Ocean Voyager Series',
+      name: 'Seria Ocean Voyager',
       desc: 'SUP uniwersalny inspirowany żółwiem morskim z wielokolorowym EVA block piecing.',
     },
     'sup-dolphin-wave': {
-      name: 'Dolphin Wave Series',
+      name: 'Seria Dolphin Wave',
       desc: 'SUP uniwersalny inspirowany delfinami z CNC EVA color-block splicing i sitodrukiem na krawędziach.',
     },
     'sup-flowing-lotus': {
-      name: 'Flowing Lotus Series',
+      name: 'Seria Flowing Lotus',
       desc: 'SUP uniwersalny inspirowany sztuką wschodnią z lotosem, koi i ważkami, z grawerowaną laserowo EVA.',
     },
     'sup-jungle-mandala': {
-      name: 'Jungle Mandala Series',
+      name: 'Seria Jungle Mandala',
       desc: 'SUP uniwersalny inspirowany tropikalnym lasem z mandalą, grawerowaną laserowo EVA i sitodrukiem.',
     },
     'sup-tropical-breeze': {
-      name: 'Tropical Breeze Island Escape Series',
+      name: 'Seria Tropical Breeze Island Escape',
       desc: 'SUP uniwersalny inspirowany tropikalnym rajem z ilustracją krajobrazu i abstrakcyjnym EVA.',
     },
     'sup-horizon-lines': {
@@ -1965,47 +1965,47 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
     },
     'sup-explorer-11': {
       name: "SUP Explorer 11'",
-      desc: 'Versatile all-around inflatable SUP board with wide-body stability for beginners and intermediate paddlers.',
+      desc: '幅広ボディによる安定性で初心者から中級者まで対応する、汎用性の高いオールラウンドインフレータブルSUPボード。',
     },
     'airdeck-360': {
       name: 'AirDeck 360',
       desc: 'Spacious 3.6 m inflatable SUP board with reinforced air-deck floor for family recreation and fishing.',
     },
     'sup-cheetah-surge': {
-      name: 'Cheetah Surge Edition',
-      desc: 'High-end wild-inspired all-around inflatable SUP board with multi-color EVA block piecing artwork.',
+      name: 'チーターサージエディション',
+      desc: '野生からインスピレーションを得たオールラウンドSUP。パステルピンク、ティール、コーラルのチーターモチーフをあしらったプレミアムマルチカラーEVAブロック加工が特徴。',
     },
     'sup-leviathan-wake': {
-      name: 'Leviathan Wake Series (The Whale Edition)',
-      desc: 'Ocean-inspired all-around inflatable SUP board featuring majestic blue whale totem artwork.',
+      name: 'リヴァイアサンウェイクシリーズ（ホエールエディション）',
+      desc: '海洋からインスピレーションを得たオールラウンドSUP。幾何学模様とトライバルパターンを組み合わせた勇壮なシロナガスクジラのトーテムと、白黒のうねりラインが特徴。',
     },
     'sup-medusa-glow': {
-      name: 'Medusa Glow Series (The Jellyfish Edition)',
-      desc: 'Dreamy jellyfish-inspired all-around inflatable SUP board with premium multi-color EVA block piecing.',
+      name: 'メデューサグロウシリーズ（クラゲエディション）',
+      desc: '幻想的なクラゲからインスピレーションを得たオールラウンドSUP。プレミアムマルチカラーEVAブロック加工にヒトデとサンゴ礁アートを配し、清涼感あるミントグリーンで表現。',
     },
     'sup-ocean-pulse': {
-      name: 'Ocean Pulse Series',
-      desc: 'Topographic wave-inspired all-around inflatable SUP board with high-precision UV printing.',
+      name: 'オーシャンパルスシリーズ',
+      desc: '等高線状の波からインスピレーションを得たオールラウンドSUP。ティファニーブルーの輪郭、高精度メカニカルエンボス加工、統一されたデザインのアクセサリーキットを備えています。',
     },
     'sup-ocean-voyager': {
-      name: 'Ocean Voyager Series',
-      desc: 'Sea turtle-inspired all-around inflatable SUP board with multi-color EVA block piecing.',
+      name: 'オーシャンボヤジャーシリーズ',
+      desc: 'ウミガメからインスピレーションを得たオールラウンドSUP。ディープティール、ターコイズ、コーラルオレンジのプレミアムマルチカラーEVAブロック加工が特徴。',
     },
     'sup-dolphin-wave': {
-      name: 'Dolphin Wave Series',
-      desc: 'Dolphin-inspired all-around inflatable SUP board with CNC-cut EVA color-block splicing.',
+      name: 'ドルフィンウェーブシリーズ',
+      desc: 'イルカからインスピレーションを得たオールラウンドSUP。中世風の青い波、高精度なEVAカラーブロックの継ぎ合わせ、360度のマリンレールデザインが特徴。',
     },
     'sup-flowing-lotus': {
-      name: 'Flowing Lotus Series',
-      desc: 'Eastern art-inspired all-around inflatable SUP board with laser-engraved EVA traction pad.',
+      name: 'フローウィングロータスシリーズ',
+      desc: '東洋アートからインスピレーションを得たオールラウンドSUP。蓮、コイ、トンボのモチーフ、レーザー彫刻トラクションパッド、グラデーションの水流アートが特徴。',
     },
     'sup-jungle-mandala': {
-      name: 'Jungle Mandala Series',
-      desc: 'Tropical rainforest mandala-inspired all-around inflatable SUP board with dual-layer laser-engraved EVA.',
+      name: 'ジャングルマンダラシリーズ',
+      desc: '熱帯雨林とマンダラからインスピレーションを得たオールラウンドSUP。ハイビスカス、ハチドリ、シンメトリーな幾何学トーテムをティファニーブルーとコーラルオレンジで表現。',
     },
     'sup-tropical-breeze': {
-      name: 'Tropical Breeze Island Escape Series',
-      desc: 'Island paradise-inspired all-around inflatable SUP board with micro-landscape illustration.',
+      name: 'トロピカルブリーズアイランドエスケープシリーズ',
+      desc: '島の楽園からインスピレーションを得たオールラウンドSUP。陽光、ココナッツグローブ、ビーチシーンを描いた完全なアイランドバケーションキャンバスが特徴。',
     },
     'sup-horizon-lines': {
       name: 'ホライゾンラインシリーズ',
@@ -2266,47 +2266,47 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
     },
     'sup-explorer-11': {
       name: "SUP Explorer 11'",
-      desc: 'Versatile all-around inflatable SUP board with wide-body stability for beginners and intermediate paddlers.',
+      desc: '입문자와 중급 패들러를 위한 넓은 바디 안정성을 갖춘 다용도 올라운드 인플레터블 SUP보드.',
     },
     'airdeck-360': {
       name: 'AirDeck 360',
       desc: 'Spacious 3.6 m inflatable SUP board with reinforced air-deck floor for family recreation and fishing.',
     },
     'sup-cheetah-surge': {
-      name: 'Cheetah Surge Edition',
-      desc: 'High-end wild-inspired all-around inflatable SUP board with multi-color EVA block piecing artwork.',
+      name: '치타 서지 에디션',
+      desc: '파스텔 핑크, 틸, 코럴 색상의 치타 모티프를 반영한 프리미엄 멀티컬러 EVA 블록 배치의 야생에서 영감을 받은 올라운드 SUP.',
     },
     'sup-leviathan-wake': {
-      name: 'Leviathan Wake Series (The Whale Edition)',
-      desc: 'Ocean-inspired all-around inflatable SUP board featuring majestic blue whale totem artwork.',
+      name: '레비아탄 웨이크 시리즈(웨일 에디션)',
+      desc: '기하학적 패턴과 트라이벌 패턴이 결합된 웅장한 청고래 토템과 흑백 너울 라인이 특징인 바다에서 영감을 받은 올라운드 SUP.',
     },
     'sup-medusa-glow': {
-      name: 'Medusa Glow Series (The Jellyfish Edition)',
-      desc: 'Dreamy jellyfish-inspired all-around inflatable SUP board with premium multi-color EVA block piecing.',
+      name: '메두사 글로우 시리즈(해파리 에디션)',
+      desc: '상쾌한 민트 그린의 프리미엄 멀티컬러 EVA 블록 배치와 불가사리, 산호초 아트워크가 돋보이는 몽환적인 해파리에서 영감을 받은 올라운드 SUP.',
     },
     'sup-ocean-pulse': {
-      name: 'Ocean Pulse Series',
-      desc: 'Topographic wave-inspired all-around inflatable SUP board with high-precision UV printing.',
+      name: '오션 펄스 시리즈',
+      desc: '티파니 블루 윤곽, 고정밀 기계적 엠보싱, 통일된 디자인의 액세서리 키트를 갖춘 지형도 파도에서 영감을 받은 올라운드 SUP.',
     },
     'sup-ocean-voyager': {
-      name: 'Ocean Voyager Series',
-      desc: 'Sea turtle-inspired all-around inflatable SUP board with multi-color EVA block piecing.',
+      name: '오션 보야저 시리즈',
+      desc: '딥틸, 터콰이즈, 코럴 오렌지의 프리미엄 멀티컬러 EVA 블록 배치가 특징인 바다거북에서 영감을 받은 올라운드 SUP.',
     },
     'sup-dolphin-wave': {
-      name: 'Dolphin Wave Series',
-      desc: 'Dolphin-inspired all-around inflatable SUP board with CNC-cut EVA color-block splicing.',
+      name: '돌핀 웨이브 시리즈',
+      desc: '중세풍 파란 물결, 고정밀 EVA 컬러 블록 이음처리, 360도 마린 레일 디자인이 특징인 돌고래에서 영감을 받은 올라운드 SUP.',
     },
     'sup-flowing-lotus': {
-      name: 'Flowing Lotus Series',
-      desc: 'Eastern art-inspired all-around inflatable SUP board with laser-engraved EVA traction pad.',
+      name: '플로잉 로터스 시리즈',
+      desc: '연꽃, 잉어, 잠자리 모티프와 레이저 각인 트랙션 패드, 그라데이션 물결 아트워크가 특징인 동양 예술에서 영감을 받은 올라운드 SUP.',
     },
     'sup-jungle-mandala': {
-      name: 'Jungle Mandala Series',
-      desc: 'Tropical rainforest mandala-inspired all-around inflatable SUP board with dual-layer laser-engraved EVA.',
+      name: '정글 만다라 시리즈',
+      desc: '티파니 블루와 코럴 오렌지의 히비스커스, 벌새, 대칭 기하학 토템이 특징인 열대 우림과 만다라에서 영감을 받은 올라운드 SUP.',
     },
     'sup-tropical-breeze': {
-      name: 'Tropical Breeze Island Escape Series',
-      desc: 'Island paradise-inspired all-around inflatable SUP board with micro-landscape illustration.',
+      name: '트로피컬 브리즈 아일랜드 이스케이프 시리즈',
+      desc: '햇살, 코코넛 그로브, 해변 풍경을 담은 완전한 아일랜드 바케이션 캔버스가 특징인 섬 낙원에서 영감을 받은 올라운드 SUP.',
     },
     'sup-horizon-lines': {
       name: '호라이즌 라인 시리즈',
@@ -2577,39 +2577,39 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       desc: 'Просторная надувная SUP-доска 3,6 м с усиленным полом Air-Deck для семейного отдыха и рыбалки.',
     },
     'sup-cheetah-surge': {
-      name: 'Cheetah Surge Edition',
+      name: 'Издание Cheetah Surge',
       desc: 'Вдохновленная дикой природой универсальная SUP-доска с многоцветным EVA-мозаичным рисунком.',
     },
     'sup-leviathan-wake': {
-      name: 'Leviathan Wake Series (The Whale Edition)',
+      name: 'Серия Leviathan Wake (издание Кит)',
       desc: 'Вдохновленная океаном универсальная SUP-доска с тотемом синего кита.',
     },
     'sup-medusa-glow': {
-      name: 'Medusa Glow Series (The Jellyfish Edition)',
+      name: 'Серия Medusa Glow (издание Медуза)',
       desc: 'Медуза-вдохновленная универсальная SUP-доска с премиум многоцветной EVA-мозаикой.',
     },
     'sup-ocean-pulse': {
-      name: 'Ocean Pulse Series',
+      name: 'Серия Ocean Pulse',
       desc: 'Топографическая волна-вдохновленная универсальная SUP-доска с УФ-печатью.',
     },
     'sup-ocean-voyager': {
-      name: 'Ocean Voyager Series',
+      name: 'Серия Ocean Voyager',
       desc: 'Вдохновленная морской черепахой универсальная SUP-доска с EVA-мозаикой.',
     },
     'sup-dolphin-wave': {
-      name: 'Dolphin Wave Series',
+      name: 'Серия Dolphin Wave',
       desc: 'Вдохновленная дельфином универсальная SUP-доска с CNC-резаными EVA-блоками.',
     },
     'sup-flowing-lotus': {
-      name: 'Flowing Lotus Series',
+      name: 'Серия Flowing Lotus',
       desc: 'Вдохновленная восточным искусством универсальная SUP-доска с лазерной гравировкой EVA.',
     },
     'sup-jungle-mandala': {
-      name: 'Jungle Mandala Series',
+      name: 'Серия Jungle Mandala',
       desc: 'Вдохновленная тропическим лесом мандала универсальная SUP-доска с двухслойной лазерной гравировкой EVA.',
     },
     'sup-tropical-breeze': {
-      name: 'Tropical Breeze Island Escape Series',
+      name: 'Серия Tropical Breeze Island Escape',
       desc: 'Вдохновленная райским островом универсальная SUP-доска с микроландшафтной иллюстрацией.',
     },
     'sup-horizon-lines': {
@@ -2872,47 +2872,47 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
     },
     'sup-explorer-11': {
       name: "SUP Explorer 11'",
-      desc: 'Versatile all-around inflatable SUP board with wide-body stability for beginners and intermediate paddlers.',
+      desc: 'لوح SUP قابل للنفخ متعدد الاستخدامات مع ثبات الجسم العريض للمبتدئين والتجديفين متوسطي المستوى.',
     },
     'airdeck-360': {
       name: 'AirDeck 360',
       desc: 'Spacious 3.6 m inflatable SUP board with reinforced air-deck floor for family recreation and fishing.',
     },
     'sup-cheetah-surge': {
-      name: 'Cheetah Surge Edition',
-      desc: 'High-end wild-inspired all-around inflatable SUP board with multi-color EVA block piecing artwork.',
+      name: 'إصدار شيتاه سيرج',
+      desc: 'لوح SUP متعدد الاستخدامات مستوحى من الطبيعة البرية مع تركيب مقاطع EVA متعددة الألوان فائقة الجودة بزخرفة الفهد باللون الوردي الباستيل والأزرق المخضر والمرجاني.',
     },
     'sup-leviathan-wake': {
-      name: 'Leviathan Wake Series (The Whale Edition)',
-      desc: 'Ocean-inspired all-around inflatable SUP board featuring majestic blue whale totem artwork.',
+      name: 'سلسلة ليفياثان ويك (إصدار الحوت)',
+      desc: 'لوح SUP متعدد الاستخدامات مستوحى من المحيط يضم رمز الحوت الأزرق المهيب بأنماط هندسية وقبلية مع خطوط تمدد بالأبيض والأسود.',
     },
     'sup-medusa-glow': {
-      name: 'Medusa Glow Series (The Jellyfish Edition)',
-      desc: 'Dreamy jellyfish-inspired all-around inflatable SUP board with premium multi-color EVA block piecing.',
+      name: 'سلسلة ميدوزا غلو (إصدار قنديل البحر)',
+      desc: 'لوح SUP متعدد الاستخدامات حالم مستوحى من قنديل البحر مع تركيب مقاطع EVA متعددة الألوان فائقة الجودة ونجوم البحر وفن الشعاب المرجانية بالأخضر النعناعي المنعش.',
     },
     'sup-ocean-pulse': {
-      name: 'Ocean Pulse Series',
-      desc: 'Topographic wave-inspired all-around inflatable SUP board with high-precision UV printing.',
+      name: 'سلسلة أوشن بلس',
+      desc: 'لوح SUP متعدد الاستخدامات مستوحى من الأمواج الطبوغرافية بحدود بلون تيفاني بلو ونقش ميكانيكي عالي الدقة وطقم إكسسوارات جمالي موحد.',
     },
     'sup-ocean-voyager': {
-      name: 'Ocean Voyager Series',
-      desc: 'Sea turtle-inspired all-around inflatable SUP board with multi-color EVA block piecing.',
+      name: 'سلسلة أوشن فوياجر',
+      desc: 'لوح SUP متعدد الاستخدامات مستوحى من السلاحف البحرية مع تركيب مقاطع EVA متعددة الألوان فائقة الجودة بالأزرق المخضر العميق والفيروزي والبرتقالي المرجاني.',
     },
     'sup-dolphin-wave': {
-      name: 'Dolphin Wave Series',
-      desc: 'Dolphin-inspired all-around inflatable SUP board with CNC-cut EVA color-block splicing.',
+      name: 'سلسلة دولفين ويف',
+      desc: 'لوح SUP متعدد الاستخدامات مستوحى من الدلافين بأمواج زرقاء من العصور الوسطى وتركيب مقاطع ألوان EVA عالي الدقة وجماليات الحافة البحرية بزاوية 360 درجة.',
     },
     'sup-flowing-lotus': {
-      name: 'Flowing Lotus Series',
-      desc: 'Eastern art-inspired all-around inflatable SUP board with laser-engraved EVA traction pad.',
+      name: 'سلسلة فلوينج لوتس',
+      desc: 'لوح SUP متعدد الاستخدامات مستوحى من الفن الشرقي بزخارف اللوتس والكوي ويعسوب، مع وسادة ثبات محفورة بالليزر وفن تدفق المياه المتدرج.',
     },
     'sup-jungle-mandala': {
-      name: 'Jungle Mandala Series',
-      desc: 'Tropical rainforest mandala-inspired all-around inflatable SUP board with dual-layer laser-engraved EVA.',
+      name: 'سلسلة جنجل ماندالا',
+      desc: 'لوح SUP متعدد الاستخدامات مستوحى من الغابة المطيرة والماندالا بزهور الكركديه وطيور الطنان ورموز هندسية متناظرة باللونين تيفاني بلو والبرتقالي المرجاني.',
     },
     'sup-tropical-breeze': {
-      name: 'Tropical Breeze Island Escape Series',
-      desc: 'Island paradise-inspired all-around inflatable SUP board with micro-landscape illustration.',
+      name: 'سلسلة تروبيكال بريز آيلاند إسكيب',
+      desc: 'لوح SUP متعدد الاستخدامات مستوحى من جنة الجزيرة بلوحة كاملة لعطلة الجزيرة مع أشعة الشمس وبساتين جوز الهند ومشاهد الشاطئ.',
     },
     'sup-horizon-lines': {
       name: 'سلسلة هورايزن لاينز',
@@ -3330,6 +3330,46 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
         },
       ],
     },
+    'sup-explorer-11': {
+      name: "SUP Explorer 11'",
+      desc: 'Mångsidigt uppblåsbart allround-SUP med bred kroppsstabilitet för nybörjare och medelavancerade paddlare.',
+    },
+    'sup-cheetah-surge': {
+      name: 'Cheetah Surge-utgåvan',
+      desc: 'Vildmarksinspirerat allround-SUP med premiummonterade flersfärgade EVA-block och gepardmotiv i pastellrosa, blågrönt och korall.',
+    },
+    'sup-leviathan-wake': {
+      name: 'Leviathan Wake-serien (Val-utgåvan)',
+      desc: 'Havsinspirerat allround-SUP med majestätiskt blåvalstotem i geometriska och tribala mönster, kombinerat med svartvita svallinjer.',
+    },
+    'sup-medusa-glow': {
+      name: 'Medusa Glow-serien (Manet-utgåvan)',
+      desc: 'Drömskt manetinspirerat allround-SUP med premiummonterade flersfärgade EVA-block, sjöstjärnor och korallrevskonst i frisk myntgrön.',
+    },
+    'sup-ocean-pulse': {
+      name: 'Ocean Pulse-serien',
+      desc: 'Topografiskt våginspirerat allround-SUP med Tiffany Blue-konturer, högprecisionsembossning och enhetligt estetiskt tillbehörskit.',
+    },
+    'sup-ocean-voyager': {
+      name: 'Ocean Voyager-serien',
+      desc: 'Havssköldpaddsinspirerat allround-SUP med premiummonterade flersfärgade EVA-block i djup blågrön, turkos och korallorange.',
+    },
+    'sup-dolphin-wave': {
+      name: 'Dolphin Wave-serien',
+      desc: 'Delfininspirerat allround-SUP med medeltida blå vågor, högpreciserad EVA-färgblocksmontering och 360-graders marina rail-estetik.',
+    },
+    'sup-flowing-lotus': {
+      name: 'Flowing Lotus-serien',
+      desc: 'Österländskt konstinspirerat allround-SUP med lotos-, koi- och trollsländemotiv, lasergraverad tractionpad och gradient vattenflödeskonst.',
+    },
+    'sup-jungle-mandala': {
+      name: 'Jungle Mandala-serien',
+      desc: 'Tropiskt regnskogs- och mandalainspirerat allround-SUP med hibiskus, kolibrier och symmetriska geometriska totem i Tiffany Blue och korallorange.',
+    },
+    'sup-tropical-breeze': {
+      name: 'Tropical Breeze Island Escape-serien',
+      desc: 'Paradisöinspirerat allround-SUP med en komplett ösemester-canvas med solsken, kokoslundar och badstränder.',
+    },
   },
   nl: {
     'sup-horizon-lines': {
@@ -3534,6 +3574,58 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
           a: 'De meegeleverde dubbelcilinder handpomp verplaatst snel een groot volume en bereikt hogere drukken met minder moeite, en het board is compatibel met de optionele afarer 12VDC elektrische pomp.',
         },
       ],
+    },
+    'life-vest-classic': {
+      name: 'Reddingsvest Classic',
+      desc: 'Universeel drijfvermogen voor recreatieve watersport. CE-gecertificeerd.',
+    },
+    'life-vest-pro': {
+      name: 'Reddingsvest Pro',
+      desc: 'Professioneel reddingsvest met SOLAS-reflectoren voor offshore- en reddingsoperaties.',
+    },
+    'oars-pump-set': {
+      name: 'Roeiriemen & Pomp Set',
+      desc: 'Set van twee aluminium roeiriemen van 1,6 m en een 5L voetpomp met hoog debiet voor opblaasbare watersport.',
+    },
+    'sup-explorer-11': {
+      name: "SUP Explorer 11'",
+      desc: 'Veelzijdig opblaasbaar allround-SUP met brede romp voor stabiliteit, voor beginners en middelgevorderde paddelaars.',
+    },
+    'sup-cheetah-surge': {
+      name: 'Cheetah Surge-editie',
+      desc: 'Door de wilde natuur geïnspireerd allround-SUP met premium meerkleurige EVA-blokvormgeving en cheetahmotief in pastelroze, teal en koraal.',
+    },
+    'sup-leviathan-wake': {
+      name: 'Leviathan Wake-serie (Wal-editie)',
+      desc: 'Door de oceaan geïnspireerd allround-SUP met majestueus blauwe walvistotem, geometrische en tribale patronen, gecombineerd met zwart-witte deininglijnen.',
+    },
+    'sup-medusa-glow': {
+      name: 'Medusa Glow-serie (Kwal-editie)',
+      desc: 'Dromerig door kwallen geïnspireerd allround-SUP met premium meerkleurige EVA-blokvormgeving, zeesterren en koraalrifkunst in verfrissend mintgroen.',
+    },
+    'sup-ocean-pulse': {
+      name: 'Ocean Pulse-serie',
+      desc: 'Door topografische golven geïnspireerd allround-SUP met Tiffany Blue contouren, hoogwaardige mechanische embossing en een uniform esthetisch accessoirekit.',
+    },
+    'sup-ocean-voyager': {
+      name: 'Ocean Voyager-serie',
+      desc: 'Door zeeschildpadden geïnspireerd allround-SUP met premium meerkleurige EVA-blokvormgeving in diep teal, turquoise en koraaloranje.',
+    },
+    'sup-dolphin-wave': {
+      name: 'Dolphin Wave-serie',
+      desc: 'Door dolfijnen geïnspireerd allround-SUP met middeleeuwse blauwe golven, hoogprecieze EVA-kleurblokvormgeving en 360-graden maritieme rail-esthetiek.',
+    },
+    'sup-flowing-lotus': {
+      name: 'Flowing Lotus-serie',
+      desc: 'Door oosterse kunst geïnspireerd allround-SUP met lotus-, koi- en libellemotieven, laser gegraveerd tractionpad en gradiënt waterstromingskunst.',
+    },
+    'sup-jungle-mandala': {
+      name: 'Jungle Mandala-serie',
+      desc: 'Door tropisch regenwoud en mandala geïnspireerd allround-SUP met hibiscus, kolibries en symmetrische geometrische totems in Tiffany Blue en koraaloranje.',
+    },
+    'sup-tropical-breeze': {
+      name: 'Tropical Breeze Island Escape-serie',
+      desc: 'Door eilandparadijzen geïnspireerd allround-SUP met een compleet eilandvakantie-canvas met zonneschijn, kokosplantages en strandtaferelen.',
     },
   },
   no: {
@@ -3740,6 +3832,58 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
         },
       ],
     },
+    'life-vest-classic': {
+      name: 'Redningsvest Classic',
+      desc: 'Universell flytehjelp for rekreasjonell vannsport. CE-sertifisert.',
+    },
+    'life-vest-pro': {
+      name: 'Redningsvest Pro',
+      desc: 'Profesjonell redningsvest med SOLAS-reflektorer for offshore- og redningsoperasjoner.',
+    },
+    'oars-pump-set': {
+      name: 'Årer & Pompesett',
+      desc: 'Et par 1,6 m aluminiumsårer og en 5L fotpumpe med høy kapasitet for oppblåsbar vannsport.',
+    },
+    'sup-explorer-11': {
+      name: "SUP Explorer 11'",
+      desc: 'Allsidig oppblåsbar allround-SUP med bred kroppsstabilitet for nybegynnere og mellomnivå padlere.',
+    },
+    'sup-cheetah-surge': {
+      name: 'Cheetah Surge-utgaven',
+      desc: 'Villmarksinspirert allround-SUP med premium flerfarget EVA-blokksammensetting og gepardmotiv i pastellrosa, petroleumsblå og korall.',
+    },
+    'sup-leviathan-wake': {
+      name: 'Leviathan Wake-serien (Hval-utgaven)',
+      desc: 'Havinspirert allround-SUP med majestetisk blåhval-totem i geometriske og tribale mønstre, kombinert med sort-hvite bølgelinjer.',
+    },
+    'sup-medusa-glow': {
+      name: 'Medusa Glow-serien (Manet-utgaven)',
+      desc: 'Drømmeaktig manetinspirert allround-SUP med premium flerfarget EVA-blokksammensetting, sjøstjerner og korallrev-kunst i forfriskende myntgrønn.',
+    },
+    'sup-ocean-pulse': {
+      name: 'Ocean Pulse-serien',
+      desc: 'Topografisk bølgeinspirert allround-SUP med Tiffany Blue-konturer, mekanisk preging med høy presisjon og enhetlig estetisk tilbehørspakke.',
+    },
+    'sup-ocean-voyager': {
+      name: 'Ocean Voyager-serien',
+      desc: 'Havskilpaddeinspirert allround-SUP med premium flerfarget EVA-blokksammensetting i dyp petrol, turkis og koralloransje.',
+    },
+    'sup-dolphin-wave': {
+      name: 'Dolphin Wave-serien',
+      desc: 'Delfininspirert allround-SUP med middelalderske blå bølger, EVA-fargeblokksammensetting med høy presisjon og 360-graders maritim rail-estetikk.',
+    },
+    'sup-flowing-lotus': {
+      name: 'Flowing Lotus-serien',
+      desc: 'Østlig kunstinspirert allround-SUP med lotus-, koi- og libellemotiver, lasergravert grippute og gradient vannstrømskunst.',
+    },
+    'sup-jungle-mandala': {
+      name: 'Jungle Mandala-serien',
+      desc: 'Tropisk regnskog- og mandalainspirert allround-SUP med hibiskus, kolibrier og symmetriske geometriske totemer i Tiffany Blue og koralloransje.',
+    },
+    'sup-tropical-breeze': {
+      name: 'Tropical Breeze Island Escape-serien',
+      desc: 'Øyparadisinspirert allround-SUP med et komplett øyferie-canvas med solskinn, kokospalmer og strandscener.',
+    },
   },
   el: {
     'sup-horizon-lines': {
@@ -3944,6 +4088,58 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
           a: 'Η περιλαμβανόμενη χειροκίνητη αντλία διπλού κυλίνδρου μετακινεί γρήγορα μεγάλο όγκο και φτάνει σε υψηλότερες πιέσεις με λιγότερη προσπάθεια, και η σανίδα είναι συμβατή με την προαιρετική ηλεκτρική αντλία afarer 12VDC.',
         },
       ],
+    },
+    'life-vest-classic': {
+      name: 'Σωσίβιο Classic',
+      desc: 'Καθολική βοήθηση πλευστότητας για ψυχαγωγικά θαλάσσια σπορ. Πιστοποιημένο CE.',
+    },
+    'life-vest-pro': {
+      name: 'Σωσίβιο Pro',
+      desc: 'Επαγγελματικό σωσίβιο με ανακλαστικά SOLAS για επιχειρήσεις ανοιχτής θάλασσας και διάσωσης.',
+    },
+    'oars-pump-set': {
+      name: 'Σετ Κουπιά & Αντλία',
+      desc: 'Ζεύγος αλουμινένιων κουπιών 1,6 μ. και αντλία ποδιού 5L υψηλής ροής για φουσκωτά θαλάσσια σπορ.',
+    },
+    'sup-explorer-11': {
+      name: "SUP Explorer 11'",
+      desc: 'Εύκαμπτο φουσκωτό SUP all-around με σταθερότητα πλατιάς κατασκευής για αρχάριους και μεσαίου επιπέδου κωπηλάτες.',
+    },
+    'sup-cheetah-surge': {
+      name: 'Έκδοση Cheetah Surge',
+      desc: 'SUP all-around εμπνευσμένο από την άγρια φύση με premium πολύχρωμο μωσαϊκό μπλοκ EVA και μοτίβο γατόπαρδος σε παστελ ροζ, τιρκουάζ και κοράλλι.',
+    },
+    'sup-leviathan-wake': {
+      name: 'Σειρά Leviathan Wake (Έκδοση Φάλαινα)',
+      desc: 'SUP all-around εμπνευσμένο από τον ωκεανό με μεγαλόπρεπο τοτέμ γαλάζιας φάλαινας με γεωμετρικά και τοπικά μοτίβα, μαζί με μαύρο-λευκές γραμμές κυματισμού.',
+    },
+    'sup-medusa-glow': {
+      name: 'Σειρά Medusa Glow (Έκδοση Τσούχτρα)',
+      desc: 'Ονειρικό SUP all-around εμπνευσμένο από τσούχτρα με premium πολύχρωμο μωσαϊκό μπλοκ EVA, αστερίες και τέχνη κοραλλιογενούς υφάλου σε δροσερό μέντα πράσινο.',
+    },
+    'sup-ocean-pulse': {
+      name: 'Σειρά Ocean Pulse',
+      desc: 'SUP all-around εμπνευσμένο από τοπογραφικά κύματα με περιγράμματα Tiffany Blue, μηχανική εμβάθυνση υψηλής ακρίβειας και ενιαίο αισθητικό κιτ αξεσουάρ.',
+    },
+    'sup-ocean-voyager': {
+      name: 'Σειρά Ocean Voyager',
+      desc: 'SUP all-around εμπνευσμένο από θαλάσσια χελώνα με premium πολύχρωμο μωσαϊκό μπλοκ EVA σε βαθύ τιρκουάζ, τυρκουάζ και πορτοκαλί κοραλλιού.',
+    },
+    'sup-dolphin-wave': {
+      name: 'Σειρά Dolphin Wave',
+      desc: 'SUP all-around εμπνευσμένο από δελφίνι με μεσαιωνικά γαλάζια κύματα, συναρμολόγηση χρωματιστών μπλοκ EVA υψηλής ακρίβειας και αισθητική θαλάσσιας τρόπιδας 360 μοιρών.',
+    },
+    'sup-flowing-lotus': {
+      name: 'Σειρά Flowing Lotus',
+      desc: 'SUP all-around εμπνευσμένο από ανατολική τέχνη με μοτίβα λωτού, koi και λιβελούλης, με pad πρόσφυσης χαραγμένο με λέιζερ και τέχνη διαβαθμισμένης ροής νερού.',
+    },
+    'sup-jungle-mandala': {
+      name: 'Σειρά Jungle Mandala',
+      desc: 'SUP all-around εμπνευσμένο από τροπικό δάσος και μάνταλα με ιβίσκο, κολιμπρί και συμμετρικά γεωμετρικά τοτέμ σε Tiffany Blue και πορτοκαλί κοραλλιού.',
+    },
+    'sup-tropical-breeze': {
+      name: 'Σειρά Tropical Breeze Island Escape',
+      desc: 'SUP all-around εμπνευσμένο από νησιωτικό παράδεισο με έναν ολοκληρωμένο καμβά νησιωτικών διακοπών με ηλιοφάνεια, κοκοφοίνικες και σκηνές παραλίας.',
     },
   },
   tr: {
@@ -4150,6 +4346,58 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
         },
       ],
     },
+    'life-vest-classic': {
+      name: 'Can Yeleği Classic',
+      desc: 'Rekreasyonel su sporları için evrensel yüzdürme yardımı. CE sertifikalı.',
+    },
+    'life-vest-pro': {
+      name: 'Can Yeleği Pro',
+      desc: 'Açık deniz ve kurtarma operasyonları için SOLAS yansıtıcılara sahip profesyonel can yeleği.',
+    },
+    'oars-pump-set': {
+      name: 'Kürek & Pompa Seti',
+      desc: 'Şişme su sporları için 1,6 m alüminyum kürek çifti ve 5L yüksek akışlı ayak pompası.',
+    },
+    'sup-explorer-11': {
+      name: "SUP Explorer 11'",
+      desc: 'Yeni başlayanlar ve orta seviye kürekçiler için geniş gövde stabilitesine sahip çok amaçlı şişme all-around SUP.',
+    },
+    'sup-cheetah-surge': {
+      name: 'Cheetah Surge Sürümü',
+      desc: 'Pastel pembe, turkuaz ve mercan renklerinde çita desenli, premium çok renkli EVA blok işlemeli, doğadan ilham alan all-around SUP.',
+    },
+    'sup-leviathan-wake': {
+      name: 'Leviathan Wake Serisi (Balina Sürümü)',
+      desc: 'Geometrik ve kabile desenleriyle birlikte görkemli mavi balina totemi ve siyah-beyaz dalga çizgileri eşliğinde okyanustan ilham alan all-around SUP.',
+    },
+    'sup-medusa-glow': {
+      name: 'Medusa Glow Serisi (Denizanası Sürümü)',
+      desc: 'Premium çok renkli EVA blok işlemesi, deniz yıldızları ve mercan resifi sanatıyla renklendirilen, denizanasından ilham alan rüya gibi all-around SUP.',
+    },
+    'sup-ocean-pulse': {
+      name: 'Ocean Pulse Serisi',
+      desc: 'Tiffany Blue konturlar, yüksek hassasiyetli mekanik kabartma ve birleşik estetik aksesuar kitine sahip, topografik dalgalardan ilham alan all-around SUP.',
+    },
+    'sup-ocean-voyager': {
+      name: 'Ocean Voyager Serisi',
+      desc: 'Derin turkuaz, cam göbeği ve mercan turuncusu renklerinde premium çok renkli EVA blok işlemeli, deniz kaplumbağasından ilham alan all-around SUP.',
+    },
+    'sup-dolphin-wave': {
+      name: 'Dolphin Wave Serisi',
+      desc: 'Orta çağ mavi dalgaları, yüksek hassasiyetli EVA renk bloğu birleştirme ve 360 derece deniz kenarı estetiğine sahip, yunustan ilham alan all-around SUP.',
+    },
+    'sup-flowing-lotus': {
+      name: 'Flowing Lotus Serisi',
+      desc: 'Nilüfer, koi ve kızböceği motifleriyle birlikte lazer kazımalı kaymaz ped ve degrade su akışı sanatına sahip, doğu sanatından ilham alan all-around SUP.',
+    },
+    'sup-jungle-mandala': {
+      name: 'Jungle Mandala Serisi',
+      desc: 'Hibiskus, sinek kuşları ve simetrik geometrik totemlerle Tiffany Blue ve Mercan Turuncusu renklerinde, tropik yağmur ormanı ve mandaladan ilham alan all-around SUP.',
+    },
+    'sup-tropical-breeze': {
+      name: 'Tropical Breeze Island Escape Serisi',
+      desc: 'Güneş ışığı, hindistan cevizi ağaçları ve plaj sahneleri içeren eksiksiz bir ada tatili tuvaliyle ada cennetinden ilham alan all-around SUP.',
+    },
   },
   fi: {
     'sup-horizon-lines': {
@@ -4354,6 +4602,58 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
           a: 'Mukana toimitettava kaksisylinterinen käsipumppu liikuttaa suuren tilavuuden nopeasti ja saavuttaa korkeammat paineet vähemmällä vaivalla, ja lauta on yhteensopiva valinnaisen afarer 12 VDC -sähköpumpun kanssa.',
         },
       ],
+    },
+    'life-vest-classic': {
+      name: 'Pelastusliivi Classic',
+      desc: 'Yleiskäyttöinen kelluke vapaa-ajan vesilajeihin. CE-sertifioitu.',
+    },
+    'life-vest-pro': {
+      name: 'Pelastusliivi Pro',
+      desc: 'Ammattilaistason pelastusliivi SOLAS-heijastimilla avomeri- ja pelastustehtäviin.',
+    },
+    'oars-pump-set': {
+      name: 'Airo- ja pumppusetti',
+      desc: 'Pari 1,6 m alumiuniairoa ja 5L suurivirtauksen jalkapumppu täytettäviin vesilajeihin.',
+    },
+    'sup-explorer-11': {
+      name: "SUP Explorer 11'",
+      desc: 'Monipuolinen täytettävä all-around-SUP leveällä rungolla vakauteen aloittelijoille ja keskitason melojille.',
+    },
+    'sup-cheetah-surge': {
+      name: 'Cheetah Surge -painos',
+      desc: 'Luonnosta inspiroitu all-around-SUP premium-monivärisellä EVA-palikkayhdistelmällä ja gepardikuviolla pastellinpinkissä, sinivihreässä ja koraalissa.',
+    },
+    'sup-leviathan-wake': {
+      name: 'Leviathan Wake -sarja (Valas-painos)',
+      desc: 'Valtamerestä inspiroitu all-around-SUP majesteettisella sinivalastoteemilla geometrisin ja heimokuvioin sekä mustavalkoisin aaltolinjoin.',
+    },
+    'sup-medusa-glow': {
+      name: 'Medusa Glow -sarja (Meduusa-painos)',
+      desc: 'Unenomaisen meduusasta inspiroitu all-around-SUP premium-monivärisellä EVA-palikkayhdistelmällä, meritähdillä ja koralliriuttataiteella raikkaassa mintunvihreässä.',
+    },
+    'sup-ocean-pulse': {
+      name: 'Ocean Pulse -sarja',
+      desc: 'Topografisista aalloista inspiroitu all-around-SUP Tiffany Blue -ääriviivoilla, erittäin tarkalla mekaanisella kohokuvioinnilla ja yhtenäisellä esteettisellä tarvikesarjalla.',
+    },
+    'sup-ocean-voyager': {
+      name: 'Ocean Voyager -sarja',
+      desc: 'Merikilpikonnasta inspiroitu all-around-SUP premium-monivärisellä EVA-palikkayhdistelmällä syvässä sinivihreässä, turkoosissa ja koraalinoranssissa.',
+    },
+    'sup-dolphin-wave': {
+      name: 'Dolphin Wave -sarja',
+      desc: 'Delfiinistä inspiroitu all-around-SUP keskiaikaisilla sinisillä aalloilla, erittäin tarkalla EVA-väripalikkayhdistelmällä ja 360-asteisen merellisen reuna-estetiikalla.',
+    },
+    'sup-flowing-lotus': {
+      name: 'Flowing Lotus -sarja',
+      desc: 'Itämaisesta taiteesta inspiroitu all-around-SUP lootus-, koi- ja sudenkorentomotiiveilla, laserkaiverretulla pitoalustalla ja liukuvärjätyllä vesivirtausgrafiikalla.',
+    },
+    'sup-jungle-mandala': {
+      name: 'Jungle Mandala -sarja',
+      desc: 'Trooppisesta sademetsästä ja mandalasta inspiroitu all-around-SUP hibiskuksilla, kolibreilla ja symmetrisillä geometrisilla totemeilla Tiffany Bluessä ja koraalinoranssissa.',
+    },
+    'sup-tropical-breeze': {
+      name: 'Tropical Breeze Island Escape -sarja',
+      desc: 'Saaparatiisista inspiroitu all-around-SUP täydellisellä lomasaaren kankaalla: aurinkoa, kookospalmuja ja rantamaisemia.',
     },
   },
   cs: {
@@ -4560,6 +4860,58 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
         },
       ],
     },
+    'life-vest-classic': {
+      name: 'Záchranná vesta Classic',
+      desc: 'Univerzální plovací pomůcka pro rekreační vodní sporty. Certifikováno CE.',
+    },
+    'life-vest-pro': {
+      name: 'Záchranná vesta Pro',
+      desc: 'Profesionální záchranná vesta s reflexními prvky SOLAS pro offshore operace a záchranářské akce.',
+    },
+    'oars-pump-set': {
+      name: 'Sada pádel a pumpy',
+      desc: 'Pár 1,6m hliníkových pádel a 5L nožní pumpa s vysokým průtokem pro nafukovací vodní sporty.',
+    },
+    'sup-explorer-11': {
+      name: "SUP Explorer 11'",
+      desc: 'Univerzální nafukovací all-around SUP se stabilitou širokého těla pro začátečníky a mírně pokročilé pádlující.',
+    },
+    'sup-cheetah-surge': {
+      name: 'Edice Cheetah Surge',
+      desc: 'All-around SUP inspirovaný divokou přírodou s prémiovou vícebarevnou EVA blokovou mozaikou a gepardím motivem v pastelově růžové, tyrkysové a korálové.',
+    },
+    'sup-leviathan-wake': {
+      name: 'Řada Leviathan Wake (Edice Velryba)',
+      desc: 'All-around SUP inspirovaný oceánem s majestátním totemem modré velryby s geometrickými a kmenovými vzory, doplněný černo-bílými vlnovými liniemi.',
+    },
+    'sup-medusa-glow': {
+      name: 'Řada Medusa Glow (Edice Medúza)',
+      desc: 'Snový all-around SUP inspirovaný medúzou s prémiovou vícebarevnou EVA blokovou mozaikou, hvězdicemi a uměleckým zobrazením korálového útesu v osvěžující mátové zelené.',
+    },
+    'sup-ocean-pulse': {
+      name: 'Řada Ocean Pulse',
+      desc: 'All-around SUP inspirovaný topografickými vlnami s konturami Tiffany Blue, vysoce přesnou mechanickou ražbou a jednotnou estetickou sadou příslušenství.',
+    },
+    'sup-ocean-voyager': {
+      name: 'Řada Ocean Voyager',
+      desc: 'All-around SUP inspirovaný mořskou želvou s prémiovou vícebarevnou EVA blokovou mozaikou v hluboké petrolejové, tyrkysové a korálově oranžové.',
+    },
+    'sup-dolphin-wave': {
+      name: 'Řada Dolphin Wave',
+      desc: 'All-around SUP inspirovaný delfínem se středověkými modrými vlnami, vysoce přesným spojováním barevných EVA bloků a 360° námořskou estetikou bočních hran.',
+    },
+    'sup-flowing-lotus': {
+      name: 'Řada Flowing Lotus',
+      desc: 'All-around SUP inspirovaný východním uměním s motivy lotosu, kaprů koi a vážek, s laserově rytou protiskluzovou podložkou a uměleckým gradientním průtokem vody.',
+    },
+    'sup-jungle-mandala': {
+      name: 'Řada Jungle Mandala',
+      desc: 'All-around SUP inspirovaný tropickým deštným pralesem a mandalou s ibišky, kolibříky a symetrickými geometrickými totemy v Tiffany Blue a korálově oranžové.',
+    },
+    'sup-tropical-breeze': {
+      name: 'Řada Tropical Breeze Island Escape',
+      desc: 'All-around SUP inspirovaný ostrovním rájem s kompletním plátnem ostrovní dovolené se sluncem, kokosovými háji a plážovými scénami.',
+    },
   },
   da: {
     'sup-horizon-lines': {
@@ -4764,6 +5116,58 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
           a: 'Den inkluderede dobbeltcylindrede håndpumpe bevæger stort volumen hurtigt og når højere tryk med mindre indsats, og brættet er kompatibelt med den valgfrie afarer 12 V DC elektriske pumpe.',
         },
       ],
+    },
+    'life-vest-classic': {
+      name: 'Redningsvest Classic',
+      desc: 'Universel flydehjælp til rekreative vandsport. CE-certificeret.',
+    },
+    'life-vest-pro': {
+      name: 'Redningsvest Pro',
+      desc: 'Professionel redningsvest med SOLAS-refleks til offshore- og redningsoperationer.',
+    },
+    'oars-pump-set': {
+      name: 'Årer & Pompesæt',
+      desc: 'Par 1,6 m aluminiumsårer og 5L fodpumpe med høj kapacitet til oppustelig vandsport.',
+    },
+    'sup-explorer-11': {
+      name: "SUP Explorer 11'",
+      desc: 'Alsides oppustelig allround-SUP med bred kropsstabilitet til begyndere og mellemøvede padlere.',
+    },
+    'sup-cheetah-surge': {
+      name: 'Cheetah Surge-udgaven',
+      desc: 'Vildmarksinspireret allround-SUP med premium flerfarvet EVA-bloksammensætning og gepardmotiv i pastelrosa, petrol og koral.',
+    },
+    'sup-leviathan-wake': {
+      name: 'Leviathan Wake-serien (Hval-udgaven)',
+      desc: 'Havinspireret allround-SUP med majestætisk blåhval-totem i geometriske og stammemønstre kombineret med sort-hvide svallinjer.',
+    },
+    'sup-medusa-glow': {
+      name: 'Medusa Glow-serien (Vandmand-udgaven)',
+      desc: 'Drømmeagtigt vandmandsinspireret allround-SUP med premium flerfarvet EVA-bloksammensætning, søstjerner og koralrevs-kunst i forfriskende mintgrøn.',
+    },
+    'sup-ocean-pulse': {
+      name: 'Ocean Pulse-serien',
+      desc: 'Topografisk bølgeinspireret allround-SUP med Tiffany Blue-konturer, mekanisk prægning med høj præcision og samlet æstetisk tilbehørssæt.',
+    },
+    'sup-ocean-voyager': {
+      name: 'Ocean Voyager-serien',
+      desc: 'Havskildpasseinspireret allround-SUP med premium flerfarvet EVA-bloksammensætning i dyb petrol, turkis og koralorange.',
+    },
+    'sup-dolphin-wave': {
+      name: 'Dolphin Wave-serien',
+      desc: 'Delfininspireret allround-SUP med middelalderlige blå bølger, EVA-farvebloksammensætning med høj præcision og 360-graders maritim rails-æstetik.',
+    },
+    'sup-flowing-lotus': {
+      name: 'Flowing Lotus-serien',
+      desc: 'Østlig kunstinspireret allround-SUP med lotus-, koi- og guldsmedemotiver, lasergraveret grippedæk og gradient vandstrøms-kunst.',
+    },
+    'sup-jungle-mandala': {
+      name: 'Jungle Mandala-serien',
+      desc: 'Tropisk regnskove- og mandalainspireret allround-SUP med hibiscus, kolibrier og symmetriske geometriske totemer i Tiffany Blue og koralorange.',
+    },
+    'sup-tropical-breeze': {
+      name: 'Tropical Breeze Island Escape-serien',
+      desc: 'Øparadisinspireret allround-SUP med et komplet øferie-canvas med solskin, kokoslunde og strandscener.',
     },
   },
   ro: {
@@ -4970,6 +5374,58 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
         },
       ],
     },
+    'life-vest-classic': {
+      name: 'Vestă de salvare Classic',
+      desc: 'Ajutor universal de flotabilitate pentru sporturi nautice recreative. Certificat CE.',
+    },
+    'life-vest-pro': {
+      name: 'Vestă de salvare Pro',
+      desc: 'Vestă de salvare de clasă profesională cu reflectoare SOLAS pentru operațiuni offshore și de salvare.',
+    },
+    'oars-pump-set': {
+      name: 'Set vâsle & pompă',
+      desc: 'Pereche de vâsle din aluminiu de 1,6 m și pompă de picior de 5L cu debit ridicat pentru sporturi nautice gonflabile.',
+    },
+    'sup-explorer-11': {
+      name: "SUP Explorer 11'",
+      desc: 'SUP gonflabil all-around versatil cu stabilitate de corp larg pentru începători și paddleri de nivel intermediar.',
+    },
+    'sup-cheetah-surge': {
+      name: 'Ediția Cheetah Surge',
+      desc: 'SUP all-around inspirat de natura sălbatică cu mozaic premium din blocuri EVA multicolore și motiv de ghepard în roz pastel, turcoaz și coral.',
+    },
+    'sup-leviathan-wake': {
+      name: 'Seriile Leviathan Wake (Ediția Balenă)',
+      desc: 'SUP all-around inspirat de ocean cu totem majestuos de balenă albastră cu modele geometrice și tribale, împreună cu linii de hulă alb-negre.',
+    },
+    'sup-medusa-glow': {
+      name: 'Seriile Medusa Glow (Ediția Meduza)',
+      desc: 'SUP all-around visător inspirat de meduze cu mozaic premium din blocuri EVA multicolore, stele de mare și artă de recif de coral în verde mentă răcoritor.',
+    },
+    'sup-ocean-pulse': {
+      name: 'Seriile Ocean Pulse',
+      desc: 'SUP all-around inspirat de valuri topografice cu contururi Tiffany Blue, embosare mecanică de înaltă precizie și kit estetic unificat de accesorii.',
+    },
+    'sup-ocean-voyager': {
+      name: 'Seriile Ocean Voyager',
+      desc: 'SUP all-around inspirat de țestoase marine cu mozaic premium din blocuri EVA multicolore în turcoaz închis, turcoaz și portocaliu coral.',
+    },
+    'sup-dolphin-wave': {
+      name: 'Seriile Dolphin Wave',
+      desc: 'SUP all-around inspirat de delfini cu valuri albastre medievale, îmbinare de blocuri colorate EVA de înaltă precizie și estetică marină a bordurilor de 360 de grade.',
+    },
+    'sup-flowing-lotus': {
+      name: 'Seriile Flowing Lotus',
+      desc: 'SUP all-around inspirat de arta orientală cu motive de lotus, koi și libelule, cu pad de tracțiune gravat cu laser și artă gradata a curgerii apei.',
+    },
+    'sup-jungle-mandala': {
+      name: 'Seriile Jungle Mandala',
+      desc: 'SUP all-around inspirat de pădurea tropicală și mandala cu hibiscus, colibri și toteme geometrice simetrice în Tiffany Blue și portocaliu coral.',
+    },
+    'sup-tropical-breeze': {
+      name: 'Seriile Tropical Breeze Island Escape',
+      desc: 'SUP all-around inspirat de paradisul insular cu o pânză completă de vacanță insulară cu soare, crânguri de nuci de cocos și scene de plajă.',
+    },
   },
   th: {
     'sup-horizon-lines': {
@@ -5174,6 +5630,58 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
           a: 'ปั๊มมือสูบคู่ที่ให้มาเคลื่อนปริมาณอากาศมากได้เร็วและถึงแรงดันสูงด้วยแรงน้อยลง และบอร์ดรองรับปั๊มไฟฟ้า afarer 12VDC (อุปกรณ์เสริม)',
         },
       ],
+    },
+    'life-vest-classic': {
+      name: 'เสื้อชูชีพ Classic',
+      desc: 'อุปกรณ์ช่วยลอยตัวสำหรับกีฬาทางน้ำเพื่อการพักผ่อน ได้รับการรับรอง CE',
+    },
+    'life-vest-pro': {
+      name: 'เสื้อชูชีพ Pro',
+      desc: 'เสื้อชูชีพระดับมืออาชีพพร้อมแถบสะท้อนแสง SOLAS สำหรับปฏิบัติการนอกชายฝั่งและงานกู้ภัย',
+    },
+    'oars-pump-set': {
+      name: 'ชุดไม้พายและปั๊ม',
+      desc: 'ไม้พายอะลูมิเนียมคู่ ยาว 1.6 ม. พร้อมปั๊มเท้า 5L แรงดันสูงสำหรับกีฬาทางน้ำแบบพองลม',
+    },
+    'sup-explorer-11': {
+      name: "SUP Explorer 11'",
+      desc: 'SUP พองลมหลากหลายการใช้งาน พร้อมความมั่นคงจากทรงลำตัวกว้างสำหรับมือใหม่และผู้พายระดับกลาง',
+    },
+    'sup-cheetah-surge': {
+      name: 'Cheetah Surge เอดิชัน',
+      desc: 'SUP หลากหลายการใช้งานสไตล์ธรรมชาติป่า พร้อมงานต่อบล็อก EVA หลากสีพรีเมียมลวดลายเสือชีตาห์ในโทนพาสเทลชมพู เขียวหัวเป็ด และส้มโคราล',
+    },
+    'sup-leviathan-wake': {
+      name: 'Leviathan Wake ซีรีส์ (ฉบับวาฬ)',
+      desc: 'SUP หลากหลายการใช้งานสไตล์มหาสมุทร พร้อมลายโทเท็มวาฬสีน้ำเงินอันงดงามในลวดลายเรขาคณิตและชนเผ่า ตัดด้วยเส้นคลื่นสีขาวดำ',
+    },
+    'sup-medusa-glow': {
+      name: 'Medusa Glow ซีรีส์ (ฉบับแมงกะพรุน)',
+      desc: 'SUP หลากหลายการใช้งานสไตล์แมงกะพรุนแสนฝัน พร้อมงานต่อบล็อก EVA หลากสีพรีเมียม ดาวทะเล และงานศิลป์แนวปะการังในโทนเขียวมินต์สดชื่น',
+    },
+    'sup-ocean-pulse': {
+      name: 'Ocean Pulse ซีรีส์',
+      desc: 'SUP หลากหลายการใช้งานสไตล์คลื่นภูมิประเทศ พร้อมเส้นขอบสีทิฟฟานีบลู งานประทับลายเชิงกลไกความละเอียดสูง และชุดอุปกรณ์เสริมดีไซน์เอกภาพ',
+    },
+    'sup-ocean-voyager': {
+      name: 'Ocean Voyager ซีรีส์',
+      desc: 'SUP หลากหลายการใช้งานสไตล์เต่าทะเล พร้อมงานต่อบล็อก EVA หลากสีพรีเมียมในโทนเขียวหัวเป็ดเข้ม เขียวมรกต และส้มโคราล',
+    },
+    'sup-dolphin-wave': {
+      name: 'Dolphin Wave ซีรีส์',
+      desc: 'SUP หลากหลายการใช้งานสไตล์โลมา พร้อมคลื่นสีน้ำเงินสไตล์ยุคกลาง งานต่อบล็อกสี EVA ความละเอียดสูง และดีไซน์แนวรางทะเลรอบด้าน 360 องศา',
+    },
+    'sup-flowing-lotus': {
+      name: 'Flowing Lotus ซีรีส์',
+      desc: 'SUP หลากหลายการใช้งานสไตล์ศิลปะตะวันออก พร้อมลวดลายดอกบัว ปลาคาร์ปคอย และแมลงปอ แผ่นยึดเกาะแกะลายด้วยเลเซอร์ และงานศิลป์ไล่เฉดการไหลของน้ำ',
+    },
+    'sup-jungle-mandala': {
+      name: 'Jungle Mandala ซีรีส์',
+      desc: 'SUP หลากหลายการใช้งานสไตล์ป่าฝนเขตร้อนและมันดาลา พร้อมลายดอกชบา นกฮัมมิงเบิร์ด และโทเท็มเรขาคณิตสมมาตรในโทนทิฟฟานีบลูและส้มโคราล',
+    },
+    'sup-tropical-breeze': {
+      name: 'Tropical Breeze Island Escape ซีรีส์',
+      desc: 'SUP หลากหลายการใช้งานสไตล์เกาะสวรรค์ พร้อมผืนผ้าใบบันทึกวันพักผ่อนบนเกาะที่ครบครันด้วยแสงแดด สวนมะพร้าว และบรรยากาศชายหาด',
     },
   },
 };

@@ -32,6 +32,9 @@ TOOLS/
 │   ├── _dump-missing.cjs       # 导出某语言缺失 UI 键及英文源文到 _missing-en.json
 │   ├── _verify-langs.cjs       # 合并前校验 _lang-{lang}.cjs（覆盖 dump 全部键/空值/markup/CJK）
 │   ├── _patch-exitintent.cjs   # exitIntent.* 8 键批次：--en 写入 EN 键 / --patch 追加译文到 _lang 文件
+│   ├── product-texts-patch/    # product-texts.ts 产品文案翻译批次（补缺失条目 + 修 EN 占位 name/desc）
+│   │   ├── _patch-product-texts.cjs  # 补丁器：--dry 报告 / --patch 应用（幂等；按 _pt-data-*.cjs 分片驱动）
+│   │   └── _pt-data-{lang|major}.cjs ×14  # 翻译表分片：{ lang: { productId: { name?, desc? } } }，lang 不跨分片
 │   ├── _missing-en.json        # 缺失键英文底稿（_dump-missing.cjs 输出，按批次重新生成）
 │   └── _lang-{lang}.cjs ×20    # 各语言 UI 字符串键值数据（累积式，随批次增长）
 ├── eslint/                 # 代码规范批量清理工具
@@ -75,6 +78,7 @@ TOOLS/
 | `_dump-missing.cjs`     | 导出某语言相对英文 SSOT 缺失的 UI 键及其英文源文到 `_missing-en.json`（键序与 en 一致，作为翻译底稿）。**每批次开始时重新生成**，内容随批次变化。                                                                                    | `node TOOLS/i18n-merge/_dump-missing.cjs`（输出到本目录 `_missing-en.json`） |
 | `_verify-langs.cjs`     | 校验 `_lang-{lang}.cjs`：必须**覆盖** `_missing-en.json` 全部键（子集校验，`_lang` 文件是累积式、含历史批次键，多余键仅提示不算失败）、无空值、markup 计数（`<strong>`/`<br />`/`→`）与英文一致、非 ja 语言无 CJK 字符。合并前必跑。 | `node TOOLS/i18n-merge/_verify-langs.cjs pt it ja ...`（可传多个语言码）     |
 | `_patch-exitintent.cjs` | ExitIntentPopup 文案 UI 化批次（exitIntent.* 8 键 × 21 语言）。`--en` 把 EN 键写入 i18n-config.json；`--patch` 把译文追加到 `_lang-{lang}.cjs`（幂等，缺文件自动新建，fr 即由此创建）。内嵌翻译表，可作后续批次的模板。              | `node TOOLS/i18n-merge/_patch-exitintent.cjs --en` / `--dry` / `--patch`     |
+| `product-texts-patch/`  | product-texts.ts 产品文案翻译批次。`_pt-data-*.cjs` 分片提供 `{ lang: { productId: { name?, desc? } } }`（一个语言不跨分片），`_patch-product-texts.cjs` 据此对 src/data/product-texts.ts：已有条目替换指定字段、缺失条目在语言段末尾插入 `{ name, desc }`。幂等（值相同即跳过）；值含 `'` 自动改双引号输出。已完成：9 系列 name 占位（fr/de/pt/es/it/pl/ru）、ja/ko/ar 系列 name+desc 旧版英文残留 + explorer-11 desc、sv 10 条 + 9 语言 ×13 条缺失条目。**保留不译**：`SUP Explorer 11'`、`RHEO`、`Horizon Lines` 等拉丁品牌/型号名，及 de/sv/nl/no/tr/cs/da/th 的 `Touring Cruiser SUP`/`Utility & Lure Skiff SUP`（各语言统一惯例，参照 fr/es/it 的 "SUP Touring Cruiser"）。 | `node TOOLS/i18n-merge/product-texts-patch/_patch-product-texts.cjs` / `--patch`，改后 `npx prettier --write src/data/product-texts.ts` |
 
 **注意事项：** 合并完成后必须重新生成 `public/data/i18n-config.json` 与 `src/i18n/generated/ui-all.ts`：在仓库根执行 `node scripts/generate-data-json.mjs && node scripts/_gen-uiall.cjs`（或直接 `npm run build`）。若含中文等 CJK，写入时用 UTF-8 无 BOM（本项目脚本均为 `utf8`）。
 

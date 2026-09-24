@@ -383,6 +383,14 @@ When renaming URLs/names across the site:
 
 `_merge-langs.cjs` 第 9 行用了 `path.join(__dirname, ...)` 但从未 `require('path')`，导致 17 语言合并首跑即 `ReferenceError: path is not defined`。该脚本此前"能跑"是因为旧批次走的不同调用路径，掩盖了缺陷。教训：**修改/新增批量脚本后必须先用 1 个语言试跑确认无异常，再跑全量**；`require('fs')`/`require('path')` 这类依赖检查可用 `node --check` 快速过一遍语法（但运行时 ReferenceError 只能实跑发现）。
 
+#### L13. 正则捕获组必须包含完整引号 token —— 否则"值比较"静默跳过
+
+`_patch-product-texts.cjs` 的字段匹配正则把单引号值的**闭引号落在捕获组外**：`("..."|'...')'`。后果：`m[2]` = `'Ocean Pulse Series`（缺尾引号），`decode` 用 `slice(1,-1)` 去头尾后变成 `Ocean Pulse Serie`，恰好等于目标译文 `Ocean Pulse Serie` → 脚本误判"已应用"而**静默跳过 6 个替换**（dry run 少报、不报错）。同时该正则对双引号值（`"SUP Explorer 11'"`）完全不匹配（闭引号强制要求后面还有个 `'`），会走错 ADD 分支造成重复字段。教训：**解析带引号字符串的正则，捕获组必须把开闭引号整体包进去**：`("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')`；且 dry-run 计数必须与预期手工核算值比对（本例预期 120 实报 114 才发现）。
+
+#### L14. 等值比较检测不到"旧版英文残留"—— 检测要用内容特征而非仅 diff SSOT
+
+product-texts.ts 中 ja/ko/ar 的 9 个系列 desc 是**旧版英文文案**（与当前 products.ts EN SSOT 不同），"desc == 当前 EN" 的等值审计完全漏报。发现途径是靠"非拉丁语言中出现长 ASCII 串"的内容特征扫描。教训：**占位/回退检测要两套：① 与 SSOT 等值比较（抓直接复制）；② 按语言文字系统做内容特征扫描（ja/ko/zh/th/ar 中长拉丁串 = 残留）。** Latin 语言的特征扫描需用英文独有词（with/featuring/inspired 等）并人工复核假阳性（sv/de 保留术语 offshore、drop-stitch 会误报）。
+
 ---
 
 ## 9. SEO & GEO Internals
