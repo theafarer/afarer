@@ -22,7 +22,7 @@ const hero = page.hero ?? {};
 const cases = page.features3_cases ?? {};
 const cta = page.cta ?? {};
 const lh = (h: string) => (h ? `/${lang}${h}` : h);
-const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
 
 const metadata = {
   title: `Case Studies — ${SITE.name} | Water Sports Partnership Projects`,
@@ -31,8 +31,8 @@ const metadata = {
 };
 const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Case Studies' }];
 const caseSchemas = (cases.items || [])
-  .filter((c: any) => c.customer && c.country)
-  .map((c: any, _i: any) => ({
+  .filter((c) => c.customer && c.country)
+  .map((c, _i) => ({
     '@type': 'CaseStudy',
     name: c.title,
     description: c.description,

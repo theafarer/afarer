@@ -42,7 +42,7 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Marine Academy' }];
       <p class="mt-2 text-gray-500">{kcSubtitle}</p>
     </div>
     {
-      knowledgeSections.map((sec: any) => (
+      knowledgeSections.map((sec) => (
         <section class="mb-12" data-ai-block="knowledge-section">
           <div class="flex items-center gap-3 mb-4">
             <h3 class="text-xl font-bold text-gray-900">{sec.title}</h3>
@@ -50,7 +50,7 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Marine Academy' }];
           </div>
           <p class="text-sm text-gray-500 mb-5 max-w-3xl">{sec.desc}</p>
           <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {sec.guides.map((g: any) => (
+            {sec.guides.map((g) => (
               <a
                 href={`/en${g.href}`}
                 class="group block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-sky-200 transition-all hover:-translate-y-0.5"
@@ -82,7 +82,7 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Marine Academy' }];
   </section>
 
   {
-    categories.map((cat: any) => (
+    categories.map((cat) => (
       <section class="px-6 sm:px-6 pb-16 mx-auto max-w-6xl" data-ai-block="learning-category">
         <div class="flex items-center gap-4 mb-8">
           <div
@@ -98,7 +98,7 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Marine Academy' }];
           </div>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {cat.guides.map((g: any) => (
+          {cat.guides.map((g) => (
             <a
               href={`/v2/${g.slug}`}
               class="group block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
@@ -139,8 +139,8 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Marine Academy' }];
       url: 'https://afarer.com/academy',
       mainEntity: {
         '@type': 'ItemList',
-        itemListElement: categories.flatMap((cat: any) =>
-          cat.guides.map((g: any, i: any) => ({
+        itemListElement: categories.flatMap((cat) =>
+          cat.guides.map((g, i) => ({
             '@type': 'ListItem',
             position: i + 1,
             item: {

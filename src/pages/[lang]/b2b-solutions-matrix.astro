@@ -24,8 +24,8 @@ const hero = page.hero ?? {};
 const solutions = page.solutions ?? {};
 const cta = page.cta ?? {};
 const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}` : h);
-const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
-const localizedItems = solutions.items?.map((item: any) => ({
+const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
+const localizedItems = solutions.items?.map((item) => ({
   ...item,
   link: item.link ? `/${lang}${item.link}` : item.link,
 }));
@@ -64,7 +64,7 @@ const crumbs = [
         </thead>
         <tbody>
           {
-            localizedItems?.map((item: any, _idx: any) => (
+            localizedItems?.map((item, _idx) => (
               <tr class="border-b border-gray-100 last:border-b-0 hover:bg-gray-50 transition-colors">
                 <td class="px-6 py-4 text-gray-900 font-medium">{item.clientType}</td>
                 <td class="px-6 py-4 text-gray-600">{item.need}</td>
@@ -106,7 +106,7 @@ const crumbs = [
       description: '24 Afarer B2B solutions matched to customer types',
       url: `/${lang}/b2b-solutions-matrix`,
       numberOfItems: localizedItems?.length || 24,
-      itemListElement: localizedItems?.map((item: any, idx: any) => ({
+      itemListElement: localizedItems?.map((item, idx) => ({
         '@type': 'ListItem',
         position: idx + 1,
         item: {

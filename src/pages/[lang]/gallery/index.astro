@@ -36,14 +36,14 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: hero.title }];
   </section>
 
   {
-    albums.map((album: any) => (
+    albums.map((album) => (
       <section class="px-6 sm:px-6 pb-16 mx-auto max-w-6xl">
         <div class="mb-8">
           <h2 class="text-2xl font-bold text-gray-900">{album.title}</h2>
           <p class="mt-1 text-sm text-muted">{album.desc}</p>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {album.images.map((src: any) => (
+          {album.images.map((src) => (
             <div class="rounded-xl overflow-hidden bg-gray-100 aspect-[4/3]">
               <img
                 src={src}

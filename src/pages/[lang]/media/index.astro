@@ -36,14 +36,14 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: hero.title }];
   </section>
 
   {
-    sections.map((sec: any) => (
+    sections.map((sec) => (
       <section class="px-6 sm:px-6 pb-16 mx-auto max-w-6xl" data-ai-block="media-section" id={sec.id}>
         <div class="mb-8">
           <h2 class="text-2xl font-bold text-gray-900">{sec.title}</h2>
           <p class="mt-1 text-sm text-muted">{sec.desc}</p>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {sec.items.map((item: any) => (
+          {sec.items.map((item) => (
             <div class="group bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-all cursor-pointer">
               <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-lg">
                 {sec.id === 'videos' ? '▶️' : sec.id === 'catalogs' ? '📄' : sec.id === 'logo-brand-kit' ? '🎨' : '🖼️'}
@@ -70,7 +70,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: hero.title }];
       <p class="mt-2 text-sm text-muted">{cta.desc}</p>
       <div class="mt-8 flex justify-center gap-4 flex-wrap">
         {
-          (cta.links || []).map((link: any) => (
+          (cta.links || []).map((link) => (
             <a
               href={`/${lang}${link.href}`}
               class="flex flex-col items-center px-6 py-4 bg-white border border-gray-200 rounded-xl hover:shadow-md transition-all min-w-[180px]"

@@ -26,10 +26,10 @@ const kcSubtitle =
   'Expert knowledge and buying guides for marine professionals, fleet operators, and water sports enthusiasts.';
 
 const metadata = {
-  title: t('academy.metaTitle') || 'Learning Center â€” Afarer Academy',
+  title: t('academy.metaTitle') || 'Learning Center â€?Afarer Academy',
   description:
     t('academy.metaDesc') ||
-    'Guides and tutorials for every skill level â€” from SUP basics to advanced rescue techniques. Learn at your own pace with Afarer Academy.',
+    'Guides and tutorials for every skill level â€?from SUP basics to advanced rescue techniques. Learn at your own pace with Afarer Academy.',
 };
 
 const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: t('academy.title') || 'Academy' }];
@@ -50,7 +50,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: t('academy.title') 
           <h2 class="mt-1 text-3xl font-bold text-gray-900">{kcTitle}</h2>
           <p class="mt-2 text-gray-500">{kcSubtitle}</p>
         </div>
-        {knowledgeSections.map((sec: any) => (
+        {knowledgeSections.map((sec) => (
           <section class="mb-12" data-ai-block="knowledge-section">
             <div class="flex items-center gap-3 mb-4">
               <h3 class="text-xl font-bold text-gray-900">{sec.title}</h3>
@@ -58,7 +58,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: t('academy.title') 
             </div>
             <p class="text-sm text-gray-500 mb-5 max-w-3xl">{sec.desc}</p>
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {sec.guides.map((g: any) => (
+              {sec.guides.map((g) => (
                 <a
                   href={`/${lang}${g.href}`}
                   class="group block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-sky-200 transition-all hover:-translate-y-0.5"
@@ -91,7 +91,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: t('academy.title') 
           <p class="mt-2 text-gray-500">
             {hero.subtitle ||
               t('academy.learningCenterDesc') ||
-              'Step-by-step guides and tutorials organized by skill level â€” from SUP basics to advanced rescue techniques.'}
+              'Step-by-step guides and tutorials organized by skill level â€?from SUP basics to advanced rescue techniques.'}
           </p>
         </div>
       </section>
@@ -99,7 +99,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: t('academy.title') 
   }
 
   {
-    categories.map((cat: any) => (
+    categories.map((cat) => (
       <section class="px-6 sm:px-6 pb-16 mx-auto max-w-6xl" data-ai-block="learning-category">
         <div class="flex items-center gap-4 mb-8">
           <div
@@ -117,7 +117,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: t('academy.title') 
           </div>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {cat.guides.map((g: any) => (
+          {cat.guides.map((g) => (
             <a
               href={`/${lang}/v2/${g.slug}`}
               class="group block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
@@ -153,13 +153,13 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: t('academy.title') 
     set:html={JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
-      name: 'Afarer Academy â€” Learning Center',
+      name: 'Afarer Academy â€?Learning Center',
       description: 'Guides and tutorials for every skill level from SUP basics to advanced rescue techniques.',
       url: `https://afarer.com/${lang}/academy`,
       mainEntity: {
         '@type': 'ItemList',
-        itemListElement: categories.flatMap((cat: any) =>
-          cat.guides.map((g: any, i: any) => ({
+        itemListElement: categories.flatMap((cat) =>
+          cat.guides.map((g, i) => ({
             '@type': 'ListItem',
             position: i + 1,
             item: {

@@ -68,7 +68,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Trust' }];
             <p class="mt-4 text-lg text-white/60 max-w-2xl mx-auto">{factoryAudit.subtitle}</p>
           </div>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {factoryAudit.stats.map((s: any) => (
+            {factoryAudit.stats.map((s) => (
               <div class="text-center">
                 <div class="text-4xl md:text-5xl font-bold text-primary">{s.value}</div>
                 <p class="mt-2 text-sm text-white/50 uppercase tracking-wider">{s.label}</p>
@@ -76,7 +76,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Trust' }];
             ))}
           </div>
           <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {factoryAudit.highlights?.map((h: any) =>
+            {factoryAudit.highlights?.map((h) =>
               h.link ? (
                 <a
                   href={h.link.startsWith('/') ? '/' + lang + h.link : h.link}
@@ -111,7 +111,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Trust' }];
             <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">{warrantySection.subtitle}</p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {warrantySection.items.map((item: any) =>
+            {warrantySection.items.map((item) =>
               item.link ? (
                 <a
                   href={item.link.startsWith('/') ? '/' + lang + item.link : item.link}
@@ -146,7 +146,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Trust' }];
             <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">{trustResources.subtitle}</p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {trustResources.items.map((item: any) => (
+            {trustResources.items.map((item) => (
               <div class="bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition-all">
                 <h3 class="text-lg font-semibold text-secondary">{item.title}</h3>
                 <p class="mt-2 text-sm text-gray-500 leading-relaxed">{item.desc}</p>

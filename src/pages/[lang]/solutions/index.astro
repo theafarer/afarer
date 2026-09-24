@@ -27,8 +27,8 @@ const stats = page.stats ?? {};
 const solutions = page.features3_solutions ?? {};
 const cta = page.cta ?? {};
 const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}` : h);
-const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
-const localizedItems = solutions.items?.map((item: any) => ({
+const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
+const localizedItems = solutions.items?.map((item) => ({
   ...item,
   link: item.link ? `/${lang}${item.link}` : item.link,
 }));

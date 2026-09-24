@@ -29,7 +29,12 @@ TOOLS/
 │   └── _meta-{lang}.cjs ×21    # 各语言 meta 数据（ar/cs/da/de/el/es/fi/fr/it/ja/ko/nl/no/pl/pt/ro/ru/sv/th/tr/zh）
 ├── i18n-merge/             # i18n-config.json 的多语言 UI 字符串合并工具
 │   ├── _merge-langs.cjs        # 合并器：node _merge-langs.cjs de nl ...
+│   ├── _dump-missing.cjs       # 导出某语言缺失 UI 键及英文源文到 _missing-en.json
+│   ├── _verify-langs.cjs       # 合并前校验 _lang-{lang}.cjs（键集/空值/markup/CJK）
+│   ├── _missing-en.json        # 缺失键英文底稿（_dump-missing.cjs 输出）
 │   └── _lang-{lang}.cjs ×21    # 各语言 UI 字符串键值数据
+├── eslint/                 # 代码规范批量清理工具
+│   └── strip-explicit-any.cjs  # 批量移除 .astro 回调参数冗余 `: any` 注解（支持 --dry 试跑）
 ├── i18n-fix/               # i18n-config.json 修复工具
 │   ├── _fix-i18n.cjs          # 恢复损坏的 compare.afarerVsTraditional.* 英文值
 │   └── _fix-i18n-ranges.cjs   # 修正常见 en 值范围/数字/符号格式
@@ -125,9 +130,17 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 | `scan-cjk.cjs`                | CJK（中文）泄漏扫描：`src` 模式扫 src/ + public/ 源码，`dist` 模式扫产物（跳过 ja/ko/_astro/llms*.txt）。白名单：切换器语言标签（日本語/한국어/中文）。                                                                                                                                                             | `node TOOLS/i18n-manage/scan-cjk.cjs src`<br>`node TOOLS/i18n-manage/scan-cjk.cjs dist`                                                                                                                                                                               |
 | `sync-footer-from-header.cjs` | 将全部 `src/data/site/navigation*.yaml`（EN + 21 语言镜像）的 `footer.links` 整体替换为各自 `header.links` 分组结构，使页脚与导航栏一致（5 组：Products / Explore Afarer / Co-Brand / Country Partners / Support）。分组标题在渲染时经 Footer navTextMap → i18n-config 键翻译。改 header 结构后跑一次即可同步页脚。 | 在仓库根 `node TOOLS/i18n-manage/sync-footer-from-header.cjs`，随后 `npm run build`；如增删分组，需同步维护 Footer.astro 的 navTextMap 与 i18n-config 对应键（用 ui-keys.cjs add/remove）。注意：navigation.{lang}.yaml 是 Keystatic 管理端镜像，构建仅读 EN 根文件。 |
 
----
+### 7. eslint/ — 代码规范批量清理
 
-## 通用规则（编码 / 编码安全 — 必读）
+清理 `@typescript-eslint/no-explicit-any` 等 lint warning 的批量工具。
+
+| 文件                     | 用途                                                                                                                                                                                                                                                                                           | 用法（仓库根）                                                                                                                 |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `strip-explicit-any.cjs` | 批量移除 `.astro` 文件回调参数中的冗余 `: any` 注解（仅匹配 `: any)` 与 `: any,` 两种回调参数模式，不会误伤 `as any`/`any[]`/类型声明）。前提：`getPageContent()` 返回 any 且 tsconfig 未启用 noImplicitAny，删除注解后参数退化为隐式 any，行为不变。`as any`/`any[]` 等非回调模式需手工处理。 | `node TOOLS/eslint/strip-explicit-any.cjs --dry <files...>`（先试跑）<br>`node TOOLS/eslint/strip-explicit-any.cjs <files...>` |
+
+处理后校验：`npx eslint <files>` 应无 warning，`npm run check`（astro check 须 0 错误）、`npm run build` 回归。
+
+---
 
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。

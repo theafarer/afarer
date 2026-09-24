@@ -119,10 +119,10 @@ const pagesWithGaps = pageCoverage.filter((p) => NON_EN_CODES.some((c) => !p.lan
 /* Navigation Structure Analysis                                       */
 /* ------------------------------------------------------------------ */
 
-function extractNavUrls(doc: any): string[] {
+function extractNavUrls(doc): string[] {
   const urls: string[] = [];
   if (!doc) return urls;
-  const walk = (links: any[]) => {
+  const walk = (links) => {
     if (!links) return;
     for (const item of links) {
       if (item.href && item.href.startsWith('/')) urls.push(item.href);
@@ -131,14 +131,14 @@ function extractNavUrls(doc: any): string[] {
     }
   };
   walk(doc.header?.links);
-  walk(doc.footer?.links?.flatMap((f: any) => f.links || []));
+  walk(doc.footer?.links?.flatMap((f) => f.links || []));
   return [...new Set(urls)].sort();
 }
 
-function extractNavTexts(doc: any): string[] {
+function extractNavTexts(doc): string[] {
   const texts: string[] = [];
   if (!doc) return texts;
-  const walk = (links: any[]) => {
+  const walk = (links) => {
     if (!links) return;
     for (const item of links) {
       if (item.text) texts.push(item.text);
@@ -147,7 +147,7 @@ function extractNavTexts(doc: any): string[] {
     }
   };
   walk(doc.header?.links);
-  walk(doc.footer?.links?.flatMap((f: any) => f.links || []));
+  walk(doc.footer?.links?.flatMap((f) => f.links || []));
   return texts;
 }
 
@@ -175,7 +175,7 @@ for (const code of LANG_CODES) {
   };
   if (raw) {
     try {
-      const doc = yaml.load(raw) as any;
+      const doc = yaml.load(raw);
       const urls = extractNavUrls(doc);
       if (code === 'en') englishNavUrls = urls;
       entry.urlDiff = extractNavUrls(doc).filter((u) => !englishNavUrls.includes(u));
@@ -264,7 +264,7 @@ for (const code of NON_EN_CODES) {
   const raw = navRawModules[key];
   if (raw) {
     try {
-      const doc = yaml.load(raw) as any;
+      const doc = yaml.load(raw);
       const texts = extractNavTexts(doc);
       const leaks = detectEnglishLeaks(texts);
       if (leaks.length > 0) {
@@ -503,7 +503,7 @@ const _hb = (score: number): string => {
                                 ? '/src/data/site/navigation.yaml'
                                 : `/src/data/site/navigation.${n.lang}.yaml`
                             ]
-                          ) as any
+                          )
                         ).length
                       : '-'}
                   </td>

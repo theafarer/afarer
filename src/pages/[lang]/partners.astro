@@ -30,7 +30,7 @@ const process = page.content_process ?? {};
 const cta = page.cta ?? {};
 
 const lh = (h: string) => (h ? `/${lang}${h}` : h);
-const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
 
 const metadata = {
   title: `Partners — ${SITE.name} | Distributor & Dealer Program`,

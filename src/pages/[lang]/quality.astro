@@ -40,7 +40,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: hero.tagline }];
   <section class="px-6 sm:px-6 pb-8 mx-auto max-w-6xl">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
       {
-        stats.map((s: any) => (
+        stats.map((s) => (
           <div class="text-center p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
             <span class="block text-3xl font-bold text-primary">{s.value}</span>
             <span class="text-sm text-muted mt-1">{s.label}</span>
@@ -57,7 +57,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: hero.tagline }];
     </div>
     <div class="space-y-8">
       {
-        tests.map((t: any, i: any) => (
+        tests.map((t, i) => (
           <div
             class={`grid md:grid-cols-2 gap-8 items-center ${i % 2 === 1 ? 'md:direction-rtl' : ''}`}
             style={i % 2 === 1 ? 'direction: rtl;' : ''}

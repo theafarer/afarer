@@ -31,7 +31,7 @@ const heroImage =
   isDev && hero.image?.src?.includes('team-all.webp') ? { ...hero.image, src: '/images/team-all.webp' } : hero.image;
 
 const lh = (h: string) => (h ? `/${lang}${h}` : h);
-const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
 
 const metadata = {
   title: `Team — ${SITE.name} | Marine Engineering & Leadership`,

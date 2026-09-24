@@ -25,7 +25,7 @@ const downloads = page.features3_downloads ?? {};
 const faqs = page.faqs ?? {};
 const cta = page.cta ?? {};
 const lh = (h: string) => (h ? `/${lang}${h}` : h);
-const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
 
 const metadata = {
   title: `Resources — ${SITE.name} | Product Catalogs & Buyer Guides`,

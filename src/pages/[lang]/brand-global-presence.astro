@@ -27,7 +27,7 @@ const distribution = page.features3_distribution ?? {};
 const logistics = page.steps2_logistics ?? {};
 const cta = page.cta ?? {};
 const lh = (h: string) => (h ? `/${lang}${h}` : h);
-const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
+const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
 
 const metadata = {
   title: `Global Presence — ${SITE.name} | Manufacturing & Distribution Worldwide`,
