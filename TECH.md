@@ -375,6 +375,14 @@ When renaming URLs/names across the site:
 
 硬编码 `/contact` 这类绝对路径在非默认语言页面会跳回英文站。本站 `showDefaultLang=true`，连默认语言也会生成 `/en/...` 前缀页。规则：任何指向站内页面的 href 一律 `localizePath(path, currentLang)`（`src/i18n/utils.ts`）或 `localizeHref`（`src/i18n/routing.ts`），默认语言也不例外。
 
+#### L11. write 工具单次调用内容过大必失败 —— 大译文文件必须分片写入
+
+单次 write 写入整份 `_lang-{lang}.cjs`（约 35KB 全量译文）时工具层 JSON 解析报 "Unterminated string"，输入被截断且行为不可预测（甚至截断在行中间）。解决方案：把译文拆成 3 个纯文本片段文件（每片 ≤ 约 12KB，单行条目格式 `'key': 'value',`），用一次性拼接脚本（`_tmp-build.cjs` 模式：`node _tmp-build.cjs <lang> <part1> <part2> ...` 读 utf8 拼接、加标准头注释、写 `_lang-<lang>.cjs`）合成完整文件，再用 `_verify-langs.cjs` 校验键集，最后 `prettier --write` 统一格式。片段与拼接脚本都是临时文件，批次完成后删除。教训：**任何 >20KB 的单文件写入都要走分片 + 拼接 + 校验流程**。
+
+#### L12. 工具脚本改动后先空跑一次再进正式流程
+
+`_merge-langs.cjs` 第 9 行用了 `path.join(__dirname, ...)` 但从未 `require('path')`，导致 17 语言合并首跑即 `ReferenceError: path is not defined`。该脚本此前"能跑"是因为旧批次走的不同调用路径，掩盖了缺陷。教训：**修改/新增批量脚本后必须先用 1 个语言试跑确认无异常，再跑全量**；`require('fs')`/`require('path')` 这类依赖检查可用 `node --check` 快速过一遍语法（但运行时 ReferenceError 只能实跑发现）。
+
 ---
 
 ## 9. SEO & GEO Internals

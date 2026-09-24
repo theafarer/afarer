@@ -1,6 +1,7 @@
 // Merges per-language translation files into i18n-config.json.
 // Usage: node scripts/_merge-langs.cjs de nl
 const fs = require('fs');
+const path = require('path');
 const FILE = 'src/data/site/i18n-config.json';
 const data = JSON.parse(fs.readFileSync(FILE, 'utf8'));
 const langs = process.argv.slice(2);
