@@ -149,8 +149,6 @@ module.exports = {
   'home.community.altFamily': 'Familia en barco inflable',
   'home.community.altBoatWater': 'Barco inflable en el agua',
   'home.community.altBoatAdventure': 'Aventura en barco inflable',
-  'home.resources.altWavefella': 'Wavefella',
-  'home.resources.altFoida': 'Foida',
   'design.altDesignSession': 'Sesión de diseño de ingeniería',
   'design.altOceanVoyager': 'SUP Ocean Voyager',
   'oem.altProduction': 'Departamento de producción de la fábrica afarer',
@@ -235,4 +233,14 @@ module.exports = {
     'Programas completos de flotas de SUP hinchable para resorts, hoteles y propiedades frente al mar. Tablas de grado comercial, marca personalizada y capacitación del personal.',
   'solutions.yachtTender.metaDesc':
     'Tenders compactos y elegantes para superyates y embarcaciones de recreo. Colores personalizados, materiales premium y rendimiento acorde a tu embarcación.',
+
+  'exitIntent.title': 'Antes de irte — Descarga nuestra guía OEM',
+  'exitIntent.subtitle':
+    'Descubre cómo lanzar tu marca de SUP de marca privada con nuestro libro blanco completo de fabricación. 42 páginas que cubren diseño de moldes, control de calidad, cumplimiento y logística.',
+  'exitIntent.button': 'Descargar la guía gratis',
+  'exitIntent.bullet1': '10 capítulos que cubren cada etapa de la producción OEM',
+  'exitIntent.bullet2': 'Checklist de auditoría de fábrica y plantillas de NDA incluidas',
+  'exitIntent.bullet3': 'Casos reales de lanzamiento de marcas, con presupuestos',
+  'exitIntent.dismiss': 'No gracias, seguiré explorando el sitio',
+  'exitIntent.close': 'Cerrar',
 };

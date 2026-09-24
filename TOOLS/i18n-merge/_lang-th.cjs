@@ -495,4 +495,14 @@ module.exports = {
   'nav.countryPartnership': 'ความร่วมมือระดับประเทศ',
   'nav.coBrandedCollections': 'คอลเลกชันโคแบรนด์',
   'nav.clubsResorts': 'สโมสรและรีสอร์ต',
+
+  'exitIntent.title': 'ก่อนออกจากหน้านี้ — ดาวน์โหลดคู่มือ OEM ของเรา',
+  'exitIntent.subtitle':
+    'เรียนรู้วิธีเปิดตัวแบรนด์ SUP ของคุณเองด้วย white paper การผลิตฉบับสมบูรณ์ของเรา 42 หน้า ครอบคลุมการออกแบบแม่พิมพ์ การควบคุมคุณภาพ การปฏิบัติตามมาตรฐาน และการโลจิสติกส์',
+  'exitIntent.button': 'ดาวน์โหลดคู่มือฟรี',
+  'exitIntent.bullet1': '10 บทที่ครอบคลุมทุกขั้นตอนของการผลิต OEM',
+  'exitIntent.bullet2': 'รวมเช็กลิสต์การตรวจโรงงานและเทมเพลต NDA',
+  'exitIntent.bullet3': 'กรณีศึกษาการเปิดตัวแบรนด์จริง พร้อมงบประมาณ',
+  'exitIntent.dismiss': 'ไม่เป็นไร ขอเดินชมเว็บไซต์ต่อ',
+  'exitIntent.close': 'ปิด',
 };

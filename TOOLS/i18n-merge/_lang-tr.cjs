@@ -505,4 +505,14 @@ module.exports = {
   'nav.countryPartnership': 'Ülke Ortaklığı',
   'nav.coBrandedCollections': 'Ortak Markalı Koleksiyonlar',
   'nav.clubsResorts': 'Kulüpler ve Tatil Köyleri',
+
+  'exitIntent.title': 'Gitmeden önce — OEM rehberimizi indirin',
+  'exitIntent.subtitle':
+    'Üretim üzerine kapsamlı white paper rehberimizle kendi private label SUP markanızı nasıl kuracağınızı öğrenin. Kalıp tasarımı, kalite kontrol, uygunluk ve lojistiği kapsayan 42 sayfa.',
+  'exitIntent.button': 'Ücretsiz rehberi indir',
+  'exitIntent.bullet1': 'OEM üretiminin her aşamasını kapsayan 10 bölüm',
+  'exitIntent.bullet2': 'Fabrika denetim kontrol listesi ve NDA şablonları dahil',
+  'exitIntent.bullet3': 'Bütçeleriyle gerçek marka lansmanı vaka çalışmaları',
+  'exitIntent.dismiss': 'Hayır teşekkürler, siteyi keşfetmeye devam edeceğim',
+  'exitIntent.close': 'Kapat',
 };

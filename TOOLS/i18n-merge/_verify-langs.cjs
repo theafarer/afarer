@@ -1,4 +1,7 @@
-// Verifies _lang-*.cjs files against _missing-en.json (424 keys, batch 2026-09).
+// Verifies _lang-*.cjs files against _missing-en.json (current batch of missing keys).
+// _lang-*.cjs is cumulative (grows batch by batch), so the check is:
+//   every dumped key MUST exist, be non-empty, keep markup counts, stay CJK-free.
+// Extra keys beyond the dump are reported as info only (they are re-merged harmlessly).
 // Usage: node TOOLS/i18n-merge/_verify-langs.cjs it ja ko ...
 const fs = require('fs');
 const path = require('path');
@@ -31,9 +34,6 @@ for (const lang of langs) {
   }
   const keys = Object.keys(tr);
   const problems = [];
-  if (keys.length !== expectedKeys.length) {
-    problems.push(`key count ${keys.length} != ${expectedKeys.length}`);
-  }
   const missingKeys = expectedKeys.filter((k) => !(k in tr));
   if (missingKeys.length > 0) {
     problems.push(
@@ -42,9 +42,7 @@ for (const lang of langs) {
   }
   const extraKeys = keys.filter((k) => !expectedSet.has(k));
   if (extraKeys.length > 0) {
-    problems.push(
-      `extra keys (${extraKeys.length}): ${extraKeys.slice(0, 5).join(', ')}${extraKeys.length > 5 ? ' ...' : ''}`
-    );
+    console.log(`  (info) ${extraKeys.length} extra keys from earlier batches (not part of this dump)`);
   }
   const emptyKeys = keys.filter((k) => !String(tr[k]).trim());
   if (emptyKeys.length > 0) {
@@ -81,7 +79,7 @@ for (const lang of langs) {
     if (problems.length > 20) console.log(`  ... and ${problems.length - 20} more`);
     failed = true;
   } else {
-    console.log(`[${lang}] OK: ${keys.length}/${expectedKeys.length} keys, markup + charset clean`);
+    console.log(`[${lang}] OK: ${expectedKeys.length}/${expectedKeys.length} dumped keys, markup + charset clean`);
   }
 }
 process.exit(failed ? 1 : 0);

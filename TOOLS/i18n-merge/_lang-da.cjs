@@ -506,4 +506,14 @@ module.exports = {
   'nav.countryPartnership': 'Landepartnerskab',
   'nav.coBrandedCollections': 'Co-brandede kollektioner',
   'nav.clubsResorts': 'Klubber og resorts',
+
+  'exitIntent.title': 'Inden du går — Download vores OEM-guide',
+  'exitIntent.subtitle':
+    'Lær, hvordan du lancerer dit eget private label SUP-brand med vores komplette produktions-whitepaper. 42 sider om formdesign, kvalitetskontrol, overholdelse og logistik.',
+  'exitIntent.button': 'Download guiden gratis',
+  'exitIntent.bullet1': '10 kapitler, der dækker hvert trin i OEM-produktionen',
+  'exitIntent.bullet2': 'Inkluderer tjekliste til fabriksaudit og NDA-skabeloner',
+  'exitIntent.bullet3': 'Ægte casestudier af brandlanceringer, med budgetter',
+  'exitIntent.dismiss': 'Nej tak, jeg fortsætter med at udforske sitet',
+  'exitIntent.close': 'Luk',
 };

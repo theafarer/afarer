@@ -512,4 +512,14 @@ module.exports = {
   'nav.countryPartnership': 'Parceria Nacional',
   'nav.coBrandedCollections': 'Coleções Co-Brand',
   'nav.clubsResorts': 'Clubes & Resorts',
+
+  'exitIntent.title': 'Antes de ir — Baixe nosso guia OEM',
+  'exitIntent.subtitle':
+    'Saiba como lançar sua marca de SUP private label com nosso white paper completo de fabricação. 42 páginas cobrindo design de moldes, controle de qualidade, conformidade e logística.',
+  'exitIntent.button': 'Baixar o guia gratuito',
+  'exitIntent.bullet1': '10 capítulos cobrindo cada etapa da produção OEM',
+  'exitIntent.bullet2': 'Checklist de auditoria de fábrica e modelos de NDA inclusos',
+  'exitIntent.bullet3': 'Estudos de caso reais de lançamento de marcas, com orçamentos',
+  'exitIntent.dismiss': 'Não, obrigado, vou continuar explorando o site',
+  'exitIntent.close': 'Fechar',
 };

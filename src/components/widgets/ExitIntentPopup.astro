@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl } from '~/i18n/utils';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 
 export interface Props {
   title?: string;
@@ -12,42 +13,14 @@ export interface Props {
 const { title, subtitle, buttonText, buttonHref, delay = 3000 } = Astro.props;
 
 const currentLocale = getLangFromUrl(Astro.url);
-const fr = currentLocale === 'fr';
-const es = currentLocale === 'es';
-const popupTitle =
-  title ??
-  (fr
-    ? 'Avant de partir — Téléchargez notre guide OEM'
-    : es
-      ? 'Antes de irte — Descarga nuestra guía OEM'
-      : 'Before You Go — Download Our OEM Guide');
-const popupSubtitle =
-  subtitle ??
-  (fr
-    ? 'Découvrez comment lancer votre marque de SUP en marque blanche grâce à notre livre blanc complet sur la fabrication. 42 pages couvrant la conception des moules, le contrôle qualité, la conformité et la logistique.'
-    : es
-      ? 'Descubre cómo lanzar tu marca de SUP de marca privada con nuestro libro blanco completo de fabricación. 42 páginas que cubren diseño de moldes, control de calidad, cumplimiento y logística.'
-      : 'Learn how to launch your private label SUP brand with our complete manufacturing white paper. 42 pages covering mold design, QC, compliance, and logistics.');
-const popupButtonText =
-  buttonText ?? (fr ? 'Télécharger le guide gratuit' : es ? 'Descargar la guía gratis' : 'Download Free Guide');
+const t = (key: string) => getUiForLang(currentLocale)?.[key] || getUiForLang('en')?.[key] || '';
+const popupTitle = title ?? t('exitIntent.title');
+const popupSubtitle = subtitle ?? t('exitIntent.subtitle');
+const popupButtonText = buttonText ?? t('exitIntent.button');
 const popupButtonHref = buttonHref ?? `/${currentLocale}/whitepaper/oem-sup-manufacturing-guide`;
-const bullets = fr
-  ? [
-      '10 chapitres couvrant chaque étape de la production OEM',
-      'Check-list d’audit d’usine et modèles de NDA inclus',
-      'Études de cas réelles de lancements de marques, avec budgets',
-    ]
-  : es
-    ? [
-        '10 capítulos que cubren cada etapa de la producción OEM',
-        'Checklist de auditoría de fábrica y plantillas de NDA incluidas',
-        'Casos reales de lanzamiento de marcas, con presupuestos',
-      ]
-    : [
-        '10 chapters covering every stage of OEM production',
-        'Factory audit checklist & NDA templates included',
-        'Real brand launch case studies with budgets',
-      ];
+const bullets = [t('exitIntent.bullet1'), t('exitIntent.bullet2'), t('exitIntent.bullet3')].filter(Boolean);
+const dismissText = t('exitIntent.dismiss');
+const closeLabel = t('exitIntent.close') || 'Close';
 ---
 
 <div
@@ -62,7 +35,7 @@ const bullets = fr
       type="button"
       id="exit-intent-close"
       class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-slate-800 text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors z-10"
-      aria-label="Close"
+      aria-label={closeLabel}
     >
       <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
         ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg
@@ -109,13 +82,7 @@ const bullets = fr
         id="exit-intent-dismiss"
         class="mt-3 w-full text-center text-sm text-gray-400 hover:text-gray-600 dark:hover:text-slate-300 transition-colors"
       >
-        {
-          fr
-            ? 'Non merci, je vais continuer à explorer le site'
-            : es
-              ? 'No gracias, seguiré explorando el sitio'
-              : 'No thanks, I’ll explore the site'
-        }
+        {dismissText}
       </button>
     </div>
   </div>

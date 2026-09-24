@@ -504,4 +504,14 @@ module.exports = {
   'nav.countryPartnership': 'Partnerství v zemi',
   'nav.coBrandedCollections': 'Kolekce se společnou značkou',
   'nav.clubsResorts': 'Kluby a resorty',
+
+  'exitIntent.title': 'Než odejdete — Stáhněte si naši příručku OEM',
+  'exitIntent.subtitle':
+    'Zjistěte, jak uvést na trh vlastní značku SUP pod privátní značkou, díky našemu kompletnímu white paperu o výrobě. 42 stran věnujících se návrhu forem, kontrole kvality, shodě a logistice.',
+  'exitIntent.button': 'Stáhnout příručku zdarma',
+  'exitIntent.bullet1': '10 kapitol pokrývajících všechny fáze výroby OEM',
+  'exitIntent.bullet2': 'Zahrnuje kontrolní seznam auditu továrny a šablony NDA',
+  'exitIntent.bullet3': 'Skutečné případové studie uvádění značek na trh včetně rozpočtů',
+  'exitIntent.dismiss': 'Ne, děkuji, budu stránky dál prozkoumávat',
+  'exitIntent.close': 'Zavřít',
 };

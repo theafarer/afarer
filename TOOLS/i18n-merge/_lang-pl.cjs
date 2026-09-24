@@ -516,4 +516,14 @@ module.exports = {
   'nav.countryPartnership': 'Partnerstwo Krajowe',
   'nav.coBrandedCollections': 'Kolekcje Ko-Brandingowe',
   'nav.clubsResorts': 'Kluby i Ośrodki',
+
+  'exitIntent.title': 'Zanim wyjdziesz — Pobierz nasz przewodnik OEM',
+  'exitIntent.subtitle':
+    'Dowiedz się, jak wprowadzić na rynek własną markę desek SUP (private label), korzystając z naszego kompletnego white paper o produkcji. 42 strony obejmujące projektowanie form, kontrolę jakości, zgodność i logistykę.',
+  'exitIntent.button': 'Pobierz darmowy przewodnik',
+  'exitIntent.bullet1': '10 rozdziałów obejmujących każdy etap produkcji OEM',
+  'exitIntent.bullet2': 'W zestawie lista kontrolna audytu fabryki i wzory NDA',
+  'exitIntent.bullet3': 'Realne studia przypadków wprowadzenia marek, wraz z budżetami',
+  'exitIntent.dismiss': 'Nie, dziękuję, będę dalej przeglądać stronę',
+  'exitIntent.close': 'Zamknij',
 };

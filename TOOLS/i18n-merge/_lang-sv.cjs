@@ -508,4 +508,14 @@ module.exports = {
   'nav.countryPartnership': 'Landspartnerskap',
   'nav.coBrandedCollections': 'Co-märkta kollektioner',
   'nav.clubsResorts': 'Klubbar & anläggningar',
+
+  'exitIntent.title': 'Innan du går — Ladda ner vår OEM-guide',
+  'exitIntent.subtitle':
+    'Lär dig hur du lanserar ditt privatmärkta SUP-varumärke med vårt kompletta tillverknings-whitepaper. 42 sidor om formgivning av formar, kvalitetskontroll, efterlevnad och logistik.',
+  'exitIntent.button': 'Ladda ner guiden gratis',
+  'exitIntent.bullet1': '10 kapitel som täcker varje steg i OEM-tillverkningen',
+  'exitIntent.bullet2': 'Inkluderar checklista för fabriksrevision och NDA-mallar',
+  'exitIntent.bullet3': 'Verkliga fallstudier av varumärkeslanseringar, med budgetar',
+  'exitIntent.dismiss': 'Nej tack, jag fortsätter utforska webbplatsen',
+  'exitIntent.close': 'Stäng',
 };

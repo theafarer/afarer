@@ -510,4 +510,14 @@ module.exports = {
   'nav.countryPartnership': 'Landenpartnerschap',
   'nav.coBrandedCollections': 'Collecties in co-branding',
   'nav.clubsResorts': 'Clubs & resorts',
+
+  'exitIntent.title': 'Voordat u gaat — Download onze OEM-gids',
+  'exitIntent.subtitle':
+    'Ontdek hoe u uw private label SUP-merk lanceert met onze complete whitepaper over productie. 42 pagina’s over malontwerp, kwaliteitscontrole, compliance en logistiek.',
+  'exitIntent.button': 'Download de gratis gids',
+  'exitIntent.bullet1': '10 hoofdstukken over elke fase van OEM-productie',
+  'exitIntent.bullet2': 'Inclusief checklist voor fabrieksaudit en NDA-sjablonen',
+  'exitIntent.bullet3': 'Echte case studies van merklanceringen, inclusief budgetten',
+  'exitIntent.dismiss': 'Nee dankjewel, ik verken de site verder',
+  'exitIntent.close': 'Sluiten',
 };

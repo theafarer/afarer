@@ -30,9 +30,10 @@ TOOLS/
 ├── i18n-merge/             # i18n-config.json 的多语言 UI 字符串合并工具
 │   ├── _merge-langs.cjs        # 合并器：node _merge-langs.cjs de nl ...
 │   ├── _dump-missing.cjs       # 导出某语言缺失 UI 键及英文源文到 _missing-en.json
-│   ├── _verify-langs.cjs       # 合并前校验 _lang-{lang}.cjs（键集/空值/markup/CJK）
-│   ├── _missing-en.json        # 缺失键英文底稿（_dump-missing.cjs 输出）
-│   └── _lang-{lang}.cjs ×21    # 各语言 UI 字符串键值数据
+│   ├── _verify-langs.cjs       # 合并前校验 _lang-{lang}.cjs（覆盖 dump 全部键/空值/markup/CJK）
+│   ├── _patch-exitintent.cjs   # exitIntent.* 8 键批次：--en 写入 EN 键 / --patch 追加译文到 _lang 文件
+│   ├── _missing-en.json        # 缺失键英文底稿（_dump-missing.cjs 输出，按批次重新生成）
+│   └── _lang-{lang}.cjs ×20    # 各语言 UI 字符串键值数据（累积式，随批次增长）
 ├── eslint/                 # 代码规范批量清理工具
 │   └── strip-explicit-any.cjs  # 批量移除 .astro 回调参数冗余 `: any` 注解（支持 --dry 试跑）
 ├── i18n-fix/               # i18n-config.json 修复工具
@@ -67,12 +68,13 @@ TOOLS/
 
 站点 UI 字符串的 SSOT 是 `src/data/site/i18n-config.json`。当某语言键缺失或为空时，用翻译好的键值文件回填。
 
-| 文件                | 用途                                                                                                                                                                                                     | 用法                                                                         |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| `_merge-langs.cjs`  | 将 `_lang-{lang}.cjs` 提供的键值并入 `i18n-config.json`（仅当目标键 `undefined` 或 `''` 时才写入，避免覆盖现有翻译）。                                                                                   | `node TOOLS/i18n-merge/_merge-langs.cjs de nl`（可传多个语言码）             |
-| `_lang-{lang}.cjs`  | 各语言 UI 字符串键值数据（扁平 `"path.to.key": "译文"`）。                                                                                                                                               | 被 `_merge-langs.cjs` 按 `TOOLS/i18n-merge/_lang-{lang}.cjs` 读取。          |
-| `_dump-missing.cjs` | 导出某语言相对英文 SSOT 缺失的 UI 键及其英文源文到 `_missing-en.json`（键序与 en 一致，作为翻译底稿）。                                                                                                  | `node TOOLS/i18n-merge/_dump-missing.cjs`（输出到本目录 `_missing-en.json`） |
-| `_verify-langs.cjs` | 校验 `_lang-{lang}.cjs`：键数/键集与 `_missing-en.json` 完全一致、无空值、markup 计数（`<strong>`/`<br />`/`→`）与英文一致、非 ja/ko/zh 语言无 CJK 字符。合并前必跑，全 OK 才能执行 `_merge-langs.cjs`。 | `node TOOLS/i18n-merge/_verify-langs.cjs pt it ja ...`（可传多个语言码）     |
+| 文件                    | 用途                                                                                                                                                                                                                                 | 用法                                                                         |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| `_merge-langs.cjs`      | 将 `_lang-{lang}.cjs` 提供的键值并入 `i18n-config.json`（仅当目标键 `undefined` 或 `''` 时才写入，避免覆盖现有翻译）。                                                                                                               | `node TOOLS/i18n-merge/_merge-langs.cjs de nl`（可传多个语言码）             |
+| `_lang-{lang}.cjs`      | 各语言 UI 字符串键值数据（扁平 `"path.to.key": "译文"`）。                                                                                                                                                                           | 被 `_merge-langs.cjs` 按 `TOOLS/i18n-merge/_lang-{lang}.cjs` 读取。          |
+| `_dump-missing.cjs`     | 导出某语言相对英文 SSOT 缺失的 UI 键及其英文源文到 `_missing-en.json`（键序与 en 一致，作为翻译底稿）。**每批次开始时重新生成**，内容随批次变化。                                                                                    | `node TOOLS/i18n-merge/_dump-missing.cjs`（输出到本目录 `_missing-en.json`） |
+| `_verify-langs.cjs`     | 校验 `_lang-{lang}.cjs`：必须**覆盖** `_missing-en.json` 全部键（子集校验，`_lang` 文件是累积式、含历史批次键，多余键仅提示不算失败）、无空值、markup 计数（`<strong>`/`<br />`/`→`）与英文一致、非 ja 语言无 CJK 字符。合并前必跑。 | `node TOOLS/i18n-merge/_verify-langs.cjs pt it ja ...`（可传多个语言码）     |
+| `_patch-exitintent.cjs` | ExitIntentPopup 文案 UI 化批次（exitIntent.* 8 键 × 21 语言）。`--en` 把 EN 键写入 i18n-config.json；`--patch` 把译文追加到 `_lang-{lang}.cjs`（幂等，缺文件自动新建，fr 即由此创建）。内嵌翻译表，可作后续批次的模板。              | `node TOOLS/i18n-merge/_patch-exitintent.cjs --en` / `--dry` / `--patch`     |
 
 **注意事项：** 合并完成后必须重新生成 `public/data/i18n-config.json` 与 `src/i18n/generated/ui-all.ts`：在仓库根执行 `node scripts/generate-data-json.mjs && node scripts/_gen-uiall.cjs`（或直接 `npm run build`）。若含中文等 CJK，写入时用 UTF-8 无 BOM（本项目脚本均为 `utf8`）。
 

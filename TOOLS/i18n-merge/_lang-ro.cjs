@@ -519,4 +519,14 @@ module.exports = {
   'nav.countryPartnership': 'Parteneriat de țară',
   'nav.coBrandedCollections': 'Colecții în co-brand',
   'nav.clubsResorts': 'Cluburi și resorturi',
+
+  'exitIntent.title': 'Înainte de a pleca — Descărcați ghidul nostru OEM',
+  'exitIntent.subtitle':
+    'Aflați cum să vă lansați marca de SUP private label cu white paper-ul nostru complet despre producție. 42 de pagini despre proiectarea matrițelor, controlul calității, conformitate și logistică.',
+  'exitIntent.button': 'Descarcă ghidul gratuit',
+  'exitIntent.bullet1': '10 capitole care acoperă fiecare etapă a producției OEM',
+  'exitIntent.bullet2': 'Include checklist de audit de fabrică și șabloane NDA',
+  'exitIntent.bullet3': 'Studii de caz reale de lansare de branduri, cu bugete',
+  'exitIntent.dismiss': 'Nu, mulțumesc, continui să explorez site-ul',
+  'exitIntent.close': 'Închide',
 };

@@ -515,4 +515,14 @@ module.exports = {
   'nav.countryPartnership': 'Partnership di Paese',
   'nav.coBrandedCollections': 'Collezioni Co-Branded',
   'nav.clubsResorts': 'Circoli & Resort',
+
+  'exitIntent.title': 'Prima di andare — Scarica la nostra guida OEM',
+  'exitIntent.subtitle':
+    'Scopri come lanciare il tuo marchio SUP a marchio privato con il nostro white paper completo sulla produzione. 42 pagine su progettazione degli stampi, controllo qualità, conformità e logistica.',
+  'exitIntent.button': 'Scarica la guida gratuita',
+  'exitIntent.bullet1': '10 capitoli che coprono ogni fase della produzione OEM',
+  'exitIntent.bullet2': 'Include checklist di audit di fabbrica e modelli di NDA',
+  'exitIntent.bullet3': 'Casi studio reali di lanci di marchi, con budget',
+  'exitIntent.dismiss': 'No grazie, continuerò a esplorare il sito',
+  'exitIntent.close': 'Chiudi',
 };

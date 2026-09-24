@@ -490,4 +490,14 @@ module.exports = {
   'nav.countryPartnership': '国別パートナーシップ',
   'nav.coBrandedCollections': 'コーブランドコレクション',
   'nav.clubsResorts': 'クラブ & リゾート',
+
+  'exitIntent.title': 'その前に — OEMガイドを無料ダウンロード',
+  'exitIntent.subtitle':
+    'OEM製造に関する完全ホワイトペーパーで、プライベートブランドのSUPブランドを立ち上げる方法を解説。金型設計、品質管理、コンプライアンス、物流を網羅する42ページ。',
+  'exitIntent.button': '無料ガイドをダウンロード',
+  'exitIntent.bullet1': 'OEM生産の全工程を網羅する10章構成',
+  'exitIntent.bullet2': '工場監査チェックリストとNDAテンプレートを収録',
+  'exitIntent.bullet3': '予算付きの実際のブランド立ち上げ事例集',
+  'exitIntent.dismiss': '結構です、サイトを見続けます',
+  'exitIntent.close': '閉じる',
 };

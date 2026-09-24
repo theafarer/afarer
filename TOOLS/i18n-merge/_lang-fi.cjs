@@ -512,4 +512,14 @@ module.exports = {
   'nav.countryPartnership': 'Maakumppanuus',
   'nav.coBrandedCollections': 'Yhteisbrändättyt kokoelmat',
   'nav.clubsResorts': 'Kerhot ja lomakeskukset',
+
+  'exitIntent.title': 'Ennen kuin lähdet — Lataa OEM-oppaamme',
+  'exitIntent.subtitle':
+    'Opi, miten käynnistät oman private label SUP-merkkisi brändin valmistusaiheisen white paperin avulla. 42 sivua muottien suunnittelusta, laadunvalvonnasta, vaatimustenmukaisuudesta ja logistiikasta.',
+  'exitIntent.button': 'Lataa ilmainen opas',
+  'exitIntent.bullet1': '10 lukua, jotka kattavat OEM-valmistuksen jokaisen vaiheen',
+  'exitIntent.bullet2': 'Sisältää tehtaan auditoinnin tarkistuslistan ja NDA-mallipohjat',
+  'exitIntent.bullet3': 'Aitoja tapaustutkimuksia brändien lanseerauksista budjetteineen',
+  'exitIntent.dismiss': 'Ei kiitos, jatkan sivuston selailua',
+  'exitIntent.close': 'Sulje',
 };

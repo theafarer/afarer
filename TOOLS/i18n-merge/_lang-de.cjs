@@ -151,8 +151,6 @@ module.exports = {
   'home.community.altFamily': 'Familie auf Schlauchboot',
   'home.community.altBoatWater': 'Schlauchboot auf dem Wasser',
   'home.community.altBoatAdventure': 'Schlauchboot-Abenteuer',
-  'home.resources.altWavefella': 'Wavefella',
-  'home.resources.altFoida': 'Foida',
   'design.altDesignSession': 'Technische Design-Sitzung',
   'design.altOceanVoyager': 'SUP Ocean Voyager',
   'oem.altProduction': 'Produktionsabteilung der afarer-Fabrik',
@@ -238,4 +236,14 @@ module.exports = {
     'Komplette Programme für aufblasbare SUP-Flotten für Resorts, Hotels und Ufergrundstücke. Boards in Handelsqualität, eigene Marke und Personalschulung.',
   'solutions.yachtTender.metaDesc':
     'Kompakte, elegante Tender und Zubehör für Superyachten und Freizeitboote. Kundenspezifische Farben, Premium-Materialien und Leistung, die zu Ihrem Boot passt.',
+
+  'exitIntent.title': 'Bevor Sie gehen — Laden Sie unseren OEM-Guide herunter',
+  'exitIntent.subtitle':
+    'Erfahren Sie in unserem umfassenden Whitepaper zur Fertigung, wie Sie Ihre eigene SUP-Marke (Private Label) auf den Markt bringen. 42 Seiten zu Formenbau, Qualitätskontrolle, Konformität und Logistik.',
+  'exitIntent.button': 'Kostenlosen Guide herunterladen',
+  'exitIntent.bullet1': '10 Kapitel zu allen Phasen der OEM-Produktion',
+  'exitIntent.bullet2': 'Inklusive Checkliste für Werksaudit und NDA-Vorlagen',
+  'exitIntent.bullet3': 'Echte Fallstudien zu Markeneinführungen inklusive Budgets',
+  'exitIntent.dismiss': 'Nein danke, ich schaue mich weiter um',
+  'exitIntent.close': 'Schließen',
 };

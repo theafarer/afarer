@@ -492,4 +492,14 @@ module.exports = {
   'nav.countryPartnership': 'شراكة الدول',
   'nav.coBrandedCollections': 'مجموعات العلامة المشتركة',
   'nav.clubsResorts': 'الأندية والمنتجعات',
+
+  'exitIntent.title': 'قبل أن تغادر — حمّل دليلنا OEM',
+  'exitIntent.subtitle':
+    'تعرّف على كيفية إطلاق علامتك التجارية الخاصة لألواح SUP مع كتابنا الأبيض الشامل عن التصنيع. 42 صفحة تغطي تصميم القوالب وضبط الجودة والمطابقة والخدمات اللوجستية.',
+  'exitIntent.button': 'حمّل الدليل مجانًا',
+  'exitIntent.bullet1': '10 فصول تغطي كل مرحلة من مراحل إنتاج OEM',
+  'exitIntent.bullet2': 'تشمل قائمة التحقق لتدقيق المصنع ونماذج اتفاقية عدم الإفصاح (NDA)',
+  'exitIntent.bullet3': 'دراسات حالة حقيقية لإطلاق العلامات التجارية مع الميزانيات',
+  'exitIntent.dismiss': 'لا شكرًا، سأواصل استكشاف الموقع',
+  'exitIntent.close': 'إغلاق',
 };

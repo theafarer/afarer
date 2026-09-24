@@ -481,4 +481,14 @@ module.exports = {
   'nav.countryPartnership': '국가 파트너십',
   'nav.coBrandedCollections': '공동 브랜드 컬렉션',
   'nav.clubsResorts': '클럽 & 리조트',
+
+  'exitIntent.title': '가기 전에 — OEM 가이드 무료 다운로드',
+  'exitIntent.subtitle':
+    '포괄적인 제조 백서로 프라이빗 레이블 SUP 브랜드를 론칭하는 방법을 알아보세요. 금형 설계, 품질 관리, 인증 컴플라이언스, 물류를 다루는 42페이지 분량입니다.',
+  'exitIntent.button': '무료 가이드 다운로드',
+  'exitIntent.bullet1': 'OEM 생산의 모든 단계를 다루는 10개 장',
+  'exitIntent.bullet2': '공장 감사 체크리스트 및 NDA 템플릿 포함',
+  'exitIntent.bullet3': '예산을 포함한 실제 브랜드 론칭 사례 연구',
+  'exitIntent.dismiss': '괜찮습니다, 사이트를 계속 둘러볼게요',
+  'exitIntent.close': '닫기',
 };
