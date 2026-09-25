@@ -166,7 +166,7 @@ production_flow:
       title: Hitsaus ja drop-stitch -sidonta
       description: Drop-stitch-ytimen liimataan ulkoiseen PVC-laminaattiin lämpöliimauksella. Putki kammiot ovat RF-hitsattuja tai ilmalaastettuja. Raitakärjet ovat kolmikerroksisia sulautusliimauksia.
       qc_check: Peel-testaus joka 50:n yksikön kohdalla (ASTM D751), hitsauksen leveyden mittaus, kuuman ilmalämpötilan logien tarkastus, näköteinen liittojen tarkastus takavalolla
-      qc_threshold: Koorroisuus väh. 8 N/cm. Hitsin leveyden toleranssi ±1 mm. Mikä tahansa näkyvä kanaali = hylkää
+      qc_threshold: Kuorintalujuus väh. 8 N/cm. Hitsin leveyden toleranssi ±1 mm. Mikä tahansa näkyvä kanavointi = hylkää
       responsibility: Hitsaus QC (2 tarkastajaa/vuorossa)
     - stage: '04'
       title: Kokoonpano ja varustaminen

@@ -59,7 +59,14 @@ module.exports = [
     rep: 'Prueba de desprendimiento',
     n: 1,
   },
-  { f: 'src/data/pages/fi/rf-welding.yaml', find: 'Koorrotesti ()', rep: 'Koorrotesti', n: 1 },
+  // (shard 31 更新) 原 op 'Koorrotesti ()'→'Koorrotesti' 的 rep 锚本身是语言性乱码;
+  // shard 31 修复后 'Koorrotesti' 不复存在, 此 op 直接承接正字修复 (find 锚定为当前文件现存文本)
+  {
+    f: 'src/data/pages/fi/rf-welding.yaml',
+    find: '<strong>Koorrotesti</strong>',
+    rep: '<strong>Kuorintatesti</strong>',
+    n: 1,
+  },
   { f: 'src/data/pages/it/rf-welding.yaml', find: 'Test di pelatura ()', rep: 'Test di pelatura', n: 1 },
   { f: 'src/data/pages/nl/rf-welding.yaml', find: 'Peel test ()', rep: 'Peel test', n: 1 },
   { f: 'src/data/pages/no/rf-welding.yaml', find: 'Skalltest ()', rep: 'Skalltest', n: 1 },
