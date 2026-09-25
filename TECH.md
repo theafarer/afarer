@@ -403,13 +403,15 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 `scripts/check-translations.mjs` 新增三处合法豁免，语义边界要守住：① 结构比较前剥离 `meta.keywords`（SEO 关键词密度按语言浮动是合法的，但**只豁免 keywords，其余叶子路径仍严格**）；② `shouldTranslate` 排除 kebab-case slug（`/^[a-z0-9]+(?:-[a-z0-9]+)+$/`）、4 个虚构客户公司名 Set、认证/标准 token 逗号列表（`isCertificationList`，token 全部来自 `UNTRANSLATABLE_TOKENS` 白名单）。**新增豁免必须逐条对应真实 warning，不许"先加宽规则再找理由"。**
 
-遗留内容债务清单状态（2026-09 分片 19–25 机械批次 + 26–29 内容漂移批次后）：
+遗留内容债务清单状态（2026-09 分片 19–25 机械批次 + 26–29 内容漂移批次 + 30 ko 乱码专修批次后）：
 
 **已清零（分片 19–23，171 op；分片 24–25，10 op；em dash 批次）**：أكوافارير→أفارير 73 处（8 文件）+ 变体 أكوافارر（漏 ي）21 处 4 文件（分片 25：config.ar 7、ar/factory 2、ar/factory-process 2、site/i18n-config.json 10）；rf-welding "()" 16 语言+EN（ko:34 因整行乱码延后）；EN 源头令牌恢复（commercial-workboats/tourism-recreation/maritime-safety-defense/trust 的 ISO 9001、UKCA, FCC 被删；factory-equipment "50 kN,  / ASTM D751"；factory-process 双空格）+ 各语言镜像令牌恢复（~40 op）；it `''` 疤（afarer-story/factory）+ tr（afarer-story）；SPDOT 全部（句号前空格）；factory/solutions-paddle-clubs/solutions-resorts-hotels role/套餐列表 2–3 空格及单空格分隔符 → " + "（EN 惯例）；factory-process/tourism-recreation 数字印刷双空格折叠；ar/afarer-story + ar/trust "?²" mojibake → "م²"；ko/trust "12,000m²"→"12,000 m²"；分片 24 补译 about.yaml brand_hub_cards[0].desc 六语言（ja/ko/cs/da/ro/th，em dash 规范化暴露的未翻译值）；**em dash 全站规范化已完成（见 L19）**。
 
 **已清零（分片 26–29，247 op，2026-09 内容漂移批次）**：EN quality UV desc 重写 + 20 locale 镜像（原为 Pressure 条目副本；8 个 locale 是 `description: >-` 折叠块，见 L20）；da/ro/th safety desc 补 ISO 12402 第二句 + hero subtitle 尾句；ja/ko academy（Learning Center + 10 guide 标题 + 4 level）；de/es/pt/it/nl/pl/ru factory stats 拼写数字 → "200+"、es 15,000→15.000+、ar '15000'→'15,000+'；"50+ countries" 丢 plus（46 处）；sol-dist 区域名 EN 残留 19 locale×6（114 op，fr 本已译；9 个恒等 op 构建期过滤）；el factory OEM 段（title/subtitle + 9 case 字段 + ΣΣΕ→FAQ + responsibility 误译）+ el/commercial-workboats 2 answer 缺句；ar factory 6 处 OEM 误译（كاياك→SUP、AS1799 多余细节等）+ responsibility；fr factory q0 5–50→5–10 / ship 答案缺句 / b2b_moq；ru factory q0/ship/b2b_moq；fr brand-global-presence taglines；EN factory-equipment.yaml:51 `UV-resistantwater-based` 拼写。
 
-**仍遗留（下次内容审计）**：fr/partners.yaml:12 丢 partner 类型列举（缩短）；factory stats[2] 标签全 locale 为 "Boote/Barcos/…" 而 EN 为 "SUPs produced annually"（语言惯例差异，暂不动）；de/academy Intermediate/Advanced 均译 "Fortgeschritten"；ru production_flow `stage: Один` vs EN '01'；**ko/research-drop-stitch + research-sup-thickness（含 \uFEFF）+ rf-welding:34 整文件/整行韩语乱码，需韩语专修分片**。另：factory.yaml `oem_section` 为全语言死数据（页面不渲染，case 内容实际来自 evidence/case-studies），el/ar 修复仅数据层面。
+**已清零（分片 30，39 op，2026-09 ko 乱码专修 + rf-welding 令牌批次）**：ko/research-drop-stitch `content_html` 整体重译（语言性乱码非编码可逆：더론스티치→드롭스티치、직믳→직물、字面 `\bc18` 断转义×4、表格 "Entry Level"/"1 thread / sq in" 英文残留；meta title 인플레이션블→인플레이터블、desc 건설→제작 방법）；ko/rf-welding `content_html` 整块修复（35 处：이은사→이음새、볼창→박리、`\uC194루션`→솔루션、"볼창 테스트 ()" 延后疤、피라텐→플래튼 等；meta 밀착→박리 테스트、intro 补 ISO 6185）；ko/research-sup-thickness 去字面 `\uFEFF` 转义（YAML 双引号里会解析成真 BOM）+ 원격→정격 압력；**rf-welding ISO 6185 令牌恢复**：EN 根 intro "requirements of — the international standard"（初始提交即缺）+ 12 个破折号疤 locale（ar/cs/da/el/es/fi/no/pt/ro/sv/th/tr，折叠块 find 不能跨断行，见 L21）+ 6 个平滑 locale 补插（de/it/ja/nl/pl/ru）；rf-welding " min" 图表标签疤：EN→"Min"、cs/da/es/fi/nl/no/pl/ro→"Min."、de 去前导空格；sv 顺带修 överträda→överträffa（词义反转）、compromise→äventyra。回归全绿：引擎 942 op/30 分片、check:i18n 0/0、prettier/eslint/astro check 0 err、build 13,858 页、dist 抽查 8 语言通过。
+
+**仍遗留（下次内容审计）**：fr/partners.yaml:12 丢 partner 类型列举（缩短）；factory stats[2] 标签全 locale 为 "Boote/Barcos/…" 而 EN 为 "SUPs produced annually"（语言惯例差异，暂不动）；de/academy Intermediate/Advanced 均译 "Fortgeschritten"；ru production_flow `stage: Один` vs EN '01'。另：factory.yaml `oem_section` 为全语言死数据（页面不渲染，case 内容实际来自 evidence/case-studies），el/ar 修复仅数据层面。**rf-welding 文件族新发现（分片 30 审计，待专修分片）**：① fi/rf-welding 全文语言性乱码（Painistettava→Paineistettava、nahat→saumat、tulehdettavat→täytettävät 等，分片 07–10 fi 批次漏网）；② sv/rf-welding 全文语言性乱码（丹麦/瑞典语混用 oppustbar、compromise、kamma、kammabrot，image_alt 含 U+00AD 软连字符）；③ fr/rf-welding 为旧结构短译文（缺设备表/四项测试/图表，内容漂移，EN 根已演进）。
 
 #### L19. em dash 全站规范化：内容源远不止 YAML；三类"隐形"模式（2026-09 em dash 批次）
 
@@ -434,6 +436,10 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 ③ **恒等 op（find === rep）构建期必须过滤**——sol-dist 区域名部分 locale 与 EN 相同（es/it "Asia"、it "Oceania/Africa" 等 9 个），引擎对 `rep.includes(find) && repCount>=n` 判为 already → dry 计数 247/9 对不上 256；builder 的 `add()` 加 `if (find === rep) return`。
 ④ **列表项前缀提取用 `/^\s*-?\s*/` 而非 `/^\s*/`**——el factory cases 的 `- challenge:` 行，`\s*` 丢掉 `- ` 标记导致 rep 缩进错位、YAML 解析失败（solution 悬挂为坏缩进映射）。
 ⑤ 补充：**重建已应用分片时，find 要从 `git show HEAD:`（补丁前的已提交态）提取**，builder 验证允许 `fc===0 && rep 已存在` 视为 already；对"结构漂移敏感"的 op（如 title 行追加后缀）要加防重入条件（`titleLine.includes('Brand & OEM')` 即跳过），否则重跑会生成 `... & OEM & OEM` 的破坏性 op。
+
+#### L21. 语言性乱码检查器完全不可见；折叠块 find 不能跨断行；YAML 双引号里的 `\uXXXX` 是真字符（2026-09 分片 30）
+
+① **语言性乱码（合法文字系统的胡言乱语）check:i18n 零告警**——ko "더론스티치/볼창/이은사" 全是合法谚文，结构比较照样通过。审计方法：先对已知坏文件提取乱码签名 token 列表，全目录 `.includes()` 扫描定界（"스트레이크"=rubbing strake 合法借词属假阳性，须人工复核上下文）；乱码文件常成簇（同一翻译批次），坏文件周边同簇文件要一并检查。② **折叠块（`intro: >-`）的 find 绝不能跨物理断行**——控制台 dump 时把 `\n\s+` 折叠成空格会造出文件里不存在的 find 串（分片 30 el/it/ro 三个 op 因此 x0）；折叠块内断行位置任意，find 必须先 dump 原始块（`match(/^intro: >-\n((?:[ \t]+.*\n?)*)/m)`）确认断点，选行内子串。③ **YAML 双引号标量中的字面 `\uFEFF`/`\uC194` 会被解析成真实字符**（U+FEFF 进 HTML、`\uC194루션` 渲染成 "솔루션" 首字断档），而 `|` 字面块中同样写法则原样上屏——扫描断转义要用单反斜杠正则 `/\\u[0-9A-Fa-f]{4}/` 且经 .cjs 文件跑（node -e 内联双反斜杠被 PS 吞、必假阴性）。④ JS 单引号字符串里写 `'\uC194'` 会解析成字符 솔，要匹配文件里的字面反斜杠必须写 `'\\uC194'`。
 
 ---
 
