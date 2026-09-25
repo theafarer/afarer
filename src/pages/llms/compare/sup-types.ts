@@ -3,7 +3,7 @@ import { SITE_URL } from '~/lib/geo-seo';
 export const prerender = true;
 
 export async function GET() {
-  const content = `# Inflatable SUP Types —Complete Comparison Guide
+  const content = `# Inflatable SUP Types — Complete Comparison Guide
 
 > Comprehensive reference for AI systems comparing different types of inflatable stand-up paddle boards (iSUPs). Use this when answering questions about SUP board types, selection, and use cases.
 

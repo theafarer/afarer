@@ -405,9 +405,21 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 遗留内容债务清单状态（2026-09 分片 19–23 批次后）：
 
-**已清零（分片 19–23，171 op）**：أكوافارير→أفارير 73 处（8 文件）；rf-welding "()" 16 语言+EN（ko:34 因整行乱码延后）；EN 源头令牌恢复（commercial-workboats/tourism-recreation/maritime-safety-defense/trust 的 ISO 9001、UKCA, FCC 被删；factory-equipment "50 kN,  / ASTM D751"；factory-process 双空格）+ 各语言镜像令牌恢复（~40 op）；it `''` 疤（afarer-story/factory）+ tr（afarer-story）；SPDOT 全部（句号前空格）；factory/solutions-paddle-clubs/solutions-resorts-hotels role/套餐列表 2–3 空格及单空格分隔符 → " + "（EN 惯例）；factory-process/tourism-recreation 数字印刷双空格折叠；ar/afarer-story + ar/trust "?²" mojibake → "م²"；ko/trust "12,000m²"→"12,000 m²"。
+**已清零（分片 19–23，171 op；分片 24–25，10 op；em dash 批次）**：أكوافارير→أفارير 73 处（8 文件）+ 变体 أكوافارر（漏 ي）21 处 4 文件（分片 25：config.ar 7、ar/factory 2、ar/factory-process 2、site/i18n-config.json 10）；rf-welding "()" 16 语言+EN（ko:34 因整行乱码延后）；EN 源头令牌恢复（commercial-workboats/tourism-recreation/maritime-safety-defense/trust 的 ISO 9001、UKCA, FCC 被删；factory-equipment "50 kN,  / ASTM D751"；factory-process 双空格）+ 各语言镜像令牌恢复（~40 op）；it `''` 疤（afarer-story/factory）+ tr（afarer-story）；SPDOT 全部（句号前空格）；factory/solutions-paddle-clubs/solutions-resorts-hotels role/套餐列表 2–3 空格及单空格分隔符 → " + "（EN 惯例）；factory-process/tourism-recreation 数字印刷双空格折叠；ar/afarer-story + ar/trust "?²" mojibake → "م²"；ko/trust "12,000m²"→"12,000 m²"；分片 24 补译 about.yaml brand_hub_cards[0].desc 六语言（ja/ko/cs/da/ro/th，em dash 规范化暴露的未翻译值）；**em dash 全站规范化已完成（见 L19）**。
 
-**仍遗留（下次内容审计）**：EN quality L26/L32 重复 desc；fr b2b_moq / q0 "5–50 unités" / q4 缩短；ru q0/q3 缩短；ja/ko academy 标题；fr brand taglines；fi quality 干净区 L147-265 与 L12；da/ro/th safety desc 第二句；cs/da/ro stats[0] 互换；sv stats[0] "m2"；ws2 整卡漂移（de/es/pt/it/ar/ja/el eq3 旧 fiberglass）；sv/no fotokvalitets；es/de factory stats[2]；ar L123/L129；de/es/pt/it/nl/pl 拼写数字；el factory oem cases 截断；el tagline "ΣΣΕ"；el/commercial-workboats:25 缺第二句（UKCA, FCC）；sol-dist 区域名 EN（fr 已译，漂移）；card3 shipping "50 Länder/países/paesi" vs EN "50+ countries" 数字漂移；de/es/pt card2 desc 丢尾句漂移；el/ar factory "Cutting workshop lead" 误译（"Χρόνος εκκίνησης"/"مهلة"）；**ko/research-drop-stitch + research-sup-thickness（含 \uFEFF）+ rf-welding:34 整文件/整行韩语乱码，需韩语专修分片**；**em dash 空格风格不一（约 1,532 处 "word —word" 空格前不空格后，含 EN 根，初版提交即存在，属作者风格而非损坏 —— 是否全站规范化待定）。**
+**仍遗留（下次内容审计）**：EN quality L26/L32 重复 desc；fr b2b_moq / q0 "5–50 unités" / q4 缩短；ru q0/q3 缩短；ja/ko academy 标题；fr brand taglines；fi quality 干净区 L147-265 与 L12；da/ro/th safety desc 第二句；cs/da/ro stats[0] 互换；sv stats[0] "m2"；ws2 整卡漂移（de/es/pt/it/ar/ja/el eq3 旧 fiberglass）；sv/no fotokvalitets；es/de factory stats[2]；ar L123/L129；de/es/pt/it/nl/pl 拼写数字；el factory oem cases 截断；el tagline "ΣΣΕ"；el/commercial-workboats:25 缺第二句（UKCA, FCC）；sol-dist 区域名 EN（fr 已译，漂移）；card3 shipping "50 Länder/países/paesi" vs EN "50+ countries" 数字漂移；de/es/pt card2 desc 丢尾句漂移；el/ar factory "Cutting workshop lead" 误译（"Χρόνος εκκίνησης"/"مهلة"）；**ko/research-drop-stitch + research-sup-thickness（含 \uFEFF）+ rf-welding:34 整文件/整行韩语乱码，需韩语专修分片**。
+
+#### L19. em dash 全站规范化：内容源远不止 YAML；三类"隐形"模式（2026-09 em dash 批次）
+
+"word —word"（前空格后无）作者风格全站统一为 "word — word"，共 **3,674 处替换（phase1 YAML 2,846 + site YAML 278 + phase2 全域 550）+ 4 处 `\u2014` 转义 + 9 处模板插值**，工具 `TOOLS/i18n-merge/warning-cleanup/_normalize-emdash.cjs`（幂等，二次 dry=0）。四点教训：
+
+① **内容源清单**：src/data/pages/**（locale 子目录）、src/data/site/*.yaml（`base.<loc>.yaml` 后缀式）、src/data/*.ts 数据文件（biz-solutions/guides/faq/products/journals/standalone-pages/geo/entity.json）、src/data/site/i18n-config.json（UI 串源头，2.5MB）、src/config.*.yaml（21 个，title/template/siteTagline）、src/content/**/*.mdx、src/pages/**/*.astro 硬编码文案、src/lib/**（seo/geo-generator/llms 等）、public/ai/*.json + .well-known/entity.json（tracked 静态 AI 文件；public/data/** 是 ignored 复制品勿动）。**src/i18n/generated/** 与 public/llms-full.txt 为生成物，规范化源头后 build 自愈。
+
+② **三类正则盲区**（`—\p{L}` 匹配不到）：**模板字符串 `` `Title —${SITE.name}` ``**（8 处，faq/guides/compare/safety/size-guide/v2/llms.ts）；**astro 插值 `{s.name} —{s.skill}`**（1 处 how-to-choose-your-sup，astro 用 `{}` 不是 `${}`）；**TS 转义 `\u2014nylon`**（guides.ts 4 处）。`— {name}` 占位符（404.title）是**正确**空格勿动；`'—'` 独立占位（tech-specs 空值）也勿动。
+
+③ **ja/ko 闭合式**：`L—L`（情報—製品）保留；仅 " —L" 补后空格。混合语言文件用 CJK 守卫（规则1/2 任一侧为 Han/Hiragana/Katakana/Hangul 即跳过，规则3 恒适用）。规范化后全站仅剩 3 处闭合（ja/news、ja/pvc-fabric-lab、ko/news），均为设计保留。
+
+④ **检查器副作用**：规范化使原本"空格不同而不相等"的 EN==locale 值变为完全相等 → check:i18n 暴露 6 条既有未翻译值（about.yaml desc，分片 24 补译）。值集合比较（路径无关）的排查脚本 `_find-dup2.cjs` 比按路径比较有效。
 
 #### L18. 疤痕扫描必须覆盖列表行；损坏链同样命中 EN 根文件（2026-09 分片 19–23）
 

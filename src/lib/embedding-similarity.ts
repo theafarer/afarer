@@ -67,7 +67,7 @@ export function detectOpportunityGap(
   for (const [name, vec] of Object.entries(competitorVecs)) {
     const sim = cosineSimilarity(afarerVec, vec);
     if (sim < threshold) {
-      gaps.push(`${name}: similarity=${sim.toFixed(3)} —low overlap, potential gap`);
+      gaps.push(`${name}: similarity=${sim.toFixed(3)} — low overlap, potential gap`);
     }
   }
   return gaps;

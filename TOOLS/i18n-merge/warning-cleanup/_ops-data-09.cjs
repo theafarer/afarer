@@ -27,14 +27,14 @@ module.exports = [
   },
   {
     f: 'src/data/pages/fi/factory.yaml',
-    find: 'Konseptista konttiin —kuinka autamme maailmanlaajuisia br?ndej? lanseeraamaan ja skaalaamaan kumiveneiden tuotelinjojaan.',
-    rep: 'Konseptista konttiin —kuinka autamme maailmanlaajuisia brändejä lanseeraamaan ja skaalaamaan kumiveneiden tuotelinjojaan.',
+    find: 'Konseptista konttiin — kuinka autamme maailmanlaajuisia br?ndej? lanseeraamaan ja skaalaamaan kumiveneiden tuotelinjojaan.',
+    rep: 'Konseptista konttiin — kuinka autamme maailmanlaajuisia brändejä lanseeraamaan ja skaalaamaan kumiveneiden tuotelinjojaan.',
   },
   // case 1
   {
     f: 'src/data/pages/fi/factory.yaml',
-    find: 'Eurooppalainen ulkoilukauppias tarvitsi oman etiketin SUP-tuotelinjan ainutlaatuisella kansigrafiikalla, ymp?rist?yst?v?llisell? PVC:ll? ja v?hitt?ismyyntivalmiilla pakkauksella —kaikki toimitettuna 60 p?iv?ss?.',
-    rep: 'Eurooppalainen ulkoilukauppias tarvitsi oman etiketin SUP-tuotelinjan ainutlaatuisella kansigrafiikalla, ympäristöystävällisellä PVC:llä ja vähittäismyyntivalmiilla pakkauksella —kaikki toimitettuna 60 päivässä.',
+    find: 'Eurooppalainen ulkoilukauppias tarvitsi oman etiketin SUP-tuotelinjan ainutlaatuisella kansigrafiikalla, ymp?rist?yst?v?llisell? PVC:ll? ja v?hitt?ismyyntivalmiilla pakkauksella — kaikki toimitettuna 60 p?iv?ss?.',
+    rep: 'Eurooppalainen ulkoilukauppias tarvitsi oman etiketin SUP-tuotelinjan ainutlaatuisella kansigrafiikalla, ympäristöystävällisellä PVC:llä ja vähittäismyyntivalmiilla pakkauksella — kaikki toimitettuna 60 päivässä.',
   },
   {
     f: 'src/data/pages/fi/factory.yaml',

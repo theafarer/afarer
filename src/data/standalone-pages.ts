@@ -84,7 +84,7 @@ export const standalonePages: StandalonePage[] = [
     slug: 'design-powerhouse',
     title: 'Design & Innovation',
     description:
-      'afarer is more than a factory —we are a design-driven manufacturer. In-house R&D, hydrodynamic simulation, custom ODM solutions, and advanced material engineering for global B2B partners.',
+      'afarer is more than a factory — we are a design-driven manufacturer. In-house R&D, hydrodynamic simulation, custom ODM solutions, and advanced material engineering for global B2B partners.',
     pageType: 'capability',
     sections: [
       {
@@ -93,7 +93,7 @@ export const standalonePages: StandalonePage[] = [
       },
       {
         heading: 'Ergonomics & Advanced Material Integration',
-        body: 'Our design philosophy centers around rider ergonomics —from precise ergonomic seat placement to engineered drop-stitch internal chamber architecture. We continuously innovate with military-grade PVC, reinforced drop-stitch hull panels, and UV-resistant coatings.',
+        body: 'Our design philosophy centers around rider ergonomics — from precise ergonomic seat placement to engineered drop-stitch internal chamber architecture. We continuously innovate with military-grade PVC, reinforced drop-stitch hull panels, and UV-resistant coatings.',
       },
       {
         heading: 'Turnkey ODM & White-Label Solutions',

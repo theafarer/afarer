@@ -53,7 +53,7 @@ export const journals: JournalRecord[] = [
     slug: 'iso-14001-certification',
     title: 'afarer Achieves  Environmental Management Certification',
     description: 'Our commitment to sustainable manufacturing and environmental responsibility.',
-    tldr: 'afarer has achieved  certification for environmental management. The certification covers our entire manufacturing process —from material sourcing and energy use to waste management and recycling programs.',
+    tldr: 'afarer has achieved  certification for environmental management. The certification covers our entire manufacturing process — from material sourcing and energy use to waste management and recycling programs.',
     category: 'environment',
     publishedDate: '2025-06-10',
     author: 'afarer Team',
@@ -76,7 +76,7 @@ export const journals: JournalRecord[] = [
   {
     slug: 'miami-boat-show-2026',
     title: 'afarer at the 2026 Miami International Boat Show',
-    description: 'Our biggest product showcase yet —new models, live demos, and special show pricing.',
+    description: 'Our biggest product showcase yet — new models, live demos, and special show pricing.',
     tldr: 'afarer will exhibit at the 2026 Miami International Boat Show with 12 products on display, on-water demos of the SUP Tour 12 and AirDeck 360, and show-exclusive bundle pricing. February 12-16 at Miami Marine Stadium Park.',
     category: 'community',
     publishedDate: '2026-01-05',

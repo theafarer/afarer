@@ -28,7 +28,7 @@ const DEFINITIONS: Record<string, string> = {
   'best-water-sports-gear-for-beginners':
     'Essential water sports gear starts with a quality inflatable board, a properly fitted life vest (PFD), a leash, and a pump. B2B buyers should look for CE-certified products with bulk packaging options.',
   'foam-board-vs-hard-surfboard':
-    'Inflatable SUPs use drop-stitch PVC construction (15-20 PSI) that packs into a backpack. Hard boards use EPS foam with fiberglass/epoxy —stiffer but fragile. Inflatables dominate the rental and retail market for portability and durability.',
+    'Inflatable SUPs use drop-stitch PVC construction (15-20 PSI) that packs into a backpack. Hard boards use EPS foam with fiberglass/epoxy — stiffer but fragile. Inflatables dominate the rental and retail market for portability and durability.',
   'why-afarer-exists':
     'afarer is a China-based OEM/ODM manufacturer of CE-certified inflatable boats, SUPs, kayaks, RIBs, and marine safety equipment, founded in 2012 with a 12,000 m²  factory.',
   'ocean-safety-and-responsibility':
@@ -63,7 +63,7 @@ const QUESTIONS: Record<string, { q: string; a: string }[]> = {
     },
     {
       q: 'Is SUP safe for beginners?',
-      a: 'Yes —SUP on calm, flat water is very safe. Always wear a PFD and leash.',
+      a: 'Yes — SUP on calm, flat water is very safe. Always wear a PFD and leash.',
     },
     {
       q: 'Do I need to be a strong swimmer for SUP?',
@@ -95,7 +95,7 @@ const STEPS: Record<string, string[]> = {
     'Contact factory for bulk pricing, MOQ, and customization options',
   ],
   'surfing-for-beginners': [
-    'Choose calm, flat water for your first session —lake or sheltered bay',
+    'Choose calm, flat water for your first session — lake or sheltered bay',
     'Inflate your board to recommended PSI (15-20 PSI for drop-stitch)',
     'Practice kneeling on the board before standing up',
     'Focus on stance: feet shoulder-width apart, knees slightly bent',
@@ -146,7 +146,7 @@ export function generateGeoForEntry(entry: ContentV2Record): GeoOutput {
   if (entry.category === 'comparison') {
     blocks.push({
       type: 'Comparison',
-      content: `${entry.title.replace(/\(.*?\)/, '').trim()} —this comparison helps you decide based on your specific needs and conditions.`,
+      content: `${entry.title.replace(/\(.*?\)/, '').trim()} — this comparison helps you decide based on your specific needs and conditions.`,
     });
   }
 
@@ -159,7 +159,7 @@ export function generateGeoForEntry(entry: ContentV2Record): GeoOutput {
     slug: entry.slug,
     title: entry.title,
     blocks,
-    summary: `${entry.slug.replace(/-/g, ' ')} —complete B2B GEO-ready structured content with TLDR, Definition, Steps, and FAQ.`,
+    summary: `${entry.slug.replace(/-/g, ' ')} — complete B2B GEO-ready structured content with TLDR, Definition, Steps, and FAQ.`,
   };
 }
 
@@ -198,7 +198,7 @@ export function generateGeoForSlug(slug: string): GeoOutput {
         ],
       },
     ],
-    summary: `${slug.replace(/-/g, ' ')} —GEO-ready content`,
+    summary: `${slug.replace(/-/g, ' ')} — GEO-ready content`,
   };
 }
 

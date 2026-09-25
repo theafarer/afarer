@@ -33,7 +33,7 @@ module.exports = [
   // process_cta desc
   {
     f: 'src/data/pages/fi/factory.yaml',
-    find: 'desc: Seuraa venett? l?pi jokaisen tuotannon vaiheen —raaka-aineesta merivalmiiksi alukseksi.',
-    rep: 'desc: Seuraa venettä läpi jokaisen tuotannon vaiheen —raaka-aineesta merivalmiiksi alukseksi.',
+    find: 'desc: Seuraa venett? l?pi jokaisen tuotannon vaiheen — raaka-aineesta merivalmiiksi alukseksi.',
+    rep: 'desc: Seuraa venettä läpi jokaisen tuotannon vaiheen — raaka-aineesta merivalmiiksi alukseksi.',
   },
 ];

@@ -156,7 +156,7 @@ export const faqs: FaqRecord[] = [
     id: 'return-policy',
     question: 'What is your return policy?',
     answer:
-      'We accept returns within 30 days of delivery for unused products in original packaging. Custom/OEM orders are non-returnable. Contact our support team to initiate a return —we provide a prepaid shipping label.',
+      'We accept returns within 30 days of delivery for unused products in original packaging. Custom/OEM orders are non-returnable. Contact our support team to initiate a return — we provide a prepaid shipping label.',
     category: 'ordering',
     relatedProducts: [],
     relatedGuides: [],
@@ -273,7 +273,7 @@ export const faqs: FaqRecord[] = [
     id: 'sup-inflate-pressure',
     question: 'What PSI should I inflate my SUP to?',
     answer:
-      "Inflate to the board's rated maximum PSI for best performance —typically 15–18 PSI for quality inflatable SUPs. The afarer SUP Explorer 11 performs best at 15–18 PSI. Under-inflation causes the board to feel soft and track poorly. Over-inflation past the rated max risks damaging the drop-stitch threads. Check the sticker near the valve for your board's specific rating.",
+      "Inflate to the board's rated maximum PSI for best performance — typically 15–18 PSI for quality inflatable SUPs. The afarer SUP Explorer 11 performs best at 15–18 PSI. Under-inflation causes the board to feel soft and track poorly. Over-inflation past the rated max risks damaging the drop-stitch threads. Check the sticker near the valve for your board's specific rating.",
     category: 'product',
     relatedProducts: ['sup-explorer-11', 'sup-touring-cruiser'],
     relatedGuides: ['how-to-choose-inflatable-sup', 'sup-pump-guide'],
@@ -282,7 +282,7 @@ export const faqs: FaqRecord[] = [
     id: 'sup-deck-pad-care',
     question: 'How do I clean and maintain the EVA deck pad?',
     answer:
-      'Rinse the deck pad with fresh water after each session. For dirt or stains, use mild soap and a soft brush —avoid harsh chemicals. If the edges start lifting, apply a small amount of waterproof marine adhesive and press under weight for 24 hours. Keep the board out of direct UV when not in use to prevent pad degradation.',
+      'Rinse the deck pad with fresh water after each session. For dirt or stains, use mild soap and a soft brush — avoid harsh chemicals. If the edges start lifting, apply a small amount of waterproof marine adhesive and press under weight for 24 hours. Keep the board out of direct UV when not in use to prevent pad degradation.',
     category: 'maintenance',
     relatedProducts: ['sup-explorer-11'],
     relatedGuides: ['inflatable-sup-maintenance'],
@@ -300,7 +300,7 @@ export const faqs: FaqRecord[] = [
     id: 'saltwater-rinse',
     question: 'Do I need to rinse my inflatable board after ocean use?',
     answer:
-      'Yes —always rinse your board, fins, pump, and paddle with fresh water after saltwater use. Salt crystals work into seams and valves, causing micro-leaks and corrosion. Dry the board in the shade before deflating and storing. Regular rinsing dramatically extends the life of your inflatable board.',
+      'Yes — always rinse your board, fins, pump, and paddle with fresh water after saltwater use. Salt crystals work into seams and valves, causing micro-leaks and corrosion. Dry the board in the shade before deflating and storing. Regular rinsing dramatically extends the life of your inflatable board.',
     category: 'maintenance',
     relatedProducts: [],
     relatedGuides: ['inflatable-sup-maintenance'],
@@ -309,7 +309,7 @@ export const faqs: FaqRecord[] = [
     id: 'sup-leash-necessity',
     question: 'Do I really need a leash for SUP?',
     answer:
-      'Yes —always wear a leash. A coiled SUP leash attaches to your ankle or calf and keeps the board with you if you fall. In open water, a leash can save your life by preventing separation from your flotation device. For river paddling, use a quick-release leash to prevent entrapment.',
+      'Yes — always wear a leash. A coiled SUP leash attaches to your ankle or calf and keeps the board with you if you fall. In open water, a leash can save your life by preventing separation from your flotation device. For river paddling, use a quick-release leash to prevent entrapment.',
     category: 'safety',
     relatedProducts: ['sup-explorer-11'],
     relatedGuides: ['sup-safety-guide', 'sup-leash-guide'],

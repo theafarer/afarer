@@ -134,11 +134,11 @@ export const samplePositionChanges: PositionChange[] = [
 export const sampleWorkflows: WeeklyWorkflow[] = [
   {
     week: 'W24 (Jun 10-16)',
-    day1: { task: 'GSC data export —top queries, low CTR pages', status: 'done' },
+    day1: { task: 'GSC data export — top queries, low CTR pages', status: 'done' },
     day2: { task: 'Classify 8 low-CTR pages: CTR fix vs content fix', status: 'done' },
     day3_4: { task: 'Title rewrite for 3 pages (surfing-safety, wetsuit, etiquette)', status: 'done' },
     day5: { task: 'Reindex updated pages via Google URL Inspection', status: 'done' },
-    day6_7: { task: 'Monitor impression/CTR changes —no significant shift yet', status: 'done' },
+    day6_7: { task: 'Monitor impression/CTR changes — no significant shift yet', status: 'done' },
   },
   {
     week: 'W25 (Jun 17-23)',
@@ -150,7 +150,7 @@ export const sampleWorkflows: WeeklyWorkflow[] = [
   },
   {
     week: 'W26 (Jun 24-30)',
-    day1: { task: 'GSC data export —week 3 comparison', status: 'pending' },
+    day1: { task: 'GSC data export — week 3 comparison', status: 'pending' },
     day2: { task: 'A/B test title variants on top 5 queries', status: 'pending' },
     day3_4: { task: 'Expand content on 2 highest-potential pages (+30% depth)', status: 'pending' },
     day5: { task: 'Full sitemap refresh + Google reindex request', status: 'pending' },

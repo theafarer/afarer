@@ -4,8 +4,8 @@ module.exports = [
   // intro[0] line 1: mojibake
   {
     f: 'src/data/pages/fi/factory.yaml',
-    find: 'Qingdao Vatrad Group Co., Ltd.:n tehdasbr?ndin? afarer hallitsee jokaista tuotannon vaihetta —raaka-PVC:n ja lasikuitumateriaalien saapumisesta valmiin veneen lopulliseen esitarkastukseen. Tuotantolaitoksemme Qingdaon talouskehitysalueella kattaa 12 000 neli?metri? ja sis?lt?? erilliset ty?pajat',
-    rep: 'Qingdao Vatrad Group Co., Ltd.:n tehdasbrändinä afarer hallitsee jokaista tuotannon vaihetta —raaka-PVC:n ja lasikuitumateriaalien saapumisesta valmiin veneen lopulliseen esitarkastukseen. Tuotantolaitoksemme Qingdaon talouskehitysalueella kattaa 12 000 neliömetriä ja sisältää erilliset työpajat',
+    find: 'Qingdao Vatrad Group Co., Ltd.:n tehdasbr?ndin? afarer hallitsee jokaista tuotannon vaihetta — raaka-PVC:n ja lasikuitumateriaalien saapumisesta valmiin veneen lopulliseen esitarkastukseen. Tuotantolaitoksemme Qingdaon talouskehitysalueella kattaa 12 000 neli?metri? ja sis?lt?? erilliset ty?pajat',
+    rep: 'Qingdao Vatrad Group Co., Ltd.:n tehdasbrändinä afarer hallitsee jokaista tuotannon vaihetta — raaka-PVC:n ja lasikuitumateriaalien saapumisesta valmiin veneen lopulliseen esitarkastukseen. Tuotantolaitoksemme Qingdaon talouskehitysalueella kattaa 12 000 neliömetriä ja sisältää erilliset työpajat',
   },
   // intro[1] line 1
   {

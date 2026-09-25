@@ -65,15 +65,15 @@ export interface EngineStatus {
 
 export const BRAND: BrandIdentity = {
   name: 'afarer',
-  tagline: 'Inflatable Watercraft Manufacturer —OEM/ODM Factory',
+  tagline: 'Inflatable Watercraft Manufacturer — OEM/ODM Factory',
   taglineShort: 'Inflatable Watercraft Factory',
   description: 'China-based manufacturer of CE-certified SUPs and marine safety equipment since 2012.',
   foundingYear: 2012,
   categories: ['SUPs', 'Accessories', 'Marine Safety'],
   ethos: [
-    'Factory-direct —every product manufactured in our 12,000 m² facility',
+    'Factory-direct — every product manufactured in our 12,000 m² facility',
     'Quality-certified — & CE compliant production lines',
-    'B2B-focused —OEM/ODM, private label, and bulk wholesale partner',
+    'B2B-focused — OEM/ODM, private label, and bulk wholesale partner',
   ],
   colors: { primary: '#003355', accent: '#0ea5e9' },
   cta: { text: 'Explore our factory', link: '/factory' },
@@ -115,7 +115,7 @@ export const BRAND: BrandIdentity = {
     },
   ],
   brandStory:
-    'Founded in 2012 in Qingdao, China, afarer began as a specialized inflatable workshop serving local marine operators. Over a decade of engineering refinement, we grew into a 12,000 m² facility producing CE-certified SUPs and marine safety equipment for 40+ countries. Our R&D center drives innovation in drop-stitch construction and PVC formulation —bridging the gap between custom OEM manufacturing and commercial-grade reliability.',
+    'Founded in 2012 in Qingdao, China, afarer began as a specialized inflatable workshop serving local marine operators. Over a decade of engineering refinement, we grew into a 12,000 m² facility producing CE-certified SUPs and marine safety equipment for 40+ countries. Our R&D center drives innovation in drop-stitch construction and PVC formulation — bridging the gap between custom OEM manufacturing and commercial-grade reliability.',
   milestones: [
     {
       year: 2012,

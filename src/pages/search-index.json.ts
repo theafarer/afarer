@@ -93,7 +93,7 @@ const staticPages: { url: string; title: string; excerpt: string; tags: string[]
     url: '/randdcenter',
     title: 'R&D Center',
     excerpt:
-      'afarer Research & Development —PVC fabric testing, RF welding, hydrodynamic testing, and quality control for inflatable SUPs.',
+      'afarer Research & Development — PVC fabric testing, RF welding, hydrodynamic testing, and quality control for inflatable SUPs.',
     tags: ['r&d', 'research', 'engineering', 'testing'],
   },
   {

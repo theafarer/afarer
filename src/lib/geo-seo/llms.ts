@@ -7,7 +7,7 @@ export interface LlmsSection {
 
 export function buildLlmsTxt(sections: LlmsSection[], extra: { description: string; summary: string }): string {
   const lines: string[] = [];
-  lines.push('# afarer —AI Site Overview');
+  lines.push('# afarer — AI Site Overview');
   lines.push(`> Site: ${SITE_URL}`);
   lines.push('> Languages: EN, FR, DE, ES, PT, IT, JA, KO, RU, PL, ZH, AR (13 languages)');
   lines.push('');
@@ -35,7 +35,7 @@ export function buildLlmsFullTxt(
   extra: { about: string; facts: string[]; summary: string }
 ): string {
   const lines: string[] = [];
-  lines.push('# afarer —Complete Site Knowledge (LLMs-Full)');
+  lines.push('# afarer — Complete Site Knowledge (LLMs-Full)');
   lines.push(`> Site: ${SITE_URL}`);
   lines.push('> Last updated: 2026-07');
   lines.push('');
@@ -73,7 +73,7 @@ export function formatProductLines(
   return products.map((p) => {
     let line = `- **${p.title}**`;
     if (p.sku) line += ` (SKU: ${p.sku})`;
-    line += ` —${p.description}`;
+    line += ` — ${p.description}`;
     if (p.url) line += ` [${p.url}]`;
     return line;
   });
@@ -89,6 +89,6 @@ export function formatGuideLines(guides: { title: string; slug: string; difficul
 export function formatV2Lines(records: { title: string; slug: string; category?: string; type?: string }[]): string[] {
   return records.map((r) => {
     const tag = r.category || r.type || '';
-    return `- [${r.title}](${SITE_URL}/v2/${r.slug})${tag ? ` —${tag}` : ''}`;
+    return `- [${r.title}](${SITE_URL}/v2/${r.slug})${tag ? ` — ${tag}` : ''}`;
   });
 }

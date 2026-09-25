@@ -17,7 +17,7 @@ const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
 const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 
 const metadata = {
-  title: t('compare.title') || `Product Comparison —${SITE.name}`,
+  title: t('compare.title') || `Product Comparison — ${SITE.name}`,
   description:
     t('compare.desc') || 'Compare Afarer inflatable SUPs, kayaks, dinghies, RIBs, and accessories side by side.',
 };

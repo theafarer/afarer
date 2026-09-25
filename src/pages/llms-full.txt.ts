@@ -61,12 +61,12 @@ export async function GET() {
       {
         title: 'R&D Center',
         lines: [
-          '- PVC Fabric Lab —tensile/UV/abrasion testing',
-          '- Hull Engineering Studio —CAD/FEA simulation',
-          '- RF Welding Center —precision seam welding',
-          '- Hydrodynamic Test Tank —scale model testing',
-          '- Prototype Workshop —full-scale prototyping',
-          '- Quality & Inspection Lab —testing and certification',
+          '- PVC Fabric Lab — tensile/UV/abrasion testing',
+          '- Hull Engineering Studio — CAD/FEA simulation',
+          '- RF Welding Center — precision seam welding',
+          '- Hydrodynamic Test Tank — scale model testing',
+          '- Prototype Workshop — full-scale prototyping',
+          '- Quality & Inspection Lab — testing and certification',
         ],
       },
       {
@@ -96,7 +96,7 @@ export async function GET() {
       },
     ],
     {
-      about: `afarer designs and manufactures professional-grade inflatable watercraft —SUP boards, kayaks, dinghies, RIBs, safety equipment, and accessories. Founded 2012, headquartered in Qingdao, China. 12,000 m² factory. CE and ISO 9001 certified. Serves 40+ countries. OEM/ODM services available.`,
+      about: `afarer designs and manufactures professional-grade inflatable watercraft — SUP boards, kayaks, dinghies, RIBs, safety equipment, and accessories. Founded 2012, headquartered in Qingdao, China. 12,000 m² factory. CE and ISO 9001 certified. Serves 40+ countries. OEM/ODM services available.`,
       facts: [
         'Founded: 2012 | HQ: Qingdao, China',
         '12,000 m² factory, 200+ workers, 14 R&D engineers',

@@ -19,10 +19,10 @@ const { lang } = Astro.params;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
 const contentV2Records = getContentV2ForLang(lang);
 const metadata = {
-  title: `Content Library —${SITE.name}`,
+  title: `Content Library — ${SITE.name}`,
   description:
     t('v2.index.desc') ||
-    'Afarer content library —guides, comparisons, problem solvers, and brand stories for water sports enthusiasts.',
+    'Afarer content library — guides, comparisons, problem solvers, and brand stories for water sports enthusiasts.',
 };
 
 const categories = [

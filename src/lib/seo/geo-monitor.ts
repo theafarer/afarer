@@ -25,7 +25,7 @@ export function estimateAiReadiness(entry: ContentV2Record): { score: number; si
     score += 10;
   }
   if (entry.slug.includes('beginner') || entry.slug.includes('guide')) {
-    signals.push('Tutorial/guide structure —ChatGPT instructional content target');
+    signals.push('Tutorial/guide structure — ChatGPT instructional content target');
     score += 10;
   }
   return { score: Math.min(score, 100), signals };

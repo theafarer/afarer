@@ -29,11 +29,11 @@ export const guides: GuideRecord[] = [
       'Match your board shape, volume, and construction to your skill level and primary water environment. Wider boards (32-34") offer stability for beginners. Longer boards (12-14") track better for touring. Drop-stitch construction at 12-15 PSI provides rigidity comparable to hard boards.',
     audience: 'First-time SUP buyers, recreational paddlers, and anyone upgrading from a basic board.',
     steps: [
-      'Identify your primary paddling environment —lake, ocean, river, or mixed',
+      'Identify your primary paddling environment — lake, ocean, river, or mixed',
       'Match board width to your skill level: 32-34" for beginners, 30-32" for intermediate, 28-30" for advanced',
       'Choose board length based on use: shorter for maneuverability, longer for tracking and speed',
       'Select construction: inflatable drop-stitch for portability, hard board for maximum performance',
-      "Verify weight capacity —your weight plus gear should not exceed 80% of the board's limit",
+      "Verify weight capacity — your weight plus gear should not exceed 80% of the board's limit",
       'Check included accessories: pump, leash, fin, backpack, and repair kit',
     ],
     faq: [
@@ -60,22 +60,22 @@ export const guides: GuideRecord[] = [
     category: 'tutorial',
     title: "Beginner's Guide to Paddle Boarding",
     description:
-      'Everything you need to know before your first paddle boarding session —from gear setup to basic paddling techniques.',
+      'Everything you need to know before your first paddle boarding session — from gear setup to basic paddling techniques.',
     tldr: 'Start on calm, flat water with a wide stable board. Inflate to 12-15 PSI, attach the leash, and use the correct paddle length (6-8" taller than your height). Keep your stance shoulder-width apart, knees slightly bent, and look at the horizon.',
     problem:
-      'New paddlers often skip fundamental preparation —wrong paddle length, poor stance, or choosing rough water —which leads to falls, frustration, and discouragement.',
+      'New paddlers often skip fundamental preparation — wrong paddle length, poor stance, or choosing rough water — which leads to falls, frustration, and discouragement.',
     solution:
       'Follow a structured first-session plan: choose calm water, set up your gear correctly, practice kneeling before standing, and master the forward stroke before attempting turns.',
     audience: 'Absolute beginners who have never paddle boarded before.',
     steps: [
-      'Choose flat, calm water with no boat traffic —a small lake or sheltered bay is ideal',
+      'Choose flat, calm water with no boat traffic — a small lake or sheltered bay is ideal',
       'Inflate your board to 12-15 PSI using the dual-action pump',
       'Attach the coil leash to your ankle or calf, never the board handle',
       'Insert the fin and tighten the screw',
-      'Adjust paddle length —it should be 6-8 inches taller than your height',
+      'Adjust paddle length — it should be 6-8 inches taller than your height',
       'Start kneeling on the board, paddle a few strokes to feel the balance',
       'Stand up one foot at a time, feet shoulder-width apart, knees soft',
-      'Look at the horizon, not your feet —your board goes where you look',
+      'Look at the horizon, not your feet — your board goes where you look',
     ],
     faq: [
       {
@@ -100,22 +100,22 @@ export const guides: GuideRecord[] = [
     slug: 'safety-tips',
     category: 'safety',
     title: 'Water Sports Safety Tips',
-    description: 'Essential safety guidelines for paddle boarding —from equipment checks to weather awareness.',
+    description: 'Essential safety guidelines for paddle boarding — from equipment checks to weather awareness.',
     tldr: "Always wear a CE-certified life vest, check weather and water conditions before launch, carry communication devices, never paddle alone in unfamiliar water, and understand your equipment's rated limits.",
     problem:
-      'Most water sports accidents result from inadequate preparation —no life vest, ignoring weather warnings, or using equipment beyond its design limits.',
+      'Most water sports accidents result from inadequate preparation — no life vest, ignoring weather warnings, or using equipment beyond its design limits.',
     solution:
       'Adopt a pre-launch safety checklist: verify equipment condition, check weather and water temperature, inform someone of your route, and always wear appropriate flotation.',
     audience: 'All paddle boarders and water sports participants.',
     steps: [
-      'Check weather forecast —avoid winds over 15 mph and thunderstorms',
-      'Verify water temperature —cold water (<60°F/15°C) requires a wetsuit or drysuit',
-      'Inspect equipment —check for leaks, cracks, and proper inflation',
+      'Check weather forecast — avoid winds over 15 mph and thunderstorms',
+      'Verify water temperature — cold water (<60°F/15°C) requires a wetsuit or drysuit',
+      'Inspect equipment — check for leaks, cracks, and proper inflation',
       'Wear a CE-certified life vest at all times',
       'Attach the leash to your ankle or calf',
-      'File a float plan —tell someone where you are going and when you will return',
-      'Carry communication —waterproof phone case or VHF radio',
-      'Know your limits —stay within your skill level and equipment ratings',
+      'File a float plan — tell someone where you are going and when you will return',
+      'Carry communication — waterproof phone case or VHF radio',
+      'Know your limits — stay within your skill level and equipment ratings',
     ],
     faq: [
       {
@@ -146,15 +146,15 @@ export const guides: GuideRecord[] = [
     problem:
       'Buyers are caught between the convenience of inflatable boards and the performance reputation of hard boards, without clear data on how they actually compare.',
     solution:
-      'Compare specific criteria —rigidity, weight, packed size, durability, repair, and cost —against your actual use pattern. For most recreational paddlers, a quality inflatable is the better choice.',
+      'Compare specific criteria — rigidity, weight, packed size, durability, repair, and cost — against your actual use pattern. For most recreational paddlers, a quality inflatable is the better choice.',
     audience: 'SUP buyers deciding between inflatable and rigid construction.',
     steps: [
-      'Evaluate portability needs —inflatable packs to backpack size, hard board requires roof rack',
-      'Compare rigidity —inflatable at 15 PSI has minimal flex, hard board has zero flex',
-      'Assess storage —inflatable stores in a closet, hard board requires garage or rack space',
-      'Consider durability —inflatable absorbs impacts, hard board can dent and crack',
-      'Factor repair —inflatable patches are simple, hard board repairs require professional work',
-      'Check performance —hard boards have slight speed advantage, inflatables offer better shock absorption',
+      'Evaluate portability needs — inflatable packs to backpack size, hard board requires roof rack',
+      'Compare rigidity — inflatable at 15 PSI has minimal flex, hard board has zero flex',
+      'Assess storage — inflatable stores in a closet, hard board requires garage or rack space',
+      'Consider durability — inflatable absorbs impacts, hard board can dent and crack',
+      'Factor repair — inflatable patches are simple, hard board repairs require professional work',
+      'Check performance — hard boards have slight speed advantage, inflatables offer better shock absorption',
     ],
     faq: [
       {
@@ -182,17 +182,17 @@ export const guides: GuideRecord[] = [
     description: 'Learn to read wind, waves, tides, and weather patterns to make safe decisions on the water.',
     tldr: 'Check three things before every launch: wind speed (under 10 mph for beginners), wave height (under 1 ft for beginners), and water temperature (dress for the water, not the air). Offshore wind is dangerous at any skill level.',
     problem:
-      "Most weather-related accidents happen because paddlers misjudge conditions —they check air temperature but not water temperature, or don't understand that offshore wind can blow them out to sea.",
+      "Most weather-related accidents happen because paddlers misjudge conditions — they check air temperature but not water temperature, or don't understand that offshore wind can blow them out to sea.",
     solution:
       'Use a structured pre-launch weather assessment: wind direction and speed, wave period and height, tide state, and water temperature. Understand how each factor affects your safety.',
-    audience: 'All paddlers who go on open water —lakes, bays, rivers, and ocean.',
+    audience: 'All paddlers who go on open water — lakes, bays, rivers, and ocean.',
     steps: [
-      'Check wind speed and direction —offshore wind (blowing from land to sea) is the most dangerous',
-      'Assess wave conditions —wave period matters as much as wave height',
-      'Know the tide —tidal currents can be stronger than your paddling speed',
-      'Measure water temperature —below 60°F/15°C requires thermal protection',
-      'Check visibility —fog and heavy rain reduce visibility and increase collision risk',
-      'Understand local hazards —submerged rocks, strong currents, boat traffic zones',
+      'Check wind speed and direction — offshore wind (blowing from land to sea) is the most dangerous',
+      'Assess wave conditions — wave period matters as much as wave height',
+      'Know the tide — tidal currents can be stronger than your paddling speed',
+      'Measure water temperature — below 60°F/15°C requires thermal protection',
+      'Check visibility — fog and heavy rain reduce visibility and increase collision risk',
+      'Understand local hazards — submerged rocks, strong currents, boat traffic zones',
     ],
     faq: [
       {
@@ -218,7 +218,7 @@ export const guides: GuideRecord[] = [
     category: 'technical',
     title: 'How to Read SUP Board Specifications',
     description:
-      'A technical guide to understanding SUP board specs —volume, dimensions, construction, and what they mean for performance.',
+      'A technical guide to understanding SUP board specs — volume, dimensions, construction, and what they mean for performance.',
     tldr: 'Key specs: volume (liters) determines buoyancy and weight capacity, width determines stability, length determines tracking and speed, thickness determines rigidity, and PSI rating determines inflation pressure for optimal performance.',
     problem:
       'Product spec sheets list numbers without context, leaving buyers unsure which specifications actually matter for their use case.',
@@ -226,12 +226,12 @@ export const guides: GuideRecord[] = [
       'Translate each specification into real-world performance: volume for floatation, width for stability, length for glide, thickness for rigidity, and construction for durability.',
     audience: 'Intermediate paddlers and technical buyers who want to make data-driven decisions.',
     steps: [
-      "Check volume (liters) —your weight plus gear should not exceed 80% of the board's volume rating",
-      'Check width —wider (32-34") = more stability, narrower (28-30") = more speed',
-      'Check length —longer (12-14") = better tracking, shorter (10-11") = better maneuverability',
+      "Check volume (liters) — your weight plus gear should not exceed 80% of the board's volume rating",
+      'Check width — wider (32-34") = more stability, narrower (28-30") = more speed',
+      'Check length — longer (12-14") = better tracking, shorter (10-11") = better maneuverability',
       'Check thickness —6" is standard, 8" offers more rigidity and weight capacity',
-      'Check PSI rating —inflate to the maximum rated PSI for optimal rigidity',
-      'Check construction materials —drop-stitch density, PVC layers, rail reinforcement',
+      'Check PSI rating — inflate to the maximum rated PSI for optimal rigidity',
+      'Check construction materials — drop-stitch density, PVC layers, rail reinforcement',
     ],
     faq: [
       {
@@ -259,17 +259,17 @@ export const guides: GuideRecord[] = [
     description: 'Step-by-step maintenance guide to maximize the lifespan of your inflatable SUP board.',
     tldr: 'Rinse with fresh water after every use, dry completely before storage, deflate and roll loosely (not military-tight), store in a cool dry place away from direct sunlight, and inspect seams monthly.',
     problem:
-      'Improper storage and cleaning are the leading causes of premature failure in inflatable SUPs —mold, UV damage, and seam delamination.',
+      'Improper storage and cleaning are the leading causes of premature failure in inflatable SUPs — mold, UV damage, and seam delamination.',
     solution:
       'Follow a consistent post-session routine: rinse, dry, inspect, deflate, and store. Use mild soap for stubborn dirt. Never store the board wet or in direct sunlight.',
     audience: 'All inflatable SUP owners who want their board to last 5+ years.',
     steps: [
       'Rinse the board with fresh water immediately after use, especially after saltwater',
-      'Clean with mild soap and a soft sponge —avoid harsh chemicals or pressure washers',
-      'Dry the board completely —open the valve to let trapped water escape',
-      'Inspect for damage —check seams, valve, and surface for punctures',
-      'Deflate fully —remove the valve core for complete deflation',
-      'Roll the board loosely —start from the nose, avoid tight creases',
+      'Clean with mild soap and a soft sponge — avoid harsh chemicals or pressure washers',
+      'Dry the board completely — open the valve to let trapped water escape',
+      'Inspect for damage — check seams, valve, and surface for punctures',
+      'Deflate fully — remove the valve core for complete deflation',
+      'Roll the board loosely — start from the nose, avoid tight creases',
       'Store in the carry bag in a cool, dry place away from direct sunlight',
     ],
     faq: [
@@ -300,13 +300,13 @@ export const guides: GuideRecord[] = [
     problem:
       'Most paddlers use arm-dominant strokes that waste energy and cause shoulder fatigue. Poor technique also makes the board hard to control in wind and chop.',
     solution:
-      'Learn three essential strokes —forward, sweep, and cross-bow turn —with proper body mechanics. Practice each on calm water before progressing to challenging conditions.',
+      'Learn three essential strokes — forward, sweep, and cross-bow turn — with proper body mechanics. Practice each on calm water before progressing to challenging conditions.',
     audience: 'Paddlers who want to paddle longer, faster, and with less fatigue.',
     steps: [
       'Forward stroke: reach forward, plant the blade fully, pull back using torso rotation (not arms), exit at the ankle',
       'Sweep stroke: reach forward at the rail, sweep the blade in a wide arc toward the tail, turn the board away from the paddle side',
       'Cross-bow turn: place the paddle on the opposite side of the board without switching hands, pull toward the tail',
-      'Bracing: use a low brace for stability in chop —slap the blade flat on the water surface',
+      'Bracing: use a low brace for stability in chop — slap the blade flat on the water surface',
       'Draw stroke: reach out sideways, pull the board laterally toward the paddle',
     ],
     faq: [
@@ -340,10 +340,10 @@ export const guides: GuideRecord[] = [
       'Structure SUP sessions with specific fitness goals: endurance paddling for cardio, interval sprints for power, SUP yoga for flexibility, and distance paddling for muscular endurance.',
     audience: 'Fitness enthusiasts looking for a low-impact, high-engagement full-body workout.',
     steps: [
-      'Warm up on land —arm circles, torso twists, and leg swings for 5 minutes',
+      'Warm up on land — arm circles, torso twists, and leg swings for 5 minutes',
       'Start with 10 minutes of steady paddling at moderate intensity',
       'Progress to interval training —2 minutes hard paddling, 2 minutes easy recovery',
-      'Incorporate SUP yoga poses —downward dog, warrior II, and tree pose on the board',
+      'Incorporate SUP yoga poses — downward dog, warrior II, and tree pose on the board',
       'Cool down with gentle paddling and static stretches on the board',
     ],
     faq: [
@@ -377,12 +377,12 @@ export const guides: GuideRecord[] = [
       'Use an extra-wide SUP board (34"+) with a full-deck traction pad. Practice in calm, shallow water. Start with foundation poses before attempting inversions.',
     audience: 'Yoga practitioners and paddlers who want to combine balance training with mindfulness.',
     steps: [
-      'Anchor the board in shallow, calm water —use a sand anchor or tie to a dock',
-      'Start with seated poses —easy seat, boat pose, seated twist',
-      'Progress to kneeling poses —tabletop, cat-cow, thunderbolt',
-      'Move to standing poses —mountain, warrior I, warrior II, tree pose',
-      'Practice balance poses —half moon, eagle, dancer',
-      'End with savasana —lie flat on the board, feel the water movement',
+      'Anchor the board in shallow, calm water — use a sand anchor or tie to a dock',
+      'Start with seated poses — easy seat, boat pose, seated twist',
+      'Progress to kneeling poses — tabletop, cat-cow, thunderbolt',
+      'Move to standing poses — mountain, warrior I, warrior II, tree pose',
+      'Practice balance poses — half moon, eagle, dancer',
+      'End with savasana — lie flat on the board, feel the water movement',
     ],
     faq: [
       {
@@ -408,7 +408,7 @@ export const guides: GuideRecord[] = [
     category: 'lifestyle',
     title: 'SUP Fishing Guide: How to Paddle Board Fish',
     description:
-      'Everything you need to know about fishing from a paddle board —gear setup, stability tips, and techniques.',
+      'Everything you need to know about fishing from a paddle board — gear setup, stability tips, and techniques.',
     tldr: 'SUP fishing offers silent approach, shallow water access, and 360-degree casting. Use a wide stable board (34"+), attach rod holders, and use a cooler or crate as a gear deck. Anchor in windy conditions. Always wear a PFD.',
     problem:
       "Standard fishing boats are expensive to maintain and can't access shallow water. SUP fishing solves this by offering a portable, shallow-water fishing platform, but requires specific gear adaptations.",
@@ -452,12 +452,12 @@ export const guides: GuideRecord[] = [
     problem:
       'Small punctures and valve issues are common but easy to fix. Without proper repair technique, users either overpay for professional service or make the damage worse.',
     solution:
-      'Identify the damage type —puncture, valve leak, or seam issue —and apply the appropriate repair method. Most repairs take 30 minutes plus curing time.',
+      'Identify the damage type — puncture, valve leak, or seam issue — and apply the appropriate repair method. Most repairs take 30 minutes plus curing time.',
     audience: 'Owners of inflatable SUPs who want to handle basic repairs themselves.',
     steps: [
-      'Locate the leak —inflate fully, listen for air, feel with your hand, or use soapy water',
+      'Locate the leak — inflate fully, listen for air, feel with your hand, or use soapy water',
       'Mark the leak with a pen or tape',
-      'Clean the area around the leak with isopropyl alcohol —at least 2 inches around the damage',
+      'Clean the area around the leak with isopropyl alcohol — at least 2 inches around the damage',
       'Rough the surface with fine sandpaper for better adhesive bonding',
       'Apply PVC adhesive to both the patch and the board surface',
       'Wait 5 minutes for the adhesive to become tacky',
@@ -488,10 +488,10 @@ export const guides: GuideRecord[] = [
     category: 'planning',
     title: 'Planning a Multi-Day SUP Trip',
     description:
-      'How to plan and execute a multi-day paddling trip —route planning, gear packing, camping, and safety.',
+      'How to plan and execute a multi-day paddling trip — route planning, gear packing, camping, and safety.',
     tldr: 'Plan 10-15 miles per day. Pack gear in waterproof dry bags, distribute weight evenly, and practice loading your board before the trip. File a float plan. Carry water, food, shelter, navigation, and communication.',
     problem:
-      'Multi-day trips fail due to overpacking, poor route planning, or underestimating weather and current —leading to exhaustion, gear failure, or safety incidents.',
+      'Multi-day trips fail due to overpacking, poor route planning, or underestimating weather and current — leading to exhaustion, gear failure, or safety incidents.',
     solution:
       'Use a systematic planning approach: route selection, gear checklist, food planning, safety briefing, and contingency planning.',
     audience: 'Experienced paddlers planning their first multi-day expedition.',
@@ -500,9 +500,9 @@ export const guides: GuideRecord[] = [
       'Plan 10-15 miles per day accounting for wind and current',
       'Check tide tables and weather forecasts for the entire trip window',
       'Pack gear in waterproof dry bags —20-30 lbs total gear weight',
-      'Distribute weight evenly —heaviest items in the center',
+      'Distribute weight evenly — heaviest items in the center',
       'File a detailed float plan with someone on shore',
-      'Bring navigation —paper chart, compass, and GPS backup',
+      'Bring navigation — paper chart, compass, and GPS backup',
       'Pack emergency shelter, extra food, and first aid kit',
     ],
     faq: [
@@ -537,10 +537,10 @@ export const guides: GuideRecord[] = [
     audience: 'SUP paddlers choosing their first or next paddle.',
     steps: [
       'Measure paddle height \u20146-8" taller than your height for general paddling',
-      'Choose blade material \u2014nylon for budget, fiberglass for value, carbon for performance',
-      'Choose blade shape \u2014dihedral for smooth tracking, flat for power, spoon for racing',
-      'Choose shaft type \u2014straight for general use, bent for racing SUP',
-      'Check flex \u2014stiffer shafts transfer more power, flexible shafts reduce joint strain',
+      'Choose blade material \u2014 nylon for budget, fiberglass for value, carbon for performance',
+      'Choose blade shape \u2014 dihedral for smooth tracking, flat for power, spoon for racing',
+      'Choose shaft type \u2014 straight for general use, bent for racing SUP',
+      'Check flex \u2014 stiffer shafts transfer more power, flexible shafts reduce joint strain',
     ],
     faq: [
       {
@@ -549,7 +549,7 @@ export const guides: GuideRecord[] = [
       },
       {
         q: 'How do I know if my paddle is the right length?',
-        a: 'Stand the paddle vertically next to you —the handle should reach your wrist when your arm is raised overhead.',
+        a: 'Stand the paddle vertically next to you — the handle should reach your wrist when your arm is raised overhead.',
       },
       {
         q: 'Should I get a one-piece or adjustable paddle?',
@@ -565,7 +565,7 @@ export const guides: GuideRecord[] = [
     slug: 'sup-with-kids',
     category: 'lifestyle',
     title: 'SUP with Kids: A Complete Family Guide',
-    description: 'How to safely take children paddle boarding —age recommendations, equipment, and activities.',
+    description: 'How to safely take children paddle boarding — age recommendations, equipment, and activities.',
     tldr: 'Children 6+ can ride on a SUP with an adult. Children 10+ can paddle their own board with supervision. Use a wide stable board, always wear PFDs, stay in shallow calm water, and keep sessions short (30-45 minutes max).',
     problem:
       'Parents want to share water sports with their kids but worry about safety, equipment fit, and keeping children engaged.',
@@ -573,13 +573,13 @@ export const guides: GuideRecord[] = [
       'Use the right board size for tandem riding, ensure every child wears a properly fitted PFD, start in shallow warm water, and make it fun with games and short sessions.',
     audience: 'Parents who want to introduce their children to paddle boarding.',
     steps: [
-      "Age 4-6: ride as a passenger on an adult's board —sit in front, hold onto the center handle",
+      "Age 4-6: ride as a passenger on an adult's board — sit in front, hold onto the center handle",
       'Age 6-10: kneel or sit on their own board with adult supervision and a leash',
       'Age 10+: paddle their own board with adult supervision nearby',
-      'Always wear a PFD —children must wear a properly fitted life vest at all times',
+      'Always wear a PFD — children must wear a properly fitted life vest at all times',
       'Stay in shallow water (waist-deep for the adult)',
       'Keep sessions short —30-45 minutes max for children under 10',
-      'Make it fun —play games, look for fish, practice standing up',
+      'Make it fun — play games, look for fish, practice standing up',
     ],
     faq: [
       {

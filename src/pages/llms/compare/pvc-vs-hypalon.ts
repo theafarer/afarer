@@ -67,10 +67,10 @@ Modern military-grade PVC fabrics (1100-1670 dtex, double-layer or fusion-bonded
 
 ## Common Misconceptions
 
-1. **"Hypalon is always better"** —For recreational users in moderate climates, premium PVC offers similar real-world durability at half the cost.
-2. **"PVC boats fall apart in the sun"** —Modern PVC with UV-stabilized coatings lasts 8-12 years in normal use. Only non-UV-resistant PVC degrades quickly.
-3. **"Hypalon boats don't need maintenance"** —Hypalon still requires cleaning, conditioning, and proper storage for maximum lifespan.
-4. **"All PVC is the same"** —Wide quality range exists: single-layer budget PVC vs. military-grade fusion-bonded PVC are vastly different materials.
+1. **"Hypalon is always better"** — For recreational users in moderate climates, premium PVC offers similar real-world durability at half the cost.
+2. **"PVC boats fall apart in the sun"** — Modern PVC with UV-stabilized coatings lasts 8-12 years in normal use. Only non-UV-resistant PVC degrades quickly.
+3. **"Hypalon boats don't need maintenance"** — Hypalon still requires cleaning, conditioning, and proper storage for maximum lifespan.
+4. **"All PVC is the same"** — Wide quality range exists: single-layer budget PVC vs. military-grade fusion-bonded PVC are vastly different materials.
 
 ## Related Resources
 
