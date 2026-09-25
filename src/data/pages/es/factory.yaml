@@ -179,7 +179,7 @@ production_flow:
       description: 'Los barcos se trasladan al ensamblaje final donde se ensamblan todos los componentes: casco, tubos, válvulas instaladas, anillas en D, asas, cajas de aletas y ajuste de la bolsa de transporte. Cada unidad sigue una lista de verificación de ensamblaje de 100 puntos.'
       qc_check: Firma de lista de verificación de 100 puntos por unidad, prueba de funcionamiento de la válvula (10 ciclos de apertura/cierre), verificación de torque del hardware, inspección visual
       qc_threshold: 'Política de cero defectos en artículos críticos para la seguridad (válvulas, anillas en D, manijas). Cosmético menor: AQL 2.5 (ISO 2859)'
-      responsibility: Líder de equipo de ensamblaje   control de calidad en línea
+      responsibility: Líder de equipo de ensamblaje + control de calidad en línea
     - stage: Cinco
       title: Prueba de presión y retención de calidad
       description: Cada cámara se infla a 1,25× la presión nominal (típicamente 20–25 PSI) y se mantiene durante 24–48 horas. Los sensores de presión registran continuamente. Las cámaras que superan una caída de presión del 5 % son rechazadas y enviadas para una reinspección de las costuras.
@@ -191,7 +191,7 @@ production_flow:
       description: Inspección visual y funcional final. Defectos en la superficie, consistencia del color, verificación de etiquetas/BIN, integridad del empaque y completitud de los accesorios. Las unidades están envasadas al vacío, empacadas en cajas y paletizadas para la carga en contenedor.
       qc_check: Inspección visual completa, lista de accesorios por SKU, prueba de caída del embalaje (1 m, muestra aleatoria), verificación de escaneo de etiqueta/código de barras
       qc_threshold: AQL 2.5 para defectos graves, AQL 4.0 para defectos menores. Tolerancia cero en defectos de seguridad. 100% de las unidades inspeccionadas visualmente
-      responsibility: Equipo de control de calidad final (4 inspectores)   Líder del equipo de empaque
+      responsibility: Equipo de control de calidad final (4 inspectores) + Líder del equipo de empaque
 workforce:
   tagline: Nuestra Gente
   title: Fuerza laboral y experiencia
@@ -241,7 +241,7 @@ material_traceability:
       source: Proveedor japonés
       certified: ISO 9001, REACH
     - material: Tejido de puntada caída
-      source: Tejido interno   socio externo
+      source: Tejido interno + socio externo
       certified: Control de calidad interno proveedor ISO 9001
     - material: Válvulas y Herrajes
       source: Proveedores OEM chinos

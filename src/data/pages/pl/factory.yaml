@@ -173,7 +173,7 @@ production_flow:
       description: 'Łodzie przechodzą do końcowego montażu, gdzie wszystkie elementy są łączone: kadłub, rury, zainstalowane zawory, pierścienie D, uchwyty, skrzynki na płetwy i montaż torby transportowej. Każda jednostka podlega 100-punktowej liście kontrolnej montażu.'
       qc_check: Zatwierdzenie listy kontrolnej 100 punktów dla jednostki, test funkcji zaworu (10 cykli otwierania/zamykania), weryfikacja momentu dokręcania sprzętu, inspekcja wizualna
       qc_threshold: 'Polityka zerowej wadliwości dla elementów krytycznych dla bezpieczeństwa (zawory, pierścienie D, uchwyty). Drobne wady kosmetyczne: AQL 2,5 (ISO 2859)'
-      responsibility: Kierownik zespołu montażowego   kontrola jakości na linii
+      responsibility: Kierownik zespołu montażowego + kontrola jakości na linii
     - stage: Pięć
       title: Test ciśnieniowy i zatrzymanie jakości
       description: Każda komora jest napełniana do 1,25× nominalnego ciśnienia (zwykle 20–25 PSI) i utrzymywana przez 24–48 godzin. Czujniki ciśnienia rejestrują dane ciągłe. Komory, w których nastąpi spadek ciśnienia powyżej 5%, są odrzucane i wysyłane do ponownej kontroli szwów.
@@ -185,7 +185,7 @@ production_flow:
       description: Końcowa kontrola wizualna i funkcjonalna. Wady powierzchni, jednolitość kolorów, weryfikacja etykiet/KODÓW BIN, integralność opakowania oraz kompletność akcesoriów. Jednostki są pakowane próżniowo, pakowane w pudełka i układane na paletach do załadunku kontenerowego.
       qc_check: Pełna inspekcja wizualna, lista kontrolna akcesoriów według SKU, test upuszczenia opakowania (1 m, losowa próbka), weryfikacja skanowania etykiety/kodu kreskowego
       qc_threshold: AQL 2,5 dla wad poważnych, AQL 4,0 dla wad drobnych. Zerowa tolerancja dla wad zagrażających bezpieczeństwu. 100% jednostek poddanych inspekcji wizualnej
-      responsibility: Końcowy zespół kontroli jakości (4 inspektorów)   Kierownik zespołu pakowania
+      responsibility: Końcowy zespół kontroli jakości (4 inspektorów) + Kierownik zespołu pakowania
 workforce:
   tagline: Nasi Ludzie
   title: Siła robocza i doświadczenie
@@ -235,7 +235,7 @@ material_traceability:
       source: Japoński dostawca
       certified: ISO 9001, REACH
     - material: Tkanina drop-stitch
-      source: Tkactwo wewnętrzne   zewnętrzny partner
+      source: Tkactwo wewnętrzne + zewnętrzny partner
       certified: Wewnętrzna kontrola jakości dostawcy ISO 9001
     - material: Zawory i sprzęt
       source: Chińscy dostawcy OEM

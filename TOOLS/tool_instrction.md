@@ -39,7 +39,7 @@ TOOLS/
 │   └── _lang-{lang}.cjs ×20    # 各语言 UI 字符串键值数据（累积式，随批次增长）
 ├── i18n-merge/warning-cleanup/  # check:i18n 存量 warning 批量清零（150 → 0）
 │   ├── _patch-warnings.cjs     # 补丁器：--dry 试跑 / --patch 应用（幂等；rep 已存在即跳过，含 rep⊃find 的插入式 op）
-│   └── _ops-data-01..18.cjs    # 475 个修复 op 分片：EN 令牌删除恢复、fi/quality 等整文件乱码、icon_bg 误译、FAQ 复制粘贴答案、卡片旧文案/EN 泄漏、疤痕修复等
+│   └── _ops-data-01..23.cjs    # 646 个修复 op 分片：EN 令牌删除恢复、fi/quality 等整文件乱码、icon_bg 误译、FAQ 复制粘贴答案、卡片旧文案/EN 泄漏、机械疤痕/令牌恢复/品牌拼写/列表分隔符等债务清理
 ├── eslint/                 # 代码规范批量清理工具
 │   └── strip-explicit-any.cjs  # 批量移除 .astro 回调参数冗余 `: any` 注解（支持 --dry 试跑）
 ├── i18n-fix/               # i18n-config.json 修复工具
@@ -151,14 +151,15 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ### 8. i18n-merge/warning-cleanup/ — check:i18n 存量 warning 批量清零
 
-一次性清零 `npm run check:i18n` 的 150 条存量 warning（结构 81 + 未翻译 69），修复 db928cfa/05bc52de 两轮 AI 翻译损坏链遗留的系统性内容问题。475 个 op 按 18 个分片组织，引擎按分片号加载、按文件分组、按数组顺序在内存应用（`--dry` 同样模拟完整应用链，因此 op 间有依赖时结果与 `--patch` 一致）。
+一次性清零 `npm run check:i18n` 的 150 条存量 warning（结构 81 + 未翻译 69），修复 db928cfa/05bc52de 两轮 AI 翻译损坏链遗留的系统性内容问题。475 个 op 按 18 个分片组织；后续债务清理批次追加 19–23（171 op，共 646）。引擎按分片号加载、按文件分组、按数组顺序在内存应用（`--dry` 同样模拟完整应用链，因此 op 间有依赖时结果与 `--patch` 一致）。
 
-| 文件                   | 用途                                                                                                                                                                                                                            | 用法（仓库根）                                                                          |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| `_patch-warnings.cjs`  | 补丁器：加载全部 `_ops-data-\d+.cjs` 分片，对 `{ f, find, rep, n? }` 执行全文替换。幂等规则：`rep` 已存在（含 `rep ⊃ find` 的插入式 op）即视为已应用并跳过。                                                                    | `node TOOLS/i18n-merge/warning-cleanup/_patch-warnings.cjs --dry` 试跑 / `--patch` 应用 |
-| `_ops-data-01..18.cjs` | 修复 op 分片（475 个）：01-06 EN 令牌/双空格/空括号疤痕与设备名泄漏；07-10 fi 整文件乱码；11-12 FAQ 复制粘贴答案；13 BSCI/交期；14 杂项（关键词/地址/国家列表/ja mojibake）；15 icon_bg 误译；16-18 factory 卡片文案/MOQ/交期。 | 数据文件，勿直接运行                                                                    |
+| 文件                   | 用途                                                                                                                                                                                                                                                                                       | 用法（仓库根）                                                                          |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| `_patch-warnings.cjs`  | 补丁器：加载全部 `_ops-data-\d+.cjs` 分片，对 `{ f, find, rep, n? }` 执行全文替换。幂等规则：`rep` 已存在（含 `rep ⊃ find` 的插入式 op）即视为已应用并跳过。                                                                                                                               | `node TOOLS/i18n-merge/warning-cleanup/_patch-warnings.cjs --dry` 试跑 / `--patch` 应用 |
+| `_ops-data-01..18.cjs` | 修复 op 分片（475 个）：01-06 EN 令牌/双空格/空括号疤痕与设备名泄漏；07-10 fi 整文件乱码；11-12 FAQ 复制粘贴答案；13 BSCI/交期；14 杂项（关键词/地址/国家列表/ja mojibake）；15 icon_bg 误译；16-18 factory 卡片文案/MOQ/交期。                                                            | 数据文件，勿直接运行                                                                    |
+| `_ops-data-19..23.cjs` | 债务清理批次（171 op）：19 机械疤痕（EN 源头 ISO 9001/UKCA,FCC 令牌恢复、rf-welding 空括号、`''` 疤、factory role 列表 3 空格→" + "）；20 双空格折叠（factory-process/tourism 数字印刷）；21 各语言令牌恢复 + ar "?²"→"م²"；22 ar أكوافارير→أفارير（73 处）；23 solutions 套餐列表分隔符。 | 数据文件，勿直接运行                                                                    |
 
-处理后校验：`node TOOLS/i18n-merge/warning-cleanup/_patch-warnings.cjs --dry` 应为 `applied: 0, already-applied: 475, errors: 0`；`npm run check:i18n` 应 0 issue/0 warning；`npm run build` 回归（页面 YAML 改动会重新生成 `src/i18n/generated/pages/*`）。
+处理后校验：`node TOOLS/i18n-merge/warning-cleanup/_patch-warnings.cjs --dry` 应为 `applied: 0, already-applied: 646, errors: 0`；`npm run check:i18n` 应 0 issue/0 warning；`npm run build` 回归（页面 YAML 改动会重新生成 `src/i18n/generated/pages/*`）。
 
 教训（已修入引擎）：早期版本对 `rep ⊃ find` 的插入式 op（如 `keywords:\n - A` → 追加 `- B`）二次运行会重复插入；`it icon_bg: blu → blue` 这类 find 是 rep 前缀的 op 会把 `blue` 再改成 `bluee`。现引擎先查 `rep` 是否已存在再决定应用，`--dry` 全绿后 `--patch` 安全。
 

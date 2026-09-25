@@ -173,7 +173,7 @@ production_flow:
       description: "Le barche vengono trasferite all'assemblaggio finale dove tutti i componenti vengono uniti: scafo, tubi, valvole installate, D-ring, maniglie, scatole per pinne e fissaggio del sacco da trasporto. Ogni unità segue una lista di controllo di assemblaggio a 100 punti."
       qc_check: Approvazione della checklist a 100 punti per unità, test della funzione della valvola (10 cicli apertura/chiusura), verifica della coppia dell'hardware, ispezione visiva
       qc_threshold: 'Politica di zero difetti su elementi critici per la sicurezza (valvole, anelli a D, maniglie). Difetti cosmetici minori: AQL 2,5 (ISO 2859)'
-      responsibility: Capo squadra di assemblaggio   controllo qualità di linea
+      responsibility: Capo squadra di assemblaggio + controllo qualità di linea
     - stage: Cinque
       title: Verifica della Pressione e Controllo Qualità
       description: Ogni camera viene gonfiata a 1,25× la pressione nominale (tipicamente 20–25 PSI) e mantenuta per 24–48 ore. I sensori di pressione registrano continuamente. Le camere che superano il 5% di perdita di pressione vengono respinte e inviate per una nuova ispezione delle cuciture.
@@ -185,7 +185,7 @@ production_flow:
       description: Ispezione finale visiva e funzionale. Difetti della superficie, uniformità del colore, verifica dell'etichetta/BIN, integrità dell'imballaggio e completezza degli accessori. Le unità sono sottovuoto, confezionate in scatole e palletizzate per il carico sul container.
       qc_check: Ispezione visiva completa, checklist degli accessori per SKU, test di caduta del confezionamento (1 m, campione casuale), verifica della scansione dell'etichetta/codice a barre
       qc_threshold: AQL 2,5 per difetti gravi, AQL 4,0 per difetti minori. Tolleranza zero per difetti di sicurezza. Il 100% delle unità viene ispezionato visivamente
-      responsibility: Team di QC finale (4 ispettori)   Capo squadra imballaggio
+      responsibility: Team di QC finale (4 ispettori) + Capo squadra imballaggio
 workforce:
   tagline: La Nostra Gente
   title: Forza lavoro e competenze
@@ -235,7 +235,7 @@ material_traceability:
       source: Fornitore giapponese
       certified: ISO 9001, REACH
     - material: Tessuto a punto caduto
-      source: Tessitura interna   partner esterno
+      source: Tessitura interna + partner esterno
       certified: Controllo qualità interno fornitore ISO 9001
     - material: Valvole e Hardware
       source: Fornitori OEM cinesi
@@ -265,6 +265,6 @@ qc_dashboard:
       detail: Valvole, anelli a D, cuciture, galleggiabilità
 process_cta:
   title: Vedi il nostro processo produttivo
-  desc: Segui un''imbarcazione attraverso ogni fase della produzione —dalla materia prima all'imbarcazione pronta per il mare.
+  desc: Segui un'imbarcazione attraverso ogni fase della produzione —dalla materia prima all'imbarcazione pronta per il mare.
   label: Vedi processo produttivo →
   link: /factory/process

@@ -403,7 +403,15 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 `scripts/check-translations.mjs` 新增三处合法豁免，语义边界要守住：① 结构比较前剥离 `meta.keywords`（SEO 关键词密度按语言浮动是合法的，但**只豁免 keywords，其余叶子路径仍严格**）；② `shouldTranslate` 排除 kebab-case slug（`/^[a-z0-9]+(?:-[a-z0-9]+)+$/`）、4 个虚构客户公司名 Set、认证/标准 token 逗号列表（`isCertificationList`，token 全部来自 `UNTRANSLATABLE_TOKENS` 白名单）。**新增豁免必须逐条对应真实 warning，不许"先加宽规则再找理由"。**
 
-遗留内容债务（确认不修，下次全量内容审计再处理）：EN quality L26/L32 重复 desc；fr b2b_moq / q0 "5–50 unités" / q4 缩短；ru q0/q3 缩短；ja/ko academy 标题；fr brand taglines；fi quality 干净区 L147-265 与 L12；da/ro/th safety desc 第二句；cs/da/ro stats[0] 互换；sv stats[0] "m2"；ws2 整卡漂移（de/es/pt/it/ar/ja/el eq3 旧 fiberglass）；sv/no fotokvalitets；es/de factory stats[2]；ar L123/L129；de/es/pt/it/nl/pl 拼写数字；el factory oem cases 截断；el tagline "ΣΣΕ"；أكوافارير 73 处；rf-welding "()" 约 18 语言；commercial-workboats 等 DBLSP；it `''` 疤 factory 外 49 处 + tr 3 处；SPDOT 38 处；sol-dist 区域名 EN（fr 已译，漂移）；card3 shipping "50 Länder/países/paesi" vs EN "50+ countries" 数字漂移；de/es/pt card2 desc 丢 "auf jedem Boot/en cada barco" 尾句漂移。
+遗留内容债务清单状态（2026-09 分片 19–23 批次后）：
+
+**已清零（分片 19–23，171 op）**：أكوافارير→أفارير 73 处（8 文件）；rf-welding "()" 16 语言+EN（ko:34 因整行乱码延后）；EN 源头令牌恢复（commercial-workboats/tourism-recreation/maritime-safety-defense/trust 的 ISO 9001、UKCA, FCC 被删；factory-equipment "50 kN,  / ASTM D751"；factory-process 双空格）+ 各语言镜像令牌恢复（~40 op）；it `''` 疤（afarer-story/factory）+ tr（afarer-story）；SPDOT 全部（句号前空格）；factory/solutions-paddle-clubs/solutions-resorts-hotels role/套餐列表 2–3 空格及单空格分隔符 → " + "（EN 惯例）；factory-process/tourism-recreation 数字印刷双空格折叠；ar/afarer-story + ar/trust "?²" mojibake → "م²"；ko/trust "12,000m²"→"12,000 m²"。
+
+**仍遗留（下次内容审计）**：EN quality L26/L32 重复 desc；fr b2b_moq / q0 "5–50 unités" / q4 缩短；ru q0/q3 缩短；ja/ko academy 标题；fr brand taglines；fi quality 干净区 L147-265 与 L12；da/ro/th safety desc 第二句；cs/da/ro stats[0] 互换；sv stats[0] "m2"；ws2 整卡漂移（de/es/pt/it/ar/ja/el eq3 旧 fiberglass）；sv/no fotokvalitets；es/de factory stats[2]；ar L123/L129；de/es/pt/it/nl/pl 拼写数字；el factory oem cases 截断；el tagline "ΣΣΕ"；el/commercial-workboats:25 缺第二句（UKCA, FCC）；sol-dist 区域名 EN（fr 已译，漂移）；card3 shipping "50 Länder/países/paesi" vs EN "50+ countries" 数字漂移；de/es/pt card2 desc 丢尾句漂移；el/ar factory "Cutting workshop lead" 误译（"Χρόνος εκκίνησης"/"مهلة"）；**ko/research-drop-stitch + research-sup-thickness（含 \uFEFF）+ rf-welding:34 整文件/整行韩语乱码，需韩语专修分片**；**em dash 空格风格不一（约 1,532 处 "word —word" 空格前不空格后，含 EN 根，初版提交即存在，属作者风格而非损坏 —— 是否全站规范化待定）。**
+
+#### L18. 疤痕扫描必须覆盖列表行；损坏链同样命中 EN 根文件（2026-09 分片 19–23）
+
+三点教训：① **扫描正则只匹配 `key: value` 会漏掉 `- item` 列表行**——分片 23 的 solutions-paddle-clubs / resorts-hotels 套餐列表分隔符疤（2/3 空格及单空格丢失 " + "）就是列表行漏扫后补查发现的；scanner 必须同时匹配 `/^\s*(\w+:|-\s)/`。② **损坏链（db928cfa）不只命中翻译，EN 根文件同样被删令牌**（"Our factory is  certified"、"50 kN,  / ASTM D751"），且 initial commit 即已损坏 → git 历史里没有干净版本，只能依据站点上下文恢复（ISO 9001 质量体系、UKCA+FCC 配对、"ISO & CE-certified" 互文）；翻译镜像恢复时按各语言惯用复合词形（de "ISO 9001-zertifiziert"、fi "ISO 9001 -sertifioitu"、ru "по ISO 9001"）。③ prettier 会重排新写的 `_ops-data-*.cjs`（不改字符串内容），重排后必须重跑 `--dry` 确认 646 op 全部 still-pass。
 
 ---
 

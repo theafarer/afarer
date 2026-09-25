@@ -171,7 +171,7 @@ production_flow:
       description: 'Boote gehen zur Endmontage, wo alle Komponenten zusammengefügt werden: Rumpf, Tuben, installierte Ventile, D-Ringe, Griffe, Finnenkästen und Tragetaschenbefestigung. Jede Einheit durchläuft eine 100-Punkte-Montagecheckliste.'
       qc_check: 100-Punkte-Checkliste pro Einheit, Ventilfunktionsprüfung (10 Öffnungs-/Schließzyklen), Überprüfung des Hardware-Drehmoments, Sichtprüfung
       qc_threshold: 'Null-Fehler-Politik bei sicherheitskritischen Teilen (Ventile, D-Ringe, Griffe). Geringfügige kosmetische Mängel: AQL 2,5 (ISO 2859)'
-      responsibility: Leiter Montageteam   Linien-QC
+      responsibility: Leiter Montageteam + Linien-QC
     - stage: Fünf
       title: Druckprüfung & Qualitätskontrolle
       description: Jede Kammer wird auf das 1,25-fache des Nenn- drucks aufgepumpt (typischerweise 20–25 PSI) und für 24–48 Stunden gehalten. Drucksensoren protokollieren kontinuierlich. Kammern, die einen Druckabfall von mehr als 5 % aufweisen, werden abgelehnt und zur Nahtnachprüfung geschickt.
@@ -183,7 +183,7 @@ production_flow:
       description: Endkontrolle der visuellen und funktionalen Eigenschaften. Oberflächenmängel, Farbgleichmäßigkeit, Etiketten-/BIN-Überprüfung, Verpackungsintegrität und Vollständigkeit des Zubehörs. Die Einheiten sind vakuumverpackt, in Kartons verpackt und für den Containertransport auf Paletten gestellt.
       qc_check: Vollständige Sichtprüfung, Zubehör-Checkliste pro SKU, Verpackungs-Falltest (1 m, Zufallsprobe), Etiketten-/Barcode-Scan-Überprüfung
       qc_threshold: AQL 2,5 für Hauptmängel, AQL 4,0 für Nebelmängel. Null Toleranz bei Sicherheitsmängeln. 100% der Einheiten werden visuell überprüft
-      responsibility: Endkontrollteam (4 Prüfer)   Verpackungsteamleiter
+      responsibility: Endkontrollteam (4 Prüfer) + Verpackungsteamleiter
 workforce:
   tagline: Unser Volk
   title: Belegschaft & Fachwissen
@@ -233,7 +233,7 @@ material_traceability:
       source: Japanischer Lieferant
       certified: ISO 9001, REACH
     - material: Drop-Stitch-Gewebe
-      source: Interne Weberei   externer Partner
+      source: Interne Weberei + externer Partner
       certified: Interne Qualitätskontrolle Lieferant ISO 9001
     - material: Ventile & Hardware
       source: Chinesische OEM-Lieferanten

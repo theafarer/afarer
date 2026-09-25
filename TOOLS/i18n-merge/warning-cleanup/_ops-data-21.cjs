@@ -1,0 +1,268 @@
+// Shard 21 — 翻译令牌恢复 (2026-09): EN 源头被删的 ISO 9001 / UKCA, FCC 令牌在各语言镜像中的恢复
+// 依据: EN 已恢复为 "ISO 9001 certified" / "including UKCA, FCC"; 各语言按本语惯用表达插入
+module.exports = [
+  // === commercial-workboats 认证问答 (ISO 9001 + UKCA, FCC) ===
+  {
+    f: 'src/data/pages/ar/commercial-workboats.yaml',
+    find: 'مصنعنا معتمد . الشهادات التجارية بما في ذلك  متاحة عند الطلب.',
+    rep: 'مصنعنا معتمد ISO 9001. الشهادات التجارية بما في ذلك UKCA وFCC متاحة عند الطلب.',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/cs/commercial-workboats.yaml',
+    find: 'Naše továrna je  certifikovaná. Komerční certifikace včetně  jsou',
+    rep: 'Naše továrna je certifikovaná ISO 9001. Komerční certifikace včetně UKCA, FCC jsou',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/da/commercial-workboats.yaml',
+    find: 'Vores fabrik er  certificeret. Kommercielle certificeringer, herunder , fås',
+    rep: 'Vores fabrik er ISO 9001-certificeret. Kommercielle certificeringer, herunder UKCA, FCC, fås',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/de/commercial-workboats.yaml',
+    find: 'Unser Werk ist  zertifiziert. Kommerzielle Zertifikate wie  sind',
+    rep: 'Unser Werk ist ISO 9001-zertifiziert. Kommerzielle Zertifikate wie UKCA, FCC sind',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/el/commercial-workboats.yaml',
+    find: 'Το εργοστάσιό μας είναι πιστοποιημένο .',
+    rep: 'Το εργοστάσιό μας είναι πιστοποιημένο ISO 9001.',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/es/commercial-workboats.yaml',
+    find: 'Nuestra fábrica está certificada . Certificaciones comerciales incluyendo  disponibles',
+    rep: 'Nuestra fábrica está certificada ISO 9001. Certificaciones comerciales incluyendo UKCA, FCC disponibles',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/fi/commercial-workboats.yaml',
+    find: 'Tehtaamme on  -sertifioitu. Kaupalliset sertifikaatit, kuten , saatavissa',
+    rep: 'Tehtaamme on ISO 9001 -sertifioitu. Kaupalliset sertifikaatit, kuten UKCA, FCC, saatavissa',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/it/commercial-workboats.yaml',
+    find: 'La nostra fabbrica è certificata . Certificazioni commerciali come  disponibili',
+    rep: 'La nostra fabbrica è certificata ISO 9001. Certificazioni commerciali come UKCA, FCC disponibili',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/nl/commercial-workboats.yaml',
+    find: 'Onze fabriek is  gecertificeerd. Commerciële certificeringen zoals  beschikbaar',
+    rep: 'Onze fabriek is ISO 9001-gecertificeerd. Commerciële certificeringen zoals UKCA, FCC beschikbaar',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/no/commercial-workboats.yaml',
+    find: 'Fabrikken vår er  sertifisert. Kommersielle sertifiseringer inkludert  tilgjengelig',
+    rep: 'Fabrikken vår er ISO 9001-sertifisert. Kommersielle sertifiseringer inkludert UKCA, FCC tilgjengelig',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/pl/commercial-workboats.yaml',
+    find: 'Nasza fabryka jest certyfikowana . Certyfikaty komercyjne, w tym , dostępne',
+    rep: 'Nasza fabryka jest certyfikowana ISO 9001. Certyfikaty komercyjne, w tym UKCA, FCC, dostępne',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/pt/commercial-workboats.yaml',
+    find: 'Nossa fábrica é certificada . Certificações comerciais incluindo  disponíveis',
+    rep: 'Nossa fábrica é certificada ISO 9001. Certificações comerciais incluindo UKCA, FCC disponíveis',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/ro/commercial-workboats.yaml',
+    find: 'Fabrica noastră este  certificată. Certificări comerciale, inclusiv , disponibile',
+    rep: 'Fabrica noastră este certificată ISO 9001. Certificări comerciale, inclusiv UKCA, FCC, disponibile',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/ru/commercial-workboats.yaml',
+    find: 'Наша фабрика сертифицирована по . Коммерческие сертификаты, включая , доступны',
+    rep: 'Наша фабрика сертифицирована по ISO 9001. Коммерческие сертификаты, включая UKCA, FCC, доступны',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/sv/commercial-workboats.yaml',
+    find: 'Vår fabrik är  certifierad. Kommersiella certifieringar inklusive  finns',
+    rep: 'Vår fabrik är ISO 9001-certifierad. Kommersiella certifieringar inklusive UKCA, FCC finns',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/th/commercial-workboats.yaml',
+    find: 'โรงงานของเราได้รับการรับรอง   ใบรับรองเชิงพาณิชย์รวมถึง   มีให้ตามคำขอ',
+    rep: 'โรงงานของเราได้รับการรับรอง ISO 9001 ใบรับรองเชิงพาณิชย์รวมถึง UKCA และ FCC มีให้ตามคำขอ',
+    n: 1,
+  },
+  // === tourism-recreation 认证问答 (仅缺 ISO 9001; UKCA, FCC 已在) ===
+  {
+    f: 'src/data/pages/ar/tourism-recreation.yaml',
+    find: 'مصنعنا معتمد . UKCA',
+    rep: 'مصنعنا معتمد ISO 9001. UKCA',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/cs/tourism-recreation.yaml',
+    find: 'Naše továrna je certifikována .',
+    rep: 'Naše továrna je certifikována ISO 9001.',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/da/tourism-recreation.yaml',
+    find: 'Vores fabrik er  certificeret. UKCA',
+    rep: 'Vores fabrik er ISO 9001-certificeret. UKCA',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/de/tourism-recreation.yaml',
+    find: 'Unser Werk ist  zertifiziert. UKCA',
+    rep: 'Unser Werk ist ISO 9001-zertifiziert. UKCA',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/es/tourism-recreation.yaml',
+    find: 'Nuestra fábrica está certificada . UKCA',
+    rep: 'Nuestra fábrica está certificada ISO 9001. UKCA',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/fi/tourism-recreation.yaml',
+    find: 'Tehtaamme on  -sertifioitu. UKCA',
+    rep: 'Tehtaamme on ISO 9001 -sertifioitu. UKCA',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/it/tourism-recreation.yaml',
+    find: 'La nostra fabbrica è certificata . Certificazioni UKCA',
+    rep: 'La nostra fabbrica è certificata ISO 9001. Certificazioni UKCA',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/nl/tourism-recreation.yaml',
+    find: 'Onze fabriek is  gecertificeerd. UKCA',
+    rep: 'Onze fabriek is ISO 9001-gecertificeerd. UKCA',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/no/tourism-recreation.yaml',
+    find: 'Fabrikken vår er  sertifisert. UKCA',
+    rep: 'Fabrikken vår er ISO 9001-sertifisert. UKCA',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/pt/tourism-recreation.yaml',
+    find: 'Nossa fábrica é certificada . UKCA',
+    rep: 'Nossa fábrica é certificada ISO 9001. UKCA',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/ro/tourism-recreation.yaml',
+    find: 'Fabrica noastră este  certificată. UKCA',
+    rep: 'Fabrica noastră este certificată ISO 9001. UKCA',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/ru/tourism-recreation.yaml',
+    find: 'Наша фабрика сертифицирована по . UKCA',
+    rep: 'Наша фабрика сертифицирована по ISO 9001. UKCA',
+    n: 1,
+  },
+  // === trust 设施描述 (ISO 9001 质量管理体系) ===
+  {
+    f: 'src/data/pages/ar/trust.yaml',
+    find: 'بمساحة 12,000 ?² تعمل تحت نظام إدارة جودة . كل',
+    rep: 'بمساحة 12,000 م² تعمل تحت نظام إدارة جودة ISO 9001. كل',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/cs/trust.yaml',
+    find: 'funguje pod  systémem řízení kvality',
+    rep: 'funguje pod systémem řízení kvality ISO 9001',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/de/trust.yaml',
+    find: 'arbeitet nach einem  Qualitätsmanagementsystem',
+    rep: 'arbeitet nach einem Qualitätsmanagementsystem gemäß ISO 9001',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/el/trust.yaml',
+    find: 'υπό σύστημα διαχείρισης ποιότητας .',
+    rep: 'υπό σύστημα διαχείρισης ποιότητας ISO 9001.',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/fi/trust.yaml',
+    find: 'toimii  -laadunhallintajärjestelmän alla',
+    rep: 'toimii ISO 9001 -laadunhallintajärjestelmän alla',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/it/trust.yaml',
+    find: 'sotto un sistema di gestione qualità .',
+    rep: 'sotto un sistema di gestione qualità ISO 9001.',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/ko/trust.yaml',
+    find: '12,000m² 시설은  품질 관리 시스템으로',
+    rep: '12,000 m² 시설은 ISO 9001 품질 관리 시스템으로',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/nl/trust.yaml',
+    find: 'werkt onder een  kwaliteitsmanagementsysteem',
+    rep: 'werkt onder een kwaliteitsmanagementsysteem volgens ISO 9001',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/no/trust.yaml',
+    find: 'opererer under et  kvalitetsstyringssystem',
+    rep: 'opererer under et kvalitetsstyringssystem i samsvar med ISO 9001',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/pt/trust.yaml',
+    find: 'sob um sistema de gestão da qualidade .',
+    rep: 'sob um sistema de gestão da qualidade ISO 9001.',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/ro/trust.yaml',
+    find: 'sub un sistem de management al calității .',
+    rep: 'sub un sistem de management al calității ISO 9001.',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/sv/trust.yaml',
+    find: 'arbetar under ett  kvalitetsledningssystem',
+    rep: 'arbetar under ett kvalitetsledningssystem enligt ISO 9001',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/th/trust.yaml',
+    find: 'ภายใต้ระบบการจัดการคุณภาพ  ทุกชุด',
+    rep: 'ภายใต้ระบบการจัดการคุณภาพ ISO 9001 ทุกชุด',
+    n: 1,
+  },
+  // === 其他认证行 ===
+  {
+    f: 'src/data/pages/ar/maritime-safety-defense.yaml',
+    find: 'مصنعنا معتمد  مع شهادة CE',
+    rep: 'مصنعنا معتمد ISO 9001 مع شهادة CE',
+    n: 1,
+  },
+  {
+    f: 'src/data/pages/fi/search-and-rescue.yaml',
+    find: 'Tehtaallamme on  -sertifiointi, ja kaikki',
+    rep: 'Tehtaallamme on ISO 9001 -sertifiointi, ja kaikki',
+    n: 1,
+  },
+  // === ar/afarer-story ?² mojibake → م² ===
+  { f: 'src/data/pages/ar/afarer-story.yaml', find: '12,000 ?²', rep: '12,000 م²', n: 5 },
+];

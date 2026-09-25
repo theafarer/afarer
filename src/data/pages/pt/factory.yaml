@@ -175,7 +175,7 @@ production_flow:
       description: 'Os barcos seguem para a montagem final, onde todos os componentes são unidos: casco, tubos, válvulas instaladas, anéis em D, alças, caixas de quilha e instalação da bolsa de transporte. Cada unidade segue uma lista de verificação de montagem de 100 pontos.'
       qc_check: Assinatura de verificação de checklist de 100 pontos por unidade, teste de função da válvula (10 ciclos de abrir/fechar), verificação de torque do hardware, inspeção visual
       qc_threshold: 'Política de zero defeito em itens críticos para segurança (válvulas, anéis em D, alças). Cosmético menor: AQL 2,5 (ISO 2859)'
-      responsibility: Líder de equipe de montagem   QC de linha
+      responsibility: Líder de equipe de montagem + QC de linha
     - stage: Cinco
       title: Testes de Pressão e Retenção de Qualidade
       description: Cada câmara é inflada para 1,25× a pressão nominal (tipicamente 20–25 PSI) e mantida por 24–48 horas. Sensores de pressão registram continuamente. Câmaras que excedem queda de pressão de 5% são rejeitadas e enviadas para reinspeção da costura.
@@ -187,7 +187,7 @@ production_flow:
       description: Inspeção visual e funcional final. Defeitos na superfície, consistência de cor, verificação de rótulo/BIN, integridade da embalagem e completude dos acessórios. As unidades são embaladas a vácuo, colocadas em caixas e paletizadas para carregamento em contêiner.
       qc_check: Inspeção visual completa, checklist de acessórios por SKU, teste de queda da embalagem (1 m, amostra aleatória), verificação de leitura de etiqueta/código de barras
       qc_threshold: AQL 2,5 para defeitos graves, AQL 4,0 para defeitos menores. Tolerância zero para defeitos de segurança. 100% das unidades inspecionadas visualmente
-      responsibility: Equipe final de QC (4 inspetores)   Líder da equipe de embalagem
+      responsibility: Equipe final de QC (4 inspetores) + Líder da equipe de embalagem
 workforce:
   tagline: Nosso Povo
   title: Força de Trabalho e Especialização
@@ -237,7 +237,7 @@ material_traceability:
       source: Fornecedor japonês
       certified: ISO 9001, REACH
     - material: Tecido de ponto solto
-      source: Tecelagem interna   parceiro externo
+      source: Tecelagem interna + parceiro externo
       certified: Fornecedor de CQ interno ISO 9001
     - material: Válvulas e Ferragens
       source: Fornecedores OEM chineses
