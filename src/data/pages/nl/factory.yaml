@@ -24,25 +24,25 @@ stats:
     label: Geschoolde werknemers
   - value: 15.000+
     label: Jaarlijks geproduceerde boten
-  - value: null
+  - value: ISO 9001
     label: Kwaliteit gecertificeerd
 intelligence_tagline: Fabrieksintelligentie
 intelligence_title: Verken Onze Fabricagemogelijkheden
 intelligence_cards:
   - title: Productiecapaciteit
     icon: C
-    icon_bg: blauw
-    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
+    icon_bg: blue
+    desc: Faciliteit van 12.000 m² die 15.000+ SUPs per jaar produceert op SUP-board- en veiligheidsuitrustingslijnen. 200+ medewerkers, 2 ploegen.
     metrics:
       - label: MOQ
-        value: 'SUP: 5-10 / SUP: 2-5'
+        value: 'SUP: 5–10'
       - label: Levertijd
-        value: 30-45 days
+        value: 30–45 dagen
     link: /factory/capacity
     link_label: Volledige capaciteitsdetails →
   - title: Kwaliteitslaboratorium & Testen
     icon: Q
-    icon_bg: groen
+    icon_bg: green
     desc: 'Onafhankelijk QC-lab met 4 testfasen: grondstoffinspectie (treksterkte, scheur, UV), 48u drukvasthouding bij 1,25x nominale druk, naadpelting en belasting-/balansverificatie op elke boot.'
     metrics:
       - label: Laboratoriumapparatuur
@@ -53,8 +53,8 @@ intelligence_cards:
     link_label: Labprocedures & apparatuur →
   - title: OEM/ODM-capaciteit
     icon: O
-    icon_bg: paars
-    desc: 'End-to-end OEM/ODM-diensten: aangepaste malontwerp, private-label verpakking, aangepaste buiskleuren, dek graphics (digitaal & zeefdruk), Hypalon-upgradeoptie en drop-ship logistiek.'
+    icon_bg: purple
+    desc: 'End-to-end OEM/ODM-diensten: aangepaste malontwerp, private-label verpakking, aangepaste boardkleuren, dekgraphics (digitaal & zeefdruk) en drop-ship logistiek.'
     metrics:
       - label: Certificeringen
         value: ISO 9001, BSCI, CE, REACH
@@ -70,13 +70,13 @@ workshops_section:
       description: Automatische CNC-snijmachines verwerken PVC, Hypalon en drop-stitch stoffen met submillimeterprecisie. Computergeoptimaliseerd nesten minimaliseert materiaalverspilling en zorgt dat elk paneel voldoet aan zijn maatspecificatie vóór het lassen.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: Buislassen & Heatsealen
-      description: Speciale laswerkplaats met heatseal-machines  en RF-dielektrische persen. Hetelucht heatsealers verbinden en versmelten PVC-buiskamers, terwijl RF-lassen hogesterkte-luchtdichte naden produceren die de  vereisten overtreffen.
+      description: Speciale laswerkplaats met heatseal-machines en RF-dielektrische persen. Hetelucht heatsealers verbinden en versmelten PVC-buiskamers, terwijl RF-lassen hogesterkte-luchtdichte naden produceren die de ISO 6185-vereisten overtreffen.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: SUP-rompproductie —Glasvezel
       description: SUP-bootrompen worden geproduceerd met handlamineren van glasvezel met polyester en vinylester harssystemen. Elke laag wordt met de hand gerold en vacuümgezakt voor consistente kwaliteit. Een gelcoat-spuitcabine zorgt voor een hoogglanzende, UV-bestendige maritieme afwerking.
       image: https://assets.afarer.com/images/afarer/factory/afarer-warehouse-storage.webp
     - title: SUP-printen & Decoratie
-      description: SUP-planken worden gedecoreerd met digitaal printen  voor fullcolour graphics en zeefdruk  voor logo's en herhalende patronen. Digitale printers produceren fotokwaliteit dekontwerpen, terwijl zeefdruk duurzame, levendige merktekens levert.
+      description: SUP-planken worden gedecoreerd met digitaal printen voor fullcolour graphics en zeefdruk voor logo's en herhalende patronen. Digitale printers produceren fotokwaliteit dekontwerpen, terwijl zeefdruk duurzame, levendige merktekens levert.
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp
     - title: Eindmontage & Tuigage
       description: Montagelijn waar glasvezelrompen en PVC-buizen worden samengevoegd, motoren worden gemonteerd, stuurinrichting en bediening worden aangesloten en elektrische systemen worden bedraad. Elke boot volgt een 100-punts montagechecklist die wordt afgetekend door de teamleider.
@@ -93,7 +93,7 @@ equipment_section:
     - name: Automatische PVC-snijmachine
       spec: CNC-gestuurd, 0,1 mm nauwkeurigheid
     - name: Heatseal-machine
-      spec: Hetelucht, 200°C–300 °C, voor buisverbinding
+      spec: Hetelucht, 200–300 °C, voor buisverbinding
     - name: RF-dielektrische laspers
       spec: 15 kW, luchtdicht naadlassen
     - name: Glasvezel handlamineer mallen
@@ -109,7 +109,7 @@ qc_section:
   steps:
     - step: Een
       title: Grondstoffenkeuring
-      desc: PVC, Hypalon en drop-stitch stoffen ondergaan trekproeven (), scheurpropagatie en UV-bestendigheidsverificatie voordat een partij in productie gaat.
+      desc: PVC, Hypalon en drop-stitch stoffen ondergaan trekproeven (ASTM D751), scheurpropagatie en UV-bestendigheidsverificatie voordat een partij in productie gaat.
     - step: Twee
       title: 48-uurs Luchtretentietest
       desc: Elke buiskamer wordt opgeblazen tot 125% van de nominale druk en 48 uur vastgehouden. Drukdaling onder 5% leidt automatisch tot afkeuring en naadherkeuring.
@@ -137,9 +137,9 @@ faq_section:
     - q: Wat is de minimale bestelhoeveelheid (MOQ) voor OEM opblaasbare SUP-planken?
       a: MOQ begint bij 5–10 eenheden voor standaard OEM-modellen. Aangepaste mallen en private-label projecten vereisen minimaal 200 eenheden, afhankelijk van de complexiteit. Proefbestellingen en voorbeeldruns zijn beschikbaar voor nieuwe merkintroducties.
     - q: Heeft afarer een BSCI-certificering?
-      a: Ja. Onze fabriek beschikt over een geldige BSCI sociale nalevingscertificering (auditrapport op verzoek beschikbaar). We hebben ook  voor kwaliteitsmanagement en alle producten hebben CE -certificering. REACH- en RoHS-nalevingsdocumentatie wordt bij elke OEM-zending geleverd.
+      a: Ja. Onze fabriek beschikt over een geldige BSCI sociale nalevingscertificering (auditrapport op verzoek beschikbaar). We hebben ook ISO 9001 voor kwaliteitsmanagement en alle producten hebben CE-certificering. REACH- en RoHS-nalevingsdocumentatie wordt bij elke OEM-zending geleverd.
     - q: Wat is de typische levertijd voor een OEM-bestelling?
-      a: Ja. Onze fabriek beschikt over een geldige BSCI sociale nalevingscertificering (auditrapport op verzoek beschikbaar). We hebben ook  voor kwaliteitsmanagement en alle producten hebben CE -certificering. REACH- en RoHS-nalevingsdocumentatie wordt bij elke OEM-zending geleverd.
+      a: De standaardlevertijd is 30–45 dagen na bevestigde order en aanbetaling voor serie-OEM-productie. De ontwikkeling van aangepaste mallen voegt 15–20 dagen voor gereedschapsbouw toe. Versnelde productie is beschikbaar voor dringende orders en seizoenspieken. Prototype-monsters worden doorgaans binnen 15–20 dagen verzonden.
     - q: Kunt u FOB Qingdao of CIF naar onze haven verzenden?
       a: Ja. We verzenden FOB Qingdao, CIF naar grote wereldhavens en DDP voor gekwalificeerde partners. Ons logistieke team beheert containerboekingen, exportdocumentatie en douaneafhandeling. We verzenden naar 50+ landen in de EU, VS, AU en Azië.
 b2b_moq: 'Standaard MOQ: 5–10 eenheden per model (SUP/kajak/drop-stitch). SUP MOQ: 2–5 eenheden. Proefbestellingen welkom voor nieuwe samenwerkingen.'

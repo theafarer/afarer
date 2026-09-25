@@ -31,18 +31,18 @@ intelligence_title: Entdecken Sie unsere Fertigungsmöglichkeiten
 intelligence_cards:
   - title: Produktionskapazität
     icon: C
-    icon_bg: blau
-    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
+    icon_bg: blue
+    desc: 12.000 m² Anlage mit Produktion von 15.000+ SUPs/Jahr über SUP-Board- und Sicherheitsausrüstungslinien. 200+ Mitarbeiter, 2 Schichten.
     metrics:
       - label: Mindestbestellmenge
-        value: 'SUP: 5-10 / SUP: 2-5'
+        value: 'SUP: 5–10'
       - label: Lieferzeit
-        value: 30-45 days
+        value: 30–45 Tage
     link: /factory/capacity
     link_label: Kapazitätsdetails →
   - title: Qualitätslabor & Prüfung
     icon: Q
-    icon_bg: grün
+    icon_bg: green
     desc: 'Unabhängiges QS-Labor mit 4 Prüfstufen: Rohmaterialprüfung (Zug, Weiterreiß, UV), 48h Druckhaltetest bei 1,25x Nenndruck, Nahtschältest und Last-/Gleichgewichtsprüfung.'
     metrics:
       - label: Laborausrüstung
@@ -53,8 +53,8 @@ intelligence_cards:
     link_label: Labormethoden & Ausrüstung →
   - title: OEM/ODM-Fähigkeit
     icon: O
-    icon_bg: lila
-    desc: 'End-to-End-OEM/ODM-Services: kundenspezifisches Formendesign, Private-Label-Verpackung, individuelle Schlauchfarben, Deckgrafiken (Digital- & Siebdruck), Hypalon-Upgrade und Drop-Ship-Logistik.'
+    icon_bg: purple
+    desc: 'End-to-End-OEM/ODM-Services: kundenspezifisches Formendesign, Private-Label-Verpackung, individuelle Boardfarben, Deckgrafiken (Digital- & Siebdruck) und Drop-Ship-Logistik.'
     metrics:
       - label: Zertifizierungen
         value: ISO 9001, BSCI, CE, REACH
@@ -70,13 +70,13 @@ workshops_section:
       description: Automatische CNC-Schneidemaschinen bearbeiten PVC, Hypalon und Drop-Stitch-Gewebe mit submillimetergenauer Präzision. Computeroptimierte Verschachtelung minimiert Materialabfall und stellt sicher, dass jede Platte vor dem Schweißen ihre Maßvorgaben erfüllt.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: Schlauchschweißen & Heißsiegeln
-      description: Spezielle Schweißwerkstatt mit Heißsiegelmaschinen  und HF-Dielektrikumspressen. Heißluftschweißgeräte verbinden und verschmelzen PVC-Schlauchkammern, während HF-Schweißungen hochfeste luftdichte Nähte erzeugen, die die  Anforderungen übertreffen.
+      description: Spezielle Schweißwerkstatt mit Heißsiegelmaschinen und HF-Dielektrikumspressen. Heißluftschweißgeräte verbinden und verschmelzen PVC-Schlauchkammern, während HF-Schweißungen hochfeste luftdichte Nähte erzeugen, die die ISO 6185-Anforderungen übertreffen.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: SUP-Rumpfproduktion —Glasfaser
       description: SUP-Bootsrümpfe werden mittels Handlaminier-Glasfaserformung mit Polyester- und Vinylesterharzsystemen hergestellt. Jede Schicht wird von Hand gerollt und vakuumverpackt für gleichbleibende Qualität. Die Gelcoat-Spritzkabine sorgt für eine hochglänzende, UV-beständige Marineoberfläche.
       image: https://assets.afarer.com/images/afarer/factory/afarer-warehouse-storage.webp
     - title: SUP-Druck & Dekoration
-      description: SUP-Boards werden mit Digitaldruck  für Vollfarbgrafiken und Siebdruck  für Logos und sich wiederholende Muster dekoriert. Digitaldrucker produzieren fotorealistische Deckdesigns, während Siebdruck haltbare, lebendige Markenzeichen liefert.
+      description: SUP-Boards werden mit Digitaldruck für Vollfarbgrafiken und Siebdruck für Logos und sich wiederholende Muster dekoriert. Digitaldrucker produzieren fotorealistische Deckdesigns, während Siebdruck haltbare, lebendige Markenzeichen liefert.
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp
     - title: Endmontage & Rigging
       description: Montagelinie, in der Glasfaser-Rümpfe und PVC-Schläuche verbunden, Motoren montiert, Lenkung und Steuerung angeschlossen und elektrische Systeme verdrahtet werden. Jedes Boot folgt einer 100-Punkte-Montagecheckliste, die vom Teamleiter abgezeichnet wird.
@@ -93,7 +93,7 @@ equipment_section:
     - name: Automatische PVC-Schneidemaschine
       spec: CNC-gesteuert, 0,1 mm Genauigkeit
     - name: Heißsiegelmaschine
-      spec: Heißluft, 200 °C–300 °C, für Schlauchverbindung
+      spec: Heißluft, 200–300 °C, für Schlauchverbindung
     - name: HF-Dielektrikumsschweißpresse
       spec: 15 kW, luftdichte Nahtschweißung
     - name: Glasfaser-Handlaminierformen
@@ -109,7 +109,7 @@ qc_section:
   steps:
     - step: Eins
       title: Rohmaterialprüfung
-      desc: PVC, Hypalon und Drop-Stitch-Gewebe werden vor dem Produktionseinsatz einer Zugprüfung (), Weiterreißprüfung und UV-Beständigkeitsprüfung unterzogen.
+      desc: PVC, Hypalon und Drop-Stitch-Gewebe werden vor dem Produktionseinsatz einer Zugprüfung (ASTM D751), Weiterreißprüfung und UV-Beständigkeitsprüfung unterzogen.
     - step: Zwei
       title: 48-Stunden-Luftdichtheitstest
       desc: Jede Schlauchkammer wird auf 125 % des Nenndrucks aufgepumpt und 48 Stunden gehalten. Ein Druckabfall unter 5 % löst automatische Ablehnung und Nahtnachprüfung aus.
@@ -137,12 +137,12 @@ faq_section:
     - q: Wie hoch ist die Mindestbestellmenge (MOQ) für OEM-aufblasbare SUP-Boards?
       a: Die MOQ beginnt bei 5–10 Einheiten für Standard-OEM-Modelle. Kundenspezifische Formen und Private-Label-Projekte erfordern je nach Komplexität mindestens 200 Einheiten. Probebestellungen und Musterläufe sind für neue Marken erhältlich.
     - q: Besitzt afarer eine BSCI-Zertifizierung?
-      a: Ja. Unser Werk unterhält eine gültige BSCI-Social-Compliance-Zertifizierung (Prüfbericht auf Anfrage erhältlich). Wir besitzen auch  für Qualitätsmanagement und alle Produkte tragen die CE-Zertifizierung . REACH- und RoHS-Konformitätsdokumentation wird mit jeder OEM-Sendung bereitgestellt.
+      a: Ja. Unser Werk unterhält eine gültige BSCI-Social-Compliance-Zertifizierung (Prüfbericht auf Anfrage erhältlich). Wir besitzen auch ISO 9001 für Qualitätsmanagement und alle Produkte tragen die CE-Zertifizierung. REACH- und RoHS-Konformitätsdokumentation wird mit jeder OEM-Sendung bereitgestellt.
     - q: Wie ist die typische Lieferzeit für einen OEM-Auftrag?
-      a: Ja. Unser Werk unterhält eine gültige BSCI-Social-Compliance-Zertifizierung (Prüfbericht auf Anfrage erhältlich). Wir besitzen auch  für Qualitätsmanagement und alle Produkte tragen die CE-Zertifizierung . REACH- und RoHS-Konformitätsdokumentation wird mit jeder OEM-Sendung bereitgestellt.
+      a: Die Standardlieferzeit beträgt 30–45 Tage ab bestätigter Bestellung und Anzahlung für die OEM-Serienproduktion. Für die Entwicklung kundenspezifischer Formen kommen 15–20 Tage für den Werkzeugbau hinzu. Für dringende Aufträge und saisonale Spitzen ist eine beschleunigte Produktion verfügbar. Prototypenmuster werden in der Regel innerhalb von 15–20 Tagen versendet.
     - q: Können Sie FOB Qingdao oder CIF zu unserem Hafen versenden?
       a: Ja. Wir versenden FOB Qingdao, CIF zu großen globalen Häfen und DDP für qualifizierte Partner. Unser Logistikteam übernimmt Containerbuchung, Exportedokumentation und Zollabfertigung. Wir versenden in 50+ Länder in den Märkten EU, USA, AU und Asien.
-b2b_moq: 'Standard-Mindestbestellmenge (MOQ): 5–10 Einheiten pro Modell (SUP/SUP/Drop-Stitch). SUP-MOQ: 2–5 Einheiten. Probebestellungen für neue Partnerschaften willkommen.'
+b2b_moq: 'Standard-Mindestbestellmenge (MOQ): 5–10 Einheiten pro Modell (SUP/Drop-Stitch). SUP-MOQ: 2–5 Einheiten. Probebestellungen für neue Partnerschaften willkommen.'
 production_flow:
   tagline: Produktionsfluss
   title: Vom Material zum fertigen Boot

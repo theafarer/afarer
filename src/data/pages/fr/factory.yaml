@@ -16,13 +16,13 @@ intro:
   - En intégrant conception, ingénierie, prototypage, fabrication et tests sous un même toit, nous éliminons les inefficacités de la sous-traitance et maintenons un contrôle direct sur la qualité, les matériaux et les délais. Chaque SUP qui sort de notre atelier est construit par nos équipes, sur nos équipements, selon nos normes.
 stats:
   - value: 12 000 m²
-    label: Manufacturing floor
+    label: Surface de production
   - value: 200+
-    label: Skilled workers
+    label: Ouvriers qualifiés
   - value: 15 000+
-    label: SUPs produced annually
-  - value: null
-    label: Quality certified
+    label: SUP produits par an
+  - value: ISO 9001
+    label: Qualité certifiée
 intelligence_tagline: Intelligence Usine
 intelligence_title: Explorez nos Capacités de Fabrication
 intelligence_cards:
@@ -42,7 +42,7 @@ intelligence_cards:
     icon_bg: green
     desc: 'Laboratoire CQ indépendant avec 4 étapes : inspection matières premières, maintien de pression 48h à 1,25x, test de pelage des soudures et vérification charge/équilibre.'
     metrics:
-      - label: Lab Equipment
+      - label: Équipements de laboratoire
         value: Testeur traction, chambre température, bac fuite
       - label: Normes
         value: ISO 9001, CE, AS 1799
@@ -67,7 +67,7 @@ workshops_section:
       description: Les machines CNC traitent les tissus PVC, Hypalon et drop-stitch avec une précision submillimétrique. Le calepinage optimisé minimise les déchets et garantit les spécifications dimensionnelles.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: Soudure de Tubes et Thermoscellage
-      description: Atelier de soudure dédié avec machines de thermosoudure et presses diélectriques RF. Les thermosoudeuses à air chaud lient et fusionnent les chambres des tubes PVC, tandis que les soudures RF produisent des joints étanches à haute résistance qui dépassent les exigences.
+      description: Atelier de soudure dédié avec machines de thermosoudure et presses diélectriques RF. Les thermosoudeuses à air chaud lient et fusionnent les chambres des tubes PVC, tandis que les soudures RF produisent des joints étanches à haute résistance qui dépassent les exigences ISO 6185.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: Liaison du Cœur Drop-Stitch
       description: Les cœurs drop-stitch sont liés aux stratifiés PVC par thermolamination. Des milliers de fils polyester créent une structure rigide à 12-15 PSI. Les bandes de bord sont fusionnées en triple couche.
@@ -90,11 +90,11 @@ equipment_section:
     - name: Machine de découpe PVC automatique
       spec: Contrôle CNC, précision 0,1 mm
     - name: Machine de thermoscellage
-      spec: Air chaud, 200°C–600 °C, pour collage de tubes
+      spec: Air chaud, 200–300 °C, pour collage de tubes
     - name: Presse de soudure diélectrique RF
       spec: 15 kW, soudure de joints étanches
     - name: Presse de laminage cœur drop-stitch
-      spec: SUP cores up to 14 ft
+      spec: Cœurs SUP jusqu’à 14 ft
     - name: Imprimante numérique
       spec: Graphiques pont SUP couleur
     - name: Machine de sérigraphie
@@ -106,7 +106,7 @@ qc_section:
   steps:
     - step: '1'
       title: Inspection des Matières Premières
-      desc: Les tissus PVC, Hypalon et drop-stitch subissent des tests de traction, de propagation de déchirure et de vérification de résistance UV avant qu’un lot n’entre en production.
+      desc: Les tissus PVC, Hypalon et drop-stitch subissent des tests de traction (ASTM D751), de propagation de déchirure et de vérification de résistance UV avant qu’un lot n’entre en production.
     - step: '2'
       title: Test de Rétention d'Air 48 Heures
       desc: Chaque chambre est gonflée à 125 % de la pression nominale pendant 48h. Une chute >5 % déclenche un rejet et une réinspection.
@@ -134,9 +134,9 @@ faq_section:
     - q: Quel est le volume minimum de commande (MOQ) pour les planches SUP gonflables OEM ?
       a: Le MOQ commence à 5–50 unités pour les modèles OEM standard. Les moules personnalisés et les projets de marque de distributeur nécessitent un minimum de 200 unités selon la complexité. Les commandes d’essai et les séries d’échantillons sont disponibles pour les lancements de nouvelles marques.
     - q: afarer détient-il la certification BSCI ?
-      a: Oui. Notre usine maintient une certification de conformité sociale BSCI valide (rapport d'audit disponible sur demande). Nous détenons également la certification pour la gestion de la qualité et tous les produits portent la certification CE. La documentation de conformité REACH et RoHS est fournie avec chaque expédition OEM.
+      a: Oui. Notre usine maintient une certification de conformité sociale BSCI valide (rapport d'audit disponible sur demande). Nous détenons également la certification ISO 9001 pour la gestion de la qualité et tous les produits portent la certification CE. La documentation de conformité REACH et RoHS est fournie avec chaque expédition OEM.
     - q: Quel est le délai habituel pour une commande OEM ?
-      a: Oui. Notre usine maintient une certification de conformité sociale BSCI valide (rapport d'audit disponible sur demande). Nous détenons également la certification pour la gestion de la qualité et tous les produits portent la certification CE. La documentation de conformité REACH et RoHS est fournie avec chaque expédition OEM.
+      a: Le délai standard est de 30 à 45 jours à partir de la commande confirmée et de l'acompte pour la production OEM en série. Le développement de moules personnalisés ajoute 15 à 20 jours pour l'outillage. Une production accélérée est disponible pour les commandes urgentes et les pics saisonniers. Les échantillons de prototype sont généralement expédiés sous 15 à 20 jours.
     - q: Pouvez-vous expédier FOB Qingdao ou CIF jusqu'à notre port ?
       a: Oui. Nous expédions FOB Qingdao, CIF ports mondiaux et DDP pour partenaires qualifiés. Nous expédions vers 50+ pays.
 b2b_moq: 'MOQ standard : 5–50 unités par modèle. Commandes d’essai bienvenues pour les nouveaux partenariats.'
@@ -239,19 +239,19 @@ qc_dashboard:
   subtitle: Vraies données de réussite/échec de notre chaîne de production. Notre laboratoire qualité opère indépendamment de la production et rapporte directement à la direction.
   stats:
     - value: 100 %
-      label: Units pressure-tested
+      label: Unités testées sous pression
       detail: Chaque bateau, chaque chambre, chaque lot
     - value: <5 %
       label: Chute de pression maximale autorisée
       detail: Sur 24h à 1,25× la pression nominale
     - value: AQL 2,5
-      label: Major defect threshold
+      label: Seuil de défauts majeurs
       detail: Selon norme d'échantillonnage ISO 2859
     - value: 24–48 h
-      label: Pressure hold duration
+      label: Durée de maintien sous pression
       detail: Selon la catégorie de produit
     - value: 1,25×
-      label: Test pressure vs rated
+      label: Pression d’essai vs nominale
       detail: Marge de sécurité sur chaque chambre
     - value: 0%
       label: Tolérance sur les défauts de sécurité

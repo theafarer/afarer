@@ -22,7 +22,7 @@ stats:
     label: Skilled workers
   - value: 15,000+
     label: SUPs produced annually
-  - value:
+  - value: ISO 9001
     label: Quality certified
 
 intelligence_tagline: Factory Intelligence
@@ -71,13 +71,13 @@ workshops_section:
       description: Automatic CNC cutting machines process PVC, Hypalon, and drop-stitch fabrics with sub-millimetre precision. Computer-optimised nesting minimises material waste and ensures every panel meets its dimensional specification before welding.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: Tube Welding & Heat Sealing
-      description: Dedicated welding workshop with heat sealing machines  and RF dielectric presses. Hot-air heat sealers bond and fuse PVC tube chambers, while RF welds produce high-strength airtight seams that exceed  requirements.
+      description: Dedicated welding workshop with heat sealing machines and RF dielectric presses. Hot-air heat sealers bond and fuse PVC tube chambers, while RF welds produce high-strength airtight seams that exceed ISO 6185 requirements.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: Drop-Stitch Core Bonding
       description: SUP board drop-stitch cores are bonded to outer PVC laminates using heat lamination. Thousands of internal polyester threads connect top and bottom layers, creating a rigid structure at 12-15 PSI. Rail bands are triple-layer fusion bonded for edge strength.
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp
     - title: SUP Printing & Decoration
-      description: SUP boards are decorated using digital printing  for full-colour graphics and screen printing  for logos and repeating patterns. Digital printers produce photo-quality deck designs, while screen printing delivers durable, vivid brand marks.
+      description: SUP boards are decorated using digital printing for full-colour graphics and screen printing for logos and repeating patterns. Digital printers produce photo-quality deck designs, while screen printing delivers durable, vivid brand marks.
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp
     - title: Final Assembly & Fitting
       description: Assembly line where valves, D-rings, handles, fin boxes, and deck pads are installed on each SUP board. Each board follows a 100-point assembly checklist signed off by the team lead.
@@ -95,7 +95,7 @@ equipment_section:
     - name: Automatic PVC Cutting Machine
       spec: CNC-controlled, 0.1 mm accuracy
     - name: Heat Sealing Machine
-      spec: Hot-air, 200°C–300 °C, for tube bonding
+      spec: Hot-air, 200–300 °C, for tube bonding
     - name: RF Dielectric Welding Press
       spec: 15 kW, airtight seam welding
     - name: Drop-Stitch Core Lamination Press
@@ -112,7 +112,7 @@ qc_section:
   steps:
     - step: '1'
       title: Raw Material Inspection
-      desc: PVC, Hypalon, and drop-stitch fabrics undergo tensile testing (), tear propagation, and UV resistance verification before any batch enters production.
+      desc: PVC, Hypalon, and drop-stitch fabrics undergo tensile testing (ASTM D751), tear propagation, and UV resistance verification before any batch enters production.
     - step: '2'
       title: 48-Hour Air Retention Test
       desc: Every tube chamber is inflated to 125% of rated pressure and held for 48 hours. Pressure drop below 5% triggers automatic rejection and seam re-inspection.

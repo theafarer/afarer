@@ -1,6 +1,6 @@
 meta:
   title: '공장과 생산 — 팽창식 SUP OEM | {SITE}'
-  description: 'afar 공장을 방문하세요: 12,000㎡ 시설에 커팅, HF 용착, 프린팅, 조립, 품질 실험실을 갖추고 팽창식 SUP 보드·보트 OEM/ODM 생산.'
+  description: 'afarer 공장을 방문하세요: 12,000㎡ 시설에 커팅, HF 용착, 프린팅, 조립, 품질 실험실을 갖추고 팽창식 SUP 보드·보트 OEM/ODM 생산.'
   keywords:
     - 'SUP 공장 중국'
     - '팽창식 패들보드 공장'
@@ -27,18 +27,18 @@ intelligence_title: 우리의 제조 역량을 살펴보세요
 intelligence_cards:
   - title: 생산 능력
     icon: C
-    icon_bg: 파란색
-    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
+    icon_bg: blue
+    desc: 12,000 m² 시설에서 SUP 보드 및 안전 장비 라인으로 연간 15,000대 이상의 SUP를 생산합니다. 200명 이상의 작업자가 2교대로 근무합니다.
     metrics:
       - label: MOQ
-        value: 'SUP: 5-10 / SUP: 2-5'
+        value: 'SUP: 5–10'
       - label: 리드 타임
-        value: 30-45 days
+        value: 30–45일
     link: /factory/capacity
     link_label: 전체 생산 능력 상세 →
   - title: 품질 연구소 및 테스트
     icon: Q
-    icon_bg: 그린
+    icon_bg: green
     desc: '4단계 테스트를 갖춘 독립 QC 실험실: 원자재 검사(인장, 찢김, UV), 정격 압력의 1.25배에서 48시간 압력 유지, 이음새 박리 테스트, 그리고 모든 보트에 대한 하중/균형 검증.'
     metrics:
       - label: 연구소 장비
@@ -49,15 +49,15 @@ intelligence_cards:
     link_label: 시험 절차 및 장비 →
   - title: OEM/ODM 역량
     icon: O
-    icon_bg: 퍼플
-    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
+    icon_bg: purple
+    desc: '엔드투엔드 OEM/ODM 서비스: 맞춤 금형 설계, 프라이빗 라벨 포장, 맞춤 보드 색상, 데크 그래픽(디지털 및 스크린 인쇄), 드롭십 물류.'
     metrics:
       - label: 인증서
         value: ISO 9001, BSCI, CE, REACH
       - label: 배송
         value: FOB, CIF, DDP 50개국 이상
     link: /factory/oem-capability
-    link_label: 완전한 OEM 서비스 —
+    link_label: 완전한 OEM 서비스 →
 workshops_section:
   tagline: 워크숍
   title: 제조 워크숍
@@ -66,7 +66,7 @@ workshops_section:
       description: 자동 CNC 재단기가 PVC, Hypalon, 드롭스티치 원단을 서브밀리미터 정밀도로 가공합니다. 컴퓨터로 최적화된 네스팅은 소재 낭비를 최소화하고 용접 전 모든 패널이 치수 규격을 충족하도록 보장합니다.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: 튜브 용접 및 열융착
-      description: 핫에어 열융착기와 RF 유전체 프레스를 갖춘 전용 용접 워크숍이 있습니다. 핫에어 열융착기는 PVC 튜브 챔버를 접합·융합하고, RF 용접은 요구 사항을 초과하는 고강도 기밀 심지를 생성합니다.
+      description: 핫에어 열융착기와 RF 유전체 프레스를 갖춘 전용 용접 워크숍이 있습니다. 핫에어 열융착기는 PVC 튜브 챔버를 접합·융합하고, RF 용접은 ISO 6185 요구 사항을 초과하는 고강도 기밀 심지를 생성합니다.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: SUP 선체 생산 — 유리섬유
       description: SUP 선체는 폴리에스터와 비닐에스터 수지 시스템을 사용하는 핸드레이업 유리섬유 성형으로 생산됩니다. 각 레이어는 일관된 품질을 위해 수작업으로 롤링되고 진공백 처리됩니다. 겔코트 스프레이 부스는 고광택, 자외선 저항성 해양 마감을 제공합니다.
@@ -89,7 +89,7 @@ equipment_section:
     - name: 자동 PVC 재단기
       spec: CNC 제어, 0.1mm 정밀도
     - name: 열융착기
-      spec: 핫에어, 200°C–600°C, 튜브 접합용
+      spec: 핫에어, 200°C–300°C, 튜브 접합용
     - name: RF 유전체 용접 프레스
       spec: 15kW, 기밀 심지 용접
     - name: 유리섬유 핸드레이업 금형
@@ -105,7 +105,7 @@ qc_section:
   steps:
     - step: '1'
       title: 원자재 검사
-      desc: PVC, Hypalon, 드롭스티치 원단은 생산 투입 전 인장 테스트, 인열 전파, 자외선 저항성 검증을 거칩니다.
+      desc: PVC, Hypalon, 드롭스티치 원단은 생산 투입 전 인장 테스트(ASTM D751), 인열 전파, 자외선 저항성 검증을 거칩니다.
     - step: '2'
       title: 48시간 공기 유지 테스트
       desc: 모든 튜브 챔버는 정격 압력의 125%까지 팽창 후 48시간 유지됩니다. 압력 강하가 5%를 초과하면 자동 폐기 및 심지 재검사가 진행됩니다.
@@ -133,7 +133,7 @@ faq_section:
     - q: OEM 인플러터블 SUP 보드의 최소 주문 수량(MOQ)은 얼마인가요?
       a: 표준 OEM 모델의 MOQ는 5–10대부터 시작합니다. 맞춤 금형 및 프라이빗 라벨 프로젝트는 복잡도에 따라 최소 200대가 필요합니다. 신규 브랜드 론칭을 위한 시험 주문 및 샘플 생산도 가능합니다.
     - q: 아쿠아페어는 BSCI 인증을 보유하고 있나요?
-      a: 네. 당사 공장은 유효한 BSCI 사회적 책임 인증을 유지하고 있습니다(감사 보고서는 요청 시 제공). 또한 품질 경영을 위한 인증과 모든 제품의 CE 인증을 보유하고 있습니다. 모든 OEM 선적물에는 REACH 및 RoHS 준수 문서가 동봉됩니다.
+      a: 네. 당사 공장은 유효한 BSCI 사회적 책임 인증을 유지하고 있습니다(감사 보고서는 요청 시 제공). 또한 품질 경영을 위한 ISO 9001 인증과 모든 제품의 CE 인증을 보유하고 있습니다. 모든 OEM 선적물에는 REACH 및 RoHS 준수 문서가 동봉됩니다.
     - q: OEM 주문의 일반적인 리드타임은 어떻게 되나요?
       a: 표준 리드타임은 PO 및 계약금 확정 후 30–45일입니다. 맞춤 금형 개발은 금형 제작에 15–20일이 추가됩니다. 긴급 주문과 여름 철(1–3월) 성수기 물량을 위한 신속 생산도 제공합니다.
     - q: FOB 청도 또는 당사 항구까지 CIF로 선적 가능한가요?

@@ -24,25 +24,25 @@ stats:
     label: Kvalifiserte arbeidere
   - value: 15 000+
     label: Båter produsert årlig
-  - value: null
+  - value: ISO 9001
     label: Kvalitetssertifisert
 intelligence_tagline: Fabrikkintelligens
 intelligence_title: Utforsk våre produksjonsmuligheter
 intelligence_cards:
   - title: Produksjonskapasitet
     icon: C
-    icon_bg: blå
-    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
+    icon_bg: blue
+    desc: Anlegg på 12 000 m² som produserer 15 000+ SUP per år på SUP-brett- og sikkerhetsutstyrslinjer. 200+ arbeidere, 2 skift.
     metrics:
       - label: MOQ
-        value: 'SUP: 5-10 / SUP: 2-5'
+        value: 'SUP: 5–10'
       - label: Leveringstid
-        value: 30-45 days
+        value: 30–45 dager
     link: /factory/capacity
     link_label: Fullstendige kapasitetsdetaljer →
   - title: Kvalitetslaboratorium og testing
     icon: Q
-    icon_bg: grønn
+    icon_bg: green
     desc: 'Uavhengig kvalitetskontrollaboratorium med 4 testfaser: råvareinspeksjon (strekk, riv, UV), 48 timers trykkhold ved 1,25x nominelt trykk, sømavskallingstesting og last-/balanseverifisering på hver båt.'
     metrics:
       - label: Laboratorieutstyr
@@ -53,8 +53,8 @@ intelligence_cards:
     link_label: Laboratorieprosedyrer og -utstyr →
   - title: OEM/ODM-kapasitet
     icon: O
-    icon_bg: lilla
-    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
+    icon_bg: purple
+    desc: 'OEM/ODM-tjenester fra ende til ende: design av tilpassede former, emballasje med privat merke, tilpassede brettfarger, dekkgrafikk (digital- og silketrykk) og drop shipping-logistikk.'
     metrics:
       - label: Sertifiseringer
         value: ISO 9001, BSCI, CE, REACH
@@ -70,7 +70,7 @@ workshops_section:
       description: Automatiske CNC-kuttmaskiner bearbeider PVC-, Hypalon- og drop-stitch-stoffer med submillimeter-presisjon. Datamaskinoptimalisert plassering minimerer materialsvinn og sikrer at hver panel oppfyller sine dimensjonsspesifikasjoner før sveising.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: Rørsveising og varmeforsegling
-      description: Dedikert sveiseverksted med varmluftssveisemaskiner og dielektriske RF-presser. Varmluftssveisere føyer sammen og smelter PVC-rørkamre, mens RF-sveising produserer høyfaste, lufttette sømmer som overgår kravene.
+      description: Dedikert sveiseverksted med varmluftssveisemaskiner og dielektriske RF-presser. Varmluftssveisere føyer sammen og smelter PVC-rørkamre, mens RF-sveising produserer høyfaste, lufttette sømmer som overgår ISO 6185-kravene.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: SUP-skrogproduksjon —glassfiber
       description: SUP-båtskrog produseres ved håndopplegning av glassfiber med polyester- og vinylesterharpikssystemer. Hvert lag håndrulles og vakuumpakkes for jevn kvalitet. Gelcoat-sprøytebod gir en høyglanset, UV-bestandig marin overflate.
@@ -93,7 +93,7 @@ equipment_section:
     - name: Automatisk PVC-kuttmaskin
       spec: CNC-styrt, 0,1 mm nøyaktighet
     - name: Varmluftssveisemaskin
-      spec: Varmluft, 200 °C–300 °C, for rørfesting
+      spec: Varmluft, 200–300 °C, for rørfesting
     - name: Dielektrisk RF-presse
       spec: 15 kW, lufttett sømsveising
     - name: Glassfiber håndopplegningsformer
@@ -109,7 +109,7 @@ qc_section:
   steps:
     - step: '1'
       title: Råvareinspeksjon
-      desc: PVC-, Hypalon- og drop-stitch-stoffer gjennomgår strekktesting, rivingsspredning og UV-bestandighetsverifisering før en batch slippes inn i produksjonen.
+      desc: PVC-, Hypalon- og drop-stitch-stoffer gjennomgår strekktesting (ASTM D751), rivingsspredning og UV-bestandighetsverifisering før en batch slippes inn i produksjonen.
     - step: '2'
       title: 48-timers lufttetthetstest
       desc: Hvert rørkammer pumpes til 125 % av nominelt trykk og holdes i 48 timer. Trykkfall under 5 % utløser automatisk avvisning og ny søminspeksjon.
@@ -137,9 +137,9 @@ faq_section:
     - q: Hva er minimumsbestillingsmengde (MOQ) for OEM av oppblåsbare SUP-brett?
       a: MOQ starter på 5–10 enheter for standard OEM-modeller. Tilpassede former og private-label-prosjekter krever minimum 200 enheter avhengig av kompleksitet. Prøvebestillinger og testserier er tilgjengelige for nye merkelanseringer.
     - q: Er afarer BSCI-sertifisert?
-      a: Ja. Fabrikken vår opprettholder gyldig BSCI-sosialt samsvarssertifikat (revisjonsrapport tilgjengelig på forespørsel). Vi har også sertifisert kvalitetsstyring, og alle produkter er CE-sertifiserte. REACH- og RoHS-samsvarsdokumentasjon følger med hver OEM-forsendelse.
+      a: Ja. Fabrikken vår opprettholder gyldig BSCI-sosialt samsvarssertifikat (revisjonsrapport tilgjengelig på forespørsel). Vi har også ISO 9001-sertifisert kvalitetsstyring, og alle produkter er CE-sertifiserte. REACH- og RoHS-samsvarsdokumentasjon følger med hver OEM-forsendelse.
     - q: Hva er typisk leveringstid for en OEM-bestilling?
-      a: MOQ starter på 5–10 enheter for standard OEM-modeller. Tilpassede former og private-label-prosjekter krever minimum 200 enheter avhengig av kompleksitet. Prøvebestillinger og testserier er tilgjengelige for nye merkelanseringer.
+      a: Standard leveringstid er 30–45 dager fra bekreftet bestilling og depositum for OEM-serieproduksjon. Utvikling av tilpassede former legger til 15–20 dager for verktøyfremstilling. Akselerert produksjon er tilgjengelig for hastende ordrer og sesongtopper. Prototypprøver sendes vanligvis innen 15–20 dager.
     - q: Kan dere sende FOB Qingdao eller CIF til havnen vår?
       a: Ja. Vi sender FOB Qingdao, CIF til større globale havner og DDP for kvalifiserte partnere. Logistikkteamet vårt håndterer containerbooking, eksportdokumentasjon og tollearbeid. Vi sender til 50+ land på tvers av EU-, USA-, AU- og Asia-markedene.
 b2b_moq: 'Standard MOQ: 5–10 enheter per modell (SUP/kajakk/drop-stitch). SUP MOQ: 2–5 enheter. Prøvebestillinger velkommen for nye partnerskap.'

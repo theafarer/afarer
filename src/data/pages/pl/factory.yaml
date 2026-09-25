@@ -31,18 +31,18 @@ intelligence_title: Poznaj Nasze Możliwości Produkcyjne
 intelligence_cards:
   - title: Moc produkcyjna
     icon: C
-    icon_bg: niebieski
-    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
+    icon_bg: blue
+    desc: Zakład o powierzchni 12 000 m² produkujący 15 000+ SUP rocznie w liniach desek SUP i sprzętu bezpieczeństwa. 200+ pracowników, 2 zmiany.
     metrics:
       - label: MOQ
-        value: 'SUP: 5-10 / SUP: 2-5'
+        value: 'SUP: 5–10'
       - label: Czas realizacji
-        value: 30-45 days
+        value: 30–45 dni
     link: /factory/capacity
     link_label: Szczegóły pełnej pojemności →
   - title: Laboratorium Jakości i Testowanie
     icon: Q
-    icon_bg: zielony
+    icon_bg: green
     desc: 'Niezależne laboratorium kontroli jakości z 4 etapami testów: kontrola surowców (testy rozciągania, rozdzierania, UV), 48-godzinne utrzymanie ciśnienia przy 1,25-krotności nominalnego ciśnienia, testy odrywania szwów oraz weryfikacja obciążenia i równowagi dla każdej łodzi.'
     metrics:
       - label: Sprzęt laboratoryjny
@@ -53,8 +53,8 @@ intelligence_cards:
     link_label: Procedury laboratoryjne i sprzęt →
   - title: Możliwość OEM/ODM
     icon: O
-    icon_bg: fioletowy
-    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
+    icon_bg: purple
+    desc: 'Kompleksowe usługi OEM/ODM: projektowanie niestandardowych form, opakowania private label, niestandardowe kolory desek, grafika pokładu (druk cyfrowy i sitodruk) oraz logistyka drop-ship.'
     metrics:
       - label: Certyfikaty
         value: ISO 9001, BSCI, CE, REACH
@@ -70,7 +70,7 @@ workshops_section:
       description: Automatyczne maszyny do cięcia CNC przetwarzają tkaniny PVC, Hypalon i drop-stitch z precyzją poniżej milimetra. Komputerowo zoptymalizowane układanie minimalizuje odpady materiałowe i zapewnia, że każdy panel spełnia swoją specyfikację wymiarową przed spawaniem.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: Spawanie Rur i Uszczelnianie Termiczne
-      description: Dedykowany warsztat spawalniczy z maszynami do uszczelniania termicznego  i prasami dielektrycznymi RF. Nagrzewnice gorącego powietrza łączą i stapiają komory rur PVC, podczas gdy zgrzewy RF wytwarzają wysokowytrzymałe, szczelne szwy przekraczające wymagania .
+      description: Dedykowany warsztat spawalniczy z maszynami do uszczelniania termicznego i prasami dielektrycznymi RF. Nagrzewnice gorącego powietrza łączą i stapiają komory rur PVC, podczas gdy zgrzewy RF wytwarzają wysokowytrzymałe, szczelne szwy przekraczające wymagania ISO 6185.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: Produkcja Kadłubów SUP —Włókno Szklane
       description: >-
@@ -78,7 +78,7 @@ workshops_section:
         wykończenie morskie.
       image: https://assets.afarer.com/images/afarer/factory/afarer-warehouse-storage.webp
     - title: Druk SUP i Dekoracja
-      description: Deski SUP są dekorowane przy użyciu druku cyfrowego  do pełnokolorowych grafik i sitodruku  do logo i powtarzalnych wzorów. Drukarki cyfrowe tworzą projekty pokładów w jakości fotograficznej, podczas gdy sitodruk zapewnia trwałe, żywe oznaczenia marki.
+      description: Deski SUP są dekorowane przy użyciu druku cyfrowego do pełnokolorowych grafik i sitodruku do logo i powtarzalnych wzorów. Drukarki cyfrowe tworzą projekty pokładów w jakości fotograficznej, podczas gdy sitodruk zapewnia trwałe, żywe oznaczenia marki.
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp
     - title: Montaż Końcowy i Olinowanie
       description: Linia montażowa, na której łączone są kadłuby z włókna szklanego i rury PVC, montowane są silniki, podłączane są układy kierownicze i sterownicze, a instalacje elektryczne są okablowane. Każda łódź przechodzi 100-punktową listę kontrolną montażu podpisaną przez lidera zespołu.
@@ -95,7 +95,7 @@ equipment_section:
     - name: Automatyczna Maszyna do Cięcia PVC
       spec: Sterowana CNC, dokładność 0,1 mm
     - name: Maszyna do Uszczelniania Termicznego
-      spec: Gorące powietrze, 200°C–300 °C, do łączenia rur
+      spec: Gorące powietrze, 200–300 °C, do łączenia rur
     - name: Prasa Zgrzewająca Dielektryczna RF
       spec: 15 kW, spawanie szczelnych szwów
     - name: Formy do Ręcznego Formowania z Włókna Szklanego
@@ -111,7 +111,7 @@ qc_section:
   steps:
     - step: Jeden
       title: Inspekcja Surowców
-      desc: Tkaniny PVC, Hypalon i drop-stitch przechodzą test wytrzymałości na rozciąganie (), propagację pęknięcia i weryfikację odporności na UV, zanim jakakolwiek partia wejdzie do produkcji.
+      desc: Tkaniny PVC, Hypalon i drop-stitch przechodzą test wytrzymałości na rozciąganie (ASTM D751), propagację pęknięcia i weryfikację odporności na UV, zanim jakakolwiek partia wejdzie do produkcji.
     - step: Dwa
       title: 48-godzinny Test Retencji Powietrza
       desc: Każda komora rury jest nadmuchiwana do 125% ciśnienia nominalnego i utrzymywana przez 48 godzin. Spadek ciśnienia poniżej 5% powoduje automatyczne odrzucenie i ponowną inspekcję szwu.
@@ -139,9 +139,9 @@ faq_section:
     - q: Jaka jest minimalna ilość zamówienia (MOQ) dla OEM nadmuchiwanych desek SUP?
       a: MOQ zaczyna się od 5–10 sztuk dla standardowych modeli OEM. Niestandardowe formy i projekty pod własną marką wymagają minimum 200 sztuk, w zależności od złożoności. Zamówienia próbne i serie wzorcowe są dostępne dla nowych marek.
     - q: Czy afarer posiada certyfikat BSCI?
-      a: Tak. Nasza fabryka utrzymuje ważny certyfikat zgodności społecznej BSCI (raport z audytu dostępny na żądanie). Posiadamy również  do zarządzania jakością, a wszystkie produkty posiadają certyfikat CE . Dokumentacja zgodności REACH i RoHS jest dostarczana z każdą przesyłką OEM.
+      a: Tak. Nasza fabryka utrzymuje ważny certyfikat zgodności społecznej BSCI (raport z audytu dostępny na żądanie). Posiadamy również ISO 9001 do zarządzania jakością, a wszystkie produkty posiadają certyfikat CE. Dokumentacja zgodności REACH i RoHS jest dostarczana z każdą przesyłką OEM.
     - q: Jaki jest typowy czas realizacji zamówienia OEM?
-      a: Tak. Nasza fabryka utrzymuje ważny certyfikat zgodności społecznej BSCI (raport z audytu dostępny na żądanie). Posiadamy również  do zarządzania jakością, a wszystkie produkty posiadają certyfikat CE . Dokumentacja zgodności REACH i RoHS jest dostarczana z każdą przesyłką OEM.
+      a: Standardowy czas realizacji wynosi 30–45 dni od potwierdzenia zamówienia i wpłaty zaliczki przy produkcji OEM w seriach. Opracowanie niestandardowych form dodaje 15–20 dni na wykonanie narzędzi. Przyspieszona produkcja jest dostępna dla pilnych zamówień i sezonowych szczytów. Próbki prototypowe są zazwyczaj wysyłane w ciągu 15–20 dni.
     - q: Czy możecie wysłać FOB Qingdao lub CIF do naszego portu?
       a: Tak. Wysyłamy FOB Qingdao, CIF do głównych portów świata oraz DDP dla kwalifikowanych partnerów. Nasz zespół logistyczny zarządza rezerwacją kontenerów, dokumentacją eksportową i odprawą celną. Wysyłamy do ponad 50 krajów na rynkach UE, USA, AU i Azji.
 b2b_moq: 'Standardowe MOQ: 5–10 sztuk na model (SUP/kajak/drop-stitch). MOQ SUP: 2–5 sztuk. Zamówienia próbne mile widziane dla nowych partnerstw.'

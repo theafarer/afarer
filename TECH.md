@@ -391,6 +391,20 @@ When renaming URLs/names across the site:
 
 product-texts.ts 中 ja/ko/ar 的 9 个系列 desc 是**旧版英文文案**（与当前 products.ts EN SSOT 不同），"desc == 当前 EN" 的等值审计完全漏报。发现途径是靠"非拉丁语言中出现长 ASCII 串"的内容特征扫描。教训：**占位/回退检测要两套：① 与 SSOT 等值比较（抓直接复制）；② 按语言文字系统做内容特征扫描（ja/ko/zh/th/ar 中长拉丁串 = 残留）。** Latin 语言的特征扫描需用英文独有词（with/featuring/inspired 等）并人工复核假阳性（sv/de 保留术语 offshore、drop-stitch 会误报）。
 
+#### L15. 插入式补丁 op（rep ⊃ find）二次运行必然重复插入 —— 引擎必须先查 rep 已存在
+
+`warning-cleanup/_patch-warnings.cjs` 早期版本的幂等判定只有"find 消失 = 已应用"。两类 op 打破该假设：① **插入式**（`keywords:\n    - A` → `keywords:\n    - A\n    - B`，rep 包含 find）应用后 find 仍在 → 二次运行重复追加（6 个 about 文件 keyword 重复插入两次）；② **前缀式**（`icon_bg: blu` → `icon_bg: blue`，find 是 rep 的前缀）应用后 find 仍是 rep 的子串 → 二次运行把 `blue` 改成 `bluee`。正确判定：**先查 `rep` 是否已存在（出现次数 ≥ n）→ 是则跳过；否则 find 计数匹配才应用**。另外早期 `--dry` 不在内存中应用 rep，导致"dup 修复后 BSCI find 仍出现 2 次"的链式 op 报错 —— dry 必须模拟完整应用链，才能与 patch 结果一致。教训：**补丁引擎的幂等性以 rep 为锚点而非 find；插入式/前缀式 op 是天然的反例，dry 必须全链模拟。**
+
+#### L16. YAML 值含 ": "（冒号+空格）必须整体加引号
+
+fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: räätälöity...`）未加引号，值内的 `: ` 被 YAML 解析器当作嵌套映射键 → 整文件解析失败，`check-translations.mjs` 直接报 invalid YAML（FAIL）。与 tool_instrction.md 尾注 #4（en dash 须加引号）同类。教训：**手写 rep 时，凡值内含 `: `、`–`、逗号开头等 flow 敏感字符，一律整体单引号包裹；批量 patch 后必须对全部改动文件跑 YAML 解析校验（js-yaml load），不能只信替换成功计数。**
+
+#### L17. check:i18n 150 条存量 warning 清零后的白名单语义（2026-09 批次）
+
+`scripts/check-translations.mjs` 新增三处合法豁免，语义边界要守住：① 结构比较前剥离 `meta.keywords`（SEO 关键词密度按语言浮动是合法的，但**只豁免 keywords，其余叶子路径仍严格**）；② `shouldTranslate` 排除 kebab-case slug（`/^[a-z0-9]+(?:-[a-z0-9]+)+$/`）、4 个虚构客户公司名 Set、认证/标准 token 逗号列表（`isCertificationList`，token 全部来自 `UNTRANSLATABLE_TOKENS` 白名单）。**新增豁免必须逐条对应真实 warning，不许"先加宽规则再找理由"。**
+
+遗留内容债务（确认不修，下次全量内容审计再处理）：EN quality L26/L32 重复 desc；fr b2b_moq / q0 "5–50 unités" / q4 缩短；ru q0/q3 缩短；ja/ko academy 标题；fr brand taglines；fi quality 干净区 L147-265 与 L12；da/ro/th safety desc 第二句；cs/da/ro stats[0] 互换；sv stats[0] "m2"；ws2 整卡漂移（de/es/pt/it/ar/ja/el eq3 旧 fiberglass）；sv/no fotokvalitets；es/de factory stats[2]；ar L123/L129；de/es/pt/it/nl/pl 拼写数字；el factory oem cases 截断；el tagline "ΣΣΕ"；أكوافارير 73 处；rf-welding "()" 约 18 语言；commercial-workboats 等 DBLSP；it `''` 疤 factory 外 49 处 + tr 3 处；SPDOT 38 处；sol-dist 区域名 EN（fr 已译，漂移）；card3 shipping "50 Länder/países/paesi" vs EN "50+ countries" 数字漂移；de/es/pt card2 desc 丢 "auf jedem Boot/en cada barco" 尾句漂移。
+
 ---
 
 ## 9. SEO & GEO Internals
@@ -480,6 +494,7 @@ Dashboards: `/internal/seo/{index,brand-os,brand,social,rules,tasks,queries,work
 | `TOOLS/tool_instrction.md` | 工具总目录文档：meta-inject / i18n-merge / i18n-fix / one-off / **verify（构建后全语言回归验证）** / **i18n-manage（UI 键批量管理 + CJK 泄漏扫描）** |
 | `TOOLS/verify/*.cjs` | 构建后回归验证：`verify-langs.cjs`（六项整站）、`check-dist.cjs`（--present/--absent 全语言断言）、`scan-en-leak.cjs`、`check-solutions-page.cjs` — 模块增删后必跑 |
 | `TOOLS/i18n-manage/*.cjs` | `ui-keys.cjs`（i18n UI 键 count/missing/add/remove/set）、`scan-cjk.cjs`（src/dist 中文泄漏扫描） |
+| `TOOLS/i18n-merge/warning-cleanup/*` | check:i18n 150 条存量 warning 一次性清零批次（475 op ×18 分片 + 幂等补丁引擎，见 §8.8 L15-L17） |
 | `TOOLS/meta-inject/*` | SEO meta batch injection (`_inject-meta.cjs` + `_meta-{lang}.cjs` data), unused for builds |
 | `workers/contact-worker/index.ts` | Live `POST /api/contact` handler (validate + Resend email) |
 | `scripts/patch-worker.mjs` | `output: 'server'` only; subdomain routing + KV injection (not in current build) |

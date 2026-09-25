@@ -20,37 +20,37 @@ stats:
     label: 熟練作業員
   - value: 15,000+
     label: 年間生産ボート数
-  - value: null
+  - value: ISO 9001
     label: 品質認証
 intelligence_tagline: 工場インテリジェンス
 intelligence_title: 製造能力をご覧ください
 intelligence_cards:
   - title: 生産能力
     icon: C
-    icon_bg: 青
-    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
+    icon_bg: blue
+    desc: 12,000 m²の施設で、SUPボードおよび安全装備ラインにて年間15,000台以上のSUPを生産。200名以上の従業員、2交代制で運営。
     metrics:
       - label: MOQ
-        value: 'SUP: 5-10 / SUP: 2-5'
+        value: 'SUP: 5–10'
       - label: リードタイム
-        value: 30-45 days
+        value: 30〜45日
     link: /factory/capacity
-    link_label: Full capacity details →
+    link_label: 生産能力の詳細すべて →
   - title: 品質試験所・テスト
     icon: Q
-    icon_bg: グリーン
-    desc: 独立したQCラボで4段階の検査を実施：原材料検査（引張、 tear、UV耐性）、定格圧力の1.25倍での48時間加圧保持、シームピール試験、および全ボートの荷重・バランス検証。
+    icon_bg: green
+    desc: 独立したQCラボで4段階の検査を実施：原材料検査（引張強度、引き裂き、UV耐性）、定格圧力の1.25倍での48時間加圧保持、シームピール試験、および全ボートの荷重・バランス検証。
     metrics:
       - label: ラボ設備
         value: 引張試験機、恒温槽、漏れ試験タンク
       - label: 規格
         value: ISO 9001、CE、AS 1799
     link: /factory/quality-lab
-    link_label: ラボの手順と設備
+    link_label: ラボの手順と設備 →
   - title: OEM/ODM対応能力
     icon: O
-    icon_bg: 紫
-    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
+    icon_bg: purple
+    desc: 'エンドツーエンドのOEM/ODMサービス：カスタム金型設計、プライベートラベルパッケージング、カスタムボードカラー、デッキグラフィック（デジタル＆スクリーン印刷）、ドロップシップ物流。'
     metrics:
       - label: 認証
         value: ISO 9001、BSCI、CE、REACH
@@ -66,13 +66,13 @@ workshops_section:
       description: 自動CNC切断機がPVC、ハイパロン、ドロップステッチファブリックをサブミリ精度で加工。コンピューター最適化されたネスティングが材料廃棄を最小限に抑え、すべてのパネルが溶着前にその寸法仕様を満たすことを保証します。
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: チューブ溶着＆熱シール
-      description: 熱シール機 とRF誘電プレスを備えた専用溶着ワークショップ。熱風熱シーラーがPVCチューブチャンバーを接着・融合し、RF溶着は 要件を超える高強度の気密シームを生成します。
+      description: 熱シール機とRF誘電プレスを備えた専用溶着ワークショップ。熱風熱シーラーがPVCチューブチャンバーを接着・融合し、RF溶着はISO 6185要件を超える高強度の気密シームを生成します。
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: RIBハル生産 — グラスファイバー
       description: RIBボートのハルは、ポリエステルおよびビニルエステル樹脂システムを使用したハンドレイアップグラスファイバー成形によって生産されます。各層は一貫した品質のためにハンドロールおよびバキュームバッグ処理されます。ゲルコートスプレーブースが高光沢の耐UV性マリン仕上げを提供します。
       image: https://assets.afarer.com/images/afarer/factory/afarer-warehouse-storage.webp
     - title: SUP印刷＆装飾
-      description: SUPボードは、フルカラーグラフィック向けのデジタル印刷 とロゴや反復パターン向けのスクリーン印刷 を使用して装飾されます。デジタルプリンターは写真品質のデッキデザインを生成し、スクリーン印刷は耐久性のある鮮やかなブランドマークを提供します。
+      description: SUPボードは、フルカラーグラフィック向けのデジタル印刷とロゴや反復パターン向けのスクリーン印刷を使用して装飾されます。デジタルプリンターは写真品質のデッキデザインを生成し、スクリーン印刷は耐久性のある鮮やかなブランドマークを提供します。
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp
     - title: 最終組立＆リギング
       description: グラスファイバーハルとPVCチューブが結合され、エンジンが取り付けられ、ステアリングとコントロールが接続され、電気システムが配線される組立ライン。各ボートはチームリーダーが署名する100ポイントの組立チェックリストに従います。
@@ -89,7 +89,7 @@ equipment_section:
     - name: 自動PVC切断機
       spec: CNC制御、0.1 mm精度
     - name: 熱シール機
-      spec: 熱風式、200°C–600°C、チューブ接合用
+      spec: 熱風式、200°C–300°C、チューブ接合用
     - name: RF誘電溶着プレス
       spec: 15 kW、気密シーム溶着
     - name: グラスファイバーハンドレイアップ金型
@@ -105,7 +105,7 @@ qc_section:
   steps:
     - step: '1'
       title: 原材料検査
-      desc: PVC、ハイパロン、ドロップステッチファブリックは、バッチが生産に入る前に引張テスト、ティア伝播、耐UV性検証を受けます。
+      desc: PVC、ハイパロン、ドロップステッチファブリックは、バッチが生産に入る前に引張テスト（ASTM D751）、ティア伝播、耐UV性検証を受けます。
     - step: '2'
       title: 48時間空気保持テスト
       desc: すべてのチューブチャンバーは定格圧力の125%に膨らませ、48時間保持されます。5%未満の圧力低下は自動拒否とシーム再検査をトリガーします。
@@ -122,7 +122,7 @@ oem_section:
       result: 署名済みPOからFOBまで55日。4つのSKUで2,400ユニット。最初のコンテナが到着する前にリピートオーダー。
     - challenge: 米国のウォータースポーツスタートアップは、カスタムハル形状、共同ブランドパッケージング、小売配置のためのBSCI認証を備えた高性能ドロップステッチカヤックを必要としていました。
       solution: 修正されたロッカープロファイルで既存のドロップステッチカヤック金型を適合、共同ブランドパッケージアートワークを開発、完全なBSCI監査文書を提供。
-      result: 米国の主要アウトドアチェーン3社で listing に成功。初年度5,000ユニット以上、98%の消化率。
+      result: 米国の主要アウトドアチェーン3社での取扱開始に成功。初年度5,000ユニット以上、98%の消化率。
     - challenge: オーストラリアのディストリビューターは、カスタムチューブカラー、ハイパロンアップグレードオプション、オーストラリア規格AS 1799への準拠を備えたCE認証RIBレンジを必要としていました。
       solution: 4つのチューブカラーバリエーションで試作品を生産、日本のサプライヤーからCSMハイパロンを調達、第三者AS 1799コンプライアンステストを調整。
       result: 3モデルのRIBレンジが豪州/ニュージーランド市場で発売。続いて12隻のパトロールRIBの政府入札に勝利。
@@ -133,7 +133,7 @@ faq_section:
     - q: OEMインフレータブルSUPボードの最小発注数量（MOQ）は？
       a: 標準OEMモデルのMOQは5–10ユニットからです。カスタム金型およびプライベートラベルプロジェクトは、複雑さに応じて最低200ユニットが必要です。新ブランド立ち上げ向けのトライアルオーダーおよびサンプルランも利用可能です。
     - q: アクアフェアラーはBSCI認証を保持していますか？
-      a: はい。当社工場は有効なBSCI社会コンプライアンス認証を維持しています（監査レポートはリクエストに応じて利用可能）。また、品質管理のための およびすべての製品はCE 認証を保持しています。REACHおよびRoHSコンプライアンス文書はすべてのOEM出荷に提供されます。
+      a: はい。当社工場は有効なBSCI社会コンプライアンス認証を維持しています（監査レポートはリクエストに応じて利用可能）。また、品質管理のためのISO 9001およびすべての製品はCE認証を保持しています。REACHおよびRoHSコンプライアンス文書はすべてのOEM出荷に提供されます。
     - q: OEM注文の標準的なリードタイムは？
       a: 標準リードタイムは、確認済みPOおよびデポジットから30〜45日です。カスタム金型開発には工具製作に15〜20日が追加されます。緊急注文および夏前の繁忙期（1月〜3月）の季節的なラッシュには迅速生産を提供しています。
     - q: FOB青島またはCIFで出荷できますか？

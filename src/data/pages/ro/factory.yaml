@@ -22,8 +22,8 @@ stats:
     label: m² suprafață totală
   - value: 200+
     label: Angajați calificați
-  - value: '6'
-    label: Linii de producție
+  - value: 15.000+
+    label: SUP-uri produse anual
   - value: ISO 9001
     label: Certificare
 intelligence_tagline: Inteligența fabricii
@@ -31,18 +31,18 @@ intelligence_title: Explorați capacitățile noastre de producție
 intelligence_cards:
   - title: Capacitate de producție
     icon: C
-    icon_bg: albastru
-    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
+    icon_bg: blue
+    desc: Instalație de 12.000 m² care produce 15.000+ SUP pe an pe liniile de plăci SUP și echipamente de siguranță. 200+ lucrători, 2 schimburi.
     metrics:
       - label: MOQ
-        value: 'SUP: 5-10 / SUP: 2-5'
+        value: 'SUP: 5–10'
       - label: Termen de livrare
-        value: 30-45 days
+        value: 30–45 zile
     link: /factory/capacity
     link_label: Detalii complete despre capacitate →
   - title: Laborator de calitate și testare
     icon: Q
-    icon_bg: verde
+    icon_bg: green
     desc: 'Laborator independent de control al calității, cu 4 etape de testare: inspecția materiilor prime (tracțiune, rupere, UV), menținerea presiunii timp de 48h la 1.25x presiunea nominală, testarea rezistenței cusăturilor la desprindere și verificarea sarcinii/echilibrului pe fiecare ambarcațiune.'
     metrics:
       - label: Echipament de laborator
@@ -53,8 +53,8 @@ intelligence_cards:
     link_label: Proceduri și echipamente de laborator →
   - title: Capabilitate OEM/ODM
     icon: O
-    icon_bg: violet
-    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
+    icon_bg: purple
+    desc: 'Servicii OEM/ODM complete: proiectare matrițe personalizate, ambalare sub marcă privată, culori personalizate ale plăcilor, grafica punții (imprimare digitală și serigrafie) și logistică drop-ship.'
     metrics:
       - label: Certificări
         value: ISO 9001, BSCI, CE, REACH
@@ -70,7 +70,7 @@ workshops_section:
       description: Mașinile automate de tăiere CNC prelucrează materialele PVC, Hypalon și drop-stitch cu precizie sub-milimetrică. Amplasarea optimizată pe calculator minimizează risipa de material și asigură că fiecare panou respectă specificațiile dimensionale înainte de sudare.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: Sudarea tuburilor și etanșarea termică
-      description: Atelier de sudare dedicat, dotat cu mașini de etanșare termică și prese dielectrice RF. Etanșoarele cu aer cald unesc și fuzionează camerele de tub din PVC, în timp ce sudurile RF produc îmbinări etanșe de înaltă rezistență, care depășesc cerințele.
+      description: Atelier de sudare dedicat, dotat cu mașini de etanșare termică și prese dielectrice RF. Etanșoarele cu aer cald unesc și fuzionează camerele de tub din PVC, în timp ce sudurile RF produc îmbinări etanșe de înaltă rezistență, care depășesc cerințele ISO 6185.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: Lipirea Miezului Drop-Stitch
       description: >-
@@ -78,7 +78,7 @@ workshops_section:
         pentru rezistența marginilor.
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp
     - title: Imprimare și decorare SUP
-      description: Plăcile SUP sunt decorate prin imprimare digitală  pentru grafice full-color și serigrafie  pentru sigle și modele repetitive. Imprimantele digitale produc designuri de punte de calitate foto, iar serigrafia oferă semne de brand durabile și vii.
+      description: Plăcile SUP sunt decorate prin imprimare digitală pentru grafice full-color și serigrafie pentru sigle și modele repetitive. Imprimantele digitale produc designuri de punte de calitate foto, iar serigrafia oferă semne de brand durabile și vii.
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp
     - title: Asamblare finală & Montaj
       description: Linie de asamblare unde sunt instalate supape, inele D, mânere, cutii de aripioare și deck pad-uri pe fiecare placă SUP. Fiecare placă urmează o listă de verificare a asamblării cu 100 de puncte, semnată de liderul echipei.
@@ -94,15 +94,15 @@ equipment_section:
   items:
     - name: Mașină automată de tăiat PVC
       spec: Control CNC, precizie de 0.1 mm
-    - name: Heat Sealing Machine
-      spec: Aer cald, 200°C–300 °C, pentru lipirea tuburilor
+    - name: Mașină de etanșare termică
+      spec: Aer cald, 200–300 °C, pentru lipirea tuburilor
     - name: Presă dielectrică RF de sudare
       spec: 15 kW, sudarea etanșă a cusăturilor
     - name: Presă de Laminare a Miezurilor Drop-Stitch
       spec: Miezuri SUP de până la 14 ft
-    - name: Digital Printer
+    - name: Imprimantă digitală
       spec: Grafică full-color pe puntea plăcilor SUP
-    - name: Screen Printing Machine
+    - name: Mașină de serigrafie
       spec: Imprimare logo multicolor
 qc_section:
   tagline: Controlul calității
@@ -111,7 +111,7 @@ qc_section:
   steps:
     - step: '1'
       title: Inspecția Materiilor Prime
-      desc: Țesăturile din PVC, Hypalon și drop-stitch sunt supuse testelor de tracțiune (), de propagare a ruperii și de verificare a rezistenței UV înainte ca orice lot să intre în producție.
+      desc: Țesăturile din PVC, Hypalon și drop-stitch sunt supuse testelor de tracțiune (ASTM D751), de propagare a ruperii și de verificare a rezistenței UV înainte ca orice lot să intre în producție.
     - step: '2'
       title: Test de retenție a aerului pe 48 de ore
       desc: Fiecare cameră de tub este umflată la 125% din presiunea nominală și menținută timp de 48 de ore. O scădere a presiunii sub 5% declanșează respingerea automată și re-inspectarea cusăturilor.
@@ -140,12 +140,12 @@ faq_section:
       a: MOQ-ul începe de la 5–10 de unități pentru modelele OEM standard. Mucelele personalizate și proiectele private-label necesită un minim de 200 de unități, în funcție de complexitate. Comenzile de probă și seriile de testare sunt disponibile pentru lansarea de branduri noi.
     - q: Deține afarer certificarea BSCI?
       a: >-
-        Da. Fabrica noastră deține o certificare BSCI valabilă de conformitate socială (raportul de audit este disponibil la cerere). De asemenea, deținem  pentru managementul calității, iar toate produsele sunt livrate cu certificare CE . Documentația de conformitate REACH și RoHS este furnizată cu
+        Da. Fabrica noastră deține o certificare BSCI valabilă de conformitate socială (raportul de audit este disponibil la cerere). De asemenea, deținem ISO 9001 pentru managementul calității, iar toate produsele sunt livrate cu certificare CE. Documentația de conformitate REACH și RoHS este furnizată cu
         fiecare expediere OEM.
     - q: Care este termenul de livrare tipic pentru o comandă OEM?
       a: >-
-        Da. Fabrica noastră deține o certificare BSCI valabilă de conformitate socială (raportul de audit este disponibil la cerere). De asemenea, deținem  pentru managementul calității, iar toate produsele sunt livrate cu certificare CE . Documentația de conformitate REACH și RoHS este furnizată cu
-        fiecare expediere OEM.
+        Termenul de livrare standard este de 30–45 de zile de la comanda confirmată și avans pentru producția OEM în serie. Dezvoltarea mucelelor personalizate adaugă 15–20 de zile pentru realizarea sculelor. Producția accelerată este disponibilă pentru comenzi urgente și vârfuri sezoniere.
+        Eșantioanele de prototip sunt de obicei expediate în 15–20 de zile.
     - q: Puteți expedia FOB Qingdao sau CIF către portul nostru?
       a: Da. Expediem FOB Qingdao, CIF în principalele porturi globale și DDP pentru parteneri calificați. Echipa noastră de logistică se ocupă de rezervarea containerelor, documentația de export și vămuire. Expediem în peste 50 de țări, pe piețele din UE, SUA, Australia și Asia.
 b2b_moq: 'MOQ standard: 5–10 unități per model (SUP/caiac/drop-stitch). MOQ pentru SUP: 2–5 unități. Comenzile de test sunt binevenite pentru parteneriate noi.'

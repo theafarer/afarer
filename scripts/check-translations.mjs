@@ -81,6 +81,83 @@ function shape(value) {
   return typeof value;
 }
 
+// meta.keywords counts legitimately vary per locale (SEO density); exclude from
+// the strict structure comparison so keyword drift does not mask real drift.
+function stripMetaKeywords(data) {
+  if (!data || typeof data !== 'object' || Array.isArray(data)) return data;
+  if (!data.meta || typeof data.meta !== 'object' || Array.isArray(data.meta)) return data;
+  const meta = { ...data.meta };
+  delete meta.keywords;
+  return { ...data, meta };
+}
+
+// Client company names in case studies are fictional proper nouns kept in
+// English in every locale.
+const KEEP_ENGLISH_TEXTS = new Set([
+  'Pacific Watersports Pty Ltd',
+  'North Sea Marine Equipment BV',
+  'Paradise Island Resorts Ltd',
+  'Atlantic Coastal Security Agency',
+]);
+
+// Certification / standard / industry acronyms that stay verbatim in all locales.
+const UNTRANSLATABLE_TOKENS = new Set([
+  'CE',
+  'ISO',
+  'BSCI',
+  'REACH',
+  'RoHS',
+  'UKCA',
+  'FCC',
+  'FDA',
+  'SGS',
+  'BV',
+  'USCG',
+  'SOLAS',
+  'AS',
+  'ASTM',
+  'EN',
+  'PVC',
+  'EVA',
+  'PSI',
+  'FOB',
+  'CIF',
+  'DDP',
+  'AQL',
+  'RIB',
+  'UV',
+  'OEM',
+  'ODM',
+  'CAD',
+  'DXF',
+  'QC',
+  'QA',
+  'MOQ',
+  'SUP',
+  'LLC',
+  'ERP',
+  'SKU',
+  'CSM',
+  'DTEX',
+  'NBC',
+]);
+
+// A comma list made only of cert/standard tokens (e.g. "ISO 9001, BSCI, CE, REACH")
+// is intentionally identical across locales.
+function isCertificationList(text) {
+  return (
+    text.includes(',') &&
+    text.split(',').every((part) => {
+      const token = part.trim();
+      if (!token) return true;
+      if (UNTRANSLATABLE_TOKENS.has(token)) return true;
+      if (/^\d+$/.test(token)) return true;
+      const match = token.match(/^([A-Z]{1,8})\s?\d{2,5}$/);
+      return !!match && UNTRANSLATABLE_TOKENS.has(match[1]);
+    })
+  );
+}
+
 function leaves(value, prefix = '') {
   if (Array.isArray(value)) return value.flatMap((child, index) => leaves(child, `${prefix}[${index}]`));
   if (value && typeof value === 'object') {
@@ -116,7 +193,7 @@ function checkPages() {
     const page = path.basename(englishFile);
     const english = parseYaml(englishFile);
     if (!english) continue;
-    const englishShape = JSON.stringify(shape(english.data));
+    const englishShape = JSON.stringify(shape(stripMetaKeywords(english.data)));
     const englishLeaves = new Set(leaves(english.data));
 
     for (const locale of LOCALES.filter((item) => item !== 'en')) {
@@ -129,7 +206,7 @@ function checkPages() {
       }
       checkedLocales.set(locale, (checkedLocales.get(locale) || 0) + 1);
       if (suspiciousEncoding(translated.source)) report(issues, `${file}: suspicious encoding/replacement characters`);
-      const translatedShape = JSON.stringify(shape(translated.data));
+      const translatedShape = JSON.stringify(shape(stripMetaKeywords(translated.data)));
       if (!OPTIONAL_LOCALIZED_PAGES.has(page) && translatedShape !== englishShape) {
         const translatedLeaves = new Set(leaves(translated.data));
         const missing = [...englishLeaves].filter((leaf) => !translatedLeaves.has(leaf));
@@ -145,6 +222,9 @@ function checkPages() {
         if (/^tabler:/.test(text)) return false;
         if (/^(from-|bg-|to-|text-|gap-)/.test(text)) return false;
         if (/\.[a-z0-9]+$/.test(text) && !/\s/.test(text) && !/[\u00e0-\u017f]{2}/.test(text)) return false;
+        if (/^[a-z0-9]+(?:-[a-z0-9]+)+$/.test(text)) return false; // kebab-case slugs
+        if (KEEP_ENGLISH_TEXTS.has(text)) return false;
+        if (isCertificationList(text)) return false;
         return true;
       }
       const unchanged = [...englishText].filter((text) => translatedText.has(text) && shouldTranslate(text));

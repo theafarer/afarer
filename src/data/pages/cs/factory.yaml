@@ -18,7 +18,7 @@ stats:
     label: m² celková plocha
   - value: 200+
     label: Kvalifikovaných zaměstnanců
-  - value: '6'
+  - value: 15 000+
     label: Vyrobeno SUP desek ročně
   - value: ISO 9001
     label: Certifikace
@@ -27,18 +27,18 @@ intelligence_title: Prozkoumejte naše výrobní možnosti
 intelligence_cards:
   - title: Výrobní kapacita
     icon: C
-    icon_bg: modrá
-    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
+    icon_bg: blue
+    desc: Závod o rozloze 12 000 m² vyrábějící 15 000+ SUP ročně na linkách SUP prken a bezpečnostního vybavení. 200+ pracovníků, 2 směny.
     metrics:
       - label: MOQ
-        value: 'SUP: 5-10 / SUP: 2-5'
+        value: 'SUP: 5–10'
       - label: Dodací lhůta
-        value: 30-45 days
+        value: 30–45 dní
     link: /factory/capacity
     link_label: Kompletní údaje o kapacitě →
   - title: Laboratoř kvality a testování
     icon: Q
-    icon_bg: zelená
+    icon_bg: green
     desc: 'Nezávislá laboratoř kontroly kvality se 4 fázemi testování: kontrola vstupních materiálů (pevnost v tahu, pevnost v trhu, UV), 48hodinová tlaková zkouška při 1.25x jmenovitého tlaku, testy odlupování švů a ověření nosnosti a vyvážení u každého člunu.'
     metrics:
       - label: Laboratorní vybavení
@@ -49,8 +49,8 @@ intelligence_cards:
     link_label: Laboratorní postupy a vybavení →
   - title: Možnosti OEM/ODM
     icon: O
-    icon_bg: fialová
-    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
+    icon_bg: purple
+    desc: 'Služby OEM/ODM od začátku do konce: návrh vlastních forem, obaly private label, vlastní barvy prken, grafika paluby (digitální tisk a sítotisk) a drop-ship logistika.'
     metrics:
       - label: Certifikace
         value: ISO 9001, BSCI, CE, REACH
@@ -66,13 +66,13 @@ workshops_section:
       description: Automatické CNC řezací stroje zpracovávají tkaniny PVC, Hypalon a drop-stitch s přesností pod jeden milimetr. Počítačově optimalizované rozmístění dílů minimalizuje odpad materiálu a zajišťuje, že každý panel splňuje rozměrovou specifikaci ještě před svařováním.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: Svařování nafukovacích komor a tepelné svařování
-      description: Samostatná svařovací dílna se stroji pro tepelné svařování a RF dielektrickými lisy. Horkovzdušné svářečky spojují a natavují PVC komory, zatímco RF svary vytvářejí vysoce pevné vzduchotěsné švy, které překračují požadavky.
+      description: Samostatná svařovací dílna se stroji pro tepelné svařování a RF dielektrickými lisy. Horkovzdušné svářečky spojují a natavují PVC komory, zatímco RF svary vytvářejí vysoce pevné vzduchotěsné švy, které překračují požadavky ISO 6185.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: Spojení drop-stitch jádra
       description: Drop-stitch jádra SUP prken jsou k vnějším PVC laminátům spojena tepelnou laminací. Tisíce vnitřních polyesterových vláken spojují horní a spodní vrstvu a vytvářejí tuhou strukturu při tlaku 12–15 PSI. Okrajové pásy jsou pro pevnost hran spojeny třívrstvým svařováním (fusion).
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp
     - title: Potisk a dekorace SUP
-      description: SUP prkna jsou zdobena digitálním tiskem  pro vícebarevnou grafiku a sítotiskem  pro loga a opakující se vzory. Digitální tiskárny vytvářejí designy paluby v kvalitě fotografií, zatímco sítotisk zajišťuje odolné a výrazné prvky značky.
+      description: SUP prkna jsou zdobena digitálním tiskem pro vícebarevnou grafiku a sítotiskem pro loga a opakující se vzory. Digitální tiskárny vytvářejí designy paluby v kvalitě fotografií, zatímco sítotisk zajišťuje odolné a výrazné prvky značky.
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp
     - title: Finální montáž a osazení
       description: Montážní linka, kde se na každé SUP prkno instalují ventily, kroužky D, madla, krabice pro ploutve a podlážky. Každé prkno prochází 100bodovým montážním kontrolním seznamem, který potvrzuje vedoucí týmu.
@@ -88,15 +88,15 @@ equipment_section:
   items:
     - name: Automatický stroj na řezání PVC
       spec: CNC řízené, přesnost 0.1 mm
-    - name: Heat Sealing Machine
-      spec: Horkovzdušné, 200°C–300 °C, pro spojování komor
+    - name: Stroj na tepelné svařování
+      spec: Horkovzdušné, 200–300 °C, pro spojování komor
     - name: RF dielektrický svářecí lis
       spec: 15 kW, vzduchotěsné svařování švů
     - name: Laminovací lis na drop-stitch jádra
       spec: SUP jádra až do délky 14 stop
-    - name: Digital Printer
+    - name: Digitální tiskárna
       spec: Barevná grafika paluby SUP
-    - name: Screen Printing Machine
+    - name: Sítotiskový stroj
       spec: Potisk loga ve více barvách
 qc_section:
   tagline: Kontrola kvality
@@ -105,7 +105,7 @@ qc_section:
   steps:
     - step: '1'
       title: Kontrola vstupních materiálů
-      desc: Tkaniny PVC, Hypalon a drop-stitch procházejí zkouškou pevnosti v tahu (), šířením trhliny a ověřením odolnosti proti UV záření, než jakákoliv šarže vstoupí do výroby.
+      desc: Tkaniny PVC, Hypalon a drop-stitch procházejí zkouškou pevnosti v tahu (ASTM D751), šířením trhliny a ověřením odolnosti proti UV záření, než jakákoliv šarže vstoupí do výroby.
     - step: '2'
       title: 48hodinový test udržení vzduchu
       desc: Každá nafukovací komora je nafouknuta na 125 % jmenovitého tlaku a udržována po dobu 48 hodin. Pokles tlaku pod 5 % automaticky vede k vyřazení kusu a opětovné kontrole švů.
@@ -133,9 +133,9 @@ faq_section:
     - q: Jaké je minimální objednací množství (MOQ) pro OEM nafukovací SUP prkna?
       a: MOQ začíná na 5–10 kusech u standardních modelů OEM. Vlastní formy a projekty privátních značek vyžadují minimálně 200 kusů podle náročnosti. Pro uvedení nových značek nabízíme zkušební a vzorové zakázky.
     - q: Má afarer certifikaci BSCI?
-      a: Ano. Naše továrna udržuje platnou certifikaci sociální shody BSCI (protokol z auditu je k dispozici na vyžádání). Držíme také  pro řízení kvality a všechny produkty nesou certifikaci CE  . Dokumentace o souladu s REACH a RoHS je přiložena ke každé zásilce OEM.
+      a: Ano. Naše továrna udržuje platnou certifikaci sociální shody BSCI (protokol z auditu je k dispozici na vyžádání). Držíme také ISO 9001 pro řízení kvality a všechny produkty nesou certifikaci CE. Dokumentace o souladu s REACH a RoHS je přiložena ke každé zásilce OEM.
     - q: Jaká je typická dodací lhůta objednávky OEM?
-      a: Ano. Naše továrna udržuje platnou certifikaci sociální shody BSCI (protokol z auditu je k dispozici na vyžádání). Držíme také  pro řízení kvality a všechny produkty nesou certifikaci CE  . Dokumentace o souladu s REACH a RoHS je přiložena ke každé zásilce OEM.
+      a: Standardní dodací lhůta je 30–45 dnů od potvrzené objednávky a zálohy u hromadné výroby OEM. Vývoj vlastních forem přidává 15–20 dnů na výrobu nástrojů. Urychlená výroba je k dispozici pro naléhavé zakázky a sezónní špičky. Prototypové vzorky se obvykle odesílají do 15–20 dnů.
     - q: Můžete dodat za podmínek FOB Qingdao nebo CIF do našeho přístavu?
       a: Ano. Dodáváme za podmínek FOB Qingdao, CIF do hlavních světových přístavů a DDP pro kvalifikované partnery. Náš logistický tým zajišťuje rezervaci kontejnerů, exportní dokumentaci a celní odbavení. Dodáváme do více než 50 zemí na trzích EU, USA, Austrálie a Asie.
 b2b_moq: 'Standardní MOQ: 5–10 jednotek na model (SUP/kajak/drop-stitch). MOQ pro SUP: 2–5 jednotek. Zkušební objednávky vítány pro nová partnerství.'

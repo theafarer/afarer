@@ -22,8 +22,8 @@ stats:
     label: m² samlet areal
   - value: 200+
     label: Kvalificerede medarbejdere
-  - value: '6'
-    label: Produktionslinjer
+  - value: 15.000+
+    label: SUPs produceret årligt
   - value: ISO 9001
     label: Certificering
 intelligence_tagline: Fabriksintelligens
@@ -31,18 +31,18 @@ intelligence_title: Udforsk vores produktionskapaciteter
 intelligence_cards:
   - title: Produktionskapacitet
     icon: C
-    icon_bg: blå
-    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
+    icon_bg: blue
+    desc: Anlæg på 12.000 m², der producerer 15.000+ SUPs om året på SUP-board- og sikkerhedsudrustningslinjer. 200+ medarbejdere, 2 hold.
     metrics:
       - label: MOQ
-        value: 'SUP: 5-10 / SUP: 2-5'
+        value: 'SUP: 5–10'
       - label: Leveringstid
-        value: 30-45 days
+        value: 30–45 dage
     link: /factory/capacity
     link_label: Se alle kapacitetsoplysninger →
   - title: Kvalitetslaboratorium & test
     icon: Q
-    icon_bg: grøn
+    icon_bg: green
     desc: 'Uafhængigt QC-laboratorium med 4 testfaser: inspektion af råmaterialer (trækstyrke, rivestyrke, UV), 48 t trykhold ved 1.25x nominelt tryk, peel-test af sømme samt verificering af last og balance på hver båd.'
     metrics:
       - label: Laboratorieudstyr
@@ -53,8 +53,8 @@ intelligence_cards:
     link_label: Laboratorieprocedurer og -udstyr →
   - title: OEM/ODM-kapacitet
     icon: O
-    icon_bg: lilla
-    desc: 'End-to-end OEM/ODM services: custom mould design, private-label packaging, custom tube colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.'
+    icon_bg: purple
+    desc: 'Komplette OEM/ODM-services: design af specialformer, private label-emballage, specialfarver på boards, dækgrafik (digital- og silketryk) samt drop ship-logistik.'
     metrics:
       - label: Certificeringer
         value: ISO 9001, BSCI, CE, REACH
@@ -70,13 +70,13 @@ workshops_section:
       description: Automatiske CNC-skæremaskiner forarbejder PVC-, Hypalon- og drop-stitch-stoffer med præcision på under en millimeter. Computeroptimeret nesting minimerer materialespild og sikrer, at hver panel opfylder sin dimensionsspecifikation, før svejsning.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: Rørsvejsning & varmeforsegling
-      description: Dedikeret svejseværksted med varmeforseglingsmaskiner  og RF-dielektriske presser. Varmluftsforseglere binder og svejser PVC-kammerrør sammen, mens RF-svejsninger giver stærke, lufttætte sømme, der overgår  kravene.
+      description: Dedikeret svejseværksted med varmeforseglingsmaskiner og RF-dielektriske presser. Varmluftsforseglere binder og svejser PVC-kammerrør sammen, mens RF-svejsninger giver stærke, lufttætte sømme, der overgår ISO 6185-kravene.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: Drop-Stitch kernebinding
       description: Drop-stitch-kernerne på SUP-boards bindes til de ydre PVC-laminater ved varmelaminering. Tusindvis af indre polyestertråde forbinder top- og bundlag og skaber en stiv struktur ved 12-15 PSI. Kantbåndene er fusionssvejset i tre lag for styrke langs kanterne.
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp
     - title: SUP-tryk og dekoration
-      description: SUP-boards dekoreres med digitaltryk  til fuldfarvegrafik og serigrafi  til logoer og gentagne mønstre. Digitale printere producerer dækdesign i fotokvalitet, mens serigrafi giver holdbare, levende brandmarkeringer.
+      description: SUP-boards dekoreres med digitaltryk til fuldfarvegrafik og serigrafi til logoer og gentagne mønstre. Digitale printere producerer dækdesign i fotokvalitet, mens serigrafi giver holdbare, levende brandmarkeringer.
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp
     - title: Endelig samling og tilpasning
       description: Samlebånd, hvor ventiler, D-ringe, håndtag, finnekasser og dækpuder monteres på hvert SUP-bræt. Hvert bræt følger en samlecheckliste med 100 punkter, som godkendes af teamlederen.
@@ -92,15 +92,15 @@ equipment_section:
   items:
     - name: Automatisk PVC-skæremaskine
       spec: CNC-styret, 0,1 mm præcision
-    - name: Heat Sealing Machine
-      spec: Varmluft, 200°C–300 °C, til sammensvejsning af slanger
+    - name: Varmeforseglingsmaskine
+      spec: Varmluft, 200–300 °C, til sammensvejsning af slanger
     - name: RF-dielektrisk svejsepresse
       spec: 15 kW, lufttæt sømsvejsning
     - name: Drop-stitch-kernelamineringspresse
       spec: SUP-kerner op til 14 ft
-    - name: Digital Printer
+    - name: Digital printer
       spec: SUP-dæksgrafik i fuld farve
-    - name: Screen Printing Machine
+    - name: Serigrafimaskine
       spec: Flerfarvet logotryk
 qc_section:
   tagline: Kvalitetskontrol
@@ -109,7 +109,7 @@ qc_section:
   steps:
     - step: '1'
       title: Inspektion af råmaterialer
-      desc: PVC-, Hypalon- og drop-stitch-stoffer gennemgår træktest (), rivningsforplantning og verifikation af UV-resistens, før nogen batch sendes i produktion.
+      desc: PVC-, Hypalon- og drop-stitch-stoffer gennemgår træktest (ASTM D751), rivningsforplantning og verifikation af UV-resistens, før nogen batch sendes i produktion.
     - step: '2'
       title: Lufttæthedstest i 48 timer
       desc: Hvert rørkammer pustes op til 125 % af det nominelle tryk og holdes i 48 timer. Et trykfald på under 5 % udløser automatisk afvisning og ny kontrol af sømmen.
@@ -137,9 +137,9 @@ faq_section:
     - q: Hvad er minimumsordreantallet (MOQ) for OEM-oppustelige SUP-brædder?
       a: MOQ starter ved 5–10 enheder for standard-OEM-modeller. Specialforme og private-label-projekter kræver et minimum på 200 enheder afhængigt af kompleksitet. Prøveordrer og samplekørsler er tilgængelige for nye brandlanceringer.
     - q: Har afarer BSCI-certificering?
-      a: Ja. Vores fabrik har en gyldig BSCI-certificering for social overholdelse (auditrapport kan udleveres på forespørgsel). Vi har desuden  til kvalitetsstyring, og alle produkter bærer CE- certificering. Dokumentation for REACH- og RoHS-overholdelse medfølger ved hver OEM-forsendelse.
+      a: Ja. Vores fabrik har en gyldig BSCI-certificering for social overholdelse (auditrapport kan udleveres på forespørgsel). Vi har desuden ISO 9001 til kvalitetsstyring, og alle produkter bærer CE-certificering. Dokumentation for REACH- og RoHS-overholdelse medfølger ved hver OEM-forsendelse.
     - q: Hvad er den typiske leveringstid for en OEM-ordre?
-      a: Ja. Vores fabrik har en gyldig BSCI-certificering for social overholdelse (auditrapport kan udleveres på forespørgsel). Vi har desuden  til kvalitetsstyring, og alle produkter bærer CE- certificering. Dokumentation for REACH- og RoHS-overholdelse medfølger ved hver OEM-forsendelse.
+      a: Standardleveringstiden er 30–45 dage fra bekræftet ordre og depositum ved OEM-serieproduktion. Udvikling af specialforme tilføjer 15–20 dage til værktøjsfremstilling. Fremskyndet produktion er tilgængelig for hastende ordrer og sæsonspidser. Prototypeprøver sendes typisk inden for 15–20 dage.
     - q: Kan I sende FOB Qingdao eller CIF til vores havn?
       a: Ja. Vi leverer FOB Qingdao, CIF til store globale havne og DDP for kvalificerede partnere. Vores logistikteam varetager containerbooking, eksportdokumentation og toldbehandling. Vi leverer til 50+ lande på tværs af EU-, USA-, AU- og Asien-markederne.
 b2b_moq: 'Standard MOQ: 5–10 enheder pr. model (SUP/kajak/drop-stitch). SUP MOQ: 2–5 enheder. Prøveordrer velkomne til nye partnerskaber.'

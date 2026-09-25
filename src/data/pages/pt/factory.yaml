@@ -24,25 +24,25 @@ stats:
     label: Trabalhadores qualificados
   - value: 15.000+
     label: Barcos produzidos anualmente
-  - value: null
+  - value: ISO 9001
     label: Certificado de qualidade
 intelligence_tagline: Inteligência de Fábrica
 intelligence_title: Explore Nossas Capacidades de Fabricação
 intelligence_cards:
   - title: Capacidade de Produção
     icon: C
-    icon_bg: azul
-    desc: 12,000 m2 facility producing 15,000+ boats/yr across SUP (8,000+), SUP (2,000+), inflatable SUP (5,000+), and safety equipment lines. 200+ workers, 2 shifts.
+    icon_bg: blue
+    desc: Instalação de 12.000 m² produzindo 15.000+ SUPs/ano nas linhas de pranchas SUP e equipamentos de segurança. 200+ trabalhadores, 2 turnos.
     metrics:
       - label: Quantidade mínima de pedido
-        value: 'SUP: 5-10 / SUP: 2-5'
+        value: 'SUP: 5–10'
       - label: Prazo de entrega
-        value: 30-45 days
+        value: 30–45 dias
     link: /factory/capacity
     link_label: Detalhes de capacidade →
   - title: Laboratório de Qualidade e Testes
     icon: Q
-    icon_bg: verde
+    icon_bg: green
     desc: 'Laboratório de CQ independente com 4 etapas: inspeção de matérias-primas, retenção de pressão 48h, teste de pelagem, verificação de carga/equilíbrio.'
     metrics:
       - label: Equipamento de laboratório
@@ -53,8 +53,8 @@ intelligence_cards:
     link_label: Procedimentos de laboratório & equipamentos →
   - title: Capacidade OEM/ODM
     icon: O
-    icon_bg: roxo
-    desc: 'Serviços OEM/ODM completos: design de molde personalizado, embalagem de marca própria, cores personalizadas, gráficos de convés, opção Hypalon, logística drop-ship.'
+    icon_bg: purple
+    desc: 'Serviços OEM/ODM completos: design de molde personalizado, embalagem de marca própria, cores de prancha personalizadas, gráficos de convés (impressão digital e serigrafia) e logística drop-ship.'
     metrics:
       - label: Certificações
         value: ISO 9001, BSCI, CE, REACH
@@ -70,7 +70,7 @@ workshops_section:
       description: Máquinas de corte CNC automáticas processam tecidos de PVC, Hypalon e drop-stitch com precisão sub-milimétrica. O aninhamento otimizado por computador minimiza o desperdício de material e garante que cada painel atenda à sua especificação dimensional antes da soldagem.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: Soldagem de Tubos e Selagem Térmica
-      description: Oficina de soldagem dedicada com máquinas de selagem térmica  e prensas dielétricas RF. Seladores térmicos a ar quente unem e fundem câmaras de tubos de PVC, enquanto soldas RF produzem juntas herméticas de alta resistência que excedem os requisitos .
+      description: Oficina de soldagem dedicada com máquinas de selagem térmica e prensas dielétricas RF. Seladores térmicos a ar quente unem e fundem câmaras de tubos de PVC, enquanto soldas RF produzem juntas herméticas de alta resistência que excedem os requisitos ISO 6185.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: Produção de Casco SUP —Fibra de Vidro
       description: >-
@@ -78,7 +78,7 @@ workshops_section:
         resistente a UV.
       image: https://assets.afarer.com/images/afarer/factory/afarer-warehouse-storage.webp
     - title: Impressão SUP e Decoração
-      description: As pranchas SUP são decoradas usando impressão digital  para gráficos coloridos e serigrafia  para logotipos e padrões repetitivos. Impressoras digitais produzem designs de deck com qualidade fotográfica, enquanto a serigrafia oferece marcas duráveis e vibrantes.
+      description: As pranchas SUP são decoradas usando impressão digital para gráficos coloridos e serigrafia para logotipos e padrões repetitivos. Impressoras digitais produzem designs de deck com qualidade fotográfica, enquanto a serigrafia oferece marcas duráveis e vibrantes.
       image: https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp
     - title: Montagem Final e Rigging
       description: Linha de montagem onde cascos de fibra de vidro e tubos de PVC são unidos, motores são montados, direção e controles são conectados e sistemas elétricos são cabeados. Cada barco segue uma lista de verificação de montagem de 100 pontos aprovada pelo líder da equipe.
@@ -95,7 +95,7 @@ equipment_section:
     - name: Máquina de Corte Automática de PVC
       spec: Controlada por CNC, precisão de 0,1 mm
     - name: Máquina de Selagem Térmica
-      spec: Ar quente, 200°C–300 °C, para união de tubos
+      spec: Ar quente, 200–300 °C, para união de tubos
     - name: Prensa de Soldagem Dielétrica RF
       spec: 15 kW, soldagem de juntas herméticas
     - name: Moldes de Lay-Up Manual em Fibra de Vidro
@@ -111,7 +111,7 @@ qc_section:
   steps:
     - step: Um
       title: Inspeção de Matéria-Prima
-      desc: Tecidos de PVC, Hypalon e drop-stitch passam por teste de tração (), propagação de rasgo e verificação de resistência UV antes de qualquer lote entrar em produção.
+      desc: Tecidos de PVC, Hypalon e drop-stitch passam por teste de tração (ASTM D751), propagação de rasgo e verificação de resistência UV antes de qualquer lote entrar em produção.
     - step: Dois
       title: Teste de Retenção de Ar de 48 Horas
       desc: Cada câmara de tubo é inflada a 125% da pressão nominal e mantida por 48 horas. A queda de pressão abaixo de 5% aciona rejeição automática e reinspeção da junta.
@@ -140,7 +140,7 @@ faq_section:
       a: A MOQ começa em 5–10 unidades para modelos OEM padrão. Moldes personalizados e projetos de marca própria exigem um mínimo de 200 unidades, dependendo da complexidade. Pedidos de teste e execuções de amostra estão disponíveis para lançamentos de novas marcas.
     - q: A afarer possui certificação BSCI?
       a: >-
-        Sim. Nossa fábrica mantém certificação de conformidade social BSCI válida (relatório de auditoria disponível mediante solicitação). Também possuímos  para gestão da qualidade e todos os produtos possuem certificação CE . Documentação de conformidade REACH e RoHS fornecida com cada remessa
+        Sim. Nossa fábrica mantém certificação de conformidade social BSCI válida (relatório de auditoria disponível mediante solicitação). Também possuímos ISO 9001 para gestão da qualidade e todos os produtos possuem certificação CE. Documentação de conformidade REACH e RoHS fornecida com cada remessa
         OEM.
     - q: Qual é o prazo de entrega típico para um pedido OEM?
       a: O prazo padrão é de 30 a 45 dias a partir do pedido confirmado e depósito. O desenvolvimento de molde personalizado adiciona 15 a 20 dias para ferramentas. Oferecemos produção acelerada para pedidos urgentes e picos sazonais durante a janela de pré-verão (janeiro a março).
