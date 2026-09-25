@@ -403,11 +403,13 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 `scripts/check-translations.mjs` 新增三处合法豁免，语义边界要守住：① 结构比较前剥离 `meta.keywords`（SEO 关键词密度按语言浮动是合法的，但**只豁免 keywords，其余叶子路径仍严格**）；② `shouldTranslate` 排除 kebab-case slug（`/^[a-z0-9]+(?:-[a-z0-9]+)+$/`）、4 个虚构客户公司名 Set、认证/标准 token 逗号列表（`isCertificationList`，token 全部来自 `UNTRANSLATABLE_TOKENS` 白名单）。**新增豁免必须逐条对应真实 warning，不许"先加宽规则再找理由"。**
 
-遗留内容债务清单状态（2026-09 分片 19–23 批次后）：
+遗留内容债务清单状态（2026-09 分片 19–25 机械批次 + 26–29 内容漂移批次后）：
 
 **已清零（分片 19–23，171 op；分片 24–25，10 op；em dash 批次）**：أكوافارير→أفارير 73 处（8 文件）+ 变体 أكوافارر（漏 ي）21 处 4 文件（分片 25：config.ar 7、ar/factory 2、ar/factory-process 2、site/i18n-config.json 10）；rf-welding "()" 16 语言+EN（ko:34 因整行乱码延后）；EN 源头令牌恢复（commercial-workboats/tourism-recreation/maritime-safety-defense/trust 的 ISO 9001、UKCA, FCC 被删；factory-equipment "50 kN,  / ASTM D751"；factory-process 双空格）+ 各语言镜像令牌恢复（~40 op）；it `''` 疤（afarer-story/factory）+ tr（afarer-story）；SPDOT 全部（句号前空格）；factory/solutions-paddle-clubs/solutions-resorts-hotels role/套餐列表 2–3 空格及单空格分隔符 → " + "（EN 惯例）；factory-process/tourism-recreation 数字印刷双空格折叠；ar/afarer-story + ar/trust "?²" mojibake → "م²"；ko/trust "12,000m²"→"12,000 m²"；分片 24 补译 about.yaml brand_hub_cards[0].desc 六语言（ja/ko/cs/da/ro/th，em dash 规范化暴露的未翻译值）；**em dash 全站规范化已完成（见 L19）**。
 
-**仍遗留（下次内容审计）**：EN quality L26/L32 重复 desc；fr b2b_moq / q0 "5–50 unités" / q4 缩短；ru q0/q3 缩短；ja/ko academy 标题；fr brand taglines；fi quality 干净区 L147-265 与 L12；da/ro/th safety desc 第二句；cs/da/ro stats[0] 互换；sv stats[0] "m2"；ws2 整卡漂移（de/es/pt/it/ar/ja/el eq3 旧 fiberglass）；sv/no fotokvalitets；es/de factory stats[2]；ar L123/L129；de/es/pt/it/nl/pl 拼写数字；el factory oem cases 截断；el tagline "ΣΣΕ"；el/commercial-workboats:25 缺第二句（UKCA, FCC）；sol-dist 区域名 EN（fr 已译，漂移）；card3 shipping "50 Länder/países/paesi" vs EN "50+ countries" 数字漂移；de/es/pt card2 desc 丢尾句漂移；el/ar factory "Cutting workshop lead" 误译（"Χρόνος εκκίνησης"/"مهلة"）；**ko/research-drop-stitch + research-sup-thickness（含 \uFEFF）+ rf-welding:34 整文件/整行韩语乱码，需韩语专修分片**。
+**已清零（分片 26–29，247 op，2026-09 内容漂移批次）**：EN quality UV desc 重写 + 20 locale 镜像（原为 Pressure 条目副本；8 个 locale 是 `description: >-` 折叠块，见 L20）；da/ro/th safety desc 补 ISO 12402 第二句 + hero subtitle 尾句；ja/ko academy（Learning Center + 10 guide 标题 + 4 level）；de/es/pt/it/nl/pl/ru factory stats 拼写数字 → "200+"、es 15,000→15.000+、ar '15000'→'15,000+'；"50+ countries" 丢 plus（46 处）；sol-dist 区域名 EN 残留 19 locale×6（114 op，fr 本已译；9 个恒等 op 构建期过滤）；el factory OEM 段（title/subtitle + 9 case 字段 + ΣΣΕ→FAQ + responsibility 误译）+ el/commercial-workboats 2 answer 缺句；ar factory 6 处 OEM 误译（كاياك→SUP、AS1799 多余细节等）+ responsibility；fr factory q0 5–50→5–10 / ship 答案缺句 / b2b_moq；ru factory q0/ship/b2b_moq；fr brand-global-presence taglines；EN factory-equipment.yaml:51 `UV-resistantwater-based` 拼写。
+
+**仍遗留（下次内容审计）**：fr/partners.yaml:12 丢 partner 类型列举（缩短）；factory stats[2] 标签全 locale 为 "Boote/Barcos/…" 而 EN 为 "SUPs produced annually"（语言惯例差异，暂不动）；de/academy Intermediate/Advanced 均译 "Fortgeschritten"；ru production_flow `stage: Один` vs EN '01'；**ko/research-drop-stitch + research-sup-thickness（含 \uFEFF）+ rf-welding:34 整文件/整行韩语乱码，需韩语专修分片**。另：factory.yaml `oem_section` 为全语言死数据（页面不渲染，case 内容实际来自 evidence/case-studies），el/ar 修复仅数据层面。
 
 #### L19. em dash 全站规范化：内容源远不止 YAML；三类"隐形"模式（2026-09 em dash 批次）
 
@@ -424,6 +426,14 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 #### L18. 疤痕扫描必须覆盖列表行；损坏链同样命中 EN 根文件（2026-09 分片 19–23）
 
 三点教训：① **扫描正则只匹配 `key: value` 会漏掉 `- item` 列表行**——分片 23 的 solutions-paddle-clubs / resorts-hotels 套餐列表分隔符疤（2/3 空格及单空格丢失 " + "）就是列表行漏扫后补查发现的；scanner 必须同时匹配 `/^\s*(\w+:|-\s)/`。② **损坏链（db928cfa）不只命中翻译，EN 根文件同样被删令牌**（"Our factory is  certified"、"50 kN,  / ASTM D751"），且 initial commit 即已损坏 → git 历史里没有干净版本，只能依据站点上下文恢复（ISO 9001 质量体系、UKCA+FCC 配对、"ISO & CE-certified" 互文）；翻译镜像恢复时按各语言惯用复合词形（de "ISO 9001-zertifiziert"、fi "ISO 9001 -sertifioitu"、ru "по ISO 9001"）。③ prettier 会重排新写的 `_ops-data-*.cjs`（不改字符串内容），重排后必须重跑 `--dry` 确认 646 op 全部 still-pass。
+
+#### L20. 四个批次级陷阱：PS 编码、YAML 折叠块、恒等 op、列表前缀（2026-09 分片 26–29）
+
+① **PowerShell Get-Content 默认按 GBK 读 UTF-8 文件**——修 `_ops-data-28.cjs` 时 `Get-Content $f -Raw` 忘带 `-Encoding UTF8`，读入即乱码、`Set-Content -Encoding UTF8` 回写双重编码，41 个含非 ASCII rep 的 op 全毁（数据文件本身未动，靠 builder 从 `git show HEAD:` 重建分片恢复）。**任何含非 ASCII 的文件改动一律走 node 脚本，PowerShell 只允许在显式 `-Encoding UTF8`（读写都要）或纯 ASCII 场景使用。**
+② **YAML 折叠块（`description: >-` + 缩进续行）的 find 必须整体覆盖**——只匹配到 `>-` 标记行就替换，续行成为孤儿残留并悄悄拼进新值（8 个 locale 的 quality UV desc 旧文未删、语义拼接；prettier 又把多行 plain scalar 重排导致 rep 匹配断裂才暴露）。**构建 op 时若目标行以 `: >-`/`: >`/`: |` 结束，必须把后续更深缩进行全部纳入 find。**
+③ **恒等 op（find === rep）构建期必须过滤**——sol-dist 区域名部分 locale 与 EN 相同（es/it "Asia"、it "Oceania/Africa" 等 9 个），引擎对 `rep.includes(find) && repCount>=n` 判为 already → dry 计数 247/9 对不上 256；builder 的 `add()` 加 `if (find === rep) return`。
+④ **列表项前缀提取用 `/^\s*-?\s*/` 而非 `/^\s*/`**——el factory cases 的 `- challenge:` 行，`\s*` 丢掉 `- ` 标记导致 rep 缩进错位、YAML 解析失败（solution 悬挂为坏缩进映射）。
+⑤ 补充：**重建已应用分片时，find 要从 `git show HEAD:`（补丁前的已提交态）提取**，builder 验证允许 `fc===0 && rep 已存在` 视为 already；对"结构漂移敏感"的 op（如 title 行追加后缀）要加防重入条件（`titleLine.includes('Brand & OEM')` 即跳过），否则重跑会生成 `... & OEM & OEM` 的破坏性 op。
 
 ---
 
