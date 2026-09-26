@@ -1,0 +1,1872 @@
+// shard 34: digit-strip numeric corruption restore (factory-capacity/oem/process/guides/gallery/factory shift)
+// + brand normalization (ja katakana x67, standalone afar x281 in it/ko/nl/no/pt/sv/th, Hyplon x2)
+// + brand-team SVG data URIs x7 locales + contact country codes x5 + EN trust ISO 9001 titles
+// + fr spec drift x3 + ja cert-name gaps x2 + ar reason titles x4 + es RIB testimonial + ko mistranslation x6
+module.exports = [
+  {
+    f: 'src/data/pages/ar/brand-team.yaml',
+    find: "title: ' بلد'",
+    rep: "title: 'أكثر من 50 دولة'",
+  },
+  {
+    f: 'src/data/pages/ar/brand-why-afarer.yaml',
+    find: '- title: جودة معتمدة',
+    rep: '- title: 3. جودة معتمدة',
+  },
+  {
+    f: 'src/data/pages/ar/brand-why-afarer.yaml',
+    find: '- title: Roland LTD',
+    rep: '- title: 5. الخدمات اللوجستية العالمية',
+  },
+  {
+    f: 'src/data/pages/ar/brand-why-afarer.yaml',
+    find: "'دعم مدى الحياة. '",
+    rep: "'6. دعم مدى الحياة'",
+  },
+  {
+    f: 'src/data/pages/ar/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/cs/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/da/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/da/factory-oem-capability.yaml',
+    find: '5–0 enheder',
+    rep: '5–10 enheder',
+  },
+  {
+    f: 'src/data/pages/da/factory-process.yaml',
+    find: '1– dage',
+    rep: '1–2 dage',
+    n: 4,
+  },
+  {
+    f: 'src/data/pages/da/factory-process.yaml',
+    find: 'dage per board',
+    rep: 'dage pr. board',
+  },
+  {
+    f: 'src/data/pages/de/brand-team.yaml',
+    find: 'data:image/svg xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><circle cx="64" cy="64" r="64" fill="#e5e7eb"/><circle cx="64" cy="48" r="18" fill="#9ca3af"/><ellipse cx="64" cy="100" rx="32" ry="20" fill="#9ca3af"/></svg>',
+    rep: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"%3E%3Ccircle cx="64" cy="64" r="64" fill="%23e5e7eb"/%3E%3Ccircle cx="64" cy="48" r="18" fill="%239ca3af"/%3E%3Cellipse cx="64" cy="100" rx="32" ry="20" fill="%239ca3af"/%3E%3C/svg%3E',
+    n: 4,
+  },
+  {
+    f: 'src/data/pages/de/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/de/factory-capacity.yaml',
+    find: '30–5',
+    rep: '30–45',
+  },
+  {
+    f: 'src/data/pages/de/factory-oem-capability.yaml',
+    find: '30–5',
+    rep: '30–45',
+    n: 2,
+  },
+  {
+    f: 'src/data/pages/de/factory.yaml',
+    find: '07:00–17:30',
+    rep: '07:00–15:30',
+  },
+  {
+    f: 'src/data/pages/de/guides.yaml',
+    find: '11–2',
+    rep: '11–12',
+    n: 2,
+  },
+  {
+    f: 'src/data/pages/el/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/es/brand-team.yaml',
+    find: 'data:image/svg xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><circle cx="64" cy="64" r="64" fill="#e5e7eb"/><circle cx="64" cy="48" r="18" fill="#9ca3af"/><ellipse cx="64" cy="100" rx="32" ry="20" fill="#9ca3af"/></svg>',
+    rep: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"%3E%3Ccircle cx="64" cy="64" r="64" fill="%23e5e7eb"/%3E%3Ccircle cx="64" cy="48" r="18" fill="%239ca3af"/%3E%3Cellipse cx="64" cy="100" rx="32" ry="20" fill="%239ca3af"/%3E%3C/svg%3E',
+    n: 4,
+  },
+  {
+    f: 'src/data/pages/es/brand-why-afarer.yaml',
+    find: 'Sus SUP Hypalon han estado',
+    rep: 'Sus RIB Hypalon han estado',
+  },
+  {
+    f: 'src/data/pages/es/contact.yaml',
+    find: 'default_country_code: Uno',
+    rep: "default_country_code: '+1'",
+  },
+  {
+    f: 'src/data/pages/es/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/es/factory-capacity.yaml',
+    find: 'de 50 a 0 tablas',
+    rep: 'de 50 a 80 tablas',
+  },
+  {
+    f: 'src/data/pages/es/factory.yaml',
+    find: '07:00–17:30',
+    rep: '07:00–15:30',
+  },
+  {
+    f: 'src/data/pages/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/fi/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/fi/factory-oem-capability.yaml',
+    find: '100–00 kpl',
+    rep: '100–200 kpl',
+  },
+  {
+    f: 'src/data/pages/fi/gallery.yaml',
+    find: '3,3 m —,5 m',
+    rep: '3,3 m – 7,5 m',
+  },
+  {
+    f: 'src/data/pages/fr/factory-capacity.yaml',
+    find: '5–50 unités',
+    rep: '5–10 unités',
+  },
+  {
+    f: 'src/data/pages/fr/factory-equipment.yaml',
+    find: '0,5–4 m/min',
+    rep: '0,5–5 m/min',
+  },
+  {
+    f: 'src/data/pages/fr/factory-quality-lab.yaml',
+    find: '0–30 psi',
+    rep: '0–50 psi',
+  },
+  {
+    f: 'src/data/pages/it/academy.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/afarer-story.yaml',
+    find: 'afar,',
+    rep: 'afarer,',
+  },
+  {
+    f: 'src/data/pages/it/afarer-story.yaml',
+    find: "afar'",
+    rep: "afarer'",
+    n: 2,
+  },
+  {
+    f: 'src/data/pages/it/brand-global-presence.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/brand-marine-expertise.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/brand-team.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/brand-team.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/it/brand-team.yaml',
+    find: 'data:image/svg xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><circle cx="64" cy="64" r="64" fill="#e5e7eb"/><circle cx="64" cy="48" r="18" fill="#9ca3af"/><ellipse cx="64" cy="100" rx="32" ry="20" fill="#9ca3af"/></svg>',
+    rep: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"%3E%3Ccircle cx="64" cy="64" r="64" fill="%23e5e7eb"/%3E%3Ccircle cx="64" cy="48" r="18" fill="%239ca3af"/%3E%3Cellipse cx="64" cy="100" rx="32" ry="20" fill="%239ca3af"/%3E%3C/svg%3E',
+    n: 4,
+  },
+  {
+    f: 'src/data/pages/it/brand-why-afarer.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/brand-why-afarer.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/brand-why-afarer.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/it/brand.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/brand.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/brand.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/it/cases.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/certifications.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/commercial-workboats.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/community.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/contact.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/contact.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/it/disaster-relief.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/it/factory-capacity.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/factory-equipment.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/factory-process.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/factory-quality-lab.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/factory.yaml',
+    find: '07:00–17:30',
+    rep: '07:00–15:30',
+  },
+  {
+    f: 'src/data/pages/it/factory.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/gallery.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/guides.yaml',
+    find: '11–2',
+    rep: '11–12',
+  },
+  {
+    f: 'src/data/pages/it/guides.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/journal.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/knowledge.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/learn.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/lifestyle.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/maritime-safety-defense.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/media.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/media.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/media.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/it/news.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/news.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/it/partners.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/quality.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/safety.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/search-and-rescue.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/it/size-guide.yaml',
+    find: 'afar.',
+    rep: 'afarer.',
+  },
+  {
+    f: 'src/data/pages/it/solutions.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/technology.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/trust.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/it/warranty.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/ja/brand-global-presence.yaml',
+    find: 'アファーラー',
+    rep: 'afarer',
+  },
+  {
+    f: 'src/data/pages/ja/brand-why-afarer.yaml',
+    find: 'アファーラー',
+    rep: 'afarer',
+    n: 3,
+  },
+  {
+    f: 'src/data/pages/ja/certifications.yaml',
+    find: 'アファーラー',
+    rep: 'afarer',
+  },
+  {
+    f: 'src/data/pages/ja/commercial-workboats.yaml',
+    find: '当社工場は 認証を受けています。 を含む商業認証は',
+    rep: '当社工場は ISO 9001 認証を受けています。UKCA、FCC を含む商業認証は',
+  },
+  {
+    f: 'src/data/pages/ja/commercial-workboats.yaml',
+    find: 'アクアフェアラー',
+    rep: 'afarer',
+    n: 9,
+  },
+  {
+    f: 'src/data/pages/ja/community.yaml',
+    find: 'アクアフェアラー',
+    rep: 'afarer',
+    n: 6,
+  },
+  {
+    f: 'src/data/pages/ja/disaster-relief.yaml',
+    find: 'アクアフェアラー',
+    rep: 'afarer',
+    n: 6,
+  },
+  {
+    f: 'src/data/pages/ja/factory-capacity.yaml',
+    find: '15〜0日',
+    rep: '15〜20日',
+  },
+  {
+    f: 'src/data/pages/ja/factory-capacity.yaml',
+    find: '30〜5日',
+    rep: '30〜45日',
+  },
+  {
+    f: 'src/data/pages/ja/factory-oem-capability.yaml',
+    find: '5〜0台',
+    rep: '5〜10台',
+  },
+  {
+    f: 'src/data/pages/ja/factory-oem-capability.yaml',
+    find: '30〜5日',
+    rep: '30〜45日',
+  },
+  {
+    f: 'src/data/pages/ja/factory-oem-capability.yaml',
+    find: '20〜0日',
+    rep: '20〜30日',
+  },
+  {
+    f: 'src/data/pages/ja/factory.yaml',
+    find: 'アクアフェアラー',
+    rep: 'afarer',
+    n: 2,
+  },
+  {
+    f: 'src/data/pages/ja/gallery.yaml',
+    find: 'の.3m。.5mの',
+    rep: 'の3.3m～7.5mの',
+  },
+  {
+    f: 'src/data/pages/ja/guides.yaml',
+    find: '11〜2',
+    rep: '11〜12',
+    n: 2,
+  },
+  {
+    f: 'src/data/pages/ja/knowledge.yaml',
+    find: 'アクアフェアラー',
+    rep: 'afarer',
+    n: 2,
+  },
+  {
+    f: 'src/data/pages/ja/maritime-safety-defense.yaml',
+    find: 'アクアフェアラー',
+    rep: 'afarer',
+    n: 8,
+  },
+  {
+    f: 'src/data/pages/ja/partners.yaml',
+    find: 'アファーラー',
+    rep: 'afarer',
+  },
+  {
+    f: 'src/data/pages/ja/rf-welding.yaml',
+    find: 'Hyplon',
+    rep: 'Hypalon',
+  },
+  {
+    f: 'src/data/pages/ja/search-and-rescue.yaml',
+    find: 'アクアフェアラー',
+    rep: 'afarer',
+    n: 7,
+  },
+  {
+    f: 'src/data/pages/ja/tourism-recreation.yaml',
+    find: '当社工場は 認証を受けています',
+    rep: '当社工場は ISO 9001 認証を受けています',
+  },
+  {
+    f: 'src/data/pages/ja/tourism-recreation.yaml',
+    find: 'アクアフェアラー',
+    rep: 'afarer',
+    n: 10,
+  },
+  {
+    f: 'src/data/pages/ja/trust.yaml',
+    find: 'アクアフェアラー',
+    rep: 'afarer',
+    n: 11,
+  },
+  {
+    f: 'src/data/pages/ko/afarer-story.yaml',
+    find: 'afar의',
+    rep: 'afarer의',
+  },
+  {
+    f: 'src/data/pages/ko/brand-global-presence.yaml',
+    find: '전 세계적으로 더 먼 곳의 보트가',
+    rep: '전 세계적으로 afarer의 보트가',
+  },
+  {
+    f: 'src/data/pages/ko/brand-marine-expertise.yaml',
+    find: 'afar는',
+    rep: 'afarer는',
+  },
+  {
+    f: 'src/data/pages/ko/brand-team.yaml',
+    find: 'afar는',
+    rep: 'afarer는',
+  },
+  {
+    f: 'src/data/pages/ko/brand-why-afarer.yaml',
+    find: '글로벌 브랜드를 선택해야 하는 7가지 이유<br />더 먼 곳을 선택하세요',
+    rep: '글로벌 브랜드가<br />afarer를 선택하는 7가지 이유',
+  },
+  {
+    f: 'src/data/pages/ko/brand-why-afarer.yaml',
+    find: '더 먼 곳을 선택하는 이유',
+    rep: 'afarer를 선택하는 이유',
+  },
+  {
+    f: 'src/data/pages/ko/brand-why-afarer.yaml',
+    find: 'afar인',
+    rep: 'afarer인',
+  },
+  {
+    f: 'src/data/pages/ko/brand-why-afarer.yaml',
+    find: 'afar를',
+    rep: 'afarer를',
+  },
+  {
+    f: 'src/data/pages/ko/brand-why-afarer.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/ko/cases.yaml',
+    find: 'afar가',
+    rep: 'afarer가',
+  },
+  {
+    f: 'src/data/pages/ko/commercial-workboats.yaml',
+    find: 'afar는',
+    rep: 'afarer는',
+  },
+  {
+    f: 'src/data/pages/ko/contact.yaml',
+    find: 'afar에',
+    rep: 'afarer에',
+  },
+  {
+    f: 'src/data/pages/ko/disaster-relief.yaml',
+    find: 'afar는',
+    rep: 'afarer는',
+  },
+  {
+    f: 'src/data/pages/ko/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/ko/factory-capacity.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/ko/factory-equipment.yaml',
+    find: 'afar의',
+    rep: 'afarer의',
+  },
+  {
+    f: 'src/data/pages/ko/factory-oem-capability.yaml',
+    find: '5–0대',
+    rep: '5–10대',
+  },
+  {
+    f: 'src/data/pages/ko/factory-process.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/ko/factory-quality-lab.yaml',
+    find: 'afar의',
+    rep: 'afarer의',
+  },
+  {
+    f: 'src/data/pages/ko/gallery.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/ko/guides.yaml',
+    find: 'afar의',
+    rep: 'afarer의',
+  },
+  {
+    f: 'src/data/pages/ko/journal.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/ko/knowledge.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/ko/learn.yaml',
+    find: 'afar와',
+    rep: 'afarer와',
+  },
+  {
+    f: 'src/data/pages/ko/lifestyle.yaml',
+    find: 'afar의',
+    rep: 'afarer의',
+  },
+  {
+    f: 'src/data/pages/ko/maritime-safety-defense.yaml',
+    find: 'afar는',
+    rep: 'afarer는',
+  },
+  {
+    f: 'src/data/pages/ko/media.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+    n: 2,
+  },
+  {
+    f: 'src/data/pages/ko/news.yaml',
+    find: 'afar의',
+    rep: 'afarer의',
+  },
+  {
+    f: 'src/data/pages/ko/partners.yaml',
+    find: '더 먼 파트너가 되세요',
+    rep: 'afarer 파트너가 되세요',
+  },
+  {
+    f: 'src/data/pages/ko/partners.yaml',
+    find: '파트너가 더 먼 곳을 선택하는 이유',
+    rep: '파트너가 afarer를 선택하는 이유',
+  },
+  {
+    f: 'src/data/pages/ko/partners.yaml',
+    find: '더 먼 파트너가 될 준비가 되셨나요?',
+    rep: 'afarer 파트너가 될 준비가 되셨나요?',
+  },
+  {
+    f: 'src/data/pages/ko/partners.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/ko/pvc-fabric-lab.yaml',
+    find: 'Hyplon',
+    rep: 'Hypalon',
+  },
+  {
+    f: 'src/data/pages/ko/quality.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/ko/safety.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/ko/search-and-rescue.yaml',
+    find: 'afar는',
+    rep: 'afarer는',
+  },
+  {
+    f: 'src/data/pages/ko/size-guide.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/ko/solutions-retail-partners.yaml',
+    find: '보드당 ~–500+ 수익',
+    rep: '보드당 ~$350–500+ 수익',
+  },
+  {
+    f: 'src/data/pages/ko/solutions.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/ko/technology.yaml',
+    find: 'afar의',
+    rep: 'afarer의',
+  },
+  {
+    f: 'src/data/pages/ko/trust.yaml',
+    find: 'afar를',
+    rep: 'afarer를',
+  },
+  {
+    f: 'src/data/pages/ko/warranty.yaml',
+    find: 'afar의',
+    rep: 'afarer의',
+  },
+  {
+    f: 'src/data/pages/nl/academy.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/afarer-story.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/afarer-story.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/nl/brand-global-presence.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/brand-marine-expertise.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/brand-team.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+    n: 2,
+  },
+  {
+    f: 'src/data/pages/nl/brand-team.yaml',
+    find: 'data:image/svg xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><circle cx="64" cy="64" r="64" fill="#e5e7eb"/><circle cx="64" cy="48" r="18" fill="#9ca3af"/><ellipse cx="64" cy="100" rx="32" ry="20" fill="#9ca3af"/></svg>',
+    rep: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"%3E%3Ccircle cx="64" cy="64" r="64" fill="%23e5e7eb"/%3E%3Ccircle cx="64" cy="48" r="18" fill="%239ca3af"/%3E%3Cellipse cx="64" cy="100" rx="32" ry="20" fill="%239ca3af"/%3E%3C/svg%3E',
+    n: 4,
+  },
+  {
+    f: 'src/data/pages/nl/brand-why-afarer.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+    n: 3,
+  },
+  {
+    f: 'src/data/pages/nl/brand.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/brand.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/nl/brand.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/nl/cases.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/certifications.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/nl/commercial-workboats.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/community.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/contact.yaml',
+    find: 'default_country_code: Een',
+    rep: "default_country_code: '+1'",
+  },
+  {
+    f: 'src/data/pages/nl/contact.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/contact.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/nl/disaster-relief.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/nl/factory-capacity.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/nl/factory-equipment.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/nl/factory-process.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/nl/factory-quality-lab.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/nl/factory.yaml',
+    find: '07:00–17:30',
+    rep: '07:00–15:30',
+  },
+  {
+    f: 'src/data/pages/nl/factory.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/nl/gallery.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/nl/guides.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/journal.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/knowledge.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/learn.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/nl/lifestyle.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/nl/maritime-safety-defense.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/media.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/nl/media.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+    n: 2,
+  },
+  {
+    f: 'src/data/pages/nl/news.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/nl/news.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/partners.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/nl/quality.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/randdcenter.yaml',
+    find: 'Afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/safety.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/nl/search-and-rescue.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/size-guide.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/nl/solutions.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/technology.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/nl/trust.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/nl/warranty.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/no/academy.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/afarer-story.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/afarer-story.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/no/brand-global-presence.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/brand-marine-expertise.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/brand-team.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+    n: 2,
+  },
+  {
+    f: 'src/data/pages/no/brand-why-afarer.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/brand-why-afarer.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/no/brand-why-afarer.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/no/brand.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/brand.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/no/brand.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/no/cases.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/commercial-workboats.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/community.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/no/contact.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/contact.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/no/disaster-relief.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/no/factory-equipment.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/no/factory-oem-capability.yaml',
+    find: '30–5',
+    rep: '30–45',
+  },
+  {
+    f: 'src/data/pages/no/factory-quality-lab.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/no/learn.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/no/maritime-safety-defense.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/media.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/no/media.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/news.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/no/news.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/partners.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/no/search-and-rescue.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/no/size-guide.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/no/trust.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pl/brand-team.yaml',
+    find: 'data:image/svg xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><circle cx="64" cy="64" r="64" fill="#e5e7eb"/><circle cx="64" cy="48" r="18" fill="#9ca3af"/><ellipse cx="64" cy="100" rx="32" ry="20" fill="#9ca3af"/></svg>',
+    rep: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"%3E%3Ccircle cx="64" cy="64" r="64" fill="%23e5e7eb"/%3E%3Ccircle cx="64" cy="48" r="18" fill="%239ca3af"/%3E%3Cellipse cx="64" cy="100" rx="32" ry="20" fill="%239ca3af"/%3E%3C/svg%3E',
+    n: 4,
+  },
+  {
+    f: 'src/data/pages/pl/contact.yaml',
+    find: 'default_country_code: Jeden',
+    rep: "default_country_code: '+1'",
+  },
+  {
+    f: 'src/data/pages/pl/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/pl/factory-oem-capability.yaml',
+    find: '20–0 dni',
+    rep: '20–30 dni',
+  },
+  {
+    f: 'src/data/pages/pl/factory.yaml',
+    find: '07:00–17:30',
+    rep: '07:00–15:30',
+  },
+  {
+    f: 'src/data/pages/pt/academy.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/afarer-story.yaml',
+    find: 'afar,',
+    rep: 'afarer,',
+  },
+  {
+    f: 'src/data/pages/pt/afarer-story.yaml',
+    find: "afar'",
+    rep: "afarer'",
+    n: 2,
+  },
+  {
+    f: 'src/data/pages/pt/brand-global-presence.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/pt/brand-marine-expertise.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/pt/brand-team.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/pt/brand-team.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/pt/brand-team.yaml',
+    find: 'data:image/svg xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><circle cx="64" cy="64" r="64" fill="#e5e7eb"/><circle cx="64" cy="48" r="18" fill="#9ca3af"/><ellipse cx="64" cy="100" rx="32" ry="20" fill="#9ca3af"/></svg>',
+    rep: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"%3E%3Ccircle cx="64" cy="64" r="64" fill="%23e5e7eb"/%3E%3Ccircle cx="64" cy="48" r="18" fill="%239ca3af"/%3E%3Cellipse cx="64" cy="100" rx="32" ry="20" fill="%239ca3af"/%3E%3C/svg%3E',
+    n: 4,
+  },
+  {
+    f: 'src/data/pages/pt/brand-why-afarer.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/pt/brand-why-afarer.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/brand-why-afarer.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/pt/brand.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/pt/brand.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/brand.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/pt/cases.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/pt/certifications.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/commercial-workboats.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/pt/community.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/contact.yaml',
+    find: 'default_country_code: Um',
+    rep: "default_country_code: '+1'",
+  },
+  {
+    f: 'src/data/pages/pt/contact.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/pt/contact.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/pt/disaster-relief.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/pt/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/pt/factory-capacity.yaml',
+    find: '50-0 pranchas',
+    rep: '50-80 pranchas',
+  },
+  {
+    f: 'src/data/pages/pt/factory-capacity.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/factory-equipment.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/factory-process.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/pt/factory-quality-lab.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/factory.yaml',
+    find: '07:00–17:30',
+    rep: '07:00–15:30',
+  },
+  {
+    f: 'src/data/pages/pt/factory.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/gallery.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/guides.yaml',
+    find: '11–2',
+    rep: '11–12',
+  },
+  {
+    f: 'src/data/pages/pt/guides.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/journal.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/knowledge.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/learn.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/lifestyle.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/maritime-safety-defense.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/pt/media.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/pt/media.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/media.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/pt/news.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/news.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/pt/partners.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/quality.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/safety.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/search-and-rescue.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/pt/size-guide.yaml',
+    find: 'afar.',
+    rep: 'afarer.',
+  },
+  {
+    f: 'src/data/pages/pt/solutions.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/technology.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/trust.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/pt/warranty.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/ro/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/ru/brand-team.yaml',
+    find: 'data:image/svg xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><circle cx="64" cy="64" r="64" fill="#e5e7eb"/><circle cx="64" cy="48" r="18" fill="#9ca3af"/><ellipse cx="64" cy="100" rx="32" ry="20" fill="#9ca3af"/></svg>',
+    rep: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"%3E%3Ccircle cx="64" cy="64" r="64" fill="%23e5e7eb"/%3E%3Ccircle cx="64" cy="48" r="18" fill="%239ca3af"/%3E%3Cellipse cx="64" cy="100" rx="32" ry="20" fill="%239ca3af"/%3E%3C/svg%3E',
+    n: 4,
+  },
+  {
+    f: 'src/data/pages/ru/contact.yaml',
+    find: 'default_country_code: Один',
+    rep: "default_country_code: '+1'",
+  },
+  {
+    f: 'src/data/pages/ru/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/ru/factory.yaml',
+    find: '07:00–17:30',
+    rep: '07:00–15:30',
+  },
+  {
+    f: 'src/data/pages/sv/academy.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/afarer-story.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/afarer-story.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/sv/brand-global-presence.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/brand-marine-expertise.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/brand-team.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+    n: 2,
+  },
+  {
+    f: 'src/data/pages/sv/brand-why-afarer.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/brand-why-afarer.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/sv/brand-why-afarer.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/sv/brand.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/brand.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/sv/brand.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/sv/cases.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/commercial-workboats.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/community.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/contact.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/contact.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/sv/disaster-relief.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/sv/factory-equipment.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/sv/factory-oem-capability.yaml',
+    find: '30–5',
+    rep: '30–45',
+  },
+  {
+    f: 'src/data/pages/sv/factory-quality-lab.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/sv/learn.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/sv/maritime-safety-defense.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/media.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/sv/media.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/news.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/sv/news.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/partners.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/sv/search-and-rescue.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/sv/size-guide.yaml',
+    find: 'afar-',
+    rep: 'afarer-',
+  },
+  {
+    f: 'src/data/pages/sv/trust.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/afarer-story.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/afarer-story.yaml',
+    find: "afar'",
+    rep: "afarer'",
+    n: 2,
+  },
+  {
+    f: 'src/data/pages/th/brand-global-presence.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/brand-marine-expertise.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/brand-team.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/brand-team.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/th/brand-why-afarer.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/brand-why-afarer.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/brand-why-afarer.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/th/brand.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/brand.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/brand.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/th/cases.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/certifications.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/commercial-workboats.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/community.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/contact.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/contact.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/th/disaster-relief.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/factory-capacity.yaml',
+    find: '15–10',
+    rep: '15–20',
+  },
+  {
+    f: 'src/data/pages/th/factory-capacity.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/factory-equipment.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/factory-process.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/factory-quality-lab.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/factory.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/gallery.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/guides.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/journal.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/knowledge.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/learn.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/lifestyle.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/maritime-safety-defense.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/media.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/media.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/media.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/th/news.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/news.yaml',
+    find: "afar'",
+    rep: "afarer'",
+  },
+  {
+    f: 'src/data/pages/th/partners.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/quality.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/safety.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/search-and-rescue.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/size-guide.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/th/solutions.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/technology.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/trust.yaml',
+    find: 'afar:',
+    rep: 'afarer:',
+  },
+  {
+    f: 'src/data/pages/th/warranty.yaml',
+    find: 'afar ',
+    rep: 'afarer ',
+  },
+  {
+    f: 'src/data/pages/tr/factory-capacity.yaml',
+    find: '15~0 gün',
+    rep: '15~20 gün',
+  },
+  {
+    f: 'src/data/pages/tr/factory-capacity.yaml',
+    find: '30~5 gün',
+    rep: '30~45 gün',
+  },
+  {
+    f: 'src/data/pages/trust.yaml',
+    find: "- title: ''",
+    rep: "- title: 'ISO 9001'",
+    n: 2,
+  },
+];

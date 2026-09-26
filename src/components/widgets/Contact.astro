@@ -219,7 +219,10 @@ const rows = Object.keys(grouped)
                                       aria-label={_ui('contact.countryCode', 'Country code')}
                                     >
                                       {countryCodes.map((c) => (
-                                        <option value={c.code} selected={c.code === defaultCountryCode}>
+                                        <option
+                                          value={c.code}
+                                          selected={String(c.code) === (defaultCountryCode || '').replace(/^\+/, '')}
+                                        >
                                           {c.label}
                                         </option>
                                       ))}
@@ -345,7 +348,10 @@ const rows = Object.keys(grouped)
                                 aria-label={_ui('contact.countryCode', 'Country code')}
                               >
                                 {countryCodes.map((c) => (
-                                  <option value={c.code} selected={c.code === defaultCountryCode}>
+                                  <option
+                                    value={c.code}
+                                    selected={String(c.code) === (defaultCountryCode || '').replace(/^\+/, '')}
+                                  >
                                     {c.label}
                                   </option>
                                 ))}
