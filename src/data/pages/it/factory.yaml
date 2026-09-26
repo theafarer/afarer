@@ -112,10 +112,10 @@ qc_section:
     - step: '1'
       title: Ispezione Materie Prime
       desc: I tessuti PVC, Hypalon e drop-stitch subiscono test di trazione (ASTM D751), propagazione strappo e verifica resistenza UV prima che qualsiasi lotto entri in produzione.
-    - step: Due
+    - step: '2'
       title: Test Ritenzione Aria 48 Ore
       desc: Ogni camera tubolare è gonfiata al 125% della pressione nominale e mantenuta per 48 ore. Un calo di pressione sotto il 5% attiva il rigetto automatico e la reispezione delle giunture.
-    - step: Tre
+    - step: '3'
       title: Test Carico e Bilanciamento
       desc: Le imbarcazioni finite sono caricate alla massima capacità nominale e testate per stabilità, bordo libero e manovrabilità. Ogni imbarcazione è testata in acqua prima dell'ispezione finale.
 oem_section:
@@ -189,13 +189,13 @@ production_flow:
 workforce:
   tagline: La Nostra Gente
   title: Forza lavoro e competenze
-  engineers: Venticinque
+  engineers: '25+'
   engineers_detail: Ingegneri in R&S, progettazione stampi, laboratorio dei materiali e ingegneria di produzione. Media di 7 anni nella produzione di gonfiabili.
   shift_pattern: 2 turni/giorno (07:00–15:30, 15:30–00:00). Turno di notte opzionale per ordini urgenti.
   training: Formazione QC mensile, esercitazioni di sicurezza trimestrali, valutazione delle competenze annuale. I nuovi assunti completano un'induzione di 40 ore prima di lavorare sulla linea di produzione.
   departments:
     - name: R&D & Engineering
-      count: Venticinque
+      count: '25+'
       role: Progettazione del prodotto, ingegneria degli stampi, laboratorio dei materiali
     - name: Cutting & Material Prep
       count: 15

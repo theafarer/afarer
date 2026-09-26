@@ -107,13 +107,13 @@ qc_section:
   title: Prüf- & Qualitätssicherungsprozess
   subtitle: Jedes Boot durchläuft vor dem Versand obligatorische Tests. Unser Qualitätslabor arbeitet unabhängig von der Produktion und berichtet direkt an das Management.
   steps:
-    - step: Eins
+    - step: '1'
       title: Rohmaterialprüfung
       desc: PVC, Hypalon und Drop-Stitch-Gewebe werden vor dem Produktionseinsatz einer Zugprüfung (ASTM D751), Weiterreißprüfung und UV-Beständigkeitsprüfung unterzogen.
-    - step: Zwei
+    - step: '2'
       title: 48-Stunden-Luftdichtheitstest
       desc: Jede Schlauchkammer wird auf 125 % des Nenndrucks aufgepumpt und 48 Stunden gehalten. Ein Druckabfall unter 5 % löst automatische Ablehnung und Nahtnachprüfung aus.
-    - step: Drei
+    - step: '3'
       title: Last- & Gleichgewichtsprüfung
       desc: Fertige Boote werden bis zur maximalen Nennkapazität beladen und auf Stabilität, Freibord und Fahrverhalten geprüft. Jedes Schiff wird vor der Endkontrolle einem Wassertest unterzogen.
 oem_section:
@@ -187,13 +187,13 @@ production_flow:
 workforce:
   tagline: Unser Volk
   title: Belegschaft & Fachwissen
-  engineers: Fünfundzwanzig
+  engineers: '25+'
   engineers_detail: Ingenieure in Forschung und Entwicklung, Werkzeugbau, Materiallabor und Produktionsingenieurwesen. Durchschnittlich 7 Jahre Erfahrung in der Herstellung von aufblasbaren Produkten.
   shift_pattern: 2 Schichten/Tag (07:00–15:30, 15:30–00:00). Optionale Nachtschicht für dringende Aufträge.
   training: Monatliches QC-Training, vierteljährliche Sicherheitsübungen, jährliche Kompetenzbewertung. Neue Mitarbeiter absolvieren eine 40-stündige Einführung, bevor sie an der Produktionslinie arbeiten.
   departments:
     - name: R&D & Engineering
-      count: Fünfundzwanzig
+      count: '25+'
       role: Produktdesign, Werkzeugtechnik, Materiallabor
     - name: Cutting & Material Prep
       count: 15

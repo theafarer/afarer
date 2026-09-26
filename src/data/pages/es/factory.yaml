@@ -18,7 +18,7 @@ intro:
     Al integrar el diseño, la ingeniería, el prototipado, la fabricación y las pruebas bajo un mismo techo, eliminamos las ineficiencias de la fabricación por contrato y mantenemos un control directo sobre la calidad de construcción, la selección de materiales y los plazos de entrega. Cada barco que
     sale de nuestro taller es construido por nuestra gente, con nuestros equipos, según nuestros estándares.
 stats:
-  - value: 12.000 m2
+  - value: 12.000 m²
     label: Superficie de fabricación
   - value: 200+
     label: Trabajadores cualificados
@@ -109,13 +109,13 @@ qc_section:
   title: Proceso de pruebas y garantía de calidad
   subtitle: Cada barco se somete a pruebas obligatorias antes del envío. Nuestro laboratorio de calidad opera de forma independiente de la producción y reporta directamente a la dirección.
   steps:
-    - step: Uno
+    - step: '1'
       title: Inspección de materias primas
       desc: Las telas de PVC, Hypalon y drop-stitch se someten a pruebas de tracción (ASTM D751), propagación de desgarros y verificación de resistencia a los rayos UV antes de que cualquier lote entre en producción.
-    - step: Dos
+    - step: '2'
       title: Prueba de retención de aire de 48 horas
       desc: Cada cámara de tubo se infla al 125% de la presión nominal y se mantiene durante 48 horas. Una caída de presión inferior al 5% activa el rechazo automático y la reinspección de las costuras.
-    - step: Tres
+    - step: '3'
       title: Prueba de carga y equilibrio
       desc: Los barcos terminados se cargan hasta su capacidad nominal máxima y se prueban para verificar estabilidad, francobordo y manejo. Cada embarcación se prueba en el agua antes de la inspección final.
 oem_section:
@@ -195,13 +195,13 @@ production_flow:
 workforce:
   tagline: Nuestra Gente
   title: Fuerza laboral y experiencia
-  engineers: Veinticinco
+  engineers: '25+'
   engineers_detail: Ingenieros en I+D, diseño de moldes, laboratorio de materiales y ingeniería de producción. Promedio de 7 años en la fabricación de inflables.
   shift_pattern: 2 turnos/día (07:00–15:30, 15:30–00:00). Turno nocturno opcional para pedidos urgentes.
   training: Capacitación mensual de control de calidad, simulacros de seguridad trimestrales, evaluación anual de habilidades. Los nuevos empleados completan una inducción de 40 horas antes de trabajar en la línea de producción.
   departments:
     - name: R&D & Engineering
-      count: Veinticinco
+      count: '25+'
       role: Diseño de producto, ingeniería de moldes, laboratorio de materiales
     - name: Cutting & Material Prep
       count: 15
