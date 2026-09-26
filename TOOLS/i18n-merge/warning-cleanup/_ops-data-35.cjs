@@ -463,9 +463,10 @@ module.exports = [
     rep: '    - value: 15.000+\n',
   },
   {
+    // shard 37 replaced the subtitle line; carry-forward m2->m² fix to new text (TECH L22 ①)
     f: 'src/data/pages/factory.yaml',
-    find: 'subtitle: 12,000 m2 SUP factory',
-    rep: 'subtitle: 12,000 m² SUP factory',
+    find: 'subtitle: 12,000 m2 of integrated manufacturing',
+    rep: 'subtitle: 12,000 m² of integrated manufacturing',
   },
   {
     f: 'src/data/pages/factory.yaml',

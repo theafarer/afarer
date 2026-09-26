@@ -5,8 +5,8 @@ import AiQuickAnswer from '~/components/common/AiQuickAnswer.astro';
 import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `SUP Manufacturing & OEM Factory | ${SITE.name}`,
-  description: `${SITE.name} operates a 12,000 m² ISO & BSCI certified manufacturing facility in Qingdao, China. Product development and manufacturing are managed by the Aquafarer Operation Team. OEM/ODM SUP and marine accessory production. 200+ workers, 15,000+ units/yr. Transparent production flow with QC checkpoints at every stage.`,
+  title: `Factory & Manufacturing — Inflatable SUP OEM | ${SITE.name}`,
+  description: `Tour the ${SITE.name} factory: 12,000 m² plant with cutting, RF welding, printing, assembly, and quality lab for inflatable SUP and boat OEM/ODM manufacturing.`,
 };
 
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Factory' }];
@@ -49,25 +49,31 @@ const flowStages = [
     stage: '04',
     title: 'Assembly & Rigging',
     description:
-      'Boats move to final assembly where all components are mated. Each unit follows a 100-point assembly checklist.',
-    qc_check: '100-point checklist sign-off per unit, valve function test, hardware torque verification',
-    qc_threshold: 'Zero-defect policy on safety-critical items. Minor cosmetic: AQL 2.5 (ISO 2859)',
+      'Boats move to final assembly where all components are mated: hull + tubes, valves installed, D-rings, handles, fin boxes, and carry bag fitting. Each unit follows a 100-point assembly checklist.',
+    qc_check:
+      '100-point checklist sign-off per unit, valve function test (10 open/close cycles), hardware torque verification, visual inspection',
+    qc_threshold:
+      'Zero-defect policy on safety-critical items (valves, D-rings, handles). Minor cosmetic: AQL 2.5 (ISO 2859)',
   },
   {
     stage: '05',
     title: 'Pressure Testing & Quality Hold',
     description:
-      'Every chamber is inflated to 1.25x rated pressure and held for 24-48 hours. Pressure sensors log continuously.',
-    qc_check: '24h pressure hold log, sensor calibration daily, temperature-compensated pressure reading',
-    qc_threshold: 'Max 5% pressure drop over 24h. Any chamber exceeding this = 100% re-test of entire batch',
+      'Every chamber is inflated to 1.25× rated pressure (typically 20–25 PSI) and held for 24–48 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.',
+    qc_check:
+      '24h pressure hold log, sensor calibration verified daily, temperature-compensated pressure reading, seam re-test after repair',
+    qc_threshold:
+      'Max 5% pressure drop over 24h at stable temp. Any chamber exceeding this = 100% re-test of entire production batch',
   },
   {
     stage: '06',
     title: 'Final Inspection & Packing',
     description:
-      'Final visual and functional inspection. Units are vacuum-packed, boxed, and palletized for container loading.',
-    qc_check: 'Full visual inspection, accessory checklist, packaging drop test, label/barcode scan',
-    qc_threshold: 'AQL 2.5 for major defects, AQL 4.0 for minor. Zero tolerance on safety defects.',
+      'Final visual and functional inspection. Surface defects, color consistency, label/BIN verification, packaging integrity, and accessory completeness. Units are vacuum-packed, boxed, and palletized for container loading.',
+    qc_check:
+      'Full visual inspection, accessory checklist per SKU, packaging drop test (1 m, random sample), label/bar code scan verification',
+    qc_threshold:
+      'AQL 2.5 for major defects, AQL 4.0 for minor. Zero tolerance on safety defects. 100% of units visually inspected',
   },
 ];
 
@@ -75,7 +81,7 @@ const departments = [
   { name: 'R&D & Engineering', count: '25+', role: 'Product design, mold engineering, materials lab' },
   { name: 'Cutting & Prep', count: '15', role: 'CNC cutting, panel preparation, material handling' },
   { name: 'Welding & Lamination', count: '40', role: 'RF welding, hot-air welding, drop-stitch bonding' },
-  { name: 'FRP Moulds', count: '30', role: 'Fiberglass lay-up, gelcoat, vacuum bagging' },
+  { name: 'SUP Core Bonding', count: '30', role: 'Drop-stitch lamination, heat bonding, rail band fusion' },
   { name: 'Assembly & Rigging', count: '35', role: 'Final assembly, hardware installation, systems check' },
   { name: 'Quality Control', count: '12', role: 'Incoming QC, in-process QC, final inspection, lab testing' },
   { name: 'Logistics & Packing', count: '20', role: 'Packaging, container loading, export documentation' },
@@ -92,8 +98,8 @@ const workshops = [
   {
     title: 'Tube Welding & Heat Sealing',
     description:
-      'Dedicated welding workshop with heat sealing machines (laminate sealing and RF dielectric presses. Hot-air heat sealers bond and fuse PVC tube chambers, while RF welds produce high-strength airtight seams that exceed  requirements.',
-    image: 'https://assets.afarer.com/images/afarer/hero/production-workshop.webp',
+      'Dedicated welding workshop with heat sealing machines and RF dielectric presses. Hot-air heat sealers bond and fuse PVC tube chambers, while RF welds produce high-strength airtight seams that exceed ISO 6185 requirements.',
+    image: 'https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp',
   },
   {
     title: 'FRP Moulds & Composite Fabrication',
@@ -105,7 +111,7 @@ const workshops = [
     title: 'SUP Printing & Decoration',
     description:
       'SUP boards are decorated using digital printing for full-colour graphics and screen printing for logos and repeating patterns. Digital printers produce photo-quality deck designs, while screen printing delivers durable, vivid brand marks.',
-    image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-leviathan-wake-1-1200w.webp',
+    image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-medusa-glow-1-1200w.webp',
   },
   {
     title: 'Final Assembly & Rigging',
@@ -123,7 +129,7 @@ const workshops = [
 
 const equipment = [
   { name: 'Automatic PVC Cutting Machine', spec: 'CNC-controlled, 0.1 mm accuracy' },
-  { name: 'Heat Sealing Machine', spec: 'Hot-air, 200-600 °C, for tube bonding' },
+  { name: 'Heat Sealing Machine', spec: 'Hot-air, 200–300 °C, for tube bonding' },
   { name: 'RF Dielectric Welding Press', spec: '15 kW, airtight seam welding' },
   { name: 'Fiberglass Hand-Lay-Up Moulds', spec: 'SUP board moulds up to 14 ft' },
   { name: 'Digital Printer', spec: 'Full-colour SUP deck graphics' },
@@ -137,27 +143,27 @@ const equipment = [
   <JsonLd type="BreadcrumbList" breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'Factory' }]} />
   <AiQuickAnswer
     entityType="Manufacturing"
-    quickAnswer="afarer's Qingdao Operation Team operates a 12,000 m²  & BSCI-certified manufacturing facility in Qingdao, China. The factory houses 200+ skilled workers producing 15,000+ inflatable boards annually across dedicated workshops for PVC cutting, tube heat sealing, fiberglass moulds, SUP digital printing, final assembly, and quality testing. All boards undergo 48-hour air retention testing, seam peel verification, and load/balance testing before shipping."
+    quickAnswer="afarer's Qingdao Operation Team operates a 12,000 m² ISO 9001 & BSCI-certified manufacturing facility in Qingdao, China. The factory houses 200+ skilled workers producing 15,000+ inflatable boards annually across dedicated workshops for PVC cutting, tube heat sealing, fiberglass moulds, SUP digital printing, final assembly, and quality testing. All boards undergo 48-hour air retention testing, seam peel verification, and load/balance testing before shipping."
     facts={[
       { label: 'Facility Size', value: '12,000 m²' },
       { label: 'Workforce', value: '200+' },
       { label: 'Annual Output', value: '15,000+' },
-      { label: 'Certifications', value: ', BSCI, CE' },
+      { label: 'Certifications', value: 'ISO 9001, BSCI, CE' },
     ]}
   />
   <section class="px-6 sm:px-6 py-16 sm:py-20 lg:py-24 mx-auto max-w-5xl text-center">
-    <p class="text-sm font-semibold text-primary uppercase tracking-wider">{SITE.name}</p>
+    <p class="text-sm font-semibold text-primary uppercase tracking-wider">Factory</p>
     <h1 class="mt-3 text-4xl md:text-5xl font-bold">Factory & Manufacturing</h1>
-    <p class="mt-3 text-lg text-muted">12,000 m² of integrated manufacturing –from raw material to finished boat</p>
+    <p class="mt-3 text-lg text-muted">12,000 m² of integrated manufacturing — from raw material to finished boat</p>
   </section>
 
   <section class="px-6 sm:px-6 pb-16 mx-auto max-w-4xl">
     <p class="text-muted leading-relaxed">
       As the production arm of <strong>Aquafarer LLC (USA)</strong>, {SITE.name}'s Qingdao Operation Team controls every
-      stage of production –from the arrival of raw PVC and fiberglass materials to the final pre-delivery inspection of
-      the finished board. Our manufacturing facility in the Qingdao Economic Development Zone spans 12,000 square metres
-      and houses dedicated workshops for PVC cutting, tube heat sealing, fiberglass mould fabrication, SUP digital
-      printing, final assembly, and quality testing.
+      stage of production — from the arrival of raw PVC and fiberglass materials to the final pre-delivery inspection of
+      the finished boat. Our manufacturing facility in the Qingdao Economic Development Zone spans 12,000 square metres
+      and houses dedicated workshops for PVC cutting, tube heat sealing, FRP mould fabrication, SUP digital printing,
+      final assembly, and quality testing.
     </p>
     <p class="text-muted leading-relaxed mt-6">
       By integrating design, engineering, prototyping, manufacturing, and testing under one roof, we eliminate the
@@ -186,8 +192,8 @@ const equipment = [
           <h3 class="text-xl font-bold text-primary">Production Capacity</h3>
         </div>
         <p class="text-sm text-muted leading-relaxed">
-          12,000 m² facility producing <strong>15,000+ units/yr</strong> across SUP, inflatable, and safety equipment lines.
-          200+ workers, 2 shifts.
+          12,000 m² facility producing <strong>15,000+ SUPs/yr</strong> across SUP board and safety equipment lines. 200+
+          workers, 2 shifts.
         </p>
         <div class="mt-4 grid grid-cols-2 gap-2">
           <div class="text-center p-2 rounded bg-gray-50 dark:bg-gray-950">
@@ -246,8 +252,8 @@ const equipment = [
           <h3 class="text-xl font-bold text-primary">OEM/ODM Capability</h3>
         </div>
         <p class="text-sm text-muted leading-relaxed">
-          End-to-end OEM/ODM services: <strong>custom mould design</strong>, private-label packaging, custom tube
-          colors, deck graphics (digital & screen printing), Hypalon upgrade option, and drop-ship logistics.
+          End-to-end OEM/ODM services: <strong>custom mould design</strong>, private-label packaging, custom board
+          colors, deck graphics (digital & screen printing), and drop-ship logistics.
         </p>
         <div class="mt-4 grid grid-cols-2 gap-2">
           <div class="text-center p-2 rounded bg-gray-50 dark:bg-gray-950">
@@ -377,7 +383,7 @@ const equipment = [
       <h2 class="mt-2 text-3xl font-bold">Workforce & Expertise</h2>
       <p class="mt-3 text-muted max-w-2xl mx-auto">
         25+ engineers across R&D, mold design, materials lab, and production engineering. Average 7+ years in inflatable
-        manufacturing. 2 shifts/day with optional night shift for urgent orders.
+        manufacturing. 2 shifts/day (07:00–15:30, 15:30–00:00). Optional night shift for urgent orders.
       </p>
     </div>
     <div class="grid md:grid-cols-4 gap-6">
@@ -411,8 +417,8 @@ const equipment = [
       </div>
       <div class="text-center p-6 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
         <div class="text-3xl font-bold text-sky-600">&lt;5%</div>
-        <div class="mt-2 text-sm font-semibold">Max pressure drop</div>
-        <p class="mt-1 text-xs text-muted">Over 24h at 1.25x rated pressure</p>
+        <div class="mt-2 text-sm font-semibold">Max allowable pressure drop</div>
+        <p class="mt-1 text-xs text-muted">Over 24h at 1.25× rated pressure</p>
       </div>
       <div class="text-center p-6 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
         <div class="text-3xl font-bold text-sky-600">AQL 2.5</div>
@@ -420,17 +426,17 @@ const equipment = [
         <p class="mt-1 text-xs text-muted">Per ISO 2859 sampling standard</p>
       </div>
       <div class="text-center p-6 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-        <div class="text-3xl font-bold text-sky-600">24-48h</div>
+        <div class="text-3xl font-bold text-sky-600">24–48h</div>
         <div class="mt-2 text-sm font-semibold">Pressure hold duration</div>
         <p class="mt-1 text-xs text-muted">Depending on product category</p>
       </div>
       <div class="text-center p-6 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-        <div class="text-3xl font-bold text-sky-600">1.25x</div>
-        <div class="mt-2 text-sm font-semibold">Test vs rated pressure</div>
+        <div class="text-3xl font-bold text-sky-600">1.25×</div>
+        <div class="mt-2 text-sm font-semibold">Test pressure vs rated</div>
         <p class="mt-1 text-xs text-muted">Safety margin on every chamber</p>
       </div>
       <div class="text-center p-6 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-        <div class="text-3xl font-bold text-sky-600">Zero</div>
+        <div class="text-3xl font-bold text-sky-600">0%</div>
         <div class="mt-2 text-sm font-semibold">Tolerance on safety defects</div>
         <p class="mt-1 text-xs text-muted">Valves, D-rings, seams, buoyancy</p>
       </div>
@@ -443,8 +449,9 @@ const equipment = [
       <p class="text-sm font-semibold text-primary uppercase tracking-wider">Traceability</p>
       <h2 class="mt-2 text-3xl font-bold">Material Tracking & Batch Control</h2>
       <p class="mt-3 text-muted max-w-2xl mx-auto">
-        Every batch of raw material is assigned a unique lot number in our ERP system. Each boat's bill of materials
-        links back to the original supplier batch for full upstream traceability.
+        Every batch of raw material is assigned a unique lot number in our ERP system. From arrival through production
+        to the finished product, each boat's bill of materials links back to the original supplier batch. This enables
+        full upstream traceability for any quality or compliance inquiry.
       </p>
     </div>
     <div class="max-w-3xl mx-auto space-y-3 mb-8">
@@ -452,19 +459,23 @@ const equipment = [
         class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800"
       >
         <span class="text-sm font-medium">Tracking system</span>
-        <span class="text-sm text-muted">Custom ERP + physical batch tags on work orders</span>
+        <span class="text-sm text-muted"
+          >Custom ERP (Qingdao Vatrad Group internal system) + physical batch tags on each work order</span
+        >
       </div>
       <div
         class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800"
       >
         <span class="text-sm font-medium">Coverage</span>
-        <span class="text-sm text-muted">100% of production materials</span>
+        <span class="text-sm text-muted"
+          >100% of production materials — PVC, Hypalon, drop-stitch fabric, adhesives, valves, hardware, packaging</span
+        >
       </div>
       <div
         class="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800"
       >
         <span class="text-sm font-medium">Records retained</span>
-        <span class="text-sm text-muted">10 years (per CE 2013/53/EU)</span>
+        <span class="text-sm text-muted">10 years (per CE 2013/53/EU requirement)</span>
       </div>
     </div>
     <div class="max-w-3xl mx-auto">
@@ -512,7 +523,7 @@ const equipment = [
         </div>
         <h3 class="text-lg font-bold">Raw Material Inspection</h3>
         <p class="mt-2 text-sm text-muted leading-relaxed">
-          PVC, Hypalon, and drop-stitch fabrics undergo tensile testing (), tear propagation, and UV resistance
+          PVC, Hypalon, and drop-stitch fabrics undergo tensile testing (ASTM D751), tear propagation, and UV resistance
           verification before any batch enters production.
         </p>
       </div>
@@ -549,7 +560,7 @@ const equipment = [
       <p class="text-sm font-semibold text-primary uppercase tracking-wider">OEM Projects</p>
       <h2 class="mt-2 text-3xl font-bold">Brand & OEM Partnership Case Studies</h2>
       <p class="mt-3 text-muted max-w-2xl mx-auto">
-        From concept to container –how we help global brands launch and scale their inflatable watercraft lines.
+        From concept to container — how we help global brands launch and scale their inflatable SUP lines.
       </p>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
@@ -557,7 +568,7 @@ const equipment = [
         <div class="text-xs font-bold text-primary uppercase tracking-wider mb-2">Challenge</div>
         <p class="text-sm text-muted">
           European outdoor retailer needed a private-label SUP line with unique deck graphics, eco-friendly PVC, and
-          retail-ready packaging –all delivered in 60 days.
+          retail-ready packaging — all delivered in 60 days.
         </p>
         <div class="mt-4 text-xs font-bold text-primary uppercase tracking-wider mb-2">Solution</div>
         <p class="text-sm text-muted">
@@ -572,13 +583,13 @@ const equipment = [
       <div class="p-6 rounded-xl bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
         <div class="text-xs font-bold text-primary uppercase tracking-wider mb-2">Challenge</div>
         <p class="text-sm text-muted">
-          US watersports startup needed a high-performance drop-stitch SUP with custom deck graphics, co-branded
-          packaging, and BSCI certification for retail placement.
+          US watersports startup needed a high-performance drop-stitch SUP with custom shape, co-branded packaging, and
+          BSCI certification for retail placement.
         </p>
         <div class="mt-4 text-xs font-bold text-primary uppercase tracking-wider mb-2">Solution</div>
         <p class="text-sm text-muted">
-          Adapted existing drop-stitch SUP mould with custom deck pad, developed co-branded packaging artwork, and
-          provided full BSCI audit documentation.
+          Adapted existing SUP mould with modified outline, developed co-branded packaging artwork, and provided full
+          BSCI audit documentation.
         </p>
         <div class="mt-4 text-xs font-bold text-primary uppercase tracking-wider mb-2">Result</div>
         <p class="text-sm text-muted">
@@ -588,17 +599,16 @@ const equipment = [
       <div class="p-6 rounded-xl bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
         <div class="text-xs font-bold text-primary uppercase tracking-wider mb-2">Challenge</div>
         <p class="text-sm text-muted">
-          Australian distributor required a CE-certified SUP range with custom deck graphics, UV-resistant PVC option,
-          and compliance with Australian Standard AS 1799.
+          Australian distributor required a CE-certified SUP range with custom colours and compliance with Australian
+          standards.
         </p>
         <div class="mt-4 text-xs font-bold text-primary uppercase tracking-wider mb-2">Solution</div>
         <p class="text-sm text-muted">
-          Produced pre-production samples with 4 colour variants, sourced UV-resistant PVC, and coordinated third-party
-          AS 1799 compliance testing.
+          Produced pre-production samples with 4 colour variants and coordinated third-party compliance testing.
         </p>
         <div class="mt-4 text-xs font-bold text-primary uppercase tracking-wider mb-2">Result</div>
         <p class="text-sm text-muted">
-          3-model SUP range launched in AU/NZ market. Followed by resort fleet contract for 120 SUPs.
+          3-model SUP range launched in AU/NZ market. Followed by government tender win for 12 patrol SUPs.
         </p>
       </div>
     </div>
@@ -617,15 +627,13 @@ const equipment = [
         <summary
           class="px-6 py-4 font-semibold text-gray-900 dark:text-white cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors list-none flex items-center justify-between"
         >
-          <span>What is the minimum order quantity (MOQ) for SUP boards?</span>
+          <span>What is the minimum order quantity (MOQ) for OEM inflatable SUP boards?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform">–</span>
         </summary>
         <div class="px-6 pb-4">
           <p class="text-muted leading-relaxed">
-            Sample orders start at 5–10 units; trial orders run 10–30 units; authorized dealer orders start at 30–50;
-            custom and private-label projects from 50+; and deep-custom (new molds) from 200+ units. Country and
-            regional distributor programs start at 100–300+ units. Trial orders and sample runs are available for new
-            brand launches.
+            MOQ starts at 5–10 units for standard OEM models. Custom moulds and private-label projects require a minimum
+            of 200 units depending on complexity. Trial orders and sample runs are available for new brand launches.
           </p>
         </div>
       </details>
@@ -641,8 +649,8 @@ const equipment = [
         <div class="px-6 pb-4">
           <p class="text-muted leading-relaxed">
             Yes. Our factory maintains valid BSCI social compliance certification (audit report available on request).
-            We also hold for quality management and all products carry CE certification. REACH and RoHS compliance
-            documentation provided with every OEM shipment.
+            We also hold ISO 9001 for quality management and all products carry CE certification. REACH and RoHS
+            compliance documentation provided with every OEM shipment.
           </p>
         </div>
       </details>
@@ -657,9 +665,9 @@ const equipment = [
         </summary>
         <div class="px-6 pb-4">
           <p class="text-muted leading-relaxed">
-            Standard lead time is 30–45 days from confirmed PO and deposit. Custom mould development adds 15–20 days for
-            tooling. We offer expedited production for urgent orders and seasonal rushes during the pre-summer window
-            (Jan–Mar).
+            Standard lead time is 30–45 days from confirmed PO and deposit for bulk OEM production. Custom mould
+            development adds 15–20 days for tooling. Expedited production is available for urgent orders and seasonal
+            rushes. Prototype samples typically ship within 15–20 days.
           </p>
         </div>
       </details>
@@ -687,7 +695,7 @@ const equipment = [
     <div class="rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-8">
       <h2 class="text-xl font-bold">See our manufacturing process</h2>
       <p class="mt-2 text-sm text-muted">
-        Follow a boat through every stage of production –from raw material to sea-ready craft.
+        Follow a boat through every stage of production — from raw material to sea-ready craft.
       </p>
       <a
         href="/factory/process"
@@ -700,12 +708,13 @@ const equipment = [
 
   <section class="sr-only" data-ai-block="definition" aria-hidden="true">
     <p>
-      afarer inflatable SUP factory and OEM manufacturing facility. 12,000 m² and BSCI certified plant in Qingdao,
-      China. Workshops: PVC cutting with CNC machines, tube welding with RF dielectric presses and hot-air sealers,
-      fiberglass mould fabrication, SUP printing with digital and screen printing, final assembly and rigging, and
-      quality testing. Key equipment: automatic PVC cutting machine (0.1mm accuracy), heat sealing machine (200-600°C),
-      RF dielectric welding press (15 kW), fiberglass moulds, digital printer, screen printer. Quality process: raw
-      material tensile testing per, 48-hour air retention test at 125% rated pressure, load and balance testing.
+      afarer inflatable SUP factory and OEM manufacturing facility. 12,000 m² ISO 9001 and BSCI certified plant in
+      Qingdao, China. Workshops: PVC cutting with CNC machines, tube welding with RF dielectric presses and hot-air
+      sealers, fiberglass mould fabrication, SUP printing with digital and screen printing, final assembly and rigging,
+      and quality testing. Key equipment: automatic PVC cutting machine (0.1mm accuracy), heat sealing machine (200–300
+      °C), RF dielectric welding press (15 kW), fiberglass moulds, digital printer, screen printer. Quality process: raw
+      material tensile testing per ASTM D751, 48-hour air retention test at 125% rated pressure, load and balance
+      testing.
     </p>
   </section>
 </Layout>
