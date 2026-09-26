@@ -15,7 +15,7 @@ intro: >-
 content_html: >
   <h2>Varför tank-testa en liten båt?</h2>
 
-  <p>Provning i modellskala (normalt 1:3 till 1:5) ger oss möjlighet att snabbt och kostnadseffektivt iterera skrovgemon. En vecka i tanken kan generera samma prestandadata som skulle kräva månaders hel­skalad test­verksamhet — och till en bråkdel av kostnaden.</p>
+  <p>Provning i modellskala (normalt 1:3 till 1:5) ger oss möjlighet att snabbt och kostnadseffektivt iterera skrovformer. En vecka i tanken kan generera samma prestandadata som skulle kräva månaders helskalad testverksamhet — och till en bråkdel av kostnaden.</p>
 
 
   <h2>Facilitetsspecifikationer</h2>
@@ -24,31 +24,31 @@ content_html: >
     <thead><tr><th>Parameter</th><th>Specifikation</th></tr></thead>
     <tbody>
       <tr><td>Tankmått</td><td>35 m (L) × 3,5 m (B) × 1,8 m (D)</td></tr>
-      <tr><td>Dragvagn</td><td>Elektrisk servodriven, max. hastighet 12 m/s (23 kn), hastighets­noggrannhet ± 0,5 %</td></tr>
-      <tr><td>Våggenerator</td><td>Klafftyp, programmerbara regel­bundna &amp; oregel­bundna havsförhållanden, Hs upp till 0,3 m i modellskala</td></tr>
-      <tr><td>Instrumentering</td><td>6-komponents dynamometer (motstånd, side­kraft, gagnings­moment), accelerometer, inklinometer, våg­sonder</td></tr>
-      <tr><td>Datainsamling</td><td>Samplning med 1 000 Hz per kanal, realtids­display + efter­behandlings­paket</td></tr>
-      <tr><td>Modelltillverkning</td><td>Egen CNC-fräsning och 3D-printing för modell­skrov upp till 1,8 m LOA</td></tr>
+      <tr><td>Dragvagn</td><td>Elektrisk servodriven, max. hastighet 12 m/s (23 kn), hastighetsnoggrannhet ± 0,5 %</td></tr>
+      <tr><td>Våggenerator</td><td>Klafftyp, programmerbara regelbundna &amp; oregelbundna havsförhållanden, Hs upp till 0,3 m i modellskala</td></tr>
+      <tr><td>Instrumentering</td><td>6-komponents dynamometer (motstånd, sidekraft, gagningsmoment), accelerometer, inklinometer, vågsonder</td></tr>
+      <tr><td>Datainsamling</td><td>Samplning med 1 000 Hz per kanal, realtidsdisplay + efterbehandlingspaket</td></tr>
+      <tr><td>Modelltillverkning</td><td>Egen CNC-fräsning och 3D-printing för modellskrov upp till 1,8 m LOA</td></tr>
     </tbody>
   </table>
 
 
-  <h2>Vårt test­program</h2>
+  <h2>Vårt testprogram</h2>
 
-  <p>Ett standard­utvecklings­program för skrov i vår tank följer följande sekvens:</p>
+  <p>Ett standardutvecklingsprogram för skrov i vår tank följer följande sekvens:</p>
 
   <ol>
-    <li><strong>Modellbygge</strong> — En 1:3,5-skalamodell CNC-fräsas från hög­densitets­skum och förses med glasfiber för styvhet. Vikt och tyngdpunkt justeras för att matcha Froude‑skalad hel­last­status.</li>
-    <li><strong>Motstånds­prov</strong> — Modellen dras vid 8–10 hastigheter inom operativ­området. Totalt motstånd mäts och dekomponeras i friktions- och residual­komponenter med ITTC‑1957-metoden.</li>
-    <li><strong>Lutning &amp; sänk­mätning</strong> — Lopp­lutning och sänkning registreras vid varje hastighet. En optimal lutnings­vinkel på 4–6° för planande skrov är målet.</li>
-    <li><strong>Våg­undersökning</strong> — Tvär­vågsektioner mäts vid två hastigheter för att bedöma våg­genererat motstånd och identifiera tvär­vågs­interaktioner som kan orsaka akter­störningar.</li>
-    <li><strong>Sjö­hållbarhet (valfritt)</strong> — Mot­sjö- och med­sjö­lopp i regel­bundna vågar för att mäta ökat motstånd, vertikal acceleration och sannolikhet för planingsslag.</li>
-    <li><strong>Dataanalys &amp; rekommendationer</strong> — En komplett rapport levereras med jämförelse­diagram, hastighets/effekt‑kurvor och specifika design­rekommendationer för det hel­skalade skrovet.</li>
+    <li><strong>Modellbygge</strong> — En 1:3,5-skalamodell CNC-fräsas från högdensitetsskum och förses med glasfiber för styvhet. Vikt och tyngdpunkt justeras för att matcha Froude‑skalad hellaststatus.</li>
+    <li><strong>Motståndsprov</strong> — Modellen dras vid 8–10 hastigheter inom operativområdet. Totalt motstånd mäts och dekomponeras i friktions- och residualkomponenter med ITTC‑1957-metoden.</li>
+    <li><strong>Lutning &amp; sänkmätning</strong> — Lopplutning och sänkning registreras vid varje hastighet. En optimal lutningsvinkel på 4–6° för planande skrov är målet.</li>
+    <li><strong>Vågundersökning</strong> — Tvärvågsektioner mäts vid två hastigheter för att bedöma våggenererat motstånd och identifiera tvärvågsinteraktioner som kan orsaka akterstörningar.</li>
+    <li><strong>Sjöhållbarhet (valfritt)</strong> — Motsjö- och medsjölopp i regelbundna vågar för att mäta ökat motstånd, vertikal acceleration och sannolikhet för planingsslag.</li>
+    <li><strong>Dataanalys &amp; rekommendationer</strong> — En komplett rapport levereras med jämförelsediagram, hastighets/effekt‑kurvor och specifika designrekommendationer för det helskalade skrovet.</li>
   </ol>
 
 
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typiska tank­test­resultat — Motstånd vs. hastighet (RIB 450-skrov, 1:3,5-skala)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typiska tanktestresultat — Motstånd vs. hastighet (RIB 450-skrov, 1:3,5-skala)</p>
     <div class="space-y-2">
       <div class="flex items-center gap-2 text-xs">
         <span class="w-20">5 kn (1:1)</span>
@@ -93,33 +93,33 @@ content_html: >
         <span class="w-16 text-right">232 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">Modell­skalat motstånd (N) vid Froude‑skalade hastigheter. Hel­skalad effekt­förutsägelse följer ITTC‑1978 prestanda­förutsägelse­metod.</p>
+    <p class="text-xs text-gray-400 mt-2">Modellskalat motstånd (N) vid Froude‑skalade hastigheter. Helskalad effektförutsägelse följer ITTC‑1978 prestandaförutsägelsemetod.</p>
   </div>
 
 
   <h2>Experterna</h2>
 
-  <p>Vår tank drivs av en hydrodynamiker med doktorsexamen i skepps­byggnad och 8 års erfarenhet av drag­tank­provning vid ett stort europeiskt maritimt forsknings­institut. Han stöds av en tekniker som förbereder alla modeller och instrument. Teamet följer ITTC (International Towing Tank
+  <p>Vår tank drivs av en hydrodynamiker med doktorsexamen i skeppsbyggnad och 8 års erfarenhet av dragtankprovning vid ett stort europeiskt maritimt forskningsinstitut. Han stöds av en tekniker som förbereder alla modeller och instrument. Teamet följer ITTC (International Towing Tank
   Conference) rekommenderade procedurer för att säkerställa att varje test är upprepbart, spårbart och internationellt försvarbart.</p>
 
 
-  <h2>Tank­test för anpassad skrov­utveckling</h2>
+  <h2>Tanktest för anpassad skrovutveckling</h2>
 
-  <p>Vår tank används inte bara för egen­designade skrov — vi genom­för regelbundna test­program för kunder som vill validera en anpassad skrovgemon eller undersöka ett prestandaproblem:</p>
+  <p>Vår tank används inte bara för egendesignade skrov — vi genomför regelbundna testprogram för kunder som vill validera en anpassad skrovform eller undersöka ett prestandaproblem:</p>
 
   <ul>
-    <li><strong>Skrovform­jämförelse</strong> — Två eller flera kandidat­skrov testas under identiska förhållanden och ger en objektiv jämförelse av motstånd/hastighet/stabilitet som stöd för design­valet.</li>
-    <li><strong>Tillbeh­or­optimering</strong> — Interceptor­plattor, spray­rällor, trim­plattor och strakar kan testas i olika konfigurationer för att kvantifiera deras enskilda bidrag till motstånds­minskning.</li>
-    <li><strong>Motor­anpassnings­studie</strong> — Motstånds­data omvandlas till en effekt­förutsägelse­kurva, vilket gör det möjligt att välja optimal motor­effekt för önskad hastighet och last.</li>
+    <li><strong>Skrovformjämförelse</strong> — Två eller flera kandidatskrov testas under identiska förhållanden och ger en objektiv jämförelse av motstånd/hastighet/stabilitet som stöd för designvalet.</li>
+    <li><strong>Tillbehoroptimering</strong> — Interceptorplattor, sprayrällor, trimplattor och strakar kan testas i olika konfigurationer för att kvantifiera deras enskilda bidrag till motståndsminskning.</li>
+    <li><strong>Motoranpassningsstudie</strong> — Motståndsdata omvandlas till en effektförutsägelsekurva, vilket gör det möjligt att välja optimal motoreffekt för önskad hastighet och last.</li>
   </ul>
 
 
   <h2>Varför testa med oss?</h2>
 
-  <p>Vi ger dig inte bara en uppsättning råtal. Våra rapporter översätter tank­data till handlings­kraftiga tekniska rekommendationer: "Höj spray­rällan med 8 mm för att minska den väta ytan vid kryss­hastighet", "Öka dödgång vid akter­spegeln med 3° för att minska planingsslags­accelerationen"
-  eller "Flytt den longitudinella tyngdpunkten 150 mm akteråt för förbättrad planings­attityd". Ni lämnar med en tydlig förståelse för vad som bör ändras och varför.</p>
+  <p>Vi ger dig inte bara en uppsättning råtal. Våra rapporter översätter tankdata till handlingskraftiga tekniska rekommendationer: "Höj sprayrällan med 8 mm för att minska den väta ytan vid krysshastighet", "Öka dödgång vid akterspegeln med 3° för att minska planingsslagsaccelerationen"
+  eller "Flytt den longitudinella tyngdpunkten 150 mm akteråt för förbättrad planingsattityd". Ni lämnar med en tydlig förståelse för vad som bör ändras och varför.</p>
 
-  <p>Vår tank är också tillgänglig för oberoende tredjeparts­provning på betal­basis. Om ni utvecklar ett skrov och vill ha en opartisk, professionellt genomförd hydrodynamisk bedömning, välkomnar vi er förfrågan.</p>
+  <p>Vår tank är också tillgänglig för oberoende tredjepartsprovning på betalbasis. Om ni utvecklar ett skrov och vill ha en opartisk, professionellt genomförd hydrodynamisk bedömning, välkomnar vi er förfrågan.</p>
 cta:
   title: Boka en tanktestsession
   subtitle: Oavsett om du behöver ett komplett utvecklingsprogram eller ett enskilt jämförande prov kan vi anpassa oss efter din tidsplan.

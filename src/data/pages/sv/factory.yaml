@@ -27,7 +27,7 @@ stats:
   - value: ISO 9001
     label: Kvalitetscertifierad
 intelligence_tagline: Fabriksintelligens
-intelligence_title: Utforska våra tillverknings­förmågor
+intelligence_title: Utforska våra tillverkningsförmågor
 intelligence_cards:
   - title: Produktionskapacitet
     icon: C
@@ -146,7 +146,7 @@ b2b_moq: 'Standard MOQ: 5–10 enheter per modell (SUP/kajak/drop-stitch). SUP M
 production_flow:
   tagline: Produktionsflöde
   title: Från råvara till färdig båt
-  subtitle: Varje båt genomgår sex produktions­steg med QC-kontroll­punkter vid varje steg. Inga genvägar, inga överhoppade inspektioner.
+  subtitle: Varje båt genomgår sex produktionssteg med QC-kontrollpunkter vid varje steg. Inga genvägar, inga överhoppade inspektioner.
   stages:
     - stage: '01'
       title: Materialmottagning och inkommande kvalitetskontroll
@@ -162,7 +162,7 @@ production_flow:
       responsibility: Ledare för skärverkstaden
     - stage: '03'
       title: Svetsning och drop-stitch-bondning
-      description: Drop-stitch-kärnor bind­samman med yttre PVC-laminat genom värmelaminering. Rör­kamrar RF-svetsas eller hetluftsvetsas. Railband fusion­lamineras i tre lager.
+      description: Drop-stitch-kärnor bindsamman med yttre PVC-laminat genom värmelaminering. Rörkammare RF-svetsas eller hetluftsvetsas. Railband fusionlamineras i tre lager.
       qc_check: Skaltest var 50:e enhet (ASTM D751), svejsbreddsmätning, granskning av varmluftstemperaturlogg, visuell söminspektion mot bakgrundsljus
       qc_threshold: Draghäftning min. 8 N/cm. Svetsbreddstolerans ±1 mm. Synlig kanalbildning = avvisning
       responsibility: Svetsningskontroll (2 inspektörer per skift)
@@ -176,7 +176,7 @@ production_flow:
       title: Tryckprovning och kvalitetshållning
       description: Varje kammare fylls till 1,25× märkt tryck (vanligen 20–25 PSI) och hålls i 24–48 timmar. Trycksensorer loggar kontinuerligt. Kammare som överskrider 5 % tryckfall avvisas och skickas för sömombesiktning.
       qc_check: 24-timmars tryckhållningslogg, sensorkalibrering verifieras dagligen, temperaturkompenserad tryckavläsning, sömtester efter reparation
-      qc_threshold: Max. 5 % tryckfall över 24 h vid stabil temperatur. Varje kammar som över­skrider detta = 100 % omprovning av hela produktions­partiet.
+      qc_threshold: Max. 5 % tryckfall över 24 h vid stabil temperatur. Varje kammare som överskrider detta = 100 % omprovning av hela produktionspartiet.
       responsibility: Kvalitetslaboratorium (oberoende av produktion, rapporterar till ledningen)
     - stage: '06'
       title: Slutkontroll och förpackning
@@ -188,9 +188,9 @@ workforce:
   tagline: Våra medarbetare
   title: Arbetskraft och kompetens
   engineers: 25+
-  engineers_detail: Ingenjörer inom FoU, formdesign, materiallaboratorium och produktionsteknik. Genomsnittlig erfarenhet på 7+ år inom oppustlig tillverkning.
+  engineers_detail: Ingenjörer inom FoU, formdesign, materiallaboratorium och produktionsteknik. Genomsnittlig erfarenhet på 7+ år inom tillverkning av uppblåsbara produkter.
   shift_pattern: 2 skift/dag (07:00–15:30, 15:30–00:00). Valfri nattskift för akuta beställningar.
-  training: Månadlig QC-utbildning, kvartalsvisa säkerhets­övningar, årlig kompetens­bedömning. Nya anställda genomgår 40 timmars introduktion innan de arbetar i produktions­linjen.
+  training: Månadlig QC-utbildning, kvartalsvisa säkerhetsövningar, årlig kompetensbedömning. Nya anställda genomgår 40 timmars introduktion innan de arbetar i produktionslinjen.
   departments:
     - name: R&D & Engineering
       count: 25+
@@ -220,7 +220,7 @@ material_traceability:
   tagline: Spårbarhet
   title: Materialspårning och partikontroll
   description: Varje råvaruparti tilldelas ett unikt partinummer i vårt ERP-system. Från ankomst genom produktion till färdig produkt kopplas varje båts materialfaktura tillbaka till ursprungliga leverantörspartiet. Detta möjliggör fullständig spårbarhet uppströms för alla kvalitets- och efterlevnadsfrågor.
-  system: Anpassat ERP-system (Qingdao Vatrad Groups internt system) + fysiska parti­etiketter på varje arbetsorder
+  system: Anpassat ERP-system (Qingdao Vatrad Groups internt system) + fysiska partietiketter på varje arbetsorder
   coverage: 100 % av produktionsmaterialen — PVC, Hypalon, drop-stitch-tyg, lim, ventiler, beslag, förpackning
   records_retained: 10 år (enligt CE 2013/53/EU)
   suppliers:
@@ -252,7 +252,7 @@ qc_dashboard:
       detail: Enligt ISO 2859 provningsstandard
     - value: 24–48 h
       label: Tryckhållningstid
-      detail: Beroende på produkt­kategori
+      detail: Beroende på produktkategori
     - value: 1.25×
       label: Testtryck vs. nominellt tryck
       detail: Säkerhetsmarginal för varje kammare
