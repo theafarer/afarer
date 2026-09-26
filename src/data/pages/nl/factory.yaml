@@ -148,37 +148,37 @@ production_flow:
   title: Van materiaal tot afgewerkte boot
   subtitle: Elke boot doorloopt 6 productiefasen met kwaliteitscontrolepunten bij elke stap. Geen kortere routes, geen overgeslagen inspecties.
   stages:
-    - stage: Een
+    - stage: '01'
       title: Materiaalontvangst & inkomende kwaliteitscontrole
       description: Alle binnenkomende materialen worden per batch/lotsnummer geregistreerd in ons ERP-systeem. PVC-stofrollen, drop-stitch-cores, kleppen, lijmen en hardware worden in quarantaine geplaatst totdat de QC goedkeuring geeft.
       qc_check: Treksterkte (ASTM D751), scheurweerstand (ISO 4674), diktemaat, lijmviscositeit, visuele defectinspectie
       qc_threshold: 100% van de batches getest. Afkeuren als de treksterkte < 90% van de specificatie, scheur < specificatie minimum, of enig visueel defect
       responsibility: Binnenkomend QC-team (3 inspecteurs)
-    - stage: Twee
+    - stage: '02'
       title: CNC-snijden & materiaalvoorbereiding
       description: Computer-geoptimaliseerde nesting legt panelen op PVC-voorraad om afval te minimaliseren. Automatische CNC-snijdmachines behouden een positionele nauwkeurigheid van 0,1 mm.
       qc_check: Dimensionale controle tegen CAD DXF-bestanden, controle van randkwaliteit, verificatie van het aantal panelen
       qc_threshold: Elke 20e paneel gemeten. Tolerantie ±0,5 mm. Afkeur batch als >2% buiten toleranties
       responsibility: Leidinggevende snijwerkplaats
-    - stage: Drie
+    - stage: '03'
       title: Lassen & Drop-stitch bevestiging
       description: Drop-stitch-kernen worden met hittegelaminering aan buitenste PVC-laminaten verbonden. Buiskamers worden RF-gelast of hete-lucht gelast. Railbanden zijn drievoudig gelamineerd door fusie.
       qc_check: Peeltest elke 50 eenheden (ASTM D751), lasbreedtemeting, beoordeling van het logboek van de hete-lucht temperatuur, visuele naadinspectie onder tegenlicht
       qc_threshold: Hechtsterkte minimaal 8 N/cm. Lastebreedte tolerantie ±1 mm. Elke zichtbare kanaalvorming = afkeuren
       responsibility: Lassen QC (2 inspecteurs per ploeg)
-    - stage: Vier
+    - stage: '04'
       title: Montage & Touwen
       description: 'Boten gaan naar de eindassemblage waar alle componenten worden samengevoegd: romp, buizen, geïnstalleerde kleppen, D-ringen, handvatten, vinhouders en draagtasbevestiging. Elke eenheid volgt een assemblagechecklist van 100 punten.'
       qc_check: 100-punten checklist goedkeuring per eenheid, klepfunctietest (10 open/sluit cycli), hardware koppelcontrole, visuele inspectie
       qc_threshold: 'Zero-defect beleid voor veiligheidkritieke onderdelen (kleppen, D-ringen, handvatten). Kleine cosmetische gebreken: AQL 2,5 (ISO 2859)'
       responsibility: Leidinggevende assemblageteam + lijn QC
-    - stage: Vijf
+    - stage: '05'
       title: Druktesten & Kwaliteitsbehoud
       description: Elke kamer wordt opgeblazen tot 1,25× de nominale druk (meestal 20–25 PSI) en gedurende 24–48 uur vastgehouden. Druksensoren registreren continu. Kamers die een drukval van meer dan 5% vertonen, worden afgekeurd en ter herinspectie van de naden gestuurd.
       qc_check: 24uurs drukvasthoudingslog, sensorcalibratie dagelijks geverifieerd, temperatuurgecompenseerde drukmeting, na reparatie opnieuw naden testen
       qc_threshold: Maximaal 5% drukverlies over 24 uur bij een stabiele temperatuur. Elke kamer die dit overschrijdt = 100% her-test van de gehele productiebatch
       responsibility: Kwaliteitslaboratorium (onafhankelijk van productie, rapporteert aan het management)
-    - stage: Zes
+    - stage: '06'
       title: Eindinspectie & Verpakking
       description: Eindvisuele en functionele inspectie. Oppervlaktefouten, kleurconsistentie, label/BIN-verificatie, verpakkingintegriteit en volledigheid van accessoires. Eenheden zijn vacuüm verpakt, in dozen geplaatst en op pallets gezet voor containerlading.
       qc_check: Volledige visuele inspectie, accessoirecontrolelijst per SKU, verpakkingsvaltest (1 m, willekeurige steekproef), label-/streepjescodescanverificatie

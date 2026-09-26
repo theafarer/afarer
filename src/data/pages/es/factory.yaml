@@ -156,37 +156,37 @@ production_flow:
   title: De material a barco terminado
   subtitle: Cada barco pasa por 6 etapas de producción con puntos de control de calidad en cada paso. No hay atajos, no se omiten inspecciones.
   stages:
-    - stage: Uno
+    - stage: '01'
       title: Recepción de Material y Control de Calidad Entrante
       description: Todos los materiales entrantes se registran por número de lote en nuestro sistema ERP. Los rollos de tela de PVC, los núcleos de costura de caída, las válvulas, los adhesivos y el hardware se ponen en cuarentena hasta la aprobación de control de calidad.
       qc_check: Resistencia a la tracción (ASTM D751), resistencia al desgarro (ISO 4674), medidor de espesor, viscosidad del adhesivo, inspección visual de defectos
       qc_threshold: 100% de los lotes probados. Rechazar si la resistencia a la tracción es < 90% de la especificación, el desgarro < mínimo de la especificación, o cualquier defecto visual
       responsibility: Equipo de control de calidad entrante (3 inspectores)
-    - stage: Dos
+    - stage: '02'
       title: Corte CNC y Preparación de Material
       description: El anidamiento optimizado por computadora dispone los paneles en el material de PVC para minimizar el desperdicio. Las máquinas de corte CNC automáticas mantienen una precisión posicional de 0,1 mm.
       qc_check: Verificación dimensional contra archivos CAD DXF, inspección de calidad de bordes, verificación del conteo de paneles
       qc_threshold: Se mide cada vigésimo panel. Tolerancia ±0,5 mm. Rechazar el lote si >2% está fuera de tolerancia
       responsibility: Responsable del taller de corte
-    - stage: Tres
+    - stage: '03'
       title: Soldadura y unión por puntada caída
       description: Los núcleos de puntada caída se unen a las láminas externas de PVC mediante laminación en caliente. Las cámaras de los tubos se sueldan por RF o por aire caliente. Las bandas del riel se fusionan en tres capas mediante unión por fusión.
       qc_check: Prueba de pelado cada 50 unidades (ASTM D751), medición del ancho de soldadura, revisión del registro de temperatura del aire caliente, inspección visual de la costura bajo luz de fondo
       qc_threshold: Resistencia al despegue mínima 8 N/cm. Tolerancia del ancho de soldadura ±1 mm. Cualquier canalización visible = rechazar
       responsibility: Control de calidad de soldadura (2 inspectores por turno)
-    - stage: Cuatro
+    - stage: '04'
       title: Montaje y aparejo
       description: 'Los barcos se trasladan al ensamblaje final donde se ensamblan todos los componentes: casco, tubos, válvulas instaladas, anillas en D, asas, cajas de aletas y ajuste de la bolsa de transporte. Cada unidad sigue una lista de verificación de ensamblaje de 100 puntos.'
       qc_check: Firma de lista de verificación de 100 puntos por unidad, prueba de funcionamiento de la válvula (10 ciclos de apertura/cierre), verificación de torque del hardware, inspección visual
       qc_threshold: 'Política de cero defectos en artículos críticos para la seguridad (válvulas, anillas en D, manijas). Cosmético menor: AQL 2.5 (ISO 2859)'
       responsibility: Líder de equipo de ensamblaje + control de calidad en línea
-    - stage: Cinco
+    - stage: '05'
       title: Prueba de presión y retención de calidad
       description: Cada cámara se infla a 1,25× la presión nominal (típicamente 20–25 PSI) y se mantiene durante 24–48 horas. Los sensores de presión registran continuamente. Las cámaras que superan una caída de presión del 5 % son rechazadas y enviadas para una reinspección de las costuras.
       qc_check: Registro de presión de 24 h, calibración del sensor verificada diariamente, lectura de presión compensada por temperatura, re-prueba de la costura después de la reparación
       qc_threshold: Caída de presión máxima del 5% durante 24 horas a temperatura estable. Cualquier cámara que exceda esto = 100% re-prueba de todo el lote de producción
       responsibility: Laboratorio de calidad (independiente de la producción, reporta a la dirección)
-    - stage: Seis
+    - stage: '06'
       title: Inspección Final y Empaque
       description: Inspección visual y funcional final. Defectos en la superficie, consistencia del color, verificación de etiquetas/BIN, integridad del empaque y completitud de los accesorios. Las unidades están envasadas al vacío, empacadas en cajas y paletizadas para la carga en contenedor.
       qc_check: Inspección visual completa, lista de accesorios por SKU, prueba de caída del embalaje (1 m, muestra aleatoria), verificación de escaneo de etiqueta/código de barras

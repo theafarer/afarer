@@ -150,37 +150,37 @@ production_flow:
   title: Od materiału do gotowej łodzi
   subtitle: Każda łódź przechodzi przez 6 etapów produkcji z punktami kontrolnymi QC na każdym kroku. Żadnych skrótów, żadnych pominiętych inspekcji.
   stages:
-    - stage: Jeden
+    - stage: '01'
       title: Odbiór materiału i kontrola jakości przy przyjęciu
       description: Wszystkie przychodzące materiały są rejestrowane według numeru partii/wiazek w naszym systemie ERP. Rolki tkaniny PVC, rdzenie z tkaniny drop-stitch, zawory, kleje i elementy sprzętowe są poddawane kwarantannie do momentu zatwierdzenia przez kontrolę jakości.
       qc_check: Wytrzymałość na rozciąganie (ASTM D751), odporność na rozdarcie (ISO 4674), grubość, lepkość kleju, skanowanie wizualne pod kątem wad
       qc_threshold: 100% partii przetestowanych. Odrzucić, jeśli wytrzymałość na rozciąganie < 90% normy, odporność na rozdzieranie < minimalnej normy lub występuje jakakolwiek wada wizualna
       responsibility: Nadchodzący zespół kontroli jakości (3 inspektorów)
-    - stage: Dwa
+    - stage: '02'
       title: Cięcie CNC i przygotowanie materiału
       description: Optymalizowane komputerowo rozmieszczanie układa panele na arkuszach PCV, aby zminimalizować odpady. Automatyczne maszyny CNC utrzymują dokładność pozycjonowania na poziomie 0,1 mm.
       qc_check: Kontrola wymiarów w porównaniu z plikami CAD DXF, inspekcja jakości krawędzi, weryfikacja liczby paneli
       qc_threshold: Każdy 20. panel mierzony. Tolerancja ±0,5 mm. Odrzucić partię, jeśli >2% poza tolerancją
       responsibility: Kierownik warsztatu cięcia
-    - stage: Trzy
+    - stage: '03'
       title: Spawanie i łączenie metodą drop-stitch
       description: Rdzenie drop-stitch są łączone z zewnętrznymi laminatami PVC za pomocą laminowania na gorąco. Komory rur są zgrzewane metodą RF lub zgrzewaniem gorącym powietrzem. Taśmy szynowe są łączone poprzez fuzję w trzech warstwach.
       qc_check: Test odrywania co 50 jednostek (ASTM D751), pomiar szerokości spawu, przegląd rejestru temperatury gorącego powietrza, wizualna inspekcja szwu pod światłem wstecznym
       qc_threshold: Siła odrywania min 8 N/cm. Tolerancja szerokości spoiny ±1 mm. Każde widoczne tworzenie kanałów = odrzut
       responsibility: Kontrola jakości spawalnictwa (2 inspektorów na zmianę)
-    - stage: Cztery
+    - stage: '04'
       title: Montaż i instalacja
       description: 'Łodzie przechodzą do końcowego montażu, gdzie wszystkie elementy są łączone: kadłub, rury, zainstalowane zawory, pierścienie D, uchwyty, skrzynki na płetwy i montaż torby transportowej. Każda jednostka podlega 100-punktowej liście kontrolnej montażu.'
       qc_check: Zatwierdzenie listy kontrolnej 100 punktów dla jednostki, test funkcji zaworu (10 cykli otwierania/zamykania), weryfikacja momentu dokręcania sprzętu, inspekcja wizualna
       qc_threshold: 'Polityka zerowej wadliwości dla elementów krytycznych dla bezpieczeństwa (zawory, pierścienie D, uchwyty). Drobne wady kosmetyczne: AQL 2,5 (ISO 2859)'
       responsibility: Kierownik zespołu montażowego + kontrola jakości na linii
-    - stage: Pięć
+    - stage: '05'
       title: Test ciśnieniowy i zatrzymanie jakości
       description: Każda komora jest napełniana do 1,25× nominalnego ciśnienia (zwykle 20–25 PSI) i utrzymywana przez 24–48 godzin. Czujniki ciśnienia rejestrują dane ciągłe. Komory, w których nastąpi spadek ciśnienia powyżej 5%, są odrzucane i wysyłane do ponownej kontroli szwów.
       qc_check: 24-godzinny zapis utrzymania ciśnienia, codziennie weryfikowana kalibracja czujnika, ciśnienie skompensowane temperaturowo, ponowne testowanie szwu po naprawie
       qc_threshold: Maksymalny spadek ciśnienia 5% przez 24h przy stabilnej temperaturze. Każda komora przekraczająca ten limit = 100% ponowny test całej partii produkcyjnej
       responsibility: Laboratorium jakości (niezależne od produkcji, podlega kierownictwu)
-    - stage: Sześć
+    - stage: '06'
       title: Ostateczna inspekcja i pakowanie
       description: Końcowa kontrola wizualna i funkcjonalna. Wady powierzchni, jednolitość kolorów, weryfikacja etykiet/KODÓW BIN, integralność opakowania oraz kompletność akcesoriów. Jednostki są pakowane próżniowo, pakowane w pudełka i układane na paletach do załadunku kontenerowego.
       qc_check: Pełna inspekcja wizualna, lista kontrolna akcesoriów według SKU, test upuszczenia opakowania (1 m, losowa próbka), weryfikacja skanowania etykiety/kodu kreskowego

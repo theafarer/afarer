@@ -156,31 +156,31 @@ production_flow:
       qc_check: Resistenza alla trazione (ASTM D751), resistenza alla lacerazione (ISO 4674), spessore, viscosità dell'adesivo, controllo visivo dei difetti
       qc_threshold: 100% dei lotti testati. Rifiutare se la resistenza alla trazione < 90% della specifica, lo strappo < minimo della specifica, o qualsiasi difetto visivo
       responsibility: Squadra QC in arrivo (3 ispettori)
-    - stage: Due
+    - stage: '02'
       title: Taglio CNC e preparazione dei materiali
       description: Il nesting ottimizzato dal computer dispone i pannelli sul materiale di PVC per minimizzare gli sprechi. Le macchine da taglio CNC automatiche mantengono una precisione di posizionamento di 0,1 mm.
       qc_check: Controllo dimensionale rispetto ai file CAD DXF, ispezione della qualità dei bordi, verifica del conteggio dei pannelli
       qc_threshold: Ogni 20° pannello misurato. Tolleranza ±0,5 mm. Scartare il lotto se >2% fuori tolleranza
       responsibility: Responsabile del laboratorio di taglio
-    - stage: Tre
+    - stage: '03'
       title: Saldatura e incollaggio a punti di caduta
       description: I nuclei a punti di caduta sono legati ai laminati esterni in PVC mediante laminazione a caldo. Le camere dei tubi sono saldate a RF o saldate ad aria calda. Le bande delle rotaie sono saldate a fusione a tre strati.
       qc_check: Test di strappo ogni 50 unità (ASTM D751), misurazione della larghezza della saldatura, revisione del registro della temperatura dell'aria calda, ispezione visiva della cucitura sotto retroilluminazione
       qc_threshold: Forza di adesione minima 8 N/cm. Tolleranza della larghezza di saldatura ±1 mm. Qualsiasi canalizzazione visibile = scarto
       responsibility: Controllo di qualità della saldatura (2 ispettori per turno)
-    - stage: Quattro
+    - stage: '04'
       title: Assemblaggio e montaggio
       description: "Le barche vengono trasferite all'assemblaggio finale dove tutti i componenti vengono uniti: scafo, tubi, valvole installate, D-ring, maniglie, scatole per pinne e fissaggio del sacco da trasporto. Ogni unità segue una lista di controllo di assemblaggio a 100 punti."
       qc_check: Approvazione della checklist a 100 punti per unità, test della funzione della valvola (10 cicli apertura/chiusura), verifica della coppia dell'hardware, ispezione visiva
       qc_threshold: 'Politica di zero difetti su elementi critici per la sicurezza (valvole, anelli a D, maniglie). Difetti cosmetici minori: AQL 2,5 (ISO 2859)'
       responsibility: Capo squadra di assemblaggio + controllo qualità di linea
-    - stage: Cinque
+    - stage: '05'
       title: Verifica della Pressione e Controllo Qualità
       description: Ogni camera viene gonfiata a 1,25× la pressione nominale (tipicamente 20–25 PSI) e mantenuta per 24–48 ore. I sensori di pressione registrano continuamente. Le camere che superano il 5% di perdita di pressione vengono respinte e inviate per una nuova ispezione delle cuciture.
       qc_check: Registro della pressione per 24 ore, calibrazione del sensore verificata quotidianamente, lettura della pressione compensata per la temperatura, ri-test della giunzione dopo la riparazione
       qc_threshold: Perdita di pressione massima del 5% in 24 ore a temperatura stabile. Qualsiasi camera che superi questo valore = nuovo test completo del lotto di produzione al 100%
       responsibility: Laboratorio qualità (indipendente dalla produzione, riferisce alla direzione)
-    - stage: Sei
+    - stage: '06'
       title: Ispezione finale e imballaggio
       description: Ispezione finale visiva e funzionale. Difetti della superficie, uniformità del colore, verifica dell'etichetta/BIN, integrità dell'imballaggio e completezza degli accessori. Le unità sono sottovuoto, confezionate in scatole e palletizzate per il carico sul container.
       qc_check: Ispezione visiva completa, checklist degli accessori per SKU, test di caduta del confezionamento (1 m, campione casuale), verifica della scansione dell'etichetta/codice a barre

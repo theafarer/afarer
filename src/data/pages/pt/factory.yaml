@@ -152,37 +152,37 @@ production_flow:
   title: Do Material ao Barco Acabado
   subtitle: Cada barco passa por 6 estágios de produção com pontos de verificação de QC em cada etapa. Sem atalhos, sem inspeções puladas.
   stages:
-    - stage: Um
+    - stage: '01'
       title: Recebimento de Materiais e Controle de Qualidade de Entrada
       description: Todos os materiais recebidos são registrados por número de lote/lote no nosso sistema ERP. Rolos de tecido PVC, núcleos de costura drop-stitch, válvulas, adesivos e ferragens são colocados em quarentena até a aprovação do controle de qualidade.
       qc_check: Resistência à tração (ASTM D751), resistência ao rasgo (ISO 4674), medidor de espessura, viscosidade do adesivo, inspeção visual de defeitos
       qc_threshold: 100% dos lotes testados. Rejeitar se a resistência à tração < 90% da especificação, rasgo < mínimo da especificação, ou qualquer defeito visual
       responsibility: Equipe de QC chegando (3 inspetores)
-    - stage: Dois
+    - stage: '02'
       title: Corte CNC e Preparação de Material
       description: O aninhamento otimizado por computador organiza os painéis no estoque de PVC para minimizar o desperdício. Máquinas de corte CNC automáticas mantêm uma precisão posicional de 0,1 mm.
       qc_check: Verificação dimensional contra arquivos CAD DXF, inspeção da qualidade das bordas, verificação da contagem de painéis
       qc_threshold: Cada 20º painel medido. Tolerância ±0,5 mm. Rejeitar lote se >2% fora da tolerância
       responsibility: Líder de oficina de corte
-    - stage: Três
+    - stage: '03'
       title: Soldagem e Ligação por Ponto de Queda
       description: Núcleos de drop-stitch são ligados a laminados externos de PVC usando laminação a quente. As câmaras dos tubos são soldadas por RF ou soldagem a ar quente. As faixas do trilho são unidas por fusão de três camadas.
       qc_check: Teste de descascamento a cada 50 unidades (ASTM D751), medição da largura da solda, revisão do registro de temperatura do ar quente, inspeção visual da costura sob luz de fundo
       qc_threshold: Resistência à descamação mínima 8 N/cm. Tolerância da largura da solda ±1 mm. Qualquer canalização visível = rejeitar
       responsibility: Controle de Qualidade de Soldagem (2 inspetores por turno)
-    - stage: Quatro
+    - stage: '04'
       title: Montagem e Equipamento
       description: 'Os barcos seguem para a montagem final, onde todos os componentes são unidos: casco, tubos, válvulas instaladas, anéis em D, alças, caixas de quilha e instalação da bolsa de transporte. Cada unidade segue uma lista de verificação de montagem de 100 pontos.'
       qc_check: Assinatura de verificação de checklist de 100 pontos por unidade, teste de função da válvula (10 ciclos de abrir/fechar), verificação de torque do hardware, inspeção visual
       qc_threshold: 'Política de zero defeito em itens críticos para segurança (válvulas, anéis em D, alças). Cosmético menor: AQL 2,5 (ISO 2859)'
       responsibility: Líder de equipe de montagem + QC de linha
-    - stage: Cinco
+    - stage: '05'
       title: Testes de Pressão e Retenção de Qualidade
       description: Cada câmara é inflada para 1,25× a pressão nominal (tipicamente 20–25 PSI) e mantida por 24–48 horas. Sensores de pressão registram continuamente. Câmaras que excedem queda de pressão de 5% são rejeitadas e enviadas para reinspeção da costura.
       qc_check: Registro de pressão mantida por 24h, calibração do sensor verificada diariamente, leitura de pressão compensada pela temperatura, reteste da junta após reparo
       qc_threshold: Queda de pressão máxima de 5% em 24h em temperatura estável. Qualquer câmara que exceder isso = re-teste de 100% de todo o lote de produção
       responsibility: Laboratório de qualidade (independente da produção, reporta-se à administração)
-    - stage: Seis
+    - stage: '06'
       title: Inspeção Final e Embalagem
       description: Inspeção visual e funcional final. Defeitos na superfície, consistência de cor, verificação de rótulo/BIN, integridade da embalagem e completude dos acessórios. As unidades são embaladas a vácuo, colocadas em caixas e paletizadas para carregamento em contêiner.
       qc_check: Inspeção visual completa, checklist de acessórios por SKU, teste de queda da embalagem (1 m, amostra aleatória), verificação de leitura de etiqueta/código de barras

@@ -148,37 +148,37 @@ production_flow:
   title: Vom Material zum fertigen Boot
   subtitle: Jedes Boot durchläuft 6 Produktionsstufen mit Qualitätskontrollpunkten bei jedem Schritt. Keine Abkürzungen, keine übersprungenen Inspektionen.
   stages:
-    - stage: Eins
+    - stage: '01'
       title: Materialeingang & Wareneingangsprüfung
       description: Alle eingehenden Materialien werden nach Chargen-/Losnummer in unserem ERP-System erfasst. PVC-Stoffrollen, Drop-Stitch-Kerne, Ventile, Klebstoffe und Zubehör werden bis zur Freigabe durch die Qualitätskontrolle unter Quarantäne gestellt.
       qc_check: Zugfestigkeit (ASTM D751), Reißfestigkeit (ISO 4674), Dickenmessgerät, Klebstoffviskosität, visuelle Fehlerprüfung
       qc_threshold: 100 % der geprüften Chargen. Ablehnen, wenn die Zugfestigkeit < 90 % der Spezifikation, die Reißfestigkeit < Spezifikationsminimum oder irgendein sichtbarer Mangel vorhanden ist
       responsibility: Eingehendes QC-Team (3 Prüfer)
-    - stage: Zwei
+    - stage: '02'
       title: CNC-Schneiden & Materialvorbereitung
       description: Computer-optimiertes Nesting legt Platten auf PVC-Rohmaterial aus, um Abfall zu minimieren. Automatische CNC-Schneidemaschinen halten eine Positionsgenauigkeit von 0,1 mm.
       qc_check: Dimensionale Überprüfung an CAD-DXF-Dateien, Kantengüteprüfung, Plattenanzahlüberprüfung
       qc_threshold: Jedes 20. Paneel wird gemessen. Toleranz ±0,5 mm. Charge verwerfen, wenn >2% außerhalb der Toleranz liegen
       responsibility: Leiter der Schneidwerkstatt
-    - stage: Drei
+    - stage: '03'
       title: Schweißen & Drop-Stitch-Verbindung
       description: Drop-Stitch-Kerne werden durch Hitzelaminierung mit äußeren PVC-Laminaten verbunden. Rohrkammern werden durch RF-Schweißen oder Heißluftschweißen verschweißt. Schienenbänder werden dreilagig verschmolzen.
       qc_check: Abziehprüfung alle 50 Einheiten (ASTM D751), Schweißbreitenmessung, Überprüfung des Heizlufttemperaturprotokolls, visuelle Nahtinspektion unter Hintergrundbeleuchtung
       qc_threshold: Abziehfestigkeit mindestens 8 N/cm. Schweißnahtbreite Toleranz ±1 mm. Jegliche sichtbare Kanalisierung = ablehnen
       responsibility: Schweißeprüfung (2 Prüfer pro Schicht)
-    - stage: Vier
+    - stage: '04'
       title: Montage & Takelage
       description: 'Boote gehen zur Endmontage, wo alle Komponenten zusammengefügt werden: Rumpf, Tuben, installierte Ventile, D-Ringe, Griffe, Finnenkästen und Tragetaschenbefestigung. Jede Einheit durchläuft eine 100-Punkte-Montagecheckliste.'
       qc_check: 100-Punkte-Checkliste pro Einheit, Ventilfunktionsprüfung (10 Öffnungs-/Schließzyklen), Überprüfung des Hardware-Drehmoments, Sichtprüfung
       qc_threshold: 'Null-Fehler-Politik bei sicherheitskritischen Teilen (Ventile, D-Ringe, Griffe). Geringfügige kosmetische Mängel: AQL 2,5 (ISO 2859)'
       responsibility: Leiter Montageteam + Linien-QC
-    - stage: Fünf
+    - stage: '05'
       title: Druckprüfung & Qualitätskontrolle
       description: Jede Kammer wird auf das 1,25-fache des Nenn- drucks aufgepumpt (typischerweise 20–25 PSI) und für 24–48 Stunden gehalten. Drucksensoren protokollieren kontinuierlich. Kammern, die einen Druckabfall von mehr als 5 % aufweisen, werden abgelehnt und zur Nahtnachprüfung geschickt.
       qc_check: 24-Stunden-Druckhaltelog, Sensor-Kalibrierung täglich überprüft, temperaturkompensierte Druckanzeige, Nahtnachprüfung nach Reparatur
       qc_threshold: Maximal 5% Druckabfall über 24 Stunden bei stabiler Temperatur. Jede Kammer, die dies überschreitet = 100% Nachprüfung der gesamten Produktionscharge
       responsibility: Qualitätslabor (unabhängig von der Produktion, berichtet an die Geschäftsleitung)
-    - stage: Sechs
+    - stage: '06'
       title: Endkontrolle & Verpackung
       description: Endkontrolle der visuellen und funktionalen Eigenschaften. Oberflächenmängel, Farbgleichmäßigkeit, Etiketten-/BIN-Überprüfung, Verpackungsintegrität und Vollständigkeit des Zubehörs. Die Einheiten sind vakuumverpackt, in Kartons verpackt und für den Containertransport auf Paletten gestellt.
       qc_check: Vollständige Sichtprüfung, Zubehör-Checkliste pro SKU, Verpackungs-Falltest (1 m, Zufallsprobe), Etiketten-/Barcode-Scan-Überprüfung
