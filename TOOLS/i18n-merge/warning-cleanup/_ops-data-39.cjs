@@ -327,7 +327,7 @@ module.exports = [
   {
     f: 'src/data/pages/da/commercial-workboats.yaml',
     find: '  <p>afarer-oppustelige både er designet og bygget specifikt til disse krævende anvendelser. Vores 12,000 m²  & CE-certificerede fabrik i Qingdao, Kina producerer arbejdsbåde, der lever op til de strenge krav fra kommercielle operatører på verdensplan.</p>',
-    rep: '  <p>afarer-oppustelige både er designet og bygget specifikt til disse krævende anvendelser. Vores 12,000 m² ISO- og CE-certificerede fabrik i Qingdao, Kina producerer arbejdsbåde, der lever op til de strenge krav fra kommercielle operatører på verdensplan.</p>',
+    rep: '  <p>afarer-oppustelige både er designet og bygget specifikt til disse krævende anvendelser. Vores 12.000 m² ISO- og CE-certificerede fabrik i Qingdao, Kina producerer arbejdsbåde, der lever op til de strenge krav fra kommercielle operatører på verdensplan.</p>',
   },
   {
     f: 'src/data/pages/it/commercial-workboats.yaml',
