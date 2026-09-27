@@ -230,7 +230,7 @@ material_traceability:
   description: >-
     A cada lote de materia prima se le asigna un número de lote único en nuestro sistema ERP. Desde la llegada, pasando por la producción, hasta el producto terminado, la lista de materiales de cada embarcación se vincula al lote original del proveedor. Esto permite una trazabilidad completa hacia
     arriba para cualquier consulta de calidad o cumplimiento.
-  system: ERP personalizado (sistema interno del Grupo Vatrad de Qingdao) etiquetas físicas de lote en cada orden de trabajo
+  system: ERP personalizado (sistema interno del Grupo Vatrad de Qingdao) + etiquetas físicas de lote en cada orden de trabajo
   coverage: 100% de los materiales de producción — PVC, Hypalon, tela de costura en caída, adhesivos, válvulas, herrajes, embalaje
   records_retained: 10 años (según el requisito CE 2013/53/UE)
   suppliers:

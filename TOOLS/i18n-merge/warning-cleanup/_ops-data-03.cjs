@@ -243,9 +243,11 @@ module.exports = [
     rep: 'هياكل SUP حتى 6 م',
   },
   // fr: EN-leak spec
+  // rep superseded by shard 39 (equipment items[3] re-translation: Fiberglass Hand-Lay-Up Moulds);
+  // guard now maps the EN residue directly to the new final fr translation
   {
     f: 'src/data/pages/fr/factory.yaml',
     find: 'SUP cores up to 14 ft',
-    rep: 'Cœurs SUP jusqu’à 14 ft',
+    rep: 'Moules de planches SUP jusqu’à 14 ft',
   },
 ];

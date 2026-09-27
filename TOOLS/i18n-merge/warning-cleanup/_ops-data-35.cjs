@@ -463,7 +463,6 @@ module.exports = [
     rep: '    - value: 15.000+\n',
   },
   {
-    // shard 37 replaced the subtitle line; carry-forward m2->m² fix to new text (TECH L22 ①)
     f: 'src/data/pages/factory.yaml',
     find: 'subtitle: 12,000 m2 of integrated manufacturing',
     rep: 'subtitle: 12,000 m² of integrated manufacturing',
@@ -681,12 +680,12 @@ module.exports = [
   {
     f: 'src/data/pages/ja/factory.yaml',
     find: '12,000m2の統合製造',
-    rep: '12,000m²の統合製造',
+    rep: '12,000 m²の統合製造',
   },
   {
     f: 'src/data/pages/ko/trust.yaml',
     find: '12,000m2 규모',
-    rep: '12,000m² 규모',
+    rep: '12,000 m² 규모',
   },
   {
     f: 'src/data/pages/nl/about.yaml',
