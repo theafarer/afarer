@@ -205,12 +205,12 @@ module.exports = [
   {
     f: 'src/data/pages/de/home.yaml',
     find: '    - metric: Zehn\n',
-    rep: "    - metric: '10+'\n",
+    rep: '    - metric: 10+\n',
   },
   {
     f: 'src/data/pages/de/home.yaml',
     find: '    - metric: Fünfzig\n',
-    rep: "    - metric: '50+'\n",
+    rep: '    - metric: 50+\n',
   },
   {
     f: 'src/data/pages/de/solutions-paddle-clubs.yaml',
@@ -415,12 +415,12 @@ module.exports = [
   {
     f: 'src/data/pages/es/home.yaml',
     find: '    - metric: Diez\n',
-    rep: "    - metric: '10+'\n",
+    rep: '    - metric: 10+\n',
   },
   {
     f: 'src/data/pages/es/home.yaml',
     find: '    - metric: Cincuenta\n',
-    rep: "    - metric: '50+'\n",
+    rep: '    - metric: 50+\n',
   },
   {
     f: 'src/data/pages/es/hull-engineering.yaml',
@@ -615,12 +615,12 @@ module.exports = [
   {
     f: 'src/data/pages/it/home.yaml',
     find: '    - metric: Dieci\n',
-    rep: "    - metric: '10+'\n",
+    rep: '    - metric: 10+\n',
   },
   {
     f: 'src/data/pages/it/home.yaml',
     find: '    - metric: Cinquanta\n',
-    rep: "    - metric: '50+'\n",
+    rep: '    - metric: 50+\n',
   },
   {
     f: 'src/data/pages/it/solutions-paddle-clubs.yaml',
@@ -810,12 +810,12 @@ module.exports = [
   {
     f: 'src/data/pages/nl/home.yaml',
     find: '    - metric: Tien\n',
-    rep: "    - metric: '10+'\n",
+    rep: '    - metric: 10+\n',
   },
   {
     f: 'src/data/pages/nl/home.yaml',
     find: '    - metric: Vijftig\n',
-    rep: "    - metric: '50+'\n",
+    rep: '    - metric: 50+\n',
   },
   {
     f: 'src/data/pages/nl/solutions-paddle-clubs.yaml',
@@ -1010,12 +1010,12 @@ module.exports = [
   {
     f: 'src/data/pages/pl/home.yaml',
     find: '    - metric: Ten\n',
-    rep: "    - metric: '10+'\n",
+    rep: '    - metric: 10+\n',
   },
   {
     f: 'src/data/pages/pl/home.yaml',
     find: '    - metric: Pięćdziesiąt\n',
-    rep: "    - metric: '50+'\n",
+    rep: '    - metric: 50+\n',
   },
   {
     f: 'src/data/pages/pl/solutions-paddle-clubs.yaml',
@@ -1185,12 +1185,12 @@ module.exports = [
   {
     f: 'src/data/pages/pt/home.yaml',
     find: '    - metric: Dez\n',
-    rep: "    - metric: '10+'\n",
+    rep: '    - metric: 10+\n',
   },
   {
     f: 'src/data/pages/pt/home.yaml',
     find: '    - metric: Cinquenta\n',
-    rep: "    - metric: '50+'\n",
+    rep: '    - metric: 50+\n',
   },
   {
     f: 'src/data/pages/pt/solutions-paddle-clubs.yaml',
@@ -1380,12 +1380,12 @@ module.exports = [
   {
     f: 'src/data/pages/ru/home.yaml',
     find: '    - metric: Десять\n',
-    rep: "    - metric: '10+'\n",
+    rep: '    - metric: 10+\n',
   },
   {
     f: 'src/data/pages/ru/home.yaml',
     find: '    - metric: Пятьдесят\n',
-    rep: "    - metric: '50+'\n",
+    rep: '    - metric: 50+\n',
   },
   {
     f: 'src/data/pages/ru/solutions-paddle-clubs.yaml',
