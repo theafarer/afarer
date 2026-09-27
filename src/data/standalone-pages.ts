@@ -56,7 +56,7 @@ export const standalonePages: StandalonePage[] = [
       },
       {
         heading: 'Material Selection & Sample Production',
-        body: 'Choose from military-grade PVC (0.9mm—.2mm), Hypalon CSM, or drop-stitch core fabrics. Pre-production samples with your brand colours, logo, and packaging.',
+        body: 'Choose from military-grade PVC (0.9mm–1.2mm), Hypalon CSM, or drop-stitch core fabrics. Pre-production samples with your brand colours, logo, and packaging.',
       },
       {
         heading: 'CE Compliance',

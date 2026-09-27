@@ -15,7 +15,7 @@ const graphJsonLd = node
       '@context': 'https://schema.org',
       '@graph': [
         articleSchema({
-          headline: page.seo?.headline || 'Disaster Relief Inflatable Boats –OEM Manufacturing for Humanitarian Aid',
+          headline: page.seo?.headline || 'Disaster Relief Inflatable Boats — OEM Manufacturing for Humanitarian Aid',
           description:
             page.seo?.description ||
             'afarer manufactures inflatable boats engineered for disaster relief and humanitarian aid operations. Flood rescue, MEDEVAC, aid delivery.',
@@ -38,7 +38,7 @@ const graphJsonLd = node
   : null;
 
 const metadata = {
-  title: page.seo?.headline || 'Disaster Relief Inflatable Boats –OEM Manufacturing for Humanitarian Aid',
+  title: page.seo?.headline || 'Disaster Relief Inflatable Boats — OEM Manufacturing for Humanitarian Aid',
   description:
     page.seo?.description ||
     'afarer manufactures inflatable boats engineered for disaster relief and humanitarian aid operations. Flood rescue, MEDEVAC, aid delivery.',
@@ -59,7 +59,7 @@ const metadata = {
       {page.headline || 'Engineered for Excellence in Disaster Relief and Humanitarian Aid'}
     </h1>
     <p class="text-lg text-gray-500 dark:text-gray-400 mt-3">
-      {page.subtitle || 'Lifelines in crisis –delivering critical performance when it matters most.'}
+      {page.subtitle || 'Lifelines in crisis — delivering critical performance when it matters most.'}
     </p>
 
     <div class="mt-12 prose prose-gray dark:prose-invert max-w-none" set:html={page.body || ''} />

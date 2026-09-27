@@ -4,8 +4,8 @@ import { SITE } from 'astrowind:config';
 import JsonLd from '~/components/common/JsonLd.astro';
 
 const metadata = {
-  title: `Gallery –${SITE.name}`,
-  description: `Browse the ${SITE.name} gallery –product photos, factory workshops, on-water action shots, and customer adventures from around the world.`,
+  title: `Gallery — ${SITE.name}`,
+  description: `Browse the ${SITE.name} gallery — product photos, factory workshops, on-water action shots, and customer adventures from around the world.`,
 };
 
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Gallery' }];
@@ -117,7 +117,7 @@ const albums = [
             <div class="rounded-xl overflow-hidden bg-gray-100 aspect-[4/3]">
               <img
                 src={src}
-                alt={`${album.title} –${SITE.name}`}
+                alt={`${album.title} — ${SITE.name}`}
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />

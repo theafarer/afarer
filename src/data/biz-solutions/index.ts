@@ -233,12 +233,12 @@ const solutions: BizSolution[] = [
             {
               title: 'Step 3 - Mid-Campaign Crisis Management and Stretch Goal Execution',
               detail:
-                "When the campaign hit £85,000 in the first 72 hours but stalled at £110,000 by day 14, Afarer's marketing strategists deployed a targeted Facebook and Instagram ad campaign focused on UK paddleboarding Facebook groups with 500,000+ combined members. They created 8 A/B tested ad variants featuring James's YouTube testimonials. By day 30, another 212 backers pushed the total to £162,000. Afarer coordinated a stretch goal — adding a free dry bag worth £45 to all pledges above £449—which triggered a final surge of 88 backers in the last 48 hours, closing at £198,740 from 487 backers.",
+                "When the campaign hit £85,000 in the first 72 hours but stalled at £110,000 by day 14, Afarer's marketing strategists deployed a targeted Facebook and Instagram ad campaign focused on UK paddleboarding Facebook groups with 500,000+ combined members. They created 8 A/B tested ad variants featuring James's YouTube testimonials. By day 30, another 212 backers pushed the total to £162,000. Afarer coordinated a stretch goal — adding a free dry bag worth £45 to all pledges above £449 — which triggered a final surge of 88 backers in the last 48 hours, closing at £198,740 from 487 backers.",
             },
             {
               title: 'Step 4 - Production, Quality Assurance, and Post-Campaign Fulfillment',
               detail:
-                "Production began in August 2023 at the Qingdao facility, with Afarer stationing a full-time QC inspector on-site for 6 weeks. Each board underwent a 24-hour inflation test at 18 PSI and a seam peel-strength test exceeding 150 N/cm. The first 200 units shipped via sea freight on 15 September, clearing UK customs within 4 days through Afarer's pre-cleared documentation. All 487 backers received their boards by 25 October 2023—9 days ahead of the stated delivery date. James reported a 4.7/5 average review score across the first 150 customer feedback forms.",
+                "Production began in August 2023 at the Qingdao facility, with Afarer stationing a full-time QC inspector on-site for 6 weeks. Each board underwent a 24-hour inflation test at 18 PSI and a seam peel-strength test exceeding 150 N/cm. The first 200 units shipped via sea freight on 15 September, clearing UK customs within 4 days through Afarer's pre-cleared documentation. All 487 backers received their boards by 25 October 2023 — 9 days ahead of the stated delivery date. James reported a 4.7/5 average review score across the first 150 customer feedback forms.",
             },
           ],
           results: [
@@ -524,12 +524,12 @@ const solutions: BizSolution[] = [
             {
               title: 'Step 4 - First Production Run, Warehousing, and Sell-Through Performance',
               detail:
-                "Production of 2,800 units across the 4 SKUs began in December 2023 at Afarer's Dongguan facility. Afarer arranged ocean freight to Vancouver with a 22 January 2024 arrival date. The first 800 units were cross-docked to North Ridge's Mississauga fulfillment center for eastern Canadian distribution. By 1 March 2024, the collection was live on 34 REI shelves, 18 MEC locations, and NorthRidgeGear.com. The Discovery board sold 340 units in March alone—136% of forecast. By June 2024, total collection revenue reached $678,000 CAD, with the Angler fishing SUP backordered through August.",
+                "Production of 2,800 units across the 4 SKUs began in December 2023 at Afarer's Dongguan facility. Afarer arranged ocean freight to Vancouver with a 22 January 2024 arrival date. The first 800 units were cross-docked to North Ridge's Mississauga fulfillment center for eastern Canadian distribution. By 1 March 2024, the collection was live on 34 REI shelves, 18 MEC locations, and NorthRidgeGear.com. The Discovery board sold 340 units in March alone — 136% of forecast. By June 2024, total collection revenue reached $678,000 CAD, with the Angler fishing SUP backordered through August.",
             },
           ],
           results: [
             'First-year collection revenue reached $1.42M CAD, exceeding the $850,000 CAD target by 67%',
-            'North Ridge secured year-round shelf space at 52 REI and MEC locations—30% more than the initial target',
+            'North Ridge secured year-round shelf space at 52 REI and MEC locations — 30% more than the initial target',
             'The Discovery 10\'6" board became the #3 selling SUP at REI Canada within 90 days of launch',
             'Customer survey showed 41% of water sports purchasers were existing North Ridge customers, validating brand extension strategy',
           ],
@@ -561,7 +561,7 @@ const solutions: BizSolution[] = [
             {
               title: 'Step 4 - Launch Campaign, Influencer Partnerships, and Reorder Velocity',
               detail:
-                "AlpenWerk launched the 'SeeWolf' 10'8\", 'Flussläufer' 11'6\", and 'Gipfelstürmer' 12'0\" touring models on 1 March 2024 across all retail channels and alpenwerk.de. Afarer's content team produced 18 social media assets featuring German SUP influencers like 'SUP_mit_Michi' (43,000 followers) and 'PaddelPia' (28,000 followers). By 31 May 2024, 1,870 units had sold through—87% of the initial sell-in. Intersport placed a reorder for 450 units on 15 June. Lena's direct-to-consumer web channel contributed €320,000 in revenue at 54% gross margin, outperforming the 40% margin initially projected.",
+                "AlpenWerk launched the 'SeeWolf' 10'8\", 'Flussläufer' 11'6\", and 'Gipfelstürmer' 12'0\" touring models on 1 March 2024 across all retail channels and alpenwerk.de. Afarer's content team produced 18 social media assets featuring German SUP influencers like 'SUP_mit_Michi' (43,000 followers) and 'PaddelPia' (28,000 followers). By 31 May 2024, 1,870 units had sold through — 87% of the initial sell-in. Intersport placed a reorder for 450 units on 15 June. Lena's direct-to-consumer web channel contributed €320,000 in revenue at 54% gross margin, outperforming the 40% margin initially projected.",
             },
           ],
           results: [
@@ -827,7 +827,7 @@ const solutions: BizSolution[] = [
             {
               title: 'Step 4 - Operational Impact Measurement and Cost-Benefit Analysis',
               detail:
-                "By March 2024 (12 months post-initial deployment), Brendan's maintenance costs had dropped from $37,000 AUD to $4,200 AUD—$2,900 for 4 valve replacements and $1,300 for EVA deck pad repairs. Board storage capacity in the same 65 m² shed increased from 60 hardboards to 200 deflated boards. Instructor feedback surveys (22 respondents) showed 91% preferred teaching on the inflatable boards, citing 'less fatigue carrying boards' and 'fewer student falls on hard rails'. Student retention improved 8% in the 55+ age demographic, which Brendan attributed to the perceived safety of softer boards. The inflatable fleet averaged 850 uses per board with zero structural failures.",
+                "By March 2024 (12 months post-initial deployment), Brendan's maintenance costs had dropped from $37,000 AUD to $4,200 AUD — $2,900 for 4 valve replacements and $1,300 for EVA deck pad repairs. Board storage capacity in the same 65 m² shed increased from 60 hardboards to 200 deflated boards. Instructor feedback surveys (22 respondents) showed 91% preferred teaching on the inflatable boards, citing 'less fatigue carrying boards' and 'fewer student falls on hard rails'. Student retention improved 8% in the 55+ age demographic, which Brendan attributed to the perceived safety of softer boards. The inflatable fleet averaged 850 uses per board with zero structural failures.",
             },
           ],
           results: [
@@ -842,7 +842,7 @@ const solutions: BizSolution[] = [
           customer: {
             location: 'Cape Town, Western Cape, South Africa',
             background:
-              "Thabo Ndlovu, 45, founded 'Atlantic Swell Surf & Sport' in 2013 in Kalk Bay, Cape Town. His shop sells global brands like Billabong, Channel Islands, and Firewire, but import costs and currency volatility (ZAR weakened 38% against USD from 2020 to 2023) squeezed his margins to an average of 22%. Thabo had shaped custom polyurethane surfboards in his garage for 10 years before opening the shop, and he knew surfboard construction intimately. In 2022, he noticed inflatable SUP sales growing at his shop—34 units in 2020, 78 in 2021, 142 in 2022—but he had no house brand. He wanted to create a South African-owned SUP brand called 'Kalk Bay Surf Co.' with locally inspired graphics and price point of R6,500–R8,500 ($360–$470 USD).",
+              "Thabo Ndlovu, 45, founded 'Atlantic Swell Surf & Sport' in 2013 in Kalk Bay, Cape Town. His shop sells global brands like Billabong, Channel Islands, and Firewire, but import costs and currency volatility (ZAR weakened 38% against USD from 2020 to 2023) squeezed his margins to an average of 22%. Thabo had shaped custom polyurethane surfboards in his garage for 10 years before opening the shop, and he knew surfboard construction intimately. In 2022, he noticed inflatable SUP sales growing at his shop — 34 units in 2020, 78 in 2021, 142 in 2022 — but he had no house brand. He wanted to create a South African-owned SUP brand called 'Kalk Bay Surf Co.' with locally inspired graphics and price point of R6,500–R8,500 ($360–$470 USD).",
             goal: 'To launch a 2-SKU private-label inflatable SUP line (10\'0" all-around and 11\'0" touring) with 200-unit first production run, achieving 48% gross margin (more than double his branded margin) and establishing a direct-to-consumer channel alongside retail.',
           },
           steps: [
@@ -864,7 +864,7 @@ const solutions: BizSolution[] = [
             {
               title: 'Step 4 - Retail Launch, Tour Operator Partnerships, and Reorder',
               detail:
-                "Kalk Bay Surf Co. officially launched on 1 March 2023 with 150 boards in stock (100 all-around, 50 touring). Thabo sold through his website and his physical shop, but the breakthrough came when he signed 3 local tour operators—'Cape Kayak Adventures' (Hout Bay), 'False Bay SUP' (Simon's Town), and 'Garden Route Paddle Co.' (Plettenberg Bay)— as fleet buyers. The tour operators ordered 76 boards collectively in the first 6 months, impressed by the durability and local branding. By September 2023, Thabo had sold 184 of 200 boards and placed a reorder for 300 units (200 all-around, 100 touring). Total revenue from the Kalk Bay Surf Co. line reached R1.32M in the first 12 months.",
+                "Kalk Bay Surf Co. officially launched on 1 March 2023 with 150 boards in stock (100 all-around, 50 touring). Thabo sold through his website and his physical shop, but the breakthrough came when he signed 3 local tour operators — 'Cape Kayak Adventures' (Hout Bay), 'False Bay SUP' (Simon's Town), and 'Garden Route Paddle Co.' (Plettenberg Bay)— as fleet buyers. The tour operators ordered 76 boards collectively in the first 6 months, impressed by the durability and local branding. By September 2023, Thabo had sold 184 of 200 boards and placed a reorder for 300 units (200 all-around, 100 touring). Total revenue from the Kalk Bay Surf Co. line reached R1.32M in the first 12 months.",
             },
           ],
           results: [
@@ -1177,7 +1177,7 @@ const solutions: BizSolution[] = [
           ],
           results: [
             'First-year DTC revenue reached €487,000, exceeding the €400,000 target by 21.8%',
-            'Gross margin of 53.2% achieved—3.2 points above the 50% target — despite sustainable material premium',
+            'Gross margin of 53.2% achieved — 3.2 points above the 50% target — despite sustainable material premium',
             'Carbon-neutral shipping program offset 14.7 tonnes CO₂ across 2,150 units shipped in the first year',
             'UrbanPulse customer retention rate increased from 28% to 34% after SUP line launch, with 23% of SUP buyers making a subsequent apparel purchase',
           ],
@@ -1429,7 +1429,7 @@ const solutions: BizSolution[] = [
             {
               title: 'Step 4 - Production, Seasonal Timing, and First-Year Sell-Through',
               detail:
-                "Production of 1,200 units (700 Lake Angler, 500 Expedition Angler) ran from September to November 2023 at Afarer's facility in Zhongshan. The shipment left Ningbo on 18 November 2023 and arrived at the Port of Gothenburg on 18 December 2023—ideally timed for retailers' spring purchasing. Nordic Angler distributed 760 units to retail shelves by 1 March 2024, with the remaining 440 units in their own warehouse for direct fulfillment. By 31 May 2024, 980 units had sold through (81.7% of the initial run). The Lake Angler board became the #1 selling fishing SUP at XXL Sweden within 90 days. Erik placed a reorder for 1,800 units in June 2024 with 3 design improvements: a more padded carry bag, tool-less rail adjustment knobs, and a GPS-tracker mounting pocket.",
+                "Production of 1,200 units (700 Lake Angler, 500 Expedition Angler) ran from September to November 2023 at Afarer's facility in Zhongshan. The shipment left Ningbo on 18 November 2023 and arrived at the Port of Gothenburg on 18 December 2023 — ideally timed for retailers' spring purchasing. Nordic Angler distributed 760 units to retail shelves by 1 March 2024, with the remaining 440 units in their own warehouse for direct fulfillment. By 31 May 2024, 980 units had sold through (81.7% of the initial run). The Lake Angler board became the #1 selling fishing SUP at XXL Sweden within 90 days. Erik placed a reorder for 1,800 units in June 2024 with 3 design improvements: a more padded carry bag, tool-less rail adjustment knobs, and a GPS-tracker mounting pocket.",
             },
           ],
           results: [
@@ -1727,7 +1727,7 @@ const solutions: BizSolution[] = [
             {
               title: 'Step 1 - Yoga-Specific Board Design and Sanskrit Aesthetics',
               detail:
-                "Afarer's design team spent 3 weeks in March 2023 studying Simone's requirements. The result: 'Serenity' SUP yoga board—34\" wide (versus standard 32\"), 11'6\" length, with a 7-layer drop-stitch core for rigid stability. The deck featured a 6-mm thick closed-cell EVA pad with a diamond-pattern texture (tested coefficient of friction: 0.85 dry, 0.72 wet) covering 85% of the deck surface. Afarer incorporated a Sanskrit 'Om' symbol in silver reflective heat-transfer on the nose and a lotus pattern around the centre carry handle. The boards came in 4 colors (coral, turquoise, sunset orange, lagoon blue) corresponding to the 4 Azure Resort color palettes. Each board had 8 stainless steel D-rings—4 for a bungee cord system to secure yoga mats, and 4 for optional anchor lines for stationary practice in currents.",
+                "Afarer's design team spent 3 weeks in March 2023 studying Simone's requirements. The result: 'Serenity' SUP yoga board — 34\" wide (versus standard 32\"), 11'6\" length, with a 7-layer drop-stitch core for rigid stability. The deck featured a 6-mm thick closed-cell EVA pad with a diamond-pattern texture (tested coefficient of friction: 0.85 dry, 0.72 wet) covering 85% of the deck surface. Afarer incorporated a Sanskrit 'Om' symbol in silver reflective heat-transfer on the nose and a lotus pattern around the centre carry handle. The boards came in 4 colors (coral, turquoise, sunset orange, lagoon blue) corresponding to the 4 Azure Resort color palettes. Each board had 8 stainless steel D-rings — 4 for a bungee cord system to secure yoga mats, and 4 for optional anchor lines for stationary practice in currents.",
             },
             {
               title: 'Step 2 - Pilot Programme at Azure North with Yoga Instructor Training',
@@ -1784,7 +1784,7 @@ const solutions: BizSolution[] = [
           ],
           results: [
             'First-year combined revenue of $342,000 exceeded the $250,000 target by 36.8%',
-            'Kickstarter campaign raised $74,200—212% of the $35,000 goal — from 118 backers in 30 days',
+            'Kickstarter campaign raised $74,200 — 212% of the $35,000 goal — from 118 backers in 30 days',
             'REI sell-through of 82% across 5 Southern California stores led to a chain-wide expansion order of 100 boards',
             'Class attendance grew from 12 classes/month (140 students) to 88 classes/month (1,232 students), a 780% increase',
           ],
@@ -2105,7 +2105,7 @@ const solutions: BizSolution[] = [
             },
           ],
           results: [
-            '1,000 units presold in 10 days at 3,990 NOK each—3.99 million NOK ($370,000 USD) before launch',
+            '1,000 units presold in 10 days at 3,990 NOK each — 3.99 million NOK ($370,000 USD) before launch',
             'Total 2024 sales reached 2,300 units across 18 European countries, exceeding 12-month target by 130%',
             "Tor's YouTube channel gained 280,000 subscribers during the Fjord tour; tour videos averaged 1.9 million views",
             'CrossFit Oslo, CrossFit London, and 35 other affiliate boxes adopted the boards for outdoor summer programming',
@@ -2385,7 +2385,7 @@ const solutions: BizSolution[] = [
             },
           ],
           results: [
-            'Monthly fleet revenue grew from AED 157,000 to AED 487,000 ($132,600)—210% increase in 6 months',
+            'Monthly fleet revenue grew from AED 157,000 to AED 487,000 ($132,600) — 210% increase in 6 months',
             'Annual board replacement rate dropped from 60% to 4.5%, saving approximately AED 312,000 per year',
             'Customer satisfaction scores rose from 3.8/5 (generic fleet) to 4.7/5 (Afarer fleet); Google Reviews increased from 187 to 1,420',
             'Ahmed expanded to a 4th location (Ras Al Khaimah) in February 2025, ordering 80 additional boards',
@@ -2423,7 +2423,7 @@ const solutions: BizSolution[] = [
           ],
           results: [
             'Seasonal revenue grew 137% from €1.2M to €2.85M in first year of Afarer deployment',
-            'Board repair costs dropped from €22,000 to €2,800—a 87% reduction saving €19,200',
+            'Board repair costs dropped from €22,000 to €2,800 — a 87% reduction saving €19,200',
             'Only 4 of 200 boards written off (2% annual loss vs. 35% with previous fleet); projected 4-to-5-season lifespan',
             'Guided excursion product generated €843,000 in first season with 87% profit margin; 4.9/5 TripAdvisor rating',
           ],
@@ -2673,7 +2673,7 @@ const solutions: BizSolution[] = [
           customer: {
             location: 'Lake Muskoka, Ontario, Canada',
             background:
-              "Sarah Chen, 39, owns 'Muskoka Paddle Co.', which operates SUP rentals from 3 resorts on Lake Muskoka, Lake Rosseau, and Lake Joseph — the 'Muskoka Lakes' region 2 hours north of Toronto. She started in 2019 with 15 boards, growing to 120 by 2023 as paddleboard rentals became the #1 requested activity among the resorts' 47,000 annual guests. But Canadian winters destroyed her boards: freeze-thaw cycles caused material fatigue, ice scraping against stored boards created micro-tears, and -30°C storage temperatures embrittled PVC. Sarah was replacing 45-55% of her fleet each spring—$63,000 CAD annually. Her resort partners threatened to drop the rental service if quality didn't improve.",
+              "Sarah Chen, 39, owns 'Muskoka Paddle Co.', which operates SUP rentals from 3 resorts on Lake Muskoka, Lake Rosseau, and Lake Joseph — the 'Muskoka Lakes' region 2 hours north of Toronto. She started in 2019 with 15 boards, growing to 120 by 2023 as paddleboard rentals became the #1 requested activity among the resorts' 47,000 annual guests. But Canadian winters destroyed her boards: freeze-thaw cycles caused material fatigue, ice scraping against stored boards created micro-tears, and -30°C storage temperatures embrittled PVC. Sarah was replacing 45-55% of her fleet each spring — $63,000 CAD annually. Her resort partners threatened to drop the rental service if quality didn't improve.",
             goal: 'Find a winter-hardy SUP platform that survives Canadian lake storage conditions with ≤10% annual replacement, while maintaining premium rental experience for 4-season resorts.',
           },
           steps: [
@@ -2695,7 +2695,7 @@ const solutions: BizSolution[] = [
             {
               title: 'Summer 2024 Launch and Leaf Season Performance',
               detail:
-                "The 150-board fleet (120 rentals + 30 backup) arrived May 15, 2024, in time for Victoria Day weekend. Sarah launched a premium 'Muskoka Explorer' guided tour at $89 CAD/person (3 hours, includes local history and cranberry river float)— averaging 320 bookings per week by July. The new boards allowed her to increase rental price from $35/hr to $45/hr, justified by 'expedition-grade' quality messaging. By September, total fleet revenue hit $487,000 CAD. Only 2 boards needed repair: one from a guest dragging it over a sharp rock (easy patch repair), one from a black bear clawing the deck (a first for Sarah). November winterization went smoothly—150 boards sleeved and racked in 3 days. Sarah's resort partners signed 3-year extensions.",
+                "The 150-board fleet (120 rentals + 30 backup) arrived May 15, 2024, in time for Victoria Day weekend. Sarah launched a premium 'Muskoka Explorer' guided tour at $89 CAD/person (3 hours, includes local history and cranberry river float)— averaging 320 bookings per week by July. The new boards allowed her to increase rental price from $35/hr to $45/hr, justified by 'expedition-grade' quality messaging. By September, total fleet revenue hit $487,000 CAD. Only 2 boards needed repair: one from a guest dragging it over a sharp rock (easy patch repair), one from a black bear clawing the deck (a first for Sarah). November winterization went smoothly — 150 boards sleeved and racked in 3 days. Sarah's resort partners signed 3-year extensions.",
             },
           ],
           results: [
@@ -2737,7 +2737,7 @@ const solutions: BizSolution[] = [
             },
           ],
           results: [
-            'Rental revenue from SUPs reached €428,000 in first season; ancillary accessory sales added €187,000—total €615,000',
+            'Rental revenue from SUPs reached €428,000 in first season; ancillary accessory sales added €187,000 — total €615,000',
             'Daily maintenance dropped from 15 hours to 3.5 hours across 7 beaches, saving €42,000 in labor annually',
             'Board theft eliminated (12/year previously); cork deck outperformed EVA by 8°C temperature reduction at peak sun',
             "Customer satisfaction score increased from 3.4/5 to 4.8/5; Google rating for 'water sports equipment quality' rose to 4.9/5",
@@ -2995,7 +2995,7 @@ const solutions: BizSolution[] = [
             {
               title: 'November 2024 High-Season Launch and Media Coverage',
               detail:
-                "The 'Cenote-to-Ocean' experience launched November 15, 2024 (start of Punta Mita high season). First 30 days: 112 tours sold at $450/person = $50,400 revenue. A Condé Nast Traveler journalist was guest #47; her article 'Mexico's Newest Eco-Thrill: Paddleboarding a Cenote to the Pacific' published in January 2025 drove 800+ bookings through March. Guest satisfaction averaged 4.94/5 across 340 tours. The resort added a $150 'Golden Hour' photography add-on (sunset session with professional drone pilot, champagne, and oysters)—94% of guests purchased it. By April 2025, the program generated $1.12 million in direct revenue with 52% profit margin. Casa del Pacífico ordered 20 additional boards for 2026 and contracted Afarer to develop a 'Whale-Watching SUP' package (humpback migration December-March).",
+                "The 'Cenote-to-Ocean' experience launched November 15, 2024 (start of Punta Mita high season). First 30 days: 112 tours sold at $450/person = $50,400 revenue. A Condé Nast Traveler journalist was guest #47; her article 'Mexico's Newest Eco-Thrill: Paddleboarding a Cenote to the Pacific' published in January 2025 drove 800+ bookings through March. Guest satisfaction averaged 4.94/5 across 340 tours. The resort added a $150 'Golden Hour' photography add-on (sunset session with professional drone pilot, champagne, and oysters) — 94% of guests purchased it. By April 2025, the program generated $1.12 million in direct revenue with 52% profit margin. Casa del Pacífico ordered 20 additional boards for 2026 and contracted Afarer to develop a 'Whale-Watching SUP' package (humpback migration December-March).",
             },
           ],
           results: [
@@ -3027,7 +3027,7 @@ const solutions: BizSolution[] = [
             {
               title: 'Guide Team Recruitment and Safety Certification',
               detail:
-                "Tomo Kato returned in December 2023 to train Mint's guide team of 6: three certified Thai kayak guides and three ex-Thai Navy personnel. The 10-day course included: open-water navigation (compass bearings between islands — GPS backup only), rescue scenarios (simulating capsize in Koh Phangan ferry wake, which has 2-meter swell), medical emergency protocols (the nearest hyperbaric chamber is in Samui's Thai International Hospital—45 minutes by speedboat from Koh Tao), group management in strong currents, and luxury service standards (setting up beach camp with proper mattress — not just sleeping pad — and preparing a 3-course Thai dinner over camp stove). Each guide completed 5 solo test crossings before certification. Safety equipment per group: satellite phone (Iridium), EPIRB, full medical kit, and a 15-hp support boat shadowing at 500 meters.",
+                "Tomo Kato returned in December 2023 to train Mint's guide team of 6: three certified Thai kayak guides and three ex-Thai Navy personnel. The 10-day course included: open-water navigation (compass bearings between islands — GPS backup only), rescue scenarios (simulating capsize in Koh Phangan ferry wake, which has 2-meter swell), medical emergency protocols (the nearest hyperbaric chamber is in Samui's Thai International Hospital — 45 minutes by speedboat from Koh Tao), group management in strong currents, and luxury service standards (setting up beach camp with proper mattress — not just sleeping pad — and preparing a 3-course Thai dinner over camp stove). Each guide completed 5 solo test crossings before certification. Safety equipment per group: satellite phone (Iridium), EPIRB, full medical kit, and a 15-hp support boat shadowing at 500 meters.",
             },
             {
               title: 'January 2025 Inaugural Expedition and 12-Month Booking Pipeline',
@@ -3317,7 +3317,7 @@ const solutions: BizSolution[] = [
             'Academy enrollment exceeded 127% capacity in first year, growing from 43 to 87 students; ¥4.2 million in tuition revenue',
             "2 students qualified for Japan's junior national SUP team in the first year; 1 earned top-20 finish at ISA World Championships",
             '3 Kamakura junior high schools adopted SUP as official after-school club — first program of its kind in Japan',
-            'Board maintenance cost: ¥68,000 ($450 USD) for 60 boards in 12 months—0.5% of equipment value; 3-year partnership signed for national expansion',
+            'Board maintenance cost: ¥68,000 ($450 USD) for 60 boards in 12 months — 0.5% of equipment value; 3-year partnership signed for national expansion',
           ],
         },
         {
@@ -3347,11 +3347,11 @@ const solutions: BizSolution[] = [
             {
               title: 'September 2024 Term 1 Launch and Enrollment Surge',
               detail:
-                "Term 1 (September-November 2024, Australian spring) launched with 183 enrolled students—91% of the 200 target. Kylie ran 28 classes per week with 12 instructors. Parent satisfaction: 4.8/5. Term 2 (February-April 2025) enrollment hit 264 students (132% of target). Revenue: Term 1 = $91,317 AUD; Term 2 = $131,736 AUD. The academy's 'Adaptive Paddle' program (for students with disabilities, co-designed with Spinal Life Australia) enrolled 12 students and won the 2025 Gold Coast Sport & Recreation 'Inclusive Program of the Year.' Board maintenance cost: $1,220 AUD total across 120 boards in 6 months (mostly fin screws and valve caps). Kylie ordered 60 additional boards for 2025-26 and contracted Afarer to develop an advanced 'Race Squad' board for her 15 competitive students.",
+                "Term 1 (September-November 2024, Australian spring) launched with 183 enrolled students — 91% of the 200 target. Kylie ran 28 classes per week with 12 instructors. Parent satisfaction: 4.8/5. Term 2 (February-April 2025) enrollment hit 264 students (132% of target). Revenue: Term 1 = $91,317 AUD; Term 2 = $131,736 AUD. The academy's 'Adaptive Paddle' program (for students with disabilities, co-designed with Spinal Life Australia) enrolled 12 students and won the 2025 Gold Coast Sport & Recreation 'Inclusive Program of the Year.' Board maintenance cost: $1,220 AUD total across 120 boards in 6 months (mostly fin screws and valve caps). Kylie ordered 60 additional boards for 2025-26 and contracted Afarer to develop an advanced 'Race Squad' board for her 15 competitive students.",
             },
           ],
           results: [
-            'Enrollment grew from 183 (Term 1) to 264 (Term 2)—44% increase in 6 months, exceeding all projections',
+            'Enrollment grew from 183 (Term 1) to 264 (Term 2) — 44% increase in 6 months, exceeding all projections',
             'Revenue: $223,053 AUD across two terms; 92% of Term 1 students renewed for Term 2',
             "Adaptive Paddle Program won 'Inclusive Program of the Year' at Gold Coast Sport & Recreation Awards 2025",
             "Board maintenance cost of $1,220 AUD on 120 boards = 0.2% of equipment value; Kylie's insurance premium dropped 18% due to improved safety record",
@@ -3599,7 +3599,7 @@ const solutions: BizSolution[] = [
           customer: {
             location: 'Tromsø, Norway / Svalbard, Arctic Circle',
             background:
-              "Erik Solberg, 51, is the Senior Expedition Product Manager for Hurtigruten Svalbard AS, the Norwegian cruise line operating 7 hybrid-powered expedition ships in the Arctic. Hurtigruten's guests (average age 58, household income $350,000+) pay $8,000-$25,000 for 12-day voyages. In 2023, guest feedback showed 'active Arctic experiences' as the #1 unmet demand — specifically small-group paddling among icebergs and along glacier fronts. But standard SUPs can't handle 2°C water, -5°C air, and the logistical challenge of deploying from Zodiacs in polar bear territory. Erik had tried 3 brands in 2022—all failed within 5 trips (valves froze, boards became brittle, and one deflated mid-paddle in 4°C water, requiring an emergency Zodiac pickup 800 meters from the ship).",
+              "Erik Solberg, 51, is the Senior Expedition Product Manager for Hurtigruten Svalbard AS, the Norwegian cruise line operating 7 hybrid-powered expedition ships in the Arctic. Hurtigruten's guests (average age 58, household income $350,000+) pay $8,000-$25,000 for 12-day voyages. In 2023, guest feedback showed 'active Arctic experiences' as the #1 unmet demand — specifically small-group paddling among icebergs and along glacier fronts. But standard SUPs can't handle 2°C water, -5°C air, and the logistical challenge of deploying from Zodiacs in polar bear territory. Erik had tried 3 brands in 2022 — all failed within 5 trips (valves froze, boards became brittle, and one deflated mid-paddle in 4°C water, requiring an emergency Zodiac pickup 800 meters from the ship).",
             goal: 'Equip 4 Hurtigruten ships (MS Fram, MS Midnatsol, MS Trollfjord, and MS Maud) with 60 polar-grade portable SUP packages that deploy from Zodiacs in Arctic conditions, withstand -15°C to +10°C temperature range, polar bear encounter protocols, and maintain luxury guest experience standards.',
           },
           steps: [
