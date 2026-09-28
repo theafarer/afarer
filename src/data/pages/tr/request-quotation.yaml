@@ -36,17 +36,17 @@ content_form:
     companyName: Şirket
     email: E-posta
   fields:
-    - name: Product Type
+    - name: Ürün kategorisi
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - SUP Tahtası
+        - Şişme SUP
+        - Şişme SUP Tahtası
+        - Can Yeleği
+        - Deniz Aksesuarı
+        - Özel OEM/ODM
+    - name: Uygulama
+      type: select
       options:
         - Dalış Merkezi
         - Balıkçılık
@@ -58,39 +58,39 @@ content_form:
         - OEM / Özel Marka
         - Kişisel / Eğlence
         - Diğer
-    - name: Target Market
+    - name: Miktar
+      type: text
+      placeholder: örn. 50 adet
+    - name: Hedef pazar
       type: text
       placeholder: örn. Avrupa, Kuzey Amerika, Orta Doğu
-    - name: Customization Needed
+    - name: Teslimat ülkesi
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: örn. 90 gün içinde teslimat
-    - name: Additional Requirements
-      type: textarea
+      placeholder: örn. İtalya, BAE, ABD, Avustralya
+    - name: Malzeme tercihi
+      type: select
       options:
         - Tercih Yok
         - Deniz Sınıfı PVC (1100 dtex)
         - Premium Hypalon / CSM
         - Fiberglass Gövde
         - Alüminyum Gövde
-    - name: Engine Requirement
+    - name: Motor gereksinimi
       type: text
       placeholder: örn. 60 HP dıştan takma motor, motorsuz, ikiz 115 HP
-    - name: Customization Required
+    - name: Gerekli özelleştirme
       type: text
       placeholder: örn. özel renkler, marka/logo, ambalaj, özel aksesuarlar
-    - name: Timeline
+    - name: Teslimat süresi
       type: text
       placeholder: ör. 90 gün içinde teslimat
-    - name: Additional Requirements
+    - name: Ek gereksinimler
       type: textarea
       placeholder: Uygulamanızı, teknik özelliklerinizi veya özel gereksinimlerinizi tanımlayın — mümkünse referans çizimleri, özellikler veya bağlantılar dahil edin
-    - name: Upload Specification
+    - name: Spesifikasyon yükle
       type: file
       placeholder: Teknik özellik sayfanızı, çiziminizi veya referans belgenizi yükleyin (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: Logo / tasarım yükle
       type: file
       placeholder: Özel markalama için logonuzu veya tasarımınızı yükleyin (AI, EPS, PNG)
 cta:

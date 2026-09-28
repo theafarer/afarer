@@ -36,17 +36,17 @@ content_form:
     companyName: Компания
     email: Email
   fields:
-    - name: Product Type
+    - name: Категория товара
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - SUP-доска
+        - Надувной SUP
+        - Надувная SUP-доска
+        - Спасательный жилет
+        - Морской аксессуар
+        - OEM/ODM на заказ
+    - name: Применение
+      type: select
       options:
         - Дайвинг-центр
         - Рыбалка
@@ -58,39 +58,39 @@ content_form:
         - ОЕМ / Частная марка
         - Личное / Развлекательное
         - Другое
-    - name: Target Market
+    - name: Количество
+      type: text
+      placeholder: напр. 50 шт.
+    - name: Целевой рынок
       type: text
       placeholder: напр. Европа, Северная Америка, Ближний Восток
-    - name: Customization Needed
+    - name: Страна доставки
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: напр. доставка в течение 90 дней
-    - name: Additional Requirements
-      type: textarea
+      placeholder: напр. Италия, ОАЭ, США, Австралия
+    - name: Предпочтительный материал
+      type: select
       options:
         - Без предпочтений
         - Морской ПВХ (1100 дтекс)
         - Премиум Гипалон / CSM
         - Стеклопластиковый корпус
         - Алюминиевый корпус
-    - name: Engine Requirement
+    - name: Требования к двигателю
       type: text
       placeholder: например, 60 л.с. подвесной, без двигателя, двойной 115 л.с.
-    - name: Customization Required
+    - name: Необходимая кастомизация
       type: text
       placeholder: например, индивидуальные цвета, брендинг/логотип, упаковка, специальные элементы
-    - name: Timeline
+    - name: Сроки
       type: text
       placeholder: например, доставка в течение 90 дней
-    - name: Additional Requirements
+    - name: Дополнительные требования
       type: textarea
       placeholder: Опишите ваше приложение, технические характеристики или любые специальные требования — включите прилагаемые чертежи, спецификации или ссылки, если они доступны
-    - name: Upload Specification
+    - name: Загрузить спецификацию
       type: file
       placeholder: Загрузите ваш технический паспорт, чертеж или справочный документ (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: Загрузить логотип / иллюстрацию
       type: file
       placeholder: Загрузите ваш логотип или произведение искусства для индивидуального брендинга (AI, EPS, PNG)
 cta:

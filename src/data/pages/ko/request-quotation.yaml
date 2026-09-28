@@ -36,17 +36,17 @@ content_form:
     companyName: 회사명
     email: 이메일
   fields:
-    - name: Product Type
+    - name: 제품 카테고리
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - SUP 보드
+        - 인플래터블 SUP
+        - 인플래터블 SUP 보드
+        - 구명조끼
+        - 마린 액세서리
+        - 커스텀 OEM/ODM
+    - name: 용도
+      type: select
       options:
         - 다이빙 센터
         - 낚시
@@ -58,39 +58,39 @@ content_form:
         - OEM / 프라이빗 라벨
         - 개인/레저용
         - 기타
-    - name: Target Market
+    - name: 수량
+      type: text
+      placeholder: '예: 50개'
+    - name: 목표 시장
       type: text
       placeholder: '예: 유럽, 북미, 중동'
-    - name: Customization Needed
+    - name: 배송 국가
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: '예: 90일 이내 배송'
-    - name: Additional Requirements
-      type: textarea
+      placeholder: '예: 이탈리아, UAE, 미국, 호주'
+    - name: 소재 선호
+      type: select
       options:
         - 선호 없음
         - 마린 등급 PVC(1100 dtex)
         - 프리미엄 하이퍼론 / CSM
         - 유리섬유 선체
         - 알루미늄 선체
-    - name: Engine Requirement
+    - name: 엔진 요구사항
       type: text
       placeholder: '예: 60HP 아웃보드, 엔진 미장착, 트윈 115HP'
-    - name: Customization Required
+    - name: 커스터마이징 요구사항
       type: text
       placeholder: '예: 맞춤 색상, 브랜딩/로고, 패키징, 특수 장비'
-    - name: Timeline
+    - name: 납품 일정
       type: text
       placeholder: '예: 90일 이내 납품'
-    - name: Additional Requirements
+    - name: 추가 요구사항
       type: textarea
       placeholder: 응용 분야, 기술 사양 또는 특별한 요구사항을 설명해 주세요 — 참고 도면, 사양 또는 링크가 있으면 포함해 주세요.
-    - name: Upload Specification
+    - name: 사양서 업로드
       type: file
       placeholder: 사양 시트, 도면 또는 참고 문서를 업로드하십시오 (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: 로고/아트워크 업로드
       type: file
       placeholder: 맞춤 브랜딩을 위해 로고 또는 아트워크를 업로드하세요 (AI, EPS, PNG)
 cta:

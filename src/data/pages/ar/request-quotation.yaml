@@ -36,17 +36,17 @@ content_form:
     companyName: اسم الشركة
     email: البريد الإلكتروني
   fields:
-    - name: Product Type
+    - name: فئة المنتج
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - لوح SUP
+        - SUP قابل للنفخ
+        - لوح SUP قابل للنفخ
+        - سترة نجاة
+        - ملحق بحري
+        - OEM/ODM مخصص
+    - name: التطبيق
+      type: select
       options:
         - مركز الغوص
         - صيد الأسماك
@@ -58,39 +58,39 @@ content_form:
         - OEM / العلامة الخاصة
         - شخصي / ترفيهي
         - أخرى
-    - name: Target Market
+    - name: الكمية
+      type: text
+      placeholder: 'مثال: 50 وحدة'
+    - name: السوق المستهدف
       type: text
       placeholder: 'مثال: أوروبا، أمريكا الشمالية، الشرق الأوسط'
-    - name: Customization Needed
+    - name: بلد التسليم
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: 'مثال: التسليم خلال 90 يومًا'
-    - name: Additional Requirements
-      type: textarea
+      placeholder: 'مثال: إيطاليا، الإمارات، الولايات المتحدة، أستراليا'
+    - name: المادة المفضلة
+      type: select
       options:
         - لا تفضيل
         - PVC من الدرجة البحرية (1100 dtex)
         - Hypalon / CSM فاخر
         - هيكل من الألياف الزجاجية
         - هيكل ألمنيوم
-    - name: Engine Requirement
+    - name: متطلبات المحرك
       type: text
       placeholder: 'مثال: محرك خارجي بقوة 60 حصانًا، بدون محرك، محرك مزدوج بقوة 115 حصانًا'
-    - name: Customization Required
+    - name: التخصيص المطلوب
       type: text
       placeholder: 'مثال: ألوان مخصصة، وعلامة تجارية/شعار، وتغليف، وتركيبات خاصة'
-    - name: Timeline
+    - name: الجدول الزمني
       type: text
       placeholder: 'مثال: التسليم خلال 90 يومًا'
-    - name: Additional Requirements
+    - name: متطلبات إضافية
       type: textarea
       placeholder: صف تطبيقك، أو مواصفاتك الفنية، أو أي متطلبات خاصة — وأرفق الرسومات المرجعية أو المواصفات أو الروابط إن كانت متوفرة
-    - name: Upload Specification
+    - name: رفع المواصفات
       type: file
       placeholder: ارفع ورقة المواصفات أو الرسم أو المستند المرجعي (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: رفع الشعار / التصميم الفني
       type: file
       placeholder: ارفع شعارك أو تصميمك الفني للعلامة التجارية المخصصة (AI, EPS, PNG)
 cta:

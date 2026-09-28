@@ -36,17 +36,17 @@ content_form:
     companyName: Numele companiei
     email: E-mail
   fields:
-    - name: Product Type
+    - name: Categorie de produs
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - Placă SUP
+        - SUP gonflabil
+        - Placă SUP gonflabilă
+        - Vestă de salvare
+        - Accesoriu marin
+        - OEM/ODM personalizat
+    - name: Aplicație
+      type: select
       options:
         - Centru de scufundări
         - Pescuit
@@ -58,39 +58,39 @@ content_form:
         - OEM / Marcă proprie
         - Personal / Recreațional
         - Altele
-    - name: Target Market
+    - name: Cantitate
+      type: text
+      placeholder: 'ex.: 50 de unități'
+    - name: Piață țintă
       type: text
       placeholder: 'ex.: Europa, America de Nord, Orientul Mijlociu'
-    - name: Customization Needed
+    - name: Țara de livrare
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: 'ex.: livrare în termen de 90 de zile'
-    - name: Additional Requirements
-      type: textarea
+      placeholder: 'ex.: Italia, EAU, SUA, Australia'
+    - name: Preferință de material
+      type: select
       options:
         - Fără preferință
         - PVC de calitate marină (1100 dtex)
         - Hypalon / CSM Premium
         - Cocă din fibră de sticlă
         - Cocă din aluminiu
-    - name: Engine Requirement
+    - name: Cerință motor
       type: text
       placeholder: ex. motor exterior 60 HP, fără motor, două motoare 115 HP
-    - name: Customization Required
+    - name: Personalizare necesară
       type: text
       placeholder: ex. culori personalizate, branding/logo, ambalaj, accesorii speciale
-    - name: Timeline
+    - name: Termen de livrare
       type: text
       placeholder: de ex. livrare în termen de 90 de zile
-    - name: Additional Requirements
+    - name: Cerințe suplimentare
       type: textarea
       placeholder: Descrie aplicația ta, specificațiile tehnice sau orice cerințe speciale — include desene de referință, specificații sau linkuri, dacă sunt disponibile.
-    - name: Upload Specification
+    - name: Încărcați specificația
       type: file
       placeholder: Încărcați fișa tehnică, desenul sau documentul de referință (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: Încărcați logo / materiale grafice
       type: file
       placeholder: Încărcați logo-ul sau materialele grafice pentru branding personalizat (AI, EPS, PNG)
 cta:

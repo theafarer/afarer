@@ -36,17 +36,17 @@ content_form:
     companyName: Bedrift
     email: E-post
   fields:
-    - name: Product Type
+    - name: Produktkategori
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - SUP-brett
+        - Oppblåsbar SUP
+        - Oppblåsbart SUP-brett
+        - Redningsvest
+        - Marint tilbehør
+        - Skreddersydd OEM/ODM
+    - name: Bruksområde
+      type: select
       options:
         - Dykkesenter
         - Fiske
@@ -58,39 +58,39 @@ content_form:
         - OEM / eget merke
         - Personlig / Fritid
         - Annet
-    - name: Target Market
+    - name: Antall
+      type: text
+      placeholder: f.eks. 50 enheter
+    - name: Målmarked
       type: text
       placeholder: f.eks. Europa, Nord-Amerika, Midtøsten
-    - name: Customization Needed
+    - name: Leveringsland
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: f.eks. levering innen 90 dager
-    - name: Additional Requirements
-      type: textarea
+      placeholder: f.eks. Italia, UAE, USA, Australia
+    - name: Materialpreferanse
+      type: select
       options:
         - Ingen preferanse
         - Marin-grade PVC (1100 dtex)
         - Premium Hypalon / CSM
         - Glassfiberskrog
         - Aluminiumsskrog
-    - name: Engine Requirement
+    - name: Motorbehov
       type: text
       placeholder: f.eks. 60 HK utenbordsmotor, ingen motor, to 115 HK
-    - name: Customization Required
+    - name: Ønsket tilpasning
       type: text
       placeholder: f.eks. tilpassede farger, merkevare/logo, emballasje, spesielle tilbehør
-    - name: Timeline
+    - name: Leveringstid
       type: text
       placeholder: f.eks. levering innen 90 dager
-    - name: Additional Requirements
+    - name: Ytterligere krav
       type: textarea
       placeholder: Beskriv din applikasjon, tekniske spesifikasjoner eller eventuelle spesielle krav — inkluder referansetegninger, spesifikasjoner eller lenker hvis tilgjengelig
-    - name: Upload Specification
+    - name: Last opp spesifikasjon
       type: file
       placeholder: Last opp spesifikasjonsarket, tegningen eller referansedokumentet ditt (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: Last opp logo / grafikk
       type: file
       placeholder: Last opp logoen eller grafikken din for tilpasset merking (AI, EPS, PNG)
 cta:

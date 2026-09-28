@@ -36,17 +36,17 @@ content_form:
     companyName: Företag
     email: E-post
   fields:
-    - name: Product Type
+    - name: Produktkategori
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - SUP-bräda
+        - Uppblåsbar SUP
+        - Uppblåsbar SUP-bräda
+        - Flytväst
+        - Marint tillbehör
+        - Skräddarsydd OEM/ODM
+    - name: Tillämpning
+      type: select
       options:
         - Dykcenter
         - Fiske
@@ -58,39 +58,39 @@ content_form:
         - OEM / Privatmärke
         - Personlig / Fritid
         - Övrigt
-    - name: Target Market
+    - name: Antal
+      type: text
+      placeholder: t.ex. 50 enheter
+    - name: Målmarknad
       type: text
       placeholder: t.ex. Europa, Nordamerika, Mellanöstern
-    - name: Customization Needed
+    - name: Leveransland
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: t.ex. leverans inom 90 dagar
-    - name: Additional Requirements
-      type: textarea
+      placeholder: t.ex. Italien, Förenade Arabemiraten, USA, Australien
+    - name: Materialpreferens
+      type: select
       options:
         - Ingen preferens
         - Marinklass PVC (1100 dtex)
         - Premium Hypalon / CSM
         - Glasfiberskrov
         - Aluminiumskrov
-    - name: Engine Requirement
+    - name: Motorbehov
       type: text
       placeholder: t.ex. 60 HK utanbordsmotor, ingen motor, dubbla 115 HK
-    - name: Customization Required
+    - name: Önskad anpassning
       type: text
       placeholder: t.ex. anpassade färger, varumärke/logotyp, förpackning, specialutrustning
-    - name: Timeline
+    - name: Leveranstid
       type: text
       placeholder: t.ex. leverans inom 90 dagar
-    - name: Additional Requirements
+    - name: Ytterligare krav
       type: textarea
       placeholder: Beskriv er tillämpning, tekniska specifikationer eller särskilda krav — bifoga ritningar, specifikationer eller länkar om tillgängliga
-    - name: Upload Specification
+    - name: Ladda upp specifikation
       type: file
       placeholder: Ladda upp din specifikation, ritning eller referensdokument (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: Ladda upp logotyp / grafik
       type: file
       placeholder: Ladda upp din logotyp eller grafik för anpassat varumärke (AI, EPS, PNG)
 cta:

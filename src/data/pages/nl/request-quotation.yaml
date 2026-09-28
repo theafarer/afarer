@@ -36,17 +36,17 @@ content_form:
     companyName: Bedrijf
     email: E-mail
   fields:
-    - name: Product Type
+    - name: Productcategorie
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - SUP-board
+        - Opblaasbare SUP
+        - Opblaasbaar SUP-board
+        - Reddingsvest
+        - Maritiem accessoire
+        - OEM/ODM op maat
+    - name: Toepassing
+      type: select
       options:
         - Duikcentrum
         - Vissen
@@ -58,39 +58,39 @@ content_form:
         - OEM / Eigen merk
         - Persoonlijk / Recreatief
         - Overige
-    - name: Target Market
+    - name: Aantal
+      type: text
+      placeholder: bijv. 50 stuks
+    - name: Doelmarkt
       type: text
       placeholder: bijv. Europa, Noord-Amerika, Midden-Oosten
-    - name: Customization Needed
+    - name: Leveringsland
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: bijv. levering binnen 90 dagen
-    - name: Additional Requirements
-      type: textarea
+      placeholder: bijv. Italië, VAE, VS, Australië
+    - name: Materiaalvoorkeur
+      type: select
       options:
         - Geen voorkeur
         - Marine-kwaliteit PVC (1100 dtex)
         - Premium Hypalon / CSM
         - GFK-romp
         - Aluminium romp
-    - name: Engine Requirement
+    - name: Motorvereisten
       type: text
       placeholder: bijv. 60 pk buitenboordmotor, geen motor, twee keer 115 pk
-    - name: Customization Required
+    - name: Benodigde aanpassingen
       type: text
       placeholder: bijv. aangepaste kleuren, branding/logo, verpakking, speciale bevestigingen
-    - name: Timeline
+    - name: Levertijd
       type: text
       placeholder: bijv. levering binnen 90 dagen
-    - name: Additional Requirements
+    - name: Aanvullende vereisten
       type: textarea
       placeholder: Beschrijf uw toepassing, technische specificaties of eventuele speciale vereisten — voeg indien beschikbaar referentietekeningen, specificaties of links toe
-    - name: Upload Specification
+    - name: Specificatie uploaden
       type: file
       placeholder: Upload uw specificatieblad, tekening of referentiedocument (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: Logo / artwork uploaden
       type: file
       placeholder: Upload uw logo of kunstwerk voor aangepaste branding (AI, EPS, PNG)
 cta:

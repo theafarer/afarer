@@ -36,17 +36,17 @@ content_form:
     companyName: 会社名
     email: メールアドレス
   fields:
-    - name: Product Type
+    - name: 製品カテゴリ
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - SUPボード
+        - インフレータブルSUP
+        - インフレータブルSUPボード
+        - ライフジャケット
+        - マリンアクセサリー
+        - カスタムOEM／ODM
+    - name: 用途
+      type: select
       options:
         - ダイビングセンター
         - フィッシング
@@ -58,39 +58,39 @@ content_form:
         - OEM／プライベートレーベル
         - 個人・レジャー用
         - その他
-    - name: Target Market
+    - name: 数量
+      type: text
+      placeholder: 例：50個
+    - name: ターゲット市場
       type: text
       placeholder: 例：ヨーロッパ、北米、中東
-    - name: Customization Needed
+    - name: 納品先国
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: 例：90日以内の納品
-    - name: Additional Requirements
-      type: textarea
+      placeholder: 例：イタリア、UAE、アメリカ、オーストラリア
+    - name: 希望材質
+      type: select
       options:
         - 指定なし
         - マリングレードPVC（1100デニール）
         - Premium Hypalon / CSM
         - ガラス繊維強化プラスチック船体
         - アルミニウム船体
-    - name: Engine Requirement
+    - name: エンジン要件
       type: text
       placeholder: 例：60馬力外付、エンジンなし、ツイン115馬力
-    - name: Customization Required
+    - name: カスタマイズ内容
       type: text
       placeholder: '例: カスタムカラー、ブランド/ロゴ、パッケージ、特殊フィッティング'
-    - name: Timeline
+    - name: 納期
       type: text
       placeholder: 例：90日以内に納品
-    - name: Additional Requirements
+    - name: 追加要件
       type: textarea
       placeholder: アプリケーション、技術仕様、または特別な要件を記述してください — 参考図面、仕様書、リンクがあれば添付してください
-    - name: Upload Specification
+    - name: 仕様書のアップロード
       type: file
       placeholder: 仕様書、図面、参考資料（PDF、DWG、DXF）をアップロード
-    - name: Upload Logo / Artwork
+    - name: ロゴ／アートワークのアップロード
       type: file
       placeholder: カスタムブランディング用のロゴまたはアートワークをアップロード（AI、EPS、PNG）
 cta:

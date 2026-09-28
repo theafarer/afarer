@@ -36,17 +36,17 @@ content_form:
     companyName: Εταιρεία
     email: Email
   fields:
-    - name: Product Type
+    - name: Κατηγορία προϊόντος
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - Σανίδα SUP
+        - Φουσκωτό SUP
+        - Φουσκωτή Σανίδα SUP
+        - Σωσίβιο Γιλέκο
+        - Ναυτικό Αξεσουάρ
+        - Προσαρμοσμένο OEM/ODM
+    - name: Εφαρμογή
+      type: select
       options:
         - Κέντρο Κατάδυσης
         - Ψάρεμα
@@ -58,39 +58,39 @@ content_form:
         - OEM / Ιδιωτική Ετικέτα
         - Προσωπική / Ψυχαγωγική
         - Άλλο
-    - name: Target Market
+    - name: Ποσότητα
+      type: text
+      placeholder: π.χ. 50 τεμάχια
+    - name: Αγορά-στόχος
       type: text
       placeholder: π.χ. Ευρώπη, Βόρεια Αμερική, Μέση Ανατολή
-    - name: Customization Needed
+    - name: Χώρα παράδοσης
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: π.χ. παράδοση εντός 90 ημερών
-    - name: Additional Requirements
-      type: textarea
+      placeholder: π.χ. Ιταλία, ΗΑΕ, ΗΠΑ, Αυστραλία
+    - name: Προτίμηση υλικού
+      type: select
       options:
         - Χωρίς Προτίμηση
         - PVC Ναυτιλιακής Ποιότητας (1100 dtex)
         - Hypalon / CSM υψηλής ποιότητας
         - Γάστρα από Fiberglass
         - Γάστρα Αλουμινίου
-    - name: Engine Requirement
+    - name: Απαιτήσεις κινητήρα
       type: text
       placeholder: πχ 60 HP εξωτερικός κινητήρας, χωρίς κινητήρα, δίδυμος 115 HP
-    - name: Customization Required
+    - name: Απαιτούμενη προσαρμογή
       type: text
       placeholder: π.χ. προσαρμοσμένα χρώματα, branding/λογότυπο, συσκευασία, ειδικά εξαρτήματα
-    - name: Timeline
+    - name: Χρονοδιάγραμμα
       type: text
       placeholder: π.χ. παράδοση εντός 90 ημερών
-    - name: Additional Requirements
+    - name: Πρόσθετες απαιτήσεις
       type: textarea
       placeholder: Περιγράψτε την εφαρμογή σας, τις τεχνικές προδιαγραφές ή τυχόν ειδικές απαιτήσεις — συμπεριλάβετε σχέδια αναφοράς, προδιαγραφές ή συνδέσμους, εάν διατίθενται
-    - name: Upload Specification
+    - name: Μεταφόρτωση προδιαγραφών
       type: file
       placeholder: Ανεβάστε το φύλλο προδιαγραφών, το σχέδιο ή το έγγραφο αναφοράς σας (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: Μεταφόρτωση λογότυπου / γραφικών
       type: file
       placeholder: Ανεβάστε το λογότυπο ή τα γραφικά σας για προσαρμοσμένη σήμανση (AI, EPS, PNG)
 cta:

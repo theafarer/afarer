@@ -36,17 +36,17 @@ content_form:
     companyName: Unternehmen
     email: E-Mail
   fields:
-    - name: Product Type
+    - name: Produktkategorie
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - SUP-Board
+        - Aufblasbares SUP
+        - Aufblasbares SUP-Board
+        - Schwimmweste
+        - Marine-Zubehör
+        - Individuelles OEM/ODM
+    - name: Anwendung
+      type: select
       options:
         - Tauchzentrum
         - Angeln
@@ -58,39 +58,39 @@ content_form:
         - OEM / Eigenmarke
         - Persönlich / Freizeit
         - Andere
-    - name: Target Market
+    - name: Stückzahl
+      type: text
+      placeholder: z. B. 50 Stück
+    - name: Zielmarkt
       type: text
       placeholder: z. B. Europa, Nordamerika, Naher Osten
-    - name: Customization Needed
+    - name: Lieferland
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: z. B. Lieferung innerhalb von 90 Tagen
-    - name: Additional Requirements
-      type: textarea
+      placeholder: z. B. Italien, VAE, USA, Australien
+    - name: Bevorzugtes Material
+      type: select
       options:
         - Keine Präferenz
         - Marine-PVC (1100 dtex)
         - Premium-Hypalon / CSM
         - GFK-Rumpf
         - Aluminium-Rumpf
-    - name: Engine Requirement
+    - name: Motoranforderung
       type: text
       placeholder: z. B. 60-PS-Außenborder, kein Motor, zwei 115-PS-Motoren
-    - name: Customization Required
+    - name: Erforderliche Anpassungen
       type: text
       placeholder: z. B. individuelle Farben, Marken-/Logoanpassung, Verpackung, spezielle Armaturen
-    - name: Timeline
+    - name: Zeitplan
       type: text
       placeholder: z. B. Lieferung innerhalb von 90 Tagen
-    - name: Additional Requirements
+    - name: Zusätzliche Anforderungen
       type: textarea
       placeholder: Beschreiben Sie Ihre Anwendung, technische Spezifikationen oder besondere Anforderungen – fügen Sie, falls verfügbar, Referenzzeichnungen, Spezifikationen oder Links bei
-    - name: Upload Specification
+    - name: Spezifikation hochladen
       type: file
       placeholder: Laden Sie Ihr Datenblatt, Ihre Zeichnung oder Ihr Referenzdokument (PDF, DWG, DXF) hoch
-    - name: Upload Logo / Artwork
+    - name: Logo / Artwork hochladen
       type: file
       placeholder: Laden Sie Ihr Logo oder Artwork für individuelles Branding hoch (AI, EPS, PNG)
 cta:

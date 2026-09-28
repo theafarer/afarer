@@ -36,17 +36,17 @@ content_form:
     companyName: Yrityksen nimi
     email: Sähköposti
   fields:
-    - name: Product Type
+    - name: Tuotekategoria
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - SUP-lauta
+        - Ilmatäytteinen SUP
+        - Ilmatäytteinen SUP-lauta
+        - Pelastusliivi
+        - Meritarvike
+        - Räätälöity OEM/ODM
+    - name: Käyttötarkoitus
+      type: select
       options:
         - Sukelluskeskus
         - Kalastus
@@ -58,39 +58,39 @@ content_form:
         - OEM / Omamerkki
         - Henkilökohtainen / virkistyskäyttö
         - Muu
-    - name: Target Market
+    - name: Määrä
+      type: text
+      placeholder: esim. 50 kpl
+    - name: Kohdemarkkina
       type: text
       placeholder: esim. Eurooppa, Pohjois-Amerikka, Lähi-itä
-    - name: Customization Needed
+    - name: Toimitusmaa
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: esim. toimitus 90 päivän kuluessa
-    - name: Additional Requirements
-      type: textarea
+      placeholder: esim. Italia, UAE, USA, Australia
+    - name: Materiaalitoive
+      type: select
       options:
         - Ei suositusta
         - Meriluokan PVC (1100 dtex)
         - Premium Hypalon / CSM
         - Lasikuidurunko
         - Alumiinirunko
-    - name: Engine Requirement
+    - name: Moottorivaatimus
       type: text
       placeholder: esim. 60 HV ulko-ohjaus, ei moottoria, kaksois 115 HV
-    - name: Customization Required
+    - name: Vaadittu räätälöinti
       type: text
       placeholder: esim. mukautetut värit, brändäys/logo, pakkaus, erikoisvarusteet
-    - name: Timeline
+    - name: Toimitusaika
       type: text
       placeholder: esim. toimitus 90 päivän sisällä
-    - name: Additional Requirements
+    - name: Lisävaatimukset
       type: textarea
       placeholder: Kuvaile käyttötarkoituksesi, tekniset vaatimukset tai erityisvaatimukset — liitä mukaan viitepiirustukset, erittelyt tai linkit, jos saatavilla
-    - name: Upload Specification
+    - name: Lataa tekniset tiedot
       type: file
       placeholder: Lataa tekniset tiedot, piirustus tai referenssidokumentti (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: Lataa logo / kuva-aineisto
       type: file
       placeholder: Lataa logosi tai kuva-aineistosi räätälöityä brändäystä varten (AI, EPS, PNG)
 cta:

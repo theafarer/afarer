@@ -36,17 +36,17 @@ content_form:
     companyName: Azienda
     email: Email
   fields:
-    - name: Product Type
+    - name: Categoria di prodotto
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - Tavola SUP
+        - SUP Gonfiabile
+        - Tavola SUP Gonfiabile
+        - Giubbotto Salvagente
+        - Accessorio Marino
+        - OEM/ODM Personalizzato
+    - name: Applicazione
+      type: select
       options:
         - Centro Subacqueo
         - Pesca
@@ -58,41 +58,41 @@ content_form:
         - OEM / Etichetta Privata
         - Personale / Ricreativo
         - Altro
-    - name: Target Market
+    - name: Quantità
+      type: text
+      placeholder: ad es. 50 unità
+    - name: Mercato di riferimento
       type: text
       placeholder: ad es. Europa, Nord America, Medio Oriente
-    - name: Customization Needed
+    - name: Paese di consegna
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: ad es. consegna entro 90 giorni
-    - name: Additional Requirements
-      type: textarea
+      placeholder: ad es. Italia, EAU, USA, Australia
+    - name: Materiale preferito
+      type: select
       options:
         - Nessuna preferenza
         - PVC di grado marina (1100 dtex)
         - Hypalon / CSM Premium
         - Scafo in vetroresina
         - Scafo in alluminio
-    - name: Engine Requirement
+    - name: Requisiti motore
       type: text
       placeholder: es. fuoribordo 60 CV, senza motore, doppio 115 CV
-    - name: Customization Required
+    - name: Personalizzazione richiesta
       type: text
       placeholder: ad esempio colori personalizzati, marchio/logo, confezionamento, accessori speciali
-    - name: Timeline
+    - name: Tempi di consegna
       type: text
       placeholder: ad esempio consegna entro 90 giorni
-    - name: Additional Requirements
+    - name: Requisiti aggiuntivi
       type: textarea
       placeholder: Descrivi la tua applicazione, specifiche tecniche o eventuali requisiti speciali — includi disegni di riferimento, specifiche o link se disponibili
-    - name: Upload Specification
+    - name: Carica specifiche
       type: file
       placeholder: Carica la tua scheda tecnica, disegno o documento di riferimento (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: Carica logo / grafica
       type: file
-      placeholder: Carica il tuo logo o opera d'arte per la personalizzazione del marchio (AI, EPS, PNG)
+      placeholder: "Carica il tuo logo o opera d'arte per la personalizzazione del marchio (AI, EPS, PNG)"
 cta:
   title: Preferisci discutere via email?
   subtitle: Invia la tua richiesta direttamente al nostro team di vendita e risponderemo entro 24 ore.

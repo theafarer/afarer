@@ -36,17 +36,17 @@ content_form:
     companyName: Firma
     email: Email
   fields:
-    - name: Product Type
+    - name: Kategoria produktu
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - Deska SUP
+        - Dmuchany SUP
+        - Dmuchana deska SUP
+        - Kamizelka ratunkowa
+        - Akcesorium morskie
+        - OEM/ODM na zamówienie
+    - name: Zastosowanie
+      type: select
       options:
         - Centrum nurkowe
         - Wędkarstwo
@@ -58,39 +58,39 @@ content_form:
         - OEM / Marka własna
         - Osobiste / Rekreacyjne
         - Inny
-    - name: Target Market
+    - name: Ilość
+      type: text
+      placeholder: np. 50 szt.
+    - name: Rynek docelowy
       type: text
       placeholder: np. Europa, Ameryka Północna, Bliski Wschód
-    - name: Customization Needed
+    - name: Kraj dostawy
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: np. dostawa w ciągu 90 dni
-    - name: Additional Requirements
-      type: textarea
+      placeholder: np. Włochy, ZEA, USA, Australia
+    - name: Preferowany materiał
+      type: select
       options:
         - Brak preferencji
         - PVC klasy morskiej (1100 dtex)
         - Premium Hypalon / CSM
         - Kadłub z włókna szklanego
         - Kadłub aluminiowy
-    - name: Engine Requirement
+    - name: Wymagania dotyczące silnika
       type: text
       placeholder: np. silnik zaburtowy 60 KM, brak silnika, podwójny 115 KM
-    - name: Customization Required
+    - name: Wymagane dostosowanie
       type: text
       placeholder: np. niestandardowe kolory, branding/logo, opakowanie, specjalne okucia
-    - name: Timeline
+    - name: Harmonogram
       type: text
       placeholder: np. dostawa w ciągu 90 dni
-    - name: Additional Requirements
+    - name: Dodatkowe wymagania
       type: textarea
       placeholder: Opisz swoją aplikację, specyfikacje techniczne lub wszelkie specjalne wymagania — dołącz rysunki referencyjne, specyfikacje lub linki, jeśli są dostępne
-    - name: Upload Specification
+    - name: Prześlij specyfikację
       type: file
       placeholder: Prześlij swoją kartę specyfikacji, rysunek lub dokument referencyjny (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: Prześlij logo / grafikę
       type: file
       placeholder: Prześlij swoje logo lub grafikę do niestandardowego brandingu (AI, EPS, PNG)
 cta:

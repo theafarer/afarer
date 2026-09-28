@@ -36,17 +36,17 @@ content_form:
     companyName: Nombre de la empresa
     email: Correo electrónico
   fields:
-    - name: Product Type
+    - name: Categoría de producto
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - Tabla SUP
+        - SUP inflable
+        - Tabla SUP inflable
+        - Chaleco salvavidas
+        - Accesorio marino
+        - OEM/ODM personalizado
+    - name: Aplicación
+      type: select
       options:
         - Centro de buceo
         - Pesca
@@ -58,39 +58,39 @@ content_form:
         - Fabricante de equipo original / Marca privada
         - Personal / Recreativo
         - Otros
-    - name: Target Market
+    - name: Cantidad
+      type: text
+      placeholder: p. ej. 50 unidades
+    - name: Mercado objetivo
       type: text
       placeholder: p. ej. Europa, Norteamérica, Oriente Medio
-    - name: Customization Needed
+    - name: País de entrega
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: p. ej. entrega en un plazo de 90 días
-    - name: Additional Requirements
-      type: textarea
+      placeholder: p. ej. Italia, EAU, EE. UU., Australia
+    - name: Preferencia de material
+      type: select
       options:
         - Sin preferencia
         - PVC de grado marino (1100 dtex)
         - Hypalon / CSM Premium
         - Casco de fibra de vidrio
         - Casco de aluminio
-    - name: Engine Requirement
+    - name: Requisito de motor
       type: text
       placeholder: p. ej. motor fuera de borda de 60 HP, sin motor, doble 115 HP
-    - name: Customization Required
+    - name: Personalización requerida
       type: text
       placeholder: por ejemplo, colores personalizados, marca/logotipo, embalaje, accesorios especiales
-    - name: Timeline
+    - name: Plazo de entrega
       type: text
       placeholder: por ejemplo, entrega dentro de 90 días
-    - name: Additional Requirements
+    - name: Requisitos adicionales
       type: textarea
       placeholder: Describa su aplicación, especificaciones técnicas o cualquier requisito especial — incluya dibujos de referencia, especificaciones o enlaces si están disponibles
-    - name: Upload Specification
+    - name: Subir especificación
       type: file
       placeholder: Sube tu hoja de especificaciones, dibujo o documento de referencia (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: Subir logo / arte
       type: file
       placeholder: Sube tu logo o arte para personalización de marca (AI, EPS, PNG)
 cta:

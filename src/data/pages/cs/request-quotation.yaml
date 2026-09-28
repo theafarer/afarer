@@ -36,17 +36,17 @@ content_form:
     companyName: Název společnosti
     email: E-mail
   fields:
-    - name: Product Type
+    - name: Kategorie produktu
       type: select
       options:
-        - SUP Boat
-        - Inflatable Boat
-        - SUP Board
-        - Inflatable SUP
-        - Life Vest
-        - Accessory
-    - name: Quantity
-      type: text
+        - SUP prkno
+        - Nafukovací SUP
+        - Nafukovací SUP prkno
+        - Záchranná vesta
+        - Námořní příslušenství
+        - OEM/ODM na zakázku
+    - name: Použití
+      type: select
       options:
         - Potápěčské centrum
         - Rybaření
@@ -58,39 +58,39 @@ content_form:
         - OEM / privátní značka
         - Osobní / rekreační
         - Jiné
-    - name: Target Market
+    - name: Množství
+      type: text
+      placeholder: např. 50 kusů
+    - name: Cílový trh
       type: text
       placeholder: např. Evropa, Severní Amerika, Střední východ
-    - name: Customization Needed
+    - name: Země dodání
       type: text
-      placeholder: e.g. custom colors, branding, packaging
-    - name: Timeline
-      type: text
-      placeholder: např. dodání do 90 dnů
-    - name: Additional Requirements
-      type: textarea
+      placeholder: např. Itálie, SAE, USA, Austrálie
+    - name: Preferovaný materiál
+      type: select
       options:
         - Bez preference
         - PVC námořní kvality (1100 dtex)
         - Prémiový hypalon / CSM
         - Trup ze sklolaminátu
         - Hliníkový trup
-    - name: Engine Requirement
+    - name: Požadavek na motor
       type: text
       placeholder: např. přívěsný motor 60 HP, bez motoru, dva motory 115 HP
-    - name: Customization Required
+    - name: Požadované přizpůsobení
       type: text
       placeholder: např. vlastní barvy, branding/logo, balení, speciální kování
-    - name: Timeline
+    - name: Termín dodání
       type: text
       placeholder: např. dodání do 90 dnů
-    - name: Additional Requirements
+    - name: Další požadavky
       type: textarea
       placeholder: Popište své použití, technické specifikace nebo případné zvláštní požadavky — pokud máte k dispozici referenční výkresy, specifikace nebo odkazy, přiložte je
-    - name: Upload Specification
+    - name: Nahrát specifikaci
       type: file
       placeholder: Nahrajte svůj technický list, výkres nebo referenční dokument (PDF, DWG, DXF)
-    - name: Upload Logo / Artwork
+    - name: Nahrát logo / grafiku
       type: file
       placeholder: Nahrajte své logo nebo grafiku pro vlastní branding (AI, EPS, PNG)
 cta:
