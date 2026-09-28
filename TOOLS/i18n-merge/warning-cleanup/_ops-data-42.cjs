@@ -15,7 +15,7 @@ module.exports = [
   {
     f: 'src/data/site/i18n-config.json',
     find: '    "techspecs.supDesc": "Nafukovací drop-stitch stand-up paddle boards med højtryksstivhed.",',
-    rep: '    "techspecs.supDesc": "Oppustelige drop-stitch stand-up paddle boards med højtryksstivhed.",',
+    rep: '    "techspecs.supDesc": "Oppustelige drop-stitch SUP-brætter med højtryksstivhed.",',
   },
   {
     f: 'src/data/site/i18n-config.json',
