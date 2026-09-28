@@ -31,8 +31,8 @@ module.exports = [
   },
   {
     f: 'src/data/pages/da/about.yaml',
-    find: "  keywords:\n    - 'inflatable sup brand'",
-    rep: "  keywords:\n    - 'inflatable sup brand'\n    - 'inflatable bådbrand'",
+    find: "  keywords:\n    - 'oppusteligt sup brand'",
+    rep: "  keywords:\n    - 'oppusteligt sup brand'\n    - 'oppusteligt bådbrand'",
   },
   {
     f: 'src/data/pages/th/about.yaml',

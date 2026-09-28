@@ -131,7 +131,7 @@ oem_section:
       solution: Producerede præproduktionsprøver i 4 farvevarianter og koordinerede tredjeparts compliance-testning.
       result: SUP-serie med 3 modeller lanceret på AU/NZ-markedet. Efterfulgt af sejr i et offentligt udbud om 12 patrulje-SUP-brætter.
 faq_section:
-  tagline: FAQ
+  tagline: Ofte stillede spørgsmål
   title: B2B & OEM — ofte stillede spørgsmål
   questions:
     - q: Hvad er minimumsordreantallet (MOQ) for OEM-oppustelige SUP-brædder?
@@ -170,7 +170,7 @@ production_flow:
       title: Samling og rigging
       description: 'Bådene overgår til slutmontage, hvor alle komponenter samles: skrog + slanger, monterede ventiler, D-ringe, håndtag, finnekasser og tilpasning af transporttaske. Hver enhed følger en 100-punkts monteringscheckliste.'
       qc_check: Godkendelse via 100-punkts-tjekliste pr. enhed, ventilfunktionstest (10 åbnings-/lukkecyklusser), kontrol af hardwarets tilspændingsmoment, visuel inspektion
-      qc_threshold: 'Nul-fejl-politik for sikkerhedskritiske komponenter (ventiler, D-ringe, håndtag). Mindre kosmetiske afvigelser: AQL 2.5 (ISO 2859)'
+      qc_threshold: 'Nul-fejl-politik for sikkerhedskritiske komponenter (ventiler, D-ringe, håndtag). Mindre kosmetiske afvigelser: AQL 2,5 (ISO 2859)'
       responsibility: Samlingsholdets leder + linje-QC
     - stage: '05'
       title: Tryktestning & kvalitetskontrol
@@ -182,7 +182,7 @@ production_flow:
       title: Endelig kontrol & pakning
       description: Endelig visuel og funktionel inspektion. Overfladefejl, farvekonsistens, kontrol af label/BIN, emballagens integritet og komplet tilbehør. Enhederne vakuumpakkes, kasseres og palleteres til containerlæsning.
       qc_check: Fuld visuel inspektion, tilbehørstjekliste pr. SKU, faldtest af emballage (1 m, tilfældig stikprøve), verificering via scanning af etiket/stregkode
-      qc_threshold: AQL 2.5 for væsentlige fejl, AQL 4.0 for mindre fejl. Nultolerance ved sikkerhedsfejl. 100 % af enhederne inspiceres visuelt.
+      qc_threshold: AQL 2,5 for væsentlige fejl, AQL 4,0 for mindre fejl. Nultolerance ved sikkerhedsfejl. 100 % af enhederne inspiceres visuelt.
       responsibility: Endeligt QC-team (4 inspektører) + pakketeamets leder
 workforce:
   tagline: Vores medarbejdere
@@ -224,7 +224,7 @@ material_traceability:
   coverage: 100% af produktionsmaterialerne — PVC, Hypalon, drop-stitch-stof, klæbemidler, ventiler, hardware, emballage
   records_retained: 10 år (i henhold til CE 2013/53/EU-kravet)
   suppliers:
-    - material: Marine-grade PVC
+    - material: PVC af marinekvalitet
       source: Kinesiske og koreanske leverandører
       certified: ISO 9001, REACH, RoHS
     - material: Hypalon (CSM)
@@ -247,7 +247,7 @@ qc_dashboard:
     - value: <5%
       label: Maksimalt tilladt trykfald
       detail: Over 24h ved 1.25× nominelt tryk
-    - value: AQL 2.5
+    - value: AQL 2,5
       label: Tærskel for væsentlige fejl
       detail: I henhold til ISO 2859-stikprøvestandarden
     - value: 24–48h
