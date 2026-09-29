@@ -21,98 +21,98 @@ contact_form:
   captcha:
     label: 'Ochrana proti spamu: vyřešte následující'
   fields:
-    - name: firstName
-      label: Jméno
+    - name: country
+      label: Země
       row: 1
       type: select
-      optionsKey: zemí
+      optionsKey: countries
       step: 1
-    - name: lastName
-      label: Příjmení
-      row: 1
-      type: select
-      options:
-        - value: ''
-          label: Vyberte odhadovaný objem...
-        - value: Vzorek
-          label: Pouze vzorky / prototypy
-        - value: 5-10
-          label: 5–10 kusů (standardní MOQ)
-        - value: 100-500
-          label: 100–500 kusů
-        - value: Více než 500
-          label: 500+ kusů (velkoobchodní ceny)
-      step: 1
-    - name: companyName
-      label: Název společnosti
+    - name: orderVolume
+      label: Odhadovaný objem objednávky
       row: 2
       type: select
       options:
         - value: ''
-          label: Vyberte typ přizpůsobení...
-        - value: žádné
-          label: Standardní produkt (bez úprav na míru)
-        - value: logo
-          label: Pouze vlastní logo / branding
-        - value: plné
-          label: Plný Co-Brand (velikost, barva, grafika, balení)
-        - value: konzultace
-          label: Nejsem si jistý — potřebuji konzultaci
+          label: Vyberte odhadovaný objem...
+        - value: sample
+          label: Pouze vzorky / prototypy
+        - value: '5-10'
+          label: 5–10 kusů (standardní MOQ)
+        - value: '100-500'
+          label: 100–500 kusů
+        - value: '500-plus'
+          label: 500+ kusů (velkoobchodní ceny)
       step: 1
-    - name: address
-      label: Adresa
+    - name: customization
+      label: Potřebujete úpravy?
       row: 3
       type: select
       options:
         - value: ''
+          label: Vyberte typ přizpůsobení...
+        - value: none
+          label: Standardní produkt (bez úprav na míru)
+        - value: logo
+          label: Pouze vlastní logo / branding
+        - value: full
+          label: Plný Co-Brand (velikost, barva, grafika, balení)
+        - value: consultation
+          label: Nejsem si jistý — potřebuji konzultaci
+      step: 1
+    - name: productInterest
+      label: Kategorie produktů
+      row: 4
+      type: select
+      options:
+        - value: ''
           label: Vyberte kategorii produktu...
-        - value: vše
+        - value: all
           label: Všechny produkty / Kompletní katalog
         - value: sup
           label: SUP prkna / paddleboardy
-        - value: bezpečnost
+        - value: safety
           label: Bezpečnostní vybavení / záchranné vesty
-        - value: příslušenství
+        - value: accessory
           label: Příslušenství (pumpy, pádla, tašky)
       step: 1
-    - name: zip
-      label: PSČ
-      row: 4
+    - name: firstName
+      label: Jméno
+      row: 1
       step: 2
-    - name: country
-      label: Země
-      row: 4
+    - name: lastName
+      label: Příjmení
+      row: 1
+      step: 2
+    - name: companyName
+      label: Název společnosti
+      row: 2
       step: 2
     - name: email
       label: E-mail
-      row: 5
+      row: 3
+      type: email
       step: 2
     - name: tel
       label: Telefon
-      row: 5
+      row: 3
       type: tel
-      step: 2
-    - name: orderVolume
-      label: Odhadovaný objem objednávky
-      row: 6
-      type: select
       withCountryCode: true
       step: 2
-    - name: customization
-      label: Potřebujete úpravy?
-      row: 7
+    - name: address
+      label: Adresa
+      row: 4
       step: 2
-    - name: productInterest
-      label: Kategorie produktů
-      row: 8
+    - name: zip
+      label: PSČ
+      row: 5
       step: 2
     - name: subject
       label: Předmět
-      row: 9
+      row: 1
       step: 3
     - name: message
       label: Zpráva
-      row: 10
+      row: 2
       type: textarea
       rows: 6
       step: 3

@@ -8,111 +8,111 @@ meta:
     - 'SUPメーカー問い合わせ'
 hero_text:
   tagline: お問い合わせ
-  title: お問い合わせ
+  title: お気軽にお問い合わせください
 contact_form:
   id: form
   title: メッセージを送信
   subtitle: 見積もり、技術的な質問、パートナーシップのお問い合わせはこちらから。1営業日以内に返信します。
   email_to: info@afarer.com
-  submit_button: 送信
+  submit_button: お問い合わせを送信 → 見積もりを入手
   success_message: ありがとうございます！メッセージを受信しました。1営業日以内に返信します。
   error_message: 送信中にエラーが発生しました。もう一度お試しいただくか、直接メールをお送りください。
   default_country_code: '+1'
   captcha:
     label: アンチスパム：次の問題を解いてください
   fields:
-    - name: firstName
-      label: 名
+    - name: country
+      label: 国
       row: 1
       type: select
-      optionsKey: 対応国数
+      optionsKey: countries
       step: 1
-    - name: lastName
-      label: 姓
-      row: 1
-      type: select
-      options:
-        - value: ''
-          label: 推定ボリュームを選択してください...
-        - value: サンプル
-          label: サンプル／試作品のみ
-        - value: 5-10
-          label: 5〜10台（標準MOQ）
-        - value: 100-500
-          label: 100～500台
-        - value: 500以上
-          label: 500+台（数量割引あり）
-      step: 1
-    - name: companyName
-      label: 会社名
+    - name: orderVolume
+      label: 見積もり注文量
       row: 2
       type: select
       options:
         - value: ''
-          label: カスタマイズタイプを選択...
-        - value: なし
-          label: 標準商品（カスタマイズなし）
-        - value: ロゴ
-          label: カスタムロゴ/ブランディングのみ
-        - value: フル
-          label: 完全コブランド（サイズ、カラー、グラフィック、パッケージ）
-        - value: 相談
-          label: 未定 — コンサルテーションが必要
+          label: 推定ボリュームを選択してください...
+        - value: sample
+          label: サンプル／試作品のみ
+        - value: '5-10'
+          label: 5〜10台（標準MOQ）
+        - value: '100-500'
+          label: 100～500台
+        - value: '500-plus'
+          label: 500+台（数量割引あり）
       step: 1
-    - name: address
-      label: 住所
+    - name: customization
+      label: カスタマイズは必要ですか？
       row: 3
       type: select
       options:
         - value: ''
+          label: カスタマイズタイプを選択...
+        - value: none
+          label: 標準商品（カスタマイズなし）
+        - value: logo
+          label: カスタムロゴ/ブランディングのみ
+        - value: full
+          label: 完全コブランド（サイズ、カラー、グラフィック、パッケージ）
+        - value: consultation
+          label: 未定 — コンサルテーションが必要
+      step: 1
+    - name: productInterest
+      label: 関心のある製品カテゴリ
+      row: 4
+      type: select
+      options:
+        - value: ''
           label: 製品カテゴリを選択...
-        - value: すべて
+        - value: all
           label: 全製品 / フルカタログ
         - value: sup
           label: SUPボード／パドルボード
-        - value: 安全性
+        - value: safety
           label: 安全装置／ライフベスト
-        - value: アクセサリー
+        - value: accessory
           label: アクセサリー（ポンプ、オール、バッグ）
       step: 1
-    - name: zip
-      label: 郵便番号
-      row: 4
+    - name: firstName
+      label: 名
+      row: 1
       step: 2
-    - name: country
-      label: 国
-      row: 4
+    - name: lastName
+      label: 姓
+      row: 1
+      step: 2
+    - name: companyName
+      label: 会社名
+      row: 2
       step: 2
     - name: email
       label: メールアドレス
-      row: 5
+      row: 3
+      type: email
       step: 2
     - name: tel
       label: 電話番号
-      row: 5
+      row: 3
       type: tel
-      step: 2
-    - name: orderVolume
-      label: 見積もり注文量
-      row: 6
-      type: select
       withCountryCode: true
       step: 2
-    - name: customization
-      label: カスタマイズは必要ですか？
-      row: 7
+    - name: address
+      label: 住所
+      row: 4
       step: 2
-    - name: productInterest
-      label: 関心のある製品カテゴリ
-      row: 8
+    - name: zip
+      label: 郵便番号
+      row: 5
       step: 2
     - name: subject
       label: 件名
-      row: 9
+      row: 1
       step: 3
     - name: message
       label: メッセージ
-      row: 10
+      row: 2
       type: textarea
       rows: 6
       step: 3
@@ -136,10 +136,10 @@ features2_other_ways:
       description: info@afarer.com
       icon: tabler:mail
     - title: 本社
-      description: 中国山東省青岛市莱西市経済開発区、郵便番号266600
+      description: 中国山東省青島市萊西市経済開発区、郵便番号266600
       icon: tabler:map-pin
 map:
   title: 所在地
   subtitle: 本社へお越しください
-  address: 中国山東省青岛市莱西市経済開発区、郵便番号266600
+  address: 中国山東省青島市萊西市経済開発区、郵便番号266600
   zoom: 15

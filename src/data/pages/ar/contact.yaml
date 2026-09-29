@@ -14,105 +14,105 @@ contact_form:
   title: أرسل لنا رسالة
   subtitle: للاستفسار عن الأسعار أو الأسئلة الفنية أو استفسارات الشراكة، أرسل لنا رسالة. نرد خلال يوم عمل واحد.
   email_to: info@afarer.com
-  submit_button: إرسال الرسالة
+  submit_button: أرسل الاستفسار → احصل على عرض سعر
   success_message: شكراً! رسالتك قد وصلت إلى صندوق الوارد لدينا. سنرد خلال يوم عمل واحد.
   error_message: حدث خطأ أثناء إرسال رسالتك. يرجى المحاولة مرة أخرى أو مراسلتنا مباشرة عبر البريد الإلكتروني.
   default_country_code: '+1'
   captcha:
     label: 'مكافحة البريد المزعج: يرجى حل ما يلي'
   fields:
-    - name: firstName
-      label: الاسم الأول
+    - name: country
+      label: الدولة
       row: 1
       type: select
-      optionsKey: الدول
+      optionsKey: countries
       step: 1
-    - name: lastName
-      label: اسم العائلة
-      row: 1
-      type: select
-      options:
-        - value: ''
-          label: اختر حجمك التقديري...
-        - value: عينة
-          label: عينات / نماذج أولية فقط
-        - value: 5-10
-          label: 5–10 وحدات (الحد الأدنى للطلب القياسي MOQ)
-        - value: 100-500
-          label: 100–500 وحدة
-        - value: أكثر من 500
-          label: أكثر من 500 وحدة (تسعير حسب الكمية)
-      step: 1
-    - name: companyName
-      label: اسم الشركة
+    - name: orderVolume
+      label: حجم الطلب التقديري
       row: 2
       type: select
       options:
         - value: ''
-          label: اختر نوع التخصيص...
-        - value: لا يوجد
-          label: منتج قياسي (بدون تخصيص)
-        - value: logo
-          label: شعار مخصص / علامة تجارية فقط
-        - value: كامل
-          label: علامة مشتركة كاملة (الحجم، اللون، التصاميم، التغليف)
-        - value: استشارة
-          label: غير متأكد — أحتاج إلى استشارة
+          label: اختر حجمك التقديري...
+        - value: sample
+          label: عينات / نماذج أولية فقط
+        - value: '5-10'
+          label: 5–10 وحدات (الحد الأدنى للطلب القياسي MOQ)
+        - value: '100-500'
+          label: 100–500 وحدة
+        - value: '500-plus'
+          label: أكثر من 500 وحدة (تسعير حسب الكمية)
       step: 1
-    - name: address
-      label: العنوان
+    - name: customization
+      label: هل تحتاج إلى تخصيص؟
       row: 3
       type: select
       options:
         - value: ''
+          label: اختر نوع التخصيص...
+        - value: none
+          label: منتج قياسي (بدون تخصيص)
+        - value: logo
+          label: شعار مخصص / علامة تجارية فقط
+        - value: full
+          label: علامة مشتركة كاملة (الحجم، اللون، التصاميم، التغليف)
+        - value: consultation
+          label: غير متأكد — أحتاج إلى استشارة
+      step: 1
+    - name: productInterest
+      label: فئات المنتجات المهمة
+      row: 4
+      type: select
+      options:
+        - value: ''
           label: اختر فئة المنتج...
-        - value: الكل
+        - value: all
           label: جميع المنتجات / الكتالوج الكامل
         - value: sup
           label: ألواح SUP / ألواح التجديف
-        - value: السلامة
+        - value: safety
           label: معدات السلامة / سترات النجاة
-        - value: ملحق
+        - value: accessory
           label: الملحقات (المضخات، المجاديف، الحقائب)
       step: 1
-    - name: zip
-      label: الرمز البريدي
-      row: 4
+    - name: firstName
+      label: الاسم الأول
+      row: 1
       step: 2
-    - name: country
-      label: الدولة
-      row: 4
+    - name: lastName
+      label: اسم العائلة
+      row: 1
+      step: 2
+    - name: companyName
+      label: اسم الشركة
+      row: 2
       step: 2
     - name: email
       label: البريد الإلكتروني
-      row: 5
+      row: 3
+      type: email
       step: 2
     - name: tel
       label: الهاتف
-      row: 5
+      row: 3
       type: tel
-      step: 2
-    - name: orderVolume
-      label: حجم الطلب التقديري
-      row: 6
-      type: select
       withCountryCode: true
       step: 2
-    - name: customization
-      label: هل تحتاج إلى تخصيص؟
-      row: 7
+    - name: address
+      label: العنوان
+      row: 4
       step: 2
-    - name: productInterest
-      label: فئات المنتجات المهمة
-      row: 8
+    - name: zip
+      label: الرمز البريدي
+      row: 5
       step: 2
     - name: subject
       label: الموضوع
-      row: 9
+      row: 1
       step: 3
     - name: message
       label: الرسالة
-      row: 10
+      row: 2
       type: textarea
       rows: 6
       step: 3

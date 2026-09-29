@@ -14,105 +14,105 @@ contact_form:
   title: Skicka meddelande
   subtitle: För offerter, tekniska frågor eller partnerskap — skriv till oss. Vi svarar inom en arbetsdag.
   email_to: info@afarer.com
-  submit_button: Skicka
+  submit_button: Skicka förfrågan → Begär en offert
   success_message: Tack! Ditt meddelande har mottagits. Vi svarar inom en arbetsdag.
   error_message: Ett fel uppstod vid sändning. Försök igen eller skriv direkt till e-postadressen.
   default_country_code: '+1'
   captcha:
     label: 'Antispam: lös följande uppgift'
   fields:
-    - name: firstName
-      label: Förnamn
+    - name: country
+      label: Land
       row: 1
       type: select
-      optionsKey: länder
+      optionsKey: countries
       step: 1
-    - name: lastName
-      label: Efternamn
-      row: 1
-      type: select
-      options:
-        - value: ''
-          label: Välj din uppskattade volym...
-        - value: prov
-          label: Endast prov / prototyper
-        - value: 5-10
-          label: 5–10 enheter (standard MOQ)
-        - value: 100-500
-          label: 100–500 enheter
-        - value: 500-plus
-          label: 500+ enheter (volympris)
-      step: 1
-    - name: companyName
-      label: Företag
+    - name: orderVolume
+      label: Uppskattad ordervolym
       row: 2
       type: select
       options:
         - value: ''
-          label: Välj anpassningstyp...
-        - value: inget
-          label: Standardprodukt (utan anpassning)
-        - value: logo
-          label: Anpassat logotype / enbart varumärke
-        - value: fullständig
-          label: Fullständig co-brand (storlek, färg, grafik, förpackning)
-        - value: konsultation
-          label: Osäker — behöver konsultation
+          label: Välj din uppskattade volym...
+        - value: sample
+          label: Endast prov / prototyper
+        - value: '5-10'
+          label: 5–10 enheter (standard MOQ)
+        - value: '100-500'
+          label: 100–500 enheter
+        - value: '500-plus'
+          label: 500+ enheter (volympris)
       step: 1
-    - name: address
-      label: Adress
+    - name: customization
+      label: Behöver du anpassning?
       row: 3
       type: select
       options:
         - value: ''
+          label: Välj anpassningstyp...
+        - value: none
+          label: Standardprodukt (utan anpassning)
+        - value: logo
+          label: Endast anpassad logotyp / varumärke
+        - value: full
+          label: Fullständig co-brand (storlek, färg, grafik, förpackning)
+        - value: consultation
+          label: Osäker — behöver konsultation
+      step: 1
+    - name: productInterest
+      label: Intressanta produktkategorier
+      row: 4
+      type: select
+      options:
+        - value: ''
           label: Välj produktkategori...
-        - value: alla
+        - value: all
           label: Alla produkter / Fullständig katalog
         - value: sup
           label: SUP-brädor / Paddelbrädor
-        - value: säkerhet
+        - value: safety
           label: Säkerhetsutrustning / räddningsvästar
-        - value: tillbehör
+        - value: accessory
           label: Tillbehör (pumpar, åror, väskor)
       step: 1
-    - name: zip
-      label: Postnummer
-      row: 4
+    - name: firstName
+      label: Förnamn
+      row: 1
       step: 2
-    - name: country
-      label: Land
-      row: 4
+    - name: lastName
+      label: Efternamn
+      row: 1
+      step: 2
+    - name: companyName
+      label: Företag
+      row: 2
       step: 2
     - name: email
       label: E-post
-      row: 5
+      row: 3
+      type: email
       step: 2
     - name: tel
       label: Telefon
-      row: 5
+      row: 3
       type: tel
-      step: 2
-    - name: orderVolume
-      label: Uppskattad ordervolym
-      row: 6
-      type: select
       withCountryCode: true
       step: 2
-    - name: customization
-      label: Behöver du anpassning?
-      row: 7
+    - name: address
+      label: Adress
+      row: 4
       step: 2
-    - name: productInterest
-      label: Intressanta produktkategorier
-      row: 8
+    - name: zip
+      label: Postnummer
+      row: 5
       step: 2
     - name: subject
       label: Ämne
-      row: 9
+      row: 1
       step: 3
     - name: message
       label: Meddelande
-      row: 10
+      row: 2
       type: textarea
       rows: 6
       step: 3

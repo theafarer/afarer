@@ -14,105 +14,105 @@ contact_form:
   title: Wyślij wiadomość
   subtitle: W sprawie wyceny, pytań technicznych lub partnerstwa — napisz do nas. Odpowiadamy w ciągu jednego dnia roboczego.
   email_to: info@afarer.com
-  submit_button: Wyślij
+  submit_button: Wyślij zapytanie → Uzyskaj wycenę
   success_message: Dziękujemy! Twoja wiadomość została odebrana. Odpowiemy w ciągu jednego dnia roboczego.
   error_message: Wystąpił błąd podczas wysyłania. Spróbuj ponownie lub napisz bezpośrednio na adres e-mail.
   default_country_code: '+1'
   captcha:
     label: 'Antyspam: rozwiąż następujące zadanie'
   fields:
-    - name: firstName
-      label: Imię
+    - name: country
+      label: Kraj
       row: 1
       type: select
-      optionsKey: kraje
+      optionsKey: countries
       step: 1
-    - name: lastName
-      label: Nazwisko
-      row: 1
-      type: select
-      options:
-        - value: ''
-          label: Wybierz szacowaną objętość...
-        - value: próbka
-          label: Tylko próbki / prototypy
-        - value: 5-10
-          label: 5–10 jednostek (Standardowe MOQ)
-        - value: 100-500
-          label: 100–500 jednostek
-        - value: 500 plus
-          label: 500 jednostek (Cennik ilościowy)
-      step: 1
-    - name: companyName
-      label: Firma
+    - name: orderVolume
+      label: Szacowana wielkość zamówienia
       row: 2
       type: select
       options:
         - value: ''
-          label: Wybierz typ dostosowania...
-        - value: żaden
-          label: Produkt standardowy (bez personalizacji)
-        - value: logo
-          label: Tylko niestandardowe logo / branding
-        - value: pełny
-          label: Pełny Co-Brand (rozmiar, kolor, grafika, opakowanie)
-        - value: konsultacja
-          label: Niepewne — potrzebna konsultacja
+          label: Wybierz szacowaną objętość...
+        - value: sample
+          label: Tylko próbki / prototypy
+        - value: '5-10'
+          label: 5–10 jednostek (Standardowe MOQ)
+        - value: '100-500'
+          label: 100–500 jednostek
+        - value: '500-plus'
+          label: 500+ jednostek (Cennik ilościowy)
       step: 1
-    - name: address
-      label: Adres
+    - name: customization
+      label: Potrzebujesz personalizacji?
       row: 3
       type: select
       options:
         - value: ''
+          label: Wybierz typ dostosowania...
+        - value: none
+          label: Produkt standardowy (bez personalizacji)
+        - value: logo
+          label: Tylko niestandardowe logo / branding
+        - value: full
+          label: Pełny Co-Brand (rozmiar, kolor, grafika, opakowanie)
+        - value: consultation
+          label: Nie jestem pewien — potrzebna konsultacja
+      step: 1
+    - name: productInterest
+      label: Interesujące kategorie produktów
+      row: 4
+      type: select
+      options:
+        - value: ''
           label: Wybierz kategorię produktu...
-        - value: wszystko
+        - value: all
           label: Wszystkie produkty / Pełny katalog
-        - value: siema
+        - value: sup
           label: Deski SUP / Deski do paddle
-        - value: bezpieczeństwo
+        - value: safety
           label: Sprzęt ochronny / Kamizelki ratunkowe
-        - value: akcesorium
+        - value: accessory
           label: Akcesoria (pompki, wiosła, torby)
       step: 1
-    - name: zip
-      label: Kod pocztowy
-      row: 4
+    - name: firstName
+      label: Imię
+      row: 1
       step: 2
-    - name: country
-      label: Kraj
-      row: 4
+    - name: lastName
+      label: Nazwisko
+      row: 1
+      step: 2
+    - name: companyName
+      label: Firma
+      row: 2
       step: 2
     - name: email
       label: Email
-      row: 5
+      row: 3
+      type: email
       step: 2
     - name: tel
       label: Telefon
-      row: 5
+      row: 3
       type: tel
-      step: 2
-    - name: orderVolume
-      label: Szacowana wielkość zamówienia
-      row: 6
-      type: select
       withCountryCode: true
       step: 2
-    - name: customization
-      label: Potrzebujesz personalizacji?
-      row: 7
+    - name: address
+      label: Adres
+      row: 4
       step: 2
-    - name: productInterest
-      label: Interesujące kategorie produktów
-      row: 8
+    - name: zip
+      label: Kod pocztowy
+      row: 5
       step: 2
     - name: subject
       label: Temat
-      row: 9
+      row: 1
       step: 3
     - name: message
       label: Wiadomość
-      row: 10
+      row: 2
       type: textarea
       rows: 6
       step: 3
@@ -130,7 +130,7 @@ features2_other_ways:
       description: Pakiety medialne, sponsoring i współpraca branżowa.
       icon: tabler:news
     - title: Telefon
-      description: 86 13305324192
+      description: '+86 13305324192'
       icon: tabler:headset
     - title: E-mail
       description: info@afarer.com

@@ -21,98 +21,98 @@ contact_form:
   captcha:
     label: 'Anti-spam: løs venligst følgende'
   fields:
-    - name: firstName
-      label: Fornavn
+    - name: country
+      label: Land
       row: 1
       type: select
-      optionsKey: lande
+      optionsKey: countries
       step: 1
-    - name: lastName
-      label: Efternavn
-      row: 1
-      type: select
-      options:
-        - value: ''
-          label: Vælg dit forventede volumen...
-        - value: prøve
-          label: Kun prøver/prototyper
-        - value: 5-10
-          label: 5–10 enheder (standard-MOQ)
-        - value: 100-500
-          label: 100–500 enheder
-        - value: 500+
-          label: 500+ enheder (mængdepriser)
-      step: 1
-    - name: companyName
-      label: Virksomhedsnavn
+    - name: orderVolume
+      label: Forventet ordremængde
       row: 2
       type: select
       options:
         - value: ''
-          label: Vælg tilpasningstype...
-        - value: Ingen
-          label: Standardprodukt (uden tilpasning)
-        - value: logo
-          label: Kun tilpasset logo / branding
-        - value: fuld
-          label: Fuld co-brand (størrelse, farve, grafik, emballage)
-        - value: rådgivning
-          label: Ikke sikker — har brug for rådgivning
+          label: Vælg dit forventede volumen...
+        - value: sample
+          label: Kun prøver/prototyper
+        - value: '5-10'
+          label: 5–10 enheder (standard-MOQ)
+        - value: '100-500'
+          label: 100–500 enheder
+        - value: '500-plus'
+          label: 500+ enheder (mængdepriser)
       step: 1
-    - name: address
-      label: Adresse
+    - name: customization
+      label: Brug for tilpasning?
       row: 3
       type: select
       options:
         - value: ''
+          label: Vælg tilpasningstype...
+        - value: none
+          label: Standardprodukt (uden tilpasning)
+        - value: logo
+          label: Kun tilpasset logo / branding
+        - value: full
+          label: Fuld co-brand (størrelse, farve, grafik, emballage)
+        - value: consultation
+          label: Ikke sikker — har brug for rådgivning
+      step: 1
+    - name: productInterest
+      label: Produktkategorier af interesse
+      row: 4
+      type: select
+      options:
+        - value: ''
           label: Vælg produktkategori...
-        - value: alle
+        - value: all
           label: Alle produkter / Fuld katalog
         - value: sup
           label: SUP-boards / paddleboards
-        - value: sikkerhed
+        - value: safety
           label: Sikkerhedsudstyr / redningsveste
-        - value: tilbehør
+        - value: accessory
           label: Tilbehør (pumper, årer, tasker)
       step: 1
-    - name: zip
-      label: Postnummer
-      row: 4
+    - name: firstName
+      label: Fornavn
+      row: 1
       step: 2
-    - name: country
-      label: Land
-      row: 4
+    - name: lastName
+      label: Efternavn
+      row: 1
+      step: 2
+    - name: companyName
+      label: Virksomhedsnavn
+      row: 2
       step: 2
     - name: email
       label: E-mail
-      row: 5
+      row: 3
+      type: email
       step: 2
     - name: tel
       label: Telefon
-      row: 5
+      row: 3
       type: tel
-      step: 2
-    - name: orderVolume
-      label: Forventet ordremængde
-      row: 6
-      type: select
       withCountryCode: true
       step: 2
-    - name: customization
-      label: Brug for tilpasning?
-      row: 7
+    - name: address
+      label: Adresse
+      row: 4
       step: 2
-    - name: productInterest
-      label: Produktkategorier af interesse
-      row: 8
+    - name: zip
+      label: Postnummer
+      row: 5
       step: 2
     - name: subject
       label: Emne
-      row: 9
+      row: 1
       step: 3
     - name: message
       label: Besked
-      row: 10
+      row: 2
       type: textarea
       rows: 6
       step: 3

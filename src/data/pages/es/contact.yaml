@@ -21,98 +21,98 @@ contact_form:
   captcha:
     label: 'Anti-spam: por favor resuelve lo siguiente'
   fields:
-    - name: firstName
-      label: Nombre
+    - name: country
+      label: País
       row: 1
       type: select
-      optionsKey: países
+      optionsKey: countries
       step: 1
-    - name: lastName
-      label: Apellido
-      row: 1
-      type: select
-      options:
-        - value: ''
-          label: Seleccione su volumen estimado...
-        - value: muestra
-          label: Solo muestras / prototipos
-        - value: 5-10
-          label: 5–10 unidades (Cantidad mínima estándar)
-        - value: 100-500
-          label: 100–500 unidades
-        - value: más de 500
-          label: 500 unidades (Precio por volumen)
-      step: 1
-    - name: companyName
-      label: Nombre de la empresa
+    - name: orderVolume
+      label: Volumen de pedido estimado
       row: 2
       type: select
       options:
         - value: ''
-          label: Seleccione el tipo de personalización...
-        - value: ninguno
-          label: Producto estándar (sin personalización)
-        - value: logotipo
-          label: Solo logotipo / marca personalizada
-        - value: completo
-          label: Co-brand completo (tamaño, color, gráficos, embalaje)
-        - value: consulta
-          label: No estoy seguro — necesito consulta
+          label: Seleccione su volumen estimado...
+        - value: sample
+          label: Solo muestras / prototipos
+        - value: '5-10'
+          label: 5–10 unidades (MOQ estándar)
+        - value: '100-500'
+          label: 100–500 unidades
+        - value: '500-plus'
+          label: 500+ unidades (Precio por volumen)
       step: 1
-    - name: address
-      label: Dirección
+    - name: customization
+      label: ¿Necesitas personalización?
       row: 3
       type: select
       options:
         - value: ''
+          label: Seleccione el tipo de personalización...
+        - value: none
+          label: Producto estándar (sin personalización)
+        - value: logo
+          label: Solo logotipo / marca personalizada
+        - value: full
+          label: Co-brand completo (tamaño, color, gráficos, embalaje)
+        - value: consultation
+          label: No estoy seguro — necesito consulta
+      step: 1
+    - name: productInterest
+      label: Categorías de producto de interés
+      row: 4
+      type: select
+      options:
+        - value: ''
           label: Seleccione categoría de producto...
-        - value: Todos
+        - value: all
           label: Todos los productos / Catálogo completo
-        - value: ¿qué tal?
+        - value: sup
           label: Tablas SUP / Tablas de paddle
-        - value: seguridad
+        - value: safety
           label: Equipo de seguridad / Chalecos salvavidas
-        - value: accesorio
+        - value: accessory
           label: Accesorios (bombas, remos, bolsas)
       step: 1
-    - name: zip
-      label: Código postal
-      row: 4
+    - name: firstName
+      label: Nombre
+      row: 1
       step: 2
-    - name: country
-      label: País
-      row: 4
+    - name: lastName
+      label: Apellido
+      row: 1
+      step: 2
+    - name: companyName
+      label: Nombre de la empresa
+      row: 2
       step: 2
     - name: email
       label: Correo electrónico
-      row: 5
+      row: 3
+      type: email
       step: 2
     - name: tel
       label: TEL
-      row: 5
+      row: 3
       type: tel
-      step: 2
-    - name: orderVolume
-      label: Volumen de pedido estimado
-      row: 6
-      type: select
       withCountryCode: true
       step: 2
-    - name: customization
-      label: ¿Necesitas personalización?
-      row: 7
+    - name: address
+      label: Dirección
+      row: 4
       step: 2
-    - name: productInterest
-      label: Categorías de producto de interés
-      row: 8
+    - name: zip
+      label: Código postal
+      row: 5
       step: 2
     - name: subject
       label: Asunto
-      row: 9
+      row: 1
       step: 3
     - name: message
       label: Mensaje
-      row: 10
+      row: 2
       type: textarea
       rows: 6
       step: 3
@@ -130,7 +130,7 @@ features2_other_ways:
       description: Kits de prensa, patrocinios y colaboración en el sector.
       icon: tabler:news
     - title: Teléfono
-      description: 86 13305324192
+      description: '+86 13305324192'
       icon: tabler:headset
     - title: Correo electrónico
       description: info@afarer.com

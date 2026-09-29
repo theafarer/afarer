@@ -21,48 +21,48 @@ contact_form:
   captcha:
     label: 'Anti-spam : veuillez résoudre'
   fields:
-    - name: pays
+    - name: country
       label: Pays
       row: 1
-      type: sélectionner
+      type: select
       optionsKey: countries
       step: 1
     - name: orderVolume
       label: Volume de Commande Estimé
       row: 2
-      type: sélectionner
+      type: select
       options:
         - value: ''
           label: Sélectionnez votre volume estimé...
-        - value: Échantillon
+        - value: sample
           label: Échantillons / Prototypes uniquement
-        - value: 5-10
+        - value: '5-10'
           label: 5–10 unités (MOQ Standard)
-        - value: 100-500
+        - value: '100-500'
           label: 100–500 unités
-        - value: 500 et plus
+        - value: '500-plus'
           label: 500+ unités (Tarifs dégressifs)
       step: 1
     - name: customization
       label: Personnalisation nécessaire ?
       row: 3
-      type: sélectionner
+      type: select
       options:
         - value: ''
           label: Sélectionnez le type de personnalisation...
-        - value: aucun
+        - value: none
           label: Produit standard (sans personnalisation)
         - value: logo
           label: Logo personnalisé / Marquage uniquement
-        - value: complet
+        - value: full
           label: Co-Brand Complet (taille, couleur, graphismes, emballage)
         - value: consultation
           label: Pas sûr — besoin de conseil
       step: 1
     - name: productInterest
-      label: Catégories de Produits d'Intérêt
+      label: "Catégories de Produits d'Intérêt"
       row: 4
-      type: sélectionner
+      type: select
       options:
         - value: ''
           label: Sélectionnez une catégorie...
@@ -72,7 +72,7 @@ contact_form:
           label: SUP / Planches à pagaie
         - value: safety
           label: Équipement de Sécurité / Gilets
-        - value: accessoire
+        - value: accessory
           label: Accessoires (pompes, pagaies, sacs)
       step: 1
     - name: firstName
@@ -84,7 +84,7 @@ contact_form:
       row: 1
       step: 2
     - name: companyName
-      label: Nom de l'entreprise
+      label: "Nom de l'entreprise"
       row: 2
       step: 2
     - name: email
@@ -98,11 +98,11 @@ contact_form:
       type: tel
       withCountryCode: true
       step: 2
-    - name: adresse
+    - name: address
       label: Adresse
       row: 4
       step: 2
-    - name: code postal
+    - name: zip
       label: Code Postal
       row: 5
       step: 2

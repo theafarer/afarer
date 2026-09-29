@@ -21,98 +21,98 @@ contact_form:
   captcha:
     label: 'Anti-spam: rezolvați următoarea cerință'
   fields:
-    - name: firstName
-      label: Prenume
+    - name: country
+      label: Țară
       row: 1
       type: select
-      optionsKey: țări
+      optionsKey: countries
       step: 1
-    - name: lastName
-      label: Nume
-      row: 1
-      type: select
-      options:
-        - value: ''
-          label: Selectați volumul estimat...
-        - value: Probă
-          label: Doar mostre / prototipuri
-        - value: 5-10
-          label: 5–10 unități (MOQ standard)
-        - value: 100-500
-          label: 100–500 de unități
-        - value: Peste 500
-          label: 500+ unități (prețuri de volum)
-      step: 1
-    - name: companyName
-      label: Numele companiei
+    - name: orderVolume
+      label: Volum estimat al comenzii
       row: 2
       type: select
       options:
         - value: ''
+          label: Selectați volumul estimat...
+        - value: sample
+          label: Doar mostre / prototipuri
+        - value: '5-10'
+          label: 5–10 unități (MOQ standard)
+        - value: '100-500'
+          label: 100–500 de unități
+        - value: '500-plus'
+          label: 500+ unități (prețuri de volum)
+      step: 1
+    - name: customization
+      label: Aveți nevoie de personalizare?
+      row: 3
+      type: select
+      options:
+        - value: ''
           label: Selectați tipul de personalizare...
-        - value: niciuna
+        - value: none
           label: Produs standard (fără personalizare)
         - value: logo
           label: Doar logo / branding personalizat
         - value: full
           label: Co-Brand complet (dimensiune, culoare, grafică, ambalaj)
-        - value: consultanță
+        - value: consultation
           label: Nu sunt sigur — am nevoie de consultanță
       step: 1
-    - name: address
-      label: Adresă
-      row: 3
+    - name: productInterest
+      label: Categorii de produse de interes
+      row: 4
       type: select
       options:
         - value: ''
           label: Selectați categoria de produse...
-        - value: toate
+        - value: all
           label: Toate produsele / Catalog complet
         - value: sup
           label: Plăci SUP / Paddleboard-uri
-        - value: siguranță
+        - value: safety
           label: Echipament de siguranță / Veste de salvare
-        - value: accesoriu
+        - value: accessory
           label: Accesorii (pompe, vâsle, saci)
       step: 1
-    - name: zip
-      label: Cod poștal
-      row: 4
+    - name: firstName
+      label: Prenume
+      row: 1
       step: 2
-    - name: country
-      label: Țară
-      row: 4
+    - name: lastName
+      label: Nume
+      row: 1
+      step: 2
+    - name: companyName
+      label: Numele companiei
+      row: 2
       step: 2
     - name: email
       label: E-mail
-      row: 5
+      row: 3
+      type: email
       step: 2
     - name: tel
       label: Telefon
-      row: 5
+      row: 3
       type: tel
-      step: 2
-    - name: orderVolume
-      label: Volum estimat al comenzii
-      row: 6
-      type: select
       withCountryCode: true
       step: 2
-    - name: customization
-      label: Aveți nevoie de personalizare?
-      row: 7
+    - name: address
+      label: Adresă
+      row: 4
       step: 2
-    - name: productInterest
-      label: Categorii de produse de interes
-      row: 8
+    - name: zip
+      label: Cod poștal
+      row: 5
       step: 2
     - name: subject
       label: Subiect
-      row: 9
+      row: 1
       step: 3
     - name: message
       label: Mesaj
-      row: 10
+      row: 2
       type: textarea
       rows: 6
       step: 3

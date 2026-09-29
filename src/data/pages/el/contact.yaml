@@ -14,105 +14,105 @@ contact_form:
   title: Στείλτε μήνυμα
   subtitle: Για προσφορά, τεχνικές ερωτήσεις ή συνεργασία — γράψτε μας. Απαντάμε εντός μίας εργάσιμης ημέρας.
   email_to: info@afarer.com
-  submit_button: Αποστολή
+  submit_button: Αποστολή ερωτήματος → Λήψη προσφοράς
   success_message: Ευχαριστούμε! Το μήνυμά σας ελήφθη. Θα απαντήσουμε εντός μίας εργάσιμης ημέρας.
   error_message: Παρουσιάστηκε σφάλμα κατά την αποστολή. Δοκιμάστε ξανά ή γράψτε απευθείας στο email.
   default_country_code: '+1'
   captcha:
     label: 'Antispam: λύστε την παρακάτω άσκηση'
   fields:
-    - name: firstName
-      label: Όνομα
+    - name: country
+      label: Χώρα
       row: 1
       type: select
-      optionsKey: χώρες
+      optionsKey: countries
       step: 1
-    - name: lastName
-      label: Επώνυμο
-      row: 1
-      type: select
-      options:
-        - value: ''
-          label: Επιλέξτε τον εκτιμώμενο όγκο σας...
-        - value: δείγμα
-          label: Μόνο δείγματα / πρωτότυπα
-        - value: 5-10
-          label: 5–10 μονάδες (Τυπικό MOQ)
-        - value: 100-500
-          label: 100–500 μονάδες
-        - value: Πάνω από 500
-          label: 500+ μονάδες (Τιμή όγκου)
-      step: 1
-    - name: companyName
-      label: Εταιρεία
+    - name: orderVolume
+      label: Εκτιμώμενος όγκος παραγγελίας
       row: 2
       type: select
       options:
         - value: ''
-          label: Επιλέξτε τύπο προσαρμογής...
-        - value: Κανένα
-          label: Τυποποιημένο προϊόν (χωρίς προσαρμογή)
-        - value: λογότυπο
-          label: Μόνο Προσαρμοσμένο Λογότυπο / Σήμα
-        - value: πλήρης
-          label: Πλήρες Co-Brand (μέγεθος, χρώμα, γραφικά, συσκευασία)
-        - value: Συμβουλευτική
-          label: Δεν είμαι σίγουρος — χρειάζομαι συμβουλή
+          label: Επιλέξτε τον εκτιμώμενο όγκο σας...
+        - value: sample
+          label: Μόνο δείγματα / πρωτότυπα
+        - value: '5-10'
+          label: 5–10 μονάδες (Τυπικό MOQ)
+        - value: '100-500'
+          label: 100–500 μονάδες
+        - value: '500-plus'
+          label: 500+ μονάδες (Τιμή όγκου)
       step: 1
-    - name: address
-      label: Διεύθυνση
+    - name: customization
+      label: Χρειάζεστε προσαρμογή;
       row: 3
       type: select
       options:
         - value: ''
+          label: Επιλέξτε τύπο προσαρμογής...
+        - value: none
+          label: Τυποποιημένο προϊόν (χωρίς προσαρμογή)
+        - value: logo
+          label: Μόνο Προσαρμοσμένο Λογότυπο / Σήμα
+        - value: full
+          label: Πλήρες Co-Brand (μέγεθος, χρώμα, γραφικά, συσκευασία)
+        - value: consultation
+          label: Δεν είμαι σίγουρος — χρειάζομαι συμβουλή
+      step: 1
+    - name: productInterest
+      label: Κατηγορίες προϊόντων ενδιαφέροντος
+      row: 4
+      type: select
+      options:
+        - value: ''
           label: Επιλέξτε κατηγορία προϊόντος...
-        - value: όλα
+        - value: all
           label: Όλα τα προϊόντα / Πλήρης κατάλογος
         - value: sup
-          label: Πίνακες SUP / Πολωτά
-        - value: ασφάλεια
+          label: Σανίδες SUP / Paddleboards
+        - value: safety
           label: Εξοπλισμός Ασφαλείας / Σωσίβια
-        - value: αξεσουάρ
+        - value: accessory
           label: Αξεσουάρ (αντλίες, κουπιά, τσάντες)
       step: 1
-    - name: zip
-      label: Ταχ. Κώδικας
-      row: 4
+    - name: firstName
+      label: Όνομα
+      row: 1
       step: 2
-    - name: country
-      label: Χώρα
-      row: 4
+    - name: lastName
+      label: Επώνυμο
+      row: 1
+      step: 2
+    - name: companyName
+      label: Εταιρεία
+      row: 2
       step: 2
     - name: email
       label: Email
-      row: 5
+      row: 3
+      type: email
       step: 2
     - name: tel
       label: Τηλέφωνο
-      row: 5
+      row: 3
       type: tel
-      step: 2
-    - name: orderVolume
-      label: Εκτιμώμενος όγκος παραγγελίας
-      row: 6
-      type: select
       withCountryCode: true
       step: 2
-    - name: customization
-      label: Χρειάζεστε προσαρμογή;
-      row: 7
+    - name: address
+      label: Διεύθυνση
+      row: 4
       step: 2
-    - name: productInterest
-      label: Κατηγορίες προϊόντων ενδιαφέροντος
-      row: 8
+    - name: zip
+      label: Ταχ. Κώδικας
+      row: 5
       step: 2
     - name: subject
       label: Θέμα
-      row: 9
+      row: 1
       step: 3
     - name: message
       label: Μήνυμα
-      row: 10
+      row: 2
       type: textarea
       rows: 6
       step: 3

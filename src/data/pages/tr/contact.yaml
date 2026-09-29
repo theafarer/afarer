@@ -14,38 +14,38 @@ contact_form:
   title: Mesaj Gönderin
   subtitle: Fiyat teklifi, teknik sorular veya iş birliği için bize yazın. Bir iş günü içinde yanıtlıyoruz.
   email_to: info@afarer.com
-  submit_button: Gönder
+  submit_button: Talep gönder → Teklif al
   success_message: Teşekkürler! Mesajınız alındı. Bir iş günü içinde yanıtlayacağız.
   error_message: Gönderim sırasında bir hata oluştu. Lütfen tekrar deneyin veya doğrudan e-posta adresine yazın.
   default_country_code: '+1'
   captcha:
     label: 'Anti-spam: aşağıdaki işlemi çözün'
   fields:
-    - name: firstName
-      label: Ad
+    - name: country
+      label: Ülke
       row: 1
       type: select
-      optionsKey: ülkeler
+      optionsKey: countries
       step: 1
-    - name: lastName
-      label: Soyad
-      row: 1
+    - name: orderVolume
+      label: Tahmini Sipariş Hacmi
+      row: 2
       type: select
       options:
         - value: ''
           label: Tahmini hacminizi seçin...
-        - value: örnek
+        - value: sample
           label: Yalnızca Numune / Prototip
-        - value: 5-10
+        - value: '5-10'
           label: 5–10 birim (Standart MOQ)
-        - value: 100-500
+        - value: '100-500'
           label: 100–500 adet
-        - value: 500'den fazla
+        - value: '500-plus'
           label: 500+ adet (Toplu fiyatlandırma)
       step: 1
-    - name: companyName
-      label: Şirket
-      row: 2
+    - name: customization
+      label: Özelleştirme gerekli mi?
+      row: 3
       type: select
       options:
         - value: ''
@@ -54,65 +54,65 @@ contact_form:
           label: Standart ürün (özelleştirme yok)
         - value: logo
           label: Yalnızca Özel Logo / Markalama
-        - value: tam
+        - value: full
           label: Tam Ortak Marka (boyut, renk, grafik, paketleme)
-        - value: danışmanlık
+        - value: consultation
           label: Emin değilim — danışmanlık gerekiyor
       step: 1
-    - name: address
-      label: Adres
-      row: 3
+    - name: productInterest
+      label: İlgilenilen Ürün Kategorileri
+      row: 4
       type: select
       options:
         - value: ''
           label: Ürün kategorisi seçin...
-        - value: tümü
+        - value: all
           label: Tüm ürünler / Tam katalog
         - value: sup
           label: SUP Tahtaları / Kürekli Tahtalar
-        - value: güvenlik
+        - value: safety
           label: Güvenlik Ekipmanları / Can Yelekleri
-        - value: aksesuar
+        - value: accessory
           label: Aksesuarlar (pompalar, kürekler, çantalar)
       step: 1
-    - name: zip
-      label: Posta Kodu
-      row: 4
+    - name: firstName
+      label: Ad
+      row: 1
       step: 2
-    - name: country
-      label: Ülke
-      row: 4
+    - name: lastName
+      label: Soyad
+      row: 1
+      step: 2
+    - name: companyName
+      label: Şirket
+      row: 2
       step: 2
     - name: email
       label: E-posta
-      row: 5
+      row: 3
+      type: email
       step: 2
     - name: tel
       label: Telefon
-      row: 5
+      row: 3
       type: tel
-      step: 2
-    - name: orderVolume
-      label: Tahmini Sipariş Hacmi
-      row: 6
-      type: select
       withCountryCode: true
       step: 2
-    - name: customization
-      label: Özelleştirme gerekli mi?
-      row: 7
+    - name: address
+      label: Adres
+      row: 4
       step: 2
-    - name: productInterest
-      label: İlgilenilen Ürün Kategorileri
-      row: 8
+    - name: zip
+      label: Posta Kodu
+      row: 5
       step: 2
     - name: subject
       label: Konu
-      row: 9
+      row: 1
       step: 3
     - name: message
       label: Mesaj
-      row: 10
+      row: 2
       type: textarea
       rows: 6
       step: 3

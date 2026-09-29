@@ -14,105 +14,105 @@ contact_form:
   title: Inviaci un messaggio
   subtitle: Per preventivi, domande tecniche o richieste di partnership, scrivici. Rispondiamo entro un giorno lavorativo.
   email_to: info@afarer.com
-  submit_button: Invia messaggio
+  submit_button: Invia la richiesta → Ottieni un preventivo
   success_message: Grazie! Il tuo messaggio è stato ricevuto. Ti risponderemo entro un giorno lavorativo.
   error_message: Si è verificato un errore durante l'invio. Riprova o scrivici direttamente via email.
   default_country_code: '+1'
   captcha:
     label: 'Anti-spam: risolvi il seguente problema'
   fields:
-    - name: firstName
-      label: Nome
+    - name: country
+      label: Paese
       row: 1
       type: select
-      optionsKey: paesi
+      optionsKey: countries
       step: 1
-    - name: lastName
-      label: Cognome
-      row: 1
-      type: select
-      options:
-        - value: ''
-          label: Seleziona il tuo volume stimato...
-        - value: campione
-          label: Solo campioni / prototipi
-        - value: 5-10
-          label: 5–10 unità (MOQ standard)
-        - value: 100-500
-          label: 100–500 unità
-        - value: più di 500
-          label: 500 unità (Prezzo a volume)
-      step: 1
-    - name: companyName
-      label: Azienda
+    - name: orderVolume
+      label: "Volume d'ordine stimato"
       row: 2
       type: select
       options:
         - value: ''
-          label: Seleziona il tipo di personalizzazione...
-        - value: nessuno
-          label: Prodotto standard (nessuna personalizzazione)
-        - value: logo
-          label: Solo logo / branding personalizzato
-        - value: pieno
-          label: Co-Brand completo (dimensione, colore, grafica, confezione)
-        - value: consultazione
-          label: Non sicuro — bisogno di consultazione
+          label: Seleziona il tuo volume stimato...
+        - value: sample
+          label: Solo campioni / prototipi
+        - value: '5-10'
+          label: 5–10 unità (MOQ standard)
+        - value: '100-500'
+          label: 100–500 unità
+        - value: '500-plus'
+          label: 500+ unità (Prezzo a volume)
       step: 1
-    - name: address
-      label: Indirizzo
+    - name: customization
+      label: Necessita personalizzazione?
       row: 3
       type: select
       options:
         - value: ''
+          label: Seleziona il tipo di personalizzazione...
+        - value: none
+          label: Prodotto standard (nessuna personalizzazione)
+        - value: logo
+          label: Solo logo / branding personalizzato
+        - value: full
+          label: Co-Brand completo (dimensione, colore, grafica, confezione)
+        - value: consultation
+          label: Non sicuro — serve una consulenza
+      step: 1
+    - name: productInterest
+      label: Categorie di prodotti di interesse
+      row: 4
+      type: select
+      options:
+        - value: ''
           label: Seleziona categoria di prodotto...
-        - value: tutto
+        - value: all
           label: Tutti i prodotti / Catalogo completo
-        - value: ciao
+        - value: sup
           label: Tavole SUP / Tavole da paddle
-        - value: sicurezza
+        - value: safety
           label: Attrezzatura di sicurezza / Giubbotti di salvataggio
-        - value: accessorio
+        - value: accessory
           label: Accessori (pompe, remi, borse)
       step: 1
-    - name: zip
-      label: CAP
-      row: 4
+    - name: firstName
+      label: Nome
+      row: 1
       step: 2
-    - name: country
-      label: Paese
-      row: 4
+    - name: lastName
+      label: Cognome
+      row: 1
+      step: 2
+    - name: companyName
+      label: Azienda
+      row: 2
       step: 2
     - name: email
       label: Email
-      row: 5
+      row: 3
+      type: email
       step: 2
     - name: tel
       label: Telefono
-      row: 5
+      row: 3
       type: tel
-      step: 2
-    - name: orderVolume
-      label: Volume d'ordine stimato
-      row: 6
-      type: select
       withCountryCode: true
       step: 2
-    - name: customization
-      label: Necessita personalizzazione?
-      row: 7
+    - name: address
+      label: Indirizzo
+      row: 4
       step: 2
-    - name: productInterest
-      label: Categorie di prodotti di interesse
-      row: 8
+    - name: zip
+      label: CAP
+      row: 5
       step: 2
     - name: subject
       label: Oggetto
-      row: 9
+      row: 1
       step: 3
     - name: message
       label: Messaggio
-      row: 10
+      row: 2
       type: textarea
       rows: 6
       step: 3
@@ -130,7 +130,7 @@ features2_other_ways:
       description: Kit media, sponsorizzazioni e collaborazioni di settore.
       icon: tabler:news
     - title: Telefono
-      description: 86 13305324192
+      description: '+86 13305324192'
       icon: tabler:headset
     - title: E-mail
       description: info@afarer.com
