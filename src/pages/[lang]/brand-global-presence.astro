@@ -11,12 +11,14 @@ import { SITE } from 'astrowind:config';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/brand-global-presence.ts';
 import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'brand-global-presence');
 
@@ -34,7 +36,11 @@ const metadata = {
   description:
     'Afarer serves 50+ countries from our Qingdao facility and US warehouse in Montclair, CA. Find a distributor or become a partner.',
 };
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Brand' }, { name: 'Global Presence' }];
+const crumbs = [
+  { name: t('nav.home'), href: `/${lang}/` },
+  { name: t('nav.brand') },
+  { name: t('nav.brandGlobalPresence') },
+];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>

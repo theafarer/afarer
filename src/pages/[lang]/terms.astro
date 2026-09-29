@@ -23,7 +23,7 @@ const metadata = {
       'Conditions générales afarer régissant l’utilisation de notre site web et de nos services.'
     ),
 };
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: fr('Terms and Conditions', 'Conditions Générales') }];
+const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.terms') }];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>

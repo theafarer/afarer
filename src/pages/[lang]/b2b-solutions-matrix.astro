@@ -37,9 +37,9 @@ const metadata = {
     'Complete Afarer B2B client solutions matrix covering 24 customer types — find the solution for your business.',
 };
 const crumbs = [
-  { name: 'Home', href: `/${lang}/` },
+  { name: t('nav.home'), href: `/${lang}/` },
   { name: t('nav.solutions') || 'Solutions' },
-  { name: 'B2B Solutions Matrix' },
+  { name: t('nav.b2bSolutionsMatrix') },
 ];
 ---
 
@@ -58,8 +58,12 @@ const crumbs = [
         <thead>
           <tr class="bg-gray-50 border-b border-gray-200">
             <th class="text-left px-6 py-4 font-semibold text-gray-700 whitespace-nowrap w-[28%]">#</th>
-            <th class="text-left px-6 py-4 font-semibold text-gray-700 whitespace-nowrap w-[28%]">'Core Need'</th>
-            <th class="text-left px-6 py-4 font-semibold text-gray-700 whitespace-nowrap w-[44%]">'Solution'</th>
+            <th class="text-left px-6 py-4 font-semibold text-gray-700 whitespace-nowrap w-[28%]"
+              >{t('b2bSolutionsMatrix.coreNeed') || 'Core Need'}</th
+            >
+            <th class="text-left px-6 py-4 font-semibold text-gray-700 whitespace-nowrap w-[44%]"
+              >{t('home.useCases.solution') || 'Solution'}</th
+            >
           </tr>
         </thead>
         <tbody>

@@ -12,6 +12,7 @@ import { findImage } from '~/utils/images';
 import type { MetaData, Post } from '~/types';
 import RelatedPosts from '~/components/blog/RelatedPosts.astro';
 import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 
 export const prerender = true;
 
@@ -28,6 +29,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 const { post } = Astro.props;
 
 const url = getCanonical(getPermalink(post.permalink, 'post'));
@@ -71,7 +73,11 @@ const metadata = merge(
 
 <NewsLayout
   metadata={metadata}
-  breadcrumbs={[{ name: 'Home', href: `/${lang}/` }, { name: 'News', href: `/${lang}/news` }, { name: post.title }]}
+  breadcrumbs={[
+    { name: t('nav.home'), href: `/${lang}/` },
+    { name: t('nav.news'), href: `/${lang}/news` },
+    { name: post.title },
+  ]}
 >
   <script is:inline type="application/ld+json" set:html={JSON.stringify(articleJsonLd)} />
   <SinglePost post={{ ...post, image: image }} url={url}>

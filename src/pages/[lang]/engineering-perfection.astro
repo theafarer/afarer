@@ -23,7 +23,7 @@ const metadata = {
 };
 
 const crumbs = [
-  { name: 'Home', href: `/${lang}/` },
+  { name: t('nav.home'), href: `/${lang}/` },
   { name: t('engineeringPerfection.nav') || 'Engineering Perfection' },
 ];
 
@@ -189,7 +189,7 @@ const segments = [
           t('engineeringPerfection.rel1desc') ||
           'Multi-layered QC system with stringent checks at each critical manufacturing step.',
         href: `/${lang}/quality`,
-        label: 'Quality',
+        label: t('nav.qualityNav'),
       },
       {
         title: t('engineeringPerfection.rel2') || 'R&D Center',
@@ -197,7 +197,7 @@ const segments = [
           t('engineeringPerfection.rel2desc') ||
           'Our research facilities including PVC Fabric Lab, Hydrodynamic Test Tank, and Prototype Workshop.',
         href: `/${lang}/randdcenter`,
-        label: 'R&D',
+        label: t('nav.randd'),
       },
       {
         title: t('engineeringPerfection.rel3') || 'Factory Overview',
@@ -205,7 +205,7 @@ const segments = [
           t('engineeringPerfection.rel3desc') ||
           '12,000 m² facility with RF welding, drop-stitch production, and custom assembly lines.',
         href: `/${lang}/factory`,
-        label: 'Facility',
+        label: t('nav.factory'),
       },
       {
         title: t('engineeringPerfection.rel4') || 'Design & Innovation',
@@ -213,7 +213,7 @@ const segments = [
           t('engineeringPerfection.rel4desc') ||
           'Full-service design studio for custom ODM projects, from concept to production.',
         href: `/${lang}/design-powerhouse`,
-        label: 'Design',
+        label: t('nav.designPowerhouse'),
       },
     ]}
   />

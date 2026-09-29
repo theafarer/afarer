@@ -4,6 +4,7 @@ export const prerender = true;
 import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/factory-equipment.ts';
 
@@ -12,6 +13,7 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'factory-equipment') || {};
@@ -20,8 +22,8 @@ const categories = page.categories || [];
 const cta = page.cta || {};
 
 const crumbs = [
-  { name: 'Home', href: `/${lang}/` },
-  { name: 'Factory', href: `/${lang}/factory` },
+  { name: t('nav.home'), href: `/${lang}/` },
+  { name: t('nav.factory'), href: `/${lang}/factory` },
   { name: hero.tagline || 'Equipment' },
 ];
 

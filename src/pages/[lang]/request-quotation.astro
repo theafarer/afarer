@@ -11,12 +11,14 @@ import { SITE } from 'astrowind:config';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/request-quotation.ts';
 import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'request-quotation');
 
@@ -35,7 +37,7 @@ const metadata = {
   description:
     "Submit your product requirements for a detailed quotation from Afarer's manufacturing team. We respond within 2 business days.",
 };
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Request a Quote' }];
+const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('cta.requestQuote') }];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>

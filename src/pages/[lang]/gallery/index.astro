@@ -5,6 +5,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 import { SITE } from 'astrowind:config';
 import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/gallery.ts';
 
@@ -13,6 +14,7 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'gallery');
 
@@ -24,7 +26,7 @@ const metadata = {
   title: `${hero.title} — ${SITE.name}`,
   description: `Browse the ${SITE.name} gallery — ${hero.subtitle}`,
 };
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: hero.title }];
+const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: hero.title }];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>

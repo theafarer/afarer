@@ -17,7 +17,7 @@ const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
 
 const _ = (key: string, fallback: string) => {
   const v = t(key);
-  return v === key ? fallback : v;
+  return v || fallback;
 };
 
 const metadata = {
@@ -28,7 +28,10 @@ const metadata = {
   ),
 };
 
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: _('designPowerhouse.nav', 'Design & Innovation') }];
+const crumbs = [
+  { name: t('nav.home'), href: `/${lang}/` },
+  { name: _('designPowerhouse.nav', t('nav.designPowerhouse')) },
+];
 
 const stats = [
   { value: '14+', label: _('designPowerhouse.stat1', 'In-House Engineers') },

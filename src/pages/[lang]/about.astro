@@ -21,6 +21,7 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 const _t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'about');
@@ -53,7 +54,7 @@ const metadata = {
     ...(hero?.image?.src ? { images: [{ url: hero.image.src, width: 1200, height: 630 }] } : {}),
   },
 };
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'About' }];
+const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.about') }];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>

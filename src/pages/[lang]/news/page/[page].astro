@@ -9,6 +9,7 @@ import Timeline from '~/components/blog/Timeline.astro';
 import { fetchPosts, blogPostsPerPage, blogListRobots } from '~/utils/blog';
 import pageData from '~/data/pages/news.yaml';
 import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 import type { Post } from '~/types';
 
 export const prerender = true;
@@ -38,6 +39,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 const { paginatedPosts, currentPage, totalPages } = Astro.props;
 
 const prevUrl = currentPage === 2 ? `/${lang}/news/` : `/${lang}/news/page/${currentPage - 1}/`;
@@ -62,8 +64,8 @@ const metadata = {
 <Layout
   metadata={metadata}
   breadcrumbs={[
-    { name: 'Home', href: `/${lang}/` },
-    { name: 'News', href: `/${lang}/news` },
+    { name: t('nav.home'), href: `/${lang}/` },
+    { name: t('nav.news'), href: `/${lang}/news` },
     { name: `Page ${currentPage}` },
   ]}
 >

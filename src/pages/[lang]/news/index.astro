@@ -7,6 +7,7 @@ import JsonLd from '~/components/common/JsonLd.astro';
 import NewsletterSignup from '~/components/widgets/NewsletterSignup.astro';
 
 import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 import { fetchPosts, blogPostsPerPage, blogListRobots } from '~/utils/blog';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/news.ts';
@@ -17,6 +18,7 @@ export async function getStaticPaths() {
 
 const lang = Astro.params.lang || 'en';
 const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'news');
 const newsHeader = page?.hero_text ?? {};
@@ -54,7 +56,7 @@ const metadata = {
 };
 ---
 
-<Layout metadata={metadata} breadcrumbs={[{ name: 'Home', href: `/${lang}/` }, { name: 'News' }]}>
+<Layout metadata={metadata} breadcrumbs={[{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.news') }]}>
   <JsonLd
     type="ItemList"
     data={{

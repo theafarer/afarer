@@ -10,12 +10,14 @@ import { SITE } from 'astrowind:config';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/brand-team.ts';
 import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'brand-team') || {};
 
@@ -38,7 +40,11 @@ const metadata = {
   description:
     'Meet the Afarer team — marine engineers, material scientists, and manufacturing experts with decades of combined experience in inflatable boat design and production.',
 };
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Brand', href: `/${lang}/brand/` }, { name: 'Team' }];
+const crumbs = [
+  { name: t('nav.home'), href: `/${lang}/` },
+  { name: t('nav.brand'), href: `/${lang}/brand/` },
+  { name: t('home.resources.team') },
+];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>

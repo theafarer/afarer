@@ -8,6 +8,7 @@ import Map from '~/components/widgets/Map.astro';
 import TrustBadges from '~/components/common/TrustBadges.astro';
 import { SITE } from 'astrowind:config';
 import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/contact.ts';
 
@@ -21,6 +22,7 @@ import { pageContentData } from '~/i18n/generated/data';
 import formTextData from '~/data/site/contact-form-text.yaml';
 const lang = Astro.params.lang || 'en';
 const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+const tnav = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'contact');
 const data = page && Object.keys(page).length > 0 ? page : {};
@@ -87,7 +89,10 @@ const metadata = {
 };
 ---
 
-<Layout metadata={metadata} breadcrumbs={[{ name: 'Home', href: `/${lang}/` }, { name: 'Contact' }]}>
+<Layout
+  metadata={metadata}
+  breadcrumbs={[{ name: tnav('nav.home'), href: `/${lang}/` }, { name: tnav('nav.contact') }]}
+>
   <JsonLd
     type="Organization"
     data={{

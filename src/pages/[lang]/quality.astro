@@ -4,6 +4,7 @@ export const prerender = true;
 import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/quality.ts';
 
@@ -21,13 +22,14 @@ const commitment = page.commitment || {};
 const testingSection = page.testing_section || {};
 
 const t = (s: string) => (typeof s === 'string' ? s.replace(/\{SITE\}/g, SITE.name) : s);
+const tnav = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 
 const metadata = {
   title: `SUP Quality Control & Testing — SUP Factory Inspection Program | ${SITE.name}`,
   description: `${SITE.name}'s SUP factory quality control program covers pressure, impact, UV, abrasion, low-temperature, buoyancy, maneuverability, and watertightness testing. Every inflatable SUP board is certified before shipping to OEM and wholesale buyers.`,
 };
 
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: hero.tagline }];
+const crumbs = [{ name: tnav('nav.home'), href: `/${lang}/` }, { name: hero.tagline }];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>

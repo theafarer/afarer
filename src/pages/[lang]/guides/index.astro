@@ -66,7 +66,9 @@ const catNames: Record<string, string> =
   />
 
   <section class="max-w-4xl mx-auto py-24 px-6" data-ai-block="definition">
-    <span class="text-sm font-medium text-sky-600 tracking-wide uppercase">{hero.tagline || 'Guides'}</span>
+    <span class="text-sm font-medium text-sky-600 tracking-wide uppercase"
+      >{hero.tagline || t('guides.pageLabel') || 'Guides'}</span
+    >
     <h1 class="mt-4 text-4xl font-semibold text-gray-900">{hero.title || 'New to SUP?'}</h1>
     <p class="mt-4 text-lg text-gray-500">
       {hero.subtitle || 'Practical guides to help you choose, use, and enjoy inflatable water sports equipment.'}

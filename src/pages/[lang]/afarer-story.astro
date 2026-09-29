@@ -5,6 +5,7 @@ export const prerender = true;
 import Layout from '~/layouts/PageLayout.astro';
 import { BRAND } from '~/lib/seo/brand-os';
 import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/afarer-story.ts';
 
@@ -13,6 +14,7 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'afarer-story') || {};
@@ -36,7 +38,7 @@ const metadata = {
 };
 const lh = (h: string) => (h ? `/${lang}${h}` : h);
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Afarer Story' }];
+const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.afarerStory') }];
 const statsData = stats.stats || [];
 const tSignals = trustSignals || {};
 const manufacturing = tSignals.manufacturing || {};

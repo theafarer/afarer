@@ -10,12 +10,14 @@ import { SITE } from 'astrowind:config';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/community.ts';
 import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'community');
 
@@ -30,7 +32,7 @@ const metadata = {
   title: `Community — ${SITE.name} Explorer Stories & Adventures`,
   description: `Real stories from the ${SITE.name} community. Read adventures from paddlers, families, and professionals who use our gear on the water worldwide.`,
 };
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: 'Community' }];
+const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.community') }];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>

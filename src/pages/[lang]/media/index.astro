@@ -4,6 +4,7 @@ export const prerender = true;
 import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/media.ts';
 
@@ -12,6 +13,7 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'media');
@@ -25,7 +27,7 @@ const metadata = {
   title: `${hero.title} — ${SITE.name} Brand Assets`,
   description: `Download product images, logos, brand kits, PDF catalogs, and marketing videos for ${SITE.name} inflatable boats and SUP boards.`,
 };
-const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: hero.title }];
+const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: hero.title }];
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>

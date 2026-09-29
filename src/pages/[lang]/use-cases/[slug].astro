@@ -32,7 +32,7 @@ const page = node ? useCaseFromNode(node, lang) : null;
 
 const useCaseCrumbs = page
   ? [
-      { name: 'Home', href: `/${lang}/` },
+      { name: t('nav.home'), href: `/${lang}/` },
       { name: t('useCase.label'), href: `/${lang}/solutions/by-use-case` },
       { name: page.title },
     ]
