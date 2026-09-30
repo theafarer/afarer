@@ -23,6 +23,7 @@ jobs:
 
       # Generate site assets
       - run: node scripts/_gen-uiall.cjs
+      - run: node scripts/_gen-landing-i18n.cjs
       - run: node scripts/_gen-pages.cjs
       - run: node scripts/_gen-seo-meta.cjs
       - run: node scripts/gen-icon-svgs.cjs

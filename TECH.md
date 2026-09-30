@@ -42,12 +42,13 @@ Priority for edge detection: Cookie (`x-user-locale`) → `cf-ipcountry` → `Ac
  3. scripts/generate-geo-files.ts (tsx) → Generate entity.json + llms-full.txt
     (idempotent: 52 products × 22 languages + 1,034 pages)
  4. scripts/_gen-uiall.cjs             → Generate ui-all.ts (merge 22 lang translations)
- 5. scripts/_gen-pages.cjs             → Generate pages/*.ts modules from JSON (109 pages)
-6. scripts/_gen-seo-meta.cjs          → Generate seo-meta.ts (572 entries / 78 routes, from page YAML `meta` blocks; consumed by `src/components/common/Metadata.astro`)
-  7. scripts/gen-icon-svgs.cjs          → Generate icon SVGs
-  8. astro build                        → Static site to dist/ (7,564 pages)
-  9. scripts/clean-public-assets.mjs    → Clean temp assets
- 10. (optional) scripts/fast-upload-r2.mjs → Upload to R2 (assets + data)
+ 5. scripts/_gen-landing-i18n.cjs      → Generate landing/*.ts modules (EN-key → 19-locale maps for fr() pages, from src/data/landing-i18n/)
+ 6. scripts/_gen-pages.cjs             → Generate pages/*.ts modules from JSON (109 pages)
+ 7. scripts/_gen-seo-meta.cjs          → Generate seo-meta.ts (572 entries / 78 routes, from page YAML `meta` blocks; consumed by `src/components/common/Metadata.astro`)
+ 8. scripts/gen-icon-svgs.cjs          → Generate icon SVGs
+ 9. astro build                        → Static site to dist/ (13,858 pages)
+ 10. scripts/clean-public-assets.mjs    → Clean temp assets
+ 11. (optional) scripts/fast-upload-r2.mjs → Upload to R2 (assets + data)
 ```
 
 > ⚠ Steps 2–7 write gitignored artifacts into `src/i18n/generated/` and `public/data/`. Never edit them by hand; always regenerate via the build chain. CI runs the same steps.
@@ -59,7 +60,7 @@ Trigger: Push to `main`
 ```
 checkout → npm install
  → geo-build → generate-data-json → generate-geo-files (tsx)
- → gen-uiall → gen-pages → gen-seo-meta → gen-icon-svgs
+ → gen-uiall → gen-landing-i18n → gen-pages → gen-seo-meta → gen-icon-svgs
  → astro build
  → clean → R2 upload
  → Ensure Pages project → Pages deploy
@@ -561,6 +562,18 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ⑥ **工具与陷阱**：新工具族 `crumb-wiring/` 登记 tool_instrction.md；dist walk 探针 `_s55-distwalk.cjs` 37 检查（21 locale 采样面包屑/徽章/表头/learn/academy/design-powerhouse + 全局 `>Home<`/JSON-LD 扫描）；**`[lang]` 通配符陷阱**——`[...]` 是字符类，Select-String -Path 与 glob pattern 均会把 `[lang]` 目录当通配符吞掉（必须 -LiteralPath 或递归枚举），侦察漏掉 academy/index.astro 即由此起；**dist walk needle 陷阱**——`&` 在 HTML 渲染为 `&amp;`（"Центр R&D"/"Design & innovation" needle 必须用转义形），且 needle 预期值必须以字典为准勿凭记忆（"Мировое присутствие" vs 实际 "Глобальное присутствие" 假阴性）。四件套 + build 13858 页全绿。
 
+#### L46. 分片 56：fr() 落地页 EN 键映射基建（方案 C）+ ultra-stable-sup 试点全链、JsonLd data-prop 既有 bug 发现（2026-09）
+
+① **形态普查与方案裁定**：15 个 `[lang]` 落地页 `fr(en, francais)` helper 在 19 个非 en/fr locale 全渲染 EN。903 调用普查 → 97.6% 纯字符串、4 templ（全是 `` `X — ${SITE.name}` `` 标题后缀形态，privacy/terms/whitepaper/disclaimer 四页）、4 数组（frArr，ultra-stable-sup 3 + marine-industry 1）。用户裁定 **C 方案（EN 键映射表）**：fr() 调用点零改动，每页只改 helper 一行 + 加 import；EN 串为表键，fr fallback 保留代码第二参，en/fr 不进表。
+
+② **基建三件套 + 生成器**（`TOOLS/i18n-merge/landing-i18n/`）：A `_extract-landing.cjs` 扫描 15 页 → `_landing-manifest.json`（903 调用 → 841 唯一 EN 键；per page：marine-industry 116、kids-sup 65、yoga-sup 65、privacy 65、all-around-sup 63、fishing-sup 62、whitewater-sup 61、touring-sup 54、terms 55、whitepaper 52、sup-accessories 49、inflatable-sup 48、ultra-stable-sup 41、disclaimer 39、afarer-story 6）；B `scripts/_gen-landing-i18n.cjs` 把 `src/data/landing-i18n/<pageKey>.json` 生成 `src/i18n/generated/landing/<name>.ts`（`export const landingI18n: Record<string, Record<string,string>>`；19 locale 白名单/值类型校验），挂进 package.json `build`/`generate` 链（_gen-uiall 之后）+ actions.yaml legacy 链（CI deploy.yml/ci.yml 走 `npm run build` 自动含）；C `_wire-landing-helpers.cjs` 数据驱动接线器（仅当数据 json 存在才补丁，--dry/--patch 幂等，标记 `__landing`；frArr 改写 `(lang === 'fr' ? francais : en.map((s) => __lt[s] || s))`；4 templ 前缀化 `` fr(`X — ${SITE.name}`,...) `` → `` ${fr('X —',...)} ${SITE.name} ``）；D `_check-landing.cjs` manifest vs data 完整性校验（19 locale × 全键覆盖，missing exit 1）。pageKey 规则：`marine-industry/index.astro`→`marine-industry`、`whitepaper/oem-sup-manufacturing-guide.astro`→`whitepaper-oem-sup-manufacturing-guide`（去 .astro、/index、/ → -）。
+
+③ **试点页 ultra-stable-sup 全链走通**：41 键 × 19 locale 数据文件（152KB，分 5 part 写 + node merge 键集跨 locale 全等校验）；接线 = L8 import `landingI18n as __landing` + L15-16 `const __lt = __landing[lang || ''] || {}` 与 `fr = (en, francais) => __lt[en] || (lang === 'fr' ? francais : en)`；翻译口径：单位本地化 FR 参考值英寸→cm（34"→86 cm 等）19 locale 跟随、"Home" 键 = 各 locale breadcrumb.home 值（shard 55 机制衔接）、dash 按各 locale 惯例。回归：astro check 0 err、prettier/eslint 绿、check:i18n 19 既有 warn 不变、build 13,858 页、dist walk 21/21 PASS（19 locale h1 本地化 + EN needle 零残留 + fr fallback + en 原样；h1 marker 程序化取自数据文件，EN needle 避免 `&`——dist 为 `&amp;`）。
+
+④ **JsonLd data-prop 既有 bug（新挂账，15 页共性）**：fr() 页 JsonLd 调用传 `data={{...}}` prop，但组件（`src/components/common/JsonLd.astro`）只认 `type` + 结构化 props（article/breadcrumb）→ data 被完全忽略，页面 Article/BreadcrumbList JSON-LD **从未渲染**（en/de 同样）→ manifest key #3（Article headline）为死调用，翻译入表但不出现在 dist。
+
+⑤ **后续 shard 流程**：每 shard 1-2 页 = 翻译数据（分 part 写）→ `_wire-landing-helpers.cjs --patch` → 4 个 templ 页接线后**必须重跑 `_extract-landing.cjs`**（EN 键变前缀形如 "Privacy Policy —"）→ `_check-landing.cjs` → build → dist walk；推荐顺序按页大小（marine-industry 116 键含 frArr 下一站）。引擎终态：warning-cleanup dry 0/2942/0、crumb dry 0/57/0、landing wire dry = 0 applied/1 already/14 pending/0 errors。
+
 ---
 
 
@@ -633,7 +646,7 @@ Dashboards: `/internal/seo/{index,brand-os,brand,social,rules,tasks,queries,work
 | `functions/_middleware.ts` | Cloudflare edge middleware (locale redirect + R2) |
 | `src/i18n/routing.ts` | Shared route definitions, `localizeHref()`, `entityForHref()` |
 | `src/i18n/page-content.ts` | Page YAML content loader (build-time cache) |
-| `src/i18n/generated/*` | ⚠ Build artifacts (gitignored): `seo-meta.ts`, `ui-all.ts`, `data.ts`, `page-content.json`, `i18n-config.json`, `pages/`, `ui/` |
+| `src/i18n/generated/*` | ⚠ Build artifacts (gitignored): `seo-meta.ts`, `ui-all.ts`, `data.ts`, `page-content.json`, `i18n-config.json`, `pages/`, `ui/`, `landing/` |
 | `src/utils/product-i18n.ts` | Product translation merge (YAML → TS → English fallback) |
 | `src/components/common/Metadata.astro` | Per-route SEO meta consumer (seo-meta.ts) |
 | `src/components/widgets/SeoLanding.astro` | SEO landing page renderer |
@@ -645,7 +658,7 @@ Dashboards: `/internal/seo/{index,brand-os,brand,social,rules,tasks,queries,work
 | `src/lib/rate-limit.ts` | In-memory sliding window rate limiter (currently unused) |
 | `src/lib/link-refactor.ts` | URL/name refactoring engine |
 | `scripts/_gen-seo-meta.cjs` | Generates `src/i18n/generated/seo-meta.ts` |
-| `scripts/_gen-pages.cjs` / `_gen-uiall.cjs` | Generate page modules / ui-all.ts |
+| `scripts/_gen-pages.cjs` / `_gen-uiall.cjs` / `_gen-landing-i18n.cjs` | Generate page modules / ui-all.ts / landing EN-key map modules (`src/i18n/generated/landing/`) |
 | `TOOLS/tool_instrction.md` | 工具总目录文档：meta-inject / i18n-merge / i18n-fix / one-off / **verify（构建后全语言回归验证）** / **i18n-manage（UI 键批量管理 + CJK 泄漏扫描）** |
 | `TOOLS/verify/*.cjs` | 构建后回归验证：`verify-langs.cjs`（六项整站）、`check-dist.cjs`（--present/--absent 全语言断言）、`scan-en-leak.cjs`、`check-solutions-page.cjs` — 模块增删后必跑 |
 | `TOOLS/i18n-manage/*.cjs` | `ui-keys.cjs`（i18n UI 键 count/missing/add/remove/set）、`scan-cjk.cjs`（src/dist 中文泄漏扫描） |
