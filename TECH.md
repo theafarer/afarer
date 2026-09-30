@@ -574,6 +574,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ⑤ **后续 shard 流程**：每 shard 1-2 页 = 翻译数据（分 part 写）→ `_wire-landing-helpers.cjs --patch` → 4 个 templ 页接线后**必须重跑 `_extract-landing.cjs`**（EN 键变前缀形如 "Privacy Policy —"）→ `_check-landing.cjs` → build → dist walk；推荐顺序按页大小（marine-industry 116 键含 frArr 下一站）。引擎终态：warning-cleanup dry 0/2942/0、crumb dry 0/57/0、landing wire dry = 0 applied/1 already/14 pending/0 errors。
 
+#### L47. 分片 57：marine-industry 全链（116 键 × 19 locale）+ 锚点 id/标签解耦修复、nav chip 验证面、EN dist 路径（2026-09）
+
+① **数据与合并**：19 个单 locale part 文件（`_mi-<loc>.json`，各 15-18KB 单写无 32KB 陷阱）→ `_merge-marine-industry.cjs`（TOOLS/i18n-merge/landing-i18n/ 归档）合并校验（locale 集 + 116 键跨 locale 全等 + === manifest + 无空值）→ `marine-industry.json` 329,147 bytes，prettier 天然合规（键排序/宽度）unchanged；`_gen-landing-i18n.cjs` 输出 2 模块。
+
+② **接线前置锚点 bug 修复（手工，未碰接线器匹配行）**：nav chips 原以本地化标签字符串做 `` `#${label.toLowerCase().replace(...)}` `` 生成 href，但 section id 是硬编码英文（types/construction/materials/selection/safety/maintenance/applications）→ 非 en 页全部断锚，**fr 现网亦然**（#matériaux vs id="materials"）。修复 = frontmatter 加 `SECTION_IDS` 常量 + chips map 改 `(section, i)` 用 `#${SECTION_IDS[i]}`——**锚点 id 与标签解耦**（与 fr()/__() 翻译机制同构）。dist 验证面：7 个英文 id 的 `id="x"` + `href="#x"` × 21 locale 全在。
+
+③ **翻译口径**："Learning Center" 按 locale 自然译；"View Products" 复数形；"Required (EU)" 括注按 locale（UE/EU/ЕС/ΕΕ/AB）；"NEVER" 大写强调（NUNCA/MAI/НИКОГДА/ALDRIG/ALDRI/NIKDY/ASLA/EI KOSKAAN/OVERSCHRIJD NOOIT/NIGDY/أبدًا/ห้ามเด็ดขาด）；sv/da/no 用 HF-svetsning/sveising 替代 RF 缩写；价格/dash/千分位按既有先例（ko `200~400달러`、ja `200～400ドル`；技术范围 15-25 PSI 等保持 EN 连字符）。
+
+④ **回归数字**：wire dry 1/1/13/0 → patch applied 1 → 复 dry **0 applied/2 already/13 pending/0 errors**；extract 重跑（903 调用/841 键不变，marine-industry 116）；checker `pages checked: 2, missing: 0, stale: 0 PASS`；astro check 0 err 0 warn 175 hint / eslint / prettier 绿 / check:i18n 0 issue 19 既有 warn；build 13,858 页；dist walk（`_mi-walk.cjs` 改造自 _uss-walk）21/21 PASS——**注意 EN 页在 `dist/en/marine-industry/`（根路径是 redirect 页，无 h1 签名）**；nav chip 检查须容忍标签前后空白（`> Typen </a>`，用 includes 不用 `>x<` 锚定）。
+
 ---
 
 

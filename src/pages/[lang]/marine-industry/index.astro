@@ -7,6 +7,7 @@ import AiQuickAnswer from '~/components/common/AiQuickAnswer.astro';
 
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { landingI18n as __landing } from '~/i18n/generated/landing/marine-industry';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -14,9 +15,12 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
-const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+const __lt = __landing[lang || ''] || {};
+const fr = (en: string, francais: string) => __lt[en] || (lang === 'fr' ? francais : en);
 
-const frArr = (en: string[], francais: string[]) => (lang === 'fr' ? francais : en);
+const frArr = (en: string[], francais: string[]) => (lang === 'fr' ? francais : en.map((s) => __lt[s] || s));
+
+const SECTION_IDS = ['types', 'construction', 'materials', 'selection', 'safety', 'maintenance', 'applications'];
 
 const metadata = {
   title:
@@ -90,9 +94,9 @@ const metadata = {
         frArr(
           ['Types', 'Construction', 'Materials', 'Selection', 'Safety', 'Maintenance', 'Applications'],
           ['Types', 'Construction', 'Matériaux', 'Sélection', 'Sécurité', 'Entretien', 'Applications']
-        ).map((section) => (
+        ).map((section, i) => (
           <a
-            href={`#${section.toLowerCase()}`}
+            href={`#${SECTION_IDS[i]}`}
             class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-full text-sm font-medium text-gray-700 transition"
           >
             {section}
