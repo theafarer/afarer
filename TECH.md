@@ -586,6 +586,20 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+#### L48. 分片 58：kids-sup + yoga-sup 双页全链（各 65 键 × 19 locale）、h1 短键陷阱、extract 输出 prettier 化（2026-09）
+
+① **数据与合并**：两页各 19 个单 locale part 文件（`_ks-<loc>.json`/`_ys-<loc>.json`）→ `_merge-kids-sup.cjs`/`_merge-yoga-sup.cjs`（同构改造自 marine 合并器：换 PAGE/EXPECTED_KEYS=65/part 前缀/OUT；kids 版含边缘空格键专项断言——"Check our " 尾空格 + " for kid-friendly options." 头空格）→ `kids-sup.json` 219,507 bytes / `yoga-sup.json` 233,546 bytes，prettier 合规；`_gen-landing-i18n.cjs` 输出 4 模块。**共用键跨页一致**：Home/Inflatable SUP Boards/SUP Category/← SUP Product Center 复用 marine-industry 值；OEM 块（Custom/Units minimum order/30 Days/Typical lead time/Request OEM Quote/Contact Us）本 shard 新立、两页同值。
+
+② **公制换算约定（本 shard 立，后续页沿用）**：范围连字符 `2,40-2,70 m`；小数逗号 = de/es/pt/it/nl/el/da/ro/tr/ru/pl/cs/fi/no/sv，小数点 = ar/ja/ko/th；换算表 8′–9′→2,40-2,70 m、9′–10′→2,70-3,00 m、26″–28″→66-71 cm、28″–30″→71-76 cm、33-36 inches→84-91 cm、10-11 feet→3,00-3,35 m、80 lbs→36 kg、12–15 lbs→5,5-7 kg；纯数字范围（"5–6 years"）保持 EN en dash。FAQ 近似键（#8 plain "33-36 inches" vs #53 templ "33″–36″"）是不同键、均照译。
+
+③ **h1 短键陷阱（walk 假阳性全 42 FAIL 教训）**：两页 hero `<h1>` 是**独立短键**（"Kids SUP Board"/"SUP Yoga Board"，kids idx18/yoga idx5），不是 key#3 长标题（那是 hero 副文案区）；且短键是 FAQ 标题等长串的子串 → walk 须用 `<h1[^>]*>\s*值\s*</h1>` 标签内含断言（容忍 Astro 输出的标签内空白），不能裸 includes 断 EN 残留。`_ksys-walk.cjs` 双页 21/21 × 2 PASS。
+
+④ **extract 输出 prettier 化**：`_extract-landing.cjs` L157 原以 1 空格缩进写 manifest（shard 57 在 prettier 门禁后重跑 extract 遗留），致 `prettier -c .` 在 HEAD 即 warn。修复 = 改 `JSON.stringify(manifest, null, 2) + '\n'` + prettier -w 既有 manifest（内容语义不变，checker PASS / 15 页 841 调用不变），后续 extract 重跑不再产生格式漂移。
+
+⑤ **回归数字**：wire dry 2/2/11/0 → patch applied 2 → 复 dry **0/4/11/0**；checker `pages checked: 4, missing: 0, stale: 0 PASS`；astro check 0 err 0 warn 175 hint / eslint 绿 / prettier 全绿 / check:i18n 0 issue 19 既有 warn；build 13,858 页；llms-full.txt 构建漂移照例 `git checkout` 还原。待接线 11 页：privacy 65（templ，接线后须重跑 extract）、all-around-sup 63、fishing-sup 62、whitewater-sup 61 顺位。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 

@@ -154,7 +154,7 @@ for (const p of PAGES) {
 }
 
 fs.mkdirSync(DIR, { recursive: true });
-fs.writeFileSync(OUT, JSON.stringify(manifest, null, 1), 'utf8');
+fs.writeFileSync(OUT, JSON.stringify(manifest, null, 2) + '\n', 'utf8');
 
 console.log('manifest written: ' + OUT);
 console.log('calls scanned: ' + totalCalls + ', unique EN keys: ' + totalKeys);
