@@ -628,6 +628,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：wire dry 1/6/8/0 → patch applied 1 → 复 dry **0/7/8/0**；extract 903 调用/841 键不变（fishing-sup 62 plain）；checker `pages checked: 7, missing: 0, stale: 0 PASS`；generate 7 landing 模块 + route manifest 13,857 routes；check 四合一 exit=0（astro 0 err / eslint 绿 / prettier 全绿 / check:i18n 0 issue 19 既有 warn）；build（4096）13,858 页 3m07s；`_fs-walk.cjs` **21/21 PASS**。待接线 8 页：whitewater-sup 61、touring-sup 54、terms 55（templ）顺位。
 
+#### L52. 分片 62：whitewater-sup 全链（61 键 × 19 locale，plain 页）（2026-10）
+
+① **数据**：19 part（`_ww-<loc>.json`）→ `_merge-whitewater-sup.cjs`（与 `_merge-fishing-sup.cjs` 同构）→ `whitewater-sup.json` 215,897 bytes。**共用键 10 个**（Home、Inflatable SUP Boards、← SUP Product Center、SUP Category、View product →、Custom、Units minimum order、30 Days、Typical lead time、Request OEM Quote）全部逐字符复用 `_fs-shared-values.json`（whitewater 无 "Get a Quote"），无需扩充。validator（`_ww-validate.cjs`）0 hard / 0 soft 一次通过。翻译修正 11 处：de Verlehtsflotten→Verleihflotten + Expeditions-verpackung→Expeditionsverpackung + turbulenterem→turbulentem、ru/ar 后置品牌位改小写 afarer（ru 2 处、ar 4 处，含 "ألواح SUP للمياه البيضاء من afarer" 语序重排）、sv meta 漏词 för（forspaddling→för forspaddling）、tr 键14 语病（→türbülansta şeklini ve sertliğini koruyan）。
+
+② **术语与换算**：whitewater → de Wildwasser-SUP、pt/es SUP de Aguas Bravas/Águas Bravas、it SUP per acque bianche、ja ホワイトウォーターSUP、ko 화이트워터 SUP、ru SUP-доска для бурной воды、pl SUP do białej wody、ar SUP للمياه البيضاء、nl wildwater-SUP、sv/no viltvatten-/viltvann-SUP、da vildtvands-SUP、el SUP για λευκά ύδατα、tr Beyaz Su SUP、fi koski-SUP、cs SUP pro divokou vodu、ro SUP pentru ape albe、th ไม้ SUP ล่องแก่ง（斯堪的纳维亚三语一致，呼应 shard 46 字典 whitewater→vildt vand）。rapids 等级：ko 1-2급 阿拉伯数字、ru I-II категории 罗马数字、pl klasy I-III、nl klasse I-II、tr I-II sınıfı、fi luokan I-II、cs I-III、da klasse I-I、ro grad I-III、th ระดับ I-III。river running → de Flussfahren、es descenso de ríos、it discesa fluviale、ja 川下り、ru сплав по рекам、fi koskenlasku、cs sjíždění řek、da elvløb、th ล่องแก่ง 等。公制换算：8'–10'→2,44-3,05 m、9'–10'→2,74-3,05 m、15–18 PSI→15-18 PSI、15+ PSI→ab/vanaf/от/over/„mehr als" 15 PSI（小数逗号随 locale，ar/ja/ko/th 小数点）。
+
+③ **结构**：h1 = 独立短键 `Whitewater SUP Board`；title = `Whitewater SUP Board | River-Running Inflatable Paddle Board | Afarer`；title/meta/og:title 整键精确渲染无 ui 覆盖（同 all-around/fishing）；FAQ 无 summary 结构用 q1 includes；EN 页无锚点 id 跳过锚点断言；walk 沿用 `&#39;` 归一化 + fr 期望块 manifest frEntry 派生（`_ww-walk.cjs`，模板 `_fs-walk.cjs`）——EN 残留 needle 用 River Runners persona / Features h2 / h1。品牌大小写惯例沿 shard 60/61：主语位 Afarer 大写（ja/fi 小写）、后置位小写 afarer（ru/ar/nl/sv/pl/el）、de 前缀位大写、th 主语位大写。
+
+④ **回归数字**：wire patch applied 1（already 7）→ 复 dry **0/8/7/0**；checker `pages checked: 8, missing: 0, stale: 0 PASS`；generate 8 landing 模块 + route manifest 13,857 routes；check 四合一 exit=0（astro 0 err / eslint 绿 / prettier 全绿 / check:i18n 0 issue 19 既有 warn）；build（4096）13,858 页 3m11s；`_ww-walk.cjs` **21/21 PASS**。待接线 7 页：touring-sup 54、terms 55（templ）、whitepaper 52（templ）、sup-accessories 49、inflatable-sup 48、disclaimer 39（templ）、afarer-story 6。
+
 ---
 
 
