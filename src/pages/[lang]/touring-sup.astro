@@ -5,13 +5,15 @@ import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 import { languages } from '~/i18n/config';
 import { localizeHref } from '~/i18n/routing';
+import { landingI18n as __landing } from '~/i18n/generated/landing/touring-sup';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
-const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+const __lt = __landing[lang || ''] || {};
+const fr = (en: string, francais: string) => __lt[en] || (lang === 'fr' ? francais : en);
 
 const metadata = {
   title: fr(

@@ -638,6 +638,18 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：wire patch applied 1（already 7）→ 复 dry **0/8/7/0**；checker `pages checked: 8, missing: 0, stale: 0 PASS`；generate 8 landing 模块 + route manifest 13,857 routes；check 四合一 exit=0（astro 0 err / eslint 绿 / prettier 全绿 / check:i18n 0 issue 19 既有 warn）；build（4096）13,858 页 3m11s；`_ww-walk.cjs` **21/21 PASS**。待接线 7 页：touring-sup 54、terms 55（templ）、whitepaper 52（templ）、sup-accessories 49、inflatable-sup 48、disclaimer 39（templ）、afarer-story 6。
 
+#### L53. 分片 63：touring-sup 全链（54 键 × 19 locale，plain 页）、validator 软扫描词表教训（2026-10）
+
+① **数据**：19 part（`_tu-<loc>.json`）→ `_merge-touring-sup.cjs`（与 `_merge-whitewater-sup.cjs` 同构）→ `touring-sup.json` 206,025 bytes。**共用键 10 个**（Home、Inflatable SUP Boards、← SUP Product Center、SUP Category、View product →、Custom、Units minimum order、30 Days、Typical lead time、Request OEM Quote，同 whitewater 无 "Get a Quote"）全部逐字符复用 `_fs-shared-values.json`。validator（`_tu-validate.cjs`）0 hard / 0 soft 一次过。**码位陷阱**：touring 键英尺符号 = U+0027 直引号（whitewater 为 U+2019 弯引号），4 键含 ' —— 提取器须按页实测码位，不可沿用上一 shard 假设。
+
+② **validator 教训（软扫描词表）**：临时把 board|boards|each|stroke|count 加进 EN 残留正则 → 25 条假阳性（de "SUP-Board"、nl "SUP-boards" 为既有合法借词，shard 60-62 同用法）——**残留词表勿扩至借词领域**，回退 shard 62 词表后 0/0。
+
+③ **术语与换算**：touring → de Touren-SUP、pt SUP de Turismo、es SUP de Travesía、it SUP da Touring（拉丁借用）、ja ツーリングSUP、ko 투어링 SUP、ru туристический SUP、pl SUP turystyczny、ar SUP للرحلات、nl tour-SUP、sv/no/da tur-SUP、el SUP Touring（拉丁借用，问号希腊 ；）、tr Tur SUP、fi retki-SUP、cs SUP pro dlouhé výpravy（沿 whitewater "pro divokou vodu" 句式）、ro SUP pentru turism、th SUP ทัวริ่ง/ไม้ SUP ทัวริ่ง。displacement bow → de Verdrängerbug、pt bico de deslocamento、es proa de desplazamiento、it prua a dislocamento、ja ディスプレイスメントバウ、ru водоизмещающий нос、pl dziób wypornościowy、nl verdrangerboeg、sv/no/da deplacerande bog/stævn、fi siirtymäkeula、cs vytlaková příď、ro provă de deplasare、th หัวเรือแหลมแบบดิสเพลสเมนต์；tracking → de Spurtreue、it tenuta di rotta、ru курсовая устойчивость、nl koersvastheid、sv/no/da kursstabilitet、fi suuntapysyvyys、cs držení směru、ro menținerea direcției、th การคงทิศทาง。title 带 OEM 后缀（同 fishing 模式）：`Touring SUP Board | Long-Distance Inflatable Paddle Board | Afarer OEM Manufacturer`，19 locale 后缀译法沿 _fs-*.json title 对照。公制换算：12'–14'→3,66-4,27 m、12'→3,66 m、14'→4,27 m、5–15 miles→8-24 km（小数逗号随 locale，ar/ja/ko/th 小数点）。
+
+④ **结构**：h1 = 独立短键 `Touring SUP Board`；title/meta/og:title 整键精确渲染无 ui 覆盖（同 all-around/fishing/whitewater）；**无 "Features" h2**（Why Choose 节为 h3 特性卡）→ walk h2 检查改 Why Choose / Best Touring SUP Products / Who / FAQ 四断言，EN 残留 needle 用 Distance Paddlers persona / Best Products h2 / h1（`_tu-walk.cjs`，模板 `_ww-walk.cjs`）；`&#39;` 归一化 + fr 期望块 manifest frEntry 派生沿用。品牌大小写惯例沿 shard 60-62：主语位 Afarer 大写（ja/fi 小写 afarer）、后置位小写 afarer（ru/pl/nl/sv/no/da/cs/el/tr/ro/ar）、pt/es/it 后置位大写 Afarer、de 前缀位大写、th 主语位大写。
+
+⑤ **回归数字**：wire patch applied 1（already 8）→ 复 dry **0/9/6/0**；checker `pages checked: 9, missing: 0, stale: 0 PASS`；generate 9 landing 模块 + route manifest 13,857 routes；check 四合一 exit=0（astro 0 err / eslint 绿 / prettier 全绿 / check:i18n 0 issue 19 既有 warn）；build（4096）13,858 页 3m16s；`_tu-walk.cjs` **21/21 PASS**。待接线 6 页：terms 55（templ）、whitepaper 52（templ）、sup-accessories 49、inflatable-sup 48、disclaimer 39（templ）、afarer-story 6。
+
 ---
 
 
