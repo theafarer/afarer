@@ -652,6 +652,18 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+#### L54. 分片 64：terms 全链（55 键 × 19 locale，templ 页转 plain）、法律页族品牌小写惯例（2026-10）
+
+① **数据**：19 part（`_te-<loc>.json`）→ `_merge-terms.cjs`（templ 映射版，沿 shard 59 privacy 模式：merger 对 manifest templ 键做 `en.replace(/ \$\{SITE\.name\}$/, '')` 确定性映射）→ `terms.json` 161,018 bytes。**55 键 = 1 templ（idx0 标题前缀）+ 54 plain；其中 19 个 privacy 共用键逐字符复用**（含尾随空格键 `refers to Afarer, accessible from ` 与 `afarer.com` 值=键），36 新译。validator（`_te-validate.cjs`，含 afarer.com 白名单）0 hard / 0 soft。顺序 = merge → wire --patch → 重跑 extract（terms 55 键全变 plain，manifest 剩 2 templ = whitepaper/disclaimer）→ checker → `node scripts/_gen-landing-i18n.cjs`（10 模块）。
+
+② **品牌大小写（法律页族例外）**：terms 值内品牌**全部 19 locale 统一小写 afarer**（沿 privacy.json 实测惯例：de "von afarer"、pt "da afarer" 等；与产品页"主语位大写"惯例不同）；title 的大写 "Afarer" 由模板 ` ${SITE.name}` 追加。T&C 译名：de Allgemeine Geschäftsbedingungen、pt Termos e Condições、es Términos y Condiciones、it Termini e Condizioni、ja 利用規約、ko 이용약관、ru Условия и Положения、pl Regulamin、ar الشروط والأحكام、nl Algemene voorwaarden、sv Användarvillkor、no Vilkår og betingelser、el Όροι χρήσης、tr Kullanım Koşulları、fi Käyttöehdot、cs Podmínky použití、da Vilkår og Betingelser、ro Termeni și Condiții、th ข้อกำหนดและเงื่อนไข。标题键 = `{T&C 译名} {dash}`（无尾随空格；sv/da/no `–`、ja/ko `―`、其余 `—`）。"AS IS"/"AS AVAILABLE" 引号按 locale：de „…"（大写 WIE BESEHEN/WIE VERFÜGBAR）、ru/tr/no/el/ar «…»、pl/cs/ro „…"、sv ”…”、ja 「」、ko/nl/fi/da/th/pt/es/it 直引号。日期键沿 privacy 实测格式（pl 带 "r."、fi "Päivitetty viimeksi: 6. tammikuuta 2023"、ru 带 "г."、ja 无空格冒号「最終更新日：」）。
+
+③ **结构**：h1 = `Terms and Conditions` 整键；title/og:title = 前缀键 + ` Afarer` 后缀（suffix 程序化取自 en 页 `<title>`）；meta desc 整键精确渲染无 ui 覆盖（en 精确断言、非 en 断言非 EN 残留）。walk（`_te-walk.cjs`）：EN 锚点 id ×5（interpretation-and-definitions/acknowledgment/as-is-and-as-available-disclaimer/governing-law/contact-us）+ Last updated 译文 includes + h2 按 id 锚定 ×4（Acknowledgment/Termination/Governing Law/Contact Us）+ EN 残留 needle（EN h1/EN Last updated/EN desc）+ `&#39;` 归一化 + fr 期望块 manifest frEntry 派生 + ja CJK 豁免。ro 性别一致：混合性别取阴性（"prezentelor Termeni și Condiții"）。
+
+④ **回归数字**：wire patch applied 1（already 9）→ 复 dry **0/10/5/0**；checker `pages checked: 10, missing: 0, stale: 0 PASS`；generate 10 landing 模块；check 四合一 exit=0（astro 0 err 175 既有 hint / eslint 绿 / prettier 全绿 / check:i18n 0 issue 19 既有 warn）；build（4096）13,858 页 8m17s；`_te-walk.cjs` **21/21 PASS**。待接线 5 页：whitepaper 52（templ）、sup-accessories 49、inflatable-sup 48、disclaimer 39（templ）、afarer-story 6。挂账：privacy da meta desc "afafers" 拼写错误待单独修复。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 
