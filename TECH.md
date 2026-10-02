@@ -608,6 +608,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：wire dry 1/4/11/0 → patch applied 1 → 复 dry **0/5/10/0**；extract 903 调用/841 键不变（privacy 65 plain）；checker `pages checked: 5, missing: 0, stale: 0 PASS`；astro check 0 err / eslint 绿 / prettier 全绿 / check:i18n 0 issue 19 既有 warn；build 13,858 页；`_pv-walk.cjs` 21/21 PASS（title = 前缀 + "Afarer"、og:title、EN 锚点 id、Contact Us 译文 h2、EN 残留、CJK 白名单）。待接线 10 页：all-around-sup 63、fishing-sup 62、whitewater-sup 61、terms 55（templ）顺位。
 
+#### L50. 分片 60：all-around-sup 全链（63 键 × 19 locale，plain 页）、walk `&#39;` 实体归一化（2026-10）
+
+① **数据**：19 part（`_as-<loc>.json`）→ `_merge-all-around-sup.cjs`（plain 版，与 `_merge-kids-sup.cjs` 同构）→ `all-around-sup.json` 238,092 bytes。9 个共用键（Home、Inflatable SUP Boards、← SUP Product Center、Request OEM Quote 等）从 `_as-shared-values.json` 逐字符复用，validator（`_as-validate.cjs`）双层校验：硬 = 键数/键集/非空/共用键全等，软 = EN 残留词扫描（the|and|with|your|from|our 等，白名单 it/nl "Home" 值=键合法）→ 0 hard 0 soft。翻译修正：ru 3 处（performance→отличные ходовые качества、weekend→выходные、оллраунддер→оллраундер）、fi 7 处（vakan→vakauden、retki-SUP→retkeily-SUP、väritystämistä→värien sovittamista、vaatimustentäytäntöönpano→vaatimustenmukaisuus ×2、ensimmäisen kerran aikana→ensimmäisellä kerrallaan、joellamiseen→joenlaskuihin、väritetyllä→värisävyltään sovitetulla）、cs 5 处（4 处 `—`→`–` + pro dostatečné vztlaku→dostatečný vztlak）。
+
+② **页面结构与断言**：h1 = 独立短键 `All-Around SUP Board`（同 kids/yoga 陷阱，长键非 h1，须 `<h1>` 标签内含断言）；title/meta/og:title = 整键精确渲染，**无 ui metaDesc 覆盖**（与 privacy 相反，可精确等值断言而非"非 EN 残留"）；EN 页 h2/h3 无锚点 id → 跳过锚点断言；FAQ 非 details/summary 结构（无 `<summary>`）→ 用 q1 includes 断言。th 保留 "all-around" 术语（SUP All-Around / ไม้ SUP All-Around）；da=allround、ro=polivalent。
+
+③ **walk 新教训（`&#39;` 实体）**：Astro 文本节点把 `'` 渲染为 `&#39;`（属性值保字面量）——首跑 nl/tr/da h2（SUP&#39;s / SUP&#39;ların / SUP&#39;er）与 it FAQ q1（Cos&#39;è）4 页挂；walk 须先 `html.replace(/&#39;/g, "'")` 归一化再断言。归一化对属性值断言无害（属性内 `'` 本为字面量，不受影响）。
+
+④ **回归数字**：wire dry 1/5/10/0 → patch applied 1 → 复 dry **0/6/9/0**；extract 903 调用/841 键不变（all-around-sup 63 plain）；checker `pages checked: 6, missing: 0, stale: 0 PASS`；generate 6 landing 模块 + route manifest 13,857 routes；astro check（6144）0 err 0 warn 175 既有 hint / eslint 绿 / prettier 全绿 / check:i18n passed（19 条 factory-oem-capability 既有 warn）；build（4096）13,858 页 4m58s，无 llms-full.txt 漂移；`_as-walk.cjs` **21/21 PASS**。待接线 9 页：fishing-sup 62、whitewater-sup 61、touring-sup 54、terms 55（templ）顺位。
+
 ---
 
 
