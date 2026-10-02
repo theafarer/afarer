@@ -618,6 +618,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：wire dry 1/5/10/0 → patch applied 1 → 复 dry **0/6/9/0**；extract 903 调用/841 键不变（all-around-sup 63 plain）；checker `pages checked: 6, missing: 0, stale: 0 PASS`；generate 6 landing 模块 + route manifest 13,857 routes；astro check（6144）0 err 0 warn 175 既有 hint / eslint 绿 / prettier 全绿 / check:i18n passed（19 条 factory-oem-capability 既有 warn）；build（4096）13,858 页 4m58s，无 llms-full.txt 漂移；`_as-walk.cjs` **21/21 PASS**。待接线 9 页：fishing-sup 62、whitewater-sup 61、touring-sup 54、terms 55（templ）顺位。
 
+#### L51. 分片 61：fishing-sup 全链（62 键 × 19 locale，plain 页）、fr 期望值 manifest 派生（2026-10）
+
+① **数据**：19 part（`_fs-<loc>.json`）→ `_merge-fishing-sup.cjs`（与 `_merge-all-around-sup.cjs` 同构）→ `fishing-sup.json` 213,904 bytes。**共用键 11 个**（Home、Inflatable SUP Boards、← SUP Product Center、SUP Category、Custom、Units minimum order、30 Days、Typical lead time、Request OEM Quote、Get a Quote、View product →）：前 9 个逐字符复用 `_as-shared-values.json`；"Get a Quote" 从 shard 60 part 文件提取、"View product →" 从已提交 yoga-sup.json 提取，合成 `_fs-shared-values.json`（`_fs-shared-build.cjs`）。validator 0 hard / 0 soft。翻译修正 8 处：de Farbaboestimmung→Farbabstimmung、pt FAQ2 键体混入译文（键必须纯 EN）、it le→gli elastici、ja 収纳(中文)→収納、ru лищ→лиш + standing(EN 残)→стоя、pl nąs→nami、ar many(EN 残)→كثير من、cs Silent Approach 键体混入捷克语 + 值内 Ultimate(EN 残)→Dokonalá、fi Kevytvaraiset(错词)→Kestävät + tilaavat→mahdollistavat、da synsfordel→bedre udsyn、no Tilpassbar→Tilpassbart(中性)、ro un vestă→o vestă、nl 生硬问句改自然表达、sv 四处拼写（däckyta/älvar/guidetjänster/Driv）。
+
+② **结构**：h1 = 独立短键 `Fishing SUP Board`；title/meta/og:title = 整键精确渲染无 ui 覆盖（同 all-around）；FAQ 无 summary 结构用 q1 includes；EN 页无锚点 id 跳过锚点断言。公制换算：34″+→86 cm+、34″–36″→86-91 cm、4–6 inches→10-15 cm（小数点/千分位随 locale）。
+
+③ **walk 教训（fr 期望值）**：首跑前 sanity check 拦截——手写 fr title 与 manifest 不符（manifest 为 "Planche de Paddle Pêche | Paddle Gonflable Pêche | Fabricant OEM afarer"）。**walk 的 fr 期望块必须从 manifest `frEntry` 派生而非手写**（shard 60 线上抽查同因：期望值一律取数据源）。归一化 `&#39;`→`'` 沿用 shard 60。
+
+④ **回归数字**：wire dry 1/6/8/0 → patch applied 1 → 复 dry **0/7/8/0**；extract 903 调用/841 键不变（fishing-sup 62 plain）；checker `pages checked: 7, missing: 0, stale: 0 PASS`；generate 7 landing 模块 + route manifest 13,857 routes；check 四合一 exit=0（astro 0 err / eslint 绿 / prettier 全绿 / check:i18n 0 issue 19 既有 warn）；build（4096）13,858 页 3m07s；`_fs-walk.cjs` **21/21 PASS**。待接线 8 页：whitewater-sup 61、touring-sup 54、terms 55（templ）顺位。
+
 ---
 
 
