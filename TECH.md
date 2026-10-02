@@ -598,6 +598,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ⑤ **回归数字**：wire dry 2/2/11/0 → patch applied 2 → 复 dry **0/4/11/0**；checker `pages checked: 4, missing: 0, stale: 0 PASS`；astro check 0 err 0 warn 175 hint / eslint 绿 / prettier 全绿 / check:i18n 0 issue 19 既有 warn；build 13,858 页；llms-full.txt 构建漂移照例 `git checkout` 还原。待接线 11 页：privacy 65（templ，接线后须重跑 extract）、all-around-sup 63、fishing-sup 62、whitewater-sup 61 顺位。
 
+#### L49. 分片 59：privacy 全链（65 键 × 19 locale，首个 templ 页）、templ 键映射排序、metaDesc 优先链（2026-10）
+
+① **templ 页流程立序（解决循环依赖）**：privacy idx0 为 templ `` fr(`Privacy Policy — ${SITE.name}`, `…`) ``——wire 需数据文件存在、merger 校验需 manifest 键、而 manifest 键在接线后才变 post-wiring 形态。解法 = 数据文件直接用 post-wiring 键（`Privacy Policy —`，剥 ` ${SITE.name}` 后缀），merger 对 manifest templ 键做确定性映射（`shape==='templ' ? en.replace(/ \$\{SITE\.name\}$/, '') : en`）后与数据键集比对，顺序 = merge → wire --patch（applied 1）→ 重跑 extract（privacy templ → plain，manifest 剩 3 templ：terms/whitepaper/disclaimer）→ checker PASS。
+
+② **数据**：19 part（`_pv-<loc>.json`）→ `_merge-privacy.cjs`（yoga 合并器 + templ 映射）→ `privacy.json` 204,193 bytes。标题键 = 译文前缀 + locale dash（de „…"、el/tr «…»、cs/ro „…"、sv ”…“ 引号惯例；cs/sv/da `–`、ja/ko `―` 带空格、其余 `—`），渲染 `${前缀} Afarer`；K31 尾随空格保留、K32 `afarer.com` 不变；地址 21 locale 全译（fi/cs/da contact 页 EN 残留挂账不影响 privacy 正常翻译）。
+
+③ **walk 教训**：meta 描述实际取 ui `privacy.metaDesc` 优先于 fr() 后备——断言改"非 EN 残留"而非精确串；ja 页合法含汉字（日文汉字），CJK 残留检查须豁免 ja；语言切换器 endonym（日本語）是全站既有内容非中文残留，须白名单剥离后再查。
+
+④ **回归数字**：wire dry 1/4/11/0 → patch applied 1 → 复 dry **0/5/10/0**；extract 903 调用/841 键不变（privacy 65 plain）；checker `pages checked: 5, missing: 0, stale: 0 PASS`；astro check 0 err / eslint 绿 / prettier 全绿 / check:i18n 0 issue 19 既有 warn；build 13,858 页；`_pv-walk.cjs` 21/21 PASS（title = 前缀 + "Afarer"、og:title、EN 锚点 id、Contact Us 译文 h2、EN 残留、CJK 白名单）。待接线 10 页：all-around-sup 63、fishing-sup 62、whitewater-sup 61、terms 55（templ）顺位。
+
 ---
 
 
