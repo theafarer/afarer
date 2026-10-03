@@ -686,6 +686,18 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+#### L57. 分片 67：inflatable-sup 全链（48 键 × 19 locale，plain 页）、localizeHref 回退定界（2026-10）
+
+① **数据**：19 part（`_is-<loc>.json`）→ `_is-merge.cjs`（归档 `_merge-inflatable-sup.cjs`）→ `inflatable-sup.json` 190,130 bytes。48 键全 plain（idx0 title 整串含 `| Afarer`——`ignoreTitleTemplate: true` 同 shard 66，无后缀拼接）。validator（`_is-validate.cjs`）0 hard / 0 soft。5 共用键（Home、Inflatable SUP Boards、← Home、SUP Product Center、Contact Us）逐字符复用 `_is-shared-values.json`——**no part 首跑 sharedMismatch 1 处**：`Inflatable SUP Boards` 误写 "Oppblåsbare SUP-brett"，shared-values 权威值为 "Oppblåsbare SUP-bretter"（跨页一致优先于本页措辞）；2 组 dup pair（`5-10`/`5–10 years`、`12-15`/`12–15 PSI`）各 locale 同值。
+
+② **术语**：drop-stitch 借词——Latin script locale 保留 "drop-stitch"（ja ドロップスティッチ、ko 드롭스티치、ru/th 混用语境保留英文）；military-grade PVC：de "PVC in Militärqualität"、pt "PVC de grau militar"、sv "militärkvalitets-PVC"、fi "armeijaluokan PVC"、th "PVC ระดับทหาร" 等；公制换算 18–22 lbs→8-10 kg 全 19 locale（数字范围保留 EN 连字符）；"Browse All Products" 无既有先例，按各 locale 新译；品牌大小写惯例沿 shard 60-66（title `| Afarer` 全大写、meta desc 后置小写、ja/fi/ko/tr 句首小写）。
+
+③ **walk（`_is-walk.cjs`）**：**back link `localizeHref('/', lang)` 渲染为 `href="/"`（根路径不本地化）**——区别于 shard 66 back link 指 `/{loc}/inflatable-sup/`；**资源卡 res2/res3 链接 `/research/sup-thickness-guide`、`/research/ce-certification-guide` 路由不存在 → localizeHref 回退为未本地化 `href="/research/..."`**，而 res1 `/compare/inflatable-vs-hardboard` 路由存在则正常本地化 `/{loc}/compare/...`——walk 断言用 `(loc/)?` 可选前缀兼容两种形态；FAQ 可见区 a3/a4 使用 en-dash dup 键（idx43/44），hyphen 键与 breadcrumb 键属 JsonLd data-prop 死调用不可断言（沿 L56③）；三步归一化（`&quot;`/`&#39;`/`&amp;`）沿用；fr 期望块从 `_is-keys.json` 派生；ja CJK 豁免。
+
+④ **回归数字**：wire applied 1（already 12）→ 复 dry **0/13/2/0**；checker `pages checked: 13, missing: 0, stale: 0 PASS`；generate 13 landing 模块；check exit=0（仅既有 ts 警告 + i18n 19 条既有 factory-oem-capability warnings）；build **须 `NODE_OPTIONS=--max-old-space-size=4096`——首跑无该变量 2GB 堆 OOM**，13,858 页 4m41s；`_is-walk.cjs` **21/21 PASS**。待接线 2 页：disclaimer 39（templ）、afarer-story 6。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 
