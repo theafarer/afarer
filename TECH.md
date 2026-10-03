@@ -674,6 +674,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：wire patch applied 1（already 10）→ 复 dry **0/11/4/0**；checker `pages checked: 11, missing: 0, stale: 0 PASS`；generate 11 landing 模块；check 四合一 exit=0；build（4096）13,858 页 5m43s；`_wp-walk.cjs` **21/21 PASS**。待接线 4 页：sup-accessories 49、inflatable-sup 48、disclaimer 39（templ）、afarer-story 6。
 
+#### L56. 分片 66：sup-accessories 全链（49 键 × 19 locale，plain 页）、`&amp;` 归一化第三步与 JsonLd 死调用定界（2026-10）
+
+① **数据**：19 part（`_sa-<loc>.json`）→ `_sa-merge.cjs` → `sup-accessories.json` 172,059 bytes。49 键全 plain（idx0 title 尾随 `| Afarer` 整串——本页 metadata `ignoreTitleTemplate: true`，title 键整串即 `<title>`，非 templ、无后缀拼接）。validator（`_sa-validate.cjs`）0 hard / 0 soft。4 共用键逐字符复用 `_sa-shared-values.json`（Home、Inflatable SUP Boards、← SUP Product Center、Get a Quote——cs/da/ro/th 值提取自既有已译数据）；2 组 dup pair（hyphen vs en-dash FAQ 答案键 `2-3`/`2–3 minutes`、`6-10`/`6–10 inches`）各 locale 同值。顺序 = merge → wire --patch（默认 apply）→ checker → generate（12 模块）→ check → build。
+
+② **术语**：leash 借词 12 locale（de/es/it/pt/nl/sv/no/da/ro/el/tr/cs/pl）、ja リーシュコード、ko 리시 코드、ru лиш、fi leash-naru、th สายคล้องข้อเท้า leash；life vest：cs záchranná vesta、da redningsvest、ro vestă de salvare、th เสื้อชูชีพ；PFD/USCG/SOLAS/CE/OEM/ODM 保留缩写（da `Redningsvester & PFD'er`、th `เสื้อชูชีพ & PFD`）；公制换算 6-10 inches→15-25 cm、6-foot→183 cm（部分 locale 1,83 m）、76-78 inch→193-198 cm，数字范围保留 EN 连字符；"Paddles & Oars" paddle 主词、oars 备用桨义（cs Pádla & vesla、da Padleårer & reserveårer、ro Vâsle & vâsle de rezervă、th ใบพาย & ใบพายสำรอง）；title 键品牌全大写 Afarer（19 locale）、meta desc 后置小写 afarer（de 前缀位大写例外）、正文句首大写 Afarer（ja/fi/ko/tr 句首小写 afarer；th 句首大写）；dash sv/da/no `–`、ja/ko `―` 带空格、其余 `—`。
+
+③ **walk（`_sa-walk.cjs`）**：title/og:title 整键精确断言（ignoreTitleTemplate，无后缀拼接，区别于 wp 的 prefix+suffix）；**归一化须加第三步 `&amp;`→`&`**——属性值与文本节点 `&` 均转义（og:title `Leashes &amp; Vests`、h3 `Life Vests &amp; PFDs`），wp 只有 `&quot;`/`&#39;` 两步；back link / Shop vests → / Shop pumps → / 双 CTA 用 href+text 复合正则（`href="/${loc}/products/life-vest-classic"[^>]*>\s*…</a>`、CTA `>\s*…\s*<span>→</span>`）；**FAQ 可见区使用 en-dash dup 键（idx44/45），hyphen 键与 breadcrumb 键（Home/Inflatable SUP Boards）仅存于不渲染的 JsonLd data-prop 死调用，不可断言**（L46④ 挂账的实证定界）；fr 期望块从 `_sa-keys.json` 派生；ja CJK 豁免。
+
+④ **回归数字**：wire patch applied 1（already 11）→ 复 dry **0/12/3/0**；checker `pages checked: 12, missing: 0, stale: 0 PASS`；generate 12 landing 模块；check exit=0（仅既有 ts 警告）；build（4096）13,858 页 5m24s；`_sa-walk.cjs` **21/21 PASS**。待接线 3 页：inflatable-sup 48、disclaimer 39（templ）、afarer-story 6。挂账：da part 拼写瑕疵（Fuldendt→应为 Fuldfør、reperationsæt→reparationsæt）validator 不拦，待质量修。
+
 ---
 
 
