@@ -5,6 +5,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { landingI18n as __landing } from '~/i18n/generated/landing/whitepaper-oem-sup-manufacturing-guide';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -12,13 +13,11 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
-const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+const __lt = __landing[lang || ''] || {};
+const fr = (en: string, francais: string) => __lt[en] || (lang === 'fr' ? francais : en);
 
 const metadata = {
-  title: fr(
-    `OEM SUP Manufacturing Guide — Free White Paper | ${SITE.name}`,
-    `Guide de Fabrication SUP OEM — Livre Blanc Gratuit | ${SITE.name}`
-  ),
+  title: `${fr('OEM SUP Manufacturing Guide — Free White Paper |', 'Guide de Fabrication SUP OEM — Livre Blanc Gratuit |')} ${SITE.name}`,
   description: fr(
     'Download our comprehensive white paper on OEM/ODM inflatable SUP manufacturing. Covers mold design, material selection, quality control, logistics, and cost optimization.',
     'Téléchargez notre livre blanc complet sur la fabrication de SUP gonflables OEM/ODM. Couvre la conception de moules, le choix des matériaux, le contrôle qualité, la logistique et l’optimisation des coûts.'

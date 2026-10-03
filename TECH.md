@@ -664,6 +664,18 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+#### L55. 分片 65：whitepaper 全链（52 键 × 19 locale，templ 页转 plain）、White Paper 译名与表单页 walk 惯例（2026-10）
+
+① **数据**：19 part（`_wp-<loc>.json`）→ `_merge-whitepaper.cjs`（templ 映射版沿 shard 64）→ `whitepaper-oem-sup-manufacturing-guide.json` 133,414 bytes。**数据文件名 = wire pageKey（`/`→`-`），误写 `whitepaper.json` 时 wire applied 0（引擎按 `<pageKey>.json` 探测）**。52 键 = 1 templ（idx0 标题前缀，尾随 " |"）+ 51 plain。validator（`_wp-validate.cjs`，无共用键）0 hard / 0 soft。**wire TEMPL_RE 只匹配单行 templ 调用——本页 title fr() 为多行格式，wire applied 后 templ 仍在、checker 报 MISSING/stale；须手工改为 `` `${fr('… |', '… |')} ${SITE.name}` `` 再重跑 extract**。顺序 = merge → wire --patch → 手工修 templ 调用点 → 重跑 extract（manifest 仅剩 1 templ = disclaimer）→ checker → `node scripts/_gen-landing-i18n.cjs`（11 模块）。
+
+② **White Paper 译名**：de Whitepaper、es Libro Blanco、ja ホワイトペーパー、ko 화이트페이퍼、ar ورقة بيضاء、th 保留大写 "White Paper" 借词；**其余 13 locale（pt/it/ru/pl/nl/sv/no/el/tr/fi/cs/da/ro）统一保留大写 "White Paper" 借词**（it/pt 不译 Libro Bianco/Livro Branco）。章节键：Kapitel/Capítulo/Capítulo/Capitolo/第N章/제N장/Глава/Rozdział/الفصل/Hoofdstuk/Kapitel/Kapittel/Κεφάλαιο/Bölüm/Luku/Kapitola/Kapitel/Capitolul/บทที่ N；desc 开头冒号附着 ": "（ja 全角 "：" 无空格）。货币 $12,000 → de/it/el/tr/nl/da/ro 12.000 $、pt/es/ru/pl/sv/no/fi/cs 12 000 $、ja 12,000ドル、ko 12,000달러、ar 12,000 دولار、th 12,000 ดอลลาร์。署名国家：US→USA/EUA/EE. UU./米国/미국/США/الولايات المتحدة/VS/ΗΠΑ/ABD/สหรัฐอเมริกา 等、EU→UE/ЕС/الاتحاد الأوروبي/ΕΕ/AB/สหภาพยุโรป 等、UK→VK/Storbritannien(VK)/Storbritannia/英国/영국/Великобритания/Wielka Brytania/المملكة المتحدة/Ηνωμένο Βασίλειο/İngiltere/Iso-Britannia/Velká Británie/Marea Britanie/สหราชอาณาจักร（详见 `_wp-*.json`）。testimonial 引号沿 terms 实测惯例（de/cs „…“ U+201E…U+201C、pl/ro „…” U+201E…U+201D、ru/tr/no/el/ar «…»、sv ”…” U+201D 两侧、ja 「」、其余直引号）；it/tr 直撇号；th 无尾点；dash sv/da/no `–`、ja/ko `―`、其余 `—`。品牌主语位大写 Afarer（ja/fi 小写 afarer）。
+
+③ **walk（`_wp-walk.cjs`）**：title/og:title = 前缀键 + ` Afarer` 后缀（suffix 程序化取自 en 页）；**文本节点直引号 `"` 渲染为 `&quot;`——归一化须同时做 `&quot;`→`"` + `&#39;`→`'`**（terms 只有后者）；badge `<span>` 标签锚定；章条目 `<strong>章名</strong>desc` 邻接 includes（dist 实测无空白）；表单 placeholder 与 hidden subject/message 用属性值字面断言（`placeholder="…"`、`name="subject" value="…"`，属性值不转义撇号）；meta desc 21 locale 全部精确断言（本页无 ui 覆盖）；fr 期望块 manifest frEntry 派生；ja CJK 豁免。
+
+④ **回归数字**：wire patch applied 1（already 10）→ 复 dry **0/11/4/0**；checker `pages checked: 11, missing: 0, stale: 0 PASS`；generate 11 landing 模块；check 四合一 exit=0；build（4096）13,858 页 5m43s；`_wp-walk.cjs` **21/21 PASS**。待接线 4 页：sup-accessories 49、inflatable-sup 48、disclaimer 39（templ）、afarer-story 6。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 
