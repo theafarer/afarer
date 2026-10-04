@@ -43,7 +43,15 @@ const PL_RULES = [
 const TARGETS = [
   { file: 'all-around-sup.json', locale: 'pl', rules: PL_RULES, residue: /inflatable/i },
   { file: 'marine-industry.json', locale: 'pl', rules: PL_RULES, residue: /inflatable/i },
-  { file: 'sup-accessories.json', locale: 'da', rules: [['oppustelige brædder', 'oppustelige brætter'], ['brædder', 'brætter']], residue: /brædder/i },
+  {
+    file: 'sup-accessories.json',
+    locale: 'da',
+    rules: [
+      ['oppustelige brædder', 'oppustelige brætter'],
+      ['brædder', 'brætter'],
+    ],
+    residue: /brædder/i,
+  },
 ];
 
 let totalChanges = 0;

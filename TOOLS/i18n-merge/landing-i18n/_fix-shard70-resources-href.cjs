@@ -18,7 +18,9 @@ const BARE = /(\s*href:\s+)\/resources(\s*)$/;
 let files = 0;
 let lines = 0;
 for (const entry of fs.readdirSync(PAGES, { withFileTypes: true })) {
-  const f = entry.isFile() ? path.join(PAGES, 'brand-why-afarer.yaml') : path.join(PAGES, entry.name, 'brand-why-afarer.yaml');
+  const f = entry.isFile()
+    ? path.join(PAGES, 'brand-why-afarer.yaml')
+    : path.join(PAGES, entry.name, 'brand-why-afarer.yaml');
   if (!fs.existsSync(f)) continue;
   const raw = fs.readFileSync(f, 'utf8');
   const out = raw.split('\n').map((l) => {
