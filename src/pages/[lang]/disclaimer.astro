@@ -5,6 +5,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { landingI18n as __landing } from '~/i18n/generated/landing/disclaimer';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -12,10 +13,11 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
-const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+const __lt = __landing[lang || ''] || {};
+const fr = (en: string, francais: string) => __lt[en] || (lang === 'fr' ? francais : en);
 
 const metadata = {
-  title: fr(`Medical Disclaimer — ${SITE.name}`, `Avertissement médical — ${SITE.name}`),
+  title: `${fr('Medical Disclaimer —', 'Avertissement médical —')} ${SITE.name}`,
   description: fr(
     'Medical disclaimer for Afarer products and services. Information for informational and educational purposes only.',
     'Avertissement médical pour les produits et services afarer. Informations fournies à des fins purement informatives et éducatives.'

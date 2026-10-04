@@ -696,6 +696,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：wire applied 1（already 12）→ 复 dry **0/13/2/0**；checker `pages checked: 13, missing: 0, stale: 0 PASS`；generate 13 landing 模块；check exit=0（仅既有 ts 警告 + i18n 19 条既有 factory-oem-capability warnings）；build **须 `NODE_OPTIONS=--max-old-space-size=4096`——首跑无该变量 2GB 堆 OOM**，13,858 页 4m41s；`_is-walk.cjs` **21/21 PASS**。待接线 2 页：disclaimer 39（templ）、afarer-story 6。
 
+#### L58. 分片 68：disclaimer 全链（39 键 × 19 locale，templ 页转 plain）、屈折语 Privacy Policy 句中链接的引号文档名方案（2026-10）
+
+① **数据**：19 part（`_di-<loc>.json`）→ `_merge-disclaimer.cjs`（归档）→ `disclaimer.json` 130,759 bytes。39 键 = 1 templ（idx0 标题前缀 `Medical Disclaimer —`，merger 对 manifest templ 键做 `en.replace(/ \$\{SITE\.name\}$/, '')` 确定性映射沿 shard 64/65）+ 38 plain；**3 共用键逐字符复用 `_di-shared-values.json`**：`Limitation of Liability`/`Privacy Policy`（源 privacy.json）+ `Economic Development Zone, Laixi, Qingdao, China, 266600`（源 terms.json）。validator（`_di-validate.cjs`，硬校验键数/键集/非空/shared + 软扫描 EN 残留词表）**0 hard / 0 soft**。39 键含 6 个 strong 片段键（idx6/12/14/17/21/38）与首尾空格片段键（idx5/11/16/20/26 尾空格、idx7/13/28 首 `. `、idx15/18/22 首空格、idx21 字面双引号 `"as is"`）。
+
+② **屈折语 Privacy Policy 句中链接**：shared 主格值（如 ru «Политика конфиденциальности»）无法屈折 → **ru/fi/cs/pl/tr 用"引号文档名"结构包住链接**：ru `…в соответствии с документом «`+link+`».`、fi `…asiakirjan ”`+link+`” mukaisesti.`、cs `…s naším dokumentem „`+link+`“.`、pl `…zgodnie z dokumentem „`+link+`”.`、tr `…, «`+link+`» adlı belgemize uygun şekilde işlenir.`；de/pt/es/it/el/nl/sv/no/da/ro/ar/th 冠词自然搭配直接拼接（`gemäß unserer `、`de acordo com nossa `、`cu `、`με την ` 等）。**100% 写法**：de `100 %`、it `al 100%`、tr `%100`、fi `100-prosenttisesti`、ru `на 100%`、其余 `100%`。**AS IS 引号**：en `"as is"` → de „as is“、fr « en l’état »、ru «как есть»、ja 「ありのまま」等按各 locale 引号惯例。品牌大小写沿惯例：法律页族正文值一律小写 afarer（已核 terms de meta desc "von afarer" 先例）。es Email=Correo electrónico、el Email=Email、ja Contact=お問い合わせ/Email=メール。
+
+③ **walk（`_di-walk.cjs`）**：21 locale；title = idx0 值 + ` Afarer` 拼接（无 ignoreTitleTemplate，与 shard 67 整串形态不同）；og:title/meta desc/h1/9 个 h2 全精确锚定；6 strong 片段 `<strong>` 标签锚定 + 周边文本段 includes；privacy 链接断言 `href="/{loc}/privacy"` + 锚文本；末段确认 strong；EN 残留（h1/desc/h2×2/strong×2）；三步归一化沿 L57；**fr 期望块从 `_di-keys.json` fr 字段派生——idx0 须剥 ` ${SITE.name}` 后缀再拼 ` Afarer`**；ja CJK 豁免。ja/ko/th 片段重排不破坏断言（三键结构不变：seg+strong+seg，ja idx18=`。`/ko=`.`）。
+
+④ **回归数字**：wire applied 1（already 13）→ pending 1（afarer-story 6）；重跑 extract 后 manifest **0 templ**（15 页 841 键全 plain）；checker `pages checked: 14, missing: 0, stale: 0 PASS`；generate 14 landing 模块；check exit=0（仅既有警告）；build 13,858 页 5m32s（4096 堆）；`_di-walk.cjs` **21/21 PASS**。待接线 1 页：afarer-story 6（最后一页）。
+
 ---
 
 
