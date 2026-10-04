@@ -91,7 +91,8 @@ export default {
       return json({ success: false, error: 'Submission rejected' }, 400);
     }
 
-    const destinationEmail = env.CONTACT_EMAIL_TO || '';
+    // Fallback keeps the public contact inbox always reachable even if the var/secret is lost.
+    const destinationEmail = env.CONTACT_EMAIL_TO || 'info@afarer.com';
     if (!destinationEmail || !EMAIL_RE.test(destinationEmail)) {
       return json({ success: false, error: 'Destination email not configured' }, 500);
     }

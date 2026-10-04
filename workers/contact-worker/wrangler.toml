@@ -4,3 +4,8 @@ compatibility_date = "2026-07-08"
 compatibility_flags = ["nodejs_compat"]
 
 routes = [{ pattern = "afarer.com/api/contact*", zone_name = "afarer.com" }]
+
+[vars]
+# Destination inbox for contact form submissions (public address, also rendered on the site).
+# Overrides: set a CONTACT_EMAIL_TO secret in the Cloudflare dashboard to redirect.
+CONTACT_EMAIL_TO = "info@afarer.com"
