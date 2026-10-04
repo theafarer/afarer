@@ -706,6 +706,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：wire applied 1（already 13）→ pending 1（afarer-story 6）；重跑 extract 后 manifest **0 templ**（15 页 841 键全 plain）；checker `pages checked: 14, missing: 0, stale: 0 PASS`；generate 14 landing 模块；check exit=0（仅既有警告）；build 13,858 页 5m32s（4096 堆）；`_di-walk.cjs` **21/21 PASS**。待接线 1 页：afarer-story 6（最后一页）。
 
+#### L59. 分片 69：afarer-story 全链（6 键 × 19 locale，plain 页）——campaign 15/15 页接线收官（2026-10）
+
+① **数据**：19 part（`_story-<loc>.json`，前缀避让 shard 60 的 `_as-`）→ `_merge-afarer-story.cjs`（归档）→ `afarer-story.json` 5,282 bytes。6 键全 plain 无 templ 无共用键（landing-i18n 既有数据 grep 确认零交集）。validator（`_story-validate.cjs`）**0 hard / 0 soft**，含三类硬校验：键数/键集/非空；**3 个 UI 先例键逐字符比对 i18n-config**（`Explore Products`=ui `cta.explore`、`Visit Our Factory`=ui `home.resources.factoryTour.cta`、`Best For`=ui `product.bestFor`）；K4 品牌大小写规则（ja/fi 小写 afarer，其余大写 Afarer）。
+
+② **翻译决策**：页面主体 YAML 已本地化（timeline/hero/stats 等走 getPageContent），fr() 仅 6 处。按钮复用 UI 字典既有 CTA 标签（站点级一致性优先）；`Brand Journey`（uppercase eyebrow，CSS 转大写，译文正常句式）与 `Strengths` 新译；`Afarer Timeline` 品牌大小写按**商业页**惯例（probe 4 核实：前缀位大写、ja/fi 小写、后置位大写 `SUP Afarer`/`van Afarer`/`ของ Afarer`、属格 `Afarers tidslinje` sv/no/da、ja `afarerの沿革`、fi `afarerin aikajana`——法律页族"后置位小写"仅适用于法律正文，商业页标题用大写）。no `Best For`=`Best for` 系 UI 字典既有值（no 语合法拼写字面），逐字符沿用不擅改。
+
+③ **walk（`_story-walk.cjs`）**：21 locale；hero 双 CTA 锚定 `href="/{loc}/products"`+`href="/{loc}/factory"` + 锚文本精确；eyebrow 用 `<p[^>]*uppercase[^>]*>` 标签锚定；h2 Timeline/h3 Strengths/h3 BestFor 标签锚定；EN 残留（cta×2/h2/h3×2）；三步归一化沿 L57；fr 期望块从 `_story-keys.json` fr 字段派生；ja CJK 豁免。**21/21 PASS**。
+
+④ **回归数字**：wire applied 1 / already 14 / pending 0（收官）；无 templ 无需重跑 extract；checker `pages checked: 15, missing: 0, stale: 0 PASS`；generate **15 模块**；astro check 0 errors；build 13,858 页 3m25s（4096 堆）。campaign 15/15 页全部接线完毕。
+
 ---
 
 
