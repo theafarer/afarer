@@ -119,6 +119,14 @@ See `workers/*/wrangler.toml` for per-worker config. Key bindings:
 - `ai-worker`: Workers AI (LLM), Vectorize (ai-index), R2 (DATA_BUCKET)
 - `automation-worker`: R2 (DATA_BUCKET), cron trigger
 
+### 3.4 contact-worker env contract（2026-10 修复 "Destination email not configured"）
+
+- `CONTACT_EMAIL_TO`：收件箱，**非敏感**，作为 `[vars]` 固化在 `workers/contact-worker/wrangler.toml`（`info@afarer.com`，页面公开地址）；worker 代码另有同值兜底（`env.CONTACT_EMAIL_TO || 'info@afarer.com'`），丢失 var 也不再 500。改收件箱 = 改 toml var（或 dashboard 设同名 secret 覆盖，secret 优先）。
+- `CONTACT_RESEND_API_KEY` + `CONTACT_FROM_EMAIL`：**secrets**（dashboard 或 `wrangler secret put`），二者齐备才实际发信；缺失时 worker 返回 success 但**静默丢弃提交**（CI 的 "Audit contact worker secrets" 步骤输出 secret 名单，2026-10-04 审计为 `[]`——尚未配置，需站主在 Cloudflare dashboard 补设）。`CONTACT_FROM_EMAIL` 应为 Resend 已验证发信域（config.yaml 记录 `web@afarer.com` / `Afarer`）。
+- `CONTACT_SUBMISSIONS_PAT`/`GITHUB_TOKEN`：Env 接口声明了但代码未使用（死字段）。
+- 4 个前端提交点共用此 worker：Contact 表单、NewsletterSignup、QuotationForm、whitepaper 表单（subject=`newsletter signup` 走 newsletter 分支自动补 firstName/lastName）。
+- 部署链：push → CI `deploy.yml` 末尾 `npm run deploy:workers`（`wrangler deploy -c workers/contact-worker/wrangler.toml`）；**本地 wrangler 无 CI 账号 token**（本机 config 属另一账号，查询报 code 10007），worker 改动一律走 CI 部署。
+
 ---
 
 ## 4. Internationalization (i18n)
