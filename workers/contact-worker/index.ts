@@ -11,12 +11,9 @@ const CORS_HEADERS = {
 
 interface Env {
   CONTACT_RESEND_API_KEY?: string;
-  CONTACT_SUBMISSIONS_PAT?: string;
   CONTACT_EMAIL_TO?: string;
   CONTACT_FROM_EMAIL?: string;
   CONTACT_FROM_NAME?: string;
-  GITHUB_TOKEN?: string;
-  CONTACT_EMAIL_PROVIDER?: string;
 }
 
 function json(body: unknown, status = 200): Response {

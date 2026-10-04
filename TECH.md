@@ -124,7 +124,7 @@ See `workers/*/wrangler.toml` for per-worker config. Key bindings:
 - `CONTACT_EMAIL_TO`：收件箱，**非敏感**，作为 `[vars]` 固化在 `workers/contact-worker/wrangler.toml`（`info@afarer.com`，页面公开地址）；worker 代码另有同值兜底（`env.CONTACT_EMAIL_TO || 'info@afarer.com'`），丢失 var 也不再 500。改收件箱 = 改 toml var（或 dashboard 设同名 secret 覆盖，secret 优先）。
 - `CONTACT_RESEND_API_KEY` + `CONTACT_FROM_EMAIL`：**secrets**，值存 GitHub repo secrets（2026-07-30 已设），由 deploy.yml 的 "Sync contact worker secrets" 步在每次部署时 `wrangler secret put` 推送到 worker（缺任一则跳过并打 SKIP）；二者齐备才实际发信，缺失时 worker 返回 success 但**静默丢弃提交**。审计步 "Audit contact worker secrets" 输出 secret 名单用于核验。`CONTACT_FROM_EMAIL` 应为 Resend 已验证发信域（config.yaml 记录 `web@afarer.com` / `Afarer`）。
 - `CONTACT_EMAIL_TO`：同名 GH repo secret 存在但**不用于同步**——收件箱以 toml `[vars]` 为唯一真源（见上）。
-- `CONTACT_SUBMISSIONS_PAT`/`GITHUB_TOKEN`：Env 接口声明了但代码未使用（死字段）。
+- ~~`CONTACT_SUBMISSIONS_PAT`/`GITHUB_TOKEN`~~：Env 接口死字段已于 2026-10 清除（连同 `CONTACT_EMAIL_PROVIDER`），Env 仅保留代码实际使用的 4 个字段。
 - 4 个前端提交点共用此 worker：Contact 表单、NewsletterSignup、QuotationForm、whitepaper 表单（subject=`newsletter signup` 走 newsletter 分支自动补 firstName/lastName）。
 - 部署链：push → CI `deploy.yml` 末尾 `npm run deploy:workers`（`wrangler deploy -c workers/contact-worker/wrangler.toml`）；**本地 wrangler 无 CI 账号 token**（本机 config 属另一账号，查询报 code 10007），worker 改动一律走 CI 部署。
 - 查 worker 运行日志：用 `.github/workflows/debug-contact.yml`（workflow_dispatch，可经 GitHub API 触发）——`wrangler tail` 后台挂着 + curl 打一条真实 POST，采集 console.error 输出。2026-10-04 诊断结论：Resend API 返回 2xx（无 error 日志），邮件已被 Resend 接收，问题在投递侧（收件箱垃圾箱/退信），发信配置（DKIM `resend._domainkey.mail.afarer.com` + SPF `send.mail.afarer.com`→amazonses）DNS 记录齐全。
@@ -670,7 +670,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **结构**：h1 = `Terms and Conditions` 整键；title/og:title = 前缀键 + ` Afarer` 后缀（suffix 程序化取自 en 页 `<title>`）；meta desc 整键精确渲染无 ui 覆盖（en 精确断言、非 en 断言非 EN 残留）。walk（`_te-walk.cjs`）：EN 锚点 id ×5（interpretation-and-definitions/acknowledgment/as-is-and-as-available-disclaimer/governing-law/contact-us）+ Last updated 译文 includes + h2 按 id 锚定 ×4（Acknowledgment/Termination/Governing Law/Contact Us）+ EN 残留 needle（EN h1/EN Last updated/EN desc）+ `&#39;` 归一化 + fr 期望块 manifest frEntry 派生 + ja CJK 豁免。ro 性别一致：混合性别取阴性（"prezentelor Termeni și Condiții"）。
 
-④ **回归数字**：wire patch applied 1（already 9）→ 复 dry **0/10/5/0**；checker `pages checked: 10, missing: 0, stale: 0 PASS`；generate 10 landing 模块；check 四合一 exit=0（astro 0 err 175 既有 hint / eslint 绿 / prettier 全绿 / check:i18n 0 issue 19 既有 warn）；build（4096）13,858 页 8m17s；`_te-walk.cjs` **21/21 PASS**。待接线 5 页：whitepaper 52（templ）、sup-accessories 49、inflatable-sup 48、disclaimer 39（templ）、afarer-story 6。挂账：privacy da meta desc "afafers" 拼写错误待单独修复。
+④ **回归数字**：wire patch applied 1（already 9）→ 复 dry **0/10/5/0**；checker `pages checked: 10, missing: 0, stale: 0 PASS`；generate 10 landing 模块；check 四合一 exit=0（astro 0 err 175 既有 hint / eslint 绿 / prettier 全绿 / check:i18n 0 issue 19 既有 warn）；build（4096）13,858 页 8m17s；`_te-walk.cjs` **21/21 PASS**。待接线 5 页：whitepaper 52（templ）、sup-accessories 49、inflatable-sup 48、disclaimer 39（templ）、afarer-story 6。挂账：privacy da meta desc "afafers" 拼写错误待单独修复。（**已清**：`f162b593` 修正 afafers→afarers，da/sv/no 属格 afarers 为正确斯堪的纳维亚形）
 
 ---
 
@@ -692,7 +692,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **walk（`_sa-walk.cjs`）**：title/og:title 整键精确断言（ignoreTitleTemplate，无后缀拼接，区别于 wp 的 prefix+suffix）；**归一化须加第三步 `&amp;`→`&`**——属性值与文本节点 `&` 均转义（og:title `Leashes &amp; Vests`、h3 `Life Vests &amp; PFDs`），wp 只有 `&quot;`/`&#39;` 两步；back link / Shop vests → / Shop pumps → / 双 CTA 用 href+text 复合正则（`href="/${loc}/products/life-vest-classic"[^>]*>\s*…</a>`、CTA `>\s*…\s*<span>→</span>`）；**FAQ 可见区使用 en-dash dup 键（idx44/45），hyphen 键与 breadcrumb 键（Home/Inflatable SUP Boards）仅存于不渲染的 JsonLd data-prop 死调用，不可断言**（L46④ 挂账的实证定界）；fr 期望块从 `_sa-keys.json` 派生；ja CJK 豁免。
 
-④ **回归数字**：wire patch applied 1（already 11）→ 复 dry **0/12/3/0**；checker `pages checked: 12, missing: 0, stale: 0 PASS`；generate 12 landing 模块；check exit=0（仅既有 ts 警告）；build（4096）13,858 页 5m24s；`_sa-walk.cjs` **21/21 PASS**。待接线 3 页：inflatable-sup 48、disclaimer 39（templ）、afarer-story 6。挂账：da part 拼写瑕疵（Fuldendt→应为 Fuldfør、reperationsæt→reparationsæt）validator 不拦，待质量修。
+④ **回归数字**：wire patch applied 1（already 11）→ 复 dry **0/12/3/0**；checker `pages checked: 12, missing: 0, stale: 0 PASS`；generate 12 landing 模块；check exit=0（仅既有 ts 警告）；build（4096）13,858 页 5m24s；`_sa-walk.cjs` **21/21 PASS**。待接线 3 页：inflatable-sup 48、disclaimer 39（templ）、afarer-story 6。挂账：da part 拼写瑕疵（Fuldendt→应为 Fuldfør、reperationsæt→reparationsæt）validator 不拦，待质量修。（**已清**：分片 72 修复，见 L62）
 
 ---
 
@@ -742,7 +742,15 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ② **验证与工具归档**：prettier 绿；astro check 0 errors（1117 files）；build 13,858 页 6m02s；dist 断言 17/17 PASS（死调用页 adventure-sup/solutions/about/oem-odm-manufacturer/download-catalog 出现 Article/BreadcrumbList/FAQPage/ItemList/Service、`[lang]` 页 de/fr all-around-sup 翻译值落地、活调用页 guides/products/contact/home 零回归、adventure-sup headline 全文在页）。工具归档 `TOOLS/verify/`：`scan-jsonld-dead.cjs`（源码侧死调用扫描，修复后 DEAD=0、DATA-FALLBACK=126，`--strict` exit 1 防新增死调用）+ `verify-jsonld.cjs`（dist 侧 `页面@类型` 断言）；已登记 tool_instrction.md §5。**教训：块注释内写 `src/**/*.astro` 的 `**/` 会提前闭合注释**（Node SyntaxError Unexpected token '*'）。
 
-③ **挂账联动**：L583 挂账④标记已修；landing-i18n manifest key #3（Article headline）不再是死调用，`[lang]` 页翻译 headline 现随 data= 渲染进 dist。剩余小挂账：trust-badges.yaml EN-only badge 标题、privacy da "afafers" 拼写、da Fuldendt/reperationsæt 拼写、worker Env 死字段（CONTACT_SUBMISSIONS_PAT/GITHUB_TOKEN/CONTACT_EMAIL_PROVIDER）。
+③ **挂账联动**：L583 挂账④标记已修；landing-i18n manifest key #3（Article headline）不再是死调用，`[lang]` 页翻译 headline 现随 data= 渲染进 dist。剩余小挂账（**已全部于分片 72 清除**，见 L62）：trust-badges.yaml EN-only badge 标题、privacy da "afafers" 拼写、da Fuldendt/reperationsæt 拼写、worker Env 死字段（CONTACT_SUBMISSIONS_PAT/GITHUB_TOKEN/CONTACT_EMAIL_PROVIDER）。
+
+#### L62. 分片 72：挂账清理批二（trust-badges 全站本地化 / de Afafers / da 拼写 / worker Env 死字段）（2026-10）
+
+① **trust-badges 本地化（主项）**：`TrustBadges.astro` 原硬编码 `import trust-badges.yaml` → 全站 locale 页（[lang]/about、[lang]/contact、[lang]/products/[slug] 等）渲染 EN badge 标题/描述；既有 `.de/.fr` 变体从未被组件消费（仅 keystatic 后台可见）。修复 = 组件改 `import.meta.glob('/src/data/site/trust-badges*.yaml', { eager: true })` 按 `Astro.locals.lang`（middleware URL 前缀派生，预渲染期生效——about/faq/contact 等根页既有先例）选变体，EN 回退；新增 18 locale 变体（da/sv/no/nl/es/pt/it/pl/cs/ro/ru/el/tr/fi/ja/ko/th/ar，6 badge × title/desc = 216 译文），生成器 `TOOLS/one-off/_gen-trust-badges-locales.cjs`（--dry/--write 幂等，翻译表内嵌 `T`，icon/variant 与 EN 源一致）已归档登记 tool_instrction.md §4。品牌大小写沿既有惯例（后置位小写 afarer；ja/fi 小写；th 主语位大写）。
+
+② **拼写/死字段小修**：i18n-config de `engineeringTeam.desc` "Afafers"→"Afarers"（/de/engineering-team/ 渲染）；landing-i18n sup-accessories da 两值 "Fuldendt"→"Fuldfør"、"reperationsæt"→"reparationsæt"（分片 65 挂账）；contact-worker `Env` 接口清除 3 死字段（CONTACT_SUBMISSIONS_PAT/GITHUB_TOKEN/CONTACT_EMAIL_PROVIDER，§3.4 已同步），仅留代码实际使用的 4 字段。
+
+③ **回归数字**：generate 全链（15 landing 模块 / 227 pages / seo-meta 1486 / route-manifest 13857）；astro check 0 errors（1138 files，新增 18 yaml 计入）；build（4096）13,858 页 3m34s；walk `_s72-walk.cjs` **38/38 PASS**（EN 根页零变化、de/fr 既有变体首次真正渲染、12 locale 抽样 badge 标题本地化 + 9 locale EN 残留为零、de contact + de/ja 产品页（`layout="row"` 路径）本地化、da sup-accessories 两拼写修复落地、de engineering-team Afafers 清除、ar RTL 页正常）。**教训**：① walk 断言前先确认目标页确实渲染该组件（[lang]/oem-odm-manufacturer 不用 TrustBadges，断言写成 FAIL 假警）；② PowerShell `[lang]` 路径必须 `-LiteralPath`（通配符吞文件）；③ 挂账文字会失真——da "afafers" 实际已在 `f162b593` 修过（git log -S 复核后才标记），真实残留是 de engineeringTeam.desc 的同族拼写。
 
 ---
 

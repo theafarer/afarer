@@ -1,8 +1,6 @@
 ﻿---
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import trustData from '~/data/site/trust-badges.yaml';
-
 interface Badge {
   icon?: string;
   title: string;
@@ -18,44 +16,59 @@ export interface Props {
   subtitle?: string;
 }
 
-const yamlBadges: Badge[] = ((trustData as any)?.badges || []).map((b: any) => ({
-  icon: b.icon || '\u2B50',
-  title: b.title || '',
-  desc: b.desc || '',
-  variant: b.variant || 'standard',
-}));
+const localeRawModules: Record<string, any> = import.meta.glob('/src/data/site/trust-badges*.yaml', {
+  eager: true,
+});
 
-const defaultBadges: Badge[] =
-  yamlBadges.length > 0
-    ? yamlBadges
-    : [
-        {
-          icon: '\u2B50',
-          title: 'ISO and CE Certified',
-          desc: 'Every product meets international safety and quality standards.',
-          variant: 'cert',
-        },
-        {
-          icon: '\u2B50',
-          title: 'Material Excellence',
-          desc: 'Premium PVC and Hypalon fabrics tested for UV, abrasion, and temperature extremes.',
-          variant: 'material',
-        },
-        {
-          icon: '\u2B50',
-          title: 'Rigorous Testing',
-          desc: 'Each vessel undergoes pressure, buoyancy, and load tests before shipment.',
-          variant: 'standard',
-        },
-        {
-          icon: '\u2B50',
-          title: '2-Year Warranty',
-          desc: 'All Afarer products backed by comprehensive manufacturer warranty.',
-          variant: 'warranty',
-        },
-      ];
+function toBadges(data: any): Badge[] {
+  return ((data as any)?.badges || []).map((b: any) => ({
+    icon: b.icon || '\u2B50',
+    title: b.title || '',
+    desc: b.desc || '',
+    variant: b.variant || 'standard',
+  }));
+}
 
-const { badges = defaultBadges, layout = 'grid', bg, title, subtitle } = Astro.props;
+const localeBadges: Record<string, Badge[]> = {};
+for (const [p, mod] of Object.entries(localeRawModules)) {
+  const m = p.match(/trust-badges(?:\.([a-z]{2}))?\.yaml$/);
+  if (!m) continue;
+  const lang = m[1] || 'en';
+  const badges = toBadges((mod as any)?.default ?? mod);
+  if (badges.length > 0) localeBadges[lang] = badges;
+}
+
+const defaultBadges: Badge[] = [
+  {
+    icon: '\u2B50',
+    title: 'ISO and CE Certified',
+    desc: 'Every product meets international safety and quality standards.',
+    variant: 'cert',
+  },
+  {
+    icon: '\u2B50',
+    title: 'Material Excellence',
+    desc: 'Premium PVC and Hypalon fabrics tested for UV, abrasion, and temperature extremes.',
+    variant: 'material',
+  },
+  {
+    icon: '\u2B50',
+    title: 'Rigorous Testing',
+    desc: 'Each vessel undergoes pressure, buoyancy, and load tests before shipment.',
+    variant: 'standard',
+  },
+  {
+    icon: '\u2B50',
+    title: '2-Year Warranty',
+    desc: 'All Afarer products backed by comprehensive manufacturer warranty.',
+    variant: 'warranty',
+  },
+];
+
+const lang: string = Astro.locals.lang || 'en';
+const resolvedBadges: Badge[] = localeBadges[lang] || localeBadges.en || defaultBadges;
+
+const { badges = resolvedBadges, layout = 'grid', bg, title, subtitle } = Astro.props;
 ---
 
 {
