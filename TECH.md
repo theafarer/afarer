@@ -127,6 +127,7 @@ See `workers/*/wrangler.toml` for per-worker config. Key bindings:
 - `CONTACT_SUBMISSIONS_PAT`/`GITHUB_TOKEN`：Env 接口声明了但代码未使用（死字段）。
 - 4 个前端提交点共用此 worker：Contact 表单、NewsletterSignup、QuotationForm、whitepaper 表单（subject=`newsletter signup` 走 newsletter 分支自动补 firstName/lastName）。
 - 部署链：push → CI `deploy.yml` 末尾 `npm run deploy:workers`（`wrangler deploy -c workers/contact-worker/wrangler.toml`）；**本地 wrangler 无 CI 账号 token**（本机 config 属另一账号，查询报 code 10007），worker 改动一律走 CI 部署。
+- 查 worker 运行日志：用 `.github/workflows/debug-contact.yml`（workflow_dispatch，可经 GitHub API 触发）——`wrangler tail` 后台挂着 + curl 打一条真实 POST，采集 console.error 输出。2026-10-04 诊断结论：Resend API 返回 2xx（无 error 日志），邮件已被 Resend 接收，问题在投递侧（收件箱垃圾箱/退信），发信配置（DKIM `resend._domainkey.mail.afarer.com` + SPF `send.mail.afarer.com`→amazonses）DNS 记录齐全。
 
 ---
 
