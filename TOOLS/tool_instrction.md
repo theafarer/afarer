@@ -15,6 +15,8 @@ TOOLS/
 │   ├── verify-langs.cjs        # 六项整站验证：zh 下线 / EN 回退 / hreflang / RTL / 切换器 / CJK 泄漏
 │   ├── check-dist.cjs          # 通用内容核查：--present/--absent 关键词 × 全语言批量断言
 │   ├── scan-en-leak.cjs        # 已翻译语言页面英文残留扫描（启发式）
+│   ├── scan-jsonld-dead.cjs    # 源码侧 JsonLd 死调用扫描（type 无 prop 且无 data=，--strict 回归）
+│   ├── verify-jsonld.cjs       # dist JSON-LD 渲染断言（页面@期望类型，JsonLd 组件回归用）
 │   └── check-solutions-page.cjs# B2B solutions 详情页翻译逐项断言（数据驱动）
 ├── i18n-manage/            # i18n-config.json UI 键批量管理
 │   ├── ui-keys.cjs             # UI 键 count/missing/remove/add/set（全语言）
@@ -132,12 +134,14 @@ TOOLS/
 
 多语言站点一次改动会产出 34 种语言的页面，人工逐页检查不现实。**每次模块增删/内容修改并 `npm run build` 之后，务必用本节脚本做回归验证。**
 
-| 文件                       | 用途                                                                                                                                                                        | 用法（仓库根，需先构建 dist）                                                                                                                                            |
-| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `verify-langs.cjs`         | 六项整站验证：① dist/zh 不存在 ② 未翻译语言 EN 回退 ③ hreflang 交替链接 ④ RTL 语言 dir=rtl ⑤ 语言切换器链接齐全 ⑥ 非 ja/ko 页面无 CJK 泄漏（自动跳过 llms*.txt 聚合文件）。 | `node TOOLS/verify/verify-langs.cjs`                                                                                                                                     |
-| `check-dist.cjs`           | **通用内容核查**：对全部 34 种语言的指定页面断言关键词必须存在（`--present`）或必须不存在（`--absent`）。删除模块后查残留、新增功能后查生效都靠它。退出码非 0 = 有失败。    | `node TOOLS/verify/check-dist.cjs --page index.html --absent wavefella foida-logo`<br>`node TOOLS/verify/check-dist.cjs --page index.html --present "grid-cols-4 gap-1"` |
-| `scan-en-leak.cjs`         | 已翻译语言（fr/es/de 等）页面英文残留扫描：剥离标签后按"高 ASCII 比例 + 无重音字符 + 含英文虚词"启发式判定，结果需人工复核。                                                | `node TOOLS/verify/scan-en-leak.cjs fr es`<br>`node TOOLS/verify/scan-en-leak.cjs fr --page about/index.html`                                                            |
-| `check-solutions-page.cjs` | B2B solutions 详情页（`/[lang]/solutions/[slug]`）翻译逐项断言。期望译文子串维护在脚本内 `EXPECTED` 表，新翻译一页就补一组条目。                                            | `node TOOLS/verify/check-solutions-page.cjs corporate-sup-event-package fr es`                                                                                           |
+| 文件                       | 用途                                                                                                                                                                                                 | 用法（仓库根，需先构建 dist）                                                                                                                                            |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `verify-langs.cjs`         | 六项整站验证：① dist/zh 不存在 ② 未翻译语言 EN 回退 ③ hreflang 交替链接 ④ RTL 语言 dir=rtl ⑤ 语言切换器链接齐全 ⑥ 非 ja/ko 页面无 CJK 泄漏（自动跳过 llms*.txt 聚合文件）。                          | `node TOOLS/verify/verify-langs.cjs`                                                                                                                                     |
+| `check-dist.cjs`           | **通用内容核查**：对全部 34 种语言的指定页面断言关键词必须存在（`--present`）或必须不存在（`--absent`）。删除模块后查残留、新增功能后查生效都靠它。退出码非 0 = 有失败。                             | `node TOOLS/verify/check-dist.cjs --page index.html --absent wavefella foida-logo`<br>`node TOOLS/verify/check-dist.cjs --page index.html --present "grid-cols-4 gap-1"` |
+| `scan-en-leak.cjs`         | 已翻译语言（fr/es/de 等）页面英文残留扫描：剥离标签后按"高 ASCII 比例 + 无重音字符 + 含英文虚词"启发式判定，结果需人工复核。                                                                         | `node TOOLS/verify/scan-en-leak.cjs fr es`<br>`node TOOLS/verify/scan-en-leak.cjs fr --page about/index.html`                                                            |
+| `check-solutions-page.cjs` | B2B solutions 详情页（`/[lang]/solutions/[slug]`）翻译逐项断言。期望译文子串维护在脚本内 `EXPECTED` 表，新翻译一页就补一组条目。                                                                     | `node TOOLS/verify/check-solutions-page.cjs corporate-sup-event-package fr es`                                                                                           |
+| `scan-jsonld-dead.cjs`     | 源码侧 `<JsonLd>` 死调用扫描：type=Article/BreadcrumbList/... 但既无对应结构化 prop 也无 `data=` → 组件不渲染；传 `data=` 的归 DATA-FALLBACK（2026-10 起正常渲染）。`--strict` 时存在死调用 exit 1。 | `node TOOLS/verify/scan-jsonld-dead.cjs --strict`                                                                                                                        |
+| `verify-jsonld.cjs`        | dist 侧 JSON-LD 渲染断言：提取页面全部 `ld+json` 块解析 @type，断言期望类型存在。JsonLd 组件 / `data=` 后备逻辑改动后回归用。                                                                        | `node TOOLS/verify/verify-jsonld.cjs adventure-sup/index.html@Article,BreadcrumbList,FAQPage de/all-around-sup/index.html@Article`                                       |
 
 **多语言模块增删标准流程（重要）：**
 

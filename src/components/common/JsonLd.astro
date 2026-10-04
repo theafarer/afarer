@@ -155,171 +155,209 @@ if (type === 'Organization') {
   };
 } else if (type === 'WebSite') {
   schema = { ...schema, '@type': 'WebSite', name, url: siteUrl, ...(data || {}) };
-} else if (type === 'BreadcrumbList' && breadcrumbs) {
+} else if (type === 'BreadcrumbList' && (breadcrumbs || data)) {
   schema = {
     ...schema,
     '@type': 'BreadcrumbList',
-    itemListElement: breadcrumbs.map((b, i) => {
-      const href = b.item || b.href;
-      return {
-        '@type': 'ListItem',
-        position: i + 1,
-        name: b.name,
-        ...(href ? { item: href.startsWith('http') ? href : `${siteUrl}${href}` } : {}),
-      };
-    }),
-  };
-} else if (type === 'Product' && product) {
-  const offset = { '@type': 'Product', '@id': product.url ? `${product.url}#product` : undefined };
-  const mfg = product.manufacturerName
-    ? { manufacturer: { '@type': 'Organization', name: product.manufacturerName } }
-    : {};
-  const dims: Record<string, unknown> = {};
-  if (product.weight) dims.weight = product.weight;
-  if (product.width) dims.width = product.width;
-  if (product.height) dims.height = product.height;
-  if (product.depth) dims.depth = product.depth;
-  const dimBlock =
-    Object.keys(dims).length > 0
-      ? { additionalProperty: [{ '@type': 'PropertyValue', name: 'Specifications', value: dims }] }
-      : {};
-  schema = {
-    ...schema,
-    ...offset,
-    name: product.name,
-    description: product.description,
-    ...(product.sku ? { sku: product.sku } : {}),
-    ...(product.image ? { image: product.image } : {}),
-    ...(product.url ? { url: product.url } : {}),
-    ...(product.category ? { category: product.category } : {}),
-    ...(product.material ? { material: product.material } : {}),
-    ...(product.color ? { color: product.color } : {}),
-    ...(product.countryOfOrigin ? { countryOfOrigin: product.countryOfOrigin } : {}),
-    ...(product.mpn ? { mpn: product.mpn } : {}),
-    ...(product.offers ? { offers: product.offers } : {}),
-    ...(product.aggregateRating
+    ...(breadcrumbs
       ? {
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: product.aggregateRating.ratingValue,
-            reviewCount: product.aggregateRating.reviewCount,
-            bestRating: product.aggregateRating.bestRating || 5,
-          },
+          itemListElement: breadcrumbs.map((b, i) => {
+            const href = b.item || b.href;
+            return {
+              '@type': 'ListItem',
+              position: i + 1,
+              name: b.name,
+              ...(href ? { item: href.startsWith('http') ? href : `${siteUrl}${href}` } : {}),
+            };
+          }),
         }
-      : {}),
-    brand: { '@type': 'Brand', name: product.brandName || name },
-    ...mfg,
-    ...dimBlock,
+      : data),
   };
-} else if (type === 'FAQPage' && faqs && faqs.length > 0) {
+} else if (type === 'Product' && (product || data)) {
+  if (product) {
+    const offset = { '@type': 'Product', '@id': product.url ? `${product.url}#product` : undefined };
+    const mfg = product.manufacturerName
+      ? { manufacturer: { '@type': 'Organization', name: product.manufacturerName } }
+      : {};
+    const dims: Record<string, unknown> = {};
+    if (product.weight) dims.weight = product.weight;
+    if (product.width) dims.width = product.width;
+    if (product.height) dims.height = product.height;
+    if (product.depth) dims.depth = product.depth;
+    const dimBlock =
+      Object.keys(dims).length > 0
+        ? { additionalProperty: [{ '@type': 'PropertyValue', name: 'Specifications', value: dims }] }
+        : {};
+    schema = {
+      ...schema,
+      ...offset,
+      name: product.name,
+      description: product.description,
+      ...(product.sku ? { sku: product.sku } : {}),
+      ...(product.image ? { image: product.image } : {}),
+      ...(product.url ? { url: product.url } : {}),
+      ...(product.category ? { category: product.category } : {}),
+      ...(product.material ? { material: product.material } : {}),
+      ...(product.color ? { color: product.color } : {}),
+      ...(product.countryOfOrigin ? { countryOfOrigin: product.countryOfOrigin } : {}),
+      ...(product.mpn ? { mpn: product.mpn } : {}),
+      ...(product.offers ? { offers: product.offers } : {}),
+      ...(product.aggregateRating
+        ? {
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: product.aggregateRating.ratingValue,
+              reviewCount: product.aggregateRating.reviewCount,
+              bestRating: product.aggregateRating.bestRating || 5,
+            },
+          }
+        : {}),
+      brand: { '@type': 'Brand', name: product.brandName || name },
+      ...mfg,
+      ...dimBlock,
+    };
+  } else {
+    schema = { ...schema, '@type': 'Product', ...data };
+  }
+} else if (type === 'FAQPage' && ((faqs && faqs.length > 0) || data)) {
   schema = {
     ...schema,
     '@type': 'FAQPage',
-    mainEntity: faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.question || f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.answer || f.a },
-    })),
+    ...(faqs && faqs.length > 0
+      ? {
+          mainEntity: faqs.map((f) => ({
+            '@type': 'Question',
+            name: f.question || f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.answer || f.a },
+          })),
+        }
+      : data),
   };
-} else if (type === 'Article' && article) {
-  schema = {
-    ...schema,
-    '@type': 'Article',
-    headline: article.headline,
-    description: article.description,
-    ...(article.image ? { image: article.image } : {}),
-    ...(article.datePublished ? { datePublished: article.datePublished } : {}),
-    ...(article.dateModified ? { dateModified: article.dateModified } : {}),
-    author: {
-      '@type': 'Person',
-      name: article.authorName || authorName,
-      ...(article.authorUrl ? { url: article.authorUrl } : {}),
-    },
-    publisher: {
-      '@type': 'Organization',
-      name,
-      url: siteUrl,
-    },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': data?.['url'] || siteUrl },
-  };
-} else if (type === 'ImageObject' && image) {
+} else if (type === 'Article' && (article || data)) {
+  schema = article
+    ? {
+        ...schema,
+        '@type': 'Article',
+        headline: article.headline,
+        description: article.description,
+        ...(article.image ? { image: article.image } : {}),
+        ...(article.datePublished ? { datePublished: article.datePublished } : {}),
+        ...(article.dateModified ? { dateModified: article.dateModified } : {}),
+        author: {
+          '@type': 'Person',
+          name: article.authorName || authorName,
+          ...(article.authorUrl ? { url: article.authorUrl } : {}),
+        },
+        publisher: {
+          '@type': 'Organization',
+          name,
+          url: siteUrl,
+        },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': data?.['url'] || siteUrl },
+      }
+    : {
+        ...schema,
+        '@type': 'Article',
+        ...data,
+      };
+} else if (type === 'ImageObject' && (image || data)) {
   schema = {
     ...schema,
     '@type': 'ImageObject',
-    url: image.url,
-    ...(image.caption ? { caption: image.caption } : {}),
-    ...(image.description ? { description: image.description } : {}),
-    ...(image.width ? { width: image.width } : {}),
-    ...(image.height ? { height: image.height } : {}),
-    ...(image.contentUrl ? { contentUrl: image.contentUrl } : {}),
+    ...(image
+      ? {
+          url: image.url,
+          ...(image.caption ? { caption: image.caption } : {}),
+          ...(image.description ? { description: image.description } : {}),
+          ...(image.width ? { width: image.width } : {}),
+          ...(image.height ? { height: image.height } : {}),
+          ...(image.contentUrl ? { contentUrl: image.contentUrl } : {}),
+        }
+      : data),
   };
-} else if (type === 'VideoObject' && video) {
+} else if (type === 'VideoObject' && (video || data)) {
   schema = {
     ...schema,
     '@type': 'VideoObject',
-    name: video.name,
-    description: video.description,
-    thumbnailUrl: video.thumbnailUrl,
-    ...(video.contentUrl ? { contentUrl: video.contentUrl } : {}),
-    ...(video.embedUrl ? { embedUrl: video.embedUrl } : {}),
-    uploadDate: video.uploadDate,
-    ...(video.duration ? { duration: video.duration } : {}),
-  };
-} else if (type === 'Service' && service) {
-  const offers = service.items?.map((item) => ({
-    '@type': 'Offer',
-    itemOffered: { '@type': 'Service', name: item.name, description: item.description },
-    ...(item.price
+    ...(video
       ? {
-          priceSpecification: {
-            '@type': 'PriceSpecification',
-            price: item.price,
-            priceCurrency: item.priceCurrency || 'USD',
-          },
+          name: video.name,
+          description: video.description,
+          thumbnailUrl: video.thumbnailUrl,
+          ...(video.contentUrl ? { contentUrl: video.contentUrl } : {}),
+          ...(video.embedUrl ? { embedUrl: video.embedUrl } : {}),
+          uploadDate: video.uploadDate,
+          ...(video.duration ? { duration: video.duration } : {}),
         }
-      : {}),
-  }));
-  schema = {
-    ...schema,
-    '@type': 'Service',
-    name: service.name,
-    description: service.description,
-    provider: { '@type': 'Organization', name, url: siteUrl },
-    ...(service.serviceType ? { serviceType: service.serviceType } : {}),
-    ...(service.areaServed?.length ? { areaServed: service.areaServed } : {}),
-    ...(service.image ? { image: service.image } : {}),
-    ...(service.url ? { url: service.url } : {}),
-    ...(offers?.length
-      ? { hasOfferCatalog: { '@type': 'OfferCatalog', name: service.name, itemListElement: offers } }
-      : {}),
+      : data),
   };
-} else if (type === 'ItemList' && itemList) {
+} else if (type === 'Service' && (service || data)) {
+  if (service) {
+    const offers = service.items?.map((item) => ({
+      '@type': 'Offer',
+      itemOffered: { '@type': 'Service', name: item.name, description: item.description },
+      ...(item.price
+        ? {
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              price: item.price,
+              priceCurrency: item.priceCurrency || 'USD',
+            },
+          }
+        : {}),
+    }));
+    schema = {
+      ...schema,
+      '@type': 'Service',
+      name: service.name,
+      description: service.description,
+      provider: { '@type': 'Organization', name, url: siteUrl },
+      ...(service.serviceType ? { serviceType: service.serviceType } : {}),
+      ...(service.areaServed?.length ? { areaServed: service.areaServed } : {}),
+      ...(service.image ? { image: service.image } : {}),
+      ...(service.url ? { url: service.url } : {}),
+      ...(offers?.length
+        ? { hasOfferCatalog: { '@type': 'OfferCatalog', name: service.name, itemListElement: offers } }
+        : {}),
+    };
+  } else {
+    schema = { ...schema, '@type': 'Service', ...data };
+  }
+} else if (type === 'ItemList' && (itemList || data)) {
   schema = {
     ...schema,
     '@type': 'ItemList',
-    name: itemList.name,
-    ...(itemList.description ? { description: itemList.description } : {}),
-    ...(itemList.url ? { url: itemList.url } : {}),
-    ...(itemList.numberOfItems ? { numberOfItems: itemList.numberOfItems } : {}),
-    itemListElement: itemList.itemListElement,
+    ...(itemList
+      ? {
+          name: itemList.name,
+          ...(itemList.description ? { description: itemList.description } : {}),
+          ...(itemList.url ? { url: itemList.url } : {}),
+          ...(itemList.numberOfItems ? { numberOfItems: itemList.numberOfItems } : {}),
+          itemListElement: itemList.itemListElement,
+        }
+      : data),
   };
-} else if (type === 'HowTo' && howto) {
+} else if (type === 'HowTo' && (howto || data)) {
   schema = {
     ...schema,
     '@type': 'HowTo',
-    name: howto.name,
-    description: howto.description,
-    ...(howto.image ? { image: howto.image } : {}),
-    ...(howto.totalTime ? { totalTime: howto.totalTime } : {}),
-    ...(howto.estimatedCost ? { estimatedCost: howto.estimatedCost } : {}),
-    step: howto.steps.map((s, i) => ({
-      '@type': 'HowToStep',
-      position: i + 1,
-      name: s.name,
-      text: s.text,
-      ...(s.image ? { image: s.image } : {}),
-      ...(s.url ? { url: s.url } : {}),
-    })),
+    ...(howto
+      ? {
+          name: howto.name,
+          description: howto.description,
+          ...(howto.image ? { image: howto.image } : {}),
+          ...(howto.totalTime ? { totalTime: howto.totalTime } : {}),
+          ...(howto.estimatedCost ? { estimatedCost: howto.estimatedCost } : {}),
+          step: howto.steps.map((s, i) => ({
+            '@type': 'HowToStep',
+            position: i + 1,
+            name: s.name,
+            text: s.text,
+            ...(s.image ? { image: s.image } : {}),
+            ...(s.url ? { url: s.url } : {}),
+          })),
+        }
+      : data),
   };
 }
 ---
