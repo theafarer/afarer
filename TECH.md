@@ -716,6 +716,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：wire applied 1 / already 14 / pending 0（收官）；无 templ 无需重跑 extract；checker `pages checked: 15, missing: 0, stale: 0 PASS`；generate **15 模块**；astro check 0 errors；build 13,858 页 3m25s（4096 堆）。campaign 15/15 页全部接线完毕。
 
+#### L60. 分片 70：挂账清理批（pl inflatable 残留 / da brætter / news-page2·compare·use-cases 标题 / contact 表单与三件套 / 404 href / academy mojibake）（2026-10）
+
+① **A 批 landing 数据修复（`_fix-shard70-pl-da.cjs` 归档）**：pl all-around-sup 8 处 + marine-industry 13 处 "inflatable" EN 残留（validator 软扫描词表不含域词 inflatable 故历史漏网）→ 有序规则表替换为 dmuchany/dmuchana/dmuchane/dmuchanych 系（**规则顺序：具体/长串在前**，含大写开头三条 `Deska/Deski SUP inflatable` 与分离式 `sprzęt do sportów wodnych inflatable`；末尾零残留断言 `/inflatable/i`），共 22 处（含 da sup-accessories title `oppustelige brædder`→`brætter`）。教训：**dry-run 首跑暴露 2 处规则盲区**（大写开头 + 介词分离式），规则表须由 dry 输出迭代而非一次成型。
+
+② **C1a 404 href 修复（`_fix-shard70-resources-href.cjs` 归档）**：18 locale brand-why-afarer.yaml hero CTA 裸 `href: /resources` → `/resources/download-catalog`（EN/fr 基线对照；`[lang]/resources.astro` 为 getStaticPaths 返回 `[]` 的死页，无害保留）。ui.da 17 键 "SUP-brædder" 为 da 语 bræt 的合法复数形之一（板材义，如 gulvbrædder），与 sup-accessories 文件内部 brætter 不一致属词形选择而非错拼，**不改**，留待母语审校。
+
+③ **B 批源码 i18n**：compare/use-cases hub title 硬编码 EN → `t('compare.hubTitle'/'useCase.hubTitle') | SITE.name`（键 21 locale 既有）；news/page/[page] 从 EN 根 yaml 改 `getPageContent(lang,'news')`（hero 本地化）+ 新 ui 键 `blog.page` ×21（de Seite/ja ページ/th หน้า 等）拼 `— ${t('blog.page')} ${currentPage}`（面包屑同步）；academy L156 JSON-LD mojibake `�?` → em-dash；contact `t()` 优先级 `lang→en→fallback` 改 `lang→fallback→en`（**修复 ft(contact-form-text.yaml 仅 en/fr/de/es/pt) EN 值压过 21 locale 已本地化页面 YAML 的根因**），submit/success/error/consent 调用点传页面 YAML 作 fallback；三件套 `fr('Address','Adresse')` 等 → `tnav('home.contact.address/phone/email')`（键 21 locale 既有）；**新发现并修复**：ContactUs widget 步骤条 `_ui('contact.step1/2/3', EN)` 三键全缺 → 新增 ×21（Project Details/Contact Information/Message），contact.astro h3 死 fallback `'Contact Information'`（quick_info 任何 yaml 都不存在）→ `tnav('contact.step2')`。
+
+④ **回归数字**：checker `15, missing: 0, stale: 0 PASS`（纯值修复不动键集）；generate 15 模块 + seo-meta 1486 entries；astro check 0 errors（1117 files）；build 13,858 页 3m31s；walk `_shard70-walk.cjs` **366/366 PASS**（21 locale ×：pl 可见文本零 inflatable、da title brætter、compare/use-cases title 逐字符等值、news/page/2 含 hero+页码词、contact 三件套+step1-3+非 ft 语言表单 YAML 值、why-afarer href、academy em-dash）。**walk 教训**：residue 断言必须限可见文本（先剥 `<script>/<style>` 再剥标签）——URL slug/资源文件名（inflatable-sup、afarer-inflatable-boat.webp）与 JSON-LD 合法含英文词；ft 语言（en/fr/de/es/pt）表单断言须按 ft 优先级或仅断言无 EN 残留（widget 内联脚本的 `|| 'Send message'` JS 后备不是可见文本）。
+
 ---
 
 

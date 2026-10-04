@@ -62,6 +62,8 @@ TOOLS/
 │   ├── _merge-inflatable-sup.cjs  # 分片 67 合并器：inflatable-sup part → inflatable-sup.json（48 键 plain）
 │   ├── _merge-disclaimer.cjs      # 分片 68 合并器：disclaimer part → disclaimer.json（39 键含 1 templ；templ 映射版沿 shard 64/65）
 │   ├── _merge-afarer-story.cjs    # 分片 69 合并器：afarer-story part → afarer-story.json（6 键 plain，无 shared；campaign 收官 15/15）
+│   ├── _fix-shard70-pl-da.cjs     # 分片 70 挂账修复：pl all-around/marine 21 处 inflatable 残留有序规则表替换 + da brædder→brætter（--dry；零残留断言）
+│   ├── _fix-shard70-resources-href.cjs # 分片 70 挂账修复：18 locale brand-why-afarer.yaml 裸 /resources 404 href → /resources/download-catalog（--dry；期望 18 行断言）
 │   └── _landing-manifest.json     # 提取器输出（15 页 fr()/frArr() 调用清单 + 唯一 EN 键）
 ├── eslint/                 # 代码规范批量清理工具
 │   └── strip-explicit-any.cjs  # 批量移除 .astro 回调参数冗余 `: any` 注解（支持 --dry 试跑）

@@ -21,7 +21,6 @@ const branding = (cfg as any)?.branding || {};
 import { pageContentData } from '~/i18n/generated/data';
 import formTextData from '~/data/site/contact-form-text.yaml';
 const lang = Astro.params.lang || 'en';
-const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 const tnav = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'contact');
@@ -30,7 +29,7 @@ const data = page && Object.keys(page).length > 0 ? page : {};
 const ft: any = formTextData ?? {};
 
 function t(record: Record<string, string> | undefined, fallback = ''): string {
-  return record?.[lang] || record?.en || fallback;
+  return record?.[lang] || fallback || record?.en || '';
 }
 
 const ht = data.hero_text ?? {};
@@ -65,11 +64,11 @@ const countryCodes =
     })
   ) ?? [];
 
-const submitButton = t(ft.submit_button) || form.submit_button || 'Send message';
-const successMessage = t(ft.success_message) || form.success_message || 'Thanks!';
-const errorMessage = t(ft.error_message) || form.error_message || 'Something went wrong.';
-const consentText = t(ft.consent_text) || form.consent?.text;
-const consentLinkText = t(ft.consent_link_text) || form.consent?.link_text;
+const submitButton = t(ft.submit_button, form.submit_button || 'Send message');
+const successMessage = t(ft.success_message, form.success_message || 'Thanks!');
+const errorMessage = t(ft.error_message, form.error_message || 'Something went wrong.');
+const consentText = t(ft.consent_text, form.consent?.text || '');
+const consentLinkText = t(ft.consent_link_text, form.consent?.link_text || '');
 
 const consent = form.consent
   ? {
@@ -134,7 +133,7 @@ const metadata = {
       </div>
       <div class="md:col-span-2 space-y-8">
         <div class="bg-white rounded-2xl border border-gray-200 p-6 space-y-6">
-          <h3 class="text-lg font-semibold text-gray-900">{data.quick_info?.title || 'Contact Information'}</h3>
+          <h3 class="text-lg font-semibold text-gray-900">{data.quick_info?.title || tnav('contact.step2')}</h3>
           <div class="space-y-5">
             <div class="flex items-start gap-4">
               <div class="w-10 h-10 bg-sky-50 rounded-lg flex items-center justify-center text-sky-600 shrink-0">
@@ -150,7 +149,7 @@ const metadata = {
                 >
               </div>
               <div>
-                <p class="font-medium text-gray-900">{fr('Address', 'Adresse')}</p>
+                <p class="font-medium text-gray-900">{tnav('home.contact.address')}</p>
                 <p
                   class="text-sm text-gray-500"
                   set:html={branding.address || 'Economic Development Zone, Laixi, Qingdao, China, 266600'}
@@ -172,7 +171,7 @@ const metadata = {
                 >
               </div>
               <div>
-                <p class="font-medium text-gray-900">{fr('Phone', 'Téléphone')}</p>
+                <p class="font-medium text-gray-900">{tnav('home.contact.phone')}</p>
                 <p class="text-sm text-gray-500">{branding.phone || '213-557-7888'}</p>
               </div>
             </div>
@@ -190,7 +189,7 @@ const metadata = {
                 >
               </div>
               <div>
-                <p class="font-medium text-gray-900">{fr('Email', 'E-mail')}</p>
+                <p class="font-medium text-gray-900">{tnav('home.contact.email')}</p>
                 <p class="text-sm text-gray-500">{branding.email || 'info@afarer.com'}</p>
               </div>
             </div>
