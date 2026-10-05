@@ -760,6 +760,14 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **回归数字**：`_foc-diff.cjs`（临时）确认 19 locale 唯一未译值即 hero.subtitle；generate 全链 13857 routes；check 四合一 exit=0 且 **check:i18n 0 issue / 0 warning**（19 条既有警告全清）；build（4096）13,858 页 3m60s；walk `_foc-walk.cjs` **21/21 PASS**（19 locale 页译句渲染 + EN 残留为零 + EN 根页与 /en/ 页原文不变）。**教训**：node -e 内嵌模板字符串经 PowerShell 双引号转发时 `${loc}` 被 PS 吞掉——临时脚本改用 edit 工具直改，或外置 .cjs 文件。
 
+#### L64. 分片 74：contact 页国家下拉 16 语言补译（countries.yaml label 扩键）（2026-10）
+
+① **背景**：`src/data/site/countries.yaml` 195 国 `label` 仅有 en/fr/de/es/pt 五键，contact 页国家下拉（`contact.astro` 回退 `c.label?.[lang] || c.label?.en || c.value`）在 16 个已翻译 locale（it,ja,ko,ru,pl,ar,nl,sv,no,el,tr,fi,cs,da,ro,th）全部回退 EN。keystatic admin（`countries.astro`）动态读 `label.(.+)` 无 schema 锁定，加键安全；消费点仅 contact 页（经 `site-countries.ts` + data.ts，34 语言共用同一数组）。13 个 EN-fallback locale（hr/hu 等）行为不变。注意非 en locale 实为 20 个（fr,de,es,pt 已有 + 16 新译），此前台账"15 语言"系计数笔误。
+
+② **批量脚本**：翻译表按语言分文件 `TOOLS/one-off/_countries-tbl-<loc>.json` ×16（key=EN 国名，195 条/文件；单文件过大 write 会截断）；合并脚本 `TOOLS/one-off/_gen-countries-locales.cjs`（--dry/--write 幂等）：行级插入——每块 `pt:` 行后按固定顺序插 16 行，其余字节原样（BOM+EOL 保留），不做 js-yaml 重排；覆盖校验（每 locale 195 键与 yaml value 集 diff）自动定位人工漏译的 Costa Rica（此前"差 1 待定位"即它）；已应用检测（存在 `      it: ` 行即退出）。YAML 裸标量安全（撇号居中合法，镜像既有 `Côte d'Ivoire` 写法）。
+
+③ **回归数字**：yaml diff 恰 3,120 行插入（195×16）；generate 全链 13857 routes；check 四合一 exit=0；build（4096）13,858 页 5m14s；walk `_countries-walk.cjs` **21/21 PASS**——16 locale contact 页含本地化样本（ja "セントビンセントおよびグレナディーン諸島" 等）且 EN 串仅存于 `value=` 属性（表单规范值，合法）；en/fr/de/es/pt 不变。**教训**：① walk 断言 EN 残留须排除 `value="..."` 属性（option 的 value 是 canonical EN slug 不能本地化，残留判定只看可见文本）；② de 既有标签是缩写 "St. Vincent und die Grenadinen"，"unchanged" 基线要以 yaml 实际值为准而非想当然全称。
+
 ---
 
 
