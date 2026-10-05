@@ -752,6 +752,14 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **回归数字**：generate 全链（15 landing 模块 / 227 pages / seo-meta 1486 / route-manifest 13857）；astro check 0 errors（1138 files，新增 18 yaml 计入）；build（4096）13,858 页 3m34s；walk `_s72-walk.cjs` **38/38 PASS**（EN 根页零变化、de/fr 既有变体首次真正渲染、12 locale 抽样 badge 标题本地化 + 9 locale EN 残留为零、de contact + de/ja 产品页（`layout="row"` 路径）本地化、da sup-accessories 两拼写修复落地、de engineering-team Afafers 清除、ar RTL 页正常）。**教训**：① walk 断言前先确认目标页确实渲染该组件（[lang]/oem-odm-manufacturer 不用 TrustBadges，断言写成 FAIL 假警）；② PowerShell `[lang]` 路径必须 `-LiteralPath`（通配符吞文件）；③ 挂账文字会失真——da "afafers" 实际已在 `f162b593` 修过（git log -S 复核后才标记），真实残留是 de engineeringTeam.desc 的同族拼写。
 
+#### L63. 分片 73：factory-oem-capability hero.subtitle 19 语言补译（check:i18n 警告清零）（2026-10）
+
+① **背景**：check:i18n 的 19 条既有 warning（每 locale 1 条 "long English value unchanged"）同源——`src/data/pages/<loc>/factory-oem-capability.yaml` 的 `hero.subtitle`（"From concept to container — customize every detail of your inflatable watercraft line"）19 语言全部未译；fr 已有参考译文（"Du concept au conteneur — personnalisez chaque détail de votre gamme SUP gonflable"）。术语复用各语言 meta.description 既有译法（concept/container/SUP 系列词逐语言镜像）；ja 沿站点先例用双 dash `——`，其余单 `—`；句尾无句号镜像 EN/FR。注意路由是 `/[lang]/factory/oem-capability/`（不是 `/factory-oem-capability/`）。
+
+② **批量脚本**：`TOOLS/one-off/_fix-oem-hero-subtitle.cjs`（--dry/--write 幂等，翻译表内嵌 `T`，逐文件断言 EN 原行精确命中 x1 才替换，BOM 保留），19 文件各 1 行。
+
+③ **回归数字**：`_foc-diff.cjs`（临时）确认 19 locale 唯一未译值即 hero.subtitle；generate 全链 13857 routes；check 四合一 exit=0 且 **check:i18n 0 issue / 0 warning**（19 条既有警告全清）；build（4096）13,858 页 3m60s；walk `_foc-walk.cjs` **21/21 PASS**（19 locale 页译句渲染 + EN 残留为零 + EN 根页与 /en/ 页原文不变）。**教训**：node -e 内嵌模板字符串经 PowerShell 双引号转发时 `${loc}` 被 PS 吞掉——临时脚本改用 edit 工具直改，或外置 .cjs 文件。
+
 ---
 
 
