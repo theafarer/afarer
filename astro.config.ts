@@ -25,7 +25,7 @@ export default defineConfig({
     sitemap({
       filter: (page) => {
         const exclude =
-          /\/(?:keystatic|admin|login|404|500|about\/afarer|aquafarer|brand(?!\/team)|brand-story|commercial-workboats|disaster-relief-humanitarian-aid|oem-process|quality-testing|search-rescue-operations|solutions-(?:diving-center-boats|fishing-boat-solutions|marine-tourism-equipment|rescue-watercraft|yacht-tender-solutions))(?:\/|$)/;
+          /\/(?:keystatic|admin|login|internal|404|500|about\/afarer|aquafarer|brand(?!\/team)|brand-story|commercial-workboats|disaster-relief-humanitarian-aid|oem-process|quality-testing|search-rescue-operations|solutions-(?:diving-center-boats|fishing-boat-solutions|marine-tourism-equipment|rescue-watercraft|yacht-tender-solutions))(?:\/|$)/;
         return !exclude.test(page);
       },
     }),

@@ -1,42 +1,50 @@
 User-agent: GPTBot
 Allow: /
 Disallow: /keystatic/
+Disallow: /internal/
 Disallow: /api/
 
 User-agent: ChatGPT-User
 Allow: /
 Disallow: /keystatic/
+Disallow: /internal/
 Disallow: /api/
 
 User-agent: ClaudeBot
 Allow: /
 Disallow: /keystatic/
+Disallow: /internal/
 Disallow: /api/
 
 User-agent: PerplexityBot
 Allow: /
 Disallow: /keystatic/
+Disallow: /internal/
 Disallow: /api/
 
 User-agent: Google-Extended
 Allow: /
 Disallow: /keystatic/
+Disallow: /internal/
 Disallow: /api/
 
 User-agent: Applebot-Extended
 Allow: /
 Disallow: /keystatic/
+Disallow: /internal/
 Disallow: /api/
 
 User-agent: anthropic-ai
 Allow: /
 Disallow: /keystatic/
+Disallow: /internal/
 Disallow: /api/
 
 User-agent: *
 Allow: /
 Disallow: /keystatic/
 Disallow: /admin/
+Disallow: /internal/
 Disallow: /api/
 Disallow: /login/
 

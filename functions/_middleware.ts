@@ -146,6 +146,30 @@ const I18N_EXCLUDED = [
   '/yoga-sup',
   '/odm-sup-board',
   '/oem-sup-board',
+  // root-only pages with no /en/ equivalent: without exclusion the EN rewrite
+  // below turns them into live 404s (dist root asset exists but is never served)
+  '/ai-context',
+  '/about/afarer-brand',
+  '/bundles',
+  '/compare/pvc-vs-hypalon',
+  '/guides/kayak-techniques',
+  '/resources/download-catalog',
+  '/solutions/diving-center-boats',
+  '/solutions/fishing-boat-solutions',
+  '/solutions/marine-tourism-equipment',
+  '/solutions/oem-brands',
+  '/solutions/rescue-watercraft',
+  '/solutions/yacht-tender-solutions',
+  '/research/board-hull-design',
+  '/research/eva-foam-technology',
+  '/research/fin-systems-guide',
+  '/research/fusion-lamination-vs-glue',
+  '/research/military-grade-pvc-specs',
+  '/research/quality-testing-standards',
+  '/research/sup-manufacturing-process',
+  '/research/sup-paddle-technology',
+  '/research/sup-valve-types',
+  '/research/uv-printing-vs-eva-block',
 ];
 const ASSET_PREFIXES = ['/images', '/files'];
 

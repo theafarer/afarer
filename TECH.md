@@ -788,6 +788,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+#### L67. 分片 77：middleware i18n rewrite 致 22 个 root-only 页面线上 404（含全站 footer Catalog 链接）+ internal/seo 泄漏 sitemap（2026-10）
+
+① **定界**：追查 L66 挂账的 `/ai-context/` 404 时定位到机制真身——**`functions/_middleware.ts`（CF Pages Function，`wrangler pages deploy dist/` 从仓库根 `functions/` 目录打包部署，非 zone 规则非 workers 路由，四 worker 均只绑 `/api/*`）**：无 locale 前缀路径按 cookie `x-user-locale` → `cf-ipcountry` → `accept-language` 检测 locale，非 EN 302 跳 `/<loc><path>`，EN **rewrite 到 `/en/<path>`**（L230-232）；`I18N_EXCLUDED` 清单内路径跳过 rewrite 直服 root dist 页。由此推论：**root dist 页凡有 `/en/` 等价物即被 shadow（live 服务 en 版），无等价物且不在 EXCLUDED 即线上 404**（dist 资产在、永远不被服务）。全量对账（root 页 × `/en/` 等价 × EXCLUDED 三集合差）：339 页 shadow（正常）、**22 页公开内容页 404**——`/ai-context`、`/about/afarer-brand`、`/bundles`、`/compare/pvc-vs-hypalon`、`/guides/kayak-techniques`、`/resources/download-catalog`、`/solutions/{6 B2B 页}`、`/research/{10 篇}`；其中 **`/resources/download-catalog` 被 13,314 页 footer "Downloads & Manuals" 链接引用（全站 footer 链接线上 404）**，research ×10 各有 1 页内链，compare/pvc-vs-hypalon 9 页内链，10 页零内链。线上抽样 7 页 404 + EXCLUDED 页 200 全实锤。附带发现：**`internal/seo/*` 页泄漏进 sitemap-0.xml**（astro.config sitemap filter 缺 `internal` 项）且 robots.txt 8 个 UA block 均无 `Disallow: /internal/`。
+
+② **修复**（3 文件）：`functions/_middleware.ts` I18N_EXCLUDED 追加 22 路径（33→56 项，含注释说明 root-only 页无豁免即 404 的因果；精确路径不加宽前缀——`/research` 整段豁免会把 6 个已有 [lang] 版的 research 页从 en 内容切到 root 版，行为回退）；`astro.config.ts` sitemap exclude regex 增 `internal`（`\/internal(?:\/|$)` 段边界，不误伤含 internal 字样的合法路径）；`public/robots.txt` 8 个 UA block 全部加 `Disallow: /internal/`。选豁免清单而非 rewrite-404-回退方案：与既有 16 landing + 5 alias 豁免模式一致、零核心路由行为变更、无双重回源开销。
+
+③ **回归数字**：check 四合一绿 → build 13,858 页 3m38s → dist 验证三 PASS（sitemap-0.xml 0 `internal/seo`、13,322 URL；robots `/internal/` ×8；middleware 逻辑离线重放——22 路径 × 带/不带尾斜杠全豁免 + 既有豁免项无回归 + `/guides/beginner-guide` `/products` 等正常路径不被误豁免）。注意：middleware 行为本地 dist 不可验，需部署后线上验证 22 页 200。教训：`String.matchAll` 无捕获组时取 `m[0]` 非 `m[1]`；孤儿页分析三集合差（root × en-equiv × EXCLUDED）是此类 shadow/404 定界的标准算法。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 
