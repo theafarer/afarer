@@ -27,7 +27,7 @@ const categories = page.categories ?? {};
 const cta = page.cta ?? {};
 
 const metadata = {
-  title: page.meta?.title || `Learn — ${SITE.name} Water Sports Guides & Knowledge`,
+  title: (page.meta?.title || `Learn — ${SITE.name} Water Sports Guides & Knowledge`).replace('{SITE}', SITE.name),
   description:
     page.meta?.description ||
     t('learn.metaDesc') ||

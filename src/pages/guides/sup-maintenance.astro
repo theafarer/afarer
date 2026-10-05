@@ -1,9 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `SUP Maintenance & Storage Guide –{SITE.name}`,
+  title: `SUP Maintenance & Storage Guide –${SITE.name}`,
   description:
     'Complete guide to cleaning, storing, and maintaining your inflatable SUP board. UV protection, valve care, pressure management, and winter storage.',
 };

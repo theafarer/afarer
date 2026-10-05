@@ -6,6 +6,7 @@ import JsonLd from '~/components/common/JsonLd.astro';
 import AiQuickAnswer from '~/components/common/AiQuickAnswer.astro';
 
 import { languages } from '~/i18n/config';
+import { SITE } from 'astrowind:config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { landingI18n as __landing } from '~/i18n/generated/landing/marine-industry';
 
@@ -23,12 +24,13 @@ const frArr = (en: string[], francais: string[]) => (lang === 'fr' ? francais : 
 const SECTION_IDS = ['types', 'construction', 'materials', 'selection', 'safety', 'maintenance', 'applications'];
 
 const metadata = {
-  title:
+  title: (
     t('marineIndustry.metaTitle') ||
     fr(
       'Inflatable SUP & Water Sports Guide — Materials, Selection & Safety',
       'Guide SUP Gonflable & Sports Nautiques — Matériaux, Sélection & Sécurité'
-    ),
+    )
+  ).replace(/\{SITE\}/g, SITE.name),
   description:
     t('marineIndustry.metaDesc') ||
     fr(

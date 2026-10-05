@@ -68,7 +68,7 @@ const crumbs = [
 
 const metadata = {
   title: page.meta.title.replace('{SITE}', SITE.name),
-  description: page.meta.description,
+  description: page.meta.description.replace('{SITE}', SITE.name),
 };
 
 const ctaActions = [
@@ -249,8 +249,8 @@ const ctaActions = [
   <JsonLd
     type="Service"
     service={{
-      name: page.brandName || page.meta.title,
-      description: page.meta.description,
+      name: page.brandName || page.meta.title.replace('{SITE}', SITE.name),
+      description: page.meta.description.replace('{SITE}', SITE.name),
       serviceType: 'OEM/ODM Manufacturing',
       areaServed: ['Global'],
       url: `/${lang}/solutions/${page.slug}`,

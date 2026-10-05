@@ -1,9 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `Inflatable Boat Care & Repair –{SITE.name}`,
+  title: `Inflatable Boat Care & Repair –${SITE.name}`,
   description:
     'Complete guide to repairing inflatable SUPs, kayaks, and boats. Puncture repair, valve replacement, seam repair, and preventive maintenance.',
 };

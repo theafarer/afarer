@@ -778,6 +778,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+#### L66. 分片 76：dist 全站 `{SITE}` 占位符泄漏清零（715 处 / 452 文件，6 类源头）（2026-10）
+
+① **定界**：dist 全量扫描（node walk，14,124 文件）发现 **715 处 `{SITE` 字面量泄漏进 452 个产出文件**——分片 75 只修了 llms 生成器一条链，页面渲染侧同病根家族未清。6 类源头：**A** 13 个 root 页面（ai-context、products/compare、guides/index + 10 个 guide 主题页）title 模板串漏 `$`（`–{SITE.name}` 字面量，且 13 文件均未 import SITE——`$` 被故意省掉以避开编译错误）；**B** `[lang]/marine-industry` `t('marineIndustry.metaTitle')` UI 字典值尾 `| {SITE}` 无渲染侧替换（20 locale × title/og:title/og:image:alt）；**C** `[lang]/learn` 13 个 EN-fallback locale（bg,et,he,hr,hu,id,lt,lv,ms,sk,sl,sr,tl）回退 EN yaml `meta.title` 值含 `| {SITE}` 无替换；**D** `[lang]/solutions/[slug]` L70 title 有 replace 但 L71 description + L253 JsonLd Service description/name 直读 `page.meta.description`（6 slug ×34 locale × meta-desc/og-desc/jsonld）；**E** randdcenter 6 页正文 `{SITE.name}`——**数据层 bug**：124 个 yaml（6 页 × root + 21 语言目录）`intro`/`content_html` 正文键含 165 处 `{SITE.name}` 字面量，正文经 `set:html` 原样渲染、无任何渲染侧替换管道（meta 的 `{SITE}` 是合法占位符惯例，正文从来不是）；**F** `search-index.json.ts` 读 home/about/contact yaml 的 section titles（含 `meta.title`）进 tags/excerpt 无替换。
+
+② **修复**（渲染侧对齐既有 `.replace('{SITE}', SITE.name)` 惯例 + 数据级根治）：A 批量脚本加 `import { SITE } from 'astrowind:config'` + 补 `$`（13 文件 ×2 处，dry→write→git diff 验证）；B/C 页面 title 包 `.replace(/\{SITE\}/g, SITE.name)`（marine-industry 补 SITE import）；D `[slug].astro` description ×2 + JsonLd name 补 replace（replaceAll 因缩进差异漏 L71——6 空格只命中 JsonLd 处，2 空格 metadata 处须单独 edit）；E `TOOLS/one-off/_fix-site-name-yaml.cjs`（已归档登记）数据级 `{SITE.name}` → `Afarer`（124 文件 / 165 处 / 零残留断言）——正文占位符选择数据根治而非渲染侧补丁，因 `set:html` 无替换点且 `{SITE.name}` 从非正文支持惯例；F search-index `sectionTitles.push` 加 replace（`import { SITE as SITE_CFG }` 别名——该文件 `const SITE = ''` 用于拼相对 URL，直接 import 会冲突成 `[object Object]/`）。
+
+③ **回归数字**：generate 全链 → check 四合一绿（prettier 格式化 learn/marine-industry/tool_instrction 3 文件后全过）→ build（4096）13,858 页 3m14s → **dist 全扫 14,124 文件 0 `{SITE`**；抽查 7 处全 PASS（ai-context/guides title `–Afarer`、de marine-industry、hu learn、ja randdcenter 正文 `Afarerにおいて`、fr solutions desc/og/Service JsonLd 均 `Afarer helps...`、search-index tags `| Afarer`）。教训：JsonLd `set:html={JSON.stringify(schema)}` **无空格紧凑输出**，断言 needle 不能带 `"@type": "Service"` 空格形态。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 

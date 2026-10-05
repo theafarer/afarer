@@ -2,9 +2,10 @@
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 import { guides } from '~/data/guides';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `Guides –{SITE.name}`,
+  title: `Guides –${SITE.name}`,
   description:
     'Beginner guides for SUP and water sports. Learn how to choose your SUP, safety tips, inflatable vs hard board comparisons, paddling techniques, and more.',
 };

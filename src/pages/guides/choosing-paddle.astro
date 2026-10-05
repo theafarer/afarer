@@ -1,9 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `Choosing the Right Paddle –{SITE.name}`,
+  title: `Choosing the Right Paddle –${SITE.name}`,
   description:
     'Guide to selecting the right SUP paddle: materials (aluminum, fiberglass, carbon), blade shapes, shaft types, and sizing for your height.',
 };

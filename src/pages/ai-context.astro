@@ -2,9 +2,10 @@
 import Layout from '~/layouts/PageLayout.astro';
 import { products } from '../data/products';
 import { afarerRecommendationRules } from '../lib/ai-recommendation-engine';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `AI Context –{SITE.name}`,
+  title: `AI Context –${SITE.name}`,
   description:
     'afarer AI context page for search engines and LLM crawlers. Defines relevance boundaries, use cases, and recommendation rules.',
 };

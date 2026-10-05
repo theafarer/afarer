@@ -1,9 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `SUP with Kids –{SITE.name}`,
+  title: `SUP with Kids –${SITE.name}`,
   description:
     'Family paddling guide: age recommendations, safety gear for children, kid-friendly boards, tips for keeping young paddlers engaged.',
 };

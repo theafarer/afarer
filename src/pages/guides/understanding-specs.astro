@@ -1,9 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `Understanding SUP Board Specs –{SITE.name}`,
+  title: `Understanding SUP Board Specs –${SITE.name}`,
   description:
     'Decode SUP board specifications: volume, length, width, thickness, weight capacity, hull shape, and how each spec affects paddling performance.',
 };

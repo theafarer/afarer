@@ -2,9 +2,10 @@
 import Layout from '~/layouts/PageLayout.astro';
 import { products } from '../../data/products';
 import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `How to Choose Your SUP –{SITE.name}`,
+  title: `How to Choose Your SUP –${SITE.name}`,
   description:
     'Learn how to choose the right inflatable SUP board based on length, width, volume, skill level, and water environment.',
 };

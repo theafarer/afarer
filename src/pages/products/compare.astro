@@ -3,9 +3,10 @@
 
 import Layout from '~/layouts/PageLayout.astro';
 import { getProducts } from '~/utils/products';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `Product Comparison –{SITE.name}`,
+  title: `Product Comparison –${SITE.name}`,
   description:
     'Compare afarer inflatable SUPs, kayaks, dinghies, RIBs, and accessories side by side. Length, width, weight, capacity, and more.',
 };

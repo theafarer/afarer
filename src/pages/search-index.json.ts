@@ -2,6 +2,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import yaml from 'js-yaml';
+import { SITE as SITE_CFG } from 'astrowind:config';
 
 export const prerender = true;
 
@@ -300,7 +301,7 @@ export const GET: APIRoute = async () => {
     for (const [k, v] of Object.entries(data)) {
       if (k === heroKey) continue;
       const t = (v as any)?.title;
-      if (typeof t === 'string') sectionTitles.push(t);
+      if (typeof t === 'string') sectionTitles.push(t.replace(/\{SITE\}/g, SITE_CFG.name));
     }
     const url = slug === 'home' ? `${SITE}/` : `${SITE}/${slug}`;
     const title =

@@ -1,9 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `Inflatable vs Hard SUP Board –{SITE.name}`,
+  title: `Inflatable vs Hard SUP Board –${SITE.name}`,
   description:
     'Compare inflatable drop-stitch SUP boards vs rigid epoxy/fiberglass boards. Portability, durability, performance, storage, and cost differences explained.',
 };

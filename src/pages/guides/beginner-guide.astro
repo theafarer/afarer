@@ -1,9 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `Beginner's Guide to SUP Paddling –{SITE.name}`,
+  title: `Beginner's Guide to SUP Paddling –${SITE.name}`,
   description:
     'Step-by-step guide for first-time SUP paddlers. Learn stance, stroke technique, turning, safety checks, and how to launch.',
 };
