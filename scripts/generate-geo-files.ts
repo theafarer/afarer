@@ -74,6 +74,7 @@ function extractPageTitle(content: string): string | null {
     const val = parsed[key];
     if (val && typeof val === 'object' && val.title) {
       return String(val.title)
+        .replace(/\{SITE\}/g, 'Afarer')
         .replace(/<br\s*\/?>/gi, ' ')
         .replace(/\s+/g, ' ')
         .trim();
@@ -196,11 +197,14 @@ function main(): void {
   if (fs.existsSync(LLMS_FULL_TXT)) {
     const existing = fs.readFileSync(LLMS_FULL_TXT, 'utf8');
     const sitePagesIdx = existing.indexOf('\n## Site Pages');
-    if (sitePagesIdx !== -1) {
-      baseParts.push(existing.slice(0, sitePagesIdx).trim());
-    } else {
-      baseParts.push(existing.trim());
+    let base = sitePagesIdx !== -1 ? existing.slice(0, sitePagesIdx) : existing;
+    // Strip any previously appended Company Facts sections (idempotency:
+    // older builds appended a fresh section on every run)
+    const factsIdx = base.indexOf('\n## Company Facts');
+    if (factsIdx !== -1) {
+      base = base.slice(0, factsIdx);
     }
+    baseParts.push(base.trim());
   } else {
     // Default base
     baseParts.push(
@@ -240,6 +244,7 @@ function main(): void {
   const output =
     baseParts
       .join('')
+      .replace(/\r\n/g, '\n')
       .replace(/\n{3,}/g, '\n\n')
       .trim() + '\n';
   fs.writeFileSync(LLMS_FULL_TXT, output);

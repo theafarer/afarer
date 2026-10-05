@@ -768,6 +768,14 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **回归数字**：yaml diff 恰 3,120 行插入（195×16）；generate 全链 13857 routes；check 四合一 exit=0；build（4096）13,858 页 5m14s；walk `_countries-walk.cjs` **21/21 PASS**——16 locale contact 页含本地化样本（ja "セントビンセントおよびグレナディーン諸島" 等）且 EN 串仅存于 `value=` 属性（表单规范值，合法）；en/fr/de/es/pt 不变。**教训**：① walk 断言 EN 残留须排除 `value="..."` 属性（option 的 value 是 canonical EN slug 不能本地化，残留判定只看可见文本）；② de 既有标签是缩写 "St. Vincent und die Grenadinen"，"unchanged" 基线要以 yaml 实际值为准而非想当然全称。
 
+#### L65. 分片 75：llms-full.txt 生成器双 bug 修复（{SITE} 占位符泄漏 1,398 处 + Company Facts 追加式膨胀 310 份）（2026-10）
+
+① **定界**：GEO 资产审计发现线上 `/llms-full.txt`（1.28MB，`geo-score.ts` 消费的 AI 爬虫资产）两个生成器 bug——A `scripts/generate-geo-files.ts` `extractPageTitle` 直读 yaml `meta.title`，未做页面渲染侧统一的 `.replace('{SITE}', SITE.name)`（Metadata.astro:49 等 20+ 处），1,398 条 Site Pages 标题全部以 `| {SITE}` 字面量上线（ja/about 等 21 locale 全中）；B 生成器每次运行把新 `## Company Facts` 段追加到 base（读旧文件至 `\n## Site Pages` 为止但不清旧 facts），HEAD 已累积 **310 份重复段**（3 个历史版本混杂），每次 `npm run build` 再 +1——"idempotent" 注释名不副实，这正是历次 build 后 llms-full.txt 漂移需 `git checkout` 还原的根因。附带发现：`git show > file` 的 PowerShell 重定向写 UTF-16LE（体积翻倍、ASCII 匹配全失效），对比文件须用 node 直写。
+
+② **修复**（12 行）：`extractPageTitle` 加 `.replace(/\{SITE\}/g, 'Afarer')`（SITE.name 来自 src/config.yaml，astrowind:config 虚拟模块在 node 脚本不可 import，硬编码镜像 Metadata.astro 回退值）；base 读取先切 `\n## Site Pages` 再切首个 `\n## Company Facts`（静态段 Brand Entity…Important Pages 全保留，L3/L153/L205 锚点验证）；输出加 `.replace(/\r\n/g, '\n')` 归一化（base 带 git autocrlf 的 CRLF、新段 LF，混合行尾会让精确匹配断言失效）。`generate-geo-files.mjs` 为死代码（无调用点）不动；`build-geo-v4.ts` 只写 llms.txt 无此问题；`clean-public-assets.mjs` 只删 images/files/data 不涉此文件。
+
+③ **回归数字**：`npm run build:geo` 连跑两次 **byte 级幂等**；文件 1,281,832 → **192,182 bytes**（-85%，310 份重复 facts 清除）；0 `{SITE}`、1 Company Facts、1 Site Pages（1,398 页）、1 Product Catalog（20 产品 ×34 语言）；prettier/eslint 绿；build（4096）13,858 页 5m9s 后 **`git status` 仅剩 2 个目标文件——llms-full.txt 漂移问题随幂等性修复永久消失，"commit 前必 checkout 还原"惯例就此废除**；`dist/llms-full.txt === public/` 字节一致。llms-full.txt 本分片**有意提交**再生成版本（含分片 55-74 翻译标题漂移同步），此后该文件随数据变更正常入库。
+
 ---
 
 
