@@ -42,7 +42,7 @@ const metadata = merge(
   {
     title: `Inflatable Boat & SUP Products | ${SITE.name}`,
     description: `Browse the full ${SITE.name} product catalog — inflatable SUP boards, kayaks, dinghies, RIBs, and accessories. Country distribution and co-branding for qualified water-sports partners.`,
-    canonical: getCanonical(getPermalink(PRODUCT_LIST)),
+    canonical: getCanonical(`/${lang}${getPermalink(PRODUCT_LIST)}`),
     robots: { index: !hidden, follow: true },
     openGraph: { type: 'website' },
   },

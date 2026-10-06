@@ -44,7 +44,7 @@ const metadata = merge(
   {
     title: `${activeCategory.toUpperCase()} — Inflatable Boat & SUP Products | ${SITE.name}`,
     description: `Browse ${SITE.name} ${activeCategory} products — OEM/ODM available. Factory-direct pricing.`,
-    canonical: getCanonical(getPermalink(PRODUCT_LIST)),
+    canonical: getCanonical(`/${urlSlug}`),
     robots: { index: !hidden, follow: true },
     openGraph: { type: 'website' },
   },

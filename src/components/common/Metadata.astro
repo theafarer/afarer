@@ -39,6 +39,33 @@ const {
 
 const currentLang = getLangFromUrl(Astro.url);
 
+// og:locale must reflect the page content language in xx_XX form. Only the 21
+// translated locales get their own value; EN-fallback locales (bg, et, he, hr,
+// hu, id, lt, lv, ms, sk, sl, sr, tl) serve English content -> en_US.
+const OG_LOCALE: Record<string, string> = {
+  en: 'en_US',
+  fr: 'fr_FR',
+  de: 'de_DE',
+  es: 'es_ES',
+  pt: 'pt_PT',
+  ar: 'ar_AR',
+  it: 'it_IT',
+  ja: 'ja_JP',
+  ko: 'ko_KR',
+  ru: 'ru_RU',
+  pl: 'pl_PL',
+  nl: 'nl_NL',
+  sv: 'sv_SE',
+  no: 'nb_NO',
+  el: 'el_GR',
+  tr: 'tr_TR',
+  fi: 'fi_FI',
+  cs: 'cs_CZ',
+  da: 'da_DK',
+  ro: 'ro_RO',
+  th: 'th_TH',
+};
+
 // Localized page meta (title/description/keywords) from the per-page YAML
 // `meta:` blocks, keyed by lang + path. When a page defines its own meta for
 // the current language, it takes precedence over route-level hardcoded values.
@@ -74,6 +101,9 @@ const mergedOg: MetaDataOpenGraph = merge(
   METADATA?.openGraph,
   { url: canonical, ...openGraph }
 );
+// METADATA.openGraph.locale (en_US in config.yaml) would otherwise override the
+// per-page language via the merge above — resolve the page's own og:locale last.
+mergedOg.locale = openGraph.locale || OG_LOCALE[currentLang || ''] || 'en_US';
 
 const adaptedOg = await adaptOpenGraphImages(mergedOg, Astro.site);
 

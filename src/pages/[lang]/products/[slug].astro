@@ -44,7 +44,7 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 const { product } = Astro.props as Props;
 const recRaw = productRecords.find((p) => p.id === product.slug);
 const rec = recRaw ? localizeProduct(recRaw, lang) : undefined;
-const url = getCanonical(getPermalink(product.permalink, 'product'));
+const url = getCanonical(`/${lang}${getPermalink(product.permalink, 'product')}`);
 const image = await findImage(product.image);
 const gallery = await Promise.all(
   (product.gallery ?? []).map(async (g: any) => ({

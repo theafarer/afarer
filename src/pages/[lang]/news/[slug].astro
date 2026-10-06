@@ -32,7 +32,7 @@ const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 const { post } = Astro.props;
 
-const url = getCanonical(getPermalink(post.permalink, 'post'));
+const url = getCanonical(`/${lang}${getPermalink(post.permalink, 'post')}`);
 const image = (await findImage(post.image)) as ImageMetadata | string | undefined;
 
 const pubDate = post.publishDate;
