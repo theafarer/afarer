@@ -7,8 +7,9 @@
  * exist in a subset of languages).
  *
  * NOTE: two-pass by design. The manifest reflects the previous dist/ state;
- * page sets are stable between builds. On a fresh clone (no dist/), an empty
- * manifest is written and the switcher falls back to legacy behavior.
+ * page sets are stable between builds. The manifest is COMMITTED to the repo
+ * (see .gitignore exception) so CI builds render hreflang alternates. When
+ * dist/ is missing (fresh checkout) the committed manifest is kept as-is.
  */
 const fs = require('fs');
 const path = require('path');
@@ -40,8 +41,13 @@ const routes = [];
 if (fs.existsSync(distDir)) {
   walk(distDir, '', routes);
   routes.sort();
+} else if (fs.existsSync(outFile)) {
+  // Fresh checkout (CI): no dist/ to scan, but a committed manifest exists.
+  // Keep it — an empty manifest would strip every hreflang alternate at build.
+  console.warn('[route-manifest] dist/ not found — keeping committed manifest.');
+  process.exit(0);
 } else {
-  console.warn('[route-manifest] dist/ not found — writing empty manifest (first build).');
+  console.warn('[route-manifest] dist/ not found and no existing manifest — writing empty manifest (first build).');
 }
 
 // Guard: a failed `astro build` leaves dist/ empty or partial (astro empties
@@ -64,6 +70,7 @@ if (fs.existsSync(outFile)) {
 
 if (write) {
   fs.mkdirSync(path.dirname(outFile), { recursive: true });
-  fs.writeFileSync(outFile, JSON.stringify(routes, null, 0) + '\n', 'utf8');
+  // 2-space indent matches prettier output (file is tracked; CI runs prettier --check)
+  fs.writeFileSync(outFile, JSON.stringify(routes, null, 2) + '\n', 'utf8');
   console.log(`[route-manifest] ${routes.length} routes -> ${path.relative(process.cwd(), outFile)}`);
 }

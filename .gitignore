@@ -46,7 +46,8 @@ public/files/
 
 public/data/
 optimized-assets/
-src/i18n/generated/
+src/i18n/generated/*
+!src/i18n/generated/route-manifest.json
 
 tmp-root.txt
 NUL
