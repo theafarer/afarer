@@ -881,7 +881,9 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **回归数字**：check 四合一绿（exit code 验证；prettier 17 文件 slot 删除后格式修复——**[warn] 过滤教训两次生效，均本地拦截**）→ build 13,859 页 → dist 验证 **29/29 实质 PASS**：EN 无 metadata 页 9→0；de/ja compare H1+title+desc+JsonLd headline 本地化；use-cases/guides/compare/warranty Article graph 全渲染（de headline "Touren- & Distanzpaddeln"）；geo-report root+de noindex,nofollow + sitemap-0 **11,198→11,164（−34 条 geo-report URL，预期变更）**；news/page/2 desc root+de 接通 news meta；hreflang 35、route-manifest 13,858、分片 83 category 标题、分片 84 keystatic noindex 零回归。ar compare 产品名回退 EN 属 nodes 数据级翻译缺失（见挂账）。
 
-④ **挂账（数据级 meta 翻译债，非模板接线，留待后续分片）**：(a) 22 posts ×20 locale 正文已译但 title/desc 全 EN；(b) v2 landing 144 页（18 locale × 8 页）H1 已译 title/desc EN；(c) products/* title+desc 全 EN；(d) `compareTemplate`/`useCaseFromNode` 模板骨架字符串硬编码 EN（": Comparison Guide"、"Comparison Overview" 等小节标题）；(e) nodes.ts 产品名 ar 等 locale 缺翻译回退 EN。
+④ **线上验证**（CI 双绿 37546234166 + 37546234134 后）：**23/23 PASS**——en/de/ja compare 抽验 3 页 title+H1+Article JsonLd 全通（de/ja 本地化确认）；en/de use-case 抽验 2 页同通；/geo-report + /de/geo-report noindex,nofollow；news/page/2 desc root+de 接通；sitemap-0 线上 **11,164** 与 dist 一致 + geo-report 0 条 + use-cases 在册；hreflang 35 零回归。commit `a7d6c15`。
+
+⑤ **挂账（数据级 meta 翻译债，非模板接线，留待后续分片）**：(a) 22 posts ×20 locale 正文已译但 title/desc 全 EN；(b) v2 landing 144 页（18 locale × 8 页）H1 已译 title/desc EN；(c) products/* title+desc 全 EN；(d) `compareTemplate`/`useCaseFromNode` 模板骨架字符串硬编码 EN（": Comparison Guide"、"Comparison Overview" 等小节标题）；(e) nodes.ts 产品名 ar 等 locale 缺翻译回退 EN。
 
 
 ---
