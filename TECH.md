@@ -863,6 +863,15 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 ⑤ **CI 红一次 + prettier 漏检教训 + 线上验证**：首个 fix commit（ffe6adea）CI 双红于 `npm run check` 的 prettier 段——3 个新改模板格式不合规（多行 title 模板字面量被 prettier 折叠），**本地 check 输出过滤（`Select-String "error|Result|All matched"`）恰好漏掉 `[warn]` 行造成假绿**——过滤 check 输出必须包含 `warn` 模式或看 exit code。修复 commit `1800031`（prettier --write 3 文件）后 CI 双绿（37479134779 + 37479135174）。**线上 11/11 PASS**：/de/news/category/company 200 + `Kategorie 'Company' — Afarer` + desc `Company — Aktuelle News...` + BreadcrumbList；ja カテゴリー / fr Catégorie / bg EN-fallback；/de/news/tag/boat-show `Schlagwort: 'boat show'` + noindex,follow 保持；sitemap-0 11,198 与 hreflang 35 零回归。
 
 
+#### L74. 分片 84：admin 面 noindex（keystatic ×135 全裸奔 + /login 家族 indexable）（2026-10）
+
+① **定界（L81 D 节 "keystatic ×~135 有意排除" 深挖）**：`/keystatic/*` 135 页（root-only，middleware I18N_EXCLUDED 直服 + astro.config sitemap 已排除，但页面本身**无任何 robots meta = 默认 index,follow**）——自建 "Afarer Admin" CMS 壳（AdminLayout + 客户端 GitHub API：posts/products/pages/case-use/technology 集合编辑 + l10n-health/validate-links/github-token 工具页），页面级 auth 为客户端 cookie（`ks-auth`）+ 服务端 verifySessionToken，**静态 HTML 壳本身公开可抓**。泄露排查：contact-submissions 渲染为空壳无真实数据（安全）。连带发现：**`/login`（PageLayout，index,follow + 自 canonical + sitemap 外）与 `/login/change-password`（裸 Layout，index,follow + 标题回退默认首页标题 "Afarer | Premium Inflatable SUP Boards..."）同为 indexable auth 页**。admin 面全量 = /keystatic ×135 + /login ×2（`_login.astro` 下划线前缀为 Astro 忽略路由不计）。
+
+② **实施（最小侵入，不删功能）**：admin UI 疑为在用编辑后台，仅加 noindex 不动功能——(1) `AdminLayout.astro` head 插一行 `<meta name="robots" content="noindex, nofollow" />`，**一处修改覆盖全部 135 页**（root 24 页 + 子目录 index/new/[slug] 全走该 layout，84+18 引用面验证）；(2) `login.astro` metadata 加 `robots: { index: false, follow: false }`（Metadata.astro L167-174 支持 per-page robots 覆盖）；(3) `login/change-password.astro` 补 metadata（noindex + 标题从默认首页标题修正为 `Change Password — Afarer`）。
+
+③ **回归数字**：check 四合一绿（exit code 验证）→ build 13,859 页 → dist 验证 **12/12 PASS**：135/135 keystatic 页 noindex,nofollow；/login 与 /login/change-password noindex,nofollow（后者标题修正）；sitemap-0 11,198 不变（login/keystatic 本就不在册）；hreflang 35、分片 83 category 标题、home index,follow 零回归。L80 D 节 "canonical missing 135 (keystatic)" 项就此定性关闭：noindex 页无需 canonical。
+
+
 ---
 
 
