@@ -125,6 +125,7 @@ const SITEMAP_EXCLUDED_PATHS = new Set([
   '/admin',
   '/login',
   '/internal',
+  '/geo-report',
   '/404',
   '/500',
   '/about/afarer',

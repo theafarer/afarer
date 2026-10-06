@@ -43,6 +43,10 @@ const productCategoryUrl: Record<string, string> = {
   'safety-equipment': '/v2/life-jacket-buying-guide',
 };
 
+const metaTitle = page?.title || slug || 'Use Case';
+const metaDesc = page?.description || 'Learn about Afarer inflatable boat applications across industries.';
+const metadata = { title: metaTitle, description: metaDesc };
+
 const relatedProductNodes = node
   ? nodes.filter((n) => n.type === 'product-category' && n.related.includes(node.id))
   : [];
@@ -66,13 +70,8 @@ const graphJsonLd = page
 
 {
   page && (
-    <PageLayout breadcrumbs={useCaseCrumbs}>
-      <script
-        slot="before"
-        is:inline
-        type="application/ld+json"
-        set:html={graphJsonLd ? JSON.stringify(graphJsonLd) : ''}
-      />
+    <PageLayout metadata={metadata} breadcrumbs={useCaseCrumbs}>
+      <script is:inline type="application/ld+json" set:html={graphJsonLd ? JSON.stringify(graphJsonLd) : ''} />
       <section class="mx-auto max-w-4xl px-6 py-16">
         <span class="text-sm font-medium text-sky-600 tracking-wide uppercase">{t('useCase.label')}</span>
         <h1 class="font-semibold text-gray-900 dark:text-gray-100 mt-4 text-4xl">{page.title}</h1>

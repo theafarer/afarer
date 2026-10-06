@@ -36,9 +36,13 @@ const nextUrl = currentPage < totalPages ? `/news/page/${currentPage + 1}/` : un
 const newsHeader = pageData?.hero_text ?? {};
 const pageTitle = newsHeader.title || 'News';
 const pageSubtitle = newsHeader.subtitle || '';
+const newsDescription = pageData?.meta?.description
+  ? String(pageData.meta.description).replace('{SITE}', 'Afarer')
+  : '';
 
 const metadata = {
   title: `${pageTitle} — Page ${currentPage}`,
+  description: newsDescription || undefined,
   robots: {
     index: blogListRobots?.index,
     follow: blogListRobots?.follow,

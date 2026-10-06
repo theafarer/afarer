@@ -873,6 +873,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **线上验证**（CI 双绿 37536334539 + 37536334546 后）：**11/11 PASS**——/keystatic/about、/posts、/contact-submissions、/case-use/beginner-sup-training、/github-token 抽验 5 页全 `noindex, nofollow`；/login noindex + 标题保持；/login/change-password noindex + 标题修正 `Change Password — Afarer`；sitemap-0 11,198 与 hreflang 35 零回归。commit `8b37f90`。
 
+#### L75. 分片 85：meta 本地化/缺失审计——9 页无 metadata 修复 + **[lang] compare 全家族 elision bug（60 页空壳）+ slot="before" JsonLd 全站静默丢弃（18 文件）** + news 分页 desc + geo-report noindex（2026-10）
+
+① **定界**（`_meta-audit85.cjs` 7,828 对 title/desc 本地化比对 + `_nometa-audit85.cjs`）：EN 层 9 页完全无 metadata 回退默认标题——compare ×3（inflatable-sup-vs-accessory / inflatable-sup-vs-safety-equipment / safety-equipment-vs-accessory）+ geo-report + use-cases ×5（beginner/family-recreation/rescue/river-touring/touring）；news/page/N 全 locale desc 回退首页（title 已本地化）。深挖发现两个更大的隐性债：**A compare elision bug**——`[lang]/compare/[slug].astro` L29 `const [aId, , bId] = slug.split('-vs-')` 中间空洞解构跳过第 2 元素 → bId=undefined → nodeB 找不到 → **3 组合 ×20 locale = 60 页 page=null 空壳**（无 H1/正文/JsonLd，title 走我方 fallback），审计的"无 metadata"只是表象；**B slot="before" 静默丢弃**——PageLayout/Layout 无 `name="before"` slot，18 个文件的 `<script slot="before" type="application/ld+json" set:html={graphJsonLd}>` 全站从未渲染（use-cases/compare/guides/warranty 的 Article/FAQPage graph 一律缺席；root compare 三个老页用别的机制有 Article，guides 无）。
+
+② **实施**：(1) elision 修复 `const [aId, bId] = ...` —— 60 页 compare 从空壳变为 compareTemplate 本地化正文（de "Aufblasbares SUP-Board vs Zubehör: Comparison Guide"、ja "安全装備 vs アクセサリー" 等，title/desc/H1/JsonLd 全通）；(2) `slot="before"` 属性 18 文件全删（`_fix-slot85.cjs` 批量），script 落默认 slot 正常渲染——article/FAQPage/Product graph 全家族复活；(3) `[lang]/use-cases/[slug].astro` + `[lang]/compare/[slug].astro` 补 metadata 传递（镜像 root 孪生 metaTitle/metaDesc 模式，page.title/description 已本地化）；(4) geo-report（root + [lang]）实为内部诊断面板（GEO v5 Report/System Health），按分片 84 惯例 **noindex,nofollow** 而非补 meta，title 用 `geo.reportLabel — geo.title` 本地化，astro.config SITEMAP_EXCLUDED_PATHS 加 `/geo-report`；(5) news/page/[page].astro（root + [lang]）补 description（镜像分片 83 category 修法：[lang] 版 `getPageContent(lang,'news')?.meta?.description` + {SITE} 替换，root 直读 news.yaml meta）。
+
+③ **回归数字**：check 四合一绿（exit code 验证；prettier 17 文件 slot 删除后格式修复——**[warn] 过滤教训两次生效，均本地拦截**）→ build 13,859 页 → dist 验证 **29/29 实质 PASS**：EN 无 metadata 页 9→0；de/ja compare H1+title+desc+JsonLd headline 本地化；use-cases/guides/compare/warranty Article graph 全渲染（de headline "Touren- & Distanzpaddeln"）；geo-report root+de noindex,nofollow + sitemap-0 **11,198→11,164（−34 条 geo-report URL，预期变更）**；news/page/2 desc root+de 接通 news meta；hreflang 35、route-manifest 13,858、分片 83 category 标题、分片 84 keystatic noindex 零回归。ar compare 产品名回退 EN 属 nodes 数据级翻译缺失（见挂账）。
+
+④ **挂账（数据级 meta 翻译债，非模板接线，留待后续分片）**：(a) 22 posts ×20 locale 正文已译但 title/desc 全 EN；(b) v2 landing 144 页（18 locale × 8 页）H1 已译 title/desc EN；(c) products/* title+desc 全 EN；(d) `compareTemplate`/`useCaseFromNode` 模板骨架字符串硬编码 EN（": Comparison Guide"、"Comparison Overview" 等小节标题）；(e) nodes.ts 产品名 ar 等 locale 缺翻译回退 EN。
+
 
 ---
 

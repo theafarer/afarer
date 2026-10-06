@@ -38,12 +38,7 @@ const graphJsonLd = articleSchema({
 ---
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>
-  <script
-    slot="before"
-    is:inline
-    type="application/ld+json"
-    set:html={graphJsonLd ? JSON.stringify(graphJsonLd) : ''}
-  />
+  <script is:inline type="application/ld+json" set:html={graphJsonLd ? JSON.stringify(graphJsonLd) : ''} />
 
   <section class="max-w-4xl mx-auto py-24 px-6">
     <span class="text-sm font-medium text-sky-600 tracking-wide uppercase">{page.label || 'Warranty'}</span>

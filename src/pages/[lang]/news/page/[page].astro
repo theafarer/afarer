@@ -51,9 +51,11 @@ const page = getPageContent(lang, 'news');
 const newsHeader = page?.hero_text ?? {};
 const pageTitle = newsHeader.title || 'News';
 const pageSubtitle = newsHeader.subtitle || '';
+const newsDescription = page?.meta?.description ? String(page.meta.description).replace('{SITE}', 'Afarer') : '';
 
 const metadata = {
   title: `${pageTitle} — ${t('blog.page')} ${currentPage}`,
+  description: newsDescription || undefined,
   robots: {
     index: blogListRobots?.index,
     follow: blogListRobots?.follow,

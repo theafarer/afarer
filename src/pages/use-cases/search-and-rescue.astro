@@ -45,12 +45,7 @@ const metadata = {
 ---
 
 <PageLayout metadata={metadata}>
-  <script
-    slot="before"
-    is:inline
-    type="application/ld+json"
-    set:html={graphJsonLd ? JSON.stringify(graphJsonLd) : ''}
-  />
+  <script is:inline type="application/ld+json" set:html={graphJsonLd ? JSON.stringify(graphJsonLd) : ''} />
 
   <section class="mx-auto max-w-4xl px-6 py-16">
     <span class="text-sm font-medium text-sky-600 tracking-wide uppercase">{page.label || 'Use Case'}</span>
