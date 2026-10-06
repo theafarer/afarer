@@ -836,6 +836,8 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：离线模拟 filter 于旧 sitemap 13,322 URL：kept 11,164 / dropped 2,158（newsTag 1,820 + oem-odm 35 + search 35 + root shadow 268，other-locale-drop = 0），root 恰好保留 40 条 EXCLUDED 直服页，12 项边界断言全过。check 四合一绿（prettier 格式化 astro.config.ts + manifest 后）→ build 13,859 页 → dist 复扫：**sitemap 11,198 URL**（= 11,164 + 34 commercial-workboats primary，与预测逐条吻合）；**A 0**（16 条为审计器旧 38 项 EXCLUDED 版假阳性，root 文件 16/16 存在）；**B 0 / C 0**；**D 仅剩有意排除**（search ×34 计划内 + keystatic ×~135 + internal ×12）；dist/en hreflang 35 条 + x-default 在位、manifest 13,858 routes 刷新。分片 80 回归：A 32 模板组（Class 1 全消终态）、canonical missing 135（keystatic）、B/C/D 全绿不变。**附带观察**：`public/` 下 5 个自定义 sitemap（community/entity/learning/media/products，共 ~2,446 URL）+ `sitemap.xml` 索引为**孤儿文件**——robots.txt 只引 `sitemap-index.xml` → sitemap-0.xml，自定义组不被搜索引擎自动发现，未处理（挂账待后续分片决定接线或删除）；live home canonical = `/en`（分片 80 canonical→/en 政策一致，维持不特例）。审计器 `_sitemap-audit81.cjs`（注意磁盘版 EXCLUDED 为旧 38 项，重跑须补全 54 项）+ `_sm-sim81.cjs`/`_sm-root81.cjs`/`_sm-files81.cjs`/`_verify81.cjs`/`_live-diff81.mjs` 归档 `C:\Users\Helleo\AppData\Local\Temp\deveco\`。
 
+⑤ **线上验证**（CI 双绿 37462080750 + 37462080697 后）：**16 项全 PASS**——hreflang 首次上线：`/en/` 与 `/de/products/` 各 **35 条 alternate + x-default**（de→`/de`、en→`/en/products` 交叉验证）；og:locale `de_DE` 回归在位；sitemap-0.xml 线上 **11,198 URL**：无 `/news/tag/`、无 `/oem-odm`、无 `/search`、无 root shadow（`/products`、`/` 均不在册）、`use-cases/commercial-workboats` primary ×34 回册、root 保留恰 40 条 EXCLUDED 直服页（research 抽验在册）、`/brand/team` 保留。
+
 
 ---
 
