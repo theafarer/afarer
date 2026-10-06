@@ -860,6 +860,8 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：generate 链 → check 四合一绿（1140 files 0 err）→ build 13,859 页 → dist 验证 **22/22 PASS**：de/ja/fr/th category 标题本地化（Kategorie/カテゴリー/Catégorie/หมวดหมู่）、bg EN-fallback 正确、desc = `Company — Aktuelle News...`（不再首页描述）、BreadcrumbList JSON-LD 在位、category index,follow 与 tag noindex,follow 均不变、og:title 同步、sitemap-0 11,198 不变（category 在册/tag 不在册）、pagination 标题与 hreflang 35 零回归。
 
+⑤ **CI 红一次 + prettier 漏检教训 + 线上验证**：首个 fix commit（ffe6adea）CI 双红于 `npm run check` 的 prettier 段——3 个新改模板格式不合规（多行 title 模板字面量被 prettier 折叠），**本地 check 输出过滤（`Select-String "error|Result|All matched"`）恰好漏掉 `[warn]` 行造成假绿**——过滤 check 输出必须包含 `warn` 模式或看 exit code。修复 commit `1800031`（prettier --write 3 文件）后 CI 双绿（37479134779 + 37479135174）。**线上 11/11 PASS**：/de/news/category/company 200 + `Kategorie 'Company' — Afarer` + desc `Company — Aktuelle News...` + BreadcrumbList；ja カテゴリー / fr Catégorie / bg EN-fallback；/de/news/tag/boat-show `Schlagwort: 'boat show'` + noindex,follow 保持；sitemap-0 11,198 与 hreflang 35 零回归。
+
 
 ---
 
