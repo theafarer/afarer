@@ -839,6 +839,17 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 ⑤ **线上验证**（CI 双绿 37462080750 + 37462080697 后）：**16 项全 PASS**——hreflang 首次上线：`/en/` 与 `/de/products/` 各 **35 条 alternate + x-default**（de→`/de`、en→`/en/products` 交叉验证）；og:locale `de_DE` 回归在位；sitemap-0.xml 线上 **11,198 URL**：无 `/news/tag/`、无 `/oem-odm`、无 `/search`、无 root shadow（`/products`、`/` 均不在册）、`use-cases/commercial-workboats` primary ×34 回册、root 保留恰 40 条 EXCLUDED 直服页（research 抽验在册）、`/brand/team` 保留。
 
 
+#### L72. 分片 82：孤儿自定义 sitemap 家族整体删除（2026-10）
+
+① **定界（L71④ 挂账兑现）**：遗留自定义 sitemap 家族共 7 处 = 2 个 astro endpoint（`src/pages/sitemap.xml.ts` → 35 条子索引：sitemap-entity.xml + `/xx/sitemap.xml` ×34；`src/pages/[lang]/sitemap.xml.ts` → 每语言 52 URL）+ `scripts/build-geo-v4.ts` 的 `generateSitemap()`（写 `public/sitemap-entity.xml`，2,414 URL）+ `public/` 4 个 2026-07 静态遗留（community/learning/media/products）。全部为**孤儿**：robots.txt 只引 sitemap-index.xml → sitemap-0.xml，自定义组无任何接线（llms.txt/robots/页面零引用，endpoint 为 initial commit 遗留）。质量审计（`_orphan-sm82.cjs`，EXCLUDED 用完整 54 项）：entity **556 dead**（geo-v4 slug 宇宙与真实路由脱节，如 `/guides/inflatable-sup` 无对应 dist 文件）+ 79 root shadow + 1,779 与 sitemap-0 重叠的 root 形式；products **4 dead**（rib-330、rib-450-patrol、zb-mt350 等下架产品）+ 6 shadow；community 4 页全 shadow；learning 1 dead（/learn/guides）+ 14 shadow；media 2 页全 shadow；locale 版 `/xx/sitemap.xml` 同源同病（首条即 dead `/guides/inflatable-sup`）。**有效 URL 的 canonical 目标（/en/* 或 /xx/* 本尊）已全部在 sitemap-0**，家族零独有覆盖——接线只有害处（推荐 dead/shadow），删除是唯一正解。
+
+② **实施**：删除 7 处——`src/pages/sitemap.xml.ts`、`src/pages/[lang]/sitemap.xml.ts`、`public/sitemap-{community,entity,learning,media,products}.xml`（git rm）；`build-geo-v4.ts` 切除 `generateSitemap()` + `LANG_PRIORITY` 表（仅该函数使用）+ 调用点，`generateAll`/`readSiteUrl`/`SITE_SECTIONS`/`publicDir` 保留（llms.txt 生成仍用）。
+
+③ **回归数字**：check 四合一绿 → build 13,859 页（GEO pipeline 仅写 llms.txt，无 sitemap-entity 输出）→ dist 验证（`_verify82.cjs`）：sitemap 文件仅剩 `sitemap-0.xml` + `sitemap-index.xml`；6 个遗留目标全不存在于 dist（含 `dist/en/sitemap.xml`）；**sitemap-0 11,198 URL 不变**；sitemap-index 单条 → sitemap-0；robots → sitemap-index 不变；dist/en hreflang 35 条在位；llms.txt/llms-full.txt 正常产出（34 语言 18n 15r）。`_orphan-sm82.cjs` 重跑 ENOENT = 目标全删证明。分片 80/81 关键不变量（sitemap-0 计数、robots、hreflang）零回归。
+
+④ **线上验证**（CI 双绿后）：6 个 sitemap URL（/sitemap.xml、/sitemap-entity.xml、/sitemap-community.xml、/sitemap-learning.xml、/sitemap-media.xml、/sitemap-products.xml、/en/sitemap.xml 抽验）→ 全 404；sitemap-index.xml/sitemap-0.xml/robots.txt 正常且计数不变。
+
+
 ---
 
 
