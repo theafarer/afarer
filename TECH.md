@@ -847,7 +847,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **回归数字**：check 四合一绿 → build 13,859 页（GEO pipeline 仅写 llms.txt，无 sitemap-entity 输出）→ dist 验证（`_verify82.cjs`）：sitemap 文件仅剩 `sitemap-0.xml` + `sitemap-index.xml`；6 个遗留目标全不存在于 dist（含 `dist/en/sitemap.xml`）；**sitemap-0 11,198 URL 不变**；sitemap-index 单条 → sitemap-0；robots → sitemap-index 不变；dist/en hreflang 35 条在位；llms.txt/llms-full.txt 正常产出（34 语言 18n 15r）。`_orphan-sm82.cjs` 重跑 ENOENT = 目标全删证明。分片 80/81 关键不变量（sitemap-0 计数、robots、hreflang）零回归。
 
-④ **线上验证**（CI 双绿后）：6 个 sitemap URL（/sitemap.xml、/sitemap-entity.xml、/sitemap-community.xml、/sitemap-learning.xml、/sitemap-media.xml、/sitemap-products.xml、/en/sitemap.xml 抽验）→ 全 404；sitemap-index.xml/sitemap-0.xml/robots.txt 正常且计数不变。
+④ **线上验证**（CI 双绿 37467716048 + 37467716159 后）：**12 项实质全 PASS**——8 个 sitemap URL（/sitemap.xml、/sitemap-entity.xml、/sitemap-community.xml、/sitemap-learning.xml、/sitemap-media.xml、/sitemap-products.xml、/en/sitemap.xml、/de/sitemap.xml）→ **全 404**；sitemap-index.xml 200 且单条 → sitemap-0.xml；sitemap-0.xml 200 **11,198 URL 不变**；robots.txt → sitemap-index.xml 不变；hreflang 回归：`/en`、`/de/`、`/en/products/`、`/de/products/` 均 **35 条 + x-default** 在位。注意：`/en/`（带尾斜杠）返回 308 重定向空 body，验证脚本须用无斜杠 `/en` 或跟随重定向，否则 hreflang=0 为脚本误报（全站 308 尾斜杠规范行为）。**route-manifest.json 刷新复检：13,858 不变**——两个 sitemap endpoint 从未被 manifest 计数（仅 HTML 页），删除零 manifest 影响。
 
 
 ---
