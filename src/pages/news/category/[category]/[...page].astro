@@ -5,6 +5,7 @@ import Pagination from '~/components/blog/Pagination.astro';
 import Timeline from '~/components/blog/Timeline.astro';
 
 import { fetchPosts, blogPostsPerPage, blogCategoryRobots } from '~/utils/blog';
+import pageData from '~/data/pages/news.yaml';
 import type { Post } from '~/types';
 
 export const prerender = true;
@@ -58,8 +59,11 @@ const prevUrl =
     : undefined;
 const nextUrl = currentPage < totalPages ? `/news/category/${categorySlug}/${currentPage + 1}/` : undefined;
 
+const newsDescription = pageData?.meta?.description ? String(pageData.meta.description).replace('{SITE}', 'Afarer') : '';
+
 const metadata = {
   title: `Category '${categoryTitle}'${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
+  description: newsDescription ? `${categoryTitle} — ${newsDescription}` : undefined,
   robots: {
     index: blogCategoryRobots?.index,
     follow: blogCategoryRobots?.follow,
@@ -67,7 +71,10 @@ const metadata = {
 };
 ---
 
-<Layout metadata={metadata}>
+<Layout
+  metadata={metadata}
+  breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'News', href: '/news' }, { name: categoryTitle }]}
+>
   <section class="section-premium mx-auto max-w-4xl px-6">
     <Headline>{categoryTitle}</Headline>
     <div class="mt-16">

@@ -850,6 +850,17 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 ④ **线上验证**（CI 双绿 37467716048 + 37467716159 后）：**12 项实质全 PASS**——8 个 sitemap URL（/sitemap.xml、/sitemap-entity.xml、/sitemap-community.xml、/sitemap-learning.xml、/sitemap-media.xml、/sitemap-products.xml、/en/sitemap.xml、/de/sitemap.xml）→ **全 404**；sitemap-index.xml 200 且单条 → sitemap-0.xml；sitemap-0.xml 200 **11,198 URL 不变**；robots.txt → sitemap-index.xml 不变；hreflang 回归：`/en`、`/de/`、`/en/products/`、`/de/products/` 均 **35 条 + x-default** 在位。注意：`/en/`（带尾斜杠）返回 308 重定向空 body，验证脚本须用无斜杠 `/en` 或跟随重定向，否则 hreflang=0 为脚本误报（全站 308 尾斜杠规范行为）。**route-manifest.json 刷新复检：13,858 不变**——两个 sitemap endpoint 从未被 manifest 计数（仅 HTML 页），删除零 manifest 影响。
 
 
+#### L73. 分片 83：news listing 家族 i18n + meta 修复（category 标题 33 locale EN 硬编码 / description 全回退首页 / breadcrumbs 缺失 / tag 同病）（2026-10）
+
+① **定界（L71 "news pagination/category 暂不动" 兑现）**：news listing 家族四模板（root + [lang] × category + tag）审计发现三类债：**A category 标题 i18n**——`fr('Category','Catégorie')` 二值硬编码，33 个非 fr locale 的 **408 个 indexable 类目页**（12 类目 × 34 locale）title/og:title 全 EN `Category 'Company'`（/de/ 亦然），仅 fr 本地化；**B description 全回退**——category 页无 description，Metadata.astro 回退到 `METADATA.description`（首页 SUP 通用描述），408 页重复无关 meta；**C breadcrumbs 缺失**——pagination 页有（shard 70 加），category/tag 页无。tag 页同病但 noindex（`blogTagRobots` config noindex, follow，SERP 不可见，user-facing 修复）。pagination 页无此债（shard 70 已本地化 `Neuigkeiten — Seite 2`）。
+
+② **SSOT 链发现（本 shard 最大教训）**：UI 字典真源头是 **`src/data/site/i18n-config.json`**（2 空格 JSON），`generate-data-json.mjs` L46-56 将其拷贝到 `public/data/i18n-config.json`（资源 URL → assets.afarer.com 变换）+ `src/i18n/generated/i18n-config.json`，`_gen-uiall.cjs` 再从 public 副本生成 `ui/*.ts` + `ui-all.ts`。**直接编辑 public/data/i18n-config.json 会被 build 链静默覆盖**（首次实施即栽：编辑 → 手动 _gen-uiall → build 后键消失 → title 渲染为空标签 ` 'Company' — Afarer`）。字典键必须改 SSOT，再走 generate 链。
+
+③ **实施**：(1) SSOT 注入 `blog.category` + `blog.tag` ×21 locale（42 键，一词翻译：de Kategorie/Schlagwort、ja カテゴリー/タグ、th หมวดหมู่/แท็ก、ar الفئة/الوسم、el Κατηγορία/Ετικέτα 等；fr tag 沿用既有 "Mot-clé" 措辞）；(2) `[lang]/news/category/[category]/[...page].astro`——`fr()` 换 `t()`（getUiForLang + EN fallback，13 个 EN-fallback locale 走 en 字典），title = `${t('blog.category')} '${categoryTitle}'`，description = `${categoryTitle} — ${news 本地化 meta.description}`（getPageContent(lang,'news') 取 + `{SITE}` 替换），补 breadcrumbs（Home→News→Category）；(3) `[lang]` tag 模板同法：title/H1 = `${t('blog.tag')}: ...`（EN 措辞从 "Posts by tag 'X'" 简化为 "Tag: 'X'" 对齐 H1），补 breadcrumbs；(4) root 孪生 ×2 按根分页模板惯例（字面量 EN + 直读 `src/data/pages/news.yaml`）：category 补 description + breadcrumbs，tag title 简化 + breadcrumbs。13 个 EN-fallback locale（bg 等）无字典文件，t() 落 `getUiForLang('en')`——预期行为非回归。
+
+④ **回归数字**：generate 链 → check 四合一绿（1140 files 0 err）→ build 13,859 页 → dist 验证 **22/22 PASS**：de/ja/fr/th category 标题本地化（Kategorie/カテゴリー/Catégorie/หมวดหมู่）、bg EN-fallback 正确、desc = `Company — Aktuelle News...`（不再首页描述）、BreadcrumbList JSON-LD 在位、category index,follow 与 tag noindex,follow 均不变、og:title 同步、sitemap-0 11,198 不变（category 在册/tag 不在册）、pagination 标题与 hreflang 35 零回归。
+
+
 ---
 
 

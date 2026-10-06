@@ -5,6 +5,7 @@ import Pagination from '~/components/blog/Pagination.astro';
 import Timeline from '~/components/blog/Timeline.astro';
 
 import { fetchPosts, blogPostsPerPage, blogTagRobots } from '~/utils/blog';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 import type { Post } from '~/types';
 import { languages } from '~/i18n/config';
 
@@ -47,7 +48,7 @@ export const getStaticPaths = async () => {
 };
 
 const { lang, tag: tagSlug } = Astro.params;
-const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 const { paginatedPosts, currentPage, totalPages, tagTitle } = Astro.props;
 
 const prevUrl =
@@ -59,8 +60,8 @@ const prevUrl =
 const nextUrl = currentPage < totalPages ? `/${lang}/news/tag/${tagSlug}/${currentPage + 1}/` : undefined;
 
 const metadata = {
-  title: `${fr('Posts by tag', 'Articles par mot-clé')} '${tagTitle}'${
-    currentPage > 1 ? ` — ${fr('Page', 'Page')} ${currentPage}` : ''
+  title: `${t('blog.tag')}: '${tagTitle}'${
+    currentPage > 1 ? ` — ${t('blog.page')} ${currentPage}` : ''
   }`,
   robots: {
     index: blogTagRobots?.index,
@@ -69,9 +70,16 @@ const metadata = {
 };
 ---
 
-<Layout metadata={metadata}>
+<Layout
+  metadata={metadata}
+  breadcrumbs={[
+    { name: t('nav.home'), href: `/${lang}/` },
+    { name: t('nav.news'), href: `/${lang}/news` },
+    { name: `${t('blog.tag')}: ${tagTitle}` },
+  ]}
+>
   <section class="section-premium mx-auto max-w-4xl px-6">
-    <Headline>{fr('Tag:', 'Mot-clé :')} {tagTitle}</Headline>
+    <Headline>{t('blog.tag')}: {tagTitle}</Headline>
     <div class="mt-16">
       <Timeline posts={paginatedPosts} />
     </div>

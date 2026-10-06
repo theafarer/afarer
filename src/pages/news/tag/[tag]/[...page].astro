@@ -59,7 +59,7 @@ const prevUrl =
 const nextUrl = currentPage < totalPages ? `/news/tag/${tagSlug}/${currentPage + 1}/` : undefined;
 
 const metadata = {
-  title: `Posts by tag '${tagTitle}'${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
+  title: `Tag: '${tagTitle}'${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
   robots: {
     index: blogTagRobots?.index,
     follow: blogTagRobots?.follow,
@@ -67,7 +67,10 @@ const metadata = {
 };
 ---
 
-<Layout metadata={metadata}>
+<Layout
+  metadata={metadata}
+  breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'News', href: '/news' }, { name: `Tag: ${tagTitle}` }]}
+>
   <section class="section-premium mx-auto max-w-4xl px-6">
     <Headline>Tag: {tagTitle}</Headline>
     <div class="mt-16">

@@ -5,6 +5,9 @@ import Pagination from '~/components/blog/Pagination.astro';
 import Timeline from '~/components/blog/Timeline.astro';
 
 import { fetchPosts, blogPostsPerPage, blogCategoryRobots } from '~/utils/blog';
+import { getPageContent, setPageContentData } from '~/i18n/page-content';
+import __pageData from '~/i18n/generated/pages/news';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 import type { Post } from '~/types';
 import { languages } from '~/i18n/config';
 
@@ -47,8 +50,12 @@ export const getStaticPaths = async () => {
 };
 
 const { lang, category: categorySlug } = Astro.params;
+const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 const { paginatedPosts, currentPage, totalPages, categoryTitle } = Astro.props;
-const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+
+setPageContentData(__pageData);
+const newsMeta = getPageContent(lang, 'news')?.meta;
+const newsDescription = newsMeta?.description ? String(newsMeta.description).replace('{SITE}', 'Afarer') : '';
 
 const prevUrl =
   currentPage > 1
@@ -59,9 +66,10 @@ const prevUrl =
 const nextUrl = currentPage < totalPages ? `/${lang}/news/category/${categorySlug}/${currentPage + 1}/` : undefined;
 
 const metadata = {
-  title: `${fr('Category', 'Catégorie')} '${categoryTitle}'${
-    currentPage > 1 ? ` — ${fr('Page', 'Page')} ${currentPage}` : ''
+  title: `${t('blog.category')} '${categoryTitle}'${
+    currentPage > 1 ? ` — ${t('blog.page')} ${currentPage}` : ''
   }`,
+  description: newsDescription ? `${categoryTitle} — ${newsDescription}` : undefined,
   robots: {
     index: blogCategoryRobots?.index,
     follow: blogCategoryRobots?.follow,
@@ -69,7 +77,14 @@ const metadata = {
 };
 ---
 
-<Layout metadata={metadata}>
+<Layout
+  metadata={metadata}
+  breadcrumbs={[
+    { name: t('nav.home'), href: `/${lang}/` },
+    { name: t('nav.news'), href: `/${lang}/news` },
+    { name: categoryTitle },
+  ]}
+>
   <section class="section-premium mx-auto max-w-4xl px-6">
     <Headline>{categoryTitle}</Headline>
     <div class="mt-16">
