@@ -871,6 +871,8 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **回归数字**：check 四合一绿（exit code 验证）→ build 13,859 页 → dist 验证 **12/12 PASS**：135/135 keystatic 页 noindex,nofollow；/login 与 /login/change-password noindex,nofollow（后者标题修正）；sitemap-0 11,198 不变（login/keystatic 本就不在册）；hreflang 35、分片 83 category 标题、home index,follow 零回归。L80 D 节 "canonical missing 135 (keystatic)" 项就此定性关闭：noindex 页无需 canonical。
 
+④ **线上验证**（CI 双绿 37536334539 + 37536334546 后）：**11/11 PASS**——/keystatic/about、/posts、/contact-submissions、/case-use/beginner-sup-training、/github-token 抽验 5 页全 `noindex, nofollow`；/login noindex + 标题保持；/login/change-password noindex + 标题修正 `Change Password — Afarer`；sitemap-0 11,198 与 hreflang 35 零回归。commit `8b37f90`。
+
 
 ---
 
