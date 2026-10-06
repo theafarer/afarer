@@ -2,6 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import { products } from '../data/products';
 import { afarerRecommendationRules } from '../lib/ai-recommendation-engine';
+import { CATEGORY_SLUG_TO_URL } from '../utils/products';
 import { SITE } from 'astrowind:config';
 
 const metadata = {
@@ -100,7 +101,7 @@ const cats = [...new Set(products.map((p) => p.category))];
         {
           cats.map((cat) => (
             <a
-              href={`/products#${cat.toLowerCase()}`}
+              href={`/${CATEGORY_SLUG_TO_URL[cat.toLowerCase()] ?? 'products'}`}
               class="px-4 py-2 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:border-sky-300 hover:text-sky-600 transition-colors"
             >
               {cat}

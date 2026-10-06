@@ -808,6 +808,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+#### L69. 分片 79：dist 全站锚点可达性审计（页内 + 跨页 `#anchor`，74 缺失锚点清零）+ 资产引用审计（2026-10）
+
+① **审计方法**：分片 78 只验了 href 主目标存在性；本分片补锚点层——walk dist 13,859 页，剥 `<script>` 后提取全部含 `#` 的内部 href，分两类判定：**A 页内锚点**（href="#x" 或同路径带锚点）查本文件 `id="x"` / `<a name>` 缓存；**B 跨页锚点**（/path#x）按 middleware 语义解析目标文件（locale 前缀直查 / EXCLUDED root / root→EN rewrite 视角）再查其 id 集。三类既有假阳性沿用 78：(a) script 剥离；(b) `dist/ai/` 非 locale；(c) `/api/*` worker 路由。资产层（src/srcset/og:image）顺带全扫：**0 真缺失**（唯一报错 `/keystatic` 是页面引用，审计器资产判定不含 index.html 回退——假阳性）。首扫结果：**A 类 2 锚点 / 49 文件，B 类 72 distinct**。
+
+② **修复（4 类源头）**：(1) **`#features` ×15 locale home.yaml** hero "Mehr erfahren" 按钮——首页现设计无 features section（EN root home.yaml 本就链真实页，15 locale 是旧设计残留）→ 改 `href: '/afarer-story'`（与"learn more"意图匹配，34 locale 全有，hero actions 由 `[lang]/index.astro` 加 `/${lang}` 前缀）；(2) **`#ai-guide` ×21 learn.yaml**（root + 20 locale）CTA "Ask Water Advisor AI"——learn 页无 AI 区块，CTA 底部即页尾 → 改 `href: '/ai-answer-center'`（AI hub，34 locale 全有，CTA actions 保持 root 相对由 middleware 分发）；(3) **`/products#sup|accessories`** 源头三处——evidence ×3 yaml（en/fr/de L414/416 spec_sheets）+ `ai-context.astro` L103 知识图谱分类链 `/products#${cat}` → 改指 `CATEGORY_SLUG_TO_URL` 分类落地页（`/supboard`、`/accessory`，34 locale 全有；locale evidence 模板 L192 `/${lang}${s.href}` 自动前缀化）；(4) **`/oem-odm-manufacturer#process`** root 页 RelatedPages 自引用——页面有 "Our Process" 区块但无 id，且 middleware 语义下 root href 实际服务 `/en/` 版 → root + `[lang]` 两版 process section 均补 `id="process"`。批量 yaml 修复归档 `TOOLS/one-off/fix-anchor-hrefs-79.cjs`（15+21 文件，幂等 + expect 断言，已登记）。
+
+③ **回归数字**：generate 全链 → check 四合一绿（prettier 重排 evidence ×3）→ build 13,859 页 3m29s → **dist 复扫 A=0 / B=0 / 资产 0 真缺失**；sitemap 13,322 URL 不变、无 keystatic/internal 泄漏。教训：(i) PowerShell `Get-Content`/`Set-Content` 改 UTF-8 yaml 会把非 ASCII（`★`）打成 mojibake 且 PS5.1 `utf8` 带 BOM——含非 ASCII 的文件编辑必须走 node 脚本或 edit 工具，git checkout 恢复 + 重做；(ii) 锚点审计的跨页判定与 78 同理必须按 middleware 服务视角（root href 的真目标是 `/en/` 版），修 root 页不修 [lang] 版即假修复；(iii) 页内 `id` 与数据 `href` 两侧都可断——修复选"哪侧是意图"定：区块存在只缺 id → 补 id（oem process）；目标从未存在 → 改 href 指真实等价页（features/ai-guide/products#cat）。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 
