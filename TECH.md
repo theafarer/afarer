@@ -798,6 +798,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+#### L68. 分片 78：dist 全站内链可达性审计（13,692 href × middleware 语义，2 真断链修复）（2026-10）
+
+① **审计方法**：walk dist 13,858 页提取全部内部 `href`（13,692 unique），按 `functions/_middleware.ts` 语义判定可达性——locale 前缀 href 查 `dist/<loc>/<path>`；root href 在 EXCLUDED 查 root 资产、否则查全部 locale 版本（EN rewrite + 非 EN 302 目标）；带扩展名查资产文件。**三类假阳性必须排除**（首扫 259 项里 254 项是幻影）：(a) `<script>` 内 JS 字符串拼接被 `href="..."` 正则误捕（search.astro L111 `'/' + lang + '/guides'` 客户端运行时正确，扫前须 `replace(/<script[\s\S]*?<\/script>/g,'')` 剥离）；(b) `dist/ai/` 是 AI JSON 端点目录（entity-graph.json/knowledge.json），非 locale——middleware LANGUAGES 无 `ai`，locale 目录集须排除；(c) `/api/*` 是 admin-worker 路由，dist 无资产不代表 404。剥净后：**0 locale gap、0 资产断链，仅 2 真断链**。
+
+② **两真断链与修复**：(1) **`/login/change-password`**（135 refs，全部 keystatic 页 AdminLayout L163 链接）——页面在 `src/pages/_login/` 下划线目录不参与构建，且 frontmatter 用 `Astro.cookies` + `Astro.redirect` 在 `prerender=true` 静态构建下无法工作（构建期无请求，会把 302 烘焙成 meta-refresh）——这是它被藏进 `_login/` 的原因。修复：`git mv` 至 `src/pages/login/`（与 login.astro 同名共存合法，Astro 路由 /login 与 /login/change-password 不冲突），删 frontmatter session 检查改纯客户端模式（与 login.astro 一致；真正的鉴权在 admin-worker `/api/auth/change-password` 端点，未登录提交返回 401 由页面显示）。middleware `/login` 前缀豁免、sitemap exclude regex `login(?:\/|$)`、robots Disallow 均已天然覆盖。(2) **`/resources#roi-calculator`**（35 refs = 34 locale 新闻页副本 + root，源 `src/content/news/sup-rental-business-guide.mdx` L226）——`[lang]/resources.astro` getStaticPaths 被提交 f9f67bea（清理重复路由）置空 `[]`，`/resources` hub 页有意禁用，且 `#roi-calculator` 锚点全站无任何目标（ROI 计算器从未实现，resources.yaml 里 `link: '#roi-calculator'` 数据因页面禁用而惰性）。修复：CTA 改指语义匹配的姊妹文章 `/news/commercial-sup-fleet-roi-resorts`（专门的 resort SUP ROI 分析文，34 locale 全有）。
+
+③ **回归数字**：check 四合一绿 → build 13,859 页（+1 = change-password）→ dist 复扫全 PASS：`dist/login/change-password/index.html` 有表单、无烘焙 meta-refresh、提交打 `/api/auth/change-password`；0 `href="/resources#"`；sitemap 13,322 URL 不变且无 change-password 泄漏；全量重审计 **0 全断链 / 0 真实 locale gap**。教训：静态站内链审计必须按真实服务语义（middleware 豁免/rewrite/302）而非文件存在性判定；`_` 前缀目录藏 prerender 不兼容页面是死链温床——AdminLayout 链接它即是断链；新闻 MDX 的 root 相对链接（`/contact`、`/news/<slug>`）由 middleware 按用户 locale 分发，写法正确即可全 locale 可达。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 

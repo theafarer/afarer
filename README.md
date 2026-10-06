@@ -168,7 +168,7 @@ All locale URLs use **path-based** format: `afarer.com/fr/products`, `afarer.com
 │ │ │ └── llms.txt.ts            # Per-locale AI knowledge graph
 │ │ ├── keystatic/                # Admin panel (CMS: pages, posts, products, ...)
 │ │ ├── login.astro               # Admin login
-│ │ ├── _login/                   # Login helpers (change-password)
+│ │ ├── login/                    # Login helpers (change-password)
 │ │ ├── admin.astro               # Admin shell
 │ │ ├── internal/seo/             # SEO/GEO dashboards (10 pages)
 │ │ │ ├── index.astro            # v4.0 Brand OS overview
