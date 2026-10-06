@@ -824,6 +824,8 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **回归数字**：check 四合一绿（0 err/0 warn，176 hint 既有）→ build 13,859 页 → dist 复扫：**A 74 → 32 模板组，Class 1 全消**（products/news 组全部消失）；剩余 32 组 = 11 组有意 alias 归并（目标全存在）+ root singles（shadow 不上线）+ root home（审计器 root index 特判缺失假阳性）+ `admin → /keystatic`（admin 页 noindex 无害）；**canonical missing 135 全部为 `/keystatic/*` CMS 后台页（noindex，无需 canonical）**；**B 0 / D 0 不变**；**C 全绿**——21 翻译语言各 ~381 页 xx_XX 正确（ar_AR/cs_CZ/da_DK/de_DE/el_GR/es_ES/fi_FI/fr_FR/it_IT/ja_JP/ko_KR/nl_NL/nb_NO/pl_PL/pt_PT/ro_RO/ru_RU/sv_SE/th_TH/tr_TR/en_US）、13 fallback + root 360 页 en_US。教训：(i) canonical 审计的 expected 必须按 middleware 服务视角算（root → `/en/` rewrite），与 78/79 内链/锚点审计同构；(ii) 显式传 canonical 的模板是自 URL 之外的第二真相源——7 处显式 prop 全是历史 root-only 时代遗留，[lang] 化时未同步 locale 感知；(iii) og:locale 的 xx_XX 与 BCP47 裸 lang 是两套格式（og 用 `de_DE`，hreflang 用 `de`），`no` 的 og 正确形式是 `nb_NO`；(iv) lodash merge 的后参覆盖 + config 全局默认值 = 每页属性被静默同质化的典型通道，修法是 merge 后显式重放页面级值。审计器 `_url-audit80.cjs` + 目标验存器 `_canon-targets80.cjs` 归档 `C:\Users\Helleo\AppData\Local\Temp\deveco\`（临时工具未入库）。
 
+④ **线上验证**（CI 双绿 37447294310 + 37447294354 后）：7 页 × 3 断言 **20 项全 PASS**——`/de/products/`、`/de/products/life-vest-classic/`、`/de/news/afarer-rd-center-innovation/` canonical 均带 `/de` 前缀且 og:url 逐字相等、og:locale `de_DE`；`/ar/products/` → `ar_AR`；`/fr/news/afarer-supply-chain-2025/` → `fr_FR`；`/hu/products/`（EN-fallback）canonical 带 `/hu` 前缀 + og:locale `en_US`（诚实）；root home og:locale `en_US` + og:url == canonical。
+
 ---
 
 
