@@ -66,9 +66,7 @@ const prevUrl =
 const nextUrl = currentPage < totalPages ? `/${lang}/news/category/${categorySlug}/${currentPage + 1}/` : undefined;
 
 const metadata = {
-  title: `${t('blog.category')} '${categoryTitle}'${
-    currentPage > 1 ? ` — ${t('blog.page')} ${currentPage}` : ''
-  }`,
+  title: `${t('blog.category')} '${categoryTitle}'${currentPage > 1 ? ` — ${t('blog.page')} ${currentPage}` : ''}`,
   description: newsDescription ? `${categoryTitle} — ${newsDescription}` : undefined,
   robots: {
     index: blogCategoryRobots?.index,
