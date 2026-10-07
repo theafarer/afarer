@@ -937,7 +937,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：edit 工具子串误伤——`title={L(` 是 `subtitle={L(` 的子串，oldString 匹配到后者中间留下孤立 `sub` prop（git diff 定位最快）；多行 L() 调用单行正则 `L\('...'\)` 漏检，宽正则 `L\(\s*'` 才提全（12 处非 9 处）；SSOT 注入后必须审计 EN-leak（`j[l][k] === j.en[k]`），首轮 5 locale ×2 键中招。
 
-④ **回归数字**：check 四合一绿（exit 0，1,162 files）→ build 13,859 页 → dist 验证 **meta 480/480 PASS**（20 locale ×24 slug title+desc ≠ EN）+ labels 60/60（20 locale × faqTitle/results/background）+ caseStudy 修正 5/5 + sitemap-0 11,164、route-manifest 13,858 无变化。**挂账 (d) solutions 收窄为正文级**（meta 层清除）——余 7 项（posts/v2/solutions 正文/guides/case-studies/SeoLanding/faq）。
+④ **回归数字**：check 四合一绿（exit 0，1,162 files）→ build 13,859 页 → dist 验证 **meta 480/480 PASS**（20 locale ×24 slug title+desc ≠ EN）+ labels 60/60（20 locale × faqTitle/results/background）+ caseStudy 修正 5/5 + sitemap-0 11,164、route-manifest 13,858 无变化。commit `7c55b7f1` + style `883bf606`（**踩坑：工具脚本归档晚于本地 check，4 个 .cjs 未过 prettier 致首轮 CI 红——归档 TOOLS/ 后必须重跑 check**）；CI 双绿 37581250776/37581250856 → 线上验证 **31/31 PASS**（23 meta：18 locale title+desc 与翻译底稿精确匹配 + fr/es 非 EN + ja/de 第二 slug + EN 回归；8 labels：it/nl/sv/no/da/ja/de/en——**singular caseStudy 标签仅当 `caseStudy.customer` 为 string 时渲染，抽验 slug 须选 ecommerce-sup-brand-development 类**）。**挂账 (d) solutions 收窄为正文级**（meta 层清除）——余 7 项（posts/v2/solutions 正文/guides/case-studies/SeoLanding/faq）。
 
 
 ---
