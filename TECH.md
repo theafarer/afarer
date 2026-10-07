@@ -910,7 +910,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **审计定性更新（挂账清单扩充至 8 项）**：新增 (d) solutions ×23 ×20 locale；(e) guides ×30 ×18 locale（fr/de 已有）；(f) case-studies ×19 ×18 locale（de/fr 已有，pages YAML 键壳已建）；(g) SeoLanding 6 页 ×20 locale；(h) faq 正文 ×18 locale（faqsFr/faqsDe 已有）。
 
-④ **回归数字**：check 四合一绿（exit 0，1 轮 prettier 格式化拦截）→ build 13,859 页 → dist 验证 **40/40 PASS**（20 locale ×2 slug title ≠ EN + EN 按钮零残留）；sitemap-0 11,164、route-manifest 13,858 无变化（无路由变更）。
+④ **回归数字**：check 四合一绿（exit 0，1 轮 prettier 格式化拦截）→ build 13,859 页 → dist 验证 **40/40 PASS**（20 locale ×2 slug title ≠ EN + EN 按钮零残留）；sitemap-0 11,164、route-manifest 13,858 无变化（无路由变更）。commit `67d1d27`；CI 双绿 37560014383/37560014382 → 线上验证 **10/10 PASS**（ja/de/ar/ru/ko/fr/en/th/pt/sv 类目页 title/desc 本地化 + EN 按钮零残留）。
 
 
 ---
