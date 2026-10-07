@@ -923,7 +923,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：metadata 是双层覆盖（defaults → product.metadata merge），仅改 defaults 不够——非 EN 页必须 merge 后二次覆写；`sr-only` ai-intent 隐藏块内 fr() 标签残留属不可见债，本次未动。
 
-④ **回归数字**：check 四合一绿（exit 0）→ build 13,859 页 → dist 验证 **420/420 PASS**（20 locale ×21 slug title+desc 均非 EN）+ 列表页 title 本地化 + sitemap-0 11,164、route-manifest 13,858 无变化。**挂账 ③（products desc）清除**——余 7 项（posts/v2/solutions/guides/case-studies/SeoLanding/faq）。
+④ **回归数字**：check 四合一绿（exit 0）→ build 13,859 页 → dist 验证 **420/420 PASS**（20 locale ×21 slug title+desc 均非 EN）+ 列表页 title 本地化 + sitemap-0 11,164、route-manifest 13,858 无变化。commit `654eacc`；CI 双绿 37569101500/37569101492 → 线上验证 **12/12 PASS**（ja/de/fr/ko/ar/tr/ru 单页 title+desc 本地化 + ja 列表卡片名/desc/CTA 全日文化 + EN 页 title 保持原营销句）。**挂账 ③（products desc）清除**——余 7 项（posts/v2/solutions/guides/case-studies/SeoLanding/faq）。
 
 
 ---
