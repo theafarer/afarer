@@ -241,6 +241,19 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+### 10. i18n-merge/template-keys-86 + node-names-86/ — compare/use-case 模板骨架 i18n + graph 节点名补译（分片 86）
+
+**背景**：`src/lib/geo-v4/templates.ts` 的 `compareTemplate`/`useCaseFromNode` 骨架字符串（小节标题、表格表头、句式、title 尾巴、metaDesc）硬编码 EN，60 compare 页 + 6 use-case 动态页 ×20 locale 渲染英文骨架（节点数据本体已译）；`src/content/graph/nodes.ts` 18 节点 name 缺 nl,sv,no,fi,cs,da 6 locale 且 **ar 字段为假翻译（填 EN 原文）**。**方案**：(1) SSOT `src/data/site/i18n-config.json` 注入 19 键（compare.* 15 + useCase.* 4，`compare.factor` 复用既有键；占位符 `{a}`/`{b}`/`{features}`/`{name}` 遵循 geo.aiAnalysis 的 `{count}` 惯例）；(2) 模板函数加可选 `tr?: TemplateTranslator` 参数 + `makeT` 帮助器（tr 缺省回退 EN——generator.ts/llms 链零改动），`[lang]/compare/[slug].astro` 与 `[lang]/use-cases/[slug].astro` 渲染调用传入 getUiForLang 的 t；(3) 顺带清除模板输出中 `**bold**` markdown（经 `set:html` 泄漏字面星号）；(4) nodes.ts 18 节点 ar 修正 + 6 locale 追加（126 条名称翻译）。
+
+| 文件（目录）                                            | 用途                                                                                                                           | 用法（仓库根）                                                     |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| `i18n-merge/template-keys-86/_inject-template-keys.cjs` | 19 模板键 ×21 locale 注入 SSOT（幂等：已存在且不同值则 SKIP 报告；roundtrip byte-identical 校验）                              | `node TOOLS/i18n-merge/template-keys-86/_inject-template-keys.cjs` |
+| `i18n-merge/node-names-86/_patch-node-names.cjs`        | nodes.ts 18 节点 ar 假翻译替换 + nl,sv,no,fi,cs,da 追加（定位 `id:` → `name:{` 块内 `ar:` 行后插入，幂等：已有 locale 键跳过） | `node TOOLS/i18n-merge/node-names-86/_patch-node-names.cjs`        |
+
+**验证**：build 后 dist walk 抽验 de/ja/cs/ar compare 页小节标题本地化 + `**` 零残留 + use-case Scenarios 键；根 use-cases（EN 页）与 llms 生成不受影响。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。

@@ -29,7 +29,7 @@ const { slug } = Astro.params;
 const [aId, bId] = (slug || '').split('-vs-');
 const nodeA = nodes.find((n) => n.id === aId);
 const nodeB = nodes.find((n) => n.id === bId);
-const page = nodeA && nodeB ? compareTemplate(nodeA, nodeB, lang) : null;
+const page = nodeA && nodeB ? compareTemplate(nodeA, nodeB, lang, t) : null;
 
 const graphJsonLd = page
   ? {

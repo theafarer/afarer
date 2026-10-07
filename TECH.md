@@ -885,6 +885,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ⑤ **挂账（数据级 meta 翻译债，非模板接线，留待后续分片）**：(a) 22 posts ×20 locale 正文已译但 title/desc 全 EN；(b) v2 landing 144 页（18 locale × 8 页）H1 已译 title/desc EN；(c) products/* title+desc 全 EN；(d) `compareTemplate`/`useCaseFromNode` 模板骨架字符串硬编码 EN（": Comparison Guide"、"Comparison Overview" 等小节标题）；(e) nodes.ts 产品名 ar 等 locale 缺翻译回退 EN。
 
+#### L76. 分片 86：compare/use-case 模板骨架 i18n（L75⑤ d+e 项兑现）+ graph 节点名补译 + `**` markdown 泄漏修复（2026-10）
+
+① **定界复核（L75 审计三项修正）**：(a) posts 债重定性——"正文已译"系误判，`Verwandte Beiträge` 等只是 RelatedPosts/导航走 UI 字典，**post 正文+title+desc 全部 EN**（22 篇 ×20 locale 整页翻译债）；(b) v2 landing 误判修正——[lang] landing 页（inflatable-sup 等）meta 已接 `__landing` 表全 19 locale 翻译，真实债是 `/v2/[slug]` 指南仅 fr/de 有数据集（`contentV2RecordsFr/De`），其余 18 locale 整页 EN 回退；(c) products/compare+products 单页 title 部分本地化（产品名不译正常），desc 数据级 EN。三项均为巨量数据翻译，**继续挂账**。本分片兑现 L75⑤ 的 (d)(e)：templates.ts 骨架字符串硬编码 EN（60 compare 页 + 6 use-case 动态页 ×20 locale 英文骨架，节点数据本体已译）；nodes.ts 18 节点 name 缺 nl,sv,no,fi,cs,da 且 **ar 字段全是假翻译（填 EN 原文）**——ar compare 页 H1 英文的根因。
+
+② **实施**：(1) SSOT 注入 19 键 ×21 locale（399 条）：compare.* 15 + useCase.* 4（`compare.factor` 复用既有键；占位符 `{a}/{b}/{features}/{name}` 沿 `{count}` 惯例）；(2) templates.ts 加 `TemplateTranslator` 类型 + `makeT` 帮助器，`compareTemplate`/`useCaseFromNode` 加可选 `tr` 参数（缺省回退 EN——generator.ts/llms 链零改动），`[lang]` 两模板渲染调用传入 getUiForLang 的 t；(3) **顺带修 `**bold**` markdown 字面泄漏**（模板输出经 `set:html` 不解析 markdown，dist 里 `**Aufblasbares SUP-Board**` 星号直出）——模板句式去 `**` 标记；(4) nodes.ts 18 节点 ar 假翻译修正 + 6 locale 追加（126 条名称翻译）。工具归档 `TOOLS/i18n-merge/template-keys-86/` + `node-names-86/`（tool_instrction.md §10）。
+
+③ **踩坑**：`_patch-node-names.cjs` 插入行漏尾逗号 + ar 行逗号被插入点隔断 → check:astro **108 errors**（90+18），两轮正则补逗修复；prettier 管辖已跟踪 TOOLS 脚本与 tool_instrction.md，共 3 轮格式化拦截。
+
+④ **回归数字**：check 四合一绿（exit 0）→ build 13,859 页 → dist 验证 **41/41 PASS**：de/ja/cs/ar compare 抽验 title 尾巴/overview/table/which 小节标题/metaDesc 全本地化 + `**` 零残留；nl compare 新覆盖节点名+标题；ar compare H1 真阿拉伯语（معدات السلامة vs الملحقات）；de/ja use-case whatIs/Scenarios/RecommendedEquipment 键生效；EN 页与 root use-cases 不变；llms.txt 仍 EN；sitemap-0 11,164、hreflang 35、分片 83/85 修复零回归。
+
 
 ---
 

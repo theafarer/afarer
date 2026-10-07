@@ -22,6 +22,13 @@ export interface GeneratedPage {
   faq: Array<{ q: string; a: string }>;
 }
 
+export type TemplateTranslator = (key: string) => string;
+
+const makeT =
+  (tr?: TemplateTranslator) =>
+  (key: string, en: string): string =>
+    tr ? tr(key) || en : en;
+
 export function guideFromNode(node: GraphNode, lang: string = 'en'): GeneratedGuide | null {
   if (
     node.type !== 'product-category' &&
@@ -61,28 +68,32 @@ export function guideFromNode(node: GraphNode, lang: string = 'en'): GeneratedGu
   };
 }
 
-export function useCaseFromNode(node: GraphNode, lang: string = 'en'): GeneratedPage | null {
+export function useCaseFromNode(node: GraphNode, lang: string = 'en', tr?: TemplateTranslator): GeneratedPage | null {
   if (node.type !== 'use-case') return null;
 
+  const T = makeT(tr);
   const name = localized(node.name, lang) || localized(node.name, 'en') || '';
   const desc = localized(node.description, lang) || localized(node.description, 'en') || '';
   const features = localized(node.features, lang) || localized(node.features, 'en') || [];
   const useCases = localized(node.useCases, lang) || localized(node.useCases, 'en') || [];
   const faq = localized(node.faq, lang) || localized(node.faq, 'en') || [];
 
-  const sections: GuideSection[] = [{ h2: 'What is this use case?', content: desc }];
+  const sections: GuideSection[] = [{ h2: T('useCase.whatIs', 'What is this use case?'), content: desc }];
 
   if (features.length) {
-    sections.push({ h2: 'Key Features', content: features.map((f) => `- ${f}`) });
+    sections.push({ h2: T('useCase.keyFeatures', 'Key Features'), content: features.map((f) => `- ${f}`) });
   }
 
   if (useCases.length) {
-    sections.push({ h2: 'Scenarios', content: useCases.map((u) => `- ${u}`) });
+    sections.push({ h2: T('useCase.scenarios', 'Scenarios'), content: useCases.map((u) => `- ${u}`) });
   }
 
   const related = (node.related || []).map((id) => `- ${id}`);
   if (related.length) {
-    sections.push({ h2: 'Recommended Equipment', content: related });
+    sections.push({
+      h2: T('useCase.recommended', 'Recommended Equipment'),
+      content: related,
+    });
   }
 
   return {
@@ -94,7 +105,13 @@ export function useCaseFromNode(node: GraphNode, lang: string = 'en'): Generated
   };
 }
 
-export function compareTemplate(a: GraphNode, b: GraphNode, lang: string = 'en'): GeneratedPage {
+export function compareTemplate(
+  a: GraphNode,
+  b: GraphNode,
+  lang: string = 'en',
+  tr?: TemplateTranslator
+): GeneratedPage {
+  const T = makeT(tr);
   const aName = localized(a.name, lang) || localized(a.name, 'en') || a.id;
   const bName = localized(b.name, lang) || localized(b.name, 'en') || b.id;
   const aDesc = localized(a.description, lang) || localized(a.description, 'en') || '';
@@ -106,53 +123,57 @@ export function compareTemplate(a: GraphNode, b: GraphNode, lang: string = 'en')
 
   const sections: GuideSection[] = [
     {
-      h2: 'Comparison Overview',
-      content: [`Comparing **${aName}** vs **${bName}** across key factors.`],
-    },
-    {
-      h2: 'Quick Comparison Table',
+      h2: T('compare.overview', 'Comparison Overview'),
       content: [
-        `| Factor | ${aName} | ${bName} |`,
-        `|---|---|---|`,
-        `| Type | ${a.type} | ${b.type} |`,
-        `| Portability | Inflatable | Varies |`,
-        `| Best For | ${(aUseCases || []).slice(0, 3).join(', ')} | ${(bUseCases || []).slice(0, 3).join(', ')} |`,
+        T('compare.comparing', 'Comparing {a} vs {b} across key factors.').replace('{a}', aName).replace('{b}', bName),
       ],
     },
     {
-      h2: `About ${aName}`,
+      h2: T('compare.table', 'Quick Comparison Table'),
+      content: [
+        `| ${T('compare.factor', 'Factor')} | ${aName} | ${bName} |`,
+        `|---|---|---|`,
+        `| ${T('compare.type', 'Type')} | ${a.type} | ${b.type} |`,
+        `| ${T('compare.portability', 'Portability')} | ${T('compare.inflatable', 'Inflatable')} | ${T('compare.varies', 'Varies')} |`,
+        `| ${T('compare.bestFor', 'Best For')} | ${(aUseCases || []).slice(0, 3).join(', ')} | ${(bUseCases || []).slice(0, 3).join(', ')} |`,
+      ],
+    },
+    {
+      h2: T('compare.about', 'About {name}').replace('{name}', aName),
       content: [aDesc],
     },
     {
-      h2: `About ${bName}`,
+      h2: T('compare.about', 'About {name}').replace('{name}', bName),
       content: [bDesc],
     },
   ];
 
   if (aFeatures.length && bFeatures.length) {
     sections.push({
-      h2: 'Feature Comparison',
-      content: [
-        `**${aName}:** ${aFeatures.slice(0, 4).join(', ')}`,
-        '',
-        `**${bName}:** ${bFeatures.slice(0, 4).join(', ')}`,
-      ],
+      h2: T('compare.features', 'Feature Comparison'),
+      content: [`${aName}: ${aFeatures.slice(0, 4).join(', ')}`, '', `${bName}: ${bFeatures.slice(0, 4).join(', ')}`],
     });
   }
 
   sections.push({
-    h2: 'Which Should You Choose?',
+    h2: T('compare.which', 'Which Should You Choose?'),
     content: [
-      `Choose **${aName}** if you prioritize ${(aFeatures || ['versatility']).slice(0, 2).join(' and ')}.`,
+      T('compare.chooseA', 'Choose {a} if you prioritize {features}.')
+        .replace('{a}', aName)
+        .replace('{features}', (aFeatures || ['versatility']).slice(0, 2).join(' and ')),
       '',
-      `Choose **${bName}** if you need ${(bFeatures || ['performance']).slice(0, 2).join(' and ')}.`,
+      T('compare.chooseB', 'Choose {b} if you need {features}.')
+        .replace('{b}', bName)
+        .replace('{features}', (bFeatures || ['performance']).slice(0, 2).join(' and ')),
     ],
   });
 
   return {
     slug: `${a.id}-vs-${b.id}`,
-    title: `${aName} vs ${bName}: Comparison Guide`,
-    description: `Compare ${aName} and ${bName} across portability, performance, features, and use cases.`,
+    title: `${aName} vs ${bName}: ${T('compare.titleSuffix', 'Comparison Guide')}`,
+    description: T('compare.metaDesc', 'Compare {a} and {b} across portability, performance, features, and use cases.')
+      .replace('{a}', aName)
+      .replace('{b}', bName),
     sections,
     faq: [],
   };
