@@ -5,16 +5,41 @@ const DIR = 'src/data/biz-solutions/translations';
 const TMP = 'C:/Users/Helleo/AppData/Local/Temp/deveco';
 
 // 20 non-EN UI locales with translations
-const LOCALES = ['ar','cs','da','de','el','es','fi','fr','it','ja','ko','nl','no','pl','pt','ro','ru','sv','th','tr'];
+const LOCALES = [
+  'ar',
+  'cs',
+  'da',
+  'de',
+  'el',
+  'es',
+  'fi',
+  'fr',
+  'it',
+  'ja',
+  'ko',
+  'nl',
+  'no',
+  'pl',
+  'pt',
+  'ro',
+  'ru',
+  'sv',
+  'th',
+  'tr',
+];
 
 function esc(s) {
   return s.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
 }
 
-let created = 0, appended = 0;
+let created = 0,
+  appended = 0;
 for (const l of LOCALES) {
   const jsonPath = path.join(TMP, '_sol-meta-' + l + '.json');
-  if (!fs.existsSync(jsonPath)) { console.log('MISSING data: ' + l); continue; }
+  if (!fs.existsSync(jsonPath)) {
+    console.log('MISSING data: ' + l);
+    continue;
+  }
   const data = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
   const tsPath = path.join(DIR, l + '.ts');
 
@@ -33,10 +58,16 @@ for (const l of LOCALES) {
     let skipped = 0;
     const kept = [];
     for (const s of slugs) {
-      if (t.includes(`'${s}':`)) { skipped++; continue; }
+      if (t.includes(`'${s}':`)) {
+        skipped++;
+        continue;
+      }
       kept.push(s);
     }
-    if (kept.length === 0) { console.log(l + ': all slugs already present, skip'); continue; }
+    if (kept.length === 0) {
+      console.log(l + ': all slugs already present, skip');
+      continue;
+    }
     let ins = '';
     for (const s of kept) {
       const m = data[s];
@@ -57,9 +88,13 @@ for (const l of LOCALES) {
 // update index.ts
 let idx = `import fr from './fr';\n`;
 const others = LOCALES.filter((l) => l !== 'fr');
-others.forEach((l) => { idx += `import ${l} from './${l}';\n`; });
+others.forEach((l) => {
+  idx += `import ${l} from './${l}';\n`;
+});
 idx += `import type { SolutionOverride } from './fr';\n\nexport type { SolutionOverride };\n\nexport const solutionTranslations: Record<string, Record<string, SolutionOverride>> = {\n  fr,\n`;
-others.forEach((l) => { idx += `  ${l},\n`; });
+others.forEach((l) => {
+  idx += `  ${l},\n`;
+});
 idx += `};\n`;
 fs.writeFileSync(path.join(DIR, 'index.ts'), idx);
 console.log('\nindex.ts rewritten; created=' + created + ' appended=' + appended);

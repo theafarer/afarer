@@ -79,8 +79,10 @@ const locales = Object.keys(j).filter((k) => typeof j[k] === 'object' && k !== '
 let added = 0;
 for (const [key, vals] of Object.entries(KEYS)) {
   for (const l of locales) {
-    if (j[l][key] === undefined) { j[l][key] = vals[l]; added++; }
-    else console.log('SKIP exists: ' + l + '.' + key);
+    if (j[l][key] === undefined) {
+      j[l][key] = vals[l];
+      added++;
+    } else console.log('SKIP exists: ' + l + '.' + key);
   }
   if (j.en[key] === undefined) j.en[key] = vals.en;
 }

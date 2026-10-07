@@ -13,7 +13,10 @@ for (const l of ['fr', 'es']) {
   const tsPath = path.join(DIR, l + '.ts');
   let t = fs.readFileSync(tsPath, 'utf8');
   const anchor = /const overrides: Record<string, SolutionOverride> = \{\n/;
-  if (!anchor.test(t)) { console.log(l + ': ANCHOR NOT FOUND'); continue; }
+  if (!anchor.test(t)) {
+    console.log(l + ': ANCHOR NOT FOUND');
+    continue;
+  }
   const slugs = Object.keys(data).sort();
   let ins = '';
   let added = 0;
@@ -23,7 +26,10 @@ for (const l of ['fr', 'es']) {
     ins += `  '${s}': {\n    meta: { title: '${esc(m.title)}', description: '${esc(m.description)}' },\n  },\n`;
     added++;
   }
-  if (added === 0) { console.log(l + ': nothing to add'); continue; }
+  if (added === 0) {
+    console.log(l + ': nothing to add');
+    continue;
+  }
   t = t.replace(anchor, (m0) => m0 + ins);
   fs.writeFileSync(tsPath, t);
   console.log(l + ': appended ' + added + ' slugs');
