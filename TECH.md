@@ -895,6 +895,10 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：check 四合一绿（exit 0）→ build 13,859 页 → dist 验证 **41/41 PASS**：de/ja/cs/ar compare 抽验 title 尾巴/overview/table/which 小节标题/metaDesc 全本地化 + `**` 零残留；nl compare 新覆盖节点名+标题；ar compare H1 真阿拉伯语（معدات السلامة vs الملحقات）；de/ja use-case whatIs/Scenarios/RecommendedEquipment 键生效；EN 页与 root use-cases 不变；llms.txt 仍 EN；sitemap-0 11,164、hreflang 35、分片 83/85 修复零回归。
 
+⑤ **线上验证**（CI 双绿 37553615739 + 37553615669 后）：**21/21 PASS**——de/ja/ar compare 抽验 3 页 title+overview+which 小节+`**` 零残留；ar compare H1 真阿拉伯语；nl compare 节点名+Vergelijkingsgids 尾巴；de use-case whatIs/Szenarien 键；en compare title 不变；sitemap-0 11,164、hreflang 35、分片 85 geo noindex 零回归。commit `f8f658f`。
+
+⑥ **剩余挂账（重定性后）**：(a) posts **整页**（正文+title+desc）×20 locale——"正文已译"系 L75 审计误判；(b) /v2/[slug] 指南仅 fr/de 数据集，18 locale 整页 EN 回退（[lang] landing 页 meta 实际已接全 19 locale 翻译表，L75 审计误判）；(c) products 单页 desc ×20 locale。三项均为数千条量级数据翻译，需专项规划。
+
 
 ---
 
