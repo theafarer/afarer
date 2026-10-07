@@ -902,6 +902,19 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+## L77. 分片 87：修复后全站 EN 残留复查审计 + [category] 类目页接线修复（2026-10）
+
+① **审计（分片 83-86 修复后复查）**：全 locale dist title===EN 扫描（排除挂账家族 posts/v2/products），检出 4 家族 + 杂项：**solutions ×23**（`solutionTranslations` 仅 fr 1 slug + es 部分覆盖，deepMerge 接线正常 → 数据级）；**guides ×30**（`getGuidesForLang` 仅 fr/de 数据集，与 v2 同模式 → 数据级）；**evidence/case-studies ×19**（`pageContentData['xx/site-evidence']` 键 34 locale 全存在但内容仅 de/fr 已译，[slug].astro L40 lang 回退接线正常 → 数据级）；**SeoLanding 6 页**（co-brand 等，`i18n/generated/pages/*.ts` 仅 EN 键 → 数据级）；faq 正文（faqsFr/faqsDe 同模式 → 数据级；title "FAQ" 各语言通用可接受）。**唯一接线级债 = `[lang]/[category].astro`**：title/desc/H1/All 芯片仅 fr 特判（`frCategory`/`fr()` 双值函数），20 locale 直出 EN slug；卡片按钮 "Request a Quote"/"Explore Co-Branding" 硬编码 EN（对应 UI 键早已存在）。
+
+② **实施**：(1) SSOT 注入 3 键 ×21 locale（63 条）：`category.all`/`category.premium`/`category.metaDesc`（含 `{category}` 占位符）；(2) 类目显示名接既有 `home.category.<activeCategory>` 键（sup/accessory ×21 已全覆盖）；(3) [category].astro 全部 fr() 特判改 t() 接线，按钮接 `product.requestQuote`/`product.getOemDetails`（带 EN 回退）。工具归档 `TOOLS/i18n-merge/category-keys-87/`（tool_instrction.md §11）。
+
+③ **审计定性更新（挂账清单扩充至 8 项）**：新增 (d) solutions ×23 ×20 locale；(e) guides ×30 ×18 locale（fr/de 已有）；(f) case-studies ×19 ×18 locale（de/fr 已有，pages YAML 键壳已建）；(g) SeoLanding 6 页 ×20 locale；(h) faq 正文 ×18 locale（faqsFr/faqsDe 已有）。
+
+④ **回归数字**：check 四合一绿（exit 0，1 轮 prettier 格式化拦截）→ build 13,859 页 → dist 验证 **40/40 PASS**（20 locale ×2 slug title ≠ EN + EN 按钮零残留）；sitemap-0 11,164、route-manifest 13,858 无变化（无路由变更）。
+
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 

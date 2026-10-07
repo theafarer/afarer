@@ -254,6 +254,18 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+## §11 category-keys-87 — [category] 类目页本地化接线
+
+**背景**：`[lang]/[category].astro`（supboard/accessory 类目页 ×21 locale）title/desc/H1/All 筛选芯片仅 fr 特判（`frCategory`/`fr()` 双值函数），其余 20 locale 直出 EN slug（"supboard — Afarer"）；且卡片按钮 "Request a Quote"/"Explore Co-Branding" 硬编码 EN（`product.requestQuote`/`product.getOemDetails` 键早已存在）。**方案**：(1) SSOT 注入 3 键 ×21 locale（`category.all`/`category.premium`/`category.metaDesc`，后者含 `{category}` 占位符）；(2) 类目显示名改用既有 `home.category.<activeCategory>` 键（sup/accessory ×21 已全覆盖）；(3) 按钮改接既有 product.* 键（带 EN 回退）。
+
+| 文件（目录）                                            | 用途                                                                          | 用法（仓库根）                                                     |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| `i18n-merge/category-keys-87/_inject-category-keys.cjs` | 3 类目页键 ×21 locale 注入 SSOT（幂等：已存在则 SKIP 报告；2 空格 roundtrip） | `node TOOLS/i18n-merge/category-keys-87/_inject-category-keys.cjs` |
+
+**验证**：build 后 dist walk 全量 20 locale ×2 slug 共 40 页 title ≠ EN title + EN 按钮零残留；sitemap-0 11,164 / route-manifest 13,858 无变化（无路由变更）。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。

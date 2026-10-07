@@ -28,11 +28,9 @@ if (!activeCategory) {
 }
 
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
-const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
-const frCategory = (slug: string) =>
-  fr(slug, slug === 'supboard' ? 'planches de SUP' : slug === 'accessory' ? 'accessoires' : slug);
 const categoryKey = (cat: string) =>
   ({ INFLATABLE: 'inflatables', SUP: 'sups', ACCESSORY: 'accessories' })[cat] || cat.toLowerCase();
+const catName = t('home.category.' + (activeCategory || '')) || urlSlug || '';
 
 const localizedProducts = getLocalizedProducts(lang!);
 const filteredProducts = localizedProducts.filter((p) => p.category.toLowerCase() === activeCategory);
@@ -57,8 +55,8 @@ const productVisuals: Record<string, string> = { ...defaultVisuals, ...yamlVisua
 const categories = [...new Set(localizedProducts.map((p) => p.category))];
 
 const metadata: MetaData = {
-  title: `${frCategory(urlSlug)} — ${SITE.name}`,
-  description: `${fr('Browse', 'Parcourir')} ${SITE.name} ${frCategory(urlSlug)} ${fr('products.', 'produits.')}`,
+  title: `${catName} — ${SITE.name}`,
+  description: t('category.metaDesc').replace('{category}', catName),
 };
 ---
 
@@ -67,12 +65,12 @@ const metadata: MetaData = {
     <div class="text-center max-w-3xl mx-auto mb-16">
       <span class="text-sm font-medium text-sky-600 tracking-wide uppercase">{t('product.catalog')}</span>
       <h1 class="mt-4 text-4xl font-semibold text-gray-900 capitalize">
-        {fr('Afarer', 'afarer')}
-        {frCategory(urlSlug)}
+        {SITE.name}
+        {catName}
       </h1>
       <p class="mt-4 text-lg text-gray-500">
-        {fr('Premium', 'Premium')}
-        {frCategory(urlSlug)} — {t('product.pageDesc')}
+        {t('category.premium')}
+        {catName} — {t('product.pageDesc')}
       </p>
     </div>
 
@@ -86,7 +84,7 @@ const metadata: MetaData = {
               'bg-white border-gray-200 text-gray-600 hover:bg-gray-50',
             ]}
           >
-            {fr('All', 'Tout')} ({localizedProducts.length})
+            {t('category.all') || 'All'} ({localizedProducts.length})
           </a>
           {categories.map((cat) => {
             const catUrl = CATEGORY_SLUG_TO_URL[cat.toLowerCase()];
@@ -146,13 +144,13 @@ const metadata: MetaData = {
                     href={`/${lang}/contact?product=${encodeURIComponent(p.name)}`}
                     class="block text-center px-4 py-2.5 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary/90 transition-colors"
                   >
-                    Request a Quote
+                    {t('product.requestQuote') || 'Request a Quote'}
                   </a>
                   <a
                     href={`/${lang}/contact?product=${encodeURIComponent(p.name)}&custom=1`}
                     class="block text-center px-4 py-2 border border-primary text-primary text-sm font-medium rounded-lg hover:bg-primary/5 transition-colors"
                   >
-                    Explore Co-Branding
+                    {t('product.getOemDetails') || 'Explore Co-Branding'}
                   </a>
                 </div>
               </div>
