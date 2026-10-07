@@ -20,7 +20,7 @@ import { SITE } from 'astrowind:config';
 import { getCanonical, getPermalink } from '~/utils/permalinks';
 import type { MetaData } from '~/types';
 import { products as productRecords } from '~/data/products';
-import { localizeProduct } from '~/utils/product-i18n';
+import { localizeProduct, getLocalizedProducts } from '~/utils/product-i18n';
 import { getGuidesForLang } from '~/i18n/localized-data';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
@@ -52,20 +52,35 @@ const gallery = await Promise.all(
     alt: g.alt || product.title,
   }))
 );
-const related = await findRelatedProducts(product, 3);
+const relatedRaw = await findRelatedProducts(product, 3);
+const relatedLocById = new Map(getLocalizedProducts(lang || defaultLang).map((r) => [r.id, r]));
+const related = relatedRaw.map((p) => {
+  const loc = relatedLocById.get(p.slug);
+  if (!loc) return p;
+  return {
+    ...p,
+    title: loc.name || p.title,
+    summary: loc.desc || p.summary,
+    categoryLabel: (p.category && t('home.category.' + p.category.toLowerCase())) || p.categoryLabel,
+  };
+});
 const relatedGuides = rec
   ? getGuidesForLang(lang)
       .filter((g) => g.relatedProducts.includes(rec.id))
       .slice(0, 3)
   : [];
 
-const defaultTitle = product.categoryLabel
-  ? `${product.title} — ${product.categoryLabel} | ${SITE.name}`
-  : `${product.title} | ${SITE.name}`;
-const defaultDesc =
-  (product.summary ?? product.description)
-    ? `${product.summary ?? product.description} — ${t('cta.requestQuote')}`
-    : `Explore the ${product.title} from ${SITE.name}. ${t('cta.requestQuote')}`;
+const localName = rec?.name || product.title;
+const localDesc = rec?.desc || product.summary || product.description || '';
+const localCategoryLabel =
+  (product.category && t('home.category.' + product.category.toLowerCase())) || product.categoryLabel || '';
+
+const defaultTitle = localCategoryLabel
+  ? `${localName} — ${localCategoryLabel} | ${SITE.name}`
+  : `${localName} | ${SITE.name}`;
+const defaultDesc = localDesc
+  ? `${localDesc} — ${t('cta.requestQuote')}`
+  : `Explore the ${localName} from ${SITE.name}. ${t('cta.requestQuote')}`;
 
 const metadata = merge(
   {
@@ -81,13 +96,19 @@ const metadata = merge(
   product.metadata ? { ...product.metadata, canonical: product.metadata.canonical || url } : {}
 ) as MetaData;
 
+// Localized pages must not inherit the EN-only per-product metadata title/description.
+if ((lang || defaultLang) !== 'en') {
+  metadata.title = defaultTitle;
+  metadata.description = defaultDesc;
+}
+
 const productCrumbs = [
   { name: t('nav.home'), href: `/${lang}/` },
   { name: t('nav.products'), href: `/${lang}/products` },
-  ...(product.categoryLabel
-    ? [{ name: product.categoryLabel, href: `/${lang}/${CATEGORY_SLUG_TO_URL[product.category || ''] || 'products'}` }]
+  ...(localCategoryLabel
+    ? [{ name: localCategoryLabel, href: `/${lang}/${CATEGORY_SLUG_TO_URL[product.category || ''] || 'products'}` }]
     : []),
-  { name: product.title },
+  { name: localName },
 ];
 
 const specRows = product.specs ?? [];
@@ -97,34 +118,34 @@ const specRows = product.specs ?? [];
   <JsonLd
     type="Product"
     product={{
-      name: product.title,
-      description: product.summary ?? product.description ?? '',
+      name: localName,
+      description: localDesc,
       sku: product.sku,
       image: image ? String(image) : undefined,
       url: String(url || ''),
-      category: product.categoryLabel,
+      category: localCategoryLabel,
       brandName: SITE.name,
       manufacturerName: SITE.name,
       countryOfOrigin: 'China',
       material:
-        product.ai_specs?.material ||
-        product.ai_specs?.hull ||
-        product.ai_specs?.tubes ||
         rec?.ai_specs?.material ||
         rec?.ai_specs?.hull ||
         rec?.ai_specs?.tubes ||
+        product.ai_specs?.material ||
+        product.ai_specs?.hull ||
+        product.ai_specs?.tubes ||
         undefined,
-      ...(product.ai_specs?.weight || rec?.ai_specs?.weight
-        ? { weight: product.ai_specs?.weight || rec?.ai_specs?.weight }
+      ...(rec?.ai_specs?.weight || product.ai_specs?.weight
+        ? { weight: rec?.ai_specs?.weight || product.ai_specs?.weight }
         : {}),
-      ...(product.ai_specs?.length || rec?.ai_specs?.length
-        ? { depth: product.ai_specs?.length || rec?.ai_specs?.length }
+      ...(rec?.ai_specs?.length || product.ai_specs?.length
+        ? { depth: rec?.ai_specs?.length || product.ai_specs?.length }
         : {}),
-      ...(product.ai_specs?.width || rec?.ai_specs?.width
-        ? { width: product.ai_specs?.width || rec?.ai_specs?.width }
+      ...(rec?.ai_specs?.width || product.ai_specs?.width
+        ? { width: rec?.ai_specs?.width || product.ai_specs?.width }
         : {}),
-      ...(product.ai_specs?.thickness || rec?.ai_specs?.thickness
-        ? { height: product.ai_specs?.thickness || rec?.ai_specs?.thickness }
+      ...(rec?.ai_specs?.thickness || product.ai_specs?.thickness
+        ? { height: rec?.ai_specs?.thickness || product.ai_specs?.thickness }
         : {}),
       ...(product.price ? { inStock: product.inStock } : {}),
     }}
@@ -133,7 +154,7 @@ const specRows = product.specs ?? [];
     gallery.length > 1 &&
       gallery.slice(1).map((g) => {
         const imgUrl = typeof g.raw === 'string' ? g.raw : String(g.raw?.src || '');
-        return imgUrl ? <JsonLd type="ImageObject" image={{ url: imgUrl, caption: g.alt || product.title }} /> : null;
+        return imgUrl ? <JsonLd type="ImageObject" image={{ url: imgUrl, caption: g.alt || localName }} /> : null;
       })
   }
   <JsonLd type="BreadcrumbList" breadcrumbs={productCrumbs.map((c) => ({ name: c.name, href: c.href }))} />
@@ -280,11 +301,7 @@ const specRows = product.specs ?? [];
         <div class="flex flex-col gap-6">
           <div>
             <div class="flex items-center gap-3 text-sm text-gray-400 dark:text-slate-500 mb-3">
-              {
-                product.categoryLabel && (
-                  <span class="font-medium uppercase tracking-wider">{product.categoryLabel}</span>
-                )
-              }
+              {localCategoryLabel && <span class="font-medium uppercase tracking-wider">{localCategoryLabel}</span>}
               {
                 product.sku && (
                   <>
@@ -297,13 +314,9 @@ const specRows = product.specs ?? [];
               }
             </div>
             <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 dark:text-slate-100 leading-[1.15]">
-              {product.title}
+              {localName}
             </h1>
-            {
-              product.summary && (
-                <p class="mt-3 text-base text-gray-600 dark:text-slate-400 leading-relaxed">{product.summary}</p>
-              )
-            }
+            {localDesc && <p class="mt-3 text-base text-gray-600 dark:text-slate-400 leading-relaxed">{localDesc}</p>}
           </div>
 
           {/* Environment & Water Condition Tags */}
@@ -326,13 +339,13 @@ const specRows = product.specs ?? [];
 
           {/* Best For Badges */}
           {
-            (product.ai_use_cases || rec?.ai_use_cases || []).length > 0 && (
+            (rec?.ai_use_cases || product.ai_use_cases || []).length > 0 && (
               <div>
                 <span class="text-[10px] font-semibold uppercase tracking-wider text-gray-400 dark:text-slate-500 mb-2 block">
                   {t('product.bestFor') || 'Best For'}
                 </span>
                 <div class="flex flex-wrap gap-1.5">
-                  {(product.ai_use_cases || rec?.ai_use_cases || []).slice(0, 4).map((uc: string) => (
+                  {(rec?.ai_use_cases || product.ai_use_cases || []).slice(0, 4).map((uc: string) => (
                     <span class="px-2.5 py-1 bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-300 text-xs font-medium rounded-full border border-amber-200 dark:border-amber-800">
                       {uc}
                     </span>
@@ -417,10 +430,10 @@ const specRows = product.specs ?? [];
     (product.definition || rec) && (
       <section class="max-w-7xl mx-auto px-4 sm:px-6 -mt-1 relative z-10">
         <Tldr
-          summary={product.definition || rec?.definition}
+          summary={rec?.definition || product.definition}
           points={[
-            `${product.audience || rec?.audience}`,
-            `Use cases: ${(product.ai_use_cases || rec?.ai_use_cases || []).slice(0, 3).join(', ')}`,
+            `${rec?.audience || product.audience}`,
+            `Use cases: ${(rec?.ai_use_cases || product.ai_use_cases || []).slice(0, 3).join(', ')}`,
           ]}
         />
       </section>
@@ -429,7 +442,7 @@ const specRows = product.specs ?? [];
 
   {/* Perfect For — B2B Commercial Scenarios */}
   {
-    (product.ai_use_cases || rec?.ai_use_cases || []).length > 0 && (
+    (rec?.ai_use_cases || product.ai_use_cases || []).length > 0 && (
       <section class="bg-white dark:bg-slate-950 border-b border-gray-100 dark:border-slate-800">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10 md:py-14">
           <span class="text-xs font-semibold uppercase tracking-wider text-sky-600 dark:text-sky-400 mb-2 block">
@@ -439,7 +452,7 @@ const specRows = product.specs ?? [];
             {t('product.commercialScenarios') || 'Commercial Scenarios'}
           </h2>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {(product.ai_use_cases || rec?.ai_use_cases || []).map((uc: any) => (
+            {(rec?.ai_use_cases || product.ai_use_cases || []).map((uc: any) => (
               <div class="relative bg-gradient-to-br from-sky-50 to-blue-50 dark:from-sky-900/20 dark:to-blue-900/20 rounded-2xl p-6 border border-sky-100 dark:border-sky-800 hover:shadow-md transition-all">
                 <div class="w-10 h-10 bg-sky-100 dark:bg-sky-800/50 rounded-xl flex items-center justify-center mb-4">
                   <svg
@@ -493,7 +506,7 @@ const specRows = product.specs ?? [];
 
   {/* Why This Exists (Problem) */}
   {
-    (product.problem || rec?.problem) && (
+    (rec?.problem || product.problem) && (
       <section
         class="bg-gray-50/50 dark:bg-slate-900/50 border-b border-gray-100 dark:border-slate-800"
         data-ai-block="problem"
@@ -505,7 +518,7 @@ const specRows = product.specs ?? [];
                 {t('v2.problem')}
               </span>
               <div class="space-y-2 text-sm text-gray-700 dark:text-slate-300 leading-relaxed">
-                <p>{product.problem || rec?.problem}</p>
+                <p>{rec?.problem || product.problem}</p>
               </div>
             </div>
           </div>
@@ -516,7 +529,7 @@ const specRows = product.specs ?? [];
 
   {/* Product Definition — Who is it for? */}
   {
-    (product.definition || rec?.definition) && (
+    (rec?.definition || product.definition) && (
       <section
         class="bg-gray-50/50 dark:bg-slate-900/50 border-b border-gray-100 dark:border-slate-800"
         data-ai-block="definition"
@@ -529,14 +542,14 @@ const specRows = product.specs ?? [];
             {t('product.whoIsItFor') || 'Who is it for?'}
           </h2>
           <p class="text-base text-gray-600 dark:text-slate-400 leading-relaxed">
-            {product.definition || rec?.definition}
+            {rec?.definition || product.definition}
           </p>
-          {(product.audience || rec?.audience) && (
+          {(rec?.audience || product.audience) && (
             <div class="mt-6 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl p-5">
               <p class="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-2">
                 {t('product.designedFor') || 'Designed for'}
               </p>
-              <p class="text-sm text-gray-600 dark:text-slate-400 capitalize">{product.audience || rec?.audience}</p>
+              <p class="text-sm text-gray-600 dark:text-slate-400 capitalize">{rec?.audience || product.audience}</p>
             </div>
           )}
         </div>
@@ -556,7 +569,7 @@ const specRows = product.specs ?? [];
             {t('product.useCases')}
           </h2>
           <div class="grid md:grid-cols-2 gap-3">
-            {(product.ai_use_cases || rec?.ai_use_cases || []).map((uc: any) => (
+            {(rec?.ai_use_cases || product.ai_use_cases || []).map((uc: any) => (
               <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50 dark:bg-slate-800/50 border border-gray-100 dark:border-slate-700">
                 <span class="w-2 h-2 mt-2 rounded-full bg-sky-500 flex-shrink-0" />
                 <p class="text-sm text-gray-700 dark:text-slate-300">{uc}</p>
@@ -566,7 +579,7 @@ const specRows = product.specs ?? [];
               <span class="w-2 h-2 mt-2 rounded-full bg-sky-500 flex-shrink-0" />
               <div>
                 <p class="text-sm font-semibold text-sky-800 dark:text-sky-300">{t('product.skillLevel')}</p>
-                <p class="text-sm text-sky-700 dark:text-sky-400 capitalize">{product.skill || rec?.skill}</p>
+                <p class="text-sm text-sky-700 dark:text-sky-400 capitalize">{rec?.skill || product.skill}</p>
               </div>
             </div>
           </div>
@@ -577,7 +590,7 @@ const specRows = product.specs ?? [];
 
   {/* Comparison */}
   {
-    (product.ai_comparison || rec?.ai_comparison) && (
+    (rec?.ai_comparison || product.ai_comparison) && (
       <section
         class="bg-gray-50/50 dark:bg-slate-900/50 border-b border-gray-100 dark:border-slate-800"
         data-ai-block="comparison"
@@ -590,7 +603,7 @@ const specRows = product.specs ?? [];
             {t('product.howCompares')}
           </h2>
           <p class="text-base text-gray-600 dark:text-slate-400 leading-relaxed">
-            {product.ai_comparison || rec?.ai_comparison}
+            {rec?.ai_comparison || product.ai_comparison}
           </p>
         </div>
       </section>
@@ -606,7 +619,7 @@ const specRows = product.specs ?? [];
             {t('product.faq')}
           </h2>
           <div class="space-y-3">
-            {(product.ai_faq || rec?.ai_faq || []).map((f: any) => (
+            {(rec?.ai_faq || product.ai_faq || []).map((f: any) => (
               <details class="group rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 open:shadow-sm transition-shadow">
                 <summary class="flex items-center justify-between px-5 py-4 cursor-pointer text-sm font-semibold text-gray-900 dark:text-slate-200 list-none">
                   {f.q}
@@ -625,7 +638,7 @@ const specRows = product.specs ?? [];
     )
   }
 
-  <JsonLd type="FAQPage" faqs={product.ai_faq || rec?.ai_faq || []} />
+  <JsonLd type="FAQPage" faqs={rec?.ai_faq || product.ai_faq || []} />
 
   {/* Full Technical Specifications */}
   {
@@ -661,7 +674,7 @@ const specRows = product.specs ?? [];
 
   {/* Materials & Construction */}
   {
-    (product.ai_specs || rec?.ai_specs) && (
+    (rec?.ai_specs || product.ai_specs) && (
       <section class="bg-gray-50/50 dark:bg-slate-900/50 border-b border-gray-100 dark:border-slate-800">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10 md:py-14">
           <span class="text-xs font-semibold uppercase tracking-wider text-sky-600 dark:text-sky-400 mb-2 block">
@@ -671,7 +684,7 @@ const specRows = product.specs ?? [];
             {t('product.specifications')}
           </h2>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {Object.entries(product.ai_specs || rec?.ai_specs || {})
+            {Object.entries(rec?.ai_specs || product.ai_specs || {})
               .filter(([k]) => !['length', 'width', 'height', 'weight', 'max_load', 'pressure', 'warranty'].includes(k))
               .slice(0, 6)
               .map(([k, v]) => (
@@ -794,44 +807,44 @@ const specRows = product.specs ?? [];
     (product.definition || product.problem || product.audience || rec) && (
       <section class="sr-only" aria-hidden="true">
         <div data-ai-block="definition">
-          <p>{product.definition || rec?.definition}</p>
+          <p>{rec?.definition || product.definition}</p>
           <p>
-            {fr('Problem it solves:', "Problème qu'il résout :")} {product.problem || rec?.problem}
+            {fr('Problem it solves:', "Problème qu'il résout :")} {rec?.problem || product.problem}
           </p>
           <p>
-            {fr('How it works:', 'Comment ça fonctionne :')} {product.howItWorks || rec?.howItWorks}
+            {fr('How it works:', 'Comment ça fonctionne :')} {rec?.howItWorks || product.howItWorks}
           </p>
           <p>
-            {fr('Target audience:', 'Public cible :')} {product.audience || rec?.audience}
+            {fr('Target audience:', 'Public cible :')} {rec?.audience || product.audience}
           </p>
         </div>
         <div data-ai-block="use-case">
           <p>
-            {fr('Use cases:', "Cas d'utilisation :")} {(product.ai_use_cases || rec?.ai_use_cases || []).join('; ')}
+            {fr('Use cases:', "Cas d'utilisation :")} {(rec?.ai_use_cases || product.ai_use_cases || []).join('; ')}
           </p>
           <p>
-            {fr('Environments:', 'Environnements :')} {(product.environment || rec?.environment || []).join(', ')}
+            {fr('Environments:', 'Environnements :')} {(rec?.environment || product.environment || []).join(', ')}
           </p>
           <p>
             {fr('Water conditions:', "Conditions de l'eau :")}{' '}
-            {(product.water_condition || rec?.water_condition || []).join(', ')}
+            {(rec?.water_condition || product.water_condition || []).join(', ')}
           </p>
           <p>
-            {fr('Skill level:', 'Niveau de compétence :')} {product.skill || rec?.skill}
+            {fr('Skill level:', 'Niveau de compétence :')} {rec?.skill || product.skill}
           </p>
         </div>
         <div data-ai-block="specification">
-          {Object.entries(product.ai_specs || rec?.ai_specs || {}).map(([k, v]) => (
+          {Object.entries(rec?.ai_specs || product.ai_specs || {}).map(([k, v]) => (
             <p data-spec={k}>
               {k}: {v}
             </p>
           ))}
         </div>
         <div data-ai-block="comparison">
-          <p>{product.ai_comparison || rec?.ai_comparison}</p>
+          <p>{rec?.ai_comparison || product.ai_comparison}</p>
         </div>
         <div data-ai-block="faq">
-          {(product.ai_faq || rec?.ai_faq || []).map((f: any) => (
+          {(rec?.ai_faq || product.ai_faq || []).map((f: any) => (
             <p>
               <strong>Q:</strong> {f.q} <strong>A:</strong> {f.a}
             </p>

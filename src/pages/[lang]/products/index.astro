@@ -19,6 +19,7 @@ import { PRODUCT_LIST, getCanonical, getPermalink } from '~/utils/permalinks';
 import type { MetaData } from '~/types';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { getLocalizedProducts } from '~/utils/product-i18n';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -27,8 +28,19 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
 
-const products = await getProducts();
+const productsRaw = await getProducts();
 const categories = await getProductCategories();
+const locById = new Map(getLocalizedProducts(lang || defaultLang).map((r) => [r.id, r]));
+const products = productsRaw.map((p) => {
+  const loc = locById.get(p.slug);
+  if (!loc) return p;
+  return {
+    ...p,
+    title: loc.name || p.title,
+    summary: loc.desc || p.summary,
+    categoryLabel: (p.category && t('home.category.' + p.category.toLowerCase())) || p.categoryLabel,
+  };
+});
 const rawCategory = (Astro.url?.searchParams?.get('category') ?? '') as 'rib' | 'inflatable' | 'accessory' | 'sup' | '';
 const activeCategory =
   rawCategory === 'rib' || rawCategory === 'inflatable' || rawCategory === 'accessory' || rawCategory === 'sup'
@@ -40,8 +52,8 @@ const hidden = !isProductsEnabled() || !isProductsListEnabled();
 
 const metadata = merge(
   {
-    title: `Inflatable Boat & SUP Products | ${SITE.name}`,
-    description: `Browse the full ${SITE.name} product catalog — inflatable SUP boards, kayaks, dinghies, RIBs, and accessories. Country distribution and co-branding for qualified water-sports partners.`,
+    title: `${t('products.metaTitle')} | ${SITE.name}`,
+    description: t('products.metaDesc'),
     canonical: getCanonical(`/${lang}${getPermalink(PRODUCT_LIST)}`),
     robots: { index: !hidden, follow: true },
     openGraph: { type: 'website' },

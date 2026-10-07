@@ -266,6 +266,18 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+## §12 product-meta-keys-88 — products 单页/列表页本地化接线 + products 列表 meta 键
+
+**背景**：`[lang]/products/[slug].astro` 中 `productTexts`（388KB，20 locale ×21 产品翻译）几乎未被消费——全模板 `product.X || rec?.X` 优先序反了（public EN 对象字段全非空 → rec 永不生效）；metadata 被 frontmatter `product.metadata`（EN 硬编码）二次覆盖；列表页 `index.astro` 直接喂 EN `getProducts()` 且 meta 硬编码 EN。**方案**：(1) frontmatter 加 `localName`/`localDesc`/`localCategoryLabel`（rec 优先 + `home.category.<cat>` 键），H1/summary/JsonLd Product/面包屑/gallery caption 全部改用；(2) 全模板 `product.X || rec?.X` 机械反转为 `rec?.X || product.X`（32 对，正则脚本 `_reverse88.cjs` 模式）；(3) 非 EN locale 强制 metadata.title/description 回本地化值（frontmatter per-product EN metadata 仅 EN 页生效）；(4) 列表页与 [slug] 页 related 卡片用 `getLocalizedProducts(lang)` 合并 title/summary/categoryLabel；(5) SSOT 注入 `products.metaTitle`/`products.metaDesc` ×21 locale。
+
+| 文件（目录）                                                    | 用途                                                                       | 用法（仓库根）                                                             |
+| --------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| `i18n-merge/product-meta-keys-88/_inject-product-meta-keys.cjs` | products 列表页 2 meta 键 ×21 locale 注入 SSOT（幂等：已存在则 SKIP 报告） | `node TOOLS/i18n-merge/product-meta-keys-88/_inject-product-meta-keys.cjs` |
+
+**验证**：build 后 dist walk 全量 20 locale ×21 slug 共 **420/420 PASS**（title+desc 均非 EN）+ 列表页 title 本地化（ja/de/fr/ar/pt 抽验）+ sitemap-0 11,164 / route-manifest 13,858 无变化。**注意**：`productTexts` 内 `airdeck-360` 条目为多余数据（content collection 无此产品，无页面，无害）。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。

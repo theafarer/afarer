@@ -915,6 +915,19 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+## L78. 分片 88：products 单页/列表页本地化接线——388KB productTexts 翻译复活（2026-10）
+
+① **发现（L77 审计 products 家族复核）**：`src/data/product-texts.ts`（388KB，20 locale ×21 产品 name/desc + 9 产品 rich 字段翻译）**几乎未被消费**——`[lang]/products/[slug].astro` 全模板 `product.X || rec?.X` 优先序反了（public EN 对象字段全非空 → 本地化 rec 永不生效，仅 relatedProducts 过滤用到 rec.id）；且 metadata 被 frontmatter per-product `metadata.title/description`（EN 硬编码，如 `Afarer SUP Explorer 11' — All-Around Inflatable SUP Board`）经 lodash merge 二次覆盖 → dist 420 个产品单页 title/desc 全 locale EN。列表页 `index.astro` 直接喂 EN `getProducts()` 且 title/desc 硬编码 EN（L87 审计的 `^products/` 排除规则漏测）。
+
+② **实施**：(1) frontmatter 加 `localName`/`localDesc`/`localCategoryLabel`（rec 优先 + `home.category.<cat>` 既有键），H1/summary/JsonLd Product（name/description/category）/面包屑/gallery caption 全改用；(2) 全模板 32 对 `product.X || rec?.X` 机械反转（正则脚本，same-field 校验）；(3) **非 EN locale 强制 metadata.title/description 回本地化值**（per-product EN metadata 仅 EN 页保留——merge 后覆写）；(4) 列表页与 [slug] related 卡片用 `getLocalizedProducts(lang)` Map 合并 title/summary/categoryLabel（ProductRecord.name/desc ↔ Product.title/summary 字段名差异在合并层适配）；(5) SSOT 注入 `products.metaTitle`/`products.metaDesc` ×21 locale（42 条，列表页 meta）。工具归档 `TOOLS/i18n-merge/product-meta-keys-88/`（tool_instrction.md §12）。
+
+③ **踩坑**：metadata 是双层覆盖（defaults → product.metadata merge），仅改 defaults 不够——非 EN 页必须 merge 后二次覆写；`sr-only` ai-intent 隐藏块内 fr() 标签残留属不可见债，本次未动。
+
+④ **回归数字**：check 四合一绿（exit 0）→ build 13,859 页 → dist 验证 **420/420 PASS**（20 locale ×21 slug title+desc 均非 EN）+ 列表页 title 本地化 + sitemap-0 11,164、route-manifest 13,858 无变化。**挂账 ③（products desc）清除**——余 7 项（posts/v2/solutions/guides/case-studies/SeoLanding/faq）。
+
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 
