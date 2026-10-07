@@ -278,6 +278,22 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+## §13 solutions-89 — solutions 家族 meta 级本地化 + [slug].astro L() 接线
+
+**背景**：L77 挂账 (d) solutions ×23 ×20 locale——`solutionTranslations` 仅 fr 1 slug 完整 + es 部分覆盖，其余 locale meta 全 EN；`[lang]/solutions/[slug].astro` 内 12 处 UI 标签经本地 `L()` helper 直出 EN。solutions 完整正文 ~12MB 不可单分片，本工具链取 meta 级 + UI 标签接线，正文挂后续分片。**方案**：(1) SSOT 注入 `solutions.*` 12 键 ×21 locale（首轮 9 键 + 多行 L() 宽正则 `L\(\s*'` 补扫 3 键）；(2) 模板 12 处 `L('EN')` 改 `t('solutions.xxx') || 'EN'`，L helper 删除；(3) 24 slugs ×20 locale = 480 组 title+desc meta override：18 locale 新建 meta-only `{l}.ts`，fr.ts/es.ts 追加 23 slugs（保留既有完整 override），`translations/index.ts` 重写注册 20 locale；(4) EN-leak 审计修正 it/nl/sv/no/da 5 locale（`j[l][k] === j.en[k]` 判定）。
+
+| 文件（目录）                                            | 用途                                                                                                                                                      | 用法（仓库根）                                                     |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| `i18n-merge/solutions-89/_inject-solutions-ui-keys.cjs` | solutions.* 12 UI 键 ×21 locale 注入 SSOT（幂等：已存在则 SKIP；2 空格 roundtrip）                                                                        | `node TOOLS/i18n-merge/solutions-89/_inject-solutions-ui-keys.cjs` |
+| `i18n-merge/solutions-89/_gen-meta-overrides.cjs`       | 18 新 locale 生成 meta-only override `{l}.ts`（读 `_sol-meta-{l}.json` 翻译底稿，JSON.parse + slug 集合比对 EN 校验）                                     | `node TOOLS/i18n-merge/solutions-89/_gen-meta-overrides.cjs`       |
+| `i18n-merge/solutions-89/_append-fr-es.cjs`             | fr.ts/es.ts 追加 23 slugs meta-only override（fr 保留 corporate-sup-event-package 完整 override；插入锚匹配 `const overrides: Record<...> = {` 实际结构） | `node TOOLS/i18n-merge/solutions-89/_append-fr-es.cjs`             |
+| `i18n-merge/solutions-89/_fix-casestudy-keys.cjs`       | 修正 it/nl/sv/no/da 5 locale caseStudy/caseStudies EN-leak（SSOT roundtrip）                                                                              | `node TOOLS/i18n-merge/solutions-89/_fix-casestudy-keys.cjs`       |
+| `i18n-merge/solutions-89/_verify-dist.cjs`              | dist walk：480 meta ≠ EN + 60 labels（20 locale ×3 键）+ caseStudy 修正 5 locale 复验                                                                     | build 后 `node TOOLS/i18n-merge/solutions-89/_verify-dist.cjs`     |
+
+**验证**：build 后 dist walk **480/480 PASS**（20 locale ×24 slug title+desc ≠ EN）+ labels 60/60 + caseStudy 5/5 + sitemap-0 11,164 / route-manifest 13,858 无变化。**注意**：翻译底稿 `_sol-meta-{20 locale}.json`（480 组）在 Temp 目录，生成已用毕未入库；正文级翻译（hero/challenge/solutions/why ×24 slugs ×20 locale）挂后续分片。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。

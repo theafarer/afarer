@@ -34,7 +34,6 @@ if (!page) {
 }
 
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
-const L = (en: string, frTxt: string, esTxt: string) => (lang === 'fr' ? frTxt : lang === 'es' ? esTxt : en);
 
 const hero = page.hero;
 const challenge = page.challenge;
@@ -42,7 +41,7 @@ const solutionsData = page.solutions;
 const cs =
   typeof page.caseStudy.customer === 'string'
     ? {
-        title: L('Case Study', 'Étude de cas', 'Caso Práctico'),
+        title: t('solutions.caseStudy') || 'Case Study',
         customer: { location: undefined, background: page.caseStudy.customer, goal: undefined } as {
           location?: string;
           background?: string;
@@ -83,11 +82,8 @@ const ctaActions = [
   <WidgetWrapper containerClass="max-w-6xl mx-auto">
     <Headline
       title={challenge.title}
-      subtitle={L(
-        'Four challenges your business faces — and how Afarer solves each one.',
-        'Quatre défis auxquels votre entreprise est confrontée — et comment Afarer les résout.',
-        'Cuatro desafíos a los que se enfrenta tu empresa — y cómo Afarer resuelve cada uno.'
-      )}
+      subtitle={t('solutions.challengeSubtitle') ||
+        'Four challenges your business faces — and how Afarer solves each one.'}
     />
     <div class="grid md:grid-cols-2 gap-6 mt-10">
       {
@@ -104,11 +100,7 @@ const ctaActions = [
   <WidgetWrapper containerClass="max-w-5xl mx-auto">
     <Headline
       title={solutionsData.title}
-      subtitle={L(
-        'Proven manufacturing solutions designed for your business.',
-        'Des solutions de fabrication éprouvées, conçues pour votre entreprise.',
-        'Soluciones de fabricación probadas diseñadas para tu empresa.'
-      )}
+      subtitle={t('solutions.solutionsSubtitle') || 'Proven manufacturing solutions designed for your business.'}
     />
     <div class="mt-10 space-y-8">
       {
@@ -141,12 +133,8 @@ const ctaActions = [
 
   <WidgetWrapper containerClass="max-w-5xl mx-auto">
     <Headline
-      title={L('Case Studies', 'Études de cas', 'Casos Prácticos')}
-      subtitle={L(
-        'Real results from real partnerships.',
-        'Des résultats réels issus de partenariats réels.',
-        'Resultados reales de asociaciones reales.'
-      )}
+      title={t('solutions.caseStudies') || 'Case Studies'}
+      subtitle={t('solutions.caseStudiesSubtitle') || 'Real results from real partnerships.'}
     />
     <div class="mt-10 space-y-8">
       {
@@ -163,7 +151,7 @@ const ctaActions = [
                 {c.customer.location && (
                   <div>
                     <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">
-                      {L('Location', 'Lieu', 'Lugar')}
+                      {t('solutions.location') || 'Location'}
                     </p>
                     <p class="text-sm font-medium text-gray-900 dark:text-slate-100 mt-1">{c.customer.location}</p>
                   </div>
@@ -171,7 +159,7 @@ const ctaActions = [
                 {c.customer.background && (
                   <div>
                     <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">
-                      {L('Background', 'Contexte', 'Contexto')}
+                      {t('solutions.background') || 'Background'}
                     </p>
                     <p class="text-sm font-medium text-gray-900 dark:text-slate-100 mt-1">{c.customer.background}</p>
                   </div>
@@ -179,7 +167,7 @@ const ctaActions = [
                 {c.customer.goal && (
                   <div>
                     <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">
-                      {L('Goal', 'Objectif', 'Objetivo')}
+                      {t('solutions.goal') || 'Goal'}
                     </p>
                     <p class="text-sm font-medium text-gray-900 dark:text-slate-100 mt-1">{c.customer.goal}</p>
                   </div>
@@ -201,7 +189,7 @@ const ctaActions = [
             )}
             <div>
               <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">
-                {L('Results', 'Résultats', 'Resultados')}
+                {t('solutions.results') || 'Results'}
               </p>
               <div class="flex flex-wrap gap-2">
                 {c.results.map((r) => (
@@ -220,11 +208,7 @@ const ctaActions = [
 
   <Features
     title={why.title}
-    subtitle={L(
-      'Trusted by brands worldwide for a decade.',
-      'La confiance des marques du monde entier depuis dix ans.',
-      'La confianza de marcas de todo el mundo durante una década.'
-    )}
+    subtitle={t('solutions.whyTitle') || 'Trusted by brands worldwide for a decade.'}
     items={why.items}
     columns={3}
   />
@@ -232,12 +216,8 @@ const ctaActions = [
   {
     faqs.length > 0 && (
       <FAQs
-        title={L('Frequently Asked Questions', 'Questions Fréquentes', 'Preguntas Frecuentes')}
-        subtitle={L(
-          'Common questions about this solution.',
-          'Questions courantes sur cette solution.',
-          'Preguntas comunes sobre esta solución.'
-        )}
+        title={t('solutions.faqTitle') || 'Frequently Asked Questions'}
+        subtitle={t('solutions.faqSubtitle') || 'Common questions about this solution.'}
         items={faqs.map((f) => ({ title: f.question, description: f.answer }))}
         columns={1}
       />

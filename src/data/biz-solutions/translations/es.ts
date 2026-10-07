@@ -42,6 +42,169 @@ export type SolutionOverride = {
 };
 
 const overrides: Record<string, SolutionOverride> = {
+  'commercial-sup-fleet': {
+    meta: {
+      title: 'Fabricante de flotas de SUP comerciales | Proveedor de equipos de alquiler y escuela | {SITE}',
+      description:
+        '{SITE} ofrece soluciones de flotas de SUP comerciales para clubes de paddle, operadores de alquiler y escuelas de SUP. Paddle boards inflables duraderos con construcción de PVC reforzado, accesorios profesionales y soporte de fabricación OEM por volumen.',
+    },
+  },
+  'commercial-water-park-sup-fleet': {
+    meta: {
+      title: 'Proveedor de flotas SUP para parques acuáticos comerciales | {SITE}',
+      description:
+        'Afarer ofrece soluciones de flotas SUP comerciales para parques acuáticos y parques temáticos. Paddle boards de alta durabilidad, diseños aptos para principiantes, construcción centrada en la seguridad y suministro OEM a gran escala.',
+    },
+  },
+  'complete-beach-activity-equipment-solutions': {
+    meta: {
+      title: 'Proveedor de equipos SUP comerciales | Soluciones de flotas de alquiler para playas | {SITE}',
+      description:
+        'Afarer ofrece soluciones de flotas SUP comerciales para negocios de ocio de playa y centros de deportes acuáticos. Paddle boards de alquiler duraderos, packs completos de equipos, soporte de repuestos y personalización OEM.',
+    },
+  },
+  'create-fishing-sup-brand': {
+    meta: {
+      title: 'Fabricante de SUP de pesca | Paddle boards de pesca inflables personalizados | {SITE}',
+      description:
+        'Afarer ayuda a las marcas de artículos de pesca a crear productos de SUP de pesca personalizados con diseños de alta estabilidad, sistemas de portacañas, soportes para neveras, accesorios D-ring y soluciones de fabricación de marca privada.',
+    },
+  },
+  'creator-influencer-sup-brand': {
+    meta: {
+      title: 'Fabricante de marcas SUP para creadores | Productos SUP personalizados para influencers | {SITE}',
+      description:
+        '{SITE} ayuda a los creadores de YouTube, TikTok, Instagram y las marcas de Kickstarter a lanzar productos SUP personalizados con prototipos rápidos, fabricación con MOQ bajo, diseños de edición limitada y soluciones de marca privada.',
+    },
+  },
+  'destination-water-sports-package': {
+    meta: {
+      title: 'Proveedor de equipos acuáticos para destinos turísticos | {SITE}',
+      description:
+        'Afarer ofrece soluciones acuáticas para destinos a oficinas de turismo, parques públicos y proyectos costeros. Flotas SUP comerciales, equipos respetuosos con el medio ambiente, soporte para proyectos gubernamentales y suministro OEM a gran escala.',
+    },
+  },
+  'durable-sup-rental-fleet': {
+    meta: {
+      title: 'Fabricante de equipos de alquiler de SUP | Paddle boards comerciales duraderos | {SITE}',
+      description:
+        '{SITE} ofrece soluciones duraderas de flotas de SUP de alquiler para playas, lagos, resorts y operadores de deportes acuáticos. Paddle boards inflables comerciales con construcción reforzada, mantenimiento sencillo y suministro OEM por volumen.',
+    },
+  },
+  'eco-research-monitoring-sup-platform': {
+    meta: {
+      title: 'Fabricante de plataformas SUP para investigación ecológica | {SITE}',
+      description:
+        'Afarer ofrece plataformas SUP ecológicas para investigación a ONG de conservación marina, universidades y organismos de seguimiento ambiental. Plataformas flotantes estables, sistemas de montaje de equipos y soluciones OEM personalizadas.',
+    },
+  },
+  'ecommerce-sup-brand-development': {
+    meta: {
+      title: 'Proveedor de marcas SUP para Amazon | Fabricante de SUP inflables personalizados | {SITE}',
+      description:
+        'Afarer ayuda a los vendedores de Amazon, Walmart y Shopify a crear marcas de SUP diferenciadas con paddle boards inflables personalizados, fabricación de marca privada, gráficos únicos, cadena de suministro rápida y soporte de producto para e-commerce.',
+    },
+  },
+  'expand-outdoor-brand-water-sports': {
+    meta: {
+      title: 'Expande tu marca outdoor hacia los deportes acuáticos | Fabricante OEM de SUP | {SITE}',
+      description:
+        'Afarer ayuda a las marcas outdoor consolidadas a expandirse hacia los deportes acuáticos con fabricación de SUP personalizado, tecnología Drop Stitch, experiencia en PVC, paddle boards de marca privada y soluciones completas de desarrollo de producto.',
+    },
+  },
+  'expand-your-water-sports-portfolio': {
+    meta: {
+      title: 'Fabricante OEM de SUP inflables para marcas de deportes acuáticos | {SITE}',
+      description:
+        'Afarer ayuda a las marcas de kayak, canoa, vela y buceo a expandirse hacia los SUP inflables con tecnología Drop Stitch profesional, fabricación OEM y soluciones completas de productos acuáticos.',
+    },
+  },
+  'inflatable-technology-for-surf-business': {
+    meta: {
+      title: 'Soluciones de SUP inflable para tiendas de surf | Fabricante de marca privada | {SITE}',
+      description:
+        'Afarer ayuda a las tiendas de surf y marcas de lifestyle acuático a expandirse con SUP inflables de marca privada, kayaks inflables y productos acuáticos personalizados. Reduce los costes de envío, almacenamiento e inventario con tecnología inflable avanzada.',
+    },
+  },
+  'kids-exploration-sup-program': {
+    meta: {
+      title: 'Fabricante de SUP para niños | {SITE}',
+      description:
+        'Afarer ofrece soluciones SUP seguras para niños destinadas a campamentos de verano, escuelas y programas de aventura juvenil. Paddle boards infantiles, equipos Giant SUP, flotas comerciales y soluciones OEM personalizadas.',
+    },
+  },
+  'luxury-portable-sup-package': {
+    meta: {
+      title: 'Fabricante de SUP portátiles de lujo para yates y cruceros | {SITE}',
+      description:
+        '{SITE} ofrece soluciones de SUP portátiles de lujo para compañías de cruceros, operadores de yates y marcas de hospitalidad marina. Packs de SUP inflable compactos con componentes de grado marino, marca personalizada y accesorios premium.',
+    },
+  },
+  'pet-friendly-paddle-board-program': {
+    meta: {
+      title: 'Fabricante de paddle boards aptos para mascotas | Proveedor OEM de SUP para perros | {SITE}',
+      description:
+        'Afarer crea paddle boards personalizados aptos para mascotas para marcas de aventura canina y empresas outdoor para mascotas. Diseños SUP duraderos antiarañazos, plataformas anchas y estables, fabricación OEM y soluciones de marca privada.',
+    },
+  },
+  'premium-custom-sup-collection': {
+    meta: {
+      title: 'Fabricante de SUP personalizados de lujo | {SITE}',
+      description:
+        'Afarer crea colecciones SUP premium personalizadas para islas privadas, clubs de yates, resorts de lujo y marcas lifestyle de élite. Diseños exclusivos, materiales de lujo, personalización VIP y producción OEM boutique.',
+    },
+  },
+  'professional-water-rescue-sup-system': {
+    meta: {
+      title: 'Fabricante de SUP de rescate acuático | {SITE}',
+      description:
+        'Afarer ofrece sistemas SUP profesionales de rescate acuático para socorristas, equipos de emergencia y organizaciones de seguridad. Boards de rescate de alta capacidad, diseño con múltiples asideros, sistemas de remolque y soluciones OEM personalizadas.',
+    },
+  },
+  'regional-oem-supply-chain-partner': {
+    meta: {
+      title: 'Proveedor para distribuidores de SUP | Fabricante OEM de paddle boards por volumen | {SITE}',
+      description:
+        'Afarer se asocia con distribuidores e importadores globales de SUP mediante fabricación OEM por volumen, soluciones de marca privada, soporte de mercado regional y gestión fiable de la cadena de suministro.',
+    },
+  },
+  'resort-water-activity-package': {
+    meta: {
+      title:
+        'Proveedor de equipos de actividades acuáticas para resorts | Soluciones de flotas SUP personalizadas | {SITE}',
+      description:
+        '{SITE} ofrece soluciones de actividades acuáticas para resorts destinadas a hoteles de lujo, resorts insulares y destinos de bienestar. Flotas SUP con marca personalizada, sistemas de almacenamiento, formación del personal y soporte de equipos comerciales.',
+    },
+  },
+  'retail-private-label-program': {
+    meta: {
+      title: 'Fabricante de SUP de marca privada | Proveedor OEM de paddle boards para minoristas | {SITE}',
+      description:
+        'Afarer ofrece soluciones de fabricación de SUP de marca privada para minoristas outdoor, cadenas de artículos deportivos y marcas globales. Paddle boards personalizados con embalaje para retail, soporte de cumplimiento normativo y suministro OEM fiable.',
+    },
+  },
+  'sup-academy-equipment-program': {
+    meta: {
+      title:
+        'Fabricante de equipos para academias de SUP | Proveedor de SUP infantil y boards de entrenamiento | {SITE}',
+      description:
+        '{SITE} ofrece soluciones de equipos para academias de SUP destinadas a escuelas de deportes acuáticos, programas juveniles y organizaciones de educación outdoor. Paddle boards SUP para principiantes profesionales, modelos SUP infantiles, equipos de instructores y soluciones de flotas comerciales.',
+    },
+  },
+  'sup-brand-startup': {
+    meta: {
+      title: 'Crea tu marca de SUP | Fabricante OEM de SUP inflables | {SITE}',
+      description:
+        'Afarer ayuda a las startups outdoor a crear marcas de SUP personalizadas con fabricación OEM, paddle boards de marca privada, producción con MOQ bajo, diseño de producto, control de calidad y soporte logístico global.',
+    },
+  },
+  'sup-yoga-wellness-equipment': {
+    meta: {
+      title: 'Fabricante de equipos de SUP Yoga | Paddle boards de yoga personalizados | {SITE}',
+      description:
+        'Afarer ofrece soluciones de equipos de SUP Yoga personalizados para estudios de yoga, retiros de bienestar y marcas de fitness. Crea paddle boards de yoga inflables premium con diseño ancho y estable, decks EVA completos y fabricación de marca privada.',
+    },
+  },
   'corporate-sup-event-package': {
     clientType: 'Comprador de Proyectos Corporativos Personalizados',
 

@@ -929,6 +929,20 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 ---
 
 
+## L79. 分片 89：solutions 家族 meta 级本地化——[slug].astro L() 接线 + 24 slugs ×20 locale meta override（2026-10）
+
+① **范围决策（L77 挂账 (d)）**：solutions 完整正文翻译 ~12MB 不可单分片，本分片取 **meta 级（SERP/分享卡片本地化）+ 模板 UI 标签接线**，正文（hero/challenge/solutions/why 等）挂后续分片按 slug 分批。数据链就绪：`getSolutionBySlug(slug, lang)` deepMerge `solutionTranslations[lang]?.[slug]`，meta-only override 合法（title/desc 覆盖、正文字段回退 EN）。Meta 含 `{SITE}` 占位符，模板 L70 `.replace('{SITE}', SITE.name)`。
+
+② **实施**：(1) SSOT 注入 `solutions.*` 12 键 ×21 locale（252 条）：caseStudy/caseStudies/caseStudiesSubtitle/location/background/goal/results/faqTitle/faqSubtitle + challengeSubtitle/solutionsSubtitle/whyTitle（后 3 键为多行 L() 漏检补扫）；(2) `[slug].astro` 全部 12 处 `L('EN')` 改 `t('solutions.xxx') || 'EN'`（L44 caseStudy、L85 challengeSubtitle、L103 solutionsSubtitle、L136/137 caseStudies、L154 location、L162 background、L170 goal、L192 results、L212 whyTitle、L220/221 faqTitle/faqSubtitle），L helper 删除；(3) meta override 24 slugs ×20 locale = 480 组 title+desc：18 locale 新建 `{l}.ts`（meta-only），fr.ts/es.ts 追加 23 slugs（fr 保留 corporate-sup-event-package 完整 override），`translations/index.ts` 重写注册 20 locale；(4) EN-leak 修正 it/nl/sv/no/da 5 locale 的 caseStudy/caseStudies（→ Caso di Studio/Casestudy/Kundcase/Kundecase）；(5) 翻译修正：ja "exclusif" 混词、ar 3 处 "تبتكر" 断词。工具归档 `TOOLS/i18n-merge/solutions-89/`（tool_instrction.md §13）。
+
+③ **踩坑**：edit 工具子串误伤——`title={L(` 是 `subtitle={L(` 的子串，oldString 匹配到后者中间留下孤立 `sub` prop（git diff 定位最快）；多行 L() 调用单行正则 `L\('...'\)` 漏检，宽正则 `L\(\s*'` 才提全（12 处非 9 处）；SSOT 注入后必须审计 EN-leak（`j[l][k] === j.en[k]`），首轮 5 locale ×2 键中招。
+
+④ **回归数字**：check 四合一绿（exit 0，1,162 files）→ build 13,859 页 → dist 验证 **meta 480/480 PASS**（20 locale ×24 slug title+desc ≠ EN）+ labels 60/60（20 locale × faqTitle/results/background）+ caseStudy 修正 5/5 + sitemap-0 11,164、route-manifest 13,858 无变化。**挂账 (d) solutions 收窄为正文级**（meta 层清除）——余 7 项（posts/v2/solutions 正文/guides/case-studies/SeoLanding/faq）。
+
+
+---
+
+
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 
 `scripts/_gen-seo-meta.cjs` scans `src/pages/[lang]/` routes, maps each route path to a page YAML key (via `getPageContent(lang, 'key')` + manual overrides in the script), then extracts `meta` blocks from `src/i18n/generated/page-content.json` for all 22 languages:
