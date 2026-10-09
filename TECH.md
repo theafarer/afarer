@@ -969,7 +969,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) **跨文字系统泄漏**——pl 底稿 university-club 混入俄语 "соревновательных"（生成时手滑），新增西里尔扫描确认全清后才放行，此类错误 metric label 校验不报（值非 EN 也非目标语）须专项扫描；(2) 白名单追加 Containers（nl "Containers" 荷语原生同形词合法保留；sv 改 "Containrar" 正宗复数）；(3) cs 遗留疑点收口——mediterranean 实际字符串首字母大写 "Skóre spokojenosti hostů se zařízeními"，用精确子串替换修复；(4) PowerShell 内嵌引号的 node -e 再次 mojibake（单双引号转义被 shell 吃掉）——凡是带引号字符串替换必须写 .cjs 文件执行。
 
-④ **回归数字**：check 1,209 files 0 errors（exit 0，i18n audit passed）→ build 13,859 页 → dist 验证 **435/435 PASS**（228 detail：12 locale ×19 slug 全正文字段精确匹配 + 114 EN 回归：6 locale ×19 EN fallback 完整 + de/fr ×19 yaml 正文一致 + EN ×19 + index 页 12×2 本地化 + 6×2 EN 回归）+ sitemap-0 11,164、route-manifest 13,858 无变化。**case-studies 正文级清除 12/18 locale（余 6 locale 挂分片 93）——挂账仍 7 项**（posts / v2 / solutions 正文 / guides / case-studies 正文余 6 locale / SeoLanding / faq）。
+④ **回归数字**：check 1,209 files 0 errors（exit 0，i18n audit passed）→ build 13,859 页 → dist 验证 **435/435 PASS**（228 detail：12 locale ×19 slug 全正文字段精确匹配 + 114 EN 回归：6 locale ×19 EN fallback 完整 + de/fr ×19 yaml 正文一致 + EN ×19 + index 页 12×2 本地化 + 6×2 EN 回归）+ sitemap-0 11,164、route-manifest 13,858 无变化。commit `9ab0509`；CI 双绿 37887153012/37887152988 → 线上验证 **41/41 PASS**（12 locale ×2 slug 全正文字段 + cs before_after ×3 + index 卡片 12 本地化 + ro EN 回归 + de/fr yaml 正文 + EN 回归）。**case-studies 正文级清除 12/18 locale（余 6 locale 挂分片 93）——挂账仍 7 项**（posts / v2 / solutions 正文 / guides / case-studies 正文余 6 locale / SeoLanding / faq）。
 
 
 
