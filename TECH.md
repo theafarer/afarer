@@ -979,7 +979,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) ro cruise-line metric label "Rating" 与 EN 同形漏译——校验器捕获后改 "Evaluare"（收窄白名单的价值：92 版白名单会放过它）；(2) th search-rescue 手滑打错 "ฐานะ"（状态）应为 "ฐาน"（基地）——写稿后即时复查发现；(3) 本批零 PowerShell 引号事故（所有替换走 .cjs/编辑器）。
 
-④ **回归数字**：check 1,218 files 0 errors（exit 0，i18n audit passed）→ build 13,859 页 → dist 验证 **435/435 PASS**（342 detail：18 locale ×19 slug 全正文字段精确匹配 + de/fr ×19 yaml 正文一致 + EN ×19 + index 页 18×2 本地化）+ sitemap-0 11,164、route-manifest 13,858 无变化。commit 待填；CI 待填 → 线上验证待填。**case-studies 正文级 18/18 locale 全清——挂账剩 6 项**（posts / v2 / solutions 正文 / guides / SeoLanding / faq）。
+④ **回归数字**：check 1,222 files 0 errors（exit 0，i18n audit passed）→ build 13,859 页 → dist 验证 **435/435 PASS**（342 detail：18 locale ×19 slug 全正文字段精确匹配 + de/fr ×19 yaml 正文一致 + EN ×19 + index 页 18×2 本地化）+ sitemap-0 11,164、route-manifest 13,858 无变化。commit `76d18c8`；CI 双绿 37903459253（CI）/37903459238（Build & Deploy）→ 线上验证 **58/58 PASS**（18 locale ×2 slug 全正文字段 + ar before_after ×3 RTL + index 卡片 18 本地化 + de/fr yaml 正文 + EN 回归）。**case-studies 正文级 18/18 locale 全清——挂账剩 6 项**（posts / v2 / solutions 正文 / guides / SeoLanding / faq）。
 
 
 
