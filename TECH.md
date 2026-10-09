@@ -999,7 +999,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) **paddle 进 BASE 交替表令品牌豁免失效**——校验器英文残留检查中 paddle 作为通用借词写入主交替表后，`(?<!Red )paddle(?! Co)` 的豁免分支永不可达（Red Paddle Co 中的 paddle 先被主表命中报假阳性）；修正：paddle 从 BASE 表拆出为独立 alternative 只挂在 da/nl 的 ALLOW 检查里；(2) **Write 工具单次写 ~25KB 大 JSON 失败**——nl/no/pl/sv 底稿必须拆 p1（1-27）+ p2（28-53）两段写盘（实测各 ~12-15KB 单写成功）再 `_merge95.cjs` 合并；(3) nl 第二段初误命名 `_faq-nl-p1b.json`，Rename 为 `_faq-nl-p2.json`；(4) da/nl yaml prettier 有格式意见（行宽重排），--write 后 round-trip 复验通过；(5) 归档脚本路径自洽：`_validate95.cjs`/`_verify-dist95.cjs`/`_live-verify95.mjs` 均从 `__dirname` 读底稿（修正 94 §18 的 Temp 依赖注记），仅 `_ci-poll95.cjs` 依赖 Temp 的 cred-out.txt（token）且 SHA 改为 CLI 参数。工具归档 `TOOLS/i18n-merge/faq-body-95/`（tool_instrction.md §19）。
 
-④ **回归数字**：（待 CI/线上验证后补——docs commit）
+④ **回归数字**：check 0 errors → build 13,859 页 → dist 验证 **18/18 PASS**（6 locale ×53 q+a 渲染 + 53 items + FAQPage JsonLd + §18 六语 yaml ×53 + de/fr yaml ×53 + EN ×2（/en/faq 与根 /faq）+ sitemap-0 11,164 / route-manifest 13,858 无变化）。commit `24cc6b7` **首推 CI 双红**（新失败模式：CI eslint **覆盖 TOOLS/ 归档 .mjs**——`_live-verify95.mjs` 未用 import `join` 触 no-unused-vars；94 教训只盯了 prettier，本批证明 eslint 也扫归档件，归档前应过 `npx eslint <文件>`）→ fix commit `8141730` 复推 **CI 双绿** 37947790670（CI）/37947790527（Build & Deploy）→ 线上验证 **17/17 PASS**（6 locale ×53 q+a + JsonLd + B2B/PSI 抽查（b2b-payment/b2b-quality-control/sup-inflate-pressure）×6 + de/fr/es yaml ×53 + EN ×2）。faq 挂账余 96 一批 6 locale（ar el fi ro th tr）；总挂账仍 6 项（posts / v2 / solutions 正文 / guides / SeoLanding / faq）。
 
 
 
