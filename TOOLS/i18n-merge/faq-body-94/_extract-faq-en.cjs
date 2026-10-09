@@ -7,7 +7,7 @@ const DQ = String.raw`"((?:[^"\\]|\\.)*)"`;
 const STR = `(?:${SQ}|${DQ})`;
 const re = new RegExp(
   `\\{\\s*id:\\s*(?:${SQ}|${DQ}),\\s*question:\\s*(?:${SQ}|${DQ}),\\s*answer:\\s*\\n?\\s*(?:${SQ}|${DQ}),\\s*category:\\s*(?:${SQ}|${DQ}),\\s*relatedProducts:\\s*\\[([^\\]]*)\\],\\s*relatedGuides:\\s*\\[([^\\]]*)\\],?\\s*\\}`,
-  'g',
+  'g'
 );
 const records = [];
 let m;
@@ -18,8 +18,16 @@ while ((m = re.exec(src)) !== null) {
     question: unq(m[3] !== undefined ? m[3] : m[4]),
     answer: unq(m[5] !== undefined ? m[5] : m[6]),
     category: unq(m[7] !== undefined ? m[7] : m[8]),
-    relatedProducts: m[9].replace(/['"]/g, '').split(',').map((s) => s.trim()).filter(Boolean),
-    relatedGuides: m[10].replace(/['"]/g, '').split(',').map((s) => s.trim()).filter(Boolean),
+    relatedProducts: m[9]
+      .replace(/['"]/g, '')
+      .split(',')
+      .map((s) => s.trim())
+      .filter(Boolean),
+    relatedGuides: m[10]
+      .replace(/['"]/g, '')
+      .split(',')
+      .map((s) => s.trim())
+      .filter(Boolean),
   });
 }
 console.log('records:', records.length);
@@ -34,5 +42,7 @@ for (const l of ['de', 'fr']) {
   const yIds = [...y.matchAll(/^\s*- id:\s*(\S+)/gm)].map((x) => x[1]);
   const missingInY = ids.filter((i) => !yIds.includes(i));
   const extraInY = yIds.filter((i) => !ids.includes(i));
-  console.log(`${l}: yaml ids=${yIds.length} missingInYaml=${JSON.stringify(missingInY)} extraInYaml=${JSON.stringify(extraInY)}`);
+  console.log(
+    `${l}: yaml ids=${yIds.length} missingInYaml=${JSON.stringify(missingInY)} extraInYaml=${JSON.stringify(extraInY)}`
+  );
 }

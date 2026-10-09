@@ -16,8 +16,8 @@ const enById = new Map(en.map((r) => [r.id, r]));
 const B = String.raw`(?<![\p{L}\p{N}_])`;
 const A = String.raw`(?![\p{L}\p{N}_])`;
 const ENG_RE = new RegExp(
-  `${B}(the|and|with|your|for|you|our|this|that|these|is|are|board|water|inflatable|warranty|shipping)${A}`
-    + `|${B}(?<!Red )paddle(?! Co)${A}`,
+  `${B}(the|and|with|your|for|you|our|this|that|these|is|are|board|water|inflatable|warranty|shipping)${A}` +
+    `|${B}(?<!Red )paddle(?! Co)${A}`,
   'iu'
 );
 const CJK_KANA = /[\u3040-\u30ff]/;
@@ -85,7 +85,8 @@ for (const loc of LOCALES) {
   const avo = by('afarer-vs-others');
   if (avo) {
     if (loc === 'es') {
-      if (!avo.a.includes('90 %') || !avo.a.includes('60 %')) errs.push('afarer-vs-others: es percent spacing "90 %" missing');
+      if (!avo.a.includes('90 %') || !avo.a.includes('60 %'))
+        errs.push('afarer-vs-others: es percent spacing "90 %" missing');
     } else if (!avo.a.includes('90%') || !avo.a.includes('60%')) {
       errs.push('afarer-vs-others: "90%"/"60%" missing');
     }
