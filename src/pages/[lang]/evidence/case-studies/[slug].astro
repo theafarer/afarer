@@ -7,6 +7,7 @@ import { SITE } from 'astrowind:config';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { pageContentData } from '~/i18n/generated/data';
+import { EVIDENCE_META_OVERRIDES } from '~/data/site/evidence-meta';
 
 interface CaseStudy {
   id: string;
@@ -43,9 +44,11 @@ const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
 
 const study = allCaseStudies.find((cs) => cs.id === slug);
 
+const metaOverride = study ? EVIDENCE_META_OVERRIDES[lang || defaultLang]?.[slug || ''] : undefined;
+
 const metadata = {
-  title: study ? `${study.client} — ${study.product} | ${SITE.name}` : 'Case Study',
-  description: study ? `${study.challenge.substring(0, 160)}` : 'Afarer case study',
+  title: metaOverride?.title || (study ? `${study.client} — ${study.product} | ${SITE.name}` : 'Case Study'),
+  description: metaOverride?.description || (study ? `${study.challenge.substring(0, 160)}` : 'Afarer case study'),
   ignoreTitleTemplate: true,
 };
 ---

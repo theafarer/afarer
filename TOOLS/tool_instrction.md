@@ -294,6 +294,22 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+## §14 evidence-meta-90 — case-studies 家族 meta 级本地化（19 slugs ×18 locale）
+
+**背景**：L79 挂账 case-studies——`[lang]/evidence/case-studies/[slug].astro` metadata 全 EN（`${study.client} — ${study.product} | ${SITE.name}` + `challenge.substring(0,160)`）；evidence.yaml 为整文件替换机制（`evidence.{lang}.yaml` 缺失回退 EN，部分翻译断 body），de/fr 已全量翻译排除。**方案**：独立 translations 模块 `src/data/site/evidence-meta/`（子目录 .ts 不干扰 generate-data-json 顶层 .yaml 扫描），19 slugs ×18 locale = 342 组 title+desc override（title `client_t — product_t | Afarer`，desc 为 challenge 完整句、不经 160 截断）；`[slug].astro` L46-50 接线 `EVIDENCE_META_OVERRIDES[lang || defaultLang]?.[slug || '']`，fallback EN 模板；JsonLd headline/H1/正文留 EN 挂正文级分片。
+
+| 文件（目录）                                          | 用途                                                                                                                                        | 用法（仓库根）                                                                                                     |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `i18n-merge/evidence-meta-90/_audit-ev-keys90.cjs`    | evidence 家族 17 UI 键 ×21 locale 覆盖/EN-leak 审计（结论：全覆盖零泄漏，无需 SSOT 注入）                                                   | `node TOOLS/i18n-merge/evidence-meta-90/_audit-ev-keys90.cjs`                                                      |
+| `i18n-merge/evidence-meta-90/_extract-ev-en90.cjs`    | 从 evidence.yaml 提取 19 slugs EN 源（client/product/challenge/enTitle/enDesc）→ `_ev-meta-en.json`                                         | `node TOOLS/i18n-merge/evidence-meta-90/_extract-ev-en90.cjs`                                                      |
+| `i18n-merge/evidence-meta-90/_validate-ev-meta90.cjs` | 翻译底稿校验：JSON.parse + slug 集合比对 EN（19）+ title/desc 非空 + `                                                                      | Afarer`后缀 +` — `分隔 + 双空格 + 与 EN 全等（底稿`_ev-meta-{l}.json` 在同目录）                                   | `node TOOLS/i18n-merge/evidence-meta-90/_validate-ev-meta90.cjs` |
+| `i18n-merge/evidence-meta-90/_gen-ev-meta-ts90.cjs`   | 读底稿生成 `src/data/site/evidence-meta/`（types.ts + 18 `{l}.ts` + index.ts 注册 EVIDENCE_META_OVERRIDES；生成后必须过项目 prettier）      | `node TOOLS/i18n-merge/evidence-meta-90/_gen-ev-meta-ts90.cjs && npx prettier --write src/data/site/evidence-meta` |
+| `i18n-merge/evidence-meta-90/_verify-dist90.cjs`      | dist walk：342 meta 精确匹配底稿 + de/fr 回归（title 与 evidence.{lang}.yaml 一致）+ EN 回归（非 lang 路由）+ sitemap-0/route-manifest 计数 | build 后 `node TOOLS/i18n-merge/evidence-meta-90/_verify-dist90.cjs`                                               |
+
+**验证**：底稿校验 18/18 PASS → check 四合一绿（归档 TOOLS/ 后复跑）→ build 13,859 页 → dist walk **399/399 PASS**（342 meta + de/fr 19+19 + EN 19）+ sitemap-0 11,164 / route-manifest 13,858 无变化。**注意**：翻译底稿 `_ev-meta-{18 locale}.json` 在 Temp 目录未入库；正文级（H1/challenge/solution/result/tags ×19 slugs）挂后续分片。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。

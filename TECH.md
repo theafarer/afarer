@@ -940,6 +940,17 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 ④ **回归数字**：check 四合一绿（exit 0，1,162 files）→ build 13,859 页 → dist 验证 **meta 480/480 PASS**（20 locale ×24 slug title+desc ≠ EN）+ labels 60/60（20 locale × faqTitle/results/background）+ caseStudy 修正 5/5 + sitemap-0 11,164、route-manifest 13,858 无变化。commit `7c55b7f1` + style `883bf606`（**踩坑：工具脚本归档晚于本地 check，4 个 .cjs 未过 prettier 致首轮 CI 红——归档 TOOLS/ 后必须重跑 check**）；CI 双绿 37581250776/37581250856 → 线上验证 **31/31 PASS**（23 meta：18 locale title+desc 与翻译底稿精确匹配 + fr/es 非 EN + ja/de 第二 slug + EN 回归；8 labels：it/nl/sv/no/da/ja/de/en——**singular caseStudy 标签仅当 `caseStudy.customer` 为 string 时渲染，抽验 slug 须选 ecommerce-sup-brand-development 类**）。**挂账 (d) solutions 收窄为正文级**（meta 层清除）——余 7 项（posts/v2/solutions 正文/guides/case-studies/SeoLanding/faq）。
 
 
+## L80. 分片 90：case-studies 家族 meta 级本地化——19 slugs ×18 locale meta override（2026-10）
+
+① **范围决策（L79 挂账余项 case-studies）**：evidence.yaml 为整文件替换机制（`generate-data-json.mjs` L112-124 `evidence.{lang}.yaml` 缺失回退 EN，部分翻译会断 body），故 meta 级走**独立 translations 模块**而非 yaml 替换：新建 `src/data/site/evidence-meta/{lang}.ts`（子目录 .ts 不干扰 generate-data-json 的顶层 .yaml 扫描）。de/fr 已全量翻译（metadata 随 yaml 本地化）排除，范围 = 19 slugs ×18 locale = 342 组 `{title, description}`；title 格式 `client_t — product_t | Afarer`，desc 为 challenge 完整句翻译（override 不经 `substring(0,160)` 模板截断——EN 源多数在 160 字符处被截断，底稿按 challenge 全句翻译）。
+
+② **实施**：(1) UI 键审计：evidence 家族 17 键（home.evidence.\* 8 + evidence.\* 7 + v2.problem/solution）×21 locale 全覆盖、零 EN-leak，无 SSOT 注入需求；(2) EN 源提取 `_ev-meta-en.json`（19 slugs 的 client/product/challenge/enTitle/enDesc）；(3) 18 locale 翻译底稿 `_ev-meta-{l}.json`，写完即复查修正（es pádel→paddle surf、it during→durante le、nl meeroord/Maritieme/booten、da En brand、tr kompüz、fi melominen→mela、el διάθεση 拼写/Καραϊβική 性别、th 双空格）；(4) 生成器产出 evidence-meta/（types.ts + 18 `{l}.ts` + index.ts 注册 `EVIDENCE_META_OVERRIDES`）后过项目 prettier（JSON.stringify 双引号 → singleQuote；长字符串行超 120 属预期，prettier 不拆字符串）；(5) `[slug].astro` L46-50 接线 `EVIDENCE_META_OVERRIDES[lang || defaultLang]?.[slug || '']` override title/description、fallback 原 EN 模板；JsonLd headline/H1/正文留 EN 挂正文级分片。工具归档 `TOOLS/i18n-merge/evidence-meta-90/`（tool_instrction.md §14）。
+
+③ **踩坑**：底稿校验脚本除 JSON.parse/slug 集合外一并断言 `| Afarer` 后缀、` — ` 分隔符、双空格、与 EN 全等——18 locale 首轮即全 PASS（分片 89 "写完即复查"惯例收效）；dist 校验同时覆盖 de/fr 回归（title 必须与 evidence.{lang}.yaml 一致，防 override 误伤既有翻译）与 EN 回归（非 lang 路由 title 等于 EN 模板）。
+
+④ **回归数字**：check 四合一绿 ×2（归档 TOOLS/ 前后各一，exit 0，1,192 files）→ build 13,859 页 → dist 验证 **399/399 PASS**（342 meta：18 locale ×19 slug title+desc 与底稿精确匹配且 ≠ EN + de/fr 回归 19+19 title 与 yaml 一致 + EN 回归 19/19）+ sitemap-0 11,164、route-manifest 13,858 无变化。**挂账 case-studies 收窄为正文级（meta 层清除）——余 7 项**（posts / v2 / solutions 正文 / guides / case-studies 正文 / SeoLanding / faq）。
+
+
 ---
 
 
