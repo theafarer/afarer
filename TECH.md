@@ -989,7 +989,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) it/pt/ru/ja/ko 的 b2b-certification（q+a）与 b2b-ip-protection（q）共 10 处 "Afarer" 大写残留——品牌小写校验捕获后统一转小写（es 先例即小写）；(2) it boat-registration "da paddle"→"da pagaia" 用词修正；(3) prettier 对 `faq-it.yaml` 有格式意见（意语撇号 YAML 双写 `''` 致行宽超限）——`npx prettier --write` 修复后 js-yaml 回读 round-trip 复验通过；(4) dist 验证脚本初版两个 bug：内联脚本里 `'[data-faq-item]'` 字符串被计入 item 计数（改数 `data-faq-question=` 属性）、EN 底稿键名 question/answer 与 6 locale 底稿键名 q/a 不一致（映射修正）；(5) **CI 首推双红**：`prettier --check .` 覆盖 TOOLS/——归档的工具/底稿 JSON 未过 repo prettier（10 文件被 flag），`prettier --write` 归档文件后复推转绿；**教训：归档 TOOLS/ 的任何文件提交前必须过项目 prettier**（93 版即如此，本批疏漏）。
 
-④ **回归数字**：（待填）
+④ **回归数字**：check 1,232 files 0 errors（CI 日志确认，本地同 0 errors）→ build 13,859 页 → dist 验证 **12/12 PASS**（6 locale ×53 q+a 渲染 + 53 items + FAQPage JsonLd + de/fr yaml ×53 + EN ×2（/en/faq 与根 /faq）+ sitemap-0 11,164 / route-manifest 13,858 无变化）。commit `a1dd456` **首推 CI 双红**（`prettier --check .` 覆盖 TOOLS/，归档文件未格式化 10 文件被 flag——见 ③(5)）→ fix commit `c688d30` 复推 **CI 双绿** 37921791452（CI）/37921791424（Build & Deploy）→ 线上验证 **16/16 PASS**（6 locale ×53 q+a + JsonLd + B2B/PSI 抽查（b2b-payment/b2b-quality-control/sup-inflate-pressure）×6 + de/fr yaml ×53 + EN ×2）。faq 挂账余 95/96 两批 12 locale（cs da nl no pl sv / ar el fi ro th tr）；总挂账仍 6 项（posts / v2 / solutions 正文 / guides / SeoLanding / faq）。
 
 
 
