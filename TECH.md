@@ -948,7 +948,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：底稿校验脚本除 JSON.parse/slug 集合外一并断言 `| Afarer` 后缀、` — ` 分隔符、双空格、与 EN 全等——18 locale 首轮即全 PASS（分片 89 "写完即复查"惯例收效）；dist 校验同时覆盖 de/fr 回归（title 必须与 evidence.{lang}.yaml 一致，防 override 误伤既有翻译）与 EN 回归（非 lang 路由 title 等于 EN 模板）。
 
-④ **回归数字**：check 四合一绿 ×2（归档 TOOLS/ 前后各一，exit 0，1,192 files）→ build 13,859 页 → dist 验证 **399/399 PASS**（342 meta：18 locale ×19 slug title+desc 与底稿精确匹配且 ≠ EN + de/fr 回归 19+19 title 与 yaml 一致 + EN 回归 19/19）+ sitemap-0 11,164、route-manifest 13,858 无变化。**挂账 case-studies 收窄为正文级（meta 层清除）——余 7 项**（posts / v2 / solutions 正文 / guides / case-studies 正文 / SeoLanding / faq）。
+④ **回归数字**：check 四合一绿 ×2（归档 TOOLS/ 前后各一，exit 0，1,192 files）→ build 13,859 页 → dist 验证 **399/399 PASS**（342 meta：18 locale ×19 slug title+desc 与底稿精确匹配且 ≠ EN + de/fr 回归 19+19 title 与 yaml 一致 + EN 回归 19/19）+ sitemap-0 11,164、route-manifest 13,858 无变化。commit `e1321852`；CI 双绿 37873336546/37873336605 → 线上验证 **42/42 PASS**（36 meta：18 locale ×2 slug title+desc 与底稿精确匹配；de/fr 4 title 与 yaml 一致；EN 2/2 回归；均跟随 308 尾斜杠重定向）。**挂账 case-studies 收窄为正文级（meta 层清除）——余 7 项**（posts / v2 / solutions 正文 / guides / case-studies 正文 / SeoLanding / faq）。
 
 
 ---
