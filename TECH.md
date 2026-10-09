@@ -991,6 +991,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：check 1,232 files 0 errors（CI 日志确认，本地同 0 errors）→ build 13,859 页 → dist 验证 **12/12 PASS**（6 locale ×53 q+a 渲染 + 53 items + FAQPage JsonLd + de/fr yaml ×53 + EN ×2（/en/faq 与根 /faq）+ sitemap-0 11,164 / route-manifest 13,858 无变化）。commit `a1dd456` **首推 CI 双红**（`prettier --check .` 覆盖 TOOLS/，归档文件未格式化 10 文件被 flag——见 ③(5)）→ fix commit `c688d30` 复推 **CI 双绿** 37921791452（CI）/37921791424（Build & Deploy）→ 线上验证 **16/16 PASS**（6 locale ×53 q+a + JsonLd + B2B/PSI 抽查（b2b-payment/b2b-quality-control/sup-inflate-pressure）×6 + de/fr yaml ×53 + EN ×2）。faq 挂账余 95/96 两批 12 locale（cs da nl no pl sv / ar el fi ro th tr）；总挂账仍 6 项（posts / v2 / solutions 正文 / guides / SeoLanding / faq）。
 
+## L85. 分片 95：faq 正文第二批本地化——53 Q&A ×6 locale（cs da nl no pl sv）（2026-10）
+
+① **范围决策**：faq 页 53 Q&A 数据集正文本地化第二批（挂账 3 批：94/95/96 之二）。机制完全沿 94——`src/data/faq-{l}.yaml` + 薄 wrapper `faq.{l}.ts`；`faqsByLang` Record map 由 9 键扩至 **15 键**（+cs da nl no pl sv），`[lang]/faq.astro` 零改动。category/related 列表沿 EN 不译（category 标签渲染走 `t('faq.category.'+cat)` fallback，非本 shard 范围）。96 批（ar el fi ro th tr）同样只追加 map 条目。
+
+② **实施**：(1) 6 locale 手翻底稿 `_faq-{l}.json`（{id, q, a}，53 条；nl/no/pl/sv 因单文件过大采用 **p1（条 1-27）+ p2（条 28-53）两段写盘 + `_merge95.cjs` 合并**（幂等校验条数 53 + id 序以 da 底稿为参照），cs/da 直接整写）；(2) `_validate95.cjs` 校验（沿 94 全项 + 按语种定制）：53 条计数 / id 序列=EN / q/a 非空≠EN / 英文残留 Unicode 边界 + **语种 ALLOW 借词白名单**（da: board/paddle/is/for；nl: board/paddle/water/is/for；no: is/for；sv: is；cs/pl 全表检查）/ Red Paddle Co 品牌豁免（`(?<!Red )paddle(?! Co)`）/ 问句 ？结尾 / 小数逗号全 6 语（2,2）/ **百分号空格语种分化**（cs/da/no/sv `90 %` 带空格、nl/pl `90%` 不带）/ 变音符检查（cs ž ř č ě ů ň ď ť ů；da/no å æ ø；sv å ä ö；nl 无）/ mph·PSI·AQL·ISO 2859·1,5x PSI·15°C·MIL-STD-810 技术词锚点保留 / 英制单位词已本地化（不残留 lbs/inches/feet；nl "inch" 单数合法；no tommer/fot/pund）/ 品牌句中小写 afarer ×30+/locale；(3) 翻译铁则沿 94（技术词不译 / 英制数值保留 / 产品竞品名 EN / FOB Qingdao 保留 / 数字范围短横线与 EN 源一致——12–15 PSI 为 en-dash、15-20 PSI/5-10 年为 hyphen / °C 无空格）+ **95 语种敬称**（cs 小写正式 vy / pl 大写 Twój·Twoja·Twoją·Ciebie / da·no·sv du 小写 / nl u 小写）+ 用词表（wetsuit：nl 借词 wetsuit、cs neopren、da våddragt、no våtdrakt、sv våtdräkt、pl pianka neoprenowa；drysuit 全 6 语本地化；leash 全 6 语保留；sv 统一 "en SUP-bräda"；no brett/padleåre；pl upwind=nawietrzna）；(4) `_gen95.cjs` 生成 6 yaml（de-yaml 风格单引号）+ 6 wrapper（faqsCs 等），js-yaml round-trip 自校验，prettier --write（da/nl 有格式变更）。
+
+③ **踩坑**：(1) **paddle 进 BASE 交替表令品牌豁免失效**——校验器英文残留检查中 paddle 作为通用借词写入主交替表后，`(?<!Red )paddle(?! Co)` 的豁免分支永不可达（Red Paddle Co 中的 paddle 先被主表命中报假阳性）；修正：paddle 从 BASE 表拆出为独立 alternative 只挂在 da/nl 的 ALLOW 检查里；(2) **Write 工具单次写 ~25KB 大 JSON 失败**——nl/no/pl/sv 底稿必须拆 p1（1-27）+ p2（28-53）两段写盘（实测各 ~12-15KB 单写成功）再 `_merge95.cjs` 合并；(3) nl 第二段初误命名 `_faq-nl-p1b.json`，Rename 为 `_faq-nl-p2.json`；(4) da/nl yaml prettier 有格式意见（行宽重排），--write 后 round-trip 复验通过；(5) 归档脚本路径自洽：`_validate95.cjs`/`_verify-dist95.cjs`/`_live-verify95.mjs` 均从 `__dirname` 读底稿（修正 94 §18 的 Temp 依赖注记），仅 `_ci-poll95.cjs` 依赖 Temp 的 cred-out.txt（token）且 SHA 改为 CLI 参数。工具归档 `TOOLS/i18n-merge/faq-body-95/`（tool_instrction.md §19）。
+
+④ **回归数字**：（待 CI/线上验证后补——docs commit）
+
 
 
 ---

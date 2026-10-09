@@ -1,0 +1,12 @@
+feat(i18n): localize faq body for cs/da/nl/no/pl/sv (shard 95, second batch)
+
+- 53 Q&A translated per locale; technical terms (SUP/PVC/Hypalon/PSI/CE/MOQ/
+  OEM/FOB/AQL etc.) kept, imperial values preserved with localized unit words,
+  brand lowercased to "afarer" in running text
+- per-locale conventions: percent sign spaced in cs/da/no/sv (90 %) vs nl/pl
+  (90%), decimal commas in all six, honorifics (cs vy / pl Twój / da-no-sv du /
+  nl u), borrowed-word allowlists for da/nl/no/sv EN-residue checks
+- new src/data/faq-{cs,da,nl,no,pl,sv}.yaml + thin wrappers faq.{l}.ts
+- localized-data.ts: faqsByLang record map extended to 15 locales
+- drafts/merger/validator/generator/dist-walker/live-verifier/ci-poller archived
+  under TOOLS/i18n-merge/faq-body-95/ (tool_instrction.md section 19); TECH.md L85
