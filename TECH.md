@@ -961,6 +961,18 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 ④ **回归数字**：check 1,200 files 0 errors（exit 0）→ build 13,859 页 → dist 验证 **435/435 PASS**（114 detail：6 locale ×19 slug 全正文字段精确匹配 + 228 EN 回归：12 locale ×19 slug EN fallback 完整 + de/fr ×19 yaml 正文一致 + EN ×19 + index 页 6×2 本地化 + 12×2 EN 回归）+ sitemap-0 11,164、route-manifest 13,858 无变化。commit `a0846dc2`；CI 双绿 37880075629/37880075669 → 线上验证 **23/23 PASS**（12 detail：6 locale ×2 slug 全正文字段 + ja before_after ×3 + index 卡片 6 本地化 + nl EN 回归 + de/fr yaml 正文 + EN 回归；注意 retail-private-label 的 EN industry "Retail" 会作为子串出现在保持 EN 的 tags 中，线上"≠EN"断言只对 badge 做存在性检查）。**case-studies 正文级清除 6/18 locale（余 12 locale 挂分片 92/93）——挂账仍 7 项**（posts / v2 / solutions 正文 / guides / case-studies 正文余 12 locale / SeoLanding / faq）。
 
 
+## L82. 分片 92：case-studies 正文级本地化第二批——19 slugs ×6 locale（nl sv no da cs pl）（2026-10）
+
+① **范围决策（L81 挂账第二批）**：沿用分片 91 的 evidence-body 机制，第二批 6 个北欧/大陆 locale；**页面接线零改动**——`EVIDENCE_BODY_OVERRIDES` 按 lang key 查找，只需新增 6 个 `{l}.ts` 模块 + 重建 index.ts（12 locale import，字母序 cs da es it ja ko nl no pl pt ru sv）。de/fr 仍走 yaml，余 6 locale（ro tr ar el fi th）挂分片 93。
+
+② **实施**：(1) 6 底稿只含手翻字段 `{industry, solution, result, outcomeMetrics, beforeAfter}`，client/product/challenge 继续由分片 90 meta 底稿程序派生；(2) 生成器 `_gen-ev-body-ts92.cjs` 改为**追加模式**——只写 6 个新模块 + 重建含全部 12 locale 的 index.ts（旧 6 模块 untouched，prettier 确认 unchanged）；(3) 校验器 91 版改 LOCALES 复用；(4) 翻译惯例沿用：数字 token 保持 EN 格式、单位词本地化（55 dagen / 55 dagar / 4 miesiące / 14 tygodni）、奖项名与 tags 保持 EN、mould time 各语本地词（nl Toolingtijd / sv Verktygstid / no Verktøytid / da Værktøjstid / cs Čas výroby nástroje）。工具归档 `TOOLS/i18n-merge/evidence-body-92/`（tool_instrction.md §16）。
+
+③ **踩坑**：(1) **跨文字系统泄漏**——pl 底稿 university-club 混入俄语 "соревновательных"（生成时手滑），新增西里尔扫描确认全清后才放行，此类错误 metric label 校验不报（值非 EN 也非目标语）须专项扫描；(2) 白名单追加 Containers（nl "Containers" 荷语原生同形词合法保留；sv 改 "Containrar" 正宗复数）；(3) cs 遗留疑点收口——mediterranean 实际字符串首字母大写 "Skóre spokojenosti hostů se zařízeními"，用精确子串替换修复；(4) PowerShell 内嵌引号的 node -e 再次 mojibake（单双引号转义被 shell 吃掉）——凡是带引号字符串替换必须写 .cjs 文件执行。
+
+④ **回归数字**：check 1,209 files 0 errors（exit 0，i18n audit passed）→ build 13,859 页 → dist 验证 **435/435 PASS**（228 detail：12 locale ×19 slug 全正文字段精确匹配 + 114 EN 回归：6 locale ×19 EN fallback 完整 + de/fr ×19 yaml 正文一致 + EN ×19 + index 页 12×2 本地化 + 6×2 EN 回归）+ sitemap-0 11,164、route-manifest 13,858 无变化。**case-studies 正文级清除 12/18 locale（余 6 locale 挂分片 93）——挂账仍 7 项**（posts / v2 / solutions 正文 / guides / case-studies 正文余 6 locale / SeoLanding / faq）。
+
+
+
 ---
 
 
