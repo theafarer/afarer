@@ -958,7 +958,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：校验白名单而非硬翻 es/pt 与 EN 同形 metric label（Resorts/Bases 为西葡语原生词、SKUs/SUPs 技术缩写、Sell-through 通用术语）；it "OEM / Brand"→"OEM / Marchio"（industry 不得与 EN 全等）；check 首轮 1 error——`<iframe src={study.video_url}>` 一处漏改；verify-dist 首版误断言 index 卡片含 result 字段（卡片模板不渲染 result），改为 industry + 首个 metric label + client 三要素。
 
-④ **回归数字**：check 1,200 files 0 errors（exit 0）→ build 13,859 页 → dist 验证 **435/435 PASS**（114 detail：6 locale ×19 slug 全正文字段精确匹配 + 228 EN 回归：12 locale ×19 slug EN fallback 完整 + de/fr ×19 yaml 正文一致 + EN ×19 + index 页 6×2 本地化 + 12×2 EN 回归）+ sitemap-0 11,164、route-manifest 13,858 无变化。**case-studies 正文级清除 6/18 locale（余 12 locale 挂分片 92/93）——挂账仍 7 项**（posts / v2 / solutions 正文 / guides / case-studies 正文余 12 locale / SeoLanding / faq）。
+④ **回归数字**：check 1,200 files 0 errors（exit 0）→ build 13,859 页 → dist 验证 **435/435 PASS**（114 detail：6 locale ×19 slug 全正文字段精确匹配 + 228 EN 回归：12 locale ×19 slug EN fallback 完整 + de/fr ×19 yaml 正文一致 + EN ×19 + index 页 6×2 本地化 + 12×2 EN 回归）+ sitemap-0 11,164、route-manifest 13,858 无变化。commit `a0846dc2`；CI 双绿 37880075629/37880075669 → 线上验证 **23/23 PASS**（12 detail：6 locale ×2 slug 全正文字段 + ja before_after ×3 + index 卡片 6 本地化 + nl EN 回归 + de/fr yaml 正文 + EN 回归；注意 retail-private-label 的 EN industry "Retail" 会作为子串出现在保持 EN 的 tags 中，线上"≠EN"断言只对 badge 做存在性检查）。**case-studies 正文级清除 6/18 locale（余 12 locale 挂分片 92/93）——挂账仍 7 项**（posts / v2 / solutions 正文 / guides / case-studies 正文余 12 locale / SeoLanding / faq）。
 
 
 ---
