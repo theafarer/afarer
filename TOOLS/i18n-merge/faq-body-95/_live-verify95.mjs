@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs';
 import { createRequire } from 'module';
 import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { dirname } from 'path';
 
 const base = dirname(fileURLToPath(import.meta.url)) + '/';
 const NEW_LOCALES = ['cs', 'da', 'nl', 'no', 'pl', 'sv'];
