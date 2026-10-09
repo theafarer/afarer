@@ -981,6 +981,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：check 1,222 files 0 errors（exit 0，i18n audit passed）→ build 13,859 页 → dist 验证 **435/435 PASS**（342 detail：18 locale ×19 slug 全正文字段精确匹配 + de/fr ×19 yaml 正文一致 + EN ×19 + index 页 18×2 本地化）+ sitemap-0 11,164、route-manifest 13,858 无变化。commit `76d18c8`；CI 双绿 37903459253（CI）/37903459238（Build & Deploy）→ 线上验证 **58/58 PASS**（18 locale ×2 slug 全正文字段 + ar before_after ×3 RTL + index 卡片 18 本地化 + de/fr yaml 正文 + EN 回归）。**case-studies 正文级 18/18 locale 全清——挂账剩 6 项**（posts / v2 / solutions 正文 / guides / SeoLanding / faq）。
 
+## L84. 分片 94：faq 正文第一批本地化——53 Q&A ×6 locale（es it ja ko pt ru）（2026-10）
+
+① **范围决策**：faq 页 53 Q&A 数据集正文本地化第一批（挂账 3 批：94/95/96 之一）。机制沿 de/fr 先例——`src/data/faq-{l}.yaml` + 薄 wrapper `faq.{l}.ts`；registry 弃 if-chain 改 **Record map**：`localized-data.ts` 新增 `faqsByLang`（en fr de es it ja ko pt ru 9 键）+ `getFaqsForLang(lang)`（fallback en），`[lang]/faq.astro` 改用它（删 3 行 import + ternary）。category/related 列表沿 EN 不译。95/96 只需追加 map 条目。
+
+② **实施**：(1) `_extract-faq-en.cjs` 从 `faq.ts` 提取 53 条 EN 底稿；(2) 6 locale 手翻底稿 `_faq-{l}.json`（{id, q, a}）；(3) `_validate94.cjs` 校验：53 条计数 / id 序列=EN / q/a 非空≠EN / 跨文字残留（ja 假名、ko 谚文、ru 西里尔互斥）/ 英文残留（Unicode 边界 + Red Paddle Co 唯一豁免）/ es ¿ / 问句 ？结尾 / 小数逗号 locale（2,2 vs 2.2）/ es 百分号前空格 / mph·PSI·AQL·ISO 2859 技术词保留 / 英制单位词已本地化（不残留 lbs/inches/feet）/ 品牌句中小写 afarer ×30+/locale；(4) `_gen94.cjs` 生成 6 yaml（de-yaml 风格：单引号包裹、内引号双写）+ 6 wrapper（faqsEs 等），js-yaml 回读自校验；(5) 翻译铁则：技术词不译（SUP/PVC/Hypalon/CSM/drop-stitch——ja ドロップスティッチ、ko 드롭스티치、ru 保留 EN——/PSI/CE/UKCA/ISO/BSCI/REACH/RoHS/MOQ/OEM/ODM/FOB/CIF/DDP/L/C/T/T/B/L/PI/NDA/CMYK/UPC/EVA/UV/CAD/AQL/MIL-STD-810/PPS/SKU）、英制数值保留+单位词本地化（不公制换算）、敬称惯例（es usted / it tu / pt você / ru вы / ja です・ます / ko 합니다体）、产品名竞品名保持 EN、品牌一律小写 afarer（EN 源 b2b-certification/b2b-ip-protection 句中大写也统一转小写）。工具归档 `TOOLS/i18n-merge/faq-body-94/`（tool_instrction.md §18）。
+
+③ **踩坑**：(1) it/pt/ru/ja/ko 的 b2b-certification（q+a）与 b2b-ip-protection（q）共 10 处 "Afarer" 大写残留——品牌小写校验捕获后统一转小写（es 先例即小写）；(2) it boat-registration "da paddle"→"da pagaia" 用词修正；(3) prettier 对 `faq-it.yaml` 有格式意见（意语撇号 YAML 双写 `''` 致行宽超限）——`npx prettier --write` 修复后 js-yaml 回读 round-trip 复验通过；(4) dist 验证脚本初版两个 bug：内联脚本里 `'[data-faq-item]'` 字符串被计入 item 计数（改数 `data-faq-question=` 属性）、EN 底稿键名 question/answer 与 6 locale 底稿键名 q/a 不一致（映射修正）。
+
+④ **回归数字**：（待填）
+
 
 
 ---

@@ -6,6 +6,16 @@ import { guidesFr } from '~/data/guides.fr';
 import { contentV2RecordsFr } from '~/data/content-v2.fr';
 import { guidesDe } from '~/data/guides.de';
 import { contentV2RecordsDe } from '~/data/content-v2.de';
+import { faqs } from '~/data/faq';
+import type { FaqRecord } from '~/data/faq';
+import { faqsFr } from '~/data/faq.fr';
+import { faqsDe } from '~/data/faq.de';
+import { faqsEs } from '~/data/faq.es';
+import { faqsIt } from '~/data/faq.it';
+import { faqsJa } from '~/data/faq.ja';
+import { faqsKo } from '~/data/faq.ko';
+import { faqsPt } from '~/data/faq.pt';
+import { faqsRu } from '~/data/faq.ru';
 
 export function getGuidesForLang(lang: string | undefined): GuideRecord[] {
   if (lang === 'fr') {
@@ -25,4 +35,20 @@ export function getContentV2ForLang(lang: string | undefined): ContentV2Record[]
     return contentV2RecordsDe;
   }
   return contentV2Records;
+}
+
+const faqsByLang: Record<string, FaqRecord[]> = {
+  en: faqs,
+  fr: faqsFr,
+  de: faqsDe,
+  es: faqsEs,
+  it: faqsIt,
+  ja: faqsJa,
+  ko: faqsKo,
+  pt: faqsPt,
+  ru: faqsRu,
+};
+
+export function getFaqsForLang(lang: string | undefined): FaqRecord[] {
+  return (lang ? faqsByLang[lang] : undefined) ?? faqs;
 }
