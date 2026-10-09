@@ -342,6 +342,23 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+## §17 evidence-body-93 — case-studies 正文级本地化第三批/收尾（19 slugs ×6 locale：ro tr ar el fi th）
+
+**背景**：L82 挂账收尾批，18/18 locale 正文全清。**方案**：零页面改动——新增 6 个 `{l}.ts` 模块 + 重建 index.ts 为**全量 18 locale** import；生成器 `_gen-ev-body-ts93.cjs` 追加模式（同 §16）。底稿结构、meta 派生、翻译铁则沿用 §15。**白名单收窄**：仅 SKUs/SUPs 全保留，ro 额外保留 Sell-through，其余 label 全译（92 版白名单含 Resorts/Bases/Containers 会放过同形漏译——本批 ro "Rating" 即靠收窄白名单捕获）。**新增归档工具** `_scan93.cjs`：跨文字系统扫描通用化（ar 拉丁 token 白名单 + 各语种西里尔/CJK/希腊/泰文/阿拉伯残留检查），建议后续多语底稿一律先 scan 后 validate。
+
+| 文件（目录）                                          | 用途                                                                            | 用法（仓库根）                                                                                                     |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `i18n-merge/evidence-body-93/_ev-body-en.json`        | EN 源提取（与 §15 同一份，复用）                                                | （数据文件）                                                                                                       |
+| `i18n-merge/evidence-body-93/_ev-body-{l}.json` ×6    | 6 locale 翻译底稿（ro tr ar el fi th，仅手翻字段）                              | （数据文件）                                                                                                       |
+| `i18n-merge/evidence-body-93/_scan93.cjs`             | 跨文字系统泄漏扫描（先跑：CJK/西里尔/希腊/泰文/阿拉伯残留 + ar 拉丁白名单）     | `node TOOLS/i18n-merge/evidence-body-93/_scan93.cjs`                                                               |
+| `i18n-merge/evidence-body-93/_validate-ev-body93.cjs` | 底稿校验（§15 规则 + 收窄白名单：SKUs/SUPs + ro Sell-through）                  | `node TOOLS/i18n-merge/evidence-body-93/_validate-ev-body93.cjs`                                                   |
+| `i18n-merge/evidence-body-93/_gen-ev-body-ts93.cjs`   | 追加生成：6 新模块 + 重建 18 locale index.ts（生成后必须过项目 prettier）       | `node TOOLS/i18n-merge/evidence-body-93/_gen-ev-body-ts93.cjs && npx prettier --write src/data/site/evidence-body` |
+| `i18n-merge/evidence-body-93/_verify-dist93.cjs`      | dist walk：18 locale ×19 detail 全字段 + de/fr yaml + EN + index 页 18×2 + 计数 | build 后 `node TOOLS/i18n-merge/evidence-body-93/_verify-dist93.cjs`                                               |
+
+**验证**：scan 6/6 clean → 底稿校验 6/6 PASS → check 1,218 files 0 errors → build 13,859 页 → dist walk **435/435 PASS** + sitemap-0 11,164 / route-manifest 13,858 无变化。**注意**：同 §15/§16，需与分片 90 `_ev-meta-{l}.json` 同目录运行（脚本从 `__dirname` 读底稿、meta 从 Temp 同目录——归档运行时需把 `_ev-meta-{l}.json` 一并放入或调整路径）。case-studies 正文挂账清零，余 posts / v2 / solutions 正文 / guides / SeoLanding / faq。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。

@@ -1,0 +1,552 @@
+import type { EvidenceBodyMap } from './types';
+
+export const bodyOverrides: EvidenceBodyMap = {
+  'australian-paddle-club': {
+    client: 'Avustralya paddle kulübü birliği',
+    product: 'Kulüp filosu — SUP + güvenlik ekipmanı',
+    industry: 'Rekreasyon / Eğitim',
+    challenge:
+      "15 kulüplü bir birlik, dayanıklı ve yeni başlayana uygun SUP board'ları, CE sertifikalı can yelekleri ve kulüp başına maliyetleri düşüren merkezi satın alma modeliyle ekipmanı standartlaştırmalıydı.",
+    solution:
+      '3 kademeli bir kulüp filosu (başlangıç, orta, eğitmen) standartlaştırdık. Kulüp renklerinde ve kulüp logolu güverte grafikleri tasarladık. Üç aylık kulüp düzeyinde dağıtımla merkezî depolamayı uyguladık.',
+    result:
+      '15 kulüpte 350 adet. Konsolide satın almalarla %28 maliyet düşüşü. Ekipman kalitesinde %92 üye memnuniyeti.',
+    outcomeMetrics: [
+      {
+        label: 'Donatılan Kulüp',
+        value: '15',
+      },
+      {
+        label: 'Teslim Edilen Adet',
+        value: '350',
+      },
+      {
+        label: 'Maliyet Düşüşü',
+        value: '28%',
+      },
+      {
+        label: 'Üye Memnuniyeti',
+        value: '92%',
+      },
+    ],
+  },
+  'australian-sup-distributor': {
+    client: 'Avustralya distribütörü',
+    product: 'CE sertifikalı SUP serisi',
+    industry: 'Denizcilik / Perakende',
+    challenge:
+      'Bir Avustralya distribütörü, özel güverte renkleri, geliştirilmiş PVC seçeneği ve Avustralya standardı AS 1799 uyumluluğuna sahip CE sertifikalı bir SUP serisi talep ediyordu.',
+    solution:
+      '4 renk varyantıyla ön üretim örnekleri ürettik, askeri sınıf PVC tedarik ettik ve üçüncü taraf AS 1799 uygunluk testlerini koordine ettik.',
+    result:
+      '3 modellik SUP serisi AU/NZ pazarında lanse edildi. Ardından 12 mağazalı perakende zinciri sözleşmesi geldi.',
+    outcomeMetrics: [
+      {
+        label: 'Lans Edilen Model',
+        value: '3',
+      },
+      {
+        label: 'Perakende Mağazası',
+        value: '12',
+      },
+      {
+        label: 'Uygunluk',
+        value: 'AS 1799',
+      },
+    ],
+  },
+  'canadian-retail-chain': {
+    client: 'Kanada açık hava perakende zinciri',
+    product: 'Marka SUP + aksesuar serisi',
+    industry: 'Perakende',
+    challenge:
+      '25 mağazalı bir Kanadalı perakendeci, Fransızca/İngilizce iki dilli ambalaj, soğuk hava malzeme spesifikasyonları ve Kanada denizcilik mevzuatına uygun münhasır bir marka SUP serisi talep ediyordu.',
+    solution:
+      "-15°C'ye kadar dayanıklı cold-flex PVC bileşiğiyle 4 SUP modeli geliştirdik. Kanada düzenleyici işaretli iki dilli perakende ambalaj ürettik. Vitrin standları ve personel eğitim materyalleri sağladık.",
+    result:
+      'Özel seri 25 mağazada lanse edildi. İlk sezonda 3,800 adet satıldı. Perakendeci, genişletilmiş SKU sayısıyla 3 yıllık anlaşmayı yeniledi.',
+    outcomeMetrics: [
+      {
+        label: 'Mağaza',
+        value: '25',
+      },
+      {
+        label: 'İlk Sezon Adedi',
+        value: '3,800',
+      },
+      {
+        label: 'Anlaşma',
+        value: '3 yıllık yenileme',
+      },
+    ],
+  },
+  'caribbean-resort-fleet': {
+    client: 'Karip lüks resort grubu',
+    product: 'Resort filosu — SUP',
+    industry: 'Konaklama / Turizm',
+    challenge:
+      '5 resortluk bir grup, tutarlı marka kimliği, tropik güneşe dayanıklı UV dirençli malzemeler ve 5 yıllık değişim planına sahip birleşik bir kiralık SUP filosuna ihtiyaç duyuyordu.',
+    solution:
+      'UV stabilize PVC, tesise özel güverte grafikleri ve aşamalı teslimat takvimiyle özel bir 3 model SUP filo paketi tasarladık. Her tesis için personel eğitimi ve özel yedek parça kiti sağladık.',
+    result:
+      '5 tesiste 180 adet teslim edildi. 2 yeni mülk için tekrar sipariş. Önceki tedarikçilere kıyasla adet başına maliyette %40 düşüş.',
+    outcomeMetrics: [
+      {
+        label: 'Teslim Edilen Adet',
+        value: '180',
+      },
+      {
+        label: 'Tesisler',
+        value: '5',
+      },
+      {
+        label: 'Maliyet Düşüşü',
+        value: '40%',
+      },
+    ],
+    beforeAfter: [
+      {
+        label: 'Yıllık Board Değişim Maliyeti',
+        before: '$28,000',
+        after: '$12,000',
+      },
+      {
+        label: 'Filo Duruş Süresi (gün/yıl)',
+        before: '45',
+        after: '8',
+      },
+      {
+        label: 'Misafir Memnuniyet Skoru',
+        before: '3.8/5',
+        after: '4.6/5',
+      },
+    ],
+  },
+  'corporate-wellness-program': {
+    client: 'Küresel teknoloji şirketi',
+    product: 'Kurumsal wellness — SUP filosu',
+    industry: 'Kurumsal / Wellness',
+    challenge:
+      'Fortune 500 teknoloji şirketi, göl kenarındaki 4 küresel kampüsünde çalışanlar için su temelli bir wellness programı başlatmak istiyordu: kurumsal markalı, depolama çözümlü 60 SUP ve eğitmen eğitimi.',
+    solution:
+      "Kurumsal logolu güverte grafikli stabil all-around SUP'lardan oluşan bir filo sağladık. Hava koşullarına dayanıklı saha içi depolama rafları tasarladık. Afarer eğitim programı aracılığıyla 12 şirket içi eğitmen sertifikalandırdık.",
+    result:
+      'Program 4 kampüste başlatıldı. İlk yılda 2,400+ çalışan katılımı. %94 çalışan memnuniyet derecesi. Şirketin sürdürülebilirlik raporunda yer aldı.',
+    outcomeMetrics: [
+      {
+        label: 'Kampüsler',
+        value: '4',
+      },
+      {
+        label: 'Katılımcılar',
+        value: '2,400+',
+      },
+      {
+        label: 'Memnuniyet',
+        value: '94%',
+      },
+    ],
+  },
+  'cruise-line-activity-program': {
+    client: 'Karip cruise hattı',
+    product: 'Güverte aktivite filosu — SUP',
+    industry: 'Konaklama / Gemi Turu',
+    challenge:
+      'Büyük bir cruise hattı, özel ada limanlarına uğrayan 7 gemide SUP kıyı gezisi sunmak istiyordu: gemide kompakt depolama, hızlı şişme/indirme döngüleri ve filo geneli marka tutarlılığı.',
+    solution:
+      'Hızlı şişirme vana sistemleri, kompakt sırt çantası depolama ve gemi markalı güverte grafikleriyle gemiye özel SUP paketi geliştirdik. Özel saha ekibi eğitimi ve 3 ada limanında yedek parça dolapları sağladık.',
+    result:
+      'Program 7 gemide başlatıldı. İlk sezonda 15,000+ misafir katılımı. Ortalama 4.6★ gezi puanı. 2. yılda 3 ek gemiye genişletildi.',
+    outcomeMetrics: [
+      {
+        label: 'Gemiler',
+        value: '7',
+      },
+      {
+        label: 'Misafir Katılımları',
+        value: '15,000+',
+      },
+      {
+        label: 'Puan',
+        value: '4.6★',
+      },
+      {
+        label: '2. Yıl Genişlemesi',
+        value: '+3 gemi',
+      },
+    ],
+  },
+  'european-dtc-ecommerce': {
+    client: 'Avrupa DTC su sporları markası',
+    product: 'Markalı SUP + aksesuar serisi',
+    industry: 'E-ticaret / Perakende',
+    challenge:
+      'Hızla büyüyen bir DTC markası, e-ticaret için tasarlanmış premium ambalajlı eksiksiz bir SUP paketine (board, pompa, kürek, leash, çanta) ihtiyaç duyuyordu — DHL/FedEx ile hasarsız doğrudan teslimat.',
+    solution:
+      'Özel EPS çekirdek şekillendirme, daha yüksek basınç için özel drop-stitch teknolojisi ve iç koruma yastıklı, rafa hazır çift duvarlı oluklu kutularla ortak markalı bir ürün hattı geliştirdik. QR kod tabanlı orijinallik doğrulama ve garanti kaydını entegre ettik.',
+    result:
+      '3 modellik SUP hattı 75 günde lanse edildi. İlk 12 ayda 15,000+ adet. 2,000+ incelemede ortalama 4.8★ puan. Transitte %0.3 hasar oranı.',
+    outcomeMetrics: [
+      {
+        label: 'Modeller',
+        value: '3',
+      },
+      {
+        label: 'Adet',
+        value: '15,000+',
+      },
+      {
+        label: 'Ortalama Puan',
+        value: '4.8★',
+      },
+      {
+        label: 'Hasar Oranı',
+        value: '0.3%',
+      },
+    ],
+  },
+  'european-lake-rental': {
+    client: 'Avrupa göl resortu ve kiralama işletmecisi',
+    product: 'Kiralama filosu — SUP, can yelekleri, aksesuar',
+    industry: 'Kiralama / Turizm',
+    challenge:
+      '6 kiralama noktası olan bir göl resortu işletmecisi, hızlı kurutma sistemleri, hasara dayanıklı yapı ve öngörülebilir çok yıllık değişim takvimiyle yüksek dayanımlı bir kiralık SUP filosuna ihtiyaç duyuyordu.',
+    solution:
+      "Güçlendirilmiş kenar bantları, hızlı kuruyan EVA güverteler ve UV stabilize PVC ile ticari sınıf kiralama SUP'ları sağladık. Yıllık durum raporlarıyla renk kodlu aşınma takip sistemi geliştirdik.",
+    result:
+      '6 istasyonda 200 SUP konuşlandırıldı. Yıllık bakım maliyeti %55 azaldı. Ekipman ömrü 2 yıldan 4 yıla uzatıldı.',
+    outcomeMetrics: [
+      {
+        label: 'Kiralama İstasyonu',
+        value: '6',
+      },
+      {
+        label: "Konuşlandırılan SUP'lar",
+        value: '200',
+      },
+      {
+        label: 'Bakım Maliyeti',
+        value: '-55%',
+      },
+      {
+        label: 'Ömür',
+        value: '4 yıl',
+      },
+    ],
+    beforeAfter: [
+      {
+        label: 'Ortalama Board Ömrü',
+        before: '2 yıl',
+        after: '4 yıl',
+      },
+      {
+        label: 'Board Başına Yıllık Bakım',
+        before: '$85',
+        after: '$38',
+      },
+      {
+        label: 'Board Başına Kiralama Geliri/Sezon',
+        before: '$1,200',
+        after: '$1,850',
+      },
+    ],
+  },
+  'fishing-charter-rebrand': {
+    client: 'Florida balıkçılık charter şirketi',
+    product: 'Özel balıkçılık SUP filosu',
+    industry: 'Balıkçılık / Charter',
+    challenge:
+      'Florida merkezli bir balıkçılık charter işletmecisi, SUP balıkçılık turları eklemek istiyordu: soğutucu bağlantıları, kamış tutucu rayları ve balık bulucu transdüser uyumluluğu olan stabil platformlar.',
+    solution:
+      'Mevcut stabil SUP platformunu 4 gömülü olta tutucu, çıkarılabilir soğutucu bağlama sistemi ve su geçirmez transdüser scupper montajıyla özelleştirdik. Filo fiyatlandırması ve mevsimsel değişim programı sağladık.',
+    result:
+      "SUP balıkçılık turları yeni gelir kaynağı olarak başlatıldı. Mevcut charter müşterilerinin %45'i SUP turları rezervasyonu yaptı. Filo 2 sezonda 8'den 20 board'a genişledi.",
+    outcomeMetrics: [
+      {
+        label: 'Başlangıç Filosu',
+        value: '8',
+      },
+      {
+        label: '2. Yıl Filosu',
+        value: '20',
+      },
+      {
+        label: 'Charter Çapraz Satış',
+        value: '45%',
+      },
+    ],
+  },
+  'humanitarian-aid-project': {
+    client: 'Uluslararası insani kuruluş',
+    product: 'Kurtarma ve yardım şişme botları',
+    industry: 'STK / İnsani Yardım',
+    challenge:
+      "Uluslararası bir insani kuruluş, Güneydoğu Asya'daki sel kurtarma operasyonları için helikopterle taşınabilecek hafiflikte, enkaza dayanıklı ve sahada onarılabilir 50 sağlam şişme bota ihtiyaç duyuyordu.",
+    solution:
+      'Kendiliğinden su boşaltmalı zeminler, çok bölmeli yedeklilik ve çevre boyunca tutamaç halatlarıyla 50 güçlendirilmiş şişme bot ürettik. Resimli talimatlı saha tamir kitleri sağladık. 20 yerel teknisyen eğittik.',
+    result:
+      '3 sel riskli bölgede 50 bot konuşlandırıldı. İlk 6 ayda 12 büyük kurtarma operasyonunda kullanıldı. 0 ekipman arızası bildirildi.',
+    outcomeMetrics: [
+      {
+        label: 'Konuşlandırılan Botlar',
+        value: '50',
+      },
+      {
+        label: 'Kurtarma Operasyonları',
+        value: '12',
+      },
+      {
+        label: 'Arıza Oranı',
+        value: '0%',
+      },
+    ],
+  },
+  'japanese-brand-launch': {
+    client: 'Japon yaşam tarzı markası',
+    product: 'Ortak markalı SUP serisi',
+    industry: 'OEM / Marka',
+    challenge:
+      'Premium bir Japon yaşam tarzı markası, minimalist tasarım, çevre dostu malzemeler ve seçkin Japon tüketiciler için hassas üretim vurgulayan ortak markalı bir SUP serisiyle su sporları pazarına girdi.',
+    solution:
+      'Daha zarif kenar profilli özel kalıplar oluşturduk. FSC sertifikalı bambu güverte kaplamaları ve geri dönüştürülmüş PVC seçenekleri tedarik ettik. Japonca QR kodlu bakım kılavuzlarıyla premium bir kutu açma deneyimi geliştirdik.',
+    result:
+      "3 modellik ortak markalı hat Tokyo Marine Show'da lanse edildi. Halka açıklanmadan önce 2,800 adet ön satışla satıldı. 5 Japon yaşam tarzı yayınında yer aldı.",
+    outcomeMetrics: [
+      {
+        label: 'Modeller',
+        value: '3',
+      },
+      {
+        label: 'Ön Satış Adedi',
+        value: '2,800',
+      },
+      {
+        label: 'Medya Yayınları',
+        value: '5',
+      },
+    ],
+  },
+  'lakeside-community-amenity': {
+    client: 'ABD göl kenarı yerleşimi',
+    product: 'Site olanakları — SUP filosu',
+    industry: 'Gayrimenkul / Topluluk',
+    challenge:
+      "Lüks bir göl kenarı yerleşimi, sakinlere olanak olarak SUP board'ları sunmak istiyordu: düşük bakımlı filo, kıyıda güvenli depolama ve 200+ ev için self-service ödünç sistemi.",
+    solution:
+      'Hava koşullarına dayanıklı depolama dolabı sistemiyle 15 ticari sınıf SUP sağladık. Dijital feragatname entegrasyonlu QR kod tabanlı self-checkout tasarladık. Mevsimsel bakım hizmeti sağladık.',
+    result:
+      "Hanelerin %85'i ilk sezonda SUP olanaklarını kullandı. Göllük kesimdeki mülk değerleri %7 arttı. Topluluk «Best Lakeside Living» ödülünü kazandı.",
+    outcomeMetrics: [
+      {
+        label: "SUP'lar",
+        value: '15',
+      },
+      {
+        label: 'Hane Kullanımı',
+        value: '85%',
+      },
+      {
+        label: 'Emlak Değeri Etkisi',
+        value: '+7%',
+      },
+      {
+        label: 'Ödül',
+        value: 'Best Lakeside Living',
+      },
+    ],
+  },
+  'mediterranean-resort-fleet': {
+    client: 'Akdeniz sahil resort zinciri',
+    product: 'Resort filosu — SUP + aksesuar',
+    industry: 'Konaklama / Turizm',
+    challenge:
+      "3 tesisli bir Akdeniz resort zinciri, sahil otellerinde birleşik bir su aktivitesi programı başlatmak için özel markalı, çok dilli güvenlik kartlı ve rotasyonlu bakım sistemli 120 SUP'a ihtiyaç duyuyordu.",
+    solution:
+      'Deniz sınıfı UV dirençli PVC, 3 renk şemasında otel markalı güverte grafikleri ve renk kodlu bakım etiketleme sistemiyle tesise özel bir filo paketi tasarladık. Personel eğitimi ve üç aylık yedek parça ikmali dahildir.',
+    result:
+      "Filo 3 tesiste konuşlandırıldı. Su aktivitesi geliri ilk sezonda %210 arttı. Olanaklara ilişkin misafir memnuniyet puanları 4.1'den 4.7/5'e yükseldi.",
+    outcomeMetrics: [
+      {
+        label: "Teslim Edilen SUP'lar",
+        value: '120',
+      },
+      {
+        label: 'Tesisler',
+        value: '3',
+      },
+      {
+        label: 'Gelir Artışı',
+        value: '210%',
+      },
+      {
+        label: 'Misafir Puanı',
+        value: '4.7/5',
+      },
+    ],
+    beforeAfter: [
+      {
+        label: 'Su Aktivitesi Geliri (yıllık)',
+        before: '$45,000',
+        after: '$140,000',
+      },
+      {
+        label: 'Ekipman Değişim Oranı',
+        before: '35%',
+        after: '8%',
+      },
+      {
+        label: 'Misafir Memnuniyeti (olanaklar)',
+        before: '4.1/5',
+        after: '4.7/5',
+      },
+    ],
+  },
+  'middle-east-distributor': {
+    client: 'Orta Doğu su sporları distribütörü',
+    product: 'Tam ürün serisi — SUP, botlar, aksesuar',
+    industry: 'Dağıtım / Denizcilik',
+    challenge:
+      "GCC merkezli bir distribütör, 6 Körfez ülkesinde Afarer'ın tüm ürün serisinin münhasır temsil hakkını, Arapça ambalaj, ısıya dayanıklı malzeme spesifikasyonları ve şeriata uygun garanti koşullarıyla istiyordu.",
+    solution:
+      'Münhasır dağıtım anlaşması kuruldu. Arapça ambalaj ve pazarlama materyalleri geliştirildi. Malzeme spesifikasyonları 50°C ortam sıcaklığında doğrulandı. Bölgesel uygunluk için garanti şartları uyarlandı.',
+    result:
+      'İlk 18 ayda 12 konteyner siparişi. 15 bayi/alt bayi ağı kuruldu. GCC şişme SUP segmentinde pazar payı tahminen %18.',
+    outcomeMetrics: [
+      {
+        label: 'Konteynerler',
+        value: '12',
+      },
+      {
+        label: 'Bayi Ağı',
+        value: '15',
+      },
+      {
+        label: 'Pazar Payı',
+        value: '18%',
+      },
+    ],
+  },
+  'retail-private-label': {
+    client: 'Avrupa açık hava perakendecisi',
+    product: 'Marka SUP serisi',
+    industry: 'Perakende',
+    challenge:
+      'Avropalı bir açık hava perakendecisi, benzersiz güverte grafikleri, çevre dostu PVC ve mağazaya hazır ambalajla 60 gün içinde teslim edilecek bir marka SUP serisine ihtiyaç duyuyordu.',
+    solution:
+      'Özel dijital baskı dosyaları geliştirdik, REACH uyumlu PVC tedarik ettik ve tasarım ekibini Qingdao fabrikamıza konumlandırarak örneklemeyi 3 turdan 1 tura indirdik.',
+    result: "İmzalı PO'dan FOB'a 55 gün. 4 SKU'da 2,400 adet. İlk konteyner gelmeden tekrar sipariş verildi.",
+    outcomeMetrics: [
+      {
+        label: 'Teslim Süresi',
+        value: '55 gün',
+      },
+      {
+        label: 'Adet',
+        value: '2,400',
+      },
+      {
+        label: 'SKUs',
+        value: '4',
+      },
+    ],
+  },
+  'search-rescue-sup-fleet': {
+    client: 'Güneydoğu Asya deniz ajansı',
+    product: 'Devriye ve kurtarma SUP filosu',
+    industry: 'Kamu / Deniz Güvenliği',
+    challenge:
+      "Bir devlet deniz ajansı, alev geciktirici Hypalon kumaş, entegre haberleşme bağlantıları ve SOLAS bölüm III can filikası standartlarına uygun 20 devriye ve kurtarma SUP'ı talep ediyordu.",
+    solution:
+      'CSM Hypalon tüpler, ağır hizmet tipi D halkaları ve önceden takılı seyir feneri paketleriyle 20 SUP ürettik. Fabrika denetim ekibi deniz denemelerine tanıklık etti. Eksiksiz SOLAS belge paketi sağlandı.',
+    result:
+      'Sözleşme 4 ayda teslim edildi. Filo, 3 bölgesel üste sınır devriyesi, arama kurtarma ve afet müdahalesi için konuşlandırıldı.',
+    outcomeMetrics: [
+      {
+        label: "Devriye SUP'ları",
+        value: '20',
+      },
+      {
+        label: 'Teslimat',
+        value: '4 ay',
+      },
+      {
+        label: 'Üsler',
+        value: '3',
+      },
+    ],
+  },
+  'startup-custom-sup-line': {
+    client: 'ABD su sporları girişimi',
+    product: 'Özel SUP serisi',
+    industry: 'Startup / Perakende',
+    challenge:
+      "ABD merkezli bir su sporları girişimi, özel güverte tasarımı, ortak markalı ambalaj ve perakende rafına çıkma için BSCI sertifikasına sahip yüksek performanslı Drop-Stitch SUP'a ihtiyaç duyuyordu.",
+    solution:
+      'Mevcut SUP kalıbını değiştirilmiş rocker profiliyle uyarladık, ortak markalı ambalaj tasarımı geliştirdik ve eksiksiz BSCI denetim belgelerini sağladık.',
+    result: '3 büyük ABD outdoor zincirinde başarıyla listelendi. İlk yılda 5,000+ adet ve %98 satış hızı.',
+    outcomeMetrics: [
+      {
+        label: 'Perakende Zincirleri',
+        value: '3',
+      },
+      {
+        label: 'İlk Yıl Adedi',
+        value: '5,000+',
+      },
+      {
+        label: 'Satış Hızı',
+        value: '98%',
+      },
+    ],
+  },
+  'university-club-program': {
+    client: 'İngiliz üniversite spor birliği',
+    product: 'Öğrenci kulübü filosu — SUP + güvenlik',
+    industry: 'Eğitim',
+    challenge:
+      "Aktif bir su sporları kulübüne sahip bir İngiliz üniversitesi, yaşlanan filosunu modern şişme SUP'larla değiştirmeliydi: kompakt kampüs depolama, her seviyede kullanım ve BUCS yarışma standartları.",
+    solution:
+      "Kompakt depolama sırt çantalı 25 all-around SUP, müsabaka antrenmanı için 10 gezi SUP'ı ve eksiksiz güvenlik ekipmanı paketi sağladık. Kulüp görevlisi eğitimi ve bakım atölyeleri düzenledik.",
+    result:
+      'Filo, öğrenci tanıtım fuarında tanıtıldı. Kulüp üyeliği %140 büyüdü. Üniversite 5 yılın ilk öğrenciler arası SUP yarışmasına ev sahipliği yaptı.',
+    outcomeMetrics: [
+      {
+        label: "Sağlanan SUP'lar",
+        value: '35',
+      },
+      {
+        label: 'Üyelik Artışı',
+        value: '140%',
+      },
+      {
+        label: 'Düzenlenen Yarışma',
+        value: '1',
+      },
+    ],
+  },
+  'us-custom-mold': {
+    client: 'ABD su sporları ekipman markası',
+    product: "Özel kalıp — Tur SUP'ı",
+    industry: 'OEM / Üretim',
+    challenge:
+      'Bir ABD markası, 14 fit tur şekli, entegre balık bulucu kanalları, güçlendirilmiş durma platformu ve 400 lbs taşıma kapasitesine sahip yepyeni bir SUP kalıbına ihtiyaç duyuyordu.',
+    solution:
+      "Güçlendirilmiş drop-stitch çekirdek yoğunluğu, gömülü aksesuar rayı yerleşimleri ve aşınma direnci için askeri sınıf PVC alt katmanıyla yeni bir 14' drop-stitch kalıbı mühendislik yaptık. Kalıplama sonlandırılmadan önce 3 prototip iterasyonu ürettik.",
+    result:
+      'Yeni kalıp 14 haftada üretildi. İlk üretim turunda 3,500 adet üretildi. Ürün, Outdoor Gear Lab tarafından «Best Fishing SUP 2025» seçildi.',
+    outcomeMetrics: [
+      {
+        label: 'Kalıp Süresi',
+        value: '14 hafta',
+      },
+      {
+        label: 'İlk Üretim',
+        value: '3,500 adet',
+      },
+      {
+        label: 'Ödül',
+        value: 'Best Fishing SUP 2025',
+      },
+    ],
+  },
+};

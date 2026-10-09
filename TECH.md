@@ -971,6 +971,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：check 1,209 files 0 errors（exit 0，i18n audit passed）→ build 13,859 页 → dist 验证 **435/435 PASS**（228 detail：12 locale ×19 slug 全正文字段精确匹配 + 114 EN 回归：6 locale ×19 EN fallback 完整 + de/fr ×19 yaml 正文一致 + EN ×19 + index 页 12×2 本地化 + 6×2 EN 回归）+ sitemap-0 11,164、route-manifest 13,858 无变化。commit `9ab0509`；CI 双绿 37887153012/37887152988 → 线上验证 **41/41 PASS**（12 locale ×2 slug 全正文字段 + cs before_after ×3 + index 卡片 12 本地化 + ro EN 回归 + de/fr yaml 正文 + EN 回归）。**case-studies 正文级清除 12/18 locale（余 6 locale 挂分片 93）——挂账仍 7 项**（posts / v2 / solutions 正文 / guides / case-studies 正文余 6 locale / SeoLanding / faq）。
 
+## L83. 分片 93：case-studies 正文级本地化第三批（收尾）——19 slugs ×6 locale（ro tr ar el fi th）（2026-10）
+
+① **范围决策（L82 挂账收尾批）**：沿用 evidence-body 机制，最后 6 个 locale；页面接线零改动——新增 6 个 `{l}.ts` 模块 + 重建 index.ts 为**全量 18 locale** import（字母序 ar cs da el es fi it ja ko nl no pl pt ro ru sv th tr）。de/fr 仍走 yaml。**本批完成后 18/18 locale 正文全本地化**，case-studies 正文挂账清零。
+
+② **实施**：(1) 6 底稿只含手翻字段，client/product/challenge 由分片 90 meta 底稿程序派生（复用 `_ev-meta-{l}.json`）；(2) 生成器 `_gen-ev-body-ts93.cjs` 追加模式——写 6 个新模块 + 重建 18 locale index.ts；(3) **白名单收窄**：仅 SKUs/SUPs 全部保留 EN，ro 额外保留 Sell-through（罗马尼亚商贸惯用）；其余 label 全译（tr Satış Hızı / ar نسبة البيع / el Ποσοστό Διάθεσης / fi Läpimyynti / th อัตราการขายออก）；Containers 六语全译（ro Containere / tr Konteynerler / ar الحاويات / el Εμπορευματοκιβώτια / fi Kontit / th ตู้คอนเทนเนอร์）；(4) 新增归档工具 `_scan93.cjs` 跨文字系统扫描（ar 底稿拉丁 token 白名单校验 + 其余语种西里尔/CJK/希腊/泰文/阿拉伯残留检查）；(5) 翻译惯例沿用：数字 token EN 格式 + 单位词本地化（55 zile / 55 gün / 55 يومًا 西数字 / 55 ημέρες / 55 päivää / 55 วัน）、奖项名 « » 包裹保持 EN。工具归档 `TOOLS/i18n-merge/evidence-body-93/`（tool_instrction.md §17）。
+
+③ **踩坑**：(1) ro cruise-line metric label "Rating" 与 EN 同形漏译——校验器捕获后改 "Evaluare"（收窄白名单的价值：92 版白名单会放过它）；(2) th search-rescue 手滑打错 "ฐานะ"（状态）应为 "ฐาน"（基地）——写稿后即时复查发现；(3) 本批零 PowerShell 引号事故（所有替换走 .cjs/编辑器）。
+
+④ **回归数字**：check 1,218 files 0 errors（exit 0，i18n audit passed）→ build 13,859 页 → dist 验证 **435/435 PASS**（342 detail：18 locale ×19 slug 全正文字段精确匹配 + de/fr ×19 yaml 正文一致 + EN ×19 + index 页 18×2 本地化）+ sitemap-0 11,164、route-manifest 13,858 无变化。commit 待填；CI 待填 → 线上验证待填。**case-studies 正文级 18/18 locale 全清——挂账剩 6 项**（posts / v2 / solutions 正文 / guides / SeoLanding / faq）。
+
 
 
 ---
