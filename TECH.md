@@ -950,6 +950,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：check 四合一绿 ×2（归档 TOOLS/ 前后各一，exit 0，1,192 files）→ build 13,859 页 → dist 验证 **399/399 PASS**（342 meta：18 locale ×19 slug title+desc 与底稿精确匹配且 ≠ EN + de/fr 回归 19+19 title 与 yaml 一致 + EN 回归 19/19）+ sitemap-0 11,164、route-manifest 13,858 无变化。commit `e1321852`；CI 双绿 37873336546/37873336605 → 线上验证 **42/42 PASS**（36 meta：18 locale ×2 slug title+desc 与底稿精确匹配；de/fr 4 title 与 yaml 一致；EN 2/2 回归；均跟随 308 尾斜杠重定向）。**挂账 case-studies 收窄为正文级（meta 层清除）——余 7 项**（posts / v2 / solutions 正文 / guides / case-studies 正文 / SeoLanding / faq）。
 
+## L81. 分片 91：case-studies 正文级本地化——19 slugs ×6 locale body override（2026-10）
+
+① **范围决策（L80 挂账 case-studies 正文级第一批）**：正文级 = case_studies 正文字段 `{client, product, industry, challenge, solution, result, outcome_metrics, before_after}`。沿用分片 90 模式新建 `src/data/site/evidence-body/`（types.ts + 6 个 `{l}.ts` + index.ts 注册 `EVIDENCE_BODY_OVERRIDES`）；第一批 6 locale（ja ko ru es pt it），de/fr 走 yaml 不动，余 12 locale 挂分片 92/93。tags 按 de 惯例保持 EN 不译。
+
+② **实施**：(1) EN 源提取 `_ev-body-en.json`（19 slugs 正文五字段 + metric 计数 3-4/slug + 3 slugs 含 beforeAfter）；(2) 6 底稿**只含手翻字段** `{industry, solution, result, outcomeMetrics, beforeAfter}`，client/product/challenge 由分片 90 meta 底稿程序派生（title 首个 ` — ` 前拆 client、其后至 ` | Afarer` 前拆 product、description 整句作 challenge）——避免复用字段人工转写出错；(3) 生成器合并产出 evidence-body/ 六模块 + types + index，过项目 prettier；(4) 接线 3 页面：`[slug].astro` frontmatter 合并对象 `cs`（spread study + 显式覆盖七字段含 outcome_metrics/before_after 形态转换），模板全量 `study.`→`cs.`（JsonLd headline/citation/about、breadcrumb、H1、industry badge、metrics、before_after、challenge/solution/result、video、tags）；两个 index 页构建 `localizedStudies` 数组替换渲染源（卡片含 industry/client/product/challenge/前 3 metric）；(5) 翻译惯例：数字 token 保持 EN 格式（2,400 / 15,000+ / 0.3%），单位词翻译（55日 / 55 días / 14 недель）；奖项名 "Best Fishing SUP 2025" / "Best Lakeside Living" 保持 EN；ja/ko 底稿内嵌引号用 \u201c\u201d / 「」避免破坏 JSON。工具归档 `TOOLS/i18n-merge/evidence-body-91/`（tool_instrction.md §15）。
+
+③ **踩坑**：校验白名单而非硬翻 es/pt 与 EN 同形 metric label（Resorts/Bases 为西葡语原生词、SKUs/SUPs 技术缩写、Sell-through 通用术语）；it "OEM / Brand"→"OEM / Marchio"（industry 不得与 EN 全等）；check 首轮 1 error——`<iframe src={study.video_url}>` 一处漏改；verify-dist 首版误断言 index 卡片含 result 字段（卡片模板不渲染 result），改为 industry + 首个 metric label + client 三要素。
+
+④ **回归数字**：check 1,200 files 0 errors（exit 0）→ build 13,859 页 → dist 验证 **435/435 PASS**（114 detail：6 locale ×19 slug 全正文字段精确匹配 + 228 EN 回归：12 locale ×19 slug EN fallback 完整 + de/fr ×19 yaml 正文一致 + EN ×19 + index 页 6×2 本地化 + 12×2 EN 回归）+ sitemap-0 11,164、route-manifest 13,858 无变化。**case-studies 正文级清除 6/18 locale（余 12 locale 挂分片 92/93）——挂账仍 7 项**（posts / v2 / solutions 正文 / guides / case-studies 正文余 12 locale / SeoLanding / faq）。
+
 
 ---
 

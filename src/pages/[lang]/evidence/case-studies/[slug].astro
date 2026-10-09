@@ -8,6 +8,7 @@ import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { pageContentData } from '~/i18n/generated/data';
 import { EVIDENCE_META_OVERRIDES } from '~/data/site/evidence-meta';
+import { EVIDENCE_BODY_OVERRIDES } from '~/data/site/evidence-body';
 
 interface CaseStudy {
   id: string;
@@ -46,6 +47,24 @@ const study = allCaseStudies.find((cs) => cs.id === slug);
 
 const metaOverride = study ? EVIDENCE_META_OVERRIDES[lang || defaultLang]?.[slug || ''] : undefined;
 
+const bodyOverride = study ? EVIDENCE_BODY_OVERRIDES[lang || defaultLang]?.[slug || ''] : undefined;
+
+const cs = study
+  ? bodyOverride
+    ? {
+        ...study,
+        client: bodyOverride.client,
+        product: bodyOverride.product,
+        industry: bodyOverride.industry,
+        challenge: bodyOverride.challenge,
+        solution: bodyOverride.solution,
+        result: bodyOverride.result,
+        outcome_metrics: bodyOverride.outcomeMetrics.map((m) => ({ label: m.label, value: m.value })),
+        before_after: bodyOverride.beforeAfter,
+      }
+    : study
+  : undefined;
+
 const metadata = {
   title: metaOverride?.title || (study ? `${study.client} — ${study.product} | ${SITE.name}` : 'Case Study'),
   description: metaOverride?.description || (study ? `${study.challenge.substring(0, 160)}` : 'Afarer case study'),
@@ -54,7 +73,7 @@ const metadata = {
 ---
 
 {
-  study && (
+  cs && (
     <Layout metadata={metadata}>
       <JsonLd
         type="BreadcrumbList"
@@ -62,21 +81,21 @@ const metadata = {
           { name: SITE.name, href: `/${lang}/` },
           { name: t('home.evidence.title'), href: `/${lang}/evidence` },
           { name: t('home.evidence.caseStudies') || 'Case Studies', href: `/${lang}/evidence/case-studies` },
-          { name: study.client },
+          { name: cs.client },
         ]}
       />
       <JsonLd
         data={{
           '@context': 'https://schema.org',
           '@type': 'Article',
-          headline: `${study.client} — ${study.product}`,
+          headline: `${cs.client} — ${cs.product}`,
           description: metadata.description,
           author: { '@type': 'Organization', name: SITE.name },
           datePublished: '2025-01-01',
           dateModified: '2026-06-01',
-          citation: study.outcome_metrics.map((m) => `${m.label}: ${m.value}`),
-          about: { '@type': 'Product', name: study.product },
-          isBasedOn: { '@type': 'Product', name: study.product },
+          citation: cs.outcome_metrics.map((m) => `${m.label}: ${m.value}`),
+          about: { '@type': 'Product', name: cs.product },
+          isBasedOn: { '@type': 'Product', name: cs.product },
         }}
       />
 
@@ -90,21 +109,21 @@ const metadata = {
             {t('home.evidence.title')}
           </a>
           <span class="mx-2">/</span>
-          <span class="text-gray-900">{study.client}</span>
+          <span class="text-gray-900">{cs.client}</span>
         </nav>
 
         <div class="mb-4">
           <span class="inline-block text-xs font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-3 py-1 rounded-full">
-            {study.industry}
+            {cs.industry}
           </span>
         </div>
 
-        <h1 class="text-4xl font-bold text-gray-900 mb-2">{study.client}</h1>
-        <p class="text-xl text-gray-500 mb-8">{study.product}</p>
+        <h1 class="text-4xl font-bold text-gray-900 mb-2">{cs.client}</h1>
+        <p class="text-xl text-gray-500 mb-8">{cs.product}</p>
 
         {/* Outcome Metrics */}
         <div class="grid grid-cols-3 gap-4 mb-12">
-          {study.outcome_metrics.map((m) => (
+          {cs.outcome_metrics.map((m) => (
             <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
               <div class="text-2xl font-bold text-sky-600">{m.value}</div>
               <div class="text-xs text-gray-500 mt-1">{m.label}</div>
@@ -113,18 +132,18 @@ const metadata = {
         </div>
 
         <div class="relative h-72 bg-gray-100 rounded-2xl overflow-hidden mb-12">
-          <img src={study.image} alt={study.product} class="w-full h-full object-cover" />
+          <img src={cs.image} alt={cs.product} class="w-full h-full object-cover" />
           <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
-            <span class="text-white text-sm font-medium">{study.product}</span>
+            <span class="text-white text-sm font-medium">{cs.product}</span>
           </div>
         </div>
 
         {/* Before / After Comparison */}
-        {study.before_after && study.before_after.length > 0 && (
+        {cs.before_after && cs.before_after.length > 0 && (
           <div class="mb-12 bg-gray-50 rounded-2xl p-8 border border-gray-200">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">{t('evidence.beforeAfter') || 'Before & After'}</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {study.before_after.map((ba) => (
+              {cs.before_after.map((ba) => (
                 <div class="text-center">
                   <p class="text-sm font-medium text-gray-500 mb-3">{ba.label}</p>
                   <div class="flex items-center justify-center gap-4">
@@ -161,12 +180,12 @@ const metadata = {
         )}
 
         {/* Video Embed */}
-        {study.video_url && (
+        {cs.video_url && (
           <div class="mb-12">
             <h2 class="text-2xl font-bold text-gray-900 mb-4">{t('evidence.video') || 'Video Testimonial'}</h2>
             <div class="aspect-video rounded-2xl overflow-hidden bg-gray-100">
               <iframe
-                src={study.video_url}
+                src={cs.video_url}
                 class="w-full h-full"
                 style="border: 0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -178,17 +197,17 @@ const metadata = {
 
         <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600">
           <h2>{t('v2.problem')}</h2>
-          <p>{study.challenge}</p>
+          <p>{cs.challenge}</p>
 
           <h2>{t('v2.solution')}</h2>
-          <p>{study.solution}</p>
+          <p>{cs.solution}</p>
 
           <h2>{t('evidence.result') || 'The Result'}</h2>
-          <p>{study.result}</p>
+          <p>{cs.result}</p>
 
           <h2>{t('evidence.keyCapabilities') || 'Key Capabilities'}</h2>
           <ul>
-            {study.tags.map((tag) => (
+            {cs.tags.map((tag) => (
               <li>
                 <strong>{tag}</strong>
               </li>

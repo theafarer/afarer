@@ -7,6 +7,7 @@ import { SITE } from 'astrowind:config';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { pageContentData } from '~/i18n/generated/data';
+import { EVIDENCE_BODY_OVERRIDES } from '~/data/site/evidence-body';
 
 interface CaseStudy {
   id: string;
@@ -30,6 +31,20 @@ const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
 
 const d = pageContentData[`${lang}/site-evidence`] || pageContentData['en/site-evidence'] || {};
 const caseStudies: CaseStudy[] = d.case_studies ?? [];
+
+const bodyMap = EVIDENCE_BODY_OVERRIDES[lang || defaultLang];
+const localizedStudies: CaseStudy[] = caseStudies.map((cs) => {
+  const b = bodyMap?.[cs.id];
+  if (!b) return cs;
+  return {
+    ...cs,
+    client: b.client,
+    product: b.product,
+    industry: b.industry,
+    challenge: b.challenge,
+    outcome_metrics: b.outcomeMetrics.map((m) => ({ label: m.label, value: m.value })),
+  };
+});
 
 const metadata = {
   title: `${t('home.evidence.title') || 'Case Studies'} | ${SITE.name}`,
@@ -82,7 +97,7 @@ const metadata = {
     <section class="mb-20">
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {
-          caseStudies.map((cs) => (
+          localizedStudies.map((cs) => (
             <a
               href={`/${lang}/evidence/case-studies/${cs.id}`}
               class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all hover:-translate-y-0.5 flex flex-col"

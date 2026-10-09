@@ -310,6 +310,22 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+## §15 evidence-body-91 — case-studies 正文级本地化（19 slugs ×6 locale，第一批）
+
+**背景**：L80 挂账 case-studies 正文级——`[slug].astro` 正文（industry badge/H1/product/metrics/before_after/challenge/solution/result/JsonLd）与两个 index 卡片全 EN 回退。**方案**：`src/data/site/evidence-body/`（types.ts + 6 `{l}.ts` + index.ts `EVIDENCE_BODY_OVERRIDES`，与 evidence-meta/ 同模式）；底稿**只含手翻字段** `{industry, solution, result, outcomeMetrics, beforeAfter}`，client/product/challenge 由分片 90 meta 底稿程序派生（title `—` 拆分 + description 整句）避免复用字段转写错误；tags 保持 EN（de 惯例）。接线：`[slug].astro` frontmatter 合并对象 `cs` 后模板全量 `study.`→`cs.`；index 页构建 `localizedStudies` 数组替换渲染源。**翻译铁则**：数字 token 保持 EN 格式（2,400/15,000+/0.3%）、单位词翻译（55日/55 días）、奖项名保持 EN、底稿内嵌引号用弯引号或「」。
+
+| 文件（目录）                                          | 用途                                                                                                                                                                                                             | 用法（仓库根）                                                                                                     |
+| ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `i18n-merge/evidence-body-91/_ev-body-en.json`        | EN 源提取结果（19 slugs 正文五字段；分片 90 `_ev-meta-en.json` 提供 client/product/challenge 派生源）                                                                                                            | （数据文件，被下方脚本读取）                                                                                       |
+| `i18n-merge/evidence-body-91/_ev-body-{l}.json` ×6    | 6 locale 翻译底稿（ja ko ru es pt it，仅手翻字段；含 metric 计数与 beforeAfter 结构）                                                                                                                            | （数据文件）                                                                                                       |
+| `i18n-merge/evidence-body-91/_validate-ev-body91.cjs` | 底稿校验：JSON.parse + slug 集合 + 三段非空且 ≠ EN + 无双空格 + metric 计数与 EN 一致 + beforeAfter 仅 3 slug 且条数一致 + meta 底稿 title 格式可拆分；同形 label 白名单（Resorts/Bases/SKUs/SUPs/Sell-through） | `node TOOLS/i18n-merge/evidence-body-91/_validate-ev-body91.cjs`                                                   |
+| `i18n-merge/evidence-body-91/_gen-ev-body-ts91.cjs`   | 合并 meta 底稿（title 拆 client/product、desc 作 challenge）+ body 底稿 → 生成 `src/data/site/evidence-body/`（生成后必须过项目 prettier）                                                                       | `node TOOLS/i18n-merge/evidence-body-91/_gen-ev-body-ts91.cjs && npx prettier --write src/data/site/evidence-body` |
+| `i18n-merge/evidence-body-91/_verify-dist91.cjs`      | dist walk：6 locale ×19 detail 全字段 + 12 locale EN 回归 + de/fr yaml 回归 + EN 回归 + index 页 6×2/12×2 + sitemap-0/route-manifest 计数                                                                        | build 后 `node TOOLS/i18n-merge/evidence-body-91/_verify-dist91.cjs`                                               |
+
+**验证**：底稿校验 6/6 PASS → check 1,200 files 0 errors → build 13,859 页 → dist walk **435/435 PASS** + sitemap-0 11,164 / route-manifest 13,858 无变化。**注意**：body 底稿需与分片 90 `_ev-meta-{l}.json`（Temp，未入库）同在脚本目录运行；余 12 locale 正文级挂分片 92/93。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。
