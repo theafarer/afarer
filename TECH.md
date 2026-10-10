@@ -1018,7 +1018,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) 校验器 v1 `.mjs` require 报错 → 改 `.cjs`；(2) v2 collect 路径带前导点（`.meta.title`）致 TRANS 正则全未命中（**假绿**——结构与不变量全过但残留扫描空转）→ `p.replace(/^\./,'')` 修复；(3) **白名单大小写归一**：Clubs/Resorts/Per 句首大写被小写 BORROWED 集合漏掉 → 加 `t0.toLowerCase()` 双查；pt Explore（探索命令式，语内合法）从 EN_INDICATOR 移除——期间一次改错集合（explore 误加进 EN_INDICATOR 而非 BORROWED，越改越红），**改白名单前先确认目标行归属哪个集合**；(4) dist 脚本三修：`<br />` 扁平化须替换为空格（HTML 标签 strip 后无空格拼接致 hero 断言假阴）；EN 页路径为 `dist/en/`（root dist 页被 middleware shadow，无 root 文件副本）；route-manifest 权威路径是 `src/i18n/generated/route-manifest.json`（dist 根无此文件，dist/data 被 clean 删除）。工具归档 `TOOLS/i18n-merge/seo-landing-97/`（tool_instrction.md §21）。
 
-④ **回归数字**：check passed（0 issues/0 warnings）→ build 13,859 页 → dist 验证 **35/35 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + fr/de/en 回归 4 + sitemap-0 11,164 / route-manifest 13,858 无变化）。commit `待补` → CI `待补` → 线上验证 `待补`。**SeoLanding 挂账第一批清偿（6/19 locale）**；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding 余 13 locale）。
+④ **回归数字**：check passed（0 issues/0 warnings）→ build 13,859 页 → dist 验证 **35/35 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + fr/de/en 回归 4 + sitemap-0 11,164 / route-manifest 13,858 无变化）。commit `236f2af7` **首推即 CI 双绿**（96 教训内化：归档前 prettier + eslint 双检，未再返工）——CI 38042517268（CI）/38042517351（Build & Deploy）→ 线上验证 **40/40 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + EN ×5 + fr ×5 回归，均跟随 308 尾斜杠重定向）。**SeoLanding 挂账第一批清偿（6/19 locale）**；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding 余 13 locale）。
 
 
 
