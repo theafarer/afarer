@@ -1020,6 +1020,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：check passed（0 issues/0 warnings）→ build 13,859 页 → dist 验证 **35/35 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + fr/de/en 回归 4 + sitemap-0 11,164 / route-manifest 13,858 无变化）。commit `236f2af7` **首推即 CI 双绿**（96 教训内化：归档前 prettier + eslint 双检，未再返工）——CI 38042517268（CI）/38042517351（Build & Deploy）→ 线上验证 **40/40 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + EN ×5 + fr ×5 回归，均跟随 308 尾斜杠重定向）。**SeoLanding 挂账第一批清偿（6/19 locale）**；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding 余 13 locale）。
 
+## L88. 分片 98：SeoLanding 正文第二批本地化——5 页 ×6 locale（cs da nl no pl sv）（2026-10）
+
+① **范围决策**：SeoLanding 挂账（L77 审计 (g)）第二批，机制链同 97 零接线纯数据添加（locale yaml 缺失即构建回退 EN）。本批同 5 页（oem-paddle / co-brand / bateau-gonflable-fabricant / fournisseur-nautique / fabricant-sup-gonflable）×6 locale（cs da nl no pl sv）= **30 个 locale yaml 新增**；六语页面原渲染 EN fallback，本批转本地化，build 页数不变 13,859。翻译铁则沿 97：keys 树与 EN 一致（数组计数相同）、href/variant/icon/src/stats.value 原样、{SITE} 保留、大写 Afarer、技术词不译、da/nl 弯撇号 U+2019。SeoLanding 挂账余 7 locale（99：ar el fi ro th tr / 100：de）；总挂账仍 5 项。
+
+② **实施**：(1) 30 yaml 手翻写入（4-7KB 单写安全），校验器 `_validate98.cjs`（97 底版改造：六语全拉丁字母，全部走 EN 指示词表 + TECH/BORROWED 白名单路线）跑至 errors=0——结构 deep-compare + 不变量断言 + {SITE} 保留 + 残留扫描；(2) 白名单校准：BORROWED 在 97 基础上增 for/over/start/guide/download/water/partners/boards/events/hotels（六语合法同形词）+ brand/brands（da 营销标准借词）；EN_INDICATOR 移除 be（da "købe"/no "Be om" 被 ø 分词误报）、let（cs let=年，"10+ let zkušeností" 合法）；(3) 翻译修正批：da 全 4 文件 custom→skræddersyet/specialmodeller/egen form/tilpasning（Customisering→Tilpasning）、no 全 4 文件 custom→skreddersydd/spesialmodeller/egen form、sv/co-brand communities→gemenskaper（含复合词 communityserier→gemenskapsserier、paddlarcommunities→paddlargemenskaper）、da/co-brand "Bliver en brandaktiv"→"Bliver en aktiv for jeres brand"、sv varumärkes tillgång→varumärkestillgång/padelklubbar→paddleklubbar；(4) fournisseur-nautique 六语补第 2 条 keyword（EN 6 条译文仅 5 条致 STRUCT-DIFF ×6）；(5) dist 验证 `_verify-dist98.cjs`：30 新页 title+hero 本地化 + EN fallback 负断言 + fr/de/en 回归 + route-manifest 30 新路由存在断言 + sitemap-0 11,164。
+
+③ **踩坑**：(1) **Edit 工具 "applied successfully" 不等于实际落盘**——da/bateau 同文件多编辑后 L14 报成功但未改，grep 复核抓出补修；同文件多编辑后必须 grep/read 复核；(2) da "brand" 假朋友（本义火灾）但营销语境是标准借词（Danmarks stærkeste brand 式用法通行）→ 白名单而非翻译；no 不适用（全用 merke/merkevare）；(3) da/no "custom" 译而非白名单（Dansk Sprognævn 视为不必要英化词），程序名 "Custom Lab"/"Custom & Private Label" 保留英文（repo 先例：distributor-program 表格）；(4) EN_INDICATOR 短词 be/let 分词后撞六语合法子串/词（købe、10+ let）→ 指示词表须防分词误报。工具归档 `TOOLS/i18n-merge/seo-landing-98/`（tool_instrction.md §22）。
+
+④ **回归数字**：check passed → build 13,859 页 → dist 验证 **37/37 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + fr/de/en 回归 4 + route-manifest 13,858 含 30 新路由 + sitemap-0 11,164 无变化）。**SeoLanding 挂账第二批清偿（12/19 locale）**；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding 余 7 locale）。
+
 
 
 ---

@@ -426,6 +426,18 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 **验证**：校验 ALL CLEAN（errors=0 cjkCandidates=0）→ prettier 30 yaml 全过 → check passed（0 issues）→ build 13,859 页 → dist **35/35 PASS** → 线上 **40/40 PASS**。**注意**：(1) 校验器 collect 路径须 strip 前导点（`.meta.title` 令 TRANS 正则全不中 → 假绿）；(2) **白名单大小写归一**——句首大写（'Clubs'/'Resorts'/'Per'）须 `toLowerCase()` 双查，改集合前先确认目标行归属（EN_INDICATOR vs BORROWED 改错越改越红）；(3) dist 断言 `<br />` 扁平化必须替换为空格（标签 strip 无空格拼接 → hero 假阴）；(4) EN 页 dist 路径是 `dist/en/`（root 页被 middleware shadow 无文件）；(5) route-manifest 权威文件在 `src/i18n/generated/route-manifest.json`（dist 根无，dist/data 被 clean 删除）；(6) 归档件双检 prettier + eslint（95 教训）。SeoLanding 余 13 locale（98：cs da nl no pl sv / 99：ar el fi ro th tr / 100：de）；挂账余 posts / v2 / solutions 正文 / guides / SeoLanding。
 
+## §22 seo-landing-98 — SeoLanding 正文第二批本地化（5 页 ×6 locale：cs da nl no pl sv）
+
+**背景**：SeoLanding 6 页挂账第二批（同 §21 机制：纯数据添加零接线，六语页面原渲染 EN fallback，本批转本地化，build 页数 13,859 不变）。**翻译铁则**：同 §21——keys 树与 EN 一致（数组计数相同）/ 不变量原样 / {SITE} 保留 / 大写 Afarer / 技术词不译 / U+2019 弯撇号。**残留扫描**：六语全拉丁字母，EN 指示词表 + TECH/BORROWED 白名单；BORROWED 在 97 基础上增六语同形词（for/over/start/guide/download/water/partners/boards/events/hotels）+ da 营销借词 brand/brands；EN_INDICATOR 移除 be/let（分词误报：da "købe"、cs "10+ let"）。
+
+| 脚本                                           | 用途                                                                                                                                         | 运行                                                               |
+| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| `i18n-merge/seo-landing-98/_validate98.cjs`    | 30 yaml 校验：结构 deep-compare（keyTree 含数组计数）+ 不变量断言 + {SITE} 保留 + EN_INDICATOR/TECH/BORROWED 残留扫描（六语全拉丁路线）      | `node TOOLS/i18n-merge/seo-landing-98/_validate98.cjs`             |
+| `i18n-merge/seo-landing-98/_verify-dist98.cjs` | dist walk：30 新 locale 页 title+hero 本地化 + EN fallback hero 负断言 + fr/de/en 回归 + route-manifest 30 新路由存在断言 + sitemap-0 11,164 | build 后 `node TOOLS/i18n-merge/seo-landing-98/_verify-dist98.cjs` |
+| `i18n-merge/seo-landing-98/_live-verify98.mjs` | 线上验证：30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + EN ×5 + fr ×5 回归（跟随 308 尾斜杠重定向）                               | 部署后 `node TOOLS/i18n-merge/seo-landing-98/_live-verify98.mjs`   |
+
+**验证**：校验 errors=0 → prettier 30 yaml 全过 → check passed → build 13,859 页 → dist **37/37 PASS**。**注意**：(1) **Edit 工具 "applied successfully" 不保证落盘**——同文件多编辑后必须 grep/read 复核（98 da/bateau L14 报成功但未改）；(2) da "brand" 白名单（营销标准借词，本义火灾的假朋友但营销语境无歧义）、da/no "custom" 译出（skræddersyet/skreddersydd 等，程序名 "Custom Lab"/"Custom & Private Label" 保留）、sv communities→gemenskaper（含复合词）；(3) EN_INDICATOR 短词防分词误报（be/let）；(4) 归档件双检 prettier + eslint。SeoLanding 余 7 locale（99：ar el fi ro th tr / 100：de）；挂账余 posts / v2 / solutions 正文 / guides / SeoLanding。
+
 ---
 
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
