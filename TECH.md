@@ -1009,7 +1009,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) **th p2（~15KB）Write 单写被截断**（"JSON Parse error: Unterminated string"）——实测本批临界值比 95 更低，p2 拆 p2a/p2b 各 13 条后单写成功，`_merge96.cjs` 为 th 配三段合并；(2) **ro "are" 英文残留假阳性**——罗马尼亚语动词 a avea 第三人称单数（= has）与英文 are 同形，`sup-volume-weight`/`airline-travel-sup` 两处误报，按 95 借词白名单先例 ALLOW ro:['are']；(3) **Temp `_faq-en.json` 与 95 归档版内容相同但未过 prettier**（94 时期的 stringify 格式），归档 prettier --check 报红——fc 字节比对 + node deep-compare 确认 53 条 JSON.stringify 全等后，用 95 归档的 prettier 格式版覆盖 96 归档件与 Temp 副本；(4) 校验器初版误留残片行（`safe()` 未定义调用），写盘后自查清除。工具归档 `TOOLS/i18n-merge/faq-body-96/`（tool_instrction.md §20）。
 
-④ **回归数字**：（待 CI 与线上验证后 docs commit 补）
+④ **回归数字**：check 1,250 files 0 errors → build 13,859 页 → dist 验证 **24/24 PASS**（6 locale ×53 q+a 渲染 + 53 items + FAQPage JsonLd + §18 六语 yaml ×53 + §19 六语 yaml ×53 + de/fr yaml ×53 + EN ×2（/en/faq 与根 /faq）+ sitemap-0 11,164 / route-manifest 13,858 无变化）。commit `f8da4b2` **首推即 CI 双绿**（95 教训内化：归档前 prettier + eslint 双检 + `_faq-en.json` 用 95 归档 prettier 格式版覆盖，未再返工）——CI 38028982190（CI）/38028982182（Build & Deploy）→ 线上验证 **17/17 PASS**（6 locale ×53 q+a + JsonLd + B2B/PSI 抽查（b2b-payment/b2b-quality-control/sup-inflate-pressure）×6 + de/fr/es yaml ×53 + EN ×2）。**faq 挂账收口**（21 locale 全量：en + de/fr/es/it/ja/ko/pt/ru + cs/da/nl/no/pl/sv + ar/el/fi/ro/th/tr）；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding）。
 
 
 
