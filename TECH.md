@@ -1,4 +1,4 @@
-﻿# afarer — Technical Documentation
+# afarer — Technical Documentation
 
 > Last updated: 2026-09-23
 > Project path: `E:\github\afarer`
@@ -1010,6 +1010,15 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 ③ **踩坑**：(1) **th p2（~15KB）Write 单写被截断**（"JSON Parse error: Unterminated string"）——实测本批临界值比 95 更低，p2 拆 p2a/p2b 各 13 条后单写成功，`_merge96.cjs` 为 th 配三段合并；(2) **ro "are" 英文残留假阳性**——罗马尼亚语动词 a avea 第三人称单数（= has）与英文 are 同形，`sup-volume-weight`/`airline-travel-sup` 两处误报，按 95 借词白名单先例 ALLOW ro:['are']；(3) **Temp `_faq-en.json` 与 95 归档版内容相同但未过 prettier**（94 时期的 stringify 格式），归档 prettier --check 报红——fc 字节比对 + node deep-compare 确认 53 条 JSON.stringify 全等后，用 95 归档的 prettier 格式版覆盖 96 归档件与 Temp 副本；(4) 校验器初版误留残片行（`safe()` 未定义调用），写盘后自查清除。工具归档 `TOOLS/i18n-merge/faq-body-96/`（tool_instrction.md §20）。
 
 ④ **回归数字**：check 1,250 files 0 errors → build 13,859 页 → dist 验证 **24/24 PASS**（6 locale ×53 q+a 渲染 + 53 items + FAQPage JsonLd + §18 六语 yaml ×53 + §19 六语 yaml ×53 + de/fr yaml ×53 + EN ×2（/en/faq 与根 /faq）+ sitemap-0 11,164 / route-manifest 13,858 无变化）。commit `f8da4b2` **首推即 CI 双绿**（95 教训内化：归档前 prettier + eslint 双检 + `_faq-en.json` 用 95 归档 prettier 格式版覆盖，未再返工）——CI 38028982190（CI）/38028982182（Build & Deploy）→ 线上验证 **17/17 PASS**（6 locale ×53 q+a + JsonLd + B2B/PSI 抽查（b2b-payment/b2b-quality-control/sup-inflate-pressure）×6 + de/fr/es yaml ×53 + EN ×2）。**faq 挂账收口**（21 locale 全量：en + de/fr/es/it/ja/ko/pt/ru + cs/da/nl/no/pl/sv + ar/el/fi/ro/th/tr）；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding）。
+## L87. 分片 97：SeoLanding 正文第一批本地化——5 页 ×6 locale（es it ja ko pt ru）（2026-10）
+
+① **范围决策**：SeoLanding 挂账（L77 审计 (g)）第一批。机制链零接线纯数据添加：`src/data/pages/{l}/{page}.yaml` → `generate-data-json.mjs`（yaml→page-content.json，locale yaml 缺失即该 lang key 不存在 → 构建回退 EN）→ `_gen-pages.cjs` → `i18n/generated/pages/*.ts` → `[lang]/{page}.astro` `getPageContent(lang, page)`。本批 5 页（oem-paddle / co-brand / bateau-gonflable-fabricant / fournisseur-nautique / fabricant-sup-gonflable）×6 locale = **30 个 locale yaml 新增**；路由/模板零改动（页面本就渲染 EN fallback，build 页数不变 13,859）。品牌 **SeoLanding 家族惯例大写 Afarer**（distributor-program `de033517` 先例；区别于 faq 家族句中小写）。翻译约定：keys 树与 EN 完全一致（数组计数相同）、href/variant/icon/src/stats.value 原样、{SITE} 占位符保留、U+2019 弯撇号（it 含撇号串用双引号 yaml）、技术词不译（OEM/ODM/SUP/PVC/VS2/Hypalon/PSI/CE/ISO/UKCA/BSCI/REACH/USCG/MOQ/FOB Qingdao/USD/m²/3D/UV）。SeoLanding 挂账余 13 locale（98：cs da nl no pl sv / 99：ar el fi ro th tr / 100：de）；总挂账仍 5 项。
+
+② **实施**：(1) 30 yaml 手翻写入（单文件 4-7KB，Write 单写安全）→ 真残留修复 21 处：es/it/pt 的 paddlers/paddling/go-to-market/input 本地化（9 处）、ru 的 stand up paddle/paddle board → сапборд（distributor-program 站内先例，11 处）、ko 프라이빗 레이블(Private Label) 英文括注去除、拼写修正 3（es Eliigen→Elijen、it Scegliono→Scelgono、Collezzioni→Collezioni）；(2) 校验器 `_validate97.cjs` v2：结构 deep-compare（keyTree 含数组计数）+ 不变量断言（href/variant/icon/src/value/columns ===EN）+ {SITE} 保留检查 + **分语言残留扫描**——拉丁语系（es/it/pt）本地词同为 ASCII 无法用 Unicode 边界，改 EN 指示词表（the/and/brand/collection/quality 等英文功能词+实词）+ 白名单三层（TECH 技术词 + BORROWED 拉丁语系惯用借词 club/resort/media/standard/concept/design/brief 等 + 语内同形词豁免 it per/pt explore）；ja/ko/ru 任何 ASCII 词均为候选（0 候选达标）；(3) dist 验证 `_verify-dist97.cjs`：30 新 locale 页 title+hero 本地化精确断言 + EN fallback hero 负断言 + fr/de/en 回归 + sitemap-0 11,164 + route-manifest（`src/i18n/generated/route-manifest.json`）13,858。
+
+③ **踩坑**：(1) 校验器 v1 `.mjs` require 报错 → 改 `.cjs`；(2) v2 collect 路径带前导点（`.meta.title`）致 TRANS 正则全未命中（**假绿**——结构与不变量全过但残留扫描空转）→ `p.replace(/^\./,'')` 修复；(3) **白名单大小写归一**：Clubs/Resorts/Per 句首大写被小写 BORROWED 集合漏掉 → 加 `t0.toLowerCase()` 双查；pt Explore（探索命令式，语内合法）从 EN_INDICATOR 移除——期间一次改错集合（explore 误加进 EN_INDICATOR 而非 BORROWED，越改越红），**改白名单前先确认目标行归属哪个集合**；(4) dist 脚本三修：`<br />` 扁平化须替换为空格（HTML 标签 strip 后无空格拼接致 hero 断言假阴）；EN 页路径为 `dist/en/`（root dist 页被 middleware shadow，无 root 文件副本）；route-manifest 权威路径是 `src/i18n/generated/route-manifest.json`（dist 根无此文件，dist/data 被 clean 删除）。工具归档 `TOOLS/i18n-merge/seo-landing-97/`（tool_instrction.md §21）。
+
+④ **回归数字**：check passed（0 issues/0 warnings）→ build 13,859 页 → dist 验证 **35/35 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + fr/de/en 回归 4 + sitemap-0 11,164 / route-manifest 13,858 无变化）。commit `待补` → CI `待补` → 线上验证 `待补`。**SeoLanding 挂账第一批清偿（6/19 locale）**；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding 余 13 locale）。
 
 
 

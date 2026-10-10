@@ -414,6 +414,19 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+## §21 seo-landing-97 — SeoLanding 正文第一批本地化（5 页 ×6 locale：es it ja ko pt ru）
+
+**背景**：SeoLanding 6 页挂账（L77 审计 (g)）第一批。**方案**：机制零接线纯数据添加——`src/data/pages/{l}/{page}.yaml` locale 缺失即构建回退 EN，本批新增 30 yaml（5 页 ×6 locale）后该 6 语页面由 EN fallback 转本地化，路由/模板/build 页数（13,859）零变化。**翻译铁则**：keys 树与 EN 完全一致（数组计数相同）/ href·variant·icon·src·stats.value 原样 / {SITE} 占位符保留 / 品牌**大写 Afarer**（SeoLanding 家族惯例，distributor-program de033517 先例，区别于 faq 家族小写）/ 技术词不译（OEM/ODM/SUP/PVC/PSI/CE/ISO/MOQ/FOB Qingdao/USD 等）/ U+2019 弯撇号 / it 含撇号串双引号 yaml。**残留扫描分语言策略**：拉丁语系（es/it/pt）本地词同为 ASCII，Unicode 边界法失效，改 EN 指示词表 + 三层白名单（TECH 技术词 / BORROWED 惯用借词 / 语内同形词 it per、pt explore）；ja/ko/ru 任何 ASCII 词均为候选。
+
+| 文件（目录）                                   | 用途                                                                                                                                                                              | 用法（仓库根）                                                     |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| `i18n-merge/seo-landing-97/_validate97.cjs`    | 30 yaml 校验：结构 deep-compare（keyTree 含数组计数）+ 不变量断言（href/variant/icon/src/value/columns ===EN）+ {SITE} 保留 + 分语言残留扫描（EN_INDICATOR/TECH/BORROWED 白名单） | `node TOOLS/i18n-merge/seo-landing-97/_validate97.cjs`             |
+| `i18n-merge/seo-landing-97/_verify-dist97.cjs` | dist walk：30 新 locale 页 title+hero 本地化 + EN fallback hero 负断言 + fr/de/en 回归 + sitemap-0 11,164 + route-manifest（src/i18n/generated/）13,858                           | build 后 `node TOOLS/i18n-merge/seo-landing-97/_verify-dist97.cjs` |
+
+**验证**：校验 ALL CLEAN（errors=0 cjkCandidates=0）→ prettier 30 yaml 全过 → check passed（0 issues）→ build 13,859 页 → dist **35/35 PASS**。**注意**：(1) 校验器 collect 路径须 strip 前导点（`.meta.title` 令 TRANS 正则全不中 → 假绿）；(2) **白名单大小写归一**——句首大写（'Clubs'/'Resorts'/'Per'）须 `toLowerCase()` 双查，改集合前先确认目标行归属（EN_INDICATOR vs BORROWED 改错越改越红）；(3) dist 断言 `<br />` 扁平化必须替换为空格（标签 strip 无空格拼接 → hero 假阴）；(4) EN 页 dist 路径是 `dist/en/`（root 页被 middleware shadow 无文件）；(5) route-manifest 权威文件在 `src/i18n/generated/route-manifest.json`（dist 根无，dist/data 被 clean 删除）；(6) 归档件双检 prettier + eslint（95 教训）。SeoLanding 余 13 locale（98：cs da nl no pl sv / 99：ar el fi ro th tr / 100：de）；挂账余 posts / v2 / solutions 正文 / guides / SeoLanding。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。
