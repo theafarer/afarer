@@ -1,0 +1,15 @@
+feat(i18n): localize faq body for ar/el/fi/ro/th/tr (shard 96, third batch)
+
+- 53 Q&A translated per locale; technical terms (SUP/PVC/Hypalon/PSI/CE/MOQ/
+  OEM/FOB/AQL etc.) kept, imperial values preserved with localized unit words,
+  brand lowercased to "afarer" in running text
+- per-locale conventions: percent sign spaced in fi (90 %) vs prefixed in tr
+  (%90) vs attached elsewhere (90%), decimal commas except th point (2.2/1.5),
+  question marks ar ؟ / el ; / others ?, honorifics (MSA formal / el informal
+  εσύ / fi sinä / ro dumneavoastră / th คุณ / tr siz), script mutual-exclusion
+  plus diacritics checks in validator, ro "are" (= has) allowlisted as true
+  Romanian word
+- new src/data/faq-{ar,el,fi,ro,th,tr}.yaml + thin wrappers faq.{l}.ts
+- localized-data.ts: faqsByLang record map extended to 21 locales
+- drafts/merger/validator/generator/dist-walker/live-verifier/ci-poller archived
+  under TOOLS/i18n-merge/faq-body-96/ (tool_instrction.md section 20); TECH.md L86

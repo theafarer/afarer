@@ -1001,6 +1001,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：check 0 errors → build 13,859 页 → dist 验证 **18/18 PASS**（6 locale ×53 q+a 渲染 + 53 items + FAQPage JsonLd + §18 六语 yaml ×53 + de/fr yaml ×53 + EN ×2（/en/faq 与根 /faq）+ sitemap-0 11,164 / route-manifest 13,858 无变化）。commit `24cc6b7` **首推 CI 双红**（新失败模式：CI eslint **覆盖 TOOLS/ 归档 .mjs**——`_live-verify95.mjs` 未用 import `join` 触 no-unused-vars；94 教训只盯了 prettier，本批证明 eslint 也扫归档件，归档前应过 `npx eslint <文件>`）→ fix commit `8141730` 复推 **CI 双绿** 37947790670（CI）/37947790527（Build & Deploy）→ 线上验证 **17/17 PASS**（6 locale ×53 q+a + JsonLd + B2B/PSI 抽查（b2b-payment/b2b-quality-control/sup-inflate-pressure）×6 + de/fr/es yaml ×53 + EN ×2）。faq 挂账余 96 一批 6 locale（ar el fi ro th tr）；总挂账仍 6 项（posts / v2 / solutions 正文 / guides / SeoLanding / faq）。
 
+## L86. 分片 96：faq 正文第三批本地化（收尾）——53 Q&A ×6 locale（ar el fi ro th tr）（2026-10）
+
+① **范围决策**：faq 页 53 Q&A 数据集正文本地化第三批收尾（挂账 3 批：94/95/96 之三）。机制完全沿 94/95——`src/data/faq-{l}.yaml` + 薄 wrapper `faq.{l}.ts`；`faqsByLang` Record map 由 15 键扩至 **21 键**（+ar el fi ro th tr），`[lang]/faq.astro` 零改动。**faq 挂账至此收口**（21 locale 全量）；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding）。
+
+② **实施**：(1) 6 locale 手翻底稿 `_faq-{l}-{p1,p2}.json`（{id, q, a}，53 条两段写盘；**th p2 因 Write 截断再拆 p2a/p2b 三段**）→ `_merge96.cjs` 合并（幂等校验条数 53 + **id 序参照改用 EN 底稿 `_faq-en.json`**——95 用 da 底稿为参照的方案在 96 语种间无公共参照系，EN 为唯一公共源；th 读 p1+p2a+p2b 三段）；(2) `_validate96.cjs` 校验：53 条计数 / id 序列=EN / q/a 非空≠EN / 英文残留 Unicode 边界（**全 6 语无 ALLOW 借词**，board/paddle/water 全译）+ Red Paddle Co 豁免（`(?<!Red )paddle(?! Co)`）/ **问号语种分化**（ar `؟` 结尾且不得混 ASCII ?；el `;` 希腊式结尾；fi/ro/th/tr `?`）/ **百分号正字法**（fi `90 %` 带空格、tr `%90` 前缀、ar/el/ro/th `90%` 连写）/ **小数语种分化**（ar/el/fi/ro/tr 逗号 2,2、th 用点 2.2；b2b-quality-control 1,5/1.5 同）/ **脚本互斥**（ar 含阿拉伯字符、el 含希腊、th 含泰文；任一语不得混入他语文字/CJK/Hangul/Cyrillic）/ 变音符存在性（fi äö、ro ăâîșț、tr ğışöüç）/ mph·PSI·AQL·ISO 2859·15°C·FOB Qingdao×3（b2b-shipping/sup-oem-process/b2b-lead-time）·%80 负载上限·%30/%70 付款锚点 / 英制单位词已本地化（不残留 lbs/pounds/inches/feet）/ 品牌句中小写 afarer ×31/locale；(3) 翻译铁则沿 94/95 + **96 语种敬称**（ar MSA 正式 / el 非正式 εσύ / fi sinä / ro dumneavoastră 正式 / th คุณ / tr siz）+ 用词表（board：ar لوح/el σανίδα/fi lauta/ro placă/th กระดาน/tr tahta；paddle：ar مجداف/el κουπί/fi mela/ro vâslă/th คานพาย/tr kürek；wetsuit/drysuit 全 6 语本地化；leash 全 6 语保留 EN；lbs/pounds→ar باوند/el λίμπρες/fi paunaa/ro livre/th ปอนด์/tr pound；el yoga→γιόγκα、logistics→εφοδιαστική；fi private label→oman merkin）；(4) `_gen96.cjs` 生成 6 yaml + 6 wrapper（faqsAr/El/Fi/Ro/Th/Tr），js-yaml round-trip 自校验，prettier --write（仅 tr yaml 有格式变更）。
+
+③ **踩坑**：(1) **th p2（~15KB）Write 单写被截断**（"JSON Parse error: Unterminated string"）——实测本批临界值比 95 更低，p2 拆 p2a/p2b 各 13 条后单写成功，`_merge96.cjs` 为 th 配三段合并；(2) **ro "are" 英文残留假阳性**——罗马尼亚语动词 a avea 第三人称单数（= has）与英文 are 同形，`sup-volume-weight`/`airline-travel-sup` 两处误报，按 95 借词白名单先例 ALLOW ro:['are']；(3) **Temp `_faq-en.json` 与 95 归档版内容相同但未过 prettier**（94 时期的 stringify 格式），归档 prettier --check 报红——fc 字节比对 + node deep-compare 确认 53 条 JSON.stringify 全等后，用 95 归档的 prettier 格式版覆盖 96 归档件与 Temp 副本；(4) 校验器初版误留残片行（`safe()` 未定义调用），写盘后自查清除。工具归档 `TOOLS/i18n-merge/faq-body-96/`（tool_instrction.md §20）。
+
+④ **回归数字**：（待 CI 与线上验证后 docs commit 补）
+
 
 
 ---

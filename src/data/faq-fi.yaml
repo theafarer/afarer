@@ -1,0 +1,398 @@
+- id: sup-learning
+  question: 'Onko SUP:n opettelu vaikeaa?'
+  answer: 'Ei lainkaan. Useimmat aloittelijat onnistuvat nousemaan seisomaan ja soutamaan ensimmäisellä kerrallaan. afarerin All-Around-sarja tarjoaa erittäin vakaat, leveät alustat, jotka on suunniteltu erityisesti ensikertalaisille. Aloita rauhallisessa vedessä, niin pärjäät muutamassa minuutissa.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - beginner-guide
+- id: ocean-use
+  question: 'Voinko käyttää lautaa merellä?'
+  answer: 'Voit. afarerin SUP-laudat on valmistettu meri-, järvi- ja jokikäyttöön. Touring-sarja kestää rannikon aallokkoa, ja kaikissa laudoissa käytetään merenkulun laatuista PVC:tä, joka kestää suolaveden syövytystä. Huuhdo makealla vedellä merikäytön jälkeen.'
+  category: general
+  relatedProducts: []
+  relatedGuides:
+    - weather-conditions
+- id: inflation-time
+  question: 'Kauanko täyttö vie aikaa?'
+  answer: 'Mukana toimitettavalla kaksitoimisella pumpulla useimmat laudat täyttyvät 12–15 PSI:in alle 5 minuutissa. Tarjoamamme sähköpumppu lyhentää ajan alle 2 minuuttiin. Tyhjennys ja pakkaaminen vie noin 3 minuuttia.'
+  category: product
+  relatedProducts: []
+  relatedGuides:
+    - sup-maintenance
+- id: travel-sup
+  question: 'Voinko matkustaa täytettävällä SUP-laudalla?'
+  answer: 'Totta kai. Jokainen afarer-lauta pakataan lentoyhtiöiden matkatavaravaatimukset täyttävään reputolkkuun. Vain 18–22 paunaa painavana se on helppo viedä rannalle, järvelle tai läpi lentokenttien.'
+  category: general
+  relatedProducts: []
+  relatedGuides: []
+- id: weight-limit
+  question: 'Mikä on painoraja?'
+  answer: 'All-Around SUP -lautamme kestävät jopa 220 paunaa. Touring- ja Yoga-sarjat kestävät jopa 250 paunaa. Kahden hengen käyttöön tai raskaampiin kuormiin ota yhteyttä tiimiimme suositusten saamiseksi.'
+  category: product
+  relatedProducts: []
+  relatedGuides:
+    - understanding-specs
+- id: box-contents
+  question: 'Mitä paketissa on?'
+  answer: 'Jokainen afarer SUP sisältää laudan, matkustusrepun, kaksitoimisen käsipumpun, irrotettavan evän, kierreleashin ja korjaussarjan. Joissain malleissa on myös mahdollisuus hiilikuitumelan päivitykseen.'
+  category: product
+  relatedProducts: []
+  relatedGuides: []
+- id: bundle-deals
+  question: 'Tarjoatteko pakettitarjouksia?'
+  answer: 'Kyllä. Tarjoamme koostettuja paketteja, jotka säästävät rahaa verrattuna tuotteiden ostamiseen erikseen. Ota yhteyttä myyntitiimiimme saadaksesi ajantasaiset pakettitarjoukset ja volyymialennushinnat.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: pfd-requirement
+  question: 'Tarvitsenko pelastusliivit SUP-laudalla?'
+  answer: 'Kyllä. Monissa maissa pelastusliivit ovat laillisesti pakolliset kaikilla vesillä kulkevilla, SUP mukaan lukien. Vaikka niitä ei vaadittaisi, CE-sertifioitu pelastusliivi on välttämätön turvallisuusvaruste. Suosittelemme pitämään sitä yllä koko ajan vedessä.'
+  category: safety
+  relatedProducts:
+    - life-vest-classic
+    - life-vest-pro
+  relatedGuides:
+    - safety-tips
+- id: boat-registration
+  question: 'Pitääkö SUP-lautani rekisteröidä?'
+  answer: 'Vaatimukset vaihtelevat maittain. Useimmilla alueilla moottorittomat SUP-laudat eivät vaadi rekisteröintiä. Jos aiot lisätä moottorin, tarkista paikalliselta meriviranomaiselta tarkat säännöt. Virkistyskäytön laudat ovat yleensä vapautettuja veneiden rekisteröinnistä.'
+  category: general
+  relatedProducts: []
+  relatedGuides: []
+- id: puncture-repair
+  question: 'Miten korjaan reiän?'
+  answer: 'Puhdista alue, leikkaa paikka pyöristetyin kulmin, levitä PVC-liimaa, paina lujasti ja odota 24 tuntia ennen täyttöä. afarer-laudat toimitetaan korjaussarjan kanssa. Yksityiskohtaiset ohjeet löydät täytettävien lautien korjausoppaastamme.'
+  category: maintenance
+  relatedProducts: []
+  relatedGuides:
+    - inflatable-repair
+    - sup-maintenance
+- id: storage
+  question: 'Miten minun pitäisi säilyttää täytettävä SUP-lautani?'
+  answer: 'Huuhdo makealla vedellä, kuivaa täysin, tyhjennä kokonaan, rullaa löyhästi keulasta alkaen ja säilytä kantopussissa viileässä, kuivassa paikassa suorasta auringonvalosta erillään. Älä koskaan säilytä märkänä tai äärimmäisissä lämpötiloissa.'
+  category: maintenance
+  relatedProducts: []
+  relatedGuides:
+    - sup-maintenance
+- id: sup-vs-hard
+  question: 'Täytettävä vai kova SUP-lauta?'
+  answer: 'Täytettävät laudat tarjoavat kannettavuuden, helpon säilytyksen ja iskunvaimennuksen. Kovat laudat tarjoavat maksimaalisen jäykkyyden ja nopeuden. Useimmille virkistyskäyttäjille laadukas drop-stitch-ytimellä varustettu täytettävä on käytännöllisin valinta.'
+  category: general
+  relatedProducts: []
+  relatedGuides:
+    - inflatable-vs-hard
+    - how-to-choose-your-sup
+- id: wind-safety
+  question: 'Mikä tuulennopeus on liikaa SUP:lle?'
+  answer: 'Aloittelijat: yli 10 mph (8 solmua). Keskiverto: yli 15 mph (13 solmua). Edistyneet: yli 20 mph (17 solmua). Jos olet epävarma, älä mene veteen. Maasta mereen puhaltava tuuli on vaarallinen kaikilla taitotasoilla.'
+  category: safety
+  relatedProducts: []
+  relatedGuides:
+    - weather-conditions
+    - safety-tips
+- id: warranty
+  question: 'Mikä on afarerin takuu?'
+  answer: 'Kaikki afarer-tuotteet kuuluvat kattavan valmistajan takuun piiriin. SUP-laudat on katettu 2+ vuodeksi valmistusvirheiltä. Takuu kattaa materiaali- ja valmistusvirheet normaalissa käytössä.'
+  category: warranty
+  relatedProducts: []
+  relatedGuides: []
+- id: warranty-claim
+  question: 'Miten teen takuuvaatimuksen?'
+  answer: 'Tee vaatimus ottamalla yhteyttä tukitiimiimme ja ilmoittamalla tilausnumerosi, kuvat ongelmasta sekä lyhyt kuvaus. Useimmat vaatimukset käsitellään 2 arkipäivässä. Hyväksytyt vaatimukset saavat korvauksen tai korjausohjeet muutamassa päivässä.'
+  category: warranty
+  relatedProducts: []
+  relatedGuides: []
+- id: shipping-info
+  question: 'Kauanko toimitus vie?'
+  answer: 'Varastossa olevat tilaukset lähetetään 2–4 arkipäivässä. Yhdysvaltain sisäiset tilaukset toimitetaan 5–10 arkipäivässä. Kansainväliset tilaukset toimitetaan 10–15 arkipäivässä kohteesta riippuen. Kiireelliset tilaukset voidaan nopeuttaa.'
+  category: shipping
+  relatedProducts: []
+  relatedGuides: []
+- id: return-policy
+  question: 'Mikä on palautuskäytäntönne?'
+  answer: 'Hyväksymme palautukset 30 päivän kuluessa toimituksesta käyttämättöminä alkuperäisessä pakkauksessa. Räätälöidyt/OEM-tilaukset eivät ole palautettavissa. Ota yhteyttä tukitiimiimme aloittaaksesi palautuksen — toimitamme ennalta maksetun lähetystarran.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: oem-odm
+  question: 'Tarjoatteko OEM/ODM-palveluita?'
+  answer: 'Kyllä. Tarjoamme oman merkin ja räätälöidyn suunnittelun palveluita yrityksille. Oman logon lisäämisestä olemassa oleviin malleihin täysin räätälöityihin runkomuotoihin insinööritiimimme voi kehittää tuotteita sinun merkilläsi. Vähimmäistilausmäärät pätevät.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: paddle-length
+  question: 'Mittainen melä minun pitää olla?'
+  answer: 'Melan pitäisi olla 6–8 tuumaa pidempi kuin pituutesi. Säädettävät melat mahdollistavat hienosäädön eri olosuhteisiin. Katso tarkat koot melaoppaastamme.'
+  category: product
+  relatedProducts: []
+  relatedGuides:
+    - choosing-paddle
+- id: material-difference
+  question: 'Mikä on PVC:n ja Hypalonin ero?'
+  answer: 'PVC on kevyttä, edullista ja helppo korjata mukana toimitettavalla korjaussarjalla. UV-kestävällä pinnoitteella varustettu sotilasluokan PVC tarjoaa parhaan kestävyys- ja painotasapainon virkistyskäyttöön. afarer käyttää kolmikerroksista pinnoitettua PVC:tä kaikissa tuotekategorioissa.'
+  category: product
+  relatedProducts: []
+  relatedGuides: []
+- id: sup-width-stability
+  question: 'Mikä SUP-laudan leveys on paras vakauteen?'
+  answer: 'Aloittelijoille 33–34 tuuman leveys tarjoaa parhaan yhdistelmän vakautta ja melomisen helppoutta. Alle 32 tuuman leveät laudat voivat tuntua epävakaalta uusilta melojilta. 33 tuuman leveä afarer SUP Explorer 11 on ihanteellinen opetteluun.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - sup-size-guide
+    - paddle-board-size-guide
+- id: sup-volume-weight
+  question: 'Miten valitsen SUP-tilavuuden painoni perusteella?'
+  answer: 'Kerro painosi kiloina luvulla 2,2 saadaksesi aloittelijaystävällisen tavoitetilavuuden. Esimerkiksi 75 kg:n meloja tarvitsee vähintään 165 litraa, mutta 220–260 litraa on paljon vakaampaa opettelussa. SUP Explorer 11 tarjoaa 260 litraa ja sopii jopa 100 kg:n ajajille.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - sup-size-guide
+    - paddle-board-size-guide
+- id: afarer-vs-others
+  question: 'Miten afarer vertautuu muihin merkkeihin?'
+  answer: 'afarer tarjoaa parhaan vastineen täytettävien vesilajien varusteiden markkinassa. Red Paddle Co:hon verrattuna afarer tarjoaa 90 % suorituskyvystä 60 % hinnalla. iRockeriin verrattuna afarer käyttää laadukkaampaa kolmikerroksista sotilasluokan PVC:tä ja korkeampia PSI-arvoja. Bluefiniin verrattuna afarer tarjoaa paremmat materiaalispesifikaatiot. Useimmille virkistysmelojille afarer tarjoaa parhaan laatu-hinta-suhteen.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+    - sup-touring-cruiser
+  relatedGuides:
+    - best-surf-gear-brands-compared
+    - afarer-vs-red-paddle
+    - afarer-vs-irocker
+    - afarer-vs-bluefin
+- id: fishing-sup-setup
+  question: 'Voinko kalastaa SUP-laudalta?'
+  answer: 'Voit. SUP-kalastus on yhä suositumpaa, koska seisoma-asento antaa erinomaisen näkyvyyden veteen. Valitse vähintään 11 jalkaa pitkä ja 33–34 tuumaa leveä lauta vakauden takia. Kiinnitä vavatelineillä varustettu laatikko kannen elastisiin kiinnitysnauhoihin, lisää pieni ankkuri ja pidä aina pelastusliivit yllä. afarer SUP Explorer 11 sopii hyvin rentoon kalastukseen.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - fishing-sup-guide
+    - sup-anchor-guide
+- id: sup-yoga
+  question: 'Voinko tehdä joogaa SUP-laudalla?'
+  answer: 'Totta kai. SUP-jooga yhdistää perinteiset asennot kelluvan alustan haasteeseen ja aktivoi syvemmät tukilihakset. Käytä 33 tuumaa tai leveämpää lautaa pehmeällä, liukuestetyllä kannella. Harjoittele rauhallisessa, matalassa vedessä ankkurin kanssa. Aloita perusasennoista kuten alaspäin katsovasta koirasta, soturiasento II:sta ja puuasennosta. Täyden EVA-kannan omaava SUP Explorer 11 on ihanteellinen.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - yoga-sup-guide
+- id: airline-travel-sup
+  question: 'Mitä sääntöjä lentoyhtiöillä on täytettävän SUP-laudan matkustamisesta?'
+  answer: 'Useimmat lentoyhtiöt hyväksyvät SUP-reput ylikokoisina matkatavaroina, jos ne ovat alle 23–32 kg. afarerin repun mitat ovat noin 90x40x30 cm ja paino noin 15 kg pakattuna. Jotkin lentoyhtiöt voivat periä lisämaksun suurista matkatavaroista. Saavu ajoissa, pakkaa evä ja pumppu erikseen käsimatkatavaroihin ja merkitse repku särkyväksi. Tutki aina lentoyhtiösi urheiluvälinesäännöt ennen lentoa.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - sup-travel-guide
+- id: cold-weather-safety
+  question: 'Mitä turvavarusteita tarvitsen kylmässä vedessä melomiseen?'
+  answer: 'Alle 15°C vesi vaatii lämpösuojan. 8–14°C:n veteen käytä märkäpukua tai kuivapukua saappailla, käsineillä ja hupulla. 14–20°C:n veteen 3/2mm märkäpuku riittää. Pidä aina oikein istuva pelastusliivi, joka tarjoaa lämpösuojaa ja turvaa. Tarkista paikalliset määräykset pakollisista varusteista.'
+  category: product
+  relatedProducts:
+    - life-vest-pro
+  relatedGuides:
+    - sup-safety-guide
+- id: oem-odm-details
+  question: 'Mitkä ovat OEM/ODM-vähimmäistilausmäärät?'
+  answer: 'Vähimmäistilausmäärät (MOQ) vaihtelevat tuotetyypin ja monimutkaisuuden mukaan. Oman logon lisääminen olemassa oleviin malleihin vaatii tyypillisesti 5–10 yksikköä. Täysin räätälöidyt runkomuodot vaativat korkeammat MOQ:t. Ota yhteyttä myyntitiimiimme tarpeidesi kanssa saadaksesi yksityiskohtaisen tarjouksen. Käsittelemme kaiken räätälöidyistä väreistä ja logoista täysin uusiin muotisuunnitteluihin.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: oem-custom-branding
+  question: 'Voinko saada oman logoni afarer-tuotteisiin?'
+  answer: 'Voit. OEM-palvelumme sisältää räätälöidyn logon sijoittelun, räätälöidyt väriskaalat ja räätälöidyn pakkauksen. Tarjoamme pad-silkkipaino-, lämmönsiirto- ja brodeerivaihtoehtoja tuotetyypistä riippuen. Lähetä grafiikkatiedostosi ja erittelysi myyntitiimillemme tarjousta ja toimitusaika-arviota varten.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: sup-inflate-pressure
+  question: 'Moneen PSI:n minun pitäisi täyttää SUP-lautani?'
+  answer: 'Täytä laudan nimelliseen enimmäis-PSI:in parhaan suorituskyvyn saamiseksi — tyypillisesti 15–18 PSI laadukkaille täytettäville SUP-lautoille. afarer SUP Explorer 11 toimii parhaiten 15–18 PSI:ssa. Riittämätön täyttö tekee laudasta pehmeän ja epävakaan kulkea. Ylitäyttö enimmäisarvon yli voi vahingoittaa drop-stitch-kuituja. Tarkista venttiilin lähellä olevasta tarrasta lautasi arvo.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+    - sup-touring-cruiser
+  relatedGuides:
+    - how-to-choose-inflatable-sup
+    - sup-pump-guide
+- id: sup-deck-pad-care
+  question: 'Miten puhdistan ja huollan EVA-kantta?'
+  answer: 'Huuhdo kansi makealla vedellä jokaisen kerran jälkeen. Likaa tai tahroja varten käytä mietoa saippuaa ja pehmeää harjaa — vältä aggressiivisia kemikaaleja. Jos reunat alkavat irrota, levitä vähän vesitiivistä meriliimaa ja paino alle 24 tunniksi. Pidä lauta poissa suorasta UV-valosta, kun et käytä sitä, jotta kansi ei heikkene.'
+  category: maintenance
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - inflatable-sup-maintenance
+- id: sup-seated-paddling
+  question: 'Voinko soutaa SUP-lautaa istuen?'
+  answer: 'Voit. Monissa SUP-lautoissa, afarer Explorer 11 mukaan lukien, on D-renkaat istuimen kiinnittämiseen. Istuva melominen tarjoaa mukavan vaihtoehdon pidemmillä matkoilla, kalastuksessa tai kun haluat vaihtaa asentoa vedessä.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides: []
+- id: saltwater-rinse
+  question: 'Pitääkö täytettävä lautani huuhdella merikäytön jälkeen?'
+  answer: 'Kyllä — huuhdo aina lauta, evät, pumppu ja mela makealla vedellä suolaveden käytön jälkeen. Suolakiteet tunkeutuvat saumiin ja venttiileihin aiheuttaen mikrovuotoja ja syövytystä. Kuivaa lauta varjossa ennen tyhjennystä ja säilytystä. Säännöllinen huuhtelu pidentää merkittävästi täytettävän laudan käyttöikää.'
+  category: maintenance
+  relatedProducts: []
+  relatedGuides:
+    - inflatable-sup-maintenance
+- id: sup-leash-necessity
+  question: 'Tarvitsenko todella leashin SUP:hen?'
+  answer: 'Kyllä — pidä aina leash. Kierreleash kiinnittyy nilkkaasi tai pohkeeseesi ja pitää laudan luonasi, jos putoat. Avoimessa vedessä leash voi pelastaa henkesi estämällä eron pelastusvälineestä. Jokimelontaan käytä pikairrotusleashia takertumisen välttämiseksi.'
+  category: safety
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - sup-safety-guide
+    - sup-leash-guide
+- id: drop-stitch-technology
+  question: 'Mikä drop-stitch-ytimen teknologia on ja miksi sillä on väliä?'
+  answer: 'Drop-stitch-ydinteknologia käyttää tuhansia polyesterikuituja, jotka yhdistävät laudan ylä- ja alakerroksen. Kun lauta täytetään 15-20 PSI:iin, nämä kuidut luovat jäykän, vääntöä kestävän rakenteen, joka toimii kuin kovakuorinen lauta. afarer käyttää kolmikerroksista sotilasluokan PVC:tä ja drop-stitch-laminaattia kaikissa SUP-tuotekategorioissa tarjoten epoxy-lautaa vastaavan jäykkyyden säilyttäen täytettävän kannettavuuden.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+    - sup-flowing-lotus
+  relatedGuides:
+    - how-to-choose-inflatable-sup
+- id: sup-inflatable-vs-rigid
+  question: 'Täytettävä vai kova SUP: kumpi sopii mihinkin käyttöön?'
+  answer: 'Täytettävät SUP-laudat ovat parhaitaan kannettavuudessa, säilytyksessä ja iskunvaimennuksessa — ihanteellisia matkustamiseen, aloittelijoille ja virkistyskäyttöön. Kovat epoxy-laudat tarjoavat maksiminopeuden ja liukuvuuden kilpailuihin ja surffaukseen. 90 % melojista laadukas drop-stitch-ytimellä varustettu täytettävä (15-20 PSI) antaa riittävän jäykkyyden retkeilyyn, kuntoiluun, joogaan ja kalastukseen. afarerin täytettävät laudat vastaavat keskiluokan kovien lautien suorituskykyä ja pakkaantuvat reppuun.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+  relatedGuides:
+    - inflatable-sup-vs-hard-board
+    - how-to-choose-inflatable-sup
+- id: pvc-vs-hypalon-boats
+  question: 'PVC- vai Hypalon-täytettävät veneet: kumpi materiaali on parempi?'
+  answer: 'PVC on kevyempää, edullisempaa ja helpommin korjattavaa, ja sotilasluokan koostumuksina se vastustaa UV-hajoamista. Hypalon (CSM) tarjoaa paremman kemiallisen ja hankauskestävyyden kaupalliseen ja sotilaskäyttöön, mutta on raskaampaa, kalliimpaa ja vaikeammin korjattavaa. Virkistyskäyttäjille afarerin kolmikerroksinen, UV-kestävällä pinnoitteella varustettu sotilasluokan PVC tarjoaa parhaan painon, kestävyyden ja hinnan tasapainon. Ammatti- ja kaupalliskäyttäjille, jotka vaativat maksimikestävyyttä, suositellaan Hypalonia.'
+  category: product
+  relatedProducts: []
+  relatedGuides:
+    - pvc-vs-hypalon-boats
+    - how-long-inflatable-boats-last
+- id: sup-skill-progression
+  question: 'Mikä on tyypillinen SUP-taitojen eteneminen aloittelijasta edistyneeksi?'
+  answer: 'Aloittelija (kerta 1-3): seisoma-asento, perus etumelaveto, käännökset, turvallinen putoaminen. Keskiverto (kerta 5-15): tehokas melatekniikka, kääntömelonta, aallokossa melominen, peruspelastustaidot. Edistynyt (20+ kertaa): kilpailulähdöt, poijukäännökset, pienessä aallokossa surffaaminen, myötätuulimelonta. Ammattilainen: kilpailutoiminta, SUP-surffaus, pitkien matkojen retkeily. afarer-laudat tukevat jokaista vaihetta: Explorer 11 aloittelijoille, Ocean Voyager retkeilyyn ja Cheetah Surge suorituskykymelontaan.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+    - sup-cheetah-surge
+  relatedGuides:
+    - beginner-sup-guide
+    - sup-fitness-workout
+    - sup-paddle-guide
+- id: sup-weight-capacity
+  question: 'Kuinka paljon painoa täytettävä SUP-lauta kestää?'
+  answer: 'Painokapasiteetti vaihtelee tilavuuden mukaan. afarer-laudat: SUP Explorer 11 (260L, jopa 100 kg / 220 paunaa), Ocean Voyager 12 (310L, jopa 140 kg / 308 paunaa), Leviathan Wake (350L, jopa 180 kg / 396 paunaa). Parhaan suorituskyvyn saamiseksi pidä kokonaiskuorma (ajaja + varusteet) enintään 80 % maksimikapasiteetista. Lauta kelluu korkeammalla ja pitää kurssia paremmin, kun sitä ei ylikuormiteta, erityisesti aallokossa.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+    - sup-leviathan-wake
+  relatedGuides:
+    - sup-size-guide
+    - paddle-board-size-guide
+- id: sup-oem-process
+  question: 'Mikä on OEM-valmistusprosessi oman merkin täytettäville SUP-lautoille?'
+  answer: 'OEM-prosessi: 1) Erittely ja suunnittelukatsaus — jaa kohdespesifikaatiosi, CAD-piirrokset tai referenssituote. 2) 3D-muotityö — räätälöidyt alumiini- ja komposiittimuotit suunnitellaan sisäisesti. 3) Materiaalivalinta ja näyte — sotilasluokan PVC tai Hypalon räätälöidyillä väreillä ja logon sijoittelulla. 4) CE-tehdastarkastus ja vaatimustenmukaisuus — jokainen tilaus sisältää CE-vaatimustenmukaisuusvakuutuksen, ISO 9001 -jäljitettävyyden ja BSCI-raportin. 5) Massatuotanto 100 pisteen QC-tarkistuslistalla. 6) FOB Qingdao -toimitus täydellisellä vientiasiakirjastolla. Toimitusaika 30-45 päivää, MOQ 50 yksikköä (tyypillinen SUP).'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: sup-inflatable-durability
+  question: 'Kauan täytettävät SUP-laudat kestävät asianmukaisella hoidolla?'
+  answer: 'Asianmukaisella hoidolla laadukas täytettävä SUP-lauta kestää 5-10 vuotta normaalia virkistyskäyttöä. Kolmikerroksinen, UV-kestävä sotilasluokan PVC — kuten kaikissa afarer-lautoissa — vastustaa aurinkovaurioita, suolasyövytystä ja kulumista. Keskeiset pitkäikäisyystekijät: huuhdo makealla vedellä jokaisen käytön jälkeen, kuivaa täysin ennen säilytystä, pidä poissa suorasta auringosta käytön ulkopuolella, säilytä osittain täytettynä viileässä kuivassa paikassa ja vältä raahaamista karkeilla pinnoilla. Drop-stitch-kuidut ja saumat ovat yleensä ensimmäinen vikakohta, ei PVC-kangas.'
+  category: maintenance
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+  relatedGuides:
+    - inflatable-sup-maintenance
+    - inflatable-sup-storage
+    - inflatable-sup-repair
+- id: sup-choppy-water
+  question: 'Miten melon SUP:lla aallokossa tai tuulessa?'
+  answer: 'Aallokossa: taivuta polvia, pidä leveämpi asento, lyhennä melavetoja ja aktivoi keskivartalosi tasapainoon. Vastatuulessa: käytä matalampaa melakulmaa, ota lyhyempiä vetoja ja kallistu eteenpäin. Sivutuulessa: melo tuulen tulosuunnan puolelta korjataksesi ajautumista. Myötätuulessa: surffaa aalloista nopeutta. Aloittelijoiden tulisi välttää yli 10 mph:n tuulia ja valita leveämpiä, pidempiä lautoja vakauteen. afarerin retkeily-SUP Ocean Voyager on suunniteltu kestämään kohtalaista aallokkoa ja tuulta.'
+  category: safety
+  relatedProducts:
+    - sup-ocean-voyager
+    - sup-explorer-11
+  relatedGuides:
+    - weather-conditions
+    - sup-safety-guide
+    - wind-conditions-sup
+- id: sup-sustainability
+  question: 'Ovatko täytettävät SUP-laudat ympäristöystävällisiä?'
+  answer: 'Täytettävien SUP-lautojen ympäristövaikutus on pienempi kuin kovien lautien monella tavalla: ne kuluttavat vähemmän raaka-aineita valmistuksessa, kevyempi paino pienentää kuljetuspäästöjä ja niiden kestävyys tarkoittaa vähemmän vaihdoksia ajan myötä. afarer-lautojen PVC on lyijytöntä ja REACH-yhteensopivaa. Keskeiset kestävät käytännöt: osta laadukas lauta, joka kestää 5-10 vuotta, korjaa reiät vaihtamisen sijaan, kierrätä lauta elinkaaren lopussa erikoistuneiden PVC-kierrätysohjelmien kautta ja vältä kertakäyttöpakkauksia valitsemalla merkit, jotka käyttävät uudelleenkäytettäviä kuljetuspusseja.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides: []
+- id: b2b-moq
+  question: 'Mikä on OEM/ODM SUP -valmistuksen vähimmäistilausmäärä?'
+  answer: 'Vähimmäistilausmäärät (MOQ) vaihtelevat tuotetyypin mukaan. Oman logon lisääminen valmistuotteisiin: 50 yksikköä per SKU. Räätälöidyn muodon muotikehitys: 200–500 yksikköä per malli (ensitilaus). Yhteismuotiohjelmat 50 yksiköstä alkaen. Hypalon-veneiden valmistus: 20–50 yksikköä koon mukaan. Tarvikkeet ja pelastusliivit: 500–1000 yksikköä per malli. Ota yhteyttä OEM-tiimiin arvioidun volyymisi kanssa tarkkoja MOQ- ja hintatietoja varten.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-lead-time
+  question: 'Mitkä ovat tyypilliset toimitusajat OEM SUP -tilauksille?'
+  answer: 'Ensitilaukset, oma logo olemassa oleviin muotteihin: 6–8 viikkoa ennakosta FOB Qingdaoon. Räätälöidyt muodot uusilla muoteilla: 12–20 viikkoa (sisältää 3D-suunnittelun, muotin valmistuksen, näytteenotto ja massatuotannon). Toistuvat tilaukset hyväksytyillä spesifikaatioilla: 6–8 viikkoa. Kiireelliset tilaukset voidaan nopeuttaa 4–5 viikkoon olemassa olevilla muoteilla. Ajat sisältävät raaka-aineiden hankinnan, tuotannon, tuotantolinjan QC:n ja konttien lastauksen.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-certification
+  question: 'Mitä sertifiointeja afarerin OEM-tuotteet kantavat?'
+  answer: 'Kaikki afarerin OEM/ODM-tuotteet kantavat: CE-vaatimustenmukaisuusvakuutuksen (EU-markkinat), UKCA:n (Yhdistyneen kuningaskunnan markkinat), ISO 9001:2015-laatujärjestelmän, BSCI-sosiaalisen vastuun tarkistuksen, REACH- ja RoHS-materiaalivaatimustenmukaisuuden sekä EN ISO 25649 -luokituksen täytettäville veneille. Lisäsertifioinnit pyynnöstä: US Coast Guard -vaatimustenmukaisuusasiakirjat, sotilasstandarditestit (MIL-STD-810) ja kohdemaan tuontisertifiointituki.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-samples
+  question: 'Voinko tilata näytteitä ennen sitoutumista massatuotantoon?'
+  answer: 'Voit. Näytetilaukset ovat saatavilla kaikkiin OEM/ODM-projekteihin. Ennen tuotantoa tehtävät näytteet (PPS) valmistetaan muotin valmistuksen jälkeen ja ennen massatuotantoa. Näytteen toimitusaika: 15–25 arkipäivää olemassa olevilla muoteilla, 25–40 arkipäivää räätälöidyillä muoteilla. Näytekustannus hyvitetään ensimmäisestä massatilauksesta. Näytteet toimitetaan pikatoimituksella (DHL, FedEx, UPS) täydellisellä seurannalla ja saapuvat yleensä 3–5 arkipäivässä.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-payment
+  question: 'Mitkä maksuehdot ovat käytettävissä OEM-tilauksissa?'
+  answer: 'Tyypilliset maksuehdot: 30 % ennakko allekirjoitetun PI:n (proformalasku) kanssa, 70 % saldo ennen toimitusta B/L-kopiota (konossementti) vastaan. Uusille kumppaneille: 50 % ennakko, 50 % ennen toimitusta. Vakiintuneille kumppaneille tilaushistorian kanssa: L/C nähtyyn maksuun tai 30 päivän luotto valikoiduille tileille (luottotarkistuksen jälkeen). Maksutavat: T/T-tilisiirto, L/C (akreditiivi), Western Union. Kaikki maksut USD:ssä tai EUR:ssa.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-ip-protection
+  question: 'Miten afarer suojaa immateriaalioikeuksiani ja suunnitelmiani?'
+  answer: 'IP-suojaus on keskeinen osa OEM-palveluamme. Allekirjoitamme NDA:n ennen kaikkia suunnittelukeskusteluja. Suunnittelutiedostoja hallitaan eristetyillä työasemilla pääsylokilla. Kaikki työkalut ja muotit pysyvät yksinomaisena omaisuutenasi (sinun maksaminasi). Emme koskaan käytä muottejasi tai suunnitelmiasi muiden asiakkaiden hyväksi. Muotien varastointi ja ylläpito sisältyvät aktiivisille tileille. Sopimuksen päättyessä muotit joko toimitetaan sinulle tai tuhotaan videodokumentoidusti. Kunnioitamme kaikkia tavaramerkki- ja patenttioikeuksia.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-shipping
+  question: 'Mitkä toimitus- ja logistiikkavaihtoehdot ovat käytettävissä?'
+  answer: 'FOB Qingdao (tyypillinen): rahti lastataan Qingdaon satamassa; sinä järjestät kuljetuksen siitä eteenpäin. CIF (nimetty satama): järjestämme ja vakuutamme lähetyksen kohdesatamaasi. DDP / ovelta ovelle: täysi logistiikkapalvelu mukaan lukien tulliselvitys ja lopputoimitus. Merikuljetus Yhdysvaltain länsirannikolle: noin 25–30 päivää. Merikuljetus EU:han (Hampuri/Rotterdam): noin 30–35 päivää. Lentorahti kiireellisiin tilauksiin (3–5 päivää). Käsittelemme kaikki vientiasiakirjat, alkuperätodistukset ja pakkauslistat.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-quality-control
+  question: 'Mitkä laadunvalvontamenettelyt koskevat OEM-tilauksia?'
+  answer: 'Jokainen OEM-tilaus noudattaa dokumentoitua QC-suunnitelmaa: 1) Saapuvien materiaalien tarkastus — PVC-kankaan erätestaukset paksuuden, vetolujuuden ja UV-kestävyyden varalta. 2) Prosessin sisäinen QC — saumanvetolujuustesti 50 laudan välein, painepitotesti 1,5x nimellis-PSI:in. 3) Lopputarkastus — 100 % silmämääräinen tarkastus ja painetesti jokaiselle laudalle. 4) AQL-otanta — eräotanta ISO 2859 -standardin mukaan kriittisellä vialla = 0 hyväksyntä. 5) Kolmannen osapuolen tarkastus — SGS, Bureau Veritas tai Intertek saatavilla ostajan kustannuksella.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-custom-packaging
+  question: 'Voitteko luoda räätälöidyn pakkauksen brändilleni?'
+  answer: 'Voimme. Tarjoamme täydet räätälöityjen pakkausten palvelut: vähittäismyyntipakkaukset täysivärisellä CMYK-painatuksella ja brändigrafiikoilla, kuljetuspussit silkkipaino- tai brodeerilogoilla, ohjekirjat kielelläsi, ripustustarrat ja viivakoodi-/UPC-tarrat sekä sisäpakkaus (polyeteenipussit, vahvistusvaahto). Vähimmäismäärät: 500–1000 yksikköä räätälöityihin pakkauksiin, 200–500 kuljetuspusseihin. Pakkaussuunnittelupalvelu sisältyy OEM-tilauksiin.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-factory-audit
+  question: 'Voinko vierailla tehtaalla tai järjestää kolmannen osapuolen tarkastuksen?'
+  answer: 'Tehdaskäynnit ovat tervetulleita ajanvarauksella. Isännöimme brändin omistajia ympäri vuoden ja voimme järjestää noudon Qingdao Jiaodongin kansainväliseltä lentokentältä (TAO). Ostajille, jotka eivät voi vierailla, tarjoamme: virtuaalisen tehdaskierroksen videopuhelun välityksellä, kolmannen osapuolen tarkastuksen koordinoinnin SGS/Bureau Veritasin kanssa (ostaja kattaa tarkastuskulut) ja kattavan tehtaankapasiteettiasiakirjapaketin, joka sisältää laiteluettelon, QC-prosessivirran ja henkilöstön pätevyydet.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []

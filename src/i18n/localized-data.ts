@@ -22,6 +22,12 @@ import { faqsNl } from '~/data/faq.nl';
 import { faqsNo } from '~/data/faq.no';
 import { faqsPl } from '~/data/faq.pl';
 import { faqsSv } from '~/data/faq.sv';
+import { faqsAr } from '~/data/faq.ar';
+import { faqsEl } from '~/data/faq.el';
+import { faqsFi } from '~/data/faq.fi';
+import { faqsRo } from '~/data/faq.ro';
+import { faqsTh } from '~/data/faq.th';
+import { faqsTr } from '~/data/faq.tr';
 
 export function getGuidesForLang(lang: string | undefined): GuideRecord[] {
   if (lang === 'fr') {
@@ -59,6 +65,12 @@ const faqsByLang: Record<string, FaqRecord[]> = {
   no: faqsNo,
   pl: faqsPl,
   sv: faqsSv,
+  ar: faqsAr,
+  el: faqsEl,
+  fi: faqsFi,
+  ro: faqsRo,
+  th: faqsTh,
+  tr: faqsTr,
 };
 
 export function getFaqsForLang(lang: string | undefined): FaqRecord[] {

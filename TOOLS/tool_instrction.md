@@ -395,6 +395,25 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+## §20 faq-body-96 — faq 正文第三批本地化/收尾（53 Q&A ×6 locale：ar el fi ro th tr）
+
+**背景**：faq 页 53 Q&A 数据集本地化，挂账 3 批（94/95/96）之三收尾。**方案**：机制沿 §18/§19——`src/data/faq-{l}.yaml` + 薄 wrapper `faq.{l}.ts`；`faqsByLang` Record map 由 15 键扩至 **21 键**，`[lang]/faq.astro` 零改动，faq 挂账收口。**翻译铁则**：沿 §18 全项（技术词不译 / 英制数值保留 + 单位词本地化 / 品牌句中小写 afarer / Red Paddle Co 豁免 / 产品竞品名 EN / FOB Qingdao 保留 / 数字范围短横线与 EN 源一致 / °C 无空格）+ 96 语种正字法分化——问号（ar `؟` / el `;` / fi·ro·th·tr `?`）、百分号（fi `90 %` 带空格 / tr `%90` 前缀 / ar·el·ro·th `90%` 连写）、小数（全逗号但 **th 用点** 2.2/1.5）、敬称（ar MSA 正式 / el εσύ / fi sinä / ro dumneavoastră / th คุณ / tr siz）、**脚本互斥**（ar 阿拉伯 / el 希腊 / th 泰文互斥 + 全语禁 CJK/Hangul/Cyrillic）、借词白名单（仅 ro:'are'——罗马尼亚语动词"有"与英文 are 同形）。
+
+| 文件（目录）                                | 用途                                                                                                                                                                                  | 用法（仓库根）                                                                                                   |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `i18n-merge/faq-body-96/_faq-en.json`       | EN 源底稿（53 条，键 id/question/answer；与 §19 归档 prettier 格式版同源同内容）                                                                                                      | （数据文件）                                                                                                     |
+| `i18n-merge/faq-body-96/_faq-{l}.json` ×6   | 6 locale 手翻底稿（53 条，键 id/q/a；生成期为 p1/p2 分段（th 为 p1/p2a/p2b 三段）合并产物）                                                                                           | （数据文件）                                                                                                     |
+| `i18n-merge/faq-body-96/_merge96.cjs`       | 分段底稿合并（幂等：条数 53 + **id 序以 EN 底稿为参照**；th 三段 p1+p2a+p2b，其余两段）                                                                                               | `node TOOLS/i18n-merge/faq-body-96/_merge96.cjs`（Temp 下运行）                                                  |
+| `i18n-merge/faq-body-96/_validate96.cjs`    | 底稿校验（计数/id 序列/≠EN/英文残留 Unicode 边界+ro 'are' 白名单/Red Paddle Co 豁免/问号语种分化/百分号·小数正字法/脚本互斥+变音符/技术词锚点/FOB Qingdao×3/英制单位本地化/品牌小写） | `node TOOLS/i18n-merge/faq-body-96/_validate96.cjs`（Temp 下运行）                                               |
+| `i18n-merge/faq-body-96/_gen96.cjs`         | 生成 6 yaml + 6 wrapper ts（生成后必须过项目 prettier——tr 行宽会被重排）                                                                                                              | `node TOOLS/i18n-merge/faq-body-96/_gen96.cjs && npx prettier --write "src/data/faq-*.yaml" "src/data/faq.*.ts"` |
+| `i18n-merge/faq-body-96/_verify-dist96.cjs` | dist walk：6 locale ×53 q+a 渲染 + 53 items + FAQPage JsonLd + §18/§19 十二语 yaml + de/fr yaml + EN ×2 + 计数                                                                        | build 后 `node TOOLS/i18n-merge/faq-body-96/_verify-dist96.cjs`                                                  |
+| `i18n-merge/faq-body-96/_live-verify96.mjs` | 线上验证：6 locale ×53 q+a + JsonLd + B2B/PSI 抽查 ×6 + de/fr/es yaml + EN ×2                                                                                                         | 部署后 `node TOOLS/i18n-merge/faq-body-96/_live-verify96.mjs`                                                    |
+| `i18n-merge/faq-body-96/_ci-poll96.cjs`     | CI 轮询双 workflow 结论（SHA 为 CLI 参数；token 读 Temp cred-out.txt）                                                                                                                | `node TOOLS/i18n-merge/faq-body-96/_ci-poll96.cjs <40位head_sha>`                                                |
+
+**验证**：底稿校验 ALL CLEAN → check 0 errors → build 13,859 页 → dist walk **24/24 PASS**（6 新语 ×53 q+a + §18 六语 + §19 六语 + de/fr + EN ×2 + sitemap-0 11,164 / route-manifest 13,858 无变化）。**注意**：(1) **Write 工具大 JSON 截断阈值本批更低**——th p2 ~15KB 即被截断（95 期为 ~25KB），分段写盘时按 ≤13 条/段切分更稳；(2) Temp 的 `_faq-en.json` 为 94 期 stringify 格式，**归档前须与上一批归档版做内容 deep-compare，格式以上一批 prettier 版为准**（否则归档 prettier --check 报红）；(3) 归档件仍须双检 `npx prettier --check` + `npx eslint`（95 教训，CI 两关都扫 TOOLS/）；(4) items 计数仍用 `data-faq-question=`（同 §18/§19）。faq 挂账收口；挂账余 posts / v2 / solutions 正文 / guides / SeoLanding。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。
