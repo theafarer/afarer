@@ -1028,7 +1028,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) **Edit 工具 "applied successfully" 不等于实际落盘**——da/bateau 同文件多编辑后 L14 报成功但未改，grep 复核抓出补修；同文件多编辑后必须 grep/read 复核；(2) da "brand" 假朋友（本义火灾）但营销语境是标准借词（Danmarks stærkeste brand 式用法通行）→ 白名单而非翻译；no 不适用（全用 merke/merkevare）；(3) da/no "custom" 译而非白名单（Dansk Sprognævn 视为不必要英化词），程序名 "Custom Lab"/"Custom & Private Label" 保留英文（repo 先例：distributor-program 表格）；(4) EN_INDICATOR 短词 be/let 分词后撞六语合法子串/词（købe、10+ let）→ 指示词表须防分词误报。工具归档 `TOOLS/i18n-merge/seo-landing-98/`（tool_instrction.md §22）。
 
-④ **回归数字**：check passed → build 13,859 页 → dist 验证 **37/37 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + fr/de/en 回归 4 + route-manifest 13,858 含 30 新路由 + sitemap-0 11,164 无变化）。**SeoLanding 挂账第二批清偿（12/19 locale）**；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding 余 7 locale）。
+④ **回归数字**：check passed → build 13,859 页 → dist 验证 **37/37 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + fr/de/en 回归 4 + route-manifest 13,858 含 30 新路由 + sitemap-0 11,164 无变化）。commit `918dfd2` **首推即 CI 双绿**（97 教训内化：归档前 prettier + eslint 双检）——CI 38048310446（CI）/38048310404（Build & Deploy）→ 线上验证 **40/40 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + EN ×5 + fr ×5 回归，均跟随 308 尾斜杠重定向）。**SeoLanding 挂账第二批清偿（12/19 locale）**；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding 余 7 locale）。
 
 
 

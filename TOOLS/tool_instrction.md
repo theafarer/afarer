@@ -436,7 +436,7 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 | `i18n-merge/seo-landing-98/_verify-dist98.cjs` | dist walk：30 新 locale 页 title+hero 本地化 + EN fallback hero 负断言 + fr/de/en 回归 + route-manifest 30 新路由存在断言 + sitemap-0 11,164 | build 后 `node TOOLS/i18n-merge/seo-landing-98/_verify-dist98.cjs` |
 | `i18n-merge/seo-landing-98/_live-verify98.mjs` | 线上验证：30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + EN ×5 + fr ×5 回归（跟随 308 尾斜杠重定向）                               | 部署后 `node TOOLS/i18n-merge/seo-landing-98/_live-verify98.mjs`   |
 
-**验证**：校验 errors=0 → prettier 30 yaml 全过 → check passed → build 13,859 页 → dist **37/37 PASS**。**注意**：(1) **Edit 工具 "applied successfully" 不保证落盘**——同文件多编辑后必须 grep/read 复核（98 da/bateau L14 报成功但未改）；(2) da "brand" 白名单（营销标准借词，本义火灾的假朋友但营销语境无歧义）、da/no "custom" 译出（skræddersyet/skreddersydd 等，程序名 "Custom Lab"/"Custom & Private Label" 保留）、sv communities→gemenskaper（含复合词）；(3) EN_INDICATOR 短词防分词误报（be/let）；(4) 归档件双检 prettier + eslint。SeoLanding 余 7 locale（99：ar el fi ro th tr / 100：de）；挂账余 posts / v2 / solutions 正文 / guides / SeoLanding。
+**验证**：校验 errors=0 → prettier 30 yaml 全过 → check passed → build 13,859 页 → dist **37/37 PASS** → 线上 **40/40 PASS**。**注意**：(1) **Edit 工具 "applied successfully" 不保证落盘**——同文件多编辑后必须 grep/read 复核（98 da/bateau L14 报成功但未改）；(2) da "brand" 白名单（营销标准借词，本义火灾的假朋友但营销语境无歧义）、da/no "custom" 译出（skræddersyet/skreddersydd 等，程序名 "Custom Lab"/"Custom & Private Label" 保留）、sv communities→gemenskaper（含复合词）；(3) EN_INDICATOR 短词防分词误报（be/let）；(4) 归档件双检 prettier + eslint。SeoLanding 余 7 locale（99：ar el fi ro th tr / 100：de）；挂账余 posts / v2 / solutions 正文 / guides / SeoLanding。
 
 ---
 
