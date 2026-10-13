@@ -2,8 +2,10 @@
 // Runs the same assertions as _verify-dist101.cjs against https://afarer.com.
 // Usage: node _live-verify101.mjs
 
+import fs from 'node:fs';
+
 const BASE = 'https://afarer.com';
-const SSOT = JSON.parse(await (await fetch('file:///E:/github/afarer/src/data/site/i18n-config.json')).text());
+const SSOT = JSON.parse(fs.readFileSync('E:/github/afarer/src/data/site/i18n-config.json', 'utf8'));
 const LOCALES = Object.keys(SSOT);
 const CATS = ['buying-guide', 'tutorial', 'safety', 'technical', 'maintenance', 'lifestyle', 'planning', 'comparison'];
 const SLUG_TARGETS = [
@@ -30,7 +32,7 @@ async function get(path) {
 }
 
 // localized page meta (title) — source of truth for <title>
-const seoMetaRaw = await (await fetch('file:///E:/github/afarer/src/i18n/generated/seo-meta.ts')).text();
+const seoMetaRaw = fs.readFileSync('E:/github/afarer/src/i18n/generated/seo-meta.ts', 'utf8');
 const seoMeta = JSON.parse(seoMetaRaw.slice(seoMetaRaw.indexOf('=') + 1, seoMetaRaw.lastIndexOf('}') + 1));
 
 // ===== 0. sitemap invariant =====
