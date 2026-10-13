@@ -5,6 +5,8 @@ import type { ContentV2Record } from '~/data/content-v2';
 import { guidesFr } from '~/data/guides.fr';
 import { contentV2RecordsFr } from '~/data/content-v2.fr';
 import { guidesDe } from '~/data/guides.de';
+import { guidesEs } from '~/data/guides.es';
+import { guidesIt } from '~/data/guides.it';
 import { contentV2RecordsDe } from '~/data/content-v2.de';
 import { faqs } from '~/data/faq';
 import type { FaqRecord } from '~/data/faq';
@@ -35,6 +37,12 @@ export function getGuidesForLang(lang: string | undefined): GuideRecord[] {
   }
   if (lang === 'de') {
     return guidesDe;
+  }
+  if (lang === 'es') {
+    return guidesEs;
+  }
+  if (lang === 'it') {
+    return guidesIt;
   }
   return guides;
 }

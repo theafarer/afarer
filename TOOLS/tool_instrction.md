@@ -475,6 +475,18 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 **验证**：validate **4/4 PASS** → prettier → check EXIT=0 → build 13,859 页 → dist **555/555 PASS**（首轮 3 类失败均系测试预期错误：title 源误判 astro metadata / route-manifest 误用 dist/manifest.json / v2.problem 误抄回退文案 'The challenge'）→ 归档双检 prettier + eslint 0。**注意**：(1) **Edit "applied successfully" 不等于落盘**——多编辑后必须 grep/read 复核（曾吃掉 th 'ขั้นสูง' 尾部致 SyntaxError）；(2) **dist HTML 断言容忍转义**——法文 d'achat → `&#39;`，has() 同时查原文与转义形式；(3) **EN v2.problem='The problem'**（astro 内 'The challenge' 只是回退文案，断言勿照抄回退）；(4) **8 个 category 非 7**——comparison 第 8 键为本次补注入。guides 数据翻译为后续分片。
 
+## §26 guides-data-102 — guides 数据批次 1（29 条 guide 全译 ×2 locale：es + it）
+
+**背景**：guides **数据翻译批 1**（L91 接线批后续）——29 条 guide 全译 es/it（`src/data/guides-es.yaml` / `guides-it.yaml`，~80KB/locale），wrapper `guides.es.ts`/`guides.it.ts`（仿 guides.fr.ts 4 行模板）+ `localized-data.ts` getGuidesForLang 扩 es/it if/else；UI 层零改动。术语：ES hinchable / IT gonfiabile、IT 保留 core（标准健身术语）、waterType 沿 DE 惯例保留 EN（lake/sea/river）、英寸/PSI/mph/°F/$ 原样；EN 泄漏扫描 per-locale allowlist——**es 允许 "paddle"**（"paddle surf" 西语运动标准名，站点 es 页先例）、IT 零 allowlist。无路由变更，manifest/sitemap/build 计数全不变。
+
+| 脚本                                             | 用途                                                                                                                                                                   | 运行                                                                                |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `i18n-merge/guides-data-102/_fix-colons-102.cjs` | yaml 纯标量含 `: ` 自动单引号包裹（' → ''）；含误伤还原（`- 'slug: …'` → `- slug: …`）；list-item 规则排除 mapping 式条目                                              | `node TOOLS/i18n-merge/guides-data-102/_fix-colons-102.cjs`（硬编码 es/it 两 yaml） |
+| `i18n-merge/guides-data-102/_validate102.cjs`    | es/it 各 29 条：EN（guides.ts 切片 eval）keyTree deep-compare + 12 字段不变量 + steps/faq 计数 + 翻译非空非同 EN + EN 泄漏扫描                                         | `node TOOLS/i18n-merge/guides-data-102/_validate102.cjs`                            |
+| `i18n-merge/guides-data-102/_verify-dist102.cjs` | dist walk：29 slug ×2 locale title+description 本地化 + es/it guides index ×29 本地化标题 + 全 guide locale 源回归（fr/de/es/it 本地、余 EN fallback；枚举排除 llms/） | build 后 `node TOOLS/i18n-merge/guides-data-102/_verify-dist102.cjs`                |
+
+**验证**：validate es/it **errors=0**（IT 6 处手写语法修正：pagaia、come passeggero、tavole economiche、Frequenta、faq 标题、24 号 title）→ prettier → check passed（四段全绿）→ build 13,859 页 → dist **94/94 PASS** → 归档双检 prettier + eslint 0。**注意**：(1) **YAML 纯标量含 `: ` 使 js-yaml 解析失败**（"bad indentation of a mapping entry"）——冒号修复脚本 list-item 规则必须排除 `- slug:`/`- q:` 等 mapping 式条目（`/^[A-Za-z][\w.]*: /`），首版误伤 -116 条/文件；(2) **dist/{loc}/guides 31 目录 = 29 数据 + 2 静态页**（inflatable-vs-hardboard / what-is-sup）；(3) **locale 枚举排除 `llms/`**（LLM-content 端点，非 UI locale）；(4) 术语先例查 guides-fr/de.yaml 与站点既有 locale 页。guides 数据挂账余：批次 2+（其余 locale）。
+
 ---
 
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。

@@ -1060,6 +1060,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：check passed → build 13,859 页（无路由变更，route-manifest 13,858 / sitemap-0 11,164 不变）→ dist 验证 **555/555 PASS**（首轮 3 类失败均系测试预期错误并修正：title 源、route-manifest 路径、v2.problem 文案）→ 归档 prettier + eslint 双检 0 问题。commit `8497c38e` 经 `socks5://127.0.0.1:10808` 推送——**首推即 CI 双绿**：CI 38384522165（CI）/38384522138（Build & Deploy）→ 线上验证 **553/553 PASS**（21 locale × guides index title+chips+8 类目标题+readGuide+EN 泄漏负断言 + slug 页 2 目标 ×21 + EN 回归，跟随 308 尾斜杠重定向；较 dist 555 少 2 项系 route-manifest 等本地文件断言不适用于线上）。**踩坑**：`_live-verify101.mjs` 首跑 fetch failed——**Node undici 不支持 `file://` 协议**（"not implemented... yet..."），读本地文件用 `fs.readFileSync` 勿用 fetch。guides 挂账余：数据批次（29 条 ×18 locale，扩 getGuidesForLang）。
 
+## L92. 分片 102：guides 数据批次 1——29 条 guide 全译 ×2 locale（es + it）+ getGuidesForLang 接线（2026-10）
+
+① **范围决策**：guides 挂账（L91 ④ 余项）**数据批次 1**——es/it 两 locale 29 条 guide 数据全译（`guides-es.yaml`/`guides-it.yaml`，仿 guides-fr.yaml 结构）+ `guides.es.ts`/`guides.it.ts` wrapper + `getGuidesForLang` 扩 es/it if/else；UI 层 L91 已接线，本批零 astro 改动。术语决策：ES hinchable、IT gonfiabile；IT 保留 core（标准健身术语，不在 EN_INDICATOR）；waterType 沿 DE 惯例保留 EN（lake/sea/river）；英寸记号（32-34"/11'6"）、PSI/mph/°F/$ 原样；EN 泄漏扫描 **per-locale allowlist：es 允许 "paddle"**（"paddle surf" 为西语运动标准名，站点 es 页先例）、IT 零 allowlist。无路由变更，manifest/sitemap/build 计数全不变。
+
+② **实施**：(1) 两 yaml 手写全译（29 条 ×12 字段 + steps/faq）；(2) 纯标量含 `: ` 冒号修复脚本（自动单引号包裹，' 转义 ''）；(3) wrapper + localized-data.ts 扩展；(4) `_validate102.cjs`——EN 从 guides.ts 数据切片 eval 加载，keyTree deep-compare + 12 字段不变量 + steps/faq 计数 + 翻译非空非同 EN + EN 泄漏扫描，es/it 各 29 条 **errors=0**（it 含 6 处手写语法修正：pagaia、come passeggero、tavole economiche、faq 标题重写等）；(5) prettier 两 yaml normalize → check passed → build 13,859 页不变；(6) `_verify-dist102.cjs` dist 验证 **94/94 PASS**。
+
+③ **踩坑**：(1) **YAML 纯标量含 `: ` 使 js-yaml 解析失败**（"bad indentation of a mapping entry"）——修复脚本对含 `: ` 的纯标量自动单引号包裹，但 **list-item 规则必须排除 mapping 式条目**（`/^[A-Za-z][\w.]*: /`），首版误伤 `- slug:`/`- q:` 行 -116 条/文件，用还原脚本（`- 'slug: ...'` → `- slug: ...`，'' 反转义）修复；(2) **dist/{loc}/guides 有 31 目录而非 29**——`inflatable-vs-hardboard`/`what-is-sup` 为静态页非 guides 数据，计数断言勿混淆；(3) **dist 枚举 locale 须排除 `llms/`**（LLM-content 端点，非 UI locale，无 per-slug index.html，首轮误报 2 FAIL）；(4) route-manifest 不变量 = `src/i18n/generated/route-manifest.json` 13,858（dist/manifest.json 是 PWA manifest，沿 L91 教训）。工具归档 `TOOLS/i18n-merge/guides-data-102/`（tool_instrction.md §26）。
+
+④ **回归数字**：check passed（astro 0 error / eslint / prettier / i18n 四段全绿）→ build 13,859 页（route-manifest 13,858 / sitemap-0 11,164 不变）→ dist 验证 **94/94 PASS**（29 slug ×2 locale title+description 本地化 + es/it guides index ×29 本地化标题 + 36 个 guide locale 源回归：fr/de/es/it 本地数据、其余 EN fallback）→ 归档双检 prettier + eslint 0。（CI + 线上验证数字由 docs commit 补记。）
+
 ---
 
 
