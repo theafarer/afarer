@@ -1038,7 +1038,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) **数字混合词分词碎片**——3D/B2B/m² 被 `[A-Za-z]+` 分词成 "D"/"B"/"m" 单字母命中残留扫描 → 校验器须先剥离 `\b(B2B|3D|2D|R&D)\b` 与 m² 再分词；(2) **指示词表须逐语言验证**——logo/board 在 fi/ro/tr 是本语标准词（ro "logo de marcă"、tr "logo baskısı"）非英文残留，are 是 ro 动词"有"——EN_INDICATOR 抄 98 底版后必须按新语言过滤；(3) **非拉丁语言残留必须翻译不可白名单**——el 文内 "Logistics"/"stand up paddle" 是真英文残留（LATIN-RESIDUE 命中即修文），与拉丁语系借词判断逻辑相反；(4) prettier 对 tr 5 文件重排（YAML 行折叠），prettier 必须在 build 前跑并过 `--check`。工具归档 `TOOLS/i18n-merge/seo-landing-99/`（tool_instrction.md §23）。
 
-④ **回归数字**：check passed → build 13,859 页 → dist 验证 **37/37 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + fr/cs/en 回归 4 + route-manifest 13,858 含 30 新路由 + sitemap-0 11,164 无变化）。**SeoLanding 挂账第三批清偿（18/19 locale）**；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding 余 1 locale：de）。
+④ **回归数字**：check passed → build 13,859 页 → dist 验证 **37/37 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + fr/cs/en 回归 4 + route-manifest 13,858 含 30 新路由 + sitemap-0 11,164 无变化）。commit `6b9b91c7` **首推即 CI 双绿**（归档前 prettier + eslint 双检惯例延续）——CI 38355899443（CI）/38355899557（Build & Deploy）→ 线上验证 **42/42 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + EN ×5 + fr ×5 回归 + 98 抽查 cs/pl，均跟随 308 尾斜杠重定向；首轮 41/42 含一次瞬时网络异常 fetch failed，重跑全绿）。**SeoLanding 挂账第三批清偿（18/19 locale）**；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding 余 1 locale：de）。
 
 
 

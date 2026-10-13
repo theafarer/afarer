@@ -448,7 +448,7 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 | `i18n-merge/seo-landing-99/_verify-dist99.cjs` | dist walk：30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + fr/cs/en 回归 + route-manifest 30 新路由存在断言 + sitemap-0 11,164                      | build 后 `node TOOLS/i18n-merge/seo-landing-99/_verify-dist99.cjs` |
 | `i18n-merge/seo-landing-99/_live-verify99.mjs` | 线上验证：30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + EN ×5 + fr ×5 回归 + 98 抽查（cs/pl）（跟随 308 尾斜杠重定向）                            | 部署后 `node TOOLS/i18n-merge/seo-landing-99/_live-verify99.mjs`   |
 
-**验证**：校验 errors=0 → prettier 30 yaml 全过 → check passed → build 13,859 页 → dist **37/37 PASS** → 线上验证待部署后跑 `_live-verify99.mjs`。**注意**：(1) **数字混合词分词碎片**——3D/B2B/m² 须在校验器分词前剥离（`\b(B2B|3D|2D|R&D)\b` + m²），否则碎片 "D"/"B"/"m" 误报残留；(2) **EN_INDICATOR 逐语言验证**——logo/board 是 fi/ro/tr 本语标准词、are 是 ro 动词"有"，抄底版后必须按新语言过滤；(3) **非拉丁语言残留必须翻译不可白名单**（el 文内 Logistics / stand up paddle 为真英文残留）；(4) tr YAML 单引号内撇号双写 ''、prettier 对 tr 5 文件行折叠重排（build 前须过 `--check`）；(5) 归档件双检 prettier + eslint。SeoLanding 余 1 locale（100：de）；挂账余 posts / v2 / solutions 正文 / guides / SeoLanding。
+**验证**：校验 errors=0 → prettier 30 yaml 全过 → check passed → build 13,859 页 → dist **37/37 PASS** → 线上 **42/42 PASS**（含 98 抽查 cs/pl；首轮 41/42 一次瞬时网络异常，重跑全绿）。**注意**：(1) **数字混合词分词碎片**——3D/B2B/m² 须在校验器分词前剥离（`\b(B2B|3D|2D|R&D)\b` + m²），否则碎片 "D"/"B"/"m" 误报残留；(2) **EN_INDICATOR 逐语言验证**——logo/board 是 fi/ro/tr 本语标准词、are 是 ro 动词"有"，抄底版后必须按新语言过滤；(3) **非拉丁语言残留必须翻译不可白名单**（el 文内 Logistics / stand up paddle 为真英文残留）；(4) tr YAML 单引号内撇号双写 ''、prettier 对 tr 5 文件行折叠重排（build 前须过 `--check`）；(5) 归档件双检 prettier + eslint。SeoLanding 余 1 locale（100：de）；挂账余 posts / v2 / solutions 正文 / guides / SeoLanding。
 
 ---
 
