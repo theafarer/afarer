@@ -1048,7 +1048,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) **指示词表德语同形词是最大误报源**——英语指示词 was/will/test/season/quote/hotels/launch 恰为德语本语词或 Duden 标准借词（was=什么、will=想要、Quote=配额、Hotel/Test 本语同形），抄底版前必须逐词对照目标语言词典过滤，与 99 的 logo/board/are 教训同源；(2) **locale 先在时计数不变量不增长**——de 5 条路由已在 manifest（13,858），dist 断言须检查"存在性"而非"总数 +5"（与 99 新增 locale 时 +30 计数断言相反）；(3) **德式数字与 stats 原样并存**——译文内千分位用德式点（12.000 m²），stats.value 不变量原样 '12,000 m²'（数字格式属"不变量原样"铁则，不随语言改写）。工具归档 `TOOLS/i18n-merge/seo-landing-100/`（tool_instrction.md §24）。
 
-④ **回归数字**：check passed → build 13,859 页 → dist 验证 **13/13 PASS**（5 新 de 页 title+hero 本地化 + EN fallback 负断言 + fr/cs/en + de/distributor-program 回归 5 + route-manifest 13,858 含 5 条 de 路由 + sitemap-0 11,164 无变化）。
+④ **回归数字**：check passed → build 13,859 页 → dist 验证 **13/13 PASS**（5 新 de 页 title+hero 本地化 + EN fallback 负断言 + fr/cs/en + de/distributor-program 回归 5 + route-manifest 13,858 含 5 条 de 路由 + sitemap-0 11,164 无变化）。commit `6973758` **推送经 SOCKS5 代理**（github.com:443 直连完全断（20.205.243.166 TCP 拒绝，5 次重试均败），用户重启本地代理 127.0.0.1:10808 后 `git -c http.proxy=socks5://...` 推送成功——**直连断时探测本地代理端口**（Test-NetConnection 7890/1080/10808 等）是可行回退）——**首推即 CI 双绿**：CI 38367671584（CI）/38367671626（Build & Deploy）→ 线上验证 **18/18 PASS**（5 新 de 页 title+hero 本地化 + EN fallback 负断言 + EN ×5 + fr ×5 回归 + de/distributor-program 既有 de 页 + 98 抽查 cs/pl，均跟随 308 尾斜杠重定向，首轮全绿）。**SeoLanding 挂账终批清偿（19/19 locale 全清）**；总挂账余 4 项（posts / v2 / solutions 正文 / guides）。
 
 ---
 
