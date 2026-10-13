@@ -1030,6 +1030,17 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：check passed → build 13,859 页 → dist 验证 **37/37 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + fr/de/en 回归 4 + route-manifest 13,858 含 30 新路由 + sitemap-0 11,164 无变化）。commit `918dfd2` **首推即 CI 双绿**（97 教训内化：归档前 prettier + eslint 双检）——CI 38048310446（CI）/38048310404（Build & Deploy）→ 线上验证 **40/40 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + EN ×5 + fr ×5 回归，均跟随 308 尾斜杠重定向）。**SeoLanding 挂账第二批清偿（12/19 locale）**；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding 余 7 locale）。
 
+## L89. 分片 99：SeoLanding 正文第三批本地化——5 页 ×6 locale（ar el fi ro th tr）（2026-10）
+
+① **范围决策**：SeoLanding 挂账（L77 审计 (g)）第三批，机制链同 97/98 零接线纯数据添加（locale yaml 缺失即构建回退 EN）。本批同 5 页（oem-paddle / co-brand / bateau-gonflable-fabricant / fournisseur-nautique / fabricant-sup-gonflable）×6 locale（ar el fi ro th tr）= **30 个 locale yaml 新增**；六语页面原渲染 EN fallback，本批转本地化，build 页数不变 13,859。翻译铁则沿 97/98：keys 树与 EN 一致（数组计数相同）、href/variant/icon/src/stats.value 原样、{SITE} 保留、技术词不译、六语百分号统一 `30%` 连写。**品牌分语言两制**：ar 用阿拉伯音译 أفارير（distributor-program ar 先例 12:0），el/fi/ro/th/tr 用拉丁 Afarer（SeoLanding 家族大写惯例）。co-brand 分两制：ar/th 译出（العلامة المشتركة / แบรนด์ร่วม），el/fi/ro/tr 保留拉丁借词 co-brand（es/co-brand 借词模型先例）；private label 六语全译（faq-96 术语）。SeoLanding 挂账余 1 locale（100：de）；总挂账仍 5 项。
+
+② **实施**：(1) 30 yaml 手翻写入（单文件 4-7KB 单写安全；tr YAML 单引号内撇号全部双写 ''；ro ș/ț 变音符；ar RTL 文本）；(2) 校验器 `_validate99.cjs`（98 底版改造为**双路线残留扫描**：NONLATIN={ar,el,th} 任何 ASCII 词均候选（LATIN-RESIDUE）；LATIN={fi,ro,tr} 走 EN 指示词表 + TECH/COMMON/EXTRA 白名单（EN-RESIDUE））跑至 errors=0；(3) 真残留修复：el/fabricant meta.description 残留 "stand up paddle"→σανίδες SUP、el features 'Παγκόσμια Logistics'→'Παγκόσμιες Μεταφορές'、el 两处 εξειδικευμένης→εξειδικευμένη 笔误（geo.sentence 四制造页共享句统一）；(4) 校验器调校：预剥离 m²/3D/2D/B2B/R&D 再分词（数字混合词碎片误报 "D"/"B"/"m"）；EN_INDICATOR 移除 logo/board（fi/ro/tr 本语合法词）与 are（ro 动词 "are"=有，假阳性）；COMMON 增 Paddling/Paddlers/Board/boards；(5) dist 验证 `_verify-dist98.cjs`→`_verify-dist99.cjs`（回归组换 98 抽查 cs/pl）：30 新页 title+hero 本地化 + EN fallback 负断言 + fr/cs/en 回归 + route-manifest 30 新路由 + sitemap-0 11,164。
+
+③ **踩坑**：(1) **数字混合词分词碎片**——3D/B2B/m² 被 `[A-Za-z]+` 分词成 "D"/"B"/"m" 单字母命中残留扫描 → 校验器须先剥离 `\b(B2B|3D|2D|R&D)\b` 与 m² 再分词；(2) **指示词表须逐语言验证**——logo/board 在 fi/ro/tr 是本语标准词（ro "logo de marcă"、tr "logo baskısı"）非英文残留，are 是 ro 动词"有"——EN_INDICATOR 抄 98 底版后必须按新语言过滤；(3) **非拉丁语言残留必须翻译不可白名单**——el 文内 "Logistics"/"stand up paddle" 是真英文残留（LATIN-RESIDUE 命中即修文），与拉丁语系借词判断逻辑相反；(4) prettier 对 tr 5 文件重排（YAML 行折叠），prettier 必须在 build 前跑并过 `--check`。工具归档 `TOOLS/i18n-merge/seo-landing-99/`（tool_instrction.md §23）。
+
+④ **回归数字**：check passed → build 13,859 页 → dist 验证 **37/37 PASS**（30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + fr/cs/en 回归 4 + route-manifest 13,858 含 30 新路由 + sitemap-0 11,164 无变化）。**SeoLanding 挂账第三批清偿（18/19 locale）**；总挂账余 5 项（posts / v2 / solutions 正文 / guides / SeoLanding 余 1 locale：de）。
+
+
 
 
 ---

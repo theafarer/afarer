@@ -438,6 +438,18 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 **验证**：校验 errors=0 → prettier 30 yaml 全过 → check passed → build 13,859 页 → dist **37/37 PASS** → 线上 **40/40 PASS**。**注意**：(1) **Edit 工具 "applied successfully" 不保证落盘**——同文件多编辑后必须 grep/read 复核（98 da/bateau L14 报成功但未改）；(2) da "brand" 白名单（营销标准借词，本义火灾的假朋友但营销语境无歧义）、da/no "custom" 译出（skræddersyet/skreddersydd 等，程序名 "Custom Lab"/"Custom & Private Label" 保留）、sv communities→gemenskaper（含复合词）；(3) EN_INDICATOR 短词防分词误报（be/let）；(4) 归档件双检 prettier + eslint。SeoLanding 余 7 locale（99：ar el fi ro th tr / 100：de）；挂账余 posts / v2 / solutions 正文 / guides / SeoLanding。
 
+## §23 seo-landing-99 — SeoLanding 正文第三批本地化（5 页 ×6 locale：ar el fi ro th tr）
+
+**背景**：SeoLanding 6 页挂账第三批（同 §21/§22 机制：纯数据添加零接线，六语页面原渲染 EN fallback，本批转本地化，build 页数 13,859 不变）。**翻译铁则**：同 §21/§22——keys 树与 EN 一致（数组计数相同）/ 不变量原样 / {SITE} 保留 / 技术词不译 / 六语 `30%` 连写。**品牌两制**：ar 阿拉伯音译 أفارير（distributor-program ar 先例），el/fi/ro/th/tr 拉丁大写 Afarer；co-brand ar/th 译出（العلامة المشتركة / แบรนด์ร่วม），el/fi/ro/tr 拉丁借词（es 先例）；private label 六语全译（faq-96 术语）。**残留扫描双路线**：ar/el/th（非拉丁）任何 ASCII 词均候选（LATIN-RESIDUE，命中即修文）；fi/ro/tr（拉丁）EN 指示词表 + TECH/COMMON/EXTRA 白名单（EN-RESIDUE）。
+
+| 脚本                                           | 用途                                                                                                                                                         | 运行                                                               |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| `i18n-merge/seo-landing-99/_validate99.cjs`    | 30 yaml 校验：结构 deep-compare（keyTree 含数组计数）+ 不变量断言 + {SITE} 保留 + 双路线残留扫描（NONLATIN=ar/el/th 全 ASCII 候选；LATIN=fi/ro/tr 指示词表） | `node TOOLS/i18n-merge/seo-landing-99/_validate99.cjs`             |
+| `i18n-merge/seo-landing-99/_verify-dist99.cjs` | dist walk：30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + fr/cs/en 回归 + route-manifest 30 新路由存在断言 + sitemap-0 11,164                      | build 后 `node TOOLS/i18n-merge/seo-landing-99/_verify-dist99.cjs` |
+| `i18n-merge/seo-landing-99/_live-verify99.mjs` | 线上验证：30 新 locale 页 title+hero 本地化 + EN fallback 负断言 + EN ×5 + fr ×5 回归 + 98 抽查（cs/pl）（跟随 308 尾斜杠重定向）                            | 部署后 `node TOOLS/i18n-merge/seo-landing-99/_live-verify99.mjs`   |
+
+**验证**：校验 errors=0 → prettier 30 yaml 全过 → check passed → build 13,859 页 → dist **37/37 PASS** → 线上验证待部署后跑 `_live-verify99.mjs`。**注意**：(1) **数字混合词分词碎片**——3D/B2B/m² 须在校验器分词前剥离（`\b(B2B|3D|2D|R&D)\b` + m²），否则碎片 "D"/"B"/"m" 误报残留；(2) **EN_INDICATOR 逐语言验证**——logo/board 是 fi/ro/tr 本语标准词、are 是 ro 动词"有"，抄底版后必须按新语言过滤；(3) **非拉丁语言残留必须翻译不可白名单**（el 文内 Logistics / stand up paddle 为真英文残留）；(4) tr YAML 单引号内撇号双写 ''、prettier 对 tr 5 文件行折叠重排（build 前须过 `--check`）；(5) 归档件双检 prettier + eslint。SeoLanding 余 1 locale（100：de）；挂账余 posts / v2 / solutions 正文 / guides / SeoLanding。
+
 ---
 
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
