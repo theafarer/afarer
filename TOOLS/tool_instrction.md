@@ -450,6 +450,18 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 **验证**：校验 errors=0 → prettier 30 yaml 全过 → check passed → build 13,859 页 → dist **37/37 PASS** → 线上 **42/42 PASS**（含 98 抽查 cs/pl；首轮 41/42 一次瞬时网络异常，重跑全绿）。**注意**：(1) **数字混合词分词碎片**——3D/B2B/m² 须在校验器分词前剥离（`\b(B2B|3D|2D|R&D)\b` + m²），否则碎片 "D"/"B"/"m" 误报残留；(2) **EN_INDICATOR 逐语言验证**——logo/board 是 fi/ro/tr 本语标准词、are 是 ro 动词"有"，抄底版后必须按新语言过滤；(3) **非拉丁语言残留必须翻译不可白名单**（el 文内 Logistics / stand up paddle 为真英文残留）；(4) tr YAML 单引号内撇号双写 ''、prettier 对 tr 5 文件行折叠重排（build 前须过 `--check`）；(5) 归档件双检 prettier + eslint。SeoLanding 余 1 locale（100：de）；挂账余 posts / v2 / solutions 正文 / guides / SeoLanding。
 
+## §24 seo-landing-100 — SeoLanding 正文第四批（终批）本地化（5 页 ×1 locale：de）
+
+**背景**：SeoLanding 挂账终批（同 §21-§23 机制：纯数据添加零接线，de 页面原渲染 EN fallback，本批转本地化）。**de locale 先在**——5 条 de 路由已在 route-manifest 13,858 内，build 页数 13,859 / manifest / sitemap 不变量全不变（dist 断言为"路由存在"而非"计数增长"）。**翻译铁则**：同 §21-§23——keys 树与 EN 一致（数组计数相同）/ 不变量原样（stats.value '12,000 m²' 不随德式数字改写）/ {SITE} 保留 / 技术词不译 / `30%` 连写。**术语（de 先例）**：品牌大写 Afarer；Co-Branding/Co-Brand-Kollektion 借词；Private-Label- 连字复合（Private-Label-SUP）；MOQ/OEM/ODM 保留；表格全译（98 先例：tier 名译、`30% Anzahlung / 70% vor Versand`）；Schlauchboot/Beiboot/Lieferzeit/Werktage/Großhandel/Fachkräfte。**残留扫描**：LATIN={de} EN 指示词表 + TECH/COMMON 白名单。
+
+| 脚本                                             | 用途                                                                                                                                                           | 运行                                                                 |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| `i18n-merge/seo-landing-100/_validate100.cjs`    | 5 yaml 校验：结构 deep-compare（keyTree 含数组计数）+ 不变量断言 + {SITE} 保留 + EN 指示词残留扫描（LATIN=de 路线）                                            | `node TOOLS/i18n-merge/seo-landing-100/_validate100.cjs`             |
+| `i18n-merge/seo-landing-100/_verify-dist100.cjs` | dist walk：5 新 de 页 title+hero 本地化 + EN fallback 负断言 + fr/cs/en + de/distributor-program 回归 + route-manifest 5 条 de 路由存在断言 + sitemap-0 11,164 | build 后 `node TOOLS/i18n-merge/seo-landing-100/_verify-dist100.cjs` |
+| `i18n-merge/seo-landing-100/_live-verify100.mjs` | 线上验证：5 新 de 页 title+hero 本地化 + EN fallback 负断言 + EN ×5 + fr ×5 回归 + de/distributor-program + cs/pl 抽查（跟随 308 尾斜杠重定向）                | 部署后 `node TOOLS/i18n-merge/seo-landing-100/_live-verify100.mjs`   |
+
+**验证**：校验 errors=0（首轮即过）→ prettier 5 yaml 全过 → check passed → build 13,859 页 → dist **13/13 PASS** → 线上验证待部署后执行。**注意**：(1) **EN_INDICATOR 德语同形词过滤**——was/will/test/tests/season/quote/launch/communities/events/hotels 均为德语本语词或 Duden 标准借词（was=什么、will=想要、Quote=配额、Hotel/Test 本语同形），抄底版前逐词对照词典；(2) **locale 先在时计数不变量不增长**（de 路由已在 manifest，与 99 新增 locale +30 计数断言相反）；(3) **德式数字与 stats 原样并存**——译文内 12.000 m²，stats.value 原样 '12,000 m²'；(4) 归档件双检 prettier + eslint。**SeoLanding 19/19 locale 全清偿**；挂账余 posts / v2 / solutions 正文 / guides。
+
 ---
 
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
