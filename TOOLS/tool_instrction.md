@@ -462,6 +462,19 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 **验证**：校验 errors=0（首轮即过）→ prettier 5 yaml 全过 → check passed → build 13,859 页 → dist **13/13 PASS** → 线上 **18/18 PASS**（含 de/distributor-program 既有 de 页 + cs/pl 抽查，首轮全绿）。**推送**：github.com:443 直连完全断，用户重启本地代理后经 `socks5://127.0.0.1:10808` 推送成功（**直连断时探测本地代理端口是可行回退**）。**注意**：(1) **EN_INDICATOR 德语同形词过滤**——was/will/test/tests/season/quote/launch/communities/events/hotels 均为德语本语词或 Duden 标准借词（was=什么、will=想要、Quote=配额、Hotel/Test 本语同形），抄底版前逐词对照词典；(2) **locale 先在时计数不变量不增长**（de 路由已在 manifest，与 99 新增 locale +30 计数断言相反）；(3) **德式数字与 stats 原样并存**——译文内 12.000 m²，stats.value 原样 '12,000 m²'；(4) 归档件双检 prettier + eslint。**SeoLanding 19/19 locale 全清偿**；挂账余 posts / v2 / solutions 正文 / guides。
 
+## §25 guides-wiring-101 — guides [lang] 页接线（difficulty/category UI 键 ×21 + astro 接线）
+
+**背景**：guides **接线批**（非数据翻译）——index/[slug] 页硬编码 EN 文案与 FR label map 转 SSOT t() 接线 + EN 回退；guide 数据本体（29 条 ×18 locale）留后续数据批（扩 getGuidesForLang）。摸底 EN 29 条 guides、**8 个 category**——旧代码 `catNames[cat] || cat` 使 comparison 回退渲染小写，补注入第 8 键 `guides.category.comparison` ×21；difficulty 3 键沿 `home.preview.beginner.label` 先例；**共 84 条注入**（63+21），注入后必须 `generate-data-json` + `_gen-uiall`。**关键源**：`<title>` 真源是 seo-meta.ts（Metadata.astro seoPageMeta 优先于 astro metadata，title 含 {SITE} 占位符）；route-manifest 不变量文件是 `src/i18n/generated/route-manifest.json`（非 dist/manifest.json）。
+
+| 脚本                                                             | 用途                                                                                                                    | 运行                                                                                      |
+| ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `i18n-merge/guides-wiring-101/_inject-guides-difficulty-101.cjs` | 84 条 UI 键注入 i18n-config.json（4 键 ×21 locale，幂等）                                                               | `node TOOLS/i18n-merge/guides-wiring-101/_inject-guides-difficulty-101.cjs`（后跑生成链） |
+| `i18n-merge/guides-wiring-101/_validate101.cjs`                  | 4 键 ×21 注入完整性 + astro 接线检查（无硬编码残留）                                                                    | `node TOOLS/i18n-merge/guides-wiring-101/_validate101.cjs`                                |
+| `i18n-merge/guides-wiring-101/_verify-dist101.cjs`               | dist walk：21 locale × guides/index title+chips 本地化 + slug 页 6 locale 抽验 + EN 回归 + route-manifest 13,858 不变量 | build 后 `node TOOLS/i18n-merge/guides-wiring-101/_verify-dist101.cjs`                    |
+| `i18n-merge/guides-wiring-101/_live-verify101.mjs`               | 线上验证：同 dist 断言 fetch afarer.com（跟随 308 尾斜杠重定向）                                                        | 部署后 `node TOOLS/i18n-merge/guides-wiring-101/_live-verify101.mjs`                      |
+
+**验证**：validate **4/4 PASS** → prettier → check EXIT=0 → build 13,859 页 → dist **555/555 PASS**（首轮 3 类失败均系测试预期错误：title 源误判 astro metadata / route-manifest 误用 dist/manifest.json / v2.problem 误抄回退文案 'The challenge'）→ 归档双检 prettier + eslint 0。**注意**：(1) **Edit "applied successfully" 不等于落盘**——多编辑后必须 grep/read 复核（曾吃掉 th 'ขั้นสูง' 尾部致 SyntaxError）；(2) **dist HTML 断言容忍转义**——法文 d'achat → `&#39;`，has() 同时查原文与转义形式；(3) **EN v2.problem='The problem'**（astro 内 'The challenge' 只是回退文案，断言勿照抄回退）；(4) **8 个 category 非 7**——comparison 第 8 键为本次补注入。guides 数据翻译为后续分片。
+
 ---
 
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
