@@ -1084,6 +1084,18 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+## L94. 分片 104：guides 数据批次 3——29 条 guide 全译 ×2 locale（da + sv）+ getGuidesForLang 接线（2026-10）
+
+① **范围决策**：guides 数据**批次 3**（L93 ④ 挂账续，斯堪的纳维亚对）——da/sv 两 locale 29 条 guide 数据全译（`guides-da.yaml`/`guides-sv.yaml`，67,589/66,040 bytes）+ `guides.da.ts`/`guides.sv.ts` wrapper + `getGuidesForLang` 扩 da/sv if/else；UI 层零改动，无路由变更，manifest/sitemap/build 计数全不变。术语决策（锚 faq-da/faq-sv）：DA board/boardet/boards、oppustelig、redningsvest、paddle/paddler/paddlere、finne、pund/tommer/fod/knob、tjek、prøv、80 %（空格）；SV bräda/brädor（**不用 board**）、uppblåsbar、paddel/paddlar/paddlare、flytväst、fena/fenor、pund/tum/fot/knop、Kontrollera、prova（非 test）、80 %（空格）、engelska mil、kurshållning（tracking）、framåttag/sveptag/stödtag/dragtag（strokes）、bakvattensvängar（eddy turns）、färjning（ferrying）、vind från land（offshore）、deplacerande stäv（displacement bow）。EN 泄漏 per-locale allowlist（大小写敏感）：da 允许 board/boards/paddle/paddler/paddlers/paddling/**have**（have 为丹麦语合法动词"拥有"，假朋友；sv 不含——瑞典语用 ha）；sv 仅 paddling。SV 回避词实测陷阱：'all' 单独 token 撞 EN 指示词（用 alla/allt/hela 替代；allround 连写不撞）、'see' 撞但 'se'（单 e）安全、'test'→prova、'custom'→skräddarsydd、**SUP:a 在瑞典语=酗酒，禁用**（改 "paddla SUP"）。
+
+② **实施**：(1) 大 yaml 分片落盘——temp `_gd1-4`/`_sv1-4` 各 4 part（R1-8/R9-15/R16-22/R23-29，8/7/7/7 切分）+ `_concat104.cjs` 拼接（js-yaml 自检 29 records + 14 keys/record）；(2) `_validate104.cjs`（argv locale 过滤，默认 da,sv）——da 首轮 14 hits 全解释（10×"have" 丹麦语合法动词 + 3 句首大写 "Boards"/"Paddler" 改写措辞 + 1 ctx 截断同 have）修 3 处文本后 errors=0；sv 首轮 1 残留（句首 "Paddling bygger"→"Paddlingen bygger"）修后 errors=0；(3) `_fix-colons-104.cjs` 两 yaml 0 修复（起草期 em dash "—" 规避 `: ` 生效）；(4) wrapper + localized-data.ts 扩展 → check passed（四段全绿）→ build 13,859 页不变；(5) `_verify-dist104.cjs` dist 验证 **94/94 PASS**。
+
+③ **踩坑**：(1) **归档落盘要当场核验**——`_concat104.cjs` 之前只写了 temp 未拷入归档目录，首跑 `MODULE_NOT_FOUND` 后才发现，补拷贝再跑；(2) validator/concat 从**项目根**以相对路径调用（`node TOOLS/i18n-merge/guides-data-104/_xxx.cjs`），在归档目录内跑会把相对路径拼成双重路径报错；(3) SV 句首大写 "Paddling" 撞 allowlist（大小写敏感），名词化 "Paddlingen" 规避（DA 同理用 "Paddlingen"/改写句式）；(4) TOOLS 下 `.cjs` 在 eslint.config.js 显式 ignore（`TOOLS/**/*.cjs`）——归档脚本以 node --check + prettier 为准，`--no-ignore` 强跑的 require-import 报错不算数；(5) 术语先例以 faq-da/sv.yaml 为权威。工具归档 `TOOLS/i18n-merge/guides-data-104/`（tool_instrction.md §28）。
+
+④ **回归数字**：（待 CI/线上验证后补）
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 

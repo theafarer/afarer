@@ -504,6 +504,22 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+## §28 guides-data-104 — guides 数据批次 3（29 条 guide 全译 ×2 locale：da + sv）
+
+**背景**：guides **数据翻译批 3**（§27 批 2 续）——29 条 guide 全译 da/sv（`src/data/guides-da.yaml` / `guides-sv.yaml`），wrapper `guides.da.ts`/`guides.sv.ts` + `localized-data.ts` getGuidesForLang 扩 da/sv if/else；UI 层零改动。术语（权威 faq-da/sv.yaml）：DA board/boardet/boards、oppustelig、redningsvest、pund/tommer/fod/knob、80 %（空格）、tjek/prøv；SV bräda/brädan/brädor（不用 board）、uppblåsbar、paddel/paddlar、flytväst、pund/tum/fot/knop、prova（非 test）、80 %（空格）、framåttag/sveptag/stödtag/dragtag、kurshållning（tracking）、vind från land（offshore）。技术词不译：SUP/PVC/PSI/CE/USCG/UV/GPS/VHF/EVA/EPS/HH/Clifton/leash/drop-stitch/O-ring；英寸记号、mph、°F、`$` 数额原样。EN 泄漏 per-locale allowlist：**da 允许 board/boards/paddle/paddler/paddlers/paddling/have（丹麦语动词 at have）、sv 仅允许 paddling（均大小写敏感）**。SV 起草回避：'all' 独立 token 撞 EN_INDICATOR（用 alla/allt/hela）、句首大写 "Paddling" 撞 allowlist（名词化 "Paddlingen"）、SUP:a（=酗酒）禁用。无路由变更，计数全不变。
+
+| 脚本                                             | 用途                                                                                                                                                                     | 运行                                                                               |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| `i18n-merge/guides-data-104/_concat104.cjs`      | temp part 文件（~300 行/片，Write 尺寸限制）拼接 guides-{da,sv}.yaml + js-yaml 自检（count=29 + 14 keys/record；断言 count 而非仅解析成功）                              | `node TOOLS/i18n-merge/guides-data-104/_concat104.cjs da                           | sv [tempDir]`（需 part 文件） |
+| `i18n-merge/guides-data-104/_fix-colons-104.cjs` | yaml 纯标量含 `: ` 自动单引号包裹（' → ''）；**必须从项目根跑**（src/data 相对路径依赖 cwd，temp 下跑 ENOENT）                                                           | 项目根 `node TOOLS/i18n-merge/guides-data-104/_fix-colons-104.cjs`                 |
+| `i18n-merge/guides-data-104/_validate104.cjs`    | da/sv 各 29 条：EN（guides.ts 切片 eval）keyTree deep-compare + 14 字段不变量 + steps/faq 计数 + 翻译非空非同 EN + EN 泄漏扫描（per-locale allowlist，大小写敏感）       | `node TOOLS/i18n-merge/guides-data-104/_validate104.cjs [locales]`（默认 "da,sv"） |
+| `i18n-merge/guides-data-104/_verify-dist104.cjs` | dist walk：29 slug ×2 locale title+description 本地化 + da/sv guides index ×29 本地化标题 + 36 guide locale 源回归（fr/de/es/it/pt/nl/da/sv 本地、余 EN fallback；排除 llms/） | build 后 `node TOOLS/i18n-merge/guides-data-104/_verify-dist104.cjs`               |
+| `i18n-merge/guides-data-104/_live-verify104.mjs` | 线上验证：同 dist 断言 fetch afarer.com（curl.exe --socks5-hostname 127.0.0.1:10808，-L 跟随 308 尾斜杠重定向）                                                          | 部署后 `node TOOLS/i18n-merge/guides-data-104/_live-verify104.mjs`                 |
+
+**验证**：（待收口后补）。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。
