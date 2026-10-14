@@ -1092,7 +1092,7 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) **归档落盘要当场核验**——`_concat104.cjs` 之前只写了 temp 未拷入归档目录，首跑 `MODULE_NOT_FOUND` 后才发现，补拷贝再跑；(2) validator/concat 从**项目根**以相对路径调用（`node TOOLS/i18n-merge/guides-data-104/_xxx.cjs`），在归档目录内跑会把相对路径拼成双重路径报错；(3) SV 句首大写 "Paddling" 撞 allowlist（大小写敏感），名词化 "Paddlingen" 规避（DA 同理用 "Paddlingen"/改写句式）；(4) TOOLS 下 `.cjs` 在 eslint.config.js 显式 ignore（`TOOLS/**/*.cjs`）——归档脚本以 node --check + prettier 为准，`--no-ignore` 强跑的 require-import 报错不算数；(5) 术语先例以 faq-da/sv.yaml 为权威。工具归档 `TOOLS/i18n-merge/guides-data-104/`（tool_instrction.md §28）。
 
-④ **回归数字**：（待 CI/线上验证后补）
+④ **回归数字**：feat `71a6f1f` + style fix `da17003e` 经 socks5 推送——**首轮双 workflow 在 prettier 段红**（71a6f1f：38561101934 / 38561101936，`TOOLS/tool_instrction.md` §28 表格手写未过 prettier，**TIP：md 文档编辑后必须 `npx prettier --check` 再提交，check:prettier 覆盖全仓库含 TOOLS markdown**），`prettier --write` 修复 6 行（12 处 diff）后 `da17003e` **CI 双绿**（CI 38562091894 / Build & Deploy 38562091572）→ 线上 **94/94 PASS**（一次通过，`_live-verify104.mjs`，36 locale 含 /guides 回归确认 da/sv 走本地数据、余 fallback 正确）。
 
 ---
 
