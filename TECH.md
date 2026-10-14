@@ -1072,6 +1072,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+## L93. 分片 103：guides 数据批次 2——29 条 guide 全译 ×2 locale（pt + nl）+ getGuidesForLang 接线（2026-10）
+
+① **范围决策**：guides 数据**批次 2**（L92 ④ 挂账续）——pt/nl 两 locale 29 条 guide 数据全译（`guides-pt.yaml`/`guides-nl.yaml`）+ `guides.pt.ts`/`guides.nl.ts` wrapper + `getGuidesForLang` 扩 pt/nl if/else；UI 层零改动。术语决策：PT prancha/remada/remador/inflável/águas bravas/colete salva-vidas、80%（无空格）；NL supboard/opblaasbaar/peddel-woorden/draagvermogen/zwemvest/wildwater、正式 u/uw、80 %（空格）、luchtvaartmaatschappij（避 airline）；waterType/英寸记号/PSI/°F/$/产品名原样。EN 泄漏 per-locale allowlist：pt 允许 "paddle"、nl 允许 water/board(s)/beginner(s)；NL 额外回避撞形荷语词（was/had/test(s)/hotels/season/sports/days/hours/custom——既是英文也是检测陷阱）。无路由变更，manifest/sitemap/build 计数全不变。
+
+② **实施**：(1) 大 yaml 分片落盘——Write 工具单次 ~300 行 part 文件（temp `_gp1..3`+`_gp2b`/`_np1..3`）+ `_concat103.cjs` 拼接（js-yaml 自检 29 records + 14 keys/record）；(2) `_validate103.cjs`（argv locale 过滤，默认 pt,nl）——pt **errors=0 一次通过**；nl 首轮 2 残留（"Test het board"→Probeer、句首 "Boards onder"→Modellen onder）修后 errors=0；(3) `_fix-colons-103.cjs` 两 yaml 0 修复（起草期 em dash "—" 规避 `: ` 生效）；(4) wrapper + localized-data.ts 扩展 → check passed（四段全绿）→ build 13,859 页不变；(5) `_verify-dist103.cjs` dist 验证 **94/94 PASS**。
+
+③ **踩坑**：(1) **part 切分漏条**——PT 首拼 count=28（sup-board-materials 被遗漏），concat 自检当场抓出，补 `_gp2b.yaml` 后通过——**concat 必须断言 count=29 而非仅解析成功**；(2) **NL 句首大写撞 EN 泄漏**——小写 allowlist 词（boards）出现在句首大写形式仍命中（"Boards onder"），改写句式而非扩 allowlist；(3) 术语先例以 faq-{pt,nl}.yaml 为权威（NL 瑜伽体式锚 faq-nl L178）；(4) 多语言草稿必须即时写盘（对话内草稿压缩即丢）——part 文件即工作草稿，concat 前后可反复重拼。工具归档 `TOOLS/i18n-merge/guides-data-103/`（tool_instrction.md §27）。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 
