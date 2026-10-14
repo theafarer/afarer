@@ -1080,6 +1080,8 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) **part 切分漏条**——PT 首拼 count=28（sup-board-materials 被遗漏），concat 自检当场抓出，补 `_gp2b.yaml` 后通过——**concat 必须断言 count=29 而非仅解析成功**；(2) **NL 句首大写撞 EN 泄漏**——小写 allowlist 词（boards）出现在句首大写形式仍命中（"Boards onder"），改写句式而非扩 allowlist；(3) 术语先例以 faq-{pt,nl}.yaml 为权威（NL 瑜伽体式锚 faq-nl L178）；(4) 多语言草稿必须即时写盘（对话内草稿压缩即丢）——part 文件即工作草稿，concat 前后可反复重拼。工具归档 `TOOLS/i18n-merge/guides-data-103/`（tool_instrction.md §27）。
 
+④ **回归数字**：check passed（astro 0 error / eslint / prettier / i18n 四段全绿）→ build 13,859 页（route-manifest 13,858 / sitemap-0 11,164 不变）→ dist 验证 **94/94 PASS**（29 slug ×2 locale title+description 本地化 + pt/nl guides index ×29 本地化标题 + 36 个 guide locale 源回归：fr/de/es/it/pt/nl 本地数据、其余 EN fallback）→ 归档双检 prettier + eslint 0。commit `e9bb63b2`（feat 一次含全部 yaml+wrapper+TOOLS+TECH ①②③，无 chore——build 副产物无变更）经 `socks5://127.0.0.1:10808` 推送——**首推即 CI 双绿**：CI 38512957461 / Build & Deploy 38512957500 均 success → 线上验证 **94/94 PASS**（一次通过：`_live-verify103.mjs` 走 curl.exe --socks5-hostname 通道，36 locale 枚举与 102 一致）。guides 数据挂账余：批次 3+（余 14 locale：ar cs da el fi ja ko no pl ro ru sv th tr）。
+
 ---
 
 
