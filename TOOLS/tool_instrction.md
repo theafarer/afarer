@@ -568,6 +568,22 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+## §32 guides-data-108 — guides 数据批次 7（29 条 guide 全译 ×2 locale：ar + el）
+
+**背景**：guides **数据翻译批 7**（§31 批 6 续，闪语/希腊对）——29 条 guide 全译 ar/el（`src/data/guides-ar.yaml` / `guides-el.yaml`，58,589/75,918 字符，磁盘 94,839/127,097 bytes），wrapper `guides.ar.ts`/`guides.el.ts` + `localized-data.ts` getGuidesForLang 扩 ar/el if/else（现支持 fr/de/es/it/pt/nl/da/sv/pl/cs/no/fi/ru/tr/ar/el 十六 locale）；UI 层零改动。术语（权威 faq-ar/faq-el.yaml）：AR لوح/ألواح SUP、قابل للنفخ、صلب、مجداف/مجاديف、التجديف、زعنفة/زعانف、leash حلزوني、سترة نجاة、مضخة ثنائية المفعول、طقم إصلاح、رقعة、بذلة غوص、بدلة جافة、بوصة、باوند、قدم、عقدة、mph、80%（无空格）、Western digits、؟ 标点；EL σανίδα/σανίδες SUP、φουσκωτή、σκληρή、κουπί/κουπιά、κωπηλασία、πτερύγιο、leash σε σχήμα σπείρας、σωσίβιο、αντλία διπλής δράσης、κιτ επισκευής、μπάλωμα、στολή νεοπρενίου、στεγνή στολή、πλώρια、γάστρα、ραφές、βαλβίδα、λίμπρες/ίντσες/πόδια/κόμβοι、80%、δακτυλίοι D、**希腊问号 ";"**、whitewater=λευκά ύδατα/λευκών υδάτων、anti-slip surface=αντιολισθητική επιφάνεια、tandem=επιβίβαση δύο ατόμων；技术词不译同 §26-§31。relatedProducts 与 EN 逐条一致。无路由变更，计数全不变。
+
+| 脚本                                             | 用途                                                                                                                                                                                 | 运行                                                                                                           |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| `i18n-merge/guides-data-108/_concat108.cjs`      | temp 半片（ar/el 各 8 半片 = 4 part × a/b，Write 单次 ~16KB 安全限）fs concat 拼接 guides-{ar,el}.yaml + js-yaml 自检（count=29 + 14 keys/record）                                   | `node TOOLS/i18n-merge/guides-data-108/_concat108.cjs ar\|el [tempDir]`（需半片文件）                          |
+| `i18n-merge/guides-data-108/_fix-colons-108.cjs` | yaml 纯标量含 `: ` 自动单引号包裹（' → ''）；**必须从项目根跑**（src/data 相对路径依赖 cwd）                                                                                         | 项目根 `node TOOLS/i18n-merge/guides-data-108/_fix-colons-108.cjs`                                             |
+| `i18n-merge/guides-data-108/_validate108.cjs`    | ar/el 各 29 条：EN（guides.ts 切片 eval）keyTree deep-compare + 14 字段不变量 + steps/faq 计数 + 翻译非空非同 EN + EN 泄漏扫描（token 级；"whitewater" 为指示词，EL 须 λευκά ύδατα） | `node TOOLS/i18n-merge/guides-data-108/_validate108.cjs [locales]`（**单 locale 逐个跑**，多参数只输出第一个） |
+| `i18n-merge/guides-data-108/_verify-dist108.cjs` | dist walk：29 slug ×2 locale title+description 本地化 + ar/el guides index ×29 本地化标题 + 36 guide locale 源回归（十六 locale 本地、余 EN fallback；排除 llms/）                   | build 后 `node TOOLS/i18n-merge/guides-data-108/_verify-dist108.cjs`                                           |
+| `i18n-merge/guides-data-108/_live-verify108.mjs` | 线上验证：同 dist 断言 fetch afarer.com（curl.exe --socks5-hostname 127.0.0.1:10808，-L 跟随 308 尾斜杠重定向）                                                                      | 部署后 `node TOOLS/i18n-merge/guides-data-108/_live-verify108.mjs`                                             |
+
+**验证**：concat ar（58,589 字符/94,839 B）/el（75,918 字符/127,097 B）各 29 records → validate **单 locale 逐个跑**——ar 首轮 errors=0（起草期自查已捕获错字 التييار 与中文"许多"混入）；el 首轮捕获 _el4b "whitewater" ×7 EN-RESIDUE → 修半片（λευκά ύδατα/λευκών υδάτων）重拼复验 0 → fix-colons 两 yaml 各 0 修复 → prettier 均 unchanged → 复验双 0 errors → check passed（astro 0 errors）→ build 13,859 页 → dist **94/94 PASS**。**注意**：(1) **多语种长文混入污染**——AR 批混入中文与英文 meta 段落、EL 批混入阿拉伯文 ضد/俄文 против/英文 against/Latin run 嵌希腊词（ξαναμπaine、SUPby），EN-RESIDUE 只拦英文 token，**他语种混入须 write 后 grep 自查字符 run**；(2) "whitewater" 是 EN 指示词（EL 须译），'leash'/'PFD'/'mph'/系列名不在表可留；(3) AR RTL bidi 是浏览器渲染问题，文件内容无碍；(4) bytes= 为字符数，磁盘 UTF-8 字节更大（AR 58,589→94,839 B；EL 75,918→127,097 B）；(5) 半片是源头——改错改半片重拼。guides 数据挂账余：批次 8+（ja ko ro th）。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。
