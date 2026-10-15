@@ -1128,6 +1128,8 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) **verify 脚本 copy-transform 漏改**——`_verify-dist107.cjs` 从 106 模板复制后 byLoc 未加 ru/tr 条目（"list is not iterable"）、§2 索引检查 locale 列表仍 no/fi，运行时才暴露；模板复制后逐段核对 locale 引用；(2) **YAML 值内 `": "` 须引号**（RU R4 title 触发 js-yaml "bad indentation"，改半片重拼）；**TR 值以 % 开头是 YAML tag 指示符**（R17 step5 `%80'i aşarsanız` 双引号包裹）；(3) **EN-RESIDUE token 级匹配：非 ASCII 字母切断 token**——TR ş ı ğ ü ö ç 切断 Latin run，ASCII run 恰为 EN 指示词的土耳其词会误报（如 allık→all），起草期规避（TR 避英文 "test" 用 deneyin/sınayın）；RU 西里尔文无此风险；(4) concat 输出 "bytes=" 为字符数，磁盘 UTF-8 字节数更大（RU 西里尔 2 字节/字符：68K 字符→113,646 B），勿以 bytes= 判文件异常。工具归档 `TOOLS/i18n-merge/guides-data-107/`（tool_instrction.md §31）。
 
+④ **回归数字**：check passed（astro 0 errors / eslint / prettier / i18n 四段全绿）→ build 13,859 页 → dist 验证 **94/94 PASS**（29 slug ×2 locale title+description 本地化 + ru/tr guides index ×29 本地化标题 + 36 个 guide locale 源回归：十四 locale 本地数据、其余 EN fallback）→ commit `7db456a1`（feat 一次含全部 yaml+wrapper+TOOLS+TECH ①②③）经 socks5 推送——**首推 CI 绿 / Build & Deploy 失败**：全部 build/check/test/bundle/R2 步 success（CI 日志确认 13,859 页、bundle gate OK），唯 "Deploy Pages" 步 wrangler 上传 14,084 文件成功后 Cloudflare API 返回 `Internal authentication error [code: 10500]`（deployments 端点，**Cloudflare 侧瞬时故障，非代码问题**）——经 GitHub API `rerun-failed-jobs`（HTTP 201）重跑同 run → **双绿**（CI 38712800091 / Build & Deploy 38712800450）→ 线上验证 **94/94 PASS**（`_live-verify107.mjs` 修复模板残留——byLoc no/fi 误指 ru/tr yaml、§2 索引 locale 列表仍 no/fi——后一次通过，36 locale 含 /guides 回归确认十四 locale 走本地数据、余 fallback 正确）。guides 数据挂账余：批次 7+（ar el ja ko ro th）。
+
 ---
 
 

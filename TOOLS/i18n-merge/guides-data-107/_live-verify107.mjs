@@ -85,8 +85,8 @@ async function fetchPage(url) {
 
 const enGuides = loadEnGuides();
 const byLoc = {
-  no: loadYaml('guides-ru.yaml'),
-  fi: loadYaml('guides-tr.yaml'),
+  no: loadYaml('guides-no.yaml'),
+  fi: loadYaml('guides-fi.yaml'),
   pl: loadYaml('guides-pl.yaml'),
   cs: loadYaml('guides-cs.yaml'),
   fr: loadYaml('guides-fr.yaml'),
@@ -97,6 +97,8 @@ const byLoc = {
   nl: loadYaml('guides-nl.yaml'),
   da: loadYaml('guides-da.yaml'),
   sv: loadYaml('guides-sv.yaml'),
+  ru: loadYaml('guides-ru.yaml'),
+  tr: loadYaml('guides-tr.yaml'),
 };
 
 console.log('== 1. live ru/tr guide pages: localized title/description ==');
@@ -121,7 +123,7 @@ for (const loc of ['ru', 'tr']) {
 }
 
 console.log('== 2. live ru/tr guides index lists localized titles ==');
-for (const loc of ['no', 'fi']) {
+for (const loc of ['ru', 'tr']) {
   const { status, html } = await fetchPage(`${BASE}/${loc}/guides/`);
   if (!html) {
     bad(loc, '/guides/ HTTP ' + status);
