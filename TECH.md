@@ -1108,6 +1108,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+## L96. 分片 106：guides 数据批次 5——29 条 guide 全译 ×2 locale（no + fi）+ getGuidesForLang 接线（2026-10）
+
+① **范围决策**：guides 数据**批次 5**（L95 ④ 挂账续，北欧对）——no/fi 两 locale 29 条 guide 数据全译（`guides-no.yaml`/`guides-fi.yaml`，64,749/69,454 bytes）+ `guides.no.ts`/`guides.fi.ts` wrapper + `getGuidesForLang` 扩 no/fi if/else（现支持 fr/de/es/it/pt/nl/da/sv/pl/cs/no/fi 十二 locale）；UI 层零改动，无路由变更，manifest/sitemap/build 计数全不变。术语决策（锚 faq-no/faq-fi）：NO brett/brettet、oppustelig、padleåre/åre、padle/padling/padler、finne、spiral-leash、redningsvest、dobbeltvirkende pumpe、reparasjonssett/lapp、pund/tommer/fot/knop、nesen、våtdrakt/tørrdrakt、svingtak/støttetak/trekktak、cross-bow-sving、kjernen/overkroppsrotasjon、turplan、"vind fra land"、80 %（有空格）；FI lauta/lauttaa、täytettävä/tyhjennää、mela/melan、meloa/melonta/meloja、evä、kierreleash、pelastusliivi、korjaussarja/paikka、paunaa/tuumaa/jalkaa/solmua、keula/perä/kansi、märkäpuku/kuivapuku、etumelaveto/kaariveto/ristiveto/tukiveto/sivuveto、keskivartalo、sääennuste、reittisuunnitelma、venttiilin ydin/nasta、home、80 %（有空格）；leash/PFD/drop-stitch 保留。relatedProducts 与 EN 逐条一致。
+
+② **实施**：(1) 大 yaml 分片落盘——temp `_no1-4`/`_fi1-4` 各 4 part（R1-8/R9-15/R16-22/R23-29，8/7/7/7 切分；7-entry part 超 Write 单次尺寸再拆 a/b 两半 + `node -e` fs concat 成 part）+ `_concat106.cjs` 拼接（js-yaml 自检 29 records + 14 keys/record）；(2) `_validate106.cjs`（argv locale 过滤，默认 no,fi）——首轮 3 EN-RESIDUE 全为子串跨语言撞词（NO 大写 "Test" ×1 → "Prøv brettet"；FI "pääsee" 含 "see" ×2 → "vesi valuu ulos"/"kosteus poistuu"）修 part 半片重拼后 errors=0；(3) `_fix-colons-106.cjs` 两 yaml 0 修复（起草期 em dash "—" 规避 `: ` 生效）；(4) wrapper + localized-data.ts 扩展 → check passed（astro 0 errors，仅既有 warnings）→ build 13,859 页不变；(5) `_verify-dist106.cjs` dist 验证 **94/94 PASS**（29 slug ×2 locale title+description + no/fi index ×29 + 36 locale 源回归：十二 locale 本地数据、余 EN fallback）。
+
+③ **踩坑**：(1) **Write 工具单次落盘尺寸硬限**——7-entry yaml part（~20KB）单写报 "JSON parsing failed"，~16KB 内安全；超限内容拆 a/b 两半分别写盘、`node -e "fs.writeFileSync(...concat...)"` 拼成 part 再走 concat；(2) **EN-RESIDUE 为子串级匹配，跨语言撞词频发**——NO 大写 "Test"、FI "pääsee"（含 "see"）均被拦；起草期主动规避任何含 EN 指示子串的词（pääsee → valuu ulos/poistuu、Test → Prøv），修错须改 part 半片源头再重拼，不得改拼接产物。工具归档 `TOOLS/i18n-merge/guides-data-106/`（tool_instrction.md §30）。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 

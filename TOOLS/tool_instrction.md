@@ -536,6 +536,22 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+## §30 guides-data-106 — guides 数据批次 5（29 条 guide 全译 ×2 locale：no + fi）
+
+**背景**：guides **数据翻译批 5**（§29 批 4 续，北欧对）——29 条 guide 全译 no/fi（`src/data/guides-no.yaml` / `guides-fi.yaml`），wrapper `guides.no.ts`/`guides.fi.ts` + `localized-data.ts` getGuidesForLang 扩 no/fi if/else（现支持 fr/de/es/it/pt/nl/da/sv/pl/cs/no/fi 十二 locale）；UI 层零改动。术语（权威 faq-no/faq-fi.yaml）：NO brett/brettet、oppustelig、padleåre/åre、padle/padling/padler、finne、spiral-leash、redningsvest、dobbeltvirkende pumpe、reparasjonssett/lapp、pund/tommer/fot/knop、svingtak/støttetak/trekktak、cross-bow-sving、turplan、"vind fra land"、80 %（有空格）；FI lauta/lauttaa、mela/melan、meloa/melonta/meloja、evä、kierreleash、pelastusliivi、korjaussarja/paikka、paunaa/tuumaa/jalkaa/solmua、märkäpuku/kuivapuku、etumelaveto/kaariveto/ristiveto/tukiveto/sivuveto、keskivartalo、reittisuunnitelma、venttiilin ydin/nasta、80 %（有空格）；技术词不译同 §26-§29（SUP/PVC/PSI/CE/USCG/UV/GPS/VHF/EVA/EPS/HH/Clifton/leash/drop-stitch/O-ring；英寸记号、mph、°F、`$` 数额原样）。relatedProducts 与 EN 逐条一致。无路由变更，计数全不变。
+
+| 脚本                                             | 用途                                                                                                                                                                               | 运行                                                                                    |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `i18n-merge/guides-data-106/_concat106.cjs`      | temp part 文件（7-entry part 拆 a/b 两半落盘再 fs concat——Write 单次 ~20KB 报 JSON parsing failed）拼接 guides-{no,fi}.yaml + js-yaml 自检（count=29 + 14 keys/record）            | `node TOOLS/i18n-merge/guides-data-106/_concat106.cjs no\|fi [tempDir]`（需 part 文件） |
+| `i18n-merge/guides-data-106/_fix-colons-106.cjs` | yaml 纯标量含 `: ` 自动单引号包裹（' → ''）；**必须从项目根跑**（src/data 相对路径依赖 cwd）                                                                                       | 项目根 `node TOOLS/i18n-merge/guides-data-106/_fix-colons-106.cjs`                      |
+| `i18n-merge/guides-data-106/_validate106.cjs`    | no/fi 各 29 条：EN（guides.ts 切片 eval）keyTree deep-compare + 14 字段不变量 + steps/faq 计数 + 翻译非空非同 EN + EN 泄漏扫描（per-locale allowlist，大小写敏感、**子串级匹配**） | `node TOOLS/i18n-merge/guides-data-106/_validate106.cjs [locales]`（默认 "no,fi"）      |
+| `i18n-merge/guides-data-106/_verify-dist106.cjs` | dist walk：29 slug ×2 locale title+description 本地化 + no/fi guides index ×29 本地化标题 + 36 guide locale 源回归（十二 locale 本地、余 EN fallback；排除 llms/）                 | build 后 `node TOOLS/i18n-merge/guides-data-106/_verify-dist106.cjs`                    |
+| `i18n-merge/guides-data-106/_live-verify106.mjs` | 线上验证：同 dist 断言 fetch afarer.com（curl.exe --socks5-hostname 127.0.0.1:10808，-L 跟随 308 尾斜杠重定向）                                                                    | 部署后 `node TOOLS/i18n-merge/guides-data-106/_live-verify106.mjs`                      |
+
+**验证**：concat no（64,749 bytes）/fi（69,454 bytes）各 29 records → validate 首轮 3 EN-RESIDUE 全为子串跨语言撞词（NO 大写 "Test" → "Prøv brettet"；FI "pääsee" 含 "see" ×2 → "vesi valuu ulos"/"kosteus poistuu"）修 part 半片重拼后 errors=0 → fix-colons 0 修复（起草期 em dash "—" 规避 `: ` 生效）→ prettier 两 yaml unchanged → 复验 errors=0 → check passed（astro 0 errors）→ build 13,859 页 → dist **94/94 PASS**。**注意**：(1) **Write 单次落盘尺寸硬限**——7-entry yaml part（~20KB）报 "JSON parsing failed"，~16KB 内安全；拆 a/b 两半写盘 + `node -e` fs concat 拼接；(2) **EN-RESIDUE 子串级匹配跨语言撞词**——NO "Test"（大写）、FI "pääsee"（含 "see"）均被拦，起草期规避（pääsee → valuu ulos/poistuu）；(3) part 半片是源头——改错须改半片重拼，不得改拼接产物。guides 数据挂账余：批次 6+（ar el ja ko ro ru th tr 8 locale）。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。
