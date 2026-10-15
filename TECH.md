@@ -1138,6 +1138,8 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) **多语种长文混入污染（本批最大风险）**——阿拉伯语批次混入中文（"许多"）与英文 meta 段落；希腊语批次混入阿拉伯文（ضد）、俄文（против）、英文（against）、Latin run 嵌入希腊词（ξαναμπaine、SUPby、"aine"/"by" 字母混入）、希腊文错字连串（τραχύνανε、πραριν、δίεση επιβίβαση、ξέχνασμα των κόστος、σωτή）——EN-RESIDUE 扫描只拦英文 token，**非英文的他语种混入必须 write 后立即 grep 自查可疑字符 run**（[\u4e00-\u9fff]、[\u0600-\u06ff] 混入非 ar 文件、[α-ωΑ-Ω] 内嵌 Latin 等）；(2) **"whitewater" 是 EN-RESIDUE 指示词**——EL 不得留 Latin（λευκά ύδατα），而 'leash'/'PFD'/'mph'/系列名不在指示词表可留；(3) **AR RTL bidi 是浏览器渲染问题**，文件内容/校验无碍；(4) concat 输出 "bytes=" 为字符数，磁盘 UTF-8 字节数更大（AR 2 字节/字符：58,589 字符→94,839 B；EL 75,918→127,097 B）。工具归档 `TOOLS/i18n-merge/guides-data-108/`（tool_instrction.md §32）。
 
+④ **回归数字**：check passed（astro 0 errors / eslint / prettier / i18n 四段全绿）→ build 13,859 页 → dist 验证 **94/94 PASS**（29 slug ×2 locale title+description 本地化 + ar/el guides index ×29 本地化标题 + 36 个 guide locale 源回归：十六 locale 本地数据、其余 EN fallback）→ commit `2dbd7e07`（feat 一次含全部 yaml+wrapper+TOOLS+TECH ①②③+§32）经 socks5 推送——**首推即 CI 双绿**（CI 38724971626 / Build & Deploy 38724971732）→ 线上验证 **94/94 PASS**（`_live-verify108.mjs` 一次通过，36 locale 含 /guides 回归确认十六 locale 走本地数据、余 fallback 正确）。guides 数据挂账余：批次 8+（ja ko ro th）。
+
 ---
 
 
