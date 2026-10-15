@@ -1116,6 +1116,8 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) **Write 工具单次落盘尺寸硬限**——7-entry yaml part（~20KB）单写报 "JSON parsing failed"，~16KB 内安全；超限内容拆 a/b 两半分别写盘、`node -e "fs.writeFileSync(...concat...)"` 拼成 part 再走 concat；(2) **EN-RESIDUE 为子串级匹配，跨语言撞词频发**——NO 大写 "Test"、FI "pääsee"（含 "see"）均被拦；起草期主动规避任何含 EN 指示子串的词（pääsee → valuu ulos/poistuu、Test → Prøv），修错须改 part 半片源头再重拼，不得改拼接产物。工具归档 `TOOLS/i18n-merge/guides-data-106/`（tool_instrction.md §30）。
 
+④ **回归数字**：check passed（astro 0 errors / eslint / prettier 全仓 / i18n 四段全绿）→ build 13,859 页（route-manifest 13,858 / sitemap-0 11,164 不变）→ dist 验证 **94/94 PASS**（29 slug ×2 locale title+description 本地化 + no/fi guides index ×29 本地化标题 + 36 个 guide locale 源回归：十二 locale 本地数据、其余 EN fallback）→ commit `608f1684`（feat 一次含全部 yaml+wrapper+TOOLS+TECH ①②③，无 chore——build 副产物无变更）经 socks5 推送——**首推即 CI 双绿**：CI 38700004053 / Build & Deploy 38700003909 均 success → 线上验证 **94/94 PASS**（一次通过，`_live-verify106.mjs` 走 curl.exe --socks5-hostname 通道，36 locale 含 /guides 回归确认 no/fi 走本地数据、余 fallback 正确）。guides 数据挂账余：批次 6+（ar el ja ko ro ru th tr 8 locale）。
+
 ---
 
 
