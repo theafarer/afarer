@@ -1120,6 +1120,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+## L97. 分片 107：guides 数据批次 6——29 条 guide 全译 ×2 locale（ru + tr）+ getGuidesForLang 接线（2026-10）
+
+① **范围决策**：guides 数据**批次 6**（L96 ④ 挂账续，东欧/突厥对）——ru/tr 两 locale 29 条 guide 数据全译（`guides-ru.yaml`/`guides-tr.yaml`，113,646/72,697 bytes）+ `guides.ru.ts`/`guides.tr.ts` wrapper + `getGuidesForLang` 扩 ru/tr if/else（现支持 fr/de/es/it/pt/nl/da/sv/pl/cs/no/fi/ru/tr 十四 locale）；UI 层零改动，无路由变更，manifest/sitemap/build 计数全不变。术语决策（锚 faq-ru/faq-tr）：RU доска/SUP-доска、надувная/жёсткая、весло、гребля/грести/гребец、плавник、спиральный лиш、спасательный жилет、PFD、двухтактная помпа、ремкомплект/заплатка、HH-66/Clifton、фунт/дюйм/фут/узел、гидрокостюм、нос/корма、щиколотка/голень、80%（无空格）、береговой ветер（offshore）、водоизмещающий нос/корпус（displacement）、сердечник drop-stitch、$500-900 保留；TR tahta/tahtalar、şişme/serf、kürek/kürek çekmek/kürekçi、fin、leash、can yeleği、çift etkili pompa、tamir kiti/yama、pound/inç/fit/knot、ıslak/kuru kıyafet、burun/kuyruk、ayak bileği/baldır、%80（% 在数字前）、karadan denize esen rüzgar（offshore）、turizm（touring）、deplasman burnu/gövdesi（displacement）、kano（kayak）、dolar（金额用词）、撇号后缀合法（PSI'da、%80'i、SUP'lar）；技术词不译同 §26-§30。relatedProducts 与 EN 逐条一致。
+
+② **实施**：(1) temp a/b 半片落盘（Write 单次 ~16KB 安全限，7-entry part 拆两半 + node fs concat）→ `_join107.cjs`/`_join107tr.cjs` 拼 `_ru1-4.yaml`/`_tr1-4.yaml` → `_concat107.cjs ru|tr` 拼两 yaml（js-yaml 自检 29 records + 14 keys/record）；(2) `_validate107.cjs` **单 locale 逐个跑**（传多 locale 参数只输出第一个）——ru/tr 各首轮 errors=0；(3) `_fix-colons-107.cjs` 0 修复 + prettier --write（guides-tr 被 prettier 重排）→ 复验均 errors=0；(4) wrapper + localized-data.ts 扩展 → check passed（astro 0 errors / eslint / prettier / i18n 四段全绿）→ build 13,859 页 → `_verify-dist107.cjs` dist 验证 **94/94 PASS**（29 slug ×2 locale title+description + ru/tr index ×29 + 36 locale 源回归：十四 locale 本地数据、余 EN fallback）。
+
+③ **踩坑**：(1) **verify 脚本 copy-transform 漏改**——`_verify-dist107.cjs` 从 106 模板复制后 byLoc 未加 ru/tr 条目（"list is not iterable"）、§2 索引检查 locale 列表仍 no/fi，运行时才暴露；模板复制后逐段核对 locale 引用；(2) **YAML 值内 `": "` 须引号**（RU R4 title 触发 js-yaml "bad indentation"，改半片重拼）；**TR 值以 % 开头是 YAML tag 指示符**（R17 step5 `%80'i aşarsanız` 双引号包裹）；(3) **EN-RESIDUE token 级匹配：非 ASCII 字母切断 token**——TR ş ı ğ ü ö ç 切断 Latin run，ASCII run 恰为 EN 指示词的土耳其词会误报（如 allık→all），起草期规避（TR 避英文 "test" 用 deneyin/sınayın）；RU 西里尔文无此风险；(4) concat 输出 "bytes=" 为字符数，磁盘 UTF-8 字节数更大（RU 西里尔 2 字节/字符：68K 字符→113,646 B），勿以 bytes= 判文件异常。工具归档 `TOOLS/i18n-merge/guides-data-107/`（tool_instrction.md §31）。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 
