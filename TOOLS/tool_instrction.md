@@ -520,6 +520,22 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+## §29 guides-data-105 — guides 数据批次 4（29 条 guide 全译 ×2 locale：pl + cs）
+
+**背景**：guides **数据翻译批 4**（§28 批 3 续，西斯拉夫对）——29 条 guide 全译 pl/cs（`src/data/guides-pl.yaml` / `guides-cs.yaml`），wrapper `guides.pl.ts`/`guides.cs.ts` + `localized-data.ts` getGuidesForLang 扩 pl/cs if/else（现支持 fr/de/es/it/pt/nl/da/sv/pl/cs 十 locale）；UI 层零改动。术语（权威 faq-pl/faq-cs.yaml）：PL deska/deski/dmuchana、wiosło/wiosłowanie/pociągnięcie、pióro、smycz、płetwa、kamizelka ratunkowa、pompka、zestaw naprawczy、funt/cale/stopy/węzły、80%（无空格）；CS prkno/prkna/nafukovací/prken、pádlo/pádlovat/pádlování/pádlovář、záchranná vesta、ploutev/list/dřík、držení směru、klouzavost、libra/palce/stopy、80 %（有空格）；leash/PFD/drop-stitch 保留。技术词不译：SUP/PVC/PSI/CE/USCG/UV/GPS/VHF/EVA/EPS/HH/Clifton/leash/drop-stitch/O-ring；英寸记号、mph、°F、`$` 数额原样。relatedProducts 与 EN 逐条一致。PL/CS 假朋友词起草期规避：PL 'was'/'test'、CS 'most'（桥）/'test'。无路由变更，计数全不变。
+
+| 脚本                                             | 用途                                                                                                                                                                                 | 运行                                                                               |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| `i18n-merge/guides-data-105/_concat105.cjs`      | temp part 文件（~300 行/片，Write 尺寸限制）拼接 guides-{pl,cs}.yaml + js-yaml 自检（count=29 + 14 keys/record；断言 count 而非仅解析成功）                                          | `node TOOLS/i18n-merge/guides-data-105/_concat105.cjs pl                           | cs [tempDir]`（需 part 文件） |
+| `i18n-merge/guides-data-105/_fix-colons-105.cjs` | yaml 纯标量含 `: ` 自动单引号包裹（' → ''）；**必须从项目根跑**（src/data 相对路径依赖 cwd，temp 下跑 ENOENT）                                                                       | 项目根 `node TOOLS/i18n-merge/guides-data-105/_fix-colons-105.cjs`                 |
+| `i18n-merge/guides-data-105/_validate105.cjs`    | pl/cs 各 29 条：EN（guides.ts 切片 eval）keyTree deep-compare + 14 字段不变量 + steps/faq 计数 + 翻译非空非同 EN + EN 泄漏扫描（per-locale allowlist，大小写敏感）                   | `node TOOLS/i18n-merge/guides-data-105/_validate105.cjs [locales]`（默认 "pl,cs"） |
+| `i18n-merge/guides-data-105/_verify-dist105.cjs` | dist walk：29 slug ×2 locale title+description 本地化 + pl/cs guides index ×29 本地化标题 + 36 guide locale 源回归（fr/de/es/it/pt/nl/da/sv/pl/cs 本地、余 EN fallback；排除 llms/） | build 后 `node TOOLS/i18n-merge/guides-data-105/_verify-dist105.cjs`               |
+| `i18n-merge/guides-data-105/_live-verify105.mjs` | 线上验证：同 dist 断言 fetch afarer.com（curl.exe --socks5-hostname 127.0.0.1:10808，-L 跟随 308 尾斜杠重定向）                                                                      | 部署后 `node TOOLS/i18n-merge/guides-data-105/_live-verify105.mjs`                 |
+
+**验证**：concat pl（71,530 bytes）/cs（66,633 bytes）各 29 records → validate pl/cs 双 errors=0 → fix-colons 0 修复（起草期 em dash "—" 规避 `: ` 生效）→ prettier 两 yaml normalize 后复验 errors=0 → check passed（astro 0 errors + eslint 绿；**prettier 全仓 check 耗时 >5 分钟，单独跑且 timeout 600s**）→ build 13,859 页 → dist **94/94 PASS** → 归档双检 prettier + eslint 0。**注意**：(1) **辅助比对脚本结果须逐条人工直查交叉验证**——temp `_cmp.cjs` 报 22 mismatch 全为解析器假阳性（block-split 吃块尾换行致末项永不匹配、EN 双引号行含英尺记号漏计）；(2) PL/CS 假朋友词起草期规避（PL 'was'/'test'、CS 'most'/'test'）；(3) yaml part 内英尺记号在单引号标量中写 `12''6"`（' 双写转义）。guides 数据挂账余：批次 5+（ar el fi ja ko no ro ru th tr 10 locale）。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。

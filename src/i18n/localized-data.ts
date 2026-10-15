@@ -11,6 +11,10 @@ import { guidesPt } from '~/data/guides.pt';
 import { guidesNl } from '~/data/guides.nl';
 import { guidesDa } from '~/data/guides.da';
 import { guidesSv } from '~/data/guides.sv';
+
+import { guidesPl } from '~/data/guides.pl';
+
+import { guidesCs } from '~/data/guides.cs';
 import { contentV2RecordsDe } from '~/data/content-v2.de';
 import { faqs } from '~/data/faq';
 import type { FaqRecord } from '~/data/faq';
@@ -59,6 +63,12 @@ export function getGuidesForLang(lang: string | undefined): GuideRecord[] {
   }
   if (lang === 'sv') {
     return guidesSv;
+  }
+  if (lang === 'pl') {
+    return guidesPl;
+  }
+  if (lang === 'cs') {
+    return guidesCs;
   }
   return guides;
 }

@@ -1096,6 +1096,16 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+## L95. 分片 105：guides 数据批次 4——29 条 guide 全译 ×2 locale（pl + cs）+ getGuidesForLang 接线（2026-10）
+
+① **范围决策**：guides 数据**批次 4**（L94 ④ 挂账续，西斯拉夫对）——pl/cs 两 locale 29 条 guide 数据全译（`guides-pl.yaml`/`guides-cs.yaml`，71,530/66,633 bytes）+ `guides.pl.ts`/`guides.cs.ts` wrapper + `getGuidesForLang` 扩 pl/cs if/else（现支持 fr/de/es/it/pt/nl/da/sv/pl/cs 十 locale）；UI 层零改动，无路由变更，manifest/sitemap/build 计数全不变。术语决策（锚 faq-pl/faq-cs）：PL deska/deski/dmuchana、wiosło/wiosłowanie/pociągnięcie、pióro、smycz、płetwa、kamizelka ratunkowa、pompka、zestaw naprawczy、łatka、funt/cale/stopy/węzły、bystra woda、80%（无空格）；CS prkno/prkna/nafukovací/prken、pádlo/pádlovat/pádlování/pádlovář、záchranná vesta、ploutev/list/dřík、držení směru、klouzavost、trup/příď/záď、libra/palce/stopy、80 %（有空格）；leash/PFD/drop-stitch 保留。relatedProducts 与 EN 逐条一致（sup-explorer-11/sup-ocean-pulse/sup-tropical-breeze/sup-leviathan-wake/life-vest-classic/life-vest-pro/oars-pump-set/sup-cheetah-surge/sup-ocean-voyager）。
+
+② **实施**：(1) 大 yaml 分片落盘——temp `_pl1-4`/`_cs1-4` 各 4 part（R1-8/R9-15/R16-22/R23-29，8/7/7/7 切分）+ `_concat105.cjs` 拼接（js-yaml 自检 29 records + 14 keys/record）；(2) `_validate105.cjs`（argv locale 过滤，默认 pl,cs）pl/cs 各 29 条 **errors=0**；(3) `_fix-colons-105.cjs` 两 yaml 0 修复（起草期 em dash "—" 规避 `: ` 生效）；(4) wrapper + localized-data.ts 扩展 → check passed（astro 0 errors + eslint 绿；**prettier 全仓 check 单独跑、timeout 600s**）→ build 13,859 页不变；(5) `_verify-dist105.cjs` dist 验证 **94/94 PASS**（29 slug ×2 locale title+description + pl/cs index ×29 + 36 locale 源回归：十 locale 本地数据、余 EN fallback）。
+
+③ **踩坑**：(1) **辅助比对脚本结果须逐条人工直查交叉验证后方可采信**——temp `_cmp.cjs`（CS part vs EN 结构比对）报 22 mismatch 全为解析器假阳性（block-split 吃掉块尾换行致末项永不匹配、EN 双引号行含英尺记号漏计），逐条直查确认实际全部一致；(2) **prettier 全仓 check 耗时 >5 分钟**——bash 默认 120s/常规 300s timeout 会误判失败，须 600000ms；(3) PL/CS 假朋友词起草期规避（PL 'was'/'test'、CS 'most'（桥）/'test'），事后不扩 allowlist；(4) yaml part 内英尺记号在单引号标量中写 `12''6"`（' 双写转义）。工具归档 `TOOLS/i18n-merge/guides-data-105/`（tool_instrction.md §29）。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 
