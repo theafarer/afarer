@@ -1174,6 +1174,18 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+## L102. 分片 112：posts 正文批次 2——19 篇 news MDX 全译 ×2 locale（es + it）（2026-10）
+
+① **范围决策**：posts 正文**批次 2**（L101 ④ 挂账续，西意对）——es/it 两 locale 19 篇 news MDX 全译（`src/content/news/<loc>/<slug>.mdx`，每 locale 19 文件）。**机制零改动**（111 已就绪：blog.ts fetchPostsForLang/per-lang 缓存/EN 回退、5 个 `[lang]/news/` 模板、RelatedPosts/BlogHighlightedPosts、llms/news 与 search-index EN-only 守门全复用），纯内容批。frontmatter 翻译 title/excerpt/metadata.title/description/body，不变量 publishDate/updateDate/draft/image/category/tags/author（保 taxonomy URL）。术语：es "25 %" 空格+逗号小数（1,5 horas/0,9 mm）+点分千位（8.000/12.000）+paddle surf 借词；it "25%" 无空格（沿 guides-it 先例）+逗号小数+点分千位、sup/pagaia/pagaiatore/tavola 替代 paddle/board；`$` 金额原样（$8,000–$15,000 逗号保留）；技术词不译同 §26-§35（SUP/PVC/PSI/CE/USCG/UV/GPS/VHF/EVA/EPS/OEM/HH-66/Clifton/drop-stitch/O-ring/cross-bow/D-ring）；专有名词保留（afarer 小写/Hifond/ShineCountry/Workvigour/产品名/湖名/人名/Miami Marine Stadium Park & Basin）；Fleet Operations Director→director de operaciones de flotta/direttore delle operazioni di flotta。**ALLOW 定稿**：es={paddle, Paddle, Water, Life}（paddle surf 借词；Water=US Water Rescue Association、Life=Life Vest Pro/Classic 专名）；it={Paddle, Water, Life}（Paddle 仅 Lake Tahoe Paddle Club 专名）。it 借词一律改写而非 ALLOW：test→prova/sondaggio、season pass→Abbonamento stagionale、business→attività、club di paddle→club di pagaiatori、paddle→sup。
+
+② **实施**：19 篇 EN MDX 完整通读（含截断篇补读）→ es 19 + it 19 逐篇译写（Write ~16KB 安全限，一篇一写）→ `_validate112.cjs`（yaml 不变量 + 翻译字段非空非同 EN + token 级 EN-RESIDUE + ALLOW 分 es/it + locale 文件集与 EN 19 slugs 严格相等）跑至 errors=0 → prettier 38 MDX → 复跑 validator 仍 0 → check passed（astro 0 errors / eslint / prettier / i18n 四段全绿）→ build 13,859 页（计数不变）→ `_verify-dist112.cjs` errors=0。
+
+③ **踩坑**：(1) **YAML 单引号串含撇号必崩**——it 大量 l'/dell'/all' 撇号落在单引号 frontmatter 串内即 js-yaml parse error（"bad indentation of a mapping entry"），含撇号值一律双引号化（本轮修 4 处：it life-vest-pro-solas title、it preparing-sup-summer title+metadata.title、it commercial-sup-fleet-roi-resorts metadata.description）；(2) **token 化在非 ASCII 字母处切断**——es "allí/allá"→token "all" 撞 EN 指示词假阳性，改写措辞绕开（"en él se forja"/"aparte del personal"）不进 ALLOW，es "así"→"as" 同族（本轮无害）；(3) **PS 内联 node -e 的 String.raw 反引号在 PS 双引号内被转义吞掉**——复杂内联脚本一律写 temp .cjs 执行；(4) **Write ~20KB 报 "JSON parsing failed"**——单文件单写、一次消息仅一个 write。工具归档 `TOOLS/i18n-merge/posts-112/`（tool_instrction.md §36）。
+
+④ **回归数字**：check passed（astro 0 errors / eslint / prettier / i18n 四段全绿）→ build 13,859 页（计数不变）→ `_validate112.cjs` errors=0 → `_verify-dist112.cjs` errors=0（19 slug ×2 locale title+lang=loc+EN title 不在 + llms/news 恰 19 EN 条目 + search-index 无 /news/\<loc\>/）→ feat `2d192434` 一次含全部（MDX×38+TOOLS×2）经 socks5 推送——**首推即 CI 双绿**（CI 38897676531 / Build & Deploy 38897676612）→ 线上验证 es/it 文章页 lang+译题正确（/es/news/sup-tour-12-launch/、/it/news/life-vest-pro-solas/、/es/news/ 与 /it/news/ 列表页）。**挂账**：posts 正文余 16 locale（20 locale 计划，下批 pt+ar）、v2 / solutions 正文、[lang]/news/index.astro 硬编码 EN 分类标签与 "Read article" 字串。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 

@@ -625,6 +625,19 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 ---
 
+## §36 posts-112 — posts 正文批次 2（19 篇 news MDX 全译 ×2 locale：es + it）
+
+**背景**：posts **正文翻译批 2**（§35 挂账续，西意对）——19 篇 news MDX 全译 es/it（`src/content/news/{es,it}/<slug>.mdx`，每 locale 19 文件）。**机制零改动**（§35 接线全复用：blog.ts fetchPostsForLang/per-lang 缓存/EN 回退、5 个 `[lang]/news/` 模板、RelatedPosts/BlogHighlightedPosts、llms/news 与 search-index EN-only 守门；build 计数 13,859 不变）。术语：es "25 %" 空格+逗号小数（1,5 horas）+点分千位（8.000/12.000）+paddle surf 借词；it "25%" 无空格（沿 guides-it 先例）+逗号小数+点分千位、sup/pagaia/pagaiatore/tavola 替代 paddle/board；`$` 金额原样（$8,000–$15,000 逗号保留）；技术词不译同 §26-§35（SUP/PVC/PSI/CE/USCG/UV/GPS/VHF/EVA/EPS/OEM/HH-66/Clifton/drop-stitch/O-ring/cross-bow/D-ring）；专有名词保留（afarer 小写/Hifond/ShineCountry/Workvigour/产品名/湖名/人名/Miami Marine Stadium Park & Basin）；Fleet Operations Director 译出（director de operaciones de flotta / direttore delle operazioni di flotta）；it 借词一律改写而非 ALLOW（test→prova/sondaggio、season pass→Abbonamento stagionale、business→attività、club di paddle→club di pagaiatori、paddle→sup）。
+
+| 脚本 | 用途 | 运行 |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------| -------------------------------------------------------------- |
+| `i18n-merge/posts-112/_validate112.cjs` | es/it 各 19 篇：yaml frontmatter 不变量（publishDate/image/category/author 字符串相等 + tags join 相等 + metadata key set 相等）+ 翻译字段（title/excerpt/metadata.title/metadata.description/body）非空非同 EN + token 级 EN-RESIDUE（TECH 词表跳过；ALLOW：es={paddle, Paddle, Water, Life}（paddle surf 借词 + US Water Rescue Association/Life Vest Pro 专名）；it={Paddle, Water, Life}（Paddle 仅 Lake Tahoe Paddle Club 专名））+ locale 文件集与 EN 19 slugs 严格相等 | `node TOOLS/i18n-merge/posts-112/_validate112.cjs [locales]` |
+| `i18n-merge/posts-112/_verify-dist112.cjs` | dist：19 slug ×2 locale index.html 存在 + 译 title 在 + EN title 不在 + html lang=loc + llms/news 恰 19 EN 条目（无 es/it 子目录）+ search-index.json 无 /news/{es,it}/ 引用 | build 后 `node TOOLS/i18n-merge/posts-112/_verify-dist112.cjs` |
+
+**验证**：validate errors=0（es allí/allá→"all" 假阳性改写绕开；it 含撇号 YAML 串双引号化修 4 处后）→ prettier 后复验 0 → check passed（astro 0 errors / eslint / prettier / i18n 四段全绿）→ build 13,859 页（计数不变）→ dist verify errors=0 → feat `2d192434`（MDX×38+TOOLS×2）经 socks5 推送——**首推即 CI 双绿**（CI 38897676531 / Build & Deploy 38897676612）→ 线上验证 es/it 文章页 lang+译题正确（/es/news/sup-tour-12-launch/、/it/news/life-vest-pro-solas/、/es/news/ 与 /it/news/ 列表页）。**注意**：(1) **YAML 单引号串含 it 撇号（l'/dell'/all'）必崩**——js-yaml "bad indentation of a mapping entry"，含撇号值一律双引号化；(2) **token 化在非 ASCII 字母处切断**——es allí/allá 切出 "all" 撞 EN 指示词，改写措辞绕开不进 ALLOW；(3) **PS 内联 node -e 的 String.raw 反引号被吞**——复杂内联脚本写 temp .cjs 执行；(4) **Write ~20KB 报 "JSON parsing failed"**——单文件单写。挂账：posts 正文余 16 locale（20 locale 计划，下批 pt+ar）、v2 / solutions 正文、[lang]/news/index.astro 硬编码 EN 分类标签与 "Read article" 字串。
+
+---
+
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
 2. **永不手工编辑生成文件：** `src/i18n/generated/**`、`public/data/*.json`、`src/components/ui/icon-*.ts` 为构建产物，均由构建链重新生成；内容改动后跑 `npm run build`（或在仓库根手动跑生成链）。
 3. **改动后校验：** `npm run check`（astro + eslint + prettier + i18n 四段）与 `npm run build`。
