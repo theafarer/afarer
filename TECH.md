@@ -1162,6 +1162,18 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+## L101. 分片 111：posts 正文批次 1——19 篇 news MDX 全译 ×2 locale（fr + de）+ fetchPostsForLang 机制接线（2026-10）
+
+① **范围决策**：posts 正文**批次 1**（挂账首切，法德对）——fr/de 两 locale 19 篇 news MDX 全译（`src/content/news/<loc>/<slug>.mdx`，每 locale 19 文件）+ **机制接线**：blog.ts `getNormalizedPost(post, lang?)`（id 含 `/` 时 baseId=id.split('/').pop()，slug/permalink 由 baseId 生成）、`load()` 过滤 `!id.includes('/')`（EN 集不含翻译）、`fetchPostsForLang(lang)`（getCollection 前缀过滤 + `_postsByLang` per-lang 缓存 + locale 空回退 EN；'en'/'default' 直走 EN）、`findPostsByIds(ids, lang)`、`getRelatedPosts(post, max, lang)`；content.config.ts postCollection glob 扩 `*/*.md`、`*/*.mdx`；5 个 `[lang]/news/` 模板接 fetchPostsForLang（[slug] 本地 find 回退 EN、index/page 直取、category/tag 按 slug 过滤），RelatedPosts/BlogHighlightedPosts 组件传 currentLang。**getStaticPaths 保持 EN 枚举**（slug/页数/category/tag 不变量），页面 body 内覆盖取数。frontmatter 翻译 title/excerpt/metadata.title/description/body，不变量 publishDate/updateDate/draft/image/category/tags/author（保 taxonomy URL）。**EN-only 基建端点守门**：`llms/news/[slug].ts` getStaticPaths 过滤 `!id.includes('/')`（单段 [slug] 装不下 `de/` 前缀 id，不过滤 build 崩 "Missing parameter: slug"）、`search-index.json.ts` posts 段同过滤（否则产出错误 `/news/de/` URL）。术语：fr "25 %" 空格+逗号小数、paddle 借词保留；de „…" 引号、点分千位（8.000）、逗号小数；`$` 金额原样（$299/$50K–$200K+）；技术词不译同 §26-§34（SUP/PVC/PSI/CE/USCG/UV/GPS/VHF/EVA/EPS/OEM/ODM/MOQ/HH-66/Clifton/drop-stitch/O-ring/cross-bow）；专有名词保留（afarer 小写/Hifond/ShineCountry/Workvigour/产品名/湖名）；真英文短语改写（Marine Equipment Directive→(directive sur les équipements marins)/(Schiffsausrüstungsrichtlinie)、Fleet Operations Director→Flottenbetriebsleiter、Park and Basin→Park & Basin）。
+
+② **实施**：通读 19 篇 EN MDX → fr 19 + de 19 逐篇译写（Write ~16KB 安全限，一篇一写）→ `_validate111.cjs`（yaml frontmatter 不变量 + 翻译字段非空非同 EN + token 级 EN-RESIDUE + locale 文件集与 EN 19 slugs 严格相等）首跑 FAIL 若干 → 借词扩 ALLOW（fr: +paddle/Paddle/Test/Tests/Production/but；de: +Was/was/See/Paddle）+ de private-label-vs-oem "Original Equipment Manufacturing" 展开删除 → 复跑 errors=0 → prettier → 复验 0 → check passed → 首次 build **失败**（llms/news 单段路由）→ llms/search-index 过滤修复 → build 13,859 页（计数不变）→ `_verify-dist111.cjs` errors=0。
+
+③ **踩坑**：(1) **单段 [slug] 路由装不下 locale 前缀 id**——`getCollection('post')` 全量喂 `params:{slug: p.id}` 时 `de/xxx` 带斜杠 build 即崩（"Missing parameter: slug"），llms/news、search-index 两处须 `!id.includes('/')` 过滤；load() 已过滤故 news/rss 等 fetchPosts 消费方免疫；(2) **token 化在非 ASCII 字母处切断**——fr "début"→"D"+"but" 撞 EN 指示词 'but'，"Débutants"→"D"+"butants"；de "was/See" 是德语词；借词入 ALLOW 而非改写（fr paddle/Test(s)/Production、de Paddle/Was/See），真英文短语才改写；(3) **prettier 会重排 MDX 内联 HTML**——prettier 后必须复跑 validator（本轮复跑仍 0）；(4) **正则字面量不插值**——`/lang="${loc}"/` 中 `${loc}` 是字面字符，dist 校验初版 38 误报，改 `new RegExp` 拼接；(5) **Write ~20KB 报 "JSON parsing failed"**——单文件单写、一次消息仅一个 write。工具归档 `TOOLS/i18n-merge/posts-111/`（tool_instrction.md §35）。
+
+④ **回归数字**：check passed（astro 0 errors / eslint / prettier / i18n 四段全绿）→ build 13,859 页（计数不变）→ `_validate111.cjs` errors=0（19×2 文件集严格相等+全部不变量）→ `_verify-dist111.cjs` errors=0（19 slug ×2 locale title+lang=loc+EN title 不在 + llms/news 恰 19 EN 条目 + search-index 无 /news/\<loc\>/）→ feat `4ffbe274` 一次含全部（MDX×38+blog.ts+5 模板+2 组件+llms/search-index 守门+TOOLS×2）经 socks5 推送——**首推即 CI 双绿**（CI 38889490760 / Build & Deploy 38889490778）→ 线上验证 fr/de 文章页 lang+译题正确（/fr/news/drop-stitch-2-0/、/de/news/sup-tour-12-launch/、/fr/news/ 列表页）。**挂账**：posts 正文余 18 locale（下批 es+it）、v2 / solutions 正文、[lang]/news/index.astro 硬编码 EN 分类标签与 "Read article" 字串。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 
