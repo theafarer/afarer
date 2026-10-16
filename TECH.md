@@ -1158,6 +1158,8 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) **RO comma-below 变音是两套 Unicode 码位**——ș(U+0219)/ț(U+021B) 正、ş(U+015F)/ţ(U+0163) cedilla 变体错，起草后必按码位 grep 清零；(2) **RO 'test' 为 EN 禁词**（token 级全等），派生词 teste/testa/testare 合法——罗语词汇撞 EN 指示词时改写措辞规避；(3) **TH 全文冒号句预改写**——YAML plain scalar 值内 `": "` 即解析失败，TH 29 条全部含冒号句起草期直接改写规避（fix-colons 兜底 0 修复）；(4) **TH 单位一律泰文拼写**（10 ฟุต 6 นิ้ว/300-400 ปอนด์），不用 `'`/`"` 复合记号——R1 "12-14""/R6/R16 内 12-14"/10-11" 均判英尺、6"/8"/4"/5" 为英寸，泰文拼写天然规避双引号 YAML 转义；(5) **TH 磁盘字节膨胀**——Thai 每字符 3 bytes UTF-8，60,010 字符→145,907 B（约 2.4× 字符数），估算体量勿按 Latin 经验；(6) **Write 工具 ~20KB 报 "JSON parsing failed"**——单次写 3-4 条 TH（5-10KB）安全，一次消息只发一个 write。工具归档 `TOOLS/i18n-merge/guides-data-110/`（tool_instrction.md §34）。
 
+④ **回归数字**：check passed（astro 0 errors / eslint / prettier / i18n 四段全绿）→ build 13,859 页 → dist 验证 **94/94 PASS**（29 slug ×2 locale title+description 本地化 + ro/th guides index ×29 本地化标题 + 36 个 guide locale 源回归：二十 locale 本地数据、其余 EN fallback）→ commit `6fa50c74`（feat 一次含全部 yaml+wrapper+TOOLS+TECH ①②③+§34）经 socks5 推送——**首推即 CI 双绿**（CI 38862598656 / Build & Deploy 38862598632）→ 线上验证 **94/94 PASS**（`_live-verify110.mjs` 一次通过，36 locale 含 /guides 回归确认二十 locale 本地数据、余 fallback 正确）。**guides 数据挂账就此清零**（挂账余：posts / v2 / solutions 正文）。
+
 ---
 
 
