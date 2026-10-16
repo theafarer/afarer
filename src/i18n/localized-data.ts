@@ -21,6 +21,8 @@ import { guidesRu } from '~/data/guides.ru';
 import { guidesTr } from '~/data/guides.tr';
 import { guidesAr } from '~/data/guides.ar';
 import { guidesEl } from '~/data/guides.el';
+import { guidesJa } from '~/data/guides.ja';
+import { guidesKo } from '~/data/guides.ko';
 import { contentV2RecordsDe } from '~/data/content-v2.de';
 import { faqs } from '~/data/faq';
 import type { FaqRecord } from '~/data/faq';
@@ -93,6 +95,12 @@ export function getGuidesForLang(lang: string | undefined): GuideRecord[] {
   }
   if (lang === 'el') {
     return guidesEl;
+  }
+  if (lang === 'ja') {
+    return guidesJa;
+  }
+  if (lang === 'ko') {
+    return guidesKo;
   }
   return guides;
 }
