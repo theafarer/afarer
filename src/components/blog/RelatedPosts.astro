@@ -16,7 +16,7 @@ const { post } = Astro.props;
 const currentLang = getLangFromUrl(Astro.url);
 const _ = (k: string) => getUiForLang(currentLang)?.[k] || getUiForLang('en')?.[k] || '';
 
-const relatedPosts = post.tags ? await getRelatedPosts(post, 4) : [];
+const relatedPosts = post.tags ? await getRelatedPosts(post, 4, currentLang) : [];
 ---
 
 {

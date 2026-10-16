@@ -4,7 +4,7 @@ import Headline from '~/components/blog/Headline.astro';
 import Pagination from '~/components/blog/Pagination.astro';
 import Timeline from '~/components/blog/Timeline.astro';
 
-import { fetchPosts, blogPostsPerPage, blogTagRobots } from '~/utils/blog';
+import { fetchPosts, fetchPostsForLang, blogPostsPerPage, blogTagRobots } from '~/utils/blog';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import type { Post } from '~/types';
 import { languages } from '~/i18n/config';
@@ -49,7 +49,13 @@ export const getStaticPaths = async () => {
 
 const { lang, tag: tagSlug } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
-const { paginatedPosts, currentPage, totalPages, tagTitle } = Astro.props;
+const { currentPage, tagTitle } = Astro.props;
+
+// Locale entries under content/news/<lang>/ win; EN fallback for untranslated locales.
+const localizedPosts = (await fetchPostsForLang(lang)).filter((p) => p.tags?.some((tag) => tag.slug === tagSlug));
+const pageSize = blogPostsPerPage;
+const totalPages = Math.ceil(localizedPosts.length / pageSize);
+const paginatedPosts = localizedPosts.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
 const prevUrl =
   currentPage > 1

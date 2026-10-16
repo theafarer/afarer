@@ -5,7 +5,9 @@ import { SITE } from 'astrowind:config';
 export const prerender = true;
 
 export async function getStaticPaths() {
-  const posts = await getCollection('post');
+  // EN-only: localized posts (ids like 'de/<slug>') carry a '/' that cannot fit this
+  // single-segment [slug] route; llms endpoints stay English-only.
+  const posts = await getCollection('post', ({ id }) => !id.includes('/'));
   return posts.map((p) => ({ params: { slug: p.id } }));
 }
 

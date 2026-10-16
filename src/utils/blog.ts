@@ -40,7 +40,7 @@ const generatePermalink = async ({
     .join('/');
 };
 
-const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> => {
+const getNormalizedPost = async (post: CollectionEntry<'post'>, lang?: string): Promise<Post> => {
   const { id, data } = post;
   const { Content, remarkPluginFrontmatter } = await render(post);
 
@@ -57,7 +57,9 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
     metadata = {},
   } = data;
 
-  const slug = cleanSlug(id); // cleanSlug(rawSlug.split('/').pop());
+  // Locale entries live under `<lang>/<slug>.mdx`; strip the locale folder so slugs/urls match EN.
+  const baseId = lang && id.includes('/') ? id.split('/').pop() || id : id;
+  const slug = cleanSlug(baseId); // cleanSlug(rawSlug.split('/').pop());
   const publishDate = new Date(rawPublishDate);
   const updateDate = rawUpdateDate ? new Date(rawUpdateDate) : undefined;
 
@@ -76,7 +78,7 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
   return {
     id: id,
     slug: slug,
-    permalink: await generatePermalink({ id, slug, publishDate, category: category?.slug }),
+    permalink: await generatePermalink({ id: baseId, slug, publishDate, category: category?.slug }),
 
     publishDate: publishDate,
     updateDate: updateDate,
@@ -102,7 +104,9 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
 
 const load = async function (): Promise<Array<Post>> {
   const posts = await getCollection('post');
-  const normalizedPosts = posts.map(async (post) => await getNormalizedPost(post));
+  const normalizedPosts = posts
+    .filter((post) => !post.id.includes('/'))
+    .map(async (post) => await getNormalizedPost(post));
 
   const results = (await Promise.all(normalizedPosts))
     .sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf())
@@ -137,6 +141,28 @@ export const fetchPosts = async (): Promise<Array<Post>> => {
   return _posts;
 };
 
+const _postsByLang: Record<string, Array<Post>> = {};
+
+/**
+ * Locale-aware post list. Locale entries live under `src/content/news/<lang>/<slug>.mdx`;
+ * when a locale has no translated posts the EN list is returned as fallback.
+ */
+export const fetchPostsForLang = async (lang: string | undefined): Promise<Array<Post>> => {
+  if (!lang || lang === 'en' || lang === 'default') {
+    return fetchPosts();
+  }
+  if (!_postsByLang[lang]) {
+    const entries = await getCollection('post', ({ id }) => id.startsWith(`${lang}/`));
+    _postsByLang[lang] = entries.length
+      ? (await Promise.all(entries.map(async (post) => await getNormalizedPost(post, lang))))
+          .sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf())
+          .filter((post) => !post.draft)
+      : await fetchPosts();
+  }
+
+  return _postsByLang[lang];
+};
+
 /** */
 export const findPostsBySlugs = async (slugs: Array<string>): Promise<Array<Post>> => {
   if (!Array.isArray(slugs)) return [];
@@ -152,10 +178,10 @@ export const findPostsBySlugs = async (slugs: Array<string>): Promise<Array<Post
 };
 
 /** */
-export const findPostsByIds = async (ids: Array<string>): Promise<Array<Post>> => {
+export const findPostsByIds = async (ids: Array<string>, lang?: string): Promise<Array<Post>> => {
   if (!Array.isArray(ids)) return [];
 
-  const posts = await fetchPosts();
+  const posts = lang ? await fetchPostsForLang(lang) : await fetchPosts();
 
   return ids.reduce(function (r: Array<Post>, id: string) {
     posts.some(function (post: Post) {
@@ -244,8 +270,8 @@ export const getStaticPathsBlogTag = async ({ paginate }: { paginate: PaginateFu
 };
 
 /** */
-export async function getRelatedPosts(originalPost: Post, maxResults: number = 4): Promise<Post[]> {
-  const allPosts = await fetchPosts();
+export async function getRelatedPosts(originalPost: Post, maxResults: number = 4, lang?: string): Promise<Post[]> {
+  const allPosts = lang ? await fetchPostsForLang(lang) : await fetchPosts();
   const originalTagsSet = new Set(originalPost.tags ? originalPost.tags.map((tag) => tag.slug) : []);
 
   const postsWithScores = allPosts.reduce((acc: { post: Post; score: number }[], iteratedPost: Post) => {

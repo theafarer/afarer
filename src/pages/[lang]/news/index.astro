@@ -8,7 +8,7 @@ import NewsletterSignup from '~/components/widgets/NewsletterSignup.astro';
 
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
-import { fetchPosts, blogPostsPerPage, blogListRobots } from '~/utils/blog';
+import { fetchPostsForLang, blogPostsPerPage, blogListRobots } from '~/utils/blog';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/news.ts';
 
@@ -25,7 +25,7 @@ const newsHeader = page?.hero_text ?? {};
 const pageTitle = newsHeader.title || 'News';
 const pageSubtitle = newsHeader.subtitle || '';
 
-const posts = await fetchPosts();
+const posts = await fetchPostsForLang(lang);
 const pageSize = blogPostsPerPage;
 const totalPages = Math.ceil(posts.length / pageSize);
 const currentPage = 1;

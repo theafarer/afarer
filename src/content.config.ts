@@ -274,7 +274,7 @@ const entityRelationSchema = z
   .optional();
 
 const postCollection = defineCollection({
-  loader: glob({ pattern: ['*.md', '*.mdx'], base: 'src/content/news' }),
+  loader: glob({ pattern: ['*.md', '*.mdx', '*/*.md', '*/*.mdx'], base: 'src/content/news' }),
   schema: z.object({
     publishDate: z.date().optional(),
     updateDate: z.date().optional(),

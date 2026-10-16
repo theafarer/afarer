@@ -6,7 +6,7 @@ import Headline from '~/components/blog/Headline.astro';
 import Pagination from '~/components/blog/Pagination.astro';
 import Timeline from '~/components/blog/Timeline.astro';
 
-import { fetchPosts, blogPostsPerPage, blogListRobots } from '~/utils/blog';
+import { fetchPosts, fetchPostsForLang, blogPostsPerPage, blogListRobots } from '~/utils/blog';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/news.ts';
 import { languages } from '~/i18n/config';
@@ -41,7 +41,12 @@ export const getStaticPaths = (async () => {
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
-const { paginatedPosts, currentPage, totalPages } = Astro.props;
+const { currentPage } = Astro.props;
+
+const posts = await fetchPostsForLang(lang);
+const pageSize = blogPostsPerPage;
+const totalPages = Math.ceil(posts.length / pageSize);
+const paginatedPosts = posts.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
 const prevUrl = currentPage === 2 ? `/${lang}/news/` : `/${lang}/news/page/${currentPage - 1}/`;
 const nextUrl = currentPage < totalPages ? `/${lang}/news/page/${currentPage + 1}/` : undefined;

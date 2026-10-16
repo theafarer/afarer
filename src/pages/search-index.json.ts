@@ -244,7 +244,9 @@ export const GET: APIRoute = async () => {
   const items: any[] = [];
 
   try {
-    const posts = await getCollection('post');
+    // EN-only: localized posts (ids like 'de/<slug>') belong to /<lang>/news/ and are
+    // not part of the default search index yet.
+    const posts = await getCollection('post', ({ id }) => !id.includes('/'));
     for (const post of posts) {
       if (post.data.draft) continue;
       const body = post.body || '';
