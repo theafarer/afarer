@@ -1148,6 +1148,8 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ③ **踩坑**：(1) **翻译草稿的文本忠实度 validate 不查**——KO R26-28（sup-for-touring/sup-for-whitewater/sup-racing-fitness）初稿 category/difficulty/relatedProducts/relatedGuides/steps 计数全错仍过 keyTree 校验（草稿自洽即结构一致），**批量翻译的不变量字段必须逐条对照 EN 源复核**；(2) **YAML plain scalar 值内 `": "`（冒号+空格）即解析失败，括号内同理**——`(예: Cheetah Surge)` 改写措辞（예를 들어）或用 — 规避，起草后 grep 自查 `: ` 序列；(3) **多语种混入按词境判定**——中文单字"取"嵌入 KO 词中（取합니다→취합니다）须修，JA 近/点/格/体 为合法日语汉字（岸近く/点検/価格/体積）勿误判；(4) concat 输出 "bytes=" 为字符数，磁盘 UTF-8 字节更大（JA 37,407 字符→82,909 B；KO 39,661→76,311 B）；(5) **copy-transform 残留**——109 五脚本自 108 复制，validate 默认值注释/concat usage 提示/verify-dist 与 live-verify 日志头仍留 ar/el 字样，归档前逐一 grep 清零。工具归档 `TOOLS/i18n-merge/guides-data-109/`（tool_instrction.md §33）。
 
+④ **回归数字**：check passed（astro 0 errors / eslint / prettier / i18n 四段全绿）→ build 13,859 页 → dist 验证 **94/94 PASS**（29 slug ×2 locale title+description 本地化 + ja/ko guides index ×29 本地化标题 + 36 个 guide locale 源回归：十八 locale 本地数据、其余 EN fallback）→ commit `9c40d9d8`（feat 一次含全部 yaml+wrapper+TOOLS+TECH ①②③+§33）经 socks5 推送——**首推即 CI 双绿**（CI 38845867913 / Build & Deploy 38845867880）→ 线上验证 **94/94 PASS**（`_live-verify109.mjs` 修复 copy 笔误代理端口 10908→10808 后一次通过，36 locale 含 /guides 回归确认十八 locale 本地数据、余 fallback 正确）。guides 数据挂账余：批次 9+（ro th）。
+
 ---
 
 

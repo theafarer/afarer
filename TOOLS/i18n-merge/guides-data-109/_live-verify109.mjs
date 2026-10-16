@@ -2,7 +2,7 @@
 // Usage: node TOOLS/i18n-merge/guides-data-109/_live-verify109.mjs
 // NOTE: Node undici fetch does NOT support file:// — read local files with fs.
 //       Direct https to afarer.com is blocked in this environment; requests go through
-//       curl.exe --socks5-hostname 127.0.0.1:10908 (same local proxy as the git push).
+//       curl.exe --socks5-hostname 127.0.0.1:10808 (same local proxy as the git push).
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
@@ -65,7 +65,7 @@ async function fetchPage(url) {
         '--max-time',
         '30',
         '--socks5-hostname',
-        '127.0.0.1:10908',
+        '127.0.0.1:10808',
         '-w',
         '\n' + marker + '%{http_code}',
         url,
