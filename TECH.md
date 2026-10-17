@@ -1196,6 +1196,18 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ---
 
+## L104. 分片 114：posts 正文批次 4——19 篇 news MDX 全译 ×2 locale（nl + da）（2026-10）
+
+① **范围决策**：posts 正文**批次 4**（L103 ④ 挂账续，荷丹对）——nl/da 两 locale 19 篇 news MDX 全译（`src/content/news/<loc>/<slug>.mdx`，每 locale 19 文件）。**机制零改动**（111 机制全复用：fetchPostsForLang/EN 回退/模板/llms+search EN-only 守门），纯内容批。frontmatter 翻译 title/excerpt/metadata.title/description/body，不变量 publishDate/updateDate/draft/image/category/tags/author（保 taxonomy URL）。术语：nl/da 均 "25 %" 空格+逗号小数+点分千位（guides-nl/da yaml 实证先例）；nl 用 peddel/peddelen/peddelaar/peddelsoorten、da 用 paddle/paddler 借词原生拼写（guides 先例）；`$` 金额原样（$8,000–$15,000 逗号保留，guides nl/da 无 $ 先例沿 112）；技术词不译同 §26-§35（SUP/PVC/PSI/CE/USCG/UV/GPS/VHF/EVA/EPS/OEM/HH-66/Clifton/drop-stitch/O-ring/cross-bow/D-ring）；专有名词保留（afarer 小写/Hifond/ShineCountry/Workvigour/产品名/湖名/人名/Miami Marine Stadium Park & Basin）；SOLAS/MED 括注扩展（nl "SOLAS (veiligheid van mensenlevens op zee) en MED (richtlijn voor marine-uitrusting)"、da "SOLAS (sikkerhed for menneskeliv til søs) og MED (direktivet for maritimeudstyr)"）。**ALLOW 定稿**：nl={board, Board, boards, Boards, water, Paddle, Life, Water}（board/boards=荷兰语标准借词含句首大写、water=荷兰语原生同形词、Paddle=Lake Tahoe Paddle Club、Life=Life Vest Pro/Classic、Water=US Water Rescue Association 专名）；da={board, Board, boards, Boards, paddle, Paddle, paddler, Life, Water}（丹麦语标准借词同 pt paddle 先例）。
+
+② **实施**：19 篇 EN MDX 完整通读（113 教训执行）→ nl 19 + da 19 逐篇译写（Write ~16KB 安全限，一篇一写）→ 逐篇修正复合词手滑（见 ③-1，共 8 处散见笔误）→ `_validate114.cjs`（yaml 不变量 + 翻译字段非空非同 EN + token 级 EN-RESIDUE + ALLOW 分 nl/da + locale 文件集与 EN 19 slugs 严格相等）跑至 errors=0 → prettier 38 MDX（3 文件重排）→ 复跑 validator 仍 0 → check passed（astro 0 errors / eslint / prettier / i18n 四段全绿）→ build 13,859 页（计数不变）→ `_verify-dist114.cjs` errors=0。结构扫描（headings/^###/、<table> 计数、bullets±1、numbered±1、links 精确、词数比 0.6–1.6）38/38 OK **零重写**（通读 EN 先行奏效）。
+
+③ **踩坑**：(1) **连写长句时复合词手滑断开/粘连**——nl kerkmateriaal→kernmateriaal、Uitrustinggids→Uitrustingsgids、peddel seizoen→peddelseizoen、Kredsloophen→Kredsløbet；da kern e teknologi→kernteknologi、flåde.drift→flådedrift、reparations-sæt→reparationssæt、fusions- tape→fusionstape、Afkogning→Afrivningsprøve、afsalg schefen→afsalgschefen——写后立即逐篇复查修正；(2) **裸词规避清单**（token 级假阳性，实际避开）：test/was/had/hotels/events/see/units/quote/collection——nl was/had 用完成时 heeft 替代、da 祈使 "Se!" 改写措辞；(3) **线上 \<title\> 用 metadata.title 而非顶层 title**——livecheck 初版按顶层 title 比对 36/38 假失败（页面本身正确），改比 metadata.title 后全绿；(4) **check:prettier 覆盖 TOOLS/\*.cjs**——validator 中途改动后须 prettier --write 再入 check（本轮 _validate114.cjs 被标 warn）。工具归档 `TOOLS/i18n-merge/posts-114/`（tool_instrction.md §38）。
+
+④ **回归数字**：check passed → build 13,859 页（计数不变）→ `_validate114.cjs` errors=0 → `_verify-dist114.cjs` errors=0（19 slug ×2 locale title+lang=loc+EN title 不在 + llms/news 恰 19 EN 条目 + search-index 无 /news/\<loc\>/）→ feat `2c56bb6e` 一次含全部（MDX×38+TOOLS×2）经 socks5 推送——**首推即 CI 双绿**（CI 39001327034 / Build & Deploy 39001327059）→ 线上验证 nl/da 19 slug ×2 全 HTTP 200 + 文章/列表页 lang+metadata 译题正确（/nl/news/ "Nieuws — SUP-fabrikant & Nautische Updates"、/da/news/ "Nyheder — SUP-producent & nautiske opdateringer" 列表页）。**挂账**：posts 正文余 12 locale（20 locale 计划，下批 sv+pl）、v2 / solutions 正文、[lang]/news/index.astro 硬编码 EN 分类标签与 "Read article" 字串。
+
+---
+
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
 
