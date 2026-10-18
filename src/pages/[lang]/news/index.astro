@@ -17,7 +17,6 @@ export async function getStaticPaths() {
 }
 
 const lang = Astro.params.lang || 'en';
-const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'news');
@@ -34,11 +33,11 @@ const pagePosts = posts.slice(0, pageSize);
 const featured = posts[0] || null;
 
 const categories = [
-  { id: '', label: 'All' },
-  { id: 'technology', label: 'Technology' },
-  { id: 'manufacturing', label: 'Manufacturing' },
-  { id: 'industry-insights', label: 'Industry Insights' },
-  { id: 'corporation-news', label: 'Company News' },
+  { id: '', label: t('news.category.all') },
+  { id: 'technology', label: t('news.category.technology') },
+  { id: 'manufacturing', label: t('news.category.manufacturing') },
+  { id: 'industry-insights', label: t('news.category.industryInsights') },
+  { id: 'corporation-news', label: t('news.category.corporationNews') },
 ];
 
 const prevUrl = undefined;
@@ -95,7 +94,7 @@ const metadata = {
             <div class="p-8 md:p-12 flex flex-col justify-center">
               {featured.category && (
                 <span class="text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full self-start mb-4">
-                  {featured.category}
+                  {featured.category.title}
                 </span>
               )}
               <h2 class="text-2xl md:text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
@@ -103,7 +102,7 @@ const metadata = {
               </h2>
               <p class="mt-3 text-muted leading-relaxed">{featured.excerpt}</p>
               <span class="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary">
-                {pageTitle === 'News' ? 'Read article' : 'Read article'} →
+                {t('news.readArticle')} →
               </span>
             </div>
           </div>
@@ -130,23 +129,14 @@ const metadata = {
       class="mt-10 bg-gradient-to-r from-primary/10 to-secondary/5 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-4 border border-primary/20"
     >
       <div>
-        <h3 class="text-lg font-bold text-foreground">
-          {fr('OEM/ODM Manufacturing Guide', 'Guide de fabrication OEM/ODM')}
-        </h3>
-        <p class="text-sm text-muted mt-1">
-          {
-            fr(
-              'Download our complete guide to launching your private label SUP brand.',
-              'Téléchargez notre guide complet pour lancer votre marque de SUP en marque privée.'
-            )
-          }
-        </p>
+        <h3 class="text-lg font-bold text-foreground">{t('news.ctaTitle')}</h3>
+        <p class="text-sm text-muted mt-1">{t('news.ctaDesc')}</p>
       </div>
       <a
         href={`/${lang}/research/oem-buyer-guide`}
         class="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full transition-all whitespace-nowrap shrink-0"
       >
-        {fr('Download Free Guide →', 'Télécharger le guide gratuit →')}
+        {t('news.ctaButton')}
       </a>
     </div>
 
@@ -159,9 +149,6 @@ const metadata = {
       <Pagination prevUrl={prevUrl} nextUrl={nextUrl} />
     </div>
 
-    <NewsletterSignup
-      title="Stay Ahead in the SUP Industry"
-      subtitle="Get OEM insights, manufacturing guides, and industry trends delivered monthly."
-    />
+    <NewsletterSignup title={t('news.newsletterTitle')} subtitle={t('news.newsletterSubtitle')} />
   </section>
 </Layout>
