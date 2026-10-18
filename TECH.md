@@ -1266,6 +1266,8 @@ fi/factory.yaml 的 card3 desc 修复值（`desc: Kattavat OEM/ODM-palvelut: rä
 
 ④ **回归数字**：check passed ×2 → build 13,075 页 ×2（ja/ko 移除 -784 页：13,859→13,075；批次 120 计数不变）→ `_validate120.cjs` errors=0（首跑 10→修 8 处+PHRASE_ALLOW→0）→ `_verify-dist120.cjs` errors=0 → feat `c0d76335`（ja/ko 移除，`git add -u` 49 tracked）+ feat `dc028977`（批次 120：MDX×38+TOOLS×2）双 commit 推送均**首推 CI 双绿**（前者 CI 39102950642 / B&D 39102950584；后者 CI 39105112009 / B&D 39105112011）→ 线上验证：/ja/ /ko/ 404 + ro/th 19 slug ×2 全 HTTP 200 + 列表页译题正确（/ro/news/ "Noutăți — producător SUP și actualizări nautice | Afarer"、/th/news/ "ข่าวสาร — ผู้ผลิต SUP และอัปเดตทางทะเล | Afarer"）。**20 locale posts 计划收官**（批次 10/10，19 篇 ×20 locale = 380 篇 locale 正文）。**挂账**：v2 / solutions 正文、[lang]/news/index.astro 硬编码 EN 分类标签与 "Read article" 字串。
 ---
+111. **news 列表页 UI i18n（feat f3f59b3a，2026-10-18）**：`[lang]/news/index.astro` 原硬编码 5 个分类 tab 标签、"Read article"、OEM/ODM CTA 横幅与 NewsletterSignup 英文。已改为 11 个 `news.*` UI 键 × 19 语言（`news.category.{all,technology,manufacturing,industryInsights,corporationNews}`、`news.readArticle`、`news.cta{Title,Desc,Button}`、`news.newsletter{Title,Subtitle}`），注入 SSOT `src/data/site/i18n-config.json`（`public/data/` 整目录 gitignored，CI 构建时 generate 重生成）。页面经 `t()`（`getUiForLang(lang) → en` 回退）取值；13 个无 UI 字串的 locale（hr hu sk bg sl sr id he ms lt lv et tl）按既有行为回退英文。同批修复 featured 徽标渲染 `featured.category`（`{slug,title}` 对象）输出 `[object Object]` 的线上 bug，须取 `.title`。`fr()` 双语三元模式已从该页移除，新页面不要再用。
+---
 
 
 ### 9.1 SEO Meta Generation (seo-meta.ts)
