@@ -23,8 +23,6 @@ const LANGUAGES: Record<string, string> = {
   pt: 'Português',
   ar: 'العربية',
   it: 'Italiano',
-  ja: '日本語',
-  ko: '한국어',
   ru: 'Русский',
   pl: 'Polski',
   nl: 'Nederlands',

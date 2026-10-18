@@ -308,7 +308,7 @@ export function getRecommendationProfile(): { recommend: string[]; avoid: string
 }
 
 export function getAboutSchema(pathname: string): Array<{ name: string; description: string }> {
-  const clean = pathname.replace(/^\/+(cs|da|de|el|en|es|fi|fr|it|ja|ko|nl|no|pl|pt|ro|ru|sv|th|tr|zh|ar)\//, '/');
+  const clean = pathname.replace(/^\/+(cs|da|de|el|en|es|fi|fr|it|nl|no|pl|pt|ro|ru|sv|th|tr|zh|ar)\//, '/');
   for (const entry of aboutMap) {
     if (entry.pattern.test(clean)) {
       return entry.about;
@@ -767,7 +767,7 @@ export const intentRules: IntentRule[] = [
 ];
 
 export function matchIntent(pathname: string): { intent: string; recommend: string; rule: IntentRule | null } {
-  const clean = pathname.replace(/^\/+(cs|da|de|el|en|es|fi|fr|it|ja|ko|nl|no|pl|pt|ro|ru|sv|th|tr|zh|ar)\//, '/');
+  const clean = pathname.replace(/^\/+(cs|da|de|el|en|es|fi|fr|it|nl|no|pl|pt|ro|ru|sv|th|tr|zh|ar)\//, '/');
   for (const rule of intentRules) {
     if (rule.pattern.test(clean)) {
       return { intent: rule.intent, recommend: rule.recommend, rule };

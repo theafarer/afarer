@@ -6,8 +6,6 @@ import { evidenceMetaEl } from './el';
 import { evidenceMetaEs } from './es';
 import { evidenceMetaFi } from './fi';
 import { evidenceMetaIt } from './it';
-import { evidenceMetaJa } from './ja';
-import { evidenceMetaKo } from './ko';
 import { evidenceMetaNl } from './nl';
 import { evidenceMetaNo } from './no';
 import { evidenceMetaPl } from './pl';
@@ -26,8 +24,6 @@ export const EVIDENCE_META_OVERRIDES: Record<string, EvidenceMetaMap> = {
   es: evidenceMetaEs,
   fi: evidenceMetaFi,
   it: evidenceMetaIt,
-  ja: evidenceMetaJa,
-  ko: evidenceMetaKo,
   nl: evidenceMetaNl,
   no: evidenceMetaNo,
   pl: evidenceMetaPl,

@@ -7,8 +7,6 @@ const AVAILABLE_LOCALES = {
   es: '🇪🇸 Español',
   pt: '🇵🇹 Português',
   it: '🇮🇹 Italiano',
-  ja: '🇯🇵 日本語',
-  ko: '🇰🇷 한국어',
   ru: '🇷🇺 Русский',
   pl: '🇵🇱 Polski',
   ar: '🇸🇦 العربية',
@@ -407,24 +405,6 @@ export default config({
             copyright: fields.text({ label: 'Copyright text (HTML)' }),
           },
           { label: '🇮🇹 Italiano' }
-        ),
-        ja: fields.object(
-          {
-            site_name: fields.text({ label: 'Site Name' }),
-            site_tagline: fields.text({ label: 'Site Tagline' }),
-            site_description: fields.text({ label: 'Site Description', multiline: true }),
-            copyright: fields.text({ label: 'Copyright text (HTML)' }),
-          },
-          { label: '🇯🇵 日本語' }
-        ),
-        ko: fields.object(
-          {
-            site_name: fields.text({ label: 'Site Name' }),
-            site_tagline: fields.text({ label: 'Site Tagline' }),
-            site_description: fields.text({ label: 'Site Description', multiline: true }),
-            copyright: fields.text({ label: 'Copyright text (HTML)' }),
-          },
-          { label: '🇰🇷 한국어' }
         ),
         ru: fields.object(
           {

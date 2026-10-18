@@ -6,8 +6,6 @@
   pt: 'Português',
   ar: 'العربية',
   it: 'Italiano',
-  ja: '日本語',
-  ko: '한국어',
   ru: 'Русский',
   pl: 'Polski',
   nl: 'Nederlands',
@@ -38,8 +36,6 @@
 const DEFAULT_LANG = 'en';
 
 const LOCALE_MAP: Record<string, string> = {
-  KR: 'ko',
-  JP: 'ja',
   FR: 'fr',
   DE: 'de',
   ES: 'es',
@@ -77,8 +73,6 @@ const LOCALE_MAP: Record<string, string> = {
 };
 
 const ACCEPT_LANG_MAP: Record<string, string> = {
-  ko: 'ko',
-  ja: 'ja',
   fr: 'fr',
   de: 'de',
   es: 'es',

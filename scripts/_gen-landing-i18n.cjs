@@ -16,8 +16,6 @@ const VALID_LOCALES = new Set([
   'pt',
   'es',
   'it',
-  'ja',
-  'ko',
   'ru',
   'pl',
   'ar',

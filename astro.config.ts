@@ -28,8 +28,6 @@ const SITEMAP_LOCALES = new Set([
   'pt',
   'ar',
   'it',
-  'ja',
-  'ko',
   'ru',
   'pl',
   'nl',

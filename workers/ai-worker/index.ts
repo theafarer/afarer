@@ -158,8 +158,6 @@ function handleSitemap(): Response {
       `${baseUrl}/pt/`,
       `${baseUrl}/ar/`,
       `${baseUrl}/it/`,
-      `${baseUrl}/ja/`,
-      `${baseUrl}/ko/`,
       `${baseUrl}/ru/`,
       `${baseUrl}/pl/`,
       `${baseUrl}/nl/`,

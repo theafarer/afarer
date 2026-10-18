@@ -3,7 +3,7 @@ import os
 import re
 
 PAGES_DIR = r'C:\official\src\data\pages'
-LANGS = ['ar','cs','da','de','el','es','fi','fr','it','ja','ko','nl','no','pl','pt','ro','ru','sv','th','tr','zh']
+LANGS = ['ar','cs','da','de','el','es','fi','fr','it','nl','no','pl','pt','ro','ru','sv','th','tr','zh']
 
 # Read the English leadership block
 en_fp = os.path.join(PAGES_DIR, 'brand-team.yaml')

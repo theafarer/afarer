@@ -7,8 +7,6 @@ import el from './el';
 import es from './es';
 import fi from './fi';
 import it from './it';
-import ja from './ja';
-import ko from './ko';
 import nl from './nl';
 import no from './no';
 import pl from './pl';
@@ -32,8 +30,6 @@ export const solutionTranslations: Record<string, Record<string, SolutionOverrid
   es,
   fi,
   it,
-  ja,
-  ko,
   nl,
   no,
   pl,

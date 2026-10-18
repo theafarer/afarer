@@ -3,7 +3,7 @@ import os
 import sys
 
 PAGES_DIR = r'C:\official\src\data\pages'
-LANGS = ['ar','cs','da','de','el','es','fi','fr','it','ja','ko','nl','no','pl','pt','ro','ru','sv','th','tr','zh']
+LANGS = ['ar','cs','da','de','el','es','fi','fr','it','nl','no','pl','pt','ro','ru','sv','th','tr','zh']
 
 # Academy fields (added to {lang}/academy.yaml)
 ACADEMY_FIELDS = """\nknowledge_center_tagline: 'Knowledge Center'

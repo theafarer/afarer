@@ -21,8 +21,6 @@ import { guidesRu } from '~/data/guides.ru';
 import { guidesTr } from '~/data/guides.tr';
 import { guidesAr } from '~/data/guides.ar';
 import { guidesEl } from '~/data/guides.el';
-import { guidesJa } from '~/data/guides.ja';
-import { guidesKo } from '~/data/guides.ko';
 import { guidesRo } from '~/data/guides.ro';
 import { guidesTh } from '~/data/guides.th';
 import { contentV2RecordsDe } from '~/data/content-v2.de';
@@ -32,8 +30,6 @@ import { faqsFr } from '~/data/faq.fr';
 import { faqsDe } from '~/data/faq.de';
 import { faqsEs } from '~/data/faq.es';
 import { faqsIt } from '~/data/faq.it';
-import { faqsJa } from '~/data/faq.ja';
-import { faqsKo } from '~/data/faq.ko';
 import { faqsPt } from '~/data/faq.pt';
 import { faqsRu } from '~/data/faq.ru';
 import { faqsCs } from '~/data/faq.cs';
@@ -98,12 +94,6 @@ export function getGuidesForLang(lang: string | undefined): GuideRecord[] {
   if (lang === 'el') {
     return guidesEl;
   }
-  if (lang === 'ja') {
-    return guidesJa;
-  }
-  if (lang === 'ko') {
-    return guidesKo;
-  }
   if (lang === 'ro') {
     return guidesRo;
   }
@@ -129,8 +119,6 @@ const faqsByLang: Record<string, FaqRecord[]> = {
   de: faqsDe,
   es: faqsEs,
   it: faqsIt,
-  ja: faqsJa,
-  ko: faqsKo,
   pt: faqsPt,
   ru: faqsRu,
   cs: faqsCs,

@@ -20,8 +20,6 @@ const LOCALES = [
   'pt',
   'ar',
   'it',
-  'ja',
-  'ko',
   'ru',
   'pl',
   'nl',

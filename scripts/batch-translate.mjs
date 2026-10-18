@@ -22,8 +22,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 
 // --- Languages ---
-const MISSING_NAV_LANGS = ['de', 'pt', 'ar', 'it', 'ja', 'ko', 'ru', 'pl', 'zh'];
-const CONFIG_LANGS = ['fr', 'de', 'es', 'pt', 'it', 'ja', 'ko', 'ru', 'pl', 'zh', 'ar'];
+const MISSING_NAV_LANGS = ['de', 'pt', 'ar', 'it', 'ru', 'pl', 'zh'];
+const CONFIG_LANGS = ['fr', 'de', 'es', 'pt', 'it', 'ru', 'pl', 'zh', 'ar'];
 
 const LANG_LABELS = {
   en: 'English',
@@ -102,25 +102,21 @@ function generateSiteSettingsBlock(code) {
   const siteName =
     code === 'zh'
       ? 'afarer'
-      : code === 'ja'
-        ? 'afarer'
-        : code === 'ko'
-          ? 'afarer'
-          : code === 'ar'
-            ? 'afarer \u2014 القوارب المطاطية'
-            : code === 'ru'
-              ? 'afarer \u2014 Надувные лодки'
-              : code === 'pl'
+      : code === 'ar'
+        ? 'afarer \u2014 القوارب المطاطية'
+        : code === 'ru'
+          ? 'afarer \u2014 Надувные лодки'
+          : code === 'pl'
+            ? 'afarer'
+            : code === 'it'
+              ? 'afarer'
+              : code === 'pt'
                 ? 'afarer'
-                : code === 'it'
+                : code === 'es'
                   ? 'afarer'
-                  : code === 'pt'
+                  : code === 'de'
                     ? 'afarer'
-                    : code === 'es'
-                      ? 'afarer'
-                      : code === 'de'
-                        ? 'afarer'
-                        : 'afarer';
+                    : 'afarer';
 
   return `
 # --- Per-language site settings ---

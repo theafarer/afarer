@@ -14,8 +14,6 @@ const LANGS = [
   'pt',
   'ar',
   'it',
-  'ja',
-  'ko',
   'ru',
   'pl',
   'nl',

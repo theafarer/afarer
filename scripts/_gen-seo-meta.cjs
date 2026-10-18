@@ -72,8 +72,6 @@ const langs = [
   'pt',
   'es',
   'it',
-  'ja',
-  'ko',
   'ru',
   'pl',
   'ar',

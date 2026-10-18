@@ -1,6 +1,4 @@
 const localeMap: Record<string, string> = {
-  KR: 'ko',
-  JP: 'ja',
   FR: 'fr',
   DE: 'de',
   ES: 'es',
@@ -28,8 +26,6 @@ const localeMap: Record<string, string> = {
 };
 
 const acceptLangMap: Record<string, string> = {
-  ko: 'ko',
-  ja: 'ja',
   fr: 'fr',
   de: 'de',
   es: 'es',

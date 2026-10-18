@@ -5,7 +5,7 @@ param(
 
 $pagesDir = "C:\official\src\data\pages"
 $enFile = "$pagesDir\$PageName.yaml"
-$langDirs = @('ar','cs','da','de','el','es','fi','fr','it','ja','ko','nl','no','pl','pt','ro','ru','sv','th','tr','zh')
+$langDirs = @('ar','cs','da','de','el','es','fi','fr','it','nl','no','pl','pt','ro','ru','sv','th','tr','zh')
 
 foreach ($lang in $langDirs) {
   $langFile = "$pagesDir\$lang\$PageName.yaml"

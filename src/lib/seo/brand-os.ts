@@ -86,20 +86,6 @@ export const BRAND: BrandIdentity = {
       sitemapPriority: 1.0,
     },
     {
-      locale: 'ja',
-      name: 'Japan',
-      flag: '🇯🇵',
-      keywords: ['インフレータブルボート製造', 'OEM', 'マリン'],
-      sitemapPriority: 0.9,
-    },
-    {
-      locale: 'ko',
-      name: 'Korea',
-      flag: '🇰🇷',
-      keywords: ['고무보트 제조', 'OEM', '해양'],
-      sitemapPriority: 0.8,
-    },
-    {
       locale: 'fr',
       name: 'France',
       flag: '🇫🇷',

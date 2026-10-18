@@ -1,5 +1,5 @@
 $pagesDir = "C:\official\src\data\pages"
-$langDirs = @('ar','cs','da','de','el','es','fi','fr','it','ja','ko','nl','no','pl','pt','ro','ru','sv','th','tr','zh')
+$langDirs = @('ar','cs','da','de','el','es','fi','fr','it','nl','no','pl','pt','ro','ru','sv','th','tr','zh')
 $oldPattern = "Beginner's guide to selecting the right stand-up paddleboard for your weight, skill level, and intended use."
 $newLine = '        desc: "Beginner''s guide to selecting the right stand-up paddleboard for your weight, skill level, and intended use."'
 

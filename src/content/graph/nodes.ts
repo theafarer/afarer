@@ -16,8 +16,6 @@ export const nodes: GraphNode[] = [
     type: 'product-category',
     name: {
       en: 'Inflatable SUP Board',
-      ko: '인플레이터블 패들보드',
-      ja: 'インフレータブルSUPボード',
       fr: 'Planche SUP Gonflable',
       de: 'Aufblasbares SUP-Board',
       el: 'Φουσκωτή Σανίδα SUP',
@@ -77,8 +75,6 @@ export const nodes: GraphNode[] = [
     related: ['drop-stitch-core', 'eva-deck', 'paddle', 'touring', 'beginner'],
     slug: {
       en: 'inflatable-sup',
-      ja: 'inflatable-sup',
-      ko: 'inflatable-sup',
       ar: 'inflatable-sup',
       ru: 'inflatable-sup',
       fr: 'inflatable-sup-board',
@@ -95,8 +91,6 @@ export const nodes: GraphNode[] = [
     type: 'product-category',
     name: {
       en: 'Safety Equipment',
-      ko: '안전 장비',
-      ja: '安全装備',
       fr: 'Équipement de Sécurité',
       de: 'Sicherheitsausrüstung',
       el: 'Εξοπλισμός Ασφαλείας',
@@ -140,8 +134,6 @@ export const nodes: GraphNode[] = [
     related: ['buoyancy-foam', 'rescue', 'beginner'],
     slug: {
       en: 'safety-equipment',
-      ja: 'safety-equipment',
-      ko: 'safety-equipment',
       ar: 'safety-equipment',
       ru: 'safety-equipment',
       fr: 'safety-equipment',
@@ -158,8 +150,6 @@ export const nodes: GraphNode[] = [
     type: 'product-category',
     name: {
       en: 'Accessories',
-      ko: '액세서리',
-      ja: 'アクセサリー',
       fr: 'Accessoires',
       de: 'Zubehör',
       el: 'Αξεσουάρ',
@@ -208,8 +198,6 @@ export const nodes: GraphNode[] = [
     related: ['paddle', 'dual-action-pump', 'eva-deck'],
     slug: {
       en: 'accessory',
-      ja: 'accessory',
-      ko: 'accessory',
       ar: 'accessory',
       ru: 'accessory',
       fr: 'accessories',
@@ -226,8 +214,6 @@ export const nodes: GraphNode[] = [
     type: 'component',
     name: {
       en: 'Paddle',
-      ko: '패들',
-      ja: 'パドル',
       fr: 'Pagaie',
       de: 'Paddel',
       el: 'Κουπί',
@@ -276,8 +262,6 @@ export const nodes: GraphNode[] = [
     related: ['inflatable-sup', 'carbon-fiber'],
     slug: {
       en: 'paddle',
-      ja: 'paddle',
-      ko: 'paddle',
       ar: 'paddle',
       ru: 'paddle',
       fr: 'paddle',
@@ -294,8 +278,6 @@ export const nodes: GraphNode[] = [
     type: 'component',
     name: {
       en: 'Carbon Fiber Paddle',
-      ko: '카본 패들',
-      ja: 'カーボンパドル',
       fr: 'Pagaie en Fibre de Carbone',
       de: 'Kohlefaser-Paddel',
       el: 'Κουπί Από Ανθρακονήματα',
@@ -344,8 +326,6 @@ export const nodes: GraphNode[] = [
     related: ['paddle', 'touring', 'carbon-fiber'],
     slug: {
       en: 'carbon-paddle',
-      ja: 'carbon-paddle',
-      ko: 'carbon-paddle',
       ar: 'carbon-paddle',
       ru: 'carbon-paddle',
       fr: 'carbon-fiber-paddle',
@@ -362,8 +342,6 @@ export const nodes: GraphNode[] = [
     type: 'technology',
     name: {
       en: 'Drop-Stitch Core',
-      ko: '드롭 스티치 코어',
-      ja: 'ドロップステッチコア',
       fr: 'Noyau Drop-Stitch',
       de: 'Drop-Stitch-Kern',
       el: 'Πυρήνας Drop-Stitch',
@@ -412,8 +390,6 @@ export const nodes: GraphNode[] = [
     related: ['inflatable-sup', 'military-grade-pvc', 'high-pressure'],
     slug: {
       en: 'drop-stitch-core',
-      ja: 'drop-stitch-core',
-      ko: 'drop-stitch-core',
       ar: 'drop-stitch-core',
       ru: 'drop-stitch-core',
       fr: 'drop-stitch-core',
@@ -430,8 +406,6 @@ export const nodes: GraphNode[] = [
     type: 'component',
     name: {
       en: 'Dual-Action Pump',
-      ko: '듀얼 액션 펌프',
-      ja: 'デュアルアクションポンプ',
       fr: 'Pompe Double Action',
       de: 'Doppelwirkende Pumpe',
       el: 'Αντλία Διπλής Δράσης',
@@ -480,8 +454,6 @@ export const nodes: GraphNode[] = [
     related: ['inflatable-sup', 'high-pressure'],
     slug: {
       en: 'dual-action-pump',
-      ja: 'dual-action-pump',
-      ko: 'dual-action-pump',
       ar: 'dual-action-pump',
       ru: 'dual-action-pump',
       fr: 'dual-action-pump',
@@ -498,8 +470,6 @@ export const nodes: GraphNode[] = [
     type: 'concept',
     name: {
       en: 'High Pressure (12-15 PSI)',
-      ko: '고압(12-15 PSI)',
-      ja: '高圧(12-15 PSI)',
       fr: 'Haute Pression (12-15 PSI)',
       de: 'Hochdruck (12-15 PSI)',
       el: 'Υψηλή Πίεση (12-15 PSI)',
@@ -543,8 +513,6 @@ export const nodes: GraphNode[] = [
     related: ['drop-stitch-core', 'dual-action-pump', 'inflatable-sup'],
     slug: {
       en: 'high-pressure',
-      ja: 'high-pressure',
-      ko: 'high-pressure',
       ar: 'high-pressure',
       ru: 'high-pressure',
       fr: 'high-pressure-12-15-psi',
@@ -561,8 +529,6 @@ export const nodes: GraphNode[] = [
     type: 'material',
     name: {
       en: 'Marine-Grade PVC',
-      ko: '마린 그레이드 PVC',
-      ja: 'マリングレードPVC',
       fr: 'PVC de Qualité Marine',
       de: 'PVC in Marinequalität',
       el: 'PVC Θαλάσσιας Ποιότητας',
@@ -611,8 +577,6 @@ export const nodes: GraphNode[] = [
     related: ['drop-stitch-core', 'inflatable-sup'],
     slug: {
       en: 'military-grade-pvc',
-      ja: 'military-grade-pvc',
-      ko: 'military-grade-pvc',
       ar: 'military-grade-pvc',
       ru: 'military-grade-pvc',
       fr: 'military-grade-pvc',
@@ -629,8 +593,6 @@ export const nodes: GraphNode[] = [
     type: 'material',
     name: {
       en: 'EVA Foam Deck Pad',
-      ko: 'EVA 폼 데크 패드',
-      ja: 'EVAフォームデッキパッド',
       fr: 'Tapis de Pont en Mousse EVA',
       de: 'EVA-Schaumdeckbelag',
       el: 'Επίστρωμα Καταστρώματος EVA',
@@ -674,8 +636,6 @@ export const nodes: GraphNode[] = [
     related: ['inflatable-sup', 'accessory'],
     slug: {
       en: 'eva-deck',
-      ja: 'eva-deck',
-      ko: 'eva-deck',
       ar: 'eva-deck',
       ru: 'eva-deck',
       fr: 'eva-foam-deck-pad',
@@ -692,8 +652,6 @@ export const nodes: GraphNode[] = [
     type: 'material',
     name: {
       en: 'Carbon Fiber',
-      ko: '카본 파이버',
-      ja: 'カーボンファイバー',
       fr: 'Fibre de Carbone',
       de: 'Kohlefaser',
       el: 'Ανθρακονήματα',
@@ -737,8 +695,6 @@ export const nodes: GraphNode[] = [
     related: ['paddle', 'carbon-paddle'],
     slug: {
       en: 'carbon-fiber',
-      ja: 'carbon-fiber',
-      ko: 'carbon-fiber',
       ar: 'carbon-fiber',
       ru: 'carbon-fiber',
       fr: 'carbon-fiber',
@@ -755,8 +711,6 @@ export const nodes: GraphNode[] = [
     type: 'material',
     name: {
       en: 'Marine Buoyancy Foam',
-      ko: '해양용 부력 폼',
-      ja: '海洋浮力フォーム',
       fr: 'Mousse de Flottabilité Marine',
       de: 'Meerestauglicher Auftriebsschaum',
       el: 'Αφρός Άνωσης Θαλάσσης',
@@ -800,8 +754,6 @@ export const nodes: GraphNode[] = [
     related: ['safety-equipment'],
     slug: {
       en: 'buoyancy-foam',
-      ja: 'buoyancy-foam',
-      ko: 'buoyancy-foam',
       ar: 'buoyancy-foam',
       ru: 'buoyancy-foam',
       fr: 'marine-buoyancy-foam',
@@ -818,8 +770,6 @@ export const nodes: GraphNode[] = [
     type: 'use-case',
     name: {
       en: 'Touring & Distance Paddling',
-      ko: '투어링 및 장거리 패들링',
-      ja: 'ツーリング＆長距離パドリング',
       fr: 'Pagination de Distance et Tourisme',
       de: 'Touren- & Distanzpaddeln',
       el: 'Τουρισμός και Κωπηλασία Αποστάσεων',
@@ -861,8 +811,6 @@ export const nodes: GraphNode[] = [
     related: ['inflatable-sup', 'paddle', 'carbon-paddle', 'drop-stitch-core'],
     slug: {
       en: 'touring',
-      ja: 'touring',
-      ko: 'touring',
       ar: 'touring',
       ru: 'touring',
       fr: 'touring-distance-paddling',
@@ -879,8 +827,6 @@ export const nodes: GraphNode[] = [
     type: 'use-case',
     name: {
       en: 'Beginner',
-      ko: '초보자',
-      ja: '初心者',
       fr: 'Débutant',
       de: 'Anfänger',
       el: 'Αρχάριος',
@@ -929,8 +875,6 @@ export const nodes: GraphNode[] = [
     related: ['inflatable-sup', 'fishing'],
     slug: {
       en: 'beginner',
-      ja: 'beginner',
-      ko: 'beginner',
       ar: 'beginner',
       ru: 'beginner',
       fr: 'beginner',
@@ -947,8 +891,6 @@ export const nodes: GraphNode[] = [
     type: 'use-case',
     name: {
       en: 'Fishing from Inflatable Craft',
-      ko: '낚시용 인플레이터블',
-      ja: '釣り用インフレータブル',
       fr: 'Pêche depuis un Bateau Gonflable',
       de: 'Angeln vom Schlauchboot',
       el: 'Ψάρεμα από Φουσκωτό Σκάφος',
@@ -992,8 +934,6 @@ export const nodes: GraphNode[] = [
     related: ['inflatable-sup'],
     slug: {
       en: 'fishing',
-      ja: 'fishing',
-      ko: 'fishing',
       ar: 'fishing',
       ru: 'fishing',
       fr: 'fishing-from-inflatable-craft',
@@ -1010,8 +950,6 @@ export const nodes: GraphNode[] = [
     type: 'use-case',
     name: {
       en: 'Family Recreation',
-      ko: '가족 레크리에이션',
-      ja: 'ファミリーレクリエーション',
       fr: 'Loisirs Familiaux',
       de: 'Familienfreizeit',
       el: 'Οικογενειακή Ψυχαγωγία',
@@ -1055,8 +993,6 @@ export const nodes: GraphNode[] = [
     related: ['beginner', 'fishing'],
     slug: {
       en: 'family-recreation',
-      ja: 'family-recreation',
-      ko: 'family-recreation',
       ar: 'family-recreation',
       ru: 'family-recreation',
       fr: 'family-recreation',
@@ -1073,8 +1009,6 @@ export const nodes: GraphNode[] = [
     type: 'use-case',
     name: {
       en: 'River Touring',
-      ko: '강 투어링',
-      ja: 'リバーツーリング',
       fr: 'Pagination en Rivière',
       de: 'Flusstouren',
       el: 'Ποταμίσιος Τουρισμός',
@@ -1118,8 +1052,6 @@ export const nodes: GraphNode[] = [
     related: ['paddle', 'touring', 'beginner'],
     slug: {
       en: 'river-touring',
-      ja: 'river-touring',
-      ko: 'river-touring',
       ar: 'river-touring',
       ru: 'river-touring',
       fr: 'river-touring',
@@ -1136,8 +1068,6 @@ export const nodes: GraphNode[] = [
     type: 'use-case',
     name: {
       en: 'Search & Rescue',
-      ko: '수색 및 구조',
-      ja: '捜索救助',
       fr: 'Recherche et Sauvetage',
       de: 'Suche & Rettung',
       el: 'Έρευνα και Διάσωση',
@@ -1181,8 +1111,6 @@ export const nodes: GraphNode[] = [
     related: ['safety-equipment'],
     slug: {
       en: 'rescue',
-      ja: 'rescue',
-      ko: 'rescue',
       ar: 'rescue',
       ru: 'rescue',
       fr: 'search-rescue',

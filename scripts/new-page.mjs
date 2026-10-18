@@ -35,7 +35,7 @@ const rl = readline.createInterface({ input: process.stdin, output: process.stdo
 const ask = (q) => new Promise((r) => rl.question(q, r));
 
 // ── Constants ────────────────────────────────────────────────────────────────
-const LOCALES = ['en', 'de', 'es', 'fr', 'it', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'ar'];
+const LOCALES = ['en', 'de', 'es', 'fr', 'it', 'pl', 'pt', 'ru', 'zh', 'ar'];
 const LANG_LABELS = {
   en: 'English',
   fr: 'Français',
@@ -43,8 +43,6 @@ const LANG_LABELS = {
   es: 'Español',
   pt: 'Português',
   it: 'Italiano',
-  ja: 'Japanese',
-  ko: 'Korean',
   ru: 'Russian',
   pl: 'Polski',
   zh: 'Chinese',
