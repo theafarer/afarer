@@ -24,6 +24,9 @@ import { guidesEl } from '~/data/guides.el';
 import { guidesRo } from '~/data/guides.ro';
 import { guidesTh } from '~/data/guides.th';
 import { contentV2RecordsDe } from '~/data/content-v2.de';
+import { contentV2OverridesRo } from '~/data/content-v2.ro';
+import type { ContentV2Override } from '~/data/content-v2.ro';
+import { contentV2OverridesTh } from '~/data/content-v2.th';
 import { faqs } from '~/data/faq';
 import type { FaqRecord } from '~/data/faq';
 import { faqsFr } from '~/data/faq.fr';
@@ -110,7 +113,21 @@ export function getContentV2ForLang(lang: string | undefined): ContentV2Record[]
   if (lang === 'de') {
     return contentV2RecordsDe;
   }
+  if (lang === 'ro') {
+    return mergeV2BySlug(contentV2Records, contentV2OverridesRo);
+  }
+  if (lang === 'th') {
+    return mergeV2BySlug(contentV2Records, contentV2OverridesTh);
+  }
   return contentV2Records;
+}
+
+function mergeV2BySlug(base: ContentV2Record[], overrides: ContentV2Override[]): ContentV2Record[] {
+  const bySlug = new Map(overrides.map((o) => [o.slug, o]));
+  return base.map((b) => {
+    const o = bySlug.get(b.slug);
+    return o ? { ...b, ...o } : b;
+  });
 }
 
 const faqsByLang: Record<string, FaqRecord[]> = {
