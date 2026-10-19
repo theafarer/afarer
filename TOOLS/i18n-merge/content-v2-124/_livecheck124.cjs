@@ -1,0 +1,105 @@
+// v2 batch-4 live verification via curl (socks5 proxy).
+// Fetches /ro/v2/<27 new slugs>, /th/v2/<27 new slugs> + both index pages + ES-fallback page (new slug),
+// checks HTTP 200 and translated <title> from the merged yaml source.
+const { execFileSync } = require('child_process');
+const fs = require('fs');
+const path = require('path');
+
+const ROOT = 'E:/github/afarer';
+const yaml = require(path.join(ROOT, 'node_modules', 'js-yaml'));
+const TMP = 'C:/Users/Helleo/AppData/Local/Temp/deveco';
+
+const SLUGS = [
+  'afarer-sup-explorer-11-review',
+  'afarer-sup-tour-12-review',
+  'afarer-airdeck-360-review',
+  'afarer-airdeck-270-review',
+  'afarer-rib-330-review',
+  'afarer-rib-450-patrol-review',
+  'afarer-life-vest-classic-review',
+  'afarer-life-vest-pro-review',
+  'afarer-oars-pump-set-review',
+  'afarer-zb-mt350-review',
+  'sup-vs-surfboard',
+  'kayak-vs-sup',
+  'sup-fitness-workout',
+  'sup-travel-guide',
+  'sup-paddle-guide',
+  'sup-anchor-guide',
+  'winter-paddle-boarding',
+  'sup-with-dog',
+  'sup-self-rescue',
+  'sup-launch-techniques',
+  'sup-navigation-guide',
+  'sup-hydration-sun-protection',
+  'ocean-kayaking-beginners',
+  'inflatable-kayak-guide',
+  'sup-leash-guide',
+  'sup-pump-guide',
+  'sup-accessories-guide',
+];
+const FALLBACK = 'sup-paddle-guide'; // es has no overlay -> EN fallback
+
+const titles = {};
+for (const loc of ['ro', 'th']) {
+  const recs = yaml.load(fs.readFileSync(path.join(ROOT, 'src/data/site/content-v2.' + loc + '.yaml'), 'utf8'));
+  titles[loc] = new Map(recs.map((r) => [r.slug, r.title]));
+}
+const enRecs = yaml.load(fs.readFileSync(path.join(ROOT, 'src/data/site/content-v2.yaml'), 'utf8'));
+const enFallbackTitle = enRecs.find((r) => r.slug === FALLBACK).title;
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+let errors = 0;
+const fail = (m) => {
+  errors++;
+  console.log('FAIL ' + m);
+};
+const pass = (m) => console.log('PASS ' + m);
+
+const fetch = (url, out) =>
+  execFileSync(
+    'curl.exe',
+    ['-s', '-L', '-o', out, '-w', '%{http_code}', '--socks5-hostname', '127.0.0.1:10808', '--max-time', '60', url],
+    { encoding: 'utf8' }
+  ).trim();
+
+let n = 0;
+for (const loc of ['ro', 'th']) {
+  // index page
+  const idxOut = path.join(TMP, 'live124_' + loc + '_index.html');
+  const code = fetch('https://afarer.com/' + loc + '/v2/', idxOut);
+  const idxBody = fs.readFileSync(idxOut, 'utf8');
+  if (code === '200' && idxBody.includes('<html')) pass('/' + loc + '/v2/ index 200');
+  else fail('/' + loc + '/v2/ index code=' + code);
+  const links = new Set(
+    (idxBody.match(/href="[^"]*\/v2\/[a-z0-9-]+"/g) || []).map((l) => l.replace(/.*\/v2\//, '').replace(/"$/, ''))
+  );
+  if (links.size === 75) pass('/' + loc + '/v2/ index lists 75 slugs');
+  else fail('/' + loc + '/v2/ index slug count=' + links.size);
+
+  for (const slug of SLUGS) {
+    const out = path.join(TMP, 'live124_' + loc + '_' + slug + '.html');
+    const c = fetch('https://afarer.com/' + loc + '/v2/' + slug, out);
+    const body = fs.readFileSync(out, 'utf8');
+    const ok = c === '200' && body.includes(esc(String(titles[loc].get(slug))));
+    if (ok) {
+      pass('/' + loc + '/v2/' + slug);
+      n++;
+    } else
+      fail(
+        '/' + loc + '/v2/' + slug + ' code=' + c + ' titleMatch=' + body.includes(esc(String(titles[loc].get(slug))))
+      );
+  }
+}
+// ES fallback page (no overlay -> EN)
+{
+  const fbOut = path.join(TMP, 'live124_es_fb.html');
+  const fc = fetch('https://afarer.com/es/v2/' + FALLBACK, fbOut);
+  const fb = fs.readFileSync(fbOut, 'utf8');
+  if (fc === '200' && fb.includes(esc(enFallbackTitle))) pass('/es/v2/' + FALLBACK + ' EN fallback');
+  else fail('/es/v2/' + FALLBACK + ' code=' + fc + ' fbTitleMatch=' + fb.includes(esc(enFallbackTitle)));
+}
+
+console.log('translated pages ok: ' + n + '/54');
+console.log(errors === 0 ? 'LIVE ALL PASS' : 'LIVE FAILURES: ' + errors);
+process.exit(errors === 0 ? 0 : 1);
