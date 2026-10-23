@@ -40,6 +40,7 @@ import { contentV2OverridesFi } from '~/data/content-v2.fi';
 import { contentV2OverridesRu } from '~/data/content-v2.ru';
 
 import { contentV2OverridesTr } from '~/data/content-v2.tr';
+import { contentV2OverridesAr } from '~/data/content-v2.ar';
 import { faqs } from '~/data/faq';
 import type { FaqRecord } from '~/data/faq';
 import { faqsFr } from '~/data/faq.fr';
@@ -167,6 +168,9 @@ export function getContentV2ForLang(lang: string | undefined): ContentV2Record[]
   }
   if (lang === 'tr') {
     return mergeV2BySlug(contentV2Records, contentV2OverridesTr);
+  }
+  if (lang === 'ar') {
+    return mergeV2BySlug(contentV2Records, contentV2OverridesAr);
   }
   return contentV2Records;
 }
