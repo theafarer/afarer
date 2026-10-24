@@ -7,6 +7,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import RelatedPages from '~/components/content/RelatedPages.astro';
 import { SITE } from 'astrowind:config';
 
 const metadata = {
@@ -267,6 +268,48 @@ const solutionItems = [
       </details>
     </div>
   </section>
+  <RelatedPages
+    title="Explore OEM & Manufacturing"
+    subtitle="Custom manufacturing and private label programs for SUP businesses"
+    links={[
+      {
+        title: 'SUP Manufacturer',
+        description: 'Full-spectrum inflatable SUP manufacturing with OEM/ODM services.',
+        href: '/sup-manufacturer',
+        label: 'Manufacturing',
+      },
+      {
+        title: 'Private Label SUPs',
+        description: 'Launch your own SUP brand with custom logo, colors, and packaging.',
+        href: '/private-label-sup',
+        label: 'Private Label',
+      },
+      {
+        title: 'Custom SUP Projects',
+        description: 'OEM/ODM inflatable SUP manufacturing from concept to bulk production.',
+        href: '/custom',
+        label: 'Custom',
+      },
+      {
+        title: 'OEM/ODM Manufacturing',
+        description: 'Full-spectrum OEM and ODM services for inflatable watercraft.',
+        href: '/oem-odm-manufacturer',
+        label: 'OEM',
+      },
+      {
+        title: 'Factory Overview',
+        description: 'Tour our 12,000 m² ISO 9001 & BSCI certified manufacturing facility.',
+        href: '/factory',
+        label: 'Factory',
+      },
+      {
+        title: 'Quality Control & Testing',
+        description: 'ISO 9001 certified quality management system and eight testing protocols.',
+        href: '/quality',
+        label: 'Quality',
+      },
+    ]}
+  />
   <CallToAction
     title="Not sure which solution fits your business?"
     subtitle="Describe your operation and we'll recommend the right partnership package within 24 hours."

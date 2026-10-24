@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import RelatedPages from '~/components/content/RelatedPages.astro';
 
 const metadata = {
   title: 'afarer vs Traditional SUP Manufacturers — Direct Comparison',
@@ -171,6 +172,49 @@ const metadata = {
       </div>
     </section>
   </section>
+
+  <RelatedPages
+    title="Explore OEM & Private Label"
+    subtitle="Related manufacturing and sourcing pages"
+    links={[
+      {
+        title: 'SUP Manufacturer',
+        description: 'Full-spectrum inflatable SUP manufacturing with OEM/ODM services.',
+        href: '/sup-manufacturer',
+        label: 'Manufacturing',
+      },
+      {
+        title: 'Custom SUP Projects',
+        description: 'OEM/ODM inflatable SUP manufacturing from concept to bulk production.',
+        href: '/custom',
+        label: 'Custom',
+      },
+      {
+        title: 'Private Label SUPs',
+        description: 'Launch your own SUP brand with custom logo, colors, and packaging.',
+        href: '/private-label-sup',
+        label: 'Private Label',
+      },
+      {
+        title: 'Factory Overview',
+        description: 'Tour our 12,000 m² ISO 9001 & BSCI certified manufacturing facility.',
+        href: '/factory',
+        label: 'Factory',
+      },
+      {
+        title: 'Quality Control & Testing',
+        description: 'ISO 9001 certified quality management system and eight testing protocols.',
+        href: '/quality',
+        label: 'Quality',
+      },
+      {
+        title: 'All Comparisons',
+        description: 'Compare afarer SUP boards and manufacturing across more head-to-head pages.',
+        href: '/compare',
+        label: 'Compare',
+      },
+    ]}
+  />
 
   <section class="sr-only" data-ai-block="definition" aria-hidden="true">
     <p>

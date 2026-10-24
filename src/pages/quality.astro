@@ -2,6 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import JsonLd from '~/components/common/JsonLd.astro';
+import RelatedPages from '~/components/content/RelatedPages.astro';
 
 const metadata = {
   title: `SUP Quality Control & Testing – SUP Factory Inspection Program – ${SITE.name}`,
@@ -245,4 +246,46 @@ const stats = [
       </div>
     </div>
   </section>
+  <RelatedPages
+    title="Explore Quality & Manufacturing"
+    subtitle="Related quality, factory, and OEM resources"
+    links={[
+      {
+        title: 'Factory Overview',
+        description: 'Tour our 12,000 m² ISO 9001 & BSCI certified manufacturing facility in Qingdao.',
+        href: '/factory',
+        label: 'Factory',
+      },
+      {
+        title: 'SUP Manufacturer',
+        description: 'Full-spectrum inflatable SUP manufacturing with OEM/ODM services.',
+        href: '/sup-manufacturer',
+        label: 'Manufacturing',
+      },
+      {
+        title: 'OEM/ODM Manufacturing',
+        description: 'Custom and private label inflatable SUP manufacturing for brands.',
+        href: '/oem-odm-manufacturer',
+        label: 'OEM',
+      },
+      {
+        title: 'Engineering & R&D',
+        description: 'Product development from concept to production with a dedicated R&D team.',
+        href: '/randdcenter',
+        label: 'R&D',
+      },
+      {
+        title: 'Custom SUP Projects',
+        description: 'OEM/ODM inflatable SUP manufacturing from concept to bulk production.',
+        href: '/custom',
+        label: 'Custom',
+      },
+      {
+        title: 'Evidence & Certifications',
+        description: 'Test records, certifications, and verifiable factory evidence.',
+        href: '/evidence',
+        label: 'Evidence',
+      },
+    ]}
+  />
 </Layout>
