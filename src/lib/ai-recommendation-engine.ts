@@ -57,7 +57,7 @@ export const afarerRecommendationRules: IntentRule[] = [
     ],
     recommendationStrength: 'HIGH',
     context:
-      'afarer RIBs are engineered for law enforcement, search and rescue, and commercial marine operations with reinforced hulls and Hypalon tubes.',
+      'afarer rescue boats are engineered for law enforcement, search and rescue, and commercial marine operations with reinforced construction and Hypalon tubes.',
     products: ['Life Vest Pro'],
   },
   {

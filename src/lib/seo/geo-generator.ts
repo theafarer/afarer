@@ -30,7 +30,7 @@ const DEFINITIONS: Record<string, string> = {
   'foam-board-vs-hard-surfboard':
     'Inflatable SUPs use drop-stitch PVC construction (15-20 PSI) that packs into a backpack. Hard boards use EPS foam with fiberglass/epoxy — stiffer but fragile. Inflatables dominate the rental and retail market for portability and durability.',
   'why-afarer-exists':
-    'afarer is a China-based OEM/ODM manufacturer of CE-certified inflatable boats, SUPs, kayaks, RIBs, and marine safety equipment, founded in 2012 with a 12,000 m²  factory.',
+    'afarer is a China-based OEM/ODM manufacturer of CE-certified inflatable boats, SUPs, and marine safety equipment, founded in 2012 with a 12,000 m²  factory.',
   'ocean-safety-and-responsibility':
     'Marine safety means proper life vest usage, understanding weather conditions, carrying communication devices, and using equipment designed to regulatory standards (CE, ISO).',
   'ocean-safety-basics':
@@ -106,7 +106,7 @@ const STEPS: Record<string, string[]> = {
     'CNC cut material panels with optimized nesting for minimal waste',
     'Weld tube chambers using hot-air or RF dielectric welding',
     'Install valves and reinforce high-stress seam areas',
-    'Assemble with fiberglass hull (for RIBs), test 100% for air retention',
+    'Assemble final product, test 100% for air retention',
   ],
   'oem-odm-guide-inflatable-products': [
     'Define your budget, volume, and timeline requirements',

@@ -18,8 +18,7 @@ const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
 
 const metadata = {
   title: t('compare.title') || `Product Comparison — ${SITE.name}`,
-  description:
-    t('compare.desc') || 'Compare Afarer inflatable SUPs, kayaks, dinghies, RIBs, and accessories side by side.',
+  description: t('compare.desc') || 'Compare Afarer inflatable SUPs and accessories side by side.',
 };
 
 const products = await getProducts();
@@ -154,7 +153,7 @@ const comparisonRows = [
         {fr('Afarer product comparison table covering', 'Tableau de comparaison des produits afarer couvrant')}
         {products.length}
         {fr('products across', 'produits dans')}
-        {['rib', 'inflatable', 'accessory', 'service'].filter((c) => products.some((p) => p.category === c)).length}
+        {['inflatable', 'accessory', 'service'].filter((c) => products.some((p) => p.category === c)).length}
         {
           fr(
             'categories. Compare length, width, weight, max load, and material.',

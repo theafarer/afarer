@@ -173,7 +173,7 @@ export const BRAND: BrandIdentity = {
       items: ['All-around SUPs', 'Touring SUPs', 'Inflatable SUPs', 'Kids SUPs', 'Fishing SUPs'],
     },
     {
-      category: 'RIBs & Dinghies',
+      category: 'Recreational SUPs',
       description: 'Premium inflatable SUPs for touring, yoga, fishing, and recreational paddling.',
       items: ['All-Around SUPs', 'Touring SUPs', 'Yoga SUPs', 'Fishing SUPs'],
     },

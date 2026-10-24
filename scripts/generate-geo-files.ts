@@ -51,7 +51,6 @@ const LANGUAGES: Record<string, string> = {
 };
 
 const CATEGORY_LABELS: Record<string, string> = {
-  RIB: 'RIB Boats',
   INFLATABLE: 'Inflatable Boats',
   SUP: 'SUP Paddle Boards',
   ACCESSORY: 'Accessories',
@@ -130,7 +129,7 @@ function getProductLines(): string[] {
     const heading = lang === 'en' ? 'English' : `${langName}${prefix}`;
     lines.push(`\n### ${heading}\n`);
 
-    const categories = ['RIB', 'INFLATABLE', 'SUP', 'ACCESSORY'];
+    const categories = ['INFLATABLE', 'SUP', 'ACCESSORY'];
     for (const cat of categories) {
       const catProducts = products.filter((p) => p.category === cat);
       if (catProducts.length === 0) continue;

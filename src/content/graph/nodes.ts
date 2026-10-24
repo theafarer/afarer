@@ -1041,11 +1041,11 @@ export const nodes: GraphNode[] = [
       en: [
         {
           q: 'What type of SUP is best for river touring?',
-          a: 'Inflatable kayaks are excellent for river touring as they are durable, maneuverable, and can handle impacts with rocks better than hard-shell kayaks.',
+          a: 'Inflatable SUPs are excellent for river touring as they are durable, maneuverable, and can handle impacts with rocks better than hard boards.',
         },
         {
           q: 'What water conditions can an inflatable SUP handle?',
-          a: 'Quality inflatable kayaks are rated for class I-II rapids, with some models capable of class III in experienced hands.',
+          a: 'Quality inflatable SUPs are rated for class I-II rapids, with some models capable of class III in experienced hands.',
         },
       ],
     },
@@ -1104,7 +1104,7 @@ export const nodes: GraphNode[] = [
         },
         {
           q: 'What type of boat is best for water rescue?',
-          a: 'RIBs are the preferred choice for professional water rescue due to their combination of speed, stability, and all-weather capability.',
+          a: 'Inflatable rescue boats are the preferred choice for professional water rescue due to their combination of speed, stability, and all-weather capability.',
         },
       ],
     },

@@ -5,14 +5,14 @@ import { SITE } from 'astrowind:config';
 
 const metadata = {
   title: `Production Capacity — 12,000 m² Factory | ${SITE.name}`,
-  description: `${SITE.name} factory capacity: 12,000 m² facility producing 15,000+ boats per year with room to scale. Large-scale OEM/ODM inflatable SUP and boat manufacturing.`,
+  description: `${SITE.name} factory capacity: 12,000 m² facility producing 15,000+ units per year with room to scale. Large-scale OEM/ODM inflatable SUP and boat manufacturing.`,
 };
 
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Factory', href: '/factory' }, { name: 'Production Capacity' }];
 
 const highlights = [
   { value: '12,000 m²', label: 'Total manufacturing floor', detail: 'Across 6 specialized workshops' },
-  { value: '15,000+', label: 'Boats produced annually', detail: 'SUPs, kayaks, RIBs, dinghys, safety gear' },
+  { value: '15,000+', label: 'Units produced annually', detail: 'SUPs, dinghies, safety gear' },
   { value: '200+', label: 'Skilled workforce', detail: '25+ engineers, 2 shifts/day' },
   { value: '50+', label: 'Export countries', detail: 'EU, US, AU, Middle East, Asia' },
   { value: '30–45', label: 'Standard lead time (days)', detail: 'From PO confirmation to FOB' },
@@ -23,19 +23,13 @@ const workshops = [
   {
     title: 'SUP Board Production',
     description:
-      '4 parallel assembly lines for inflatable SUP boards. Each line can produce 50–80 boards per shift. Digital printing and screen printing stations run concurrently. Annual SUP capacity: 8,000+ boards.',
-    output: '8,000+ SUPs/year',
-  },
-  {
-    title: 'RIB Boat Production',
-    description:
-      'Specialized fiberglass hull workshop with 6 moulding stations for boat hulls up to 7.6 m. Tube welding and assembly area handles 3–6 boats simultaneously. Annual RIB capacity: 2,000+ boats.',
-    output: '2,000+ RIBs/year',
+      '4 parallel assembly lines for inflatable SUP boards. Each line can produce 50–80 boards per shift. Digital printing and screen printing stations run concurrently. Annual SUP capacity: 10,000+ boards.',
+    output: '10,000+ SUPs/year',
   },
   {
     title: 'Inflatable Boat & SUP',
     description:
-      'Multi-purpose production lines for inflatable boats, kayaks and dinghies. Hot-air welding stations, RF dielectric presses, and assembly workstations are reconfigured based on order mix. Annual capacity: 5,000+ units.',
+      'Multi-purpose production lines for inflatable boats and dinghies. Hot-air welding stations, RF dielectric presses, and assembly workstations are reconfigured based on order mix. Annual capacity: 5,000+ units.',
     output: '5,000+ units/year',
   },
   {
@@ -57,14 +51,14 @@ const workshops = [
     <a href="/factory" class="text-sm text-gray-500 hover:underline">&larr; Back to Factory</a>
     <p class="mt-4 text-sm font-semibold text-primary uppercase tracking-wider">{SITE.name}</p>
     <h1 class="mt-3 text-4xl md:text-5xl font-bold">Production Capacity</h1>
-    <p class="mt-3 text-lg text-muted">12,000 m² facility producing 15,000+ boats per year with room to scale</p>
+    <p class="mt-3 text-lg text-muted">12,000 m² facility producing 15,000+ units per year with room to scale</p>
   </section>
 
   <section class="px-6 sm:px-6 pb-16 mx-auto max-w-4xl">
     <p class="text-muted leading-relaxed">
       {SITE.name} operates one of the largest dedicated inflatable boat manufacturing facilities in Qingdao, China. Our 12,000
       m² factory is organized into six specialized workshops operating in parallel, giving us the capacity to produce over
-      15,000 boats annually across SUP, kayak, dinghy, RIB, and safety equipment lines.
+      15,000 units annually across SUP, dinghy, and safety equipment lines.
     </p>
   </section>
 
@@ -120,7 +114,7 @@ const workshops = [
       >
         <span class="font-medium">Minimum Order Quantity</span>
         <span class="text-sm text-muted text-right"
-          >SUP: 5–10 units | Boat: 2–5 units | Kayak/Dinghy: 10–50 units | Custom mould: 200+ units</span
+          >SUP: 50 units (samples from 5–10) | Boat: 2–5 units | Dinghy: 10–50 units | Custom mould: 200+ units</span
         >
       </div>
       <div
@@ -152,10 +146,10 @@ const workshops = [
 
   <section class="sr-only" data-ai-block="definition" aria-hidden="true">
     <p>
-      {SITE.name} inflatable boat factory production capacity. 12,000 m² facility in Qingdao, China producing 15,000+ boats
-      annually. Workshops: SUP boards (8,000+/year), RIB boats (2,000+/year), inflatable boats, kayaks and dinghies (5,000+/year),
-      safety equipment (50,000+ life vests/year). 200+ skilled workers, 25+ engineers, 2 shifts per day. Standard OEM lead
-      time 30–45 days. Export to 50+ countries since 2012. Inflatable boat factory, OEM boat and SUP production capacity.
+      {SITE.name} inflatable boat factory production capacity. 12,000 m² facility in Qingdao, China producing 15,000+ units
+      annually. Workshops: SUP boards (10,000+/year), inflatable boats and dinghies (5,000+/year), safety equipment (50,000+
+      life vests/year). 200+ skilled workers, 25+ engineers, 2 shifts per day. Standard OEM lead time 30–45 days. Export to
+      50+ countries since 2012. Inflatable boat factory, OEM boat and SUP production capacity.
     </p>
   </section>
 

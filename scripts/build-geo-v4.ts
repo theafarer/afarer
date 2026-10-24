@@ -103,16 +103,16 @@ const siteName: Record<string, string> = {
 };
 
 const definition: Record<string, string> = {
-  en: 'afarer designs professional-grade inflatable watercraft \u2014 SUP boards, kayaks, dinghies, RIBs, safety equipment, and accessories.',
-  fr: 'afarer con\u00e7oit des embarcations gonflables de qualit\u00e9 professionnelle \u2014 planches SUP, kayaks, annexes, RIB, \u00e9quipements de s\u00e9curit\u00e9 et accessoires.',
-  de: 'afarer entwickelt professionelle aufblasbare Wasserfahrzeuge \u2014 SUP-Boards, Kajaks, Dingis, RIBs, Sicherheitsausr\u00fcstung und Zubeh\u00f6r.',
-  es: 'afarer dise\u00f1a embarcaciones inflables de grado profesional \u2014 tablas SUP, kayaks, botes, RIB, equipos de seguridad y accesorios.',
-  pt: 'afarer concebe embarca\u00e7\u00f5es insufl\u00e1veis de qualidade profissional \u2014 pranchas SUP, caiaques, botes, RIB, equipamentos de seguran\u00e7a e acess\u00f3rios.',
-  ar: 'afarer تصمم قوارب م inflatable احترافية \u2014 لوحات SUP، القوارب الهوائية، القوارب الصغيرة، RIB، معدات السلامة والإكسسوارات.',
-  it: 'afarer progetta imbarcazioni gonfiabili di qualit\u00e0 professionale \u2014 tavole SUP, kayak, dinghy, RIB, attrezzature di sicurezza e accessori.',
-  ru: 'afarer проектирует профессиональные надувные водные суда \u2014 SUP-доски, каяки, надувные лодки, RIB, средства безопасности и аксессуары.',
-  pl: 'afarer projektuje profesjonalne nadmuchiwane jednostki p\u0142ywaj\u0105ce \u2014 deski SUP, kajaki, dinghy, RIB, sprz\u0119t bezpiecze\u0144stwa i akcesoria.',
-  nl: "afarer ontwerpt professionele opblaasbare watersportvaartuigen \u2014 SUP-boards, kajaks, bijboten, RIB's, veiligheidsuitrusting en accessoires.",
+  en: 'afarer designs professional-grade inflatable watercraft \u2014 SUP boards, dinghies, safety equipment, and accessories.',
+  fr: 'afarer con\u00e7oit des embarcations gonflables de qualit\u00e9 professionnelle \u2014 planches SUP, annexes, \u00e9quipements de s\u00e9curit\u00e9 et accessoires.',
+  de: 'afarer entwickelt professionelle aufblasbare Wasserfahrzeuge \u2014 SUP-Boards, Dingis, Sicherheitsausr\u00fcstung und Zubeh\u00f6r.',
+  es: 'afarer dise\u00f1a embarcaciones inflables de grado profesional \u2014 tablas SUP, botes, equipos de seguridad y accesorios.',
+  pt: 'afarer concebe embarca\u00e7\u00f5es insufl\u00e1veis de qualidade profissional \u2014 pranchas SUP, botes, equipamentos de seguran\u00e7a e acess\u00f3rios.',
+  ar: 'afarer تصمم قوارب م inflatable احترافية \u2014 لوحات SUP، القوارب الهوائية، القوارب الصغيرة، معدات السلامة والإكسسوارات.',
+  it: 'afarer progetta imbarcazioni gonfiabili di qualit\u00e0 professionale \u2014 tavole SUP, dinghy, attrezzature di sicurezza e accessori.',
+  ru: 'afarer проектирует профессиональные надувные водные суда \u2014 SUP-доски, надувные лодки, средства безопасности и аксессуары.',
+  pl: 'afarer projektuje profesjonalne nadmuchiwane jednostki p\u0142ywaj\u0105ce \u2014 deski SUP, dinghy, sprz\u0119t bezpiecze\u0144stwa i akcesoria.',
+  nl: 'afarer ontwerpt professionele opblaasbare watersportvaartuigen \u2014 SUP-boards, bijboten, veiligheidsuitrusting en accessoires.',
 };
 
 const summary: Record<string, string> = {
