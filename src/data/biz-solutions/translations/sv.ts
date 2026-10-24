@@ -89,7 +89,7 @@ const sv: Record<string, SolutionOverride> = {
     meta: {
       title: 'Uppblåsbara SUP-lösningar för surfbutiker | Private label-tillverkare | {SITE}',
       description:
-        'Afarer hjälper surfbutiker och vattenlivsstilsvarumärken att växa med private label-uppblåsbara SUP:ar, uppblåsbara kajaker och skräddarsydda vattensportprodukter. Sänk frakt-, lagrings- och lagerkostnader med avancerad uppblåsbar teknik.',
+        'Afarer hjälper surfbutiker och vattenlivsstilsvarumärken att växa med private label-uppblåsbara SUP:ar och skräddarsydda vattensportprodukter. Sänk frakt-, lagrings- och lagerkostnader med avancerad uppblåsbar teknik.',
     },
   },
   'kids-exploration-sup-program': {

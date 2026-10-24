@@ -89,7 +89,7 @@ const pl: Record<string, SolutionOverride> = {
     meta: {
       title: 'Rozwiązania pompowanych desk SUP dla sklepów surfowych | Producent private label | {SITE}',
       description:
-        'Afarer pomaga sklepom surfowym i markom wodnego stylu życia rozwijać się dzięki pompowanym deskom SUP private label, pompowanym kajakom i niestandardowym produktom do sportów wodnych. Zmniejsz koszty wysyłki, magazynowania i zapasów dzięki zaawansowanej technologii pompowanej.',
+        'Afarer pomaga sklepom surfowym i markom wodnego stylu życia rozwijać się dzięki pompowanym deskom SUP private label i niestandardowym produktom do sportów wodnych. Zmniejsz koszty wysyłki, magazynowania i zapasów dzięki zaawansowanej technologii pompowanej.',
     },
   },
   'kids-exploration-sup-program': {

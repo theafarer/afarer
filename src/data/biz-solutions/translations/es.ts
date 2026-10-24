@@ -123,7 +123,7 @@ const overrides: Record<string, SolutionOverride> = {
     meta: {
       title: 'Soluciones de SUP inflable para tiendas de surf | Fabricante de marca privada | {SITE}',
       description:
-        'Afarer ayuda a las tiendas de surf y marcas de lifestyle acuático a expandirse con SUP inflables de marca privada, kayaks inflables y productos acuáticos personalizados. Reduce los costes de envío, almacenamiento e inventario con tecnología inflable avanzada.',
+        'Afarer ayuda a las tiendas de surf y marcas de lifestyle acuático a expandirse con SUP inflables de marca privada y productos acuáticos personalizados. Reduce los costes de envío, almacenamiento e inventario con tecnología inflable avanzada.',
     },
   },
   'kids-exploration-sup-program': {

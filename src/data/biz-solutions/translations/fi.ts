@@ -89,7 +89,7 @@ const fi: Record<string, SolutionOverride> = {
     meta: {
       title: 'Puhallettavat SUP-ratkaisut surffikaupoille | Private label -valmistaja | {SITE}',
       description:
-        'Afarer auttaa surffikauppoja ja vesielämäntapabrändejä kasvamaan private label -puhallettavilla SUP-lauduilla, puhallettavilla kajakeilla ja räätälöidyillä vesilaitteilla. Vähennä rahti-, varasto- ja saldokustannuksia edistyneellä puhalletuvalla teknologialla.',
+        'Afarer auttaa surffikauppoja ja vesielämäntapabrändejä kasvamaan private label -puhallettavilla SUP-lauduilla ja räätälöidyillä vesilaitteilla. Vähennä rahti-, varasto- ja saldokustannuksia edistyneellä puhalletuvalla teknologialla.',
     },
   },
   'kids-exploration-sup-program': {

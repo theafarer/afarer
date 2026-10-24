@@ -89,7 +89,7 @@ const nl: Record<string, SolutionOverride> = {
     meta: {
       title: 'Opblaasbare SUP-oplossingen voor surfshops | Private label-fabrikant | {SITE}',
       description:
-        'Afarer helpt surfshops en waterlifestyle-merken groeien met private label opblaasbare SUPs, opblaasbare kajaks en custom watersportproducten. Verlaag verzend-, opslag- en voorraadkosten met geavanceerde opblaastechnologie.',
+        'Afarer helpt surfshops en waterlifestyle-merken groeien met private label opblaasbare SUPs en custom watersportproducten. Verlaag verzend-, opslag- en voorraadkosten met geavanceerde opblaastechnologie.',
     },
   },
   'kids-exploration-sup-program': {

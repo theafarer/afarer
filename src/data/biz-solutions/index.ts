@@ -503,13 +503,13 @@ const solutions: BizSolution[] = [
             location: 'Vancouver, British Columbia, Canada',
             background:
               "Henrik Larsson founded 'North Ridge Gear' in 2012, building a $12M CAD annual revenue brand selling backcountry skiing equipment, insulated outerwear, and camping stoves through REI, MEC, and their own Shopify store. By early 2023, Henrik recognized that his retail partners were demanding 'year-round shelf presence'— his brand was being delisted in spring and re-listed in fall each year, costing him prime retail real estate. A 2022 customer survey of 3,400 respondents showed 62% of North Ridge customers also paddleboarded, but only 8% knew North Ridge didn't offer water sports equipment.",
-            goal: 'To launch a 4-SKU water sports collection (two SUPs, one touring kayak, one inflatable paddle board with integrated fishing package) under the North Ridge name, generating $850,000 CAD in first-year incremental revenue and securing year-round shelf space at 40 REI and MEC locations.',
+            goal: 'To launch a 4-SKU water sports collection (two SUPs, one yoga and fitness SUP, one inflatable paddle board with integrated fishing package) under the North Ridge name, generating $850,000 CAD in first-year incremental revenue and securing year-round shelf space at 40 REI and MEC locations.',
           },
           steps: [
             {
               title: 'Step 1 - Market Analysis and Product Architecture Planning',
               detail:
-                "In March 2023, Afarer's market intelligence team analyzed 18 months of SUP sales data from 120 US and Canadian retailers. They identified the fastest-growing sub-segment: all-around SUPs between 10'6\" and 11'6\" priced at $749–$999 CAD, which grew 34% YoY. Afarer proposed a 4-SKU lineup: the 'Discovery' 10'6\" all-around board (target price $799 CAD), the 'Expedition' 11'6\" touring board ($949 CAD), the 'Crossover' inflatable kayak ($699 CAD), and the 'Angler' fishing SUP with removable crate mounting system ($1,049 CAD). Henrik accepted the proposal in April with a target launch date of February 2024 for spring retail buying season.",
+                "In March 2023, Afarer's market intelligence team analyzed 18 months of SUP sales data from 120 US and Canadian retailers. They identified the fastest-growing sub-segment: all-around SUPs between 10'6\" and 11'6\" priced at $749–$999 CAD, which grew 34% YoY. Afarer proposed a 4-SKU lineup: the 'Discovery' 10'6\" all-around board (target price $799 CAD), the 'Expedition' 11'6\" touring board ($949 CAD), the 'Crossover' 10'2\" yoga and fitness SUP ($699 CAD), and the 'Angler' fishing SUP with removable crate mounting system ($1,049 CAD). Henrik accepted the proposal in April with a target launch date of February 2024 for spring retail buying season.",
             },
             {
               title: 'Step 2 - Co-Branded Design Integration and Retail Compliance',
@@ -612,7 +612,7 @@ const solutions: BizSolution[] = [
       {
         question: 'What types of water sports products can you manufacture?',
         answer:
-          'We manufacture inflatable SUP boards, touring SUPs, kids SUPs, inflatable kayaks, and water recreation equipment with full customization for your brand.',
+          'We manufacture inflatable SUP boards, touring SUPs, kids SUPs, fishing SUPs, and water recreation equipment with full customization for your brand.',
       },
       {
         question: 'Can you match my existing brand quality standards?',
@@ -649,7 +649,7 @@ const solutions: BizSolution[] = [
     meta: {
       title: 'Inflatable SUP Solutions for Surf Shops | Private Label Manufacturer | {SITE}',
       description:
-        'Afarer helps surf shops and water lifestyle brands expand with private label inflatable SUP, inflatable kayak, and custom water sports products. Reduce shipping, storage, and inventory costs with advanced inflatable technology.',
+        'Afarer helps surf shops and water lifestyle brands expand with private label inflatable SUP and custom water sports products. Reduce shipping, storage, and inventory costs with advanced inflatable technology.',
     },
     keywords: [
       'inflatable SUP for surf shops',
@@ -657,7 +657,7 @@ const solutions: BizSolution[] = [
       'surf shop SUP supplier',
       'inflatable paddle board OEM',
       'water sports business solution',
-      'inflatable kayak supplier',
+      'inflatable SUP supplier',
       'surf shop product expansion',
       'replace hardboard with inflatable SUP',
       'SUP rental business equipment',
@@ -668,7 +668,7 @@ const solutions: BizSolution[] = [
       tagline: 'Bring Inflatable Technology Into Surf Business\u2122',
       title: 'Inflatable SUP Solutions for Surf Shops and Coastal Businesses',
       subtitle:
-        'Afarer helps surf shops and water lifestyle brands expand with private label inflatable SUP, inflatable kayak, and custom water sports products. Reduce shipping, storage, and inventory costs with advanced inflatable technology.',
+        'Afarer helps surf shops and water lifestyle brands expand with private label inflatable SUP and custom water sports products. Reduce shipping, storage, and inventory costs with advanced inflatable technology.',
       image: {
         src: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
         alt: 'Afarer custom SUP boards description',
@@ -752,7 +752,7 @@ const solutions: BizSolution[] = [
           description: 'Increase customer lifetime value beyond traditional surf products',
           features: [
             'Inflatable SUP collection including all-round, touring, yoga, and kids models',
-            'Inflatable kayak collection with single, tandem, and adventure options',
+            'Inflatable dinghy collection for family water recreation',
             'Water accessories including dry bags, waterproof cases, pumps, and paddles',
             'Complete water lifestyle ecosystem under your surf brand',
             'Cross-selling opportunities to existing surf customers',
@@ -1082,7 +1082,7 @@ const solutions: BizSolution[] = [
           description: 'Grow beyond one bestseller with category expansion',
           features: [
             'SUP product line including all-round, touring, kids, fishing, and yoga models',
-            'Water sports products including inflatable kayak and water accessories',
+            'Water sports products including paddles, pumps, and water accessories',
             'Outdoor recreation products for complete lifestyle brand development',
             'Cross-category expansion for increased customer lifetime value',
             'Scalable product portfolio aligned with marketplace growth',
@@ -1242,7 +1242,7 @@ const solutions: BizSolution[] = [
       {
         question: 'Can you help me expand beyond one SUP product into a full brand?',
         answer:
-          'Yes. Afarer supports complete product portfolio development including multiple SUP models, inflatable kayaks, and outdoor accessories for brand expansion.',
+          'Yes. Afarer supports complete product portfolio development including multiple SUP models and outdoor accessories for brand expansion.',
       },
     ],
     cta: {
@@ -1271,7 +1271,7 @@ const solutions: BizSolution[] = [
       'private label fishing SUP',
       'inflatable fishing SUP manufacturer',
       'fishing paddle board with rod holders',
-      'custom fishing kayak supplier',
+      'custom fishing SUP supplier',
       'outdoor fishing equipment manufacturer',
       'fishing SUP accessories supplier',
       'high stability fishing paddle board',
@@ -1365,7 +1365,7 @@ const solutions: BizSolution[] = [
           description: 'Create more revenue opportunities beyond traditional fishing equipment',
           features: [
             'Fishing SUP for lake, river, and coastal fishing applications',
-            'Fishing kayak for longer trips with larger storage needs',
+            'Expedition fishing SUP for longer trips with larger storage needs',
             'Fishing accessories including waterproof bags and mounting accessories',
             'Complete fishing adventure solutions from tackle to water platform',
             'Cross-category expansion for increased angler lifetime value',
@@ -1974,7 +1974,7 @@ const solutions: BizSolution[] = [
         {
           title: 'Creator Brand Product Expansion',
           description:
-            'A successful creator brand can expand into a complete outdoor ecosystem. Afarer supports SUP product lines, inflatable kayaks, water accessories, and seasonal collections that grow with the community.',
+            'A successful creator brand can expand into a complete outdoor ecosystem. Afarer supports SUP product lines, water accessories, and seasonal collections that grow with the community.',
           features: [
             'Signature SUP board line',
             'Water accessories',
@@ -2733,7 +2733,7 @@ const solutions: BizSolution[] = [
             {
               title: "Summer 2024: Spain's Hottest July on Record",
               detail:
-                "The 200-board fleet arrived in April 2024. Summer 2024 was Spain's hottest recorded (42°C in Málaga on July 19). Miguel's team maintained the 'grab-and-go' model through 82 consecutive days of 30°C+ weather. Total rentals: 14,700 SUP sessions across 7 beaches, averaging 147 per day peak season. Revenue from SUPs (rentals only): €428,000 (€28/90-min session), plus €187,000 from ancillary sales (GoPro mounts, dry bags, waterproof phone cases). Maintenance time dropped from 15 hours daily across all 7 beaches to 3.5 hours. Board damage: 8 boards needed minor repairs (all fin box screws, fixed in 10 minutes each). Zero boards were written off. Miguel ordered 100 more boards for 2025 and added Afarer kayaks to his fleet.",
+                "The 200-board fleet arrived in April 2024. Summer 2024 was Spain's hottest recorded (42°C in Málaga on July 19). Miguel's team maintained the 'grab-and-go' model through 82 consecutive days of 30°C+ weather. Total rentals: 14,700 SUP sessions across 7 beaches, averaging 147 per day peak season. Revenue from SUPs (rentals only): €428,000 (€28/90-min session), plus €187,000 from ancillary sales (GoPro mounts, dry bags, waterproof phone cases). Maintenance time dropped from 15 hours daily across all 7 beaches to 3.5 hours. Board damage: 8 boards needed minor repairs (all fin box screws, fixed in 10 minutes each). Zero boards were written off. Miguel ordered 100 more boards for 2025 to expand his rental fleet.",
             },
           ],
           results: [
@@ -2915,7 +2915,7 @@ const solutions: BizSolution[] = [
         {
           title: 'Complete Resort Water Activity Package',
           description:
-            'Example packages include custom branded SUP boards, adjustable paddles, pumps, safety leashes, storage racks, repair kits, and staff operation guides. Afarer can also support expansion into inflatable kayaks, water fitness products, and family water equipment.',
+            'Example packages include custom branded SUP boards, adjustable paddles, pumps, safety leashes, storage racks, repair kits, and staff operation guides. Afarer can also support expansion into water fitness products and family water equipment.',
         },
         {
           title: 'Low-Maintenance Commercial Equipment',
@@ -3100,7 +3100,7 @@ const solutions: BizSolution[] = [
       {
         question: 'Can we offer SUP alongside other water activities?',
         answer:
-          'Yes, Afarer can support expansion into inflatable kayaks, water fitness products, family water equipment, and other outdoor recreation products to create a complete resort water activity portfolio.',
+          'Yes, Afarer can support expansion into water fitness products, family water equipment, and other outdoor recreation products to create a complete resort water activity portfolio.',
       },
     ],
 
@@ -4140,7 +4140,7 @@ const solutions: BizSolution[] = [
         {
           title: 'Complete Product Portfolio Planning',
           description:
-            'Afarer helps distributors build full water sports categories including all-round SUP, touring SUP, kids SUP, fishing SUP, yoga SUP, inflatable kayaks, accessories, and water recreation equipment.',
+            'Afarer helps distributors build full water sports categories including all-round SUP, touring SUP, kids SUP, fishing SUP, yoga SUP, accessories, and water recreation equipment.',
           features: ['SUP Product Categories', 'Additional Product Expansion', 'Accessories'],
         },
         {
@@ -4695,7 +4695,7 @@ const solutions: BizSolution[] = [
       'private label inflatable SUP',
       'drop stitch SUP manufacturer',
       'inflatable water sports supplier',
-      'custom inflatable kayak and SUP supplier',
+      'custom inflatable SUP and water sports supplier',
       'SUP OEM factory',
       'water sports product line expansion',
     ],
@@ -4748,14 +4748,13 @@ const solutions: BizSolution[] = [
         {
           title: 'Complete SUP Product Portfolio Development',
           description:
-            'Afarer provides proven product platforms including all-round SUP for beginners and families, touring SUP for adventure users, fishing SUP with mounting systems, yoga SUP for wellness markets, kids SUP, and inflatable kayaks.',
+            'Afarer provides proven product platforms including all-round SUP for beginners and families, touring SUP for adventure users, fishing SUP with mounting systems, yoga SUP for wellness markets, and kids SUP.',
           features: [
             'All-Round SUP Series',
             'Touring SUP Series',
             'Fishing SUP Series',
             'Yoga SUP Series',
             'Kids SUP Series',
-            'Inflatable Kayak Expansion',
           ],
         },
         {
@@ -4836,18 +4835,18 @@ const solutions: BizSolution[] = [
 
       moreCaseStudies: [
         {
-          title: 'ÁguaVita Brazil — From Diving Equipment to SUP and Kayak Market Leader in 10 Months',
+          title: 'ÁguaVita Brazil — From Diving Equipment to SUP Market Leader in 10 Months',
           customer: {
             location: 'São Paulo, Brazil',
             background:
-              'ÁguaVita was a well-respected Brazilian watersports manufacturer founded by Pedro Oliveira in 2008, specializing in scuba diving fins, masks, snorkels, and wetsuits with R$28M (approx. $5.6M USD) annual revenue. The Brazilian diving market was flat (2% annual growth) while SUP and kayak segments were growing 28% annually driven by domestic tourism and reservoir recreation. Pedro had 5,000+ dealer relationships across Brazil, a factory in Campinas with spare capacity, and a distribution network reaching every state. He needed a manufacturing partner to supply complete SUP and kayak products that could be branded and sold through his existing channel within 6 months.',
-            goal: "Launch a 10-model SUP and kayak line under the 'ÁguaVita Adventure' brand, achieve R$12M ($2.4M USD) in first-year sales, and capture 15% of the Brazilian recreational paddle sports market within 18 months.",
+              'ÁguaVita was a well-respected Brazilian watersports manufacturer founded by Pedro Oliveira in 2008, specializing in scuba diving fins, masks, snorkels, and wetsuits with R$28M (approx. $5.6M USD) annual revenue. The Brazilian diving market was flat (2% annual growth) while SUP and kayak segments were growing 28% annually driven by domestic tourism and reservoir recreation. Pedro had 5,000+ dealer relationships across Brazil, a factory in Campinas with spare capacity, and a distribution network reaching every state. He needed a manufacturing partner to supply complete SUP product lines that could be branded and sold through his existing channel within 6 months.',
+            goal: "Launch a 10-model SUP line under the 'ÁguaVita Adventure' brand, achieve R$12M ($2.4M USD) in first-year sales, and capture 15% of the Brazilian recreational paddle sports market within 18 months.",
           },
           steps: [
             {
               title: 'Product Portfolio Planning & Brazilian Market Adaptation',
               detail:
-                "Pedro visited Afarer's Shenzhen facility in January 2025 with his product director and industrial designer for a 5-day collaborative workshop. They selected 10 products: 4 SUP models (all-around, touring, inflatable, yoga), 2 sit-on-top kayaks, 2 tandem kayaks, 1 foldable kayak, and 1 SUP/kayak hybrid. Afarer's engineers modified each product for Brazilian conditions including UV-resistant PVC for tropical sun, reinforced hulls for rocky riverbeds in Minas Gerais, and colorways inspired by Brazil's national flag and Amazon rainforest motifs. Pedro placed a R$3.2M initial order for 4,500 units, with 30% deposit and balance on bill of lading.",
+                "Pedro visited Afarer's Shenzhen facility in January 2025 with his product director and industrial designer for a 5-day collaborative workshop. They selected 10 SUP models: 4 all-around, 3 touring, 2 fishing, and 1 yoga platform. Afarer's engineers modified each product for Brazilian conditions including UV-resistant PVC for tropical sun, reinforced hulls for rocky riverbeds in Minas Gerais, and colorways inspired by Brazil's national flag and Amazon rainforest motifs. Pedro placed a R$3.2M initial order for 4,500 units, with 30% deposit and balance on bill of lading.",
             },
             {
               title: 'Brand Integration, Portuguese Localization & Compliance',
@@ -4862,7 +4861,7 @@ const solutions: BizSolution[] = [
             {
               title: 'Category Expansion & Market Leadership',
               detail:
-                "By November 2025, 'ÁguaVita Adventure' had sold 6,200 units across all 10 SKUs generating R$16.2M in revenue (35% above the R$12M target). The inflatable SUP model 'Ipanema 10'6\"' was the single best-selling product across all of ÁguaVita's categories including legacy diving gear. Pedro credited the success to Afarer's quality consistency — only 0.8% defect rate compared to 4.2% on his previous diving equipment suppliers. He placed a R$8.5M order for 2026 including 4 new fishing kayak models and a stand-up pedal board, positioning ÁguaVita as Brazil's largest paddle sports company.",
+                "By November 2025, 'ÁguaVita Adventure' had sold 6,200 units across all 10 SKUs generating R$16.2M in revenue (35% above the R$12M target). The inflatable SUP model 'Ipanema 10'6\"' was the single best-selling product across all of ÁguaVita's categories including legacy diving gear. Pedro credited the success to Afarer's quality consistency — only 0.8% defect rate compared to 4.2% on his previous diving equipment suppliers. He placed a R$8.5M order for 2026 including 4 new fishing SUP models and a stand-up pedal board, positioning ÁguaVita as Brazil's largest paddle sports company.",
             },
           ],
           results: [
@@ -4878,13 +4877,13 @@ const solutions: BizSolution[] = [
             location: 'Kailua-Kona, Hawaii, USA',
             background:
               "Kai's Surf & Paddle was a family-run surf shop founded by Kaimana 'Kai' Nakama in 2003 on the Big Island's Kona coast. The shop had $420K annual revenue from surfboard sales, repairs, and basic lessons but was losing market share to larger operators offering multi-activity rentals. Kai, now 52, watched tourism to Hawaii rebound to pre-pandemic levels with 1.5M visitors annually to the Big Island, but his shop only captured SUP rental revenue during the 3-month summer peak. He owned a prime oceanfront location with storage capacity and had $85K available for fleet expansion but needed durable, commercial-grade SUP equipment with lower acquisition cost than the Hawaiian brands dominating local shops.",
-            goal: 'Launch a year-round SUP and kayak rental fleet of 60 boards, grow annual revenue to $680K within 12 months, and become the #1 SUP rental operator on the Kona coast by Summer 2025.',
+            goal: 'Launch a year-round SUP rental fleet of 60 boards, grow annual revenue to $680K within 12 months, and become the #1 SUP rental operator on the Kona coast by Summer 2025.',
           },
           steps: [
             {
               title: 'Fleet Composition Analysis & Commercial-Grade Spec Review',
               detail:
-                "In August 2024, Kai and his son Mako (a hospitality management graduate) worked with Afarer's Commercial Fleet division to design the ideal rental fleet. After analyzing 3 years of local tourism data, they settled on 40 SUPs (20 all-around 10'6\", 10 touring 11'6\", 5 yoga boards, 5 fishing boards) and 20 single sit-on-top kayaks. Afarer provided commercial-grade construction with reinforced drop-stitch, double-layered PVC rails, stainless steel D-rings (vs. plastic), and commercial-grade valves rated for 100,000+ inflation cycles. The fleet totaled $48,000 delivered (vs. $78,000 for comparable Hawaiian-made boards), and Kai placed the order with 50% deposit on September 1, 2024.",
+                "In August 2024, Kai and his son Mako (a hospitality management graduate) worked with Afarer's Commercial Fleet division to design the ideal rental fleet. After analyzing 3 years of local tourism data, they settled on 60 SUPs (30 all-around 10'6\", 15 touring 11'6\", 8 yoga boards, 7 fishing boards). Afarer provided commercial-grade construction with reinforced drop-stitch, double-layered PVC rails, stainless steel D-rings (vs. plastic), and commercial-grade valves rated for 100,000+ inflation cycles. The fleet totaled $48,000 delivered (vs. $78,000 for comparable Hawaiian-made boards), and Kai placed the order with 50% deposit on September 1, 2024.",
             },
             {
               title: 'Rental Operations Training & Logistics Setup',
@@ -4894,7 +4893,7 @@ const solutions: BizSolution[] = [
             {
               title: 'Pricing Strategy, Launch & Online Booking Integration',
               detail:
-                "Kai launched the fleet on December 1, 2024 with tiered pricing: $35/hour for SUPs, $45/hour for kayaks, $89/half-day, $129/full-day, and weekly rates. Afarer helped Kai integrate with FareHarbor and Peek Pro booking platforms, created professional product photography, and developed a Google My Business listing optimization that moved Kai's from page 4 to the top 3 local search results within 6 weeks. By December 31, the fleet achieved 42% utilization selling 780 rental days despite being the off-season, generating $62K in December alone.",
+                "Kai launched the fleet on December 1, 2024 with tiered pricing: $35/hour for SUPs, $89/half-day, $129/full-day, and weekly rates. Afarer helped Kai integrate with FareHarbor and Peek Pro booking platforms, created professional product photography, and developed a Google My Business listing optimization that moved Kai's from page 4 to the top 3 local search results within 6 weeks. By December 31, the fleet achieved 42% utilization selling 780 rental days despite being the off-season, generating $62K in December alone.",
             },
             {
               title: 'Peak Season Ramp & Expansion Planning',
@@ -4904,7 +4903,7 @@ const solutions: BizSolution[] = [
           ],
           results: [
             '$764K in first-year total revenue (12% above $680K target) with $487K net rental income from the Afarer fleet',
-            '78% fleet utilization during peak summer months across 60 SUPs and kayaks, serving up to 180 customers daily',
+            '78% fleet utilization during peak summer months across all 60 SUPs, serving up to 180 customers daily',
             'Break-even on the $48K fleet investment achieved in just 3.5 months (December 2024 through mid-March 2025)',
             'Business valuation increased from $420K to $1.8M within 12 months, enabling the acquisition of a second Kona beachfront location',
           ],
@@ -4972,9 +4971,9 @@ const solutions: BizSolution[] = [
           'Afarer supports a range of volumes from 500 units for initial market testing up to 10,000+ units annually for established programs. We work with brands to plan production volumes that match their distribution scale and seasonal demand.',
       },
       {
-        question: 'Does Afarer offer both inflatable SUP and inflatable kayak manufacturing?',
+        question: 'Does Afarer offer inflatable SUP manufacturing alongside existing kayak product lines?',
         answer:
-          'Yes, Afarer manufactures both inflatable SUP boards and inflatable kayaks using the same Drop Stitch and PVC welding technology. This allows water sports brands to expand their entire inflatable product category through a single manufacturing partner.',
+          'Yes, Afarer manufactures inflatable SUP boards using Drop Stitch and PVC welding technology. This allows water sports brands to add a complete inflatable SUP category through a single manufacturing partner while keeping their existing products unchanged.',
       },
     ],
 
@@ -5450,14 +5449,14 @@ const solutions: BizSolution[] = [
           customer: {
             location: 'Cancún, Quintana Roo, Mexico',
             background:
-              "Hyatt's Inclusive Collection operations team, led by Regional Director of Recreation Carlos Mendez, manages water sports programs across 8 Hyatt Ziva and Zilara properties in Mexico and the Caribbean. The Riviera Maya corridor receives 4.5M tourists annually and guest satisfaction scores for water sports directly impacted overall resort ratings on TripAdvisor and Booking.com. Carlos's three properties (Cancún, Puerto Morelos, and Tulum) were using mixed-vendor equipment with inconsistent quality, high maintenance costs, and no unified brand experience. He had a $180K budget to completely overhaul the water sports program for 2025 and wanted a single vendor solution for SUPs, kayaks, snorkel gear, and beach equipment.",
+              "Hyatt's Inclusive Collection operations team, led by Regional Director of Recreation Carlos Mendez, manages water sports programs across 8 Hyatt Ziva and Zilara properties in Mexico and the Caribbean. The Riviera Maya corridor receives 4.5M tourists annually and guest satisfaction scores for water sports directly impacted overall resort ratings on TripAdvisor and Booking.com. Carlos's three properties (Cancún, Puerto Morelos, and Tulum) were using mixed-vendor equipment with inconsistent quality, high maintenance costs, and no unified brand experience. He had a $180K budget to completely overhaul the water sports program for 2025 and wanted a single vendor solution for SUPs, snorkel gear, and beach equipment.",
             goal: 'Deploy 140 unified-branded water sports boards across 3 Hyatt Ziva properties, achieve 4.5/5 guest satisfaction for water sports activities, reduce equipment maintenance costs by 30%, and support 24,000+ guest experiences annually.',
           },
           steps: [
             {
               title: 'Comprehensive Resort Assessment & Equipment Specification',
               detail:
-                "In September 2024, Carlos and Afarer's Hospitality Solutions team conducted a 5-day onsite audit across all 3 properties. They analyzed guest demographics, peak usage patterns, storage constraints, staffing levels, and saltwater exposure conditions. The audit revealed that 60+ annual guest days were lost due to equipment downtime and that existing boards lasted only 8-12 months before degrading in the Caribbean sun and salt. Afarer proposed a 140-unit fleet: 50 SUPs (10'6\" all-around), 40 kayaks (single sit-on-top), 30 clear-bottom kayaks for reef viewing, 10 tandem kayaks, and 10 pedal boards. Each board featured UV-stabilized marine-grade PVC with 5-year commercial warranty, stainless steel hardware, and Hyatt Ziva branded graphics in the brand's signature turquoise and white.",
+                "In September 2024, Carlos and Afarer's Hospitality Solutions team conducted a 5-day onsite audit across all 3 properties. They analyzed guest demographics, peak usage patterns, storage constraints, staffing levels, and saltwater exposure conditions. The audit revealed that 60+ annual guest days were lost due to equipment downtime and that existing boards lasted only 8-12 months before degrading in the Caribbean sun and salt. Afarer proposed a 140-unit fleet: 100 SUPs (10'6\" all-around), 20 clear-bottom paddle boards for reef viewing, 20 pedal boards, and 10 tandem fishing SUPs. Each board featured UV-stabilized marine-grade PVC with 5-year commercial warranty, stainless steel hardware, and Hyatt Ziva branded graphics in the brand's signature turquoise and white.",
             },
             {
               title: 'Beach Operations Infrastructure & Storage Solutions',
@@ -5467,12 +5466,12 @@ const solutions: BizSolution[] = [
             {
               title: 'Activity Programming, Staff Training & Guest Experience Design',
               detail:
-                "Afarer developed a tiered activity program for each resort: complimentary (SUP/kayak rentals for 1-hour slots), guided (morning SUP yoga at $45/pp, sunset reef tours at $55/pp), and premium (private paddle picnic excursions at $120/pp). Afarer's trainers spent 12 days across the 3 resorts training 24 recreation staff members covering equipment handling, guest instruction, safety protocols, and basic repair. The training included a certification program recognized by the Mexican Association of Water Sports Operators. Carlos's team launched a QR code booking system integrated with Hyatt's guest app, allowing guests to reserve equipment 48 hours in advance.",
+                "Afarer developed a tiered activity program for each resort: complimentary (SUP rentals for 1-hour slots), guided (morning SUP yoga at $45/pp, sunset reef tours at $55/pp), and premium (private paddle picnic excursions at $120/pp). Afarer's trainers spent 12 days across the 3 resorts training 24 recreation staff members covering equipment handling, guest instruction, safety protocols, and basic repair. The training included a certification program recognized by the Mexican Association of Water Sports Operators. Carlos's team launched a QR code booking system integrated with Hyatt's guest app, allowing guests to reserve equipment 48 hours in advance.",
             },
             {
               title: 'Seasonal Operation, Performance Tracking & ROI Analysis',
               detail:
-                "The full program launched January 15, 2025 and by June 2025 had supported 14,200 guest experiences with 0 safety incidents. Guest satisfaction for water sports activities averaged 4.7/5 with the clear-bottom kayaks receiving the highest ratings (4.9/5). Equipment maintenance costs dropped 42% compared to the previous year's mixed-vendor program — from $34K to $19.7K across the 3 properties. The premium guided programs generated $112K in incremental revenue in the first 6 months. Carlos's team reported a 22% increase in guests extending their stay by 1+ nights specifically for water sports. Hyatt's Inclusive Collection approved a $240K budget for 2026 to add Afarer equipment at 2 additional properties in the Dominican Republic and Jamaica.",
+                "The full program launched January 15, 2025 and by June 2025 had supported 14,200 guest experiences with 0 safety incidents. Guest satisfaction for water sports activities averaged 4.7/5 with the clear-bottom paddle boards receiving the highest ratings (4.9/5). Equipment maintenance costs dropped 42% compared to the previous year's mixed-vendor program — from $34K to $19.7K across the 3 properties. The premium guided programs generated $112K in incremental revenue in the first 6 months. Carlos's team reported a 22% increase in guests extending their stay by 1+ nights specifically for water sports. Hyatt's Inclusive Collection approved a $240K budget for 2026 to add Afarer equipment at 2 additional properties in the Dominican Republic and Jamaica.",
             },
           ],
           results: [
@@ -5488,13 +5487,13 @@ const solutions: BizSolution[] = [
             location: 'Mykonos, Greece',
             background:
               "BlueWave Beach Clubs was a fast-growing Greek hospitality group founded by yacht captain and entrepreneur Dimitri Constantinou in 2018, operating premium beach clubs in Mykonos, Santorini, Naxos, Paros, and Crete. The group served 180K guests annually across 5 locations with $22M in combined revenue. Dimitri wanted to standardize water sports equipment across all properties to create a consistent premium brand experience. Each location had been purchasing equipment independently from different suppliers resulting in 8 different board brands, inconsistent quality, and no bulk pricing. Dimitri's operations director estimated they spent $165K annually on water sports equipment with 18-month average replacement cycle. He wanted a turnkey solution with unified branding, volume pricing, and lifecycle management.",
-            goal: 'Deploy 200 fully branded SUPs and kayaks across 5 beach club locations, reduce equipment costs by 25% through volume procurement and longer lifespan, and support 50,000+ annual guest rentals with a unified premium brand experience.',
+            goal: 'Deploy 200 fully branded SUP boards across 5 beach club locations, reduce equipment costs by 25% through volume procurement and longer lifespan, and support 50,000+ annual guest rentals with a unified premium brand experience.',
           },
           steps: [
             {
               title: 'Multi-Property Needs Analysis & Custom Fleet Engineering',
               detail:
-                "In October 2024, Afarer's Hospitality team conducted individual assessments at each BlueWave location over a 10-day tour of the Cyclades. Each club had different conditions: Mykonos (crowded bays, high-end clientele, wind exposure), Santorini (volcanic sand, calmer waters, sunset tourism), Naxos (family-oriented, shallow waters, longer beachfront), Paros (windsurfing crossover, sporty clientele), and Crete (larger waves, mixed demographics). Afarer designed a 200-unit fleet with location-specific configurations: 80 SUPs (including 20 SUP yoga platforms with extended length), 60 kayaks (20 singles, 20 tandems, 20 clear-bottom), 20 pedal boards for premium guests, 20 windSUP hybrids for Mykonos and Paros, and 20 youth boards for Naxos family programs. All units featured BlueWave's signature navy-and-white color scheme with gold accent logos.",
+                "In October 2024, Afarer's Hospitality team conducted individual assessments at each BlueWave location over a 10-day tour of the Cyclades. Each club had different conditions: Mykonos (crowded bays, high-end clientele, wind exposure), Santorini (volcanic sand, calmer waters, sunset tourism), Naxos (family-oriented, shallow waters, longer beachfront), Paros (windsurfing crossover, sporty clientele), and Crete (larger waves, mixed demographics). Afarer designed a 200-unit fleet with location-specific configurations: 110 SUPs (including 20 SUP yoga platforms with extended length and 20 clear-bottom boards), 30 pedal boards for premium guests, 30 windSUP hybrids for Mykonos and Paros, and 30 youth boards for Naxos family programs. All units featured BlueWave's signature navy-and-white color scheme with gold accent logos.",
             },
             {
               title: 'Site-Specific Infrastructure & Logistics Implementation',
@@ -5504,7 +5503,7 @@ const solutions: BizSolution[] = [
             {
               title: 'Activity Program Standardization & Premium Tier Creation',
               detail:
-                "Dimitri's team launched BlueWave's standardized water sports program 'Aegean Blue Experiences' with 3 tiers: complimentary (30-minute SUP/kayak for club guests), premium (guided SUP to secluded beaches at €65-€95), and ultra-premium (private yacht-transfer paddle excursions at €250/pp including champagne beach picnic). Afarer's programming team created 12 guided tour routes across the 5 islands with GPS-tracked routes, points of interest markers, and photographer support. The Mykonos property also launched 'Sunset SUP at Little Venice' — a 2-hour guided evening paddle that sold out every session at €85/pp with 95% capacity rate over summer.",
+                "Dimitri's team launched BlueWave's standardized water sports program 'Aegean Blue Experiences' with 3 tiers: complimentary (30-minute SUP sessions for club guests), premium (guided SUP to secluded beaches at €65-€95), and ultra-premium (private yacht-transfer paddle excursions at €250/pp including champagne beach picnic). Afarer's programming team created 12 guided tour routes across the 5 islands with GPS-tracked routes, points of interest markers, and photographer support. The Mykonos property also launched 'Sunset SUP at Little Venice' — a 2-hour guided evening paddle that sold out every session at €85/pp with 95% capacity rate over summer.",
             },
             {
               title: 'Performance Season Review & Program Sustainability',
@@ -6625,7 +6624,7 @@ const solutions: BizSolution[] = [
             {
               title: 'Step 1: Fleet Acquisition & Age-Appropriate Board Sizing',
               detail:
-                'In January 2025, Whitfield selected the Afarer Junior Explorer 9\'6" X for campers aged 8-11 (40 boards) and the Explorer 10\'8" X for ages 12-15 (30 boards), totaling $58K. She specified each board with two bow-mounted D-rings for GoPro/collection tray attachment and a deck bungee for a waterproof nature journal (Rite in the Rain, spiral-bound). Each board was laser-engraved with a camper ID number and the Camp Keowee raccoon logo. Whitfield also ordered 4 Afarer inflatable kayak conversion kits (seats + skegs) for dual-mode use, giving flexibility for campers transitioning from kayaking.',
+                'In January 2025, Whitfield selected the Afarer Junior Explorer 9\'6" X for campers aged 8-11 (40 boards) and the Explorer 10\'8" X for ages 12-15 (30 boards), totaling $58K. She specified each board with two bow-mounted D-rings for GoPro/collection tray attachment and a deck bungee for a waterproof nature journal (Rite in the Rain, spiral-bound). Each board was laser-engraved with a camper ID number and the Camp Keowee raccoon logo.',
             },
             {
               title: 'Step 2: 4-Tier SUP Exploration Badge Curriculum Design',
@@ -6646,7 +6645,7 @@ const solutions: BizSolution[] = [
           results: [
             '647 campers participated (54% of enrollment vs 28% for canoe/kayak) with 4.7/5 satisfaction rating',
             '421 badge levels achieved across 4 tiers including 12 Keowee Keeper overnight expeditions',
-            '70-board fleet with dual-mode inflatable kayak conversion kits serving ages 8-15 across 9 weeks',
+            '70-board SUP fleet purpose-built for ages 8-15 across 9 weeks',
             '19% increase in 2026 camper re-enrollment attributed to the SUP Exploration badge program',
           ],
         },

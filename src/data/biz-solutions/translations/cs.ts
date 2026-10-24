@@ -89,7 +89,7 @@ const cs: Record<string, SolutionOverride> = {
     meta: {
       title: 'Nafukovací SUP řešení pro surfshopy | Výrobce private label | {SITE}',
       description:
-        'Afarer pomáhá surfshopům a značkám zaměřeným na vodní životní styl růst s nafukovacími SUP deskami private label, nafukovacími kajaky a zakázkovými produkty pro vodní sporty. Snižte náklady na dopravu, skladování a zásoby díky pokročilé nafukovací technologii.',
+        'Afarer pomáhá surfshopům a značkám zaměřeným na vodní životní styl růst s nafukovacími SUP deskami private label a zakázkovými produkty pro vodní sporty. Snižte náklady na dopravu, skladování a zásoby díky pokročilé nafukovací technologii.',
     },
   },
   'kids-exploration-sup-program': {

@@ -89,7 +89,7 @@ const it: Record<string, SolutionOverride> = {
     meta: {
       title: 'Soluzioni SUP gonfiabili per surf shop | Produttore a marchio privato | {SITE}',
       description:
-        'Afarer aiuta i surf shop e i brand di lifestyle acquatico a espandersi con SUP gonfiabili a marchio privato, kayak gonfiabili e prodotti per sport acquatici personalizzati. Riduci i costi di spedizione, stoccaggio e inventario con tecnologia gonfiabile avanzata.',
+        'Afarer aiuta i surf shop e i brand di lifestyle acquatico a espandersi con SUP gonfiabili a marchio privato e prodotti per sport acquatici personalizzati. Riduci i costi di spedizione, stoccaggio e inventario con tecnologia gonfiabile avanzata.',
     },
   },
   'kids-exploration-sup-program': {

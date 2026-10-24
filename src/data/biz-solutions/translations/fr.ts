@@ -123,7 +123,7 @@ const overrides: Record<string, SolutionOverride> = {
     meta: {
       title: 'Solutions de SUP gonflables pour les surf shops | Fabricant en marque blanche | {SITE}',
       description:
-        "Afarer aide les surf shops et marques lifestyle nautique à se développer avec des SUP gonflables en marque blanche, des kayaks gonflables et des produits nautiques personnalisés. Réduisez vos coûts d'expédition, de stockage et d'inventaire grâce à une technologie gonflable avancée.",
+        "Afarer aide les surf shops et marques lifestyle nautique à se développer avec des SUP gonflables en marque blanche et des produits nautiques personnalisés. Réduisez vos coûts d'expédition, de stockage et d'inventaire grâce à une technologie gonflable avancée.",
     },
   },
   'kids-exploration-sup-program': {

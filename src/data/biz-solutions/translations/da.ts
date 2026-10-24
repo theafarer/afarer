@@ -89,7 +89,7 @@ const da: Record<string, SolutionOverride> = {
     meta: {
       title: 'Oppustelige SUP-løsninger til surfshops | Private label-producent | {SITE}',
       description:
-        'Afarer hjælper surfshops og vandlivsstilsbrands med at vokse med private label-oppustelige SUPs, oppustelige kajakker og skræddersyede vandsportsprodukter. Reducer fragt-, lager- og varelageromkostninger med avanceret oppustelig teknologi.',
+        'Afarer hjælper surfshops og vandlivsstilsbrands med at vokse med private label-oppustelige SUPs og skræddersyede vandsportsprodukter. Reducer fragt-, lager- og varelageromkostninger med avanceret oppustelig teknologi.',
     },
   },
   'kids-exploration-sup-program': {

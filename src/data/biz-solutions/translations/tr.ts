@@ -89,7 +89,7 @@ const tr: Record<string, SolutionOverride> = {
     meta: {
       title: 'Surf Mağazaları için Şişirilebilir SUP Çözümleri | Private Label Üreticisi | {SITE}',
       description:
-        "Afarer, surf mağazalarının ve su yaşam tarzı markalarının private label şişirilebilir SUP'lar, şişirilebilir kayaklar ve özel su sporları ürünleriyle büyümesine yardımcı olur. İleri şişirilebilir teknoloji ile nakliye, depolama ve stok maliyetlerini azaltın.",
+        "Afarer, surf mağazalarının ve su yaşam tarzı markalarının private label şişirilebilir SUP'lar ve özel su sporları ürünleriyle büyümesine yardımcı olur. İleri şişirilebilir teknoloji ile nakliye, depolama ve stok maliyetlerini azaltın.",
     },
   },
   'kids-exploration-sup-program': {
