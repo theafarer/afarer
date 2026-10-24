@@ -18,13 +18,13 @@ export type SolutionOverride = {
   };
   caseStudy?: {
     title?: string;
-    customer?: { location?: string; background?: string; goal?: string };
-    steps?: { title: string; detail: string }[];
+    customer?: string | { location?: string; background?: string; goal?: string };
+    steps?: (string | { title: string; detail: string })[];
     results?: string[];
     moreCaseStudies?: {
       title: string;
-      customer: { location?: string; background?: string; goal?: string };
-      steps: { title: string; detail: string }[];
+      customer: string | { location?: string; background?: string; goal?: string };
+      steps: (string | { title: string; detail: string })[];
       results: string[];
     }[];
   };
