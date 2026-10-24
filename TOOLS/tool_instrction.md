@@ -1488,6 +1488,10 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 70. **官网优化 1——B2B MOQ/交期口径统一(fix 3c58a65)**:纯 .astro 文本编辑 8 文件 16 处(可见 FAQ + FAQPage schema 双副本),不动 i18n 数据故跳过 gen 链直接 astro build(6144 heap)13,075 页;验证链 prettier --write/--check → npm run check 四绿 → build → clean-public-assets → dist 抽查 8 页旧口径 0 命中。陷阱:PowerShell Get-Content 默认编码读 dist HTML 会使 UTF-8 en dash 显示为"鈥?"乱码并导致正则误判,须用 [System.IO.File]::ReadAllText(path, UTF8)。无脚本归档;docs 提交含 TECH.md 136 条(TECH.md 纯 CRLF,工具日志纯 LF,分别用 \r\n/\n 回写)。
 
+71. **官网优化 2——B2B 内链簇 + factory FAQPage schema(feat 2b31a7a8 + fix da1acc1)**:5 个 .astro 手工编辑(+228 行,RelatedPages 内链模板 + FAQPage JSON-LD),常规 npm run build 全链;CI 双绿。**推送通道反转教训**:本轮直连 github.com 443 失败、代理 127.0.0.1:10808 恢复可用——git 全局代理配置即默认 push 成功;两通道状态会互换,失败时对侧重试(direct: git -c http.proxy= -c https.proxy= push theafarer main / proxy: git push theafarer main)。
+
+72. **官网优化 3——全站移除 RIB/KAYAK 产品口径(fix 24606ac2,84 文件)**:核心陷阱=**双生成器**——public/{lang}/llms.txt 由 scripts/build-geo-v4.ts 每次全量重生成(手编无效,须改源 definition);public/llms-full.txt 是粘性底座+重生成三段(Company Facts←src/data/geo 三个 JSON、Site Pages←src/data/pages 各 YAML、Product Catalog),dist 输出=public 文件(route 被静态文件遮蔽)。RIB/kayak 扫描必须用 word-boundary 正则 /\bRIBs?\b|\bkayaks?\b/gi,子串 rib 命中 "distributor" 误报(verify_rib_final.cjs 曾因此假 FAIL)。验证脚本存 Temp(deveco):verify_rib_final.cjs/verify_rib_dist2.cjs/scan_llmsfull.cjs 等,未归档(纯文本断言,可按需复建)。三轮 build 后 CI+Build & Deploy 双绿;v2 旧 slug(rib-330-review 等 4 个)与 Phase 2 i18n(282 文件)挂账待业主决策。
+
 ---
 
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
