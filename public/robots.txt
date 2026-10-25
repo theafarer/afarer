@@ -10,6 +10,12 @@ Disallow: /keystatic/
 Disallow: /internal/
 Disallow: /api/
 
+User-agent: OAI-Searchbot
+Allow: /
+Disallow: /keystatic/
+Disallow: /internal/
+Disallow: /api/
+
 User-agent: ClaudeBot
 Allow: /
 Disallow: /keystatic/
