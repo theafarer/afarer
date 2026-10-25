@@ -15,12 +15,12 @@ highlights:
   - value: 100%
     label: Yksiköt painekokeilla
     detail: Jokainen kammi, jokainen vene
-  - value: 48 h
+  - value: 24–48 h
     label: Ilmanpidätteston kesto
     detail: 1,25× nimellispaineessa
   - value: '&lt;5 %'
     label: Sallittu enimmäispaineen lasku
-    detail: Yli 24 tunnin paineenpitotesti
+    detail: 24–48 tunnin paineenpitotesti
   - value: AQL 2.5
     label: Merkittävän virheen raja-arvo
     detail: ISO 2859:n otanta
@@ -37,8 +37,8 @@ test_procedures:
       - ASTM D751 (peel)
       - Sisäinen 100 kohdan tarkistuslista
       - ISO 2859 -näytteenotto
-  - title: 48 tunnin ilmanpitävyystesti
-    description: Jokainen putkikammio paisutetaan 125 prosenttiin nimellisestä paineesta ja pidetään 48 tuntia. Paineanturit kirjautuvat jatkuvasti lämpökorjauksen kera. Jos yksikään kammio ylittää 5 prosenttia paineen laskusta, se käynnistää automaattisen erän uudelleentarkastuksen.
+  - title: 24–48 tunnin ilmanpitävyystesti
+    description: Jokainen putkikammio paisutetaan 125 prosenttiin nimellisestä paineesta ja pidetään 24–48 tuntia. Paineanturit kirjautuvat jatkuvasti lämpökorjauksen kera. Jos yksikään kammio ylittää 5 prosenttia paineen laskusta, se käynnistää automaattisen erän uudelleentarkastuksen.
     standards:
       - ISO 6185
       - CE 2013/53/EU

@@ -17,12 +17,12 @@ highlights:
   - value: 100%
     label: Einheiten druckgeprüft
     detail: Jede Kammer, jedes Boot
-  - value: 48 Std.
+  - value: 24–48 Std.
     label: Dauer des Luftdichtigkeitstests
     detail: Bei 1,25× Nenndruck
   - value: <5%
     label: Maximal zulässiger Druckabfall
-    detail: Über 24-stündige Haltefrist
+    detail: Haltefrist von 24–48 Stunden
   - value: AQL 2,5
     label: Schwelle für wesentliche Mängel
     detail: Nach ISO 2859 Stichproben
@@ -39,8 +39,8 @@ test_procedures:
       - ASTM D751 (Abziehen)
       - Interne 100-Punkte-Checkliste
       - ISO 2859 Stichprobenprüfung
-  - title: 48-Stunden-Luftdichtigkeitstest
-    description: Jede Röhrenkammer wird auf 125 % des Nennluftdrucks aufgeblasen und für 48 Stunden gehalten. Drucksensoren protokollieren kontinuierlich mit Temperaturkompensation. Jede Kammer, die einen Druckabfall von mehr als 5 % aufweist, löst eine automatische Nachprüfung des gesamten Loses aus.
+  - title: 24–48-Stunden-Luftdichtigkeitstest
+    description: Jede Röhrenkammer wird auf 125 % des Nennluftdrucks aufgeblasen und für 24–48 Stunden gehalten. Drucksensoren protokollieren kontinuierlich mit Temperaturkompensation. Jede Kammer, die einen Druckabfall von mehr als 5 % aufweist, löst eine automatische Nachprüfung des gesamten Loses aus.
     standards:
       - ISO 6185
       - CE 2013/53/EU

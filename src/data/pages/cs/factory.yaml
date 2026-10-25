@@ -39,7 +39,7 @@ intelligence_cards:
   - title: Laboratoř kvality a testování
     icon: Q
     icon_bg: green
-    desc: 'Nezávislá laboratoř kontroly kvality se 4 fázemi testování: kontrola vstupních materiálů (pevnost v tahu, pevnost v trhu, UV), 48hodinová tlaková zkouška při 1.25x jmenovitého tlaku, testy odlupování švů a ověření nosnosti a vyvážení u každého člunu.'
+    desc: 'Nezávislá laboratoř kontroly kvality se 4 fázemi testování: kontrola vstupních materiálů (pevnost v tahu, pevnost v trhu, UV), 24–48hodinová tlaková zkouška při 1.25x jmenovitého tlaku, testy odlupování švů a ověření nosnosti a vyvážení u každého člunu.'
     metrics:
       - label: Laboratorní vybavení
         value: Trhací zařízení, teplotní komora, nádrž pro zkoušky těsnosti
@@ -107,8 +107,8 @@ qc_section:
       title: Kontrola vstupních materiálů
       desc: Tkaniny PVC, Hypalon a drop-stitch procházejí zkouškou pevnosti v tahu (ASTM D751), šířením trhliny a ověřením odolnosti proti UV záření, než jakákoliv šarže vstoupí do výroby.
     - step: '2'
-      title: 48hodinový test udržení vzduchu
-      desc: Každá nafukovací komora je nafouknuta na 125 % jmenovitého tlaku a udržována po dobu 48 hodin. Pokles tlaku pod 5 % automaticky vede k vyřazení kusu a opětovné kontrole švů.
+      title: 24–48hodinový test udržení vzduchu
+      desc: Každá nafukovací komora je nafouknuta na 125 % jmenovitého tlaku a udržována po dobu 24–48 hodin. Pokles tlaku nad 5 % automaticky vede k vyřazení kusu a opětovné kontrole švů.
     - step: '3'
       title: Testování zátěže a vyvážení
       desc: Hotové čluny se zatíží na maximální jmenovitou kapacitu a testují se na stabilitu, volný bok a ovladatelnost. Každé plavidlo se před finální kontrolou testuje na vodě.
@@ -171,8 +171,8 @@ production_flow:
     - stage: '05'
       title: Tlakové testy a kontrola kvality
       description: Každá komora je nafouknuta na 1.25× jmenovitý tlak (obvykle 20–25 PSI) a udržována po dobu 24–48 hodin. Tlakové senzory nepřetržitě zaznamenávají hodnoty. Komory s poklesem tlaku nad 5 % jsou vyřazeny a odeslány k nové kontrole svarů.
-      qc_check: 24hodinový záznam držení tlaku, denně ověřovaná kalibrace senzorů, údaj o tlaku kompenzovaný podle teploty, opakovaný test švů po opravě
-      qc_threshold: Maximální pokles tlaku 5 % za 24 h při stabilní teplotě. Komora, která tento limit překročí = 100% opakovaný test celé výrobní šarže
+      qc_check: 24–48hodinový záznam držení tlaku, denně ověřovaná kalibrace senzorů, údaj o tlaku kompenzovaný podle teploty, opakovaný test švů po opravě
+      qc_threshold: Maximální pokles tlaku 5 % za 24–48 h při stabilní teplotě. Komora, která tento limit překročí = 100% opakovaný test celé výrobní šarže
       responsibility: Laboratoř kvality (nezávislá na výrobě, podléhá vedení)
     - stage: '06'
       title: Finální kontrola a balení
@@ -242,7 +242,7 @@ qc_dashboard:
       detail: Každý člun, každá komora, každá šarže
     - value: <5%
       label: Maximální přípustný pokles tlaku
-      detail: Přes 24 hodin při 1,25× jmenovitém tlaku
+      detail: Přes 24–48 hodin při 1,25× jmenovitém tlaku
     - value: AQL 2.5
       label: Hranice závažné vady
       detail: Podle normy pro výběr vzorků ISO 2859

@@ -15,12 +15,12 @@ highlights:
   - value: 100 %
     label: Units pressure-tested
     detail: Chaque chambre, chaque bateau
-  - value: 48 h
+  - value: 24–48 h
     label: Durée du test de rétention d'air
     detail: À 1,25× la pression nominale
   - value: '&lt;5%'
     label: Chute de pression maximale autorisée
-    detail: Période de maintien de plus de 24 heures
+    detail: Période de maintien de 24 à 48 heures
   - value: AQL 2,5
     label: Major defect threshold
     detail: Échantillonnage selon ISO 2859
@@ -37,8 +37,8 @@ test_procedures:
       - ASTM D751 (pelage)
       - Liste de contrôle interne de 100 points
       - Échantillonnage ISO 2859
-  - title: Test de Rétention d'Air 48 Heures
-    description: Chaque chambre est gonflée à 125 % of rated pressure and held for 48 hours. Pressure sensors log continuously with temperature compensation. Any chamber exceeding 5% pressure drop triggers automatic batch re-inspection.
+  - title: Test de Rétention d'Air 24–48 Heures
+    description: Chaque chambre est gonflée à 125 % de la pression nominale et maintenue pendant 24 à 48 heures. Les capteurs de pression enregistrent en continu avec compensation de température. Toute chambre dont la chute de pression dépasse 5 % déclenche une réinspection automatique du lot.
     standards:
       - ISO 6185
       - CE 2013/53/EU

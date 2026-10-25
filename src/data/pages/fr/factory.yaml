@@ -40,7 +40,7 @@ intelligence_cards:
   - title: Laboratoire Qualité et Tests
     icon: Q
     icon_bg: green
-    desc: 'Laboratoire CQ indépendant avec 4 étapes : inspection matières premières, maintien de pression 48h à 1,25x, test de pelage des soudures et vérification charge/équilibre.'
+    desc: 'Laboratoire CQ indépendant avec 4 étapes : inspection matières premières, maintien de pression 24–48h à 1,25x, test de pelage des soudures et vérification charge/équilibre.'
     metrics:
       - label: Équipements de laboratoire
         value: Testeur traction, chambre température, bac fuite
@@ -108,8 +108,8 @@ qc_section:
       title: Inspection des Matières Premières
       desc: Les tissus PVC, Hypalon et drop-stitch subissent des tests de traction (ASTM D751), de propagation de déchirure et de vérification de résistance UV avant qu’un lot n’entre en production.
     - step: '2'
-      title: Test de Rétention d'Air 48 Heures
-      desc: Chaque chambre est gonflée à 125 % de la pression nominale pendant 48h. Une chute >5 % déclenche un rejet et une réinspection.
+      title: Test de Rétention d'Air 24–48 Heures
+      desc: Chaque chambre est gonflée à 125 % de la pression nominale pendant 24–48h. Une chute >5 % déclenche un rejet et une réinspection.
     - step: '3'
       title: Test de Charge et d'Équilibre
       desc: Les bateaux sont chargés à capacité maximale et testés pour la stabilité, le franc-bord et la maniabilité. Chaque embarcation est testée dans l'eau.
@@ -171,9 +171,9 @@ production_flow:
       responsibility: Chef d'équipe assemblage + CQ ligne
     - stage: '05'
       title: Test de pression et retenue qualité
-      description: Chaque chambre est gonflée à 1,25× la pression nominale (typically 20–25 PSI) and held for 24–48 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.
-      qc_check: Journal de maintien de pression 24h, étalonnage capteurs quotidien, lecture compensée en température, re-test après réparation
-      qc_threshold: Max 5% de chute de pression sur 24h à température stable. Tout dépassement = re-test 100 % du lot
+      description: Chaque chambre est gonflée à 1,25× la pression nominale (généralement 20–25 PSI) et maintenue pendant 24 à 48 heures. Les capteurs de pression enregistrent en continu. Les chambres dont la chute de pression dépasse 5 % sont rejetées et renvoyées pour réinspection des soudures.
+      qc_check: Journal de maintien de pression 24–48h, étalonnage capteurs quotidien, lecture compensée en température, re-test après réparation
+      qc_threshold: Max 5% de chute de pression sur 24–48h à température stable. Tout dépassement = re-test 100 % du lot
       responsibility: Laboratoire qualité (indépendant de la production, rapporte à la direction)
     - stage: '06'
       title: Inspection finale et emballage
@@ -243,7 +243,7 @@ qc_dashboard:
       detail: Chaque bateau, chaque chambre, chaque lot
     - value: <5 %
       label: Chute de pression maximale autorisée
-      detail: Sur 24h à 1,25× la pression nominale
+      detail: Sur 24–48h à 1,25× la pression nominale
     - value: AQL 2,5
       label: Seuil de défauts majeurs
       detail: Selon norme d'échantillonnage ISO 2859

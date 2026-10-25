@@ -17,12 +17,12 @@ highlights:
   - value: 100%
     label: Enheder tryktestet
     detail: Hvert kammer, hver båd
-  - value: 48 h
+  - value: 24–48 h
     label: Varighed af luftretentionstest
     detail: Ved 1,25× nominelt tryk
   - value: '&lt;5%'
     label: Maksimalt tilladt trykfald
-    detail: Holdperiode over 24 timer
+    detail: Holdperiode på 24–48 timer
   - value: AQL 2,5
     label: Tærskel for væsentlige fejl
     detail: Pr. stikprøveudtagning i henhold til ISO 2859
@@ -39,8 +39,8 @@ test_procedures:
       - ASTM D751 (peeltest)
       - Intern tjekliste med 100 punkter
       - ISO 2859-stikprøvekontrol
-  - title: Lufttæthedstest i 48 timer
-    description: Hvert luftkammer pumpes op til 125% af det nominelle tryk og holdes i 48 timer. Tryksensorer logger kontinuerligt med temperaturkompensation. Ethvert kammer med et trykfald på over 5% udløser automatisk ny inspektion af hele batchen.
+  - title: Lufttæthedstest i 24–48 timer
+    description: Hvert luftkammer pumpes op til 125% af det nominelle tryk og holdes i 24–48 timer. Tryksensorer logger kontinuerligt med temperaturkompensation. Ethvert kammer med et trykfald på over 5% udløser automatisk ny inspektion af hele batchen.
     standards:
       - ISO 6185
       - CE 2013/53/EU

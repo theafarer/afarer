@@ -395,12 +395,12 @@ test_results:
     detail: 'Jedes Boot, jede Kammer, jede Charge'
   - metric: 'Maximaler Druckverlust'
     value: '<5%'
-    detail: 'Über 24 h bei 1,25-fachem Nenndruck'
+    detail: 'Über 24–48 h bei 1,25-fachem Nenndruck'
   - metric: 'Schwellenwert für schwere Mängel'
     value: AQL 2.5
     detail: 'Nach der Stichprobennorm ISO 2859'
   - metric: 'Druckhaltezeit'
-    value: 24-48h
+    value: 24–48h
     detail: 'Je nach Produktkategorie'
   - metric: 'Test-Druckreserve'
     value: 1.25x

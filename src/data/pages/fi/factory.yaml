@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Laatulaboratorio ja testaus
     icon: Q
     icon_bg: green
-    desc: 'Riippumaton laadunvalvontalaboratorio 4 testausvaiheella: raaka-aineiden tarkastus (vetolujuus, repäisylujuus, UV), 48 tunnin painetesti 1.25-kertaisella nimellispaineella, sauman repäisytestaus sekä kuorma- ja tasapainotarkastus jokaiselle veneelle.'
+    desc: 'Riippumaton laadunvalvontalaboratorio 4 testausvaiheella: raaka-aineiden tarkastus (vetolujuus, repäisylujuus, UV), 24–48 tunnin painetesti 1.25-kertaisella nimellispaineella, sauman repäisytestaus sekä kuorma- ja tasapainotarkastus jokaiselle veneelle.'
     metrics:
       - label: Laboratoriolaitteet
         value: Vetolujuustestilaite, lämpökaappi, vuotosäiliö
@@ -111,8 +111,8 @@ qc_section:
       title: Raaka-aineen tarkastus
       desc: PVC-, Hypalon- ja drop-stitch-kankaat käyvät läpi vetolujuustestauksen (ASTM D751), repeämän leviämisen ja UV-kestävyyden varmistuksen ennen kuin mikään erä menee tuotantoon.
     - step: '2'
-      title: 48 tunnin ilmanpysyvyystesti
-      desc: Jokainen putkikammio täytetään 125 %:iin nimellispaineesta ja pidetään 48 tuntia. Yli 5 %:n paineen lasku aiheuttaa automaattisen hylkäyksen ja sauman uudelleentarkastuksen.
+      title: 24–48 tunnin ilmanpysyvyystesti
+      desc: Jokainen putkikammio täytetään 125 %:iin nimellispaineesta ja pidetään 24–48 tuntia. Yli 5 %:n paineen lasku aiheuttaa automaattisen hylkäyksen ja sauman uudelleentarkastuksen.
     - step: '3'
       title: Kuorma- ja tasapainotestaus
       desc: Valmiit veneet kuormitetaan enimmäiskantavuuteen ja testataan vakauden, vapaan laidan ja käsiteltävyyden osalta. Jokainen alus vesitestataan ennen lopullista tarkastusta.
@@ -177,8 +177,8 @@ production_flow:
     - stage: '05'
       title: Paineentestaus ja laatupidätys
       description: Jokainen kammio täytetään 1.25× nimellispaineeseen (tyypillisesti 20–25 PSI) ja sitä pidetään paineessa 24–48 tuntia. Painetunnistimet kirjaavat tietoja jatkuvasti. Kammiot, joissa painehäviö ylittää 5 %, hylätään ja lähetetään saumojen uudelleentarkastukseen.
-      qc_check: 24 tunnin paineenpitoloki, anturien kalibrointi varmistettu päivittäin, lämpötilakompensoitu painelukema, saumojen uudelleentestaus korjauksen jälkeen
-      qc_threshold: Max 5 % paineen lasku 24 tunnissa vakaassa lämpötilassa. Yksikään kammio, joka ylittää tämän, = 100 % koko tuotantosarjan uudelleentestaus
+      qc_check: 24–48 tunnin paineenpitoloki, anturien kalibrointi varmistettu päivittäin, lämpötilakompensoitu painelukema, saumojen uudelleentestaus korjauksen jälkeen
+      qc_threshold: Max 5 % paineen lasku 24–48 tunnissa vakaassa lämpötilassa. Yksikään kammio, joka ylittää tämän, = 100 % koko tuotantosarjan uudelleentestaus
       responsibility: Laadunvarmistuslaboratorio (riippumaton tuotannosta, raportoijaa johdolle)
     - stage: '06'
       title: Lopullinen tarkastus ja pakkaus
@@ -250,7 +250,7 @@ qc_dashboard:
       detail: Jokainen vene, jokainen kammi, jokainen erä
     - value: <5%
       label: Suurin sallittu painehäviö
-      detail: Yli 24 h 1.25× nimellispaineella
+      detail: 24–48 h 1.25× nimellispaineella
     - value: AQL 2.5
       label: Merkittävän virheen raja-arvo
       detail: ISO 2859 -otantastandardin mukaisesti

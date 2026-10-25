@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Kvalitetslaboratorium och provning
     icon: Q
     icon_bg: green
-    desc: 'Oberoende kvalitetskontrolllaboratorium med 4 testfaser: råvarukontroll (drag-, riv- och UV-test), 48 timmar tryckhållning vid 1,25 × nominellt tryck, sömavdragstest samt last- och balansverifiering på varje båt.'
+    desc: 'Oberoende kvalitetskontrolllaboratorium med 4 testfaser: råvarukontroll (drag-, riv- och UV-test), 24–48 timmar tryckhållning vid 1,25 × nominellt tryck, sömavdragstest samt last- och balansverifiering på varje båt.'
     metrics:
       - label: Laboratorieutrustning
         value: Dragprovare, kammare, läckagetank
@@ -111,8 +111,8 @@ qc_section:
       title: Inspektion av råmaterial
       desc: PVC-, Hypalon- och drop-stitch-tyger genomgår draghållfasthetstestning (ASTM D751), rivspridningstest och UV-beständighetsverifiering innan någon batch släpps till produktion.
     - step: '2'
-      title: 48-timmars lufttäthetstest
-      desc: Varje rörkammare blåses upp till 125 % av nominellt tryck och hålls i 48 timmar. Tryckfall under 5 % leder till automatisk underkännande och fönyad söminspektion.
+      title: 24–48-timmars lufttäthetstest
+      desc: Varje rörkammare blåses upp till 125 % av nominellt tryck och hålls i 24–48 timmar. Tryckfall över 5 % leder till automatisk underkännande och fönyad söminspektion.
     - step: '3'
       title: Belastnings- och balanstest
       desc: Färdiga båtar belastas till maximal kapacitet och testas för stabilitet, fribord och manövrering. Varje enhet testas på vatten före slutinspektion.
@@ -175,8 +175,8 @@ production_flow:
     - stage: '05'
       title: Tryckprovning och kvalitetshållning
       description: Varje kammare fylls till 1,25× märkt tryck (vanligen 20–25 PSI) och hålls i 24–48 timmar. Trycksensorer loggar kontinuerligt. Kammare som överskrider 5 % tryckfall avvisas och skickas för sömombesiktning.
-      qc_check: 24-timmars tryckhållningslogg, sensorkalibrering verifieras dagligen, temperaturkompenserad tryckavläsning, sömtester efter reparation
-      qc_threshold: Max. 5 % tryckfall över 24 h vid stabil temperatur. Varje kammare som överskrider detta = 100 % omprovning av hela produktionspartiet.
+      qc_check: 24–48-timmars tryckhållningslogg, sensorkalibrering verifieras dagligen, temperaturkompenserad tryckavläsning, sömtester efter reparation
+      qc_threshold: Max. 5 % tryckfall över 24–48 h vid stabil temperatur. Varje kammare som överskrider detta = 100 % omprovning av hela produktionspartiet.
       responsibility: Kvalitetslaboratorium (oberoende av produktion, rapporterar till ledningen)
     - stage: '06'
       title: Slutkontroll och förpackning
@@ -246,7 +246,7 @@ qc_dashboard:
       detail: Varje båt, varje kammare, varje sats
     - value: <5%
       label: Max tillåten tryckfall
-      detail: Över 24 timmar vid 1,25 × betryck
+      detail: Över 24–48 timmar vid 1,25 × betryck
     - value: AQL 2,5
       label: Tröskelvärde för allvarliga fel
       detail: Enligt ISO 2859 provningsstandard

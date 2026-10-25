@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Quality Lab & Testing
     icon: Q
     icon_bg: green
-    desc: 'Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat.'
+    desc: 'Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 24–48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every boat.'
     metrics:
       - label: Lab Equipment
         value: 'Tensile tester, temp chamber, leak tank'
@@ -114,8 +114,8 @@ qc_section:
       title: Raw Material Inspection
       desc: PVC, Hypalon, and drop-stitch fabrics undergo tensile testing (ASTM D751), tear propagation, and UV resistance verification before any batch enters production.
     - step: '2'
-      title: 48-Hour Air Retention Test
-      desc: Every tube chamber is inflated to 125% of rated pressure and held for 48 hours. Pressure drop below 5% triggers automatic rejection and seam re-inspection.
+      title: 24–48 Hour Air Retention Test
+      desc: Every tube chamber is inflated to 125% of rated pressure and held for 24–48 hours. Pressure drop exceeding 5% triggers automatic rejection and seam re-inspection.
     - step: '3'
       title: Load & Balance Testing
       desc: Completed boats are loaded to maximum rated capacity and tested for stability, freeboard, and handling. Each vessel is water-tested before final inspection.
@@ -182,8 +182,8 @@ production_flow:
     - stage: '05'
       title: Pressure Testing & Quality Hold
       description: 'Every chamber is inflated to 1.25× rated pressure (typically 20–25 PSI) and held for 24–48 hours. Pressure sensors log continuously. Chambers exceeding 5% pressure drop are rejected and sent for seam re-inspection.'
-      qc_check: '24h pressure hold log, sensor calibration verified daily, temperature-compensated pressure reading, seam re-test after repair'
-      qc_threshold: 'Max 5% pressure drop over 24h at stable temp. Any chamber exceeding this = 100% re-test of entire production batch'
+      qc_check: '24–48h pressure hold log, sensor calibration verified daily, temperature-compensated pressure reading, seam re-test after repair'
+      qc_threshold: 'Max 5% pressure drop over 24–48h at stable temp. Any chamber exceeding this = 100% re-test of entire production batch'
       responsibility: Quality lab (independent of production, reports to management)
     - stage: '06'
       title: Final Inspection & Packing
@@ -256,7 +256,7 @@ qc_dashboard:
       detail: Every boat, every chamber, every batch
     - value: '<5%'
       label: Max allowable pressure drop
-      detail: Over 24h at 1.25× rated pressure
+      detail: Over 24–48h at 1.25× rated pressure
     - value: AQL 2.5
       label: Major defect threshold
       detail: Per ISO 2859 sampling standard

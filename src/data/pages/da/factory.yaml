@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Kvalitetslaboratorium & test
     icon: Q
     icon_bg: green
-    desc: 'Uafhængigt QC-laboratorium med 4 testfaser: inspektion af råmaterialer (trækstyrke, rivestyrke, UV), 48 t trykhold ved 1.25x nominelt tryk, peel-test af sømme samt verificering af last og balance på hver båd.'
+    desc: 'Uafhængigt QC-laboratorium med 4 testfaser: inspektion af råmaterialer (trækstyrke, rivestyrke, UV), 24–48 t trykhold ved 1.25x nominelt tryk, peel-test af sømme samt verificering af last og balance på hver båd.'
     metrics:
       - label: Laboratorieudstyr
         value: Trækprøvemaskine, temperaturskab, lækagetank
@@ -111,8 +111,8 @@ qc_section:
       title: Inspektion af råmaterialer
       desc: PVC-, Hypalon- og drop-stitch-stoffer gennemgår træktest (ASTM D751), rivningsforplantning og verifikation af UV-resistens, før nogen batch sendes i produktion.
     - step: '2'
-      title: Lufttæthedstest i 48 timer
-      desc: Hvert rørkammer pustes op til 125 % af det nominelle tryk og holdes i 48 timer. Et trykfald på under 5 % udløser automatisk afvisning og ny kontrol af sømmen.
+      title: Lufttæthedstest i 24–48 timer
+      desc: Hvert rørkammer pustes op til 125 % af det nominelle tryk og holdes i 24–48 timer. Et trykfald på over 5 % udløser automatisk afvisning og ny kontrol af sømmen.
     - step: '3'
       title: Belastnings- & balancetest
       desc: Færdige både lastes til maksimal nominel kapacitet og testes for stabilitet, fribord og manøvreevne. Hver båd vandtestes før den endelige inspektion.
@@ -175,8 +175,8 @@ production_flow:
     - stage: '05'
       title: Tryktestning & kvalitetskontrol
       description: Hvert kammer pustes op til 1.25× det nominelle tryk (typisk 20–25 PSI) og holdes i 24–48 timer. Tryksensorer logger løbende. Kamre, der overskrider et trykfald på 5 %, kasseres og sendes til fornyet inspektion af sømmene.
-      qc_check: 24-timers log over trykfastholdelse, daglig verifikation af sensorkalibrering, temperaturkompenseret trykaflæsning, omtest af sømme efter reparation
-      qc_threshold: Maks. 5 % trykfald over 24 timer ved stabil temperatur. Overskrider en kammer dette = 100 % gen-test af hele produktionspartiet
+      qc_check: 24–48-timers log over trykfastholdelse, daglig verifikation af sensorkalibrering, temperaturkompenseret trykaflæsning, omtest af sømme efter reparation
+      qc_threshold: Maks. 5 % trykfald over 24–48 timer ved stabil temperatur. Overskrider en kammer dette = 100 % gen-test af hele produktionspartiet
       responsibility: Kvalitetslaboratorium (uafhængigt af produktionen, refererer til ledelsen)
     - stage: '06'
       title: Endelig kontrol & pakning
@@ -246,7 +246,7 @@ qc_dashboard:
       detail: Hver båd, hvert kammer, hver batch
     - value: <5%
       label: Maksimalt tilladt trykfald
-      detail: Over 24h ved 1.25× nominelt tryk
+      detail: Over 24–48h ved 1.25× nominelt tryk
     - value: AQL 2,5
       label: Tærskel for væsentlige fejl
       detail: I henhold til ISO 2859-stikprøvestandarden

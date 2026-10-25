@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Laboratorio e Test di Qualità
     icon: Q
     icon_bg: green
-    desc: 'Laboratorio indipendente di controllo qualità con 4 fasi di test: ispezione delle materie prime (trazione, strappo, UV), mantenimento della pressione per 48h a 1,25 volte la pressione nominale, test di sbucciamento delle cuciture e verifica del carico/equilibrio su ogni imbarcazione.'
+    desc: 'Laboratorio indipendente di controllo qualità con 4 fasi di test: ispezione delle materie prime (trazione, strappo, UV), mantenimento della pressione per 24–48h a 1,25 volte la pressione nominale, test di sbucciamento delle cuciture e verifica del carico/equilibrio su ogni imbarcazione.'
     metrics:
       - label: Attrezzatura da laboratorio
         value: Provetta di trazione, camera termica, serbatoio di perdita
@@ -113,8 +113,8 @@ qc_section:
       title: Ispezione Materie Prime
       desc: I tessuti PVC, Hypalon e drop-stitch subiscono test di trazione (ASTM D751), propagazione strappo e verifica resistenza UV prima che qualsiasi lotto entri in produzione.
     - step: '2'
-      title: Test Ritenzione Aria 48 Ore
-      desc: Ogni camera tubolare è gonfiata al 125% della pressione nominale e mantenuta per 48 ore. Un calo di pressione sotto il 5% attiva il rigetto automatico e la reispezione delle giunture.
+      title: Test Ritenzione Aria 24–48 Ore
+      desc: Ogni camera tubolare è gonfiata al 125% della pressione nominale e mantenuta per 24–48 ore. Un calo di pressione oltre il 5% attiva il rigetto automatico e la reispezione delle giunture.
     - step: '3'
       title: Test Carico e Bilanciamento
       desc: Le imbarcazioni finite sono caricate alla massima capacità nominale e testate per stabilità, bordo libero e manovrabilità. Ogni imbarcazione è testata in acqua prima dell'ispezione finale.
@@ -177,8 +177,8 @@ production_flow:
     - stage: '05'
       title: Verifica della Pressione e Controllo Qualità
       description: Ogni camera viene gonfiata a 1,25× la pressione nominale (tipicamente 20–25 PSI) e mantenuta per 24–48 ore. I sensori di pressione registrano continuamente. Le camere che superano il 5% di perdita di pressione vengono respinte e inviate per una nuova ispezione delle cuciture.
-      qc_check: Registro della pressione per 24 ore, calibrazione del sensore verificata quotidianamente, lettura della pressione compensata per la temperatura, ri-test della giunzione dopo la riparazione
-      qc_threshold: Perdita di pressione massima del 5% in 24 ore a temperatura stabile. Qualsiasi camera che superi questo valore = nuovo test completo del lotto di produzione al 100%
+      qc_check: Registro della pressione per 24–48 ore, calibrazione del sensore verificata quotidianamente, lettura della pressione compensata per la temperatura, ri-test della giunzione dopo la riparazione
+      qc_threshold: Perdita di pressione massima del 5% in 24–48 ore a temperatura stabile. Qualsiasi camera che superi questo valore = nuovo test completo del lotto di produzione al 100%
       responsibility: Laboratorio qualità (indipendente dalla produzione, riferisce alla direzione)
     - stage: '06'
       title: Ispezione finale e imballaggio
@@ -250,7 +250,7 @@ qc_dashboard:
       detail: Ogni barca, ogni camera, ogni lotto
     - value: <5%
       label: Caduta di pressione massima consentita
-      detail: Oltre 24 ore a 1,25× pressione nominale
+      detail: Su 24–48 ore a 1,25× pressione nominale
     - value: AQL 2,5
       label: Soglia di difetto maggiore
       detail: Secondo lo standard di campionamento ISO 2859

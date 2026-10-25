@@ -15,12 +15,12 @@ highlights:
   - value: 100%
     label: Basınç testinden geçmiş birimler
     detail: Her oda, her tekne
-  - value: 48 h
+  - value: 24–48 h
     label: Hava tutma test süresi
     detail: 1,25× nominal basınçta
   - value: '&lt;%5'
     label: İzin verilen maksimum basınç düşüşü
-    detail: 24 saatten fazla bekleme süresi
+    detail: 24–48 saat bekleme süresi
   - value: AQL 2.5
     label: Büyük kusur eşiği
     detail: ISO 2859 örnekleme standardına göre
@@ -37,8 +37,8 @@ test_procedures:
       - ASTM D751 (soyma)
       - Dahili 100 maddelik kontrol listesi
       - ISO 2859 örnekleme
-  - title: 48 Saat Hava Tutma Testi
-    description: Her tüp odası nominal basıncın %125'ine şişirilir ve 48 saat boyunca tutulur. Sıcaklık kompanzasyonlu basınç sensörleri sürekli kayıt yapar. %5'ten fazla basınç düşüşü yaşayan her oda otomatik parti yeniden denetimini tetikler.
+  - title: 24–48 Saat Hava Tutma Testi
+    description: Her tüp odası nominal basıncın %125'ine şişirilir ve 24–48 saat boyunca tutulur. Sıcaklık kompanzasyonlu basınç sensörleri sürekli kayıt yapar. %5'ten fazla basınç düşüşü yaşayan her oda otomatik parti yeniden denetimini tetikler.
     standards:
       - ISO 6185
       - CE 2013/53/EU

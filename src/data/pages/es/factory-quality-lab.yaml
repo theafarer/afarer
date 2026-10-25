@@ -17,12 +17,12 @@ highlights:
   - value: 100%
     label: Unidades probadas a presión
     detail: Cada cámara, cada barco
-  - value: 48 h
+  - value: 24–48 h
     label: Duración de la prueba de retención de aire
     detail: A 1,25× la presión nominal
   - value: <5%
     label: Máxima caída de presión permitida
-    detail: Período de retención de más de 24 horas
+    detail: Período de retención de 24–48 horas
   - value: AQL 2.5
     label: Umbral de defecto mayor
     detail: Según el muestreo ISO 2859
@@ -41,8 +41,8 @@ test_procedures:
       - ASTM D751 (desprendimiento)
       - Lista de verificación interna de 100 puntos
       - muestreo ISO 2859
-  - title: Prueba de retención de aire de 48 horas
-    description: Cada cámara de tubo se infla al 125% de la presión nominal y se mantiene durante 48 horas. Los sensores de presión registran continuamente con compensación de temperatura. Cualquier cámara que supere una caída de presión del 5% activa la re-inspección automática del lote.
+  - title: Prueba de retención de aire de 24–48 horas
+    description: Cada cámara de tubo se infla al 125% de la presión nominal y se mantiene durante 24–48 horas. Los sensores de presión registran continuamente con compensación de temperatura. Cualquier cámara que supere una caída de presión del 5% activa la re-inspección automática del lote.
     standards:
       - ISO 6185
       - CE 2013/53/UE

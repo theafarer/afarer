@@ -17,12 +17,12 @@ highlights:
   - value: 100%
     label: Unità sottoposte a collaudo di pressione
     detail: Ogni camera, ogni barca
-  - value: 48 h
+  - value: 24–48 h
     label: Durata del test di tenuta all'aria
     detail: A 1,25× la pressione nominale
   - value: <5%
     label: Caduta di pressione massima consentita
-    detail: Oltre il periodo di attesa di 24 ore
+    detail: Periodo di attesa di 24–48 ore
   - value: AQL 2,5
     label: Soglia di difetto maggiore
     detail: Per campionamento ISO 2859
@@ -41,8 +41,8 @@ test_procedures:
       - ASTM D751 (strappo)
       - Lista di controllo interna a 100 punti
       - campionamento ISO 2859
-  - title: Test di Ritenzione dell'Aria di 48 Ore
-    description: Ogni camera del tubo viene gonfiata al 125% della pressione nominale e mantenuta per 48 ore. I sensori di pressione registrano continuamente con compensazione della temperatura. Qualsiasi camera che supera una perdita di pressione del 5% attiva il riesame automatico del lotto.
+  - title: Test di Ritenzione dell'Aria di 24–48 Ore
+    description: Ogni camera del tubo viene gonfiata al 125% della pressione nominale e mantenuta per 24–48 ore. I sensori di pressione registrano continuamente con compensazione della temperatura. Qualsiasi camera che supera una perdita di pressione del 5% attiva il riesame automatico del lotto.
     standards:
       - ISO 6185
       - CE 2013/53/UE

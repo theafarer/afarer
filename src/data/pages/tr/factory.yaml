@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Kalite Laboratuvarı ve Test
     icon: Q
     icon_bg: green
-    desc: '4 test aşamasına sahip bağımsız QC laboratuvarı: hammadde muayenesi (çekme, yırtılma, UV), 1,25x nominal basınçta 48 saat basınç tutma, dikiş soyma testi ve her botta yük/denge doğrulaması.'
+    desc: '4 test aşamasına sahip bağımsız QC laboratuvarı: hammadde muayenesi (çekme, yırtılma, UV), 1,25x nominal basınçta 24–48 saat basınç tutma, dikiş soyma testi ve her botta yük/denge doğrulaması.'
     metrics:
       - label: Laboratuvar Ekipmanları
         value: Çekme test cihazı, sıcaklık odası, sızıntı tankı
@@ -111,8 +111,8 @@ qc_section:
       title: Hammadde Denetimi
       desc: PVC, Hypalon ve drop-stitch kumaşlar, herhangi bir parti üretime girmeden önce çekme testi (ASTM D751), yırtılma yayılması ve UV direnci doğrulamasından geçer.
     - step: '2'
-      title: 48 Saat Hava Tutma Testi
-      desc: Her tüp odası, nominal basıncın %125'ine kadar şişirilir ve 48 saat bekletilir. %5'in altındaki basınç düşüşü, otomatik reddetme ve dikiş yeniden incelemesini tetikler.
+      title: 24–48 Saat Hava Tutma Testi
+      desc: Her tüp odası, nominal basıncın %125'ine kadar şişirilir ve 24–48 saat bekletilir. %5'i aşan basınç düşüşü, otomatik reddetme ve dikiş yeniden incelemesini tetikler.
     - step: '3'
       title: Yük ve Denge Testi
       desc: Tamamlanan botlar, maksimum nominal kapasiteye kadar yüklenir ve stabilite, serbest bordo ve kullanım açısından test edilir. Her bot, son denetimden önce suda test edilir.
@@ -175,8 +175,8 @@ production_flow:
     - stage: '05'
       title: Basınç Testi ve Kalite Kontrol
       description: Her hava odası 1,25× nominal basınca (tipik olarak 20–25 PSI) şişirilir ve 24–48 saat boyunca tutulur. Basınç sensörleri sürekli olarak kayıt yapar. %5'ten fazla basınç düşüşü yaşayan odalar reddedilir ve dikiş yeniden kontrolüne gönderilir.
-      qc_check: 24 saat basınç koruma kaydı, günlük sensör kalibrasyonu doğrulaması, sıcaklık kompanzasyonlu basınç okuması, onarım sonrası dikiş yeniden testi
-      qc_threshold: Stabil sıcaklıkta 24 saatte maksimum %5 basınç düşüşü. Bu değeri aşan her oda = tüm parti üretiminin %100 yeniden testi
+      qc_check: 24–48 saat basınç koruma kaydı, günlük sensör kalibrasyonu doğrulaması, sıcaklık kompanzasyonlu basınç okuması, onarım sonrası dikiş yeniden testi
+      qc_threshold: Stabil sıcaklıkta 24–48 saatte maksimum %5 basınç düşüşü. Bu değeri aşan her oda = tüm parti üretiminin %100 yeniden testi
       responsibility: Kalite laboratuvarı (üretimden bağımsız, yönetime rapor verir)
     - stage: '06'
       title: Nihai Muayene ve Paketleme
@@ -246,7 +246,7 @@ qc_dashboard:
       detail: Her tekne, her bölmeli her partide
     - value: <5%
       label: İzin verilen maksimum basınç düşüşü
-      detail: 1,25× nominal basınçta 24 saatten fazla
+      detail: 1,25× nominal basınçta 24–48 saat boyunca
     - value: AQL 2.5
       label: Büyük kusur eşiği
       detail: ISO 2859 örnekleme standardına göre

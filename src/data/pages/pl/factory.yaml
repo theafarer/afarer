@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Laboratorium Jakości i Testowanie
     icon: Q
     icon_bg: green
-    desc: 'Niezależne laboratorium kontroli jakości z 4 etapami testów: kontrola surowców (testy rozciągania, rozdzierania, UV), 48-godzinne utrzymanie ciśnienia przy 1,25-krotności nominalnego ciśnienia, testy odrywania szwów oraz weryfikacja obciążenia i równowagi dla każdej łodzi.'
+    desc: 'Niezależne laboratorium kontroli jakości z 4 etapami testów: kontrola surowców (testy rozciągania, rozdzierania, UV), 24–48-godzinne utrzymanie ciśnienia przy 1,25-krotności nominalnego ciśnienia, testy odrywania szwów oraz weryfikacja obciążenia i równowagi dla każdej łodzi.'
     metrics:
       - label: Sprzęt laboratoryjny
         value: Tester wytrzymałości na rozciąganie, komora temperaturowa, zbiornik szczelności
@@ -113,8 +113,8 @@ qc_section:
       title: Inspekcja Surowców
       desc: Tkaniny PVC, Hypalon i drop-stitch przechodzą test wytrzymałości na rozciąganie (ASTM D751), propagację pęknięcia i weryfikację odporności na UV, zanim jakakolwiek partia wejdzie do produkcji.
     - step: '2'
-      title: 48-godzinny Test Retencji Powietrza
-      desc: Każda komora rury jest nadmuchiwana do 125% ciśnienia nominalnego i utrzymywana przez 48 godzin. Spadek ciśnienia poniżej 5% powoduje automatyczne odrzucenie i ponowną inspekcję szwu.
+      title: 24–48-godzinny Test Retencji Powietrza
+      desc: Każda komora rury jest nadmuchiwana do 125% ciśnienia nominalnego i utrzymywana przez 24–48 godzin. Spadek ciśnienia powyżej 5% powoduje automatyczne odrzucenie i ponowną inspekcję szwu.
     - step: '3'
       title: Test Obciążenia i Równowagi
       desc: Ukończone łodzie są obciążane do maksymalnej ładowności nominalnej i testowane pod kątem stabilności, wolnej burty i prowadzenia. Każda jednostka jest testowana na wodzie przed końcową inspekcją.
@@ -177,8 +177,8 @@ production_flow:
     - stage: '05'
       title: Test ciśnieniowy i zatrzymanie jakości
       description: Każda komora jest napełniana do 1,25× nominalnego ciśnienia (zwykle 20–25 PSI) i utrzymywana przez 24–48 godzin. Czujniki ciśnienia rejestrują dane ciągłe. Komory, w których nastąpi spadek ciśnienia powyżej 5%, są odrzucane i wysyłane do ponownej kontroli szwów.
-      qc_check: 24-godzinny zapis utrzymania ciśnienia, codziennie weryfikowana kalibracja czujnika, ciśnienie skompensowane temperaturowo, ponowne testowanie szwu po naprawie
-      qc_threshold: Maksymalny spadek ciśnienia 5% przez 24h przy stabilnej temperaturze. Każda komora przekraczająca ten limit = 100% ponowny test całej partii produkcyjnej
+      qc_check: 24–48-godzinny zapis utrzymania ciśnienia, codziennie weryfikowana kalibracja czujnika, ciśnienie skompensowane temperaturowo, ponowne testowanie szwu po naprawie
+      qc_threshold: Maksymalny spadek ciśnienia 5% przez 24–48h przy stabilnej temperaturze. Każda komora przekraczająca ten limit = 100% ponowny test całej partii produkcyjnej
       responsibility: Laboratorium jakości (niezależne od produkcji, podlega kierownictwu)
     - stage: '06'
       title: Ostateczna inspekcja i pakowanie
@@ -250,7 +250,7 @@ qc_dashboard:
       detail: Każda łódź, każda komnata, każda partia
     - value: <5%
       label: Maksymalna dopuszczalna strata ciśnienia
-      detail: Ponad 24 godziny przy ciśnieniu znamionowym 1,25×
+      detail: Przez 24–48 godzin przy ciśnieniu znamionowym 1,25×
     - value: AQL 2,5
       label: Próg poważnej wady
       detail: Zgodnie z normą próbkowania ISO 2859

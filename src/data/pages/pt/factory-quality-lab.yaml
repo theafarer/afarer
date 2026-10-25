@@ -17,12 +17,12 @@ highlights:
   - value: 100%
     label: Unidades testadas quanto à pressão
     detail: Cada câmara, cada barco
-  - value: 48 h
+  - value: 24–48 h
     label: Duração do teste de retenção de ar
     detail: A 1,25× a pressão nominal
   - value: <5%
     label: Queda de pressão máxima permitida
-    detail: Período de retenção superior a 24 horas
+    detail: Período de retenção de 24–48 horas
   - value: AQL 2,5
     label: Limiar de defeito grave
     detail: Amostragem conforme ISO 2859
@@ -39,8 +39,8 @@ test_procedures:
       - ASTM D751 (desgaste)
       - Checklist interno de 100 pontos
       - Amostragem ISO 2859
-  - title: Teste de Retenção de Ar de 48 Horas
-    description: Cada câmara do tubo é inflada a 125% da pressão nominal e mantida por 48 horas. Sensores de pressão registram continuamente com compensação de temperatura. Qualquer câmara que exceda uma queda de pressão de 5% aciona a re-inspeção automática do lote.
+  - title: Teste de Retenção de Ar de 24–48 Horas
+    description: Cada câmara do tubo é inflada a 125% da pressão nominal e mantida por 24–48 horas. Sensores de pressão registram continuamente com compensação de temperatura. Qualquer câmara que exceda uma queda de pressão de 5% aciona a re-inspeção automática do lote.
     standards:
       - ISO 6185
       - CE 2013/53/UE

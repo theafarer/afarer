@@ -15,12 +15,12 @@ highlights:
   - value: 100%
     label: Enheter trycktestade
     detail: Varje kamera, varje båt
-  - value: 48 h
+  - value: 24–48 h
     label: Varaktighet för luftlåstest
     detail: Vid 1,25× nominellt tryck
   - value: '&lt;5%'
     label: Max tillåten tryckfall
-    detail: Över 24 timmars hållbarhetstest
+    detail: 24–48 timmars hållbarhetstest
   - value: AQL 2,5
     label: Tröskelvärde för allvarliga fel
     detail: Enligt ISO 2859-provtagning
@@ -37,8 +37,8 @@ test_procedures:
       - ASTM D751 (peel)
       - Intern 100-punkters checklista
       - ISO 2859-provtagning
-  - title: 48-timmars luftläckagetest
-    description: Varje rörkammare fylls till 125 % av märkt tryck och hålls i 48 timmar. Trycksensorer loggar kontinuerligt med temperaturkompensation. Kammare som överskrider 5 % tryckfall utlöser automatisk omprovning av partiet.
+  - title: 24–48-timmars luftläckagetest
+    description: Varje rörkammare fylls till 125 % av märkt tryck och hålls i 24–48 timmar. Trycksensorer loggar kontinuerligt med temperaturkompensation. Kammare som överskrider 5 % tryckfall utlöser automatisk omprovning av partiet.
     standards:
       - ISO 6185
       - CE 2013/53/EU

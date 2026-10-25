@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Laborator de calitate și testare
     icon: Q
     icon_bg: green
-    desc: 'Laborator independent de control al calității, cu 4 etape de testare: inspecția materiilor prime (tracțiune, rupere, UV), menținerea presiunii timp de 48h la 1.25x presiunea nominală, testarea rezistenței cusăturilor la desprindere și verificarea sarcinii/echilibrului pe fiecare ambarcațiune.'
+    desc: 'Laborator independent de control al calității, cu 4 etape de testare: inspecția materiilor prime (tracțiune, rupere, UV), menținerea presiunii timp de 24–48h la 1.25x presiunea nominală, testarea rezistenței cusăturilor la desprindere și verificarea sarcinii/echilibrului pe fiecare ambarcațiune.'
     metrics:
       - label: Echipament de laborator
         value: Tester de tracțiune, cameră de temperatură, rezervor de testare a etanșeității
@@ -113,8 +113,8 @@ qc_section:
       title: Inspecția Materiilor Prime
       desc: Țesăturile din PVC, Hypalon și drop-stitch sunt supuse testelor de tracțiune (ASTM D751), de propagare a ruperii și de verificare a rezistenței UV înainte ca orice lot să intre în producție.
     - step: '2'
-      title: Test de retenție a aerului pe 48 de ore
-      desc: Fiecare cameră de tub este umflată la 125% din presiunea nominală și menținută timp de 48 de ore. O scădere a presiunii sub 5% declanșează respingerea automată și re-inspectarea cusăturilor.
+      title: Test de retenție a aerului pe 24–48 de ore
+      desc: Fiecare cameră de tub este umflată la 125% din presiunea nominală și menținută timp de 24–48 de ore. O scădere a presiunii peste 5% declanșează respingerea automată și re-inspectarea cusăturilor.
     - step: '3'
       title: Testarea sarcinii și a echilibrului
       desc: Bărcile finalizate sunt încărcate la capacitatea maximă nominală și testate pentru stabilitate, bord liber și manevrabilitate. Fiecare ambarcațiune este testată pe apă înainte de inspecția finală.
@@ -181,8 +181,8 @@ production_flow:
     - stage: '05'
       title: Testare la presiune și control al calității
       description: Fiecare cameră este umflată la 1.25× din presiunea nominală (de obicei 20–25 PSI) și menținută timp de 24–48 ore. Senzorii de presiune înregistrează continuu. Camerele cu o scădere a presiunii de peste 5% sunt respinse și trimise la re-inspectarea îmbinărilor.
-      qc_check: Jurnal de menținere a presiunii timp de 24h, calibrare zilnică verificată a senzorilor, citire a presiunii compensată la temperatură, re-testare a cusăturilor după reparații
-      qc_threshold: Pierdere de presiune max. 5% în 24h la temperatură stabilă. Orice cameră care depășește această valoare = retestare 100% a întregului lot de producție
+      qc_check: Jurnal de menținere a presiunii timp de 24–48h, calibrare zilnică verificată a senzorilor, citire a presiunii compensată la temperatură, re-testare a cusăturilor după reparații
+      qc_threshold: Pierdere de presiune max. 5% în 24–48h la temperatură stabilă. Orice cameră care depășește această valoare = retestare 100% a întregului lot de producție
       responsibility: Laborator de calitate (independent de producție, raportează conducerii)
     - stage: '06'
       title: Inspecție finală și ambalare
@@ -254,7 +254,7 @@ qc_dashboard:
       detail: Fiecare barcă, fiecare cameră, fiecare lot
     - value: <5%
       label: Cădere de presiune maximă admisă
-      detail: Peste 24h la 1.25× presiunea nominală
+      detail: Pe parcursul a 24–48h la 1.25× presiunea nominală
     - value: AQL 2.5
       label: Prag de defect major
       detail: Conform standardului de eșantionare ISO 2859

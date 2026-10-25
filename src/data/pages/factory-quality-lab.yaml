@@ -17,12 +17,12 @@ highlights:
   - value: 100%
     label: Units pressure-tested
     detail: Every chamber, every boat
-  - value: 48 h
+  - value: 24–48 h
     label: Air retention test duration
     detail: At 1.25× rated pressure
   - value: '&lt;5%'
     label: Max allowed pressure drop
-    detail: Over 24-hour hold period
+    detail: Over the 24–48 hour hold period
   - value: AQL 2.5
     label: Major defect threshold
     detail: Per ISO 2859 sampling
@@ -40,8 +40,8 @@ test_procedures:
       - ASTM D751 (peel)
       - Internal 100-point checklist
       - ISO 2859 sampling
-  - title: 48-Hour Air Retention Test
-    description: Every tube chamber is inflated to 125% of rated pressure and held for 48 hours. Pressure sensors log continuously with temperature compensation. Any chamber exceeding 5% pressure drop triggers automatic batch re-inspection.
+  - title: 24–48 Hour Air Retention Test
+    description: Every tube chamber is inflated to 125% of rated pressure and held for 24–48 hours. Pressure sensors log continuously with temperature compensation. Any chamber exceeding 5% pressure drop triggers automatic batch re-inspection.
     standards:
       - ISO 6185
       - CE 2013/53/EU

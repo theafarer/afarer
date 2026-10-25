@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Kvalitetslaboratorium og testing
     icon: Q
     icon_bg: green
-    desc: 'Uavhengig kvalitetskontrollaboratorium med 4 testfaser: råvareinspeksjon (strekk, riv, UV), 48 timers trykkhold ved 1,25x nominelt trykk, sømavskallingstesting og last-/balanseverifisering på hver båt.'
+    desc: 'Uavhengig kvalitetskontrollaboratorium med 4 testfaser: råvareinspeksjon (strekk, riv, UV), 24–48 timers trykkhold ved 1,25x nominelt trykk, sømavskallingstesting og last-/balanseverifisering på hver båt.'
     metrics:
       - label: Laboratorieutstyr
         value: Trekkstyrkeprøver, kammer, lekkasjetank
@@ -111,8 +111,8 @@ qc_section:
       title: Råvareinspeksjon
       desc: PVC-, Hypalon- og drop-stitch-stoffer gjennomgår strekktesting (ASTM D751), rivingsspredning og UV-bestandighetsverifisering før en batch slippes inn i produksjonen.
     - step: '2'
-      title: 48-timers lufttetthetstest
-      desc: Hvert rørkammer pumpes til 125 % av nominelt trykk og holdes i 48 timer. Trykkfall under 5 % utløser automatisk avvisning og ny søminspeksjon.
+      title: 24–48-timers lufttetthetstest
+      desc: Hvert rørkammer pumpes til 125 % av nominelt trykk og holdes i 24–48 timer. Trykkfall over 5 % utløser automatisk avvisning og ny søminspeksjon.
     - step: '3'
       title: Last- og balansetest
       desc: Ferdige båter lastes til maksimal vurdert kapasitet og testes for stabilitet, fribord og manøvrering. Hver båt vannprøves før endelig inspeksjon.
@@ -175,8 +175,8 @@ production_flow:
     - stage: '05'
       title: Trykktesting og kvalitetskontroll
       description: Hvert kammer blåses opp til 1,25× nominelt trykk (typisk 20–25 PSI) og holdes i 24–48 timer. Trykksensorer logger kontinuerlig. Kamre som overskrider 5 % trykkfall forkastes og sendes til sømrevisjon.
-      qc_check: 24-timers trykkelogg, sensorkalibrering verifisert daglig, temperaturkompensert trykkavlesning, sømre-test etter reparasjon
-      qc_threshold: Maks 5 % trykkfall over 24 timer ved stabil temperatur. Et kammer som overskriver dette = 100 % retesting av hele produksjonsbatchen
+      qc_check: 24–48-timers trykkelogg, sensorkalibrering verifisert daglig, temperaturkompensert trykkavlesning, sømre-test etter reparasjon
+      qc_threshold: Maks 5 % trykkfall over 24–48 timer ved stabil temperatur. Et kammer som overskriver dette = 100 % retesting av hele produksjonsbatchen
       responsibility: Kvalitetslaboratorium (uavhengig av produksjon, rapporterer til ledelsen)
     - stage: '06'
       title: Sluttinspeksjon og pakking
@@ -246,7 +246,7 @@ qc_dashboard:
       detail: Hver båt, hvert kammer, hver batch
     - value: <5%
       label: Maksimalt tillatt trykkfall
-      detail: Over 24 timer ved 1,25× nominelt trykk
+      detail: Over 24–48 timer ved 1,25× nominelt trykk
     - value: AQL 2,5
       label: Terskel for alvorlige feil
       detail: I henhold til ISO 2859-standard for prøvetaking

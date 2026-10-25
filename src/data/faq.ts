@@ -463,7 +463,7 @@ export const faqs: FaqRecord[] = [
     id: 'b2b-quality-control',
     question: 'What quality control processes apply to OEM orders?',
     answer:
-      'Every OEM order follows a documented QC plan: 1) Incoming material inspection — PVC fabric batch testing for thickness, tensile strength, and UV resistance. 2) In-process QC — seam weld strength testing every 50 units, pressure hold test at 1.5x rated PSI. 3) Final inspection — 100% visual inspection and pressure testing of every board. 4) AQL sampling — batch sampling per ISO 2859 with critical defect = 0 acceptance. 5) Third-party inspection — SGS, Bureau Veritas, or Intertek available at buyer cost.',
+      'Every OEM order follows a documented QC plan: 1) Incoming material inspection — PVC fabric batch testing for thickness, tensile strength, and UV resistance. 2) In-process QC — seam weld strength testing every 50 units, pressure hold test at 1.25x rated PSI. 3) Final inspection — 100% visual inspection and pressure testing of every board. 4) AQL sampling — batch sampling per ISO 2859 with critical defect = 0 acceptance. 5) Third-party inspection — SGS, Bureau Veritas, or Intertek available at buyer cost.',
     category: 'b2b',
     relatedProducts: [],
     relatedGuides: [],

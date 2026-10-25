@@ -29,7 +29,7 @@ export const standalonePages: StandalonePage[] = [
       },
       {
         heading: 'Rigorous Quality Control & Testing',
-        body: 'Multi-layered QC system with stringent checks at each critical step, culminating in comprehensive final testing including 24-48 hour pressure holding tests, leak detection, dimensional verification, and functional tests.',
+        body: 'Multi-layered QC system with stringent checks at each critical step, culminating in comprehensive final testing including 24–48 hour pressure holding tests, leak detection, dimensional verification, and functional tests.',
       },
     ],
     features: [
@@ -64,7 +64,7 @@ export const standalonePages: StandalonePage[] = [
       },
       {
         heading: 'Bulk Production & Inline QC',
-        body: '100-point quality checklist. Each unit undergoes 24-hour pressure retention testing, seam peel testing, and visual inspection before packing.',
+        body: '100-point quality checklist. Each unit undergoes 24–48 hour pressure retention testing, seam peel testing, and visual inspection before packing.',
       },
       {
         heading: 'FOB Qingdao Logistics',

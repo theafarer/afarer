@@ -72,7 +72,7 @@ Drop-stitch board glide properties are determined by shape (length, width, nose 
 4. **Rail Attachment:** Woven rail band bonded to panel perimeter (premium models)
 5. **Valve Installation:** One-way inflation valves with pressure retention seals
 6. **Deck Pad Bonding:** EVA foam traction pad glued to top surface
-7. **Quality Test:** 24-hour pressure hold test at rated PSI
+7. **Quality Test:** 24–48 hour pressure hold test at 1.25x rated PSI
 8. **Fin Box Installation:** US Fin System or proprietary fin box mounting
 
 ## Selection Guide

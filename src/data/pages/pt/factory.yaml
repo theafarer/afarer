@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Laboratório de Qualidade e Testes
     icon: Q
     icon_bg: green
-    desc: 'Laboratório de CQ independente com 4 etapas: inspeção de matérias-primas, retenção de pressão 48h, teste de pelagem, verificação de carga/equilíbrio.'
+    desc: 'Laboratório de CQ independente com 4 etapas: inspeção de matérias-primas, retenção de pressão 24–48h, teste de pelagem, verificação de carga/equilíbrio.'
     metrics:
       - label: Equipamento de laboratório
         value: Máquina de teste de tração, câmara de temperatura, tanque de vazamento
@@ -113,8 +113,8 @@ qc_section:
       title: Inspeção de Matéria-Prima
       desc: Tecidos de PVC, Hypalon e drop-stitch passam por teste de tração (ASTM D751), propagação de rasgo e verificação de resistência UV antes de qualquer lote entrar em produção.
     - step: '2'
-      title: Teste de Retenção de Ar de 48 Horas
-      desc: Cada câmara de tubo é inflada a 125% da pressão nominal e mantida por 48 horas. A queda de pressão abaixo de 5% aciona rejeição automática e reinspeção da junta.
+      title: Teste de Retenção de Ar de 24–48 Horas
+      desc: Cada câmara de tubo é inflada a 125% da pressão nominal e mantida por 24–48 horas. A queda de pressão acima de 5% aciona rejeição automática e reinspeção da junta.
     - step: '3'
       title: Teste de Carga e Equilíbrio
       desc: Os barcos concluídos são carregados até a capacidade máxima nominal e testados quanto a estabilidade, borda livre e manuseio. Cada embarcação é testada na água antes da inspeção final.
@@ -179,8 +179,8 @@ production_flow:
     - stage: '05'
       title: Testes de Pressão e Retenção de Qualidade
       description: Cada câmara é inflada para 1,25× a pressão nominal (tipicamente 20–25 PSI) e mantida por 24–48 horas. Sensores de pressão registram continuamente. Câmaras que excedem queda de pressão de 5% são rejeitadas e enviadas para reinspeção da costura.
-      qc_check: Registro de pressão mantida por 24h, calibração do sensor verificada diariamente, leitura de pressão compensada pela temperatura, reteste da junta após reparo
-      qc_threshold: Queda de pressão máxima de 5% em 24h em temperatura estável. Qualquer câmara que exceder isso = re-teste de 100% de todo o lote de produção
+      qc_check: Registro de pressão mantida por 24–48h, calibração do sensor verificada diariamente, leitura de pressão compensada pela temperatura, reteste da junta após reparo
+      qc_threshold: Queda de pressão máxima de 5% em 24–48h em temperatura estável. Qualquer câmara que exceder isso = re-teste de 100% de todo o lote de produção
       responsibility: Laboratório de qualidade (independente da produção, reporta-se à administração)
     - stage: '06'
       title: Inspeção Final e Embalagem
@@ -252,7 +252,7 @@ qc_dashboard:
       detail: Cada barco, cada câmara, cada lote
     - value: <5%
       label: Queda de pressão máxima permitida
-      detail: Mais de 24h a 1,25× a pressão nominal
+      detail: Durante 24–48h a 1,25× a pressão nominal
     - value: AQL 2,5
       label: Limiar de defeito grave
       detail: De acordo com a norma de amostragem ISO 2859

@@ -17,12 +17,12 @@ highlights:
   - value: 100%
     label: Unități testate sub presiune
     detail: Fiecare cameră, fiecare ambarcațiune
-  - value: 48 h
+  - value: 24–48 h
     label: Durata testului de menținere a aerului
     detail: La 1.25× presiunea nominală
   - value: '&lt;5%'
     label: Scăderea maximă admisă a presiunii
-    detail: Perioadă de menținere peste 24 de ore
+    detail: Perioadă de menținere de 24–48 de ore
   - value: AQL 2.5
     label: Prag de defect major
     detail: Eșantionare conform ISO 2859
@@ -39,8 +39,8 @@ test_procedures:
       - ASTM D751 (peel)
       - Listă de verificare internă cu 100 de puncte
       - Eșantionare conform ISO 2859
-  - title: Test de retenție a aerului pe 48 de ore
-    description: Fiecare cameră a tubului este umflată la 125% din presiunea nominală și menținută timp de 48 de ore. Senzorii de presiune înregistrează continuu, cu compensare a temperaturii. Orice cameră cu o scădere a presiunii de peste 5% declanșează re-inspecția automată a lotului.
+  - title: Test de retenție a aerului pe 24–48 de ore
+    description: Fiecare cameră a tubului este umflată la 125% din presiunea nominală și menținută timp de 24–48 de ore. Senzorii de presiune înregistrează continuu, cu compensare a temperaturii. Orice cameră cu o scădere a presiunii de peste 5% declanșează re-inspecția automată a lotului.
     standards:
       - ISO 6185
       - CE 2013/53/EU

@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Qualitätslabor & Prüfung
     icon: Q
     icon_bg: green
-    desc: 'Unabhängiges QS-Labor mit 4 Prüfstufen: Rohmaterialprüfung (Zug, Weiterreiß, UV), 48h Druckhaltetest bei 1,25x Nenndruck, Nahtschältest und Last-/Gleichgewichtsprüfung.'
+    desc: 'Unabhängiges QS-Labor mit 4 Prüfstufen: Rohmaterialprüfung (Zug, Weiterreiß, UV), 24–48h Druckhaltetest bei 1,25x Nenndruck, Nahtschältest und Last-/Gleichgewichtsprüfung.'
     metrics:
       - label: Laborausrüstung
         value: Zugprüfgerät, Temperaturkammer, Lecktank
@@ -111,8 +111,8 @@ qc_section:
       title: Rohmaterialprüfung
       desc: PVC, Hypalon und Drop-Stitch-Gewebe werden vor dem Produktionseinsatz einer Zugprüfung (ASTM D751), Weiterreißprüfung und UV-Beständigkeitsprüfung unterzogen.
     - step: '2'
-      title: 48-Stunden-Luftdichtheitstest
-      desc: Jede Schlauchkammer wird auf 125 % des Nenndrucks aufgepumpt und 48 Stunden gehalten. Ein Druckabfall unter 5 % löst automatische Ablehnung und Nahtnachprüfung aus.
+      title: 24–48-Stunden-Luftdichtheitstest
+      desc: Jede Schlauchkammer wird auf 125 % des Nenndrucks aufgepumpt und 24–48 Stunden gehalten. Ein Druckabfall von mehr als 5 % löst automatische Ablehnung und Nahtnachprüfung aus.
     - step: '3'
       title: Last- & Gleichgewichtsprüfung
       desc: Fertige Boote werden bis zur maximalen Nennkapazität beladen und auf Stabilität, Freibord und Fahrverhalten geprüft. Jedes Schiff wird vor der Endkontrolle einem Wassertest unterzogen.
@@ -174,9 +174,9 @@ production_flow:
       responsibility: Leiter Montageteam + Linien-QC
     - stage: '05'
       title: Druckprüfung & Qualitätskontrolle
-      description: Jede Kammer wird auf das 1,25-fache des Nenn- drucks aufgepumpt (typischerweise 20–25 PSI) und für 24–48 Stunden gehalten. Drucksensoren protokollieren kontinuierlich. Kammern, die einen Druckabfall von mehr als 5 % aufweisen, werden abgelehnt und zur Nahtnachprüfung geschickt.
-      qc_check: 24-Stunden-Druckhaltelog, Sensor-Kalibrierung täglich überprüft, temperaturkompensierte Druckanzeige, Nahtnachprüfung nach Reparatur
-      qc_threshold: Maximal 5% Druckabfall über 24 Stunden bei stabiler Temperatur. Jede Kammer, die dies überschreitet = 100% Nachprüfung der gesamten Produktionscharge
+      description: Jede Kammer wird auf das 1,25-fache des Nenndrucks aufgepumpt (typischerweise 20–25 PSI) und für 24–48 Stunden gehalten. Drucksensoren protokollieren kontinuierlich. Kammern, die einen Druckabfall von mehr als 5 % aufweisen, werden abgelehnt und zur Nahtnachprüfung geschickt.
+      qc_check: 24–48-Stunden-Druckhaltelog, Sensor-Kalibrierung täglich überprüft, temperaturkompensierte Druckanzeige, Nahtnachprüfung nach Reparatur
+      qc_threshold: Maximal 5% Druckabfall über 24–48 Stunden bei stabiler Temperatur. Jede Kammer, die dies überschreitet = 100% Nachprüfung der gesamten Produktionscharge
       responsibility: Qualitätslabor (unabhängig von der Produktion, berichtet an die Geschäftsleitung)
     - stage: '06'
       title: Endkontrolle & Verpackung
@@ -248,7 +248,7 @@ qc_dashboard:
       detail: Jedes Boot, jede Kammer, jede Charge
     - value: <5%
       label: Maximal zulässiger Druckabfall
-      detail: Über 24 Stunden bei 1,25× Nennendruck
+      detail: Über 24–48 Stunden bei 1,25× Nennendruck
     - value: AQL 2,5
       label: Schwelle für wesentliche Mängel
       detail: Nach ISO 2859 Prüfstandard

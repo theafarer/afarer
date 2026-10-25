@@ -17,12 +17,12 @@ highlights:
   - value: 100%
     label: Jednostki poddane próbie ciśnieniowej
     detail: Każda komnata, każda łódź
-  - value: 48 godz.
+  - value: 24–48 godz.
     label: Czas trwania testu szczelności powietrza
     detail: Przy 1,25× ciśnieniu znamionowym
   - value: <5%
     label: Maksymalna dopuszczalna strata ciśnienia
-    detail: Ponad 24-godzinny okres oczekiwania
+    detail: 24–48-godzinny okres oczekiwania
   - value: AQL 2,5
     label: Próg poważnej wady
     detail: Próbkowanie zgodnie z normą ISO 2859
@@ -39,8 +39,8 @@ test_procedures:
       - ASTM D751 (odrywalność)
       - Wewnętrzna lista kontrolna 100 punktów
       - Próbkowanie ISO 2859
-  - title: 48-godzinny test utrzymania powietrza
-    description: Każda komora rurki jest napompowana do 125% nominalnego ciśnienia i utrzymywana przez 48 godzin. Czujniki ciśnienia rejestrują dane ciągle z kompensacją temperatury. Każda komora, której spadek ciśnienia przekracza 5%, uruchamia automatyczną ponowną kontrolę partii.
+  - title: 24–48-godzinny test utrzymania powietrza
+    description: Każda komora rurki jest napompowana do 125% nominalnego ciśnienia i utrzymywana przez 24–48 godzin. Czujniki ciśnienia rejestrują dane ciągle z kompensacją temperatury. Każda komora, której spadek ciśnienia przekracza 5%, uruchamia automatyczną ponowną kontrolę partii.
     standards:
       - ISO 6185
       - CE 2013/53/UE

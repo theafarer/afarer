@@ -17,12 +17,12 @@ highlights:
   - value: 100%
     label: Tlakově otestované kusy
     detail: Každá komora, každý člun
-  - value: 48 h
+  - value: 24–48 h
     label: Doba trvání testu zadržení vzduchu
     detail: Při 1.25× jmenovitém tlaku
   - value: '&lt;5%'
     label: Maximální povolený pokles tlaku
-    detail: Udržení tlaku po dobu přes 24 hodin
+    detail: Udržení tlaku po dobu 24–48 hodin
   - value: AQL 2.5
     label: Hranice závažné vady
     detail: Vzorkování dle ISO 2859
@@ -39,8 +39,8 @@ test_procedures:
       - ASTM D751 (peel)
       - Interní kontrolní seznam se 100 body
       - Vzorkování dle ISO 2859
-  - title: 48hodinový test udržení vzduchu
-    description: Každá komora je nafouknuta na 125 % jmenovitého tlaku a ponechána po dobu 48 hodin. Tlakové senzory průběžně zaznamenávají údaje s teplotní kompenzací. Jakákoli komora s poklesem tlaku nad 5 % automaticky spustí opětovnou kontrolu celé šarže.
+  - title: 24–48hodinový test udržení vzduchu
+    description: Každá komora je nafouknuta na 125 % jmenovitého tlaku a ponechána po dobu 24–48 hodin. Tlakové senzory průběžně zaznamenávají údaje s teplotní kompenzací. Jakákoli komora s poklesem tlaku nad 5 % automaticky spustí opětovnou kontrolu celé šarže.
     standards:
       - ISO 6185
       - CE 2013/53/EU

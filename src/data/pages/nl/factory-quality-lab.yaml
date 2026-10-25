@@ -17,12 +17,12 @@ highlights:
   - value: 100%
     label: Eenheden drukgetest
     detail: Elke kamer, elke boot
-  - value: 48 u
+  - value: 24–48 u
     label: Duur van de luchtdichtheidstest
     detail: Bij 1,25× de nominale druk
   - value: <5%
     label: Maximaal toegestane drukval
-    detail: Over een 24-uurs bewaartermijn
+    detail: Over een bewaartermijn van 24–48 uur
   - value: AQL 2,5
     label: Drempelwaarde voor groot defect
     detail: Per ISO 2859 steekproefname
@@ -39,8 +39,8 @@ test_procedures:
       - ASTM D751 (afpellen)
       - Interne checklist van 100 punten
       - ISO 2859 steekproeven
-  - title: 48-uurs luchtretentietest
-    description: Elke buiskamer wordt opgeblazen tot 125% van de nominale druk en gedurende 48 uur vastgehouden. Druksensoren registreren continu met temperatuurcompensatie. Elke kamer die een drukval van meer dan 5% vertoont, veroorzaakt een automatische herinspectie van het batch.
+  - title: 24–48-uurs luchtretentietest
+    description: Elke buiskamer wordt opgeblazen tot 125% van de nominale druk en gedurende 24–48 uur vastgehouden. Druksensoren registreren continu met temperatuurcompensatie. Elke kamer die een drukval van meer dan 5% vertoont, veroorzaakt een automatische herinspectie van het batch.
     standards:
       - ISO 6185
       - CE 2013/53/EU

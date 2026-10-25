@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Kwaliteitslaboratorium & Testen
     icon: Q
     icon_bg: green
-    desc: 'Onafhankelijk QC-lab met 4 testfasen: grondstoffinspectie (treksterkte, scheur, UV), 48u drukvasthouding bij 1,25x nominale druk, naadpelting en belasting-/balansverificatie op elke boot.'
+    desc: 'Onafhankelijk QC-lab met 4 testfasen: grondstoffinspectie (treksterkte, scheur, UV), 24–48u drukvasthouding bij 1,25x nominale druk, naadpelting en belasting-/balansverificatie op elke boot.'
     metrics:
       - label: Laboratoriumapparatuur
         value: Trekbank, temperatuurkamer, lektank
@@ -111,8 +111,8 @@ qc_section:
       title: Grondstoffenkeuring
       desc: PVC, Hypalon en drop-stitch stoffen ondergaan trekproeven (ASTM D751), scheurpropagatie en UV-bestendigheidsverificatie voordat een partij in productie gaat.
     - step: '2'
-      title: 48-uurs Luchtretentietest
-      desc: Elke buiskamer wordt opgeblazen tot 125% van de nominale druk en 48 uur vastgehouden. Drukdaling onder 5% leidt automatisch tot afkeuring en naadherkeuring.
+      title: 24–48-uurs Luchtretentietest
+      desc: Elke buiskamer wordt opgeblazen tot 125% van de nominale druk en 24–48 uur vastgehouden. Drukdaling van meer dan 5% leidt automatisch tot afkeuring en naadherkeuring.
     - step: '3'
       title: Laad- & Balanstest
       desc: Voltooide boten worden beladen tot maximale nominale capaciteit en getest op stabiliteit, vrijboord en handling. Elk vaartuig wordt watergetest vóór de eindkeuring.
@@ -175,8 +175,8 @@ production_flow:
     - stage: '05'
       title: Druktesten & Kwaliteitsbehoud
       description: Elke kamer wordt opgeblazen tot 1,25× de nominale druk (meestal 20–25 PSI) en gedurende 24–48 uur vastgehouden. Druksensoren registreren continu. Kamers die een drukval van meer dan 5% vertonen, worden afgekeurd en ter herinspectie van de naden gestuurd.
-      qc_check: 24uurs drukvasthoudingslog, sensorcalibratie dagelijks geverifieerd, temperatuurgecompenseerde drukmeting, na reparatie opnieuw naden testen
-      qc_threshold: Maximaal 5% drukverlies over 24 uur bij een stabiele temperatuur. Elke kamer die dit overschrijdt = 100% her-test van de gehele productiebatch
+      qc_check: 24–48uurs drukvasthoudingslog, sensorcalibratie dagelijks geverifieerd, temperatuurgecompenseerde drukmeting, na reparatie opnieuw naden testen
+      qc_threshold: Maximaal 5% drukverlies over 24–48 uur bij een stabiele temperatuur. Elke kamer die dit overschrijdt = 100% her-test van de gehele productiebatch
       responsibility: Kwaliteitslaboratorium (onafhankelijk van productie, rapporteert aan het management)
     - stage: '06'
       title: Eindinspectie & Verpakking
@@ -248,7 +248,7 @@ qc_dashboard:
       detail: Elke boot, elke kamer, elke batch
     - value: <5%
       label: Maximaal toelaatbare drukval
-      detail: Over 24 uur bij 1,25× de nominale druk
+      detail: Over 24–48 uur bij 1,25× de nominale druk
     - value: AQL 2,5
       label: Drempelwaarde voor groot defect
       detail: Volgens ISO 2859-staalmethode

@@ -17,12 +17,12 @@ highlights:
   - value: 100%
     label: Enheter trykktestet
     detail: Hvert kammer, hver båt
-  - value: 48 h
+  - value: 24–48 h
     label: Varighet av luftretensjonstest
     detail: Ved 1,25× nominelt trykk
   - value: '&lt;5%'
     label: Maks tillatt trykkfall
-    detail: Over 24 timers holdperiode
+    detail: Holdperiode på 24–48 timer
   - value: AQL 2,5
     label: Terskel for alvorlige feil
     detail: I henhold til ISO 2859-utvalg
@@ -39,8 +39,8 @@ test_procedures:
       - ASTM D751 (skalløsning)
       - Intern 100-punkts sjekkliste
       - ISO 2859-utvalg
-  - title: 48-timers luftlekkasjetest
-    description: Hvert rørkammer blåses opp til 125 % av nominelt trykk og holdes i 48 timer. Trykksensorer logger kontinuerlig med temperaturkompensasjon. Ethvert kammer som overskrider 5 % trykkfall utløser automatisk batchrevisjon.
+  - title: 24–48-timers luftlekkasjetest
+    description: Hvert rørkammer blåses opp til 125 % av nominelt trykk og holdes i 24–48 timer. Trykksensorer logger kontinuerlig med temperaturkompensasjon. Ethvert kammer som overskrider 5 % trykkfall utløser automatisk batchrevisjon.
     standards:
       - ISO 6185
       - CE 2013/53/EU

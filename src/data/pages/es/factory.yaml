@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Laboratorio de Calidad y Pruebas
     icon: Q
     icon_bg: green
-    desc: 'Laboratorio de CQ independiente con 4 etapas: inspección de materias primas, retención de presión 48h, prueba de pelado, verificación de carga/equilibrio.'
+    desc: 'Laboratorio de CQ independiente con 4 etapas: inspección de materias primas, retención de presión 24–48h, prueba de pelado, verificación de carga/equilibrio.'
     metrics:
       - label: Equipo de laboratorio
         value: Probador de tracción, cámara de temperatura, tanque de fugas
@@ -113,8 +113,8 @@ qc_section:
       title: Inspección de materias primas
       desc: Las telas de PVC, Hypalon y drop-stitch se someten a pruebas de tracción (ASTM D751), propagación de desgarros y verificación de resistencia a los rayos UV antes de que cualquier lote entre en producción.
     - step: '2'
-      title: Prueba de retención de aire de 48 horas
-      desc: Cada cámara de tubo se infla al 125% de la presión nominal y se mantiene durante 48 horas. Una caída de presión inferior al 5% activa el rechazo automático y la reinspección de las costuras.
+      title: Prueba de retención de aire de 24–48 horas
+      desc: Cada cámara de tubo se infla al 125% de la presión nominal y se mantiene durante 24–48 horas. Una caída de presión superior al 5% activa el rechazo automático y la reinspección de las costuras.
     - step: '3'
       title: Prueba de carga y equilibrio
       desc: Los barcos terminados se cargan hasta su capacidad nominal máxima y se prueban para verificar estabilidad, francobordo y manejo. Cada embarcación se prueba en el agua antes de la inspección final.
@@ -183,8 +183,8 @@ production_flow:
     - stage: '05'
       title: Prueba de presión y retención de calidad
       description: Cada cámara se infla a 1,25× la presión nominal (típicamente 20–25 PSI) y se mantiene durante 24–48 horas. Los sensores de presión registran continuamente. Las cámaras que superan una caída de presión del 5 % son rechazadas y enviadas para una reinspección de las costuras.
-      qc_check: Registro de presión de 24 h, calibración del sensor verificada diariamente, lectura de presión compensada por temperatura, re-prueba de la costura después de la reparación
-      qc_threshold: Caída de presión máxima del 5% durante 24 horas a temperatura estable. Cualquier cámara que exceda esto = 100% re-prueba de todo el lote de producción
+      qc_check: Registro de presión de 24–48 h, calibración del sensor verificada diariamente, lectura de presión compensada por temperatura, re-prueba de la costura después de la reparación
+      qc_threshold: Caída de presión máxima del 5% durante 24–48 horas a temperatura estable. Cualquier cámara que exceda esto = 100% re-prueba de todo el lote de producción
       responsibility: Laboratorio de calidad (independiente de la producción, reporta a la dirección)
     - stage: '06'
       title: Inspección Final y Empaque
@@ -256,7 +256,7 @@ qc_dashboard:
       detail: Cada barco, cada cámara, cada lote
     - value: <5%
       label: Máxima caída de presión permisible
-      detail: Más de 24 h a 1,25 × la presión nominal
+      detail: Durante 24–48 h a 1,25 × la presión nominal
     - value: AQL 2.5
       label: Umbral de defecto mayor
       detail: Según la norma de muestreo ISO 2859
