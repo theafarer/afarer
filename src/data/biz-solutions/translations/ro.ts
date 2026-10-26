@@ -124,7 +124,7 @@ const ro: Record<string, SolutionOverride> = {
     meta: {
       title: 'Producător de SUP pentru salvare pe apă | {SITE}',
       description:
-        'Afarer oferă sisteme SUP profesionale de salvare pe apă pentru salvamari, echipe de urgență și organizații de siguranță. Boarduri de salvare cu capacitate mare, design cu multiple mânerе, sisteme de remorcare și soluții OEM personalizate.',
+        'Afarer oferă sisteme SUP profesionale de salvare pe apă pentru salvamari, echipe de urgență și organizații de siguranță. Boarduri de salvare cu capacitate mare, design cu multiple mânere, sisteme de remorcare și soluții OEM personalizate.',
     },
   },
   'regional-oem-supply-chain-partner': {
