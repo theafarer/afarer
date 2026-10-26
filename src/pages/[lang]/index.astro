@@ -72,9 +72,9 @@ const distributorDefault = {
 const distributor = { ...distributorDefault, ...(page.distributor || {}) };
 
 const metadata = {
-  title: lang === defaultLang ? 'Performance Inflatable SUPs — Go Farther. Ride Stronger. | Afarer' : SITE.name,
+  title: lang === defaultLang ? 'Inflatable SUP Manufacturer & OEM/ODM Partner — Afarer Water Sports' : SITE.name,
   description:
-    'Afarer designs performance inflatable paddle boards for open water, touring, yoga, and adventure. Drop-stitch rigidity, pressure-tested board by board, backed by a clear warranty.',
+    'Afarer is an inflatable SUP manufacturer and OEM/ODM partner in Qingdao, China — an ISO 9001 certified factory designing performance inflatable paddle boards for open water, touring, yoga, and adventure. Pressure-tested board by board, with OEM/ODM, private-label, and distributor programs.',
   ignoreTitleTemplate: true,
 };
 
@@ -312,7 +312,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
             class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-white/50 mb-6"
           >
             <span class="w-8 h-px bg-primary"></span>
-            {page.hero?.tagline || t('hero.since') || 'Performance Inflatable SUP Boards'}
+            {page.hero?.tagline || t('hero.since') || 'Inflatable SUP Manufacturer & OEM/ODM Partner'}
           </span>
           <h1
             class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] text-balance text-white"
