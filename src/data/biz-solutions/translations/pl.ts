@@ -4407,7 +4407,7 @@ const pl: Record<string, SolutionOverride> = {
           customer: {
             location: 'Londyn, Wielka Brytania',
             background:
-              "Paws & Paddle była szybko rosnącą brytyjską marką lifestyle'ową dla zwierząt założoną przez byłą pielęgniarkę weterynaryjną Emmę Thornton w 2019, oferującą premium obroże dla psów, legowiska i sprzęt outdoorowy z rocznymi przychodami 4,2 mln GBP. Brytyjski rynek produktów dla zwierząt był wyceniany na 8 mld GBP, a 34% brytyjskich gospodarstw domowych miało psy. Emma zauważyła lukę — żadna duża marka dla zwierząt nie oferowała sprzętu sportów wodnych dla psów mimo rosnącego trendu «dog-friendly adventure» w mediach społecznościowych (hasztag",
+              "Paws & Paddle była szybko rosnącą brytyjską marką lifestyle'ową dla zwierząt założoną przez byłą pielęgniarkę weterynaryjną Emmę Thornton w 2019, oferującą premium obroże dla psów, legowiska i sprzęt outdoorowy z rocznymi przychodami 4,2 mln GBP. Brytyjski rynek produktów dla zwierząt był wyceniany na 8 mld GBP, a 34% brytyjskich gospodarstw domowych miało psy. Emma zauważyła lukę — żadna duża marka dla zwierząt nie oferowała sprzętu sportów wodnych dla psów mimo rosnącego trendu «dog-friendly adventure» w mediach społecznościowych (hasztag #dogpaddle miał na TikToku 430 mln wyświetleń). Zespół Emmy miał silne relacje z 340 brytyjskimi detalistami pet i ponad 50 sklepami outdoorowymi, ale potrzebował partnera produkcyjnego do rozwoju desek SUP zaprojektowanych specjalnie do użytku z psami, z odpowiednimi funkcjami bezpieczeństwa i testami.",
             goal: 'Stworzenie linii 3 modeli SUP przyjaznych psom («Paws & Paddle Adventure»), umieszczenie produktów w ponad 200 brytyjskich lokalizacjach detalicznych w ciągu 12 miesięcy i osiągnięcie 1,5 mln GBP przychodów hurtowych w pierwszym roku z marżą 52%.',
           },
           steps: [
@@ -4445,7 +4445,7 @@ const pl: Record<string, SolutionOverride> = {
           customer: {
             location: 'Noosa, Queensland, Australia',
             background:
-              "Blue Heeler Expeditions został założony w 2018 przez byłego psiego przewodnika australijskiej armii, a obecnie behawiorystę psów, Lachlana «Locky» Murphy'ego. Locky specjalizował się w treningu ras o wysokiej energii (kelpie, heelery, border collie) i zbudował oddane grono zwolenników dzięki swojemu kanałowi na YouTube (480 tys. subskrybentów) i wyprzedawanym warsztatom. Miał obiekt o powierzchni 1 100 m² koło rzeki Noosa, ale chciał stworzyć zupełnie nową kategorię — ustrukturyzowany program treningu i certyfikacji psiego SUP. Posiadanie psów w Australii było na rekordowym poziomie (5,1 mln psów), a hasztag",
+              "Blue Heeler Expeditions został założony w 2018 przez byłego psiego przewodnika australijskiej armii, a obecnie behawiorystę psów, Lachlana «Locky» Murphy'ego. Locky specjalizował się w treningu ras o wysokiej energii (kelpie, heelery, border collie) i zbudował oddane grono zwolenników dzięki swojemu kanałowi na YouTube (480 tys. subskrybentów) i wyprzedawanym warsztatom. Miał obiekt o powierzchni 1 100 m² koło rzeki Noosa, ale chciał stworzyć zupełnie nową kategorię — ustrukturyzowany program treningu i certyfikacji psiego SUP. Posiadanie psów w Australii było na rekordowym poziomie (5,1 mln psów), a hasztag #dogpaddle był trendem w australijskich mediach społecznościowych, ale nikt nie oferował profesjonalnego treningu psiego SUP ani sprzętu zaprojektowanego na klimat australijski.",
             goal: "Opracowanie kompleksowego programu «Canine SUP Certification» z deskami Afarer na zamówienie, przeszkolenie i certyfikacja 80 instruktorów w całej Australii w ciągu 18 miesięcy oraz wygenerowanie 1,2 mln AUD przychodów z programu dzięki połączeniu sprzedaży desk, opłat certyfikacyjnych i merchandise'u.",
           },
           steps: [
@@ -4706,7 +4706,7 @@ const pl: Record<string, SolutionOverride> = {
             {
               title: 'Krok 4: Premiera z influencerami i mierzony zwrot w kapitale społecznym',
               detail:
-                'Flota zadebiutowała 15 listopada 2024 z 12 mikroinfluencerami (150–450 tys. obserwujących każdy) zaproszonymi na 3-nocowe komplementarne pobyty z prowadzonymi sesjami zdjęciowymi SUP. W ciągu 90 dni hasztag',
+                'Flota zadebiutowała 15 listopada 2024 z 12 mikroinfluencerami (150–450 tys. obserwujących każdy) zaproszonymi na 3-nocowe komplementarne pobyty z prowadzonymi sesjami zdjęciowymi SUP. W ciągu 90 dni hasztag #CocoSUP wygenerował ponad 2 300 postów na Instagramie i 4,1 mln wyświetleń. Wskaźnik uczestnictwa gości w SUP osiągnął 52% do lutego 2025 — 30% powyżej celu 40%. Voss oszacowała wartość przypisywalną floty na 2,14 mln USD w zarezerwowanych nocach willowych, gdzie oferta SUP była wskazywana jako czynnik rezerwacji w ankietach po pobycie. Drugie zamówienie 20 desk dla siostrzanej nieruchomości na Fidżi złożono w kwietniu 2025.',
             },
           ],
           results: [

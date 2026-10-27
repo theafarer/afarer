@@ -4695,7 +4695,7 @@ const de: Record<string, SolutionOverride> = {
             {
               title: 'Schritt 4: Influencer-Launch & gemessener ROI auf Social Equity',
               detail:
-                'Die Flotte debütierte am 15. November 2024 mit 12 Mikro-Influencern (je 150.000-450.000 Follower), die zu 3-tägigen kostenfreien Aufenthalten inklusive geführter SUP-Fotosessions eingeladen wurden. Innerhalb von 90 Tagen erzeugte',
+                'Die Flotte debütierte am 15. November 2024 mit 12 Mikro-Influencern (je 150.000-450.000 Follower), die zu 3-tägigen kostenfreien Aufenthalten inklusive geführter SUP-Fotosessions eingeladen wurden. Innerhalb von 90 Tagen erzeugte #CocoSUP über 2.300 Instagram-Posts und 4,1 Mio. Impressionen. Die SUP-Beteiligung der Gäste erreichte bis Februar 2025 52 % – 30 % über dem Ziel von 40 %. Voss berechnete den zurechenbaren Wert der Flotte auf 2,14 Mio. $ gebuchte Villennächte, bei denen das SUP-Angebot in Befragungen nach dem Aufenthalt als Buchungsfaktor genannt wurde. Im April 2025 folgte eine zweite 20-Board-Bestellung für ein Schwester-Resort auf Fidschi.',
             },
           ],
           results: [

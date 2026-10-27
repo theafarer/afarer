@@ -4683,7 +4683,7 @@ const da: Record<string, SolutionOverride> = {
             {
               title: 'Trin 4: Influencerlancering og målbar ROI på social kapital',
               detail:
-                'Flåden havde debut 15. november 2024 med 12 mikroinfluencere (150.000-450.000 følgere hver), der var inviteret til 3 nætters komplimentære ophold inklusive guidede SUP-fotosessioner. Inden for 90 dage genererede',
+                'Flåden havde debut 15. november 2024 med 12 mikroinfluencere (150.000-450.000 følgere hver), der var inviteret til 3 nætters komplimentære ophold inklusive guidede SUP-fotosessioner. Inden for 90 dage genererede #CocoSUP 2.300+ Instagram-opslag og 4,1 mio. visninger. Gæsternes SUP-deltagelsesrate nåede 52% i februar 2025 — 30% over målet på 40%. Voss beregnede flådens tilskrivelige værdi til $2,14 mio. i bookede villanætter, hvor SUP-tilbuddet blev nævnt som en bookingsfaktor i undersøgelserne efter opholdet. En anden ordre på 20 brætter til en søsterresort på Fiji blev afgivet i april 2025.',
             },
           ],
           results: [
