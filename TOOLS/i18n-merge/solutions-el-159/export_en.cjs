@@ -1,0 +1,10 @@
+﻿const fs = require('fs');
+const path = 'E:/github/afarer/src/data/biz-solutions/index.ts';
+const WORK = 'C:/Users/Helleo/AppData/Local/Temp/deveco/el_sol_work';
+const s = fs.readFileSync(path, 'utf8');
+const start = s.indexOf('const solutions: BizSolution[] = ');
+const literal = s.slice(s.indexOf('=', start) + 1, s.indexOf('\nexport default'));
+const solutions = new Function('return ' + literal)();
+console.log('total solutions:', solutions.length);
+fs.writeFileSync(WORK + '/en_body.json', JSON.stringify(solutions, null, 2), 'utf8');
+console.log('wrote en_body.json');
