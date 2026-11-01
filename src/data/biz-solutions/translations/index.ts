@@ -16,6 +16,7 @@ import ru from './ru';
 import sv from './sv';
 import th from './th';
 import tr from './tr';
+import hr from './hr';
 import type { SolutionOverride } from './fr';
 
 export type { SolutionOverride };
@@ -39,4 +40,5 @@ export const solutionTranslations: Record<string, Record<string, SolutionOverrid
   sv,
   th,
   tr,
+  hr,
 };
