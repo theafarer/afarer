@@ -80,7 +80,16 @@ for (const art of he) {
     }
   }
   for (const k of Object.keys(art)) if (!FIELDS.includes(k)) problems.push(art.slug + ': EXTRA field ' + k);
-  for (const f of ['title', 'description', 'definition', 'tldr', 'problem', 'explanation', 'solution', 'recommendation']) {
+  for (const f of [
+    'title',
+    'description',
+    'definition',
+    'tldr',
+    'problem',
+    'explanation',
+    'solution',
+    'recommendation',
+  ]) {
     const val = String(art[f] || '');
     if (val.trim() === '') problems.push(art.slug + ': empty field ' + f);
     if (MOJIBAKE.test(val)) problems.push(art.slug + ': mojibake in ' + f);
@@ -96,7 +105,8 @@ for (const art of he) {
   for (const f of art.faq) {
     if (!f.q || !f.a) problems.push(art.slug + ': faq entry missing q/a');
     if (BIDI.test(String(f.q)) || BIDI.test(String(f.a))) problems.push(art.slug + ': BIDI in faq');
-    if (PRESFORM.test(String(f.q)) || PRESFORM.test(String(f.a))) problems.push(art.slug + ': presentation form in faq');
+    if (PRESFORM.test(String(f.q)) || PRESFORM.test(String(f.a)))
+      problems.push(art.slug + ': presentation form in faq');
   }
 }
 
@@ -113,7 +123,16 @@ for (const art of he) {
 const LEAK = /\b(the|and|with|for|your|you|when|how|what|that|this|from|not|are|will)\b/i;
 const leaks = [];
 for (const art of he) {
-  for (const f of ['title', 'description', 'definition', 'tldr', 'problem', 'explanation', 'solution', 'recommendation']) {
+  for (const f of [
+    'title',
+    'description',
+    'definition',
+    'tldr',
+    'problem',
+    'explanation',
+    'solution',
+    'recommendation',
+  ]) {
     const val = String(art[f] || '');
     const m = val.match(LEAK);
     if (m)

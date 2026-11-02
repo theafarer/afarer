@@ -3,7 +3,10 @@ const path = require('path');
 const yaml = require(path.join('E:', 'github', 'afarer', 'node_modules', 'js-yaml'));
 
 const dir = path.join(__dirname, 'parts');
-const files = fs.readdirSync(dir).filter(f => f.endsWith('.yaml')).sort();
+const files = fs
+  .readdirSync(dir)
+  .filter((f) => f.endsWith('.yaml'))
+  .sort();
 let bad = 0;
 for (const f of files) {
   const raw = fs.readFileSync(path.join(dir, f), 'utf8');

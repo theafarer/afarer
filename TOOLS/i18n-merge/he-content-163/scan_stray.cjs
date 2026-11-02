@@ -19,7 +19,9 @@ for (const f of files) {
     let m;
     re.lastIndex = 0;
     while ((m = re.exec(line)) !== null) {
-      bad.push(`${f}:${i + 1} U+${m[0].codePointAt(0).toString(16).toUpperCase()} ${JSON.stringify(line.slice(Math.max(0, m.index - 20), m.index + 20))}`);
+      bad.push(
+        `${f}:${i + 1} U+${m[0].codePointAt(0).toString(16).toUpperCase()} ${JSON.stringify(line.slice(Math.max(0, m.index - 20), m.index + 20))}`
+      );
     }
   });
 }
