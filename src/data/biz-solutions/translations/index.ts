@@ -20,6 +20,7 @@ import hr from './hr';
 import he from './he';
 import id from './id';
 import tl from './tl';
+import ms from './ms';
 import type { SolutionOverride } from './fr';
 
 export type { SolutionOverride };
@@ -47,4 +48,5 @@ export const solutionTranslations: Record<string, Record<string, SolutionOverrid
   he,
   id,
   tl,
+  ms,
 };
