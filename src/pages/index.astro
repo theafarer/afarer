@@ -9,6 +9,7 @@ import { getEntityGraphJsonLd } from '~/lib/geo-v7/entity-graph';
 const branding = (cfg as any)?.branding || {};
 import techCardsData from '~/data/site/tech-cards.yaml';
 import productVisualsData from '~/data/site/product-visuals.yaml';
+import { supScenarios } from '~/data/sup-scenarios';
 
 const metadata = {
   title: 'Afarer — Performance Inflatable SUP Boards & Water Sports Gear',
@@ -359,6 +360,43 @@ const faqCategories = [
       >
         Compare SUP Models <span>→</span>
       </a>
+    </div>
+  </section>
+
+  <!-- SUP Usage Scenarios -->
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-sm font-semibold text-primary tracking-[0.15em] uppercase">Usage Scenarios</span>
+        <h2 class="mt-4 text-4xl md:text-5xl font-bold text-secondary">Where Will You Ride Yours?</h2>
+        <p class="mt-4 text-lg text-gray-500">
+          From sunrise yoga to family float parties — find the water that fits your weekend.
+        </p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {
+          supScenarios.map((scenario) => (
+            <a
+              href={scenario.href}
+              class="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            >
+              <div class="aspect-[4/3] bg-gradient-to-br from-blue-50 to-cyan-50 overflow-hidden">
+                <img
+                  src={scenario.photos[0].src}
+                  alt={scenario.photos[0].alt}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-5">
+                <h3 class="font-bold text-secondary group-hover:text-primary transition-colors">{scenario.title}</h3>
+                <p class="mt-2 text-sm text-gray-500">{scenario.short}</p>
+                <span class="inline-block mt-3 text-xs font-medium text-primary">Explore →</span>
+              </div>
+            </a>
+          ))
+        }
+      </div>
     </div>
   </section>
 

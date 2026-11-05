@@ -61,6 +61,9 @@ export const LOCALIZED_ROUTES = new Set([
   '/whitewater-sup',
   '/ultra-stable-sup',
   '/sup-accessories',
+  '/surf-sup',
+  '/giant-sup',
+  '/dock-platform',
 ]);
 
 export const NON_LOCALIZED_ROUTES = new Set(['/products/compare']);

@@ -6,6 +6,8 @@ import JsonLd from '~/components/common/JsonLd.astro';
 import { languages } from '~/i18n/config';
 import { localizeHref } from '~/i18n/routing';
 import { landingI18n as __landing } from '~/i18n/generated/landing/whitewater-sup';
+import ScenarioShowcase from '~/components/widgets/ScenarioShowcase.astro';
+import { getSupScenario, type SupScenario } from '~/data/sup-scenarios';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -14,6 +16,7 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const __lt = __landing[lang || ''] || {};
 const fr = (en: string, francais: string) => __lt[en] || (lang === 'fr' ? francais : en);
+const sx = (en: string) => __lt[en] || en;
 
 const metadata = {
   title: fr(
@@ -28,6 +31,7 @@ const metadata = {
 };
 const pageUrl = `https://afarer.com/${lang}/whitewater-sup/`;
 const today = '2026-07-27';
+const scenario = getSupScenario('whitewater') as SupScenario;
 ---
 
 <Layout metadata={metadata}>
@@ -144,6 +148,14 @@ const today = '2026-07-27';
       </p>
     </div>
   </section>
+
+  <ScenarioShowcase
+    kicker={sx('On the Water')}
+    title={sx('Whitewater SUP on the River')}
+    description={sx(scenario.description)}
+    instructions={sx(scenario.instructions)}
+    photos={scenario.photos}
+  />
 
   <section class="bg-gray-50 py-16 md:py-24 px-6">
     <div class="max-w-6xl mx-auto">

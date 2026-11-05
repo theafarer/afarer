@@ -1,0 +1,422 @@
+---
+export const prerender = true;
+
+import Layout from '~/layouts/PageLayout.astro';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { languages } from '~/i18n/config';
+import { localizeHref } from '~/i18n/routing';
+import { landingI18n as __landing } from '~/i18n/generated/landing/giant-sup';
+import ScenarioShowcase from '~/components/widgets/ScenarioShowcase.astro';
+import { getSupScenario, type SupScenario } from '~/data/sup-scenarios';
+
+export async function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const __lt = __landing[lang || ''] || {};
+const sx = (en: string) => __lt[en] || en;
+
+const metadata = {
+  title: sx('Giant SUP Board | Multi-Person Inflatable Paddle Board | Afarer'),
+  description: sx(
+    'Afarer giant SUP boards — ultra-buoyant multi-person inflatable paddle boards for group paddling, float parties, and team adventures. Expansive EVA decks, 650+ kg capacity, multi-chamber safety. CE certified. OEM/ODM manufacturing available.'
+  ),
+  ignoreTitleTemplate: true,
+};
+const pageUrl = `https://afarer.com/${lang}/giant-sup/`;
+const today = '2026-11-05';
+const scenario = getSupScenario('giant') as SupScenario;
+
+const faqItems = [
+  {
+    question: sx('What is a giant SUP board?'),
+    answer: sx(
+      'A giant SUP is an ultra-buoyant, multi-person inflatable paddle board — typically 15–17 feet long — built for group paddling, floating parties, and team activities. Its expansive EVA deck carries several paddlers at once, and its multi-chamber construction keeps the platform safe and stable.'
+    ),
+  },
+  {
+    question: sx('How many people can fit on a giant SUP?'),
+    answer: sx(
+      'Depending on the model, a giant SUP comfortably carries 6–10+ adult paddlers, with load ratings up to 650 kg. Passengers can stand, sit, or lounge together — making it a floating party platform as much as a paddle board.'
+    ),
+  },
+  {
+    question: sx('Is a giant SUP stable for beginners?'),
+    answer: sx(
+      'Yes — giant SUPs are among the most stable boards on the water. Their huge width and volume make tipping nearly impossible in calm conditions, which is why they are a favorite for first-timers, kids, and group events.'
+    ),
+  },
+  {
+    question: sx('How do you inflate and transport a giant SUP?'),
+    answer: sx(
+      'Giant SUPs use dual-valve inflation so two pumps can work in parallel — expect 15–25 minutes to reach 12–15 PSI. They roll into an oversized travel bag that fits in a car trunk or boat locker, and heavy-duty perimeter handles make carry-downs a team effort.'
+    ),
+  },
+  {
+    question: sx('Do you manufacture giant SUPs for private label brands?'),
+    answer: sx(
+      'Yes. Afarer offers OEM/ODM manufacturing for multi-person giant SUP boards with custom deck graphics, EVA colors, chamber layouts, and compliance documentation for event companies, resorts, and retail brands worldwide.'
+    ),
+  },
+];
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+};
+---
+
+<Layout metadata={metadata}>
+  <JsonLd
+    type="Article"
+    data={{
+      headline: sx('Giant SUP Board — One Board, Everyone On Board'),
+      description: metadata.description,
+      datePublished: today,
+      author: { '@type': 'Organization', name: 'Afarer' },
+      url: pageUrl,
+    }}
+  />
+  <JsonLd
+    type="BreadcrumbList"
+    data={{
+      itemListElement: [
+        { position: 1, name: sx('Home'), item: `https://afarer.com/${lang}/` },
+        {
+          position: 2,
+          name: sx('Inflatable SUP Boards'),
+          item: `https://afarer.com/${lang}/inflatable-sup/`,
+        },
+        { position: 3, name: sx('Giant SUP'), item: pageUrl },
+      ],
+    }}
+  />
+  <JsonLd data={faqLd} />
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto py-24 px-6">
+    <a
+      href={localizeHref('/inflatable-sup/', lang || 'en')}
+      class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-8 transition-colors"
+      >{sx('← SUP Product Center')}</a
+    >
+    <div class="max-w-4xl">
+      <span class="text-xs font-semibold text-primary tracking-[0.25em] uppercase">{sx('SUP Category')}</span>
+      <h1 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-secondary leading-[1.1]">
+        {sx('Giant SUP Board')}
+      </h1>
+      <p class="mt-6 text-lg text-gray-500 max-w-3xl leading-relaxed">
+        {
+          sx(
+            'The giant SUP turns paddling into a group sport. Ultra-buoyant, expansive, and nearly untippable, Afarer multi-person giant SUPs carry family, friends, or whole teams on one floating platform — for synchronized paddling, float parties, and summer days nobody forgets. One board, everyone on board.'
+          )
+        }
+      </p>
+    </div>
+  </section>
+
+  <ScenarioShowcase
+    kicker={sx('On the Water')}
+    title={sx('The Giant SUP in Its Element')}
+    description={sx(scenario.description)}
+    instructions={sx(scenario.instructions)}
+    photos={scenario.photos}
+  />
+
+  <!-- Key Features -->
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">{sx('Built Big for a Reason')}</h2>
+        <p class="mt-4 text-lg text-gray-500">{sx('Capacity, stability, and safety — scaled up for groups.')}</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center mx-auto"
+          >
+            <svg class="w-7 h-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M12 3v2.25M12 21v-2.25M3 12h2.25M18.75 12H21M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              ></path></svg
+            >
+          </div>
+          <h3 class="mt-5 text-lg font-bold text-secondary">{sx('650+ kg Capacity')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              sx(
+                'An 8-inch drop-stitch hull and dual-valve inflation carry whole crews with gear — rated to 650 kg on the 16.5-foot platform.'
+              )
+            }
+          </p>
+        </div>
+        <div class="text-center bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center mx-auto"
+          >
+            <svg class="w-7 h-7 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+              ></path></svg
+            >
+          </div>
+          <h3 class="mt-5 text-lg font-bold text-secondary">{sx('Multi-Chamber Safety')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              sx(
+                'Independent air chambers keep the platform afloat and level even if one chamber is damaged — essential when the whole family is aboard.'
+              )
+            }
+          </p>
+        </div>
+        <div class="text-center bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <div
+            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-50 to-amber-100 flex items-center justify-center mx-auto"
+          >
+            <svg class="w-7 h-7 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg
+            >
+          </div>
+          <h3 class="mt-5 text-lg font-bold text-secondary">{sx('Expansive EVA Deck')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              sx(
+                'A full-length soft EVA deck lets passengers sit, stand, or sprawl out comfortably — with heavy-duty perimeter handles for everyone to hold on.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Boards -->
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-8">{sx('Boards for Bigger Crews')}</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a
+          href={localizeHref('/products/sup-giant', lang || 'en')}
+          class="group bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-all"
+        >
+          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+            {sx('Multi-Person Giant SUP')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              sx(
+                '16.5-foot multi-person inflatable SUP rated for 650 kg with dual-valve inflation and multi-fin tracking.'
+              )
+            }
+          </p>
+          <span class="inline-block mt-2 text-xs font-medium text-primary">{sx('View product →')}</span>
+        </a>
+        <a
+          href={localizeHref('/products/sup-leviathan-wake', lang || 'en')}
+          class="group bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-all"
+        >
+          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+            {sx('Leviathan Wake Series')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {
+              sx(
+                'Ultra-stable platform with heavy-load support — the family-sized option when the giant board stays home.'
+              )
+            }
+          </p>
+          <span class="inline-block mt-2 text-xs font-medium text-primary">{sx('View product →')}</span>
+        </a>
+        <a
+          href={localizeHref('/ultra-stable-sup', lang || 'en')}
+          class="group bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-all"
+        >
+          <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+            {sx('Ultra-Stable SUP')}
+          </h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {sx('Explore the wider family of high-stability boards for beginners and group-friendly paddling.')}
+          </p>
+          <span class="inline-block mt-2 text-xs font-medium text-primary">{sx('Explore category →')}</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Is It For -->
+  <section class="bg-gray-50 py-16 md:py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-secondary">{sx('Who Is a Giant SUP For?')}</h2>
+        <p class="mt-4 text-lg text-gray-500">{sx('Anyone who believes paddling is better together.')}</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">{sx('Families & Friend Groups')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              sx(
+                'One board, one pump, zero arguments about whose turn it is. The giant SUP keeps the whole crew together on the water — paddling, splashing, and floating as one.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">{sx('Team-Building & Group Events')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              sx(
+                'Synchronized paddling is the ultimate icebreaker. Corporate retreats, camps, and clubs run races and challenges that get everyone laughing and working together.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">{sx('Beach Days & Float Parties')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              sx(
+                'Anchor it in the shallows and the giant SUP becomes a floating lounge — sunbathing deck, swim platform, and home base for a day at the beach.'
+              )
+            }
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all">
+          <h3 class="text-lg font-bold text-secondary">{sx('Resorts & Rental Fleets')}</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">
+            {
+              sx(
+                'Giant SUPs are rental heroes — high throughput, unforgettable guest experiences, and near-zero skill barrier. Durable fleet construction with OEM branding available.'
+              )
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OEM Section -->
+  <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">
+        {sx('OEM/ODM Manufacturing for Giant SUPs')}
+      </h2>
+      <p class="text-lg text-gray-500 leading-relaxed mb-8">
+        {
+          sx(
+            'Afarer manufactures multi-person giant SUP boards for event companies, resorts, camps, and retail brands. Our 12,000 m² facility produces CE-certified multi-chamber platforms with custom deck graphics, EVA colors, and retail-ready packaging. MOQ from 50 units. Lead times from 30 days.'
+          )
+        }
+      </p>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">{sx('Custom')}</span>
+          <p class="mt-1 text-sm text-gray-500">{sx('Chambers, deck graphics, colors')}</p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">50+</span>
+          <p class="mt-1 text-sm text-gray-500">{sx('Units minimum order')}</p>
+        </div>
+        <div class="bg-[#F8FAFB] rounded-xl p-6 text-center border border-gray-200">
+          <span class="text-2xl font-bold text-primary">{sx('30 Days')}</span>
+          <p class="mt-1 text-sm text-gray-500">{sx('Typical lead time')}</p>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <a
+          href={localizeHref('/oem-odm-manufacturer', lang || 'en')}
+          class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+          >{sx('Request OEM Quote')} <span>→</span></a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+        {sx('Giant SUP — Frequently Asked Questions')}
+      </h2>
+      <p class="text-lg text-gray-500 text-center mb-12">
+        {sx('Common questions about choosing, using, and manufacturing multi-person paddle boards.')}
+      </p>
+      <div class="space-y-4">
+        {
+          faqItems.map((item) => (
+            <div class="bg-white border border-gray-200 rounded-2xl p-6">
+              <h3 class="text-lg font-semibold text-secondary">{item.question}</h3>
+              <p class="mt-2 text-sm text-gray-500 leading-relaxed">{item.answer}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Guides -->
+  <section class="max-w-6xl mx-auto py-16 px-6">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary">{sx('Giant SUP Guides')}</h2>
+      <p class="mt-4 text-lg text-gray-500">
+        {sx('Related content to help you plan your group paddling adventures.')}
+      </p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a
+        href={localizeHref('/compare/single-chamber-vs-multi-chamber', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {sx('Chamber Safety Guide')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">{sx('Why multi-chamber construction matters for group boards.')}</p>
+      </a>
+      <a
+        href={localizeHref('/compare/inflatable-vs-hardboard', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {sx('Inflatable vs Hard Board')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">{sx('Why giant SUPs only make sense as inflatables.')}</p>
+      </a>
+      <a
+        href={localizeHref('/compare/pvc-vs-hypalon', lang || 'en')}
+        class="group bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-all"
+      >
+        <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+          {sx('Durable SUP Materials')}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">{sx('Material choices for high-impact group use.')}</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-16 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-secondary">{sx('Get the Whole Crew On Board')}</h2>
+    <p class="mt-4 text-lg text-gray-500">
+      {sx('Talk to our team about the right giant SUP for your family, event, or fleet.')}
+    </p>
+    <a
+      href={localizeHref('/contact', lang || 'en')}
+      class="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg transition-all"
+      >{sx('Get a Quote')} <span>→</span></a
+    >
+  </section>
+</Layout>

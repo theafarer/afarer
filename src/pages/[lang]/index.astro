@@ -17,6 +17,7 @@ import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/home.ts';
 import productVisualsData from '~/data/site/product-visuals.yaml';
 import { pageContentData } from '~/i18n/generated/data';
+import { supScenarios } from '~/data/sup-scenarios';
 
 export async function getStaticPaths() {
   return Object.keys(langMap).map((lang) => ({
@@ -497,6 +498,55 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
       </section>
     ) : null
   }
+
+  <!-- SUP Usage Scenarios -->
+  <section class="relative py-28 md:py-36 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.25em] uppercase text-primary mb-4">
+          <span class="w-8 h-px bg-primary"></span>
+          {t('home.scenarios.tagline') || 'Usage Scenarios'}
+        </span>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-secondary">
+          {t('home.scenarios.title') || 'Where Will You Ride Yours?'}
+        </h2>
+        <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
+          {
+            t('home.scenarios.desc') ||
+              'From sunrise yoga to family float parties — find the water that fits your weekend.'
+          }
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+        {
+          supScenarios.map((scenario) => (
+            <a
+              href={'/' + lang + scenario.href}
+              class="group bg-[#F8FAFB] rounded-3xl overflow-hidden border border-gray-200 hover:border-primary/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+            >
+              <div class="aspect-[4/3] bg-gradient-to-br from-blue-50 to-cyan-50 overflow-hidden">
+                <img
+                  src={scenario.photos[0].src}
+                  alt={scenario.photos[0].alt}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-secondary group-hover:text-primary transition-colors">
+                  {scenario.title}
+                </h3>
+                <p class="mt-2 text-sm text-gray-500 leading-relaxed">{scenario.short}</p>
+                <span class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary group-hover:gap-2 transition-all">
+                  {t('home.scenarios.cta') || 'Explore'} →
+                </span>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
 
   <!-- Business Solutions: Core Capabilities -->
   {

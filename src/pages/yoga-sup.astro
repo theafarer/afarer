@@ -1,6 +1,8 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import ScenarioShowcase from '~/components/widgets/ScenarioShowcase.astro';
+import { getSupScenario, type SupScenario } from '~/data/sup-scenarios';
 
 const metadata = {
   title: 'SUP Yoga Board | Best Inflatable Paddle Board for Yoga | Afarer OEM Manufacturer',
@@ -10,6 +12,7 @@ const metadata = {
 };
 const pageUrl = 'https://afarer.com/yoga-sup/';
 const today = '2026-07-27';
+const scenario = getSupScenario('yoga') as SupScenario;
 ---
 
 <Layout metadata={metadata}>
@@ -99,6 +102,13 @@ const today = '2026-07-27';
       </p>
     </div>
   </section>
+
+  <ScenarioShowcase
+    title="SUP Yoga on Mirror-Calm Water"
+    description={scenario.description}
+    instructions={scenario.instructions}
+    photos={scenario.photos}
+  />
 
   <section class="bg-gray-50 py-16 md:py-24 px-6">
     <div class="max-w-6xl mx-auto">
