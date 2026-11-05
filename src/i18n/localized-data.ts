@@ -48,6 +48,7 @@ import { contentV2OverridesId } from '~/data/content-v2.id';
 import { contentV2OverridesTl } from '~/data/content-v2.tl';
 import { contentV2OverridesMs } from '~/data/content-v2.ms';
 import { contentV2OverridesHu } from '~/data/content-v2.hu';
+import { contentV2OverridesSk } from '~/data/content-v2.sk';
 import { faqs } from '~/data/faq';
 import type { FaqRecord } from '~/data/faq';
 import { faqsFr } from '~/data/faq.fr';
@@ -199,6 +200,9 @@ export function getContentV2ForLang(lang: string | undefined): ContentV2Record[]
   }
   if (lang === 'hu') {
     return mergeV2BySlug(contentV2Records, contentV2OverridesHu);
+  }
+  if (lang === 'sk') {
+    return mergeV2BySlug(contentV2Records, contentV2OverridesSk);
   }
   return contentV2Records;
 }
