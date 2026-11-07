@@ -275,31 +275,6 @@ export const bodyOverrides: EvidenceBodyMap = {
       },
     ],
   },
-  'humanitarian-aid-project': {
-    client: 'Organizație umanitară internațională',
-    product: 'Bărci gonflabile de salvare și ajutor',
-    industry: 'ONG / Umanitar',
-    challenge:
-      'O organizație umanitară internațională avea nevoie de 50 de bărci gonflabile robuste pentru operațiuni de salvare la inundații în Asia de Sud-Est: ușoare pentru transport cu elicopterul și reparabile pe teren.',
-    solution:
-      'Am fabricat 50 de ambarcațiuni umflabile întărite cu pardoseli auto-evacuante, redundanță multicameră și perimetre de linii de prindere. Am furnizat truse de reparații de teren cu instrucțiuni ilustrate. Am instruit 20 de tehnicieni locali.',
-    result:
-      '50 de ambarcațiuni implementate în 3 regiuni expuse inundațiilor. Utilizate în 12 operațiuni majore de salvare în primele 6 luni. 0 defecțiuni de echipamente raportate.',
-    outcomeMetrics: [
-      {
-        label: 'Ambarcațiuni implementate',
-        value: '50',
-      },
-      {
-        label: 'Operațiuni de salvare',
-        value: '12',
-      },
-      {
-        label: 'Rată de defecțiuni',
-        value: '0%',
-      },
-    ],
-  },
   'japanese-brand-launch': {
     client: 'Brand japonez de lifestyle',
     product: 'Linie SUP co-branding',
@@ -455,9 +430,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Flotă SUP de patrulă și salvare',
     industry: 'Guvernamental / Securitate maritimă',
     challenge:
-      'O agenție maritimă guvernamentală solicita 20 de SUP-uri de patrulă și salvare cu țesătură Hypalon rezistentă la foc, suporturi integrate pentru comunicații și conformitate cu SOLAS capitolul III.',
+      "O agenție maritimă guvernamentală a solicitat 20 de SUP-uri de patrulă și salvare cu punți de înaltă vizibilitate, suporturi de comunicații integrate și construcție certificată CE.",
     solution:
-      'Am fabricat 20 de SUP-uri cu tuburi din CSM Hypalon, inele D rezistente și pachete de lumini de navigație preinstalate. Echipa de inspecție a fabricii a asistat la încercările pe mare. Pachetul complet de documentație SOLAS a fost furnizat.',
+      "Am fabricat 20 de SUP-uri cu construcție din PVC de calitate militară, inele D rezistente și seturi de lumini de navigație preinstalate. Echipa de inspecție a fabricii a asistat la încercările pe mare. A fost livrat pachetul complet de documentație de conformitate.",
     result:
       'Contract livrat în 4 luni. Flotila implementată pentru patrulare de frontieră, căutare și salvare și răspuns la dezastre pe 3 baze regionale.',
     outcomeMetrics: [

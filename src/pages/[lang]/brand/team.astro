@@ -36,9 +36,9 @@ const lh = (h: string) => (h ? `/${lang}${h}` : h);
 const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
 
 const metadata = {
-  title: `Team — ${SITE.name} | Marine Engineering & Leadership`,
+  title: `Team — ${SITE.name} | Engineering & Leadership`,
   description:
-    'Meet the Afarer team — marine engineers, material scientists, and manufacturing experts with decades of combined experience in inflatable boat design and production.',
+    'Meet the Afarer team — board designers, material scientists, and manufacturing experts with decades of combined experience in inflatable SUP design and production.',
 };
 const crumbs = [
   { name: t('nav.home'), href: `/${lang}/` },

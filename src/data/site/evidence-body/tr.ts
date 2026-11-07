@@ -276,31 +276,6 @@ export const bodyOverrides: EvidenceBodyMap = {
       },
     ],
   },
-  'humanitarian-aid-project': {
-    client: 'Uluslararası insani kuruluş',
-    product: 'Kurtarma ve yardım şişme botları',
-    industry: 'STK / İnsani Yardım',
-    challenge:
-      "Uluslararası bir insani kuruluş, Güneydoğu Asya'daki sel kurtarma operasyonları için helikopterle taşınabilecek hafiflikte, enkaza dayanıklı ve sahada onarılabilir 50 sağlam şişme bota ihtiyaç duyuyordu.",
-    solution:
-      'Kendiliğinden su boşaltmalı zeminler, çok bölmeli yedeklilik ve çevre boyunca tutamaç halatlarıyla 50 güçlendirilmiş şişme bot ürettik. Resimli talimatlı saha tamir kitleri sağladık. 20 yerel teknisyen eğittik.',
-    result:
-      '3 sel riskli bölgede 50 bot konuşlandırıldı. İlk 6 ayda 12 büyük kurtarma operasyonunda kullanıldı. 0 ekipman arızası bildirildi.',
-    outcomeMetrics: [
-      {
-        label: 'Konuşlandırılan Botlar',
-        value: '50',
-      },
-      {
-        label: 'Kurtarma Operasyonları',
-        value: '12',
-      },
-      {
-        label: 'Arıza Oranı',
-        value: '0%',
-      },
-    ],
-  },
   'japanese-brand-launch': {
     client: 'Japon yaşam tarzı markası',
     product: 'Ortak markalı SUP serisi',
@@ -455,9 +430,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Devriye ve kurtarma SUP filosu',
     industry: 'Kamu / Deniz Güvenliği',
     challenge:
-      "Bir devlet deniz ajansı, alev geciktirici Hypalon kumaş, entegre haberleşme bağlantıları ve SOLAS bölüm III can filikası standartlarına uygun 20 devriye ve kurtarma SUP'ı talep ediyordu.",
+      "Bir devlet deniz kurumu, yüksek görünürlüklü güvertelere, entegre iletişim bağlantılarına ve CE sertifikalı yapıya sahip 20 devriye ve kurtarma SUP'ı gerektiriyordu.",
     solution:
-      'CSM Hypalon tüpler, ağır hizmet tipi D halkaları ve önceden takılı seyir feneri paketleriyle 20 SUP ürettik. Fabrika denetim ekibi deniz denemelerine tanıklık etti. Eksiksiz SOLAS belge paketi sağlandı.',
+      "Askeri sınıf PVC konstrüksiyon, ağır hizmet tipi D halkalar ve önceden takılılmış seyir feneri setleriyle 20 SUP üretildi. Fabrika denetim ekibi deniz denemelerine tanıklık etti. Tam uygunluk dokümantasyon paketi teslim edildi.",
     result:
       'Sözleşme 4 ayda teslim edildi. Filo, 3 bölgesel üste sınır devriyesi, arama kurtarma ve afet müdahalesi için konuşlandırıldı.',
     outcomeMetrics: [

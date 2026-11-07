@@ -67,13 +67,13 @@ const metadata = {
   <AiQuickAnswer
     entityType="Guide"
     quickAnswer={fr(
-      'An inflatable SUP (stand-up paddle board) is a lightweight watercraft constructed with drop-stitch core technology, where thousands of polyester threads connect top and bottom PVC layers, enabling high-pressure inflation (15-25 PSI) for rigid board performance. Modern inflatable water sports equipment includes SUPs, inflatable boats, and accessories built from PVC or Hypalon CSM fabrics using RF welding or hand-glued seams.',
-      'Un SUP gonflable (planche à pagaie debout) est une embarcation légère construite avec une technologie de cœur drop-stitch, où des milliers de fils de polyester relient les couches PVC supérieure et inférieure, permettant une gonflage haute pression (15-25 PSI) pour une planche rigide. Les équipements nautiques gonflables modernes incluent les SUP, bateaux gonflables et accessoires fabriqués en tissus PVC ou Hypalon CSM par soudure RF ou collage à la main.'
+      'An inflatable SUP is a portable stand-up paddle board constructed with a drop-stitch core and PVC fabric shells filled with pressurized air. Modern iSUPs use military-grade PVC fabrics with RF welding, achieving rigidity comparable to hard boards at 12-15 PSI. They are lightweight, packable, and suitable for recreation, touring, yoga, and fishing.',
+      'Un SUP gonflable est une planche à pagaie debout portable construite avec un cœur drop-stitch et des enveloppes en tissu PVC remplies d’air sous pression. Les iSUP modernes utilisent des tissus PVC de qualité militaire avec soudure RF, atteignant une rigidité comparable aux planches rigides à 12-15 PSI. Légères et pliables, elles conviennent à la récréation, au touring, au yoga et à la pêche.'
     )}
     facts={[
-      { label: fr('Global Market Size', 'Taille du Marché Mondial'), value: '$2.8B (2026)' },
-      { label: fr('Primary Materials', 'Matériaux Principaux'), value: 'PVC / Hypalon CSM' },
-      { label: fr('Lifespan Range', 'Durée de Vie'), value: '8-20+ ans' },
+      { label: fr('Global Market Size', 'Taille du Marché Mondial'), value: '$1.2B (2026)' },
+      { label: fr('Primary Materials', 'Matériaux Principaux'), value: 'Drop-Stitch PVC' },
+      { label: fr('Lifespan Range', 'Durée de Vie'), value: '5-12 years' },
       { label: fr('CE Certification', 'Certification CE'), value: fr('Required (EU)', 'Exigée (UE)') },
     ]}
   />
@@ -85,8 +85,8 @@ const metadata = {
     <p class="mt-4 text-lg text-gray-500">
       {
         fr(
-          'The definitive resource on inflatable water sports equipment — from recreational SUPs to professional-grade rescue and touring boards.',
-          'La ressource de référence sur les équipements nautiques gonflables — des SUP de loisir aux planches de secours et de touring de qualité professionnelle.'
+          'The definitive resource on inflatable stand-up paddle boards — from all-around recreational boards to touring, yoga, and fishing SUPs.',
+          'La ressource de référence sur les planches à pagaie debout gonflables — des planches récréatives polyvalentes aux SUP de touring, yoga et pêche.'
         )
       }
     </p>
@@ -109,50 +109,50 @@ const metadata = {
 
     <section id="types" class="mt-16">
       <h2 class="text-2xl font-semibold text-gray-900">
-        {fr('Types of Inflatable Water Sports Equipment', 'Types d’Équipements Nautiques Gonflables')}
+        {fr('Types of Inflatable SUPs', 'Types de SUP Gonflables')}
       </h2>
       <div class="mt-8 grid gap-6">
         {
           [
             {
-              title: fr('Inflatable Stand-Up Paddle Boards (SUPs)', 'Planches à Pagaie Debout Gonflables (SUP)'),
+              title: fr('All-Around SUP', 'SUP Polyvalent'),
               desc: fr(
-                'Drop-stitch constructed paddle boards that inflate to rigid high-pressure decks. Available in all-around, touring, yoga, fishing, and surf models. The most versatile category of inflatable water sports equipment.',
-                'Planches de pagaie à construction drop-stitch qui se gonflent en ponts rigides haute pression. Disponibles en modèles polyvalents, touring, yoga, pêche et surf. La catégorie la plus polyvalente d’équipements nautiques gonflables.'
+                'The most versatile category. 10-11 ft length, 32-34" width. Stable, forgiving shape ideal for beginners, recreational paddling on lakes, rivers, and sheltered coastal waters. The best choice for a single-board quiver.',
+                'La catégorie la plus polyvalente. 10-11 pieds de long, 32-34" de large. Forme stable et indulgente, idéale pour les débutants et la pagaie récréative sur lacs, rivières et eaux côtières abritées. Le meilleur choix pour une planche unique.'
               ),
               icon: '🏄',
             },
             {
-              title: fr('Touring & Expedition SUPs', 'SUP de Touring & d’Expédition'),
+              title: fr('Touring SUP', 'SUP de Touring'),
               desc: fr(
-                'Longer, narrower SUP boards designed for distance paddling, multi-day expeditions, and open-water crossings. Enhanced tracking, cargo capacity, and glide efficiency.',
-                'Planches SUP plus longues et étroites conçues pour la pagaie de distance, les expéditions de plusieurs jours et les traversées en eau libre. Meilleur suivi de cap, capacité de chargement et efficacité de glisse.'
+                'Longer (11-14 ft) and narrower (30-32") for distance paddling. Displacement nose improves tracking and glide efficiency. Designed for fitness paddling, exploration, and multi-day trips.',
+                'Plus longue (11-14 pieds) et plus étroite (30-32") pour la pagaie de distance. Le nez à déplacement améliore le suivi de cap et l’efficacité de glisse. Conçue pour la pagaie fitness, l’exploration et les sorties de plusieurs jours.'
               ),
               icon: '🌊',
             },
             {
-              title: fr('Inflatable Boats', 'Bateaux Gonflables'),
+              title: fr('Yoga / Fitness SUP', 'SUP Yoga / Fitness'),
               desc: fr(
-                'Portable boats made from PVC fabrics. Lightweight and compact, suitable for family recreation, fishing, and coastal adventures.',
-                'Bateaux portables fabriqués en tissus PVC. Légers et compacts, adaptés aux loisirs familiaux, à la pêche et aux aventures côtières.'
+                'Extra-wide platform (34-36") maximizing stability for on-water yoga, Pilates, and fitness. Full-length EVA deck pad for comfort. D-rings for accessory attachment.',
+                'Plateforme extra-large (34-36") maximisant la stabilité pour le yoga, le Pilates et le fitness sur l’eau. Pad de pont EVA sur toute la longueur pour le confort. Anneaux en D pour fixer les accessoires.'
               ),
-              icon: '🚤',
+              icon: '🧘',
             },
             {
-              title: fr('Rescue Equipment (SAR)', 'Équipement de Secours (SAR)'),
+              title: fr('Fishing SUP', 'SUP de Pêche'),
               desc: fr(
-                'Specialized inflatable rescue boards and safety equipment for search and rescue operations. High-visibility designs, rapid deployment, and CE-certified for rescue use.',
-                'Planches de secours gonflables spécialisées et équipements de sécurité pour les opérations de recherche et de sauvetage. Designs à haute visibilité, déploiement rapide et certifiés CE pour un usage de secours.'
+                'Wide stable boards with bungee cargo decks for gear storage. Rod holder and fishfinder mounting options. Silent approach for accessing shallow waters without spooking fish.',
+                'Planches larges et stables avec ponts de chargement élastiques pour ranger le matériel. Options de fixation de porte-cannes et sondeurs. Approche silencieuse pour accéder aux eaux peu profondes sans effrayer les poissons.'
               ),
-              icon: '🆘',
+              icon: '🎣',
             },
             {
-              title: fr('Accessories & Safety Gear', 'Accessoires & Équipement de Sécurité'),
+              title: fr('Surf SUP', 'SUP de Surf'),
               desc: fr(
-                'Life vests, paddles, pumps, repair kits, and essential gear for safe and enjoyable water experiences.',
-                'Gilets de sauvetage, pagaies, pompes, kits de réparation et équipement essentiel pour des expériences nautiques sûres et agréables.'
+                'Shorter (8-10 ft) with rounded nose and pulled-in tail for wave riding. Rocker profile for surf performance. Narrower rail profile.',
+                'Plus courte (8-10 pieds) avec un nez arrondi et un arrière resserré pour surfer. Profil de rocker pour la performance en surf. Rails plus étroits.'
               ),
-              icon: '⚙️',
+              icon: '🏄‍♂️',
             },
           ].map((item) => (
             <div class="flex gap-4 p-5 bg-gray-50 rounded-xl border border-gray-200">
@@ -171,38 +171,25 @@ const metadata = {
       <h2 class="text-2xl font-semibold text-gray-900">{fr('Construction Methods', 'Méthodes de Construction')}</h2>
       <div class="mt-8 grid md:grid-cols-2 gap-6">
         <div class="p-6 rounded-xl border border-gray-200">
+          <h3 class="font-semibold text-gray-900">{fr('Drop-Stitch Core', 'Cœur Drop-Stitch')}</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            {
+              fr(
+                'Thousands of polyester threads connect top and bottom PVC layers, enabling high-pressure inflation (12-15 PSI) for rigid performance. Thread density determines rigidity and weight. This is the defining technology of modern iSUPs.',
+                'Des milliers de fils de polyester relient les couches PVC supérieure et inférieure, permettant un gonflage haute pression (12-15 PSI) pour une performance rigide. La densité des fils détermine la rigidité et le poids. C’est la technologie déterminante des iSUP modernes.'
+              )
+            }
+          </p>
+        </div>
+        <div class="p-6 rounded-xl border border-gray-200">
           <h3 class="font-semibold text-gray-900">
             {fr('RF Welding (High-Frequency)', 'Soudure RF (Haute Fréquence)')}
           </h3>
           <p class="mt-2 text-sm text-gray-600">
             {
               fr(
-                'Uses electromagnetic energy to fuse PVC layers at molecular level. Creates the strongest airtight seams. Common in high-quality PVC boats and SUPs. Requires specialized machinery and skilled operation.',
-                'Utilise l’énergie électromagnétique pour fusionner les couches PVC au niveau moléculaire. Crée les soudures étanches les plus résistantes. Courant dans les bateaux et SUP PVC de haute qualité. Nécessite des machines spécialisées et une main-d’œuvre qualifiée.'
-              )
-            }
-          </p>
-        </div>
-        <div class="p-6 rounded-xl border border-gray-200">
-          <h3 class="font-semibold text-gray-900">
-            {fr('Hand Gluing / Chemical Bonding', 'Collage Manuel / Liaison Chimique')}
-          </h3>
-          <p class="mt-2 text-sm text-gray-600">
-            {
-              fr(
-                'Two-part adhesive bonds fabric panels. Primary method for Hypalon CSM boats (cannot be RF welded). Requires precise surface preparation, controlled humidity, and proper curing time for optimal seam strength.',
-                'Un adhésif bicomposant lie les panneaux de tissu. Méthode principale pour les bateaux en Hypalon CSM (non soudables par RF). Nécessite une préparation précise des surfaces, une humidité contrôlée et un temps de polymérisation adéquat pour une résistance optimale des soudures.'
-              )
-            }
-          </p>
-        </div>
-        <div class="p-6 rounded-xl border border-gray-200">
-          <h3 class="font-semibold text-gray-900">{fr('Drop-Stitch Core', 'Cœur Drop-Stitch')}</h3>
-          <p class="mt-2 text-sm text-gray-600">
-            {
-              fr(
-                'Thousands of polyester threads connect top and bottom PVC layers, enabling high-pressure inflation (15-25 PSI) for rigid board performance. Thread density (15-50 threads/cm²) determines rigidity and weight.',
-                'Des milliers de fils de polyester relient les couches PVC supérieure et inférieure, permettant un gonflage haute pression (15-25 PSI) pour une planche rigide. La densité des fils (15-50 fils/cm²) détermine la rigidité et le poids.'
+                'Uses electromagnetic energy to fuse PVC layers at molecular level. Creates the strongest airtight seams. Common in high-quality SUPs. Requires specialized machinery and skilled operation.',
+                'Utilise l’énergie électromagnétique pour fusionner les couches PVC au niveau moléculaire. Crée les soudures étanches les plus résistantes. Courante dans les SUP de haute qualité. Nécessite des machines spécialisées et une main-d’œuvre qualifiée.'
               )
             }
           </p>
@@ -212,8 +199,19 @@ const metadata = {
           <p class="mt-2 text-sm text-gray-600">
             {
               fr(
-                'Hot air or hot wedge welding used for seams and reinforcements. Common in larger RIB construction. Less precise than RF welding but effective for Hypalon and heavy-duty PVC fabrics.',
-                'Soudure à air chaud ou à coin chaud utilisée pour les soudures et renforts. Courante dans la construction de gros RIB. Moins précise que la soudure RF mais efficace pour l’Hypalon et les tissus PVC robustes.'
+                'Hot air welding used for seams and reinforcements. Common for rail bands and attachment points. Effective for mid-range PVC fabrics.',
+                'Soudure à air chaud utilisée pour les soudures et les renforts. Courante pour les bandes de rail et les points d’attache. Efficace pour les tissus PVC de milieu de gamme.'
+              )
+            }
+          </p>
+        </div>
+        <div class="p-6 rounded-xl border border-gray-200">
+          <h3 class="font-semibold text-gray-900">{fr('Adhesive Bonding', 'Collage Adhésif')}</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            {
+              fr(
+                'Two-part PVC adhesive bonds fabric panels. Used for deck pad attachment and some seam applications. Less common in modern production due to lower bond strength.',
+                'Un adhésif PVC bicomposant lie les panneaux de tissu. Utilisé pour la fixation des pads de pont et certaines soudures. Moins courant dans la production moderne en raison d’une résistance de liaison inférieure.'
               )
             }
           </p>
@@ -228,8 +226,10 @@ const metadata = {
           <thead>
             <tr class="bg-gray-50 border-b-2 border-gray-200">
               <th class="px-4 py-3 text-left font-semibold text-gray-700">{fr('Property', 'Propriété')}</th>
-              <th class="px-4 py-3 text-center font-semibold text-sky-700">PVC</th>
-              <th class="px-4 py-3 text-center font-semibold text-emerald-700">Hypalon CSM</th>
+              <th class="px-4 py-3 text-center font-semibold text-sky-700">{fr('Standard PVC', 'PVC Standard')}</th>
+              <th class="px-4 py-3 text-center font-semibold text-emerald-700">
+                {fr('Military-Grade PVC', 'PVC de Qualité Militaire')}
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -238,34 +238,38 @@ const metadata = {
                 [
                   fr('Relative Cost', 'Coût Relatif'),
                   fr('$ (budget)', '$ (budget)'),
-                  fr('$$$ (premium)', '$$$ (premium)'),
+                  fr('$$ (premium)', '$$ (premium)'),
                 ],
                 [
                   fr('UV Resistance', 'Résistance UV'),
                   fr('Good (with coating)', 'Bonne (avec revêtement)'),
-                  fr('Excellent (inherent)', 'Excellente (inhérente)'),
+                  fr('Excellent (stabilized)', 'Excellente (stabilisée)'),
                 ],
                 [
                   fr('Abrasion Resistance', 'Résistance à l’Abrasion'),
-                  fr('Moderate-Good', 'Modérée-Bonne'),
-                  fr('Excellent', 'Excellente'),
+                  fr('Moderate', 'Modérée'),
+                  fr('Good-Excellent', 'Bonne-Excellente'),
                 ],
-                [fr('Chemical Resistance', 'Résistance Chimique'), fr('Good', 'Bonne'), fr('Excellent', 'Excellente')],
+                [
+                  fr('Tensile Strength', 'Résistance à la Traction'),
+                  fr('800-1100 dtex', '800-1100 dtex'),
+                  fr('1100-1670 dtex', '1100-1670 dtex'),
+                ],
                 [
                   fr('Cold Flexibility', 'Flexibilité à Froid'),
                   fr('Stiffens below 0°C', 'Se rigidifie sous 0°C'),
-                  fr('Flexible to -20°C', 'Flexible jusqu’à -20°C'),
+                  fr('Flexible to -10°C', 'Flexible jusqu’à -10°C'),
                 ],
-                [fr('Lifespan', 'Durée de Vie'), fr('8-12 years', '8-12 ans'), fr('15-20+ years', '15-20+ ans')],
+                [fr('Lifespan', 'Durée de Vie'), fr('3-5 years', '3-5 ans'), fr('5-12 years', '5-12 ans')],
                 [
                   fr('Seam Method', 'Méthode de Soudure'),
-                  fr('RF welding', 'Soudure RF'),
-                  fr('Hand gluing', 'Collage manuel'),
+                  fr('Heat welding', 'Soudure à chaud'),
+                  fr('RF welding / fusion', 'Soudure RF / fusion'),
                 ],
                 [
                   fr('Repair', 'Réparation'),
                   fr('PVC glue (easy)', 'Colle PVC (facile)'),
-                  fr('2-part adhesive (moderate)', 'Adhésif bicomposant (modéré)'),
+                  fr('PVC glue (easy)', 'Colle PVC (facile)'),
                 ],
               ].map((row, i) => (
                 <tr class={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
@@ -285,17 +289,11 @@ const metadata = {
       <p class="mt-4 text-sm text-gray-500">
         {
           fr(
-            'Modern military-grade PVC (1100-1670 dtex) offers excellent durability for most recreational users at half the cost of Hypalon. Hypalon is preferred for commercial fleets, tropical climates, and mission-critical applications.',
-            'Le PVC de qualité militaire moderne (1100-1670 dtex) offre une excellente durabilité pour la plupart des utilisateurs récréatifs, à la moitié du coût de l’Hypalon. L’Hypalon est préféré pour les flottes commerciales, les climats tropicaux et les applications critiques.'
+            'Military-grade PVC (1100-1670 dtex) offers superior durability for frequent paddlers at a moderate price premium. Standard PVC is sufficient for occasional recreational use.',
+            'Le PVC de qualité militaire (1100-1670 dtex) offre une durabilité supérieure pour les pagayeurs fréquents à un prix modérément supérieur. Le PVC standard suffit pour un usage récréatif occasionnel.'
           )
         }
       </p>
-      <a
-        href={`/${lang}/learn/pvc-vs-hypalon`}
-        class="mt-4 inline-block text-sky-600 hover:text-sky-700 text-sm font-medium"
-      >
-        {fr('In-Depth PVC vs Hypalon Guide', 'Guide Approfondi PVC vs Hypalon')} →
-      </a>
     </section>
 
     <section id="selection" class="mt-16">
@@ -383,19 +381,8 @@ const metadata = {
           <p class="mt-2 text-sm text-gray-600">
             {
               fr(
-                'All inflatable boats sold in the EU require CE marking under Recreational Craft Directive (RCD) 2013/53/EU. Certification covers design category (A-D), buoyancy, stability, and load capacity. Afarer boats are CE-certified for recreational and rescue use.',
-                'Tous les bateaux gonflables vendus dans l’UE exigent le marquage CE conformément à la Directive relative aux navires de plaisance (RCD) 2013/53/UE. La certification couvre la catégorie de conception (A-D), la flottabilité, la stabilité et la capacité de charge. Les bateaux afarer sont certifiés CE pour un usage récréatif et de secours.'
-              )
-            }
-          </p>
-        </div>
-        <div class="p-6 rounded-xl border border-gray-200">
-          <h3 class="font-semibold text-gray-900">{fr('Standard', 'Norme')}</h3>
-          <p class="mt-2 text-sm text-gray-600">
-            {
-              fr(
-                'International standard for inflatable boats specifying requirements for materials, seams, valves, and performance testing. Types I-IV cover everything from small dinghies to large RIBs.',
-                'Norme internationale pour les bateaux gonflables précisant les exigences relatives aux matériaux, soudures, valves et essais de performance. Les types I-IV couvrent tout, des petits annexes aux grands RIB.'
+                'Inflatable SUPs sold in the EU may require CE marking under applicable directives. Certification covers design, buoyancy, stability, and load capacity. afarer SUPs are CE-certified for recreational use.',
+                'Les SUP gonflables vendus dans l’UE peuvent nécessiter le marquage CE conformément aux directives applicables. La certification couvre la conception, la flottabilité, la stabilité et la capacité de charge. Les SUP afarer sont certifiés CE pour un usage récréatif.'
               )
             }
           </p>
@@ -407,8 +394,8 @@ const metadata = {
           <p class="mt-2 text-sm text-gray-600">
             {
               fr(
-                'Life jackets/PFDs (CE 12402), throw ropes, bailer/fire extinguisher, navigation lights (night), VHF radio, first aid kit, anchor, and spare paddle or fuel.',
-                'Gilets de sauvetage/VFI (CE 12402), cordes de lancer, écope/extincteur, feux de navigation (nuit), radio VHF, trousse de premiers secours, ancre et pagaie de rechange ou carburant.'
+                'Life jackets/PFDs (CE 12402), coil leash, whistle or signaling device, and a phone in a waterproof case. For open water, consider a VHF radio and navigation light.',
+                'Gilets de sauvetage/VFI (CE 12402), leash spiralé, sifflet ou dispositif de signalisation et téléphone dans une coque étanche. En eau libre, envisagez une radio VHF et un feu de navigation.'
               )
             }
           </p>
@@ -418,8 +405,8 @@ const metadata = {
           <p class="mt-2 text-sm text-gray-600">
             {
               fr(
-                'NEVER exceed max capacity plate. Check valve security before launch. Distribute weight evenly. Monitor weather conditions. File a float plan. Take a boating safety course.',
-                'Ne dépassez JAMAIS la plaque de capacité maximale. Vérifiez l’étanchéité des valves avant le départ. Répartissez le poids uniformément. Surveillez les conditions météo. Établissez un plan de navigation. Suivez un cours de sécurité nautique.'
+                'Always wear a leash. Check inflation pressure before launch. Know your limits and wind conditions. File a float plan. Take a SUP safety course.',
+                'Portez toujours un leash. Vérifiez la pression de gonflage avant le départ. Connaissez vos limites et les conditions de vent. Établissez un plan de navigation. Suivez un cours de sécurité SUP.'
               )
             }
           </p>
@@ -474,8 +461,8 @@ const metadata = {
           <span class="text-sky-600 font-bold flex-shrink-0">5.</span><span
             >{
               fr(
-                'Repair punctures promptly with manufacturer-recommended patch kits. For Hypalon, use two-part adhesive only.',
-                'Réparez rapidement les perforations avec les kits de rustines recommandés par le fabricant. Pour l’Hypalon, utilisez uniquement un adhésif bicomposant.'
+                'Repair punctures promptly with a PVC patch kit. For larger damage, use manufacturer-recommended repair materials.',
+                'Réparez rapidement les perforations avec un kit de rustines PVC. Pour les dommages plus importants, utilisez les matériaux de réparation recommandés par le fabricant.'
               )
             }</span
           >
@@ -506,10 +493,10 @@ const metadata = {
               ),
             },
             {
-              title: fr('Search & Rescue', 'Recherche & Sauvetage'),
+              title: fr('Fishing', 'Pêche'),
               desc: fr(
-                'Lifeguard and emergency response teams using specialized rescue boards for rapid deployment and water rescue.',
-                'Équipes de sauveteurs et d’intervention d’urgence utilisant des planches de secours spécialisées pour un déploiement rapide et le sauvetage aquatique.'
+                'Anglers using stable SUP platforms for silent access to shallow waters and casting.',
+                'Pêcheurs utilisant des plateformes SUP stables pour un accès silencieux aux eaux peu profondes et la pêche au lancer.'
               ),
             },
             {
@@ -581,8 +568,8 @@ const metadata = {
     <p>
       {
         fr(
-          'Comprehensive inflatable SUP and water sports guide covering types (SUPs, inflatable boats, rescue equipment, accessories), construction methods (RF welding, drop-stitch core, hand gluing), materials (PVC fabric, Hypalon CSM), selection criteria (use case, budget, key factors), safety standards (CE certification, essential equipment), maintenance (cleaning, storage, repairs, valve care), and applications (recreational, touring, fitness, travel, OEM).',
-          'Guide complet du SUP gonflable et des sports nautiques couvrant les types (SUP, bateaux gonflables, équipement de secours, accessoires), méthodes de construction (soudure RF, cœur drop-stitch, collage manuel), matériaux (tissu PVC, Hypalon CSM), critères de sélection (usage, budget, facteurs clés), normes de sécurité (certification CE, équipement essentiel), entretien (nettoyage, stockage, réparations, soin des valves) et applications (récréatif, touring, fitness, voyage, OEM).'
+          'Comprehensive inflatable SUP guide covering types (all-around, touring, yoga, fishing, surf), construction methods (drop-stitch core, RF welding, heat welding, adhesive bonding), materials (PVC, military-grade PVC), selection criteria (use case, budget, materials), safety standards (CE certification, essential equipment), maintenance (cleaning, storage, repairs, valve care), and industry applications (recreational, tourism, fitness, fishing, surfing, OEM).',
+          'Guide complet du SUP gonflable couvrant les types (polyvalent, touring, yoga, pêche, surf), les méthodes de construction (cœur drop-stitch, soudure RF, soudure à chaud, collage adhésif), les matériaux (PVC, PVC de qualité militaire), les critères de sélection (usage, budget, matériaux), les normes de sécurité (certification CE, équipement essentiel), l’entretien (nettoyage, stockage, réparations, soin des valves) et les applications (récréatif, tourisme, fitness, pêche, surf, OEM).'
         )
       }
     </p>

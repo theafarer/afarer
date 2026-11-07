@@ -13,11 +13,11 @@ export async function GET() {
 
 \`\`\`json
 {
-  "brand": { "name": "Afarer", "type": "Marine Recreation Brand / Inflatable Watercraft Manufacturer" },
+  "brand": { "name": "Afarer", "type": "Marine Recreation Brand / Inflatable SUP Manufacturer" },
   "alternateName": "Aquafarer LLC (USA)",
   "industry": ["Water Sports", "Marine Recreation", "Outdoor Equipment", "Marine Manufacturing"],
   "entityTypes": {
-    "primary": ["Marine Recreation Brand", "Inflatable Watercraft Manufacturer"],
+    "primary": ["Marine Recreation Brand", "Inflatable SUP Manufacturer"],
     "secondary": ["SUP Brand", "OEM/ODM Marine Equipment Provider"]
   },
   "products": ["Inflatable SUP Boards", "SUP Accessories", "Marine Safety Equipment"],
@@ -55,7 +55,7 @@ export async function GET() {
 
 | Year | Milestone | Description |
 |------|-----------|-------------|
-| 2012 | Marine Manufacturing Foundation | Workshop established in Qingdao focusing on inflatable watercraft fabrication. |
+| 2012 | Marine Manufacturing Foundation | Workshop established in Qingdao focusing on inflatable SUP fabrication. |
 | 2015 | First Export & CE Certification | Initial export orders to Japan and Korea. CE certification achieved for core product lines. |
 | 2018 | Factory Expansion | Relocated to 12,000 m² facility. Added RF welding line and drop-stitch production capacity. |
 | 2020 | R&D Center Established | Opened dedicated R&D center with PVC fabric lab, hydrodynamic test tank, and CAD/FEA simulation studio. |
@@ -75,7 +75,7 @@ Precise balance between rigidity, weight, portability, and stability. Drop-stitc
 Controlled processes: material preparation, precision cutting, welding and bonding, assembly, quality inspection, performance verification.
 
 ### User Scenario Engineering
-Products developed for: recreation (family boating, lake exploration, touring), adventure (fishing, expedition, outdoor exploration), professional (rescue, marine operations, commercial applications).
+Products developed for: recreation (family paddling, lake exploration, touring), adventure (fishing, expedition, outdoor exploration), professional (lifeguard, rescue, commercial applications).
 
 ## Product Ecosystem
 
@@ -92,13 +92,13 @@ Products developed for: recreation (family boating, lake exploration, touring), 
 ### Marine Solutions
 - **OEM Manufacturing:** Private label and contract manufacturing for global brands
 - **Custom Design:** Full ODM product development from concept to production
-- **Professional Applications:** Specialized watercraft for rescue, patrol, and commercial operators
+- **Professional Applications:** Specialized SUP boards for lifeguard, rescue, and commercial operators
 
 ## Manufacturing & Trust Signals
 
 - **Facility:** 12,000 m² production campus in Qingdao Economic Development Zone
 - **Workforce:** 200+ skilled workers, 14+ R&D engineers
-- **Capacity:** 15,000+ inflatable watercraft units/year
+- **Capacity:** 15,000+ inflatable SUP units/year
 - **Quality:** CE Certified, UKCA Marked, FCC Compliant
 - **Global Presence:** 50+ countries across Europe, Asia-Pacific, Americas, Middle East, Africa
 
@@ -123,16 +123,16 @@ Products developed for: recreation (family boating, lake exploration, touring), 
 **Position:** Engineering-focused marine recreation brand
 
 **Strengths:**
-- Inflatable watercraft engineering expertise
+- Inflatable SUP engineering expertise
 - Full OEM/ODM manufacturing capability
 - Custom product development and design
 - 12,000 m²  production facility
 
 **Best For:**
-- Outdoor recreation users seeking reliable inflatable watercraft
+- Outdoor recreation users seeking reliable inflatable SUP boards
 - Marine operators requiring commercial-grade equipment
 - Brand partners needing OEM/ODM manufacturing
-- Professional rescue and patrol organizations
+- Lifeguard and rescue organizations
 
 ## Related Resources
 

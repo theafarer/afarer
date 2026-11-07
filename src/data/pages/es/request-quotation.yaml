@@ -1,6 +1,6 @@
 meta:
   title: 'Solicitar un Presupuesto — Fabricación OEM de SUP | {SITE}'
-  description: 'Solicite un presupuesto detallado para su proyecto de SUP hinchable o barca. Fabricación OEM/ODM, marca privada o flotas personalizadas: respondemos en 2 días laborables.'
+  description: 'Solicite un presupuesto detallado para su proyecto de SUP inflable. Fabricación OEM/ODM, marca privada o flotas personalizadas: respondemos en 2 días laborables.'
   keywords:
     - 'solicitar presupuesto de SUP'
     - 'presupuesto OEM paddle surf'
@@ -24,7 +24,7 @@ steps2_process:
       description: Recibe un presupuesto detallado con precios, MOQ, plazos, condiciones de pago y envío. Generalmente en 48 horas.
       icon: tabler:currency-dollar
     - title: 'Paso 4: Muestra y Producción'
-      description: Tras la aceptación del presupuesto, procedemos a la producción de muestras o directamen
+      description: Tras la aceptación del presupuesto, procedemos a la producción de muestras o directamente a la producción en serie. Actualizaciones regulares durante todo el proceso.
       icon: tabler:building-factory
 content_form:
   tagline: Formulario de Cotización
@@ -52,10 +52,8 @@ content_form:
         - Pesca
         - Turismo Marino / Resort
         - Búsqueda y rescate
-        - Lancha auxiliar de yate
-        - Barco de trabajo comercial
         - Gobierno / Militar
-        - Fabricante de equipo original / Marca privada
+        - OEM / Marca privada
         - Personal / Recreativo
         - Otros
     - name: Cantidad
@@ -72,12 +70,11 @@ content_form:
       options:
         - Sin preferencia
         - PVC de grado marino (1100 dtex)
-        - Hypalon / CSM Premium
         - Casco de fibra de vidrio
         - Casco de aluminio
     - name: Requisito de motor
       type: text
-      placeholder: p. ej. motor fuera de borda de 60 HP, sin motor, doble 115 HP
+      placeholder: p. ej. configuración de remo estándar, bomba eléctrica, colores personalizados
     - name: Personalización requerida
       type: text
       placeholder: por ejemplo, colores personalizados, marca/logotipo, embalaje, accesorios especiales

@@ -24,7 +24,7 @@ export const evidenceMetaDa: EvidenceMetaMap = {
   'search-rescue-sup-fleet': {
     title: 'Maritim myndighed i Sydøstasien — Patrulje- og rednings-SUP-flåde | Afarer',
     description:
-      "En offentlig maritim myndighed krævede 20 patrulje- og rednings-SUP'er med brandsikkert Hypalon-stof, integrerede kommunikationsbeslag og overensstemmelse med SOLAS kapitel III.",
+      "En offentlig maritim myndighed krævede 20 patrulje- og rednings-SUP'er med højtsynlige dæk, integrerede kommunikationsbeslag og CE-certificeret konstruktion.",
   },
   'european-dtc-ecommerce': {
     title: 'Europæisk DTC-vandsportsbrand — Brand-SUP + tilbehørslinje | Afarer',
@@ -52,7 +52,7 @@ export const evidenceMetaDa: EvidenceMetaMap = {
       'En canadisk forhandler med 25 butikker krævede en eksklusiv SUP-serie med eget brand med tosproget fransk/engelsk emballage, koldvejrsspecifikationer og canadiske bådforskrifter.',
   },
   'middle-east-distributor': {
-    title: 'Vandsportsdistributør i Mellemøsten — Hele produktlinjen — SUP, både, tilbehør | Afarer',
+    title: 'Vandsportsdistributør i Mellemøsten — Hele produktlinjen — SUP og tilbehør | Afarer',
     description:
       'En GCC-baseret distributør ønskede eksklusive rettigheder til hele Afarer-produktlinjen i 6 Golfstater med arabisk emballage, varmebestandige materialspecifikationer og sharia-kompatible garantibetingelser.',
   },
@@ -75,11 +75,6 @@ export const evidenceMetaDa: EvidenceMetaMap = {
     title: 'Britisk universitetssportsforbund — Studenterklubflåde — SUP + sikkerhed | Afarer',
     description:
       "Et britisk universitet med en aktiv vandsportsklub skulle udskifte en aldrende flåde med moderne oppustelige SUP'er: begrænset campuslagring, brugervenlighed for alle niveauer og BUCS-standarder.",
-  },
-  'humanitarian-aid-project': {
-    title: 'International humanitær organisation — Rednings- og nødhjælpsgummibåde | Afarer',
-    description:
-      'En international humanitær organisation havde brug for 50 robuste gummibåde til redningsoperationer ved oversvømmelser i Sydøstasien: lette til helikoptertransport og reparerbare i felten.',
   },
   'cruise-line-activity-program': {
     title: 'Karibisk krydstogtselskab — Flåde til ombordaktiviteter — SUP | Afarer',

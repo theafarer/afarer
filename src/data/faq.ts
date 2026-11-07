@@ -181,9 +181,9 @@ export const faqs: FaqRecord[] = [
   },
   {
     id: 'material-difference',
-    question: 'What is the difference between PVC and Hypalon?',
+    question: 'What is the difference between single-layer and multi-layer PVC SUPs?',
     answer:
-      'PVC is lightweight, affordable, and easy to repair with the included patch kit. Military-grade PVC with UV-resistant coating offers the best balance of durability and weight for recreational SUP use. afarer uses triple-layer laminated PVC across all product tiers.',
+      'Single-layer PVC boards are lightweight and budget-friendly but less rigid at high pressure. Double-layer and fusion-laminated constructions add stiffness, puncture resistance, and longevity. Military-grade PVC with UV-resistant coating offers the best balance of durability and weight for recreational SUP use. afarer uses triple-layer laminated PVC across all product tiers.',
     category: 'product',
     relatedProducts: [],
     relatedGuides: [],
@@ -333,15 +333,6 @@ export const faqs: FaqRecord[] = [
     relatedGuides: ['inflatable-sup-vs-hard-board', 'how-to-choose-inflatable-sup'],
   },
   {
-    id: 'pvc-vs-hypalon-boats',
-    question: 'PVC vs Hypalon inflatable boats: which material is better?',
-    answer:
-      'PVC is lighter, more affordable, easier to repair, and resists UV degradation when using military-grade formulations. Hypalon (CSM) offers superior chemical and abrasion resistance for commercial/military use but is heavier, more expensive, and harder to repair. For recreational boaters, afarer triple-layer military-grade PVC with UV-resistant coating offers the best balance of weight, durability, and cost. For professional/commercial operators requiring maximum durability, Hypalon is recommended.',
-    category: 'product',
-    relatedProducts: [],
-    relatedGuides: ['pvc-vs-hypalon-boats', 'how-long-inflatable-boats-last'],
-  },
-  {
     id: 'sup-skill-progression',
     question: 'What is the typical SUP skill progression from beginner to advanced?',
     answer:
@@ -363,7 +354,7 @@ export const faqs: FaqRecord[] = [
     id: 'sup-oem-process',
     question: 'What is the OEM manufacturing process for private label inflatable SUPs?',
     answer:
-      'The OEM process: 1) Specification and design brief — share target specs, CAD drawings, or reference product. 2) 3D mold prototyping — custom aluminum and composite molds designed in-house. 3) Material selection and sample — military-grade PVC or Hypalon with custom colors and logo placement. 4) CE factory audit and compliance — every order includes CE declaration, ISO 9001 traceability, BSCI report. 5) Bulk production with 100-point QC checklist. 6) FOB Qingdao shipping with full export documentation. Lead time 30-45 days, MOQ 50 units (standard SUP).',
+      'The OEM process: 1) Specification and design brief — share target specs, CAD drawings, or reference product. 2) 3D mold prototyping — custom aluminum and composite molds designed in-house. 3) Material selection and sample — military-grade PVC with custom colors and logo placement. 4) CE factory audit and compliance — every order includes CE declaration, ISO 9001 traceability, BSCI report. 5) Bulk production with 100-point QC checklist. 6) FOB Qingdao shipping with full export documentation. Lead time 30-45 days, MOQ 50 units (standard SUP).',
     category: 'ordering',
     relatedProducts: [],
     relatedGuides: [],
@@ -400,7 +391,7 @@ export const faqs: FaqRecord[] = [
     id: 'b2b-moq',
     question: 'What is the minimum order quantity for OEM/ODM SUP production?',
     answer:
-      'Minimum order quantities (MOQ) vary by product type. Stock model custom branding: 50 units per SKU. Custom shape mold development: 200–500 units per model (first order). Mold sharing programs available from 50 units. Hypalon boat production: 20–50 units depending on size. Accessories and PFDs: 500–1000 units per design. Contact our OEM team with your projected volume for precise MOQ and pricing.',
+      'Minimum order quantities (MOQ) vary by product type. Stock model custom branding: 50 units per SKU. Custom shape mold development: 200–500 units per model (first order). Mold sharing programs available from 50 units. Accessories and PFDs: 500–1000 units per design. Contact our OEM team with your projected volume for precise MOQ and pricing.',
     category: 'b2b',
     relatedProducts: [],
     relatedGuides: [],
@@ -418,7 +409,7 @@ export const faqs: FaqRecord[] = [
     id: 'b2b-certification',
     question: 'What certifications do Afarer OEM products carry?',
     answer:
-      'All Afarer OEM/ODM products carry: CE declaration of conformity (EU market), UKCA (UK market), ISO 9001:2015 quality management system, BSCI social compliance audit, REACH and RoHS material compliance, EN ISO 25649 classification for inflatable boats. Additional certifications available on request: US Coast Guard compliance documentation, military standard testing (MIL-STD-810), and destination country import certification support.',
+      'All Afarer OEM/ODM products carry: CE declaration of conformity (EU market), UKCA (UK market), ISO 9001:2015 quality management system, BSCI social compliance audit, REACH and RoHS material compliance, EN ISO 25649 classification for inflatable SUP boards. Additional certifications available on request: US Coast Guard compliance documentation, military standard testing (MIL-STD-810), and destination country import certification support.',
     category: 'b2b',
     relatedProducts: [],
     relatedGuides: [],

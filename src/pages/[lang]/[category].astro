@@ -27,7 +27,7 @@ if (!activeCategory) {
   return Astro.redirect('/' + lang + '/404');
 }
 
-const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || getUiForLang('en')?.[key] || '';
 const categoryKey = (cat: string) =>
   ({ INFLATABLE: 'inflatables', SUP: 'sups', ACCESSORY: 'accessories' })[cat] || cat.toLowerCase();
 const catName = t('home.category.' + (activeCategory || '')) || urlSlug || '';
@@ -37,7 +37,7 @@ const filteredProducts = localizedProducts.filter((p) => p.category.toLowerCase(
 
 const defaultVisuals: Record<string, string> = {
   'sup-explorer-11': 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-app-1-1200w.webp',
-  'airdeck-360': 'https://assets.afarer.com/images/afarer/products/afarer-inflatable-boat.webp',
+  'airdeck-360': 'https://assets.afarer.com/images/afarer/products/sup-series/sup-tropical-breeze-1-1200w.webp',
   'life-vest-classic': 'https://assets.afarer.com/images/afarer/products/afarer-life-vest-classic.webp',
   'life-vest-pro':
     'https://assets.afarer.com/images/afarer/products/life-jacket-afarer-inflatable-boat-afarer-factory-exterior.webp',

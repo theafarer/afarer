@@ -3539,7 +3539,7 @@ const pt: Record<string, SolutionOverride> = {
           description: 'Aumente o valor vitalício do cliente para além dos produtos tradicionais de surf',
           features: [
             'Coleção SUP insuflável incluindo modelos all-round, touring, yoga e para crianças',
-            'Coleção de botes insufláveis para recreio aquático em família',
+            'Coleção SUP especializada incluindo modelos de pesca, águas brancas e surf',
             'Acessórios aquáticos incluindo dry bags, capas impermeáveis, bombas e pagaias',
             'Ecossistema completo de estilo de vida aquático sob a sua marca de surf',
             'Oportunidades de venda cruzada aos clientes de surf existentes',
@@ -4255,7 +4255,7 @@ const pt: Record<string, SolutionOverride> = {
       {
         question: 'Quão compactas são as pranchas SUP da Afarer quando arrumadas para armazenagem em iates?',
         answer:
-          'As pranchas SUP portáteis de luxo da Afarer apresentam sistemas de dobragem compacta que reduzem significativamente o volume de armazenagem, cabendo facilmente em cabines de iate, compartimentos de arrumação, barcos tender e navios de expedição. Cada prancha é arrumada numa mochila de transporte com todos os acessórios.',
+          'As pranchas SUP portáteis de luxo da Afarer apresentam sistemas de dobragem compacta que reduzem significativamente o volume de armazenagem, cabendo facilmente em cabines de iate, compartimentos de arrumação e navios de expedição. Cada prancha é arrumada numa mochila de transporte com todos os acessórios.',
       },
       {
         question: 'As pranchas SUP da Afarer são resistentes à água salgada e aos danos UV?',

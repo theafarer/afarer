@@ -24,7 +24,7 @@ export const evidenceMetaCs: EvidenceMetaMap = {
   'search-rescue-sup-fleet': {
     title: 'Námořní agentura jihovýchodní Asie — flotila hlídkových a záchranných SUP | Afarer',
     description:
-      'Vládní námořní agentura vyžadovala 20 hlídkových a záchranných SUP s ohnivzdornou látkou Hypalon, integrovanými držáky komunikace a souladem se standardy SOLAS kapitola III.',
+      'Vládní námořní agentura vyžadovala 20 hlídkových a záchranných SUP s vysoce viditelnými palubami, integrovanými držáky komunikace a konstrukcí certifikovanou podle CE.',
   },
   'european-dtc-ecommerce': {
     title: 'Evropská DTC značka vodních sportů — značková řada SUP + příslušenství | Afarer',
@@ -54,7 +54,7 @@ export const evidenceMetaCs: EvidenceMetaMap = {
   },
   'middle-east-distributor': {
     title:
-      'Distributor vodních sportů na Blízkém východě — kompletní produktová řada — SUP, čluny, příslušenství | Afarer',
+      'Distributor vodních sportů na Blízkém východě — kompletní produktová řada — SUP a příslušenství | Afarer',
     description:
       'Distributor se sídlem v GCC usiloval o výhradní práva na kompletní produktovou řadu Afarer v 6 zemích Perského zálivu s arabským obalem, materiály odolnými proti teplu a zárukou v souladu se šaríou.',
   },
@@ -77,11 +77,6 @@ export const evidenceMetaCs: EvidenceMetaMap = {
     title: 'Britská univerzitní sportovní unie — studentská klubová flotila — SUP + bezpečnost | Afarer',
     description:
       'Britská univerzita s aktivním klubem vodních sportů musela nahradit stárnoucí flotilu moderními nafukovacími SUP: skladování v omezeném prostoru kampusu, použití pro všechny úrovně a standardy soutěží BUCS.',
-  },
-  'humanitarian-aid-project': {
-    title: 'Mezinárodní humanitární organizace — záchranné a pomocné nafukovací čluny | Afarer',
-    description:
-      'Mezinárodní humanitární organizace potřebovala 50 robustních nafukovacích člunů pro záchranné operace při povodních v jihovýchodní Asii: lehké pro přepravu helikoptérou a opravitelné v terénu.',
   },
   'cruise-line-activity-program': {
     title: 'Karibský operátor výletních lodí — flotila pro palubní aktivity — SUP | Afarer',

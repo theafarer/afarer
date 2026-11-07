@@ -1,6 +1,6 @@
 meta:
   title: 'Pyydä tarjous — OEM-SUP-valmistus | {SITE}'
-  description: 'Pyydä yksityiskohtainen tarjous täytettävästä SUP- tai veneprojektistasi. OEM/ODM-valmistus, omamerkki tai räätälöidyt kalustot — vastaamme 2 arkipäivässä.'
+  description: 'Pyydä yksityiskohtainen tarjous täytettävästä SUP-projektistasi. OEM/ODM-valmistus, omamerkki tai räätälöidyt kalustot — vastaamme 2 arkipäivässä.'
   keywords:
     - 'pyydä SUP-tarjous'
     - 'OEM paddle board -tarjous'
@@ -52,8 +52,6 @@ content_form:
         - Kalastus
         - Merimatkailu / lomakohteet
         - Etsintä ja pelastus
-        - Huviveneen apuvene
-        - Kaupallinen työvene
         - Julkinen hallinto / Puolustusvoimat
         - OEM / Omamerkki
         - Henkilökohtainen / virkistyskäyttö
@@ -72,12 +70,11 @@ content_form:
       options:
         - Ei suositusta
         - Meriluokan PVC (1100 dtex)
-        - Premium Hypalon / CSM
         - Lasikuidurunko
         - Alumiinirunko
     - name: Moottorivaatimus
       type: text
-      placeholder: esim. 60 HV ulko-ohjaus, ei moottoria, kaksois 115 HV
+      placeholder: esim. perusmelasarja, sähköpumppu, mukautetut värit
     - name: Vaadittu räätälöinti
       type: text
       placeholder: esim. mukautetut värit, brändäys/logo, pakkaus, erikoisvarusteet

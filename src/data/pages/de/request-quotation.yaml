@@ -1,6 +1,6 @@
 meta:
   title: 'Angebot anfordern — OEM-SUP-Fertigung | {SITE}'
-  description: 'Fordern Sie ein detailliertes Angebot für Ihr aufblasbares SUP oder Boot an. OEM/ODM-Fertigung, Eigenmarken oder kundenspezifische Flotten — Antwort in 2 Werktagen.'
+  description: 'Fordern Sie ein detailliertes Angebot für Ihr aufblasbares SUP-Projekt an. OEM/ODM-Fertigung, Eigenmarken oder kundenspezifische Flotten — Antwort in 2 Werktagen.'
   keywords:
     - 'SUP-Angebot anfordern'
     - 'OEM-Paddleboard-Angebot'
@@ -52,8 +52,6 @@ content_form:
         - Angeln
         - Marine Tourismus / Resort
         - Suche & Rettung
-        - Yachtbeiboot
-        - Gewerbliches Arbeitsboot
         - Regierung / Militär
         - OEM / Eigenmarke
         - Persönlich / Freizeit
@@ -72,12 +70,11 @@ content_form:
       options:
         - Keine Präferenz
         - Marine-PVC (1100 dtex)
-        - Premium-Hypalon / CSM
         - GFK-Rumpf
         - Aluminium-Rumpf
     - name: Motoranforderung
       type: text
-      placeholder: z. B. 60-PS-Außenborder, kein Motor, zwei 115-PS-Motoren
+      placeholder: z. B. Standard-Paddel-Ausrüstung, elektrische Pumpe, individuelle Farben
     - name: Erforderliche Anpassungen
       type: text
       placeholder: z. B. individuelle Farben, Marken-/Logoanpassung, Verpackung, spezielle Armaturen

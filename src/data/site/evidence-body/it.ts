@@ -276,31 +276,6 @@ export const bodyOverrides: EvidenceBodyMap = {
       },
     ],
   },
-  'humanitarian-aid-project': {
-    client: 'Organizzazione umanitaria internazionale',
-    product: 'Barche gonfiabili di soccorso e assistenza',
-    industry: 'NGO / Aiuto umanitario',
-    challenge:
-      "Un'organizzazione umanitaria internazionale necessitava di 50 barche gonfiabili robuste per operazioni di soccorso durante le inondazioni nel Sud-est asiatico: leggere per il trasporto in elicottero e riparabili sul campo.",
-    solution:
-      'Abbiamo prodotto 50 imbarcazioni gonfiabili rinforzate con fondo ad autosvuotamento, ridondanza multicomparto e sagole di presa perimetrali, fornito kit di riparazione da campo con istruzioni illustrate e addestrato 20 tecnici locali.',
-    result:
-      '50 imbarcazioni schierate in 3 regioni a rischio alluvioni. Utilizzate in 12 grandi operazioni di soccorso nei primi 6 mesi. 0 guasti alle attrezzature segnalati.',
-    outcomeMetrics: [
-      {
-        label: 'Imbarcazioni schierate',
-        value: '50',
-      },
-      {
-        label: 'Operazioni di soccorso',
-        value: '12',
-      },
-      {
-        label: 'Tasso di guasto',
-        value: '0%',
-      },
-    ],
-  },
   'japanese-brand-launch': {
     client: 'Brand lifestyle giapponese',
     product: 'Linea SUP co-branding',
@@ -456,9 +431,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Flotta SUP di pattugliamento e soccorso',
     industry: 'Pubblico / Sicurezza marittima',
     challenge:
-      "Un'agenzia marittima governativa richiedeva 20 SUP di pattugliamento e soccorso con tessuto Hypalon antincendio, supporti per comunicazioni integrati e conformità agli standard SOLAS capitolo III.",
+      "Un'agenzia marittima governativa richiedeva 20 SUP da pattugliamento e soccorso con coperte ad alta visibilità, supporti di comunicazione integrati e costruzione certificata CE.",
     solution:
-      'Abbiamo prodotto 20 SUP con tubi in CSM Hypalon, D-ring ad alta resistenza e pacchetti di luci di navigazione preinstallati. Il team di ispezione della fabbrica ha assistito alle prove in mare. È stato fornito il pacchetto completo di documentazione SOLAS.',
+      "Abbiamo prodotto 20 SUP con costruzione in PVC di grado militare, anelli D pesanti e kit di luci di navigazione preinstallati. Il team di ispezione dello stabilimento ha assistito alle prove in mare. Fornito pacchetto completo di documentazione di conformità.",
     result:
       'Contratto consegnato in 4 mesi. Flotta schierata per pattugliamento di frontiera, ricerca e soccorso e risposta ai disastri su 3 basi regionali.',
     outcomeMetrics: [

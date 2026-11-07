@@ -752,7 +752,7 @@ const solutions: BizSolution[] = [
           description: 'Increase customer lifetime value beyond traditional surf products',
           features: [
             'Inflatable SUP collection including all-round, touring, yoga, and kids models',
-            'Inflatable dinghy collection for family water recreation',
+            'Specialty SUP collection including fishing, whitewater, and surf models',
             'Water accessories including dry bags, waterproof cases, pumps, and paddles',
             'Complete water lifestyle ecosystem under your surf brand',
             'Cross-selling opportunities to existing surf customers',
@@ -3701,7 +3701,7 @@ const solutions: BizSolution[] = [
       {
         question: 'How compact are Afarer SUP boards when packed for yacht storage?',
         answer:
-          'Afarer luxury portable SUP boards feature compact folding systems that reduce storage volume significantly, fitting easily into yacht cabins, storage compartments, tender boats, and expedition vessels. Each board packs into a carry backpack with all accessories.',
+          'Afarer luxury portable SUP boards feature compact folding systems that reduce storage volume significantly, fitting easily into yacht cabins, storage compartments, and expedition vessels. Each board packs into a carry backpack with all accessories.',
       },
       {
         question: 'Are Afarer SUP boards resistant to saltwater and UV damage?',

@@ -1,6 +1,6 @@
 meta:
   title: 'Richiedi un Preventivo — Produzione OEM di SUP | {SITE}'
-  description: 'Richiedi un preventivo dettagliato per il tuo progetto di SUP gonfiabile o barca. Produzione OEM/ODM, marchio privato o flotte personalizzate: rispondiamo entro 2 giorni lavorativi.'
+  description: 'Richiedi un preventivo dettagliato per il tuo progetto di SUP gonfiabile. Produzione OEM/ODM, marchio privato o flotte personalizzate: rispondiamo entro 2 giorni lavorativi.'
   keywords:
     - 'richiedere preventivo SUP'
     - 'preventivo OEM paddle board'
@@ -52,8 +52,6 @@ content_form:
         - Pesca
         - Turismo Marino / Resort
         - Ricerca e soccorso
-        - Gommone da yacht
-        - Imbarcazione da lavoro commerciale
         - Governo / Militare
         - OEM / Etichetta Privata
         - Personale / Ricreativo
@@ -72,12 +70,11 @@ content_form:
       options:
         - Nessuna preferenza
         - PVC di grado marina (1100 dtex)
-        - Hypalon / CSM Premium
         - Scafo in vetroresina
         - Scafo in alluminio
     - name: Requisiti motore
       type: text
-      placeholder: es. fuoribordo 60 CV, senza motore, doppio 115 CV
+      placeholder: es. setup pagaia standard, pompa elettrica, colori personalizzati
     - name: Personalizzazione richiesta
       type: text
       placeholder: ad esempio colori personalizzati, marchio/logo, confezionamento, accessori speciali

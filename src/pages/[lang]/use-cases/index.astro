@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
-const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || getUiForLang('en')?.[key] || '';
 
 const d = pageContentData[`${lang}/site-use-cases`] || pageContentData['en/site-use-cases'] || {};
 const yamlCases: any[] = d.cases ?? [];
@@ -23,11 +23,7 @@ const caseSlugMap: Record<string, string> = { family: 'family-recreation', outdo
 
 const staticUseCases = [
   { id: 'tourism-recreation', title: t('useCase.tourismRecreation'), desc: t('useCase.tourismRecreation.desc') },
-  { id: 'search-and-rescue', title: t('useCase.searchAndRescue'), desc: t('useCase.searchAndRescue.desc') },
-  { id: 'maritime-safety-defense', title: t('useCase.maritimeSafety'), desc: t('useCase.maritimeSafety.desc') },
   { id: 'fishing', title: t('useCase.fishing'), desc: t('useCase.fishing.desc') },
-  { id: 'disaster-relief', title: t('useCase.disasterRelief'), desc: t('useCase.disasterRelief.desc') },
-  { id: 'commercial-workboats', title: t('useCase.commercialWorkboats'), desc: t('useCase.commercialWorkboats.desc') },
 ];
 
 const allUseCases = [
@@ -42,15 +38,7 @@ const allUseCases = [
     image:
       s.id === 'tourism-recreation'
         ? 'https://assets.afarer.com/images/afarer/use-cases/afarer-professional-use-case.webp'
-        : s.id === 'search-and-rescue'
-          ? 'https://assets.afarer.com/images/afarer/categories/afarer-rescue-operations.webp'
-          : s.id === 'maritime-safety-defense'
-            ? 'https://assets.afarer.com/images/afarer/hero/hero-5.webp'
-            : s.id === 'fishing'
-              ? 'https://assets.afarer.com/images/afarer/products/afarer-inflatable-boat.webp'
-              : s.id === 'disaster-relief'
-                ? 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp'
-                : 'https://assets.afarer.com/images/afarer/factory/afarer-stock-boat-inventory.webp',
+        : 'https://assets.afarer.com/images/afarer/products/sup-series/sup-tropical-breeze-1-1200w.webp',
   })),
 ];
 

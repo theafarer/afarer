@@ -276,31 +276,6 @@ export const bodyOverrides: EvidenceBodyMap = {
       },
     ],
   },
-  'humanitarian-aid-project': {
-    client: 'Mezinárodní humanitární organizace',
-    product: 'záchranné a pomocné nafukovací čluny',
-    industry: 'NGO / Humanitární pomoc',
-    challenge:
-      'Mezinárodní humanitární organizace potřebovala 50 robustních nafukovacích člunů pro záchranné operace při povodních v jihovýchodní Asii: lehké pro přepravu helikoptérou a opravitelné v terénu.',
-    solution:
-      'Vyrobili 50 zesílených nafukovacích člunů se samoodtokovými dny, redundancí více komor a úchytovými lany po obvodu. Dodali polní opravárenské sady s piktrogramovými instrukcemi. Vytrénovali 20 místních techniků.',
-    result:
-      '50 člunů nasazeno ve 3 regionech ohrožených záplavami. Použito při 12 velkých záchranných operacích v prvních 6 měsících. 0 hlášených poruch vybavení.',
-    outcomeMetrics: [
-      {
-        label: 'Nasazené čluny',
-        value: '50',
-      },
-      {
-        label: 'Záchranné operace',
-        value: '12',
-      },
-      {
-        label: 'Míra poruch',
-        value: '0%',
-      },
-    ],
-  },
   'japanese-brand-launch': {
     client: 'Japonská lifestyle značka',
     product: 'co-brandingová řada SUP',
@@ -456,9 +431,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'flotila hlídkových a záchranných SUP',
     industry: 'Veřejný sektor / Námořní bezpečnost',
     challenge:
-      'Vládní námořní agentura vyžadovala 20 hlídkových a záchranných SUP s ohnivzdornou látkou Hypalon, integrovanými držáky komunikace a souladem se standardy SOLAS kapitola III.',
+      "Vládní námořní agentura požadovala 20 hlídkových a záchranných SUP prken s dobře viditelnými palubami, integrovanými držáky komunikačního vybavení a konstrukcí certifikovanou podle CE.",
     solution:
-      'Vyrobili 20 SUP s trubkami z CSM Hypalonu, těžkými D-kruhy a předinstalovanými sestavami navigačních světel. Inspekční tým továrny byl přítomen při námořních zkouškách. Byl dodán kompletní balíček dokumentace SOLAS.',
+      "Vyrobili jsme 20 SUP prkek s konstrukcí z PVC vojenské kvality, těžkými D-kruhy a předinstalovanými navigačními světly. Inspekční tým závodu byl přítomen námořním zkouškám. Byl dodán kompletní balík dokumentace o shodě.",
     result:
       'Smlouva dodána za 4 měsíce. Flotila nasazena k hlídkování hranic, pátrání a záchranye a pomoci při katastrofách na 3 regionálních základnách.',
     outcomeMetrics: [

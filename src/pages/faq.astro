@@ -12,7 +12,7 @@ import { getUiForLang } from '~/i18n/generated/ui-all';
 
 const lang = Astro.locals.lang;
 
-const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || getUiForLang('en')?.[key] || '';
 
 const metadata = {
   title: `FAQ — ${SITE.name}`,

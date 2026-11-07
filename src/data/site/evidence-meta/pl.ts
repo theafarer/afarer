@@ -24,7 +24,7 @@ export const evidenceMetaPl: EvidenceMetaMap = {
   'search-rescue-sup-fleet': {
     title: 'Morska agencja Azji Południowo-Wschodniej — flota patrolowo-ratownicza SUP | Afarer',
     description:
-      'Rządowa agencja morska wymagała 20 patrolowo-ratowniczych SUP z ognioodporną tkaniną Hypalon, zintegrowanymi mocowaniami komunikacyjnymi i zgodnością ze standardami SOLAS rozdział III.',
+      'Rządowa agencja morska wymagała 20 patrolowo-ratowniczych SUP z pokładami o wysokiej widoczności, zintegrowanymi mocowaniami komunikacyjnymi i konstrukcją certyfikowaną przez CE.',
   },
   'european-dtc-ecommerce': {
     title: 'Europejska marka DTC sportów wodnych — markowa linia SUP + akcesoria | Afarer',
@@ -53,7 +53,7 @@ export const evidenceMetaPl: EvidenceMetaMap = {
       'Kanadyjski sprzedawca z 25 sklepami wymagał ekskluzywnej gamy SUP marki własnej z dwujęzycznym opakowaniem francuski/angielski, specyfikacją na mrozy i zgodnością z kanadyjskimi przepisami żeglugowymi.',
   },
   'middle-east-distributor': {
-    title: 'Dystrybutor sportów wodnych na Bliskim Wschodzie — pełna linia produktów — SUP, łodzie, akcesoria | Afarer',
+    title: 'Dystrybutor sportów wodnych na Bliskim Wschodzie — pełna linia produktów — SUP i akcesoria | Afarer',
     description:
       'Dystrybutor z regionu GCC chciał wyłącznych praw do pełnej linii Afarer w 6 krajach Zatoki, z arabskim opakowaniem, specyfikacją materiałów odpornych na ciepło i gwarancją zgodną z szariatem.',
   },
@@ -76,11 +76,6 @@ export const evidenceMetaPl: EvidenceMetaMap = {
     title: 'Brytyjski związek sportów akademickich — flota klubu studenckiego — SUP + bezpieczeństwo | Afarer',
     description:
       'Brytyjski uniwersytet z aktywnym klubem sportów wodnych musiał wymienić starzejącą się flotę na nowoczesne pompowane SUP: przechowywanie w ograniczonej przestrzeni kampusu, użyteczność na każdym poziomie i standardy BUCS.',
-  },
-  'humanitarian-aid-project': {
-    title: 'Międzynarodowa organizacja humanitarna — łodzie ratownicze i pomocowe | Afarer',
-    description:
-      'Międzynarodowa organizacja humanitarna potrzebowała 50 wytrzymałych łodzi pompowanych do akcji ratowniczych podczas powodzi w Azji Południowo-Wschodniej: lekkie do transportu helikopterem i naprawialne w terenie.',
   },
   'cruise-line-activity-program': {
     title: 'Karaibski operator rejsów — flota aktywności pokładowych — SUP | Afarer',

@@ -1,16 +1,16 @@
 meta:
-  title: Prototypeverksted — fullskala båd-prototyping og havforsøk | {SITE}
-  description: Fra CAD til sjøklar båt på 8–12 uker. Vårt prototypleverbygger, rigger og gjennomfører sjøforsøk med tilpassede gummibåter. Start ditt prototypeprosjekt i dag.
+  title: Prototypeverksted — fullskala SUP-prototyping og sjøforsøk | {SITE}
+  description: Fra CAD til vannklart brett på 8–12 uker. Vårt prototypverksted bygger, rigger og gjennomfører sjøforsøk med tilpassede oppblåsbare SUP-er. Start ditt prototypeprosjekt i dag.
 back_text: Tilbake til FoU-senteret
 home_label: Hjem
 hero:
   tagline: Lab 05
   title: Prototypverksted
-  subtitle: Fra CAD-modell til sjøklar båt — bygget, utrustet og bevist
+  subtitle: Fra CAD-modell til vannklart brett — bygget, utrustet og bevist
   image: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp
-  image_alt: Afarers prototypverksted båtproduksjon
+  image_alt: Afarers prototypverksted brettfremstilling
 intro: >-
-  En CAD-modell, uansett hvor detaljert, kan ikke avsløre hvordan en båt faktisk oppfører seg på vannet. Derfor er vårt prototypverksted utformet for å overføre ingeniørdata til et fysisk, sjøgående fartøy så raskt og nøyaktig som mulig. Hver ny Afarer-modell – og hvert betydelig tilpasset bygg
+  En CAD-modell, uansett hvor detaljert, kan ikke avsløre hvordan et brett faktisk oppfører seg før det møter vannet. Derfor er vårt prototypverksted utformet for å overføre ingeniørdata til et fysisk, vannklart brett så raskt og nøyaktig som mulig. Hver ny Afarer-modell – og hvert betydelig tilpasset bygg
   – gjennomgår dette verkstedet før produksjonsverktøyet fastsettes.
 content_html: >
   <h2>Der design blir til virkelighet</h2>
@@ -24,10 +24,10 @@ content_html: >
   <table>
     <thead><tr><th>Arbeidsstasjon</th><th>Utstyr</th><th>Formål</th></tr></thead>
     <tbody>
-      <tr><td>Skrogfremstilling</td><td>Rotasjonsstøpeovn (HDPE), TIG-sveisebås (aluminium), håndlamineringsskrog (glassfiber)</td><td>Fullskala skrogproduksjon i alle tre materialtyper</td></tr>
-      <tr><td>Rørassemblasje</td><td>RF-sveise presse, varmluftstakkingsstasjon, oppblåsingstestutstyr</td><td>Fremstilling av fullstørrelses rørassemblasjer med alle skiller, kjegler og ventiler</td></tr>
-      <tr><td>Rigg &amp; utrustning</td><td>Motorløfter (500 kg), konsoll-mockup-ramme, hydraulisk slangepresse, elektrisk kabelskinne</td><td>Fullstendig utrustning: motor, styring, kontroller, drivstoffsystem, elektronikk, seter</td></tr>
-      <tr><td>Instrumenteringsrom</td><td>GPS-fartssensor, drivstoffmengdemåler, akselerometre, termoelementmatrise, datalogger</td><td>Installasjon og kalibrering av prøveinstrumentering for sjøforsøk</td></tr>
+      <tr><td>Skrogfremstilling</td><td>CNC-stoffkutter, varmelamineringspresse, drop-stitch-kjerneforberedelsesstasjon</td><td>Fullskala skrogproduksjon i alle tre konstruksjonstyper</td></tr>
+      <tr><td>Kant- &amp; kammermontering</td><td>RF-sveise presse, varmluftstakkingsstasjon, oppblåsingstestutstyr</td><td>Fremstilling av fullstørrelses kant- og kammerassemblasjer med alle skiller og ventiler</td></tr>
+      <tr><td>Rigg &amp; utrustning</td><td>Finneboksfræsejig, sveiseinnretninger for lastefester og håndtak, dekkpadskjærerstasjon</td><td>Fullstendig utrustning: finner, lastefester, leash-plugger, håndtak, dekkputer, ventiler</td></tr>
+      <tr><td>Instrumenteringsrom</td><td>GPS-fartssensor, trykktransdusere, akselerometre, termoelementmatrise, datalogger</td><td>Installasjon og kalibrering av sjøforsøksinstrumentering</td></tr>
     </tbody>
   </table>
 
@@ -36,10 +36,10 @@ content_html: >
 
   <ol>
     <li><strong>Overlevering fra ingeniørene</strong> — Designpakken (3D-modell, FEA-rapport, stykkliste, lamineringsskjema) blir formelt gjennomgått av verkstedlederen og prosjektingeniøren. Eventuelle produksjonsbekymringer bli flagget og løst før kuttingen begynner.</li>
-    <li><strong>Skrogproduksjon</strong> — Skroget bygges i henhold til ingeniørspesifikasjonen. For HDPE: rotasjonsstøpeprogrammet lastes fra Moldex3D-simuleringen. For aluminium: CNC-kuttede plater sveises i TIG-båsen i henhold til godkjent sveisekart. For glassfiber: lamineringsskjemaet følges lag for lag.</li>
-    <li><strong>Rørfremstilling</strong> — Stoffet kuttes ved hjelp av CNC-mønstermal, deretter RF-sveises til fullstørrelses kamre. Hvert kammer blåses opp til testtrykk og står i 24 timer for initial stabilisering.</li>
-    <li><strong>Assemblasje &amp; rigg</strong> — Skrog og rør monteres sammen. Motoren henges, styring og kontroller kobles til, drivstoffsystem installeres, og alle elektriske kretser kobles og verifiseres.</li>
-    <li><strong>Statiske tester</strong> — Før båten berører vann, gjennomgår den: flytethetskontroll (full last + 30 % reserve), drivstoffsystem trykktest, styresystem fullslag-syklustest, elektrisk jordingsbindelsetest.</li>
+    <li><strong>Skrogproduksjon</strong> — Skroget bygges i henhold til ingeniørspesifikasjonen. For enkeltplykonstruksjon: drop-stitch-kjernen laminereres med den spesifiserte PVC-huden. For dobbelplykonstruksjon: den ekstra huden påføres over baselaminatet før mønsteret kuttes. For fusjonskonstruksjon: lamineringsparameterne lastes fra det godkjente prosessarket og verifiseres på en prøvelapp.</li>
+    <li><strong>Kantfremstilling</strong> — Stoffet kuttes ved hjelp av CNC-mønstermal, deretter RF-sveises til fullstørrelses kanter og kamre. Hvert kammer blåses opp til testtrykk og står i 24 timer for initial stabilisering.</li>
+    <li><strong>Assemblasje &amp; rigg</strong> — Skrog og kanter monteres sammen. Finnebokser og lastefester monteres, leash-plugger og bærehåndtak installeres, oppblåsningsventilen momentstrammes, og dekkputen påføres og justeres.</li>
+    <li><strong>Statiske tester</strong> — Før brettet berører vann, gjennomgår det: flyteevnekontroll (full last + 30 % reserve), trykkholdtest av kamre, lekkasjetest av ventil, trekktest av håndtak og fester.</li>
     <li><strong>Sjøforsøksprogram</strong> — 20 timer med vannprøver, detaljert nedenfor.</li>
     <li><strong>Prototypgjennomgang</strong> — Et formelt godkjenningsmøte holdes med ingeniør-, produksjons- og kvalitetsteam. Eventuelle nødvendige designendringer dokumenteres og inkluderes i produksjonsfrigivelsen.</li>
   </ol>
@@ -50,31 +50,31 @@ content_html: >
     <div class="space-y-2 text-sm">
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 t</span>
-        <span class="flex-1">Havneamanøvrering — lavfartshåndtering, revers, fenderingssjekk</span>
+        <span class="flex-1">Vannglattilvenning — lavfartssporing, svinging, stillings- og trimkontroll</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">4 t</span>
-        <span class="flex-1">Fartøyforsøk — GPS-verifisert toppfart, cruisingfart, drivstofforbruk ved 3 RPM-punkter</span>
+        <span class="flex-1">Fartstest — GPS-verifisert toppfart, marsjfart, holdt tempo ved 3 taktfrekvenser</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 t</span>
-        <span class="flex-1">Svingetest — taktisk diameter, forskyvning og overføring ved 20 kn, babord og styrbord</span>
+        <span class="flex-1">Svingetest — pivot- og feiekastsvingeradius, brettrespons, babord og styrbord</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 t</span>
-        <span class="flex-1">Slammingtest — gjentatte turer gjennom 0,5–1,0 m sjø; akselerometer på roret base</span>
+        <span class="flex-1">Sjøgangstest — gjentatte turer gjennom 0,5–1,0 m sjøgang; akselerometer ved rytterposisjonen</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 t</span>
-        <span class="flex-1">Stabilitetstest — statisk krengningsvinkel med 4 mannskap + utstyr til styrbord, forskyvet last</span>
+        <span class="flex-1">Stabilitetstest — statisk krengningsvinkel med 4 ryttere med varierende vekt, forskyvet last mot styrbord</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">3 t</span>
-        <span class="flex-1">Utholdenhetsløp — 3 t kontinuerlig ved cruisingfart; temperaturmåling (motor, drivstoff, elektrisk)</span>
+        <span class="flex-1">Utholdenhetsløp — 3 t kontinuerlig i marsjtempo; overvåking av kammertrykk, kanttemperatur og ryttertretthet</span>
       </div>
       <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
         <span class="w-12 text-xs font-bold text-blue-600">2 t</span>
-        <span class="flex-1">Sluttinspeksjon — inspeksjon av alle systemer etter forsøket, stramme/sjekke alle fester, dokumentere funn</span>
+        <span class="flex-1">Sluttinspeksjon — inspeksjon av alle komponenter etter forsøket, stramme/sjekke alle fester, dokumentere funn</span>
       </div>
     </div>
   </div>
@@ -82,29 +82,29 @@ content_html: >
 
   <h2>Skreddersydd prototyping for unike bruksområder</h2>
 
-  <p>Prototypverkstedet er der vi løser problemene som standard produksjonsbåter ikke kan adressere. Nylige eksempler inkluderer:</p>
+  <p>Prototypverkstedet er der vi løser problemene som standard produksjonsbrett ikke kan adressere. Nylige eksempler inkluderer:</p>
 
   <ul>
-    <li>En 7,8 m redningsbåt for en redningsorganisasjon, som krever en skreddersydd kabinstruktur med veltevern, integrerte bårestefeste og en baugmontert sonarkapsel — alt prototypet, montert og testet ved vårt anlegg.</li>
-    <li>En 5,2 m oppblåsbar for en hydrografisk målingstjenesteleverandør, med avkortet hekk, avtakbar instrumentmast og gjennom-skrog transducerlommer designet for å minimere strømforstyrrelser.</li>
-    <li>En elektrisk drevet 4,5 m tender for en superyacht, der prototypen ble brukt til å validere rekkevidde, ladeinfrastruktur og støynivåer før kunden forpliktet seg til en flåte på fire.</li>
+    <li>Et høysynlig rednings-SUP for en søk- og redningsorganisasjon, som krever integrerte gripehåndtak, utstyrsfester for redningsutstyr og et skrog med høyt oppdrift for personberging — alt prototypet, montert og testet ved vårt anlegg.</li>
+    <li>Et ekspedisjonstur-SUP for en hydrografisk oppmålingstjenesteleverandør, med avtakbar instrumentmast, forseglede utstyrsporter og et lavprofil transducerfeste designet for å minimere motstand.</li>
+    <li>Et kompakt fiske-SUP for en resortflåte, der prototypen ble brukt til å validere stabilitet, utstyrsrigging og holdbarhet under daglig utleiebruk før kunden forpliktet seg til en flåte på fire.</li>
   </ul>
 
 
   <h2>Vårt prototyping-team</h2>
 
-  <p>Verkstedet bemannes av marine teknikere med bred kompetanse, hver krysstrent i minst to av de tre kjernefagene (skrog, rør, rigg). Teamlederen er en mesterbåtbygger med 16 års erfaring som spenner fra skreddersydde enkeltbygg til produksjonsserier. Hver prototype tildeles en dedikert
+  <p>Verkstedet bemannes av åtte allround marine teknikere, hver krysstrent i minst to av de tre kjernefagene (skrog, kant, rigg). Teamlederen er en mesterfremstiller med 16 års erfaring som spenner fra skreddersydde enkeltbygg til produksjonsserier. Hver prototype tildeles en dedikert
   prosjektingeniør som fungerer som eneste kontaktpunkt for kunden gjennom hele bygge- og forsøksprosessen.</p>
 
 
   <h2>Kundens involvering</h2>
 
-  <p>Vi oppfordrer aktivt våre kunder til å delta på viktige milepæler under prototypbyggingen — spesielt den innledende utrustningsgjennomgangen og sjøforsøket. Deres driftstilbakemelding under disse fasene er uvurderlig for å finjustere båten før den går inn i produksjon. Vi bygger ikke i et
+  <p>Vi oppfordrer aktivt våre kunder til å delta på viktige milepæler under prototypbyggingen — spesielt den innledende utrustningsgjennomgangen og sjøforsøket. Deres driftstilbakemelding under disse fasene er uvurderlig for å finjustere brettet før det går inn i produksjon. Vi bygger ikke i et
   vakuum; vi bygger i partnerskap med dere.</p>
 
-  <p>Det 20-timers lange sjøforsøket er også en mulighet for deres team til å gjøre seg kjent med båtens håndtering, systemoppsett og vedlikeholdskrav, noe som sikrer en smidig overgang til tjeneste når produksjonsbåtene leveres.</p>
+  <p>Det 20-timers lange sjøforsøket er også en mulighet for deres team til å gjøre seg kjent med brettets håndtering, dekkoppsett og vedlikeholdskrav, noe som sikrer en smidig overgang til tjeneste når produksjonsbrettene leveres.</p>
 cta:
   title: Start ditt prototyp-prosjekt
-  subtitle: Fortell oss om båten du trenger, så foreslår vi en prototyputviklingsplan.
+  subtitle: Fortell oss om brettet du trenger, så foreslår vi en prototyputviklingsplan.
   button_text: Kontakt vårt prototyping-team
   button_link: /contact

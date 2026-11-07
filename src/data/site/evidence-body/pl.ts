@@ -276,31 +276,6 @@ export const bodyOverrides: EvidenceBodyMap = {
       },
     ],
   },
-  'humanitarian-aid-project': {
-    client: 'Międzynarodowa organizacja humanitarna',
-    product: 'łodzie ratownicze i pomocowe',
-    industry: 'NGO / Pomoc humanitarna',
-    challenge:
-      'Międzynarodowa organizacja humanitarna potrzebowała 50 wytrzymałych łodzi pompowanych do akcji ratowniczych podczas powodzi w Azji Południowo-Wschodniej: lekkie do transportu helikopterem i naprawialne w terenie.',
-    solution:
-      'Wyprodukowaliśmy 50 wzmocnionych łodzi dmuchanych z samoodpływającymi dnami, redundantnością wielokomorową i linami chwytowymi wzdłuż obrysu. Dostarczyliśmy zestawy naprawcze z instrukcjami obrazkowymi. Przeszkoliliśmy 20 lokalnych techników.',
-    result:
-      '50 łodzi wdrożonych w 3 regionach narażonych na powodzie. Wykorzystane w 12 dużych operacjach ratunkowych w pierwszych 6 miesiącach. 0 zgłoszonych awarii sprzętu.',
-    outcomeMetrics: [
-      {
-        label: 'Wdrożone łodzie',
-        value: '50',
-      },
-      {
-        label: 'Operacje ratunkowe',
-        value: '12',
-      },
-      {
-        label: 'Wskaźnik awarii',
-        value: '0%',
-      },
-    ],
-  },
   'japanese-brand-launch': {
     client: 'Japońska marka lifestyle',
     product: 'linia SUP co-branding',
@@ -456,9 +431,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'flota patrolowo-ratownicza SUP',
     industry: 'Sektor publiczny / Bezpieczeństwo morskie',
     challenge:
-      'Rządowa agencja morska wymagała 20 patrolowo-ratowniczych SUP z ognioodporną tkaniną Hypalon, zintegrowanymi mocowaniami komunikacyjnymi i zgodnością ze standardami SOLAS rozdział III.',
+      "Rządowa agencja morska wymagała 20 SUP-ów patrolowych i ratowniczych z pokładami o wysokiej widoczności, zintegrowanymi uchwytami na sprzęt łączności i konstrukcją certyfikowaną przez CE.",
     solution:
-      'Wyprodukowaliśmy 20 SUP z komorami z CSM Hypalonu, mocnymi uchwytami D-ring i preinstalowanymi zestawami świateł nawigacyjnych. Zespół inspekcyjny fabryki był obecny przy prób morskich. Dostarczono pełny pakiet dokumentacji SOLAS.',
+      "Wyprodukowaliśmy 20 SUP-ów z konstrukcją z PVC klasy wojskowej, mocnymi uchwytami D i fabrycznie zamontowanymi zestawami świateł nawigacyjnych. Zespół inspekcji fabryki był obecny podczas prób morskich. Dostarczono kompletny pakiet dokumentacji zgodności.",
     result:
       'Kontrakt zrealizowany w 4 miesiące. Flotylla wdrożona do patrolowania granic, poszukiwań i ratownictwa oraz reagowania na katastrofy na 3 regionalnych bazach.',
     outcomeMetrics: [

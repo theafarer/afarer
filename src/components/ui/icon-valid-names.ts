@@ -134,5 +134,6 @@ export const VALID_ICON_NAMES = new Set([
 
 export const BROKEN_ICON_NAMES = [
   "tabler:brand-",
+  "tabler:rowing",
   "tabler:waves",
 ];

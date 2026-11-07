@@ -1,6 +1,6 @@
 meta:
   title: Vasca di Prova Idrodinamica — Rimorchio di Modelli in Scala e Ottimizzazione dello Scafo | {SITE}
-  description: Valida le prestazioni del tuo scafo nel nostro bacino di prova idrodinamico. Rimorchio di modelli in scala, analisi del planing e test di efficienza del carburante. Prenota oggi una sessione di prova in vasca.
+  description: Valida le prestazioni del tuo scafo nel nostro bacino di prova idrodinamico. Rimorchio di modelli in scala, analisi del planing e test di efficienza di scivolamento. Prenota oggi una sessione di prova in vasca.
 back_text: Torna al Centro R&S
 home_label: Casa
 hero:
@@ -10,11 +10,11 @@ hero:
   image: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp
   image_alt: Test di prestazioni in vasca idrodinamica Afarer
 intro: >-
-  È un errore comune pensare che i test idrodinamici siano riservati alle navi oceaniche. In realtà, le prestazioni di uno scafo planante di piccole dimensioni — come un gommone da 4–6 m — dipendono altrettanto dalla sua forma subacquea quanto un petroliera dipende dal suo bulbo di prua. L'angolo di
-  trim, l'area bagnata, la generazione di spruzzi e la ventilazione influenzano in modo significativo velocità, consumo di carburante e comfort di navigazione. Presso Afarer, operiamo un bacino di prova idrodinamico dedicato che ci permette di quantificare questi effetti in scala modello —
-  prima di impegnare metallo e tessuto in un prototipo a grandezza naturale.
+  È un errore comune pensare che i test idrodinamici siano riservati alle navi oceaniche. In realtà, le prestazioni di uno scafo planante di piccole dimensioni — come un SUP gonfiabile — dipendono altrettanto dalla sua forma subacquea quanto un petroliera dipende dal suo bulbo di prua. L'angolo di
+  trim, l'area bagnata, la generazione di spruzzi e la ventilazione influenzano in modo significativo scivolamento, velocità e comfort di navigazione. Presso Afarer, operiamo un bacino di prova idrodinamico dedicato che ci permette di quantificare questi effetti in scala modello —
+  prima di impegnare tessuto e stampi in un prototipo a grandezza naturale.
 content_html: >
-  <h2>Perché testare in vasca una piccola imbarcazione?</h2>
+  <h2>Perché testare in vasca una tavola paddle?</h2>
 
   <p>Testare in scala di modello (in genere da 1:3 a 1:5) ci consente di iterare rapidamente e in modo economicamente vantaggioso le forme dello scafo. Una settimana in vasca può produrre gli stessi dati prestazionali che richiederebbero mesi di prove per tentativi ed errori a grandezza naturale — e
   a una frazione del costo.</p>
@@ -50,7 +50,7 @@ content_html: >
 
 
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Risultati tipici dei test in vasca — Resistenza vs velocità (scafo di battello di pattugliamento, scala 1:3.5)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Risultati tipici dei test in vasca — Resistenza vs velocità (scafo SUP da touring, scala 1:3.5)</p>
     <div class="space-y-2">
       <div class="flex items-center gap-2 text-xs">
         <span class="w-20">5 kn (1:1)</span>
@@ -95,13 +95,13 @@ content_html: >
         <span class="w-16 text-right">232 N</span>
       </div>
     </div>
-    <p class="text-xs text-gray-400 mt-2">Resistenza in scala di modello (N) alle velocità scalate secondo Froude. La previsione della potenza a grandezza naturale segue il metodo di previsione delle prestazioni ITTC-1978.</p>
+    <p class="text-xs text-gray-400 mt-2">Resistenza in scala di modello (N) alle velocità scalate secondo Froude. La previsione della resistenza a grandezza naturale segue il metodo di previsione delle prestazioni ITTC-1978.</p>
   </div>
 
 
   <h2>Team di esperti</h2>
 
-  <p>La nostra vasca è gestita da un idrodinamicista con dottorato in architettura navale e 8 anni di esperienza in vasche di traino presso un importante istituto di ricerca marittimo europeo. È supportato da un tecnico che prepara tutti i modelli e la strumentazione. Il team segue le Procedure
+  <p>La nostra vasca è gestita da un idrodinamicista con dottorato in fluidodinamica e 8 anni di esperienza in vasche di traino presso un importante istituto di ricerca marittimo europeo. È supportato da un tecnico che prepara tutti i modelli e la strumentazione. Il team segue le Procedure
   Raccomandate ITTC (International Towing Tank Conference) per garantire che ogni test sia ripetibile, tracciabile e difendibile a livello internazionale.</p>
 
 
@@ -111,19 +111,19 @@ content_html: >
 
   <ul>
     <li><strong>Confronto tra forme di scafo</strong> — Due o più forme di scafo candidate vengono testate in condizioni identiche, fornendo un confronto oggettivo in termini di resistenza/velocità/stabilità per supportare la scelta progettuale.</li>
-    <li><strong>Ottimizzazione degli appendici</strong> — Piastre interceptor, listelli paraspruzzo, flap di assetto e chiglie possono essere testati in varie configurazioni per quantificare il loro contributo individuale alla riduzione della resistenza.</li>
-    <li><strong>Studio di abbinamento del motore</strong> — I dati di resistenza vengono convertiti in una curva di previsione della potenza, consentendoti di selezionare la potenza ottimale del motore per la velocità e il carico utile desiderati.</li>
+    <li><strong>Ottimizzazione degli appendici</strong> — Configurazioni di pinne, profili dei longheroni e varianti di rocker possono essere testate in varie combinazioni per quantificare il loro contributo individuale alla riduzione della resistenza.</li>
+    <li><strong>Studio di efficienza di scivolamento</strong> — I dati di resistenza vengono convertiti in una curva di efficienza di scivolamento, consentendoti di bilanciare volume dello scafo, rocker e rigidità per la tua velocità di paddling e il carico utile di riferimento.</li>
   </ul>
 
 
   <h2>Perché testare con noi?</h2>
 
-  <p>Non ci limitiamo a fornirti un insieme di numeri grezzi. I nostri rapporti traducono i dati della vasca in raccomandazioni ingegneristiche concrete: "Alza il listello paraspruzzo di 8 mm per ridurre la superficie bagnata alla velocità di crociera", "Aumenta la deadrise allo specchio di poppa di
-  3° per ridurre l'accelerazione da slamming" oppure "Sposta il centro di gravità longitudinale di 150 mm verso poppa per migliorare l'assetto planante". Esci con una chiara comprensione di cosa modificare e perché.</p>
+  <p>Non ci limitiamo a fornirti un insieme di numeri grezzi. I nostri rapporti traducono i dati della vasca in raccomandazioni ingegneristiche concrete: "Aggiungi 8 mm di rocker di prua per ridurre la superficie bagnata al ritmo di crociera", "Riduci il rocker di poppa di 3° per estendere
+  la linea di galleggiamento al ritmo di touring" oppure "Sposta il punto di massima larghezza di 150 mm verso poppa per migliorare la direzionalità". Esci con una chiara comprensione di cosa modificare e perché.</p>
 
   <p>La nostra vasca è inoltre disponibile per test indipendenti di terze parti a pagamento. Se stai sviluppando uno scafo e desideri una valutazione idrodinamica imparziale ed eseguita professionalmente, la tua richiesta è benvenuta.</p>
 cta:
-  title: Prenota una sessione di prova del serbatoio
+  title: Prenota una sessione di prova in vasca
   subtitle: Che abbiate bisogno di un programma completo di sviluppo o di un singolo test comparativo, possiamo adattarci al vostro programma.
   button_text: Contatta il nostro team di idrodinamica
   button_link: /contact

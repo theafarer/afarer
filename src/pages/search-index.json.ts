@@ -40,7 +40,7 @@ const staticPages: { url: string; title: string; excerpt: string; tags: string[]
     url: '/technology',
     title: 'Technology',
     excerpt:
-      'afarer technology: drop-stitch core construction, military-grade PVC, fiberglass deep-V hulls, Hypalon tubes, and air deck floor systems.',
+      'afarer technology: drop-stitch core construction, military-grade PVC, fusion-laminated seams, and air deck floor systems.',
     tags: ['technology', 'drop-stitch', 'PVC', 'materials'],
   },
   {

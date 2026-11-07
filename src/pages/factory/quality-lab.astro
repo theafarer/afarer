@@ -5,13 +5,13 @@ import { SITE } from 'astrowind:config';
 
 const metadata = {
   title: `Quality Lab — Testing & Quality Assurance | ${SITE.name}`,
-  description: `Independent quality lab with ISO 9001 processes at ${SITE.name}: every unit tested before shipment to guarantee inflatable SUP and boat quality.`,
+  description: `Independent quality lab with ISO 9001 processes at ${SITE.name}: every unit tested before shipment to guarantee inflatable SUP quality.`,
 };
 
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Factory', href: '/factory' }, { name: 'Quality Lab' }];
 
 const highlights = [
-  { value: '100%', label: 'Units pressure-tested', detail: 'Every chamber, every boat' },
+  { value: '100%', label: 'Units pressure-tested', detail: 'Every chamber, every board' },
   { value: '48 h', label: 'Air retention test duration', detail: 'At 1.25× rated pressure' },
   { value: '&lt;5%', label: 'Max allowed pressure drop', detail: 'Over 24-hour hold period' },
   { value: 'AQL 2.5', label: 'Major defect threshold', detail: 'Per ISO 2859 sampling' },
@@ -21,7 +21,7 @@ const procedures = [
   {
     title: 'Raw Material Inspection',
     description:
-      'Every incoming batch of PVC, Hypalon, drop-stitch fabric, and hardware is tested before acceptance. Tensile strength (ASTM D751), tear resistance (ISO 4674), and UV resistance are verified. Non-conforming materials are quarantined and returned.',
+      'Every incoming batch of PVC, drop-stitch fabric, and hardware is tested before acceptance. Tensile strength (ASTM D751), tear resistance (ISO 4674), and UV resistance are verified. Non-conforming materials are quarantined and returned.',
     standards: 'ASTM D751 (tensile), ISO 4674 (tear), ISO 4892 (UV)',
   },
   {
@@ -34,12 +34,12 @@ const procedures = [
     title: '48-Hour Air Retention Test',
     description:
       'Every tube chamber is inflated to 125% of rated pressure and held for 48 hours. Pressure sensors log continuously with temperature compensation. Any chamber exceeding 5% pressure drop triggers automatic batch re-inspection.',
-    standards: 'ISO 6185, CE 2013/53/EU',
+    standards: 'EN ISO 25649, CE 2013/53/EU',
   },
   {
     title: 'Load & Balance Testing',
     description:
-      'Completed boats are tested at maximum rated capacity for stability, freeboard, and handling. Each vessel undergoes water testing before final inspection approval.',
+      'Completed boards are tested at maximum rated capacity for stability, stiffness, and handling. Each board undergoes water testing before final inspection approval.',
     standards: 'ISO 12217, CE 2013/53/EU',
   },
 ];
@@ -58,7 +58,7 @@ const labEquipment = [
 <Layout metadata={metadata} breadcrumbs={crumbs}>
   <meta
     name="ai-intent"
-    content="inflatable-boat-quality-control,marine-product-testing,iso-9001-boat-factory,ce-certification-testing"
+    content="inflatable-sup-quality-control,marine-product-testing,iso-9001-sup-factory,ce-certification-testing"
   />
   <JsonLd
     type="BreadcrumbList"
@@ -76,7 +76,7 @@ const labEquipment = [
   <section class="px-6 sm:px-6 pb-16 mx-auto max-w-4xl">
     <p class="text-muted leading-relaxed">
       {SITE.name} operates a dedicated quality control laboratory that operates independently from production. Every batch
-      of raw material and every finished boat passes through documented inspection protocols before release. Our QC team reports
+      of raw material and every finished board passes through documented inspection protocols before release. Our QC team reports
       directly to management, ensuring impartial quality decisions.
     </p>
   </section>

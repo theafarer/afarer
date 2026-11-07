@@ -3478,7 +3478,7 @@ const fi: Record<string, SolutionOverride> = {
           description: 'Kasvata asiakkaan elinkaariarvoa perinteisten surffituotteiden ulkopuolelle',
           features: [
             'Puhallettava SUP-kokoelma, mukaan lukien all-round-, touring-, jooga- ja lastenmallit',
-            'Puhallettava vene kokoelma perheiden vesivapaa-aikaan',
+            'Erikoistunut SUP-kokoelma, mukaan lukien kalastus-, koskimelonta- ja surffimallit',
             'Vesilisävarusteet, mukaan lukien kuivapussit, vedenkestävät kotelot, pumput ja melat',
             'Täydellinen vesielämäntapaekosysteemi surffibrändisi alla',
             'Ristiinmyyntimahdollisuudet olemassa oleville surffiasiakkaille',

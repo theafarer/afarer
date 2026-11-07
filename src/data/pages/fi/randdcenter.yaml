@@ -8,9 +8,9 @@ hero:
 intro:
   - >-
     afarerin Tutkimus- ja kehittämiskeskus (R&D) on voima, joka ajaa missiötämme vallankumouksellisesti muuttaa vesilajien välineitä. Autamme vesilajien harrastajia ympäri maailmaa tarjoamalla turvallisempia, mukavampia ja nautittavampia tuotteita jatkuvalla innovaatiolla ilmatäytettävien
-    SUP-lautojen ja venkeiden saralla. Innokas insinööri-, suunnittelija- ja asiantuntijatiimimme muotoilee alan tulevaisuutta ja nostaa jatkuvasti rimaa laadun, suorituskyvyn ja kestävyyden osalta.
+    SUP-lautojen saralla. Innokas insinööri-, suunnittelija- ja asiantuntijatiimimme muotoilee alan tulevaisuutta ja nostaa jatkuvasti rimaa laadun, suorituskyvyn ja kestävyyden osalta.
   - >-
-    Tuotekehityslaitoksemme kokoaa materiaalitiedemiehiä, laivanrakennusarkkitehteja ja tuotantoinsinöörejä saman katon alle. Kankaan koostumuksesta ja runkosimulaatiosta hitsausprosessin kehittämiseen ja täysmittaisiin meritestauksiin, jokainen tuotekehityksen vaihe on dataa ohjaama ja testausta
+    Tuotekehityslaitoksemme kokoaa materiaalitiedemiehiä, meri-insinöörejä ja tuotantoinsinöörejä saman katon alle. Kankaan koostumuksesta ja runkosimulaatiosta hitsausprosessin kehittämiseen ja täysmittaisiin meritestauksiin, jokainen tuotekehityksen vaihe on dataa ohjaama ja testausta
     vahvistama.
 mission:
   tagline: Meidän missiomme
@@ -33,7 +33,7 @@ pillars:
     desc: Uusien materiaalien, suunnittelujen ja valmistusprosessien edelläkävijä tuotteen erinomaisen suorituskyvyn ja pitkäikäisyyden varmistamiseksi.
     icon: tech
   - title: Edistyneet materiaalit
-    desc: Tutkimelemme edistyneintä PVC:ää, Hypalonia, komposiitteja ja kestäviä vaihtoehtoja tuotteiden parantamiseksi.
+    desc: Tutkimelemme edistyneintä PVC:ää, komposiitteja ja kestäviä vaihtoehtoja tuotteiden parantamiseksi.
     icon: materials
   - title: Kestävyys
     desc: 'Perussitoumus: Omistaudumme ympäristönvastuullisuuteen kestävän tuotannon ja kierrätettävien materiaalien avulla.'
@@ -45,7 +45,7 @@ capabilities:
   groups:
     - title: Materiaalitiede ja kangasteknologia
       items:
-        - PVC- ja Hypalon-formulaatioiden analyysi ja optimointi
+        - PVC-formulaatioiden analyysi ja optimointi
         - UV-stabiloinnin, palonsuojan ja antimikrobisten lisäaineiden kehitys
         - Monikerroskangan liimuman ja liimauksen insinööriotos
         - Kiikeytetty ikääntymistestaus (UV, lämpötila, kosteus, suolalöyly)
@@ -95,7 +95,7 @@ vision:
   tagline: Visioimme
   title: Vesiuheilun tulevaisuuden muovaaminen
   body: >-
-    afarer pyrkii johtamaan täytettävien veneiden ja SUP-lautojen toimialaa jatkuvan innovoinnin, horjumattoman laadun sekä lujan turvallisuus- ja kestävyyssitoumuksen kautta — rikastaen lopulta vesiliikuntaharrastajien kokemuksia maailmanlaajuisesti. Afarerin tutkimus- ja tuotekehityskeskus on
+    afarer pyrkii johtamaan täytettävien SUP-lautojen toimialaa jatkuvan innovoinnin, horjumattoman laadun sekä lujan turvallisuus- ja kestävyyssitoumuksen kautta — rikastaen lopulta vesiliikuntaharrastajien kokemuksia maailmanlaajuisesti. Afarerin tutkimus- ja tuotekehityskeskus on
     paikka, jossa intohimo kohtaa innovaation ja jossa asetetaan uusia standardeja vesiliikunta-alalle.
 labs_section:
   tagline: Laboratoriot
@@ -103,7 +103,7 @@ labs_section:
   labs:
     - image: https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp
       title: PVC-kangaslaboratorio
-      description: Jatkuva tutkimus ja testaus PVC- ja Hypalon-putkikangauksissa vetolujuuden, UV-säilyvyyden, kohoutuksen ja matalan lämpötilan joustavuuden takaamiseksi meriympäristössä.
+      description: Jatkuva tutkimus ja testaus PVC-kankauksissa vetolujuuden, UV-säilyvyyden, kohoutuksen ja matalan lämpötilan joustavuuden takaamiseksi meriympäristössä.
       href: /randdcenter/pvc-fabric-lab
     - image: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-2.webp
       title: Rungon suunnittelustudio
@@ -111,7 +111,7 @@ labs_section:
       href: /randdcenter/hull-engineering
     - image: https://assets.afarer.com/images/afarer/factory/afarer-sup-manufacturing-3.webp
       title: RF-hitsauskeskus
-      description: Oma radiotaajuushitsauslaitos tarkalla lämpötila- ja paineensäädöllä, joka tuottaa korkealujuuisia, tiiviitä liitoksia, jotka täyttävät ilmatäytteisiä veneitä koskevat meriteollisuuden standardit.
+      description: Oma radiotaajuushitsauslaitos tarkalla lämpötila- ja paineensäädöllä, joka tuottaa korkealujuuisia, tiiviitä liitoksia, jotka täyttävät ilmatäytteisiä vesikulkuneuvoja koskevat meriteollisuuden standardit.
       href: /randdcenter/rf-welding
     - image: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp
       title: Dynaaminen testiallas
@@ -123,5 +123,5 @@ labs_section:
       href: /randdcenter/prototype-workshop
     - image: https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp
       title: Laatu- ja tarkastuslaboratorio
-      description: Omistettu laadunvarmistuslaboratorio suorittaa venymätestaus, ilmanpidättesyklit, saumojen irrotustestit ja materiaalisertifikaation, joka varmistaa, että jokainen työpajalta lähtevä vene täyttää julkaistut erittelymme.
+      description: Omistettu laadunvarmistuslaboratorio suorittaa venymätestaus, ilmanpidättesyklit, saumojen irrotustestit ja materiaalisertifikaation, joka varmistaa, että jokainen työpajalta lähtevä lauta täyttää julkaistut erittelymme.
       href: /randdcenter/quality-inspection-lab

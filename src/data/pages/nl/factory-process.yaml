@@ -9,12 +9,12 @@ meta:
 hero:
   tagline: Proces
   title: Productieproces
-  subtitle: Van grondstof tot zeeklare boot — elke stap onder onze controle
+  subtitle: Van grondstof tot waterklare board — elke stap onder onze controle
   back_label: Terug naar de fabriek
   back_link: /factory
 intro: >-
   In tegenstelling tot merken die productie uitbesteden aan derden, bezit en beheert afarer zijn volledige productieketen. Deze verticale integratie stelt ons in staat om strikte kwaliteitscontrole te handhaven in elke fase, snel te reageren op maatwerkvereisten en consistente productkwaliteit te
-  leveren batch na batch. Zo wordt een boot gebouwd in onze fabriek.
+  leveren batch na batch. Zo wordt een board gebouwd in onze fabriek.
 steps:
   - step: '01'
     title: Ontvangst en inspectie van materialen
@@ -25,43 +25,36 @@ steps:
   - step: '02'
     title: Automatisch PVC-snijden
     description: >-
-      Goedgekeurde stoffen worden op de automatische CNC-snijmachine gelegd en gesneden met submillimeterprecisie. Computergeneste plaatsing rangschikt panelen om afval te minimaliseren — doorgaans minder dan 5%. Gesneden panelen worden gemarkeerd met bootmodel en kamer en verpakt voor transport naar
+      Goedgekeurde stoffen worden op de automatische CNC-snijmachine gelegd en gesneden met submillimeterprecisie. Computergeneste plaatsing rangschikt panelen om afval te minimaliseren — doorgaans minder dan 5%. Gesneden panelen worden gemarkeerd met boardmodel en kamer en verpakt voor transport naar
       de laswerkplaats.
-    duration: 2–4 uur per bootset
+    duration: 2–4 uur per boardset
   - step: '03'
     title: Buizen hechten en lassen
     description: >-
       Panelen worden gehecht en verbonden met heteluchtlassers  bij gecontroleerde temperaturen van 200–300 °C. Hoofdnaden worden versterkt met diëlektrisch RF-lassen voor luchtdichte, hoogsterke verbindingen. Voltooide kamers worden opgepompt tot 1,5× werkdruk voor een 30 minuten durende
       luchtdichtheidsvalidatie.
-    duration: 1–2 dagen per boot
+    duration: 1–2 dagen per board
   - step: '04'
-    title: SUP-glasvezelromp lamineren
-    description: >-
-      SUP-bootrompen worden geproduceerd met handmatig lamineren van glasvezel. Lagen glasvezelmat en weefsel worden handmatig gerold met polyester- of vinylesterhars in precisiematrijzen. Elke laag wordt vacuüm verpakt voor constante laminaatkwaliteit. De romp wordt afgewerkt met gelcoat voor een
-      hoogglanzend, UV-bestendig maritiem oppervlak.
-    duration: 2–4 dagen per romp
-  - step: '05'
     title: SUP-printen en decoratie
     description: SUP-dekgraphics worden aangebracht via digitaal printen voor fullcolour-, fotokwaliteitsontwerpen en zeefdruk voor duurzame logo's en herhalende patronen. Prints worden uitgehard en verzegeld voor UV- en slijtvastheid.
     duration: 1–2 dagen
-  - step: '06'
+  - step: '05'
     title: Eindmontage en uitrusting
     description: >-
-      Glasvezelrompen en PVC-buissamenstellingen worden samengevoegd op de assemblagelijn. De motor wordt gemonteerd, stuur- en besturingssystemen aangesloten, brandstofsysteem geïnstalleerd en volledige elektrische bedrading aangelegd. Elke boot doorloopt een 100-punts montagechecklist met
-      verplichte goedkeuring bij elke stap.
+      Boards worden op de assemblagelijn uitgerust met vinnen, ventielen, EVA-decks en accessoires. Elke eenheid doorloopt een 100-punts montagechecklist met verplichte goedkeuring bij elke stap.
     duration: 2–4 dagen
-  - step: '07'
+  - step: '06'
     title: Kwaliteitstesten en inspectie
     description: >-
-      Elke voltooide boot doorloopt een verplichte kwaliteitsgate: luchtdichtheidstest van kamers, functionele systeemcontrole, aandraaimomentcontrole van bevestigingsmiddelen en cosmetische inspectie. Maatwerk- en prototypeontwerpen ondergaan ook vaarproeven op het water voor snelheid, handling,
-      stabiliteit en uithoudingsvermogen.
+      Elke voltooide board doorloopt een verplichte kwaliteitsgate: luchtdichtheidstest van kamers, functionele systeemcontrole, aandraaimomentcontrole van bevestigingsmiddelen en cosmetische inspectie. Maatwerk- en prototypeontwerpen ondergaan ook proeven op het water voor stabiliteit en handling.
     duration: 1–2 dagen
-  - step: '08'
+  - step: '07'
     title: Verpakking en verzending
-    description: Boten worden leeggelaten, volgens procedure opgevouwen, verpakt in stevige stoffen of triplex tassen en geladen voor verzending. Elke verpakking wordt gemarkeerd met model, serienummer en bestemming. We coördineren FCL- en LCL-zendingen wereldwijd met vervoerders.
+    description: >-
+      Boards worden leeggelaten, volgens procedure opgevouwen, verpakt in stevige geweven tassen of triplex kratten en geladen voor verzending. Elke verpakking wordt gemarkeerd met model, serienummer en bestemming. We coördineren met expediteurs voor FCL- en LCL-containerzendingen wereldwijd.
     duration: 1 dag
 cta:
   title: Bekijk onze apparatuur en machines
-  desc: Ontdek de industriële apparatuur achter elke afarer-boot.
+  desc: Ontdek de industriële apparatuur achter elke afarer-board.
   label: Bekijk apparatuur →
   link: /factory/equipment

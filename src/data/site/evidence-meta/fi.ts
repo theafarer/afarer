@@ -24,7 +24,7 @@ export const evidenceMetaFi: EvidenceMetaMap = {
   'search-rescue-sup-fleet': {
     title: 'Kaakkois-Aasian meriviranomainen — Partio- ja pelastus-SUP-laivasto | Afarer',
     description:
-      'Valtion meriviranomainen vaati 20 partio- ja pelastus-SUP:aa tulenkestävällä Hypalon-kankaalla, integroiduilla viestintäkiinnikkeillä ja SOLAS III luvun pelastusvenestandardien mukaisuudella.',
+      'Valtion meriviranomainen vaati 20 partio- ja pelastus-SUP:aa korkean näkyvyyden kansilla, integroiduilla viestintäkiinnikkeillä ja CE-sertifioidulla rakenteella.',
   },
   'european-dtc-ecommerce': {
     title: 'Eurooppalainen DTC-vesiurheilubrändi — Brändätty SUP + tarvikelinja | Afarer',
@@ -53,7 +53,7 @@ export const evidenceMetaFi: EvidenceMetaMap = {
       '25 myymälän kanadalainen ulkoilukauppias vaati yksinomaisen oman merkin SUP-sarjan ranskan/englannin kaksikielisellä pakkauksella, kylmän ilmaston materiaalimääritelmillä ja Kanadan venemääräysten mukaisuudella.',
   },
   'middle-east-distributor': {
-    title: 'Lähi-idän vesiurheilujakelija — Koko tuotesarja — SUP, veneet, tarvikkeet | Afarer',
+    title: 'Lähi-idän vesiurheilujakelija — Koko tuotesarja — SUP:t ja tarvikkeet | Afarer',
     description:
       'GCC-pohjainen jakelija halusi yksinoikeudet koko Afarer-tuotesarjaan 6 Persianlahden maassa: arabiankielinen pakkaus, lämmönkestävät materiaalimääritelmät ja šarian mukaiset takuuehdot.',
   },
@@ -76,11 +76,6 @@ export const evidenceMetaFi: EvidenceMetaMap = {
     title: 'Brittiläinen yliopistourheiluliitto — Opiskelijaseuralaivasto — SUP + turvallisuus | Afarer',
     description:
       'Aktiivisen vesiurheiluseuran brittiyliopiston tuli korvata ikääntyvä laivasto moderneilla ilmatäytettävillä SUP:illa: rajoitettu kampussäilytys, sopivuus kaikille tasoille ja BUCS-kilpailustandardit.',
-  },
-  'humanitarian-aid-project': {
-    title: 'Kansainvälinen humanitaarinen järjestö — Pelastus- ja avustusponttonit | Afarer',
-    description:
-      'Kansainvälinen humanitaarinen järjestö tarvitsi 50 kestävää ilmatäytettävää venettä Kaakkois-Aasian tulvapelastuksiin: helikopterikuljetukseen sopivan kevyet ja kentällä korjattavat ilman erikoistyökaluja.',
   },
   'cruise-line-activity-program': {
     title: 'Karibian risteilylinja — Kannen aktiviteettilaivasto — SUP | Afarer',

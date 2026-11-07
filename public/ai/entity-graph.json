@@ -38,43 +38,6 @@
       "label": "inflatable"
     },
     {
-      "id": "rib-450-patrol",
-      "type": "product",
-      "label": "RIB 450 Patrol",
-      "category": "rib"
-    },
-    {
-      "id": "tag:rib",
-      "type": "tag",
-      "label": "rib"
-    },
-    {
-      "id": "tag:commercial",
-      "type": "tag",
-      "label": "commercial"
-    },
-    {
-      "id": "tag:patrol",
-      "type": "tag",
-      "label": "patrol"
-    },
-    {
-      "id": "rib-330",
-      "type": "product",
-      "label": "RIB 330",
-      "category": "rib"
-    },
-    {
-      "id": "tag:tender",
-      "type": "tag",
-      "label": "tender"
-    },
-    {
-      "id": "tag:small-boat",
-      "type": "tag",
-      "label": "small-boat"
-    },
-    {
       "id": "pump-dual",
       "type": "product",
       "label": "Dual-Action Pump",
@@ -203,11 +166,6 @@
       "category": "inflatable"
     },
     {
-      "id": "tag:day-boat",
-      "type": "tag",
-      "label": "day-boat"
-    },
-    {
       "id": "airdeck-270",
       "type": "product",
       "label": "AirDeck 270",
@@ -259,22 +217,6 @@
       "id": "tag:quality",
       "type": "tag",
       "label": "quality"
-    },
-    {
-      "id": "us-water-rescue-partnership",
-      "type": "article",
-      "label": "afarer Partners with US Water Rescue Association for Training Equipment",
-      "category": "Partnership"
-    },
-    {
-      "id": "tag:rescue",
-      "type": "tag",
-      "label": "rescue"
-    },
-    {
-      "id": "tag:training",
-      "type": "tag",
-      "label": "training"
     },
     {
       "id": "sup-tour-12-launch",
@@ -425,17 +367,6 @@
       "label": "Lake Tahoe"
     },
     {
-      "id": "kayak-tandem-best-family",
-      "type": "article",
-      "label": "afarer Kayak Tandem Named Best Family Watercraft 2026 by Paddle Magazine",
-      "category": "Product News"
-    },
-    {
-      "id": "tag:award",
-      "type": "tag",
-      "label": "award"
-    },
-    {
       "id": "iso-14001-certification",
       "type": "article",
       "label": "afarer Manufacturing Facility Achieves ISO 14001 Environmental Management Certification",
@@ -510,27 +441,6 @@
       "label": "durability"
     },
     {
-      "id": "hypalon-tubes",
-      "type": "technology",
-      "label": "Hypalon Tube Technology",
-      "category": "materials"
-    },
-    {
-      "id": "tag:hypalon",
-      "type": "tag",
-      "label": "hypalon"
-    },
-    {
-      "id": "tag:tube",
-      "type": "tag",
-      "label": "tube"
-    },
-    {
-      "id": "tag:chemical-resistance",
-      "type": "tag",
-      "label": "chemical-resistance"
-    },
-    {
       "id": "drop-stitch-core",
       "type": "technology",
       "label": "Drop-Stitch Core Construction",
@@ -561,11 +471,6 @@
       "id": "tag:floor",
       "type": "tag",
       "label": "floor"
-    },
-    {
-      "id": "tag:dinghy",
-      "type": "tag",
-      "label": "dinghy"
     },
     {
       "id": "marine-professional-operations",
@@ -651,36 +556,6 @@
     {
       "from": "sup-explorer-11",
       "to": "tag:inflatable",
-      "relation": "tagged"
-    },
-    {
-      "from": "rib-450-patrol",
-      "to": "tag:rib",
-      "relation": "tagged"
-    },
-    {
-      "from": "rib-450-patrol",
-      "to": "tag:commercial",
-      "relation": "tagged"
-    },
-    {
-      "from": "rib-450-patrol",
-      "to": "tag:patrol",
-      "relation": "tagged"
-    },
-    {
-      "from": "rib-330",
-      "to": "tag:rib",
-      "relation": "tagged"
-    },
-    {
-      "from": "rib-330",
-      "to": "tag:tender",
-      "relation": "tagged"
-    },
-    {
-      "from": "rib-330",
-      "to": "tag:small-boat",
       "relation": "tagged"
     },
     {
@@ -804,18 +679,8 @@
       "relation": "tagged"
     },
     {
-      "from": "airdeck-360",
-      "to": "tag:day-boat",
-      "relation": "tagged"
-    },
-    {
       "from": "airdeck-270",
       "to": "tag:inflatable",
-      "relation": "tagged"
-    },
-    {
-      "from": "airdeck-270",
-      "to": "tag:tender",
       "relation": "tagged"
     },
     {
@@ -851,21 +716,6 @@
     {
       "from": "afarer-rd-center-innovation",
       "to": "tag:quality",
-      "relation": "tagged"
-    },
-    {
-      "from": "us-water-rescue-partnership",
-      "to": "tag:partnership",
-      "relation": "tagged"
-    },
-    {
-      "from": "us-water-rescue-partnership",
-      "to": "tag:rescue",
-      "relation": "tagged"
-    },
-    {
-      "from": "us-water-rescue-partnership",
-      "to": "tag:training",
       "relation": "tagged"
     },
     {
@@ -999,26 +849,6 @@
       "relation": "tagged"
     },
     {
-      "from": "kayak-tandem-best-family",
-      "to": "tag:award",
-      "relation": "tagged"
-    },
-    {
-      "from": "kayak-tandem-best-family",
-      "to": "tag:kayak",
-      "relation": "tagged"
-    },
-    {
-      "from": "kayak-tandem-best-family",
-      "to": "tag:tandem",
-      "relation": "tagged"
-    },
-    {
-      "from": "kayak-tandem-best-family",
-      "to": "tag:family",
-      "relation": "tagged"
-    },
-    {
       "from": "iso-14001-certification",
       "to": "tag:certification",
       "relation": "tagged"
@@ -1099,26 +929,6 @@
       "relation": "tagged"
     },
     {
-      "from": "hypalon-tubes",
-      "to": "tag:hypalon",
-      "relation": "tagged"
-    },
-    {
-      "from": "hypalon-tubes",
-      "to": "tag:rib",
-      "relation": "tagged"
-    },
-    {
-      "from": "hypalon-tubes",
-      "to": "tag:tube",
-      "relation": "tagged"
-    },
-    {
-      "from": "hypalon-tubes",
-      "to": "tag:chemical-resistance",
-      "relation": "tagged"
-    },
-    {
       "from": "drop-stitch-core",
       "to": "tag:drop-stitch",
       "relation": "tagged"
@@ -1150,23 +960,8 @@
     },
     {
       "from": "air-deck-floor",
-      "to": "tag:dinghy",
-      "relation": "tagged"
-    },
-    {
-      "from": "air-deck-floor",
       "to": "tag:lightweight",
       "relation": "tagged"
-    },
-    {
-      "from": "marine-professional-operations",
-      "to": "rib-330",
-      "relation": "recommends"
-    },
-    {
-      "from": "marine-professional-operations",
-      "to": "rib-450-patrol",
-      "relation": "recommends"
     },
     {
       "from": "marine-professional-operations",

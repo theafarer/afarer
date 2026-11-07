@@ -1,6 +1,6 @@
 meta:
   title: 'Fabrik & produktion — oppustelig SUP-OEM | {SITE}'
-  description: 'Besøg afarers fabrik: facility på 12.000 m² med skæring, HF-svejsning, print, montering og kvalitetslaboratorium til OEM/ODM-produktion af oppustelige SUP-brædder og både.'
+  description: 'Besøg afarers fabrik: facility på 12.000 m² med skæring, HF-svejsning, print, montering og kvalitetslaboratorium til OEM/ODM-produktion af oppustelige SUP-brædder.'
   keywords:
     - 'SUP-fabrik Kina'
     - 'oppustelig paddle board fabrik'
@@ -43,7 +43,7 @@ intelligence_cards:
   - title: Kvalitetslaboratorium & test
     icon: Q
     icon_bg: green
-    desc: 'Uafhængigt QC-laboratorium med 4 testfaser: inspektion af råmaterialer (trækstyrke, rivestyrke, UV), 24–48 t trykhold ved 1.25x nominelt tryk, peel-test af sømme samt verificering af last og balance på hver båd.'
+    desc: 'Uafhængigt QC-laboratorium med 4 testfaser: inspektion af råmaterialer (trækstyrke, rivestyrke, UV), 24–48 t trykhold ved 1.25x nominelt tryk, peel-test af sømme samt verificering af last og balance på hvert board.'
     metrics:
       - label: Laboratorieudstyr
         value: Trækprøvemaskine, temperaturskab, lækagetank
@@ -67,10 +67,10 @@ workshops_section:
   title: Produktionsværksteder
   workshops:
     - title: PVC-skæring & materialeforberedelse
-      description: Automatiske CNC-skæremaskiner forarbejder PVC-, Hypalon- og drop-stitch-stoffer med præcision på under en millimeter. Computeroptimeret nesting minimerer materialespild og sikrer, at hver panel opfylder sin dimensionsspecifikation, før svejsning.
+      description: Automatiske CNC-skæremaskiner forarbejder PVC- og drop-stitch-stoffer med præcision på under en millimeter. Computeroptimeret nesting minimerer materialespild og sikrer, at hver panel opfylder sin dimensionsspecifikation, før svejsning.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: Rørsvejsning & varmeforsegling
-      description: Dedikeret svejseværksted med varmeforseglingsmaskiner og RF-dielektriske presser. Varmluftsforseglere binder og svejser PVC-kammerrør sammen, mens RF-svejsninger giver stærke, lufttætte sømme, der overgår ISO 6185-kravene.
+      description: Dedikeret svejseværksted med varmeforseglingsmaskiner og RF-dielektriske presser. Varmluftsforseglere binder og svejser PVC-kammerrør sammen, mens RF-svejsninger giver stærke, lufttætte sømme, der overgår EN ISO 25649-kravene.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: Drop-Stitch kernebinding
       description: Drop-stitch-kernerne på SUP-boards bindes til de ydre PVC-laminater ved varmelaminering. Tusindvis af indre polyestertråde forbinder top- og bundlag og skaber en stiv struktur ved 12-15 PSI. Kantbåndene er fusionssvejset i tre lag for styrke langs kanterne.
@@ -82,7 +82,7 @@ workshops_section:
       description: Samlebånd, hvor ventiler, D-ringe, håndtag, finnekasser og dækpuder monteres på hvert SUP-bræt. Hvert bræt følger en samlecheckliste med 100 punkter, som godkendes af teamlederen.
       image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
     - title: Kvalitetstest & inspektion
-      description: Alle færdige både gennemgår obligatorisk lufttæthedstest, kontrol af sømmenes vedhæftning og et fuldt systemsjek inden afsendelse. Vores kvalitetslaboratorium arbejder uafhængigt af produktionen og rapporterer direkte til ledelsen.
+      description: Alle færdige boards gennemgår obligatorisk lufttæthedstest, kontrol af sømmenes vedhæftning og et fuldt systemsjek inden afsendelse. Vores kvalitetslaboratorium arbejder uafhængigt af produktionen og rapporterer direkte til ledelsen.
       image: https://assets.afarer.com/images/afarer/factory/afarer-pressure-testing.webp
 equipment_section:
   tagline: Udstyr
@@ -105,17 +105,17 @@ equipment_section:
 qc_section:
   tagline: Kvalitetskontrol
   title: Test- og kvalitetssikringsproces
-  subtitle: Hver båd gennemgår obligatoriske tests, før den afsendes. Vores kvalitetslaboratorium arbejder uafhængigt af produktionen og rapporterer direkte til ledelsen.
+  subtitle: Hvert board gennemgår obligatoriske tests, før det afsendes. Vores kvalitetslaboratorium arbejder uafhængigt af produktionen og rapporterer direkte til ledelsen.
   steps:
     - step: '1'
       title: Inspektion af råmaterialer
-      desc: PVC-, Hypalon- og drop-stitch-stoffer gennemgår træktest (ASTM D751), rivningsforplantning og verifikation af UV-resistens, før nogen batch sendes i produktion.
+      desc: PVC- og drop-stitch-stoffer gennemgår træktest (ASTM D751), rivningsforplantning og verifikation af UV-resistens, før nogen batch sendes i produktion.
     - step: '2'
       title: Lufttæthedstest i 24–48 timer
       desc: Hvert rørkammer pustes op til 125 % af det nominelle tryk og holdes i 24–48 timer. Et trykfald på over 5 % udløser automatisk afvisning og ny kontrol af sømmen.
     - step: '3'
       title: Belastnings- & balancetest
-      desc: Færdige både lastes til maksimal nominel kapacitet og testes for stabilitet, fribord og manøvreevne. Hver båd vandtestes før den endelige inspektion.
+      desc: Færdige boards lastes til maksimal nominel kapacitet og testes for stabilitet og stivhed. Hvert board vandtestes før den endelige inspektion.
 oem_section:
   tagline: OEM-projekter
   title: 'Case studies: brand- & OEM-partnerskaber'
@@ -145,8 +145,8 @@ faq_section:
 b2b_moq: 'Standard MOQ: 5–10 enheder pr. model (SUP/drop-stitch). SUP MOQ: 2–5 enheder. Prøveordrer velkomne til nye partnerskaber.'
 production_flow:
   tagline: Produktionsflow
-  title: Fra materiale til færdig båd
-  subtitle: Hver båd gennemgår 6 produktionsfaser med QC-kontrolpunkter ved hvert trin. Ingen genveje, ingen oversprungne inspektioner.
+  title: Fra materiale til færdigt board
+  subtitle: Hvert board gennemgår 6 produktionsfaser med QC-kontrolpunkter ved hvert trin. Ingen genveje, ingen oversprungne inspektioner.
   stages:
     - stage: '01'
       title: Materialemodtagelse & indgående kvalitetskontrol
@@ -168,7 +168,7 @@ production_flow:
       responsibility: Svejse-QC (2 inspektører per skift)
     - stage: '04'
       title: Samling og rigging
-      description: 'Bådene overgår til slutmontage, hvor alle komponenter samles: skrog + slanger, monterede ventiler, D-ringe, håndtag, finnekasser og tilpasning af transporttaske. Hver enhed følger en 100-punkts monteringscheckliste.'
+      description: 'Boards overgår til slutmontage, hvor alle komponenter samles: rælinger limet og svejset, monterede ventiler, D-ringe, håndtag, finnekasser og tilpasning af transporttaske. Hver enhed følger en 100-punkts monteringscheckliste.'
       qc_check: Godkendelse via 100-punkts-tjekliste pr. enhed, ventilfunktionstest (10 åbnings-/lukkecyklusser), kontrol af hardwarets tilspændingsmoment, visuel inspektion
       qc_threshold: 'Nul-fejl-politik for sikkerhedskritiske komponenter (ventiler, D-ringe, håndtag). Mindre kosmetiske afvigelser: AQL 2,5 (ISO 2859)'
       responsibility: Samlingsholdets leder + linje-QC
@@ -219,17 +219,14 @@ workforce:
 material_traceability:
   tagline: Sporbarhed
   title: Materialesporing & batchkontrol
-  description: Hvert parti råmateriale tildeles et unikt lotnummer i vores ERP-system. Fra ankomst gennem produktion til færdigt produkt knytter hver båds stykliste sig tilbage til leverandørens oprindelige parti. Det muliggør fuld sporbarhed opstrøms ved enhver henvendelse om kvalitet eller overholdelse.
+  description: Hvert parti råmateriale tildeles et unikt lotnummer i vores ERP-system. Fra ankomst gennem produktion til færdigt produkt knytter hvert boards stykliste sig tilbage til leverandørens oprindelige parti. Det muliggør fuld sporbarhed opstrøms ved enhver henvendelse om kvalitet eller overholdelse.
   system: Skræddersyet ERP (Qingdao Vatrad Groups interne system) + fysiske batchetiketter på hver arbejdsordre
-  coverage: 100% af produktionsmaterialerne — PVC, Hypalon, drop-stitch-stof, klæbemidler, ventiler, hardware, emballage
+  coverage: 100% af produktionsmaterialerne — PVC, drop-stitch-stof, klæbemidler, ventiler, hardware, emballage
   records_retained: 10 år (i henhold til CE 2013/53/EU-kravet)
   suppliers:
     - material: PVC af marinekvalitet
       source: Kinesiske og koreanske leverandører
       certified: ISO 9001, REACH, RoHS
-    - material: Hypalon (CSM)
-      source: Japansk leverandør
-      certified: ISO 9001, REACH
     - material: Drop-stitch-stof
       source: Internt væveri + ekstern partner
       certified: Intern kvalitetskontrol + leverandørens ISO 9001
@@ -243,7 +240,7 @@ qc_dashboard:
   stats:
     - value: 100%
       label: Enheder tryktestet
-      detail: Hver båd, hvert kammer, hver batch
+      detail: Hvert board, hvert kammer, hver batch
     - value: <5%
       label: Maksimalt tilladt trykfald
       detail: Over 24–48h ved 1.25× nominelt tryk

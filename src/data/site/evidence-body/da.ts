@@ -276,31 +276,6 @@ export const bodyOverrides: EvidenceBodyMap = {
       },
     ],
   },
-  'humanitarian-aid-project': {
-    client: 'International humanitær organisation',
-    product: 'Rednings- og nødhjælpsgummibåde',
-    industry: 'NGO / Humanitær bistand',
-    challenge:
-      'En international humanitær organisation havde brug for 50 robuste gummibåde til redningsoperationer ved oversvømmelser i Sydøstasien: lette til helikoptertransport og reparerbare i felten.',
-    solution:
-      'Fremstillede 50 forstærkede oppustelige både med selv-tømmende bunde, redundans med flere kamre og griblinjer langs omkredsen. Leverede feltreparationskits med piktogram-instruktioner. Trænede 20 lokale teknikere.',
-    result:
-      '50 både udrullet i 3 oversvømmelsestruede regioner. Anvendt i 12 større redningsoperationer i de første 6 måneder. 0 rapporterede udstyrsfejl.',
-    outcomeMetrics: [
-      {
-        label: 'Udrullede både',
-        value: '50',
-      },
-      {
-        label: 'Redningsoperationer',
-        value: '12',
-      },
-      {
-        label: 'Fejlrate',
-        value: '0%',
-      },
-    ],
-  },
   'japanese-brand-launch': {
     client: 'Japansk lifestylebrand',
     product: 'Co-branded SUP-linje',
@@ -456,9 +431,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Patrulje- og rednings-SUP-flåde',
     industry: 'Offentlig sektor / Maritim sikkerhed',
     challenge:
-      "En offentlig maritim myndighed krævede 20 patrulje- og rednings-SUP'er med brandsikkert Hypalon-stof, integrerede kommunikationsbeslag og overensstemmelse med SOLAS kapitel III.",
+      "En offentlig maritim myndighed krævede 20 patrulje- og rednings-SUP'ere med højsynlige dæk, integrerede kommunikationsbeslag og CE-certificeret konstruktion.",
     solution:
-      "Fremstillede 20 SUP'er med CSM Hypalon-rør, kraftige D-ringe og forudinstallerede navigationslyspakker. Fabrikkens inspektionsteam overværede søprøver. Fuldstændig SOLAS-dokumentationspakke blev leveret.",
+      "Fremstillede 20 SUP'ere med militærkvalitets-PVC-konstruktion, kraftige D-ringer og forudinstallerede navigationslyspakker. Fabrikkens inspektionsteam overvar søprøverne. Fuld overensstemmelsesdokumentation blev leveret.",
     result:
       'Kontrakt leveret på 4 måneder. Flåde indsat til grænsepatrulje, søgning og redning samt katastrofeberedskab på 3 regionale baser.',
     outcomeMetrics: [

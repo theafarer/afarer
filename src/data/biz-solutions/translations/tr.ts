@@ -203,7 +203,7 @@ const tr: Record<string, SolutionOverride> = {
             {
               title: 'Ticari Sınıf Konstrüksiyon ve Modüler Aksesuar Rayı',
               detail:
-                "Afarer'in Xiamen fabrikası, 1.200 denier PVC'li (standart 1.000D'ye karşı), 14 PSI patlama basıncında test edilmiş çift kaynaklı dikişli (sektör standardı 10 PSI) ve plastik kaynaklı yerine paslanmaz çelik D-halkalı tahtalar üretti. Her tahta, Afarer'in yeni “QuickRail” sistemini içeriyordu — bordaya yapıştırılmış ekstrüde alüminyum profil — bu, Dimitri'nin GoPro montajları, su şişesi tutucuları ve kamış tutucular takmasını sağlıyordu. Bu, aksesuar kiralama gelirini tahta başına günde 12 € artırdı. Afarer görünürlük için yansıtıcı logolar ekledi: Mykonos liman devriyesinin gün batımından sonra tekneleri düzenlediği durumlarda kritik.",
+                "Afarer'in Xiamen fabrikası, 1.200 denier PVC'li (standart 1.000D'ye karşı), 14 PSI patlama basıncında test edilmiş çift kaynaklı dikişli (sektör standardı 10 PSI) ve plastik kaynaklı yerine paslanmaz çelik D-halkalı tahtalar üretti. Her tahta, Afarer'in yeni “QuickRail” sistemini içeriyordu — bordaya yapıştırılmış ekstrüde alüminyum profil — bu, Dimitri'nin GoPro montajları, su şişesi tutucuları ve kamış tutucular takmasını sağlıyordu. Bu, aksesuar kiralama gelirini tahta başına günde 12 € artırdı. Afarer görünürlük için yansıtıcı logolar ekledi: Mykonos liman devriyesinin gün batımından sonra su taşıtlarını düzenlediği durumlarda kritik.",
             },
             {
               title: 'Sezon Öncesi Personel Sertifikasyonu ve Filo Yönetim Sistemi',
@@ -4146,7 +4146,7 @@ const tr: Record<string, SolutionOverride> = {
               title:
                 "Haziran 2024 Teslimatı ve İlk VIP Hafta Sonu (Prens Andrew'un iptal edilen konaklamasının yerini Katar Emiri aldı)",
               detail:
-                "İlk tam filo konuşlandırması, Katar Emiri Tamim bin Hamad Al Thani ve ailesinin 24 Haziran 2024'teki devlet ziyareti için yapıldı (aslen katılan bir İngiliz kraliyet üyesi için planlanmıştı). 07.30'a kadar özel plajda 6 SUP kuruldu. Emir'in 14 yaşındaki oğlu Şeyh Jassim, deniz biyoloğu bir rehberle (o da Afarer tarafından özel eğitildi) 3 saat boyunca kürek çekerek mercan bahçesini keşfetti. Hamdan şunu bildirdi: “Emir'in oğlu, ziyaretin en iyi parçası olduğunu söyledi.” Ekim 2024'te Suudi Kraliyet Sarayı'ndan 12 misafir için ikinci konuşlandırmada şampanya servisiyle gün batımı küreği yapıldı (kadehler, Afarer'in tekne kızağında devrilmeyecek şekilde tasarlanmış özel içecek tutucusunda taşındı). Mart 2025 itibarıyla tahtalar 47 kez kullanıldı; sıfır hasar, sıfır bakım olayı ve sıfır misafir şikayeti yaşandı. Hamdan, ailenin özel yatı (65 metrelik “Al Nabigha Star”) için 8 ek tahta sipariş etti ve Afarer'a BAE Ulusal Günü kutlamaları için yaprak altın kürek serisi geliştirme görevi verdi.",
+                "İlk tam filo konuşlandırması, Katar Emiri Tamim bin Hamad Al Thani ve ailesinin 24 Haziran 2024'teki devlet ziyareti için yapıldı (aslen katılan bir İngiliz kraliyet üyesi için planlanmıştı). 07.30'a kadar özel plajda 6 SUP kuruldu. Emir'in 14 yaşındaki oğlu Şeyh Jassim, deniz biyoloğu bir rehberle (o da Afarer tarafından özel eğitildi) 3 saat boyunca kürek çekerek mercan bahçesini keşfetti. Hamdan şunu bildirdi: “Emir'in oğlu, ziyaretin en iyi parçası olduğunu söyledi.” Ekim 2024'te Suudi Kraliyet Sarayı'ndan 12 misafir için ikinci konuşlandırmada şampanya servisiyle gün batımı küreği yapıldı (kadehler, Afarer'in tekne dalgasında devrilmeyecek şekilde tasarlanmış özel içecek tutucusunda taşındı). Mart 2025 itibarıyla tahtalar 47 kez kullanıldı; sıfır hasar, sıfır bakım olayı ve sıfır misafir şikayeti yaşandı. Hamdan, ailenin özel yatı (65 metrelik “Al Nabigha Star”) için 8 ek tahta sipariş etti ve Afarer'a BAE Ulusal Günü kutlamaları için yaprak altın kürek serisi geliştirme görevi verdi.",
             },
           ],
           results: [
@@ -4187,7 +4187,7 @@ const tr: Record<string, SolutionOverride> = {
       {
         question: 'Afarer SUP tahtaları yat depolaması için paketlendiğinde ne kadar kompakt olur?',
         answer:
-          'Afarer lüks taşınabilir SUP tahtaları, depolama hacmini önemli ölçüde azaltan kompakt katlama sistemlerine sahiptir; yat kabinlerine, depolama bölmelerine, tender teknelere ve ekspedisyon gemilerine kolayca sığar. Her tahta, tüm aksesuarlarla birlikte bir taşıma sırt çantasına sığar.',
+          'Afarer lüks taşınabilir SUP tahtaları, depolama hacmini önemli ölçüde azaltan kompakt katlama sistemlerine sahiptir; yat kabinlerine, depolama bölmelerine ve ekspedisyon gemilerine kolayca sığar. Her tahta, tüm aksesuarlarla birlikte bir taşıma sırt çantasına sığar.',
       },
       {
         question: 'Afarer SUP tahtaları tuzlu suya ve UV hasarına dayanıklı mı?',

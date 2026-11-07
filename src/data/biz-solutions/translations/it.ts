@@ -210,7 +210,7 @@ const it: Record<string, SolutionOverride> = {
             {
               title: 'Costruzione di grado commerciale e rotaia modulare per accessori',
               detail:
-                'Lo stabilimento di Afarer a Xiamen ha prodotto tavole con PVC da 1.200 denari (contro lo standard 1.000D), cuciture doppiamente saldate testate a 14 PSI di pressione di scoppio (standard di settore 10 PSI) e anelli a D in acciaio inossidabile anziché saldati in plastica. Ogni tavola includeva il nuovo sistema «QuickRail» di Afarer — un profilo in alluminio estruso incollato nella murata — che permetteva a Dimitri di agganciare supporti GoPro, portaborraccia e portacanne. Ciò ha aumentato i ricavi del noleggio accessori di €12 per tavola al giorno. Afarer ha aggiunto loghi riflettenti per la visibilità: cruciale quando la guardia portuale di Mykonos regolamenta le imbarcazioni dopo il tramonto.',
+                'Lo stabilimento di Afarer a Xiamen ha prodotto tavole con PVC da 1.200 denari (contro lo standard 1.000D), cuciture doppiamente saldate testate a 14 PSI di pressione di scoppio (standard di settore 10 PSI) e anelli a D in acciaio inossidabile anziché saldati in plastica. Ogni tavola includeva il nuovo sistema «QuickRail» di Afarer — un profilo in alluminio estruso incollato nella murata — che permetteva a Dimitri di agganciare supporti GoPro, portaborraccia e portacanne. Ciò ha aumentato i ricavi del noleggio accessori di €12 per tavola al giorno. Afarer ha aggiunto loghi riflettenti per la visibilità: cruciale quando la guardia portuale di Mykonos regolamenta i mezzi dopo il tramonto.',
             },
             {
               title: 'Certificazione pre-stagione dello staff e sistema di gestione della flotta',
@@ -1603,7 +1603,7 @@ const it: Record<string, SolutionOverride> = {
           customer: {
             location: 'Manaus, Brasile',
             background:
-              "Carlos Mendes, 34 anni, è un fotografo di avventura apparso su National Geographic e pilota di droni con 890.000 follower su Instagram. Dopo 7 anni a documentare spedizioni su fiumi remoti dell'Amazzonia, ha notato che il suo pubblico chiedeva sempre più spesso informazioni sulle SUP gonfiabili che usava per raggiungere i luoghi di ripresa. Senza esperienza di pagaiata, aveva bisogno che Afarer progettasse una tavola personalizzata che fungesse sia da piattaforma per la macchina da presa sia da imbarcazione da spedizione, lanciando al contempo un marchio di merchandise legato alla sua serie «Rios do Brasil».",
+              "Carlos Mendes, 34 anni, è un fotografo di avventura apparso su National Geographic e pilota di droni con 890.000 follower su Instagram. Dopo 7 anni a documentare spedizioni su fiumi remoti dell'Amazzonia, ha notato che il suo pubblico chiedeva sempre più spesso informazioni sulle SUP gonfiabili che usava per raggiungere i luoghi di ripresa. Senza esperienza di pagaiata, aveva bisogno che Afarer progettasse una tavola personalizzata che fungesse sia da piattaforma per la macchina da presa sia da mezzo da spedizione, lanciando al contempo un marchio di merchandise legato alla sua serie «Rios do Brasil».",
             goal: 'Lanciare entro maggio 2025 una SUP co-brand con firma che raffigurasse i 5 grandi biomi acquatici del Brasile (Amazzonia, Pantanal, São Francisco, Paraná e costa di Rio), prevendendo 500 unità a R$4.990 ciascuna prima della produzione.',
           },
           steps: [
@@ -3539,7 +3539,7 @@ const it: Record<string, SolutionOverride> = {
           description: 'Aumenta il valore del cliente nel tempo oltre i prodotti surf tradizionali',
           features: [
             'Collezione SUP gonfiabili con modelli all-round, touring, yoga e per bambini',
-            'Collezione di gommoni gonfiabili per il tempo libero in famiglia',
+            'Collezione SUP specializzata con modelli da pesca, acque bianche e surf',
             "Accessori per l'acqua tra dry bag, custodie impermeabili, pompe e pagaie",
             'Ecosistema completo di lifestyle acquatico sotto il tuo marchio surf',
             'Opportunità di cross-selling verso i clienti surf esistenti',
@@ -4257,7 +4257,7 @@ const it: Record<string, SolutionOverride> = {
       {
         question: 'Quanto sono compatte le tavole SUP Afarer una volta ripiegate per lo stoccaggio sullo yacht?',
         answer:
-          'Le tavole SUP portatili di lusso Afarer presentano sistemi di ripiegamento compatto che riducono significativamente il volume di stoccaggio, entrando facilmente nelle cabine degli yacht, negli scompartimenti di stoccaggio, nelle tender e nelle navi da spedizione. Ogni tavola si ripone in uno zaino con tutti gli accessori.',
+          'Le tavole SUP portatili di lusso Afarer presentano sistemi di ripiegamento compatto che riducono significativamente il volume di stoccaggio, entrando facilmente nelle cabine degli yacht, negli scompartimenti di stoccaggio e nelle navi da spedizione. Ogni tavola si ripone in uno zaino con tutti gli accessori.',
       },
       {
         question: "Le tavole SUP Afarer sono resistenti all'acqua salata e ai danni UV?",

@@ -276,31 +276,6 @@ export const bodyOverrides: EvidenceBodyMap = {
       },
     ],
   },
-  'humanitarian-aid-project': {
-    client: 'Organização humanitária internacional',
-    product: 'Barcos infláveis de resgate e ajuda',
-    industry: 'ONG / Ajuda humanitária',
-    challenge:
-      'Uma organização humanitária internacional precisava de 50 barcos infláveis robustos para resgates em enchentes no Sudeste Asiático: leves para transporte de helicóptero e reparáveis em campo.',
-    solution:
-      'Fabricamos 50 barcos infláveis reforçados com assoalhos de escoamento automático, redundância de múltiplas câmaras e perímetros de cordas de agarramento. Fornecemos kits de reparo de campo com instruções pictóricas. Treinamos 20 técnicos locais.',
-    result:
-      '50 barcos implantados em 3 regiões propensas a enchentes. Usados em 12 grandes operações de resgate nos primeiros 6 meses. 0 falhas de equipamento relatadas.',
-    outcomeMetrics: [
-      {
-        label: 'Barcos implantados',
-        value: '50',
-      },
-      {
-        label: 'Operações de resgate',
-        value: '12',
-      },
-      {
-        label: 'Taxa de falhas',
-        value: '0%',
-      },
-    ],
-  },
   'japanese-brand-launch': {
     client: 'Marca japonesa de lifestyle',
     product: 'Linha SUP co-branding',
@@ -403,7 +378,7 @@ export const bodyOverrides: EvidenceBodyMap = {
   },
   'middle-east-distributor': {
     client: 'Distribuidor de esportes aquáticos do Oriente Médio',
-    product: 'Linha completa — SUP, barcos, acessórios',
+    product: 'Linha completa — SUP e acessórios',
     industry: 'Distribuição / Náutica',
     challenge:
       'Um distribuidor do GCC buscava direitos exclusivos de toda a linha Afarer em 6 países do Golfo, com embalagem em árabe, especificações de materiais resistentes ao calor e garantia conforme a sharia.',
@@ -456,9 +431,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Frota SUP de patrulha e resgate',
     industry: 'Governo / Segurança Marítima',
     challenge:
-      'Uma agência marítima governamental exigia 20 SUP de patrulha e resgate com tecido Hypalon à prova de fogo, suportes de comunicação integrados e conformidade com o capítulo III da SOLAS.',
+      "Uma agência marítima governamental exigia 20 SUPs de patrulha e resgate com deckes de alta visibilidade, suportes de comunicação integrados e construção certificada CE.",
     solution:
-      'Fabricamos 20 SUPs com tubos de CSM Hypalon, argolas em D de alta resistência e pacotes de luzes de navegação pré-instalados. A equipe de inspeção da fábrica presenciou os testes no mar. Pacote completo de documentação SOLAS fornecido.',
+      "Fabricamos 20 SUPs com construção em PVC de grau militar, anéis D reforçados e kits de luzes de navegação pré-instalados. A equipe de inspeção da fábrica presenciou os testes no mar. Foi fornecido o pacote completo de documentação de conformidade.",
     result:
       'Contrato entregue em 4 meses. Frota implantada para patrulha de fronteiras, busca e resgate e resposta a desastres em 3 bases regionais.',
     outcomeMetrics: [

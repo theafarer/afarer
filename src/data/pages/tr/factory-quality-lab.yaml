@@ -1,6 +1,6 @@
 meta:
   title: 'Kalite Laboratuvarı — Test ve kalite kontrol | {SITE}'
-  description: "afarer'da ISO 9001 süreçleriyle bağımsız kalite laboratuvarı: şişme SUP tahtalarının ve teknelerinin kalitesini garanti etmek için her birim sevkiyat öncesi test edilir."
+  description: "afarer'da ISO 9001 süreçleriyle bağımsız kalite laboratuvarı: şişme SUP kalitesini garanti etmek için her birim sevkiyat öncesi test edilir."
   keywords:
     - 'SUP kalite kontrolü'
     - 'paddle board test laboratuvarı'
@@ -10,11 +10,11 @@ hero:
   tagline: Kalite Kontrol Laboratuvarı
   title: Test Laboratuvarı ve Kalite Güvencesi
   subtitle: ISO 9001 süreçlerine sahip bağımsız kalite laboratuvarı — her ünite sevkiyattan önce test edilir
-intro: afarer, üretimin bağımsız olarak çalışan özel bir kalite kontrol laboratuvarı işletmektedir. Her hammadde partisi ve her bitmiş tekne, serbest bırakılmadan önce belgelenmiş kontrol protokollerinden geçer. Kalite kontrol ekibimiz doğrudan yönetime rapor vererek tarafsız kalite kararları sağlar.
+intro: afarer, üretimden bağımsız olarak çalışan özel bir kalite kontrol laboratuvarı işletmektedir. Her hammadde partisi ve her bitmiş tahta, serbest bırakılmadan önce belgelenmiş kontrol protokollerinden geçer. Kalite kontrol ekibimiz doğrudan yönetime rapor vererek tarafsız kalite kararları sağlar.
 highlights:
   - value: 100%
     label: Basınç testinden geçmiş birimler
-    detail: Her oda, her tekne
+    detail: Her oda, her tahta
   - value: 24–48 h
     label: Hava tutma test süresi
     detail: 1,25× nominal basınçta
@@ -26,7 +26,7 @@ highlights:
     detail: ISO 2859 örnekleme standardına göre
 test_procedures:
   - title: Hammadde Kontrolü
-    description: Gelen her PVC, Hypalon, drop-stitch kumaş ve donanım partisi kabul edilmeden önce test edilir. Çekme dayanımı (ASTM D751), yırtılma direnci (ISO 4674) ve UV direnci doğrulanır. Uygun olmayan malzemeler karantinaya alınır ve iade edilir.
+    description: Gelen her PVC, drop-stitch kumaş ve donanım partisi kabul edilmeden önce test edilir. Çekme dayanımı (ASTM D751), yırtılma direnci (ISO 4674) ve UV direnci doğrulanır. Uygun olmayan malzemeler karantinaya alınır ve iade edilir.
     standards:
       - ASTM D751 (çekme)
       - ISO 4674 (yırtılma)
@@ -40,10 +40,10 @@ test_procedures:
   - title: 24–48 Saat Hava Tutma Testi
     description: Her tüp odası nominal basıncın %125'ine şişirilir ve 24–48 saat boyunca tutulur. Sıcaklık kompanzasyonlu basınç sensörleri sürekli kayıt yapar. %5'ten fazla basınç düşüşü yaşayan her oda otomatik parti yeniden denetimini tetikler.
     standards:
-      - ISO 6185
+      - EN ISO 25649
       - CE 2013/53/EU
   - title: Yük ve Denge Testi
-    description: Tamamlanan tekneler, stabilite, serbest borda ve manevra kabiliyeti için azami kapasitede test edilir. Her tekne nihai muayene onayından önce su testinden geçirilir.
+    description: Tamamlanan tahtalar, stabilite ve rijitlik için azami nominal kapasitede test edilir. Her tahta nihai muayene onayından önce su testinden geçirilir.
     standards:
       - ISO 12217
       - CE 2013/53/EU

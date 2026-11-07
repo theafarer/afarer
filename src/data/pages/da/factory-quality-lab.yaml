@@ -1,6 +1,6 @@
 meta:
   title: 'Kvalitetslaboratorium — Testning & kvalitetssikring | {SITE}'
-  description: 'Uafhængigt kvalitetslaboratorium med ISO 9001-processer hos afarer: hver enhed testes inden forsendelse for at garantere kvaliteten af oppustelige SUP-brædder og både.'
+  description: 'Uafhængigt kvalitetslaboratorium med ISO 9001-processer hos afarer: hver enhed testes inden forsendelse for at garantere kvaliteten af oppustelige SUP-brædder.'
   keywords:
     - 'SUP kvalitetskontrol'
     - 'paddle board testlaboratorium'
@@ -11,12 +11,12 @@ hero:
   title: Testlaboratorium og kvalitetssikring
   subtitle: Uafhængigt kvalitetslaboratorium med ISO 9001-processer — alle enheder testes inden afsendelse
 intro: >-
-  afarer driver et dedikeret kvalitetskontrollaboratorium, der arbejder uafhængigt af produktionen. Hver batch råmateriale og hver færdig båd gennemgår dokumenterede inspektionsprotokoller, før den frigives. Vores QC-team rapporterer direkte til ledelsen, hvilket sikrer uvildige
+  afarer driver et dedikeret kvalitetskontrollaboratorium, der arbejder uafhængigt af produktionen. Hver batch råmateriale og hvert færdigt board gennemgår dokumenterede inspektionsprotokoller, før den frigives. Vores QC-team rapporterer direkte til ledelsen, hvilket sikrer uvildige
   kvalitetsbeslutninger.
 highlights:
   - value: 100%
     label: Enheder tryktestet
-    detail: Hvert kammer, hver båd
+    detail: Hvert kammer, hvert board
   - value: 24–48 h
     label: Varighed af luftretentionstest
     detail: Ved 1,25× nominelt tryk
@@ -28,7 +28,7 @@ highlights:
     detail: Pr. stikprøveudtagning i henhold til ISO 2859
 test_procedures:
   - title: Inspektion af råmaterialer
-    description: Hvert modtaget parti af PVC, Hypalon, drop-stitch-stof og beslag testes, før det godkendes. Trækstyrke (ASTM D751), rivestyrke (ISO 4674) og UV-bestandighed verificeres. Materialer, der ikke lever op til kravene, sættes i karantæne og returneres.
+    description: Hvert modtaget parti af PVC, drop-stitch-stof og beslag testes, før det godkendes. Trækstyrke (ASTM D751), rivestyrke (ISO 4674) og UV-bestandighed verificeres. Materialer, der ikke lever op til kravene, sættes i karantæne og returneres.
     standards:
       - ASTM D751 (trækstyrke)
       - ISO 4674 (rivning)
@@ -42,10 +42,10 @@ test_procedures:
   - title: Lufttæthedstest i 24–48 timer
     description: Hvert luftkammer pumpes op til 125% af det nominelle tryk og holdes i 24–48 timer. Tryksensorer logger kontinuerligt med temperaturkompensation. Ethvert kammer med et trykfald på over 5% udløser automatisk ny inspektion af hele batchen.
     standards:
-      - ISO 6185
+      - EN ISO 25649
       - CE 2013/53/EU
   - title: Belastnings- & balancetest
-    description: Færdige både testes ved maksimal nominel kapacitet for stabilitet, fribord og manøvreevne. Hvert fartøj gennemgår vandtest, før det godkendes ved den endelige inspektion.
+    description: Færdige boards testes ved maksimal nominel kapacitet for stabilitet og stivhed. Hvert board gennemgår vandtest, før det godkendes ved den endelige inspektion.
     standards:
       - ISO 12217
       - CE 2013/53/EU

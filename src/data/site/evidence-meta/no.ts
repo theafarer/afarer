@@ -24,7 +24,7 @@ export const evidenceMetaNo: EvidenceMetaMap = {
   'search-rescue-sup-fleet': {
     title: 'Maritim etat i Sørøst-Asia — Patrulje- og rednings-SUP-flåte | Afarer',
     description:
-      'En statlig maritim etat krevde 20 patrulje- og rednings-SUP-er med brannhemmende Hypalon-stoff, integrerte kommunikasjonsfester og samsvar med SOLAS kapittel III.',
+      'En statlig maritim etat krevde 20 patrulje- og rednings-SUP-er med høysynlige dekk, integrerte kommunikasjonsfester og CE-sertifisert konstruksjon.',
   },
   'european-dtc-ecommerce': {
     title: 'Europeisk DTC-vannsportsmerke — Merke-SUP + tilbehørslinje | Afarer',
@@ -52,7 +52,7 @@ export const evidenceMetaNo: EvidenceMetaMap = {
       'En kanadisk forhandler med 25 butikker krevde en eksklusiv SUP-serie med egen merkevare med tospråklig fransk/engelsk emballasje, kaldværsspesifikasjoner og kanadiske båtforskrifter.',
   },
   'middle-east-distributor': {
-    title: 'Vannsportsdistributør i Midtøsten — Hele produktlinjen — SUP, båter, tilbehør | Afarer',
+    title: 'Vannsportsdistributør i Midtøsten — Hele produktlinjen — SUP og tilbehør | Afarer',
     description:
       'En GCC-basert distributør ønsket eksklusive rettigheter til hele Afarer-produktlinjen i 6 Gulfstater, med arabisk emballasje, varmebestandige materialspesifikasjoner og sharia-kompatible garantivilkår.',
   },
@@ -75,11 +75,6 @@ export const evidenceMetaNo: EvidenceMetaMap = {
     title: 'Britisk universitetssportforbund — Studentklubbflåte — SUP + sikkerhet | Afarer',
     description:
       'Et britisk universitet med en aktiv vannsportsklubb måtte erstatte en aldrende flåte med moderne oppblåsbare SUP-er: begrenset campuslagring, brukervennlighet for alle nivåer og BUCS-standarder.',
-  },
-  'humanitarian-aid-project': {
-    title: 'Internasjonal humanitær organisasjon — Rednings- og nødhjelpsgummibåter | Afarer',
-    description:
-      'En internasjonal humanitær organisasjon trengte 50 robuste gummibåter til redningsoperasjoner ved flom i Sørøst-Asia: lette for helikoptertransport og repererbare i felten.',
   },
   'cruise-line-activity-program': {
     title: 'Karibisk cruiseselskap — Flåte for om bord-aktiviteter — SUP | Afarer',

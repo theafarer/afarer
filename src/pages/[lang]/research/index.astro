@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
-const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || getUiForLang('en')?.[key] || '';
 
 const metadata = {
   title: `${t('home.research.title')} | ${SITE.name}`,
@@ -32,7 +32,6 @@ const topics: ResearchTopic[] =
 
 const topicMeta: Record<string, { titleKey: string; descKey: string }> = {
   'drop-stitch-technology': { titleKey: 'home.research.dropStitch', descKey: 'home.research.dropStitch.desc' },
-  'pvc-vs-hypalon': { titleKey: 'home.research.pvcHypalon', descKey: 'home.research.pvcHypalon.desc' },
   'ce-certification-guide': {
     titleKey: 'home.research.ceCertification',
     descKey: 'home.research.ceCertification.desc',

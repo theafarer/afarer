@@ -1,34 +1,110 @@
 meta:
-  title: 'Bassin Hydrodynamique — Tests de Coque | {SITE}'
-  description: "Bassin d'essais hydrodynamiques afarer : remorquage sur modèle réduit, analyse de déjaugeage et optimisation des coques de bateaux gonflables."
-  keywords:
-    - 'bassin hydrodynamique'
-    - 'test coque'
-    - 'essai hydrodynamique'
-    - 'optimisation coque'
+  title: 'Bassin Hydrodynamique — Remorquage sur Modèle Réduit & Optimisation de Coque | {SITE}'
+  description: "Validez les performances de votre coque avec notre bassin d'essais hydrodynamiques. Remorquage sur modèle réduit, analyse de déjaugeage et tests d'efficacité de glisse. Réservez une session d'essai en bassin dès aujourd'hui."
 back_text: Retour au Centre R&D
 home_label: Accueil
+
 hero:
   tagline: Lab 04
   title: Bassin d'Essais Hydrodynamiques
   subtitle: Validation des performances avant le premier prototype grandeur nature
-  image: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp
+  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
   image_alt: Test de performance en bassin hydrodynamique afarer
-intro: C'est une idée reçue courante que les tests hydrodynamiques sont réservés aux navires océaniques. En réalité, les performances des petits bateaux gonflables bénéficient tout autant des essais en bassin de carène.
-content_html: |-
-  <h2>Pourquoi tester un petit bateau en bassin ?</h2>
-  <p>Les essais en bassin à échelle réduite (généralement 1:3 à 1:5) permettent d'itérer rapidement sur les formes de coque avant l'engagement dans les moules de production. Notre bassin d'essai est équipé de capteurs de force, de caméras haute vitesse et d'un système de génération de vagues.</p>
 
-  <h2>Ce que nous mesurons</h2>
+intro: 'C''est une idée reçue courante que les tests hydrodynamiques sont réservés aux navires océaniques. En réalité, les performances d''une petite coque à déjaugeage — comme celles d''un SUP gonflable — dépendent tout autant de sa forme immergée qu''un pétrolier dépend de son bulbe d''étrave. L''angle d''assiette, la surface mouillée, la génération d''embruns et la ventilation ont tous un effet spectaculaire sur la glisse, la vitesse et le confort. Chez Afarer, nous exploitons un bassin d''essais hydrodynamiques dédié qui nous permet de quantifier ces effets à l''échelle du modèle — avant d''engager tissu et outillage dans un prototype grandeur nature.'
+
+content_html: |
+  <h2>Pourquoi tester une planche de paddle en bassin ?</h2>
+  <p>Les essais à l'échelle du modèle (généralement 1:3 à 1:5) nous permettent d'itérer rapidement et à moindre coût sur les formes de coque. Une semaine en bassin peut générer les mêmes données de performance que des mois d'essais-erreurs grandeur nature — et pour une fraction du coût.</p>
+
+  <h2>Caractéristiques de l'installation</h2>
+  <table>
+    <thead><tr><th>Paramètre</th><th>Spécification</th></tr></thead>
+    <tbody>
+      <tr><td>Dimensions du bassin</td><td>35 m (L) × 3,5 m (l) × 1,8 m (P)</td></tr>
+      <tr><td>Chariot de remorquage</td><td>À servo-commande électrique, vitesse max 12 m/s (23 nœuds), précision de vitesse ± 0,5 %</td></tr>
+      <tr><td>Générateur de vagues</td><td>À volet, états de mer réguliers &amp; irréguliers programmables, Hs jusqu'à 0,3 m à l'échelle du modèle</td></tr>
+      <tr><td>Instrumentation</td><td>Dynamomètre à 6 composantes (résistance, force latérale, moment de lacet), accéléromètres, inclinomètres, sondes de vagues</td></tr>
+      <tr><td>Acquisition de données</td><td>Échantillonnage à 1000 Hz par canal, affichage temps réel + suite de post-traitement</td></tr>
+      <tr><td>Fabrication des maquettes</td><td>Usinage CNC et impression 3D en interne pour des maquettes de coque jusqu'à 1,8 m de longueur hors tout</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Notre programme d'essais</h2>
+  <p>Un programme standard de développement de coque dans notre bassin suit cette séquence :</p>
+  <ol>
+    <li><strong>Construction de la maquette</strong> — Une maquette à l'échelle 1:3,5 est usinée par CNC dans de la mousse haute densité puis stratifiée pour la rigidité. Le poids et le centre de gravité sont ajustés pour correspondre à la condition de pleine charge à l'échelle de Froude.</li>
+    <li><strong>Passages de résistance</strong> — La maquette est remorquée à 8-10 vitesses couvrant la plage d'exploitation. La résistance totale est mesurée et décomposée en composantes frictionnelle et résiduelle selon la méthode ITTC-1957.</li>
+    <li><strong>Mesure d'assiette &amp; d'enfoncement</strong> — L'assiette et l'enfoncement en marche sont enregistrés à chaque vitesse. Un angle d'assiette optimal de 4-6° pour les coques à déjaugeage est la cible.</li>
+    <li><strong>Étude du sillage</strong> — Des coupes de vagues transversales sont mesurées à deux vitesses pour évaluer la résistance de vague et identifier les interactions d'ondes transversales susceptibles de provoquer des interférences à l'arrière.</li>
+    <li><strong>Tenue à la mer (optionnel)</strong> — Passages face à la mer et dans le sillage en vagues régulières pour mesurer la surcroissance de résistance, l'accélération verticale et la probabilité de claquage.</li>
+    <li><strong>Analyse des données &amp; recommandations</strong> — Un rapport complet est livré avec des graphiques comparatifs, des courbes vitesse/puissance et des recommandations de conception spécifiques pour la coque grandeur nature.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Résultats types d'essai en bassin — Résistance vs Vitesse (coque SUP de randonnée, échelle 1:3,5)</p>
+    <div class="space-y-2">
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">5 nœuds (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:18%"></div>
+        </div>
+        <span class="w-16 text-right">42 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">10 nœuds (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:35%"></div>
+        </div>
+        <span class="w-16 text-right">81 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">15 nœuds (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:52%"></div>
+        </div>
+        <span class="w-16 text-right">121 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">20 nœuds (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:68%"></div>
+        </div>
+        <span class="w-16 text-right">158 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">25 nœuds (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:85%"></div>
+        </div>
+        <span class="w-16 text-right">197 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">30 nœuds (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:100%"></div>
+        </div>
+        <span class="w-16 text-right">232 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Résistance à l'échelle du modèle (N) aux vitesses à l'échelle de Froude. La prédiction de traînée grandeur nature suit la méthode de prédiction de performance ITTC-1978.</p>
+  </div>
+
+  <h2>Équipe d'experts</h2>
+  <p>Notre bassin est exploité par un hydrodynamicien docteur en dynamique des fluides fort de 8 ans d'expérience en bassins de remorquage dans un grand institut de recherche maritime européen. Il est épaulé par un technicien qui prépare toutes les maquettes et l'instrumentation. L'équipe suit les procédures recommandées de l'ITTC (International Towing Tank Conference) pour garantir que chaque essai est reproductible, traçable et défendable au niveau international.</p>
+
+  <h2>Essais en bassin pour le développement de coques personnalisées</h2>
+  <p>Notre bassin n'est pas seulement utilisé pour les coques conçues en interne — nous menons régulièrement des programmes d'essais pour des clients qui souhaitent valider une forme de coque personnalisée ou examiner un problème de performance :</p>
   <ul>
-    <li><strong>Résistance à l'avancement :</strong> Traînée en fonction de la vitesse et de l'état de la mer</li>
-    <li><strong>Stabilité :</strong> Courbes de stabilité statique et dynamique</li>
-    <li><strong>Comportement en vagues :</strong> Roulis, tangage et pilonnement dans diverses conditions</li>
-    <li><strong>Distribution des pressions :</strong> Carte des pressions sur la coque pour l'optimisation structurelle</li>
+    <li><strong>Comparaison de formes de coque</strong> — Deux formes de coque candidates ou plus testées dans des conditions identiques, fournissant une comparaison objective traînée/vitesse/stabilité pour éclairer votre choix de conception.</li>
+    <li><strong>Optimisation des appendices</strong> — Les configurations d'ailerons, les profils de rails et les variantes de rocker peuvent être testés en diverses combinaisons pour quantifier leur contribution individuelle à la réduction de traînée.</li>
+    <li><strong>Étude d'efficacité de glisse</strong> — Les données de résistance sont converties en courbe d'efficacité de glisse, vous permettant d'équilibrer volume de coque, rocker et rigidité pour votre vitesse de pagaie et votre charge utile cibles.</li>
   </ul>
 
-  <h2>Avantages des essais en bassin</h2>
-  <p>Contrairement à la seule CFD, les essais en bassin capturent les effets d'interface air-eau, les phénomènes de déjaugeage et les comportements transitoires que les simulations numériques peinent à prédire avec précision.</p>
+  <h2>Pourquoi tester avec nous ?</h2>
+  <p>Nous ne nous contentons pas de vous livrer une série de chiffres bruts. Nos rapports traduisent les données du bassin en recommandations d'ingénierie concrètes : « Ajoutez 8 mm de rocker d'étrave pour réduire la surface mouillée à vitesse de croisière », « Réduisez le rocker arrière de 3° pour allonger la ligne de flottaison à vitesse de randonnée », ou « Déplacez le point le plus large de 150 mm vers l'arrière pour améliorer le cap ». Vous repartez avec une compréhension claire de ce qu'il faut modifier et pourquoi.</p>
+  <p>Notre bassin est également disponible pour des essais indépendants de tiers, à la prestation. Si vous développez une coque et souhaitez une évaluation hydrodynamique impartiale et exécutée professionnellement, nous accueillons votre demande.</p>
+
 cta:
   title: Réserver une session de test en bassin
   subtitle: Que vous ayez besoin d'un programme de développement complet ou d'un seul test comparatif, nous pouvons nous adapter à votre calendrier.

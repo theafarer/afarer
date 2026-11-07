@@ -1,6 +1,6 @@
 meta:
-  title: 'Laboratoire Qualité — Tests SUP & Bateaux | {SITE}'
-  description: "Laboratoire d'essais et assurance qualité afarer : tests de pression, vieillissement UV, résistance à la traction pour SUP gonflables et bateaux pneumatiques."
+  title: 'Laboratoire Qualité — Tests & Assurance Qualité | {SITE}'
+  description: "Laboratoire d'essais et assurance qualité afarer : tests de pression, vieillissement UV, résistance à la traction pour garantir la qualité des SUP gonflables."
   keywords:
     - 'contrôle qualité SUP'
     - 'test SUP gonflable'
@@ -10,11 +10,11 @@ hero:
   tagline: Laboratoire de Contrôle Qualité
   title: Laboratoire d'Essais et Assurance Qualité
   subtitle: Laboratoire qualité indépendant avec processus ISO 9001 — chaque unité testée avant expédition
-intro: afarer exploite un laboratoire de contrôle qualité dédié qui opère indépendamment de la production. Chaque lot de matière première et chaque bateau fini passe par des protocoles d'inspection documentés avant la sortie. Notre équipe QC rapporte directement à la direction, garantissant des décisions qualité impartiales.
+intro: afarer exploite un laboratoire de contrôle qualité dédié qui opère indépendamment de la production. Chaque lot de matière première et chaque planche finie passe par des protocoles d'inspection documentés avant la sortie. Notre équipe QC rapporte directement à la direction, garantissant des décisions qualité impartiales.
 highlights:
   - value: 100 %
     label: Units pressure-tested
-    detail: Chaque chambre, chaque bateau
+    detail: Chaque chambre, chaque planche
   - value: 24–48 h
     label: Durée du test de rétention d'air
     detail: À 1,25× la pression nominale
@@ -26,7 +26,7 @@ highlights:
     detail: Échantillonnage selon ISO 2859
 test_procedures:
   - title: Inspection des Matières Premières
-    description: Chaque lot entrant de PVC, d'Hypalon, de tissu drop-stitch et de quincaillerie est testé avant acceptation. La résistance à la traction (ASTM D751), la résistance au déchirement (ISO 4674) et la résistance aux UV sont vérifiées. Les matériaux non conformes sont mis en quarantaine et retournés.
+    description: Chaque lot entrant de PVC, de tissu drop-stitch et de quincaillerie est testé avant acceptation. La résistance à la traction (ASTM D751), la résistance au déchirement (ISO 4674) et la résistance aux UV sont vérifiées. Les matériaux non conformes sont mis en quarantaine et retournés.
     standards:
       - ASTM D751 (traction)
       - ISO 4674 (déchirure)
@@ -40,10 +40,10 @@ test_procedures:
   - title: Test de Rétention d'Air 24–48 Heures
     description: Chaque chambre est gonflée à 125 % de la pression nominale et maintenue pendant 24 à 48 heures. Les capteurs de pression enregistrent en continu avec compensation de température. Toute chambre dont la chute de pression dépasse 5 % déclenche une réinspection automatique du lot.
     standards:
-      - ISO 6185
+      - EN ISO 25649
       - CE 2013/53/EU
   - title: Test de Charge et d'Équilibre
-    description: Les bateaux terminés sont testés à la capacité nominale maximale pour la stabilité, le franc-bord et la maniabilité. Chaque embarcation passe des essais en eau avant l'approbation de l'inspection finale.
+    description: Les planches terminées sont testées à la capacité nominale maximale pour la stabilité et la rigidité. Chaque planche passe des essais en eau avant l'approbation de l'inspection finale.
     standards:
       - ISO 12217
       - CE 2013/53/EU

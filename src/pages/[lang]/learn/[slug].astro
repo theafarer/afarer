@@ -11,14 +11,12 @@ import learnDeData from '~/data/learn-de.yaml';
 export function getStaticPaths() {
   const slugs = [
     'sup',
-    'inflatable-boat',
     'water-safety',
     'sup-basics',
     'drop-stitch-core',
     'inflatable-technology',
     'intermediate-techniques',
     'materials',
-    'pvc-vs-hypalon',
     'safety-in-water-sports',
     'sup-size-guide',
   ];
@@ -76,43 +74,6 @@ const LEARN_PAGES: Record<
       },
     ],
   },
-  'inflatable-boat': {
-    title: 'Inflatable Boat Knowledge — Technology & Materials | Afarer',
-    description:
-      'Deep dive into inflatable boat and SUP technology. Learn about drop-stitch construction, PVC vs Hypalon materials, marine-grade engineering, and quality standards.',
-    articles: [
-      {
-        title: 'Materials Reference',
-        desc: 'PVC, Hypalon, drop-stitch, denier ratings — understand what your inflatable gear is made of.',
-        href: '/learn/materials',
-      },
-      {
-        title: 'PVC vs Hypalon',
-        desc: 'The definitive comparison of PVC and Hypalon fabrics for inflatable boats — durability, UV resistance, and cost.',
-        href: '/learn/materials',
-      },
-      {
-        title: 'Drop-Stitch Core Explained',
-        desc: 'How thousands of internal threads create a rigid platform at 12-15 PSI for high-performance inflatable SUPs.',
-        href: '/learn/materials',
-      },
-      {
-        title: 'Inflatable Technology Overview',
-        desc: 'How inflatable boats and SUPs are constructed — from material layup to valve systems and seam welding.',
-        href: '/learn/materials',
-      },
-      {
-        title: 'Inflatable Boat Manufacturing',
-        desc: 'How afarer manufactures inflatable boats and SUPs — materials, welding, quality control, and OEM/ODM capabilities.',
-        href: '/bateau-gonflable-fabricant',
-      },
-      {
-        title: 'Inflatable vs Hard Board',
-        desc: 'Key differences between inflatable and hard boards — portability, performance, durability, and cost.',
-        href: '/v2/inflatable-sup-vs-hard-board',
-      },
-    ],
-  },
   'water-safety': {
     title: 'Water Safety Knowledge — Safe Paddling Guides | Afarer',
     description:
@@ -145,7 +106,7 @@ const LEARN_PAGES: Record<
       },
       {
         title: 'CE Certification Explained',
-        desc: 'What CE certification means for inflatable watercraft — the standards, testing, and why it matters for safety.',
+        desc: 'What CE certification means for inflatable SUP boards — the standards, testing, and why it matters for safety.',
         href: '/trust',
       },
     ],
@@ -163,9 +124,9 @@ const LEARN_PAGES: Record<
     articles: [],
   },
   'inflatable-technology': {
-    title: 'Inflatable Watercraft Technology — Materials, Construction & Engineering',
+    title: 'Inflatable SUP Technology — Materials, Construction & Engineering',
     description:
-      'How inflatable boats and SUPs are built — material layup, drop-stitch cores, valve systems, RF welding, and quality testing. Understand what makes a durable, high-performance inflatable.',
+      'How inflatable SUP boards are built — material layup, drop-stitch cores, valve systems, RF welding, and quality testing. Understand what makes a durable, high-performance inflatable.',
     articles: [],
   },
   'intermediate-techniques': {
@@ -175,15 +136,9 @@ const LEARN_PAGES: Record<
     articles: [],
   },
   materials: {
-    title: 'Inflatable Watercraft Materials — PVC, Hypalon, EVA & Drop-Stitch Fabric',
+    title: 'Inflatable SUP Materials — PVC, EVA & Drop-Stitch Fabric',
     description:
-      'Comprehensive guide to materials used in inflatable watercraft manufacturing: military-grade PVC, Hypalon (CSM), EVA foam decking, drop-stitch fabric, carbon fiber, and aluminum alloys. Specifications, applications, and selection criteria.',
-    articles: [],
-  },
-  'pvc-vs-hypalon': {
-    title: 'PVC vs Hypalon Inflatable Boat Material — Complete Comparison',
-    description:
-      "Detailed comparison of PVC vs Hypalon (CSM) for inflatable boats, RIBs, and dinghies. Durability, cost, repairability, UV resistance, temperature range, and application recommendations with data from Afarer's PVC Fabric Lab.",
+      'Comprehensive guide to materials used in inflatable SUP manufacturing: military-grade PVC, EVA foam decking, drop-stitch fabric, carbon fiber, and aluminum alloys. Specifications, applications, and selection criteria.',
     articles: [],
   },
   'safety-in-water-sports': {

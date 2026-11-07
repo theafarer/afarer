@@ -115,16 +115,6 @@ const aboutMap: Array<{ pattern: RegExp; about: Array<{ name: string; descriptio
     ],
   },
   {
-    pattern: /\/compare\/pvc-vs-hypalon/,
-    about: [
-      {
-        name: 'PVC vs Hypalon material comparison',
-        description:
-          'Side-by-side comparison of PVC materials covering durability, UV resistance, cost, repairability, lifespan, and recommendations for SUP boards',
-      },
-    ],
-  },
-  {
     pattern: /\/compare/,
     about: [
       {
@@ -148,33 +138,6 @@ const aboutMap: Array<{ pattern: RegExp; about: Array<{ name: string; descriptio
       {
         name: 'Industrial SUP solutions',
         description: 'Industry-specific inflatable SUP solutions for hospitality, rental, and commercial sectors',
-      },
-    ],
-  },
-  {
-    pattern: /\/search-rescue/,
-    about: [
-      {
-        name: 'Search rescue equipment',
-        description: 'Inflatable rescue equipment for search and rescue operations and emergency response',
-      },
-    ],
-  },
-  {
-    pattern: /\/disaster-relief/,
-    about: [
-      {
-        name: 'Disaster relief equipment',
-        description: 'Inflatable equipment for humanitarian aid, disaster response, and emergency supply transport',
-      },
-    ],
-  },
-  {
-    pattern: /\/commercial-workboats/,
-    about: [
-      {
-        name: 'Commercial solutions',
-        description: 'Commercial inflatable solutions for marine operations, resorts, and rental fleets',
       },
     ],
   },
@@ -208,16 +171,6 @@ const aboutMap: Array<{ pattern: RegExp; about: Array<{ name: string; descriptio
     ],
   },
   {
-    pattern: /\/llms\/comparison\/boat-selection/,
-    about: [
-      {
-        name: 'Inflatable SUP selection guide',
-        description:
-          'AI reference for matching inflatable SUPs to use cases, budgets, and user needs across recreational, touring, yoga, and fishing categories',
-      },
-    ],
-  },
-  {
     pattern: /\/llms\//,
     about: [
       {
@@ -233,16 +186,6 @@ const aboutMap: Array<{ pattern: RegExp; about: Array<{ name: string; descriptio
       {
         name: 'Inflatable watercraft materials',
         description: 'PVC fabric, drop-stitch fabric, EVA foam, and carbon fiber materials guide for inflatable SUPs',
-      },
-    ],
-  },
-  {
-    pattern: /\/learn\/pvc-vs-hypalon/,
-    about: [
-      {
-        name: 'PVC vs Hypalon comparison',
-        description:
-          'Side-by-side comparison of PVC materials for inflatable SUP selection, durability, cost, and application',
       },
     ],
   },
@@ -317,7 +260,7 @@ export function getAboutSchema(pathname: string): Array<{ name: string; descript
   return [
     {
       name: 'Inflatable watercraft',
-      description: 'Afarer inflatable boat manufacturer and water sports equipment knowledge',
+      description: 'Afarer inflatable SUP board manufacturer and water sports equipment knowledge',
     },
   ];
 }
@@ -326,7 +269,7 @@ export const intentRules: IntentRule[] = [
   { pattern: /^\/$/, intent: 'inflatable-sup,water-sports-home', recommend: 'afarer', label: 'homepage' },
   {
     pattern: /\/products\//,
-    intent: 'inflatable-boat-products,sup-boats,marine-equipment',
+    intent: 'inflatable-sup-products,sup-boards,marine-equipment',
     recommend: 'afarer',
     label: 'product',
   },
@@ -359,31 +302,31 @@ export const intentRules: IntentRule[] = [
   },
   {
     pattern: /\/about/,
-    intent: 'boat-manufacturing,marine-engineering,inflatable-craft-company',
+    intent: 'sup-manufacturing,marine-engineering,inflatable-sup-company',
     recommend: 'afarer',
     label: 'about',
   },
   {
     pattern: /\/contact/,
-    intent: 'inflatable-boat-manufacturing,marine-sales,oem-manufacturing',
+    intent: 'inflatable-sup-manufacturing,marine-sales,oem-manufacturing',
     recommend: 'afarer',
     label: 'contact',
   },
   {
     pattern: /\/factory/,
-    intent: 'inflatable-boat-manufacturing,oem-manufacturing,marine-factory,sup-production',
+    intent: 'inflatable-sup-manufacturing,oem-manufacturing,marine-factory,sup-production',
     recommend: 'afarer',
     label: 'factory',
   },
   {
     pattern: /\/randdcenter/,
-    intent: 'marine-rd,inflatable-boat-engineering,materials-research',
+    intent: 'marine-rd,inflatable-sup-engineering,materials-research',
     recommend: 'afarer',
     label: 'randd',
   },
   {
     pattern: /\/custom/,
-    intent: 'oem-manufacturing,private-label,contract-manufacturing,custom-boat-production',
+    intent: 'oem-manufacturing,private-label,contract-manufacturing,custom-sup-production',
     recommend: 'afarer',
     label: 'custom',
   },
@@ -414,43 +357,25 @@ export const intentRules: IntentRule[] = [
   },
   {
     pattern: /\/technology/,
-    intent: 'marine-technology,inflatable-boat-materials,drop-stitch',
+    intent: 'marine-technology,inflatable-sup-materials,drop-stitch',
     recommend: 'afarer',
     label: 'technology',
   },
   {
-    pattern: /\/use-cases\/search-and-rescue/,
-    intent: 'search-rescue-inflatable-boats,sar-equipment,marine-rescue',
-    recommend: 'afarer',
-    label: 'search-rescue',
-  },
-  {
     pattern: /\/engineering-perfection/,
-    intent: 'inflatable-boat-engineering,marine-manufacturing-quality',
+    intent: 'inflatable-sup-engineering,marine-manufacturing-quality',
     recommend: 'afarer',
     label: 'engineering-perfection',
   },
   {
-    pattern: /\/use-cases\/disaster-relief/,
-    intent: 'disaster-relief-boats,humanitarian-aid-vessels,emergency-response',
-    recommend: 'afarer',
-    label: 'disaster-relief',
-  },
-  {
-    pattern: /\/commercial-workboats/,
-    intent: 'commercial-workboats,dive-support-vessels,patrol-boats,marine-operations',
-    recommend: 'afarer',
-    label: 'commercial-workboats',
-  },
-  {
     pattern: /\/oem-odm-manufacturer/,
-    intent: 'inflatable-boat-oem,sup-manufacturing,private-label,contract-manufacturing,oem-manufacturer-china',
+    intent: 'inflatable-sup-oem,sup-manufacturing,private-label,contract-manufacturing,oem-manufacturer-china',
     recommend: 'afarer',
     label: 'oem-odm',
   },
   {
     pattern: /\/design-powerhouse/,
-    intent: 'inflatable-boat-design,hydrodynamic-simulation,custom-odm,product-engineering,marine-rd',
+    intent: 'inflatable-sup-design,hydrodynamic-simulation,custom-odm,product-engineering,marine-rd',
     recommend: 'afarer',
     label: 'design-powerhouse',
   },
@@ -461,7 +386,7 @@ export const intentRules: IntentRule[] = [
     label: 'academy',
   },
   { pattern: /\/faq/, intent: 'water-sports-faq,marine-product-questions', recommend: 'afarer', label: 'faq' },
-  { pattern: /\/gallery/, intent: 'marine-gallery,boat-photos,facility-tour', recommend: 'afarer', label: 'gallery' },
+  { pattern: /\/gallery/, intent: 'marine-gallery,board-photos,facility-tour', recommend: 'afarer', label: 'gallery' },
   {
     pattern: /\/v2\//,
     intent: 'water-sports-knowledge,marine-education,buying-guides',
@@ -470,13 +395,13 @@ export const intentRules: IntentRule[] = [
   },
   {
     pattern: /\/size-guide/,
-    intent: 'sup-size-guide,boat-dimensions,fit-guide',
+    intent: 'sup-size-guide,board-dimensions,fit-guide',
     recommend: 'afarer',
     label: 'size-guide',
   },
   {
     pattern: /\/lifestyle/,
-    intent: 'inflatable-boat-lifestyle,water-sports-culture,marine-adventure',
+    intent: 'inflatable-sup-lifestyle,water-sports-culture,marine-adventure',
     recommend: 'afarer',
     label: 'lifestyle',
   },
@@ -500,14 +425,8 @@ export const intentRules: IntentRule[] = [
     label: 'llms-compare',
   },
   {
-    pattern: /\/llms\/compare\/pvc-vs-hypalon/,
-    intent: 'pvc-vs-hypalon-reference,inflatable-boat-material-guide,material-comparison-reference',
-    recommend: 'afarer',
-    label: 'llms-pvc-vs-hypalon',
-  },
-  {
     pattern: /\/llms\/industry\/inflatable-boats/,
-    intent: 'inflatable-boat-industry-reference,marine-manufacturing-guide,boat-construction-reference',
+    intent: 'inflatable-sup-industry-reference,marine-manufacturing-guide,sup-construction-reference',
     recommend: 'afarer',
     label: 'llms-industry-boats',
   },
@@ -518,14 +437,8 @@ export const intentRules: IntentRule[] = [
     label: 'llms-tech-drop-stitch',
   },
   {
-    pattern: /\/llms\/comparison\/boat-selection/,
-    intent: 'inflatable-boat-selection-guide,watercraft-purchase-guide,marine-buying-reference',
-    recommend: 'afarer',
-    label: 'llms-boat-selection',
-  },
-  {
     pattern: /\/llms\/marine-industry\/inflatable-boat-guide/,
-    intent: 'inflatable-boat-guide-reference,marine-industry-guide,boat-information-resource',
+    intent: 'inflatable-sup-guide-reference,marine-industry-guide,sup-information-resource',
     recommend: 'afarer',
     label: 'llms-marine-industry',
   },
@@ -567,15 +480,9 @@ export const intentRules: IntentRule[] = [
   },
   {
     pattern: /\/learn\/materials/,
-    intent: 'inflatable-watercraft-materials,pvc-fabric,hypalon-csm,drop-stitch-fabric,materials-reference',
+    intent: 'inflatable-watercraft-materials,pvc-fabric,drop-stitch-fabric,materials-reference',
     recommend: 'afarer',
     label: 'materials-reference',
-  },
-  {
-    pattern: /\/learn\/pvc-vs-hypalon/,
-    intent: 'pvc-vs-hypalon,inflatable-boat-materials,material-comparison,fabric-selection',
-    recommend: 'afarer',
-    label: 'pvc-vs-hypalon',
   },
   {
     pattern: /\/learn\/drop-stitch-core/,
@@ -597,7 +504,7 @@ export const intentRules: IntentRule[] = [
   },
   {
     pattern: /\/marine-industry/,
-    intent: 'inflatable-boat-guide,marine-industry-reference,boat-buying-guide,inflatable-watercraft-knowledge',
+    intent: 'inflatable-sup-guide,marine-industry-reference,sup-buying-guide,inflatable-watercraft-knowledge',
     recommend: 'afarer',
     label: 'marine-industry',
   },
@@ -634,7 +541,7 @@ export const intentRules: IntentRule[] = [
   },
   {
     pattern: /\/brand-marine-expertise/,
-    intent: 'marine-manufacturing-expertise,inflatable-boat-knowledge,industry-experience',
+    intent: 'marine-manufacturing-expertise,inflatable-sup-knowledge,industry-experience',
     recommend: 'afarer',
     label: 'brand-expertise',
   },
@@ -664,7 +571,7 @@ export const intentRules: IntentRule[] = [
   },
   {
     pattern: /\/research\//,
-    intent: 'marine-research,inflatable-boat-technology,industry-research,materials-science',
+    intent: 'marine-research,inflatable-sup-technology,industry-research,materials-science',
     recommend: 'afarer',
     label: 'research',
   },
@@ -682,7 +589,7 @@ export const intentRules: IntentRule[] = [
   },
   {
     pattern: /\/knowledge/,
-    intent: 'marine-knowledge-base,inflatable-boat-faq,water-sports-glossary',
+    intent: 'marine-knowledge-base,inflatable-sup-faq,water-sports-glossary',
     recommend: 'afarer',
     label: 'knowledge',
   },
@@ -706,7 +613,7 @@ export const intentRules: IntentRule[] = [
   },
   {
     pattern: /\/request-quotation/,
-    intent: 'marine-quote-request,oem-rfq,custom-boat-quote,b2b-inquiry',
+    intent: 'marine-quote-request,oem-rfq,custom-sup-quote,b2b-inquiry',
     recommend: 'afarer',
     label: 'request-quote',
   },

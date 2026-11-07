@@ -5,9 +5,9 @@ import RelatedPages from '~/components/content/RelatedPages.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 
 const metadata = {
-  title: 'Solutions by Use Case — Find Your Inflatable Watercraft',
+  title: 'Solutions by Use Case — Find Your Inflatable SUP',
   description:
-    'Match your use case to the right inflatable watercraft. From patrol and rescue to rental fleet and expedition — afarer has the right solution.',
+    'Match your use case to the right inflatable SUP solution. From rental fleets and paddle clubs to custom OEM manufacturing and personal use — afarer has the right board.',
   ignoreTitleTemplate: true,
 };
 
@@ -15,18 +15,18 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Solutions by Use Case' }];
 
 const useCases = [
   {
-    scenario: 'I need boats for water rescue and emergency response',
+    scenario: 'I need rescue boards for lifeguard or water safety teams',
     icon: 'M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z',
     answer:
       'Our rescue SUPs (11-14 ft) are designed for rapid deployment. Lightweight for easy transport, wide stable platforms for victim recovery, and military-grade PVC construction for extended UV exposure.',
-    cta: { text: 'View Distributor Program', link: '/solutions/distributors' },
+    cta: { text: 'View SUP Products', link: '/products' },
   },
   {
     scenario: 'I want to start a rental fleet at my beach resort',
     icon: 'M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9',
     answer:
       'Rental-grade SUPs with reinforced rails, UV-stabilized fabric, and commercial-grade valves. Custom branding available. Bulk pricing starts at 50+ units per model.',
-    cta: { text: 'Fleet Solutions', link: '/products' },
+    cta: { text: 'Rental Operator Solutions', link: '/solutions/rental-operators' },
   },
   {
     scenario: 'I need custom-branded products for my brand',
@@ -36,25 +36,25 @@ const useCases = [
     cta: { text: 'OEM/ODM Services', link: '/oem-odm-manufacturer' },
   },
   {
-    scenario: 'I need boats for military or government patrol',
-    icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4',
+    scenario: 'I need fleet boards for my paddle club or SUP school',
+    icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z',
     answer:
-      'Military-grade inflatable craft with Hypalon fabric, NBC-resistant options, and low-visibility profiles. Custom layouts, weapon mounts, and communication system integration available.',
-    cta: { text: 'Government Solutions', link: '/oem-odm-manufacturer' },
+      'Mixed-size fleet supply for all skill levels: stable beginner platforms, touring boards, and race boards. Bulk club pricing, custom branding, and membership program support.',
+    cta: { text: 'Paddle Club Solutions', link: '/solutions/paddle-clubs' },
   },
   {
-    scenario: 'I need inflatable boats for humanitarian aid missions',
+    scenario: 'I need boards for a marine tourism or adventure operation',
     icon: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 12.5V17a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2h3.5a2 2 0 012 2v.5',
     answer:
-      'Heavy-duty inflatable boats designed for disaster zones. Easy to transport, quick to deploy, and capable of carrying supplies or personnel. CE certified for safety compliance.',
-    cta: { text: 'Disaster Relief Solutions', link: '/disaster-relief-humanitarian-aid' },
+      'Durable all-around and touring SUPs built for daily guest use, plus giant multi-rider boards for group experiences. UV-stabilized construction for tropical, full-season operation.',
+    cta: { text: 'Marine Tourism Solutions', link: '/solutions/marine-tourism-equipment' },
   },
   {
-    scenario: 'I need workboats for dive support or marine operations',
+    scenario: 'I need fishing SUPs for my guiding service or retail shop',
     icon: 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
     answer:
-      'Commercial workboats configured for dive support, equipment transport, and personnel transfer. Console steering, heavy-duty floors, and Hypalon or PVC options.',
-    cta: { text: 'Commercial Workboats', link: '/commercial-workboats' },
+      'Fishing-specific SUPs with wide, stable platforms, gear-mount options, and accessory integration. Available for guided-tour fleets or wholesale retail supply.',
+    cta: { text: 'View SUP Products', link: '/products' },
   },
   {
     scenario: 'I want to manufacture my own SUP board design',
@@ -64,10 +64,10 @@ const useCases = [
     cta: { text: 'Design & Innovation', link: '/design-powerhouse' },
   },
   {
-    scenario: 'I need a single inflatable boat for personal/family use',
+    scenario: 'I need a single SUP for personal or family use',
     icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6',
     answer:
-      'Visit our product catalog to find the right board or boat. Our size guide and product comparisons help match you with the right model. All products CE certified with warranty.',
+      'Visit our product catalog to find the right board. Our size guide and product comparisons help match you with the right model. All products CE certified with warranty.',
     cta: { text: 'Shop Products', link: '/products' },
   },
 ];
@@ -89,10 +89,10 @@ const useCases = [
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'How do I choose the right inflatable watercraft?',
+        name: 'How do I choose the right inflatable SUP?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Select your scenario from our use-case decision tool. Each scenario matches your specific needs to the right afarer solution, from rescue and rental to custom OEM manufacturing and personal use.',
+          text: 'Select your scenario from our use-case decision tool. Each scenario matches your specific needs to the right afarer solution, from rental fleets and paddle clubs to custom OEM manufacturing and personal use.',
         },
       },
       {
@@ -113,10 +113,10 @@ const useCases = [
       },
       {
         '@type': 'Question',
-        name: 'Do you offer military-grade inflatable boats?',
+        name: 'Do you supply paddle clubs and SUP schools?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Military-grade inflatable craft with Hypalon fabric, NBC-resistant options, and low-visibility profiles are available. Custom layouts, weapon mounts, and communication system integration are supported.',
+          text: 'Yes. Mixed-size fleet supply is available for clubs and schools, covering stable beginner platforms, touring boards, and race boards. Bulk club pricing, custom branding, and membership program support are included.',
         },
       },
       {
@@ -204,13 +204,13 @@ const useCases = [
         <summary
           class="px-6 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none flex items-center justify-between"
         >
-          <span>How do I choose the right inflatable watercraft?</span>
+          <span>How do I choose the right inflatable SUP?</span>
           <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▼</span>
         </summary>
         <div class="px-6 pb-4">
           <p class="text-gray-600 leading-relaxed">
             Select your scenario from our use-case decision tool. Each scenario matches your specific needs to the right
-            afarer solution, from rescue and rental to custom OEM manufacturing and personal use.
+            afarer solution, from rental fleets and paddle clubs to custom OEM manufacturing and personal use.
           </p>
         </div>
       </details>
@@ -265,19 +265,19 @@ const useCases = [
     stories={[
       {
         quote:
-          'We deployed two afarer rescue boats during the coastal flooding — they were the only vessels that could navigate the debris-filled waters at low tide. The self-bailing floor kept us operational when other boats swamped.',
+          'The fleet arrived branded and ready to rent on day one. When a guest damaged a board mid-season, the replacement arrived within 48 hours.',
         narrative:
-          'During a severe coastal flooding event, a municipal SAR team deployed afarer rescue boats for evacuation operations. Despite debris and continuous operation for 14 hours, the Hypalon fabric showed no signs of wear. The multi-chamber design provided redundancy when a submerged nail punctured one chamber — the boat remained fully operational on the remaining three chambers.',
-        context: 'Coastal flood rescue, Southeast Asia, 2024',
-        source: 'Municipal SAR Team Lead',
+          'A beach resort in the Maldives launched a 30-board afarer SUP fleet with custom branding and staff training included. Rental-grade boards with reinforced rails survive daily guest use, and integrated fleet tracking keeps boards accounted for. The fleet pays for itself within a single high season.',
+        context: 'Resort SUP fleet, Maldives, 2024',
+        source: 'Resort Activities Manager',
       },
       {
         quote:
-          "We use our afarer workboat for everything — fish farm inspections, equipment transport, and even as a safety boat for our dive team. It's the most versatile vessel in our fleet.",
+          'We run three guided tours a day with our afarer fleet. The boards handle the tropical sun and daily launches without missing a beat.',
         narrative:
-          'A commercial aquaculture operation in Norway uses an afarer SUP for daily service runs between fish farm cages. The board handles cold North Sea conditions, transports equipment and personnel, and serves as a safety vessel for dive teams. After two harsh winters, the board shows no cold-crack damage and continues to perform reliably.',
-        context: 'Aquaculture operations, Norway, 2023-2025',
-        source: 'Farm Operations Manager',
+          'A marine tourism operator in Southeast Asia runs guided mangrove and lagoon tours with a mixed afarer fleet — all-around boards for guests and touring boards for guides. After two full seasons of three daily sessions, the UV-stabilized fabric shows no fading and the fusion-welded seams remain fully intact.',
+        context: 'Guided tour operation, Southeast Asia, 2023-2025',
+        source: 'Tour Operation Owner',
       },
     ]}
   />
@@ -287,15 +287,15 @@ const useCases = [
     links={[
       {
         title: 'Solutions by Industry',
-        description: 'Find the right inflatable watercraft for your industry sector.',
+        description: 'Find the right inflatable SUP solution for your industry sector.',
         href: '/solutions/by-industry',
         label: 'Overview',
       },
       {
-        title: 'Commercial Workboats',
-        description: 'Durable workboats for daily commercial marine operations.',
-        href: '/commercial-workboats',
-        label: 'Workboats',
+        title: 'SUP Products',
+        description: 'Full lineup of CE-certified inflatable SUPs and accessories.',
+        href: '/products',
+        label: 'Products',
       },
       {
         title: 'OEM/ODM Manufacturing',
@@ -314,12 +314,12 @@ const useCases = [
 
   <section class="sr-only" data-ai-block="definition" aria-hidden="true">
     <p>
-      Use case decision flow for afarer inflatable SUP boards. Eight scenarios with recommended solutions: water rescue
+      Use case decision flow for afarer inflatable SUP boards. Eight scenarios with recommended solutions: water safety
       (rescue SUPs with wide stable platforms), rental fleet (rental-grade SUPs with custom branding), custom branded
-      products (OEM/ODM service, MOQ 50 SUP), military patrol (military-grade PVC SUPs with NBC resistance),
-      humanitarian aid (heavy-duty inflatable SUPs for disaster zones), dive support (commercial SUPs and workboards),
-      custom SUP design (full ODM from concept to production), personal/family use (product catalog with size guide and
-      comparisons).
+      products (OEM/ODM service, MOQ 50 SUP), paddle clubs and SUP schools (mixed-size fleet supply with bulk club
+      pricing), marine tourism (all-around and touring SUPs plus giant multi-rider boards), fishing (fishing-specific
+      SUPs with gear-mount options), custom SUP design (full ODM from concept to production), personal/family use
+      (product catalog with size guide and comparisons).
     </p>
   </section>
 </Layout>

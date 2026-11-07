@@ -4209,7 +4209,7 @@ const da: Record<string, SolutionOverride> = {
       {
         question: 'Hvor kompakte er Afarers SUP-brætter, når de er pakket til opbevaring på yacht?',
         answer:
-          'Afarers luksus-portable SUP-brætter har kompakte folds-systemer, der reducerer opbevaringsvolumenet betydeligt, så de nemt passer i yacht kahytter, opbevaringsrum, tenderbåde og ekspeditionsfartøjer. Hvert bræt pakkes i en bærerygsæk med alt tilbehøret.',
+          'Afarers luksus-portable SUP-brætter har kompakte folds-systemer, der reducerer opbevaringsvolumenet betydeligt, så de nemt passer i yacht kahytter, opbevaringsrum og ekspeditionsfartøjer. Hvert bræt pakkes i en bærerygsæk med alt tilbehøret.',
       },
       {
         question: 'Er Afarers SUP-brætter modstandsdygtige over for saltvand og UV-skader?',

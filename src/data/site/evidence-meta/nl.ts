@@ -24,7 +24,7 @@ export const evidenceMetaNl: EvidenceMetaMap = {
   'search-rescue-sup-fleet': {
     title: 'Maritiem agentschap Zuidoost-Azië — Patrouille- en reddings-SUP-vloot | Afarer',
     description:
-      "Een overheids-maritiem agentschap vereiste 20 patrouille- en reddings-SUP's met brandwerend Hypalon-doek, geïntegreerde communicatiesteunen en conformiteit met SOLAS hoofdstuk III.",
+      "Een overheids-maritiem agentschap vereiste 20 patrouille- en reddings-SUP's met hoogzichtbare dekken, geïntegreerde communicatiesteunen en CE-gecertificeerde constructie.",
   },
   'european-dtc-ecommerce': {
     title: 'Europese DTC-watersportmerk — Merk-SUP + accessoirelijn | Afarer',
@@ -52,7 +52,7 @@ export const evidenceMetaNl: EvidenceMetaMap = {
       'Een Canadese detailhandelaar met 25 winkels vereiste een exclusieve private-label SUP-range met tweetalige Frans/Engelse verpakking, specificaties voor koude klimaten en conformiteit met Canadese vaarvoorschriften.',
   },
   'middle-east-distributor': {
-    title: "Midden-Oostense watersportdistributeur — Volledige productlijn — SUP's, boten, accessoires | Afarer",
+    title: "Midden-Oostense watersportdistributeur — Volledige productlijn — SUP's en accessoires | Afarer",
     description:
       'Een in de GCC gevestigde distributeur wilde exclusieve rechten op de volledige Afarer-productlijn in 6 Golfstaten, met Arabische verpakking, hittebestendige materiaalspecificaties en sharia-conforme garantiebepalingen.',
   },
@@ -75,11 +75,6 @@ export const evidenceMetaNl: EvidenceMetaMap = {
     title: 'Britse universiteitssportbond — Studentenclubvloot — SUP + veiligheid | Afarer',
     description:
       "Een Britse universiteit met een actieve watersportclub moest een verouderde vloot vervangen door moderne opblaasbare SUP's: beperkte opslag op de campus, geschikt voor elk niveau en conform BUCS-competitiestandaarden.",
-  },
-  'humanitarian-aid-project': {
-    title: 'Internationale humanitaire organisatie — Reddings- en hulpboten | Afarer',
-    description:
-      'Een internationale humanitaire organisatie had 50 robuuste opblaasbare boten nodig voor reddingsoperaties bij overstromingen in Zuidoost-Azië: licht voor helikoptervervoer en ter plaatse te repareren.',
   },
   'cruise-line-activity-program': {
     title: 'Caribische cruisemaatschappij — Vloot voor boordactiviteiten — SUP | Afarer',

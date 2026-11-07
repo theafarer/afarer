@@ -1,6 +1,6 @@
 meta:
   title: Hull Engineering Studio — CAD, FEA en Aangepast Rompontwerp | {SITE}
-  description: Ontdek onze Hull Engineering Studio voor CAD-ontwerp, eindige-elementenanalyse (FEA) en op maat gemaakte ontwikkeling van HDPE-/aluminium-/glasvezelrompen. Neem contact op met ons engineeringteam om uw volgende botenproject te starten.
+  description: Ontdek onze Hull Engineering Studio voor CAD-ontwerp, eindige-elementenanalyse (FEA) en op maat gemaakte ontwikkeling van hoogpresterende SUP-rompen. Neem contact op met ons engineeringteam om uw volgende boardproject te starten.
 back_text: Terug naar R&D Centrum
 home_label: Home
 hero:
@@ -10,12 +10,12 @@ hero:
   image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
   image_alt: Afarer romp engineering CAD-ontwerpwerkstation
 intro: >-
-  De romp is de ruggengraat van elke opblaasbare boot. Hij moet licht genoeg zijn om efficiënt te kunnen planeren, sterk genoeg om impactbelastingen op te vangen en dimensionaal stabiel zijn over een breed temperatuurbereik. Bij Afarer combineert onze Hull Engineering Studio geavanceerde
-  CAD-modellering, eindige-elementenanalyse (FEA) en tientallen jaren praktische ervaring in scheepsarchitectuur om rompen te leveren die geoptimaliseerd zijn voor hun beoogde missie — niet generieke vormen aangepast uit een catalogus.
+  De romp is de ruggengraat van elke opblaasbare SUP. Hij moet licht genoeg zijn om efficiënt te glijden, sterk genoeg om rotsige kusten aan te kunnen en stijf genoeg om elke peddelslag om te zetten in voorwaartse beweging. Bij Afarer combineert onze Hull Engineering Studio geavanceerde
+  CAD-modellering, eindige-elementenanalyse (FEA) en tientallen jaren praktische ervaring in boardontwerp om rompen te leveren die geoptimaliseerd zijn voor hun beoogde discipline — niet generieke vormen aangepast uit een catalogus.
 content_html: >
   <h2>Waar sterkte en hydrodynamica samenkomen</h2>
 
-  <p>We werken met drie primaire rompmaterialen — rotatiegegoten HDPE, gelast scheepsaluminium en handgelegd glasvezel — en beschikken over de technische capaciteit om elk materiaal in eigen huis te ontwerpen, te simuleren en te valideren.</p>
+  <p>We werken met drie primaire constructieplatformen — versterkte drop-stitch PVC-kernen, handgelegde glasvezellaminaten en rotatiegegoten polyethyleen — en beschikken over de technische capaciteit om elk platform in eigen huis te ontwerpen, te simuleren en te valideren.</p>
 
 
   <h2>Ontwerptools en normen</h2>
@@ -25,7 +25,7 @@ content_html: >
   <table>
     <thead><tr><th>Capaciteit</th><th>Software / Tool</th><th>Toepassing</th></tr></thead>
     <tbody>
-      <tr><td>3D-parametrisch modelleren</td><td>SolidWorks Professional</td><td>Romp-oppervlak, stringersysteem, motorbracket, dekindeling</td></tr>
+      <tr><td>3D-parametrisch modelleren</td><td>SolidWorks Professional</td><td>Romp-oppervlak, rail- en stringerversterking, dekindeling, bevestigingspunten voor uitrusting</td></tr>
       <tr><td>Eindige-elementenanalyse (FEA)</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Spanningstoewijzing, modale analyse, crash-/impactsimulatie</td></tr>
       <tr><td>Numerieke stromingsleer (CFD)</td><td>Ansys Fluent / Star-CCM+</td><td>Voorspelling van hydrodynamische weerstand, trimoptimalisatie</td></tr>
       <tr><td>Laminaatengineering</td><td>ESAComp / CADEC</td><td>Laagopbouw van glasvezel, kernselectie, gewichtsinschatting</td></tr>
@@ -39,16 +39,16 @@ content_html: >
   <p>Elk rompontwerp, of het nu een standaardmodel of een volledig op maat gemaakt project betreft, doorloopt een strikt vijfstappenproces:</p>
 
   <ol>
-    <li><strong>Concept &amp; eisenverzameling</strong> — We spreken met u af om het laadvermogen, het snelheidsbereik, de capaciteit voor zeecondities, de sleepvereisten en eventuele speciale missie-uitrusting (dekluiken, consoleposities, brandstoftankintegratie) te definiëren.</li>
-    <li><strong>3D-modellering &amp; hydrostatische berekening</strong> — De rompvorm wordt in SolidWorks gemodelleerd en met behulp van ingebouwde analysetools gecontroleerd op hydrostatische stabiliteit (GM, oprichtarm).</li>
-    <li><strong>Structurele FEA</strong> — Er worden belastingsgevallen gedefinieerd: statisch (bemanning + uitrusting), dynamisch (planeerimpact bij 5g) en slamming (neerkomen vanaf een golfkam met 3 m/s). De spanningscontouren worden beoordeeld; een veiligheidsfactor ≥ 2.5 is verplicht.</li>
+    <li><strong>Concept &amp; eisenverzameling</strong> — We spreken met u af om het gewicht van de rijder en het laadvermogen, het snelheidsbereik, de capaciteit voor watercondities, transportvereisten en eventuele speciale missie-uitrusting (dekbevestigingen, positionering van laaduitsnoeringen, accessoireintegratie) te definiëren.</li>
+    <li><strong>3D-modellering &amp; hydrostatische berekening</strong> — De rompvorm wordt in SolidWorks gemodelleerd en met behulp van ingebouwde analysetools gecontroleerd op hydrostatische stabiliteit, volumeverdeling en oprichtmoment.</li>
+    <li><strong>Structurele FEA</strong> — Er worden belastingsgevallen gedefinieerd: statisch (rijder + uitrusting), dynamisch (golflandingimpact bij 5g) en gronding (het raken van een rotsige kust met 3 m/s). De spanningscontouren worden beoordeeld; een veiligheidsfactor ≥ 2.5 is verplicht.</li>
     <li><strong>CFD-weerstandsoptimalisatie</strong> — De romp wordt gesimuleerd onder drie beladingstoestanden en bij vijf snelheden. Het natte oppervlak, de trimhoek en de restweerstand worden iteratief verminderd.</li>
-    <li><strong>Ontwerpreview &amp; vrijgave</strong> — Het complete technische pakket (3D-model, FEA-rapport, CFD-rapport, gewichtsinschatting, platenboek) wordt vóór vrijgave aan de prototypenwerkplaats beoordeeld door onze senior scheepsarchitect.</li>
+    <li><strong>Ontwerpreview &amp; vrijgave</strong> — Het complete technische pakket (3D-model, FEA-rapport, CFD-rapport, gewichtsinschatting, platenboek) wordt vóór vrijgave aan de prototypenwerkplaats beoordeeld door onze senior engineer.</li>
   </ol>
 
 
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA-spanningsverdeling — Patrouillebootromp (aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA-spanningsverdeling — Touring-SUP-romp (versterkt drop-stitch)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
@@ -72,27 +72,27 @@ content_html: >
 
   <h2>Maatwerk: uw romp, uw regels</h2>
 
-  <p>Geen twee gebruikers hebben identieke eisen. Een boot voor havenpatrouille heeft een ondiepe V-romp nodig voor stabiliteit bij lage snelheid; een snelle onderscheppingsboot heeft een diepe V-romp met sprayrails nodig; een duikondersteuningsboot heeft een brede romp en een lage spiegel nodig. We
-  dwingen uw toepassing niet in een bestaande rompvorm. We ontwerpen uitgaande van uw specificatie.</p>
+  <p>Geen twee peddelaars hebben identieke eisen. Een vis-SUP heeft een brede, stabiele planerende romp nodig; een touringboard heeft een verdringingsromp nodig die het glijvermogen maximaliseert; een surf-SUP heeft responsieve rails en afgestemde rocker nodig. We dwingen uw toepassing niet in een
+  bestaande rompvorm. We ontwerpen uitgaande van uw specificatie.</p>
 
   <p>Voorbeelden van recente projecten op het gebied van aangepaste rompengineering:</p>
 
   <ul>
-    <li>Een uitgerekte HDPE-romp van 6.8 m voor een Caribische touroperator, met een versterkte boeg voor strandlandingen (+15 % bodemdikte).</li>
-    <li>Een lichtgewicht aluminium patrouilleboot van 7.2 m voor een kustwacht, met geïntegreerde brandstoftankschotten en verstijvers voor de uitrustingskluizen.</li>
-    <li>Een duikboot van glasvezel van 5.5 m met een verlaagde spiegel en dubbele accubakken, ontworpen voor een gemakkelijke herinstap voor snorkelaars.</li>
+    <li>Een verlengde touring-SUP voor een Caribische ecotouroperator, met een versterkte boeg voor strandlandingen (+15 % raildikte).</li>
+    <li>Een patrouille-SUP met hoge zichtbaarheid voor een havenautoriteit, met geïntegreerde uitrustingsbevestigingen en tactische rails.</li>
+    <li>Een expeditie-touring-SUP voor een verhuurvloot, met versterkte rails en extra laaduitsnoeringen.</li>
   </ul>
 
 
   <h2>Onze engineers</h2>
 
-  <p>De studio staat onder leiding van een senior scheepsarchitect met 14 jaar ervaring in het ontwerp van hogesnelheidsvaartuigen, ondersteund door twee werktuigbouwkundigen die gespecialiseerd zijn in FEA en CFD. Alle drie hebben een gevorderd diploma in maritieme techniek of scheepsbouwkunde van
-  internationaal erkende universiteiten. Het team publiceert regelmatig in vaktijdschriften en presenteert op congressen zoals de International Conference on High-Performance Marine Vehicles.</p>
+  <p>De studio staat onder leiding van een senior engineer met 14 jaar ervaring in het ontwerp van hoogpresterende boards, ondersteund door twee werktuigbouwkundigen die gespecialiseerd zijn in FEA en CFD. Alle drie hebben een gevorderd diploma in maritieme of werktuigbouwkunde van
+  internationaal erkende universiteiten. Het team publiceert regelmatig in vaktijdschriften en presenteert op internationale congressen over engineering van hoogpresterende paddlesport.</p>
 
 
   <h2>Werk samen met ons aan uw volgende romp</h2>
 
-  <p>Vanaf de eerste conceptschets tot aan het definitieve spanningsrapport is onze Hull Engineering Studio uw partner bij het creëren van een boot die niet alleen gebouwd — maar ook geëngineerd is. We investeren vooraf in de simulatie-uren, zodat elke las, elke laminaatlaag en elke curve van de
+  <p>Vanaf de eerste conceptschets tot aan het definitieve spanningsrapport is onze Hull Engineering Studio uw partner bij het creëren van een board die niet alleen gebouwd — maar ook geëngineerd is. We investeren vooraf in de simulatie-uren, zodat elke las, elke laminaatlaag en elke curve van de
   romp er met een reden is.</p>
 
   <p>Of u nu een kleine aanpassing aan een bestaand model of een volledig nieuw ontwerp vanaf nul nodig hebt, wij staan klaar om uw eisen te bespreken.</p>

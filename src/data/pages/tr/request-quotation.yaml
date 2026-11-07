@@ -1,6 +1,6 @@
 meta:
   title: 'Teklif İste — OEM SUP üretimi | {SITE}'
-  description: 'Şişme SUP veya tekne projeniz için ayrıntılı bir teklif isteyin. OEM/ODM üretimi, özel etiket veya özel filolar — 2 iş günü içinde yanıt veriyoruz.'
+  description: 'Şişme SUP projeniz için ayrıntılı bir teklif isteyin. OEM/ODM üretimi, özel etiket veya özel filolar — 2 iş günü içinde yanıt veriyoruz.'
   keywords:
     - 'SUP teklif iste'
     - 'OEM paddle board teklifi'
@@ -52,8 +52,6 @@ content_form:
         - Balıkçılık
         - Deniz Turizmi / Tatil Köyü
         - Arama ve Kurtarma
-        - Yat Botu
-        - Ticari İş Teknesi
         - Hükümet / Askeri
         - OEM / Özel Marka
         - Kişisel / Eğlence
@@ -72,15 +70,14 @@ content_form:
       options:
         - Tercih Yok
         - Deniz Sınıfı PVC (1100 dtex)
-        - Premium Hypalon / CSM
-        - Fiberglass Gövde
+        - Fiberglas Gövde
         - Alüminyum Gövde
     - name: Motor gereksinimi
       type: text
-      placeholder: örn. 60 HP dıştan takma motor, motorsuz, ikiz 115 HP
+      placeholder: örn. standart kürek donanımı, elektrikli pompa, özel renkler
     - name: Gerekli özelleştirme
       type: text
-      placeholder: örn. özel renkler, marka/logo, ambalaj, özel aksesuarlar
+      placeholder: örn. özel renkler, marka/logo, ambalaj, özel donanımlar
     - name: Teslimat süresi
       type: text
       placeholder: ör. 90 gün içinde teslimat

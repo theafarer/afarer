@@ -1,6 +1,6 @@
 meta:
   title: 'Wyposażenie fabryki — cięcie, spawanie HF i druk | {SITE}'
-  description: 'Sprzęt produkcyjny klasy przemysłowej afarera: cięcie PVC, spawanie HF, druk cyfrowy, montaż i testowanie nadmuchiwanych desek SUP i łodzi.'
+  description: 'Sprzęt produkcyjny klasy przemysłowej afarera: cięcie PVC, spawanie HF, druk cyfrowy, montaż i testowanie nadmuchiwanych desek SUP.'
   keywords:
     - 'sprzęt do produkcji SUP'
     - 'fabryka nadmuchiwanych SUP'
@@ -17,7 +17,7 @@ categories:
     items:
       - name: Automatyczna Maszyna do Cięcia PVC
         spec: Sterowana CNC, 6.5 m × 2.5 m, dokładność 0.1 mm
-        desc: Sterowana komputerowo automatyczna maszyna do cięcia tkanin PVC, Hypalon i drop-stitch. Oprogramowanie do układania optymalizuje wykorzystanie materiału poniżej 5% odpadów.
+        desc: Sterowana komputerowo automatyczna maszyna do cięcia tkanin PVC i drop-stitch. Oprogramowanie do układania optymalizuje wykorzystanie materiału poniżej 5% odpadów.
       - name: Rozkładarka Tkanin
         spec: Szerokość max 3 m, podawanie ze sterowanym napięciem
         desc: Układa tkaninę w pojedyncze lub wielokrotne warstwy z kontrolowanym napięciem, aby zapobiec odkształceniom przed cięciem.
@@ -25,21 +25,21 @@ categories:
     items:
       - name: Maszyna do Zgrzewania Cieplnego
         spec: Spawanie gorącym powietrzem, zmienne 200–600 °C, 0.5–5 m/min
-        desc: Maszyna do zgrzewania cieplnego gorącym powietrzem do łączenia i spawania szwów rur PVC i Hypalon. Używana do mocowania, uszczelniania i zgrzewania komór rur i połączeń pływaków.
+        desc: Maszyna do zgrzewania cieplnego gorącym powietrzem do łączenia i spawania szwów PVC i burt. Używana do mocowania, uszczelniania i zgrzewania komór rur i połączeń pływaków.
       - name: Prasa RF Dielektryczna
         spec: 15 kW, płyta 2000 × 600 mm
-        desc: Prasa do spawania wysoką częstotliwością dla głównych szwów wzdłużnych, połączeń pawęż-rura i produkcji dużych komór.
+        desc: Prasa do spawania wysoką częstotliwością dla głównych szwów wzdłużnych, pasm listew (rail) i produkcji dużych komór.
       - name: Spawarka RF Sterowana CNC
         spec: 8 kW, stół XY 2500 × 1200 mm
         desc: Programowalne spawanie szwów krzywoliniowych dla złożonych geometrii, tłoczenie logo i precyzyjne łatki.
-  - title: Produkcja Kadłubów SUP
+  - title: Produkcja Desek SUP
     items:
       - name: Prasa do laminowania rdzeni drop-stitch
-        spec: Prasa wielkoformatowa do rdzeni płyt o długości całkowitej do 14 stóp
+        spec: Prasa wielkoformatowa do rdzeni desek o długości całkowitej do 14 stóp
         desc: Precyzyjne laminowanie rdzeni drop-stitch do zewnętrznych laminatów PVC. Każda warstwa jest sklejona pod ciśnieniem dla zapewnienia stałej jakości i wytrzymałości.
       - name: CNC Router (5-axis)
         spec: Koperta o wymiarach 3 m × 2 m × 1 m, wrzeciono chłodzone wodą
-        desc: Obróbka skrzynek żebrowych, wycięć na uchwyty i niestandardowych elementów deski.
+        desc: Obróbka boxów płetw, wycięć na uchwyty i niestandardowych elementów deski.
   - title: Druk i Dekoracja SUP
     items:
       - name: Drukarka Cyfrowa
@@ -69,7 +69,7 @@ categories:
         desc: Automatyczny test utrzymania ciśnienia dla każdej komory rury przed montażem.
       - name: Tester Odrywania Szwów
         spec: Zmotoryzowane odrywanie 180° przy 100 mm/min
-        desc: Badanie wytrzymałości na odrywanie szwów spawanych i klejonych zgodnie z ISO 6185.
+        desc: Badanie wytrzymałości na odrywanie szwów spawanych i klejonych zgodnie z EN ISO 25649.
       - name: Komora Starzeniowa z Łukiem Ksenonowym
         spec: 2000 h ekspozycja
         desc: Test odporności na UV pod kątem zmiany koloru i zachowania wytrzymałości.

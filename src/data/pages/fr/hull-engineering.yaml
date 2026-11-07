@@ -1,33 +1,83 @@
 meta:
-  title: "Studio d'Ingénierie de Coque — Conception de Coque | {SITE}"
-  description: "Conception de coques par CAO, analyse par éléments finis (FEA) et optimisation hydrodynamique. Service d'ingénierie pour bateaux gonflables professionnels."
-  keywords:
-    - 'ingénierie coque'
-    - 'conception coque bateau'
-    - 'design coque'
-    - 'CAO bateau'
+  title: "Studio d'Ingénierie de Coque — CAO, FEA & Conception de Coque Personnalisée | {SITE}"
+  description: "Découvrez notre Studio d'Ingénierie de Coque : conception CAO, analyse par éléments finis (FEA) et développement de coques SUP hautes performances personnalisées. Contactez notre équipe d'ingénierie pour lancer votre prochain projet de planche."
 back_text: Retour au Centre R&D
 home_label: Accueil
+
 hero:
   tagline: Lab 02
-  title: Studio d'ingénierie de coque
+  title: Studio d'Ingénierie de Coque
   subtitle: Simulation numérique, intelligence structurelle, conception de coque personnalisée
-  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
+  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
   image_alt: Poste de conception CAO d'ingénierie de coque afarer
-intro: La coque est l’épine dorsale de tout bateau gonflable. Elle doit être assez légère pour déjauger efficacement, assez solide pour absorber les charges d’impact et dimensionnellement stable sur une large plage de températures. Chez Afarer, notre Studio d’Ingénierie de Coque combine la modélisation CAO avancée, l’analyse par éléments finis (FEA) et des décennies d’expérience pratique en architecture navale pour livrer des coques optimisées pour leur mission prévue — pas des formes génériques adaptées d’un catalogue.
-content_html: |-
-  <h2>Là où la force rencontre l'hydrodynamique</h2>
-  <p>Nous travaillons avec trois matériaux de coque principaux — le HDPE moulé par rotation, le PEHD thermoplastique et le composite fibre de verre. Chaque matériau offre des avantages distincts pour des applications spécifiques. Nos coques en fibre de verre sont conçues avec des angles de quille calculés, optimisés pour chaque longueur de modèle et son utilisation prévue.</p>
 
-  <h2>Matériaux de coque</h2>
+intro: 'La coque est l''épine dorsale de tout SUP gonflable. Elle doit être assez légère pour glisser efficacement, assez solide pour résister aux rivages rocheux et assez rigide pour convertir chaque coup de pagaie en mouvement vers l''avant. Chez Afarer, notre Studio d''Ingénierie de Coque combine la modélisation CAO avancée, l''analyse par éléments finis (FEA) et des décennies d''expérience pratique en conception de planches pour livrer des coques optimisées pour leur discipline prévue — pas des formes génériques adaptées d''un catalogue.'
+
+content_html: |
+  <h2>Là où la force rencontre l'hydrodynamique</h2>
+  <p>Nous travaillons avec trois plateformes de construction principales — les noyaux PVC drop-stitch renforcés, les stratifiés fibre de verre posés à la main et le polyéthylène moulé par rotation — et nous disposons des capacités d'ingénierie pour concevoir, simuler et valider chacune d'elles en interne.</p>
+
+  <h2>Outils de conception et normes</h2>
+  <p>Notre environnement d'ingénierie numérique comprend :</p>
+  <table>
+    <thead><tr><th>Capacité</th><th>Logiciel / Outil</th><th>Application</th></tr></thead>
+    <tbody>
+      <tr><td>Modélisation paramétrique 3D</td><td>SolidWorks Professional</td><td>Surface de coque, renforts de rail et de longeron, disposition du pont, points de fixation d'équipement</td></tr>
+      <tr><td>Analyse par éléments finis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Cartographie des contraintes, analyse modale, simulation de crash/impact</td></tr>
+      <tr><td>Dynamique des fluides numérique (CFD)</td><td>Ansys Fluent / Star-CCM+</td><td>Prédiction de traînée hydrodynamique, optimisation de l'assiette</td></tr>
+      <tr><td>Ingénierie des stratifiés</td><td>ESAComp / CADEC</td><td>Empilement des couches de fibre de verre, sélection du noyau, estimation du poids</td></tr>
+      <tr><td>Simulation d'écoulement de moulage</td><td>Moldex3D</td><td>Prédiction de l'épaisseur de paroi en rotomoulage</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Notre processus d'ingénierie</h2>
+  <p>Chaque conception de coque, qu'il s'agisse d'un modèle standard ou d'un projet entièrement personnalisé, suit un processus rigoureux en cinq étapes :</p>
+  <ol>
+    <li><strong>Concept &amp; recueil des exigences</strong> — Nous vous rencontrons pour définir le poids du pagayeur et la charge utile, le domaine de vitesse, les conditions d'eau prévues, les exigences de transport et tout équipement de mission spécial (fixations de pont, points d'arrimage de cargaison, intégration d'accessoires).</li>
+    <li><strong>Surfaçage 3D &amp; calcul hydrostatique</strong> — La forme de coque est modélisée dans SolidWorks et vérifiée pour sa stabilité hydrostatique, sa distribution de volume et son moment de redressement à l'aide des outils d'analyse intégrés.</li>
+    <li><strong>FEA structurelle</strong> — Les cas de charge sont définis : statique (pagayeur + équipement), dynamique (impacts d'amerrissage à 5g) et échouage (franchissement d'un rivage rocheux à 3 m/s). Les contours de contraintes sont examinés ; un facteur de sécurité ≥ 2,5 est obligatoire.</li>
+    <li><strong>Optimisation de traînée par CFD</strong> — La coque est simulée à trois conditions de charge et cinq vitesses. La surface mouillée, l'angle d'assiette et la résistance résiduelle sont réduits par itérations.</li>
+    <li><strong>Revue de conception &amp; validation</strong> — Le dossier d'ingénierie complet (modèle 3D, rapport FEA, rapport CFD, estimation de poids, carnet de plis) est examiné par notre ingénieur senior avant sa transmission à l'atelier de prototypage.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Distribution des contraintes FEA — Coque SUP de Randonnée (Drop-Stitch Renforcé)</p>
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">2,8 : 1</span>
+        <span class="text-gray-500">Facteur de sécurité à charge utile maximale</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">15,2 %</span>
+        <span class="text-gray-500">Réduction de traînée vs génération précédente</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
+        <span class="text-gray-500">Pression de claquage maximale (limite de conception)</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
+        <span class="text-gray-500">Temps de calcul FEA cumulé en 2025</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Personnalisation : votre coque, vos règles</h2>
+  <p>Deux pagayeurs n'ont jamais des exigences identiques. Un SUP de pêche nécessite une coque à déjaugeage large et stable ; une planche de randonnée nécessite une coque à déplacement qui maximise le glisse ; un SUP de surf nécessite des rails réactifs et un rocker ajusté. Nous ne forçons pas votre application dans une forme de coque préexistante. Nous concevons à partir de votre cahier des charges.</p>
+  <p>Exemples de projets récents d'ingénierie de coque personnalisée :</p>
   <ul>
-    <li><strong>HDPE moulé par rotation :</strong> Haute résistance aux chocs, idéal pour les bateaux de travail</li>
-    <li><strong>PEHD thermoplastique :</strong> Léger, excellent pour les vitesses de déjaugeage</li>
-    <li><strong>Composite fibre de verre :</strong> Rigidité maximale, idéal pour les performances haut de gamme</li>
+    <li>Un SUP de randonnée allongé pour un opérateur d'éco-tourisme caribéen, avec un avant renforcé pour les échouages sur plage (+15 % d'épaisseur de rail).</li>
+    <li>Un SUP de patrouille haute visibilité pour une autorité portuaire, avec fixations d'équipement intégrées et rails tactiques.</li>
+    <li>Un SUP de randonnée expédition pour une flotte de location, avec rails renforcés et arrimages de cargaison supplémentaires.</li>
   </ul>
 
-  <h2>Angles de quille</h2>
-  <p>Un V plus prononcé pour le large offre une meilleure pénétration des vagues et un confort accru. Un angle plus plat pour les eaux intérieures offre une meilleure stabilité et un tirant d'eau réduit. Nos conceptions sont optimisées par CAO et vérifiées par des tests en conditions réelles.</p>
+  <h2>Nos ingénieurs</h2>
+  <p>Le studio est dirigé par un ingénieur senior comptant 14 ans d'expérience en conception de planches hautes performances, épaulé par deux ingénieurs mécaniciens spécialisés en FEA et CFD. Tous trois détiennent des diplômes avancés en ingénierie marine ou mécanique d'universités internationalement reconnues. L'équipe publie régulièrement dans des revues sectorielles et présente lors de conférences internationales sur l'ingénierie des sports de pagaie hautes performances.</p>
+
+  <h2>Associez-vous à nous pour votre prochaine coque</h2>
+  <p>Du premier croquis de concept au rapport de contraintes final, notre Studio d'Ingénierie de Coque est votre partenaire pour créer une planche qui n'est pas seulement fabriquée — mais conçue avec ingénierie. Nous investissons les heures de simulation en amont pour que chaque soudure, chaque couche de stratifié et chaque courbe de la coque ait sa raison d'être.</p>
+  <p>Que vous ayez besoin d'une modification mineure d'un modèle existant ou d'une conception entièrement nouvelle, nous sommes prêts à discuter de vos exigences.</p>
+
 cta:
   title: Commencez votre consultation de conception de coque
   subtitle: Parlez-nous de votre profil de mission et nous proposerons une voie d'ingénierie.

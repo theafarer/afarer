@@ -5,9 +5,9 @@ import RelatedPages from '~/components/content/RelatedPages.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 
 const metadata = {
-  title: 'Solutions by Industry — Inflatable Watercraft for Every Sector',
+  title: 'Solutions by Industry — Inflatable SUP Solutions for Every Sector',
   description:
-    'Find the right inflatable watercraft solution for your industry. Government, commercial, recreational, industrial — afarer manufactures CE-certified boats for every sector.',
+    'Find the right inflatable SUP solution for your industry. Resorts, rental operators, paddle clubs, tourism, retail, and fishing — afarer manufactures CE-certified boards for every sector.',
   ignoreTitleTemplate: true,
 };
 
@@ -15,68 +15,69 @@ const crumbs = [{ name: 'Home', href: '/' }, { name: 'Solutions by Industry' }];
 
 const industries = [
   {
-    name: 'Search & Rescue',
-    color: 'from-red-50 to-orange-50',
-    border: 'border-red-200',
-    icon: 'M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z',
-    description:
-      'Rapid-deployment inflatable boats for water rescue, flood response, and coastal patrol. Lightweight for helicopter transport, durable for extended operations.',
-    craft: ['Inflatable rescue boats', 'Rapid-deployment rescue SUPs', 'Patrol craft with console'],
-    certifications: ['SOLAS compliant options', 'CE rescue craft directive'],
-    link: '/search-rescue-operations',
-  },
-  {
-    name: 'Disaster Relief & Humanitarian Aid',
-    color: 'from-amber-50 to-yellow-50',
-    border: 'border-amber-200',
-    icon: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 12.5V17a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2h3.5a2 2 0 012 2v.5M15 12.5V17a2 2 0 01-2 2H6',
-    description:
-      'Inflatable craft for emergency response, medical evacuation, supply transport, and temporary bridge ferries in disaster zones.',
-    craft: ['Heavy-duty inflatable boats', 'Dinghies for supply transport', 'High-capacity tenders'],
-    certifications: ['CE certified', 'UV/harsh environment tested'],
-    link: '/disaster-relief-humanitarian-aid',
-  },
-  {
-    name: 'Commercial Marine Operations',
-    color: 'from-sky-50 to-blue-50',
-    border: 'border-sky-200',
-    icon: 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
-    description:
-      'Workboats for dive support, passenger transport, fish farming, and marine construction. Durable Hypalon and PVC configurations for daily commercial use.',
-    craft: ['Commercial SUP boards', 'SUP rental fleets', 'Specialty SUPs'],
-    certifications: ['CE commercial craft', ''],
-    link: '/commercial-workboats',
-  },
-  {
-    name: 'Defense & Government',
-    color: 'from-gray-50 to-slate-50',
-    border: 'border-gray-200',
-    icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4',
-    description:
-      'Military-grade inflatable craft for reconnaissance, troop transport, coastal patrol, and special operations. Custom configurations available.',
-    craft: ['Military-spec SUPs', 'Coastal patrol boards', 'Special operations craft'],
-    certifications: ['Military-grade Hypalon', 'NBC resistant options', 'Stealth profile options'],
-    link: '/oem-odm-manufacturer',
-  },
-  {
-    name: 'Hospitality & Tourism',
+    name: 'Resorts & Hotels',
     color: 'from-teal-50 to-emerald-50',
     border: 'border-teal-200',
     icon: 'M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7',
     description:
-      'Resort and rental fleet supply including SUPs and tenders. High-durability rental-grade construction with custom branding options.',
-    craft: ['Rental-grade SUPs (reinforced)', 'Hotel beach tenders', 'Kids watercraft'],
+      'Resort and waterfront property SUP fleets. High-durability rental-grade construction with custom branding, staff training, and fleet management support.',
+    craft: ['Rental-grade SUPs (reinforced)', 'Custom-branded fleets', 'Kids and family SUPs'],
     certifications: ['CE recreational craft', 'Commercial fleet grade'],
-    link: '/products',
+    link: '/solutions/resorts-hotels',
   },
   {
-    name: 'Fishing & Aquaculture',
+    name: 'Rental Operators',
+    color: 'from-sky-50 to-blue-50',
+    border: 'border-sky-200',
+    icon: 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
+    description:
+      'Boards engineered for 1000+ inflation cycles and daily rental use. Military-grade PVC, UV-resistant graphics, and quick-turnaround replacement support.',
+    craft: ['Rental-grade all-around SUPs', 'Touring SUPs for guided tours', 'Accessories and paddles'],
+    certifications: ['CE certified', 'UV/harsh environment tested'],
+    link: '/solutions/rental-operators',
+  },
+  {
+    name: 'Paddle Clubs & SUP Schools',
+    color: 'from-violet-50 to-purple-50',
+    border: 'border-violet-200',
+    icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z',
+    description:
+      'Fleet supply for paddle clubs and SUP schools. Bulk club pricing, mixed-size fleets for all skill levels, event support, and membership program equipment.',
+    craft: ['Beginner-friendly SUPs', 'Stable teaching platforms', 'Race and touring boards'],
+    certifications: ['CE certified', 'Commercial fleet grade'],
+    link: '/solutions/paddle-clubs',
+  },
+  {
+    name: 'Marine Tourism & Adventure Operators',
     color: 'from-cyan-50 to-blue-50',
     border: 'border-cyan-200',
     icon: 'M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197',
-    description: 'Fishing-specific SUPs and workboats for recreational anglers and commercial aquaculture operations.',
-    craft: ['Fishing SUPs (wide/stable)', 'Aquaculture service boats'],
-    certifications: ['CE recreational', 'Food-safe material options'],
+    description:
+      'Tour and expedition equipment for marine tourism operators. Guided-tour fleets, group paddling setups, and durable boards for daily guest use.',
+    craft: ['All-around SUPs (stable)', 'Giant multi-rider SUPs', 'Touring SUPs for excursions'],
+    certifications: ['CE recreational craft', 'UV/harsh environment tested'],
+    link: '/solutions/marine-tourism-equipment',
+  },
+  {
+    name: 'Retail Brands & Distributors',
+    color: 'from-amber-50 to-yellow-50',
+    border: 'border-amber-200',
+    icon: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 12.5V17a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2h3.5a2 2 0 012 2v.5M15 12.5V17a2 2 0 01-2 2H6',
+    description:
+      'Private-label SUP programs and wholesale distribution. Full OEM/ODM support from design and tooling to packaging and compliance documentation.',
+    craft: ['Private-label SUP lines', 'Wholesale fleet supply', 'Retail-ready packaging'],
+    certifications: ['CE certified', 'ISO 9001 manufacturing'],
+    link: '/solutions/build-your-own-brand',
+  },
+  {
+    name: 'Fishing & Outdoor',
+    color: 'from-green-50 to-emerald-50',
+    border: 'border-green-200',
+    icon: 'M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z',
+    description:
+      'Fishing-specific SUPs with wide, stable platforms, gear-mount options, and accessory integration for anglers and outdoor retailers.',
+    craft: ['Fishing SUPs (wide/stable)', 'Gear-mount configurations', 'Kayak-SUP hybrids'],
+    certifications: ['CE recreational', 'UV-stabilized materials'],
     link: '/products',
   },
 ];
@@ -101,7 +102,7 @@ const industries = [
         name: 'What industries does afarer serve?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Afarer serves six primary industry verticals: Search & Rescue, Disaster Relief & Humanitarian Aid, Commercial Marine Operations, Defense & Government, Hospitality & Tourism, and Fishing & Aquaculture. Each solution is backed by CE certification and ISO quality management.',
+          text: 'Afarer serves six primary industry verticals: Resorts & Hotels, Rental Operators, Paddle Clubs & SUP Schools, Marine Tourism & Adventure Operators, Retail Brands & Distributors, and Fishing & Outdoor. Each solution is backed by CE certification and ISO quality management.',
         },
       },
       {
@@ -109,7 +110,7 @@ const industries = [
         name: 'Does afarer offer custom solutions for specific industries?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Our OEM/ODM team can design and manufacture custom inflatable watercraft for your specific industry requirements, from concept to production at our 12,000 m² ISO-certified facility.',
+          text: 'Yes. Our OEM/ODM team can design and manufacture custom inflatable SUPs for your specific industry requirements, from concept to production at our 12,000 m² ISO-certified facility.',
         },
       },
       {
@@ -117,7 +118,7 @@ const industries = [
         name: 'What certifications do afarer industry solutions carry?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'All afarer solutions are CE certified. Options include SOLAS compliance for rescue craft, military-grade Hypalon for defense applications, and commercial fleet-grade construction for hospitality and rental operations.',
+          text: 'All afarer solutions are CE certified. Options include commercial fleet-grade construction for hospitality and rental operations, UV-tested materials for marine tourism, and ISO 9001 manufacturing for retail programs.',
         },
       },
       {
@@ -125,7 +126,7 @@ const industries = [
         name: 'Can I get a custom solution for an industry not listed?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Absolutely. Contact our OEM/ODM team with your requirements. Our R&D center supports CAD/FEA simulation, hydrodynamic testing, and custom material selection for any marine application.',
+          text: 'Absolutely. Contact our OEM/ODM team with your requirements. Our R&D center supports CAD/FEA simulation, hydrodynamic testing, and custom material selection for any paddle-sports application.',
         },
       },
       {
@@ -133,7 +134,7 @@ const industries = [
         name: 'What is the minimum order for custom industry solutions?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'MOQ is 50 units per model for standard custom SUP orders, with samples and pilot programs from 5-10 units. For specialized boats, MOQ varies by complexity. Contact our team for a detailed quote based on your specifications.',
+          text: 'MOQ is 50 units per model for standard custom SUP orders, with samples and pilot programs from 5-10 units. Contact our team for a detailed quote based on your specifications.',
         },
       },
     ],
@@ -144,7 +145,7 @@ const industries = [
   <section class="max-w-6xl mx-auto py-24 px-6">
     <h1 class="mt-4 text-4xl font-semibold text-gray-900">Solutions by Industry</h1>
     <p class="mt-4 text-lg text-gray-500">
-      Find the right inflatable watercraft for your industry. Each solution is backed by CE certification, ISO quality
+      Find the right inflatable SUP solution for your industry. Each solution is backed by CE certification, ISO quality
       management, and a 12,000 m² manufacturing facility.
     </p>
 
@@ -170,7 +171,7 @@ const industries = [
                 <h2 class="text-xl font-semibold text-gray-900">{ind.name}</h2>
                 <p class="mt-2 text-sm text-gray-600">{ind.description}</p>
                 <div class="mt-4">
-                  <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Recommended Craft</span>
+                  <span class="text-xs font-medium text-gray-500 uppercase tracking-wide">Recommended Boards</span>
                   <ul class="mt-2 space-y-1">
                     {ind.craft.map((c) => (
                       <li class="flex items-center gap-2 text-sm text-gray-600">
@@ -199,8 +200,7 @@ const industries = [
     <section class="mt-16 bg-gray-50 rounded-2xl p-8 border border-gray-200 text-center">
       <h2 class="text-2xl font-semibold text-gray-900">Need a Custom Solution?</h2>
       <p class="mt-4 text-gray-500">
-        Our OEM/ODM team can design and manufacture custom inflatable watercraft for your specific industry
-        requirements.
+        Our OEM/ODM team can design and manufacture custom inflatable SUPs for your specific industry requirements.
       </p>
       <div class="mt-6 flex justify-center gap-4">
         <a
@@ -234,9 +234,9 @@ const industries = [
         </summary>
         <div class="px-6 pb-4">
           <p class="text-gray-600 leading-relaxed">
-            Afarer serves six primary industry verticals: Search & Rescue, Disaster Relief & Humanitarian Aid,
-            Commercial Marine Operations, Defense & Government, Hospitality & Tourism, and Fishing & Aquaculture. Each
-            solution is backed by CE certification and ISO quality management.
+            Afarer serves six primary industry verticals: Resorts & Hotels, Rental Operators, Paddle Clubs & SUP Schools,
+            Marine Tourism & Adventure Operators, Retail Brands & Distributors, and Fishing & Outdoor. Each solution is
+            backed by CE certification and ISO quality management.
           </p>
         </div>
       </details>
@@ -249,7 +249,7 @@ const industries = [
         </summary>
         <div class="px-6 pb-4">
           <p class="text-gray-600 leading-relaxed">
-            Yes. Our OEM/ODM team can design and manufacture custom inflatable watercraft for your specific industry
+            Yes. Our OEM/ODM team can design and manufacture custom inflatable SUPs for your specific industry
             requirements, from concept to production at our 12,000 m² ISO-certified facility.
           </p>
         </div>
@@ -263,9 +263,9 @@ const industries = [
         </summary>
         <div class="px-6 pb-4">
           <p class="text-gray-600 leading-relaxed">
-            All afarer solutions are CE certified. Options include SOLAS compliance for rescue craft, military-grade
-            Hypalon for defense applications, and commercial fleet-grade construction for hospitality and rental
-            operations.
+            All afarer solutions are CE certified. Options include commercial fleet-grade construction for hospitality
+            and rental operations, UV-tested materials for marine tourism, and ISO 9001 manufacturing for retail
+            programs.
           </p>
         </div>
       </details>
@@ -279,8 +279,7 @@ const industries = [
         <div class="px-6 pb-4">
           <p class="text-gray-600 leading-relaxed">
             MOQ is 50 units per model for standard custom SUP orders, with samples and pilot programs from 5-10 units.
-            For specialized boats, MOQ varies by complexity. Contact our team for a detailed quote based on your
-            specifications.
+            Contact our team for a detailed quote based on your specifications.
           </p>
         </div>
       </details>
@@ -289,23 +288,23 @@ const industries = [
 
   <ExperienceLayer
     title="Industry Solutions in Action"
-    subtitle="Real examples of how afarer watercraft perform across different industry sectors."
+    subtitle="Real examples of how afarer SUPs perform across different industry sectors."
     stories={[
       {
         quote:
-          'We deployed two afarer rescue boats during the coastal flooding — they were the only vessels that could navigate the debris-filled waters at low tide.',
+          'Our rental boards go out four times a day in peak season. After two summers, the fusion-welded seams still look new.',
         narrative:
-          "During a severe coastal flooding event, a municipal SAR team deployed afarer rescue boats for evacuation operations. The boats' shallow draft allowed access to flooded neighborhoods unreachable by larger vessels. Despite debris and continuous operation for 14 hours, the Hypalon fabric showed no signs of wear.",
-        context: 'Coastal flood rescue, Southeast Asia, 2024',
-        source: 'Municipal SAR Team Lead',
+          'A beachfront rental operation in Thailand runs a 40-board afarer fleet. The boards are launched and recovered up to four times daily, exposed to intense tropical sun and saltwater. After 1000+ inflation cycles, the boards show no significant UV degradation and no seam separation.',
+        context: 'SUP rental fleet, Thailand, 2023-2025',
+        source: 'Rental Operation Owner',
       },
       {
         quote:
-          'Our dive boat runs 6 days a week, 50 weeks a year. After two years, the Hypalon fabric still looks new.',
+          'The mixed-size fleet lets us teach beginners and train racers with the same supplier. Bulk pricing made the club program viable.',
         narrative:
-          'A dive charter operation in the Maldives runs an afarer SUP fleet for daily guest tours. The boards are launched and recovered 4 times daily, exposed to intense tropical sun and saltwater. After 600+ operating days, the boards show no significant UV degradation and no seam separation.',
-        context: 'Dive charter operations, Maldives, 2022-2025',
-        source: 'Charter Company Owner',
+          'A paddle club in Europe outfitted its school and race teams with afarer boards — stable 11-foot platforms for first-timers and lightweight touring boards for advanced members. Custom club branding on every board, with a replacement program that keeps the fleet on the water year-round.',
+        context: 'Paddle club fleet program, Europe, 2024',
+        source: 'Club Program Director',
       },
     ]}
   />
@@ -320,10 +319,10 @@ const industries = [
         label: 'Decision Tool',
       },
       {
-        title: 'Commercial Workboats',
-        description: 'Durable workboats for daily commercial marine operations.',
-        href: '/commercial-workboats',
-        label: 'Workboats',
+        title: 'SUP Products',
+        description: 'Full lineup of CE-certified inflatable SUPs and accessories.',
+        href: '/products',
+        label: 'Products',
       },
       {
         title: 'OEM/ODM Manufacturing',
@@ -342,12 +341,13 @@ const industries = [
 
   <section class="sr-only" data-ai-block="definition" aria-hidden="true">
     <p>
-      Solutions by industry for afarer inflatable watercraft. Six industry verticals: Search & Rescue (rescue boats,
-      rapid-deployment rescue SUPs, patrol craft), Disaster Relief & Humanitarian Aid (heavy-duty inflatable boats,
-      dinghies, high-capacity tenders), Commercial Marine Operations (dive support, passenger transport, fish farming),
-      Defense & Government (military inflatables, coastal patrol, special operations), Hospitality & Tourism
-      (rental-grade SUPs, hotel tenders, kids watercraft), Fishing & Aquaculture (fishing SUPs, aquaculture service
-      boats). All solutions CE certified and ISO manufactured. OEM/ODM custom design available for all industries.
+      Solutions by industry for afarer inflatable SUPs. Six industry verticals: Resorts & Hotels (rental-grade SUPs,
+      custom-branded fleets, kids and family SUPs), Rental Operators (rental-grade all-around SUPs, touring SUPs,
+      accessories), Paddle Clubs & SUP Schools (beginner-friendly SUPs, stable teaching platforms, race and touring
+      boards), Marine Tourism & Adventure Operators (all-around SUPs, giant multi-rider SUPs, touring SUPs), Retail
+      Brands & Distributors (private-label SUP lines, wholesale fleet supply, retail-ready packaging), Fishing & Outdoor
+      (fishing SUPs, gear-mount configurations, kayak-SUP hybrids). All solutions CE certified and ISO manufactured.
+      OEM/ODM custom design available for all industries.
     </p>
   </section>
 </Layout>

@@ -1,6 +1,6 @@
 meta:
   title: 'Équipements — Découpe, Soudure RF & Impression | {SITE}'
-  description: 'Équipements et machines de fabrication afarer : découpe PVC, soudure RF, impression numérique, assemblage et tests pour SUP gonflables et bateaux.'
+  description: 'Équipements et machines de fabrication afarer : découpe PVC, soudure RF, impression numérique, assemblage et tests pour SUP gonflables.'
   keywords:
     - 'équipement fabrication SUP'
     - 'usine paddle gonflable'
@@ -17,7 +17,7 @@ categories:
     items:
       - name: Machine de découpe PVC automatique
         spec: Contrôle CNC, 6,5 m × 2,5 m, précision 0,1 mm
-        desc: Machine de découpe automatique commandée par ordinateur pour tissus PVC, Hypalon et drop-stitch. Le logiciel de nesting optimise l’utilisation des matériaux à moins de 5 % de déchets.
+        desc: Machine de découpe automatique commandée par ordinateur pour tissus PVC et drop-stitch. Le logiciel de nesting optimise l’utilisation des matériaux à moins de 5 % de déchets.
       - name: Étaloir de Tissu
         spec: 3 m de largeur max, alimentation à tension contrôlée
         desc: Dispose le tissu en une ou plusieurs couches avec une tension contrôlée pour éviter la déformation avant la découpe.
@@ -25,10 +25,10 @@ categories:
     items:
       - name: Machine de thermoscellage
         spec: Soudure à air chaud, variable 200–600 °C, 0,5–5 m/min
-        desc: Machine de thermosoudure à air chaud pour le collage et la soudure des joints de tubes PVC et Hypalon. Utilisée pour le pointage, le scellement et la fusion des chambres de tubes et des joints de flotteurs.
+        desc: Machine de thermosoudure à air chaud pour le collage et la soudure des joints PVC et de rails. Utilisée pour le pointage, le scellement et la fusion des chambres de tubes et des joints de flotteurs.
       - name: Presse Diélectrique RF
         spec: 15 kW, plateau 2000 × 600 mm
-        desc: Presse de soudure radiofréquence pour les joints longitudinaux principaux, les joints tableau-arrière/tubes et la fabrication de grandes chambres.
+        desc: Presse de soudure radiofréquence pour les joints longitudinaux principaux, les bandes de rails et la fabrication de grandes chambres.
       - name: Soudeuse RF à Commande CNC
         spec: 8 kW, table XY 2500 × 1200 mm
         desc: Soudure programmable de joints courbes pour géométries complexes, gaufrage de logo et patchwork de précision.
@@ -69,7 +69,7 @@ categories:
         desc: Test de maintien de pression automatisé pour chaque chambre avant assemblage.
       - name: Testeur de Pelage des Joints
         spec: Pelage motorisé à 180° à 100 mm/min
-        desc: Test de résistance au pelage des soudures et des joints collés selon ISO 6185.
+        desc: Test de résistance au pelage des soudures et des joints collés selon EN ISO 25649.
       - name: Chambre de Vieillissement au Xénon
         spec: Exposition 2000 h
         desc: Test de résistance UV pour le changement de couleur et le maintien de la résistance.

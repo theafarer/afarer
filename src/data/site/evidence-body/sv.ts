@@ -275,31 +275,6 @@ export const bodyOverrides: EvidenceBodyMap = {
       },
     ],
   },
-  'humanitarian-aid-project': {
-    client: 'Internationell humanitär organisation',
-    product: 'Räddnings- och hjälpgummibåtar',
-    industry: 'NGO / Humanitär hjälp',
-    challenge:
-      'En internationell humanitär organisation behövde 50 robusta gummibåtar för räddningsinsatser vid översvämningar i Sydostasien: lätta för helikoptertransport och reparerbara på fältet.',
-    solution:
-      'Tillverkade 50 förstärkta uppblåsbara båtar med självtömmande bottnar, redundans med flera kammar och grepliner runt omkretsen. Levererade fältreparationskit med piktograminstruktioner. Utbildade 20 lokala tekniker.',
-    result:
-      '50 båtar utplacerade i 3 översvämningsbenägna regioner. Använda i 12 större räddningsinsatser under de första 6 månaderna. 0 rapporterade utrustningsfel.',
-    outcomeMetrics: [
-      {
-        label: 'Utplacerade båtar',
-        value: '50',
-      },
-      {
-        label: 'Räddningsinsatser',
-        value: '12',
-      },
-      {
-        label: 'Felfrekvens',
-        value: '0%',
-      },
-    ],
-  },
   'japanese-brand-launch': {
     client: 'Japanskt livsstilsvarumärke',
     product: 'Co-branded SUP-linje',
@@ -402,7 +377,7 @@ export const bodyOverrides: EvidenceBodyMap = {
   },
   'middle-east-distributor': {
     client: 'Vattensportsdistributör i Mellanöstern',
-    product: 'Hela produktlinjen — SUP, båtar, tillbehör',
+    product: 'Hela produktlinjen — SUP och tillbehör',
     industry: 'Distribution / Marin',
     challenge:
       'En GCC-baserad distributör ville ha exklusiva rättigheter till hela Afarers produktlinje i 6 Gulfstater, med arabisk förpackning, värmétåliga materialspecifikationer och sharia-kompatibla garantivillkor.',
@@ -455,9 +430,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Patrull- och räddnings-SUP-flotta',
     industry: 'Offentlig sektor / Maritim säkerhet',
     challenge:
-      'En statlig maritim myndighet krävde 20 patrull- och räddnings-SUP:er med brandbeständigt Hypalon-tyg, integrerade kommunikationsfästen och överensstämmelse med SOLAS kapitel III.',
+      "En statlig maritim myndighet krävde 20 patrull- och räddning-SUP:ar med högsynliga däck, integrerade kommunikationsfästen och CE-certifierad konstruktion.",
     solution:
-      'Tillverkade 20 SUP:ar med CSM Hypalon-rör, tunga D-ringar och förinstallerade navigationsljuspaket. Fabrikens inspektionsteam bevittnade sjötester. Fullständigt SOLAS-dokumentationspaket tillhandahölls.',
+      "Tillverkade 20 SUP:ar med konstruktion i PVC i militärkvalitet, kraftiga D-ringar och förinstallerade navigationsljuspaket. Fabrikens inspektionsteam bevittnade sjöprövningarna. Fullständig dokumentation om regelefterlevnad levererades.",
     result:
       'Kontrakt levererat på 4 månader. Flotta sattes in för gränsbevakning, sök och räddning samt katastrofberedskap på 3 regionala baser.',
     outcomeMetrics: [

@@ -1,6 +1,6 @@
 meta:
   title: 'Offerte Aanvragen — OEM-SUP-productie | {SITE}'
-  description: 'Vraag een gedetailleerde offerte aan voor jouw opblaasbare SUP- of botenproject. OEM/ODM-productie, private label of aangepaste vloten: we reageren binnen 2 werkdagen.'
+  description: 'Vraag een gedetailleerde offerte aan voor jouw opblaasbare SUP-project. OEM/ODM-productie, private label of aangepaste vloten: we reageren binnen 2 werkdagen.'
   keywords:
     - 'SUP offerte aanvragen'
     - 'OEM paddle board offerte'
@@ -52,8 +52,6 @@ content_form:
         - Vissen
         - Marine Toerisme / Resort
         - Zoek- en reddingsoperaties
-        - Jachtsteiger
-        - Commercieel werkboot
         - Overheid / Militair
         - OEM / Eigen merk
         - Persoonlijk / Recreatief
@@ -72,12 +70,11 @@ content_form:
       options:
         - Geen voorkeur
         - Marine-kwaliteit PVC (1100 dtex)
-        - Premium Hypalon / CSM
         - GFK-romp
         - Aluminium romp
     - name: Motorvereisten
       type: text
-      placeholder: bijv. 60 pk buitenboordmotor, geen motor, twee keer 115 pk
+      placeholder: bijv. standaard peddelsetup, elektrische pomp, aangepaste kleuren
     - name: Benodigde aanpassingen
       type: text
       placeholder: bijv. aangepaste kleuren, branding/logo, verpakking, speciale bevestigingen

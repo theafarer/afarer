@@ -1,6 +1,6 @@
 meta:
-  title: 'Kunskap — SUP- & båtguider | {SITE}'
-  description: 'afars kunskapsbas: guider om uppblåsbara SUP:ar, paddle board-material, båtval och branschinsikter för varumärken och proffs.'
+  title: 'Kunskap — SUP-guider | {SITE}'
+  description: 'afars kunskapsbas: guider om uppblåsbara SUP:ar, paddle board-material, brädval och branschinsikter för varumärken och proffs.'
   keywords:
     - 'SUP kunskap'
     - 'uppblåsbar SUP guide'
@@ -11,22 +11,22 @@ hero:
   title: Vattenutforskningskunskap
   subtitle: |
     En strukturerad kunskapsbas som täcker uppblåsbar SUP-teknik,<br />
-    vattensäkerhet, båtteknik och äventyrsplanering.
+    vattensäkerhet, brädengineering och äventyrsplanering.
   taglineSection: Utforska. Lär dig. Gå med förtroende.
 clusters:
   tagline: Kunskapskluster
   title: Utforska efter ämne
   subtitle: Djupdyk i tekniken, säkerheten och färdigheterna bakom varje afarer-produkt.
   items:
-    - title: SUP-kunskap
+    - title: SUP-köpguider
       description: Från att välja ditt första bräde till avancerade turtekniker — allt om paddleboarding.
       icon: tabler:lifebuoy
       topics:
-        - Hur du väljer ditt första uppblåsbara SUP
-        - Bästa SUP-storleken för nybörjare
-        - Hur svårt är paddleboarding?
+        - Hur du väljer din första uppblåsbara SUP
+        - SUP-storleks- och viktkapacitetsguide
+        - Bästa SUP för nybörjare, touring, yoga och racing
+        - Vanliga SUP-köpmisstag att undvika
         - Jämförelse uppblåsbart vs hårt bräde
-        - SUP-säkerhetschecklista
     - title: SUP-teknik och teknologi
       description: Tekniska guider om uppblåsbara SUP-brädor — material, konstruktionsmetoder och tillverkningsprocesser.
       icon: tabler:microscope
@@ -37,24 +37,24 @@ clusters:
         - EVA-skumteknologi och tryckmetoder
         - SUP-ventiltyper och finsystem
 
-    - title: Säkerhetskunskap
-      description: Viktig säkerhetskunskap för varje paddlare — från PFD-val till väderavläsning till självräddningstekniker.
+    - title: SUP-säkerhet och underhåll
+      description: Viktig säkerhetskunskap för varje paddlare — från PFD-val till väderavläsning till brädvård och reparation.
       icon: tabler:shield
       topics:
-        - SUP-säkerhetschecklista
-        - Behöver du en flytväst?
-        - Säkerhetsguide för havspaddling
+        - SUP-säkerhetschecklista och PFD-krav
+        - Flerkammarsäkerhet för avlägsna vatten
+        - SUP-uppblåsnings-PSI-guide
+        - Brädförvaring och vintervård
         - Reparationstekniker för uppblåsbara produkter
-        - Medvetenhet om väder och vattenförhållanden
-    - title: Teknologi
-      description: Viktig säkerhetskunskap för varje paddlare — från PFD-val till väderavläsning till självräddningstekniker.
-      icon: tabler:microscope
+    - title: SUP-färdigheter och tekniker
+      description: Padlingstekniker, turfärdigheter och konditionsträning för alla nivåer.
+      icon: tabler:sailboat
       topics:
-        - Marin-grade PVC-teknik
-        - Drop-stitch-kärna förklarad
-        - Varför PSI spelar roll för uppblåsbara SUP
-        - RF-svetsning vs limbindning
-        - Kvalitetstestning och certifiering
+        - Padlingstekniker för nybörjare
+        - Färdighetsträning på mellannivå
+        - Tur- och expeditionsplanering
+        - SUP-kondition och racingträning
+        - Färdigheter för fors och flodpaddling
     - title: SUP-livsstil och specialanvändningar
       description: Specialiserade SUP-aktiviteter — yoga, fiske, hundar, familjer och restips.
       icon: tabler:heart
@@ -69,7 +69,7 @@ clusters:
       icon: tabler:chart-bar
       topics:
         - SUP vs kajak — vilken passar dig?
-        - Materialjämförelse mellan PVC och Hypalon
+        - PVC-materialgrader förklarade
         - Enkelt kammer vs flerkammarsäkerhet
         - Förklaring av SUP-brädans material
         - UV-tryck mot EVA-blockgrafik
@@ -85,8 +85,8 @@ featured_guides:
       href: /learn/water-safety
     - title: Materialreferens
       href: /learn/materials
-    - title: SUP-storleksguide
-      href: /size-guide
+    - title: SUP-köpguide
+      href: /guides/how-to-choose-your-sup
     - title: SUP-storleksguide
       href: /guides/sup-size-guide
     - title: SUP Tech Center

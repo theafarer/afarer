@@ -276,31 +276,6 @@ export const bodyOverrides: EvidenceBodyMap = {
       },
     ],
   },
-  'humanitarian-aid-project': {
-    client: 'Kansainvälinen humanitaarinen järjestö',
-    product: 'Pelastus- ja avustusponttonit',
-    industry: 'Järjestö / Humanitaarinen',
-    challenge:
-      'Kansainvälinen humanitaarinen järjestö tarvitsi 50 kestävää ilmatäytettävää venettä Kaakkois-Aasian tulvapelastuksiin: helikopterikuljetukseen sopivan kevyet ja kentällä korjattavat ilman erikoistyökaluja.',
-    solution:
-      'Valmistimme 50 vahvistettua ilmavenettä itsestään tyhjenevillä pohjilla, monikammioisella varmistuksella ja tartuntaköysillä kehän ympäri. Toimitimme kenttäkorjaussarjat kuvitettuine ohjeineen. Koulutimme 20 paikallista teknikkoa.',
-    result:
-      '50 venettä otettiin käyttöön 3 tulville alttiilla alueella. Käytetty 12 suuressa pelastusoperaatiossa ensimmäisen 6 kuukauden aikana. 0 laitteistovikaa raportoitu.',
-    outcomeMetrics: [
-      {
-        label: 'Käyttöön otetut veneet',
-        value: '50',
-      },
-      {
-        label: 'Pelastusoperaatiot',
-        value: '12',
-      },
-      {
-        label: 'Vikataajuus',
-        value: '0%',
-      },
-    ],
-  },
   'japanese-brand-launch': {
     client: 'Japanilainen lifestyle-brändi',
     product: 'Yhteisbrändätty SUP-linja',
@@ -403,7 +378,7 @@ export const bodyOverrides: EvidenceBodyMap = {
   },
   'middle-east-distributor': {
     client: 'Lähi-idän vesiurheilujakelija',
-    product: 'Koko tuotesarja — SUP, veneet, tarvikkeet',
+    product: 'Koko tuotesarja — SUP ja tarvikkeet',
     industry: 'Jakelu / Merenkulku',
     challenge:
       'GCC-pohjainen jakelija halusi yksinoikeudet koko Afarer-tuotesarjaan 6 Persianlahden maassa: arabiankielinen pakkaus, lämmönkestävät materiaalimääritelmät ja šarian mukaiset takuuehdot.',
@@ -456,9 +431,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Partio- ja pelastus-SUP-laivasto',
     industry: 'Julkinen sektori / Meriturvallisuus',
     challenge:
-      'Valtion meriviranomainen vaati 20 partio- ja pelastus-SUP:aa tulenkestävällä Hypalon-kankaalla, integroiduilla viestintäkiinnikkeillä ja SOLAS III luvun pelastusvenestandardien mukaisuudella.',
+      "Valtion meriviranomainen tarvitsi 20 partio- ja pelastus-SUP-lautaa korkean näkyvyyden kansilla, integroituilla viestintäkiinnikkeillä ja CE-sertifioituna rakenteena.",
     solution:
-      'Valmistimme 20 SUP-lautaa CSM Hypalon -putkilla, raskaaseen käyttöön tarkoitetuilla D-renkailla ja esiasennetuilla navigointivalopaketeilla. Tehdas tarkasti meritestit paikan päällä. Toimitettiin täydellinen SOLAS-dokumentointipaketti.',
+      "Valmistettiin 20 SUP-lautaa sotilasluokan PVC-rakenteella, vaimoilla D-renkailla ja esiasennetuilla navigointivalopaketeilla. Tehtaan tarkastustiimi todisti meritestit. Toimitettiin täysi vaatimustenmukaisuusdokumentaatiopaketti.",
     result:
       'Sopimus toimitettu 4 kuukaudessa. Kalusto otettiin käyttöön raja-alueiden partioinnissa, etsinnässä ja pelastuksessa sekä kriisivasteessa 3 aluetukikohdassa.',
     outcomeMetrics: [

@@ -24,7 +24,7 @@ export const evidenceMetaTr: EvidenceMetaMap = {
   'search-rescue-sup-fleet': {
     title: 'Güneydoğu Asya deniz ajansı — Devriye ve kurtarma SUP filosu | Afarer',
     description:
-      "Bir devlet deniz ajansı, alev geciktirici Hypalon kumaş, entegre haberleşme bağlantıları ve SOLAS bölüm III can filikası standartlarına uygun 20 devriye ve kurtarma SUP'ı talep ediyordu.",
+      "Bir devlet deniz ajansı, yüksek görünürlüklü güverteler, entegre haberleşme bağlantıları ve CE sertifikalı yapıya sahip 20 devriye ve kurtarma SUP'ı talep ediyordu.",
   },
   'european-dtc-ecommerce': {
     title: 'Avrupa DTC su sporları markası — Markalı SUP + aksesuar serisi | Afarer',
@@ -52,7 +52,7 @@ export const evidenceMetaTr: EvidenceMetaMap = {
       '25 mağazalı bir Kanadalı perakendeci, Fransızca/İngilizce iki dilli ambalaj, soğuk hava malzeme spesifikasyonları ve Kanada denizcilik mevzuatına uygun münhasır bir marka SUP serisi talep ediyordu.',
   },
   'middle-east-distributor': {
-    title: 'Orta Doğu su sporları distribütörü — Tam ürün serisi — SUP, botlar, aksesuar | Afarer',
+    title: 'Orta Doğu su sporları distribütörü — Tam ürün serisi — SUP ve aksesuar | Afarer',
     description:
       "GCC merkezli bir distribütör, 6 Körfez ülkesinde Afarer'ın tüm ürün serisinin münhasır temsil hakkını, Arapça ambalaj, ısıya dayanıklı malzeme spesifikasyonları ve şeriata uygun garanti koşullarıyla istiyordu.",
   },
@@ -75,11 +75,6 @@ export const evidenceMetaTr: EvidenceMetaMap = {
     title: 'İngiliz üniversite spor birliği — Öğrenci kulübü filosu — SUP + güvenlik | Afarer',
     description:
       "Aktif bir su sporları kulübüne sahip bir İngiliz üniversitesi, yaşlanan filosunu modern şişme SUP'larla değiştirmeliydi: kompakt kampüs depolama, her seviyede kullanım ve BUCS yarışma standartları.",
-  },
-  'humanitarian-aid-project': {
-    title: 'Uluslararası insani kuruluş — Kurtarma ve yardım şişme botları | Afarer',
-    description:
-      "Uluslararası bir insani kuruluş, Güneydoğu Asya'daki sel kurtarma operasyonları için helikopterle taşınabilecek hafiflikte, enkaza dayanıklı ve sahada onarılabilir 50 sağlam şişme bota ihtiyaç duyuyordu.",
   },
   'cruise-line-activity-program': {
     title: 'Karip cruise hattı — Güverte aktivite filosu — SUP | Afarer',

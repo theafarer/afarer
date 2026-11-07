@@ -24,7 +24,7 @@ export const evidenceMetaSv: EvidenceMetaMap = {
   'search-rescue-sup-fleet': {
     title: 'Maritim myndighet i Sydostasien — Patrull- och räddnings-SUP-flotta | Afarer',
     description:
-      'En statlig maritim myndighet krävde 20 patrull- och räddnings-SUP:er med brandbeständigt Hypalon-tyg, integrerade kommunikationsfästen och överensstämmelse med SOLAS kapitel III.',
+      'En statlig maritim myndighet krävde 20 patrull- och räddnings-SUP:er med högsynliga däck, integrerade kommunikationsfästen och CE-certifierad konstruktion.',
   },
   'european-dtc-ecommerce': {
     title: 'Europeiskt DTC-vattensportsvarumärke — Varumärkes-SUP + tillbehörslinje | Afarer',
@@ -52,7 +52,7 @@ export const evidenceMetaSv: EvidenceMetaMap = {
       'En kanadensisk återförsäljare med 25 butiker krävde en exklusiv SUP-serie med eget varumärke med tvåspråkig fransk/engelsk förpackning, kallspecifikationer och kanadensiska båtföreskrifter.',
   },
   'middle-east-distributor': {
-    title: 'Vattensportsdistributör i Mellanöstern — Hela produktlinjen — SUP, båtar, tillbehör | Afarer',
+    title: 'Vattensportsdistributör i Mellanöstern — Hela produktlinjen — SUP och tillbehör | Afarer',
     description:
       'En GCC-baserad distributör ville ha exklusiva rättigheter till hela Afarers produktlinje i 6 Gulfstater, med arabisk förpackning, värmétåliga materialspecifikationer och sharia-kompatibla garantivillkor.',
   },
@@ -75,11 +75,6 @@ export const evidenceMetaSv: EvidenceMetaMap = {
     title: 'Brittisk universitetssportförbund — Studentklubbsflotta — SUP + säkerhet | Afarer',
     description:
       'Ett brittiskt universitet med en aktiv vattensportsklubb behövde ersätta en åldrande flotta med moderna uppblåsbara SUP:er: begränsad campusförvaring, användarvänlighet för alla nivåer och BUCS-standarder.',
-  },
-  'humanitarian-aid-project': {
-    title: 'Internationell humanitär organisation — Räddnings- och hjälpgummibåtar | Afarer',
-    description:
-      'En internationell humanitär organisation behövde 50 robusta gummibåtar för räddningsinsatser vid översvämningar i Sydostasien: lätta för helikoptertransport och reparerbara på fältet.',
   },
   'cruise-line-activity-program': {
     title: 'Karibisk kryssningslinje — Ombordaktivitetsflotta — SUP | Afarer',

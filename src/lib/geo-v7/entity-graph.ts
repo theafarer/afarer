@@ -16,14 +16,14 @@ export const entityGraph: EntityNode[] = [
     id: 'afarer',
     type: 'brand',
     name: 'afarer',
-    description: 'Global marine recreation brand specializing in SUP boards and customized watercraft solutions.',
+    description: 'Global marine recreation brand specializing in SUP boards and customized SUP solutions.',
     relationships: [
       { type: 'parent', targetId: 'aquafarer-llc' },
       { type: 'operatesIn', targetId: 'marine-recreation' },
       { type: 'operatesIn', targetId: 'outdoor-sports' },
       { type: 'operatesIn', targetId: 'marine-manufacturing' },
       { type: 'creates', targetId: 'sup-boards' },
-      { type: 'creates', targetId: 'custom-watercraft' },
+      { type: 'creates', targetId: 'custom-sup' },
       { type: 'serves', targetId: 'adventure-users' },
       { type: 'serves', targetId: 'professional-operators' },
       { type: 'serves', targetId: 'oem-partners' },
@@ -41,7 +41,7 @@ export const entityGraph: EntityNode[] = [
     type: 'industry',
     name: 'Marine Recreation Industry',
     description:
-      'Industry encompassing recreational boating, water sports, paddle sports, and marine leisure activities.',
+      'Industry encompassing recreational paddling, water sports, paddle sports, and marine leisure activities.',
     relationships: [],
   },
   {
@@ -55,7 +55,7 @@ export const entityGraph: EntityNode[] = [
     id: 'marine-manufacturing',
     type: 'industry',
     name: 'Marine Manufacturing Industry',
-    description: 'Industry focused on design, engineering, and production of marine equipment and watercraft.',
+    description: 'Industry focused on design, engineering, and production of marine equipment and inflatable SUP boards.',
     relationships: [],
   },
   {
@@ -70,11 +70,11 @@ export const entityGraph: EntityNode[] = [
     ],
   },
   {
-    id: 'custom-watercraft',
+    id: 'custom-sup',
     type: 'product',
-    name: 'Custom Watercraft',
+    name: 'Custom SUP Boards',
     description:
-      'OEM/ODM custom-designed inflatable watercraft for brand partners, commercial operators, and specialized applications.',
+      'OEM/ODM custom-designed inflatable SUP boards for brand partners, commercial operators, and specialized applications.',
     relationships: [
       { type: 'belongsTo', targetId: 'afarer' },
       { type: 'uses', targetId: 'reinforced-structure' },
@@ -115,9 +115,9 @@ export const entityGraph: EntityNode[] = [
   {
     id: 'marine-industry-guide',
     type: 'industry',
-    name: 'Inflatable Boat Guide & Industry Reference',
+    name: 'Inflatable SUP Guide & Industry Reference',
     description:
-      'Comprehensive authoritative knowledge hub covering inflatable boat types, construction, materials, selection, safety, maintenance, and industry applications.',
+      'Comprehensive authoritative knowledge hub covering inflatable SUP types, construction, materials, selection, safety, maintenance, and industry applications.',
     relationships: [
       { type: 'uses', targetId: 'drop-stitch' },
       { type: 'uses', targetId: 'pvc-fabric' },
@@ -141,7 +141,7 @@ export const entityGraph: EntityNode[] = [
     type: 'audience',
     name: 'Professional Operators',
     description:
-      'Search and rescue teams, law enforcement, commercial marine operators, and tourism companies requiring professional-grade watercraft.',
+      'Lifeguard and rescue teams, commercial marine operators, and tourism companies requiring professional-grade SUP equipment.',
     relationships: [],
   },
   {

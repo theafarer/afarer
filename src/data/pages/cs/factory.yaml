@@ -1,6 +1,6 @@
 meta:
   title: 'Továrna a výroba — nafukovací SUP OEM | {SITE}'
-  description: 'Navštivte továrnu afarera: areál o rozloze 12 000 m² s řezáním, HF svařováním, tiskem, montáží a laboratoří kvality pro výrobu OEM/ODM nafukovacích SUP prken a člunů.'
+  description: 'Navštivte továrnu afarera: areál o rozloze 12 000 m² s řezáním, HF svařováním, tiskem, montáží a laboratoří kvality pro výrobu OEM/ODM nafukovacích SUP prken.'
   keywords:
     - 'SUP továrna Čína'
     - 'továrna na nafukovací paddleboardy'
@@ -11,7 +11,7 @@ hero:
   title: Naše továrna
   subtitle: 12 000 m² moderního výrobního zařízení v Qingdao, Čína.
 intro:
-  - Naše továrna v Qingdao je srdcem výroby afarer. S rozlohou 12 000 m² a více než 200 kvalifikovanými zaměstnanci máme kapacitu a odbornost vyrábět vysoce kvalitní nafukovací čluny a vybavení pro vodní sporty v měřítku.
+  - Naše továrna v Qingdao je srdcem výroby afarer. S rozlohou 12 000 m² a více než 200 kvalifikovanými zaměstnanci máme kapacitu a odbornost vyrábět vysoce kvalitní nafukovací SUP prkna a vybavení pro vodní sporty v měřítku.
   - Naše zařízení je vybaveno nejmodernějšími stroji, včetně automatických CNC řezacích strojů, RF dielektrických svářeček, horkovzdušných těsnicích zařízení a digitálních tiskáren.
 stats:
   - value: 12 000 m²
@@ -39,7 +39,7 @@ intelligence_cards:
   - title: Laboratoř kvality a testování
     icon: Q
     icon_bg: green
-    desc: 'Nezávislá laboratoř kontroly kvality se 4 fázemi testování: kontrola vstupních materiálů (pevnost v tahu, pevnost v trhu, UV), 24–48hodinová tlaková zkouška při 1.25x jmenovitého tlaku, testy odlupování švů a ověření nosnosti a vyvážení u každého člunu.'
+    desc: 'Nezávislá laboratoř kontroly kvality se 4 fázemi testování: kontrola vstupních materiálů (pevnost v tahu, pevnost v trhu, UV), 24–48hodinová tlaková zkouška při 1.25x jmenovitého tlaku, testy odlupování švů a ověření nosnosti a vyvážení u každého prkna.'
     metrics:
       - label: Laboratorní vybavení
         value: Trhací zařízení, teplotní komora, nádrž pro zkoušky těsnosti
@@ -63,10 +63,10 @@ workshops_section:
   title: Výrobní dílny
   workshops:
     - title: Řezání PVC a příprava materiálu
-      description: Automatické CNC řezací stroje zpracovávají tkaniny PVC, Hypalon a drop-stitch s přesností pod jeden milimetr. Počítačově optimalizované rozmístění dílů minimalizuje odpad materiálu a zajišťuje, že každý panel splňuje rozměrovou specifikaci ještě před svařováním.
+      description: Automatické CNC řezací stroje zpracovávají tkaniny PVC a drop-stitch s přesností pod jeden milimetr. Počítačově optimalizované rozmístění dílů minimalizuje odpad materiálu a zajišťuje, že každý panel splňuje rozměrovou specifikaci ještě před svařováním.
       image: https://assets.afarer.com/images/afarer/hero/production-dept.webp
     - title: Svařování nafukovacích komor a tepelné svařování
-      description: Samostatná svařovací dílna se stroji pro tepelné svařování a RF dielektrickými lisy. Horkovzdušné svářečky spojují a natavují PVC komory, zatímco RF svary vytvářejí vysoce pevné vzduchotěsné švy, které překračují požadavky ISO 6185.
+      description: Samostatná svařovací dílna se stroji pro tepelné svařování a RF dielektrickými lisy. Horkovzdušné svářečky spojují a natavují PVC komory, zatímco RF svary vytvářejí vysoce pevné vzduchotěsné švy, které překračují požadavky EN ISO 25649.
       image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
     - title: Spojení drop-stitch jádra
       description: Drop-stitch jádra SUP prken jsou k vnějším PVC laminátům spojena tepelnou laminací. Tisíce vnitřních polyesterových vláken spojují horní a spodní vrstvu a vytvářejí tuhou strukturu při tlaku 12–15 PSI. Okrajové pásy jsou pro pevnost hran spojeny třívrstvým svařováním (fusion).
@@ -78,7 +78,7 @@ workshops_section:
       description: Montážní linka, kde se na každé SUP prkno instalují ventily, kroužky D, madla, krabice pro ploutve a podlážky. Každé prkno prochází 100bodovým montážním kontrolním seznamem, který potvrzuje vedoucí týmu.
       image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
     - title: Testování a kontrola kvality
-      description: Každý hotový člun před expedicí prochází povinnou zkouškou zadržení vzduchu, ověřením pevnosti švů a kompletní kontrolou systémů. Naše laboratoř kvality pracuje nezávisle na výrobě a odpovídá přímo vedení.
+      description: Každé hotové prkno před expedicí prochází povinnou zkouškou zadržení vzduchu, ověřením pevnosti švů a kompletní kontrolou systémů. Naše laboratoř kvality pracuje nezávisle na výrobě a odpovídá přímo vedení.
       image: https://assets.afarer.com/images/afarer/factory/afarer-pressure-testing.webp
 equipment_section:
   tagline: Vybavení
@@ -101,17 +101,17 @@ equipment_section:
 qc_section:
   tagline: Kontrola kvality
   title: Proces testování a řízení kvality
-  subtitle: Každý člun před odesláním prochází povinným testováním. Naše zkušební laboratoř funguje nezávisle na výrobě a hlásí přímo vedení.
+  subtitle: Každé prkno před odesláním prochází povinným testováním. Naše zkušební laboratoř funguje nezávisle na výrobě a hlásí přímo vedení.
   steps:
     - step: '1'
       title: Kontrola vstupních materiálů
-      desc: Tkaniny PVC, Hypalon a drop-stitch procházejí zkouškou pevnosti v tahu (ASTM D751), šířením trhliny a ověřením odolnosti proti UV záření, než jakákoliv šarže vstoupí do výroby.
+      desc: Tkaniny PVC a drop-stitch procházejí zkouškou pevnosti v tahu (ASTM D751), šířením trhliny a ověřením odolnosti proti UV záření, než jakákoliv šarže vstoupí do výroby.
     - step: '2'
       title: 24–48hodinový test udržení vzduchu
       desc: Každá nafukovací komora je nafouknuta na 125 % jmenovitého tlaku a udržována po dobu 24–48 hodin. Pokles tlaku nad 5 % automaticky vede k vyřazení kusu a opětovné kontrole švů.
     - step: '3'
       title: Testování zátěže a vyvážení
-      desc: Hotové čluny se zatíží na maximální jmenovitou kapacitu a testují se na stabilitu, volný bok a ovladatelnost. Každé plavidlo se před finální kontrolou testuje na vodě.
+      desc: Hotová prkna se zatíží na maximální jmenovitou kapacitu a testují se na stabilitu a tuhost. Každé prkno se před finální kontrolou testuje na vodě.
 oem_section:
   tagline: OEM projekty
   title: Případové studie značkových a OEM partnerství
@@ -138,11 +138,11 @@ faq_section:
       a: Standardní dodací lhůta je 30–45 dnů od potvrzené objednávky a zálohy u hromadné výroby OEM. Vývoj vlastních forem přidává 15–20 dnů na výrobu nástrojů. Urychlená výroba je k dispozici pro naléhavé zakázky a sezónní špičky. Prototypové vzorky se obvykle odesílají do 15–20 dnů.
     - q: Můžete dodat za podmínek FOB Qingdao nebo CIF do našeho přístavu?
       a: Ano. Dodáváme za podmínek FOB Qingdao, CIF do hlavních světových přístavů a DDP pro kvalifikované partnery. Náš logistický tým zajišťuje rezervaci kontejnerů, exportní dokumentaci a celní odbavení. Dodáváme do více než 50 zemí na trzích EU, USA, Austrálie a Asie.
-b2b_moq: 'Standardní MOQ: 5–10 jednotek na model (SUP/drop-stitch). MOQ pro SUP: 2–5 jednotek. Zkušební objednávky vítány pro nová partnerství.'
+b2b_moq: 'Standardní MOQ: 5–10 jednotek na model. Zkušební objednávky vítány pro nová partnerství.'
 production_flow:
   tagline: Průběh výroby
-  title: Od materiálu k hotovému člunu
-  subtitle: Každý člun prochází 6 výrobními fázemi s kontrolními body QC na každém kroku. Žádné zkratky, žádné vynechané kontroly.
+  title: Od materiálu k hotovému prknu
+  subtitle: Každé prkno prochází 6 výrobními fázemi s kontrolními body QC na každém kroku. Žádné zkratky, žádné vynechané kontroly.
   stages:
     - stage: '01'
       title: Příjem materiálu a vstupní kontrola kvality
@@ -163,8 +163,8 @@ production_flow:
       qc_threshold: Pevnost ve slupech min. 8 N/cm. Tolerance šířky svaru ±1 mm. Jakékoli viditelné kanálkování = odmítnout
       responsibility: Kontrola kvality svařování (2 inspektoři na směnu)
     - stage: '04'
-      title: Montáž a výstroj člunů
-      description: 'Čluny postupují do finální montáže, kde se spojí všechny komponenty: trup + nafukovací komory, instalace ventilů, D-kroužky, madla, lůžka ploutví a uložení přepravní tašky. Každý kus prochází montážním kontrolním seznamem o 100 bodech.'
+      title: Montáž a osazení
+      description: 'Prkna postupují do finální montáže, kde se spojí všechny komponenty: bočnice slepené a svařené, instalace ventilů, D-kroužky, madla, krabice pro ploutve a uložení přepravní tašky. Každý kus prochází montážním kontrolním seznamem o 100 bodech.'
       qc_check: 100bodový kontrolní seznam u každého kusu, test funkce ventilu (10 cyklů otevření/zavření), kontrola utahovacího momentu kování, vizuální kontrola
       qc_threshold: 'Politika nulových vad u prvků kritických pro bezpečnost (ventily, D-kroužky, madla). Drobné kosmetické vady: AQL 2.5 (ISO 2859)'
       responsibility: Vedoucí montážního týmu + kontrola kvality na lince
@@ -184,7 +184,7 @@ workforce:
   tagline: Náš tým
   title: Pracovní síla a odbornost
   engineers: 25+
-  engineers_detail: Inženýři v oblasti výzkumu a vývoje, návrhu forem, materiálové laboratoře a výrobního inženýrství. V průměru více než 7 let zkušeností s výrobou nafukovacích člunů.
+  engineers_detail: Inženýři v oblasti výzkumu a vývoje, návrhu forem, materiálové laboratoře a výrobního inženýrství. V průměru více než 7 let zkušeností s výrobou nafukovacích produktů.
   shift_pattern: 2 směny denně (07:00–15:30, 15:30–00:00). Pro urgentní objednávky je možná noční směna.
   training: Měsíční školení QC, čtvrtletní bezpečnostní cvičení, roční hodnocení dovedností. Noví zaměstnanci absolvují 40hodinové vstupní školení, než začnou pracovat na výrobní lince.
   departments:
@@ -215,17 +215,14 @@ workforce:
 material_traceability:
   tagline: Vysledovatelnost
   title: Sledování materiálů a kontrola šarží
-  description: Každé šarži suroviny je v našem systému ERP přiděleno jedinečné číslo šarže. Od příjmu přes výrobu až po hotový výrobek odkazuje kusovník každého člunu zpět na původní šarži dodavatele. To umožňuje plnou zpětnou vysledovatelnost pro jakékoli šetření ohledně kvality nebo souladu s předpisy.
+  description: Každé šarži suroviny je v našem systému ERP přiděleno jedinečné číslo šarže. Od příjmu přes výrobu až po hotový výrobek odkazuje kusovník každého prkna zpět na původní šarži dodavatele. To umožňuje plnou zpětnou vysledovatelnost pro jakékoli šetření ohledně kvality nebo souladu s předpisy.
   system: Vlastní ERP (interní systém Qingdao Vatrad Group) + fyzické štítky šarží na každé pracovní zakázce
-  coverage: 100 % výrobních materiálů — PVC, Hypalon, tkanina drop-stitch, lepidla, ventily, kování, balení
+  coverage: 100 % výrobních materiálů — PVC, tkanina drop-stitch, lepidla, ventily, kování, balení
   records_retained: 10 let (podle požadavku CE 2013/53/EU)
   suppliers:
     - material: PVC námořní kvality
       source: Čínští a korejští dodavatelé
       certified: ISO 9001, REACH, RoHS
-    - material: Hypalon (CSM)
-      source: Japonský dodavatel
-      certified: ISO 9001, REACH
     - material: Drop-stitch tkanina
       source: Vlastní tkalcovna + externí partner
       certified: Interní QC + ISO 9001 dodavatelů
@@ -239,7 +236,7 @@ qc_dashboard:
   stats:
     - value: 100%
       label: Tlakově otestované kusy
-      detail: Každý člun, každá komora, každá šarže
+      detail: Každé prkno, každá komora, každá šarže
     - value: <5%
       label: Maximální přípustný pokles tlaku
       detail: Přes 24–48 hodin při 1,25× jmenovitém tlaku

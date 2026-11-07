@@ -1,6 +1,6 @@
 meta:
   title: Rungonsuunnittelustudio – CAD, FEA ja räätälöity rungon suunnittelu | {SITE}
-  description: 'Tutustu runkoinsinööristudioomme: CAD-suunnittelu, raja-elementtianalyysi (FEA) ja mukautettujen HDPE/alumiini/lasikuiturunkojen kehitys. Ota yhteyttä insinööritiimiimme aloittaaksesi seuraavan veneprojektisi.'
+  description: 'Tutustu runkoinsinööristudioomme: CAD-suunnittelu, elementtimenetelmäanalyysi (FEA) ja suorituskykyisten räätälöityjen SUP-runkojen kehitys. Ota yhteyttä insinööritiimiimme aloittaaksesi seuraavan lautaprojektisi.'
 back_text: Takaisin tutkimus- ja kehityskeskukseen
 home_label: Koti
 hero:
@@ -10,12 +10,12 @@ hero:
   image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
   image_alt: Afarerin rungonsuunnittelun CAD-työasema
 intro: >-
-  Runko on jokaisen kumiveneen selkäranka. Sen on oltava riittävän kevyt liukuakseen tehokkaasti, riittävän vahva kestääkseen iskukuormituksia ja mittapysyvä laajalla lämpötila-alueella. Afarer:ssa runkosuunnittelustudiomme yhdistää edistyneen CAD-mallinnuksen,
-  elementtimenetelmälaskennan (FEA) ja vuosikymmenten käytännön laivasuunnittelukokemuksen tuottaakseen runkoja, jotka on optimoitu juuri omaan käyttötarkoitukseensa — eivät geneerisiä muotoja, jotka on poimittu luettelosta.
+  Runko on jokaisen täytettävän SUP-laudan selkäranka. Sen on oltava riittävän kevyt liukuakseen tehokkaasti, riittävän vahva kestääkseen kallioisia rantoja ja riittävän jäykkä muuntaakseen jokaisen melonvedon liikkeeksi eteenpäin. Afarer:ssa runkosuunnittelustudiomme yhdistää edistyneen CAD-mallinnuksen,
+  elementtimenetelmälaskennan (FEA) ja vuosikymmenten käytännön lautasuunnittelukokemuksen tuottaakseen runkoja, jotka on optimoitu juuri omaan käyttötarkoitukseensa — eivät geneerisiä muotoja, jotka on poimittu luettelosta.
 content_html: >
   <h2>Missä lujuus kohtaa hydrodynamiikan</h2>
 
-  <p>Työskentelemme kolmen pääasiallisen runkomateriaalin kanssa — rotaatiovaletun HDPE:n, hitsatun merikelpoisen alumiinin ja käsin laminoidun lasikuidun — ja meillä on tekninen osaaminen suunnitella, simuloida ja validoida jokainen näistä omassa talossa.</p>
+  <p>Työskentelemme kolmen pääasiallisen rakennusalustan kanssa — vahvistettujen drop-stitch PVC-ytimien, käsin laminoitujen lasikuitulaminaattien ja rotaatiovalutun polyeteenin — ja meillä on tekninen osaaminen suunnitella, simuloida ja validoida jokainen näistä omassa talossa.</p>
 
 
   <h2>Suunnittelutyökalut ja standardit</h2>
@@ -25,7 +25,7 @@ content_html: >
   <table>
     <thead><tr><th>Osaaminen</th><th>Ohjelmisto / työkalu</th><th>Sovelluskohde</th></tr></thead>
     <tbody>
-      <tr><td>3D-parametrinen mallinnus</td><td>SolidWorks Professional</td><td>Rungon pinta, stringerijärjestelmä, moottoripukki, kannen asettelu</td></tr>
+      <tr><td>3D-parametrinen mallinnus</td><td>SolidWorks Professional</td><td>Rungon pinta, reuna- ja stringerivahvikkeet, kannen asettelu, varustekiinnityskohdat</td></tr>
       <tr><td>Elementtimenetelmäanalyysi</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Jännityskartoitus, ominaistaajuusanalyysi, törmäys-/iskusimulaatio</td></tr>
       <tr><td>Laskennallinen virtausdynamiikka</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynaamisen vastuksen ennustaminen, trimmin optimointi</td></tr>
       <tr><td>Laminaattisuunnittelu</td><td>ESAComp / CADEC</td><td>Lasikuitukerrosten pinonta, ydinmateriaalin valinta, painoarvio</td></tr>
@@ -39,16 +39,16 @@ content_html: >
   <p>Jokainen rungon suunnitelma — olipa kyse vakiomallista tai täysin räätälöidystä projektista — noudattaa tarkkaa viisivaiheista prosessia:</p>
 
   <ol>
-    <li><strong>Konsepti ja vaatimusten keruu</strong> — Tapaamme sinut määrittääksemme hyötykuorman, nopeusalueen, aallokonkestävyyden, hinausvaatimukset ja erityiset tehtävävarusteet (kansiluukut, konsolin sijainnit, polttoainesäiliön integrointi).</li>
-    <li><strong>3D-pinnanmuotoilu ja hydrostaattinen laskenta</strong> — Rungon muoto mallinnetaan SolidWorksissä ja tarkistetaan hydrostaattisen stabiilisuuden osalta (GM, oikaisuvarsi) sisäänrakennettuja analyysityökaluja käyttäen.</li>
-    <li><strong>Rakenteellinen FEA</strong> — Kuormitustapaukset määritellään: staattinen (miehistö + varusteet), dynaaminen (liukuvaiheen iskut 5g) ja lyönti (putoaminen aallonharjalta nopeudella 3 m/s). Jännitysjakaumat käydään läpi; varmuuskerroin ≥ 2.5 on pakollinen.</li>
+    <li><strong>Konsepti ja vaatimusten keruu</strong> — Tapaamme sinut määrittääksemme melojan painon ja hyötykuorman, nopeusalueen, vesitilannekestävyyden, kuljetusvaatimukset ja erityiset tehtävävarusteet (kiinnityspisteet kannella, lastin kiinnityskohdat, lisävarusteiden integrointi).</li>
+    <li><strong>3D-pinnanmuotoilu ja hydrostaattinen laskenta</strong> — Rungon muoto mallinnetaan SolidWorksissä ja tarkistetaan hydrostaattisen stabiilisuuden, tilavuusjakauman ja oikaisuvarren osalta sisäänrakennettuja analyysityökaluja käyttäen.</li>
+    <li><strong>Rakenteellinen FEA</strong> — Kuormitustapaukset määritellään: staattinen (meloja + varusteet), dynaaminen (aaltolaskun iskut 5g) ja karilleajo (osuminen kallioiseen rantaan nopeudella 3 m/s). Jännitysjakaumat käydään läpi; varmuuskerroin ≥ 2.5 on pakollinen.</li>
     <li><strong>CFD-vastuksen optimointi</strong> — Runko simuloidaan kolmella kuormitustasolla ja viidellä nopeudella. Märkä pinta-ala, trimmikulma ja jäännösvastus pienennetään iteratiivisesti.</li>
-    <li><strong>Suunnittelun tarkistus ja luovutus</strong> — Koko suunnittelupaketti (3D-malli, FEA-raportti, CFD-raportti, painoarvio, laminaattikirja) tarkistetaan vanhemman laivasuunnittelijamme toimesta ennen luovutusta protopajaan.</li>
+    <li><strong>Suunnittelun tarkistus ja luovutus</strong> — Koko suunnittelupaketti (3D-malli, FEA-raportti, CFD-raportti, painoarvio, laminaattikirja) tarkistetaan vanhemman insinöörimme toimesta ennen luovutusta protopajaan.</li>
   </ol>
 
 
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA-jännitysjakauma — Partioveneen runko (alumiini 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA-jännitysjakauma — Retkeily-SUP:n runko (vahvistettu drop-stitch)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
@@ -72,32 +72,32 @@ content_html: >
 
   <h2>Räätälöinti: sinun runkosi, sinun sääntösi</h2>
 
-  <p>Yksikään toimija ei ole vaatimuksiltaan samanlainen. Satamapartiovene tarvitsee matala-V-rungon vakauteen alhaisella nopeudella; nopeaan kiinniottoon tarkoitettu vene tarvitsee syvän V:n ja roiskekiskot; sukellustoiminnan tukivene tarvitsee leveän rungon ja matalan peräpeilin. Emme pakota
-  käyttötarkoitustasi olemassa olevaan rungon muotoon. Suunnittelemme lähtien sinun spesifikaatiostasi.</p>
+  <p>Mikään kaksi melojaa ei ole vaatimuksiltaan samanlainen. Kalastus-SUP tarvitsee leveän, vakaan liukurungon; retkeilylauta tarvitsee siirtorungon, joka maksimoi liukumisen; surf-SUP tarvitsee responsiiviset reunat ja viritetyn rockerin. Emme pakuta käyttötarkoitustasi olemassa olevaan rungon
+  muotoon. Suunnittelemme lähtien sinun spesifikaatiostasi.</p>
 
   <p>Esimerkkejä viimeaikaisista räätälöidyistä rungonsuunnitteluprojekteista:</p>
 
   <ul>
-    <li>Venytetty 6.8 m HDPE-runko karibialaiselle matkanjärjestäjälle, vahvistettu keula rantautumisia varten (+15 % pohjan paksuus).</li>
-    <li>Kevyt alumiininen 7.2 m partiovene rannikkovartiostolle, integroidut polttoainesäiliön välilevyt ja varustekaappien vahvikkeet.</li>
-    <li>Lasikuituinen 5.5 m sukellusvene madalletulla peräpeilillä ja kaksoisakkulaatikoilla, suunniteltu helpottamaan snorklaajien nousua takaisin veneeseen.</li>
+    <li>Pidennetty retkeily-SUP karibialaiselle ekoturismin matkanjärjestäjälle, vahvistettu keula rantautumisia varten (+15 % reunan paksuus).</li>
+    <li>Korkean näkyvyyden partio-SUP satamaviranomaiselle, integroiduilla varustekiinnikkeillä ja taktisilla kiskoilla.</li>
+    <li>Retkeily-SUP vuokrakäyttöön, vahvistetuilla reunoilla ja ylimääräisillä lastinkiinnityksillä.</li>
   </ul>
 
 
   <h2>Insinöörimme</h2>
 
-  <p>Studiota johtaa vanhempi laivasuunnittelija, jolla on 14 vuoden kokemus suurnopeusveneiden suunnittelusta, ja häntä tukee kaksi FEA:han ja CFD:hen erikoistunutta konetekniikan insinööriä. Kaikilla kolmella on jatkotutkinto meritekniikasta tai laivasuunnittelusta kansainvälisesti tunnustetuista
-  yliopistoista. Tiimi julkaisee säännöllisesti alan ammattilehdissä ja esiintyy konferensseissa, kuten International Conference on High-Performance Marine Vehicles -konferenssissa.</p>
+  <p>Studiota johtaa vanhempi insinööri, jolla on 14 vuoden kokemus suorituskykyisten lautojen suunnittelusta, ja häntä tukee kaksi FEA:han ja CFD:hen erikoistunutta konetekniikan insinööriä. Kaikilla kolmella on jatkotutkinto meri- tai konetekniikasta kansainvälisesti tunnustetuista
+  yliopistoista. Tiimi julkaisee säännöllisesti alan ammattilehdissä ja esiintyy kansainvälisissä konferensseissa suorituskykyisen melontaurheilun tekniikan parissa.</p>
 
 
   <h2>Kumppaninasi seuraavassa runkoprojektissasi</h2>
 
-  <p>Ensimmäisestä konseptiluonnoksesta lopulliseen jännitysraporttiin asti rungonsuunnittelustudiomme on kumppanisi veneen luomisessa, joka ei ole vain rakennettu — vaan suunniteltu. Panostamme simulaatioaikaan etukäteen, jotta jokainen hitsi, jokainen laminaattikerros ja jokainen rungon kaari on
+  <p>Ensimmäisestä konseptiluonnoksesta lopulliseen jännitysraporttiin asti rungonsuunnittelustudiomme on kumppanisi laudan luomisessa, joka ei ole vain rakennettu — vaan suunniteltu. Panostamme simulaatioaikaan etukäteen, jotta jokainen hitsi, jokainen laminaattikerros ja jokainen rungon kaari on
   olemassa syystä.</p>
 
-  <p>Tarvitsetpa pienen muokkauksen olemassa olevaan malliin tai täysin puhtaalta pöydältä lähtevän suunnitelman, olemme valmiita keskustelemaan vaatimuksistasi.</p>
+  <p>Tarvitsetpa pienen muokkauksen olemassa olevaan malliin tai täysin puhtaalta pöydältä lähtevän suunnitelman, olemme valmiina keskustelemaan vaatimuksistasi.</p>
 cta:
   title: Aloita runkosuunnittelun konsultaatio
-  subtitle: Kertokaa missio-profiilistanne, ja ehdotamme insinööriratkaisun.
-  button_text: Ota yhteyttä insinööriteippiimme
+  subtitle: Kertokaa missioprofiilistanne, ja ehdotamme insinööriratkaisun.
+  button_text: Ota yhteyttä insinööritiimiimme
   button_link: /contact

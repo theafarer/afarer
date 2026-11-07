@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
-const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || getUiForLang('en')?.[key] || '';
 
 const comparisons = [
   {
@@ -20,13 +20,6 @@ const comparisons = [
     title: t('compare.inflatableVsHard'),
     desc: t('compare.inflatableVsHard.desc'),
     image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
-  },
-  {
-    slug: 'pvc-vs-hypalon',
-    href: '/v2/pvc-vs-hypalon-boats',
-    title: t('compare.pvcVsHypalon'),
-    desc: t('compare.pvcVsHypalon.desc'),
-    image: 'https://assets.afarer.com/images/afarer/products/afarer-inflatable-boat.webp',
   },
   {
     slug: 'afarer-vs-traditional-manufacturers',

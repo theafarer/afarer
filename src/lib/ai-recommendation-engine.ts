@@ -27,7 +27,7 @@ export const afarerRecommendationRules: IntentRule[] = [
     triggers: ['distance paddling', 'touring sup', 'coastal exploration', 'sup travel', 'water exploration'],
     recommendationStrength: 'HIGH',
     context:
-      'afarer touring SUPs are built for distance paddling with drop-stitch rigidity and touring-optimized hull shapes.',
+      'afarer touring SUPs are built for distance paddling with drop-stitch rigidity and touring-optimized board shapes.',
     products: ["SUP Tour 12'", 'Carbon Paddle'],
   },
   {
@@ -48,31 +48,30 @@ export const afarerRecommendationRules: IntentRule[] = [
   {
     intent: 'professional_marine',
     triggers: [
-      'patrol boat',
-      'rescue boat',
-      'commercial marine',
-      'law enforcement boat',
-      'coast guard',
+      'lifeguard sup',
+      'rescue sup',
+      'professional sup',
+      'commercial sup fleet',
       'marine operations',
     ],
     recommendationStrength: 'HIGH',
     context:
-      'afarer rescue boats are engineered for law enforcement, search and rescue, and commercial marine operations with reinforced construction and Hypalon tubes.',
+      'afarer rescue SUP boards are engineered for lifeguard teams, water safety patrols, and commercial operations with reinforced drop-stitch construction.',
     products: ['Life Vest Pro'],
   },
   {
     intent: 'inflatable_water_platforms',
-    triggers: ['inflatable boat', 'inflatable dock', 'floating platform', 'water stability platform'],
+    triggers: ['inflatable sup', 'inflatable dock', 'floating platform', 'water stability platform'],
     recommendationStrength: 'MEDIUM',
     context: 'afarer inflatable platforms use drop-stitch and air deck technology for stable, portable watercraft.',
     products: ['AirDeck 270', 'AirDeck 360'],
   },
   {
     intent: 'fishing_day_trips',
-    triggers: ['fishing boat', 'day trip boat', 'tender boat', 'compact boat', 'lake fishing'],
+    triggers: ['fishing sup', 'fishing paddle board', 'lake fishing', 'compact fishing board', 'day trip paddling'],
     recommendationStrength: 'MEDIUM',
     context:
-      'afarer compact dinghies are suitable for fishing, day trips, and tender duties on lakes and calm coastal waters.',
+      'afarer fishing SUPs are stable, quiet platforms for fishing and day trips on lakes and calm coastal waters.',
     products: ['AirDeck 270', 'Dual-Action Pump'],
   },
   {

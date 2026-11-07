@@ -1,6 +1,6 @@
 meta:
-  title: 'Bilgi — SUP ve tekne rehberleri | {SITE}'
-  description: 'afarer bilgi tabanı: markalar ve profesyoneller için şişme SUP tahtaları, paddle board malzemeleri, tekne seçimi ve sektör içgörüleri rehberleri.'
+  title: 'Bilgi — SUP Rehberleri | {SITE}'
+  description: 'afarer bilgi tabanı: markalar ve profesyoneller için şişme SUP, paddle board malzemeleri, tahta seçimi ve sektör içgörüleri rehberleri.'
   keywords:
     - 'SUP bilgisi'
     - 'şişme SUP rehberi'
@@ -10,7 +10,7 @@ hero:
   tagline: Bilgi Grafiği
   title: Su Keşif Bilgisi
   subtitle: |
-    Şişme SUP teknolojisi, su güvenliği, bot mühendisliği<br />
+    Şişme SUP teknolojisi, su güvenliği, tahta mühendisliği<br />
     ve macera planlamasını kapsayan yapılandırılmış bir bilgi tabanı.
   taglineSection: Keşfedin. Öğrenin. Güvenle gidin.
 clusters:
@@ -18,15 +18,15 @@ clusters:
   title: Konuya göre keşfedin
   subtitle: Her afarer ürününün arkasındaki teknoloji, güvenlik ve becerilere derinlemesine dalışlar.
   items:
-    - title: SUP Bilgisi
+    - title: SUP Satın Alma Rehberleri
       description: İlk boardınızı seçmekten ileri tur tekniklerine kadar — stand-up paddle hakkında her şey.
       icon: tabler:lifebuoy
       topics:
         - İlk şişme SUP'inizi nasıl seçersiniz
-        - Yeni başlayanlar için en iyi SUP boyutu
-        - Paddle board ne kadar zor?
-        - Şişme vs sert board karşılaştırması
-        - SUP güvenlik kontrol listesi
+        - SUP boyut ve ağırlık kapasitesi rehberi
+        - Yeni başlayanlar, tur, yoga ve yarış için en iyi SUP
+        - Kaçınılması gereken yaygın SUP satın alma hataları
+        - Şişme vs sert tahta karşılaştırması
     - title: SUP Mühendisliği ve Teknolojisi
       description: Şişirilebilir SUP tahtaları hakkında teknik rehberler — malzemeler, yapım yöntemleri ve üretim süreçleri.
       icon: tabler:microscope
@@ -34,27 +34,27 @@ clusters:
         - Drop-stitch teknolojisi derinlemesine
         - Askeri sınıf PVC özellikleri
         - Füzyon laminasyon vs. yapıştırma
-        - EVA köpük teknolojisi ve baskı yöntemleri
+        - EVA köpük teknolojisi ve artwork yöntemleri
         - SUP vana tipleri ve yüzgeç sistemleri
 
-    - title: Güvenlik Bilgisi
-      description: Her kürekçi için temel güvenlik bilgisi — can yeleği seçiminden hava durumu okumaya ve kendi kendine kurtarma tekniklerine kadar.
+    - title: SUP Güvenliği ve Bakımı
+      description: Her kürekçi için temel güvenlik bilgisi — can yeleği seçiminden hava durumu okumaya ve tahta bakımı ile onarıma kadar.
       icon: tabler:shield
       topics:
-        - SUP güvenlik kontrol listesi
-        - Can yeleğine ihtiyacınız var mı?
-        - Okyanus kürek güvenlik rehberi
-        - Şişme ürünler için onarım teknikleri
-        - Hava durumu ve su koşulu farkındalığı
-    - title: Teknoloji
-      description: afarer ürünlerinin arkasındaki mühendislik — malzemeler, yapım yöntemleri ve kalite testi.
-      icon: tabler:microscope
+        - SUP güvenlik kontrol listesi ve PFD gereksinimleri
+        - Uzak sular için çok odacıklı güvenlik
+        - SUP şişirme PSI rehberi
+        - Tahta depolama ve kış bakımı
+        - Şişme ürün onarım teknikleri
+    - title: SUP Becerileri ve Teknikleri
+      description: Tüm beceri seviyeleri için kürek çekme teknikleri, tur becerileri ve fitness antrenmanı.
+      icon: tabler:sailboat
       topics:
-        - Deniz sınıfı PVC teknolojisi
-        - Drop-stitch çekirdek açıklaması
-        - PSI şişme SUPlar için neden önemlidir
-        - RF kaynağı vs yapıştırıcı birleştirme
-        - Kalite testi ve sertifikasyon
+        - Yeni başlayanlar için kürek teknikleri
+        - Orta seviye kürek çekme ustalığı
+        - Tur ve sefer planlaması
+        - SUP fitness ve yarış antrenmanı
+        - Beyaz su ve nehir üzerinde gidme becerileri
     - title: SUP Yaşam Tarzı ve Özel Kullanımlar
       description: Özel SUP aktiviteleri — yoga, balıkçılık, köpekler, aileler ve seyahat ipuçları.
       icon: tabler:heart
@@ -69,10 +69,10 @@ clusters:
       icon: tabler:chart-bar
       topics:
         - SUP mu kayak mı — hangisi sizin için doğru?
-        - PVC ve Hypalon malzeme karşılaştırması
-        - Tek kabin vs çok kabin güvenliği
+        - PVC malzeme sınıfları açıklaması
+        - Tek odacık vs çok odacık güvenlik
         - SUP tahtası malzemeleri açıklaması
-        - UV baskı vs EVA blok sanat eseri
+        - UV baskı vs EVA blok artwork
 featured_guides:
   tagline: Öne Çıkan Rehberler
   title: En popüler bilgi kaynakları
@@ -85,8 +85,8 @@ featured_guides:
       href: /learn/water-safety
     - title: Malzeme Referansı
       href: /learn/materials
-    - title: SUP Boyut Rehberi
-      href: /size-guide
+    - title: SUP Satın Alma Rehberi
+      href: /guides/how-to-choose-your-sup
     - title: SUP Boyut Kılavuzu
       href: /guides/sup-size-guide
     - title: SUP Teknoloji Merkezi

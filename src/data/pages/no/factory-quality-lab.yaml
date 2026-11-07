@@ -1,6 +1,6 @@
 meta:
   title: 'Kvalitetslaboratorium — Testing & kvalitetssikring | {SITE}'
-  description: 'Uavhengig kvalitetslabb med ISO 9001-prosesser hos afarer: hver enhet testes før forsendelse for å garantere kvaliteten på oppblåsbare SUPer og båter.'
+  description: 'Uavhengig kvalitetslabb med ISO 9001-prosesser hos afarer: hver enhet testes før forsendelse for å garantere kvaliteten på oppblåsbare SUPer.'
   keywords:
     - 'SUP kvalitetskontroll'
     - 'paddle board testlabb'
@@ -11,12 +11,12 @@ hero:
   title: Testing laboratorium og kvalitetssikring
   subtitle: Uavhengig kvalitetslab med ISO 9001-prosesser — hver enhet testes før forsendelse
 intro: >-
-  afarer driver et dedikert kvalitetskontrollaboratorium som opererer uavhengig av produksjonen. Hvert råvarebatch og hver ferdig båt gjennomgår dokumenterte inspeksjonsprotokoller før frigivelse. Vårt kvalitetskontrollteam rapporterer direkte til ledelsen, noe som sikrer upartiske
+  afarer driver et dedikert kvalitetskontrollaboratorium som opererer uavhengig av produksjonen. Hvert råvarebatch og hvert ferdig brett gjennomgår dokumenterte inspeksjonsprotokoller før frigivelse. Vårt kvalitetskontrollteam rapporterer direkte til ledelsen, noe som sikrer upartiske
   kvalitetsbeslutninger.
 highlights:
   - value: 100%
     label: Enheter trykktestet
-    detail: Hvert kammer, hver båt
+    detail: Hvert kammer, hvert brett
   - value: 24–48 h
     label: Varighet av luftretensjonstest
     detail: Ved 1,25× nominelt trykk
@@ -28,7 +28,7 @@ highlights:
     detail: I henhold til ISO 2859-utvalg
 test_procedures:
   - title: Råvareinspeksjon
-    description: Hvert innkommende batch av PVC, Hypalon, drop-stitch-stoff og maskinvare testes før godkjenning. Strekkfasthet (ASTM D751), rivemotstand (ISO 4674) og UV-motstand verifiseres. Avvikende materialer settes i karantene og returneres.
+    description: Hvert innkommende batch av PVC, drop-stitch-stoff og maskinvare testes før godkjenning. Strekkfasthet (ASTM D751), rivemotstand (ISO 4674) og UV-motstand verifiseres. Avvikende materialer settes i karantene og returneres.
     standards:
       - ASTM D751 (trekkfasthet)
       - ISO 4674 (rivestyrke)
@@ -42,10 +42,10 @@ test_procedures:
   - title: 24–48-timers luftlekkasjetest
     description: Hvert rørkammer blåses opp til 125 % av nominelt trykk og holdes i 24–48 timer. Trykksensorer logger kontinuerlig med temperaturkompensasjon. Ethvert kammer som overskrider 5 % trykkfall utløser automatisk batchrevisjon.
     standards:
-      - ISO 6185
+      - EN ISO 25649
       - CE 2013/53/EU
   - title: Last- og balansetesting
-    description: Ferdige båter testes ved maksimal nominell kapasitet for stabilitet, fribord og håndtering. Hvert fartøy gjennomgår vanntesting før endelig inspeksjonsgodkjenning.
+    description: Ferdige brett testes ved maksimal nominell kapasitet for stabilitet og stivhet. Hvert brett gjennomgår vanntesting før endelig inspeksjonsgodkjenning.
     standards:
       - ISO 12217
       - CE 2013/53/EU

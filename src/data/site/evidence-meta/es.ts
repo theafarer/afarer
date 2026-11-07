@@ -24,7 +24,7 @@ export const evidenceMetaEs: EvidenceMetaMap = {
   'search-rescue-sup-fleet': {
     title: 'Agencia marítima del Sudeste Asiático — Flota SUP de patrulla y rescate | Afarer',
     description:
-      'Una agencia marítima gubernamental requería 20 SUP de patrulla y rescate con tela Hypalon resistente al fuego, soportes de comunicación integrados y cumplimiento del capítulo III de SOLAS.',
+      'Una agencia marítima gubernamental requería 20 SUP de patrulla y rescate con cubiertas de alta visibilidad, soportes de comunicación integrados y construcción certificada CE.',
   },
   'european-dtc-ecommerce': {
     title: 'Marca europea DTC de deportes acuáticos — Línea SUP de marca + accesorios | Afarer',
@@ -52,7 +52,7 @@ export const evidenceMetaEs: EvidenceMetaMap = {
       'Un minorista canadiense de 25 tiendas requería una gama SUP exclusiva de marca propia con embalaje bilingüe francés/inglés, especificaciones para clima frío y cumplimiento normativo canadiense.',
   },
   'middle-east-distributor': {
-    title: 'Distribuidor de deportes acuáticos de Oriente Medio — Línea completa — SUP, barcas, accesorios | Afarer',
+    title: 'Distribuidor de deportes acuáticos de Oriente Medio — Línea completa — SUP y accesorios | Afarer',
     description:
       'Un distribuidor del CCG deseaba derechos exclusivos de toda la línea Afarer en 6 países del Golfo, con embalaje en árabe, especificaciones de materiales resistentes al calor y garantía conforme a la sharia.',
   },
@@ -75,11 +75,6 @@ export const evidenceMetaEs: EvidenceMetaMap = {
     title: 'Unión deportiva universitaria británica — Flota de club estudiantil — SUP + seguridad | Afarer',
     description:
       'Una universidad británica con club acuático activo necesitaba reemplazar su flota envejecida por SUP inflables modernos: almacenaje compacto, uso para todos los niveles y estándares de competición BUCS.',
-  },
-  'humanitarian-aid-project': {
-    title: 'Organización humanitaria internacional — Barcas neumáticas de rescate y ayuda | Afarer',
-    description:
-      'Una organización humanitaria internacional necesitaba 50 barcas neumáticas resistentes para rescates en inundaciones en el Sudeste Asiático: ligeras para transporte en helicóptero y reparables en campo.',
   },
   'cruise-line-activity-program': {
     title: 'Operador de cruceros del Caribe — Flota de actividades a bordo — SUP | Afarer',

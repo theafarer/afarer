@@ -24,7 +24,7 @@ export const evidenceMetaPt: EvidenceMetaMap = {
   'search-rescue-sup-fleet': {
     title: 'Agência marítima do Sudeste Asiático — Frota SUP de patrulha e resgate | Afarer',
     description:
-      'Uma agência marítima governamental exigia 20 SUP de patrulha e resgate com tecido Hypalon à prova de fogo, suportes de comunicação integrados e conformidade com o capítulo III da SOLAS.',
+      'Uma agência marítima governamental exigia 20 SUP de patrulha e resgate com decks de alta visibilidade, suportes de comunicação integrados e construção certificada CE.',
   },
   'european-dtc-ecommerce': {
     title: 'Marca europeia DTC de esportes aquáticos — Linha SUP de marca + acessórios | Afarer',
@@ -52,7 +52,7 @@ export const evidenceMetaPt: EvidenceMetaMap = {
       'Um varejista canadense com 25 lojas exigia uma linha SUP exclusiva de marca própria com embalagem bilíngue francês/inglês, especificações para clima frio e conformidade com normas náuticas canadenses.',
   },
   'middle-east-distributor': {
-    title: 'Distribuidor de esportes aquáticos do Oriente Médio — Linha completa — SUP, barcos, acessórios | Afarer',
+    title: 'Distribuidor de esportes aquáticos do Oriente Médio — Linha completa — SUP e acessórios | Afarer',
     description:
       'Um distribuidor do GCC buscava direitos exclusivos de toda a linha Afarer em 6 países do Golfo, com embalagem em árabe, especificações de materiais resistentes ao calor e garantia conforme a sharia.',
   },
@@ -75,11 +75,6 @@ export const evidenceMetaPt: EvidenceMetaMap = {
     title: 'União esportiva universitária britânica — Frota de clube estudantil — SUP + segurança | Afarer',
     description:
       'Uma universidade britânica com clube aquático ativo precisava substituir sua frota envelhecida por SUP infláveis modernos: armazenamento compacto, uso por todos os níveis e padrões de competição BUCS.',
-  },
-  'humanitarian-aid-project': {
-    title: 'Organização humanitária internacional — Barcos infláveis de resgate e ajuda | Afarer',
-    description:
-      'Uma organização humanitária internacional precisava de 50 barcos infláveis robustos para resgates em enchentes no Sudeste Asiático: leves para transporte de helicóptero e reparáveis em campo.',
   },
   'cruise-line-activity-program': {
     title: 'Operador de cruzeiros do Caribe — Frota de atividades a bordo — SUP | Afarer',

@@ -86,11 +86,11 @@ case_studies:
     client: "Agence maritime d'Asie du Sud-Est"
     product: 'Flotte de paddles de patrouille et de sauvetage'
     industry: 'Gouvernement / Sécurité maritime'
-    challenge: 'Une agence maritime gouvernementale exigeait 20 paddles de patrouille et de sauvetage en tissu Hypalon résistant au feu, avec des supports de communication intégrés et la conformité aux normes SOLAS Chapitre III relatives aux embarcations de sauvetage.'
-    solution: "Nous avons fabriqué 20 paddles avec flotteurs en Hypalon CSM, anneaux en D renforcés et packs d'éclairage de navigation pré-installés. L'équipe d'inspection de l'usine a assisté aux essais en mer. Dossier documentaire SOLAS complet fourni."
+    challenge: 'Une agence maritime gouvernementale exigeait 20 paddles de patrouille et de sauvetage avec des decks à haute visibilité, des supports de communication intégrés et une construction certifiée CE.'
+    solution: "Nous avons fabriqué 20 paddles en PVC de qualité militaire, avec anneaux en D renforcés et packs d'éclairage de navigation pré-installés. L'équipe d'inspection de l'usine a assisté aux essais en mer. Dossier documentaire de conformité complet fourni."
     result: 'Contrat livré en 4 mois. Flotte déployée pour la patrouille frontalière, la recherche et le sauvetage et la réponse aux catastrophes sur 3 bases régionales.'
     image: https://assets.afarer.com/images/afarer/hero/hero-5.webp
-    tags: [OEM, SUP, Hypalon, Gouvernement, SOLAS]
+    tags: [OEM, SUP, Gouvernement]
     outcome_metrics:
       - label: 'Paddles de patrouille'
         value: '20'
@@ -214,7 +214,7 @@ case_studies:
 
   - id: middle-east-distributor
     client: 'Distributeur de sports nautiques du Moyen-Orient'
-    product: 'Gamme complète — paddles, bateaux, accessoires'
+    product: 'Gamme complète — SUP et accessoires'
     industry: 'Distribution / Maritime'
     challenge: 'Un distributeur basé dans le CCG souhaitait obtenir les droits exclusifs de représentation de la gamme complète afarer dans 6 pays du Golfe, avec un emballage personnalisé en arabe, des spécifications de matériaux résistants à la chaleur et des conditions de garantie conformes à la charia.'
     solution: "Nous avons établi un accord de distribution exclusive. Développement d'un emballage et de supports marketing en arabe. Validation des spécifications des matériaux à 50°C de température ambiante. Adaptation des conditions de garantie pour la conformité régionale."
@@ -297,23 +297,6 @@ case_studies:
       - label: 'Compétitions accueillies'
         value: '1'
 
-  - id: humanitarian-aid-project
-    client: 'Organisation humanitaire internationale'
-    product: 'Bateaux gonflables de sauvetage et de secours'
-    industry: 'ONG / Humanitaire'
-    challenge: "Une organisation humanitaire internationale avait besoin de 50 bateaux gonflables robustes pour des opérations de sauvetage lors d'inondations en Asie du Sud-Est — légers pour le transport par hélicoptère, résistants aux débris et réparables sur le terrain sans outils spécialisés."
-    solution: 'Nous avons fabriqué 50 bateaux gonflables renforcés avec des fonds autovideurs, une redondance multi-chambres et des lignes de saisie périphériques. Kits de réparation de terrain avec instructions illustrées fournis. 20 techniciens locaux formés.'
-    result: "50 bateaux déployés dans 3 régions sujettes aux inondations. Utilisés lors de 12 grandes opérations de sauvetage les 6 premiers mois. 0 défaillance d'équipement signalée."
-    image: https://assets.afarer.com/images/afarer/hero/hero-5.webp
-    tags: [OEM, Sauvetage, Humanitaire, Gouvernement]
-    outcome_metrics:
-      - label: 'Bateaux déployés'
-        value: '50'
-      - label: 'Opérations de sauvetage'
-        value: '12'
-      - label: 'Taux de défaillance'
-        value: 0%
-
   - id: cruise-line-activity-program
     client: 'Opérateur de croisière des Caraïbes'
     product: "Flotte d'activités à bord — paddles"
@@ -385,14 +368,11 @@ certifications:
   - name: RoHS
     body: 'Union européenne'
     desc: "Conformité à la limitation des substances dangereuses pour l'ensemble des composants électroniques et électriques."
-  - name: AS 1799
-    body: Standards Australia
-    desc: 'Norme australienne pour les embarcations gonflables — testées et certifiées pour un usage commercial dans les eaux australiennes et néo-zélandaises.'
 
 test_results:
   - metric: 'Unités testées sous pression'
     value: 100%
-    detail: 'Chaque bateau, chaque chambre, chaque lot'
+    detail: 'Chaque planche, chaque chambre, chaque lot'
   - metric: 'Perte de pression maximale'
     value: '<5%'
     detail: 'Sur 24–48h à 1.25x la pression nominale'
@@ -422,9 +402,9 @@ deployment_photos:
   - image: https://assets.afarer.com/images/afarer/hero/hero-scenic.webp
     caption: "Paddle de randonnée le long d'un littoral pittoresque"
     context: 'Loisirs'
-  - image: https://assets.afarer.com/images/afarer/products/afarer-inflatable-boat-factory.webp
-    caption: "Production d'équipements de sports nautiques gonflables dans notre site de fabrication de Qingdao"
+  - image: https://assets.afarer.com/images/afarer/factory/afarer-production-department.webp
+    caption: "Production de SUP gonflables dans notre site de fabrication de Qingdao"
     context: 'Usine'
-  - image: https://assets.afarer.com/images/afarer/factory/afarer-stock-boat-inventory.webp
+  - image: https://assets.afarer.com/images/afarer/factory/afarer-warehouse-storage.webp
     caption: 'Stock prêt à expédier en attente du chargement en conteneur'
     context: 'Logistique'

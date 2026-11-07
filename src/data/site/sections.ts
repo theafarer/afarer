@@ -8,24 +8,9 @@ export const SITE_SECTIONS: SiteSection[] = [
   { label: 'Home', path: '/', sitemap: { entity: 'afarer', type: 'brand', priority: '1.0' } },
   { label: 'Products', path: '/products', sitemap: { entity: 'products', type: 'product', priority: '0.9' } },
   {
-    label: 'Search & Rescue',
-    path: '/use-cases/search-and-rescue',
-    sitemap: { entity: 'search-rescue', type: 'service', priority: '0.7' },
-  },
-  {
     label: 'Engineering Perfection',
     path: '/engineering-perfection',
     sitemap: { entity: 'engineering', type: 'technology', priority: '0.7' },
-  },
-  {
-    label: 'Disaster Relief',
-    path: '/use-cases/disaster-relief',
-    sitemap: { entity: 'disaster-relief', type: 'service', priority: '0.7' },
-  },
-  {
-    label: 'Commercial Workboats',
-    path: '/use-cases/commercial-workboats',
-    sitemap: { entity: 'commercial-workboats', type: 'product', priority: '0.7' },
   },
   {
     label: 'Design & Innovation',
@@ -94,11 +79,6 @@ export const SITE_SECTIONS: SiteSection[] = [
     label: 'SUP Types AI Reference',
     path: '/llms/compare/sup-types',
     sitemap: { entity: 'llms-compare', type: 'reference', priority: '0.3' },
-  },
-  {
-    label: 'PVC vs Hypalon AI Reference',
-    path: '/llms/compare/pvc-vs-hypalon',
-    sitemap: { entity: 'llms-pvc-vs-hypalon', type: 'reference', priority: '0.3' },
   },
   {
     label: 'Drop-Stitch Technology AI Reference',

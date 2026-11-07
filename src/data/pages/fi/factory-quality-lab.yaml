@@ -1,6 +1,6 @@
 meta:
   title: 'Laatulaboratorio — testaus ja laadunvarmistus | {SITE}'
-  description: 'Riippumaton laatulaboratorio ISO 9001 -prosesseilla afarerilla: jokainen yksikkö testataan ennen toimitusta täytettävien SUP-lautojen ja veneiden laadun takaamiseksi.'
+  description: 'Riippumaton laatulaboratorio ISO 9001 -prosesseilla afarerilla: jokainen yksikkö testataan ennen toimitusta täytettävien SUP-lautojen laadun takaamiseksi.'
   keywords:
     - 'SUP-laadunvalvonta'
     - 'paddle board -testauslaboratorio'
@@ -10,11 +10,11 @@ hero:
   tagline: Laadunvalvontalaboratorio
   title: Testauslaboratorio ja laadintatarkastus
   subtitle: Riippumaton laadunvarmistuslaboratorio ISO 9001-prosesseilla — joka yksikkö testataan ennen lähettämistä
-intro: afarerilla on oma laadunvalvontalaboratorio, joka toimii itsenäisesti tuotannosta. Jokainen raaka-aine-erä ja jokainen valmis vene kulkee dokumentoituja tarkastusprotokollia ennen vapauttamista. QC-tiimi raportoi suoraan johdolle, mikä varmistaa puolueettomat laadulliset päätökset.
+intro: afarerilla on oma laadunvalvontalaboratorio, joka toimii itsenäisesti tuotannosta. Jokainen raaka-aine-erä ja jokainen valmis lauta kulkee dokumentoituja tarkastusprotokollia ennen vapauttamista. QC-tiimi raportoi suoraan johdolle, mikä varmistaa puolueettomat laadulliset päätökset.
 highlights:
   - value: 100%
     label: Yksiköt painekokeilla
-    detail: Jokainen kammi, jokainen vene
+    detail: Jokainen kammi, jokainen lauta
   - value: 24–48 h
     label: Ilmanpidätteston kesto
     detail: 1,25× nimellispaineessa
@@ -26,7 +26,7 @@ highlights:
     detail: ISO 2859:n otanta
 test_procedures:
   - title: Raaka-aineen tarkastus
-    description: Jokainen saapuva PVC-, Hypalon-, drop-stitch-kankaan ja laitteistoerä testataan ennen hyväksyntää. Vetoisuus (ASTM D751), repäisyvastus (ISO 4674) ja UV-vastus todennetaan. Vaatimukset täyttämättömät materiaalit eristetään ja palautetaan.
+    description: Jokainen saapuva PVC-, drop-stitch-kankaan ja laitteistoerä testataan ennen hyväksyntää. Vetoisuus (ASTM D751), repäisyvastus (ISO 4674) ja UV-vastus todennetaan. Vaatimukset täyttämättömät materiaalit eristetään ja palautetaan.
     standards:
       - ASTM D751 (tensile)
       - ISO 4674 (repeäminen)
@@ -40,10 +40,10 @@ test_procedures:
   - title: 24–48 tunnin ilmanpitävyystesti
     description: Jokainen putkikammio paisutetaan 125 prosenttiin nimellisestä paineesta ja pidetään 24–48 tuntia. Paineanturit kirjautuvat jatkuvasti lämpökorjauksen kera. Jos yksikään kammio ylittää 5 prosenttia paineen laskusta, se käynnistää automaattisen erän uudelleentarkastuksen.
     standards:
-      - ISO 6185
+      - EN ISO 25649
       - CE 2013/53/EU
   - title: Kuormitus- ja painopistetestaus
-    description: Valmistuneet veneet testataan suurimmassa luokitetussa kuormituksessa stabiilisuuden, vapaa rantaviivan ja ohjattavuuden osalta. Jokainen alus käy läpi vesitestin ennen lopullisen tarkastuksen hyväksyntää.
+    description: Valmistuneet laudat testataan suurimmassa luokitetussa kuormituksessa stabiilisuuden ja jäykkyyden osalta. Jokainen lauta käy läpi vesitestin ennen lopullisen tarkastuksen hyväksyntää.
     standards:
       - ISO 12217
       - CE 2013/53/EU

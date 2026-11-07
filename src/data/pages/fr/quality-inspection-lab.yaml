@@ -1,38 +1,118 @@
 meta:
-  title: 'Laboratoire Qualité & Inspection — ISO | {SITE}'
-  description: "Vérification de qualité indépendante pour bateaux gonflables : tests de traction, rétention d'air, pelage des joints. Conformité ISO pour fabricant SUP."
-  keywords:
-    - 'contrôle qualité bateaux'
-    - 'laboratoire inspection'
-    - 'test conformité ISO'
-    - 'inspection bateau gonflable'
+  title: 'Laboratoire Qualité & Inspection — Tests et Certification SUP Conformes ISO | {SITE}'
+  description: "Vérification de qualité indépendante pour SUP gonflables. Essais de traction, cyclage de rétention d'air, tests de pelage des joints et certification des matériaux. Contactez notre laboratoire qualité pour des tests tiers."
 back_text: Retour au Centre R&D
 home_label: Accueil
+
 hero:
   tagline: Lab 06
   title: Laboratoire Qualité et Inspection
   subtitle: Vérification indépendante — chaque test réussi avant livraison
-  image: https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp
+  image: 'https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp'
   image_alt: Test UV en laboratoire d'inspection qualité afarer
-intro: Chaque bateau qui quitte notre atelier est certifié avoir passé un ensemble défini d'inspections qualité et d'essais matériaux. Notre laboratoire qualité et inspection est une fonction indépendante au sein de l'organisation — il rend compte directement au directeur général, et non à la production — garantissant qu'aucune pression commerciale ne peut compromettre le point d'inspection. Si un lot de matériaux ou un bateau achevé ne respecte pas la spécification publiée, le laboratoire a l'autorité d'arrêter l'expédition jusqu'à la résolution de la non-conformité.
-content_html: |-
-  <h2>Confiance, mais vérifié</h2>
-  <p>Notre laboratoire d'inspection qualité opère sous un système de management de la qualité aligné sur les principes ISO 9001. Nos méthodes de test sont conformes aux normes internationales et nos techniciens sont certifiés pour chaque procédure.</p>
 
-  <h2>Protocoles de test</h2>
+intro: 'Chaque planche qui quitte notre atelier est certifiée avoir passé un ensemble défini d''inspections qualité et d''essais matériaux. Notre laboratoire qualité et inspection est une fonction indépendante au sein de l''organisation — il rend compte directement au directeur général, et non à la production — garantissant qu''aucune pression commerciale ne peut compromettre le point d''inspection. Si un lot de matériaux ou une planche achevée ne respecte pas la spécification publiée, le laboratoire a l''autorité d''arrêter l''expédition jusqu''à la résolution de la non-conformité.'
+
+content_html: |
+  <h2>Confiance, mais vérifié</h2>
+  <p>Le laboratoire opère sous un système de management de la qualité aligné sur les principes, et nos méthodes de test sont basées sur les normes ISO, ASTM et EN partout où cela est applicable. Nous conservons des registres détaillés de chaque test effectué, créant une chaîne de traçabilité complète de la réception des matières premières à la livraison finale de la planche.</p>
+
+  <h2>Équipements et capacités de test</h2>
+  <table>
+    <thead><tr><th>Équipement</th><th>Tests réalisés</th><th>Norme / Méthode</th></tr></thead>
+    <tbody>
+      <tr><td>Machine d'essai universelle (50 kN)</td><td>Résistance à la traction (tissu), résistance au pelage (joints), propagation de déchirure</td><td>ISO 1421, ISO 4674</td></tr>
+      <tr><td>Banc de test de rétention d'air (programmable)</td><td>Endurance gonflage/dégonflage 1000 cycles, test de maintien en pression 30 min</td><td>EN ISO 25649 (interne)</td></tr>
+      <tr><td>Gabarit de pelage de joints (pelage motorisé à 180°)</td><td>Résistance au pelage des soudures et joints collés à 100 mm/min</td><td>ISO 1421 / ASTM D1876</td></tr>
+      <tr><td>Banc d'essai de charge hydrostatique</td><td>Résistance à la pénétration de l'eau du tissu (0–1000 mbar)</td><td>ISO 811</td></tr>
+      <tr><td>Jauge d'épaisseur numérique &amp; micromètre</td><td>Épaisseur du tissu, épaisseur des parois de rail, épaisseur du film adhésif</td><td>ISO 2286-3</td></tr>
+      <tr><td>Chambre environnementale</td><td>Conditionnement en température (-40 °C à +80 °C) pour tests de fissuration à froid et vieillissement thermique</td><td>ISO 188, ISO 4675</td></tr>
+      <tr><td>Spectrophotomètre couleur</td><td>Mesure de couleur Delta-E après exposition UV</td><td>ISO 105-A05 / ASTM D2244</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Les portes d'inspection — du matériau à la livraison</h2>
+  <p>Chaque planche suit un plan qualité défini avec des points d'inspection obligatoires. Aucune planche ne peut sauter une porte ; chaque porte doit être validée par un inspecteur qualité avant le début de l'étape de production suivante.</p>
+
+  <div class="not-prose my-8">
+    <div class="relative">
+      <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-200 dark:bg-blue-800"></div>
+      <div class="space-y-6 relative">
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Porte 1</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Inspection des matériaux entrants</p>
+            <p class="text-xs text-gray-500 mt-1">Lot de tissu, lot d'adhésif, quincaillerie — tout est vérifié par rapport à la spécification entrante avant libération pour la production.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Porte 2</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Inspection des soudures en cours de production</p>
+            <p class="text-xs text-gray-500 mt-1">Éprouvette de première soudure testée (pelage + visuel) au début de chaque poste de production.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Porte 3</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Test d'air des chambres</p>
+            <p class="text-xs text-gray-500 mt-1">Chaque chambre mise sous pression à 1,5 x la pression de service, maintien 30 min. Données consignées par numéro de série.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Porte 4</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Inspection avant livraison</p>
+            <p class="text-xs text-gray-500 mt-1">Planche complète inspectée : toutes les fixations serrées au couple, accessoires fonctionnels, aucun défaut cosmétique. Checklist de 100 points.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Porte 5</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Certification finale</p>
+            <p class="text-xs text-gray-500 mt-1">Rapports de test compilés, registres d'inspection revus, certificat de conformité émis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Indicateurs qualité clés (moyenne mobile 2025)</h2>
+  <div class="not-prose my-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
+      <span class="block text-2xl font-bold text-blue-600">99,7 %</span>
+      <span class="text-xs text-gray-500">Rendement au premier passage (lot de tissu)</span>
+    </div>
+    <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
+      <span class="block text-2xl font-bold text-blue-600">&lt; 0,2 %</span>
+      <span class="text-xs text-gray-500">Taux de rejet de soudure (mètre linéaire)</span>
+    </div>
+    <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
+      <span class="block text-2xl font-bold text-blue-600">100 %</span>
+      <span class="text-xs text-gray-500">Chambres testées à l'air avant assemblage</span>
+    </div>
+    <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
+      <span class="block text-2xl font-bold text-blue-600">EN ISO 25649</span>
+      <span class="text-xs text-gray-500">Conformité à la catégorie de conception</span>
+    </div>
+  </div>
+
+  <h2>Notre équipe qualité</h2>
+  <p>Le laboratoire est doté d'un responsable qualité (10 ans en assurance qualité marine, ingénieur qualité certifié ASQ), de deux inspecteurs qualité (chacun titulaire d'une certification NDT niveau 2 en examen visuel) et d'un technicien matériaux responsable de tous les tests physiques. L'équipe se soumet à des tests d'aptitude annuels via un prestataire tiers indépendant afin de garantir que nos résultats restent exacts et reproductibles.</p>
+
+  <h2>Tests indépendants pour les clients</h2>
+  <p>Notre Laboratoire Qualité &amp; Inspection est disponible pour des prestations de test indépendantes. Si vous devez vérifier une spécification de tissu, valider un nouveau système adhésif ou obtenir un rapport de test tiers pour une qualification d'achat, nous pouvons réaliser les tests selon la norme applicable et émettre un rapport de test certifié.</p>
+  <p>Exemples de travaux de test tiers récents :</p>
   <ul>
-    <li><strong>Test de pression à 100 % :</strong> Chaque chambre est testée à 1,5x la pression nominale</li>
-    <li><strong>Test d'étanchéité :</strong> Surveillance de la chute de pression sur 24 heures</li>
-    <li><strong>Test des soudures :</strong> Vérification de la résistance au pelage</li>
-    <li><strong>Test des valves :</strong> Fonctionnalité et étanchéité</li>
-    <li><strong>Inspection visuelle :</strong> Chaque produit est inspecté avant expédition</li>
+    <li>Comparaison de résistance au pelage de cinq films adhésifs concurrents pour un programme d'achat militaire européen.</li>
+    <li>Étude de vieillissement accéléré (UV + cyclage thermique) pour une nouvelle formulation PVC pigmentée orange, avec des mesures intermédiaires régulières à intervalles de 500 h.</li>
+    <li>Validation de rétention d'air de 50 valves de cloison prototypes pour une nouvelle conception de chambre haute pression.</li>
   </ul>
 
-  <h2>Traçabilité</h2>
-  <p>Chaque produit possède un numéro de série unique qui permet de retracer tous les tests, matériaux et étapes de fabrication. Cela garantit une responsabilité et une qualité totales.</p>
+  <h2>Notre engagement envers vous</h2>
+  <p>Lorsque vous recevez une planche Afarer, vous recevez aussi son dossier qualité — un registre compilé des résultats de tests applicables à votre planche spécifique. Certificat de lot de tissu, tests de pelage des soudures, journaux de test d'air des chambres et checklist d'inspection avant livraison. Chaque chiffre est traçable. Chaque inspecteur est identifié. Ce n'est pas de la paperasse — c'est notre promesse que ce que nous avons livré est ce que nous avons spécifié.</p>
+  <p>Si vous avez la moindre préoccupation qualité, vous pouvez contacter le laboratoire directement — les coordonnées sont imprimées sur votre certificat de conformité. Nous prenons chaque demande au sérieux et nous nous engageons à une investigation formelle sous 48 heures.</p>
 
-  <h2>Certifications</h2>
-  <p>Notre laboratoire est équipé pour tester selon les normes ISO, ASTM et CE. Nous entretenons des relations avec des laboratoires accrédités pour les tests nécessitant des équipements spécialisés.</p>
 cta:
   title: Besoin de tests indépendants ou de vérification qualité ?
   subtitle: Notre laboratoire accepte les travaux de test tiers — contactez-nous avec vos exigences.

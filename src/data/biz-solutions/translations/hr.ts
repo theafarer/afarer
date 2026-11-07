@@ -651,7 +651,7 @@ const hr: Record<string, SolutionOverride> = {
           description: 'Povećajte doživotnu vrijednost kupca iznad tradicionalnih surf proizvoda',
           features: [
             'Napuhiva SUP kolekcija uključujući all-round, touring, yoga i kids modele',
-            'Napuhiva kolekcija čamaca za obiteljsku rekreaciju na vodi',
+            'Kolekcija specijaliziranih SUP-ova uključujući ribolovne modele, modele za divlje vode i surf modele',
             'Dodaci za vodu uključujući dry bagove, vodootporne futrole, pumpe i vesla',
             'Kompletan ekosustav vodenog lifestylea pod vašim surf brendom',
             'Prilike za unakrsnu prodaju postojećim surf kupcima',

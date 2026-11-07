@@ -68,11 +68,6 @@ const ROOT_SERVED_PATHS = [
   '/assets',
   '/favicon',
   '/llms',
-  '/solutions-diving-center-boats',
-  '/solutions-fishing-boat-solutions',
-  '/solutions-marine-tourism-equipment',
-  '/solutions-rescue-watercraft',
-  '/solutions-yacht-tender-solutions',
   '/adventure-sup',
   '/all-around-sup',
   '/beginner-sup',
@@ -97,15 +92,9 @@ const ROOT_SERVED_PATHS = [
   '/ai-context',
   '/about/afarer-brand',
   '/bundles',
-  '/compare/pvc-vs-hypalon',
   '/guides/kayak-techniques',
   '/resources/download-catalog',
-  '/solutions/diving-center-boats',
-  '/solutions/fishing-boat-solutions',
-  '/solutions/marine-tourism-equipment',
   '/solutions/oem-brands',
-  '/solutions/rescue-watercraft',
-  '/solutions/yacht-tender-solutions',
   '/research/board-hull-design',
   '/research/eva-foam-technology',
   '/research/fin-systems-guide',
@@ -119,8 +108,8 @@ const ROOT_SERVED_PATHS = [
 ];
 // Locale-stripped paths excluded from the sitemap in EVERY locale: infra pages
 // and noindex alias pages whose canonical points at a different primary page.
-// NOTE: exact-path matching — '/commercial-workboats' must NOT swallow the
-// primary '/use-cases/commercial-workboats' (substring regex previously did).
+// NOTE: exact-path matching — an alias must NOT swallow its primary page
+// (substring regex previously did).
 const SITEMAP_EXCLUDED_PATHS = new Set([
   '/keystatic',
   '/admin',
@@ -132,18 +121,10 @@ const SITEMAP_EXCLUDED_PATHS = new Set([
   '/about/afarer',
   '/aquafarer',
   '/brand-story',
-  '/commercial-workboats',
-  '/disaster-relief-humanitarian-aid',
   '/oem-process',
   '/oem-odm',
   '/quality-testing',
   '/search',
-  '/search-rescue-operations',
-  '/solutions-diving-center-boats',
-  '/solutions-fishing-boat-solutions',
-  '/solutions-marine-tourism-equipment',
-  '/solutions-rescue-watercraft',
-  '/solutions-yacht-tender-solutions',
 ]);
 
 const matchesPath = (route: string, prefix: string): boolean => route === prefix || route.startsWith(prefix + '/');

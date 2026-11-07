@@ -47,7 +47,7 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
-const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || getUiForLang('en')?.[key] || '';
 
 const d = pageContentData[`${lang}/site-evidence`] || pageContentData['en/site-evidence'] || {};
 const caseStudies: CaseStudy[] = d.case_studies ?? [];

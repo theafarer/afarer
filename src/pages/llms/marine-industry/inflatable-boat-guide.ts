@@ -69,7 +69,7 @@ Thousands of polyester threads connect top and bottom layers, enabling high-pres
 
 ## Safety Standards
 - CE certification required for commercial use
-- ISO 6185 for inflatable craft construction
+- EN ISO 25649 for inflatable SUP construction
 - PFD (life vest) required for all paddlers
 - Leash recommended for open water
 - Whistle or signaling device required

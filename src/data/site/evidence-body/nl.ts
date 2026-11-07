@@ -276,31 +276,6 @@ export const bodyOverrides: EvidenceBodyMap = {
       },
     ],
   },
-  'humanitarian-aid-project': {
-    client: 'Internationale humanitaire organisatie',
-    product: 'Reddings- en hulpboten',
-    industry: 'NGO / Humanitaire hulp',
-    challenge:
-      'Een internationale humanitaire organisatie had 50 robuuste opblaasbare boten nodig voor reddingsoperaties bij overstromingen in Zuidoost-Azië: licht voor helikoptervervoer en ter plaatse te repareren.',
-    solution:
-      'Produceerden 50 versterkte opblaasboten met zelflozende bodems, redundantie met meerdere compartimenten en grijplijnen langs de rand. Leverden veldreparatiekits met pictograminstructies. Trainden 20 lokale technici.',
-    result:
-      "50 boten ingezet in 3 overstromingsgevoelige regio's. Gebruikt in 12 grote reddingsoperaties in de eerste 6 maanden. 0 apparatuurstoringen gemeld.",
-    outcomeMetrics: [
-      {
-        label: 'Ingezette boten',
-        value: '50',
-      },
-      {
-        label: 'Reddingsoperaties',
-        value: '12',
-      },
-      {
-        label: 'Uitvalpercentage',
-        value: '0%',
-      },
-    ],
-  },
   'japanese-brand-launch': {
     client: 'Japans lifestylemerk',
     product: 'Co-branded SUP-lijn',
@@ -456,9 +431,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Patrouille- en reddings-SUP-vloot',
     industry: 'Overheid / Maritieme veiligheid',
     challenge:
-      "Een overheids-maritiem agentschap vereiste 20 patrouille- en reddings-SUP's met brandwerend Hypalon-doek, geïntegreerde communicatiesteunen en conformiteit met SOLAS hoofdstuk III.",
+      "Een overheids-maritiem agentschap vereiste 20 patrouille- en reddings-SUP's met hoogzichtbare dekken, geïntegreerde communicatiesteunen en CE-gecertificeerde constructie.",
     solution:
-      "Produceerden 20 SUP's met CSM Hypalon-tubes, zware D-ringen en vooraf geïnstalleerde navigatielichtsets. Het inspectieteam van de fabriek was aanwezig bij de zeeproeven. Volledig SOLAS-documentatiepakket geleverd.",
+      "Produceerden 20 SUP's met militaire PVC-constructie, zware D-ringen en vooraf geïnstalleerde navigatielichtsets. Het inspectieteam van de fabriek was aanwezig bij de zeeproeven. Volledig conformiteitsdocumentatiepakket geleverd.",
     result:
       'Contract geleverd in 4 maanden. Vloot ingezet voor grensbewaking, zoek-en-redding en rampenrespons op 3 regionale bases.',
     outcomeMetrics: [

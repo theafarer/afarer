@@ -1,6 +1,6 @@
 meta:
   title: 'Vybavení továrny — řezání, HF svařování a tisk | {SITE}'
-  description: 'Průmyslové výrobní vybavení afarera: řezání PVC, HF svařování, digitální tisk, montáž a testování nafukovacích SUP prken a člunů.'
+  description: 'Průmyslové výrobní vybavení afarera: řezání PVC, HF svařování, digitální tisk, montáž a testování nafukovacích SUP prken.'
   keywords:
     - 'vybavení pro výrobu SUP'
     - 'továrna na nafukovací SUP'
@@ -17,7 +17,7 @@ categories:
     items:
       - name: Automatický řezací stroj PVC
         spec: Řízeno CNC, 6.5 m × 2.5 m, přesnost 0.1 mm
-        desc: Počítačem řízený automatický řezací stroj pro tkaniny PVC, Hypalon a drop-stitch. Nestingový software optimalizuje využití materiálu pod 5 % odpadu.
+        desc: Počítačem řízený automatický řezací stroj pro tkaniny PVC a drop-stitch. Nestingový software optimalizuje využití materiálu pod 5 % odpadu.
       - name: Rozkladač tkaniny
         spec: Max. šířka 3 m, podávání s kontrolovaným napětím
         desc: Klade tkaninu v jedné nebo více vrstvách s kontrolovaným napětím, aby se zabránilo deformaci před řezáním.
@@ -25,14 +25,14 @@ categories:
     items:
       - name: Stroj na horkovzdušné svařování
         spec: Horkovzdušné svařování, variabilní 200–600 °C, 0.5–5 m/min
-        desc: Stroj na horkovzdušné tepelné svařování pro spojování a svařování švů trubek PVC a Hypalon. Používá se pro fixování, utěsňování a slévání komor trubek a plováků.
+        desc: Stroj na horkovzdušné tepelné svařování pro spojování a svařování švů PVC a bočnic. Používá se pro fixování, utěsňování a slévání komor a spojů plováků.
       - name: Dielektrický lis RF
         spec: 15 kW, deska 2000 × 600 mm
-        desc: Počítačem řízený automatický řezací stroj pro tkaniny PVC, Hypalon a drop-stitch. Nestingový software optimalizuje využití materiálu pod 5 % odpadu.
+        desc: Lis na vysokofrekvenční svařování pro hlavní podélné švy, boční pásy a výrobu velkých komor.
       - name: RF svařovací stroj řízený CNC
         spec: 8 kW, stůl XY 2500 × 1200 mm
         desc: Programovatelné svařování zakřivených švů pro složité tvary, ražení log a přesné záplaty.
-  - title: Výroba trupů SUP
+  - title: Výroba SUP prken
     items:
       - name: Laminovací lis na drop-stitch jádra
         spec: Velkoformátový lis pro jádra prken až do 14 ft LOA
@@ -69,7 +69,7 @@ categories:
         desc: Automatizovaný test držení tlaku pro každou komoru trubky před montáží.
       - name: Přístroj na odlupování švů
         spec: Motorizované 180° odlupování při 100 mm/min
-        desc: Testování pevnosti odlupování svařených a lepených švů dle ISO 6185.
+        desc: Testování pevnosti odlupování svařených a lepených švů dle EN ISO 25649.
       - name: Komora pro stárnutí s xenonovou výbojkou
         spec: 2000 h expozice
         desc: Testování UV odolnosti pro změnu barvy a zachování pevnosti.

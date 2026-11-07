@@ -1,37 +1,95 @@
 meta:
-  title: 'Atelier de Prototypage — Bateaux | {SITE}'
-  description: 'De la CAO au bateau prêt pour la mer en 8 à 12 semaines. Prototypage grandeur nature, gréement et essais en mer pour bateaux gonflables.'
-  keywords:
-    - 'atelier prototypage'
-    - 'prototype bateau'
-    - 'essais en mer'
-    - 'prototypage bateau gonflable'
+  title: 'Atelier de Prototypage — Prototypage SUP Grandeur Nature & Essais en Mer | {SITE}'
+  description: 'De la CAO à la planche prête pour l''eau en 8 à 12 semaines. Notre Atelier de Prototypage construit, équipe et soumet à des essais en mer les SUP gonflables personnalisés. Lancez votre projet de prototype dès aujourd''hui.'
 back_text: Retour au Centre R&D
 home_label: Accueil
+
 hero:
   tagline: Lab 05
   title: Atelier de Prototypage
-  subtitle: Du modèle CAO au bateau prêt pour la mer — construit, équipé et éprouvé
-  image: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp
-  image_alt: Fabrication de bateaux en atelier de prototypage afarer
-intro: Un modèle CAO, aussi détaillé soit-il, ne peut révéler comment un bateau se comportera vraiment sur l'eau. C'est pourquoi notre Atelier de Prototypage traduit les données d'ingénierie en un navire physique le plus rapidement possible. Chaque nouveau modèle Afarer — et chaque construction personnalisée — passe par cet atelier.
-content_html: |-
-  <h2>Là où le design devient réalité</h2>
-  <p>Notre atelier est entièrement équipé pour la fabrication simultanée de coques, tubes et accessoires. Des machines de découpe CNC aux postes de soudage RF, chaque étape est réalisée par des techniciens qualifiés avec des années d'expérience.</p>
+  subtitle: Du modèle CAO à la planche prête pour l'eau — construite, équipée et éprouvée
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp'
+  image_alt: Fabrication de planches en atelier de prototypage afarer
 
-  <h2>Capacités</h2>
+intro: 'Un modèle CAO, aussi détaillé soit-il, ne peut révéler comment une planche se comportera vraiment tant qu''elle ne rencontre pas l''eau. C''est pourquoi notre Atelier de Prototypage est conçu pour traduire les données d''ingénierie en une planche physique prête pour l''eau, aussi rapidement et précisément que possible. Chaque nouveau modèle Afarer — et chaque construction personnalisée importante — passe par cet atelier avant l''engagement de l''outillage de production.'
+
+content_html: |
+  <h2>Là où le design devient réalité</h2>
+  <p>L'atelier est entièrement équipé pour la fabrication simultanée de la coque, des rails et du gréement. Cette approche de flux parallèles réduit le délai de prototypage à 8-12 semaines après la validation d'ingénierie, contre 16-20 semaines pour la norme du secteur. Lorsque votre application exige une solution spécialisée, nous pouvons passer du concept à la validation sur l'eau en moins de trois mois.</p>
+
+  <h2>Capacités de l'atelier</h2>
+  <table>
+    <thead><tr><th>Poste de travail</th><th>Équipement</th><th>Fonction</th></tr></thead>
+    <tbody>
+      <tr><td>Fabrication de coque</td><td>Découpeuse CNC de tissus, presse de thermolaminage, poste de préparation des noyaux drop-stitch</td><td>Production de coques grandeur nature selon les trois types de construction</td></tr>
+      <tr><td>Assemblage rails &amp; chambres</td><td>Presse de soudage RF, poste de pointage à air chaud, gabarit d'essai de gonflage</td><td>Fabrication des ensembles rails et chambres grandeur nature avec toutes les cloisons et valves</td></tr>
+      <tr><td>Gréement &amp; équipement</td><td>Gabarit de fraisage d'ailerons, fixtures de soudage pour supports de cargaison et poignées, poste de découpe de tapis de pont</td><td>Équipement complet : ailerons, supports de cargaison, plaques de leash, poignées, tapis de pont, valves</td></tr>
+      <tr><td>Bay d'instrumentation</td><td>Capteur de vitesse GPS, transducteurs de pression, accéléromètres, réseau de thermocouples, enregistreur de données</td><td>Installation et étalonnage de l'instrumentation d'essais en mer</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Le parcours du prototype — étape par étape</h2>
+  <ol>
+    <li><strong>Transfert d'ingénierie</strong> — Le dossier de conception (modèle 3D, rapport FEA, nomenclature, plan de stratification) est formellement examiné par le responsable d'atelier et l'ingénieur projet. Toute préoccupation de fabrication est signalée et résolue avant le début de la découpe.</li>
+    <li><strong>Production de la coque</strong> — La coque est construite selon la spécification d'ingénierie. Pour la construction monocouche : le noyau drop-stitch est laminé avec la peau PVC spécifiée. Pour la construction bicouche : la peau supplémentaire est appliquée sur le stratifié de base avant la découpe du patron. Pour la construction fusionnée : les paramètres de laminage sont chargés depuis la fiche de processus approuvée et vérifiés sur une éprouvette de première pièce.</li>
+    <li><strong>Fabrication des rails</strong> — Le tissu est découpé à l'aide de patrons CNC, puis soudé par RF en rails et chambres grandeur nature. Chaque chambre est gonflée à la pression d'essai et laissée 24 h pour une stabilisation initiale.</li>
+    <li><strong>Assemblage &amp; gréement</strong> — Coque et rails sont assemblés. Les boîtiers d'ailerons et supports de cargaison sont installés, les plaques de leash et poignées de transport sont posées, la valve de gonflage est serrée au couple et le tapis de pont est appliqué et aligné.</li>
+    <li><strong>Essais statiques</strong> — Avant que la planche ne touche l'eau, elle subit : vérification de flottabilité (charge complète + 30 % de réserve), test de maintien en pression des chambres, test de fuite des valves, test d'arrachement des poignées et supports.</li>
+    <li><strong>Programme d'essais en mer</strong> — 20 heures de tests dans l'eau, détaillées ci-dessous.</li>
+    <li><strong>Revue du prototype</strong> — Une réunion formelle de validation est tenue avec les équipes d'ingénierie, de production et de qualité. Toute modification de conception requise est documentée et intégrée à la mise en production.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Programme d'essais en mer de 20 heures — Calendrier des tests</p>
+    <div class="space-y-2 text-sm">
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
+        <span class="flex-1">Prise en main en eau plate — cap à basse vitesse, virages, vérification de la posture et de l'assiette</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">4 h</span>
+        <span class="flex-1">Essai de vitesse — vitesse maximale vérifiée au GPS, vitesse de croisière, allure soutenue à 3 cadences de pagaie</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">Test de virage — rayon de virage pivot et de virage balayé, réactivité de la planche, bâbord et tribord</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">Test en clapot — passages répétés dans un clapot de 0,5–1,0 m ; accéléromètre à la position du pagayeur</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">Test de stabilité — angle de gîte statique avec 4 pagayeurs de poids variés, charge décalée sur tribord</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">Parcours d'endurance — 3 h en continu à vitesse de croisière ; surveillance de la pression des chambres, de la température des rails et de la fatigue du pagayeur</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
+        <span class="flex-1">Inspection finale — inspection post-essai de tous les composants, resserrage/vérification de toutes les fixations, documentation des constatations</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Prototypage personnalisé pour des applications uniques</h2>
+  <p>L'Atelier de Prototypage est l'endroit où nous résolvons les problèmes que les planches de production standard ne peuvent pas traiter. Exemples récents :</p>
   <ul>
-    <li>Découpe CNC de tissus et films PVC</li>
-    <li>Soudure RF sur presses diélectriques 15 kW</li>
-    <li>Soudure à air chaud et thermocollage</li>
-    <li>Assemblage manuel et collage de précision</li>
-    <li>Tests d'étanchéité 100 % à 1,5x la pression nominale</li>
+    <li>Un SUP de sauvetage haute visibilité pour une organisation de recherche et sauvetage, nécessitant des poignées de préhension intégrées, des supports pour équipement de sauvetage et une coque à haute flottabilité pour le repêchage de victimes — le tout prototypé, équipé et testé dans notre installation.</li>
+    <li>Un SUP de randonnée expédition pour un prestataire de levés hydrographiques, avec un mât d'instruments amovible, des ports d'équipement étanches et un support de transducteur bas profil conçu pour minimiser la traînée.</li>
+    <li>Un SUP de pêche compact pour une flotte de resort, où le prototype a servi à valider la stabilité, le gréement de l'équipement et la durabilité en location quotidienne avant que le client ne s'engage sur une flotte de quatre planches.</li>
   </ul>
 
-  <h2>Prototypage rapide</h2>
-  <p>Nous pouvons produire des prototypes fonctionnels en 2–3 semaines, permettant aux clients d'évaluer la conception avant l'engagement en production. Notre processus itératif garantit que le produit final répond exactement aux spécifications.</p>
+  <h2>Notre équipe de prototypage</h2>
+  <p>L'atelier est doté de huit techniciens polyvalents, chacun formé à au moins deux des trois disciplines principales (coque, rails, gréement). Le responsable d'équipe est un maître fabricant fort de 16 ans d'expérience, des constructions uniques personnalisées aux séries de production. Chaque prototype se voit attribuer un ingénieur projet dédié qui sert d'interlocuteur unique pour le client tout au long de la construction et des essais.</p>
+
+  <h2>Implication du client</h2>
+  <p>Nous encourageons activement nos clients à assister aux jalons clés de la construction du prototype — en particulier la revue initiale de l'équipement et l'essai en mer. Vos retours opérationnels lors de ces étapes sont précieux pour peaufiner la planche avant sa mise en production. Nous ne construisons pas dans le vide ; nous construisons en partenariat avec vous.</p>
+  <p>L'essai en mer de 20 heures est aussi l'occasion pour votre équipe de se familiariser avec le comportement de la planche, la disposition du pont et les exigences d'entretien, garantissant une transition en douceur vers le service lors de la livraison des planches de production.</p>
+
 cta:
   title: Démarrer votre projet de prototype
-  subtitle: Parlez-nous du bateau dont vous avez besoin et nous proposerons un plan de développement de prototype.
+  subtitle: Parlez-nous de la planche dont vous avez besoin et nous proposerons un plan de développement de prototype.
   button_text: Contactez notre équipe de prototypage
   button_link: /contact

@@ -4,9 +4,9 @@ import JsonLd from '~/components/common/JsonLd.astro';
 import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `Materials Science — PVC, Hypalon & Drop-Stitch Technology — ${SITE.name}`,
+  title: `Materials Science — PVC & Drop-Stitch Technology — ${SITE.name}`,
   description:
-    'Deep dives into the materials behind afarer products — marine-grade PVC, Hypalon CSM, drop-stitch core, RF welding, and quality testing.',
+    'Deep dives into the materials behind afarer SUP boards — marine-grade PVC, drop-stitch core, RF welding, and quality testing.',
 };
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Learn' }, { name: 'Materials' }];
 
@@ -14,12 +14,7 @@ const topics = [
   {
     title: 'Marine-Grade PVC',
     desc: 'Multi-layer laminated PVC fabric — UV resistance, abrasion testing, and denier ratings explained.',
-    href: '/v2/pvc-vs-hypalon-boats',
-  },
-  {
-    title: 'PVC vs Hypalon',
-    desc: 'The definitive comparison of the two dominant inflatable boat materials — cost, lifespan, UV resistance.',
-    href: '/en/learn/pvc-vs-hypalon',
+    href: '/technology',
   },
   {
     title: 'Drop-Stitch Core',
@@ -33,7 +28,7 @@ const topics = [
   },
   {
     title: 'PSI & Performance',
-    desc: 'Why air pressure matters for inflatable SUPs and boats — rigidity, weight capacity, and ride quality.',
+    desc: 'Why air pressure matters for inflatable SUPs — rigidity, weight capacity, and ride quality.',
     href: '/guides/sup-inflation-psi-guide',
   },
   {
@@ -43,7 +38,7 @@ const topics = [
   },
   {
     title: 'EVA Foam Decks',
-    desc: 'Closed-cell EVA foam deck pads — traction, comfort, and durability for SUP and boat decks.',
+    desc: 'Closed-cell EVA foam deck pads — traction, comfort, and durability for SUP decks.',
     href: '/technology',
   },
   {
@@ -57,44 +52,23 @@ const materials = [
   {
     name: 'PVC (Polyvinyl Chloride)',
     summary:
-      'The industry standard for recreational inflatable boats and SUPs. Multi-layer laminated fabric offers excellent strength-to-weight ratio at an accessible price point.',
+      'The industry standard for inflatable SUP boards. Multi-layer laminated fabric offers an excellent strength-to-weight ratio at an accessible price point.',
     pros: [
-      'Affordable –30-50% cheaper than Hypalon',
+      'Affordable and widely available',
       'Lightweight and easy to handle',
       'Good UV resistance with proper coatings',
       'Wide range of colors and finishes',
       'Easy to repair with PVC patches and solvent adhesive',
     ],
     cons: [
-      'Shorter lifespan than Hypalon (7-10 years)',
+      'Typical lifespan of 7-10 years',
       'Less flexible in cold temperatures',
       'Lower chemical resistance',
       'Can develop plasticizer migration over time',
     ],
     bestFor:
-      'Recreational SUPs, budget-friendly boats, rental fleets, seasonal use, freshwater and coastal environments.',
+      'Recreational and touring SUPs, rental fleets, seasonal use, freshwater and coastal environments.',
     image: 'https://assets.afarer.com/images/afarer/tech/tech-pvc-material.webp',
-  },
-  {
-    name: 'Hypalon (CSM Rubber)',
-    summary:
-      'Premium synthetic rubber material known for exceptional durability, UV resistance, and longevity. The gold standard for commercial and military-grade inflatable boats.',
-    pros: [
-      'Exceptional UV and ozone resistance',
-      'Lifespan of 15-20 years with proper care',
-      'Excellent cold-weather flexibility',
-      'Superior chemical and oil resistance',
-      'Retains color longer than PVC',
-    ],
-    cons: [
-      'Significantly more expensive than PVC',
-      'Heavier fabric weight',
-      'Fewer color options',
-      'Repairs require specialized adhesives',
-      'Fewer manufacturing facilities worldwide',
-    ],
-    bestFor: 'Commercial RIBs, search and rescue, military applications, tropical climates, long-term fleet ownership.',
-    image: 'https://assets.afarer.com/images/afarer/tech/tech-hypalon-tubes.webp',
   },
   {
     name: 'Drop-Stitch Core',
@@ -114,13 +88,13 @@ const materials = [
       'Pressure loss over time requires periodic topping up',
     ],
     bestFor:
-      'Stand-up paddle boards, kayaks, air decks for inflatable boats, any application requiring rigid performance with inflatable portability.',
+      'Stand-up paddle boards, kayaks, air decks, any application requiring rigid performance with inflatable portability.',
     image: 'https://assets.afarer.com/images/afarer/tech/tech-drop-stitch.webp',
   },
   {
     name: 'EVA Foam Deck',
     summary:
-      'Closed-cell EVA (ethylene-vinyl acetate) foam used for traction pads on SUP boards and boat decks. Provides cushioning, grip, and thermal insulation.',
+      'Closed-cell EVA (ethylene-vinyl acetate) foam used for traction pads on SUP boards. Provides cushioning, grip, and thermal insulation.',
     pros: [
       'Excellent non-slip grip wet or dry',
       'Cushioning reduces fatigue on long paddles',
@@ -134,7 +108,7 @@ const materials = [
       'Not structural — does not affect rigidity',
       'Adds slight weight (200-400 g per board)',
     ],
-    bestFor: 'SUP deck traction, boat deck padding, seat comfort, any surface requiring slip-resistant footing.',
+    bestFor: 'SUP deck traction, seat comfort, any surface requiring slip-resistant footing.',
     image: 'https://assets.afarer.com/images/afarer/tech/tech-air-deck.webp',
   },
 ];
@@ -155,22 +129,21 @@ const materials = [
     <p class="text-sm font-semibold text-primary uppercase tracking-wider">Materials Science</p>
     <h1 class="mt-3 text-4xl md:text-5xl font-bold">Material & Construction Guides</h1>
     <p class="mt-3 text-lg text-muted max-w-2xl mx-auto">
-      Deep dives into PVC, Hypalon, drop-stitch technology, and the engineering behind afarer products.
+      Deep dives into PVC, drop-stitch technology, and the engineering behind afarer SUP boards.
     </p>
   </section>
 
   <section class="px-6 pb-8 max-w-5xl mx-auto">
     <div class="prose prose-gray max-w-none">
       <p class="text-lg leading-relaxed">
-        The performance, durability, and safety of an inflatable watercraft depend almost entirely on the materials used
-        in its construction. From the fabric that forms the tubes to the threads that give a SUP board its rigidity,
+        The performance, durability, and safety of an inflatable SUP board depend almost entirely on the materials used
+        in its construction. From the fabric that forms the shell to the threads that give a SUP board its rigidity,
         every material choice affects how the product performs on the water and how long it lasts.
       </p>
       <p class="text-lg leading-relaxed">
-        This guide covers the four core materials used in modern inflatable watercraft: <strong>PVC fabric</strong>, <strong
-          >Hypalon CSM rubber</strong
+        This guide covers the three core materials used in modern inflatable SUP boards: <strong>PVC fabric</strong
         >, <strong>drop-stitch core construction</strong>, and <strong>EVA foam decking</strong>. Understanding these
-        materials will help you choose the right product for your needs and maintain it for maximum lifespan.
+        materials will help you choose the right board for your needs and maintain it for maximum lifespan.
       </p>
     </div>
   </section>
@@ -241,17 +214,10 @@ const materials = [
               >
             </tr>
             <tr class="border-b border-gray-200">
-              <td class="py-3 px-4 text-gray-700">Family lake boat</td>
-              <td class="py-3 px-4"><span class="font-medium">PVC (1100 denier)</span></td>
+              <td class="py-3 px-4 text-gray-700">Whitewater SUP</td>
+              <td class="py-3 px-4"><span class="font-medium">Drop-stitch PVC, reinforced rails</span></td>
               <td class="py-3 px-4 text-gray-600"
-                >Cost-effective, easy to repair, sufficient durability for recreational use</td
-              >
-            </tr>
-            <tr class="border-b border-gray-200">
-              <td class="py-3 px-4 text-gray-700">Commercial / patrol SUP</td>
-              <td class="py-3 px-4"><span class="font-medium">Hypalon CSM</span></td>
-              <td class="py-3 px-4 text-gray-600"
-                >Maximum UV resistance, 15-20 year lifespan, chemical/oil resistance</td
+                >Impact resistance and durability for rocky river paddling</td
               >
             </tr>
             <tr class="border-b border-gray-200">
@@ -260,10 +226,10 @@ const materials = [
               <td class="py-3 px-4 text-gray-600">Durable, repairable, good value for high-turnover usage</td>
             </tr>
             <tr class="border-b border-gray-200">
-              <td class="py-3 px-4 text-gray-700">Search & rescue operations</td>
-              <td class="py-3 px-4"><span class="font-medium">Hypalon CSM</span></td>
+              <td class="py-3 px-4 text-gray-700">Yoga / fitness SUP</td>
+              <td class="py-3 px-4"><span class="font-medium">Drop-stitch PVC + full EVA deck</span></td>
               <td class="py-3 px-4 text-gray-600"
-                >Reliability in extreme conditions, cold flexibility, chemical resistance</td
+                >Wide, stable platform with comfortable, slip-resistant surface</td
               >
             </tr>
             <tr class="border-b border-gray-200">

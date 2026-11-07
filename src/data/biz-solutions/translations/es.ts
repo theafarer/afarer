@@ -2195,7 +2195,7 @@ const es: Record<string, SolutionOverride> = {
             {
               title: 'Capacitación Pre-Temporada para el Personal de Resort en 3 Propiedades',
               detail:
-                "En mayo de 2024, el gerente de servicios de Norteamérica de Afarer, Jake Patterson, pasó 5 días capacitando a 28 empleados en los 3 resorts. Los protocolos específicos para Canadá incluyeron: puesta en marcha primaveral (lista de verificación detallada de inspección para daño de almacenamiento en frío), inflado adecuado a 13-15 PSI (ajustado para agua fría — el Lago Muskoka promedia 14°C en junio), procedimiento de invernalización para tablas almacenadas en botes sin calefacción y un sistema de WhatsApp de 'reporte-de-daño-en-15-minutos'. Jake también enseñó al personal a identificar el daño común por mordidas de castor canadiense (un problema real: 2 tablas perdidas por castores en 2023) y cómo reparar con parches PVC reforzados.",
+                "En mayo de 2024, el gerente de servicios de Norteamérica de Afarer, Jake Patterson, pasó 5 días capacitando a 28 empleados en los 3 resorts. Los protocolos específicos para Canadá incluyeron: puesta en marcha primaveral (lista de verificación detallada de inspección para daño de almacenamiento en frío), inflado adecuado a 13-15 PSI (ajustado para agua fría — el Lago Muskoka promedia 14°C en junio), procedimiento de invernalización para tablas almacenadas en hangares náuticos sin calefacción y un sistema de WhatsApp de 'reporte-de-daño-en-15-minutos'. Jake también enseñó al personal a identificar el daño común por mordidas de castor canadiense (un problema real: 2 tablas perdidas por castores en 2023) y cómo reparar con parches PVC reforzados.",
             },
             {
               title: 'Lanzamiento en Verano 2024 y Rendimiento en Temporada de Hojas',
@@ -3544,7 +3544,7 @@ const es: Record<string, SolutionOverride> = {
           description: 'Aumenta el valor de vida del cliente más allá de los productos tradicionales de surf',
           features: [
             'Colección SUP inflable incluyendo modelos all-round, touring, yoga y para niños',
-            'Colección de botes inflables para recreación acuática familiar',
+            'Colección SUP especializada incluyendo modelos de pesca, aguas bravas y surf',
             'Accesorios acuáticos incluyendo bolsas secas, estuches impermeables, bombas y remos',
             'Ecosistema completo de estilo de vida acuático bajo tu marca de surf',
             'Oportunidades de venta cruzada a clientes de surf existentes',
@@ -4262,7 +4262,7 @@ const es: Record<string, SolutionOverride> = {
       {
         question: '¿Qué tan compactas son las tablas SUP de Afarer cuando se empacan para almacenamiento en yates?',
         answer:
-          'Las tablas SUP portátiles de lujo de Afarer presentan sistemas de plegado compacto que reducen significativamente el volumen de almacenamiento, cabiendo fácilmente en cabañas de yates, compartimentos de almacenamiento, botes auxiliares y buques de expedición. Cada tabla se empaca en una mochila de transporte con todos los accesorios.',
+          'Las tablas SUP portátiles de lujo de Afarer presentan sistemas de plegado compacto que reducen significativamente el volumen de almacenamiento, cabiendo fácilmente en cabañas de yates, compartimentos de almacenamiento y buques de expedición. Cada tabla se empaca en una mochila de transporte con todos los accesorios.',
       },
       {
         question: '¿Son las tablas SUP de Afarer resistentes al agua salada y al daño UV?',

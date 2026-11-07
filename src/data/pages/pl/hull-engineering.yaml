@@ -1,6 +1,6 @@
 meta:
   title: Hull Engineering Studio — Projektowanie kadłubów CAD, FEA i na zamówienie | {SITE}
-  description: Odkryj nasze Studio Inżynierii Kadłubów do projektowania CAD, analizy metodą elementów skończonych (FEA) oraz opracowywania niestandardowych kadłubów z HDPE/aluminium/włókna szklanego. Skontaktuj się z naszym zespołem inżynierów, aby rozpocząć swój następny projekt łodzi.
+  description: 'Odkryj nasze Studio Inżynierii Kadłubów: projektowanie CAD, analiza metodą elementów skończonych (FEA) oraz rozwój niestandardowych kadłubów SUP o wysokiej wydajności. Skontaktuj się z naszym zespołem inżynierów, aby rozpocząć swój następny projekt deski.'
 back_text: Powrót do Centrum Badań i Rozwoju
 home_label: Dom
 hero:
@@ -10,13 +10,13 @@ hero:
   image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
   image_alt: Stanowisko robocze CAD do inżynierii kadłubów Afarer
 intro: >-
-  Kadłub jest kręgosłupem każdej łodzi pneumatycznej. Musi być wystarczająco lekki, aby skutecznie wznosić się na powierzchni wody, wystarczająco wytrzymały, aby absorbowac obciążenia uderzeniowe, oraz wymiarowo stabilny w szerokim zakresie temperatur. W Afarer nasze Studio
-  Inżynierii Kadłubów łączy zaawansowane modelowanie CAD, analizę metodą elementów skończonych (FEA) oraz dziesięciolecia praktycznego doświadczenia w architekturze okrętowej, aby dostarczać kadłuby optymalizowane pod kątem ich przeznaczonej misji — a nie ogólnych kształtów zaadaptowanych z
-  katalogu.
+  Kadłub jest kręgosłupem każdej nadmuchiwanej deski SUP. Musi być wystarczająco lekki, aby efektywnie się ślizgać, wystarczająco wytrzymały, aby sprostać skalistym brzegom, oraz wystarczająco sztywny, aby zamieniać każdy ruch wiosłem w ruch naprzód. W Afarer nasze Studio
+  Inżynierii Kadłubów łączy zaawansowane modelowanie CAD, analizę metodą elementów skończonych (FEA) oraz dziesięciolecia praktycznego doświadczenia w projektowaniu desek, aby dostarczać kadłuby zoptymalizowane pod kątem ich przeznaczonej dyscypliny — a nie ogólne kształty
+  zaadaptowane z katalogu.
 content_html: >-
   <h2>Gdzie wytrzymałość spotyka hydrodynamikę</h2>
 
-  <p>Pracujemy z trzema podstawowymi materiałami kadłubów — rotacyjnie formowanym HDPE, spawanym aluminium klasy morskiej i ręcznie laminowanym włóknem szklanym — i dysponujemy zapleczem inżynieryjnym umożliwiającym projektowanie, symulację i walidację każdego z nich we własnym zakresie.</p>
+  <p>Pracujemy z trzema podstawowymi platformami konstrukcyjnymi — wzmocnionymi rdzeniami PVC drop-stitch, ręcznie układanymi laminatami z włókna szklanego i rotacyjnie formowanym polietylenem — i dysponujemy zapleczem inżynieryjnym umożliwiającym projektowanie, symulację i walidację każdego z nich we własnym zakresie.</p>
 
 
   <h2>Narzędzia projektowe i standardy</h2>
@@ -26,7 +26,7 @@ content_html: >-
   <table>
     <thead><tr><th>Zakres</th><th>Oprogramowanie / Narzędzie</th><th>Zastosowanie</th></tr></thead>
     <tbody>
-      <tr><td>Modelowanie parametryczne 3D</td><td>SolidWorks Professional</td><td>Powierzchnia kadłuba, system wzdłużników, wspornik silnika, układ pokładu</td></tr>
+      <tr><td>Modelowanie parametryczne 3D</td><td>SolidWorks Professional</td><td>Powierzchnia kadłuba, wzmocnienie burty i wzdłużnika, układ pokładu, punkty mocowania sprzętu</td></tr>
       <tr><td>Analiza metodą elementów skończonych</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Mapowanie naprężeń, analiza modalna, symulacja zderzeń i uderzeń</td></tr>
       <tr><td>Obliczeniowa dynamika płynów</td><td>Ansys Fluent / Star-CCM+</td><td>Prognozowanie oporu hydrodynamicznego, optymalizacja przegłębienia</td></tr>
       <tr><td>Inżynieria laminatów</td><td>ESAComp / CADEC</td><td>Układanie warstw włókna szklanego, dobór rdzenia, szacowanie masy</td></tr>
@@ -40,16 +40,16 @@ content_html: >-
   <p>Każdy projekt kadłuba — niezależnie od tego, czy jest to model standardowy, czy projekt w pełni niestandardowy — przebiega według rygorystycznego, pięcioetapowego procesu:</p>
 
   <ol>
-    <li><strong>Koncepcja i zbieranie wymagań</strong> — Spotykamy się z Tobą, aby określić ładowność, zakres prędkości, zdolność pracy w danych warunkach morskich, wymagania dotyczące holowania oraz ewentualny specjalistyczny sprzęt misyjny (włazy pokładowe, pozycje konsol, integrację zbiornika paliwa).</li>
-    <li><strong>Modelowanie powierzchni 3D i obliczenia hydrostatyczne</strong> — Forma kadłuba jest modelowana w SolidWorks i sprawdzana pod kątem stateczności hydrostatycznej (GM, ramię prostujące) za pomocą wbudowanych narzędzi analitycznych.</li>
-    <li><strong>Analiza strukturalna MES</strong> — Definiowane są przypadki obciążenia: statyczne (załoga + sprzęt), dynamiczne (uderzenia podczas ślizgu z przeciążeniem 5g) oraz slamming (opadanie z grzbietu fali z prędkością 3 m/s). Przeglądane są kontury naprężeń; obowiązkowy jest współczynnik bezpieczeństwa ≥ 2.5.</li>
+    <li><strong>Koncepcja i zbieranie wymagań</strong> — Spotykamy się z Tobą, aby określić wagę pływaka i ładunek, zakres prędkości, zdolność pracy w danych warunkach wodnych, wymagania transportowe oraz ewentualny specjalistyczny sprzęt misyjny (mocowania pokładowe, pozycje mocowania ładunku, integrację akcesoriów).</li>
+    <li><strong>Modelowanie powierzchni 3D i obliczenia hydrostatyczne</strong> — Forma kadłuba jest modelowana w SolidWorks i sprawdzana pod kątem stateczności hydrostatycznej, rozkładu objętości i momentu prostującego za pomocą wbudowanych narzędzi analitycznych.</li>
+    <li><strong>Analiza strukturalna MES</strong> — Definiowane są przypadki obciążenia: statyczne (pływak + sprzęt), dynamiczne (uderzenia przy lądowaniu na fali z przeciążeniem 5g) oraz wejście na mieliznę (uderzenie w skalisty brzeg z prędkością 3 m/s). Przeglądane są kontury naprężeń; obowiązkowy jest współczynnik bezpieczeństwa ≥ 2.5.</li>
     <li><strong>Optymalizacja oporu CFD</strong> — Kadłub jest symulowany w trzech stanach załadowania i przy pięciu prędkościach. Powierzchnia zwilżona, kąt przegłębienia i opór resztkowy są iteracyjnie redukowane.</li>
-    <li><strong>Przegląd projektu i przekazanie do produkcji</strong> — Kompletny pakiet inżynieryjny (model 3D, raport MES, raport CFD, szacunek masy, księga laminacji) jest sprawdzany przez naszego starszego architekta okrętowego przed przekazaniem do warsztatu prototypów.</li>
+    <li><strong>Przegląd projektu i przekazanie do produkcji</strong> — Kompletny pakiet inżynieryjny (model 3D, raport MES, raport CFD, szacunek masy, księga laminacji) jest sprawdzany przez naszego starszego inżyniera przed przekazaniem do warsztatu prototypów.</li>
   </ol>
 
 
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Rozkład naprężeń MES — kadłub patrolowy (aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Rozkład naprężeń MES — kadłub SUP turystycznego (wzmocniony drop-stitch)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
@@ -73,27 +73,27 @@ content_html: >-
 
   <h2>Personalizacja: Twój kadłub, Twoje zasady</h2>
 
-  <p>Żaden operator nie ma identycznych wymagań. Łódź do patrolowania portu potrzebuje kadłuba o płytkim V dla stateczności przy niskiej prędkości; szybka jednostka przechwytująca potrzebuje głębokiego V z listwami rozpryskowymi; łódź wsparcia nurkowego potrzebuje szerokiego kadłuba i niskiej pawęży.
-  Nie dopasowujemy Twojego zastosowania do gotowego kształtu kadłuba — projektujemy w oparciu o Twoją specyfikację.</p>
+  <p>Żadni dwaj pływacy nie mają identycznych wymagań. SUP wędkarski potrzebuje szerokiego, stabilnego kadłuba planującego; deska turystyczna potrzebuje kadłuba wypornościowego maksymalizującego ślizg; SUP do surfingu potrzebuje responsywnych burt i wyregulowanego rockeru. Nie wymuszamy
+  Twojego zastosowania na istniejącym kształcie kadłuba. Projektujemy w oparciu o Twoją specyfikację.</p>
 
   <p>Przykłady ostatnich niestandardowych projektów inżynierii kadłubów:</p>
 
   <ul>
-    <li>Wydłużony kadłub z HDPE o długości 6.8 m dla karaibskiego operatora turystycznego, ze wzmocnionym dziobem do lądowań na plaży (+15 % grubości dna).</li>
-    <li>Lekki aluminiowy kuter patrolowy o długości 7.2 m dla straży przybrzeżnej, z wbudowanymi przeprodami zbiornika paliwa i usztywnieniami szafek na sprzęt.</li>
-    <li>Łódź nurkowa z włókna szklanego o długości 5.5 m z obniżoną pawężą i podwójnymi skrzynkami akumulatorów, zaprojektowana z myślą o łatwym powrocie na pokład dla nurków z rurką.</li>
+    <li>Wydłużony SUP turystyczny dla karaibskiego operatora ekoturystyki, ze wzmocnionym dziobem do lądowań na plaży (+15 % grubości burty).</li>
+    <li>Wysoce widoczny SUP patrolowy dla zarządu portu, ze zintegrowanymi mocowaniami sprzętu i szynami taktycznymi.</li>
+    <li>Ekspedycyjny SUP turystyczny dla floty wypożyczalni, ze wzmocnionymi burtami i dodatkowymi mocowaniami ładunku.</li>
   </ul>
 
 
   <h2>Nasi inżynierowie</h2>
 
-  <p>Studio prowadzi starszy architekt okrętowy z 14-letnim doświadczeniem w projektowaniu jednostek szybkich, wspierany przez dwóch inżynierów mechaników specjalizujących się w MES i CFD. Cała trójka posiada wyższe stopnie naukowe z inżynierii morskiej lub architektury okrętowej uzyskane na
-  uznanych międzynarodowo uczelniach. Zespół regularnie publikuje w branżowych czasopismach i występuje na konferencjach, takich jak International Conference on High-Performance Marine Vehicles.</p>
+  <p>Studio prowadzi starszy inżynier z 14-letnim doświadczeniem w projektowaniu desek o wysokiej wydajności, wspierany przez dwóch inżynierów mechaników specjalizujących się w MES i CFD. Cała trójka posiada wyższe stopnie naukowe z inżynierii morskiej lub mechaniki uzyskane na
+  uznanych międzynarodowo uczelniach. Zespół regularnie publikuje w branżowych czasopismach i występuje na międzynarodowych konferencjach poświęconych inżynierii sportów wiosłowych o wysokiej wydajności.</p>
 
 
   <h2>Współpracuj z nami przy swoim kolejnym kadłubie</h2>
 
-  <p>Od pierwszego szkicu koncepcyjnego po końcowy raport naprężeń, nasze Hull Engineering Studio jest Twoim partnerem w tworzeniu łodzi, która jest nie tylko zbudowana — ale zaprojektowana inżyniersko. Inwestujemy godziny symulacji z wyprzedzeniem, aby każdy spaw, każda warstwa laminatu i każda
+  <p>Od pierwszego szkicu koncepcyjnego po końcowy raport naprężeń, nasze Hull Engineering Studio jest Twoim partnerem w tworzeniu deski, która jest nie tylko zbudowana — ale zaprojektowana inżyniersko. Inwestujemy godziny symulacji z wyprzedzeniem, aby każdy spaw, każda warstwa laminatu i każda
   krzywizna kadłuba miała swój cel.</p>
 
   <p>Niezależnie od tego, czy potrzebujesz drobnej modyfikacji istniejącego modelu, czy projektu od zera, jesteśmy gotowi omówić Twoje wymagania.</p>

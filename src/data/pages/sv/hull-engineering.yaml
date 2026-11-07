@@ -1,54 +1,44 @@
 meta:
-  title: Skrovingenjörsstudio — CAD, FEA och anpassad skrotdesign | {SITE}
-  description: Utforska vår skrovingenjörsstudio för CAD-design, elementmetodanalys (FEA) och anpassad utveckling av HDPE/aluminium/glasfibrerskrov. Kontakta vårt ingenjörsteam för att påbörja ditt nästa båtprojekt.
-back_text: Tillbaka till FoU-centrum
-home_label: Hem
+  title: 'Skrovengineeringstudio — CAD, FEA och anpassad skrovdesign | {SITE}'
+  description: 'Utforska vår skrovengineeringstudio för CAD-design, elementmetodanalys (FEA) och anpassad utveckling av högpresterande SUP-skrov. Kontakta vårt ingenjörsteam för att påbörja ditt nästa brädprojekt.'
+  back_text: 'Tillbaka till FoU-centrum'
+  home_label: 'Hem'
 hero:
-  tagline: Laboratorium 02
-  title: Skroveteknisk studio
-  subtitle: Digital simulering, strukturar intelligens, skräddarsydd skrogdesign
-  image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
-  image_alt: Afarers arbetsstation för skrovdesign i CAD
-intro: >-
-  Skroget är ryggraden i varje uppblåsbar båt. Det måste vara tillräckligt lätt för att plana effektivt, tillräckligt starkt för att absorbera stötlaster och dimensionsstabilt över ett brett temperaturintervall. Hos Afarer kombinerar vår skrogverkstad avancerad CAD-modellering,
-  elementmetodanalyse (FEA) och årtionden av praktisk marinarkitekturerfarenhet för att leverera skrog som är optimerade för sitt ändamål — inte generiska former anpassade från en katalog.
-content_html: >
+  tagline: 'Laboratorium 02'
+  title: 'Skrovengineeringstudio'
+  subtitle: 'Digital simulering, strukturell intelligens, skräddarsydd skrovdesign'
+  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
+  image_alt: 'Afarers CAD-arbetsstation för skrovengineering'
+intro: 'Skrovet är ryggraden i varje uppblåsbar SUP. Det måste vara tillräckligt lätt för att glida effektivt, tillräckligt starkt för att klara steniga stränder och tillräckligt styvt för att omvandla varje årtag till framåtrörelse. Hos Afarer kombinerar vår skrovengineeringstudio avancerad CAD-modellering, elementmetodanalys (FEA) och årtionden av praktisk bräddesignerfarenhet för att leverera skrov som är optimerade för sin avsedda disciplin — inte generiska former anpassade från en katalog.'
+content_html: |
   <h2>Där styrka möter hydrodynamik</h2>
-
-  <p>Vi arbetar med tre huvudsakliga skrovmaterial — roterande stöpgjuten HDPE, svetsad maringrad aluminium och handlagd glasfiber — och har teknisk förmåga att designa, simulera och validera var och en internt.</p>
-
+  <p>Vi arbetar med tre primära konstruktionsplattformar — förstärkta drop-stitch PVC-kärnor, handlagda glasfiberlaminat och rotationsgjuten polyeten — och har den tekniska förmågan att designa, simulera och validera var och en internt.</p>
 
   <h2>Designverktyg och standarder</h2>
-
   <p>Vår digitala engineeringmiljö omfattar:</p>
-
   <table>
     <thead><tr><th>Förmåga</th><th>Mjukvara / Verktyg</th><th>Tillämpning</th></tr></thead>
     <tbody>
-      <tr><td>3D-parametrisk modellering</td><td>SolidWorks Professional</td><td>Skrovyta, strängsystem, motorbeslag, däcksplanering</td></tr>
-      <tr><td>Elementmetodanalys</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Spanningskartering, modal analys, krock/impulssimulering</td></tr>
-      <tr><td>Beräkningsbaserad strömningsmekanik</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamisk dragningsförutsägelse, trimmoptimering</td></tr>
-      <tr><td>Laminatkonstruktion</td><td>ESAComp / CADEC</td><td>Glasfiberlagerstapling, kärnval, viktestimation</td></tr>
-      <tr><td>Formflödessimulering</td><td>Moldex3D</td><td>Rotgjutning vägg-tjockleksförutsägelse</td></tr>
+      <tr><td>3D-parametrisk modellering</td><td>SolidWorks Professional</td><td>Skrovyta, rail- och strängförstärkning, däcklayout, fästpunkter för utrustning</td></tr>
+      <tr><td>Elementmetodanalys</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Spänningskartering, modal analys, krock-/stötsimulering</td></tr>
+      <tr><td>Beräkningsströmningsdynamik</td><td>Ansys Fluent / Star-CCM+</td><td>Hydrodynamisk motståndsförutsägelse, trimoptimering</td></tr>
+      <tr><td>Laminatengineering</td><td>ESAComp / CADEC</td><td>Glasfiberlagerstapling, kärnval, viktestimering</td></tr>
+      <tr><td>Formflödessimulering</td><td>Moldex3D</td><td>Väggjockleksförutsägelse vid rotationsgjutning</td></tr>
     </tbody>
   </table>
 
-
   <h2>Vår engineeringprocess</h2>
-
   <p>Varje skrovdesign, oavsett om det är en standardmodell eller ett helt anpassat projekt, följer en sträng femstegsprocess:</p>
-
   <ol>
-    <li><strong>Koncept &amp; kravinsamling</strong> — Vi möter er för att definiera last, hastighetsintervall, havstillståndskapacitet, bogseringskrav och eventuellt specialutrustning för uppdrag (däcksluckor, konsolpositioner, bränsletankintegration).</li>
-    <li><strong>3D-ytmodellering &amp; hydrostatisk beräkning</strong> — Skrovet formges i SolidWorks och kontrolleras för hydrostatisk stabilitet (GM, rättningsarm) med inbyggda analysverktyg.</li>
-    <li><strong>Strukturell FEA</strong> — Lastfall definieras: statiskt (besättning + utrustning), dynamiskt (planerande slag vid 5g) och slagsmot (fallande från vågkam vid 3 m/s). Spanningskonturer granskas; säkerhetsfaktor ≥ 2,5 är obligatorisk.</li>
-    <li><strong>CFD-dragningsoptimering</strong> — Skrovet simuleras vid tre lasttillstånd och fem hastigheter. Fuktad yta, trimvinkel och restmotstånd minskas iterativt.</li>
-    <li><strong>Designgranskning &amp; frigivning</strong> — Den kompletta engineeringpaketet (3D-modell, FEA-rapport, CFD-rapport, viktestimation, lagerbok) granskas av vår seniora skeppsarkitekt innan frigivning till prototypverkstaden.</li>
+    <li><strong>Koncept &amp; kravinsamling</strong> — Vi möter er för att definiera åkares vikt och last, hastighetsintervall, förmåga i olika vattenförhållanden, transportkrav och eventuell specialutrustning (däckfästen, lastöglepositioner, tillbehörsintegration).</li>
+    <li><strong>3D-ytmodellering &amp; hydrostatisk beräkning</strong> — Skrovformen modelleras i SolidWorks och kontrolleras för hydrostatisk stabilitet, volymfördelning och rättningsmoment med inbyggda analysverktyg.</li>
+    <li><strong>Strukturell FEA</strong> — Lastfall definieras: statiskt (åkare + utrustning), dynamiskt (våglandningsstötar vid 5g) och grundstötning (mot stenig strand vid 3 m/s). Spänningskonturer granskas; säkerhetsfaktor ≥ 2,5 är obligatorisk.</li>
+    <li><strong>CFD-motståndsoptimering</strong> — Skrovet simuleras vid tre lasttillstånd och fem hastigheter. Våtyta, trimvinkel och restmotstånd minskas iterativt.</li>
+    <li><strong>Designgranskning &amp; frigivning</strong> — Det kompletta engineeringpaketet (3D-modell, FEA-rapport, CFD-rapport, viktestimering, lagerbok) granskas av vår seniora ingenjör innan frigivning till prototypverkstaden.</li>
   </ol>
 
-
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA-spanningsfördelning — Patrullbåtsskrov (Aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA-spänningsfördelning — Tur-SUP-skrov (förstärkt drop-stitch)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2,8 : 1</span>
@@ -56,11 +46,11 @@ content_html: >
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">15,2 %</span>
-        <span class="text-gray-500">Dragminskning jämfört med föregående generation</span>
+        <span class="text-gray-500">Motståndsminskning jämfört med föregående generation</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
-        <span class="text-gray-500">Maximal slagsmotstryck (desigongränsvärde)</span>
+        <span class="text-gray-500">Maximalt slaggtryck (designgräns)</span>
       </div>
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
@@ -69,35 +59,23 @@ content_html: >
     </div>
   </div>
 
-
-  <h2>Anpassning: er skrov, era regler</h2>
-
-  <p>Inga två operatörer har identiska krav. En hamnpatrullerande båt behöver ett grunt V-skrov för stabilitet vid låg hastighet; en snabbinterceptionsfarkost behöver ett djupt V med spröjslinjer; en dykarstödsbåt behöver en bred bredd och en låg akterstäv. Vi tvingar inte er applikation i en
-  förutbestämd skrovform. Vi designar utifrån era specifikationer.</p>
-
-  <p>Exempel på senaste anpassade skrovengineeringprojekt:</p>
-
+  <h2>Anpassning: ert skrov, era regler</h2>
+  <p>Inga två paddlare har identiska krav. En fiske-SUP behöver ett brett, stabilt planande skrov; en turbräda behöver ett deplacerande skrov som maximerar glid; en surf-SUP behöver responsiva rails och avstämd rocker. Vi tvingar inte er applikation in i en befintlig skrovform. Vi designar utifrån era specifikationer.</p>
+  <p>Exempel på nyligen genomförda anpassade skrovengineeringprojekt:</p>
   <ul>
-    <li>Ett förlängt 6,8 m HDPE-skrov för en karibisk tour-operatör, med förstärkt bog för strändlandningar (+15 % botten-tjocklek).</li>
-    <li>En lättviktig aluminium patrouillebåt på 7,2 m för en kustbevakning, med integrerade bränsletanksväggar och utrustningslådesstegringar.</li>
-    <li>En glasfiber 5,5 m dykbåt med nedskuren akterstäv och dubbla batterilådor, designad för enkel ombordtagning av snorklare.</li>
+    <li>En förlängd tur-SUP för en karibisk ekoturismoperatör, med förstärkt bog för landstigning på stränder (+15 % railtjocklek).</li>
+    <li>En högsynlig patrull-SUP för en hamnmyndighet, med integrerade utrustningsfästen och taktiska rails.</li>
+    <li>En expeditionstur-SUP för en uthyrningsflotta, med förstärkta rails och extra lastöglor.</li>
   </ul>
 
-
   <h2>Våra ingenjörer</h2>
-
-  <p>Studion leds av en senior skeppsarkitekt med 14 års erfarenhet av höghastighetsfarkostdesign, understödd av två mekaniska ingenjörer specialiserade på FEA och CFD. Alla tre har avancerade examen i marin teknik eller skeppsarkitektur från internationellt erkända universitet. Teamet publicerar
-  regelbundet i branschtidskrift och presenterar på konferenser som International Conference on High-Performance Marine Vehicles.</p>
-
+  <p>Studion leds av en senior ingenjör med 14 års erfarenhet av högpresterande bräddesign, understödd av två mekaniska ingenjörer specialiserade på FEA och CFD. Alla tre har avancerade examina inom marin- eller maskinteknik från internationellt erkända universitet. Teamet publicerar regelbundet i branschtidskrifter och presenterar vid internationella konferenser om högpresterande paddelsportsengineering.</p>
 
   <h2>Samarbeta med oss om ert nästa skrov</h2>
-
-  <p>Från den första konceptskissen till den slutliga spänningsrapporten är vår Skrovengineeringstudio er partner i att skapa en båt som inte bara är byggd — utan engineerad. Vi investerar simuleringstimmar i förväg så att varje svets, varje laminatlager och varje kurva på skrovet finns där av en
-  anledning.</p>
-
-  <p>Oavsett om ni behöver en mindre modification av en befintlig modell eller en helt ny design, är vi redo att diskutera era behov.</p>
+  <p>Från den första konceptskissen till den slutliga spänningsrapporten är vår skrovengineeringstudio er partner i att skapa en bräda som inte bara är byggd — utan engineerad. Vi investerar simuleringstimmar i förväg så att varje svets, varje laminatlager och varje kurva på skrovet finns där av en anledning.</p>
+  <p>Oavsett om ni behöver en mindre modifiering av en befintlig modell eller en helt ny design från grunden, är vi redo att diskutera era behov.</p>
 cta:
-  title: Starta din konsultation för skrovdesign
-  subtitle: Berätta om er uppdragsprofil så föreslår vi en teknisk väg.
-  button_text: Kontakta vårt ingenjörsteam
+  title: 'Starta din konsultation för skrovdesign'
+  subtitle: 'Berätta om er uppdragsprofil så föreslår vi en teknisk väg.'
+  button_text: 'Kontakta vårt ingenjörsteam'
   button_link: /contact

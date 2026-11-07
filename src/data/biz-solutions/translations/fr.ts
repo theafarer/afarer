@@ -3596,7 +3596,7 @@ const fr: Record<string, SolutionOverride> = {
           description: 'Augmentez la valeur vie client au-delà des produits de surf traditionnels',
           features: [
             'Collection SUP gonflable incluant modèles polyvalents, touring, yoga et enfants',
-            'Collection d’annexes gonflables pour les loisirs nautiques en famille',
+            'Collection SUP spécialisée incluant modèles de pêche, eau vive et surf',
             'Accessoires nautiques incluant sacs étanches, housses imperméables, pompes et pagaies',
             'Écosystème lifestyle nautique complet sous votre marque de surf',
             'Opportunités de vente croisée auprès de vos clients surf existants',
@@ -4316,7 +4316,7 @@ const fr: Record<string, SolutionOverride> = {
         question:
           'Quel est le niveau de compacité des planches SUP Afarer une fois pliées pour le stockage sur yacht ?',
         answer:
-          'Les planches SUP portables de luxe Afarer utilisent des systèmes de pliage compact qui réduisent significativement le volume de stockage, se rangeant facilement dans les cabines de yacht, compartiments de stockage, bateaux annexes et navires d’expédition. Chaque planche se range dans un sac à dos avec tous les accessoires.',
+          'Les planches SUP portables de luxe Afarer utilisent des systèmes de pliage compact qui réduisent significativement le volume de stockage, se rangeant facilement dans les cabines de yacht, compartiments de stockage et navires d’expédition. Chaque planche se range dans un sac à dos avec tous les accessoires.',
       },
       {
         question: 'Les planches SUP Afarer résistent-elles à l’eau salée et aux dommages UV ?',
@@ -5670,7 +5670,7 @@ const fr: Record<string, SolutionOverride> = {
             {
               title: 'Cartographie de l’itinéraire et relevé logistique dans l’archipel de Samui',
               detail:
-                'En octobre 2023, Tomo Kato, spécialiste expéditions Asie-Pacifique d’Afarer, et l’écologue marin thaïlandais Dr Narong Chaiyasit ont passé 14 jours à kayaker et à escorter en bateau à moteur l’itinéraire proposé. Ils ont identifié 7 facteurs critiques : les schémas de vent de mousson (la mousson du nord-est de novembre à janvier rend la traversée Koh Samui-Koh Phangan dangereuse ; février–octobre est sûr), les sites de camping sur Koh Tao (seulement 2 emplacements en bord de plage avec permis pour tentes — chacun limité à 10 personnes), le réapprovisionnement en eau douce (aucun sur Koh Nang Yuan — les clients transportent 4 L par personne et par jour) et les corridors de navigation entre récifs (le corail de Shark Bay à Koh Tao exige des planches avec plus de 40 cm de tirant d’eau à marée basse). L’itinéraire final faisait 68 km sur 5 jours avec des distances quotidiennes de paddle de 8 à 18 km. Tomo a testé 14 types d’ancres pour le camping de plage (le modèle Danforth tenait le mieux dans les fonds sableux de Samui).',
+                'En octobre 2023, Tomo Kato, spécialiste expéditions Asie-Pacifique d’Afarer, et l’écologue marin thaïlandais Dr Narong Chaiyasit ont passé 14 jours à kayaker et à assurer le soutien motorisé de l’itinéraire proposé. Ils ont identifié 7 facteurs critiques : les schémas de vent de mousson (la mousson du nord-est de novembre à janvier rend la traversée Koh Samui-Koh Phangan dangereuse ; février–octobre est sûr), les sites de camping sur Koh Tao (seulement 2 emplacements en bord de plage avec permis pour tentes — chacun limité à 10 personnes), le réapprovisionnement en eau douce (aucun sur Koh Nang Yuan — les clients transportent 4 L par personne et par jour) et les corridors de navigation entre récifs (le corail de Shark Bay à Koh Tao exige des planches avec plus de 40 cm de tirant d’eau à marée basse). L’itinéraire final faisait 68 km sur 5 jours avec des distances quotidiennes de paddle de 8 à 18 km. Tomo a testé 14 types d’ancres pour le camping de plage (le modèle Danforth tenait le mieux dans les fonds sableux de Samui).',
             },
             {
               title: 'Planche « Archipelago Expedition » avec fonctions de survie et de confort',

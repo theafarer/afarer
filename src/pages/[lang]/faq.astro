@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
-const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || getUiForLang('en')?.[key] || '';
 const faqs = getFaqsForLang(lang);
 const guides = getGuidesForLang(lang);
 const contentV2 = getContentV2ForLang(lang);

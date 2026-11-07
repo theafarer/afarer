@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
-const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || getUiForLang('en')?.[key] || '';
 
 const productsRaw = await getProducts();
 const categories = await getProductCategories();
@@ -41,9 +41,9 @@ const products = productsRaw.map((p) => {
     categoryLabel: (p.category && t('home.category.' + p.category.toLowerCase())) || p.categoryLabel,
   };
 });
-const rawCategory = (Astro.url?.searchParams?.get('category') ?? '') as 'rib' | 'inflatable' | 'accessory' | 'sup' | '';
+const rawCategory = (Astro.url?.searchParams?.get('category') ?? '') as 'accessory' | 'sup' | '';
 const activeCategory =
-  rawCategory === 'rib' || rawCategory === 'inflatable' || rawCategory === 'accessory' || rawCategory === 'sup'
+  rawCategory === 'accessory' || rawCategory === 'sup'
     ? rawCategory
     : null;
 const filteredProducts = activeCategory ? products.filter((p) => p.category === activeCategory) : products;

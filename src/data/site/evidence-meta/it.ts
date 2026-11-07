@@ -24,7 +24,7 @@ export const evidenceMetaIt: EvidenceMetaMap = {
   'search-rescue-sup-fleet': {
     title: 'Agenzia marittima del Sud-est asiatico — Flotta SUP di pattugliamento e soccorso | Afarer',
     description:
-      "Un'agenzia marittima governativa richiedeva 20 SUP di pattugliamento e soccorso con tessuto Hypalon antincendio, supporti per comunicazioni integrati e conformità agli standard SOLAS capitolo III.",
+      "Un'agenzia marittima governativa richiedeva 20 SUP di pattugliamento e soccorso con coperte ad alta visibilità, supporti per comunicazioni integrati e costruzione certificata CE.",
   },
   'european-dtc-ecommerce': {
     title: 'Brand europeo DTC di sport acquatici — Linea SUP a brand + accessori | Afarer',
@@ -53,7 +53,7 @@ export const evidenceMetaIt: EvidenceMetaMap = {
       'Un rivenditore canadese con 25 negozi richiedeva una gamma SUP esclusiva a marchio privato con confezioni bilingue francese/inglese, specifiche per il clima freddo e conformità alle normative nautiche canadesi.',
   },
   'middle-east-distributor': {
-    title: 'Distributore di sport acquatici del Medio Oriente — Linea completa — SUP, barche, accessori | Afarer',
+    title: 'Distributore di sport acquatici del Medio Oriente — Linea completa — SUP e accessori | Afarer',
     description:
       "Un distributore con sede nel GCC desiderava i diritti esclusivi sull'intera linea Afarer in 6 paesi del Golfo, con packaging in arabo, specifiche di materiali resistenti al calore e garanzia conforme alla sharia.",
   },
@@ -76,11 +76,6 @@ export const evidenceMetaIt: EvidenceMetaMap = {
     title: 'Unione sportiva universitaria britannica — Flotta per club studenteschi — SUP + sicurezza | Afarer',
     description:
       "Un'università britannica con un attivo club di sport acquatici doveva sostituire una flotta datata con SUP gonfiabili moderni: stoccaggio in spazi limitati, uso per tutti i livelli e standard agonistici BUCS.",
-  },
-  'humanitarian-aid-project': {
-    title: 'Organizzazione umanitaria internazionale — Barche gonfiabili di soccorso e assistenza | Afarer',
-    description:
-      "Un'organizzazione umanitaria internazionale necessitava di 50 barche gonfiabili robuste per operazioni di soccorso durante le inondazioni nel Sud-est asiatico: leggere per il trasporto in elicottero e riparabili sul campo.",
   },
   'cruise-line-activity-program': {
     title: 'Operatore di crociere dei Caraibi — Flotta per attività di bordo — SUP | Afarer',

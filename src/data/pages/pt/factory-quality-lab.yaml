@@ -1,6 +1,6 @@
 meta:
   title: 'Laboratório de Qualidade — Testes e Garantia de Qualidade | {SITE}'
-  description: 'Laboratório de qualidade independente com processos ISO 9001 na afarer: cada unidade testada antes do embarque para garantir a qualidade do SUP inflável e dos barcos.'
+  description: 'Laboratório de qualidade independente com processos ISO 9001 na afarer: cada unidade testada antes do embarque para garantir a qualidade do SUP inflável.'
   keywords:
     - 'controle de qualidade de SUP'
     - 'laboratório de testes de paddle board'
@@ -11,12 +11,12 @@ hero:
   title: Laboratório de Testes e Garantia de Qualidade
   subtitle: Laboratório de qualidade independente com processos ISO 9001 — cada unidade testada antes do envio
 intro: >-
-  A Farer opera um laboratório de controle de qualidade dedicado que funciona de forma independente da produção. Cada lote de matéria-prima e cada barco acabado passa por protocolos de inspeção documentados antes da liberação. Nossa equipe de QC se reporta diretamente à administração, garantindo
+  A afarer opera um laboratório de controle de qualidade dedicado que funciona de forma independente da produção. Cada lote de matéria-prima e cada prancha acabada passa por protocolos de inspeção documentados antes da liberação. Nossa equipe de QC se reporta diretamente à administração, garantindo
   decisões de qualidade imparciais.
 highlights:
   - value: 100%
     label: Unidades testadas quanto à pressão
-    detail: Cada câmara, cada barco
+    detail: Cada câmara, cada prancha
   - value: 24–48 h
     label: Duração do teste de retenção de ar
     detail: A 1,25× a pressão nominal
@@ -28,7 +28,7 @@ highlights:
     detail: Amostragem conforme ISO 2859
 test_procedures:
   - title: Inspeção de Matéria-Prima
-    description: Cada lote recebido de PVC, Hypalon, tecido drop-stitch e ferragens é testado antes da aceitação. A resistência à tração (ASTM D751), resistência ao rasgo (ISO 4674) e resistência aos raios UV são verificadas. Materiais não conformes são colocados em quarentena e devolvidos.
+    description: Cada lote recebido de PVC, tecido drop-stitch e ferragens é testado antes da aceitação. A resistência à tração (ASTM D751), resistência ao rasgo (ISO 4674) e resistência aos raios UV são verificadas. Materiais não conformes são colocados em quarentena e devolvidos.
     standards:
       - ASTM D751 (tração)
       - ISO 4674 (rasgo)
@@ -42,10 +42,10 @@ test_procedures:
   - title: Teste de Retenção de Ar de 24–48 Horas
     description: Cada câmara do tubo é inflada a 125% da pressão nominal e mantida por 24–48 horas. Sensores de pressão registram continuamente com compensação de temperatura. Qualquer câmara que exceda uma queda de pressão de 5% aciona a re-inspeção automática do lote.
     standards:
-      - ISO 6185
+      - EN ISO 25649
       - CE 2013/53/UE
   - title: Teste de Carga e Balanceamento
-    description: Os barcos concluídos são testados na capacidade máxima nominal para estabilidade, bordo livre e manuseio. Cada embarcação passa por testes na água antes da aprovação da inspeção final.
+    description: As pranchas concluídas são testadas na capacidade máxima nominal para estabilidade e rigidez. Cada prancha passa por testes na água antes da aprovação da inspeção final.
     standards:
       - ISO 12217
       - CE 2013/53/UE

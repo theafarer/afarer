@@ -1586,7 +1586,7 @@ const pl: Record<string, SolutionOverride> = {
           customer: {
             location: 'Manaus, Brazylia',
             background:
-              'Carlos Mendes, 34 lata, jest fotografem przyrodniczym publikowanym w National Geographic i operatorem drona z 890 000 obserwujących na Instagramie. Po 7 latach dokumentowania odległych wypraw rzecznych Amazonii zauważył, że jego odbiorcy coraz częściej pytają o pompowane SUP-y, których używał do docierania na miejsca zdjęciowe. Bez doświadczenia wioślarskiego potrzebował Afarer do zaprojektowania niestandardowej deski mogącej służyć zarówno jako platforma kamerowa, jak i łódź wyprawowa, przy jednoczesnym wypuszczeniu skomercjalizowanej marki wokół jego serii «Rios do Brasil».',
+              'Carlos Mendes, 34 lata, jest fotografem przyrodniczym publikowanym w National Geographic i operatorem drona z 890 000 obserwujących na Instagramie. Po 7 latach dokumentowania odległych wypraw rzecznych Amazonii zauważył, że jego odbiorcy coraz częściej pytają o pompowane SUP-y, których używał do docierania na miejsca zdjęciowe. Bez doświadczenia wioślarskiego potrzebował Afarer do zaprojektowania niestandardowej deski mogącej służyć zarówno jako platforma kamerowa, jak i sprzęt wyprawowy, przy jednoczesnym wypuszczeniu skomercjalizowanej marki wokół jego serii «Rios do Brasil».',
             goal: 'Wypuszczenie współbrandowanego autorskiego SUP do maja 2025, obejmującego 5 głównych biomów wodnych Brazylii (Amazonia, Pantanal, São Francisco, Paraná i przybrzeżne Rio), z przedsprzedażą 500 sztuk po 4 990 BRL każda przed produkcją.',
           },
           steps: [
@@ -3507,7 +3507,7 @@ const pl: Record<string, SolutionOverride> = {
           description: 'Zwiększ wartość życiową klienta poza tradycyjne produkty surfingowe',
           features: [
             'Kolekcja pompowanych SUP obejmująca modele uniwersalne, touringowe, do jogi i dla dzieci',
-            'Kolekcja pompowanych łodzi rekreacyjnych dla rodzinnej rekreacji wodnej',
+            'Kolekcja specjalistycznych SUP obejmująca modele wędkarskie, whitewater i surfowe',
             'Akcesoria wodne, w tym dry bagi, wodoodporne etui, pompki i wiosła',
             'Kompletny ekosystem wodnego stylu życia pod Twoją marką surfingową',
             'Okazje sprzedaży krzyżowej do istniejących klientów surfingowych',
@@ -4226,7 +4226,7 @@ const pl: Record<string, SolutionOverride> = {
       {
         question: 'Jak kompaktowe są deski SUP Afarer po spakowaniu do przechowywania na jachcie?',
         answer:
-          'Luksusowe przenośne deski SUP Afarer oferują kompaktowe systemy składania znacząco redukujące objętość przechowywania, łatwo mieszczące się w kabinach jachtów, przedziałach storage, łodziach tender i statkach ekspedycyjnych. Każda deska pakuje się w plecak transportowy ze wszystkimi akcesoriami.',
+          'Luksusowe przenośne deski SUP Afarer oferują kompaktowe systemy składania znacząco redukujące objętość przechowywania, łatwo mieszczące się w kabinach jachtów, przedziałach storage i statkach ekspedycyjnych. Każda deska pakuje się w plecak transportowy ze wszystkimi akcesoriami.',
       },
       {
         question: 'Czy deski SUP Afarer są odporne na słoną wodę i uszkodzenia UV?',

@@ -1,6 +1,6 @@
 meta:
-  title: Kvalitets- og inspektionslaboratorium — ISO-kompatibel båd-test og -certificering | {SITE}
-  description: Uafhængig kvalitetsverifikation af oppustelige både. Trækprøvning, cyklisk lufttryktest, skræltest af sømme og materialecertificering. Kontakt vores kvalitetslaboratorium for tredjepartstest.
+  title: Kvalitets- og inspektionslaboratorium — ISO-kompatibel SUP-test og -certificering | {SITE}
+  description: Uafhængig kvalitetsverifikation af oppustelige SUP'er. Trækprøvning, cyklisk lufttryktest, skræltest af sømme og materialecertificering. Kontakt vores kvalitetslaboratorium for tredjepartstest.
 back_text: Tilbage til R&D-center
 home_label: Forside
 hero:
@@ -10,13 +10,13 @@ hero:
   image: https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp
   image_alt: UV-testning i Afarers kvalitetsinspektionslaboratorium
 intro: >-
-  Enhver båd, der forlader vores værksted, er certificeret til at have bestået et fast defineret sæt kvalitetsinspektioner og materialetest. Vores Quality & Inspection Lab er en uafhængig funktion i organisationen — det refererer direkte til administrerende direktør, ikke til produktionen — hvilket
-  sikrer, at intet kommercielt pres kan kompromittere inspektionsporten. Hvis et materialeparti eller en færdig båd ikke lever op til den offentliggjorte specifikation, har laboratoriet bemyndigelse til at standse forsendelsen, indtil afvigelsen er løst.
+  Ethvert board, der forlader vores værksted, er certificeret til at have bestået et fast defineret sæt kvalitetsinspektioner og materialetest. Vores Quality & Inspection Lab er en uafhængig funktion i organisationen — det refererer direkte til administrerende direktør, ikke til produktionen — hvilket
+  sikrer, at intet kommercielt pres kan kompromittere inspektionsporten. Hvis et materialeparti eller et færdigt board ikke lever op til den offentliggjorte specifikation, har laboratoriet bemyndigelse til at standse forsendelsen, indtil afvigelsen er løst.
 content_html: >
   <h2>Stol, men kontrollér</h2>
 
   <p>Laboratoriet arbejder under et kvalitetsstyringssystem, der er i overensstemmelse med principperne, og vores testmetoder er baseret på ISO-, ASTM- og EN-standarder, hvor det er relevant. Vi fører detaljerede registreringer af alle udførte tests, hvilket skaber en komplet sporbarhedskæde fra
-  modtagelse af råmaterialer til endelig levering af båden.</p>
+  modtagelse af råmaterialer til endelig levering af boardet.</p>
 
 
   <h2>Testudstyr og -kapaciteter</h2>
@@ -25,7 +25,7 @@ content_html: >
     <thead><tr><th>Udstyr</th><th>Udførte tests</th><th>Standard / metode</th></tr></thead>
     <tbody>
       <tr><td>Universalprøvemaskine (50 kN)</td><td>Trækstyrke (stof), peel-modstand (sømme), rivningsudbredelse</td><td>ISO 1421, ISO 4674</td></tr>
-      <tr><td>Programmerbart lufttæthedstestanlæg</td><td>1000-cyklus udholdenhedstest med oppustning/tømning, 30 min trykholdbarhedstest</td><td>ISO 6185 (intern)</td></tr>
+      <tr><td>Programmerbart lufttæthedstestanlæg</td><td>1000-cyklus udholdenhedstest med oppustning/tømning, 30 min trykholdbarhedstest</td><td>EN ISO 25649 (intern)</td></tr>
       <tr><td>Sømpeel-armatur (motoriseret 180° peel)</td><td>Peel-styrke for svejsede og limede sømme ved 100 mm/min</td><td>ISO 1421 / ASTM D1876</td></tr>
       <tr><td>Hydrostatisk tryktester</td><td>Stoffets modstand mod vandgennemtrængning (0–1000 mbar)</td><td>ISO 811</td></tr>
       <tr><td>Digital tykkelsesmåler &amp; mikrometer</td><td>Stoftykke, slangevægtykkelse, tykkelse af klæbefilm</td><td>ISO 2286-3</td></tr>
@@ -37,7 +37,7 @@ content_html: >
 
   <h2>Inspektionsgaterne — fra materiale til levering</h2>
 
-  <p>Hver båd følger en fastlagt kvalitetsplan med obligatoriske inspektionspunkter. Ingen båd kan springe en gate over; hver gate skal godkendes af en kvalitetsinspektør, før næste produktionsfase kan begynde.</p>
+  <p>Hvert board følger en fastlagt kvalitetsplan med obligatoriske inspektionspunkter. Intet board kan springe en gate over; hver gate skal godkendes af en kvalitetsinspektør, før næste produktionsfase kan begynde.</p>
 
 
   <div class="not-prose my-8">
@@ -69,7 +69,7 @@ content_html: >
           <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gate 4</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
             <p class="text-sm font-semibold">Kontrol før levering</p>
-            <p class="text-xs text-gray-500 mt-1">Hele båden inspiceres: alle fastgørelser er efterspændt, systemerne fungerer, og der er ingen kosmetiske fejl. 100-punkts-tjekliste.</p>
+            <p class="text-xs text-gray-500 mt-1">Hele boardet inspiceres: alle fastgørelser er efterspændt, beslagene fungerer, og der er ingen kosmetiske fejl. 100-punkts-tjekliste.</p>
           </div>
         </div>
         <div class="flex gap-4">
@@ -100,7 +100,7 @@ content_html: >
       <span class="text-xs text-gray-500">Kamre lufttestet før samling</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
-      <span class="block text-2xl font-bold text-blue-600">ISO 6185</span>
+      <span class="block text-2xl font-bold text-blue-600">EN ISO 25649</span>
       <span class="text-xs text-gray-500">Overensstemmelse med designkategori</span>
     </div>
   </div>
@@ -128,7 +128,7 @@ content_html: >
 
   <h2>Vores løfte til dig</h2>
 
-  <p>Når du modtager en Afarer-båd, modtager du også dens kvalitetsdossier — en samlet registrering af de testresultater, der gælder for netop din båd. Stofbatchcertifikat, peel-tests af svejsninger, lufttestlogfiler for kamre og kontroltjekliste før levering. Alle tal kan spores. Alle
+  <p>Når du modtager et Afarer-board, modtager du også dets kvalitetsdossier — en samlet registrering af de testresultater, der gælder for netop dit board. Stofbatchcertifikat, peel-tests af svejsninger, lufttestlogfiler for kamre og kontroltjekliste før levering. Alle tal kan spores. Alle
   inspektører er identificeret. Det er ikke kun papirarbejde — det er vores løfte om, at det, vi leverer, er det, vi har specificeret.</p>
 
   <p>Hvis du nogensinde har en bekymring om kvaliteten, kan du kontakte laboratoriet direkte — kontaktoplysningerne er trykt på din overensstemmelsesattest. Vi tager enhver henvendelse alvorligt og forpligter os til en formel undersøgelse inden for 48 timer.</p>

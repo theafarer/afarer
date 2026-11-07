@@ -1,6 +1,6 @@
 meta:
-  title: Kvalitets- og inspeksjonslaboratorium — ISO-sertifisert bådtesting og sertifisering | {SITE}
-  description: Uavhengig kvalitetsverifisering for oppblåsbare båter. Strekktesting, lufttett-sykling, sømrevehstesting og materialsertifisering. Kontakt vårt kvalitetslaboratorium for tredjepartstesting.
+  title: Kvalitets- og inspeksjonslaboratorium — ISO-samsvar SUP-testing og sertifisering | {SITE}
+  description: Uavhengig kvalitetsverifisering for oppblåsbare SUP-er. Strekktesting, lufttett-sykling, sømrevehstesting og materialsertifisering. Kontakt vårt kvalitetslaboratorium for tredjepartstesting.
 back_text: Tilbake til FoU-senteret
 home_label: Hjem
 hero:
@@ -10,13 +10,13 @@ hero:
   image: https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp
   image_alt: Afarer kvalitetsinspeksjonslaboratorium UV-testing
 intro: >-
-  Hver båt som forlater vårt verksted bærer sertifiseringen på at den har bestått et definert sett kvalitetsinspeksjoner og materialtester. Vårt kvalitets- og inspeksjonslaboratorium er en uavhengig funksjon i organisasjonen — det rapporterer direkte til administrerende direktør, ikke til produksjon
-  — noe som sikrer at intet kommersielt press kan kompromittere inspeksjonsporten. Hvis et materialparti eller en ferdig båt ikke oppfyller den publiserte spesifikasjonen, har laboratoriet myndighet til å stanse forsendelsen til ikke-samsvar er løst.
+  Hvert brett som forlater vårt verksted bærer sertifiseringen på at det har bestått et definert sett kvalitetsinspeksjoner og materialtester. Vårt kvalitets- og inspeksjonslaboratorium er en uavhengig funksjon i organisasjonen — det rapporterer direkte til administrerende direktør, ikke til produksjon
+  — noe som sikrer at intet kommersielt press kan kompromittere inspeksjonsporten. Hvis et materialparti eller et ferdig brett ikke oppfyller den publiserte spesifikasjonen, har laboratoriet myndighet til å stanse forsendelsen til ikke-samsvar er løst.
 content_html: >
   <h2>Stol på, men verifiser</h2>
 
   <p>Laboratoriet drives under et kvalitetsstyringssystem i samsvar med prinsippene, og våre testmetoder er basert på ISO-, ASTM- og EN-standarder der det er aktuelt. Vi opprettholder detaljerte registre over hver utført test og skaper en fullstendig sporbarhetskjede fra råvaremottak til endelig
-  båtlevering.</p>
+  brettlevering.</p>
 
 
   <h2>Testutstyr og kapasiteter</h2>
@@ -25,7 +25,7 @@ content_html: >
     <thead><tr><th>Utstyr</th><th>Utførte tester</th><th>Standard / Metode</th></tr></thead>
     <tbody>
       <tr><td>Universell testmaskin (50 kN)</td><td>Trekkfasthet (stoff), peel-motstand (sømmer), rivspredning</td><td>ISO 1421, ISO 4674</td></tr>
-      <tr><td>Lufttett testutstyr (programmerbart)</td><td>1000-syklusers oppblåsning/lufting, 30 min trykkholdtest</td><td>ISO 6185 (intern)</td></tr>
+      <tr><td>Lufttett testutstyr (programmerbart)</td><td>1000-syklusers oppblåsning/lufting, 30 min trykkholdtest</td><td>EN ISO 25649 (intern)</td></tr>
       <tr><td>Sømpeel-jig (motorisert 180° peel)</td><td>Sveise- og limsøm peel-styrke ved 100 mm/min</td><td>ISO 1421 / ASTM D1876</td></tr>
       <tr><td>Hydrostatisk hodeduktester</td><td>Vanninntrengningsmotstand for stoff (0–1000 mbar)</td><td>ISO 811</td></tr>
       <tr><td>Digital tykkelsesmåler og mikrometer</td><td>Stofftykkelse, rørveggtykkelse, limfilms tykkelse</td><td>ISO 2286-3</td></tr>
@@ -37,7 +37,7 @@ content_html: >
 
   <h2>Inspeksjonsportene — fra materiell til levering</h2>
 
-  <p>Hver båt følger en definert kvalitetsplan med obligatoriske inspeksjonspunkter. Ingen båt kan hoppe over en port; hver port må godkjennes av en kvalitetsinspektør før neste produksjonsstadium begynner.</p>
+  <p>Hvert brett følger en definert kvalitetsplan med obligatoriske inspeksjonspunkter. Ingen brett kan hoppe over en port; hver port må godkjennes av en kvalitetsinspektør før neste produksjonsstadium begynner.</p>
 
 
   <div class="not-prose my-8">
@@ -69,7 +69,7 @@ content_html: >
           <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Port 4</div>
           <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
             <p class="text-sm font-semibold">Forleveringsinspeksjon</p>
-            <p class="text-xs text-gray-500 mt-1">Komplett båt inspisert: alle festeelementer riktig strammet, systemer funksjonelle, ingen kosmetiske feil. 100-punkts sjekkliste.</p>
+            <p class="text-xs text-gray-500 mt-1">Komplett brett inspisert: alle festeelementer momentstrammet, beslag funksjonelle, ingen kosmetiske feil. 100-punkts sjekkliste.</p>
           </div>
         </div>
         <div class="flex gap-4">
@@ -100,7 +100,7 @@ content_html: >
       <span class="text-xs text-gray-500">Kamre lufttestet før montering</span>
     </div>
     <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
-      <span class="block text-2xl font-bold text-blue-600">ISO 6185</span>
+      <span class="block text-2xl font-bold text-blue-600">EN ISO 25649</span>
       <span class="text-xs text-gray-500">Designkategorisamsvar</span>
     </div>
   </div>
@@ -122,13 +122,13 @@ content_html: >
   <ul>
     <li>Peel-styrke-sammenligning av fem konkurrerende limfilmsprodukter for et europeisk militært anskaffelsesprogram.</li>
     <li>Akselerert aldringsstudie (UV + termisk syklus) for en ny oransjepigmentert PVC-formulering, med regelmessige mellommålinger med 500 timers intervaller.</li>
-    <li>Lufttett-validering av 50 prototypebaffelventiler for et nytt høytrykksrørdesign.</li>
+    <li>Lufttett-validering av 50 prototypebaffelventiler for et nytt høytrykkskammerdesign.</li>
   </ul>
 
 
   <h2>Vårt engasjement overfor deg</h2>
 
-  <p>Når du mottar en Afarer-båt, mottar du også dens kvalitetsdokumentasjon — en kompilert register over testresultatene som gjelder for din spesifikke båt. Stoffbatch-sertifikat, sveisepeeltester, kammer-lufttestlogger og forleveringsinspeksjonssjekkliste. Hvert tall er sporbar. Hver
+  <p>Når du mottar et Afarer-brett, mottar du også dets kvalitetsdokumentasjon — en kompilert register over testresultatene som gjelder for ditt spesifikke brett. Stoffbatch-sertifikat, sveisepeeltester, kammer-lufttestlogger og forleveringsinspeksjonssjekkliste. Hvert tall er sporbar. Hver
   inspektør er identifisert. Dette er ikke bare papirarbeid — det er vårt løfte om det vi leverte er det vi spesifiserte.</p>
 
   <p>Hvis du noen gang har en kvalitetsbekymring, kan du kontakte laboratoriet direkte — kontaktinformasjonen er utskrevet på samsvarserklæringen din. Vi tar ethvert spørsmål alvorlig og forplikter oss til en formell undersøkelse innen 48 timer.</p>

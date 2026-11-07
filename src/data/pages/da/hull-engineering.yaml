@@ -1,6 +1,6 @@
 meta:
   title: Hull Engineering Studio — CAD, FEA & tilpasset skrogdesign | {SITE}
-  description: Udforsk vores Hull Engineering Studio med CAD-design, finite element-analyse (FEA) og udvikling af skræddersyede HDPE/aluminium/glasfiber-skrog. Kontakt vores ingeniørteam for at starte dit næste bådprojekt.
+  description: Udforsk vores Hull Engineering Studio med CAD-design, finite element-analyse (FEA) og udvikling af skræddersyede højtydende SUP-skrog. Kontakt vores ingeniørteam for at starte dit næste boardprojekt.
 back_text: Tilbage til R&D-center
 home_label: Forside
 hero:
@@ -10,12 +10,12 @@ hero:
   image: https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp
   image_alt: Afarer CAD-designarbejdsstation til skrogkonstruktion
 intro: >-
-  Skroget er rygraden i enhver oppustelig båd. Det skal være let nok til at plane effektivt, stærkt nok til at absorbere stødbelastninger og dimensionsstabilt over et bredt temperaturområde. På Afarer kombinerer vores Hull Engineering Studio avanceret CAD-modellering, finite
-  element-analyse (FEA) og årtiers praktisk erfaring med skibsarkitektur for at levere skrog, der er optimeret til deres tilsigtede formål – ikke generiske former fra et katalog.
+  Skroget er rygraden i enhver oppustelig SUP. Det skal være let nok til at glide effektivt, stærkt nok til at modstå stenede kyststrækninger og stift nok til at omdanne hvert pagajtag til fremdrift. På Afarer kombinerer vores Hull Engineering Studio avanceret CAD-modellering, finite
+  element-analyse (FEA) og årtiers praktisk erfaring med boarddesign for at levere skrog, der er optimeret til deres tilsigtede disciplin – ikke generiske former tilpasset fra et katalog.
 content_html: >
   <h2>Hvor styrke møder hydrodynamik</h2>
 
-  <p>Vi arbejder med tre primære skrogmaterialer — rotationsstøbt HDPE, svejset aluminium i marinkvalitet og håndlagt glasfiber — og har den tekniske kapacitet til at designe, simulere og validere hvert enkelt materiale internt.</p>
+  <p>Vi arbejder med tre primære konstruktionsplatforme — forstærkede drop-stitch PVC-kerner, håndlagte glasfiberlaminater og rotationsstøbt polyethylen — og har den tekniske kapacitet til at designe, simulere og validere hver enkelt internt.</p>
 
 
   <h2>Designtools og standarder</h2>
@@ -25,7 +25,7 @@ content_html: >
   <table>
     <thead><tr><th>Kapacitet</th><th>Software / værktøj</th><th>Anvendelse</th></tr></thead>
     <tbody>
-      <tr><td>3D-parametrisk modellering</td><td>SolidWorks Professional</td><td>Skrogoverflade, stringersystem, motorbeslag, dækslayout</td></tr>
+      <tr><td>3D-parametrisk modellering</td><td>SolidWorks Professional</td><td>Skrogoverflade, rælings- og stringerforstærkning, dækslayout, monteringspunkter til udstyr</td></tr>
       <tr><td>Finite element-analyse</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Spændingskortlægning, modalanalyse, kollisions-/stødsimulering</td></tr>
       <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Forudsigelse af hydrodynamisk modstand, trimoptimering</td></tr>
       <tr><td>Laminateknik</td><td>ESAComp / CADEC</td><td>Glasfiberlagsopbygning, kærnevalg, vægtestimering</td></tr>
@@ -39,16 +39,16 @@ content_html: >
   <p>Ethvert skrogdesign — uanset om det er en standardmodel eller et fuldt specialtilpasset projekt — følger en stringent femtrinsproces:</p>
 
   <ol>
-    <li><strong>Koncept og kravindsamling</strong> — Vi mødes med dig for at definere nyttelast, hastighedsområde, bølgehøjdekapacitet, slæbkrav og alt særligt opgaveudstyr (dæksluger, konsolplaceringer, brændstoftankintegration).</li>
-    <li><strong>3D-overfladekonstruktion og hydrostatisk beregning</strong> — Skrogformen modelleres i SolidWorks og kontrolleres for hydrostatisk stabilitet (GM, opretningsarm) ved hjælp af de indbyggede analyseværktøjer.</li>
-    <li><strong>Strukturel FEA</strong> — Lasttilfælde defineres: statisk (besætning + udstyr), dynamisk (planningsstød ved 5g) og slamming (nedslag fra en bølgetop ved 3 m/s). Spændingsfordelinger gennemgås; sikkerhedsfaktor ≥ 2,5 er obligatorisk.</li>
+    <li><strong>Koncept og kravindsamling</strong> — Vi mødes med dig for at definere ryttervægt og nyttelast, hastighedsområde, vandtilstandskapacitet, transportkrav og alt særligt opgaveudstyr (dæksmonteringer, spændefæstningspositioner, tilbehørsintegration).</li>
+    <li><strong>3D-overfladekonstruktion og hydrostatisk beregning</strong> — Skrogformen modelleres i SolidWorks og kontrolleres for hydrostatisk stabilitet, volumenfordeling og opretningsarm ved hjælp af de indbyggede analyseværktøjer.</li>
+    <li><strong>Strukturel FEA</strong> — Lasttilfælde defineres: statisk (rytter + udstyr), dynamisk (bølgelandingsstød ved 5g) og grundstødning (nedslag mod en stenet kystlinje ved 3 m/s). Spændingsfordelinger gennemgås; sikkerhedsfaktor ≥ 2,5 er obligatorisk.</li>
     <li><strong>CFD-optimering af modstand</strong> — Skroget simuleres ved tre lastforhold og fem hastigheder. Vådt overfladeareal, trimvinkel og restmodstand reduceres iterativt.</li>
-    <li><strong>Designgennemgang og frigivelse</strong> — Den komplette tekniske pakke (3D-model, FEA-rapport, CFD-rapport, vægtestimat, lamineringsplan) gennemgås af vores senior marinearkitekt, før den frigives til prototypeværkstedet.</li>
+    <li><strong>Designgennemgang og frigivelse</strong> — Den komplette tekniske pakke (3D-model, FEA-rapport, CFD-rapport, vægtestimat, lamineringsplan) gennemgås af vores senioringeniør, før den frigives til prototypeværkstedet.</li>
   </ol>
 
 
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA-spændingsfordeling — Patrouilleskrog (Aluminium 5083)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA-spændingsfordeling — Touring-SUP-skrog (forstærket drop-stitch)</p>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
         <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
@@ -72,27 +72,27 @@ content_html: >
 
   <h2>Skræddersyning: dit skrog, dine regler</h2>
 
-  <p>Ingen to operatører har identiske krav. En havneovervågningsbåd har brug for et V-formet skrog med lav vinkel for stabilitet ved lav hastighed; et hurtigt interceptionsfartøj har brug for et dybt V-skrog med sprøjtelister; en dykkersupportbåd har brug for stor bredde og lav hæk. Vi tvinger
+  <p>Ingen to padlere har identiske krav. Et fiskeri-SUP har brug for et bredt, stabilt planing-skrog; et touring-board har brug for et fortrængningsskrog, der maksimerer glid; et surf-SUP har brug for reaktive rælinger og afstemt rocker. Vi tvinger
   ikke din anvendelse ind i en eksisterende skrogform. Vi designer ud fra din specifikation.</p>
 
   <p>Eksempler på nyere specialdesignede skrogprojekter:</p>
 
   <ul>
-    <li>Et forlænget 6,8 m HDPE-skrog til en caribisk tour-operator med forstærket bov til strandlandinger (+15 % bundtykkelse).</li>
-    <li>Et let aluminiums-patrouillefartøj på 7,2 m til en kystvagt med integrerede brændstoftank-skotter og afstivninger til udstyrsrum.</li>
-    <li>En glasfiberdykkebåd på 5,5 m med lav hæk og dobbelte batterikasser, designet til nem ombordstigning for snorklere.</li>
+    <li>Et touring-SUP med forlænget længde til en caribisk økotur-operatør med forstærket bov til strandlandinger (+15 % rælingstykkelse).</li>
+    <li>Et højtsynligt patrulje-SUP til en havnemyndighed med integrerede udstyringsmonteringer og taktiske rælinger.</li>
+    <li>Et ekspeditionstouring-SUP til en udlejningsflåde med forstærkede rælinger og ekstra spændefæstninger.</li>
   </ul>
 
 
   <h2>Vores ingeniører</h2>
 
-  <p>Studiet ledes af en senior marinearkitekt med 14 års erfaring med design af højhastighedsfartøjer, støttet af to maskiningeniører med speciale i FEA og CFD. Alle tre har videregående uddannelser inden for marineteknik eller marinearkitektur fra internationalt anerkendte universiteter. Teamet
-  publicerer jævnligt i branchetidsskrifter og præsenterer på konferencer som International Conference on High-Performance Marine Vehicles.</p>
+  <p>Studiet ledes af en senioringeniør med 14 års erfaring med design af højtydende boards, støttet af to maskiningeniører med speciale i FEA og CFD. Alle tre har videregående uddannelser inden for marin- eller maskinteknik fra internationalt anerkendte universiteter. Teamet
+  publicerer jævnligt i branchetidsskrifter og præsenterer på internationale konferencer om højtydende paddlesport-engineering.</p>
 
 
   <h2>Samarbejd med os om dit næste skrog</h2>
 
-  <p>Fra den første konceptskitse til den endelige spændingsrapport er vores Hull Engineering Studio din partner i at skabe en båd, der ikke bare er bygget — men konstrueret. Vi investerer simulationstimerne på forhånd, så hver svejsning, hvert laminatlag og hver skrogkurve er der af en grund.</p>
+  <p>Fra den første konceptskitse til den endelige spændingsrapport er vores Hull Engineering Studio din partner i at skabe et board, der ikke bare er bygget — men konstrueret. Vi investerer simulationstimerne på forhånd, så hver svejsning, hvert laminatlag og hver skrogkurve er der af en grund.</p>
 
   <p>Uanset om du har brug for en mindre ændring af en eksisterende model eller et helt nyt design fra bunden, er vi klar til at drøfte dine krav.</p>
 cta:

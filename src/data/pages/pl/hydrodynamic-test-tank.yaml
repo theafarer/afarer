@@ -1,6 +1,6 @@
 meta:
   title: Hydrodynamiczny zbiornik testowy — holowanie modeli i optymalizacja kadłuba | {SITE}
-  description: Zweryfikuj osiągi kadłuba w naszym hydrodynamicznym basenie testowym. Holowanie modeli w skali, analiza poślizgu i testy wydajności paliwowej. Zarezerwuj sesję testową w basenie już dziś.
+  description: Zweryfikuj osiągi kadłuba w naszym hydrodynamicznym basenie testowym. Holowanie modeli w skali, analiza poślizgu i testy efektywności ślizgu. Zarezerwuj sesję testową w basenie już dziś.
 back_text: Powrót do Centrum Badań i Rozwoju
 home_label: Dom
 hero:
@@ -10,11 +10,11 @@ hero:
   image: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp
   image_alt: Testy wydajnościowe w hydrodynamicznym zbiorniku do badań Afarer
 intro: >-
-  Powszechnym błędnym przekonaniem jest, że testy hydrodynamiczne są zarezerwowane dla statków oceanicznych. W rzeczywistości wydajność małego kadłuba ślizgowego — takiego jak 4–6 m łódź pneumatyczna — zależy od jego kształtu podwodnego tak samo, jak duży zbiornikowiec zależy od swojego bulbous bow. Kąt trymu,
-  zwilżona powierzchnia, generowanie fal i wentylacja mają dramatyczny wpływ na prędkość, zużycie paliwa i komfort jazdy. W Afarer dysponujemy dedykowanym zbiornikiem do testów hydrodynamicznych, który pozwala nam ilościowo określić te efekty w skali modelu — zanim zdecydujemy się na
-  pełnowymiarowy prototyp z metalu i włókna.
+  Powszechnym błędnym przekonaniem jest, że testy hydrodynamiczne są zarezerwowane dla statków oceanicznych. W rzeczywistości wydajność małego kadłuba ślizgowego — takiego jak nadmuchiwana deska SUP — zależy od jego kształtu podwodnego tak samo, jak duży zbiornikowiec zależy od swojego bulbous bow. Kąt trymu,
+  zwilżona powierzchnia, generowanie rozprysku i wentylacja mają dramatyczny wpływ na ślizg, prędkość i komfort jazdy. W Afarer dysponujemy dedykowanym zbiornikiem do testów hydrodynamicznych, który pozwala nam ilościowo określić te efekty w skali modelu — zanim zaangażujemy tkaninę i oprzyrządowanie w
+  pełnowymiarowy prototyp.
 content_html: >
-  <h2>Dlaczego warto przeprowadzić badania modelowe w basenie holowniczym?</h2>
+  <h2>Dlaczego warto testować deskę w basenie?</h2>
 
   <p>Badania w skali modelu (zwykle od 1:3 do 1:5) pozwalają nam szybko i ekonomicznie iterować kształt kadłuba. Tydzień w basenie może dostarczyć te same dane eksploatacyjne, które w pełnej skali wymagałyby miesięcy prób i błędów — i to za ułamek kosztów.</p>
 
@@ -49,7 +49,7 @@ content_html: >
 
 
   <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typowe wyniki badań w basenie — opór w funkcji prędkości (kadłub patrolowy, skala 1:3,5)</p>
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typowe wyniki badań w basenie — opór w funkcji prędkości (kadłub deski SUP turystycznej, skala 1:3,5)</p>
     <div class="space-y-2">
       <div class="flex items-center gap-2 text-xs">
         <span class="w-20">5 kn (1:1)</span>
@@ -100,7 +100,7 @@ content_html: >
 
   <h2>Zespół ekspertów</h2>
 
-  <p>Nasz basen obsługuje hydrodynamik z doktoratem w dziedzinie architektury okrętowej i 8-letnim doświadczeniem w basenach holowniczych w czołowym europejskim instytucie badań morskich. Wspiera go technik, który przygotowuje wszystkie modele i oprzyrządowanie. Zespół stosuje zalecane procedury
+  <p>Nasz basen obsługuje hydrodynamik z doktoratem w dziedzinie dynamiki płynów i 8-letnim doświadczeniem w basenach holowniczych w czołowym europejskim instytucie badań morskich. Wspiera go technik, który przygotowuje wszystkie modele i oprzyrządowanie. Zespół stosuje zalecane procedury
   ITTC (International Towing Tank Conference), aby zapewnić, że każde badanie jest powtarzalne, możliwe do prześledzenia i wiarygodne na arenie międzynarodowej.</p>
 
 
@@ -110,15 +110,14 @@ content_html: >
 
   <ul>
     <li><strong>Porównanie form kadłuba</strong> — Dwa lub więcej wariantów kształtu kadłuba testowanych w identycznych warunkach, co zapewnia obiektywne porównanie oporu/prędkości/stateczności, które wesprze Twoją decyzję projektową.</li>
-    <li><strong>Optymalizacja urządzeń dodatkowych</strong> — Płyty interceptorowe, listwy tryskowe, płetwy odbojowe i strugi mogą być testowane w różnych konfiguracjach, aby określić ich indywidualny wkład w redukcję oporu.</li>
-    <li><strong>Studium doboru silnika</strong> — Dane o oporze są przeliczane na krzywą prognozy mocy, co pozwala dobrać optymalną moc silnika do docelowej prędkości i ładowności.</li>
+    <li><strong>Optymalizacja elementów dodatkowych</strong> — Konfiguracje płetw, profile listew (rail) i warianty rocker mogą być testowane w różnych kombinacjach, aby określić ich indywidualny wkład w redukcję oporu.</li>
+    <li><strong>Badanie efektywności ślizgu</strong> — Dane o oporze są przeliczane na krzywą efektywności ślizgu, co pozwala wyważyć objętość kadłuba, rocker i sztywność dla docelowej prędkości wiosłowania i ładunku.</li>
   </ul>
 
 
   <h2>Dlaczego warto testować z nami?</h2>
 
-  <p>Nie przekazujemy Ci tylko zbioru surowych liczb. Nasze raporty przekształcają dane z basenu w konkretne zalecenia inżynierskie: „Podnieś listwę tryskową o 8 mm, aby zmniejszyć powierzchnię zwilżaną przy prędkości przelotowej", „Zwiększ denny wznios na pawęży o 3°, aby zmniejszyć przyspieszenie
-  podczas slammu" lub „Przesuń wzdłużny środek ciężkości o 150 mm do tyłu, aby poprawić zachowanie ślizgowe". Otrzymujesz jasne zrozumienie, co zmienić i dlaczego.</p>
+  <p>Nie przekazujemy Ci tylko zbioru surowych liczb. Nasze raporty przekształcają dane z basenu w konkretne zalecenia inżynierskie: „Dodaj 8 mm rockera dziobowego, aby zmniejszyć powierzchnię zwilżaną przy prędkości przelotowej", „Zmniejsz rocker rufowy o 3°, aby wydłużyć linię wodną przy tempie turystycznym" lub „Przesuń najszerszy punkt o 150 mm do tyłu dla lepszego utrzymywania kursu". Otrzymujesz jasne zrozumienie, co zmienić i dlaczego.</p>
 
   <p>Nasz basen jest również dostępny do niezależnych badań prowadzonych przez strony trzecie na zasadzie usług odpłatnych. Jeśli opracowujesz kadłub i potrzebujesz bezstronnej, profesjonalnie przeprowadzonej oceny hydrodynamicznej, zapraszamy do kontaktu.</p>
 cta:

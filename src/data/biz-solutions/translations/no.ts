@@ -3489,7 +3489,7 @@ const no: Record<string, SolutionOverride> = {
           description: 'Øk kundenes livstidsverdi utover tradisjonelle surfeprodukter',
           features: [
             'Kolleksjon med oppblåsbar SUP, inkludert allround-, touring-, yoga- og barnemodeller',
-            'Kolleksjon med oppblåsbare gummibåter for familier i ferskvann og saltvann',
+            'Spesialisert SUP-kolleksjon, inkludert fiske-, whitewater- og surfemodeller',
             'Vanntilbehør som tørrbager, vanntette etuier, pumper og padleårer',
             'Komplett økosystem for vannlivsstil under surfe merkevaren din',
             'Muligheter for kryssalg til eksisterende surfe kunder',

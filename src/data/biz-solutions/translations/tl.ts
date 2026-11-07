@@ -700,7 +700,7 @@ const tl: Record<string, SolutionOverride> = {
           description: 'Palakasin ang customer lifetime value nang lampas sa mga tradisyonal na surf product',
           features: [
             'Inflatable SUP collection kabilang ang all-round, touring, yoga, at kids model',
-            'Inflatable dinghy collection para sa pampamilyang water recreation',
+            'Koleksyon ng specialty SUP kabilang ang fishing, whitewater, at surf models',
             'Mga water accessory kabilang ang dry bag, waterproof case, pump, at paddle',
             'Kumpletong water lifestyle ecosystem sa ilalim ng iyong surf brand',
             'Cross-selling opportunity sa mga umiiral na surf customer',

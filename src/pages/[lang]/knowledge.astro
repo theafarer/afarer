@@ -30,7 +30,7 @@ const metadata = {
   title: `Water Exploration Knowledge — ${SITE.name}`,
   description:
     t('knowledge.metaDesc') ||
-    'Structured knowledge base on inflatable SUP technology, water safety, boat engineering, and adventure planning.',
+    'Structured knowledge base on inflatable SUP technology, water safety, SUP engineering, and adventure planning.',
 };
 const crumbs = [
   { name: t('nav.home'), href: `/${lang}/` },
@@ -41,7 +41,7 @@ const schemaData = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Afarer Water Exploration Knowledge',
-  description: 'Structured knowledge base on inflatable SUP, boat, and safety topics.',
+  description: 'Structured knowledge base on inflatable SUP and safety topics.',
   about: {
     '@type': 'Thing',
     name: 'Water Adventure Equipment',
@@ -49,9 +49,9 @@ const schemaData = {
   },
   hasPart: [
     { '@type': 'Article', name: 'SUP Knowledge', about: 'Stand-up paddle boarding guides and tutorials' },
-    { '@type': 'Article', name: 'Boat Knowledge', about: 'Inflatable SUP technical guides' },
+    { '@type': 'Article', name: 'Technical Guides', about: 'Inflatable SUP technical guides' },
     { '@type': 'Article', name: 'Safety Knowledge', about: 'Water safety and PFD guides' },
-    { '@type': 'Article', name: 'Technology', about: 'Inflatable watercraft engineering and materials' },
+    { '@type': 'Article', name: 'Technology', about: 'Inflatable SUP engineering and materials' },
   ],
   mainEntity: {
     '@type': 'ItemList',
@@ -118,7 +118,7 @@ const entityGraphData = {
       '@id': 'aqua:use-professional',
       '@type': 'schema:Audience',
       'schema:name': 'Professionals',
-      'schema:description': 'Search and rescue, patrol, commercial operators',
+      'schema:description': 'Lifeguards, rental fleets, and commercial operators',
       'aqua:recommendedProduct': [{ '@id': 'aqua:product-sup' }],
     },
   ],

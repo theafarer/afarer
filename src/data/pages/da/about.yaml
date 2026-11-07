@@ -3,7 +3,6 @@ meta:
   description: 'afarer er et globalt oppusteligt SUP- og vandsportsbrand, drevet af Aquafarer LLC (USA) og opbygget af vores Qingdao-operationsteam. Opdag vores historie, teknik, certificerede kvalitet og landepartnerprogrammer.'
   keywords:
     - 'oppusteligt sup brand'
-    - 'oppusteligt bådbrand'
     - 'vandsportsbrand'
     - 'lande-sup-distributør'
     - 'co-branded sup kollektioner'
@@ -12,8 +11,10 @@ hero:
   image:
     src: https://assets.afarer.com/images/afarer/factory/afarer-factory-building.webp
     alt: afarers fabrik og værksted
-  title: Om afarer
-  subtitle: Produktion af gummibåde, SUP og vandsportsudstyr siden 2012. CE og ISO certificeret.
+  title: |
+    Marinteknik, <br />
+    bygget på <span class="text-accent dark:text-white">afarer</span>-måden
+  subtitle: 'Vi startede i et kystnært værksted med ét board og en urokkelig overbevisning: marineprodukter skal konstrueres, som om de betyder noget – for det gør de. I dag leverer vi til over 40 lande, men hvert skrog passerer stadig gennem de samme hænder, der startede virksomheden.'
 stats:
   title: I tal
   columns: 4
@@ -28,7 +29,7 @@ stats:
       amount: '24'
 features3_what_we_build:
   title: Det, vi bygger
-  subtitle: 'Vi startede i et kystnært værksted med én båd og en urokkelig overbevisning: marineprodukter skal konstrueres, som om de betyder noget – for det gør de. I dag leverer vi til over 40 lande, men hvert skrog passerer stadig gennem de samme hænder, der startede virksomheden.'
+  subtitle: 'Vi startede i et kystnært værksted med ét bræt og en urokkelig overbevisning: marineprodukter skal konstrueres, som om de betyder noget – for det gør de. I dag leverer vi til over 40 lande, men hvert skrog passerer stadig gennem de samme hænder, der startede virksomheden.'
   columns: 3
   isBeforeContent: true
   items:
@@ -37,7 +38,7 @@ features3_what_we_build:
       icon: tabler:ship
     - title: Oppustelige SUPs
       description: PVC-oppustelige SUP-brædder fra 9 ft til 12 ft. Lette, robuste og nemme at opbevare.
-      icon: tabler:speedboat
+      icon: tabler:rowing
     - title: Premium SUP-pakker
       description: Kompakte, højspecifikke SUPs specialbygget til at matche dit brands eller din flådes krav.
       icon: tabler:crown
@@ -48,15 +49,15 @@ features3_more:
     - title: Tilbehør
       description: Padler, pumper, betræk, tørtasker og elektronik. Alt sammen afstemt med vores boards.
       icon: tabler:package
-    - title: Renovering & reparation
-      description: Intern brætreparation, udskiftning af dækpuder og opgradering af tilbehør.
+    - title: Reparation & service
+      description: Intern boardreparation, udskiftning af dækpuder og opgradering af tilbehør.
       icon: tabler:tool
     - title: Skræddersyede konstruktioner
       description: Projektbaseret design for kommercielle, videnskabelige og militære kunder.
       icon: tabler:hammer
   image:
     src: https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-2.webp
-    alt: Båddesign og teknisk udvikling
+    alt: Boarddesign og teknisk udvikling
 steps2_values:
   title: Vores værdier
   subtitle: Tre principper, der har præget ethvert produkt lige fra starten.
@@ -76,7 +77,7 @@ steps2_milestones:
   isReversed: true
   items:
     - title: Grundlagt i et kystværksted
-      description: Startet af to marinearkitekter med en CNC-fræser og en stædig idé.
+      description: Startet af to marineingeniører med en CNC-fræser og en stædig idé.
       icon: tabler:building-factory
     - title: Første 1.000 skrog leveret
       description: Vi er nu nået til vores syvende år, hovedsageligt gennem mund-til-mund-anbefalinger og tilbagevendende kunder.
@@ -100,7 +101,7 @@ brand_hub_title: Udforsk vores brand
 brand_hub_subtitle: Dyk dybere ned i vores SUP-tekniske ekspertise, globale tilstedeværelse og de principper, der driver os.
 brand_hub_cards:
   - title: Marin ekspertise
-    desc: Årtiers materialevidenskab, præcisionsproduktion og test i den virkelige verden — fra PVC/Hypalon-fremstilling til deep-V skrogdesign og drop-stitch-teknologi.
+    desc: Årtiers materialevidenskab, præcisionsproduktion og test i den virkelige verden — fra PVC-fremstilling til deep-V-skrogdesign og drop-stitch-teknologi.
     link: /brand-marine-expertise
     link_label: Lær mere →
   - title: Global tilstedeværelse

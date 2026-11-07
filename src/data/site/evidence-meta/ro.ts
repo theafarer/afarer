@@ -24,7 +24,7 @@ export const evidenceMetaRo: EvidenceMetaMap = {
   'search-rescue-sup-fleet': {
     title: 'Agenție maritimă din Asia de Sud-Est — Flotă SUP de patrulă și salvare | Afarer',
     description:
-      'O agenție maritimă guvernamentală solicita 20 de SUP-uri de patrulă și salvare cu țesătură Hypalon rezistentă la foc, suporturi integrate pentru comunicații și conformitate cu SOLAS capitolul III.',
+      'O agenție maritimă guvernamentală solicita 20 de SUP-uri de patrulă și salvare cu punți de înaltă vizibilitate, suporturi integrate pentru comunicații și construcție certificată CE.',
   },
   'european-dtc-ecommerce': {
     title: 'Brand european DTC de sporturi nautice — Linie SUP de brand + accesorii | Afarer',
@@ -53,7 +53,7 @@ export const evidenceMetaRo: EvidenceMetaMap = {
   },
   'middle-east-distributor': {
     title:
-      'Distribuitor de sporturi nautice din Orientul Mijlociu — Gamă completă de produse — SUP, bărci, accesorii | Afarer',
+      'Distribuitor de sporturi nautice din Orientul Mijlociu — Gamă completă de produse — SUP și accesorii | Afarer',
     description:
       'Un distribuitor din GCC dorea drepturi exclusive pentru întreaga gamă Afarer în 6 țări din Golf, cu ambalaj în arabă, specificații de materiale rezistente la căldură și condiții de garanție conforme sharia.',
   },
@@ -76,11 +76,6 @@ export const evidenceMetaRo: EvidenceMetaMap = {
     title: 'Uniunea sportivă universitară britanică — Flotă de club studențesc — SUP + siguranță | Afarer',
     description:
       'O universitate britanică cu un club activ de sporturi nautice trebuia să înlocuiască o flotă îmbătrânită cu SUP-uri gonflabile moderne: depozitare compactă, utilizare la orice nivel și standarde de competiție BUCS.',
-  },
-  'humanitarian-aid-project': {
-    title: 'Organizație umanitară internațională — Bărci gonflabile de salvare și ajutor | Afarer',
-    description:
-      'O organizație umanitară internațională avea nevoie de 50 de bărci gonflabile robuste pentru operațiuni de salvare la inundații în Asia de Sud-Est: ușoare pentru transport cu elicopterul și reparabile pe teren.',
   },
   'cruise-line-activity-program': {
     title: 'Operator de croaziere din Caraibe — Flotă pentru activități la bord — SUP | Afarer',

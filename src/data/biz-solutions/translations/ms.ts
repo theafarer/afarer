@@ -695,7 +695,7 @@ const ms: Record<string, SolutionOverride> = {
           description: 'Tingkatkan nilai sepanjang hayat pelanggan melangkaui produk selancar tradisional',
           features: [
             'Koleksi SUP tiup merangkumi model all-round, touring, yoga dan kanak-kanak',
-            'Koleksi bot kecil tiup untuk rekreasi air keluarga',
+            'Koleksi SUP khusus termasuk model memancing, arus deras, dan selancar',
             'Aksesori air termasuk beg kering, bekas kalis air, pam dan dayung',
             'Ekosistem gaya hidup air lengkap di bawah jenama selancar anda',
             'Peluang jualan silang kepada pelanggan selancar sedia ada',
