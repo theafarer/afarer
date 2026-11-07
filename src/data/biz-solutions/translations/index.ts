@@ -24,6 +24,7 @@ import ms from './ms';
 import hu from './hu';
 import sk from './sk';
 import bg from './bg';
+import sl from './sl';
 import type { SolutionOverride } from './fr';
 
 export type { SolutionOverride };
@@ -55,4 +56,5 @@ export const solutionTranslations: Record<string, Record<string, SolutionOverrid
   hu,
   sk,
   bg,
+  sl,
 };
