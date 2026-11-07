@@ -431,9 +431,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Partio- ja pelastus-SUP-laivasto',
     industry: 'Julkinen sektori / Meriturvallisuus',
     challenge:
-      "Valtion meriviranomainen tarvitsi 20 partio- ja pelastus-SUP-lautaa korkean näkyvyyden kansilla, integroituilla viestintäkiinnikkeillä ja CE-sertifioituna rakenteena.",
+      'Valtion meriviranomainen tarvitsi 20 partio- ja pelastus-SUP-lautaa korkean näkyvyyden kansilla, integroituilla viestintäkiinnikkeillä ja CE-sertifioituna rakenteena.',
     solution:
-      "Valmistettiin 20 SUP-lautaa sotilasluokan PVC-rakenteella, vaimoilla D-renkailla ja esiasennetuilla navigointivalopaketeilla. Tehtaan tarkastustiimi todisti meritestit. Toimitettiin täysi vaatimustenmukaisuusdokumentaatiopaketti.",
+      'Valmistettiin 20 SUP-lautaa sotilasluokan PVC-rakenteella, vaimoilla D-renkailla ja esiasennetuilla navigointivalopaketeilla. Tehtaan tarkastustiimi todisti meritestit. Toimitettiin täysi vaatimustenmukaisuusdokumentaatiopaketti.',
     result:
       'Sopimus toimitettu 4 kuukaudessa. Kalusto otettiin käyttöön raja-alueiden partioinnissa, etsinnässä ja pelastuksessa sekä kriisivasteessa 3 aluetukikohdassa.',
     outcomeMetrics: [

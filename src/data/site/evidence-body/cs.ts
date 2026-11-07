@@ -431,9 +431,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'flotila hlídkových a záchranných SUP',
     industry: 'Veřejný sektor / Námořní bezpečnost',
     challenge:
-      "Vládní námořní agentura požadovala 20 hlídkových a záchranných SUP prken s dobře viditelnými palubami, integrovanými držáky komunikačního vybavení a konstrukcí certifikovanou podle CE.",
+      'Vládní námořní agentura požadovala 20 hlídkových a záchranných SUP prken s dobře viditelnými palubami, integrovanými držáky komunikačního vybavení a konstrukcí certifikovanou podle CE.',
     solution:
-      "Vyrobili jsme 20 SUP prkek s konstrukcí z PVC vojenské kvality, těžkými D-kruhy a předinstalovanými navigačními světly. Inspekční tým závodu byl přítomen námořním zkouškám. Byl dodán kompletní balík dokumentace o shodě.",
+      'Vyrobili jsme 20 SUP prkek s konstrukcí z PVC vojenské kvality, těžkými D-kruhy a předinstalovanými navigačními světly. Inspekční tým závodu byl přítomen námořním zkouškám. Byl dodán kompletní balík dokumentace o shodě.',
     result:
       'Smlouva dodána za 4 měsíce. Flotila nasazena k hlídkování hranic, pátrání a záchranye a pomoci při katastrofách na 3 regionálních základnách.',
     outcomeMetrics: [

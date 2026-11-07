@@ -433,7 +433,7 @@ export const bodyOverrides: EvidenceBodyMap = {
     challenge:
       "Un'agenzia marittima governativa richiedeva 20 SUP da pattugliamento e soccorso con coperte ad alta visibilità, supporti di comunicazione integrati e costruzione certificata CE.",
     solution:
-      "Abbiamo prodotto 20 SUP con costruzione in PVC di grado militare, anelli D pesanti e kit di luci di navigazione preinstallati. Il team di ispezione dello stabilimento ha assistito alle prove in mare. Fornito pacchetto completo di documentazione di conformità.",
+      'Abbiamo prodotto 20 SUP con costruzione in PVC di grado militare, anelli D pesanti e kit di luci di navigazione preinstallati. Il team di ispezione dello stabilimento ha assistito alle prove in mare. Fornito pacchetto completo di documentazione di conformità.',
     result:
       'Contratto consegnato in 4 mesi. Flotta schierata per pattugliamento di frontiera, ricerca e soccorso e risposta ai disastri su 3 basi regionali.',
     outcomeMetrics: [

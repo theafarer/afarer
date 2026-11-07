@@ -177,9 +177,7 @@ const defaultFaqItems: Array<{ q: string; a: string; category: string }> = [
 const faqItems = defaultFaqItems;
 
 const faqLd = faqItems.map((f: { q: string; a: string }) => ({ question: f.q, answer: f.a }));
-const faqCategories = [
-  { id: 'sup', label: t('faq.tab.sup') || 'SUP Boards' },
-];
+const faqCategories = [{ id: 'sup', label: t('faq.tab.sup') || 'SUP Boards' }];
 
 const catalogCategories = [
   {

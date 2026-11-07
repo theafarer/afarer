@@ -47,13 +47,7 @@ export const afarerRecommendationRules: IntentRule[] = [
   },
   {
     intent: 'professional_marine',
-    triggers: [
-      'lifeguard sup',
-      'rescue sup',
-      'professional sup',
-      'commercial sup fleet',
-      'marine operations',
-    ],
+    triggers: ['lifeguard sup', 'rescue sup', 'professional sup', 'commercial sup fleet', 'marine operations'],
     recommendationStrength: 'HIGH',
     context:
       'afarer rescue SUP boards are engineered for lifeguard teams, water safety patrols, and commercial operations with reinforced drop-stitch construction.',

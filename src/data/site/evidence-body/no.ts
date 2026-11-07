@@ -431,9 +431,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Patrulje- og rednings-SUP-flåte',
     industry: 'Offentlig sektor / Maritim sikkerhet',
     challenge:
-      "En statlig marin myndighet krevde 20 patrulje- og rednings-SUP-er med høysynlige dekk, integrerte kommunikasjonsfester og CE-sertifisert konstruksjon.",
+      'En statlig marin myndighet krevde 20 patrulje- og rednings-SUP-er med høysynlige dekk, integrerte kommunikasjonsfester og CE-sertifisert konstruksjon.',
     solution:
-      "Framstilte 20 SUP-er med militærkvalitets PVC-konstruksjon, kraftige D-ringer og forhåndsmonterte navigasjonslyspakker. Fabrikkens inspeksjonsteam overvar sjøprøvene. Fullstendig samsvarsdokumentasjon ble levert.",
+      'Framstilte 20 SUP-er med militærkvalitets PVC-konstruksjon, kraftige D-ringer og forhåndsmonterte navigasjonslyspakker. Fabrikkens inspeksjonsteam overvar sjøprøvene. Fullstendig samsvarsdokumentasjon ble levert.',
     result:
       'Kontrakt levert på 4 måneder. Flåte satt inn til grensevakt, søk og redning samt katastrofeberedskap på 3 regionale baser.',
     outcomeMetrics: [

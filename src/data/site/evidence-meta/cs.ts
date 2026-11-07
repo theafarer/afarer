@@ -53,8 +53,7 @@ export const evidenceMetaCs: EvidenceMetaMap = {
       'Kanadský retailer s 25 prodejnami vyžadoval exkluzivní řadu SUP s vlastní značkou s dvojjazyčným obalem francouzština/angličtina, specifikacemi pro chladné počasí a souladem s kanadskými předpisy.',
   },
   'middle-east-distributor': {
-    title:
-      'Distributor vodních sportů na Blízkém východě — kompletní produktová řada — SUP a příslušenství | Afarer',
+    title: 'Distributor vodních sportů na Blízkém východě — kompletní produktová řada — SUP a příslušenství | Afarer',
     description:
       'Distributor se sídlem v GCC usiloval o výhradní práva na kompletní produktovou řadu Afarer v 6 zemích Perského zálivu s arabským obalem, materiály odolnými proti teplu a zárukou v souladu se šaríou.',
   },

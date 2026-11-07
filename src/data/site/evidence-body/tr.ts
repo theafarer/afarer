@@ -432,7 +432,7 @@ export const bodyOverrides: EvidenceBodyMap = {
     challenge:
       "Bir devlet deniz kurumu, yüksek görünürlüklü güvertelere, entegre iletişim bağlantılarına ve CE sertifikalı yapıya sahip 20 devriye ve kurtarma SUP'ı gerektiriyordu.",
     solution:
-      "Askeri sınıf PVC konstrüksiyon, ağır hizmet tipi D halkalar ve önceden takılılmış seyir feneri setleriyle 20 SUP üretildi. Fabrika denetim ekibi deniz denemelerine tanıklık etti. Tam uygunluk dokümantasyon paketi teslim edildi.",
+      'Askeri sınıf PVC konstrüksiyon, ağır hizmet tipi D halkalar ve önceden takılılmış seyir feneri setleriyle 20 SUP üretildi. Fabrika denetim ekibi deniz denemelerine tanıklık etti. Tam uygunluk dokümantasyon paketi teslim edildi.',
     result:
       'Sözleşme 4 ayda teslim edildi. Filo, 3 bölgesel üste sınır devriyesi, arama kurtarma ve afet müdahalesi için konuşlandırıldı.',
     outcomeMetrics: [

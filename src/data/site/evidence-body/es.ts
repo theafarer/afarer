@@ -431,9 +431,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Flota SUP de patrulla y rescate',
     industry: 'Gobierno / Seguridad marítima',
     challenge:
-      "Un organismo marítimo gubernamental necesitaba 20 SUP de patrulla y rescate con cubiertas de alta visibilidad, soportes de comunicación integrados y construcción certificada CE.",
+      'Un organismo marítimo gubernamental necesitaba 20 SUP de patrulla y rescate con cubiertas de alta visibilidad, soportes de comunicación integrados y construcción certificada CE.',
     solution:
-      "Fabricamos 20 SUP con construcción de PVC de grado militar, anillas D de servicio pesado y paquetes de luces de navegación preinstalados. El equipo de inspección de la fábrica presenció las pruebas de mar. Se entregó el paquete completo de documentación de conformidad.",
+      'Fabricamos 20 SUP con construcción de PVC de grado militar, anillas D de servicio pesado y paquetes de luces de navegación preinstalados. El equipo de inspección de la fábrica presenció las pruebas de mar. Se entregó el paquete completo de documentación de conformidad.',
     result:
       'Contrato entregado en 4 meses. Flota desplegada para patrulla fronteriza, búsqueda y rescate y respuesta ante desastres en 3 bases regionales.',
     outcomeMetrics: [

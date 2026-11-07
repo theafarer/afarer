@@ -431,9 +431,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'flota patrolowo-ratownicza SUP',
     industry: 'Sektor publiczny / Bezpieczeństwo morskie',
     challenge:
-      "Rządowa agencja morska wymagała 20 SUP-ów patrolowych i ratowniczych z pokładami o wysokiej widoczności, zintegrowanymi uchwytami na sprzęt łączności i konstrukcją certyfikowaną przez CE.",
+      'Rządowa agencja morska wymagała 20 SUP-ów patrolowych i ratowniczych z pokładami o wysokiej widoczności, zintegrowanymi uchwytami na sprzęt łączności i konstrukcją certyfikowaną przez CE.',
     solution:
-      "Wyprodukowaliśmy 20 SUP-ów z konstrukcją z PVC klasy wojskowej, mocnymi uchwytami D i fabrycznie zamontowanymi zestawami świateł nawigacyjnych. Zespół inspekcji fabryki był obecny podczas prób morskich. Dostarczono kompletny pakiet dokumentacji zgodności.",
+      'Wyprodukowaliśmy 20 SUP-ów z konstrukcją z PVC klasy wojskowej, mocnymi uchwytami D i fabrycznie zamontowanymi zestawami świateł nawigacyjnych. Zespół inspekcji fabryki był obecny podczas prób morskich. Dostarczono kompletny pakiet dokumentacji zgodności.',
     result:
       'Kontrakt zrealizowany w 4 miesiące. Flotylla wdrożona do patrolowania granic, poszukiwań i ratownictwa oraz reagowania na katastrofy na 3 regionalnych bazach.',
     outcomeMetrics: [

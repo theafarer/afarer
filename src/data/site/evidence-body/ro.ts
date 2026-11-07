@@ -430,9 +430,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Flotă SUP de patrulă și salvare',
     industry: 'Guvernamental / Securitate maritimă',
     challenge:
-      "O agenție maritimă guvernamentală a solicitat 20 de SUP-uri de patrulă și salvare cu punți de înaltă vizibilitate, suporturi de comunicații integrate și construcție certificată CE.",
+      'O agenție maritimă guvernamentală a solicitat 20 de SUP-uri de patrulă și salvare cu punți de înaltă vizibilitate, suporturi de comunicații integrate și construcție certificată CE.',
     solution:
-      "Am fabricat 20 de SUP-uri cu construcție din PVC de calitate militară, inele D rezistente și seturi de lumini de navigație preinstalate. Echipa de inspecție a fabricii a asistat la încercările pe mare. A fost livrat pachetul complet de documentație de conformitate.",
+      'Am fabricat 20 de SUP-uri cu construcție din PVC de calitate militară, inele D rezistente și seturi de lumini de navigație preinstalate. Echipa de inspecție a fabricii a asistat la încercările pe mare. A fost livrat pachetul complet de documentație de conformitate.',
     result:
       'Contract livrat în 4 luni. Flotila implementată pentru patrulare de frontieră, căutare și salvare și răspuns la dezastre pe 3 baze regionale.',
     outcomeMetrics: [

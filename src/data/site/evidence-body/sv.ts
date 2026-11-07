@@ -430,9 +430,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Patrull- och räddnings-SUP-flotta',
     industry: 'Offentlig sektor / Maritim säkerhet',
     challenge:
-      "En statlig maritim myndighet krävde 20 patrull- och räddning-SUP:ar med högsynliga däck, integrerade kommunikationsfästen och CE-certifierad konstruktion.",
+      'En statlig maritim myndighet krävde 20 patrull- och räddning-SUP:ar med högsynliga däck, integrerade kommunikationsfästen och CE-certifierad konstruktion.',
     solution:
-      "Tillverkade 20 SUP:ar med konstruktion i PVC i militärkvalitet, kraftiga D-ringar och förinstallerade navigationsljuspaket. Fabrikens inspektionsteam bevittnade sjöprövningarna. Fullständig dokumentation om regelefterlevnad levererades.",
+      'Tillverkade 20 SUP:ar med konstruktion i PVC i militärkvalitet, kraftiga D-ringar och förinstallerade navigationsljuspaket. Fabrikens inspektionsteam bevittnade sjöprövningarna. Fullständig dokumentation om regelefterlevnad levererades.',
     result:
       'Kontrakt levererat på 4 månader. Flotta sattes in för gränsbevakning, sök och räddning samt katastrofberedskap på 3 regionala baser.',
     outcomeMetrics: [

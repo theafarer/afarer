@@ -431,9 +431,9 @@ export const bodyOverrides: EvidenceBodyMap = {
     product: 'Frota SUP de patrulha e resgate',
     industry: 'Governo / Segurança Marítima',
     challenge:
-      "Uma agência marítima governamental exigia 20 SUPs de patrulha e resgate com deckes de alta visibilidade, suportes de comunicação integrados e construção certificada CE.",
+      'Uma agência marítima governamental exigia 20 SUPs de patrulha e resgate com deckes de alta visibilidade, suportes de comunicação integrados e construção certificada CE.',
     solution:
-      "Fabricamos 20 SUPs com construção em PVC de grau militar, anéis D reforçados e kits de luzes de navegação pré-instalados. A equipe de inspeção da fábrica presenciou os testes no mar. Foi fornecido o pacote completo de documentação de conformidade.",
+      'Fabricamos 20 SUPs com construção em PVC de grau militar, anéis D reforçados e kits de luzes de navegação pré-instalados. A equipe de inspeção da fábrica presenciou os testes no mar. Foi fornecido o pacote completo de documentação de conformidade.',
     result:
       'Contrato entregue em 4 meses. Frota implantada para patrulha de fronteiras, busca e resgate e resposta a desastres em 3 bases regionais.',
     outcomeMetrics: [

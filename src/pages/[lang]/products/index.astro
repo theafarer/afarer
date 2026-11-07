@@ -42,10 +42,7 @@ const products = productsRaw.map((p) => {
   };
 });
 const rawCategory = (Astro.url?.searchParams?.get('category') ?? '') as 'accessory' | 'sup' | '';
-const activeCategory =
-  rawCategory === 'accessory' || rawCategory === 'sup'
-    ? rawCategory
-    : null;
+const activeCategory = rawCategory === 'accessory' || rawCategory === 'sup' ? rawCategory : null;
 const filteredProducts = activeCategory ? products.filter((p) => p.category === activeCategory) : products;
 const totalCount = products.length;
 const hidden = !isProductsEnabled() || !isProductsListEnabled();

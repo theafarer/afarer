@@ -55,7 +55,8 @@ export const entityGraph: EntityNode[] = [
     id: 'marine-manufacturing',
     type: 'industry',
     name: 'Marine Manufacturing Industry',
-    description: 'Industry focused on design, engineering, and production of marine equipment and inflatable SUP boards.',
+    description:
+      'Industry focused on design, engineering, and production of marine equipment and inflatable SUP boards.',
     relationships: [],
   },
   {
