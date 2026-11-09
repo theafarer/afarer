@@ -27,6 +27,7 @@ import bg from './bg';
 import sl from './sl';
 import sr from './sr';
 import lt from './lt';
+import lv from './lv';
 import type { SolutionOverride } from './fr';
 
 export type { SolutionOverride };
@@ -61,4 +62,5 @@ export const solutionTranslations: Record<string, Record<string, SolutionOverrid
   sl,
   sr,
   lt,
+  lv,
 };
