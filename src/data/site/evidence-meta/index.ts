@@ -15,6 +15,19 @@ import { evidenceMetaRu } from './ru';
 import { evidenceMetaSv } from './sv';
 import { evidenceMetaTh } from './th';
 import { evidenceMetaTr } from './tr';
+import { evidenceMetaHr } from './hr';
+import { evidenceMetaHu } from './hu';
+import { evidenceMetaSk } from './sk';
+import { evidenceMetaBg } from './bg';
+import { evidenceMetaSl } from './sl';
+import { evidenceMetaSr } from './sr';
+import { evidenceMetaId } from './id';
+import { evidenceMetaHe } from './he';
+import { evidenceMetaMs } from './ms';
+import { evidenceMetaLt } from './lt';
+import { evidenceMetaLv } from './lv';
+import { evidenceMetaEt } from './et';
+import { evidenceMetaTl } from './tl';
 
 export const EVIDENCE_META_OVERRIDES: Record<string, EvidenceMetaMap> = {
   ar: evidenceMetaAr,
@@ -33,4 +46,17 @@ export const EVIDENCE_META_OVERRIDES: Record<string, EvidenceMetaMap> = {
   sv: evidenceMetaSv,
   th: evidenceMetaTh,
   tr: evidenceMetaTr,
+  hr: evidenceMetaHr,
+  hu: evidenceMetaHu,
+  sk: evidenceMetaSk,
+  bg: evidenceMetaBg,
+  sl: evidenceMetaSl,
+  sr: evidenceMetaSr,
+  id: evidenceMetaId,
+  he: evidenceMetaHe,
+  ms: evidenceMetaMs,
+  lt: evidenceMetaLt,
+  lv: evidenceMetaLv,
+  et: evidenceMetaEt,
+  tl: evidenceMetaTl,
 };

@@ -14,6 +14,19 @@ import { bodyOverrides as ruBody } from './ru';
 import { bodyOverrides as svBody } from './sv';
 import { bodyOverrides as thBody } from './th';
 import { bodyOverrides as trBody } from './tr';
+import { bodyOverrides as hrBody } from './hr';
+import { bodyOverrides as huBody } from './hu';
+import { bodyOverrides as skBody } from './sk';
+import { bodyOverrides as bgBody } from './bg';
+import { bodyOverrides as slBody } from './sl';
+import { bodyOverrides as srBody } from './sr';
+import { bodyOverrides as idBody } from './id';
+import { bodyOverrides as heBody } from './he';
+import { bodyOverrides as msBody } from './ms';
+import { bodyOverrides as ltBody } from './lt';
+import { bodyOverrides as lvBody } from './lv';
+import { bodyOverrides as etBody } from './et';
+import { bodyOverrides as tlBody } from './tl';
 import type { EvidenceBodyMap } from './types';
 
 export const EVIDENCE_BODY_OVERRIDES: Record<string, EvidenceBodyMap> = {
@@ -33,5 +46,18 @@ export const EVIDENCE_BODY_OVERRIDES: Record<string, EvidenceBodyMap> = {
   sv: svBody,
   th: thBody,
   tr: trBody,
+  hr: hrBody,
+  hu: huBody,
+  sk: skBody,
+  bg: bgBody,
+  sl: slBody,
+  sr: srBody,
+  id: idBody,
+  he: heBody,
+  ms: msBody,
+  lt: ltBody,
+  lv: lvBody,
+  et: etBody,
+  tl: tlBody,
 };
 export type { EvidenceBodyEntry, EvidenceBodyComparison, EvidenceBodyMetric } from './types';
