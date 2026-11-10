@@ -3,55 +3,60 @@ meta:
   description: 'Fra råmateriale til søklar SUP: hvert trin i afarers produktionsproces under vores kontrol, fra skæring og svejsning til testning.'
   keywords:
     - 'SUP produktionsproces'
-    - 'oppustelig SUP-fabrik'
+    - 'oppustelig SUP fabrik'
     - 'paddle board produktionstrin'
     - 'PVC-svejsning SUP'
 hero:
-  tagline: Produktionsproces
-  title: Vores produktionsproces
-  subtitle: Fra råmateriale til færdigt produkt — hvert trin er kvalitetsstyret.
+  tagline: Proces
+  title: Produktionsproces
+  subtitle: Fra råmateriale til vandklar board — hvert trin under vores kontrol
   back_label: Tilbage til fabrikken
   back_link: /factory
 intro: >-
   I modsætning til brands, der outsourcer produktionen til tredjepartsfabrikker, ejer og driver afarer hele sin produktionskæde. Denne vertikale integration gør os i stand til at opretholde streng kvalitetskontrol i alle faser, reagere hurtigt på kundetilpassede krav og levere ensartet
-  produktkvalitet batch efter batch. Sådan bygges et SUP-board hos os.
+  produktkvalitet batch efter batch. Sådan bygges et board i vores fabrik.
 steps:
   - step: '01'
-    title: Skæring
-    description: Automatiske CNC maskiner skærer præcist stoffer efter specifikationer.
+    title: Modtagelse & inspektion af materialer
+    description: >-
+      Hver indkommende batch af PVC-stof, fiberglasmatte, harpiks og beslag inspiceres i forhold til specifikationen. Stofprøver testes for trækstyrke, ensartet tykkelse og UV-bestandighed, før de frigives til produktion. Materialer, der ikke lever op til specifikationerne,
+      isoleres og returneres.
     duration: 1–2 dage
   - step: '02'
-    title: Svejsning
-    description: RF og varmluftssvejsning skaber stærke, lufttætte samlinger.
+    title: Automatisk PVC-skæring
+    description: >-
+      Godkendte stoffer lægges på den automatiske CNC-klipemaskine og klippes med sub-millimeter præcision. Computeroptimeret nesting placerer panelerne, så spildet minimeres — typisk under 5%. De klippede paneler mærkes med boardmodel og kammer og bundtes til transport til
+      svejseværkstedet.
     duration: 2–4 timer pr. boardkit
   - step: '03'
-    title: Montering
-    description: Kvalificerede teknikere monterer ventiler, tilbehør og fittings.
+    title: Varmforsegling & svejsning af rør
+    description: >-
+      Paneler hæftes og samles på varmforseglingsmaskiner med varmluftssvejsning ved kontrollerede temperaturer på 200–300 °C. Hovedsømmene forstærkes med RF-dielektrisk svejsning for lufttætte samlinger med høj styrke. Færdige kamre oppustes til 1.5× arbejdstryk for 30 minutters
+      validering af luftfasthed.
     duration: 1–2 dage pr. board
   - step: '04'
-    title: Test
-    description: Hvert produkt gennemgår tryk-, opdrifts- og inspektionstest.
-    duration: 1–2 dage pr. board
+    title: SUP-print & dekoration
+    description: >-
+      Grafik på SUP-boardets dæk påføres med digitaltryk til fotorealistiske designs i fuld farve og silketryk til holdbare logoer og gentagne mønstre. Trykkene hærdes og forsegles for UV- og slidbestandighed.
+    duration: 1–2 dage
   - step: '05'
-    title: Pakning
-    description: Produkter pakkes omhyggeligt og gøres klar til forsendelse.
-    duration: 1–2 dage
+    title: Endelig montering & udrustning
+    description: >-
+      Boards udrustes på samlebåndet med finner, ventiler, EVA-dæk og tilbehør. Hver enhed følger en 100-punkts monteringscheckliste med obligatorisk godkendelse ved hvert trin.
+    duration: 2–4 dage
   - step: '06'
-    title: Endelig samling og tilpasning
-    description: Ventiler, D-ringe, håndtag, finnekasser og dækmåtter monteres på samlebåndet. Hvert board følger en 100-punkts monteringscheckliste med obligatorisk godkendelse ved hvert trin.
-    duration: 1–2 dage
-  - step: '07'
     title: Kvalitetstest & inspektion
     description: >-
-      Hvert færdigt bræt gennemgår en obligatorisk kvalitetskontrol: lufttæthedstest af kamre, funktionstjek af beslag, verifikation af tilspændingsmoment på fastgørelser samt visuel inspektion. Skræddersyede og prototype-modeller gennemgår desuden test på vandet, der dækker stabilitet og
-      håndtering.
+      Hvert færdigt board gennemgår en obligatorisk kvalitetsport: lufttæthedstest af kamre, funktionstjek af beslag, verifikation af tilspændingsmoment på fastgørelser samt kosmetisk inspektion. Skræddersyede boards og prototyper gennemfører desuden prøver på vandet, der dækker
+      stabilitet og manøvreevne.
     duration: 1–2 dage
-  - step: '08'
+  - step: '07'
     title: Pakning & forsendelse
-    description: Boards pumpes ned, foldes efter proceduren, pakkes i kraftige vævede tasker eller detailkasser og lastes til forsendelse. Hver pakke mærkes med model, serienummer og destination. Vi koordinerer med speditører for FCL- og LCL-containersendinger over hele verden.
+    description: >-
+      Boards luftes ud, foldes efter proceduren, pakkes i kraftige vævede tasker eller krydsfinerkasser og lastes til forsendelse. Hver pakke mærkes med model, serienummer og destination. Vi koordinerer med speditører for FCL- og LCL-containersendinger over hele verden.
     duration: 1 dag
 cta:
   title: Se vores udstyr og maskiner
-  desc: Udforsk det industrielle udstyr bag hver eneste afarer SUP-board.
+  desc: Udforsk det industrielle udstyr bag hvert eneste afarer board.
   label: Se udstyret →
   link: /factory/equipment

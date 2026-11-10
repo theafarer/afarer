@@ -138,6 +138,15 @@ const UNTRANSLATABLE_TOKENS = new Set([
   'CSM',
   'DTEX',
   'NBC',
+  // Material names identical or near-identical across many locales
+  // (e.g. "PVC, drop-stitch, EVA, aluminium" is a correct translation
+  // in fr/nl/sv/no/da/pl even though it matches the English source).
+  'drop-stitch',
+  'Drop-Stitch',
+  'aluminium',
+  'Aluminium',
+  'aluminum',
+  'Aluminum',
 ]);
 
 // A comma list made only of cert/standard tokens (e.g. "ISO 9001, BSCI, CE, REACH")

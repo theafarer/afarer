@@ -1,59 +1,53 @@
 meta:
   title: 'Procesul de producție — de la materie primă la SUP | {SITE}'
-  description: 'De la materie primă la o placă de SUP gata de apă: fiecare pas al procesului de producție afarer este sub controlul nostru, de la tăiere și sudare până la testare.'
+  description: 'De la materie primă la o placă SUP gata de mare: fiecare pas al procesului de producție afarer sub controlul nostru, de la tăiere și sudare până la testare.'
   keywords:
     - 'proces de producție SUP'
-    - 'fabrica de SUP gonflabile'
-    - 'etape de producție paddle board'
+    - 'fabrică SUP gonflabile'
+    - 'etape producție paddle board'
     - 'sudare PVC SUP'
 hero:
   tagline: Proces de producție
-  title: Procesul nostru de producție
-  subtitle: De la materie primă la produs finit — fiecare pas este controlat calitativ.
+  title: Procesul de producție
+  subtitle: De la materie primă la placă gata de apă — fiecare pas sub controlul nostru
   back_label: Înapoi la fabrică
   back_link: /factory
+
 intro: >-
-  Spre deosebire de mărcile care externalizează producția către fabrici terțe, afarer deține și operează întregul lanț de producție. Această integrare verticală ne permite să menținem un control riguros al calității în fiecare etapă, să răspundem rapid cerințelor personalizate și să livrăm o
-  calitate constantă a produselor, lot după lot. Iată cum este construită o placă SUP în unitatea noastră.
+  Spre deosebire de mărcile care externalizează producția către fabrici terțe, afarer deține și operează întregul lanț de producție. Această integrare verticală ne permite să menținem un control riguros al calității în fiecare etapă, să răspundem rapid cerințelor personalizate și să livrăm o calitate constantă a produselor, lot după lot. Iată cum este construită o placă în unitatea noastră.
+
 steps:
   - step: '01'
-    title: Tăiere
-    description: Mașini CNC automate taie materialele textil cu precizie după specificații.
-    duration: 1–2 days
+    title: Recepția și inspecția materialelor
+    description: Fiecare lot intrat de țesătură PVC, mat de fibră de sticlă, rășină și accesorii este inspectat în raport cu specificațiile. Mostrele de țesătură sunt testate pentru rezistență la tracțiune, uniformitatea grosimii și rezistența la UV înainte de aprobarea pentru producție. Materialele neconforme sunt puse în carantină și returnate.
+    duration: 1–2 zile
   - step: '02'
-    title: Sudare
-    description: Sudarea RF și cu aer cald creează îmbinări puternice și etanșe.
+    title: Tăierea automată a PVC
+    description: Țesăturile aprobate sunt așezate pe mașina automată de tăiere CNC și tăiate cu precizie sub-milimetrică. Aranjarea optimizată pe calculator poziționează panourile astfel încât risipa să fie minimă — de regulă sub 5%. Panourile tăiate sunt etichetate după modelul plăcii și cameră, apoi grupate pentru transfer în atelierul de sudare.
     duration: 2–4 ore per trusă de placă
   - step: '03'
-    title: Asamblare
-    description: Tehnicieni calificați montează valve, accesorii și fittinguri.
+    title: Etanșarea termică și sudarea tuburilor
+    description: Panourile sunt fixate provizoriu și lipite utilizând mașini de etanșare termică cu sudare cu aer cald la temperaturi controlate de 200–300 °C. Custurile principale sunt consolidate prin sudare dielectrică RF pentru îmbinări etanșe și de rezistență ridicată. Camerele finalizate sunt umflate la 1.5× presiunea de lucru pentru validarea retenției de aer pe durata a 30 de minute.
     duration: 1–2 zile per placă
   - step: '04'
-    title: Testare
-    description: Fiecare produs trece prin teste de presiune, flotabilitate și inspecție.
-    duration: 1–2 zile per placă
+    title: Imprimarea și decorarea SUP
+    description: Grafica punților plăcilor SUP este aplicată prin imprimare digitală pentru designuri full-color de calitate foto și prin serigrafie pentru logo-uri durabile și modele repetitive. Imprimeriile sunt stabilizate și sigilate pentru rezistență la UV și la abraziune.
+    duration: 1–2 zile
   - step: '05'
-    title: Ambalare
-    description: Produsele sunt ambalate cu grijă și pregătite pentru expediere.
-    duration: 1–2 days
+    title: Asamblarea finală și echiparea
+    description: Plăcile sunt echipate pe linia de asamblare cu aripioare, valve, punți EVA și accesorii. Fiecare unitate urmează o listă de verificare a asamblării cu 100 de puncte, cu semnare obligatorie la fiecare etapă.
+    duration: 2–4 zile
   - step: '06'
-    title: Asamblare finală & Montaj
-    description: Supapele, inelele D, mânerele, casetele pentru aripioare și padurile de punte sunt instalate pe linia de asamblare. Fiecare placă urmează o listă de verificare a asamblării cu 100 de puncte, cu semnare obligatorie la fiecare etapă.
-    duration: 1–2 days
-  - step: '07'
     title: Testarea și inspecția calității
-    description: >-
-      Fiecare placă finalizată trece printr-un control obligatoriu de calitate: test de etanșeitate la aer al camerelor, verificarea funcționării accesoriilor, verificarea cuplului de strângere a elementelor de fixare și inspecție cosmetică. Producțiile personalizate și prototipurile beneficiază, de
-      asemenea, de teste în apă care acoperă stabilitatea și manevrabilitatea.
-    duration: 1–2 days
-  - step: '08'
-    title: Ambalare și expediere
-    description: >-
-      Plăcile sunt dezumflate și pliate conform procedurii, ambalate în saci țesuți de mare rezistență sau cutii de retail și încărcate pentru expediere. Fiecare pachet este etichetat cu modelul, numărul de serie și destinația. Coordonăm cu agențiile de transport expedierile în containere FCL și LCL
-      către toată lumea.
+    description: 'Fiecare placă finalizată trece prin controlul obligatoriu de calitate: test de etanșeitate la aer al camerelor, verificarea funcționării accesoriilor, verificarea cuplului de strângere a elementelor de fixare și inspecție cosmetică. Plăcile personalizate și prototipurile beneficiază, de asemenea, de teste în apă care acoperă stabilitatea și manevrabilitatea.'
+    duration: 1–2 zile
+  - step: '07'
+    title: Ambalarea și expedierea
+    description: Plăcile sunt dezumflate, pliate conform procedurii, ambalate în saci țesuți de mare rezistență sau lăzi de placaj și încărcate pentru expediere. Fiecare pachet este etichetat cu modelul, numărul de serie și destinația. Coordonăm cu agenții de transport expedierile în containere FCL și LCL către întreaga lume.
     duration: 1 zi
+
 cta:
   title: Vezi echipamentele și utilajele noastre
-  desc: Descoperiți echipamentele de calitate industrială din spatele fiecărei plăci SUP afarer.
+  desc: Descoperiți echipamentele de clasă industrială din spatele fiecărei plăci afarer.
   label: Vedeți echipamentele →
   link: /factory/equipment

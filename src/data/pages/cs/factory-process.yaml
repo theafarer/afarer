@@ -1,55 +1,52 @@
 meta:
   title: 'Výrobní proces — od suroviny k SUP prknu | {SITE}'
-  description: 'Od suroviny k SUP prknu připravenému na vodu: každý krok výrobního procesu afarera je pod naší kontrolou, od řezání a svařování po testování.'
+  description: 'Od suroviny k SUP prknu připravenému na moře: každý krok výrobního procesu afarera pod naší kontrolou, od řezání a svařování po testování.'
   keywords:
     - 'výrobní proces SUP'
     - 'továrna na nafukovací SUP'
     - 'kroky výroby paddleboardů'
     - 'svařování PVC SUP'
 hero:
-  tagline: Výrobní proces
-  title: Náš výrobní proces
-  subtitle: Od suroviny po hotový výrobek — každý krok je řízen kvalitou.
+  tagline: Proces
+  title: Výrobní proces
+  subtitle: Od suroviny k prknu připravenému na vodu — každý krok pod naší kontrolou
   back_label: Zpět do továrny
   back_link: /factory
-intro: >-
-  Na rozdíl od značek, které outsourcují výrobu do třetích továren, afarer vlastní a provozuje celý svůj výrobní řetězec. Tato vertikální integrace nám umožňuje udržovat přísnou kontrolu kvality v každé fázi, rychle reagovat na individuální požadavky a dodávat konzistentní kvalitu šarži za šarží.
-  Takto se SUP prkno vyrábí v našem závodě.
+
+intro: Na rozdíl od značek, které outsourcují výrobu do třetích továren, afarer vlastní a provozuje celý svůj výrobní řetězec. Tato vertikální integrace nám umožňuje udržovat přísnou kontrolu kvality v každé fázi, rychle reagovat na individuální požadavky a dodávat konzistentní kvalitu produktů šarži za šarží. Takto se prkno vyrábí v našem závodě.
+
 steps:
   - step: '01'
-    title: Řezání
-    description: Automatické CNC stroje přesně řežou tkaniny podle specifikací.
-    duration: 1–2 dní
+    title: Příjem a kontrola materiálu
+    description: Každá příchozí šarže PVC tkaniny, skelných rohoží, pryskyřice a kování se kontroluje podle specifikace. Vzorky tkaniny se před uvolněním do výroby testují na pevnost v tahu, rovnoměrnost tloušťky a odolnost vůči UV záření. Nevyhovující materiály jsou uloženy do karantény a vráceny.
+    duration: 1–2 dny
   - step: '02'
-    title: Svařování
-    description: RF a horkovzdušné svařování vytváří pevné, vzduchotěsné spoje.
+    title: Automatické řezání PVC
+    description: Schválené tkaniny se pokládají na automatický CNC řezací stroj a stříhají s přesností pod milimetr. Počítačem optimalizované rozmístění dílců minimalizuje odpad — obvykle pod 5 %. Vyříznuté dílce jsou označeny podle modelu prkna a komory, svázány do svazků a předány do svařovací dílny.
     duration: 2–4 hodiny na sadu dílů prkna
   - step: '03'
-    title: Montáž
-    description: Kvalifikovaní technici montují ventily, příslušenství a armatury.
-    duration: 1–2 dní na prkno
+    title: Tepelné těsnění a svařování trubic
+    description: Dílce se přitavují a spojují na strojích pro tepelné těsnění pomocí horkovzdušného svařování při řízených teplotách 200–300 °C. Hlavní švy jsou zesíleny dielektrickým RF svařováním pro vzduchotěsné, vysoce pevné spoje. Dokončené komory se nafouknou na 1.5× pracovního tlaku na 30minutovou validaci udržení vzduchu.
+    duration: 1–2 dny na prkno
   - step: '04'
-    title: Testování
-    description: Každý produkt prochází tlakovými, vztlakovými a kontrolními testy.
-    duration: 1–2 dní na prkno
+    title: Tisk a dekorace SUP
+    description: Grafika na palubách SUP prken se nanáší digitálním tiskem pro plnobarevné designy ve fotografické kvalitě a sítotiskem pro odolná loga a opakující se vzory. Tisky se vytvrzují a utěsňují pro odolnost vůči UV záření a oděru.
+    duration: 1–2 dny
   - step: '05'
-    title: Balení
-    description: Produkty jsou pečlivě zabaleny a připraveny k odeslání.
-    duration: 1–2 dní
-  - step: '06'
     title: Finální montáž a osazení
-    description: Ventily, D-kroužky, držadla, fin boxy a palubové podložky se montují na montážní lince. Každé prkno prochází 100bodovým montážním kontrolním seznamem s povinným podpisem v každé fázi.
-    duration: 1–2 dní
-  - step: '07'
+    description: Prkna se na montážní lince osazují ploutvemi, ventily, EVA palubami a příslušenstvím. Každé prkno prochází 100bodovým montážním kontrolním seznamem s povinným podpisem v každé fázi.
+    duration: 2–4 dny
+  - step: '06'
     title: Testování a kontrola kvality
-    description: 'Každé dokončené prkno prochází povinnou kontrolou kvality: test zadržení vzduchu v komorách, kontrola funkčnosti kování, ověření utahovacího momentu spojovacích prvků a vizuální kontrola. Zakázkové a prototypové výrobky navíc absolvují zkoušky na vodě zaměřené na stabilitu a ovladatelnost.'
-    duration: 1–2 dní
-  - step: '08'
+    description: 'Každé dokončené prkno prochází povinnou kontrolní branou kvality: test udržení vzduchu v komorách, kontrola funkčnosti kování, ověření utahovacího momentu spojovacích prvků a vizuální kontrola. Zakázkové a prototypové výrobky navíc absolvují zkoušky na vodě zaměřené na stabilitu a ovladatelnost.'
+    duration: 1–2 dny
+  - step: '07'
     title: Balení a expedice
-    description: Desky se vypustí, složí podle postupu, zabalí do pevných tkaných vaků nebo maloobchodních krabic a naloží k expedici. Každý balík je označen modelem, výrobním číslem a destinací. S přepravními společnostmi koordinujeme kontejnerové zásilky FCL a LCL po celém světě.
+    description: Prkna se vypustí, složí podle postupu, zabalí do pevných tkaných vaků nebo překližkových beden a naloží k expedici. Každý balík je označen modelem, výrobním číslem a destinací. S přepravními společnostmi koordinujeme kontejnerové zásilky FCL a LCL po celém světě.
     duration: 1 den
+
 cta:
   title: Podívejte se na naše vybavení a stroje
-  desc: Prozkoumejte průmyslové vybavení, které stojí za každým SUP prknem afarer.
+  desc: Prozkoumejte průmyslové vybavení, které stojí za každým prknem afarer.
   label: Zobrazit vybavení →
   link: /factory/equipment
