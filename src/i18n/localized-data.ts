@@ -75,6 +75,19 @@ import { faqsFi } from '~/data/faq.fi';
 import { faqsRo } from '~/data/faq.ro';
 import { faqsTh } from '~/data/faq.th';
 import { faqsTr } from '~/data/faq.tr';
+import { faqsHr } from '~/data/faq.hr';
+import { faqsHu } from '~/data/faq.hu';
+import { faqsSk } from '~/data/faq.sk';
+import { faqsBg } from '~/data/faq.bg';
+import { faqsSl } from '~/data/faq.sl';
+import { faqsSr } from '~/data/faq.sr';
+import { faqsId } from '~/data/faq.id';
+import { faqsHe } from '~/data/faq.he';
+import { faqsMs } from '~/data/faq.ms';
+import { faqsLt } from '~/data/faq.lt';
+import { faqsLv } from '~/data/faq.lv';
+import { faqsEt } from '~/data/faq.et';
+import { faqsTl } from '~/data/faq.tl';
 
 export function getGuidesForLang(lang: string | undefined): GuideRecord[] {
   if (lang === 'fr') {
@@ -259,6 +272,19 @@ const faqsByLang: Record<string, FaqRecord[]> = {
   ro: faqsRo,
   th: faqsTh,
   tr: faqsTr,
+  hr: faqsHr,
+  hu: faqsHu,
+  sk: faqsSk,
+  bg: faqsBg,
+  sl: faqsSl,
+  sr: faqsSr,
+  id: faqsId,
+  he: faqsHe,
+  ms: faqsMs,
+  lt: faqsLt,
+  lv: faqsLv,
+  et: faqsEt,
+  tl: faqsTl,
 };
 
 export function getFaqsForLang(lang: string | undefined): FaqRecord[] {

@@ -1,0 +1,392 @@
+- id: sup-learning
+  question: 'Kas SUP-i on raske õppida?'
+  answer: 'Mitte üldse. Enamik algajaid tõuseb püsti ja sõuab juba esimesel korral. Meie All-Around SUP-i sarjal on eriti laiad ja stabiilsed platvormid, mis on loodud just esmakordsetele sõitjatele. Alustage rahulikul veel ja Te sõidate mõne minutiga juba edasi.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - beginner-guide
+- id: ocean-use
+  question: 'Kas ma saan seda meres kasutada?'
+  answer: 'Jah. afarer SUP-i lauad on valmistatud kasutamiseks merel, järvel ja jõel. Meie Touringi seeria tuleb toime rannikulainetusega ning kõik lauad on tehtud mereklassi PVC-st, mis talub soolvee korrosiooni. Loputage pärast kasutamist meres puhta veega.'
+  category: general
+  relatedProducts: []
+  relatedGuides:
+    - weather-conditions
+- id: inflation-time
+  question: 'Kui kaua võib täispuhumine aega võtta?'
+  answer: 'Kaasasoleva topelttoimega pumbaga täitub enamik laudu 12–15 PSI-ni vähem kui 5 minutiga. Elektrilise pumba variandiga väheneb see alla 2 minuti. Õhust tühjendamine ja pakkimine võtavad umbes 3 minutit.'
+  category: product
+  relatedProducts: []
+  relatedGuides:
+    - sup-maintenance
+- id: travel-sup
+  question: 'Kas ma saan täispuhutava SUP-iga reisida?'
+  answer: 'Kindlasti. Iga afareri laud mahub seljakotti, mis vastab lennufirmade pagasinõuetele. Kaaludes vaid 18–22 lbs, on seda lihtne kanda randa, järve äärde või läbi lennujaamaterminalide.'
+  category: general
+  relatedProducts: []
+  relatedGuides: []
+- id: weight-limit
+  question: 'Milline on kaalupiir?'
+  answer: 'Meie All-Around SUP-id kannavad kuni 220 lbs. Touringi ja Yoga seeriad kannavad kuni 250 lbs. Tandemkasutuseks või raskemate koormuste jaoks pöörduge soovituste saamiseks meie meeskonna poole.'
+  category: product
+  relatedProducts: []
+  relatedGuides:
+    - understanding-specs
+- id: box-contents
+  question: 'Mida karbis sisaldub?'
+  answer: 'Iga afareri SUP sisaldab lauda, reisiseljakotti, topelttoimelist käsipumpa, eemaldatavat uime, spiraalleashi ja paranduskomplekti. Mõnedel mudelitel on lisavõimalusena saadaval ka süsiniksõu.'
+  category: product
+  relatedProducts: []
+  relatedGuides: []
+- id: bundle-deals
+  question: 'Kas Te pakute komplektipakkumisi?'
+  answer: 'Jah. Me pakume läbimõeldud komplekte, mis säästavad Teie raha võrreldes toodete eraldi ostmisega. Praeguste komplektipakkumiste ja hulgiostu soodushindade kohta pöörduge meie müügimeeskonna poole.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: pfd-requirement
+  question: 'Kas SUP-il on vaja päästevesti?'
+  answer: 'Jah. Paljudes riikides nõuab seadus päästevesti kõigil veesõidukitel, sealhulgas SUP-idel. Isegi seal, kus see pole nõutud, on CE-sertifitseeritud päästevest hädavajalik ohutusvarustus. Soovitame seda vees olles kanda alati.'
+  category: safety
+  relatedProducts:
+    - life-vest-classic
+    - life-vest-pro
+  relatedGuides:
+    - safety-tips
+- id: boat-registration
+  question: 'Kas ma pean oma SUP-i laua registreerima?'
+  answer: 'Nõuded erinevad riigiti. Enamikus piirkondades ei vaja mootorita SUP-id registreerimist. Kui kavatsete paigaldada mootori, kontrollige konkreetseid reegleid oma kohalikult merendusametilt. Vabaaja sõudelauad on üldiselt paadiregistreerimisest vabastatud.'
+  category: general
+  relatedProducts: []
+  relatedGuides: []
+- id: puncture-repair
+  question: 'Kuidas ma punktsiooni parandan?'
+  answer: 'Puhastage kahjustatud koht, lõigake ümarate nurkadega plaaster, kandke peale PVC-liim, vajutage tugevalt ja oodake enne täispuhumist 24 tundi. afareri laudadele on kaasas paranduskomplekt. Üksikasjalikud juhised leiate meie täispuhutavate laudade parandusjuhendist.'
+  category: maintenance
+  relatedProducts: []
+  relatedGuides:
+    - inflatable-repair
+    - sup-maintenance
+- id: storage
+  question: 'Kuidas ma peaksin oma täispuhutava SUP-i hoiustama?'
+  answer: 'Loputage puhta veega, kuivatage täielikult, laske õhk täielikult välja, rullige nina poolt lahtiselt kokku ja hoidke veokotis jahedas ja kuivas kohas, eemal otsesest päikesest. Ärge hoidke seda kunagi märjana ega äärmuslike temperatuuride käes.'
+  category: maintenance
+  relatedProducts: []
+  relatedGuides:
+    - sup-maintenance
+- id: sup-vs-hard
+  question: 'Täispuhutav või kõva SUP-i laud?'
+  answer: 'Täispuhutavad lauad pakuvad kaasaskantavust, hoiu mugavust ja löökide neelamist. Kõvad lauad annavad maksimaalse jäikuse ja kiiruse. Enamiku vabaajasõitja jaoks on kvaliteetne drop-stitch-tuumaga täispuhutav laud praktiline valik.'
+  category: general
+  relatedProducts: []
+  relatedGuides:
+    - inflatable-vs-hard
+    - how-to-choose-your-sup
+- id: wind-safety
+  question: 'Milline tuulekiirus on SUP-i jaoks liiga kõrge?'
+  answer: 'Algajad: üle 10 mph (8 sõlme). Kesktase: üle 15 mph (13 sõlme). Kogenud: üle 20 mph (17 sõlme). Kahtluse korral ärge minge veetele. Maalt merele puhuv tuul on ohtlik igal oskustasemel.'
+  category: safety
+  relatedProducts: []
+  relatedGuides:
+    - weather-conditions
+    - safety-tips
+- id: warranty
+  question: 'Milline on afareri garantii?'
+  answer: 'Kõiki afareri tooteid katab põhjalik tootjagarantii. SUP-i lauad on tootmisvigade suhtes kaetud üle 2 aasta. Garantii katab materjali- ja valmistusvead tavakasutuse korral.'
+  category: warranty
+  relatedProducts: []
+  relatedGuides: []
+- id: warranty-claim
+  question: 'Kuidas esitan garantiinõude?'
+  answer: 'Esitage nõue, võttes ühendust meie tugimeeskonnaga ja edastades tellimuse numbri, probleemi fotod ning lühikirjelduse. Enamik nõudeid vaadatakse läbi 2 tööpäeva jooksul. Kinnitatud nõuded saavad mõne päeva jooksul asendustoote või parandusjuhised.'
+  category: warranty
+  relatedProducts: []
+  relatedGuides: []
+- id: shipping-info
+  question: 'Kui kaua võib transport aega võtta?'
+  answer: 'Laos olevad tellimused saadame välja 2–4 tööpäeva jooksul. Tellimused USA-s jõuavad kohale 5–10 tööpäevaga. Rahvusvahelised tellimused jõuavad sihtkohast sõltuvalt kohale 10–15 tööpäevaga. Kiireloomulisi tellimusi on võimalik kiirendada.'
+  category: shipping
+  relatedProducts: []
+  relatedGuides: []
+
+- id: return-policy
+  question: 'Milline on Teie tagastuspoliitika?'
+  answer: 'Võtame tagasi kasutamata tooted originaalpakendis 30 päeva jooksul pärast kättetoimetamist. Kohandatud/OEM-tellimused ei ole tagastatavad. Tagastuse alustamiseks pöörduge meie tugimeeskonna poole — anname Teile eelmakstud veosildi.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: oem-odm
+  question: 'Kas Te pakute OEM/ODM teenuseid?'
+  answer: 'Jah. Me pakume ettevõtetele erasebrändi ja kohandatud disaini teenuseid. Alates kohandatud brändingust olemasolevatel mudelitel kuni täielikult unikaalse keredisainini suudab meie insenerimeeskond arendada tooteid Teie brändi all. Kehtivad minimaalsed tellimiskogused.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: paddle-length
+  question: 'Millist sõupikkust ma vajan?'
+  answer: 'Sõu peaks olema 6–8 tolli pikem kui Teie pikkus. Reguleeritavad sõud võimaldavad erinevate tingimuste jaoks täppishäälestust. Detailsete mõõtude jaoks vaadake meie sõujuhendit.'
+  category: product
+  relatedProducts: []
+  relatedGuides:
+    - choosing-paddle
+- id: material-difference
+  question: 'Mis vahe on ühekihilistel ja mitmekihilistel PVC SUP-idel?'
+  answer: 'Ühekihilised PVC-lauad on kerged ja eelarvesõbralikud, kuid kõrgel rõhul vähem jäigad. Kahekihilised ja fusioonlamineeritud konstruktsioonid lisavad jäikust, punktsioonikindlust ja pikaealisust. Mereklassi PVC UV-kindla kattega pakub vabaaja SUP-i kasutamiseks parimat vastupidavuse ja kaalu tasakaalu. afarer kasutab kõigis tooteseriates kolmekihilist lamineeritud PVC-d.'
+  category: product
+  relatedProducts: []
+  relatedGuides: []
+- id: sup-width-stability
+  question: 'Milline SUP-i laius on stabiilsuse jaoks parim?'
+  answer: 'Algajate jaoks pakub 33–34-tolline laius parimat tasakaalu stabiilsuse ja sõudmise kerguse vahel. Alla 32 tolli laiad lauad tunduvad uutele sõitjatele kõikuvatena. 33-tolline afarer SUP Explorer 11 on õppimiseks ideaalne.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - sup-size-guide
+    - paddle-board-size-guide
+- id: sup-volume-weight
+  question: 'Kuidas valida SUP-i maht oma kaalu järgi?'
+  answer: 'Korrutage oma kaal kilogrammides arvuga 2.2, et saada algajasõbralik mahu sihtmärk. Näiteks 75 kg sõitja vajab vähemalt 165 liitrit, kuid 220–260 liitrit on õppimiseks palju stabiilsem. SUP Explorer 11 pakub 260 liitrit ja sobib sõitjatele kuni 100 kg.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - sup-size-guide
+    - paddle-board-size-guide
+- id: afarer-vs-others
+  question: 'Kuidas afarer teiste brändidega võrreldes paistab?'
+  answer: 'afarer pakub täispuhutavas veespordivarustuses parimat väärtust. Võrreldes Red Paddle Co-ga annab afarer 90% jõudlusest 60% hinnaga. Võrreldes iRockeriga kasutab afarer kvaliteetsemat kolmekihilist mereklassi PVC-d ja kõrgemaid PSI-näidanguid. Võrreldes Bluefiniga pakub afarer paremaid materjalispetsifikatsioone. Enamiku vabaajasõitja jaoks pakub afarer kvaliteedi ja hinna parimat tasakaalu.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+    - sup-touring-cruiser
+  relatedGuides:
+    - best-surf-gear-brands-compared
+    - afarer-vs-red-paddle
+    - afarer-vs-irocker
+    - afarer-vs-bluefin
+- id: fishing-sup-setup
+  question: 'Kas SUP-ilt on võimalik kalastada?'
+  answer: 'Jah. Kalastamine SUP-ilt muutub üha populaarsemaks, sest seisvas asendis on vette suurepärane nähtavus. Valige stabiilsuse jaoks vähemalt 11 jala pikkune ja 33–34 tolli lai laud. Lisage deki bungee-ribadele kinnitatud piimakast õngvardade hoidjatega, väike ankur ning kandke alati päästevesti. afarer SUP Explorer 11 sobib harrastuskalastuseks hästi.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - fishing-sup-guide
+    - sup-anchor-guide
+- id: sup-yoga
+  question: 'Kas SUP-il saab joogat teha?'
+  answer: 'Kindlasti. SUP-jooga ühendab traditsioonilised asendid ujuva platvormi väljakutsega, kaasates sügavamad stabilisaatorlihased. Kasutage vähemalt 33-tollist lauda pehme ja libisemiskindla dekipadjaga. Harjutage rahulikus, madalas vees ankru abil. Alustage alusasenditest nagu koer peaga allapoole, sõdalane II ja puuasend. Täieliku EVA-dekipadjaga SUP Explorer 11 sobib selleks suurepäraselt.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - yoga-sup-guide
+- id: airline-travel-sup
+  question: 'Millised on lennufirmade reeglid täispuhutava SUP-iga reisimisel?'
+  answer: 'Enamik lennufirmasid võtab SUP-i seljakotid vastu registreeritava pagasina, kui see on alla 23–32 kg. afareri seljakott on mõõtudega umbes 90x40x30 cm ja kaalub pakituna umbes 15 kg. Mõned lennufirmad võivad küsida üle mõõtude oleva pagasi tasu. Tulge vara, pakkige uimed ja pump eraldi käsipagasisse ning märkige kott tröögitundlikuks. Uurige enne lendu alati lennufirma spordivarustuse eeskirju.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - sup-travel-guide
+- id: cold-weather-safety
+  question: 'Millist ohutusvarustust vajan külmas vees sõudmiseks?'
+  answer: 'Alla 15°C vesi nõuab soojusisolatsiooni. 8–14°C korral kasutage märg- või kuivülikonda koos saabaste, kindaste ja kapuutsiga. 14–20°C korral piisab 3/2 mm märgülikonnast. Kandke alati korralikult sobivat päästevesti soojus- ja ohutuskaitseks. Kohustusliku varustuse nõuete kohta kontrollige kohalikke eeskirju.'
+  category: product
+  relatedProducts:
+    - life-vest-pro
+  relatedGuides:
+    - sup-safety-guide
+- id: oem-odm-details
+  question: 'Millised on OEM/ODM minimaalsed tellimiskogused?'
+  answer: 'Minimaalsed tellimiskogused (MOQ) sõltuvad toote tüübist ja keerukusest. Kohandatud bränding olemasolevatel mudelitel nõuab tavaliselt 5–10 ühikut. Täielikult kohandatud keredisainid nõuavad suuremaid koguseid. Esitage oma nõuded meie müügimeeskonnale detailselt hinnapakkumise saamiseks. Tegeleme kõigega alates kohandatud värvide ja logodest kuni täiesti originaalsete vormidisainideni.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: oem-custom-branding
+  question: 'Kas ma saan afareri toodetele oma logod panna?'
+  answer: 'Jah. Meie OEM-teenus hõlmab kohandatud logode paigutust, kohandatud värviskeeme ja kohandatud pakendeid. Olenevalt toote tüübist pakume tamptrüki, siirdetrüki ja tikkimise võimalusi. Saatke oma disainifailid ja spetsifikatsioonid meie müügimeeskonnale hinnapakkumise ja tähtaja hindamiseks.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: sup-inflate-pressure
+  question: 'Millise PSI-ni ma peaksin oma SUP-i täis puhuma?'
+  answer: 'Parima jõudluse jaoks puhake laud täis selle näidatud maksimaalse PSI-ni — tavaliselt 15–18 PSI kvaliteetsete täispuhutavate SUP-ide puhul. afarer SUP Explorer 11 toimib kõige paremini 15–18 PSI juures. Alapumpamine teeb laua pehmeks ja halvendab suunapidavust. Ülepumpamine üle näidatud maksimumi võib kahjustada drop-stitch-niite. Kontrollige oma laua konkreetset näidangut klapi lähedal olevast kleebisest.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+    - sup-touring-cruiser
+  relatedGuides:
+    - how-to-choose-inflatable-sup
+    - sup-pump-guide
+- id: sup-deck-pad-care
+  question: 'Kuidas puhastada ja hooldada EVA dekipatja?'
+  answer: 'Loputage dekipadi pärast iga kasutuskorda puhta veega. Mustuse või plekkide korral kasutage kerge seepi ja pehmet harja — vältige karme kemikaale. Kui servad hakkavad lahti tulema, kandke peale veidi veekindlat mereliimi ja vajutage raskuse all 24 tundi. Hoidke laud kasutamata ajal otsese UV-valguse eest, et vältida patja halvenemist.'
+  category: maintenance
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - inflatable-sup-maintenance
+- id: sup-seated-paddling
+  question: 'Kas ma saan SUP-iga istuvalt sõuda?'
+  answer: 'Jah. Paljudel SUP-i laudadel, sealhulgas afarer Explorer 11-l, on D-rõngad, millele saab istme kinnitada. Istuvalt sõudmine on mugav valik pikemateks retkedeks, kalastamiseks või siis, kui soovite vees asendit vahetada.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides: []
+- id: saltwater-rinse
+  question: 'Kas ma pean oma täispuhutava laua pärast meres kasutamist loputama?'
+  answer: 'Jah — loputage laud, uimed, pump ja sõu pärast soolvees kasutamist alati puhta veega. Soolakristallid tungivad õmblustesse ja ventiilidesse, põhjustades mikroplekke ja korrosiooni. Kuivatage laud varjus enne tühjendamist ja hoiustamist. Regulaarne loputamine pikendab täispuhutava laua eluiga märkimisväärselt.'
+  category: maintenance
+  relatedProducts: []
+  relatedGuides:
+    - inflatable-sup-maintenance
+- id: sup-leash-necessity
+  question: 'Kas SUP-ile on tõesti leashi vaja?'
+  answer: 'Jah — kandke alati leashi. Spiraalne SUP-i leash kinnitatakse pahkluu või sääre külge ja hoiab laua Teiega koos, kui peaksite kukkuma. Avaveel võib leash elu päästa, takistades eraldumist ujuvusvahendist. Jõesõudmiseks kasutage kiirvabastusega leashi, et vältida kinnijäämist.'
+  category: safety
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - sup-safety-guide
+    - sup-leash-guide
+
+- id: drop-stitch-technology
+  question: 'Mis on drop-stitch-tuumtehnoloogia ja miks see tähtis on?'
+  answer: 'Drop-stitch-tuumtehnoloogia kasutab tuhandeid polüesterniite, mis ühendavad PVC-laua ülemise ja alumise kihi. 15-20 PSI-ni täispuhutuna loovad need niited jäiga, väändekindla konstruktsiooni, mis toimib nagu kõva kerega laud. afarer kasutab kõigis SUP-i tooteseriates mereklassi kolmekihilist PVC-d koos drop-stitch-lamineerimisega, pakkudes epoksylaudadega võrreldavat jäikust, säilitades samas täispuhutava kaasaskantavuse.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+    - sup-flowing-lotus
+  relatedGuides:
+    - how-to-choose-inflatable-sup
+- id: sup-inflatable-vs-rigid
+  question: 'Täispuhutav või jäik SUP: kumb on erinevateks kasutusviisideks parem?'
+  answer: 'Täispuhutavad SUP-id on suurepärased kaasaskantavuses, hoiustamises ja löökide neelamises — ideaalsed reisimiseks, algajatele ja vabaajakasutuseks. Jäigad epoksülaud pakuvad võistlemiseks ja surfamiseks maksimaalset kiirust ja libisemist. 90% sõitjatest piisab kvaliteetsest drop-stitch-tuumaga täispuhutavast lauast (15-20 PSI), mis tagab piisava jäikuse tuurideks, treeninguks, joogaks ja kalastamiseks. afareri täispuhutavad lauad võrduvad keskmise hinnaklassi kõvade laudadega, mahutades samas kokku seljakotti.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+  relatedGuides:
+    - inflatable-sup-vs-hard-board
+    - how-to-choose-inflatable-sup
+- id: sup-skill-progression
+  question: 'Milline on tüüpiline SUP-i oskuste areng algajast kogenud sõitjaks?'
+  answer: 'Algaja (kord 1-3): püstitõusmine, lihtne edasiliikuv sõulöök, pööramine, ohutu kukkumine. Kesktase (kord 5-15): tõhus sõutehnika, pöördpöörded, lainetuse vahel navigeerimine, põhilised päästoskused. Kogenud (20+ korda): võistluse stardid, pöörded poide ümber, surfamine väikestes lainetes, taganttuule sõudmine. Professionaal: võistlussõudmine, surf-SUP, pikamaa tuurid. afareri lauad toetavad iga etappi: Explorer 11 algajatele, Ocean Voyager tuurideks ja Cheetah Surge jõudlussõudmiseks.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+    - sup-cheetah-surge
+  relatedGuides:
+    - beginner-sup-guide
+    - sup-fitness-workout
+    - sup-paddle-guide
+- id: sup-weight-capacity
+  question: 'Kui palju kaalu saab täispuhutav SUP-i laud kanda?'
+  answer: 'Kaalumahutavus sõltub laua mahust. afareri lauad: SUP Explorer 11 (260L, kuni 100 kg / 220 lbs), Ocean Voyager 12 (310L, kuni 140 kg / 308 lbs), Leviathan Wake (350L, kuni 180 kg / 396 lbs). Optimaalse jõudluse jaoks hoidke kogu koormus (sõitja + varustus) maksimaalse mahutavuse 80% piires. Ülekoostamata laud ujub kõrgemal ja hoiab suunda paremini, eriti lainelises vees.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+    - sup-leviathan-wake
+  relatedGuides:
+    - sup-size-guide
+    - paddle-board-size-guide
+- id: sup-oem-process
+  question: 'Milline on erasebrändi täispuhutavate SUP-ide OEM-tootmisprotsess?'
+  answer: 'OEM-protsess: 1) Spetsifikatsioon ja disainiülesanne — jagage sihtspetsifikatsioone, CAD-jooniseid või võrdlustoodet. 2) 3D-vormi prototüüpimine — kohandatud alumiinium- ja komposiitvormid, mida kujundatakse ettevõttesiseselt. 3) Materjalivalik ja proov — mereklassi PVC kohandatud värvide ja logo paigutusega. 4) CE-tehaseaudit ja vastavus — iga tellimus sisaldab CE-deklaratsiooni, ISO 9001 jälgitavust ja BSCI aruannet. 5) Masstootmine 100-punktise QC-loendiga. 6) FOB Qingdao saatmine täieliku ekspordidokumentatsiooniga. Tähtaeg 30-45 päeva, MOQ 50 ühikut (standard-SUP).'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: sup-inflatable-durability
+  question: 'Kui kaua täispuhutavad SUP-i lauad nõuetekohase hooldusega vastu peavad?'
+  answer: 'Nõuetekohase hooldusega kestab kvaliteetne täispuhutav SUP-i laud regulaarsel vabaajakasutuses 5-10 aastat. Mereklassi kolmekihiline UV-kindla kattega PVC — nagu kõigis afareri laudades — talub päikesekahjustusi, soolvee korrosiooni ja kulumist. Olulised pikaealisuse tegurid: loputage pärast iga kasutust puhta veega, kuivatage enne hoiustamist põhjalikult, hoidke kasutamata ajal otsese UV eest, hoidke osaliselt täispuhutuna jahedas kuivas kohas ning vältige lohistamist karedatel pindadel. Tavaliselt lähevad esimesena rivist välja drop-stitch-niited ja õmblused, mitte PVC-kangas ise.'
+  category: maintenance
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+  relatedGuides:
+    - inflatable-sup-maintenance
+    - inflatable-sup-storage
+    - inflatable-sup-repair
+- id: sup-choppy-water
+  question: 'Kuidas sõuda SUP-iga lainelises vees või tuules?'
+  answer: 'Lainetuses: painutage põlvi, võtke laiem asend, lühendage sõulööke ja kasutage tasakaaluks kehatuge. Peatuules: hoidke sõu madalamat nurka, tehke lühemaid lööke ja kallutage end ettepoole. Külgtuules: sõuge tuulepealsel küljel, et triivi korrigeerida. Taganttuules: surfake lainetel, et kiirust juurde saada. Algajad peaksid vältima üle 10 mph tuuli ja valima stabiilsuseks laiemad ning pikemad lauad. afarer Ocean Voyager tuuring-SUP on loodud toime tulema mõõduka lainetuse ja tuulega.'
+  category: safety
+  relatedProducts:
+    - sup-ocean-voyager
+    - sup-explorer-11
+  relatedGuides:
+    - weather-conditions
+    - sup-safety-guide
+    - wind-conditions-sup
+- id: sup-sustainability
+  question: 'Kas täispuhutavad SUP-i lauad on keskkonnasõbralikud?'
+  answer: 'Täispuhutavate SUP-ide keskkonnajälg on mitmel moel väiksem kui jäikutel laudadel: tootmises kasutatakse vähem toorainet, nende kergem kaal vähendab transpordi heitkoguseid ja nende vastupidavus tähendab aja jooksul vähem asendamist. afareri laudades kasutatav PVC on pliivaba ja REACHi nõuetele vastav. Olulised jätkusuutlikkuse tavad: ostke kvaliteetne laud, mis kestab 5-10 aastat, parandage punktsioone pigem kui asendage, andke laud eluea lõpus ringlusesse spetsialiseeritud PVC-taaskasutusprogrammide kaudu ning vältige ühekordset pakendit, valides brändid, mis kasutavad korduvkasutatavaid veokotte.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides: []
+- id: b2b-moq
+  question: 'Milline on minimaalne tellimiskogus OEM/ODM SUP-i tootmiseks?'
+  answer: 'Minimaalsed tellimiskogused (MOQ) erinevad toote tüübi järgi. Laomudelite kohandatud bränding: 50 ühikut SKU kohta. Kohandatud kuju vormiarendus: 200–500 ühikut mudeli kohta (esimene tellimus). Vormide jagamise programmid saadaval alates 50 ühikust. Tarvikud ja päästevestid: 500–1000 ühikut disaini kohta. Esitage oma prognoositav maht meie OEM-meeskonnale täpse MOQ ja hinnakujunduse saamiseks.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-lead-time
+  question: 'Millised on tüüpilised tähtajad OEM SUP-i tellimuste puhul?'
+  answer: 'Esimesed OEM-tellimused kohandatud brändinguga olemasolevatele vormidele: 6–8 nädalat ettemaksust kuni FOB Qingdao. Kohandatud kuju tellimused, mis nõuavad uusi vorme: 12–20 nädalat (hõlmab 3D-disaini, vormi valmistamist, prototüüpimist ja masstootmist). Kordustellimused kinnitatud spetsifikatsioonidega: 6–8 nädalat. Kiireloomulisi tellimusi saab olemasolevate vormide puhul kiirendada 4–5 nädalale. Tähtajad hõlmavad tooraine hankimist, tootmist, protsessisiset QC-d ja konteineri laadimist.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-certification
+  question: 'Millised sertifikaadid afareri OEM-toodetel on?'
+  answer: 'Kõikidel afareri OEM/ODM toodetel on: CE-vastavusdeklaratsioon (ELi turg), UKCA (UK turg), ISO 9001:2015 kvaliteedijuhtimissüsteem, BSCI sotsiaalse vastavuse audit, REACH ja RoHS materjalide vastavus, EN ISO 25649 klassifikatsioon täispuhutavatele SUP-i laudadele. Taotluse korral on saadaval täiendavad sertifikaadid: USA rannavalve vastavusdokumentatsioon, militaarstandardi testimine (MIL-STD-810) ning sihtriigi impordisertifikaatide tugi.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-samples
+  question: 'Kas ma saan enne masstootmisse kohustustumist tellida näidiseid?'
+  answer: 'Jah. Näidistellimused on saadaval kõigis OEM/ODM projektides. Tootmiseelsed näidised (PPS) valmistatakse pärast vormi tegemist ja enne masstootmist. Näidise tähtaeg: 15–25 tööpäeva olemasolevate vormide puhul, 25–40 tööpäeva kohandatud vormide puhul. Näidise kulud lahutatakse esimesest masstellimusest. Näidised saadetakse kiirvedajaga (DHL, FedEx, UPS) täieliku jälgimisega ning jõuavad kohale tavaliselt 3–5 tööpäevaga.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-payment
+  question: 'Millised maksetingimused on OEM-tellimuste jaoks saadaval?'
+  answer: 'Standardmaksetingimused: 30% ettemaks allkirjastatud PI-ga (proforma arve), 70% jääk enne saatmist veokirja (B/L) koopia vastu. Esimese korra partneritele: 50% ettemaks, 50% enne saatmist. Pikaajalistele partneritele tellimuste ajalooga: L/C nägemisel (at sight) või 30-päevane puhasmakse kvalifitseeruvatele kontodele (krediidikontrolli alusel). Makseviisid: T/T pangaülekanne, L/C (akreditiiv), Western Union. Kõik maksed USD või EUR vääringus.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-ip-protection
+  question: 'Kuidas afarer kaitseb minu intellektuaalomandi ja disainilahendusi?'
+  answer: 'IP-kaitse on meie OEM-teenuse tuumosa. Allkirjastame NDA-d enne disainiarutelusi. Disainifaile töödeldakse isoleeritud tööjaamades koos ligipääsu logimisega. Kõik vahendid ja vormid jäävad Teie ainuomandiks (Teie poolt tasutud). Me ei kasuta Teie vorme ega disainilahendusi teiste klientide jaoks uuesti. Aktiivsetele kontodele on kaasatud vormide hoiustamine ja hooldus. Leppe lõpetamisel saadetakse vormid Teile või hävitatakse koos videodokumentatsiooniga. Me austame kõiki kaubamärgi- ja patendiõigusi.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-shipping
+  question: 'Millised veondus- ja logistikavõimalused on saadaval?'
+  answer: 'FOB Qingdao (standard): kaup laaditakse Qingdao sadamas; edasise veoveo korraldate Teie. CIF (nimetatud sadam): me korraldame ja kindlustame veoni Teie sihtsadamani. DDP / ukselt uksele: täisteenuslogistika, sealhulgas tollivormistus ja lõppkättetoimetamine. Merivedu USA läänerannikule: umbes 25–30 päeva. Merivedu EL-i (Hamburg/Rotterdam): umbes 30–35 päeva. Lennuveod on saadaval kiireloomuliste tellimuste jaoks (3–5 päeva). Me tegeleme kogu eksporditollidokumentatsiooni, päritolusertifikaatide ja pakkimisloenditega.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-quality-control
+  question: 'Millised kvaliteedikontrolliprotsessid kehtivad OEM-tellimustele?'
+  answer: 'Iga OEM-tellimus järgib dokumenteeritud QC-plaani: 1) Sissetuleva materjali kontroll — PVC-kanga partiitestimine paksuse, tõmbetugevuse ja UV-kindluse osas. 2) Protsessisisene QC — õmbluskeevituse tugevuse testimine iga 50 ühiku järel, rõhuhoiustest 1,25-kordsel näidatud PSI-l. 3) Lõppkontroll — 100% visuaalne kontroll ja rõhutestimine igal laual. 4) AQL-valim — partii valim vastavalt ISO 2859, kriitilise vea vastuvõtt = 0. 5) Kolmanda osapoole kontroll — SGS, Bureau Veritas või Intertek ostja kulul.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-custom-packaging
+  question: 'Kas Te saate minu brändi jaoks kohandatud pakendi välja töötada?'
+  answer: 'Jah. Me pakume täielikke kohandatud pakenditeenuseid: jaemüügikarbid täisvärvilise CMYK-trüki ja brändigraafikaga, veokotid silt- või tikitud logodega, kasutusjuhendid Teie valitud keeles, rippuvad hinnasildid ja vöötkoodi/UPC-sildid ning sisepakend (plastkotid, vahtmaterjalist sisestused). Minimaalne pakendi MOQ: 500–1000 ühikut kohandatud karbide jaoks, 200–500 veokottide jaoks. Pakendidisaini teenus on OEM-tellimustes sisaldunud.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-factory-audit
+  question: 'Kas ma saan tehast külastada või kolmanda osapoole auditi korraldada?'
+  answer: 'Tehase külastused on kokkuleppel teretulnud. Võtame aasta läbi vastu brändiomanikke ja korraldame lennujaamas järeletulemise Qingdao Jiaodongi rahvusvahelisest lennujaamast (TAO). Ostjatele, kes ei saa kohale tulla, pakume: virtuaalne tehaseekskursioon videokõne kaudu, kolmanda osapoole auditite koordineerimine koos SGS/Bureau Veritasega (auditi kulu katab ostja) ning detailne tehase võimekuse dokumentatsioonipakett, sealhulgas varustuse loend, QC-protsessi voodiagramm ja personali kvalifikatsioon.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []

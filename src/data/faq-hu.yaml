@@ -1,0 +1,390 @@
+- id: sup-learning
+  question: 'Nehéz megtanulni a SUP-ot?'
+  answer: 'Egyáltalán nem. A legtöbb kezdő már az első alkalom során feláll és evezni kezd. All-Around SUP szériánk extra széles, stabil felületekkel rendelkezik, amelyeket kifejezetten első alkalommal evezőknek terveztek. Kezdje nyugodt vízen, és percek alatt már könnyedén siklik majd.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - beginner-guide
+- id: ocean-use
+  question: 'Használhatom az óceánban?'
+  answer: 'Igen. Az afarer SUP táblák óceáni, tavaki és folyói használatra készültek. Touring szériánk jól birja a parti hullámverést, és minden tábla tengeri minőségű PVC-ből készül, amely ellenáll a sósvízi korróziónak. Óceáni használat után öblítse le édesvízzel.'
+  category: general
+  relatedProducts: []
+  relatedGuides:
+    - weather-conditions
+- id: inflation-time
+  question: 'Mennyi ideig tart a felfújás?'
+  answer: 'A mellékelt kétállású szivattyúval a legtöbb tábla 5 perc alatt 12–15 PSI-re fújható fel. Villamos szivattyús opcióunk ezt 2 perc alá rövidíti. A leeresztés és becsomagolás körülbelül 3 percet vesz igénybe.'
+  category: product
+  relatedProducts: []
+  relatedGuides:
+    - sup-maintenance
+- id: travel-sup
+  question: 'Utazhatom felfújható SUP-pal?'
+  answer: 'Természetesen. Minden afarer tábla hátizsák méretű hordtáskába csomagolható, amely megfelel a légitársaságok poggyászszabványainak. Mindössze 18–22 lbs súlyával könnyen elvihető a partra, a tóhoz, vagy a repülőtéri terminálokon keresztül.'
+  category: general
+  relatedProducts: []
+  relatedGuides: []
+- id: weight-limit
+  question: 'Mekkora a maximális terhelés?'
+  answer: 'All-Around SUP tábláink legfeljebb 220 lbs terhelést bírnak el. A Touring és Yoga szériák legfeljebb 250 lbs-ig terhelhetők. Tandem használat vagy nagyobb terhelés esetén forduljon csapatunkhoz ajánlásért.'
+  category: product
+  relatedProducts: []
+  relatedGuides:
+    - understanding-specs
+- id: box-contents
+  question: 'Mit tartalmaz a csomag?'
+  answer: 'Minden afarer SUP tartalmazza a táblát, egy utazó hátizsákot, kétállású kézi szivattyút, leszerelhető uszonyt, spirál biztonsági kötelet (coil leash) és javítókészletet. Néhány modellhez opcióként szénszálas evezőre történő frissítés is elérhető.'
+  category: product
+  relatedProducts: []
+  relatedGuides: []
+- id: bundle-deals
+  question: 'Kínálnak csomagajánlatokat?'
+  answer: 'Igen. Gondosan összeállított csomagajánlatainkkal pénzt takaríthat meg a külön-külön történő vásárláshoz képest. Az aktuális csomagpromóciókért és mennyiségi kedvezményes árazásért forduljon értékesítési csapatunkhoz.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: pfd-requirement
+  question: 'Szükségem van mentőmellényre a SUP-on?'
+  answer: 'Igen. Sok joghatóságban törvényileg kötelező a mentőmellény minden vízi járművön, beleértve a SUP-okat is. Ott is, ahol nem kötelező, a CE-tanúsítvánnyal rendelkező mentőmellény alapvető biztonsági felszerelés. Javasoljuk, hogy a vízen mindig viselje.'
+  category: safety
+  relatedProducts:
+    - life-vest-classic
+    - life-vest-pro
+  relatedGuides:
+    - safety-tips
+- id: boat-registration
+  question: 'Be kell-e jegyeztetnem a SUP táblámat?'
+  answer: 'Az előírások joghatóságonként eltérnek. A legtöbb régióban a motor nélküli SUP-ok nem igényelnek regisztrációt. Ha motort kíván felszerelni, érdeklődjön a helyi tengerészeti hatóságnál a konkrét szabályokról. A szabadidős evezős táblák általában mentesülnek a csónakregisztráció alól.'
+  category: general
+  relatedProducts: []
+  relatedGuides: []
+- id: puncture-repair
+  question: 'Hogyan javíthatok ki egy defektet?'
+  answer: 'Tisztítsa meg a területet, vágjon ki lekerekített sarkú foltot, vigyen fel PVC ragasztót, nyomja erősen rá, és várjon 24 órát a felfújás előtt. Az afarer táblákhoz javítókészlet tartozik. Részletes útmutatásért tekintse meg felfújható táblás javítási útmutatónkat.'
+  category: maintenance
+  relatedProducts: []
+  relatedGuides:
+    - inflatable-repair
+    - sup-maintenance
+- id: storage
+  question: 'Hogyan tároljam a felfújható SUP-omat?'
+  answer: 'Öblítse le édesvízzel, szárítsa meg teljesen, eresztse le teljesen, tekerje lazán az orrtól kezdve, és tárolja a hordtáskában hűvös, száraz helyen, közvetlen napfénytől védetten. Soha ne tárolja nedvesen vagy szélsőséges hőmérsékleten.'
+  category: maintenance
+  relatedProducts: []
+  relatedGuides:
+    - sup-maintenance
+- id: sup-vs-hard
+  question: 'Felfújható vagy kemény SUP tábla?'
+  answer: 'A felfújható táblák hordozhatóságot, kényelmes tárolást és ütéscsillapítást kínálnak. A kemény táblák maximális merevséget és sebességet nyújtanak. A legtöbb szabadidős felhasználó számára a drop-stitch maggal rendelkező, minőségi felfújható tábla a gyakorlatias választás.'
+  category: general
+  relatedProducts: []
+  relatedGuides:
+    - inflatable-vs-hard
+    - how-to-choose-your-sup
+- id: wind-safety
+  question: 'Mekkora szélsebesség már túl magas a SUP-hoz?'
+  answer: 'Kezdőknek: 10 mph (8 csomó) felett. Középhaladóknak: 15 mph (13 csomó) felett. Képzetteknek: 20 mph (17 csomó) felett. Ha bizonytalan, ne induljon vízre. A part felől fúvó szél (a szárazföldről a tenger felé) minden képességi szinten veszélyes.'
+  category: safety
+  relatedProducts: []
+  relatedGuides:
+    - weather-conditions
+    - safety-tips
+- id: warranty
+  question: 'Miből áll az afarer garancia?'
+  answer: 'Minden afarer terméket átfogó gyártói garancia véd. A SUP táblákra 2+ év garancia vonatkozik gyártási hibák esetén. A garancia a normál használat során jelentkező anyag- és kivitelezési hibákra terjed ki.'
+  category: warranty
+  relatedProducts: []
+  relatedGuides: []
+- id: warranty-claim
+  question: 'Hogyan adhatok be garanciális igényt?'
+  answer: 'Az igény benyújtásához vegye fel a kapcsolatot ügyfélszolgálatunkkal a rendelési számával, a probléma fényképeivel és rövid leírásával. Az igények többségét 2 munkanapon belül felülvizsgáljuk. A jóváhagyott igények napokon belül csereegységet vagy javítási utasítást kapnak.'
+  category: warranty
+  relatedProducts: []
+  relatedGuides: []
+- id: shipping-info
+  question: 'Mennyi ideig tart a szállítás?'
+  answer: 'A raktáron lévő rendelések 2–4 munkanapon belül feladásra kerülnek. Az Egyesült Államokon belüli rendelések 5–10 munkanapon belül megérkeznek. A nemzetközi rendelések a célországtól függően 10–15 munkanapon belül érkeznek meg. A sürgős rendelések gyorsíthatók.'
+  category: shipping
+  relatedProducts: []
+  relatedGuides: []
+- id: return-policy
+  question: 'Milyen a visszaküldési szabályzatuk?'
+  answer: 'A kézhezvételtől számított 30 napon belül fogadunk el visszaküldést a nem használt, eredeti csomagolású termékekre. A testreszabott/OEM rendelések nem küldhetők vissza. A visszaküldés megkezdéséhez vegye fel a kapcsolatot ügyfélszolgálatunkkal — előre kifizetett szállítási címkét biztosítunk.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: oem-odm
+  question: 'Kínálnak OEM/ODM szolgáltatásokat?'
+  answer: 'Igen. Cégek számára saját márkás (private label) és egyedi tervezési szolgáltatásokat kínálunk. A meglévő modelleken történő egyedi márkaépítéstől a teljesen egyedi testformákig mérnöki csapatunk az Ön márkája alatt fejleszthet termékeket. Minimális rendelési mennyiségek érvényesek.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: paddle-length
+  question: 'Milyen hosszú evezőre van szükségem?'
+  answer: 'Az evező 6–8 hüvelykkel legyen magasabb az Ön magasságánál. Az állítható evezők lehetővé teszik a finomhangolást a különböző körülményekhez. A részletes méretezésért tekintse meg evezős útmutatónkat.'
+  category: product
+  relatedProducts: []
+  relatedGuides:
+    - choosing-paddle
+- id: material-difference
+  question: 'Mi a különbség az egyrétegű és a többrétegű PVC SUP-ok között?'
+  answer: 'Az egyrétegű PVC táblák könnyűek és kedvező árúak, de magas nyomáson kevésbé merevek. A kétrétegű és fúziós laminálású szerkezetek merevebbé, defektállóbbá és tartósabbá teszik a táblát. A katonai minőségű, UV-álló bevonatú PVC kínálja a legjobb egyensúlyt a tartósság és a súly között szabadidős SUP használatra. Az afarer minden termékszintjén háromrétegű laminált PVC-t használ.'
+  category: product
+  relatedProducts: []
+  relatedGuides: []
+- id: sup-width-stability
+  question: 'Milyen SUP szélesség a legjobb a stabilitáshoz?'
+  answer: 'Kezdőknek a 33–34 hüvelykes szélesség kínálja a stabilitás és az evezés könnyedségének legjobb egyensúlyát. A 32 hüvelyknél keskenyebb táblák bizonytalannak tűnnek az újonnan kezdő evezők számára. A 33 hüvelykes afarer SUP Explorer 11 ideális tanuláshoz.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - sup-size-guide
+    - paddle-board-size-guide
+- id: sup-volume-weight
+  question: 'Hogyan válasszak SUP térfogatot a súlyomhoz?'
+  answer: 'Szorozza meg kg-ban mért súlyát 2,2-vel a kezdőknek ajánlott térfogat kiszámításához. Egy 75 kg-os evezőnek például legalább 165 liter kell, de a 220–260 liter jóval stabilabb a tanuláshoz. A SUP Explorer 11 260 literes, legfeljebb 100 kg-os evezők számára megfelelő.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - sup-size-guide
+    - paddle-board-size-guide
+- id: afarer-vs-others
+  question: 'Hogyan viszonyul az afarer a többi márkához?'
+  answer: 'Az afarer a legjobb ár-érték arányt kínálja a felfújható vízisport-felszerelések piacán. A Red Paddle Co-hoz képest az afarer a teljesítmény 90%-át nyújtja a költség 60%-áért. Az iRockerhez képest az afarer magasabb minőségű, háromrétegű katonai PVC-t és magasabb PSI értékeket használ. A Bluefinhez képest az afarer kiválóbb anyagparaméterekkel rendelkezik. A legtöbb szabadidős evező számára az afarer kínálja a minőség és az ár legjobb egyensúlyát.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+    - sup-touring-cruiser
+  relatedGuides:
+    - best-surf-gear-brands-compared
+    - afarer-vs-red-paddle
+    - afarer-vs-irocker
+    - afarer-vs-bluefin
+- id: fishing-sup-setup
+  question: 'Horgászhatok SUP tábláról?'
+  answer: 'Igen. A SUP-horgászat egyre népszerűbb, mert az álló helyzet kiváló rálátást biztosít a vízbe. Válasszon legalább 11 láb hosszú és 33–34 hüvelyk széles táblát a stabilitás érdekében. Szereljen fel egy horgászrúd-tartókkal ellátott rekeszt, a fedélzeti gumikötelekhez rögzítve, egy kis horgonyt, és mindig viseljen mentőmellényt. Az afarer SUP Explorer 11 jól használható alkalmi horgászathoz.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - fishing-sup-guide
+    - sup-anchor-guide
+- id: sup-yoga
+  question: 'Végezhetek jógát SUP táblán?'
+  answer: 'Természetesen. A SUP jóga a hagyományos pózokat egy lebegő platform kihívásával ötvözi, mélyebb stabilizáló izmokat aktiválva. Használjon legalább 33 hüvelyk széles táblát puha, csúszásgátló fedélzeti párnával. Gyakoroljon nyugodt, sekély vízen horgonnyal. Kezdje alap pózokkal, mint a lefelé néző kutya, a harcos II és a fa póz. A teljes EVA fedélzeti párnával rendelkező SUP Explorer 11 jól megfelelő.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - yoga-sup-guide
+- id: airline-travel-sup
+  question: 'Milyen szabályok vonatkoznak a felfújható SUP-pal történő repülős utazásra?'
+  answer: 'A legtöbb légitársaság elfogadja a SUP hátizsákokat feladott poggyászként, ha azok 23–32 kg alattiak. Az afarer hátizsák körülbelül 90x40x30 cm és csomagolva körülbelül 15 kg-ot nyom. Egyes légitársaságok túlméretes poggyász díjat számíthatnak fel. Érkezzen korán, csomagolja az uszonyokat és a szivattyút külön a kézipoggyászba, és lássa el a táskát törékeny jelöléssel. Repülés előtt mindig tájékozódjon a légitársasága sportfelszerelési szabályzatáról.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - sup-travel-guide
+- id: cold-weather-safety
+  question: 'Milyen biztonsági felszerelésre van szükségem hideg vízi evezéshez?'
+  answer: '15°C alatti vízhőmérséklet hővédelemre szorul. 8–14°C-hoz használjon neoprént vagy szárazruhát csizmával, kesztyűvel és kapucnival. 14–20°C-hoz egy 3/2 mm-es neoprén elegendő. Mindig viseljen megfelelően illeszkedő mentőmellényt a hővédelem és a biztonság érdekében. A kötelező felszerelési előírásokért tekintse át a helyi szabályozásokat.'
+  category: product
+  relatedProducts:
+    - life-vest-pro
+  relatedGuides:
+    - sup-safety-guide
+- id: oem-odm-details
+  question: 'Mekkorák a minimális rendelési mennyiségek OEM/ODM esetén?'
+  answer: 'A minimális rendelési mennyiségek (MOQ) a terméktípustól és összetettségtől függenek. A meglévő modelleken történő egyedi márkaépítés jellemzően 5–10 darabot igényel. A teljesen egyedi testformák magasabb MOQ-t igényelnek. Küldje el igényeit értékesítési csapatunknak részletes ajánlatért. Mindent kezelünk az egyedi színektől és logóktól a teljesen eredeti formatervekig.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: oem-custom-branding
+  question: 'Rátehetem a saját logómat az afarer termékekre?'
+  answer: 'Igen. OEM szolgáltatásunk egyedi logóelhelyezést, egyedi színsémákat és egyedi csomagolást foglal magában. Terméktípustól függően tamponnyomást, hőátvitelt és hímzést kínálunk. Küldje el a grafikáját és a specifikációit értékesítési csapatunknak ajánlatért és gyártási idő becslésért.'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: sup-inflate-pressure
+  question: 'Milyen PSI-re fújjam fel a SUP-omat?'
+  answer: 'A legjobb teljesítményhez fújja fel a táblát a névleges maximális PSI-ig — a minőségi felfújható SUP-oknál jellemzően 15–18 PSI-ig. Az afarer SUP Explorer 11 a legjobban 15–18 PSI-nál teljesít. Az alacsonyabb nyomás miatt a tábla puhának tűnhet és rosszul tarthatja az irányt. A névleges maximumon túli felfújás a drop-stitch szálak károsodását kockáztatja. A táblájára vonatkozó konkrét értékért ellenőrizze a szelep melletti matricát.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+    - sup-touring-cruiser
+  relatedGuides:
+    - how-to-choose-inflatable-sup
+    - sup-pump-guide
+- id: sup-deck-pad-care
+  question: 'Hogyan tisztítsam és gondozzam az EVA fedélzeti párnát?'
+  answer: 'Öblítse le a fedélzeti párnát édesvízzel minden használat után. Szennyeződés vagy folt esetén használjon enyhe szappant és puha kefét — kerülje az erős vegyszereket. Ha az élek kezdnek felemelkedni, vigyen fel kis mennyiségű vízálló tengeri ragasztót, és nyomja súly alá 24 órán át. Használaton kívül tartsa a táblát közvetlen UV-fénytől, hogy megelőzze a párna károsodását.'
+  category: maintenance
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - inflatable-sup-maintenance
+- id: sup-seated-paddling
+  question: 'Evezhetem a SUP-omat ülő helyzetben?'
+  answer: 'Igen. Sok SUP tábla, beleértve az afarer Explorer 11-et is, D-gyűrűkkel rendelkezik, amelyekhez ülés rögzíthető. Az ülő helyzetben való evezés kényelmes megoldást kínál hosszabb túrákhoz, horgászathoz, vagy amikor pozíciót kíván váltani a vízen.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides: []
+- id: saltwater-rinse
+  question: 'Le kell öblítenem a felfújható táblámat óceáni használat után?'
+  answer: 'Igen — mindig öblítse le a tábláját, uszonyait, szivattyúját és evezőjét édesvízzel sós vizes használat után. A sókristályok behatolnak a varratokba és a szelepekbe, mikroszivárgást és korróziót okozva. Szárítsa meg a táblát árnyékban a leeresztés és tárolás előtt. A rendszeres öblítés drasztikusan meghosszabbítja a felfújható tábla élettartamát.'
+  category: maintenance
+  relatedProducts: []
+  relatedGuides:
+    - inflatable-sup-maintenance
+- id: sup-leash-necessity
+  question: 'Tényleg szükségem van leash-re a SUP-hoz?'
+  answer: 'Igen — mindig viseljen leash-t. A spirál SUP leash a bokájához vagy vádlijához rögzül, és magánál tartja a táblát, ha elesik. Nyílt vízen a leash az életét mentheti meg azzal, hogy megakadályozza az elszakadást a lebegőeszközétől. Folyami evezéshez gyorskioldós leash-t használjon a beszorulás elkerülésére.'
+  category: safety
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides:
+    - sup-safety-guide
+    - sup-leash-guide
+- id: drop-stitch-technology
+  question: 'Mi a drop-stitch mag technológia, és miért fontos?'
+  answer: 'A drop-stitch magtechnológia több ezer poliészter szálat használ, amelyek összekötik a PVC tábla felső és alsó rétegét. 15-20 PSI-re felfújva ezek a szálak merev, csavarással szemben ellenálló szerkezetet hoznak létre, amely kemény táblaként teljesít. Az afarer katonai minőségű, háromrétegű PVC-t használ drop-stitch laminálással minden SUP termékszintjén, az epoxi táblákéval összehasonlítható merevséget nyújtva, megőrizve a felfújható tábla hordozhatóságát.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+    - sup-flowing-lotus
+  relatedGuides:
+    - how-to-choose-inflatable-sup
+- id: sup-inflatable-vs-rigid
+  question: 'Felfújható vagy merev SUP: melyik jobb a különböző felhasználási esetekhez?'
+  answer: 'A felfújható SUP-ok a hordozhatóságban, a tárolásban és az ütéscsillapításban tűnnek ki — ideálisak utazáshoz, kezdőknek és szabadidős használatra. A merev epoxi táblák maximális sebességet és siklást nyújtanak versenyzéshez és szörfozáshoz. Az evezők 90%-ának a drop-stitch maggal rendelkező minőségi felfújható (15-20 PSI) elegendő merevséget biztosít túrázáshoz, fitneszhez, jógához és horgászathoz. Az afarer felfújható táblák felérnek a közepes kategóriás kemény táblák teljesítményével, miközben hátizsákba csomagolhatók.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+  relatedGuides:
+    - inflatable-sup-vs-hard-board
+    - how-to-choose-inflatable-sup
+- id: sup-skill-progression
+  question: 'Milyen a jellemző SUP fejlődési út kezdőtől haladóig?'
+  answer: 'Kezdő (1-3. alkalom): felállás, alap előre evezési ütés, fordulás, biztonságos esés. Középhaladó (5-15. alkalom): hatékony evezéstechnika, pivot fordulók, hullámverésben való navigálás, alap mentési készségek. Haladó (20+ alkalom): versenyrajtok, bójafordulók, kis hullámok szörfozása, downwind evezés. Professzionális: versenyszerű evezés, surf SUP, hosszú távú túrázás. Az afarer táblák minden szakaszt támogatnak: az Explorer 11 kezdőknek, az Ocean Voyager túrázáshoz és a Cheetah Surge teljesítményevezéshez.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+    - sup-cheetah-surge
+  relatedGuides:
+    - beginner-sup-guide
+    - sup-fitness-workout
+    - sup-paddle-guide
+- id: sup-weight-capacity
+  question: 'Mekkora súlyt bír el egy felfújható SUP tábla?'
+  answer: 'A teherbírást a tábla térfogata határozza meg. Afarer táblák: SUP Explorer 11 (260 L, legfeljebb 100 kg / 220 lbs), Ocean Voyager 12 (310 L, legfeljebb 140 kg / 308 lbs), Leviathan Wake (350 L, legfeljebb 180 kg / 396 lbs). Az optimális teljesítményhez tartsa a teljes terhelést (evező + felszerelés) a maximális kapacitás 80%-án belül. A nem túlterhelt tábla magasabban úszik és jobban tartja az irányt, különösen hullámos körülmények között.'
+  category: product
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+    - sup-leviathan-wake
+  relatedGuides:
+    - sup-size-guide
+    - paddle-board-size-guide
+- id: sup-oem-process
+  question: 'Milyen az OEM gyártási folyamata saját márkás felfújható SUP-okhoz?'
+  answer: 'Az OEM folyamat: 1) Specifikáció és tervezési összefoglaló — ossza meg a cél specifikációkat, CAD rajzokat vagy referencia terméket. 2) 3D forma prototípusgyártás — egyedi alumínium és kompozit formák házon belüli tervezéssel. 3) Anyagkiválasztás és minta — katonai minőségű PVC egyedi színekkel és logóelhelyezéssel. 4) CE gyári audit és megfelelés — minden rendelés tartalmaz CE nyilatkozatot, ISO 9001 nyomonkövethetőséget, BSCI jelentést. 5) Sorozatgyártás 100 pontos QC ellenőrzőlistával. 6) FOB Qingdao szállítás teljes exportdokumentációval. Átfutási idő 30-45 nap, MOQ 50 darab (standard SUP).'
+  category: ordering
+  relatedProducts: []
+  relatedGuides: []
+- id: sup-inflatable-durability
+  question: 'Mennyi ideig tartanak a felfújható SUP táblák megfelelő gondozással?'
+  answer: 'Megfelelő gondozással egy minőségi felfújható SUP tábla 5-10 évig tart rendszeres szabadidős használat mellett. A katonai minőségű, UV-álló bevonatú háromrétegű PVC — amelyet minden afarer táblában használnak — ellenáll a napsugárzás okozta károsodásnak, a sósvízi korróziónak és a kopásnak. A legfontosabb élettartam-tényezők: öblítés édesvízzel minden használat után, alapos szárítás tárolás előtt, közvetlen UV-fénytől való védelem használaton kívül, részben felfújt állapotban való tárolás hűvös, száraz helyen, valamint a durva felületeken való vonszolás kerülése. A drop-stitch szálak és a varratok jellemzően az első meghibásodási pontok, nem maga a PVC anyag.'
+  category: maintenance
+  relatedProducts:
+    - sup-explorer-11
+    - sup-ocean-voyager
+  relatedGuides:
+    - inflatable-sup-maintenance
+    - inflatable-sup-storage
+    - inflatable-sup-repair
+- id: sup-choppy-water
+  question: 'Hogyan evezzek SUP-pal hullámos vízen vagy szélben?'
+  answer: 'Hullámverésben: hajlitsa a térdét, vegyen fel szélesebb állást, rövidítse az evezési ütéseket, és aktiválja a törzsizmait az egyensúlyért. Szembeszélben: használjon alacsonyabb evezési szöget, végezzen rövidebb ütéseket, és dőljön előre. Oldalszélben: a szél felőli oldalon evezzen a sodródás korrigálásához. Követő szélben: szörfölje a hullámokat a sebességért. A kezdők kerüljék a 10 mph-t meghaladó szeleket, és a stabilitás érdekében válasszanak szélesebb, hosszabb táblákat. Az afarer Ocean Voyager túra SUP-ot úgy tervezték, hogy kezelje a mérsékelt hullámverést és szélviszonyokat.'
+  category: safety
+  relatedProducts:
+    - sup-ocean-voyager
+    - sup-explorer-11
+  relatedGuides:
+    - weather-conditions
+    - sup-safety-guide
+    - wind-conditions-sup
+- id: sup-sustainability
+  question: 'Környezetbarátok-e a felfújható SUP táblák?'
+  answer: 'A felfújható SUP-ok több szempontból kisebb környezeti lábnyommal rendelkeznek, mint a merev táblák: kevesebb nyersanyagot használnak fel a gyártásban, kisebb súlyuk csökkenti a szállítási kibocsátást, és tartósságuk révén idővel kevesebb csere szükséges. Az afarer táblákban használt PVC ólommentes és REACH-megfelelő. A legfontosabb fenntarthatósági gyakorlatok: vásároljon minőségi táblát, amely 5-10 évig tart; a defekteket javítsa, ne cserélje; a tábla élettartama végén juttassa el különleges PVC-újrahasznosítási programokon keresztül; és az egyszer használatos csomagolás kerülésével válasszon olyan márkákat, amelyek újrafelhasználható hordtáskákat használnak.'
+  category: general
+  relatedProducts:
+    - sup-explorer-11
+  relatedGuides: []
+- id: b2b-moq
+  question: 'Mekkora a minimális rendelési mennyiség OEM/ODM SUP gyártáshoz?'
+  answer: 'A minimális rendelési mennyiségek (MOQ) terméktípusonként változnak. Raktári modell egyedi márkaépítése: 50 darab SKU-ként. Egyedi formájú formafejlesztés: 200–500 darab modellenként (első rendelés). Formamegosztási programok 50 darabtól elérhetők. Kiegészítők és mentőmellények: 500–1000 darab dizájnonként. Vegye fel a kapcsolatot OEM csapatunkkal a tervezett mennyiséggel a pontos MOQ és árazás érdekében.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-lead-time
+  question: 'Mekkorák a jellemző átfutási idők OEM SUP rendeléseknél?'
+  answer: 'Első OEM rendelések meglévő formákon történő egyedi márkaépítéssel: 6–8 hét az előlegtől a FOB Qingdao-ig. Új formákat igénylő egyedi formájú rendelések: 12–20 hét (tartalmazza a 3D tervezést, a forma elkészítését, a prototípusgyártást és a sorozatgyártást). Jóváhagyott specifikációkkal történő ismételt rendelések: 6–8 hét. Sürgős rendelések meglévő formákkal 4–5 hétre rövidíthetők. Az átfutási idők tartalmazzák a nyersanyag-beszerzést, a gyártást, a folyamat közbeni QC-t és a konténer rakodását.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-certification
+  question: 'Milyen tanúsítványokkal rendelkeznek az afarer OEM termékek?'
+  answer: 'Minden afarer OEM/ODM termék rendelkezik a következőkkel: CE megfelelőségi nyilatkozat (EU piac), UKCA (UK piac), ISO 9001:2015 minőségirányítási rendszer, BSCI társadalmi megfelelőségi audit, REACH és RoHS anyagmegfelelés, EN ISO 25649 osztályozás felfújható SUP táblákhoz. Kérésre elérhető további tanúsítványok: US Coast Guard megfelelőségi dokumentáció, katonai szabványú tesztelés (MIL-STD-810) és a célország import tanúsítási támogatása.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-samples
+  question: 'Rendelhetek mintákat a sorozatgyártás vállalása előtt?'
+  answer: 'Igen. Mintarendelések minden OEM/ODM projekthez elérhetők. A sorozatgyártás előtti minták (PPS) a forma elkészítése után, a sorozatgyártás előtt készülnek. Minták átfutási ideje: meglévő formákkal 15–25 munkanap, egyedi formákkal 25–40 munkanap. A mintaköltségek az első sorozatrendelésből levonhatók. A minták expressz futárral (DHL, FedEx, UPS) kerülnek kiszállításra teljes nyomonkövetéssel, és jellemzően 3–5 munkanapon belül megérkeznek.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-payment
+  question: 'Milyen fizetési feltételek érhetők el OEM rendeléseknél?'
+  answer: 'Standard fizetési feltételek: 30% előleg aláírt PI-vel (proforma számla), 70% egyenleg a szállítás előtt a B/L (konosszáment) másolata ellenében. Első alkalommal együttműködő partnereknek: 50% előleg, 50% a szállítás előtt. Rendeléstörténettel rendelkező, bevált partnereknek: látható L/C vagy 30 napos fizetés minősített számlák esetén (hitelvizsgálat tárgyától függően). Fizetési módszerek: T/T banki átutalás, L/C (okmányos hitellevél), Western Union. Minden fizetés USD-ben vagy EUR-ban történik.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-ip-protection
+  question: 'Hogyan védi az afarer a szellemi tulajdonomat és a terveimet?'
+  answer: 'Az IP-védelem az OEM szolgáltatásunk alapvető része. Minden tervezési megbeszélés előtt NDA-t írunk alá. A tervfájlok izolált munkaállomásokon, hozzáférés-naplózással kerülnek kezelésre. Minden szerszám és forma kizárólagos tulajdona marad (az Ön által fizetve). Nem használjuk újra az Ön formáit vagy terveit más ügyfelek számára. Aktív fiókok számára a formák tárolása és karbantartása biztosított. A megállapodás megszűnésekor a formák vagy az Ön részére kerülnek kiszállításra, vagy videós dokumentációval együtt megsemmisítésre. Tiszteletben tartunk minden védjegy- és szabadalmi jogot.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-shipping
+  question: 'Milyen szállítási és logisztikai lehetőségek érhetők el?'
+  answer: 'FOB Qingdao (standard): az áru a Qingdao kikötőben kerül rakodásra; onnantól Ön szervezi a szállítást. CIF (megnevezett kikötő): mi szervezzük és biztosítjuk a szállítást az Ön célkikötőjéig. DDP / háztól házig: teljes körű logisztika, beleértve a vámkezelést és a végső kézbesítést. Tengeri szállítás az USA nyugati partjára: körülbelül 25–30 nap. Tengeri szállítás az EU-ba (Hamburg/Rotterdam): körülbelül 30–35 nap. Sürgős rendelésekhez légi szállítás érhető el (3–5 nap). Minden exportvám-dokumentációt, eredetigazolást és csomagolási listát kezelünk.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-quality-control
+  question: 'Milyen minőségellenőrzési folyamatok vonatkoznak az OEM rendelésekre?'
+  answer: 'Minden OEM rendelés dokumentált QC tervet követ: 1) Beérkező anyagvizsgálat — a PVC anyag tételvizsgálata vastagság, húzószilárdság és UV-állóság szempontjából. 2) Folyamat közbeni QC — varrat hegesztési szilárdság tesztelése 50 táblánként, nyomástartási teszt a névleges PSI 1,25-szörösén. 3) Végvizsgálat — minden tábla 100%-os látványvizsgálata és nyomásvizsgálata. 4) AQL mintavétel — ISO 2859 szerinti tételenkénti mintavétel kritikus hiba = 0 elfogadással. 5) Harmadik fél általi vizsgálat — SGS, Bureau Veritas vagy Intertek a vevő költségén elérhető.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-custom-packaging
+  question: 'Készíthetnek egyedi csomagolást a márkámhoz?'
+  answer: 'Igen. Teljes körű egyedi csomagolási szolgáltatásokat kínálunk: kiskereskedelmi dobozok teljes színes CMYK nyomással és márka grafikával, hordtáskák szitanyomott vagy hímzett logókkal, az Ön nyelvén írt használati útmutatók, akasztócédulák és vonalkód/UPC címkék, valamint belső csomagolás (polietilén tasakok, hab betétek). Minimális csomagolási MOQ: egyedi dobozokhoz 500–1000 darab, hordtáskákhoz 200–500. A csomagolástervezési szolgáltatás az OEM rendelések részét képezi.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
+- id: b2b-factory-audit
+  question: 'Meglátogathatom a gyárat, vagy szervezhetek harmadik fél általi auditot?'
+  answer: 'A gyárlátogatások előzetes egyeztetéssel szívesen fogadottak. Egész évben fogadunk márkatulajdonosokat, és repülőtéri átszállítást tudunk szervezni a Qingdao Jiaodong nemzetközi repülőtérről (TAO). Azoknak a vásárlóknak, akik nem tudnak ellátogatni, a következőket kínáljuk: virtuális gyárlátogatás videohíváson keresztül, harmadik fél általi audit koordinálása SGS/Bureau Veritas részvételével (az audit költségét a vevő fedezi), valamint részletes gyárképességi dokumentációs csomag, beleértve a felszerelési listát, a QC folyamatábrát és a személyzet képesítéseit.'
+  category: b2b
+  relatedProducts: []
+  relatedGuides: []
