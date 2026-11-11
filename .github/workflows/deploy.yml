@@ -38,7 +38,17 @@ jobs:
         run: npm ci
       - if: steps.guard.outputs.enabled == 'true'
         name: Install PDF optimizer
-        run: sudo apt-get update && sudo apt-get install -y ghostscript
+        run: |
+          for i in 1 2 3 4 5; do
+            if sudo apt-get update && sudo apt-get install -y --fix-missing ghostscript; then
+              echo "ghostscript installed on attempt $i"
+              exit 0
+            fi
+            echo "apt attempt $i/5 failed; retrying in 60s"
+            sleep 60
+          done
+          echo "ERROR: ghostscript install failed after 5 attempts"
+          exit 1
       - if: steps.guard.outputs.enabled == 'true'
         run: npm run generate
       - if: steps.guard.outputs.enabled == 'true'
