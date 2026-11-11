@@ -1,0 +1,85 @@
+meta:
+  title: 'Hull Engineering Studio — CAD, FEA at Custom Hull Design | {SITE}'
+  description: 'Tuklasin ang aming Hull Engineering Studio para sa CAD design, finite element analysis (FEA), at pag-develop ng custom high-performance na SUP hull. Makipag-ugnayan sa aming engineering team upang simulan ang iyong susunod na board project.'
+back_text: 'Bumalik sa R&D Center'
+home_label: 'Home'
+
+hero:
+  tagline: 'Lab 02'
+  title: 'Hull Engineering Studio'
+  subtitle: 'Digital na simulation, structural intelligence, custom hull design'
+  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
+  image_alt: 'Workstation ng CAD design sa hull engineering ng Afarer'
+
+intro: 'Ang hull ang gulugod ng bawat inflatable SUP. Dapat itong magaan upang maka-glide nang mahusay, malakas upang makayanan ang mabatong dalampasigan, at rigid upang maging pagharap ang bawat sagwan sa pasulong na galaw. Sa Afarer, pinagsasama ng aming Hull Engineering Studio ang advanced na CAD modelling, finite element analysis (FEA), at dekada ng praktikal na karanasan sa board design upang maihanda ang mga hull na naka-optimize para sa inaasahang disiplina — hindi mga generic na hugis na hinango mula sa catalog.'
+
+content_html: |
+  <h2>Kung saan nagtatagpo ang lakas at hydrodynamics</h2>
+  <p>Nagtatrabaho kami sa tatlong pangunahing platform ng konstruksyon — reinforced drop-stitch PVC core, hand-laid na fibreglass laminate, at rotationally moulded na polyethylene — at may kakayahang i-design, i-simulate, at i-validate ang bawat isa sa loob ng aming pasilidad.</p>
+
+  <h2>Mga tool at pamantayan ng disenyo</h2>
+  <p>Kabilang sa aming digital engineering environment ang:</p>
+  <table>
+    <thead><tr><th>Kakayahan</th><th>Software / Tool</th><th>Aplikasyon</th></tr></thead>
+    <tbody>
+      <tr><td>3D parametric modelling</td><td>SolidWorks Professional</td><td>Surface ng hull, reinforcement ng rail at stringer, deck layout, gear-mount point</td></tr>
+      <tr><td>Finite element analysis</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Stress mapping, modal analysis, crash/impact simulation</td></tr>
+      <tr><td>Computational fluid dynamics</td><td>Ansys Fluent / Star-CCM+</td><td>Prediksyon ng hydrodynamic drag, optimisasyon ng trim</td></tr>
+      <tr><td>Laminate engineering</td><td>ESAComp / CADEC</td><td>Pagtumpok ng fibreglass layer, pagpili ng core, pagtatantiya ng timbang</td></tr>
+      <tr><td>Mould flow simulation</td><td>Moldex3D</td><td>Prediksyon ng wall-thickness sa rotomoulding</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Aming engineering workflow</h2>
+  <p>Bawat hull design, maging ito karaniwang modelo o ganap na custom na proyekto, ay sumusunod sa mahigpit na limang-yugtong proseso:</p>
+  <ol>
+    <li><strong>Konsepto at pagtitipon ng mga kinakailangan</strong> — Nakikita ka namin upang tukuyin ang timbang ng rider at payload, speed envelope, kakayahan sa water-state, mga kinakailangan sa transportasyon, at anumang espesyal na mission equipment (deck mount, cargo tie-down position, pagsasanay ng accessory).</li>
+    <li><strong>3D surfacing at kalkulasyon ng hydrostatic</strong> — Minomodelo ang hull form sa SolidWorks at tinitingnan para sa hydrostatic stability, distribusyon ng volume, at righting moment gamit ang built-in na analysis tool.</li>
+    <li><strong>Structural FEA</strong> — Tinutukoy ang mga load case: static (rider + gamit), dynamic (impact ng wave-landing sa 5g), at grounding (pagbangga sa mabatong dalampasigan sa 3 m/s). Sinusuri ang mga stress contour; mandatoryo ang safety factor ≥ 2.5.</li>
+    <li><strong>CFD drag optimisation</strong> — Sinisimulate ang hull sa tatlong kundisyon ng karga at limang bilis. Ang wetted surface area, trim angle, at residual resistance ay paulit-ulit na binabawasan.</li>
+    <li><strong>Pagsusuri ng disenyo at release</strong> — Ang kumpletong engineering package (3D model, FEA report, CFD report, weight estimate, ply book) ay sinusuri ng aming senior engineer bago ito ilabas sa prototype workshop.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Distribusyon ng FEA Stress — Touring SUP Hull (Reinforced Drop-Stitch)</p>
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
+        <span class="text-gray-500">Safety factor sa max payload</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
+        <span class="text-gray-500">Pagbawas ng drag kumpara sa nakaraang henerasyon</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
+        <span class="text-gray-500">Peak slamming pressure (design limit)</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
+        <span class="text-gray-500">Kabuuang FEA runtime noong 2025</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Customisation: ang iyong hull, ang iyong mga tuntunin</h2>
+  <p>Walang dalawang paddler na magkapareho ng mga kinakailangan. Kailangan ng fishing SUP ng malawak at stable na planing hull; kailangan ng touring board ng displacement hull na nagpapaliwanag ng glide; kailangan ng surf SUP ng tumutugong rail at naakmang rocker. Hindi namin pinipilit ang iyong aplikasyon sa isang umiiral na hugis ng hull. Nagdidisenyo kami mula sa iyong espesipikasyon pataas.</p>
+  <p>Mga halimbawa ng kamakailang custom hull engineering project:</p>
+  <ul>
+    <li>Isang stretched-length na touring SUP para sa isang Caribbean eco-tour operator, na may reinforced na bow para sa beach landing (+15 % kapal ng rail).</li>
+    <li>Isang high-visibility patrol SUP para sa isang harbour authority, na may integrated gear mount at tactical rail.</li>
+    <li>Isang expedition touring SUP para sa isang rental fleet, na may reinforced na rail at karagdagang cargo tie-down.</li>
+  </ul>
+
+  <h2>Mga engineer namin</h2>
+  <p>Pinangungunahan ang studio ng isang senior engineer na may 14 taon ng karanasan sa high-performance board design, sinusuportahan ng dalawang mechanical engineer na espesyalista sa FEA at CFD. Ang tatlo ay may advanced degree sa marine o mechanical engineering mula sa mga kinikilalang unibersidad sa buong mundo. Regular naglalathala ang koponan sa mga industry journal at nagpapakita sa mga pandaigdigang kumperensya tungkol sa high-performance paddle-sport engineering.</p>
+
+  <h2>Makipagpartner sa amin sa iyong susunod na hull</h2>
+  <p>Mula sa unang sketch ng konsepto hanggang sa huling stress report, ang aming Hull Engineering Studio ay iyong partner sa paglikha ng board na hindi lamang itinayo — kundi ini-engineer. Inilalagay namin ang mga oras ng simulation sa simula upang bawat weld, bawat layer ng laminate, at bawat kurba ng hull ay may dahilan.</p>
+  <p>Manapa''t kailangan mo ng maliliit na pagbabago sa isang umiiral na modelo o isang ganap na clean-sheet design, handa na kaming talakayin ang iyong mga kinakailangan.</p>
+
+cta:
+  title: 'Simulan ang iyong konsultasyon sa hull design'
+  subtitle: 'Sabihin sa amin ang iyong mission profile at magmumungkahi kami ng engineering path.'
+  button_text: 'Makipag-ugnayan sa aming engineering team'
+  button_link: /contact

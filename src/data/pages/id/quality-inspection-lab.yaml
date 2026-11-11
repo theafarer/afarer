@@ -1,0 +1,120 @@
+meta:
+  title: 'Lab Kualitas & Inspeksi — Pengujian & Sertifikasi SUP Sesuai ISO | {SITE}'
+  description: 'Verifikasi kualitas independen untuk SUP tiup. Pengujian tarik, siklus retensi udara, uji kelupasan sambungan, dan sertifikasi material. Hubungi lab kualitas kami untuk pengujian pihak ketiga.'
+back_text: 'Kembali ke Pusat R&D'
+home_label: 'Beranda'
+
+hero:
+  tagline: 'Lab 06'
+  title: 'Lab Kualitas & Inspeksi'
+  subtitle: 'Verifikasi independen — setiap pengujian lulus sebelum pengiriman'
+  image: 'https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp'
+  image_alt: 'Pengujian UV di laboratorium inspeksi kualitas Afarer'
+
+intro: 'Setiap papan yang keluar dari workshop kami membawa sertifikasi bahwa papan tersebut telah lulus serangkaian inspeksi kualitas dan pengujian material yang terdefinisi. Lab Kualitas & Inspeksi kami adalah fungsi independen dalam organisasi — melapor langsung kepada direktur utama, bukan kepada produksi — memastikan tidak ada tekanan komersial yang dapat mengorbankan gerbang inspeksi. Jika suatu batch material atau papan jadi tidak memenuhi spesifikasi yang dipublikasikan, lab memiliki wewenang untuk menghentikan pengiriman hingga ketidaksesuaian tersebut teratasi.'
+
+content_html: |
+  <h2>Percayai, tetapi verifikasi</h2>
+  <p>Lab ini beroperasi di bawah sistem manajemen mutu yang selaras dengan prinsip-prinsipnya, dan metode pengujian kami didasarkan pada standar ISO, ASTM, dan EN bila berlaku. Kami memelihara catatan rinci setiap pengujian yang dilakukan, menciptakan rantai ketertelusuran lengkap dari penerimaan bahan baku hingga pengiriman papan akhir.</p>
+
+  <h2>Peralatan dan kemampuan pengujian</h2>
+  <table>
+    <thead><tr><th>Peralatan</th><th>Pengujian yang Dilakukan</th><th>Standar / Metode</th></tr></thead>
+    <tbody>
+      <tr><td>Mesin uji universal (50 kN)</td><td>Kekuatan tarik (kain), ketahanan kelupasan (sambungan), propagasi sobekan</td><td>ISO 1421, ISO 4674</td></tr>
+      <tr><td>Rangka uji retensi udara (dapat diprogram)</td><td>Daya tahan tiup/kempis 1000 siklus, uji tahan tekanan 30 menit</td><td>EN ISO 25649 (internal)</td></tr>
+      <tr><td>Jig kelupasan sambungan (kelupasan motorised 180°)</td><td>Kekuatan kelupasan sambungan las dan lem pada 100 mm/menit</td><td>ISO 1421 / ASTM D1876</td></tr>
+      <tr><td>Penguji tekanan hidrostatis</td><td>Ketahanan kain terhadap penetrasi air (0–1000 mbar)</td><td>ISO 811</td></tr>
+      <tr><td>Pengukur ketebalan digital &amp; mikrometer</td><td>Ketebalan kain, ketebalan dinding rail, ketebalan film perekat</td><td>ISO 2286-3</td></tr>
+      <tr><td>Ruang lingkungan</td><td>Pengondisian suhu (-40 °C hingga +80 °C) untuk uji cold-crack dan penuaan panas</td><td>ISO 188, ISO 4675</td></tr>
+      <tr><td>Spektrofotometer warna</td><td>Pengukuran warna Delta-E setelah paparan UV</td><td>ISO 105-A05 / ASTM D2244</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Gerbang inspeksi — dari material hingga pengiriman</h2>
+  <p>Setiap papan mengikuti rencana kualitas yang terdefinisi dengan titik inspeksi wajib. Tidak ada papan yang dapat melewati gerbang; setiap gerbang harus disetujui oleh seorang inspektur kualitas sebelum tahap produksi berikutnya dimulai.</p>
+
+  <div class="not-prose my-8">
+    <div class="relative">
+      <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-200 dark:bg-blue-800"></div>
+      <div class="space-y-6 relative">
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gerbang 1</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Inspeksi material masuk</p>
+            <p class="text-xs text-gray-500 mt-1">Batch kain, batch perekat, perangkat keras — semuanya diperiksa terhadap spesifikasi kedatangan sebelum dilepas ke produksi.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gerbang 2</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Inspeksi las dalam proses</p>
+            <p class="text-xs text-gray-500 mt-1">Kupon las pertama diuji (kelupasan + visual) di awal setiap shift produksi.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gerbang 3</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Uji udara ruang</p>
+            <p class="text-xs text-gray-500 mt-1">Setiap ruang diberi tekanan hingga 1,5 x tekanan kerja, ditahan 30 menit. Data dicatat per nomor seri.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gerbang 4</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Inspeksi pra-pengiriman</p>
+            <p class="text-xs text-gray-500 mt-1">Papan lengkap diperiksa: semua pengencang dikencangkan, fitting berfungsi, tanpa cacat kosmetik. Daftar periksa 100 titik.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Gerbang 5</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Sertifikasi akhir</p>
+            <p class="text-xs text-gray-500 mt-1">Laporan pengujian disusun, catatan inspeksi ditinjau, Sertifikat Kesesuaian diterbitkan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Metrik kualitas utama (rata-rata bergulir 2025)</h2>
+  <div class="not-prose my-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
+      <span class="block text-2xl font-bold text-blue-600">99,7 %</span>
+      <span class="text-xs text-gray-500">Hasil lolos tahap pertama (batch kain)</span>
+    </div>
+    <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
+      <span class="block text-2xl font-bold text-blue-600">&lt; 0,2 %</span>
+      <span class="text-xs text-gray-500">Tingkat penolakan las (per meter linier)</span>
+    </div>
+    <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
+      <span class="block text-2xl font-bold text-blue-600">100 %</span>
+      <span class="text-xs text-gray-500">Ruang diuji udara sebelum perakitan</span>
+    </div>
+    <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
+      <span class="block text-2xl font-bold text-blue-600">EN ISO 25649</span>
+      <span class="text-xs text-gray-500">Kepatuhan kategori desain</span>
+    </div>
+  </div>
+
+  <h2>Tim kualitas kami</h2>
+  <p>Lab ini dijalankan oleh seorang manajer kualitas (10 tahun di QA marinir, ASQ Certified Quality Engineer), dua inspektur kualitas (masing-masing bersertifikat NDT Level 2 dalam pengujian visual), dan seorang teknisi material yang bertanggung jawab atas semua pengujian fisik. Tim ini menjalani pengujian kompetensi tahunan melalui penyedia pihak ketiga independen untuk memastikan hasil pengujian kami tetap akurat dan dapat direproduksi.</p>
+
+  <h2>Pengujian independen untuk klien</h2>
+  <p>Lab Kualitas &amp; Inspeksi kami tersedia untuk layanan pengujian independen. Jika Anda perlu memverifikasi spesifikasi kain, memvalidasi sistem perekat baru, atau memperoleh laporan pengujian pihak ketiga untuk kualifikasi pengadaan, kami dapat melakukan pengujian sesuai standar yang berlaku dan menerbitkan laporan pengujian tersertifikasi.</p>
+  <p>Contoh pekerjaan pengujian pihak ketiga terkini:</p>
+  <ul>
+    <li>Perbandingan kekuatan kelupasan lima produk film perekat kompetitif untuk program pengadaan militer Eropa.</li>
+    <li>Studi penuaan dipercepat (UV + siklus termal) untuk formulasi PVC pigmen oranye baru, dengan pengukuran sementara rutin pada interval 500 jam.</li>
+    <li>Validasi retensi udara 50 valve baffle prototipe untuk desain ruang bertekanan tinggi baru.</li>
+  </ul>
+
+  <h2>Komitmen kami kepada Anda</h2>
+  <p>Saat Anda menerima papan Afarer, Anda juga menerima dosir kualitasnya — catatan lengkap hasil pengujian yang berlaku untuk papan spesifik Anda. Sertifikat batch kain, uji kelupasan las, log uji udara ruang, dan daftar periksa inspeksi pra-pengiriman. Setiap angka dapat dilacak. Setiap inspektur teridentifikasi. Ini bukan sekadar dokumen — ini janji kami bahwa apa yang kami kirim adalah apa yang kami spesifikasikan.</p>
+  <p>Jika Anda pernah memiliki kekhawatiran kualitas, Anda dapat menghubungi lab secara langsung — detail kontaknya tercetak pada sertifikat kesesuaian Anda. Kami menanggapi setiap pertanyaan dengan serius dan berkomitmen melakukan investigasi formal dalam 48 jam.</p>
+
+cta:
+  title: 'Butuh pengujian independen atau verifikasi kualitas?'
+  subtitle: 'Lab kami menerima pekerjaan pengujian pihak ketiga — hubungi kami dengan kebutuhan Anda.'
+  button_text: 'Hubungi lab kualitas'
+  button_link: /contact

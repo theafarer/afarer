@@ -1,0 +1,112 @@
+meta:
+  title: 'Hidrodinamikai tesztmedence — Méretarányos vontatás és hajótest-optimalizálás | {SITE}'
+  description: 'Validálja hajóteste teljesítményét hidrodinamikai tesztmedencénkben. Méretarányos vontatás, síklapú menet elemzése és siklási hatékonysági tesztelés. Foglaljon medenceteszt-alkalmat még ma.'
+back_text: 'Vissza a K+F központhoz'
+home_label: 'Kezdőlap'
+
+hero:
+  tagline: '04. labor'
+  title: 'Hidrodinamikai tesztmedence'
+  subtitle: 'A teljesítmény validálása az első méretarányos prototípus előtt'
+  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
+  image_alt: 'Afarer hidrodinamikai tesztmedence teljesítménytesztelés'
+
+intro: 'Gyakori tévhit, hogy a hidrodinamikai tesztelés csak az óceánjáró hajóknak jár. Valójában egy kis síkban menő hajótest — például egy felfújható SUP — teljesítménye ugyanúgy függ a víz alatti alakjától, mint egy tartályhajó a bulbós orrától. A trim-szög, a benedvesített felület, a permetképződés és a szellőzés mind drámai hatással vannak a siklásra, a sebességre és a kényelmes menetre. Az Afarernél üzemeltetünk egy dedikált hidrodinamikai tesztmedencét, amely lehetővé teszi e hatások modellezett méretarányban történő számszerűsítését — még mielőtt anyagot és szerszámot szánnánk egy méretarányos prototípusra.'
+
+content_html: |
+  <h2>Miért teszteljük a paddle boardot medencében?</h2>
+  <p>A modellezett méretarányban (jellemzően 1:3 és 1:5 között) végzett tesztelés lehetővé teszi a hajótestformák gyors és költséghatékony iterációját. Egy hét a medencében ugyanazokat a teljesítményadatokat szolgáltatja, amelyek méretarányos próbálgatással hónapokba kerülnének — és ennek csak töredék részébe kerül.</p>
+
+  <h2>A létesítmény műszaki adatai</h2>
+  <table>
+    <thead><tr><th>Paraméter</th><th>Műszaki adat</th></tr></thead>
+    <tbody>
+      <tr><td>Medence méretei</td><td>35 m (H) × 3,5 m (Sz) × 1,8 m (M)</td></tr>
+      <tr><td>Vontatócsillék</td><td>Villamos szervo-hajtású, max. sebesség 12 m/s (23 csomó), sebességpontosság ± 0,5 %</td></tr>
+      <tr><td>Hullámgenerátor</td><td>Lap-típusú, programozható rendes &amp; rendszertelen tengerállapotok, Hs legfeljebb 0,3 m modellezett méretarányban</td></tr>
+      <tr><td>Műszeres felszereltség</td><td>6 komponensű dinamométer (ellenállás, oldalerő, kifordulási nyomaték), gyorsulásmérők, hajlásmérők, hullámcsúszkák</td></tr>
+      <tr><td>Adatgyűjtés</td><td>Mintavétel csatornánként 1000 Hz, valós idejű megjelenítés + utófeldolgozó programcsomag</td></tr>
+      <tr><td>Modellkészítés</td><td>Házon belüli CNC-marás és 3D nyomtatás legfeljebb 1,8 m LOA hosszúságú modellhajótestekhez</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Tesztprogramunk</h2>
+  <p>A hajótestfejlesztési standard programunk a medencénkben a következő sorrendet követi:</p>
+  <ol>
+    <li><strong>Modellkészítés</strong> — Egy 1:3,5 méretarányú modell nagy sűrűségű habból CNC-vel készül, és merevségét üvegszálas bevonattal növeljük. A tömeg és a tömegközéppont a Froude-méretarányú teljes terhelési állapothoz igazodik.</li>
+    <li><strong>Ellenállási mérések</strong> — A modellt a működési tartományt lefedő 8-10 sebességen vontatjuk. A teljes ellenállást megmérjük, és az ITTC-1957 módszerrel súrlódási és maradék összetevőkre bontjuk.</li>
+    <li><strong>Trim- és süllyedésmérés</strong> — A menet közbeni trim és süllyedés minden sebességnél rögzítésre kerül. Cél a síkban menő hajótesteknél a 4-6°-os optimális trim-szög.</li>
+    <li><strong>Fedőzet-hidrodinamikai felmérés</strong> — Két sebességnél mérjük a keresztirányú hullámvágásokat a hullámképződési ellenállás értékeléséhez, valamint a tatkavarodást okozó kereszthullám-interakciók azonosításához.</li>
+    <li><strong>Tengerállapot-viselkedés (opcionális)</strong> — Szemben és hátulról érkező hullámokban végzett menetek rendes hullámokban a többletellenállás, a függőleges gyorsulás és a csapódás valószínűségének mérésére.</li>
+    <li><strong>Adatelemzés &amp; javaslatok</strong> — Teljes jelentés készül összehasonlító diagramokkal, sebesség/teljesítmény-görbékkel és konkrét szerkezeti javaslatokkal a méretarányos hajótesthez.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Jellemző medenceteszt-eredmények — Ellenállás a sebesség függvényében (túra SUP hajótest, 1:3,5 méretarány)</p>
+    <div class="space-y-2">
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">5 csomó (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:18%"></div>
+        </div>
+        <span class="w-16 text-right">42 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">10 csomó (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:35%"></div>
+        </div>
+        <span class="w-16 text-right">81 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">15 csomó (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:52%"></div>
+        </div>
+        <span class="w-16 text-right">121 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">20 csomó (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:68%"></div>
+        </div>
+        <span class="w-16 text-right">158 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">25 csomó (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:85%"></div>
+        </div>
+        <span class="w-16 text-right">197 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">30 csomó (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:100%"></div>
+        </div>
+        <span class="w-16 text-right">232 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Modellezett méretarányú ellenállás (N) Froude-méretarányú sebességeknél. A méretarányú közegellenállás-becslés az ITTC-1978 teljesítmény-előrejelzési módszert követi.</p>
+  </div>
+
+  <h2>Szakértői csapat</h2>
+  <p>Medencénket egy áramlástanból doktorált hidrodinamikus működteti, aki egy nagy európai tengerkutató intézet vontatómedencéjében szerzett 8 év tapasztalatot. Egy technikus segíti, aki az összes modellt és műszert előkészíti. A csapat az ITTC (International Towing Tank Conference) ajánlott eljárásait követi, hogy minden teszt megismételhető, visszakövethető és nemzetközileg is védhető legyen.</p>
+
+  <h2>Medencetesztelés egyedi hajótestfejlesztéshez</h2>
+  <p>Medencénk nemcsak a házon belül tervezett hajótestekhez használatos — rendszeresen futtatunk tesztprogramokat olyan ügyfelek számára, akik egyedi hajótestformát kívánnak validálni vagy teljesítményproblémát kívánnak kivizsgálni:</p>
+  <ul>
+    <li><strong>Hajótestforma-összehasonlítás</strong> — Két vagy több jelölt hajótestforma azonos körülmények között történő tesztelése, objektív közegellenállás/sebesség/stabilitás-összehasonlítást nyújtva a tervezési döntés megalapozásához.</li>
+    <li><strong>Kiegészítőtestek optimalizálása</strong> — Az uszonykonfigurációk, élvonal-profilok és hajlásvariánsok különböző kombinációkban tesztelhetők a közegellenállás-csökkentéshez való egyedi hozzájárulásuk számszerűsítésére.</li>
+    <li><strong>Siklási hatékonysági vizsgálat</strong> — Az ellenállási adatok siklási hatékonysági görbévé alakulnak, lehetővé téve a hajótesttérfogat, a hajlás és a merevség összehangolását a célzott evezési sebességhez és terheléshez.</li>
+  </ul>
+
+  <h2>Miért válassza a tesztelést nálunk?</h2>
+  <p>Nem csupán egy halom nyers számot adunk át. Jelentéseink a medenceadatokat gyakorlati mérnöki javaslatokká fordítják: „Adjon 8 mm orrhajlást a benedvesített felület csökkentéséhez cirkálósebességnél", „Csökkentse 3°-kal a tathajlást a vízvonal meghosszabbításához túrasebességnél", vagy „Helyezze a legszélesebb pontot 150 mm-rel hátrébb a jobb iránytartásért". Világosan távozik azzal, hogy mit és miért kell megváltoztatni.</p>
+  <p>Medencénk díjfizetés ellenében független harmadik fél általi tesztelésre is igénybe vehető. Ha hajótestet fejleszt, és elfogulatlan, szakmailag végrehajtott hidrodinamikai értékelést szeretne, örömmel vesszük megkeresését.</p>
+
+cta:
+  title: 'Foglaljon medenceteszt-alkalmat'
+  subtitle: 'Legyen szó teljes fejlesztési programról vagy egyetlen összehasonlító tesztről, rugalmasan igazodunk az Ön időbeosztásához.'
+  button_text: 'Vegye fel a kapcsolatot hidrodinamikai csapatunkkal'
+  button_link: /contact

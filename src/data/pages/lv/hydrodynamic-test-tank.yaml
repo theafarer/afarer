@@ -1,0 +1,113 @@
+meta:
+  title: 'Hidrodinamiskais tests baseins — mēroga modeļu vilkšana un korpusa optimizācija | {SITE}'
+  description: 'Validējiet sava korpusa veiktspēju mūsu hidrodinamiskajā testa baseinā. Mēroga modeļu vilkšana, glisēšanas analīze un slīdes efektivitātes testēšana. Rezervējiet testa sesiju baseinā jau šodien.'
+
+back_text: 'Atpakaļ uz Pētniecības un izstrādes centru'
+home_label: 'Sākums'
+
+hero:
+  tagline: 'Laboratorija 04'
+  title: 'Hidrodinamiskais testa baseins'
+  subtitle: 'Veiktspējas validācija pirms pirmā pilna mēroga prototipa'
+  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
+  image_alt: 'Afarer hidrodinamiskā testa baseina veiktspējas testēšana'
+
+intro: 'Bieža maldīšanās ir uzskats, ka hidrodinamiskā testēšana rezervēta okeāna kuģiem. Patiesībā maza glisējošā korpusa — piemēram, piepūšamā SUP — veiktspēja tikpat lielā mērā atkarīga no tā zemūdens formas, cik tankkuģis no sava spuldzes deguna. Trimmešanas leņķis, apmērcētās virsmas laukums, šļakatu veidošanās un ventilācija ievērojami ietekmē slīdi, ātrumu un brauciena komfortu. Afarer mēs izmantojam īpašu hidrodinamisko testa baseinu, kas ļauj mums kvantificēt šos efektus modeļa mērogā — pirms auduma un veidņu investēšanas pilna izmēra prototipā.'
+
+content_html: |
+  <h2>Kāpēc testēt airu dēli baseinā?</h2>
+  <p>Testēšana modeļa mērogā (parasti no 1:3 līdz 1:5) dod mums iespēju ātri un izdevīgi iterēt korpusu formas. Nedēļa baseinā var dot tos pašus veiktspējas datus, kuri pilna mēroga mēģinājumu un kļūdu ceļā prasītu mēnešus — un tikai daļu no izmaksām.</p>
+
+  <h2>Objekta specifikācijas</h2>
+  <table>
+    <thead><tr><th>Parametrs</th><th>Specifikācija</th></tr></thead>
+    <tbody>
+      <tr><td>Baseina izmēri</td><td>35 m (garums) × 3.5 m (platums) × 1.8 m (dziļums)</td></tr>
+      <tr><td>Vilcējs ratiņi</td><td>Elektriski servovadīti, maksimālais ātrums 12 m/s (23 mezgli), ātruma precizitāte ± 0.5 %</td></tr>
+      <tr><td>Vilņu ģenerators</td><td>Lapu tipa, programmējami regulāri un neregulāri jūras stāvokļi, Hs līdz 0.3 m modeļa mērogā</td></tr>
+      <tr><td>Mēraparatiūra</td><td>6 komponentu dinaminometrs (pretestība, sānu spēks,Virziena moments), akselerometri, klinometri, vilņu zondes</td></tr>
+      <tr><td>Datu iegūšana</td><td>Paraugu ņemšana 1000 Hz uz kanālu, reāllaika attēlojums + pēcapstrādes komplekts</td></tr>
+      <tr><td>Modeļu izgatavošana</td><td>Pašu CNC frēzēšana un 3D drukāšana modeļu korpusem līdz 1.8 m LOA</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Mūsu testēšanas programma</h2>
+  <p>Standarta korpusa izstrādes programma mūsu baseinā seko šai secībai:</p>
+  <ol>
+    <li><strong>Modeļa izgatavošana</strong> — 1:3.5 mēroga modelis tiek izfrēzēts ar CNC no augsta blīvuma putām un pārklāts ar stiklšķiedu stingrībai. Svars un masa centrs tiek pielāgoti, lai atbilstu Frauda mērogotam pilnas slodzes stāvoklim.</li>
+    <li><strong>Pretestības braucieni</strong> — Modelis tiek vilkts 8-10 ātrumos, kas aptver darbības diapazonu. Kopējā pretestība tiek izmērīta un sadalīta berzes un atlikuma komponentēs, izmantojot ITTC-1957 metodi.</li>
+    <li><strong>Trimmešanas un iegrimšanas mērījumi</strong> — Brauciena trimmešana un iegrimšana tiek reģistrēta pie katra ātruma. Mērķis ir optimāls trimmešanas leņķis 4-6° glisējošiem korpusem.</li>
+    <li><strong>Ūdens pēdu izpēte</strong> — Šķērseniešu vilņu griezumi tiek izmērīti pie diviem ātrumiem, lai novērtētu vilņveidošanas pretestību un identificētu šķērseniešu vilņu mijiedarbību, kas var izraisīt pakaļgala traucējumus.</li>
+    <li><strong>Jūras spējas (pēc izvēles)</strong> — Braucieni pret vilni un ar vilni regulāros viļņos, lai izmērītu pievienoto pretestību, vertikālo paātrinājumu un trieciena varbūtību.</li>
+    <li><strong>Datu analīze un ieteikumi</strong> — Tiek piegādāts pilns pārskats ar salīdzinošām diagrammām, ātruma/jaudas līknēm un konkrētiem dizaina ieteikumiem pilna mēroga korpusam.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Tipiskie baseina testu rezultāti — pretestība pret ātrumu (tūrisma SUP korpusa, 1:3.5 mērogs)</p>
+    <div class="space-y-2">
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">5 mezgli (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:18%"></div>
+        </div>
+        <span class="w-16 text-right">42 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">10 mezgli (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:35%"></div>
+        </div>
+        <span class="w-16 text-right">81 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">15 mezgli (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:52%"></div>
+        </div>
+        <span class="w-16 text-right">121 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">20 mezgli (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:68%"></div>
+        </div>
+        <span class="w-16 text-right">158 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">25 mezgli (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:85%"></div>
+        </div>
+        <span class="w-16 text-right">197 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">30 mezgli (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:100%"></div>
+        </div>
+        <span class="w-16 text-right">232 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Pretestība modeļa mērogā (N) pie Frauda mērogotiem ātrumiem. Pilna mēroga pretestības prognoze seko ITTC-1978 veiktspējas prognozēšanas metodei.</p>
+  </div>
+
+  <h2>Ekspertu komanda</h2>
+  <p>Mūsu baseinu vada hidrodinamiķis ar doktora grādu šķidrumu dinamikā un 8 gadu vilkšanas baseina pieredzi lielā Eiropas jūras pētniecības institūtā. Viņu atbalsta tehniķis, kurš sagatavo visus modeļus un mēraparatiūru. Komanda ievēro ITTC (Starptautiskās vilkšanas baseinu konferences) ieteiktās procedūras, lai nodrošinātu, ka katrs tests ir atkārtojams, izsekojams un starptautiski aizstāvams.</p>
+
+  <h2>Baseina testēšana pielāgota korpusa izstrādei</h2>
+  <p>Mūsu baseins tiek izmantots ne tikai pašu projektētiem korpusem — mēs regulāri veicam testēšanas programmas klientiem, kas vēlas validēt pielāgotu korpusa formu vai izpētīt veiktspējas problēmu:</p>
+  <ul>
+    <li><strong>Korpusu formu salīdzinājums</strong> — Divas vai vairākas kandidātu korpusu formas tiek testētas identiskos apstākļos, sniedzot objektīvu pretestības/ātruma/stabilitātes salīdzinājumu, lai pamatotu jūsu dizaina izvēli.</li>
+    <li><strong>Piederumu optimizācija</strong> — Spurņu konfigurācijas, sānu profili un līkuma varianti var tikt testēti dažādās kombinācijās, lai kvantificētu to individuālo ieguldījumu pretestības samazinājumā.</li>
+    <li><strong>Slīdes efektivitātes izpēte</strong> — Pretestības dati tiek pārvērsti slīdes efektivitātes līknē, ļaujot jums līdzsvarot korpusa tilpumu, līkumu un stingrību jūsu mērķa airēšanas ātrumam un kravai.</li>
+  </ul>
+
+  <h2>Kāpēc testēt pie mums?</h2>
+  <p>Mēs nesniedzam tikai neapstrādātu skaitļu kopu. Mūsu pārskati pārvērš baseina datus praktiskos inženiertehniskos ieteikumos: "Pievienojiet 8 mm deguna līkuma, lai samazinātu apmērcēto virsmu brauciena ātrumā", "Samaziniet pakaļgala līkumu par 3°, lai pagarinātu ūdenslīniju tūrisma tempā" vai "Pārvietojiet platāko punktu 150 mm uz pakaļgalu labākai noturībai uz kursa". Jūs aiziet ar skaidru izpratni par to, ko mainīt un kāpēc.</p>
+  <p>Mūsu baseins ir pieejams arī neatkarīgai trešās puses testēšanai par samaksu. Ja jūs izstrādājat korpusu un vēlaties objektīvu, profesionāli veiktu hidrodinamisku novērtējumu, mēs gaidām jūsu pieprasījumu.</p>
+
+cta:
+  title: 'Rezervējiet testa sesiju baseinā'
+  subtitle: 'Neatkarīgi no tā, vai jums nepieciešama pilna izstrādes programma vai viens salīdzinošs tests, mēs varam pielāgoties jūsu grafikam.'
+  button_text: 'Sazinieties ar mūsu hidrodinamikas komandu'
+  button_link: /contact

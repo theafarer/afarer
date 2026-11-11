@@ -1,0 +1,89 @@
+meta:
+  title: 'Pusat Pengelasan RF — Perekatan Dielektrik untuk Sambungan Kedap Udara | {SITE}'
+  description: 'Teknologi pengelasan frekuensi radio yang menghasilkan sambungan kedap udara yang patuh standar. Pengujian peel, validasi retensi udara, dan spesifikasi sambungan kustom.'
+back_text: 'Kembali ke Pusat R&D'
+home_label: 'Beranda'
+
+hero:
+  tagline: 'Lab 03'
+  title: 'Pusat Pengelasan RF'
+  subtitle: 'Teknologi perekatan dielektrik untuk las yang bertahan di bawah tekanan'
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1-1200w.webp'
+  image_alt: 'Proses perekatan dielektrik pengelasan RF Afarer'
+
+intro: 'SUP tiup hanya seandal sambungannya. Satu las yang lemah dapat mengorbankan seluruh ruang — dan di laut, kegagalan ruang bukanlah sekadar ketidaknyamanan; itu adalah bahaya keselamatan. Di Afarer, kami telah berinvestasi dalam Pusat Pengelasan Frekuensi Radio (RF) khusus yang menggabungkan press pengelasan dielektrik kelas industri dengan kontrol proses yang ketat serta pengujian pasca-pengelasan. Setiap sambungan yang kami hasilkan terdokumentasi, terlacak, dan tersertifikasi memenuhi atau melampaui persyaratan EN ISO 25649 — standar Eropa untuk peralatan rekreasi tiup.'
+
+content_html: |
+  <h2>Ilmu di balik sambungan</h2>
+  <p>Pengelasan RF menggunakan energi elektromagnetik frekuensi tinggi (umumnya 27.12 MHz) untuk mengeksitasi molekul polar di dalam kain berlapis PVC, menghasilkan panas secara presisi pada antarmuka material. Berbeda dengan pengelasan udara panas atau hot-wedge, pengelasan RF menciptakan ikatan molekuler sejati — dua lapisan kain menyatu menjadi satu material homogen di zona las, menghasilkan sambungan yang sama kuatnya dengan material induknya.</p>
+
+  <h2>Peralatan pengelasan dan kontrol proses</h2>
+  <p>Pusat pengelasan kami dilengkapi dengan:</p>
+  <table>
+    <thead><tr><th>Mesin</th><th>Daya / Kapasitas</th><th>Aplikasi</th></tr></thead>
+    <tbody>
+      <tr><td>Press dielektrik RF 1</td><td>15 kW, plat 2000 × 600 mm</td><td>Sambungan longitudinal utama, sambungan rail-ke-lambung</td></tr>
+      <tr><td>Press dielektrik RF 2</td><td>10 kW, plat 1500 × 500 mm</td><td>Las baffle, sambungan penutup rail, tambalan valve</td></tr>
+      <tr><td>Pengelas RF kendali CNC</td><td>8 kW, meja XY 2500 × 1200 mm</td><td>Sambungan melengkung, emboss logo/panel, tambalan presisi</td></tr>
+      <tr><td>Pengelas otomatis hot-wedge</td><td>Suhu variabel, maksimum 1.2 m/menit</td><td>Metode cadangan untuk kain rail PVC tebal dan pekerjaan perbaikan</td></tr>
+    </tbody>
+  </table>
+  <p>Setiap press RF dilengkapi dengan pemantauan suhu dan tekanan loop tertutup. Parameter las — daya, waktu penekanan, waktu pendinginan, tekanan elektroda — diprogram per jenis material dan dicatat dalam Manufacturing Execution System (MES) kami untuk keterlacakan penuh.</p>
+
+  <h2>Pengujian kualitas las — setiap sambungan, setiap papan</h2>
+  <p>Integritas las diverifikasi melalui protokol empat uji yang wajib:</p>
+  <ol>
+    <li><strong>Inspeksi visual</strong> — 100 % sambungan diperiksa secara visual untuk deteksi tembus bakar, ketidaksejajaran, kontaminasi, atau fusi yang tidak sempurna. Ambang tingkat penolakan: 0.5 % dari meter liniar.</li>
+    <li><strong>Uji peel</strong> — Strip selebar 25 mm dipotong dari kupon uji yang dilas bersama setiap batch produksi. Gaya peel minimum: 120 N/25 mm untuk PVC 1100 dtex.</li>
+    <li><strong>Uji retensi udara</strong> — Setiap ruang yang telah selesai ditekan hingga 1.5 × tekanan kerja dan ditahan selama 30 menit. Penurunan tekanan tidak boleh melebihi 2 %.</li>
+    <li><strong>Uji siklus termal</strong> — Kupon sampel disikluskan dari -20 °C hingga +60 °C sebanyak 50 siklus, lalu diuji peel kembali. Penurunan kekuatan yang dapat diterima: &lt; 10 %.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Perbandingan Kekuatan Peel — Las RF vs Udara Panas (PVC 1100 dtex)</p>
+    <div class="space-y-3">
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Las RF</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">184 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Udara Panas</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">130 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Min</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-green-500 rounded" style="width:48%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">96 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Pengelasan RF secara konsisten mencapai 90-95 % kekuatan material induk, jauh di atas nilai minimum.</p>
+  </div>
+
+  <h2>Keahlian profesional</h2>
+  <p>Tim pengelasan kami dipimpin oleh seorang insinyur proses senior dengan 11 tahun pengalaman dalam pengelasan dielektrik tekstil berlapis. Setiap operator menyelesaikan program sertifikasi internal 6 bulan sebelum diizinkan bekerja pada sambungan produksi. Sertifikasi ulang wajib dilakukan setiap tahun, termasuk uji las praktis yang dievaluasi terhadap standar Grade-A internal kami (kekuatan peel ≥ 160 N/25 mm).</p>
+
+  <h2>Solusi pengelasan kustom untuk kebutuhan unik</h2>
+  <p>Kami memahami bahwa satu spesifikasi pengelasan tidak cocok untuk semua aplikasi. Pusat Pengelasan RF kami secara rutin mengembangkan konfigurasi sambungan kustom bagi klien dengan persyaratan khusus:</p>
+  <ul>
+    <li><strong>Tambalan penguat multilapis</strong> — untuk area dengan keausan tinggi seperti rail hidung dan buritan, kami mengembangkan las RF multipass yang mengintegrasikan lapisan luar tahan aus tanpa mengorbankan fleksibilitas.</li>
+    <li><strong>Sambungan konduktif atau kedap-RF</strong> — untuk aplikasi militer atau pengawasan yang memerlukan pelindung elektromagnetik, kami mengelas lapisan mesh konduktif di dalam susunan sambungan.</li>
+    <li><strong>Pengelasan panel perubahan warna</strong> — panel kain dua warna (mis. lambung oranye + dek abu-abu) dilas dengan tumpang tindih tersembunyi untuk menjaga estetika merek tanpa garis sambungan yang terlihat.</li>
+  </ul>
+
+  <h2>Komitmen kami kepada Anda</h2>
+  <p>Setiap papan yang kami kirim membawa jaminan kualitas las kami: jika ada sambungan yang gagal dalam penggunaan normal selama masa garansi, kami memperbaiki atau mengganti ruang yang terdampak tanpa biaya, dan investigasi akar masalah dilakukan untuk mencegah keberulangan. Ini bukan sekadar garansi — ini adalah komitmen terhadap perbaikan berkelanjutan yang didorong oleh data operasional dunia nyata.</p>
+  <p>Saat Anda memilih Afarer, Anda memilih sambungan yang direkayasa, diuji, dan terdokumentasi — bukan sekadar dilas. Itulah perbedaan antara papan yang mengapung dan papan yang berkinerja.</p>
+
+cta:
+  title: 'Diskusikan kebutuhan pengelasan Anda'
+  subtitle: 'Spesifikasi sambungan kustom, kompatibilitas material, atau validasi proses.'
+  button_text: 'Hubungi tim pengelasan kami'
+  button_link: /contact

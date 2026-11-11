@@ -1,0 +1,85 @@
+meta:
+  title: 'Studio Rekayasa Lambung — CAD, FEA & Desain Lambung Kustom | {SITE}'
+  description: 'Jelajahi Studio Rekayasa Lambung kami untuk desain CAD, analisis elemen hingga (FEA), dan pengembangan lambung SUP berperforma tinggi kustom. Hubungi tim rekayasa kami untuk memulai proyek papan Anda berikutnya.'
+back_text: 'Kembali ke Pusat R&D'
+home_label: 'Beranda'
+
+hero:
+  tagline: 'Lab 02'
+  title: 'Studio Rekayasa Lambung'
+  subtitle: 'Simulasi digital, kecerdasan struktural, desain lambung kustom'
+  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
+  image_alt: 'Stasiun kerja desain CAD rekayasa lambung Afarer'
+
+intro: 'Lambung adalah tulang punggung setiap SUP tiup. Lambung harus cukup ringan untuk meluncur efisien, cukup kuat untuk menghadapi garis pantai berbatu, dan cukup kaku untuk mengubah setiap dayungan menjadi gerak maju. Di Afarer, Studio Rekayasa Lambung kami memadukan pemodelan CAD canggih, analisis elemen hingga (FEA), dan pengalaman desain papan praktis selama puluhan tahun untuk menghadirkan lambung yang dioptimalkan untuk disiplin yang dituju — bukan bentuk generik yang diadaptasi dari katalog.'
+
+content_html: |
+  <h2>Tempat kekuatan bertemu hidrodinamika</h2>
+  <p>Kami bekerja dengan tiga platform konstruksi utama — inti PVC drop-stitch yang diperkuat, laminat fiberglass yang diletakkan manual, dan polietilena cetak rotasi — serta memiliki kemampuan rekayasa untuk merancang, mensimulasikan, dan memvalidasi masing-masing secara internal.</p>
+
+  <h2>Alat dan standar desain</h2>
+  <p>Lingkungan rekayasa digital kami meliputi:</p>
+  <table>
+    <thead><tr><th>Kemampuan</th><th>Perangkat Lunak / Alat</th><th>Aplikasi</th></tr></thead>
+    <tbody>
+      <tr><td>Pemodelan parametrik 3D</td><td>SolidWorks Professional</td><td>Permukaan lambung, penguatan rail dan stringer, tata letak deck, titik mount peralatan</td></tr>
+      <tr><td>Analisis elemen hingga</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Pemetaan tegangan, analisis modal, simulasi benturan/tabrakan</td></tr>
+      <tr><td>Dinamika fluida komputasional</td><td>Ansys Fluent / Star-CCM+</td><td>Prediksi hambatan hidrodinamika, optimalisasi trim</td></tr>
+      <tr><td>Rekayasa laminat</td><td>ESAComp / CADEC</td><td>Penumpukan lapisan fiberglass, pemilihan inti, estimasi berat</td></tr>
+      <tr><td>Simulasi aliran cetakan</td><td>Moldex3D</td><td>Prediksi ketebalan dinding rotomoulding</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Alur kerja rekayasa kami</h2>
+  <p>Setiap desain lambung, baik model standar maupun proyek sepenuhnya kustom, mengikuti proses lima tahap yang ketat:</p>
+  <ol>
+    <li><strong>Pengumpulan konsep &amp; persyaratan</strong> — Kami bertemu dengan Anda untuk menentukan berat pengendara dan muatan, rentang kecepatan, kapabilitas kondisi air, persyaratan transportasi, dan peralatan misi khusus apa pun (mount deck, posisi pengikat kargo, integrasi aksesori).</li>
+    <li><strong>Pembentukan permukaan 3D &amp; perhitungan hidrostatik</strong> — Bentuk lambung dimodelkan di SolidWorks dan diperiksa untuk stabilitas hidrostatik, distribusi volume, dan momen pemulihan menggunakan alat analisis bawaan.</li>
+    <li><strong>FEA struktural</strong> — Kasus beban ditentukan: statis (pengendara + perlengkapan), dinamis (benturan pendaratan ombak pada 5g), dan kandas (menabrak garis pantai berbatu pada 3 m/detik). Kontur tegangan ditinjau; faktor keamanan ≥ 2,5 bersifat wajib.</li>
+    <li><strong>Optimalisasi hambatan CFD</strong> — Lambung disimulasikan pada tiga kondisi pembebanan dan lima kecepatan. Luas permukaan basah, sudut trim, dan hambatan residual dikurangi secara iteratif.</li>
+    <li><strong>Tinjauan desain &amp; rilis</strong> — Paket rekayasa lengkap (model 3D, laporan FEA, laporan CFD, estimasi berat, ply book) ditinjau oleh insinyur senior kami sebelum dirilis ke workshop prototipe.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Distribusi Tegangan FEA — Lambung SUP Touring (Drop-Stitch Diperkuat)</p>
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">2,8 : 1</span>
+        <span class="text-gray-500">Faktor keamanan pada muatan maksimum</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">15,2 %</span>
+        <span class="text-gray-500">Pengurangan hambatan dibanding generasi sebelumnya</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
+        <span class="text-gray-500">Tekanan slamming puncak (batas desain)</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">18.000 jam</span>
+        <span class="text-gray-500">Total durasi FEA pada 2025</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Kustomisasi: lambung Anda, aturan Anda</h2>
+  <p>Tidak ada dua pendayung dengan persyaratan identik. SUP memancing membutuhkan lambung planing yang lebar dan stabil; papan touring membutuhkan lambung displacement yang memaksimalkan luncuran; SUP surf membutuhkan rail responsif dan rocker yang disetel. Kami tidak memaksakan aplikasi Anda ke bentuk lambung yang sudah ada. Kami merancang dari spesifikasi Anda ke atas.</p>
+  <p>Contoh proyek rekayasa lambung kustom terkini:</p>
+  <ul>
+    <li>SUP touring dengan panjang diperbesar untuk operator ekowisata Karibia, dengan haluan diperkuat untuk pendaratan pantai (+15 % ketebalan rail).</li>
+    <li>SUP patroli berkepadaran tinggi untuk otoritas pelabuhan, dengan mount peralatan terintegrasi dan rail taktis.</li>
+    <li>SUP touring ekspedisi untuk armada rental, dengan rail diperkuat dan pengikat kargo ekstra.</li>
+  </ul>
+
+  <h2>Insinyur kami</h2>
+  <p>Studio ini dipimpin oleh seorang insinyur senior dengan pengalaman 14 tahun dalam desain papan berperforma tinggi, didukung oleh dua insinyur mesin yang berspesialisasi dalam FEA dan CFD. Ketiganya memegang gelar lanjutan di bidang rekayasa marinir atau mesin dari universitas yang diakui secara internasional. Tim ini secara rutin mempublikasikan karya di jurnal industri dan memaparkan di konferensi internasional tentang rekayasa olahraga dayung berperforma tinggi.</p>
+
+  <h2>Bermitra dengan kami untuk lambung Anda berikutnya</h2>
+  <p>Dari sketsa konsep pertama hingga laporan tegangan akhir, Studio Rekayasa Lambung kami adalah mitra Anda dalam menciptakan papan yang tidak hanya dibangun — tetapi direkayasa. Kami menginvestasikan jam simulasi di awal agar setiap lasan, setiap lapisan laminat, dan setiap kurva lambung ada karena suatu alasan.</p>
+  <p>Baik Anda membutuhkan modifikasi kecil pada model yang ada maupun desain sepenuhnya dari nol, kami siap mendiskusikan persyaratan Anda.</p>
+
+cta:
+  title: 'Mulai konsultasi desain lambung Anda'
+  subtitle: 'Ceritakan profil misi Anda dan kami akan mengusulkan jalur rekayasa.'
+  button_text: 'Hubungi tim rekayasa kami'
+  button_link: /contact

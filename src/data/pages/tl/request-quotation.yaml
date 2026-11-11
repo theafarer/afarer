@@ -1,0 +1,99 @@
+meta:
+  title: 'Humiling ng Quotation — OEM SUP Manufacturing | {SITE}'
+  description: 'Humiling ng detalyadong quotation para sa iyong proyekto ng inflatable SUP. OEM/ODM manufacturing, private label, o custom fleet — tutugon kami sa loob ng 2 business day.'
+  keywords:
+    - 'humiling ng quote sa sup'
+    - 'quote sa oem paddle board'
+    - 'quotation mula sa sup factory'
+    - 'presyo ng inflatable sup'
+hero_text:
+  tagline: 'Kumuha ng Quote'
+  title: 'Humiling ng Quotation<br />para sa Iyong Proyekto'
+  subtitle: 'Sabihin sa amin ang iyong mga kinakailangan at tutugon ang aming koponan ng detalyadong quotation sa loob ng 2 business day.'
+steps2_process:
+  title: 'Paano Ito Gumagana'
+  subtitle: 'Apat na simpleng hakbang mula tanong hanggang quotation.'
+  items:
+    - title: 'Hakbang 1: Ipasa ang Iyong mga Kinakailangan'
+      description: 'Punan ang form sa ibaba na may uri ng iyong produkto, dami, at espesipikasyon. Mas maraming detalyeng ibibigay mo, mas tumpak ang iyong quotation.'
+      icon: tabler:file-text
+    - title: 'Hakbang 2: Sinusuri at Pinapayuhan Namin'
+      description: 'Sinusuri ng aming engineering team ang iyong mga kinakailangan at maaaring makipag-ugnayan sa iyo para sa paglilinaw. Nagbibigay kami ng mga rekomendasyon sa configuration at opsyon ng produkto.'
+      icon: tabler:users
+    - title: 'Hakbang 3: Tatanggapin ang Iyong Quote'
+      description: 'Matatanggap mo ang detalyadong quotation na kinabibilangan ng presyo bawat unit, MOQ, lead time, payment terms, at opsyon sa pagpapadala. Karaniwang sa loob ng 48 oras.'
+      icon: tabler:currency-dollar
+    - title: 'Hakbang 4: Sample at Produksyon'
+      description: 'Pagkatapos matanggap ang quote, magpapatuloy kami sa paggawa ng sample (kung naaangkop) o direkta sa malaking produksyon. Regular na update sa buong proseso.'
+      icon: tabler:building-factory
+content_form:
+  tagline: 'Form ng Quotation'
+  title: 'Sabihin sa Amin ang Tungkol sa Iyong Proyekto'
+  subtitle: 'Lahat ng field na may * ay kailangan.'
+  contact_fields:
+    firstName: 'Pangalan'
+    lastName: 'Apelyido'
+    companyName: 'Pangalan ng Kumpanya'
+    email: 'E-mail'
+  fields:
+    - name: 'Kategorya ng Produkto'
+      type: select
+      options:
+        - 'SUP Board'
+        - 'Inflatable SUP'
+        - 'Inflatable SUP Board'
+        - 'Life Vest'
+        - 'Marine Accessory'
+        - 'Custom OEM/ODM'
+    - name: 'Aplikasyon'
+      type: select
+      options:
+        - 'Diving Center'
+        - 'Pangingisda'
+        - 'Marine Tourism / Resort'
+        - 'Search & Rescue'
+        - 'Gobyerno / Military'
+        - 'OEM / Private Label'
+        - 'Personal / Recreational'
+        - 'Iba pa'
+    - name: 'Dami'
+      type: text
+      placeholder: 'hal. 50 unit'
+    - name: 'Target na Merkado'
+      type: text
+      placeholder: 'hal. Europa, North America, Middle East'
+    - name: 'Bansang Patutunguhan'
+      type: text
+      placeholder: 'hal. Italy, UAE, USA, Australia'
+    - name: 'Kagustuhan sa Materyales'
+      type: select
+      options:
+        - 'Walang Kagustuhan'
+        - 'PVC na Marine-Grade (1100 dtex)'
+        - 'Fiberglass Hull'
+        - 'Aluminum Hull'
+    - name: 'Kinakailangan sa Makina'
+      type: text
+      placeholder: 'hal. standard na paddle setup, electric pump, custom na kulay'
+    - name: 'Kinakailangang Customization'
+      type: text
+      placeholder: 'hal. custom na kulay, branding/logo, packaging, espesyal na fitting'
+    - name: 'Timeline'
+      type: text
+      placeholder: 'hal. paghahatid sa loob ng 90 araw'
+    - name: 'Karagdagang mga Kinakailangan'
+      type: textarea
+      placeholder: 'Ilarawan ang iyong aplikasyon, teknikal na espesipikasyon, o anumang espesyal na kinakailangan — isama ang mga reference drawing, espesipikasyon, o link kung mayroon'
+    - name: 'I-upload ang Espesipikasyon'
+      type: file
+      placeholder: 'I-upload ang iyong spec sheet, drawing, o reference document (PDF, DWG, DXF)'
+    - name: 'I-upload ang Logo / Artwork'
+      type: file
+      placeholder: 'I-upload ang iyong logo o artwork para sa custom branding (AI, EPS, PNG)'
+cta:
+  title: 'Mas gusto mong talakayin sa email?'
+  subtitle: 'Ipadala nang direkta ang iyong tanong sa aming sales team at tutugon kami sa loob ng 24 oras.'
+  actions:
+    - variant: primary
+      text: 'I-email kami nang direkta'
+      href: /contact

@@ -1,0 +1,68 @@
+meta:
+  title: 'Kokybės laboratorija — testavimas ir kokybės užtikrinimas | {SITE}'
+  description: 'Nepriklausoma kokybės laboratorija su ISO 9001 procesais pas afarer: kiekvienas vienetas išbandomas prieš siunčiant, siekiant garantuoti pripučiamų SUP lentų kokybę.'
+  keywords:
+    - 'sup kokybės kontrolė'
+    - 'irklavimo lentų testavimo laboratorija'
+    - 'iso 9001 sup gamykla'
+    - 'pripučiamų sup kokybė'
+hero:
+  tagline: 'Kokybės kontrolės laboratorija'
+  title: 'Testavimo laboratorija ir kokybės užtikrinimas'
+  subtitle: 'Nepriklausoma kokybės laboratorija su ISO 9001 procesais — kiekvienas vienetas išbandomas prieš siunčiant'
+
+intro: 'afarer valdo tam skirtą kokybės kontrolės laboratoriją, kuri veikia nepriklausomai nuo gamybos. Kiekviena žaliavų partija ir kiekviena baigta lenta prieš išleidžiamą praeina dokumentuotus patikros protokolus. Mūsų KK komanda atsiskaito tiesiogiai vadovybei, taip užtikrinant nešališkus kokybės sprendimus.'
+
+highlights:
+  - value: '100%'
+    label: 'Vientetai, išbandyti slėgiu'
+    detail: 'Kiekviena kamera, kiekviena lenta'
+  - value: '24–48 h'
+    label: 'Oro sulaikymo testo trukmė'
+    detail: 'Esant 1.25× nominaliam slėgiui'
+  - value: '&lt;5%'
+    label: 'Didžiausias leistinas slėgio kritimas'
+    detail: 'Per 24–48 valandų laikymo laikotarpį'
+  - value: 'AQL 2.5'
+    label: 'Pagrindinio defekto riba'
+    detail: 'Pagal ISO 2859 atranką'
+
+test_procedures:
+  - title: 'Žaliavų patikra'
+    description: 'Kiekviena įeinanti PVC, „Drop-Stitch“ audinio ir furnitūros partija yra išbandoma prieš priėmimą. Tempimo stipris (ASTM D751), plyšimo atsparumas (ISO 4674) ir UV atsparumas yra patvirtinami. Neatitinkančios medžiagos izoliuojamos ir grąžinamos.'
+    standards:
+      - 'ASTM D751 (tempimas)'
+      - 'ISO 4674 (plyšimas)'
+      - 'ISO 4892 (UV)'
+  - title: 'Proceso metu atliekami KK kontrolės punktai'
+    description: 'Gamybos operatoriai kiekviename etape atlieka savipatikrą. KK auditoriai visos pamainos metu atlieka atsitiktinę atranką. Suvirinimo lupimo testai atliekami kas 50 vienetų. Matmenų patikros atliekamos kas 20-ąjį ruožinį.'
+    standards:
+      - 'ASTM D751 (lupimas)'
+      - 'Vidinis 100 punktų kontrolinis sąrašas'
+      - 'ISO 2859 atranka'
+  - title: '24–48 valandų oro sulaikymo testas'
+    description: 'Kiekviena baliono kamera pripūčiama iki 125 % nominalaus slėgio ir laikoma 24–48 valandas. Slėgio jutikliai registruoja nuolat su temperatūros kompensacija. Bet kuri kamera, viršijanti 5 % slėgio kritimą, automatiškai sukelia partijos pakartotinę patikrą.'
+    standards:
+      - 'EN ISO 25649'
+      - 'CE 2013/53/EU'
+  - title: 'Apkrovos ir balanso testavimas'
+    description: 'Baigtos lentos yra išbandomos esant didžiausiai nominaliai talpai dėl stabilumo ir standumo. Kiekviena lenta prieš galutinio patikrinimo patvirtinimą atlieka vandens testavimą.'
+    standards:
+      - 'ISO 12217'
+      - 'CE 2013/53/EU'
+
+equipment:
+  - name: 'Universalioji testavimo mašina (tempimas)'
+    spec: '5 kN, atitinka ASTM D751'
+  - name: 'Slėgio mažėjimo testuotojas'
+    spec: 'Daugiakanalis, 0–50 psi, duomenų registravimas'
+  - name: 'UV dėvėjimo kamera'
+    spec: 'ISO 4892, 1,000 h ciklai'
+  - name: 'Storio matuoklis (skaitmeninis)'
+    spec: '0.01 mm skiriamoji geba'
+  - name: 'Lupimo testuotojas (suvirinimas)'
+    spec: 'Su varikliu, 50 N talpa'
+  - name: 'Temperatūros kamera'
+    spec: '-40 °C iki +100 °C'
+  - name: 'Nuotėkio nustatymo bakas'
+    spec: '6 m × 2 m, apšviestas'

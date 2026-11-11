@@ -1,0 +1,99 @@
+meta:
+  title: 'Árajánlat kérése — OEM SUP gyártás | {SITE}'
+  description: 'Kérjen részletes árajánlatot felfújható SUP projektjéhez. OEM/ODM gyártás, saját márka vagy egyedi flották — 2 munkanapon belül válaszolunk.'
+  keywords:
+    - 'sup árajánlat kérése'
+    - 'oem paddle lap árajánlat'
+    - 'sup gyári árajánlat'
+    - 'felfújható sup ár'
+hero_text:
+  tagline: 'Árajánlat kérése'
+  title: 'Kérjen árajánlatot<br />a projektjéhez'
+  subtitle: 'Mesélje el igényeit, és csapatunk 2 munkanapon belül részletes árajánlattal válaszol.'
+steps2_process:
+  title: 'Hogyan működik'
+  subtitle: 'Négy egyszerű lépés a megkereséstől az árajánlatig.'
+  items:
+    - title: '1. lépés: Igények benyújtása'
+      description: 'Töltse ki az alábbi űrlapot a termék típusával, mennyiségével és specifikációival. Minél több részletet ad meg, annál pontosabb lesz az árajánlata.'
+      icon: tabler:file-text
+    - title: '2. lépés: Felülvizsgálat és tanácsadás'
+      description: 'Mérnöki csapatunk átnézi igényeit, és esetleg felkeresi Önt pontosításért. Javaslatokat adunk a termék konfigurációra és opciókra.'
+      icon: tabler:users
+    - title: '3. lépés: Árajánlat megérkezése'
+      description: 'Részletes árajánlatot kap egységárazással, MOQ-val, átfutási idővel, fizetési feltételekkel és szállítási opciókkal. Jellemzően 48 órán belül.'
+      icon: tabler:currency-dollar
+    - title: '4. lépés: Minta és gyártás'
+      description: 'Az árajánlat elfogadása után mintagyártásra (ha alkalmazható) vagy közvetlenül tömeggyártásra kerül sor. Rendszeres tájékoztatás a teljes folyamat alatt.'
+      icon: tabler:building-factory
+content_form:
+  tagline: 'Árajánlatkérő űrlap'
+  title: 'Meséljen a projektjéről'
+  subtitle: 'A *-gal jelölt mezők kötelezőek.'
+  contact_fields:
+    firstName: 'Keresztnév'
+    lastName: 'Vezetéknév'
+    companyName: 'Cégnév'
+    email: 'E-mail'
+  fields:
+    - name: 'Termékkategória'
+      type: select
+      options:
+        - 'SUP lap'
+        - 'Felfújható SUP'
+        - 'Felfújható SUP lap'
+        - 'Mentőmellény'
+        - 'Tengeri kiegészítő'
+        - 'Egyedi OEM/ODM'
+    - name: 'Alkalmazás'
+      type: select
+      options:
+        - 'Búvárközpont'
+        - 'Horgászat'
+        - 'Tengeri turizmus / üdülő'
+        - 'Keresés és mentés'
+        - 'Kormányzati / katonai'
+        - 'OEM / saját márka'
+        - 'Személyes / szabadidős'
+        - 'Egyéb'
+    - name: 'Mennyiség'
+      type: text
+      placeholder: 'pl. 50 egység'
+    - name: 'Célpiac'
+      type: text
+      placeholder: 'pl. Európa, Észak-Amerika, Közel-Kelet'
+    - name: 'Szállítási ország'
+      type: text
+      placeholder: 'pl. Olaszország, EAE, USA, Ausztrália'
+    - name: 'Anyagpreferencia'
+      type: select
+      options:
+        - 'Nincs preferencia'
+        - 'Tengeri minőségű PVC (1100 dtex)'
+        - 'Üvegszálas hajótest'
+        - 'Alumínium hajótest'
+    - name: 'Motorigény'
+      type: text
+      placeholder: 'pl. standard evező szett, elektromos szivattyú, egyedi színek'
+    - name: 'Testreszabási igény'
+      type: text
+      placeholder: 'pl. egyedi színek, márkázás/logó, csomagolás, különleges szerelvények'
+    - name: 'Ütemterv'
+      type: text
+      placeholder: 'pl. szállítás 90 napon belül'
+    - name: 'További követelmények'
+      type: textarea
+      placeholder: 'Írja le az alkalmazást, műszaki specifikációkat vagy bármilyen különleges követelményt — csatoljon referenciákat, specifikációkat vagy linkeket, ha rendelkezésre állnak'
+    - name: 'Specifikáció feltöltése'
+      type: file
+      placeholder: 'Töltse fel specifikációs lapját, rajzát vagy referenciadokumentumát (PDF, DWG, DXF)'
+    - name: 'Logó / grafika feltöltése'
+      type: file
+      placeholder: 'Töltse fel logóját vagy grafikáját az egyedi márkázáshoz (AI, EPS, PNG)'
+cta:
+  title: 'Inkább e-mailben beszélne?'
+  subtitle: 'Küldje el megkeresését közvetlenül értékesítési csapatunknak, és 24 órán belül válaszolunk.'
+  actions:
+    - variant: primary
+      text: 'Írjon nekünk közvetlenül'
+      href: /contact

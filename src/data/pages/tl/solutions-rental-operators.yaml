@@ -1,0 +1,71 @@
+meta:
+  title: 'Tagapagtustos ng Kagamitang SUP Rental at mga Solusyon sa Fleet | {SITE}'
+  description: 'Tagapagtustos ng kagamitang SUP rental para sa mga operator ng rental. Mga komersyal na SUP board na mataas ang rotasyon na in-engineer para sa araw-araw na paggamit — PVC na UV-resistant, pinalakas na seam, materyales na mabilis matuyo. Palakihin ang iyong negosyong rental sa Afarer.'
+
+hero:
+  tagline: 'Mga Operator ng Rental'
+  title: 'Palakihin Ang Iyong Negosyong Rental<br />Nang May Kumpiyansa'
+  subtitle: 'Tagapagtustos ng kagamitang SUP rental para sa mga operator ng rental. Mga SUP board na mataas ang rotasyon na in-engineer para sa araw-araw na paggamit sa rental, 365 araw kada taon. Ang iyong kita ay walang pahinga.'
+  image:
+    src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
+    alt: 'Abalang rental kiosk na may mga SUP board na handa na para sa mga bisita'
+
+features:
+  title: 'Ginawa para sa Higpit ng Rental'
+  subtitle: 'Ang bawat board ay in-engineer para sa 500+ siklo ng rental nang kaunting pagpapanatili lamang.'
+  items:
+    - title: '500+ Siklo ng Rental'
+      description: 'Sinusubok na makaligtas sa araw-araw na paggamit sa tubig-alat, araw, at buhangin.'
+      icon: 'tabler:shield-check'
+    - title: 'Fabric na UV-Resistant'
+      description: 'Walang pagkaputla o pagkasira pagkatapos ng 1 taon na imbakan sa labas.'
+      icon: 'tabler:sun'
+    - title: 'Pinalakas na Seam'
+      description: '3x na mas malakas kaysa sa karaniwang konstruksyon ng inflatable board.'
+      icon: 'tabler:layers-intersect'
+    - title: 'Materyales na Mabilis Matuyo'
+      description: 'Ang mga board ay handa na para sa susunod na rental sa mas mababa sa 30 minuto.'
+      icon: 'tabler:droplet'
+    - title: 'Imbakan na Matatabunan'
+      description: 'Disenyong nakakatipid ng espasyo — mag-imbak ng 40% pang maraming board sa parehong lugar.'
+      icon: 'tabler:stack'
+    - title: 'Mga Laking May Kodigo ng Kulay'
+      description: 'Agad makukuha ng tauhan ang tamang board gamit ang laking may kodigo ng kulay.'
+      icon: 'tabler:color-swatch'
+
+stats:
+  title: 'Mga Sukatan ng Operasyon'
+  stats:
+    - title: 'Daloy ng Board'
+      amount: '< 5 min'
+    - title: 'Taunang Pagpapanatili'
+      amount: '~15 min/board'
+    - title: 'Pagpapadala ng Piyesa'
+      amount: '48h'
+    - title: 'Rate ng Depekto'
+      amount: '< 0.5%'
+
+fleet_guide:
+  title: 'Gabay sa Laki ng Fleet'
+  subtitle: 'Tantyahin ang laki ng fleet at potensyal na kita para sa iyong operasyon ng rental.'
+  tiers:
+    - label: 'Maliit na Kiosk'
+      boards: '15-20'
+      revenue: 'XX,XXX USD/taon'
+    - label: 'Katamtamang Operasyon'
+      boards: '30-50'
+      revenue: 'XX,XXX USD/taon'
+    - label: 'Malaking Rental sa Beach'
+      boards: '50-100'
+      revenue: 'XXX,XXX USD/taon'
+
+cta:
+  title: 'Handa nang palakihin ang iyong negosyong rental?'
+  subtitle: 'Kunin ang presyo ng rental o ihambing ang mga model ng board para sa iyong operasyon.'
+  actions:
+    - text: 'Kunin ang Presyo ng Rental'
+      href: '/contact?package=rental'
+      variant: 'primary'
+    - text: 'Ihambing ang mga Model ng Board'
+      href: '/compare'
+      variant: 'secondary'

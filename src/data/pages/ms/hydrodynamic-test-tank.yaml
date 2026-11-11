@@ -1,0 +1,112 @@
+meta:
+  title: 'Tangki Ujian Hidrodinamik — Penundaan Model Skala & Pengoptimuman Lunas | {SITE}'
+  description: 'Sahkan prestasi lunas anda dengan tangki ujian hidrodinamik kami. Penundaan model skala, analisis planing, dan ujian kecekapan luncuran. Tempah sesi ujian tangki hari ini.'
+back_text: 'Kembali ke Pusat R&D'
+home_label: 'Utama'
+
+hero:
+  tagline: 'Makmal 04'
+  title: 'Tangki Ujian Hidrodinamik'
+  subtitle: 'Mengesahkan prestasi sebelum prototaip skala penuh yang pertama'
+  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
+  image_alt: 'Pengujian prestasi tangki ujian hidrodinamik Afarer'
+
+intro: 'Tanggapan salah yang lazim ialah ujian hidrodinamik hanya untuk kapal laut lepas. Pada hakikatnya, prestasi lunas planing kecil — seperti SUP boleh tiup — sama bergantung pada bentuk bawah airnya seperti kapal tangki bergantung pada haluan bebumbungnya. Sudut trim, luas permukaan terbasah, penjanaan semburan, dan pengudaraan semuanya memberi kesan mendalam kepada luncuran, kelajuan, dan keselesaan tunggangan. Di Afarer, kami mengendalikan tangki ujian hidrodinamik khusus yang membolehkan kami mengukur kesan-kesan ini pada skala model — sebelum membuat komitmen fabrik dan peralatan bagi prototaip saiz penuh.'
+
+content_html: |
+  <h2>Mengapa menguji papan dayung dalam tangki?</h2>
+  <p>Pengujian pada skala model (biasanya 1:3 hingga 1:5) memberikan kami keupayaan untuk melakukan lelaran bentuk lunas dengan pantas dan berkos efektif. Seminggu di dalam tangki boleh menjana data prestasi yang sama seperti yang memerlukan berbulan-bulan percubaan-dan-kesilapan skala penuh — dan pada sebahagian kecil daripada kosnya.</p>
+
+  <h2>Spesifikasi kemudahan</h2>
+  <table>
+    <thead><tr><th>Parameter</th><th>Spesifikasi</th></tr></thead>
+    <tbody>
+      <tr><td>Dimensi tangki</td><td>35 m (panjang) × 3.5 m (lebar) × 1.8 m (kedalaman)</td></tr>
+      <tr><td>Kereta penunda</td><td>Didorong servo elektrik, kelajuan maksimum 12 m/s (23 kn), ketepatan kelajuan ± 0.5 %</td></tr>
+      <tr><td>Penjana ombak</td><td>Jenis flap, keadaan laut tetap &amp; tidak tetap yang boleh diprogram, Hs sehingga 0.3 m pada skala model</td></tr>
+      <tr><td>Instrumentasi</td><td>Dinamometer 6-komponen (rintangan, daya sisi, momen yaw), pemecut, inklinometer, prob ombak</td></tr>
+      <tr><td>Pemerolehan data</td><td>Persampelan pada 1000 Hz setiap saluran, paparan masa nyata + suite pasca-pemprosesan</td></tr>
+      <tr><td>Fabrikasi model</td><td>Pemesinan CNC dan percetakan 3D dalaman untuk lunas model sehingga LOA 1.8 m</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Program ujian kami</h2>
+  <p>Program pembangunan lunas standard di tangki kami mengikut turutan ini:</p>
+  <ol>
+    <li><strong>Pembinaan model</strong> — Model skala 1:3.5 dimesin dengan CNC daripada buih kepadatan tinggi dan dilapis gentian kaca untuk kekakuan. Berat dan CG dilaraskan untuk memadankan keadaan beban penuh berskala Froude.</li>
+    <li><strong>Jalanan rintangan</strong> — Model ditunda pada 8-10 kelajuan merentas julat operasi. Jumlah rintangan diukur dan diuraikan kepada komponen geseran dan baki menggunakan kaedah ITTC-1957.</li>
+    <li><strong>Pengukuran trim &amp; penenggelaman</strong> — Trim ketika berjalan dan penenggelaman direkodkan pada setiap kelajuan. Sudut trim optimum 4-6° untuk lunas planing ialah sasaran.</li>
+    <li><strong>Survei jejak ombak</strong> — Potongan ombak melintang diukur pada dua kelajuan untuk menilai rintangan penjanaan ombak dan mengenal pasti interaksi ombak melintang yang boleh menyebabkan gangguan buritan.</li>
+    <li><strong>Kebolehtahan laut (pilihan)</strong> — Jalanan ombak hadapan dan ombak belakang dalam ombak tetap untuk mengukur rintangan tambahan, pecutan menegak, dan kebarangkalian hentakan.</li>
+    <li><strong>Analisis data &amp; cadangan</strong> — Laporan penuh diserahkan dengan carta perbandingan, lengkung kelajuan/kuasa, dan cadangan reka bentuk khusus untuk lunas skala penuh.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Keputusan Ujian Tangki Biasa — Rintangan vs Kelajuan (lunas SUP touring, skala 1:3.5)</p>
+    <div class="space-y-2">
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">5 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:18%"></div>
+        </div>
+        <span class="w-16 text-right">42 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">10 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:35%"></div>
+        </div>
+        <span class="w-16 text-right">81 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">15 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:52%"></div>
+        </div>
+        <span class="w-16 text-right">121 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">20 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:68%"></div>
+        </div>
+        <span class="w-16 text-right">158 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">25 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:85%"></div>
+        </div>
+        <span class="w-16 text-right">197 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">30 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:100%"></div>
+        </div>
+        <span class="w-16 text-right">232 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Rintangan skala model (N) pada kelajuan berskala Froude. Ramalan seretan skala penuh mengikut kaedah ramalan prestasi ITTC-1978.</p>
+  </div>
+
+  <h2>Pasukan pakar</h2>
+  <p>Tangki kami dikendalikan oleh seorang ahli hidrodinamik yang memegang PhD dalam dinamik bendalir serta berpengalaman 8 tahun dalam tangki penunda di sebuah institut penyelidikan maritim Eropah utama. Beliau dibantu oleh seorang juruteknik yang menyediakan semua model dan instrumentasi. Pasukan ini mengikut Prosedur Disyorkan ITTC (International Towing Tank Conference) bagi memastikan setiap ujian boleh diulang, boleh dijejak, dan boleh dipertahankan di peringkat antarabangsa.</p>
+
+  <h2>Ujian tangki untuk pembangunan lunas tersuai</h2>
+  <p>Tangki kami bukan sahaja digunakan untuk lunas reka bentuk dalaman — kami kerap menjalankan program ujian untuk pelanggan yang ingin mengesahkan bentuk lunas tersuai atau menyiasat masalah prestasi:</p>
+  <ul>
+    <li><strong>Perbandingan bentuk lunas</strong> — Dua atau lebih bentuk lunas calon diuji dalam keadaan yang serupa, menyediakan perbandingan seretan/kelajuan/kestabilan yang objektif untuk memandu pilihan reka bentuk anda.</li>
+    <li><strong>Pengoptimuman tambahanan</strong> — Konfigurasi sirip, profil rel, dan varian rocker boleh diuji dalam pelbagai kombinasi untuk mengukur sumbangan masing-masing terhadap pengurangan seretan.</li>
+    <li><strong>Kajian kecekapan luncuran</strong> — Data rintangan ditukar kepada lengkung kecekapan luncuran, membolehkan anda mengimbangi isipadu lunas, rocker, dan kekakuan mengikut kelajuan dayungan sasaran dan muatan anda.</li>
+  </ul>
+
+  <h2>Mengapa menguji bersama kami?</h2>
+  <p>Kami tidak sekadar memberikan anda satu set angka mentah. Laporan kami menterjemahkan data tangki kepada cadangan kejuruteraan yang boleh dilaksanakan: "Tambah 8 mm rocker hidung untuk mengurangkan permukaan terbasah pada rentak pelayaran", "Kurangkan rocker ekor sebanyak 3° untuk memanjangkan garisan air pada rentak touring", atau "Alihkan titik terlebar 150 mm ke belakang untuk penjejakan yang lebih baik". Anda akan berangkat dengan kefahaman yang jelas tentang apa yang perlu diubah dan sebabnya.</p>
+  <p>Tangki kami juga tersedia untuk ujian pihak ketiga bebas atas asas bayaran perkhidmatan. Jika anda sedang membangunkan sebuah lunas dan ingin penilaian hidrodinamik yang tidak berat sebelah serta dilaksanakan secara profesional, kami mengalu-alukan pertanyaan anda.</p>
+
+cta:
+  title: 'Tempah sesi ujian tangki'
+  subtitle: 'Sama ada anda memerlukan program pembangunan penuh atau sekadar satu ujian perbandingan, kami boleh menyesuaikan diri dengan jadual anda.'
+  button_text: 'Hubungi pasukan hidrodinamik kami'
+  button_link: /contact

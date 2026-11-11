@@ -1,0 +1,99 @@
+meta:
+  title: 'Pieprasiet piedāvājumu — OEM SUP ražošana | {SITE}'
+  description: 'Pieprasiet detalizētu piedāvājumu savam piepūšamo SUP projektam. OEM/ODM ražošana, privātais zīmols vai pielāgotas flotes — mēs atbildam 2 darba dienu laikā.'
+  keywords:
+    - 'pieprasīt sup piedāvājumu'
+    - 'oem airu dēļu piedāvājums'
+    - 'sup rūpnīcas piedāvājums'
+    - 'piepūšamo sup cena'
+hero_text:
+  tagline: 'Saņemiet piedāvājumu'
+  title: 'Pieprasiet piedāvājumu<br />savam projektam'
+  subtitle: 'Pastāstiet mums par savām prasībām, un mūsu komanda 2 darba dienu laikā atbildēs ar detalizētu piedāvājumu.'
+steps2_process:
+  title: 'Kā tas darbojas'
+  subtitle: 'Četri vienkārši soļi no pieprasījuma līdz piedāvājumam.'
+  items:
+    - title: '1. solis: iesniedziet savas prasības'
+      description: 'Aizpildiet zemāk esošo formu, norādot produkta veidu, daudzumu un specifikācijas. Jo vairāk detalizētas informācijas sniegsiet, jo precīzāks būs piedāvājums.'
+      icon: tabler:file-text
+    - title: '2. solis: mēs izskatām un konsultējam'
+      description: 'Mūsu inženieru komanda izskata jūsu prasības un, ja nepieciešams, sazinās ar jums precizēšanai. Mēs sniedzam ieteikumus par produkta konfigurāciju un opcijām.'
+      icon: tabler:users
+    - title: '3. solis: saņemiet savu piedāvājumu'
+      description: 'Jūs saņemat detalizētu piedāvājumu, kas ietver vienības cenu, MOQ, izgatavošanas laiku, maksājuma nosacījumus un piegādes iespējas. Parasti 48 stundu laikā.'
+      icon: tabler:currency-dollar
+    - title: '4. solis: paraugs un ražošana'
+      description: 'Pēc piedāvājuma pieņemšanas pārejam pie parauga ražošanas (ja attiecināms) vai tieši pie sērijveida ražošanas. Regulāri atjauninājumi visā procesa laikā.'
+      icon: tabler:building-factory
+content_form:
+  tagline: 'Piedāvājuma forma'
+  title: 'Pastāstiet mums par savu projektu'
+  subtitle: 'Visi lauki ar * ir obligāti.'
+  contact_fields:
+    firstName: 'Vārds'
+    lastName: 'Uzvārds'
+    companyName: 'Uzņēmuma nosaukums'
+    email: 'E-pasts'
+  fields:
+    - name: 'Produkta kategorija'
+      type: select
+      options:
+        - 'SUP dēlis'
+        - 'Piepūšamais SUP'
+        - 'Piepūšamais SUP dēlis'
+        - 'Glābšanas veste'
+        - 'Jūras aksesuārs'
+        - 'Pielāgots OEM/ODM'
+    - name: 'Lietojums'
+      type: select
+      options:
+        - 'Niršanas centrs'
+        - 'Makšķerēšana'
+        - 'Jūras tūrisms / kūrorts'
+        - 'Meklēšana un glābšana'
+        - 'Valsts / militārs'
+        - 'OEM / privātais zīmols'
+        - 'Personīga / atpūtas'
+        - 'Cits'
+    - name: 'Daudzums'
+      type: text
+      placeholder: 'piem., 50 vienības'
+    - name: 'Mērķa tirgus'
+      type: text
+      placeholder: 'piem., Eiropa, Ziemeļamerika, Tuvie Austrumi'
+    - name: 'Piegāzes valsts'
+      type: text
+      placeholder: 'piem., Itālija, AAE, ASV, Austrālija'
+    - name: 'Materiāla preference'
+      type: select
+      options:
+        - 'Nav preference'
+        - 'Jūras līmeņa PVC (1100 dtex)'
+        - 'Stiklšķiedras korpuss'
+        - 'Alumīnija korpuss'
+    - name: 'Dzinēja prasības'
+      type: text
+      placeholder: 'piem., standarta airu komplektācija, elektriskais sūknis, pielāgotas krāsas'
+    - name: 'Nepieciešamā pielāgošana'
+      type: text
+      placeholder: 'piem., pielāgotas krāsas, zīmolrade/logotips, iepakojums, īpaša furnitūra'
+    - name: 'Laika grafiks'
+      type: text
+      placeholder: 'piem., piegāde 90 dienu laikā'
+    - name: 'Papildu prasības'
+      type: textarea
+      placeholder: 'Aprakstiet savu lietojumu, tehniskās specifikācijas vai īpašās prasības — pievienojiet atsauces rasējumus, specifikācijas vai saites, ja tādas ir'
+    - name: 'Specifikācijas augšupielāde'
+      type: file
+      placeholder: 'Augšupielādējiet savu specifikācijas lapu, rasējumu vai atsauces dokumentu (PDF, DWG, DXF)'
+    - name: 'Logotipa / mākslas darba augšupielāde'
+      type: file
+      placeholder: 'Augšupielādējiet savu logotipu vai mākslas darbu pielāgotai zīmolradei (AI, EPS, PNG)'
+cta:
+  title: 'Vēlaties apspriest e-pastā?'
+  subtitle: 'Nosūtiet savu pieprasījumu tieši mūsu pārdošanas komandai, un mēs atbildēsim 24 stundu laikā.'
+  actions:
+    - variant: primary
+      text: 'Rakstiet mums e-pastā'
+      href: /contact

@@ -1,0 +1,99 @@
+meta:
+  title: 'Zahtevajte ponudbo — proizvodnja SUP po meri OEM | {SITE}'
+  description: 'Zahtevajte podrobno ponudbo za svoj projekt napihljive deske SUP. Proizvodnja OEM/ODM, zasebna znamka ali flote po meri — odgovorimo v 2 delovnih dneh.'
+  keywords:
+    - 'zahtevajte ponudbo sup'
+    - 'ponudba deske za veslanje oem'
+    - 'ponudba tovarne sup'
+    - 'cena napihljive sup'
+hero_text:
+  tagline: 'Prejmite ponudbo'
+  title: 'Zahtevajte ponudbo<br />za svoj projekt'
+  subtitle: 'Povejte nam o svojih zahtevah in naša ekipa bo v 2 delovnih dneh odgovorila s podrobno ponudbo.'
+steps2_process:
+  title: 'Kako deluje'
+  subtitle: 'Štirje preprosti koraki od povpraševanja do ponudbe.'
+  items:
+    - title: 'Korak 1: Oddajte svoje zahteve'
+      description: 'Izpolnite spodnji obrazec z vrsto izdelka, količino in specifikacijami. Več podrobnosti navedete, natančnejša bo vaša ponudba.'
+      icon: tabler:file-text
+    - title: 'Korak 2: Pregledamo in svetujemo'
+      description: 'Naša inženirska ekipa pregleda vaše zahteve in vas po potrebi kontaktira za pojasnila. Podamo priporočila glede konfiguracije izdelka in možnosti.'
+      icon: tabler:users
+    - title: 'Korak 3: Prejmite svojo ponudbo'
+      description: 'Prejmete podrobno ponudbo, vključno s ceno na enoto, MOQ, rokom dobave, plačilnimi pogoji in možnostmi odpošiljanja. Običajno v 48 urah.'
+      icon: tabler:currency-dollar
+    - title: 'Korak 4: Vzorec in proizvodnja'
+      description: 'Po sprejetju ponudbe nadaljujemo z izdelavo vzorca (če je relevantno) ali neposredno z masovno proizvodnjo. Redne posodobitve skozi celoten proces.'
+      icon: tabler:building-factory
+content_form:
+  tagline: 'Obrazec za ponudbo'
+  title: 'Povejte nam o svojem projektu'
+  subtitle: 'Vsa polja z * so obvezna.'
+  contact_fields:
+    firstName: Ime
+    lastName: Priimek
+    companyName: Ime podjetja
+    email: E-pošta
+  fields:
+    - name: Kategorija izdelka
+      type: select
+      options:
+        - Deska SUP
+        - Napihljiva SUP
+        - Napihljiva deska SUP
+        - Rešilni jopič
+        - Pomorski dodatek
+        - OEM/ODM po meri
+    - name: Aplikacija
+      type: select
+      options:
+        - Potapljaški center
+        - Ribolov
+        - Pomorski turizem / letovišče
+        - Iskanje in reševanje
+        - Vlada / vojska
+        - OEM / zasebna znamka
+        - Osebna / rekreacijska raba
+        - Drugo
+    - name: Količina
+      type: text
+      placeholder: npr. 50 enot
+    - name: Ciljni trg
+      type: text
+      placeholder: npr. Evropa, Severna Amerika, Bližnji vzhod
+    - name: Država dostave
+      type: text
+      placeholder: npr. Italija, ZAE, ZDA, Avstralija
+    - name: Prednost materiala
+      type: select
+      options:
+        - Brez preference
+        - Pomorski PVC (1100 dtex)
+        - Trup iz steklenih vlaken
+        - Aluminijasti trup
+    - name: Zahteva glede pogona
+      type: text
+      placeholder: npr. standardna postavitev vesla, električna črpalka, barve po meri
+    - name: Potrebna prilagoditev
+      type: text
+      placeholder: npr. barve po meri, znamčenje/logotip, embalaža, posebni okovji
+    - name: Časovnica
+      type: text
+      placeholder: npr. dostava v 90 dneh
+    - name: Dodatne zahteve
+      type: textarea
+      placeholder: Opišite svojo aplikacijo, tehnične specifikacije ali posebne zahteve — vključite referenčne risbe, specifikacije ali povezave, če so na voljo
+    - name: Nalaganje specifikacije
+      type: file
+      placeholder: Naložite svoj list specifikacij, risbo ali referenčni dokument (PDF, DWG, DXF)
+    - name: Nalaganje logotipa / grafike
+      type: file
+      placeholder: Naložite svoj logotip ali grafiko za znamčenje po meri (AI, EPS, PNG)
+cta:
+  title: 'Raje se pogovorite po e-pošti?'
+  subtitle: 'Pošljite svoje povpraševanje neposredno naši prodajni ekipi in odgovorili bomo v 24 urah.'
+  actions:
+    - variant: primary
+      text: Pošljite nam e-pošto
+      href: /contact

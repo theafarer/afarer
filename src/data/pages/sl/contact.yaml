@@ -1,0 +1,144 @@
+meta:
+  title: Stik — povpraševanja o partnerstvu in izdelkih | {SITE}
+  description: Stopite v stik z afarer za partnerstva, skupne znamke, zasebne znamke ali profesionalne flote. Znamka napihljivih SUP desk — odgovorimo v 2 delovnih dneh.
+  keywords:
+    - ponudba distributerja sup
+    - profesionalni dobavitelj sup
+    - stik s proizvajalcem sup
+hero_text:
+  tagline: Stik
+  title: STOPITE V STIK
+contact_form:
+  id: form
+  title: Pošljite nam sporočilo
+  subtitle: Za ponudbe, tehnična vprašanja ali povpraševanja o partnerstvu nam pišite. Odgovorimo v enem delovnem dnevu.
+  email_to: info@afarer.com
+  submit_button: Pošljite povpraševanje → Prejmite ponudbo
+  success_message: Hvala! Vaše sporočilo je prispelo v naš nabiralnik. Odgovorili bomo v enem delovnem dnevu.
+  error_message: Pri pošiljanju sporočila je šlo nekaj narobe. Poskusite znova ali nam pišite neposredno po e-pošti.
+  default_country_code: '+1'
+  captcha:
+    label: 'Zaščita pred neželeno pošto: rešite naslednje'
+  fields:
+    - name: country
+      label: Država
+      row: 1
+      type: select
+      optionsKey: countries
+      step: 1
+    - name: orderVolume
+      label: Ocenjena količina naročila
+      row: 2
+      type: select
+      options:
+        - value: ''
+          label: Izberite svojo ocenjeno količino ...
+        - value: sample
+          label: Samo vzorci / prototipi
+        - value: 5-10
+          label: 5–10 enot (standardni MOQ)
+        - value: 100-500
+          label: 100–500 enot
+        - value: 500-plus
+          label: 500+ enot (velikoprodajne cene)
+      step: 1
+    - name: customization
+      label: Potrebujete prilagoditev?
+      row: 3
+      type: select
+      options:
+        - value: ''
+          label: Izberite vrsto prilagoditve ...
+        - value: none
+          label: Standardni izdelek (brez prilagoditev)
+        - value: logo
+          label: Samo logotip po meri / blagovna znamka
+        - value: full
+          label: Popolna skupna znamka (velikost, barva, grafika, embalaža)
+        - value: consultation
+          label: Nisem prepričan — potrebujem svetovanje
+      step: 1
+    - name: productInterest
+      label: Zanimajoče kategorije izdelkov
+      row: 4
+      type: select
+      options:
+        - value: ''
+          label: Izberite kategorijo izdelkov ...
+        - value: all
+          label: Vsi izdelki / celoten katalog
+        - value: sup
+          label: Deske SUP / veslaške deske
+        - value: safety
+          label: Varnostna oprema / rešilni jopiči
+        - value: accessory
+          label: Dodatki (črpalke, vesla, torbe)
+      step: 1
+    - name: firstName
+      label: Ime
+      row: 1
+      step: 2
+    - name: lastName
+      label: Priimek
+      row: 1
+      step: 2
+    - name: companyName
+      label: Ime podjetja
+      row: 2
+      step: 2
+    - name: email
+      label: E-pošta
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: TELEFON
+      row: 3
+      type: tel
+      withCountryCode: true
+      step: 2
+    - name: address
+      label: Naslov
+      row: 4
+      step: 2
+    - name: zip
+      label: Poštna številka
+      row: 5
+      step: 2
+    - name: subject
+      label: Zadeva
+      row: 1
+      step: 3
+    - name: message
+      label: Sporočilo
+      row: 2
+      type: textarea
+      rows: 6
+      step: 3
+features2_other_ways:
+  title: Druge poti do nas
+  columns: 3
+  items:
+    - title: Prodajna povpraševanja
+      description: Ponudbe, konfiguracije, prijave preprodajalcev in večja naročila.
+      icon: tabler:shopping-bag
+    - title: Tehnična podpora
+      description: Garancija, popravila, rezervni deli in vprašanja o obratovanju.
+      icon: tabler:tool
+    - title: Mediji in partnerstva
+      description: Medijski paketi, sponzorstva in sodelovanje v panogi.
+      icon: tabler:news
+    - title: Telefon
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: E-pošta
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: Sedež podjetja
+      description: Economic Development Zone, Laixi, Qingdao, Kitajska, 266600
+      icon: tabler:map-pin
+map:
+  title: Naša lokacija
+  subtitle: Obiščite nas v našem sedežu
+  address: Economic Development Zone, Laixi, Qingdao, Kitajska, 266600
+  zoom: 15

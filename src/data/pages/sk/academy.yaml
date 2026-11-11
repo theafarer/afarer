@@ -1,0 +1,181 @@
+meta:
+  title: 'Akadémia — príručky SUP a pádlovací tréning | {SITE}'
+  description: 'Akadémia afarer: príručky pre nafukovacie paddle boardy, techniky stand up paddle, námorná bezpečnosť a znalosti materiálov pre začiatočníkov aj profesionálov.'
+  keywords:
+    - 'naučte sa stand up paddle'
+    - 'príručka sup pre začiatočníkov'
+    - 'základy paddle boardu'
+    - 'sup technika'
+    - 'lekcie sup'
+hero:
+  tagline: 'Akadémia afarer'
+  title: 'Centrum vzdelávania'
+  subtitle: 'Príručky a tutoriály pre každú úroveň zručností — od základov SUP po pokročilé záchranné techniky'
+
+categories:
+  - level: 'Začiatočníci'
+    color: from-green-500 to-emerald-600
+    badge: bg-green-100 text-green-700
+    guides:
+      - title: 'Základy SUP'
+        desc: 'Naučte sa základy pádlovania v stoji — postoj, technika záberu a rovnováha.'
+        slug: beginner-sup-guide
+      - title: 'Techniky pádlovania'
+        desc: 'Predný záber, oblúkový záber, príťah a nízka opora — zvládnite základné pádlovacie pohyby.'
+        slug: sup-paddle-guide
+      - title: 'Bezpečnosť na prvom mieste'
+        desc: 'Zásadné bezpečnostné praktiky vrátane kontroly počasia, používania záchrannnej vesty, pravidiel pásla a sebazáchrany.'
+        slug: sup-safety-guide
+  - level: 'Stredná úroveň'
+    color: from-blue-500 to-indigo-600
+    badge: bg-blue-100 text-blue-700
+    guides:
+      - title: 'Základy touringu'
+        desc: 'Plánovanie viachodinového pádlovania — navigácia, hydratácia, tempo a čítanie predpovedí vetra.'
+        slug: touring-sup-guide
+      - title: 'Čítanie počasia'
+        desc: 'Interpretujte námorné predpovede, rozpoznávajte typy mrakov a chápte vplyv vetra na vodu.'
+        slug: weather-planning-water-sports
+      - title: 'Základy navigácie'
+        desc: 'Čítanie námorných máp, práca s kompasom, GPS body a plánovanie trás pre pobrežné pádlovanie.'
+        slug: sup-navigation-guide
+      - title: 'Povedomie o prílivoch'
+        desc: 'Porozumenie cyklom prílivu a odlivu, prúdom a ich vplyvu na načasovanie štartu a voľbu trasy.'
+        slug: understanding-tides
+  - level: 'Pokročilí'
+    color: from-purple-500 to-violet-600
+    badge: bg-purple-100 text-purple-700
+    guides:
+      - title: 'Plánovanie viacdňových výletov'
+        desc: 'Logistika expedícií — výber vybavenia, plánovanie stravy, bezpečnostné protokoly a núdzové kontakty.'
+        slug: sup-travel-guide
+      - title: 'Záchranárske techniky'
+        desc: 'Sebazáchrana, T-záchrana a protokoly vlečenia pre otvorenú vodu.'
+        slug: sup-self-rescue
+      - title: 'Nočné pádlovanie'
+        desc: 'Navigácia po zotmení — požiadavky na osvetlenie, zapamätanie trasy, komunikácia v skupine a povedomie o nebezpečenstvách.'
+        slug: ocean-safety-basics
+  - level: 'Údržba'
+    color: from-amber-500 to-orange-600
+    badge: bg-amber-100 text-amber-700
+    guides:
+      - title: 'Čistenie a starostlivosť'
+        desc: 'Vyplachovanie sladkou vodou, ochrana pred UV, prevencia plesní a správne techniky sušenia po každom použití.'
+        slug: inflatable-sup-maintenance
+      - title: 'Príručka skladovania'
+        desc: 'Osvedčené postupy skladovania nafukovacích dosiek SUP — vypustenie vzduchu, skladanie, regulácia teploty a životnosť.'
+        slug: inflatable-sup-storage
+      - title: 'Základy opráv'
+        desc: 'Opravte malé prepichnutia, netesnosti švov a problémy s ventilmi pomocou PVC opravných sád a techník záplatovania.'
+        slug: inflatable-sup-repair
+      - title: 'Údržba ventilov'
+        desc: 'Rozpoznajte typy ventilov (Halkey-Roberts, Boston, Leafield), vyčistite nečistoty a vymeňte chybné jadrá.'
+        slug: sup-pump-guide
+
+knowledge_center_tagline: 'Centrum poznatkov'
+knowledge_center_title: 'Príručky pre námorné vybavenie a odvetvie'
+knowledge_center_subtitle: 'Odborné poznatky a nákupné príručky pre námorných profesionálov, prevádzkovateľov flotíl a priaznivcov vodných športov.'
+
+knowledge_sections:
+  - title: 'Vedomosti o doskách SUP'
+    tagline: 'Príručky pre paddleboardy'
+    desc: 'Všetko o doskách SUP — dizajn dosky, materiály, výber veľkosti, údržba a nákupné rady pre rekreačné aj komerčné použitie.'
+    guides:
+      - title: 'Ako si vybrať správnu dosku SUP'
+        desc: 'Kompletný sprievodca výberom SUP — veľkosť, objem, materiál, tvar a zamýšľané použitie.'
+        href: '/learn/sup'
+      - title: 'Nafukovacie vs tvrdé SUP'
+        desc: 'Nafukovacie SUP oproti tvrdej epoxidovej doske — prenosnosť, odolnosť, výkon a hodnota v porovnaní.'
+        href: '/compare/inflatable-vs-hardboard'
+      - title: 'All-around vs touring vs joga SUP'
+        desc: 'Rôzne typy dosiek SUP — štandardy konštrukcie, tvary, veľkosti a odporúčané použitie.'
+        href: '/learn/sup'
+      - title: 'Drop-Stitch vs tradičná konštrukcia'
+        desc: 'Porovnajte drop-stitch a tradičnú konštrukciu dosiek SUP z hľadiska hmotnosti, nákladov, odolnosti a tuhosti.'
+        href: '/learn/drop-stitch-core'
+  - title: 'Príručka nafukovacích SUP'
+    tagline: 'Vedomosti o nafukovacích SUP'
+    desc: 'Komplexné príručky o nafukovacích SUP — materiály PVC, drop-stitch konštrukcia, bezpečnostné štandardy a osvedčené postupy údržby.'
+    guides:
+      - title: 'Príručka materiálov PVC'
+        desc: 'Definitívny sprievodca materiálmi PVC používanými v konštrukcii nafukovacích dosiek SUP.'
+        href: '/learn/materials'
+      - title: 'Ako sa vyrábajú nafukovacie SUP'
+        desc: 'Výrobný proces — strihanie materiálov, spájanie drop-stitch jadier, konštrukcia švov, tlakové testovanie a kontrola kvality.'
+        href: '/learn/inflatable-technology'
+      - title: 'Príručka bezpečnosti SUP'
+        desc: 'Bezpečnostné štandardy, nosnosť, správne nafúknutie, kontroly pred vyplávaním a núdzové postupy.'
+        href: '/learn/water-safety'
+      - title: 'Údržba SUP'
+        desc: 'Čistenie, skladovanie, ochrana pred UV a oprava nafukovacích dosiek SUP.'
+        href: '/v2/inflatable-sup-maintenance'
+  - title: 'Vedomosti o doskách SUP'
+    tagline: 'Centrum dosiek SUP'
+    desc: 'Technické príručky pokrývajúce typy dosiek SUP, materiály, metódy konštrukcie, údržbu a bezpečnosť.'
+    guides:
+      - title: 'Typy dosiek SUP'
+        desc: 'All-around, touring, joga, športové a detské SUP — spoznajte rozdiely a vyberte si správnu dosku.'
+        href: '/learn/sup'
+      - title: 'Technológia Drop-Stitch'
+        desc: 'Ako tisíce vnútorných vlákien vytvárajú tuhé, vysokotlakové nafukovacie konštrukcie.'
+        href: '/learn/drop-stitch-core'
+      - title: 'Referencia materiálov'
+        desc: 'Denierové hodnoty PVC, hmotnosti látok, odolnosť voči UV a námorné materiály vysvetlené.'
+        href: '/learn/materials'
+      - title: 'Nákupná príručka SUP'
+        desc: 'Porovnajte rôzne typy dosiek SUP pre rôzne spôsoby použitia a úrovne zručností.'
+        href: '/learn/sup'
+  - title: 'Vedomosti o SUP'
+    tagline: 'Príručky pre paddleboardy'
+    desc: 'Všetko o doskách SUP — nafukovacie vs pevné, rozmery dosiek, technológie materiálov a odborné rady pre všetky úrovne zručností.'
+    guides:
+      - title: 'Nafukovacie vs tvrdé SUP'
+        desc: 'Porovnajte iSUP a tvrdé epoxidové dosky z hľadiska prenosnosti, odolnosti, výkonu a hodnoty.'
+        href: '/learn/sup'
+      - title: 'Príručka rozmerov dosiek SUP'
+        desc: 'Ako dĺžka, šírka a hrúbka ovplyvňujú stabilitu, rýchlosť a ovládateľnosť.'
+        href: '/learn/sup'
+      - title: 'Údržba a starostlivosť o SUP'
+        desc: 'Čistenie, skladovanie, ochrana pred UV a tipy na opravy nafukovacích dosiek SUP.'
+        href: '/v2/inflatable-sup-maintenance'
+      - title: 'Výber vašej prvej SUP'
+        desc: 'Príručka pre začiatočníkov, ako vybrať správny paddleboard podľa vašej hmotnosti, úrovne zručností a zamýšľaného použitia.'
+        href: '/learn/sup'
+  - title: 'Príručka pre požičovné prevádzky'
+    tagline: 'Správa flotíl pre požičovné firmy'
+    desc: 'Príručky o budovaní a správe flotíl SUP na požičiavanie pre plážové stánky, centrá vodných športov a zariadenia cestovného ruchu.'
+    guides:
+      - title: 'Budovanie vašej požičovnej flotily'
+        desc: 'Ako vybrať správne dosky SUP pre vašu požičovnú prevádzku — odolnosť, veľkosti a zváženie návratnosti investície.'
+        href: '/solutions/rental-operators'
+      - title: 'Príručka údržby flotily'
+        desc: 'Základné postupy údržby na maximalizáciu životnosti dosiek a minimalizáciu výpadkov požičovných flotíl.'
+        href: '/solutions/rental-operators'
+  - title: 'Príručka pre rezorty a hotelierstvo'
+    tagline: 'Vodné aktivity pre hotelierstvo'
+    desc: 'Príručky o zavádzaní a správe programov SUP pre rezorty, hotely a destinácie pri vode.'
+    guides:
+      - title: 'Zriadenie programu SUP v rezorte'
+        desc: 'Faktory, ktoré treba zvážiť pri zavádzaní aktivít SUP pre hostí — veľkosť flotily, personál a modelovanie príjmov.'
+        href: '/solutions/resorts-hotels'
+      - title: 'SUP vs iné vodné aktivity'
+        desc: 'Porovnajte programy SUP s inými vodnými športmi z hľadiska zážitku hostí a prevádzkovej efektívnosti.'
+        href: '/learn/sup'
+  - title: 'Príručka maloobchodu a distribúcie'
+    tagline: 'Obchodné partnerstvá v oblasti SUP'
+    desc: 'Príručky, ako sa stať maloobchodným partnerom alebo distribútorom SUP — plánovanie zásob, pozicionovanie na trhu a rastové stratégie.'
+    guides:
+      - title: 'Ako sa stať predajcom SUP'
+        desc: 'Ako vybrať produktové línie, riadiť zásoby a predávať dosky SUP vo vašom maloobchode.'
+        href: '/solutions/retail-partners'
+      - title: 'SUP pre komerčné prevádzky'
+        desc: 'Prečo sú nafukovacie SUP univerzálnym produktom pre komerčné flotily, požičovné firmy a profesionálnych prevádzkovateľov.'
+        href: '/solutions/rental-operators'
+
+read_guide: 'Čítať príručku →'
+
+cta:
+  title: 'Neviete, kde začať?'
+  desc: 'Absolvujte náš kvíz na vyhodnotenie zručností a nájdite správne príručky a vybavenie pre vašu úroveň.'
+  label: 'Kontaktujte nás →'
+  link: /contact

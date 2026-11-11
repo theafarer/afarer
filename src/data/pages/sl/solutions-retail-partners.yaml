@@ -1,0 +1,103 @@
+meta:
+  title: 'Program maloprodajnih partnerjev SUP — prodaja na debelo | {SITE}'
+  description: 'Program partnerjev za prodajo SUP na debelo za maloprodajalce in trgovine s športno opremo. Celotna ponudba izdelkov, možnosti dropshippinga, konkurenčne marže prodaje na debelo od 20–35 % in nizek MOQ za začetek.'
+
+hero:
+  tagline: 'Maloprodajni partnerji'
+  title: 'Prodajajte premium napihljive deske SUP<br />z maržami, ki delujejo'
+  subtitle: 'Postanite maloprodajni partner Afarer — ponujajte najhitreje rastočo znamko SUP na svojem trgu s polnimi cenami na debelo, dropshippingom, profesionalnimi trženimi materiali in posvečeno podporo.'
+  image:
+    src: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp
+    alt: 'Deske SUP Afarer prikazane v maloprodajni trgovini'
+
+margin_section:
+  title: 'Maloprodajne marže in MOQ'
+  subtitle: 'Cenovni razredi prodaje na debelo, zasnovani za maloprodajno donosnost.'
+  items:
+    - tier: 'Osnovni partner'
+      discount: '20%'
+      moq: '500 enot/leto'
+      margin_note: '~150–250 USD dobička na desko'
+      features:
+        - 'Dostop do celotne ponudbe izdelkov'
+        - 'Paket trženih materialov'
+        - 'Podpora po e-pošti'
+        - 'Dostop do kataloga izdelkov'
+    - tier: 'Premium partner'
+      discount: '30%'
+      moq: '2.000+ enot/leto'
+      margin_note: '~250–400 USD dobička na desko'
+      features:
+        - 'Posvečen upravitelj računa'
+        - 'Ekskluzivna zaščita teritorija'
+        - 'Trženjska podpora po meri'
+        - 'Prvi dostop do novih izdelkov'
+        - 'Usposabljanja za osebje'
+    - tier: 'Vodilni partner'
+      discount: '35%+'
+      moq: '5.000+ enot/leto'
+      margin_note: '~350–500+ USD dobička na desko'
+      features:
+        - 'Trženjske kampanje s skupno znamko'
+        - 'Podpora pri predstavitvi v trgovini'
+        - 'Usposabljanje osebja na lokaciji'
+        - 'Skupne promocije na družbenih omrežjih'
+        - 'Prednostna dodelitev proizvodnje'
+
+product_line:
+  title: 'Celotna ponudba izdelkov'
+  subtitle: 'Deska SUP za vsako stranko, ki vstopi skozi vaša vrata.'
+  items:
+    - name: 'Vsestranska serija'
+      description: 'Najbolje prodajana — ustreza 80 % strank'
+    - name: 'Turistična serija'
+      description: 'Zahtevni veslači — višja marža'
+    - name: 'Joga serija'
+      description: 'Nišni trg — premium cene'
+    - name: 'Otroška serija'
+      description: 'Družinske stranke — vračajoči se kupec'
+    - name: 'Dirkalna serija'
+      description: 'Trg navdušencev — sij znamke'
+    - name: 'Dodatki'
+      description: 'Dodatki z visoko maržo (vesla, jopiči, črpalke, vreče)'
+
+catalog:
+  title: 'Viri za maloprodajne partnerje'
+  subtitle: 'Prenesite naš obsežen komplet za maloprodajne partnerje.'
+  items:
+    - name: 'Katalog izdelkov 2026'
+      desc: 'Celotna ponudba s specifikacijami, cenami in informacijami o naročanju'
+      icon: 'tabler:file-text'
+      link: '/resources/download-catalog'
+    - name: 'Vodnik za maloprodajne partnerje'
+      desc: 'Kalkulator marž, nasveti za izstavitev in najboljše prakse'
+      icon: 'tabler:book'
+      link: '/resources/download-catalog'
+    - name: 'Paket trženih sredstev'
+      desc: 'Fotografije izdelkov v visoki ločljivosti, življenjske slike in materiali POS'
+      icon: 'tabler:photo'
+      link: '/media'
+
+support:
+  title: 'Podpora maloprodajnim partnerjem'
+  subtitle: 'Vse, kar potrebujete za samozavestno prodajo.'
+  items:
+    - 'Slike izdelkov v visoki ločljivosti (profesionalna fotografija)'
+    - 'Življenjske fotografije za družbena omrežja, spletno stran in katalog'
+    - 'Trženjski materiali — plakati, oznake polic, transparenti'
+    - 'Video posnetki usposabljanj o izdelkih za izobraževanje osebja'
+    - 'Paket vsebin za družbena omrežja (tedenske objave)'
+    - 'SEO-optimizirani opisi izdelkov'
+    - 'Možnost dropshippinga — brez tveganja zaloge'
+    - 'Plačilni pogoji neto 30 dni'
+
+cta:
+  title: 'Pripravljeni postati maloprodajni partner Afarer?'
+  subtitle: 'Prijavite se na partnerstvo ali prenesite naš maloprodajni katalog za začetek.'
+  actions:
+    - text: 'Prijavite se na partnerstvo'
+      href: '/contact?partner=retail'
+      variant: 'primary'
+    - text: 'Prenesite maloprodajni katalog'
+      href: '/resources/download-catalog'
+      variant: 'secondary'

@@ -1,0 +1,99 @@
+meta:
+  title: 'Zatražite ponudu — OEM proizvodnja SUP daska | {SITE}'
+  description: 'Zatražite detaljnu ponudu za svoj projekt napuhivih SUP daska. OEM/ODM proizvodnja, privatne oznake ili flote po mjeri — odgovaramo u roku od 2 radna dana.'
+  keywords:
+    - 'zatraži ponudu za sup'
+    - 'ponuda za oem dasku za veslanje'
+    - 'ponuda tvornice sup daska'
+    - 'cijena napuhive sup daske'
+hero_text:
+  tagline: 'Zatražite ponudu'
+  title: 'Zatražite ponudu<br />za svoj projekt'
+  subtitle: 'Recite nam svoje zahtjeve, a naš tim će odgovoriti detaljnom ponudom u roku od 2 radna dana.'
+steps2_process:
+  title: 'Kako funkcionira'
+  subtitle: 'Četiri jednostavna koraka od upita do ponude.'
+  items:
+    - title: 'Korak 1: Pošaljite svoje zahtjeve'
+      description: 'Ispunite obrazac u nastavku s vrstom proizvoda, količinom i specifikacijama. Što više detalja navedete, ponuda će biti točnija.'
+      icon: tabler:file-text
+    - title: 'Korak 2: Pregledavamo i savjetujemo'
+      description: 'Naš inženjerski tim pregledava vaše zahtjeve i može vas kontaktirati radi pojašnjenja. Dajemo preporuke o konfiguraciji proizvoda i opcijama.'
+      icon: tabler:users
+    - title: 'Korak 3: Primite svoju ponudu'
+      description: 'Primate detaljnu ponudu koja uključuje cijene po jedinici, MOQ, vrijeme isporuke, uvjete plaćanja i opcije otpreme. Obično u roku od 48 sati.'
+      icon: tabler:currency-dollar
+    - title: 'Korak 4: Uzorak i proizvodnja'
+      description: 'Nakon prihvaćanja ponude prelazimo na proizvodnju uzorka (ako je primjenjivo) ili izravno na serijsku proizvodnju. Redovite obavijesti tijekom cijelog procesa.'
+      icon: tabler:building-factory
+content_form:
+  tagline: 'Obrazac za ponudu'
+  title: 'Recite nam o svom projektu'
+  subtitle: 'Sva polja označena sa * obvezna su.'
+  contact_fields:
+    firstName: 'Ime'
+    lastName: 'Prezime'
+    companyName: 'Naziv tvrtke'
+    email: 'E-pošta'
+  fields:
+    - name: 'Kategorija proizvoda'
+      type: select
+      options:
+        - 'SUP daska'
+        - 'Napuhiva SUP daska'
+        - 'Napuhiva SUP daska'
+        - 'Prsluk za spašavanje'
+        - 'Pomorski pribor'
+        - 'Custom OEM/ODM'
+    - name: 'Namjena'
+      type: select
+      options:
+        - 'Ronilački centar'
+        - 'Ribolov'
+        - 'Pomorski turizam / odmaralište'
+        - 'Potraga i spašavanje'
+        - 'Vlada / vojska'
+        - 'OEM / privatna oznaka'
+        - 'Osobno / rekreativno'
+        - 'Drugo'
+    - name: 'Količina'
+      type: text
+      placeholder: 'npr. 50 jedinica'
+    - name: 'Ciljno tržište'
+      type: text
+      placeholder: 'npr. Europa, Sjeverna Amerika, Bliski istok'
+    - name: 'Zemlja isporuke'
+      type: text
+      placeholder: 'npr. Italija, UAE, SAD, Australija'
+    - name: 'Preferencija materijala'
+      type: select
+      options:
+        - 'Bez preferencije'
+        - 'Pomorski PVC (1100 dtex)'
+        - 'Trup od stakloplastike'
+        - 'Aluminijski trup'
+    - name: 'Zahtjev za pogonom'
+      type: text
+      placeholder: 'npr. standardno veslo, električna pumpa, prilagođene boje'
+    - name: 'Potrebna prilagodba'
+      type: text
+      placeholder: 'npr. prilagođene boje, brendiranje/logotip, pakiranje, posebni okovi'
+    - name: 'Vremenski okvir'
+      type: text
+      placeholder: 'npr. isporuka u roku od 90 dana'
+    - name: 'Dodatni zahtjevi'
+      type: textarea
+      placeholder: 'Opišite svoju namjenu, tehničke specifikacije ili posebne zahtjeve — uključite referentne crteže, specifikacije ili poveznice ako su dostupne'
+    - name: 'Postavite specifikaciju'
+      type: file
+      placeholder: 'Postavite svoj tehnički list, crtež ili referentni dokument (PDF, DWG, DXF)'
+    - name: 'Postavite logotip / grafiku'
+      type: file
+      placeholder: 'Postavite svoj logotip ili grafiku za prilagođeno brendiranje (AI, EPS, PNG)'
+cta:
+  title: 'Radije razgovarate e-poštom?'
+  subtitle: 'Pošaljite svoj upit izravno našem prodajnom timu i odgovorit ćemo u roku od 24 sata.'
+  actions:
+    - variant: primary
+      text: 'Pošaljite nam izravno e-poštu'
+      href: /contact

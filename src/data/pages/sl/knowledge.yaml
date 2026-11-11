@@ -1,0 +1,110 @@
+meta:
+  title: 'Znanje — vodniki SUP | {SITE}'
+  description: 'Baza znanja afarer: vodniki o napihljivih deskah SUP, materialih veslaških desk, izbiri desk in vpogledi v panogo za znamke in strokovnjake.'
+  keywords:
+    - 'znanje sup'
+    - 'vodnik za napihljive sup'
+    - 'materiali veslaških desk'
+    - 'vpogledi v panogo sup'
+hero:
+  tagline: 'Graf znanja'
+  title: 'Znanje o raziskovanju voda'
+  subtitle: |
+    Strukturirana baza znanja, ki zajema tehnologijo napihljivih desk SUP,<br />
+    varnost na vodi, inženirstvo desk in načrtovanje dogodivščin.
+  taglineSection: 'Raziskujte. Učite se. Odpravite se z zaupanjem.'
+
+clusters:
+  tagline: 'Grozdi znanja'
+  title: 'Raziskujte po temah'
+  subtitle: 'Poglobljeni vpogledi v tehnologijo, varnost in spretnosti za vsakim izdelkom afarer.'
+  items:
+    - title: 'Nakupovalni vodniki SUP'
+      description: 'Od izbire prve deske do naprednih tehnik turističnega veslanja — vse o stoječem veslanju na deski.'
+      icon: 'tabler:lifebuoy'
+      topics:
+        - 'Kako izbrati svojo prvo napihljivo desko SUP'
+        - 'Vodnik po velikosti in nosilnosti SUP'
+        - 'Najboljše deske SUP za začetnike, turizem, jogo in dirkanje'
+        - 'Pogoste napake pri nakupu SUP, ki se jim je treba izogniti'
+        - 'Primerjava napihljivih in trdih desk'
+    - title: 'Inženirstvo in tehnologija SUP'
+      description: 'Tehnični vodniki o napihljivih deskah SUP — materiali, metode konstrukcije in proizvodni procesi.'
+      icon: 'tabler:microscope'
+      topics:
+        - 'Poglobljeni vpogled v tehnologijo Drop-Stitch'
+        - 'Specifikacije vojaškega PVC'
+        - 'Fuzijska laminacija proti lepljenju'
+        - 'Tehnologija pene EVA in metode likovne obdelave'
+        - 'Vrste ventilov SUP in sistemi peraj'
+    - title: 'Varnost in vzdrževanje SUP'
+      description: 'Bistveno varnostno znanje za vsakega veslača — od izbire rešilnega jopiča do branja vremena in nege ter popravila desk.'
+      icon: 'tabler:shield'
+      topics:
+        - 'Kontrolni seznam varnosti SUP in zahteve za rešilne jopiče'
+        - 'Večkomorna varnost za odmaknjene vode'
+        - 'Vodnik po napihovanju SUP (PSI)'
+        - 'Shranjevanje desk in zimska nega'
+        - 'Tehnike popravila napihljivih desk'
+    - title: 'Spretnosti in tehnike SUP'
+      description: 'Tehnike veslanja, turistične spretnosti in kondicijski trening za vse ravni znanja.'
+      icon: 'tabler:sailboat'
+      topics:
+        - 'Tehnike veslanja za začetnike'
+        - 'Obvladovanje zamesov za srednjo raven'
+        - 'Načrtovanje turističnih plovb in odprav'
+        - 'Kondicijsko in dirkalno treniranje SUP'
+        - 'Spretnosti veslanja po beli vodi in rekah'
+    - title: 'Življenjski slog SUP in posebne uporabe'
+      description: 'Specializirane dejavnosti SUP — joga, ribolov, psi, družine in nasveti za potovanja.'
+      icon: 'tabler:heart'
+      topics:
+        - 'Joga in meditacija SUP na vodi'
+        - 'Ribolov z napihljivo desko SUP'
+        - 'Veslanje na deski s psi in otroki'
+        - 'Potovanje z desko SUP z letalom in avtomobilom'
+        - 'Dodatki in ključna oprema za SUP'
+    - title: 'Primerjave SUP in referenc'
+      description: 'Povsem drug ob drugi primerjave, ki vam pomagajo sprejemati premišljene odločitve.'
+      icon: 'tabler:chart-bar'
+      topics:
+        - 'SUP proti kajaku — kaj je pravo za vas?'
+        - 'Razlage razredov materiala PVC'
+        - 'Varnost enojne komore proti večkomorni'
+        - 'Razlage materialov desk SUP'
+        - 'UV-tisk proti likovni obdelavi iz pene EVA'
+
+featured_guides:
+  tagline: 'Izpostavljeni vodniki'
+  title: 'Najbolj priljubljeni viri znanja'
+  items:
+    - title: 'Osnove SUP'
+      href: '/learn/sup'
+    - title: 'Napihljiva proti trdi deski'
+      href: '/compare/inflatable-vs-hardboard'
+    - title: 'Vodnik po varnosti na vodi'
+      href: '/learn/water-safety'
+    - title: 'Referenca materialov'
+      href: '/learn/materials'
+    - title: 'Nakupovalni vodnik SUP'
+      href: '/guides/how-to-choose-your-sup'
+    - title: 'Vodnik po velikosti SUP'
+      href: '/guides/sup-size-guide'
+    - title: 'Tehnični center SUP'
+      href: '/research'
+    - title: 'Vzdrževanje SUP'
+      href: '/guides/sup-maintenance'
+    - title: 'Vodnik za turizem'
+      href: '/guides/sup-for-touring'
+    - title: 'Tehnike veslanja'
+      href: '/guides/paddling-techniques'
+
+cta:
+  title: 'Začnite raziskovati'
+  subtitle: 'Potopite se v našo bazo znanja in pridobite podatke, ki jih potrebujete za svojo naslednjo vodno dogodivščino.'
+  actions:
+    - variant: primary
+      text: 'Prebrskajte vse vodnike'
+      href: '/academy'
+    - text: 'Raziskujte graf znanja'
+      href: '/knowledge'

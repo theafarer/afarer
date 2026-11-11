@@ -1,0 +1,85 @@
+meta:
+  title: 'Studio za inženiring trupov — CAD, FEA in oblikovanje trupov po meri | {SITE}'
+  description: 'Raziščite naš studio za inženiring trupov: oblikovanje CAD, analiza končnih elementov (FEA) in razvoj visokozmogljivih trupov SUP po meri. Stopite v stik z našo inženirsko ekipo in začnite svoj naslednji projekt deske.'
+back_text: 'Nazaj na center za R&D'
+home_label: 'Domov'
+
+hero:
+  tagline: 'Laboratorij 02'
+  title: 'Studio za inženiring trupov'
+  subtitle: 'Digitalna simulacija, strukturna inteligentnost, oblikovanje trupov po meri'
+  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
+  image_alt: 'Delovna postaja za oblikovanje CAD v inženiringu trupov Afarer'
+
+intro: 'Trup je hrbtenica vsake napihljive deske SUP. Biti mora dovolj lahek za učinkovito drsenje, dovolj močan za kamnite obale in dovolj tog, da vsako zaveslje pretvori v gibanje naprej. Pri Afarerju naš studio za inženiring trupov združuje napredno modeliranje CAD, analizo končnih elementov (FEA) in desetletja praktičnih izkušenj z oblikovanjem desk ter ustvarja trupe, optimizirane za svoj namen — ne generične oblike iz kataloga.'
+
+content_html: |
+  <h2>Kjer se srečata moč in hidrodinamika</h2>
+  <p>Delamo s tremi primarnimi konstrukcijskimi platformami — ojačenimi jedri drop-stitch iz PVC, ročno položenimi laminati iz steklenih vlaken in rotacijsko oblikovanim polietilenom — ter imamo inženirske zmožnosti, da vsako od njih oblikujemo, simuliramo in validiramo v lastnem domu.</p>
+
+  <h2>Orodja in standardi oblikovanja</h2>
+  <p>Naše digitalno inženirsko okolje vključuje:</p>
+  <table>
+    <thead><tr><th>Zmožnost</th><th>Programska oprema / orodje</th><th>Uporaba</th></tr></thead>
+    <tbody>
+      <tr><td>3D-parametrično modeliranje</td><td>SolidWorks Professional</td><td>Površina trupa, ojačitev robov in vzdolžnikov, razporeditev palube, točke za pritrditev opreme</td></tr>
+      <tr><td>Analiza končnih elementov</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Kartiranje napetosti, modalna analiza, simulacija trkov/udarcev</td></tr>
+      <tr><td>Računalniška dinamika tekočin</td><td>Ansys Fluent / Star-CCM+</td><td>Napoved hidrodinamičnega upora, optimizacija trimma</td></tr>
+      <tr><td>Inženiring laminatov</td><td>ESAComp / CADEC</td><td>Nalaganje slojev steklenih vlaken, izbira jedra, ocena mase</td></tr>
+      <tr><td>Simulacija pretoka v kalupu</td><td>Moldex3D</td><td>Napoved debeline stene pri rotacijskem oblikovanju</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Naš inženirski potek dela</h2>
+  <p>Vsako oblikovanje trupa, bodisi standardni model bodisi popolnoma projekt po meri, sledi strogemu petstopenjskemu procesu:</p>
+  <ol>
+    <li><strong>Koncept in zbiranje zahtev</strong> — Sestanemo se z vami in določimo maso veslača in tovor, hitrostni okvir, zmožnosti glede na stanje vode, zahteve za prevoz ter morebitno posebno misijsko opremo (palubni nosilci, mesta priveza tovora, integracija dodatkov).</li>
+    <li><strong>3D oblikovanje površin in hidrostatični izračun</strong> — Oblika trupa se modelira v SolidWorksu in z vgrajenimi analitskimi orodji preveri glede hidrostatične stabilnosti, porazdelitve prostornine in momenta izravnave.</li>
+    <li><strong>Strukturna analiza FEA</strong> — Določijo se obremenitveni primeri: statični (veslač + oprema), dinamični (udarci pristanka na valovih pri 5g) in nasaditev (trk s kamnito obalo pri 3 m/s). Pregledajo se konture napetosti; varnostni faktor ≥ 2,5 je obvezen.</li>
+    <li><strong>CFD optimizacija upora</strong> — Trup se simulira pri treh pogojih obremenitve in petih hitrostih. Z vodo mokra površina, kot trimma in preostali upor se iterativno zmanjšujejo.</li>
+    <li><strong>Pregled oblikovanja in sprostitev</strong> — Celoten inženirski paket (3D-model, poročilo FEA, poročilo CFD, ocena mase, knjiga slojev) pred sprostitvijo v delavnico prototipov pregleda naš višji inženir.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Porazdelitev napetosti FEA — trup turistične deske SUP (ojačeni drop-stitch)</p>
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">2,8 : 1</span>
+        <span class="text-gray-500">Varnostni faktor pri največjem tovoru</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">15,2 %</span>
+        <span class="text-gray-500">Zmanjšanje upora v primerjavi s prejšnjo generacijo</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
+        <span class="text-gray-500">Vrhnji tlak udarcev (projektna meja)</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
+        <span class="text-gray-500">Skupni čas izvajanja FEA leta 2025</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Prilagoditev: vaš trup, vaša pravila</h2>
+  <p>Nobena dva veslača nimata enakih zahtev. Ribiška deska SUP potrebuje širok, stabilen glisirni trup; turistična deska potrebuje izrivni trup, ki povečuje drsenje; deska SUP za surfanje pa odzivne robove in uglašen rocker. Vaše aplikacije ne silimo v vnaprej obstoječo obliko trupa. Oblikujemo od vaše specifikacije navzgor.</p>
+  <p>Primeri nedavnih projektov inženiringa trupov po meri:</p>
+  <ul>
+    <li>Podaljšana turistična deska SUP za operaterja ekoloških izletov na Karibih z ojačenim premcem za pristajanje na plažah (+15 % debeline roba).</li>
+    <li>Patruljna deska SUP z visoko vidljivostjo za pristaniško upravo z integriranimi nosilci za opremo in taktičnimi robovi.</li>
+    <li>Ekspedicijska turistična deska SUP za najemno floto z ojačenimi robovi in dodatnimi privezi za tovor.</li>
+  </ul>
+
+  <h2>Naši inženirji</h2>
+  <p>Studiu predaja višji inženir s 14 leti izkušenj pri oblikovanju visokozmogljivih desk, podpirata pa ga dva strojna inženirja, specializirana za FEA in CFD. Vsi trije imajo napredne stopnje s področja pomorskega ali strojnega inženirstva mednarodno priznanih univerz. Ekipa redno objavlja v strokovnih revijah in predava na mednarodnih konferencah o inženiringu visokozmogljivih veslaških športov.</p>
+
+  <h2>Sodelujte z nami pri svojem naslednjem trupu</h2>
+  <p>Od prve skice koncepta do končnega poročila o napetostih je naš studio za inženiring trupov vaš partner pri ustvarjanju deske, ki ni le zgrajena — ampak inženirsko zasnovana. Simulacijske ure vložimo vnaprej, da ima vsak var, vsak sloj laminata in vsak lok trupa svoj razlog.</p>
+  <p>Ne glede na to, ali potrebujete manjšo spremembo obstoječega modela ali popolnoma novo oblikovanje od začetka, smo pripravljeni pogovoriti o vaših zahtevah.</p>
+
+cta:
+  title: 'Začnite svetovanje za oblikovanje trupa'
+  subtitle: 'Povejte nam o svojem misijskem profilu in predlagali bomo inženirsko pot.'
+  button_text: 'Stopite v stik z našo inženirsko ekipo'
+  button_link: /contact

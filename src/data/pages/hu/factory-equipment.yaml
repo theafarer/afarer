@@ -1,0 +1,87 @@
+meta:
+  title: 'Gyári berendezések — Vágás, RF hegesztés és nyomtatás | {SITE}'
+  description: 'Ipari minőségű afarar gyártóberendezések: PVC vágás, RF hegesztés, digitális nyomtatás, szerelés és tesztelés felfújható SUP-okhoz.'
+  keywords:
+    - 'sup gyártóberendezések'
+    - 'felfújható sup gyár'
+    - 'rf hegesztés pvc'
+    - 'paddle lap gyártás'
+hero:
+  tagline: 'Berendezések'
+  title: 'Gyártóberendezések és gépek'
+  subtitle: 'Ipari minőségű berendezések a vágás, hegesztés, nyomtatás és szerelés területén'
+  back_label: 'Vissza a gyárhoz'
+  back_link: /factory
+
+categories:
+  - title: 'Vágás és anyag-előkészítés'
+    items:
+      - name: 'Automatikus PVC vágógép'
+        spec: 'CNC-vezérelt, 6,5 m × 2,5 m, 0,1 mm pontosság'
+        desc: 'Számítógép-vezérelt automatikus vágógép PVC és drop-stitch szövetekhez. A beágyazó szoftver optimalizálja az anyagkihasználtságot 5% alatti hulladékra.'
+      - name: 'Szövetterítő'
+        spec: '3 m max szélesség, feszesség-szabályozott adagolás'
+        desc: 'Szövetet fektet egy vagy több rétegben szabályozott feszességgel a torzulás megelőzésére vágás előtt.'
+
+  - title: 'Csőhegesztés és kötés'
+    items:
+      - name: 'Hőzárógép'
+        spec: 'Forró levegős hegesztés, változtatható 200–600 °C, 0,5–5 m/perc'
+        desc: 'Forró levegős hőzárógép PVC és oldalpálya varratok kötéséhez és hegesztéséhez. Rögzítéshez, tömítéshez és csőkamrák valamint úszóelem illesztések összeolvasztásához használjuk.'
+      - name: 'Dielektromos RF présgép'
+        spec: '15 kW, priten 2000 × 600 mm'
+        desc: 'Rádiófrekvenciás hegesztő présgép fő hosszanti varratokhoz, oldalpálya sávokhoz és nagy kamra gyártáshoz.'
+      - name: 'CNC-vezérelt RF hegesztő'
+        spec: '8 kW, XY asztal 2500 × 1200 mm'
+        desc: 'Programozható ívelt varrat hegesztés komplex geometriákhoz, logó domborításhoz és precíziós foltozáshoz.'
+
+  - title: 'SUP lap gyártás'
+    items:
+      - name: 'Drop-stitch mag lamináló présgép'
+        spec: 'Nagy formátumú présgép 14 láb LOA-ig lapmagokhoz'
+        desc: 'A drop-stitch magok precíziós laminálása külső PVC laminátumokhoz. Minden réteg nyomás alatt kötődik a következetes minőség és szilárdság érdekében.'
+      - name: 'CNC marógép (5 tengelyes)'
+        spec: '3 m × 2 m × 1 m munkatér, vízhűtéses orsó'
+        desc: 'Usonydobozok, fogantyú kivágások és egyedi lap alkatrészek megmunkálása.'
+
+  - title: 'SUP nyomtatás és díszítés'
+    items:
+      - name: 'Digitális nyomtató'
+        spec: 'Nagy felbontású tintasugaras, 2 m nyomtatási szélességig'
+        desc: 'Közvetlen szövetre történő digitális nyomtatás teljes színű SUP fedélzeti grafikákhoz. Egyedi mintákat, áttűnéseket és fotóminőségű képeket nyomtat UV-álló vízalapú tintákkal.'
+      - name: 'Szitanyomó gép'
+        spec: 'Kézi és félautomata, több színű igazítás'
+        desc: 'Szitanyomás SUP lap logókhoz, márkajelekhez és ismétlődő mintákhoz. Tartós, fedő nyomatokat biztosít élénk színtelítettséggel.'
+
+  - title: 'Szerelés és felszerelés'
+    items:
+      - name: 'Lap szerelőállomás'
+        spec: 'Moduláris állítható, többállomásos elrendezés'
+        desc: 'Usonydobozok, fogantyúk, D-gyűrűk, szelepek és fedélzeti burkolatok szerelése SUP lapokra.'
+      - name: 'Szelepbeszerelő présgép'
+        spec: 'Pneumatikus, állítható nyomás'
+        desc: 'Halkey-Roberts és Leafield szelepek precíziós beszerelése és tömítése.'
+      - name: 'Fedélzeti burkolat lamináló'
+        spec: '3 m × 1,5 m, hőmérséklet-szabályozott'
+        desc: 'EVA hab fedélzeti burkolatok hőlaminálása SUP lap tetejére következetes kötésszilárdsággal.'
+
+  - title: 'Tesztelés és minőség-ellenőrzés'
+    items:
+      - name: 'Univerzális húzótesztelő'
+        spec: '50 kN, ASTM D751'
+        desc: 'Szakítóerő, szakadási nyúlás és szakadás terjedés tesztelése szövet tételekhez.'
+      - name: 'Levegőretenció tesztállvány'
+        spec: 'Programozható, 30 perces nyomástartás'
+        desc: 'Automatizált nyomástartási teszt minden csőkamrához szerelés előtt.'
+      - name: 'Varmathámlasztó tesztelő'
+        spec: 'Motoros 180° hámlás 100 mm/perc sebességgel'
+        desc: 'Hegesztett és ragasztott varmat hámlási szilárdság tesztelése EN ISO 25649 szerint.'
+      - name: 'Xenon ív állapotvizsgáló kamra'
+        spec: '2000 órás expozíció'
+        desc: 'UV-állóság tesztelés színváltozásra és szilárdságmegőrzésre.'
+
+cta:
+  title: 'Érdekli a gyárlátogatás?'
+  desc: 'Szívesen látjuk a látogatókat csingtaói létesítményünkben. Tekintse meg berendezéseinket és folyamatainkat személyesen.'
+  label: 'Látogatás egyeztetése →'
+  link: /contact

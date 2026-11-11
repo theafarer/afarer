@@ -1,0 +1,89 @@
+meta:
+  title: 'Center za varjenje RF — dielektrično spajanje za zrakotesne šive | {SITE}'
+  description: 'Tehnologija varjenja z radiofrekvenco za skladne zrakotesne šive. Preskušanje luščenja, preverjanje zadrževanja zraka in specifikacije šivov po meri.'
+back_text: 'Nazaj na center za raziskave in razvoj'
+home_label: 'Domov'
+
+hero:
+  tagline: 'Laboratorij 03'
+  title: 'Center za varjenje RF'
+  subtitle: 'Tehnologija dielektričnega spajanja za vari, ki vzdržijo pod pritiskom'
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1-1200w.webp'
+  image_alt: 'Postopek dielektričnega spajanja z varjenjem RF pri Afarerju'
+
+intro: 'Napihljiva SUP deska je le toliko zanesljiva, kolikor so njeni šivi. En sam šibek var lahko ogrozi celotno komoro — na morju odpoved komore ni nevšečnost; je varnostno tveganje. V Afarerju smo investirali v namenski center za varjenje z radiofrekvenco (RF), ki združuje industrijske dielektrične varilne preše s strogim nadzorom postopkov in preskušanjem po varjenju. Vsak šiv, ki ga izdelamo, je dokumentiran, sledljiv in certificiran, da izpolnjuje ali presega zahteve standarda EN ISO 25649 — evropskega standarda za napihljivo opremo za prosti čas.'
+
+content_html: |
+  <h2>Znanost za šivom</h2>
+  <p>Varjenje RF uporablja visokofrekvenčno elektromagnetno energijo (običajno 27.12 MHz) za vzbujanje polarnih molekul v tkanini s PVC-prevleko, pri čemer se toplota ustvarja natančno na stiku materialov. Za razliko od varjenja z vročim zrakom ali vročim klinom varjenje RF ustvari pravo molekularno vez — plasti tkanine se stopita v enoten material v coni varjenja in nastane spoj, ki je tako trden kot izvorni material sam.</p>
+
+  <h2>Varilna oprema in nadzor postopka</h2>
+  <p>Naš varilni center je opremljen z:</p>
+  <table>
+    <thead><tr><th>Stroj</th><th>Moč / zmogljivost</th><th>Uporaba</th></tr></thead>
+    <tbody>
+      <tr><td>Dielektrična RF preša 1</td><td>15 kW, plošča 2000 × 600 mm</td><td>Glavni vzdolžni šivi, spoji rob–trup</td></tr>
+      <tr><td>Dielektrična RF preša 2</td><td>10 kW, plošča 1500 × 500 mm</td><td>Vari pregrad, zaključni spoji robov, krpe za ventile</td></tr>
+      <tr><td>RF varilni stroj s krmiljenjem CNC</td><td>8 kW, miza XY 2500 × 1200 mm</td><td>Ukrivljeni šivi, reliefni logotipi in paneli, natančno krpljenje</td></tr>
+      <tr><td>Samodejni varilni stroj z vročim klinom</td><td>Spremenljiva temperatura, največ 1.2 m/min</td><td>Rezervna metoda za debelo robno tkanino PVC in popravila</td></tr>
+    </tbody>
+  </table>
+  <p>Vsaka RF preša je opremljena z zaprtim krogom nadzora temperature in tlaka. Parametri varjenja — moč, čas stiskanja, čas hlajenja, tlak elektrode — se programirajo glede na vrsto materiala in zapisujejo v naš sistem za vodenje proizvodnje (MES) za popolno sledljivost.</p>
+
+  <h2>Preskusi kakovosti varov — vsak šiv, vsaka deska</h2>
+  <p>Celovitost varov se preverja z obveznim protokolom štirih preskusov:</p>
+  <ol>
+    <li><strong>Optični pregled</strong> — 100 % šivov se optično pregleda za pregor, napačno poravnavo, onesnaženje ali nepopolno zlivanje. Prag stopnje zavrnitev: 0.5 % linearnih metrov.</li>
+    <li><strong>Preskus luščenja</strong> — Iz preskusnega vzorca, varjenega z vsako proizvodno serijo, se izreže 25 mm širok trak. Najmanjša sila luščenja: 120 N/25 mm za PVC 1100 dtex.</li>
+    <li><strong>Preskus zadrževanja zraka</strong> — Vsaka končana komora se napihne na 1.5-kratni delovni tlak in ga zadrži 30 minut. Padec tlaka ne sme preseči 2 %.</li>
+    <li><strong>Preskus toplotnega cikliranja</strong> — Vzorčni trakovi se ciklirajo od -20 °C do +60 °C za 50 ciklov, nato se ponovno preskusijo na luščenje. Sprejemljiva izguba trdnosti: &lt; 10 %.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Primerjava trdnosti luščenja — varjenje RF proti varjenju z vročim zrakom (PVC 1100 dtex)</p>
+    <div class="space-y-3">
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Var RF</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">184 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Vroč zrak</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">130 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Najmanj</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-green-500 rounded" style="width:48%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">96 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Varjenje RF dosledno doseže 90-95 % trdnosti izvornega materiala, kar je precej nad najmanjšo vrednostjo.</p>
+  </div>
+
+  <h2>Strokovnost</h2>
+  <p>Našo varilno ekipo vodi višji inženir postopkov z 11 leti izkušenj z dielektričnim varjenjem prevlečenih tekstilij. Vsak operater pred delom na proizvodnih šivih opravi 6-mesečni interni certifikacijski program. Ponovna certifikacija je zahtevana letno, vključno s praktičnim preskusom varjenja, ki se oceni glede na naš interni standard razreda A (trdnost luščenja ≥ 160 N/25 mm).</p>
+
+  <h2>Rešitve varjenja po meri za posebne zahteve</h2>
+  <p>Razumemo, da ena specifikacija varjenja ne ustreza vsaki uporabi. Naš center za varjenje RF redno razvija konfiguracije šivov po meri za stranke s posebnimi zahtevami:</p>
+  <ul>
+    <li><strong>Večplastne ojačitvene krpe</strong> — za močno obremenjena območja, kot sta premčni in krmeni rob, razvijamo večprehodne vari RF, ki vključujejo obrabi odporen zunanji sloj brez omejevanja prožnosti.</li>
+    <li><strong>Prevodni ali RF-neprepustni šivi</strong> — za vojaške ali nadzorne aplikacije, ki zahtevajo elektromagnetno zaščito, vstavimo prevodne mrežaste sloje v strukturo šiva.</li>
+    <li><strong>Varjenje panelov s spremembo barve</strong> — dvobarvni tkanini panelov (npr. oranžni trup + siva paluba) se zvarita s skritim prekrivanjem, da se ohrani estetika znamke brez vidne črte spoja.</li>
+  </ul>
+
+  <h2>Naša zaveza vam</h2>
+  <p>Vsaka deska, ki jo dostavimo, nosi našo garancijo kakovosti varov: če kateri koli šiv v običajni uporabi odpove v garancijskem obdobju, prizadeto komoro brezplačno popravimo ali zamenjamo, izvedemo pa tudi analizo vzrokov, da preprečimo ponovitev. To ni zgolj garancija — to je zaveza stalnemu izboljševanju, ki ga poganjajo dejanski obratovalni podatki.</p>
+  <p>Če izberete Afarer, izberete šive, ki so konstruirani, preskušeni in dokumentirani — ne le zvarjeni. To je razlika med desko, ki plava, in desko, ki deluje.</p>
+
+cta:
+  title: 'Pogovorite se o svojih zahtevah glede varjenja'
+  subtitle: 'Specifikacije šivov po meri, združljivost materialov ali preverjanje postopkov.'
+  button_text: 'Stopite v stik z našo varilno ekipo'
+  button_link: /contact

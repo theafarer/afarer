@@ -1,0 +1,52 @@
+meta:
+  title: 'Gyártási folyamat — A nyersanyagtól a SUP-ig | {SITE}'
+  description: 'A nyersanyagtól a vízre kész SUP-ig: az afarar gyártási folyamat minden lépése az irányításunk alatt, a vágástól és hegesztéstől a tesztelésig.'
+  keywords:
+    - 'sup gyártási folyamat'
+    - 'felfújható sup gyár'
+    - 'paddle lap gyártási lépések'
+    - 'pvc hegesztés sup'
+hero:
+  tagline: 'Folyamat'
+  title: 'Gyártási folyamat'
+  subtitle: 'A nyersanyagtól a vízre kész lapig — minden lépés az irányításunk alatt'
+  back_label: 'Vissza a gyárhoz'
+  back_link: /factory
+
+intro: 'Azokkal a márkákkal ellentétben, amelyek a gyártást harmadik fél gyáraiba externalizálják, az afarar saját tulajdonban tartja és működteti a teljes gyártási láncot. Ez a vertikális integráció lehetővé teszi számunkra a szigorú minőség-ellenőrzés fenntartását minden szakaszban, a gyors reagálást egyedi igényekre és a következetes termékminőség biztosítását tételről tételre. Így épül egy lap a létesítményünkben.'
+
+steps:
+  - step: '01'
+    title: 'Anyagbeérkezés és ellenőrzés'
+    description: 'Minden beérkező PVC szövet, üvegszálas szőnyeg, gyanta és hardver tételt specifikáció szerint ellenőriznek. Szövetmintákat tesztelnek húzószilárdságra, vastagság-egyenletességre és UV-állóságra a gyártásba való kiadás előtt. A nem megfelelő anyagok karanténba kerülnek és visszaküldésre.'
+    duration: '1–2 nap'
+  - step: '02'
+    title: 'Automatikus PVC vágás'
+    description: 'A jóváhagyott szöveteket az automatikus CNC vágógépre fektetik és milliméter alatti pontossággal vágják. A számítógéppel optimalizált beágyazás úgy rendezi a paneleket, hogy minimalizálja a hulladékot — jellemzően 5% alatt. A kivágott paneleket lapmodell és kamra szerint címkézik, majd kötegekben szállítják a hegesztő műhelybe.'
+    duration: '2–4 óra laponkénti szett'
+  - step: '03'
+    title: 'Cső hőzárás és hegesztés'
+    description: 'A paneleket rögzítik és kötik hőzáró gépekkel, forró levegős hegesztéssel 200–300 °C szabályozott hőmérsékleten. A fő varratokat RF dielektromos hegesztéssel erősítik légmentes, nagy szilárdságú illesztésekhez. A kész kamrákat a munkanyomás 1,5-szeresére fújják fel 30 perces levegőretenció-érvényesítéshez.'
+    duration: '1–2 nap laponként'
+  - step: '04'
+    title: 'SUP nyomtatás és díszítés'
+    description: 'A SUP lap fedélzeti grafikáit digitális nyomtatással viszik fel teljes színű fotóminőségű dizájnokhoz, és szitanyomással tartós logókhoz és ismétlődő mintákhoz. A nyomatok UV- és kopásállóságra történő kezelése és lezárása.'
+    duration: '1–2 nap'
+  - step: '05'
+    title: 'Végső szerelés és felszerelés'
+    description: 'A lapokat a szerelővonalon szerelik fel uszonyokkal, szelepekkel, EVA fedélzetekkel és kiegészítőkkel. Minden egység 100 pontos szerelési ellenőrzőlistát követ kötelező jóváhagyással minden szakaszban.'
+    duration: '2–4 nap'
+  - step: '06'
+    title: 'Minőségi tesztelés és ellenőrzés'
+    description: 'Minden elkészült lap kötelező minőségi kapun megy át: kamra-levegőretenció teszt, hardver funkcióellenőrzés, csavar meghúzási érvényesítés és esztétikai ellenőrzés. Az egyedi és prototípus gyártások vízi próbákat is kapnak stabilitágra és kezelhetőségre.'
+    duration: '1–2 nap'
+  - step: '07'
+    title: 'Csomagolás és szállítás'
+    description: 'A lapokat leeresztik, előírás szerint összehajtják, nehéz teherbírású szőtt zsákokba vagy rétegelt lemez ládákba csomagolják és szállításra rakodják. Minden csomagot modellel, sorozatszámmal és célponttal címkéznek. Összehangoljuk a fuvardelayerekkel az FCL és LCL konténer szállításokat világszerte.'
+    duration: '1 nap'
+
+cta:
+  title: 'Tekintse meg berendezéseinket és gépeinket'
+  desc: 'Fedezze fel az ipari minőségű berendezéseket minden afarar lap mögött.'
+  label: 'Berendezések megtekintése →'
+  link: /factory/equipment

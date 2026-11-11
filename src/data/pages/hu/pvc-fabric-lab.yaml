@@ -1,0 +1,102 @@
+meta:
+  title: 'PVC szövetlabor — Anyagtesztelés felfújható SUP-okhoz | {SITE}'
+  description: 'Tudományos anyagtesztelés a szálatól a kész lapig. Húzószilárdság, UV-állóság, alacsony hőmérsékletű hajlékonyság és kopásállóság PVC szövetekhez. Vegye fel a kapcsolatot laborcsapatunkkal egyedi szövetspecifikációért.'
+back_text: 'Vissza a fejlesztőközpontba'
+home_label: 'Kezdőlap'
+
+hero:
+  tagline: 'Labor 01'
+  title: 'PVC szövetlabor'
+  subtitle: 'Tudományos anyagtesztelés — a szálatól a kész lapig'
+  image: 'https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp'
+  image_alt: 'Afarer PVC szövet anyagtesztelési labor'
+
+intro: 'A fedélzeti és oldalpálya szövet a legkritikusabb anyag egy felfújható SUP-ban. Kibírnia kell a folyamatos UV-expozíciót, az ismételt felfújási ciklusokat, a dokkokhoz és törmelékekhez történő dörzsölődést és a szélsőséges hőmérsékleti ingadozásokat — mindezt úgy, hogy évekig megőrzi szerkezeti integritását. Az Afarernél PVC szövetlaborunk kizárólag az általunk használt szövetek jellemzésével, érvényesítésével és folyamatos fejlesztésével foglalkozik minden általunk épített laphoz.'
+
+content_html: |
+  <h2>Minden felfújható SUP alapja</h2>
+  <p>Nem támaszkodunk kizárólag a beszállítói adatlapokra. Minden műhelyünkbe érkező PVC szövet tételt függetlenül tesztelünk házon belül. Ez garantálja, hogy a közzétett anyagspecifikációnk az az anyagteljesítmény, amelyet megkap — tételről tételre, évről évre.</p>
+
+  <h2>Szabványosított tesztberendezések</h2>
+  <p>Szövetlaborunk ipari minőségű, ISO, ASTM és EN tesztmódszereknek megfelelő műszerekkel van felszerelve:</p>
+  <table>
+    <thead><tr><th>Berendezés</th><th>Mért paraméterek</th><th>Szabvány</th></tr></thead>
+    <tbody>
+      <tr><td>Univerzális húzótesztelő (50 kN)</td><td>Szakítóerő, szakadási nyúlás, szakadás terjedése</td><td>ISO 1421 / ASTM D751</td></tr>
+      <tr><td>Xenon ívágó állapotvizsgáló kamra</td><td>UV-állóság (színváltozás, szilárdságmegőrzés 2000 óra után)</td><td>ISO 4892 / ASTM G155</td></tr>
+      <tr><td>Alacsony hőmérsékletű hajlításvizsgáló</td><td>Repedéspont -30 °C és -50 °C között</td><td>ISO 4675 / ASTM D2136</td></tr>
+      <tr><td>Taber kopásvizsgáló</td><td>Tömegveszteség 1000 ciklus után (CS-10 kerék)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
+      <tr><td>Vastagságmérő (digitális, 0,001 mm felbontás)</td><td>Egyenletesség a tekercs szélességében</td><td>ISO 2286-3</td></tr>
+      <tr><td>Hidrosztatikus nyomásmérő</td><td>Vízáthatolási ellenállás</td><td>ISO 811</td></tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-gray-500">* Minden berendezést évente harmadik fél akkreditált laboratóriumok kalibrálnak.</p>
+
+  <h2>Adattól a döntésig: tipikus tesztmunkafolyamat</h2>
+  <p>Amikor egy új szövetjelölt érkezik, szabványosított hét lépéses minősítési folyamaton megy át:</p>
+  <ol>
+    <li><strong>Beérkezési ellenőrzés</strong> — vizuális ellenőrzés felületi hibák, tűlyukak és méretmegfelelőség szempontjából.</li>
+    <li><strong>Vastagság-térképezés</strong> — 20 pontos mérés a tekercs mentén; CV &lt; 3% szükséges az elfogadáshoz.</li>
+    <li><strong>Húzótesztelés</strong> — 5 minta lánc- és vetűirányban. Minimum 3500 N/50 mm az 1100 dtex PVC-hez.</li>
+    <li><strong>UV-kondicionálás</strong> — 1000 óra expozíció xenon ívkamrában; minimum 80% szilárdságmegőrzés szükséges.</li>
+    <li><strong>Hideg repedés</strong> — 4 óra -35 °C-on, majd 180°-os hajlítás 25 mm-es tengelyen. Nincs látható repedés.</li>
+    <li><strong>Kopásállóság</strong> — 1000 ciklus, tömegveszteség ≤ 0,05 g.</li>
+    <li><strong>Jóváhagyás</strong> — csak azután, hogy mind a hét kapun átment, kerül a szövet gyártásra kiadásra.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Tipikus PVC 1100 dtex — Húzószilárdság-megőrzés UV-expozíció után</p>
+    <div class="flex items-end gap-3 h-40">
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-600 rounded-t" style="height:100%"></div>
+        <span class="text-xs mt-1">0 ó<br />100%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-500 rounded-t" style="height:95%"></div>
+        <span class="text-xs mt-1">500 ó<br />95%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-400 rounded-t" style="height:88%"></div>
+        <span class="text-xs mt-1">1000 ó<br />88%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-300 rounded-t" style="height:82%"></div>
+        <span class="text-xs mt-1">2000 ó<br />82%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-gray-300 rounded-t" style="height:65%"></div>
+        <span class="text-xs mt-1">Versenytárs<br />~65%</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">PVC 1100 dtex szövetünk 2000 órás xenon ív expozíció után is megtartja húzószilárdsága &gt; 80%-át, szemben a tipikus ipari minőséggel, amely 70% alá csökken.</p>
+  </div>
+
+  <h2>Professzionális csapatunk</h2>
+  <p>A labor két teljes munkaidős anyagmérnökkel működik, akik mindegyike polimertudományi vagy textilmérnöki diplomával és legalább hat év ipari tapasztalattal rendelkezik. Őket három technikus támogatja, akik a napi tesztelést és adatnaplózást végzik. A csapat rendszeresen részt vesz a Nemzetközi Szabványügyi Szervezet (ISO) által szervezett laboratóriumok közötti körkörös próbákban tesztmódszereink pontosságának érvényesítésére.</p>
+
+  <h2>A legnehezebb anyagi kihívásainak megoldása</h2>
+  <p>Minden tengeri környezet más. Egy trópusi napon működő bérelhető SUP teljesen más UV- és hőmérsékleti terhelésnek van kitéve, mint egy északi szélességeken lévő tavi lap. Szövetlaborunk segít kiválasztani — vagy kifejleszteni — az Ön működési profiljára optimalizált szövetspecifikációt.</p>
+  <p>Legutóbbi egyedi megoldások:</p>
+  <ul>
+    <li>Nagy kopásállóságú PVC keverék egy katonai ügyfél számára, akinek lapjai rendszerint korall- és sziklás partokról indulnak (+40% kopási élettartam).</li>
+    <li>Alacsony hőmérsékletű PVC formuláció egy sarkvidéki expedícióhoz, -50 °C-ig tesztelve ridegedés nélkül.</li>
+    <li>Színstabilizált narancs szövet egy vízimentő és mentőlap flotta számára, amely 3 év trópusi napexpozíció után is megőrzi láthatóságát.</li>
+  </ul>
+  <p>Nem árulunk "polcról levehető" szöveteket abban a reményben, hogy működni fognak. Tesztelünk, érvényesítünk és javasolunk — vagy létrehozunk — egy az Ön konkrét küldetési profiljára szabott megoldást. Ez az Afarer különbség.</p>
+
+  <h2>Hogyan szolgáljuk ki</h2>
+  <p>Amikor anyagi kihívást hoz hozzánk, a következőkre számíthat:</p>
+  <ol>
+    <li><strong>Konzultáció</strong> — megbeszéljük a működési környezetet, a teljesítménycélokat és a költségvetést.</li>
+    <li><strong>Javaslat</strong> — egy tesztterv készül egyértelmű megfelelési/eltérési kritériumokkal és ütemtervvel.</li>
+    <li><strong>Végrehajtás</strong> — laborunk lefuttatja a teszteket, és részletes jelentést készít nyers adatokkal és összehasonlító elemzéssel.</li>
+    <li><strong>Ajánlás</strong> — bemutatunk egy szövetspecifikációt, beleértve az alternatív lehetőségeket, ha több anyag is megfelel az igényeinek.</li>
+    <li><strong>Nyomon követés</strong> — a szállítás után is elérhetők vagyunk a használat közbeni anyagi kérdések támogatására.</li>
+  </ol>
+  <p>Célunk nem egyszerűen egy lap eladása Önnek. Célunk biztosítani, hogy a kapott lap megbízhatóan teljesítsen azokban a körülményekben, amelyekben evez — és ez a szövettel kezdődik.</p>
+
+cta:
+  title: 'Szüksége van egyedi szövetspecifikációra?'
+  subtitle: 'Vegye fel a kapcsolatot anyagmérnöki csapatunkkal, hogy megbeszéljék igényeit.'
+  button_text: 'Kapcsolatfelvétel laborcsapatunkkal'
+  button_link: /contact

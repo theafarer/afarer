@@ -1,0 +1,68 @@
+meta:
+  title: 'Kvalitātes laboratorija — testēšana un kvalitātes nodrošināšana | {SITE}'
+  description: 'Neatkarīga kvalitātes laboratorija ar ISO 9001 procesiem afarer: katra vienība tiek testēta pirms nosūtīšanas, lai garantētu piepūšamo SUP kvalitāti.'
+  keywords:
+    - 'sup kvalitātes kontrole'
+    - 'airu dēļu testēšanas laboratorija'
+    - 'iso 9001 sup rūpnīca'
+    - 'piepūšamo sup kvalitāte'
+hero:
+  tagline: 'Kvalitātes kontroles laboratorija'
+  title: 'Testēšanas laboratorija un kvalitātes nodrošināšana'
+  subtitle: 'Neatkarīga kvalitātes laboratorija ar ISO 9001 procesiem — katra vienība testēta pirms nosūtīšanas'
+
+intro: 'afarer pārvalda īpašu kvalitātes kontroles laboratoriju, kas darbojas neatkarīgi no ražošanas. Katra izejvielu partija un katrs pabeigtais dēlis pirms nodošanas iziet dokumentētus pārbaudes protokolus. Mūsu kvalitātes kontroles komanda atskaitas tieši vadībai, kas nodrošina objektīvus kvalitātes lēmumus.'
+
+highlights:
+  - value: '100%'
+    label: 'Vienības ar spiediena testu'
+    detail: 'Katra kamera, katrs dēlis'
+  - value: '24–48 h'
+    label: 'Gaisa noturības testa ilgums'
+    detail: 'Pie 1,25× nominālā spiediena'
+  - value: '&lt;5%'
+    label: 'Maksimāli atļautais spiediena kritums'
+    detail: '24–48 stundu noturēšanas periodā'
+  - value: 'AQL 2.5'
+    label: 'Būtisku defektu robežvērtība'
+    detail: 'Saskaņā ar ISO 2859 izlasi'
+
+test_procedures:
+  - title: 'Izejvielu pārbaude'
+    description: 'Katra ienākošā PVC, Drop-Stitch auduma un furnitūras partija tiek testēta pirms pieņemšanas. Tiek verificēta stiepes stiprība (ASTM D751), plīšanas izturība (ISO 4674) un UV izturība. Neatbilstoši materiāli tiek izolēti un atgriezti.'
+    standards:
+      - 'ASTM D751 (stiepe)'
+      - 'ISO 4674 (plīšana)'
+      - 'ISO 4892 (UV)'
+  - title: 'Kvalitātes kontroles punkti procesā'
+    description: 'Ražošanas operatori katrā posmā veic pašpārbaudi. Kvalitātes auditori visas maiņas laikā veic nejaušu izlasi. Metinājumu atlobīšanas testi tiek veikti ik pēc 50 vienībām. Izmēru pārbaudes notiek ik pēc 20 paneļa.'
+    standards:
+      - 'ASTM D751 (atlobīšana)'
+      - 'Iekšējs 100 punktu kontrolsaraksts'
+      - 'ISO 2859 izlase'
+  - title: '24–48 stundu gaisa noturības tests'
+    description: 'Katra caurules kamera tiek piepūsta līdz 125% no nominālā spiediena un noturēta 24–48 stundas. Spiediena sensori reģistrē nepārtraukti ar temperatūras kompensāciju. Jebkura kamera, kas pārsniedz 5% spiediena kritumu, izraisa automātisku partijas atkārtotu pārbaudi.'
+    standards:
+      - 'EN ISO 25649'
+      - 'CE 2013/53/EU'
+  - title: 'Kravnesības un līdzsvara testēšana'
+    description: 'Pabeigtie dēļi tiek testēti pie maksimālās nominālās kravnesības uz stabilitāti un stingrību. Katrs dēlis pirms gala pārbaudes apstiprinājuma iziet testēšanu ūdenī.'
+    standards:
+      - 'ISO 12217'
+      - 'CE 2013/53/EU'
+
+equipment:
+  - name: 'Universālā testēšanas mašīna (stiepe)'
+    spec: '5 kN, atbilst ASTM D751'
+  - name: 'Spiediena samazinājuma testētājs'
+    spec: 'Daudzkanālu, 0–50 psi, datu reģistrēšana'
+  - name: 'UV novecošanas kamera'
+    spec: 'ISO 4892, 1,000 h cikli'
+  - name: 'Biezuma mērītājs (digitāls)'
+    spec: '0.01 mm izšķirtspēja'
+  - name: 'Atlobīšanas testētājs (metinājums)'
+    spec: 'Ar motoru, 50 N jauda'
+  - name: 'Temperatūras kamera'
+    spec: '-40 °C līdz +100 °C'
+  - name: 'Noplūžu noteikšanas tvertne'
+    spec: '6 m × 2 m, ar apgaismojumu'

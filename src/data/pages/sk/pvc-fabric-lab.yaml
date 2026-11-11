@@ -1,0 +1,102 @@
+meta:
+  title: 'Laboratórium PVC látok — testovanie materiálov pre nafukovacie dosky SUP | {SITE}'
+  description: 'Vedecké testovanie materiálov od vlákna po hotovú dosku. Pevnosť v ťahu, UV starnutie, ohybnosť pri nízkych teplotách a odolnosť proti oderu pre PVC látky. Kontaktujte náš laboratórny tím pre zákazkovú špecifikáciu látky.'
+back_text: 'Späť na centrum R&D'
+home_label: 'Domov'
+
+hero:
+  tagline: 'Laboratórium 01'
+  title: 'Laboratórium PVC látok'
+  subtitle: 'Vedecké testovanie materiálov — od vlákna po hotovú dosku'
+  image: 'https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp'
+  image_alt: 'Testovacie laboratórium PVC materiálov Afarer'
+
+intro: 'Látka paluby a bočníc je jediným najkritickejším materiálom na nafukovacej doske SUP. Musí zvládnuť neustálu expozíciu UV žiareniu, opakované nafukovacie cykly, oter o móla a nečistoty a extrémne teplotné výkyvy — a pritom si roky udržať štrukturálnu integritu. V spoločnosti Afarer je naše laboratórium PVC látok venované výhradne charakterizácii, validácii a neustlému zlepšovaniu látok, ktoré používame v každej doske, ktorú vyrábame.'
+
+content_html: |
+  <h2>Základ každej nafukovacej dosky SUP</h2>
+  <p>Nespoliehame sa len na technické listy dodávateľov. Každá šarža PVC látky, ktorá vstupuje do našej dielne, je interne testovaná nezávisle. To zaručuje, že špecifikácia materiálu, ktorú publikujeme, je výkonom materiálu, ktorý dostanete — šaržu za šaržou, rok čo rok.</p>
+
+  <h2>Štandardizované skúšobné zariadenia</h2>
+  <p>Naše laboratórium látok je vybavené priemyselnými prístrojmi, ktoré zodpovedajú skúšobným metódam ISO, ASTM a EN:</p>
+  <table>
+    <thead><tr><th>Zariadenie</th><th>Merané parametre</th><th>Norma</th></tr></thead>
+    <tbody>
+      <tr><td>Univerzálny tester pevnosti v ťahu (50 kN)</td><td>Trhacia sila, predĺženie pri trhnutí, šírenie trhliny</td><td>ISO 1421 / ASTM D751</td></tr>
+      <tr><td>Klimatická komora s xenónovou výbojkou</td><td>Odolnosť voči UV (zmena farby, zachovanie pevnosti po 2000 h)</td><td>ISO 4892 / ASTM G155</td></tr>
+      <tr><td>Tester ohybnosti pri nízkych teplotách</td><td>Bod praskania pri -30 °C až -50 °C</td><td>ISO 4675 / ASTM D2136</td></tr>
+      <tr><td>Tester odolnosti proti oderu Taber</td><td>Strata hmotnosti po 1000 cykloch (kotúč CS-10)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
+      <tr><td>Meradlo hrúbky (digitálne, rozlíšenie 0,001 mm)</td><td>Rovnomernosť po šírke role</td><td>ISO 2286-3</td></tr>
+      <tr><td>Tester hydrostatického tlaku</td><td>Odolnosť proti prenikaniu vody</td><td>ISO 811</td></tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-gray-500">* Všetko vybavenie je ročne kalibrované akreditovanými laboratóriami tretích strán.</p>
+
+  <h2>Od údajov k rozhodnutiu: typický testovací postup</h2>
+  <p>Keď príde nový kandidát látky, prechádza štandardizovaným sedemkrokovým procesom kvalifikácie:</p>
+  <ol>
+    <li><strong>Kontrola pri prijatí</strong> — vizuálna kontrola povrchových defektov, dierok a dimenzionálneho súladu.</li>
+    <li><strong>Mapovanie hrúbky</strong> — 20-bodové meranie po celej role; na prijatie je vyžadované CV &lt; 3%.</li>
+    <li><strong>Test pevnosti v ťahu</strong> — 5 vzoriek v smere osnovy a útku. Minimum 3500 N/50 mm pre PVC 1100 dtex.</li>
+    <li><strong>UV kondicionovanie</strong> — 1000 h expozície v komore s xenónovou výbojkou; vyžaduje sa minimálne 80 % zachovanie pevnosti.</li>
+    <li><strong>Studené praskanie</strong> — 4 h pri -35 °C, potom ohyb o 180° cez 25 mm trn. Bez viditeľného praskania.</li>
+    <li><strong>Odolnosť proti oderu</strong> — 1000 cyklov, strata hmotnosti ≤ 0,05 g.</li>
+    <li><strong>Schvaľovacie podpísanie</strong> — až po prejdení všetkých siedmich brán je látka uvoľnená do výroby.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typické PVC 1100 dtex — zachovanie pevnosti v ťahu po UV expozícii</p>
+    <div class="flex items-end gap-3 h-40">
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-600 rounded-t" style="height:100%"></div>
+        <span class="text-xs mt-1">0 h<br />100%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-500 rounded-t" style="height:95%"></div>
+        <span class="text-xs mt-1">500 h<br />95%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-400 rounded-t" style="height:88%"></div>
+        <span class="text-xs mt-1">1000 h<br />88%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-300 rounded-t" style="height:82%"></div>
+        <span class="text-xs mt-1">2000 h<br />82%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-gray-300 rounded-t" style="height:65%"></div>
+        <span class="text-xs mt-1">Konkurencia<br />~65%</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Naša látka PVC 1100 dtex si zachováva &gt; 80 % pevnosti v ťahu po 2000 h expozície v komore s xenónovou výbojkou, v porovnaní s typickými priemyselnými kvalitami, ktoré klesajú pod 70 %.</p>
+  </div>
+
+  <h2>Náš profesionálny tím</h2>
+  <p>Laboratórium obsluhujú dvaja plnoúväzkoví materiáloví inžinieri, každý s titulom z odboru polymérov alebo textilného inžinierstva a s minimálne šiestimi rokmi priemyselných skúseností. Podporujú ich traja technici, ktorí vykonávajú každodenné testovanie a zaznamenávanie údajov. Tím sa pravidelne zúčastňuje medzilaboratórnych porovnávacích skúšok organizovaných Medzinárodnou organizáciou pre normalizáciu (ISO) s cieľom validovať presnosť našich testovacích metód.</p>
+
+  <h2>Riešime vaše najnáročnejšie materiálové výzvy</h2>
+  <p>Každé morské prostredie je iné. Požičovacia doska SUP prevádzkovaná pod tropickým slnkom čelí úplne iným záťažam UV žiarenia a teplôt než doska na jazere v severných zemepisných šírkach. Naše laboratórium látok vám pomôže vybrať — alebo vyvinúť — špecifikáciu látky optimalizovanú pre váš prevádzkový profil.</p>
+  <p>Nedávne zákazkové riešenia zahŕňajú:</p>
+  <ul>
+    <li>Vysoko odolná zmes PVC proti oderu pre vojenského klienta, ktorého dosky sa pravidelne spúšťajú na vodu z koralových a skalnatých pláží (+40 % životnosť proti oderu).</li>
+    <li>Nízkoteplotná formulácia PVC pre arktickú expedíciu, testovaná do -50 °C bez krehnutia.</li>
+    <li>Farebne stabilizovaná oranžová látka pre flotilu dosiek plavčíkov a záchranných dosiek, udržiavajúca viditeľnosť po 3 rokoch expozície tropickému slnku.</li>
+  </ul>
+  <p>Nepredávame „hotové" látky a nedúfame, že budú fungovať. Testujeme, validujeme a odporúčame — alebo vytvárame — riešenie na mieru pre váš konkrétny profil misie. To je rozdiel Afarer.</p>
+
+  <h2>Ako vám slúžime</h2>
+  <p>Keď nám prinesiete materiálovú výzvu, môžete očakávať:</p>
+  <ol>
+    <li><strong>Konzultácia</strong> — preberieme vaše prevádzkové prostredie, ciele výkonu a rozpočet.</li>
+    <li><strong>Návrh</strong> — vypracuje sa testovací plán s jasnými kritériami úspechu/neúspechu a časovým harmonogramom.</li>
+    <li><strong>Vykonanie</strong> — naše laboratórium vykoná testy a vytvorí podrobnú správu so surovými údajmi a komparatívnou analýzou.</li>
+    <li><strong>Odporúčanie</strong> — predstavíme špecifikáciu látky vrátane alternatívnych možností, ak viacero materiálov spĺňa vaše požiadavky.</li>
+    <li><strong>Následná starostlivosť</strong> — po dodaní zostávame k dispozícii na podporu pri akýchkoľvek otázkach týkajúcich sa materiálov počas prevádzky.</li>
+  </ol>
+  <p>Naším cieľom nie je len predať vám dosku. Chceme zabezpečiť, aby sa doska, ktorú dostanete, spoľahlivo správala v podmienkach, v ktorých pádlujete — a to sa začína látkou.</p>
+
+cta:
+  title: 'Potrebujete zákazkovú špecifikáciu látky?'
+  subtitle: 'Kontaktujte náš tím materiálového inžinierstva a prediskutujte vaše požiadavky.'
+  button_text: 'Kontaktovať náš laboratórny tím'
+  button_link: /contact

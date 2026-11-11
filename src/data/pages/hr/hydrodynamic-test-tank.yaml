@@ -1,0 +1,112 @@
+meta:
+  title: 'Hidrodinamički ispitni bazen — Vučenje modela u smanjenom mjerilu i optimizacija trupa | {SITE}'
+  description: 'Potvrdite performanse svog trupa u našem hidrodinamičkom ispitnom bazenu. Vučenje modela u smanjenom mjerilu, analiza glisanja i ispitivanje učinkovitosti klizanja. Rezervirajte sesiju ispitivanja već danas.'
+back_text: 'Natrag u centar za razvoj i istraživanje'
+home_label: 'Početna'
+
+hero:
+  tagline: 'Laboratorij 04'
+  title: 'Hidrodinamički ispitni bazen'
+  subtitle: 'Potvrđivanje performansi prije prvog prototipa u punoj veličini'
+  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
+  image_alt: 'Ispitivanje performansi u Afarer hidrodinamičkom ispitnom bazenu'
+
+intro: 'Uobičajena je zabluda da je hidrodinamičko ispitivanje rezervirano za oceanske brodove. U stvarnosti performanse malog trupa za glisanje — poput napuhive SUP daske — jednako ovise o podvodnom obliku kao što tanker ovisi o svom bulbastom pramcu. Kut nagiba trupa, kvašena površina, stvaranje prskanja i ventilacija dramatično utječu na klizanje, brzinu i udobnost vožnje. U Afareru vodimo namjenski hidrodinamički ispitni bazen koji nam omogućuje kvantifikaciju tih učinaka na modelu — prije nego što posvetimo tkaninu i alate prototipu u punoj veličini.'
+
+content_html: |
+  <h2>Zašto ispitivati dasku za veslanje u bazenu?</h2>
+  <p>Ispitivanje na modelu u smanjenom mjerilu (obično 1:3 do 1:5) omogućuje nam brzo i ekonomično ponavljanje oblika trupa. Tjedan dana u bazenu može generirati iste podatke o performansama za koje bi na punoj veličini bilo potrebno mjeseci pokušaja i pogrešaka — a za djelić troška.</p>
+
+  <h2>Tehničke specifikacije objekta</h2>
+  <table>
+    <thead><tr><th>Parametar</th><th>Specifikacija</th></tr></thead>
+    <tbody>
+      <tr><td>Dimenzije bazena</td><td>35 m (dužina) × 3.5 m (širina) × 1.8 m (dubina)</td></tr>
+      <tr><td>Vučna kolica</td><td>Električni servo pogon, maks. brzina 12 m/s (23 čv), točnost brzine ± 0.5 %</td></tr>
+      <tr><td>Generator valova</td><td>Tip s pokretnom pločom, programibilna pravilna i nepravilna stanja mora, Hs do 0.3 m u mjerilu modela</td></tr>
+      <tr><td>Instrumentacija</td><td>6-komponentni dinamometar (otpor, bočna sila, moment skretanja), akcelerometri, inklinometri, sonde za valove</td></tr>
+      <tr><td>Prikupljanje podataka</td><td>Uzorkovanje pri 1000 Hz po kanalu, prikaz u stvarnom vremenu + paket za naknadnu obradu</td></tr>
+      <tr><td>Izrada modela</td><td>Vlastito CNC glodanje i 3D tisak za trupove modela do 1.8 m LOA</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Naš program ispitivanja</h2>
+  <p>Standardni program razvoja trupa u našem bazenu slijedi ovaj slijed:</p>
+  <ol>
+    <li><strong>Izrada modela</strong> — Model u mjerilu 1:3.5 CNC se izrađuje iz pjene visoke gustoće i ojačava staklenim vlknima radi krutosti. Masa i težište podešavaju se tako da odgovaraju Froudeovom skaliranom stanju pune napunjenosti.</li>
+    <li><strong>Ispitivanja otpora</strong> — Model se vuče pri 8-10 brzina koje pokrivaju cijeli radni raspon. Ukupni otpor mjeri se i raščlanjuje na trenje i zaostale komponente metodom ITTC-1957.</li>
+    <li><strong>Mjerenje nagiba trupa i uronjenja</strong> — Radni nagib i uronjenje bilježe se pri svakoj brzini. Cilj je optimalni kut nagiba od 4-6° za trupove za glisanje.</li>
+    <li><strong>Ispitivanje povratnog vala</strong> — Poprečni presjeci valova mjere se pri dvije brzine radi procjene otpora stvaranja valova i prepoznavanja međudjelovanja poprečnih valova koje bi moglo uzrokovati smetnje na krmi.</li>
+    <li><strong>Ponašanje na valovima (neobavezno)</strong> — Plovidba kroz valove s pramca i sa krme u pravilnim valovima radi mjerenja dodatnog otpora, vertikalnog ubrzanja i vjerojatnosti udara valova.</li>
+    <li><strong>Analiza podataka i preporuke</strong> — Dostavlja se potpuno izvješće s usporednim grafikonima, krivuljama brzine i snage te konkretnim preporukama za dizajn trupa u punoj veličini.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Tipični rezultati ispitivanja u bazenu — otpor u odnosu na brzinu (trup touring SUP daske, mjerilo 1:3.5)</p>
+    <div class="space-y-2">
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">5 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:18%"></div>
+        </div>
+        <span class="w-16 text-right">42 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">10 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:35%"></div>
+        </div>
+        <span class="w-16 text-right">81 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">15 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:52%"></div>
+        </div>
+        <span class="w-16 text-right">121 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">20 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:68%"></div>
+        </div>
+        <span class="w-16 text-right">158 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">25 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:85%"></div>
+        </div>
+        <span class="w-16 text-right">197 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">30 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:100%"></div>
+        </div>
+        <span class="w-16 text-right">232 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Otpor modela (N) pri Froudeovim skaliranim brzinama. Predviđanje otpora u punoj veličini slijedi ITTC-1978 metodu predviđanja performansi.</p>
+  </div>
+
+  <h2>Stručni tim</h2>
+  <p>Našim bazenom upravlja hidrodinamičar s doktoratom iz dinamike fluida i 8 godina iskustva u vučnom bazenu velikog europskog pomorskog istraživačkog instituta. Podržava ga tehničar koji priprema sve modele i instrumentaciju. Tim slijedi preporučene postupke ITTC-a (International Towing Tank Conference) kako bi se osiguralo da je svako ispitivanje ponovljivo, sljedivo i međunarodno obranjivo.</p>
+
+  <h2>Ispitivanje u bazenu za razvoj prilagođenih trupova</h2>
+  <p>Naš se bazen ne koristi samo za trupove vlastitog dizajna — redovito provodimo programe ispitivanja za klijente koji žele potvrditi prilagođeni oblik trupa ili istražiti problem performansi:</p>
+  <ul>
+    <li><strong>Usporedba oblika trupa</strong> — Dva ili više kandidatskih oblika trupa ispituju se pod istim uvjetima, što pruža objektivnu usporedbu otpora, brzine i stabilnosti za donošenje informirane dizajnerske odluke.</li>
+    <li><strong>Optimizacija dodataka</strong> — Konfiguracije peraja, profili rubova i varijante rockerja mogu se ispitivati u različitim kombinacijama radi kvantifikacije njihova pojedinačnog doprinosa smanjenju otpora.</li>
+    <li><strong>Studija učinkovitosti klizanja</strong> — Podaci o otporu pretvaraju se u krivulju učinkovitosti klizanja, što vam omogućuje da uravnotežite volumen trupa, rocker i krutost za vašu ciljanu brzinu veslanja i teret.</li>
+  </ul>
+
+  <h2>Zašto ispitivati s nama?</h2>
+  <p>Ne dajemo vam samo skup sirovih brojeva. Naša izvješća prevode podatke iz bazena u primjenjive inženjerske preporuke: "Dodajte 8 mm rockerja na pramcu kako biste smanjili kvašenu površinu pri brzini krstarenja", "Smanjite rocker krme za 3° kako biste produljili vodenu liniju pri touring brzini" ili "Pomaknite najširu točku 150 mm prema krmi za bolje držanje smjera". Odlazite s jasnim razumijevanjem što promijeniti i zašto.</p>
+  <p>Naš je bazen dostupan i za neovisna ispitivanja treće strane uz naknadu prema usluzi. Ako razvijate trup i želite nepristranu, profesionalno provedenu hidrodinamičku procjenu, radujemo se vašem upitu.</p>
+
+cta:
+  title: 'Rezervirajte sesiju ispitivanja u bazenu'
+  subtitle: 'Bilo da vam je potreban kompletan program razvoja ili jedno jedino usporedno ispitivanje, možemo se prilagoditi vašem rasporedu.'
+  button_text: 'Kontaktirajte naš tim za hidrodinamiku'
+  button_link: /contact

@@ -1,0 +1,112 @@
+meta:
+  title: 'Hüdrodünaamiline testbassein — mudelpukkide veok ja kere optimeerimine | {SITE}'
+  description: 'Valideeri oma kere jõudlus meie hüdrodünaamilises testbasseinis. Mudelpukkide veok, planeerimisanalüüs ja liuglemise tõhususe testimine. Broneeri basseini testseanss juba täna.'
+back_text: 'Tagasi R&D keskusesse'
+home_label: 'Kodu'
+
+hero:
+  tagline: 'Labor 04'
+  title: 'Hüdrodünaamiline testbassein'
+  subtitle: 'Jõudluse valideerimine enne esimest täismõõdus prototüüpi'
+  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
+  image_alt: 'Afarer hüdrodünaamilise testbasseini jõudlustestimine'
+
+intro: 'On levinud arvamus, et hüdrodünaamiline testimine on reserveeritud ookeanilaevadele. Tegelikult sõltub väikse planeeriva kere — nagu täispuhutava SUP-i — jõudlus oma veealusest kujust sama palju kui tanker oma pirnvettninast. Trimmnurk, märgatud pind, pritsmete teke ja ventilatsioon mõjutavad dramaatiliselt liuget, kiirust ja sõidumugavust. Afareril kasutame spetsiaalset hüdrodünaamilist testbasseini, mis võimaldab meil neid mõjusid kvantifitseerida mudeli mõõdus — enne kanga ja tööriistade pühendumist täissuuruses prototüübile.'
+
+content_html: |
+  <h2>Miks basseinis testida sõudelauda?</h2>
+  <p>Testimine mudeli mõõdus (tavaliselt 1:3 kuni 1:5) annab meile võimaluse kere kujusid kiiresti ja kulutõhusalt täiustada. Nädal basseinis võib anda sama jõudlusandmeid, mis nõuaksid kuidaid täismõõdus katse-eksitust — ja murdosa hinnast.</p>
+
+  <h2>Objekti spetsifikatsioonid</h2>
+  <table>
+    <thead><tr><th>Parameeter</th><th>Spetsifikatsioon</th></tr></thead>
+    <tbody>
+      <tr><td>Basseini mõõdud</td><td>35 m (P) × 3,5 m (L) × 1,8 m (S)</td></tr>
+      <tr><td>Veovankri</td><td>Elektriline servoveoga, maks. kiirus 12 m/s (23 kn), kiiruse täpsus ± 0,5 %</td></tr>
+      <tr><td>Lainegeneraator</td><td>Klapptüüpi, programmeeritavad korrapärased &amp; ebakorrapärased mereseisud, Hs kuni 0,3 m mudeli mõõdus</td></tr>
+      <tr><td>Mõõtevarustus</td><td>6-komponendi dünamomeeter (takistus, külgjõud, jóomoment), kiirendusandurid, kallutuse mõõturid, lainesonarid</td></tr>
+      <tr><td>Andmete kogumine</td><td>Diskreetimine 1000 Hz kanali kohta, reaalajas kuvamine + järeltöötluse komplekt</td></tr>
+      <tr><td>Mudelite valmistamine</td><td>Oma CNC-freesimine ja 3D-trükkimine mudelkeredele kuni 1,8 m LOA</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Meie testprogramm</h2>
+  <p>Standardne kere arendusprogramm meie basseinis järgib seda järjestust:</p>
+  <ol>
+    <li><strong>Mudeli ehitus</strong> — 1:3,5 mõõdus mudel freitakse kõrgtiheda vahtplastist ja kaetakse klaaskiuduga jäikuse tagamiseks. Kaal ja raskuskese kohandatakse Froude''i mõõdus täiskoormuse tingimustele.</li>
+    <li><strong>Takistuse sõidud</strong> — Mudel veetakse 8-10 kiirusel, mis katab töövahemiku. Kogutakistus mõõdetakse ja lahutatakse hõõrde- ja jääktakistuse komponentideks ITTC-1957 meetodil.</li>
+    <li><strong>Trimmi &amp; vajumise mõõtmine</strong> — Sõidu trimm ja vajumine registreeritakse igal kiirusel. Eesmärgiks on optimaalne trimminurk 4-6° planeeravate kerede jaoks.</li>
+    <li><strong>Köievesitlus</strong> — Ristlõikelised lainejaotused mõõdetakse kahel kiirusel, et hinnata lainetustakistust ja tuvastada ristlainete vastasmõjud, mis võivad põhjustada ahtritakistust.</li>
+    <li><strong>Mereseisvus (valikuline)</strong> — Päri- ja vastulaine sõidud korrapärastes lainetes lisatud takistuse, vertikaalse kiirenduse ja põrutuse tõenäosuse mõõtmiseks.</li>
+    <li><strong>Andmete analüüs &amp; soovitused</strong> — Täielik aruanne koos võrdlusdiagrammide, kiiruse/võimsuse kõverate ja konkreetsete disainisoovitustega täismõõdus kerale.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Tüüpilised basseini testitulemused — takistus vs kiirus (matka-SUP kere, 1:3,5 mõõt)</p>
+    <div class="space-y-2">
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">5 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:18%"></div>
+        </div>
+        <span class="w-16 text-right">42 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">10 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:35%"></div>
+        </div>
+        <span class="w-16 text-right">81 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">15 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:52%"></div>
+        </div>
+        <span class="w-16 text-right">121 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">20 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:68%"></div>
+        </div>
+        <span class="w-16 text-right">158 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">25 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:85%"></div>
+        </div>
+        <span class="w-16 text-right">197 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">30 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:100%"></div>
+        </div>
+        <span class="w-16 text-right">232 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Mudeli mõõdus takistus (N) Froude''i mõõdus kiirustel. Täismõõdus takistuse prognoos järgib ITTC-1978 jõudlusprognoosi meetodit.</p>
+  </div>
+
+  <h2>Ekspertmeeskond</h2>
+  <p>Meie basseini juhib hüdrodünaamika doktorikraadiga spetsialist, kellel on 8 aastat veokbasseini kogemust suures Euroopa merendusuurimise instituudis. Teda toetab tehnik, kes valmistab ette kõik mudelid ja mõõtevarustuse. Meeskond järgib ITTC (International Towing Tank Conference) soovituslikke protseduure, et tagada, et iga test on korratav, jälgitav ja rahvusvaheliselt kaitstav.</p>
+
+  <h2>Basseini testimine kohandatud kere arenduseks</h2>
+  <p>Meie basseini ei kasutata ainult oma disainitud kerede jaoks — me viime regulaarselt läbi testprogramme klientidele, kes soovivad valideerida kohandatud kere kuju või uurida jõudlusprobleemi:</p>
+  <ul>
+    <li><strong>Kerekuju võrdlus</strong> — Kaks või enam kandidaatkere kuju testitakse identsetes tingimustes, pakkudes objektiivse takistuse/kiiruse/stabiilsuse võrdluse teie disainivaliku toetamiseks.</li>
+    <li><strong>Lisandite optimeerimine</strong> — Uimekonfiguratsioone, reelinguprofiile ja rokkeri variante saab testida erinevates kombinatsioonides, et kvantifitseerida nende individuaalne panus takistuse vähendamisse.</li>
+    <li><strong>Liugtõhususe uuring</strong> — Takistuse andmed teisendatakse liugtõhususe kõveraks, võimaldades teil tasakaalustada kere mahu, rokkeri ja jäikuse teie sihtsõudekiirusele ja koormusele.</li>
+  </ul>
+
+  <h2>Miks meiega testida?</h2>
+  <p>Me ei anna teile lihtsalt toorandmete komplekti. Meie aruanded tõlgivad basseini andmed rakendatavateks insenerisoovitusteks: „Lisa 8 mm ninatrokkerit, et vähendada märgatud pinda curseerimiskiirusel", „Vähenda ahtrirokkerit 3° võrra, et pikendada veeliini matkakiirusel" või „Liiguta laiem koht 150 mm ahtri poole parema kurssihoidmise jaoks". Lahkute selge arusaamisega, mida muuta ja miks.</p>
+  <p>Meie bassein on saadaval ka sõltumatuks kolmanda osapoole testimiseks teenuse tasu eest. Kui arendate kere ja soovite erapooletut, professionaalselt läbiviidud hüdrodünaamilist hinnangut, ootame teie päringut.</p>
+
+cta:
+  title: 'Broneeri basseini testseanss'
+  subtitle: 'Olenemata sellest, kas vajate täielikku arendusprogrammi või üksikut võrdlustesti, saame kohanduda teie graafikule.'
+  button_text: 'Võta ühendust meie hüdrodünaamika meeskonnaga'
+  button_link: /contact

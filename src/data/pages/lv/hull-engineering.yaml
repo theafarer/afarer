@@ -1,0 +1,85 @@
+meta:
+  title: 'Korpusa inženierijas studija — CAD, FEA un pielāgots korpusa dizains | {SITE}'
+  description: 'Iepazīstieties ar mūsu Korpusa inženierijas studiju CAD dizaina, galīgo elementu analīzes (FEA) un pielāgotu augstas veiktspējas SUP korpusu izstrādei. Sazinieties ar mūsu inženieru komandu, lai sāktu savu nākamo dēļu projektu.'
+back_text: 'Atpakaļ uz Pētniecības un attīstības centru'
+home_label: 'Sākums'
+
+hero:
+  tagline: 'Laboratorija 02'
+  title: 'Korpusa inženierijas studija'
+  subtitle: 'Digitālā simulācija, strukturālā inteligence, pielāgots korpusa dizains'
+  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
+  image_alt: 'Afarer korpusa inženierijas CAD dizaina darba vieta'
+
+intro: 'Korpuss ir katra piepūšamā SUP dēļa mugurkauls. Tam jābūt pietiekami vieglam, lai efektīvi slīdētu, pietiekami stipram, lai izturētu akmeņainas krasta līnijas, un pietiekami stingram, lai katru aira vicienu pārvērstu virzībā uz priekšu. Afarer mūsu Korpusa inženierijas studija apvieno progresīvu CAD modelēšanu, galīgo elementu analīzi (FEA) un gadu desmitu praktisko dēļu dizaina pieredzi, lai radītu korpusus, kas ir optimizēti to paredzētajai disciplīnai — nevis vispārīgas formas, kas paņemtas no kataloga.'
+
+content_html: |
+  <h2>Kur stiprums satiek hidrodinamiku</h2>
+  <p>Mēs strādājam ar trim pamata konstrukcijas platformām — pastiprinātiem Drop-Stitch PVC kodoliem, ar rokām klātiem stiklšķiedras laminātiem un rotācijas veidā veidotu polietilēnu — un mums ir inženierijas spējas katru no tiem izstrādāt, simulēt un validēt uz vietas.</p>
+
+  <h2>Dizaina rīki un standarti</h2>
+  <p>Mūsu digitālā inženierijas vide ietver:</p>
+  <table>
+    <thead><tr><th>Iespēja</th><th>Programmatūra / rīks</th><th>Lietojums</th></tr></thead>
+    <tbody>
+      <tr><td>3D parametriskā modelēšana</td><td>SolidWorks Professional</td><td>Korpusa virsma, sānu malu un stingeru pastiprinājums, klāja izkārtojums, aprīkojuma stiprinājuma punkti</td></tr>
+      <tr><td>Galīgo elementu analīze</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Spriegumu kartēšana, modālā analīze, avāriju/trieciena simulācija</td></tr>
+      <tr><td>Skaitļojamās fluīdu dinamikas</td><td>Ansys Fluent / Star-CCM+</td><td>Hidrodinamiskās pretestības prognoze, trim optimizācija</td></tr>
+      <tr><td>Lamināta inženierija</td><td>ESAComp / CADEC</td><td>Stiklšķiedras slāņu klāšana, kodola izvēle, svara aprēķins</td></tr>
+      <tr><td>Veidnes plūsmas simulācija</td><td>Moldex3D</td><td>Rotācijas veidošanas sienu biezuma prognoze</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Mūsu inženierijas darba plūsma</h2>
+  <p>Katrs korpusa dizains — neatkarīgi no tā, vai tas ir standarta modelis vai pilnībā pielāgots projekts — iziet stingru piecu posmu procesu:</p>
+  <ol>
+    <li><strong>Koncepts un prasību apkopošana</strong> — Mēs tikamies ar jums, lai noteiktu braucēja svaru un kravu, ātruma diapazonu, ūdens stāvokļa spējas, transportēšanas prasības un jebkādu īpašu misijas aprīkojumu (klāja stiprinājumi, kravas nostiprināšanas pozīcijas, aksesuāru integrācija).</li>
+    <li><strong>3D virsmu veidošana un hidrostatiskie aprēķini</strong> — Korpusa forma tiek modelēta programmā SolidWorks un pārbaudīta uz hidrostatisko stabilitāti, tilpuma sadali un atjaunošanas momentu, izmantojot iebūvētos analīzes rīkus.</li>
+    <li><strong>Strukturālā FEA</strong> — Tiek noteikti slodzes gadījumi: statiskā (braucējs + aprīkojums), dinamic (viļņu nosēšanās triecieni pie 5g) un uzskriešana uz sēkli (trieciens akmeņainā krastā ar 3 m/s). Spriegumu kontūras tiek izvērtētas; drošības koeficients ≥ 2.5 ir obligāts.</li>
+    <li><strong>CFD pretestības optimizācija</strong> — Korpuss tiek simulēts trīs slodzes apstākļos un piecos ātrumos. Samērcētās virsmas laukums, trim leņķis un atlikusī pretestība tiek iteratīvi samazināti.</li>
+    <li><strong>Dizaina izvērtēšana un nodošana</strong> — Pilnu inženierijas paketi (3D modelis, FEA atskaite, CFD atskaite, svara aprēķins, slāņu grāmata) izvērtē mūsu vecākais inženieris, pirms tā tiek nodota prototipu darbnīcai.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA spriegumu sadalījums — tūrisma SUP korpusa (pastiprināts Drop-Stitch)</p>
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
+        <span class="text-gray-500">Drošības koeficients pie maksimālās kravas</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
+        <span class="text-gray-500">Pretestības samazinājums salīdzinājumā ar iepriekšējo paaudzi</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
+        <span class="text-gray-500">Maksimālais trieciena spiediens (dizaina robeža)</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
+        <span class="text-gray-500">Kumulatīvais FEA darbības laiks 2025. gadā</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Pielāgošana: jūsu korpuss, jūsu noteikumi</h2>
+  <p>Nav divu airētāju ar identiskām prasībām. Makšķerēšanas SUP vajag platu, stabilu planējošu korpusu; tūrisma dēlim vajag izspiedošu korpusu, kas maksimizē slīdēšanu; sērfinga SUP vajag reaģējošas sānu malas un noregulētu rokeri. Mēs nepiespiežam jūsu lietojumu iepriekš esošā korpusa formā. Mēs dizainējam no jūsu specifikācijas uz augšu.</p>
+  <p>Neseno pielāgoto korpusu inženierijas projektu piemēri:</p>
+  <ul>
+    <li>Pagarināta garuma tūrisma SUP dēlis Karību ekotūrisma operatoram ar pastiprinātu priekšgala daļu pludmales izkāpšanām (+15 % sānu malas biezums).</li>
+    <li>Augsta redzamības patruļas SUP dēlis ostas pārvaldei ar integrētiem aprīkojuma stiprinājumiem un taktiskajām sānu malām.</li>
+    <li>Ekspedīciju tūrisma SUP dēlis nomas flotei ar pastiprinātām sānu malām un papildu kravu nostiprinājumiem.</li>
+  </ul>
+
+  <h2>Mūsu inženieri</h2>
+  <p>Studiju vada vecākais inženieris ar 14 gadu pieredzi augstas veiktspējas dēļu dizainā, un viņu atbalsta divi mehāniskās inženierijas speciālisti FEA un CFD jomā. Visiem trim ir maģistra grādi jūras vai mehāniskajā inženierijā no starptautiski atzītām universitātēm. Komanda regulāri publicējas nozares žurnālos un uzstājas starptautiskās konferencēs par augstas veiktspējas airu sporta inženieriju.</p>
+
+  <h2>Sadarbojieties ar mums savā nākamajā korpusa projektā</h2>
+  <p>No pirmā koncepta skices līdz galīgajai spriegumu atskaitei mūsu Korpusa inženierijas studija ir jūsu partneris dēļa radīšanā, kas nav vienkārši uzbūvēts — bet inženieriski izstrādāts. Mēs iegulām simulāciju stundas jau pašā sākumā, lai katrs metinājums, katrs lamināta slānis un katra korpusa līkne būtu tur ar iemeslu.</p>
+  <p>Vai jums nepieciešama neliela esošā modeļa modifikācija vai pilnīgi jauns dizains no nulles — mēs esam gatavi apspriest jūsu prasības.</p>
+
+cta:
+  title: 'Sāciet savas korpusa dizaina konsultāciju'
+  subtitle: 'Pastāstiet mums par sava uzdevuma profilu, un mēs piedāvāsim inženierijas ceļu.'
+  button_text: 'Sazināties ar mūsu inženieru komandu'
+  button_link: /contact

@@ -1,0 +1,68 @@
+meta:
+  title: 'Minőségi labor — Tesztelés és minőségbiztosítás | {SITE}'
+  description: 'Független minőségi labor ISO 9001 folyamatokkal az afararnál: minden egység tesztelve szállítás előtt a felfújható SUP minőség garantálására.'
+  keywords:
+    - 'sup minőség-ellenőrzés'
+    - 'paddle lap tesztelő labor'
+    - 'iso 9001 sup gyár'
+    - 'felfújható sup minőség'
+hero:
+  tagline: 'Minőség-ellenőrzési laboratórium'
+  title: 'Tesztelő laboratórium és minőségbiztosítás'
+  subtitle: 'Független minőségi labor ISO 9001 folyamatokkal — minden egység tesztelve szállítás előtt'
+
+intro: 'Az afarar dedikált minőség-ellenőrzési laboratóriumot működtet, amely függetlenül működik a gyártástól. Minden nyersanyag tétel és minden kész lap dokumentált ellenőrzési protokollokon megy át a kiadás előtt. Minőség-ellenőrzési csapatunk közvetlenül a vezetésnek jelent, biztosítva a pártatlan minőségi döntéseket.'
+
+highlights:
+  - value: '100%'
+    label: 'Nyomástesztelt egységek'
+    detail: 'Minden kamra, minden lap'
+  - value: '24–48 ó'
+    label: 'Levegőretenció teszt időtartama'
+    detail: 'A névleges nyomás 1,25-szörösén'
+  - value: '&lt;5%'
+    label: 'Maximálisan megengedett nyomásesés'
+    detail: 'A 24–48 órás tartási időszak alatt'
+  - value: 'AQL 2.5'
+    label: 'Fő hibaküszöb'
+    detail: 'ISO 2859 mintavétel szerint'
+
+test_procedures:
+  - title: 'Nyersanyag-ellenőrzés'
+    description: 'Minden beérkező PVC, drop-stitch szövet és hardver tételt tesztelnek az elfogadás előtt. Húzószilárdság (ASTM D751), szakítószilárdság (ISO 4674) és UV-állóság ellenőrzése. A nem megfelelő anyagok karanténba kerülnek és visszaküldésre.'
+    standards:
+      - 'ASTM D751 (húzó)'
+      - 'ISO 4674 (szakítás)'
+      - 'ISO 4892 (UV)'
+  - title: 'Folyamatos minőség-ellenőrzési ellenőrzőpontok'
+    description: 'A gyártási operátorok önértékelést végeznek minden szakaszban. A minőség-ellenőrök véletlenszerű mintavételt végeznek a műszak során. Hegesztési hámlási teszteket 50 egységenként végeznek. Méretellenőrzések minden 20. panelnél történnek.'
+    standards:
+      - 'ASTM D751 (hámlás)'
+      - 'Belső 100 pontos ellenőrzőlista'
+      - 'ISO 2859 mintavétel'
+  - title: '24–48 órás levegőretenció teszt'
+    description: 'Minden csőkamrát a névleges nyomás 125%-ára fújnak fel és 24–48 órán át tartanak. A nyomásérzékelők folyamatosan naplóznak hőmérséklet-kompenzációval. Az 5%-ot meghaladó nyomásesésű kamra automatikus tétel-újrainspekciót vált ki.'
+    standards:
+      - 'EN ISO 25649'
+      - 'CE 2013/53/EU'
+  - title: 'Terhelés és kiegyensúlyozottság tesztelés'
+    description: 'A kész lapokat maximális névleges kapacitáson tesztelik stabilitásra és merevségre. Minden lap vízi tesztelésen esik át a végső ellenőrzési jóváhagyás előtt.'
+    standards:
+      - 'ISO 12217'
+      - 'CE 2013/53/EU'
+
+equipment:
+  - name: 'Univerzális tesztgép (húzó)'
+    spec: '5 kN, ASTM D751 megfelelő'
+  - name: 'Nyomáscsökkenés tesztelő'
+    spec: 'Többcsatornás, 0–50 psi, adatnaplózás'
+  - name: 'UV állapotvizsgáló kamra'
+    spec: 'ISO 4892, 1 000 órás ciklusok'
+  - name: 'Vastagságmérő (digitális)'
+    spec: '0,01 mm felbontás'
+  - name: 'Hámlasztó tesztelő (hegesztés)'
+    spec: 'Motoros, 50 N kapacitás'
+  - name: 'Hőmérséklet kamra'
+    spec: '-40 °C-tól +100 °C-ig'
+  - name: 'Szivárgásdetektáló tartály'
+    spec: '6 m × 2 m, világított'

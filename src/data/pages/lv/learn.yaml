@@ -1,0 +1,81 @@
+meta:
+  title: 'Mācības — SUP un airēšana | {SITE}'
+  description: 'Mācieties ar afarer: piepūšamo SUP pamācības, airēšanas tehnikas, ekipējuma pamati un jūras izglītība entuziastiem un uzņēmumiem.'
+  keywords:
+    - 'iemācies sup'
+    - 'airu dēļu pamācība'
+    - 'piepūšamā sup izglītība'
+    - 'airēšanas tehnikas'
+hero:
+  tagline: 'Ūdens izpētes zināšanas'
+  title: 'Mācības'
+  subtitle: |
+    Ceļveži, pamācības un padziļināti ieskati — viss, kas nepieciešams, lai<br />
+    izpētītu ūdeni ar pārliecību. No pirmā SUP izvēles līdz advancētu tehniku apguvei.
+  taglineSection: 'Zināšanas katram airētājam. No iesācēja līdz profesionālim.'
+
+featured:
+  tagline: 'Izceltās tēmas'
+  title: 'Sāciet savu mācību ceļu'
+  subtitle: 'Neatkarīgi no tā, vai esat jauns ūdenssportā vai vēlaties pacelt līmeni, mūsu ceļveži jūs aptvers.'
+  items:
+    - title: 'SUP pamati'
+      description: 'Viss, ko iesācējam jāzina — dēļu veidi, aira izmērs, stāja un pirmās dienas padomi.'
+      icon: 'tabler:lifebuoy'
+      href: '/learn/sup'
+    - title: 'Piepūšamais pret cieto dēli'
+      description: 'Kurš ir pareizs jums? Mēs salīdzinām pārvadājamību, veiktspēju, izturību un izmaksas blakus.'
+      icon: 'tabler:arrows-left-right'
+      href: '/compare/inflatable-vs-hardboard'
+    - title: 'Drošība uz ūdens'
+      description: 'Būtiskākās drošības zināšanas, kas jābūt katram airētājam — laikapstākļi, glābšanas vestes, pašglābšanās un vēl.'
+      icon: 'tabler:shield'
+      href: '/learn/water-safety'
+    - title: 'Materiālu ceļvedis'
+      description: 'PVC pakāpes, Drop-Stitch tehnoloģija, denj vērtējumi — izprotiet, no kā ir izgatavots jūsu ekipējums.'
+      icon: 'tabler:flask'
+      href: '/learn/materials'
+    - title: 'SUP izmēru ceļvedis'
+      description: 'Atrodiet pareizo dēļa garumu, platumu un tilpumu savam svaram, prasmēm un airēšanas stilam.'
+      icon: 'tabler:ruler'
+      href: '/size-guide'
+    - title: 'Vidējā līmeņa tehnikas'
+      description: 'Uzlabojiet savu airēšanu ar advancētiem vilkumiem, pagriešanās tehnikām un rūgta ūdens vadāmību.'
+      icon: 'tabler:droplet'
+      href: '/learn/intermediate-techniques'
+
+categories:
+  tagline: 'Kategorijas'
+  title: 'Izpētiet pēc tēmas'
+  subtitle: 'Viss mācību saturs organizēts pēc prasmju līmeņa un interesēm.'
+  columns:
+    - title: 'Iesācējiem'
+      items:
+        - 'SUP pamati — sāciet šeit'
+        - 'Piepūšamais pret cieto dēli'
+        - 'Drošības uz ūdens pamati'
+        - 'Kā izvēlēties savu SUP'
+        - 'Sūkņa un iepakošanas ceļvedis'
+    - title: 'Vidējam līmenim'
+      items:
+        - 'Airēšanas tehnikas'
+        - 'Piepūšamās tehnoloģijas'
+        - 'Materiālu atsauce'
+        - 'PVC pakāpju salīdzinājums'
+        - 'Drop-Stitch kodola skaidrojums'
+    - title: 'Advancētajiem un profesionāļiem'
+      items:
+        - 'Flotes operācijas'
+        - 'Komerciāla līmeņa aprīkojums'
+        - 'Drošības un glābšanas protokoli'
+        - 'Pielāgotas būvēšanas un OEM'
+
+cta:
+  title: 'Joprojām ir jautājumi?'
+  subtitle: 'Jautājiet mūsu MI ceļvedim personalizētas atbildes par ekipējumu, drošību un tehnikām.'
+  actions:
+    - variant: primary
+      text: 'Jautājiet Ūdens padomnieka MI'
+      href: '/ai-answer-center'
+    - text: 'Pārlūkojiet visus ceļvežus'
+      href: '/academy'

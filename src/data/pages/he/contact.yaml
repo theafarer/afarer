@@ -1,0 +1,144 @@
+meta:
+  title: יצירת קשר — פניות שותפות ומוצרים | {SITE}
+  description: צרו קשר עם afarer לפניות בנושא שותפות, מיתוג משותף ומותג פרטי, או ציים מקצועיים. מותג SUP מתנפח, אנו מגיבים תוך יומי עסקים.
+  keywords:
+    - הצעת מחיר למפיץ SUP
+    - ספק SUP מקצועי
+    - יצירת קשר עם יצרן SUP
+hero_text:
+  tagline: יצירת קשר
+  title: בואו נדבר
+contact_form:
+  id: form
+  title: שלחו לנו הודעה
+  subtitle: להצעות מחיר, שאלות טכניות או פניות שותפות, כתבו לנו שורה. אנחנו משיבים תוך יום עסקים אחד.
+  email_to: info@afarer.com
+  submit_button: שלחו פנייה ← קבלו הצעת מחיר
+  success_message: תודה! ההודעה שלכם נחתה בתיבת הדואר הנכנס שלנו. נשיב תוך יום עסקים אחד.
+  error_message: משהו השתבש בשליחת ההודעה שלכם. נסו שוב או שלחו לנו מייל ישירות.
+  default_country_code: '+1'
+  captcha:
+    label: 'נגד ספאם: פתרו את הבא'
+  fields:
+    - name: country
+      label: מדינה
+      row: 1
+      type: select
+      optionsKey: countries
+      step: 1
+    - name: orderVolume
+      label: היקף הזמנה משוער
+      row: 2
+      type: select
+      options:
+        - value: ''
+          label: בחרו את ההיקף המשוער שלכם...
+        - value: sample
+          label: דגימות / אבות טיפוס בלבד
+        - value: 5-10
+          label: 5–10 יחידות (MOQ סטנדרטי)
+        - value: 100-500
+          label: 100–500 יחידות
+        - value: 500-plus
+          label: 500+ יחידות (תמחור נפח)
+      step: 1
+    - name: customization
+      label: צריכים התאמה אישית?
+      row: 3
+      type: select
+      options:
+        - value: ''
+          label: בחרו סוג התאמה אישית...
+        - value: none
+          label: מוצר סטנדרטי (ללא התאמה אישית)
+        - value: logo
+          label: לוגו / מיתוג מותאם אישית בלבד
+        - value: full
+          label: מיתוג משותף מלא (גודל, צבע, גרפיקה, אריזה)
+        - value: consultation
+          label: לא בטוחים — צריכים ייעוץ
+      step: 1
+    - name: productInterest
+      label: קטגוריות מוצרים מעניינות
+      row: 4
+      type: select
+      options:
+        - value: ''
+          label: בחרו קטגוריית מוצר...
+        - value: all
+          label: כל המוצרים / הקטלוג המלא
+        - value: sup
+          label: לוחות SUP / לוחות חתירה
+        - value: safety
+          label: ציוד בטיחות / אפודי הצלה
+        - value: accessory
+          label: אביזרים (משאבות, משוטים, תיקים)
+      step: 1
+    - name: firstName
+      label: שם פרטי
+      row: 1
+      step: 2
+    - name: lastName
+      label: שם משפחה
+      row: 1
+      step: 2
+    - name: companyName
+      label: שם החברה
+      row: 2
+      step: 2
+    - name: email
+      label: אימייל
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: טלפון
+      row: 3
+      type: tel
+      withCountryCode: true
+      step: 2
+    - name: address
+      label: כתובת
+      row: 4
+      step: 2
+    - name: zip
+      label: מיקוד / מיקוד דואר
+      row: 5
+      step: 2
+    - name: subject
+      label: נושא
+      row: 1
+      step: 3
+    - name: message
+      label: הודעה
+      row: 2
+      type: textarea
+      rows: 6
+      step: 3
+features2_other_ways:
+  title: דרכים נוספות להשיג אותנו
+  columns: 3
+  items:
+    - title: פניות מכירות
+      description: הצעות מחיר, תצורות, בקשות סוכנים והזמנות בכמות גדולה.
+      icon: tabler:shopping-bag
+    - title: תמיכה טכנית
+      description: אחריות, תיקונים, חלקי חילוף ושאלות תפעול.
+      icon: tabler:tool
+    - title: עיתונות ושותפויות
+      description: ערכות מדיה, חסויות ושיתופי פעולה בענף.
+      icon: tabler:news
+    - title: טלפון
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: אימייל
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: מטה
+      description: אזור הפיתוח הכלכלי, Laixi, Qingdao, סין, 266600
+      icon: tabler:map-pin
+map:
+  title: המיקום שלנו
+  subtitle: בקרו אותנו במטה שלנו
+  address: אזור הפיתוח הכלכלי, Laixi, Qingdao, סין, 266600
+  zoom: 15

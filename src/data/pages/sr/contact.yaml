@@ -1,0 +1,144 @@
+meta:
+  title: Контакт — упити за партнерство и производе | {SITE}
+  description: Контактирајте afarer ради партнерства, ко-брендирања, приватних ознака или професионалних флота. Бренд надуваних SUP плоча — одговарамо у року од 2 радна дана.
+  keywords:
+    - понуда за sup дистрибутера
+    - професионални sup добављач
+    - контакт са sup произвођачем
+hero_text:
+  tagline: Контакт
+  title: СТУПИТЕ У ВЕЗУ
+contact_form:
+  id: form
+  title: Пошаљите нам поруку
+  subtitle: За понуде, техничка питања или упите за партнерство, напишите нам. Одговарамо у року од једног радног дана.
+  email_to: info@afarer.com
+  submit_button: Пошаљите упит → Затражите понуду
+  success_message: Хвала! Ваша порука је стигла у наш пријемни сандучић. Одговорићемо у року од једног радног дана.
+  error_message: Дошло је до грешке при слању ваше поруке. Покушајте поново или нам пишите директно на е-пошту.
+  default_country_code: '+1'
+  captcha:
+    label: 'Анти-спам: решите следеће'
+  fields:
+    - name: country
+      label: Држава
+      row: 1
+      type: select
+      optionsKey: countries
+      step: 1
+    - name: orderVolume
+      label: Процењена запремина поруџбине
+      row: 2
+      type: select
+      options:
+        - value: ''
+          label: Изаберите вашу процењену запремину...
+        - value: sample
+          label: Само узорци / прототипови
+        - value: 5-10
+          label: 5–10 јединица (стандардни MOQ)
+        - value: 100-500
+          label: 100–500 јединица
+        - value: 500-plus
+          label: 500+ јединица (цене за велике количине)
+      step: 1
+    - name: customization
+      label: Потребна прилагођавања?
+      row: 3
+      type: select
+      options:
+        - value: ''
+          label: Изаберите врсту прилагођавања...
+        - value: none
+          label: Стандардни производ (без прилагођавања)
+        - value: logo
+          label: Само прилагођени логотип / брендирање
+        - value: full
+          label: Потпуно ко-брендирање (величина, боја, графике, паковање)
+        - value: consultation
+          label: Нисам сигуран — потребан је савет
+      step: 1
+    - name: productInterest
+      label: Категорије производа од интереса
+      row: 4
+      type: select
+      options:
+        - value: ''
+          label: Изаберите категорију производа...
+        - value: all
+          label: Сви производи / комплетан каталог
+        - value: sup
+          label: SUP плоче / веслачке плоче
+        - value: safety
+          label: Безбедносна опрема / спасилачки прслуци
+        - value: accessory
+          label: Додаци (пумпе, весла, торбе)
+      step: 1
+    - name: firstName
+      label: Име
+      row: 1
+      step: 2
+    - name: lastName
+      label: Презиме
+      row: 1
+      step: 2
+    - name: companyName
+      label: Назив компаније
+      row: 2
+      step: 2
+    - name: email
+      label: Е-пошта
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: ТЕЛЕФОН
+      row: 3
+      type: tel
+      withCountryCode: true
+      step: 2
+    - name: address
+      label: Адреса
+      row: 4
+      step: 2
+    - name: zip
+      label: Поштански број
+      row: 5
+      step: 2
+    - name: subject
+      label: Предмет
+      row: 1
+      step: 3
+    - name: message
+      label: Порука
+      row: 2
+      type: textarea
+      rows: 6
+      step: 3
+features2_other_ways:
+  title: Други начини да нас контактирате
+  columns: 3
+  items:
+    - title: Продажни упити
+      description: Понуде, конфигурације, пријаве дилера и поруџбине на велико.
+      icon: tabler:shopping-bag
+    - title: Техничка подршка
+      description: Гаранција, поправке, резервни делови и питања о раду.
+      icon: tabler:tool
+    - title: Медији и партнерства
+      description: Медијски комплети, спонзорства и сарадња у индустрији.
+      icon: tabler:news
+    - title: Телефон
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: Е-пошта
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: Седиште
+      description: Зона економског развоја, Лајси, Ћингдао, Кина, 266600
+      icon: tabler:map-pin
+map:
+  title: Наша локација
+  subtitle: Посетите нас у нашем седишту
+  address: Зона економског развоја, Лајси, Ћингдао, Кина, 266600
+  zoom: 15

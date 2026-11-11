@@ -1,0 +1,112 @@
+meta:
+  title: 'Tangki Uji Hidrodinamika — Penarikan Model Skala & Optimasi Lambung | {SITE}'
+  description: 'Validasi performa lambung Anda dengan tangki uji hidrodinamika kami. Penarikan model skala, analisis planing, dan pengujian efisiensi glide. Pesan sesi uji tangki hari ini.'
+back_text: 'Kembali ke Pusat R&D'
+home_label: 'Beranda'
+
+hero:
+  tagline: 'Lab 04'
+  title: 'Tangki Uji Hidrodinamika'
+  subtitle: 'Memvalidasi performa sebelum prototipe skala penuh pertama'
+  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
+  image_alt: 'Pengujian performa tangki uji hidrodinamika Afarer'
+
+intro: 'Anggapan bahwa pengujian hidrodinamika hanya dikhususkan untuk kapal laut lepas adalah kesalahpahaman yang umum. Pada kenyataannya, performa lambung planing kecil — seperti SUP tiup — sama bergantungnya pada bentuk bawah airnya seperti halnya kapal tanker pada haluan bulbous-nya. Sudut trim, luas permukaan basah, pembentukan semprotan, dan ventilasi semuanya berpengaruh besar terhadap glide, kecepatan, dan kenyamanan berkendara. Di Afarer, kami mengoperasikan tangki uji hidrodinamika khusus yang memungkinkan kami mengkuantifikasi efek-efek ini pada skala model — sebelum berkomitmen pada kain dan tooling untuk prototipe ukuran penuh.'
+
+content_html: |
+  <h2>Mengapa menguji papan dayung di tangki?</h2>
+  <p>Pengujian pada skala model (umumnya 1:3 hingga 1:5) memberi kami kemampuan untuk mengiterasi bentuk lambung secara cepat dan hemat biaya. Seminggu di tangki dapat menghasilkan data performa yang sama yang sebaliknya memerlukan berbulan-bulan uji coba skala penuh — dan dengan biaya jauh lebih kecil.</p>
+
+  <h2>Spesifikasi fasilitas</h2>
+  <table>
+    <thead><tr><th>Parameter</th><th>Spesifikasi</th></tr></thead>
+    <tbody>
+      <tr><td>Dimensi tangki</td><td>35 m (P) × 3.5 m (L) × 1.8 m (K)</td></tr>
+      <tr><td>Kereta penarik</td><td>Servo-elektrik, kecepatan maksimum 12 m/s (23 kn), akurasi kecepatan ± 0.5 %</td></tr>
+      <tr><td>Pembangkit gelombang</td><td>Tipe flap, kondisi laut reguler &amp; ireguler yang dapat diprogram, Hs hingga 0.3 m pada skala model</td></tr>
+      <tr><td>Instrumentasi</td><td>Dinamometer 6 komponen (hambatan, gaya samping, momen yaw), akselerometer, inklinometer, probe gelombang</td></tr>
+      <tr><td>Akuisisi data</td><td>Pengambilan sampel 1000 Hz per kanal, tampilan waktu nyata + rangkaian pasca-pemrosesan</td></tr>
+      <tr><td>Fabrikasi model</td><td>Pemesinan CNC dan pencetakan 3D in-house untuk lambung model hingga LOA 1.8 m</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Program pengujian kami</h2>
+  <p>Program pengembangan lambung standar di tangki kami mengikuti urutan berikut:</p>
+  <ol>
+    <li><strong>Pembuatan model</strong> — Model skala 1:3.5 dimachining dengan CNC dari foam densitas tinggi dan dilapisi serat kaca demi kekakuan. Berat dan titik berat (CG) disesuaikan agar cocok dengan kondisi beban penuh berskala Froude.</li>
+    <li><strong>Pengukuran hambatan</strong> — Model ditarik pada 8-10 tingkat kecepatan yang mencakup rentang operasional. Hambatan total diukur dan diuraikan menjadi komponen gesekan dan residu menggunakan metode ITTC-1957.</li>
+    <li><strong>Pengukuran trim &amp; sinkage</strong> — Trim berjalan dan sinkage dicatat pada setiap kecepatan. Sudut trim optimal 4-6° untuk lambung planing adalah targetnya.</li>
+    <li><strong>Survei wake</strong> — Potongan gelombang transversal diukur pada dua kecepatan untuk menilai hambatan pembentukan gelombang dan mengidentifikasi interaksi gelombang transversal yang dapat menyebabkan interferensi buritan.</li>
+    <li><strong>Seakeeping (opsional)</strong> — Pengukuran head-sea dan following-sea dalam gelombang reguler untuk mengukur hambatan tambahan, akselerasi vertikal, dan probabilitas slamming.</li>
+    <li><strong>Analisis data &amp; rekomendasi</strong> — Laporan lengkap diserahkan beserta grafik perbandingan, kurva kecepatan/daya, dan rekomendasi desain spesifik untuk lambung skala penuh.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Hasil Uji Tangki Tipikal — Hambatan vs Kecepatan (lambung SUP touring, skala 1:3.5)</p>
+    <div class="space-y-2">
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">5 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:18%"></div>
+        </div>
+        <span class="w-16 text-right">42 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">10 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:35%"></div>
+        </div>
+        <span class="w-16 text-right">81 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">15 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:52%"></div>
+        </div>
+        <span class="w-16 text-right">121 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">20 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:68%"></div>
+        </div>
+        <span class="w-16 text-right">158 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">25 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:85%"></div>
+        </div>
+        <span class="w-16 text-right">197 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">30 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:100%"></div>
+        </div>
+        <span class="w-16 text-right">232 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Hambatan skala model (N) pada kecepatan berskala Froude. Prediksi hambatan skala penuh mengikuti metode prediksi performa ITTC-1978.</p>
+  </div>
+
+  <h2>Tim ahli</h2>
+  <p>Tangki kami dioperasikan oleh seorang ahli hidrodinamika dengan gelar PhD dalam dinamika fluida dan 8 tahun pengalaman tangki penarik di sebuah lembaga riset bahari besar di Eropa. Ia didukung oleh seorang teknisi yang menyiapkan seluruh model dan instrumentasi. Tim ini mengikuti Prosedur Rekomendasi ITTC (International Towing Tank Conference) untuk memastikan setiap pengujian dapat diulang, terlacak, dan dapat dipertanggungjawabkan secara internasional.</p>
+
+  <h2>Pengujian tangki untuk pengembangan lambung kustom</h2>
+  <p>Tangki kami tidak hanya digunakan untuk lambung rancangan sendiri — kami secara rutin menjalankan program pengujian bagi klien yang ingin memvalidasi bentuk lambung kustom atau menyelidiki masalah performa:</p>
+  <ul>
+    <li><strong>Perbandingan bentuk lambung</strong> — Dua bentuk lambung kandidat atau lebih diuji dalam kondisi identik, memberikan perbandingan hambatan/kecepatan/stabilitas yang objektif untuk mendukung pilihan desain Anda.</li>
+    <li><strong>Optimasi lampiran</strong> — Konfigurasi sirip, profil rail, dan varian rocker dapat diuji dalam berbagai kombinasi untuk mengkuantifikasi kontribusi masing-masing terhadap pengurangan hambatan.</li>
+    <li><strong>Studi efisiensi glide</strong> — Data hambatan dikonversi menjadi kurva efisiensi glide, memungkinkan Anda menyeimbangkan volume lambung, rocker, dan kekakuan untuk kecepatan dayung dan beban target Anda.</li>
+  </ul>
+
+  <h2>Mengapa menguji bersama kami?</h2>
+  <p>Kami tidak sekadar memberi Anda sekumpulan angka mentah. Laporan kami menerjemahkan data tangki menjadi rekomendasi teknis yang dapat ditindaklanjuti: "Tambahkan 8 mm nose rocker untuk mengurangi permukaan basah pada kecepatan jelajah", "Kurangi tail rocker sebesar 3° untuk memperpanjang garis air pada kecepatan touring", atau "Pindahkan titik terlebar 150 mm ke arah buritan untuk pelacakan yang lebih baik". Anda akan pulang dengan pemahaman yang jelas tentang apa yang perlu diubah dan mengapa.</p>
+  <p>Tangki kami juga tersedia untuk pengujian pihak ketiga independen dengan skema bayar per layanan. Jika Anda sedang mengembangkan lambung dan menginginkan penilaian hidrodinamika yang tidak memihak serta dilaksanakan secara profesional, kami menyambut pertanyaan Anda.</p>
+
+cta:
+  title: 'Pesan sesi uji tangki'
+  subtitle: 'Baik Anda membutuhkan program pengembangan lengkap maupun satu pengujian perbandingan, kami dapat menyesuaikan diri dengan jadwal Anda.'
+  button_text: 'Hubungi tim hidrodinamika kami'
+  button_link: /contact

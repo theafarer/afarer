@@ -1,0 +1,99 @@
+meta:
+  title: 'Vyžiadanie cenovej ponuky — výroba SUP OEM | {SITE}'
+  description: 'Vyžiadajte si podrobnú cenovú ponuku pre váš projekt nafukovacej dosky SUP. Výroba OEM/ODM, private label alebo zákazkové flotily — odpovieme do 2 pracovných dní.'
+  keywords:
+    - 'vyžiadať cenovú ponuku sup'
+    - 'cenová ponuka oem paddle board'
+    - 'cenová ponuka z továrne sup'
+    - 'cena nafukovacej sup'
+hero_text:
+  tagline: 'Získajte cenovú ponuku'
+  title: 'Vyžiadajte si cenovú ponuku<br />pre váš projekt'
+  subtitle: 'Povedzte nám o svojich požiadavkách a náš tím odpovie podrobnou cenovou ponukou do 2 pracovných dní.'
+steps2_process:
+  title: 'Ako to funguje'
+  subtitle: 'Štyri jednoduché kroky od dopytu po cenovú ponuku.'
+  items:
+    - title: 'Krok 1: Odošlite svoje požiadavky'
+      description: 'Vyplňte formulár nižšie s typom produktu, množstvom a špecifikáciami. Čím viac detailov uvediete, tým presnejšia bude vaša cenová ponuka.'
+      icon: tabler:file-text
+    - title: 'Krok 2: Preveríme a poradíme'
+      description: 'Náš inžiniersky tím preverí vaše požiadavky a prípadne vás kontaktuje na objasnenie. Poskytujeme odporúčania ku konfigurácii produktu a možnostiam.'
+      icon: tabler:users
+    - title: 'Krok 3: Dostanete svoju ponuku'
+      description: 'Dostanete podrobnú cenovú ponuku vrátane cien za kus, MOQ, dodacej lehoty, platobných podmienok a možností dopravy. Zvyčajne do 48 hodín.'
+      icon: tabler:currency-dollar
+    - title: 'Krok 4: Vzorka a výroba'
+      description: 'Po prijatí ponuky prejdeme k výrobe vzorky (ak je relevantná) alebo priamo k hromadnej výrobe. Pravidelné aktualizácie počas celého procesu.'
+      icon: tabler:building-factory
+content_form:
+  tagline: 'Formulár cenovej ponuky'
+  title: 'Povedzte nám o svojom projekte'
+  subtitle: 'Všetky polia s * sú povinné.'
+  contact_fields:
+    firstName: 'Krstné meno'
+    lastName: 'Priezvisko'
+    companyName: 'Názov spoločnosti'
+    email: 'E-mail'
+  fields:
+    - name: 'Kategória produktu'
+      type: select
+      options:
+        - 'Doska SUP'
+        - 'Nafukovacia SUP'
+        - 'Nafukovacia doska SUP'
+        - 'Záchranná vesta'
+        - 'Morské príslušenstvo'
+        - 'Zákazkové OEM/ODM'
+    - name: 'Aplikácia'
+      type: select
+      options:
+        - 'Potápačské centrum'
+        - 'Rybolov'
+        - 'Morská turistika / rezort'
+        - 'Pátranie a záchrana'
+        - 'Vláda / armáda'
+        - 'OEM / Private Label'
+        - 'Osobné / rekreačné'
+        - 'Iné'
+    - name: 'Množstvo'
+      type: text
+      placeholder: 'napr. 50 ks'
+    - name: 'Cieľový trh'
+      type: text
+      placeholder: 'napr. Európa, Severná Amerika, Blízky východ'
+    - name: 'Krajina dodania'
+      type: text
+      placeholder: 'napr. Taliansko, SAE, USA, Austrália'
+    - name: 'Preferencia materiálu'
+      type: select
+      options:
+        - 'Bez preferencie'
+        - 'Morské PVC (1100 dtex)'
+        - 'Sklolaminátový trup'
+        - 'Hliníkový trup'
+    - name: 'Požiadavka na pohon'
+      type: text
+      placeholder: 'napr. štandardné pádlové vybavenie, elektrická pumpa, vlastné farby'
+    - name: 'Požadované prispôsobenie'
+      type: text
+      placeholder: 'napr. vlastné farby, branding/logo, balenie, špeciálne armatúry'
+    - name: 'Časový harmonogram'
+      type: text
+      placeholder: 'napr. dodanie do 90 dní'
+    - name: 'Ďalšie požiadavky'
+      type: textarea
+      placeholder: 'Opíšte svoju aplikáciu, technické špecifikácie alebo akékoľvek špeciálne požiadavky — priložte referenčné výkresy, špecifikácie alebo odkazy, ak sú k dispozícii'
+    - name: 'Nahrať špecifikáciu'
+      type: file
+      placeholder: 'Nahrajte svoj technický list, výkres alebo referenčný dokument (PDF, DWG, DXF)'
+    - name: 'Nahrať logo / grafiku'
+      type: file
+      placeholder: 'Nahrajte svoje logo alebo grafiku pre vlastný branding (AI, EPS, PNG)'
+cta:
+  title: 'Radšej by ste si prediskutovali e-mailom?'
+  subtitle: 'Pošlite svoj dopyt priamo nášmu predajnému tímu a odpovieme do 24 hodín.'
+  actions:
+    - variant: primary
+      text: 'Napíšte nám priamo e-mail'
+      href: /contact

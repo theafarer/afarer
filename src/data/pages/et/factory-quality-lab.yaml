@@ -1,0 +1,68 @@
+meta:
+  title: 'Kvaliteedilabor — testimine ja kvaliteedikindlus | {SITE}'
+  description: 'Sõltumatu kvaliteedilabor ISO 9001 protsessidega afarer juures: iga üksus testitud enne saatmist, et tagada täispuhutavate supilaudade kvaliteet.'
+  keywords:
+    - 'supi kvaliteedikontroll'
+    - 'supilaudade testimislabor'
+    - 'iso 9001 supi tehas'
+    - 'täispuhutavate supilaudade kvaliteet'
+hero:
+  tagline: 'Kvaliteedikontrolli laboratoorium'
+  title: 'Testimislabor ja kvaliteedikindlus'
+  subtitle: 'Sõltumatu kvaliteedilabor ISO 9001 protsessidega — iga üksus testitud enne saatmist'
+
+intro: 'afarer haldab pühendatud kvaliteedikontrolli laboratooriumi, mis tegutseb tootmisest sõltumatult. Iga toormaterjali partii ja iga valmis laud läbib enne vabastamist dokumenteeritud inspektsiooniprotokollid. Meie kvaliteedikontrolli meeskond allub otse juhtkonnale, tagades erapooletud kvaliteediotsused.'
+
+highlights:
+  - value: '100%'
+    label: 'Ühikuid rõhutestitud'
+    detail: 'Iga kamber, iga laud'
+  - value: '24–48 h'
+    label: 'Õhupidavuse testi kestus'
+    detail: '1.25-kordsel nimirõhul'
+  - value: '&lt;5%'
+    label: 'Maksimaalne lubatud rõhulangus'
+    detail: '24–48 tunni pidamisperioodi jooksul'
+  - value: 'AQL 2.5'
+    label: 'Suure vea lävi'
+    detail: 'Vastavalt ISO 2859 valimile'
+
+test_procedures:
+  - title: 'Toormaterjali kontroll'
+    description: 'Iga sissetulev PVC-, Drop-Stitch-kanga ja riistvara partii testitakse enne vastuvõtmist. Verifitseeritakse tõmbetugevus (ASTM D751), rebimiskindlus (ISO 4674) ja UV-kindlus. Mittevastavad materjalid pannakse karantiini ja tagastatakse.'
+    standards:
+      - 'ASTM D751 (tõmbe)'
+      - 'ISO 4674 (rebimine)'
+      - 'ISO 4892 (UV)'
+  - title: 'Protsessisisened kvaliteedikontrolli punktid'
+    description: 'Tootmisoperaatorid teevad iga etapi juures enesekontrolli. Kvaliteediaudiitorid viivad läbi juhusliku valimi kogu vahetuse jooksul. Keevitusõmbluste eemaldustestid tehakse iga 50 ühiku järel. Mõõtmiskontrollid tehakse iga 20. paneeli järel.'
+    standards:
+      - 'ASTM D751 (eemaldus)'
+      - 'Sisemine 100-punktiline kontroll-loend'
+      - 'ISO 2859 valim'
+  - title: '24–48-tunnine õhupidavuse test'
+    description: 'Iga torukamber pumbatakse üles 125%-le nimirõhust ja hoitakse 24–48 tundi. Rõhuandurid logivad pidevalt koos temperatuuri kompenseerimisega. Iga kamber, mille rõhulangus ületab 5%, käivitab automaatse partii uue kontrolli.'
+    standards:
+      - 'EN ISO 25649'
+      - 'CE 2013/53/EU'
+  - title: 'Koormus- ja tasakaalutestimine'
+    description: 'Valmis laudu testitakse maksimaalse nimirõhu korral stabiilsuse ja jäikuse osas. Iga laud läbib veetestimise enne lõppkontrolli heakskiitmist.'
+    standards:
+      - 'ISO 12217'
+      - 'CE 2013/53/EU'
+
+equipment:
+  - name: 'Universaalne katsemasin (tõmbe)'
+    spec: '5 kN, ASTM D751 vastavus'
+  - name: 'Rõhulanguse testija'
+    spec: 'Mitmekanaliline, 0–50 psi, andmete logimine'
+  - name: 'UV-ilmastikukamber'
+    spec: 'ISO 4892, 1,000 h tsüklid'
+  - name: 'Paksuse mõõtja (digitaalne)'
+    spec: 'Lahutus 0.01 mm'
+  - name: 'Eemaldustester (keevitus)'
+    spec: 'Mootoriga, võimsus 50 N'
+  - name: 'Temperatuurikamber'
+    spec: '-40 °C kuni +100 °C'
+  - name: 'Lekke tuvastamise paak'
+    spec: '6 m × 2 m, valgustatud'

@@ -1,0 +1,112 @@
+meta:
+  title: 'Hydrodynamický skúšobný bazén — vlečenie modelov a optimalizácia trupu | {SITE}'
+  description: 'Overte výkon svojho trupu v našom hydrodynamickom skúšobnom bazéne. Vlečenie zmenšených modelov, analýza glisovania a testovanie účinnosti klzu. Rezervujte si testovaciu reláciu ešte dnes.'
+back_text: 'Späť do centra výskumu a vývoja'
+home_label: 'Domov'
+
+hero:
+  tagline: 'Laboratórium 04'
+  title: 'Hydrodynamický skúšobný bazén'
+  subtitle: 'Overovanie výkonu pred prvým prototypom v plnom meradle'
+  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
+  image_alt: 'Výkonnostné testovanie v hydrodynamickom skúšobnom bazéne Afarer'
+
+intro: 'Bežnou mylnou predstavou je, že hydrodynamické testovanie je vyhradené len pre námorné lode. V skutočnosti závisí výkon malého glisujúceho trupu — ako je nafukovacie SUP — od jeho podvodného tvaru rovnako ako tanker od svojej prove s bulbom. Uhol trimu, omáčaná plocha, tvorba spreja a ventilácia majú dramatický vplyv na klz, rýchlosť a komfort jazdy. V Afarer prevádzkujeme vyhradený hydrodynamický skúšobný bazén, ktorý nám umožňuje kvantifikovať tieto efekty v meradle modelu — ešte predtým, než investujeme látku a nástroje do prototypu v plnej veľkosti.'
+
+content_html: |
+  <h2>Prečo testovať paddle board v bazéne?</h2>
+  <p>Testovanie v meradle modelu (zvyčajne 1:3 až 1:5) nám umožňuje rýchlo a nákladovo efektívne iterovať tvary trupov. Týždeň v bazéne môže vygenerovať rovnaké výkonnostné údaje, aké by si vyžadovali mesiace skúšania v plnom meradle — a za zlomok nákladov.</p>
+
+  <h2>Špecifikácie zariadenia</h2>
+  <table>
+    <thead><tr><th>Parameter</th><th>Špecifikácia</th></tr></thead>
+    <tbody>
+      <tr><td>Rozmery bazéna</td><td>35 m (D) × 3,5 m (Š) × 1,8 m (H)</td></tr>
+      <tr><td>Vlečný vozík</td><td>Elektrický servopohon, max. rýchlosť 12 m/s (23 uzlov), presnosť rýchlosti ± 0,5 %</td></tr>
+      <tr><td>Generátor vĺn</td><td>Klapkový, programovateľné pravidelné &amp; nepravidelné morské stavy, Hs až 0,3 m v meradle modelu</td></tr>
+      <tr><td>Inštrumentácia</td><td>6-zložkový dynamometer (odpor, bočná sila, moment odbočenia), akcelerometre, inklinometre, vlnové sondy</td></tr>
+      <tr><td>Zber údajov</td><td>Vzorkovanie 1000 Hz na kanál, zobrazovanie v reálnom čase + balík následného spracovania</td></tr>
+      <tr><td>Výroba modelov</td><td>Vlastné CNC frézovanie a 3D tlač modelových trupov s LOA až 1,8 m</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Náš testovací program</h2>
+  <p>Štandardný program vývoja trupu v našom bazéne sa riadi touto postupnosťou:</p>
+  <ol>
+    <li><strong>Výroba modelu</strong> — Model v meradle 1:3,5 sa vyfrézuje na CNC z vysokohustotnej peny a zosklení sa kvôli tuhosti. Hmotnosť a ťažisko sa upravia tak, aby zodpovedali podmienkam plného zaťaženia škálovaným podľa Froudeho.</li>
+    <li><strong>Vlečné jazdy odporu</strong> — Model sa vlečie pri 8–10 rýchlostiach pokrývajúcich prevádzkový rozsah. Celkový odpor sa meria a pomocou metódy ITTC-1957 rozkladá na zložku trenia a zvyškovú zložku.</li>
+    <li><strong>Meranie trimu &amp; ponoru</strong> — Behový trim a ponor sa zaznamenávajú pri každej rýchlosti. Cieľom je optimálny uhol trimu 4–6° pre glisujúce trupy.</li>
+    <li><strong>Prieskum vlnovej sústavy</strong> — Priečne rezy vĺn sa merajú pri dvoch rýchlostiach na vyhodnotenie odporu vlnenia a identifikáciu priečnych interakcií vĺn, ktoré by mohli spôsobiť interferenciu v kormových vlnách.</li>
+    <li><strong>Námornosť (voliteľné)</strong> — Jazdy proti vlnám a s vlnami v pravidelných vlnách na meranie pridaného odporu, vertikálneho zrýchlenia a pravdepodobnosti nárazov.</li>
+    <li><strong>Analýza údajov &amp; odporúčania</strong> — Dodá sa kompletná správa s porovnávacími grafmi, krivkami rýchlosť/výkon a konkrétnymi návrhárskymi odporúčaniami pre trup v plnom meradle.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Typické výsledky testu v bazéne — odpor v závislosti od rýchlosti (trup touring SUP, merítko 1:3,5)</p>
+    <div class="space-y-2">
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">5 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:18%"></div>
+        </div>
+        <span class="w-16 text-right">42 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">10 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:35%"></div>
+        </div>
+        <span class="w-16 text-right">81 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">15 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:52%"></div>
+        </div>
+        <span class="w-16 text-right">121 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">20 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:68%"></div>
+        </div>
+        <span class="w-16 text-right">158 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">25 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:85%"></div>
+        </div>
+        <span class="w-16 text-right">197 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">30 kn (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:100%"></div>
+        </div>
+        <span class="w-16 text-right">232 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Odpor modelu (N) pri rýchlostiach škálovaných podľa Froudeho. Predikcia odporu v plnom meradle sa riadi metódou predikcie výkonu ITTC-1978.</p>
+  </div>
+
+  <h2>Tím expertov</h2>
+  <p>Náš bazén prevádzkuje hydrodynamik s titulom PhD z dynamiky tekutín a 8-ročnými skúsenosťami s vlečným bazénom vo významnom európskom námornom výskumnom ústave. Podporuje ho technik, ktorý pripravuje všetky modely a inštrumentáciu. Tím sa riadi odporúčanými postupmi ITTC (International Towing Tank Conference), aby bolo každé meranie opakovateľné, vysledovateľné a medzinárodne obhájiteľné.</p>
+
+  <h2>Testovanie v bazéne pre vývoj vlastného trupu</h2>
+  <p>Náš bazén sa nepoužíva len na trupy vlastného dizajnu — pravidelne realizujeme testovacie programy pre klientov, ktorí chcú overiť vlastný tvar trupu alebo preskúmať problém s výkonom:</p>
+  <ul>
+    <li><strong>Porovnanie tvarov trupu</strong> — Dva alebo viac kandidátskych tvarov trupu sa testuje za identických podmienok, čo poskytuje objektívne porovnanie odporu/rýchlosti/stability na podporu vášho návrhu.</li>
+    <li><strong>Optimalizácia príslušenstva</strong> — Konfigurácie plutiev, profily bočníc a varianty rockeru je možné testovať v rôznych kombináciách na kvantifikáciu ich individuálneho prínosu k zníženiu odporu.</li>
+    <li><strong>Štúdia účinnosti klzu</strong> — Údaje o odpore sa prevedú na krivku účinnosti klzu, čo vám umožní vyvážiť objem trupu, rocker a tuhosť pre vašu cieľovú pádlovaciu rýchlosť a zaťaženie.</li>
+  </ul>
+
+  <h2>Prečo testovať s nami?</h2>
+  <p>Nedáme vám len súbor surových čísel. Naše správy prekladajú údaje z bazéna do použiteľných inžinierskych odporúčaní: „Pridajte 8 mm rockeru na prove na zníženie omáčanej plochy pri cestovnej rýchlosti", „Znížte kormový rocker o 3° na predĺženie vodnej línie pri touringovej rýchlosti" alebo „Presuňte najširší bod o 150 mm dozadu pre lepšiu stopu". Odchádzate s jasným pochopením, čo zmeniť a prečo.</p>
+  <p>Náš bazén je tiež k dispozícii pre nezávislé testovanie treťou stranou za poplatok. Ak vyvíjate trup a chcete nezaujaté, profesionálne vykonané hydrodynamické hodnotenie, uvítame váš dopyt.</p>
+
+cta:
+  title: 'Rezervujte si testovaciu reláciu v bazéne'
+  subtitle: 'Či potrebujete kompletný vývojový program alebo len jedno porovnávacie meranie, prispôsobíme sa vášmu harmonogramu.'
+  button_text: 'Kontaktujte náš tím hydrodynamiky'
+  button_link: /contact

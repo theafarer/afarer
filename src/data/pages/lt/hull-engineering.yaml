@@ -1,0 +1,85 @@
+meta:
+  title: 'Korpusų inžinerijos studija — CAD, FEA ir individualus korpusų dizainas | {SITE}'
+  description: 'Susipažinkite su mūsų korpusų inžinerijos studija: CAD dizainas, baigtinių elementų analizė (FEA) ir individualių aukšto našumo SUP korpusų kūrimas. Susisiekite su mūsų inžinerijos komanda, kad pradėtumėte savo kitą lentų projektą.'
+back_text: 'Grįžti į tyrimų ir plėtros centrą'
+home_label: 'Pradžia'
+
+hero:
+  tagline: 'Laboratorija 02'
+  title: 'Korpusų inžinerijos studija'
+  subtitle: 'Skaitmeninis modeliavimas, konstrukcinis intelektas, individualus korpusų dizainas'
+  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
+  image_alt: 'Afarer korpusų inžinerijos CAD dizaino darbo vieta'
+
+intro: 'Korpusas yra kiekvienos pripučiamos SUP lentos stuburas. Jis turi būti pakankamai lengvas, kad efektyviai čiuožtų, pakankamai stiprus, kad atlaikytų uolėtas kranto linijas, ir pakankamai standus, kad kiekvieną irklo mostą paverstų judėjimu pirmyn. Afarer korpusų inžinerijos studija derina pažangų CAD modeliavimą, baigtinių elementų analizę (FEA) ir daugelio metų praktinės lentų dizaino patirties, siekdama kurti korpusus, optimizuotus jų numatytai disciplinai — o ne bendrines formas, adaptuotas iš katalogo.'
+
+content_html: |
+  <h2>Kur stiprybė susitinka su hidrodinamika</h2>
+  <p>Mes dirbame su trimis pagrindinėmis konstrukcijos platformomis — sutvirtintais „Drop-Stitch“ PVC branduoliais, rankomis klojamais stiklo pluošto laminatais ir rotaciniu būdu liespiais polietilenu — ir turime inžinerinius pajėgumus kiekvieną jų projektuoti, modeliuoti ir patvirtinti vietoje.</p>
+
+  <h2>Dizaino įrankiai ir standartai</h2>
+  <p>Mūsų skaitmeninė inžinerijos aplinka apima:</p>
+  <table>
+    <thead><tr><th>Galimybė</th><th>Programinė įranga / įrankis</th><th>Taikymas</th></tr></thead>
+    <tbody>
+      <tr><td>3D parametrinis modeliavimas</td><td>SolidWorks Professional</td><td>Korpuso paviršius, bortelių ir stringerių sutvirtinimas, denio išdėstymas, įrangos tvirtinimo taškai</td></tr>
+      <tr><td>Baigtinių elementų analizė</td><td>ANSYS Mechanical ir LS-DYNA</td><td>Įtempių kartografavimas, modalinė analizė, smūgių modeliavimas</td></tr>
+      <tr><td>Skaičiuojamoji skysčių dinamika</td><td>Ansys Fluent / Star-CCM+</td><td>Hidrodinaminio pasipriešinimo prognozė, balanso optimizavimas</td></tr>
+      <tr><td>Laminatų inžinerija</td><td>ESAComp / CADEC</td><td>Stiklo pluošto sluoksnių klojimas, branduolio parinkimas, svorio įvertinimas</td></tr>
+      <tr><td>Liejimo srovės modeliavimas</td><td>Moldex3D</td><td>Rotacinio liespjimo sienelės storio prognozė</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Mūsų inžinerijos darbo eiga</h2>
+  <p>Kiekvienas korpuso dizainas, nesvarbu, ar tai standartinis modelis, ar visiškai individualus projektas, vyksta griežtu penkių etapų procesu:</p>
+  <ol>
+    <li><strong>Koncepcija ir reikalavimų rinkimas</strong> — Susitinkame su jumis, kad nustatytume irkluotojo svorį ir krovinį, greičio diapazoną, vandens būklės gebas, transportavimo reikalavimus ir bet kokią specialią misijos įrangą (denio tvirtinimai, krovinio pritvirtinimo vietos, priedų integracija).</li>
+    <li><strong>3D paviršių modeliavimas ir hidrostatinis skaičiavimas</strong> — Korpuso forma modeliuojama SolidWorks programoje ir tikrinama dėl hidrostatinio stabilumo, tūrio pasiskirstymo ir stovinčiojo momento naudojant integruotus analizės įrankius.</li>
+    <li><strong>Konstrukcinė FEA</strong> — Apibrėžiami apkrovimo atvejai: statinis (irkluotojas + įranga), dinaminis (bangų nutupdymo smūgiai esant 5g) ir užsėdimas (atsitrenkimas į uolėtą krantą 3 m/s greičiu). Peržiūrimos įtempių izolinijos; saugos koeficientas ≥ 2.5 yra privalomas.</li>
+    <li><strong>CFD pasipriešinimo optimizavimas</strong> — Korpusas modeliuojamas esant trims apkrovimo sąlygoms ir penkiems greičiams. Šlapio paviršiaus plotas, balanso kampas ir liekamasis pasipriešinimas palaipsniui mažinami.</li>
+    <li><strong>Dizaino peržiūra ir paleidimas</strong> — Visą inžinerijos paketą (3D modelis, FEA ataskaita, CFD ataskaita, svorio įvertinimas, sluoksnių knyga) prieš paleidimą į prototipų dirbtuves peržiūri mūsų vyresnysis inžinierius.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA įtempių pasiskirstymas — turizmo SUP korpusas (sutvirtintas „Drop-Stitch“)</p>
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
+        <span class="text-gray-500">Saugos koeficientas esant didžiausiai apkrovai</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
+        <span class="text-gray-500">Pasipriešinimo sumažėjimas, palyginti su ankstesne karta</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
+        <span class="text-gray-500">Didžiausias smūgio slėgis (projektinė riba)</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
+        <span class="text-gray-500">Visas FEA vykdymo laikas 2025 m.</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Individualizavimas: jūsų korpusas, jūsų taisyklės</h2>
+  <p>Nėra dviejų vienodų reikalavimų turinčių irkluotojų. Žvejybos SUP reikia plataus, stabilais planuojančio korpuso; turizmo lentai reikia išstumiamojo korpuso, maksimizuojančio čiuožimą; banglentės SUP reikia reaktyvių bortelių ir suderinto rokerio. Mes nepritaikome jūsų taikymo prie iš anksto egzistuojančios korpuso formos. Mes projektuojame nuo jūsų specifikijos aukštyn.</p>
+  <p>Naujausių individualių korpusų inžinerijos projektų pavyzdžiai:</p>
+  <ul>
+    <li>Pailginta turizmo SUP lenta Karibų ekoturizmo operatoriui, su sutvirtinta priekine dalimi paplūdimio nutupdymams (+15 % bortelių storio).</li>
+    <li>Labai matoma patrulinė SUP lenta uosto valdybai, su integruotais įrangos tvirtinimais ir taktiniais borteliais.</li>
+    <li>Ekspedicinė turizmo SUP lenta nuomos flotilei, su sutvirtintomis bortelėmis ir papildomais krovinio pritvirtinimais.</li>
+  </ul>
+
+  <h2>Mūsų inžinieriai</h2>
+  <p>Studijai vadovauja vyresnysis inžinierius, turintis 14 metų aukšto našumo lentų dizaino patirties, jam padeda du mechanikos inžinieriai, specializuoti FEA ir CFD srityse. Visi trys turi magistro laipsnius jūrinės arba mechanikos inžinerijos srityse iš tarptautiniu mastu pripažintų universitetų. Komanda reguliariai publikuojasi pramonės žurnaluose ir pristato pranešimus tarptautinėse konferencijose apie aukšto našumo irklavimo sporto inžineriją.</p>
+
+  <h2>Bendradarbiaukite su mumis dėl jūsų kito korpuso</h2>
+  <p>Nuo pirmo koncepcijos eskizo iki galutinės įtempių ataskaitos mūsų korpusų inžinerijos studija yra jūsų partneris, kuriantis lentą, kuri ne tiesiog pagaminta — o suprojektuota. Mes iš anksto investuojame modeliavimo valandas, kad kiekviena suvirinimo siūlė, kiekvienas laminato sluoksnis ir kiekviena korpuso kreivė būtų dėl konkrečios priežasties.</p>
+  <p>Nesvarbu, ar jums reikia nedidelio esamo modelio modifikavimo, ar visiškai naujo dizaino nuo nulio, mes pasirengę aptarti jūsų reikalavimus.</p>
+
+cta:
+  title: 'Pradėkite korpuso dizaino konsultaciją'
+  subtitle: 'Papasakokite apie savo misijos profilį, o mes pasiūlysime inžinerijos kelią.'
+  button_text: 'Susisiekti su mūsų inžinerijos komanda'
+  button_link: /contact

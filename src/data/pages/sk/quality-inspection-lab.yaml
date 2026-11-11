@@ -1,0 +1,120 @@
+meta:
+  title: 'Laboratórium kvality a kontroly — testovanie a certifikácia SUP v súlade s ISO | {SITE}'
+  description: 'Nezávislé overovanie kvality nafukovacích dosiek SUP. Testy pevnosti v ťahu, cykly udržania vzduchu, testy odtrhnutia švov a certifikácia materiálov. Kontaktujte naše laboratórium kvality pre testovanie treťou stranou.'
+back_text: 'Späť na centrum R&D'
+home_label: 'Domov'
+
+hero:
+  tagline: 'Laboratórium 06'
+  title: 'Laboratórium kvality a kontroly'
+  subtitle: 'Nezávislé overenie — každý test je úspešne absolvovaný pred dodaním'
+  image: 'https://assets.afarer.com/images/afarer/factory/afarer-uv-resistance-testing.webp'
+  image_alt: 'Testovanie UV odolnosti v kontrolnom laboratóriu kvality Afarer'
+
+intro: 'Každá doska, ktorá opúšťa našu dielňu, nesie svedectvo, že absolvovala definovanú sadu kontrol kvality a testov materiálov. Naše laboratórium kvality a kontroly je nezávislou funkciou v organizácii — podlieha priamo riaditeľovi, nie výrobe — čím sa zaručuje, že žiadny komerčný tlak nemôže ohroziť kontrolnú bránu. Ak šarža materiálu alebo dokončená doska nespĺňa publikovanú špecifikáciu, laboratórium má oprávnenie zastaviť dodávku, kým sa nezladenosť neodstráni.'
+
+content_html: |
+  <h2>Dôverujte, ale overujte</h2>
+  <p>Laboratórium funguje pod systémom manažérstva kvality v súlade so zásadami a naše testovacie metódy sú všade tam, kde je to použiteľné, založené na normách ISO, ASTM a EN. Udržiavame podrobné záznamy o každom vykonanom teste, čím vytvárame kompletný reťazec sledovateľnosti od prijatia surovín po dodanie hotovej dosky.</p>
+
+  <h2>Skúšobné zariadenia a schopnosti</h2>
+  <table>
+    <thead><tr><th>Zariadenie</th><th>Vykonávané testy</th><th>Norma / Metóda</th></tr></thead>
+    <tbody>
+      <tr><td>Univerzálny skúšobný stroj (50 kN)</td><td>Pevnosť v ťahu (látka), odpor odtrhnutia (švy), šírenie trhliny</td><td>ISO 1421, ISO 4674</td></tr>
+      <tr><td>Skúšobné zariadenie na udržanie vzduchu (programovateľné)</td><td>Výdrž 1000 cyklov nafúknutia/vypustenia, 30-minútový test udržania tlaku</td><td>EN ISO 25649 (interná)</td></tr>
+      <tr><td>Prípravok na odtrhnutie švu (motorizované odtrhnutie 180°)</td><td>Pevnosť odtrhnutia zvarených a lepených švov pri 100 mm/min</td><td>ISO 1421 / ASTM D1876</td></tr>
+      <tr><td>Tester hydrostatického tlaku</td><td>Odolnosť látky proti prenikaniu vody (0–1000 mbar)</td><td>ISO 811</td></tr>
+      <tr><td>Digitálne meradlo hrúbky &amp; mikrometer</td><td>Hrúbka látky, hrúbka steny bočnice, hrúbka lepiacej fólie</td><td>ISO 2286-3</td></tr>
+      <tr><td>Klimatická komora</td><td>Temperovanie (-40 °C až +80 °C) na testy studeného praskania a tepelného starnutia</td><td>ISO 188, ISO 4675</td></tr>
+      <tr><td>Farebný spektrofotometer</td><td>Meranie farby Delta-E po UV expozícii</td><td>ISO 105-A05 / ASTM D2244</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Kontrolné brány — od materiálu po dodanie</h2>
+  <p>Každá doska sa riadi definovaným plánom kvality s povinnými kontrolnými bodmi. Žiadna doska nemôže vynechať bránu; každú bránu musí potvrdiť kontrolór kvality, kým sa začne ďalšia výrobná fáza.</p>
+
+  <div class="not-prose my-8">
+    <div class="relative">
+      <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-200 dark:bg-blue-800"></div>
+      <div class="space-y-6 relative">
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Brána 1</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Kontrola prichádzajúceho materiálu</p>
+            <p class="text-xs text-gray-500 mt-1">Šarža látky, šarža lepidla, kovanie — všetko je skontrolované proti vstupnej špecifikácii pred uvoľnením do výroby.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Brána 2</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Kontrola zvarov počas výroby</p>
+            <p class="text-xs text-gray-500 mt-1">Prvý zvar zo zmeny je testovaný (odtrhnutie + vizuálne) na začiatku každej výrobnej zmeny.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Brána 3</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Vzduchový test komôr</p>
+            <p class="text-xs text-gray-500 mt-1">Každá komora je natlakovaná na 1,5-násobok pracovného tlaku a udržaná 30 min. Údaje sa zaznamenávajú podľa sériového čísla.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Brána 4</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Kontrola pred dodaním</p>
+            <p class="text-xs text-gray-500 mt-1">Kompletná doska je skontrolovaná: všetok spojovací materiál dotiahnutý, armatúry funkčné, žiadne kozmetické vady. 100-bodový kontrolný zoznam.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold z-10">Brána 5</div>
+          <div class="flex-1 p-3 rounded-lg bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800">
+            <p class="text-sm font-semibold">Finálna certifikácia</p>
+            <p class="text-xs text-gray-500 mt-1">Testovacie správy sú zostavené, kontrolné záznamy preverené, osvedčenie o zhode vydané.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Kľúčové metriky kvality (rolujúci priemer 2025)</h2>
+  <div class="not-prose my-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
+      <span class="block text-2xl font-bold text-blue-600">99.7 %</span>
+      <span class="text-xs text-gray-500">Výťažok na prvý priechod (šarža látky)</span>
+    </div>
+    <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
+      <span class="block text-2xl font-bold text-blue-600">&lt; 0.2 %</span>
+      <span class="text-xs text-gray-500">Miera zamietnutia zvarov (bežný meter)</span>
+    </div>
+    <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
+      <span class="block text-2xl font-bold text-blue-600">100 %</span>
+      <span class="text-xs text-gray-500">Komory testované na vzduchotesnosť pred montážou</span>
+    </div>
+    <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-center">
+      <span class="block text-2xl font-bold text-blue-600">EN ISO 25649</span>
+      <span class="text-xs text-gray-500">Súlad s projektovou kategóriou</span>
+    </div>
+  </div>
+
+  <h2>Náš tím kvality</h2>
+  <p>Laboratórium obsluhuje manažér kvality (10 rokov v morskej kontrole kvality, ASQ Certified Quality Engineer), dvaja kontrolóri kvality (každý s certifikáciou NDT úrovne 2 vo vizuálnom testovaní) a technik materiálov zodpovedný za všetky fyzikálne testy. Tím ročne absolvuje testy spôsobilosti prostredníctvom nezávislého poskytovateľa tretej strany, aby sme zaručili, že naše výsledky testov zostávajú presné a reprodukovateľné.</p>
+
+  <h2>Nezávislé testovanie pre klientov</h2>
+  <p>Naše laboratórium kvality a kontroly je k dispozícii pre nezávislé testovacie služby. Ak potrebujete overiť špecifikáciu látky, validovať nový systém lepidiel alebo získať testovaciu správu tretej strany pre kvalifikáciu vo verejnom obstarávaní, vieme vykonať testy podľa príslušnej normy a vydať certifikovanú testovaciu správu.</p>
+  <p>Príklady nedávnej testovacej práce pre tretie strany:</p>
+  <ul>
+    <li>Porovnanie pevnosti odtrhnutia piatich konkurenčných lepiacich fólií pre európsky vojenský obstarávací program.</li>
+    <li>Stúdia urýchleného starnutia (UV + teplotné cyklovanie) novej oranžovo pigmentovanej formulácie PVC s pravidelnými medzi meraniami v 500 h intervaloch.</li>
+    <li>Validácia udržania vzduchu 50 prototypových prepážkových ventilov pre nový dizajn vysokotlakovej komory.</li>
+  </ul>
+
+  <h2>Náš záväzok voči vám</h2>
+  <p>Keď dostanete dosku Afarer, dostávate aj jej kvalitatívny spis — súhrnný záznam výsledkov testov, ktoré sa vzťahujú na vašu konkrétnu dosku. Certifikát šarže látky, testy odtrhnutia švov, záznamy vzduchových testov komôr a kontrolný zoznam pred dodaním. Každé číslo je sledovateľné. Každý kontrolór je identifikovateľný. Nie je to len papierovanie — je to náš sľub, že to, čo sme dodali, je presne to, čo sme špecifikovali.</p>
+  <p>Ak kedykoľvek budete mať obavu o kvalitu, môžete kontaktovať laboratórium priamo — kontaktné údaje sú vytlačené na vašom osvedčení o zhode. Každý dotaz berieme vážne a zaväzujeme sa k formálnemu vyšetreniu do 48 hodín.</p>
+
+cta:
+  title: 'Potrebujete nezávislé testovanie alebo overenie kvality?'
+  subtitle: 'Naše laboratórium prijíma zákazky na testovanie pre tretie strany — kontaktujte nás s vašimi požiadavkami.'
+  button_text: 'Kontaktovať laboratórium kvality'
+  button_link: /contact

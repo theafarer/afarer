@@ -1,0 +1,102 @@
+meta:
+  title: 'PVC audinių laboratorija — medžiagų testavimas pripučiamoms SUP lentoms | {SITE}'
+  description: 'Mokslinis medžiagų testavimas nuo pluošto iki baigtos lentos. Tempimo stipris, UV atmosferos poveikis, žemos temperatūros lankstumas ir atsparumas dilimui PVC audiniams. Susisiekite su mūsų laboratorijos komanda dėl individualios audinio specifikacijos.'
+back_text: 'Grįžti į tyrimų ir plėtros centrą'
+home_label: 'Pradžia'
+
+hero:
+  tagline: 'Laboratorija 01'
+  title: 'PVC audinių laboratorija'
+  subtitle: 'Mokslinis medžiagų testavimas — nuo pluošto iki baigtos lentos'
+  image: 'https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp'
+  image_alt: 'Afarer PVC audinių medžiagų testavimo laboratorija'
+
+intro: 'Denio ir bortelių audinys yra svarbiausia medžiaga pripučiamoje SUP lentoje. Jis turi atlaikyti nuolatinį UV poveikį, pakartotinius pripūtimo ciklus, trynimąsi į prieplaukas ir šiukšles bei didelius temperatūros svyravimus — visa tai išlaikydamas konstrukcinį vientisumą daugelį metų. Afarer PVC audinių laboratorija yra skirta tik audinių, naudojamų kiekvienoje mūsų gaminamoje lentoje, charakterizavimui, patvirtinimui ir nuolatiniam tobulinimui.'
+
+content_html: |
+  <h2>Kiekvienos pripučiamos SUP lentos pagrindas</h2>
+  <p>Mes neapsiribojame tik tiekėjų duomenų lapais. Kiekviena PVC audinio partija, patenkanti į mūsų dirbtuves, yra nepriklausomai išbandoma vietoje. Tai garantuoja, kad skelbiama medžiagų specifikacija yra tas našumas, kurį gaunate — partija po partijos, metų po metų.</p>
+
+  <h2>Standartizuota testavimo įranga</h2>
+  <p>Mūsų audinių laboratorija aprūpinta pramoninės klasės prietaisais, atitinkančiais ISO, ASTM ir EN testų metodus:</p>
+  <table>
+    <thead><tr><th>Įranga</th><th>Matuojami parametrai</th><th>Standartas</th></tr></thead>
+    <tbody>
+      <tr><td>Universalus tempimo testeris (50 kN)</td><td>Trūkimo jėga, trūkimo tempimas, plėšimosi plitimas</td><td>ISO 1421 / ASTM D751</td></tr>
+      <tr><td>Ksenono lanko atmosferos kamera</td><td>UV atsparumas (spalvos pasikeitimas, stiprio išlaikymas po 2000 h)</td><td>ISO 4892 / ASTM G155</td></tr>
+      <tr><td>Žemos temperatūros lankstumo testeris</td><td>Įtrūkimo taškas esant -30 °C iki -50 °C</td><td>ISO 4675 / ASTM D2136</td></tr>
+      <tr><td>Taber dilimo testeris</td><td>Svorio netekimas po 1000 ciklų (CS-10 ratukas)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
+      <tr><td>Storio matuoklis (skaitmeninis, 0.001 mm raiška)</td><td>Vientisumas visame ritinio plote</td><td>ISO 2286-3</td></tr>
+      <tr><td>Hidrostatinio stulpelio testeris</td><td>Atsparumas vandens prasiskverbimui</td><td>ISO 811</td></tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-gray-500">* Visa įranga kasmet kalibruojama trečiųjų šalių akredituotų laboratorijų.</p>
+
+  <h2>Nuo duomenų iki sprendimo: įprastas testų eiga</h2>
+  <p>Atvykus naujam audinio kandidatui, jis vyksta standartizuotu septynių žingsnių kvalifikavimo procesu:</p>
+  <ol>
+    <li><strong>Gavimo patikra</strong> — vizualus paviršiaus defektų, adatų skylių ir matmenų atitikties tikrinimas.</li>
+    <li><strong>Storio kartografavimas</strong> — 20 taškų matavimas visame ritinyje; priimtinumas reikalauja CV &lt; 3%.</li>
+    <li><strong>Tempimo testavimas</strong> — 5 bandiniai audimo ir at audimo kryptimis. Mažiausiai 3500 N/50 mm 1100 dtex PVC.</li>
+    <li><strong>UV kondicionavimas</strong> — 1000 h poveikis ksenono lanko kameroje; reikalaujama mažiausiai 80 % stiprio išlaikymo.</li>
+    <li><strong>Šalčio įtrūkimai</strong> — 4 h esant -35 °C, tada 180° lenkimas per 25 mm mandrą. Nematomų įtrūkimų neturi būti.</li>
+    <li><strong>Atsparumas dilimui</strong> — 1000 ciklų, svorio netekimas ≤ 0.05 g.</li>
+    <li><strong>Patvirtinimas</strong> — audinys išleidžiamas į gamybą tik įveikus visus septynis barjerus.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Tipinis PVC 1100 dtex — tempimo išlaikymas po UV poveikio</p>
+    <div class="flex items-end gap-3 h-40">
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-600 rounded-t" style="height:100%"></div>
+        <span class="text-xs mt-1">0 h<br />100%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-500 rounded-t" style="height:95%"></div>
+        <span class="text-xs mt-1">500 h<br />95%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-400 rounded-t" style="height:88%"></div>
+        <span class="text-xs mt-1">1000 h<br />88%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-300 rounded-t" style="height:82%"></div>
+        <span class="text-xs mt-1">2000 h<br />82%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-gray-300 rounded-t" style="height:65%"></div>
+        <span class="text-xs mt-1">Konkurentas<br />~65%</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Mūsų PVC 1100 dtex audinys išlaiko &gt; 80 % tempimo stiprio po 2000 h ksenono lanko poveikio, palyginti su tipinėmis pramonės klasėmis, krintančiomis žemiau 70 %.</p>
+  </div>
+
+  <h2>Mūsų profesionali komanda</h2>
+  <p>Laboratorijoje dirba du etatiniai medžiagų inžinieriai, kurių kiekvienas turi polimerų mokslo ar tekstilės inžinerijos laipsnį ir mažiausiai šešerių metų pramonės patirtį. Jiems padeda trys technikai, atliekantys kasdienius testus ir duomenų registravimą. Komanda reguliariai dalyvauja tarplaboratoriniuose apvalaus stalo bandymuose, organizuojamuose Tarptautinės standartizacijos organizacijos (ISO), siekdama patvirtinti mūsų testų metodų tikslumą.</p>
+
+  <h2>Sudėtingiausių medžiagų iššūkių sprendimas</h2>
+  <p>Kiekviena jūrinė aplinka yra skirtinga. Nuomojama SUP lenta, veikianti atogrąžų saulėje, patiria gerokai kitokius UV ir temperatūros krūvius nei ežero lenta šiauriniose platumose. Mūsų audinių laboratorija padeda jums pasirinkti — arba sukurti — audinio specifikaciją, optimizuotą jūsų eksploatacijos profiliui.</p>
+  <p>Naujausi individualūs sprendimai:</p>
+  <ul>
+    <li>Didelio atsparumo dilimui PVC mišinys kariniam klientui, kurio lentos reguliariai leidžiamos nuo koralų ir uolėtų paplūdimių (+40 % dilimo tarnavimo laiko).</li>
+    <li>Žemos temperatūros PVC formuluotė Arkties ekspedicijai, išbandyta iki -50 °C be trapėjimo.</li>
+    <li>Spalvos stabilizuotas oranžinis audinys gelbėtojų ir gelbėjimo lentų flotilei, išlaikantis matomumą po 3 metų atogrąžų saulės poveikio.</li>
+  </ul>
+  <p>Mes neparduodame „pagal lentyną“ audinių ir tikimės, kad jie veiks. Mes išbandome, patvirtiname ir rekomenduojame — arba sukuriame — jūsų konkrečiai misijai pritaikytą sprendimą. Tai yra Afarer skirtumas.</p>
+
+  <h2>Kaip mes jums tarnaujame</h2>
+  <p>Atnešdami mums medžiagų iššūkį galite tikėtis šio:</p>
+  <ol>
+    <li><strong>Konsultacija</strong> — aptariame jūsų eksploatacijos aplinką, našumo tikslus ir biudžetą.</li>
+    <li><strong>Pasiūlymas</strong> — sudaromas testų planas su aiškiais priimtinumo/atmetimo kriterijais ir laiko grafiku.</li>
+    <li><strong>Vykdymas</strong> — mūsų laboratorija atlieka testus ir pateikia išsamų pranešimą su pirminiais duomenimis ir lyginamąja analize.</li>
+    <li><strong>Rekomendacija</strong> — pateikiame audinio specifikaciją, įskaitant alternatyvias parinktis, jei kelios medžiagos atitinka jūsų reikalavimus.</li>
+    <li><strong>Stebėjimas</strong> — po pristatymo liekame prieinami, kad padėtume su bet kokiais eksploatacijos medžiagų klausimais.</li>
+  </ol>
+  <p>Mūsų tikslas — ne tik parduoti jums lentą. Mūsų tikslas — užtikrinti, kad lenta, kurią gaunate, patikimai veiktų sąlygomis, kuriose irkluojate — ir tai prasideda nuo audinio.</p>
+
+cta:
+  title: 'Reikia individualios audinio specifikacijos?'
+  subtitle: 'Susisiekite su mūsų medžiagų inžinerijos komanda, kad aptartumėte savo reikalavimus.'
+  button_text: 'Susisiekti su mūsų laboratorijos komanda'
+  button_link: /contact

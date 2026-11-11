@@ -1,0 +1,99 @@
+meta:
+  title: 'Komercinio pasiūlymo užklausa — OEM SUP gamyba | {SITE}'
+  description: 'Pateikite išsamią komercinio pasiūlymo užklausą savo pripučiamų SUP lentų projektui. OEM/ODM gamyba, privatus ženklas arba individualios flotilės — atsakome per 2 darbo dienas.'
+  keywords:
+    - 'sup pasiūlymo užklausa'
+    - 'oem irklavimo lentos pasiūlymas'
+    - 'sup gamyklos komercinis pasiūlymas'
+    - 'pripučiamų sup kaina'
+hero_text:
+  tagline: 'Gauti pasiūlymą'
+  title: 'Pateikite komercinio pasiūlymo užklausą<br />savo projektui'
+  subtitle: 'Papasakokite apie savo reikalavimus, o mūsų komanda per 2 darbo dienas atsakys išsamiais komerciniais pasiūlymais.'
+steps2_process:
+  title: 'Kaip tai veikia'
+  subtitle: 'Keturi paprasti žingsniai nuo užklausos iki pasiūlymo.'
+  items:
+    - title: '1 žingsnis: Pateikite savo reikalavimus'
+      description: 'Užpildykite toliau esančią formą su produkto tipu, kiekiu ir specifikacijomis. Kuo daugiau detalių pateiksite, tuo tikslesnis bus pasiūlymas.'
+      icon: tabler:file-text
+    - title: '2 žingsnis: Peržiūrime ir patariame'
+      description: 'Mūsų inžinerijos komanda peržiūri jūsų reikalavimus ir gali susisiekti su jumis dėl patikslinimų. Pateikiame rekomendacijas dėl produkto konfigūracijos ir parinkčių.'
+      icon: tabler:users
+    - title: '3 žingsnis: Gauti pasiūlymą'
+      description: 'Gaunate išsamų komercinį pasiūlymą, apimantį vieneto kainą, MOQ, gamybos terminą, mokėjimo sąlygas ir siuntimo parinktis. Paprastai per 48 valandas.'
+      icon: tabler:currency-dollar
+    - title: '4 žingsnis: Pavyzdys ir gamyba'
+      description: 'Priėmus pasiūlymą pereiname prie pavyzdžių gamybos (jei taikoma) arba tiesiogiai prie serijinės gamybos. Reguliarūs atnaujinimai viso proceso metu.'
+      icon: tabler:building-factory
+content_form:
+  tagline: 'Pasiūlymo forma'
+  title: 'Papasakokite apie savo projektą'
+  subtitle: 'Visi laukai su * yra privalomi.'
+  contact_fields:
+    firstName: 'Vardas'
+    lastName: 'Pavardė'
+    companyName: 'Įmonės pavadinimas'
+    email: 'El. paštas'
+  fields:
+    - name: 'Produkto kategorija'
+      type: select
+      options:
+        - 'SUP lenta'
+        - 'Pripučiama SUP'
+        - 'Pripučiama SUP lenta'
+        - 'Gelbėjimosi liemenė'
+        - 'Jūrinis priedas'
+        - 'Individualus OEM/ODM'
+    - name: 'Taikymas'
+      type: select
+      options:
+        - 'Nardymo centras'
+        - 'Žvejyba'
+        - 'Jūrinis turizmas / kurortas'
+        - 'Paieška ir gelbėjimas'
+        - 'Vyriausybinė / karinė'
+        - 'OEM / privatus ženklas'
+        - 'Asmeninis / poilsis'
+        - 'Kita'
+    - name: 'Kiekis'
+      type: text
+      placeholder: 'pvz., 50 vienetų'
+    - name: 'Tikslinė rinka'
+      type: text
+      placeholder: 'pvz., Europa, Šiaurės Amerika, Artimieji Rytai'
+    - name: 'Pristatymo šalis'
+      type: text
+      placeholder: 'pvz., Italija, JAE, JAV, Australija'
+    - name: 'Medžiagų pageidavimas'
+      type: select
+      options:
+        - 'Nėra pageidavimų'
+        - 'Jūrinės klasės PVC (1100 dtex)'
+        - 'Stiklo pluošto korpusas'
+        - 'Aliuminio korpusas'
+    - name: 'Variklio reikalavimas'
+      type: text
+      placeholder: 'pvz., standartinė irklo konfigūracija, elektrinis siurblys, individualios spalvos'
+    - name: 'Reikalingas individualizavimas'
+      type: text
+      placeholder: 'pvz., individualios spalvos, ženklinimas/logotipas, pakavimas, speciali furnitūra'
+    - name: 'Laiko grafikas'
+      type: text
+      placeholder: 'pvz., pristatymas per 90 dienų'
+    - name: 'Papildomi reikalavimai'
+      type: textarea
+      placeholder: 'Aprašykite savo taikymą, technines specifikacijas arba specialius reikalavimus — jei turite, pridėkite orientacinius brėžinius, specifikacijas arba nuorodas'
+    - name: 'Specifikacijos įkėlimas'
+      type: file
+      placeholder: 'Įkelkite savo specifikacijų lapą, brėžinį arba orientacinį dokumentą (PDF, DWG, DXF)'
+    - name: 'Logotipo / grafinio darbo įkėlimas'
+      type: file
+      placeholder: 'Įkelkite savo logotipą arba grafinį darbą individualiam ženklinimui (AI, EPS, PNG)'
+cta:
+  title: 'Labiau norite aptarti el. paštu?'
+  subtitle: 'Atsiųskite savo užklausą tiesiogiai mūsų pardavimų komandai, o mes atsakysime per 24 valandas.'
+  actions:
+    - variant: primary
+      text: 'Rašykite mums tiesiogiai'
+      href: /contact

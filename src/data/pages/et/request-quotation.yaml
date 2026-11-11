@@ -1,0 +1,99 @@
+meta:
+  title: 'Küsi hinnapakkumist — OEM SUP-ide tootmine | {SITE}'
+  description: 'Küsi üksikjalik hinnapakkumine oma täispuhutava SUP-i projektile. OEM/ODM tootmine, eramärk või kohandatud laevastikud — vastame 2 tööpäeva jooksul.'
+  keywords:
+    - 'küsi supi hinnapakkumist'
+    - 'oem supilaua pakkumine'
+    - 'supi tehase hinnapakkumine'
+    - 'täispuhutava supi hind'
+hero_text:
+  tagline: 'Küsi pakkumist'
+  title: 'Küsi hinnapakkumine<br />oma projektile'
+  subtitle: 'Räägi meile oma nõuetest ja meie meeskond vastab üksikjaliku hinnapakkumisega 2 tööpäeva jooksul.'
+steps2_process:
+  title: 'Kuidas see toimib'
+  subtitle: 'Neli lihtsat sammu päringust pakkumiseni.'
+  items:
+    - title: 'Samm 1: Esita oma nõuded'
+      description: 'Täida allpool olev vorm oma toote tüübi, koguse ja spetsifikatsioonidega. Mida rohkem detaile esitad, seda täpsem on sinu hinnapakkumine.'
+      icon: tabler:file-text
+    - title: 'Samm 2: Me vaatame läbi ja nõustame'
+      description: 'Meie insenerimeeskond vaatab sinu nõuded läbi ja võib täpsustamiseks sinuga ühendust võtta. Pakume soovitusi toote konfiguratsiooni ja valikute kohta.'
+      icon: tabler:users
+    - title: 'Samm 3: Vasta oma pakkumine'
+      description: 'Saad üksikjaliku hinnapakkumise, mis hõlmab ühikuhinda, MOQ-d, täitmisaega, maksetingimusi ja veovalikuid. Tavaliselt 48 tunni jooksul.'
+      icon: tabler:currency-dollar
+    - title: 'Samm 4: Näidis ja tootmine'
+      description: 'Pärast pakkumise aktsepteerimist liigume näidistootmisse (kui kohaldatav) või otse masstootmisse. Regulaarsed värskendused kogu protsessi vältel.'
+      icon: tabler:building-factory
+content_form:
+  tagline: 'Hinnapakkumise vorm'
+  title: 'Räägi meile oma projektist'
+  subtitle: 'Kõik tärniga (*) väljad on kohustuslikud.'
+  contact_fields:
+    firstName: 'Eesnimi'
+    lastName: 'Perekonnanimi'
+    companyName: 'Ettevõtte nimi'
+    email: 'E-post'
+  fields:
+    - name: 'Toote kategooria'
+      type: select
+      options:
+        - 'SUP-laud'
+        - 'Täispuhutav SUP'
+        - 'Täispuhutav supilaud'
+        - 'Päästevest'
+        - 'Meretarvik'
+        - 'Kohandatud OEM/ODM'
+    - name: 'Rakendus'
+      type: select
+      options:
+        - 'Sukeldumiskeskus'
+        - 'Kalastamine'
+        - 'Mere-turism / kuurort'
+        - 'Otsing ja pääste'
+        - 'Valitsus / sõjavägi'
+        - 'OEM / eramärk'
+        - 'Isiklik / vabaaja'
+        - 'Muu'
+    - name: 'Kogus'
+      type: text
+      placeholder: 'nt 50 ühikut'
+    - name: 'Sihtturg'
+      type: text
+      placeholder: 'nt Euroopa, Põhja-Ameerika, Lähis-Ida'
+    - name: 'Tarneriik'
+      type: text
+      placeholder: 'nt Itaalia, AÜE, USA, Austraalia'
+    - name: 'Materjalieelistus'
+      type: select
+      options:
+        - 'Eelistust pole'
+        - 'Mereklassi PVC (1100 dtex)'
+        - 'Klaaskiust kere'
+        - 'Alumiiniumkere'
+    - name: 'Mootori nõue'
+      type: text
+      placeholder: 'nt standardne sõudeseadistus, elektripump, kohandatud värvid'
+    - name: 'Vajalik kohandamine'
+      type: text
+      placeholder: 'nt kohandatud värvid, bränding/logo, pakend, eriliitmikud'
+    - name: 'Ajakava'
+      type: text
+      placeholder: 'nt tarnimine 90 päeva jooksul'
+    - name: 'Lisatingimused'
+      type: textarea
+      placeholder: 'Kirjelda oma rakendust, tehnilisi spetsifikatsioone või erinõudeid — lisa vajadusel viitejoonised, spetsifikatsioonid või lingid'
+    - name: 'Laadi üles spetsifikatsioon'
+      type: file
+      placeholder: 'Laadi üles oma spetsifikatsioonileht, joonis või viitedokument (PDF, DWG, DXF)'
+    - name: 'Laadi üles logo / kunstiline materjal'
+      type: file
+      placeholder: 'Laadi üles oma logo või kunstiline materjal kohandatud brändingu jaoks (AI, EPS, PNG)'
+cta:
+  title: 'Eelistad e-posti teel arutada?'
+  subtitle: 'Saada oma päring otse meie müügimeeskonnale ja vastame 24 tunni jooksul.'
+  actions:
+    - variant: primary
+      text: 'Kirjuta meile otse'
+      href: /contact

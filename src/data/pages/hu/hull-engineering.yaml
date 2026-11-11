@@ -1,0 +1,85 @@
+meta:
+  title: 'Hajótest-mérnöki stúdió — CAD, FEA és egyedi hajótesttervezés | {SITE}'
+  description: 'Fedezze fel Hajótest-mérnöki stúdiónkat CAD tervezéshez, véges elemes elemzéshez (FEA) és egyedi nagy teljesítményű SUP hajótestfejlesztéshez. Vegye fel a kapcsolatot mérnöki csapatunkkal következő lapprojektjéhez.'
+back_text: 'Vissza a fejlesztőközpontba'
+home_label: 'Kezdőlap'
+
+hero:
+  tagline: 'Labor 02'
+  title: 'Hajótest-mérnöki stúdió'
+  subtitle: 'Digitális szimuláció, szerkezeti intelligencia, egyedi hajótesttervezés'
+  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
+  image_alt: 'Afarer hajótest-mérnöki CAD tervező munkaállomás'
+
+intro: 'A hajótest minden felfújható SUP gerince. Elég könnyűnek kell lennie a hatékony sikláshoz, elég erősnek a sziklás partvonalak kezeléséhez és elég merevnek, hogy minden evezőhúzást előrehaladássá alakítson. Az Afarernél Hajótest-mérnöki stúdiónk ötvözi a fejlett CAD modellezést, a véges elemes elemzést (FEA) és évtizedek gyakorlati laptervezési tapasztalatát, hogy olyan hajótesteket szállítson, amelyek a szánt diszciplínára vannak optimalizálva — nem katalógusból átvett általános formák.'
+
+content_html: |
+  <h2>Ahol az erő találkozik a hidrodinamikával</h2>
+  <p>Három elsődleges szerkezeti platformmal dolgozunk — megerősített drop-stitch PVC magokkal, kézzel fektetett üvegszálas laminátumokkal és forgóöntött polietilénnel — és mérnöki kapacitásunk van mindegyik házon belüli tervezésére, szimulálására és érvényesítésére.</p>
+
+  <h2>Tervezőeszközök és szabványok</h2>
+  <p>Digitális mérnöki környezetünk a következőket tartalmazza:</p>
+  <table>
+    <thead><tr><th>Képesség</th><th>Szoftver / Eszköz</th><th>Alkalmazás</th></tr></thead>
+    <tbody>
+      <tr><td>3D parametrikus modellezés</td><td>SolidWorks Professional</td><td>Hajótestfelület, oldalpálya és hosszmerevítő megerősítés, fedélzeti elrendezés, felszereléstartó pontok</td></tr>
+      <tr><td>Véges elemes elemzés</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Feszültségtérképezés, modálanalízis, ütközési/sokk szimuláció</td></tr>
+      <tr><td>Számítási áramlástan</td><td>Ansys Fluent / Star-CCM+</td><td>Hidrodinamikai légellenállás előrejelzés, trim optimalizálás</td></tr>
+      <tr><td>Laminátum-mérnökség</td><td>ESAComp / CADEC</td><td>Üvegszálas rétegfektetés, magkiválasztás, súlybecslés</td></tr>
+      <tr><td>Formaáramlás-szimuláció</td><td>Moldex3D</td><td>Forgóöntés falszélesség-előrejelzés</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Mérnöki munkafolyamatunk</h2>
+  <p>Minden hajótestterv — legyen szó szabványos modellről vagy teljesen egyedi projektről — szigorú ötszakaszos folyamaton megy át:</p>
+  <ol>
+    <li><strong>Koncepció és követelménygyűjtés</strong> — Találkozunk Önnel, hogy meghatározzuk a versenyző súlyát és terhelését, a sebességtartományt, a vízállapot-képességet, a szállítási követelményeket és minden különleges küldetésfelszerelést (fedélzeti tartók, rakományrögzítési pontok, kiegészítő integráció).</li>
+    <li><strong>3D felületmodellezés és hidrosztatikai számítás</strong> — A hajótestforma SolidWorksben kerül modellezésre, és hidrosztatikai stabilitás, térfogatmegoszlás és helyreállító nyomaték szempontjából ellenőrzésre kerül a beépített elemzőeszközökkel.</li>
+    <li><strong>Szerkezeti FEA</strong> — Terhelési esetek meghatározása: statikus (versenyző + felszerelés), dinamikus (hullámérkezési ütések 5g-nél) és fenékérés (sziklás partvonalnak ütközés 3 m/s sebességgel). A feszültségi eloszlásokat átnézik; a 2,5-ös biztonsági tényező kötelező.</li>
+    <li><strong>CFD légellenállás-optimalizálás</strong> — A hajótest három terhelési állapotban és öt sebességnél kerül szimulálásra. A nedves felület, trim-szög és maradék ellenállás iteratívan csökkentésre kerül.</li>
+    <li><strong>Tervezésfelülvizsgálat és kiadás</strong> — A teljes mérnöki csomagot (3D modell, FEA jelentés, CFD jelentés, súlybecslés, rétegkönyv) vezető mérnökünk nézi át, mielőtt kiadásra kerül a prototípus műhelybe.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA feszültségeloszlás — Túra SUP hajótest (megerősített drop-stitch)</p>
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">2,8 : 1</span>
+        <span class="text-gray-500">Biztonsági tényező maximális terhelésnél</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">15,2 %</span>
+        <span class="text-gray-500">Légellenállás-csökkenés az előző generációhoz képest</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
+        <span class="text-gray-500">Csúcslökésnyomás (tervezési határ)</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">18 000 óra</span>
+        <span class="text-gray-500">Kumulatív FEA futásideő 2025-ben</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Testreszabás: az Ön hajóteste, az Ön szabályai</h2>
+  <p>Nincs két azonos követelményű evező. Egy horgász SUP-nak széles, stabil siklóhajótest kell; egy túra lapnak úszóképesség-hajótest, amely maximalizálja a siklást; egy szörfs SUP-nak reagáló oldalpályák és hangolt orlemmegedés. Nem kényszerítjük az Ön alkalmazását egy meglévő hajótestformába. Az Ön specifikációjától felfelé tervezünk.</p>
+  <p>Példák a legutóbbi egyedi hajótest-mérnöki projektekből:</p>
+  <ul>
+    <li>Meghosszabbított túra SUP egy karibi ökotúra-üzemeltető számára, megerősített orral a partra érkezésekhez (+15% oldalpálya vastagság).</li>
+    <li>Nagy láthatóságú járőr SUP egy kikötőhatóság számára, integrált felszereléstartókkal és taktikus sínekkel.</li>
+    <li>Expedíciós túra SUP egy bérlőflotta számára, megerősített oldalpályákkal és extra rakományrögzítőkkel.</li>
+  </ul>
+
+  <h2>Mérnökeink</h2>
+  <p>A stúdiót egy vezető mérnök irányítja 14 év nagy teljesítményű laptervezési tapasztalattal, két FEA- és CFD-szakértő gépmérnök támogatásával. Mindhárman tengeri vagy gépészmérnöki magas szintű végzettséggel rendelkeznek nemzetközileg elismert egyetemekről. A csapat rendszeresen publikál ipari szaklapokban és előadásokat tart nemzetközi konferenciákon a nagy teljesítményű evezős-sport mérnökségről.</p>
+
+  <h2>Legyen a partnerünk következő hajótesténél</h2>
+  <p>Az első koncepcióvázlattól a végső feszültségi jelentésig Hajótest-mérnöki stúdiónk az Ön partnere egy olyan lap megalkotásában, amely nem csak megépült — hanem megtervezett. Előre befektetjük a szimulációs órákat, hogy minden hegesztés, minden laminátumréteg és a hajótest minden görbülete okkal legyen ott.</p>
+  <p>Akár egy meglévő modell kisebb módosítására van szüksége, akár teljesen tiszta lapról induló tervezésre, készen állunk igényei megvitatására.</p>
+
+cta:
+  title: 'Kezdje el hajótesttervezési konzultációját'
+  subtitle: 'Mesélje el küldetési profilját, és javaslatot teszünk egy mérnöki útvonalra.'
+  button_text: 'Kapcsolatfelvétel mérnöki csapatunkkal'
+  button_link: /contact

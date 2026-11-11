@@ -1,0 +1,68 @@
+meta:
+  title: 'Laboratorij kvalitete — Ispitivanje i osiguranje kvalitete | {SITE}'
+  description: 'Neovisni laboratorij kvalitete s ISO 9001 procesima u afareru: svaka jedinica testirana prije otpreme kako bi se garantirala kvaliteta napuhivih SUP daska.'
+  keywords:
+    - 'kontrola kvalitete sup daska'
+    - 'laboratorij za ispitivanje daska za veslanje'
+    - 'iso 9001 tvornica sup daska'
+    - 'kvaliteta napuhivih sup daska'
+hero:
+  tagline: 'Laboratorij za kontrolu kvalitete'
+  title: 'Ispitni laboratorij i osiguranje kvalitete'
+  subtitle: 'Neovisni laboratorij kvalitete s ISO 9001 procesima — svaka jedinica testirana prije otpreme'
+
+intro: 'afarer vodi namjenski laboratorij za kontrolu kvalitete koji djeluje neovisno o proizvodnji. Svaka serija sirovina i svaka gotova daska prolazi kroz dokumentirane protokole kontrole prije puštanja. Naš QC tim izvještava izravno managementu, čime se osiguravaju nepristrane odluke o kvaliteti.'
+
+highlights:
+  - value: '100%'
+    label: 'Jedinica testiranih na tlak'
+    detail: 'Svaka komora, svaka daska'
+  - value: '24–48 h'
+    label: 'Trajanje testa zadržavanja zraka'
+    detail: 'Pri 1,25× nazivnog tlaka'
+  - value: '&lt;5%'
+    label: 'Maksimalni dopušteni pad tlaka'
+    detail: 'Tijekom razdoblja zadržavanja od 24–48 sati'
+  - value: 'AQL 2,5'
+    label: 'Prag velikih nedostataka'
+    detail: 'Prema ISO 2859 uzorkovanju'
+
+test_procedures:
+  - title: 'Kontrola sirovina'
+    description: 'Svaka pristigla serija PVC-a, drop-stitch tkanine i hardvera testira se prije prihvata. Provjeravaju se vlačna čvrstoća (ASTM D751), otpornost na kidanje (ISO 4674) i UV otpornost. Nesukladni materijali stavljaju se u karantenu i vraćaju.'
+    standards:
+      - 'ASTM D751 (vlačna čvrstoća)'
+      - 'ISO 4674 (kidanje)'
+      - 'ISO 4892 (UV)'
+  - title: 'Kontrolne točke tijekom proizvodnje'
+    description: 'Proizvodni operateri provode samokontrolu u svakoj fazi. QC revizori provode slučajno uzorkovanje tijekom smjene. Testovi ljuštenja šavova izvode se svakih 50 jedinica. Dimenzionalne provjere događaju se na svakoj 20. ploči.'
+    standards:
+      - 'ASTM D751 (ljuštenje)'
+      - 'Interna kontrolna lista od 100 točaka'
+      - 'ISO 2859 uzorkovanje'
+  - title: 'Test zadržavanja zraka 24–48 sati'
+    description: 'Svaka komora cijevi napuhuje se na 125% nazivnog tlaka i drži 24–48 sati. Senzori tlaka kontinuirano bilježe s kompenzacijom temperature. Svaka komora koja premaši pad tlaka od 5% pokreće automatsku ponovnu kontrolu serije.'
+    standards:
+      - 'EN ISO 25649'
+      - 'CE 2013/53/EU'
+  - title: 'Ispitivanje opterećenja i ravnoteže'
+    description: 'Gotove daske testiraju se pri maksimalnom nazivnom kapacitetu na stabilnost i krutost. Svaka daska prolazi testiranje na vodi prije odobrenja završne kontrole.'
+    standards:
+      - 'ISO 12217'
+      - 'CE 2013/53/EU'
+
+equipment:
+  - name: 'Univerzalni ispitni stroj (vlačni)'
+    spec: '5 kN, u skladu s ASTM D751'
+  - name: 'Ispitivač pada tlaka'
+    spec: 'Višekanalni, 0–50 psi, bilježenje podataka'
+  - name: 'Komora za UV starenje'
+    spec: 'ISO 4892, ciklusi od 1,000 h'
+  - name: 'Mjerač debljine (digitalni)'
+    spec: 'Rezolucija 0,01 mm'
+  - name: 'Ispitivač ljuštenja (zavar)'
+    spec: 'Motoriziran, kapacitet 50 N'
+  - name: 'Temperaturna komora'
+    spec: '-40 °C do +100 °C'
+  - name: 'Spremnik za detekciju curenja'
+    spec: '6 m × 2 m, osvijetljen'

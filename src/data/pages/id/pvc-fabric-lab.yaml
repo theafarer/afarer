@@ -1,0 +1,102 @@
+meta:
+  title: 'Lab Kain PVC — Pengujian Material untuk SUP Tiup | {SITE}'
+  description: 'Pengujian material ilmiah dari serat hingga papan jadi. Kekuatan tarik, pelapukan UV, fleksibilitas suhu rendah, dan ketahanan abrasi untuk kain PVC. Hubungi tim lab kami untuk spesifikasi kain kustom.'
+back_text: 'Kembali ke Pusat R&D'
+home_label: 'Beranda'
+
+hero:
+  tagline: 'Lab 01'
+  title: 'Lab Kain PVC'
+  subtitle: 'Pengujian material ilmiah — dari serat hingga papan jadi'
+  image: 'https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp'
+  image_alt: 'Laboratorium pengujian material kain PVC Afarer'
+
+intro: 'Kain deck dan rail adalah material paling kritis dalam SUP tiup. Kain tersebut harus tahan paparan UV konstan, siklus tiup berulang, abrasi terhadap dermaga dan puing, serta perubahan suhu ekstrem — semuanya sambil mempertahankan integritas strukturalnya selama bertahun-tahun. Di Afarer, Lab Kain PVC kami berdedikasi secara eksklusif untuk karakterisasi, validasi, dan peningkatan berkelanjutan kain yang kami gunakan di setiap papan yang kami bangun.'
+
+content_html: |
+  <h2>Fondasi setiap SUP tiup</h2>
+  <p>Kami tidak hanya mengandalkan lembar data pemasok. Setiap batch kain PVC yang masuk ke workshop kami diuji secara independen di internal. Ini menjamin bahwa spesifikasi material yang kami publikasikan adalah performa material yang Anda terima — batch demi batch, tahun demi tahun.</p>
+
+  <h2>Peralatan pengujian terstandarisasi</h2>
+  <p>Lab kain kami dilengkapi instrumen kelas industri yang sesuai dengan metode uji ISO, ASTM, dan EN:</p>
+  <table>
+    <thead><tr><th>Peralatan</th><th>Parameter yang Diukur</th><th>Standar</th></tr></thead>
+    <tbody>
+      <tr><td>Penguji tarik universal (50 kN)</td><td>Gaya putus, pemanjangan saat putus, propagasi sobekan</td><td>ISO 1421 / ASTM D751</td></tr>
+      <tr><td>Ruang pelapukan xenon-arc</td><td>Ketahanan UV (perubahan warna, retensi kekuatan setelah 2000 jam)</td><td>ISO 4892 / ASTM G155</td></tr>
+      <tr><td>Penguji lentur suhu rendah</td><td>Titik retak pada -30 °C hingga -50 °C</td><td>ISO 4675 / ASTM D2136</td></tr>
+      <tr><td>Penguji abrasi Taber</td><td>Kehilangan berat setelah 1000 siklus (roda CS-10)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
+      <tr><td>Pengukur ketebalan (digital, resolusi 0,001 mm)</td><td>Keseragaman di seluruh lebar gulungan</td><td>ISO 2286-3</td></tr>
+      <tr><td>Penguji tekanan hidrostatis</td><td>Ketahanan terhadap penetrasi air</td><td>ISO 811</td></tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-gray-500">* Semua peralatan dikalibrasi setiap tahun oleh laboratorium terakreditasi pihak ketiga.</p>
+
+  <h2>Dari data ke keputusan: alur kerja pengujian tipikal</h2>
+  <p>Saat kandidat kain baru tiba, kain tersebut mengikuti proses kualifikasi tujuh langkah terstandarisasi:</p>
+  <ol>
+    <li><strong>Inspeksi penerimaan</strong> — pemeriksaan visual untuk cacat permukaan, lubang jarum, dan kepatuhan dimensional.</li>
+    <li><strong>Pemetaan ketebalan</strong> — pengukuran 20 titik di seluruh gulungan; CV &lt; 3% disyaratkan untuk penerimaan.</li>
+    <li><strong>Pengujian tarik</strong> — 5 spesimen dalam arah warp dan weft. Minimal 3500 N/50 mm untuk PVC 1100 dtex.</li>
+    <li><strong>Pengondisian UV</strong> — paparan 1000 jam dalam ruang xenon-arc; retensi kekuatan minimal 80 % disyaratkan.</li>
+    <li><strong>Retak dingin</strong> — 4 jam pada -35 °C, lalu tekukan 180° di atas mandrel 25 mm. Tidak ada retakan terlihat.</li>
+    <li><strong>Ketahanan abrasi</strong> — 1000 siklus, kehilangan berat ≤ 0,05 g.</li>
+    <li><strong>Persetujuan akhir</strong> — hanya setelah ketujuh gerbang dilalui, kain dilepas untuk produksi.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">PVC 1100 dtex Tipikal — Retensi Tarik Setelah Paparan UV</p>
+    <div class="flex items-end gap-3 h-40">
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-600 rounded-t" style="height:100%"></div>
+        <span class="text-xs mt-1">0 jam<br />100%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-500 rounded-t" style="height:95%"></div>
+        <span class="text-xs mt-1">500 jam<br />95%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-400 rounded-t" style="height:88%"></div>
+        <span class="text-xs mt-1">1000 jam<br />88%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-300 rounded-t" style="height:82%"></div>
+        <span class="text-xs mt-1">2000 jam<br />82%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-gray-300 rounded-t" style="height:65%"></div>
+        <span class="text-xs mt-1">Kompetitor<br />~65%</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Kain PVC 1100 dtex kami mempertahankan kekuatan tarik &gt; 80 % setelah paparan xenon-arc 2000 jam, dibandingkan grade industri tipikal yang turun di bawah 70 %.</p>
+  </div>
+
+  <h2>Tim profesional kami</h2>
+  <p>Lab ini dijalankan oleh dua insinyur material penuh waktu, masing-masing memegang gelar di bidang ilmu polimer atau rekayasa tekstil dengan pengalaman industri minimal enam tahun. Mereka didukung oleh tiga teknisi yang melakukan pengujian harian dan pencatatan data. Tim ini secara rutin berpartisipasi dalam uji coba round-robin antar-laboratorium yang diselenggarakan oleh International Organization for Standardization (ISO) untuk memvalidasi akurasi metode uji kami.</p>
+
+  <h2>Memecahkan tantangan material tersulit Anda</h2>
+  <p>Setiap lingkungan marinir berbeda. SUP rental yang beroperasi di bawah matahari tropis menghadapi beban UV dan suhu yang sangat berbeda dari papan danau di lintang utara. Lab Kain kami membantu Anda memilih — atau mengembangkan — spesifikasi kain yang dioptimalkan untuk profil operasi Anda.</p>
+  <p>Solusi kustom terkini meliputi:</p>
+  <ul>
+    <li>Campuran PVC abrasi tinggi untuk klien militer yang papan-papannya secara rutin diluncurkan dari pantai karang dan berbatu (+40 % umur abrasi).</li>
+    <li>Formulasi PVC suhu rendah untuk ekspedisi Arktik, diuji hingga -50 °C tanpa rapuh.</li>
+    <li>Kain oranye stabil warna untuk armada papan penjaga pantai dan penyelamatan, mempertahankan visibilitas setelah 3 tahun paparan matahari tropis.</li>
+  </ul>
+  <p>Kami tidak menjual kain "siap pakai" dan berharap kain itu bekerja. Kami menguji, memvalidasi, dan merekomendasikan — atau menciptakan — solusi yang disesuaikan untuk profil misi spesifik Anda. Itulah perbedaan Afarer.</p>
+
+  <h2>Bagaimana kami melayani Anda</h2>
+  <p>Saat Anda membawa tantangan material kepada kami, berikut yang dapat Anda harapkan:</p>
+  <ol>
+    <li><strong>Konsultasi</strong> — kami mendiskusikan lingkungan operasi, target performa, dan anggaran Anda.</li>
+    <li><strong>Proposal</strong> — rencana uji disusun dengan kriteria lulus/gagal yang jelas dan linimasa.</li>
+    <li><strong>Eksekusi</strong> — lab kami menjalankan pengujian dan menghasilkan laporan rinci dengan data mentah dan analisis komparatif.</li>
+    <li><strong>Rekomendasi</strong> — kami menyajikan spesifikasi kain, termasuk opsi alternatif jika beberapa material memenuhi persyaratan Anda.</li>
+    <li><strong>Tindak lanjut</strong> — setelah pengiriman, kami tetap tersedia untuk mendukung pertanyaan material selama masa layanan.</li>
+  </ol>
+  <p>Tujuan kami bukan sekadar menjual papan kepada Anda. Tujuan kami adalah memastikan papan yang Anda terima berperforma andal dalam kondisi tempat Anda mendayung — dan itu dimulai dari kainnya.</p>
+
+cta:
+  title: 'Butuh spesifikasi kain kustom?'
+  subtitle: 'Hubungi tim rekayasa material kami untuk mendiskusikan kebutuhan Anda.'
+  button_text: 'Hubungi tim lab kami'
+  button_link: /contact

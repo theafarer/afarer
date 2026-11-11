@@ -1,0 +1,144 @@
+meta:
+  title: Kontaktai — partnerystės ir produktų užklausos | {SITE}
+  description: Susisiekite su afarer dėl partnerystės, bendro prekės ženklo ir privataus prekės ženklo klausimų ar profesionalių parkų. Pripučiamų SUP prekės ženklas, atsakome per 2 darbo dienas.
+  keywords:
+    - sup platintojo pasiūlymas
+    - profesionalus sup tiekėjas
+    - susisiekite su sup gamintoju
+hero_text:
+  tagline: Kontaktai
+  title: SUSISIEKITE SU MUMIS
+contact_form:
+  id: form
+  title: Atsiųskite mums žinutę
+  subtitle: Dėl pasiūlymų, techninių klausimų ar partnerystės užklausų, parašykite mums. Atsakome per vieną darbo dieną.
+  email_to: info@afarer.com
+  submit_button: Siųsti užklausą → Gauti pasiūlymą
+  success_message: Dėkojame! Jūsų žinutė atsidūrė mūsų pašto dėžutėje. Atsakysime per vieną darbo dieną.
+  error_message: Išsiunčiant žinutę kažkas nepavyko. Bandykite dar kartą arba atsiųskite mums el. laišką tiesiogiai.
+  default_country_code: '+1'
+  captcha:
+    label: 'Apsauga nuo šlamšto: išspręskite šį'
+  fields:
+    - name: country
+      label: Šalis
+      row: 1
+      type: select
+      optionsKey: countries
+      step: 1
+    - name: orderVolume
+      label: Numatomas užsakymo kiekis
+      row: 2
+      type: select
+      options:
+        - value: ''
+          label: Pasirinkite numatomą kiekį...
+        - value: sample
+          label: Tik mėginiai / prototipai
+        - value: 5-10
+          label: 5–10 vienetų (standartinis MOQ)
+        - value: 100-500
+          label: 100–500 vienetų
+        - value: 500-plus
+          label: 500+ vienetų (kiekio kainos)
+      step: 1
+    - name: customization
+      label: Ar reikia pritaikymo?
+      row: 3
+      type: select
+      options:
+        - value: ''
+          label: Pasirinkite pritaikymo tipą...
+        - value: none
+          label: Standartinis produktas (be pritaikymo)
+        - value: logo
+          label: Tik pasirinktinis logotipas / prekės ženklas
+        - value: full
+          label: Pilnas bendras prekės ženklas (dydis, spalva, grafika, pakuotė)
+        - value: consultation
+          label: Nežinau — reikia konsultacijos
+      step: 1
+    - name: productInterest
+      label: Dominančios produktų kategorijos
+      row: 4
+      type: select
+      options:
+        - value: ''
+          label: Pasirinkite produktų kategoriją...
+        - value: all
+          label: Visi produktai / visas katalogas
+        - value: sup
+          label: SUP lentos / irklentės
+        - value: safety
+          label: Saugos įranga / gelbėjimo liemenės
+        - value: accessory
+          label: Priedai (siurbliai, irklai, maišai)
+      step: 1
+    - name: firstName
+      label: Vardas
+      row: 1
+      step: 2
+    - name: lastName
+      label: Pavardė
+      row: 1
+      step: 2
+    - name: companyName
+      label: Įmonės pavadinimas
+      row: 2
+      step: 2
+    - name: email
+      label: El. paštas
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: Telefonas
+      row: 3
+      type: tel
+      withCountryCode: true
+      step: 2
+    - name: address
+      label: Adresas
+      row: 4
+      step: 2
+    - name: zip
+      label: Pašto kodas
+      row: 5
+      step: 2
+    - name: subject
+      label: Tema
+      row: 1
+      step: 3
+    - name: message
+      label: Žinutė
+      row: 2
+      type: textarea
+      rows: 6
+      step: 3
+features2_other_ways:
+  title: Kiti būdai mus pasiekti
+  columns: 3
+  items:
+    - title: Pardavimų užklausos
+      description: Pasiūlymai, konfigūracijos, prekiautojų paraiškos ir didmenų užsakymai.
+      icon: tabler:shopping-bag
+    - title: Techninė parama
+      description: Garantija, remontas, atsarginės dalys ir eksploatacijos klausimai.
+      icon: tabler:tool
+    - title: Spauda ir partnerystės
+      description: Medijų rinkiniai, rėmimas ir pramonės bendradarbiavimas.
+      icon: tabler:news
+    - title: Telefonas
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: El. paštas
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: Būstinė
+      description: Ekonominio vystymo zona, Laisi, Čingdao, Kinija, 266600
+      icon: tabler:map-pin
+map:
+  title: Mūsų vieta
+  subtitle: Aplankykite mus mūsų būstinėje
+  address: Ekonominio vystymo zona, Laisi, Čingdao, Kinija, 266600
+  zoom: 15

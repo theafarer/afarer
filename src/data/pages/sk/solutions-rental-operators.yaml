@@ -1,0 +1,71 @@
+meta:
+  title: 'Dodávateľ požičovného vybavenia SUP a riešenia flotíl | {SITE}'
+  description: 'Dodávateľ požičovného vybavenia SUP pre prevádzkovateľov požičovní. Komerčné dosky SUP na vysokú rotáciu navrhnuté pre denné použitie — UV-odolné PVC, zosilnené švy, rýchloschnúce materiály. Škálujte svoju požičovňu s Afarer.'
+
+hero:
+  tagline: 'Prevádzkovatelia požičovní'
+  title: 'Škálujte svoju požičovňu<br />so sebadôverou'
+  subtitle: 'Dodávateľ požičovného vybavenia SUP pre prevádzkovateľov požičovní. Dosky SUP na vysokú rotáciu navrhnuté pre denné požičanie, 365 dní v roku. Vaše príjmy si nikdy neberú voľno.'
+  image:
+    src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
+    alt: 'Rušný požičovný kiosk s doskami SUP pripravenými pre hostí'
+
+features:
+  title: 'Stvorené pre požičovnú drinu'
+  subtitle: 'Každá doska je konštruovaná na 500+ požičovných cyklov s minimálnou údržbou.'
+  items:
+    - title: '500+ požičovných cyklov'
+      description: 'Testované, aby prežili denné používanie v slanej vode, slnku a piesku.'
+      icon: 'tabler:shield-check'
+    - title: 'UV-odolná tkanina'
+      description: 'Žiadne vyblednutie ani degradácia po roku vonkajšieho skladovania.'
+      icon: 'tabler:sun'
+    - title: 'Zosilnené švy'
+      description: '3x pevnejšie než štandardná konštrukcia nafukovacej dosky.'
+      icon: 'tabler:layers-intersect'
+    - title: 'Rýchloschnúce materiály'
+      description: 'Dosky pripravené na ďalšie požičanie do 30 minút.'
+      icon: 'tabler:droplet'
+    - title: 'Skladovateľnosť do stohu'
+      description: 'Úsporný dizajn — v tej istej ploche uložíte o 40 % viac dosiek.'
+      icon: 'tabler:stack'
+    - title: 'Farebne odlíšené veľkosti'
+      description: 'Personál okamžite siahne po správnej doske vďaka farebnému kódovaniu veľkostí.'
+      icon: 'tabler:color-swatch'
+
+stats:
+  title: 'Prevádzkové metriky'
+  stats:
+    - title: 'Obrat dosky'
+      amount: '< 5 min'
+    - title: 'Ročná údržba'
+      amount: '~15 min/doska'
+    - title: 'Expedícia dielov'
+      amount: '48h'
+    - title: 'Miera defektov'
+      amount: '< 0,5 %'
+
+fleet_guide:
+  title: 'Sprievodca veľkosťou flotily'
+  subtitle: 'Odhadnite veľkosť flotily a potenciál príjmov pre vašu požičovnú prevádzku.'
+  tiers:
+    - label: 'Malý kiosk'
+      boards: '15–20'
+      revenue: 'XX XXX USD/rok'
+    - label: 'Stredná prevádzka'
+      boards: '30–50'
+      revenue: 'XX XXX USD/rok'
+    - label: 'Veľká plážová požičovňa'
+      boards: '50–100'
+      revenue: 'XXX XXX USD/rok'
+
+cta:
+  title: 'Pripravení škálovať svoju požičovňu?'
+  subtitle: 'Získajte požičovné ceny alebo porovnajte modely dosiek pre vašu prevádzku.'
+  actions:
+    - text: 'Získať požičovné ceny'
+      href: '/contact?package=rental'
+      variant: 'primary'
+    - text: 'Porovnať modely dosiek'
+      href: '/compare'
+      variant: 'secondary'

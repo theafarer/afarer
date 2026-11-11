@@ -1,0 +1,144 @@
+meta:
+  title: Kontakt — Upiti za partnerstvo i proizvode | {SITE}
+  description: Kontaktirajte afarer za upite o partnerstvu, markama s dvije marke i privatnim markama te profesionalne flote. Marka napuhivih SUP dasaka, odgovaramo u roku od 2 radna dana.
+  keywords:
+    - ponuda sup distributeru
+    - profesionalni dobavljač sup dasaka
+    - kontakt proizvođača sup dasaka
+hero_text:
+  tagline: Kontakt
+  title: STUPITE U KONTAKT
+contact_form:
+  id: form
+  title: Pošaljite nam poruku
+  subtitle: Za ponude, tehnička pitanja ili upite o partnerstvu, javite nam se. Odgovaramo u roku od jednog radnog dana.
+  email_to: info@afarer.com
+  submit_button: Pošaljite upit → Zatražite ponudu
+  success_message: Hvala! Vaša je poruka stigla u naš sandučić. Odgovorit ćemo u roku od jednog radnog dana.
+  error_message: Došlo je do pogreške pri slanju vaše poruke. Pokušajte ponovno ili nam pošaljite izravno e-poštu.
+  default_country_code: '+1'
+  captcha:
+    label: 'Zaštita od neželjene pošte: riješite sljedeće'
+  fields:
+    - name: country
+      label: Država
+      row: 1
+      type: select
+      optionsKey: countries
+      step: 1
+    - name: orderVolume
+      label: Procijenjeni obujam narudžbe
+      row: 2
+      type: select
+      options:
+        - value: ''
+          label: Odaberite svoju procijenjenu količinu...
+        - value: sample
+          label: Samo uzorci / prototipovi
+        - value: 5-10
+          label: 5–10 jedinica (standardni MOQ)
+        - value: 100-500
+          label: 100–500 jedinica
+        - value: 500-plus
+          label: 500+ jedinica (cijene za velike količine)
+      step: 1
+    - name: customization
+      label: Trebate li prilagodbu?
+      row: 3
+      type: select
+      options:
+        - value: ''
+          label: Odaberite vrstu prilagodbe...
+        - value: none
+          label: Standardni proizvod (bez prilagodbe)
+        - value: logo
+          label: Samo prilagođeni logotip / brendiranje
+        - value: full
+          label: Potpuna marka s dvije marke (veličina, boja, grafika, pakiranje)
+        - value: consultation
+          label: Nisam siguran — potrebna je konzultacija
+      step: 1
+    - name: productInterest
+      label: Kategorije proizvoda od interesa
+      row: 4
+      type: select
+      options:
+        - value: ''
+          label: Odaberite kategoriju proizvoda...
+        - value: all
+          label: Svi proizvodi / potpuni katalog
+        - value: sup
+          label: SUP daske / paddleboard daske
+        - value: safety
+          label: Sigurnosna oprema / spasilački prsluci
+        - value: accessory
+          label: Dodaci (pumpe, vesla, torbe)
+      step: 1
+    - name: firstName
+      label: Ime
+      row: 1
+      step: 2
+    - name: lastName
+      label: Prezime
+      row: 1
+      step: 2
+    - name: companyName
+      label: Naziv tvrtke
+      row: 2
+      step: 2
+    - name: email
+      label: E-pošta
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: TEL
+      row: 3
+      type: tel
+      withCountryCode: true
+      step: 2
+    - name: address
+      label: Adresa
+      row: 4
+      step: 2
+    - name: zip
+      label: Poštanski broj
+      row: 5
+      step: 2
+    - name: subject
+      label: Predmet
+      row: 1
+      step: 3
+    - name: message
+      label: Poruka
+      row: 2
+      type: textarea
+      rows: 6
+      step: 3
+features2_other_ways:
+  title: Drugi načini da nas kontaktirate
+  columns: 3
+  items:
+    - title: Prodajni upiti
+      description: Ponude, konfiguracije, prijave trgovaca i velike narudžbe.
+      icon: tabler:shopping-bag
+    - title: Tehnička podrška
+      description: Jamstvo, popravci, rezervni dijelovi i pitanja o radu.
+      icon: tabler:tool
+    - title: Mediji i partnerstva
+      description: Medijski kompleti, sponzorstva i suradnja u industriji.
+      icon: tabler:news
+    - title: Telefon
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: E-pošta
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: Sjedište
+      description: Gospodarska razvojna zona, Laixi, Qingdao, Kina, 266600
+      icon: tabler:map-pin
+map:
+  title: Naša lokacija
+  subtitle: Posjetite nas u našem sjedištu
+  address: Gospodarska razvojna zona, Laixi, Qingdao, Kina, 266600
+  zoom: 15

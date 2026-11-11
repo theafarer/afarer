@@ -1,0 +1,181 @@
+meta:
+  title: 'Akadeemia — SUP-i juhendid ja sõudetehnika koolitus | {SITE}'
+  description: "afarer Akadeemia: täispuhutavate sõudelaudade juhendid, stand up paddle'i tehnikad, merendusohutus ja materjaliteadmised algajatele ja professionaalidele."
+  keywords:
+    - 'learn stand up paddle'
+    - 'sup beginner guide'
+    - 'paddle board basics'
+    - 'sup technique'
+    - 'sup lessons'
+hero:
+  tagline: 'afarer Akadeemia'
+  title: 'Õppekeskus'
+  subtitle: 'Juhendid ja õpetused igale oskustasemele — SUP-i põhitõdedest edasijõudnute päästetehnikateni'
+
+categories:
+  - level: 'Algaja'
+    color: from-green-500 to-emerald-600
+    badge: bg-green-100 text-green-700
+    guides:
+      - title: 'SUP-i põhitõed'
+        desc: 'Õpi stand-up sõudmise alused — asend, sõudetehnika ja tasakaal.'
+        slug: beginner-sup-guide
+      - title: 'Sõudetehnikad'
+        desc: 'Edasiliikumise tõmme, pöördetõmme, külgetõmme ja madal tugi — omanda olulised sõudeliigutused.'
+        slug: sup-paddle-guide
+      - title: 'Ohutus esikohal'
+        desc: 'Olulised ohutuspraktikad, sealhulgas ilmakontroll, päästevesti kasutamine, leina reeglid ja isepääste.'
+        slug: sup-safety-guide
+  - level: 'Keskmine tase'
+    color: from-blue-500 to-indigo-600
+    badge: bg-blue-100 text-blue-700
+    guides:
+      - title: 'Matkade põhitõed'
+        desc: 'Mitmetunniste sõitude planeerimine — navigatsioon, veetasakaal, tempo ja tuuleprognooside tõlgendamine.'
+        slug: touring-sup-guide
+      - title: 'Ilma lugemine'
+        desc: 'Tõlgenda meriprogoose, tunnusta pilvemustreid ja mõista tuule mõju veele.'
+        slug: weather-planning-water-sports
+      - title: 'Navigatsiooni alused'
+        desc: 'Kaartide lugemine, kompassi kasutamine, GPS-punktid ja marsruutide planeerimine rannikusõiduks.'
+        slug: sup-navigation-guide
+      - title: 'Looveteadlikkus'
+        desc: 'Mõista loovetsükleid, hoovusi ja nende mõju väljasõidu ajastusele ja marsruutimisele.'
+        slug: understanding-tides
+  - level: 'Edasijõudnu'
+    color: from-purple-500 to-violet-600
+    badge: bg-purple-100 text-purple-700
+    guides:
+      - title: 'Mitmepäevaste reiside planeerimine'
+        desc: 'Ekspeditsiooni logistika — varustuse valik, toiduplaneerimine, ohutusprotokollid ja hädaabikontaktid.'
+        slug: sup-travel-guide
+      - title: 'Päästetehnikad'
+        desc: 'Isepääste, T-pääste ja pukseerimisprotokollid avaveel.'
+        slug: sup-self-rescue
+      - title: 'Öösõit'
+        desc: 'Navigatsioon pärast pimedat — valgustusnõuded, marsruudi mäletamine, rühma suhtlus ja ohutundlikkus.'
+        slug: ocean-safety-basics
+  - level: 'Hooldus'
+    color: from-amber-500 to-orange-600
+    badge: bg-amber-100 text-amber-700
+    guides:
+      - title: 'Puhastamine ja hooldus'
+        desc: 'Mageveega loputamine, UV-kaitse, hallituse vältimine ja õiged kuivatustehnikad pärast iga seanssi.'
+        slug: inflatable-sup-maintenance
+      - title: 'Säilitamise juhend'
+        desc: 'Parimad praktikad täispuhutavate SUP-laudade hoiustamiseks — tühjendamine, kokkuklappimine, temperatuurikontroll ja säilivusaeg.'
+        slug: inflatable-sup-storage
+      - title: 'Paranduse alused'
+        desc: 'Paranda väikesed läbistused, õmbluslekked ja ventiiliprobleemid PVC-paranduskomplektide ja plaasterdustehnikatega.'
+        slug: inflatable-sup-repair
+      - title: 'Ventiilide hooldus'
+        desc: 'Tunne ära ventiilitüübid (Halkey-Roberts, Boston, Leafield), puhasta mustus ja vaheta defektsed varred.'
+        slug: sup-pump-guide
+
+knowledge_center_tagline: 'Teadmuskeskus'
+knowledge_center_title: 'Mereseadmete ja tööstuse juhendid'
+knowledge_center_subtitle: 'Ekspertteadmised ja ostujuhendid merendusprofessionaalidele, laevastiku operaatoritele ja veespordi huvilistele.'
+
+knowledge_sections:
+  - title: 'SUP-laua teadmised'
+    tagline: 'Stand-up sõudelaua juhendid'
+    desc: 'Kõik SUP-laudade kohta — lauadisain, materjalid, suuruse valik, hooldus ja ostunõustamine hobi- ja äriliseks kasutuseks.'
+    guides:
+      - title: 'Kuidas valida õige SUP-laud'
+        desc: 'Täielik juhend SUP-i valimiseks — suurus, maht, materjal, kuju ja kasutuseesmärk.'
+        href: '/learn/sup'
+      - title: 'Täispuhutav vs kõva SUP'
+        desc: 'Täispuhutav SUP vs kõva epoksülaud — portatiivsus, vastupidavus, jõudlus ja väärtus võrdluses.'
+        href: '/compare/inflatable-vs-hardboard'
+      - title: 'Universaalne vs matka- vs jooga-SUP'
+        desc: 'Erinevad SUP-lauatüübid — ehitusstandardid, kujud, suurused ja soovitatud kasutused.'
+        href: '/learn/sup'
+      - title: 'Drop-Stitch vs traditsiooniline ehitus'
+        desc: 'Võrrelge Drop-Stitch ja traditsioonilist ehitust SUP-laudade jaoks kaalu, hinna, vastupidavuse ja jäikuse osas.'
+        href: '/learn/drop-stitch-core'
+  - title: 'Täispuhutava SUP-i juhend'
+    tagline: 'Täispuhutava SUP-i teadmised'
+    desc: 'Põhjalikud juhendid täispuhutavate SUP-ide kohta — PVC-materjalid, Drop-Stitch ehitus, ohutusstandardid ja hoolduse parimad praktikad.'
+    guides:
+      - title: 'PVC-materjali juhend'
+        desc: 'Lõplik juhend täispuhutavate SUP-laudade ehituses kasutatavate PVC-materjalide kohta.'
+        href: '/learn/materials'
+      - title: 'Kuidas täispuhutavaid SUP-e valmistatakse'
+        desc: 'Tootmisprotsess — materjali lõikamine, Drop-Stitch tuuma liitmine, õmbluste ehitus, rõhutestimine ja kvaliteedikontroll.'
+        href: '/learn/inflatable-technology'
+      - title: 'SUP-i ohutusjuhend'
+        desc: 'Ohutusstandardid, koormusmahtuvus, õige täispuhumine, väljasõidueelsed kontrollid ja hädaabiprotseduurid.'
+        href: '/learn/water-safety'
+      - title: 'SUP-i hooldus'
+        desc: 'Täispuhutavate SUP-laudade puhastamine, hoiustamine, UV-kaitse ja parandamine.'
+        href: '/v2/inflatable-sup-maintenance'
+  - title: 'SUP-laua teadmised'
+    tagline: 'SUP-laua keskus'
+    desc: 'Tehnilised juhendid, mis hõlmavad SUP-lauatüüpe, materjale, ehitusmeetodeid, hooldust ja ohutust.'
+    guides:
+      - title: 'SUP-lauatüübid'
+        desc: 'Universaalsed, matka-, jooga-, spordi- ja laste-SUP-id — õpi erinevusi ja vali õige.'
+        href: '/learn/sup'
+      - title: 'Drop-Stitch tehnoloogia'
+        desc: 'Kuidas tuhanded siselõimed loovad jäigaid, kõrgrõhulisi täispuhutavaid struktuure.'
+        href: '/learn/drop-stitch-core'
+      - title: 'Materjalide teatmik'
+        desc: 'PVC denier-hinnangud, kangakaalud, UV-kindlus ja mereklass materjalid selgitatult.'
+        href: '/learn/materials'
+      - title: 'SUP-i ostujuhend'
+        desc: 'Võrrelge erinevaid SUP-lauatüüpe erinevate kasutusjuhtumite ja oskustasemete jaoks.'
+        href: '/learn/sup'
+  - title: 'SUP-i teadmised'
+    tagline: 'Stand-up sõudelaua juhendid'
+    desc: 'Kõik SUP-laudade kohta — täispuhutav vs jäik, lauamõõdud, materjalitehnoloogia ja ekspertnõuanded kõigile oskustasemetele.'
+    guides:
+      - title: 'Täispuhutav vs kõva SUP'
+        desc: 'Võrrelge iSUP-e ja kõvasid epoksülaudu portatiivsuse, vastupidavuse, jõudluse ja väärtuse osas.'
+        href: '/learn/sup'
+      - title: 'SUP-laua mõõtude juhend'
+        desc: 'Kuidas pikkus, laius ja paksus mõjutavad stabiilsust, kiirust ja manööverdavust.'
+        href: '/learn/sup'
+      - title: 'SUP-i hooldus ja hoolt'
+        desc: 'Täispuhutavate SUP-laudade puhastamine, hoiustamine, UV-kaitse ja parandusnipid.'
+        href: '/v2/inflatable-sup-maintenance'
+      - title: 'Oma esimese SUP-i valimine'
+        desc: 'Algaja juhend õige stand-up sõudelaua valimiseks vastavalt teie kaalule, oskustasemele ja kasutuseesmärgile.'
+        href: '/learn/sup'
+  - title: 'Rendioperatsioonide juhend'
+    tagline: 'Laevastiku haldus rendiettevõtetele'
+    desc: 'Juhendid SUP-i rendilaevastike ehitamiseks ja haldamiseks rannakioskitele, veespordikeskustele ja külalislahkuse ettevõtetele.'
+    guides:
+      - title: 'Oma rendilaevastiku ehitamine'
+        desc: 'Kuidas valida õiged SUP-lauad teie rendioperatsioonile — vastupidavus, suurus ja ROI kaalutlused.'
+        href: '/solutions/rental-operators'
+      - title: 'Laevastiku hooldusjuhend'
+        desc: 'Olulised hoolduspraktikad rendilaevastiku eluea maksimeerimiseks ja seisuaegade minimeerimiseks.'
+        href: '/solutions/rental-operators'
+  - title: 'Kuurordi ja külalislahkuse juhend'
+    tagline: 'Tegevused vees külalislahkuses'
+    desc: 'Juhendid SUP-programmide käivitamiseks ja haldamiseks kuurortidele, hotellidele ja veepiirkonna sihtkohtadele.'
+    guides:
+      - title: 'Kuurordi SUP-programmi alustamine'
+        desc: 'Faktorid, mida kaaluda külaliste SUP-tegevuste käivitamisel — laevastiku suurus, personal ja tulususe mudelid.'
+        href: '/solutions/resorts-hotels'
+      - title: 'SUP vs muud tegevused vees'
+        desc: 'Võrrelge SUP-programme teiste veespordialadega külaliskogemuse ja operatiivse tõhususe osas.'
+        href: '/learn/sup'
+  - title: 'Jaemüügi ja levituse juhend'
+    tagline: 'SUP-i äripartnerlused'
+    desc: 'Juhendid SUP-i jaemüügi partneriks või levitajaks saamiseks — laovarude planeerimine, turupositsioneerimine ja kasvustrateegiad.'
+    guides:
+      - title: 'SUP-i jaemüüjaks saamine'
+        desc: 'Kuidas valida tootesarju, hallata laovarusid ja turustada SUP-laudu teie jaemüügipoes.'
+        href: '/solutions/retail-partners'
+      - title: 'SUP ärilisteks operatsioonideks'
+        desc: 'Miks täispuhutavad SUP-id on mitmekülgne toode ärilaevastikele, rendiettevõtetele ja professionaalsetele operaatoritele.'
+        href: '/solutions/rental-operators'
+
+read_guide: 'Loe juhendit →'
+
+cta:
+  title: 'Pole kindel, kust alustada?'
+  desc: 'Tehke meie oskuste hindamise küsimustik, et leida õiged juhendid ja varustus teie tasemele.'
+  label: 'Võtke meiega ühendust →'
+  link: /contact

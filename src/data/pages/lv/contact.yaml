@@ -1,0 +1,144 @@
+meta:
+  title: Kontakti — partnerības un produktu pieprasījumi | {SITE}
+  description: Sazinieties ar afarer par partnerību, kopīgu zīmolu un privātā zīmola jautājumiem vai profesionālām flotēm. Piepūšamo SUP zīmols, mēs atbildam 2 darba dienu laikā.
+  keywords:
+    - sup izplatītāja piedāvājums
+    - profesionāls sup piegādātājs
+    - sazināties ar sup ražotāju
+hero_text:
+  tagline: Kontakti
+  title: SAZINIETIES AR MUMS
+contact_form:
+  id: form
+  title: Nosūtiet mums ziņu
+  subtitle: Piedāvājumiem, tehniskiem jautājumiem vai partnerības pieprasījumiem rakstiet mums. Mēs atbildam vienas darba dienas laikā.
+  email_to: info@afarer.com
+  submit_button: Nosūtīt pieprasījumu → Saņemt piedāvājumu
+  success_message: Paldies! Jūsu ziņa ir nonākusi mūsu pastkastē. Mēs atbildēsim vienas darba dienas laikā.
+  error_message: Nosūtot ziņu, radās kļūda. Lūdzu, mēģiniet vēlreiz vai rakstiet mums tieši e-pastā.
+  default_country_code: '+1'
+  captcha:
+    label: 'Pret spama: lūdzu, atrisiniet sekojošo'
+  fields:
+    - name: country
+      label: Valsts
+      row: 1
+      type: select
+      optionsKey: countries
+      step: 1
+    - name: orderVolume
+      label: Paredzamais pasūtījuma apjoms
+      row: 2
+      type: select
+      options:
+        - value: ''
+          label: Izvēlieties paredzamo apjomu...
+        - value: sample
+          label: Tikai paraugi / prototipi
+        - value: 5-10
+          label: 5–10 vienības (standarta MOQ)
+        - value: 100-500
+          label: 100–500 vienības
+        - value: 500-plus
+          label: 500+ vienības (apjoma cenas)
+      step: 1
+    - name: customization
+      label: Vai nepieciešama pielāgošana?
+      row: 3
+      type: select
+      options:
+        - value: ''
+          label: Izvēlieties pielāgošanas veidu...
+        - value: none
+          label: Standarta produkts (bez pielāgošanas)
+        - value: logo
+          label: Tikai pielāgots logotips / zīmolējums
+        - value: full
+          label: Pilna kopīga zīmola sadarbība (izmērs, krāsa, grafika, iepakojums)
+        - value: consultation
+          label: Nezinu — nepieciešama konsultācija
+      step: 1
+    - name: productInterest
+      label: Interestējošās produktu kategorijas
+      row: 4
+      type: select
+      options:
+        - value: ''
+          label: Izvēlieties produktu kategoriju...
+        - value: all
+          label: Visi produkti / pilns katalogs
+        - value: sup
+          label: SUP dēļi / airu dēļi
+        - value: safety
+          label: Drošības aprīkojums / glābšanas vestes
+        - value: accessory
+          label: Piederumi (sūkņi, airi, somas)
+      step: 1
+    - name: firstName
+      label: Vārds
+      row: 1
+      step: 2
+    - name: lastName
+      label: Uzvārds
+      row: 1
+      step: 2
+    - name: companyName
+      label: Uzņēmuma nosaukums
+      row: 2
+      step: 2
+    - name: email
+      label: E-pasts
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: Telefons
+      row: 3
+      type: tel
+      withCountryCode: true
+      step: 2
+    - name: address
+      label: Adrese
+      row: 4
+      step: 2
+    - name: zip
+      label: Pasta indekss
+      row: 5
+      step: 2
+    - name: subject
+      label: Tēma
+      row: 1
+      step: 3
+    - name: message
+      label: Ziņa
+      row: 2
+      type: textarea
+      rows: 6
+      step: 3
+features2_other_ways:
+  title: Citi veidi, kā sazināties ar mums
+  columns: 3
+  items:
+    - title: Pārdošanas pieprasījumi
+      description: Piedāvājumi, konfigurācijas, dīleru pieteikumi un vairumu pasūtījumi.
+      icon: tabler:shopping-bag
+    - title: Tehniskais atbalsts
+      description: Garantija, remonti, rezerves daļas un ekspluatācijas jautājumi.
+      icon: tabler:tool
+    - title: Prese un partnerības
+      description: Mediju komplekti, sponsorēšana un nozares sadarbība.
+      icon: tabler:news
+    - title: Telefons
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: E-pasts
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: Galvenā mītne
+      description: Ekonomiskās attīstības zona, Laisi, Cindao, Ķīna, 266600
+      icon: tabler:map-pin
+map:
+  title: Mūsu atrašanās vieta
+  subtitle: Apmeklējiet mūsu galveno mītni
+  address: Ekonomiskās attīstības zona, Laisi, Cindao, Ķīna, 266600
+  zoom: 15

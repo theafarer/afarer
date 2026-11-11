@@ -1,0 +1,68 @@
+meta:
+  title: 'Laboratorij kakovosti — preskušanje in zagotavljanje kakovosti | {SITE}'
+  description: 'Neodvisen laboratorij kakovosti s procesi ISO 9001 pri afarerju: vsaka enota preskušena pred odpošiljanjem, kar zagotavlja kakovost napihljivih desk SUP.'
+  keywords:
+    - 'nadzor kakovosti sup'
+    - 'preskusni laboratorij desk za veslanje'
+    - 'tovarna sup iso 9001'
+    - 'kakovost napihljivih sup'
+hero:
+  tagline: Laboratorij za nadzor kakovosti
+  title: Preskusni laboratorij in zagotavljanje kakovosti
+  subtitle: Neodvisen laboratorij kakovosti s procesi ISO 9001 — vsaka enota preskušena pred odpošiljanjem
+
+intro: afarer upravlja namenski laboratorij za nadzor kakovosti, ki deluje neodvisno od proizvodnje. Vsaka serija surovin in vsaka dokončana deska pred sprostitvijo gre skozi dokumentirane protokole pregleda. Naša ekipa QC poroča neposredno vodstvu, kar zagotavlja nepristranske odločitve o kakovosti.
+
+highlights:
+  - value: 100%
+    label: Tlačno preskušenih enot
+    detail: Vsaka komora, vsaka deska
+  - value: 24–48 h
+    label: Trajanje preskusa zadrževanja zraka
+    detail: Pri 1,25× ocenjenega tlaka
+  - value: '&lt;5%'
+    label: Največji dovoljen padec tlaka
+    detail: V obdobju zadrževanja 24–48 ur
+  - value: AQL 2.5
+    label: Prag glavnih napak
+    detail: Po vzorčenju ISO 2859
+
+test_procedures:
+  - title: Pregled surovin
+    description: Vsaka dohodna serija PVC, drop-stitch tkanine in okovja se pred sprejemom preskusi. Preverijo se natezna trdnost (ASTM D751), odpornost proti trganju (ISO 4674) in odpornost proti UV. Neustrezni materiali se dajo v karanteno in vrnejo.
+    standards:
+      - ASTM D751 (natezna trdnost)
+      - ISO 4674 (trganje)
+      - ISO 4892 (UV)
+  - title: Kontrolne točke QC med proizvodnjo
+    description: Proizvodni operaterji na vsaki stopnji izvajajo samopregled. Revizorji QC med izmeno izvajajo naključno vzorčenje. Preskusi luščenja varov se izvedejo na vsakih 50 enot. Dimenzijske preglede izvajamo na vsakem 20. panelu.
+    standards:
+      - ASTM D751 (luščenje)
+      - Interni kontrolni seznam s 100 točkami
+      - Vzorčenje ISO 2859
+  - title: Preskus zadrževanja zraka 24–48 ur
+    description: Vsaka komora cevi se napihne na 125 % ocenjenega tlaka in zadrži 24–48 ur. Tlačni senzorji neprekinjeno beležijo s kompenzacijo temperature. Vsaka komora, ki preseže 5-odstotni padec tlaka, sproži samodejni ponovni pregled serije.
+    standards:
+      - EN ISO 25649
+      - CE 2013/53/EU
+  - title: Preskušanje obremenitve in ravnovesja
+    description: Dokončane deske se pri največji ocenjeni nosilnosti preskušajo na stabilnost in togost. Vsaka deska pred končno odobritvijo pregleda opravi preskušanje v vodi.
+    standards:
+      - ISO 12217
+      - CE 2013/53/EU
+
+equipment:
+  - name: Univerzalni preskusni stroj (natezna trdnost)
+    spec: 5 kN, skladno z ASTM D751
+  - name: Preizkuševalnik upadanja tlaka
+    spec: Večkanalni, 0–50 psi, beleženje podatkov
+  - name: Komora za vremensko staranje UV
+    spec: ISO 4892, cikli 1.000 h
+  - name: Debelinomer (digitalni)
+    spec: Ločljivost 0,01 mm
+  - name: Preizkuševalnik luščenja (var)
+    spec: Motoriziran, nosilnost 50 N
+  - name: Temperaturna komora
+    spec: -40 °C do +100 °C
+  - name: Rezervoar za odkrivanje netesnosti
+    spec: 6 m × 2 m, osvetljen

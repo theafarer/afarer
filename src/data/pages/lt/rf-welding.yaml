@@ -1,0 +1,89 @@
+meta:
+  title: 'RF suvirinimo centras — dielektrinis suklijavimas hermetiškoms siūlėms | {SITE}'
+  description: 'Radijo dažnio suvirinimo technologija, užtikrinanti atitinkančias hermetiškas siūles. Atplyšimo testavimas, oro sulaikymo patvirtinimas ir pasirinktinės siūlių specifikacijos.'
+back_text: 'Grįžti į R&D centrą'
+home_label: 'Pradžia'
+
+hero:
+  tagline: 'Laboratorija 03'
+  title: 'RF suvirinimo centras'
+  subtitle: 'Dielektrinio suklijavimo technologija siūlėms, kurios atlaiko slėgį'
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1-1200w.webp'
+  image_alt: 'Afarer RF suvirinimo dielektrinio suklijavimo procesas'
+
+intro: 'Pripučiamas SUP yra tiek pat patikimas, kiek jo siūlės. Vienas silpnas suvirinimas gali pažeisti visą kamerą — o jūroje kameros gedimas nėra nepatogumas; tai saugos pavojus. Afarer mes investavome į specialų radijo dažnio (RF) suvirinimo centrą, kuris jungia pramoninės klasės dielektrinius suvirinimo presus su griežta proceso kontrole ir testavimu po suvirinimo. Kiekviena mūsų pagaminta siūlė yra dokumentuota, atsekama ir sertifikuota, kad atitiktų arba viršytų EN ISO 25649 reikalavimus — Europos standartą pripučiamai laisvalaikio įrangai.'
+
+content_html: |
+  <h2>Mokslas už siūlės</h2>
+  <p>RF suvirinimas naudoja aukšto dažnio elektromagnetinę energiją (paprastai 27,12 MHz), kad sužadintų polines molekules PVC dengtame audinyje, generuodamas šilumą tiksliai medžiagos sąlyčio paviršiuje. Skirtingai nuo karšto oro ar karšto pleišto suvirinimo, RF suvirinimas sukuria tikrą molekulinį ryšį — du audinio sluoksniai susilieja į vieną homogenišką medžiagą suvirinimo zonoje, sudarydami jungtį, tokią pat stiprią kaip pati pagrindinė medžiaga.</p>
+
+  <h2>Suvirinimo įranga ir proceso kontrolė</h2>
+  <p>Mūsų suvirinimo centras įrengtas su:</p>
+  <table>
+    <thead><tr><th>Mašina</th><th>Galia / pajėgumas</th><th>Taikymas</th></tr></thead>
+    <tbody>
+      <tr><td>Dielektrinis RF presas 1</td><td>15 kW, plokštė 2000 × 600 mm</td><td>Pagrindinės išilginės siūlės, bortų ir korpuso jungtys</td></tr>
+      <tr><td>Dielektrinis RF presas 2</td><td>10 kW, plokštė 1500 × 500 mm</td><td>Pertvarų suvirinimai, bortų uždarymo jungtys, vožtuvų lopai</td></tr>
+      <tr><td>CNC valdomas RF suvirintuvas</td><td>8 kW, XY stalas 2500 × 1200 mm</td><td>Lenktos siūlės, logotipų/skydų reljefas, preciziniai lopai</td></tr>
+      <tr><td>Karšto pleišto automatinis suvirintuvas</td><td>Kintama temperatūra, maks. 1,2 m/min</td><td>Atsarginis metodas storo PVC bortų audiniui ir remonto darbams</td></tr>
+    </tbody>
+  </table>
+  <p>Kiekvienas RF presas turi uždaro ciklo temperatūros ir slėgio stebėseną. Suvirinimo parametrai — galia, presavimo laikas, aušinimo laikas, elektrodo slėgis — programuojami pagal medžiagos tipą ir registruojami mūsų Gamybos vykdymo sistemoje (MES) pilnam atsekamumui.</p>
+
+  <h2>Suvirinimo kokybės testai — kiekviena siūlė, kiekviena lenta</h2>
+  <p>Suvirinimo vientisumas patvirtinamas per privalomą keturių testų protokolą:</p>
+  <ol>
+    <li><strong>Vizualinė patikra</strong> — 100 % siūlių vizualiai tikrinamos dėl perdegimo, netinkamo suderinimo, teršalų ar nepilno susiliejimo. Atmetimo riba: 0,5 % linijinių metrų.</li>
+    <li><strong>Atplyšimo testas</strong> — 25 mm pločio juosta išpjaunama iš bandinio, suvirinto su kiekviena gamybos partija. Minimali atplyšimo jėga: 120 N/25 mm PVC 1100 dtex.</li>
+    <li><strong>Oro sulaikymo testas</strong> — Kiekviena baigta kamera suslegiama iki 1,5 × darbinio slėgio ir išlaikoma 30 minučių. Slėgio kritimas neturi viršyti 2 %.</li>
+    <li><strong>Terminio ciklų testas</strong> — Mėginiai cikluojami nuo -20 °C iki +60 °C 50 ciklų, tada vėl atplyšimo testuojami. Priimtinas stiprio praradimas: &lt; 10 %.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Atplyšimo stiprio palyginimas — RF prieš karšto oro suvirinimą (PVC 1100 dtex)</p>
+    <div class="space-y-3">
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">RF suvirinimas</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">184 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Karštas oras</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">130 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Minimumas</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-green-500 rounded" style="width:48%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">96 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">RF suvirinimas nuosekliai pasiekia 90–95 % pagrindinės medžiagos stiprio — gerokai daugiau nei minimumas.</p>
+  </div>
+
+  <h2>Profesinė kompetencija</h2>
+  <p>Mūsų suvirinimo komandai vadovauja vyresnysis proceso inžinierius, turintis 11 metų patirties dengtų tekstilės medžiagų dielektriniame suvirinime. Kiekvienas operatorius baigia 6 mėnesių vidinę sertifikavimo programą, kol gali dirbti su gamybos siūlėmis. Kasmetinis perkvalifikavimas būtinas, įskaitant praktinį suvirinimo testą, vertinamą pagal mūsų vidinį A klasės standartą (atplyšimo stipris ≥ 160 N/25 mm).</p>
+
+  <h2>Pasirinktiniai suvirinimo sprendimai unikaliems reikalavimams</h2>
+  <p>Mes suprantame, kad viena suvirinimo specifikacija netinka kiekvienai paskirčiai. Mūsų RF suvirinimo centras reguliariai kuria pasirinktines siūlių konfigūracijas klientams su specialiais reikalavimais:</p>
+  <ul>
+    <li><strong>Daugiasluoksniai sutvirtinimo lopai</strong> — dėvėjimuisi jautrioms vietoms, tokioms kaip nosies ir laivagalio bortai, kuriame daugiapakopius RF suvirinimus, integruojančius atsparų išorinį sluoksnį neprarandant lankstumo.</li>
+    <li><strong>Laidžiosios arba RF nepermatomos siūlės</strong> — kariniams ar stebėjimo taikymams, kuriems reikalingas elektromagnetinis ekranavimas, suviriname laidžiojo tinklo sluoksnius siūlės pakete.</li>
+    <li><strong>Spalvos keitimo skydų suvirinimas</strong> — dviejų spalvų audinio skydai (pvz., oranžinis korpusas + pilkas denis) suvirinami su paslėptu persidengimu, kad būtų išlaikyta prekės ženklo estetika be matomos jungties linijos.</li>
+  </ul>
+
+  <h2>Mūsų įsipareigojimas jums</h2>
+  <p>Kiekviena mūsų pristatyta lenta turi mūsų suvirinimo kokybės garantiją: jei bet kuri siūlė sugenda normalioje eksploatacijoje garantiniu laikotarpiu, mes nemokamai sutaisome arba pakeis paveiktą kamerą, o siekdami išvengti pasikartojimo atliekame priežasčių tyrimą. Tai nėra tiesiog garantija — tai įsipareigojimas nuolatinei tobulejimui, grindžiamas realiais eksploatacijos duomenimis.</p>
+  <p>Rinkdamiesi Afarer, jūs renkatės siūles, kurios yra suprojektuotos, išbandytos ir dokumentuotos — o ne tik suvirintos. Tai skirtumas tarp lentos, kuri plūduriuoja, ir lentos, kuri atlieka.</p>
+
+cta:
+  title: 'Aptarkite savo suvirinimo reikalavimus'
+  subtitle: 'Pasirinktinės siūlių specifikacijos, medžiagų suderinamumas ar proceso patvirtinimas.'
+  button_text: 'Susisiekite su mūsų suvirinimo komanda'
+  button_link: /contact

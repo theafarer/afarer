@@ -1,0 +1,87 @@
+meta:
+  title: 'Peralatan Pabrik — Pemotongan, Las RF & Pencetakan | {SITE}'
+  description: 'Peralatan manufaktur afarer kelas industri: pemotongan PVC, las RF, pencetakan digital, perakitan, dan pengujian untuk SUP tiup.'
+  keywords:
+    - 'peralatan manufaktur sup'
+    - 'pabrik sup tiup'
+    - 'las rf pvc'
+    - 'produksi papan dayung'
+hero:
+  tagline: 'Peralatan'
+  title: 'Peralatan & Mesin Manufaktur'
+  subtitle: 'Peralatan kelas industri untuk pemotongan, pengelasan, pencetakan, dan perakitan'
+  back_label: 'Kembali ke Pabrik'
+  back_link: /factory
+
+categories:
+  - title: 'Pemotongan & Penyiapan Material'
+    items:
+      - name: 'Mesin Pemotong PVC Otomatis'
+        spec: 'Kendali CNC, 6,5 m × 2,5 m, akurasi 0,1 mm'
+        desc: 'Mesin pemotong otomatis terkendali komputer untuk kain PVC dan drop-stitch. Perangkat lunak nesting mengoptimalkan pemanfaatan material hingga limbah di bawah 5%.'
+      - name: 'Mesin Penyebar Kain'
+        spec: 'Lebar maksimum 3 m, umpan terkendali tegangan'
+        desc: 'Menebarkan kain dalam satu atau beberapa lapisan dengan tegangan terkendali untuk mencegah distorsi sebelum pemotongan.'
+
+  - title: 'Pengelasan & Perekatan Tabung'
+    items:
+      - name: 'Mesin Heat Sealing'
+        spec: 'Pengelasan udara panas, variabel 200–600 °C, 0,5–5 m/menit'
+        desc: 'Mesin heat sealing udara panas untuk merekatkan dan mengelas PVC serta sambungan rail. Digunakan untuk tacking, penyegelan, dan fusi ruang tabung serta sambungan pelampung.'
+      - name: 'Press RF Dielektrik'
+        spec: '15 kW, pelat 2000 × 600 mm'
+        desc: 'Press las radio-frekuensi untuk sambungan longitudinal utama, pita rail, dan fabrikasi ruang besar.'
+      - name: 'Mesin Las RF Terkendali CNC'
+        spec: '8 kW, meja XY 2500 × 1200 mm'
+        desc: 'Pengelasan sambungan melengkung terprogram untuk geometri kompleks, emboss logo, dan patchwork presisi.'
+
+  - title: 'Manufaktur Papan SUP'
+    items:
+      - name: 'Press Laminasi Inti Drop-Stitch'
+        spec: 'Press format besar untuk inti papan hingga 14 ft LOA'
+        desc: 'Laminasi presisi inti drop-stitch ke laminat PVC luar. Setiap lapisan direkatkan dengan tekanan untuk kualitas dan kekuatan yang konsisten.'
+      - name: 'Router CNC (5-sumbu)'
+        spec: 'Ruang kerja 3 m × 2 m × 1 m, spindle berpendingin air'
+        desc: 'Pemesinan fin box, cutout pegangan, dan komponen papan kustom.'
+
+  - title: 'Pencetakan & Dekorasi SUP'
+    items:
+      - name: 'Printer Digital'
+        spec: 'Inkjet resolusi tinggi, lebar cetak hingga 2 m'
+        desc: 'Pencetakan digital langsung ke kain untuk grafis deck SUP warna penuh. Mencetak pola kustom, gradien, dan gambar berkualitas foto dengan tinta berbasis air tahan UV.'
+      - name: 'Mesin Cetak Saring'
+        spec: 'Manual dan semi-otomatis, registrasi multi-warna'
+        desc: 'Cetak saring untuk logo papan SUP, tanda merek, dan pola berulang. Menghasilkan cetakan tahan lama dan opak dengan saturasi warna cerah.'
+
+  - title: 'Perakitan & Rigging'
+    items:
+      - name: 'Stasiun Perakitan Papan'
+        spec: 'Modular dapat disesuaikan, tata letak multi-stasiun'
+        desc: 'Perakitan fin box, pegangan, D-ring, valve, dan pad deck ke papan SUP.'
+      - name: 'Press Pemasangan Valve'
+        spec: 'Pneumatik, tekanan dapat disesuaikan'
+        desc: 'Pemasangan dan penyegelan presisi valve Halkey-Roberts dan Leafield.'
+      - name: 'Mesin Laminasi Pad Deck'
+        spec: '3 m × 1,5 m, terkendali suhu'
+        desc: 'Laminasi panas pad deck busa EVA ke permukaan atas papan SUP dengan kekuatan rekat yang konsisten.'
+
+  - title: 'Pengujian & Pengendalian Kualitas'
+    items:
+      - name: 'Penguji Tarik Universal'
+        spec: '50 kN, ASTM D751'
+        desc: 'Pengujian gaya putus, pemanjangan saat putus, dan propagasi sobekan untuk batch kain.'
+      - name: 'Rangka Uji Retensi Udara'
+        spec: 'Dapat diprogram, tahan tekanan 30 menit'
+        desc: 'Uji tahan tekanan otomatis untuk setiap ruang tabung sebelum perakitan.'
+      - name: 'Penguji Kelupasan Sambungan'
+        spec: 'Kelupasan motorised 180° pada 100 mm/menit'
+        desc: 'Pengujian kekuatan kelupasan sambungan las dan lem sesuai EN ISO 25649.'
+      - name: 'Ruang Pelapukan Xenon-Arc'
+        spec: 'Paparan 2000 jam'
+        desc: 'Pengujian ketahanan UV untuk perubahan warna dan retensi kekuatan.'
+
+cta:
+  title: 'Tertarik dengan tur pabrik?'
+  desc: 'Kami menyambut pengunjung di fasilitas Qingdao kami. Lihat langsung peralatan dan proses kami.'
+  label: 'Jadwalkan kunjungan →'
+  link: /contact

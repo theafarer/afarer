@@ -1,0 +1,181 @@
+meta:
+  title: 'Akademija — vodniki SUP in usposabljanje veslanja | {SITE}'
+  description: 'Akademija afarer: vodniki za napihljive veslaške deske, tehnike stoječega veslanja, pomorska varnost in znanje o materialih za začetnike in profesionalce.'
+  keywords:
+    - 'naučite se stoječega veslanja'
+    - 'vodnik sup za začetnike'
+    - 'osnove veslaške deske'
+    - 'tehnika sup'
+    - 'tečaji sup'
+hero:
+  tagline: 'Akademija afarer'
+  title: 'Center za učenje'
+  subtitle: 'Vodniki in vadnice za vsako raven znanja — od osnov SUP do naprednih reševalnih tehnik'
+
+categories:
+  - level: 'Začetnik'
+    color: from-green-500 to-emerald-600
+    badge: bg-green-100 text-green-700
+    guides:
+      - title: 'Osnove SUP'
+        desc: 'Naučite se temeljev stoječega veslanja — stoja, tehnika zamaha z veslom in ravnovesje.'
+        slug: beginner-sup-guide
+      - title: 'Tehnike veslanja'
+        desc: 'Osnovni zamah, pometalni zamah, privlečni zamah in nizka opora — obvladajte ključne gibe vesla.'
+        slug: sup-paddle-guide
+      - title: 'Najprej varnost'
+        desc: 'Ključne varnostne prakse, vključno s preverjanjem vremena, uporabo rešilnega jopiča, pravili za varnostno vrvico in samo-reševanjem.'
+        slug: sup-safety-guide
+  - level: 'Srednja raven'
+    color: from-blue-500 to-indigo-600
+    badge: bg-blue-100 text-blue-700
+    guides:
+      - title: 'Osnove turističnega veslanja'
+        desc: 'Načrtovanje večurnega veslanja — navigacija, hidracija, tempo in branje napovedi vetra.'
+        slug: touring-sup-guide
+      - title: 'Branje vremena'
+        desc: 'Interpretacija pomorskih napovedi, prepoznavanje vzorcev oblakov in razumevanje vplivov vetra na vodo.'
+        slug: weather-planning-water-sports
+      - title: 'Osnove navigacije'
+        desc: 'Branje pomorskih kart, uporaba kompasa, GPS-točke in načrtovanje poti za veslanje ob obali.'
+        slug: sup-navigation-guide
+      - title: 'Zavedanje o plimi in oseki'
+        desc: 'Razumevanje ciklov plime in oseke, tokov ter njihovega vpliva na čas izplutja in izbiro poti.'
+        slug: understanding-tides
+  - level: 'Napredno'
+    color: from-purple-500 to-violet-600
+    badge: bg-purple-100 text-purple-700
+    guides:
+      - title: 'Načrtovanje večdnevnih izletov'
+        desc: 'Logistika odprav — izbira opreme, načrtovanje hrane, varnostni protokoli in stiki v sili.'
+        slug: sup-travel-guide
+      - title: 'Reševalne tehnike'
+        desc: 'Samo-reševanje, reševanje v obliki črke T in protokoli vlečenja za odprto vodo.'
+        slug: sup-self-rescue
+      - title: 'Veslanje ponoči'
+        desc: 'Navigacija po temi — zahteve za osvetlitev, pomnjenje poti, komunikacija v skupini in zavedanje nevarnosti.'
+        slug: ocean-safety-basics
+  - level: 'Vzdrževanje'
+    color: from-amber-500 to-orange-600
+    badge: bg-amber-100 text-amber-700
+    guides:
+      - title: 'Čiščenje in nega'
+        desc: 'Izpiranje s sladko vodo, zaščita pred UV, preprečevanje plesni in pravilno sušenje po vsaki seji.'
+        slug: inflatable-sup-maintenance
+      - title: 'Vodnik za shranjevanje'
+        desc: 'Najboljše prakse shranjevanja napihljivih SUP desk — izpuščanje zraka, zlaganje, nadzor temperature in rok uporabnosti.'
+        slug: inflatable-sup-storage
+      - title: 'Osnove popravil'
+        desc: 'Popravite majhne preboje, puščanja šivov in težave z ventili z reparaturnimi kompleti PVC in tehnikami krpljenja.'
+        slug: inflatable-sup-repair
+      - title: 'Vzdrževanje ventilov'
+        desc: 'Prepoznajte tipe ventilov (Halkey-Roberts, Boston, Leafield), očistite umazanijo in zamenjajte pokvarjena jedra ventilov.'
+        slug: sup-pump-guide
+
+knowledge_center_tagline: 'Center znanja'
+knowledge_center_title: 'Vodniki za pomorsko opremo in industrijo'
+knowledge_center_subtitle: 'Strokovno znanje in nakupovalni vodniki za pomorske profesionalce, upravljalce flot in ljubitelje vodnih športov.'
+
+knowledge_sections:
+  - title: 'Znanje o SUP deskah'
+    tagline: 'Vodniki za deske za stoječe veslanje'
+    desc: 'Vse o SUP deskah — oblikovanje desk, materiali, izbira velikosti, vzdrževanje in nasveti za nakup za rekreativno in komercialno uporabo.'
+    guides:
+      - title: 'Kako izbrati pravo SUP desko'
+        desc: 'Popoln vodnik za izbiro SUP — velikost, volumen, material, oblika in predvidena uporaba.'
+        href: '/learn/sup'
+      - title: 'Napihljiva ali trda SUP deska'
+        desc: 'Napihljiva SUP proti trdi epoksidni deski — primerjava prenosljivosti, trajnosti, zmogljivosti in vrednosti.'
+        href: '/compare/inflatable-vs-hardboard'
+      - title: 'Vsestranska, turistična ali joga SUP'
+        desc: 'Različni tipi SUP desk — standardi izdelave, oblike, velikosti in priporočene uporabe.'
+        href: '/learn/sup'
+      - title: 'Drop-Stitch proti tradicionalni izdelavi'
+        desc: 'Primerjava drop-stitch in tradicionalne izdelave SUP desk glede teže, stroškov, trajnosti in togosti.'
+        href: '/learn/drop-stitch-core'
+  - title: 'Vodnik za napihljive SUP'
+    tagline: 'Znanje o napihljivih SUP'
+    desc: 'Obsežni vodniki o napihljivih SUP — materiali PVC, konstrukcija drop-stitch, varnostni standardi in najboljše prakse vzdrževanja.'
+    guides:
+      - title: 'Vodnik po materialih PVC'
+        desc: 'Dokončen vodnik po materialih PVC, ki se uporabljajo pri izdelavi napihljivih SUP desk.'
+        href: '/learn/materials'
+      - title: 'Kako nastanejo napihljive SUP deske'
+        desc: 'Proizvodni postopek — rezanje materiala, spajanje jedra drop-stitch, izdelava šivov, preskušanje tlaka in nadzor kakovosti.'
+        href: '/learn/inflatable-technology'
+      - title: 'Varnostni vodnik SUP'
+        desc: 'Varnostni standardi, nosilnost, pravilno napihovanje, pregledi pred odplutjem in postopki v sili.'
+        href: '/learn/water-safety'
+      - title: 'Vzdrževanje SUP'
+        desc: 'Čiščenje, shranjevanje, zaščita pred UV in popravila napihljivih SUP desk.'
+        href: '/v2/inflatable-sup-maintenance'
+  - title: 'Znanje o SUP deskah'
+    tagline: 'Zbirka SUP desk'
+    desc: 'Tehnični vodniki o tipih SUP desk, materialih, metodah izdelave, vzdrževanju in varnosti.'
+    guides:
+      - title: 'Tipi SUP desk'
+        desc: 'Vsestranske, turistične, joga, športne in otroške SUP deske — spoznajte razlike in izberite pravo.'
+        href: '/learn/sup'
+      - title: 'Tehnologija Drop-Stitch'
+        desc: 'Kako tisoči notranjih niti ustvarjajo toge, visokotlačne napihljive konstrukcije.'
+        href: '/learn/drop-stitch-core'
+      - title: 'Referenca materialov'
+        desc: 'Denierske ocene PVC, teže tkanin, odpornost proti UV in materiali pomorske kakovosti — razloženo.'
+        href: '/learn/materials'
+      - title: 'Nakupovalni vodnik SUP'
+        desc: 'Primerjajte različne tipe SUP desk za različne namene uporabe in ravni znanja.'
+        href: '/learn/sup'
+  - title: 'Znanje SUP'
+    tagline: 'Vodniki za deske za stoječe veslanje'
+    desc: 'Vse o SUP deskah — napihljive proti togim, dimenzije desk, tehnologija materialov in strokovni nasveti za vse ravni znanja.'
+    guides:
+      - title: 'Napihljiva ali trda SUP deska'
+        desc: 'Primerjajte napihljive SUP in trde epoksidne deske glede prenosljivosti, trajnosti, zmogljivosti in vrednosti.'
+        href: '/learn/sup'
+      - title: 'Vodnik po dimenzijah SUP desk'
+        desc: 'Kako dolžina, širina in debelina vplivajo na stabilnost, hitrost in vodljivost.'
+        href: '/learn/sup'
+      - title: 'Vzdrževanje in nega SUP'
+        desc: 'Čiščenje, shranjevanje, zaščita pred UV in nasveti za popravila napihljivih SUP desk.'
+        href: '/v2/inflatable-sup-maintenance'
+      - title: 'Izbira vaše prve SUP deske'
+        desc: 'Vodnik za začetnike za izbiro prave deske za stoječe veslanje glede na vašo težo, raven znanja in predvideno uporabo.'
+        href: '/learn/sup'
+  - title: 'Vodnik za izposojo'
+    tagline: 'Upravljanje flot za podjetja izposoje'
+    desc: 'Vodniki za vzpostavljanje in upravljanje flot SUP desk za najem za plažne kioske, centre vodnih športov in gostinske objekte.'
+    guides:
+      - title: 'Vzpostavitev flote za najem'
+        desc: 'Kako izbrati prave SUP deske za vaše poslovanje z izposojo — trajnost, velikosti in donosnost.'
+        href: '/solutions/rental-operators'
+      - title: 'Vodnik za vzdrževanje flote'
+        desc: 'Ključne prakse vzdrževanja za čim daljšo življenjsko dobo desk in čim manj izpadov pri flotah za najem.'
+        href: '/solutions/rental-operators'
+  - title: 'Vodnik za letovišča in gostinstvo'
+    tagline: 'Vodne dejavnosti za gostinstvo'
+    desc: 'Vodniki za zagon in upravljanje programov SUP za letovišča, hotele in destinacije ob vodi.'
+    guides:
+      - title: 'Zagon programa SUP v letovišču'
+        desc: 'Dejavniki, ki jih je treba upoštevati pri zagonu dejavnosti SUP za goste — velikost flote, kadrovskа zaseditev in model prihodkov.'
+        href: '/solutions/resorts-hotels'
+      - title: 'SUP proti drugim vodnim dejavnostim'
+        desc: 'Primerjajte programe SUP z drugimi vodnimi športi glede izkušnje gostov in operativne učinkovitosti.'
+        href: '/learn/sup'
+  - title: 'Vodnik za maloprodajo in distribucijo'
+    tagline: 'Poslovna partnerstva SUP'
+    desc: 'Vodniki o tem, kako postati maloprodajni partner ali distributer SUP — načrtovanje zalog, tržno pozicioniranje in strategije rasti.'
+    guides:
+      - title: 'Kako postati maloprodajalec SUP'
+        desc: 'Kako izbrati proizvodne linije, upravljati zaloge in tržiti SUP deske v vaši trgovini.'
+        href: '/solutions/retail-partners'
+      - title: 'SUP za komercialno poslovanje'
+        desc: 'Zakaj so napihljive SUP deske vsestranski izdelek za komercialne flote, podjetja izposoje in profesionalne ponudnike.'
+        href: '/solutions/rental-operators'
+
+read_guide: 'Preberite vodnik →'
+
+cta:
+  title: 'Niste prepričani, kje začeti?'
+  desc: 'Opravite naš kviz za oceno znanja in poiščite prave vodnike in opremo za vašo raven.'
+  label: 'Stopite v stik →'
+  link: /contact

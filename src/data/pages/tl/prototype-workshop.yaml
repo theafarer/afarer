@@ -1,0 +1,95 @@
+meta:
+  title: 'Prototype Workshop — Buong-Sukat na Prototyping at Sea Trial ng SUP | {SITE}'
+  description: 'Mula CAD hanggang sa board na handa-na-sa-tubig sa loob ng 8-12 linggo. Nagtatayo, nagri-rig, at nagsasagawa ng sea trial ang aming Prototype Workshop ng mga custom inflatable SUP. Simulan ang iyong prototype project ngayon.'
+back_text: 'Bumalik sa R&D Center'
+home_label: 'Home'
+
+hero:
+  tagline: 'Lab 05'
+  title: 'Prototype Workshop'
+  subtitle: 'Mula CAD model hanggang sa board na handa-na-sa-tubig — itinayo, inayos, at napatunayan'
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp'
+  image_alt: 'Pagbubuo ng board sa prototype workshop ng Afarer'
+
+intro: "Ang isang CAD model, gaano man ito kadetalyado, ay hindi makapagsasabi kung paano talaga tutugon ang isang board hanggang hindi ito nakakakita ng tubig. Kaya naman ang aming Prototype Workshop ay dinisenyo upang isalin ang data ng engineering sa isang pisikal na board na handa-na-sa-tubig nang mabilis at tumpak hangga't maaari. Bawat bagong modelo ng Afarer — at bawat mahalagang custom build — ay dumadaan sa workshop na ito bago ikompromiso ang production tooling."
+
+content_html: |
+  <h2>Kung saan nagiging realidad ang disenyo</h2>
+  <p>Ang workshop ay kumpletong kagamitan para sa sabayang paggawa ng hull, rail, at rigging. Pinapapaikli ng parallel-workflow approach na ito ang prototype lead time sa 8-12 linggo mula sa engineering release, kumpara sa industriyal na karaniwan na 16-20 linggo. Kapag ang iyong aplikasyon ay nangangailangan ng espesyalisadong solusyon, makakapunta kami mula konsepto hanggang sa on-water validation sa mas mababa sa tatlong buwan.</p>
+
+  <h2>Mga kakayahan ng workshop</h2>
+  <table>
+    <thead><tr><th>Workstation</th><th>Kagamitan</th><th>Layunin</th></tr></thead>
+    <tbody>
+      <tr><td>Paggawa ng hull</td><td>CNC fabric cutter, heat-lamination press, drop-stitch core preparation station</td><td>Buong-sukat na produksyon ng hull sa lahat ng tatlong uri ng konstruksyon</td></tr>
+      <tr><td>Assembly ng rail &amp; chamber</td><td>RF welding press, hot-air tacking station, inflation test jig</td><td>Paggawa ng buong-sukat na rail at chamber assembly na may lahat ng baffle at valve</td></tr>
+      <tr><td>Rigging &amp; fitting</td><td>Fin-box routing jig, welding fixture para sa cargo-mount at handle, deck-pad cutting station</td><td>Kumpletong pagkakabit: fin, cargo mount, leash plug, handle, deck pad, valve</td></tr>
+      <tr><td>Instrumentation bay</td><td>GPS speed sensor, pressure transducer, accelerometer, thermocouple array, data-logger</td><td>Pagkabit at pag-calibrate ng instrumentation para sa sea trial</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Ang paglalakbay ng prototype — hakbang-hakbang</h2>
+  <ol>
+    <li><strong>Turnover ng engineering</strong> — Ang design package (3D model, FEA report, bill of materials, layup schedule) ay pormal na sinusuri ng workshop lead at ng project engineer. Anumang alalahanin sa pagmamanupaktura ay minamarka at inaayos bago magsimula ang paggupit.</li>
+    <li><strong>Produksyon ng hull</strong> — Ang hull ay itinayo ayon sa espesipikasyon ng engineering. Para sa single-layer construction: ang drop-stitch core ay nilalaminahan ng tinukoy na PVC skin. Para sa double-layer construction: ang karagdagang skin ay inilalagay sa ibabaw ng base laminate bago gupitin ang pattern. Para sa fused construction: ang mga parameter ng lamination ay kinakarga mula sa aprubadong process sheet at beripikado sa isang first-off coupon.</li>
+    <li><strong>Paggawa ng rail</strong> — Ang tela ay ginugupit gamit ang CNC-pattern template, pagkatapos ay RF-welded upang maging buong-sukat na rail at chamber. Bawat chamber ay pinipresyar sa test pressure at iniwan nang 24 h para sa paunang pagsasa-stabilize.</li>
+    <li><strong>Assembly &amp; rigging</strong> — Pinagsasama ang hull at rail. Ang fin box at cargo mount ay iniinstall, ang leash plug at carry handle ay inilalagay, ang inflation valve ay naka-torque, at ang deck pad ay inilalapat at ini-align.</li>
+    <li><strong>Mga static test</strong> — Bago lumangoy ang board sa tubig, ito ay sumasailalim sa: buoyancy check (buong karga + 30 % reserve), chamber pressure-hold test, valve leak-down test, at pull-test ng handle at mount.</li>
+    <li><strong>Programa ng sea trial</strong> — 20 oras ng pagsubok sa tubig, detalyado sa ibaba.</li>
+    <li><strong>Pagsusuri ng prototype</strong> — Isang pormal na sign-off meeting ang isinasagawa kasama ang mga koponan ng engineering, produksyon, at kalidad. Anumang kinakailangang pagbabago sa disenyo ay naka-dokumento at isinisingil sa production release.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20-Oras na Programa ng Sea Trial — Iskedyul ng Pagsubok</p>
+    <div class="space-y-2 text-sm">
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
+        <span class="flex-1">Familiarisation sa mababaw na tubig — low-speed tracking, pagliko, pagsusuri ng stance at trim</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">4 h</span>
+        <span class="flex-1">Speed trial — GPS-verified na top speed, cruise speed, sustained pace sa 3 stroke rate</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">Turning test — pivot-turn at sweep-turn radius, tugon ng board, port at starboard</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">Chop test — paulit-ulit na daan sa 0.5–1.0 m na chop; accelerometer sa posisyon ng rider stance</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">Stability test — static heel angle na may 4 rider na magkakaibang timbang, offset load sa starboard</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">Endurance run — 3 h tuloy-tuloy sa cruise pace; pagsubaybay sa chamber pressure, rail temperature, at pagkapagod ng rider</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
+        <span class="flex-1">Panghuling inspeksyon — post-trial na inspeksyon ng lahat ng component, higpitan/tignan ang lahat ng fastener, i-document ang mga natuklasan</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Custom prototyping para sa mga natatanging aplikasyon</h2>
+  <p>Sa Prototype Workshop nalulutas namin ang mga problema na hindi kayang hawakan ng mga karaniwang production board. Kasama sa mga kamakailang halimbawa ang:</p>
+  <ul>
+    <li>Isang high-visibility rescue SUP para sa isang search-and-rescue organisation, na nangangailangan ng integrated grab handle, gear mount para sa rescue equipment, at high-buoyancy hull para sa casualty recovery — lahat ay ginawang prototype, inayos, at sinubukan sa aming pasilidad.</li>
+    <li>Isang expedition touring SUP para sa isang hydrographic survey contractor, na may removable instrument mast, sealed gear port, at low-profile transducer mount na dinisenyo upang mabawasan ang drag.</li>
+    <li>Isang compact fishing SUP para sa isang resort fleet, kung saan ang prototype ay ginamit upang i-validate ang stability, gear rigging, at tibay sa ilalim ng pang-araw-araw na paggamit sa rental bago nakompromiso ang client sa isang fleet na apat.</li>
+  </ul>
+
+  <h2>Ang aming koponan ng prototyping</h2>
+  <p>Ang workshop ay pinapatakbo ng walong multi-skilled na marine technician, na bawat isa ay cross-trained sa hindi bababa sa dalawa sa tatlong pangunahing disiplina (hull, rail, rigging). Ang team lead ay isang master fabricator na may 16 taon ng karanasan mula custom one-off build hanggang production series. Bawat prototype ay may nakalaang project engineer na nagsisilbing tanging punto ng pakikipag-ugnayan ng client sa buong proseso ng paggawa at pagsubok.</p>
+
+  <h2>Pakikilahok ng client</h2>
+  <p>Hinihikayat namin nang aktibo ang aming mga client na dumalo sa mga pangunahing milestone sa panahon ng paggawa ng prototype — lalo na ang paunang fit-out review at ang sea trial. Napakahalaga ng iyong operational feedback sa mga yugtong ito sa pag-fine-tune ng board bago ito pumasok sa produksyon. Hindi kami gumagawa nang mag-isa; gumagawa kami sa pakikipagtulungan sa iyo.</p>
+  <p>Ang 20-oras na sea trial ay isa ring pagkakataon para sa iyong koponan na maging pamilyar sa paghawak ng board, deck layout, at mga kinakailangan sa maintenance, upang masiguro ang maayos na transisyon sa serbisyo kapag naihatid na ang mga production board.</p>
+
+cta:
+  title: 'Simulan ang iyong prototype project'
+  subtitle: 'Sabihin sa amin ang board na kailangan mo at magmumungkahi kami ng plano sa pag-develop ng prototype.'
+  button_text: 'Makipag-ugnayan sa aming prototyping team'
+  button_link: /contact

@@ -1,0 +1,144 @@
+meta:
+  title: Kapcsolat — Partnerségi és termékmegkeresések | {SITE}
+  description: Vegye fel a kapcsolatot az afarertel partnershipség, co-brand és saját márkás megkeresések vagy professzionális flották ügyében. Felfújható SUP márka, 2 munkanapon belül válaszolunk.
+  keywords:
+    - sup forgalmazói árajánlat
+    - professzionális sup beszállító
+    - kapcsolat sup gyártóval
+hero_text:
+  tagline: Kapcsolat
+  title: VEGYE FEL VELÜNK A KAPCSOLATOT
+contact_form:
+  id: form
+  title: Küldjön üzenetet
+  subtitle: Árajánlatok, műszaki kérdések vagy partnerségi megkeresések esetén írjon nekünk. Egy munkanapon belül válaszolunk.
+  email_to: info@afarer.com
+  submit_button: Megkeresés küldése → Árajánlat kérése
+  success_message: Köszönjük! Üzenete megérkezett a postaládánkba. Egy munkanapon belül válaszolunk.
+  error_message: Hiba történt az üzenet küldése közben. Kérjük, próbálja újra, vagy írjon nekünk közvetlenül e-mailben.
+  default_country_code: '+1'
+  captcha:
+    label: 'Levélszemét ellen: kérjük, oldja meg a következőt'
+  fields:
+    - name: country
+      label: Ország
+      row: 1
+      type: select
+      optionsKey: countries
+      step: 1
+    - name: orderVolume
+      label: Becsült rendelési mennyiség
+      row: 2
+      type: select
+      options:
+        - value: ''
+          label: Válassza ki a becsült mennyiséget...
+        - value: sample
+          label: Csak minták / prototípusok
+        - value: 5-10
+          label: 5–10 egység (standard MOQ)
+        - value: 100-500
+          label: 100–500 egység
+        - value: 500-plus
+          label: 500+ egység (mennyiségi árazás)
+      step: 1
+    - name: customization
+      label: Szükséges testreszabás?
+      row: 3
+      type: select
+      options:
+        - value: ''
+          label: Válassza ki a testreszabás típusát...
+        - value: none
+          label: Standard termék (testreszabás nélkül)
+        - value: logo
+          label: Csak egyedi logó / márkázás
+        - value: full
+          label: Teljes co-brand (méret, szín, grafika, csomagolás)
+        - value: consultation
+          label: Nem biztos benne — konzultációra van szükségem
+      step: 1
+    - name: productInterest
+      label: Érdeklődésre tartott termékkategóriák
+      row: 4
+      type: select
+      options:
+        - value: ''
+          label: Válasszon termékkategóriát...
+        - value: all
+          label: Minden termék / teljes katalógus
+        - value: sup
+          label: SUP deszkák / paddleboardok
+        - value: safety
+          label: Biztonsági felszerelés / mentőmellények
+        - value: accessory
+          label: Kiegészítők (pumpák, evezők, táskák)
+      step: 1
+    - name: firstName
+      label: Keresztnév
+      row: 1
+      step: 2
+    - name: lastName
+      label: Vezetéknév
+      row: 1
+      step: 2
+    - name: companyName
+      label: Cégnév
+      row: 2
+      step: 2
+    - name: email
+      label: E-mail
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: TELEFON
+      row: 3
+      type: tel
+      withCountryCode: true
+      step: 2
+    - name: address
+      label: Cím
+      row: 4
+      step: 2
+    - name: zip
+      label: Irányítószám
+      row: 5
+      step: 2
+    - name: subject
+      label: Tárgy
+      row: 1
+      step: 3
+    - name: message
+      label: Üzenet
+      row: 2
+      type: textarea
+      rows: 6
+      step: 3
+features2_other_ways:
+  title: Egyéb módok a elérésünkre
+  columns: 3
+  items:
+    - title: Értékesítési megkeresések
+      description: Árajánlatok, konfigurációk, kereskedői jelentkezések és tömeges rendelések.
+      icon: tabler:shopping-bag
+    - title: Műszaki támogatás
+      description: Garancia, javítások, cserealkatrészek és üzemeltetési kérdések.
+      icon: tabler:tool
+    - title: Sajtó és partnerségek
+      description: Médiaanyagok, szponzoráció és iparági együttműködés.
+      icon: tabler:news
+    - title: Telefon
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: E-mail
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: Székhely
+      description: Gazdasági Fejlesztési Zóna, Laixi, Qingdao, Kína, 266600
+      icon: tabler:map-pin
+map:
+  title: Elhelyezkedésünk
+  subtitle: Látogasson el hozzánk a székhelyünkre
+  address: Gazdasági Fejlesztési Zóna, Laixi, Qingdao, Kína, 266600
+  zoom: 15

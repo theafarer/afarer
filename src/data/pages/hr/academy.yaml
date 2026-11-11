@@ -1,0 +1,181 @@
+meta:
+  title: 'Akademija — SUP vodiči i trening veslanja | {SITE}'
+  description: 'afarer Akademija: vodiči o napuhivim daskama za veslanje, tehnike stand up paddlea, sigurnost na vodi i znanje o materijalima za početnike i profesionalce.'
+  keywords:
+    - 'nauči stand up paddle'
+    - 'sup vodič za početnike'
+    - 'osnove sup daske'
+    - 'sup tehnika'
+    - 'sup lekcije'
+hero:
+  tagline: 'afarer Akademija'
+  title: 'Centar za učenje'
+  subtitle: 'Vodiči i tutorijali za svaku razinu vještine — od osnova SUP-a do naprednih tehnika spašavanja'
+
+categories:
+  - level: 'Početnik'
+    color: from-green-500 to-emerald-600
+    badge: bg-green-100 text-green-700
+    guides:
+      - title: 'Osnove SUP-a'
+        desc: 'Naučite osnove stand up paddleboardinga — stav, tehnika zaveslaja i ravnoteža.'
+        slug: beginner-sup-guide
+      - title: 'Tehnike veslanja'
+        desc: 'Zaveslaj naprijed, pometni zaveslaj, privlačni zaveslaj i niska oslona — savladajte bitne kretnje veslom.'
+        slug: sup-paddle-guide
+      - title: 'Sigurnost prije svega'
+        desc: 'Osnovne sigurnosne prakse uključujući provjere vremenskih uvjeta, upotrebu spasilačkog prsluka, pravila za leash i samospašavanje.'
+        slug: sup-safety-guide
+  - level: 'Srednja razina'
+    color: from-blue-500 to-indigo-600
+    badge: bg-blue-100 text-blue-700
+    guides:
+      - title: 'Osnove touringa'
+        desc: 'Planiranje višesatnog veslanja — navigacija, hidratacija, tempo i čitanje prognoza vjetra.'
+        slug: touring-sup-guide
+      - title: 'Čitanje vremena'
+        desc: 'Tumačite pomorske prognoze, prepoznajte obrasce oblaka i razumijte utjecaj vjetra na vodu.'
+        slug: weather-planning-water-sports
+      - title: 'Osnove navigacije'
+        desc: 'Čitanje pomorskih karata, upotreba kompasa, GPS točke i planiranje ruta za obalno veslanje.'
+        slug: sup-navigation-guide
+      - title: 'Svijest o plimi i oseki'
+        desc: 'Razumijevanje ciklusa plime i oseke, morskih struja i njihova utjecaja na vrijeme isplovljavanja i izbor rute.'
+        slug: understanding-tides
+  - level: 'Napredna razina'
+    color: from-purple-500 to-violet-600
+    badge: bg-purple-100 text-purple-700
+    guides:
+      - title: 'Planiranje višednevnih izleta'
+        desc: 'Logistika ekspedicija — odabir opreme, planiranje hrane, sigurnosni protokoli i kontakti za hitne slučajeve.'
+        slug: sup-travel-guide
+      - title: 'Tehnike spašavanja'
+        desc: 'Samospašavanje, T-spašavanje i protokoli vuče na otvorenoj vodi.'
+        slug: sup-self-rescue
+      - title: 'Noćno veslanje'
+        desc: 'Navigacija nakon sumraka — zahtjevi za osvjetljenje, pamćenje rute, komunikacija u grupi i svijest o opasnostima.'
+        slug: ocean-safety-basics
+  - level: 'Održavanje'
+    color: from-amber-500 to-orange-600
+    badge: bg-amber-100 text-amber-700
+    guides:
+      - title: 'Čišćenje i njega'
+        desc: 'Ispiranje slatkom vodom, zaštita od UV zračenja, sprječavanje plijesni i pravilne tehnike sušenja nakon svake sesije.'
+        slug: inflatable-sup-maintenance
+      - title: 'Vodič za skladištenje'
+        desc: 'Najbolje prakse skladištenja napuhivih SUP dasaka — ispuhivanje, presavijanje, kontrola temperature i vijek trajanja.'
+        slug: inflatable-sup-storage
+      - title: 'Osnove popravaka'
+        desc: 'Popravite male probušene rupice, curenja po šavovima i probleme s ventilima pomoću PVC kompletâ za popravak i tehnika krpljenja.'
+        slug: inflatable-sup-repair
+      - title: 'Održavanje ventila'
+        desc: 'Prepoznajte vrste ventila (Halkey-Roberts, Boston, Leafield), očistite nečistoće i zamijenite neispravna vratilca.'
+        slug: sup-pump-guide
+
+knowledge_center_tagline: 'Centar znanja'
+knowledge_center_title: 'Vodiči za pomorsku opremu i industriju'
+knowledge_center_subtitle: 'Stručno znanje i vodiči za kupnju namijenjeni pomorskim profesionalcima, operaterima flota i ljubiteljima vodenih sportova.'
+
+knowledge_sections:
+  - title: 'Znanje o SUP daskama'
+    tagline: 'Vodiči za stand up paddleboarding'
+    desc: 'Sve o SUP daskama — dizajn daske, materijali, odabir veličine, održavanje i savjeti za kupnju za rekreativnu i komercijalnu upotrebu.'
+    guides:
+      - title: 'Kako odabrati pravu SUP dasku'
+        desc: 'Potpuni vodič za odabir SUP daske — veličina, volumen, materijal, oblik i namjena.'
+        href: '/learn/sup'
+      - title: 'Napuhiva ili tvrda SUP daska'
+        desc: 'Napuhiva SUP daska naspram tvrde epoksidne daske — prenosivost, trajnost, performanse i vrijednost u usporedbi.'
+        href: '/compare/inflatable-vs-hardboard'
+      - title: 'All-Around, Touring ili Yoga SUP'
+        desc: 'Različite vrste SUP dasaka — standardi izrade, oblici, veličine i preporučene namjene.'
+        href: '/learn/sup'
+      - title: 'Drop-Stitch naspram tradicionalne izrade'
+        desc: 'Usporedite drop-stitch i tradicionalnu izradu SUP dasaka po težini, cijeni, trajnosti i krutosti.'
+        href: '/learn/drop-stitch-core'
+  - title: 'Vodič o napuhivim SUP daskama'
+    tagline: 'Znanje o napuhivim SUP daskama'
+    desc: 'Sveobuhvatni vodiči o napuhivim SUP daskama — PVC materijali, drop-stitch izrada, sigurnosni standardi i najbolje prakse održavanja.'
+    guides:
+      - title: 'Vodič o PVC materijalima'
+        desc: 'Definitivni vodič o PVC materijalima koji se koriste u izradi napuhivih SUP dasaka.'
+        href: '/learn/materials'
+      - title: 'Kako se izrađuju napuhive SUP daske'
+        desc: 'Proizvodni proces — rezanje materijala, spajanje drop-stitch jezgre, izrada šavova, ispitivanje tlaka i kontrola kvalitete.'
+        href: '/learn/inflatable-technology'
+      - title: 'Vodič o sigurnosti na SUP dasci'
+        desc: 'Sigurnosni standardi, nosivost, pravilno napuhivanje, provjere prije isplovljavanja i postupci u hitnim slučajevima.'
+        href: '/learn/water-safety'
+      - title: 'Održavanje SUP dasaka'
+        desc: 'Čišćenje, skladištenje, zaštita od UV zračenja i popravak napuhivih SUP dasaka.'
+        href: '/v2/inflatable-sup-maintenance'
+  - title: 'Znanje o SUP daskama'
+    tagline: 'Središte za SUP daske'
+    desc: 'Tehnički vodiči o vrstama SUP dasaka, materijalima, metodama izrade, održavanju i sigurnosti.'
+    guides:
+      - title: 'Vrste SUP dasaka'
+        desc: 'All-around, touring, yoga, sportske i dječje SUP daske — upoznajte razlike i odaberite pravu.'
+        href: '/learn/sup'
+      - title: 'Drop-Stitch tehnologija'
+        desc: 'Kako tisuće unutarnjih niti stvaraju krute napuhive konstrukcije pod visokim tlakom.'
+        href: '/learn/drop-stitch-core'
+      - title: 'Referenca materijala'
+        desc: 'Denier ocjene PVC-a, težine tkanina, otpornost na UV zračenje i materijali pomorske klase objašnjeni.'
+        href: '/learn/materials'
+      - title: 'Vodič za kupnju SUP daske'
+        desc: 'Usporedite različite vrste SUP dasaka za različite namjene i razine vještine.'
+        href: '/learn/sup'
+  - title: 'Znanje o SUP-u'
+    tagline: 'Vodiči za stand up paddleboarding'
+    desc: 'Sve o SUP daskama — napuhive naspram krutih, dimenzije daske, tehnologija materijala i stručni savjeti za sve razine vještine.'
+    guides:
+      - title: 'Napuhiva ili tvrda SUP daska'
+        desc: 'Usporedite iSUP daske i tvrde epoksidne daske po prenosivosti, trajnosti, performansama i vrijednosti.'
+        href: '/learn/sup'
+      - title: 'Vodič o dimenzijama SUP daske'
+        desc: 'Kako duljina, širina i debljina utječu na stabilnost, brzinu i upravljivost.'
+        href: '/learn/sup'
+      - title: 'Održavanje i njega SUP daske'
+        desc: 'Čišćenje, skladištenje, zaštita od UV zračenja i savjeti za popravak napuhivih SUP dasaka.'
+        href: '/v2/inflatable-sup-maintenance'
+      - title: 'Odabir vaše prve SUP daske'
+        desc: 'Vodič za početnike za odabir prave daske za stand up paddleboarding prema vašoj težini, razini vještine i namjeni.'
+        href: '/learn/sup'
+  - title: 'Vodič za iznajmljivanje'
+    tagline: 'Upravljanje flotom za iznajmljivanje'
+    desc: 'Vodiči o izgradnji i upravljanju flotama SUP dasaka za iznajmljivanje za plažne kioske, centre vodenih sportova i ugostiteljske objekte.'
+    guides:
+      - title: 'Izgradnja flote za iznajmljivanje'
+        desc: 'Kako odabrati prave SUP daske za vaše poslovanje iznajmljivanja — trajnost, veličine i povrat ulaganja.'
+        href: '/solutions/rental-operators'
+      - title: 'Vodič za održavanje flote'
+        desc: 'Osnovne prakse održavanja za maksimiziranje vijeka trajanja dasaka i smanjenje zastoja flota za iznajmljivanje.'
+        href: '/solutions/rental-operators'
+  - title: 'Vodič za odmarališta i ugostiteljstvo'
+    tagline: 'Vodene aktivnosti za ugostiteljstvo'
+    desc: 'Vodiči o pokretanju i upravljanju SUP programima za odmarališta, hotele i odredišta uz vodu.'
+    guides:
+      - title: 'Pokretanje SUP programa u odmaralištu'
+        desc: 'Čimbenici koje treba uzeti u obzir pri lansiranju SUP aktivnosti za goste — veličina flote, osoblje i model prihoda.'
+        href: '/solutions/resorts-hotels'
+      - title: 'SUP naspram drugih vodenih aktivnosti'
+        desc: 'Usporedite SUP programe s drugim vodenim sportovima po doživljaju gostiju i operativnoj učinkovitosti.'
+        href: '/learn/sup'
+  - title: 'Vodič za maloprodaju i distribuciju'
+    tagline: 'Poslovna partnerstva u SUP-u'
+    desc: 'Vodiči o postajanju maloprodajnim partnerom ili distributerom SUP dasaka — planiranje zaliha, pozicioniranje na tržištu i strategije rasta.'
+    guides:
+      - title: 'Postanite maloprodajni prodavač SUP dasaka'
+        desc: 'Kako odabrati linije proizvoda, upravljati zalihama i prodavati SUP daske u vašoj maloprodaji.'
+        href: '/solutions/retail-partners'
+      - title: 'SUP daske za komercijalno poslovanje'
+        desc: 'Zašto su napuhive SUP daske svestran proizvod za komercijalne flote, poslovanja iznajmljivanja i profesionalne operatere.'
+        href: '/solutions/rental-operators'
+
+read_guide: 'Pročitajte vodič →'
+
+cta:
+  title: 'Niste sigurni odakle početi?'
+  desc: 'Riješite naš kviz procjene vještina kako biste pronašli odgovarajuće vodiče i opremu za svoju razinu.'
+  label: 'Kontaktirajte nas →'
+  link: /contact

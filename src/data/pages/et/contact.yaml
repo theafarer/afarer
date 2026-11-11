@@ -1,0 +1,144 @@
+meta:
+  title: Kontakt — partnerluse ja toodete päringud | {SITE}
+  description: Võtke ühendust afarerga partnerluse, kaasbrändi ja eramärgise päringute või professionaalsete laevastike kohta. Täispuhutav SUP-bränd, vastame 2 tööpäeva jooksul.
+  keywords:
+    - sup distributor quote
+    - professionaalne SUP-i tarnija
+    - võta ühendust SUP-i tootjaga
+hero_text:
+  tagline: Kontakt
+  title: VÕTA MEIEGA ÜHENDUST
+contact_form:
+  id: form
+  title: Saada meile sõnum
+  subtitle: Hinnapakkumiste, tehniliste küsimuste või partnerluspäringute jaoks kirjuta meile. Vastame ühe tööpäeva jooksul.
+  email_to: info@afarer.com
+  submit_button: Saada päring → Hangi hinnapakkumine
+  success_message: Aitäh! Teie sõnum on jõudnud meie postkasti. Vastame ühe tööpäeva jooksul.
+  error_message: Sõnumi saatmisel läks midagi valesti. Proovige uuesti või saatke meile otse e-kiri.
+  default_country_code: '+1'
+  captcha:
+    label: 'Rämpspostivastane kaitse: palun lahendage järgnev'
+  fields:
+    - name: country
+      label: Riik
+      row: 1
+      type: select
+      optionsKey: countries
+      step: 1
+    - name: orderVolume
+      label: Eeldatav tellimuse maht
+      row: 2
+      type: select
+      options:
+        - value: ''
+          label: Valige oma eeldatav maht...
+        - value: sample
+          label: Ainult proovid / prototüübid
+        - value: 5-10
+          label: 5–10 ühikut (standardne MOQ)
+        - value: 100-500
+          label: 100–500 ühikut
+        - value: 500-plus
+          label: 500+ ühikut (mahu hinnad)
+      step: 1
+    - name: customization
+      label: Kas vajate kohandamist?
+      row: 3
+      type: select
+      options:
+        - value: ''
+          label: Valige kohandamise tüüp...
+        - value: none
+          label: Standardtoode (ilma kohandamiseta)
+        - value: logo
+          label: Ainult kohandatud logo / bränding
+        - value: full
+          label: Täielik kaasbränd (suurus, värv, graafika, pakend)
+        - value: consultation
+          label: Pole kindel — vajan nõustamist
+      step: 1
+    - name: productInterest
+      label: Huvitavad tootekategooriad
+      row: 4
+      type: select
+      options:
+        - value: ''
+          label: Valige tootekategooria...
+        - value: all
+          label: Kõik tooted / täielik kataloog
+        - value: sup
+          label: SUP-lauad / sõudelauad
+        - value: safety
+          label: Ohutusvarustus / päästevestid
+        - value: accessory
+          label: Tarvikud (pumbad, sõudjad, kotid)
+      step: 1
+    - name: firstName
+      label: Eesnimi
+      row: 1
+      step: 2
+    - name: lastName
+      label: Perekonnanimi
+      row: 1
+      step: 2
+    - name: companyName
+      label: Ettevõtte nimi
+      row: 2
+      step: 2
+    - name: email
+      label: E-post
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: TELEFON
+      row: 3
+      type: tel
+      withCountryCode: true
+      step: 2
+    - name: address
+      label: Aadress
+      row: 4
+      step: 2
+    - name: zip
+      label: Postiindeks
+      row: 5
+      step: 2
+    - name: subject
+      label: Teema
+      row: 1
+      step: 3
+    - name: message
+      label: Sõnum
+      row: 2
+      type: textarea
+      rows: 6
+      step: 3
+features2_other_ways:
+  title: Muud viisid meieni jõudmiseks
+  columns: 3
+  items:
+    - title: Müügi päringud
+      description: Hinnapakkumised, konfiguratsioonid, edasimüügi taotlused ja hulgitellimused.
+      icon: tabler:shopping-bag
+    - title: Tehniline tugi
+      description: Garantii, parandused, varuosad ja kasutusküsimused.
+      icon: tabler:tool
+    - title: Press ja partnerlused
+      description: Meediakomplektid, sponsorlus ja tööstuskoostöö.
+      icon: tabler:news
+    - title: Telefon
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: E-post
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: Peakorter
+      description: Majandusarendustsoon, Laixi, Qingdao, Hiina, 266600
+      icon: tabler:map-pin
+map:
+  title: Meie asukoht
+  subtitle: Külastage meid meie peakorteris
+  address: Majandusarendustsoon, Laixi, Qingdao, Hiina, 266600
+  zoom: 15

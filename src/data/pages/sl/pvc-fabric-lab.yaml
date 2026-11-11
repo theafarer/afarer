@@ -1,0 +1,102 @@
+meta:
+  title: 'Laboratorij za tkanine PVC — preskušanje materialov za napihljive deske SUP | {SITE}'
+  description: 'Znanstveno preskušanje materialov od vlakna do končne deske. Natezna trdnost, vremenska odpornost na UV, prožnost pri nizkih temperaturah in odpornost proti obrabi za tkanine iz PVC. Stopite v stik z našo laboratorijsko ekipo za specifikacijo tkanine po meri.'
+back_text: 'Nazaj na center za R&D'
+home_label: 'Domov'
+
+hero:
+  tagline: 'Laboratorij 01'
+  title: 'Laboratorij za tkanine PVC'
+  subtitle: 'Znanstveno preskušanje materialov — od vlakna do končne deske'
+  image: 'https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp'
+  image_alt: 'Laboratorij Afarer za preskušanje materialov iz tkanine PVC'
+
+intro: 'Tkanina palube in robov je najkritičnejši material v napihljivi deski SUP. Zdržati mora stalno izpostavljenost UV-žarkom, ponavljajoče se cikle napihovanja, obrabo ob pomolih in razbitinah ter skrajne temperaturne nihaje — vse to, pri čemer leta ohranja svojo strukturno celovitost. Pri Afarerju je naš laboratorij za tkanine PVC izključno posvečen karakterizaciji, validaciji in nenehnemu izboljševanju tkanin, ki jih uporabljamo v vsaki deski, ki jo izdelamo.'
+
+content_html: |
+  <h2>Temelj vsake napihljive deske SUP</h2>
+  <p>Ne zanašamo se le na podatkovne liste dobaviteljev. Vsako serijo tkanine PVC, ki vstopi v našo delavnico, neodvisno preskusimo v lastnem laboratoriju. S tem je zagotovljeno, da je specifikacija materiala, ki jo objavimo, zmogljivost materiala, ki jo prejmete — serija za serijo, leto za letom.</p>
+
+  <h2>Standardizirana preskusna oprema</h2>
+  <p>Naš laboratorij za tkanine je opremljen z industrijskimi inštrumenti, ki ustrezajo preskusnim metodam ISO, ASTM in EN:</p>
+  <table>
+    <thead><tr><th>Oprema</th><th>Izmerjeni parametri</th><th>Standard</th></tr></thead>
+    <tbody>
+      <tr><td>Univerzalna natezna naprava (50 kN)</td><td>Pretrgalna sila, raztezek ob pretrgu, širjenje strga</td><td>ISO 1421 / ASTM D751</td></tr>
+      <tr><td>Komora za vremenske preizkuse s ksenonsko oblo</td><td>Odpornost na UV (sprememba barve, ohranitev trdnosti po 2000 h)</td><td>ISO 4892 / ASTM G155</td></tr>
+      <tr><td>Preizkuševalec prožnosti pri nizkih temperaturah</td><td>Točka razpoke pri -30 °C do -50 °C</td><td>ISO 4675 / ASTM D2136</td></tr>
+      <tr><td>Taberjev preizkuševalec obrabe</td><td>Izguba mase po 1000 ciklih (kolesce CS-10)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
+      <tr><td>Merilnik debeline (digitalni, ločljivost 0,001 mm)</td><td>Enakomernost po širini zvitka</td><td>ISO 2286-3</td></tr>
+      <tr><td>Preizkuševalec hidrostatskega stolpca</td><td>Odpornost na prodiranje vode</td><td>ISO 811</td></tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-gray-500">* Vso opremo letno umerjajo akreditirani laboratoriji tretjih oseb.</p>
+
+  <h2>Od podatkov do odločitve: tipičen potek preskusa</h2>
+  <p>Ko prispe nov kandidat za tkanino, sledi standardiziranemu sedemstopenjskemu postopku kvalifikacije:</p>
+  <ol>
+    <li><strong>Pregled ob prejemu</strong> — vizualni pregled površinskih napak, prebodov in skladnosti z merami.</li>
+    <li><strong>Kartiranje debeline</strong> — 20-točkovno merjenje po zvitku; za sprejem je zahtevan CV &lt; 3 %.</li>
+    <li><strong>Natezno preskušanje</strong> — 5 vzorcev v smeri osnove in poteka. Najmanj 3500 N/50 mm za PVC 1100 dtex.</li>
+    <li><strong>UV-pogojenje</strong> — 1000 h izpostavljenosti v ksenonski komori; zahtevana je najmanj 80-odstotna ohranitev trdnosti.</li>
+    <li><strong>Hladna razpoka</strong> — 4 h pri -35 °C, nato upogib za 180° čez ročnik s premerom 25 mm. Brez vidnih razpok.</li>
+    <li><strong>Odpornost proti obrabi</strong> — 1000 ciklov, izguba mase ≤ 0,05 g.</li>
+    <li><strong>Potrditev odobritve</strong> — tkanina se v proizvodnjo sprosti šele, ko so uspešno opravljena vsa sedem preverjanj.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Tipični PVC 1100 dtex — ohranitev natezne trdnosti po izpostavitvi UV</p>
+    <div class="flex items-end gap-3 h-40">
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-600 rounded-t" style="height:100%"></div>
+        <span class="text-xs mt-1">0 h<br />100%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-500 rounded-t" style="height:95%"></div>
+        <span class="text-xs mt-1">500 h<br />95%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-400 rounded-t" style="height:88%"></div>
+        <span class="text-xs mt-1">1000 h<br />88%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-300 rounded-t" style="height:82%"></div>
+        <span class="text-xs mt-1">2000 h<br />82%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-gray-300 rounded-t" style="height:65%"></div>
+        <span class="text-xs mt-1">Konkurenca<br />~65%</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Naša tkanina PVC 1100 dtex po 2000 h izpostavitve ksenonski obli ohrani &gt; 80 % natezne trdnosti, v primerjavi s tipičnimi industrijskimi razredi, ki padejo pod 70 %.</p>
+  </div>
+
+  <h2>Naša profesionalna ekipa</h2>
+  <p>V laboratoriju sta zaposlena dva materialna inženirja s polnim delovnim časom, vsak s diplomo s področja polimerne znanosti ali tekstilnega inženirstva ter najmanj šestimi leti industrijskih izkušenj. Podpira ju trije tehniki, ki izvajajo vsakodnevno preskušanje in beleženje podatkov. Ekipa redno sodeluje v medlaboratorijskih izmenjalnih preizkusih, ki jih organizira Mednarodna organizacija za standardizacijo (ISO), za validacijo natančnosti naših preskusnih metod.</p>
+
+  <h2>Reševanje vaših najzahtevnejših izzivov z materiali</h2>
+  <p>Vsako pomorsko okolje je drugačno. Najemna deska SUP pod tropskim soncem se sooča z povsem drugačnimi obremenitvami z UV in temperaturo kot deska za jezero na severnih zemljepisnih širinah. Naš laboratorij za tkanine vam pomaga izbrati — ali razviti — specifikacijo tkanine, optimizirano za vaš operativni profil.</p>
+  <p>Nedavne rešitve po meri vključujejo:</p>
+  <ul>
+    <li>Mešanica PVC z visoko odpornostjo proti obrabi za vojaško stranko, katere deske se redno spuščajo v vodo s koralnih in kamnitih plaž (+40 % življenjske dobe glede na obrabo).</li>
+    <li>Formulacija PVC za nizke temperature za arktično ekspedicijo, preskušena do -50 °C brez krhkosti.</li>
+    <li>Barvno stabilizirana oranžna tkanina za floto reševalnih desk, ki ohranja vidljivost po 3 letih izpostavljenosti tropskemu soncu.</li>
+  </ul>
+  <p>Ne prodajamo tkanin "s police" v upanju, da bodo delovale. Preskušamo, validiramo in priporočamo — ali ustvarimo — rešitev po meri za vaš specifični misijski profil. To je razlika Afarer.</p>
+
+  <h2>Kako vam stojimo ob strani</h2>
+  <p>Ko nam prinesete izziv s področja materialov, lahko pričakujete naslednje:</p>
+  <ol>
+    <li><strong>Svetovanje</strong> — pogovorimo se o vašem okolju uporabe, ciljih zmogljivosti in proračunu.</li>
+    <li><strong>Predlog</strong> — izdela se preskusni načrt z jasnimi merili uspešnosti/neuspeha in časovnim okvirom.</li>
+    <li><strong>Izvedba</strong> — naš laboratorij izvede preskuse in izdela podrobno poročilo s surovimi podatki in primerjalno analizo.</li>
+    <li><strong>Priporočilo</strong> — predstavimo specifikacijo tkanine, vključno z alternativnimi možnostmi, če več materialov izpolnjuje vaše zahteve.</li>
+    <li><strong>Nadaljnje spremljanje</strong> — po dobavi ostajamo na voljo za podporo morebitnim vprašanjem o materialih med uporabo.</li>
+  </ol>
+  <p>Naš cilj ni preprosto prodati vam desko. Cilj je zagotoviti, da deska, ki jo prejmete, zanesljivo deluje v razmerah, v katerih veslate — in to se začne pri tkanini.</p>
+
+cta:
+  title: 'Potrebujete specifikacijo tkanine po meri?'
+  subtitle: 'Stopite v stik z našo ekipo za materialno inženirstvo in se pogovorite o svojih zahtevah.'
+  button_text: 'Stopite v stik z našo laboratorijsko ekipo'
+  button_link: /contact

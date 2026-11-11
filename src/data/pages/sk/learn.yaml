@@ -1,0 +1,81 @@
+meta:
+  title: 'Learn — SUP a veslovanie | {SITE}'
+  description: 'Učte sa s afarer: tutoriály pre nafukovacie SUP, techniky veslovania, základy vybavenia a námorné vzdelávanie pre nadšencov aj podniky.'
+  keywords:
+    - 'naučiť sa sup'
+    - 'tutoriál paddle board'
+    - 'vzdelávanie nafukovacie sup'
+    - 'techniky veslovania'
+hero:
+  tagline: 'Vedomosti o objavovaní vôd'
+  title: 'Learn'
+  subtitle: |
+    Sprievodcovia, tutoriály a hlbšie pohľady — všetko, čo potrebujete na sebavedomé<br />
+    objavovanie vôd. Od výberu prvého SUP po zvládnutie pokročilých techník.
+  taglineSection: 'Vedomosti pre každého veslára. Od začiatočníka po profesionála.'
+
+featured:
+  tagline: 'Vybrané témy'
+  title: 'Začnite svoju učebnú cestu'
+  subtitle: 'Či ste nováčikom vo vodných športoch, alebo sa chcete posunúť vyššie, naše sprievodcovia vás pokryjú.'
+  items:
+    - title: 'Základy SUP'
+      description: 'Všetko, čo začiatočník potrebuje vedieť — typy dosiek, dĺžka vesla, postoj a tipy na prvý deň.'
+      icon: 'tabler:lifebuoy'
+      href: '/learn/sup'
+    - title: 'Nafukovacie vs tvrdé dosky'
+      description: 'Ktorá je pre vás tá pravá? Porovnávame prenosnosť, výkon, odolnosť a cenu vedľa seba.'
+      icon: 'tabler:arrows-left-right'
+      href: '/compare/inflatable-vs-hardboard'
+    - title: 'Bezpečnosť na vode'
+      description: 'Základné bezpečnostné vedomosti, ktoré by mal mať každý veslár — počasie, PFD, sebazáchrana a ďalšie.'
+      icon: 'tabler:shield'
+      href: '/learn/water-safety'
+    - title: 'Sprievodca materiálmi'
+      description: 'Triedy PVC, technológia drop-stitch, hodnoty denier — pochopte, z čoho je vaše vybavenie vyrobené.'
+      icon: 'tabler:flask'
+      href: '/learn/materials'
+    - title: 'Sprievodca veľkosťou SUP'
+      description: 'Nájdite správnu dĺžku, šírku a objem dosky podľa vašej hmotnosti, zručností a štýlu veslovania.'
+      icon: 'tabler:ruler'
+      href: '/size-guide'
+    - title: 'Stredne pokročilé techniky'
+      description: 'Zvýšte úroveň svojho veslovania s pokročilými zábermi, technikami otáčania a zvládaním rozbúrenej vody.'
+      icon: 'tabler:droplet'
+      href: '/learn/intermediate-techniques'
+
+categories:
+  tagline: 'Kategórie'
+  title: 'Preskúmajte podľa témy'
+  subtitle: 'Všetok vzdelávací obsah usporiadaný podľa úrovne zručností a záujmu.'
+  columns:
+    - title: 'Začiatočník'
+      items:
+        - 'Základy SUP — začnite tu'
+        - 'Nafukovacie vs tvrdé dosky'
+        - 'Základy bezpečnosti na vode'
+        - 'Ako si vybrať svoje SUP'
+        - 'Sprievodca čerpaním a balením'
+    - title: 'Stredná úroveň'
+      items:
+        - 'Techniky veslovania'
+        - 'Nafukovacia technológia'
+        - 'Referencia materiálov'
+        - 'Porovnanie tried PVC'
+        - 'Vysvetlenie jadra Drop-Stitch'
+    - title: 'Pokročilí a profesionáli'
+      items:
+        - 'Prevádzka flotíl'
+        - 'Vybavenie komerčnej triedy'
+        - 'Protokoly bezpečnosti a záchrany'
+        - 'Custom zostavy a OEM'
+
+cta:
+  title: 'Máte ešte otázky?'
+  subtitle: 'Opýtajte sa nášho AI sprievodcu na personalizované odpovede o vybavení, bezpečnosti a technikách.'
+  actions:
+    - variant: primary
+      text: 'Spýtajte sa vodného poradcu AI'
+      href: '/ai-answer-center'
+    - text: 'Prechádzať všetky sprievodcov'
+      href: '/academy'

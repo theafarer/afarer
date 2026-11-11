@@ -1,0 +1,102 @@
+meta:
+  title: 'PVC auduma laboratorija — materiālu testēšana piepūšamajiem SUP dēļiem | {SITE}'
+  description: 'Zinātniska materiālu testēšana no šķiedras līdz gatavam dēlim. Stiepes izturība, UV atmosfēras iedarbe, elastība zemā temperatūrā un pretberzes izturība PVC audumiem. Sazinieties ar mūsu laboratorijas komandu par pielāgotu auduma specifikāciju.'
+back_text: 'Atpakaļ uz Pētniecības un attīstības centru'
+home_label: 'Sākums'
+
+hero:
+  tagline: 'Laboratorija 01'
+  title: 'PVC auduma laboratorija'
+  subtitle: 'Zinātniska materiālu testēšana — no šķiedras līdz gatavam dēlim'
+  image: 'https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp'
+  image_alt: 'Afarer PVC auduma materiālu testēšanas laboratorija'
+
+intro: 'Klāja un sānu malu audums ir vissvarīgākais materiāls piepūšamajā SUP dēlī. Tam jāiztur pastāvīga UV iedarbība, atkārtoti piepūšanas cikli, berze pret piestātnēm un gružiem, kā arī ekstremālas temperatūras svārstības — un viss tas, saglabājot strukturālo integritāti gadiem ilgi. Afarer mūsu PVC auduma laboratorija ir pilnībā veltīta audumu, ko izmantojam katrā mūsu būvētajā dēlī, raksturošanai, validācijai un pastāvīgai pilnveidei.'
+
+content_html: |
+  <h2>Katra piepūšamā SUP dēļa pamats</h2>
+  <p>Mēs nepaļaujamies tikai uz piegādātāju datu lapām. Katra PVC auduma partija, kas nonāk mūsu darbnīcā, tiek neatkarīgi pārbaudīta uz vietas. Tas garantē, ka publicētā materiāla specifikācija ir tāda pati materiāla veiktspēja, ko jūs saņemat — partiju pēc partijas, gadu no gada.</p>
+
+  <h2>Standartizēts testēšanas aprīkojums</h2>
+  <p>Mūsu auduma laboratorija ir aprīkota ar rūpnieciska līmeņa instrumentiem, kas atbilst ISO, ASTM un EN testēšanas metodēm:</p>
+  <table>
+    <thead><tr><th>Iekārta</th><th>Mērītie parametri</th><th>Standarts</th></tr></thead>
+    <tbody>
+      <tr><td>Universālais stiepes testētājs (50 kN)</td><td>Plīšanas spēks, pagarinājums plīstot, plīsuma izplatība</td><td>ISO 1421 / ASTM D751</td></tr>
+      <tr><td>Ksenona loka atmosfēras iedarbes kamera</td><td>UV izturība (krāsas maiņa, izturības saglabāšana pēc 2000 h)</td><td>ISO 4892 / ASTM G155</td></tr>
+      <tr><td>Zemas temperatūras locīšanas testētājs</td><td>Plaisāšanas punkts no -30 °C līdz -50 °C</td><td>ISO 4675 / ASTM D2136</td></tr>
+      <tr><td>Taber berzes testētājs</td><td>Svara zudums pēc 1000 cikliem (CS-10 ritenis)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
+      <tr><td>Biezuma mērītājs (ciparu, 0.001 mm izšķirtspēja)</td><td>Vienveidība visā ruļļa platumā</td><td>ISO 2286-3</td></tr>
+      <tr><td>Hidrostatiskā spiediena testētājs</td><td>Pretestība ūdens iekļūšanai</td><td>ISO 811</td></tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-gray-500">* Viss aprīkojums tiek kalibrēts reizi gadā akreditētās trešo pušu laboratorijās.</p>
+
+  <h2>No datiem līdz lēmumam: tipiska testēšanas darba plūsma</h2>
+  <p>Kad ierodas jauns auduma kandidāts, tas iziet standartizētu septiņu soļu kvalifikācijas procesu:</p>
+  <ol>
+    <li><strong>Piegādes pārbaude</strong> — virsmas defektu, mikrocaurumiņu un izmēru atbilstības vizuāla pārbaude.</li>
+    <li><strong>Biezuma kartēšana</strong> — 20 punktu mērījumi visā ruļļa platumā; pieņemšanai nepieciešams CV &lt; 3%.</li>
+    <li><strong>Stiepes testēšana</strong> — 5 paraugi garenvirziena un šķērsvirziena virzienā. Minimāli 3500 N/50 mm 1100 dtex PVC.</li>
+    <li><strong>UV kondicionēšana</strong> — 1000 h iedarbība ksenona loka kamerā; nepieciešama vismaz 80 % izturības saglabāšana.</li>
+    <li><strong>Aukstuma plaisāšana</strong> — 4 h pie -35 °C, pēc tam 180° locīšana ap 25 mm serdeni. Nav redzamu plaisu.</li>
+    <li><strong>Pretberzes izturība</strong> — 1000 cikli, svara zudums ≤ 0.05 g.</li>
+    <li><strong>Apstiprināšana</strong> — audums tiek laists ražošanā tikai pēc visu septiņu posmu sekmīgas iziešanas.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Tipisks PVC 1100 dtex — stiepes izturības saglabāšana pēc UV iedarbības</p>
+    <div class="flex items-end gap-3 h-40">
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-600 rounded-t" style="height:100%"></div>
+        <span class="text-xs mt-1">0 h<br />100%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-500 rounded-t" style="height:95%"></div>
+        <span class="text-xs mt-1">500 h<br />95%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-400 rounded-t" style="height:88%"></div>
+        <span class="text-xs mt-1">1000 h<br />88%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-300 rounded-t" style="height:82%"></div>
+        <span class="text-xs mt-1">2000 h<br />82%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-gray-300 rounded-t" style="height:65%"></div>
+        <span class="text-xs mt-1">Konkurēnts<br />~65%</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Mūsu PVC 1100 dtex audums pēc 2000 h iedarbības ksenona loka kamerā saglabā &gt; 80 % stiepes izturības, salīdzinot ar tipiskiem nozares materiāliem, kuri nokrīt zem 70 %.</p>
+  </div>
+
+  <h2>Mūsu profesionālā komanda</h2>
+  <p>Laboratorijā strādā divi pilna laika materiālu inženieri, no kuriem katram ir polimēru zinātnes vai tekstila inženierijas izglītība un vismaz sešu gadu nozares pieredze. Viņus atbalsta trīs tehniķi, kas veic ikdienas testēšanu un datu reģistrēšanu. Komanda regulāri piedalās starplaboratoriju aplinkošanas testos, ko organizē Starptautiskā standartizācijas organizācija (ISO), lai validētu mūsu testēšanas metožu precizitāti.</p>
+
+  <h2>Jūsu grūtāko materiālu izaicinājumu risināšana</h2>
+  <p>Katra jūras vide ir atšķirīga. Nomas SUP dēlis, kas darbojas zem tropiskās saules, saskaras ar pilnīgi atšķirīgām UV un temperatūras slodzēm nekā ezera dēlis ziemeļu platuma grādos. Mūsu Auduma laboratorija palīdz jums izvēlēties — vai izstrādāt — auduma specifikāciju, kas ir optimizēta jūsu darbības profilam.</p>
+  <p>Nesenie pielāgotie risinājumi ietver:</p>
+  <ul>
+    <li>Augstas pretberzes PVC maisījums militāram klientam, kura dēļus regulāri nolaiž no koraļļu un akmeņainām pludmalēm (+40 % pretberzes kalpošanas laiks).</li>
+    <li>Zemas temperatūras PVC formulācija Arktikas ekspedīcijai, testēta līdz -50 °C bez trausluma.</li>
+    <li>Krāsvielas stabilizēts oranžs audums pludmales glābēju un glābšanas dēļu flotei, kas saglabā redzamību pēc 3 gadu tropiskās saules iedarbības.</li>
+  </ul>
+  <p>Mēs nepārdodam "no plaukta" audumus un neceram, ka tie darbosies. Mēs testējam, validējam un iesakām — vai radām — pielāgotu risinājumu jūsu konkrētajam uzdevuma profilam. Tā ir Afarer atšķirība.</p>
+
+  <h2>Kā mēs jūs apkalpojam</h2>
+  <p>Kad jūs mums uzticat materiālu izaicinājumu, lūk, ko varat sagaidīt:</p>
+  <ol>
+    <li><strong>Konsultācija</strong> — mēs apspriežam jūsu darbības vidi, veiktspējas mērķus un budžetu.</li>
+    <li><strong>Piedāvājums</strong> — tiek izstrādāts testēšanas plāns ar skaidriem sekmīgas/neveiksmīgas iznākuma kritērijiem un laika grafiku.</li>
+    <li><strong>Īstenošana</strong> — mūsu laboratorija veic testus un sagatavo detalizētu atskaiti ar neapstrādātiem datiem un salīdzinošu analīzi.</li>
+    <li><strong>Ieteikums</strong> — mēs piedāvājam auduma specifikāciju, tostarp alternatīvas iespējas, ja vairāki materiāli atbilst jūsu prasībām.</li>
+    <li><strong>Sekošana</strong> — pēc piegādes mēs paliekam pieejami, lai atbalstītu jebkādus ar materiāliem saistītus jautājumus ekspluatācijas laikā.</li>
+  </ol>
+  <p>Mūsu mērķis nav vienkārši pārdot jums dēli. Mēs vēlamies nodrošināt, lai saņemtais dēlis uzticami darbotos apstākļos, kādos jūs airējat — un tas sākas ar audumu.</p>
+
+cta:
+  title: 'Nepieciešama pielāgota auduma specifikācija?'
+  subtitle: 'Sazinieties ar mūsu materiālu inženierijas komandu, lai apspriestu jūsu prasības.'
+  button_text: 'Sazināties ar mūsu laboratorijas komandu'
+  button_link: /contact

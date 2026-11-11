@@ -1,0 +1,71 @@
+meta:
+  title: 'SUP kölcsönzési felszerelés-beszállító és flottamegoldások | {SITE}'
+  description: 'SUP kölcsönzési felszerelés-beszállító kölcsönző üzemeltetőknek. Nagy forgalmú kereskedelmi SUP deszkák napi használatra tervezve — UV-álló PVC, megerősített varratok, gyorsan szárító anyagok. Növelje kölcsönzési vállalkozását az Afarerrel.'
+
+hero:
+  tagline: 'Kölcsönző üzemeltetők'
+  title: 'Növelje kölcsönzési vállalkozását<br />bizalommal'
+  subtitle: 'SUP kölcsönzési felszerelés-beszállító kölcsönző üzemeltetőknek. Nagy forgalmú SUP deszkák, amelyeket napi kölcsönzési használatra terveztek, év 365 napján. Az Ön bevétele sosem tart pihenőnapot.'
+  image:
+    src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
+    alt: 'Forgalmas kölcsönző pavilon vendégre váró SUP deszkákkal'
+
+features:
+  title: 'A kölcsönzési megterhelésre építve'
+  subtitle: 'Minden deszkát 500+ kölcsönzési ciklusra terveztek minimális karbantartással.'
+  items:
+    - title: '500+ kölcsönzési ciklus'
+      description: 'A napi használat túlélésére tesztelve sós vízben, napon és homokban.'
+      icon: 'tabler:shield-check'
+    - title: 'UV-álló szövet'
+      description: 'Nincs kifakulás vagy romlás 1 év szabadban töltött tárolás után sem.'
+      icon: 'tabler:sun'
+    - title: 'Megerősített varratok'
+      description: '3-szor erősebbek a standard felfújható deszka szerkezetnél.'
+      icon: 'tabler:layers-intersect'
+    - title: 'Gyorsan szárító anyagok'
+      description: 'A deszkák 30 percen belül készen állnak a következő kölcsönzésre.'
+      icon: 'tabler:droplet'
+    - title: 'Rakodható tárolás'
+      description: 'Helytakarékos kialakítás — 40%-kal több deszka tárolható ugyanazon a területen.'
+      icon: 'tabler:stack'
+    - title: 'Színkódolt méretek'
+      description: 'A személyzet azonnal a megfelelő deszkát ragadja meg a színkódolt méretezésnek köszönhetően.'
+      icon: 'tabler:color-swatch'
+
+stats:
+  title: 'Üzemeltetési mutatók'
+  stats:
+    - title: 'Deszkaátforgatás'
+      amount: '< 5 perc'
+    - title: 'Éves karbantartás'
+      amount: '~15 perc/deszka'
+    - title: 'Alkatrész-kiszállítás'
+      amount: '48h'
+    - title: 'Hibaarány'
+      amount: '< 0,5%'
+
+fleet_guide:
+  title: 'Flottaméretezési útmutató'
+  subtitle: 'Becslés a kölcsönzési működése flottaméretéről és bevételi potenciáljáról.'
+  tiers:
+    - label: 'Kis pavilon'
+      boards: '15-20'
+      revenue: 'XX XXX USD/év'
+    - label: 'Közepes működés'
+      boards: '30-50'
+      revenue: 'XX XXX USD/év'
+    - label: 'Nagy tengerparti kölcsönző'
+      boards: '50-100'
+      revenue: 'XXX XXX USD/év'
+
+cta:
+  title: 'Készen áll a kölcsönzési vállalkozása növelésére?'
+  subtitle: 'Kaphat kölcsönzési árazást, vagy összehasonlíthatja a deszkamodelleket a működéséhez.'
+  actions:
+    - text: 'Kölcsönzési árazás beszerzése'
+      href: '/contact?package=rental'
+      variant: 'primary'
+    - text: 'Deszkamodellek összehasonlítása'
+      href: '/compare'
+      variant: 'secondary'

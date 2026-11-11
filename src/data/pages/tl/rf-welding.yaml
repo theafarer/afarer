@@ -1,0 +1,89 @@
+meta:
+  title: 'RF Welding Center — Dielectric Bonding para sa mga Hindi Tatablan ng Hangin na Seam | {SITE}'
+  description: 'Teknolohiya ng radio-frequency welding na nagbibigay ng sumusunod sa pamantayan na hindi tumatablan ng hangin na seam. Peel testing, pagpapatunay ng air-retention, at custom na espesipikasyon ng seam.'
+back_text: 'Bumalik sa R&D Center'
+home_label: 'Home'
+
+hero:
+  tagline: 'Lab 03'
+  title: 'RF Welding Center'
+  subtitle: 'Teknolohiya ng dielectric bonding para sa mga weld na kumakapit sa ilalim ng presyon'
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1-1200w.webp'
+  image_alt: 'Proseso ng dielectric bonding ng RF welding ng Afarer'
+
+intro: 'Ang isang inflatable SUP ay maaasahan lamang kung maaasahan ang mga seam nito. Ang isahang mahinang weld ay maaaring sirain ang buong chamber — at sa dagat, ang pagkabigo ng isang chamber ay hindi lamang abala; ito ay panganib sa kaligtasan. Sa Afarer, namuhunan kami sa isang nakalaang Radio-Frequency (RF) Welding Center na nagsasama ng mga industrial-grade na dielectric welding press na may mahigpit na kontrol sa proseso at pagsubok pagkatapos ng welding. Ang bawat seam na aming ginagawa ay naka-dokumento, masusubaybayan, at sertipikadong tumutugon o lumalampas sa mga kinakailangan ng EN ISO 25649 — ang pamantayang Europeo para sa kagamitang pang-rekasyon na inflatable.'
+
+content_html: |
+  <h2>Ang agham sa likod ng seam</h2>
+  <p>Ginagamit ng RF welding ang high-frequency na enerhiyang elektromagnetiko (karaniwang 27.12 MHz) upang pukawin ang mga polar na molekula sa loob ng PVC-coated na fabric, na lumilikha ng init nang tumpak sa interpeys ng materyal. Di tulad ng hot-air o hot-wedge welding, ang RF welding ay lumilikha ng tunay na molekular na pagdudugtong — ang dalawang patong ng fabric ay nagsasama bilang iisang homohenyos na materyal sa sona ng weld, na bumubuo ng dugtong na kasinglakas ng mismong pinagmulang materyal.</p>
+
+  <h2>Kagamitan sa welding at kontrol sa proseso</h2>
+  <p>Ang aming welding centre ay may kagamitan na:</p>
+  <table>
+    <thead><tr><th>Makina</th><th>Lakas / Kapasidad</th><th>Aplikasyon</th></tr></thead>
+    <tbody>
+      <tr><td>Dielectric RF press 1</td><td>15 kW, platen 2000 × 600 mm</td><td>Pangunahing longitudinal na seam, dugtong ng rail-to-hull</td></tr>
+      <tr><td>Dielectric RF press 2</td><td>10 kW, platen 1500 × 500 mm</td><td>Baffle weld, dugtong ng pagsara ng rail, valve patch</td></tr>
+      <tr><td>CNC controlled RF welder</td><td>8 kW, XY table 2500 × 1200 mm</td><td>Curved na seam, embossing ng logo/panel, tumpak na patchwork</td></tr>
+      <tr><td>Hot-wedge automatic welder</td><td>Nababagong temperatura, 1.2 m/min max</td><td>Pamamaraang backup para sa makapal na PVC rail fabric at pagkukumpuni</td></tr>
+    </tbody>
+  </table>
+  <p>Ang bawat RF press ay may closed-loop na pagsubaybay sa temperatura at presyon. Ang mga parameter ng weld — lakas, oras ng pagpindot, oras ng paglamig, presyon ng elektrodo — ay programado ayon sa uri ng materyal at itinatala sa aming Manufacturing Execution System (MES) para sa buong traceability.</p>
+
+  <h2>Mga pagsubok sa kalidad ng weld — bawat seam, bawat board</h2>
+  <p>Ang integridad ng weld ay pinapatunayan sa pamamagitan ng mandatoryong protokol na apat na pagsubok:</p>
+  <ol>
+    <li><strong>Visual na pagsisiyasat</strong> — 100 % ng mga seam ay sinisiyasat nang visually para sa burn-through, misalignment, kontaminasyon, o hindi kumpletong pagsasanib. Hangganan ng rate ng pagtatakwil: 0.5 % ng linyar na metro.</li>
+    <li><strong>Peel test</strong> — Isang strip na 25 mm ang lapad ay ginugupot mula sa test coupon na na-weld kasama ng bawat production batch. Pinakamababang puwersa ng peel: 120 N/25 mm para sa PVC 1100 dtex.</li>
+    <li><strong>Air-retention test</strong> — Ang bawat natapos na chamber ay pinipresyurisa hanggang 1.5 × working pressure at pinapanatili sa loob ng 30 minuto. Ang pagbaba ng presyon ay hindi dapat lumampas sa 2 %.</li>
+    <li><strong>Thermal cycling test</strong> — Ang mga sample coupon ay pinaikot-ikot mula -20 °C hanggang +60 °C nang 50 cycle, pagkatapos ay peel-tested muli. Katanggap-tanggap na pagbaba ng lakas: &lt; 10 %.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Paghahambing ng Lakas ng Peel — RF kumpara sa Hot-Air Welding (PVC 1100 dtex)</p>
+    <div class="space-y-3">
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">RF Weld</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">184 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Hot-Air</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">130 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Pinakamababa</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-green-500 rounded" style="width:48%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">96 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Ang RF welding ay tuloy-tuloy na nakakamit ng 90-95 % ng lakas ng pinagmulang materyal, malayong higit sa pinakamababa.</p>
+  </div>
+
+  <h2>Dalubhasang kadalubhasaan</h2>
+  <p>Ang aming welding team ay pinangungunahan ng isang senior process engineer na may 11 taon ng karanasan sa dielectric welding ng mga coated textile. Ang bawat operator ay kumukumpleto ng 6-buwang in-house na programa ng sertipikasyon bago pahintulutang magtrabaho sa mga production seam. Kinakailangan ang muling sertipikasyon taun-taon, kabilang ang praktikal na weld test na sinusuri ayon sa aming panloob na pamantayang Grade-A (peel strength ≥ 160 N/25 mm).</p>
+
+  <h2>Mga custom na solusyon sa welding para sa natatanging kinakailangan</h2>
+  <p>Naunawaan namin na ang isang espesipikasyon sa welding ay hindi angkop sa lahat ng aplikasyon. Ang aming RF Welding Center ay regular na nagde-develop ng custom na konfigurasyon ng seam para sa mga kliyenteng may espesyal na kinakailangan:</p>
+  <ul>
+    <li><strong>Multi-layer na patch ng pampalakas</strong> — para sa mga lugar na madalas mapuwersahan tulad ng nose at tail rail, nagde-develop kami ng multi-pass na RF weld na nagsasama ng matibay na panlabas na patong nang hindi isinasakripisyo ang kakayahang yumuko.</li>
+    <li><strong>Conductive o RF-opaque na seam</strong> — para sa mga aplikasyong militar o surveillance na nangangailangan ng electromagnetic shielding, nagwe-weld kami ng mga patong ng conductive mesh sa loob ng stack-up ng seam.</li>
+    <li><strong>Pag-weld ng panel na nagbabago ng kulay</strong> — dual-colour na panel ng fabric (hal. orange hull + grey deck) na na-weld na may nakatagong overlap upang mapanatili ang aesthetics ng brand nang walang nakikitang linya ng pagdugtong.</li>
+  </ul>
+
+  <h2>Ang aming komitment sa iyo</h2>
+  <p>Ang bawat board na aming maihahatid ay may garantiya ng kalidad ng weld: kung may mabibigong seam sa karaniwang paglilingkod sa loob ng panahon ng warranty, kukumpunihin o papalitan namin ang apektadong chamber nang walang bayad, at isinasagawa ang imbestigasyon ng pinagmulan upang maiwasan ang muling pangyayari. Ito ay hindi lamang warranty — ito ay komitment sa tuluy-tuloy na pagpapabuti na hinihimok ng tunay na datos mula sa aktwal na operasyon.</p>
+  <p>Kapag pinili mo ang Afarer, pinipili mo ang mga seam na in-engineer, sinubok, at naka-dokumento — hindi lamang na-weld. Iyon ang pagkakaiba ng board na lumulutang at board na nagtatagumpay.</p>
+
+cta:
+  title: 'Talakayin ang iyong mga kinakailangan sa welding'
+  subtitle: 'Custom na espesipikasyon ng seam, pagkakatugma ng materyal, o pagpapatunay ng proseso.'
+  button_text: 'Makipag-ugnayan sa aming welding team'
+  button_link: /contact

@@ -1,0 +1,85 @@
+meta:
+  title: 'Studio za inženjerstvo trupova — CAD, FEA i dizajn trupova po mjeri | {SITE}'
+  description: 'Istražite naš Studio za inženjerstvo trupova za CAD dizajn, analizu konačnih elemenata (FEA) i razvoj visokoperformantnih SUP trupova po mjeri. Kontaktirajte naš inženjerski tim kako biste započeli svoj sljedeći projekt daske.'
+back_text: 'Natrag na R&D centar'
+home_label: 'Početna'
+
+hero:
+  tagline: 'Lab 02'
+  title: 'Studio za inženjerstvo trupova'
+  subtitle: 'Digitalna simulacija, strukturna inteligencija, dizajn trupa po mjeri'
+  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
+  image_alt: 'Afarer CAD radna stanica za inženjerski dizajn trupova'
+
+intro: 'Trup je okosnica svake napuhive SUP daske. Mora biti dovoljno lagan za učinkovito klizanje, dovoljno jak za stjenovite obale i dovoljno krut da svaki zamah veslom pretvori u kretanje naprijed. U Afareru naš Studio za inženjerstvo trupova spaja napredno CAD modeliranje, analizu konačnih elemenata (FEA) i desetljeća praktičnog iskustva u dizajnu daska kako bi isporučio trupove optimizirane za namijenjenu disciplinu — a ne generičke oblike prilagođene iz kataloga.'
+
+content_html: |
+  <h2>Gdje se snaga susreće s hidrodinamikom</h2>
+  <p>Radimo s tri primarne konstrukcijske platforme — ojačane drop-stitch PVC jezgre, ručno laminirana stakloplastika i rotacijski lijevani polietilen — i imamo inženjerske sposobnosti za dizajn, simulaciju i validaciju svake od njih u vlastitom pogonu.</p>
+
+  <h2>Dizajnerski alati i standardi</h2>
+  <p>Naše digitalno inženjersko okruženje obuhvaća:</p>
+  <table>
+    <thead><tr><th>Mogućnost</th><th>Softver / Alat</th><th>Primjena</th></tr></thead>
+    <tbody>
+      <tr><td>3D parametarsko modeliranje</td><td>SolidWorks Professional</td><td>Površina trupa, ojačanje rubova i uzdužnica, raspored površine, točke nosača opreme</td></tr>
+      <tr><td>Analiza konačnih elemenata</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Mapiranje naprezanja, modalna analiza, simulacija sudara/udara</td></tr>
+      <tr><td>Računalna dinamika fluida</td><td>Ansys Fluent / Star-CCM+</td><td>Predviđanje hidrodinamičkog otpora, optimizacija rasporeda</td></tr>
+      <tr><td>Inženjerstvo laminata</td><td>ESAComp / CADEC</td><td>Slaganje slojeva stakloplastike, odabir jezgre, procjena težine</td></tr>
+      <tr><td>Simulacija protoka u kalupu</td><td>Moldex3D</td><td>Predviđanje debljine stijenke pri rotacijskom lijevanju</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Naš inženjerski radni tijek</h2>
+  <p>Svaki dizajn trupa, bilo da se radi o standardnom modelu ili potpuno custom projektu, slijedi strog proces u pet faza:</p>
+  <ol>
+    <li><strong>Koncept i prikupljanje zahtjeva</strong> — Sastajemo se s vama kako bismo definirali težinu vozača i tereta, raspon brzine, sposobnost na raznim stanjima vode, zahtjeve transporta i svu posebnu misijsku opremu (nosači na površini, pozicije vezanja tereta, integracija pribora).</li>
+    <li><strong>3D oblikovanje površina i hidrostatski proračun</strong> — Oblik trupa modelira se u SolidWorksu i provjerava na hidrostatsku stabilnost, raspodjelu volumena i moment ispravljanja pomoću ugrađenih analitičkih alata.</li>
+    <li><strong>Strukturna FEA</strong> — Definiraju se slučajevi opterećenja: statički (vozač + oprema), dinamički (udari pri slijetanju na valove pri 5g) i nasukavanje (udarac u stjenovitu obalu pri 3 m/s). Pregledavaju se konture naprezanja; sigurnosni faktor ≥ 2,5 obvezatan je.</li>
+    <li><strong>CFD optimizacija otpora</strong> — Trup se simulira pri tri stanja opterećenja i pet brzina. Kvašćena površina, kut rasporeda i zaostali otpor iterativno se smanjuju.</li>
+    <li><strong>Pregled dizajna i izdanje</strong> — Kompletnu inženjersku dokumentaciju (3D model, FEA izvještaj, CFD izvještaj, procjenu težine, knjigu slojeva) prije predaje prototipskoj radionici pregledava naš viši inženjer.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA raspodjela naprezanja — trup touring SUP daske (ojačani drop-stitch)</p>
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">2,8 : 1</span>
+        <span class="text-gray-500">Sigurnosni faktor pri maksimalnom teretu</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">15,2 %</span>
+        <span class="text-gray-500">Smanjenje otpora u odnosu na prethodnu generaciju</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
+        <span class="text-gray-500">Vršni tlak udara (projektno ograničenje)</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
+        <span class="text-gray-500">Ukupno FEA vrijeme rada u 2025.</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Prilagodba: vaš trup, vaša pravila</h2>
+  <p>Nijedna dva veslača nemaju iste zahtjeve. Ribolovna SUP daska treba širok, stabilan trup za planing; touring daska treba trup za istiskivanje koji maksimizira klizanje; surf SUP daska treba odzivne rubove i podešen rocker. Ne tjeramo vašu namjenu u unaprijed postojeći oblik trupa. Dizajniramo prema vašoj specifikaciji i naviše.</p>
+  <p>Primjeri nedavnih projekata inženjerstva trupova po mjeri:</p>
+  <ul>
+    <li>Produžena touring SUP daska za karipskog operatera eko-tura, s ojačanim pramcem za slijetanje na plaže (+15 % debljine ruba).</li>
+    <li>Patrolna SUP daska u visokoj vidljivosti za lučku upravu, s integriranim nosačima opreme i taktičkim rubovima.</li>
+    <li>Ekspedicijska touring SUP daska za najamnu flotu, s ojačanim rubovima i dodatnim vezivanjem tereta.</li>
+  </ul>
+
+  <h2>Naši inženjeri</h2>
+  <p>Studijom vodi viši inženjer s 14 godina iskustva u dizajnu visokoperformantnih daska, a podržavaju ga dva strojarska inženjera specijalizirana za FEA i CFD. Sva trojica imaju napredne diplome iz pomorskog ili strojarskog inženjerstva s međunarodno priznatih sveučilišta. Tim redovito objavljuje u stručnim časopisima i izlaže na međunarodnim konferencijama o inženjerstvu visokoperformantnih veslačkih sportova.</p>
+
+  <h2>Partnerstvo s nama na vašem sljedećem trupu</h2>
+  <p>Od prve skice koncepta do završnog izvještaja o naprezanjima, naš Studio za inženjerstvo trupova vaš je partner u stvaranju daske koja nije samo izgrađena — već inženjerski konstruirana. Ulažemo sate simulacja unaprijed kako bi svaki zavareni spoj, svaki sloj laminata i svaka krivulja trupa imali svoj razlog.</p>
+  <p>Bilo da vam treba manja izmjena postojećeg modela ili potpuno novi dizajn od nule, spremni smo razgovarati o vašim zahtjevima.</p>
+
+cta:
+  title: 'Započnite konzultaciju za dizajn trupa'
+  subtitle: 'Recite nam o svom profilu misije i predložit ćemo inženjerski put.'
+  button_text: 'Kontaktirajte naš inženjerski tim'
+  button_link: /contact

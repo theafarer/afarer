@@ -1,0 +1,144 @@
+meta:
+  title: 'Kontakt — partnerstvá a produktové dopyty | {SITE}'
+  description: 'Kontaktujte afarer pre partnerstvá, co-brand a private-label dopyty či profesionálne flotily. Značka nafukovacích SUP, odpovedáme do 2 pracovných dní.'
+  keywords:
+    - 'ponuka distribútor sup'
+    - 'profesionálny dodávateľ sup'
+    - 'kontakt výrobca sup'
+hero_text:
+  tagline: 'Kontakt'
+  title: 'SPOJTE SA S NAMI'
+contact_form:
+  id: form
+  title: 'Pošlite nám správu'
+  subtitle: 'Pre ponuky, technické otázky alebo partnerstvá nám napíšte. Odpovedáme do jedného pracovného dňa.'
+  email_to: info@afarer.com
+  submit_button: 'Odoslať dopyt → Získať ponuku'
+  success_message: 'Ďakujeme! Vaša správa dorazila do našej schránky. Odpovieme do jedného pracovného dňa.'
+  error_message: 'Pri odosielaní správy sa niečo pokazilo. Skúste to znova alebo nám napíšte e-mail priamo.'
+  default_country_code: '+1'
+  captcha:
+    label: 'Antispam: prosím vyriešte nasledujúce'
+  fields:
+    - name: country
+      label: 'Krajina'
+      row: 1
+      type: select
+      optionsKey: countries
+      step: 1
+    - name: orderVolume
+      label: 'Odhadovaný objem objednávky'
+      row: 2
+      type: select
+      options:
+        - value: ''
+          label: 'Vyberte odhadovaný objem...'
+        - value: sample
+          label: 'Iba vzorky / prototypy'
+        - value: '5-10'
+          label: '5–10 kusov (štandardné MOQ)'
+        - value: '100-500'
+          label: '100–500 kusov'
+        - value: '500-plus'
+          label: '500+ kusov (objemové ceny)'
+      step: 1
+    - name: customization
+      label: 'Potrebujete customizáciu?'
+      row: 3
+      type: select
+      options:
+        - value: ''
+          label: 'Vyberte typ customizácie...'
+        - value: none
+          label: 'Štandardný produkt (bez customizácie)'
+        - value: logo
+          label: 'Iba vlastné logo / branding'
+        - value: full
+          label: 'Kompletný co-brand (veľkosť, farba, grafika, balenie)'
+        - value: consultation
+          label: 'Nie som si istý — potrebujem konzultáciu'
+      step: 1
+    - name: productInterest
+      label: 'Kategórie produktov záujmu'
+      row: 4
+      type: select
+      options:
+        - value: ''
+          label: 'Vyberte kategóriu produktu...'
+        - value: all
+          label: 'Všetky produkty / kompletný katalóg'
+        - value: sup
+          label: 'Dosky SUP / paddleboardy'
+        - value: safety
+          label: 'Bezpečnostné vybavenie / záchranné vesty'
+        - value: accessory
+          label: 'Príslušenstvo (kompresory, veslá, tašky)'
+      step: 1
+    - name: firstName
+      label: 'Meno'
+      row: 1
+      step: 2
+    - name: lastName
+      label: 'Priezvisko'
+      row: 1
+      step: 2
+    - name: companyName
+      label: 'Názov spoločnosti'
+      row: 2
+      step: 2
+    - name: email
+      label: 'E-mail'
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: 'TELEFÓN'
+      row: 3
+      type: tel
+      withCountryCode: true
+      step: 2
+    - name: address
+      label: 'Adresa'
+      row: 4
+      step: 2
+    - name: zip
+      label: 'PSČ'
+      row: 5
+      step: 2
+    - name: subject
+      label: 'Predmet'
+      row: 1
+      step: 3
+    - name: message
+      label: 'Správa'
+      row: 2
+      type: textarea
+      rows: 6
+      step: 3
+features2_other_ways:
+  title: 'Ďalšie spôsoby, ako nás kontaktovať'
+  columns: 3
+  items:
+    - title: 'Predajné dopyty'
+      description: 'Ponuky, konfigurácie, žiadosti dealerov a hromadné objednávky.'
+      icon: tabler:shopping-bag
+    - title: 'Technická podpora'
+      description: 'Záruka, opravy, náhradné diely a prevádzkové otázky.'
+      icon: tabler:tool
+    - title: 'Tlač a partnerstvá'
+      description: 'Mediálne sady, sponzoring a spolupráca v odvetví.'
+      icon: tabler:news
+    - title: 'Telefón'
+      description: '+86 13305324192'
+      icon: tabler:headset
+    - title: 'E-mail'
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: 'Sídlo'
+      description: 'Ekonomická rozvojová zóna, Laixi, Qingdao, Čína, 266600'
+      icon: tabler:map-pin
+map:
+  title: 'Naša lokalita'
+  subtitle: 'Navštívte nás v našom sídle'
+  address: 'Ekonomická rozvojová zóna, Laixi, Qingdao, Čína, 266600'
+  zoom: 15

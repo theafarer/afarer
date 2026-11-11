@@ -1,0 +1,85 @@
+meta:
+  title: 'Studio Kejuruteraan Lambung — CAD, FEA & Reka Bentuk Lambung Tersuai | {SITE}'
+  description: 'Terokai Studio Kejuruteraan Lambung kami untuk reka bentuk CAD, analisis unsur terhingga (FEA) dan pembangunan lambung SUP berprestasi tinggi tersuai. Hubungi pasukan kejuruteraan kami untuk memulakan projek papan seterusnya anda.'
+back_text: 'Kembali ke Pusat R&D'
+home_label: 'Utama'
+
+hero:
+  tagline: 'Makmal 02'
+  title: 'Studio Kejuruteraan Lambung'
+  subtitle: 'Simulasi digital, kecerdasan struktur, reka bentuk lambung tersuai'
+  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
+  image_alt: 'stesen kerja reka bentuk CAD kejuruteraan lambung Afarer'
+
+intro: 'Lambung ialah tulang belakang setiap SUP boleh tiup. Ia mesti cukup ringan untuk meluncur dengan cekap, cukup kuat untuk menghadapi persisiran berbatu dan cukup kaku untuk menukar setiap dayungan dayung kepada gerakan ke hadapan. Di Afarer, Studio Kejuruteraan Lambung kami menggabungkan pemodelan CAD termaju, analisis unsur terhingga (FEA) dan pengalaman reka bentuk papan praktikal selama bertahun-dekad untuk menyerahkan lambung yang dioptimumkan bagi disiplin yang dituju — bukan bentuk generik yang diadaptasi daripada katalog.'
+
+content_html: |
+  <h2>Di mana kekuatan bertemu hidrodinamik</h2>
+  <p>Kami bekerja dengan tiga platform binaan utama — teras PVC drop-stitch diperkuat, laminat gentian kaca susunan tangan dan polietilena acuan putaran — serta mempunyai keupayaan kejuruteraan untuk mereka, mensimulasi dan mengesahkan setiap satunya di dalaman.</p>
+
+  <h2>Alat dan piawaian reka bentuk</h2>
+  <p>Persekitaran kejuruteraan digital kami merangkumi:</p>
+  <table>
+    <thead><tr><th>Keupayaan</th><th>Perisian / Alat</th><th>Aplikasi</th></tr></thead>
+    <tbody>
+      <tr><td>Pemodelan parametrik 3D</td><td>SolidWorks Professional</td><td>Permukaan lambung, pengukuhan rel dan rasuk rentas, susun atur dek, titik pelekat peralatan</td></tr>
+      <tr><td>Analisis unsur terhingga</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Pemetaan tegasan, analisis modal, simulasi kemalangan/hentaman</td></tr>
+      <tr><td>Dinamik bendalir pengiraan</td><td>Ansys Fluent / Star-CCM+</td><td>Ramalan seretan hidrodinamik, pengoptimuman imbangan</td></tr>
+      <tr><td>Kejuruteraan laminat</td><td>ESAComp / CADEC</td><td>Pengusunan lapisan gentian kaca, pemilihan teras, anggaran berat</td></tr>
+      <tr><td>Simulasi aliran acuan</td><td>Moldex3D</td><td>Ramalan ketebalan dinding acuan putaran</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Aliran kerja kejuruteraan kami</h2>
+  <p>Setiap reka bentuk lambung, sama ada model standard atau projek sepenuhnya tersuai, mengikut proses lima peringkat yang ketat:</p>
+  <ol>
+    <li><strong>Konsep &amp; pengumpulan keperluan</strong> — Kami bertemu dengan anda untuk menentukan berat penunggang dan muatan, lingkungan kelajuan, keupayaan keadaan air, keperluan pengangkutan dan sebarang peralatan misi khusus (pelekat dek, kedudukan ikatan kargo, integrasi aksesori).</li>
+    <li><strong>Pembentukan permukaan 3D &amp; pengiraan hidrostatik</strong> — Bentuk lambung dimodelkan dalam SolidWorks dan disemak bagi kestabilan hidrostatik, agihan isipadu dan momen penegak menggunakan alat analisis terbina dalam.</li>
+    <li><strong>FEA struktur</strong> — Kes beban ditentukan: statik (penunggang + peralatan), dinamik (hentaman pendaratan ombak pada 5g) dan kandas (melanggar persisiran berbatu pada 3 m/s). Kontur tegasan disemak; faktor keselamatan ≥ 2.5 adalah wajib.</li>
+    <li><strong>Pengoptimuman seretan CFD</strong> — Lambung disimulasikan pada tiga keadaan pemuatan dan lima kelajuan. Luas permukaan terbasah, sudut imbangan dan rintangan baki dikurangkan secara berulang.</li>
+    <li><strong>Semakan reka bentuk &amp; pelepasan</strong> — Pakej kejuruteraan lengkap (model 3D, laporan FEA, laporan CFD, anggaran berat, buku lapisan) disemak oleh jurutera kanan kami sebelum dilepaskan kepada bengkel prototaip.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Agihan Tegasan FEA — Lambung SUP Lawatan (Drop-Stitch Diperkuat)</p>
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
+        <span class="text-gray-500">Faktor keselamatan pada muatan maksimum</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
+        <span class="text-gray-500">Pengurangan seretan berbanding generasi terdahulu</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
+        <span class="text-gray-500">Tekanan hentaman puncak (had reka bentuk)</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">18 000 jam</span>
+        <span class="text-gray-500">Jumlah masa jalanan FEA pada 2025</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Penyesuaian: lambung anda, peraturan anda</h2>
+  <p>Tiada dua pendayung mempunyai keperluan yang serupa. SUP memancing memerlukan lambung pelan yang lebar dan stabil; papan lawatan memerlukan lambung sesaran yang memaksimumkan luncuran; SUP ombak memerlukan responsif dan rocker ditala. Kami tidak memaksa aplikasi anda ke dalam bentuk lambung sedia ada. Kami mereka bentuk daripada spesifikasi anda ke atas.</p>
+  <p>Contoh projek kejuruteraan lambung tersuai terkini:</p>
+  <ul>
+    <li>SUP lawatan panjang dipanjangkan bagi pengendali eko-pelancongan Caribbean, dengan haluan diperkuat untuk pendaratan pantai (+15 % ketebalan rel).</li>
+    <li>SUP rondaan ketara-nyata bagi pihak berkuasa pelabuhan, dengan pelekat peralatan bersepadu dan rel taktikal.</li>
+    <li>SUP lawatan ekspedisi bagi armada sewaan, dengan rel diperkuat dan ikatan kargo tambahan.</li>
+  </ul>
+
+  <h2>Jurutera kami</h2>
+  <p>Studio ini diketuai oleh seorang jurutera kanan berpengalaman 14 tahun dalam reka bentuk papan berprestasi tinggi, dibantu oleh dua jurutera mekanikal yang khusus dalam FEA dan CFD. Ketiga-tiganya memegang ijazah lanjutan dalam kejuruteraan marin atau mekanikal daripada universiti yang diiktiraf antarabangsa. Pasukan ini kerap menerbitkan artikel dalam jurnal industri dan membentangkan kertas kerja di persidangan antarabangsa tentang kejuruteraan sukan dayung berprestasi tinggi.</p>
+
+  <h2>Berkongsi dengan kami pada lambung seterusnya anda</h2>
+  <p>Daripada lakaran konsep pertama hingga laporan tegasan akhir, Studio Kejuruteraan Lambung kami ialah rakan kongsi anda dalam mencipta papan yang bukan sekadar dibina — tetapi direkayasa. Kami melabur jam simulasi di peringkat awal supaya setiap kimpalan, setiap lapisan laminat dan setiap lengkung lambung ada sebabnya.</p>
+  <p>Sama ada anda memerlukan pengubahsuaian kecil pada model sedia ada atau reka bentuk sepenuhnya baharu, kami sedia membincangkan keperluan anda.</p>
+
+cta:
+  title: 'Mulakan konsultasi reka bentuk lambung anda'
+  subtitle: 'Beritahu kami tentang profil misi anda dan kami akan mencadangkan laluan kejuruteraan.'
+  button_text: 'Hubungi pasukan kejuruteraan kami'
+  button_link: /contact

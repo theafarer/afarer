@@ -1,0 +1,68 @@
+meta:
+  title: 'Laboratórium kvality — testovanie a zabezpečenie kvality | {SITE}'
+  description: 'Nezávislé laboratórium kvality s procesmi ISO 9001 v afarer: každá jednotka testovaná pred odoslaním na záruku kvality nafukovacích dosiek SUP.'
+  keywords:
+    - 'kontrola kvality sup'
+    - 'testovacie laboratórium paddle boardov'
+    - 'továreň sup iso 9001'
+    - 'kvalita nafukovacích sup'
+hero:
+  tagline: 'Laboratórium kontroly kvality'
+  title: 'Testovacie laboratórium a zabezpečenie kvality'
+  subtitle: 'Nezávislé laboratórium kvality s procesmi ISO 9001 — každá jednotka testovaná pred odoslaním'
+
+intro: 'afarer prevádzkuje vyhradené laboratórium kontroly kvality, ktoré funguje nezávisle od výroby. Každá šarža surovín a každá hotová doska prechádza zdokumentovanými kontrolnými protokolmi pred uvoľnením. Náš tím QC reportuje priamo vedeniu, čo zaručuje nestranné rozhodnutia o kvalite.'
+
+highlights:
+  - value: '100%'
+    label: 'Jednotiek testovaných na tlak'
+    detail: 'Každá komora, každá doska'
+  - value: '24–48 h'
+    label: 'Trvanie testu udržania vzduchu'
+    detail: 'Pri 1,25-násobku ratingového tlaku'
+  - value: '&lt;5%'
+    label: 'Maximálny povolený pokles tlaku'
+    detail: 'Počas 24–48 hodinového udržania'
+  - value: 'AQL 2.5'
+    label: 'Prah závažnej vady'
+    detail: 'Podľa vzorkovania ISO 2859'
+
+test_procedures:
+  - title: 'Kontrola surovín'
+    description: 'Každá prichádzajúca šarža PVC, drop-stitch látky a kovania sa testuje pred prijatím. Overuje sa pevnosť v ťahu (ASTM D751), odolnosť proti trhaniu (ISO 4674) a odolnosť voči UV. Materiály nezodpovedajúce špecifikácii sa karanténujú a vracajú.'
+    standards:
+      - 'ASTM D751 (ťah)'
+      - 'ISO 4674 (trhanie)'
+      - 'ISO 4892 (UV)'
+  - title: 'Kontrolné body QC počas výroby'
+    description: 'Výrobní operátori vykonávajú samokontrolu v každej fáze. Audítori QC vykonávajú náhodné vzorkovanie počas celej zmeny. Testy odtrhnutia zvarov sa vykonávajú každých 50 jednotiek. Dimenzionálne kontroly prebiehajú na každom 20. panele.'
+    standards:
+      - 'ASTM D751 (odtrhnutie)'
+      - 'Interný 100-bodový kontrolný zoznam'
+      - 'Vzorkovanie ISO 2859'
+  - title: '24–48 hodinový test udržania vzduchu'
+    description: 'Každá komora trubice sa nafúkne na 125 % ratingového tlaku a udrží 24–48 hodín. Tlakové snímače zaznamenávajú nepretržite s teplotnou kompenzáciou. Akákoľvek komora s poklesom tlaku nad 5 % spustí automatickú rekontrolu šarže.'
+    standards:
+      - 'EN ISO 25649'
+      - 'CE 2013/53/EU'
+  - title: 'Testovanie zaťaženia a vyváženia'
+    description: 'Hotové dosky sa testujú pri maximálnej ratingovej kapacite na stabilitu a tuhosť. Každá doska pred finálnym schválením kontroly absolvuje testovanie vo vode.'
+    standards:
+      - 'ISO 12217'
+      - 'CE 2013/53/EU'
+
+equipment:
+  - name: 'Univerzálny skúšobný stroj (ťah)'
+    spec: '5 kN, v súlade s ASTM D751'
+  - name: 'Tester poklesu tlaku'
+    spec: 'Viackanálový, 0–50 psi, zaznamenávanie údajov'
+  - name: 'Klimatická komora na UV testovanie'
+    spec: 'ISO 4892, cykly 1 000 h'
+  - name: 'Meradlo hrúbky (digitálne)'
+    spec: 'Rozlíšenie 0,01 mm'
+  - name: 'Tester odtrhnutia (zvar)'
+    spec: 'Motorizovaný, kapacita 50 N'
+  - name: 'Teplotná komora'
+    spec: '-40 °C až +100 °C'
+  - name: 'Nádrž na detekciu netesností'
+    spec: '6 m × 2 m, s osvetlením'

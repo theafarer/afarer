@@ -1,0 +1,103 @@
+meta:
+  title: 'Veľkoobchodný a maloobchodný partnerský program SUP | {SITE}'
+  description: 'Veľkoobchodný partnerský program SUP pre maloobchodníkov a športové obchody. Plná produktová rada, možnosti dropshippingu, konkurencieschopné veľkoobchodné marže od 20–35 % a nízke MOQ na začiatok.'
+
+hero:
+  tagline: 'Maloobchodní partneri'
+  title: 'Predávajte prémiové nafukovacie dosky SUP<br />s maržami, ktoré fungujú'
+  subtitle: 'Staňte sa maloobchodným partnerom Afarer — ponúkajte najrýchlejšie rastúcu značku SUP na vašom trhu s plnými veľkoobchodnými cenami, dropshippingom, profesionálnymi marketingovými materiálmi a vyhradenou podporou.'
+  image:
+    src: https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp
+    alt: 'Dosky SUP Afarer vystavené v maloobchodnom obchode'
+
+margin_section:
+  title: 'Maloobchodné marže a MOQ'
+  subtitle: 'Veľkoobchodné cenové úrovne navrhnuté pre ziskovosť maloobchodu.'
+  items:
+    - tier: 'Základný partner'
+      discount: '20%'
+      moq: '500 ks/rok'
+      margin_note: '~150–250 USD zisk na dosku'
+      features:
+        - 'Prístup k plnej produktovej rade'
+        - 'Balík marketingových materiálov'
+        - 'E-mailová podpora'
+        - 'Prístup k produktovému katalógu'
+    - tier: 'Prémiový partner'
+      discount: '30%'
+      moq: '2 000+ ks/rok'
+      margin_note: '~250–400 USD zisk na dosku'
+      features:
+        - 'Vyhradený account manažér'
+        - 'Exkluzívna ochrana územia'
+        - 'Zákazková marketingová podpora'
+        - 'Prvý prístup k novým produktom'
+        - 'Školenia pre zamestnancov'
+    - tier: 'Vlajkový partner'
+      discount: '35%+'
+      moq: '5 000+ ks/rok'
+      margin_note: '~350–500+ USD zisk na dosku'
+      features:
+        - 'Co-branded marketingové kampane'
+        - 'Podpora prezentácie v obchode'
+        - 'Školenie zamestnancov na mieste'
+        - 'Spoločné propagácie na sociálnych sieťach'
+        - 'Prednostná produkčná alokácia'
+
+product_line:
+  title: 'Kompletná produktová rada'
+  subtitle: 'Doska SUP pre každého zákazníka, ktorý prekročí váš prah.'
+  items:
+    - name: 'All-Round séria'
+      description: 'Najpredávanejšia — vyhovuje 80 % zákazníkov'
+    - name: 'Touring séria'
+      description: 'Výkonnostní pádlári — vyššia marža'
+    - name: 'Joga séria'
+      description: 'Niklový trh — prémiové ceny'
+    - name: 'Detská séria'
+      description: 'Rodinní zákazníci — opakovaný nákup'
+    - name: 'Pretekárska séria'
+      description: 'Trh nadšencov — značkový halo efekt'
+    - name: 'Príslušenstvo'
+      description: 'Doplnky s vysokou maržou (pádla, vesty, pumpy, vrecká)'
+
+catalog:
+  title: 'Zdroje pre maloobchodných partnerov'
+  subtitle: 'Stiahnite si náš komplexný balík pre maloobchodných partnerov.'
+  items:
+    - name: 'Produktový katalóg 2026'
+      desc: 'Kompletná ponuka so špecifikáciami, cenami a informáciami o objednávaní'
+      icon: 'tabler:file-text'
+      link: '/resources/download-catalog'
+    - name: 'Príručka maloobchodného partnera'
+      desc: 'Kalkulačka marží, tipy na merchandising a osvedčené postupy'
+      icon: 'tabler:book'
+      link: '/resources/download-catalog'
+    - name: 'Balík marketingových materiálov'
+      desc: 'Produktové fotografie vo vysokom rozlíšení, lifestyle snímky a POS materiály'
+      icon: 'tabler:photo'
+      link: '/media'
+
+support:
+  title: 'Podpora pre maloobchodných partnerov'
+  subtitle: 'Všetko, čo potrebujete na sebavedomý predaj.'
+  items:
+    - 'Produktové obrázky vo vysokom rozlíšení (profesionálna fotografia)'
+    - 'Lifestyle fotografie pre sociálne siete, web a katalóg'
+    - 'Marketingové materiály — plagáty, shelf talkery, bannery'
+    - 'Produktové tréningové videá na vzdelávanie zamestnancov'
+    - 'Balík obsahu pre sociálne siete (týždenné príspevky)'
+    - 'SEO optimalizované produktové popisy'
+    - 'Možnosť dropshippingu — žiadne riziko zásob'
+    - 'Splatnosť 30 dní'
+
+cta:
+  title: 'Pripravení stať sa maloobchodným partnerom Afarer?'
+  subtitle: 'Požiadajte o partnerstvo alebo stiahnite náš maloobchodný katalóg a začnite.'
+  actions:
+    - text: 'Požiadať o partnerstvo'
+      href: '/contact?partner=retail'
+      variant: 'primary'
+    - text: 'Stiahnuť maloobchodný katalóg'
+      href: '/resources/download-catalog'
+      variant: 'secondary'

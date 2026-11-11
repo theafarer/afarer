@@ -1,0 +1,89 @@
+meta:
+  title: 'Centar za RF zavarivanje — Dielektričko spajanje za nepropusne šavove | {SITE}'
+  description: 'Tehnologija zavarivanja radiofrekvencijom koja daje sukladne nepropusne šavove. Ispitivanje odvajanja, potvrda zadržavanja zraka i prilagođene specifikacije šavova.'
+back_text: 'Natrag u centar za razvoj i istraživanje'
+home_label: 'Početna'
+
+hero:
+  tagline: 'Laboratorij 03'
+  title: 'Centar za RF zavarivanje'
+  subtitle: 'Tehnologija dielektričkog spajanja za zavare koji izdržavaju tlak'
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1-1200w.webp'
+  image_alt: 'Afarerov postupak dielektričkog spajanja RF zavarivanjem'
+
+intro: 'Napuhiva SUP daska pouzdana je onoliko koliko i njezini šavovi. Jedan slab zavar može ugroziti cijelu komoru — a na moru kvar komore nije neugodnost; to je sigurnosni rizik. U Afareru smo uložili u namjenski Centar za zavarivanje radiofrekvencijom (RF) koji kombinira industrijske dielektričke zavarene preše sa strogom kontrolom postupka i ispitivanjem nakon zavarivanja. Svaki šav koji proizvedemo dokumentiran je, sljediv i certificiran tako da ispunjava ili premašuje zahtjeve standarda EN ISO 25649 — europskog standarda za napuhivu opremu za slobodno vrijeme.'
+
+content_html: |
+  <h2>Znanost iza šava</h2>
+  <p>RF zavarivanje koristi visokofrekventnu elektromagnetsku energiju (obično 27.12 MHz) za pobuđivanje polarnih molekula u tkanini premazanoj PVC-om, stvarajući toplinu točno na sučelju materijala. Za razliku od zavarivanja vrućim zrakom ili vrućim klinom, RF zavarivanje stvara pravu molekularnu vezu — dva se sloja tkanine stapaju u jedan homogen materijal u zoni zavara, dajući spoj koji je jednako čvrst kao i osnovni materijal sam.</p>
+
+  <h2>Oprema za zavarivanje i kontrola postupka</h2>
+  <p>Naš je centar za zavarivanje opremljen sa:</p>
+  <table>
+    <thead><tr><th>Stroj</th><th>Snaga / kapacitet</th><th>Namjena</th></tr></thead>
+    <tbody>
+      <tr><td>Dielektrička RF preša 1</td><td>15 kW, ploča 2000 × 600 mm</td><td>Glavni uzdužni šavovi, spojevi rubnih traka i trupa</td></tr>
+      <tr><td>Dielektrička RF preša 2</td><td>10 kW, ploča 1500 × 500 mm</td><td>Zavari pregrada, spojevi zatvaranja rubnih traka, zakrpe ventila</td></tr>
+      <tr><td>RF zavarivač s CNC kontrolom</td><td>8 kW, XY stol 2500 × 1200 mm</td><td>Zakrivljeni šavovi, reljefni logotipi i paneli, precizno krpljenje</td></tr>
+      <tr><td>Automatski zavarivač s vrućim klinom</td><td>Podesiva temperatura, maks. 1.2 m/min</td><td>Rezervna metoda za debelu PVC tkaninu rubnih traka i popravke</td></tr>
+    </tbody>
+  </table>
+  <p>Svaka je RF preša opremljena nadzorom temperature i tlaka u zatvorenoj petlji. Parametri zavarivanja — snaga, vrijeme prešanja, vrijeme hlađenja, tlak elektrode — programiraju se po vrsti materijala i bilježe se u našem Sustavu upravljanja proizvodnjom (MES) radi potpune sljedivosti.</p>
+
+  <h2>Ispitivanja kvalitete zavara — svaki šav, svaka daska</h2>
+  <p>Integritet zavara potvrđuje se obaveznim protokolom od četiri ispitivanja:</p>
+  <ol>
+    <li><strong>Vizualni pregled</strong> — 100 % šavova vizualno se pregledava na prodore, neusklađenost, onečišćenje ili nepotpuno spajanje. Prag stope odbacivanja: 0.5 % linearnih metara.</li>
+    <li><strong>Ispitivanje odvajanja</strong> — Traka širine 25 mm reže se iz ispitnog uzorka zavarenog uz svaku proizvodnu seriju. Minimalna sila odvajanja: 120 N/25 mm za PVC 1100 dtex.</li>
+    <li><strong>Ispitivanje zadržavanja zraka</strong> — Svaka dovršena komora tlači se na 1.5 × radni tlak i drži 30 minuta. Pad tlaka ne smije premašiti 2 %.</li>
+    <li><strong>Ispitivanje toplinskih ciklusa</strong> — Uzorci se ciklički izlažu temperaturama od -20 °C do +60 °C kroz 50 ciklusa, a zatim se ponovno ispitaju na odvajanje. Prihvatljiv gubitak čvrstoće: &lt; 10 %.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Usporedba čvrstoće odvajanja — RF naspram zavarivanja vrućim zrakom (PVC 1100 dtex)</p>
+    <div class="space-y-3">
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">RF zavar</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">184 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Vrući zrak</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">130 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Min</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-green-500 rounded" style="width:48%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">96 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">RF zavarivanje dosljedno postiže 90-95 % čvrstoće osnovnog materijala, znatno iznad minimuma.</p>
+  </div>
+
+  <h2>Profesionalna stručnost</h2>
+  <p>Naš tim za zavarivanje vodi viši inženjer postupka s 11 godina iskustva u dielektričkom zavarivanju premazanih tekstila. Svaki operater završava 6-mjesečni interni program certificiranja prije nego što smije raditi na proizvodnim šavovima. Ponovno certificiranje potrebno je svake godine, uključujući praktični ispit zavarivanja koji se vrednuje prema našem internom standardu razreda A (čvrstoća odvajanja ≥ 160 N/25 mm).</p>
+
+  <h2>Prilagođena rješenja zavarivanja za jedinstvene zahtjeve</h2>
+  <p>Razumijemo da jedna specifikacija zavarivanja ne odgovara svakoj namjeni. Naš Centar za RF zavarivanje redovito razvija prilagođene konfiguracije šavova za klijente sa posebnim zahtjevima:</p>
+  <ul>
+    <li><strong>Višeslojne ojačane zakrpe</strong> — za područja jačeg habanja poput pramčanih i krmenih rubnih traka razvijamo višeprolazne RF zavare koji uključuju otporan vanjski sloj bez ugrožavanja savitljivosti.</li>
+    <li><strong>Vodljivi ili za RF nepropusni šavovi</strong> — za vojne ili nadzorne namjene koje zahtijevaju elektromagnetsko zaklanjanje, unutar strukture šava zavaramo vodljive slojeve mreže.</li>
+    <li><strong>Zavarivanje panela s promjenom boje</strong> — dvobojni paneli tkanine (npr. narančasti trup + siva paluba) zavaruju se skrivenim preklopom radi očuvanja estetike marke bez vidljive linije spoja.</li>
+  </ul>
+
+  <h2>Naša obveza prema vama</h2>
+  <p>Svaka daska koju isporučimo nosi naše jamstvo kvalitete zavara: ako bilo koji šav otkaže u normalnoj upotrebi tijekom jamstvenog razdoblja, besplatno ćemo popraviti ili zamijeniti zahvaćenu komoru te provesti istraživanje korijenskog uzroka kako bi se spriječilo ponavljanje. To nije samo jamstvo — to je predanost neprestanom poboljšanju vođena stvarnim operativnim podacima.</p>
+  <p>Odabirom Afarera odabirete šavove koji su konstruirani, ispitani i dokumentirani — a ne samo zavareni. To je razlika između daske koja pluta i daske koja pruža vrhunske performanse.</p>
+
+cta:
+  title: 'Raspravite o svojim zahtjevima za zavarivanje'
+  subtitle: 'Prilagođene specifikacije šavova, kompatibilnost materijala ili potvrda postupka.'
+  button_text: 'Kontaktirajte naš tim za zavarivanje'
+  button_link: /contact

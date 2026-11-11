@@ -1,0 +1,90 @@
+meta:
+  title: 'RF metināšanas centrs — dielektriskā savienošana hermētiskām šuvēm | {SITE}'
+  description: 'Radiofrekvences metināšanas tehnoloģija, kas nodrošina atbilstošas hermētiskas šuves. Atdalīšanas testēšana, gaisa noturības validācija un pielāgotas šuvju specifikācijas.'
+
+back_text: 'Atpakaļ uz Pētniecības un izstrādes centru'
+home_label: 'Sākums'
+
+hero:
+  tagline: 'Laboratorija 03'
+  title: 'RF metināšanas centrs'
+  subtitle: 'Dielektriskās savienošanas tehnoloģija metinājumiem, kas iztur spiedienu'
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1-1200w.webp'
+  image_alt: 'Afarer RF metināšanas dielektriskās savienošanas process'
+
+intro: 'Piepūšamais SUP ir tikpat uzticams, cik tā šuves. Viens vājš metinājums var kompromitēt visu kameru — un jūrā kameras bojājums nav neērtība; tas ir drošības apdraudējums. Afarer mēs esam investējuši īpašā Radiofrekvences (RF) metināšanas centrā, kas apvieno rūpnieciska līmeņa dielektriskās metināšanas preses ar stingru procesa kontroli un pēcmetināšanas testēšanu. Katra mūsu ražotā šuve ir dokumentēta, izsekojama un sertificēta, lai atbilstu vai pārsniegtu EN ISO 25649 prasības — Eiropas standartu piepūšamajām atpūtas ierīcēm.'
+
+content_html: |
+  <h2>Zinātne aiz šuves</h2>
+  <p>RF metināšana izmanto augstfrekvences elektromagnētisko enerģiju (parasti 27.12 MHz), lai ierosinātu polārās molekulas PVC pārklātā audumā, radot siltumu precīzi materiālu saskares zonā. Atšķirībā no karstā gaisa vai karstā ķīļa metināšanas, RF metināšana veido īstenu molekulāru saiti — abi auduma slāņi saplūst viendabīgā materiālā metinājuma zonā, radot savienojumu, kas ir tikpat izturīgs kā pamatmateriāls.</p>
+
+  <h2>Metināšanas iekārtas un procesa kontrole</h2>
+  <p>Mūsu metināšanas centrs ir aprīkots ar:</p>
+  <table>
+    <thead><tr><th>Iekārta</th><th>Jauda / ietilpība</th><th>Lietojums</th></tr></thead>
+    <tbody>
+      <tr><td>Dielektriskā RF prese 1</td><td>15 kW, plātne 2000 × 600 mm</td><td>Galvenās gareniskās šuves, sānu un korpusa savienojumi</td></tr>
+      <tr><td>Dielektriskā RF prese 2</td><td>10 kW, plātne 1500 × 500 mm</td><td>Priekšsienas metinājumi, sānu noslēguma savienojumi, vārstu plāksteri</td></tr>
+      <tr><td>CNC vadāms RF metinātājs</td><td>8 kW, XY galds 2500 × 1200 mm</td><td>Izliektas šuves, logotipu/paneļu reljefs, precīzs plāksteru darbs</td></tr>
+      <tr><td>Karstā ķīļa automātiskais metinātājs</td><td>Regulējama temperatūra, maks. 1.2 m/min</td><td>Rezerves metode biezam PVC sānu audumam un remonta darbiem</td></tr>
+    </tbody>
+  </table>
+  <p>Katra RF prese ir aprīkota ar slēgta cikla temperatūras un spiediena uzraudzību. Metināšanas parametri — jauda, spiešanas laiks, dzesēšanas laiks, elektroda spiediens — tiek programmēti atbilstoši materiālu veidam un reģistrēti mūsu Ražošanas izpildes sistēmā (MES) pilnai izsekojamībai.</p>
+
+  <h2>Metinājumu kvalitātes testi — katra šuve, katrs dēlis</h2>
+  <p>Metinājumu integritāte tiek verificēta ar obligātu četru testu protokolu:</p>
+  <ol>
+    <li><strong>Vizuālā pārbaude</strong> — 100 % šuvju tiek vizuāli pārbaudītas uz izdegšanu, nobīdi, piemaisījumiem vai nepilnīgu saplūšanu. Noraidījuma robežvērtība: 0.5 % no lineārajiem metriem.</li>
+    <li><strong>Atdalīšanas tests</strong> — 25 mm plata sloksne tiek izgriezta no testa parauga, kas metināts ar katru ražošanas partiju. Minimālā atdalīšanas spēka vērtība: 120 N/25 mm PVC 1100 dtex audumam.</li>
+    <li><strong>Gaisa noturības tests</strong> — Katra pabeigtā kamera tiek pakļauta 1.5 × darba spiedienam un noturēta 30 minūtes. Spiediena kritums nedrīkst pārsniegt 2 %.</li>
+    <li><strong>Termiskās ciklēšanas tests</strong> — Paraugu sloksnes tiek ciklētas no -20 °C līdz +60 °C 50 ciklus, pēc tam atkārtoti testētas uz atdalīšanu. Pieņemamās izturības zudums: &lt; 10 %.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Atdalīšanas izturības salīdzinājums — RF pret karstā gaisa metināšanu (PVC 1100 dtex)</p>
+    <div class="space-y-3">
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">RF metinājums</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">184 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Karstais gaiss</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">130 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Min.</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-green-500 rounded" style="width:48%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">96 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">RF metināšana pastāvīgi sasniedz 90-95 % no pamatmateriāla izturības, kas ir ievērojami virs minimālās vērtības.</p>
+  </div>
+
+  <h2>Profesionālā kompetence</h2>
+  <p>Mūsu metināšanas komandu vada vecākais procesa inženieris ar 11 gadu pieredzi pārklātu tekstilmateriālu dielektriskajā metināšanā. Katrs operators pabeidz 6 mēnešu iekšējo sertifikācijas programmu, pirms tam tiek ļauts strādāt pie ražošanas šuvēm. Atkārtota sertifikācija ir nepieciešama reizi gadā, ietverot praktisko metināšanas testu, ko vērtē pēc mūsu iekšējā A klases standarta (atdalīšanas izturība ≥ 160 N/25 mm).</p>
+
+  <h2>Pielāgoti metināšanas risinājumi unikālām prasībām</h2>
+  <p>Mēs saprotam, ka viena metināšanas specifikācija neatbilst visiem lietojumiem. Mūsu RF metināšanas centrs regulāri izstrādā pielāgotas šuvju konfigurācijas klientiem ar īpašām prasībām:</p>
+  <ul>
+    <li><strong>Daudzslāņu pastiprinājuma plāksteri</strong> — augstas nodiluma zonām, piemēram, deguna un pakaļgala sāniem, mēs izstrādājam daudzpieeju RF metinājumus, kas integrē nodilumizturīgu ārējo slāni, nezaudējot elastību.</li>
+    <li><strong>Vadītspējīgas vai RF necaurspīdīgas šuves</strong> — militāriem vai novērošanas lietojumiem, kas prasa elektromagnētisko aizsardzību, mēs metinām vadītspējīga tīkla slāņus šuves struktūrā.</li>
+    <li><strong>Paneļu metināšana ar krāsu maiņu</strong> — divkrāsu auduma paneļi (piemēram, oranžs korpuss + pelēks klājums), kas metināti ar slēptu pārklājumu, lai saglabātu zīmola estētiku bez redzamas savienojuma līnijas.</li>
+  </ul>
+
+  <h2>Mūsu apņemšanās jūsu labā</h2>
+  <p>Katrs mūsu piegādātais dēlis ietver mūsu metinājumu kvalitātes garantiju: ja jebkāda šuve normālas ekspluatācijas laikā garantijas periodā izirst, mēs bez maksas izlabojam vai nomainām skarto kameru un veicam pamatcēloņa izmeklēšanu, lai novērstu atkārtošanos. Tā nav vienkārši garantija — tā ir apņemšanās par nepārtrauktu uzlabošanu, ko vada reāli ekspluatācijas dati.</p>
+  <p>Izvēloties Afarer, jūs izvēlaties šuves, kas ir izprojektētas, testētas un dokumentētas — ne vienkārši sametinātas. Tā ir atšķirība starp dēli, kas peld, un dēli, kas strādā.</p>
+
+cta:
+  title: 'Apspriediet savas metināšanas prasības'
+  subtitle: 'Pielāgotas šuvju specifikācijas, materiālu saderība vai procesa validācija.'
+  button_text: 'Sazinieties ar mūsu metināšanas komandu'
+  button_link: /contact

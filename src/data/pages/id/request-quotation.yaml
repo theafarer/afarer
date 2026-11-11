@@ -1,0 +1,99 @@
+meta:
+  title: 'Minta Penawaran — Manufaktur SUP OEM | {SITE}'
+  description: 'Minta penawaran rinci untuk proyek SUP tiup Anda. Manufaktur OEM/ODM, private label, atau armada kustom — kami merespons dalam 2 hari kerja.'
+  keywords:
+    - 'minta penawaran sup'
+    - 'penawaran papan dayung oem'
+    - 'penawaran pabrik sup'
+    - 'harga sup tiup'
+hero_text:
+  tagline: 'Minta Penawaran'
+  title: 'Minta Penawaran<br />untuk Proyek Anda'
+  subtitle: 'Ceritakan kebutuhan Anda dan tim kami akan merespons dengan penawaran rinci dalam 2 hari kerja.'
+steps2_process:
+  title: 'Cara Kerjanya'
+  subtitle: 'Empat langkah sederhana dari pertanyaan hingga penawaran.'
+  items:
+    - title: 'Langkah 1: Kirim Kebutuhan Anda'
+      description: 'Isi formulir di bawah dengan jenis produk, kuantitas, dan spesifikasi Anda. Semakin detail informasi yang Anda berikan, semakin akurat penawaran Anda.'
+      icon: tabler:file-text
+    - title: 'Langkah 2: Kami Tinjau & Saran'
+      description: 'Tim rekayasa kami meninjau kebutuhan Anda dan mungkin menghubungi Anda untuk klarifikasi. Kami memberikan rekomendasi tentang konfigurasi dan opsi produk.'
+      icon: tabler:users
+    - title: 'Langkah 3: Terima Penawaran Anda'
+      description: 'Anda menerima penawaran rinci termasuk harga per unit, MOQ, waktu tunggu, syarat pembayaran, dan opsi pengiriman. Biasanya dalam 48 jam.'
+      icon: tabler:currency-dollar
+    - title: 'Langkah 4: Sampel & Produksi'
+      description: 'Setelah penawaran disetujui, kami melanjutkan ke produksi sampel (jika berlaku) atau langsung ke produksi massal. Pembaruan rutin sepanjang proses.'
+      icon: tabler:building-factory
+content_form:
+  tagline: 'Formulir Penawaran'
+  title: 'Ceritakan Proyek Anda'
+  subtitle: 'Semua kolom bertanda * wajib diisi.'
+  contact_fields:
+    firstName: 'Nama Depan'
+    lastName: 'Nama Belakang'
+    companyName: 'Nama Perusahaan'
+    email: 'Email'
+  fields:
+    - name: 'Kategori Produk'
+      type: select
+      options:
+        - 'Papan SUP'
+        - 'SUP Tiup'
+        - 'Papan SUP Tiup'
+        - 'Rompi Pelampung'
+        - 'Aksesori Marinir'
+        - 'OEM/ODM Kustom'
+    - name: 'Aplikasi'
+      type: select
+      options:
+        - 'Pusat Selam'
+        - 'Memancing'
+        - 'Pariwisata Marinir / Resor'
+        - 'Pencarian & Penyelamatan'
+        - 'Pemerintah / Militer'
+        - 'OEM / Private Label'
+        - 'Pribadi / Rekreasi'
+        - 'Lainnya'
+    - name: 'Kuantitas'
+      type: text
+      placeholder: 'mis. 50 unit'
+    - name: 'Pasar Target'
+      type: text
+      placeholder: 'mis. Eropa, Amerika Utara, Timur Tengah'
+    - name: 'Negara Tujuan Pengiriman'
+      type: text
+      placeholder: 'mis. Italia, UEA, AS, Australia'
+    - name: 'Preferensi Material'
+      type: select
+      options:
+        - 'Tanpa Preferensi'
+        - 'PVC Kelas Marinir (1100 dtex)'
+        - 'Lambung Fiberglass'
+        - 'Lambung Aluminium'
+    - name: 'Kebutuhan Penggerak'
+      type: text
+      placeholder: 'mis. setelan dayung standar, pompa listrik, warna kustom'
+    - name: 'Kustomisasi yang Dibutuhkan'
+      type: text
+      placeholder: 'mis. warna kustom, pencitraan merek/logo, pengemasan, fitting khusus'
+    - name: 'Linimasa'
+      type: text
+      placeholder: 'mis. pengiriman dalam 90 hari'
+    - name: 'Kebutuhan Tambahan'
+      type: textarea
+      placeholder: 'Jelaskan aplikasi, spesifikasi teknis, atau persyaratan khusus Anda — sertakan gambar referensi, spesifikasi, atau tautan jika tersedia'
+    - name: 'Unggah Spesifikasi'
+      type: file
+      placeholder: 'Unggah lembar spesifikasi, gambar, atau dokumen referensi Anda (PDF, DWG, DXF)'
+    - name: 'Unggah Logo / Artwork'
+      type: file
+      placeholder: 'Unggah logo atau artwork Anda untuk pencitraan merek kustom (AI, EPS, PNG)'
+cta:
+  title: 'Lebih suka diskusi lewat email?'
+  subtitle: 'Kirim pertanyaan Anda langsung ke tim penjualan kami dan kami akan merespons dalam 24 jam.'
+  actions:
+    - variant: primary
+      text: 'Email kami langsung'
+      href: /contact

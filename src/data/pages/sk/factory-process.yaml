@@ -1,0 +1,52 @@
+meta:
+  title: 'Výrobný proces — od suroviny po SUP | {SITE}'
+  description: 'Od suroviny po SUP pripravenú na more: každý krok výrobného procesu afarer pod našou kontrolou, od strihania a zvárania po testovanie.'
+  keywords:
+    - 'výrobný proces sup'
+    - 'továreň nafukovacích sup'
+    - 'kroky výroby paddle boardov'
+    - 'zváranie pvc sup'
+hero:
+  tagline: 'Proces'
+  title: 'Výrobný proces'
+  subtitle: 'Od suroviny po dosku pripravenú na vodu — každý krok pod našou kontrolou'
+  back_label: 'Späť na továreň'
+  back_link: /factory
+
+intro: 'Na rozdiel od značiek, ktoré prenajímajú výrobu externým továrňam, afarer vlastní a prevádzkuje celý svoj výrobný reťazec. Táto vertikálna integrácia nám umožňuje udržiavať prísnu kontrolu kvality v každej fáze, rýchlo reagovať na zákazkové požiadavky a dodávať konzistentnú kvalitu produktu šaržu za šaržou. Takto sa v našom zariadení stavá doska.'
+
+steps:
+  - step: '01'
+    title: 'Prijatie a kontrola materiálov'
+    description: 'Každá prichádzajúca šarža PVC látky, sklolaminátovej rohože, živice a kovania sa kontroluje proti špecifikácii. Vzorky látok sa pred uvoľnením do výroby testujú na pevnosť v ťahu, rovnomernosť hrúbky a odolnosť voči UV. Materiály nezodpovedajúce špecifikácii sa karanténujú a vracajú.'
+    duration: '1–2 dni'
+  - step: '02'
+    title: 'Automatické strihanie PVC'
+    description: 'Schválené látky sa rozložia na automatickom CNC strihači a strihajú s presnosťou pod milimeter. Počítačom optimalizované rozvrhovanie usporadúva panely tak, aby sa minimalizoval odpad — zvyčajne pod 5 %. Vystrihnuté panely sa označia podľa modelu dosky a komory a zviažu na presun do zváracej dielne.'
+    duration: '2–4 hodiny na sadu dosky'
+  - step: '03'
+    title: 'Tepelné utesňovanie a zváranie trubíc'
+    description: 'Panely sa predpínajú a spájajú na zváračkách s tepelným utesňovaním horúcim vzduchom pri riadených teplotách 200–300 °C. Hlavné švy sa zosilňujú dielektrickým RF zváraním pre vzduchotesné, vysokopevnostné spoje. Hotové komory sa nafukujú na 1,5-násobok pracovného tlaku na 30-minútovú validáciu udržania vzduchu.'
+    duration: '1–2 dni na dosku'
+  - step: '04'
+    title: 'Tlač a dekorácia SUP'
+    description: 'Grafika palúb dosiek SUP sa nanáša digitálnou tlačou pre celofarebné dizajny vo fotokvalite a sitotlačou pre odolné logá a opakujúce sa vzory. Odtlačky sa vytvrdzujú a utesňujú pre odolnosť voči UV a oderu.'
+    duration: '1–2 dni'
+  - step: '05'
+    title: 'Finálna montáž a výstroj'
+    description: 'Dosky sa vybavujú na montážnej linke plutvami, ventilmi, EVA palubami a príslušenstvom. Každá jednotka sa riadi 100-bodovým montážnym kontrolným zoznamom s povinným potvrdením v každej fáze.'
+    duration: '2–4 dni'
+  - step: '06'
+    title: 'Testovanie kvality a kontrola'
+    description: 'Každá dokončená doska prechádza povinnou bránou kvality: testom udržania vzduchu komôr, kontrolou funkcie kovania, overením momentu dotiahnutia spojov a kozmetickou kontrolou. Zákazkové a prototypové stavby absolvujú aj skúšky vo vode zahrňujúce stabilitu a ovládanie.'
+    duration: '1–2 dni'
+  - step: '07'
+    title: 'Balenie a expedícia'
+    description: 'Dosky sa vypustia, zložia podľa postupu, zabalí do pevných tkaných vreciek alebo preglejkových debien a naložia na odoslanie. Každý balík je označený modelom, sériovým číslom a destináciou. Koordinujeme s prepravcami kontajnerové zásielky FCL a LCL po celom svete.'
+    duration: '1 deň'
+
+cta:
+  title: 'Pozrite si naše zariadenia a stroje'
+  desc: 'Preskúmajte priemyselné vybavenie za každou doskou afarer.'
+  label: 'Pozrieť vybavenie →'
+  link: /factory/equipment

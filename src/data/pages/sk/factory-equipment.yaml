@@ -1,0 +1,87 @@
+meta:
+  title: 'Vybavenie továrne — strihanie, RF zváranie a tlač | {SITE}'
+  description: 'Priemyselné výrobné vybavenie afarer: strihanie PVC, RF zváranie, digitálna tlač, montáž a testovanie nafukovacích dosiek SUP.'
+  keywords:
+    - 'výrobné vybavenie sup'
+    - 'továreň nafukovacích sup'
+    - 'rf zváranie pvc'
+    - 'výroba paddle boardov'
+hero:
+  tagline: 'Vybavenie'
+  title: 'Výrobné zariadenia a stroje'
+  subtitle: 'Priemyselné vybavenie v oblasti strihania, zvárania, tlače a montáže'
+  back_label: 'Späť na továreň'
+  back_link: /factory
+
+categories:
+  - title: 'Strihanie a príprava materiálov'
+    items:
+      - name: 'Automatický strihač PVC'
+        spec: 'CNC riadenie, 6,5 m × 2,5 m, presnosť 0,1 mm'
+        desc: 'Počítačom riadený automatický strihač na PVC a drop-stitch látky. Softvér na rozvrhovanie optimalizuje využitie materiálu pod 5 % odpadu.'
+      - name: 'Rozkladač látok'
+        spec: 'max. šírka 3 m, napätím riadené podávanie'
+        desc: 'Kladie látku v jednej alebo viacerých vrstvách s riadeným napätím, aby sa zabránilo deformácii pred strihaním.'
+
+  - title: 'Zváranie a spájanie trubíc'
+    items:
+      - name: 'Zváračka tepelným vzduchom'
+        spec: 'zváranie horúcim vzduchom, premenlivé 200–600 °C, 0,5–5 m/min'
+        desc: 'Zváračka na tepelné utesňovanie horúcim vzduchom na spájanie a zváranie PVC a švov bočníc. Používa sa na predpínanie, utesňovanie a spájanie komôr trubíc a spojov plavákov.'
+      - name: 'Dielektrický RF lis'
+        spec: '15 kW, platňa 2000 × 600 mm'
+        desc: 'Zvárací lis na rádiofrekvenčné zváranie hlavných pozdĺžnych švov, bočných pásov a výroby veľkých komôr.'
+      - name: 'RF zváračka s CNC riadením'
+        spec: '8 kW, XY stôl 2500 × 1200 mm'
+        desc: 'Programovateľné zváranie zakrivených švov pre zložité geometrie, reliéfne logá a presné záplatovanie.'
+
+  - title: 'Výroba dosiek SUP'
+    items:
+      - name: 'Lis na lamináciu drop-stitch jadier'
+        spec: 'veľkoformátový lis pre jadrá dosiek až do 14 ft LOA'
+        desc: 'Presná laminácia drop-stitch jadier na vonkajšie PVC lamináty. Každá vrstva je tlakovo spojená pre konzistentnú kvalitu a pevnosť.'
+      - name: 'CNC fréza (5-osová)'
+        spec: 'pracovný priestor 3 m × 2 m × 1 m, vodou chladený vreten'
+        desc: 'Obrábanie plutvových boxov, výrezov rukovätí a zákazkových komponentov dosiek.'
+
+  - title: 'Tlač a dekorácia SUP'
+    items:
+      - name: 'Digitálna tlačiareň'
+        spec: 'vysokorozlišovací inkjet, šírka tlače až 2 m'
+        desc: 'Priama digitálna tlač na látku pre celofarebnú grafiku palúb SUP. Tlačí vlastné vzory, prechody a fotokvalitné obrázky s UV odolnými vodovými atramentmi.'
+      - name: 'Sitotlačový stroj'
+        spec: 'manuálny a poloautomatický, viacfarebná registrácia'
+        desc: 'Sitotlač pre logá dosiek SUP, značkové značky a opakujúce sa vzory. Poskytuje odolné, krycie odtlačky s výraznou farebnou sýtosťou.'
+
+  - title: 'Montáž a výstroj'
+    items:
+      - name: 'Montážna stanica dosiek'
+        spec: 'modulárne nastaviteľná, viacstanicové rozloženie'
+        desc: 'Montáž plutvových boxov, rukovätí, D-krúžkov, ventilov a palubných podložiek na dosky SUP.'
+      - name: 'Lis na inštaláciu ventilov'
+        spec: 'pneumatický, nastaviteľný tlak'
+        desc: 'Presná inštalácia a utesnenie ventilov Halkey-Roberts a Leafield.'
+      - name: 'Laminátor palubných podložiek'
+        spec: '3 m × 1,5 m, riadená teplota'
+        desc: 'Tepelná laminácia EVA penových palubných podložiek na vrchné strany dosiek SUP s konzistentnou pevnosťou spoja.'
+
+  - title: 'Testovanie a kontrola kvality'
+    items:
+      - name: 'Univerzálny tester pevnosti v ťahu'
+        spec: '50 kN, ASTM D751'
+        desc: 'Testovanie trhacej sily, predĺženia pri trhnutí a šírenia trhliny pre šarže látok.'
+      - name: 'Skúšobné zariadenie na udržanie vzduchu'
+        spec: 'programovateľné, 30-minútové udržanie tlaku'
+        desc: 'Automatický test udržania tlaku pre každú komoru trubice pred montážou.'
+      - name: 'Tester odtrhnutia švov'
+        spec: 'motorizované odtrhnutie 180° pri 100 mm/min'
+        desc: 'Testovanie pevnosti odtrhnutia zvarených a lepených švov podľa EN ISO 25649.'
+      - name: 'Klimatická komora s xenónovou výbojkou'
+        spec: 'expozícia 2000 h'
+        desc: 'Testovanie odolnosti voči UV pre zmenu farby a zachovanie pevnosti.'
+
+cta:
+  title: 'Zaujíma vás prehliadka továrne?'
+  desc: 'Vítame návštevy v našom zariadení v Qingdao. Pozrite sa na naše vybavenie a procesy na vlastné oči.'
+  label: 'Naplánovať návštevu →'
+  link: /contact

@@ -1,0 +1,144 @@
+meta:
+  title: Kontak — Pertanyaan Kemitraan & Produk | {SITE}
+  description: Hubungi afarer untuk pertanyaan kemitraan, co-brand, dan label pribadi, atau armada profesional. Merek SUP tiup, kami merespons dalam 2 hari kerja.
+  keywords:
+    - penawaran distributor sup
+    - pemasok sup profesional
+    - hubungi produsen sup
+hero_text:
+  tagline: Kontak
+  title: HUBUNGI KAMI
+contact_form:
+  id: form
+  title: Kirim pesan kepada kami
+  subtitle: Untuk penawaran, pertanyaan teknis, atau pertanyaan kemitraan, kirimkan pesan kepada kami. Kami membalas dalam satu hari kerja.
+  email_to: info@afarer.com
+  submit_button: Kirim Pertanyaan → Dapatkan Penawaran
+  success_message: Terima kasih! Pesan Anda telah masuk ke kotak masuk kami. Kami akan membalas dalam satu hari kerja.
+  error_message: Terjadi kesalahan saat mengirim pesan Anda. Silakan coba lagi atau kirim email langsung kepada kami.
+  default_country_code: '+1'
+  captcha:
+    label: 'Anti-spam: silakan selesaikan berikut ini'
+  fields:
+    - name: country
+      label: Negara
+      row: 1
+      type: select
+      optionsKey: countries
+      step: 1
+    - name: orderVolume
+      label: Perkiraan Volume Pesanan
+      row: 2
+      type: select
+      options:
+        - value: ''
+          label: Pilih perkiraan volume Anda...
+        - value: sample
+          label: Hanya Sampel / Prototipe
+        - value: 5-10
+          label: 5–10 unit (MOQ Standar)
+        - value: 100-500
+          label: 100–500 unit
+        - value: 500-plus
+          label: 500+ unit (Harga volume)
+      step: 1
+    - name: customization
+      label: Butuh Kustomisasi?
+      row: 3
+      type: select
+      options:
+        - value: ''
+          label: Pilih jenis kustomisasi...
+        - value: none
+          label: Produk standar (tanpa kustomisasi)
+        - value: logo
+          label: Hanya Logo / Branding Kustom
+        - value: full
+          label: Co-Brand Penuh (ukuran, warna, grafis, kemasan)
+        - value: consultation
+          label: Belum yakin — butuh konsultasi
+      step: 1
+    - name: productInterest
+      label: Kategori Produk yang Diminati
+      row: 4
+      type: select
+      options:
+        - value: ''
+          label: Pilih kategori produk...
+        - value: all
+          label: Semua produk / Katalog lengkap
+        - value: sup
+          label: Papan SUP / Paddleboard
+        - value: safety
+          label: Peralatan Keselamatan / Rompi Pelampung
+        - value: accessory
+          label: Aksesori (pompa, dayung, tas)
+      step: 1
+    - name: firstName
+      label: Nama Depan
+      row: 1
+      step: 2
+    - name: lastName
+      label: Nama Belakang
+      row: 1
+      step: 2
+    - name: companyName
+      label: Nama Perusahaan
+      row: 2
+      step: 2
+    - name: email
+      label: E-mail
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: Telepon
+      row: 3
+      type: tel
+      withCountryCode: true
+      step: 2
+    - name: address
+      label: Alamat
+      row: 4
+      step: 2
+    - name: zip
+      label: Kode Pos
+      row: 5
+      step: 2
+    - name: subject
+      label: Subjek
+      row: 1
+      step: 3
+    - name: message
+      label: Pesan
+      row: 2
+      type: textarea
+      rows: 6
+      step: 3
+features2_other_ways:
+  title: Cara lain untuk menghubungi kami
+  columns: 3
+  items:
+    - title: Pertanyaan penjualan
+      description: Penawaran, konfigurasi, pengajuan dealer, dan pesanan grosir.
+      icon: tabler:shopping-bag
+    - title: Dukungan teknis
+      description: Garansi, perbaikan, suku cadang, dan pertanyaan operasional.
+      icon: tabler:tool
+    - title: Pers & kemitraan
+      description: Media kit, sponsor, dan kolaborasi industri.
+      icon: tabler:news
+    - title: Telepon
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: Email
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: Kantor Pusat
+      description: Zona Pengembangan Ekonomi, Laixi, Qingdao, Tiongkok, 266600
+      icon: tabler:map-pin
+map:
+  title: Lokasi Kami
+  subtitle: Kunjungi kami di kantor pusat kami
+  address: Zona Pengembangan Ekonomi, Laixi, Qingdao, Tiongkok, 266600
+  zoom: 15

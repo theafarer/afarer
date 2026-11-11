@@ -1,0 +1,102 @@
+meta:
+  title: 'PVC Fabric Lab — Pagsusuri ng Materyales para sa mga Inflatable SUP | {SITE}'
+  description: 'Maka-agham na pagsusuri ng materyales mula fibre hanggang buong board. Tensile strength, UV weathering, flexibility sa mababang temperatura, at abrasion resistance para sa mga PVC fabric. Makipag-ugnayan sa aming lab team para sa custom na fabric specification.'
+back_text: 'Bumalik sa R&D Center'
+home_label: 'Home'
+
+hero:
+  tagline: 'Lab 01'
+  title: 'PVC Fabric Lab'
+  subtitle: 'Maka-agham na pagsusuri ng materyales — mula fibre hanggang buong board'
+  image: 'https://assets.afarer.com/images/afarer/randd/afarer-pvc-material-lab.webp'
+  image_alt: 'Laboratoryo ng pagsusuri sa PVC fabric material ng Afarer'
+
+intro: 'Ang tela ng deck at rail ang pinakamahalagang materyales sa isang inflatable SUP. Dapat nitong tiisin ang tuloy-tuloy na pagkakalantad sa UV, paulit-ulit na inflation cycle, pagkiskis sa dock at debris, at matitinding pagbabago ng temperatura — lahat habang pinapanatili ang structural integrity nito sa loob ng maraming taon. Sa Afarer, ang aming PVC Fabric Lab ay nakatuon nang eksklusibo sa pagkakarakterisa, validasyon, at patuloy na pagpapabuti ng mga telang ginagamit namin sa bawat board na itinatayo namin.'
+
+content_html: |
+  <h2>Ang pundasyon ng bawat inflatable SUP</h2>
+  <p>Hindi kami umaasa lamang sa mga data sheet ng supplier. Bawat batch ng PVC fabric na pumapasok sa aming workshop ay independiyenteng sinusubukan sa loob ng aming pasilidad. Tinitiyak nito na ang espesipikasyon ng materyales na inilalathala namin ay ang pagganap ng materyales na matatanggap mo — batch matapos ang batch, taon matapos ang taon.</p>
+
+  <h2>Standardisadong kagamitan sa pagsusuri</h2>
+  <p>Ang aming fabric lab ay may industrial-grade na instrumento na sumusunod sa mga paraan ng pagsubok ng ISO, ASTM, at EN:</p>
+  <table>
+    <thead><tr><th>Kagamitan</th><th>Mga Sinusukat na Parameter</th><th>Pamantayan</th></tr></thead>
+    <tbody>
+      <tr><td>Universal tensile tester (50 kN)</td><td>Breaking force, elongation at break, tear propagation</td><td>ISO 1421 / ASTM D751</td></tr>
+      <tr><td>Xenon-arc weathering chamber</td><td>UV resistance (pagbabago ng kulay, pagpapanatili ng lakas pagkatapos ng 2000 h)</td><td>ISO 4892 / ASTM G155</td></tr>
+      <tr><td>Low-temperature flex tester</td><td>Crack point sa -30 °C hanggang -50 °C</td><td>ISO 4675 / ASTM D2136</td></tr>
+      <tr><td>Taber abrasion tester</td><td>Pagbawas ng timbang pagkatapos ng 1000 cycle (CS-10 wheel)</td><td>ASTM D3389 / ISO 5470-1</td></tr>
+      <tr><td>Thickness gauge (digital, 0.001 mm resolution)</td><td>Pare-pareho sa buong lapad ng roll</td><td>ISO 2286-3</td></tr>
+      <tr><td>Hydrostatic head tester</td><td>Paglaban sa pagpasok ng tubig</td><td>ISO 811</td></tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-gray-500">* Ang lahat ng kagamitan ay taunang cinacalibrate ng third-party accredited na laboratoryo.</p>
+
+  <h2>Mula data hanggang desisyon: karaniwang workflow ng pagsubok</h2>
+  <p>Kapag dumating ang isang bagong kandidatong tela, sumusunod ito sa standardisadong pitong-hakbang na proseso ng kwalipikasyon:</p>
+  <ol>
+    <li><strong>Inspeksyon pagkatanggap</strong> — visual na pagsusuri para sa mga depekto sa ibabaw, pinhole, at pagsunod sa dimensyon.</li>
+    <li><strong>Pagmamapa ng kapal</strong> — 20-point na pagsukat sa buong roll; CV &lt; 3% ang kailangan para matanggap.</li>
+    <li><strong>Tensile testing</strong> — 5 specimen sa direksyon ng warp at weft. Minimum na 3500 N/50 mm para sa 1100 dtex PVC.</li>
+    <li><strong>UV conditioning</strong> — 1000 h na pagkakalantad sa xenon-arc chamber; minimum na 80 % na pagpapanatili ng lakas ang kailangan.</li>
+    <li><strong>Cold crack</strong> — 4 h sa -35 °C, pagkatapos ay 180° bend sa ibabaw ng 25 mm mandrel. Walang nakikitang crack.</li>
+    <li><strong>Abrasion resistance</strong> — 1000 cycle, pagbawas ng timbang ≤ 0.05 g.</li>
+    <li><strong>Sign-off ng pag-apruba</strong> — lamang matapos mapasa ang lahat ng pitong gate ang tela ay pinapayagang gamitin sa produksyon.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Karaniwang PVC 1100 dtex — Pagpapanatili ng Tensile Pagkatapos ng UV Exposure</p>
+    <div class="flex items-end gap-3 h-40">
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-600 rounded-t" style="height:100%"></div>
+        <span class="text-xs mt-1">0 h<br />100%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-500 rounded-t" style="height:95%"></div>
+        <span class="text-xs mt-1">500 h<br />95%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-400 rounded-t" style="height:88%"></div>
+        <span class="text-xs mt-1">1000 h<br />88%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-blue-300 rounded-t" style="height:82%"></div>
+        <span class="text-xs mt-1">2000 h<br />82%</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center">
+        <div class="w-full bg-gray-300 rounded-t" style="height:65%"></div>
+        <span class="text-xs mt-1">Kumpetisyon<br />~65%</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Ang aming PVC 1100 dtex fabric ay nagpapanatili ng &gt; 80 % tensile strength pagkatapos ng 2000 h na pagkakalantad sa xenon-arc, kumpara sa mga karaniwang industrial grade na bumababa sa ilalim ng 70 %.</p>
+  </div>
+
+  <h2>Ang aming propesyonal na koponan</h2>
+  <p>Ang lab ay pinapatakbo ng dalawang full-time na material engineer, na bawat isa ay may degree sa polymer science o textile engineering na may minimum na anim na taon ng karanasan sa industriya. Sinusuportahan sila ng tatlong technician na nagsasagawa ng pang-araw-araw na pagsusuri at data logging. Regular na sumasali ang koponan sa inter-laboratory round-robin trial na inorganisa ng International Organization for Standardization (ISO) upang i-validate ang katumpakan ng aming mga paraan ng pagsubok.</p>
+
+  <h2>Paglutas ng iyong pinakamahirap na hamon sa materyales</h2>
+  <p>Magkakaiba ang bawat marine environment. Ang isang rental SUP na gumagana sa ilalim ng tropikal na araw ay nahaharap sa napakalaking pagkakaiba ng UV at temperatura kumpara sa isang lake board sa hilagang latitude. Tinutulungan ka ng aming Fabric Lab na pumili — o bumuo — ng fabric specification na naka-optimize para sa iyong operating profile.</p>
+  <p>Mga kamakailang custom na solusyon:</p>
+  <ul>
+    <li>Isang high-abrasion na PVC blend para sa isang military client na ang mga board ay regular na naglulunsad mula sa coral at mabatong dalampasigan (+40 % buhay ng abrasion).</li>
+    <li>Isang low-temperature na PVC formulation para sa isang Arctic expedition, sinubukan hanggang -50 °C nang hindi nagiging brittling.</li>
+    <li>Isang colour-stabilised na orange na tela para sa isang fleet ng lifeguard at rescue board, na nagpapanatili ng visibility pagkatapos ng 3 taon ng pagkakalantad sa tropikal na araw.</li>
+  </ul>
+  <p>Hindi kami nagbebenta ng mga "off-the-shelf" na tela at umaasa na gagana ang mga ito. Sinusubukan, bine-beripika, at inirerekomenda namin — o binubuo — ang isang tailored na solusyon para sa iyong partikular na mission profile. Iyan ang pagkakaiba ng Afarer.</p>
+
+  <h2>Paano ka namin pinaglilingkuran</h2>
+  <p>Kapag nagdala ka sa amin ng isang hamon sa materyales, ito ang aasahan mo:</p>
+  <ol>
+    <li><strong>Konsultasyon</strong> — pinag-uusapan natin ang iyong operating environment, performance target, at badyet.</li>
+    <li><strong>Proposal</strong> — binubuo ang isang test plan na may malinaw na pass/fail criteria at timeline.</li>
+    <li><strong>Pagsasagawa</strong> — isinasagawa ng aming lab ang mga pagsubok at gumagawa ng detalyadong report na may raw data at comparative analysis.</li>
+    <li><strong>Rekomendasyon</strong> — naglalabas kami ng fabric specification, kabilang ang mga alternatibong opsyon kung maraming materyales ang tumutugon sa iyong mga kinakailangan.</li>
+    <li><strong>Follow-up</strong> — pagkatapos ng paghahatid, nananatiling available kami upang suportahan ang anumang tanong tungkol sa materyales habang nasa serbisyo.</li>
+  </ol>
+  <p>Ang aming layunin ay hindi lamang na ibenta sa iyo ang isang board. Kundi upang masiguro na ang board na matatanggap mo ay maaasahang gumagana sa mga kondisyong kinakayak mo — at nagsisimula iyan sa tela.</p>
+
+cta:
+  title: 'Kailangan ng custom na fabric specification?'
+  subtitle: 'Makipag-ugnayan sa aming material engineering team upang talakayin ang iyong mga kinakailangan.'
+  button_text: 'Makipag-ugnayan sa aming lab team'
+  button_link: /contact

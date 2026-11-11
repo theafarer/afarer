@@ -1,0 +1,181 @@
+meta:
+  title: 'Akadémia — SUP útmutatók és evezési képzés | {SITE}'
+  description: 'afarer Akadémia: felfújható paddle board útmutatók, stand up paddle technikák, vízi biztonság és anyagismeret kezdőknek és szakembereknek.'
+  keywords:
+    - 'stand up paddle tanulás'
+    - 'sup kezdő útmutató'
+    - 'paddle board alapok'
+    - 'sup technika'
+    - 'sup oktatás'
+hero:
+  tagline: 'afarer Akadémia'
+  title: 'Tanulási központ'
+  subtitle: 'Útmutatók és oktatóanyagok minden készségi szinthez — a SUP alapjaitól a haladó mentési technikákig'
+
+categories:
+  - level: 'Kezdő'
+    color: from-green-500 to-emerald-600
+    badge: bg-green-100 text-green-700
+    guides:
+      - title: 'SUP alapok'
+        desc: 'Ismerje meg a stand-up paddleboarding alapjait — állás, evezési technika és egyensúly.'
+        slug: beginner-sup-guide
+      - title: 'Evezési technikák'
+        desc: 'Előreevezés, söpörő evezés, húzó evezés és mély támasz — sajátítsa el a nélkülözhetetlen evezési mozdulatokat.'
+        slug: sup-paddle-guide
+      - title: 'Először a biztonság'
+        desc: 'Alapvető biztonsági gyakorlatok, ideértve az időjárási viszonyok ellenőrzését, a mentőmellény használatát, a leash szabályait és az önementést.'
+        slug: sup-safety-guide
+  - level: 'Középhaladó'
+    color: from-blue-500 to-indigo-600
+    badge: bg-blue-100 text-blue-700
+    guides:
+      - title: 'Túraevezés alapjai'
+        desc: 'Több órás evezések megtervezése — navigáció, folyadékpótlás, tempó és szél-előrejelzések olvasása.'
+        slug: touring-sup-guide
+      - title: 'Időjárás-olvasás'
+        desc: 'Tengeri előrejelzések értelmezése, felhőmintázatok felismerése és a szél vízre gyakorolt hatásainak megértése.'
+        slug: weather-planning-water-sports
+      - title: 'Navigációs alapok'
+        desc: 'Térképolvasás, iránytűhasználat, GPS-pontok és útvonaltervezés partmenti evezéshez.'
+        slug: sup-navigation-guide
+      - title: 'Árapály-tudatosság'
+        desc: 'Az árapályciklusok és áramlatok megértése, valamint hatásuk a vízrebocsátás időzítésére és az útvonalválasztásra.'
+        slug: understanding-tides
+  - level: 'Haladó'
+    color: from-purple-500 to-violet-600
+    badge: bg-purple-100 text-purple-700
+    guides:
+      - title: 'Többnapos túrák tervezése'
+        desc: 'Expedíciós logisztika — felszerelésválasztás, étkezéstervezés, biztonsági protokollok és vészhelyzeti elérhetőségek.'
+        slug: sup-travel-guide
+      - title: 'Mentési technikák'
+        desc: 'Önementés, T-mentés és vontatási protokollok nyílt vízen.'
+        slug: sup-self-rescue
+      - title: 'Éjszakai evezés'
+        desc: 'Navigáció sötétben — világítási követelmények, útvonal-ismeret, csoportos kommunikáció és veszélytudatosság.'
+        slug: ocean-safety-basics
+  - level: 'Karbantartás'
+    color: from-amber-500 to-orange-600
+    badge: bg-amber-100 text-amber-700
+    guides:
+      - title: 'Tisztítás és ápolás'
+        desc: 'Édesvízes öblítés, UV-védelem, penészmegelőzés és megfelelő szárítási technikák minden használat után.'
+        slug: inflatable-sup-maintenance
+      - title: 'Tárolási útmutató'
+        desc: 'Bevált gyakorlatok felfújható SUP deszkák tárolásához — leeresztés, összehajtás, hőmérséklet-szabályozás és eltarthatóság.'
+        slug: inflatable-sup-storage
+      - title: 'Javítási alapok'
+        desc: 'Kis szúrások, varrattömítetlenségek és szelepproblémák javítása PVC-javítókészletekkel és foltozási technikákkal.'
+        slug: inflatable-sup-repair
+      - title: 'Szelepkarbantartás'
+        desc: 'Szeleptípusok azonosítása (Halkey-Roberts, Boston, Leafield), szennyeződés eltávolítása és hibás szeleprészek cseréje.'
+        slug: sup-pump-guide
+
+knowledge_center_tagline: 'Ismeretközpont'
+knowledge_center_title: 'Vízi felszerelési és iparági útmutatók'
+knowledge_center_subtitle: 'Szakértői tudás és vásárlási útmutatók vízi szakembereknek, flottakezelőknek és vízisport-rajongóknak.'
+
+knowledge_sections:
+  - title: 'SUP deszkaismeretek'
+    tagline: 'Stand-up paddleboard útmutatók'
+    desc: 'Minden a SUP deszkákról — deszkatervezés, anyagok, méretválasztás, karbantartás és vásárlási tanácsok szabadidős és kereskedelmi használatra.'
+    guides:
+      - title: 'Hogyan válassza ki a megfelelő SUP deszkát'
+        desc: 'Teljes körű útmutató a SUP kiválasztásához — méret, térfogat, anyag, forma és tervezett felhasználás.'
+        href: '/learn/sup'
+      - title: 'Felfújható vagy kemény SUP'
+        desc: 'Felfújható SUP és kemény epoxi deszka összehasonlítása — hordozhatóság, tartósság, teljesítmény és érték.'
+        href: '/compare/inflatable-vs-hardboard'
+      - title: 'All-Around, túra- vagy jógá-SUP'
+        desc: 'Különböző SUP deszkatípusok — gyártási szabványok, formák, méretek és ajánlott felhasználások.'
+        href: '/learn/sup'
+      - title: 'Drop-Stitch vagy hagyományos gyártás'
+        desc: 'A drop-stitch és a hagyományos gyártás összehasonlítása SUP deszkáknál súly, költség, tartósság és merevség szempontjából.'
+        href: '/learn/drop-stitch-core'
+  - title: 'Felfújható SUP útmutató'
+    tagline: 'Felfújható SUP ismeretek'
+    desc: 'Átfogó útmutatók a felfújható SUP-okról — PVC anyagok, drop-stitch szerkezet, biztonsági szabványok és karbantartási bevált gyakorlatok.'
+    guides:
+      - title: 'PVC anyagútmutató'
+        desc: 'Teljes körű útmutató a felfújható SUP deszkák gyártásához használt PVC anyagokról.'
+        href: '/learn/materials'
+      - title: 'Hogyan készülnek a felfújható SUP-ok'
+        desc: 'Gyártási folyamat — anyagvágás, drop-stitch mag ragasztása, varratszerkezet, nyomásvizsgálat és minőségkontroll.'
+        href: '/learn/inflatable-technology'
+      - title: 'SUP biztonsági útmutató'
+        desc: 'Biztonsági szabványok, terhelési kapacitás, megfelelő felfújás, indulás előtti ellenőrzések és vészhelyzeti eljárások.'
+        href: '/learn/water-safety'
+      - title: 'SUP karbantartás'
+        desc: 'Felfújható SUP deszkák tisztítása, tárolása, UV-védelme és javítása.'
+        href: '/v2/inflatable-sup-maintenance'
+  - title: 'SUP deszkaismeretek'
+    tagline: 'SUP deszka központ'
+    desc: 'Technikai útmutatók SUP deszkatípusokról, anyagokról, gyártási módszerekről, karbantartásról és biztonságról.'
+    guides:
+      - title: 'SUP deszkatípusok'
+        desc: 'All-around, túra, jóga, sport és gyerek SUP-ok — ismerje meg a különbségeket, és válassza a megfelelőt.'
+        href: '/learn/sup'
+      - title: 'Drop-Stitch technológia'
+        desc: 'Hogyan hoznak létre több ezer belső szál merev, nagy nyomású felfújható szerkezeteket.'
+        href: '/learn/drop-stitch-core'
+      - title: 'Anyagreferencia'
+        desc: 'PVC denier értékek, szövetsúlyok, UV-állóság és tengeri minőségű anyagok magyarázata.'
+        href: '/learn/materials'
+      - title: 'SUP vásárlási útmutató'
+        desc: 'Különböző SUP deszkatípusok összehasonlítása eltérő felhasználási célokra és készségi szintekre.'
+        href: '/learn/sup'
+  - title: 'SUP ismeretek'
+    tagline: 'Stand-up paddleboard útmutatók'
+    desc: 'Minden a SUP deszkákról — felfújható vagy merev kivitel, deszkaméretek, anyagtechnológia és szakértői tanácsok minden szinthez.'
+    guides:
+      - title: 'Felfújható vagy kemény SUP'
+        desc: 'iSUP-ok és kemény epoxi deszkák összehasonlítása hordozhatóság, tartósság, teljesítmény és érték szempontjából.'
+        href: '/learn/sup'
+      - title: 'SUP deszkaméretek útmutatója'
+        desc: 'Hogyan befolyásolja a hosszúság, a szélesség és a vastagság a stabilitást, a sebességet és a manőverezőképességet.'
+        href: '/learn/sup'
+      - title: 'SUP karbantartás és ápolás'
+        desc: 'Tisztítási, tárolási, UV-védelmi és javítási tippek felfújható SUP deszkákhoz.'
+        href: '/v2/inflatable-sup-maintenance'
+      - title: 'Az első SUP kiválasztása'
+        desc: 'Kezdők útmutatója a megfelelő stand-up paddleboard kiválasztásához az Ön súlya, készségi szintje és tervezett felhasználása alapján.'
+        href: '/learn/sup'
+  - title: 'Kölcsönzési tevékenységi útmutató'
+    tagline: 'Flottakezelés kölcsönző vállalkozásoknak'
+    desc: 'Útmutatók SUP kölcsönző flották felépítéséhez és kezeléséhez tengerparti pavilonok, vízisportközpontok és vendéglátóhelyek számára.'
+    guides:
+      - title: 'Kölcsönzőflotta felépítése'
+        desc: 'Hogyan válassza ki a megfelelő SUP deszkákat kölcsönzési tevékenységéhez — tartósság, méretezés és megtérülési szempontok.'
+        href: '/solutions/rental-operators'
+      - title: 'Flottakarbantartási útmutató'
+        desc: 'Alapvető karbantartási gyakorlatok a deszkák élettartamának maximalizálásához és az üzemkimaradások minimalizálásához kölcsönzőflottáknál.'
+        href: '/solutions/rental-operators'
+  - title: 'Reszort- és vendéglátó útmutató'
+    tagline: 'Vízi programok a vendéglátásban'
+    desc: 'Útmutatók SUP programok indításához és kezeléséhez reszortok, szállodák és parti úti célok számára.'
+    guides:
+      - title: 'Reszort SUP program indítása'
+        desc: 'Vendég SUP programok indításakor figyelembe veendő szempontok — flottaméretezés, személyzet és bevételi modellezés.'
+        href: '/solutions/resorts-hotels'
+      - title: 'SUP és más vízi programok'
+        desc: 'SUP programok összehasonlítása más vízisportokkal vendégélmény és működési hatékonyság szempontjából.'
+        href: '/learn/sup'
+  - title: 'Kiskereskedelmi és disztribúciós útmutató'
+    tagline: 'SUP üzleti partnerségek'
+    desc: 'Útmutatók SUP kiskereskedelmi partnerré vagy forgalmazóvá váláshoz — készlettervezés, piaci pozicionálás és növekedési stratégiák.'
+    guides:
+      - title: 'SUP kiskereskedővé válás'
+        desc: 'Hogyan válasszon termékcsaládokat, kezelje a készletet és értékesítse a SUP deszkákat kiskereskedelmében.'
+        href: '/solutions/retail-partners'
+      - title: 'SUP kereskedelmi üzemeltetéshez'
+        desc: 'Miért sokoldalú termék a felfújható SUP kereskedelmi flották, kölcsönző vállalkozások és szakmai üzemeltetők számára.'
+        href: '/solutions/rental-operators'
+
+read_guide: 'Útmutató elolvasása →'
+
+cta:
+  title: 'Nem tudja, hol kezdje?'
+  desc: 'Töltse ki készségfelmérő kvízünket, és megtalálja a szintjéhez illő útmutatókat és felszerelést.'
+  label: 'Vegye fel velünk a kapcsolatot →'
+  link: /contact

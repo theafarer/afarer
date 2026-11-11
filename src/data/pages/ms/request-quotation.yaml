@@ -1,0 +1,99 @@
+meta:
+  title: 'Minta Sebut Harga — Pembuatan SUP OEM | {SITE}'
+  description: 'Minta sebut harga terperinci untuk projek SUP boleh tiup anda. Pembuatan OEM/ODM, label persendirian atau armada tersuai — kami membalas dalam masa 2 hari bekerja.'
+  keywords:
+    - 'minta sebut harga sup'
+    - 'sebut harga papan dayung oem'
+    - 'sebut harga kilang sup'
+    - 'harga sup boleh tiup'
+hero_text:
+  tagline: 'Dapatkan Sebut Harga'
+  title: 'Minta Sebut Harga<br />untuk Projek Anda'
+  subtitle: 'Beritahu kami tentang keperluan anda dan pasukan kami akan membalas dengan sebut harga terperinci dalam masa 2 hari bekerja.'
+steps2_process:
+  title: 'Bagaimana Ia Berfungsi'
+  subtitle: 'Empat langkah mudah daripada pertanyaan hingga sebut harga.'
+  items:
+    - title: 'Langkah 1: Hantar Keperluan Anda'
+      description: 'Isikan borang di bawah dengan jenis produk, kuantiti dan spesifikasi anda. Semakin terperinci maklumat yang anda berikan, semakin tepat sebut harga anda.'
+      icon: tabler:file-text
+    - title: 'Langkah 2: Kami Semak & Menasihati'
+      description: 'Pasukan kejuruteraan kami menyemak keperluan anda dan mungkin menghubungi anda untuk penjelasan. Kami menyediakan cadangan tentang konfigurasi dan pilihan produk.'
+      icon: tabler:users
+    - title: 'Langkah 3: Terima Sebut Harga Anda'
+      description: 'Anda menerima sebut harga terperinci termasuk harga seunit, MOQ, masa tertib, terma pembayaran dan pilihan penghantaran. Biasanya dalam masa 48 jam.'
+      icon: tabler:currency-dollar
+    - title: 'Langkah 4: Sampel & Pengeluaran'
+      description: 'Selepas sebut harga diterima, kami meneruskan kepada pengeluaran sampel (jika berkenaan) atau terus kepada pengeluaran besar-besaran. Kemaskini berkala sepanjang proses.'
+      icon: tabler:building-factory
+content_form:
+  tagline: 'Borang Sebut Harga'
+  title: 'Beritahu Kami Tentang Projek Anda'
+  subtitle: 'Semua medan bertanda * adalah wajib.'
+  contact_fields:
+    firstName: 'Nama Pertama'
+    lastName: 'Nama Terakhir'
+    companyName: 'Nama Syarikat'
+    email: 'E-mel'
+  fields:
+    - name: 'Kategori Produk'
+      type: select
+      options:
+        - 'Papan SUP'
+        - 'SUP Boleh Tiup'
+        - 'Papan SUP Boleh Tiup'
+        - 'Jaket Keselamatan'
+        - 'Aksesori Marin'
+        - 'OEM/ODM Tersuai'
+    - name: 'Aplikasi'
+      type: select
+      options:
+        - 'Pusat Selam Skuba'
+        - 'Memancing'
+        - 'Pelancongan Marin / Taman Peranginan'
+        - 'Cari & Selamat'
+        - 'Kerajaan / Tentera'
+        - 'OEM / Label Persendirian'
+        - 'Peribadi / Rekreasi'
+        - 'Lain-lain'
+    - name: 'Kuantiti'
+      type: text
+      placeholder: 'cth. 50 unit'
+    - name: 'Pasaran Sasaran'
+      type: text
+      placeholder: 'cth. Eropah, Amerika Utara, Timur Tengah'
+    - name: 'Negara Penghantaran'
+      type: text
+      placeholder: 'cth. Itali, UAE, AS, Australia'
+    - name: 'Pilihan Bahan'
+      type: select
+      options:
+        - 'Tiada Pilihan'
+        - 'PVC Gred Marin (1100 dtex)'
+        - 'Lambung Gentian Kaca'
+        - 'Lambung Aluminium'
+    - name: 'Keperluan Enjin'
+      type: text
+      placeholder: 'cth. persediaan dayung standard, pam elektrik, warna tersuai'
+    - name: 'Penyesuaian Diperlukan'
+      type: text
+      placeholder: 'cth. warna tersuai, penjenamaan/logo, pembungkusan, kelengkapan khusus'
+    - name: 'Garis Masa'
+      type: text
+      placeholder: 'cth. penghantaran dalam masa 90 hari'
+    - name: 'Keperluan Tambahan'
+      type: textarea
+      placeholder: 'Terangkan aplikasi anda, spesifikasi teknikal atau sebarang keperluan khusus — sertakan lukisan rujukan, spesifikasi atau pautan jika ada'
+    - name: 'Muat Naik Spesifikasi'
+      type: file
+      placeholder: 'Muat naik helaian spesifikasi, lukisan atau dokumen rujukan anda (PDF, DWG, DXF)'
+    - name: 'Muat Naik Logo / Karya Seni'
+      type: file
+      placeholder: 'Muat naik logo atau karya seni anda untuk penjenamaan tersuai (AI, EPS, PNG)'
+cta:
+  title: 'Lebih suka berbincang melalui e-mel?'
+  subtitle: 'Hantar pertanyaan anda terus kepada pasukan jualan kami dan kami akan membalas dalam masa 24 jam.'
+  actions:
+    - variant: primary
+      text: 'E-mel kami terus'
+      href: /contact

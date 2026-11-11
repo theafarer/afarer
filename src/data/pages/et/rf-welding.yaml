@@ -1,0 +1,89 @@
+meta:
+  title: 'RF-keevituse keskus — dielektriline ühendamine õhukindlate õmbluste jaoks | {SITE}'
+  description: 'Raadiosagedusliku keevituse tehnoloogia, mis tagab vastavuses õhukindlad õmblused. Koortestid, õhukindluse valideerimine ja kohandatud õmbluste spetsifikatsioonid.'
+back_text: 'Tagasi R&D keskusesse'
+home_label: 'Kodu'
+
+hero:
+  tagline: 'Labor 03'
+  title: 'RF-keevituse keskus'
+  subtitle: 'Dielektriline ühendamistehnoloogia õmblustele, mis peavad survel vastu'
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1-1200w.webp'
+  image_alt: 'Afarer RF-keevituse dielektriline ühendamisprotsess'
+
+intro: 'Täispuhutav SUP on vaid nii usaldusväärne kui selle õmblused. Üks nõrk keevitus võib kogu kambrile kahju teha — ja merel pole kambri rike ebamugavus; see on ohutusoht. Afareris oleme investeerinud spetsiaalsesse raadiosagedusliku (RF) keevituse keskusesse, mis ühendab tööstuslikud dielektrilised keevituspressid range protsessikontrolli ja järelkeevitustestimisega. Iga meie toodetud õmblus on dokumenteeritud, jälgitav ja sertifitseeritud vastama või ületama EN ISO 25649 nõudeid — Euroopa standardit täispuhutavale vabaajavarustusele.'
+
+content_html: |
+  <h2>Teadus õmbluse taga</h2>
+  <p>RF-keevitus kasutab kõrgsageduslikku elektromagnetilist energiat (tavaliselt 27,12 MHz), et ergutada polaarseid molekule PVC-kattega kanga sees, tekitades soojust täpselt materjali piirpinnal. Erinevalt kuuma õhu või kuumkiilu keevitusest loob RF-keevitus tõelise molekulaarse sideme — kaks kanga kihti sulavad keevitustsoonis ühtseks homogeenseks materjaliks, andes liigendi, mis on sama tugev kui põhimaterjal ise.</p>
+
+  <h2>Keevituse seadmed ja protsessikontroll</h2>
+  <p>Meie keevituskeskus on varustatud:</p>
+  <table>
+    <thead><tr><th>Masin</th><th>Võimsus / maht</th><th>Rakendus</th></tr></thead>
+    <tbody>
+      <tr><td>Dielektriline RF press 1</td><td>15 kW, plaat 2000 × 600 mm</td><td>Põhilised pikisuunalised õmblused, reelingu-kere liigendid</td></tr>
+      <tr><td>Dielektriline RF press 2</td><td>10 kW, plaat 1500 × 500 mm</td><td>Vaheseinte keevitused, reelingute sulgemisliigendid, ventiililapud</td></tr>
+      <tr><td>CNC-juhitav RF keevitaja</td><td>8 kW, XY laud 2500 × 1200 mm</td><td>Kõverad õmblused, logo/paneelli reljeef, täpne lapitöö</td></tr>
+      <tr><td>Kuumkiilu automaatkeevitaja</td><td>Muudetav temperatuur, maks. 1,2 m/min</td><td>Varumeetod paksu PVC-reelingukanga ja parandustööde jaoks</td></tr>
+    </tbody>
+  </table>
+  <p>Iga RF press on varustatud suletud ahelaga temperatuuri ja rõhu jälgimisega. Keevitusparameetrid — võimsus, survaaeg, jahutusaeg, elektroodi rõhk — programmeeritakse materjalitüübi järgi ja salvestatakse meie tootmise jooksval süsteemis (MES) täieliku jälgitavuse tagamiseks.</p>
+
+  <h2>Õmbluse kvaliteeditestid — iga õmblus, iga laud</h2>
+  <p>Õmbluse terviklikkus kontrollitakse kohustusliku nelja testi protokolliga:</p>
+  <ol>
+    <li><strong>Visuaalne kontroll</strong> — 100 % õmblustest kontrollitakse visuaalselt läbipõlemise, nihke, saastatuse või mittetäieliku sulamise suhtes. Tagasilükkamise künnis: 0,5 % lineaarmeetritest.</li>
+    <li><strong>Koortest</strong> — 25 mm laiune riba lõigatakse testproovist, mis on keevitatud iga tootmispartiiga. Minimaalne koorejõud: 120 N/25 mm PVC 1100 dtex korral.</li>
+    <li><strong>Õhukindluse test</strong> — Iga valmis kamber survestatakse 1,5 × töörõhuni ja hoitakse 30 minutit. Rõhu langus ei tohi ületada 2 %.</li>
+    <li><strong>Termilise tsükleerimise test</strong> — Näidisproovid tsüklitakse -20 °C-st +60 °C-ni 50 tsüklit, seejärel koortestitakse uuesti. Lubatav tugevuse kadu: &lt; 10 %.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Kooretugevuse võrdlus — RF vs kuuma õhu keevitus (PVC 1100 dtex)</p>
+    <div class="space-y-3">
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">RF-keevitus</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">184 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Kuuma õhuga</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">130 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Min</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-green-500 rounded" style="width:48%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">96 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">RF-keevitus saavutab järjekindlalt 90-95 % põhimaterjali tugevusest, mis on oluliselt üle miinimumi.</p>
+  </div>
+
+  <h2>Professionaalne ekspertiis</h2>
+  <p>Meie keevitusmeeskonda juhib vanemprotsessiinsener, kellel on 11 aastat kogemust kaetud tekstiilide dielektrilises keevitamises. Iga operaator läbib 6-kuulise sertifitseerimisprogrammi enne tootmisõmblustele asumist. Kordussertifitseerimine on vajalik igal aastal, sealhulgas praktiline keevitustest, mida hinnatakse meie sisese A-klassi standardi järgi (kooretugevus ≥ 160 N/25 mm).</p>
+
+  <h2>Kohandatud keevituslahendused erinõuetele</h2>
+  <p>Me mõistame, et üks keevituse spetsifikatsioon ei sobi igale rakendusele. Meie RF-keevituse keskus arendab regulaarselt kohandatud õmbluse konfiguratsioone erinõuetega klientidele:</p>
+  <ul>
+    <li><strong>Mitmekihilised tugevdamislapid</strong> — kõrgkulunud aladele nagu nina- ja ahtrireelingud arendame mitmekäigulisi RF-keevitusi, mis integreerivad kulumiskindla väliskihi ohverdamata painduvust.</li>
+    <li><strong>Juhtivad või RF-läbimatud õmblused</strong> — sõjaliste või järelevalverakenduste jaoks, mis nõuavad elektromagnetilist varjestust, keevitame juhtiva võrgukihi õmbluse paketi sisse.</li>
+    <li><strong>Värvivahetuspaneelide keevitamine</strong> — kahevärvilised kangapaneelid (nt oranž kere + hall tekk) keevitatakse varjatud ülekattega, et säilitada brändi esteetika ilma nähtava liigendita.</li>
+  </ul>
+
+  <h2>Meie pühendumus teile</h2>
+  <p>Iga meie tarnitud laud kannab meie keevituskvaliteedi garantiid: kui mistahes õmblus rikneb tavapärasel kasutusel garantii ajal, parandame või asendame mõjutatud kambris tasuta ja viiakse läbi põhjuste uurimine kordumise vältimiseks. See ei ole lihtsalt garantii — see on pühendumus pidevale täiustamisele, mida juhivad reaalsed tööandmed.</p>
+  <p>Kui valite Afareri, valite õmblused, mis on insenerlikult kavandatud, testitud ja dokumenteeritud — mitte lihtsalt keevitatud. See on vahe lauaga, mis ujub, ja lauaga, mis toimib.</p>
+
+cta:
+  title: 'Arutage oma keevitusnõudeid'
+  subtitle: 'Kohandatud õmbluse spetsifikatsioonid, materjalide ühilduvus või protsessi valideerimine.'
+  button_text: 'Võtke ühendust meie keevitusmeeskonnaga'
+  button_link: /contact

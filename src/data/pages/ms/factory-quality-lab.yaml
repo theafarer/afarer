@@ -1,0 +1,68 @@
+meta:
+  title: 'Makmal Kualiti — Pengujian & Jaminan Kualiti | {SITE}'
+  description: 'Makmal kualiti bebas dengan proses ISO 9001 di afarer: setiap unit diuji sebelum penghantaran untuk menjamin kualiti SUP boleh tiup.'
+  keywords:
+    - 'kawalan kualiti sup'
+    - 'makmal ujian papan dayung'
+    - 'kilang sup iso 9001'
+    - 'kualiti sup boleh tiup'
+hero:
+  tagline: 'Makmal Kawalan Kualiti'
+  title: 'Makmal Pengujian & Jaminan Kualiti'
+  subtitle: 'Makmal kualiti bebas dengan proses ISO 9001 — setiap unit diuji sebelum penghantaran'
+
+intro: 'afarer mengendalikan makmal kawalan kualiti khusus yang beroperasi secara bebas daripada pengeluaran. Setiap kelompok bahan mentah dan setiap papan siap melalui protokol pemeriksaan terdokumen sebelum dilepaskan. Pasukan QC kami melapor terus kepada pengurusan, memastikan keputusan kualiti yang berkecuali.'
+
+highlights:
+  - value: '100%'
+    label: 'Unit diuji tekanan'
+    detail: 'Setiap kebuk, setiap papan'
+  - value: '24–48 j'
+    label: 'Tempoh ujian pengekalan udara'
+    detail: 'Pada tekanan 1.25× rating'
+  - value: '&lt;5%'
+    label: 'Penurunan tekanan maksimum dibenarkan'
+    detail: 'Sepanjang tempoh tahanan 24–48 jam'
+  - value: 'AQL 2.5'
+    label: 'Ambang kecacatan utama'
+    detail: 'Mengikut persampelan ISO 2859'
+
+test_procedures:
+  - title: 'Pemeriksaan Bahan Mentah'
+    description: 'Setiap kelompok masuk PVC, fabrik drop-stitch dan perkakasan diuji sebelum penerimaan. Kekuatan tegangan (ASTM D751), rintangan koyakan (ISO 4674) dan rintangan UV disahkan. Bahan yang tidak mematuhi dikuarantin dan dipulangkan.'
+    standards:
+      - 'ASTM D751 (tegangan)'
+      - 'ISO 4674 (koyakan)'
+      - 'ISO 4892 (UV)'
+  - title: 'Titik Semakan QC Dalam Proses'
+    description: 'Operator pengeluaran melakukan pemeriksaan kendiri di setiap peringkat. Pengaudit QC menjalankan persampelan rawak sepanjang syif. Ujian pengelupasan kimpalan dilakukan setiap 50 unit. Semakan dimensi dilakukan pada setiap panel ke-20.'
+    standards:
+      - 'ASTM D751 (pengelupasan)'
+      - 'Senarai semak dalaman 100 perkara'
+      - 'Persampelan ISO 2859'
+  - title: 'Ujian Pengekalan Udara 24–48 Jam'
+    description: 'Setiap kebuk tiub dilambung kepada 125% daripada tekanan rating dan ditahan selama 24–48 jam. Penderia tekanan merekod secara berterusan dengan pemampasan suhu. Mana-mana kebuk yang melebihi penurunan tekanan 5% mencetuskan pemeriksaan semula kelompok secara automatik.'
+    standards:
+      - 'EN ISO 25649'
+      - 'CE 2013/53/EU'
+  - title: 'Ujian Beban & Imbangan'
+    description: 'Papan siap diuji pada kapasiti rating maksimum untuk kestabilan dan kekakuan. Setiap papan menjalani ujian air sebelum kelulusan pemeriksaan akhir.'
+    standards:
+      - 'ISO 12217'
+      - 'CE 2013/53/EU'
+
+equipment:
+  - name: 'Mesin Ujian Universal (tegangan)'
+    spec: '5 kN, mematuhi ASTM D751'
+  - name: 'Penguji Reputan Tekanan'
+    spec: 'Berbilang saluran, 0–50 psi, perekodan data'
+  - name: 'Kebuk Luluhawa UV'
+    spec: 'ISO 4892, kitaran 1,000 jam'
+  - name: 'Tolok Ketebalan (digital)'
+    spec: 'Resolusi 0.01 mm'
+  - name: 'Penguji Pengelupasan (kimpalan)'
+    spec: 'Bermotor, kapasiti 50 N'
+  - name: 'Kebuk Suhu'
+    spec: '-40 °C hingga +100 °C'
+  - name: 'Tangki Pengesanan Kebocoran'
+    spec: '6 m × 2 m, bercahaya'

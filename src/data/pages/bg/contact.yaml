@@ -1,0 +1,144 @@
+meta:
+  title: Контакт — Запитвания за партньорство и продукти | {SITE}
+  description: Свържете се с afarer за партньорство, съвместни марки и поръчки под собствена марка, или професионални флотилии. Марка надуваеми SUP — отговаряме в рамките на 2 работни дни.
+  keywords:
+    - оферта за sup дистрибутор
+    - професионален sup доставчик
+    - контакт с производител на sup
+hero_text:
+  tagline: Контакт
+  title: СВЪРЖЕТЕ СЕ С НАС
+contact_form:
+  id: form
+  title: Изпратете ни съобщение
+  subtitle: За оферти, технически въпроси или запитвания за партньорство — пишете ни. Отговаряме в рамките на един работен ден.
+  email_to: info@afarer.com
+  submit_button: Изпратете запитване → Вземете оферта
+  success_message: Благодарим! Вашето съобщение пристигна в нашата пощенска кутия. Ще отговорим в рамките на един работен ден.
+  error_message: Нещо се обърка при изпращането на вашето съобщение. Моля, опитайте отново или ни пишете директно на имейла.
+  default_country_code: '+1'
+  captcha:
+    label: 'Анти-спам: моля, решете следното'
+  fields:
+    - name: country
+      label: Държава
+      row: 1
+      type: select
+      optionsKey: countries
+      step: 1
+    - name: orderVolume
+      label: Очакван обем на поръчката
+      row: 2
+      type: select
+      options:
+        - value: ''
+          label: Изберете вашия очакван обем...
+        - value: sample
+          label: Само мостри / прототипи
+        - value: 5-10
+          label: 5–10 броя (стандартно MOQ)
+        - value: 100-500
+          label: 100–500 броя
+        - value: 500-plus
+          label: 500+ броя (цени за обем)
+      step: 1
+    - name: customization
+      label: Нужна ли е персонализация?
+      row: 3
+      type: select
+      options:
+        - value: ''
+          label: Изберете тип персонализация...
+        - value: none
+          label: Стандартен продукт (без персонализация)
+        - value: logo
+          label: Само персонализирано лого / брандиране
+        - value: full
+          label: Пълна съвместна марка (размер, цвят, графики, опаковка)
+        - value: consultation
+          label: Не съм сигурен — необходима е консултация
+      step: 1
+    - name: productInterest
+      label: Категории продукти, от интерес
+      row: 4
+      type: select
+      options:
+        - value: ''
+          label: Изберете категория продукти...
+        - value: all
+          label: Всички продукти / Пълен каталог
+        - value: sup
+          label: SUP дъски / дъски за гребане
+        - value: safety
+          label: Спасително оборудване / спасителни жилетки
+        - value: accessory
+          label: Аксесоари (помпи, гребла, чанти)
+      step: 1
+    - name: firstName
+      label: Име
+      row: 1
+      step: 2
+    - name: lastName
+      label: Фамилия
+      row: 1
+      step: 2
+    - name: companyName
+      label: Име на компанията
+      row: 2
+      step: 2
+    - name: email
+      label: Имейл
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: ТЕЛ
+      row: 3
+      type: tel
+      withCountryCode: true
+      step: 2
+    - name: address
+      label: Адрес
+      row: 4
+      step: 2
+    - name: zip
+      label: Пощенски код
+      row: 5
+      step: 2
+    - name: subject
+      label: Тема
+      row: 1
+      step: 3
+    - name: message
+      label: Съобщение
+      row: 2
+      type: textarea
+      rows: 6
+      step: 3
+features2_other_ways:
+  title: Други начини да се свържете с нас
+  columns: 3
+  items:
+    - title: Търговски запитвания
+      description: Оферти, конфигурации, кандидатстване на дилъри и поръчки на едро.
+      icon: tabler:shopping-bag
+    - title: Техническа поддръжка
+      description: Гаранция, ремонти, резервни части и въпроси за експлоатация.
+      icon: tabler:tool
+    - title: Преса и партньорства
+      description: Прес пакети, спонсорство и индустриално сътрудничество.
+      icon: tabler:news
+    - title: Телефон
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: Имейл
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: Централа
+      description: Икономическа зона за развитие, Лайси, Циндао, Китай, 266600
+      icon: tabler:map-pin
+map:
+  title: Нашето местоположение
+  subtitle: Посетете ни в нашата централа
+  address: Икономическа зона за развитие, Лайси, Циндао, Китай, 266600
+  zoom: 15

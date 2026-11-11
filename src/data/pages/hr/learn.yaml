@@ -1,0 +1,81 @@
+meta:
+  title: 'Naučite — SUP i veslanje | {SITE}'
+  description: 'Učite s afarerom: tutorijali za napuhive SUP daske, tehnike veslanja, osnove opreme i nautičko obrazovanje za entuzijaste i tvrtke.'
+  keywords:
+    - 'naučite sup'
+    - 'tutorijal za paddleboard dasku'
+    - 'obrazovanje o napuhivim sup daskama'
+    - 'tehnike veslanja'
+hero:
+  tagline: 'Znanje za istraživanje voda'
+  title: 'Naučite'
+  subtitle: |
+    Vodiči, tutorijali i detaljne analize — sve što vam treba za istraživanje<br />
+    voda sa samopouzdanjem. Od odabira prve SUP daske do savladavanja naprednih tehnika.
+  taglineSection: 'Znanje za svakog veslača. Od početnika do profesionalca.'
+
+featured:
+  tagline: 'Istaknute teme'
+  title: 'Započnite svoje putovanje učenja'
+  subtitle: 'Bilo da ste novi u vodenim sportovima ili želite napredovati, naši vodiči pokrivaju sve.'
+  items:
+    - title: 'Osnove SUP-a'
+      description: 'Sve što početnik treba znati — vrste daska, odabir veličine vesla, stav i savjeti za prvi dan.'
+      icon: 'tabler:lifebuoy'
+      href: '/learn/sup'
+    - title: 'Napuhiva naspram tvrde daske'
+      description: 'Koja je prava za vas? Usporedjujemo prenosivost, izvedbu, trajnost i cijenu jednu uz drugu.'
+      icon: 'tabler:arrows-left-right'
+      href: '/compare/inflatable-vs-hardboard'
+    - title: 'Sigurnost na vodi'
+      description: 'Osnovno znanje o sigurnosti koje bi svaki veslač trebao imati — vrijeme, prsluci za spašavanje, samospašavanje i više.'
+      icon: 'tabler:shield'
+      href: '/learn/water-safety'
+    - title: 'Vodič kroz materijale'
+      description: 'Razredi PVC-a, drop-stitch tehnologija, denier ocjene — razumijte od čega je vaša oprema napravljena.'
+      icon: 'tabler:flask'
+      href: '/learn/materials'
+    - title: 'Vodič za veličinu SUP-a'
+      description: 'Pronađite pravu duljinu, širinu i volumen daske za vašu težinu, vještinu i stil veslanja.'
+      icon: 'tabler:ruler'
+      href: '/size-guide'
+    - title: 'Srednje napredne tehnike'
+      description: 'Poboljšajte svoje veslanje s naprednim zaveslajima, tehnikama okretanja i upravljanjem u valovima.'
+      icon: 'tabler:droplet'
+      href: '/learn/intermediate-techniques'
+
+categories:
+  tagline: 'Kategorije'
+  title: 'Istražite po temi'
+  subtitle: 'Sav sadržaj za učenje organiziran prema razini vještine i interesu.'
+  columns:
+    - title: 'Početnik'
+      items:
+        - 'Osnove SUP-a — počnite ovdje'
+        - 'Napuhiva naspram tvrde daske'
+        - 'Osnove sigurnosti na vodi'
+        - 'Kako odabrati svoju SUP dasku'
+        - 'Vodič za pumpu i pakiranje'
+    - title: 'Srednja razina'
+      items:
+        - 'Tehnike veslanja'
+        - 'Tehnologija napuhivih daska'
+        - 'Referenca materijala'
+        - 'Usporedba razreda PVC-a'
+        - 'Objašnjena drop-stitch jezgra'
+    - title: 'Napredno i profesionalno'
+      items:
+        - 'Upravljanje flotom'
+        - 'Oprema komercijalne klase'
+        - 'Protokoli sigurnosti i spašavanja'
+        - 'Prilagođene izrade i OEM'
+
+cta:
+  title: 'Još imate pitanja?'
+  subtitle: 'Pitajte našeg AI vodiča za personalizirane odgovore o opremi, sigurnosti i tehnikama.'
+  actions:
+    - variant: primary
+      text: 'Pitajte AI savjetnika za vodu'
+      href: '/ai-answer-center'
+    - text: 'Pregledajte sve vodiče'
+      href: '/academy'

@@ -1,0 +1,71 @@
+meta:
+  title: 'SUP-i rendivarustuse tarnija ja laevastikulahendused | {SITE}'
+  description: 'SUP-i rendivarustuse tarnija rendioperaatoritele. Kõrgpöörlemisega kommerts-SUP-lauad, mis on disainitud igapäevaseks kasutuseks — UV-kindel PVC, tugevdatud õmblused, kiiresti kuivavad materjalid. Kasutage oma rendiäri Afareriga.'
+
+hero:
+  tagline: 'Rendioperaatorid'
+  title: 'Kasutage oma rendiäri<br />enesekindlalt'
+  subtitle: 'SUP-i rendivarustuse tarnija rendioperaatoritele. Kõrgpöörlemisega SUP-lauad, mis on disainitud igapäevaseks rendikasutuseks 365 päeva aastas. Teie tulu ei puhka päevagi.'
+  image:
+    src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
+    alt: 'Hõivatud rendikiosk koos külalistele valmis SUP-laudadega'
+
+features:
+  title: 'Ehitatud rendikoormusele'
+  subtitle: 'Iga laud on disainitud 500+ renditsükliks minimaalse hooldusega.'
+  items:
+    - title: '500+ renditsüklit'
+      description: 'Testitud, et vastu pidada igapäevasel kasutusel soolases vees, päikese ja liiva käes.'
+      icon: 'tabler:shield-check'
+    - title: 'UV-kindel kangas'
+      description: 'Ei tuhmu ega halvene pärast 1 aastat välitingimustes hoiustamist.'
+      icon: 'tabler:sun'
+    - title: 'Tugevdatud õmblused'
+      description: '3x tugevamad kui standardne täispuhutava lauaga ehitus.'
+      icon: 'tabler:layers-intersect'
+    - title: 'Kiiresti kuivavad materjalid'
+      description: 'Lauad valmis järgmiseks rendiks vähem kui 30 minutiga.'
+      icon: 'tabler:droplet'
+    - title: 'Kuhjatav hoiustamine'
+      description: 'Ruumisäästev disain — mahutage 40% rohkem laudu samale alale.'
+      icon: 'tabler:stack'
+    - title: 'Värvikodeeritud suurused'
+      description: 'Personal saab õige laua kohe kätte värvikodeeritud suurustega.'
+      icon: 'tabler:color-swatch'
+
+stats:
+  title: 'Operatsiooni mõõdikud'
+  stats:
+    - title: 'Lauade käive'
+      amount: '< 5 min'
+    - title: 'Aastane hooldus'
+      amount: '~15 min/laud'
+    - title: 'Varuosade saatmine'
+      amount: '48h'
+    - title: 'Defektide määr'
+      amount: '< 0,5%'
+
+fleet_guide:
+  title: 'Laevastiku suuruse juhend'
+  subtitle: 'Hinnake laevastiku suurust ja tulupotentsiaali oma rendioperatsioonile.'
+  tiers:
+    - label: 'Väike kiosk'
+      boards: '15-20'
+      revenue: 'XX,XXX USD/a'
+    - label: 'Keskmise suurusega operatsioon'
+      boards: '30-50'
+      revenue: 'XX,XXX USD/a'
+    - label: 'Suur rannarent'
+      boards: '50-100'
+      revenue: 'XXX,XXX USD/a'
+
+cta:
+  title: 'Valmis oma rendiäri laiendama?'
+  subtitle: 'Saage rendihinnad või võrrelge laudmudeleid oma operatsioonile.'
+  actions:
+    - text: 'Hangi rendihinnad'
+      href: '/contact?package=rental'
+      variant: 'primary'
+    - text: 'Võrdle laudmudeleid'
+      href: '/compare'
+      variant: 'secondary'

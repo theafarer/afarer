@@ -1,0 +1,144 @@
+meta:
+  title: 'Makipag-ugnayan — Partnership at mga Tanong sa Produkto | {SITE}'
+  description: 'Makipag-ugnayan sa afarer para sa partnership, co-brand, at private-label na tanong, o propesyonal na fleet. Brand ng inflatable SUP, tumutugon kami sa loob ng 2 business day.'
+  keywords:
+    - 'quote mula sa sup distributor'
+    - 'propesyonal na sup supplier'
+    - 'makipag-ugnayan sa sup manufacturer'
+hero_text:
+  tagline: 'Makipag-ugnayan'
+  title: 'MAGKAROON NG UGNAYAN'
+contact_form:
+  id: form
+  title: 'Magpadala sa amin ng mensahe'
+  subtitle: 'Para sa mga quote, teknikal na tanong o tanong sa partnership, mag-iwan ng mensahe. Tumutugon kami sa loob ng isang business day.'
+  email_to: info@afarer.com
+  submit_button: 'Ipadala ang Tanong → Kumuha ng Quote'
+  success_message: 'Salamat! Napadala na ang iyong mensahe sa aming inbox. Tutugon kami sa loob ng isang business day.'
+  error_message: 'May naganap na mali sa pagpapadala ng iyong mensahe. Pakisubukang muli o i-email kami nang direkta.'
+  default_country_code: '+1'
+  captcha:
+    label: 'Anti-spam: pakisagot ang sumusunod'
+  fields:
+    - name: country
+      label: 'Bansa'
+      row: 1
+      type: select
+      optionsKey: countries
+      step: 1
+    - name: orderVolume
+      label: 'Tinatayang Dami ng Order'
+      row: 2
+      type: select
+      options:
+        - value: ''
+          label: 'Piliin ang iyong tinatayang dami...'
+        - value: sample
+          label: 'Mga Sample / Prototype lamang'
+        - value: '5-10'
+          label: '5–10 unit (Karaniwang MOQ)'
+        - value: '100-500'
+          label: '100–500 unit'
+        - value: '500-plus'
+          label: '500+ unit (Presyo para sa malaking dami)'
+      step: 1
+    - name: customization
+      label: 'Kailangan ng Customization?'
+      row: 3
+      type: select
+      options:
+        - value: ''
+          label: 'Piliin ang uri ng customization...'
+        - value: none
+          label: 'Karaniwang produkto (walang customization)'
+        - value: logo
+          label: 'Custom na Logo / Branding lamang'
+        - value: full
+          label: 'Buong Co-Brand (laki, kulay, graphics, packaging)'
+        - value: consultation
+          label: 'Hindi sigurado — kailangan ng konsultasyon'
+      step: 1
+    - name: productInterest
+      label: 'Mga Kategorya ng Produkto na Interesado'
+      row: 4
+      type: select
+      options:
+        - value: ''
+          label: 'Piliin ang kategorya ng produkto...'
+        - value: all
+          label: 'Lahat ng produkto / Buong catalog'
+        - value: sup
+          label: 'Mga SUP Board / Paddleboard'
+        - value: safety
+          label: 'Kagamitang Pangkaligtasan / Life Vest'
+        - value: accessory
+          label: 'Mga Accessory (pump, sagwan, bag)'
+      step: 1
+    - name: firstName
+      label: 'Pangalan'
+      row: 1
+      step: 2
+    - name: lastName
+      label: 'Apelyido'
+      row: 1
+      step: 2
+    - name: companyName
+      label: 'Pangalan ng Kumpanya'
+      row: 2
+      step: 2
+    - name: email
+      label: 'E-mail'
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: 'TEL'
+      row: 3
+      type: tel
+      withCountryCode: true
+      step: 2
+    - name: address
+      label: 'Address'
+      row: 4
+      step: 2
+    - name: zip
+      label: 'Zip / Postal Code'
+      row: 5
+      step: 2
+    - name: subject
+      label: 'Paksa'
+      row: 1
+      step: 3
+    - name: message
+      label: 'Mensahe'
+      row: 2
+      type: textarea
+      rows: 6
+      step: 3
+features2_other_ways:
+  title: 'Iba pang paraan upang makipag-ugnayan sa amin'
+  columns: 3
+  items:
+    - title: 'Mga tanong sa sales'
+      description: 'Mga quote, configuration, aplikasyon ng dealer at malalaking order.'
+      icon: tabler:shopping-bag
+    - title: 'Teknikal na suporta'
+      description: 'Warranty, pagkukumpuni, spare part at mga tanong sa pagpapatakbo.'
+      icon: tabler:tool
+    - title: 'Press at partnership'
+      description: 'Media kit, sponsorship at kolaborasyon sa industriya.'
+      icon: tabler:news
+    - title: 'Telepono'
+      description: '+86 13305324192'
+      icon: tabler:headset
+    - title: 'Email'
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: 'Headquarters'
+      description: 'Economic Development Zone, Laixi, Qingdao, Tsina, 266600'
+      icon: tabler:map-pin
+map:
+  title: 'Aming Lokasyon'
+  subtitle: 'Bisitahin kami sa aming headquarters'
+  address: 'Economic Development Zone, Laixi, Qingdao, Tsina, 266600'
+  zoom: 15

@@ -1,0 +1,71 @@
+meta:
+  title: 'Dobavitelj opreme za najem SUP in rešitve za flote | {SITE}'
+  description: 'Dobavitelj opreme za najem SUP za operaterje najema. Komercialne deske SUP za visoko obratno, zasnovane za vsakodnevno uporabo — UV-odporen PVC, ojačeni šivi, hitro sušeči materiali. Povečajte svoje najemno podjetje z Afarer.'
+
+hero:
+  tagline: 'Operaterji najema'
+  title: 'Povečajte svoje najemno podjetje<br />z zaupanjem'
+  subtitle: 'Dobavitelj opreme za najem SUP za operaterje najema. Deske SUP za visoko obratno, zasnovane za vsakodnevni najem, 365 dni na leto. Vaši prihodki si nikoli ne vzamejo prostega dneva.'
+  image:
+    src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
+    alt: 'Prometna najemna loča s deskami SUP, pripravljenimi za goste'
+
+features:
+  title: 'Zgrajeno za najemne razmere'
+  subtitle: 'Vsaka deska je zasnovana za 500+ najemnih ciklov z minimalnim vzdrževanjem.'
+  items:
+    - title: '500+ najemnih ciklov'
+      description: 'Preskušeno za vsakodnevno uporabo v slani vodi, soncu in pesku.'
+      icon: 'tabler:shield-check'
+    - title: 'UV-odporna tkanina'
+      description: 'Brez bledenja ali razgradnje po 1 letu shranjevanja na prostem.'
+      icon: 'tabler:sun'
+    - title: 'Ojačeni šivi'
+      description: '3x močnejši od standardne konstrukcije napihljivih desk.'
+      icon: 'tabler:layers-intersect'
+    - title: 'Hitro sušeči materiali'
+      description: 'Deske so pripravljene za naslednji najem v manj kot 30 minutah.'
+      icon: 'tabler:droplet'
+    - title: 'Skladiščenje v skladih'
+      description: 'Prostorsko varčna zasnova — na istem prostoru shranite 40 % več desk.'
+      icon: 'tabler:stack'
+    - title: 'Barvno kodirane velikosti'
+      description: 'Osebje z barvno kodiranimi velikostmi takoj zgrabi pravo desko.'
+      icon: 'tabler:color-swatch'
+
+stats:
+  title: 'Merila obratovanja'
+  stats:
+    - title: 'Obrat deske'
+      amount: '< 5 min'
+    - title: 'Letno vzdrževanje'
+      amount: '~15 min/deska'
+    - title: 'Odpošiljanje delov'
+      amount: '48h'
+    - title: 'Stopnja napak'
+      amount: '< 0.5%'
+
+fleet_guide:
+  title: 'Vodnik po velikosti flote'
+  subtitle: 'Ocenite velikost flote in prihodkovni potencial svoje najemne dejavnosti.'
+  tiers:
+    - label: 'Majhna loča'
+      boards: '15-20'
+      revenue: 'XX,XXX USD/leto'
+    - label: 'Srednje veliko obratovanje'
+      boards: '30-50'
+      revenue: 'XX,XXX USD/leto'
+    - label: 'Velik plažni najem'
+      boards: '50-100'
+      revenue: 'XXX,XXX USD/leto'
+
+cta:
+  title: 'Pripravljeni povečati svoje najemno podjetje?'
+  subtitle: 'Pridobite najemne cene ali primerjajte modele desk za svoje obratovanje.'
+  actions:
+    - text: 'Pridobite najemne cene'
+      href: '/contact?package=rental'
+      variant: 'primary'
+    - text: 'Primerjajte modele desk'
+      href: '/compare'
+      variant: 'secondary'

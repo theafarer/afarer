@@ -1,0 +1,85 @@
+meta:
+  title: 'Štúdio inžinierstva trupov — CAD, FEA a zákazkový dizajn trupov | {SITE}'
+  description: 'Preskúmajte naše štúdio inžinierstva trupov pre CAD dizajn, analýzu metódou konečných prvkov (FEA) a vývoj zákazkových vysokovýkonných trupov SUP. Kontaktujte náš inžiniersky tím a začnite svoj ďalší projekt dosky.'
+back_text: 'Späť na centrum R&D'
+home_label: 'Domov'
+
+hero:
+  tagline: 'Laboratórium 02'
+  title: 'Štúdio inžinierstva trupov'
+  subtitle: 'Digitálna simulácia, štrukturálna inteligencia, zákazkový dizajn trupov'
+  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
+  image_alt: 'Pracovná stanica CAD dizajnu v štúdiu inžinierstva trupov Afarer'
+
+intro: 'Trup je chrbticou každej nafukovacej dosky SUP. Musí byť dostatočne ľahký, aby efektívne kĺzal, dostatočne pevný, aby zvládol skalnaté pobrežia, a dostatočne tuhý, aby premieňal každý záber pádlom na dopredný pohyb. V spoločnosti Afarer kombinuje naše štúdio inžinierstva trupov pokročilé CAD modelovanie, analýzu konečných prvkov (FEA) a desaťročia praktických skúseností s dizajnom dosiek, aby dodávalo trupy optimalizované pre zamýšľanú disciplínu — nie generické tvary prevzaté z katalógu.'
+
+content_html: |
+  <h2>Kde sa stretáva pevnosť s hydrodynamikou</h2>
+  <p>Pracujeme s tromi základnými konštrukčnými platformami — zosilnené drop-stitch PVC jadrá, ručne kladené sklolaminátové lamináty a rotačne vstrekovaný polyetylén — a máme inžinierske schopnosti na dizajn, simuláciu a validáciu každej z nich interne.</p>
+
+  <h2>Návrhové nástroje a normy</h2>
+  <p>Naše digitálne inžinierske prostredie zahŕňa:</p>
+  <table>
+    <thead><tr><th>Schopnosť</th><th>Softvér / Nástroj</th><th>Aplikácia</th></tr></thead>
+    <tbody>
+      <tr><td>3D parametrické modelovanie</td><td>SolidWorks Professional</td><td>Povrch trupu, zosilnenie bočníc a pozdĺžnikov, rozloženie paluby, body upevnenia vybavenia</td></tr>
+      <tr><td>Analýza konečných prvkov</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Mapovanie napätí, modálna analýza, simulácia nárazu</td></tr>
+      <tr><td>Výpočtová dynamika tekutín</td><td>Ansys Fluent / Star-CCM+</td><td>Predikcia hydrodynamického odporu, optimalizácia trimu</td></tr>
+      <tr><td>Inžinierstvo laminátov</td><td>ESAComp / CADEC</td><td>Vrstvenie sklolaminátu, výber jadra, odhad hmotnosti</td></tr>
+      <tr><td>Simulácia toku do foriem</td><td>Moldex3D</td><td>Predikcia hrúbky steny pri rotačnom vstrekovaní</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Náš inžiniersky pracovný postup</h2>
+  <p>Každý dizajn trupu, či už ide o štandardný model alebo plne zákazkový projekt, prechádza prísnym päťfázovým procesom:</p>
+  <ol>
+    <li><strong>Koncept &amp; získavanie požiadaviek</strong> — Stretneme sa s vami, aby sme definovali hmotnosť jazdca a náklad, rozsah rýchlostí, schopnosť zvládať stav vody, požiadavky na prepravu a akékoľvek špeciálne vybavenie misie (palubné držiaky, pozície upevnenia batožiny, integrácia príslušenstva).</li>
+    <li><strong>3D povrchy &amp; hydrostatický výpočet</strong> — Tvar trupu je modelovaný v SolidWorks a kontrolovaný na hydrostatickú stabilitu, distribúciu objemu a vyrovnávací moment pomocou vstavaných analytických nástrojov.</li>
+    <li><strong>Štrukturálna FEA</strong> — Definujú sa zaťažovacie prípady: statické (jazdec + vybavenie), dynamické (dopady pri pristátí na vlnách pri 5g) a náraz na dno (narazenie na skalnaté pobrežie pri 3 m/s). Kontúry napätí sa preskúmajú; bezpečnostný faktor ≥ 2,5 je povinný.</li>
+    <li><strong>CFD optimalizácia odporu</strong> — Trup sa simuluje pri troch podmienkach zaťaženia a piatich rýchlostiach. Zmáčaná plocha povrchu, uhol trimu a zvyškový odpor sa iteratívne znižujú.</li>
+    <li><strong>Revízia dizajnu &amp; vydanie</strong> — Kompletný inžiniersky balík (3D model, FEA správa, CFD správa, odhad hmotnosti, kniha vrstiev) je preskúmaný naším senior inžinierom pred uvoľnením do prototypovej dielne.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA distribúcia napätia — trup touringovej SUP (zosilnený drop-stitch)</p>
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
+        <span class="text-gray-500">Bezpečnostný faktor pri maximálnom zaťažení</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
+        <span class="text-gray-500">Zníženie odporu oproti predchádzajúcej generácii</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
+        <span class="text-gray-500">Špičkový tlak nárazu vlny (projektový limit)</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
+        <span class="text-gray-500">Kumulatívny čas FEA výpočtov v roku 2025</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Zákazková úprava: váš trup, vaše pravidlá</h2>
+  <p>Žiadni dvaja pádlári nemajú rovnaké požiadavky. Rybárska SUP potrebuje široký, stabilný hydroplánujúci trup; touringová doska potrebuje vytláčací trup maximalizujúci kĺzanie; surfová SUP potrebuje odozvové bočnice a vyladený rocker. Vášu aplikáciu nenútime do existujúceho tvaru trupu. Navrhujeme od vašej špecifikácie nahor.</p>
+  <p>Príklady nedávnych zákazkových projektov inžinierstva trupov:</p>
+  <ul>
+    <li>Predĺžená touringová SUP pre karibského ekoturistického operátora, so zosilnenou provou pre pristátia na plážach (+15 % hrúbka bočnice).</li>
+    <li>Vysoko viditeľná hliadková SUP pre prístavný úrad, s integrovanými držiakmi vybavenia a taktickými lištami.</li>
+    <li>Expedičná touringová SUP pre požičovaciu flotilu, so zosilnenými bočnicami a extra upevneniami batožiny.</li>
+  </ul>
+
+  <h2>Naši inžinieri</h2>
+  <p>Štúdio vedie senior inžinier s 14-ročnými skúsenosťami v dizajne vysokovýkonných dosiek, ktorého podporujú dvaja mechanickí inžinieri špecializovaní na FEA a CFD. Všetci traja majú magisterské tituly z námorného alebo strojného inžinierstva z medzinárodne uznávaných univerzít. Tím pravidelne publikuje v odborných časopisoch a prednáša na medzinárodných konferenciách o inžinierstve vysokovýkonných pádlarských športov.</p>
+
+  <h2>Spolupracujte s nami na vašom ďalšom trupe</h2>
+  <p>Od prvej náčrtnnej skice po finálnu správu o napätiach je naše štúdio inžinierstva trupov vaším partnerom pri vytváraní dosky, ktorá nie je len postavená — ale skonštruovaná. Simulačné hodiny investujeme vopred, aby mal každý zvar, každá vrstva laminátu a každý oblúk trupu svoj dôvod.</p>
+  <p>Či potrebujete menšiu úpravu existujúceho modelu alebo úplne nový dizajn od nuly, sme pripravení prediskutovať vaše požiadavky.</p>
+
+cta:
+  title: 'Začnite konzultáciu k dizajnu trupu'
+  subtitle: 'Povedzte nám o vašom profile misie a my navrhneme inžiniersku cestu.'
+  button_text: 'Kontaktovať náš inžiniersky tím'
+  button_link: /contact

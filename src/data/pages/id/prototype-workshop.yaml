@@ -1,0 +1,95 @@
+meta:
+  title: 'Workshop Prototipe — Pembuatan Prototipe SUP Skala Penuh & Uji Laut | {SITE}'
+  description: 'Dari CAD menjadi papan siap air dalam 8-12 minggu. Workshop Prototipe kami membangun, melengkapi, dan menguji laut SUP tiup kustom. Mulai proyek prototipe Anda hari ini.'
+back_text: 'Kembali ke Pusat R&D'
+home_label: 'Beranda'
+
+hero:
+  tagline: 'Lab 05'
+  title: 'Workshop Prototipe'
+  subtitle: 'Dari model CAD menjadi papan siap air — dibangun, dilengkapi, dan terbukti'
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp'
+  image_alt: 'Fabrikasi papan di workshop prototipe Afarer'
+
+intro: 'Model CAD, seberkas detail apa pun, tidak dapat mengungkapkan bagaimana papan benar-benar berkendara hingga bertemu air. Itulah mengapa Workshop Prototipe kami dirancang untuk menerjemahkan data rekayasa menjadi papan fisik yang siap air secepat dan seakurat mungkin. Setiap model Afarer baru — dan setiap pembuatan kustom signifikan — melewati workshop ini sebelum perkakas produksi dikomitmenkan.'
+
+content_html: |
+  <h2>Tempat desain menjadi kenyataan</h2>
+  <p>Workshop ini dilengkapi penuh untuk fabrikasi simultan lambung, rail, dan rigging. Pendekatan alur kerja paralel ini memangkas waktu tunggu prototipe menjadi 8-12 minggu sejak rilis rekayasa, dibandingkan norma industri 16-20 minggu. Ketika aplikasi Anda menuntut solusi khusus, kami dapat bergerak dari konsep hingga validasi di air dalam waktu kurang dari tiga bulan.</p>
+
+  <h2>Kemampuan workshop</h2>
+  <table>
+    <thead><tr><th>Stasiun Kerja</th><th>Peralatan</th><th>Tujuan</th></tr></thead>
+    <tbody>
+      <tr><td>Fabrikasi lambung</td><td>Pemotong kain CNC, press laminasi panas, stasiun penyiapan inti drop-stitch</td><td>Produksi lambung skala penuh dalam ketiga tipe konstruksi</td></tr>
+      <tr><td>Perakitan rail &amp; ruang</td><td>Press las RF, stasiun tacking udara panas, jig uji tiup</td><td>Fabrikasi perakitan rail dan ruang ukuran penuh dengan semua baffle dan valve</td></tr>
+      <tr><td>Rigging &amp; fitting</td><td>Jig routing fin-box, fixture las mount kargo dan pegangan, stasiun pemotongan deck-pad</td><td>Pelengkapan menyeluruh: sirip, mount kargo, leash plug, pegangan, deck pad, valve</td></tr>
+      <tr><td>Ruang instrumentasi</td><td>Sensor kecepatan GPS, transduser tekanan, akselerometer, rangkaian termokopel, pencatat data</td><td>Instalasi dan kalibrasi instrumentasi uji laut</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Perjalanan prototipe — langkah demi langkah</h2>
+  <ol>
+    <li><strong>Serah terima rekayasa</strong> — Paket desain (model 3D, laporan FEA, daftar material, jadwal layup) ditinjau secara formal oleh pemimpin workshop dan insinyur proyek. Setiap kekhawatiran manufaktur ditandai dan diselesaikan sebelum pemotongan dimulai.</li>
+    <li><strong>Produksi lambung</strong> — Lambung dibangun sesuai spesifikasi rekayasa. Untuk konstruksi satu lapis: inti drop-stitch dilaminasi dengan kulit PVC yang dispesifikasikan. Untuk konstruksi dua lapis: kulit tambahan diaplikasikan di atas laminat dasar sebelum pola dipotong. Untuk konstruksi fusi: parameter laminasi dimuat dari lembar proses yang disetujui dan diverifikasi pada kupon pertama.</li>
+    <li><strong>Fabrikasi rail</strong> — Kain dipotong menggunakan templat pola CNC, kemudian dilas RF menjadi rail dan ruang ukuran penuh. Setiap ruang dikembangkan hingga tekanan uji dan dibiarkan selama 24 jam untuk stabilisasi awal.</li>
+    <li><strong>Perakitan &amp; rigging</strong> — Lambung dan rail disatukan. Fin box dan mount kargo dipasang, leash plug dan pegangan bawa dipasang, valve tiup dipasang dengan torsi, dan deck pad diaplikasikan serta disejajarkan.</li>
+    <li><strong>Uji statis</strong> — Sebelum papan menyentuh air, papan menjalani: pemeriksaan daya apung (beban penuh + 30 % cadangan), uji tahan tekanan ruang, uji kebocoran valve, uji tarik pegangan dan mount.</li>
+    <li><strong>Program uji laut</strong> — 20 jam pengujian di air, dirinci di bawah.</li>
+    <li><strong>Tinjauan prototipe</strong> — Rapat persetujuan formal diadakan dengan tim rekayasa, produksi, dan kualitas. Setiap perubahan desain yang diperlukan didokumentasikan dan dimasukkan ke dalam rilis produksi.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Program Uji Laut 20 Jam — Jadwal Pengujian</p>
+    <div class="space-y-2 text-sm">
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">2 jam</span>
+        <span class="flex-1">Familiarisasi air tenang — pelacakan kecepatan rendah, berbelok, pemeriksaan postur dan trim</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">4 jam</span>
+        <span class="flex-1">Uji kecepatan — kecepatan tertinggi terverifikasi GPS, kecepatan jelajah, kecepatan berkelanjutan pada 3 laju dayungan</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 jam</span>
+        <span class="flex-1">Uji berbelok — radius pivot-turn dan sweep-turn, respons papan, kiri dan kanan</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 jam</span>
+        <span class="flex-1">Uji riak — lintasan berulang melalui riak 0,5–1,0 m; akselerometer pada posisi postur pengendara</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 jam</span>
+        <span class="flex-1">Uji stabilitas — sudut kemiringan statis dengan 4 pengendara bobot beragam, beban offset ke kanan</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 jam</span>
+        <span class="flex-1">Jalur ketahanan — 3 jam berkelanjutan pada kecepatan jelajah; pemantauan tekanan ruang, suhu rail, dan kelelahan pengendara</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">2 jam</span>
+        <span class="flex-1">Inspeksi akhir — inspeksi pasca-uji seluruh komponen, mengencangkan/memeriksa semua pengencang, mendokumentasikan temuan</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Prototipe kustom untuk aplikasi unik</h2>
+  <p>Workshop Prototipe adalah tempat kami memecahkan masalah yang tidak dapat diatasi oleh papan produksi standar. Contoh terkini meliputi:</p>
+  <ul>
+    <li>SUP penyelamatan berkepadaran tinggi untuk organisasi search-and-rescue, yang membutuhkan pegangan grab terintegrasi, mount peralatan untuk peralatan penyelamatan, dan lambung daya apung tinggi untuk pemulihan korban — semuanya diprototipekan, dilengkapi, dan diuji di fasilitas kami.</li>
+    <li>SUP touring ekspedisi untuk kontraktor survei hidrografi, dengan tiang instrumen yang dapat dilepas, port peralatan tersegel, dan mount transduser low-profile yang dirancang untuk meminimalkan hambatan.</li>
+    <li>SUP memancing ringkas untuk armada resor, di mana prototipe digunakan untuk memvalidasi stabilitas, rigging peralatan, dan daya tahan dalam penggunaan rental harian sebelum klien berkomitmen pada armada empat unit.</li>
+  </ul>
+
+  <h2>Tim prototyping kami</h2>
+  <p>Workshop ini dijalankan oleh delapan teknisi marinir multi-keahlian, masing-masing dilatih silang dalam minimal dua dari tiga disiplin inti (lambung, rail, rigging). Pemimpin tim adalah fabrikator master dengan pengalaman 16 tahun mulai dari pembuatan one-off kustom hingga seri produksi. Setiap prototipe ditugaskan seorang insinyur proyek khusus yang menjadi titik kontak tunggal untuk klien selama proses pembuatan dan uji coba.</p>
+
+  <h2>Keterlibatan klien</h2>
+  <p>Kami secara aktif mendorong klien kami untuk menghadiri milestone penting selama pembuatan prototipe — khususnya tinjauan fit-out awal dan uji laut. Masukan operasional Anda selama tahap ini sangat berharga untuk menyempurnakan papan sebelum memasuki produksi. Kami tidak membangun dalam kehampaan; kami membangun dalam kemitraan dengan Anda.</p>
+  <p>Uji laut 20 jam juga merupakan kesempatan bagi tim Anda untuk membiasakan diri dengan pengendalian papan, tata letak deck, dan persyaratan perawatan, memastikan transisi mulus ke layanan ketika papan produksi dikirim.</p>
+
+cta:
+  title: 'Mulai proyek prototipe Anda'
+  subtitle: 'Ceritakan papan yang Anda butuhkan dan kami akan mengusulkan rencana pengembangan prototipe.'
+  button_text: 'Hubungi tim prototyping kami'
+  button_link: /contact

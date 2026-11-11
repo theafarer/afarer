@@ -1,0 +1,71 @@
+meta:
+  title: 'Dobavljač opreme za iznajmljivanje SUP-a i rješenja za flote | {SITE}'
+  description: 'Dobavljač opreme za iznajmljivanje SUP-a za operatere iznajmljivanja. Komercijalne SUP daske za veliku rotaciju, konstruirane za svakodnevnu upotrebu — PVC otporan na UV zrake, ojačani šavovi, materijali koji se brzo suše. Povećajte svoj posao iznajmljivanja s Afarerom.'
+
+hero:
+  tagline: 'Operateri iznajmljivanja'
+  title: 'Povećajte svoj posao iznajmljivanja<br />sa samopouzdanjem'
+  subtitle: 'Dobavljač opreme za iznajmljivanje SUP-a za operatere iznajmljivanja. SUP daske za veliku rotaciju, konstruirane za svakodnevno iznajmljivanje, 365 dana u godini. Vaši prihodi nikad ne uzimaju slobodan dan.'
+  image:
+    src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
+    alt: 'Prometna pozornica za iznajmljivanje s SUP daskama spremnim za goste'
+
+features:
+  title: 'Konstruirano za naporeno iznajmljivanje'
+  subtitle: 'Svaka daska je konstruirana za 500+ ciklusa iznajmljivanja uz minimalno održavanje.'
+  items:
+    - title: '500+ ciklusa iznajmljivanja'
+      description: 'Testirano da preživi svakodnevnu upotrebu u slanoj vodi, suncu i pijesku.'
+      icon: 'tabler:shield-check'
+    - title: 'Tkanina otporna na UV zrake'
+      description: 'Bez blijeđenja ili degradacije nakon 1 godine skladištenja na otvorenom.'
+      icon: 'tabler:sun'
+    - title: 'Ojačani šavovi'
+      description: '3x jači od standardne konstrukcije napuhivih daska.'
+      icon: 'tabler:layers-intersect'
+    - title: 'Materijali koji se brzo suše'
+      description: 'Daske spremne za sljedeće iznajmljivanje za manje od 30 minuta.'
+      icon: 'tabler:droplet'
+    - title: 'Skladištenje u slaganju'
+      description: 'Dizajn koji štedi prostor — pohranite 40% više daska na istom prostoru.'
+      icon: 'tabler:stack'
+    - title: 'Veličine označene bojama'
+      description: 'Osoblje odmah grabi pravu dasku uz veličine označene bojama.'
+      icon: 'tabler:color-swatch'
+
+stats:
+  title: 'Metrike poslovanja'
+  stats:
+    - title: 'Obrtaj daska'
+      amount: '< 5 min'
+    - title: 'Godišnje održavanje'
+      amount: '~15 min/daska'
+    - title: 'Otprema dijelova'
+      amount: '48h'
+    - title: 'Stopa defekata'
+      amount: '< 0.5%'
+
+fleet_guide:
+  title: 'Vodič za veličinu flote'
+  subtitle: 'Procijenite veličinu flote i potencijal prihoda svog poslovanja iznajmljivanja.'
+  tiers:
+    - label: 'Mala pozornica'
+      boards: '15-20'
+      revenue: '$XX,XXX/god'
+    - label: 'Poslovanje srednje veličine'
+      boards: '30-50'
+      revenue: '$XX,XXX/god'
+    - label: 'Veliko iznajmljivanje na plaži'
+      boards: '50-100'
+      revenue: '$XXX,XXX/god'
+
+cta:
+  title: 'Spremni povećati svoj posao iznajmljivanja?'
+  subtitle: 'Nabavite cijene za iznajmljivanje ili usporedite modele daska za svoje poslovanje.'
+  actions:
+    - text: 'Nabavite cijene za iznajmljivanje'
+      href: '/contact?package=rental'
+      variant: 'primary'
+    - text: 'Usporedite modele daska'
+      href: '/compare'
+      variant: 'secondary'

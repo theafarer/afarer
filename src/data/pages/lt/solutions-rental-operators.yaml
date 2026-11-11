@@ -1,0 +1,71 @@
+meta:
+  title: 'SUP nuomos įrangos tiekėjas ir parkų sprendimai | {SITE}'
+  description: 'SUP nuomos įrangos tiekėjas nuomos operatoriams. Didelės apyvartos komercinės SUP lentos, sukurtos kasdieniniam naudojimui — UV atsparus PVC, sutvirtintos siūlės, greitai džiūstančios medžiagos. Plėskite savo nuomos verslą su Afarer.'
+
+hero:
+  tagline: 'Nuomos operatoriai'
+  title: 'Plėskite savo nuomos verslą<br />pasitikėdami'
+  subtitle: 'SUP nuomos įrangos tiekėjas nuomos operatoriams. Didelės apyvartos SUP lentos, sukurtos kasdieniniam nuomos naudojimui, 365 dienas per metus. Jūsų pajamos niekada nepailsi.'
+  image:
+    src: https://assets.afarer.com/images/afarer/lifestyle/afarer-lifestyle-1.webp
+    alt: 'Užimtas nuomos kioskas su SUP lentomis, paruoštomis svečiams'
+
+features:
+  title: 'Sukurta nuomos darbui'
+  subtitle: 'Kiekviena lenta sukurta 500+ nuomos ciklams su minimalia priežiūra.'
+  items:
+    - title: '500+ nuomos ciklų'
+      description: 'Išbandyta, kad atlaikytų kasdieninį naudojimą sūriame vandenyje, saulėje ir smėlyje.'
+      icon: 'tabler:shield-check'
+    - title: 'UV atsparus audinys'
+      description: 'Nėra blukimo ar gedimo po 1 metų laikymo lauke.'
+      icon: 'tabler:sun'
+    - title: 'Sutvirtintos siūlės'
+      description: '3 kartus stipresnės už standartinę pripučiamų lentų konstrukciją.'
+      icon: 'tabler:layers-intersect'
+    - title: 'Greitai džiūstančios medžiagos'
+      description: 'Lentos paruoštos kitai nuomai per mažiau nei 30 minučių.'
+      icon: 'tabler:droplet'
+    - title: 'Sudėtinis saugojimas'
+      description: 'Vietą taupantis dizainas — laikykite 40 % daugiau lentų toje pačioje vietoje.'
+      icon: 'tabler:stack'
+    - title: 'Spalvomis pažymėti dydžiai'
+      description: 'Personalas iš karto paima tinkamą lentą su spalvomis pažymėtais dydžiais.'
+      icon: 'tabler:color-swatch'
+
+stats:
+  title: 'Operacijų rodikliai'
+  stats:
+    - title: 'Lentų apyvarta'
+      amount: '< 5 min.'
+    - title: 'Metinė priežiūra'
+      amount: '~15 min./lentai'
+    - title: 'Dalių išsiuntimas'
+      amount: '48 val.'
+    - title: 'Defektų rodiklis'
+      amount: '< 0,5%'
+
+fleet_guide:
+  title: 'Parko dydžio vadovas'
+  subtitle: 'Įvertinkite parko dydį ir pajamų potencialą savo nuomos verslui.'
+  tiers:
+    - label: 'Mažas kioskas'
+      boards: '15–20'
+      revenue: 'XX XXX USD/metus'
+    - label: 'Vidutinio dydžio verslas'
+      boards: '30–50'
+      revenue: 'XX XXX USD/metus'
+    - label: 'Didelė paplūdimio nuoma'
+      boards: '50–100'
+      revenue: 'XXX XXX USD/metus'
+
+cta:
+  title: 'Pasirengę plėsti savo nuomos verslą?'
+  subtitle: 'Gaukite nuomos kainas arba palyginkite lentų modelius savo verslui.'
+  actions:
+    - text: 'Gauti nuomos kainas'
+      href: '/contact?package=rental'
+      variant: 'primary'
+    - text: 'Palyginti lentų modelius'
+      href: '/compare'
+      variant: 'secondary'

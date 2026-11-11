@@ -1,0 +1,85 @@
+meta:
+  title: 'Kereinseneerimise stuudio — CAD, FEA ja kohandatud kere disain | {SITE}'
+  description: 'Tutvu meie kereinseneerimise stuudioga: CAD-disain, lõplike elementide analüüs (FEA) ja kohandatud kõrge jõudlusega SUP-kerede arendamine. Järgmise lauprojekti alustamiseks võtke ühendust meie insenerimeeskonnaga.'
+back_text: 'Tagasi U&A-keskusse'
+home_label: 'Avaleht'
+
+hero:
+  tagline: 'Labor 02'
+  title: 'Kereinseneerimise stuudio'
+  subtitle: 'Digitaalne simuleerimine, konstruktsiooniintelligents, kohandatud kere disain'
+  image: 'https://assets.afarer.com/images/afarer/factory/design discussafarer-inflatable-boat-afarer-factory-exterior.webp'
+  image_alt: 'afarer kereinseneerimise CAD-disaini tööjaam'
+
+intro: 'Kere on iga täispuhutava SUP-i selgroog. See peab olema piisavalt kerge, et efektiivselt libiseda, piisavalt tugev, et taluda kaljurandasid, ja piisavalt jäik, et muuta iga sõudetõmme edasiliikumiseks. afarer kereinseneerimise stuudio ühendab täiustatud CAD-modelleerimise, lõplike elementide analüüsi (FEA) ja aastakümnete praktilise laudisaini kogemuse, et pakkuda kered, mis on optimeeritud oma kavandatud distsipliinile — mitte kataloogist kohandatud üldised kujud.'
+
+content_html: |
+  <h2>Kus jõud kohtub hüdrodünaamikaga</h2>
+  <p>Töötame kolme peamise konstruktsiooniplatvormiga — tugevdatud Drop-Stitch PVC-tuumad, käsitsi paigaldatud klaaskiulaminaadid ja rotatsioonvalatud polüetüleen — ning meil on inseneerimisvõimekus igaühe disainimiseks, simuleerimiseks ja valideerimiseks kohapeal.</p>
+
+  <h2>Disainitööriistad ja standardid</h2>
+  <p>Meie digitaalne inseneerimiskeskkond hõlmab:</p>
+  <table>
+    <thead><tr><th>Võimekus</th><th>Tarkvara / tööriist</th><th>Rakendus</th></tr></thead>
+    <tbody>
+      <tr><td>3D parameetriline modelleerimine</td><td>SolidWorks Professional</td><td>Kere pind, ääre ja pikitugevdamine, tekipaigutus, varustuse kinnituspunktid</td></tr>
+      <tr><td>Lõplike elementide analüüs</td><td>ANSYS Mechanical &amp; LS-DYNA</td><td>Pingekaardistus, modaalanalüüs, põrke-/kokkupuutesimulatsioon</td></tr>
+      <tr><td>Arvutusvedelike dünaamika</td><td>Ansys Fluent / Star-CCM+</td><td>Hüdrodünaamilise takistuse prognoosimine, trimmi optimeerimine</td></tr>
+      <tr><td>Laminaadi inseneerimine</td><td>ESAComp / CADEC</td><td>Klaaskiukihtide paigutus, tuuma valik, kaalu hindamine</td></tr>
+      <tr><td>Valuvoolu simulatsioon</td><td>Moldex3D</td><td>Rotomouldingu seinapaksuse prognoosimine</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Meie inseneerimise töövoog</h2>
+  <p>Iga kere disain, olgu see standardmudel või täielikult kohandatud projekt, läbib range viieetapilise protsessi:</p>
+  <ol>
+    <li><strong>Kontseptsioon ja nõuete kogumine</strong> — Kohtume teiega, et määratleda sõitja kaal ja last, kiiruse vahemik, veeseisundi võimekus, transpordinõuded ning erivarustus (tekikinnitused, lasti kinnituskohad, tarvikute integreerimine).</li>
+    <li><strong>3D pind ja hüdrostaatiline arvutus</strong> — Kere kuju modelleeritakse SolidWorks-is ja kontrollitakse sisseehitatud analüüsivahenditega hüdrostaatilise stabiilsuse, mahu jaotuse ja püstitava momendi osas.</li>
+    <li><strong>Konstruktsiooni FEA</strong> — Määratletakse koormusjuhud: staatiline (sõitja + varustus), dünaamiline (lainelandumise põrked 5g juures) ja põhjale sõitmine (kokkupõrge kaljurannaga kiirusel 3 m/s). Pingejaotust vaadatakse üle; ohutustegur ≥ 2.5 on kohustuslik.</li>
+    <li><strong>CFD takistuse optimeerimine</strong> — Kere simuleeritakse kolmes koormustingimuses ja viiel kiirusel. Märgitud pindala, trimmi nurka ja jääktakistust vähendatakse iteratiivselt.</li>
+    <li><strong>Disaini läbivaatus ja vabastamine</strong> — Kogu inseneerimispaketi (3D-mudel, FEA-aruanne, CFD-aruanne, kaaluhinnang, kihiraamat) vaatab enne prototüübitöökotta vabastamist läbi meie vaneminsener.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">FEA pingejaotus — turismi SUP-i kere (tugevdatud Drop-Stitch)</p>
+    <div class="grid grid-cols-2 gap-4 text-sm">
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">2.8 : 1</span>
+        <span class="text-gray-500">Ohutustegur maksimaalse lasti korral</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">15.2 %</span>
+        <span class="text-gray-500">Takistuse vähenemine võrreldes eelmise põlvkonnaga</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">87 kN/m²</span>
+        <span class="text-gray-500">Tippkokkupõrke rõhk (disainipiir)</span>
+      </div>
+      <div class="p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-950">
+        <span class="block text-2xl font-bold text-blue-600">18 000 h</span>
+        <span class="text-gray-500">Kumulatiivne FEA tööaeg 2025. aastal</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Kohandamine: sinu kere, sinu reeglid</h2>
+  <p>Ühelgi kahel sõudjal pole identseid nõudeid. Kalastus-SUP vajab laia, stabiilset planeerivat keret; turismilaud vajab veeväljatõrjekeret, mis maksimeerib libisemist; surf-SUP vajab reageerivaid ääri ja häälestatud rokkerit. Me ei suru teie rakendust olemasolevasse kerekuju. Me disainime alates teie spetsifikatsioonist ülespoole.</p>
+  <p>Näiteid hiljutistest kohandatud kereinseneerimise projektidest:</p>
+  <ul>
+    <li>Pikendatud turismi-SUP Kariibi mere ökotuuride operaatorile, koos rannalandusteks tugevdatud vööriga (+15 % ääre paksust).</li>
+    <li>Kõrgelt nähtav patrull-SUP sadamaametile, koos integreeritud varustuse kinnituste ja taktikaliste äärtetega.</li>
+    <li>Ekspeditsiooni-turismi-SUP rendilaevastikule, koos tugevdatud äärte ja täiendavate lastikinnitustega.</li>
+  </ul>
+
+  <h2>Meie insenerid</h2>
+  <p>Stuudiot juhib vaneminsener 14 aasta kogemusega kõrge jõudlusega laudade disainis, teda toetavad kaks masinaehitusinseneri, kes on spetsialiseerunud FEA-le ja CFD-ile. Kõigil kolmel on merenduse või masinaehituse kõrgemad kraadid rahvusvaheliselt tunnustatud ülikoolidest. Meeskond avaldab regulaarselt artikleid valdkonna ajakirjades ja esineb rahvusvahelistel konverentsidel kõrge jõudlusega sõudespordi inseneerimise teemadel.</p>
+
+  <h2>Ole meiega partneriks oma järgmise kere loomisel</h2>
+  <p>Esimesest kontseptsioonijoonest kuni lõpliku pingearuandeni on meie kereinseneerimise stuudio teie partneriks laua loomisel, mis ei ole lihtsalt ehitatud — vaid inseneeritud. Me investeerime simuleerimistunnid ette, nii et iga keevisõmblus, iga laminaadikiht ja iga kere kõver on seal põhjusega.</p>
+  <p>Olenemata sellest, kas vajate olemasoleva mudeli väikest muudatust või täiesti nullist disaini, oleme valmis arutama teie nõudeid.</p>
+
+cta:
+  title: 'Alusta oma kere disaini nõustamisega'
+  subtitle: 'Räägi meile oma missiooniprofiilist ja me pakume inseneerimistee.'
+  button_text: 'Võta ühendust meie insenerimeeskonnaga'
+  button_link: /contact

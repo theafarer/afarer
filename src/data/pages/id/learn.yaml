@@ -1,0 +1,81 @@
+meta:
+  title: 'Belajar — SUP & Dayung | {SITE}'
+  description: 'Belajar bersama afarer: tutorial SUP tiup, teknik dayung, dasar-dasar perlengkapan, dan edukasi nautika untuk penggemar dan bisnis.'
+  keywords:
+    - 'belajar sup'
+    - 'tutorial papan dayung'
+    - 'edukasi sup tiup'
+    - 'teknik dayung'
+hero:
+  tagline: 'Pengetahuan Eksplorasi Air'
+  title: 'Belajar'
+  subtitle: |
+    Panduan, tutorial, dan kajian mendalam — semua yang Anda butuhkan untuk menjelajahi<br />
+    air dengan percaya diri. Dari memilih SUP pertama Anda hingga menguasai teknik tingkat lanjut.
+  taglineSection: 'Pengetahuan untuk setiap pendayung. Dari pemula hingga profesional.'
+
+featured:
+  tagline: 'Topik Pilihan'
+  title: 'Mulai perjalanan belajar Anda'
+  subtitle: 'Baik Anda baru mengenal olahraga air maupun ingin meningkatkan kemampuan, panduan kami siap membantu Anda.'
+  items:
+    - title: 'Dasar-Dasar SUP'
+      description: 'Semua yang perlu diketahui pemula — jenis papan, ukuran dayung, posisi berdiri, dan tips hari pertama.'
+      icon: 'tabler:lifebuoy'
+      href: '/learn/sup'
+    - title: 'Papan Tiup vs Papan Keras'
+      description: 'Mana yang tepat untuk Anda? Kami membandingkan portabilitas, performa, daya tahan, dan biaya secara berdampingan.'
+      icon: 'tabler:arrows-left-right'
+      href: '/compare/inflatable-vs-hardboard'
+    - title: 'Keselamatan Air'
+      description: 'Pengetahuan keselamatan esensial yang harus dimiliki setiap pendayung — cuaca, PFD, penyelamatan diri, dan lainnya.'
+      icon: 'tabler:shield'
+      href: '/learn/water-safety'
+    - title: 'Panduan Material'
+      description: 'Grade PVC, teknologi drop-stitch, rating denier — pahami dari apa perlengkapan Anda dibuat.'
+      icon: 'tabler:flask'
+      href: '/learn/materials'
+    - title: 'Panduan Ukuran SUP'
+      description: 'Temukan panjang, lebar, dan volume papan yang tepat untuk berat badan, kemampuan, dan gaya dayung Anda.'
+      icon: 'tabler:ruler'
+      href: '/size-guide'
+    - title: 'Teknik Menengah'
+      description: 'Tingkatkan dayungan Anda dengan stroke tingkat lanjut, teknik berbalik, dan penanganan air yang berombak.'
+      icon: 'tabler:droplet'
+      href: '/learn/intermediate-techniques'
+
+categories:
+  tagline: 'Kategori'
+  title: 'Jelajahi berdasarkan topik'
+  subtitle: 'Semua konten pembelajaran diorganisir berdasarkan tingkat keahlian dan minat.'
+  columns:
+    - title: 'Pemula'
+      items:
+        - 'Dasar-Dasar SUP — mulai di sini'
+        - 'Papan Tiup vs Papan Keras'
+        - 'Esensial Keselamatan Air'
+        - 'Cara Memilih SUP Anda'
+        - 'Panduan Pompa & Packing'
+    - title: 'Menengah'
+      items:
+        - 'Teknik Dayung'
+        - 'Teknologi Tiup'
+        - 'Referensi Material'
+        - 'Perbandingan Grade PVC'
+        - 'Penjelasan Inti Drop-Stitch'
+    - title: 'Lanjutan & Profesional'
+      items:
+        - 'Operasi Armada'
+        - 'Peralatan Kelas Komersial'
+        - 'Protokol Keselamatan & Penyelamatan'
+        - 'Build Kustom & OEM'
+
+cta:
+  title: 'Masih punya pertanyaan?'
+  subtitle: 'Tanyakan pada panduan AI kami untuk jawaban personalisasi tentang perlengkapan, keselamatan, dan teknik.'
+  actions:
+    - variant: primary
+      text: 'Tanya AI Penasihat Air'
+      href: '/ai-answer-center'
+    - text: 'Jelajahi semua panduan'
+      href: '/academy'

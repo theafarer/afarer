@@ -1,0 +1,81 @@
+meta:
+  title: 'Õpi — SUP ja sõudmine | {SITE}'
+  description: 'Õpi afarerga: täispuhutavate SUP-ide õpetused, sõudetehnikad, varustuse põhitõed ja merendusharidus huvilistele ja ettevõtetele.'
+  keywords:
+    - 'learn sup'
+    - 'paddle board tutorial'
+    - 'täispuhutavate SUP-ide õpe'
+    - 'paddle techniques'
+hero:
+  tagline: 'Vee avastamise teadmised'
+  title: 'Õpi'
+  subtitle: |
+    Juhendid, õpetused ja süvauuringud — kõik, mida vajate enesekindlaks<br />
+    vee avastamiseks. Esimese SUP-i valimisest edasijõudnute tehnikate omandamiseni.
+  taglineSection: 'Teadmised igale sõudjale. Algajast professionaalini.'
+
+featured:
+  tagline: 'Esiletõstetud teemad'
+  title: 'Alusta oma õppimiseekonda'
+  subtitle: 'Olenemata sellest, kas olete veespordis uus või soovite taset tõsta, meie juhendid katavad kõik.'
+  items:
+    - title: 'SUP-i põhitõed'
+      description: 'Kõik, mida algaja peab teadma — lauatüübid, sõuja suurused, asend ja esimese päeva nõuanded.'
+      icon: 'tabler:lifebuoy'
+      href: '/learn/sup'
+    - title: 'Täispuhutav vs kõva laud'
+      description: 'Kumb sobib teile? Võrdleme portatiivsust, jõudlust, vastupidavust ja kulu kõrvuti.'
+      icon: 'tabler:arrows-left-right'
+      href: '/compare/inflatable-vs-hardboard'
+    - title: 'Veeohutus'
+      description: 'Olulised ohutusteadmised, mida igal sõudjal peaks olema — ilm, päästevestid, isepääste ja palju muud.'
+      icon: 'tabler:shield'
+      href: '/learn/water-safety'
+    - title: 'Materjalide juhend'
+      description: 'PVC-klassid, Drop-Stitch tehnoloogia, denier-hinnangud — mõista, millest teie varustus on tehtud.'
+      icon: 'tabler:flask'
+      href: '/learn/materials'
+    - title: 'SUP-i suuruse juhend'
+      description: 'Leia õige lauapikkus, laius ja maht oma kaalu, oskuse ja sõudmisstiili jaoks.'
+      icon: 'tabler:ruler'
+      href: '/size-guide'
+    - title: 'Kesktaseme tehnikad'
+      description: 'Tõsta oma sõudmist edasijõudnute tõmmete, pööramistehnikate ja tormise veega käitlemisega.'
+      icon: 'tabler:droplet'
+      href: '/learn/intermediate-techniques'
+
+categories:
+  tagline: 'Kategooriad'
+  title: 'Avasta teemade kaupa'
+  subtitle: 'Kõik õppesisu korraldatud oskustaseme ja huvi järgi.'
+  columns:
+    - title: 'Algaja'
+      items:
+        - 'SUP-i põhitõed — alusta siit'
+        - 'Täispuhutav vs kõva laud'
+        - 'Veeohutuse põhitõed'
+        - 'Kuidas valida oma SUP'
+        - 'Pumba ja pakkimise juhend'
+    - title: 'Keskmine tase'
+      items:
+        - 'Sõudetehnikad'
+        - 'Täispuhutav tehnoloogia'
+        - 'Materjalide teatmik'
+        - 'PVC-klasside võrdlus'
+        - 'Drop-Stitch tuum selgitatult'
+    - title: 'Edasijõudnu ja professionaal'
+      items:
+        - 'Laevastikuoperatsioonid'
+        - 'Kommertsklassi varustus'
+        - 'Ohutus- ja päästeprotokollid'
+        - 'Kohandatud ehitised ja OEM'
+
+cta:
+  title: 'On veel küsimusi?'
+  subtitle: 'Küsi meie AI-juhendilt isikupärastatud vastuseid varustuse, ohutuse ja tehnikate kohta.'
+  actions:
+    - variant: primary
+      text: 'Küsi vee-nõustajalt AI-lt'
+      href: '/ai-answer-center'
+    - text: 'Sirvi kõiki juhendeid'
+      href: '/academy'

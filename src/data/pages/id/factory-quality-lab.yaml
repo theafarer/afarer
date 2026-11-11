@@ -1,0 +1,68 @@
+meta:
+  title: 'Lab Kualitas — Pengujian & Jaminan Kualitas | {SITE}'
+  description: 'Lab kualitas independen dengan proses ISO 9001 di afarer: setiap unit diuji sebelum pengiriman untuk menjamin kualitas SUP tiup.'
+  keywords:
+    - 'pengendalian kualitas sup'
+    - 'lab pengujian papan dayung'
+    - 'pabrik sup iso 9001'
+    - 'kualitas sup tiup'
+hero:
+  tagline: 'Laboratorium Pengendalian Kualitas'
+  title: 'Laboratorium Pengujian & Jaminan Kualitas'
+  subtitle: 'Lab kualitas independen dengan proses ISO 9001 — setiap unit diuji sebelum pengiriman'
+
+intro: 'afarer mengoperasikan laboratorium pengendalian kualitas khusus yang bekerja secara independen dari produksi. Setiap batch bahan baku dan setiap papan jadi melewati protokol inspeksi terdokumentasi sebelum dilepas. Tim QC kami melapor langsung kepada manajemen, memastikan keputusan kualitas yang tidak memihak.'
+
+highlights:
+  - value: 100%
+    label: 'Unit diuji tekanan'
+    detail: 'Setiap ruang, setiap papan'
+  - value: 24–48 jam
+    label: 'Durasi uji retensi udara'
+    detail: 'Pada 1,25× tekanan rating'
+  - value: '&lt;5%'
+    label: 'Penurunan tekanan maksimum yang diizinkan'
+    detail: 'Selama masa tahan 24–48 jam'
+  - value: 'AQL 2.5'
+    label: 'Ambang cacat mayor'
+    detail: 'Sesuai pengambilan sampel ISO 2859'
+
+test_procedures:
+  - title: 'Inspeksi Bahan Baku'
+    description: 'Setiap batch PVC, kain drop-stitch, dan perangkat keras yang masuk diuji sebelum diterima. Kekuatan tarik (ASTM D751), ketahanan sobek (ISO 4674), dan ketahanan UV diverifikasi. Material yang tidak sesuai dikarantina dan dikembalikan.'
+    standards:
+      - 'ASTM D751 (tarik)'
+      - 'ISO 4674 (sobek)'
+      - 'ISO 4892 (UV)'
+  - title: 'Titik Pemeriksaan QC Dalam Proses'
+    description: 'Operator produksi melakukan inspeksi mandiri di setiap tahap. Auditor QC melakukan pengambilan sampel acak sepanjang shift. Uji kelupasan las dilakukan setiap 50 unit. Pemeriksaan dimensional dilakukan setiap panel ke-20.'
+    standards:
+      - 'ASTM D751 (kelupasan)'
+      - 'Daftar periksa internal 100 titik'
+      - 'Pengambilan sampel ISO 2859'
+  - title: 'Uji Retensi Udara 24–48 Jam'
+    description: 'Setiap ruang tabung dikembangkan hingga 125% dari tekanan rating dan ditahan selama 24–48 jam. Sensor tekanan mencatat secara kontinu dengan kompensasi suhu. Ruang apa pun yang melebihi penurunan tekanan 5% memicu inspeksi ulang batch otomatis.'
+    standards:
+      - 'EN ISO 25649'
+      - 'CE 2013/53/EU'
+  - title: 'Pengujian Beban & Keseimbangan'
+    description: 'Papan jadi diuji pada kapasitas rating maksimum untuk stabilitas dan kekakuan. Setiap papan menjalani pengujian di air sebelum persetujuan inspeksi akhir.'
+    standards:
+      - 'ISO 12217'
+      - 'CE 2013/53/EU'
+
+equipment:
+  - name: 'Mesin Uji Universal (tarik)'
+    spec: '5 kN, patuh ASTM D751'
+  - name: 'Penguji Peluruhan Tekanan'
+    spec: 'Multi-kanal, 0–50 psi, pencatatan data'
+  - name: 'Ruang Pelapukan UV'
+    spec: 'ISO 4892, siklus 1.000 jam'
+  - name: 'Pengukur Ketebalan (digital)'
+    spec: 'Resolusi 0,01 mm'
+  - name: 'Penguji Kelupasan (las)'
+    spec: 'Termotoris, kapasitas 50 N'
+  - name: 'Ruang Suhu'
+    spec: '-40 °C hingga +100 °C'
+  - name: 'Tangki Deteksi Kebocoran'
+    spec: '6 m × 2 m, berpencahayaan'

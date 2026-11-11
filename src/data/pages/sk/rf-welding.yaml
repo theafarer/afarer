@@ -1,0 +1,89 @@
+meta:
+  title: 'Centrum RF zvárania — dielektrické spájanie pre vzduchotesné švy | {SITE}'
+  description: 'Technológia rádiofrekvenčného zvárania zaisťujúca súladné vzduchotesné švy. Test odlupovania, validácia udržania vzduchu a vlastné špecifikácie švov.'
+back_text: 'Späť do centra výskumu a vývoja'
+home_label: 'Domov'
+
+hero:
+  tagline: 'Laboratórium 03'
+  title: 'Centrum RF zvárania'
+  subtitle: 'Dielektrická technológia spájania pre zvary, ktoré odolajú tlaku'
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-jungle-mandala-1-1200w.webp'
+  image_alt: 'Proces dielektrického spájania RF zváraním v Afarer'
+
+intro: 'Nafukovacie SUP je spoľahlivé len natoľko, nakoľko jeho švy. Jediný slabý zvar môže ohroziť celú komoru — a na mori nie je zlyhanie komory nepríjemnosťou; je to bezpečnostné riziko. V Afarer sme investovali do vyhradeného centra rádiofrekvenčného (RF) zvárania, ktoré spája priemyselné dielektrické zváracie lisy s prísnou kontrolou procesu a testovaním po zváraní. Každý šev, ktorý vyrobíme, je zdokumentovaný, vysledovateľný a certifikovaný tak, aby spĺňal alebo prekračoval požiadavky normy EN ISO 25649 — európskej normy pre nafukovacie vybavenie na voľný čas.'
+
+content_html: |
+  <h2>Veda za švom</h2>
+  <p>RF zváranie využíva vysokofrekvenčnú elektromagnetickú energiu (zvyčajne 27,12 MHz) na budenie polárnych molekúl v látke potiahnutej PVC, čím generuje teplo presne na rozhraní materiálov. Na rozdiel od teplovzduchového alebo klinového zvárania vytvára RF zváranie skutočnú molekulárnu väzbu — obe vrstvy látky sa v zóne zvaru splynú do jedného homogénneho materiálu a vzniká spoj rovnako pevný ako základný materiál samotný.</p>
+
+  <h2>Zváracie zariadenie a kontrola procesu</h2>
+  <p>Naše zváracie centrum je vybavené:</p>
+  <table>
+    <thead><tr><th>Stroj</th><th>Výkon / kapacita</th><th>Použitie</th></tr></thead>
+    <tbody>
+      <tr><td>Dielektrický RF lis 1</td><td>15 kW, platňa 2000 × 600 mm</td><td>Hlavné pozdĺžne švy, spoje bočníc s trupom</td></tr>
+      <tr><td>Dielektrický RF lis 2</td><td>10 kW, platňa 1500 × 500 mm</td><td>Zvary prepážok, uzatváracie spoje bočníc, záplaty ventilov</td></tr>
+      <tr><td>CNC riadený RF zvár</td><td>8 kW, XY stôl 2500 × 1200 mm</td><td>Zakrivené švy, reliéfna úprava log/panelov, presné záplatovanie</td></tr>
+      <tr><td>Klinový automatický zvár</td><td>Premenlivá teplota, max. 1,2 m/min</td><td>Rezervná metóda pre hrubú PVC látku bočníc a opravy</td></tr>
+    </tbody>
+  </table>
+  <p>Každý RF lis je vybavený uzavretou reguláciou s monitorovaním teploty a tlaku. Parametre zvárania — výkon, čas lisovania, čas chladenia, tlak elektródy — sa programujú podľa typu materiálu a zaznamenávajú sa v našom systéme riadenia výroby (MES) pre úplnú sledovateľnosť.</p>
+
+  <h2>Testy kvality zvarov — každý šev, každá doska</h2>
+  <p>Integrita zvaru sa overuje povinným protokolom štyroch testov:</p>
+  <ol>
+    <li><strong>Vizuálna kontrola</strong> — 100 % švov sa vizuálne kontroluje na prehorenie, nesúosovosť, znečistenie alebo neúplné splynutie. Prah miery zamietnutia: 0,5 % bežných metrov.</li>
+    <li><strong>Test odlupovania</strong> — Z každej výrobnej šarže sa vyreže pásik šírky 25 mm zo skúšobnej vzorky zváranéj s danou šaržou. Minimálna odlupovacia sila: 120 N/25 mm pre PVC 1100 dtex.</li>
+    <li><strong>Test udržania vzduchu</strong> — Každá dokončená komora sa natlakí na 1,5 × pracovný tlak a udrží sa 30 minút. Pokles tlaku nesmie prekročiť 2 %.</li>
+    <li><strong>Test teplotných cyklov</strong> — Skúšobné vzorky sa cyklujú od -20 °C do +60 °C počas 50 cyklov a potom sa znovu testujú na odlupovanie. Prijateľná strata pevnosti: &lt; 10 %.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Porovnanie pevnosti v odlupovaní — RF vs teplovzduchové zváranie (PVC 1100 dtex)</p>
+    <div class="space-y-3">
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">RF zvar</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:92%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">184 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Teplovzduchový</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-gray-400 rounded" style="width:65%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">130 N</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="w-24 text-xs font-medium">Min.</span>
+        <div class="flex-1 h-6 bg-gray-200 dark:bg-gray-700 rounded">
+          <div class="h-full bg-green-500 rounded" style="width:48%"></div>
+        </div>
+        <span class="text-xs font-bold w-12 text-right">96 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">RF zváranie konzistentne dosahuje 90–95 % pevnosti základného materiálu, čo je výrazne nad minimom.</p>
+  </div>
+
+  <h2>Profesionálna odbornosť</h2>
+  <p>Náš zvárací tím vedie senior procesný inžinier s 11-ročnými skúsenosťami s dielektrickým zváraním potiahnutých textílií. Každý operátor absolvuje 6-mesačný interný certifikačný program, než môže pracovať na výrobných švoch. Rekvalifikácia sa vyžaduje každý rok vrátane praktického testu zvárania hodnoteného podľa nášho interného štandardu triedy A (pevnosť v odlupovaní ≥ 160 N/25 mm).</p>
+
+  <h2>Vlastné zváracie riešenia pre unikátne požiadavky</h2>
+  <p>Chápeme, že jedna zváracia špecifikácia nevyhovuje každému použitiu. Naše centrum RF zvárania pravidelne vyvíja vlastné konfigurácie švov pre klientov so špeciálnymi požiadavkami:</p>
+  <ul>
+    <li><strong>Viacvrstvé zosilňujúce záplaty</strong> — pre vysoko namáhané zóny, ako sú bočnice na prove a korme, vyvíjame viacprúdové RF zvary, ktoré integrujú odolnú vonkajšiu vrstvu bez ohrozenia ohybnosti.</li>
+    <li><strong>Vodivé alebo RF nepriepustné švy</strong> — pre vojenské alebo sledovacie aplikácie vyžadujúce elektromagnetické tienenie zavárame v rámci vrstiev švu vodivé sieťové vrstvy.</li>
+    <li><strong>Zváranie panelov so zmenou farby</strong> — dvojfarebné panely látok (napr. oranžový trup + sivá paluba) zvárané so skrytým presahom na zachovanie estetiky značky bez viditeľnej línie spoja.</li>
+  </ul>
+
+  <h2>Náš záväzok voči vám</h2>
+  <p>Každá doska, ktorú dodáme, nesie našu záruku kvality zvarov: ak niektorý šev počas záručnej doby zlyhá v normálnej prevádzke, príslušnú komoru bezplatne opravíme alebo vymeníme a vykoná sa analýza príčin, aby sa zabránilo opakovaniu. Nie je to len záruka — je to záväzok k neustálemu zlepšovaniu poháňaný skutočnými prevádzkovými údajmi.</p>
+  <p>Keď si vyberiete Afarer, vyberáte si švy, ktoré sú skonštruované, otestované a zdokumentované — nielen zvárané. To je rozdiel medzi doskou, ktorá pláva, a doskou, ktorá podáva výkon.</p>
+
+cta:
+  title: 'Prediskutujte vaše zváracie požiadavky'
+  subtitle: 'Vlastné špecifikácie švov, kompatibilita materiálov alebo validácia procesu.'
+  button_text: 'Kontaktujte náš zvárací tím'
+  button_link: /contact

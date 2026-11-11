@@ -1,0 +1,144 @@
+meta:
+  title: Hubungi Kami — Pertanyaan Perkongsian & Produk | {SITE}
+  description: Hubungi afarer untuk pertanyaan perkongsian, jenama bersama, dan label peribadi, atau armada profesional. Jenama SUP boleh tiup, kami membalas dalam masa 2 hari bekerja.
+  keywords:
+    - sebut harga pengedar sup
+    - pembekal sup profesional
+    - hubungi pengilang sup
+hero_text:
+  tagline: Hubungi
+  title: HUBUNGI KAMI
+contact_form:
+  id: form
+  title: Hantar mesej kepada kami
+  subtitle: Untuk sebut harga, soalan teknikal atau pertanyaan perkongsian, hubungi kami. Kami membalas dalam masa satu hari bekerja.
+  email_to: info@afarer.com
+  submit_button: Hantar Pertanyaan → Dapatkan Sebut Harga
+  success_message: Terima kasih! Mesej anda telah tiba dalam peti masuk kami. Kami akan membalas dalam masa satu hari bekerja.
+  error_message: Sesuatu tidak kena ketika menghantar mesej anda. Sila cuba lagi atau e-mel kami secara terus.
+  default_country_code: '+1'
+  captcha:
+    label: 'Anti-spam: sila selesaikan yang berikut'
+  fields:
+    - name: country
+      label: Negara
+      row: 1
+      type: select
+      optionsKey: countries
+      step: 1
+    - name: orderVolume
+      label: Anggaran Volum Pesanan
+      row: 2
+      type: select
+      options:
+        - value: ''
+          label: Pilih anggaran volum anda...
+        - value: sample
+          label: Sampel / Prototaip sahaja
+        - value: 5-10
+          label: 5–10 unit (MOQ Standard)
+        - value: 100-500
+          label: 100–500 unit
+        - value: 500-plus
+          label: 500+ unit (Harga volum)
+      step: 1
+    - name: customization
+      label: Perlukan Penyesuaian?
+      row: 3
+      type: select
+      options:
+        - value: ''
+          label: Pilih jenis penyesuaian...
+        - value: none
+          label: Produk standard (tiada penyesuaian)
+        - value: logo
+          label: Logo / Penjenamaan Tersuai sahaja
+        - value: full
+          label: Jenama Bersama Penuh (saiz, warna, grafik, pembungkusan)
+        - value: consultation
+          label: Tidak pasti — perlukan perundingan
+      step: 1
+    - name: productInterest
+      label: Kategori Produk yang Diminati
+      row: 4
+      type: select
+      options:
+        - value: ''
+          label: Pilih kategori produk...
+        - value: all
+          label: Semua produk / Katalog penuh
+        - value: sup
+          label: Papan SUP / Papan Dayung
+        - value: safety
+          label: Peralatan Keselamatan / Jaket Keselamatan
+        - value: accessory
+          label: Aksesori (pam, pendayung, beg)
+      step: 1
+    - name: firstName
+      label: Nama Pertama
+      row: 1
+      step: 2
+    - name: lastName
+      label: Nama Akhir
+      row: 1
+      step: 2
+    - name: companyName
+      label: Nama Syarikat
+      row: 2
+      step: 2
+    - name: email
+      label: E-mel
+      row: 3
+      type: email
+      step: 2
+    - name: tel
+      label: Telefon
+      row: 3
+      type: tel
+      withCountryCode: true
+      step: 2
+    - name: address
+      label: Alamat
+      row: 4
+      step: 2
+    - name: zip
+      label: Poskod
+      row: 5
+      step: 2
+    - name: subject
+      label: Subjek
+      row: 1
+      step: 3
+    - name: message
+      label: Mesej
+      row: 2
+      type: textarea
+      rows: 6
+      step: 3
+features2_other_ways:
+  title: Cara lain untuk menghubungi kami
+  columns: 3
+  items:
+    - title: Pertanyaan jualan
+      description: Sebut harga, konfigurasi, permohonan peniaga dan pesanan pukal.
+      icon: tabler:shopping-bag
+    - title: Sokongan teknikal
+      description: Waranti, pembaikan, alat ganti dan soalan pengendalian.
+      icon: tabler:tool
+    - title: Media & perkongsian
+      description: Kit media, penajaan dan kerjasama industri.
+      icon: tabler:news
+    - title: Telefon
+      description: +86 13305324192
+      icon: tabler:headset
+    - title: E-mel
+      description: info@afarer.com
+      icon: tabler:mail
+    - title: Ibu Pejabat
+      description: Zon Pembangunan Ekonomi, Laixi, Qingdao, China, 266600
+      icon: tabler:map-pin
+map:
+  title: Lokasi Kami
+  subtitle: Lawati kami di ibu pejabat kami
+  address: Zon Pembangunan Ekonomi, Laixi, Qingdao, China, 266600
+  zoom: 15

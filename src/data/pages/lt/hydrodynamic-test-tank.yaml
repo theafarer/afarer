@@ -1,0 +1,112 @@
+meta:
+  title: 'Hidrodinaminis testų baseinas — mažo modelio buksiavimas ir korpuso optimizavimas | {SITE}'
+  description: 'Patvirtinkite savo korpuso našumą mūsų hidrodinaminiame testų baseine. Mažo modelio buksiavimas, planavimo analizė ir slydimo efektyvumo testavimas. Užsirezervuokite baseino testų seansą jau šiandien.'
+back_text: 'Grįžti į R&D centrą'
+home_label: 'Pradžia'
+
+hero:
+  tagline: 'Laboratorija 04'
+  title: 'Hidrodinaminis testų baseinas'
+  subtitle: 'Našumo patvirtinimas prieš pirmąjį viso dydžio prototipą'
+  image: 'https://assets.afarer.com/images/afarer/factory/afarer-design-discussion-original.webp'
+  image_alt: 'Afarer hidrodinaminio testų baseino našumo testavimas'
+
+intro: 'Paplitusi klaida manyti, kad hidrodinaminis testavimas rezervuotas tolimojo plaukiojimo laivams. Iš tikrųjų mažo planuojančio korpuso — pavyzdžiui, pripučiamo SUP — našumas taip pat priklauso nuo povandeninės formos, kaip tanklaivis nuo savo priešakinio lempos formos. Trim kampas, šlapio paviršiaus plotas, purslų generavimas ir ventiliacija visi turi dramatišką poveikį slydimui, greičiui ir važiavimo komfortui. Afarer mes eksploatuojame specialų hidrodinaminį testų baseiną, leidžiantį mums įvertinti šiuos efektus modelio masteliu — dar neįsipareigojant audiniu ir įrankiais viso dydžio prototipui.'
+
+content_html: |
+  <h2>Kodėl irklentę testuoti baseine?</h2>
+  <p>Testavimas modelio masteliu (paprastai 1:3 iki 1:5) suteikia mums galimybę greitai ir efektyviai kainos atžvilgiu tobulinti korpuso formas. Savaitė baseine gali sugeneruoti tuos pačius našumo duomenis, kuriems prireiktų mėnesių viso dydžio bandymų ir klaidų — ir už žymiai mažesnę kainą.</p>
+
+  <h2>Įrenginio specifikacijos</h2>
+  <table>
+    <thead><tr><th>Parametras</th><th>Specifikacija</th></tr></thead>
+    <tbody>
+      <tr><td>Baseino matmenys</td><td>35 m (I) × 3,5 m (P) × 1,8 m (G)</td></tr>
+      <tr><td>Buksiavimo vežimėlis</td><td>Elektrinis servovaruomas, maksimalus greitis 12 m/s (23 mazgai), greičio tikslumas ± 0,5 %</td></tr>
+      <tr><td>Bangų generatorius</td><td>Flapelinio tipo, programuojamos reguliarios ir nereguliarios jūros būsenos, Hs iki 0,3 m modelio masteliu</td></tr>
+      <tr><td>Matavimo prietaisai</td><td>6 komponentų dinamometras (pasipriešinimas, šoninė jėga, žvyravimo momentas), akselerometrai, inklinometrai, bangų zondai</td></tr>
+      <tr><td>Duomenų surinkimas</td><td>Registravimas 1000 Hz dažniu kanalui, realaus laiko vaizdas + vėlesnės analizės rinkinys</td></tr>
+      <tr><td>Modelių gamyba</td><td>Vidinis CNC frezavimas ir 3D spausdinimas modelių korpusams iki 1,8 m LOA</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Mūsų testavimo programa</h2>
+  <p>Standartinė korpuso vystymo programa mūsų baseine eina šia seka:</p>
+  <ol>
+    <li><strong>Modelio gamyba</strong> — 1:3,5 mastelio modelis frezuojamas CNC iš didelio tankio putplasčio ir stikluojamas standumui. Svoris ir masės centras sureguliuojami, kad atitiktų Fraudo masteliu perskaičiuotą pilno pakrovimo būseną.</li>
+    <li><strong>Pasipriešinimo važiavimai</strong> — Modelis buksuojamas 8–10 greičių, apimančių darbinį diapazoną. Bendras pasipriešinimas matuojamas ir išskaidomas į trinties ir liekamąją dalis naudojant ITTC-1957 metodą.</li>
+    <li><strong>Trim ir grimavimo matavimas</strong> — Darbinis trim ir grimavimas registruojami kiekviename greičio taške. Optimalus trim kampas 4–6° planuojantiems korpusams yra tikslas.</li>
+    <li><strong>Kilvaterio tyrimas</strong> — Skersinės bangų pjūviai matuojami dviejuose greičiuose, kad būtų įvertintas bangų kūrimo pasipriešinimas ir nustatyti skersinių bangų sąveikos, galinčios sukelti laivagalis sutrikimus.</li>
+    <li><strong>Jūrinių savybių tyrimas (pasirenkama)</strong> — Prieš bangą ir pagal bangą važiavimai reguliariose bangose papildomo pasipriešinimui, vertikaliam pagreičiui ir smūgio tikimybei išmatuoti.</li>
+    <li><strong>Duomenų analizė ir rekomendacijos</strong> — Pateikiama pilna ataskaita su lyginamaisiais grafikais, greičio/galios kreivėmis ir konkrečiomis dizaino rekomendacijomis viso dydžio korpusui.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Tipiški baseino testų rezultatai — pasipriešinimas ir greitis (turizmo SUP korpusas, 1:3,5 mastelis)</p>
+    <div class="space-y-2">
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">5 mazgai (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:18%"></div>
+        </div>
+        <span class="w-16 text-right">42 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">10 mazgų (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:35%"></div>
+        </div>
+        <span class="w-16 text-right">81 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">15 mazgų (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:52%"></div>
+        </div>
+        <span class="w-16 text-right">121 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">20 mazgų (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:68%"></div>
+        </div>
+        <span class="w-16 text-right">158 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">25 mazgai (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:85%"></div>
+        </div>
+        <span class="w-16 text-right">197 N</span>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="w-20">30 mazgų (1:1)</span>
+        <div class="flex-1 bg-gray-200 dark:bg-gray-700 h-5 rounded">
+          <div class="h-full bg-blue-600 rounded" style="width:100%"></div>
+        </div>
+        <span class="w-16 text-right">232 N</span>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">Modelio mastelio pasipriešinimas (N) Fraudo masteliu perskaičiuotais greičiais. Viso dydžio pasipriešinimo prognozė vadovaujasi ITTC-1978 našumo prognozės metodu.</p>
+  </div>
+
+  <h2>Ekspertų komanda</h2>
+  <p>Mūsų baseiną eksploatuoja hidrodinamikos specialistas su daktaro laipsniu skysčių dinamikos srityje ir 8 metų buksiavimo baseino patirtimi dideliame Europos jūrinių tyrimų institute. Jam padeda technikas, paruošiantis visus modelius ir matavimo prietaisus. Komanda vadovaujasi ITTC (Tarptautinės buksiavimo baseinų konferencijos) rekomenduojamomis procedūromis, siekdama užtikrinti, kad kiekvienas testas būtų pakartojamas, atsekamas ir tarptautiniu mastu pagrįstas.</p>
+
+  <h2>Baseino testavimas pasirinktiniam korpuso vystymui</h2>
+  <p>Mūsų baseinas naudojamas ne tik savo korpusams — mes reguliariai vykdome testų programas klientams, norintiems patvirtinti pasirinktinę korpuso formą arba ištirti našumo problemą:</p>
+  <ul>
+    <li><strong>Korpuso formų palyginimas</strong> — Dvi ar daugiau kandidatų korpuso formos testuojamos identiškomis sąlygomis, pateikiant objektyvų pasipriešinimo/greičio/stabilumo palyginimą, padedantį priimti dizaino sprendimą.</li>
+    <li><strong>Priedų optimizavimas</strong> — Pelekų konfigūracijos, bortų profiliai ir rockerio variantai gali būti testuojami įvairiais deriniais, siekiant įvertinti jų individualų indėlį mažinant pasipriešinimą.</li>
+    <li><strong>Slydimo efektyvumo tyrimas</strong> — Pasipriešinimo duomenys paverčiami slydimo efektyvumo kreive, leidžiančia jums subalansuoti korpuso tūrį, rockerį ir standumą jūsų tiksliniam irklavimo greičiui ir kroviniai.</li>
+  </ul>
+
+  <h2>Kodėl testuoti su mumis?</h2>
+  <p>Mes ne tik atiduodame žalius skaičius. Mūsų ataskaitos išverčia baseino duomenis į pritaikomas inžinerines rekomendacijas: „Pridėkite 8 mm nosies rockerio, kad sumažintumėte šlapį paviršių kruizo greičiu", „Sumažinkite laivagalio rockerį 3°, kad pailgintumėte vandens liniją turizmo greičiu" arba „Perkelkite plačiausią tašką 150 mm atgal geresniam susilaikymui". Išeisite aiškiai suprasdami, ką keisti ir kodėl.</p>
+  <p>Mūsų baseinas taip pat prieinamas nepriklausomam trečiųjų šalių testavimui už paslaugų mokestį. Jei kuriate korpusą ir norite nešališkos, profesionaliai atliktos hidrodinaminės įvertinimo, kviečiame teikti užklausą.</p>
+
+cta:
+  title: 'Užsirezervuokite baseino testų seansą'
+  subtitle: 'Nesvarbu, ar jums reikia visos vystymo programos, ar vieno lyginamojo testo — mes galime prisitaikyti prie jūsų grafiko.'
+  button_text: 'Susisiekite su mūsų hidrodinamikos komanda'
+  button_link: /contact

@@ -1,0 +1,95 @@
+meta:
+  title: 'Prototipska radionica — Izrada prototipa SUP daska u punoj veličini i ispitivanja na moru | {SITE}'
+  description: 'Od CAD-a do daske spremne za vodu u 8-12 tjedana. Naša prototipska radionica izrađuje, oprema i ispituje na moru napuhive SUP daske po mjeri. Započnite svoj prototipski projekt danas.'
+back_text: 'Natrag na R&D centar'
+home_label: 'Početna'
+
+hero:
+  tagline: 'Lab 05'
+  title: 'Prototipska radionica'
+  subtitle: 'Od CAD modela do daske spremne za vodu — izrađeno, opremljeno i dokazano'
+  image: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp'
+  image_alt: 'Izrada dasaka u afarer prototipskoj radionici'
+
+intro: 'CAD model, ma koliko bio detaljan, ne može otkriti kako će se daska stvarno ponašati dok ne sretne vodu. Zato je naša prototipska radionica dizajnirana da inženjerske podatke prevede u fizičku dasku spremnu za vodu što brže i preciznije. Svaki novi Afarer model — i svaka značajnija izrada po mjeri — prolazi kroz ovu radionicu prije obaveze na proizvodne alate.'
+
+content_html: |
+  <h2>Where design becomes reality</h2>
+  <p>Radionica je u potpunosti opremljena za istovremenu izradu trupa, rubova i opreme. Ovaj pristup paralelnog radnog tijeka skraćuje vrijeme izrade prototipa na 8-12 tjedana od inženjerskog odobrenja, u usporedbi s industrijskim prosjekom od 16-20 tjedana. Kada vaša aplikacija zahtijeva specijalizirano rješenje, možemo prijeći od koncepta do provjere na vodi za manje od tri mjeseca.</p>
+
+  <h2>Mogućnosti radionice</h2>
+  <table>
+    <thead><tr><th>Radna stanica</th><th>Oprema</th><th>Svrha</th></tr></thead>
+    <tbody>
+      <tr><td>Izrada trupa</td><td>CNC rezač tkanine, preša za toplinsku laminaciju, stanica za pripremu drop-stitch jezgre</td><td>Izrada trupa u punoj veličini u sva tri tipa konstrukcije</td></tr>
+      <tr><td>Montaža rubova i komora</td><td>RF preša za zavarivanje, stanica za privremeno spajanje vrućim zrakom, ispitni uređaj za napuhivanje</td><td>Izrada rubova i komora u punoj veličini sa svim pregradama i ventilima</td></tr>
+      <tr><td>Oprema i ugradnja</td><td>Predložak za glodanje ležišta peraje, uređaji za zavarivanje nosača tereta i ručki, stanica za rezanje podloge za stajanje</td><td>Kompletna oprema: peraje, nosači tereta, priključci za uže, ručke, podloge za stajanje, ventili</td></tr>
+      <tr><td>Instrumentacijski prostor</td><td>GPS senzor brzine, pretvarači tlaka, akcelerometri, niz termoparova, bilježnik podataka</td><td>Ugradnja i kalibracija instrumentacije za ispitivanja na moru</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Put prototipa — korak po korak</h2>
+  <ol>
+    <li><strong>Inženjerska predaja</strong> — Dizajnersku dokumentaciju (3D model, FEA izvještaj, popis materijala, raspored slaganja) formalno pregledavaju voditelj radionice i projektni inženjer. Sve nedoumice oko proizvodnje obilježavaju se i rješavaju prije početka rezanja.</li>
+    <li><strong>Izrada trupa</strong> — Trup se gradi prema inženjerskoj specifikaciji. Za konstrukciju u jednom sloju: drop-stitch jezgra laminira se specificiranom PVC prevlakom. Za konstrukciju u dva sloja: dodatna se prevlaka nanosi preko osnovnog laminata prije rezanja kroja. Za spojenu konstrukciju: parametri laminacije učitavaju se iz odobrenog list procesa i provjeravaju na prvom uzorku.</li>
+    <li><strong>Izrada rubova</strong> — Tkanina se reže pomoću CNC predložaka, a zatim RF zavaruje u rubove i komore u punoj veličini. Svaka se komora napuhuje na ispitni tlak i ostavlja 24 h za početnu stabilizaciju.</li>
+    <li><strong>Montaža i oprema</strong> — Trup i rubovi se spajaju. Ugrađuju se ležišta peraja i nosači tereta, instaliraju priključci za uže i ručke za nošenje, ventil za napuhivanje se pritegne, a podloga za stajanje nanosi i poravna.</li>
+    <li><strong>Statička ispitivanja</strong> — Prije nego što daska dotakne vodu, prolazi: provjeru plovnosti (puno opterećenje + 30 % rezerve), ispitivanje zadržavanja tlaka u komorama, test curenja ventila, ispitivanje vučne čvrstoće ručki i nosača.</li>
+    <li><strong>Program ispitivanja na moru</strong> — 20 sati ispitivanja u vodi, detaljno opisano u nastavku.</li>
+    <li><strong>Pregled prototipa</strong> — Održava se formalni sastanak odobrenja s inženjerskim, proizvodnim i kvalitetativnim timovima. Sve potrebne izmjene dizajna dokumentiraju se i uključuju u proizvodno odobrenje.</li>
+  </ol>
+
+  <div class="not-prose my-10 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+    <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">20-satni program ispitivanja na moru — raspored testiranja</p>
+    <div class="space-y-2 text-sm">
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
+        <span class="flex-1">Upoznavanje na mirnoj vodi — praćenje pri maloj brzini, skretanje, provjera stava i ravnoteže</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">4 h</span>
+        <span class="flex-1">Ispitivanje brzine — GPS-potvrđena maksimalna brzina, brzina krstarenja, održiv tempo pri 3 frekvencije zamaha</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">Test skretanja — radijus okreta oko ose i zamahom, odziv daske, lijevo i desno</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">Test na valovima — ponovljeni prolazi kroz valove od 0,5–1,0 m; akcelerometar na poziciji vozača</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">Test stabilnosti — statični kut nagiba s 4 vozača različite težine, opterećenje pomaknuto desno</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">3 h</span>
+        <span class="flex-1">Ispitivanje izdržljivosti — 3 h neprekidno u tempu krstarenja; praćenje tlaka u komorama, temperature rubova i umora vozača</span>
+      </div>
+      <div class="flex items-center gap-3 p-2 rounded bg-white dark:bg-gray-950">
+        <span class="w-12 text-xs font-bold text-blue-600">2 h</span>
+        <span class="flex-1">Završni pregled — pregled svih komponenata nakon ispitivanja, pritegnuti/provjeriti svi spojevi, dokumentiranje nalaza</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Izrada prototipa po mjeri za jedinstvene namjene</h2>
+  <p>Prototipska radionica mjesto je gdje rješavamo probleme koje standardne proizvodne daske ne mogu adresirati. Nedavni primjeri:</p>
+  <ul>
+    <li>SUP daska za spašavanje u visokoj vidljivosti za organizaciju za potragu i spašavanje, s integriranim ručkama za hvatanje, nosačima opreme za spašavanje i trupom visoke plovnosti za izvlačenje unesrećenih — sve izrađeno kao prototip, opremljeno i testirano u našem pogonu.</li>
+    <li>Ekspedicijska touring SUP daska za izvođača hidrografskih istraživanja, s uklonjivim jarbolom za instrumente, zabrtvljenim priključcima za opremu i niskim nosačem pretvarača dizajniranim za smanjenje otpora.</li>
+    <li>Kompaktna ribolovna SUP daska za flotu odmarališta, gdje je prototip korišten za validaciju stabilnosti, opreme i izdržljivosti u svakodnevnoj najamnoj upotrebi prije nego što se klijent odlučio na flotu od četiri daske.</li>
+  </ul>
+
+  <h2>Naš tim za izradu prototipova</h2>
+  <p>U radionici radi osam višestruko osposobljenih tehničara za more, svaki dodatno osposobljen za najmanje dvije od tri ključne discipline (trup, rub, oprema). Voditelj tima majstor je izrade s 16 godina iskustva, od jedinstvenih izrada po mjeri do proizvodnih serija. Svaki prototip dobiva posvećenog projektnog inženjera koji je jedina kontakt točka za klijenta tijekom cijelog procesa izrade i ispitivanja.</p>
+
+  <h2>Uključenost klijenta</h2>
+  <p>Aktivno potičemo klijente da prisustvuju ključnim fazama izrade prototipa — posebno početnom pregledu opremanja i ispitivanju na moru. Vaša operativna povratna informacija u tim fazama neprocjenjiva je za fino podešavanje daske prije ulaska u proizvodnju. Ne gradimo u vakuumu; gradimo u partnerstvu s vama.</p>
+  <p>20-satno ispitivanje na moru ujedno je prilika da se vaš tim upozna s ponašanjem daske, rasporedom površine i zahtjevima održavanja, čime se osigurava glatan prelazak u upotrebu kada se isporuče proizvodne daske.</p>
+
+cta:
+  title: 'Započnite svoj prototipski projekt'
+  subtitle: 'Recite nam koja vam daska treba i predložit ćemo plan razvoja prototipa.'
+  button_text: 'Kontaktirajte naš tim za prototipove'
+  button_link: /contact

@@ -1,0 +1,68 @@
+meta:
+  title: 'Quality Lab — Testing at Quality Assurance | {SITE}'
+  description: 'Independiyenteng quality lab na may mga prosesong ISO 9001 sa afarer: bawat unit ay sinusubukan bago ipadala upang garantisahin ang kalidad ng inflatable SUP.'
+  keywords:
+    - 'quality control ng sup'
+    - 'testing lab ng paddle board'
+    - 'iso 9001 sup factory'
+    - 'kalidad ng inflatable sup'
+hero:
+  tagline: 'Laboratoryo ng Kontrol ng Kalidad'
+  title: 'Testing Laboratory at Quality Assurance'
+  subtitle: 'Independiyenteng quality lab na may mga prosesong ISO 9001 — bawat unit ay sinusubukan bago ipadala'
+
+intro: 'Nagpapatakbo ang afarer ng isang nakalaang quality control laboratory na gumagana nang independiyente mula sa produksyon. Bawat batch ng hilaw na materyales at bawat natapos na board ay dumadaan sa naka-dokumentong inspection protocol bago palayain. Ang aming QC team ay nag-uulat nang direkta sa pamunuan, na nagsisiguro ng walang-kinikiling desisyon sa kalidad.'
+
+highlights:
+  - value: '100%'
+    label: 'Mga unit na pressure-tested'
+    detail: 'Bawat chamber, bawat board'
+  - value: '24–48 h'
+    label: 'Tagal ng air retention test'
+    detail: 'Sa 1.25× na rated na presyon'
+  - value: '&lt;5%'
+    label: 'Pinakamataas na pinapayagang pagbaba ng presyon'
+    detail: 'Sa buong 24–48 oras na paghawak'
+  - value: 'AQL 2.5'
+    label: 'Hangganan ng malaking depekto'
+    detail: 'Ayon sa sampling ng ISO 2859'
+
+test_procedures:
+  - title: 'Inspeksyon ng Hilaw na Materyales'
+    description: 'Bawat papasok na batch ng PVC, drop-stitch fabric, at hardware ay sinusubukan bago tanggapin. Ang tensile strength (ASTM D751), tear resistance (ISO 4674), at UV resistance ay bineberipika. Ang mga materyales na hindi tumutugod ay iniihiwalay at ibinabalik.'
+    standards:
+      - 'ASTM D751 (tensile)'
+      - 'ISO 4674 (tear)'
+      - 'ISO 4892 (UV)'
+  - title: 'Mga QC Checkpoint sa Proseso'
+    description: 'Ang mga production operator ay nagsasagawa ng self-inspection sa bawat yugto. Ang mga QC auditor ay nagsasagawa ng random sampling sa buong shift. Ang mga weld peel test ay isinasagawa bawat 50 unit. Ang dimensional check ay ginagawa sa bawat ika-20 panel.'
+    standards:
+      - 'ASTM D751 (peel)'
+      - 'Internal na 100-point checklist'
+      - 'Sampling ng ISO 2859'
+  - title: '24–48 Oras na Air Retention Test'
+    description: 'Bawat tube chamber ay pinipresyar sa 125% ng rated na presyon at hinihintay nang 24–48 oras. Ang mga pressure sensor ay tuloy-tuloy na nagla-log na may temperature compensation. Anumang chamber na lumampas sa 5% na pagbaba ng presyon ay nagti-trigger ng automatikong muling inspeksyon ng batch.'
+    standards:
+      - 'EN ISO 25649'
+      - 'CE 2013/53/EU'
+  - title: 'Load at Balance Testing'
+    description: 'Ang mga natapos na board ay sinusubukan sa pinakamataas na rated na kapasidad para sa stability at rigidity. Bawat board ay sumasailalim sa water testing bago ang pag-apruba sa panghuling inspeksyon.'
+    standards:
+      - 'ISO 12217'
+      - 'CE 2013/53/EU'
+
+equipment:
+  - name: 'Unibersal na Makinang Pagsubok (tensile)'
+    spec: '5 kN, sumusunod sa ASTM D751'
+  - name: 'Pressure Decay Tester'
+    spec: 'Maraming channel, 0–50 psi, pagtatala ng datos'
+  - name: 'UV Weathering Chamber'
+    spec: 'ISO 4892, 1,000 h na cycle'
+  - name: 'Panukat ng Kapal (digital)'
+    spec: '0.01 mm resolution'
+  - name: 'Peel Tester (weld)'
+    spec: 'Motorizado, 50 N kapasidad'
+  - name: 'Temperature Chamber'
+    spec: '-40 °C hanggang +100 °C'
+  - name: 'Leak Detection Tank'
+    spec: '6 m × 2 m, may ilaw'
