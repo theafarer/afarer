@@ -23,6 +23,19 @@ import { guidesAr } from '~/data/guides.ar';
 import { guidesEl } from '~/data/guides.el';
 import { guidesRo } from '~/data/guides.ro';
 import { guidesTh } from '~/data/guides.th';
+import { guidesHr } from '~/data/guides.hr';
+import { guidesHu } from '~/data/guides.hu';
+import { guidesSk } from '~/data/guides.sk';
+import { guidesBg } from '~/data/guides.bg';
+import { guidesSl } from '~/data/guides.sl';
+import { guidesSr } from '~/data/guides.sr';
+import { guidesId } from '~/data/guides.id';
+import { guidesHe } from '~/data/guides.he';
+import { guidesMs } from '~/data/guides.ms';
+import { guidesLt } from '~/data/guides.lt';
+import { guidesLv } from '~/data/guides.lv';
+import { guidesEt } from '~/data/guides.et';
+import { guidesTl } from '~/data/guides.tl';
 import { contentV2RecordsDe } from '~/data/content-v2.de';
 import { contentV2OverridesRo } from '~/data/content-v2.ro';
 import type { ContentV2Override } from '~/data/content-v2.ro';
@@ -143,6 +156,45 @@ export function getGuidesForLang(lang: string | undefined): GuideRecord[] {
   }
   if (lang === 'th') {
     return guidesTh;
+  }
+  if (lang === 'hr') {
+    return guidesHr;
+  }
+  if (lang === 'hu') {
+    return guidesHu;
+  }
+  if (lang === 'sk') {
+    return guidesSk;
+  }
+  if (lang === 'bg') {
+    return guidesBg;
+  }
+  if (lang === 'sl') {
+    return guidesSl;
+  }
+  if (lang === 'sr') {
+    return guidesSr;
+  }
+  if (lang === 'id') {
+    return guidesId;
+  }
+  if (lang === 'he') {
+    return guidesHe;
+  }
+  if (lang === 'ms') {
+    return guidesMs;
+  }
+  if (lang === 'lt') {
+    return guidesLt;
+  }
+  if (lang === 'lv') {
+    return guidesLv;
+  }
+  if (lang === 'et') {
+    return guidesEt;
+  }
+  if (lang === 'tl') {
+    return guidesTl;
   }
   return guides;
 }
