@@ -29,6 +29,19 @@ const VALID_LOCALES = new Set([
   'da',
   'ro',
   'th',
+  'hr',
+  'hu',
+  'sk',
+  'bg',
+  'sl',
+  'sr',
+  'id',
+  'he',
+  'ms',
+  'lt',
+  'lv',
+  'et',
+  'tl',
 ]);
 
 function tsEscape(s) {
