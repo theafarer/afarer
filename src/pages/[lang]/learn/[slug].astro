@@ -7,6 +7,19 @@ import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import learnFrData from '~/data/learn-fr.yaml';
 import learnDeData from '~/data/learn-de.yaml';
+import learnHrData from '~/data/learn-hr.yaml';
+import learnHuData from '~/data/learn-hu.yaml';
+import learnSkData from '~/data/learn-sk.yaml';
+import learnBgData from '~/data/learn-bg.yaml';
+import learnSlData from '~/data/learn-sl.yaml';
+import learnSrData from '~/data/learn-sr.yaml';
+import learnIdData from '~/data/learn-id.yaml';
+import learnHeData from '~/data/learn-he.yaml';
+import learnMsData from '~/data/learn-ms.yaml';
+import learnLtData from '~/data/learn-lt.yaml';
+import learnLvData from '~/data/learn-lv.yaml';
+import learnEtData from '~/data/learn-et.yaml';
+import learnTlData from '~/data/learn-tl.yaml';
 
 export function getStaticPaths() {
   const slugs = [
@@ -31,7 +44,51 @@ export function getStaticPaths() {
 
 const { lang, slug } = Astro.params;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
-const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
+
+interface LearnMisc {
+  readGuide: string;
+  techDesc: string;
+  productsDesc: string;
+  trustDesc: string;
+}
+interface LearnEntry {
+  title: string;
+  description: string;
+  articles: Array<{ title: string; desc: string; href: string }>;
+}
+const LOCALE_LEARN: Record<string, { misc?: LearnMisc } & Record<string, LearnEntry>> = {
+  fr: learnFrData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  de: learnDeData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  hr: learnHrData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  hu: learnHuData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  sk: learnSkData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  bg: learnBgData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  sl: learnSlData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  sr: learnSrData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  id: learnIdData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  he: learnHeData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  ms: learnMsData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  lt: learnLtData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  lv: learnLvData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  et: learnEtData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+  tl: learnTlData as { misc?: LearnMisc } & Record<string, LearnEntry>,
+};
+const localeLearn = LOCALE_LEARN[lang || 'en'];
+const DEFAULT_MISC: Record<string, LearnMisc> = {
+  en: {
+    readGuide: 'Read guide →',
+    techDesc: 'Marine safety engineering and material testing',
+    productsDesc: 'Explore the full Afarer product catalog',
+    trustDesc: 'CE, ISO and BSCI compliance',
+  },
+  fr: {
+    readGuide: 'Lire le guide →',
+    techDesc: 'Ingénierie de sécurité marine et tests de matériaux',
+    productsDesc: 'Explorez le catalogue complet de produits afarer',
+    trustDesc: 'Conformité CE, ISO et BSCI',
+  },
+};
+const misc: LearnMisc = localeLearn?.misc ?? DEFAULT_MISC[lang === 'fr' ? 'fr' : 'en'];
 
 const LEARN_PAGES: Record<
   string,
@@ -155,10 +212,7 @@ const LEARN_PAGES: Record<
   },
 };
 
-const PAGES: Record<
-  string,
-  { title: string; description: string; articles: Array<{ title: string; desc: string; href: string }> }
-> = lang === 'fr' ? learnFrData : lang === 'de' ? learnDeData : LEARN_PAGES;
+const PAGES: Record<string, LearnEntry> = localeLearn ? { ...LEARN_PAGES, ...localeLearn } : LEARN_PAGES;
 const page = PAGES[slug];
 const pageTitle = t('learn.' + slug + '.title') || page.title;
 const pageDesc = t('learn.' + slug + '.description') || page.description;
@@ -206,9 +260,7 @@ const metadata = {
                 {a.title}
               </h2>
               <p class="mt-2 text-sm text-gray-500 dark:text-slate-400 leading-relaxed">{a.desc}</p>
-              <span class="mt-3 inline-block text-sm font-medium text-sky-600">
-                {fr('Read guide →', 'Lire le guide →')}
-              </span>
+              <span class="mt-3 inline-block text-sm font-medium text-sky-600">{misc.readGuide}</span>
             </a>
           ))}
         </div>
@@ -224,7 +276,7 @@ const metadata = {
       >
         <span class="font-medium text-sky-600">{t('nav.technology') || 'Technology'}</span>
         <p class="mt-1 text-gray-500 dark:text-slate-400">
-          {fr('Marine safety engineering and material testing', 'Ingénierie de sécurité marine et tests de matériaux')}
+          {misc.techDesc}
         </p>
       </a>
       <a
@@ -233,7 +285,7 @@ const metadata = {
       >
         <span class="font-medium text-sky-600">{t('product.pageTitle') || 'Products'}</span>
         <p class="mt-1 text-gray-500 dark:text-slate-400">
-          {fr('Explore the full Afarer product catalog', 'Explorez le catalogue complet de produits afarer')}
+          {misc.productsDesc}
         </p>
       </a>
       <a
@@ -242,7 +294,7 @@ const metadata = {
       >
         <span class="font-medium text-sky-600">{t('nav.trust') || 'Trust'}</span>
         <p class="mt-1 text-gray-500 dark:text-slate-400">
-          {fr('CE, ISO and BSCI compliance', 'Conformité CE, ISO et BSCI')}
+          {misc.trustDesc}
         </p>
       </a>
     </div>
