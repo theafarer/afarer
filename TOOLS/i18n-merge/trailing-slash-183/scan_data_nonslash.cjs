@@ -8,7 +8,8 @@ const seen = new Map();
 function record(v, loc) {
   if (!v.startsWith('/')) return;
   if (/^https?:|^\/\//.test(v)) return;
-  const qi = v.indexOf('?'), hi = v.indexOf('#');
+  const qi = v.indexOf('?'),
+    hi = v.indexOf('#');
   if (v.endsWith('/')) return;
   if (qi > 0 || hi > 0) return;
   const key = v;
@@ -30,7 +31,10 @@ function record(v, loc) {
           /href=["'](\/[^"']*)["']/g,
           /\]\((\/[^)\s]*)\)/g,
         ];
-        for (const re of pats) { let m; while ((m = re.exec(ln))) record(m[1], `${rel}:${i + 1}`); }
+        for (const re of pats) {
+          let m;
+          while ((m = re.exec(ln))) record(m[1], `${rel}:${i + 1}`);
+        }
       });
     }
   }

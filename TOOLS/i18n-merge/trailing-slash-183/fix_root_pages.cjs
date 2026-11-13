@@ -10,17 +10,27 @@ for (const fp of FILES) {
   let n = 0;
   src = src.replace(/href="(\/[^"]*)"/g, (full, h) => {
     if (isFile(h)) return full;
-    const qi = h.indexOf('?'), hi = h.indexOf('#');
+    const qi = h.indexOf('?'),
+      hi = h.indexOf('#');
     if (qi === 0 || hi === 0) return full; // href="?.." or "#.."
     if (qi > 0) {
-      if (h[qi - 1] !== '/') { n++; return `href="${h.slice(0, qi)}/${h.slice(qi)}"`; }
+      if (h[qi - 1] !== '/') {
+        n++;
+        return `href="${h.slice(0, qi)}/${h.slice(qi)}"`;
+      }
       return full;
     }
     if (hi > 0) {
-      if (h[hi - 1] !== '/') { n++; return `href="${h.slice(0, hi)}/${h.slice(hi)}"`; }
+      if (h[hi - 1] !== '/') {
+        n++;
+        return `href="${h.slice(0, hi)}/${h.slice(hi)}"`;
+      }
       return full;
     }
-    if (!h.endsWith('/')) { n++; return `href="${h}/"`; }
+    if (!h.endsWith('/')) {
+      n++;
+      return `href="${h}/"`;
+    }
     return full;
   });
   fs.writeFileSync(fp, src);

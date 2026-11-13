@@ -16,10 +16,11 @@ function walk(dir, out = []) {
 const LH_PLAIN = 'const lh = (h: string) => (h ? `/${lang}${h}` : h);';
 const LH_PLAIN_NEW = 'const lh = (h: string) => (h ? withTrailingSlash(`/${lang}${h}`) : h);';
 const LH_RES = "const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}` : h);";
-const LH_RES_NEW = "const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : h);";
-const P_HELPER = 'const p = (path: string) => (lang === \'en\' ? path : `/${lang}${path}`);';
+const LH_RES_NEW =
+  "const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : h);";
+const P_HELPER = "const p = (path: string) => (lang === 'en' ? path : `/${lang}${path}`);";
 const P_HELPER_NEW =
-  'const p = (path: string) => (lang === \'en\' ? withTrailingSlash(path) : withTrailingSlash(`/${lang}${path}`));';
+  "const p = (path: string) => (lang === 'en' ? withTrailingSlash(path) : withTrailingSlash(`/${lang}${path}`));";
 
 let totalFiles = 0;
 let totalTpl = 0;

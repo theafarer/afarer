@@ -22,14 +22,22 @@ console.log('root https://afarer.com/ present:', hasRoot);
 const enHome = read('en/index.html');
 const canonical = enHome.match(/<link rel="canonical" href="(.*?)"/);
 const ogUrl = enHome.match(/property="og:url" content="(.*?)"/);
-const hreflangs = [...enHome.matchAll(/<link rel="alternate" hreflang="(.*?)" href="(.*?)"/g)].map((m) => `${m[1]} -> ${m[2]}`);
+const hreflangs = [...enHome.matchAll(/<link rel="alternate" hreflang="(.*?)" href="(.*?)"/g)].map(
+  (m) => `${m[1]} -> ${m[2]}`
+);
 console.log('\n=== EN HOMEPAGE (dist/en/index.html) ===');
 console.log('canonical:', canonical && canonical[1]);
 console.log('og:url:', ogUrl && ogUrl[1]);
 console.log('hreflang count:', hreflangs.length);
 console.log('hreflang sample:', hreflangs.slice(0, 6));
-console.log('hreflang en:', hreflangs.filter((h) => h.startsWith('en ')));
-console.log('hreflang x-default:', hreflangs.filter((h) => h.startsWith('x-default')));
+console.log(
+  'hreflang en:',
+  hreflangs.filter((h) => h.startsWith('en '))
+);
+console.log(
+  'hreflang x-default:',
+  hreflangs.filter((h) => h.startsWith('x-default'))
+);
 
 // --- 3. EN homepage internal slashless hrefs ---
 const hrefs = new Set([...enHome.matchAll(/href="(\/[^"]*)"/g)].map((m) => m[1]));
@@ -47,7 +55,9 @@ console.log(slashlessInternal.slice(0, 30));
 // --- 4. DE homepage spot check ---
 const deHome = read('de/index.html');
 const deCanonical = deHome.match(/<link rel="canonical" href="(.*?)"/);
-const deHreflangs = [...deHome.matchAll(/<link rel="alternate" hreflang="(.*?)" href="(.*?)"/g)].map((m) => `${m[1]} -> ${m[2]}`);
+const deHreflangs = [...deHome.matchAll(/<link rel="alternate" hreflang="(.*?)" href="(.*?)"/g)].map(
+  (m) => `${m[1]} -> ${m[2]}`
+);
 console.log('\n=== DE HOMEPAGE ===');
 console.log('canonical:', deCanonical && deCanonical[1]);
 console.log('hreflang count:', deHreflangs.length, 'sample:', deHreflangs.slice(0, 4));
@@ -56,7 +66,9 @@ console.log('hreflang count:', deHreflangs.length, 'sample:', deHreflangs.slice(
 const enAbout = read('en/about/index.html');
 const aboutCanonical = enAbout.match(/<link rel="canonical" href="(.*?)"/);
 const aboutOg = enAbout.match(/property="og:url" content="(.*?)"/);
-const aboutHreflangs = [...enAbout.matchAll(/<link rel="alternate" hreflang="(.*?)" href="(.*?)"/g)].map((m) => `${m[1]} -> ${m[2]}`);
+const aboutHreflangs = [...enAbout.matchAll(/<link rel="alternate" hreflang="(.*?)" href="(.*?)"/g)].map(
+  (m) => `${m[1]} -> ${m[2]}`
+);
 console.log('\n=== EN ABOUT ===');
 console.log('canonical:', aboutCanonical && aboutCanonical[1]);
 console.log('og:url:', aboutOg && aboutOg[1]);

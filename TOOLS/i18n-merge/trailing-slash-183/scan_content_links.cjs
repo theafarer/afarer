@@ -34,7 +34,10 @@ function scan(fp) {
     if (h !== -1) end = Math.min(end, h);
     const clean = href.slice(0, end);
     if (clean.endsWith('/')) continue; // already slashed
-    const key = href.replace(/^\/(da|ar|es|de|el|fr|cs|fi|tr|it|nl|pl|ru|pt|th|sv|ro|no|hu|sk|bg|sl|sr|id|he|ms|lt|lv|et|tl)\//, '/[loc]/');
+    const key = href.replace(
+      /^\/(da|ar|es|de|el|fr|cs|fi|tr|it|nl|pl|ru|pt|th|sv|ro|no|hu|sk|bg|sl|sr|id|he|ms|lt|lv|et|tl)\//,
+      '/[loc]/'
+    );
     summary[key] = summary[key] || { count: 0, files: new Set() };
     summary[key].count++;
     summary[key].files.add(fp.replace(/\\/g, '/').replace('E:/github/afarer/src/content/', ''));
@@ -44,6 +47,14 @@ function scan(fp) {
 for (const r of roots) walk(r);
 const keys = Object.keys(summary).sort((a, b) => summary[b].count - summary[a].count);
 for (const k of keys) {
-  console.log(`${String(summary[k].count).padStart(4)}  ${k}   [${[...summary[k].files].slice(0, 3).join(', ')}${summary[k].files.size > 3 ? ', ...' : ''}]`);
+  console.log(
+    `${String(summary[k].count).padStart(4)}  ${k}   [${[...summary[k].files].slice(0, 3).join(', ')}${summary[k].files.size > 3 ? ', ...' : ''}]`
+  );
 }
-console.log('TOTAL:', keys.reduce((a, k) => a + summary[k].count, 0), 'links in', keys.length, 'patterns');
+console.log(
+  'TOTAL:',
+  keys.reduce((a, k) => a + summary[k].count, 0),
+  'links in',
+  keys.length,
+  'patterns'
+);

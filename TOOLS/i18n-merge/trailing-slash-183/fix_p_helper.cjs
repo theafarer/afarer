@@ -9,7 +9,7 @@ for (const f of files) {
   const before = s;
   s = s.replace(
     /const p = \(path: string\) => \(lang === 'en' \? withTrailingSlash\(path\) : withTrailingSlash\(`\/\$\{lang\}\$\{path\}`\)\)\);/,
-    'const p = (path: string) => (lang === \'en\' ? withTrailingSlash(path) : withTrailingSlash(`/${lang}${path}`));'
+    "const p = (path: string) => (lang === 'en' ? withTrailingSlash(path) : withTrailingSlash(`/${lang}${path}`));"
   );
   if (s !== before) {
     fs.writeFileSync(f, s);

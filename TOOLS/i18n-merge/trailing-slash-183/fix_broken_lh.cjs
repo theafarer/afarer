@@ -24,7 +24,8 @@ const ROOT = 'E:/github/afarer/src/pages/';
 const BROKEN_PLAIN = 'const lh = (h: string) => (h ? withTrailingSlash() : h);';
 const FIXED_PLAIN = 'const lh = (h: string) => (h ? withTrailingSlash(`/${lang}${h}`) : h);';
 const BROKEN_RES = "const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash() : h);";
-const FIXED_RES = "const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : h);";
+const FIXED_RES =
+  "const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : h);";
 
 let n = 0;
 for (const f of files) {

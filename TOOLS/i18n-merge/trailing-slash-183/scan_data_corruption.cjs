@@ -16,9 +16,18 @@ function checkVal(val, file, line, kind, key) {
   const v = String(val).trim();
   if (!v) return;
   stats.values++;
-  if (/^(https?:)?\/\//.test(v) || /^https?:\/\//.test(v)) { stats.fullUrl++; return; }
-  if (/^(mailto:|tel:)/i.test(v)) { stats.mailtoTel++; return; }
-  if (v.startsWith('#')) { stats.anchorOnly++; return; }
+  if (/^(https?:)?\/\//.test(v) || /^https?:\/\//.test(v)) {
+    stats.fullUrl++;
+    return;
+  }
+  if (/^(mailto:|tel:)/i.test(v)) {
+    stats.mailtoTel++;
+    return;
+  }
+  if (v.startsWith('#')) {
+    stats.anchorOnly++;
+    return;
+  }
   if (!v.startsWith('/')) return; // relative/other, out of scope
   // 1: mid-path double slash (leading '/' consumed; check rest for '//' not preceded by ':')
   const body = v.slice(1);
@@ -57,7 +66,10 @@ function scanFile(fp) {
   lines.forEach((ln, i) => {
     // yaml: href: /x   |  link: /x   |  href="/x" (inline html in yaml strings)
     let m = ln.match(/^\s*(href|link|url|to):\s*(["']?)(\/[^\s"']*)\2\s*$/);
-    if (m) { checkVal(m[2], rel, i + 1, 'yaml-key', m[1]); return; }
+    if (m) {
+      checkVal(m[2], rel, i + 1, 'yaml-key', m[1]);
+      return;
+    }
     // inline html href="..." inside yaml/md string values
     const re = /href="(\/[^"]*)"/g;
     let mm;
@@ -69,14 +81,24 @@ function scanFile(fp) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const fp = path.join(dir, e.name);
     if (e.isDirectory()) walk(fp);
-    else if (/\.(ya?ml|json)$/.test(e.name)) { stats.files++; scanFile(fp); }
+    else if (/\.(ya?ml|json)$/.test(e.name)) {
+      stats.files++;
+      scanFile(fp);
+    }
   }
 })(ROOT);
 
 console.log('=== src/data corruption check ===');
 console.log('files scanned:', stats.files);
 console.log('values checked:', stats.values);
-console.log('full URLs (skipped):', stats.fullUrl, '| mailto/tel:', stats.mailtoTel, '| anchor-only:', stats.anchorOnly);
+console.log(
+  'full URLs (skipped):',
+  stats.fullUrl,
+  '| mailto/tel:',
+  stats.mailtoTel,
+  '| anchor-only:',
+  stats.anchorOnly
+);
 console.log('clean slashed values:', stats.cleanSlashed);
 console.log('\n--- ISSUES:', issues.length);
 for (const it of issues.slice(0, 60)) {

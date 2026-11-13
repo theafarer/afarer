@@ -10,20 +10,45 @@ const stats = { files: 0, values: 0, skipped: { fullUrl: 0, mailto: 0, anchor: 0
 
 function check(v, loc) {
   v = String(v);
-  if (!v.startsWith('/')) { stats.skipped.rel++; return; }
-  stats.values++;
-  if (/^https?:\/\//.test(v)) { stats.skipped.fullUrl++; return; }
-  if (v.startsWith('//')) { // protocol-relative or double leading
-    if (/^\/\/[^/]/.test(v)) { stats.skipped.fullUrl++; return; }
+  if (!v.startsWith('/')) {
+    stats.skipped.rel++;
+    return;
   }
-  if (/^(mailto:|tel:)/i.test(v)) { stats.skipped.mailto++; return; }
+  stats.values++;
+  if (/^https?:\/\//.test(v)) {
+    stats.skipped.fullUrl++;
+    return;
+  }
+  if (v.startsWith('//')) {
+    // protocol-relative or double leading
+    if (/^\/\/[^/]/.test(v)) {
+      stats.skipped.fullUrl++;
+      return;
+    }
+  }
+  if (/^(mailto:|tel:)/i.test(v)) {
+    stats.skipped.mailto++;
+    return;
+  }
   const body = v.slice(1);
-  if (body.includes('//')) { issues.push({ loc, v, rule: 'double-slash-mid' }); return; }
-  if (v.endsWith('//')) { issues.push({ loc, v, rule: 'trailing-double' }); return; }
+  if (body.includes('//')) {
+    issues.push({ loc, v, rule: 'double-slash-mid' });
+    return;
+  }
+  if (v.endsWith('//')) {
+    issues.push({ loc, v, rule: 'trailing-double' });
+    return;
+  }
   const qi = v.indexOf('?');
-  if (qi > 0 && v[qi - 1] !== '/') { issues.push({ loc, v, rule: 'no-slash-before-query' }); return; }
+  if (qi > 0 && v[qi - 1] !== '/') {
+    issues.push({ loc, v, rule: 'no-slash-before-query' });
+    return;
+  }
   const hi = v.indexOf('#');
-  if (hi > 0 && v[hi - 1] !== '/') { frag.push({ loc, v }); return; }
+  if (hi > 0 && v[hi - 1] !== '/') {
+    frag.push({ loc, v });
+    return;
+  }
   if (v.endsWith('/') || (qi > 0 && v[qi - 1] === '/')) stats.clean++;
 }
 
@@ -52,12 +77,24 @@ function scanFile(fp) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const fp = path.join(dir, e.name);
     if (e.isDirectory()) walk(fp);
-    else if (/\.(ya?ml|json|md|mdx)$/.test(e.name)) { stats.files++; scanFile(fp); }
+    else if (/\.(ya?ml|json|md|mdx)$/.test(e.name)) {
+      stats.files++;
+      scanFile(fp);
+    }
   }
 })(ROOT);
 
 console.log('=== BROAD src/data corruption check ===');
-console.log('files:', stats.files, '| path-values:', stats.values, '| clean slashed:', stats.clean, '| skipped:', JSON.stringify(stats.skipped));
+console.log(
+  'files:',
+  stats.files,
+  '| path-values:',
+  stats.values,
+  '| clean slashed:',
+  stats.clean,
+  '| skipped:',
+  JSON.stringify(stats.skipped)
+);
 console.log('\nISSUES:', issues.length);
 issues.slice(0, 80).forEach((it) => console.log(`[${it.rule}] ${it.loc} => ${it.v}`));
 if (issues.length > 80) console.log('... +' + (issues.length - 80) + ' more');

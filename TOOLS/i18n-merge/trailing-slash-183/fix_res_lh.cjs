@@ -17,7 +17,8 @@ const files = [
 ];
 
 const resOld = "const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : h);";
-const resNew = "const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : withTrailingSlash(h));";
+const resNew =
+  "const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : withTrailingSlash(h));";
 
 let changed = 0;
 for (const f of files) {
@@ -37,7 +38,8 @@ for (const f of files) {
 const b2b = path.join(base, 'b2b-solutions-matrix.astro');
 let s = fs.readFileSync(b2b, 'utf8');
 const b2bOld = "const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}/` : h);";
-const b2bNew = "const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : withTrailingSlash(h));";
+const b2bNew =
+  "const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : withTrailingSlash(h));";
 if (s.includes(b2bOld)) {
   s = s.replace(b2bOld, b2bNew);
   fs.writeFileSync(b2b, s);

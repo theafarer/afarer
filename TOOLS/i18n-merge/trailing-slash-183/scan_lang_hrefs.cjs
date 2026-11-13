@@ -16,7 +16,9 @@ function walk(dir) {
       const lines = s.split('\n');
       lines.forEach((line, i) => {
         if (/href=\{`\/\$\{lang\}/.test(line) && !/withTrailingSlash/.test(line)) {
-          console.log(`${fp.replace(/\\/g, '/').replace('E:/github/afarer/', '')}:${i + 1}: ${line.trim().slice(0, 130)}`);
+          console.log(
+            `${fp.replace(/\\/g, '/').replace('E:/github/afarer/', '')}:${i + 1}: ${line.trim().slice(0, 130)}`
+          );
           hits++;
         }
       });

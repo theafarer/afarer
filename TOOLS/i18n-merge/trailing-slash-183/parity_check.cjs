@@ -32,14 +32,31 @@ function get(u, method = 'GET') {
     const missing = [...en].filter((p) => !set.has(p));
     const extra = [...set].filter((p) => !en.has(p));
     if (missing.length || extra.length) {
-      console.log(loc, 'missing:', missing.length, missing.slice(0, 5).join(' '), '| extra:', extra.length, extra.slice(0, 5).join(' '));
+      console.log(
+        loc,
+        'missing:',
+        missing.length,
+        missing.slice(0, 5).join(' '),
+        '| extra:',
+        extra.length,
+        extra.slice(0, 5).join(' ')
+      );
     }
   }
   console.log('(locales with no diff are not listed)');
 
   // 2) root URL behavior (sample 8)
   console.log('\n=== root URL redirect behavior (sample) ===');
-  const rootSample = ['/yoga-sup', '/research/sup-valve-types', '/about/afarer-brand', '/solutions/oem-brands', '/guides/kayak-techniques', '/resources/download-catalog', '/bundles', '/ai-context'];
+  const rootSample = [
+    '/yoga-sup',
+    '/research/sup-valve-types',
+    '/about/afarer-brand',
+    '/solutions/oem-brands',
+    '/guides/kayak-techniques',
+    '/resources/download-catalog',
+    '/bundles',
+    '/ai-context',
+  ];
   for (const p of rootSample) {
     try {
       const r = await get('https://afarer.com' + p, 'HEAD');
@@ -57,7 +74,10 @@ function get(u, method = 'GET') {
     console.log(p, r.s, 'title:', title);
   }
   // en use-cases index vs de index link sets
-  for (const [loc, p] of [['en', '/en/use-cases/'], ['de', '/de/use-cases/']]) {
+  for (const [loc, p] of [
+    ['en', '/en/use-cases/'],
+    ['de', '/de/use-cases/'],
+  ]) {
     const r = await get('https://afarer.com' + p);
     const links = [...r.b.matchAll(/href="\/[^"]*use-cases\/[^"]+"/g)].map((m) => m[0].slice(6, -1));
     const uniq = [...new Set(links)].filter((l) => !l.endsWith('/use-cases/'));

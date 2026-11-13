@@ -34,7 +34,11 @@ function get(u, method = 'GET', tries = 3) {
     // pattern: 首段 locale + 后续静态段(动态段以 :slug 表示)
     const rest = seg.slice(/^[a-z]{2}$/.test(seg[0] || '') ? 1 : 0);
     const pat = rest
-      .map((s, i) => (i === rest.length - 1 && rest.length > 1 && !s.includes('.') && s.length > 2 && !['index'].includes(s) ? ':slug' : s))
+      .map((s, i) =>
+        i === rest.length - 1 && rest.length > 1 && !s.includes('.') && s.length > 2 && !['index'].includes(s)
+          ? ':slug'
+          : s
+      )
       .join('/');
     byPattern[pat] = (byPattern[pat] || 0) + 1;
   }
@@ -44,9 +48,6 @@ function get(u, method = 'GET', tries = 3) {
   const pats = Object.entries(byPattern).sort((a, b) => b[1] - a[1]);
   console.log('patterns:', pats.length);
   fs.writeFileSync(__dirname + '/sitemap_urls.json', JSON.stringify(urls, null, 1));
-  fs.writeFileSync(
-    __dirname + '/sitemap_patterns.json',
-    JSON.stringify(Object.fromEntries(pats), null, 1)
-  );
+  fs.writeFileSync(__dirname + '/sitemap_patterns.json', JSON.stringify(Object.fromEntries(pats), null, 1));
   console.log('saved sitemap_urls.json + sitemap_patterns.json');
 })();
