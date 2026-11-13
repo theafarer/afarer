@@ -125,6 +125,8 @@ const SITEMAP_EXCLUDED_PATHS = new Set([
   '/oem-odm',
   '/quality-testing',
   '/search',
+  '/use-cases/touring-distance-paddling',
+  '/use-cases/fishing-from-inflatable-craft',
 ]);
 
 const matchesPath = (route: string, prefix: string): boolean => route === prefix || route.startsWith(prefix + '/');

@@ -1,0 +1,13 @@
+---
+export const prerender = true;
+
+// Legacy-locale stubs only: these stale URLs were previously generated for
+// de/es/fr/it/pl/pt and are indexed; 301 them to the standard fishing page.
+export async function getStaticPaths() {
+  return ['de', 'es', 'fr', 'it', 'pl', 'pt'].map((lang) => ({
+    params: { lang },
+  }));
+}
+
+return Astro.redirect(`/${Astro.params.lang}/use-cases/fishing/`, 301);
+---
