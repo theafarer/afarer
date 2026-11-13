@@ -110,8 +110,8 @@ cta:
   subtitle: 'Saage oma kuurordipaketi hinnapakkumine või laadige alla meie täielik kuurortide kataloog.'
   actions:
     - text: 'Hangi kuurordipakett'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'Laadige alla kuurortide kataloog'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

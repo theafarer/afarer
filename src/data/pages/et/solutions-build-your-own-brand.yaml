@@ -108,8 +108,8 @@ cta:
   subtitle: 'Alustage oma brändi teekonda või laadige alla meie OEM-juhend.'
   actions:
     - text: 'Alusta oma brändi teekonda'
-      href: '/contact?package=oem'
+      href: '/contact/?package=oem'
       variant: 'primary'
     - text: 'Laadi alla OEM-juhend'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

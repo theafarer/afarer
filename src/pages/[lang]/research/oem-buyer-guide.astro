@@ -8,6 +8,7 @@ import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __researchPageData from '~/i18n/generated/pages/research-oem-buyer-guide.ts';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -47,7 +48,7 @@ const jsonLd = {
     <nav class="text-sm text-gray-500 mb-8">
       <a href={`/${lang}/`} class="hover:text-sky-600">{SITE.name}</a>
       <span class="mx-2">/</span>
-      <a href={`/${lang}/research`} class="hover:text-sky-600">{t('home.research.title')}</a>
+      <a href={withTrailingSlash(`/${lang}/research`)} class="hover:text-sky-600">{t('home.research.title')}</a>
       <span class="mx-2">/</span>
       <span class="text-gray-900">{t('home.research.oemBuyer')}</span>
     </nav>
@@ -71,7 +72,7 @@ const jsonLd = {
       <h2 class="text-xl font-bold">{page.cta?.title}</h2>
       <p class="mt-2 text-sm text-muted">{page.cta?.subtitle}</p>
       <a
-        href={`/${lang}${page.cta?.button_link || '/contact'}`}
+        href={withTrailingSlash(`/${lang}${page.cta?.button_link || '/contact'}`)}
         class="mt-4 inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90"
         >{page.cta?.button_text}</a
       >

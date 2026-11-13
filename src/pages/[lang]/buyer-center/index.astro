@@ -6,6 +6,7 @@ import JsonLd from '~/components/common/JsonLd.astro';
 import { SITE } from 'astrowind:config';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -13,7 +14,7 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || getUiForLang('en')?.[key] || '';
-const p = (path: string) => (lang === 'en' ? path : `/${lang}${path}`);
+const p = (path: string) => (lang === 'en' ? withTrailingSlash(path) : withTrailingSlash(`/${lang}${path}`));
 
 const title = t('buyerCenter.title');
 const metadata = {
@@ -240,7 +241,7 @@ const metadata = {
           <p class="mt-1 text-xs text-gray-500 dark:text-slate-400">{t('buyerCenter.qualityDesc')}</p>
         </a>
         <a
-          href="/resources/download-catalog"
+          href="/resources/download-catalog/"
           class="block p-6 rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:shadow-md transition-shadow"
         >
           <div class="text-2xl mb-3">&#x1F4E6;</div>

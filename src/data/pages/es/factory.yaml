@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: Plazo de entrega
         value: 30–45 días
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: Detalles de capacidad →
   - title: Laboratorio de Calidad y Pruebas
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: Probador de tracción, cámara de temperatura, tanque de fugas
       - label: Normas
         value: ISO 9001, CE, AS 1799
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: Procedimientos de laboratorio y equipo →
   - title: Capacidad OEM/ODM
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: ISO 9001, BSCI, CE, REACH
       - label: Envío
         value: FOB, CIF, DDP a más de 50 países
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: Servicios OEM completos →
 workshops_section:
   tagline: Talleres
@@ -90,7 +90,7 @@ equipment_section:
   tagline: Equipamiento
   title: Equipamiento clave de fabricación
   view_full: Ver lista completa de equipamiento →
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: Máquina de corte automático de PVC
       spec: Controlada por CNC, precisión de 0,1 mm
@@ -270,4 +270,4 @@ process_cta:
   title: Conoce nuestro proceso de fabricación
   desc: Sigue una tabla a través de cada etapa de la producción — de la materia prima a la tabla lista para el agua.
   label: Ver proceso de producción →
-  link: /factory/process
+  link: /factory/process/

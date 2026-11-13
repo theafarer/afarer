@@ -9,6 +9,7 @@ import { languages } from '~/i18n/config';
 import { SITE } from 'astrowind:config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { landingI18n as __landing } from '~/i18n/generated/landing/marine-industry';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -59,7 +60,7 @@ const metadata = {
     type="BreadcrumbList"
     breadcrumbs={[
       { name: t('nav.home'), href: `/${lang}/` },
-      { name: fr('Marine Industry', 'Industrie Marine'), href: `/${lang}/marine-industry` },
+      { name: fr('Marine Industry', 'Industrie Marine'), href: withTrailingSlash(`/${lang}/marine-industry`) },
       { name: fr('SUP & Water Sports Guide', 'Guide SUP & Sports Nautiques'), href: `/${lang}/marine-industry/` },
     ]}
   />
@@ -551,12 +552,12 @@ const metadata = {
       </p>
       <div class="mt-6 flex gap-4 flex-wrap">
         <a
-          href={`/${lang}/products`}
+          href={withTrailingSlash(`/${lang}/products`)}
           class="px-6 py-3 bg-gray-900 text-white rounded-full text-sm font-medium hover:bg-gray-800 transition"
           >{fr('View Products', 'Voir les Produits')}</a
         >
         <a
-          href={`/${lang}/academy`}
+          href={withTrailingSlash(`/${lang}/academy`)}
           class="px-6 py-3 border border-gray-200 text-gray-700 rounded-full text-sm font-medium hover:border-gray-400 transition"
           >{fr('Learning Center', 'Centre d’Apprentissage')}</a
         >

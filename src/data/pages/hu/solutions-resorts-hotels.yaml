@@ -110,8 +110,8 @@ cta:
   subtitle: 'Kérjen reszort csomag árajánlatot, vagy töltse le teljes reszort katalógusunkat.'
   actions:
     - text: 'Reszort csomag beszerzése'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'Reszort katalógus letöltése'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

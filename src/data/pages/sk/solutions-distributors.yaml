@@ -47,8 +47,8 @@ cta:
   subtitle: 'Prihláste sa do nášho distribučného programu alebo stiahnite náš informačný balík pre distribútorov.'
   actions:
     - text: 'Prihlásiť sa do distribučného programu'
-      href: '/contact?partner=distributor'
+      href: '/contact/?partner=distributor'
       variant: 'primary'
     - text: 'Stiahnuť distribučný balík'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

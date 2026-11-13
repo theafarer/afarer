@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: 'Dodacia lehota'
         value: '30–45 dní'
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: 'Kompletné podrobnosti o kapacite →'
   - title: 'Laboratórium kvality a testovania'
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: 'Skúšobný stroj na ťah, klimatická komora, nádrž na test tesnosti'
       - label: 'Štandardy'
         value: 'ISO 9001, CE, AS 1799'
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: 'Postupy a vybavenie laboratória →'
   - title: 'Schopnosti OEM/ODM'
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: 'ISO 9001, BSCI, CE, REACH'
       - label: 'Preprava'
         value: 'FOB, CIF, DDP do 50+ krajín'
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: 'Kompletné služby OEM →'
 
 workshops_section:
@@ -90,7 +90,7 @@ equipment_section:
   tagline: 'Zariadenia'
   title: 'Kľúčové výrobné zariadenia'
   view_full: 'Zobraziť kompletný zoznam zariadení →'
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: 'Automatická rezačka PVC'
       spec: 'CNC riadenie, presnosť 0,1 mm'
@@ -271,4 +271,4 @@ process_cta:
   title: 'Pozrite si náš výrobný proces'
   desc: 'Sledujte dosku každou fázou výroby — od suroviny po dosku pripravenú na vodu.'
   label: 'Zobraziť výrobný proces →'
-  link: /factory/process
+  link: /factory/process/

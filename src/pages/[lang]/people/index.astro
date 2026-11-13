@@ -6,6 +6,7 @@ import JsonLd from '~/components/common/JsonLd.astro';
 import { SITE } from 'astrowind:config';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -14,7 +15,7 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || getUiForLang('en')?.[key] || '';
 const fr = (en: string, francais: string) => (lang === 'fr' ? francais : en);
-const p = (path: string) => (lang === 'en' ? path : `/${lang}${path}`);
+const p = (path: string) => (lang === 'en' ? withTrailingSlash(path) : withTrailingSlash(`/${lang}${path}`));
 
 const title = t('people.title');
 const metadata = {

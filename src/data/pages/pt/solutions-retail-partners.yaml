@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: Linha completa com especificações, preços e informações de pedido
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: Calculadora de margem, dicas de merchandising e melhores práticas
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: Fotos de produtos em alta resolução, imagens de estilo de vida e materiais de PDV
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Suporte ao Parceiro de Varejo
   subtitle: Tudo o que você precisa para vender com confiança.
@@ -90,8 +90,8 @@ cta:
   subtitle: Candidate-se à parceria ou baixe nosso catálogo de varejo para começar.
   actions:
     - text: Candidatar-se à Parceria
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Baixar Catálogo de Varejo
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

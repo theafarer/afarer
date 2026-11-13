@@ -61,12 +61,15 @@ const cleanPath = removeLang(new URL(Astro.url).pathname);
 // See scripts/_gen-route-manifest.cjs (two-pass: manifest from previous dist/).
 import routeManifest from '~/i18n/generated/route-manifest.json';
 const availableRoutes: Set<string> = new Set(routeManifest);
+// Emit switcher links in the live 200 (directory) form; the slashless form
+// 308-redirects on Cloudflare Pages. EN homepage is served at the site root.
 function langHref(locale: string): string {
   let target = localizePath(cleanPath, locale);
   if (target !== '/' && target.endsWith('/')) {
     target = target.slice(0, -1);
   }
-  return availableRoutes.has(target) ? target : `/${locale}`;
+  if (target === '/en') return '/';
+  return availableRoutes.has(target) ? `${target}/` : `/${locale}/`;
 }
 
 const navTextMap: Record<string, string> = {
@@ -654,7 +657,9 @@ const currentLocale = getLangFromUrl(Astro.url);
             : '';
           return (
             '<li><a href="' +
-            escapeAttr((document.querySelector('meta[name="x-locale"]')?.getAttribute('content') || 'en') + m.url) +
+            escapeAttr(
+              '/' + (document.querySelector('meta[name="x-locale"]')?.getAttribute('content') || 'en') + m.url
+            ) +
             '" class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">' +
             img +
             '<div class="flex items-center gap-1.5 min-w-0 flex-1">' +
@@ -704,7 +709,7 @@ const currentLocale = getLangFromUrl(Astro.url);
         if (q) {
           close();
           const loc = document.querySelector('meta[name="x-locale"]')?.getAttribute('content') || 'en';
-          window.location.href = '/' + loc + '/search?q=' + encodeURIComponent(q);
+          window.location.href = '/' + loc + '/search/?q=' + encodeURIComponent(q);
         }
       }
     });

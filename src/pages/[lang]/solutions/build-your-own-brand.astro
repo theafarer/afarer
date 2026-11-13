@@ -15,6 +15,7 @@ import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/solutions-build-your-own-brand.ts';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -31,7 +32,7 @@ const process = page.process ?? {};
 const packages = page.packages ?? {};
 const features = page.features ?? {};
 const cta = page.cta ?? {};
-const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}` : h);
+const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : withTrailingSlash(h));
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 
 const pageMeta = page.meta ?? {};
@@ -181,7 +182,7 @@ const crumbs = [
         hero.subtitle || 'End-to-end OEM/ODM SUP manufacturing — design, prototyping, production, and logistics',
       serviceType: 'OEM/ODM Manufacturing',
       areaServed: ['Global'],
-      url: `/${lang}/solutions/build-your-own-brand`,
+      url: withTrailingSlash(`/${lang}/solutions/build-your-own-brand`),
       items: [
         { name: 'Design & Prototyping', description: 'Custom mold creation and rapid prototyping' },
         { name: 'Mass Production', description: 'CE-certified manufacturing with quality control' },

@@ -19,13 +19,13 @@ hero:
   actions:
     - variant: primary
       text: Produkte ansehen
-      href: /products
+      href: /products/
       icon: tabler:shopping-bag
     - text: Mehr erfahren
-      href: '/afarer-story'
+      href: '/afarer-story/'
       icon: tabler:file-text
     - text: Erkunden Sie SUP-Lösungen
-      href: /solutions
+      href: /solutions/
       icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
@@ -40,25 +40,25 @@ who_we_serve:
       description: Langlebige SUP-Flotten, Clubpreise und Ersatzteilprogramme für Paddelclubs und Schulen.
       icon: tabler:users
       cta: Entdecken Sie Paddle Club Lösungen
-      link: /solutions/paddle-clubs
+      link: /solutions/paddle-clubs/
     - title: Resorts & Hotels
       keywords: Resort-Wasseraktivitäten, Hotelausstattung am Strand, Gästeerlebnis
       description: Komplette SUP-Flottenprogramme mit individuellem Branding, Mitarbeiterschulung und ROI-optimierten Paketen.
       icon: tabler:building
       cta: Erleben Sie Ihr Resort-Wassererlebnis
-      link: /solutions/resorts-hotels
+      link: /solutions/resorts-hotels/
     - title: Einzelhandelspartner
       keywords: SUP-Großhandel, Outdoor-Händler, Sportgeschäfte
       description: Vollständige Produktlinie, Marketingmaterialien, Dropshipping-Optionen und wettbewerbsfähige Großhandelsmargen.
       icon: tabler:shopping-cart
       cta: Werden Sie Einzelhandelspartner
-      link: /solutions/retail-partners
+      link: /solutions/retail-partners/
     - title: Landesdistributoren & Co-Brand-Partner
       keywords: SUP-Landesdistributor, Co-Branding-SUP, Private-Label-SUP
       description: Exklusive Distribution Land für Land und limitierte Co-Branding-Kollektionen für qualifizierte Wassersportunternehmen.
       icon: tabler:package
       cta: Partner werden
-      link: /distributor-program
+      link: /distributor-program/
 proof_points:
   title: Getestet jenseits des Showrooms
   subtitle: Design, Performance und Qualität, die sich überprüfen lassen — auf dem Wasser und in den Zahlen.
@@ -113,7 +113,7 @@ oem_section:
       title: Globale Lieferung
       desc: FOB Qingdao Logistik, CIF Hauptports, Tür-zu-Tür.
   cta: Co-Branding entdecken
-  cta_link: /co-brand
+  cta_link: /co-brand/
 cta:
   title: |
     Finden Sie Ihr <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">nächstes Board.</span>
@@ -121,10 +121,10 @@ cta:
   actions:
     - variant: primary
       text: Angebot anfordern
-      href: /contact
+      href: /contact/
       icon: tabler:message-circle
     - text: Katalog durchstöbern
-      href: /products
+      href: /products/
 distributor:
   tagline: Länder-exklusive Distributoren
   title: Ein Land. Ein offizieller afarer-Distributor.
@@ -141,11 +141,11 @@ distributor:
   actions:
     - variant: primary
       text: Distributor werden
-      href: /distributor-program
+      href: /distributor-program/
     - text: Händlerpreisliste anfordern
-      href: /contact?subject=Dealer Price List
+      href: /contact/?subject=Dealer Price List
     - text: Landespartnerschaft beantragen
-      href: /contact?subject=Country Partnership Application
+      href: /contact/?subject=Country Partnership Application
     - text: Distributorprogramm herunterladen
-      href: /distributor-program
+      href: /distributor-program/
   note: Musterbestellungen ab 5–10 Einheiten. Probebestellungen 10–30. Autorisierter Händler 30–50. Länder-/Regionaldistributoren 100–300+.

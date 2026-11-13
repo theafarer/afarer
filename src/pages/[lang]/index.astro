@@ -18,6 +18,7 @@ import __pageData from '~/i18n/generated/pages/home.ts';
 import productVisualsData from '~/data/site/product-visuals.yaml';
 import { pageContentData } from '~/i18n/generated/data';
 import { supScenarios } from '~/data/sup-scenarios';
+import { localizeHref } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(langMap).map((lang) => ({
@@ -28,6 +29,13 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 setPageContentData(__pageData);
 const page = getPageContent(lang);
+
+// Emit internal links in the live 200 (directory) form, localized for this page.
+const lh = (h?: string): string => {
+  if (!h) return '#';
+  if (!h.startsWith('/') || h.startsWith('//')) return h;
+  return localizeHref(h, lang || defaultLang);
+};
 
 const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || getUiForLang('en')?.[key] || '';
 
@@ -295,13 +303,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
               (page.hero?.actions || []).map((act: any) =>
                 act.variant === 'primary' ? (
                   <a
-                    href={
-                      (act.href || '/solutions').startsWith('/resources')
-                        ? act.href
-                        : (act.href || '/solutions').startsWith('/')
-                          ? '/' + lang + act.href
-                          : act.href
-                    }
+                    href={lh(act.href || '/solutions')}
                     class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5"
                   >
                     {act.text || 'Start Your Project'}
@@ -309,13 +311,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
                   </a>
                 ) : (
                   <a
-                    href={
-                      (act.href || '/co-brand').startsWith('/resources')
-                        ? act.href
-                        : (act.href || '/co-brand').startsWith('/')
-                          ? '/' + lang + act.href
-                          : act.href
-                    }
+                    href={lh(act.href || '/co-brand')}
                     class="inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white/80 font-medium rounded-full hover:bg-white/10 hover:text-white transition-all backdrop-blur-sm"
                   >
                     {act.text || 'Co-Brand & Partnership'}
@@ -327,14 +323,14 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
               !page.hero?.actions?.length && (
                 <>
                   <a
-                    href={'/' + lang + '/inflatable-sup'}
+                    href={lh('/inflatable-sup')}
                     class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5"
                   >
                     {t('cta.explore') || 'Explore Boards'}
                     <span class="text-lg">→</span>
                   </a>
                   <a
-                    href={'/' + lang + '/size-guide'}
+                    href={lh('/size-guide')}
                     class="inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white/80 font-medium rounded-full hover:bg-white/10 hover:text-white transition-all backdrop-blur-sm"
                   >
                     {t('home.preview.title') || 'Find Your Ride'}
@@ -386,26 +382,14 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
           distributor.actions.map((act: any) =>
             act.variant === 'primary' ? (
               <a
-                href={
-                  act.href.startsWith('/resources')
-                    ? act.href
-                    : act.href.startsWith('/')
-                      ? '/' + lang + act.href
-                      : act.href
-                }
+                href={lh(act.href)}
                 class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5"
               >
                 {act.text} <span class="text-lg">→</span>
               </a>
             ) : (
               <a
-                href={
-                  act.href.startsWith('/resources')
-                    ? act.href
-                    : act.href.startsWith('/')
-                      ? '/' + lang + act.href
-                      : act.href
-                }
+                href={lh(act.href)}
                 class="inline-flex items-center gap-2 px-8 py-4 border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-all"
               >
                 {act.text}
@@ -439,7 +423,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {page.who_we_serve.items.map((item: any) => (
               <a
-                href={(item.link || '#').startsWith('/') ? '/' + lang + item.link : item.link}
+                href={lh(item.link)}
                 class="group relative bg-white rounded-3xl p-8 border border-gray-200 hover:border-primary/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 flex flex-col"
               >
                 <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 text-primary">
@@ -487,7 +471,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
         {
           supScenarios.map((scenario) => (
             <a
-              href={'/' + lang + scenario.href}
+              href={lh(scenario.href)}
               class="group bg-[#F8FAFB] rounded-3xl overflow-hidden border border-gray-200 hover:border-primary/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
             >
               <div class="aspect-[4/3] bg-gradient-to-br from-blue-50 to-cyan-50 overflow-hidden">
@@ -681,7 +665,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <a
-          href={'/' + lang + '/inflatable-sup'}
+          href={lh('/inflatable-sup')}
           class="group block bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
         >
           <div class="aspect-[4/3] bg-gradient-to-br from-blue-50 to-cyan-50 flex items-center justify-center p-8">
@@ -711,7 +695,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
           </div>
         </a>
         <a
-          href={'/' + lang + '/accessory'}
+          href={lh('/accessory')}
           class="group block bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
         >
           <div class="aspect-[4/3] bg-gradient-to-br from-blue-50 to-gray-50 flex items-center justify-center p-8">
@@ -876,7 +860,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
       </div>
       <div class="mt-12 text-center reveal">
         <a
-          href={'/' + lang + '/factory'}
+          href={lh('/factory')}
           class="inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white font-medium rounded-full hover:bg-white/10 transition-all"
         >
           {t('home.factory.tour') || 'See How It’s Built'} →
@@ -914,7 +898,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
           </div>
           <div class="mt-12 text-center reveal">
             <a
-              href={page.oem_section?.cta_link ? '/' + lang + page.oem_section.cta_link : '/' + lang + '/co-brand'}
+              href={page.oem_section?.cta_link ? lh(page.oem_section.cta_link) : lh('/co-brand')}
               class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
             >
               {page.oem_section?.cta || 'Explore Co-Branding'}
@@ -981,7 +965,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
       </div>
       <div class="text-center mt-12 reveal">
         <a
-          href={'/' + lang + '/products'}
+          href={lh('/products')}
           class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
         >
           {t('home.lifestyle.cta') || 'Explore All Products'}
@@ -1035,26 +1019,14 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
             (page.cta?.actions || []).map((act: any) =>
               act.variant === 'primary' ? (
                 <a
-                  href={
-                    act.href
-                      ? act.href.startsWith('/resources')
-                        ? act.href
-                        : '/' + lang + act.href
-                      : '/' + lang + '/contact'
-                  }
+                  href={act.href ? (act.href.startsWith('/resources') ? act.href : lh(act.href)) : lh('/contact')}
                   class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
                 >
                   {act.text || 'Contact Us'}
                 </a>
               ) : (
                 <a
-                  href={
-                    act.href
-                      ? act.href.startsWith('/resources')
-                        ? act.href
-                        : '/' + lang + act.href
-                      : '/resources/download-catalog'
-                  }
+                  href={lh(act.href || '/resources/download-catalog')}
                   class="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-all"
                 >
                   {act.text || 'Download Catalog'}
@@ -1082,7 +1054,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
     </div>
     <div class="grid md:grid-cols-3 gap-8">
       <a
-        href={'/' + lang + '/media'}
+        href={lh('/media')}
         class="group bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition-all hover:-translate-y-0.5"
       >
         <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 text-primary">
@@ -1111,7 +1083,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
         </span>
       </a>
       <a
-        href={'/' + lang + '/quality'}
+        href={lh('/quality')}
         class="group bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition-all hover:-translate-y-0.5"
       >
         <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center mb-5 text-emerald-600">
@@ -1140,7 +1112,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
         </span>
       </a>
       <a
-        href={'/' + lang + '/factory'}
+        href={lh('/factory')}
         class="group bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition-all hover:-translate-y-0.5"
       >
         <div class="w-14 h-14 bg-amber-50 rounded-2xl flex items-center justify-center mb-5 text-amber-600">
@@ -1171,7 +1143,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
         {t('home.resources.b2bNote') || 'All resources available for registered B2B partners.'}
       </p>
       <a
-        href={'/' + lang + '/contact'}
+        href={lh('/contact')}
         class="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-[#0088B3]"
       >
         {t('home.resources.requestAccess') || 'Request access to gated resources'} →
@@ -1281,7 +1253,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
           },
         ].map((board) => (
           <a
-            href={'/' + lang + '/inflatable-sup/'}
+            href={lh('/inflatable-sup/')}
             class="group relative rounded-2xl overflow-hidden bg-white border border-gray-200 hover:shadow-xl transition-all duration-300"
           >
             <div class="aspect-[4/3] overflow-hidden">
@@ -1434,7 +1406,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <a
-          href={`/${lang}/research/drop-stitch-technology`}
+          href={lh('/research/drop-stitch-technology')}
           class="group bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-md hover:-translate-y-0.5 transition-all"
         >
           <span class="text-xs font-semibold text-[#06b6d4] uppercase tracking-wide"
@@ -1451,7 +1423,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
           </p>
         </a>
         <a
-          href={`/${lang}/research/ce-certification-guide`}
+          href={lh('/research/ce-certification-guide')}
           class="group bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-md hover:-translate-y-0.5 transition-all"
         >
           <span class="text-xs font-semibold text-[#06b6d4] uppercase tracking-wide"
@@ -1468,7 +1440,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
           </p>
         </a>
         <a
-          href={`/${lang}/research/sup-thickness-guide`}
+          href={lh('/research/sup-thickness-guide')}
           class="group bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-md hover:-translate-y-0.5 transition-all"
         >
           <span class="text-xs font-semibold text-[#06b6d4] uppercase tracking-wide"
@@ -1485,7 +1457,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
           </p>
         </a>
         <a
-          href={`/${lang}/research/oem-buyer-guide`}
+          href={lh('/research/oem-buyer-guide')}
           class="group bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-md hover:-translate-y-0.5 transition-all"
         >
           <span class="text-xs font-semibold text-[#06b6d4] uppercase tracking-wide"
@@ -1503,7 +1475,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
         </a>
       </div>
       <div class="mt-8 text-center">
-        <a href={`/${lang}/research`} class="text-sm font-medium text-[#06b6d4] hover:text-[#0891b2]"
+        <a href={lh('/research')} class="text-sm font-medium text-[#06b6d4] hover:text-[#0891b2]"
           >{t('home.research.browse') || 'Browse all research →'}</a
         >
       </div>
@@ -1527,7 +1499,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <a
-          href={`/${lang}/evidence`}
+          href={lh('/evidence')}
           class="group bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col"
         >
           <div class="text-3xl mb-3 text-[#06b6d4]">
@@ -1553,7 +1525,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
           >
         </a>
         <a
-          href={`/${lang}/evidence`}
+          href={lh('/evidence')}
           class="group bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col"
         >
           <div class="text-3xl mb-3 text-[#06b6d4]">
@@ -1580,7 +1552,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
           >
         </a>
         <a
-          href={`/${lang}/evidence`}
+          href={lh('/evidence')}
           class="group bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-md hover:-translate-y-0.5 transition-all flex flex-col"
         >
           <div class="text-3xl mb-3 text-[#06b6d4]">
@@ -1606,7 +1578,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
         </a>
       </div>
       <div class="mt-8 text-center">
-        <a href={`/${lang}/evidence`} class="text-sm font-medium text-[#06b6d4] hover:text-[#0891b2]"
+        <a href={lh('/evidence')} class="text-sm font-medium text-[#06b6d4] hover:text-[#0891b2]"
           >{t('home.evidence.browseAll') || 'Browse all evidence →'}</a
         >
       </div>
@@ -1808,7 +1780,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
               </li>
             </ul>
             <a
-              href={`/${lang}/about`}
+              href={lh('/about')}
               class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#06b6d4] hover:underline"
               >{t('home.why.afarer.viewMore') || 'View More →'}</a
             >
@@ -1845,7 +1817,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
               </li>
             </ul>
             <a
-              href={`/${lang}/contact`}
+              href={lh('/contact')}
               class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#06b6d4] hover:underline"
               >{t('home.why.afarer.contact') || 'Contact Us →'}</a
             >
@@ -1968,7 +1940,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
       }
     </div>
     <div class="mt-8 text-center">
-      <a href={`/${lang}/use-cases`} class="text-sm font-medium text-sky-600 hover:text-sky-700"
+      <a href={lh('/use-cases')} class="text-sm font-medium text-sky-600 hover:text-sky-700"
         >{t('home.useCases.browse') || 'View all use cases'} →</a
       >
     </div>
@@ -2116,7 +2088,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
       </div>
       <div class="text-center">
         <a
-          href={`/${lang}/gallery`}
+          href={lh('/gallery')}
           class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-xl font-semibold hover:bg-gray-800 transition-colors text-sm"
         >
           {t('home.community.gallery.viewAll') || 'View Full Gallery'} →
@@ -2147,7 +2119,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
         {
           ((learnData as any)?.cards || []).map((card: { href: string; image: string; title: string }) => (
             <a
-              href={'/' + lang + card.href}
+              href={lh(card.href)}
               class="group bg-white rounded-2xl border border-gray-200 hover:shadow-md transition-shadow overflow-hidden block"
             >
               <div class="aspect-[4/3] bg-cover bg-center" style={"background-image: url('" + card.image + "')"} />
@@ -2175,7 +2147,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
       </div>
       <div class="grid md:grid-cols-3 gap-6">
         <a
-          href={'/' + lang + '/oem-process'}
+          href={lh('/oem-process')}
           class="group bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-md hover:-translate-y-0.5 transition-all"
         >
           <span class="text-xs font-semibold text-sky-600 uppercase tracking-wide"
@@ -2189,7 +2161,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
           </p>
         </a>
         <a
-          href={'/' + lang + '/engineering-team'}
+          href={lh('/engineering-team')}
           class="group bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-md hover:-translate-y-0.5 transition-all"
         >
           <span class="text-xs font-semibold text-sky-600 uppercase tracking-wide"
@@ -2203,7 +2175,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
           </p>
         </a>
         <a
-          href={'/' + lang + '/learn/sup'}
+          href={lh('/learn/sup')}
           class="group bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-md hover:-translate-y-0.5 transition-all"
         >
           <span class="text-xs font-semibold text-sky-600 uppercase tracking-wide"
@@ -2474,7 +2446,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
       </div>
       <div class="text-center mt-12">
         <a
-          href={'/' + lang + '/contact'}
+          href={lh('/contact')}
           class="inline-flex items-center gap-2 px-8 py-4 bg-[#fb923c] hover:bg-orange-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all"
         >
           {t('home.contact.cta') || 'Send us a message'} →

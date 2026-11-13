@@ -20,6 +20,7 @@ import learnLtData from '~/data/learn-lt.yaml';
 import learnLvData from '~/data/learn-lv.yaml';
 import learnEtData from '~/data/learn-et.yaml';
 import learnTlData from '~/data/learn-tl.yaml';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export function getStaticPaths() {
   const slugs = [
@@ -219,11 +220,11 @@ const pageDesc = t('learn.' + slug + '.description') || page.description;
 const lArticles = (page.articles || []).map((a) => ({
   ...a,
   href: a.href.startsWith('/guides/')
-    ? `/${lang}${a.href}`
+    ? withTrailingSlash(`/${lang}${a.href}`)
     : a.href.startsWith('/learn/')
-      ? `/${lang}${a.href}`
+      ? withTrailingSlash(`/${lang}${a.href}`)
       : a.href.startsWith('/') && !a.href.startsWith('//')
-        ? `/${lang}${a.href}`
+        ? withTrailingSlash(`/${lang}${a.href}`)
         : a.href,
 }));
 
@@ -238,8 +239,8 @@ const metadata = {
   <JsonLd
     type="BreadcrumbList"
     breadcrumbs={[
-      { name: t('breadcrumb.home') || 'Home', href: `/${lang}` },
-      { name: t('nav.learn') || 'Learn', href: `/${lang}/knowledge` },
+      { name: t('breadcrumb.home') || 'Home', href: withTrailingSlash(`/${lang}`) },
+      { name: t('nav.learn') || 'Learn', href: withTrailingSlash(`/${lang}/knowledge`) },
       { name: pageTitle },
     ]}
   />
@@ -271,7 +272,7 @@ const metadata = {
   <section class="max-w-5xl mx-auto px-6 pb-16">
     <div class="grid md:grid-cols-3 gap-4 text-sm">
       <a
-        href={`/${lang}/technology`}
+        href={withTrailingSlash(`/${lang}/technology`)}
         class="block p-4 rounded-xl border border-gray-200 dark:border-slate-700 hover:border-sky-300 dark:hover:border-sky-600 transition"
       >
         <span class="font-medium text-sky-600">{t('nav.technology') || 'Technology'}</span>
@@ -280,7 +281,7 @@ const metadata = {
         </p>
       </a>
       <a
-        href={`/${lang}/products`}
+        href={withTrailingSlash(`/${lang}/products`)}
         class="block p-4 rounded-xl border border-gray-200 dark:border-slate-700 hover:border-sky-300 dark:hover:border-sky-600 transition"
       >
         <span class="font-medium text-sky-600">{t('product.pageTitle') || 'Products'}</span>
@@ -289,7 +290,7 @@ const metadata = {
         </p>
       </a>
       <a
-        href={`/${lang}/trust`}
+        href={withTrailingSlash(`/${lang}/trust`)}
         class="block p-4 rounded-xl border border-gray-200 dark:border-slate-700 hover:border-sky-300 dark:hover:border-sky-600 transition"
       >
         <span class="font-medium text-sky-600">{t('nav.trust') || 'Trust'}</span>

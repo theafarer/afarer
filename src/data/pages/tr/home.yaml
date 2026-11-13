@@ -21,13 +21,13 @@ hero:
   actions:
     - variant: primary
       text: Ürünleri Gör
-      href: /products
+      href: /products/
       icon: tabler:shopping-bag
     - text: Daha Fazla Bilgi
-      href: '/afarer-story'
+      href: '/afarer-story/'
       icon: tabler:file-text
     - text: SUP Çözümlerini Keşfedin
-      href: /solutions
+      href: /solutions/
       icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
@@ -42,25 +42,25 @@ who_we_serve:
       description: Dayanıklı SUP filoları, kulüp fiyatlandırması ve kürek kulüpleri ile okulları için yedek parça programları.
       icon: tabler:users
       cta: Kulüp Çözümlerimizi Keşfedin
-      link: /solutions/paddle-clubs
+      link: /solutions/paddle-clubs/
     - title: Tatil Köyleri ve Oteller
       keywords: tatil köyü su etkinlikleri, otel plaj ekipmanları, misafir deneyimi
       description: Özel markalama, personel eğitimi ve ROI optimize paketler için tam SUP filo programları.
       icon: tabler:building
       cta: Tatil Köyü Su Deneyiminizi Oluşturun
-      link: /solutions/resorts-hotels
+      link: /solutions/resorts-hotels/
     - title: Perakende Ortakları
       keywords: SUP toptan satışı, açık hava perakendecileri, spor malzemeleri mağazaları
       description: Tam ürün yelpazesi, pazarlama materyalleri, dropshipping seçenekleri ve rekabetçi toptan kar marjları.
       icon: tabler:shopping-cart
       cta: Perakende Ortağımız Olun
-      link: /solutions/retail-partners
+      link: /solutions/retail-partners/
     - title: Ülke Distribütörleri & Co-Brand Ortakları
       keywords: ülke SUP distribütörü, co-branded SUP, özel etiketli SUP
       description: Ülke ülke münhasır dağıtım ve nitelikli su sporu işletmeleri için sınırlı co-branded koleksiyonlar.
       icon: tabler:package
       cta: Ortak Olun
-      link: /distributor-program
+      link: /distributor-program/
 proof_points:
   title: Showroom ötesinde test edildi
   subtitle: Tasarım, performans ve kaliteyi doğrulayabilirsiniz — suda ve rakamlarda.
@@ -115,7 +115,7 @@ oem_section:
       title: Küresel Teslimat
       desc: FOB Qingdao lojistik, CIF ana limanlar, kapıya teslim.
   cta: Co-Branding'i Keşfedin
-  cta_link: /co-brand
+  cta_link: /co-brand/
 cta:
   title: |
     Bir sonraki botunuzu <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">yapılandırmaya hazır mısınız</span>?
@@ -123,10 +123,10 @@ cta:
   actions:
     - variant: primary
       text: Fiyat Sor
-      href: /contact
+      href: /contact/
       icon: tabler:message-circle
     - text: Kataloğa Göz At
-      href: /products
+      href: /products/
 distributor:
   tagline: 'Ülkeye Özel Münhasır Distribütörler'
   title: 'Tek Ülke. Tek Resmî afarer Distribütörü.'
@@ -143,11 +143,11 @@ distributor:
   actions:
     - variant: primary
       text: 'Dağıtıcı Olun'
-      href: /distributor-program
+      href: /distributor-program/
     - text: 'Bayi Fiyat Listesi Talep Edin'
-      href: /contact?subject=Dealer Price List
+      href: /contact/?subject=Dealer Price List
     - text: 'Ülke Ortaklığı Başvurusu Yapın'
-      href: /contact?subject=Country Partnership Application
+      href: /contact/?subject=Country Partnership Application
     - text: 'Dağıtıcı Programını İndirin'
-      href: /distributor-program
+      href: /distributor-program/
   note: 'Numune siparişleri 5–10 adet. Deneme siparişleri 10–30. Yetkili bayi 30–50. Ülke/Bölge Distribütörü 100–300+.'

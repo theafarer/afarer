@@ -9,6 +9,7 @@ export async function getStaticPaths() {
 }
 import ExperienceLayer from '~/components/content/ExperienceLayer.astro';
 import RelatedPages from '~/components/content/RelatedPages.astro';
+import { withTrailingSlash } from '~/i18n/routing';
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
@@ -35,7 +36,7 @@ const industries = [
       'Resort and waterfront property SUP fleets. High-durability rental-grade construction with custom branding, staff training, and fleet management support.',
     craft: ['Rental-grade SUPs (reinforced)', 'Custom-branded fleets', 'Kids and family SUPs'],
     certs: ['CE recreational craft', 'Commercial fleet grade'],
-    link: `/${lang}/products`,
+    link: withTrailingSlash(`/${lang}/products`),
   },
   {
     name: 'Rental Operators',
@@ -46,7 +47,7 @@ const industries = [
       'Boards engineered for 1000+ inflation cycles and daily rental use. Military-grade PVC, UV-resistant graphics, and quick-turnaround replacement support.',
     craft: ['Rental-grade all-around SUPs', 'Touring SUPs for guided tours', 'Accessories and paddles'],
     certs: ['CE certified', 'UV/harsh environment tested'],
-    link: `/${lang}/products`,
+    link: withTrailingSlash(`/${lang}/products`),
   },
   {
     name: 'Paddle Clubs & SUP Schools',
@@ -57,7 +58,7 @@ const industries = [
       'Fleet supply for paddle clubs and SUP schools. Bulk club pricing, mixed-size fleets for all skill levels, event support, and membership program equipment.',
     craft: ['Beginner-friendly SUPs', 'Stable teaching platforms', 'Race and touring boards'],
     certs: ['CE certified', 'Commercial fleet grade'],
-    link: `/${lang}/products`,
+    link: withTrailingSlash(`/${lang}/products`),
   },
   {
     name: 'Marine Tourism & Adventure Operators',
@@ -68,7 +69,7 @@ const industries = [
       'Tour and expedition equipment for marine tourism operators. Guided-tour fleets, group paddling setups, and durable boards for daily guest use.',
     craft: ['All-around SUPs (stable)', 'Giant multi-rider SUPs', 'Touring SUPs for excursions'],
     certs: ['CE recreational craft', 'UV/harsh environment tested'],
-    link: `/${lang}/products`,
+    link: withTrailingSlash(`/${lang}/products`),
   },
   {
     name: 'Retail Brands & Distributors',
@@ -79,7 +80,7 @@ const industries = [
       'Private-label SUP programs and wholesale distribution. Full OEM/ODM support from design and tooling to packaging and compliance documentation.',
     craft: ['Private-label SUP lines', 'Wholesale fleet supply', 'Retail-ready packaging'],
     certs: ['CE certified', 'ISO 9001 manufacturing'],
-    link: `/${lang}/oem-odm-manufacturer`,
+    link: withTrailingSlash(`/${lang}/oem-odm-manufacturer`),
   },
   {
     name: 'Fishing & Outdoor',
@@ -90,7 +91,7 @@ const industries = [
       'Fishing-specific SUPs with wide, stable platforms, gear-mount options, and accessory integration for anglers and outdoor retailers.',
     craft: ['Fishing SUPs (wide/stable)', 'Gear-mount configurations', 'Kayak-SUP hybrids'],
     certs: ['CE recreational', 'UV-stabilized materials'],
-    link: `/${lang}/products`,
+    link: withTrailingSlash(`/${lang}/products`),
   },
 ];
 ---
@@ -167,12 +168,12 @@ const industries = [
       </p>
       <div class="mt-6 flex justify-center gap-4">
         <a
-          href={`/${lang}/oem-odm-manufacturer`}
+          href={withTrailingSlash(`/${lang}/oem-odm-manufacturer`)}
           class="px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-gray-800 transition"
           >{t('solutionsByIndustry.ctaBtn') || 'OEM/ODM Services'}</a
         >
         <a
-          href={`/${lang}/contact`}
+          href={withTrailingSlash(`/${lang}/contact`)}
           class="px-8 py-4 border border-gray-200 text-gray-700 rounded-full font-semibold hover:border-gray-400 transition"
           >{t('solutionsByIndustry.contactBtn') || 'Contact Us'}</a
         >
@@ -210,20 +211,20 @@ const industries = [
       {
         title: t('solutionsByIndustry.rel1') || 'Solutions by Use Case',
         description: t('solutionsByIndustry.rel1desc') || 'Match your specific use case to the right afarer solution.',
-        href: `/${lang}/solutions/by-use-case`,
+        href: withTrailingSlash(`/${lang}/solutions/by-use-case`),
         label: t('solutionsByIndustry.rel1label') || 'Decision Tool',
       },
       {
         title: 'SUP Products',
         description: 'Full lineup of CE-certified inflatable SUPs and accessories.',
-        href: `/${lang}/products`,
+        href: withTrailingSlash(`/${lang}/products`),
         label: 'Products',
       },
       {
         title: t('solutionsByIndustry.rel3') || 'OEM/ODM Manufacturing',
         description:
           t('solutionsByIndustry.rel3desc') || 'Custom manufacturing services for global brands and organizations.',
-        href: `/${lang}/oem-odm-manufacturer`,
+        href: withTrailingSlash(`/${lang}/oem-odm-manufacturer`),
         label: t('solutionsByIndustry.rel3label') || 'OEM',
       },
       {
@@ -231,7 +232,7 @@ const industries = [
         description:
           t('solutionsByIndustry.rel4desc') ||
           'Our engineering philosophy — precision manufacturing and rigorous quality control.',
-        href: `/${lang}/engineering-perfection`,
+        href: withTrailingSlash(`/${lang}/engineering-perfection`),
         label: t('solutionsByIndustry.rel4label') || 'Philosophy',
       },
     ]}

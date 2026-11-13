@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: Pełna oferta wraz ze specyfikacjami, cenami i informacjami o zamówieniach
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: Kalkulator marży, wskazówki merchandisingowe i najlepsze praktyki
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: Zdjęcia produktów w wysokiej rozdzielczości, zdjęcia lifestyle'owe i materiały POS
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Wsparcie partnerów detalicznych
   subtitle: Wszystko, czego potrzebujesz, aby sprzedawać pewnie.
@@ -90,8 +90,8 @@ cta:
   subtitle: Złóż wniosek o partnerstwo lub pobierz nasz katalog detaliczny, aby zacząć.
   actions:
     - text: Złóż wniosek o partnerstwo
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Pobierz katalog detaliczny
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

@@ -35,7 +35,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: Délai
         value: 30–45 jours
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: Voir capacités complètes →
   - title: Laboratoire Qualité et Tests
     icon: Q
@@ -46,7 +46,7 @@ intelligence_cards:
         value: Testeur traction, chambre température, bac fuite
       - label: Normes
         value: ISO 9001, CE, AS 1799
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: Procédures labo et équipement →
   - title: Capacité OEM/ODM
     icon: O
@@ -57,7 +57,7 @@ intelligence_cards:
         value: ISO 9001, BSCI, CE, REACH
       - label: Expédition
         value: FOB, CIF, DDP vers 50+ pays
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: Services OEM complets →
 workshops_section:
   tagline: Ateliers
@@ -85,7 +85,7 @@ equipment_section:
   tagline: Équipement
   title: Équipements Clés de Fabrication
   view_full: Voir la liste complète des équipements →
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: Machine de découpe PVC automatique
       spec: Contrôle CNC, précision 0,1 mm
@@ -257,4 +257,4 @@ process_cta:
   title: Voir notre processus de fabrication
   desc: Suivez un SUP à chaque étape de production — de la matière première à la planche prête pour la mer.
   label: Voir le processus de production →
-  link: /factory/process
+  link: /factory/process/

@@ -113,8 +113,8 @@ cta:
   subtitle: 'Zatražite ponudu za klupsku flotu ili preuzmite naš vodič za pokretanje kluba.'
   actions:
     - text: 'Prijavite se za klupsku flotu'
-      href: '/contact?package=club'
+      href: '/contact/?package=club'
       variant: 'primary'
     - text: 'Preuzmite klupski vodič'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

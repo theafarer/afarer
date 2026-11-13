@@ -10,6 +10,7 @@ import type { ContentV2Record } from '~/data/content-v2';
 import { products } from '~/data/products';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   const paths: Array<{
@@ -66,14 +67,14 @@ const categoryLabel = (cat: string) => t('v2.category.' + cat) || cat;
       headline: entry.title,
       description: entry.description,
     }}
-    data={{ url: `${SITE.site}/${lang}/v2/${entry.slug}` }}
+    data={{ url: `${SITE.site}/${lang}/v2/${entry.slug}/` }}
   />
 
   <JsonLd type="FAQPage" faqs={entry.faq} />
 
   <article class="max-w-3xl mx-auto py-24 px-6">
     <div class="flex items-center gap-2 text-sm text-gray-500 mb-6">
-      <a href={`/${lang}/v2`} class="text-sky-600 hover:text-sky-700">{t('v2.library')}</a>
+      <a href={withTrailingSlash(`/${lang}/v2`)} class="text-sky-600 hover:text-sky-700">{t('v2.library')}</a>
       <span aria-hidden="true">/</span>
       <span class="px-2 py-0.5 bg-gray-100 rounded-full text-xs font-medium capitalize"
         >{categoryLabel(entry.category)}</span
@@ -129,7 +130,7 @@ const categoryLabel = (cat: string) => t('v2.category.' + cat) || cat;
                     const g = contentV2Records.find((c) => c.slug === slug) || guides.find((gg) => gg.slug === slug);
                     return g ? (
                       <a
-                        href={`/${lang}/v2/${g.slug}`}
+                        href={withTrailingSlash(`/${lang}/v2/${g.slug}`)}
                         class="text-sm text-sky-600 hover:text-sky-700 underline underline-offset-2"
                       >
                         {g.title}
@@ -149,7 +150,7 @@ const categoryLabel = (cat: string) => t('v2.category.' + cat) || cat;
                     const p = products.find((pr) => pr.id === id);
                     return p ? (
                       <a
-                        href={`/${lang}/products/${p.id}`}
+                        href={withTrailingSlash(`/${lang}/products/${p.id}`)}
                         class="text-sm text-sky-600 hover:text-sky-700 underline underline-offset-2"
                       >
                         {p.name}
@@ -206,7 +207,7 @@ const categoryLabel = (cat: string) => t('v2.category.' + cat) || cat;
           <div class="flex flex-wrap gap-3">
             {resolvedGuides.map((g) => (
               <a
-                href={`/${lang}/v2/${g.slug}`}
+                href={withTrailingSlash(`/${lang}/v2/${g.slug}`)}
                 class="px-4 py-2 bg-white rounded-xl border border-gray-200 text-sm text-gray-700 hover:border-sky-300 hover:text-sky-700 transition-colors"
               >
                 {g.title}
@@ -214,7 +215,7 @@ const categoryLabel = (cat: string) => t('v2.category.' + cat) || cat;
             ))}
             {resolvedProducts.map((p) => (
               <a
-                href={`/${lang}/products/${p.id}`}
+                href={withTrailingSlash(`/${lang}/products/${p.id}`)}
                 class="px-4 py-2 bg-white rounded-xl border border-gray-200 text-sm font-medium text-gray-700 hover:border-sky-300 hover:text-sky-700 transition-colors"
               >
                 {p.name}

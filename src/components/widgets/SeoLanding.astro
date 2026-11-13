@@ -9,6 +9,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
 import { SITE } from 'astrowind:config';
+import { withTrailingSlash } from '~/i18n/routing';
 
 interface Props {
   page: any;
@@ -39,7 +40,7 @@ const metadata = {
   keywords: Array.isArray(pageMeta.keywords) ? pageMeta.keywords : [],
 };
 
-const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const lh = (h: string) => (h ? withTrailingSlash(`/${lang}${h}`) : h);
 const heroActions = (hero.actions || []).map((a: any) => ({ ...a, href: lh(a.href) }));
 const ctaActions = (cta.actions || []).map((a: any) => ({ ...a, href: lh(a.href) }));
 
@@ -143,7 +144,7 @@ const faqItems = (faqs.items || []).map((f: any) => ({ question: f.title, answer
       description: metadata.description,
       serviceType: 'Inflatable SUP & Water Sports Equipment',
       areaServed: ['Global'],
-      url: `/${lang}/${pageName}`,
+      url: withTrailingSlash(`/${lang}/${pageName}`),
       items: (features.items || []).slice(0, 6).map((f: any) => ({
         name: f.title,
         description: f.description,

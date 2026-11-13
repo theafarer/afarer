@@ -64,8 +64,8 @@ cta:
   subtitle: 'Вземете цени за наемане или сравнете модели дъски за вашата операция.'
   actions:
     - text: 'Вземете цени за наемане'
-      href: '/contact?package=rental'
+      href: '/contact/?package=rental'
       variant: 'primary'
     - text: 'Сравнете моделите дъски'
-      href: '/compare'
+      href: '/compare/'
       variant: 'secondary'

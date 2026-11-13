@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: Lieferzeit
         value: 30–45 Tage
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: Kapazitätsdetails →
   - title: Qualitätslabor & Prüfung
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: Zugprüfgerät, Temperaturkammer, Lecktank
       - label: Normen
         value: ISO 9001, CE, AS 1799
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: Labormethoden & Ausrüstung →
   - title: OEM/ODM-Fähigkeit
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: ISO 9001, BSCI, CE, REACH
       - label: Versand
         value: FOB, CIF, DDP in über 50 Länder
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: Komplette OEM-Services →
 workshops_section:
   tagline: Werkstätten
@@ -88,7 +88,7 @@ equipment_section:
   tagline: Ausrüstung
   title: Wichtige Fertigungsausrüstung
   view_full: Vollständige Ausrüstungsliste anzeigen →
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: Automatische PVC-Schneidemaschine
       spec: CNC-gesteuert, 0,1 mm Genauigkeit
@@ -262,4 +262,4 @@ process_cta:
   title: Unseren Fertigungsprozess ansehen
   desc: Verfolgen Sie ein Board durch jede Produktionsstufe — vom Rohmaterial bis zum wasserfertigen Board.
   label: Produktionsprozess anzeigen →
-  link: /factory/process
+  link: /factory/process/

@@ -47,8 +47,8 @@ cta:
   subtitle: 'Пријавите се за наш програм за дистрибутере или преузмите наш информативни комплет за дистрибутере.'
   actions:
     - text: 'Пријавите се за програм за дистрибутере'
-      href: '/contact?partner=distributor'
+      href: '/contact/?partner=distributor'
       variant: 'primary'
     - text: 'Преузмите комплет за дистрибутере'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

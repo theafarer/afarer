@@ -113,8 +113,8 @@ cta:
   subtitle: 'Kérjen klubflotta-árajánlatot, vagy töltse le klubindítási útmutatónkat.'
   actions:
     - text: 'Jelentkezés klubflottára'
-      href: '/contact?package=club'
+      href: '/contact/?package=club'
       variant: 'primary'
     - text: 'Klub útmutató letöltése'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

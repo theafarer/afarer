@@ -68,15 +68,15 @@ catalog:
     - name: '2026 Product Catalog'
       desc: 'Full lineup with specs, pricing, and ordering information'
       icon: 'tabler:file-text'
-      link: '/resources/download-catalog'
+      link: '/resources/download-catalog/'
     - name: 'Retail Partner Guide'
       desc: 'Margin calculator, merchandising tips, and best practices'
       icon: 'tabler:book'
-      link: '/resources/download-catalog'
+      link: '/resources/download-catalog/'
     - name: 'Marketing Asset Pack'
       desc: 'Hi-res product photos, lifestyle images, and POS materials'
       icon: 'tabler:photo'
-      link: '/media'
+      link: '/media/'
 
 support:
   title: Retail Partner Support
@@ -96,8 +96,8 @@ cta:
   subtitle: 'Apply for partnership or download our retail catalog to get started.'
   actions:
     - text: 'Apply for Partnership'
-      href: '/contact?partner=retail'
+      href: '/contact/?partner=retail'
       variant: 'primary'
     - text: 'Download Retail Catalog'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

@@ -110,8 +110,8 @@ cta:
   subtitle: 'Kunin ang quote ng iyong resort package o i-download ang aming kumpletong katalogo ng resort.'
   actions:
     - text: 'Kunin ang Resort Package'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'I-download ang Resort Catalog'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

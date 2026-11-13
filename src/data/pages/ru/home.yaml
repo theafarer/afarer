@@ -21,13 +21,13 @@ hero:
   actions:
     - variant: primary
       text: Товары
-      href: /products
+      href: /products/
       icon: tabler:shopping-bag
     - text: Подробнее
-      href: '/afarer-story'
+      href: '/afarer-story/'
       icon: tabler:file-text
     - text: Исследуйте решения SUP
-      href: /solutions
+      href: /solutions/
       icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
@@ -42,25 +42,25 @@ who_we_serve:
       description: Прочные парусно-гребные флотилии, клубные цены и программы замены деталей для гребных клубов и школ.
       icon: tabler:users
       cta: Изучите решения Paddle Club
-      link: /solutions/paddle-clubs
+      link: /solutions/paddle-clubs/
     - title: Курорты и отели
       keywords: водные развлечения в курорте, оборудование на пляже отеля, впечатления гостей
       description: Полные программы флота SUP с индивидуальным брендингом, обучением персонала и пакетами, оптимизированными для ROI.
       icon: tabler:building
       cta: Создайте ваш курортный водный опыт
-      link: /solutions/resorts-hotels
+      link: /solutions/resorts-hotels/
     - title: Розничные партнеры
       keywords: оптовая продажа SUP, розничные магазины на открытом воздухе, магазины спортивных товаров
       description: Полная линейка продуктов, маркетинговые материалы, варианты дропшиппинга и конкурентоспособные оптовые наценки.
       icon: tabler:shopping-cart
       cta: Станьте розничным партнером
-      link: /solutions/retail-partners
+      link: /solutions/retail-partners/
     - title: Страновые дистрибьюторы и кобрендинговые партнёры
       keywords: страновой дистрибьютор SUP, кобрендинговый SUP, SUP под частной маркой
       description: Эксклюзивное распространение по странам и ограниченные кобрендинговые коллекции для квалифицированных предприятий водного спорта.
       icon: tabler:package
       cta: Стать партнёром
-      link: /distributor-program
+      link: /distributor-program/
 proof_points:
   title: Испытано за пределами шоурума
   subtitle: Дизайн, характеристики и качество, которые можно проверить — на воде и в цифрах.
@@ -115,7 +115,7 @@ oem_section:
       title: Глобальная доставка
       desc: Логистика FOB Циндао, CIF основные порты, от двери до двери.
   cta: Узнать о кобрендинге
-  cta_link: /co-brand
+  cta_link: /co-brand/
 cta:
   title: |
     Найдите свою следующую доску <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">— мы выведем вас на воду</span>.
@@ -123,10 +123,10 @@ cta:
   actions:
     - variant: primary
       text: Исследовать коллекцию
-      href: /inflatable-sup
+      href: /inflatable-sup/
       icon: tabler:send
     - text: Запросить каталог
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
 distributor:
   tagline: 'Страновые Эксклюзивные Дистрибьюторы'
   title: 'Одна страна. Один официальный дистрибьютор afarer.'
@@ -143,11 +143,11 @@ distributor:
   actions:
     - variant: primary
       text: 'Стать Дистрибьютором'
-      href: /distributor-program
+      href: /distributor-program/
     - text: 'Запросить Дилерский Прайс-Лист'
-      href: /contact?subject=Dealer Price List
+      href: /contact/?subject=Dealer Price List
     - text: 'Подать Заявку на Партнерство по Стране'
-      href: /contact?subject=Country Partnership Application
+      href: /contact/?subject=Country Partnership Application
     - text: 'Скачать Дилерскую Программу'
-      href: /distributor-program
+      href: /distributor-program/
   note: 'Заказы образцов 5–10 единиц. Пробные заказы 10–30. Авторизованный дилер 30–50. Страновой/региональный дистрибьютор 100–300+.'

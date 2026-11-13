@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: Lead Time
         value: '30–45 days'
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: Full capacity details →
   - title: Quality Lab & Testing
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: 'Tensile tester, temp chamber, leak tank'
       - label: Standards
         value: 'ISO 9001, CE, AS 1799'
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: 'Lab procedures & equipment →'
   - title: OEM/ODM Capability
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: 'ISO 9001, BSCI, CE, REACH'
       - label: Shipping
         value: 'FOB, CIF, DDP to 50+ countries'
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: 'Full OEM services →'
 
 workshops_section:
@@ -90,7 +90,7 @@ equipment_section:
   tagline: Equipment
   title: Key Manufacturing Equipment
   view_full: View full equipment list →
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: Automatic PVC Cutting Machine
       spec: CNC-controlled, 0.1 mm accuracy
@@ -271,4 +271,4 @@ process_cta:
   title: See our manufacturing process
   desc: Follow a board through every stage of production — from raw material to water-ready board.
   label: View production process →
-  link: /factory/process
+  link: /factory/process/

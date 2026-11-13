@@ -15,6 +15,7 @@ import { pageContentData } from '~/i18n/generated/data';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import __pageData from '~/i18n/generated/pages/about.ts';
 import { languages } from '~/i18n/config';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -188,7 +189,7 @@ const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.about
       {
         brandCards.map((card: any) => (
           <a
-            href={`/${lang}${card.link}`}
+            href={withTrailingSlash(`/${lang}${card.link}`)}
             class="p-6 rounded-xl bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 hover:shadow-md transition-shadow"
           >
             <h3 class="text-lg font-bold">{card.title}</h3>

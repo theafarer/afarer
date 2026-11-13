@@ -110,8 +110,8 @@ cta:
   subtitle: 'Gaukite savo kurortų paketo pasiūlymą arba atsisiųskite mūsų visą kurortų katalogą.'
   actions:
     - text: 'Gauti kurortų paketą'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'Atsisiųsti kurortų katalogą'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

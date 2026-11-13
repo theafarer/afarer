@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: Toimitusaika
         value: 30–45 päivää
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: Täydelliset kapasiteettitiedot →
   - title: Laatulaboratorio ja testaus
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: Vetolujuustestilaite, lämpökaappi, vuotosäiliö
       - label: Standardit
         value: ISO 9001, CE, AS 1799
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: Laboratoriomenettelyt ja -varusteet →
   - title: OEM/ODM-kyvykkyydet
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: ISO 9001, BSCI, CE, REACH
       - label: Toimitus
         value: FOB, CIF, DDP yli 50 maahan
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: Täydet OEM-palvelut →
 workshops_section:
   tagline: Työpajat
@@ -88,7 +88,7 @@ equipment_section:
   tagline: Laitteet
   title: Keskeiset tuotantolaitteet
   view_full: Katso täydellinen laiteluettelo →
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: Automaattinen PVC-leikkauskone
       spec: CNC-ohjattu, 0,1 mm tarkkuus
@@ -264,4 +264,4 @@ process_cta:
   title: Katso tuotantoprosessimme
   desc: Seuraa lautaa läpi jokaisen tuotannon vaiheen — raaka-aineesta veteen valmiiksi laudaksi.
   label: Katso tuotantoprosessi →
-  link: /factory/process
+  link: /factory/process/

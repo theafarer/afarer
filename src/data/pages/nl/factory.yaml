@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: Levertijd
         value: 30–45 dagen
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: Volledige capaciteitsdetails →
   - title: Kwaliteitslaboratorium & Testen
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: Trekbank, temperatuurkamer, lektank
       - label: Normen
         value: ISO 9001, CE, AS 1799
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: Labprocedures & apparatuur →
   - title: OEM/ODM-capaciteit
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: ISO 9001, BSCI, CE, REACH
       - label: Verzending
         value: FOB, CIF, DDP naar 50+ landen
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: Volledige OEM-diensten →
 workshops_section:
   tagline: Werkplaatsen
@@ -88,7 +88,7 @@ equipment_section:
   tagline: Apparatuur
   title: Belangrijkste Productieapparatuur
   view_full: Bekijk volledige apparatuurlijst →
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: Automatische PVC-snijmachine
       spec: CNC-gestuurd, 0,1 mm nauwkeurigheid
@@ -262,4 +262,4 @@ process_cta:
   title: Bekijk ons productieproces
   desc: Volg een board door elke productiefase — van grondstof tot waterklaar board.
   label: Bekijk productieproces →
-  link: /factory/process
+  link: /factory/process/

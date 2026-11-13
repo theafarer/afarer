@@ -19,13 +19,13 @@ hero:
   actions:
     - variant: primary
       text: Ver productos
-      href: /products
+      href: /products/
       icon: tabler:shopping-bag
     - text: Saber más
-      href: '/afarer-story'
+      href: '/afarer-story/'
       icon: tabler:file-text
     - text: Explora soluciones de SUP
-      href: /solutions
+      href: /solutions/
       icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
@@ -40,25 +40,25 @@ who_we_serve:
       description: Flotas de SUP duraderas, precios para clubes y programas de repuestos para clubes y escuelas de paddles.
       icon: tabler:users
       cta: Explora las soluciones de Paddle Club
-      link: /solutions/paddle-clubs
+      link: /solutions/paddle-clubs/
     - title: Resorts y Hoteles
       keywords: actividades acuáticas en el resort, equipo de playa del hotel, experiencia del huésped
       description: Complete programas de flotas de SUP con marca personalizada, capacitación del personal y paquetes optimizados para ROI.
       icon: tabler:building
       cta: Crea tu experiencia acuática en el resort
-      link: /solutions/resorts-hotels
+      link: /solutions/resorts-hotels/
     - title: Socios minoristas
       keywords: Mayoristas de SUP, minoristas al aire libre, tiendas de artículos deportivos
       description: Gama completa de productos, materiales de marketing, opciones de dropshipping y márgenes mayoristas competitivos.
       icon: tabler:shopping-cart
       cta: Conviértete en un socio minorista
-      link: /solutions/retail-partners
+      link: /solutions/retail-partners/
     - title: Distribuidores por país y socios co-branded
       keywords: distribuidor SUP por país, SUP co-branded, SUP de marca privada
       description: Distribución exclusiva país por país y colecciones co-branded limitadas para empresas de deportes acuáticos cualificadas.
       icon: tabler:package
       cta: Conviértete en socio
-      link: /distributor-program
+      link: /distributor-program/
 proof_points:
   title: Probado más allá del showroom
   subtitle: Diseño, rendimiento y calidad que puede verificar — en el agua y en los números.
@@ -113,7 +113,7 @@ oem_section:
       title: Entrega Global
       desc: Logística FOB Qingdao, CIF principales puertos, puerta a puerta.
   cta: Explora el co-branding
-  cta_link: /co-brand
+  cta_link: /co-brand/
 cta:
   title: |
     ¿Listo para el agua? <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Estamos aquí para ayudarte.</span>
@@ -121,10 +121,10 @@ cta:
   actions:
     - variant: primary
       text: Ver todos los productos
-      href: /products
+      href: /products/
       icon: tabler:shopping-bag
     - text: Habla con nuestro equipo
-      href: /contact
+      href: /contact/
 distributor:
   tagline: Distribuidores Exclusivos por País
   title: Un país. Un distribuidor oficial de Afarer.
@@ -141,11 +141,11 @@ distributor:
   actions:
     - variant: primary
       text: Conviértete en Distribuidor
-      href: /distributor-program
+      href: /distributor-program/
     - text: Solicitar Lista de Precios de Distribuidor
-      href: /contact?subject=Dealer Price List
+      href: /contact/?subject=Dealer Price List
     - text: Solicitar Colaboración de País
-      href: /contact?subject=Country Partnership Application
+      href: /contact/?subject=Country Partnership Application
     - text: Descargar el Programa de Distribuidores
-      href: /distributor-program
+      href: /distributor-program/
   note: Pedidos de muestra de 5–10 unidades. Pedidos de prueba de 10–30. Distribuidor autorizado de 30–50. Distribuidor de País/Región de 100–300+.

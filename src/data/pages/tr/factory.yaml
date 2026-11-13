@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: Teslim Süresi
         value: 30–45 gün
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: Tam kapasite detayları →
   - title: Kalite Laboratuvarı ve Test
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: Çekme test cihazı, sıcaklık odası, sızıntı tankı
       - label: Standartlar
         value: ISO 9001, CE, AS 1799
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: Laboratuvar prosedürleri ve ekipmanları →
   - title: OEM/ODM Kapasitesi
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: ISO 9001, BSCI, CE, REACH
       - label: Nakliye
         value: FOB, CIF, DDP 50'den fazla ülkeye
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: Tam OEM hizmetleri →
 workshops_section:
   tagline: Atölyeler
@@ -88,7 +88,7 @@ equipment_section:
   tagline: Ekipman
   title: Ana Üretim Ekipmanları
   view_full: Tam ekipman listesini görüntüle →
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: Otomatik PVC Kesim Makinesi
       spec: CNC kontrollü, 0,1 mm hassasiyet
@@ -260,4 +260,4 @@ process_cta:
   title: Üretim sürecimizi görün
   desc: Bir tahtanın hammaddeden denize hazır hale gelene kadar her üretim aşamasını takip edin.
   label: Üretim sürecini görüntüle →
-  link: /factory/process
+  link: /factory/process/

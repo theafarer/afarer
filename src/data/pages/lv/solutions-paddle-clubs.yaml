@@ -113,8 +113,8 @@ cta:
   subtitle: 'Saņemiet savas kluba flotes piedāvājumu vai lejupielādējiet mūsu kluba startera ceļvedi.'
   actions:
     - text: 'Pieteikties kluba flotei'
-      href: '/contact?package=club'
+      href: '/contact/?package=club'
       variant: 'primary'
     - text: 'Lejupielādēt kluba ceļvedi'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

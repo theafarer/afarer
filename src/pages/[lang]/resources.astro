@@ -10,6 +10,7 @@ import { SITE } from 'astrowind:config';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/resources.ts';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return [];
@@ -24,7 +25,7 @@ const hero = page.hero_text ?? {};
 const downloads = page.features3_downloads ?? {};
 const faqs = page.faqs ?? {};
 const cta = page.cta ?? {};
-const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const lh = (h: string) => (h ? withTrailingSlash(`/${lang}${h}`) : h);
 const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
 
 const metadata = {

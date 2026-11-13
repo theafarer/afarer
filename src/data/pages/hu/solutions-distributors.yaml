@@ -47,8 +47,8 @@ cta:
   subtitle: 'Jelentkezzen forgalmazói programunkba, vagy töltse le forgalmazói információs csomagunkat.'
   actions:
     - text: 'Jelentkezés forgalmazói programba'
-      href: '/contact?partner=distributor'
+      href: '/contact/?partner=distributor'
       variant: 'primary'
     - text: 'Forgalmazói csomag letöltése'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

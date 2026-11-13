@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: 'זמן אספקה'
         value: '30–45 ימים'
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: 'פרטי כושר ייצור מלאים →'
   - title: 'מעבדת איכות ובדיקות'
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: 'מכשיר בדיקת מתיחה, תא טמפרטורה, מכל בדיקת דליפות'
       - label: 'תקנים'
         value: 'ISO 9001, CE, AS 1799'
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: 'נהלי מעבדה וציוד →'
   - title: 'יכולת OEM/ODM'
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: 'ISO 9001, BSCI, CE, REACH'
       - label: 'משלוח'
         value: 'FOB, CIF, DDP ליותר מ-50 מדינות'
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: 'שירותי OEM מלאים →'
 
 workshops_section:
@@ -90,7 +90,7 @@ equipment_section:
   tagline: 'ציוד'
   title: 'ציוד ייצור מרכזי'
   view_full: 'צפו ברשימת הציוד המלאה →'
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: 'מכונת חיתוך PVC אוטומטית'
       spec: 'בבקרת CNC, דיוק 0.1 מ״מ'
@@ -271,4 +271,4 @@ process_cta:
   title: 'צפו בתהליך הייצור שלנו'
   desc: 'עקבו אחר לוח לכל אורך שלבי הייצור — מחומר גלם ועד לוח מוכן למים.'
   label: 'צפו בתהליך הייצור →'
-  link: /factory/process
+  link: /factory/process/

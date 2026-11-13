@@ -7,6 +7,7 @@ import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/quality.ts';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -83,7 +84,7 @@ const crumbs = [{ name: tnav('nav.home'), href: `/${lang}/` }, { name: hero.tagl
       <p class="mt-4 text-muted leading-relaxed text-center max-w-3xl mx-auto">{t(commitment.body)}</p>
       <div class="text-center mt-8">
         <a
-          href={`/${lang}${commitment.cta_link}`}
+          href={withTrailingSlash(`/${lang}${commitment.cta_link}`)}
           class="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90"
         >
           {commitment.cta} →

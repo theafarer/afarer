@@ -110,8 +110,8 @@ cta:
   subtitle: 'קבלו הצעת מחיר לחבילת אתר הנופש שלכם או הורידו את הקטלוג המלא שלנו לאתרי נופש.'
   actions:
     - text: 'השיגו חבילת אתר נופש'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'הורידו את קטלוג אתרי הנופש'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

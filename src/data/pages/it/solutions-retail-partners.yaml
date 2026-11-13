@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: Gamma completa con specifiche, prezzi e informazioni per l'ordine
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: Calcolatore di margini, consigli di merchandising e migliori pratiche
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: Foto di prodotti ad alta risoluzione, immagini di lifestyle e materiali per il punto vendita
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Supporto ai Partner Retail
   subtitle: Tutto ciò di cui hai bisogno per vendere con sicurezza.
@@ -90,8 +90,8 @@ cta:
   subtitle: Candidati per la collaborazione o scarica il nostro catalogo al dettaglio per iniziare.
   actions:
     - text: Candidati per la collaborazione
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Scarica il catalogo al dettaglio
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

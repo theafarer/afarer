@@ -8,6 +8,7 @@ import { getUiForLang } from '~/i18n/generated/ui-all';
 import { nodes } from '~/content/graph/nodes';
 import { compareTemplate } from '~/lib/geo-v4/templates';
 import { articleSchema } from '~/lib/seo/schema';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export function getStaticPaths() {
   const productNodes = nodes.filter((n) => n.type === 'product-category');
@@ -48,7 +49,11 @@ const graphJsonLd = page
   : null;
 
 const compareCrumbs = page
-  ? [{ name: 'Home', href: `/${lang}/` }, { name: t('compare.label'), href: `/${lang}/compare` }, { name: page.title }]
+  ? [
+      { name: 'Home', href: `/${lang}/` },
+      { name: t('compare.label'), href: withTrailingSlash(`/${lang}/compare`) },
+      { name: page.title },
+    ]
   : [];
 
 const metaTitle = page?.title || (slug ? slug.replace(/-vs-/g, ' vs ') : 'Comparison');

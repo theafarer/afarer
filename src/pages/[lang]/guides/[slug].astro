@@ -10,6 +10,7 @@ import type { GuideRecord } from '~/data/guides';
 import { products } from '~/data/products';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   const paths: { params: { lang: string; slug: string }; props: { guide: GuideRecord } }[] = [];
@@ -50,7 +51,8 @@ const metadata = {
   <meta name="ai-intent" content={`${guide.category},${guide.waterType.join(',')},${guide.difficulty}`} />
 
   <article class="max-w-3xl mx-auto py-24 px-6" data-ai-block="definition">
-    <a href={`/${lang}/guides`} class="text-sm text-sky-600 hover:text-sky-700">← {t('guides.pageLabel') || 'Guides'}</a
+    <a href={withTrailingSlash(`/${lang}/guides`)} class="text-sm text-sky-600 hover:text-sky-700"
+      >← {t('guides.pageLabel') || 'Guides'}</a
     >
 
     <h1 class="mt-4 text-4xl font-semibold text-gray-900">{guide.title}</h1>
@@ -124,7 +126,7 @@ const metadata = {
         headline: guide.title,
         description: guide.description,
       }}
-      data={{ url: `${SITE.site}/${lang}/guides/${guide.slug}` }}
+      data={{ url: `${SITE.site}/${lang}/guides/${guide.slug}/` }}
     />
 
     {
@@ -134,7 +136,7 @@ const metadata = {
           <div class="mt-6 flex flex-wrap gap-4">
             {relatedProducts.map((p) => (
               <a
-                href={`/${lang}/products/${p.id}`}
+                href={withTrailingSlash(`/${lang}/products/${p.id}`)}
                 class="px-4 py-2 bg-white rounded-xl border border-gray-200 text-sm text-gray-700 hover:border-sky-300 hover:text-sky-700 transition-colors font-medium"
               >
                 {p.name} →
@@ -142,7 +144,7 @@ const metadata = {
             ))}
             {relatedGuides.map((g) => (
               <a
-                href={`/${lang}/guides/${g.slug}`}
+                href={withTrailingSlash(`/${lang}/guides/${g.slug}`)}
                 class="px-4 py-2 bg-white rounded-xl border border-gray-200 text-sm text-gray-700 hover:border-sky-300 hover:text-sky-700 transition-colors"
               >
                 {g.title} →

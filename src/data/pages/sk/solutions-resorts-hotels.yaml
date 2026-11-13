@@ -110,8 +110,8 @@ cta:
   subtitle: 'Získajte ponuku na balík pre váš rezort alebo stiahnite náš kompletný katalóg pre rezorty.'
   actions:
     - text: 'Získať balík pre rezort'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'Stiahnuť katalóg pre rezorty'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

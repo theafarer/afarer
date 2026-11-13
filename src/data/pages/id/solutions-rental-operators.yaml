@@ -64,8 +64,8 @@ cta:
   subtitle: 'Dapatkan harga sewa atau bandingkan model papan untuk operasi Anda.'
   actions:
     - text: 'Dapatkan Harga Sewa'
-      href: '/contact?package=rental'
+      href: '/contact/?package=rental'
       variant: 'primary'
     - text: 'Bandingkan Model Papan'
-      href: '/compare'
+      href: '/compare/'
       variant: 'secondary'

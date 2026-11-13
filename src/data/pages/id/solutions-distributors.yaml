@@ -47,8 +47,8 @@ cta:
   subtitle: 'Ajukan lamaran program distributor kami atau unduh kit informasi distributor kami.'
   actions:
     - text: 'Ajukan Program Distributor'
-      href: '/contact?partner=distributor'
+      href: '/contact/?partner=distributor'
       variant: 'primary'
     - text: 'Unduh Kit Distributor'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

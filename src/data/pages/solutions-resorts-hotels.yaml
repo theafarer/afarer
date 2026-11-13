@@ -110,8 +110,8 @@ cta:
   subtitle: 'Get your resort package quote or download our complete resort catalog.'
   actions:
     - text: 'Get Resort Package'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'Download Resort Catalog'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

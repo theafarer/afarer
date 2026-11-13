@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: 'Срок за изпълнение'
         value: '30–45 дни'
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: 'Пълна информация за капацитета →'
   - title: 'Лаборатория и изпитвания на качеството'
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: 'Машина за опън, термокамера, резервоар за течове'
       - label: 'Стандарти'
         value: 'ISO 9001, CE, AS 1799'
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: 'Процедури и оборудване в лабораторията →'
   - title: 'OEM/ODM възможности'
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: 'ISO 9001, BSCI, CE, REACH'
       - label: 'Доставка'
         value: 'FOB, CIF, DDP до 50+ държави'
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: 'Пълни OEM услуги →'
 
 workshops_section:
@@ -90,7 +90,7 @@ equipment_section:
   tagline: 'Оборудване'
   title: 'Основно производствено оборудване'
   view_full: 'Вижте пълния списък с оборудване →'
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: 'Автоматична машина за рязане на PVC'
       spec: 'CNC управление, точност 0,1 мм'
@@ -271,4 +271,4 @@ process_cta:
   title: 'Вижте нашия производствен процес'
   desc: 'Последвайте една дъска през всеки етап на производството — от суровината до дъска, готова за вода.'
   label: 'Разгледайте производствения процес →'
-  link: /factory/process
+  link: /factory/process/

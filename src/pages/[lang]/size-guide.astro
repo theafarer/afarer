@@ -9,6 +9,7 @@ import { languages } from '~/i18n/config';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/size-guide.ts';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -83,7 +84,7 @@ const getSpec = (p: (typeof products)[number], label: string) => {
                     {catProducts.map((p, i) => (
                       <tr class={i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}>
                         <td class="px-4 py-3 font-medium text-gray-900 border-b border-gray-200">
-                          <a href={`/${lang}/products/${p.slug}`} class="hover:text-sky-600">
+                          <a href={withTrailingSlash(`/${lang}/products/${p.slug}`)} class="hover:text-sky-600">
                             {p.title}
                           </a>
                         </td>

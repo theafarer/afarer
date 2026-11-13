@@ -110,8 +110,8 @@ cta:
   subtitle: 'Pridobite ponudbo za paket za letovišča ali prenesite naš popoln katalog za letovišča.'
   actions:
     - text: 'Pridobite paket za letovišča'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'Prenesite katalog za letovišča'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

@@ -64,15 +64,28 @@ export const LOCALIZED_ROUTES = new Set([
 
 export const NON_LOCALIZED_ROUTES = new Set(['/products/compare']);
 
+const FILE_PATH_RE = /\/[^/]*\.[a-z0-9]+$/i;
+
+// Live (Cloudflare Pages) serves page URLs in directory form ("/en/about/");
+// the slashless form 308-redirects. Normalize emitted internal links so they
+// resolve 200 directly instead of burning a redirect on every click.
+export function withTrailingSlash(href: string): string {
+  if (!href || !href.startsWith('/') || href.startsWith('//')) return href;
+  const base = href.split('?')[0].split('#')[0];
+  if (base === '' || base === '/' || base.endsWith('/') || FILE_PATH_RE.test(base)) return href;
+  return base + '/' + href.slice(base.length);
+}
+
 export function localizeHref(href: string | URL | undefined | null, locale: string): string {
   const str = typeof href === 'string' ? href : href?.toString() || '';
   if (!str || !str.startsWith('/') || str.startsWith('//')) return str || '';
   const base = str.split('?')[0].split('#')[0];
-  if (base === '/' || NON_LOCALIZED_ROUTES.has(base)) return str;
+  if (base === '/') return str;
+  if (NON_LOCALIZED_ROUTES.has(base)) return withTrailingSlash(str);
   if ([...LOCALIZED_ROUTES].some((r) => base === r || base.startsWith(r + '/'))) {
-    return '/' + locale + str;
+    return withTrailingSlash('/' + locale + str);
   }
-  return str;
+  return withTrailingSlash(str);
 }
 
 export function entityForHref(href?: string): string {

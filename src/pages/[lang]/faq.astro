@@ -9,6 +9,7 @@ import { getGuidesForLang, getContentV2ForLang, getFaqsForLang } from '~/i18n/lo
 import { products } from '~/data/products';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({
@@ -89,7 +90,7 @@ const categories = [...new Set(faqs.map((f) => f.category))];
                         const p = products.find((pp) => pp.id === pid);
                         return p ? (
                           <a
-                            href={`/${lang}/products/${pid}`}
+                            href={withTrailingSlash(`/${lang}/products/${pid}`)}
                             class="px-3 py-1 bg-amber-50 text-amber-700 rounded-full hover:bg-amber-100 transition-colors"
                           >
                             {p.name} →
@@ -101,7 +102,7 @@ const categories = [...new Set(faqs.map((f) => f.category))];
                         if (g) {
                           return (
                             <a
-                              href={`/${lang}/guides/${slug}`}
+                              href={withTrailingSlash(`/${lang}/guides/${slug}`)}
                               class="px-3 py-1 bg-sky-50 text-sky-700 rounded-full hover:bg-sky-100 transition-colors"
                             >
                               {g.title}
@@ -111,7 +112,7 @@ const categories = [...new Set(faqs.map((f) => f.category))];
                         const v2 = contentV2.find((cc) => cc.slug === slug);
                         return v2 ? (
                           <a
-                            href={`/${lang}/v2/${slug}`}
+                            href={withTrailingSlash(`/${lang}/v2/${slug}`)}
                             class="px-3 py-1 bg-sky-50 text-sky-700 rounded-full hover:bg-sky-100 transition-colors"
                           >
                             {v2.title}

@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: Täydellinen mallisto erittelyillä, hinnoittella ja tilaus tiedoilla
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: Kateprosenttilaskuri, myymälämarkkinointivinkit ja parhaat käytännöt
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: Teräväpiirtotuotekuvat, lifestyle-kuvat ja POS-materiaalit
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Jälleenmyyjäkumppanin tuki
   subtitle: Kaikki mitä tarvitset varmaan myyntiin.
@@ -90,8 +90,8 @@ cta:
   subtitle: Hae kumppanuutta tai lataa jälleenmyyntiluettelomme aloittaaksesi.
   actions:
     - text: Hae kumppaniksi
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Lataa jälleenmyyntiluettelo
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

@@ -5,6 +5,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from 'astrowind:config';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -128,14 +129,14 @@ const packages = [
         </p>
         <div class="mt-10 flex items-center gap-4 flex-wrap">
           <a
-            href={`/${lang}/contact`}
+            href={withTrailingSlash(`/${lang}/contact`)}
             class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5"
           >
             {t('oem.cta') || 'Start Your OEM Project'}
             <span class="text-lg">→</span>
           </a>
           <a
-            href={`/${lang}/media`}
+            href={withTrailingSlash(`/${lang}/media`)}
             class="inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white/80 font-medium rounded-full hover:bg-white/10 hover:text-white transition-all backdrop-blur-sm"
           >
             {t('oem.catalog') || 'Download Product Catalog'}
@@ -252,7 +253,7 @@ const packages = [
                 ))}
               </ul>
               <a
-                href={`/${lang}/contact?package=${pkg.name.toLowerCase().replace(/\s+/g, '-')}`}
+                href={withTrailingSlash(`/${lang}/contact?package=${pkg.name.toLowerCase().replace(/\s+/g, '-')}`)}
                 class={`mt-8 inline-flex items-center justify-center w-full gap-2 px-6 py-3 font-semibold rounded-full transition-all ${pkg.popular ? 'bg-primary hover:bg-[#0088B3] text-white shadow-lg' : 'bg-gray-100 hover:bg-gray-200 text-secondary'}`}
               >
                 {t('oem.packages.cta') || 'Get a Quote'} →
@@ -429,7 +430,7 @@ const packages = [
       </div>
       <div class="mt-10">
         <a
-          href={`/${lang}/contact`}
+          href={withTrailingSlash(`/${lang}/contact`)}
           class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
         >
           {t('oem.estimate.cta') || 'Request a Quote'}
@@ -450,14 +451,14 @@ const packages = [
     </p>
     <div class="mt-8 flex items-center justify-center gap-4 flex-wrap">
       <a
-        href={`/${lang}/contact`}
+        href={withTrailingSlash(`/${lang}/contact`)}
         class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all"
       >
         {t('oem.cta') || 'Start Your OEM Project'}
         <span>→</span>
       </a>
       <a
-        href={`/${lang}/research/oem-buyer-guide`}
+        href={withTrailingSlash(`/${lang}/research/oem-buyer-guide`)}
         class="inline-flex items-center gap-2 px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full font-medium hover:border-primary hover:text-primary transition-all"
       >
         {t('oem.faq.guide') || 'Read OEM Buyer Guide'}

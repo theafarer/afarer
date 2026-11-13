@@ -9,6 +9,7 @@ export async function getStaticPaths() {
 }
 import ExperienceLayer from '~/components/content/ExperienceLayer.astro';
 import RelatedPages from '~/components/content/RelatedPages.astro';
+import { withTrailingSlash } from '~/i18n/routing';
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
@@ -29,53 +30,53 @@ const scenarios = [
     icon: 'M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z',
     answer:
       'Our rescue SUPs (11-14 ft) are designed for rapid deployment. Lightweight for easy transport, wide stable platforms for victim recovery, and military-grade PVC construction for extended UV exposure.',
-    cta: { text: 'View SUP Products', link: `/${lang}/products` },
+    cta: { text: 'View SUP Products', link: withTrailingSlash(`/${lang}/products`) },
   },
   {
     scenario: t('solutionsByUseCase.scenario2'),
     icon: 'M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9',
     answer: t('solutionsByUseCase.answer2'),
-    cta: { text: t('solutionsByUseCase.cta2'), link: `/${lang}/products` },
+    cta: { text: t('solutionsByUseCase.cta2'), link: withTrailingSlash(`/${lang}/products`) },
   },
   {
     scenario: t('solutionsByUseCase.scenario3'),
     icon: 'M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z',
     answer: t('solutionsByUseCase.answer3'),
-    cta: { text: t('solutionsByUseCase.cta3'), link: `/${lang}/oem-odm-manufacturer` },
+    cta: { text: t('solutionsByUseCase.cta3'), link: withTrailingSlash(`/${lang}/oem-odm-manufacturer`) },
   },
   {
     scenario: 'I need fleet boards for my paddle club or SUP school',
     icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z',
     answer:
       'Mixed-size fleet supply for all skill levels: stable beginner platforms, touring boards, and race boards. Bulk club pricing, custom branding, and membership program support.',
-    cta: { text: 'View SUP Products', link: `/${lang}/products` },
+    cta: { text: 'View SUP Products', link: withTrailingSlash(`/${lang}/products`) },
   },
   {
     scenario: 'I need boards for a marine tourism or adventure operation',
     icon: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 12.5V17a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2h3.5a2 2 0 012 2v.5',
     answer:
       'Durable all-around and touring SUPs built for daily guest use, plus giant multi-rider boards for group experiences. UV-stabilized construction for tropical, full-season operation.',
-    cta: { text: 'View SUP Products', link: `/${lang}/products` },
+    cta: { text: 'View SUP Products', link: withTrailingSlash(`/${lang}/products`) },
   },
   {
     scenario: 'I need fishing SUPs for my guiding service or retail shop',
     icon: 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
     answer:
       'Fishing-specific SUPs with wide, stable platforms, gear-mount options, and accessory integration. Available for guided-tour fleets or wholesale retail supply.',
-    cta: { text: 'View SUP Products', link: `/${lang}/products` },
+    cta: { text: 'View SUP Products', link: withTrailingSlash(`/${lang}/products`) },
   },
   {
     scenario: t('solutionsByUseCase.scenario7'),
     icon: 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4',
     answer: t('solutionsByUseCase.answer7'),
-    cta: { text: t('solutionsByUseCase.cta7'), link: `/${lang}/design-powerhouse` },
+    cta: { text: t('solutionsByUseCase.cta7'), link: withTrailingSlash(`/${lang}/design-powerhouse`) },
   },
   {
     scenario: 'I need a single SUP for personal or family use',
     icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6',
     answer:
       'Visit our product catalog to find the right board. Our size guide and product comparisons help match you with the right model. All products CE certified with warranty.',
-    cta: { text: t('solutionsByUseCase.cta8'), link: `/${lang}/products` },
+    cta: { text: t('solutionsByUseCase.cta8'), link: withTrailingSlash(`/${lang}/products`) },
   },
 ];
 ---
@@ -130,7 +131,7 @@ const scenarios = [
       <h2 class="text-xl font-semibold text-gray-900">{t('solutionsByUseCase.ctaTitle')}</h2>
       <p class="mt-2 text-sm text-gray-500">{t('solutionsByUseCase.ctaDesc')}</p>
       <a
-        href={`/${lang}/contact`}
+        href={withTrailingSlash(`/${lang}/contact`)}
         class="mt-6 inline-flex px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-gray-800 transition"
         >{t('solutionsByUseCase.ctaBtn')} →</a
       >
@@ -166,25 +167,25 @@ const scenarios = [
       {
         title: t('solutionsByUseCase.rel1'),
         description: t('solutionsByUseCase.rel1desc'),
-        href: `/${lang}/solutions/by-industry`,
+        href: withTrailingSlash(`/${lang}/solutions/by-industry`),
         label: t('solutionsByUseCase.rel1label'),
       },
       {
         title: 'SUP Products',
         description: 'Full lineup of CE-certified inflatable SUPs and accessories.',
-        href: `/${lang}/products`,
+        href: withTrailingSlash(`/${lang}/products`),
         label: 'Products',
       },
       {
         title: t('solutionsByUseCase.rel3'),
         description: t('solutionsByUseCase.rel3desc'),
-        href: `/${lang}/oem-odm-manufacturer`,
+        href: withTrailingSlash(`/${lang}/oem-odm-manufacturer`),
         label: t('solutionsByUseCase.rel3label'),
       },
       {
         title: t('solutionsByUseCase.rel4'),
         description: t('solutionsByUseCase.rel4desc'),
-        href: `/${lang}/engineering-perfection`,
+        href: withTrailingSlash(`/${lang}/engineering-perfection`),
         label: t('solutionsByUseCase.rel4label'),
       },
     ]}

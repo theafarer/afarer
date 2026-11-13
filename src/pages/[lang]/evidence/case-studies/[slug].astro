@@ -9,6 +9,7 @@ import { getUiForLang } from '~/i18n/generated/ui-all';
 import { pageContentData } from '~/i18n/generated/data';
 import { EVIDENCE_META_OVERRIDES } from '~/data/site/evidence-meta';
 import { EVIDENCE_BODY_OVERRIDES } from '~/data/site/evidence-body';
+import { withTrailingSlash } from '~/i18n/routing';
 
 interface CaseStudy {
   id: string;
@@ -79,8 +80,11 @@ const metadata = {
         type="BreadcrumbList"
         breadcrumbs={[
           { name: SITE.name, href: `/${lang}/` },
-          { name: t('home.evidence.title'), href: `/${lang}/evidence` },
-          { name: t('home.evidence.caseStudies') || 'Case Studies', href: `/${lang}/evidence/case-studies` },
+          { name: t('home.evidence.title'), href: withTrailingSlash(`/${lang}/evidence`) },
+          {
+            name: t('home.evidence.caseStudies') || 'Case Studies',
+            href: withTrailingSlash(`/${lang}/evidence/case-studies`),
+          },
           { name: cs.client },
         ]}
       />
@@ -105,7 +109,7 @@ const metadata = {
             {SITE.name}
           </a>
           <span class="mx-2">/</span>
-          <a href={`/${lang}/evidence`} class="hover:text-sky-600">
+          <a href={withTrailingSlash(`/${lang}/evidence`)} class="hover:text-sky-600">
             {t('home.evidence.title')}
           </a>
           <span class="mx-2">/</span>
@@ -216,11 +220,11 @@ const metadata = {
         </div>
 
         <div class="mt-16 pt-8 border-t border-gray-200 flex items-center justify-between">
-          <a href={`/${lang}/evidence`} class="text-sky-600 hover:text-sky-700 font-medium">
+          <a href={withTrailingSlash(`/${lang}/evidence`)} class="text-sky-600 hover:text-sky-700 font-medium">
             &larr; {t('evidence.back') || 'Back to Evidence'}
           </a>
           <a
-            href={`/${lang}/contact`}
+            href={withTrailingSlash(`/${lang}/contact`)}
             class="inline-block bg-sky-600 text-white font-semibold px-6 py-2.5 rounded-xl hover:bg-sky-700 transition-colors text-sm"
           >
             {t('home.evidence.ctaButton')}

@@ -7,6 +7,7 @@ import { SITE } from 'astrowind:config';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { pageContentData } from '~/i18n/generated/data';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -72,7 +73,7 @@ const topicMeta: Record<string, { titleKey: string; descKey: string }> = {
           if (!meta) return null;
           return (
             <a
-              href={`/${lang}/research/${tpc.slug}`}
+              href={withTrailingSlash(`/${lang}/research/${tpc.slug}`)}
               class="group bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5 flex flex-col"
             >
               <div class="flex items-center justify-between mb-4">

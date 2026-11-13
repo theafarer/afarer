@@ -53,7 +53,7 @@ const categoryLabel = (cat: string) => t('v2.category.' + cat) || cat;
       headline: entry.title,
       description: entry.description,
     }}
-    data={{ url: `${SITE.site}/v2/${entry.slug}` }}
+    data={{ url: `${SITE.site}/v2/${entry.slug}/` }}
   />
 
   <JsonLd type="FAQPage" faqs={entry.faq} />

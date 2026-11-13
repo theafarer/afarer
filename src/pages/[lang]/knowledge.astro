@@ -11,6 +11,7 @@ import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/knowledge.ts';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -34,7 +35,7 @@ const metadata = {
 };
 const crumbs = [
   { name: t('nav.home'), href: `/${lang}/` },
-  { name: t('nav.knowledge'), href: `/${lang}/knowledge` },
+  { name: t('nav.knowledge'), href: withTrailingSlash(`/${lang}/knowledge`) },
 ];
 
 const schemaData = {

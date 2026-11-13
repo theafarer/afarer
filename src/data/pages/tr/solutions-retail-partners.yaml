@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: Teknik özellikler, fiyatlandırma ve sipariş bilgileriyle tam ürün yelpazesi
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: Marj hesaplayıcı, vitrin düzeni ipuçları ve en iyi uygulamalar
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: Yüksek çözünürlü ürün fotoğrafları, yaşam tarzı görselleri ve POS malzemeleri
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Perakende İş Ortağı Desteği
   subtitle: Güvenle satmanız için ihtiyacınız olan her şey.
@@ -90,8 +90,8 @@ cta:
   subtitle: Ortaklık için başvurun veya başlamak için perakende kataloğumuzu indirin.
   actions:
     - text: Ortaklık Başvurusu
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Perakende Kataloğunu İndirin
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

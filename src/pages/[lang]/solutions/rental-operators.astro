@@ -15,6 +15,7 @@ import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/solutions-rental-operators.ts';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -31,7 +32,7 @@ const features = page.features ?? {};
 const stats = page.stats ?? {};
 const fleetGuide = page.fleet_guide ?? {};
 const cta = page.cta ?? {};
-const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}` : h);
+const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : withTrailingSlash(h));
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 
 const pageMeta = page.meta ?? {};
@@ -154,7 +155,7 @@ const crumbs = [
       description: hero.subtitle || 'High-rotation SUP boards engineered for daily rental use',
       serviceType: 'Rental Operator Solutions',
       areaServed: ['Global'],
-      url: `/${lang}/solutions/rental-operators`,
+      url: withTrailingSlash(`/${lang}/solutions/rental-operators`),
       items: [
         { name: 'Rental-Grade SUPs', description: 'UV-resistant, quick-dry, stackable boards for high rotation' },
         { name: 'Fleet Management', description: 'RFID tracking and inventory management systems' },

@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: Leveranstid
         value: 30–45 dagar
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: Fullständiga kapacitetsuppgifter →
   - title: Kvalitetslaboratorium och provning
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: Dragprovare, kammare, läckagetank
       - label: Standarder
         value: ISO 9001, CE, AS 1799
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: Laboratorieprocedurer och utrustning →
   - title: OEM/ODM-förmåga
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: ISO 9001, BSCI, CE, REACH
       - label: Frakt
         value: FOB, CIF, DDP till 50+ länder
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: Fullständiga OEM-tjänster →
 workshops_section:
   tagline: Verkstäder
@@ -88,7 +88,7 @@ equipment_section:
   tagline: Utrustning
   title: Viktig produktionsutrustning
   view_full: Se fullständig utrustningslista →
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: Automatisk PVC-skärmaskin
       spec: CNC-styrd, 0,1 mm noggrannhet
@@ -260,4 +260,4 @@ process_cta:
   title: Se vår produktionsprocess
   desc: Följ en bräda genom varje produktionssteg — från råmaterial till vattenklar bräda.
   label: Se produktionsprocessen →
-  link: /factory/process
+  link: /factory/process/

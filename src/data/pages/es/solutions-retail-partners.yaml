@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: Gama completa con especificaciones, precios e información para pedidos
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: Calculadora de márgenes, consejos de comercialización y mejores prácticas
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: Fotos de productos en alta resolución, imágenes de estilo de vida y materiales de punto de venta
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Soporte para Socios Minoristas
   subtitle: Todo lo que necesitas para vender con confianza.
@@ -90,8 +90,8 @@ cta:
   subtitle: Solicite la asociación o descargue nuestro catálogo minorista para comenzar.
   actions:
     - text: Solicitar asociación
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Descargar catálogo minorista
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

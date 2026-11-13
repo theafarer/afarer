@@ -7,5 +7,5 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
-return Astro.redirect((lang === defaultLang ? '' : '/' + lang) + '/about', 301);
+return Astro.redirect((lang === defaultLang ? '' : '/' + lang) + '/about/', 301);
 ---

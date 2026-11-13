@@ -9,6 +9,7 @@ import { nodes } from '~/content/graph/nodes';
 import { useCaseFromNode } from '~/lib/geo-v4/templates';
 import { articleSchema } from '~/lib/seo/schema';
 import JsonLd from '~/components/common/JsonLd.astro';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export function getStaticPaths() {
   const paths: { params: { lang: string; slug: string } }[] = [];
@@ -33,7 +34,7 @@ const page = node ? useCaseFromNode(node, lang, t) : null;
 const useCaseCrumbs = page
   ? [
       { name: t('nav.home'), href: `/${lang}/` },
-      { name: t('useCase.label'), href: `/${lang}/solutions/by-use-case` },
+      { name: t('useCase.label'), href: withTrailingSlash(`/${lang}/solutions/by-use-case`) },
       { name: page.title },
     ]
   : [];
@@ -112,7 +113,7 @@ const graphJsonLd = page
               const pName = p.name?.[lang] || p.name?.en || p.id;
               return (
                 <a
-                  href={`/${lang}${productCategoryUrl[p.id] || `/products/${pSlug}`}`}
+                  href={withTrailingSlash(`/${lang}${productCategoryUrl[p.id] || `/products/${pSlug}`}`)}
                   class="block p-4 bg-white rounded-xl border border-gray-200 hover:shadow-md transition-shadow"
                 >
                   <h3 class="text-sm font-semibold text-gray-900">{pName}</h3>

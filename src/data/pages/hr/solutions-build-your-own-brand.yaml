@@ -108,8 +108,8 @@ cta:
   subtitle: 'Započnite put svoje marke ili preuzmite naš OEM vodič.'
   actions:
     - text: 'Započnite put svoje marke'
-      href: '/contact?package=oem'
+      href: '/contact/?package=oem'
       variant: 'primary'
     - text: 'Preuzmite OEM vodič'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

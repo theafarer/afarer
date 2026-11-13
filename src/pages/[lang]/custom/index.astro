@@ -6,6 +6,7 @@ import { languages } from '~/i18n/config';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/custom.ts';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -46,13 +47,13 @@ const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.custo
       <p class="mt-6 text-lg text-white/70 max-w-2xl mx-auto">{hero.subtitle}</p>
       <div class="mt-10 flex justify-center gap-4 flex-wrap">
         <a
-          href={`/${lang}${hero.footer_link}`}
+          href={withTrailingSlash(`/${lang}${hero.footer_link}`)}
           class="px-8 py-4 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-50 transition"
         >
           {hero.cta} →
         </a>
         <a
-          href={`/${lang}/factory`}
+          href={withTrailingSlash(`/${lang}/factory`)}
           class="px-8 py-4 border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition"
         >
           Visit our factory
@@ -138,7 +139,7 @@ const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.custo
           }
         </ul>
         <a
-          href={`/${lang}${whySection.cta_link}`}
+          href={withTrailingSlash(`/${lang}${whySection.cta_link}`)}
           class="mt-8 inline-flex px-6 py-3 bg-gray-900 text-white rounded-xl font-semibold hover:bg-gray-800 transition text-sm"
         >
           {whySection.cta} →
@@ -150,7 +151,7 @@ const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.custo
         <p class="text-lg font-semibold text-sky-900">{contact.title}</p>
         <p class="mt-2 text-sm text-sky-700">{contact.desc}</p>
         <a
-          href={`/${lang}/contact`}
+          href={withTrailingSlash(`/${lang}/contact`)}
           class="mt-6 inline-flex px-8 py-3 bg-sky-600 text-white rounded-full font-semibold hover:bg-sky-700 transition"
         >
           Contact us

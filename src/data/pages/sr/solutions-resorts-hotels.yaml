@@ -110,8 +110,8 @@ cta:
   subtitle: 'Затражите понуду за пакет за одморалиште или преузмите наш комплетан каталог за одморалишта.'
   actions:
     - text: 'Набавите пакет за одморалиште'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'Преузмите каталог за одморалишта'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

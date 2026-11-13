@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: 'Izpildes laiks'
         value: '30–45 dienas'
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: 'Pilna informācija par ražošanas jaudu →'
   - title: 'Kvalitātes laboratorija un testēšana'
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: 'Stiepes testētājs, temperatūras kamera, noplūdes tvertne'
       - label: 'Standarti'
         value: 'ISO 9001, CE, AS 1799'
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: 'Laboratorijas procedūras un iekārtas →'
   - title: 'OEM/ODM iespējas'
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: 'ISO 9001, BSCI, CE, REACH'
       - label: 'Piegāde'
         value: 'FOB, CIF, DDP uz 50+ valstīm'
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: 'Pilns OEM pakalpojumu klāsts →'
 
 workshops_section:
@@ -90,7 +90,7 @@ equipment_section:
   tagline: 'Iekārtas'
   title: 'Galvenās ražošanas iekārtas'
   view_full: 'Skatīt pilnu iekārtu sarakstu →'
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: 'Automātiskā PVC griešanas mašīna'
       spec: 'CNC vadība, 0.1 mm precizitāte'
@@ -271,4 +271,4 @@ process_cta:
   title: 'Apskatiet mūsu ražošanas procesu'
   desc: 'Sekojiet dēlim cauri katram ražošanas posmam — no izejmateriāla līdz ūdenim gatavam dēlim.'
   label: 'Skatīt ražošanas procesu →'
-  link: /factory/process
+  link: /factory/process/

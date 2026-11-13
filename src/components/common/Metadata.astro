@@ -39,6 +39,12 @@ const {
 
 const currentLang = getLangFromUrl(Astro.url);
 
+// The EN homepage is built at /en/ but served at the site root (edge middleware
+// rewrites "/" -> "/en/" and 308s "/en" + "/en/" -> "/"). Point canonical and
+// og:url at the 200 URL ("https://afarer.com/") instead of a redirecting one.
+const siteRoot = `${SITE.site}/`;
+const canonicalUrl = canonical === `${siteRoot}en/` ? siteRoot : canonical;
+
 // og:locale must reflect the page content language in xx_XX form. Only the 21
 // translated locales get their own value; EN-fallback locales (bg, et, he, hr,
 // hu, id, lt, lv, ms, sk, sl, sr, tl) serve English content -> en_US.
@@ -105,14 +111,14 @@ const resolvedKeywords = resolveKeywords();
 
 const mergedOg: MetaDataOpenGraph = merge(
   {
-    url: canonical,
+    url: canonicalUrl,
     siteName: SITE?.name,
     images: [],
     locale: currentLang || 'en',
     type: 'website',
   },
   METADATA?.openGraph,
-  { url: canonical, ...openGraph }
+  { url: canonicalUrl, ...openGraph }
 );
 // METADATA.openGraph.locale (en_US in config.yaml) would otherwise override the
 // per-page language via the merge above — resolve the page's own og:locale last.
@@ -199,7 +205,7 @@ const titleAlreadyBranded = rawTitle.includes(siteBrand);
 const seoProps: SEOProps = {
   title: rawTitle,
   titleTemplate: ignoreTitleTemplate || titleAlreadyBranded ? '%s' : METADATA?.title?.template || '%s',
-  canonical: canonical,
+  canonical: canonicalUrl,
   noindex: resolveNoindex(),
   nofollow: resolveNofollow(),
   description: resolvedDescription,

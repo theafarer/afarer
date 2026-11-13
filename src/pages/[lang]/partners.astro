@@ -13,6 +13,7 @@ import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/partners.ts';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -29,7 +30,7 @@ const benefits = page.content_benefits ?? {};
 const process = page.content_process ?? {};
 const cta = page.cta ?? {};
 
-const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const lh = (h: string) => (h ? withTrailingSlash(`/${lang}${h}`) : h);
 const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
 
 const metadata = {
@@ -66,7 +67,7 @@ const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.partn
         'Distributor, dealer, OEM/ODM, brand, government, and resort partner programs for inflatable SUP boards and marine equipment.',
       serviceType: 'Distribution & Partnership',
       areaServed: ['Global'],
-      url: `/${lang}/partners`,
+      url: withTrailingSlash(`/${lang}/partners`),
       items: [
         { name: 'Distributor Program', description: 'Exclusive territory distribution with volume pricing' },
         { name: 'Dealer Program', description: 'Direct dealer pricing and marketing support' },

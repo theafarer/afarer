@@ -21,13 +21,13 @@ hero:
   actions:
     - variant: primary
       text: تصفح المنتجات
-      href: /products
+      href: /products/
       icon: tabler:shopping-bag
     - text: اعرف أكثر
-      href: '/afarer-story'
+      href: '/afarer-story/'
       icon: tabler:file-text
     - text: استكشف حلول SUP
-      href: /solutions
+      href: /solutions/
       icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
@@ -42,25 +42,25 @@ who_we_serve:
       description: أساطيل SUP متينة، وأسعار النوادي، وبرامج قطع الغيار لأندية التجديف والمدارس.
       icon: tabler:users
       cta: استكشف حلول نوادي التجديف
-      link: /solutions/paddle-clubs
+      link: /solutions/paddle-clubs/
     - title: المنتجعات والفنادق
       keywords: الأنشطة المائية للمنتجعات، معدات شواطئ الفنادق، تجربة النزلاء
       description: برامج متكاملة لأساطيل ألواح SUP مع علامة تجارية مخصصة وتدريب للموظفين وحزم محسّنة للعائد على الاستثمار (ROI).
       icon: tabler:building
       cta: اصنع تجربتك المائية في منتجعك
-      link: /solutions/resorts-hotels
+      link: /solutions/resorts-hotels/
     - title: شركاء التجزئة
       keywords: تجار الجملة لألواح SUP، وتجار التجزئة للمعدات الخارجية، ومتاجر السلع الرياضية
       description: خط إنتاج كامل، ومواد تسويقية، وخيارات دروبشيبينغ (dropshipping)، وهوامش جملة تنافسية.
       icon: tabler:shopping-cart
       cta: كن شريك تجزئة
-      link: /solutions/retail-partners
+      link: /solutions/retail-partners/
     - title: موزّعو الدول وشركاء العلامات المشتركة
       keywords: موزّع SUP حسب الدولة، SUP مشترك العلامة، SUP بعلامة خاصة
       description: توزيع حصري حسب الدولة ومجموعات محدودة مشتركة العلامة للشركات المؤهلة في مجال الرياضات المائية.
       icon: tabler:package
       cta: كن شريكاً
-      link: /distributor-program
+      link: /distributor-program/
 proof_points:
   title: مُختبرة بما يتجاوز حدود صالة العرض
   subtitle: تصميم وأداء وجودة يمكنك التحقق منها — على الماء وفي الأرقام.
@@ -115,7 +115,7 @@ oem_section:
       title: التوصيل العالمي
       desc: لوجستيات FOB من تشينغداو، وCIF إلى الموانئ الرئيسية، وتسليم من الباب إلى الباب.
   cta: استكشف العلامات المشتركة
-  cta_link: /co-brand
+  cta_link: /co-brand/
 cta:
   title: |
     هل أنت مستعد لبدء <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">مشروع OEM/ODM</span>؟
@@ -123,10 +123,10 @@ cta:
   actions:
     - variant: primary
       text: اطلب عرض سعر
-      href: /contact
+      href: /contact/
       icon: tabler:message-circle
     - text: زور مصنعنا
-      href: /factory
+      href: /factory/
 distributor:
   tagline: 'موزّعون حصريون للدول'
   title: 'دولة واحدة. موزّع afarer رسمي واحد.'
@@ -143,11 +143,11 @@ distributor:
   actions:
     - variant: primary
       text: 'كن موزعًا'
-      href: /distributor-program
+      href: /distributor-program/
     - text: 'اطلب قائمة أسعار الموزعين'
-      href: /contact?subject=Dealer Price List
+      href: /contact/?subject=Dealer Price List
     - text: 'قدّم طلب شراكة دولة'
-      href: /contact?subject=Country Partnership Application
+      href: /contact/?subject=Country Partnership Application
     - text: 'حمّل برنامج الموزعين'
-      href: /distributor-program
+      href: /distributor-program/
   note: 'طلبات العينات من 5–10 وحدات. الطلبات التجريبية من 10–30. الوكيل المعتمد 30–50. الموزّع على مستوى الدولة/المنطقة 100–300+.'

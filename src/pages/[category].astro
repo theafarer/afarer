@@ -31,7 +31,7 @@ const { category: urlSlug } = Astro.params;
 const activeCategory = urlSlugToCategory(urlSlug || '');
 
 if (!activeCategory) {
-  return Astro.redirect('/404');
+  return Astro.redirect('/404/');
 }
 
 const products = await getProducts();

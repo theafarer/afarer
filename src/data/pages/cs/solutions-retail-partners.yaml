@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: Kompletní nabídka se specifikacemi, cenami a informacemi pro objednání
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: Kalkulačka marží, tipy pro merchandising a osvědčené postupy
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: Vysoce kvalitní produktové fotografie, lifestyle snímky a POS materiály
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Podpora maloobchodních partnerů
   subtitle: Vše, co potřebujete, abyste prodávali s jistotou.
@@ -90,8 +90,8 @@ cta:
   subtitle: Přihlaste se k partnerství nebo si stáhněte náš maloobchodní katalog a začněte.
   actions:
     - text: Přihlaste se k partnerství
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Stáhnout maloobchodní katalog
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

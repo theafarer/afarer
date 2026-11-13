@@ -22,13 +22,13 @@ hero:
   actions:
     - variant: primary
       text: 'Lapok felfedezése'
-      href: /inflatable-sup
+      href: /inflatable-sup/
       icon: tabler:waves
     - text: 'Találja meg az ülését'
-      href: /size-guide
+      href: /size-guide/
       icon: tabler:compass
     - text: 'Miért Afarer'
-      href: /afarer-story
+      href: /afarer-story/
       icon: tabler:heart
   image:
     src: ~/assets/images/hero-image.webp
@@ -44,25 +44,25 @@ who_we_serve:
       description: 'Széles, stabil all-around lapok, amelyek természetessé teszik az első húzást és lépést tartanak a fejlődésével.'
       icon: tabler:users
       cta: 'Találja meg első lapját'
-      link: /all-around-sup
+      link: /all-around-sup/
     - title: 'Túra- és kalandevezők'
       keywords: 'túra SUP, hosszú távú paddle lap, expedíciós SUP'
       description: 'Hosszabb, keskenyebb lapok, amelyek egyenes iránytartásra, távolabb siklásra és felszerelés szállítására készültek többnapos útvonalakhoz.'
       icon: tabler:building
       cta: 'Túralapok felfedezése'
-      link: /touring-sup
+      link: /touring-sup/
     - title: 'Klubok, üdülők és kölcsönzők'
       keywords: 'SUP bérlő flotta, paddle klub felszerelés, üdülői vízi programok'
       description: 'Flottakész felfújható SUP-ok megbízható tartóssággal, egyszerű karbantartással és cserealkatrész-támogatással.'
       icon: tabler:shopping-cart
       cta: 'Építse fel flottáját'
-      link: /solutions
+      link: /solutions/
     - title: 'Országos forgalmazók és közös márka partnerek'
       keywords: 'országos forgalmazó SUP, közös márkás SUP, saját márkás SUP'
       description: 'Országonkénti kizárólagos forgalmazás és korlátozott közös márkás kollekciók minősített vízisport vállalkozások számára.'
       icon: tabler:package
       cta: 'Legyen partnerünk'
-      link: /distributor-program
+      link: /distributor-program/
 
 proof_points:
   title: 'A szalonon túl is tesztelve'
@@ -120,7 +120,7 @@ oem_section:
       title: 'Globális szállítás'
       desc: 'Logisztika Csingtaóból a nagy kikötőkig vámügyintézési támogatással.'
   cta: 'Közös márka felfedezése'
-  cta_link: /co-brand
+  cta_link: /co-brand/
 
 cta:
   title: 'Találja meg következő lapját.'
@@ -128,10 +128,10 @@ cta:
   actions:
     - variant: primary
       text: 'Kollekció felfedezése'
-      href: /inflatable-sup
+      href: /inflatable-sup/
       icon: tabler:send
     - text: 'Katalógus igénylése'
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
 
 distributor:
   tagline: 'Országosan kizárólagos forgalmazók'
@@ -149,11 +149,11 @@ distributor:
   actions:
     - variant: primary
       text: 'Legyen forgalmazónk'
-      href: /distributor-program
+      href: /distributor-program/
     - text: 'Kereskedői árlista igénylése'
-      href: /contact?subject=Dealer Price List
+      href: /contact/?subject=Dealer Price List
     - text: 'Országos partnerség jelentkezése'
-      href: /contact?subject=Country Partnership Application
+      href: /contact/?subject=Country Partnership Application
     - text: 'Forgalmazói program letöltése'
-      href: /distributor-program
+      href: /distributor-program/
   note: 'Országos/regiónális forgalmazóknak minimum 100–300 egységes első rendelés. Próbarendelések 10–30 egységtől.'

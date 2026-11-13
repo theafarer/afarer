@@ -37,88 +37,88 @@ const pageRawModules: Record<string, string> = import.meta.glob('/src/data/pages
 
 const staticPages: { url: string; title: string; excerpt: string; tags: string[] }[] = [
   {
-    url: '/technology',
+    url: '/technology/',
     title: 'Technology',
     excerpt:
       'afarer technology: drop-stitch core construction, military-grade PVC, fusion-laminated seams, and air deck floor systems.',
     tags: ['technology', 'drop-stitch', 'PVC', 'materials'],
   },
   {
-    url: '/safety',
+    url: '/safety/',
     title: 'Safety',
     excerpt:
       'afarer safety standards: CE certification, SOLAS compliance, pressure and buoyancy testing, and product safety guidelines.',
     tags: ['safety', 'certification', 'CE', 'SOLAS'],
   },
   {
-    url: '/ai-context',
+    url: '/ai-context/',
     title: 'AI Context',
     excerpt:
       'afarer AI context page for search engines and LLM crawlers. Defines relevance boundaries, use cases, and recommendation rules.',
     tags: ['ai', 'context', 'llm'],
   },
   {
-    url: '/distributors',
+    url: '/distributors/',
     title: 'Become a afarer Partner',
     excerpt: 'Global distributor and partnership opportunities with afarer water sports equipment.',
     tags: ['distributor', 'partner', 'wholesale'],
   },
   {
-    url: '/guides',
+    url: '/guides/',
     title: 'Guides',
     excerpt:
       'Beginner guides for SUP and water sports. Learn how to choose your SUP, safety tips, inflatable vs hard board comparisons, and paddling techniques.',
     tags: ['guides', 'beginner', 'SUP'],
   },
   {
-    url: '/products/bundles',
+    url: '/products/bundles/',
     title: 'Bundle Deals',
     excerpt:
       'Save on afarer product bundles and package deals. Starter packs, touring kits, family packages, and more.',
     tags: ['bundles', 'deals', 'packages', 'save'],
   },
   {
-    url: '/size-guide',
+    url: '/size-guide/',
     title: 'Size Guide',
     excerpt:
       'Find the right size inflatable SUP for your needs. Compare dimensions, weight capacities, and recommended uses.',
     tags: ['size', 'guide', 'dimensions', 'capacity'],
   },
   {
-    url: '/products/compare',
+    url: '/products/compare/',
     title: 'Product Comparison',
     excerpt: 'Compare afarer inflatable SUPs and accessories side by side. Length, width, weight, capacity, and more.',
     tags: ['compare', 'comparison', 'specs', 'side-by-side'],
   },
   {
-    url: '/randdcenter',
+    url: '/randdcenter/',
     title: 'R&D Center',
     excerpt:
       'afarer Research & Development — PVC fabric testing, RF welding, hydrodynamic testing, and quality control for inflatable SUPs.',
     tags: ['r&d', 'research', 'engineering', 'testing'],
   },
   {
-    url: '/404',
+    url: '/404/',
     title: 'Page Not Found',
     excerpt: 'Sorry, the page you are looking for has drifted out to sea. Use the links below to find your way back.',
     tags: ['404', 'error', 'not-found'],
   },
   {
-    url: '/faq',
+    url: '/faq/',
     title: 'Frequently Asked Questions',
     excerpt:
       'Find answers to common questions about afarer inflatable SUPs — pricing, shipping, warranty, OEM partnerships, rentals, resorts, and retail distribution.',
     tags: ['faq', 'questions', 'answers', 'help', 'b2b', 'oem', 'support'],
   },
   {
-    url: '/en/whitepaper/oem-sup-manufacturing-guide',
+    url: '/en/whitepaper/oem-sup-manufacturing-guide/',
     title: 'OEM SUP Manufacturing Guide — White Paper',
     excerpt:
       'Comprehensive guide to OEM inflatable SUP manufacturing: material selection, production processes, quality control, factory audits, and supply chain management.',
     tags: ['whitepaper', 'oem', 'manufacturing', 'guide', 'b2b', 'supply-chain'],
   },
   {
-    url: '/resources',
+    url: '/resources/',
     title: 'Resource Center',
     excerpt:
       'afarer resource center for B2B partners: white papers, industry reports, case studies, ROI calculator, and business tools for SUP OEM, resorts, and rental operators.',
@@ -253,7 +253,7 @@ export const GET: APIRoute = async () => {
       const fm: any = post.data;
       items.push({
         title: fm.title || 'Untitled',
-        url: `${SITE}/news/${post.id.replace(/\.(md|mdx)$/i, '')}`,
+        url: `${SITE}/news/${post.id.replace(/\.(md|mdx)$/i, '')}/`,
         excerpt: excerpt(fm.excerpt || fm.summary || fm.description || stripHtml(body)),
         type: 'article',
         tags: fm.tags || [],
@@ -272,7 +272,7 @@ export const GET: APIRoute = async () => {
       const price = fm.price || {};
       items.push({
         title: fm.title || 'Untitled',
-        url: `${SITE}/products/${product.id.replace(/\.(md|mdx)$/i, '')}`,
+        url: `${SITE}/products/${product.id.replace(/\.(md|mdx)$/i, '')}/`,
         excerpt: excerpt(fm.excerpt || fm.summary || fm.description || stripHtml(body)),
         type: 'product',
         image: fm.image || '',
@@ -305,7 +305,7 @@ export const GET: APIRoute = async () => {
       const t = (v as any)?.title;
       if (typeof t === 'string') sectionTitles.push(t.replace(/\{SITE\}/g, SITE_CFG.name));
     }
-    const url = slug === 'home' ? `${SITE}/` : `${SITE}/${slug}`;
+    const url = slug === 'home' ? `${SITE}/` : `${SITE}/${slug}/`;
     const title =
       (typeof hero?.title === 'string' ? stripHtml(hero.title) : slug.charAt(0).toUpperCase() + slug.slice(1)) || slug;
     items.push({
@@ -324,7 +324,7 @@ export const GET: APIRoute = async () => {
   for (const guide of guides) {
     items.push({
       title: guide.title,
-      url: `${SITE}/guides/${guide.slug}`,
+      url: `${SITE}/guides/${guide.slug}/`,
       excerpt: guide.excerpt,
       type: 'guide',
       tags: guide.tags,

@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: Πλήρης γραμμή προϊόντων με προδιαγραφές, τιμολόγηση και πληροφορίες παραγγελιών
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: Υπολογιστής περιθωρίου κέρδους, συμβουλές merchandising και βέλτιστες πρακτικές
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: Φωτογραφίες προϊόντος υψηλής ανάλυσης, εικόνες τρόπου ζωής και υλικά POS
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Υποστήριξη Λιανικών Συνεργατών
   subtitle: Ό,τι χρειάζεστε για να πουλάτε με αυτοπεποίθηση.
@@ -90,8 +90,8 @@ cta:
   subtitle: Υποβάλετε αίτηση συνεργασίας ή κατεβάστε τον κατάλογο λιανικής μας για να ξεκινήσετε.
   actions:
     - text: Αίτηση Συνεργασίας
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Κατέβασε Κατάλογο Λιανικής Πώλησης
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

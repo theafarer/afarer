@@ -6,6 +6,7 @@ import { SITE } from 'astrowind:config';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { landingI18n as __landing } from '~/i18n/generated/landing/disclaimer';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -122,7 +123,7 @@ const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.discl
             'Any genetic or health-related data you submit or generate through our services is handled in accordance with our ',
             'Toute donnée génétique ou liée à la santé que vous soumettez ou générez via nos services est traitée conformément à notre '
           )
-        }<a href={`/${lang}/privacy`}>{fr('Privacy Policy', 'Politique de Confidentialité')}</a>{
+        }<a href={withTrailingSlash(`/${lang}/privacy`)}>{fr('Privacy Policy', 'Politique de Confidentialité')}</a>{
           fr(
             '. We implement industry-standard encryption and access controls. However, no data transmission over the internet can be guaranteed as 100% secure.',
             '. Nous mettons en œuvre des contrôles d’accès et un chiffrement aux standards de l’industrie. Toutefois, aucune transmission de données sur internet ne peut être garantie comme étant 100 % sécurisée.'

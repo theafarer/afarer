@@ -47,8 +47,8 @@ cta:
   subtitle: 'Кандидатствайте за нашата дистрибуторска програма или изтеглете нашия информационен пакет за дистрибутори.'
   actions:
     - text: 'Кандидатствайте за дистрибуторската програма'
-      href: '/contact?partner=distributor'
+      href: '/contact/?partner=distributor'
       variant: 'primary'
     - text: 'Изтеглете пакета за дистрибутори'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

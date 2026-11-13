@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: Leveringstid
         value: 30–45 dager
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: Fullstendige kapasitetsdetaljer →
   - title: Kvalitetslaboratorium og testing
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: Trekkstyrkeprøver, kammer, lekkasjetank
       - label: Standarder
         value: ISO 9001, CE, AS 1799
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: Laboratorieprosedyrer og -utstyr →
   - title: OEM/ODM-kapasitet
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: ISO 9001, BSCI, CE, REACH
       - label: Frakt
         value: FOB, CIF, DDP til 50+ land
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: Fullstendige OEM-tjenester →
 workshops_section:
   tagline: Verksteder
@@ -88,7 +88,7 @@ equipment_section:
   tagline: Utstyr
   title: Nøkkelproduksjonsutstyr
   view_full: Se fullstendig utstyrsliste →
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: Automatisk PVC-kuttmaskin
       spec: CNC-styrt, 0,1 mm nøyaktighet
@@ -260,4 +260,4 @@ process_cta:
   title: Se produksjonsprosessen vår
   desc: Følg et brett gjennom hvert steg i produksjonen — fra råvare til sjøklart brett.
   label: Se produksjonsprosessen →
-  link: /factory/process
+  link: /factory/process/

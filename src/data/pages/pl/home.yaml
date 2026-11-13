@@ -21,13 +21,13 @@ hero:
   actions:
     - variant: primary
       text: Zobacz produkty
-      href: /products
+      href: /products/
       icon: tabler:shopping-bag
     - text: Dowiedz się więcej
-      href: '/afarer-story'
+      href: '/afarer-story/'
       icon: tabler:file-text
     - text: Odkrywaj rozwiązania SUP
-      href: /solutions
+      href: /solutions/
       icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
@@ -42,25 +42,25 @@ who_we_serve:
       description: Trwałe floty SUP, ceny klubowe oraz programy wymiany części dla klubów SUP i szkół.
       icon: tabler:users
       cta: Odkryj rozwiązania Paddle Club
-      link: /solutions/paddle-clubs
+      link: /solutions/paddle-clubs/
     - title: Ośrodki wypoczynkowe i hotele
       keywords: atrakcje wodne w ośrodku, wyposażenie plaży hotelowej, doświadczenie gości
       description: Kompletne programy floty SUP z niestandardowym brandowaniem, szkoleniami dla personelu i pakietami zoptymalizowanymi pod ROI.
       icon: tabler:building
       cta: Stwórz swoje wodne doświadczenie w kurorcie
-      link: /solutions/resorts-hotels
+      link: /solutions/resorts-hotels/
     - title: Partnerzy detaliczni
       keywords: Hurt SUP, sklepy z artykułami na zewnątrz, sklepy sportowe
       description: Pełna linia produktów, materiały marketingowe, opcje dropshippingu i konkurencyjne marże hurtowe.
       icon: tabler:shopping-cart
       cta: Zostań partnerem detalicznym
-      link: /solutions/retail-partners
+      link: /solutions/retail-partners/
     - title: Dystrybutorzy Krajowi i Partnerzy Co-Brand
       keywords: krajowy dystrybutor sup, sup co-branded, sup pod marką własną
       description: Ekskluzywna dystrybucja kraj po kraju i limitowane kolekcje co-branded dla wykwalifikowanych firm z branży sportów wodnych.
       icon: tabler:package
       cta: Zostań Partnerem
-      link: /distributor-program
+      link: /distributor-program/
 proof_points:
   title: Testowane poza showroomem
   subtitle: Projekt, osiągi i jakość, które możesz zweryfikować — na wodzie i w liczbach.
@@ -115,17 +115,17 @@ oem_section:
       title: Globalna Dostawa
       desc: Logistyka FOB Qingdao, CIF główne porty, od drzwi do drzwi.
   cta: Poznaj Co-Branding
-  cta_link: /co-brand
+  cta_link: /co-brand/
 cta:
   title: Znajdź swoją następną deskę.
   subtitle: Niezależnie od tego, czy wykonujesz swój pierwszy ruch wiosłem, wyposażasz klub, czy budujesz markę deski — wprowadzimy Cię na wodę.
   actions:
     - variant: primary
       text: Poznaj Kolekcję
-      href: /inflatable-sup
+      href: /inflatable-sup/
       icon: tabler:send
     - text: Zamów Katalog
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
 distributor:
   tagline: 'Ekskluzywni Dystrybutorzy Krajowi'
   title: 'Jeden Kraj. Jeden Oficjalny Dystrybutor Afarer.'
@@ -142,11 +142,11 @@ distributor:
   actions:
     - variant: primary
       text: 'Zostań Dystrybutorem'
-      href: /distributor-program
+      href: /distributor-program/
     - text: 'Poproś o Cennik Dealerski'
-      href: /contact?subject=Dealer Price List
+      href: /contact/?subject=Dealer Price List
     - text: 'Aplikuj o Partnerstwo Krajowe'
-      href: /contact?subject=Country Partnership Application
+      href: /contact/?subject=Country Partnership Application
     - text: 'Pobierz Program Dystrybutorów'
-      href: /distributor-program
+      href: /distributor-program/
   note: 'Zamówienia próbne 5–10 sztuk. Zamówienia testowe 10–30. Autoryzowany dealer 30–50. Dystrybutor krajowy/regionalny 100–300+.'

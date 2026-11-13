@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: 'Átfutási idő'
         value: '30–45 nap'
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: 'Teljes kapacitásadatok →'
   - title: 'Minőségi labor és tesztelés'
     icon: 'Q'
@@ -49,7 +49,7 @@ intelligence_cards:
         value: 'Húzóerő-tesztelő, hőkamra, tömítettségi tartály'
       - label: 'Szabványok'
         value: 'ISO 9001, CE, AS 1799'
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: 'Laboreljárások és felszerelés →'
   - title: 'OEM/ODM képesség'
     icon: 'O'
@@ -60,7 +60,7 @@ intelligence_cards:
         value: 'ISO 9001, BSCI, CE, REACH'
       - label: 'Szállítás'
         value: 'FOB, CIF, DDP 50+ országba'
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: 'Teljes OEM szolgáltatások →'
 
 workshops_section:
@@ -90,7 +90,7 @@ equipment_section:
   tagline: 'Felszerelés'
   title: 'Fő gyártóberendezések'
   view_full: 'Teljes felszereléslista megtekintése →'
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: 'Automatikus PVC vágógép'
       spec: 'CNC-vezérlésű, 0,1 mm pontosság'
@@ -271,4 +271,4 @@ process_cta:
   title: 'Tekintse meg gyártási folyamatunkat'
   desc: 'Kövessen végig egy deszkát a gyártás minden szakaszán — az alapanyagtól a vízre kész deszkáig.'
   label: 'Gyártási folyamat megtekintése →'
-  link: /factory/process
+  link: /factory/process/

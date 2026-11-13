@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: 'Време испоруке'
         value: '30–45 дана'
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: 'Сви детаљи о капацитету →'
   - title: 'Лабораторија квалитета и тестирање'
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: 'Тестер затезања, температурна комора, резервоар за проверу цурења'
       - label: 'Стандарди'
         value: 'ISO 9001, CE, AS 1799'
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: 'Лабораторијски поступци и опрема →'
   - title: 'OEM/ODM могућности'
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: 'ISO 9001, BSCI, CE, REACH'
       - label: 'Испорука'
         value: 'FOB, CIF, DDP у 50+ земаља'
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: 'Комплетне OEM услуге →'
 
 workshops_section:
@@ -90,7 +90,7 @@ equipment_section:
   tagline: 'Опрема'
   title: 'Кључна производна опрема'
   view_full: 'Погледајте комплетну листу опреме →'
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: 'Аутоматска машина за сечење PVC-а'
       spec: 'CNC контрола, прецизност 0.1 mm'
@@ -271,4 +271,4 @@ process_cta:
   title: 'Погледајте наш производни процес'
   desc: 'Пратите плочу кроз сваку фазу производње — од сировине до плоче спремне за воду.'
   label: 'Погледајте производни процес →'
-  link: /factory/process
+  link: /factory/process/

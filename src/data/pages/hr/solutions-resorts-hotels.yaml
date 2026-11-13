@@ -110,8 +110,8 @@ cta:
   subtitle: 'Zatražite ponudu za paket za odmaralište ili preuzmite naš potpuni katalog za odmarališta.'
   actions:
     - text: 'Nabavite paket za odmaralište'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'Preuzmite katalog za odmarališta'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

@@ -30,7 +30,7 @@ export const supScenarios: SupScenario[] = [
       'Soak up the sun across calm lakes, bays, and coastal shores, enjoying an easy-gliding, versatile ride designed for all skill levels and everyday leisure.',
     instructions:
       'Inflate the board to 12–15 PSI, secure the safety leash to your ankle, and stand with feet shoulder-width apart on the non-slip EVA deck for balanced and effortless paddling.',
-    href: '/all-around-sup',
+    href: '/all-around-sup/',
     photos: [
       {
         src: `${CDN}/all-around/all-around-paddling-1-768w.webp`,
@@ -54,7 +54,7 @@ export const supScenarios: SupScenario[] = [
       'Glide smoothly across expansive open waters on a sunny day, exploring scenic lakes and coastal horizons with effortless speed and stability.',
     instructions:
       'Inflate the board to 12–15 PSI, secure the safety leash to your ankle, and stand centered on the non-slip EVA deck to paddle smoothly through long-distance tours.',
-    href: '/touring-sup',
+    href: '/touring-sup/',
     photos: [
       {
         src: `${CDN}/touring/touring-series-1-768w.webp`,
@@ -70,7 +70,7 @@ export const supScenarios: SupScenario[] = [
       'Connect with nature on mirror-calm waters, transforming peaceful morning lakes into your private floating studio for mindful yoga, meditation, and core fitness.',
     instructions:
       'Inflate the board to 12–15 PSI, secure the paddle in the side holder, and utilize the full-length soft EVA deck pad for steady balance and comfortable pose transitions.',
-    href: '/yoga-sup',
+    href: '/yoga-sup/',
     photos: [
       {
         src: `${CDN}/yoga/yoga-series-1-768w.webp`,
@@ -90,7 +90,7 @@ export const supScenarios: SupScenario[] = [
       'Drift peacefully along tranquil lakes and morning coves, enjoying an ultra-stable, versatile platform tailored for seated angling and outdoor exploration.',
     instructions:
       'Inflate the board to 12–15 PSI, secure your tackle box using the front bungee cords, clip the kayak seat to the designated center D-rings, and enjoy stable, hands-free fishing.',
-    href: '/fishing-sup',
+    href: '/fishing-sup/',
     photos: [
       {
         src: `${CDN}/fishing/lure-skiff-fishing-sup-1-768w.webp`,
@@ -106,7 +106,7 @@ export const supScenarios: SupScenario[] = [
       'Power through competitive race courses and rolling waves, delivering agile handling, explosive acceleration, and peak performance for dynamic water events.',
     instructions:
       'Inflate to the recommended 12–15 PSI, secure the safety leash, and position your stance firmly along the gripped deck pad to maintain aggressive drive and responsive carving.',
-    href: '/surf-sup',
+    href: '/surf-sup/',
     photos: [
       {
         src: `${CDN}/surf/surf-series-1-768w.webp`,
@@ -122,7 +122,7 @@ export const supScenarios: SupScenario[] = [
       'Navigate winding river currents and lush forest waterways, offering outstanding maneuverability, rugged durability, and rock-solid balance for dynamic river running.',
     instructions:
       'Inflate to 12–15 PSI, attach a quick-release river leash, and keep your knees slightly bent on the high-traction EVA deck to absorb currents and steer through rapids.',
-    href: '/whitewater-sup',
+    href: '/whitewater-sup/',
     photos: [
       {
         src: `${CDN}/whitewater/whitewater-series-1-768w.webp`,
@@ -138,7 +138,7 @@ export const supScenarios: SupScenario[] = [
       'Gather family, friends, or team members for shared water adventures, enjoying an ultra-buoyant, expansive platform built for group paddling, floating parties, and collective fun.',
     instructions:
       'Inflate all air chambers to the recommended 12–15 PSI, distribute passengers evenly across the expansive EVA deck, and synchronize paddling while holding the heavy-duty perimeter handles for stability.',
-    href: '/giant-sup',
+    href: '/giant-sup/',
     photos: [
       {
         src: `${CDN}/giant/multi-person-giant-sup-1-1200w.webp`,
@@ -154,7 +154,7 @@ export const supScenarios: SupScenario[] = [
       'Expand your waterfront living space behind boats, docks, or lakeshores, providing a heavy-duty floating lounge and pet-friendly swim ramp for sunbathing, swimming, and family fun.',
     instructions:
       'Inflate the drop-stitch platform to 8–10 PSI, tether it securely to your boat or dock using the heavy-duty stainless D-rings, and submerge the weighted mesh ramp for effortless access for swimmers and pets.',
-    href: '/dock-platform',
+    href: '/dock-platform/',
     photos: [
       {
         src: `${CDN}/dock-platform/inflatable-dock-platform-1-1200w.webp`,

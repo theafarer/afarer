@@ -9,6 +9,7 @@ import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/guides.ts';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -85,7 +86,7 @@ const categoriesLabel = t('guides.categories').replace('{count}', String(categor
         }
       </div>
       <a
-        href={`/${lang}${sizeGuide.link || '/size-guide'}`}
+        href={withTrailingSlash(`/${lang}${sizeGuide.link || '/size-guide'}`)}
         class="mt-6 inline-flex items-center gap-1 text-sm font-medium text-sky-600 hover:text-sky-700"
       >
         {sizeGuide.link_label || 'Full size guide with product specs →'}
@@ -111,7 +112,7 @@ const categoriesLabel = t('guides.categories').replace('{count}', String(categor
                 <h3 class="text-xl font-semibold text-gray-900">{g.title}</h3>
                 <p class="mt-2 text-gray-500 text-sm">{g.description}</p>
                 <a
-                  href={`/${lang}/guides/${g.slug}`}
+                  href={withTrailingSlash(`/${lang}/guides/${g.slug}`)}
                   class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-sky-600 hover:text-sky-700"
                 >
                   {t('guides.readGuide')}

@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: تشكيلة كاملة بالمواصفات والأسعار ومعلومات الطلب
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: حاسبة هوامش الربح، ونصائح العرض التجاري، وأفضل الممارسات
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: صور منتجات عالية الدقة، وصور أنماط الحياة، ومواد نقاط البيع (POS)
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: دعم شركاء التجزئة
   subtitle: كل ما تحتاجه للبيع بثقة.
@@ -90,8 +90,8 @@ cta:
   subtitle: قدّم طلب شراكة أو حمّل كتالوج التجزئة الخاص بنا للبدء.
   actions:
     - text: تقدّم بطلب الشراكة
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: تنزيل كتالوج التجزئة
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

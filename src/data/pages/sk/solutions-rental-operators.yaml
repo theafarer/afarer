@@ -64,8 +64,8 @@ cta:
   subtitle: 'Získajte požičovné ceny alebo porovnajte modely dosiek pre vašu prevádzku.'
   actions:
     - text: 'Získať požičovné ceny'
-      href: '/contact?package=rental'
+      href: '/contact/?package=rental'
       variant: 'primary'
     - text: 'Porovnať modely dosiek'
-      href: '/compare'
+      href: '/compare/'
       variant: 'secondary'

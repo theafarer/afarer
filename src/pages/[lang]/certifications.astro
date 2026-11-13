@@ -12,6 +12,7 @@ import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/certifications.ts';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -28,7 +29,7 @@ const factory = page.content_factory ?? {};
 const safety = page.content_safety ?? {};
 const cta = page.cta ?? {};
 
-const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const lh = (h: string) => (h ? withTrailingSlash(`/${lang}${h}`) : h);
 const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
 
 const metadata = {
@@ -70,7 +71,7 @@ const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.certi
       description: 'CE certified, ISO 9001:2015, UKCA marked, BSCI compliant, REACH compliant marine products.',
       serviceType: 'Product Certification & Compliance',
       areaServed: ['EU', 'UK', 'US', 'AU', 'Global'],
-      url: `/${lang}/certifications`,
+      url: withTrailingSlash(`/${lang}/certifications`),
       items: [
         { name: 'CE Certification', description: 'EU directive compliance for recreational craft' },
         { name: 'ISO 9001:2015', description: 'Quality management system certified by SGS/BSI' },

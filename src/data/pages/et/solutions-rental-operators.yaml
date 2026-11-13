@@ -64,8 +64,8 @@ cta:
   subtitle: 'Saage rendihinnad või võrrelge laudmudeleid oma operatsioonile.'
   actions:
     - text: 'Hangi rendihinnad'
-      href: '/contact?package=rental'
+      href: '/contact/?package=rental'
       variant: 'primary'
     - text: 'Võrdle laudmudeleid'
-      href: '/compare'
+      href: '/compare/'
       variant: 'secondary'

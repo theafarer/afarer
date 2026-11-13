@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: 'Rok isporuke'
         value: '30–45 dana'
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: 'Sve detalje o kapacitetu →'
   - title: 'Laboratorij kvalitete i ispitivanja'
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: 'Ispitivač vlačne čvrstoće, klimatska komora, spremnik za provjeru nepropusnosti'
       - label: 'Standardi'
         value: 'ISO 9001, CE, AS 1799'
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: 'Postupci i oprema laboratorija →'
   - title: 'OEM/ODM mogućnosti'
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: 'ISO 9001, BSCI, CE, REACH'
       - label: 'Otprema'
         value: 'FOB, CIF, DDP u 50+ zemalja'
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: 'Kompletne OEM usluge →'
 
 workshops_section:
@@ -90,7 +90,7 @@ equipment_section:
   tagline: 'Oprema'
   title: 'Ključna proizvodna oprema'
   view_full: 'Pogledajte cijeli popis opreme →'
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: 'Automatski stroj za rezanje PVC-a'
       spec: 'CNC upravljan, točnost 0.1 mm'
@@ -271,4 +271,4 @@ process_cta:
   title: 'Pogledajte naš proizvodni proces'
   desc: 'Pratite dasku kroz svaku fazu proizvodnje — od sirovine do daske spremne za vodu.'
   label: 'Pogledajte proizvodni proces →'
-  link: /factory/process
+  link: /factory/process/

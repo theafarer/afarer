@@ -78,7 +78,7 @@ const consentRequired = consent?.required === true;
 const consentText =
   consent?.text || _ui('contact.consent', 'I agree to the processing of my personal data in accordance with the');
 const consentLinkText = consent?.link_text || _ui('contact.privacyLink', 'Privacy Policy');
-const consentLinkHref = consent?.link_href || '/privacy';
+const consentLinkHref = consent?.link_href || '/privacy/';
 const consentError =
   consent?.error_message ||
   _ui('contact.consentError', 'Please confirm that you accept the Privacy Policy before submitting.');

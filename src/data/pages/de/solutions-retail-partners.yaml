@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: Vollständige Produktreihe mit Spezifikationen, Preisen und Bestellinformationen
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: Marge-Rechner, Merchandising-Tipps und bewährte Verfahren
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: Hochauflösende Produktfotos, Lifestyle-Bilder und POS-Materialien
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Einzelhandelspartner-Support
   subtitle: Alles, was Sie brauchen, um selbstbewusst zu verkaufen.
@@ -90,8 +90,8 @@ cta:
   subtitle: Bewerben Sie sich für eine Partnerschaft oder laden Sie unseren Einzelhandelskatalog herunter, um loszulegen.
   actions:
     - text: Auf Partnerschaft bewerben
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Einzelhandelskatalog herunterladen
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: Fullt sortiment med spesifikasjoner, priser og bestillingsinformasjon
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: Marginkalkulator, vareplasseringstips og beste praksis
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: Høyoppløste produktbilder, livsstilsbilder og POS-materiell
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Støtte for detaljhandelspartnere
   subtitle: Alt du trenger for å selge med selvtillit.
@@ -90,8 +90,8 @@ cta:
   subtitle: Søk om partnerskap eller last ned vår detaljhandelskatalog for å komme i gang.
   actions:
     - text: Søk om partnerskap
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Last ned detaljhandelskatalog
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

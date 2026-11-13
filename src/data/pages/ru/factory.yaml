@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: Срок поставки
         value: 30–45 дней
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: Полные сведения о емкости →
   - title: Лаборатория качества и тестирование
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: Испытательная машина на растяжение, температурная камера, резервуар для утечек
       - label: Стандарты
         value: ISO 9001, CE, AS 1799
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: Лабораторные процедуры и оборудование →
   - title: Возможности OEM/ODM
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: ISO 9001, BSCI, CE, REACH
       - label: Доставка
         value: FOB, CIF, DDP в более чем 50 стран
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: Полные услуги OEM →
 workshops_section:
   tagline: Цеха
@@ -88,7 +88,7 @@ equipment_section:
   tagline: Оборудование
   title: Ключевое производственное оборудование
   view_full: Полный список оборудования →
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: Автоматическая машина раскроя ПВХ
       spec: ЧПУ, точность 0,1 мм
@@ -262,4 +262,4 @@ process_cta:
   title: Посмотреть наш производственный процесс
   desc: Проследите путь доски через все этапы производства — от сырья до готовой к воде доски.
   label: Смотреть процесс производства →
-  link: /factory/process
+  link: /factory/process/

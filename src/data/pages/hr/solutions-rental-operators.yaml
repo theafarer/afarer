@@ -64,8 +64,8 @@ cta:
   subtitle: 'Nabavite cijene za iznajmljivanje ili usporedite modele daska za svoje poslovanje.'
   actions:
     - text: 'Nabavite cijene za iznajmljivanje'
-      href: '/contact?package=rental'
+      href: '/contact/?package=rental'
       variant: 'primary'
     - text: 'Usporedite modele daska'
-      href: '/compare'
+      href: '/compare/'
       variant: 'secondary'

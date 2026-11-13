@@ -113,8 +113,8 @@ cta:
   subtitle: 'קבלו הצעת מחיר לצי המועדון שלכם או הורידו את מדריך ההקמה שלנו למועדונים.'
   actions:
     - text: 'הגישו בקשה לצי מועדון'
-      href: '/contact?package=club'
+      href: '/contact/?package=club'
       variant: 'primary'
     - text: 'הורידו את מדריך המועדונים'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

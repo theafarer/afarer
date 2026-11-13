@@ -11,6 +11,7 @@ import { getUiForLang } from '~/i18n/generated/ui-all';
 import { fetchPostsForLang, blogPostsPerPage, blogListRobots } from '~/utils/blog';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/news.ts';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -77,7 +78,7 @@ const metadata = {
     {
       featured && (
         <a
-          href={`/${lang}/news/${featured.slug}`}
+          href={withTrailingSlash(`/${lang}/news/${featured.slug}`)}
           class="mt-12 block bg-gradient-to-br from-gray-50 to-white dark:from-slate-800 dark:to-slate-900 rounded-3xl border border-gray-200 dark:border-slate-700 overflow-hidden hover:shadow-xl transition-all group"
         >
           <div class="grid md:grid-cols-2">
@@ -115,7 +116,7 @@ const metadata = {
       {
         categories.map((cat) => (
           <a
-            href={cat.id ? `/${lang}/news/category/${cat.id}` : `/${lang}/news`}
+            href={cat.id ? withTrailingSlash(`/${lang}/news/category/${cat.id}`) : withTrailingSlash(`/${lang}/news`)}
             class={`px-4 py-2 text-sm font-medium rounded-full transition-colors ${!cat.id ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-slate-800 text-muted hover:bg-gray-200 dark:hover:bg-slate-700'}`}
           >
             {cat.label}
@@ -133,7 +134,7 @@ const metadata = {
         <p class="text-sm text-muted mt-1">{t('news.ctaDesc')}</p>
       </div>
       <a
-        href={`/${lang}/research/oem-buyer-guide`}
+        href={withTrailingSlash(`/${lang}/research/oem-buyer-guide`)}
         class="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full transition-all whitespace-nowrap shrink-0"
       >
         {t('news.ctaButton')}

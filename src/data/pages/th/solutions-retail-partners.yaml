@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: ผลิตภัณฑ์ครบทุกรุ่น พร้อมสเปก ราคา และข้อมูลการสั่งซื้อ
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: เครื่องคำนวณมาร์จิ้น เคล็ดลับการจัดวางสินค้า และแนวปฏิบัติที่ดีที่สุด
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: รูปผลิตภัณฑ์ความละเอียดสูง รูปภาพไลฟ์สไตล์ และสื่อการตลาด ณ จุดขาย (POS)
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: การสนับสนุนพันธมิตรค้าปลีก
   subtitle: ทุกสิ่งที่คุณต้องใช้เพื่อขายอย่างมั่นใจ
@@ -90,8 +90,8 @@ cta:
   subtitle: สมัครเป็นพันธมิตรหรือดาวน์โหลดแคตตาล็อกค้าปลีกของเราเพื่อเริ่มต้น
   actions:
     - text: สมัครเป็นพันธมิตร
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: ดาวน์โหลดแคตตาล็อกค้าปลีก
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

@@ -4,7 +4,8 @@ export interface Props {
   title?: string;
 }
 
-import { getLangFromUrl, localizePath } from '~/i18n/utils';
+import { getLangFromUrl } from '~/i18n/utils';
+import { localizeHref } from '~/i18n/routing';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getWhatsAppLink, getContactEmail } from '~/utils/whatsapp';
 
@@ -195,7 +196,7 @@ const _contactEmail = getContactEmail();
         )
       }
       <a
-        href={localizePath('/contact', _locale)}
+        href={localizeHref('/contact', _locale)}
         class="text-xs px-2.5 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
       >
         {_ui('chat.contactForm', 'Contact Form')}

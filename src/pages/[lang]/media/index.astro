@@ -7,6 +7,7 @@ import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/media.ts';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -57,7 +58,7 @@ const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: hero.title }
         </div>
         {sec.id !== 'videos' ? (
           <div class="mt-4 text-right">
-            <a href={`/${lang}/contact`} class="text-sm font-medium text-sky-600 hover:text-sky-700">
+            <a href={withTrailingSlash(`/${lang}/contact`)} class="text-sm font-medium text-sky-600 hover:text-sky-700">
               {requestAccess}
             </a>
           </div>
@@ -74,7 +75,7 @@ const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: hero.title }
         {
           (cta.links || []).map((link) => (
             <a
-              href={`/${lang}${link.href}`}
+              href={withTrailingSlash(`/${lang}${link.href}`)}
               class="flex flex-col items-center px-6 py-4 bg-white border border-gray-200 rounded-xl hover:shadow-md transition-all min-w-[180px]"
             >
               <span class="font-semibold text-gray-900 text-sm">{link.label} →</span>

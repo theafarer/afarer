@@ -108,8 +108,8 @@ cta:
   subtitle: 'Kezdje el márkaútját, vagy töltse le OEM útmutatónkat.'
   actions:
     - text: 'Márkaút elindítása'
-      href: '/contact?package=oem'
+      href: '/contact/?package=oem'
       variant: 'primary'
     - text: 'OEM útmutató letöltése'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

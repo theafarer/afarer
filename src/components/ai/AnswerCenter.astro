@@ -215,22 +215,22 @@ const _ = (k: string) => getUiForLang(_l)?.[k] || getUiForLang('en')?.[k] || '';
       <span class="ac-section-label">{_('ai.exploreMore') || 'Explore More'}</span>
       <h2 class="ac-section-title">{_('ai.relatedResources') || 'Related resources'}</h2>
       <div class="ac-resource-grid">
-        <a href={_l === 'en' ? '/knowledge-graph' : `/${_l}/knowledge-graph`} class="ac-resource-card">
+        <a href={_l === 'en' ? '/knowledge-graph/' : `/${_l}/knowledge-graph/`} class="ac-resource-card">
           <div class="ac-resource-icon">🔗</div>
           <h3>{_('ai.knowledgeGraph') || 'Knowledge Graph'}</h3>
           <p>{_('ai.kgDesc') || 'Visual map of product, technology, and use case relationships'}</p>
         </a>
-        <a href={_l === 'en' ? '/products' : `/${_l}/products`} class="ac-resource-card">
+        <a href={_l === 'en' ? '/products/' : `/${_l}/products/`} class="ac-resource-card">
           <div class="ac-resource-icon">📦</div>
           <h3>{_('ai.productCatalog') || 'Product Catalog'}</h3>
           <p>{_('ai.catalogDesc') || 'Browse all products with specifications and comparisons'}</p>
         </a>
-        <a href={_l === 'en' ? '/compare' : `/${_l}/compare`} class="ac-resource-card">
+        <a href={_l === 'en' ? '/compare/' : `/${_l}/compare/`} class="ac-resource-card">
           <div class="ac-resource-icon">⚖️</div>
           <h3>{_('ai.comparisons') || 'Comparisons'}</h3>
           <p>{_('ai.comparisonsDesc') || 'Side-by-side product and material comparisons'}</p>
         </a>
-        <a href={_l === 'en' ? '/evidence' : `/${_l}/evidence`} class="ac-resource-card">
+        <a href={_l === 'en' ? '/evidence/' : `/${_l}/evidence/`} class="ac-resource-card">
           <div class="ac-resource-icon">📊</div>
           <h3>{_('ai.evidence') || 'Evidence & Case Studies'}</h3>
           <p>{_('ai.evidenceDesc') || 'Real deployments, certifications, and test results'}</p>

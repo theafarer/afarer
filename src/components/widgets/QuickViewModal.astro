@@ -107,10 +107,10 @@ const _ = (k: string) => getUiForLang(currentLang)?.[k] || getUiForLang('en')?.[
       });
     }
 
-    modal.querySelector('[data-quick-view-link]')!.setAttribute('href', `/products/${slug}`);
+    modal.querySelector('[data-quick-view-link]')!.setAttribute('href', `/products/${slug}/`);
     modal
       .querySelector('[data-quick-view-contact]')!
-      .setAttribute('href', `/contact?product=${encodeURIComponent(data.title || slug)}`);
+      .setAttribute('href', `/contact/?product=${encodeURIComponent(data.title || slug)}`);
 
     modal.classList.remove('hidden');
     modal.classList.add('flex');

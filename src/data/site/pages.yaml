@@ -18,7 +18,7 @@
 - slug: about
   label: About
   path: /about
-  permalink: /about
+  permalink: /about/
   file: src/data/pages/about.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -36,7 +36,7 @@
 - slug: about-afarer
   label: About afarer
   path: /about/afarer
-  permalink: /about/afarer
+  permalink: /about/afarer/
   file: src/data/pages/about-afarer.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -55,7 +55,7 @@
 - slug: academy
   label: Academy
   path: /academy
-  permalink: /academy
+  permalink: /academy/
   file: src/data/pages/academy.yaml
   sections:
     - { key: hero, type: hero, label: 'Page Hero' }
@@ -70,7 +70,7 @@
 - slug: afarer-story
   label: afarer Story
   path: /afarer-story
-  permalink: /afarer-story
+  permalink: /afarer-story/
   file: src/data/pages/afarer-story.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -87,7 +87,7 @@
 - slug: brand
   label: Brand
   path: /brand
-  permalink: /brand
+  permalink: /brand/
   file: src/data/pages/brand.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -100,7 +100,7 @@
 - slug: brand-afarer
   label: Brand afarer
   path: /en/brand/afarer
-  permalink: /en/brand/afarer
+  permalink: /en/brand/afarer/
   file: src/data/pages/brand-afarer.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -114,7 +114,7 @@
 - slug: brand-global-presence
   label: Brand Global Presence
   path: /brand-global-presence
-  permalink: /brand-global-presence
+  permalink: /brand-global-presence/
   file: src/data/pages/brand-global-presence.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -124,7 +124,7 @@
 - slug: brand-marine-expertise
   label: Brand Marine Expertise
   path: /brand-marine-expertise
-  permalink: /brand-marine-expertise
+  permalink: /brand-marine-expertise/
   file: src/data/pages/brand-marine-expertise.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -136,7 +136,7 @@
 - slug: brand-story
   label: Brand Story
   path: /en/brand-story
-  permalink: /en/brand-story
+  permalink: /en/brand-story/
   file: src/data/pages/brand-story.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -149,7 +149,7 @@
 - slug: brand-team
   label: Brand Team
   path: /en/brand/team
-  permalink: /en/brand/team
+  permalink: /en/brand/team/
   file: src/data/pages/brand-team.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -161,7 +161,7 @@
 - slug: brand-why-afarer
   label: Brand Why afarer
   path: /brand-why-afarer
-  permalink: /brand-why-afarer
+  permalink: /brand-why-afarer/
   file: src/data/pages/brand-why-afarer.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -172,7 +172,7 @@
 - slug: cases
   label: Cases
   path: /evidence
-  permalink: /evidence
+  permalink: /evidence/
   file: src/data/pages/cases.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -181,7 +181,7 @@
 - slug: certifications
   label: Certifications
   path: /quality
-  permalink: /quality
+  permalink: /quality/
   file: src/data/pages/certifications.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -193,7 +193,7 @@
 - slug: community
   label: Community
   path: /community
-  permalink: /community
+  permalink: /community/
   file: src/data/pages/community.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -206,7 +206,7 @@
 - slug: contact
   label: Contact
   path: /contact
-  permalink: /contact
+  permalink: /contact/
   file: src/data/pages/contact.yaml
   sections:
     - { key: hero_text, type: hero_text, label: 'Top HeroText' }
@@ -216,7 +216,7 @@
 - slug: custom
   label: Custom Orders
   path: /custom
-  permalink: /custom
+  permalink: /custom/
   file: src/data/pages/custom.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -228,7 +228,7 @@
 - slug: factory
   label: Factory
   path: /factory
-  permalink: /factory
+  permalink: /factory/
   file: src/data/pages/factory.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -251,7 +251,7 @@
 - slug: factory-capacity
   label: Factory Capacity
   path: /factory/capacity
-  permalink: /factory/capacity
+  permalink: /factory/capacity/
   file: src/data/pages/factory-capacity.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -263,7 +263,7 @@
 - slug: factory-equipment
   label: Factory Equipment
   path: /factory/equipment
-  permalink: /factory/equipment
+  permalink: /factory/equipment/
   file: src/data/pages/factory-equipment.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -273,7 +273,7 @@
 - slug: factory-oem-capability
   label: Factory OEM Capability
   path: /factory/oem-capability
-  permalink: /factory/oem-capability
+  permalink: /factory/oem-capability/
   file: src/data/pages/factory-oem-capability.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -286,7 +286,7 @@
 - slug: factory-process
   label: Factory Process
   path: /factory/process
-  permalink: /factory/process
+  permalink: /factory/process/
   file: src/data/pages/factory-process.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -297,7 +297,7 @@
 - slug: factory-quality-lab
   label: Factory Quality Lab
   path: /factory/quality-lab
-  permalink: /factory/quality-lab
+  permalink: /factory/quality-lab/
   file: src/data/pages/factory-quality-lab.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -309,7 +309,7 @@
 - slug: fishing
   label: Fishing
   path: /en/use-cases/fishing
-  permalink: /en/use-cases/fishing
+  permalink: /en/use-cases/fishing/
   file: src/data/pages/fishing.yaml
   sections:
     - { key: label, type: content, label: 'Page Label' }
@@ -322,7 +322,7 @@
 - slug: gallery
   label: Gallery
   path: /gallery
-  permalink: /gallery
+  permalink: /gallery/
   file: src/data/pages/gallery.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -332,7 +332,7 @@
 - slug: guides
   label: Guides
   path: /guides
-  permalink: /guides
+  permalink: /guides/
   file: src/data/pages/guides.yaml
   sections:
     - { key: hero, type: hero, label: 'Page Hero' }
@@ -341,7 +341,7 @@
 - slug: inflatable-vs-hardboard
   label: Inflatable vs Hardboard
   path: /compare/inflatable-vs-hardboard
-  permalink: /compare/inflatable-vs-hardboard
+  permalink: /compare/inflatable-vs-hardboard/
   file: src/data/pages/inflatable-vs-hardboard.yaml
   sections:
     - { key: label, type: content, label: 'Page Label' }
@@ -354,7 +354,7 @@
 - slug: journal
   label: Journal
   path: /journal
-  permalink: /journal
+  permalink: /journal/
   file: src/data/pages/journal.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -364,7 +364,7 @@
 - slug: knowledge
   label: Knowledge
   path: /knowledge
-  permalink: /knowledge
+  permalink: /knowledge/
   file: src/data/pages/knowledge.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -375,7 +375,7 @@
 - slug: learn
   label: Learn
   path: /en/learn
-  permalink: /en/learn
+  permalink: /en/learn/
   file: src/data/pages/learn.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -386,7 +386,7 @@
 - slug: lifestyle
   label: Lifestyle
   path: /lifestyle
-  permalink: /lifestyle
+  permalink: /lifestyle/
   file: src/data/pages/lifestyle.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -398,7 +398,7 @@
 - slug: media
   label: Media
   path: /media
-  permalink: /media
+  permalink: /media/
   file: src/data/pages/media.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -409,7 +409,7 @@
 - slug: news
   label: News
   path: /news
-  permalink: /news
+  permalink: /news/
   file: src/data/pages/news.yaml
   sections:
     - { key: hero_text, type: hero_text, label: 'Page Header (title, subtitle, tagline)' }
@@ -417,7 +417,7 @@
 - slug: partners
   label: Partners
   path: /en/partners
-  permalink: /en/partners
+  permalink: /en/partners/
   file: src/data/pages/partners.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -429,7 +429,7 @@
 - slug: quality
   label: Quality
   path: /quality-testing
-  permalink: /quality-testing
+  permalink: /quality-testing/
   file: src/data/pages/quality.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -441,7 +441,7 @@
 - slug: randdcenter
   label: R&D Center
   path: /randdcenter
-  permalink: /randdcenter
+  permalink: /randdcenter/
   file: src/data/pages/randdcenter.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -457,7 +457,7 @@
 - slug: request-quotation
   label: Request Quotation
   path: /en/request-quotation
-  permalink: /en/request-quotation
+  permalink: /en/request-quotation/
   file: src/data/pages/request-quotation.yaml
   sections:
     - { key: hero_text, type: hero_text, label: 'Top HeroText' }
@@ -467,7 +467,7 @@
 - slug: resources
   label: Resources
   path: /resources/download-catalog
-  permalink: /resources/download-catalog
+  permalink: /resources/download-catalog/
   file: src/data/pages/resources.yaml
   sections:
     - { key: hero_text, type: hero_text, label: 'Top HeroText' }
@@ -477,7 +477,7 @@
 - slug: safety
   label: Safety
   path: /safety
-  permalink: /safety
+  permalink: /safety/
   file: src/data/pages/safety.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -487,7 +487,7 @@
 - slug: size-guide
   label: Size Guide
   path: /size-guide
-  permalink: /size-guide
+  permalink: /size-guide/
   file: src/data/pages/size-guide.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -498,7 +498,7 @@
 - slug: solutions
   label: Solutions
   path: /solutions
-  permalink: /solutions
+  permalink: /solutions/
   file: src/data/pages/solutions.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -508,7 +508,7 @@
 - slug: technology
   label: Technology
   path: /technology
-  permalink: /technology
+  permalink: /technology/
   file: src/data/pages/technology.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -518,7 +518,7 @@
 - slug: tourism-recreation
   label: Tourism & Recreation
   path: /en/use-cases/tourism-recreation
-  permalink: /en/use-cases/tourism-recreation
+  permalink: /en/use-cases/tourism-recreation/
   file: src/data/pages/tourism-recreation.yaml
   sections:
     - { key: label, type: content, label: 'Page Label' }
@@ -531,7 +531,7 @@
 - slug: trust
   label: Trust
   path: /trust
-  permalink: /trust
+  permalink: /trust/
   file: src/data/pages/trust.yaml
   sections:
     - { key: hero, type: hero, label: 'Top Hero' }
@@ -543,7 +543,7 @@
 - slug: warranty
   label: Warranty
   path: /warranty
-  permalink: /warranty
+  permalink: /warranty/
   file: src/data/pages/warranty.yaml
   sections:
     - { key: label, type: content, label: 'Page Label' }
@@ -555,7 +555,7 @@
 - slug: what-is-sup
   label: What is SUP
   path: /en/guides/what-is-sup
-  permalink: /en/guides/what-is-sup
+  permalink: /en/guides/what-is-sup/
   file: src/data/pages/what-is-sup.yaml
   sections:
     - { key: label, type: content, label: 'Page Label' }

@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: Tempo di consegna
         value: 30–45 giorni
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: Dettagli completi sulla capacità →
   - title: Laboratorio e Test di Qualità
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: Provetta di trazione, camera termica, serbatoio di perdita
       - label: Standard
         value: ISO 9001, CE, AS 1799
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: Procedure di laboratorio e attrezzature →
   - title: Capacità OEM/ODM
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: ISO 9001, BSCI, CE, REACH
       - label: Spedizione
         value: FOB, CIF, DDP verso oltre 50 paesi
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: Servizi OEM completi →
 workshops_section:
   tagline: Officine
@@ -90,7 +90,7 @@ equipment_section:
   tagline: Attrezzatura
   title: Attrezzatura Produttiva Chiave
   view_full: Vedi elenco completo attrezzatura →
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: Macchina Taglio PVC Automatica
       spec: Controllo CNC, precisione 0,1 mm
@@ -264,4 +264,4 @@ process_cta:
   title: Vedi il nostro processo produttivo
   desc: Segui una tavola attraverso ogni fase della produzione — dalla materia prima alla tavola pronta per l'acqua.
   label: Vedi processo produttivo →
-  link: /factory/process
+  link: /factory/process/

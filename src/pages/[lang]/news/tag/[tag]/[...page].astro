@@ -8,6 +8,7 @@ import { fetchPosts, fetchPostsForLang, blogPostsPerPage, blogTagRobots } from '
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import type { Post } from '~/types';
 import { languages } from '~/i18n/config';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export const prerender = true;
 
@@ -78,7 +79,7 @@ const metadata = {
   metadata={metadata}
   breadcrumbs={[
     { name: t('nav.home'), href: `/${lang}/` },
-    { name: t('nav.news'), href: `/${lang}/news` },
+    { name: t('nav.news'), href: withTrailingSlash(`/${lang}/news`) },
     { name: `${t('blog.tag')}: ${tagTitle}` },
   ]}
 >

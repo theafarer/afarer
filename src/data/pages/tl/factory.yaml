@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: 'Lead Time'
         value: '30–45 araw'
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: 'Buong detalye ng kapasidad →'
   - title: 'Quality Lab at Pagsubok'
     icon: 'Q'
@@ -49,7 +49,7 @@ intelligence_cards:
         value: 'Pampasubok ng tensile, silid ng temperatura, tangke para sa pagtuklas ng tagas'
       - label: 'Mga Pamantayan'
         value: 'ISO 9001, CE, AS 1799'
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: 'Mga proseso at kagamitan ng lab →'
   - title: 'Kakayahang OEM/ODM'
     icon: 'O'
@@ -60,7 +60,7 @@ intelligence_cards:
         value: 'ISO 9001, BSCI, CE, REACH'
       - label: 'Pagpapadala'
         value: 'FOB, CIF, DDP sa 50+ bansa'
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: 'Buong OEM services →'
 
 workshops_section:
@@ -90,7 +90,7 @@ equipment_section:
   tagline: 'Mga Kagamitan'
   title: 'Pangunahing Kagamitan sa Paggawa'
   view_full: 'Tingnan ang buong listahan ng kagamitan →'
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: 'Awtomatikong Makinang Paggugupot ng PVC'
       spec: 'CNC-controlled, 0.1 mm kawastuhan'
@@ -271,4 +271,4 @@ process_cta:
   title: 'Tingnan ang aming proseso ng paggawa'
   desc: 'Sundan ang isang board sa bawat yugto ng produksyon — mula sa hilaw na materyal hanggang sa board na handa nang gamitin sa tubig.'
   label: 'Tingnan ang proseso ng produksyon →'
-  link: /factory/process
+  link: /factory/process/

@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: Gama completă cu specificații, prețuri și informații de comandă
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: Calculator de marjă, sfaturi de merchandising și bune practici
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: Fotografii de produs de înaltă rezoluție, imagini lifestyle și materiale POS
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Suport pentru partenerii de retail
   subtitle: Tot ce ai nevoie pentru a vinde cu încredere.
@@ -90,8 +90,8 @@ cta:
   subtitle: Aplicați pentru parteneriat sau descărcați catalogul nostru de retail pentru a începe.
   actions:
     - text: Aplicați pentru parteneriat
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Descărcați catalogul de retail
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

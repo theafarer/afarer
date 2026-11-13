@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: Volledige lineup met specificaties, prijzen en bestelgegevens
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: Winstmargecalculator, merchandisingtips en beste praktijken
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: Hoge resolutie productfoto's, lifestyle-afbeeldingen en POS-materiaal
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Ondersteuning voor retailpartners
   subtitle: Alles wat je nodig hebt om vol vertrouwen te verkopen.
@@ -90,8 +90,8 @@ cta:
   subtitle: Meld u aan voor een partnerschap of download onze detailhandelcatalogus om te beginnen.
   actions:
     - text: Aanmelden voor partnerschap
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Download detailhandelcatalogus
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

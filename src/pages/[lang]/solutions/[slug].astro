@@ -15,6 +15,7 @@ import { SITE } from 'astrowind:config';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getSolutionBySlug, getAllSlugs } from '~/data/biz-solutions';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   const paths: Array<{ params: { lang: string; slug: string } }> = [];
@@ -57,7 +58,7 @@ const cta = page.cta;
 
 const allCases = [cs, ...(page.caseStudy.moreCaseStudies || [])];
 
-const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}` : h);
+const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : withTrailingSlash(h));
 
 const crumbs = [
   { name: t('nav.home') || 'Home', href: `/${lang}/` },
@@ -233,7 +234,7 @@ const ctaActions = [
       description: page.meta.description.replace('{SITE}', SITE.name),
       serviceType: 'OEM/ODM Manufacturing',
       areaServed: ['Global'],
-      url: `/${lang}/solutions/${page.slug}`,
+      url: withTrailingSlash(`/${lang}/solutions/${page.slug}`),
       items: solutionsData.items.map((s) => ({ name: s.title, description: s.description })),
     }}
   />

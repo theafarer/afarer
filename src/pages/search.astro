@@ -8,7 +8,7 @@ const q = Astro.url.searchParams.get('q') || '';
   <section class="max-w-5xl mx-auto px-4 py-12 md:py-20">
     <div class="mb-8">
       <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">Search</h1>
-      <form method="get" action="/search" class="flex gap-2">
+      <form method="get" action="/search/" class="flex gap-2">
         <input
           type="text"
           name="q"
@@ -78,7 +78,7 @@ const q = Astro.url.searchParams.get('q') || '';
         document.getElementById('loading')?.remove();
 
         if (matches.length === 0) {
-          container.innerHTML = '<div class="py-12 text-center"><p class="text-gray-500 dark:text-gray-400 text-lg">No results found for <strong>' + escapeHtml(q) + '</strong>.</p><p class="text-gray-400 dark:text-gray-500 text-sm mt-2">Try a different keyword or browse <a href="/guides" class="text-sky-600 hover:underline">guides</a> or <a href="/products" class="text-sky-600 hover:underline">products</a>.</p></div>';
+          container.innerHTML = '<div class="py-12 text-center"><p class="text-gray-500 dark:text-gray-400 text-lg">No results found for <strong>' + escapeHtml(q) + '</strong>.</p><p class="text-gray-400 dark:text-gray-500 text-sm mt-2">Try a different keyword or browse <a href="/guides/" class="text-sky-600 hover:underline">guides</a> or <a href="/products/" class="text-sky-600 hover:underline">products</a>.</p></div>';
           filterBar.classList.add('hidden');
           return;
         }

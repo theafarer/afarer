@@ -47,8 +47,8 @@ cta:
   subtitle: 'Teikite paraišką į mūsų platintojų programą arba atsisiųskite mūsų platintojų informacijos rinkinį.'
   actions:
     - text: 'Teikti paraišką į platintojų programą'
-      href: '/contact?partner=distributor'
+      href: '/contact/?partner=distributor'
       variant: 'primary'
     - text: 'Atsisiųsti platintojų rinkinį'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

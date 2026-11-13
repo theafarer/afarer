@@ -64,8 +64,8 @@ cta:
   subtitle: 'Get rental pricing or compare board models for your operation.'
   actions:
     - text: 'Get Rental Pricing'
-      href: '/contact?package=rental'
+      href: '/contact/?package=rental'
       variant: 'primary'
     - text: 'Compare Board Models'
-      href: '/compare'
+      href: '/compare/'
       variant: 'secondary'

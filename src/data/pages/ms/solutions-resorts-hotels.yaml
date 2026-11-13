@@ -110,8 +110,8 @@ cta:
   subtitle: 'Dapatkan sebut harga pakej resort anda atau muat turun katalog resort lengkap kami.'
   actions:
     - text: 'Dapatkan Pakej Resort'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'Muat Turun Katalog Resort'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

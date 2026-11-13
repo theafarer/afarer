@@ -11,6 +11,7 @@ import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/brand-team.ts';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -32,7 +33,7 @@ const isDev = import.meta.env.DEV;
 const heroImage =
   isDev && hero.image?.src?.includes('team-all.webp') ? { ...hero.image, src: '/images/team-all.webp' } : hero.image;
 
-const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const lh = (h: string) => (h ? withTrailingSlash(`/${lang}${h}`) : h);
 const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
 
 const metadata = {

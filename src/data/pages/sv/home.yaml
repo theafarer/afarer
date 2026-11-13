@@ -21,13 +21,13 @@ hero:
   actions:
     - variant: primary
       text: Se produkter
-      href: /products
+      href: /products/
       icon: tabler:shopping-bag
     - text: Läs mer
-      href: '/afarer-story'
+      href: '/afarer-story/'
       icon: tabler:file-text
     - text: Utforska SUP-lösningar
-      href: /solutions
+      href: /solutions/
       icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
@@ -42,25 +42,25 @@ who_we_serve:
       description: Hållbara SUP-flottor, klubbrabatter och reservdelsprogram för paddelklubbar och skolor.
       icon: tabler:users
       cta: Utforska paddleklubblösningar
-      link: /solutions/paddle-clubs
+      link: /solutions/paddle-clubs/
     - title: Resorts och hotell
       keywords: resorts vattenaktiviteter, hotellstrandsutrustning, gästupplevelse
       description: Kompletta SUP-flottprogram med skräddarsydd varumärkning, personalutbildning och ROI-optimerade paket.
       icon: tabler:building
       cta: Skapa din resort-vattenupplevelse
-      link: /solutions/resorts-hotels
+      link: /solutions/resorts-hotels/
     - title: Handelspartners
       keywords: SUP-grosshandel, outdoor-återförsäljare, sportbutiker
       description: Fullständig produktlinje, marknadsföringsmaterial, dropshipping-alternativ och konkurrenskraftiga grossistmarginaler.
       icon: tabler:shopping-cart
       cta: Bli återförsäljarpartner
-      link: /solutions/retail-partners
+      link: /solutions/retail-partners/
     - title: Landdistributörer och co-brand-partners
       keywords: SUP-distributör per land, co-branded SUP, private label SUP
       description: Exklusiv landsvis distribution och begränsade co-branded kollektioner för kvalificerade vattensportsföretag.
       icon: tabler:package
       cta: Bli partner
-      link: /distributor-program
+      link: /distributor-program/
 proof_points:
   title: Testat bortom showroomet
   subtitle: Design, prestanda och kvalitet du kan verifiera — på vattnet och i siffrorna.
@@ -115,17 +115,17 @@ oem_section:
       title: Global leverans
       desc: FOB Qingdao-logistik, CIF stora hamnar, dörr-till-dörr.
   cta: Utforska co-branding
-  cta_link: /co-brand
+  cta_link: /co-brand/
 cta:
   title: Hitta din nästa bräda.
   subtitle: Oavsett om du tar ditt första årtag, utrustar en klubb eller bygger ett brädmärke — vi får dig ut på vattnet.
   actions:
     - variant: primary
       text: Utforska kollektionen
-      href: /inflatable-sup
+      href: /inflatable-sup/
       icon: tabler:send
     - text: Begär en katalog
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
 distributor:
   tagline: 'Landsexklusiva distributörer'
   title: 'Ett land. En officiell afarer-distributör.'
@@ -142,11 +142,11 @@ distributor:
   actions:
     - variant: primary
       text: 'Bli distributör'
-      href: /distributor-program
+      href: /distributor-program/
     - text: 'Begär prislista för återförsäljare'
-      href: /contact?subject=Dealer Price List
+      href: /contact/?subject=Dealer Price List
     - text: 'Ansök om landspartnerskap'
-      href: /contact?subject=Country Partnership Application
+      href: /contact/?subject=Country Partnership Application
     - text: 'Ladda ner distributörsprogrammet'
-      href: /distributor-program
+      href: /distributor-program/
   note: 'Provorder från 5–10 enheter. Testorder 10–30. Auktoriserad återförsäljare 30–50. Lands-/regiondistributör 100–300+.'

@@ -12,6 +12,7 @@ import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/solutions.ts';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -26,11 +27,11 @@ const hero = page.hero ?? {};
 const stats = page.stats ?? {};
 const solutions = page.features3_solutions ?? {};
 const cta = page.cta ?? {};
-const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}` : h);
+const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : withTrailingSlash(h));
 const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
 const localizedItems = solutions.items?.map((item) => ({
   ...item,
-  link: item.link ? `/${lang}${item.link}` : item.link,
+  link: item.link ? withTrailingSlash(`/${lang}${item.link}`) : item.link,
 }));
 
 const metadata = {
@@ -61,7 +62,7 @@ const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.solut
         'Complete SUP solutions for resorts, hotels, paddle clubs, rental operators, retail partners, distributors, and private label brands.',
       serviceType: 'Business Solutions',
       areaServed: ['Global'],
-      url: `/${lang}/solutions`,
+      url: withTrailingSlash(`/${lang}/solutions`),
       items: [
         { name: 'Resorts & Hotels', description: 'SUP fleet programs for hospitality properties' },
         { name: 'Paddle Clubs', description: 'Commercial-grade SUP fleets for clubs and schools' },

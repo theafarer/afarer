@@ -7,6 +7,7 @@ import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/factory-process.ts';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -24,7 +25,7 @@ const cta = page.cta ?? {};
 
 const crumbs = [
   { name: t('nav.home'), href: `/${lang}/` },
-  { name: t('nav.factory'), href: `/${lang}/factory` },
+  { name: t('nav.factory'), href: withTrailingSlash(`/${lang}/factory`) },
   { name: hero.title },
 ];
 
@@ -36,7 +37,7 @@ const metadata = {
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>
   <section class="px-6 sm:px-6 py-16 sm:py-20 mx-auto max-w-5xl">
-    <a href={`/${lang}${hero.back_link || '/factory'}`} class="text-sm text-gray-500 hover:underline"
+    <a href={withTrailingSlash(`/${lang}${hero.back_link || '/factory'}`)} class="text-sm text-gray-500 hover:underline"
       >&larr; {hero.back_label || 'Back to Factory'}</a
     >
     <div class="mt-4 max-w-3xl">
@@ -76,7 +77,7 @@ const metadata = {
       <h2 class="text-xl font-bold">{cta.title}</h2>
       <p class="mt-2 text-sm text-muted">{cta.desc}</p>
       <a
-        href={`/${lang}${cta.link || '/factory/equipment'}`}
+        href={withTrailingSlash(`/${lang}${cta.link || '/factory/equipment'}`)}
         class="mt-4 inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90"
       >
         {cta.label || 'View equipment →'}

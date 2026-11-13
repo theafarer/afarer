@@ -14,6 +14,7 @@ import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/solutions-distributors.ts';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -29,7 +30,7 @@ const hero = page.hero ?? {};
 const benefits = page.benefits ?? {};
 const coverage = page.coverage ?? {};
 const cta = page.cta ?? {};
-const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}` : h);
+const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : withTrailingSlash(h));
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 
 const pageMeta = page.meta ?? {};
@@ -147,7 +148,7 @@ const crumbs = [
       description: hero.subtitle || 'Exclusive territories, complete product portfolio, dedicated account management',
       serviceType: 'Distribution Partner Solutions',
       areaServed: ['Global'],
-      url: `/${lang}/solutions/distributors`,
+      url: withTrailingSlash(`/${lang}/solutions/distributors`),
       items: [
         { name: 'Exclusive Territories', description: 'Protected regional distribution rights' },
         { name: 'Complete Portfolio', description: 'Full SUP product line with priority access to new releases' },

@@ -113,8 +113,8 @@ cta:
   subtitle: 'Get your club fleet quote or download our club starter guide.'
   actions:
     - text: 'Apply for Club Fleet'
-      href: '/contact?package=club'
+      href: '/contact/?package=club'
       variant: 'primary'
     - text: 'Download Club Guide'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

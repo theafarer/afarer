@@ -21,13 +21,13 @@ hero:
   actions:
     - variant: primary
       text: Tutustu tuotteisiin
-      href: /products
+      href: /products/
       icon: tabler:shopping-bag
     - text: Lue lisää
-      href: '/afarer-story'
+      href: '/afarer-story/'
       icon: tabler:file-text
     - text: Tutustu SUP-ratkaisuihin
-      href: /solutions
+      href: /solutions/
       icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
@@ -42,25 +42,25 @@ who_we_serve:
       description: Kestävät SUP-valikoimat, kerhohinnat ja varaosapohjelmat soutukerhoille ja kouluille.
       icon: tabler:users
       cta: Tutustu melontakerhon ratkaisuihin
-      link: /solutions/paddle-clubs
+      link: /solutions/paddle-clubs/
     - title: Lomakohteet ja hotellit
       keywords: lomakohteen vesiliikunta, hotellin rantavarusteet, vieraskokemus
       description: Täydelliset SUP-kalusto-ohjelmat räätälöidyllä brändäyksellä, henkilöstökoulutuksella ja ROI-optimoituine paketteineen.
       icon: tabler:building
       cta: Luo lomakeskuksesi vesielämys
-      link: /solutions/resorts-hotels
+      link: /solutions/resorts-hotels/
     - title: Vähittäiskaupan kumppanit
       keywords: SUP tukku, ulkoiluretailit, urheilutarvikkeiden kaupat
       description: Kattava tuotevalikoima, markkinointimateriaalit, dropshipping-vaihtoehdot ja kilpailukykyiset tukkumarginaalit.
       icon: tabler:shopping-cart
       cta: Ryhy vähittäiskumppaniksi
-      link: /solutions/retail-partners
+      link: /solutions/retail-partners/
     - title: Maakohtaiset jakelijat ja co-brand-kumppanit
       keywords: maakohtainen SUP-jakelija, co-branded SUP, private label SUP
       description: Eksklusiivista maakohtaista jakelua ja rajoitettuja co-branded-kokoelmia valikoiduille vesiurheiluyrityksille.
       icon: tabler:package
       cta: Ryhdy kumppaniksi
-      link: /distributor-program
+      link: /distributor-program/
 proof_points:
   title: Testattu näyttelyä vaativammissa olosuhteissa
   subtitle: Suunnittelu, suorituskyky ja laatu, jotka voit todentaa — vedessä ja luvuissa.
@@ -115,7 +115,7 @@ oem_section:
       title: Globaali toimitus
       desc: FOB Qingdao logistiikka, CIF suurimpiin satamiin, ovesta ovelle.
   cta: Tutustu co-brandingiin
-  cta_link: /co-brand
+  cta_link: /co-brand/
 cta:
   title: |
     Valmis aloittamaan?
@@ -123,10 +123,10 @@ cta:
   actions:
     - variant: primary
       text: Pyydä tarjous
-      href: /contact
+      href: /contact/
       icon: tabler:message-circle
     - text: Tutustu kokoelmaan
-      href: /inflatable-sup
+      href: /inflatable-sup/
 distributor:
   tagline: Maakohtaiset eksklusiiviset jakelijat
   title: Yksi maa. Yksi virallinen afarer-jakelija.
@@ -143,11 +143,11 @@ distributor:
   actions:
     - variant: primary
       text: Ryhdy jälleenmyyjäksi
-      href: /distributor-program
+      href: /distributor-program/
     - text: Pyydä jälleenmyyjähinnasto
-      href: /contact?subject=Dealer Price List
+      href: /contact/?subject=Dealer Price List
     - text: Hae maakumppanuutta
-      href: /contact?subject=Country Partnership Application
+      href: /contact/?subject=Country Partnership Application
     - text: Lataa jälleenmyyjäohjelma
-      href: /distributor-program
+      href: /distributor-program/
   note: Näytetilaukset 5–10 kappaletta. Kokeilutilaukset 10–30. Valtuutettu jälleenmyyjä 30–50. Maa-/aluejakelija 100–300+.

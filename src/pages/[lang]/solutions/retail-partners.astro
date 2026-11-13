@@ -14,6 +14,7 @@ import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/solutions-retail-partners.ts';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -31,7 +32,7 @@ const productLine = page.product_line ?? {};
 const catalog = page.catalog ?? {};
 const support = page.support ?? {};
 const cta = page.cta ?? {};
-const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}` : h);
+const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : withTrailingSlash(h));
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 
 const pageMeta = page.meta ?? {};
@@ -204,7 +205,7 @@ const crumbs = [
       description: hero.subtitle || 'Full product line, marketing materials, dropshipping, and competitive margins',
       serviceType: 'Retail Partner Solutions',
       areaServed: ['Global'],
-      url: `/${lang}/solutions/retail-partners`,
+      url: withTrailingSlash(`/${lang}/solutions/retail-partners`),
       items: [
         { name: 'Full Product Line', description: 'Complete SUP range with wholesale pricing' },
         { name: 'Marketing Support', description: 'Branded materials, photography, and POS displays' },

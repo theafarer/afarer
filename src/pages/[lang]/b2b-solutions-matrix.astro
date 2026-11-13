@@ -10,6 +10,7 @@ import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/b2b-solutions-matrix.ts';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -23,11 +24,11 @@ const page = getPageContent(lang, 'b2b-solutions-matrix');
 const hero = page.hero ?? {};
 const solutions = page.solutions ?? {};
 const cta = page.cta ?? {};
-const lh = (h: string) => (h && !h.startsWith('/resources') ? `/${lang}${h}` : h);
+const lh = (h: string) => (h && !h.startsWith('/resources') ? withTrailingSlash(`/${lang}${h}`) : withTrailingSlash(h));
 const ctaActions = cta.actions?.map((a) => ({ ...a, href: lh(a.href) }));
 const localizedItems = solutions.items?.map((item) => ({
   ...item,
-  link: item.link ? `/${lang}${item.link}` : item.link,
+  link: item.link ? `/${lang}${item.link}/` : item.link,
 }));
 
 const metadata = {
@@ -108,7 +109,7 @@ const crumbs = [
     itemList={{
       name: 'B2B Client Solutions Matrix',
       description: '24 Afarer B2B solutions matched to customer types',
-      url: `/${lang}/b2b-solutions-matrix`,
+      url: withTrailingSlash(`/${lang}/b2b-solutions-matrix`),
       numberOfItems: localizedItems?.length || 24,
       itemListElement: localizedItems?.map((item, idx) => ({
         '@type': 'ListItem',

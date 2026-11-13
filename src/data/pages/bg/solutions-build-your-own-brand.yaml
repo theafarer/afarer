@@ -108,8 +108,8 @@ cta:
   subtitle: 'Започнете пътя на вашата марка или изтеглете нашия OEM наръчник.'
   actions:
     - text: 'Започнете пътя на вашата марка'
-      href: '/contact?package=oem'
+      href: '/contact/?package=oem'
       variant: 'primary'
     - text: 'Изтеглете OEM наръчника'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

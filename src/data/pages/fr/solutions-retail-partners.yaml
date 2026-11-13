@@ -69,15 +69,15 @@ catalog:
     - name: Catalogue Produits 2026
       desc: Gamme complète avec spécifications, prix et informations de commande
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Guide du partenaire
       desc: Calculateur de marge, conseils merchandising et bonnes pratiques
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Pack marketing
       desc: Photos produits haute résolution, images lifestyle et matériel PLV
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Support Partenaire Détail
   subtitle: Tout ce dont vous avez besoin pour vendre en confiance.
@@ -95,8 +95,8 @@ cta:
   subtitle: Postulez pour un partenariat ou téléchargez notre catalogue de vente.
   actions:
     - text: Postuler comme Partenaire
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Télécharger le Catalogue Retail
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

@@ -13,6 +13,7 @@ import type { MetaData, Post } from '~/types';
 import RelatedPosts from '~/components/blog/RelatedPosts.astro';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export const prerender = true;
 
@@ -36,7 +37,7 @@ const { post: enPost } = Astro.props;
 const localizedPosts = await fetchPostsForLang(lang);
 const post: Post = localizedPosts.find((p) => p.slug === enPost.slug) || enPost;
 
-const url = getCanonical(`/${lang}${getPermalink(post.permalink, 'post')}`);
+const url = getCanonical(withTrailingSlash(`/${lang}${getPermalink(post.permalink, 'post')}`));
 const image = (await findImage(post.image)) as ImageMetadata | string | undefined;
 
 const pubDate = post.publishDate;
@@ -79,7 +80,7 @@ const metadata = merge(
   metadata={metadata}
   breadcrumbs={[
     { name: t('nav.home'), href: `/${lang}/` },
-    { name: t('nav.news'), href: `/${lang}/news` },
+    { name: t('nav.news'), href: withTrailingSlash(`/${lang}/news`) },
     { name: post.title },
   ]}
 >

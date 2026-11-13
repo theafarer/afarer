@@ -113,8 +113,8 @@ cta:
   subtitle: 'Получете оферта за вашата клубна флотилия или изтеглете нашия стартов наръчник за клубове.'
   actions:
     - text: 'Кандидатствайте за клубна флотилия'
-      href: '/contact?package=club'
+      href: '/contact/?package=club'
       variant: 'primary'
     - text: 'Изтеглете наръчника за клубове'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

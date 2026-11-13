@@ -6,6 +6,7 @@ import JsonLd from '~/components/common/JsonLd.astro';
 import { SITE } from 'astrowind:config';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -123,7 +124,7 @@ const researchAreas = [
     type="BreadcrumbList"
     breadcrumbs={[
       { name: t('nav.home'), href: `/${lang}/` },
-      { name: t('nav.about'), href: `/${lang}/about` },
+      { name: t('nav.about'), href: withTrailingSlash(`/${lang}/about`) },
       { name: t('engineeringTeam.heading') || 'Engineering Team' },
     ]}
   />
@@ -228,12 +229,12 @@ const researchAreas = [
     </p>
     <div class="mt-10 flex justify-center gap-4">
       <a
-        href={`/${lang}/contact`}
+        href={withTrailingSlash(`/${lang}/contact`)}
         class="px-10 py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full font-semibold hover:bg-gray-800 dark:hover:bg-gray-100 transition"
         >{t('engineeringTeam.cta') || 'Contact Us'}</a
       >
       <a
-        href={`/${lang}/about/afarer`}
+        href={withTrailingSlash(`/${lang}/about/afarer`)}
         class="px-10 py-4 border-2 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-full font-semibold hover:border-gray-400 transition"
         >{t('engineeringTeam.about') || 'About Afarer'}</a
       >

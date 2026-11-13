@@ -8,6 +8,7 @@ import { languages } from '~/i18n/config';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/randdcenter.ts';
 import __pageSlugData from '~/i18n/generated/pages/hydrodynamic-test-tank.ts';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -22,7 +23,7 @@ const randd = getPageContent(lang, 'randdcenter');
 
 const crumbs = [
   { name: page.home_label || 'Home', href: `/${lang}/` },
-  { name: randd.hero?.tagline || 'R&D Center', href: `/${lang}/randdcenter` },
+  { name: randd.hero?.tagline || 'R&D Center', href: withTrailingSlash(`/${lang}/randdcenter`) },
   { name: page.hero?.title || 'Hydrodynamic Test Tank' },
 ];
 
@@ -34,7 +35,7 @@ const metadata = {
 
 <Layout metadata={metadata} breadcrumbs={crumbs}>
   <section class="px-6 sm:px-6 py-16 sm:py-20 mx-auto max-w-5xl">
-    <a href={`/${lang}/randdcenter`} class="text-sm text-gray-500 hover:underline"
+    <a href={withTrailingSlash(`/${lang}/randdcenter`)} class="text-sm text-gray-500 hover:underline"
       >&larr; {page.back_text || 'Back to R&D Center'}</a
     >
     <div class="mt-4 grid md:grid-cols-5 gap-10">
@@ -64,7 +65,7 @@ const metadata = {
       <h2 class="text-xl font-bold">{page.cta?.title}</h2>
       <p class="mt-2 text-sm text-muted">{page.cta?.subtitle}</p>
       <a
-        href={`/${lang}${page.cta?.button_link || '/contact'}`}
+        href={withTrailingSlash(`/${lang}${page.cta?.button_link || '/contact'}`)}
         class="mt-4 inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90"
         >{page.cta?.button_text}</a
       >

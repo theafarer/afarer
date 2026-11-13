@@ -47,8 +47,8 @@ cta:
   subtitle: 'Mohon program pengedar kami atau muat turun kit maklumat pengedar kami.'
   actions:
     - text: 'Mohon Program Pengedar'
-      href: '/contact?partner=distributor'
+      href: '/contact/?partner=distributor'
       variant: 'primary'
     - text: 'Muat Turun Kit Pengedar'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

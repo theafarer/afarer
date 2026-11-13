@@ -64,8 +64,8 @@ cta:
   subtitle: 'Saņemiet nomas cenas vai salīdziniet dēļu modeļus savai darbībai.'
   actions:
     - text: 'Saņemt nomas cenas'
-      href: '/contact?package=rental'
+      href: '/contact/?package=rental'
       variant: 'primary'
     - text: 'Salīdzināt dēļu modeļus'
-      href: '/compare'
+      href: '/compare/'
       variant: 'secondary'

@@ -8,6 +8,7 @@ import { getContentV2ForLang } from '~/i18n/localized-data';
 import type { ContentV2Record } from '~/data/content-v2';
 import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({
@@ -90,7 +91,7 @@ const grouped = groupBy(contentV2Records, (c) => c.category);
                   <span class="px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full capitalize">{c.difficulty}</span>
                 </div>
                 <a
-                  href={`/${lang}/v2/${c.slug}`}
+                  href={withTrailingSlash(`/${lang}/v2/${c.slug}`)}
                   class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-sky-600 hover:text-sky-700"
                 >
                   {t('v2.index.read')}

@@ -108,8 +108,8 @@ cta:
   subtitle: 'Sāciet savu zīmola ceļu vai lejupielādējiet mūsu OEM ceļvedi.'
   actions:
     - text: 'Sāciet savu zīmola ceļu'
-      href: '/contact?package=oem'
+      href: '/contact/?package=oem'
       variant: 'primary'
     - text: 'Lejupielādēt OEM ceļvedi'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

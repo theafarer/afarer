@@ -12,6 +12,7 @@ export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
 }
 import { getAllSocialPacks } from '~/lib/seo/social-engine';
+import { withTrailingSlash } from '~/i18n/routing';
 
 const { lang } = Astro.params;
 const t = (k: string) => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || '';
@@ -47,7 +48,9 @@ const recentGuides = getContentV2ForLang(lang)
         <span class="text-sm font-medium text-sky-600 tracking-wide uppercase">{latest.tagline || 'Latest'}</span>
         <h2 class="mt-2 text-3xl font-semibold text-gray-900">{latest.title || 'Guides & Comparisons'}</h2>
       </div>
-      <a href={`/${lang}/v2`} class="text-sm text-sky-600 hover:underline">{latest.browse_all || 'Browse all 20 →'}</a>
+      <a href={withTrailingSlash(`/${lang}/v2`)} class="text-sm text-sky-600 hover:underline"
+        >{latest.browse_all || 'Browse all 20 →'}</a
+      >
     </div>
     <div class="grid md:grid-cols-3 gap-8">
       {
@@ -55,7 +58,7 @@ const recentGuides = getContentV2ForLang(lang)
           const pack = socialPacks.find((p) => p.slug === guide.slug);
           return (
             <a
-              href={`/${lang}/v2/${guide.slug}`}
+              href={withTrailingSlash(`/${lang}/v2/${guide.slug}`)}
               class="group block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
             >
               <span class="text-xs font-semibold uppercase tracking-wider text-sky-600">
@@ -109,12 +112,12 @@ const recentGuides = getContentV2ForLang(lang)
       </p>
       <div class="mt-8 flex justify-center gap-4">
         <a
-          href="/internal/seo/social"
+          href="/internal/seo/social/"
           class="px-6 py-3 bg-gray-900 text-white rounded-xl font-semibold hover:bg-gray-800 transition"
           >{socialSection.pipeline_cta || 'Social Pipeline →'}</a
         >
         <a
-          href={`/${lang}/guides`}
+          href={withTrailingSlash(`/${lang}/guides`)}
           class="px-6 py-3 border border-gray-300 text-gray-700 rounded-xl font-semibold hover:border-gray-400 transition"
           >{socialSection.guides_cta || 'Browse Guides'}</a
         >

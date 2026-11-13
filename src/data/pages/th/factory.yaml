@@ -36,7 +36,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: ระยะเวลาการผลิต (Lead Time)
         value: 30–45 วัน
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: ดูรายละเอียดความจุทั้งหมด →
   - title: ห้องปฏิบัติการคุณภาพและการทดสอบ
     icon: Q
@@ -47,7 +47,7 @@ intelligence_cards:
         value: เครื่องทดสอบแรงดึง ห้องควบคุมอุณหภูมิ ถังทดสอบการรั่วซึม
       - label: มาตรฐาน
         value: ISO 9001, CE, AS 1799
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: ขั้นตอนและอุปกรณ์ในห้องปฏิบัติการ →
   - title: ขีดความสามารถด้าน OEM/ODM
     icon: O
@@ -58,7 +58,7 @@ intelligence_cards:
         value: ISO 9001, BSCI, CE, REACH
       - label: การจัดส่ง
         value: FOB, CIF, DDP จัดส่งไปยัง 50+ ประเทศ
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: บริการ OEM ครบวงจร →
 workshops_section:
   tagline: เวิร์กช็อป
@@ -86,7 +86,7 @@ equipment_section:
   tagline: อุปกรณ์
   title: อุปกรณ์การผลิตหลัก
   view_full: ดูรายการอุปกรณ์ทั้งหมด →
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: เครื่องตัด PVC อัตโนมัติ
       spec: ควบคุมด้วยเครื่อง CNC ความแม่นยำ 0.1 มม.
@@ -260,4 +260,4 @@ process_cta:
   title: ชมกระบวนการผลิตของเรา
   desc: ติดตาม SUP หนึ่งลำผ่านทุกขั้นตอนการผลิต ตั้งแต่วัตถุดิบจนถึงบอร์ดที่พร้อมออกสู่ทะเล
   label: ดูกระบวนการผลิต →
-  link: /factory/process
+  link: /factory/process/

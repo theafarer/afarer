@@ -64,15 +64,15 @@ catalog:
     - name: 2026 Product Catalog
       desc: Полный ассортимент с характеристиками, ценами и информацией о заказе
       icon: tabler:file-text
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Retail Partner Guide
       desc: Калькулятор маржи, советы по мерчендайзингу и лучшие практики
       icon: tabler:book
-      link: /resources/download-catalog
+      link: /resources/download-catalog/
     - name: Marketing Asset Pack
       desc: Фотографии продукта в высоком разрешении, изображения в стиле жизни и материалы для точек продаж
       icon: tabler:photo
-      link: /media
+      link: /media/
 support:
   title: Поддержка розничных партнеров
   subtitle: Всё, что нужно для уверенных продаж.
@@ -90,8 +90,8 @@ cta:
   subtitle: Подайте заявку на партнерство или скачайте наш розничный каталог, чтобы начать.
   actions:
     - text: Подать заявку на партнерство
-      href: /contact?partner=retail
+      href: /contact/?partner=retail
       variant: primary
     - text: Скачать розничный каталог
-      href: /resources/download-catalog
+      href: /resources/download-catalog/
       variant: secondary

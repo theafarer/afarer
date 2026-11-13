@@ -9,6 +9,7 @@ import { contentV2Records } from '~/data/content-v2';
 import { products } from '~/data/products';
 import { defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 const lang = Astro.locals.lang;
 
@@ -64,7 +65,7 @@ const categories = [...new Set(faqs.map((f) => f.category))];
                         const p = products.find((pp) => pp.id === pid);
                         return p ? (
                           <a
-                            href={`/${lang}/products/${pid}`}
+                            href={withTrailingSlash(`/${lang}/products/${pid}`)}
                             class="px-3 py-1 bg-amber-50 text-amber-700 rounded-full hover:bg-amber-100 transition-colors"
                           >
                             {p.name} →

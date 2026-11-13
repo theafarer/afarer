@@ -110,8 +110,8 @@ cta:
   subtitle: 'Получете оферта за вашия курортен пакет или изтеглете нашия пълен каталог за курорти.'
   actions:
     - text: 'Вземете пакет за курорт'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'Изтеглете каталога за курорти'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

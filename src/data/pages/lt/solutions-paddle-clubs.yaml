@@ -113,8 +113,8 @@ cta:
   subtitle: 'Gaukite savo klubo parko pasiūlymą arba atsisiųskite mūsų klubų pradžios vadovą.'
   actions:
     - text: 'Teikti paraišką dėl klubo parko'
-      href: '/contact?package=club'
+      href: '/contact/?package=club'
       variant: 'primary'
     - text: 'Atsisiųsti klubų vadovą'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

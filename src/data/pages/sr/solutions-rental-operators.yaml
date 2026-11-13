@@ -64,8 +64,8 @@ cta:
   subtitle: 'Затражите цене за изнајмљивање или упоредите моделе плоча за вашу операцију.'
   actions:
     - text: 'Затражите цене за изнајмљивање'
-      href: '/contact?package=rental'
+      href: '/contact/?package=rental'
       variant: 'primary'
     - text: 'Упоредите моделе плоча'
-      href: '/compare'
+      href: '/compare/'
       variant: 'secondary'

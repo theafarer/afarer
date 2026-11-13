@@ -1,6 +1,7 @@
 ---
 import { getLangFromUrl } from '~/i18n/utils';
 import { getUiForLang } from '~/i18n/generated/ui-all';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export interface Props {
   title?: string;
@@ -17,7 +18,7 @@ const t = (key: string) => getUiForLang(currentLocale)?.[key] || getUiForLang('e
 const popupTitle = title ?? t('exitIntent.title');
 const popupSubtitle = subtitle ?? t('exitIntent.subtitle');
 const popupButtonText = buttonText ?? t('exitIntent.button');
-const popupButtonHref = buttonHref ?? `/${currentLocale}/whitepaper/oem-sup-manufacturing-guide`;
+const popupButtonHref = buttonHref ?? withTrailingSlash(`/${currentLocale}/whitepaper/oem-sup-manufacturing-guide`);
 const bullets = [t('exitIntent.bullet1'), t('exitIntent.bullet2'), t('exitIntent.bullet3')].filter(Boolean);
 const dismissText = t('exitIntent.dismiss');
 const closeLabel = t('exitIntent.close') || 'Close';

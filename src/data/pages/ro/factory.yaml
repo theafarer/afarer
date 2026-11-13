@@ -38,7 +38,7 @@ intelligence_cards:
         value: 'SUP: 5–10'
       - label: Termen de livrare
         value: 30–45 zile
-    link: /factory/capacity
+    link: /factory/capacity/
     link_label: Detalii complete despre capacitate →
   - title: Laborator de calitate și testare
     icon: Q
@@ -49,7 +49,7 @@ intelligence_cards:
         value: Tester de tracțiune, cameră de temperatură, rezervor de testare a etanșeității
       - label: Standarde
         value: ISO 9001, CE, AS 1799
-    link: /factory/quality-lab
+    link: /factory/quality-lab/
     link_label: Proceduri și echipamente de laborator →
   - title: Capabilitate OEM/ODM
     icon: O
@@ -60,7 +60,7 @@ intelligence_cards:
         value: ISO 9001, BSCI, CE, REACH
       - label: Expediere
         value: FOB, CIF, DDP către peste 50 de țări
-    link: /factory/oem-capability
+    link: /factory/oem-capability/
     link_label: Servicii OEM complete →
 workshops_section:
   tagline: Ateliere
@@ -90,7 +90,7 @@ equipment_section:
   tagline: Echipamente
   title: Echipamente cheie de producție
   view_full: Vedeți lista completă de echipamente →
-  view_full_link: /factory/equipment
+  view_full_link: /factory/equipment/
   items:
     - name: Mașină automată de tăiat PVC
       spec: Control CNC, precizie de 0.1 mm
@@ -268,4 +268,4 @@ process_cta:
   title: Vedeți procesul nostru de producție
   desc: Urmăriți o placă SUP prin fiecare etapă a producției — de la materia primă până la placa gata de utilizare pe mare.
   label: Vedeți procesul de producție →
-  link: /factory/process
+  link: /factory/process/

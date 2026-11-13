@@ -113,8 +113,8 @@ cta:
   subtitle: 'Získajte ponuku na klubovú flotilu alebo stiahnite náš sprievodcu pre začínajúce kluby.'
   actions:
     - text: 'Žiadať o klubovú flotilu'
-      href: '/contact?package=club'
+      href: '/contact/?package=club'
       variant: 'primary'
     - text: 'Stiahnuť sprievodcu pre kluby'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

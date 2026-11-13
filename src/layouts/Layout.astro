@@ -28,6 +28,7 @@ import { getSeoSettings } from '~/utils/seo-settings';
 import langData from '~/data/site/languages.yaml';
 import { defaultLang, setLang } from '~/i18n/config';
 import { getLangFromUrl, removeLang, localizePath } from '~/i18n/utils';
+import { localizeHref } from '~/i18n/routing';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 // Static route manifest from the previous build (scripts/_gen-route-manifest.cjs);
 // used to emit hreflang alternates only for languages where the page exists.
@@ -72,6 +73,16 @@ if (!availableRoutes.has(xDefaultTarget)) {
 // Populate the generated per-language UI strings (small per-language modules,
 // statically imported in src/i18n/generated/ui-all.ts) for all components.
 setLang(currentLang);
+
+// Emit hreflang URLs in the live 200 (directory) form: the route manifest is
+// slashless, so re-append the trailing slash after the membership check. The
+// EN homepage is served at the site root ("/en" and "/en/" 308 to "/"), so
+// its alternate URL is the bare site root.
+const defaultLangRoot = `/${defaultLang}`;
+const hreflangUrl = (target: string): string => {
+  if (target === defaultLangRoot) return `${siteUrlTrimmed}/`;
+  return `${siteUrlTrimmed}${target}/`;
+};
 const textDirection = language === 'ar' || language === 'he' ? 'rtl' : defaultTextDir || 'ltr';
 const mobileUi = getUiForLang(currentLang);
 const mobileT = (key: string, fallback: string): string => mobileUi?.[key] || fallback;
@@ -90,10 +101,10 @@ const mobileT = (key: string, fallback: string): string => mobileUi?.[key] || fa
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
     <link rel="preconnect" href="https://assets.afarer.com" crossorigin />
 
-    {hreflangAlternates.map((a) => <link rel="alternate" hreflang={a.locale} href={`${siteUrlTrimmed}${a.target}`} />)}
+    {hreflangAlternates.map((a) => <link rel="alternate" hreflang={a.locale} href={hreflangUrl(a.target)} />)}
     {
       availableRoutes.has(xDefaultTarget) && (
-        <link rel="alternate" hreflang="x-default" href={`${siteUrlTrimmed}${xDefaultTarget}`} />
+        <link rel="alternate" hreflang="x-default" href={hreflangUrl(xDefaultTarget)} />
       )
     }
 
@@ -197,12 +208,12 @@ const mobileT = (key: string, fallback: string): string => mobileUi?.[key] || fa
         )
       }
       <a
-        href={localizePath('/contact', currentLang)}
+        href={localizeHref('/contact', currentLang)}
         class="flex-1 text-center px-4 py-2.5 bg-sky-600 hover:bg-sky-700 text-white font-semibold rounded-xl text-sm transition-colors"
         >{mobileT('cta.quote', 'Get a Quote')}</a
       >
       <a
-        href={localizePath('/oem-odm-manufacturer', currentLang)}
+        href={localizeHref('/oem-odm-manufacturer', currentLang)}
         class="flex-1 text-center px-4 py-2.5 bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 text-gray-900 dark:text-white font-semibold rounded-xl text-sm transition-colors"
         >{mobileT('cta.oemInfo', 'OEM Info')}</a
       >

@@ -110,8 +110,8 @@ cta:
   subtitle: 'Dapatkan penawaran paket resor Anda atau unduh katalog resor lengkap kami.'
   actions:
     - text: 'Dapatkan Paket Resor'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'Unduh Katalog Resor'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

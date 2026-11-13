@@ -110,8 +110,8 @@ cta:
   subtitle: 'Saņemiet savas kūrorta paketes piedāvājumu vai lejupielādējiet mūsu pilno kūrortu katalogu.'
   actions:
     - text: 'Iegādāties kūrorta paketi'
-      href: '/contact?package=resort'
+      href: '/contact/?package=resort'
       variant: 'primary'
     - text: 'Lejupielādēt kūrortu katalogu'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

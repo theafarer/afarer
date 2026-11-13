@@ -147,6 +147,15 @@ export default defineConfig({
         if (!isLocale && !ROOT_SERVED_PATHS.some((p) => matchesPath(route, p))) return false;
         return true;
       },
+      // The EN homepage is served at the site root ("/en" and "/en/" 308 to "/");
+      // list the 200 URL in the sitemap, not the redirecting one.
+      serialize: (item) => {
+        const { pathname, origin } = new URL(item.url);
+        if (pathname === '/en' || pathname === '/en/') {
+          return { ...item, url: `${origin}/` };
+        }
+        return item;
+      },
     }),
     mdx(),
 

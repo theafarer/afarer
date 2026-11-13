@@ -6,6 +6,7 @@ import { languages, defaultLang } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/academy.ts';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -60,7 +61,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: t('academy.title') 
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {sec.guides.map((g) => (
                 <a
-                  href={`/${lang}${g.href}`}
+                  href={withTrailingSlash(`/${lang}${g.href}`)}
                   class="group block bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-sky-200 transition-all hover:-translate-y-0.5"
                 >
                   <h4 class="font-semibold text-gray-900 group-hover:text-sky-600 transition-colors text-sm">
@@ -119,7 +120,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: t('academy.title') 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {cat.guides.map((g) => (
             <a
-              href={`/${lang}/v2/${g.slug}`}
+              href={withTrailingSlash(`/${lang}/v2/${g.slug}`)}
               class="group block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5"
             >
               <h3 class="font-semibold text-gray-900 group-hover:text-sky-600 transition-colors">{g.title}</h3>
@@ -139,7 +140,7 @@ const crumbs = [{ name: 'Home', href: `/${lang}/` }, { name: t('academy.title') 
       <h2 class="text-xl font-bold">{cta.title}</h2>
       <p class="mt-2 text-sm text-muted">{cta.desc}</p>
       <a
-        href={`/${lang}${cta.link}`}
+        href={withTrailingSlash(`/${lang}${cta.link}`)}
         class="mt-4 inline-block px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90"
       >
         {cta.label}

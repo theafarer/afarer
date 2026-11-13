@@ -9,6 +9,7 @@ import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/afarer-story.ts';
 import { landingI18n as __landing } from '~/i18n/generated/landing/afarer-story';
+import { withTrailingSlash } from '~/i18n/routing';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({ params: { lang } }));
@@ -38,7 +39,7 @@ const metadata = {
   description: hero.subtitle || '',
   ignoreTitleTemplate: true,
 };
-const lh = (h: string) => (h ? `/${lang}${h}` : h);
+const lh = (h: string) => (h ? withTrailingSlash(`/${lang}${h}`) : h);
 const ctaActions = cta.actions?.map((a: any) => ({ ...a, href: lh(a.href) }));
 const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.afarerStory') }];
 const statsData = stats.stats || [];

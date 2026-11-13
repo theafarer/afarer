@@ -108,8 +108,8 @@ cta:
   subtitle: 'Pradėkite savo prekės ženklo kelionę arba atsisiųskite mūsų OEM vadovą.'
   actions:
     - text: 'Pradėkite savo prekės ženklo kelionę'
-      href: '/contact?package=oem'
+      href: '/contact/?package=oem'
       variant: 'primary'
     - text: 'Atsisiųsti OEM vadovą'
-      href: '/resources/download-catalog'
+      href: '/resources/download-catalog/'
       variant: 'secondary'

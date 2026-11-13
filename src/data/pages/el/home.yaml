@@ -21,13 +21,13 @@ hero:
   actions:
     - variant: primary
       text: Δείτε προϊόντα
-      href: /products
+      href: /products/
       icon: tabler:shopping-bag
     - text: Μάθετε περισσότερα
-      href: '/afarer-story'
+      href: '/afarer-story/'
       icon: tabler:file-text
     - text: Εξερευνήστε Λύσεις SUP
-      href: /solutions
+      href: /solutions/
       icon: tabler:building
   image:
     src: ~/assets/images/hero-image.webp
@@ -42,25 +42,25 @@ who_we_serve:
       description: Ανθεκτικοί στόλοι SUP, τιμές για συλλόγους και προγράμματα ανταλλακτικών για λέσχες και σχολές SUP.
       icon: tabler:users
       cta: Ανακαλύψτε λύσεις για Paddle Clubs
-      link: /solutions/paddle-clubs
+      link: /solutions/paddle-clubs/
     - title: Θέρετρα & Ξενοδοχεία
       keywords: θαλάσσιες δραστηριότητες θέρετρων, εξοπλισμός ξενοδοχειακών παραλιών, εμπειρία επισκεπτών
       description: Πλήρη προγράμματα στόλου SUP με προσαρμοσμένη μάρκα, εκπαίδευση προσωπικού και πακέτα βελτιστοποιημένα για ROI.
       icon: tabler:building
       cta: Δημιουργήστε τη Θαλάσσια Εμπειρία του Θέρετρού Σας
-      link: /solutions/resorts-hotels
+      link: /solutions/resorts-hotels/
     - title: Πάροχοι Λιανικής Πώλησης
       keywords: Χονδρική SUP, λιανικοί έμποροι εξωτερικού χώρου, καταστήματα αθλητικών ειδών
       description: Πλήρης σειρά προϊόντων, διαφημιστικό υλικό, επιλογές dropshipping και ανταγωνιστικά περιθώρια χονδρικής.
       icon: tabler:shopping-cart
       cta: Γίνετε Συνεργάτης Λιανικής
-      link: /solutions/retail-partners
+      link: /solutions/retail-partners/
     - title: Διανομείς Χωρών & Συνεργάτες Co-Brand
       keywords: διανομέας SUP ανά χώρα, co-branded SUP, SUP ιδιωτικής ετικέτας
       description: Αποκλειστική διανομή ανά χώρα και περιορισμένες co-branded συλλογές για επαγγελματίες του θαλάσσιου αθλητισμού.
       icon: tabler:package
       cta: Γίνετε Συνεργάτης
-      link: /distributor-program
+      link: /distributor-program/
 proof_points:
   title: Δοκιμασμένο πέρα από το showroom
   subtitle: Σχεδιασμός, απόδοση και ποιότητα που μπορείτε να επαληθεύσετε — στο νερό και στους αριθμούς.
@@ -115,7 +115,7 @@ oem_section:
       title: Παγκόσμια Παράδοση
       desc: Logistics FOB Qingdao, CIF σε μεγάλα λιμάνια, πόρτα-πόρτα.
   cta: Εξερευνήστε το Co-Branding
-  cta_link: /co-brand
+  cta_link: /co-brand/
 cta:
   title: |
     Έτοιμος να διαμορφώσετε <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">την επόμενη σανίδα σας</span>;
@@ -123,10 +123,10 @@ cta:
   actions:
     - variant: primary
       text: Ζητήστε τιμή
-      href: /contact
+      href: /contact/
       icon: tabler:message-circle
     - text: Περιηγηθείτε στον κατάλογο
-      href: /products
+      href: /products/
 distributor:
   tagline: 'Αποκλειστικοί Διανομείς Χώρας'
   title: 'Μία Χώρα. Ένας Επίσημος Διανομέας afarer.'
@@ -143,11 +143,11 @@ distributor:
   actions:
     - variant: primary
       text: 'Γίνετε Διανομέας'
-      href: /distributor-program
+      href: /distributor-program/
     - text: 'Ζητήστε Τιμοκατάλογο Αντιπροσώπου'
-      href: /contact?subject=Dealer Price List
+      href: /contact/?subject=Dealer Price List
     - text: 'Υποβάλετε Αίτηση Συνεργασίας Χώρας'
-      href: /contact?subject=Country Partnership Application
+      href: /contact/?subject=Country Partnership Application
     - text: 'Κατεβάστε το Πρόγραμμα Διανομέων'
-      href: /distributor-program
+      href: /distributor-program/
   note: 'Παραγγελίες δειγμάτων 5–10 μονάδων. Δοκιμαστικές παραγγελίες 10–30. Εξουσιοδοτημένος αντιπρόσωπος 30–50. Διανομέας Χώρας/Περιφέρειας 100–300+.'
