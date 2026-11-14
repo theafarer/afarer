@@ -132,6 +132,9 @@ const summary: Record<string, string> = {
 function generateLlmsTxt() {
   for (const lang of allLangs) {
     const { guides, useCases, comparisons } = generateAll(lang);
+    const base = readSiteUrl();
+    const langBase = lang === 'en' ? base : `${base}/${lang}`;
+    const link = (t: string, s: string) => `- [${t}](${langBase}/${s})`;
 
     const lines = [
       `# ${siteName[lang] || 'afarer'} Knowledge Graph`,
@@ -151,10 +154,10 @@ function generateLlmsTxt() {
       ...guides.map((g) => `- ${g.title}`),
       '',
       '## Use Cases',
-      ...useCases.map((u) => `- ${u.title}`),
+      ...useCases.map((u) => link(u.title, `use-cases/${u.slug}`)),
       '',
       '## Comparisons',
-      ...comparisons.map((c) => `- ${c.title}`),
+      ...comparisons.map((c) => link(c.title, `compare/${c.slug}`)),
       '',
       '## Relations',
       ...relations.map((r) => {
@@ -174,7 +177,6 @@ function generateLlmsTxt() {
     let content = lines.join('\n');
 
     if (lang === 'en') {
-      const base = readSiteUrl();
       const sectionLines = SITE_SECTIONS.map((s) => `- [${s.label}](${base}${s.path})`);
       content += '\n## Site Sections\n' + sectionLines.join('\n') + '\n\n';
       fs.writeFileSync(path.join(publicDir, 'llms.txt'), content, 'utf-8');

@@ -71,26 +71,6 @@ export const SITE_SECTIONS: SiteSection[] = [
     sitemap: { entity: 'safety-water-sports', type: 'guide', priority: '0.7' },
   },
   {
-    label: 'afarer AI Brand Profile',
-    path: '/llms/brand/afarer',
-    sitemap: { entity: 'llms-brand', type: 'reference', priority: '0.3' },
-  },
-  {
-    label: 'SUP Types AI Reference',
-    path: '/llms/compare/sup-types',
-    sitemap: { entity: 'llms-compare', type: 'reference', priority: '0.3' },
-  },
-  {
-    label: 'Drop-Stitch Technology AI Reference',
-    path: '/llms/technology/drop-stitch',
-    sitemap: { entity: 'llms-tech-drop-stitch', type: 'reference', priority: '0.3' },
-  },
-  {
-    label: 'Inflatable Industry AI Reference',
-    path: '/llms/industry/inflatable-water-sports',
-    sitemap: { entity: 'llms-industry', type: 'reference', priority: '0.3' },
-  },
-  {
     label: 'Solutions by Industry',
     path: '/solutions/by-industry',
     sitemap: { entity: 'solutions-industry', type: 'service', priority: '0.6' },
