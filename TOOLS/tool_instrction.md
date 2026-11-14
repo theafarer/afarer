@@ -1566,6 +1566,8 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 119.  **nodes.ts slug 审计二件套——slug 映射枚举器 + dist needle 上下文分类(chore de445edf,2026-11-14)**:归档 TOOLS/i18n-merge/slug-audit-185/。_(a) audit_all_slugs.cjs_:按缩进结构解析 nodes.ts 全部节点块(4 空格 id 行起、4 空格闭合行止),枚举每节点 slug 条目并分"标准(值===node.id)"与"非标准"两组——一次跑出 18 节点全景,直接定位 184 之外的 6 个惰性双命名节点及其 6 legacy locale 规律(fr/de/es/pt/it/pl 同批)。_(b) scan_legacy_slugs.cjs_:dist 全量(12,460 文件 html/xml/txt/json/js/css)needle 子串扫描,按 needle 分组计数+URL 形态分类(href=/<loc>/llms 等上下文判 URLish)——48 处命中全为 ai-intent meta 与新闻标题的英文文本,**needle 命中≠URL 使用,必须看前后文形态再定性**;'accessories' 等泛词 needle 不扫(误报海量),仅扫唯一性强的复合 slug。方法论:惰性死数据清理的验证链与功能性修复相同——改前判惰性(路由/组件/sitemap/dist 四方查消费方)、改后 build 逐位对比(12,410 页不变即惰性再证实)、gates+CI 照走;GraphNode.slug 必填故不可整块删除,只能改值对齐 node.id。
 
+120.  **llms-full.txt 中间件感知校验器——URL 清单对 dist 全量有效性验证(fix 9ff04ccc,2026-11-14)**:归档 TOOLS/i18n-merge/llmsfull-route-filter-186/。_(a) validate_llmsfull.cjs_(v1,naive):提取 public/llms-full.txt 全部 https://afarer.com URL,直查 dist/<path>/index.html——对根路径大量误报:middleware(_middleware.ts)把非语言前缀 URL 重写为 /en/<path> 服务,/b2b-solutions-matrix/ 无 dist 根文件但 live 200。_(b) validate_llmsfull2.cjs_(v2,中间件感知):根 URL 双查 dist/<path> 与 dist/en/<path>;语言前缀 URL 直查 dist/<lang>/<path>;I18N_EXCLUDED 根独立页直查——v1 报 907 缺失,v2 修正为 896 真实 404(28 slug × 31 locale + 28 根)。方法论:**URL 清单校验必须模拟边缘层路由语义**(重写/排除表),否则误报淹没真问题;needle/文件名命中只证明"存在"不证明"可达",定性必须看消费方(路由/组件/sitemap/中间件四方查);llms-full.txt 的 URL 来自 YAML 文件名映射而非路由系统,生成产物引用非路由数据源时必须经真实路由清单(route-manifest)过滤。
+
 ---
 
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
