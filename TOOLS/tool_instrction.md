@@ -1564,6 +1564,8 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 118.  **use-cases legacy-locale slug 排查三件套——dist slug 矩阵 + sitemap 分类计数(fix 8d28e11b,2026-11-14)**:归档 TOOLS/i18n-merge/use-cases-legacy-184/。_(a) inspect_usecases.cjs_:枚举 nodes.ts use-case 节点的 slug 映射,定位 touring(fr/de/es/pt/it/pl→touring-distance-paddling)与 fishing(同 6→fishing-from-inflatable-craft)双命名来源。_(b) matrix_usecases.cjs_:dist 全 locale × 9 use-case slug 存在性矩阵(X/-),直观看 33 locale 差异——26 locale 标准集、6 legacy 缺 touring 多 2 陈旧;修复后复跑对照。_(c) sitemap_usecases.cjs_:sitemap-0.xml 中 use-cases URL 按 slug 分组计数+陈旧 URL 清单+touring 是否含 de。方法论:先矩阵定性(locale×slug 差异一目了然)再改 nodes.ts;redirect 存根仅生成 6 legacy locale(dist URL 集与"线上曾存在"精确对齐,不为 26 个从未有过该 URL 的 locale 制造新重定向页);getStaticPaths 内联数组(Astro 编译坑:frontmatter 局部 const 在 getStaticPaths chunk 不可见)。
 
+119.  **nodes.ts slug 审计二件套——slug 映射枚举器 + dist needle 上下文分类(chore de445edf,2026-11-14)**:归档 TOOLS/i18n-merge/slug-audit-185/。_(a) audit_all_slugs.cjs_:按缩进结构解析 nodes.ts 全部节点块(4 空格 id 行起、4 空格闭合行止),枚举每节点 slug 条目并分"标准(值===node.id)"与"非标准"两组——一次跑出 18 节点全景,直接定位 184 之外的 6 个惰性双命名节点及其 6 legacy locale 规律(fr/de/es/pt/it/pl 同批)。_(b) scan_legacy_slugs.cjs_:dist 全量(12,460 文件 html/xml/txt/json/js/css)needle 子串扫描,按 needle 分组计数+URL 形态分类(href=/<loc>/llms 等上下文判 URLish)——48 处命中全为 ai-intent meta 与新闻标题的英文文本,**needle 命中≠URL 使用,必须看前后文形态再定性**;'accessories' 等泛词 needle 不扫(误报海量),仅扫唯一性强的复合 slug。方法论:惰性死数据清理的验证链与功能性修复相同——改前判惰性(路由/组件/sitemap/dist 四方查消费方)、改后 build 逐位对比(12,410 页不变即惰性再证实)、gates+CI 照走;GraphNode.slug 必填故不可整块删除,只能改值对齐 node.id。
+
 ---
 
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
