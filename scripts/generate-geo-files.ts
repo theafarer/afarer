@@ -12,8 +12,27 @@ const LLMS_TXT = path.join(PUBLIC, 'llms.txt');
 const PAGES_DIR = path.join(ROOT, 'src', 'data', 'pages');
 const WELL_KNOWN_DIR = path.join(PUBLIC, '.well-known');
 const ENTITY_JSON = path.join(WELL_KNOWN_DIR, 'entity.json');
+// Committed two-pass manifest of the previous build's rendered routes
+// (no trailing slashes). Used to filter the Site Pages section so
+// llms-full.txt only lists URLs that actually resolve (see
+// scripts/_gen-route-manifest.cjs for the generation logic).
+const ROUTE_MANIFEST = path.join(ROOT, 'src', 'i18n', 'generated', 'route-manifest.json');
 
 const SITE_URL = 'https://afarer.com';
+
+function loadRenderedRoutes(): Set<string> {
+  try {
+    const arr = JSON.parse(fs.readFileSync(ROUTE_MANIFEST, 'utf8')) as unknown;
+    if (Array.isArray(arr) && arr.length > 0 && arr.every((p) => typeof p === 'string')) {
+      return new Set(arr as string[]);
+    }
+  } catch {
+    /* fall through */
+  }
+  return new Set();
+}
+
+const RENDERED_ROUTES = loadRenderedRoutes();
 
 const LANGUAGES: Record<string, string> = {
   en: 'English',
@@ -83,7 +102,12 @@ function extractPageTitle(content: string): string | null {
 function getPageUrls(): string[] {
   const urls: string[] = [];
   const seen = new Set<string>();
+  // Manifest paths carry no trailing slash; the middleware serves root
+  // (non-locale) URLs by rewriting to /en/<path>, so both forms count.
+  const isRendered = (noSlashPath: string): boolean =>
+    RENDERED_ROUTES.size === 0 || RENDERED_ROUTES.has(noSlashPath) || RENDERED_ROUTES.has(`/en${noSlashPath}`);
 
+  let skipped = 0;
   const entries = fs.readdirSync(PAGES_DIR);
   for (const entry of entries) {
     const entryPath = path.join(PAGES_DIR, entry);
@@ -94,6 +118,11 @@ function getPageUrls(): string[] {
       for (const lf of langFiles) {
         if (!lf.endsWith('.yaml')) continue;
         const name = lf.replace(/\.yaml$/, '');
+        if (RENDERED_ROUTES.size > 0 && !RENDERED_ROUTES.has(`/${lang}/${name}`)) {
+          // content-only YAML: consumed via getPageContent() but no route renders this URL
+          skipped++;
+          continue;
+        }
         const url = `${SITE_URL}/${lang}/${name}/`;
         if (seen.has(url)) continue;
         seen.add(url);
@@ -103,6 +132,10 @@ function getPageUrls(): string[] {
       }
     } else if (entry.endsWith('.yaml') && !entry.startsWith('_')) {
       const name = entry.replace(/\.yaml$/, '');
+      if (!isRendered(`/${name}`)) {
+        skipped++;
+        continue;
+      }
       const url = `${SITE_URL}/${name}/`;
       if (seen.has(url)) continue;
       seen.add(url);
@@ -113,6 +146,7 @@ function getPageUrls(): string[] {
   }
 
   urls.sort();
+  if (skipped > 0) console.log(`[geo]   ${skipped} content-only page files skipped (no rendered route)`);
   return urls;
 }
 
