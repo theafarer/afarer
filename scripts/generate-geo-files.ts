@@ -34,6 +34,41 @@ function loadRenderedRoutes(): Set<string> {
 
 const RENDERED_ROUTES = loadRenderedRoutes();
 
+// Flat data slugs (e.g. 'brand-team') back nested routes ('/[lang]/brand/team/')
+// whose URL the YAML filename cannot express. Derive the real URL by scanning
+// src/pages/** for the .astro files that import each slug's generated page-data
+// module (src/i18n/generated/pages/<slug>.ts) — the importing file's path IS
+// the route shape.
+const PAGES_SRC_DIR = path.join(ROOT, 'src', 'pages');
+
+function buildSlugTemplates(): Map<string, string[]> {
+  const map = new Map<string, string[]>();
+  const walk = (dir: string) => {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const p = path.join(dir, e.name);
+      if (e.isDirectory()) walk(p);
+      else if (e.name.endsWith('.astro')) {
+        const content = fs.readFileSync(p, 'utf8');
+        for (const m of content.matchAll(/generated\/pages\/([\w.-]+)\.ts/g)) {
+          let rel = path.relative(PAGES_SRC_DIR, p).replace(/\\/g, '/');
+          rel = rel.replace(/\.astro$/, '').replace(/\[lang\]/g, '{lang}');
+          if (rel.endsWith('/index')) rel = rel.slice(0, -'/index'.length);
+          else if (rel === 'index') rel = '';
+          // dynamic segments other than [lang] cannot be resolved from data
+          if (rel.includes('[')) continue;
+          const tmpl = '/' + rel;
+          if (!map.has(m[1])) map.set(m[1], []);
+          if (!map.get(m[1])!.includes(tmpl)) map.get(m[1])!.push(tmpl);
+        }
+      }
+    }
+  };
+  walk(PAGES_SRC_DIR);
+  return map;
+}
+
+const SLUG_TEMPLATES = buildSlugTemplates();
+
 const LANGUAGES: Record<string, string> = {
   en: 'English',
   fr: 'Français',
@@ -107,7 +142,36 @@ function getPageUrls(): string[] {
   const isRendered = (noSlashPath: string): boolean =>
     RENDERED_ROUTES.size === 0 || RENDERED_ROUTES.has(noSlashPath) || RENDERED_ROUTES.has(`/en${noSlashPath}`);
 
+  // Second chance for content-only slugs: resolve the real (usually nested)
+  // URL of the page that imports this slug's generated page-data module.
+  // lang === null -> root (EN) YAML; otherwise a locale YAML.
+  const resolveAliasUrl = (slug: string, lang: string | null): string | null => {
+    const tmpls = SLUG_TEMPLATES.get(slug);
+    if (!tmpls || tmpls.length === 0) return null;
+    const candidates: string[] = [];
+    if (lang === null) {
+      const rootTmpl = tmpls.find((t) => !t.includes('{lang}'));
+      if (rootTmpl) candidates.push(rootTmpl);
+      for (const t of tmpls) {
+        if (t.includes('{lang}')) candidates.push(t.replace(/^\/\{lang\}/, ''));
+      }
+    } else {
+      for (const t of tmpls) {
+        if (t.includes('{lang}')) candidates.push(t.replace(/\{lang\}/g, lang));
+      }
+    }
+    for (const c of candidates) {
+      const urlPath = c.endsWith('/') ? c : `${c}/`;
+      if (urlPath === '/' || urlPath === '/en/') continue; // homepage: not a Site Pages entry
+      if (lang === null ? isRendered(urlPath.slice(0, -1)) : RENDERED_ROUTES.has(urlPath.slice(0, -1))) {
+        return urlPath;
+      }
+    }
+    return null;
+  };
+
   let skipped = 0;
+  let aliased = 0;
   const entries = fs.readdirSync(PAGES_DIR);
   for (const entry of entries) {
     const entryPath = path.join(PAGES_DIR, entry);
@@ -118,12 +182,20 @@ function getPageUrls(): string[] {
       for (const lf of langFiles) {
         if (!lf.endsWith('.yaml')) continue;
         const name = lf.replace(/\.yaml$/, '');
-        if (RENDERED_ROUTES.size > 0 && !RENDERED_ROUTES.has(`/${lang}/${name}`)) {
-          // content-only YAML: consumed via getPageContent() but no route renders this URL
-          skipped++;
-          continue;
+        let urlPath: string;
+        if (RENDERED_ROUTES.has(`/${lang}/${name}`)) {
+          urlPath = `/${lang}/${name}/`;
+        } else {
+          const alias = resolveAliasUrl(name, lang);
+          if (!alias) {
+            // content-only YAML: consumed via getPageContent() but no route renders this URL
+            skipped++;
+            continue;
+          }
+          urlPath = alias;
+          aliased++;
         }
-        const url = `${SITE_URL}/${lang}/${name}/`;
+        const url = SITE_URL + urlPath;
         if (seen.has(url)) continue;
         seen.add(url);
         const content = fs.readFileSync(path.join(entryPath, lf), 'utf8');
@@ -132,11 +204,19 @@ function getPageUrls(): string[] {
       }
     } else if (entry.endsWith('.yaml') && !entry.startsWith('_')) {
       const name = entry.replace(/\.yaml$/, '');
-      if (!isRendered(`/${name}`)) {
-        skipped++;
-        continue;
+      let urlPath: string;
+      if (isRendered(`/${name}`)) {
+        urlPath = `/${name}/`;
+      } else {
+        const alias = resolveAliasUrl(name, null);
+        if (!alias) {
+          skipped++;
+          continue;
+        }
+        urlPath = alias;
+        aliased++;
       }
-      const url = `${SITE_URL}/${name}/`;
+      const url = SITE_URL + urlPath;
       if (seen.has(url)) continue;
       seen.add(url);
       const content = fs.readFileSync(entryPath, 'utf8');
@@ -147,6 +227,7 @@ function getPageUrls(): string[] {
 
   urls.sort();
   if (skipped > 0) console.log(`[geo]   ${skipped} content-only page files skipped (no rendered route)`);
+  if (aliased > 0) console.log(`[geo]   ${aliased} flat slugs resolved to their nested route URLs`);
   return urls;
 }
 
