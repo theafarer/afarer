@@ -1568,6 +1568,8 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
 
 120.  **llms-full.txt 中间件感知校验器——URL 清单对 dist 全量有效性验证(fix 9ff04ccc,2026-11-14)**:归档 TOOLS/i18n-merge/llmsfull-route-filter-186/。_(a) validate_llmsfull.cjs_(v1,naive):提取 public/llms-full.txt 全部 https://afarer.com URL,直查 dist/<path>/index.html——对根路径大量误报:middleware(_middleware.ts)把非语言前缀 URL 重写为 /en/<path> 服务,/b2b-solutions-matrix/ 无 dist 根文件但 live 200。_(b) validate_llmsfull2.cjs_(v2,中间件感知):根 URL 双查 dist/<path> 与 dist/en/<path>;语言前缀 URL 直查 dist/<lang>/<path>;I18N_EXCLUDED 根独立页直查——v1 报 907 缺失,v2 修正为 896 真实 404(28 slug × 31 locale + 28 根)。方法论:**URL 清单校验必须模拟边缘层路由语义**(重写/排除表),否则误报淹没真问题;needle/文件名命中只证明"存在"不证明"可达",定性必须看消费方(路由/组件/sitemap/中间件四方查);llms-full.txt 的 URL 来自 YAML 文件名映射而非路由系统,生成产物引用非路由数据源时必须经真实路由清单(route-manifest)过滤。
 
+121.  **孤儿 slug 消费方审计器——getPageContent/import 双探针定位真实承载页(feat 29732837,2026-11-14)**:归档 TOOLS/i18n-merge/llmsfull-alias-187/。audit_orphan_consumers.cjs:对 28 个 content-only slug 各以双探针扫 src/pages+components+layouts——(a) `getPageContent\([^)]*'<slug>'` 调用点、(b) `generated/pages/<slug>\.ts` 模块 import 点——输出"slug → 消费文件"全景,证实全部 28 个有真实承载页(扁平 YAML 名 → 嵌套路由文件),仅 resources 是 getStaticPaths 空数组真桩。方法论:**"孤儿"定性必须先查消费方再删数据**——文件名≠URL 的数据源(src/data/pages)里,slug 是内容键而非路由键,真实路由在消费文件的路径里;生成器侧的通用解法=扫 import 反推路由模板(buildSlugTemplates),改名的路由(ce-certification-guide)自然命中,无需人工映射表;alias 解析必须再过 route-manifest 验证,防止消费文件本身是渲染 0 页的桩(resources 陷阱)。
+
 ---
 
 1. **PowerShell 中文乱码问题：** 在中文 Windows（codepage 936）下，`Get-Content`/`Set-Content` 默认 GBK/ANSI；读写 UTF-8 翻译文件必须显式 `-Encoding UTF8`。Node 脚本读取/写入一律用 `utf8`（本项目所有 JS/JSON/YAML 均为 UTF-8 无 BOM）。
