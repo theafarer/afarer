@@ -1,61 +1,86 @@
 User-agent: GPTBot
 Allow: /
 Disallow: /keystatic/
+Disallow: /admin/
+Disallow: /login/
 Disallow: /internal/
 Disallow: /api/
+Disallow: /geo-report/
 
 User-agent: ChatGPT-User
 Allow: /
 Disallow: /keystatic/
+Disallow: /admin/
+Disallow: /login/
 Disallow: /internal/
 Disallow: /api/
+Disallow: /geo-report/
 
 User-agent: OAI-Searchbot
 Allow: /
 Disallow: /keystatic/
+Disallow: /admin/
+Disallow: /login/
 Disallow: /internal/
 Disallow: /api/
+Disallow: /geo-report/
 
 User-agent: ClaudeBot
 Allow: /
 Disallow: /keystatic/
+Disallow: /admin/
+Disallow: /login/
 Disallow: /internal/
 Disallow: /api/
+Disallow: /geo-report/
 
 User-agent: PerplexityBot
 Allow: /
 Disallow: /keystatic/
+Disallow: /admin/
+Disallow: /login/
 Disallow: /internal/
 Disallow: /api/
+Disallow: /geo-report/
 
 User-agent: Google-Extended
 Allow: /
 Disallow: /keystatic/
+Disallow: /admin/
+Disallow: /login/
 Disallow: /internal/
 Disallow: /api/
+Disallow: /geo-report/
 
 User-agent: Applebot-Extended
 Allow: /
 Disallow: /keystatic/
+Disallow: /admin/
+Disallow: /login/
 Disallow: /internal/
 Disallow: /api/
+Disallow: /geo-report/
 
 User-agent: anthropic-ai
 Allow: /
 Disallow: /keystatic/
+Disallow: /admin/
+Disallow: /login/
 Disallow: /internal/
 Disallow: /api/
+Disallow: /geo-report/
 
 User-agent: *
 Allow: /
 Disallow: /keystatic/
 Disallow: /admin/
+Disallow: /login/
 Disallow: /internal/
 Disallow: /api/
-Disallow: /login/
-
-Sitemap: https://afarer.com/sitemap-entity.xml
+Disallow: /geo-report/
 
 # LLM training resources
 LLM-TXT: https://afarer.com/llms.txt
 LLM-FULL: https://afarer.com/llms-full.txt
+
+Sitemap: https://afarer.com/sitemap-index.xml

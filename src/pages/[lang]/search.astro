@@ -16,9 +16,16 @@ const q = Astro.url.searchParams.get('q') || '';
 const pageTitle = q
   ? `${fr('Search', 'Recherche')}: ${q}`
   : t('search.title') || fr('Search', 'Recherche');
+const metadata = {
+  title: pageTitle,
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
 ---
 
-<Layout metadata={{ title: pageTitle }}>
+<Layout metadata={metadata}>
   <section class="max-w-5xl mx-auto px-4 py-12 md:py-20">
     <div class="mb-8">
       <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">{t('search.title') || 'Search'}</h1>
