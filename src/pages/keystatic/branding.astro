@@ -22,8 +22,8 @@ let data: Record<string, any> = {
   logo_image: '',
   logo_alt: 'afarer logo',
   copyright: '© {year} afarer · All rights reserved.',
-  phone: '+86 13305324192',
-  address: 'Economic Development Zone, Laixi, Qingdao, China, 266600',
+  phone: '+1 279 732 3333',
+  address: '1209 Mountain Road PL NE STE N, Albuquerque, NM 87110, USA',
   email: 'info@afarer.com',
   whatsapp_number: '',
   whatsapp_default_message: 'Hello, I would like to inquire about your products.',
@@ -196,7 +196,7 @@ const year = new Date().getFullYear();
           type="text"
           name="phone"
           value={data.phone ?? ''}
-          placeholder="+86 13305324192"
+          placeholder="+1 279 732 3333"
           class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-900 text-sm font-mono"
         />
         <p class="mt-1 text-xs text-gray-500">Displayed in footer and contact page. Does not affect JSON-LD schema →</p>
@@ -207,7 +207,7 @@ const year = new Date().getFullYear();
           type="text"
           name="address"
           value={data.address ?? ''}
-          placeholder="Economic Development Zone, Laixi, Qingdao, China, 266600"
+          placeholder="1209 Mountain Road PL NE STE N, Albuquerque, NM 87110, USA"
           class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-900 text-sm font-mono"
         />
       </div>

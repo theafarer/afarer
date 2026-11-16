@@ -32,7 +32,7 @@ export const entityGraph: EntityNode[] = [
   {
     id: 'aquafarer-llc',
     type: 'brand',
-    name: 'Aquafarer LLC (USA)',
+    name: 'Aquafarer LLC',
     description: 'Global operating company of afarer, headquartered in the United States.',
     relationships: [{ type: 'child', targetId: 'afarer' }],
   },

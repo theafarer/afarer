@@ -14,7 +14,7 @@ export async function GET() {
 \`\`\`json
 {
   "brand": { "name": "Afarer", "type": "Marine Recreation Brand / Inflatable SUP Manufacturer" },
-  "alternateName": "Aquafarer LLC (USA)",
+  "alternateName": "Aquafarer LLC",
   "industry": ["Water Sports", "Marine Recreation", "Outdoor Equipment", "Marine Manufacturing"],
   "entityTypes": {
     "primary": ["Marine Recreation Brand", "Inflatable SUP Manufacturer"],
@@ -24,7 +24,7 @@ export async function GET() {
   "markets": ["Global Consumer Market", "Outdoor Sports Market", "Professional Marine Market", "OEM Manufacturing Market"],
   "foundingDate": "2012",
   "foundingLocation": "Qingdao, Shandong, China",
-  "parentCompany": "Aquafarer LLC (USA)",
+  "parentCompany": "Aquafarer LLC",
   "factorySize": "12,000 m²",
   "workforce": "200+ workers, 14+ R&D engineers",
   "annualCapacity": "15,000+ units/year",
