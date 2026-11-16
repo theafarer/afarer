@@ -61,6 +61,7 @@ jobs:
         run: npm run build
         env:
           NODE_OPTIONS: --max-old-space-size=12288
+          PUBLIC_TURNSTILE_SITEKEY: ${{ secrets.PUBLIC_TURNSTILE_SITEKEY }}
       - if: steps.guard.outputs.enabled == 'true'
         run: npm run check:bundle
       - if: steps.guard.outputs.enabled == 'true'
@@ -99,11 +100,17 @@ jobs:
           else
             echo 'SKIP: CONTACT_FROM_EMAIL not set in repo secrets'
           fi
+          if [ -n "$CONTACT_TURNSTILE_SECRET" ]; then
+            printf '%s' "$CONTACT_TURNSTILE_SECRET" | npx wrangler secret put TURNSTILE_SECRET -c workers/contact-worker/wrangler.toml
+          else
+            echo 'SKIP: CONTACT_TURNSTILE_SECRET not set in repo secrets'
+          fi
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CONTACT_RESEND_API_KEY: ${{ secrets.CONTACT_RESEND_API_KEY }}
           CONTACT_FROM_EMAIL: ${{ secrets.CONTACT_FROM_EMAIL }}
+          CONTACT_TURNSTILE_SECRET: ${{ secrets.CONTACT_TURNSTILE_SECRET }}
       - if: steps.guard.outputs.enabled == 'true'
         name: Audit contact worker secrets (names only)
         run: npx wrangler secret list -c workers/contact-worker/wrangler.toml || true

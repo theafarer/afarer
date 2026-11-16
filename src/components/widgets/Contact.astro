@@ -4,6 +4,7 @@
 import Headline from '~/components/ui/Headline.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Button from '~/components/ui/Button.astro';
+import Turnstile from '~/components/widgets/Turnstile.astro';
 import { getLangFromUrl } from '~/i18n/utils';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 
@@ -463,6 +464,8 @@ const rows = Object.keys(grouped)
         )
       }
 
+      <Turnstile class="my-4" />
+
       {
         steps.length < 2 && (
           <div class="pt-2">
@@ -653,6 +656,7 @@ const rows = Object.keys(grouped)
           const result = await res.json().catch(() => ({}));
           if (!res.ok || !result.success) {
             console.error('Contact form API error:', res.status, result.error || result);
+            if (window.turnstile) window.turnstile.reset();
             showStatus(statusEl, result.error || errorMsg, 'error');
             return;
           }
@@ -662,6 +666,7 @@ const rows = Object.keys(grouped)
           formEl.reset();
         } catch (fetchErr) {
           console.error('Contact form fetch error:', fetchErr);
+          if (window.turnstile) window.turnstile.reset();
           showStatus(statusEl, 'Network error — please check your connection and try again.', 'error');
         } finally {
           if (submitBtn instanceof HTMLButtonElement) {

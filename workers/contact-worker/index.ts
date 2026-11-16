@@ -2,6 +2,58 @@ import { randomUUID } from 'node:crypto';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const SPAM_KEYWORDS = /\b(viagra|cialis|crypto airdrop|investment opportunity|casino|betting)\b/i;
+const URL_RE = /https?:\/\/|\bwww\./i;
+const BBCODE_URL_RE = /\[url[=\]]|\[\/url\]/i;
+
+// Known disposable / throwaway email domains (includes domains observed in live spam runs).
+const DISPOSABLE_DOMAINS = new Set([
+  'usmailerbox.org',
+  'mailbox2000.org',
+  'kenzomail.info',
+  'mailinator.com',
+  'guerrillamail.com',
+  'guerrillamail.info',
+  'sharklasers.com',
+  'grr.la',
+  '10minutemail.com',
+  '10minutemail.net',
+  'tempmail.com',
+  'tempmail.net',
+  'temp-mail.org',
+  'tempmailo.com',
+  'yopmail.com',
+  'trashmail.com',
+  'trashmail.de',
+  'throwawaymail.com',
+  'getnada.com',
+  'dispostable.com',
+  'maildrop.cc',
+  'mintemail.com',
+  'mohmal.com',
+  'emailondeck.com',
+  'fakeinbox.com',
+  'mytemp.email',
+  'spambog.com',
+  'tempail.com',
+  'tempinbox.com',
+  'mailnesia.com',
+  'discard.email',
+  '1secmail.com',
+  '1secmail.org',
+  'moakt.com',
+  'tmail.ws',
+  'tmpmail.org',
+  'bccto.me',
+  'chacuo.net',
+  'smailpro.com',
+  'mailpoof.com',
+  'inboxkitten.com',
+  'tempr.email',
+  'muellmail.com',
+  'spam4.me',
+  'burnermail.io',
+  'linshiyouxiang.net',
+]);
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -9,11 +61,50 @@ const CORS_HEADERS = {
   'Access-Control-Allow-Headers': 'Content-Type',
 };
 
+// Best-effort in-memory rate limit (per isolate). Cuts burst spam even though
+// Cloudflare isolates may recycle; durable enforcement comes from Turnstile.
+const RATE_WINDOW_MS = 60 * 60 * 1000;
+const RATE_MAX = 8;
+const rateHits = new Map<string, number[]>();
+
+function isRateLimited(ip: string): boolean {
+  if (!ip) return false;
+  const now = Date.now();
+  const hits = (rateHits.get(ip) || []).filter((t) => now - t < RATE_WINDOW_MS);
+  if (hits.length >= RATE_MAX) {
+    rateHits.set(ip, hits);
+    return true;
+  }
+  hits.push(now);
+  rateHits.set(ip, hits);
+  if (rateHits.size > 1000) {
+    for (const [key, times] of rateHits) {
+      if (times.every((t) => now - t >= RATE_WINDOW_MS)) rateHits.delete(key);
+    }
+  }
+  return false;
+}
+
+async function verifyTurnstile(token: string, ip: string, secret: string): Promise<boolean> {
+  try {
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ secret, response: token, remoteip: ip }),
+    });
+    const outcome = (await res.json()) as { success?: boolean };
+    return outcome.success === true;
+  } catch {
+    return false;
+  }
+}
+
 interface Env {
   CONTACT_RESEND_API_KEY?: string;
   CONTACT_EMAIL_TO?: string;
   CONTACT_FROM_EMAIL?: string;
   CONTACT_FROM_NAME?: string;
+  TURNSTILE_SECRET?: string;
 }
 
 function json(body: unknown, status = 200): Response {
@@ -62,6 +153,25 @@ export default {
       return json({ success: false, error: 'Invalid request body' }, 400);
     }
 
+    // Honeypot: bots that fill the hidden "email_confirm" field get a fake success
+    // (same shape as a real one) so they stop retrying, but no email is ever sent.
+    if (sanitize(body.email_confirm, 500)) {
+      return json({ success: true, id: randomUUID(), receivedAt: new Date().toISOString() });
+    }
+
+    if (isRateLimited(ip)) {
+      return json({ success: false, error: 'Too many submissions — please try again later.' }, 429);
+    }
+
+    // Turnstile (optional): enforced only when TURNSTILE_SECRET is configured.
+    if (env.TURNSTILE_SECRET) {
+      const token = typeof body['cf-turnstile-response'] === 'string' ? body['cf-turnstile-response'] : '';
+      const ok = token ? await verifyTurnstile(token, ip, env.TURNSTILE_SECRET) : false;
+      if (!ok) {
+        return json({ success: false, error: 'Verification failed — please reload and try again.' }, 403);
+      }
+    }
+
     const fields = {
       firstName: sanitize(body.firstName, 100),
       lastName: sanitize(body.lastName, 100),
@@ -85,6 +195,28 @@ export default {
     if (!EMAIL_RE.test(fields.email)) return json({ success: false, error: 'Invalid email' }, 400);
     if (!fields.message || fields.message.length < 5) return json({ success: false, error: 'Message too short' }, 400);
     if (SPAM_KEYWORDS.test(fields.message) || SPAM_KEYWORDS.test(fields.subject || '')) {
+      return json({ success: false, error: 'Submission rejected' }, 400);
+    }
+
+    // Link spam: no URLs in address/name/company/zip, no BBCode [url] anywhere,
+    // and at most 2 raw links inside the message body.
+    if (URL_RE.test(fields.address) || URL_RE.test(fields.firstName) || URL_RE.test(fields.lastName)) {
+      return json({ success: false, error: 'Submission rejected' }, 400);
+    }
+    if (URL_RE.test(fields.companyName) || URL_RE.test(fields.zip)) {
+      return json({ success: false, error: 'Submission rejected' }, 400);
+    }
+    if (BBCODE_URL_RE.test(Object.values(fields).join(' '))) {
+      return json({ success: false, error: 'Submission rejected' }, 400);
+    }
+    const messageLinks = fields.message.match(/https?:\/\/|www\./gi) || [];
+    if (messageLinks.length >= 3) {
+      return json({ success: false, error: 'Submission rejected' }, 400);
+    }
+
+    // Disposable mailbox domains observed in spam runs.
+    const emailDomain = (fields.email.split('@')[1] || '').toLowerCase();
+    if (DISPOSABLE_DOMAINS.has(emailDomain)) {
       return json({ success: false, error: 'Submission rejected' }, 400);
     }
 

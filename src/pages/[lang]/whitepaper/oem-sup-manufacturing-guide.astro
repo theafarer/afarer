@@ -2,6 +2,7 @@
 export const prerender = true;
 
 import Layout from '~/layouts/PageLayout.astro';
+import Turnstile from '~/components/widgets/Turnstile.astro';
 import { SITE } from 'astrowind:config';
 import { languages } from '~/i18n/config';
 import { getUiForLang } from '~/i18n/generated/ui-all';
@@ -261,6 +262,7 @@ const metadata = {
             aria-hidden="true"
             autocomplete="off"
           />
+          <Turnstile class="w-full" />
           <button
             type="submit"
             class="w-full px-6 py-3 bg-sky-600 hover:bg-sky-700 text-white font-semibold rounded-xl transition-colors"
@@ -355,10 +357,12 @@ const metadata = {
               inp.value = '';
             });
           } else {
+            if (window.turnstile) window.turnstile.reset();
             status.textContent = data?.error || msgs.error;
             status.className = 'mt-3 text-sm text-red-600 dark:text-red-400 text-center';
           }
         } catch {
+          if (window.turnstile) window.turnstile.reset();
           status.textContent = msgs.network;
           status.className = 'mt-3 text-sm text-red-600 dark:text-red-400 text-center';
         }

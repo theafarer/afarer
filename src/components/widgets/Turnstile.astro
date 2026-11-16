@@ -1,0 +1,28 @@
+---
+/*
+ * Cloudflare Turnstile widget (anti-bot).
+ * Renders only when PUBLIC_TURNSTILE_SITEKEY is set at build time;
+ * otherwise outputs nothing and the contact worker skips verification too.
+ */
+export interface Props {
+  class?: string;
+}
+
+const siteKey: string | undefined = import.meta.env.PUBLIC_TURNSTILE_SITEKEY;
+---
+
+{siteKey && <div class:list={['cf-turnstile', Astro.props.class]} data-sitekey={siteKey} data-theme="auto" />}
+
+<script is:inline>
+  (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      if (!document.querySelector('.cf-turnstile')) return;
+      if (document.getElementById('cf-turnstile-api')) return;
+      const s = document.createElement('script');
+      s.id = 'cf-turnstile-api';
+      s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+      s.async = true;
+      document.head.appendChild(s);
+    });
+  })();
+</script>

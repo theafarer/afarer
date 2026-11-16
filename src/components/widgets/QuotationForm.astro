@@ -2,6 +2,7 @@
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Headline from '~/components/ui/Headline.astro';
 import Icon from '~/components/ui/Icon.astro';
+import Turnstile from '~/components/widgets/Turnstile.astro';
 import { getUiForLang } from '~/i18n/generated/ui-all';
 
 interface ContactFields {
@@ -233,6 +234,8 @@ const hasFileFields = fields.some((f) => (f.type ?? '').toLowerCase() === 'file'
           )
         }
 
+        <Turnstile class="pt-2" />
+
         <div class="pt-2 flex flex-col items-center gap-4">
           <button
             type="submit"
@@ -298,6 +301,7 @@ const hasFileFields = fields.some((f) => (f.type ?? '').toLowerCase() === 'file'
           const result = await res.json().catch(() => ({}));
           if (!res.ok || !result.success) {
             console.error('Quotation form API error:', res.status, result.error || result);
+            if (window.turnstile) window.turnstile.reset();
             showStatus(statusEl, result.error || errorMsg, 'error');
             return;
           }
@@ -306,6 +310,7 @@ const hasFileFields = fields.some((f) => (f.type ?? '').toLowerCase() === 'file'
           formEl.reset();
         } catch (fetchErr) {
           console.error('Quotation form fetch error:', fetchErr);
+          if (window.turnstile) window.turnstile.reset();
           showStatus(statusEl, errorMsg, 'error');
         } finally {
           if (submitBtn instanceof HTMLButtonElement) {

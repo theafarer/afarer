@@ -9,3 +9,7 @@ routes = [{ pattern = "afarer.com/api/contact*", zone_name = "afarer.com" }]
 # Destination inbox for contact form submissions (public address, also rendered on the site).
 # Overrides: set a CONTACT_EMAIL_TO secret in the Cloudflare dashboard to redirect.
 CONTACT_EMAIL_TO = "info@afarer.com"
+
+# Anti-spam: TURNSTILE_SECRET (Cloudflare Turnstile widget secret) is synced from the
+# repo secret CONTACT_TURNSTILE_SECRET by .github/workflows/deploy.yml. When absent,
+# the worker skips Turnstile verification and falls back to honeypot + heuristics.
