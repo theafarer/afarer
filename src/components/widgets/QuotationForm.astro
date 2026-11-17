@@ -301,12 +301,17 @@ const hasFileFields = fields.some((f) => (f.type ?? '').toLowerCase() === 'file'
         data.utmMedium = urlParams.get('utm_medium') || storedUtm.m || '';
         data.utmCampaign = urlParams.get('utm_campaign') || storedUtm.c || '';
         data.sourceUrl = window.location.href;
+        // Keep the submission key stable across retries (timeout / network error):
+        // generate once, write it back to the hidden input so the next submit
+        // reuses it — the worker dedups on it and never double-emails.
+        const skInput = formEl.querySelector('input[name="submissionKey"]');
         if (!data.submissionKey) {
           data.submissionKey =
             window.crypto && window.crypto.randomUUID
               ? window.crypto.randomUUID()
               : 'sk-' + Date.now() + '-' + Math.random().toString(36).slice(2);
         }
+        if (skInput instanceof HTMLInputElement) skInput.value = data.submissionKey;
 
         try {
           const controller = new AbortController();
@@ -335,6 +340,9 @@ const hasFileFields = fields.some((f) => (f.type ?? '').toLowerCase() === 'file'
           } catch {
             /* ignore */
           }
+          // Fresh key for any future submission on this page.
+          const skInputDone = formEl.querySelector('input[name="submissionKey"]');
+          if (skInputDone instanceof HTMLInputElement) skInputDone.value = '';
           window.location.href = '/thank-you/';
         } catch (fetchErr) {
           console.error('Quotation form fetch error:', fetchErr);

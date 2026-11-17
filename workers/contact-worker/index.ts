@@ -159,6 +159,17 @@ function sanitize(value: unknown, maxLen = 2000): string {
   return result.trim().slice(0, maxLen);
 }
 
+// All user-controlled values that end up in the notification email HTML must be
+// escaped — otherwise a crafted name/message injects markup into the inbox.
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 async function sendInquiryEmail(
   env: Env,
   fields: InquiryFields,
@@ -178,15 +189,15 @@ async function sendInquiryEmail(
   const subject = `[Contact] ${fields.subject || '(no subject)'} —${fields.firstName} ${fields.lastName}`;
   const html = `<div style="font-family:sans-serif;max-width:640px;margin:0 auto">
     <h2>New contact form submission</h2>
-    <p>Received at ${receivedAt} | IP: ${ip} | Inquiry: ${inquiryId}</p>
+    <p>Received at ${escapeHtml(receivedAt)} | IP: ${escapeHtml(ip)} | Inquiry: ${escapeHtml(inquiryId)}</p>
     <table>${Object.entries(fields)
       .filter(([, v]) => v)
       .map(
         ([k, v]) =>
-          `<tr><td style="padding:6px;font-weight:600">${k}</td><td style="padding:6px">${v.replace(/\n/g, '<br>')}</td></tr>`
+          `<tr><td style="padding:6px;font-weight:600">${escapeHtml(k)}</td><td style="padding:6px">${escapeHtml(v).replace(/\n/g, '<br>')}</td></tr>`
       )
       .join('')}</table>
-    <p style="font-size:12px;color:#666">User-Agent: ${userAgent}</p>
+    <p style="font-size:12px;color:#666">User-Agent: ${escapeHtml(userAgent)}</p>
   </div>`;
 
   try {
@@ -335,46 +346,69 @@ export default {
     // D1 archive is the source of truth: persist first, notify second. When the
     // binding is absent (archive not provisioned) fall back to email-only mode.
     if (env.DB) {
+      let existing: { id: string } | null = null;
       if (meta.submissionKey) {
-        const existing = await env.DB.prepare('SELECT id FROM inquiries WHERE submission_key = ?')
-          .bind(meta.submissionKey)
-          .first<{ id: string }>();
+        try {
+          existing = await env.DB.prepare('SELECT id FROM inquiries WHERE submission_key = ?')
+            .bind(meta.submissionKey)
+            .first<{ id: string }>();
+        } catch {
+          // Dedup lookup is best-effort; on failure existing stays null.
+        }
         if (existing && existing.id) {
           return json({ success: true, id: existing.id, receivedAt, duplicate: true });
         }
       }
-      const inserted = await env.DB.prepare(
-        `INSERT INTO inquiries (
-          id, submission_key, first_name, last_name, company_name, email, phone,
-          address, zip, country, subject, message, source_url,
-          utm_source, utm_medium, utm_campaign, ip, user_agent,
-          inquiry_status, email_status, created_at, updated_at
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'new', 'pending', ?, ?)`
-      )
-        .bind(
-          inquiryId,
-          meta.submissionKey || null,
-          fields.firstName,
-          fields.lastName,
-          fields.companyName || null,
-          fields.email,
-          fields.tel || null,
-          fields.address || null,
-          fields.zip || null,
-          fields.country || null,
-          fields.subject || null,
-          fields.message,
-          meta.sourceUrl || null,
-          meta.utmSource || null,
-          meta.utmMedium || null,
-          meta.utmCampaign || null,
-          ip,
-          userAgent,
-          receivedAt,
-          receivedAt
+      try {
+        const inserted = await env.DB.prepare(
+          `INSERT INTO inquiries (
+            id, submission_key, first_name, last_name, company_name, email, phone,
+            address, zip, country, subject, message, source_url,
+            utm_source, utm_medium, utm_campaign, ip, user_agent,
+            inquiry_status, email_status, created_at, updated_at
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'new', 'pending', ?, ?)`
         )
-        .run();
-      if (!inserted.success) {
+          .bind(
+            inquiryId,
+            meta.submissionKey || null,
+            fields.firstName,
+            fields.lastName,
+            fields.companyName || null,
+            fields.email,
+            fields.tel || null,
+            fields.address || null,
+            fields.zip || null,
+            fields.country || null,
+            fields.subject || null,
+            fields.message,
+            meta.sourceUrl || null,
+            meta.utmSource || null,
+            meta.utmMedium || null,
+            meta.utmCampaign || null,
+            ip,
+            userAgent,
+            receivedAt,
+            receivedAt
+          )
+          .run();
+        if (!inserted.success) {
+          return json({ success: false, error: 'Failed to save your submission — please try again.' }, 500);
+        }
+      } catch (insertErr) {
+        // Concurrent duplicate lost the UNIQUE(submission_key) race — treat as idempotent retry.
+        if (meta.submissionKey) {
+          try {
+            const raced = await env.DB.prepare('SELECT id FROM inquiries WHERE submission_key = ?')
+              .bind(meta.submissionKey)
+              .first<{ id: string }>();
+            if (raced && raced.id) {
+              return json({ success: true, id: raced.id, receivedAt, duplicate: true });
+            }
+          } catch {
+            /* fall through to generic failure below */
+          }
+        }
+        console.error('D1 insert failed:', insertErr);
         return json({ success: false, error: 'Failed to save your submission — please try again.' }, 500);
       }
     }
@@ -382,13 +416,18 @@ export default {
     const mail = await sendInquiryEmail(env, fields, destinationEmail, ip, userAgent, receivedAt, inquiryId);
 
     if (env.DB) {
-      await env.DB.prepare(
-        `UPDATE inquiries
-         SET email_status = ?, resend_email_id = ?, last_error = ?, retry_count = retry_count + 1, updated_at = ?
-         WHERE id = ?`
-      )
-        .bind(mail.ok ? 'sent' : 'failed', mail.id || null, mail.error || null, new Date().toISOString(), inquiryId)
-        .run();
+      try {
+        await env.DB.prepare(
+          `UPDATE inquiries
+           SET email_status = ?, resend_email_id = ?, last_error = ?, retry_count = retry_count + 1, updated_at = ?
+           WHERE id = ?`
+        )
+          .bind(mail.ok ? 'sent' : 'failed', mail.id || null, mail.error || null, new Date().toISOString(), inquiryId)
+          .run();
+      } catch (updateErr) {
+        // The email already went out; failing to record its status must not fail the request.
+        console.error('D1 email-status update failed:', updateErr);
+      }
     }
 
     return json({ success: true, id: inquiryId, receivedAt });

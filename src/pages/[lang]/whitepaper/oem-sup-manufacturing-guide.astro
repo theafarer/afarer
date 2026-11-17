@@ -341,6 +341,9 @@ const metadata = {
         error: isFr ? 'Une erreur est survenue. Veuillez réessayer.' : 'Something went wrong. Please try again.',
         network: isFr ? 'Erreur réseau. Veuillez réessayer.' : 'Network error. Please try again.',
       };
+      // Stable idempotency key: reused across retries so the worker dedups
+      // (no duplicate row/email), reset only after a confirmed success.
+      let submissionKey = '';
       form.addEventListener('submit', async function (e) {
         e.preventDefault();
         const status = form.querySelector('[data-whitepaper-status]');
@@ -359,12 +362,13 @@ const metadata = {
         fd.append('utmMedium', urlParams.get('utm_medium') || storedUtm.m || '');
         fd.append('utmCampaign', urlParams.get('utm_campaign') || storedUtm.c || '');
         fd.append('sourceUrl', window.location.href);
-        fd.append(
-          'submissionKey',
-          window.crypto && window.crypto.randomUUID
-            ? window.crypto.randomUUID()
-            : 'sk-' + Date.now() + '-' + Math.random().toString(36).slice(2)
-        );
+        if (!submissionKey) {
+          submissionKey =
+            window.crypto && window.crypto.randomUUID
+              ? window.crypto.randomUUID()
+              : 'sk-' + Date.now() + '-' + Math.random().toString(36).slice(2);
+        }
+        fd.append('submissionKey', submissionKey);
         try {
           const res = await fetch('/api/contact', { method: 'POST', body: fd });
           const data = await res.json();
@@ -376,6 +380,7 @@ const metadata = {
             form.querySelectorAll('input:not([type=hidden])').forEach(function (inp) {
               inp.value = '';
             });
+            submissionKey = '';
           } else {
             if (window.turnstile) window.turnstile.reset();
             status.textContent = data?.error || msgs.error;
