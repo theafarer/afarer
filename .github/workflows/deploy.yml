@@ -116,7 +116,7 @@ jobs:
             echo "Reusing D1 database afarer-inquiries: $ID"
           fi
           sed -i "s/__D1_DATABASE_ID__/$ID/" workers/contact-worker/wrangler.toml
-          npx wrangler d1 execute afarer-inquiries --remote --database-id "$ID" --file workers/contact-worker/schema.sql
+          npx wrangler d1 execute afarer-inquiries --remote --file workers/contact-worker/schema.sql -c workers/contact-worker/wrangler.toml
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
