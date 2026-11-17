@@ -146,6 +146,7 @@ const I18N_EXCLUDED = [
   // root-only pages with no /en/ equivalent: without exclusion the EN rewrite
   // below turns them into live 404s (dist root asset exists but is never served)
   '/ai-context',
+  '/thank-you',
   '/about/afarer-brand',
   '/bundles',
   '/compare/pvc-vs-hypalon',
