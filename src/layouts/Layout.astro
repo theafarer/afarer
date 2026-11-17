@@ -97,6 +97,23 @@ const mobileT = (key: string, fallback: string): string => mobileUi?.[key] || fa
     <ApplyColorMode />
     <Metadata {...metadata} seoSettings={seo} />
     <Analytics id={seo.googleAnalyticsId} />
+    <script is:inline>
+      // Capture landing UTM tags once per session so inquiry forms can attach
+      // attribution when the visitor later submits from any page.
+      (function () {
+        try {
+          const p = new URLSearchParams(window.location.search);
+          const s = p.get('utm_source');
+          const m = p.get('utm_medium');
+          const c = p.get('utm_campaign');
+          if (s || m || c) {
+            sessionStorage.setItem('afarer_utm', JSON.stringify({ s: s || '', m: m || '', c: c || '', t: Date.now() }));
+          }
+        } catch {
+          /* ignore */
+        }
+      })();
+    </script>
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
     <link rel="preconnect" href="https://assets.afarer.com" crossorigin />

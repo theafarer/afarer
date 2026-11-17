@@ -347,12 +347,32 @@ const metadata = {
         if (!status) return;
         status.classList.add('hidden');
         const fd = new FormData(form);
+        // Attribution + idempotency payload (conversion event stays inline, no thank-you page).
+        const urlParams = new URLSearchParams(window.location.search);
+        let storedUtm = {};
+        try {
+          storedUtm = JSON.parse(sessionStorage.getItem('afarer_utm') || '{}');
+        } catch {
+          /* keep default */
+        }
+        fd.append('utmSource', urlParams.get('utm_source') || storedUtm.s || '');
+        fd.append('utmMedium', urlParams.get('utm_medium') || storedUtm.m || '');
+        fd.append('utmCampaign', urlParams.get('utm_campaign') || storedUtm.c || '');
+        fd.append('sourceUrl', window.location.href);
+        fd.append(
+          'submissionKey',
+          window.crypto && window.crypto.randomUUID
+            ? window.crypto.randomUUID()
+            : 'sk-' + Date.now() + '-' + Math.random().toString(36).slice(2)
+        );
         try {
           const res = await fetch('/api/contact', { method: 'POST', body: fd });
           const data = await res.json();
           if (res.ok) {
             status.textContent = msgs.thanks;
             status.className = 'mt-3 text-sm text-green-600 dark:text-green-400 text-center';
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ event: 'generate_lead', form_type: 'whitepaper' });
             form.querySelectorAll('input:not([type=hidden])').forEach(function (inp) {
               inp.value = '';
             });

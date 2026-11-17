@@ -1,0 +1,73 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import Headline from '~/components/ui/Headline.astro';
+
+// Conversion confirmation page (b2b inquiry funnel). noindex: never indexed,
+// never in the sitemap (see SITEMAP_EXCLUDED_PATHS in astro.config.ts), not in
+// the main navigation. Only entered after the worker archived the inquiry.
+---
+
+<Layout
+  metadata={{
+    title: 'Thank You — Your Inquiry Has Been Received',
+    description: 'Your inquiry has been received. Our team will get back to you within 24 hours on business days.',
+    robots: { index: false, follow: true },
+  }}
+>
+  <section class="flex items-center min-h-[70vh] px-6 py-16 sm:py-20">
+    <div class="max-w-2xl mx-auto text-center">
+      <div
+        class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-green-100 dark:bg-green-900/30 mb-8"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-10 h-10 text-green-600 dark:text-green-400"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <Headline
+        title="Thank you — your inquiry has been received"
+        subtitle="Your message is safely archived in our system. Our sales team will reply to your email address within 24 hours on business days (Mon–Fri)."
+      />
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a class="btn btn-primary" href="/">Back to Homepage</a>
+        <a class="btn" href="/products/">Browse Products</a>
+      </div>
+      <p class="mt-8 text-sm text-muted dark:text-slate-400">
+        Didn't receive a reply? Check your spam folder, or email us directly at
+        <a href="mailto:info@afarer.com" class="text-primary underline underline-offset-2">info@afarer.com</a>.
+      </p>
+    </div>
+  </section>
+
+  <script is:inline>
+    // Fire the lead-conversion event exactly once per inquiry: the worker's
+    // inquiry id is stashed in sessionStorage by the form script before the
+    // redirect; consume-and-clear here so refresh/back-forward never recount.
+    (function () {
+      try {
+        const raw = sessionStorage.getItem('afarer_inquiry');
+        if (!raw) return;
+        const inquiry = JSON.parse(raw);
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'generate_lead',
+          form_type: 'inquiry',
+          inquiry_id: inquiry.id || '',
+          submission_key: inquiry.key || '',
+        });
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', { inquiry_id: inquiry.id || '' });
+        }
+      } catch {
+        /* ignore malformed session data */
+      }
+      sessionStorage.removeItem('afarer_inquiry');
+    })();
+  </script>
+</Layout>

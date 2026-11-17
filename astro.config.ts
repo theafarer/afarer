@@ -118,6 +118,7 @@ const SITEMAP_EXCLUDED_PATHS = new Set([
   '/geo-report',
   '/404',
   '/500',
+  '/thank-you',
   '/about/afarer',
   '/aquafarer',
   '/brand-story',

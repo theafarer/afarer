@@ -83,6 +83,7 @@ const hasFileFields = fields.some((f) => (f.type ?? '').toLowerCase() === 'file'
         >
           <label for={`${id}-email-confirm`}>Do not fill this</label>
           <input id={`${id}-email-confirm`} type="text" name="email_confirm" tabindex="-1" autocomplete="off" />
+          <input type="hidden" name="submissionKey" value="" />
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -288,6 +289,25 @@ const hasFileFields = fields.some((f) => (f.type ?? '').toLowerCase() === 'file'
         }
         data.message = lines.join('\n');
 
+        // Attribution + idempotency payload (see /thank-you/ conversion flow).
+        const urlParams = new URLSearchParams(window.location.search);
+        let storedUtm = {};
+        try {
+          storedUtm = JSON.parse(sessionStorage.getItem('afarer_utm') || '{}');
+        } catch {
+          /* keep default */
+        }
+        data.utmSource = urlParams.get('utm_source') || storedUtm.s || '';
+        data.utmMedium = urlParams.get('utm_medium') || storedUtm.m || '';
+        data.utmCampaign = urlParams.get('utm_campaign') || storedUtm.c || '';
+        data.sourceUrl = window.location.href;
+        if (!data.submissionKey) {
+          data.submissionKey =
+            window.crypto && window.crypto.randomUUID
+              ? window.crypto.randomUUID()
+              : 'sk-' + Date.now() + '-' + Math.random().toString(36).slice(2);
+        }
+
         try {
           const controller = new AbortController();
           const timeoutId = setTimeout(() => controller.abort(), 15000);
@@ -307,7 +327,15 @@ const hasFileFields = fields.some((f) => (f.type ?? '').toLowerCase() === 'file'
           }
           showStatus(statusEl, successMsg, 'success');
           console.log('Quotation form success:', result);
-          formEl.reset();
+          try {
+            sessionStorage.setItem(
+              'afarer_inquiry',
+              JSON.stringify({ id: result.id || '', key: data.submissionKey || '', ts: Date.now() })
+            );
+          } catch {
+            /* ignore */
+          }
+          window.location.href = '/thank-you/';
         } catch (fetchErr) {
           console.error('Quotation form fetch error:', fetchErr);
           if (window.turnstile) window.turnstile.reset();

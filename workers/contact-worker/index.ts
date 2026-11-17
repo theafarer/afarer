@@ -99,12 +99,47 @@ async function verifyTurnstile(token: string, ip: string, secret: string): Promi
   }
 }
 
+// Minimal D1 surface used by this worker (avoids a @cloudflare/workers-types dependency).
+interface D1Result {
+  success: boolean;
+}
+interface D1PreparedStatement {
+  bind(...values: unknown[]): D1PreparedStatement;
+  first<T = Record<string, unknown>>(): Promise<T | null>;
+  run(): Promise<D1Result>;
+}
+interface D1Database {
+  prepare(query: string): D1PreparedStatement;
+}
+
+interface InquiryFields {
+  firstName: string;
+  lastName: string;
+  companyName: string;
+  address: string;
+  zip: string;
+  country: string;
+  email: string;
+  tel: string;
+  subject: string;
+  message: string;
+}
+
+interface InquiryMeta {
+  submissionKey: string;
+  sourceUrl: string;
+  utmSource: string;
+  utmMedium: string;
+  utmCampaign: string;
+}
+
 interface Env {
   CONTACT_RESEND_API_KEY?: string;
   CONTACT_EMAIL_TO?: string;
   CONTACT_FROM_EMAIL?: string;
   CONTACT_FROM_NAME?: string;
   TURNSTILE_SECRET?: string;
+  DB?: D1Database;
 }
 
 function json(body: unknown, status = 200): Response {
@@ -122,6 +157,67 @@ function sanitize(value: unknown, maxLen = 2000): string {
     if (cp >= 32 && cp !== 127) result += c;
   }
   return result.trim().slice(0, maxLen);
+}
+
+async function sendInquiryEmail(
+  env: Env,
+  fields: InquiryFields,
+  destinationEmail: string,
+  ip: string,
+  userAgent: string,
+  receivedAt: string,
+  inquiryId: string
+): Promise<{ ok: boolean; id?: string; error?: string }> {
+  if (!env.CONTACT_RESEND_API_KEY || !env.CONTACT_FROM_EMAIL) {
+    return { ok: false, error: 'Resend not configured' };
+  }
+  const fromName = env.CONTACT_FROM_NAME || 'afarer Contact';
+  const from = `${fromName} <${env.CONTACT_FROM_EMAIL}>`;
+  const replyTo = `${fields.firstName} ${fields.lastName} <${fields.email}>`;
+
+  const subject = `[Contact] ${fields.subject || '(no subject)'} —${fields.firstName} ${fields.lastName}`;
+  const html = `<div style="font-family:sans-serif;max-width:640px;margin:0 auto">
+    <h2>New contact form submission</h2>
+    <p>Received at ${receivedAt} | IP: ${ip} | Inquiry: ${inquiryId}</p>
+    <table>${Object.entries(fields)
+      .filter(([, v]) => v)
+      .map(
+        ([k, v]) =>
+          `<tr><td style="padding:6px;font-weight:600">${k}</td><td style="padding:6px">${v.replace(/\n/g, '<br>')}</td></tr>`
+      )
+      .join('')}</table>
+    <p style="font-size:12px;color:#666">User-Agent: ${userAgent}</p>
+  </div>`;
+
+  try {
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${env.CONTACT_RESEND_API_KEY}`,
+        'Content-Type': 'application/json',
+        // Stable idempotency key derived from the inquiry id for resend retries.
+        'Idempotency-Key': inquiryId,
+      },
+      body: JSON.stringify({
+        from,
+        to: destinationEmail,
+        reply_to: replyTo,
+        subject,
+        html,
+        text: `${fields.firstName} ${fields.lastName}\n${fields.email}\n${fields.message}`,
+      }),
+    });
+    if (!res.ok) {
+      const txt = await res.text();
+      console.error('Resend error:', txt.slice(0, 500));
+      return { ok: false, error: `Resend ${res.status}: ${txt.slice(0, 300)}` };
+    }
+    const sent = (await res.json()) as { id?: string };
+    return { ok: true, id: sent.id };
+  } catch (e) {
+    console.error('Email send failed:', e);
+    return { ok: false, error: `Send error: ${String(e).slice(0, 300)}` };
+  }
 }
 
 export default {
@@ -172,7 +268,7 @@ export default {
       }
     }
 
-    const fields = {
+    const fields: InquiryFields = {
       firstName: sanitize(body.firstName, 100),
       lastName: sanitize(body.lastName, 100),
       companyName: sanitize(body.companyName, 200),
@@ -183,6 +279,13 @@ export default {
       tel: sanitize(body.tel, 60),
       subject: sanitize(body.subject, 200),
       message: sanitize(body.message, 4000),
+    };
+    const meta: InquiryMeta = {
+      submissionKey: sanitize(body.submissionKey, 64),
+      sourceUrl: sanitize(body.sourceUrl, 500),
+      utmSource: sanitize(body.utmSource, 200),
+      utmMedium: sanitize(body.utmMedium, 200),
+      utmCampaign: sanitize(body.utmCampaign, 200),
     };
 
     const isNewsletter = fields.subject.toLowerCase() === 'newsletter signup';
@@ -226,52 +329,68 @@ export default {
       return json({ success: false, error: 'Destination email not configured' }, 500);
     }
 
+    const inquiryId = randomUUID();
     const receivedAt = new Date().toISOString();
 
-    if (env.CONTACT_RESEND_API_KEY && env.CONTACT_FROM_EMAIL) {
-      const fromName = env.CONTACT_FROM_NAME || 'afarer Contact';
-      const from = `${fromName} <${env.CONTACT_FROM_EMAIL}>`;
-      const replyTo = `${fields.firstName} ${fields.lastName} <${fields.email}>`;
-
-      const subject = `[Contact] ${fields.subject || '(no subject)'} —${fields.firstName} ${fields.lastName}`;
-      const html = `<div style="font-family:sans-serif;max-width:640px;margin:0 auto">
-        <h2>New contact form submission</h2>
-        <p>Received at ${receivedAt} | IP: ${ip}</p>
-        <table>${Object.entries(fields)
-          .filter(([, v]) => v)
-          .map(
-            ([k, v]) =>
-              `<tr><td style="padding:6px;font-weight:600">${k}</td><td style="padding:6px">${v.replace(/\n/g, '<br>')}</td></tr>`
-          )
-          .join('')}</table>
-        <p style="font-size:12px;color:#666">User-Agent: ${userAgent}</p>
-      </div>`;
-
-      try {
-        const res = await fetch('https://api.resend.com/emails', {
-          method: 'POST',
-          headers: {
-            Authorization: `Bearer ${env.CONTACT_RESEND_API_KEY}`,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            from,
-            to: destinationEmail,
-            reply_to: replyTo,
-            subject,
-            html,
-            text: `${fields.firstName} ${fields.lastName}\n${fields.email}\n${fields.message}`,
-          }),
-        });
-        if (!res.ok) {
-          const txt = await res.text();
-          console.error('Resend error:', txt.slice(0, 500));
+    // D1 archive is the source of truth: persist first, notify second. When the
+    // binding is absent (archive not provisioned) fall back to email-only mode.
+    if (env.DB) {
+      if (meta.submissionKey) {
+        const existing = await env.DB.prepare('SELECT id FROM inquiries WHERE submission_key = ?')
+          .bind(meta.submissionKey)
+          .first<{ id: string }>();
+        if (existing && existing.id) {
+          return json({ success: true, id: existing.id, receivedAt, duplicate: true });
         }
-      } catch (e) {
-        console.error('Email send failed:', e);
+      }
+      const inserted = await env.DB.prepare(
+        `INSERT INTO inquiries (
+          id, submission_key, first_name, last_name, company_name, email, phone,
+          address, zip, country, subject, message, source_url,
+          utm_source, utm_medium, utm_campaign, ip, user_agent,
+          inquiry_status, email_status, created_at, updated_at
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'new', 'pending', ?, ?)`
+      )
+        .bind(
+          inquiryId,
+          meta.submissionKey || null,
+          fields.firstName,
+          fields.lastName,
+          fields.companyName || null,
+          fields.email,
+          fields.tel || null,
+          fields.address || null,
+          fields.zip || null,
+          fields.country || null,
+          fields.subject || null,
+          fields.message,
+          meta.sourceUrl || null,
+          meta.utmSource || null,
+          meta.utmMedium || null,
+          meta.utmCampaign || null,
+          ip,
+          userAgent,
+          receivedAt,
+          receivedAt
+        )
+        .run();
+      if (!inserted.success) {
+        return json({ success: false, error: 'Failed to save your submission — please try again.' }, 500);
       }
     }
 
-    return json({ success: true, id: randomUUID(), receivedAt });
+    const mail = await sendInquiryEmail(env, fields, destinationEmail, ip, userAgent, receivedAt, inquiryId);
+
+    if (env.DB) {
+      await env.DB.prepare(
+        `UPDATE inquiries
+         SET email_status = ?, resend_email_id = ?, last_error = ?, retry_count = retry_count + 1, updated_at = ?
+         WHERE id = ?`
+      )
+        .bind(mail.ok ? 'sent' : 'failed', mail.id || null, mail.error || null, new Date().toISOString(), inquiryId)
+        .run();
+    }
+
+    return json({ success: true, id: inquiryId, receivedAt });
   },
 };

@@ -13,3 +13,11 @@ CONTACT_EMAIL_TO = "info@afarer.com"
 # Anti-spam: TURNSTILE_SECRET (Cloudflare Turnstile widget secret) is synced from the
 # repo secret CONTACT_TURNSTILE_SECRET by .github/workflows/deploy.yml. When absent,
 # the worker skips Turnstile verification and falls back to honeypot + heuristics.
+
+# Inquiry archive (source of truth before email notification). The database_id
+# placeholder is injected by CI (deploy.yml "Ensure D1 database" step) via sed;
+# locally it stays a placeholder and only affects `wrangler deploy --dry-run`.
+[[d1_databases]]
+binding = "DB"
+database_name = "afarer-inquiries"
+database_id = "__D1_DATABASE_ID__"

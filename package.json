@@ -21,6 +21,7 @@
     "deploy:r2": "node scripts/fast-upload-r2.mjs",
     "deploy:pages": "npx wrangler pages deploy dist/ --project-name afarer",
     "deploy:worker-contact": "npx wrangler deploy -c workers/contact-worker/wrangler.toml",
+    "inquiries:resend": "node scripts/resend-failed-inquiries.mjs",
     "deploy:worker-ai": "npx wrangler deploy -c workers/ai-worker/wrangler.toml",
     "deploy:worker-admin": "npx wrangler deploy -c workers/admin-worker/wrangler.toml",
     "deploy:worker-automation": "npx wrangler deploy -c workers/automation-worker/wrangler.toml",
