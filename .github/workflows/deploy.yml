@@ -85,17 +85,30 @@ jobs:
         name: Ensure D1 database + schema
         run: |
           # Resolve (or create) the afarer-inquiries D1 database via REST API.
-          RESP=$(curl -sf "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/d1/database?per_page=100" \
+          HTTP_CODE=$(curl -s -o /tmp/d1.json -w "%{http_code}" \
+            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/d1/database?per_page=100" \
             -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}")
-          ID=$(echo "$RESP" | jq -r '.result[]? | select(.name == "afarer-inquiries") | .uuid' | head -n 1)
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "ERROR: D1 list API returned HTTP $HTTP_CODE — token may lack D1 permission (need Account > D1 > Edit)."
+            cat /tmp/d1.json
+            exit 1
+          fi
+          ID=$(jq -r '.result[]? | select(.name == "afarer-inquiries") | .uuid' /tmp/d1.json | head -n 1)
           if [ -z "$ID" ]; then
-            RESP=$(curl -sf -X POST "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/d1/database" \
+            HTTP_CODE=$(curl -s -o /tmp/d1.json -w "%{http_code}" -X POST \
+              "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/d1/database" \
               -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
               -H "Content-Type: application/json" \
               -d '{"name": "afarer-inquiries"}')
-            ID=$(echo "$RESP" | jq -r '.result.uuid // empty')
+            if [ "$HTTP_CODE" != "200" ]; then
+              echo "ERROR: D1 create API returned HTTP $HTTP_CODE"
+              cat /tmp/d1.json
+              exit 1
+            fi
+            ID=$(jq -r '.result.uuid // empty' /tmp/d1.json)
             if [ -z "$ID" ]; then
-              echo "ERROR: failed to create D1 database: $RESP"
+              echo "ERROR: D1 create response missing uuid"
+              cat /tmp/d1.json
               exit 1
             fi
             echo "Created D1 database afarer-inquiries: $ID"
