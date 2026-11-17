@@ -171,6 +171,43 @@ const I18N_EXCLUDED = [
 ];
 const ASSET_PREFIXES = ['/images', '/files'];
 
+// True 301s for legacy/alias URLs. These used to be prerendered
+// Astro.redirect stub pages, but a static build turns Astro.redirect into a
+// 200 + <meta http-equiv="refresh"> page (never an HTTP redirect), and
+// Cloudflare Pages _redirects rules do NOT apply to requests handled by
+// Functions — so legacy redirects must live here, above the i18n logic.
+// Keys are locale-stripped path suffixes (no trailing slash). A
+// language-prefixed request keeps its prefix; a root request gets a root
+// target which the i18n logic below then localizes.
+const LEGACY_REDIRECTS: Record<string, string> = {
+  '/about/afarer': '/about/',
+  '/aquafarer': '/about/',
+  '/brand': '/afarer-story/',
+  '/brand/afarer': '/afarer-story/',
+  '/brand-story': '/afarer-story/',
+  '/oem-process': '/oem-odm-manufacturer/',
+  '/oem-odm': '/oem-odm-manufacturer/',
+  '/quality-testing': '/quality/',
+  '/use-cases/fishing-from-inflatable-craft': '/use-cases/fishing/',
+  '/use-cases/touring-distance-paddling': '/use-cases/touring/',
+  '/solutions/diving-center-boats': '/solutions/rental-operators/',
+  '/solutions/fishing-boat-solutions': '/solutions/',
+  '/solutions/marine-tourism-equipment': '/solutions/resorts-hotels/',
+  '/solutions/oem-brands': '/solutions/build-your-own-brand/',
+  '/solutions/rescue-watercraft': '/solutions/distributors/',
+  '/solutions/yacht-tender-solutions': '/solutions/build-your-own-brand/',
+};
+
+function getLegacyRedirectTarget(pathname: string): string | null {
+  const p = pathname.replace(/\/+$/, '');
+  const langMatch = p.match(/^\/([a-z]{2})(\/.+)$/);
+  if (langMatch && langMatch[1] in LANGUAGES) {
+    const target = LEGACY_REDIRECTS[langMatch[2]];
+    return target ? `/${langMatch[1]}${target}` : null;
+  }
+  return LEGACY_REDIRECTS[p] || null;
+}
+
 function hasExtension(url: string): boolean {
   return /\.[a-z0-9]+(\?.*)?$/i.test(url);
 }
@@ -227,6 +264,11 @@ export const onRequest: (...args: any[]) => any = async (context) => {
 
   if (shouldRedirectToR2(pathname)) {
     return setSecurityHeaders(Response.redirect(ASSETS_BASE + pathname, 301));
+  }
+
+  const legacyTarget = getLegacyRedirectTarget(pathname);
+  if (legacyTarget) {
+    return setSecurityHeaders(Response.redirect(url.origin + legacyTarget + url.search, 301));
   }
 
   if (shouldSkipI18n(pathname)) {

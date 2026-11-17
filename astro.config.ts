@@ -94,7 +94,6 @@ const ROOT_SERVED_PATHS = [
   '/bundles',
   '/guides/kayak-techniques',
   '/resources/download-catalog',
-  '/solutions/oem-brands',
   '/research/board-hull-design',
   '/research/eva-foam-technology',
   '/research/fin-systems-guide',
