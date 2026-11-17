@@ -84,17 +84,23 @@ jobs:
       - if: steps.guard.outputs.enabled == 'true'
         name: Ensure D1 database + schema
         run: |
-          npx wrangler d1 info afarer-inquiries --json > /tmp/d1.json 2>/dev/null || true
-          ID=$(jq -r '.uuid // empty' /tmp/d1.json 2>/dev/null || echo '')
+          # Resolve (or create) the afarer-inquiries D1 database via REST API.
+          RESP=$(curl -sf "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/d1/database?per_page=100" \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}")
+          ID=$(echo "$RESP" | jq -r '.result[]? | select(.name == "afarer-inquiries") | .uuid' | head -n 1)
           if [ -z "$ID" ]; then
-            ID=$(npx wrangler d1 create afarer-inquiries --json | jq -r '.uuid')
+            RESP=$(curl -sf -X POST "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/d1/database" \
+              -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+              -H "Content-Type: application/json" \
+              -d '{"name": "afarer-inquiries"}')
+            ID=$(echo "$RESP" | jq -r '.result.uuid // empty')
+            if [ -z "$ID" ]; then
+              echo "ERROR: failed to create D1 database: $RESP"
+              exit 1
+            fi
             echo "Created D1 database afarer-inquiries: $ID"
           else
             echo "Reusing D1 database afarer-inquiries: $ID"
-          fi
-          if [ -z "$ID" ] || [ "$ID" = "null" ]; then
-            echo "ERROR: failed to resolve D1 database id"
-            exit 1
           fi
           sed -i "s/__D1_DATABASE_ID__/$ID/" workers/contact-worker/wrangler.toml
           npx wrangler d1 execute afarer-inquiries --remote --database-id "$ID" --file workers/contact-worker/schema.sql
