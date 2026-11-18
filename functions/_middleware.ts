@@ -117,11 +117,6 @@ const I18N_EXCLUDED = [
   '/assets',
   '/favicon',
   '/llms',
-  '/solutions-diving-center-boats',
-  '/solutions-fishing-boat-solutions',
-  '/solutions-marine-tourism-equipment',
-  '/solutions-rescue-watercraft',
-  '/solutions-yacht-tender-solutions',
   '/adventure-sup',
   '/all-around-sup',
   '/beginner-sup',
@@ -149,15 +144,8 @@ const I18N_EXCLUDED = [
   '/thank-you',
   '/about/afarer-brand',
   '/bundles',
-  '/compare/pvc-vs-hypalon',
   '/guides/kayak-techniques',
   '/resources/download-catalog',
-  '/solutions/diving-center-boats',
-  '/solutions/fishing-boat-solutions',
-  '/solutions/marine-tourism-equipment',
-  '/solutions/oem-brands',
-  '/solutions/rescue-watercraft',
-  '/solutions/yacht-tender-solutions',
   '/research/board-hull-design',
   '/research/eva-foam-technology',
   '/research/fin-systems-guide',
@@ -196,6 +184,15 @@ const LEGACY_REDIRECTS: Record<string, string> = {
   '/solutions/oem-brands': '/solutions/build-your-own-brand/',
   '/solutions/rescue-watercraft': '/solutions/distributors/',
   '/solutions/yacht-tender-solutions': '/solutions/build-your-own-brand/',
+  // Pre-SUP-refactor hyphenated aliases (pages removed in 540908c1) and the
+  // deleted PVC-vs-Hypalon comparison article: same 301 treatment so old
+  // backlinks land on the closest live topic instead of 404.
+  '/solutions-diving-center-boats': '/solutions/rental-operators/',
+  '/solutions-fishing-boat-solutions': '/solutions/',
+  '/solutions-marine-tourism-equipment': '/solutions/resorts-hotels/',
+  '/solutions-rescue-watercraft': '/solutions/distributors/',
+  '/solutions-yacht-tender-solutions': '/solutions/build-your-own-brand/',
+  '/compare/pvc-vs-hypalon': '/research/military-grade-pvc-specs/',
 };
 
 function getLegacyRedirectTarget(pathname: string): string | null {
