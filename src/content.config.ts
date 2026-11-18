@@ -84,34 +84,6 @@ const heroTextSection = z
   })
   .optional();
 
-const heroCarouselSection = z
-  .object({
-    autoplay_interval: z.number().optional(),
-    slides: z
-      .array(
-        z.object({
-          image: imageSchema,
-          tagline: z.string().optional(),
-          title: z.string().optional(),
-          subtitle: z.string().optional(),
-          actions: z.array(actionSchema).optional(),
-        })
-      )
-      .optional(),
-  })
-  .optional();
-
-const featuresSection = z
-  .object({
-    id: z.string().optional(),
-    tagline: z.string().optional(),
-    title: z.string().optional(),
-    subtitle: z.string().optional(),
-    columns: z.number().optional(),
-    items: z.array(itemSchema).optional(),
-  })
-  .optional();
-
 const features2Section = z
   .object({
     title: z.string().optional(),
@@ -130,28 +102,6 @@ const features3Section = z
     columns: z.number().optional(),
     isBeforeContent: z.boolean().optional(),
     isAfterContent: z.boolean().optional(),
-    items: z.array(itemSchema).optional(),
-    image: imageSchema,
-  })
-  .optional();
-
-const contentSection = z
-  .object({
-    isReversed: z.boolean().optional(),
-    tagline: z.string().optional(),
-    title: z.string().optional(),
-    subtitle: z.string().optional(),
-    content: z.string().optional(),
-    items: z.array(itemSchema).optional(),
-    image: imageSchema,
-  })
-  .optional();
-
-const stepsSection = z
-  .object({
-    tagline: z.string().optional(),
-    title: z.string().optional(),
-    isReversed: z.boolean().optional(),
     items: z.array(itemSchema).optional(),
     image: imageSchema,
   })
@@ -181,40 +131,6 @@ const statsSection = z
         })
       )
       .optional(),
-  })
-  .optional();
-
-const faqsSection = z
-  .object({
-    title: z.string().optional(),
-    subtitle: z.string().optional(),
-    columns: z.number().optional(),
-    items: z.array(itemSchema).optional(),
-  })
-  .optional();
-
-const ctaSection = z
-  .object({
-    title: z.string().optional(),
-    subtitle: z.string().optional(),
-    actions: z.array(actionSchema).optional(),
-  })
-  .optional();
-
-const featuredProductsSection = z
-  .object({
-    id: z.string().optional(),
-    title: z.string().optional(),
-    subtitle: z.string().optional(),
-    linkText: z.string().optional(),
-    linkUrl: z.string().optional(),
-  })
-  .optional();
-
-const blogLatestSection = z
-  .object({
-    title: z.string().optional(),
-    information: z.string().optional(),
   })
   .optional();
 
@@ -347,21 +263,6 @@ const productCollection = defineCollection({
   }),
 });
 
-const homepageCollection = defineCollection({
-  loader: file('src/content/homepage/index.json'),
-  schema: createLocaleSchema({
-    hero: heroSection,
-    hero_carousel: heroCarouselSection,
-    features: featuresSection,
-    featured_products: featuredProductsSection,
-    content_workshop: contentSection,
-    steps: stepsSection,
-    blog_latest: blogLatestSection,
-    faqs: faqsSection,
-    cta: ctaSection,
-  }),
-});
-
 const aboutCollection = defineCollection({
   loader: file('src/content/about/index.json'),
   schema: createLocaleSchema({
@@ -481,7 +382,6 @@ const caseUseCollection = defineCollection({
 export const collections = {
   post: postCollection,
   product: productCollection,
-  homepage: homepageCollection,
   about: aboutCollection,
   contact: contactCollection,
   news: newsCollection,

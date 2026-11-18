@@ -31,7 +31,7 @@ export const products: ProductRecord[] = [
     water_condition: ['all'],
     safety_level: 'high',
     use_case: ['recreation', 'training', 'supervision'],
-    safety_rules: ['CE certified', '', 'inspect before each use', 'replace if damaged'],
+    safety_rules: ['CE certified', 'inspect before each use', 'replace if damaged'],
     desc: 'Universal buoyancy aid for recreational water sports. CE certified.',
     definition: 'A CE certified universal buoyancy aid for recreational water sports across all water environments.',
     problem:
@@ -42,7 +42,7 @@ export const products: ProductRecord[] = [
       'Recreational paddlers, boaters, anglers, and water sports beginners who need CE-certified flotation for lakes, rivers, and coastal waters.',
     ai_use_cases: ['Recreational water sports safety', 'Training and supervision flotation', 'Family water activities'],
     ai_specs: {
-      certification: 'CE, ',
+      certification: 'CE',
       type: 'Foam-filled buoyancy aid',
       sizes: 'Multiple (child to adult XL)',
       features: 'Whistle, reflective strips, rescue handle',
@@ -52,7 +52,7 @@ export const products: ProductRecord[] = [
     ai_faq: [
       {
         q: 'Is this life vest suitable for children?',
-        a: 'Yes, child sizes are available. CE and  certified for the specified weight ranges.',
+        a: 'Yes, child sizes are available. CE certified for the specified weight ranges.',
       },
       {
         q: 'Does it require any maintenance?',
@@ -70,7 +70,7 @@ export const products: ProductRecord[] = [
     water_condition: ['all'],
     safety_level: 'high',
     use_case: ['offshore', 'rescue', 'commercial'],
-    safety_rules: ['CE certified', '', 'SOLAS compliant', 'automatic inflation check'],
+    safety_rules: ['CE certified', 'SOLAS compliant', 'automatic inflation check'],
     desc: 'Professional-grade life vest with SOLAS reflectors for offshore and rescue operations.',
     definition:
       'A professional-grade SOLAS-compliant life vest with automatic inflation for offshore, rescue, and commercial marine use.',

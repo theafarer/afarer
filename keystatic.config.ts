@@ -66,41 +66,6 @@ const heroText = {
   content: fields.text({ label: 'Content (HTML)', multiline: true }),
 };
 
-const heroCarousel = {
-  autoplay_interval: fields.integer({ label: 'Autoplay interval (ms)', defaultValue: 5000 }),
-  slides: fields.array(
-    fields.object({
-      image: fields.object(imageFields, { label: 'Image' }),
-      tagline: fields.text({ label: 'Tagline' }),
-      title: fields.text({ label: 'Title', multiline: true }),
-      subtitle: fields.text({ label: 'Subtitle', multiline: true }),
-      actions: fields.array(fields.object(actionFields), {
-        label: 'Actions',
-        itemLabel: (p) => p.fields.text.value || 'Action',
-      }),
-    }),
-    { label: 'Slides', itemLabel: (p) => p.fields.tagline.value || 'Slide' }
-  ),
-};
-
-const features = {
-  id: fields.text({ label: 'Section ID' }),
-  tagline: fields.text({ label: 'Tagline' }),
-  title: fields.text({ label: 'Title', multiline: true }),
-  subtitle: fields.text({ label: 'Subtitle', multiline: true }),
-  columns: fields.select({
-    label: 'Columns',
-    options: [
-      { label: '1', value: '1' },
-      { label: '2', value: '2' },
-      { label: '3', value: '3' },
-      { label: '4', value: '4' },
-    ],
-    defaultValue: '3',
-  }),
-  items: fields.array(fields.object(itemFields), { label: 'Items', itemLabel: (p) => p.fields.title.value || 'Item' }),
-};
-
 const features2 = {
   title: fields.text({ label: 'Title', multiline: true }),
   subtitle: fields.text({ label: 'Subtitle', multiline: true }),
@@ -138,24 +103,6 @@ const features3 = {
   image: fields.object(imageFields, { label: 'Image' }),
 };
 
-const content = {
-  isReversed: fields.checkbox({ label: 'Reverse layout' }),
-  tagline: fields.text({ label: 'Tagline' }),
-  title: fields.text({ label: 'Title', multiline: true }),
-  subtitle: fields.text({ label: 'Subtitle', multiline: true }),
-  content: fields.text({ label: 'Content (HTML)', multiline: true }),
-  items: fields.array(fields.object(itemFields), { label: 'Items', itemLabel: (p) => p.fields.title.value || 'Item' }),
-  image: fields.object(imageFields, { label: 'Image' }),
-};
-
-const steps = {
-  tagline: fields.text({ label: 'Tagline' }),
-  title: fields.text({ label: 'Title', multiline: true }),
-  isReversed: fields.checkbox({ label: 'Reverse layout' }),
-  items: fields.array(fields.object(itemFields), { label: 'Steps', itemLabel: (p) => p.fields.title.value || 'Step' }),
-  image: fields.object(imageFields, { label: 'Image' }),
-};
-
 const steps2 = {
   tagline: fields.text({ label: 'Tagline' }),
   title: fields.text({ label: 'Title', multiline: true }),
@@ -184,45 +131,6 @@ const stats = {
     }),
     { label: 'Statistics', itemLabel: (p) => p.fields.title.value || 'Stat' }
   ),
-};
-
-const faqs = {
-  title: fields.text({ label: 'Title', multiline: true }),
-  subtitle: fields.text({ label: 'Subtitle', multiline: true }),
-  columns: fields.select({
-    label: 'Columns',
-    options: [
-      { label: '1', value: '1' },
-      { label: '2', value: '2' },
-    ],
-    defaultValue: '2',
-  }),
-  items: fields.array(fields.object(itemFields), {
-    label: 'FAQ Items',
-    itemLabel: (p) => p.fields.title.value || 'Question',
-  }),
-};
-
-const cta = {
-  title: fields.text({ label: 'Title', multiline: true }),
-  subtitle: fields.text({ label: 'Subtitle', multiline: true }),
-  actions: fields.array(fields.object(actionFields), {
-    label: 'Actions',
-    itemLabel: (p) => p.fields.text.value || 'Action',
-  }),
-};
-
-const featuredProducts = {
-  id: fields.text({ label: 'Section ID' }),
-  title: fields.text({ label: 'Title' }),
-  subtitle: fields.text({ label: 'Subtitle', multiline: true }),
-  linkText: fields.text({ label: 'Link text' }),
-  linkUrl: fields.url({ label: 'Link URL' }),
-};
-
-const blogLatest = {
-  title: fields.text({ label: 'Title' }),
-  information: fields.text({ label: 'Information text', multiline: true }),
 };
 
 const contactForm = {
@@ -285,23 +193,6 @@ export default config({
     repo: 'afarer/official',
   },
   singletons: {
-    homepage: singleton({
-      label: '🏠 Homepage',
-      path: 'src/content/homepage/index',
-      format: { data: 'json' },
-      schema: createMultilingualSchema({
-        hero: fields.object(hero, { label: 'Hero Section' }),
-        hero_carousel: fields.object(heroCarousel, { label: 'Hero Carousel' }),
-        features: fields.object(features, { label: 'Features' }),
-        featured_products: fields.object(featuredProducts, { label: 'Featured Products' }),
-        content_workshop: fields.object(content, { label: 'Workshop Content' }),
-        steps: fields.object(steps, { label: 'Steps' }),
-        blog_latest: fields.object(blogLatest, { label: 'Blog Latest' }),
-        faqs: fields.object(faqs, { label: 'FAQs' }),
-        cta: fields.object(cta, { label: 'CTA' }),
-      }),
-    }),
-
     about: singleton({
       label: '👥 About',
       path: 'src/content/about/index',

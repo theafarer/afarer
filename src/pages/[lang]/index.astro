@@ -2295,7 +2295,7 @@ const localizedProducts = products.map((p) => localizeProduct(p, lang || default
           name: p.name,
           category: p.category,
           description: p.desc,
-          audience: { '@type': 'Audience', suggestedGender: p.skill },
+          audience: { '@type': 'Audience', audienceType: p.skill },
           application: p.use_case,
           safetyConsideration: p.safety_rules,
         })),
