@@ -136,7 +136,7 @@ Products developed for: recreation (family paddling, lake exploration, touring),
 
 ## Related Resources
 
-- [Brand Entity Page](${SITE_URL}/brand/afarer)
+- [Brand Entity Page](${SITE_URL}/afarer-story)
 - [Products](${SITE_URL}/products)
 - [Factory Overview](${SITE_URL}/factory)
 - [R&D Center](${SITE_URL}/randdcenter)
