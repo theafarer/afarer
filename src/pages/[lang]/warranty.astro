@@ -21,14 +21,14 @@ const page = getPageContent(lang, 'warranty') || {};
 const metadata = {
   title: `Warranty — ${SITE.name}`,
   description:
-    t('warranty.metaDesc') || 'Afarer 5-year limited warranty coverage for inflatable SUPs and marine products.',
+    t('warranty.metaDesc') || 'Afarer 3-year limited warranty coverage for inflatable SUPs and marine products.',
 };
 
 const crumbs = [{ name: t('nav.home'), href: `/${lang}/` }, { name: t('nav.warranty') }];
 
 const graphJsonLd = articleSchema({
   headline: page.headline || 'Afarer Manufacturer Limited Warranty',
-  description: page.seo?.description || 'Afarer 5-year limited warranty on inflatable marine products.',
+  description: page.seo?.description || 'Afarer 3-year limited warranty on inflatable marine products.',
   datePublished: page.seo?.datePublished || '2024-01-01',
   dateModified: page.seo?.dateModified || '2026-06-01',
   author: SITE.name,

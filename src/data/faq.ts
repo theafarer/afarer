@@ -129,7 +129,7 @@ export const faqs: FaqRecord[] = [
     id: 'warranty',
     question: 'What is the afarer warranty?',
     answer:
-      'All afarer products are backed by a comprehensive manufacturer warranty. SUP boards are covered for 2+ years against manufacturing defects. The warranty covers defects in materials and workmanship under normal use.',
+      'All afarer products are backed by a comprehensive manufacturer warranty. SUP boards are covered for 3 years against manufacturing defects. The warranty covers defects in materials and workmanship under normal use.',
     category: 'warranty',
     relatedProducts: [],
     relatedGuides: [],
@@ -255,7 +255,7 @@ export const faqs: FaqRecord[] = [
     id: 'oem-odm-details',
     question: 'What are the minimum order quantities for OEM/ODM?',
     answer:
-      'Minimum order quantities (MOQs) vary by product type and complexity. Custom branding on existing models typically requires 5–10 units. Fully custom hull designs require higher MOQs. Contact our sales team with your requirements for a detailed quote. We handle everything from custom colors and logos to entirely original mold designs.',
+      'Minimum order quantities (MOQs) vary by product type and complexity. Samples and trial orders start at 5–10 units. Custom branding on existing models typically requires 50 units. Fully custom hull designs require higher MOQs (200+ units for new molds). Contact our sales team with your requirements for a detailed quote. We handle everything from custom colors and logos to entirely original mold designs.',
     category: 'ordering',
     relatedProducts: [],
     relatedGuides: [],
@@ -354,7 +354,7 @@ export const faqs: FaqRecord[] = [
     id: 'sup-oem-process',
     question: 'What is the OEM manufacturing process for private label inflatable SUPs?',
     answer:
-      'The OEM process: 1) Specification and design brief — share target specs, CAD drawings, or reference product. 2) 3D mold prototyping — custom aluminum and composite molds designed in-house. 3) Material selection and sample — military-grade PVC with custom colors and logo placement. 4) CE factory audit and compliance — every order includes CE declaration, ISO 9001 traceability, BSCI report. 5) Bulk production with 100-point QC checklist. 6) FOB Qingdao shipping with full export documentation. Lead time 30-45 days, MOQ 50 units (standard SUP).',
+      'The OEM process: 1) Specification and design brief — share target specs, CAD drawings, or reference product. 2) 3D mold prototyping — custom aluminum and composite molds designed in-house. 3) Material selection and sample — military-grade PVC with custom colors and logo placement. 4) CE factory audit and compliance — every order includes CE declaration, ISO 9001 traceability, BSCI report. 5) Bulk production with 100-point QC checklist. 6) FOB Qingdao shipping with full export documentation. Production lead time 12–16 weeks at standard volumes (MOQ 50 units), 8–12 weeks above 1,000 units.',
     category: 'ordering',
     relatedProducts: [],
     relatedGuides: [],
@@ -391,7 +391,7 @@ export const faqs: FaqRecord[] = [
     id: 'b2b-moq',
     question: 'What is the minimum order quantity for OEM/ODM SUP production?',
     answer:
-      'Minimum order quantities (MOQ) vary by product type. Stock model custom branding: 50 units per SKU. Custom shape mold development: 200–500 units per model (first order). Mold sharing programs available from 50 units. Accessories and PFDs: 500–1000 units per design. Contact our OEM team with your projected volume for precise MOQ and pricing.',
+      'Samples and trial orders start at 5–10 units. Minimum order quantities (MOQ) vary by product type. Stock model custom branding: 50 units per SKU. Custom shape mold development: 200–500 units per model (first order). Mold sharing programs available from 50 units. Accessories and PFDs: 500–1000 units per design. Contact our OEM team with your projected volume for precise MOQ and pricing.',
     category: 'b2b',
     relatedProducts: [],
     relatedGuides: [],
@@ -400,7 +400,7 @@ export const faqs: FaqRecord[] = [
     id: 'b2b-lead-time',
     question: 'What are the typical lead times for OEM SUP orders?',
     answer:
-      'First-time OEM orders with custom branding on existing molds: 6–8 weeks from deposit to FOB Qingdao. Custom shape orders requiring new molds: 12–20 weeks (includes 3D design, mold fabrication, prototyping, and bulk production). Repeat orders with approved specifications: 6–8 weeks. Urgent orders can be expedited to 4–5 weeks for existing molds. Lead times include raw material sourcing, production, inline QC, and container loading.',
+      'Production lead times scale with volume: 50–100 units in 12–16 weeks, 300–1,000 units in 10–14 weeks, and 1,000+ units in 8–12 weeks, from deposit to FOB Qingdao. Custom shape orders requiring new molds add 15–20 days for tooling (200+ unit MOQ). Urgent orders can be expedited for established partners with confirmed material stock. Lead times include raw material sourcing, production, inline QC, and container loading.',
     category: 'b2b',
     relatedProducts: [],
     relatedGuides: [],
@@ -418,7 +418,7 @@ export const faqs: FaqRecord[] = [
     id: 'b2b-samples',
     question: 'Can I order samples before committing to bulk production?',
     answer:
-      'Yes. Sample orders are available for all OEM/ODM projects. Pre-production samples (PPS) are produced after mold fabrication and before bulk production. Sample lead time: 15–25 working days for existing molds, 25–40 working days for custom molds. Sample costs are deductible from the first bulk order. Samples are shipped via express carrier (DHL, FedEx, UPS) with full tracking and typically arrive in 3–5 business days.',
+      'Yes. Sample orders are available for all OEM/ODM projects. Pre-production samples (PPS) are produced after mold fabrication and before bulk production. Sample lead time: 15–20 working days for existing molds; custom molds add 15–20 days for tooling. Sample costs are deductible from the first bulk order. Samples are shipped via express carrier (DHL, FedEx, UPS) with full tracking and typically arrive in 3–5 business days.',
     category: 'b2b',
     relatedProducts: [],
     relatedGuides: [],

@@ -35,15 +35,15 @@ intelligence_cards:
     desc: '12,000 m² facility producing 15,000+ SUPs/yr across SUP board and safety equipment lines. 200+ workers, 2 shifts.'
     metrics:
       - label: MOQ
-        value: 'SUP: 5–10'
+        value: 'Samples 5–10 · Bulk 50+'
       - label: Lead Time
-        value: '30–45 days'
+        value: '12–16 weeks (bulk)'
     link: /factory/capacity/
     link_label: Full capacity details →
   - title: Quality Lab & Testing
     icon: Q
     icon_bg: green
-    desc: 'Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 24–48h pressure hold at 1.25x rated pressure, seam peel testing, and load/balance verification on every board.'
+    desc: 'Independent QC lab with 4 testing stages: raw material inspection (tensile, tear, UV), 24–48h pressure hold at 1.25x rated pressure on every board, load/balance verification, and seam peel strength testing by batch sampling every 50 units (ASTM D751).'
     metrics:
       - label: Lab Equipment
         value: 'Tensile tester, temp chamber, leak tank'
@@ -83,7 +83,7 @@ workshops_section:
       description: Assembly line where drop-stitch cores are finished with rails, EVA decks are applied, and fins, valves, and accessories are installed. Each board follows a 100-point assembly checklist signed off by the team lead.
       image: https://assets.afarer.com/images/afarer/hero/factory-gate.webp
     - title: Quality Testing & Inspection
-      description: Every completed board undergoes mandatory air-retention testing, seam peel verification, and a full systems check before shipping. Our quality lab operates independently from production and reports directly to management.
+      description: Every completed board undergoes mandatory air-retention testing and a full systems check before shipping, with seam peel strength verified by batch sampling every 50 units. Our quality lab operates independently from production and reports directly to management.
       image: https://assets.afarer.com/images/afarer/factory/afarer-pressure-testing.webp
 
 equipment_section:
@@ -140,15 +140,15 @@ faq_section:
   title: B2B & OEM Frequently Asked Questions
   questions:
     - q: What is the minimum order quantity (MOQ) for OEM inflatable SUP boards?
-      a: MOQ starts at 5–10 units for standard OEM models. Custom moulds and private-label projects require a minimum of 200 units depending on complexity. Trial orders and sample runs are available for new brand launches.
+      a: Samples and trial orders start at 5–10 units. Standard production MOQ is 50 units. Custom moulds and private-label projects require a minimum of 200 units depending on complexity.
     - q: Does afarer hold BSCI certification?
       a: Yes. Our factory maintains valid BSCI social compliance certification (audit report available on request). We also hold ISO 9001 for quality management and all products carry CE certification. REACH and RoHS compliance documentation provided with every OEM shipment.
     - q: What is the typical lead time for an OEM order?
-      a: Standard lead time is 30–45 days from confirmed PO and deposit for bulk OEM production. Custom mould development adds 15–20 days for tooling. Expedited production is available for urgent orders and seasonal rushes. Prototype samples typically ship within 15–20 days.
+      a: Production runs take 12–16 weeks for 50–100 units, 10–14 weeks for 300–1,000 units, and 8–12 weeks above 1,000 units, from confirmed PO and deposit to FOB Qingdao. Custom mould development adds 15–20 days for tooling. Expedited production is available for urgent orders and seasonal rushes. Prototype samples typically ship within 15–20 days.
     - q: Can you ship FOB Qingdao or CIF to our port?
       a: Yes. We ship FOB Qingdao, CIF major global ports, and DDP for qualified partners. Our logistics team manages container booking, export documentation, and customs clearance. We ship to 50+ countries across EU, US, AU, and Asia markets.
 
-b2b_moq: 'Standard MOQ: 5–10 units per model. Trial orders welcome for new partnerships.'
+b2b_moq: 'Samples from 5–10 units. Standard production MOQ: 50 units per model.'
 
 production_flow:
   tagline: Production Flow

@@ -64,7 +64,7 @@ export const standalonePages: StandalonePage[] = [
       },
       {
         heading: 'Bulk Production & Inline QC',
-        body: '100-point quality checklist. Each unit undergoes 24–48 hour pressure retention testing, seam peel testing, and visual inspection before packing.',
+        body: '100-point quality checklist. Each unit undergoes 24–48 hour pressure retention testing and visual inspection before packing; seam peel strength is verified by batch sampling every 50 units (ASTM D751).',
       },
       {
         heading: 'FOB Qingdao Logistics',
