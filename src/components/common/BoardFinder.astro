@@ -160,16 +160,15 @@ const specLabelsJson = JSON.stringify({
     color: rgba(255, 255, 255, 0.75);
   }
 </style>
-
 <script is:inline define:vars={{ finderProductsJson, finderStringsJson, specLabelsJson }}>
   (function () {
-    var root = document.getElementById('board-finder');
+    const root = document.getElementById('board-finder');
     if (!root) return;
-    var P = JSON.parse(finderProductsJson);
-    var S = JSON.parse(finderStringsJson);
-    var L = JSON.parse(specLabelsJson);
-    var state = { experience: null, use: null, weight: null };
-    var USE_SERIES = {
+    const P = JSON.parse(finderProductsJson);
+    const S = JSON.parse(finderStringsJson);
+    const L = JSON.parse(specLabelsJson);
+    const state = { experience: null, use: null, weight: null };
+    const USE_SERIES = {
       allaround: ['all-around', 'mini', 'yoga'],
       touring: ['touring', 'all-around'],
       yoga: ['yoga', 'all-around'],
@@ -178,13 +177,13 @@ const specLabelsJson = JSON.stringify({
       family: ['multi-person', 'all-around'],
       kids: ['kids-teens', 'mini'],
     };
-    var RIDER = { lt140: 130, '140_180': 160, '180_230': 205, gt230: 255 };
-    var BEGINNER_OK = ['all-around', 'mini', 'kids-teens', 'yoga', 'multi-person'];
-    var ADV = ['race', 'surf', 'whitewater'];
+    const RIDER = { lt140: 130, '140_180': 160, '180_230': 205, gt230: 255 };
+    const BEGINNER_OK = ['all-around', 'mini', 'kids-teens', 'yoga', 'multi-person'];
+    const ADV = ['race', 'surf', 'whitewater'];
 
     function scoreOf(p, strict) {
-      var series = USE_SERIES[state.use] || [];
-      var s = 0;
+      const series = USE_SERIES[state.use] || [];
+      let s = 0;
       if (series.indexOf(p.series) === 0) s += 4;
       else if (series.indexOf(p.series) > -1) s += 2;
       if (state.experience === 'beginner') {
@@ -211,7 +210,7 @@ const specLabelsJson = JSON.stringify({
     }
 
     function card(p, i) {
-      var badge =
+      const badge =
         i === 0
           ? '<span class="finder-badge absolute top-3 left-3 z-10 px-2.5 py-1 bg-sky-500 text-white text-xs font-semibold rounded-full">' +
             esc(S.badge_best) +
@@ -261,17 +260,17 @@ const specLabelsJson = JSON.stringify({
       );
     }
 
-    var resultsEl = root.querySelector('#finder-results');
-    var hintEl = root.querySelector('#finder-hint');
+    const resultsEl = root.querySelector('#finder-results');
+    const hintEl = root.querySelector('#finder-hint');
 
     function render() {
       if (!state.experience || !state.use || !state.weight) return;
-      var strict = P.map(function (p) {
+      const strict = P.map(function (p) {
         return { p: p, s: scoreOf(p, true) };
       }).filter(function (x) {
         return x.s !== null;
       });
-      var list = strict;
+      let list = strict;
       if (list.length === 0) {
         list = P.map(function (p) {
           return { p: p, s: scoreOf(p, false) };
@@ -291,7 +290,7 @@ const specLabelsJson = JSON.stringify({
 
     root.querySelectorAll('[data-value]').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        var group = btn.getAttribute('data-group');
+        const group = btn.getAttribute('data-group');
         state[group] = btn.getAttribute('data-value');
         root.querySelectorAll('[data-value][data-group="' + group + '"]').forEach(function (b) {
           b.removeAttribute('data-selected');
