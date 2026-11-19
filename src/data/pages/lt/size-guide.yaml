@@ -1,35 +1,61 @@
 meta:
-  title: 'Dydžių ir specifikacijų vadovas — pripučiamos SUP lentos | {SITE}'
-  description: 'Matmenys, talpos ir rekomenduojami naudojimo būdai kiekvienam afarer produktui. Raskite tinkamą pripučiamos SUP lentos dydį pagal savo poreikius.'
+  title: Dydžių ir specifikacijų vadovas — pripučiamos SUP lentos | {SITE}
+  description: Matmenys, talpos ir rekomenduojami naudojimo būdai kiekvienam afarer produktui. Raskite tinkamą pripučiamos SUP lentos dydį pagal savo poreikius.
   keywords:
-    - 'sup dydžių vadovas'
-    - 'irklavimo lentų matmenys'
-    - 'pripučiamų sup specifikacijos'
-    - 'SUP dydžių lentelė'
+    - sup dydžių vadovas
+    - irklavimo lentų matmenys
+    - pripučiamų sup specifikacijos
+    - SUP dydžių lentelė
 hero:
-  title: 'Dydžių ir specifikacijų vadovas'
-  subtitle: 'Matmenys, talpos ir rekomenduojami naudojimo būdai kiekvienam afarer produktui.'
-
+  title: Dydžių ir specifikacijų vadovas
+  subtitle: Matmenys, talpos ir rekomenduojami naudojimo būdai kiekvienam afarer produktui.
 categories:
-  inflatable: 'Pripučiamos SUP lentos, sukurtos mobilumui neaukojant našumo. Parinkite tinkamą dydį pagal savo svorį ir irklavimo stilių.'
-  sup: 'Stovimosios irklavimo lentos turizmui, jogai, fitnesui ir poilsio irklavimui. Rinkitės pagal ilgį ir raitelio svorį.'
-  accessory: 'Priedai ir saugos įranga, papildanti jūsų SUP lentą. Universalūs dydžiai su keliomis parinktimis.'
-
+  inflatable: Pripučiamos SUP lentos, sukurtos mobilumui neaukojant našumo. Parinkite tinkamą dydį pagal savo svorį ir irklavimo stilių.
+  sup: Stovimosios irklavimo lentos turizmui, jogai, fitnesui ir poilsio irklavimui. Rinkitės pagal ilgį ir raitelio svorį.
+  accessory: Priedai ir saugos įranga, papildanti jūsų SUP lentą. Universalūs dydžiai su keliomis parinktimis.
 table:
   headers:
-    product: 'Produktas'
-    length: 'Ilgis'
-    width: 'Plotis'
-    weight: 'Svoris'
-    max_load: 'Didžiausia apkrova'
-    best_for: 'Geriausiai tinka'
-
+    product: Produktas
+    length: Ilgis
+    width: Plotis
+    weight: Svoris
+    max_load: Didžiausia apkrova
+    best_for: Geriausiai tinka
 how_to_choose:
-  title: 'Kaip pasirinkti tinkamą dydį'
+  title: Kaip pasirinkti tinkamą dydį
   cards:
-    - title: 'SUP lentos'
-      description: 'Rinkitės ilgį pagal savo svorį ir numatomą naudojimą. Platesnės lentos (32"+) suteikia daugiau stabilumo. Ilgesnės lentos (11-12 pėdų) geriau laiko kryptį turizmui. Sunkesniems irkluotojams reikalingos didesnės talpos lentos.'
-    - title: 'Turizmo SUP lentos'
-      description: 'Ilgesnės lentos (11–12 pėdų) geriausiai tinka distancijoms įveikti ir turizmui. Platesnės lentos (32"+) suteikia daugiau stabilumo. Patikrinkite svorio talpą visai apkrovai, įskaitant įrangą.'
-    - title: 'Universalios SUP lentos'
-      description: 'Rinkitės ilgį pagal raitelio svorį ir numatomą naudojimą. Universalios lentos tinka poilsio pramogoms, fitnesui ir jogai. Mažesnės lentos yra manevringesnės.'
+    - title: SUP lentos
+      description: Rinkitės ilgį pagal savo svorį ir numatomą naudojimą. Platesnės lentos (32"+) suteikia daugiau stabilumo. Ilgesnės lentos (11-12 pėdų) geriau laiko kryptį turizmui. Sunkesniems irkluotojams reikalingos didesnės talpos lentos.
+    - title: Turizmo SUP lentos
+      description: Ilgesnės lentos (11–12 pėdų) geriausiai tinka distancijoms įveikti ir turizmui. Platesnės lentos (32"+) suteikia daugiau stabilumo. Patikrinkite svorio talpą visai apkrovai, įskaitant įrangą.
+    - title: Universalios SUP lentos
+      description: Rinkitės ilgį pagal raitelio svorį ir numatomą naudojimą. Universalios lentos tinka poilsio pramogoms, fitnesui ir jogai. Mažesnės lentos yra manevringesnės.
+finder:
+  title: Raskite savo lentą
+  subtitle: Atsakykite į tris trumpus klausimus, ir mes rekomenduosime jums tinkamą lentą.
+  q_experience: Jūsų SUP patirtis
+  exp_beginner: Pradedantysis
+  exp_beginner_hint: Tik pradedate su SUP
+  exp_intermediate: Vidutinis
+  exp_intermediate_hint: Pasitikite vandenyje
+  exp_advanced: Pažengęs
+  exp_advanced_hint: Patyręs irkluotojas
+  q_use: Kaip naudosite lentą?
+  use_allaround: Universalus & Poilsis
+  use_touring: Žygiai & Atstumai
+  use_yoga: Joga & Fitnesas
+  use_fishing: Žvejyba
+  use_performance: Serfingas, Varžybos & Baltas vanduo
+  use_family: Šeimai & Keliems asmenims
+  use_kids: Vaikai & Paaugliai
+  q_weight: Irkluotojo svoris
+  w_lt140: Mažiau nei 140 lbs (64 kg)
+  w_140_180: 140-180 lbs (64-82 kg)
+  w_180_230: 180-230 lbs (82-104 kg)
+  w_gt230: Daugiau nei 230 lbs (104 kg)
+  results_title: Jūsų atitikmenys
+  results_hint: Pasirinkite patirtį, planuojamą naudojimą ir svorį, kad pamatytumėte tinkamas lentas.
+  badge_best: Geriausias atitikmuo
+  view_details: Peržiūrėti išsamią informaciją
+  start_over: Pradėti iš naujo
+  compare_all: Palyginti visas lentas

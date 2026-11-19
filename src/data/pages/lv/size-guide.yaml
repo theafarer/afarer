@@ -1,35 +1,61 @@
 meta:
-  title: 'Izmēru un specifikāciju ceļvedis — piepūšamie SUP | {SITE}'
-  description: 'Izmēri, kravnesība un ieteicamie lietojumi katram afarer produktam. Atrodiet pareizo piepūšamā SUP izmēru savām vajadzībām.'
+  title: Izmēru un specifikāciju ceļvedis — piepūšamie SUP | {SITE}
+  description: Izmēri, kravnesība un ieteicamie lietojumi katram afarer produktam. Atrodiet pareizo piepūšamā SUP izmēru savām vajadzībām.
   keywords:
-    - 'sup izmēru ceļvedis'
-    - 'airu dēļu izmēri'
-    - 'piepūšamo sup specifikācijas'
-    - 'SUP izmēru tabula'
+    - sup izmēru ceļvedis
+    - airu dēļu izmēri
+    - piepūšamo sup specifikācijas
+    - SUP izmēru tabula
 hero:
-  title: 'Izmēru un specifikāciju ceļvedis'
-  subtitle: 'Izmēri, kravnesība un ieteicamie lietojumi katram afarer produktam.'
-
+  title: Izmēru un specifikāciju ceļvedis
+  subtitle: Izmēri, kravnesība un ieteicamie lietojumi katram afarer produktam.
 categories:
-  inflatable: 'Piepūšamie SUP, radīti pārvadājamībai, neupurojoties veiktspējai. Izvēlieties pareizo izmēru atbilstoši savam svaram un airēšanas stilam.'
-  sup: 'Airu dēļi stāvus airēšanai tūrismam, jogai, fitnesam un atpūtas airēšanai. Izvēlieties pēc garuma un braucēja svara.'
-  accessory: 'Aksesuāri un drošības aprīkojums, kas papildina jūsu SUP dēli. Universāli izmēri ar vairākām opcijām.'
-
+  inflatable: Piepūšamie SUP, radīti pārvadājamībai, neupurojoties veiktspējai. Izvēlieties pareizo izmēru atbilstoši savam svaram un airēšanas stilam.
+  sup: Airu dēļi stāvus airēšanai tūrismam, jogai, fitnesam un atpūtas airēšanai. Izvēlieties pēc garuma un braucēja svara.
+  accessory: Aksesuāri un drošības aprīkojums, kas papildina jūsu SUP dēli. Universāli izmēri ar vairākām opcijām.
 table:
   headers:
-    product: 'Produkts'
-    length: 'Garums'
-    width: 'Platums'
-    weight: 'Svars'
-    max_load: 'Maks. kravnesība'
-    best_for: 'Vistam piemērotākais'
-
+    product: Produkts
+    length: Garums
+    width: Platums
+    weight: Svars
+    max_load: Maks. kravnesība
+    best_for: Vistam piemērotākais
 how_to_choose:
-  title: 'Kā izvēlēties pareizo izmēru'
+  title: Kā izvēlēties pareizo izmēru
   cards:
-    - title: 'SUP dēļi'
-      description: 'Izvēlieties garumu, pamatojoties uz savu svaru un paredzēto lietojumu. Platāki dēļi (32"+) piedāvā vairāk stabilitātes. Garāki dēļi (11-12 pēdas) labāk notur virzienu tūrismam. Smagākiem airētājiem vajadzīgi lielāka tilpuma dēļi.'
-    - title: 'Tūrisma SUP'
-      description: 'Garāki dēļi (11–12 pēdas) ir vislabākie attālumu veikšanai un tūrismam. Platāki dēļi (32"+) piedāvā vairāk stabilitātes. Pārbaudiet kravnesību kopējai slodzei, ieskaitot aprīkojumu.'
-    - title: 'Universālie SUP'
-      description: 'Izvēlieties garumu pēc braucēja svara un paredzētā lietojuma. Universālie dēļi der atpūtai, fitnesam un jogai. Mazāki dēļi ir manevrēt spējīgāki.'
+    - title: SUP dēļi
+      description: Izvēlieties garumu, pamatojoties uz savu svaru un paredzēto lietojumu. Platāki dēļi (32"+) piedāvā vairāk stabilitātes. Garāki dēļi (11-12 pēdas) labāk notur virzienu tūrismam. Smagākiem airētājiem vajadzīgi lielāka tilpuma dēļi.
+    - title: Tūrisma SUP
+      description: Garāki dēļi (11–12 pēdas) ir vislabākie attālumu veikšanai un tūrismam. Platāki dēļi (32"+) piedāvā vairāk stabilitātes. Pārbaudiet kravnesību kopējai slodzei, ieskaitot aprīkojumu.
+    - title: Universālie SUP
+      description: Izvēlieties garumu pēc braucēja svara un paredzētā lietojuma. Universālie dēļi der atpūtai, fitnesam un jogai. Mazāki dēļi ir manevrēt spējīgāki.
+finder:
+  title: Atrodiet savu dēli
+  subtitle: Atbildiet uz trim īsiem jautājumiem, un mēs ieteiksim jums piemērotu dēli.
+  q_experience: Jūsu SUP pieredze
+  exp_beginner: Iesācējs
+  exp_beginner_hint: Tikko sācis ar SUP
+  exp_intermediate: Vidējs
+  exp_intermediate_hint: Pārliecināti uz ūdens
+  exp_advanced: Pieredzējis
+  exp_advanced_hint: Pieredzējis airētājs
+  q_use: Kā jūs izmantosiet dēli?
+  use_allaround: Universāls & Atpūta
+  use_touring: Tūres & Distances
+  use_yoga: Joga & Fitness
+  use_fishing: Makšķerēšana
+  use_performance: Sērfošana, Sacīkstes & Baltais ūdens
+  use_family: Ģimenes & Daudzvietīgs
+  use_kids: Bērni & Pusaudži
+  q_weight: Braucēja svars
+  w_lt140: Zem 140 lbs (64 kg)
+  w_140_180: 140-180 lbs (64-82 kg)
+  w_180_230: 180-230 lbs (82-104 kg)
+  w_gt230: Virs 230 lbs (104 kg)
+  results_title: Jūsu atbilstības
+  results_hint: Izvēlieties pieredzi, plānoto lietojumu un svaru, lai redzētu piemērotos dēļus.
+  badge_best: Labākā atbilstība
+  view_details: Skatīt detaļas
+  start_over: Sākt no jauna
+  compare_all: Salīdzināt visus dēļus
