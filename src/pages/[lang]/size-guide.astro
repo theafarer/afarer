@@ -90,7 +90,7 @@ const finderProducts = products
 
     <div class="mt-16 space-y-16">
       {
-        (['inflatable', 'accessory'] as const).map((cat) => {
+        (['sup', 'accessory'] as const).map((cat) => {
           const catProducts = products.filter((p) => p.category === cat);
           if (catProducts.length === 0) return null;
           const catLabel = catProducts[0]?.categoryLabel || cat;
