@@ -3,6 +3,7 @@
 
 import Layout from '~/layouts/PageLayout.astro';
 import JsonLd from '~/components/common/JsonLd.astro';
+import BoardFinder from '~/components/common/BoardFinder.astro';
 import { getProducts } from '~/utils/products';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/size-guide.ts';
@@ -28,6 +29,36 @@ const getSpec = (p: (typeof products)[number], label: string) => {
   const s = p.specs?.find((s) => s.label.toLowerCase().includes(label.toLowerCase()));
   return s?.value || '-';
 };
+
+const parseLbs = (specVal: string) => {
+  const m = String(specVal).match(/([\d.]+)\s*lbs?/i);
+  if (m) return Math.round(parseFloat(m[1]));
+  const k = String(specVal).match(/([\d.]+)\s*kg/i);
+  if (k) return Math.round(parseFloat(k[1]) * 2.2046);
+  return null;
+};
+
+const finder = page.finder || {};
+const compareUrl = '/products/compare/';
+
+const finderProducts = products
+  .filter((p) => p.category === 'sup')
+  .map((p) => {
+    const maxLoad = getSpec(p, 'load') !== '-' ? getSpec(p, 'load') : getSpec(p, 'capacity');
+    return {
+      slug: p.slug,
+      title: p.title,
+      url: `/products/${p.slug}/`,
+      image: p.image || '',
+      series: p.series || '',
+      seriesLabel: p.seriesLabel || '',
+      length: getSpec(p, 'length'),
+      width: getSpec(p, 'width'),
+      maxLoad,
+      maxLoadLbs: parseLbs(maxLoad),
+      price: p.price && p.price.currency === 'USD' ? `$${p.price.amount}` : p.price ? String(p.price.amount) : null,
+    };
+  });
 ---
 
 <Layout metadata={metadata}>
@@ -102,21 +133,27 @@ const getSpec = (p: (typeof products)[number], label: string) => {
       {hero.subtitle || 'Dimensions, capacities, and recommended uses for every afarer product.'}
     </p>
 
-    <div class="mt-12 space-y-16">
+    <BoardFinder
+      finder={finder}
+      specLabels={{
+        length: tableHeaders.length || 'Length',
+        width: tableHeaders.width || 'Width',
+        max_load: tableHeaders.max_load || 'Max Load',
+      }}
+      products={finderProducts}
+      compareUrl={compareUrl}
+    />
+
+    <div class="mt-16 space-y-16">
       {
-        (['inflatable', 'accessory'] as const).map((cat) => {
+        (['sup', 'accessory'] as const).map((cat) => {
           const catProducts = products.filter((p) => p.category === cat);
           if (catProducts.length === 0) return null;
           const catLabel = catProducts[0]?.categoryLabel || cat;
           return (
             <section>
               <h2 class="text-2xl font-semibold text-gray-900 mb-2">{catLabel}</h2>
-              <p class="text-gray-500 mb-6">
-                {categoriesText[cat] ||
-                  (cat === 'inflatable'
-                    ? 'Inflatable SUPs designed for portability without sacrificing performance. Match the right size to your weight and paddling style.'
-                    : 'Accessories and safety equipment to complement your watercraft. Universal sizing with multiple options.')}
-              </p>
+              <p class="text-gray-500 mb-6">{categoriesText[cat] || ''}</p>
               <div class="overflow-x-auto">
                 <table class="w-full text-sm border-collapse">
                   <thead>
