@@ -23,9 +23,18 @@ const yamlCases: any[] = d.cases ?? [];
 const caseSlugMap: Record<string, string> = { family: 'family-recreation', outdoor: 'river-touring' };
 
 const staticUseCases = [
+  { id: 'touring', title: t('useCase.touring'), desc: t('useCase.touring.desc') },
   { id: 'tourism-recreation', title: t('useCase.tourismRecreation'), desc: t('useCase.tourismRecreation.desc') },
   { id: 'fishing', title: t('useCase.fishing'), desc: t('useCase.fishing.desc') },
+  { id: 'rescue', title: t('useCase.searchAndRescue'), desc: t('useCase.rescue.desc') },
 ];
+
+const useCaseImages: Record<string, string> = {
+  touring: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-ocean-voyager-1-1200w.webp',
+  'tourism-recreation': 'https://assets.afarer.com/images/afarer/use-cases/afarer-professional-use-case.webp',
+  fishing: 'https://assets.afarer.com/images/afarer/products/sup-series/sup-tropical-breeze-1-1200w.webp',
+  rescue: 'https://assets.afarer.com/images/afarer/use-cases/afarer-professional-use-case.webp',
+};
 
 const allUseCases = [
   ...yamlCases.map((c: any) => ({
@@ -37,9 +46,8 @@ const allUseCases = [
   ...staticUseCases.map((s) => ({
     ...s,
     image:
-      s.id === 'tourism-recreation'
-        ? 'https://assets.afarer.com/images/afarer/use-cases/afarer-professional-use-case.webp'
-        : 'https://assets.afarer.com/images/afarer/products/sup-series/sup-tropical-breeze-1-1200w.webp',
+      useCaseImages[s.id] ||
+      'https://assets.afarer.com/images/afarer/products/sup-series/sup-tropical-breeze-1-1200w.webp',
   })),
 ];
 
