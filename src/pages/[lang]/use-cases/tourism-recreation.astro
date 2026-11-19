@@ -3,9 +3,10 @@ export const prerender = true;
 
 import PageLayout from '~/layouts/PageLayout.astro';
 import { getLangFromUrl } from '~/i18n/utils';
-import { languages } from '~/i18n/config';
+import { languages, defaultLang } from '~/i18n/config';
 import { articleSchema } from '~/lib/seo/schema';
-import { nodes } from '~/content/graph/nodes';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/tourism-recreation.ts';
 
@@ -16,37 +17,36 @@ export function getStaticPaths() {
 const lang = getLangFromUrl(Astro.url);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'tourism-recreation');
-const tourismNode = nodes.find((n) => n.id === 'tourism-recreation');
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
 
-const graphJsonLd = tourismNode
-  ? {
-      '@context': 'https://schema.org',
-      '@graph': [
-        articleSchema({
-          headline: page.seo?.headline || 'Inflatable SUPs for Tourism & Recreation: The Complete Guide',
-          description:
-            page.seo?.description ||
-            'Discover the right inflatable SUP for holidays, travel, and days on the water — all-around boards, touring boards, and fishing boards for lakes, rivers, and coastlines.',
-          datePublished: page.seo?.datePublished || '2024-06-01',
-          dateModified: page.seo?.dateModified || '2026-06-01',
-          author: 'Afarer',
-          publisher: 'Afarer',
-        }),
-        {
-          '@type': 'Product',
-          name: tourismNode?.name?.en || 'Tourism & Recreation Inflatable SUPs',
-          description:
-            tourismNode?.description?.en || 'Premium inflatable SUPs for tourism and recreation applications.',
-          brand: { '@type': 'Brand', name: 'Afarer' },
-          category: 'Tourism & Recreation Equipment',
-        },
-      ],
-    }
-  : null;
+const faqs: { question?: string; answer?: string }[] = Array.isArray(page.faqs) ? page.faqs : [];
+
+const graphJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    articleSchema({
+      headline: page.seo?.headline || 'Inflatable SUPs for Tourism & Recreation: The Complete Guide',
+      description:
+        page.seo?.description ||
+        'Discover the right inflatable SUP for holidays, travel, and days on the water — all-around boards, touring boards, and fishing boards for lakes, rivers, and coastlines.',
+      datePublished: page.seo?.datePublished || '2024-06-01',
+      dateModified: page.seo?.dateModified || '2026-06-01',
+      author: 'Afarer',
+      publisher: 'Afarer',
+    }),
+    {
+      '@type': 'Product',
+      name: 'Tourism & Recreation Inflatable SUPs',
+      description: 'Premium inflatable SUPs for tourism and recreation applications.',
+      brand: { '@type': 'Brand', name: 'Afarer' },
+      category: 'Tourism & Recreation Equipment',
+    },
+  ],
+};
 ---
 
 <PageLayout>
-  <script is:inline type="application/ld+json" set:html={graphJsonLd ? JSON.stringify(graphJsonLd) : ''} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(graphJsonLd)} />
 
   <section class="mx-auto max-w-4xl px-6 py-16">
     <span class="text-sm font-medium text-sky-600 tracking-wide uppercase">{page.label || 'Use Case'}</span>
@@ -61,5 +61,21 @@ const graphJsonLd = tourismNode
     </p>
 
     <div class="mt-12 prose prose-gray dark:prose-invert max-w-none" set:html={page.body || ''} />
+
+    {
+      faqs.length > 0 && (
+        <div class="mt-12 prose prose-gray dark:prose-invert max-w-none">
+          <h2>{t('faq.title')}</h2>
+          {faqs.map((f) => (
+            <>
+              <h3>{f.question}</h3>
+              <p>{f.answer}</p>
+            </>
+          ))}
+        </div>
+      )
+    }
   </section>
+
+  {faqs.length > 0 && <JsonLd type="FAQPage" faqs={faqs} />}
 </PageLayout>
