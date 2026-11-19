@@ -3,8 +3,10 @@ export const prerender = true;
 
 import PageLayout from '~/layouts/PageLayout.astro';
 import { getLangFromUrl } from '~/i18n/utils';
-import { languages } from '~/i18n/config';
+import { languages, defaultLang } from '~/i18n/config';
 import { articleSchema } from '~/lib/seo/schema';
+import JsonLd from '~/components/common/JsonLd.astro';
+import { getUiForLang } from '~/i18n/generated/ui-all';
 import { nodes } from '~/content/graph/nodes';
 import { getPageContent, setPageContentData } from '~/i18n/page-content';
 import __pageData from '~/i18n/generated/pages/fishing.ts';
@@ -16,7 +18,10 @@ export function getStaticPaths() {
 const lang = getLangFromUrl(Astro.url);
 setPageContentData(__pageData);
 const page = getPageContent(lang, 'fishing');
+const t = (key: string) => getUiForLang(lang || defaultLang)?.[key] || '';
 const fishingNode = nodes.find((n) => n.id === 'fishing');
+
+const faqs: { question?: string; answer?: string }[] = Array.isArray(page.faqs) ? page.faqs : [];
 
 const graphJsonLd = fishingNode
   ? {
@@ -60,5 +65,21 @@ const graphJsonLd = fishingNode
     </p>
 
     <div class="mt-12 prose prose-gray dark:prose-invert max-w-none" set:html={page.body || ''} />
+
+    {
+      faqs.length > 0 && (
+        <div class="mt-12 prose prose-gray dark:prose-invert max-w-none">
+          <h2>{t('faq.title')}</h2>
+          {faqs.map((f) => (
+            <>
+              <h3>{f.question}</h3>
+              <p>{f.answer}</p>
+            </>
+          ))}
+        </div>
+      )
+    }
   </section>
+
+  {faqs.length > 0 && <JsonLd type="FAQPage" faqs={faqs} />}
 </PageLayout>
