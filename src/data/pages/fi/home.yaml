@@ -1,66 +1,64 @@
 meta:
-  title: 'Täytettävien SUP-lautojen valmistaja ja OEM/ODM-kumppani — Afarer Water Sports | {SITE}'
-  description: 'Afarer on täytettävien SUP-lautojen valmistaja ja OEM/ODM-kumppani Qingdaossa Kiinassa — ISO 9001 -sertifioitu tehdas, joka suunnittelee suorituskykyisiä täytettäviä melontalautoja avovedelle, retkeilyyn, joogaan ja seikkailuun. Painetestattu lauta laudalta, sekä OEM/ODM-, yksityismerkki- ja jakeluohjelmia.'
+  title: Afarer Ilmavat Melontalaudat | Mene pidemmälle. Aja kovempaa.
+  description: Löydä Afarerin ilmavat melontalaudat monipuoliseen melontaan, retkeilyyn, joogaan, kalastukseen ja ulkoiluseikkailuihin. Löydä täydellinen SUP ja tutki vesillä enemmän.
   keywords:
-    - 'suorituskykyinen täytettävä SUP'
-    - 'laadukas täytettävä paddle-lauta'
-    - 'täytettävän SUP-laudan merkki'
-    - 'retkeily-SUP'
-    - 'co-branded paddleboard'
-    - 'maakohtainen SUP-jakelija'
+    - ilmava melontalauta
+    - ilmava sup
+    - monikäyttöinen sup
+    - retkeilysup
+    - joogasup
+    - kalastussup
+    - perheen melontalauta
+    - kannettava melontalauta
 hero:
-  tagline: 'Täytettävien SUP-lautojen valmistaja ja OEM/ODM-kumppani'
-  title: |
-    Pidemmälle. <br class="hidden sm:inline" />
-    Vahvemmin.
-  subtitle: |
-    <span class="hidden sm:inline"><span class="font-semibold">afarer</span> suunnittelee suorituskykyisiä täytettäviä SUP-lautoja avovedelle ja pitkille päiville.</span>
-    <span class="block mb-1 sm:hidden font-bold text-blue-600">afarer: suunniteltu suorituskykyyn.</span>
-    Vakaa kun sillä on merkitystä, jäykkä paineen alla ja valmis muuttuviin vesiin.
-  taglineSection: Ammattilaistason täytettäviä SUP-ratkaisuja lomakeskuksille, kerhoille, jälleenmyyjille ja vesiliikuntabrändeille.
+  tagline: Ilmavat Melontalaudat
+  title: Ilmavat Melontalaudat Jokaiseen Seikkailuun
+  slogan: Mene pidemmälle. Aja kovempaa.
+  subtitle: Löydä melonnan vapaus Afarerin kanssa. Tutustu huolellisesti suunniteltuihin ilmaviin SUP-lautoihin rentoihin järvipäiviin, rannikkoseikkailuihin, kuntoiluun ja kaikkeen siltä väliltä.
+  taglineSection: Rakennettu luottamusta varten. Suunniteltu erottumaan.
   actions:
     - variant: primary
-      text: Tutustu tuotteisiin
-      href: /products/
-      icon: tabler:shopping-bag
-    - text: Lue lisää
-      href: '/afarer-story/'
-      icon: tabler:file-text
-    - text: Tutustu SUP-ratkaisuihin
-      href: /solutions/
-      icon: tabler:building
+      text: Etsi Lautasi
+      href: /size-guide/
+      icon: tabler:compass
+    - text: Tutki SUP-lautoja
+      href: /inflatable-sup/
+      icon: tabler:waves
+    - text: Miksi Afarer
+      href: /afarer-story/
+      icon: tabler:heart
   image:
     src: ~/assets/images/hero-image.webp
-    alt: afarer-kuva
+    alt: Afarerin ilmavat melontalaudat liukuvat rauhallisen veden yli auringonnousussa — rakennettu jokaiseen seikkailuun
 who_we_serve:
-  tagline: Ketkä me palvelemme
-  title: Kattavat SUP-ratkaisut vesiliiketoiminnalle
-  subtitle: Neljälle keskeiselle markkinalle suunnitellut laitteet, valmistus ja liiketoimintatuki.
+  tagline: Aja Kanssamme
+  title: Löydä Oma Vesireittisi
+  subtitle: Jokaisella melojalla on oma käsityksensä seikkailusta. Löydä Afarer SUP, joka on suunniteltu sinun tapaesi meloa.
   items:
-    - title: Soutuseurat
-      keywords: SUP-kerhon laitteet, melontakoulun laitteet, vuokrausten kalusto
-      description: Kestävät SUP-valikoimat, kerhohinnat ja varaosapohjelmat soutukerhoille ja kouluille.
+    - title: Aloittelijat & Vapaa-ajan Melojat
+      keywords: ilmava sup aloittelijoille, monikäyttöinen melontalauta, vakaa sup
+      description: Leveät, vakaat monikäyttöiset laudat, jotka tekevät ensimmäisestä melontavedosta luontevan ja kasvavat mukanasi.
       icon: tabler:users
-      cta: Tutustu melontakerhon ratkaisuihin
-      link: /solutions/paddle-clubs/
-    - title: Lomakohteet ja hotellit
-      keywords: lomakohteen vesiliikunta, hotellin rantavarusteet, vieraskokemus
-      description: Täydelliset SUP-kalusto-ohjelmat räätälöidyllä brändäyksellä, henkilöstökoulutuksella ja ROI-optimoituine paketteineen.
+      cta: Etsi Ensimmäinen Lautasi
+      link: /all-around-sup/
+    - title: Retkimelonta & Seikkailu
+      keywords: retkeilysup, pitkän matkan melontalauta, retkisup
+      description: Pidemmät, kapeammat laudat, jotka pitävät suunnan, liukuvat pidemmälle ja kantavat varusteet monipäiväisille reiteille.
       icon: tabler:building
-      cta: Luo lomakeskuksesi vesielämys
-      link: /solutions/resorts-hotels/
-    - title: Vähittäiskaupan kumppanit
-      keywords: SUP tukku, ulkoiluretailit, urheilutarvikkeiden kaupat
-      description: Kattava tuotevalikoima, markkinointimateriaalit, dropshipping-vaihtoehdot ja kilpailukykyiset tukkumarginaalit.
-      icon: tabler:shopping-cart
-      cta: Ryhy vähittäiskumppaniksi
-      link: /solutions/retail-partners/
-    - title: Maakohtaiset jakelijat ja co-brand-kumppanit
-      keywords: maakohtainen SUP-jakelija, co-branded SUP, private label SUP
-      description: Eksklusiivista maakohtaista jakelua ja rajoitettuja co-branded-kokoelmia valikoiduille vesiurheiluyrityksille.
-      icon: tabler:package
-      cta: Ryhdy kumppaniksi
-      link: /distributor-program/
+      cta: Tutki Retkeily-SUPeja
+      link: /touring-sup/
+    - title: Jooga & Kuntoilu
+      keywords: joogasup, kuntoilumelontalauta, leveä vakaa sup
+      description: Leveät, vakaat alustat, joissa on tilaa liikkua — auringonnousun virtauksiin, treeneihin ja tasapainoon rauhallisella vedellä.
+      icon: tabler:heart
+      cta: Tutki Jooga-SUPeja
+      link: /yoga-sup/
+    - title: Kalastus & Perhe
+      keywords: kalastussup, perheen melontalauta, vakaa kalastusalusta
+      description: Vakaat, käytännölliset alustat heittokalastukseen, lasten kanssa risteilyyn ja pitkiin rentoihin päiviin vedellä.
+      icon: tabler:users
+      cta: Tutki Kalastus-SUPeja
+      link: /fishing-sup/
 proof_points:
   title: Testattu näyttelyä vaativammissa olosuhteissa
   subtitle: Suunnittelu, suorituskyky ja laatu, jotka voit todentaa — vedessä ja luvuissa.
@@ -78,76 +76,29 @@ proof_points:
       label: Painetestattu lauta laudalta
       detail: Tarkastettu ennen lähetystä
 business_solutions:
-  tagline: Miten autamme
-  title: Kumppanisi suunnittelusta tuloksiin asti
-  subtitle: Neljä ydinosaamista, jotka auttavat vesialan yrityksiä käynnistymään, toimimaan ja kasvamaan.
+  tagline: Miksi Aja Eroaa
+  title: Suorituskyky, jonka Tunnet Ensimmäisestä Vedosta
+  subtitle: Neljä pilaria, jotka todellinen vesi on muovannut — suorituskyky, design, rakenne ja laatu.
   items:
-    - title: Ammattilaisvarusteet
-      description: Kaupallisen tason SUP-laudat suunniteltu päivittäiseen vuokrauskäyttöön, yli 500 kierrosta vähäisellä huollolla.
+    - title: Suorituskyky Vedellä
+      description: Muodot viritetty vakauteen, liukuun ja luottamukseen aallokossa — jokainen veto pysyy yhteydessä veteen.
       icon: tabler:shield-check
-    - title: Co-brand-kokoelmat
-      description: Rajoitettuja co-branded-kokoelmia, jotka suunnitellaan, kehitetään ja rakennetaan yhdessä afarerin kanssa — jokainen lauta pysyy afarer-tuotteena.
+    - title: Ilmeikäs Design
+      description: Kokoelmat, jotka ammentavat vuorovedestä, eläimistöstä ja rannikon energiasta — lautoja, joilla haluat näkyä.
       icon: tabler:package
-    - title: Liiketoiminnan tuki
-      description: Henkilökunnan koulutusta, markkinointimateriaaleja, varaosaohjelmia ja omaa asiakkuudenhoitoa.
+    - title: Todistettu Rakenne
+      description: Suurtiheyksiset drop-stitch-ytimet, vahvistetut reunat ja fuusiolaminoidut saumat toistuvaan käyttöön.
       icon: tabler:headset
-    - title: Globaali logistiikka
-      description: FOB Qingdao, CIF suurimpiin satamiin, ovesta ovelle toimitus yli 50 maan tullituella.
+    - title: Varmennettu Laatu
+      description: Painetestatut, visuaalisesti tarkastetut ja selkeän takuun sekä reagoivan asiakaspalvelun takaamat.
       icon: tabler:truck-delivery
-oem_section:
-  tagline: 'OEM / ODM- ja co-brand-valmistus'
-  title: Ideasta veteen — co-branded-versiot
-  subtitle: 'Kumppaneille, jotka haluavat enemmän kuin katalogituotteen: OEM/ODM-valmistusta ja rajoitettuja co-branded-kokoelmia, jotka suunnitellaan, kehitetään ja rakennetaan yhdessä afarerin kanssa — ja jokainen lauta pysyy afarer-tuotteena.'
-  steps:
-    - number: '01'
-      title: Idea ja briefi
-      desc: Jaa visiosi, kohdemarkkinasi ja määrityksesi.
-    - number: '02'
-      title: Suunnittelu ja suunnittelu
-      desc: 3D-mallinnus, materiaalien valinta ja mukautettu graafinen suunnittelu.
-    - number: '03'
-      title: Prototyypit ja validointi
-      desc: Näytekappaleiden valmistus CE-sertifioinnilla ja laatutestauksella.
-    - number: '04'
-      title: Sarjatuotanto
-      desc: Täysimittainen valmistus, jossa laadunvalvonta on osa tuotantolinjaa, sekä tehdasauditointituki.
-    - number: '05'
-      title: Globaali toimitus
-      desc: FOB Qingdao logistiikka, CIF suurimpiin satamiin, ovesta ovelle.
-  cta: Tutustu co-brandingiin
-  cta_link: /co-brand/
 cta:
-  title: |
-    Valmis aloittamaan?
-  subtitle: Kerro vaatimuksesi, ja toimitamme mukautetun tarjouksen, vähimmäistilausmäärän tiedot ja toimitusajan yhden työpäivän kuluessa.
+  title: Löydä seuraava lautasi.
+  subtitle: Olipa kyse ensimmäisestä vedostasi tai pisimmästä reitistäsi — saatamme sinut vedelle.
   actions:
     - variant: primary
-      text: Pyydä tarjous
-      href: /contact/
-      icon: tabler:message-circle
-    - text: Tutustu kokoelmaan
+      text: Tutki Kokoelmaa
       href: /inflatable-sup/
-distributor:
-  tagline: Maakohtaiset eksklusiiviset jakelijat
-  title: Yksi maa. Yksi virallinen afarer-jakelija.
-  subtitle: Yksi maa, yksi jälleenmyyjä -ohjelma, johon sisältyy alueellinen yksinoikeus, jälleenmyyntihinnat, markkinointituki ja oma Distributor Success Program.
-  benefits:
-    - title: Alueellinen yksinoikeus
-      description: Yksi valtuutettu jälleenmyyjä maata tai aluetta kohti — ei sisäistä kilpailua, ei kanavaristiriitoja.
-    - title: Suorat tehdasmarginaalit
-      description: Jälleenmyyjälistahinnat ja vuosialennukset sitoutuneista volyymeista, toimitettuna FOB Qingdao.
-    - title: Markkinointi- ja koulutustuki
-      description: Yhteisbrändättyjä materiaaleja, myyntipisteaineistoja, tuotekoulutusta ja lanseerauskampanjoita.
-    - title: Oma asiakastimi
-      description: Henkilökohtainen jälleenmyyntipäällikkö sekä perehdytys-, ennuste- ja jälkitilaustukea.
-  actions:
-    - variant: primary
-      text: Ryhdy jälleenmyyjäksi
-      href: /distributor-program/
-    - text: Pyydä jälleenmyyjähinnasto
-      href: /contact/?subject=Dealer Price List
-    - text: Hae maakumppanuutta
-      href: /contact/?subject=Country Partnership Application
-    - text: Lataa jälleenmyyjäohjelma
-      href: /distributor-program/
-  note: Näytetilaukset 5–10 kappaletta. Kokeilutilaukset 10–30. Valtuutettu jälleenmyyjä 30–50. Maa-/aluejakelija 100–300+.
+      icon: tabler:send
+    - text: Tilaa Katalogi
+      href: /resources/download-catalog/

@@ -563,3 +563,14 @@
     - { key: subtitle, type: content, label: 'Subtitle' }
     - { key: seo, type: content, label: 'SEO Metadata' }
     - { key: body, type: content, label: 'Body Content' }
+
+- slug: where-to-buy
+  label: Where to Buy
+  path: /where-to-buy
+  permalink: /where-to-buy/
+  file: src/data/pages/where-to-buy.yaml
+  sections:
+    - { key: hero, type: hero, label: 'Top Hero' }
+    - { key: channels, type: features, label: 'Purchase Channels' }
+    - { key: form_intro, type: content, label: 'Form Intro' }
+    - { key: business_note, type: content, label: 'Business Note' }

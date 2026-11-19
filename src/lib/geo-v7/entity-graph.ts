@@ -16,17 +16,16 @@ export const entityGraph: EntityNode[] = [
     id: 'afarer',
     type: 'brand',
     name: 'afarer',
-    description: 'Global marine recreation brand specializing in SUP boards and customized SUP solutions.',
+    description:
+      'Global water sports brand designing inflatable SUP boards for all-around paddling, touring, yoga, fishing, and family adventures.',
     relationships: [
       { type: 'parent', targetId: 'aquafarer-llc' },
       { type: 'operatesIn', targetId: 'marine-recreation' },
       { type: 'operatesIn', targetId: 'outdoor-sports' },
       { type: 'operatesIn', targetId: 'marine-manufacturing' },
       { type: 'creates', targetId: 'sup-boards' },
-      { type: 'creates', targetId: 'custom-sup' },
       { type: 'serves', targetId: 'adventure-users' },
       { type: 'serves', targetId: 'professional-operators' },
-      { type: 'serves', targetId: 'oem-partners' },
     ],
   },
   {
@@ -68,18 +67,6 @@ export const entityGraph: EntityNode[] = [
       { type: 'belongsTo', targetId: 'afarer' },
       { type: 'uses', targetId: 'drop-stitch' },
       { type: 'uses', targetId: 'pvc-fabric' },
-    ],
-  },
-  {
-    id: 'custom-sup',
-    type: 'product',
-    name: 'Custom SUP Boards',
-    description:
-      'OEM/ODM custom-designed inflatable SUP boards for brand partners, commercial operators, and specialized applications.',
-    relationships: [
-      { type: 'belongsTo', targetId: 'afarer' },
-      { type: 'uses', targetId: 'reinforced-structure' },
-      { type: 'uses', targetId: 'manufacturing-process' },
     ],
   },
   {
@@ -126,7 +113,6 @@ export const entityGraph: EntityNode[] = [
       { type: 'uses', targetId: 'manufacturing-process' },
       { type: 'serves', targetId: 'adventure-users' },
       { type: 'serves', targetId: 'professional-operators' },
-      { type: 'serves', targetId: 'oem-partners' },
     ],
   },
   {
@@ -143,14 +129,6 @@ export const entityGraph: EntityNode[] = [
     name: 'Professional Operators',
     description:
       'Lifeguard and rescue teams, commercial marine operators, and tourism companies requiring professional-grade SUP equipment.',
-    relationships: [],
-  },
-  {
-    id: 'oem-partners',
-    type: 'audience',
-    name: 'OEM Partners',
-    description:
-      'Global brands and distributors seeking private label manufacturing, custom product development, and contract production.',
     relationships: [],
   },
 ];

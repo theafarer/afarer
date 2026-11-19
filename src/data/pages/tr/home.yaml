@@ -1,66 +1,64 @@
 meta:
-  title: 'Şişme SUP Üreticisi ve OEM/ODM Partneri — Afarer Water Sports | {SITE}'
-  description: "afarer, Çin'in Qingdao kentinde şişme SUP üreticisi ve OEM/ODM partneridir — açık su, tur, yoga ve macera için performans odaklı şişme paddle tahtaları tasarlayan ISO 9001 sertifikalı bir fabrika. Tahta tahta basınç testi, OEM/ODM, özel marka ve distribütörlük programlarıyla."
+  title: Afarer Şişme Paddleboard’lar | Daha uzağa git. Daha güçlü kürek çek.
+  description: Afarer şişme paddleboard’ları all-around kürek çekme, tur, yoga, balıkçılık ve açık hava maceraları için keşfedin. Size uygun SUP’ı bulun ve suda daha fazlasını keşfedin.
   keywords:
-    - 'performans şişme sup'
-    - 'premium şişme paddle board'
-    - 'şişme sup tahtası markası'
-    - 'tur şişme sup'
-    - 'co-branded paddle board'
-    - 'ülke sup distribütörü'
+    - şişme paddleboard
+    - şişme sup
+    - all-around sup
+    - tur sup
+    - yoga sup
+    - balıkçılık sup
+    - aile paddleboard
+    - taşınabilir paddleboard
 hero:
-  tagline: 'Şişme SUP Üreticisi ve OEM/ODM Partneri'
-  title: |
-    Daha Uzağa Git.<br class="hidden sm:inline" />
-    <span class="text-accent dark:text-white">Daha Güçlü Sür</span>.
-  subtitle: |
-    <span class="hidden sm:inline"><span class="font-semibold">afarer</span> açık su, uzun günler ve keşif özgürlüğü için tasarlanmış performans şişme SUP'ları — önemli olduğunda stabil, <br />basınç altında sert ve değişen sulara hazır.</span>
-    <span class="block mb-1 sm:hidden font-bold text-blue-600">afarer: açık su için.</span>
-    Önemli olduğunda stabil, basınç altında sert, değişen sulara hazır.
-  taglineSection: Tatil köyleri, kulüpler, perakendeciler ve su markaları için ticari sınıf şişirilebilir SUP çözümleri.
+  tagline: Şişme Paddleboard’lar
+  title: Her Macera için Şişme Paddleboard’lar
+  slogan: Daha uzağa git. Daha güçlü kürek çek.
+  subtitle: Afarer ile kürek çekmenin özgürlüğünü keşfedin. Gölet başındaki huzurlu günler, kıyı maceraları, fitness ve daha fazlası için özenle tasarlanmış şişme SUP’ları keşfedin.
+  taglineSection: Güven için üretildi. Farklılaşmak için tasarlandı.
   actions:
     - variant: primary
-      text: Ürünleri Gör
-      href: /products/
-      icon: tabler:shopping-bag
-    - text: Daha Fazla Bilgi
-      href: '/afarer-story/'
-      icon: tabler:file-text
-    - text: SUP Çözümlerini Keşfedin
-      href: /solutions/
-      icon: tabler:building
+      text: Boardını Bul
+      href: /size-guide/
+      icon: tabler:compass
+    - text: SUP’ları Keşfet
+      href: /inflatable-sup/
+      icon: tabler:waves
+    - text: Neden Afarer
+      href: /afarer-story/
+      icon: tabler:heart
   image:
     src: ~/assets/images/hero-image.webp
-    alt: afarer kapak
+    alt: Afarer şişme SUP’ları gün doğumunda sakin suda süzülüyor — her macera için üretildi
 who_we_serve:
-  tagline: Kimlere Hizmet Veriyoruz
-  title: Her Su İşletmesi İçin Komple SUP Çözümleri
-  subtitle: Dört ana pazar için özel üretmiş ekipman, üretim ve iş desteği.
+  tagline: Bizimle Kürek Çekin
+  title: Sudaki Yolunu Bul
+  subtitle: Her kürekçinin maceradan farklı bir ideası vardır. Sizin sürüşünüze uygun tasarlanmış bir Afarer SUP keşfedin.
   items:
-    - title: Paddle Kulüpleri
-      keywords: SUP kulüp ekipmanları, kürek okulu ekipmanları, kiralık filo
-      description: Dayanıklı SUP filoları, kulüp fiyatlandırması ve kürek kulüpleri ile okulları için yedek parça programları.
+    - title: Yeni Başlayanlar ve Amatör Kürekçiler
+      keywords: yeni başlayanlar için şişme sup, all-around paddleboard, stabil sup
+      description: İlk kürek çekişinizi doğal hissettiren ve gelişirken yanınızda olan geniş, stabil all-around boardlar.
       icon: tabler:users
-      cta: Kulüp Çözümlerimizi Keşfedin
-      link: /solutions/paddle-clubs/
-    - title: Tatil Köyleri ve Oteller
-      keywords: tatil köyü su etkinlikleri, otel plaj ekipmanları, misafir deneyimi
-      description: Özel markalama, personel eğitimi ve ROI optimize paketler için tam SUP filo programları.
+      cta: İlk Boardını Bul
+      link: /all-around-sup/
+    - title: Tur ve Macera
+      keywords: tur supı, uzun mesafe paddleboard, seyahat supı
+      description: Daha uzun, daha dar, düz giden, daha uzağa gliden ve çok günlü rotalar için ekipman taşıyan boardlar.
       icon: tabler:building
-      cta: Tatil Köyü Su Deneyiminizi Oluşturun
-      link: /solutions/resorts-hotels/
-    - title: Perakende Ortakları
-      keywords: SUP toptan satışı, açık hava perakendecileri, spor malzemeleri mağazaları
-      description: Tam ürün yelpazesi, pazarlama materyalleri, dropshipping seçenekleri ve rekabetçi toptan kar marjları.
-      icon: tabler:shopping-cart
-      cta: Perakende Ortağımız Olun
-      link: /solutions/retail-partners/
-    - title: Ülke Distribütörleri & Co-Brand Ortakları
-      keywords: ülke SUP distribütörü, co-branded SUP, özel etiketli SUP
-      description: Ülke ülke münhasır dağıtım ve nitelikli su sporu işletmeleri için sınırlı co-branded koleksiyonlar.
-      icon: tabler:package
-      cta: Ortak Olun
-      link: /distributor-program/
+      cta: Tur SUP’larını Keşfet
+      link: /touring-sup/
+    - title: Yoga ve Fitness
+      keywords: yoga supı, fitness paddleboard, geniş stabil sup
+      description: Hareket alanı sunan geniş, stabil platformlar — gün doğumu akışları, antrenmanlar ve sakin suda denge için.
+      icon: tabler:heart
+      cta: Yoga SUP’larını Keşfet
+      link: /yoga-sup/
+    - title: Balıkçılık ve Aile
+      keywords: balıkçılık supı, aile paddleboard, stabil balıkçılık platformu
+      description: Olta atmak, çocuklarla kürek çekmek ve suda uzun huzurlu günler için stabil, pratik platformlar.
+      icon: tabler:users
+      cta: Balıkçılık SUP’larını Keşfet
+      link: /fishing-sup/
 proof_points:
   title: Showroom ötesinde test edildi
   subtitle: Tasarım, performans ve kaliteyi doğrulayabilirsiniz — suda ve rakamlarda.
@@ -78,76 +76,29 @@ proof_points:
       label: Tahta tahta basınç testi
       detail: Sevkiyat öncesi denetlenir
 business_solutions:
-  tagline: Nasıl Yardımcı Oluyoruz
-  title: Konseptten Gelire Ortağınız
-  subtitle: İşletmelerinin kurulmasına, işletilmesine ve büyümesine yardımcı olan dört temel yetkinlik.
+  tagline: Neden Farklı Sürer
+  title: İlk Kürekte Hissettiğiniz Performans
+  subtitle: Gerçek sudan şekillenen dört temel — performans, tasarım, konstrüksiyon ve kalite.
   items:
-    - title: Profesyonel Ekipman
-      description: Günlük kiralama kullanımı için tasarlanmış ticari sınıf SUP tahtaları, 500+ döngü minimum bakım ile.
+    - title: Suda Performans
+      description: Stabilite, glidi ve dalgada güven için ayarlanmış formlar — her kürek suda bağlantıda kalır.
       icon: tabler:shield-check
-    - title: Co-Brand Koleksiyonları
-      description: afarer ile birlikte tasarlanan, mühendislik yapılan ve üretilen sınırlı co-branded koleksiyonlar — her tahta bir afarer ürünü olmaya devam eder.
+    - title: İfade Edici Tasarım
+      description: Gelgitlerden, yaban hayattan ve kıyının enerjisinden ilham alan koleksiyonlar — görülmek istediğiniz boardlar.
       icon: tabler:package
-    - title: İş Desteği
-      description: Personel eğitimi, pazarlama materyalleri, yedek parça programları ve özel hesap yönetimi.
+    - title: Kanıtlanmış Konstrüksiyon
+      description: Yüksek yoğunluklu drop-stitch çekirdekler, takviyeli kenarlar ve tekrarlı kullanım için füzyonla lamines dikişler.
       icon: tabler:headset
-    - title: Küresel Lojistik
-      description: FOB Qingdao, CIF ana limanlar, gümrük desteğiyle 50'den fazla ülkeye kapıya teslimat.
+    - title: Doğrulanmış Kalite
+      description: Basınç testli, görsel denetimli, net garanti ve hızlı satış sonrası destekle.
       icon: tabler:truck-delivery
-oem_section:
-  tagline: 'OEM / ODM ve Co-Brand Üretimi'
-  title: Fikirden Suya — Co-Branded Sürümler
-  subtitle: 'Katalog ürününden daha fazlasını isteyen ortaklar için: OEM/ODM üretimi ve afarer ile birlikte tasarlanan, mühendislik yapılan ve üretilen sınırlı co-branded koleksiyonlar — her tahta bir afarer ürünü olmaya devam eder.'
-  steps:
-    - number: '01'
-      title: Fikir ve Brief
-      desc: Vizyonunuzu, hedef pazarınızı ve teknik özelliklerinizi paylaşın.
-    - number: '02'
-      title: Tasarım ve Mühendislik
-      desc: 3D modelleme, malzeme seçimi ve özel grafik tasarımı.
-    - number: '03'
-      title: Prototip ve Doğrulama
-      desc: CE sertifikası ve kalite testi ile üretim örneği.
-    - number: '04'
-      title: Toplu Üretim
-      desc: Üretim hattı kalite kontrolü ve her aşamada kalite kontrol noktalarıyla tam ölçekli üretim.
-    - number: '05'
-      title: Küresel Teslimat
-      desc: FOB Qingdao lojistik, CIF ana limanlar, kapıya teslim.
-  cta: Co-Branding'i Keşfedin
-  cta_link: /co-brand/
 cta:
-  title: |
-    Bir sonraki botunuzu <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">yapılandırmaya hazır mısınız</span>?
-  subtitle: Botu nasıl kullanacağınızı söyleyin, bir iş günü içinde model, seçenekler ve fiyat önerelim.
+  title: Sıradaki boardınızı bulun.
+  subtitle: İlk küreğiniz ya da en uzun rotanız — sizi suya çıkarıyoruz.
   actions:
     - variant: primary
-      text: Fiyat Sor
-      href: /contact/
-      icon: tabler:message-circle
-    - text: Kataloğa Göz At
-      href: /products/
-distributor:
-  tagline: 'Ülkeye Özel Münhasır Distribütörler'
-  title: 'Tek Ülke. Tek Resmî afarer Distribütörü.'
-  subtitle: 'Ülke başına tek dağıtıcı programı; bölgesel münhasırlık, bayi fiyatları, pazarlama desteği ve özel bir Distribütör Başarı Programı.'
-  benefits:
-    - title: 'Bölgesel Münhasırlık'
-      description: 'Ülke veya bölge başına tek yetkili dağıtıcı — iç rekabet yok, kanal çakışması yok.'
-    - title: 'Doğrudan Fabrika Marjları'
-      description: 'Dağıtıcı fiyat listeleri ve taahhüt edilen hacimler için yıllık iskonto, FOB Qingdao teslimat.'
-    - title: 'Pazarlama ve Eğitim Desteği'
-      description: 'Ortak markalı varlıklar, bayi POS materyalleri, ürün eğitimi ve lansman kampanyaları.'
-    - title: 'Özel Hesap Ekibi'
-      description: 'Kişisel dağıtıcı yöneticisi ile oryantasyon, tahmin ve yeniden sipariş desteği.'
-  actions:
-    - variant: primary
-      text: 'Dağıtıcı Olun'
-      href: /distributor-program/
-    - text: 'Bayi Fiyat Listesi Talep Edin'
-      href: /contact/?subject=Dealer Price List
-    - text: 'Ülke Ortaklığı Başvurusu Yapın'
-      href: /contact/?subject=Country Partnership Application
-    - text: 'Dağıtıcı Programını İndirin'
-      href: /distributor-program/
-  note: 'Numune siparişleri 5–10 adet. Deneme siparişleri 10–30. Yetkili bayi 30–50. Ülke/Bölge Distribütörü 100–300+.'
+      text: Koleksiyonu Keşfet
+      href: /inflatable-sup/
+      icon: tabler:send
+    - text: Katalog İsteyin
+      href: /resources/download-catalog/
