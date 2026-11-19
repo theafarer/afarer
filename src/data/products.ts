@@ -679,7 +679,7 @@ export const products: ProductRecord[] = [
     howItWorks:
       'The RHEO Series uses a carbon hybrid inflatable construction that eliminates flex for a rock-solid platform. Its wave-piercing displacement nose slices through chop with minimal drag, while the 26-inch width reduces wetted surface friction and the 2+1 fin setup holds tracking at speed and aids fast sweeping turns.',
     audience:
-      'Competitive racers chasing personal bests, speed enthusiasts, and advanced paddlers who want rigid race performance with inflatable portability, plus OEM/ODM buyers sourcing a race inflatable SUP board.',
+      'Competitive racers chasing personal bests, speed enthusiasts, and advanced paddlers who want rigid race performance with inflatable portability.',
     ai_use_cases: [
       'Competitive SUP racing and sprint training',
       'High-speed fitness and interval paddling',
@@ -726,7 +726,7 @@ export const products: ProductRecord[] = [
     howItWorks:
       'The Inflatable Fishing SUP uses thick double-sided air chambers that deliver exceptional secondary stability similar to a catamaran or outrigger. A pointed nose and tail retain deck width with kayak-like tracking, and the drop-stitch PVC core is rated to 15 PSI for a rigid, dependable platform.',
     audience:
-      'Lure and bass anglers, fly and kayak fishermen, and excursion paddlers who carry coolers, camp seats, and landing nets \u2014 plus OEM/ODM buyers sourcing an inflatable fishing SUP board.',
+      'Lure and bass anglers, fly and kayak fishermen, and excursion paddlers who carry coolers, camp seats, and landing nets.',
     ai_use_cases: [
       'Stand-up lure and bass fishing',
       'Fly and kayak fishing from an inflatable platform',
@@ -773,7 +773,7 @@ export const products: ProductRecord[] = [
     howItWorks:
       'The Mini SUP Series uses a short, wide, highly stable profile with an optimized volume-to-length ratio for maximum buoyancy. Its responsive rocker line and rail profile catch small waves, and a durable puncture-resistant deck withstands dog paws while staying light and quick to inflate.',
     audience:
-      'Parents introducing kids to paddle sports, adults who want a portable surf or bodyboard hybrid, and pet owners who bring their dogs on the water \u2014 plus OEM/ODM buyers sourcing a mini inflatable SUP.',
+      'Parents introducing kids to paddle sports, adults who want a portable surf or bodyboard hybrid, and pet owners who bring their dogs on the water.',
     ai_use_cases: [
       'Kids SUP and surf progression',
       'Adult bodyboarding and shorebreak surfing',
@@ -810,20 +810,19 @@ export const products: ProductRecord[] = [
     environment: ['lake', 'river', 'coastal'],
     water_condition: ['calm', 'light chop'],
     safety_level: 'medium',
-    use_case: ['group recreation', 'rental', 'team building'],
+    use_case: ['group recreation', 'family fun', 'group games'],
     safety_rules: ['life vest recommended', 'leash required', 'check weather before paddling'],
     desc: 'Giant 16.5-foot multi-person inflatable SUP rated for 650 kg with dual-valve inflation, 8-inch hull, multiple handles, and multi-fin tracking.',
     definition:
-      'A 16.5-foot multi-person giant inflatable SUP with an 8-inch hull, dual-valve inflation, multi-handle configuration, multi-fin tracking, and double cargo bungee systems for group paddling, rentals, and team events.',
+      'A 16.5-foot multi-person giant inflatable SUP with an 8-inch hull, dual-valve inflation, multi-handle configuration, multi-fin tracking, and double cargo bungee systems for group paddling and lake days.',
     problem:
-      'Groups, rental operators, and event organizers need a single giant inflatable board that carries multiple riders safely and stays rigid under concentrated loads.',
+      'Groups, families, and friends need a single giant inflatable board that carries multiple riders safely and stays rigid under concentrated loads.',
     howItWorks:
       'The Multi-Person Giant SUP uses heavy-duty drop-stitch PVC rated to 15 PSI with a dual-valve system so two people can inflate the large air volume at once. Eight to twelve heavy-duty handles along both rails plus nose and tail handles make carrying and re-boarding easy, while a 4+1 or tri-fin setup keeps the wide board tracking straight.',
-    audience:
-      'Rental operators, watersports clubs, event organizers running team-building programs, large families, and group adventurers \u2014 plus OEM/ODM buyers sourcing a giant multi-person inflatable SUP.',
+    audience: 'Large families, group adventurers, and friends who want a floating party platform for lake days.',
     ai_use_cases: [
-      'Corporate and group team-building sessions',
-      'Commercial rental fleets and club excursions',
+      'Group games and challenges on the water',
+      'Group floats and club paddles',
       'Large family and multi-rider lake outings',
     ],
     ai_specs: {
@@ -867,7 +866,7 @@ export const products: ProductRecord[] = [
     howItWorks:
       'The Utility & Lure Skiff SUP uses a stubby, pontoon-like 47-inch outline that is virtually impossible to flip while casting or fighting large fish. Its heavy-duty reinforced drop-stitch construction is rated for 880 lbs, and the swallowtail stern provides pre-configured mounting space for power propulsion systems.',
     audience:
-      'Lure and fly anglers, spearfishers, shallow-water observers, and anglers running trolling motors from an inflatable platform \u2014 plus OEM/ODM buyers sourcing a multi-purpose lure skiff SUP.',
+      'Lure and fly anglers, spearfishers, shallow-water observers, and anglers running trolling motors from an inflatable platform.',
     ai_use_cases: [
       'Lure and fly angling from a standing or seated platform',
       'Underwater reconnaissance and spearfishing',
@@ -914,7 +913,7 @@ export const products: ProductRecord[] = [
     howItWorks:
       'The Touring Cruiser combines a drop-stitch PVC core rated to 15 PSI with rail rigidity to prevent sagging mid-span. A low-profile US fin box accepts the included 9-inch racing/touring fin or aftermarket fins, letting paddlers tune tracking and speed for specific conditions.',
     audience:
-      'Touring paddlers covering long distances, flat-water explorers, endurance cruisers, and paddlers who want tunable performance \u2014 plus OEM/ODM buyers sourcing a touring inflatable SUP board.',
+      'Touring paddlers covering long distances, flat-water explorers, endurance cruisers, and paddlers who want tunable performance.',
     ai_use_cases: [
       'Long-distance touring and coastal cruising',
       'Flat-water exploration and endurance paddling',

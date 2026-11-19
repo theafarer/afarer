@@ -417,13 +417,13 @@ const specRows = product.specs ?? [];
               class="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-gray-900 dark:bg-slate-700 text-white font-semibold rounded-full hover:bg-gray-800 dark:hover:bg-slate-600 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm"
             >
               <Icon name="tabler:message-circle" class="w-5 h-5" />
-              {t('product.oemQuote')}
+              {t('product.askQuestion')}
             </a>
             <a
-              href={withTrailingSlash(`/${lang}/contact?product=${encodeURIComponent(product.title)}&sample=1`)}
+              href={withTrailingSlash(`/${lang}/products/compare`)}
               class="inline-flex items-center justify-center gap-2 px-8 py-3.5 border-2 border-gray-200 dark:border-slate-600 text-gray-700 dark:text-slate-300 font-medium rounded-full hover:border-gray-300 dark:hover:border-slate-500 hover:bg-gray-50 dark:hover:bg-slate-800 transition-all text-sm"
             >
-              {t('product.customSample')}
+              {t('product.compareAll')}
             </a>
           </div>
         </div>
@@ -442,57 +442,6 @@ const specRows = product.specs ?? [];
             `Use cases: ${(rec?.ai_use_cases || product.ai_use_cases || []).slice(0, 3).join(', ')}`,
           ]}
         />
-      </section>
-    )
-  }
-
-  {/* Perfect For — B2B Commercial Scenarios */}
-  {
-    (rec?.ai_use_cases || product.ai_use_cases || []).length > 0 && (
-      <section class="bg-white dark:bg-slate-950 border-b border-gray-100 dark:border-slate-800">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10 md:py-14">
-          <span class="text-xs font-semibold uppercase tracking-wider text-sky-600 dark:text-sky-400 mb-2 block">
-            {t('product.perfectFor') || 'Perfect For'}
-          </span>
-          <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-slate-100 mb-6">
-            {t('product.commercialScenarios') || 'Commercial Scenarios'}
-          </h2>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {(rec?.ai_use_cases || product.ai_use_cases || []).map((uc: any) => (
-              <div class="relative bg-gradient-to-br from-sky-50 to-blue-50 dark:from-sky-900/20 dark:to-blue-900/20 rounded-2xl p-6 border border-sky-100 dark:border-sky-800 hover:shadow-md transition-all">
-                <div class="w-10 h-10 bg-sky-100 dark:bg-sky-800/50 rounded-xl flex items-center justify-center mb-4">
-                  <svg
-                    class="w-5 h-5 text-sky-600 dark:text-sky-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
-                  </svg>
-                </div>
-                <h3 class="text-base font-semibold text-gray-900 dark:text-slate-100 mb-2">{uc}</h3>
-                <p class="text-sm text-gray-500 dark:text-slate-400">
-                  {t('product.idealFor') || 'Ideal for'} {uc.toLowerCase()}
-                  {t('product.operations') || 'operations'} —{' '}
-                  {t('product.contactForDetails') || 'contact us for tailored OEM solutions.'}
-                </p>
-              </div>
-            ))}
-          </div>
-          <div class="mt-8 text-center">
-            <a
-              href={withTrailingSlash(`/${lang}/contact?product=${encodeURIComponent(product.title)}`)}
-              class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-slate-700 text-white font-semibold rounded-full hover:bg-gray-800 dark:hover:bg-slate-600 transition-all text-sm"
-            >
-              {t('cta.requestQuote')}
-            </a>
-          </div>
-        </div>
       </section>
     )
   }
@@ -766,21 +715,19 @@ const specRows = product.specs ?? [];
         {fr('Interested in', 'Intéressé par')}
         {product.title}?
       </h2>
-      <p class="text-lg text-white/70 mb-8 max-w-xl mx-auto">
-        {t('cta.requestQuote')}
-      </p>
+      <p class="text-lg text-white/70 mb-8 max-w-xl mx-auto">{t('product.finalCtaSub')}</p>
       <div class="flex flex-wrap items-center justify-center gap-4">
         <a
           href={withTrailingSlash(`/${lang}/contact?product=${encodeURIComponent(product.title)}`)}
           class="inline-flex items-center gap-2 px-8 py-4 bg-white text-gray-900 font-semibold rounded-full hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
         >
-          {t('product.oemQuote')}
+          {t('product.askQuestion')}
         </a>
         <a
-          href={withTrailingSlash(`/${lang}/contact?product=${encodeURIComponent(product.title)}&sample=1`)}
+          href={withTrailingSlash(`/${lang}/products/compare`)}
           class="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition-all"
         >
-          {t('product.customSample')}
+          {t('product.compareAll')}
         </a>
       </div>
     </div>

@@ -84,10 +84,11 @@ const link = getPermalink(product.permalink, 'product');
         {_('product.requestQuote') || 'Request a Quote'}
       </a>
       <a
-        href={`/contact/?product=${encodeURIComponent(product.title)}&custom=1`}
+        href={link}
         class="flex items-center justify-center gap-2 px-4 py-2 border border-primary text-primary text-sm font-medium rounded-lg hover:bg-primary/5 transition-colors"
       >
-        {_('product.getOemDetails') || 'Explore Co-Branding'}
+        {_('product.viewDetails') || 'View details'}
+        <Icon name="tabler:arrow-right" class="w-4 h-4" />
       </a>
     </div>
   </div>

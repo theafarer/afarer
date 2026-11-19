@@ -180,7 +180,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'La série RHEO utilise une construction gonflable hybride carbone qui élimine le flex pour une plateforme d’une rigidité absolue. Son nez déplaçant les vagues fend le clapot avec un minimum de traînée, tandis que la largeur de 26 pouces réduit la surface mouillée et l’aileron 2+1 maintient la tenue de cap à grande vitesse tout en facilitant les virages rapides.',
       audience:
-        'Compétiteurs cherchant à battre leur record, amateurs de vitesse et pagayeurs avancés qui veulent les performances d’une planche dure avec la portabilité gonflable, ainsi que les acheteurs OEM/ODM.',
+        'Compétiteurs cherchant à battre leur record, amateurs de vitesse et pagayeurs avancés qui veulent les performances d’une planche dure avec la portabilité gonflable.',
       ai_use_cases: [
         'Course SUP compétitive et entraînement sprint',
         'Fitness haute intensité et intervalles',
@@ -209,7 +209,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Le SUP de pêche gonflable utilise d’épaisses chambres à air latérales qui confèrent une stabilité secondaire exceptionnelle proche d’un catamaran ou d’un outrigger. Une pointe et une poupe effilées conservent la largeur du pont avec une tenue de cap de kayak, et le noyau drop-stitch PVC est homologué 15 PSI pour une plateforme rigide et fiable.',
       audience:
-        'Pêcheurs aux leurres et au bar, pêcheurs à la mouche et en kayak, et excursionnistes qui transportent glacières, sièges de camp et épuisettes, ainsi que les acheteurs OEM/ODM.',
+        'Pêcheurs aux leurres et au bar, pêcheurs à la mouche et en kayak, et excursionnistes qui transportent glacières, sièges de camp et épuisettes.',
       ai_use_cases: [
         'Pêche aux leurres debout',
         'Pêche à la mouche depuis une plateforme gonflable',
@@ -238,7 +238,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'La série Mini SUP utilise un profil court, large et très stable avec un rapport volume/longueur optimisé pour une flottabilité maximale. Sa ligne de rocker et son bord réactifs attrapent les petites vagues, et un pont résistant aux perforations supporte les pattes de chien tout en restant léger et rapide à gonfler.',
       audience:
-        'Les parents qui initient les enfants au paddle, les adultes qui veulent un surf ou bodyboard portable, et les propriétaires d’animaux qui emmènent leur chien sur l’eau, ainsi que les acheteurs OEM/ODM.',
+        'Les parents qui initient les enfants au paddle, les adultes qui veulent un surf ou bodyboard portable, et les propriétaires d’animaux qui emmènent leur chien sur l’eau.',
       ai_use_cases: [
         'Initiation paddle et surf des enfants',
         'Bodyboard adulte et surf de shorebreak',
@@ -261,16 +261,16 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'SUP Géant Multi-Personnes',
       desc: 'Géant SUP gonflable multi-personnes de 16,5 pieds homologué 650 kg avec gonflage à double valve, coque de 8 pouces, multiples poignées et dérives multi-ailerons.',
       definition:
-        'Un SUP gonflable géant multi-personnes de 16,5 pieds avec coque de 8 pouces, gonflage à double valve, configuration multi-poignées, dérive multi-ailerons et double systèmes de bungees de chargement pour le paddle en groupe, la location et les événements.',
+        'Un SUP gonflable géant multi-personnes de 16,5 pieds avec coque de 8 pouces, gonflage à double valve, configuration multi-poignées, dérive multi-ailerons et double systèmes de bungees de chargement pour le paddle en groupe et les journées au lac.',
       problem:
-        'Les groupes, les opérateurs de location et les organisateurs d’événements ont besoin d’une seule grande planche gonflable qui transporte plusieurs riders en toute sécurité et reste rigide sous des charges concentrées.',
+        'Les groupes, les familles et les amis ont besoin d’une seule grande planche gonflable qui transporte plusieurs riders en toute sécurité et reste rigide sous des charges concentrées.',
       howItWorks:
         'Le SUP géant multi-personnes utilise un PVC drop-stitch renforcé homologué 15 PSI avec un système à double valve pour que deux personnes puissent gonfler le grand volume d’air en même temps. Huit à douze poignées renforcées le long des bords plus les poignées de nez et de poupe facilitent le portage et la remontée à bord, tandis qu’une configuration 4+1 ou tri-aileron garde la planche sur son cap.',
       audience:
-        'Opérateurs de location, clubs de sports nautiques, organisateurs d’événements de team building, grandes familles et aventuriers en groupe, ainsi que les acheteurs OEM/ODM.',
+        'Grandes familles, aventuriers en groupe et amis qui veulent une plateforme flottante pour s’amuser au lac.',
       ai_use_cases: [
-        'Team building en entreprise et en groupe',
-        'Flottes de location et sorties de club',
+        'Jeux et défis en groupe sur l’eau',
+        'Balades en groupe et sorties de club',
         'Sorties lacustres en famille ou multi-rides',
       ],
       ai_comparison:
@@ -296,7 +296,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Le SUP Lure Skiff utilitaire utilise un profil de 47 pouces, trapu et ponton, quasi impossible à retourner en lançant ou en combattant un gros poisson. Sa construction drop-stitch renforcée est homologuée 880 lb, et la poupe en queue d’aronde offre un espace de montage préconfiguré pour les systèmes de propulsion.',
       audience:
-        'Pêcheurs aux leurres et à la mouche, pêcheurs sous-marins, observateurs des hauts-fonds et pêcheurs qui utilisent un moteur électrique sur une plateforme gonflable, ainsi que les acheteurs OEM/ODM.',
+        'Pêcheurs aux leurres et à la mouche, pêcheurs sous-marins, observateurs des hauts-fonds et pêcheurs qui utilisent un moteur électrique sur une plateforme gonflable.',
       ai_use_cases: [
         'Pêche aux leurres et à la mouche debout ou assis',
         'Reconnaissance sous-marine et pêche sous-marine',
@@ -325,7 +325,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'La Touring Cruiser combine un noyau drop-stitch PVC homologué 15 PSI avec une rigidité des bords qui évite l’affaissement au centre. Un boîtier de dérive US bas profil accepte la dérive de 9 pouces incluse ou des dérives tierces, permettant de régler la tenue de cap et la vitesse selon les conditions.',
       audience:
-        'Pagayeurs de touring longue distance, explorateurs d’eau plate, croisiéristes d’endurance et pagayeurs qui veulent des performances réglables, ainsi que les acheteurs OEM/ODM.',
+        'Pagayeurs de touring longue distance, explorateurs d’eau plate, croisiéristes d’endurance et pagayeurs qui veulent des performances réglables.',
       ai_use_cases: [
         'Touring longue distance et croisière côtière',
         'Exploration en eau plate et paddle d’endurance',
@@ -492,7 +492,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Die RHEO Serie nutzt eine Carbon-Hybrid-Aufblaskonstruktion, die Flex vollständig eliminiert. Ihre wellendurchschneidende Nase durchtrennt das Wasser mit minimalem Widerstand, während die 26-Zoll-Breite die benetzte Fläche reduziert und das 2+1-Finnensetup die Spur hält und schnelle Richtungswechsel unterstützt.',
       audience:
-        'Wettkampfpaddler auf Rekordjagd, Geschwindigkeitsfans und fortgeschrittene Paddler, die Rennleistung mit aufblasbarer Portabilität kombinieren möchten, sowie OEM/ODM-Käufer.',
+        'Wettkampfpaddler auf Rekordjagd, Geschwindigkeitsfans und fortgeschrittene Paddler, die Rennleistung mit aufblasbarer Portabilität kombinieren möchten.',
       ai_use_cases: [
         'SUP-Rennsport und Sprinttraining',
         'High-Intensity-Fitness und Intervalle',
@@ -521,7 +521,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Das aufblasbare Angel-SUP nutzt dicke doppelseitige Luftkammern für außergewöhnliche Sekundärstabilität wie bei einem Katamaran. Eine spitze Nase und ein spitzen Tail erhalten die Deckbreite mit kajakartigem Tracking, und der Drop-Stitch-PVC-Kern ist mit 15 PSI für eine starre, zuverlässige Plattform ausgelegt.',
       audience:
-        'Kunstköder- und Barschangler, Fliegen- und Kajakangler sowie Ausflügler, die Kühlboxen, Campstühle und Kescher transportieren, sowie OEM/ODM-Käufer.',
+        'Kunstköder- und Barschangler, Fliegen- und Kajakangler sowie Ausflügler, die Kühlboxen, Campstühle und Kescher transportieren.',
       ai_use_cases: [
         'Stehendes Kunstköder- und Barschangeln',
         'Fliegen- und Kajakangeln von einer aufblasbaren Plattform',
@@ -550,7 +550,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Die Mini SUP Serie nutzt ein kurzes, breites, sehr stabiles Profil mit optimiertem Volumen-zu-Längen-Verhältnis für maximale Auftriebskraft. Eine responsive Rocker- und Raillinie fängt kleine Wellen, und ein robustes, durchstichfestes Deck hält Hundepfoten stand, bleibt aber leicht und schnell aufblasbar.',
       audience:
-        'Eltern, die Kinder ans Paddeln heranführen, Erwachsene, die ein tragbares Surf- oder Bodyboard-Hybrid wollen, und Haustierbesitzer, die ihre Hunde mit aufs Wasser nehmen, sowie OEM/ODM-Käufer.',
+        'Eltern, die Kinder ans Paddeln heranführen, Erwachsene, die ein tragbares Surf- oder Bodyboard-Hybrid wollen, und Haustierbesitzer, die ihre Hunde mit aufs Wasser nehmen.',
       ai_use_cases: [
         'Kinder-SUP- und Surfortschritt',
         'Erwachsenen-Bodyboarding und Shorebreak-Surfen',
@@ -573,16 +573,16 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'Multi-Personen-Giant-SUP',
       desc: 'Riesiges 16,5-Fuß-Multi-Personen-SUP für 650 kg mit Doppelventil-Aufblasung, 8-Zoll-Rumpf, mehreren Griffen und Multi-Finnen-Tracking.',
       definition:
-        'Ein 16,5-Fuß-Multi-Personen-SUP mit 8-Zoll-Rumpf, Doppelventil-Aufblasung, mehreren Griffen, Multi-Finnen-Tracking und doppelten Bungee-Netzen für Gruppenpaddeln, Verleih und Events.',
+        'Ein 16,5-Fuß-Multi-Personen-SUP mit 8-Zoll-Rumpf, Doppelventil-Aufblasung, mehreren Griffen, Multi-Finnen-Tracking und doppelten Bungee-Netzen für Gruppenpaddeln und Seetage.',
       problem:
-        'Gruppen, Verleihbetreiber und Eventveranstalter brauchen ein einziges großes aufblasbares Board, das mehrere Rider sicher trägt und unter konzentrierten Lasten steif bleibt.',
+        'Gruppen, Familien und Freunde brauchen ein einziges großes aufblasbares Board, das mehrere Rider sicher trägt und unter konzentrierten Lasten steif bleibt.',
       howItWorks:
         'Das Multi-Personen-Giant-SUP nutzt verstärktes Drop-Stitch-PVC mit 15 PSI und ein Doppelventilsystem, damit zwei Personen das große Luftvolumen gleichzeitig aufblasen können. Acht bis zwölf verstärkte Griffe an beiden Rails plus Bug- und Heckgriffe erleichtern Tragen und Wieder-Einsteigen, während ein 4+1- oder Tri-Finnen-Setup das breite Board auf Kurs hält.',
       audience:
-        'Verleihbetreiber, Wassersportclubs, Eventveranstalter für Teambuilding, große Familien und Gruppenabenteurer sowie OEM/ODM-Käufer.',
+        'Große Familien, Gruppenabenteurer und Freunde, die eine schwimmende Party-Plattform für Seetage suchen.',
       ai_use_cases: [
-        'Teambuilding für Unternehmen und Gruppen',
-        'Verleihflotten und Clubausflüge',
+        'Gruppenspiele und Challenges auf dem Wasser',
+        'Gruppenpaddeln und Club-Touren',
         'Große Familien- und Seeausflüge mit mehreren Fahrern',
       ],
       ai_comparison:
@@ -608,7 +608,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Das Utility & Lure Skiff SUP nutzt ein stämmiges, pontonartiges 47-Zoll-Profil, das beim Werfen oder Drillen großer Fische praktisch unkippbar ist. Die verstärkte Drop-Stitch-Konstruktion ist für 880 lb ausgelegt, und das Schwalbenschwanz-Heck bietet vorkonfigurierten Montageraum für Antriebssysteme.',
       audience:
-        'Kunstköder- und Fliegenangler, Speerfischer, Beobachter von Flachwasser und Angler mit Trolling-Motor auf aufblasbarer Plattform sowie OEM/ODM-Käufer.',
+        'Kunstköder- und Fliegenangler, Speerfischer, Beobachter von Flachwasser und Angler mit Trolling-Motor auf aufblasbarer Plattform.',
       ai_use_cases: [
         'Kunstköder- und Fliegenangeln stehend oder sitzend',
         'Unterwasseraufklärung und Speerfischen',
@@ -637,7 +637,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Die Touring Cruiser kombiniert einen Drop-Stitch-PVC-Kern mit 15 PSI mit steifen Rails, um ein Durchhängen auf halber Länge zu verhindern. Eine Low-Profile-US-Finnenbox nimmt die enthaltene 9-Zoll-Renn-/Touring-Finne oder Aftermarket-Finnen auf, um Tracking und Geschwindigkeit anzupassen.',
       audience:
-        'Touring-Paddler auf langen Strecken, Flachwasserforscher, Ausdauercruiser und Paddler, die anpassbare Leistung wollen, sowie OEM/ODM-Käufer.',
+        'Touring-Paddler auf langen Strecken, Flachwasserforscher, Ausdauercruiser und Paddler, die anpassbare Leistung wollen.',
       ai_use_cases: [
         'Langstrecken-Touring und Küsten-Cruising',
         'Flachwassererkundung und Ausdauerpaddeln',
@@ -804,7 +804,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'A série RHEO usa construção inflável híbrida em carbono que elimina o flex para uma plataforma absolutamente rígida. Seu nariz de deslocamento corta a água com arrasto mínimo, enquanto a largura de 26 polegadas reduz a área molhada e o setup de aletas 2+1 mantém o tracking em velocidade alta e auxilia curvas rápidas.',
       audience:
-        'Competidores em busca de recordes pessoais, entusiastas de velocidade e paddlers avançados que querem desempenho de prancha dura com portabilidade inflável, além de compradores OEM/ODM.',
+        'Competidores em busca de recordes pessoais, entusiastas de velocidade e paddlers avançados que querem desempenho de prancha dura com portabilidade inflável.',
       ai_use_cases: [
         'Corridas competitivas de SUP e treino de sprint',
         'Fitness de alta intensidade e intervalos',
@@ -833,7 +833,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'O SUP de pesca inflável usa câmaras de ar duplas espessas que proporcionam estabilidade secundária excepcional, semelhante a um catamarã. Um nariz e popa afilados mantêm a largura do deck com tracking de caiaque, e o núcleo drop-stitch PVC é classificado a 15 PSI para uma plataforma rígida e confiável.',
       audience:
-        'Pescadores de iscas artificiais e robalo, pescadores de mosca e caiaque, e excursionistas que transportam coolers, cadeiras de acampamento e redes, além de compradores OEM/ODM.',
+        'Pescadores de iscas artificiais e robalo, pescadores de mosca e caiaque, e excursionistas que transportam coolers, cadeiras de acampamento e redes.',
       ai_use_cases: [
         'Pesca em pé com iscas artificiais e robalo',
         'Pesca de mosca e caiaque em plataforma inflável',
@@ -862,7 +862,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'A série Mini SUP usa perfil curto, largo e muito estável com razão volume-comprimento otimizada para flutuabilidade máxima. Linha de rocker e borda responsivas pegam ondas pequenas, e um deck resistente a perfurações suporta patas de cachorro permanecendo leve e rápido de inflar.',
       audience:
-        'Pais que apresentam crianças ao paddle, adultos que querem um híbrido de surf ou bodyboard portátil e donos de pets que levam cães para a água, além de compradores OEM/ODM.',
+        'Pais que apresentam crianças ao paddle, adultos que querem um híbrido de surf ou bodyboard portátil e donos de pets que levam cães para a água.',
       ai_use_cases: [
         'Progressão de paddle e surf infantil',
         'Bodyboard adulto e surf de shorebreak',
@@ -885,16 +885,16 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'SUP Gigante Multi-Pessoas',
       desc: 'SUP inflável gigante multi-pessoas de 16,5 pés classificado para 650 kg com inflação de dupla válvula, casco de 8 polegadas, múltiplas alças e tracking multi-aletas.',
       definition:
-        'Um SUP inflável gigante multi-pessoas de 16,5 pés com casco de 8 polegadas, inflação de dupla válvula, configuração multi-alças, tracking multi-aletas e duplos sistemas bungee para paddle em grupo, aluguel e eventos.',
+        'Um SUP inflável gigante multi-pessoas de 16,5 pés com casco de 8 polegadas, inflação de dupla válvula, configuração multi-alças, tracking multi-aletas e duplos sistemas bungee para paddle em grupo e dias no lago.',
       problem:
-        'Grupos, operadores de aluguel e organizadores de eventos precisam de uma única prancha inflável grande que carregue vários riders com segurança e permaneça rígida sob cargas concentradas.',
+        'Grupos, famílias e amigos precisam de uma única prancha inflável grande que carregue vários riders com segurança e permaneça rígida sob cargas concentradas.',
       howItWorks:
         'O SUP gigante multi-pessoas usa PVC drop-stitch reforçado a 15 PSI com sistema de dupla válvula para que duas pessoas inflem o grande volume de ar ao mesmo tempo. Oito a doze alças reforçadas nas laterais mais alças de proa e popa facilitam carregar e reembarcar, enquanto um setup 4+1 ou tri-aleta mantém a prancha larga no tracking.',
       audience:
-        'Operadores de aluguel, clubes de esportes aquáticos, organizadores de eventos de team building, grandes famílias e aventureiros em grupo, além de compradores OEM/ODM.',
+        'Famílias grandes, aventureiros em grupo e amigos que querem uma plataforma flutuante para se divertir no lago.',
       ai_use_cases: [
-        'Team building corporativo e em grupo',
-        'Frotas de aluguel e expedições de clubes',
+        'Jogos e desafios em grupo na água',
+        'Passeios em grupo e remadas de clube',
         'Reuniões familiares grandes em lagos',
       ],
       ai_comparison:
@@ -920,7 +920,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'O SUP Lure Skiff utilitário usa um perfil de 47 polegadas, atarracado e estilo pontão, praticamente impossível de virar ao lançar ou brigar com peixes grandes. Sua construção drop-stitch reforçada é classificada para 880 lb, e a popa em rabo de andorinha oferece espaço de montagem pré-configurado para sistemas de propulsão.',
       audience:
-        'Pescadores de iscas e mosca, pescadores subaquáticos, observadores de águas rasas e pescadores com motor elétrico em plataforma inflável, além de compradores OEM/ODM.',
+        'Pescadores de iscas e mosca, pescadores subaquáticos, observadores de águas rasas e pescadores com motor elétrico em plataforma inflável.',
       ai_use_cases: [
         'Pesca de iscas e mosca em pé ou sentado',
         'Reconhecimento subaquático e pesca subaquática',
@@ -949,7 +949,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'A Touring Cruiser combina núcleo drop-stitch PVC a 15 PSI com rigidez de borda que evita o afundamento no meio. Uma caixa de aleta US low-profile aceita a aleta de 9 polegadas incluída ou aletas aftermarket, permitindo ajustar tracking e velocidade.',
       audience:
-        'Paddlers de touring de longa distância, exploradores de águas calmas, cruzeiristas de resistência e paddlers que querem performance ajustável, além de compradores OEM/ODM.',
+        'Paddlers de touring de longa distância, exploradores de águas calmas, cruzeiristas de resistência e paddlers que querem performance ajustável.',
       ai_use_cases: [
         'Touring de longa distância e cruzeiro costeiro',
         'Exploração de águas calmas e paddle de resistência',
@@ -1116,7 +1116,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'La serie RHEO usa construcción hinchable híbrida de carbono que elimina el flex para una plataforma absolutamente rígida. Su proa de desplazamiento corta el agua con mínima resistencia, mientras la anchura de 26 pulgadas reduce la superficie mojada y el setup de aletas 2+1 mantiene el rumbo a alta velocidad y facilita giros rápidos.',
       audience:
-        'Competidores que buscan récords personales, entusiastas de la velocidad y palistas avanzados que quieren rendimiento de tabla dura con portabilidad hinchable, además de compradores OEM/ODM.',
+        'Competidores que buscan récords personales, entusiastas de la velocidad y palistas avanzados que quieren rendimiento de tabla dura con portabilidad hinchable.',
       ai_use_cases: [
         'Carreras competitivas de SUP y sprints',
         'Fitness de alta intensidad e intervalos',
@@ -1145,7 +1145,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'El SUP de pesca hinchable usa cámaras de aire dobles y gruesas que aportan estabilidad secundaria excepcional similar a un catamarán. Una proa y popa afiladas mantienen la anchura de cubierta con rumbo de kayak, y el núcleo drop-stitch PVC está clasificado a 15 PSI para una plataforma rígida y fiable.',
       audience:
-        'Pescadores de señuelos y lubina, pescadores de mosca y kayak, y excursionistas que transportan neveras, sillas plegables y redes, además de compradores OEM/ODM.',
+        'Pescadores de señuelos y lubina, pescadores de mosca y kayak, y excursionistas que transportan neveras, sillas plegables y redes.',
       ai_use_cases: [
         'Pesca de pie con señuelos y lubina',
         'Pesca de mosca y kayak desde plataforma hinchable',
@@ -1174,7 +1174,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'La serie Mini SUP usa un perfil corto, ancho y muy estable con relación volumen-longitud optimizada para máxima flotabilidad. Su línea de rocker y perfil de bordes reactivos atrapan olas pequeñas, y una cubierta resistente a perforaciones soporta las patas de los perros manteniéndose ligera y rápida de inflar.',
       audience:
-        'Padres que inician a los niños en el paddle, adultos que quieren un híbrido de surf o bodyboard portable y dueños de mascotas que llevan a sus perros al agua, además de compradores OEM/ODM.',
+        'Padres que inician a los niños en el paddle, adultos que quieren un híbrido de surf o bodyboard portable y dueños de mascotas que llevan a sus perros al agua.',
       ai_use_cases: [
         'Progresión de paddle y surf infantil',
         'Bodyboard adulto y surf de shorebreak',
@@ -1197,16 +1197,16 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'SUP Gigante Multi-Personas',
       desc: 'Gigante SUP hinchable multi-personas de 16,5 pies clasificado para 650 kg con inflado de doble válvula, casco de 8 pulgadas, múltiples asas y rumbo multi-aletas.',
       definition:
-        'Un SUP hinchable gigante multi-personas de 16,5 pies con casco de 8 pulgadas, inflado de doble válvula, configuración de múltiples asas, rumbo multi-aletas y dobles sistemas bungee para paddle en grupo, alquileres y eventos.',
+        'Un SUP hinchable gigante multi-personas de 16,5 pies con casco de 8 pulgadas, inflado de doble válvula, configuración de múltiples asas, rumbo multi-aletas y dobles sistemas bungee para paddle en grupo y días en el lago.',
       problem:
-        'Los grupos, operadores de alquiler y organizadores de eventos necesitan una sola tabla hinchable grande que transporte varios riders con seguridad y permanezca rígida bajo cargas concentradas.',
+        'Los grupos, las familias y los amigos necesitan una sola tabla hinchable grande que transporte varios riders con seguridad y permanezca rígida bajo cargas concentradas.',
       howItWorks:
         'El SUP gigante multi-personas usa PVC drop-stitch reforzado a 15 PSI con sistema de doble válvula para que dos personas inflen el gran volumen de aire a la vez. De ocho a doce asas reforzadas en ambos bordes más asas de proa y popa facilitan cargar y reembarcar, mientras un setup 4+1 o tri-aleta mantiene la tabla ancha en rumbo.',
       audience:
-        'Operadores de alquiler, clubes de deportes acuáticos, organizadores de team building, grandes familias y aventureros en grupo, además de compradores OEM/ODM.',
+        'Familias grandes, aventureros en grupo y amigos que buscan una plataforma flotante para divertirse en el lago.',
       ai_use_cases: [
-        'Team building corporativo y en grupo',
-        'Flotas de alquiler y excursiones de clubes',
+        'Juegos y retos en grupo en el agua',
+        'Paseos en grupo y salidas de club',
         'Reuniones familiares grandes y salidas en grupo',
       ],
       ai_comparison:
@@ -1232,7 +1232,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'El SUP Lure Skiff utilitario usa un perfil de 47 pulgadas, robusto y estilo pontón, prácticamente imposible de volcar al lanzar o pelear con peces grandes. Su construcción drop-stitch reforzada está clasificada para 880 lb, y la popa de cola de golondrina ofrece espacio de montaje preconfigurado para sistemas de propulsión.',
       audience:
-        'Pescadores de señuelos y mosca, pescadores submarinos, observadores de aguas someras y pescadores que usan motores eléctricos en plataforma hinchable, además de compradores OEM/ODM.',
+        'Pescadores de señuelos y mosca, pescadores submarinos, observadores de aguas someras y pescadores que usan motores eléctricos en plataforma hinchable.',
       ai_use_cases: [
         'Pesca de señuelos y mosca de pie o sentado',
         'Reconocimiento subacuático y pesca submarina',
@@ -1261,7 +1261,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'La Touring Cruiser combina núcleo drop-stitch PVC a 15 PSI con rigidez de bordes que evita el hundimiento central. Una caja de aleta US low-profile acepta la aleta de 9 pulgadas incluida o aletas aftermarket, permitiendo ajustar rumbo y velocidad.',
       audience:
-        'Palistas de touring de larga distancia, exploradores de aguas planas, cruceristas de resistencia y palistas que quieren rendimiento ajustable, además de compradores OEM/ODM.',
+        'Palistas de touring de larga distancia, exploradores de aguas planas, cruceristas de resistencia y palistas que quieren rendimiento ajustable.',
       ai_use_cases: [
         'Touring de larga distancia y crucero costero',
         'Exploración de aguas planas y paddle de resistencia',
@@ -1428,7 +1428,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'La serie RHEO usa una costruzione gonfiabile ibrida in carbonio che elimina la flessione per una piattaforma assolutamente stabile. La prua a dislocamento fende l’onda con resistenza minima, mentre la larghezza di 26 pollici riduce la superficie bagnata e la configurazione di pinne 2+1 mantiene la direzionalità ad alta velocità e agevola le virate rapide.',
       audience:
-        'Racer competitivi a caccia del primato personale, appassionati di velocità e paddleisti avanzati che vogliono prestazioni da tavola rigida con la praticità di una gonfiabile, più acquirenti OEM/ODM.',
+        'Racer competitivi a caccia del primato personale, appassionati di velocità e paddleisti avanzati che vogliono prestazioni da tavola rigida con la praticità di una gonfiabile.',
       ai_use_cases: [
         'Gare SUP competitive e sprint training',
         'Fitness ad alta intensità e interval training',
@@ -1457,7 +1457,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Il SUP da pesca gonfiabile usa spesse doppie camere d’aria che offrono una stabilità secondaria eccezionale simile a un catamarano o a un outrigger. Punta e poppa affusolate conservano la larghezza del deck con una direzionalità da kayak, e il nucleo drop-stitch in PVC è omologato a 15 PSI per una piattaforma rigida e affidabile.',
       audience:
-        'Pescatori a esche artificiali e a spigola, pescatori a mosca e in kayak, e appassionati di escursioni che trasportano borse frigo, sedie da campo e retini, più acquirenti OEM/ODM.',
+        'Pescatori a esche artificiali e a spigola, pescatori a mosca e in kayak, e appassionati di escursioni che trasportano borse frigo, sedie da campo e retini.',
       ai_use_cases: [
         'Pesca a esche artificiali in piedi',
         'Pesca a mosca e in kayak da una piattaforma gonfiabile',
@@ -1486,7 +1486,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'La serie Mini SUP usa un profilo corto, largo e molto stabile con un rapporto volume/lunghezza ottimizzato per la massima galleggiabilità. La linea di rocker e il profilo reattivi catturano le piccole onde, e un deck resistente alle forature sopporta le zampe dei cani restando leggero e rapido da gonfiare.',
       audience:
-        'Genitori che avviano i bambini al paddle, adulti che vogliono un ibrido portatile tra surf e bodyboard, e proprietari che portano i cani in acqua, più acquirenti OEM/ODM.',
+        'Genitori che avviano i bambini al paddle, adulti che vogliono un ibrido portatile tra surf e bodyboard, e proprietari che portano i cani in acqua.',
       ai_use_cases: [
         'Progressione di paddle e surf per bambini',
         'Bodyboard per adulti e surf in shorebreak',
@@ -1509,16 +1509,16 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'SUP Gigante Multi-Persona',
       desc: 'Gigantesco SUP gonfiabile multi-persona da 16,5 piedi omologato per 650 kg con gonfiaggio a doppia valvola, scafo da 8 pollici, maniglie multiple e direzionalità multi-pinna.',
       definition:
-        'Un SUP gonfiabile gigante multi-persona da 16,5 piedi con scafo da 8 pollici, gonfiaggio a doppia valvola, configurazione a più maniglie, direzionalità multi-pinna e doppi sistemi bungee per il carico per il paddle di gruppo, il noleggio e gli eventi di squadra.',
+        'Un SUP gonfiabile gigante multi-persona da 16,5 piedi con scafo da 8 pollici, gonfiaggio a doppia valvola, configurazione a più maniglie, direzionalità multi-pinna e doppi sistemi bungee per il carico per il paddle di gruppo e le giornate al lago.',
       problem:
-        'Gruppi, operatori di noleggio e organizzatori di eventi hanno bisogno di un’unica grande tavola gonfiabile che trasporti più rider in sicurezza e resti rigida sotto carichi concentrati.',
+        'Gruppi, famiglie e amici hanno bisogno di un’unica grande tavola gonfiabile che trasporti più rider in sicurezza e resti rigida sotto carichi concentrati.',
       howItWorks:
         'Il SUP gigante multi-persona usa un drop-stitch in PVC resistente omologato a 15 PSI con un sistema a doppia valvola, così due persone possono gonfiare contemporaneamente il grande volume d’aria. Da otto a dodici maniglie resistenti lungo entrambi i lati, più maniglie di prua e poppa, facilitano trasporto e risalita, mentre una configurazione 4+1 o tri-pinna mantiene dritta l’ampia tavola.',
       audience:
-        'Operatori di noleggio, club di sport acquatici, organizzatori di eventi di team building, grandi famiglie e gruppi di avventura, più acquirenti OEM/ODM.',
+        'Famiglie numerose, gruppi di avventura e amici che cercano una piattaforma galleggiante per divertirsi al lago.',
       ai_use_cases: [
-        'Sessioni di team building aziendale e di gruppo',
-        'Flotte per noleggio commerciale ed escursioni da club',
+        'Giochi e sfide di gruppo in acqua',
+        'Girate in gruppo e uscite in club',
         'Grandi uscite in famiglia e multi-rider sul lago',
       ],
       ai_comparison:
@@ -1544,7 +1544,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Il SUP skiff utility e da esche usa un profilo basso tipo pontone da 47 pollici praticamente impossibile da capovolgere durante il lancio o il combattimento con pesci di grandi dimensioni. La costruzione drop-stitch rinforzata è omologata per 880 lb, e la poppa a coda di rondine offre uno spazio di montaggio preconfigurato per i sistemi di propulsione.',
       audience:
-        'Pescatori a esche artificiali e a mosca, pescatori subacquei, osservatori di acque basse e pescatori che usano motori da traina su una piattaforma gonfiabile, più acquirenti OEM/ODM.',
+        'Pescatori a esche artificiali e a mosca, pescatori subacquei, osservatori di acque basse e pescatori che usano motori da traina su una piattaforma gonfiabile.',
       ai_use_cases: [
         'Pesca a esche e a mosca in piedi o seduti',
         'Ricognizione subacquea e pesca subacquea',
@@ -1573,7 +1573,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'La Touring Cruiser combina un nucleo drop-stitch in PVC omologato a 15 PSI con la rigidità dei bordi per evitare cedimenti a metà corsa. Una scatola pinna US a profilo basso accetta la pinna da 9 pollici inclusa o pinne aftermarket, permettendo di regolare direzionalità e velocità per condizioni specifiche.',
       audience:
-        'Paddleisti da touring su lunghe distanze, esploratori di acque calme, crocieristi resistenti e paddleisti che vogliono prestazioni configurabili, più acquirenti OEM/ODM.',
+        'Paddleisti da touring su lunghe distanze, esploratori di acque calme, crocieristi resistenti e paddleisti che vogliono prestazioni configurabili.',
       ai_use_cases: [
         'Touring a lunga distanza e crociera costiera',
         'Esplorazione in acque calme e paddle di resistenza',
@@ -1740,7 +1740,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Seria RHEO wykorzystuje hybrydową nadmuchiwaną konstrukcję węglową, która eliminuje gięcie, dając kamiennie stabilną platformę. Przecinająca fale dziobówka wypornościowa tnie wodę z minimalnym oporem, szerokość 26 cali zmniejsza tarcie powierzchni zwilżonej, a układ pletw 2+1 utrzymuje kurs przy prędkości i wspiera szybkie zamiatania.',
       audience:
-        'Wyczynowi zawodnicy goniący rekordy życiowe, entuzjaści prędkości i zaawansowani wioślarze, którzy chcą sztywnych osiągów wyścigowych z przenośnością nadmuchiwaną, a także kupcy OEM/ODM.',
+        'Wyczynowi zawodnicy goniący rekordy życiowe, entuzjaści prędkości i zaawansowani wioślarze, którzy chcą sztywnych osiągów wyścigowych z przenośnością nadmuchiwaną.',
       ai_use_cases: [
         'Wyścigi SUP i trening sprinterski',
         'Fitness o wysokiej intensywności i interwały',
@@ -1769,7 +1769,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Nadmuchiwane SUP wędkarskie wykorzystuje grube podwójne komory powietrzne, które zapewniają wyjątkową stabilność wtórną podobną do katamaranu lub outriggera. Szpiczasta dziobówka i rufa zachowują szerokość pokładu z trzymaniem kursu jak kajak, a rdzeń drop-stitch PVC jest przystosowany do 15 PSI, dając sztywną i niezawodną platformę.',
       audience:
-        'Wędkarze łowiący na woblery i okonie, wędkarze muchowi i kajakowi oraz wioślarze ekspedycyjni wożący lodówki, krzesła biwakowe i podbieraki, a także kupcy OEM/ODM.',
+        'Wędkarze łowiący na woblery i okonie, wędkarze muchowi i kajakowi oraz wioślarze ekspedycyjni wożący lodówki, krzesła biwakowe i podbieraki.',
       ai_use_cases: [
         'Łowienie na woblery i okonie na stojąco',
         'Wędkarstwo muchowe i kajakowe z nadmuchiwanej platformy',
@@ -1798,7 +1798,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Seria Mini SUP wykorzystuje krótki, szeroki i bardzo stabilny profil ze zoptymalizowanym stosunkiem objętości do długości, zapewniającym maksymalną wyporność. Reaktywna linia rockera i profil dziobu łapią małe fale, a wytrzymały pokład odporny na przebicia znosi psi pazur, pozostając lekki i szybki w pompowaniu.',
       audience:
-        'Rodzice wprowadzający dzieci w wiosłowanie, dorośli szukający przenośnego hybrydowego surfu lub bodyboardu oraz właściciele zwierząt zabierający psy na wodę, a także kupcy OEM/ODM.',
+        'Rodzice wprowadzający dzieci w wiosłowanie, dorośli szukający przenośnego hybrydowego surfu lub bodyboardu oraz właściciele zwierząt zabierający psy na wodę.',
       ai_use_cases: [
         'Nauka paddle i surfu dla dzieci',
         'Bodyboard dla dorosłych i surfing w strefie rwącej fali',
@@ -1821,16 +1821,16 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'Gigantyczne SUP Multi-Osobowe',
       desc: 'Ogromne 16,5-stopowe nadmuchiwane SUP dla wielu osób, homologowane na 650 kg, z podwójnym zaworem, kadłubem 8 cali, licznymi uchwytami i trzymaniem kursu dzięki wielu pletwom.',
       definition:
-        '16,5-stopowe gigantyczne nadmuchiwane SUP dla wielu osób z kadłubem 8 cali, pompowaniem podwójnym zaworem, wieloma uchwytami, trzymaniem kursu dzięki wielu pletwom i podwójnymi systemami bungee na ładunek do wspólnego wiosłowania, wynajmu i imprez zespołowych.',
+        '16,5-stopowe gigantyczne nadmuchiwane SUP dla wielu osób z kadłubem 8 cali, pompowaniem podwójnym zaworem, wieloma uchwytami, trzymaniem kursu dzięki wielu pletwom i podwójnymi systemami bungee na ładunek do wspólnego wiosłowania i dni nad jeziorem.',
       problem:
-        'Grupy, operatorzy wypożyczalni i organizatorzy wydarzeń potrzebują jednej ogromnej nadmuchiwanej deski, która bezpiecznie uniesie wielu riderów i pozostanie sztywna pod skoncentrowanym obciążeniem.',
+        'Grupy, rodziny i przyjaciele potrzebują jednej ogromnej nadmuchiwanej deski, która bezpiecznie uniesie wielu riderów i pozostanie sztywna pod skoncentrowanym obciążeniem.',
       howItWorks:
         'Gigantyczne SUP multi-osobowe wykorzystuje wytrzymały drop-stitch PVC o ciśnieniu 15 PSI z systemem podwójnego zaworu, dzięki któremu dwie osoby mogą pompować ogromną objętość powietrza jednocześnie. Od ośmiu do dwunastu wytrzymałych uchwytów na obu burtach oraz uchwyty z przodu i z tyłu ułatwiają przenoszenie i ponowne wejście, a układ 4+1 lub z trzema pletwami utrzymuje szeroką deskę na kursie.',
       audience:
-        'Operatorzy wypożyczalni, kluby sportów wodnych, organizatorzy programów team building, duże rodziny i grupowe przygody, a także kupcy OEM/ODM.',
+        'Duże rodziny, grupowe przygody i przyjaciele, którzy szukają pływającej platformy do zabawy nad jeziorem.',
       ai_use_cases: [
-        'Team building firmowy i grupowy',
-        'Komercyjne floty wypożyczalni i wyprawy klubowe',
+        'Zabawy i wyzwania grupowe na wodzie',
+        'Grupowe spływy i wycieczki klubowe',
         'Duże rodzinne i wieloosobowe wyprawy po jeziorze',
       ],
       ai_comparison:
@@ -1856,7 +1856,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Użytkowe SUP Skiff wykorzystuje przysadzisty, pontonowy profil 47 cali, praktycznie niemożliwy do przewrócenia podczas rzutu lub holowania dużych ryb. Wzmocniona konstrukcja drop-stitch jest przystosowana do 880 lb, a rufa w kształcie jaskółczego ogona oferuje wstępnie skonfigurowaną przestrzeń montażową dla systemów napędowych.',
       audience:
-        'Wędkarze na woblery i muchowi, spearfisherzy, obserwatorzy płycizn i wędkarze używający silników trollingowych na nadmuchiwanej platformie, a także kupcy OEM/ODM.',
+        'Wędkarze na woblery i muchowi, spearfisherzy, obserwatorzy płycizn i wędkarze używający silników trollingowych na nadmuchiwanej platformie.',
       ai_use_cases: [
         'Łowienie na woblery i muchowo na stojąco lub siedząco',
         'Podwodna obserwacja i spearfishing',
@@ -1885,7 +1885,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Touring Cruiser łączy rdzeń drop-stitch PVC o ciśnieniu 15 PSI ze sztywnością burt zapobiegającą uginaniu na środku. Niskoprofilowa skrzynka pletwy US przyjmuje dołączoną 9-calową pletwę wyścigową i touringową lub pletwy aftermarket, pozwalając dostroić trzymanie kursu i prędkość do konkretnych warunków.',
       audience:
-        'Wioślarze touringowi na długich dystansach, odkrywcy płaskiej wody, wytrwali cruizerzy i wioślarze szukający regulowanych osiągów, a także kupcy OEM/ODM.',
+        'Wioślarze touringowi na długich dystansach, odkrywcy płaskiej wody, wytrwali cruizerzy i wioślarze szukający regulowanych osiągów.',
       ai_use_cases: [
         'Długodystansowy touring i przybrzeżne wiosłowanie',
         'Eksploracja płaskiej wody i wiosłowanie wytrzymałościowe',
@@ -2052,7 +2052,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Серия RHEO использует гибридную карбоновую надувную конструкцию, которая полностью исключает изгиб и даёт каменно-устойчивую платформу. Волнорежущий нос водоизмещающего типа рассекает волну с минимальным сопротивлением, ширина 26 дюймов снижает трение смоченной поверхности, а конфигурация плавников 2+1 удерживает курс на скорости и помогает в быстрых огибающих поворотах.',
       audience:
-        'Соревнующиеся гонщики за личными рекордами, любители скорости и продвинутые гребцы, которые хотят жёсткие гоночные характеристики с портативностью надувной доски, а также OEM/ODM-покупатели.',
+        'Соревнующиеся гонщики за личными рекордами, любители скорости и продвинутые гребцы, которые хотят жёсткие гоночные характеристики с портативностью надувной доски.',
       ai_use_cases: [
         'Соревновательные SUP-гонки и спринт-тренировки',
         'Фитнес высокой интенсивности и интервальная гребля',
@@ -2081,7 +2081,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Надувное рыболовное SUP использует толстые двусторонние воздушные камеры, обеспечивающие исключительную вторичную устойчивость, схожую с катамараном или аутригером. Заострённые нос и корма сохраняют ширину палубы с каячной курсовой устойчивостью, а сердечник drop-stitch из ПВХ рассчитан на 15 PSI для жёсткой и надёжной платформы.',
       audience:
-        'Рыболовы на приманки и окуня, нахлыстовики и рыбаки на каяках, а также гребцы-экспедиционники, перевозящие кулеры, походные стулья и подсачеки, плюс OEM/ODM-покупатели.',
+        'Рыболовы на приманки и окуня, нахлыстовики и рыбаки на каяках, а также гребцы-экспедиционники, перевозящие кулеры, походные стулья и подсачеки.',
       ai_use_cases: [
         'Ловля на приманки стоя',
         'Нахлыст и рыбалка с каяка с надувной платформы',
@@ -2110,7 +2110,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Серия Mini SUP использует короткий, широкий и очень устойчивый профиль с оптимизированным соотношением объёма и длины для максимальной плавучести. Отзывчивая линия рокера и профиль борта ловят небольшие волны, а прочная стойкая к проколам палуба выдерживает собачьи лапы, оставаясь лёгкой и быстрой в надувании.',
       audience:
-        'Родители, приобщающие детей к гребле, взрослые, желающие портативный гибрид сёрф- и бодиборда, и владельцы питомцев, берущие собак на воду, плюс OEM/ODM-покупатели.',
+        'Родители, приобщающие детей к гребле, взрослые, желающие портативный гибрид сёрф- и бодиборда, и владельцы питомцев, берущие собак на воду.',
       ai_use_cases: [
         'Развитие SUP и сёрфинга у детей',
         'Бодибординг для взрослых и серфинг в прибойной волне',
@@ -2133,16 +2133,16 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'Многоместное гигантское SUP',
       desc: 'Огромное 16,5-футовое многоместное надувное SUP на 650 кг с надуванием через два клапана, 8-дюймовым корпусом, множеством ручек и мультиплавниковой курсовой устойчивостью.',
       definition:
-        '16,5-футовое многоместное гигантское надувное SUP с 8-дюймовым корпусом, надуванием через два клапана, конфигурацией со множеством ручек, мультиплавниковой курсовой устойчивостью и двойными грузовыми стропами для групповой гребли, проката и командных мероприятий.',
+        '16,5-футовое многоместное гигантское надувное SUP с 8-дюймовым корпусом, надуванием через два клапана, конфигурацией со множеством ручек, мультиплавниковой курсовой устойчивостью и двойными грузовыми стропами для групповой гребли и дней на озере.',
       problem:
-        'Группам, операторам проката и организаторам мероприятий нужна одна огромная надувная доска, которая безопасно держит нескольких райдеров и остаётся жёсткой под сосредоточенными нагрузками.',
+        'Группам, семьям и друзьям нужна одна огромная надувная доска, которая безопасно держит нескольких райдеров и остаётся жёсткой под сосредоточенными нагрузками.',
       howItWorks:
         'Многоместное гигантское SUP использует усиленный drop-stitch из ПВХ на 15 PSI с системой двух клапанов, чтобы два человека могли надувать большой объём воздуха одновременно. От восьми до двенадцати усиленных ручек вдоль обоих бортов плюс ручки на носу и корме облегчают переноску и повторную посадку, а конфигурация 4+1 или с тремя плавниками держит широкую доску на курсе.',
       audience:
-        'Операторы проката, клубы водных видов спорта, организаторы ивентов по тимбилдингу, большие семьи и групповые искатели приключений, плюс OEM/ODM-покупатели.',
+        'Большие семьи, групповые искатели приключений и друзья, которым нужна плавучая платформа для веселья на озере.',
       ai_use_cases: [
-        'Корпоративный и групповой тимбилдинг',
-        'Коммерческие прокатные флоты и клубные экспедиции',
+        'Групповые игры и испытания на воде',
+        'Групповые заплвы и клубные походы',
         'Большие семейные и многоместные выезды на озеро',
       ],
       ai_comparison:
@@ -2168,7 +2168,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Утилитарное SUP Skiff использует приземистый понтонообразный профиль шириной 47 дюймов, который практически невозможно перевернуть при забросе или вываживании крупной рыбы. Усиленная конструкция drop-stitch рассчитана на 880 фунтов, а корма «ласточкин хвост» предоставляет заранее сконфигурированное монтажное пространство для силовых установок.',
       audience:
-        'Рыболовы на приманки и нахлыстовики, подводные охотники, наблюдатели на мелководье и рыболовы, использующие троллинговые моторы на надувной платформе, плюс OEM/ODM-покупатели.',
+        'Рыболовы на приманки и нахлыстовики, подводные охотники, наблюдатели на мелководье и рыболовы, использующие троллинговые моторы на надувной платформе.',
       ai_use_cases: [
         'Ловля на приманки и нахлыст стоя или сидя',
         'Подводная разведка и подводная охота',
@@ -2197,7 +2197,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Touring Cruiser сочетает сердечник drop-stitch из ПВХ на 15 PSI с жёсткостью бортов, чтобы исключить провисание в средней части. Низкопрофильная US-пластина принимает входящий в комплект 9-дюймовый гоночно-туринговый плавник или плавники с вторичного рынка, позволяя настраивать курсовую устойчивость и скорость под конкретные условия.',
       audience:
-        'Туринговые гребцы на длинных дистанциях, исследователи спокойной воды, выносливые круизеры и гребцы, желающие настраиваемые характеристики, плюс OEM/ODM-покупатели.',
+        'Туринговые гребцы на длинных дистанциях, исследователи спокойной воды, выносливые круизеры и гребцы, желающие настраиваемые характеристики.',
       ai_use_cases: [
         'Туринг на длинные дистанции и прибрежный круиз',
         'Исследование спокойной воды и гребля на выносливость',
@@ -2354,7 +2354,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'تستخدم سلسلة RHEO هيكلًا نفخًا هجينًا من الكربون يلغي الانثناء تمامًا لمنصة صلبة كالصخر. تقطع واجهة الإزاحة الأمواج بأقل مقاومة، بينما يقلل عرض 26 بوصة من احتكاك السطح المبلل، ويحافظ إعداد الزعانف 2+1 على الانسياب عند السرعة ويساعد في المنعطفات السريعة الواسعة.',
       audience:
-        'المتسابقون التنافسيون الذين يطاردون أفضل أرقامهم الشخصية، وعشاق السرعة، والمجدفون المتقدمون الذين يرغبون في أداء سباق صلب مع قابلية النقل النفخ، إضافة إلى مشتري OEM/ODM.',
+        'المتسابقون التنافسيون الذين يطاردون أفضل أرقامهم الشخصية، وعشاق السرعة، والمجدفون المتقدمون الذين يرغبون في أداء سباق صلب مع قابلية النقل النفخ.',
       ai_use_cases: [
         'سباقات SUP التنافسية والتدريب السريع',
         'لياقة عالية الكثافة وتجديف فتراتي',
@@ -2383,7 +2383,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'يستخدم لوح SUP الصيد القابل للنفخ غرف هواء مزدوجة الجوانب سميكة توفر ثباتًا ثانويًا استثنائيًا شبيهًا بالقطامران أو الخشبة الجانبية. يحافظ الأنف والذيل المدببان على عرض السطح مع انسياب يشبه الكاياك، ونواة drop-stitch من PVC مصممة لضغط 15 رطلًا لكل بوصة مربعة لمنصة صلبة وموثوقة.',
       audience:
-        'صيادو الطعوم والقاروص، وصيادو الذبابة والكاياك، والمجدفون الرحّالة الذين يحملون الثلاجات وكراسي التخييم وشبكات الصيد، إضافة إلى مشتري OEM/ODM.',
+        'صيادو الطعوم والقاروص، وصيادو الذبابة والكاياك، والمجدفون الرحّالة الذين يحملون الثلاجات وكراسي التخييم وشبكات الصيد.',
       ai_use_cases: [
         'الصيد بالطعوم والسيروف واقفًا',
         'صيد الذبابة والكاياك من منصة قابلة للنفخ',
@@ -2412,7 +2412,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'تستخدم سلسلة ميني SUP محيطًا قصيرًا وعريضًا ومستقرًا للغاية مع نسبة حجم إلى طول محسّنة لأقصى طفو. يلتقط خط الروكر وحافة الجانب الاستجابيان الأمواج الصغيرة، ويكون السطح المقاوم للثقوب قادرًا على تحمل أقدام الكلاب مع بقائه خفيفًا وسريع النفخ.',
       audience:
-        'الآباء الذين يعرّفون أطفالهم على رياضة التجديف، والكبار الذين يرغبون في هجين سيرف أو ركوب منبطح قابل للحمل، وأصحاب الحيوانات الأليفة الذين يأخذون كلابهم إلى الماء، إضافة إلى مشتري OEM/ODM.',
+        'الآباء الذين يعرّفون أطفالهم على رياضة التجديف، والكبار الذين يرغبون في هجين سيرف أو ركوب منبطح قابل للحمل، وأصحاب الحيوانات الأليفة الذين يأخذون كلابهم إلى الماء.',
       ai_use_cases: [
         'تطوير SUP والسيرف لدى الأطفال',
         'الركوب المنبطح للكبار والسيرف في الأمواج القريبة من الشاطئ',
@@ -2435,16 +2435,15 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'SUP عملاق متعدد الأشخاص',
       desc: 'لوح SUP نفخ ضخم بطول 16.5 قدم لعدة أشخاص ومصنف لوزن 650 كجم مع نفخ بصمامين وهيكل 8 بوصات ومقابض متعددة وانسياب متعدد الزعانف.',
       definition:
-        'لوح SUP نفخ عملاق متعدد الأشخاص بطول 16.5 قدم مع هيكل بسماكة 8 بوصات ونفخ بصمامين وتكوين متعدد المقابض وانسياب متعدد الزعانف وأنظمة حبال تخزين مزدوجة للتجديف الجماعي والاستئجار والأنشطة الجماعية.',
+        'لوح SUP نفخ عملاق متعدد الأشخاص بطول 16.5 قدم مع هيكل بسماكة 8 بوصات ونفخ بصمامين وتكوين متعدد المقابض وانسياب متعدد الزعانف وأنظمة حبال تخزين مزدوجة للتجديف الجماعي وأيام ممتعة على البحيرة.',
       problem:
-        'تحتاج المجموعات ومشغلو التأجير ومنظمو الأحداث إلى لوح نفخ عملاق واحد يحمل عدة راكبين بأمان ويظل صلبًا تحت الأحمال المركزة.',
+        'تحتاج المجموعات والعائلات والأصدقاء إلى لوح نفخ عملاق واحد يحمل عدة راكبين بأمان ويظل صلبًا تحت الأحمال المركزة.',
       howItWorks:
         'يستخدم SUP العملاق متعدد الأشخاص مادة PVC من نوع drop-stitch المقوى بمعدل 15 رطلًا لكل بوصة مربعة مع نظام صمامين حتى يتمكن شخصان من نفخ الحجم الهوائي الكبير في وقت واحد. تسهل ثمانية إلى اثني عشر مقبضًا شديد التحمل على طول الجانبين بالإضافة إلى مقابض الأنف والذيل الحمل وإعادة الصعود، بينما يحافظ إعداد 4+1 أو ثلاثي الزعانف على استقامة اللوح العريض.',
-      audience:
-        'مشغلو التأجير وأندية الرياضات المائية ومنظمو برامج بناء الفريق والعائلات الكبيرة والمغامرون الجماعيون، إضافة إلى مشتري OEM/ODM.',
+      audience: 'العائلات الكبيرة والمغامرون الجماعيون والأصدقاء الباحثون عن منصة عائمة للمرح على البحيرة.',
       ai_use_cases: [
-        'جلسات بناء الفريق للشركات والمجموعات',
-        'أساطيل التأجير التجارية ورحلات الأندية',
+        'ألعاب وتحديات جماعية على الماء',
+        'جولات جماعية ورحلات الأندية',
         'نزهات عائلية كبيرة ومتعددة الراكبين على البحيرة',
       ],
       ai_comparison:
@@ -2470,7 +2469,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'يستخدم لوح SUP زورق المنفعة والطعوم محيطًا قائمًا بطول 47 بوصة شبيهًا بالطوافة يكاد يكون من المستحيل قلبه أثناء الرمي أو مقاومة الأسماك الكبيرة. يُصنف بناؤه المقوى بتقنية drop-stitch لـ 880 رطلًا، ويوفر الذيل على شكل ذيل السنونو مساحة تثبيت مسبقة التكوين لأنظمة الدفع.',
       audience:
-        'صيادو الطعوم والذبابة وصيادو الرمح ومراقبو المياه الضحلة والصيادون الذين يشغلون محركات التصيد من منصة قابلة للنفخ، إضافة إلى مشتري OEM/ODM.',
+        'صيادو الطعوم والذبابة وصيادو الرمح ومراقبو المياه الضحلة والصيادون الذين يشغلون محركات التصيد من منصة قابلة للنفخ.',
       ai_use_cases: [
         'صيد الطعوم والذبابة وقوفًا أو جلوسًا',
         'الاستطلاع تحت الماء والصيد بالرمح',
@@ -2498,8 +2497,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
         'يحتاج متنزهو الرحلات الطويلة إلى لوح بجوانب صلبة تمنع الترهل وانسياب في خط مستقيم يمكن توقعه ونظام زعانف يمكن ضبطه حسب ظروف المياه المختلفة.',
       howItWorks:
         'يجمع كروزر الرحلات الطويلة بين نواة drop-stitch من PVC بمعدل 15 رطلًا لكل بوصة مربعة وصلابة الجوانب لمنع الترهل في منتصف المدى. يقبل صندوق الزعنفة US منخفض الارتفاع الزعنفة الاحترافية 9 بوصات المرفقة أو زعانف السوق الثانوي، ما يسمح للمجدفين بضبط الانسياب والسرعة حسب الظروف المحددة.',
-      audience:
-        'المتنزهون لمسافات طويلة ومستكشفو المياه الهادئة وممارسو الإبحار التحمل ومن يرغبون في أداء قابل للضبط، إضافة إلى مشتري OEM/ODM.',
+      audience: 'المتنزهون لمسافات طويلة ومستكشفو المياه الهادئة وممارسو الإبحار التحمل ومن يرغبون في أداء قابل للضبط.',
       ai_use_cases: ['رحلات طويلة وإبحار ساحلي', 'استكشاف المياه الهادئة وتجديف التحمل', 'تجديف أداء مخصص مع زعانف US'],
       ai_comparison:
         'مقارنةً باللوحات متعددة الاستخدامات القياسية، يضيف كروزر الرحلات هيكلًا بطول 12.5 قدم بجوانب صلبة ونظام صندوق زعنفة US، مما يبقيك على المسار لمسافات طويلة بانحراف ومجهود أقل.',
@@ -2567,7 +2565,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'RHEO-serien använder en kolfiberhybrid-uppblåsbar konstruktion som eliminerar flex för en stabilt fast plattform. Den vågskärande displacementnosen skär genom gropigt vatten med minimalt motstånd, medan 26-tumsbredden minskar friktionen i den våta ytan och 2+1-fenuppsättningen håller spårning i hög fart och stödjer snabba svepande svängar.',
       audience:
-        'Tävlingspaddlare som jagar personbästa, hastighetsentusiaster och avancerade paddlare som vill ha styv tävlingsprestanda med uppblåsbar portabilitet, plus OEM/ODM-köpare.',
+        'Tävlingspaddlare som jagar personbästa, hastighetsentusiaster och avancerade paddlare som vill ha styv tävlingsprestanda med uppblåsbar portabilitet.',
       ai_use_cases: [
         'Tävlings-SUP och sprintträning',
         'Högintensiv träning och intervallpaddling',
@@ -2596,7 +2594,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Det uppblåsbara fiske-SUP:et använder tjocka dubbelsidiga luftkammare som ger exceptionell sekundärstabilitet liknande en katamaran eller utriggare. Spetsig nos och akter behåller däckbredden med kajakliknande spårning, och drop-stitch-PVC-kärnan är klassad för 15 PSI för en styv och pålitlig plattform.',
       audience:
-        'Bete- och basfiskare, flug- och kajakfiskare samt utflyktspaddlare som tar med kylboxar, campingstolar och landningshåvar, plus OEM/ODM-köpare.',
+        'Bete- och basfiskare, flug- och kajakfiskare samt utflyktspaddlare som tar med kylboxar, campingstolar och landningshåvar.',
       ai_use_cases: [
         'Stående bete- och basfiske',
         'Flug- och kajakfiske från en uppblåsbar plattform',
@@ -2625,7 +2623,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Mini SUP-serien använder ett kort, brett, mycket stabilt utförande med optimerat förhållande mellan volym och längd för maximal flytkraft. Responsiva rocker- och skena-linjer fångar små vågor, och ett slitstarkt stöttåligt däck tål hundtassar samtidigt som det förblir lätt och snabbt att pumpa upp.',
       audience:
-        'Föräldrar som introducerar barn i paddling, vuxna som vill ha en portabel surf- eller bodyboard-hybrid och husdjursägare som tar med sina hundar på vattnet, plus OEM/ODM-köpare.',
+        'Föräldrar som introducerar barn i paddling, vuxna som vill ha en portabel surf- eller bodyboard-hybrid och husdjursägare som tar med sina hundar på vattnet.',
       ai_use_cases: [
         'Barns SUP- och surfframsteg',
         'Vuxen-bodyboarding och shorebreak-surfing',
@@ -2648,16 +2646,15 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'Flersitsiga Giant SUP',
       desc: 'Jättestort flersitsigt uppblåsbart SUP på 16,5 fot, klassat för 650 kg med dubbelventilspumpning, 8-tums skrov, flera handtag och multifenspårning.',
       definition:
-        'Ett flersitsigt jätte-SUP på 16,5 fot med 8-tums skrov, dubbelventilspumpning, multifattat handtagskonfiguration, multifenspårning och dubbla lastbungeesystem för grupp-paddling, uthyrning och teamevenemang.',
+        'Ett flersitsigt jätte-SUP på 16,5 fot med 8-tums skrov, dubbelventilspumpning, multifattat handtagskonfiguration, multifenspårning och dubbla lastbungeesystem för grupp-paddling och dagar vid sjön.',
       problem:
-        'Grupper, uthyrningsoperatörer och evenemangsarrangörer behöver en enda stor uppblåsbar bräda som bär flera riders säkert och förblir styv under koncentrerade laster.',
+        'Grupper, familjer och vänner behöver en enda stor uppblåsbar bräda som bär flera riders säkert och förblir styv under koncentrerade laster.',
       howItWorks:
         'Flersitsiga Giant SUP använder kraftigt drop-stitch-PVC klassat för 15 PSI med ett dubbelventilsystem så att två personer kan pumpa den stora luftvolymen samtidigt. Åtta till tolv kraftiga handtag längs båda skenorna plus nos- och akterhandtag gör bärning och återpåkryssning enkel, medan ett 4+1- eller trefensuppställning håller den breda brädan rak.',
-      audience:
-        'Uthyrningsoperatörer, vattensportklubbar, evenemangsarrangörer som driver teambuildingprogram, stora familjer och gruppäventyrerare, plus OEM/ODM-köpare.',
+      audience: 'Stora familjer, gruppäventyrerare och vänner som vill ha en flytande plattform för skoj vid sjön.',
       ai_use_cases: [
-        'Företags- och gruppteambuilding-sessioner',
-        'Kommersiella uthyrningsflottor och klubevenemang',
+        'Gruppspel och utmaningar i vattnet',
+        'Gruppturer och klubbpaddling',
         'Stora familje- och flerridsutflykter på sjön',
       ],
       ai_comparison:
@@ -2683,7 +2680,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Utility & Lure Skiff SUP använder en knubbig, pontonliknande 47-tumsprofil som är praktiskt taget omöjlig att tippa vid kast eller kamp med stora fiskar. Den förstärkta drop-stitch-konstruktionen är klassad för 880 lb, och den svalstjärtformade aktern ger förkonfigurerat monteringsutrymme för kraftsystem.',
       audience:
-        'Bete- och flugfiskare, spjutfiskare, observationsextusiasm i grunt vatten och fiskare som kör trollingmotorer från en uppblåsbar plattform, plus OEM/ODM-köpare.',
+        'Bete- och flugfiskare, spjutfiskare, observationsextusiasm i grunt vatten och fiskare som kör trollingmotorer från en uppblåsbar plattform.',
       ai_use_cases: [
         'Bete- och flugfiske stående eller sittande',
         'Undervattensrekognosering och spjutfiske',
@@ -2712,7 +2709,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Touring Cruiser kombinerar en drop-stitch-PVC-kärna klassad för 15 PSI med skenstyvhet för att förhindra hängande i mitten. En lågprofil US-finbox rymmer den medföljande 9-tums racing-/touringfenan eller aftermarket-fenor, så paddlare kan ställa in spårning och hastighet för specifika förhållanden.',
       audience:
-        'Långdistans touringpaddlare, utforskare av lugnt vatten, uthållighetskryssare och paddlare som vill ha justerbar prestanda, plus OEM/ODM-köpare.',
+        'Långdistans touringpaddlare, utforskare av lugnt vatten, uthållighetskryssare och paddlare som vill ha justerbar prestanda.',
       ai_use_cases: [
         'Långdistans touring och kustkryssning',
         'Utforskning av lugnt vatten och uthållighetspaddling',
@@ -2812,7 +2809,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'De RHEO-serie gebruikt een hybride koolstof opblaasconstructie die flex volledig elimineert voor een rotsvast platform. De golfdoorsnijdende displacement neus snijdt door golving met minimale weerstand, terwijl de breedte van 26 inch de wrijving van het natte oppervlak vermindert en de 2+1-vinnenopstelling de tracking op snelheid behoudt en snelle, wijde bochten ondersteunt.',
       audience:
-        'Competitieve racers op zoek naar persoonlijke records, snelheidsfanaten en gevorderde peddelaars die stijve raceprestaties willen met de draagbaarheid van opblaasbaar, plus OEM/ODM-kopers.',
+        'Competitieve racers op zoek naar persoonlijke records, snelheidsfanaten en gevorderde peddelaars die stijve raceprestaties willen met de draagbaarheid van opblaasbaar.',
       ai_use_cases: [
         'Competitief SUP-racen en sprinttraining',
         'High-intensity fitness en intervalvaarten',
@@ -2841,7 +2838,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Het opblaasbare vis-SUP gebruikt dikke dubbelzijdige luchtkamers die uitzonderlijke secundaire stabiliteit bieden, vergelijkbaar met een catamaran of uitrigger. Een puntige neus en spiegel houden de dekbreedte met kajakachtige tracking, en de drop-stitch PVC-kern is geschikt tot 15 PSI voor een stijf en betrouwbaar platform.',
       audience:
-        'Kunstaas- en baarsvissers, vlieg- en kajakvissers en expeditiepeddelaars die koelboxen, campingstoelen en schepnetten meenemen, plus OEM/ODM-kopers.',
+        'Kunstaas- en baarsvissers, vlieg- en kajakvissers en expeditiepeddelaars die koelboxen, campingstoelen en schepnetten meenemen.',
       ai_use_cases: [
         'Staand kunstaas- en baarsvissen',
         'Vlieg- en kajakvissen vanaf een opblaasbaar platform',
@@ -2870,7 +2867,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'De Mini SUP-serie gebruikt een kort, breed en zeer stabiel profiel met een geoptimaliseerde volume-lengteverhouding voor maximaal drijfvermogen. De responsieve rocker-lijn en rail-profielen vangen kleine golven, en een duurzaam, stootvast dek weerstaat hondenpoten terwijl het licht en snel opblaasbaar blijft.',
       audience:
-        'Ouders die kinderen kennis laten maken met peddelsporten, volwassenen die een draagbare surf- of bodyboard-hybride willen en huisdiereigenaren die hun honden meenemen op het water, plus OEM/ODM-kopers.',
+        'Ouders die kinderen kennis laten maken met peddelsporten, volwassenen die een draagbare surf- of bodyboard-hybride willen en huisdiereigenaren die hun honden meenemen op het water.',
       ai_use_cases: [
         'Kinder SUP- en surfontwikkeling',
         'Bodyboarding en shorebreak-surfen voor volwassenen',
@@ -2893,16 +2890,16 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'Multi-persoons Giant SUP',
       desc: 'Enorm opblaasbaar multi-persoons SUP van 16,5 voet, geschikt voor 650 kg, met dual-valve opblazen, 8-inch romp, meerdere handvatten en multi-fin tracking.',
       definition:
-        'Een multi-persoons giant opblaasbaar SUP van 16,5 voet met een 8-inch romp, dual-valve opblazen, een configuratie met meerdere handvatten, multi-fin tracking en dubbele bagage-bungee-systemen voor groepspeddelen, verhuur en teamevenementen.',
+        'Een multi-persoons giant opblaasbaar SUP van 16,5 voet met een 8-inch romp, dual-valve opblazen, een configuratie met meerdere handvatten, multi-fin tracking en dubbele bagage-bungee-systemen voor groepspeddelen en dagen op het meer.',
       problem:
-        'Groepen, verhuurbedrijven en evenementenorganisatoren hebben één groot opblaasbaar board nodig dat meerdere riders veilig draagt en stijf blijft onder geconcentreerde belastingen.',
+        'Groepen, gezinnen en vrienden hebben één groot opblaasbaar board nodig dat meerdere riders veilig draagt en stijf blijft onder geconcentreerde belastingen.',
       howItWorks:
         'Het multi-persoons Giant SUP gebruikt zwaar drop-stitch PVC tot 15 PSI met een dual-valve systeem, zodat twee mensen tegelijk het grote luchtvolume kunnen opblazen. Acht tot twaalf zware handvatten langs beide randen, plus neus- en spiegelhandvatten, maken dragen en weer aan boord gaan eenvoudig, terwijl een 4+1- of tril-vinopstelling het brede board recht houdt.',
       audience:
-        'Verhuurders, watersportclubs, evenementenorganisatoren van teambuilding-programma’s, grote gezinnen en groepsavonturiers, plus OEM/ODM-kopers.',
+        'Grote gezinnen, groepsavonturiers en vrienden die een drijvend platform zoeken voor plezier op het meer.',
       ai_use_cases: [
-        'Corporate en groeps-teambuilding-sessies',
-        'Commerciële verhuurvloten en clubuitstapjes',
+        'Groepsspellen en challenges op het water',
+        'Groepstochten en clubpaddeltochten',
         'Grote familie- en multi-rider uitstapjes op het meer',
       ],
       ai_comparison:
@@ -2928,7 +2925,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Het Utility & Lure Skiff SUP gebruikt een compact, pontonachtig 47-inch profiel dat vrijwel onmogelijk om te gooien is tijdens het werpen of vechten met grote vissen. De versterkte drop-stitch constructie is geschikt voor 880 lb, en de zwaluwstaartspiegel biedt voorgeconfigureerde montageruimte voor aandrijfsystemen.',
       audience:
-        'Lure- en vliegvissers, speervissers, observanten van ondiep water en vissers die trolling motors gebruiken vanaf een opblaasbaar platform, plus OEM/ODM-kopers.',
+        'Lure- en vliegvissers, speervissers, observanten van ondiep water en vissers die trolling motors gebruiken vanaf een opblaasbaar platform.',
       ai_use_cases: [
         'Lure- en vliegvissen staand of zittend',
         'Onderwaterverkenning en speervissen',
@@ -2957,7 +2954,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'De Touring Cruiser combineert een drop-stitch PVC-kern tot 15 PSI met randstijfheid om doorbuiging in het midden te voorkomen. Een laagprofiel US-finbox accepteert de meegeleverde 9-inch race-/touring-vin of aftermarket-vinnen, zodat peddelaars tracking en snelheid kunnen afstellen op specifieke omstandigheden.',
       audience:
-        'Touring-peddelaars op lange afstanden, verkenners van rustig water, endurance-cruisers en peddelaars die afstelbare prestaties willen, plus OEM/ODM-kopers.',
+        'Touring-peddelaars op lange afstanden, verkenners van rustig water, endurance-cruisers en peddelaars die afstelbare prestaties willen.',
       ai_use_cases: [
         'Langeafstand-touring en kusttochten',
         'Verkenning van rustig water en duurpeddelen',
@@ -3069,7 +3066,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'RHEO-serien bruker en karbonhybrid oppblåsingskonstruksjon som eliminerer fleks for en klippestødig plattform. Den bølgeskjærende deplasementsnesen skjærer gjennom sjø med minimal motstand, mens 26-tommers bredde reduserer friksjonen i den våte overflaten og 2+1-finneoppsettet holder sporet i fart og støtter raske, sveipende svinger.',
       audience:
-        'Konkurrerende padlere som jakter personlige rekorder, fartsentusiaster og avanserte padlere som vil ha stiv konkurranseytelse med oppblåsbar portabilitet, pluss OEM/ODM-kjøpere.',
+        'Konkurrerende padlere som jakter personlige rekorder, fartsentusiaster og avanserte padlere som vil ha stiv konkurranseytelse med oppblåsbar portabilitet.',
       ai_use_cases: [
         'Konkurranse-SUP-racing og sprinttrening',
         'Høyintensitets-fitness og intervallpadling',
@@ -3098,7 +3095,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Det oppblåsbare fiske-SUP-et bruker tykke dobbeltsidige luftkamre som gir eksepsjonell sekundærstabilitet som ligner på en katamaran eller utrigger. Spiss nese og akter beholder dekkbredden med kajakklignende spor, og drop-stitch-PVC-kjernen er klassifisert for 15 PSI for en stiv og pålitelig plattform.',
       audience:
-        'Sluk- og bassfiskere, flue- og kajakkfiskere og ekskursjonspadlere som tar med kjølebokser, campingstoler og håver, pluss OEM/ODM-kjøpere.',
+        'Sluk- og bassfiskere, flue- og kajakkfiskere og ekskursjonspadlere som tar med kjølebokser, campingstoler og håver.',
       ai_use_cases: [
         'Stående sluk- og bassfiske',
         'Flue- og kajakkfiske fra en oppblåsbar plattform',
@@ -3127,7 +3124,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Mini SUP-serien bruker et kort, bredt, svært stabilt profil med optimalisert volum-til-lengde-forhold for maksimalt oppdrift. Responsive rocker-linjer og kant-profiler fanger små bølger, og et slitesterkt punkteringssikkert dekk tåler hundepoter mens det forblir lett og raskt å blåse opp.',
       audience:
-        'Foreldre som introduserer barn for padlesport, voksne som vil ha en bærbar surf- eller kroppsbrett-hybrid og kjæledyrseiere som tar hundene sine på vannet, pluss OEM/ODM-kjøpere.',
+        'Foreldre som introduserer barn for padlesport, voksne som vil ha en bærbar surf- eller kroppsbrett-hybrid og kjæledyrseiere som tar hundene sine på vannet.',
       ai_use_cases: [
         'Barnas SUP- og surffremgang',
         'Voksen-kroppsbrett og shorebreak-surfing',
@@ -3150,16 +3147,15 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'Flerseters Giant SUP',
       desc: 'Kjempestort oppblåsbart flerseters SUP på 16,5 fot, klassifisert for 650 kg, med dual-valve oppblåsing, 8-tommers skrog, flere håndtak og multi-finne-sporing.',
       definition:
-        'Et flerseters gigant-oppblåsbart SUP på 16,5 fot med 8-tommers skrog, dual-valve oppblåsing, konfigurasjon med flere håndtak, multi-finne-sporing og doble bagasje-bungee-systemer for gruppepadling, utleie og teambegivenheter.',
+        'Et flerseters gigant-oppblåsbart SUP på 16,5 fot med 8-tommers skrog, dual-valve oppblåsing, konfigurasjon med flere håndtak, multi-finne-sporing og doble bagasje-bungee-systemer for gruppepadling og dager ved sjøen.',
       problem:
-        'Grupper, utleieoperatører og arrangører trenger ett enkelt gigantisk oppblåsbart brett som bærer flere ryttere trygt og forblir stivt under konsentrerte belastninger.',
+        'Grupper, familier og venner trenger ett enkelt gigantisk oppblåsbart brett som bærer flere ryttere trygt og forblir stivt under konsentrerte belastninger.',
       howItWorks:
         'Det flerseters Giant SUP bruker heavy-duty drop-stitch-PVC klassifisert for 15 PSI med et dual-valve system slik at to personer kan blåse opp det store luftvolumet samtidig. Åtte til tolv robuste håndtak langs begge railene pluss nese- og akterhåndtak gjør bæring og ombordstigning enkel, mens en 4+1- eller tri-finne-oppstilling holder det brede brettet rett.',
-      audience:
-        'Utleieoperatører, vannsportklubber, arrangementsarrangører som driver teambygging, store familier og gruppeeventyrere, pluss OEM/ODM-kjøpere.',
+      audience: 'Store familier, gruppeeventyrere og venner som vil ha en flytende plattform for moro på sjøen.',
       ai_use_cases: [
-        'Bedrifts- og gruppeteambygging',
-        'Kommersielle utleieflåter og klubbturer',
+        'Gruppespill og utfordringer i vannet',
+        'Gruppeturer og klubbpadling',
         'Store familie- og flerrytter-turer på innsjøen',
       ],
       ai_comparison:
@@ -3185,7 +3181,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Utility og Lure Skiff SUP bruker en stubby, pontongliknende 47-tommers kontur som er praktisk talt umulig å velte under kasting eller kamp med store fisker. Den forsterkede drop-stitch-konstruksjonen er klassifisert for 880 lb, og svalehale-akteren gir forhåndskonfigurert monteringsplass for kraftsystemer.',
       audience:
-        'Sluk- og fluefiskere, spydfiskere, observatører av grunt vann og fiskere som bruker trollingmotorer fra en oppblåsbar plattform, pluss OEM/ODM-kjøpere.',
+        'Sluk- og fluefiskere, spydfiskere, observatører av grunt vann og fiskere som bruker trollingmotorer fra en oppblåsbar plattform.',
       ai_use_cases: [
         'Sluk- og fluefiske stående eller sittende',
         'Undervannsrekognosering og spydfiske',
@@ -3214,7 +3210,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Touring Cruiser kombinerer en drop-stitch-PVC-kjerne klassifisert for 15 PSI med kantstivhet for å hindre synking midt i spennet. En lavprofil US-finneboks godtar den medfølgende 9-tommers racing-/touring-finnen eller ettermarkedsfinner, slik at padlere kan stille inn spor og fart for spesifikke forhold.',
       audience:
-        'Touring-padlere på lange avstander, utforskere av rolig vann, utholdenhets-cruisere og padlere som ønsker justerbar ytelse, pluss OEM/ODM-kjøpere.',
+        'Touring-padlere på lange avstander, utforskere av rolig vann, utholdenhets-cruisere og padlere som ønsker justerbar ytelse.',
       ai_use_cases: [
         'Langdistanse-touring og kystcruising',
         'Utforskning av rolig vann og utholdenhetspadling',
@@ -3326,7 +3322,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Η σειρά RHEO χρησιμοποιεί υβριδική αντλητή δομή άνθρακα που εξαλείφει την κάμψη για μια βραχώδη σταθερή πλατφόρμα. Η μύτη εκτόπισης κόβει τα κύματα με ελάχιστη αντίσταση, ενώ το πλάτος των 26 ιντσών μειώνει την τριβή της βρεγμένης επιφάνειας και η διάταξη πτερυγίων 2+1 διατηρεί τη γραμμή πορείας στην ταχύτητα και βοηθά στις γρήγορες στροφές σάρωσης.',
       audience:
-        'Ανταγωνιστικοί κωπηλάτες που κυνηγούν ατομικά ρεκόρ, λάτρεις της ταχύτητας και προχωρημένοι κωπηλάτες που θέλουν άκαμπτη αγωνιστική απόδοση με φορητότητα αντλητού, καθώς και αγοραστές OEM/ODM.',
+        'Ανταγωνιστικοί κωπηλάτες που κυνηγούν ατομικά ρεκόρ, λάτρεις της ταχύτητας και προχωρημένοι κωπηλάτες που θέλουν άκαμπτη αγωνιστική απόδοση με φορητότητα αντλητού.',
       ai_use_cases: [
         'Ανταγωνιστικοί αγώνες SUP και προπόνηση σπριντ',
         'Υψηλής έντασης γυμναστική και διαλειμματική κωπηλασία',
@@ -3355,7 +3351,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Το αντλητό SUP ψαρέματος χρησιμοποιεί χοντρούς διπλούς πλευρικούς αεροθαλάμους που παρέχουν εξαιρετική δευτερεύουσα σταθερότητα, παρόμοια με καταμαράν ή πλαϊνό πλωτήρα. Μυτερή μύτη και πρύμνη διατηρούν το πλάτος του καταστρώματος με γραμμή πορείας σαν καγιάκ, και ο πυρήνας drop-stitch PVC είναι πιστοποιημένος για 15 PSI για άκαμπτη και αξιόπιστη πλατφόρμα.',
       audience:
-        'Ψαράδες με δολώματα και λαυράκια, ιπτάμενου ψαρέματος και καγιάκ, και κωπηλάτες εκδρομών που μεταφέρουν ψυγεία, καρέκλες κατασκήνωσης και απόχες, καθώς και αγοραστές OEM/ODM.',
+        'Ψαράδες με δολώματα και λαυράκια, ιπτάμενου ψαρέματος και καγιάκ, και κωπηλάτες εκδρομών που μεταφέρουν ψυγεία, καρέκλες κατασκήνωσης και απόχες.',
       ai_use_cases: [
         'Όρθιο ψάρεμα με δολώματα και λαυράκια',
         'Ιπτάμενο ψάρεμα και καγιάκ από αντλητή πλατφόρμα',
@@ -3384,7 +3380,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Η σειρά Mini SUP χρησιμοποιεί κοντό, φαρδύ και πολύ σταθερό προφίλ με βελτιστοποιημένη αναλογία όγκου-μήκους για μέγιστη άνωση. Η ανταποκριτική γραμμή rocker και τα πλαϊνά προφίλ πιάνουν μικρά κύματα, και ένα ανθεκτικό στη διάτρηση κατάστρωμα αντέχει τα πόδια των σκύλων, παραμένοντας ελαφρύ και γρήγορο στο φούσκωμα.',
       audience:
-        'Γονείς που εισάγουν τα παιδιά στην κωπηλασία, ενήλικες που θέλουν φορητό υβρίδιο σερφ ή σανίδας σώματος και ιδιοκτήτες κατοικίδιων που βγάζουν τα σκυλιά τους στο νερό, καθώς και αγοραστές OEM/ODM.',
+        'Γονείς που εισάγουν τα παιδιά στην κωπηλασία, ενήλικες που θέλουν φορητό υβρίδιο σερφ ή σανίδας σώματος και ιδιοκτήτες κατοικίδιων που βγάζουν τα σκυλιά τους στο νερό.',
       ai_use_cases: [
         'Εξέλιξη SUP και σερφ των παιδιών',
         'Σανίδα σώματος για ενήλικες και σερφ στα κύματα της ακτής',
@@ -3407,16 +3403,16 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'Γιγαντιαίο SUP Πολλαπλών Ατόμων',
       desc: 'Γιγαντιαίο αντλητό SUP 16,5 ποδών για πολλά άτομα, πιστοποιημένο για 650 κιλά, με φούσκωμα διπλής βαλβίδας, γάστρα 8 ιντσών, πολλαπλές λαβές και γραμμή πορείας πολλαπλών πτερυγίων.',
       definition:
-        'Ένα αντλητό γιγαντιαίο SUP 16,5 ποδών για πολλά άτομα με γάστρα 8 ιντσών, φούσκωμα διπλής βαλβίδας, διάταξη πολλαπλών λαβών, γραμμή πορείας πολλαπλών πτερυγίων και διπλά συστήματα σχοινιών φόρτωσης για ομαδική κωπηλασία, ενοικίαση και ομαδικές εκδηλώσεις.',
+        'Ένα αντλητό γιγαντιαίο SUP 16,5 ποδών για πολλά άτομα με γάστρα 8 ιντσών, φούσκωμα διπλής βαλβίδας, διάταξη πολλαπλών λαβών, γραμμή πορείας πολλαπλών πτερυγίων και διπλά συστήματα σχοινιών φόρτωσης για ομαδική κωπηλασία και μέρες στη λίμνη.',
       problem:
-        'Οι ομάδες, οι φορείς ενοικίασης και οι διοργανωτές χρειάζονται μία γιγαντιαία αντλητή σανίδα που μεταφέρει με ασφάλεια πολλούς χρήστες και παραμένει άκαμπτη υπό συγκεντρωμένα φορτία.',
+        'Οι ομάδες, οι οικογένειες και οι φίλοι χρειάζονται μία γιγαντιαία αντλητή σανίδα που μεταφέρει με ασφάλεια πολλούς χρήστες και παραμένει άκαμπτη υπό συγκεντρωμένα φορτία.',
       howItWorks:
         'Το γιγαντιαίο SUP πολλαπλών ατόμων χρησιμοποιεί ανθεκτικό PVC drop-stitch πιστοποιημένο για 15 PSI με σύστημα διπλής βαλβίδας, ώστε δύο άτομα να φουσκώνουν ταυτόχρονα τον μεγάλο όγκο αέρα. Οκτώ έως δώδεκα ανθεκτικές λαβές κατά μήκος και των δύο πλευρών συν λαβές στη μύτη και την πρύμνη διευκολύνουν τη μεταφορά και την επανεπιβίβαση, ενώ μια διάταξη 4+1 ή τριών πτερυγίων κρατά τη φαρδιά σανίδα ίσια.',
       audience:
-        'Φορείς ενοικίασης, σύλλογοι θαλάσσιων σπορ, διοργανωτές εκδηλώσεων ομαδικού πνεύματος, μεγάλες οικογένειες και ομαδικοί εξερευνητές, καθώς και αγοραστές OEM/ODM.',
+        'Μεγάλες οικογένειες, ομαδικοί εξερευνητές και φίλοι που θέλουν μια πλωτή πλατφόρμα για διασκέδαση στη λίμνη.',
       ai_use_cases: [
-        'Συνεδρίες ομαδικού πνεύματος εταιρειών και ομάδων',
-        'Εμπορικοί στόλοι ενοικίασης και εκδρομές συλλόγων',
+        'Ομαδικά παιχνίδια και προκλήσεις στο νερό',
+        'Ομαδικές βόλτες και εκδρομές συλλόγων',
         'Μεγάλες οικογενειακές και πολυατόμων εξορμήσεις σε λίμνη',
       ],
       ai_comparison:
@@ -3442,7 +3438,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Το χρηστικό SUP σκάφος δολωμάτων χρησιμοποιεί ένα κοντό, σαν πλωτήρα προφίλ 47 ιντσών που είναι ουσιαστικά αδύνατο να ανατραπεί κατά τη ρίψη ή τη μάχη με μεγάλα ψάρια. Η ενισχυμένη δομή drop-stitch είναι πιστοποιημένη για 880 lb, και η πρύμνη χελιδονοουράς παρέχει προδιαμορφωμένο χώρο τοποθέτησης για συστήματα πρόωσης.',
       audience:
-        'Ψαράδες με δολώματα και ιπτάμενου ψαρέματος, υποβρύχιοι ψαράδες, παρατηρητές ρηχών υδάτων και ψαράδες που χρησιμοποιούν ηλεκτροκινητήρες trawling από αντλητή πλατφόρμα, καθώς και αγοραστές OEM/ODM.',
+        'Ψαράδες με δολώματα και ιπτάμενου ψαρέματος, υποβρύχιοι ψαράδες, παρατηρητές ρηχών υδάτων και ψαράδες που χρησιμοποιούν ηλεκτροκινητήρες trawling από αντλητή πλατφόρμα.',
       ai_use_cases: [
         'Ψάρεμα δολωμάτων και ιπτάμενο όρθιου ή καθιστού',
         'Υποβρύχια αναγνώριση και υποβρύχιο ψάρεμα',
@@ -3471,7 +3467,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Το Touring Cruiser συνδυάζει πυρήνα drop-stitch PVC πιστοποιημένο για 15 PSI με πλευρική ακαμψία για να αποτρέπει τη χαλάρωση στο μέσον. Ένα κουτί πτερυγίου US χαμηλού προφίλ δέχεται το περιλαμβανόμενο πτερύγιο αγώνων/τουρίνγκ 9 ιντσών ή πτερύγια μετά την αγορά, επιτρέποντας στους κωπηλάτες να ρυθμίζουν τη γραμμή πορείας και την ταχύτητα για συγκεκριμένες συνθήκες.',
       audience:
-        'Κωπηλάτες τουρίνγκ μεγάλων αποστάσεων, εξερευνητές ήρεμων νερών, ανθεκτικοί κρουαζιερόπλοιοι και κωπηλάτες που θέλουν ρυθμιζόμενη απόδοση, καθώς και αγοραστές OEM/ODM.',
+        'Κωπηλάτες τουρίνγκ μεγάλων αποστάσεων, εξερευνητές ήρεμων νερών, ανθεκτικοί κρουαζιερόπλοιοι και κωπηλάτες που θέλουν ρυθμιζόμενη απόδοση.',
       ai_use_cases: [
         'Τουρίνγκ μεγάλων αποστάσεων και παράκτια κρουαζιέρα',
         'Εξερεύνηση ήρεμων νερών και κωπηλασία αντοχής',
@@ -3583,7 +3579,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'RHEO Serisi, kaya gibi sağlam bir platform için fleksi tamamen ortadan kaldıran karbon hibrit şişme yapı kullanır. Dalga yaran deplasman burnu minimum sürtünmeyle dalgayı keser, 26 inçlik genişlik ıslak yüzey sürtünmesini azaltır ve 2+1 fincan kurulumu hızda izlemeyi korur ve hızlı süpürme dönüşlerine yardımcı olur.',
       audience:
-        'Kişisel rekorlar kovalayan rekabetçi yarışçılar, hız meraklıları ve şişme taşınabilirlikle sert yarış performansı isteyen ileri düzey paddlecular ile OEM/ODM alıcıları.',
+        'Kişisel rekorlar kovalayan rekabetçi yarışçılar, hız meraklıları ve şişme taşınabilirlikle sert yarış performansı isteyen ileri düzey paddlecular.',
       ai_use_cases: [
         'Rekabetçi SUP yarışı ve sprint antrenmanı',
         'Yüksek yoğunluklu fitness ve interval paddle',
@@ -3612,7 +3608,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Şişme balıkçılık SUP, katamaran veya payanda benzeri olağanüstü ikincil stabilite sağlayan kalın çift taraflı hava odaları kullanır. Sivri burun ve kıç, kayık benzeri izlemeyle güverte genişliğini korur ve drop-stitch PVC çekirdek, rijit ve güvenilir bir platform için 15 PSI derecelidir.',
       audience:
-        'Yem ve levrek balıkçıları, sinek ve kayık balıkçıları ile soğutucu, kamp sandalyesi ve iniş ağı taşıyan gezi paddlecuları ve OEM/ODM alıcıları.',
+        'Yem ve levrek balıkçıları, sinek ve kayık balıkçıları ile soğutucu, kamp sandalyesi ve iniş ağı taşıyan gezi paddlecuları.',
       ai_use_cases: [
         'Ayakta yem ve levrek balıkçılığı',
         'Şişme platformdan sinek ve kayık balıkçılığı',
@@ -3641,7 +3637,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Mini SUP Serisi, maksimum kaldırma kuvveti için optimize edilmiş hacim-boy oranına sahip kısa, geniş ve çok stabil bir profil kullanır. Duyarlı rocker hattı ve kenar profili küçük dalgaları yakalar ve dayanıklı delinmez güverte köpek patilerine dayanırken hafif ve hızlı şişme kalır.',
       audience:
-        'Çocukları paddle sporlarıyla tanıştıran ebeveynler, taşınabilir sörf veya bodyboard hibriti isteyen yetişkinler ve köpeklerini suya götüren evcil hayvan sahipleri ile OEM/ODM alıcıları.',
+        'Çocukları paddle sporlarıyla tanıştıran ebeveynler, taşınabilir sörf veya bodyboard hibriti isteyen yetişkinler ve köpeklerini suya götüren evcil hayvan sahipleri.',
       ai_use_cases: [
         'Çocuk SUP ve sörf ilerlemesi',
         'Yetişkin bodyboarding ve shorebreak sörfü',
@@ -3664,16 +3660,15 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'Çok Kişilik Dev SUP',
       desc: '650 kg dereceli, çift valfli şişirme, 8 inç gövde, çoklu tutamak ve çoklu fincan izlemeli 16,5 fitlik çok kişilik şişme dev SUP.',
       definition:
-        'Grup paddle, kiralama ve takım etkinlikleri için 8 inç gövde, çift valfli şişirme, çoklu tutamak yapılandırması, çoklu fincan izleme ve çift kargo bungee sistemine sahip 16,5 fitlik çok kişilik dev şişme SUP.',
+        'Grup paddle ve göl günleri için 8 inç gövde, çift valfli şişirme, çoklu tutamak yapılandırması, çoklu fincan izleme ve çift kargo bungee sistemine sahip 16,5 fitlik çok kişilik dev şişme SUP.',
       problem:
-        'Gruplar, kiralama operatörleri ve etkinlik organizatörleri, birden fazla sürücüyü güvenle taşıyan ve yoğun yükler altında rijit kalan tek dev şişme boarda ihtiyaç duyar.',
+        'Gruplar, aileler ve arkadaşlar, birden fazla sürücüyü güvenle taşıyan ve yoğun yükler altında rijit kalan tek dev şişme boarda ihtiyaç duyar.',
       howItWorks:
         'Çok kişilik Dev SUP, iki kişinin büyük hava hacmini aynı anda şişirebilmesi için çift valf sistemli 15 PSI dereceli ağır hizmet drop-stitch PVC kullanır. Her iki kenar boyunca sekiz ila on iki ağır hizmet tutamağı ve burun-kıç tutamakları taşımayı ve yeniden binmeyi kolaylaştırırken, 4+1 veya üçlü fincan kurulumu geniş boardu düz tutar.',
-      audience:
-        'Kiralama operatörleri, su sporları kulüpleri, takım çalışması programları yürüten etkinlik organizatörleri, büyük aileler ve grup maceracıları ile OEM/ODM alıcıları.',
+      audience: 'Gölde eğlenmek için yüzen bir platform isteyen büyük aileler, grup maceracıları ve arkadaşlar.',
       ai_use_cases: [
-        'Kurumsal ve grup takım çalışması oturumları',
-        'Ticari kiralama filoları ve kulüp gezileri',
+        'Suda grup oyunları ve yarışmalar',
+        'Grup turları ve kulüp gezintileri',
         'Büyük aile ve çok sürücülü göl gezileri',
       ],
       ai_comparison:
@@ -3699,7 +3694,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Utility ve Yem Skiff SUP, atış sırasında veya büyük balıklarla mücadele ederken fiilen devrilme ihtimali olmayan tıknaz, ponton benzeri 47 inçlik bir dış hat kullanır. Güçlendirilmiş drop-stitch yapı 880 lb için derecelendirilmiştir ve kırlangıç kuyruğu kıç, güç tahrik sistemleri için önceden yapılandırılmış montaj alanı sağlar.',
       audience:
-        'Yem ve sinek balıkçıları, zıpkınla balık avcıları, sığ su gözlemcileri ve şişme platformdan trolling motoru kullanan balıkçılar ile OEM/ODM alıcıları.',
+        'Yem ve sinek balıkçıları, zıpkınla balık avcıları, sığ su gözlemcileri ve şişme platformdan trolling motoru kullanan balıkçılar.',
       ai_use_cases: [
         'Ayakta veya oturarak yem ve sinek balıkçılığı',
         'Sualtı keşif ve zıpkınla balık avı',
@@ -3728,7 +3723,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Touring Cruiser, 15 PSI dereceli drop-stitch PVC çekirdeği orta açıklıkta sarkmayı önleyen kenar rijiditesiyle birleştirir. Alçak profilli US fincan kutusu, dahil edilen 9 inç yarış/touring fincanını veya aftermarket fincanları kabul eder ve paddlecuların izleme ve hızı belirli koşullara göre ayarlamasını sağlar.',
       audience:
-        'Uzun mesafe touring paddlecuları, sakin su kaşifleri, dayanıklılık seyircileri ve ayarlanabilir performans isteyen paddlecular ile OEM/ODM alıcıları.',
+        'Uzun mesafe touring paddlecuları, sakin su kaşifleri, dayanıklılık seyircileri ve ayarlanabilir performans isteyen paddlecular.',
       ai_use_cases: [
         'Uzun mesafe touring ve kıyı seyri',
         'Sakin su keşfi ve dayanıklılık paddle',
@@ -3840,7 +3835,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'RHEO-sarja käyttää hiilhybridiä puhallettavaa rakennetta, joka eliminoi notkumisen ja takaa kivikovaa alustan. Aaltoja halkova displacement-keula katkaisee aallokon minimaalisella vastuksella, kun taas 26 tuuman leveys vähentää märkään pintaan kohdistuvaa kitkaa ja 2+1-eväjärjestelmä ylläpitää suuntavakautta nopeudessa ja auttaa nopeissa kaarroissa.',
       audience:
-        'Kilpailijoille, jotka tavoittelevat ennätyksiään, nopeuden harrastajille ja edistyneille melojille, jotka haluavat jäykän kilpasuorituskyvyn puhallettavalla kannettavuudella, sekä OEM/ODM-ostajille.',
+        'Kilpailijoille, jotka tavoittelevat ennätyksiään, nopeuden harrastajille ja edistyneille melojille, jotka haluavat jäykän kilpasuorituskyvyn puhallettavalla kannettavuudella.',
       ai_use_cases: [
         'Kilpa-SUP-ajot ja sprinttiharjoittelu',
         'Nopea kuntoilu ja intervallimelonta',
@@ -3869,7 +3864,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Puhallettava kalastus-SUP käyttää paksuja kaksipuolisia ilmakammioita, jotka tarjoavat poikkeuksellisen toissijaisen vakauden, verrattavissa katamaraaniin tai ulkokehikkoiseen veneeseen. Terävöitynyt keula ja perä säilyttävät kannen leveyden kajakkityyppisellä suuntavakaudella, ja drop-stitch-PVC-ydin on mitoitettu 15 PSI:lle jäykkää ja luotettavaa alustaa varten.',
       audience:
-        'Uistelu- ja ahvenkalastajille, perho- ja kajakkikalastajille sekä retkimelojille, jotka kuljettavat kylmälaukkuja, leirituoleja ja haaveja — sekä OEM/ODM-ostajille, jotka hankkivat puhallettavan kalastus-SUP-laudan.',
+        'Uistelu- ja ahvenkalastajille, perho- ja kajakkikalastajille sekä retkimelojille, jotka kuljettavat kylmälaukkuja, leirituoleja ja haaveja.',
       ai_use_cases: [
         'Seistenuistelu- ja ahvenkalastus',
         'Perho- ja kajakkikalastus puhallettavalta alustalta',
@@ -3898,7 +3893,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Mini SUP -sarja käyttää lyhyttä, leveää ja erittäin vakaata profiilia optimoidulla tilavuus-pituus-suhteella maksimaalisen kelluvuuden saavuttamiseksi. Sen herkkä rocker-viiva ja kylkiprofiili nappaavat pienet aallot, ja kestävä puhkaisunkestävä kansi kestää koiran tassut pysyen kevyenä ja nopeana täyttää.',
       audience:
-        'Vanhemmille, jotka tutustuttavat lapset melontalajeihin, aikuisille, jotka haluavat kannettavan surffi- tai bodyboard-hybridin, ja lemmikinomistajille, jotka vievät koiransa vesille — sekä OEM/ODM-ostajille, jotka hankkivat mini-puhallettavan SUP:n.',
+        'Vanhemmille, jotka tutustuttavat lapset melontalajeihin, aikuisille, jotka haluavat kannettavan surffi- tai bodyboard-hybridin, ja lemmikinomistajille, jotka vievät koiransa vesille.',
       ai_use_cases: [
         'Lasten SUP- ja surffikehitys',
         'Aikuisten bodyboarding ja rantaaallokko-surffaus',
@@ -3921,16 +3916,15 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'Monipaikkainen jätti-SUP',
       desc: 'Jättimäinen 16,5 jalan monipaikkainen puhallettava SUP, mitoitettu 650 kg:lle, kaksoisventtiilitäytöllä, 8 tuuman rungolla, useilla kahvoilla ja monieväisellä suuntavakaudella.',
       definition:
-        '16,5 jalan monipaikkainen jätti-puhallettava SUP, jossa on 8 tuuman runko, kaksoisventtiilitäyttö, monikahvakokoonpano, monieväinen suuntavakaus ja kahdet lastibungee-järjestelmät ryhmämelontaan, vuokraukseen ja ryhmätapahtumiin.',
+        '16,5 jalan monipaikkainen jätti-puhallettava SUP, jossa on 8 tuuman runko, kaksoisventtiilitäyttö, monikahvakokoonpano, monieväinen suuntavakaus ja kahdet lastibungee-järjestelmät ryhmämelontaan ja järvipäiviin.',
       problem:
-        'Ryhmät, vuokrausoperaattorit ja tapahtumajärjestäjät tarvitsevat yhden jättiläismäisen puhallettavan laudan, joka kuljettaa useita melojia turvallisesti ja pysyy jäykkänä keskittyneiden kuormien alla.',
+        'Ryhmät, perheet ja ystävät tarvitsevat yhden jättiläismäisen puhallettavan laudan, joka kuljettaa useita melojia turvallisesti ja pysyy jäykkänä keskittyneiden kuormien alla.',
       howItWorks:
         'Monipaikkainen jätti-SUP käyttää raskasta drop-stitch-PVC:tä, joka on mitoitettu 15 PSI:lle, kaksoisventtiilijärjestelmällä, jotta kaksi henkilöä voi täyttää suuren ilmatilavuuden kerralla. Kahdeksasta kahteentoista raskasta kahvaa molemmissa kyljissä sekä keula- ja perakahvat helpottavat kantamista ja uudelleen nousua, kun taas 4+1- tai kolmieväkokoonpano pitää leveän laudan suunnassa.',
-      audience:
-        'Vuokrausoperaattoreille, vesilajiklubeille, ryhmätyöohjelmia järjestäville tapahtumajärjestäjille, suurille perheille ja ryhmäseikkailijoille — sekä OEM/ODM-ostajille, jotka hankkivat jättimäisen monipaikkaisen puhallettavan SUP:n.',
+      audience: 'Suuret perheet, ryhmäseikkailijat ja ystävät, jotka haluavat kelluvan alustan hauskanpitoon järvellä.',
       ai_use_cases: [
-        'Yritysten ja ryhmien ryhmätyösessiot',
-        'Kaupalliset vuokrakalustot ja klubin retket',
+        'Vesileikit ja ryhmähaasteet',
+        'Ryhmäretket ja klubisoudut',
         'Suurten perheiden ja usean melojan järviretket',
       ],
       ai_comparison:
@@ -3956,7 +3950,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Utility & Lure Skiff -SUP käyttää jäykkää, ponttonimaista 47 tuuman ääriviivaa, jota on käytännössä mahdoton kaataa heitettäessä tai suurta kalaa taisteltaessa. Sen raskas vahvistettu drop-stitch-rakenne on mitoitettu 880 paunalle, ja pääskyhännän muotoinen perä tarjoaa valmiiksi konfiguroitua kiinnitystilaa voimakäyttöisille propulsiojärjestelmille.',
       audience:
-        'Uistelu- ja perhokalastajille, keihäskalastajille, matalikontarkkailijoille ja kalastajille, jotka käyttävät peräpotkuria puhallettavalta alustalta — sekä OEM/ODM-ostajille, jotka hankkivat monikäyttöisen uisteluskiff-SUP:n.',
+        'Uistelu- ja perhokalastajille, keihäskalastajille, matalikontarkkailijoille ja kalastajille, jotka käyttävät peräpotkuria puhallettavalta alustalta.',
       ai_use_cases: [
         'Uistelu ja perhokalastus seisoen tai istuen',
         'Vedenalainen tiedustelu ja keihäskalastus',
@@ -3985,7 +3979,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Touring Cruiser yhdistää 15 PSI:lle mitoitetun drop-stitch-PVC-ytimen kylkijäykkyyteen painumisen estämiseksi keskivälillä. Matalaprofiilinen US-eväkotelo mahdollistaa mukana toimitettavan 9 tuuman kilpa-/touring-evän tai jälkimarkkinaevien kiinnittämisen, jolloin meloja voi säätää suuntavakautta ja nopeutta tiettyihin olosuhteisiin.',
       audience:
-        'Pitkän matkan touring-melojille, tyynenveden tutkimusmatkailijoille, kestävyysristeilijöille ja melojille, jotka haluavat säädettävää suorituskykyä — sekä OEM/ODM-ostajille, jotka hankkivat touring-puhallettavan SUP-laudan.',
+        'Pitkän matkan touring-melojille, tyynenveden tutkimusmatkailijoille, kestävyysristeilijöille ja melojille, jotka haluavat säädettävää suorituskykyä.',
       ai_use_cases: [
         'Pitkän matkan touring ja rannikkoristeily',
         'Tyynenveden tutkiminen ja kestävyysmelonta',
@@ -4097,7 +4091,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Řada RHEO využívá uhlíkovou hybridní nafukovací konstrukci, která eliminuje prohýbání a poskytuje naprosto tuhou platformu. Špička rozrážející vlny prořezává vlny s minimálním odporem, zatímco šířka 26 palců snižuje tření smáčeného povrchu a sestava ploutví 2+1 udržuje stopu ve vysoké rychlosti a usnadňuje rychlé zatáčení.',
       audience:
-        'Závodníkům usilujícím o osobní rekordy, nadšencům rychlosti a pokročilým veslařům, kteří chtějí tuhý závodní výkon s přenosností nafukovacího prkna, plus OEM/ODM kupujícím.',
+        'Závodníkům usilujícím o osobní rekordy, nadšencům rychlosti a pokročilým veslařům, kteří chtějí tuhý závodní výkon s přenosností nafukovacího prkna.',
       ai_use_cases: [
         'Závodní SUP závody a sprintový trénink',
         'Rychlostní fitness a intervalové pádlování',
@@ -4126,7 +4120,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Nafukovací rybářský SUP využívá silné oboustranné vzduchové komory, které poskytují výjimečnou sekundární stabilitu podobnou katamaránu nebo outriggeru. Špičatá špička a záď zachovávají šířku paluby s kajakovou stabilitou stopy a drop-stitch PVC jádro je dimenzováno na 15 PSI pro tuhou a spolehlivou platformu.',
       audience:
-        'Rybářům na nástrahy a okouny, muškařům a rybářům z kajaku a výletním veslařům, kteří vozí chladicí boxy, táborové židle a podběráky — plus OEM/ODM kupujícím, kteří shánějí nafukovací rybářské SUP prkno.',
+        'Rybářům na nástrahy a okouny, muškařům a rybářům z kajaku a výletním veslařům, kteří vozí chladicí boxy, táborové židle a podběráky.',
       ai_use_cases: [
         'Lov vestoje s nástrahami a na okouny',
         'Muškařský a kajakový rybolov z nafukovací platformy',
@@ -4155,7 +4149,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Řada Mini SUP využívá krátký, široký a vysoce stabilní profil s optimalizovaným poměrem objemu a délky pro maximální vztlak. Jeho citlivá linie rockeru a profil hrany zachytávají malé vlny a odolná paluba odolná proti propíchnutí vydrží psí tlapky, přičemž zůstává lehká a rychlá na nafouknutí.',
       audience:
-        'Rodičům, kteří seznamují děti s pádlovými sporty, dospělým, kteří chtějí přenosný surf nebo bodyboard hybrid, a majitelům domácích mazlíčků, kteří berou psy na vodu — plus OEM/ODM kupujícím, kteří shánějí mini nafukovací SUP.',
+        'Rodičům, kteří seznamují děti s pádlovými sporty, dospělým, kteří chtějí přenosný surf nebo bodyboard hybrid, a majitelům domácích mazlíčků, kteří berou psy na vodu.',
       ai_use_cases: [
         'Dětský SUP a progres v surfování',
         'Dospělý bodyboarding a surfování v příboji',
@@ -4178,16 +4172,15 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'Víceosobové obří SUP',
       desc: 'Obrovské 16,5 stopy dlouhé víceosobové nafukovací SUP dimenzované na 650 kg s dvouventilovým nafukováním, 8palcovým trupem, více držadly a víceploutvovou stabilitou stopy.',
       definition:
-        '16,5 stopy dlouhé víceosobové obří nafukovací SUP s 8palcovým trupem, dvouventilovým nafukováním, více držadly, víceploutvovou stabilitou stopy a dvojitým bungee systémem pro skupinové pádlování, pronájmy a týmové akce.',
+        '16,5 stopy dlouhé víceosobové obří nafukovací SUP s 8palcovým trupem, dvouventilovým nafukováním, více držadly, víceploutvovou stabilitou stopy a dvojitým bungee systémem pro skupinové pádlování a dny u jezera.',
       problem:
-        'Skupiny, provozovatelé půjčoven a organizátoři akcí potřebují jedno obří nafukovací prkno, které bezpečně unese více jezdců a zůstane tuhé pod koncentrovanými zátěžemi.',
+        'Skupiny, rodiny a přátelé potřebují jedno obří nafukovací prkno, které bezpečně unese více jezdců a zůstane tuhé pod koncentrovanými zátěžemi.',
       howItWorks:
         'Víceosobové obří SUP využívá těžký drop-stitch PVC dimenzovaný na 15 PSI s dvouventilovým systémem, takže dva lidé mohou nafukovat velký objem vzduchu najednou. Osm až dvanáct těžkých držadel podél obou hran plus držadla na špičce a zádi usnadňují přenášení a opětovný nástup, zatímco sestava 4+1 nebo tří ploutví udržuje široké prkno v přímém směru.',
-      audience:
-        'Provozovatelům půjčoven, vodním klubům, organizátorům akcí vedoucím týmové programy, velkým rodinám a skupinovým dobrodruhům — plus OEM/ODM kupujícím, kteří shánějí obří víceosobové nafukovací SUP.',
+      audience: 'Velké rodiny, skupinoví dobrodruzi a přátelé, kteří hledají plovoucí platformu pro zábavu u jezera.',
       ai_use_cases: [
-        'Firemní a skupinové týmové aktivity',
-        'Komerční flotily půjčoven a klubové výlety',
+        'Skupinové hry a výzvy na vodě',
+        'Skupinové plavby a klubové výlety',
         'Výlety velkých rodin a více jezdců na jezeře',
       ],
       ai_comparison:
@@ -4213,7 +4206,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Užitkový a nástrahový skif SUP využívá krátký, pontonový 47palcový tvar, který je při házení nebo boji s velkou rybou prakticky nepřevratitelný. Jeho těžká vyztužená drop-stitch konstrukce je dimenzována na 880 lb a vlaštovčí záď poskytuje předpřipravený montážní prostor pro motorické pohonné systémy.',
       audience:
-        'Rybářům na nástrahy a mušky, lovcům harpunou, pozorovatelům mělčin a rybářům používajícím přívěsné motory z nafukovací platformy — plus OEM/ODM kupujícím, kteří shánějí víceúčelový nástrahový skif SUP.',
+        'Rybářům na nástrahy a mušky, lovcům harpunou, pozorovatelům mělčin a rybářům používajícím přívěsné motory z nafukovací platformy.',
       ai_use_cases: [
         'Lov na nástrahy a mušky z vestoje i vsedě',
         'Podvodní průzkum a lov harpunou',
@@ -4242,7 +4235,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Touring Cruiser kombinuje drop-stitch PVC jádro dimenzované na 15 PSI s tuhostí hran, aby se zabránilo prohýbání uprostřed rozpětí. Nízkoprofilová US ploutvová skříň přijímá přiloženou 9palcovou závodní/touringovou ploutev nebo ploutve z náhradního trhu, což veslařům umožňuje ladit stabilitu stopy a rychlost pro konkrétní podmínky.',
       audience:
-        'Touringovým veslařům pokrývajícím dlouhé vzdálenosti, průzkumníkům klidné vody, vytrvalostním plavcům a veslařům, kteří chtějí laditelný výkon — plus OEM/ODM kupujícím, kteří shánějí touringové nafukovací SUP prkno.',
+        'Touringovým veslařům pokrývajícím dlouhé vzdálenosti, průzkumníkům klidné vody, vytrvalostním plavcům a veslařům, kteří chtějí laditelný výkon.',
       ai_use_cases: [
         'Touring na dlouhé vzdálenosti a pobřežní plavba',
         'Průzkum klidné vody a vytrvalostní pádlování',
@@ -4354,7 +4347,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'RHEO-serien bruger en kulhybrid oppustelig konstruktion, der eliminerer bøjning for en klippefast platform. Dens bølgeskærende spids skærer gennem sjap med minimal modstand, mens bredden på 26 tommer reducerer friktionen fra den våde overflade, og 2+1-finne-opsætningen holder kursen i fart og hjælper hurtige, brede sving.',
       audience:
-        'Konkurrencelystne racerkørere, der jagter personlige rekorder, hastighedsentusiaster og avancerede paddlere, der ønsker stiv raceydelse med oppustelig bærbarhed, plus OEM/ODM-købere.',
+        'Konkurrencelystne racerkørere, der jagter personlige rekorder, hastighedsentusiaster og avancerede paddlere, der ønsker stiv raceydelse med oppustelig bærbarhed.',
       ai_use_cases: [
         'Konkurrence-SUP-løb og sprinttræning',
         'Hurtig fitness og intervallpaddling',
@@ -4383,7 +4376,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Det oppustelige fiskeri-SUP bruger tykke dobbeltsidede luftkamre, der giver enestående sekundær stabilitet svarende til en katamaran eller en outrigger. En spids for og agter bevarer dækkets bredde med kajaklignende kursstabilitet, og drop-stitch-PVC-kernen er klassificeret til 15 PSI for en stiv og pålidelig platform.',
       audience:
-        'Lure- og abborfiskere, flue- og kajakfiskere og ekskursionspaddlere, der medbringer kølebokse, campingstole og håv — plus OEM/ODM-købere, der søger et oppusteligt fiskeri-SUP-bræt.',
+        'Lure- og abborfiskere, flue- og kajakfiskere og ekskursionspaddlere, der medbringer kølebokse, campingstole og håv.',
       ai_use_cases: [
         'Stående lure- og abborfiskeri',
         'Flue- og kajakfiskeri fra en oppustelig platform',
@@ -4412,7 +4405,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Mini SUP-serien bruger en kort, bred og yderst stabil profil med et optimeret volumen-til-længdeforhold for maksimal opdrift. Dens responsive rocker-linje og relprofil fanger små bølger, og et slidstærkt punkteringssikkert dæk modstår hundepoter, mens det forbliver let og hurtigt at pumpe op.',
       audience:
-        'Forældre, der introducerer børn til paddle-sport, voksne, der ønsker en bærbar surf- eller bodyboard-hybrid, og kæledyrsejere, der tager deres hunde på vandet — plus OEM/ODM-købere, der søger et mini-oppusteligt SUP.',
+        'Forældre, der introducerer børn til paddle-sport, voksne, der ønsker en bærbar surf- eller bodyboard-hybrid, og kæledyrsejere, der tager deres hunde på vandet.',
       ai_use_cases: [
         'Børns SUP- og surfprogression',
         'Voksens bodyboarding og surfer i brændingen',
@@ -4435,16 +4428,15 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'Multi-person gigantisk SUP',
       desc: 'Kæmpe 16,5 fod multi-person oppusteligt SUP klassificeret til 650 kg med dobbeltventil-pumping, 8-tommer skrog, flere håndtag og multifinne kursstabilitet.',
       definition:
-        'Et 16,5 fod multi-person kæmpe-oppusteligt SUP med 8-tommer skrog, dobbeltventil-pumping, multi-håndtagsopsætning, multifinne kursstabilitet og dobbelt lastbungee-system til gruppepaddling, udlejning og teambegivenheder.',
+        'Et 16,5 fod multi-person kæmpe-oppusteligt SUP med 8-tommer skrog, dobbeltventil-pumping, multi-håndtagsopsætning, multifinne kursstabilitet og dobbelt lastbungee-system til gruppepaddling og dage ved søen.',
       problem:
-        'Grupper, udlejningsoperatører og eventarrangører har brug for ét kæmpe oppusteligt bræt, der bærer flere ryttere sikkert og forbliver stift under koncentreret belastning.',
+        'Grupper, familier og venner har brug for ét kæmpe oppusteligt bræt, der bærer flere ryttere sikkert og forbliver stift under koncentreret belastning.',
       howItWorks:
         'Multi-person gigantisk SUP bruger kraftigt drop-stitch-PVC klassificeret til 15 PSI med et dobbeltventilsystem, så to personer kan pumpe det store luftvolumen op på én gang. Otte til tolv kraftige håndtag langs begge relinger plus håndtag i spids og agter gør bæring og gen-ombordstigning let, mens en 4+1- eller trifinne-opsætning holder det brede bræt i kursen.',
-      audience:
-        'Udlejningsoperatører, vandsportsklubber, eventarrangører med teambuildingsprogrammer, store familier og gruppe-eventyrere — plus OEM/ODM-købere, der søger et kæmpe multi-person oppusteligt SUP.',
+      audience: 'Store familier, gruppe-eventyrere og venner, der vil have en flydende platform til sjov ved søen.',
       ai_use_cases: [
-        'Virksomheds- og gruppeteambuildings-sessioner',
-        'Kommercielle udlejningsflåder og klubudflugter',
+        'Gruppespil og udfordringer i vandet',
+        'Gruppeture og klubpadling',
         'Store familie- og multi-rytter søudflugter',
       ],
       ai_comparison:
@@ -4470,7 +4462,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Utility & Lure Skiff SUP bruger en stubby, pontonlignende 47-tommer kontur, der er praktisk talt umulig at vælte, når man kaster eller kæmper med store fisk. Dens kraftige forstærkede drop-stitch-konstruktion er klassificeret til 880 lb, og svalehaleagterstavnen giver prækonfigureret monteringsplads til motoriserede fremdriftssystemer.',
       audience:
-        'Lure- og fluefiskere, spydfiskere, observatører af lavt vand og fiskere, der kører trolling-motorer fra en oppustelig platform — plus OEM/ODM-købere, der søger et multifunktionelt lure-skiff-SUP.',
+        'Lure- og fluefiskere, spydfiskere, observatører af lavt vand og fiskere, der kører trolling-motorer fra en oppustelig platform.',
       ai_use_cases: [
         'Lure- og fluefiskeri fra en stående eller siddende platform',
         'Undervandsrekognoscering og spydfiskeri',
@@ -4499,7 +4491,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Touring Cruiser kombinerer en drop-stitch-PVC-kerne klassificeret til 15 PSI med relinge-stivhed for at forhindre sænkning midt på brættet. En lavprofil US-finnekasse modtager den inkluderede 9-tommer race-/touring-finne eller eftermarkedsfinner, så paddlere kan justere kurs og hastighed til specifikke forhold.',
       audience:
-        'Touring-paddlere, der dækker lange afstande, udforskere af roligt vand, endurance-cruisere og paddlere, der ønsker justerbar ydeevne — plus OEM/ODM-købere, der søger et oppusteligt touring-SUP-bræt.',
+        'Touring-paddlere, der dækker lange afstande, udforskere af roligt vand, endurance-cruisere og paddlere, der ønsker justerbar ydeevne.',
       ai_use_cases: [
         'Fjerndistance-touring og kystnær cruising',
         'Udforskning af roligt vand og endurance-paddling',
@@ -4611,7 +4603,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Seriile RHEO utilizează o construcție gonflabilă hibridă din carbon care elimină deformarea pentru o platformă extrem de solidă. Vârful care taie valurile străpunge apa agitată cu rezistență minimă, în timp ce lățimea de 26 de inci reduce frecarea suprafeței umede, iar configurația de aripioare 2+1 menține direcția la viteză și facilitează virajele largi rapide.',
       audience:
-        'Concurenți care urmăresc recorduri personale, pasionați de viteză și paddleri avansați care își doresc performanță rigidă de cursă cu portabilitate gonflabilă, plus cumpărători OEM/ODM.',
+        'Concurenți care urmăresc recorduri personale, pasionați de viteză și paddleri avansați care își doresc performanță rigidă de cursă cu portabilitate gonflabilă.',
       ai_use_cases: [
         'Curse SUP competitive și antrenament de sprint',
         'Fitness de viteză și paddling pe intervale',
@@ -4640,7 +4632,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'SUP-ul de pescuit gonflabil folosește camere de aer laterale groase pe ambele părți, care oferă o stabilitate secundară excepțională, similară unui catamaran sau unei ambarcațiuni cu susținere laterală. Un vârf și o pupă ascuțite păstrează lățimea punții cu fermitatea direcției specifică unui kayak, iar miezul drop-stitch din PVC este clasificat la 15 PSI pentru o platformă rigidă și de încredere.',
       audience:
-        'Pescar de aruncare a nadei și de bibani, pescari cu muscă și din kayak, și paddleri de excursii care transportă răcitoare, scaune de camp și năvoade — plus cumpărători OEM/ODM care caută un SUP de pescuit gonflabil.',
+        'Pescar de aruncare a nadei și de bibani, pescari cu muscă și din kayak, și paddleri de excursii care transportă răcitoare, scaune de camp și năvoade.',
       ai_use_cases: [
         'Pescuit cu nadă aruncată în picioare și de biban',
         'Pescuit cu muscă și din kayak de pe o platformă gonflabilă',
@@ -4669,7 +4661,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Seriile Mini SUP folosesc un profil scurt, lat și extrem de stabil, cu un raport optimizat volum-lungime pentru flotabilitate maximă. Linia de rocker și profilul bordurii, receptive, prind valurile mici, iar o punte durabilă, rezistentă la perforare, suportă labele câinilor, rămânând ușoară și rapid de umflat.',
       audience:
-        'Părinți care introduc copiii în sporturile cu paddle, adulți care își doresc un hibrid de surf sau bodyboard portabil și proprietari de animale care își duc câinii pe apă — plus cumpărători OEM/ODM care caută un mini SUP gonflabil.',
+        'Părinți care introduc copiii în sporturile cu paddle, adulți care își doresc un hibrid de surf sau bodyboard portabil și proprietari de animale care își duc câinii pe apă.',
       ai_use_cases: [
         'Progresie SUP și surf pentru copii',
         'Bodyboarding pentru adulți și surf în valurile de țărm',
@@ -4692,16 +4684,16 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'SUP gigant pentru mai multe persoane',
       desc: 'SUP gonflabil gigant de 16,5 picioare pentru mai multe persoane, rating 650 kg, cu umflare cu dublă supapă, carenă de 8 inci, mânere multiple și fermitate a direcției cu aripioare multiple.',
       definition:
-        'Un SUP gonflabil gigant de 16,5 picioare pentru mai multe persoane, cu carenă de 8 inci, umflare cu dublă supapă, configurație cu mânere multiple, fermitate a direcției cu aripioare multiple și sisteme duble cu corzi elastice pentru paddling de grup, închiriere și evenimente de echipă.',
+        'Un SUP gonflabil gigant de 16,5 picioare pentru mai multe persoane, cu carenă de 8 inci, umflare cu dublă supapă, configurație cu mânere multiple, fermitate a direcției cu aripioare multiple și sisteme duble cu corzi elastice pentru paddling de grup și zile la lac.',
       problem:
-        'Grupurile, operatorii de închiriere și organizatorii de evenimente au nevoie de o singură placă gonflabilă gigantă care să transporte mai mulți sportivi în siguranță și să rămână rigidă sub sarcini concentrate.',
+        'Grupurile, familiile și prietenii au nevoie de o singură placă gonflabilă gigantă care să transporte mai mulți sportivi în siguranță și să rămână rigidă sub sarcini concentrate.',
       howItWorks:
         'SUP-ul gigant pentru mai multe persoane folosește drop-stitch din PVC robust, clasificat la 15 PSI, cu un sistem cu dublă supapă, astfel încât două persoane pot umfla volumul mare de aer simultan. Opt până la douăsprezece mânere robuste de-a lungul ambelor bordaje, plus mânere la vârf și pupă, fac transportul și reîmbarcarea ușoare, în timp ce o configurație 4+1 sau cu trei aripioare menține placa largă pe direcție.',
       audience:
-        'Operatori de închiriere, cluburi de sporturi nautice, organizatori de evenimente care desfășoară programe de team-building, familii numeroase și aventurieri de grup — plus cumpărători OEM/ODM care caută un SUP gonflabil gigant pentru mai multe persoane.',
+        'Familii numeroase, aventurieri de grup și prieteni care caută o platformă plutitoare pentru distracție la lac.',
       ai_use_cases: [
-        'Sesiuni de team-building corporative și de grup',
-        'Flote comerciale de închiriere și excursii de club',
+        'Jocuri și provocări de grup pe apă',
+        'Plimbări de grup și ieșiri de club',
         'Ieșiri pe lac cu familii mari și mai mulți sportivi',
       ],
       ai_comparison:
@@ -4727,7 +4719,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'SUP utilitar și skiff pentru nadă folosește un contur scurt, de 47 de inci, tip pontoane, practic imposibil de răsturnat în timpul aruncării sau luptei cu pești mari. Construcția sa din drop-stitch robustă și întărită este clasificată la 880 lb, iar pupa tip coadă de rândunică oferă spațiu de montare preconfigurat pentru sisteme de propulsie motorizate.',
       audience:
-        'Pescari cu nadă și muscă, pescari cu harponul, observatori ai apelor puțin adânci și pescari care folosesc motoare de trolling de pe o platformă gonflabilă — plus cumpărători OEM/ODM care caută un SUP de tip skiff pentru nadă, multifuncțional.',
+        'Pescari cu nadă și muscă, pescari cu harponul, observatori ai apelor puțin adânci și pescari care folosesc motoare de trolling de pe o platformă gonflabilă.',
       ai_use_cases: [
         'Pescuit cu nadă și muscă de pe o platformă în picioare sau șezând',
         'Recunoaștere subacvatică și pescuit cu harponul',
@@ -4756,7 +4748,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Cruiserul de touring combină un miez drop-stitch din PVC clasificat la 15 PSI cu rigiditatea bordajelor pentru a preveni lăsarea la mijloc. O cutie de aripioare US cu profil redus acceptă aripioara inclusă de 9 inci pentru curse/touring sau aripioare de pe piață, permițând paddlerilor să regleze fermitatea direcției și viteza pentru condiții specifice.',
       audience:
-        'Paddleri de touring care acoperă distanțe lungi, exploratori ai apelor calme, croazieri de anduranță și paddleri care își doresc performanță reglabilă — plus cumpărători OEM/ODM care caută un SUP gonflabil de touring.',
+        'Paddleri de touring care acoperă distanțe lungi, exploratori ai apelor calme, croazieri de anduranță și paddleri care își doresc performanță reglabilă.',
       ai_use_cases: [
         'Touring pe distanțe lungi și croazieră de coastă',
         'Explorarea apelor calme și paddling de anduranță',
@@ -4868,7 +4860,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'RHEO ซีรีส์ใช้โครงสร้างปั๊มลมไฮบริดคาร์บอนที่ขจัดการโก่งตัวให้แท่นบอร์ดแข็งแกร่งสุดขีด หัวตัดคลื่นเฉือนผ่านคลื่นลมด้วยแรงต้านน้อยที่สุด ขณะที่ความกว้าง 26 นิ้วลดแรงเสียดทานบนผิวน้ำ และชุดครีบ 2+1 ยึดการทรงตัวตรงที่ความเร็วสูงพร้อมช่วยการเลี้ยวโค้งกว้างที่รวดเร็ว',
       audience:
-        'นักแข่งที่ไล่ล่าสถิติส่วนตัว ผู้ชื่นชอบความเร็ว และนักพายขั้นสูงที่ต้องการสมรรถนะการแข่งที่แข็งเกร็งพร้อมความพกพาแบบปั๊มลม รวมถึงผู้ซื้อ OEM/ODM',
+        'นักแข่งที่ไล่ล่าสถิติส่วนตัว ผู้ชื่นชอบความเร็ว และนักพายขั้นสูงที่ต้องการสมรรถนะการแข่งที่แข็งเกร็งพร้อมความพกพาแบบปั๊มลม',
       ai_use_cases: [
         'การแข่ง SUP และการฝึกวิ่งระยะสั้น',
         'ออกกำลังกายความเร็วสูงและการพายแบบอินเทอร์วัล',
@@ -4897,7 +4889,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'SUP ตกปลาปั๊มลมใช้ห้องอากาศหนาสองข้างที่ให้ความเสถียรรองรับที่ยอดเยี่ยมคล้ายคาตามารันหรือเรือกรรเชียงหัวท้าย หัวและท้ายเรือแหลมรักษาความกว้างดาดฟ้าพร้อมการทรงตัวตรงแบบคายัค และแกน PVC แบบ drop-stitch รองรับแรงดัน 15 PSI เพื่อแท่นบอร์ดที่แข็งเกร็งและน่าเชื่อถือ',
       audience:
-        'นักตกปลาด้วยเหยื่อล่อและปลากะพง นักตกปลาแมลงวันและจากคายัค และนักพายทัวร์ที่ขนถังแช่เย็น เก้าอี้แคมป์ปิ้ง และสวิงตักปลา รวมถึงผู้ซื้อ OEM/ODM ที่ต้องการบอร์ด SUP ตกปลาปั๊มลม',
+        'นักตกปลาด้วยเหยื่อล่อและปลากะพง นักตกปลาแมลงวันและจากคายัค และนักพายทัวร์ที่ขนถังแช่เย็น เก้าอี้แคมป์ปิ้ง และสวิงตักปลา',
       ai_use_cases: [
         'การยืนตกปลาด้วยเหยื่อล่อและปลากะพง',
         'การตกปลาแมลงวันและจากคายัคบนแท่นปั๊มลม',
@@ -4926,7 +4918,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Mini SUP ซีรีส์ใช้โครงที่สั้น กว้าง และเสถียรสูง พร้อมอัตราส่วนปริมาตรต่อความยาวที่ปรับแต่งเพื่อการลอยตัวสูงสุด เส้นร็อกเกอร์และโครงขอบที่ตอบสนองดีรับคลื่นเล็ก และดาดฟ้าทนทานกันทะลุรองรับอุ้งเท้าสุนัข พร้อมทั้งยังเบาและเป่าลมได้เร็ว',
       audience:
-        'พ่อแม่ที่พาเด็กๆ เข้าสู่กีฬาพาย บอร์ดเซิร์ฟหรือบอดี้บอร์ดไฮบริดพกพาสำหรับผู้ใหญ่ และเจ้าของสัตว์เลี้ยงที่พาสุนัขลงน้ำ รวมถึงผู้ซื้อ OEM/ODM ที่ต้องการ Mini SUP ปั๊มลม',
+        'พ่อแม่ที่พาเด็กๆ เข้าสู่กีฬาพาย บอร์ดเซิร์ฟหรือบอดี้บอร์ดไฮบริดพกพาสำหรับผู้ใหญ่ และเจ้าของสัตว์เลี้ยงที่พาสุนัขลงน้ำ',
       ai_use_cases: [
         'การพัฒนาการพายและเซิร์ฟของเด็ก',
         'บอดี้บอร์ดผู้ใหญ่และเซิร์ฟคลื่นชายฝั่ง',
@@ -4949,16 +4941,15 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       name: 'SUP ยักษ์หลายคน',
       desc: 'SUP ปั๊มลมหลายคนยักษ์ยาว 16.5 ฟุต รองรับน้ำหนัก 650 กก. เป่าลมสองวาล์ว ตัวเรือ 8 นิ้ว ด้ามจับหลายจุด และครีบหลายชิ้นเพื่อการทรงตัวตรง',
       definition:
-        'SUP ปั๊มลมยักษ์หลายคนยาว 16.5 ฟุต พร้อมตัวเรือ 8 นิ้ว ระบบเป่าลมสองวาล์ว ชุดด้ามจับหลายจุด ครีบหลายชิ้นช่วยการทรงตัวตรง และระบบเชือกรั้งสินค้าสองชุด สำหรับการพายกลุ่ม เช่า และกิจกรรมทีม',
+        'SUP ปั๊มลมยักษ์หลายคนยาว 16.5 ฟุต พร้อมตัวเรือ 8 นิ้ว ระบบเป่าลมสองวาล์ว ชุดด้ามจับหลายจุด ครีบหลายชิ้นช่วยการทรงตัวตรง และระบบเชือกรั้งสินค้าสองชุด สำหรับการพายกลุ่มและวันสนุกริมทะเลสาบ',
       problem:
-        'กลุ่ม นักให้เช่า และผู้จัดงานต้องการบอร์ดปั๊มลมยักษ์เพียงแผ่นเดียวที่บรรทุกผู้ปั่นหลายคนได้อย่างปลอดภัยและคงความแข็งเกร็งภายใต้น้ำหนักที่กระจุกตัว',
+        'กลุ่ม ครอบครัว และเพื่อนฝูงต้องการบอร์ดปั๊มลมยักษ์เพียงแผ่นเดียวที่บรรทุกผู้ปั่นหลายคนได้อย่างปลอดภัยและคงความแข็งเกร็งภายใต้น้ำหนักที่กระจุกตัว',
       howItWorks:
         'SUP ยักษ์หลายคนใช้ PVC แบบ drop-stitch หนา รองรับแรงดัน 15 PSI พร้อมระบบสองวาล์วที่ให้คนสองคนเป่าลมปริมาณมากพร้อมกันได้ ด้ามจับหนา 8–12 จุดตลอดสองข้างเรือบวกด้ามจับที่หัวและท้ายช่วยให้ยกและกลับขึ้นบอร์ดได้ง่าย ขณะที่ชุดครีบ 4+1 หรือ 3 ชิ้นทำให้บอร์ดกว้างทรงตรง',
-      audience:
-        'นักให้เช่า สโมสรกีฬาทางน้ำ ผู้จัดกิจกรรมทีมบิลดิ้ง ครอบครัวใหญ่ และนักผจญภัยกลุ่ม รวมถึงผู้ซื้อ OEM/ODM ที่ต้องการ SUP ปั๊มลมยักษ์หลายคน',
+      audience: 'ครอบครัวใหญ่ นักผจญภัยกลุ่ม และเพื่อนฝูงที่อยากได้แท่นลอยน้ำสำหรับสนุกริมทะเลสาบ',
       ai_use_cases: [
-        'กิจกรรมทีมบิลดิ้งองค์กรและกลุ่ม',
-        'กองเรือเช่าเชิงพาณิชย์และทริปสโมสร',
+        'เกมและกิจกรรมท้าทายกลุ่มบนน้ำ',
+        'ล่องน้ำกลุ่มและทริปสโมสร',
         'ทริปทะเลสาบของครอบครัวใหญ่และผู้ปั่นหลายคน',
       ],
       ai_comparison:
@@ -4984,7 +4975,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
       howItWorks:
         'Utility & Lure Skiff SUP ใช้กรอบรูปทรงโป๊ะสั้นกว้าง 47 นิ้วที่แทบเป็นไปไม่ได้ที่จะพลิกคว่ำขณะเหวี่ยงหรือต่อสู้กับปลาตัวใหญ่ โครงสร้าง drop-stitch เสริมแรงหนารองรับน้ำหนัก 880 ปอนด์ และท้ายเรือทรงหางนกนางแอ่นให้พื้นที่ติดตั้งที่เตรียมไว้แล้วสำหรับระบบขับเคลื่อนด้วยมอเตอร์',
       audience:
-        'นักตกปลาด้วยเหยื่อล่อและแมลงวัน นักดำน้ำหาปลา นักดูน้ำตื้น และนักตกปลาที่ใช้มอเตอร์ทอลลิ่งจากแท่นปั๊มลม รวมถึงผู้ซื้อ OEM/ODM ที่ต้องการ SUP ทรงเรือล่องเหยื่อล่ออเนกประสงค์',
+        'นักตกปลาด้วยเหยื่อล่อและแมลงวัน นักดำน้ำหาปลา นักดูน้ำตื้น และนักตกปลาที่ใช้มอเตอร์ทอลลิ่งจากแท่นปั๊มลม',
       ai_use_cases: [
         'การตกปลาด้วยเหยื่อล่อและแมลงวันทั้งยืนและนั่ง',
         'การสำรวจใต้น้ำและการดำน้ำหาปลา',
@@ -5012,8 +5003,7 @@ export const productTexts: Record<string, Record<string, ProductTexts>> = {
         'นักพายทัวริงระยะไกลต้องการบอร์ดที่มีขอบแข็งเกร็งป้องกันการแอ่นตัว การทรงตัวตรงที่คาดเดาได้ และระบบครีบที่ปรับได้ตามสภาพน้ำต่างๆ',
       howItWorks:
         'Touring Cruiser ผสานแกน PVC แบบ drop-stitch รองรับแรงดัน 15 PSI เข้ากับความแข็งเกร็งขอบบอร์ดเพื่อป้องกันการแอ่นตัวกลางบอร์ด กล่องครีบ US แนวเตี้ยรองรับครีบแข่ง/ทัวริง 9 นิ้วที่ให้มาหรือครีบเสริมจากภายนอก ช่วยให้นักพายปรับการทรงตัวตรงและความเร็วตามสภาพที่ต้องการ',
-      audience:
-        'นักพายทัวริงระยะไกล นักสำรวจน้ำนิ่ง นักล่องระยะยาว และนักพายที่ต้องการสมรรถนะที่ปรับได้ รวมถึงผู้ซื้อ OEM/ODM ที่ต้องการบอร์ด SUP ทัวริงปั๊มลม',
+      audience: 'นักพายทัวริงระยะไกล นักสำรวจน้ำนิ่ง นักล่องระยะยาว และนักพายที่ต้องการสมรรถนะที่ปรับได้',
       ai_use_cases: [
         'การทัวริงระยะไกลและการล่องชายฝั่ง',
         'การสำรวจน้ำนิ่งและการพายระยะยาว',

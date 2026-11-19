@@ -148,10 +148,10 @@ const metadata: MetaData = {
                     {t('product.requestQuote') || 'Request a Quote'}
                   </a>
                   <a
-                    href={withTrailingSlash(`/${lang}/contact?product=${encodeURIComponent(p.name)}&custom=1`)}
+                    href={withTrailingSlash(`/${lang}/products/${p.id}`)}
                     class="block text-center px-4 py-2 border border-primary text-primary text-sm font-medium rounded-lg hover:bg-primary/5 transition-colors"
                   >
-                    {t('product.getOemDetails') || 'Explore Co-Branding'}
+                    {t('product.viewDetails') || 'View Details'}
                   </a>
                 </div>
               </div>
