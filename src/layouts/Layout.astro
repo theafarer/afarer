@@ -13,7 +13,6 @@ import Metadata from '~/components/common/Metadata.astro';
 import Analytics from '~/components/common/Analytics.astro';
 import BasicScripts from '~/components/common/BasicScripts.astro';
 import AIChat from '~/components/widgets/AIChat.astro';
-import ExitIntentPopup from '~/components/widgets/ExitIntentPopup.astro';
 import WhatsAppFloat from '~/components/widgets/WhatsAppFloat.astro';
 import { getWhatsAppLink, getWhatsAppLabel } from '~/utils/whatsapp';
 import JsonLd from '~/components/common/JsonLd.astro';
@@ -203,7 +202,7 @@ const mobileT = (key: string, fallback: string): string => mobileUi?.[key] || fa
     <BasicScripts />
     <AIChat />
     <WhatsAppFloat />
-    <ExitIntentPopup />
+
     <div
       id="mobile-cta"
       class="fixed bottom-0 left-0 right-0 z-40 bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-700 px-4 py-3 flex items-center gap-3 md:hidden shadow-2xl translate-y-full transition-transform duration-300"
@@ -228,11 +227,6 @@ const mobileT = (key: string, fallback: string): string => mobileUi?.[key] || fa
         href={localizeHref('/contact', currentLang)}
         class="flex-1 text-center px-4 py-2.5 bg-sky-600 hover:bg-sky-700 text-white font-semibold rounded-xl text-sm transition-colors"
         >{mobileT('cta.quote', 'Get a Quote')}</a
-      >
-      <a
-        href={localizeHref('/oem-odm-manufacturer', currentLang)}
-        class="flex-1 text-center px-4 py-2.5 bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 text-gray-900 dark:text-white font-semibold rounded-xl text-sm transition-colors"
-        >{mobileT('cta.oemInfo', 'OEM Info')}</a
       >
     </div>
     <script is:inline>
