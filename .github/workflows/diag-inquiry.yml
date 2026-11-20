@@ -79,8 +79,8 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          echo "Tailing afarer-contact for 1800s - submit your test form anytime in this window."
-          timeout 1800 npx --yes wrangler@4 tail afarer-contact -c workers/contact-worker/wrangler.toml --format json > /tmp/tail.log 2>&1 || true
+          echo "Tailing afarer-contact for 60s (verification pass)."
+          timeout 60 npx --yes wrangler@4 tail afarer-contact -c workers/contact-worker/wrangler.toml --format json > /tmp/tail.log 2>&1 || true
           echo '--- tail output ---'
           cat /tmp/tail.log
       - if: steps.guard.outputs.enabled == 'true'
