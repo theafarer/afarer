@@ -1,0 +1,28 @@
+---
+import Icon from '~/components/ui/Icon.astro';
+
+export interface Props {
+  rating: number;
+  size?: 'sm' | 'md' | 'lg';
+  showValue?: boolean;
+  class?: string;
+}
+
+const { rating, size = 'sm', showValue = false, class: className = '' } = Astro.props;
+const sizeCls = size === 'lg' ? 'w-6 h-6' : size === 'md' ? 'w-5 h-5' : 'w-4 h-4';
+const stars = [1, 2, 3, 4, 5].map((i) => (rating >= i ? 'full' : rating >= i - 0.5 ? 'half' : 'empty'));
+const iconFor = (s: string) =>
+  s === 'full' ? 'tabler:star-filled' : s === 'half' ? 'tabler:star-half-filled' : 'tabler:star';
+---
+
+<div class={`flex items-center gap-0.5 ${className}`} role="img" aria-label={`${rating} out of 5 stars`}>
+  {
+    stars.map((s) => (
+      <Icon
+        name={iconFor(s)}
+        class={`${sizeCls} ${s === 'empty' ? 'text-gray-300 dark:text-slate-600' : 'text-amber-400'}`}
+      />
+    ))
+  }
+  {showValue && <span class="ml-1.5 text-sm font-semibold text-gray-700 dark:text-slate-200">{rating.toFixed(1)}</span>}
+</div>

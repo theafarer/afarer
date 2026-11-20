@@ -17,6 +17,9 @@ import { getCanonical, getPermalink } from '~/utils/permalinks';
 import type { MetaData } from '~/types';
 import { products as productRecords } from '~/data/products';
 import { guides } from '~/data/guides';
+import Stars from '~/components/common/Stars.astro';
+import ProductReviews from '~/components/widgets/ProductReviews.astro';
+import { getRatingStats } from '~/data/reviews';
 
 export const prerender = true;
 
@@ -36,6 +39,7 @@ const gallery = await Promise.all(
 );
 const related = await findRelatedProducts(product, 3);
 const relatedGuides = rec ? guides.filter((g) => g.relatedProducts.includes(rec.id)).slice(0, 3) : [];
+const stats = getRatingStats(product.slug);
 
 const defaultTitle = product.categoryLabel
   ? `${product.title} — ${product.categoryLabel} | ${SITE.name}`
@@ -90,6 +94,7 @@ const specRows = product.specs ?? [];
       ...(rec?.ai_specs?.width ? { width: rec.ai_specs.width } : {}),
       ...(rec?.ai_specs?.thickness ? { height: rec.ai_specs.thickness } : {}),
       ...(product.price ? { inStock: product.inStock } : {}),
+      ...(stats ? { aggregateRating: { ratingValue: stats.avg, reviewCount: stats.count } } : {}),
     }}
   />
   <JsonLd type="BreadcrumbList" breadcrumbs={productCrumbs.map((c) => ({ name: c.name, href: c.href }))} />
@@ -216,6 +221,14 @@ const specRows = product.specs ?? [];
           >
             {product.title}
           </h1>
+          {
+            stats && (
+              <div class="flex items-center gap-2 mt-4">
+                <Stars rating={stats.avg} size="md" showValue />
+                <span class="text-sm text-gray-500 dark:text-slate-400">({stats.count} reviews)</span>
+              </div>
+            )
+          }
           {
             product.summary && (
               <p class="mt-4 text-lg text-gray-500 dark:text-slate-400 leading-relaxed max-w-lg">{product.summary}</p>
@@ -481,6 +494,9 @@ const specRows = product.specs ?? [];
       </section>
     )
   }
+
+  {/* Customer Reviews */}
+  <ProductReviews productId={product.slug} />
 
   {/* Trust Badges */}
   <section class="bg-gray-50/50 dark:bg-slate-900/50 border-b border-gray-100 dark:border-slate-800">
