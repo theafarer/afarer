@@ -1616,3 +1616,9 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
      (5) **i18n 键删除四断言**:locales=32/removed=32/residual=0/依赖键(viewDetails)全量存在,四断言过才写盘;删前 grep 核引用面——仅 generated/**(gitignored)引用即安全,源码直引必须先改调用方。
      (6) **Grep 工具单文件陷阱**:传单文件 path 会扩为目录级搜索,把 biz-solutions/faq 等范围外文件卷进来误判"仍有 OEM";精确单文件检查用 PowerShell Select-String -LiteralPath <file> -Pattern ... | Measure-Object。
      (7) **提交策略**:fix 与 feat 分 commit(size-guide 独立、产品消费者化 15 文件一束);git commit -F msg 文件照旧;poll_ci.cjs + Sleep 210 + live webfetch text 抽验三段式照旧(本轮 run 44571335131 一次绿)。
+143. **对比页 i18n 新键脚本与 dist 验证器(add_compare_i18n_keys.mjs + verify_dist_compare.mjs,2026-11-20,归档 sitemisc_work)**:
+     (1) **期望值断言必须从数据源推导**:verify_dist_compare.mjs 首跑 333/334,唯一失败是凭记忆猜的受众文本('long-distance'),实际 audience 为 'Touring paddlers covering long distances';继 141 教训(记忆写 16 实际 17)后再证:**dist 断言期望值硬编码前必须先读数据源确认**,或直接从数据源动态读取。
+     (2) **新键脚本三层断言**:pre-write(31 locale 翻译覆盖齐+目标键不存在防覆盖)后 mutate×32 再 read-back 每键 32/32;JSON.parse 到 JSON.stringify(obj,null,2)+'\n' 全量回写后 prettier unchanged 证明格式与仓库一致;新键值含引号/破折号(en dash)直接写入 JSON 无 YAML 转义问题。
+     (3) **PowerShell ConvertFrom-Json 大文件陷阱**:对 i18n-config.json(32 locale 超大 JSON)抛 ArgumentException,PS 5.1 解析大/深 JSON 不可靠,**i18n-config 检查/变更一律走 Node .mjs**,PS 只做 Select-String 行级查询。
+     (4) **验证器断言集设计**:root 12 断言(分区标题/行标签/CTA 文案/href/图片/受众值/custom=1/B2B 扫描)+每 locale 10 断言(分区标题、bestFor、notSureTitle、findBoard、askQuestion 本地化值全从 i18n-config 动态取,raw 或 esc() 双查);334 断言跨 33 文件一次通过。
+     (5) **live 验证三段式**:webfetch text 抽 root+DE 各一,验证本地化渲染(DE Profi=新增 difficulty.professional 键生效)+CTA 动线+主内容 B2B 零残留;poll_ci.cjs+Sleep 210 照旧(run 44672238723 一次绿)。
