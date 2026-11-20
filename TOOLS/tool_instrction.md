@@ -1629,3 +1629,11 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
      (4) **eslint unused disable 清理**:compare 两文件顶部 /* eslint-disable @typescript-eslint/no-explicit-any _/ 在重写后变 unused(仅 warning 不挡 CI),顺手删除后 eslint 全绿。
      (5) **新键脚本三层断言照旧**:pre-write(键不存在+31 locale 翻译齐)到 mutate×32 到 read-back 128/128;翻译为 31 语言手工词表(title/count/verified/ratingLabel 四词,含 sr 西里尔/ar/he/th 非拉丁),JSON.stringify(2)+'\n' 回写 prettier unchanged。
      (6) **gitignore 生成物确认**:src/i18n/generated/_ 整体 gitignored(仅 route-manifest.json 例外),ui/*.ts 勿手编勿提交;src/components/ui/icon-svgs.ts 与 icon-valid-names.ts 是 tracked 生成物,build 后有变更须一并提交。
+145. **warranty 验证器 verify_dist_warranty.mjs 与本 arc 工具教训(2026-11-20,归档 sitemisc_work)**:
+     (1) **近区断言法**:CTA href 断言不能全页 includes('/de/warranty/')(导航/页脚可能含同名链接造成假阳),用 strip 锚点 indexOf 切片 seg=html.slice(i, i+3000) 再正则测 href;同理 strip 内容 B2B 检查切到 </section> 为止。
+     (2) **唯一性断言**:html.split('data-section="warranty-strip"').length===2 确认全页恰好一条 strip(比 count 循环简洁)。
+     (3) **期望值源**:32 语言标签值全部从 i18n-config.json 读(cfg[loc]['warranty.strip.title']),不硬编码;实体转义双查(raw||esc)照旧。
+     (4) **git add 方括号路径**:'git add "src/pages/[lang]/index.astro"' 字面路径可用——git 对 pathspec 先按字面文件 lstat,存在则直接采用,字面失败才当 glob([lang] 作字符类);不确定时可用 magic pathspec ':(literal)src/pages/[lang]/index.astro'。
+     (5) **route-manifest.json 是构建噪声**:tracked 生成物每次 build 会重排/裁剪(-3114 行),reviews arc 也未提交它;流程=git checkout -- 还原保持树净,勿把 build 重排混入 feat 提交。
+     (6) **build 超时对策**:npm run build 管道全量输出巨大,PowerShell 工具 420s 会掐;重跑加 timeout 900s 并用 '2>&1 | Select-Object -Last 5' 只留尾部(实际 build 3m19s);CI poll 同理,第一次 480s 超时后直接再 poll 一次即可续上(run id 不变)。
+     (7) **加键脚本模式固化**:pre-write(键不存在+32 locale 全有翻译+值非空)到 mutate 到 read-back 计数,本 arc 96/96;JSON.stringify(cfg,null,2)+'\n' 回写后 prettier unchanged 即格式正确。
