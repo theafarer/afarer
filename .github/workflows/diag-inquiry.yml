@@ -7,7 +7,7 @@ on:
     paths: [.github/workflows/diag-inquiry.yml]
 
 permissions:
-  contents: write
+  contents: read
 
 env:
   NODE_VERSION: '22'
@@ -102,9 +102,10 @@ jobs:
             > /tmp/inquiries.json 2>&1 || true
           cat /tmp/inquiries.json
       - if: always()
-        name: Publish diagnostics to diag branch
+        name: Publish diagnostics to R2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           {
             echo '# Inquiry pipeline diagnostics'
@@ -135,10 +136,14 @@ jobs:
             cat /tmp/inquiries.json 2>/dev/null || echo '(missing)'
             echo '```'
           } > inquiry-diagnostics.md
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git switch --orphan diag-inquiry-output
-          git rm -rf --quiet . 2>/dev/null || true
-          git add inquiry-diagnostics.md
-          git commit -m "diag: inquiry pipeline output $(date -u +%FT%TZ)"
-          git push origin HEAD:diag-inquiry-output --force
+          HTTP_CODE=$(curl -s -o /tmp/r2put.json -w "%{http_code}" -X PUT \
+            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/r2/buckets/afarer-assets/objects/diag%2Finquiry-diagnostics.md" \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            -H "Content-Type: text/markdown" \
+            --data-binary @inquiry-diagnostics.md)
+          echo "R2 PUT HTTP $HTTP_CODE"
+          cat /tmp/r2put.json
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "ERROR: R2 publish failed"
+            exit 1
+          fi
