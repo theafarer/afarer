@@ -1,0 +1,45 @@
+---
+import Icon from '~/components/ui/Icon.astro';
+import { languages } from '~/i18n/config';
+import { getUiForLang } from '~/i18n/generated/ui-all';
+
+const seg: string = Astro.url.pathname.split('/')[1] || '';
+const onLangPage: boolean = seg !== '' && seg in languages;
+const lang: string = onLangPage ? seg : 'en';
+const href: string = onLangPage ? '/' + seg + '/warranty/' : '/warranty/';
+
+const _ = (k: string, fallback = ''): string => getUiForLang(lang)?.[k] || getUiForLang('en')?.[k] || fallback;
+---
+
+<section class="bg-secondary py-10 md:py-12 px-6 border-t border-white/10" data-section="warranty-strip">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10">
+    <div class="flex items-center gap-5">
+      <div
+        class="w-14 h-14 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center flex-shrink-0"
+        aria-hidden="true"
+      >
+        <Icon name="tabler:shield-check" class="w-8 h-8 text-primary" />
+      </div>
+      <div>
+        <h2 class="text-lg md:text-xl font-bold text-white tracking-tight">
+          {_('warranty.strip.title', 'Every Board Backed by a 3-Year Warranty')}
+        </h2>
+        <p class="mt-1 text-sm text-white/60 max-w-2xl">
+          {
+            _(
+              'warranty.strip.desc',
+              'Comprehensive manufacturer warranty on all afarer products, with fast claims and responsive support.'
+            )
+          }
+        </p>
+      </div>
+    </div>
+    <a
+      href={href}
+      class="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-[#0088B3] text-white font-semibold rounded-full transition-all flex-shrink-0"
+    >
+      {_('warranty.strip.cta', 'Warranty & Claims')}
+      <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>

@@ -10,6 +10,7 @@ const branding = (cfg as any)?.branding || {};
 import techCardsData from '~/data/site/tech-cards.yaml';
 import productVisualsData from '~/data/site/product-visuals.yaml';
 import { supScenarios } from '~/data/sup-scenarios';
+import WarrantyStrip from '~/components/widgets/WarrantyStrip.astro';
 
 const metadata = {
   title: 'Afarer Inflatable Paddle Boards | Go Farther, Ride Stronger',
@@ -192,6 +193,8 @@ const faqCategories = [{ id: 'sup', label: 'Boards & Quality' }];
       </div>
     </div>
   </section>
+
+  <WarrantyStrip />
 
   <!-- Products -->
   <section class="max-w-6xl mx-auto py-16 md:py-24 px-6">
