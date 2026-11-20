@@ -1622,3 +1622,10 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
      (3) **PowerShell ConvertFrom-Json 大文件陷阱**:对 i18n-config.json(32 locale 超大 JSON)抛 ArgumentException,PS 5.1 解析大/深 JSON 不可靠,**i18n-config 检查/变更一律走 Node .mjs**,PS 只做 Select-String 行级查询。
      (4) **验证器断言集设计**:root 12 断言(分区标题/行标签/CTA 文案/href/图片/受众值/custom=1/B2B 扫描)+每 locale 10 断言(分区标题、bestFor、notSureTitle、findBoard、askQuestion 本地化值全从 i18n-config 动态取,raw 或 esc() 双查);334 断言跨 33 文件一次通过。
      (5) **live 验证三段式**:webfetch text 抽 root+DE 各一,验证本地化渲染(DE Profi=新增 difficulty.professional 键生效)+CTA 动线+主内容 B2B 零残留;poll_ci.cjs+Sleep 210 照旧(run 44672238723 一次绿)。
+144. **评论验证器 verify_dist_reviews.mjs 与新键脚本(add_reviews_i18n_keys.mjs,2026-11-20,归档 sitemisc_work)**:
+     (1) **期望值源解析**:verifier 用正则从 src/data/reviews-part1/2.ts 解析每产品 titles/ratings/authors/verified 并计算 avg/count,断言期望不再硬编码(继 333/334 教训后的彻底做法);块正则 /'([a-z0-9-]+)': \[([\s\S]*?)\n \],/g 配 prettier 后的稳定格式。
+     (2) **断言写法三坑**:JSON-LD 数字无引号(断 "ratingValue":4.7 非 "4.7");Astro 渲染 td 内文本带换行空白(断 >\s*X\s*< 正则,>X< 字面必败);aria-label 是最稳锚点("4.7 out of 5 stars" 精确且唯一);实体转义双查(raw||esc)照旧。
+     (3) **手误定位靠 pretier**:[lang] 页 JsonLd spread 少写一个 }(三元内对象未闭合),prettier 解析器一行报出 (32:91) 精确列号;编辑后全文件跑一遍 prettier --write 比 astro check 更快定位语法错。
+     (4) **eslint unused disable 清理**:compare 两文件顶部 /* eslint-disable @typescript-eslint/no-explicit-any _/ 在重写后变 unused(仅 warning 不挡 CI),顺手删除后 eslint 全绿。
+     (5) **新键脚本三层断言照旧**:pre-write(键不存在+31 locale 翻译齐)到 mutate×32 到 read-back 128/128;翻译为 31 语言手工词表(title/count/verified/ratingLabel 四词,含 sr 西里尔/ar/he/th 非拉丁),JSON.stringify(2)+'\n' 回写 prettier unchanged。
+     (6) **gitignore 生成物确认**:src/i18n/generated/_ 整体 gitignored(仅 route-manifest.json 例外),ui/*.ts 勿手编勿提交;src/components/ui/icon-svgs.ts 与 icon-valid-names.ts 是 tracked 生成物,build 后有变更须一并提交。
