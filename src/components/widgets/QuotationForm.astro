@@ -275,6 +275,13 @@ const hasFileFields = fields.some((f) => (f.type ?? '').toLowerCase() === 'file'
           submitBtn.textContent = sendingLabel;
         }
 
+        // Browser autofill mirrors the user's email into the hidden honeypot field
+        // (its name leaks the "email" token), which trips the server-side bot
+        // filter and silently drops real submissions. Clear it before collecting
+        // the form data; Turnstile remains the actual gate against bots.
+        const honeypotEl = formEl.querySelector('input[name="email_confirm"]');
+        if (honeypotEl instanceof HTMLInputElement) honeypotEl.value = '';
+
         const fd = new FormData(formEl);
         const data = {};
         for (const [k, v] of fd.entries()) {

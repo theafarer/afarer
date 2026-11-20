@@ -262,7 +262,11 @@ export default {
 
     // Honeypot: bots that fill the hidden "email_confirm" field get a fake success
     // (same shape as a real one) so they stop retrying, but no email is ever sent.
-    if (sanitize(body.email_confirm, 500)) {
+    // Exemption: browser autofill mirrors the user's email address into every field
+    // it classifies as email (the honeypot leaks the "email" token via name/id), so
+    // an exact match with the email field is treated as human autofill, not a bot.
+    const honeypotValue = sanitize(body.email_confirm, 500);
+    if (honeypotValue && honeypotValue !== sanitize(body.email, 200)) {
       return json({ success: true, id: randomUUID(), receivedAt: new Date().toISOString() });
     }
 

@@ -64,6 +64,13 @@ const {
         const status = form.querySelector('[data-newsletter-status]');
         if (!status) return;
         status.classList.add('hidden');
+        // Browser autofill mirrors the user's email into the hidden honeypot field
+        // (its name leaks the "email" token), which trips the server-side bot
+        // filter and silently drops real submissions. Clear it before collecting
+        // the form data; Turnstile remains the actual gate against bots.
+        const honeypotEl = form.querySelector('input[name="email_confirm"]');
+        if (honeypotEl) honeypotEl.value = '';
+
         const fd = new FormData(form);
         // Attribution + idempotency payload (conversion event stays inline, no thank-you page).
         const urlParams = new URLSearchParams(window.location.search);
