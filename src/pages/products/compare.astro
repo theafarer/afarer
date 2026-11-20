@@ -1,71 +1,78 @@
 ﻿---
 /* eslint-disable @typescript-eslint/no-explicit-any */
-
+import type { ImageMetadata } from 'astro';
 import Layout from '~/layouts/PageLayout.astro';
+import Image from '~/components/common/Image.astro';
 import { getProducts } from '~/utils/products';
+import { products as productRecords } from '~/data/products';
+import { findImage } from '~/utils/images';
 import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: `Product Comparison –${SITE.name}`,
+  title: `Product Comparison — ${SITE.name}`,
   description:
     'Compare afarer inflatable SUPs and accessories side by side. Length, width, weight, capacity, and more.',
 };
 
 const products = await getProducts();
 
-const comparisonRows = [
-  { label: 'Category', key: 'categoryLabel' as const, transform: (v: string) => v },
-  {
-    label: 'Length',
-    key: 'length' as const,
-    getter: (p: (typeof products)[number]) => {
-      const s = p.specs?.find((s) => s.label.toLowerCase().includes('length'));
-      return s?.value || '-';
-    },
-  },
-  {
-    label: 'Width',
-    key: 'width' as const,
-    getter: (p: (typeof products)[number]) => {
-      const s = p.specs?.find((s) => s.label.toLowerCase().includes('width'));
-      return s?.value || '-';
-    },
-  },
-  {
-    label: 'Weight',
-    key: 'weight' as const,
-    getter: (p: (typeof products)[number]) => {
-      const s = p.specs?.find((s) => s.label.toLowerCase().includes('weight'));
-      return s?.value || '-';
-    },
-  },
+const recFor = (slug: string) => productRecords.find((p) => p.id === slug);
+
+const SKILL_LABELS: Record<string, string> = {
+  beginner: 'Beginner',
+  intermediate: 'Intermediate',
+  advanced: 'Advanced',
+  professional: 'Professional',
+};
+
+interface ComparisonRow {
+  label: string;
+  value: (p: (typeof products)[number]) => string;
+}
+
+const specGetter = (needle: string, fallback = '-') => {
+  return (p: (typeof products)[number]) => {
+    const s = p.specs?.find((spec) => spec.label.toLowerCase().includes(needle));
+    return s?.value || fallback;
+  };
+};
+
+const bestFor = (p: (typeof products)[number]) => recFor(p.slug)?.audience || '-';
+const skillLevel = (p: (typeof products)[number]) => {
+  const skill = recFor(p.slug)?.skill;
+  return skill ? SKILL_LABELS[skill] || '-' : '-';
+};
+
+const boardRows: ComparisonRow[] = [
+  { label: 'Best For', value: bestFor },
+  { label: 'Skill Level', value: skillLevel },
+  { label: 'Length', value: specGetter('length') },
+  { label: 'Width', value: specGetter('width') },
+  { label: 'Weight', value: specGetter('weight') },
   {
     label: 'Max Load',
-    key: 'maxLoad' as const,
-    getter: (p: (typeof products)[number]) => {
+    value: (p: (typeof products)[number]) => {
       const s = p.specs?.find(
-        (s) => s.label.toLowerCase().includes('load') || s.label.toLowerCase().includes('capacity')
+        (spec) => spec.label.toLowerCase().includes('load') || spec.label.toLowerCase().includes('capacity')
       );
       return s?.value || '-';
     },
   },
-  {
-    label: 'Material',
-    key: 'material' as const,
-    getter: (p: (typeof products)[number]) => {
-      const s = p.specs?.find((s) => s.label.toLowerCase().includes('material'));
-      return s?.value || 'PVC';
-    },
-  },
-  {
-    label: 'Skill Level',
-    key: 'skill' as const,
-    getter: (p: (typeof products)[number]) => {
-      const s = p.specs?.find((s) => s.label.toLowerCase().includes('skill'));
-      return s?.value || '-';
-    },
-  },
+  { label: 'Material', value: specGetter('material', 'PVC') },
 ];
+
+const accessoryRows: ComparisonRow[] = [
+  { label: 'Best For', value: bestFor },
+  { label: 'Skill Level', value: skillLevel },
+];
+
+const boardProducts = products.filter((p) => p.category === 'sup');
+const accessoryProducts = products.filter((p) => p.category === 'accessory');
+
+const images = new Map<string, ImageMetadata | string | undefined>();
+for (const p of products) {
+  images.set(p.slug, (await findImage(p.image)) as ImageMetadata | string | undefined);
+}
 ---
 
 <Layout metadata={metadata}>
@@ -76,7 +83,8 @@ const comparisonRows = [
       Compare all afarer products side by side. Find the right board or accessory for your needs.
     </p>
 
-    <div class="mt-12 overflow-x-auto">
+    <h2 id="paddle-boards" class="mt-14 text-2xl font-semibold text-gray-900">Paddle Boards</h2>
+    <div class="mt-6 overflow-x-auto">
       <table class="w-full text-sm border-collapse">
         <thead>
           <tr>
@@ -85,11 +93,28 @@ const comparisonRows = [
               >Specification</th
             >
             {
-              products.map((p) => (
-                <th class="px-4 py-3 text-center font-semibold text-gray-900 border-b-2 border-gray-200 min-w-[120px]">
-                  <div class="text-xs uppercase tracking-wider text-gray-500 mb-1">{p.categoryLabel}</div>
-                  <a href={`/products/${p.slug}`} class="hover:text-sky-600">
-                    {p.title}
+              boardProducts.map((p) => (
+                <th class="px-4 py-3 text-center font-semibold text-gray-900 border-b-2 border-gray-200 min-w-[160px] align-top">
+                  <a href={`/products/${p.slug}`} class="group inline-block">
+                    {images.get(p.slug) ? (
+                      <Image
+                        src={images.get(p.slug) as ImageMetadata | string}
+                        alt={p.title}
+                        class="w-16 h-16 mx-auto rounded-lg object-cover"
+                        widths={[96, 192]}
+                        width={96}
+                        height={96}
+                        format="webp"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : (
+                      <div class="w-16 h-16 mx-auto rounded-lg bg-gray-100" />
+                    )}
+                    <div class="mt-2 text-xs uppercase tracking-wider text-gray-500 mb-1">
+                      {p.seriesLabel || p.categoryLabel}
+                    </div>
+                    <span class="group-hover:text-sky-600 transition-colors">{p.title}</span>
                   </a>
                 </th>
               ))
@@ -98,7 +123,7 @@ const comparisonRows = [
         </thead>
         <tbody>
           {
-            comparisonRows.map((row, i) => (
+            boardRows.map((row, i) => (
               <tr class={i % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
                 <td
                   class="sticky left-0 px-4 py-3 font-medium text-gray-700 border-b border-gray-200"
@@ -106,9 +131,8 @@ const comparisonRows = [
                 >
                   {row.label}
                 </td>
-                {products.map((p) => {
-                  const value = row.getter ? row.getter(p) : (p as any)[row.key];
-                  return <td class="px-4 py-3 text-center text-gray-600 border-b border-gray-200">{value || '-'}</td>;
+                {boardProducts.map((p) => {
+                  return <td class="px-4 py-3 text-center text-gray-600 border-b border-gray-200">{row.value(p)}</td>;
                 })}
               </tr>
             ))
@@ -117,27 +141,91 @@ const comparisonRows = [
       </table>
     </div>
 
-    <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-      {
-        products.map((p) => (
-          <a
-            href={`/products/${p.slug}`}
-            class="block p-4 bg-white border border-gray-200 rounded-xl hover:shadow-md transition-shadow text-center"
-          >
-            <div class="text-xs uppercase tracking-wider text-sky-600 font-medium">{p.categoryLabel}</div>
-            <div class="mt-1 font-semibold text-gray-900">{p.title}</div>
+    <h2 id="accessories" class="mt-14 text-2xl font-semibold text-gray-900">Accessories</h2>
+    <div class="mt-6 overflow-x-auto">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr>
+            <th
+              class="sticky left-0 bg-white z-10 px-4 py-3 text-left font-semibold text-gray-900 border-b-2 border-gray-200 min-w-[140px]"
+              >Specification</th
+            >
+            {
+              accessoryProducts.map((p) => (
+                <th class="px-4 py-3 text-center font-semibold text-gray-900 border-b-2 border-gray-200 min-w-[160px] align-top">
+                  <a href={`/products/${p.slug}`} class="group inline-block">
+                    {images.get(p.slug) ? (
+                      <Image
+                        src={images.get(p.slug) as ImageMetadata | string}
+                        alt={p.title}
+                        class="w-16 h-16 mx-auto rounded-lg object-cover"
+                        widths={[96, 192]}
+                        width={96}
+                        height={96}
+                        format="webp"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : (
+                      <div class="w-16 h-16 mx-auto rounded-lg bg-gray-100" />
+                    )}
+                    <div class="mt-2 text-xs uppercase tracking-wider text-gray-500 mb-1">
+                      {p.seriesLabel || p.categoryLabel}
+                    </div>
+                    <span class="group-hover:text-sky-600 transition-colors">{p.title}</span>
+                  </a>
+                </th>
+              ))
+            }
+          </tr>
+        </thead>
+        <tbody>
+          {
+            accessoryRows.map((row, i) => (
+              <tr class={i % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                <td
+                  class="sticky left-0 px-4 py-3 font-medium text-gray-700 border-b border-gray-200"
+                  style={i % 2 === 0 ? 'background:#f9fafb' : 'background:white'}
+                >
+                  {row.label}
+                </td>
+                {accessoryProducts.map((p) => {
+                  return <td class="px-4 py-3 text-center text-gray-600 border-b border-gray-200">{row.value(p)}</td>;
+                })}
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
 
-            <div class="mt-2 text-xs text-sky-600 hover:underline">View details →</div>
-          </a>
-        ))
-      }
+    <div class="mt-14 rounded-2xl bg-sky-50 border border-sky-100 px-6 py-10 text-center">
+      <h2 class="text-2xl font-semibold text-gray-900">Not sure which board is right for you?</h2>
+      <p class="mt-3 text-gray-600 max-w-2xl mx-auto">
+        Use our size guide to find the right board in under a minute — or ask our team, we are happy to help.
+      </p>
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <a
+          href="/size-guide/"
+          class="px-6 py-3 bg-sky-600 text-white text-sm font-semibold rounded-lg hover:bg-sky-700 transition-colors"
+        >
+          Find Your Board
+        </a>
+        <a
+          href="/contact/"
+          class="px-6 py-3 border border-sky-600 text-sky-700 text-sm font-semibold rounded-lg hover:bg-sky-100 transition-colors"
+        >
+          Ask a Question
+        </a>
+      </div>
     </div>
 
     <section class="sr-only" data-ai-block="definition" aria-hidden="true">
       <p>
-        afarer product comparison table covering {products.length} products across {
-          ['sup', 'accessory', 'service'].filter((c) => products.some((p) => p.category === c)).length
-        } categories. Compare length, width, weight, max load, and material.
+        afarer product comparison tables covering {products.length} products: {boardProducts.length} paddle boards and {
+          accessoryProducts.length
+        } accessories. Compare best-for audience, skill level, length, width, weight, max load, and material. Includes a size
+        guide call-to-action for board selection help.
       </p>
     </section>
   </section>
