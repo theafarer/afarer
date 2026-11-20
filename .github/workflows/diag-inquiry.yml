@@ -34,6 +34,23 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - if: steps.guard.outputs.enabled == 'true'
+        name: Inspect live contact worker settings (bindings)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          HTTP_CODE=$(curl -s -o /tmp/settings.json -w "%{http_code}" \
+            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/workers/scripts/afarer-contact/settings" \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}")
+          echo "HTTP $HTTP_CODE"
+          cat /tmp/settings.json
+          {
+            echo '## Live worker settings/bindings'
+            echo '```json'
+            cat /tmp/settings.json
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - if: steps.guard.outputs.enabled == 'true'
         name: Resolve D1 database id
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -54,6 +71,23 @@ jobs:
           fi
           echo "Resolved D1 database afarer-inquiries: $ID"
           sed -i "s/__D1_DATABASE_ID__/$ID/" workers/contact-worker/wrangler.toml
+      - if: steps.guard.outputs.enabled == 'true'
+        name: Capture live worker logs (5 min window - submit the form NOW)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          echo "Tailing afarer-contact for 300s - submit your test form now."
+          timeout 300 npx --yes wrangler@4 tail afarer-contact --format json > /tmp/tail.log 2>&1 || true
+          echo '--- tail output (first 5 lines) ---'
+          head -n 5 /tmp/tail.log
+          echo '--- tail events ---'
+          {
+            echo '## Live worker tail (5 min window)'
+            echo '```'
+            cat /tmp/tail.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
       - if: steps.guard.outputs.enabled == 'true'
         name: List contact worker secrets (names only)
         env:
