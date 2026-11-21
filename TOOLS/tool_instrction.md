@@ -1646,3 +1646,10 @@ UI 字符串 SSOT 为 `src/data/site/i18n-config.json`（扁平键，缺失键�
      (5) **PowerShell curl.exe 数组陷阱**:$r = curl.exe -s URL 得到的是行数组,$r.Contains("x") 是精确元素匹配非子串匹配——曾误判线上页面缺 data-sitekey 挂件;字符串分析一律 curl -o 落盘 + Get-Content -Raw,或 [System.IO.File]::ReadAllText。
      (6) **route-manifest.json autocrlf 幻影状态**:Windows checkout LF→CRLF 后 prettier(LF)报 warn;工作区转回 LF 后 prettier 绿但 git status 幻影 " M"(内容与索引一致,git diff 无输出);处理=不提交它,git add 显式列文件绕开。
      (7) **差分探针法**:改 worker 判定逻辑后用两个 curl JSON 探针(--data @file 绕开 PowerShell 引号转义)区分路径——A 蜜罐值≠email 预期 200 假 success(机器人被拦),B 蜜罐值===email 预期 403 Turnstile(镜像放行);先想清预期再发探针,响应不符立即回头查代码。
+
+     213/147. **Zone Settings 一次性变更工作流模式——CF Email Obfuscation 关闭 arc(adbb285e,2026-11-21)**:
+     (1) **模式**:一次性 mutation 工作流 = guard(查 CLOUDFLARE_API_TOKEN)→ GET /zones?name= 解析 zone id → 读现值 → PATCH /zones/{id}/settings/{name} → GET 复核 → R2 发布(if:always() 连失败证据一起留档);触发用 push.paths 指向自身文件(workflow_dispatch 匿名无法触发,推文件即跑)。
+     (2) **token 权限预检**:GET /zones?name= 的响应 permissions 数组直接列出 token 实际权限(zone_settings:edit/#zone:read/#worker:edit 等),判断能否改设置看这里,别盲试 PATCH。
+     (3) **Zone Settings API 面**:/zones/{id}/settings/email_obfuscation 等设置项均 GET 可读/PATCH 可改;值枚举如 on/off;PATCH 响应含 modified_on 时间戳可确认生效时刻。
+     (4) **生效即时性**:Email Obfuscation 属边缘逐响应转换,设置 off 后无需清缓存,带 cache-buster 的请求立即无 data-cfemail/email-decode(与 Pages 部署 3-4 分钟滞后者不同)。
+     (5) **一次性工作流生命周期**:创建→触发→读 R2 结果→验证线上→与文档同提交删除;勿长期保留可变更 Zone 配置的可触发入口(idempotent 也删,减少攻击面)。
